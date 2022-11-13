@@ -11,5 +11,5 @@
 我们建议在 2022.11.0 发布之前[更新您的自托管服务器](../on-premises-hosting/update-your-instance.md)。如果由于任何原因您无法更新，请[联系我们](https://bitwarden.com/contact/)。
 
 {% hint style="info" %}
-由于网页密码库与服务器打包在一起，如果您不更新服务器，网页密码库将继续正常工作。
+由于网页密码库与服务器打包在一起，即使您不更新服务器，网页密码库也将继续正常运行。
 {% endhint %}
