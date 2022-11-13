@@ -184,7 +184,7 @@ Bitwarden 的最新版本侧重于对现有功能进行经常性的改进：
 
 * **移动设备上的 FIDO2 WebAuthn**：iOS 和 Android 现在支持通过 FIDO2 WebAuthn 进行两步登录（参阅[这里](two-step-login/setup-guides/two-step-login-via-fido2-webauthn.md)）。
 * **管理员密码重置 - 自动注册改进**：自动注册策略选项现在会阻止用户撤销管理员密码重置（参阅[这里](organizations/admin-password-reset.md#automatic-enrollment)）。
-* **浏览器扩展 - 从保存栏中选择文件夹**：您现在可以直接从浏览器扩展的保存提示中选择要将项目保存到哪个[文件夹](your-vault/folders.md)（参阅[这里](getting-started/get-started-with-browser-extensions.md#add-a-login)）。
+* **浏览器扩展 - 从保存栏中选择文件夹**：您现在可以直接从浏览器扩展的保存提示中选择要将项目保存到哪个[文件夹](your-vault/folders.md)（参阅[这里](getting-started/getting-started-browserext.md#add-a-login)）。
 * **浏览器扩展 - 上下文菜单项目自定义字段**：您现在可以直接从浏览器扩展的上下文菜单中复制 HTML 元素名称，以便轻松创建自定义字段（参阅[这里](your-vault/custom-fields.md#custom-field-names)）。
 * **网页密码库 - 策略位置更改**：现在只能从组织的**管理 → 策略**界面配置[企业策略](organizations/enterprise-policies.md)，而不能从业务门户配置。
 * **CAPTCHA 验证**：从这个版本开始，我们将开启 [hCaptcha](https://www.hcaptcha.com/about) 验证以防止诸如撞库之类的机器人攻击。请注意，CLI 中的挑战与其他客户端应用程序中的挑战不同（有关 CLI 的详细信息，请参阅[此处](miscellaneous/cli-authentication-challenges.md)）。

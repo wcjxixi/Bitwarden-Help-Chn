@@ -18,7 +18,7 @@
 
 ## 更改主密码 <a href="#change-your-master-password" id="change-your-master-password"></a>
 
-如果您知道当前的主密码，您可以通过[网页密码库](../getting-started/get-started-with-the-web-vault.md)更改它：
+如果您知道当前的主密码，您可以通过[网页密码库](../getting-started/getting-started-webvault.md)更改它：
 
 {% hint style="info" %}
 如果您不知道主密码，请参阅[我忘记了主密码](i-forgot-my-master-password.md)**。**

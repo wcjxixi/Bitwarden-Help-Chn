@@ -24,5 +24,5 @@ Bitwarden 主页
 
 现在您已经创建了您的帐户，我们建议：
 
-* [网页密码库使用入门](get-started-with-the-web-vault.md)
+* [网页密码库使用入门](getting-started-webvault.md)
 * [在其他设备上安装 Bitwarden](https://bitwarden.com/download/)

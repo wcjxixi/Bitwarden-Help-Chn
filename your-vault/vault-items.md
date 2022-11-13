@@ -88,7 +88,7 @@
 {% endtab %}
 {% endtabs %}
 
-要克隆组织拥有的项目，必须从[组织密码库视图](../getting-started/getting-started-with-organizations.md#get-to-know-your-organization)中克隆它。
+要克隆组织拥有的项目，必须从[组织密码库视图](../getting-started/getting-started-organizations.md#get-to-know-your-organization)中克隆它。
 
 ### 移动到组织 <a href="#move-to-organization" id="move-to-organization"></a>
 

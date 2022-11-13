@@ -60,7 +60,7 @@
 
 请完成以下步骤为您的密码库邀请可信紧急联系人：
 
-1、登录到网[页密码库](../getting-started/get-started-with-the-web-vault.md)。
+1、登录到网[页密码库](../getting-started/getting-started-webvault.md)。
 
 2、从顶部导航栏中选择**设置**。
 
@@ -86,7 +86,7 @@
 
 在您信任的紧急联系人接受邀请后，请完成以下步骤进行确认：
 
-1、登录到[网页密码库](../getting-started/get-started-with-the-web-vault.md)。
+1、登录到[网页密码库](../getting-started/getting-started-webvault.md)。
 
 2、从顶部导航栏中选择**设置**。
 
@@ -126,7 +126,7 @@
 
 完成以下步骤以发起紧急访问请求：
 
-1、登录到[网页密码](../getting-started/get-started-with-the-web-vault.md)。
+1、登录到[网页密码](../getting-started/getting-started-webvault.md)。
 
 2、从顶部导航栏中选择**设置**。
 
@@ -146,7 +146,7 @@
 
 您的请求获得批准后，完成以下步骤以访问授予人的密码库：
 
-1. 登录到[网页密码库](../getting-started/get-started-with-the-web-vault.md)
+1. 登录到[网页密码库](../getting-started/getting-started-webvault.md)
 2. 从顶部导航栏中选择**设置**
 3. 从左侧设置菜单中选择**紧急访问**
 4. 在**指定为紧急联系人**部分，悬停在您希望访问其密码库的授予人上，然后选择齿轮图标。
@@ -160,7 +160,7 @@
 
 您可以在配置的等待时间到期之前手动批准或拒绝紧急访问请求。完成以下步骤以批准或拒绝紧急访问：
 
-1. 登录到[网页密码库](../getting-started/get-started-with-the-web-vault.md)。
+1. 登录到[网页密码库](../getting-started/getting-started-webvault.md)。
 2. 从顶部导航栏中选择**设置**。
 3. 从左侧设置菜单中选择**紧急访问**。
 4. 悬停在具有`紧急访问已发起`状态卡的用户上方，选择齿轮图标。
@@ -182,7 +182,7 @@
 
 获得接管访问权限的可信紧急联系人使用后，将为您的帐户创建一个新的主密码。因此，撤销访问权限的唯一方法包括：
 
-1. 获取他们为您的帐户创建的新主密码并使用它登录[网页密码库](../getting-started/get-started-with-the-web-vault.md)。
+1. 获取他们为您的帐户创建的新主密码并使用它登录[网页密码库](../getting-started/getting-started-webvault.md)。
 2. [更改您的主密码](../your-vault/your-master-password.md#change-your-master-password)为一个他们不知道的密码。
 {% endtab %}
 {% endtabs %}

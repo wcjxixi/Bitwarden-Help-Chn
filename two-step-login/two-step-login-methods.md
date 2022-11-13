@@ -10,7 +10,7 @@
 
 ## 用于个人的两步登录 <a href="#two-step-login-for-individuals" id="two-step-login-for-individuals"></a>
 
-您可以通过[网页密码库](../getting-started/get-started-with-the-web-vault.md)的**设置**菜单逐个启用如下的两步登录方式。
+您可以通过[网页密码库](../getting-started/getting-started-webvault.md)的**设置**菜单逐个启用如下的两步登录方式。
 
 ### 免费方式 <a href="#free-methods" id="free-methods"></a>
 

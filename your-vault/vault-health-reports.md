@@ -14,7 +14,7 @@
 
 完成以下步骤以查看您的**个人密码库**的任何密码库健康报告：
 
-1、登录到[网页密码库](../getting-started/get-started-with-the-web-vault.md) 。
+1、登录到[网页密码库](../getting-started/getting-started-webvault.md) 。
 
 2、从顶部导航栏选择**报告**。
 
@@ -26,7 +26,7 @@
 
 完成以下步骤以查看您的**组织密码库**的任何密码库健康报告：
 
-1、登录到[网页密码库](../getting-started/get-started-with-the-web-vault.md)并打开您的组织 。
+1、登录到[网页密码库](../getting-started/getting-started-webvault.md)并打开您的组织 。
 
 2、在您的组织中，打开**工具**标签页。
 

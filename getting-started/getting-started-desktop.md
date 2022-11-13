@@ -82,7 +82,7 @@ Bitwarden 桌面应用程序
 要设置您的首选项，请从菜单栏中选择**文件** → **设置**。您会注意到三个部分：**安全性**、**首选项**和**应用程序设置**。
 
 {% hint style="success" %}
-**安全性**和**首选项**适用于[活动帐户](get-started-with-desktop-apps.md#add-a-second-account)，应为每个帐户单独设置。**应用程序设置**适用于所有帐户。
+**安全性**和**首选项**适用于[活动帐户](getting-started-desktop.md#add-a-second-account)，应为每个帐户单独设置。**应用程序设置**适用于所有帐户。
 {% endhint %}
 
 ### 使用生物识别解锁 <a href="#unlock-with-biometrics" id="unlock-with-biometrics"></a>
@@ -120,7 +120,7 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 要设置您的偏好设置，请从菜单栏中选择**Bitwarden** → **偏好设置**。您会注意到三个部分：**安全性**、**偏好设置**和**应用程序设置**。
 
 {% hint style="success" %}
-**安全性**和**偏好设置**适用于[活动帐户](get-started-with-desktop-apps.md#add-a-second-account)，应为每个帐户单独设置。**应用程序设置**适用于所有帐户。
+**安全性**和**偏好设置**适用于[活动帐户](getting-started-desktop.md#add-a-second-account)，应为每个帐户单独设置。**应用程序设置**适用于所有帐户。
 {% endhint %}
 
 ### 使用生物识别解锁 <a href="#unlock-with-biometrics" id="unlock-with-biometrics"></a>
@@ -156,7 +156,7 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 要设置您的首选项，请从菜单栏中选择**文件** → **设置**。您会注意到三个部分：**安全性**、**首选项**和**应用程序设置**。
 
 {% hint style="success" %}
-**安全性**和**首选项**适用于[活动帐户](get-started-with-desktop-apps.md#add-a-second-account)，应为每个帐户单独设置。**应用程序设置**适用于所有帐户。
+**安全性**和**首选项**适用于[活动帐户](getting-started-desktop.md#add-a-second-account)，应为每个帐户单独设置。**应用程序设置**适用于所有帐户。
 {% endhint %}
 
 ### 自动启动 Bitwarden <a href="#start-bitwarden-automatically" id="start-bitwarden-automatically"></a>

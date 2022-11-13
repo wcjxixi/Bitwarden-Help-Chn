@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-要共享项目，你需要是组织的成员。了解更多关于[组织](organizations.md)或了解如何[创建自己的两个人的组织](../getting-started/getting-started-with-organizations.md)。
+要共享项目，你需要是组织的成员。了解更多关于[组织](organizations.md)或了解如何[创建自己的两个人的组织](../getting-started/getting-started-organizations.md)。
 {% endhint %}
 
 共享 Bitwarden 项目意味着将它们放入一个集合中，集合是用于将共享的项目、笔记、支付卡和身份集中到一起，以供多个用户访问的一种结构。您可以通过几种不同的方式将项目共享到集合：

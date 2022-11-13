@@ -18,7 +18,7 @@
 
 要对您的组织可以扩展到的席位数量设置限制：
 
-1、登录到您的[网页密码库](../getting-started/get-started-with-the-web-vault.md)并打开您的组织。
+1、登录到您的[网页密码库](../getting-started/getting-started-webvault.md)并打开您的组织。
 
 2、打开**设置**选项卡，然后从左侧菜单中选择**订阅**。
 
@@ -40,7 +40,7 @@
 
 要对您的组织手动添加或移除席位：
 
-1、登录到您的[网页密码库](../getting-started/get-started-with-the-web-vault.md)并打开您的组织。
+1、登录到您的[网页密码库](../getting-started/getting-started-webvault.md)并打开您的组织。
 
 2、打开**设置**选项卡，然后从左侧菜单中选择**订阅**。
 

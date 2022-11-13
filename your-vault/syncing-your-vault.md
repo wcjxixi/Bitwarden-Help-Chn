@@ -10,7 +10,7 @@
 
 ## 自动同步 <a href="#what-is-vault-syncing" id="what-is-vault-syncing"></a>
 
-您的个人[网页密码库](../getting-started/get-started-with-the-web-vault.md)中的项目将始终保持同步。组织密码库的项目将跨用户和客户端应用程序每 30 分钟自动同步一次。
+您的个人[网页密码库](../getting-started/getting-started-webvault.md)中的项目将始终保持同步。组织密码库的项目将跨用户和客户端应用程序每 30 分钟自动同步一次。
 
 Bitwarden 客户端应用程序（桌面应用程序、浏览器扩展、移动应用程序和 CLI）将在登录时自动同步，并在解锁时定期同步。您也可以[手动同步](syncing-your-vault.md#what-is-vault-syncing-1)您的密码库，以立即拉取更改。
 

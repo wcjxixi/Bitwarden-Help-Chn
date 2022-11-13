@@ -19,7 +19,7 @@ Bitwarden 提供了一个数据导入工具，可以轻松地将任何密码管�
 
 ## 导入到您的组织 <a href="#import-to-your-organization" id="import-to-your-organization"></a>
 
-**只能从**[**网页密码库**](../getting-started/get-started-with-the-web-vault.md)**或** [**CLI**](../getting-started/bitwarden-cli.md#import) **完成**导入数据到 Bitwarden 的操作。数据在发送到服务器存储之前会在本地进行加密。要导入您的数据：
+**只能从**[**网页密码库**](../getting-started/getting-started-webvault.md)**或** [**CLI**](../getting-started/bitwarden-cli.md#import) **完成**导入数据到 Bitwarden 的操作。数据在发送到服务器存储之前会在本地进行加密。要导入您的数据：
 
 1、在您的组织中导航到**工具**选项卡
 

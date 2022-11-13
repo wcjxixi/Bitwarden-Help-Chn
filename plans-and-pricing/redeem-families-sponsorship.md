@@ -84,7 +84,7 @@
 {% endtabs %}
 
 {% hint style="success" %}
-**恭喜！**如果您刚开始使用 Bitwarden 家庭组织，我们建议您查看[这篇文章](../getting-started/getting-started-with-organizations.md#get-to-know-your-organization)以了解其基础知识。
+**恭喜！**如果您刚开始使用 Bitwarden 家庭组织，我们建议您查看[这篇文章](../getting-started/getting-started-organizations.md#get-to-know-your-organization)以了解其基础知识。
 {% endhint %}
 
 ## 常见问题 <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>

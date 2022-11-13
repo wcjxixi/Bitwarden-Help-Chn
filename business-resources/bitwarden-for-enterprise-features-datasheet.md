@@ -8,16 +8,16 @@
 
 ### 应用程序范围和易用性 <a href="#application-range-and-ease-of-use" id="application-range-and-ease-of-use"></a>
 
-| 企业版功能            | 描述                                                                                                                           |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 部署选项             | 云、私有云，以及自托管。                                                                                                                 |
-| Web 应用程序         | [https://vault.bitwarden.com](https://vault.bitwarden.com) 或您的自托管服务器上的完全加密的云 Web 应用程序。                                       |
-| 移动应用程序（带有移动登录控制） | 适用于 iOS 和 Android，[了解更多](../getting-started/get-started-with-mobile-apps.md)。                                                |
-| 浏览器扩展            | 适用于 Chrome、Firefox、Opera、Edge、Vivaldi、Brave、Tor，以及 Safari。[了解更多](../getting-started/get-started-with-browser-extensions.md)。 |
-| 桌面应用程序           | 适用于 Windows、Mac，以及 Linux。[了解更多](../getting-started/get-started-with-desktop-apps.md)。                                        |
-| CLI              | 功能齐的自文档命令行工具。[了解更多](../getting-started/bitwarden-cli.md)。                                                                    |
-| 流线型 UI 设计        | 跨应用程序的简单统一的界面，完全易于使用。                                                                                                        |
-| 员工免费家庭计划         | 所有企业组织成员都可以为新的或现有的个人 Bitwarden 帐户兑换免费的 Bitwarden 家庭计划。[了解更多](../plans-and-pricing/redeem-families-sponsorship.md)。           |
+| 企业版功能            | 描述                                                                                                                  |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| 部署选项             | 云、私有云，以及自托管。                                                                                                        |
+| Web 应用程序         | [https://vault.bitwarden.com](https://vault.bitwarden.com) 或您的自托管服务器上的完全加密的云 Web 应用程序。                              |
+| 移动应用程序（带有移动登录控制） | 适用于 iOS 和 Android，[了解更多](../getting-started/getting-started-mobile.md)。                                             |
+| 浏览器扩展            | 适用于 Chrome、Firefox、Opera、Edge、Vivaldi、Brave、Tor，以及 Safari。[了解更多](../getting-started/getting-started-browserext.md)。 |
+| 桌面应用程序           | 适用于 Windows、Mac，以及 Linux。[了解更多](../getting-started/getting-started-desktop.md)。                                     |
+| CLI              | 功能齐的自文档命令行工具。[了解更多](../getting-started/bitwarden-cli.md)。                                                           |
+| 流线型 UI 设计        | 跨应用程序的简单统一的界面，完全易于使用。                                                                                               |
+| 员工免费家庭计划         | 所有企业组织成员都可以为新的或现有的个人 Bitwarden 帐户兑换免费的 Bitwarden 家庭计划。[了解更多](../plans-and-pricing/redeem-families-sponsorship.md)。  |
 
 ### 管理功能和管理能力 <a href="#administrative-features-and-capabilities" id="administrative-features-and-capabilities"></a>
 

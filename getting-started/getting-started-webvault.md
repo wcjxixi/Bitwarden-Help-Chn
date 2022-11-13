@@ -44,7 +44,7 @@ Bitwarden 网页密码
 
 3、输入项目的**名称**。名称用于帮助您轻松识别密码库中的项目，因此请为其指定一个可识别的名称（例如`我的 Twitter 登录`）。
 
-4、为登录项目输入您的**用户名**和**密码**。现在，请输入您**现有的**密码，我们稍后会帮助您[用更强的密码替换它](get-started-with-the-web-vault.md#generate-a-strong-password)。
+4、为登录项目输入您的**用户名**和**密码**。现在，请输入您**现有的**密码，我们稍后会帮助您[用更强的密码替换它](getting-started-webvault.md#generate-a-strong-password)。
 
 5、在 **URI 1** 字段中，输入网站的 URL（例如 `https://twitter.com/login`）。如果您不知道要使用哪个 URL，请导航到网站的登录界面并从地址栏中复制它。
 
@@ -173,6 +173,6 @@ Bitwarden 网页密码
 
 您是否需要与朋友、家人、团队或整个企业共享密码或其他密码库项目？
 
-Bitwarden 组织可让您做到这一点。我们建议[通过创建一个免费的 2 人组织](getting-started-with-organizations.md)来尝试从组织中共享密码的功能。要了解如何操作，请参阅[组织入门](getting-started-with-organizations.md)。
+Bitwarden 组织可让您做到这一点。我们建议[通过创建一个免费的 2 人组织](getting-started-organizations.md)来尝试从组织中共享密码的功能。要了解如何操作，请参阅[组织入门](getting-started-organizations.md)。
 
 您测试了组织后，请查看我们的 [Bitwarden 计划和定价](https://bitwarden.com/pricing/business/)页面，了解您可能感兴趣的不同付费组织类型。

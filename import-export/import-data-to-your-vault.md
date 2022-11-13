@@ -20,9 +20,9 @@ Bitwarden 提供了一个数据导入工具，可以轻松地将任何密码管�
 
 ## 导入到您的个人密码库 <a href="#import-to-your-personal-vault" id="import-to-your-personal-vault"></a>
 
-**只能从**[**网页密码库**](../getting-started/get-started-with-the-web-vault.md)**或** [**CLI**](../getting-started/bitwarden-cli.md#import) **完成**导入数据到 Bitwarden 的操作。数据在发送到服务器存储之前会在本地进行加密。要导入您的数据：
+**只能从**[**网页密码库**](../getting-started/getting-started-webvault.md)**或** [**CLI**](../getting-started/bitwarden-cli.md#import) **完成**导入数据到 Bitwarden 的操作。数据在发送到服务器存储之前会在本地进行加密。要导入您的数据：
 
-1. 在[网页密码库](../getting-started/get-started-with-the-web-vault.md)中，从顶部导航条选择**工具**。
+1. 在[网页密码库](../getting-started/getting-started-webvault.md)中，从顶部导航条选择**工具**。
 2. 从左侧工具菜单选择**导入数据**。
 3. 从格式下拉菜单，选择一个**文件格式**（参阅 [Bitwarden 支持导入哪些文件格式？](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)）。
 4. 选择**选择文件**按钮并添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。

@@ -12,7 +12,7 @@
 
 要邀请用户加入您的提供商：
 
-1、登录[网页密码库](../getting-started/get-started-with-the-web-vault.md)并打开您的提供商。
+1、登录[网页密码库](../getting-started/getting-started-webvault.md)并打开您的提供商。
 
 2、打开**管理**选项卡，然后从左侧菜单中选择**人员**。
 
@@ -45,7 +45,7 @@
 
 要确认已接受的邀请加入您的提供商：
 
-1、登录[网页密码库](../getting-started/get-started-with-the-web-vault.md)并打开您的提供商。
+1、登录[网页密码库](../getting-started/getting-started-webvault.md)并打开您的提供商。
 
 2、打开**管理**选项卡，然后从左侧菜单中选择**人员**。
 
@@ -63,7 +63,7 @@
 
 要从提供商移除用户：
 
-1、登录[网页密码库](../getting-started/get-started-with-the-web-vault.md)并打开您的提供商。
+1、登录[网页密码库](../getting-started/getting-started-webvault.md)并打开您的提供商。
 
 2、打开**管理**选项卡，然后从左侧菜单中选择**人员**。
 
