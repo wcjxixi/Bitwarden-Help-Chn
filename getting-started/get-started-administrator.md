@@ -18,7 +18,7 @@ Bitwarden 组织允许任何规模的团队安全地共享密码、信用卡等�
 
 ## 设置策略（仅企业） <a href="#set-policies-enterprise-only" id="set-policies-enterprise-only"></a>
 
-您的业务有独特的安全需求。使用策略为所有团队成员构建一致的部署和用户体验，例如要求 SSO 身份验证或在管理员密码重置中注册用户。为了让您的组织为更多团队成员做好准备，[尽早制定政策](../organizations/enterprise-policies.md)非常重要。
+您的业务具有独特的安全需求。使用策略为所有团队成员构建一致的部署和用户体验，例如要求 SSO 身份验证或在管理员密码重置中注册用户。为了让您的组织为更多团队成员做好准备，[尽早制定策略](../organizations/enterprise-policies.md)非常重要。
 
 ## 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
@@ -26,4 +26,8 @@ Bitwarden 组织允许任何规模的团队安全地共享密码、信用卡等�
 
 ## 建立群组和集合 <a href="#build-groups-and-collections" id="build-groups-and-collections"></a>
 
+您的保密码库中有了项目后，就可以设置集合和群组以确保正_合适_的用户可以访问_合适_的凭据。每个组织有差别，但这里[有一些提示可以帮助您入门](../organizations/collections.md#using-collections)。
+
 ## 邀请你的成员 <a href="#invite-your-team" id="invite-your-team"></a>
+
+终于可以开始邀请用户了！如果您使用 Active Directory 等目录服务，请[使用目录连接器以自动同步用户](../directory-connector/about-directory-connector.md)。否则，请按照您建立管理团队所采取的相同步骤邀请更多用户加入组织。
