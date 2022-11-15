@@ -12,9 +12,9 @@ Bitwarden 组织允许任何规模的团队安全地共享密码、信用卡等�
 
 ## 邀请您的管理团队 <a href="#invite-your-admin-team" id="invite-your-admin-team"></a>
 
-每一个全明星组织都需要一个全明星的管理团队。开始邀请高权限用户吧，他们可以帮助您为 Bitwarden 的安全凭证共享奠定基础。如果您正在构建企业组织，您可以为用户提供[高度灵活的自定义权限](../organizations/user-types-and-access-control.md#custom-role)以满足您的需求。
+每一个全明星组织都需要一个全明星管理团队。开始邀请高权限用户吧，他们可以帮助您为 Bitwarden 的安全凭证共享奠定基础。如果您正在构建企业组织，您可以为用户提供[高度灵活的自定义权限](../organizations/user-types-and-access-control.md#custom-role)以满足您的需求。
 
-为了预防性冗余，我们建议在[您新组建的管理团队](../organizations/user-management.md#onboard-users)中至少包含一名另一位**组织所有者**。
+为了预防性冗余，我们建议在[您新组建的管理团队](../organizations/user-management.md#onboard-users)中至少包含一名其他**组织所有者**。
 
 ## 设置策略（仅企业） <a href="#set-policies-enterprise-only" id="set-policies-enterprise-only"></a>
 
