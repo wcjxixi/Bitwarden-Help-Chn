@@ -1,7 +1,7 @@
 # Table of contents
 
 * [关于](README.md)
-* [主页](home.md)
+* [首页](home.md)
 * [发行记录](release-notes.md)
 * [入门](getting-started/README.md)
   * [创建 Bitwarden 账户](getting-started/create-bitwarden-account.md)
