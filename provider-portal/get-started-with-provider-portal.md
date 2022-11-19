@@ -83,7 +83,7 @@
 
 ### 创建一个客户组织 <a href="#create-a-client-organization" id="create-a-client-organization"></a>
 
-要创建新的客户组织，您必须是提[供商管理员](provider-users.md#provider-user-types)。导航到提供商门户的**客户**选项卡，然后选择 **🞤新建客户组织**按钮：
+要创建新的客户组织，您必须是提[供商管理员](provider-users.md#provider-user-types)。导航到提供商门户的**客户**选项卡，然后选择 ✚**新建客户组织**按钮：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5WjBETB0YFm7TS1zpIHeSC/38b2b8a919d8b9c6cd6d0af286f90d71/provider-add-client.png?fm=webp&h=291&q=50&w=691" %}
 创建客户组织

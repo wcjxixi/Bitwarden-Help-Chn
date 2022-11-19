@@ -22,14 +22,14 @@
 
 事件日志记录了提供商的几种不同类型的事件。事件日志界面捕获事件的**时间戳**、包含应用程序类型和 IP（通过将鼠标悬停在 🌎地球图标上访问）的客户端应用程序信息、连接到事件的**用户**以及**事件**描述。提供商事件包括：
 
-* 已邀请用户的 _user-identifier（用户标识符）_
-* 已确认用户的 _user-identifier（用户标识符）_
-* 已编辑用户的 _user-identifier（用户标识符）_
-* 已移除用户的 _user-identifier（用户标识符）_
-* 已访问的组织密码库的 _organization-identifier（组织标识符）_
-* 已创建组织的 _organization-identifier（组织标识符）_（[在提供商中创建新组织](start-a-client-organization.md#create-a-client-organization)时触发）
-* 已添加组织的 _organization-identifier（组织标识符）_（[将现有组织添加到提供商](providers-faqs.md#q-im-already-providing-bitwarden-as-a-service-for-my-clients-what-do-i-need-to-do-to-move-to-the-provider-portal)时触发）
-* 已删除组织的 _organization-identifier（组织标识符）_
+* 邀请了用户 _user-identifier（用户标识符）_
+* 确认了用户 _user-identifier（用户标识符）_
+* 编辑了用户 _user-identifier（用户标识符）_
+* 移除了用户 _user-identifier（用户标识符）_
+* 访问了组织密码库 _organization-identifier（组织标识符）_
+* 创建了组织 _organization-identifier（组织标识符）_（[在提供商中创建新组织](start-a-client-organization.md#create-a-client-organization)时触发）
+* 添加了组织 _organization-identifier（组织标识符）_（[将现有组织添加到提供商](providers-faqs.md#q-im-already-providing-bitwarden-as-a-service-for-my-clients-what-do-i-need-to-do-to-move-to-the-provider-portal)时触发）
+* 删除了组织 _organization-identifier（组织标识符）_
 
 {% hint style="success" %}
 提供商事件当前不会汇总为每一个[客户组织](provider-portal-overview.md#client-organizations)记录的事件。提供商用户可以从客户组织的密码库访问组织事件日志。[了解更多](../organizations/event-logs.md)。

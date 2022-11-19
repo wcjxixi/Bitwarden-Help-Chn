@@ -18,7 +18,7 @@
 该视图将列出尚未达到[删除日期](send-lifespan.md#deletion-date)的所有 Send。与**我的密码库**视图一样，您可以通过点击某一可用的**类型**来筛选 Send。
 {% endhint %}
 
-2、选择 **🞤创建新 Send** 按钮：
+2、选择 ✚**创建新 Send** 按钮：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/63ReMUtu41rk0xNrxr6aHF/135c19223c777843d59c627dc0819c64/send-create-webvault.png?fm=webp&h=400&q=50&w=910" %}
 网页密码库中的 Send 视图
@@ -71,7 +71,7 @@
 该视图将列出尚未达到[删除日期](send-lifespan.md#deletion-date)的所有 Send。与**我的密码库**视图一样，您可以通过点击某一可用的**类型**来筛选 Send。
 {% endhint %}
 
-2、选择 **🞤添加**图标：
+2、选择 ✚**添加**图标：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2qOv6DJYX1is2zurmeVBOd/c0b7e0fd771822d0461a382b4135ab26/send-browserext.png?fm=webp&h=751&q=50&w=755" %}
 浏览器扩展中的 Send 视图
@@ -125,7 +125,7 @@
 该视图将列出尚未达到[删除日期](send-lifespan.md#deletion-date)的所有 Send。与**我的密码库**视图一样，您可以通过点击某一可用的**类型**来筛选 Send。
 {% endhint %}
 
-2、选择位于中间列下方的 **🞤添加** 图标：
+2、选择位于中间列下方的 ✚**添加** 图标：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2O01p5FyMpUhlhi5bAq7mH/b730e0a73a8d869ae4fbcd9e6aef20fa/send-desktop-add.png?fm=webp&h=681&q=50&w=1136" %}
 桌面应用程序中的 Send 视图
@@ -179,7 +179,7 @@
 该视图将列出尚未达到[删除日期](send-lifespan.md#deletion-date)的所有 Send。与**我的密码库**视图一样，您可以通过点击某一可用的**类型**来筛选 Send。
 {% endhint %}
 
-2、点击 **🞤添加**图标：
+2、点击 ✚**添加**图标：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5vHsSA3o9O735MitlnOPVr/b49ca097df2897f677536f9494435768/send-mobile.png?fm=webp&h=686&q=50&w=675" %}
 iOS 和 Android 上的 Send 视图

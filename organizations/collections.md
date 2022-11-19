@@ -37,7 +37,7 @@
 
 1、登录到您的[网页密码库](https://vault.bitwarden.com/)并打开您的组织。
 
-2、打开**管理**选项卡并选择 **🞤 新建集合**按钮：
+2、打开**管理**选项卡并选择 ✚**新建集合**按钮：
 
 ![选择新建集合](../.gitbook/assets/collection-list-overlay.png)
 
