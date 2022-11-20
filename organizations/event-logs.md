@@ -162,4 +162,4 @@ Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19h
 * 集合
 * 群组
 
-在收集这些数据后，你可以将行连接到它们唯一的 ID 上，以建立对你的 Bitwarden 组织所有部分的参考。有关使用 Bitwarden CLI 的更多信息，请参阅 [Bitwarden 命令行工具（CLI）](../getting-started/bitwarden-cli.md)。
+在收集这些数据后，您可以将行连接到它们唯一的 ID 上，以建立对您的 Bitwarden 组织所有部分的参考。有关使用 Bitwarden CLI 的更多信息，请参阅 [Bitwarden 命令行工具（CLI）](../getting-started/bitwarden-cli.md)。
