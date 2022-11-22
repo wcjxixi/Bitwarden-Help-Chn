@@ -239,14 +239,14 @@ bw get template item | jq ".name=\"My Login Item\" | .login=$(bw get template it
 
 `create` 命令默认创建登录项目，但您可以使用 [jq 之类的命令行 JSON 处理器](https://stedolan.github.io/jq/)更改 `.type=` 属性以创建其他项目类型：
 
-| 名称          | 值         |
-| ----------- | --------- |
-| Login       | `.type=1` |
-| Secure Note | `.type=2` |
-| Card        | `.type=3` |
-| Identity    | `.type=4` |
+| 名称   | 值         |
+| ---- | --------- |
+| 登录   | `.type=1` |
+| 安全笔记 | `.type=2` |
+| 支付卡  | `.type=3` |
+| 身份   | `.type=4` |
 
-例如，以下命令将创建一个安全备注：
+例如，以下命令将创建一个安全笔记：
 
 ```shell
 bw get template item | jq '.type = 2 | .secureNote.type = 0 | .notes = "Contents of my Secure Note." | .name = "My Secure Note"' | bw encode | bw create item
@@ -256,7 +256,7 @@ bw get template item | jq '.type = 2 | .secureNote.type = 0 | .notes = "Contents
 请注意，在上面的示例中，安全笔记需要一个子模板（`.secureNote.type`）。您可以使用 `bw get template` 查看项目类型的子模板（详细见[此处](bitwarden-cli.md#get)）。
 {% endhint %}
 
-#### **create 附件** <a href="#create-attachment" id="create-attachment"></a>
+#### **create** attachment <a href="#create-attachment" id="create-attachment"></a>
 
 `create attachment` 命令用于将一个文件附加到一个**现有的**项目上。
 
