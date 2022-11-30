@@ -105,13 +105,18 @@ https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.google
 
 ## 指定同步筛选器 <a href="#specify-sync-filters" id="specify-sync-filters"></a>
 
-使用逗号分隔的列表可根据用户电子邮件、群组名称或群组成员资格在同步中包含或排除：
+使用逗号分隔的列表可根据用户电子邮件、群组名称或群组成员资格在同步中包含或排除。
+
+Admin SDK API 通过一个 `query` 参数为用户和裙组提供有限的筛选功能。了解更多：
+
+* [搜索用户](https://developers.google.com/admin-sdk/directory/v1/guides/search-users)
+* [搜索群组](https://developers.google.com/admin-sdk/directory/v1/guides/search-groups)
 
 ### 用户筛选器 <a href="#user-filters" id="user-filters"></a>
 
 在 **User Filter** 字段中使用以下筛选语法：
 
-#### 根据电子邮件包含/排除用户 <a href="#include-exclude-users-by-email" id="include-exclude-users-by-email"></a>
+#### 通过电子邮件包含/排除用户 <a href="#include-exclude-users-by-email" id="include-exclude-users-by-email"></a>
 
 要基于电子邮件地址在同步中包含或排除特定用户：
 
@@ -125,7 +130,7 @@ exclude:joe@example.com,bill@example,tom@example.com
 
 #### 使用 `query` 连接 <a href="#concatenate-with-query" id="concatenate-with-query"></a>
 
-要将用户筛选器与 `query` 参数连接起来，请使用竖线（`|`）：
+要使用 `query` 参数连接用户筛选器，请使用竖线（`|`）：
 
 ```systemd
 include:john@example.com,bill@example.com|orgName=Engineering orgTitle:Manager
@@ -145,6 +150,10 @@ exclude:john@example.com,bill@example.com|orgName=Engineering orgTitle:Manager
 
 ### 群组筛选器 <a href="#group-filters" id="group-filters"></a>
 
+在 **Group Filter** 字段中使用以下筛选语法：
+
+#### 包含/排除群组 <a href="#include-exclude-groups" id="include-exclude-groups"></a>
+
 要基于群组名称在同步中包含或排除群组：
 
 ```systemd
@@ -153,6 +162,26 @@ include:Group A,Group B
 
 ```systemd
 exclude:Group A,Group B
+```
+
+#### 使用 `query` 连接 <a href="#concatenate-with-query" id="concatenate-with-query"></a>
+
+要使用 `query` 参数连接群组筛选器，请使用竖线（`|`）：
+
+```
+include:name='Engineering'|email:admin*
+```
+
+```
+exclude:name='Engineering'|email:admin*
+```
+
+#### 只使用 `query` <a href="#use-only-query" id="use-only-query"></a>
+
+要只使用 `query` 参数，请在查询前加上竖线（`|`）：
+
+```
+|memberKey=user@company.com
 ```
 
 ## 测试同步 <a href="#test-a-sync" id="test-a-sync"></a>
