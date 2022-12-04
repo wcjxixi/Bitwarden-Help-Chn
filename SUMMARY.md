@@ -22,6 +22,7 @@
   * [忘记主密码](your-vault/i-forgot-my-master-password.md)
   * [密码库项目](your-vault/vault-items.md)
   * [账户切换](your-vault/account-switching.md)
+  * [设备登录](your-vault/log-in-with-device.md)
   * [同步密码库](your-vault/syncing-your-vault.md)
   * [检索密码库](your-vault/search-your-vault.md)
   * [文件夹](your-vault/folders.md)
