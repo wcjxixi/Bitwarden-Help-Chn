@@ -36,7 +36,7 @@
 如果您使用**设备登录**选项，您仍然需要使用任何当前有效的两步登录方法。
 {% endhint %}
 
-## 运作方式 <a href="#how-it-works" id="how-it-works"></a>
+## 它是如何工作的 <a href="#how-it-works" id="how-it-works"></a>
 
 当发起设备登录时：
 
