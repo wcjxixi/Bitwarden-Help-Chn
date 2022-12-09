@@ -22,6 +22,10 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## Bitwarden 统一自托管部署(Beta) <a href="#bitwarden-unified-self-host-deployment-beta" id="bitwarden-unified-self-host-deployment-beta"></a>
+
+Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的测试版本。对于希望在自己的服务器上控制和部署 Bitwarden 的用户，Bitwarden 统一部署是轻量和灵活的选择。有关测试版的更多信息，请参阅[这里](on-premises-hosting/install-deploy-guides/install-and-deploy-unified-beta.md)。
+
 ## 2022.11.2
 
 此次发布包含：

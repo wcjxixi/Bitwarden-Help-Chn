@@ -1,4 +1,4 @@
-# 安装和部署-离线
+# =安装和部署-离线(Linux)
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-offline/)
@@ -6,9 +6,17 @@
 
 这篇文章将引导你完成在**离线或**[**网闸**](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8)**环境**中安装和部署 Bitwarden 到你自己的服务器的过程。
 
+{% hint style="warning" %}
+**手动安装只适合高级用户实施。**仅当您非常熟悉 Docker 技术并希望更好地控制 Bitwarden 安装时才继续。
+
+手动安装无法自动更新 Bitwarden 安装所需的某些依赖项。当您将 Bitwarden 从一个版本升级到下一个版本时，您将负责所需环境变量的更改、nginx `default.conf` 的更改、`docker-compose.yml` 的更改等等。
+
+我们将尝试[在 GitHub 上的发行说明](https://github.com/bitwarden/server/releases)中突出显示这些内容。您也可以监控 GitHub 上 Bitwarden 安装脚本所使用的[依赖模板](https://github.com/bitwarden/server/tree/master/util/Setup/Templates)的更改。
+{% endhint %}
+
 ## 要求 <a href="#installation-procedure" id="installation-procedure"></a>
 
-在继续安装之前，请确保 [Docker Engine](https://docs.docker.com/engine/installation/) 和 [Docker Compose](https://docs.docker.com/compose/install/) 已安装并准备好在您的服务器上使用，并且您的机器符合以下系统规格：在继续安装之前，请确保满足以下要求：
+在继续安装之前，请确保满足以下要求：
 
 * [Docker Engine](https://docs.docker.com/engine/installation/) 和 [Docker Compose](https://docs.docker.com/compose/install/) 已安装并准备好在您的服务器上使用。
 * 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发布页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub.zip` 文件，并已将该文件传输到您的服务器。
@@ -24,6 +32,8 @@
 | Docker 版本 | Engine 19+ 以及 Compose 1.24+ | Engine 19+ 以及 Compose 1.24+ |
 
 ## 安装步骤 <a href="#installation-procedure" id="installation-procedure"></a>
+
+### 配置您的域名 <a href="#configure-your-domain" id="configure-your-domain"></a>
 
 ### 创建 Bitwarden 本地用户和目录 <a href="#create-bitwarden-local-user-and-directory" id="create-bitwarden-local-user-and-directory"></a>
 
@@ -173,7 +183,7 @@ docker image save -o mssql.img bitwarden/mssql:version
 docker image load mssql.img
 ```
 
-### 启动服务器 <a href="#start-your-server" id="start-your-server"></a>
+### 启动您的服务器 <a href="#start-your-server" id="start-your-server"></a>
 
 使用以下命令启动您的 Bitwarden 服务器：
 
@@ -192,3 +202,5 @@ docker ps
 恭喜！ Bitwarden 现已在 https://your.domain.com 启动并运行。在您的浏览器中访问网络密码库以确认其正常工作。
 
 您现在可以注册一个新帐户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../configure-environment-variables.md)）以验证您的新帐户的电子邮件。
+
+## 更新您的服务器 <a href="#update-your-server" id="update-your-server"></a>
