@@ -1,7 +1,7 @@
 # =安装和部署-Unified(Beta)
 
-{% hint style="info" %}
-对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-unified-beta/)
+{% hint style="success" %}
+删除 Docker 容器：对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-unified-beta/)
 {% endhint %}
 
 {% hint style="danger" %}
@@ -228,13 +228,69 @@ docker compose ps
 
 #### 服务 <a href="#services" id="services"></a>
 
+通过更改以下值，可以针对特定用例（例如企业或团队需求）启用或禁用其他服务：
+
+| 变量                                | 描述   |
+| --------------------------------- | ---- |
+| BW\_ENABLE\_ADMIN                 | **** |
+| BW\_ENABLE\_API                   | **** |
+| BW\_ENABLE\_EVENTS                |      |
+| BW\_ENABLE\_ICONS                 |      |
+| BW\_ENABLE\_IDENTITY              | **** |
+| BW\_ENABLE\_NOTIFICATIONS         |      |
+| BW\_ENABLE\_SCIM                  |      |
+| BW\_ENABLE\_SSO                   |      |
+| BW\_ICONS\_PROXY\_TO\_CLOUD       |      |
+| BW\_ENABLE\_KEY\_CONNECTOR        |      |
+| BW\_KEY\_CONNECTOR\_INTERNAL\_URL |      |
+
 #### 电子邮件 <a href="#mail" id="mail"></a>
+
+为您的 Unified 部署配置 SMTP 设置。将您选择的邮件 SMTP 提供商的信息复制到以下字段中：
+
+| 变量                                         | 描述 |
+| ------------------------------------------ | -- |
+| globalSettings\_\_mail\_\_replyToEmail     |    |
+| globalSettings\_\_mail\_\_smtp\_\_host     |    |
+| globalSettings\_\_mail\_\_smtp\_\_port     |    |
+| globalSettings\_\_mail\_\_smtp\_\_ssl      |    |
+| globalSettings\_\_mail\_\_smtp\_\_username |    |
+| globalSettings\_\_mail\_\_smtp\_\_password |    |
 
 #### Yubico API (YubiKey) <a href="#yubico-api" id="yubico-api"></a>
 
+| 变量                               | 描述 |
+| -------------------------------- | -- |
+| globalSettings\_yubico\_clientId |    |
+| globalSettings\_yubico\_key      |    |
+
 #### 其他 <a href="#other" id="other"></a>
 
+| 变量                                        | 描述 |
+| ----------------------------------------- | -- |
+| globalSettings\_\_disableUserRegistration |    |
+| globalSettings\_\_hibpApiKey              |    |
+| adminSettings\_\_admins                   |    |
+| BW\_REAL\_IPS                             |    |
+| BW\_CSP                                   |    |
+
 ### 重新启动容器 <a href="#restart-the-container" id="restart-the-container"></a>
+
+要在更改环境变量后重新启动 Docker 容器，请从 Bitwarden Unified 部署目录运行以下命令：
+
+{% tabs %}
+{% tab title="Docker run" %}
+1、停止正在运行的 Docker 容器：
+
+```
+docker stop bitwarden
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
 ## 内存使用 <a href="#memory-usage" id="memory-usage"></a>
 
