@@ -1,4 +1,4 @@
-# =安装和部署-Unified(Beta)
+# 安装和部署-Unified(Beta)
 
 {% hint style="success" %}
 删除 Docker 容器：对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-unified-beta/)
@@ -126,9 +126,9 @@ volumes:
 
 * 日志和 Bitwarden 数据的映射卷。
 * 映射端口。
-* 配置数据库镜像。ª
+* 配置数据库镜像。~~ª~~
 
-ª 仅在 `docker-compose.yml` 中设置数据库，如上例所示，如果您想**创建一个新的数据库服务器**以与 Bitwarden 一起使用。 用于 MySQL、MSSQL 和 PostgreSQL 的示例配置包含在我们的[示例文件](https://github.com/bitwarden/server/blob/master/docker-unified/docker-compose.yml)中。
+~~ª~~ 仅在 `docker-compose.yml` 中设置数据库，如上例所示，如果您想**创建一个新的数据库服务器**以与 Bitwarden 一起使用。 用于 MySQL、MSSQL 和 PostgreSQL 的示例配置包含在我们的[示例文件](https://github.com/bitwarden/server/blob/master/docker-unified/docker-compose.yml)中。
 
 创建 `docker-compose.yml` 和 `settings.env` 文件后，运行以下命令启动 Unified 服务器：
 
@@ -230,65 +230,93 @@ docker compose ps
 
 通过更改以下值，可以针对特定用例（例如企业或团队需求）启用或禁用其他服务：
 
-| 变量                                | 描述   |
-| --------------------------------- | ---- |
-| BW\_ENABLE\_ADMIN                 | **** |
-| BW\_ENABLE\_API                   | **** |
-| BW\_ENABLE\_EVENTS                |      |
-| BW\_ENABLE\_ICONS                 |      |
-| BW\_ENABLE\_IDENTITY              | **** |
-| BW\_ENABLE\_NOTIFICATIONS         |      |
-| BW\_ENABLE\_SCIM                  |      |
-| BW\_ENABLE\_SSO                   |      |
-| BW\_ICONS\_PROXY\_TO\_CLOUD       |      |
-| BW\_ENABLE\_KEY\_CONNECTOR        |      |
-| BW\_KEY\_CONNECTOR\_INTERNAL\_URL |      |
+| 变量                                | 描述                                                                                                                                                 |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BW\_ENABLE\_ADMIN                 | <p><strong>不要禁用此服务</strong>。</p><p>在<a href="../system-administrator-portal.md">此处</a>了解有关管理面板功能的更多信息。默认为 <code>true</code>。</p>                   |
+| BW\_ENABLE\_API                   | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
+| BW\_ENABLE\_EVENTS                | 为团队和企业事件监控启用或禁用 Bitwarden 事件日志。默认为 `false`。                                                                                                        |
+| BW\_ENABLE\_ICONS                 | 启用或禁用登录项目 URI 设置的 Bitwarden 品牌图标。在[此处](../../security/privacy-when-using-website-icons.md)了解更多。默认为 `true`。                                         |
+| BW\_ENABLE\_IDENTITY              | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
+| BW\_ENABLE\_NOTIFICATIONS         | 当使用设备登录、移动端密码库同步等时，启用或禁用用于接收移动设备推送通知的通知服务。默认为 `true`。                                                                                              |
+| BW\_ENABLE\_SCIM                  | 为企业组织启用或禁用 SCIM。默认为 `false`。                                                                                                                       |
+| BW\_ENABLE\_SSO                   | 为企业组织启用或禁用 SSO 服务。默认为 `false`。                                                                                                                     |
+| BW\_ICONS\_PROXY\_TO\_CLOUD       | <p>启用此服务将代理图标服务请求以通过云服务进行操作，以降低系统内存负载。</p><p>如果选择使用此设置，则应将 <code>BW_ENABLE_ICONS</code> 设置为 <code>false</code> 以减少容器负载。默认为 <code>false</code>。</p> |
+| BW\_ENABLE\_KEY\_CONNECTOR        | 设置为 `true` 以启用 [Key Connector](../../login-with-sso/about-key-connector.md)。                                                                       |
+| BW\_KEY\_CONNECTOR\_INTERNAL\_URL | [Key Connector](../../login-with-sso/about-key-connector.md) 使用的内部 URL。                                                                            |
 
 #### 电子邮件 <a href="#mail" id="mail"></a>
 
 为您的 Unified 部署配置 SMTP 设置。将您选择的邮件 SMTP 提供商的信息复制到以下字段中：
 
-| 变量                                         | 描述 |
-| ------------------------------------------ | -- |
-| globalSettings\_\_mail\_\_replyToEmail     |    |
-| globalSettings\_\_mail\_\_smtp\_\_host     |    |
-| globalSettings\_\_mail\_\_smtp\_\_port     |    |
-| globalSettings\_\_mail\_\_smtp\_\_ssl      |    |
-| globalSettings\_\_mail\_\_smtp\_\_username |    |
-| globalSettings\_\_mail\_\_smtp\_\_password |    |
+| 变量                                         | 描述                                                                                             |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| globalSettings\_\_mail\_\_replyToEmail     | 输入服务器的回复电子邮件。                                                                                  |
+| globalSettings\_\_mail\_\_smtp\_\_host     | 输入 SMTP 服务器的主机域名。                                                                              |
+| globalSettings\_\_mail\_\_smtp\_\_port     | 输入来自 SMTP 主机的端口号。                                                                              |
+| globalSettings\_\_mail\_\_smtp\_\_ssl      | <p>如果您的 SMTP 主机使用 SSL，请输入 <code>true</code>。<br>如果您的主机使用 TLS 服务，请将值设置为 <code>false</code>。</p> |
+| globalSettings\_\_mail\_\_smtp\_\_username | 输入 SMTP 用户名。                                                                                   |
+| globalSettings\_\_mail\_\_smtp\_\_password | 输入 SMTP 密码。                                                                                    |
 
 #### Yubico API (YubiKey) <a href="#yubico-api" id="yubico-api"></a>
 
-| 变量                               | 描述 |
-| -------------------------------- | -- |
-| globalSettings\_yubico\_clientId |    |
-| globalSettings\_yubico\_key      |    |
+| 变量                               | 描述                                                                                                         |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| globalSettings\_yubico\_clientId | <p>替换从 Yubico Key 获取的 ID 值。</p><p>在<a href="https://upgrade.yubico.com/getapikey/">此处</a>注册 Yubico 密钥。</p> |
+| globalSettings\_yubico\_key      | 输入从 Yubico 获取的密钥值。                                                                                         |
 
 #### 其他 <a href="#other" id="other"></a>
 
-| 变量                                        | 描述 |
-| ----------------------------------------- | -- |
-| globalSettings\_\_disableUserRegistration |    |
-| globalSettings\_\_hibpApiKey              |    |
-| adminSettings\_\_admins                   |    |
-| BW\_REAL\_IPS                             |    |
-| BW\_CSP                                   |    |
+| 变量                                        | 描述                                                                                                                          |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| globalSettings\_\_disableUserRegistration | 启用或禁用用户帐户注册功能。                                                                                                              |
+| globalSettings\_\_hibpApiKey              | 输入 Have I Been Pwnd 提供的 API 密钥。在[此处](https://haveibeenpwned.com/API/Key)注册以获取 API 密钥。                                       |
+| adminSettings\_\_admins                   | 输入管理员电子邮件地址。                                                                                                                |
+| BW\_REAL\_IPS                             | 在 `nginx.conf` 中以逗号分隔列表定义真实 IP。用于定义转发客户端 IP 地址的代理服务器。[了解更多](https://nginx.org/en/docs/http/ngx\_http\_realip\_module.html)。 |
+| BW\_CSP                                   | 内容安全策略参数。重新配置此参数可能会破坏功能。更改此参数，您将负责维护此值。                                                                                     |
 
 ### 重新启动容器 <a href="#restart-the-container" id="restart-the-container"></a>
 
 要在更改环境变量后重新启动 Docker 容器，请从 Bitwarden Unified 部署目录运行以下命令：
 
 {% tabs %}
-{% tab title="Docker run" %}
+{% tab title="docker run" %}
 1、停止正在运行的 Docker 容器：
 
-```
+```shell
 docker stop bitwarden
+```
+
+2、移除 Docker 容器：
+
+```shell
+docker rm bitwarden
+```
+
+3、再次运行 Docker 容器：
+
+```shell
+docker run -d --name bitwarden -v ./bwdata/:/etc/bitwarden -p 80:80  --env-file settings.env bitwarden/self-host:beta
 ```
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Docker Compose" %}
+1、停止正在运行的 Docker 容器：
 
+```shell
+docker compose down
+```
+
+2、重新创建容器：
+
+```shell
+docker compose up -d
+```
+
+3、确保容器在正常运行：
+
+```shell
+docker compose ps
+```
 {% endtab %}
 {% endtabs %}
 
