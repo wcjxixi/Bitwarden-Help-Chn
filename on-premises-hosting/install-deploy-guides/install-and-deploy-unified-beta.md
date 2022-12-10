@@ -69,15 +69,80 @@ docker run -d --name bitwarden -v ./bwdata/:/etc/bitwarden -p 80:80  --env-file 
 
 上面的命令有几个 `docker run` 命令必需的选项，包括：
 
-| 名称，简写          | 描述                                                                                                                                                                                                                                                                                                                                                     |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| --detach , -d  | 在后台运行容器并输出容器 ID。                                                                                                                                                                                                                                                                                                                                       |
-| --name         | 为容器提供一个名称。该示例中使用的是 `bitwarden`。                                                                                                                                                                                                                                                                                                                        |
-| --volume , -v  | 绑定挂载卷。至少挂载 `/etc/bitwarden`。                                                                                                                                                                                                                                                                                                                           |
-| --publish , -p | 将容器端口映射到主机。该示例显示映射了端口 80 。配置 SSL 时需要端口 443。                                                                                                                                                                                                                                                                                                            |
-| --env-file     | Path of the [file to read environment variables from](https://bitwarden.com/help/install-and-deploy-unified-beta/#specify-environment-variables). Alternatively, use the `--env` flag to declare environment variables inline ([learn more](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file)). |
+| 名称，缩写          | 描述                                                                                                                                                                                                                                |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --detach , -d  | 在后台运行容器并输出容器 ID。                                                                                                                                                                                                                  |
+| --name         | 为容器提供一个名称。该示例中使用的是 `bitwarden`。                                                                                                                                                                                                   |
+| --volume , -v  | 绑定挂载卷。至少挂载 `/etc/bitwarden`。                                                                                                                                                                                                      |
+| --publish , -p | 将容器端口映射到主机。该示例显示映射了 `80` 端口。配置 SSL 时需要使用 `443` 端口。                                                                                                                                                                                |
+| --env-file     | [要从中读取环境变量的文件](install-and-deploy-unified-beta.md#specify-environment-variables)的路径。或者，在同一行中使用 `--env` 标志声明环境变量（[了解更多](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file)）。 |
+
+运行此命令后，验证容器是否正在运行且运行状况良好：
+
+```shell
+docker ps
+```
+
+恭喜！您的 Unified 部署现已启动并运行在 `https://your.domain.com` 上了。在您的浏览器中访问网络密码库以确认它正在运行。您现在可以注册一个新帐户并登录。
 
 ### 使用 Docker Compose <a href="#using-docker-compose" id="using-docker-compose"></a>
+
+使用 Docker Compose 运行 Unified 部署需要 Docker Compose 版本 1.24+。要使用 Docker compose 运行 Unified 部署，请创建一个 `docker-compose.yml` 文件，例如：
+
+```javascript
+---
+version: "3.8"
+
+services:
+  bitwarden:
+    depends_on:
+      - db
+    env_file:
+      - settings.env
+    image: bitwarden/self-host:beta
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - bitwarden:/etc/bitwarden
+
+  db:
+    environment:
+      MARIADB_USER: "bitwarden"
+      MARIADB_PASSWORD: "super_strong_password"
+      MARIADB_DATABASE: "bitwarden_vault"
+      MARIADB_RANDOM_ROOT_PASSWORD: "true"
+    image: mariadb:10
+    restart: always
+    volumes:
+      - data:/var/lib/mysql
+
+volumes:
+  bitwarden:
+  data:
+```
+
+在 `docker-compose.yml` 文件中，确保任何所需的配置包含：
+
+* 日志和 Bitwarden 数据的映射卷。
+* 映射端口。
+* 配置数据库镜像。ª
+
+ª 仅在 `docker-compose.yml` 中设置数据库，如上例所示，如果您想**创建一个新的数据库服务器**以与 Bitwarden 一起使用。 用于 MySQL、MSSQL 和 PostgreSQL 的示例配置包含在我们的[示例文件](https://github.com/bitwarden/server/blob/master/docker-unified/docker-compose.yml)中。
+
+创建 `docker-compose.yml` 和 `settings.env` 文件后，运行以下命令启动 Unified 服务器：
+
+```shell
+docker compose up -d
+```
+
+验证所有容器是否正常运行：
+
+```shell
+docker ps
+```
+
+恭喜！您的 Unified 部署现已启动并运行在 `https://your.domain.com` 上了。在您的浏览器中访问网络密码库以确认它正在运行。您现在可以注册一个新帐户并登录。
 
 ## 更新您的服务器 <a href="#update-your-server" id="update-your-server"></a>
 
@@ -97,6 +162,32 @@ docker run -d --name bitwarden -v ./bwdata/:/etc/bitwarden -p 80:80  --env-file 
 
 ## 内存使用 <a href="#memory-usage" id="memory-usage"></a>
 
+默认情况下，Bitwarden 容器消耗的内存，通常超过运行所需的最低内存。对于内存敏感的环境，您可以使用 docker `-m` 或 `--memory=` 来限制 Bitwarden 容器的内存使用。
+
+| 名称，缩写         | 描述                                                                                                                                                             |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --memory=, -m | 容器可以使用的最大内存量。Bitwarden 至少需要 200M。请参阅 [Docker 文档](https://docs.docker.com/config/containers/resource\_constraints/#limit-a-containers-access-to-memory)以了解更多信息。 |
+
+要使用 Docker Compose 控制内存使用，请使用 `mem_limit` 键：
+
+```javascript
+services:
+  bitwarden:
+    env_file:
+      - settings.env
+    image: bitwarden/self-host:beta
+    restart: always
+    mem_limit: 200m
+```
+
 ## 报告问题 <a href="#reporting-issues" id="reporting-issues"></a>
 
+虽然 Bitwarden Unified 部署仍处于测试版，但我们鼓励您通过 GitHub 报告问题并提供反馈。请使用[此问题模板](https://github.com/bitwarden/server/issues/new?assignees=\&labels=bug%2Cbw-unified-deploy\&template=bw-unified.yml)报告与您的 Bitwarden Unified 部署相关的任何内容，并查看[此页面](https://github.com/bitwarden/server/issues/2480)以跟踪已知问题或加入讨论。
+
 ## 附加资源 <a href="#additional-resources" id="additional-resources"></a>
+
+有关 Bitwarden 标准自托管部署的更多信息，请参阅：
+
+* [安装和部署 - Linux](install-and-deploy-linux.md)
+* [安装和部署 - Windows](install-and-deploy-windows.md)
+* [安装和部署 - 手动](install-and-deploy-manually.md)
