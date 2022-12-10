@@ -59,7 +59,7 @@ Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)在您
 使用非 MSSQL 数据库提供程序可能会导致性能问题，对这些平台的支持将在整个测试版中继续进行。请使用[此问题模板](https://github.com/bitwarden/server/issues/new?assignees=\&labels=bug%2Cbw-unified-deploy\&template=bw-unified.yml)报告与您的 Bitwarden Unified 部署相关的任何内容，并查看[此页面](https://github.com/bitwarden/server/issues/2480)以跟踪已知问题或加入讨论。
 {% endhint %}
 
-### 使用 Docker 运行 <a href="#using-docker-run" id="using-docker-run"></a>
+### 使用 docker run <a href="#using-docker-run" id="using-docker-run"></a>
 
 可以使用 `docker run` 命令运行 Unified 部署，如下示例：
 
@@ -146,9 +146,85 @@ docker ps
 
 ## 更新您的服务器 <a href="#update-your-server" id="update-your-server"></a>
 
+要更新您的 Unified 部署：
+
+{% tabs %}
+{% tab title="docker run 更新" %}
+1、停止正在运行的 Docker 容器：
+
+```bash
+docker stop bitwarden
+```
+
+2、移除 Docker 容器：
+
+```bash
+docker rm bitwarden
+```
+
+3、运行以下命令来拉取最新的 Bitwarden Unified 镜像：
+
+```bash
+docker pull bitwarden/self-host:beta
+```
+
+4、再次运行 Docker 容器：
+
+```bash
+docker run -d --name bitwarden -v ./bwdata/:/etc/bitwarden -p 80:80 --env-file settings.env bitwarden/self-host:beta
+```
+{% endtab %}
+
+{% tab title="Docker Compose 更新" %}
+1、停止正在运行的 Docker 容器：
+
+```bash
+docker compose down
+```
+
+2、运行以下命令来拉取最新的 Bitwarden Unified 镜像：
+
+```bash
+docker compose pull
+```
+
+3、重新创建任何需要更新的容器：
+
+```bash
+docker compose up -d
+```
+
+4、验证容器是否正在运行：
+
+```bash
+docker compose ps
+```
+{% endtab %}
+{% endtabs %}
+
 ## 环境变量 <a href="#environment-variables" id="environment-variables"></a>
 
+默认情况下，Unified 部署可以在不具备一些列标准 Bitwarden 服务的情况下运行。这允许增加 Unified 部署的定制和优化。通过编辑各种环境变量来配置这些服务和更多可选设置。
+
+{% hint style="info" %}
+每当您更改环境变量后，都需要重新创建 Docker 容器。在[这里](install-and-deploy-unified-beta.md#restart-the-container)了解更多。
+{% endhint %}
+
 #### SSL
+
+使用这些值更改证书设置。有关更多信息，请参阅[证书选项](../certificate-options.md)。
+
+| 变量                  | 描述                                                                                                                                                                            |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BW\_ENABLE\_SSL     | <p>使用 SSL/TLS。<code>true</code>/<code>false</code>。默认为 <code>false</code>。</p><p></p><p>Bitwarden 需要 SSL 才能正常运行。如果您没有使用在 Bitwarden 容器中配置的 SSL，您应该在 Bitwarden 前面使用 SSL 代理。</p> |
+| BW\_SSL\_CERT       | SSL 证书文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.crt`。 如果您希望使用现有证书，在[此处](../certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。                               |
+| BW\_SSL\_KEY        | SSL 密钥文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.key`。 如果您希望使用现有证书，在[此处](../certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。                               |
+| BW\_ENABLE\_SSL\_CA | 使用具有证书颁发机构 (CA) 支持服务 的 SSL。`true`/`false`。默认为 `false`。                                                                                                                        |
+| BW\_SSL\_CA\_CERT   | SSL CA 证书的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ca.crt`。                                                                                                                   |
+| BW\_ENABLE\_SSL\_DH | 使用具有Diffie-Hellman 密钥交换的 SSL。`true`/`false`。默认为 `false`。                                                                                                                      |
+| BW\_SSL\_DH\_CERT   | Diffie-Hellman 参数文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `dh.pem`。                                                                                                         |
+| BW\_SSL\_PROTOCOLS  | NGINX 使用的 SSL 版本。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server\_Side\_TLS)。                                                                                          |
+| BW\_SSL\_CIPHERS    | NGINX 使用的 SSL 密码套件。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server\_Side\_TLS)。                                                                                        |
 
 #### 服务 <a href="#services" id="services"></a>
 
