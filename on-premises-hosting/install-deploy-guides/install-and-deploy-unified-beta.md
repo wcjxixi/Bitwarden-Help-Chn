@@ -1,7 +1,7 @@
 # 安装和部署-Unified(Beta)
 
 {% hint style="success" %}
-删除 Docker 容器：对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-unified-beta/)
+对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-unified-beta/)
 {% endhint %}
 
 {% hint style="danger" %}
@@ -18,7 +18,7 @@
 
 ## 系统要求 <a href="#system-requirements" id="system-requirements"></a>
 
-Bitwarden Unified 部署要求：
+Bitwarden Unified 部署需要：
 
 * 至少 200 MB RAM
 * 1GB 存储
@@ -26,19 +26,19 @@ Bitwarden Unified 部署要求：
 
 ### 安装 Docker <a href="#install-docker" id="install-docker"></a>
 
-Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)在您的机器上运行。Unified 部署可以与任何 Docker 版本或计划一起运行。评估哪个版本最适合您的安装。
+Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)在您的机器上运行。Unified 部署可以与任何 Docker 版本或计划一起运行。请评估哪个版本最适合您的安装。
 
-在继续安装之前在您的计算机上安装 Docker。请参阅以下 Docker 文档以获取帮助：
+**在继续安装之前需要在您的计算机上安装 Docker**。请参阅以下 Docker 文档获取帮助：
 
 * [安装 Docker 引擎](https://docs.docker.com/engine/installation/)
 
 ## 运行 Bitwarden Unified <a href="#run-bitwarden-unified" id="run-bitwarden-unified"></a>
 
-可以使用 `docker run` 命令（参见[此处](install-and-deploy-unified-beta.md#using-docker-run)）或使用 Docker Compose（参见[此处](install-and-deploy-unified-beta.md#using-docker-compose)）运行 Unified 部署。无论哪种情况，您都需要为容器指定环境变量。
+可以使用 `docker run` 命令（参见[此处](install-and-deploy-unified-beta.md#using-docker-run)）或使用 Docker Compose（参见[此处](install-and-deploy-unified-beta.md#using-docker-compose)）运行 Unified 部署。无论哪种方式，您都需要为容器指定环境变量。
 
 ### 指定环境变量 <a href="#specify-environment-variables" id="specify-environment-variables"></a>
 
-运行 Unified 部署需要为容器设置环境变量。可以通过创建一个 `settings.env` 文件来指定环境变量，您可以在我们的 [GitHub 存储库](https://github.com/bitwarden/server/blob/master/docker-unified/settings.env)中找到该文件的示例，或者如果您使用的是 `docker run` 方法，则可以使用 `--env` 标志来指定。几个可选变量可用于更个性化的 Unified 部署体验。有关这些变量的更多详细信息，请参阅[此处](install-and-deploy-unified-beta.md#environment-variables)。
+运行 Unified 部署需要为容器设置环境变量。可以通过创建一个 `settings.env` 文件来指定环境变量，您可以在我们的 [GitHub 存储库](https://github.com/bitwarden/server/blob/master/docker-unified/settings.env)中找到该文件的示例，或者如果您使用的是 `docker run` 方式，则可以使用 `--env` 标志来指定。一系列可选的变量可用于更个性化 Unified 部署体验。有关这些变量的更多详细信息，请参阅[此处](install-and-deploy-unified-beta.md#environment-variables)。
 
 至少为示例 `.env` 文件的 `# Required Settings #` 部分下的变量设置值：
 
@@ -54,7 +54,7 @@ Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)在您
 | BW\_INSTALLATION\_KEY | 从 [https://bitwarden.com/host/](https://bitwarden.com/host/) 生成的有效安装密钥。         |
 
 {% hint style="info" %}
-与 Bitwarden 标准部署不同，Unified 部署并不是开箱即用的数据库。您可以使用现有数据库，也可以创建一个新数据库，如[本示例中](install-and-deploy-unified-beta.md#using-docker-compose)所述，在这两种情况下，您都必须在此处记录的 `BW_DB_...` 变量中输入有效信息。
+与 Bitwarden 标准部署不同，Unified 部署使用的数据库并不是开箱即用的。您可以使用现有数据库，也可以创建一个新数据库，如[本示例中](install-and-deploy-unified-beta.md#using-docker-compose)所述，在这两种情况下，您都必须在本文档记录的 `BW_DB_...` 变量中输入有效的信息。
 
 使用非 MSSQL 数据库提供程序可能会导致性能问题，对这些平台的支持将在整个测试版中继续进行。请使用[此问题模板](https://github.com/bitwarden/server/issues/new?assignees=\&labels=bug%2Cbw-unified-deploy\&template=bw-unified.yml)报告与您的 Bitwarden Unified 部署相关的任何内容，并查看[此页面](https://github.com/bitwarden/server/issues/2480)以跟踪已知问题或加入讨论。
 {% endhint %}
@@ -67,7 +67,7 @@ Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)在您
 docker run -d --name bitwarden -v ./bwdata/:/etc/bitwarden -p 80:80  --env-file settings.env bitwarden/self-host:beta
 ```
 
-上面的命令有几个 `docker run` 命令必需的选项，包括：
+上面的命令有一系列 `docker run` 命令必需的选项，包括：
 
 | 名称，缩写          | 描述                                                                                                                                                                                                                                |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
