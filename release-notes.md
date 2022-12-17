@@ -22,6 +22,16 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## Apple Watch 上的 Bitwarden(Beta) <a href="#bitwarden-on-the-apple-watch-beta" id="bitwarden-on-the-apple-watch-beta"></a>
+
+Apple Watch 上的 Bitwarden 将以测试版的形式提供给通过 TestFlight 注册的用户，并将提供访问 TOTP 登录代码的附加选项。在[这里](miscellaneous/apple-watch-totp.md)了解更多。
+
+## 2022.12.0
+
+此次发布包含：
+
+* **浏览器扩展 - 主题通知栏**：主题通知栏已添加到 Bitwarden 浏览器扩展中以匹配流行的颜色主题。
+
 ## Bitwarden 统一自托管部署(Beta) <a href="#bitwarden-unified-self-host-deployment-beta" id="bitwarden-unified-self-host-deployment-beta"></a>
 
 Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的测试版本。对于希望在自己的服务器上控制和部署 Bitwarden 的用户，Bitwarden 统一部署是轻量和灵活的选择。有关测试版的更多信息，请参阅[这里](on-premises-hosting/install-deploy-guides/install-and-deploy-unified-beta.md)。

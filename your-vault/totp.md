@@ -7,7 +7,7 @@
 Bitwarden 验证器是 Authy 等专用验证应用程序的替代解决方案，您可以使用它来验证使用两步登录的网站和应用程序的身份。Bitwarden 验证器使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based\_One-time\_Password\_algorithm)（TOTP），每 30 秒轮换一次。
 
 {% hint style="info" %}
-验证器密钥（TOTP）存储可用于所有帐户。但 TOTP 验证码的生成要求高级会员或付费组织帐户（家庭、团队或企业）。
+验证器密钥（TOTP）存储可用于所有帐户。但 TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企业）成员资格。
 
 > \[**译者注**]：
 >
