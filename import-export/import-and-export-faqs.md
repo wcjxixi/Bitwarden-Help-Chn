@@ -88,6 +88,7 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * Padlock (csv)
 * Passbolt (csv)
 * PassKeep (csv)
+* Passky (json)
 * Passman (json)
 * Passpack (csv)
 * Password Agent (csv)

@@ -1,4 +1,4 @@
-# 安装和部署-Unified(Beta)
+# 安装和部署-Unified (Beta)
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-unified-beta/)
@@ -209,6 +209,13 @@ docker compose ps
 {% hint style="info" %}
 每当您更改环境变量后，都需要重新创建 Docker 容器。在[这里](install-and-deploy-unified-beta.md#restart-the-container)了解更多。
 {% endhint %}
+
+#### Webserver 端口 <a href="#webserver-ports" id="webserver-ports"></a>
+
+| 变量              | 描述                           |
+| --------------- | ---------------------------- |
+| BW\_PORT\_HTTP  | 更改用于 HTTP 流量的端口。默认为 `8080`。  |
+| BW\_PORT\_HTTPS | 更改用于 HTTPS 流量的端口。默认为 `8443`。 |
 
 #### SSL
 

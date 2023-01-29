@@ -22,17 +22,25 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
-## Apple Watch 上的 Bitwarden(Beta) <a href="#bitwarden-on-the-apple-watch-beta" id="bitwarden-on-the-apple-watch-beta"></a>
+## 2023.1.0
 
-Apple Watch 上的 Bitwarden 将以测试版的形式提供给通过 TestFlight 注册的用户，并将提供访问 TOTP 登录代码的附加选项。在[这里](miscellaneous/apple-watch-totp.md)了解更多。
+此次发布包含：
+
+* **Apple Watch 上的 Bitwarden**：Bitwarden 添加了 Apple Watch 支持，以提供访问 TOTP 登录代码的附加选项。参阅这里。
+* **新的环境变量**：一个用于为所有者和管理员强制执行要求 SSO 身份验证策略的环境变量现在可用于自托管服务器。参阅[这里](on-premises-hosting/configure-environment-variables.md#optional-variables)。
+* **Bitwarden unified - 支持自定义数据库端口**：统一部署现在支持使用新的环境变量在自定义端口上运行数据库。参阅[这里](on-premises-hosting/install-deploy-guides/install-and-deploy-unified-beta.md#environment-variables)。
+* **Passsky 导入器 (json)**：新的导入选项可用于未加密的 Passsky (json) 导出。参阅[这里](import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
+* **自定义头像颜色**：从 Web 密码库的**帐户设置** → **我的帐户**页面更改您的头像颜色。
 
 ## 2022.12.0
 
 此次发布包含：
 
 * **浏览器扩展 - 主题通知栏**：主题通知栏已添加到 Bitwarden 浏览器扩展中以匹配流行的颜色主题。
+* **浏览器扩展 - UI 更新**：已对 Bitwarden 浏览器扩展进行了 UI 更新。
+* **Apple Watch 上的 Bitwarden（测试版）**：Apple Watch 上的 Bitwarden 将以测试版形式提供给通过 TestFlight 注册的用户，并将提供访问 TOTP 登录代码的附加选项。在[这里](miscellaneous/apple-watch-totp.md)了解更多。
 
-## Bitwarden 统一自托管部署(Beta) <a href="#bitwarden-unified-self-host-deployment-beta" id="bitwarden-unified-self-host-deployment-beta"></a>
+## Bitwarden 统一自托管部署 (Beta) <a href="#bitwarden-unified-self-host-deployment-beta" id="bitwarden-unified-self-host-deployment-beta"></a>
 
 Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的测试版本。对于希望在自己的服务器上控制和部署 Bitwarden 的用户，Bitwarden 统一部署是轻量和灵活的选择。有关测试版的更多信息，请参阅[这里](on-premises-hosting/install-deploy-guides/install-and-deploy-unified-beta.md)。
 
