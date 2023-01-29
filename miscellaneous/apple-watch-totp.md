@@ -1,11 +1,11 @@
-# Apple Watch 上的 Bitwarden(Beta)
+# Apple Watch 上的 Bitwarden
 
 {% hint style="info" %}
 对应的[官方文档地址](https://bitwarden.com/help/apple-watch-totp/)
 {% endhint %}
 
 {% hint style="info" %}
-Apple Watch 上的 Bitwarden 目前处于测试阶段。通过 TestFlight 访问 Apple Watch beta 和 Bitwarden TOTP 功能的介绍位于[此处](https://community.bitwarden.com/t/join-the-beta-program/39185)。
+Bitwarden 在 Apple Watch 上添加了对 Bitwarden 的官方支持。之前通过 TestFlight 在 Apple Watch 上注册使用 Bitwarden 的用户现在可以切换到受支持的应用程序。
 {% endhint %}
 
 我们的 Bitwarden [身份验证器功能](../your-vault/totp.md)现在可以在 Apple Watch 上使用。Bitwarden 高级会员或付费组织的成员现在将有一个额外的选项来访问基于时间的一次性密码 (TOTP) 代码。Apple Watch Bitwarden 将显示存储有种子的密码库项目的 TOTP 代码，以便在登录受 TOTP 保护的帐户时更容易访问。
@@ -64,5 +64,9 @@ Bitwarden 的零知识加密与 Apple 的 WatchConnectivity 和 Secure Enclave �
 
 * 设置安全密码以防止在 Apple Watch 上对 Bitwarden 进行不必要的访问。只有 Apple Watch 解锁后，才可以查看设备上的信息。
 * 在 Apple Watch 上启用手腕检测，以便设备从用户手腕上取下后自动锁定。
+
+{% hint style="danger" %}
+如果启用了使用 iPhone 解锁设置，解锁连接的 iPhone 将自动解锁您的 Apple Watch（如果设备在附近）。这可能会暴露 Apple Watch 上的 Bitwarden 信息。
+{% endhint %}
 
 请参阅 [Apple 的 watchOS 安全文档](https://support.apple.com/zh-cn/guide/security/secc7d85209d/web)以了解更多信息。

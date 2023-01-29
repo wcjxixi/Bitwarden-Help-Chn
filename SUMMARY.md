@@ -217,7 +217,7 @@
 * [杂项](miscellaneous/README.md)
   * [Safari 网页扩展](miscellaneous/safari-web-extension.md)
   * [DuckDuckGo macOS 浏览器集成](miscellaneous/duckduckgo-macos-browser-integration.md)
-  * [Apple Watch 上的 Bitwarden(Beta)](miscellaneous/apple-watch-totp.md)
+  * [Apple Watch 上的 Bitwarden](miscellaneous/apple-watch-totp.md)
   * [uMatrix 和 NoScript 访问规则](miscellaneous/umatrix-and-noscript-access-rules.md)
   * [更改应用程序主题](miscellaneous/change-app-theme.md)
   * [CLI 身份验证挑战](miscellaneous/cli-authentication-challenges.md)
