@@ -1,4 +1,4 @@
-# 加密方式
+# =加密方式
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/what-encryption-is-used/)
@@ -27,6 +27,10 @@ Bitwarden 为您的密码库使用 [AES-CBC](encryption.md#aes-cbc) 256 位加�
 PBKDF2 使用的默认迭代数是客户端上的 100,001 次迭代（可从您的帐户设置中配置客户端迭代数），当存储到我们的服务器上时会再进行 100,000 次迭代（默认情况下总计为 200,001 次迭代）。组织密钥使用 [RSA-2048](https://en.wikipedia.org/wiki/RSA\_numbers#RSA-2048) 共享。
 
 所使用的哈希函数是单向哈希，这意味着 Bitwarden 的任何人都**无法对其逆向工程**，从而泄露您的主密码。即使 Bitwarden 被黑客攻击，也无任何办法获取您的主密码。
+
+## 更改 KDF 迭代 <a href="#changing-kdf-iterations" id="changing-kdf-iterations"></a>
+
+## Argon2id
 
 ## 调用的加密库 <a href="#invoked-crypto-libraries" id="invoked-crypto-libraries"></a>
 

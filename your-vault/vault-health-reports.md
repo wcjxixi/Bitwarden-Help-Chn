@@ -87,12 +87,14 @@
 
 > \[**译者注**]：DoB - Date of Birth，出生日期
 
+如果您在移动应用程序、浏览器扩展程序或桌面应用程序上创建帐户，您可以选择在决定使用主密码之前运行此报告。
+
 HIBP 将「泄漏」定义为「通常是由于访问控制不足或软件的安全弱点造成数据在脆弱的系统中无意中暴露的事件」。更多信息，请参阅 [HIBP 常见问题文档](https://haveibeenpwned.com/FAQs)。
 
 {% hint style="info" %}
 如果您是自托管 Bitwarden，想要在您的实例中运行**数据泄露报告**，您需要购买 HIBP 订阅密钥，该密钥将授权您对 API 进行调用。可以[在此处](https://haveibeenpwned.com/API/Key)购买此密钥。
 
-拥有此密钥后，打开 `./bwdata/env/global.override.env` 并将 `globalSetting__hibpApiKey=` 的占位符值替换为你购买的 API 密钥：
+拥有此密钥后，打开 `./bwdata/env/global.override.env` 并将 `globalSetting__hibpApiKey=` 的占位符值替换为您购买的 API 密钥：
 
 ```
 globalSettings__hibpApiKey=REPLACE

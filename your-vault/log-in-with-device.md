@@ -4,7 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/log-in-with-device/)
 {% endhint %}
 
-您知道吗？您可以使用辅助设备而不是您的主密码来登录网页密码库库。设备登录是一种无密码的身份验证方式，通过向您当前登录的任何移动设备发送身份验证请求以获得批准，而无需输入您的主密码。[了解我们的零知识加密实施方案](log-in-with-device.md#yun-zuo-fang-shi)。
+您知道吗？您可以使用辅助设备而不是您的主密码来登录 Bitwarden。设备登录是一种无密码的身份验证方式，通过向您当前登录的任何移动设备发送身份验证请求以获得批准，而无需输入您的主密码。[了解我们的零知识加密实施方案](log-in-with-device.md#yun-zuo-fang-shi)。
+
+可以在网页密码库、浏览器扩展、桌面应用程序和移动应用程序上启动设备登录。这些应用程序发出的请求可以在移动应用程序和桌面应用程序上获得批准。
 
 {% hint style="info" %}
 设备登录目前仅在 Bitwarden 云服务器 ([https://vault.bitwarden.com](https://vault.bitwarden.com/)) 上可用。
@@ -14,12 +16,17 @@
 
 要设置设备登录：
 
-* 至少一次正常登录网页密码库，以便 Bitwarden 可以识别您的浏览器。
-* 至少一次正常登录您的移动应用程序，以便 Bitwarden 可以识别您的设备。
-* 在移动应用程序中，打开 **⚙️设置**选项卡然后开启**批准登录请求**。
+* 至少一次正常登录发起设备登录的应用程序（网页密码库、浏览器扩展、桌面或移动应用程序），以便 Bitwarden 可以识别您的浏览器。
 
 {% hint style="info" %}
 使用隐身模式或隐私浏览会阻止 Bitwarden 注册您的浏览器，因此您将无法在隐私浏览器窗口中使用设备登录。
+{% endhint %}
+
+* 至少一次正常登录到批准设备登录的应用程序（移动或桌面应用程序），以便 Bitwarden 可以识别您的设备。
+* 在批准设备登录的应用程序中，打开 **⚙️设置**（或 iOS 桌面上的**首选项**）然后打开**批准登录请求**。
+
+{% hint style="info" %}
+作为企业组织的成员，您需要遵守 SSO 策略，如果您无法使用**设备登录**选项，您需要改用 [SSO 登录](../login-with-sso/using-login-with-sso.md#login-using-sso)。
 {% endhint %}
 
 ## 使用设备登录 <a href="#logging-in-with-a-device" id="logging-in-with-a-device"></a>

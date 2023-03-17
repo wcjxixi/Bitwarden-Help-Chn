@@ -104,7 +104,7 @@ cd C:\Bitwarden
 2、运行以下命令下载 Bitwarden 安装脚本（`bitwarden.ps1`）：
 
 ```powershell
-Invoke-RestMethod -OutFile bitwarden.ps1 -Uri https://go.btwrdn.co/bw-ps
+Invoke-RestMethod -OutFile bitwarden.ps1 -Uri "https://func.bitwarden.com/api/dl/?app=self-host&platform=windows"
 ```
 
 3、使用以下命令运行安装程序脚本：

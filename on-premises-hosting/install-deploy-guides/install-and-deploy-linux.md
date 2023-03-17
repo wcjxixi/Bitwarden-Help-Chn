@@ -123,7 +123,7 @@ Bitwarden 提供了一个 Shell 脚本，可以轻松地在 Linux 和 macOS（Ba
 1、将 Bitwarden 安装脚本（`bitwarden.sh`）下载到您主机上：
 
 ```shell
-curl -Lso bitwarden.sh https://go.btwrdn.co/bw-sh && chmod 700 bitwarden.sh
+curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platform=linux" && chmod 700 bitwarden.sh
 ```
 
 2、运行安装脚本。这将相对于 `bitwarden.sh` 的位置创建 `./bwdata` 目录：
