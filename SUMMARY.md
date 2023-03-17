@@ -184,6 +184,7 @@
   * [密码库数据](security/vault-data.md)
   * [管理数据](security/administrative-data.md)
   * [加密方式](security/encryption.md)
+  * [=KDF 算法](security/kdf-algorithms.md)
   * [账户加密密钥](security/account-encryption-key.md)
   * [账户指纹短语](security/account-fingerprint-phrase.md)
   * [数据存储](security/storage.md)
