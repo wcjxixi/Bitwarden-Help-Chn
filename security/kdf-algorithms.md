@@ -27,12 +27,12 @@ Argon2 是 2015 年[密码哈希竞赛](https://www.password-hashing.net/)的获
 
 Argon2 已被 Bitwarden 实现，其工作原理是将您的主密码与您的用户名混合，并通过单向哈希算法 (BLAKE2b) 运行结果值以创建固定长度的哈希值。
 
-Argon2 分配一部分内存（**KDF 内存**）然后用已计算的哈希值填充它直到填满。这是重复的，从它在第一个停止的内存的后续部分开始，在多个线程（**KDF 并行性**）上迭代多次（**KDF 迭代**）。所有迭代后的结果值是您的主密钥，它充当主密码哈希的输入，用于在用户登录时验证该用户（[了解更多](../business-resources/bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)）。
+Argon2 分配一部分内存（**KDF 内存**）然后用已计算的哈希值填充它直到填满。这是重复的，从它在第一个停止的内存的后续部分开始，在多个线程（**KDF 并行**）上迭代多次（**KDF 迭代**）。所有迭代后的结果值是您的主密钥，它充当主密码哈希的输入，用于在用户登录时验证该用户（[了解更多](../business-resources/bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)）。
 
 默认情况下，Bitwarden 设置为分配 64 MiB 内存，迭代 3 次，并跨 4 个线程执行此操作。这些默认值高于[当前的 OWASP 建议](https://cheatsheetseries.owasp.org/cheatsheets/Password\_Storage\_Cheat\_Sheet.html#introduction)，但如果您要更改您的设置，这里有一些提示：
 
-* 增加 **KDF 迭代数**将线性增加运行时间。
-* 您可以使用的 **KDF 并行**数量取决于您机器的 CPU。一般来说，最大。并行 = 核心数量 x 2。
+* 增加 **KDF 迭代**将线性增加运行时间。
+* 您可以使用的 **KDF 并行**数量取决于您机器的 CPU。一般来说，最大。并行数 = 核心数量 x 2。
 
 ## 更改 KDF 算法 <a href="#changing-kdf-algorithm" id="changing-kdf-algorithm"></a>
 

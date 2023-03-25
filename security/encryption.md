@@ -48,8 +48,8 @@ Argon2 是 2015 年[密码哈希竞赛](https://www.password-hashing.net/)的获
 
 默认情况下，Bitwarden 设置为分配 64 MiB 内存，迭代 3 次，并跨 4 个线程执行此操作。这些默认值高于[当前的 OWASP 建议](https://cheatsheetseries.owasp.org/cheatsheets/Password\_Storage\_Cheat\_Sheet.html#introduction)，但如果您要更改您的设置，这里有一些提示：
 
-* 增加 **KDF 迭代数**将线性增加运行时间。
-* 您可以使用的 **KDF 并行**数量取决于您机器的 CPU。一般来说，最大。并行 = 核心数量 x 2。
+* 增加 **KDF 迭代**将线性增加运行时间。
+* 您可以使用的 **KDF 并行**数量取决于您机器的 CPU。一般来说，最大。并行数 = 核心数量 x 2。
 
 ## 调用的加密库 <a href="#invoked-crypto-libraries" id="invoked-crypto-libraries"></a>
 
