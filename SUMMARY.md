@@ -27,7 +27,7 @@
       * [=GitHub Actions](secrets-manager/developer-tools/integrations/github-actions.md)
   * [=更多](secrets-manager/more/README.md)
     * [=机密管理器常见问题](secrets-manager/more/secrets-manager-faqs.md)
-    * [=已知问题](secrets-manager/more/known-issues.md)
+    * [已知问题](secrets-manager/more/known-issues.md)
 * [入门](getting-started/README.md)
   * [创建 Bitwarden 账户](getting-started/create-bitwarden-account.md)
   * [网页密码库入门](getting-started/getting-started-webvault.md)
