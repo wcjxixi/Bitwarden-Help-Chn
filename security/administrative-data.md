@@ -10,7 +10,7 @@
 我们鼓励您查看我们的[隐私政策](https://bitwarden.com/privacy)页面以了解更多信息。
 {% endhint %}
 
-Bitwarden **不会记录用户活动或例如 IP 地址、身份验证、访问或使用等访问信息**。与用户活动相关的信息仅可通过[事件日志](../admin-console/organization-basics/event-logs.md)提供给团队或企业组织。如上所述，Bitwarden 使用一些数据为您提供 Bitwarden 服务，这些数据包括：
+Bitwarden **不会记录用户活动或例如 IP 地址、身份验证、访问或使用等访问信息**。与用户活动相关的信息仅可通过[事件日志](../organizations/event-logs.md)提供给团队或企业组织。如上所述，Bitwarden 使用一些数据为您提供 Bitwarden 服务，这些数据包括：
 
 ### 个人信息 <a href="#personal-information" id="personal-information"></a>
 

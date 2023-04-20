@@ -33,5 +33,5 @@ alligator-transfer-laziness-macaroni-blue
 不知道您的指纹短语永远不会导致您被锁定在您的密码库之外。因此，将指纹短语记下并将其存储在安全的地方并不重要，但有些用户可能会选择这样做。
 
 {% hint style="success" %}
-另一方面，[恢复代码](../my-account/two-step-login/recovery-codes.md)用于两步登录，应**始终**以对您有意义的方式存储在 Bitwarden 之外。在您[丢失了两步登录辅助设备](../my-account/two-step-login/lost-secondary-device.md)时，这将确保您不会被锁定在您的帐户之外。
+另一方面，[恢复代码](../two-step-login/recovery-codes.md)用于两步登录，应**始终**以对您有意义的方式存储在 Bitwarden 之外。在您[丢失了两步登录辅助设备](../two-step-login/lost-secondary-device.md)时，这将确保您不会被锁定在您的帐户之外。
 {% endhint %}

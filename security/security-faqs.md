@@ -15,7 +15,7 @@
 3. Bitwarden **不存储您的密码**。Bitwarden 存储的是您的密码的加密版本，只有您才能解锁。您的敏感信息在被发送到我们的云服务器之前，会在您的个人设备上进行本地加密。
 4. **Bitwarden 的声誉很好**。Bitwarden 被数百万个人和企业使用。如果我们做任何有问题或有风险的事情，我们就会被淘汰！
 
-还是不相信我们吗？不必这样。开源是美丽的。您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由你自己控制。在[这里](../on-premises-hosting/install-deploy-guides/install-and-deploy-linux.md)了解更多。
+还是不相信我们吗？不必这样。开源是美丽的。您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由你自己控制。在[这里](../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md)了解更多。
 
 ## 问：如果 Bitwarden 被黑会怎么样？ <a href="#q-what-happens-if-bitwarden-gets-hacked" id="q-what-happens-if-bitwarden-gets-hacked"></a>
 
@@ -55,7 +55,7 @@
 
 ## 问：在我的 Biwatrden 账户中使用了哪些第三方服务、库和标识符？ <a href="#q-what-third-party-services-libraries-or-identifiers-are-used-in-my-bitwarden-account" id="q-what-third-party-services-libraries-or-identifiers-are-used-in-my-bitwarden-account"></a>
 
-**答：**在移动应用程序中，Firebase 云消息传递（经常被误认为是跟踪器）仅用于与[同步](../password-manager/vault-administration/syncing-your-vault.md)相关的推送通知，并且绝对不执行任何跟踪功能。Microsoft Visual Studio App Center 用于在一系列移动设备上进行崩溃报告。在 Web Vault 中，Stripe 和 PayPal 脚本仅用于支付页面上的支付处理。
+**答：**在移动应用程序中，Firebase 云消息传递（经常被误认为是跟踪器）仅用于与[同步](../your-vault/syncing-your-vault.md)相关的推送通知，并且绝对不执行任何跟踪功能。Microsoft Visual Studio App Center 用于在一系列移动设备上进行崩溃报告。在 Web Vault 中，Stripe 和 PayPal 脚本仅用于支付页面上的支付处理。
 
 对于那些喜欢排除所有第 3 方通信的用户，Firebase 和 Microsoft Visual Studio App Center 已从 [F-Droid 构建](https://bitwarden.com/download/)中完全移除。此外，关闭自托管 Bitwarden 服务器上的推送通知将禁用推送中继服务器。
 
@@ -63,11 +63,11 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 ## 问：如何对我的 Bitwarden 组织要求两步登录？ <a href="#q-how-do-i-require-two-step-login-for-my-bitwarden-organization" id="q-how-do-i-require-two-step-login-for-my-bitwarden-organization"></a>
 
-**答：**使用企业组织订阅中的[企业策略](../admin-console/organization-basics/enterprise-policies.md)，可以实现强制 2FA 功能。您也可以为您的组织启用 Duo MFA 集成来实现强制 2FA/MFA。有关更多信息，请参阅  [Duo 方式的两步登录](../my-account/two-step-login/setup-guides/two-step-login-via-duo.md)。
+**答：**使用企业组织订阅中的[企业策略](../organizations/enterprise-policies.md)，可以实现强制 2FA 功能。您也可以为您的组织启用 Duo MFA 集成来实现强制 2FA/MFA。有关更多信息，请参阅  [Duo 方式的两步登录](../two-step-login/setup-guides/two-step-login-via-duo.md)。
 
 ## 问：Bitwarden 的自托管实例的证书选项是什么？ <a href="#q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden" id="q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden"></a>
 
-**答：**有关完整列表以及说明，请参阅[证书选项](../on-premises-hosting/certificate-options.md)。
+**答：**有关完整列表以及说明，请参阅[证书选项](../self-hosting/certificate-options.md)。
 
 ## 问：Bitwarden 如何审核代码的更改？ <a href="#q-how-does-bitwarden-vet-code-changes" id="q-how-does-bitwarden-vet-code-changes"></a>
 
@@ -82,9 +82,9 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
     * 移动客户端应用程序**除外**，它将在 90 天后过期。
 
 
-* [两步登录](../my-account/two-step-login/two-step-login-methods.md)的**记住我**选项将在 30 天后过期。
-* 目录连接器[同步缓存](../admin-console/user-management/directory-connector/clear-sync-cache.md)将在 30 天后被清除。
-* 组织邀请将在 5 天后过期。自托管客户可以[使用环境变量](../on-premises-hosting/configure-environment-variables.md#optional-variables)对其进行配置。
+* [两步登录](../two-step-login/two-step-login-methods.md)的**记住我**选项将在 30 天后过期。
+* 目录连接器[同步缓存](../directory-connector/clear-sync-cache.md)将在 30 天后被清除。
+* 组织邀请将在 5 天后过期。自托管客户可以[使用环境变量](../self-hosting/configure-environment-variables.md#optional-variables)对其进行配置。
 
 ## 问：如何验证 Bitwarden 应用程序的校验和？ <a href="#q-how-do-i-validate-the-checksum-of-a-bitwarden-app" id="q-how-do-i-validate-the-checksum-of-a-bitwarden-app"></a>
 
@@ -126,7 +126,7 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 ### 问：为何浏览器扩展需要 `nativeMessaging` 权限？ <a href="#q-why-does-the-browser-extension-need-nativemessaging-permission" id="q-why-does-the-browser-extension-need-nativemessaging-permission"></a>
 
-**答：**1.48.0 版本的浏览器扩展启用了[浏览扩展的生物识别解锁](../my-account/log-in-and-unlock/unlocking-with-biometrics.md#browser-extensions)。
+**答：**1.48.0 版本的浏览器扩展启用了[浏览扩展的生物识别解锁](../your-vault/unlocking-with-biometrics.md#browser-extensions)。
 
 此权限，也就是 `nativeMessaging`，可以安全地接受它，它允许浏览器扩展与 Bitwarden 桌面应用程序进行通信，这是启用生物识别解锁所必需的。
 

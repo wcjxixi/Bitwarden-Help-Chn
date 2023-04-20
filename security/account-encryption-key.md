@@ -24,7 +24,7 @@
 
 ### 重新创建加密导出 <a href="#re-create-any-encrypted-exports" id="re-create-any-encrypted-exports"></a>
 
-如果您使用[加密导出](../password-manager/import-and-export/encrypted-exports.md)来存储长期的安全备份，您应该立即使用新的加密密钥重新创建密码库数据的加密导出。
+如果您使用[加密导出](../import-export/encrypted-exports.md)来存储长期的安全备份，您应该立即使用新的加密密钥重新创建密码库数据的加密导出。
 
 加密导出使用您的加密密钥来加密**以及解密**您的密码库数据，这意味着，经过轮换的加密密钥将无法解密使用「陈旧」（轮换前）的密钥创建的导出。
 

@@ -12,7 +12,7 @@
 
 Bitwarden 将所有数据安全地处理和存储在位于美国的 [Microsoft Azure Cloud](https://en.wikipedia.org/wiki/Microsoft\_Azure) 中，而 Microsoft Azure Cloud 使用由属于微软的团队管理的服务。由于 Bitwarden 仅使用 Azure 提供的服务，因此无需管理和维护服务器基础结构。运行时间、可伸缩性以及安全更新和保证均由 Microsoft 及其云基础架构提供支持。查看 [Microsoft Azure 合规性产品](https://azure.microsoft.com/en-us/resources/microsoft-azure-compliance-offerings/)文档以获取更多详细信息。
 
-不信任 Bitwarden 服务器吗？不必这样。开源是美丽的，您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由你自己控制。在[这里](../on-premises-hosting/install-deploy-guides/install-and-deploy-linux.md)了解更多。
+不信任 Bitwarden 服务器吗？不必这样。开源是美丽的，您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由你自己控制。在[这里](../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md)了解更多。
 
 ## 在您的本地机器上 <a href="#on-your-local-machine" id="on-your-local-machine"></a>
 

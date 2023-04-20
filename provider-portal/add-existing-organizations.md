@@ -23,6 +23,6 @@
 {% hint style="success" %}
 **将现有组织添加到提供商后**，您（提供商管理员和组织所有者）可以从组织中被删除。这样做将释放之前由您的帐户占用的用户席位。作为提供商的成员，您将保留对客户组织的所有权限：
 
-1. 组织可能是无所有者的，因此请向组织[添加一个备份所有者](../admin-console/user-management/user-management.md#invite)。
-2. 新的所有者被邀请、接受和确认后，请告诉他们[将您从组织中移除](../admin-console/user-management/user-management.md#offboard-users)。
+1. 组织可能是无所有者的，因此请向组织[添加一个备份所有者](../organizations/user-management.md#invite)。
+2. 新的所有者被邀请、接受和确认后，请告诉他们[将您从组织中移除](../organizations/user-management.md#offboard-users)。
 {% endhint %}
