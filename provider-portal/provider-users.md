@@ -12,7 +12,7 @@
 
 要邀请用户加入您的提供商：
 
-1、登录[网页密码库](../getting-started/getting-started-webvault.md)并打开您的提供商。
+1、登录[网页密码库](../password-manager/getting-started/getting-started-webvault.md)并打开您的提供商。
 
 2、打开**管理**选项卡，然后从左侧菜单中选择**人员**。
 
@@ -45,7 +45,7 @@
 
 要确认已接受的邀请加入您的提供商：
 
-1、登录[网页密码库](../getting-started/getting-started-webvault.md)并打开您的提供商。
+1、登录[网页密码库](../password-manager/getting-started/getting-started-webvault.md)并打开您的提供商。
 
 2、打开**管理**选项卡，然后从左侧菜单中选择**人员**。
 
@@ -63,7 +63,7 @@
 
 要从提供商移除用户：
 
-1、登录[网页密码库](../getting-started/getting-started-webvault.md)并打开您的提供商。
+1、登录[网页密码库](../password-manager/getting-started/getting-started-webvault.md)并打开您的提供商。
 
 2、打开**管理**选项卡，然后从左侧菜单中选择**人员**。
 
@@ -76,7 +76,7 @@
 ## 提供商用户的类型 <a href="#provider-user-types" id="provider-user-types"></a>
 
 {% hint style="success" %}
-**管理客户组织的用户？**组织有一组不同于提供商用户类型的[用户类型和访问控制](../organizations/user-types-and-access-control.md)。
+**管理客户组织的用户？**组织有一组不同于提供商用户类型的[用户类型和访问控制](../admin-console/user-management/user-types-and-access-control.md)。
 {% endhint %}
 
 Bitwarden 提供商用户可以被授予两种用户类型之一来管理他们对提供商的访问权限。**两种用户类型都能够完全管理任何客户组织**。Bitwarden 强烈建议您为第二个用户提供供应商管理员角色以进行故障转移。

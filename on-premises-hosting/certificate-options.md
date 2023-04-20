@@ -18,7 +18,7 @@
 
 如果更改了 Bitwarden 服务器的域名，则需要手动更新生成的证书。运行以下命令以创建备份、更新证书并重建 Bitwarden：
 
-<img src="../.gitbook/assets/linux-24.png" alt="" data-size="line">****<img src="../.gitbook/assets/apple-24.png" alt="" data-size="line">**Bash**
+<img src="../.gitbook/assets/linux-24.png" alt="" data-size="line"><img src="../.gitbook/assets/apple-24.png" alt="" data-size="line">**Bash**
 
 ```bash
 ./bitwarden.sh stop
@@ -158,7 +158,7 @@ sudo update-ca-certificates
 
 对于 Bitwarden Linux 桌面应用程序，使用基于 Chromium 的浏览器访问网页密码库，以及访问 Directory Connector 桌面应用程序，您还需要完成[此 Linux 证书管理过程](https://chromium.googlesource.com/chromium/src/+/refs/heads/master/docs/linux/cert\_management.md)。
 
-对于 [Bitwarden CLI](../getting-started/bitwarden-cli.md) 和[目录连接器 CLI](../directory-connector/directory-connector-cli.md)，您的自签名证书必须存储在本地文件中并由 `NODE_EXTRA_CA_CERTS=` 环境变量引用，例如：
+对于 [Bitwarden CLI](../password-manager/getting-started/bitwarden-cli.md) 和[目录连接器 CLI](../admin-console/user-management/directory-connector/directory-connector-cli.md)，您的自签名证书必须存储在本地文件中并由 `NODE_EXTRA_CA_CERTS=` 环境变量引用，例如：
 
 ```shell
 export NODE_EXTRA_CA_CERTS=~/.config/Bitwarden/certificate.crt

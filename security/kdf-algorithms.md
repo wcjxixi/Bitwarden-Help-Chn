@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/kdf-algorithms/)
 {% endhint %}
 
-Bitwarden 首先在创建帐户时使用密钥派生函数 (KDF) 从输入的主密码中派生出帐户的主密钥，作为帐户主密码哈希的输入（[了解更多](../business-resources/bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)）。每当用户通过身份验证时，例如解锁密码库或满足[主密码重新提示](../your-vault/vault-items.md#protect-individual-items)时，都会重复该过程，以便可以将新派生的哈希值与最初派生的哈希值进行比较。如果它们匹配，则用户通过身份验证。
+Bitwarden 首先在创建帐户时使用密钥派生函数 (KDF) 从输入的主密码中派生出帐户的主密钥，作为帐户主密码哈希的输入（[了解更多](../business-resources/bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)）。每当用户通过身份验证时，例如解锁密码库或满足[主密码重新提示](../password-manager/vault-basics/vault-items.md#protect-individual-items)时，都会重复该过程，以便可以将新派生的哈希值与最初派生的哈希值进行比较。如果它们匹配，则用户通过身份验证。
 
 KDF 被用来阻止针对主密码的暴力或字典攻击。KDF 迫使攻击者的机器为每次密码猜测计算大量的哈希值，从而增加攻击者的成本。
 
@@ -42,4 +42,4 @@ Argon2 分配一部分内存（**KDF 内存**）然后用已计算的哈希值�
 
 要更改您的 KDF 算法，请导航至网页密码库的**帐户设置** → **安全** → **密钥**页面。更改算法将重新加密受保护的对称密钥并更新身份验证哈希，就像正常的主密码更改一样，但不会轮换对称加密密钥，因此密码库数据不会被重新加密。有关重新加密数据的信息，请参阅[此处](account-encryption-key.md)。
 
-当您更改了算法后，您将从所有客户端注销。尽管在更改算法时不存在[轮换加密密钥](account-encryption-key.md)所涉及的风险，但我们仍然建议事先[导出您的密码库数据](../import-export/export-vault-data.md)。
+当您更改了算法后，您将从所有客户端注销。尽管在更改算法时不存在[轮换加密密钥](account-encryption-key.md)所涉及的风险，但我们仍然建议事先[导出您的密码库数据](../password-manager/import-and-export/export-vault-data.md)。

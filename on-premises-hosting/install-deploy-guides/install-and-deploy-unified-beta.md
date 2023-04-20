@@ -248,8 +248,8 @@ docker compose ps
 | BW\_ENABLE\_SCIM                  | 为企业组织启用或禁用 SCIM。默认为 `false`。                                                                                                                       |
 | BW\_ENABLE\_SSO                   | 为企业组织启用或禁用 SSO 服务。默认为 `false`。                                                                                                                     |
 | BW\_ICONS\_PROXY\_TO\_CLOUD       | <p>启用此服务将代理图标服务请求以通过云服务进行操作，以降低系统内存负载。</p><p>如果选择使用此设置，则应将 <code>BW_ENABLE_ICONS</code> 设置为 <code>false</code> 以减少容器负载。默认为 <code>false</code>。</p> |
-| BW\_ENABLE\_KEY\_CONNECTOR        | 设置为 `true` 以启用 [Key Connector](../../login-with-sso/about-key-connector.md)。                                                                       |
-| BW\_KEY\_CONNECTOR\_INTERNAL\_URL | [Key Connector](../../login-with-sso/about-key-connector.md) 使用的内部 URL。                                                                            |
+| BW\_ENABLE\_KEY\_CONNECTOR        | 设置为 `true` 以启用 [Key Connector](../../admin-console/login-with-sso/key-connector/about-key-connector.md)。                                           |
+| BW\_KEY\_CONNECTOR\_INTERNAL\_URL | [Key Connector](../../admin-console/login-with-sso/key-connector/about-key-connector.md) 使用的内部 URL。                                                |
 
 #### 电子邮件 <a href="#mail" id="mail"></a>
 

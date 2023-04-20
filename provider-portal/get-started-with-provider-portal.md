@@ -67,15 +67,15 @@
 
 ## 客户组织 <a href="#client-organizations" id="client-organizations"></a>
 
-客户组织是附属于提供商或由提供商管理的任何[组织](../organizations/organizations.md)。对于您的客户来说，除了谁负责管理，「客户」组织和「常规」组织之间没有区别。
+客户组织是附属于提供商或由提供商管理的任何[组织](../admin-console/organization-basics/organizations.md)。对于您的客户来说，除了谁负责管理，「客户」组织和「常规」组织之间没有区别。
 
-组织将 Bitwarden 用户和密码库项目联系在一起，用于[安全地共享](../organizations/sharing.md)登录、支付卡、笔记和身份信息。组织有一个独立的密码库，提供商服务用户可以在其中管理组织的项目、用户和设置：
+组织将 Bitwarden 用户和密码库项目联系在一起，用于[安全地共享](../password-manager/vault-basics/sharing.md)登录、支付卡、笔记和身份信息。组织有一个独立的密码库，提供商服务用户可以在其中管理组织的项目、用户和设置：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2Q6QjDRciHQAhKd7zPZkvD/95274cdb2fe38c44fcfa4ce725188d04/client-org.png?fm=webp&h=265&q=50&w=764" %}
 客户组织的查看
 {% endembed %}
 
-客户组织的成员（即您客户的最终用户）将在他们的**我的密码库**视图中与个人项目一起找到已共享的项目，以及已分配[集合](../organizations/collections.md)的筛选器，集合对组织项目进行分组，类似于[文件夹](../your-vault/folders.md)组织个人项目：
+客户组织的成员（即您客户的最终用户）将在他们的**我的密码库**视图中与个人项目一起找到已共享的项目，以及已分配[集合](../admin-console/organization-basics/collections.md)的筛选器，集合对组织项目进行分组，类似于[文件夹](../password-manager/vault-administration/folders.md)组织个人项目：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2qhSaHsOWf7vnZ4yvpfXrZ/71a61811bf3f6e9e4f0f5acb14bf55c6/personal-vault-org-enabled.png?fm=webp&h=403&q=50&w=766" %}
 最终用户密码库
@@ -93,7 +93,7 @@
 
 使用您新创建的客户组织，开始为您的客户构建完美的解决方案。根据客户的需求，每个客户组织的确切设置会有所不同，但通常涉及：
 
-1、**创建集合**。一个好的第一步是[创建一组集合](../organizations/collections.md#create-a-collection)，它为您在下一步中添加到密码库的项目提供组织结构。
+1、**创建集合**。一个好的第一步是[创建一组集合](../admin-console/organization-basics/collections.md#create-a-collection)，它为您在下一步中添加到密码库的项目提供组织结构。
 
 常见的集合模式包括**按部门的集合**（即客户营销团队中的用户被分配到**营销**集合）或**按功能的集合**（即来自客户营销团队的用户被分配到**社交媒体**集合）：
 
@@ -104,16 +104,16 @@
 2、**填充组织密码库**。存储密码库项目的结构就位后，就可以开始使用客户的登录、笔记、支付卡和身份来填充组织了。
 
 {% hint style="success" %}
-您可以从头开始[创建共享项目](../organizations/sharing.md#create-an-organization-item)，但我们建议您[导入一个包含其所有密码库项目的文件](../import-export/import-data-to-an-organization.md)。
+您可以从头开始[创建共享项目](../password-manager/vault-basics/sharing.md#create-an-organization-item)，但我们建议您[导入一个包含其所有密码库项目的文件](../admin-console/import-and-export/import-data-to-an-organization.md)。
 {% endhint %}
 
-3、**配置企业策略**。在开始用户管理部分的设置之前，[配置企业策略](../organizations/enterprise-policies.md)以便为诸如[主密码复杂性](../organizations/enterprise-policies.md#master-password)、[两步登录的使用](../organizations/enterprise-policies.md#two-step-login)和[管理员密码重置](../organizations/enterprise-policies.md#master-password-reset)等设置使用规则。
+3、**配置企业策略**。在开始用户管理部分的设置之前，[配置企业策略](../admin-console/organization-basics/enterprise-policies.md)以便为诸如[主密码复杂性](../admin-console/organization-basics/enterprise-policies.md#master-password)、[两步登录的使用](../admin-console/organization-basics/enterprise-policies.md#two-step-login)和[管理员密码重置](../admin-console/organization-basics/enterprise-policies.md#master-password-reset)等设置使用规则。
 
 {% hint style="info" %}
 企业策略**仅适用于企业组织**。
 {% endhint %}
 
-4、**设置 SSO 登录**。如果您的客户使用单点登录（SSO）与其他应用程序进行身份验证，请[将 Bitwarden 与他们的 IdP 连接](../login-with-sso/about-login-with-sso.md)，以允许使用最终用户的 SSO 凭据与 Bitwarden 进行身份验证。
+4、**设置 SSO 登录**。如果您的客户使用单点登录（SSO）与其他应用程序进行身份验证，请[将 Bitwarden 与他们的 IdP 连接](../admin-console/login-with-sso/about-login-with-sso.md)，以允许使用最终用户的 SSO 凭据与 Bitwarden 进行身份验证。
 
 5、**创建用户群组**。对于团队和企业组织，创建一组群组用于可扩展权限的分配。当您开始添加用户时，将他们添加到群组，以让每个用户自动继承群组的配置权限（例如可以访问哪些集合）。
 
@@ -133,6 +133,6 @@
 邀请用户
 {% endembed %}
 
-2、对于使用目录服务（活动目录、LDAP、Okta 等）的大型客户，使用[目录连接器](../directory-connector/)从源目录同步组织用户并自动发出邀请。
+2、对于使用目录服务（活动目录、LDAP、Okta 等）的大型客户，使用[目录连接器](../admin-console/user-management/directory-connector/)从源目录同步组织用户并自动发出邀请。
 
 无论您是从组织密码库邀请用户还是使用目录连接器，在[入职提供商用户](get-started-with-provider-portal.md#onboard-users)时遵循的 3 步过程（邀请 → 接受 → 确认）也适用于这里。

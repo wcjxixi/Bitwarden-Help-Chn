@@ -18,7 +18,7 @@ Microsoft Edge 的自动填充要求是最新的基于 Chromium 的版本。
 * Ctrl/CMD + Shift + N → 锁定扩展
 
 {% hint style="success" %}
-如果一个登录使用 [Bitwarden TOTP 验证器](totp.md)，使用 `Cmd/Ctrl + Shift + L` 会在自动填充后自动将您的 TOTP 复制到剪贴板。您所要做的就是 `Cmd/Ctrl + V` 粘贴！
+如果一个登录使用 [Bitwarden TOTP 验证器](../password-manager/vault-basics/totp.md)，使用 `Cmd/Ctrl + Shift + L` 会在自动填充后自动将您的 TOTP 复制到剪贴板。您所要做的就是 `Cmd/Ctrl + V` 粘贴！
 {% endhint %}
 
 ## 桌面应用程序快捷键 <a href="#desktop-application-shortcuts" id="desktop-application-shortcuts"></a>

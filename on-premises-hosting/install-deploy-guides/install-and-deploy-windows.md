@@ -118,20 +118,20 @@ Invoke-RestMethod -OutFile bitwarden.ps1 -Uri "https://func.bitwarden.com/api/dl
 * **Enter the domain name for your Bitwarden instance（输入您的 Bitwarden 实例的域名）:**\
   通常，此值应该是已配置的 DNS 记录。
 *   **Do you want to use Let's Encrypt to generate a free SSL certificate? (y/n)（您想使用 Let's Encrypt 生成免费的 SSL 证书吗？）:**\
-    ****指定 `y` 来使用 Let's Encrypt 生成一个可信的 SSL 证书。你会被提示输入一个电子邮件地址，以便从 Let's Encrypt 获取到期提醒。更多信息，请参阅[证书选项](../certificate-options.md)。
+    指定 `y` 来使用 Let's Encrypt 生成一个可信的 SSL 证书。你会被提示输入一个电子邮件地址，以便从 Let's Encrypt 获取到期提醒。更多信息，请参阅[证书选项](../certificate-options.md)。
 
     或者，指定 `n` 并使用 **Do you have a SSL certificate to use?** 选项。
 * **Enter your installation id（输入您的安装 ID）:**\
-  ****通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装 ID。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
+  通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装 ID。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
 *   **Enter your installation key（输入您的安装密钥）:**
 
     通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装密钥。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
 *   **Do you have a SSL certificate to use? (y/n)（您拥有自己的 SSL 证书吗？）:**\
-    ****如果你已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `C:\Bitwarden\bwdata\ssl\<your_domain>` 目录下。你会被问到是否使用受信任的 SSL 证书（y/n）。更多信息，请参阅[证书选项](../certificate-options.md)。
+    如果你已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `C:\Bitwarden\bwdata\ssl\<your_domain>` 目录下。你会被问到是否使用受信任的 SSL 证书（y/n）。更多信息，请参阅[证书选项](../certificate-options.md)。
 
     或者，指定 `n` 并使用 **self-signed SSL certificate?** 选项，这只是为了测试目的而推荐的。
 *   **Do you want to generate a self-signed SSL certificate? (y/n)（您想生成一个自签名证书吗？）:**\
-    ****指定 `y` 让 Bitwarden 为你生成一个自签名证书。这个选项只推荐用于测试。更多信息，请参阅[证书选项](../certificate-options.md)。
+    指定 `y` 让 Bitwarden 为你生成一个自签名证书。这个选项只推荐用于测试。更多信息，请参阅[证书选项](../certificate-options.md)。
 
     如果你指定 `n`，你的实例将不使用 SSL 证书，你需要使用前置 HTTPS 代理来安装，否则 Bitwarden 应用程序将无法正常运行。
 

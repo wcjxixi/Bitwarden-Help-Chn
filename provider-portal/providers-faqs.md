@@ -68,4 +68,4 @@
 
 ### 问：我们可以设置适用于所有客户的默认企业策略吗？ <a href="#q-can-we-set-default-enterprise-policies-that-apply-to-all-clients" id="q-can-we-set-default-enterprise-policies-that-apply-to-all-clients"></a>
 
-**答：**每个客户组织都通过单独配置的策略独立运作。[了解有关配置企业策略的更多信息](../organizations/enterprise-policies.md)。
+**答：**每个客户组织都通过单独配置的策略独立运作。[了解有关配置企业策略的更多信息](../admin-console/organization-basics/enterprise-policies.md)。

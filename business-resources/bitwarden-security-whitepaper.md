@@ -156,14 +156,14 @@ Bitwarden 支持如下方式的两步登录：
 
 #### 更改用户密码 <a href="#changing-user-password" id="changing-user-password"></a>
 
-您的主密码只能通过[网页密码库](https://vault.bitwarden.com/#/)更改。有关如何更改用户密码的具体步骤，请参阅[此 Bitwarden 帮助文章](../your-vault/your-master-password.md)。
+您的主密码只能通过[网页密码库](https://vault.bitwarden.com/#/)更改。有关如何更改用户密码的具体步骤，请参阅[此 Bitwarden 帮助文章](../my-account/log-in-and-unlock/your-master-password.md)。
 
 #### 轮换账户的加密密钥 <a href="#rotating-your-accounts-encryption-key" id="rotating-your-accounts-encryption-key"></a>
 
 在进行密码更改操作期间，您还可以选择轮换（更改）帐户的加密密钥。如果您认为以前的主密码已被盗用，或者您的 Bitwarden 密码库的数据已从其中一台设备上被窃取，则轮换加密密钥是一个好主意。
 
 {% hint style="danger" %}
-轮换帐户的加密密钥是一项敏感操作，因此这不是默认选项。密钥轮换会为您的帐户生成一个新的随机加密密钥，并使用此新密钥**重新加密所有密码库数据**。请参阅[此 Bitwarden 帮助文章](../your-vault/your-master-password.md)了解更多详情。
+轮换帐户的加密密钥是一项敏感操作，因此这不是默认选项。密钥轮换会为您的帐户生成一个新的随机加密密钥，并使用此新密钥**重新加密所有密码库数据**。请参阅[此 Bitwarden 帮助文章](../my-account/log-in-and-unlock/your-master-password.md)了解更多详情。
 {% endhint %}
 
 #### 中转过程中的数据保护 <a href="#data-protection-in-transit" id="data-protection-in-transit"></a>
@@ -203,15 +203,15 @@ PBKDF-SHA256 用于从您的主密码派生加密密钥。然后，这个密钥�
 
 对于商业用户，组织密码库项目存在一组类似的报告。
 
-了解更多：[密码库健康报告](../your-vault/vault-health-reports.md)
+了解更多：[密码库健康报告](../password-manager/vault-administration/vault-health-reports.md)
 
-有关 Bitwarden 事件日志和外部报告的更多信息，请参阅[事件日志](../organizations/event-logs.md)。
+有关 Bitwarden 事件日志和外部报告的更多信息，请参阅[事件日志](../admin-console/organization-basics/event-logs.md)。
 
 ### 将密码和其他机密导入 Bitwarden <a href="#importing-passwords-and-other-secrets-into-bitwarden" id="importing-passwords-and-other-secrets-into-bitwarden"></a>
 
-您可以轻松地将数据从 40 多种不同的服务（包括所有流行的密码管理器应用程序）导入 Bitwarden。 [Bitwarden 帮助中心](../import-export/import-data-to-your-vault.md)记录了受支持的应用程序的完整列表以及一些其他信息，包括将数据导入 Bitwarden 的疑难解答步骤。
+您可以轻松地将数据从 40 多种不同的服务（包括所有流行的密码管理器应用程序）导入 Bitwarden。 [Bitwarden 帮助中心](../password-manager/import-and-export/import-data-to-your-vault.md)记录了受支持的应用程序的完整列表以及一些其他信息，包括将数据导入 Bitwarden 的疑难解答步骤。
 
-如果要从 LastPass.com 网页密码库导出您的站点信息，请参考此帮助说明中的具体信息：[从 LastPass 导入数据](../import-export/import-guides/import-your-data-from-lastpass.md)。
+如果要从 LastPass.com 网页密码库导出您的站点信息，请参考此帮助说明中的具体信息：[从 LastPass 导入数据](../password-manager/import-and-export/import-guides/import-your-data-from-lastpass.md)。
 
 ### 用户之间共享数据 <a href="#sharing-data-between-users" id="sharing-data-between-users"></a>
 
@@ -225,7 +225,7 @@ PBKDF-SHA256 用于从您的主密码派生加密密钥。然后，这个密钥�
 
 当您创建一个组织时，将使用加密安全伪随机数生成器（CSPRNG）生成组织对称密钥。使用您生成的 RSA 密钥对中的公钥加密组织对称密钥。使用 AES-256 与生成的对称密钥加密生成的 RSA 密钥对中的私钥。生成的 RSA 密钥对和生成的对称密钥在你第一次注册账户时创建。
 
-阅读更多：[什么是组织？](../organizations/organizations.md)
+阅读更多：[什么是组织？](../admin-console/organization-basics/organizations.md)
 
 #### 访问控制和 Bitwarden 集合管理 <a href="#access-controls-and-managing-bitwarden-collections" id="access-controls-and-managing-bitwarden-collections"></a>
 
@@ -233,7 +233,7 @@ PBKDF-SHA256 用于从您的主密码派生加密密钥。然后，这个密钥�
 
 管理集合和群组是一种简单的方式，用于在 Bitwarden 中隔离、授予或限制对密码库项目的访问，从而控制用户对资源的可见性。
 
-Bitwarden 帮助中心的[用户类型和访问控制](../organizations/user-types-and-access-control.md)部分记录了完整的角色和访问控制列表。
+Bitwarden 帮助中心的[用户类型和访问控制](../admin-console/user-management/user-types-and-access-control.md)部分记录了完整的角色和访问控制列表。
 
 阅读更多：[如何管理集合](broken-reference)。
 
@@ -241,7 +241,7 @@ Bitwarden 帮助中心的[用户类型和访问控制](../organizations/user-typ
 
 事件日志包含了时间标记、在一个组织内发生了哪些动作或更改的详细情况。这些日志对于研究凭证或配置的更改有帮助，以及对于审计跟踪调查和故障排除非常有用。
 
-更多关于[事件日志](../organizations/event-logs.md)的信息记录于 Bitwarden 帮助中心。事件日志仅适用于团队和商业计划。
+更多关于[事件日志](../admin-console/organization-basics/event-logs.md)的信息记录于 Bitwarden 帮助中心。事件日志仅适用于团队和商业计划。
 
 要收集更多的数据，具有 API 访问权限的计划可以使用 Bitwarden API。API 响应将包含事件类型和相关数据。
 
@@ -249,7 +249,7 @@ Bitwarden 帮助中心的[用户类型和访问控制](../organizations/user-typ
 
 对于像 Splunk 这样的安全信息和事件管理（SIEM）系统，当从 Bitwarden 导出数据时，可能会使用 API 和 CLI 的数据组合来收集数据。
 
-在帮助中心的 [SIEM 和外部系统集成](../organizations/event-logs.md#siem-and-external-systems-integrations)下的**组织事件日志**的说明中概述此过程。
+在帮助中心的 [SIEM 和外部系统集成](../admin-console/organization-basics/event-logs.md#siem-and-external-systems-integrations)下的**组织事件日志**的说明中概述此过程。
 
 ### 账户保护和避免被锁定 <a href="#account-protection-and-avoiding-lockout" id="account-protection-and-avoiding-lockout"></a>
 
@@ -335,7 +335,7 @@ Bitwarden 使用 Azure 服务配置来确保以可重复且一致的方式配置
 
 #### Bitwarden 平台密钥管理程序 <a href="#bitwarden-platform-key-management-procedures" id="bitwarden-platform-key-management-procedures"></a>
 
-Bitwarden 平台本身使用了密钥和其他机密，包括 Bitwarden 云提供商账户的凭证。所有这些密钥都是按照行业标准的做法生成、安全存储并根据需要进行轮换。Bitwarden 使用一个内部 Bitwarden 密码库，用于安全存储和备份 Bitwarden 平台所使用的敏感密钥或其他机密。Bitwarden 密码库的访问控制使用[用户类型和访问控制](../organizations/user-types-and-access-control.md)。
+Bitwarden 平台本身使用了密钥和其他机密，包括 Bitwarden 云提供商账户的凭证。所有这些密钥都是按照行业标准的做法生成、安全存储并根据需要进行轮换。Bitwarden 使用一个内部 Bitwarden 密码库，用于安全存储和备份 Bitwarden 平台所使用的敏感密钥或其他机密。Bitwarden 密码库的访问控制使用[用户类型和访问控制](../admin-console/user-management/user-types-and-access-control.md)。
 
 #### 数据类型和数据保留 <a href="#data-types-and-data-retention" id="data-types-and-data-retention"></a>
 

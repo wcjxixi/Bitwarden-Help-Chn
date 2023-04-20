@@ -7,7 +7,7 @@
 2021 年 8 月发布的 Bitwarden（**2021-09-21**）引入了 [Captcha](https://www.hcaptcha.com/about) 要求，以提高针对机器人流量的安全性。在 CLI 上，Captcha 挑战被身份验证挑战所取代，此挑战可以使用您帐户的[个人 API 密钥](personal-api-key-for-cli-authentication.md) 的 `client_secret` 来进行验证。
 
 {% hint style="success" %}
-**对于自动化工作流程或对外部应用程序提供访问的场景**，我们建议使用 `bw login --apikey` [方式](../getting-started/bitwarden-cli.md#using-an-api-key)。此方式遵循更可预测的身份验证流程，并且可以通过[轮换 API 密钥](personal-api-key-for-cli-authentication.md#rotate-your-api-key)来撤销应用程序或机器的访问权限。
+**对于自动化工作流程或对外部应用程序提供访问的场景**，我们建议使用 `bw login --apikey` [方式](../password-manager/getting-started/bitwarden-cli.md#using-an-api-key)。此方式遵循更可预测的身份验证流程，并且可以通过[轮换 API 密钥](personal-api-key-for-cli-authentication.md#rotate-your-api-key)来撤销应用程序或机器的访问权限。
 {% endhint %}
 
 ## 获取个人 API 密钥 <a href="#get-your-personal-api-key" id="get-your-personal-api-key"></a>

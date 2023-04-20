@@ -7,7 +7,7 @@
 您的 Bitwarden 个人 API 密钥可以作为一种验证进入命令行界面（CLI）的方式。
 
 {% hint style="info" %}
-个人 API 密钥与用于访问 [Bitwarden 公共 API](../organizations/bitwarden-public-api.md) 或[目录连接器](../directory-connector/about-directory-connector.md)的[组织 API 密钥](../organizations/bitwarden-public-api.md#authentication)是**不同的**。个人 API 密钥的 `client_id` 格式为 `"user.clientId"`，而组织 API 密钥的 `client_id` 格式为 `"organization.ClientId"`。
+个人 API 密钥与用于访问 [Bitwarden 公共 API](../admin-console/bitwarden-public-api.md) 或[目录连接器](../admin-console/user-management/directory-connector/about-directory-connector.md)的[组织 API 密钥](../admin-console/bitwarden-public-api.md#authentication)是**不同的**。个人 API 密钥的 `client_id` 格式为 `"user.clientId"`，而组织 API 密钥的 `client_id` 格式为 `"organization.ClientId"`。
 {% endhint %}
 
 ## 获取您的个人 API 密钥 <a href="#get-your-personal-api-key" id="get-your-personal-api-key"></a>
@@ -49,7 +49,7 @@
 bw login --apikey
 ```
 
-这将提示您输入获您的个人 `client_id` 和 `client_secret` 来进行验证。使用这些值对您的会话进行身份验证后，您就可以使用 `unlock` 命令了（[了解更多](../getting-started/bitwarden-cli.md#unlock)）。
+这将提示您输入获您的个人 `client_id` 和 `client_secret` 来进行验证。使用这些值对您的会话进行身份验证后，您就可以使用 `unlock` 命令了（[了解更多](../password-manager/getting-started/bitwarden-cli.md#unlock)）。
 
 ### 使用 API 密钥环境变量 <a href="#using-api-key-environment-variables" id="using-api-key-environment-variables"></a>
 
