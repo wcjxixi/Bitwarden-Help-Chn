@@ -12,7 +12,7 @@ Bitwarden 主页
 
 ## 创建您的账户 <a href="#create-your-account" id="create-your-account"></a>
 
-点击链接后，将出现如下界面。填写完所有的字段（_主密码提示_是可选的）后，点击**提交**。
+在创建帐户界面，填写完所有的字段（_主密码提示_是可选的），然后选择**提交**。在提交主密码之前，您还可以选择**检查密码的已知数据泄露情况**（[了解更多](../your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)）。
 
 ![创建您的账户](../.gitbook/assets/create-account-screen-overlay.png)
 

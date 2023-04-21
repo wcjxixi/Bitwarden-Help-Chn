@@ -92,7 +92,7 @@
 
 ### 移动到组织 <a href="#move-to-organization" id="move-to-organization"></a>
 
-如果您是[组织](../organizations/organizations.md)的成员，您可以将密码库项目移动到组织，以便于与其他成员共享。了解更多关于[组织](broken-reference)、[集合](../organizations/collections.md)和[共享](../organizations/sharing.md)的信息。
+如果您是[组织](../organizations/organizations.md)的成员，您可以将密码库项目移动到组织，以便于与其他成员共享。了解更多关于[组织](../organizations/organizations.md)、[集合](../organizations/collections.md)和[共享](../organizations/sharing.md)的信息。
 
 ### 保护个人项目 <a href="#protect-individual-items" id="protect-individual-items"></a>
 

@@ -1,10 +1,10 @@
-# SSO 登录的使用
+# =SSO 登录的使用
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/using-sso/)
 {% endhint %}
 
-作为 Bitwarden 的最终用户，在您[使用 SSO 登录](using-login-with-sso.md#login-using-sso)之前，您需要拥有您的[组织标识符](using-login-with-sso.md#get-your-organization-identifier)：
+作为 Bitwarden 的最终用户，在您[使用 SSO 登录](using-login-with-sso.md#login-using-sso)之前，您需要获取您的组织 [SSO 标识符](using-login-with-sso.md#get-your-organization-identifier)：
 
 {% hint style="success" %}
 根据您组织的设置方式，您可能还需要[将您的帐户链接到 SSO](using-login-with-sso.md#link-your-account)。如果您**已经拥有作为组织成员的 Bitwarden 帐户**，或者**您的组织不要求您使用 SSO**，则通常需要这样做。
@@ -13,6 +13,14 @@
 ## 获取组织标识符 <a href="#get-your-organization-identifier" id="get-your-organization-identifier"></a>
 
 每一个 Bitwarden 组织都有一个专门用于 SSO 登录的唯一标识符。您将需要这个值才能登录，因此请询问您的经理或 Bitwarden 管理员[以获取它](saml-2.0-configuration.md#step-1-set-an-organization-identifier)。
+
+{% hint style="info" %}
+企业客户可以验证其组织的域名所有权（例如 `mycompany.com`）。如果您的登录电子邮件与您组织的已验证域名（例如 `mycompany.com`）相匹配，则在使用 SSO 登录时无需输入 SSO 标识符。
+
+要了解有关域名验证的更多信息，请参阅[这里](../admin-console/login-with-sso/domain-verification.md)。
+{% endhint %}
+
+## 使用 SSO 加入组织 <a href="#join-an-organization-using-sso" id="join-an-organization-using-sso"></a>
 
 ## 使用 SSO 登录 <a href="#login-using-sso" id="login-using-sso"></a>
 
