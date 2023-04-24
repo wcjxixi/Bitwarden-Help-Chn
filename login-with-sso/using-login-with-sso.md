@@ -26,9 +26,9 @@
 
 {% tabs %}
 {% tab title="我已被邀请" %}
-如果您的收件箱中有加入该组织的电子邮件邀请，请根据您是否已经拥有使用该电子邮件地址的 Bitwarden 帐户执行以下程序之一：
+如果您的收件箱中有加入该组织的电子邮件邀请，请根据您是否已经有一个使用该电子邮件地址的 Bitwarden 帐户，执行以下程序之一：
 
-## 我已经有 Bitwarden 帐户
+## 我已经有 Bitwarden 帐户 <a href="#i-already-have-a-bitwarden-account" id="i-already-have-a-bitwarden-account"></a>
 
 如果邀请发送到已链接到 Bitwarden 帐户并与 IdP 提供的电子邮件地址匹配的电子邮件，请按照以下步骤加入组织：
 
@@ -37,7 +37,7 @@
 3. 成功登录后，页面顶部会出现一个绿色横幅，表明您的组织邀请已被接受。在您继续之前，组织管理员需要向组织确认您。
 4. 确认后，您将能够通过再次登录 Bitwarden 来访问该组织，这次使用企业单点登录选项。
 
-我还没有 Bitwarden 帐户
+## 我还没有 Bitwarden 帐户 <a href="#i-dont-have-a-bitwarden-account" id="i-dont-have-a-bitwarden-account"></a>
 
 如果邀请发送到尚未链接到 Bitwarden 帐户的电子邮件，请按照以下步骤操作：
 
