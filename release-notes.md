@@ -37,7 +37,7 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 
 ### 机密管理器 (Beta) <a href="#secrets-manager-beta" id="secrets-manager-beta"></a>
 
-Bitwarden 机密管理器现在作为公开测试版提供。在此处了解如何开始。
+Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secrets-manager/secrets-manager-overview.md)了解如何开始。
 
 ## 2023.2.0
 
