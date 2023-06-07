@@ -36,7 +36,7 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 * **密码管理器 - 改进了德语 HTML 的自动填充**：德语 HTML 字段现在可用于自动填充。参阅[这里](https://github.com/bitwarden/clients/pull/4210)。
 * **Secrets Manager - 在机密创建期间创建工程**：您现在可以在机密创建菜单中创建新的工程。参阅[这里](secrets-manager/your-secrets/secrets.md)。
 * **自托管 - 阐明有关服务器许可证的措辞**：有 60 天的宽限期来上传新许可证以替换过期的许可证。参阅[这里](self-hosting/licensing-for-paid-features.md#update-organization-license)。
-* **低 KDF 警告**：当用户的 KDF 迭代次数低于行业建议值（目前为 600,000 次迭代）时，Web 应用程序中将出现一个新的警告。参阅这里。
+* **低 KDF 警告**：当用户的 KDF 迭代次数低于行业建议值（目前为 600,000 次迭代）时，Web 应用程序中将出现一个新的警告。参阅[这里](security/kdf-algorithms.md#low-kdf-iterations)。
 
 ## 2023.4.0
 
@@ -44,20 +44,20 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 
 * **Splunk 集成**：Bitwarden 组织现在可以使用自托管的 Splunk Enterprise 进行安全信息和事件管理 (SIEM)。在[此处](admin-console/reporting/splunk-siem.md)了解如何开始使用 Splunk。
 * **改进的经销商计费**：Bitwarden 经销商现在是唯一有权查看其客户组织的计费、订阅或付款信息的实体。参阅[这里](my-account/plans-and-pricing/bitwarden-resellers.md)。
-* **主密码要求策略更新**：如果启用，主密码要求策略现在可以设置为提示现有的不合规用户更新他们的主密码。参阅这里。
-* **密码库超时策略更新**：密码库超时策略现在提供了指定密码库超时动作的选项。参阅这里。
-* **桌面端 - 新的生物识别选项**：您现在可以选择是在应用程序启动时要求主密码还是在打开时允许生物识别。参阅这里。
-* **桌面端 - Windows Hello 安全改进**：解决了与 Windows Hello 和 Windows Credential Manager 相关的漏洞。作为一项附加措施，我们建议使用新选项以在应用程序启动时要求输入主密码。参阅这里。
-* **浏览器扩展 - 改进的表单检测**：改进了表单检测的逻辑，并针对浏览器扩展的通知栏解决了错误报告。有关技术细节，请参阅这里。
+* **主密码要求策略更新**：如果启用，主密码要求策略现在可以设置为提示现有的不合规用户更新他们的主密码。参阅[这里](organizations/enterprise-policies.md#master-password-requirements)。
+* **密码库超时策略更新**：密码库超时策略现在提供了指定密码库超时动作的选项。参阅[这里](organizations/enterprise-policies.md#vault-timeout)。
+* **桌面端 - 新的生物识别选项**：您现在可以选择是在应用程序启动时要求主密码还是在打开时允许生物识别。参阅[这里](your-vault/unlocking-with-biometrics.md)。
+* **桌面端 - Windows Hello 安全改进**：解决了与 Windows Hello 和 Windows Credential Manager 相关的漏洞。作为一项附加措施，我们建议使用新选项以在应用程序启动时要求输入主密码。参阅[这里](your-vault/unlocking-with-biometrics.md)。
+* **浏览器扩展 - 改进的表单检测**：改进了表单检测的逻辑，并针对浏览器扩展的通知栏解决了错误报告。有关技术细节，请参阅[这里](https://github.com/bitwarden/clients/pull/4798)。
 
 ## 2023.3.0
 
 此次发布包含：
 
-* **域名验证**：组织可以验证域名（例如 `mycompany.com`）的所有权，允许用户在使用 SSO 登录时跳过组织标识符步骤。参阅这里。
-* **浏览器扩展 - 改进的自动填充安全性**：浏览器扩展现在不允许在页面加载时自动填充不受信任的 iframe。浏览器扩展还会在手动自动填充、使用上下文菜单或使用键盘快捷键时警告用户有关不受信任的 iframe，并在自动填充 HTTP 站点时警告用户，该站点需要基于该项目的已保存 URI 的 HTTPS。参阅这里。
-* **主密码安全性检查**：用户现在可以在创建帐户或在 Web 密码库上更改主密码时通过 Have I Been Pwned 检查已知的数据泄露，以查找他们预期的主密码。参阅这里。
-* **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 帐户和更改主密码的任何用户强制执行。
+* **域名验证**：组织可以验证域名（例如 `mycompany.com`）的所有权，允许用户在使用 SSO 登录时跳过组织标识符步骤。参阅[这里](admin-console/login-with-sso/domain-verification.md)。
+* **浏览器扩展 - 改进的自动填充安全性**：浏览器扩展现在不允许在页面加载时自动填充不受信任的 iframe。浏览器扩展还会在手动自动填充、使用上下文菜单或使用键盘快捷键时警告用户有关不受信任的 iframe，并在自动填充 HTTP 站点时警告用户，该站点需要基于该项目的已保存 URI 的 HTTPS。参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
+* **主密码安全性检查**：用户现在可以在创建帐户或在 Web 密码库上更改主密码时通过 Have I Been Pwned 检查已知的数据泄露，以查找他们预期的主密码。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
+* **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 帐户和[更改主密码](your-vault/your-master-password.md#change-your-master-password)的任何用户强制执行。
 * **激活自动填充策略**：对于企业组织，激活自动填充策略将自动为组织的新成员和现有成员打开页面加载时的自动填充。参阅这里。
 * **浏览器扩展 - 改进的通知栏**：用于将未检测到的项目添加到您的密码库的通知栏现在为遵守删除单个密码库策略的用户提供了更直观的工作流程。参阅这里。
 * **iOS - 选择 Bitwarden 获取验证码**：iOS 16+ 用户现在可以将 Bitwarden 设置为直接从相机应用程序扫描代码时用于存储验证码的默认应用程序。参阅这里。

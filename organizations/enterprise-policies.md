@@ -47,9 +47,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 密码的复杂度按照 0（弱）到 4（强）的比例计算。Bitwarden 使用 [zxcvbn 库](https://github.com/dropbox/zxcvbn)来计算密码复杂度。
 
-{% hint style="warning" %}
-启用此策略后，现有的不符合要求的用户**不会**强制要求更改其主密码，也不会从组织中将其移除。这些用户下次更改其主密码时，将强制要求符合此策略。
-{% endhint %}
+使用**要求现有成员更改他们的密码**选项以要求现有的、不合规的组织成员在下次登录时更新他们的主密码。
 
 ### 主密码重置 <a href="#master-password-reset" id="master-password-reset"></a>
 
@@ -134,7 +132,11 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 ### 密码库超时 <a href="#vault-timeout" id="vault-timeout"></a>
 
-启用**密码库超时**策略将为您组织的所有成员实施最大的密码库超时时间。此策略会将超时限制应用于所有客户端应用程序（移动端、桌面端、浏览器扩展等）。
+设置**密码库超时**策略将允许您：
+
+* 为组织的所有成员（所有者除外）实施最大[密码库超时](../your-vault/vault-timeout-options.md#vault-timeout)持续时间。此选项将超时限制应用于所有客户端应用程序（移动端、桌面端、浏览器扩展等）。
+* 为组织的所有成员（所有者除外）设置[密码库超时](../your-vault/vault-timeout-options.md#vault-timeout-action)动作。此选项可以设置为用户首选项、在发生密码库超时时锁定或注销。\
+  **注销**选项可用于比如在用户每次访问其密码库时提示用户使用 2FA，并通过定期清除用户机器上的本地数据来防止离线使用。
 
 在密码库超时配置期间将向用户显示一条横幅，表明某个策略正在影响他们的选项。
 
@@ -149,3 +151,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 启用**禁用个人密码库导出**策略将禁止您组织的非所有者/非管理员成员[导出其私人密码库数据](../import-export/export-vault-data.md#export-a-personal-vault)。
 
 在网页密码库和 CLI 中，会向用户显示一条消息，以表明某个策略正在影响他们的选项。在其他客户端中，该选项将被简单地禁用。
+
+### 激活自动填充 <a href="#activate-auto-fill" id="activate-auto-fill"></a>
+
+打开**激活自动填充**策略将自动为组织的所有现有和新成员打开浏览器扩展上的[页面加载时自动填充](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#on-page-load)功能。如果愿意，成员也可以为其浏览器扩展关闭或修改页面加载的自动填充行为。

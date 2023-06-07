@@ -181,7 +181,7 @@
     * [SAML 2.0 配置](login-with-sso/saml-2.0-configuration.md)
     * [OIDC 配置](login-with-sso/oidc-configuration.md)
     * [成员解密选项](login-with-sso/member-decryption-options.md)
-    * [=域名验证](admin-console/login-with-sso/domain-verification.md)
+    * [=域验证](admin-console/login-with-sso/domain-verification.md)
     * [实施指南](login-with-sso/implementation-guides/README.md)
       * [AD FS SAML 实施](login-with-sso/implementation-guides/ad-fs-saml-implementation.md)
       * [Auth0 SAML 实施](login-with-sso/implementation-guides/auth0-saml-configuration.md)

@@ -18,11 +18,13 @@ Bitwarden 可以被配置为接受生物识别的的方式来解锁您的密码�
 
 {% tabs %}
 {% tab title="移动端" %}
+### 在移动端启用 <a href="#enable-for-mobile" id="enable-for-mobile"></a>
+
 生物识别解锁支持 Android（Google Play 或 FDroid）上的[指纹解锁](https://support.google.com/nexus/answer/6285273?hl=zh-Hans)或[面部解锁](https://support.google.com/pixelphone/answer/9517039?hl=zh-Hans)，iOS 上的[触控 ID](https://support.apple.com/zh-cn/HT201371) 和[面容 ID](https://support.apple.com/zh-cn/HT208109)。
 
 要为您的移动设备启用生物识别解锁：
 
-1、在设备的本机设置（例如 iOS **⚙️设置**应用程序）中，确保您的生物识别方式已打开。
+1、在设备的原生设置（例如 iOS **⚙️设置**应用程序）中，确保您的生物识别方式已打开。
 
 2、在 Bitwarden 应用程序中，打开 **⚙️设置**选项卡。
 
@@ -44,11 +46,13 @@ Bitwarden 可以被配置为接受生物识别的的方式来解锁您的密码�
 {% endtab %}
 
 {% tab title="桌面端" %}
-生物识别解锁支持 Windows 上的 [Windows Hello](https://support.microsoft.com/zh-cn/help/4028017/windows-learn-about-windows-hello-and-set-it-up) PIN、面部识别或[其他符合 Windows Hello 生物识别要求的硬件](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)，macOS 上的[触控 ID](https://support.apple.com/zh-cn/HT207054)。
+### 在桌面端启用 <a href="#enable-for-desktop" id="enable-for-desktop"></a>
+
+生物识别解锁支持 Windows 上的 [Windows Hello](https://support.microsoft.com/zh-cn/help/4028017/windows-learn-about-windows-hello-and-set-it-up) PIN、面部识别或[其他符合 Windows Hello 生物识别要求的硬件](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)，以及 macOS 上的[触控 ID](https://support.apple.com/zh-cn/HT207054)。
 
 生物识别解锁是为登录到桌面应用程序的每一个帐户单独设置的。要启用生物识别解锁：
 
-1、在设备的本机设置（例如 macOS **⚙️系统首选项**应用程序）中，确保您的生物识别方式已打开。
+1、在设备的原生设置（例如 macOS **⚙️系统首选项**应用程序）中，确保您的生物识别方式已打开。
 
 {% hint style="success" %}
 Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](https://support.microsoft.com/zh-cn/help/2977003/the-latest-supported-visual-c-downloads)，然后才能在桌面偏好设置中打开 Windows Hello。
@@ -56,19 +60,23 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 
 2、在 Bitwarden 应用程序中，打开**设置**（Windows：**文件** → **设置**；macOS：**Bitwarden** → **首选项**）。
 
-3、向下滚动到**安全**部分，然后选择您想要启用的生物识别选项。此界面上可用的内容取决于您的设备的硬件功能以及已启用的功能（**步骤 1**），例如：
+3、在**安全**部分，选择您想要启用的生物识别选项。此界面上可用的内容取决于您的设备的硬件功能以及已打开的功能（**步骤 1**），例如：
 
-![使用 Windows Hello 解锁](../.gitbook/assets/windows.png)
-
-启用后，桌面应用程序将自动提示您使用生物识别来解锁您的密码库。您可以从同一菜单中使用**不提示...**选项来关闭自动提示：
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/18yIPBjn8guoddFUGBUjj0/bdc03e51ae2b1a2bcb9c6a2fdc2ec050/auto-off.png?fm=webp&h=115&q=50&w=499" %}
-使用 Windows Hello&#x20;
+{% embed url="https://bitwarden.com/_gatsby/image/91ce97e4d6323abcab3193e6d8e7fa50/8696fca6dea8cee9b9af15af980cdf3c/windows.webp?eu=dbdc59e6b29ca9d30e6ba8823e21683fb26954f9a85636d13567b2aa4cf99b8526a6115327c179e02c6b5ddd87b443e831c32d611db8d08ec5ea18fce866fe0d508a5ce634e6750e022291f9e6a1551369cf1e5da7d2cf5aa2692086b0e1b2711d021b2caf7cbc84e6f17120f0c0252df5effb7f3297e866b3560805885b24b827a5ce8b7701e98cee4ca9bcefff0190dbe0320412bc8f4e61203377059a53ddc1fb76376654145f2a98fe5ccf68c7b5354f37715a0e51f7333cd103a83d38c3e0fba7088b7c2db3fed67629d897f1c7ae04ec7421&a=w%3D500%26h%3D315%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A21%3A55.603Z" %}
+使用 Windows Hello 解锁
 {% endembed %}
 
-无论您的自动提示是如何选择的，解锁界面上都会显示一个用于解锁您的密码库的新的按钮：
+4、可选。选择**应用启动时需要密码（或 PIN）**或**应用启动时要求生物识别**选项，以设置桌面应用程序在启动时的行为方式。
 
-![使用 Windows Hello 解](../.gitbook/assets/hello-unlock.png)
+{% hint style="success" %}
+如果您使用的是 Windows，Bitwarden 建议使用**在启动后首次登录时需要密码（或 PIN）**，以最大限度地提高安全性。后，桌面应用程序将自动提示您使用生物识别来解锁您的密码库。您可以从同一菜单中使用**不提示...**选项来关闭自动提示：
+{% endhint %}
+
+如果您这两个选项都不适使用，您只需在登录界面选择**使用生物识别解锁**按钮以提示您输入生物识别选项：
+
+{% embed url="https://bitwarden.com/_gatsby/image/30dc27d7fd7f73f2e3d07b0a35f5e7a5/80f86093740ec4a04cfb3c5730ac376e/hello-unlock.webp?eu=dc8c03b3e7c0ff84096bf5d56e73353bb33b06a8fe0267843a30e7fe49a19c8f24f21c5124932fe42e3c5cd6dbe044bc61ce29674de6d2d2c9bf10f3bc3cff0c59db1eaa27f07a184e7299afe7a0455b3b824c09e2c09d4ce0732c81a1acb03247035a71a92cb0dcabae2a1ed3de6a678ffec17400b5e3199b120c25cc1977837bbfc58b6016e69db74eede2ecaf01cccae07e004888f6672a701d4b0bbb2aeef3ad5c2465751f467090f307943a88f6624b&a=w%3D500%26h%3D347%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A21%3A54.594Z" %}
+使用 Windows Hello 解锁
+{% endembed %}
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -127,20 +135,16 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 
 桌面应用程序会提示您输入生物特征数据。这样做将完成初始设置过程。如果您选择要求验证（**步骤 2**），则需要批准指纹验证检查。
 
-6、如果您希望浏览器扩展在启动时自动提示生物识别输入，请确保未选中**启动时不提示生物识别**选项：
+6、如果您希望浏览器扩展在启动时自动提示生物识别输入，请确保启用**启动时提示生物识别**选项。
 
-{% embed url="https://bitwarden.com/help/images/biometrics/extension-launch.png" %}
-生物识别选项
-{% endembed %}
+当您打开浏览器扩展程序时，它会自动提示您输入生物识别信息。如果您打开提示选项（**步骤 6**），请使用解锁界面上的**使用生物识别解锁**按钮：
 
-当您打开浏览器扩展程序时，它会自动提示您输入生物识别信息。如果您禁用不提示选项（**步骤 6**），请在解锁界面使用**使用生物识别解锁**按钮：
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/4jRsXEv6GdtcLfbqmaRGlP/fe194a8dacf8ee4ce39462cf4d52e61f/be-bio-unlock.png?fm=webp&h=555&q=50&w=766" %}
+{% embed url="https://bitwarden.com/_gatsby/image/de0a7b3e1bc571179539036da0efa0c9/005f0ea13af6c403286a9db55310df84/be-bio-unlock.webp?eu=8c8955b3e1c1f4d10c60f6d63a75363cb13a05a3ab5130823d60e2ae1eab9ed223fa485776c778b62d685cdb80b242be63cf7b6510e78289c9bc1aa5b835f90a53845beb35b073050228c4adb9f353453ac11d0df7d69d5aa63e72d2e5e7b2731d014e28fe72ba86e9ad3f3cf4c76f71e0a9b9773893fc2da30c0d109d4932bf31ffd3c06d4baad1b75db1b5a8f3089b94ba6a005fdfa957611f39595e9a79fff6ce5223787411394292cf47913497bf384d69770f0c55ff326fd406ae6f38c7e2f9f20bdd2e7ee3fdcf30269991fb9dbf43f33733b99378fad9253a505a&a=w%3D766%26h%3D555%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A21%3A55.609Z" %}
 使用生物识别解锁
 {% endembed %}
 
 {% hint style="success" %}
-您的桌面应用程序需要**登录**但无需**解锁**即可使用生物识别解锁浏览器扩展。
+您的桌面应用程序需要登录但无需解锁即可使用生物识别解锁浏览器扩展。
 {% endhint %}
 
 ### 禁用待处理的主密码验证 <a href="#disabled-pending-master-password-verification" id="disabled-pending-master-password-verification"></a>
@@ -157,12 +161,17 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 
 要理解为什么解锁和登录是不一样的，首先要记住 Bitwarden 在服务器上[从不存储任何未经加密的数据](../security/vault-data.md)，这一点很重要。**当您的密码库既未解锁也未登录时**，您的密码库数据只以[加密形式](../security/encryption.md)存在于服务器上。
 
-**登录**：登录 Bitwarden 会将您的密码库数据**解密**到您的设备上。在实践中，这意味着两件事：
+### 登录 <a href="#logging-in" id="logging-in"></a>
+
+**登录**到 Bitwarden 检会获取已加密的密码库数据然后在您的设备上本地解密。在实践中，这意味着两件事：
 
 1. 登录将始终要求使用您的主密码，因为您的主密码是解密密码库数据所需的密钥来源。此外，由于解密是一项需要保护的操作，因此在此阶段要求使用[任何已启用的两步登录方式](../two-step-login/two-step-login-methods.md)。
-2. 登录将始终要求您连接到互联网（或者，如果您是自托管，则连接到服务器），因为您需要访问已加密的密码库以解密它。
+2. 登录将始终要求您连接到互联网（或者，如果您是自托管，则连接到服务器），因为您需要访问已加密的密码库才能获取它以进行本地解密。
 
-**解锁**：只有在您已经登录的情况下才能**解锁**。换句话说，只有当您的密码库数据已经存储（被加密）在您的设备上时，才能进行解锁。因为您的密码库已下载完毕，并且您的解密密钥也已存储在内存中：
+### 解锁 <a href="#unlocking" id="unlocking"></a>
 
-1. 您不需要从您的主密码中派生解密密钥，因此您可以自由地使用其他访问方式，例如 [PIN 码](unlock-with-pin.md)和[生物识别](unlocking-with-biometrics.md)。
+**解锁**只能在您已经登录时使用。换句话说，只有当您的密码库数据已经存储（已加密）在您的设备上时。因为您的密码库已经下载：
+
+1. 您不需要从您的主密码中派生解密密钥，因此您可以自由地使用其他访问方式，例如 [PIN 码](unlock-with-pin.md)和[生物识别](unlocking-with-biometrics.md)。\
+   如果您使用 PIN 码或生物识别，当您的密码库被锁定时，会使用从 PIN 或操作系统的生物识别子系统派生的加密密钥，将密码库数据重新加密，并安全地存储在磁盘上。这允许在您的密码库被锁定时加密存储密码库数据，而不需要您的主密码来解密它。
 2. 您不需要连接到互联网（或者，如果您是自托管，则不需要连接到服务器）。

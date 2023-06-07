@@ -83,11 +83,11 @@
 
 ### 数据泄露报告（仅个人密码库） <a href="#data-breach-report-individual-vaults-only" id="data-breach-report-individual-vaults-only"></a>
 
-**数据泄露报告**使用一种叫做 Have I Been Pwned (HIBP) 的服务来识别已知事件中的泄露数据（电子邮件地址、密码、信用卡、DoB 等）。
+数据泄露报告使用一种叫做 Have I Been Pwned (HIBP) 的服务来识别已知事件中的泄露数据（电子邮件地址、密码、信用卡、DoB 等）。
 
 > \[**译者注**]：DoB - Date of Birth，出生日期
 
-如果您在移动应用程序、浏览器扩展程序或桌面应用程序上创建帐户，您可以选择在决定使用主密码之前运行此报告。
+当您创建一个 Bitwarden 帐户时，您可以选择在您决定使用主密码之前运行此报告。要运行此报告，您的主密码的哈希值将发送到 HIBP，并与存储的公开哈希值进行比较。Bitwarden 永远不会暴露您的主密码本身。
 
 HIBP 将「泄漏」定义为「通常是由于访问控制不足或软件的安全弱点造成数据在脆弱的系统中无意中暴露的事件」。更多信息，请参阅 [HIBP 常见问题文档](https://haveibeenpwned.com/FAQs)。
 

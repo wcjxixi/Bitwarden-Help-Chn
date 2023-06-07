@@ -30,7 +30,7 @@
 如果您使用的是浏览器扩展，则可以通过启用**使用 PIN 解锁**选项并取消选中**浏览器重启后使用主密码锁定**复选框来绕过此问题。
 {% endhint %}
 
-## 密码库超时行为 <a href="#vault-timeout-action" id="vault-timeout-action"></a>
+## 密码库超时动作 <a href="#vault-timeout-action" id="vault-timeout-action"></a>
 
 此选项决定了 Bitwarden 在达到[密码库超时](vault-timeout-options.md#vault-timeout)[时间](vault-timeout-options.md#vault-timeout)后将执行的操作。选项包括：
 
