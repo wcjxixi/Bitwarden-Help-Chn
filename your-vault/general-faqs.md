@@ -20,9 +20,10 @@
 
 **答：**要更改您的主密码提示：
 
-1. 打开[网页密码库](https://vault.bitwarden.com/)，从顶部导航栏中选择**设置**。
-2. 在**我的帐户**页面，找到**主密码提示**的输入框。
-3. 输入提示并选择**保存**按钮。
+1. 打开[网页密码库](https://vault.bitwarden.com/)，选择配置文件图标，然后从下拉列表中选择**账户设置**。
+2. 从帐户设置菜单中，选择**安全**页面然后**主密码**选项卡。
+3. 要_仅_更改您的提示，请在**当前主密码**、**新主密码**和**确认主密码**框中全部输入您当前的主密码以防止更改，然后在**主密码提示**框中输入提示。
+4. 选择**更改主密码**按钮。
 
 ### 问：如何更改电子邮件地址？ <a href="#q-how-do-i-change-my-email-address" id="q-how-do-i-change-my-email-address"></a>
 
@@ -32,17 +33,17 @@
 
 **答：**要更改帐户所附属的电子邮件地址：
 
-1. 打开[网页密码库](https://vault.bitwarden.com)，从顶部导航栏选择**设置**
-2. 在**我的账户**页面，找到**更改电子邮件**部分
-3. 输入您当前的**主密码**，以证明您有权进行此操作，并指定您想更改为的**新电子邮件**
-4. 选择**更改电子邮件**按钮\
-   Bitwarden 将通过电子邮件发送一个验证码到指定的电子邮件地址。检查您的收件箱中的代码，并将其输入到您的网页密码库中显示的**代码**文本输入框中，以完成更改。如果您没有收到 验证码，请检查您的垃圾邮件文件夹。您也可以将 `no-reply@bitwarden.com` 加入白名单，以确保今后的交付。
-
-{% hint style="success" %}
-**如果您有付费订阅**，也请[联系我们](https://bitwarden.com/contact)告知我们有关更改的信息，以便我们更改您的计费信息。
-{% endhint %}
+1. 打开[网页密码库](https://vault.bitwarden.com)，选择配置文件图标，然后从下拉列表中选择**账户设置**。
+2. 在**我的账户**页面，找到**更改电子邮件**部分。
+3. 输入您当前的**主密码**，以证明您有权进行此操作，并指定您想更改为的**新电子邮件**。
+4. 选择**继续**按钮。\
+   Bitwarden 将通过电子邮件发送一个验证码到指定的电子邮件地址。检查您的收件箱中的代码，并将其输入到您的网页密码库中显示的**代码**文本输入框中，以完成更改。如果您没有收到验证码，请检查您的垃圾邮件文件夹。您也可以将 `no-reply@bitwarden.com` 加入白名单，以确保今后的交付。
 
 更改了电子邮件地址后，你应该立即注销你使用的所有 Bitwarden 客户端应用程序，然后使用新的凭证重新登录。使用“陈旧”的电子邮件地址的会话最终将被注销。
+
+### 问：验证邮箱后会解锁哪些功能？ <a href="#q-what-features-are-unlocked-when-i-verify-my-email" id="q-what-features-are-unlocked-when-i-verify-my-email"></a>
+
+**答：**当验证您的电子邮件地址后，将解锁[创建文件 Send](../bitwarden-send/create-a-send.md) 的（前提是您具有高级功能权限）。
 
 ### 问：为什么我的移动应用程序、桌面应用程序或浏览器扩展程序中丢失了密码库项目？ <a href="#q-why-is-a-vault-item-missing-from-my-mobile-app-desktop-app-or-browser-extension" id="q-why-is-a-vault-item-missing-from-my-mobile-app-desktop-app-or-browser-extension"></a>
 
@@ -94,17 +95,21 @@
 与任何软件一样，运行旧版本可能会带来安全风险。
 {% endhint %}
 
-### 问：需要旧密码！可以查看我在 Bitwarden 中更改过的密码的历史记录吗？ <a href="#q-i-need-an-old-password-can-i-view-the-history-of-a-password-that-i-changed-in-bitwarden" id="q-i-need-an-old-password-can-i-view-the-history-of-a-password-that-i-changed-in-bitwarden"></a>
+### 问：我需要旧密码！可以查看我在 Bitwarden 中更改过的密码的历史记录吗？ <a href="#q-i-need-an-old-password-can-i-view-the-history-of-a-password-that-i-changed-in-bitwarden" id="q-i-need-an-old-password-can-i-view-the-history-of-a-password-that-i-changed-in-bitwarden"></a>
 
-**答：**可以。你可以查看登录项目的最近 5 个密码的历史记录。打开该项目，并点击窗口底部密码历史记录旁边的数字，例如「1」。（备注：数字代表密码历史记录数）
+**答：**可以。你可以查看登录项目的最近 5 个密码的历史记录。打开该项目，并点击窗口底部**密码历史记录**旁边的数字，例如「1」。（备注：数字代表密码历史记录数）
+
+{% embed url="https://bitwarden.com/_gatsby/image/0bb681832d149c6061897a987182029b/557d3f27253653e121d356eb9a00ff16/Screen%20Shot%202023-01-10%20at%2010.06.42%20AM.webp?eu=d68d55b0b6c0fc8f096ea8803a243661e73c52fafd5031843b6ce6fd4ffb9cd523f01807249728b12d3a58da86e110b362972b3748e8d38b92ea4af1ee33fe0959db1eaa27f07a184e7299afe7a0455b3b824c09e2c09d4ce0732c81a1acb03247035a71a92cb0dcabae2a60b4eb2831aac2d35138a1fc3ee56f2c179c7b389c7bb3c4886518bb9cb016bde7ebad0b989db17c551389fa6426264a1659e82eb2a1ad67227b7c15055aadf707830e94b63e1f7c235f4202f7086b943afa6c2fc3e2e5a55fb60b06ffe89766&a=w%3D850%26h%3D273%26fm%3Dwebp%26q%3D75&cd=2023-01-10T15%3A07%3A35.833Z" %}
+查看密码历史记录
+{% endembed %}
 
 {% hint style="danger" %}
 点击数字将立即以纯文本的方式展示历史密码值。
 {% endhint %}
 
-### 问：忘记保存生成的密码！可以查看已生成的密码的历史记录吗？ <a href="#q-i-forgot-to-save-a-generated-password-can-i-view-the-history-of-generated-passwords" id="q-i-forgot-to-save-a-generated-password-can-i-view-the-history-of-generated-passwords"></a>
+### 问：忘记了保存已生成的密码！可以查看已生成的密码的历史记录吗？ <a href="#q-i-forgot-to-save-a-generated-password-can-i-view-the-history-of-generated-passwords" id="q-i-forgot-to-save-a-generated-password-can-i-view-the-history-of-generated-passwords"></a>
 
-**答：**可以。您可以查看密码生成器的历史记录，**但请注意**，每个应用程序/客户端的此历史记录是独立的。此信息在设备之间不会同步。
+**答：**可以。您可以查看密码生成器的历史记录，但请注意，每个应用程序/客户端的此历史记录是独立的。此信息在设备之间不会同步。
 
 ### 问：当我清空我的密码库时会发生什么？ <a href="#what-happens-when-i-purge-my-vault" id="what-happens-when-i-purge-my-vault"></a>
 
@@ -112,4 +117,16 @@
 
 ### 问：可以打印密码库数据吗？ <a href="#q-can-i-print-my-vault-data" id="q-can-i-print-my-vault-data"></a>
 
-**答：**无法直接从 Bitwarden 打印，但是您可以将密码库数据导出为 `.csv` 或 `.json` 文件然后从文本编辑器中打印。
+**答：**无法直接从 Bitwarden 打印，但是您可以[将密码库数据导出](../import-export/export-vault-data.md)为 `.csv` 或 `.json` 文件然后从文本编辑器中打印。
+
+### 问：Windows 剪贴板是否会存储已复制的密码？ <a href="#q-does-windows-clipboard-store-copied-passwords" id="q-does-windows-clipboard-store-copied-passwords"></a>
+
+**答：**Windows 剪贴板将保存以前复制的项目的列表。可以通过访问**设置**和**剪贴板**来设置 Windows 剪贴板设置。
+
+{% hint style="danger" %}
+可以在**剪贴板**设置菜单中打开/关闭 Windows 剪贴板历史记录。但是，这不会删除剪贴板中的现有项目。要清除已复制的密码，请选择**清除剪贴板数据**选项下的**清除**。
+{% endhint %}
+
+### 问：卸载或删除我的 Bitwarden 应用程序是否也会删除我的密码库数据吗？ <a href="#q-does-uninstalling-or-deleting-my-bitwarden-app-also-delete-my-vault-data" id="q-does-uninstalling-or-deleting-my-bitwarden-app-also-delete-my-vault-data"></a>
+
+**答：**不会，删除 Bitwarden 应用程序/扩展程序并不会删除您的密码库数据。密码库数据加密保存在服务器上。如果您希望**永久**删除您的密码库数据，请参阅[删除帐户或组织](../plans-and-pricing/delete-an-account-or-organization.md)。

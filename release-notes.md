@@ -27,7 +27,7 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 {% hint style="danger" %}
 从 **2023.5.0** 版本开始，Password Manager 桌面应用程序将不再支持 Windows 8.1 及更早版本或 Windows Server 2012 及更早版本。
 
-这些操作系统的用户可以在[此处](https://github.com/bitwarden/clients/releases)下载 2023.4.0 桌面应用程序，并且必须禁用自动更新（在此处了解更多信息）。我们建议升级到受支持的操作系统，因为 Bitwarden 云服务器不能保证长期支持旧的客户端版本，并且将来可能会给您带来安全风险。
+这些操作系统的用户可以在[此处](https://github.com/bitwarden/clients/releases)下载 2023.4.0 桌面应用程序，并且必须禁用自动更新（在[此处](your-vault/general-faqs.md#q-can-i-turn-off-automatic-updates-for-bitwarden)了解更多信息）。我们建议升级到受支持的操作系统，因为 Bitwarden 云服务器不能保证长期支持旧的客户端版本，并且将来可能会给您带来安全风险。
 {% endhint %}
 
 此次发布包含：
