@@ -32,10 +32,10 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 
 此次发布包含：
 
-* **环境选择器**：改进了将 Bitwarden 应用程序连接到自托管服务器的工作流程。参阅这里。
+* **环境选择器**：改进了将 Bitwarden 应用程序连接到自托管服务器的工作流程。参阅[这里](self-hosting/connect-clients-to-your-instance.md)。
 * **密码管理器 - 改进了德语 HTML 的自动填充**：德语 HTML 字段现在可用于自动填充。参阅[这里](https://github.com/bitwarden/clients/pull/4210)。
-* **Secrets Manager - 在机密创建期间创建工程**：您现在可以在机密创建菜单中创建新的工程。参阅这里。
-* **自托管 - 阐明有关服务器许可证的措辞**：有 60 天的宽限期来上传新许可证以替换过期的许可证。参阅这里。
+* **Secrets Manager - 在机密创建期间创建工程**：您现在可以在机密创建菜单中创建新的工程。参阅[这里](secrets-manager/your-secrets/secrets.md)。
+* **自托管 - 阐明有关服务器许可证的措辞**：有 60 天的宽限期来上传新许可证以替换过期的许可证。参阅[这里](self-hosting/licensing-for-paid-features.md#update-organization-license)。
 * **低 KDF 警告**：当用户的 KDF 迭代次数低于行业建议值（目前为 600,000 次迭代）时，Web 应用程序中将出现一个新的警告。参阅这里。
 
 ## 2023.4.0

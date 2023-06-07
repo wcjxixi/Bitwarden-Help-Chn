@@ -235,7 +235,7 @@
   * [配置环境变量](self-hosting/configure-environment-variables.md)
   * [更新您的实例](self-hosting/update-your-instance.md)
   * [备份您的托管数据](self-hosting/backup-your-hosted-data.md)
-  * [=付费功能许可证](self-hosting/licensing-for-paid-features.md)
+  * [付费功能许可证](self-hosting/licensing-for-paid-features.md)
   * [系统管理员门户](self-hosting/system-administrator-portal.md)
   * [集中式配置客户端](self-hosting/configure-clients-centrally.md)
   * [连接客户端到实例](self-hosting/connect-clients-to-your-instance.md)
