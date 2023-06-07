@@ -49,7 +49,7 @@
 
 ### 事件日志 <a href="#event-logging" id="event-logging"></a>
 
-以下情况会记录[事件](event-logs.md)：
+以下情况会记录[事件](../admin-console/reporting/event-logs.md)：
 
 * 主密码被重置。
 * 用户注册管理员密码重置。

@@ -34,7 +34,7 @@
 
 ### 问：我的组织可以审计哪些事件？ <a href="#q-what-events-are-auditing-for-my-organization" id="q-what-events-are-auditing-for-my-organization"></a>
 
-**答：**有关 Bitwarden 事件日志中包含的内容的完整列表，请参阅[事件日志](event-logs.md)。
+**答：**有关 Bitwarden 事件日志中包含的内容的完整列表，请参阅[事件日志](../admin-console/reporting/event-logs.md)。
 
 ### 问：我可以防止用户自我注册到我的组织吗？ <a href="#q-can-i-prevent-users-from-self-registering-into-my-organization" id="q-can-i-prevent-users-from-self-registering-into-my-organization"></a>
 

@@ -205,7 +205,7 @@ PBKDF-SHA256 用于从您的主密码派生加密密钥。然后，这个密钥�
 
 了解更多：[密码库健康报告](../your-vault/vault-health-reports.md)
 
-有关 Bitwarden 事件日志和外部报告的更多信息，请参阅[事件日志](../organizations/event-logs.md)。
+有关 Bitwarden 事件日志和外部报告的更多信息，请参阅[事件日志](../admin-console/reporting/event-logs.md)。
 
 ### 将密码和其他机密导入 Bitwarden <a href="#importing-passwords-and-other-secrets-into-bitwarden" id="importing-passwords-and-other-secrets-into-bitwarden"></a>
 
@@ -241,7 +241,7 @@ Bitwarden 帮助中心的[用户类型和访问控制](../admin-console/user-man
 
 事件日志包含了时间标记、在一个组织内发生了哪些动作或更改的详细情况。这些日志对于研究凭证或配置的更改有帮助，以及对于审计跟踪调查和故障排除非常有用。
 
-更多关于[事件日志](../organizations/event-logs.md)的信息记录于 Bitwarden 帮助中心。事件日志仅适用于团队和商业计划。
+更多关于[事件日志](../admin-console/reporting/event-logs.md)的信息记录于 Bitwarden 帮助中心。事件日志仅适用于团队和商业计划。
 
 要收集更多的数据，具有 API 访问权限的计划可以使用 Bitwarden API。API 响应将包含事件类型和相关数据。
 
@@ -249,7 +249,7 @@ Bitwarden 帮助中心的[用户类型和访问控制](../admin-console/user-man
 
 对于像 Splunk 这样的安全信息和事件管理（SIEM）系统，当从 Bitwarden 导出数据时，可能会使用 API 和 CLI 的数据组合来收集数据。
 
-在帮助中心的 [SIEM 和外部系统集成](../organizations/event-logs.md#siem-and-external-systems-integrations)下的**组织事件日志**的说明中概述此过程。
+在帮助中心的 [SIEM 和外部系统集成](../admin-console/reporting/event-logs.md#siem-and-external-systems-integrations)下的**组织事件日志**的说明中概述此过程。
 
 ### 账户保护和避免被锁定 <a href="#account-protection-and-avoiding-lockout" id="account-protection-and-avoiding-lockout"></a>
 

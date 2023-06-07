@@ -37,7 +37,11 @@ Android 账户切换
 
 当聚焦在设备上具有[匹配的登录项目](../../../auto-fill/using-uris.md)的输入字段时，自动填充服务（_要求 Android 8+_）将叠加一个弹出窗口。密码库被解锁后，系统会为您提供立即自动填充或打开密码库的选项：
 
-![Android 自动填充登录](../../../.gitbook/assets/only-autofill-service.png)
+<div align="center">
+
+<img src="../../../.gitbook/assets/only-autofill-service.png" alt="Android 自动填充登录">
+
+</div>
 
 要启用自动填充服务：
 

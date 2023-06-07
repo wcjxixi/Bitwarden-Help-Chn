@@ -152,7 +152,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 
 * **Fastmail 电子邮件别名集成**：将 Bitwarden 用户名生成器连接到 Fastmail，以方便创建其电子邮件别名（参阅[这里](your-vault/username-password-generator.md#username-types)）。
 * **提供商门户更新**：提供商门户主界面现在具有每一个客户组织的一目了然的席位和计划报告。
-* **组织密码库导出事件**：当所有者或管理员执行密码库导出时，该操作现在将记录在组织的事件日志中（参阅[这里](organizations/event-logs.md#organization-events)）。
+* **组织密码库导出事件**：当所有者或管理员执行密码库导出时，该操作现在将记录在组织的事件日志中（参阅[这里](admin-console/reporting/event-logs.md#organization-events)）。
 * **浏览器扩展 - 支持预配置环境 URL**：自托管客户现在可以为浏览器扩展预配置环境 URL，通过使用端点管理来部署您的配置，从而简化最终用户的部署（参阅[这里](self-hosting/configure-clients-centrally.md#liu-lan-qi-kuo-zhan)）。
 * **移动端 - 更新至 Bitwarden Authenticator**：移动端应用程序现在有一个验证码界面，可让您快速轻松地访问您的所有 TOTP（参阅[这里](your-vault/totp.md#viewing-totp-codes)）。我们还改进了通过移动应用程序将 TOTP 代码添加到密码库项目的过程（参阅[这里](your-vault/totp.md#scan-a-qr-code)）。
 * **CLI - `serve` 来源保护**：`serve` 命令现在将默认阻止任何使用 `Origin` 标头发出的请求（参阅[这里](password-manager/developer-tools/password-manager-cli.md#serve)）。
@@ -329,7 +329,7 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 * **管理员密码重置**：企业组织可以注册管理员密码重置功能，以允许指定的管理员重置组织用户的主密码（参阅[这里](organizations/admin-password-reset.md)）。
 * **主密码重新提示**：使用新的主密码重新提示选项，要求验证您的主密码才能查看被用户指定的敏感密码库项目。（参阅[这里](your-vault/vault-items.md#protect-individual-items)）。
 * **批量用户管理**：组织所有者和管理员现在可以从组织中批量重新发送邀请、确认已接受的用户以及移除用户（参阅[这里](organizations/user-management.md#onboard-users)）。
-* **事件日志导出**：直接从网页密码库导出事件日志（参阅[这里](organizations/event-logs.md#export-events)）。
+* **事件日志导出**：直接从网页密码库导出事件日志（参阅[这里](admin-console/reporting/event-logs.md#export-events)）。
 * **目录连接器 API 密钥认证**：从此版本开始，目录连接器的用户将需要使用[组织 API 密钥](organizations/bitwarden-public-api.md#authentication)才能登录。
 * **目录连接器同步限制增加**：目录连接器现在可以同步无限数量的用户或群组，之前的限制被设置为 2000。要同步 2000 以上的用户或群组，请切换到新的同步选项（参阅[这里](directory-connector/sync-options-and-filters.md#large-syncs)）。
 * **页面加载时自动填充功能的增强**：浏览器扩展的页面加载时自动填充功能已升级，可以更灵活地满足用户的独特需求（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#on-page-load)）。

@@ -140,4 +140,4 @@ Bitwarden 拥有一个公共[状态页面](https://status.bitwarden.com/)，您�
 有关使用 Bitwarden Public API 的更多信息，请参阅以下文章：
 
 * [Bitwarden Public API OAS 规范](https://bitwarden.com/help/api/)
-* [事件日志](event-logs.md)
+* [事件日志](../admin-console/reporting/event-logs.md)

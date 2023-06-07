@@ -84,15 +84,7 @@
 2. 导航到 **Setting** 标签页。
 3. 在 **Sync** 部分，根据需要配置如下选项：
 
-| 选项                                                                   | 描述                                                                     |
-| -------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Interval                                                             | 自动同步检查的时间间隔（分钟为单位）。                                                    |
-| Remove disabled users during sync                                    | 选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。                                    |
-| Overwrite existing organization users based on current sync settings | 选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。                     |
-| Sync Users                                                           | <p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p> |
-| User Filter                                                          | 参阅[指定同步筛选器](sync-with-azure-ad.md#specify-sync-filters)。               |
-| Sync Groups                                                          | <p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p> |
-| Group Filter                                                         | 参阅[指定同步筛选器](sync-with-azure-ad.md#specify-sync-filters)。               |
+<table><thead><tr><th width="332.75477397414636">选项</th><th>描述</th></tr></thead><tbody><tr><td>Interval</td><td>自动同步检查的时间间隔（分钟为单位）。</td></tr><tr><td>Remove disabled users during sync</td><td>选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。</td></tr><tr><td>Overwrite existing organization users based on current sync settings</td><td>选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。</td></tr><tr><td>Sync Users</td><td><p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p></td></tr><tr><td>User Filter</td><td>参阅<a href="sync-with-azure-ad.md#specify-sync-filters">指定同步筛选器</a>。</td></tr><tr><td>Sync Groups</td><td><p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p></td></tr><tr><td>Group Filter</td><td>参阅<a href="sync-with-azure-ad.md#specify-sync-filters">指定同步筛选器</a>。</td></tr></tbody></table>
 
 ## 指定同步筛选器 <a href="#specify-sync-filters" id="specify-sync-filters"></a>
 

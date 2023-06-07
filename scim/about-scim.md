@@ -78,7 +78,7 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 
 ## SCIM 事件日志 <a href="#scim-events" id="scim-events"></a>
 
-组织将捕获 SCIM 集成所采取操作的[事件日志](../organizations/event-logs.md)，包括邀请用户和移除用户，以及创建或删除群组。SCIM 派生的事件将从 `Unknown` 注册：
+组织将捕获 SCIM 集成所采取操作的[事件日志](../admin-console/reporting/event-logs.md)，包括邀请用户和移除用户，以及创建或删除群组。SCIM 派生的事件将从 `Unknown` 注册：
 
 {% embed url="https://bitwarden.com/_gatsby/image/1512d8c4b2ab04b9daa67ceaa1f9398e/01d16ab8f9d51e1d20cf8ba0379e35df/Screen%20Shot%202022-07-25%20at%2010.41.51%20AM.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F5y4TtUhrANOCKo5dHWgZ7z%2F55b95f8df86ef257620412a14e4a2012%2FScreen_Shot_2022-07-25_at_10.41.51_AM.png&a=w%3D626%26h%3D192%26fm%3Dwebp%26q%3D75&cd=2022-08-12T12%3A07%3A41.268Z" %}
 SCIM 事件日志

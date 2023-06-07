@@ -130,27 +130,13 @@ Bitwarden 使用了一种企业友好的方法来实现大规模的共享。用�
 
 Alice 是您的组织的**经理**，该组织托管在 Bitwarden Cloud 上并使用公司电子邮件地址（例如 `first-last@company.com`）。以下是 Alice 目前使用 Bitwarden 的方式：
 
-| **客户端应用程序**    | 在个人和职业上使用 Bitwarden 手机和浏览器扩展，在组织上偶尔使用网页密码库进行相关工作。                                           |
-| -------------- | ------------------------------------------------------------------------------------------- |
-| **电子邮件 & 主密码** | 使用 `alice@company.com` 和 `p@ssw0rD` 登录 Bitwarden。                                           |
-| **个人项目**       | 在她的个人密码库中存储各种个人项目，包括登录信息和信用卡。                                                               |
-| **组织中的权限**     | 作为[经理](../admin-console/user-management/member-roles-and-permissions.md)，Alice 可以管理集合的许多方面。 |
-| **两步登录**       | 使用组织层面的 [Duo 2FA](../two-step-login/setup-guides/two-step-login-via-duo.md)。                |
-| **已创建的集合**     | 已为她的团队创建了一个集合：「Alice’s Team Collection」。                                                    |
-| **已共享的项目**     | 创建并共享了多个归组织所有并驻留在她团队集合中的密码库项目。                                                              |
+<table data-header-hidden><thead><tr><th width="150"></th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td>在个人和职业上使用 Bitwarden 手机和浏览器扩展，在组织上偶尔使用网页密码库进行相关工作。</td></tr><tr><td><strong>电子邮件 &#x26; 主密码</strong></td><td>使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录 Bitwarden。</td></tr><tr><td><strong>个人项目</strong></td><td>在她的个人密码库中存储各种个人项目，包括登录信息和信用卡。</td></tr><tr><td><strong>组织中的权限</strong></td><td>作为<a href="../admin-console/user-management/member-roles-and-permissions.md">经理</a>，Alice 可以管理集合的许多方面。</td></tr><tr><td><strong>两步登录</strong></td><td>使用组织层面的 <a href="../two-step-login/setup-guides/two-step-login-via-duo.md">Duo 2FA</a>。</td></tr><tr><td><strong>已创建的集合</strong></td><td>已为她的团队创建了一个集合：「Alice’s Team Collection」。</td></tr><tr><td><strong>已共享的项目</strong></td><td>创建并共享了多个归组织所有并驻留在她团队集合中的密码库项目。</td></tr></tbody></table>
 
 #### 离职后 <a href="#once-offboarded" id="once-offboarded"></a>
 
 当 Alice 从您的组织中被移除后：
 
-| **客户端应用程序**    | 可以继续使用任一个 Bitwarden 应用程序访问她的个人密码库，但将**立即失去对组织密码库、所有集合和所有已共享项目的所有访问权限**。                                      |
-| -------------- | ------------------------------------------------------------------------------------------------------------ |
-| **电子邮件 & 主密码** | 可以继续使用 `alice@company.com` 和 `p@ssw0rD` 登录，但是由于她无法访问她的 `@company.com` 收件箱，因此应该建议她更改为与她的 Bitwarden 帐户关联的电子邮件。 |
-| **个人项目**       | 仍然可以使用她的个人密码库并访问存储在其中的项目。                                                                                    |
-| **组织中的权限**     | 将**立即失去与组织相关的所有事物的所有权限和访问权限**。                                                                               |
-| **两步登录**       | 将无法使用组织层面的 Duo 2FA 访问她的密码库，但可以设置为我们的免费两步登录选项之一或升级到高级版以获取更多功能。                                                |
-| **已创建的集合**     | 集合和已共享项目的所有权**属于组织**，因此 Alice 将无法访问「Alice’s Team Collection」，尽管已经创建了它。                                       |
-| **已共享的项目**     | 集合和已共享项目的所有权**属于组织**，因此 Alice 将无法访问所有这些项目，尽管已创建它们。                                                           |
+<table data-header-hidden><thead><tr><th width="150"></th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td>可以继续使用任一个 Bitwarden 应用程序访问她的个人密码库，但将<strong>立即失去对组织密码库、所有集合和所有已共享项目的所有访问权限</strong>。</td></tr><tr><td><strong>电子邮件 &#x26; 主密码</strong></td><td>可以继续使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录，但是由于她无法访问她的 <code>@company.com</code> 收件箱，因此应该建议她更改为与她的 Bitwarden 帐户关联的电子邮件。</td></tr><tr><td><strong>个人项目</strong></td><td>仍然可以使用她的个人密码库并访问存储在其中的项目。</td></tr><tr><td><strong>组织中的权限</strong></td><td>将<strong>立即失去与组织相关的所有事物的所有权限和访问权限</strong>。</td></tr><tr><td><strong>两步登录</strong></td><td>将无法使用组织层面的 Duo 2FA 访问她的密码库，但可以设置为我们的免费两步登录选项之一或升级到高级版以获取更多功能。</td></tr><tr><td><strong>已创建的集合</strong></td><td>集合和已共享项目的所有权<strong>属于组织</strong>，因此 Alice 将无法访问「Alice’s Team Collection」，尽管已经创建了它。</td></tr><tr><td><strong>已共享的项目</strong></td><td>集合和已共享项目的所有权<strong>属于组织</strong>，因此 Alice 将无法访问所有这些项目，尽管已创建它们。</td></tr></tbody></table>
 
 {% hint style="success" %}
 离线设备会缓存密码库数据的只读副本，包括组织密码库数据。如果您预料这些数据会被恶意利用，则应在离职后更新员工有权访问权限的凭据。
@@ -212,7 +198,7 @@ Bitwarden 企业组织可以使用 SAML 2.0 或 OIDC 与您现有的身份提供
 
 ### 事件日志 <a href="#event-logs" id="event-logs"></a>
 
-Bitwarden 组织包括了对[事件日志](../organizations/event-logs.md)的访问，这些日志可以直接从网页密码库查看或[导出以在 Splunk 等安全信息和事件管理（SIEM）系统中进行分析](../organizations/event-logs.md#siem-and-external-systems-integrations)。事件日志包括以下信息：
+Bitwarden 组织包括了对[事件日志](../admin-console/reporting/event-logs.md)的访问，这些日志可以直接从网页密码库查看或[导出以在 Splunk 等安全信息和事件管理（SIEM）系统中进行分析](../admin-console/reporting/event-logs.md#siem-and-external-systems-integrations)。事件日志包括以下信息：
 
 * 用户 - 项目交互
 * 对密码库项目所做的更改
@@ -238,13 +224,7 @@ Bitwarden 组织包括了对[事件日志](../organizations/event-logs.md)的访
 
 目录连接器、SSO 登录、企业策略和您的密码库独立或协调工作，以优化您的入职、离职和组织管理体验。下表详细说明了将这些部分串在一起形成一个平滑过程的方式：
 
-| 步骤       | 描述                                                      |
-| -------- | ------------------------------------------------------- |
-| **同步**   | 使用目录连接器将群组和用户从您现有的目录服务同步到 Bitwarden。                    |
-| **邀请**   | 目录连接器会自动向同步的用户发出邀请。                                     |
-| **验证**   | 将您的 SSO 登录实施与 SSO 策略配对，以要求用户在接受邀请时注册 SSO。               |
-| **管理**   | 使用网页密码库界面将一些用户提升到不同的角色，并确保群组 - 集合关系被配置为授予正确的用户以正确的访问权限。 |
-| **重新同步** | 定期重新运行目录连接器以从 Bitwarden 中移除不再在您的目录服务中处于活动状态的用户并开始新员工入职。 |
+<table><thead><tr><th width="150">步骤</th><th>描述</th></tr></thead><tbody><tr><td><strong>同步</strong></td><td>使用目录连接器将群组和用户从您现有的目录服务同步到 Bitwarden。</td></tr><tr><td><strong>邀请</strong></td><td>目录连接器会自动向同步的用户发出邀请。</td></tr><tr><td><strong>验证</strong></td><td>将您的 SSO 登录实施与 SSO 策略配对，以要求用户在接受邀请时注册 SSO。</td></tr><tr><td><strong>管理</strong></td><td>使用网页密码库界面将一些用户提升到不同的角色，并确保群组 - 集合关系被配置为授予正确的用户以正确的访问权限。</td></tr><tr><td><strong>重新同步</strong></td><td>定期重新运行目录连接器以从 Bitwarden 中移除不再在您的目录服务中处于活动状态的用户并开始新员工入职。</td></tr></tbody></table>
 
 ## FAQ <a href="#faqs" id="faqs"></a>
 

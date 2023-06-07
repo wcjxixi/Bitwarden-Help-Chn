@@ -122,7 +122,7 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 4、输入您的**主密码**然后选择**导出密码库**按钮。
 
 {% hint style="info" %}
-导出组织密码库数据将被事件日志捕获。[了解更多](../organizations/event-logs.md)。
+导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/reporting/event-logs.md)。
 {% endhint %}
 {% endtab %}
 
@@ -142,7 +142,7 @@ bw export my-master-password --organizationid 7063feab-4b10-472e-b64c-785e2b870b
 更多详情，请参阅我们的 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
 
 {% hint style="info" %}
-导出组织密码库数据将被事件日志捕获。[了解更多](../organizations/event-logs.md)。
+导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/reporting/event-logs.md)。
 {% endhint %}
 
 

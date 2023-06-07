@@ -26,11 +26,7 @@
 
 ### 家庭比较表 <a href="#families-comparison-table" id="families-comparison-table"></a>
 
-| 功能                                                                                                                     | 经典 2019           | 当前（2020-） |
-| ---------------------------------------------------------------------------------------------------------------------- | ----------------- | --------- |
-| 用户数                                                                                                                    | 5                 | 6         |
-| <p>对于组织的所有成员：<br><br>- 高级 2FA 选项 (如 Duo、YubiKey、FIDO2)<br>- 加密文件附件<br>- Bitwarden 验证器（TOTP）<br>- 密码库健康报告<br>- 紧急访问</p> | -                 | **✔︎**    |
-| 价格                                                                                                                     | $52/年（包含单独购买高级功能） | $40/年     |
+<table><thead><tr><th width="279.76923076923083">功能</th><th width="278.3333333333333">经典 2019</th><th>当前（2020-）</th></tr></thead><tbody><tr><td>用户数</td><td>5</td><td>6</td></tr><tr><td>对于组织的所有成员：<br><br>- 高级 2FA 选项 (如 Duo、YubiKey、FIDO2)<br>- 加密文件附件<br>- Bitwarden 验证器（TOTP）<br>- 密码库健康报告<br>- 紧急访问</td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td>价格</td><td>$52/年（包含单独购买高级功能）</td><td>$40/年</td></tr></tbody></table>
 
 ## 团队组织 <a href="#teams-organizations" id="teams-organizations"></a>
 
@@ -47,17 +43,7 @@
 
 ### 团队比较表 <a href="#teams-comparison-table" id="teams-comparison-table"></a>
 
-| 功能                                                                                                                   | 经典 2019        | 当前（2020-）      |
-| -------------------------------------------------------------------------------------------------------------------- | -------------- | -------------- |
-| 基础用户数                                                                                                                | 5              | 1              |
-| 最大用户数                                                                                                                | 无限制            | 无限制            |
-| <p>对于组织项目：<br><br>- 加密文件附件<br>- Bitwarden 身份验证器（TOTP）<br>- 密码库健康报告</p>                                               | **✔︎**         | **✔︎**         |
-| <p>对于组织的成员：<br><br>- 高级 2FA 选项 (如 Duo、YubiKey、FIDO2)<br>- 加密文件附件<br>- Bitwarden 验证器（TOTP）<br>- 密码库健康报告<br>- 紧急访问</p> | -              | **✔︎**         |
-| 事件日志                                                                                                                 | -              | **✔︎**         |
-| 用户群组                                                                                                                 | -              | **✔︎**         |
-| API 访问                                                                                                               | -              | **✔︎**         |
-| 目录连接器                                                                                                                | -              | **✔︎**         |
-| 价格                                                                                                                   | $2 每用户每月（按年付费） | $2 每用户每月（按年付费） |
+<table><thead><tr><th width="278.17258029217413">功能</th><th width="225.1712291261165">经典 2019</th><th>当前（2020-）</th></tr></thead><tbody><tr><td>基础用户数</td><td>5</td><td>1</td></tr><tr><td>最大用户数</td><td>无限制</td><td>无限制</td></tr><tr><td>对于组织项目：<br><br>- 加密文件附件<br>- Bitwarden 身份验证器（TOTP）<br>- 密码库健康报告</td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td>对于组织的成员：<br><br>- 高级 2FA 选项 (如 Duo、YubiKey、FIDO2)<br>- 加密文件附件<br>- Bitwarden 验证器（TOTP）<br>- 密码库健康报告<br>- 紧急访问</td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td>事件日志</td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td>用户群组</td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td>API 访问</td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td>目录连接器</td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td>价格</td><td>$2 每用户每月（按年付费）</td><td>$2 每用户每月（按年付费）</td></tr></tbody></table>
 
 ## 企业组织 <a href="#enterprise-organizations" id="enterprise-organizations"></a>
 
@@ -69,13 +55,7 @@
 
 ### 企业比较表 <a href="#enterprise-comparison-table" id="enterprise-comparison-table"></a>
 
-| 功能                                                                                                   | 经典 2019        | 当前（2020-）      |
-| ---------------------------------------------------------------------------------------------------- | -------------- | -------------- |
-| <p>预先存在的企业功能，包括：<br><br>- 所有用户的高级功能<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 目录连接器<br>- 企业策略</p>         | **✔︎**         | **✔︎**         |
-| [SSO 登录](../login-with-sso/about-login-with-sso.md)                                                  | -              | **✔︎**         |
-| <p><a href="../login-with-sso/about-key-connector.md">Key Connector</a><br>（<em>适用于客户管理的加密</em>）</p> | -              | **✔︎**         |
-| [管理员密码重置](../organizations/admin-password-reset.md)                                                  | -              | **✔︎**         |
-| 价格                                                                                                   | $3 每用户每月（按年付费） | $5 每用户每月（按年付费） |
+<table><thead><tr><th width="225.33333333333331">功能</th><th>经典 2019</th><th>当前（2020-）</th></tr></thead><tbody><tr><td>预先存在的企业功能，包括：<br><br>- 所有用户的高级功能<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 目录连接器<br>- 企业策略</td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td><a href="../login-with-sso/about-login-with-sso.md">SSO 登录</a></td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td><a href="../login-with-sso/about-key-connector.md">Key Connector</a><br>（<em>适用于客户管理的加密</em>）</td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td><a href="../organizations/admin-password-reset.md">管理员密码重置</a></td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td>价格</td><td>$3 每用户每月（按年付费）</td><td>$5 每用户每月（按年付费）</td></tr></tbody></table>
 
 {% hint style="info" %}
 额外的仅针对企业的功能仅适用于当前计划，包括扩展的企业策略。

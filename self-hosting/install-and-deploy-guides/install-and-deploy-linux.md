@@ -8,12 +8,7 @@
 
 ## 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
 
-|           | **最低**                      | **推荐**                      |
-| --------- | --------------------------- | --------------------------- |
-| 处理器       | x64, 1.4GHz                 | x64, 2GHz 双核                |
-| 内存        | 2GB RAM                     | 4GB RAM                     |
-| 存储        | 12GB                        | 25GB                        |
-| Docker 版本 | Engine 19+ 以及 Compose 1.24+ | Engine 19+ 以及 Compose 1.24+ |
+<table data-header-hidden><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td></td><td><strong>最低</strong></td><td><strong>推荐</strong></td></tr><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 19+ 以及 Compose 1.24+</td><td>Engine 19+ 以及 Compose 1.24+</td></tr></tbody></table>
 
 {% hint style="success" %}
 如果您正在寻找价格实惠的优质供应商，我们推荐 DigitalOcean。[立即开始](https://marketplace.digitalocean.com/apps/bitwarden)或阅读我们[在 DigitalOcean 上的关于 Bitwarden 的博客文章](https://bitwarden.com/blog/digitalocean-marketplace/)。
@@ -224,18 +219,4 @@ Bitwarden 的安装脚本（`bitwarden.sh` 或 `bitwarden.ps1`）具有以下可
 PowerShell 用户将以前缀`-`（开关）运行命令。例如`.\bitwarden.ps1 -start`。
 {% endhint %}
 
-| 命令         | 描述                                                                                                                                                                |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| install    | 启动安装程序。                                                                                                                                                           |
-| start      | 启动所有容器。                                                                                                                                                           |
-| restart    | 重新启动所有容器（与 start 相同）。                                                                                                                                             |
-| stop       | 停止所有容器。                                                                                                                                                           |
-| update     | 更新所有容器和数据库。                                                                                                                                                       |
-| updatedb   | 更新/初始化数据库。                                                                                                                                                        |
-| updaterun  | 更新 `run.sh` 文件。                                                                                                                                                   |
-| updateself | 更新主脚本。                                                                                                                                                            |
-| updateconf | 更新所有容器，而无需重新启动正在运行的实例。                                                                                                                                            |
-| uninstall  | <p>在执行此命令之前，系统会提示您保存数据库文件。选 <code>y</code> 将创建一个包含最新备份的数据库的 tar 文件。</p><p></p><p>停止容器，删除 <code>bwdata</code> 目录及其所有内容，并删除临时卷。执行后，系统会询问您是否还要清除所有 Bitwarden 镜像。</p> |
-| renewcert  | 续签证书。                                                                                                                                                             |
-| rebuild    | 重建从 `config.yml` 生成的安装资产。                                                                                                                                         |
-| help       | 列出所有命令。                                                                                                                                                           |
+<table><thead><tr><th width="186">命令</th><th>描述</th></tr></thead><tbody><tr><td>install</td><td>启动安装程序。</td></tr><tr><td>start</td><td>启动所有容器。</td></tr><tr><td>restart</td><td>重新启动所有容器（与 start 相同）。</td></tr><tr><td>stop</td><td>停止所有容器。</td></tr><tr><td>update</td><td>更新所有容器和数据库。</td></tr><tr><td>updatedb</td><td>更新/初始化数据库。</td></tr><tr><td>updaterun</td><td>更新 <code>run.sh</code> 文件。</td></tr><tr><td>updateself</td><td>更新主脚本。</td></tr><tr><td>updateconf</td><td>更新所有容器，而无需重新启动正在运行的实例。</td></tr><tr><td>uninstall</td><td><p>在执行此命令之前，系统会提示您保存数据库文件。选 <code>y</code> 将创建一个包含最新备份的数据库的 tar 文件。</p><p></p><p>停止容器，删除 <code>bwdata</code> 目录及其所有内容，并删除临时卷。执行后，系统会询问您是否还要清除所有 Bitwarden 镜像。</p></td></tr><tr><td>renewcert</td><td>续签证书。</td></tr><tr><td>rebuild</td><td>重建从 <code>config.yml</code> 生成的安装资产。</td></tr><tr><td>help</td><td>列出所有命令。</td></tr></tbody></table>

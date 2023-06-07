@@ -41,9 +41,7 @@
 * 紧急访问
 * 密码库健康报告
 
-| 如果您的答案是「当然」…                                                                                                       | 如果您的答案是「还不需要」…                                                                                          |
-| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| <p>…我们建议您使用高级个人计划。<br><br><a href="https://vault.bitwarden.com/#/?premium=purchase"><strong>现在升级！</strong></a></p> | <p>…我们建议您继续使用免费的个人计划。<br><br><a href="https://bitwarden.com/download/"><strong>下载应用程序！</strong></a></p> |
+<table><thead><tr><th width="301.5619643364881">如果您的答案是「当然」…</th><th>如果您的答案是「还不需要」…</th></tr></thead><tbody><tr><td>…我们建议您使用高级个人计划。<br><br><a href="https://vault.bitwarden.com/#/?premium=purchase"><strong>现在升级！</strong></a></td><td>…我们建议您继续使用免费的个人计划。<br><br><a href="https://bitwarden.com/download/"><strong>下载应用程序！</strong></a></td></tr></tbody></table>
 
 ## 您要与谁共享？ <a href="#who-will-you-share-with" id="who-will-you-share-with"></a>
 
@@ -53,9 +51,7 @@
 * 公司（无限用户，按席位计费）
 * 不确定
 
-| 如果您的答案是「家人和朋友」…                                                                                                                                            | 如果您的答案是「公司」…                                                                                                             | 如果您的答案是「不确定」…                                                                                                                                                    |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p>…我们建议您使用家庭组织：<br><br>- 最多 6 用户的高级功能<br>- 在最多 6 用户之间的无限共享<br><br><a href="upgrade-from-individual-to-organization.md"><strong>创建您的家庭组织。</strong></a></p> | <p>…还有最后一个问题<br><br><strong>继续：</strong><a href="what-plan-is-right-for-me.md#what-tools-will-you-need">您需要哪些工具？</a></p> | <p>…我们建议您尝试使用免费组织：<br><br>- 2 用户的 Bitwarden 核心功能<br>- 2 用户之间的有限共享<br><br><a href="upgrade-from-individual-to-organization.md"><strong>创建您的免费组织。</strong></a></p> |
+<table><thead><tr><th width="271.36480407077653">如果您的答案是「家人和朋友」…</th><th width="191.46676517623885">如果您的答案是「公司」…</th><th>如果您的答案是「不确定」…</th></tr></thead><tbody><tr><td>…我们建议您使用家庭组织：<br><br>- 最多 6 用户的高级功能<br>- 在最多 6 用户之间的无限共享<br><br><a href="upgrade-from-individual-to-organization.md"><strong>创建您的家庭组织。</strong></a></td><td>…还有最后一个问题<br><br><strong>继续：</strong><a href="what-plan-is-right-for-me.md#what-tools-will-you-need">您需要哪些工具？</a></td><td>…我们建议您尝试使用免费组织：<br><br>- 2 用户的 Bitwarden 核心功能<br>- 2 用户之间的有限共享<br><br><a href="upgrade-from-individual-to-organization.md"><strong>创建您的免费组织。</strong></a></td></tr></tbody></table>
 
 ## 您需要哪些工具？ <a href="#what-tools-will-you-need" id="what-tools-will-you-need"></a>
 
@@ -73,9 +69,7 @@ Bitwarden 有两种针对公司的计划：团队和企业。 团队组织和企
 * 企业策略
 * 自托管选项
 
-| 如果您的答案是「几乎所有这些」…                                                                                                | 如果您的答案是「全部都需要」…                                                                                                 |
-| --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| <p>…我们建议您使用团队组织。<br><br><a href="upgrade-from-individual-to-organization.md"><strong>创建您的团队组织。</strong></a></p> | <p>…我们建议您使用企业组织。<br><br><a href="upgrade-from-individual-to-organization.md"><strong>创建您的企业组织。</strong></a></p> |
+<table><thead><tr><th width="222.5918321855837">如果您的答案是「几乎所有这些」…</th><th>如果您的答案是「全部都需要」…</th></tr></thead><tbody><tr><td>…我们建议您使用团队组织。<br><br><a href="upgrade-from-individual-to-organization.md"><strong>创建您的团队组织。</strong></a></td><td>…我们建议您使用企业组织。<br><br><a href="upgrade-from-individual-to-organization.md"><strong>创建您的企业组织。</strong></a></td></tr></tbody></table>
 
 ## 仍不确定？ <a href="#still-not-sure" id="still-not-sure"></a>
 
