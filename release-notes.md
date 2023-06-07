@@ -42,8 +42,8 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 
 此次发布包含：
 
-* **Splunk 集成**：Bitwarden 组织现在可以使用自托管的 Splunk Enterprise 进行安全信息和事件管理 (SIEM)。在此处了解如何开始使用 Splunk。
-* **改进的经销商计费**：Bitwarden 经销商现在是唯一有权查看其客户组织的计费、订阅或付款信息的实体。参阅这里。
+* **Splunk 集成**：Bitwarden 组织现在可以使用自托管的 Splunk Enterprise 进行安全信息和事件管理 (SIEM)。在[此处](admin-console/reporting/splunk-siem.md)了解如何开始使用 Splunk。
+* **改进的经销商计费**：Bitwarden 经销商现在是唯一有权查看其客户组织的计费、订阅或付款信息的实体。参阅[这里](my-account/plans-and-pricing/bitwarden-resellers.md)。
 * **主密码要求策略更新**：如果启用，主密码要求策略现在可以设置为提示现有的不合规用户更新他们的主密码。参阅这里。
 * **密码库超时策略更新**：密码库超时策略现在提供了指定密码库超时动作的选项。参阅这里。
 * **桌面端 - 新的生物识别选项**：您现在可以选择是在应用程序启动时要求主密码还是在打开时允许生物识别。参阅这里。

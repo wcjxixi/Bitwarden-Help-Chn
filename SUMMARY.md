@@ -28,6 +28,7 @@
     * [两步登录常见问题](two-step-login/two-step-login-faq.md)
   * [计划和定价](plans-and-pricing/README.md)
     * [关于 Bitwarden 计划](plans-and-pricing/about-bitwarden-plans.md)
+    * [Bitwarden 经销商](my-account/plans-and-pricing/bitwarden-resellers.md)
     * [\*哪种计划适合我？](plans-and-pricing/what-plan-is-right-for-me.md)
     * [从个人升级到组织](plans-and-pricing/upgrade-from-individual-to-organization.md)
     * [使用您的 Bitwarden 帐户开始企业试用](my-account/plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)
