@@ -58,10 +58,10 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 * **浏览器扩展 - 改进的自动填充安全性**：浏览器扩展现在不允许在页面加载时自动填充不受信任的 iframe。浏览器扩展还会在手动自动填充、使用上下文菜单或使用键盘快捷键时警告用户有关不受信任的 iframe，并在自动填充 HTTP 站点时警告用户，该站点需要基于该项目的已保存 URI 的 HTTPS。参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
 * **主密码安全性检查**：用户现在可以在创建帐户或在 Web 密码库上更改主密码时通过 Have I Been Pwned 检查已知的数据泄露，以查找他们预期的主密码。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
 * **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 帐户和[更改主密码](your-vault/your-master-password.md#change-your-master-password)的任何用户强制执行。
-* **激活自动填充策略**：对于企业组织，激活自动填充策略将自动为组织的新成员和现有成员打开页面加载时的自动填充。参阅这里。
-* **浏览器扩展 - 改进的通知栏**：用于将未检测到的项目添加到您的密码库的通知栏现在为遵守删除单个密码库策略的用户提供了更直观的工作流程。参阅这里。
-* **iOS - 选择 Bitwarden 获取验证码**：iOS 16+ 用户现在可以将 Bitwarden 设置为直接从相机应用程序扫描代码时用于存储验证码的默认应用程序。参阅这里。
-* **移动端 - 在应用程序内更改语言**：不同于在设备操作系统上设置语言，用户可以在 Bitwarden 移动应用程序中更改语言。参阅这里。
+* **激活自动填充策略**：对于企业组织，激活自动填充策略将自动为组织的新成员和现有成员打开页面加载时的自动填充。参阅[这里](organizations/enterprise-policies.md#activate-auto-fill)。
+* **浏览器扩展 - 改进的通知栏**：用于将未检测到的项目添加到您的密码库的通知栏现在为遵守删除单个密码库策略的用户提供了更直观的工作流程。参阅[这里](getting-started/getting-started-browserext.md#auto-save-a-login)。
+* **iOS - 选择 Bitwarden 获取验证码**：iOS 16+ 用户现在可以将 Bitwarden 设置为直接从相机应用程序扫描代码时用于存储验证码的默认应用程序。参阅[这里](your-vault/totp.md#bitwarden-authenticator-on-ios)。
+* **移动端 - 在应用程序内更改语言**：不同于在设备操作系统上设置语言，用户可以在 Bitwarden 移动应用程序中更改语言。参阅[这里](miscellaneous/localization.md#change-app-language)。
 
 ### 机密管理器 (Beta) <a href="#secrets-manager-beta" id="secrets-manager-beta"></a>
 

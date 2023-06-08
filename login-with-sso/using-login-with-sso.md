@@ -1,4 +1,4 @@
-# =SSO 登录的使用
+# SSO 登录的使用
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/using-sso/)
@@ -7,7 +7,7 @@
 作为 Bitwarden 的最终用户，在您[使用 SSO 登录](using-login-with-sso.md#login-using-sso)之前，您需要获取组织 [SSO 标识符](using-login-with-sso.md#get-your-organization-identifier)：
 
 {% hint style="success" %}
-根据您组织的设置方式，您可能还需要[将您的帐户链接到 SSO](using-login-with-sso.md#link-your-account)。如果您**已经拥有作为组织成员的 Bitwarden 帐户**，或者**您的组织不要求您使用 SSO**，则通常需要这样做。
+根据您组织的设置方式，您可能还需要[将您的账户链接到 SSO](using-login-with-sso.md#link-your-account)。如果您**已经拥有作为组织成员的 Bitwarden 帐户**，或者**您的组织不要求您使用 SSO**，则通常需要这样做。
 {% endhint %}
 
 ## 获取组织标识符 <a href="#get-your-organization-identifier" id="get-your-organization-identifier"></a>
@@ -17,42 +17,56 @@
 {% hint style="info" %}
 企业客户可以验证其组织的域名所有权（例如 `mycompany.com`）。如果您的登录电子邮件与您组织的已验证域名（例如 `mycompany.com`）相匹配，则在使用 SSO 登录时无需输入 SSO 标识符。
 
-要了解有关域名验证的更多信息，请参阅[这里](../admin-console/login-with-sso/domain-verification.md)。
+要了解有关域验证的更多信息，请参阅[这里](../admin-console/login-with-sso/domain-verification.md)。
 {% endhint %}
 
 ## 使用 SSO 加入组织 <a href="#join-an-organization-using-sso" id="join-an-organization-using-sso"></a>
 
-使用 SSO 加入组织所需的步骤会略有不同，具体取决于您是否收到电子邮件邀请以及您是否已经拥有与要加入 Bitwarden 的电子邮件地址相关联的 Bitwarden 帐户：
+使用 SSO 加入组织所需的步骤会略有不同，具体取决于您是否收到电子邮件邀请以及您是否已经拥有与要加入 Bitwarden 的电子邮件地址相关联的 Bitwarden 账户：
 
 {% tabs %}
 {% tab title="我已被邀请" %}
-如果您的收件箱中有加入该组织的电子邮件邀请，请根据您是否已经有一个使用该电子邮件地址的 Bitwarden 帐户，执行以下程序之一：
+如果您的收件箱中有加入该组织的电子邮件邀请，请根据您是否已经有一个使用该电子邮件地址的 Bitwarden 账户，执行以下步骤之一：
 
-## 我已经有 Bitwarden 帐户 <a href="#i-already-have-a-bitwarden-account" id="i-already-have-a-bitwarden-account"></a>
+## 我已经有 Bitwarden 账户 <a href="#i-already-have-a-bitwarden-account" id="i-already-have-a-bitwarden-account"></a>
 
-如果邀请发送到已链接到 Bitwarden 帐户并与 IdP 提供的电子邮件地址匹配的电子邮件，请按照以下步骤加入组织：
+如果邀请已发送到已链接到 Bitwarden 账户并且与 IdP 提供的电子邮件地址匹配的电子邮件，请按照以下步骤加入组织：
 
-1. 单击电子邮件邀请中的加入组织按钮。
-2. 在 Bitwarden 邀请页面上，选择登录。输入您的电子邮件地址，然后输入主密码，然后再次选择登录。
+1. 单击电子邮件邀请中的**加入组织**按钮。
+2. 在 Bitwarden 邀请页面上，选择**登录**。输入您的电子邮件地址，然后输入主密码，然后再次选择**登录**。
 3. 成功登录后，页面顶部会出现一个绿色横幅，表明您的组织邀请已被接受。在您继续之前，组织管理员需要向组织确认您。
 4. 确认后，您将能够通过再次登录 Bitwarden 来访问该组织，这次使用企业单点登录选项。
 
-## 我还没有 Bitwarden 帐户 <a href="#i-dont-have-a-bitwarden-account" id="i-dont-have-a-bitwarden-account"></a>
+## 我还没有 Bitwarden 账户 <a href="#i-dont-have-a-bitwarden-account" id="i-dont-have-a-bitwarden-account"></a>
 
-如果邀请发送到尚未链接到 Bitwarden 帐户的电子邮件，请按照以下步骤操作：
+如果邀请发送到尚未链接到 Bitwarden 账户的电子邮件，请按照以下步骤操作：
 
-1. 单击电子邮件邀请中的加入组织按钮。
-2. 在邀请页面上选择登录，然后输入您的电子邮件地址。在下一页上，选择企业单点登录按钮。
-3. 输入您的 SSO 标识符并选择登录（如果您的电子邮件与组织的已验证域匹配，您将绕过此步骤）。
-4. 登录您的 IdP。完成后，您将被重定向到一个页面，您可以在其中为新帐户创建主密码。
-5. 为帐户创建一个主密码。在您继续之前，组织管理员需要向组织确认您。
+1. 单击电子邮件邀请中的**加入组织**按钮。
+2. 在邀请页面上选择**登录**，然后输入您的电子邮件地址。在下一页上，选择**企业单点登录**按钮。
+3. 输入您的 **SSO 标识符**然后选择**登录**（如果您的电子邮件与组织的已验证域匹配，您将绕过此步骤）。
+4. 登录您的 IdP。完成后，您将被重定向到一个页面，您可以在其中为新账户创建主密码。
+5. 为账户创建一个主密码。在您继续之前，组织管理员需要向组织确认您。
 6. 确认后，您将能够通过使用企业单点登录选项登录到 Bitwarden 来访问该组织。
 
-如果您收到错误消息 已被邀请加入该组织，请接受邀请。尝试登录时，已有一个 Bitwarden 帐户与此电子邮件相关联。请按照上面的我已经有一个 Bitwarden 帐户的说明进行操作。
+尝试登录时，如果您收到错误消息 `<email> has been invited to the organization, please accept invitation.`（\<email> 已被邀请加入该组织，请接受邀请。）。说明已有一个 Bitwarden 账户与此电子邮件相关联。请按照上面的**我已经有 Bitwarden 账户**的说明进行操作。
 {% endtab %}
 
 {% tab title="我未被邀请" %}
+如果您的收件箱中还没有加入该组织的电子邮件邀请，请根据您是否已经有一个使用该电子邮件地址的 Bitwarden 账户，执行以下步骤之一：
 
+## 我已经有 Bitwarden 账户 <a href="#i-already-have-a-bitwarden-account" id="i-already-have-a-bitwarden-account"></a>
+
+您将无法使用此账户加入使用 SSO 的组织。联系您的组织管理员以请求邀请。
+
+## 我还没有 Bitwarden 账户 <a href="#i-dont-have-a-bitwarden-account" id="i-dont-have-a-bitwarden-account"></a>
+
+如果您在没有邀请且没有预先存在的 Bitwarden 账户的情况下加入组织，请按照以下说明操作：
+
+1. 在 Bitwarden 登录页面上输入您的电子邮件。在下一页上，选择**企业单点登录**按钮。
+2. 输入您的 **SSO 标识符**然后选择**登录**（如果您的电子邮件与组织的已验证域匹配，您将绕过此步骤）。
+3. 登录您的 IdP。完成后，您将被重定向到一个页面，您可以在其中为新账户创建主密码。
+4. 为账户创建一个主密码。在您继续之前，组织管理员需要向组织确认您。
+5. 确认后，您将能够通过使用**企业单点登录**选项登录到 Bitwarden 来访问该组织。
 {% endtab %}
 {% endtabs %}
 
@@ -88,7 +102,7 @@ SSO 标识符
 我们建议将此页面添加为书签，并将您的组织标识符作为查询字符串包含在内，这样您就不必每次都输入它了，比如： `https://vault.bitwarden.com/#/sso?identifier=YOUR-ORG-ID` 或 `https://your.domain.com/#/sso?identifier=YOUR-ORG-ID`。
 {% endhint %}
 
-4、现在您已经使用 SSO 登录验证了您的身份，系统将提示您为新帐户**创建**[主密码](../your-vault/your-master-password.md)，或者如果您已经拥有 Bitwarden 帐户，输入您的主密码以解密您的密码库。
+4、现在您已经使用 SSO 登录验证了您的身份，系统将提示您为新帐户**创建**[主密码](../your-vault/your-master-password.md)，或者如果您已经拥有 Bitwarden 账户，输入您的主密码以解密您的密码库。
 
 {% hint style="info" %}
 **为什么仍然需要我的主密码？**
@@ -110,7 +124,7 @@ SSO 标识符
 
 要使用 SSO 和 Key Connector 登录：
 
-1、打开您的 Bitwarden 网页密码库，然后输入您的 Bitwarden 电子邮件并选择**继续**。如果您还没有 Bitwarden 帐户电子邮件，您可以输入您的公司电子邮件。
+1、打开您的 Bitwarden 网页密码库，然后输入您的 Bitwarden 电子邮件并选择**继续**。如果您还没有 Bitwarden 账户电子邮件，您可以输入您的公司电子邮件。
 
 {% embed url="https://bitwarden.com/_gatsby/image/2cabcf38f4a4b36d40891d1876e39315/0c3e98384836d57b216b7aaf24bdd37a/Screen%20Shot%202022-11-17%20at%2010.56.00%20AM%20(2).webp?eu=dddd58e3eac8a9d55e6da88439753560b23f01abaf5133823a32e3fb4dfc988726f54f5126922eb7786008dbd5b143bb65927d641fe9d7d3c1bd4ef4ef3cab5a52845cbf63b2780f552b95fce6f3011361cf4e50abdb8c4ce32e78cbfaeaea214e055f35fb3eeed0afea6020f39d7167aea9a16c3b91ed22e14456098c1f6eff0cdbe4a2541799bceb6eeb8297f208979a925c6f01c4f73170761e1d0aeb2ae8a0b601756f7c415b619ba95acf61c3b23d156071595a1c9434788500a503529bbbbfce5fd97879fca9c82c7181acffc4821bac3473e1d127a9ed4a076162ae7cb3fc25a0&a=w%3D386%26h%3D231%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.775Z" %}
 电子邮件地址
@@ -132,10 +146,10 @@ SSO 标识符
 我们建议将此页面添加为书签，并将您的组织标识符作为查询字符串包含在内，这样您就不必每次都输入它了，比如： `https://vault.bitwarden.com/#/sso?identifier=YOUR-ORG-ID` 或 `https://your.domain.com/#/sso?identifier=YOUR-ORG-ID`。
 {% endhint %}
 
-4、根据您的帐户状态，您可能需要在首次使用 SSO 和 Key Connector 登录时输入或创建主密码。这样做将从您的帐户中移除主密码。
+4、根据您的账户状态，您可能需要在首次使用 SSO 和 Key Connector 登录时输入或创建主密码。这样做将从您的账户中移除主密码。
 
 {% hint style="info" %}
-我们希望您阅读[这里](about-key-connector.md#impact-on-master-passwords)和[这里](about-key-connector.md#impact-on-organization-membership)，以充分了解从您的帐户中删除主密码意味着什么。您可以选择**离开组织**，但这将取消对组织拥有的密码库项目和集合以及单点登录的访问权限。
+我们希望您阅读[这里](about-key-connector.md#impact-on-master-passwords)和[这里](about-key-connector.md#impact-on-organization-membership)，以充分了解从您的账户中删除主密码意味着什么。您可以选择**离开组织**，但这将取消对组织拥有的密码库项目和集合以及单点登录的访问权限。
 {% endhint %}
 
 5、如果您使用两步登录，请使用您的辅助设备进行身份验证。
@@ -148,7 +162,7 @@ SSO 标识符
 
 ## 链接您的账户 <a href="#link-your-account" id="link-your-account"></a>
 
-如果您已经拥有属于组织成员的 Bitwarden 帐户，或者您的组织不要求您使用 SSO，则您只需要将您的帐户链接到 SSO：
+如果您已经拥有属于组织成员的 Bitwarden 账户，或者您的组织不要求您使用 SSO，则您只需要将您的账户链接到 SSO：
 
 1、打开网页密码库，选择组织旁边的 **≡选项**菜单。
 
