@@ -1,26 +1,26 @@
 # =成员角色和权限
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/user-types-access-control/)
+对 应的[官方文档地址](https://bitwarden.com/help/article/user-types-access-control/)
 {% endhint %}
 
-Bitwarden 组织中的用户可以被授予各种用户类型和访问控制，以管理他们的权限和访问。当[邀请用户到您的组织](../../organizations/user-management.md)时，您可以设置用户类型和访问控制，或者在任何时候从您的组织的**管理** → **人员**界面进行设置：
+Bitwarden 组织的成员可以被授予各种角色和集合权限。您可以在[邀请用户加入您的组织](../../organizations/user-management.md)时设置角色和集合权限，或者随时从您组织的**成员**界面使用**选项**菜单设置角色和集合权限：
 
-{% embed url="https://bitwarden.com/help/images/organizations/user-types-access-control.png" %}
-编辑用户类型和访问控制
+{% embed url="https://bitwarden.com/_gatsby/image/42cb91b3c9aa5eca143e46039899a108/43749f9724d903fe1da0898dd004f04c/Screen%20Shot%202022-12-28%20at%209.14.14%20AM.webp?eu=d98d05e5e7cff9870e6ff28569736169e13903aca85531d33437e4aa1dac9bd477f21d04239173e02b6b0fd685e140be64c07b344debd6dfc7ee1ea0b83ca85b00d15be634b27a5f156f84bdbaea191c35974d0de29d9b4cf53c3197b0f7f46e47055834af38e6d2aaf33432b8de6835f5b5e07a1380dd32a36028548a4105f525e1eebf361887d1e118b9e7bcff589e94e12c0249defa367122494a0cbe7beea0e702243e2e405b2aadfc1a9234c8d95f443e67315d03f56527d157e66e39acb5bfce54c77b7fffa9cd5e01fbddeedeba&a=w%3D850%26h%3D606%26fm%3Dwebp%26q%3D75&cd=2023-02-15T12%3A50%3A03.883Z" %}
+编辑成员角色
 {% endembed %}
 
-## 用户类型 <a href="#user-types" id="user-types"></a>
+## 成员角色 <a href="#member-roles" id="member-roles"></a>
 
-用户类型决定了一个用户在您的组织内将拥有的权限。用户类型并不决定[他们可以访问哪些集合](member-roles-and-permissions.md#access-control)，而是决定他们在您的组织的资源和工具范围内**可以获取哪些操作**。选项包括：
+角色决定了成员在您的组织的资源和工具范围内可以获取哪些操作，但无法决定[他们可以访问哪些集合](member-roles-and-permissions.md#access-control)。选项包括：
 
-| 用户类型 | 权限                                                                                                                                                                       |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 用户   | <p>访问指定集合中的共享项目</p><p>从分配的集合中添加、编辑或删除项目（除非<strong>只读</strong>）</p>                                                                                                       |
-| 经理   | <p>上述所有的权限，</p><p>+将用户分配给集合</p><p>+将用户群组分配给集合</p><p>+创建或删除集合</p>                                                                                                         |
-| 管理员  | <p>上述所有的权限，</p><p>+将用户分配给用户群组</p><p>+创建或删除用户群组</p><p>+邀请并确认新用户</p><p>+管理企业策略</p><p>+查看事件日志</p><p>+导出组织密码库数据</p><p>+管理密码重置</p><p><strong>管理员用户自动拥有所有集合的访问权限。</strong></p> |
-| 所有者  | <p>上述所有的权限，</p><p>+管理计费、订阅和集成</p><p><strong>所有者用户自动拥有所有集合的访问权限。</strong></p>                                                                                             |
-| 自定义  | 允许逐个用户地对用户权限进行粒度控制，请参阅[自定义角色](member-roles-and-permissions.md#custom-role)。                                                                                              |
+| 用户类型 | 权限                                                                                                                                                                              |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 用户   | <p>访问指定集合中的共享项目</p><p>从分配的集合中添加、编辑或删除项目（除非<strong>只读</strong>）</p>                                                                                                              |
+| 经理   | <p>上述所有的权限，</p><p>+添加/移除用户到已分配的集合</p><p>+tian'tianj上述所有的权限，<br>+添加/移除用户到已分配的集合<br>+tianjia用户群组到已分配的集合</p><p>+创建或删除集合</p>                                                        |
+| 管理员  | <p>上述所有的权限，</p><p></p><p>+将用户分配给用户群组</p><p>+创建或删除用户群组</p><p>+邀请并确认新用户</p><p>+管理企业策略</p><p>+查看事件日志</p><p>+导出组织密码库数据</p><p>+管理密码重置</p><p><strong>管理员用户自动拥有所有集合的访问权限。</strong></p> |
+| 所有者  | <p>上述所有的权限，</p><p>+管理计费、订阅和集成</p><p><strong>所有者用户自动拥有所有集合的访问权限。</strong></p>                                                                                                    |
+| 自定义  | 允许逐个用户地对用户权限进行粒度控制，请参阅[自定义角色](member-roles-and-permissions.md#custom-role)。                                                                                                     |
 
 {% hint style="info" %}
 **仅所有者**可以创建新的所有者，或分配所有者类型到一个现有的用户。为了进行故障转移，Bitwarden 建议创建多个所有者用户。
