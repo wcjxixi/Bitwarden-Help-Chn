@@ -78,7 +78,7 @@
     * [导出密码库数据](import-export/export-vault-data.md)
     * [加密导出](import-export/encrypted-exports.md)
     * [调整 Bitwarden .csv 或 .json](import-export/condition-a-bitwarden-.csv-or-.json.md)
-    * [=Bitwarden 导入工具](password-manager/import-and-export/bitwarden-importer-tool.md)
+    * [Bitwarden 导入器工具](password-manager/import-and-export/bitwarden-importer-tool.md)
     * [导入和导出常见问题](import-export/import-and-export-faqs.md)
   * [自动填充](auto-fill/README.md)
     * [自动填充基础](password-manager/auto-fill/auto-fill-basics/README.md)
