@@ -203,7 +203,7 @@
     * [SSO 登录常见问题](login-with-sso/login-with-sso-faqs.md)
   * [报告](admin-console/reporting/README.md)
     * [事件日志](admin-console/reporting/event-logs.md)
-    * [=Splunk SIEM](admin-console/reporting/splunk-siem.md)
+    * [Splunk SIEM](admin-console/reporting/splunk-siem.md)
   * [Bitwarden 公共 API](organizations/bitwarden-public-api.md)
   * [更多](admin-console/more/README.md)
     * [组织常见问题](organizations/organizations-faqs.md)
