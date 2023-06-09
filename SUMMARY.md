@@ -263,7 +263,7 @@
   * [使用网站图标时的隐私](security/privacy-when-using-website-icons.md)
   * [Bitwarden 的分包商](security/who-are-bitwardens-subprocessors.md)
   * [来自 Bitwarden 的电子邮件](security/emails-from-bitwarden.md)
-  * [=Bitwarden 地址和存储库](security/bitwarden-addresses-and-repositories.md)
+  * [Bitwarden 地址](security/bitwarden-addresses.md)
   * [安全常见问题](security/security-faqs.md)
 * [\*杂项](miscellaneous/README.md)
   * [11 月弃用通知](miscellaneous/november-deprecation-notice.md)
