@@ -27,7 +27,7 @@
     * [丢失了辅助设备](two-step-login/lost-secondary-device.md)
     * [两步登录常见问题](two-step-login/two-step-login-faq.md)
   * [计划和定价](plans-and-pricing/README.md)
-    * [关于 Bitwarden 计划](plans-and-pricing/about-bitwarden-plans.md)
+    * [=关于 Bitwarden 计划](plans-and-pricing/about-bitwarden-plans.md)
     * [Bitwarden 经销商](my-account/plans-and-pricing/bitwarden-resellers.md)
     * [\*哪种计划适合我？](plans-and-pricing/what-plan-is-right-for-me.md)
     * [从个人升级到组织](plans-and-pricing/upgrade-from-individual-to-organization.md)
