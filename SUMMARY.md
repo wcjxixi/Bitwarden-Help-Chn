@@ -120,7 +120,7 @@
     * [uMatrix 和 NoScript 访问规则](miscellaneous/umatrix-and-noscript-access-rules.md)
 * [=Secrets Manager](secrets-manager/README.md)
   * [Secrets Manager 概述](secrets-manager/secrets-manager-overview.md)
-  * [=入门](secrets-manager/get-started/README.md)
+  * [入门](secrets-manager/get-started/README.md)
     * [Beta 版注册](secrets-manager/get-started/beta-signup.md)
     * [Secrets Manager 快速入门](secrets-manager/get-started/secrets-manager-quick-start.md)
     * [开发者快速入门](secrets-manager/get-started/developer-quick-start.md)
