@@ -123,7 +123,7 @@
   * [=入门](secrets-manager/get-started/README.md)
     * [Beta 版注册](secrets-manager/get-started/beta-signup.md)
     * [机密管理器快速入门](secrets-manager/get-started/secrets-manager-quick-start.md)
-    * [=开发者快速入门](secrets-manager/get-started/developer-quick-start.md)
+    * [开发者快速入门](secrets-manager/get-started/developer-quick-start.md)
     * [=登录机密管理器](secrets-manager/get-started/log-in-to-secrets-manager.md)
     * [=管理您的组织](secrets-manager/get-started/manage-your-organization.md)
   * [您的机密](secrets-manager/your-secrets/README.md)
