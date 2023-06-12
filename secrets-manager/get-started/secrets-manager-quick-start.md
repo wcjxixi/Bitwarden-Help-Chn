@@ -1,4 +1,4 @@
-# 机密管理器快速入门
+# Secrets Manager 快速入门
 
 {% hint style="info" %}
 对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-quick-start/)
@@ -40,7 +40,7 @@ Secrets Manager 可以从您组织的**计费** → **订阅**页面激活。您
 
 1、打开您组织的**成员**选项卡，然后使用 (**≡**) 选项菜单打开您的**成员角色**面板。
 
-2、在面板底部，勾选**此用户可以访问 Secrets Manager Beta**：
+2、在面板底部，选中**此用户可以访问 Secrets Manager Beta 版**：
 
 {% embed url="https://bitwarden.com/_gatsby/image/16428fa0dec70919daa1ff46235f2795/fd47c23b1af4ee88e1f2061428b4f6b1/give-member-access.webp?eu=df8f51e4b5ccfa8e063cf58769756061b63653faab5536d96b6ce7aa1bfc98d775f41d0772c67fb32e3a588a87e340ec63c72a604bbcd4d3c5b519f5e830f95d53d10cbd62e225065278ccafe4a754423c93120aa6879e5af16d20d6e5e0bd285d145c68a265a7d8b1f86231f39d7c76bce7e56d3086e866be471a4bcc5a2faf22e191883b43a9c9af1dee9c88eb7dc9d6b22a55079ff77657324a7c25846fa4f3e104763d7c135a31c9ab5ac46394b3691a3320585f05a6353a865da86b38c6fbacf81b8c6726b4f59b64329b92fdd3b859ef3436b998&a=w%3D850%26h%3D675%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.653Z" %}
 分配对 beta 版的访问权限
