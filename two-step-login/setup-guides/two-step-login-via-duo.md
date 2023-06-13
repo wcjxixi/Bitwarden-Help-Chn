@@ -8,7 +8,7 @@
 
 ## 设置 Duo <a href="#setup-duo" id="setup-duo"></a>
 
-在 Bitwarden 中设置 Duo 的方法略有不同，这取决于您是为您的个人密码库还是为您的组织启用。选择下面的选项卡获取相应的介绍：
+本文涵盖个人用户、组织用户和组织管理员的 Duo 设置：
 
 {% tabs %}
 {% tab title="个人用户" %}
