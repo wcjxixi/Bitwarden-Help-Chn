@@ -25,7 +25,7 @@ Bitwarden 提供与 GitHub Actions 的集成，以从 Secrets Manager 获取机�
 
 要在您的工作流程中获取机密，请将包含以下信息的步骤添加到您的工作流程 YAML 文件中：
 
-```
+```yaml
 - name: Get Secrets
   uses: bitwarden/sm-action@v1
   with:
@@ -45,7 +45,7 @@ Bitwarden 提供与 GitHub Actions 的集成，以从 Secrets Manager 获取机�
 
 最后，您可以通过在后续操作中引用指定的机密名称（`SECRET_NAME_1` 和 `SECRET_NAME_2`）作为参数来完成路径，例如：
 
-```
+```yaml
 - name: Use Secret
   run: SQLCMD -S MYSQLSERVER -U "$SECRET_NAME_1" -P "$SECRET_NAME_2"
 ```

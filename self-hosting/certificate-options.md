@@ -171,7 +171,7 @@ export NODE_EXTRA_CA_CERTS=~/.config/Bitwarden/certificate.crt
 {% hint style="info" %}
 如果您不是自托管并且在您的 android 设备上遇到以下证书错误：
 
-```
+```yaml
 Exception message: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
 ```
 
