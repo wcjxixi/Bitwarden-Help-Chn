@@ -29,7 +29,9 @@
 {% hint style="success" %}
 在操作删除您的账户之前，请尝试以下操作：
 
+* 过在登录界面上选择**使用其他两步登录方式**，检查您是否启用了备用的两步登录方式。
 * **如果您使用 Duo**，请[生成绕行代码](https://duo.com/docs/administration-users#generating-a-bypass-code)。对于组织 Duo，公司的 Duo 管理员可以为您生成绕行代码。
+* **如果您在使用紧急访问**：具有**接管**访问权限的受信任的紧急联系人可以禁用两步登录方式。[了解如何使用紧急访问访问密码库](../security/emergency-access.md#use-emergency-access)。
 * **请检查您当前是否登录了任何 Bitwarden 客户端应用程序**（移动应用程序、浏览器扩展等）。如果是，请[导出您的密码库数据](../import-export/export-vault-data.md)以保存您的数据。
 {% endhint %}
 

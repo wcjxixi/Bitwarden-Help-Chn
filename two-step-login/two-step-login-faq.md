@@ -29,3 +29,10 @@
 ![记住我选项](../.gitbook/assets/twostep-remember.png)
 
 如果您使用了**记住我**选项，需要从您的网页密码库中（**设置** → **我的账户**）**取消会话授权**，以便该设备继续询问您的两步登录方式。
+
+### 问：设备登录是否适用于两步登录？ <a href="#q-does-log-in-with-device-work-with-two-step-login" id="q-does-log-in-with-device-work-with-two-step-login"></a>
+
+**答：**是的。设备登录将取代输入您的主密码。如果您的账户启用了两步登录，用户仍需要完成身份验证请求。如果出现以下情况，使用设备登录将直接将您带到身份验证步骤：
+
+* 您正在使用已记住的设备。
+* 之前已在登录界面选中「记住我」。

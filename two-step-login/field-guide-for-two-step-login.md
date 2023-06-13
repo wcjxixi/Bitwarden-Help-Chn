@@ -6,9 +6,9 @@
 
 ## 什么是两步登录？ <a href="#what-is-two-step-login" id="what-is-two-step-login"></a>
 
-两步登录（也称为_双因素验证_或 _2FA_）是一种越来越常见的安全技术，被网站和应用程序用来保护您的敏感数据。使用两步登录的网站会要求您除了输入用户名和密码外，还要输入一个额外的「令牌」（也称为_验证码_或_一次性密码（OTP）_）来验证您的身份，该令牌通常从不同的设备上获取。
+两步登录（也称为双因素验证或 _2FA_）是一种越来越常见的安全技术，被网站和应用程序用来保护您的敏感数据。使用两步登录的网站会要求您除了输入用户名和密码外，还要输入一个额外的「令牌」（也称为验证码或一次性密码（OTP））来验证您的身份，该令牌通常从不同的设备上获取。
 
-如果他们无法从您的**辅助设备**上访问令牌，恶意行为者即使知道了您的用户名和密码，他们也无法访问网站：
+如果他们无法从您的辅助设备上访问令牌，恶意行为者即使知道了您的用户名和密码，他们也无法访问网站：
 
 ![](../.gitbook/assets/two-step-login-basic-setup.png)
 
@@ -18,17 +18,17 @@
 * 要求提供由移动设备上的验证器应用程序（例如 Authy）生成的令牌
 * 从物理安全钥匙（例如 Yubikey）中查找令牌
 
-## 如何使用两步登录？ <a href="#how-should-i-use-two-step-login" id="how-should-i-use-two-step-login"></a>
+## 我应该使用两步登录？ <a href="#how-should-i-use-two-step-login" id="how-should-i-use-two-step-login"></a>
 
-安全性通常需要在保护和便利之间进行权衡，因此最终取决于您！通常，使用两步登录的两个最关键的用途：
+安全性通常需要在保护和便利之间进行权衡，因此最终取决于您！通常，使用两步登录的两个最重要的用途：
 
 **1、**[**保护 Bitwarden** ](field-guide-for-two-step-login.md#securing-bitwarden)
 
-Bitwarden 支持多种两步登录方式，您可以使用这些方式来保护密码库数据的安全。启用两步登录后，将要求您在每次**登录**时，除了输入主密码外，还要完成第二步。
+Bitwarden 支持多种两步登录方式，您可以使用这些方式来保护密码库数据的安全。启用两步登录后，将要求您在每次登录时，除了输入主密码外，还要完成第二步。
 
 **2、**[**保护重要的网站**](field-guide-for-two-step-login.md#securing-important-websites)
 
-在使用 Bitwarden 密码库项目登录网站时，您可以使用多种两步登录方式来验证您的身份。在这篇文章中，我们将讨论如何使用 Authy 和 **Bitwarden 内置的验证器**进行两步登录。&#x20;
+通过在登录时要求使用临时一次性密码 (TOTP) 来保护单个网站。您可以使用 Bitwarden 存储和生成 TOTP。
 
 ## 保护 Bitwarden <a href="#securing-bitwarden" id="securing-bitwarden"></a>
 
@@ -38,18 +38,18 @@ Bitwarden 支持多种两步登录方式，您可以使用这些方式来保护�
 
 ![两步登录访问 Bitwarden](../.gitbook/assets/two-step-login-bitwarden.png)
 
-**Bitwarden 为免费账户提供了好几种两步登录方式**，包括：
+Bitwarden 为免费账户提供了好几种两步登录方式，包括：
 
 * 验证器应用程序（例如，Authy 或 Google 验证器）
 * 电子邮件
 
-**对于高级会员账户**，Bitwarden 还提供了好几种高级两步登录方式：
+对于高级会员账户，Bitwarden 还提供了好几种高级两步登录方式：
 
 * 具有 Duo Push、短信、电话和安全钥匙的 Duo Security
 * YubiKey（任何 4/5 系列设备或 YubiKey NEO/NFC）
 * FIDO（任何经过 FIDO2 WebAuthn 认证的钥匙）
 
-要了解有关选项的更多信息，或获取设置任何方式的帮助，请参阅[两步登录方式](two-step-login-methods.md)。
+使用我们的**设置指南**，[了解有关选项的更多信息](two-step-login-methods.md)，或获取设置任何方式的帮助。
 
 ## 保护重要的网站 <a href="#securing-important-websites" id="securing-important-websites"></a>
 
@@ -81,7 +81,7 @@ Authy 是 Bitwarden 推荐的验证器应用程序，因为它拥有任一个设
 
 ### 使用 Bitwarden 验证器 <a href="#use-bitwarden-authenticator" id="use-bitwarden-authenticator"></a>
 
-**作为 Authy 的替代方案**，Bitwarden 为包括付费组织（家庭、团队或企业）成员在内的高级用户提供了一个内置的验证器。
+作为 Authy 的替代方案，Bitwarden 为包括付费组织（家庭、团队或企业）成员在内的高级用户提供了一个内置的验证器。
 
 与其他验证器应用一样，iOS 版和 Android 版的 Bitwarden 可以扫描二维码并生成 6 位数的令牌。使用 Bitwarden 验证器来保护网站的安全时，将保存一个与该登录项目一起轮换的 6 位数令牌。您也可以手动从任何 Bitwarden 应用中将您的验证码加密保存到密码库项目中。
 
@@ -103,9 +103,9 @@ Bitwarden 移动应用和浏览器扩展提供自动填写验证码的功能。�
 
 对于组织来说，使用 Bitwarden 验证器进行令牌验证的一大好处是能够在团队成员之间共享生成的令牌。这使得组织可以通过两步登录保护他们的账户，而不会牺牲多个用户访问该账户的能力，也不需要两个员工之间协调以不安全的方式共享令牌。
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-现在你已经是两步登录的专家了，我们建议你：
+现在您已经是两步登录的专家了，我们建议你：
 
 * [设置两步登录](two-step-login-methods.md)
 * [获取高级会员以使用高级两步登录方式](https://vault.bitwarden.com/#/?premium=purchase)

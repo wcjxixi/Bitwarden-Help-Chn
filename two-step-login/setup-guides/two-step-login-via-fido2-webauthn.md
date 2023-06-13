@@ -33,15 +33,25 @@ FIDO2 WebAuthn 不能在所有 Bitwarden 应用程序上使用。您应该额外
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。
 {% endhint %}
 
-1、登录到[网页密码库](https://vault.bitwarden.com/)。
+1、登录您的[网页密码库](https://vault.bitwarden.com/)。
 
-2、从顶部导航栏中选择**设置**。
+2、选择个人资料图标并然后下拉列表中选择**账户设置**：
 
-3、从左侧菜单选择**两步登录**。
+{% embed url="https://bitwarden.com/_gatsby/image/551bb080111e018406d626c015cebc1a/3c147dfab42b00c5b359562da41d2951/Screen%20Shot%202022-05-13%20at%2010.34.10%20AM.webp?eu=8adb56b0eaccf885076fa2d66f746161e56956aaac0032d43465b6f94bfe9b8e71fa1151289528b0796d528bd7e816bc31c67d691befd18991bc4af4be3da80d07835fb836b07807052ec4fde4a1574d60c11b5fa8d1c90ca76a21ddb4b4e47711571b23ae7ebbd7e8fa3064badb6b76aaf5ac317a9bf629b7471d4a985c27ad27f8c59a7000b09bf400e8a4b0fa4f979db1255a07dcec3226050d762c882bfad0bb5137732f072e7fc6d45fae7e91b13f4934705f0c03a5673a8555fb3863c7b0aef509da7e7ee7fdc06073d0cab1e3be58f97f2888ac7ff6c654780e0fae0eadb966f6d10b574aee2bfa8b4fb61d04352ff36197647e8e&a=w%3D773%26h%3D226%26fm%3Dwebp%26q%3D75&cd=2022-12-09T16%3A24%3A03.707Z" %}
+账户设置
+{% endembed %}
 
-4、定位到 **FIDO2 WebAuthn** 选项并选择**管理**按钮。
+3、选择**安全**页面和**两步登录**选项卡：
 
-![选择管理按钮](../../.gitbook/assets/twostep-options-u2foverlay.png)
+{% embed url="https://bitwarden.com/_gatsby/image/825426d227e1afce2f4b644e6a3e9e84/3cbf2a88c5de2a53993ef05ef68dd09e/Screen%20Shot%202022-05-16%20at%2011.13.53%20AM.webp?eu=da8a56b3b0c9ff8e0a6ef2806a713261e96b52aca85232853c31e0ad4ffa99d220a51f01249279b5246b0c8dd0b344ee66937e3348eb82dac0b81cf3ef36a85c008650b623f730445b34dba7eda451102bd8491cf7d28b4bf62931cabbe6f36f1e124278ee20b9d7e4f47263af815d7191f5ae2d32c6f825b9613b13834e73ad30b393c1301beb98b84ee9e1ecfb5bccceb32c0e40d9a73277774b1909ea28bda2e60c75264a1319609bf137a439c9f2531e61215c4203f27a3bd63aaa285ec2e5e5a05ec77f788ed9b42f30d894&a=w%3D779%26h%3D301%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.371Z" %}
+两步登录
+{% endembed %}
+
+4、定位到 **FIDO2 WebAuthn** 选项然后选择**管理**按钮：
+
+{% embed url="https://bitwarden.com/_gatsby/image/cc549459a517651219d6783d2cbf4854/8313827cd9049d37c64a1d7734630526/twostep-options-fido2.webp?eu=898803e6b5cffe82066ef6d76f246838e66a03a9f60562d86c30e5a61bfb9b8f20a51d0171927eb32c695e8fdae143ec66902b684de8868cc1bb19a0ee35af0e5b845bba62e67251532ac4fab8a3064c3993480ca484ce00a43f20d3b0b5b7221d531f2bae79b2d9a8ed7527ba9c306bb7e7f17b26dcf83cb6431d179e5c32e23aeed4c1345cb09df645eeb0e6f44eca83e0550016b9f437437e2c4e26a976daf2c86e3463683c4433cafe51c232c5e5341969725a090aa5353ad657fd683395b7aaf45edc7f29b2b78d762fc587fbc0f045ec6e2fb89164b4d4622e510fb253f3eb&a=w%3D754%26h%3D399%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A14%3A59.096Z" %}
+选择管理按钮
+{% endembed %}
 
 将提示您输入主密码以继续。
 
@@ -50,12 +60,10 @@ FIDO2 WebAuthn 不能在所有 Bitwarden 应用程序上使用。您应该额外
 6、将安全钥匙插入设备的 USB 端口，然后选择**读取钥匙**。如果安全钥匙具有按钮，请触摸它。
 
 {% hint style="info" %}
-Windows Hello 本身就是一个 FIDO2 身份验证器。如果您使用的是 **Windows Hello** 但想要注册一个钥匙或其他设备，您可能需要在以下屏幕上选择**取消**来关闭本机 Windows Hello 提示：
+某些设备（包括支持密钥的 Windows Hello 或 macOS 设备）是原生 FIDO2 身份验证器，它们将默认提供这些选项。如果您想注册安全钥匙或其他验证器，您可能需要选择**尝试另一种方式**、**其他选项**或**取消**按钮以打开其他选项。
 {% endhint %}
 
-{% embed url="https://bitwarden.com/help/images/two-step/windowshello.png" %}
-
-5、选择**保存**按钮。绿色的`已启用`消息表明已成功启用了 FIDO2 WebAuthn 方式的两步登录，并且您的钥匙旁将显示绿色的勾号 **✔️**。
+5、选择**保存**按钮。一个绿色的 `已启用` 消息表明已成功启用了 FIDO2 WebAuthn 方式的两步登录，并且您的钥匙旁将显示绿色的勾号 **✔️**。
 
 6、选择**关闭**按钮，并确认 **FIDO2 WebAuthn** 选项现在已启用（通过一个绿色的勾号 **✔️** 指示）。
 
