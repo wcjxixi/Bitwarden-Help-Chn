@@ -71,7 +71,7 @@ Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻�
 
 ![创建一个 Bitwarden 账户](https://github.com/bitwarden/help/raw/master/images/security-white-paper/create-account.png)
 
-如果你试图使用弱密码注册，Bitwarden 会提醒你选择的主密码是弱密码。
+如果您试图使用弱密码注册，Bitwarden 会提醒你选择的主密码是弱密码。当您创建 Bitwarden 账户时，您还可以选择使用 HIBP 检查主密码的已知数据泄露。
 
 ![弱主密码警告](https://github.com/bitwarden/help/raw/master/images/security-white-paper/weak-master-password-warning.png)
 
@@ -99,6 +99,10 @@ Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻�
 
 提交「创建账户」表单后，Bitwarden 使用具有 100,000 次迭代的基于密码的密钥派生函数 2（PBKDF2）来扩展具有盐化的用户电子邮件地址的用户主密码。最终的盐化值是 256 位主密钥。使用基于 HMAC 的提取和扩展密钥派生函数（HKDF），还可以将主密钥的长度扩展为 512 位长度。主密钥和扩展主密钥永远不会存储到 Bitwarden 服务器或传输到 Bitwarden 服务器。
 
+{% hint style="info" %}
+在 2023.2.0 版本中，Bitwarden 添加了 Argon2id 作为 PBKDF2 的备用选项。[了解更多](kdf-algorithms.md)。
+{% endhint %}
+
 ![基于密码的密钥派生](https://github.com/bitwarden/help/raw/master/images/security-white-paper/password-based-key-deviation.png)
 
 此外，使用加密安全伪随机数生成器（CSPRNG）生成 512 位对称密钥和初始化向量。使用扩展的主密钥和初始化向量，用 AES-256 位加密对对称密钥进行加密。得到的密钥称为受保护的对称密钥。受保护的对称密钥是与用户相关联的主密钥，在账户创建时被发送到服务器，并在同步时返回到 Bitwarden 客户端应用程序。
@@ -118,6 +122,10 @@ Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻�
 您需要先输入您的电子邮件地址和主密码才能登录您的 Bitwarden 账户。
 
 接下来，Bitwarden 使用具有默认为 100,000 次迭代的基于密码的密钥衍生函数 2（PBKDF2）来扩展具有盐化的用户电子邮件地址的主密码。所得的盐化值就是 256 位的主密钥。主密钥的哈希值会在账户创建和登录时发送到服务器，并用于验证用户账户。
+
+{% hint style="info" %}
+在 2023.2.0 版本中，Bitwarden 添加了 Argon2id 作为 PBKDF2 的备用选项。[了解更多](kdf-algorithms.md)。
+{% endhint %}
 
 主密钥还可以使用基于 HMAC 的提取和扩展密钥派生函数（HKDF）扩展到 512 位长度。受保护的对称密钥使用扩展的主密钥进行解密。对称密钥用于解密密码库项目。解密工作完全在 Bitwarden 客户端上完成，因为您的主密码或扩展主密钥绝不会存储到 Bitwarden 服务器，也不会传输到 Bitwarden 服务器。
 
@@ -180,7 +188,15 @@ Bitwarden 还实现了 HTTP 安全头文件，如 HTTP 严格传输安全（HSTS
 
 AES 是密码学的一个标准，被美国政府和世界各地的其他政府机构用于保护绝密数据。只要实施得当，加上强大的加密密钥（您的主密码），AES 被认为是不可破解的。
 
-PBKDF-SHA256 用于从您的主密码派生加密密钥。然后，这个密钥会经过盐化和哈希处理，以便与 Bitwarden 服务器进行验证。PBKDF2 默认使用的迭代次数是在客户端的 100,001 次（此迭代次数可以从你的账户设置中配置），然后当存储在我们的服务器上时，会有额外的 100,000 次迭代（默认情况下总共为  200,001 次）。
+PBKDF-SHA256 用于从您的主密码派生加密密钥。然后，这个密钥会经过盐化和哈希处理，以便与 Bitwarden 服务器进行验证。PBKDF2 默认使用的迭代次数是在客户端的 600,001 次（此迭代次数可以从你的账户设置中配置），然后当存储在我们的服务器上时，会有额外的 100,000 次迭代（默认情况下总共为  700,001 次）。
+
+{% hint style="info" %}
+在 2023.2.0 版本中，Bitwarden 添加了 Argon2id 作为 PBKDF2 的备用选项。[了解更多](kdf-algorithms.md)。
+{% endhint %}
+
+一些加密数据，包括用户的受保护对称密钥和主密码哈希，也由应用程序以透明方式静态加密，这意味着它们在流入和流出 Bitwarden 数据库时将被再次加密和解密。
+
+Bitwarden 还使用 Azure 透明数据加密 (TDE) 通过对数据库、关联备份和静态事务日志文件执行实时加密和解密来防止恶意离线活动的威胁。
 
 了解更多信息：[端到端加密如何为零知识铺平道路](https://bitwarden.com/blog/post/end-to-end-encryption-and-zero-knowledge/)和[使用哪些加密技术](https://bitwarden.com/help/article/what-encryption-is-used/)。
 

@@ -26,21 +26,41 @@ Bitwarden 符合欧盟-美国的隐私保护框架。此外，Bitwarden 使用�
 
 ### HIPAA
 
-Bitwarden 符合 HIPAA。
+Bitwarden 符合 HIPAA 标准，并且每年都会接受第三方审计以确保符合 HIPPAA 安全规则。
 
 ## 第三方安全审计 <a href="#third-party-security-audits" id="third-party-security-audits"></a>
+
+Bitwarden 定期与著名的安全公司进行全面的第三方安全审计。这些年度审计包括跨 Bitwarden IP、服务器和 Web 应用程序的源代码评估和渗透测试。
+
+### 2022 安全评估 <a href="#2022-security-assessment" id="2022-security-assessment"></a>
+
+Bitwarden 完成了由安全公司 Cure53 进行的专门的源代码审计和渗透测试。
+
+[阅读此报告](https://assets.ctfassets.net/7rncvj1f8mw7/4eMmA16Zz9MACTHOexlxx0/05f3ed75c04f7d6e086479279d82c733/2022\_Bitwarden\_Security\_Assessment\_Report.pdf)。
 
 ### SOC 2 Type 2 和 SOC 3 <a href="#soc-2-type-2-and-soc-3" id="soc-2-type-2-and-soc-3"></a>
 
 Bitwarden 已经完成了 [SOC Type 2 和 SOC 3 认证](https://bitwarden.com/compliance/#third-party-security-audits)。有关更多信息，请参阅博客文章 [Bitwarden 取得 SOC 2 认证](https://bitwarden.com/blog/post/bitwarden-achieves-soc-2-certification/)。
 
-### 20211 安全评估 <a href="#2021-security-assessment" id="2021-security-assessment"></a>
+### 2022 网络安全评估 <a href="#2022-network-security-assessment" id="2022-network-security-assessment"></a>
 
-Bitwarden 完成了由审计公司 [Insight Risk Consulting](https://www.insightriskconsulting.com/) 进行的全面安全评估和渗透测试。
+Bitwarden 完成了由安全公司 Cure53 进行的网络安全评估和渗透测试。
 
-[阅读此报告](https://bitwarden.com/images/resources/bitwarden-network-security-assessment-report-2021.pdf/)。
+[阅读此报告](https://assets.ctfassets.net/7rncvj1f8mw7/2otFuNRCjJzAoZRsueaN89/cca35829e6dcc09edc246c5de99f6abd/2022\_Bitwarden\_Network\_Security\_Assessment\_Report.pdf)。
 
-### 2020 安全评估 <a href="#2020-security-assessment" id="2020-security-assessment"></a>
+### 2021 网络安全评估 <a href="#2021-network-security-assessment" id="2021-network-security-assessment"></a>
+
+Bitwarden 完成了由审计公司 [Insight Risk Consulting](https://www.insightriskconsulting.com/) 进行的全面的网络安全评估和渗透测试。
+
+[阅读报告](https://bitwarden.com/images/resources/bitwarden-network-security-assessment-report-2021.pdf)。
+
+### 2021 安全评估 <a href="#2021-security-assessment" id="2021-security-assessment"></a>
+
+Bitwarden 完成了由安全公司 Cure53 进行的专门的源代码审计和渗透测试。
+
+[阅读此报告](https://assets.ctfassets.net/7rncvj1f8mw7/4G0yonTshy2ezRo1R7s6Yl/7ba5bdac721b2ad8d14117c1c6a36b37/2021-bitwarden-security-assessment-report.pdf)。
+
+### 2020 网络安全评估 <a href="#2020-network-security-assessment" id="2020-network-security-assessment"></a>
 
 Bitwarden 完成了由审计公司 [Insight Risk Consulting](https://www.insightriskconsulting.com/) 进行的全面安全评估和渗透测试。有关更多信息，请参阅博客文章 [Bitwarden 完成 2020 安全审计](https://bitwarden.com/blog/post/bitwarden-network-security-assessment-2020/)。
 
@@ -48,17 +68,17 @@ Bitwarden 完成了由审计公司 [Insight Risk Consulting](https://www.insight
 
 ### 2018 安全评估 <a href="#2018-security-assessment" id="2018-security-assessment"></a>
 
-Bitwarden 完成了由安全公司 [Cure53](https://cure53.de/) 进行的彻底的安全审核和加密分析。有关更多信息，请参阅博客文章 [Bitwarden 完成第三方安全审计](https://bitwarden.com/blog/post/third-party-security-audit/)。
+Bitwarden 完成了由安全公司 [Cure53](https://cure53.de/) 进行的全面的安全审核和加密分析。有关更多信息，请参阅博客文章 [Bitwarden 完成第三方安全审计](https://bitwarden.com/blog/post/third-party-security-audit/)。
 
 ## 开源代码库 <a href="#open-source-codebase" id="open-source-codebase"></a>
 
 ### GitHub 上的代码库 <a href="#codebase-on-github" id="codebase-on-github"></a>
 
-Bitwarden 专注于开源软件，其完整代码库可在 GitHub.com 上获得。有关更多信息，请访问 [github.com/bitwarden](https://bitwarden.com/help/article/is-bitwarden-audited/github.com/bitwarden)。
+Bitwarden 专注于开源软件，在 github.com 上提供了完整的代码库。在 [github.com/bitwarden](https://github.com/bitwarden) 上查看我们的代码库，或在我们的[开源页面](https://bitwarden.com/open-source/)上了解更多信息。
 
-### Bitwarden 的开源 <a href="#open-source-at-bitwarden" id="open-source-at-bitwarden"></a>
+### 许可 <a href="#licensing" id="licensing"></a>
 
-Bitwarden 是一个开源的密码管理器。有关更多信息，请访问[我们的开源页面](https://bitwarden.com/open-source/)。
+Bitwarden 存储库中的源代码受两个许可证的保护，即 [GNU Affero 通用公共许可证 (AGPL) v3.0](https://github.com/bitwarden/server/blob/master/LICENSE\_AGPL.txt) 和 [Bitwarden License v1.0](https://github.com/bitwarden/server/blob/master/LICENSE\_BITWARDEN.txt)。请参阅这些链接以了解有关每个许可证中包含和允许的内容的更多信息。
 
 ## 云托管 <a href="#cloud-hosting" id="cloud-hosting"></a>
 

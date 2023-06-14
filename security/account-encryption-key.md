@@ -22,7 +22,7 @@
 
 **在使用「陈旧」加密密钥的会话中进行更改将导致数据损坏，使您的数据无法恢复。**
 
-### 重新创建加密导出 <a href="#re-create-any-encrypted-exports" id="re-create-any-encrypted-exports"></a>
+### 重新创建账户的加密导出 <a href="#re-create-any-account-backup-exports" id="re-create-any-account-backup-exports"></a>
 
 如果您使用[加密导出](../import-export/encrypted-exports.md)来存储长期的安全备份，您应该立即使用新的加密密钥重新创建密码库数据的加密导出。
 
@@ -32,20 +32,22 @@
 
 完成以下步骤以轮换您账户的加密密钥：
 
-1、登录到您的[网页密码库](https://vault.bitwarden.com/)。
+1、在您的[网页密码库](https://vault.bitwarden.com/)中，选择配置文件图标然后从下拉列表中选择**账户设置**：
 
-2、从顶部导航栏选择**设置**。
+{% embed url="https://bitwarden.com/_gatsby/image/551bb080111e018406d626c015cebc1a/3c147dfab42b00c5b359562da41d2951/Screen%20Shot%202022-05-13%20at%2010.34.10%20AM.webp?eu=89df52e3eacfa8860f3aa5806c233360e56e5fa3f8573e823d67e3fd4ff9ca8171fb1f0024932bb97a6153d8dbe010bc31932b651ee6d6dfc8ba1af3e337fc5a008453ea6eb3700e022991f8b5fc00143cc11309abdb8c4ce32e78cbfaeaea214e055f35fb3eeed0afea6020f39d7167aea9a16c3b91ed22e14456098c1f6efb60c9d1b7477be88fc516baa0a4af4eb8d6ef560029c4f4322122194c59be2de9a5b25171397d125f619bfb0cc46593b06915302008561c9434788500a503529bbbbfce5fd97879fca8cc2c7185acffc4821bac3475e3d126a9ed4a07104df244&a=w%3D773%26h%3D226%26fm%3Dwebp%26q%3D75&cd=2022-12-09T16%3A24%3A03.707Z" %}
+账户设置
+{% endembed %}
 
-3、在**我的账户**页面，定位到**更改主密码**部分。
+2、从「账户设置」菜单中，选择**安全**页面和**主密码**选项卡。
 
-4、输入您的**当前主密码**并输入和确认**新主密码**。
+3、输入您的**当前主密码**并输入和确认**新主密码**。
 
 {% hint style="success" %}
-如果您不想更改您的主密码而只想轮换您的帐户加密密钥，您可以在**新**字段中输入您当前的主密码以防止其更改。
+如果您不想更改您的主密码而只想轮换您的帐户加密密钥，您可以在**新的**字段中输入您当前的主密码以防止其更改。
 {% endhint %}
 
-5、勾选**同时轮换我的帐户的加密密钥**复选框并接受弹出的对话框。
+4、勾选**同时轮换我的帐户的加密密钥**复选框并接受弹出的对话框。
 
-6、选择**更改主密码**按钮。
+5、选择**更改主密码**按钮。
 
 > \[**译者注**]：更改您的主密码或更改加密密钥设置（KDF）时，均不会主动轮换账户的加密密钥。仅在更改您的主密码时勾选**同时轮换账户的加密密钥**才会更改您账户的加密密钥。

@@ -12,11 +12,52 @@
 我们鼓励您查看我们的[隐私政策](https://bitwarden.com/privacy)页面以了解更多信息。
 {% endhint %}
 
-加密的密码库数据包括但不限于：
+加密的密码库数据包括：
 
-* 文件夹、集合、项目以及附件的名称
-* 所有的登录信息（包括用户名、密码、URI、TOTP 等）
-* 所有的支付卡信息（包括持卡人姓名、卡号、品牌、到期日、安全码等）
-* 所有的身份信息（包括名称、电子邮件、电话号码、许可证号码、护照号码、社会保险号码、地址等）
-* 所有的安全笔记，以及链接到登录、支付卡或身份的备注
-* 所有的自定义字段名称/值组合
+* 对于所有项目：
+  * 项目名称
+  * 备注
+  * 附件
+    * 附件名称
+    * 文件内容
+    * 文件加密密钥
+  * 自定义字段名称和值
+* 对于[登录](https://assets.ctfassets.net/7rncvj1f8mw7/yfr02nYyvD0GmjXzXjAu5/7e1091a1f05638807caa3268e3333038/login1\_\_1\_.json)：
+  * 用户名
+  * 密码
+    * 密码历史记录
+  * URI（即匹配检测字符串）
+  * 身份验证器密钥（即 TOTP 机密）
+* 对于[支付卡](https://assets.ctfassets.net/7rncvj1f8mw7/5HYmBCBzT1qVE4yeqwY1F3/7330978a17d92c36e9765cda6834d8d5/card1.json)：
+  * 持卡人姓名
+  * 号码
+  * 品牌
+  * 到期日期
+  * 安全码
+* 对于[身份](https://assets.ctfassets.net/7rncvj1f8mw7/5ltDUVHgqqx1yfHIzv5e4k/40f8ae52b2c74feeab2d19e02ea87310/id1.json)：
+  * 姓名（头衔/名字/中间名/姓氏）
+  * 用户名
+  * 公司
+  * 社会安全号码、护照号码和驾照号码
+  * 电子邮件和电话
+  * 地址 1、地址 2、地址 3、城市/城镇、州/省、邮政编码、国家/地区
+* 对于 [Send](https://assets.ctfassets.net/7rncvj1f8mw7/5QUNWhFSzC7EIo8CaHjxta/681e78b34a6beba57e0e7e753a3c5ce3/send1.json)：
+  * Send 名称
+  * Send 文本
+  * Send 文件
+  * Send 备注
+  * Send 加密密钥（[了解更多](../bitwarden-send/send-encryption.md)）
+* [文件夹](https://assets.ctfassets.net/7rncvj1f8mw7/6qRBtIOjOOjDryxVo35sQF/d3412d19a841da5ee13b9c73818f6a4c/folders1.json)名称
+* [集合](https://assets.ctfassets.net/7rncvj1f8mw7/3KT79LDVKbIhF5cpNk5tL/5097c78255b6abd435233163085cda58/collection1.json)名称
+
+加密的 [Secrets Manager](../secrets-manager/secrets-manager-overview.md) 数据包括：
+
+* 对于[机密](../secrets-manager/your-secrets/secrets.md)：
+  * 机密名称
+  * 机密值
+  * 机密备注
+* [工程](../secrets-manager/your-secrets/projects.md)名称
+* [服务账户](../secrets-manager/your-secrets/service-accounts.md)名称
+* [访问令牌](../secrets-manager/your-secrets/access-tokens.md)名称（Bitwarden 永远不会存储访问令牌值的）
+
+某些数据，但**绝非密码库或机密数据**，用于向您提供 Bitwarden 服务，这称为管理数据，可被 Bitwarden 访问。[了解更多](administrative-data.md)。

@@ -4,7 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/fingerprint-phrase/)
 {% endhint %}
 
-每个 Bitwarden 用户帐户都有一个与之关联的公共「指纹短语」。您帐户的指纹短语永远不会改变，它由五个以特定顺序出现的随机英语单词组成。**指纹短语示例：**
+{% hint style="success" %}
+您是否希望使用指纹读取器解锁您的密码库？如果是这样，请查看[这篇文章](../your-vault/unlocking-with-biometrics.md)。
+{% endhint %}
+
+每个 Bitwarden 用户账户都有一个与之关联的「指纹短语」。您账户的指纹短语永远不会改变，它由五个以特定顺序出现的随机英语单词组成。例如：
 
 ```
 alligator-transfer-laziness-macaroni-blue
@@ -20,12 +24,12 @@ alligator-transfer-laziness-macaroni-blue
 
 ## 在哪里可以找到我的指纹短语？ <a href="#where-can-i-find-my-fingerprint-phrase" id="where-can-i-find-my-fingerprint-phrase"></a>
 
-您可以在 Bitwarden 应用程序的以下位置找到帐户的指纹短语：
+您可以在 Bitwarden 应用程序的以下位置找到账户的指纹短语：
 
-* **网页密码库**：设置 → 我的帐户
-* **桌面应用程序**：帐户 → 指纹短语
-* **浏览器扩展**：设置 → 帐户 → 指纹短语
-* **移动应用程序**：设置 → 帐户 → 指纹短语
+* **网页密码库**：账户设置 → 我的帐户
+* **桌面应用程序**：账户 → 指纹短语
+* **浏览器扩展**：设置 → 账户 → 指纹短语
+* **移动应用程序**：设置 → 账户 → 指纹短语
 * **CLI**：`bw get fingerprint me`
 
 ## 我需要写下我的指纹短语吗？ <a href="#do-i-need-to-write-down-my-fingerprint-phrase" id="do-i-need-to-write-down-my-fingerprint-phrase"></a>
@@ -35,3 +39,9 @@ alligator-transfer-laziness-macaroni-blue
 {% hint style="success" %}
 另一方面，[恢复代码](../two-step-login/recovery-codes.md)用于两步登录，应**始终**以对您有意义的方式存储在 Bitwarden 之外。在您[丢失了两步登录辅助设备](../two-step-login/lost-secondary-device.md)时，这将确保您不会被锁定在您的帐户之外。
 {% endhint %}
+
+## 我可以更改我的指纹短语吗？ <a href="#can-i-change-my-fingerprint-phrase" id="can-i-change-my-fingerprint-phrase"></a>
+
+虽然您无法更改当前账户的指纹短语，但您可以删除该账户然后开始一个新账户以生成新的短语。
+
+我们的指纹短语是从 [Electronic Frontier Foundation 的长单词列表](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases)中生成的，该列表已经过「人工检查，\[EFF] 试图尽可能多地删除亵渎、侮辱、敏感或情绪化的单词」。
