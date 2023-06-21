@@ -8,7 +8,7 @@
 Bitwarden 在 Apple Watch 上添加了对 Bitwarden 的官方支持。之前通过 TestFlight 在 Apple Watch 上注册使用 Bitwarden 的用户现在可以切换到受支持的应用程序。
 {% endhint %}
 
-我们的 Bitwarden [身份验证器功能](../your-vault/totp.md)现在可以在 Apple Watch 上使用。Bitwarden 高级会员或付费组织的成员现在将有一个额外的选项来访问基于时间的一次性密码 (TOTP) 代码。Apple Watch Bitwarden 将显示存储有种子的密码库项目的 TOTP 代码，以便在登录受 TOTP 保护的帐户时更容易访问。
+我们的 Bitwarden [身份验证器功能](../your-vault/totp.md)现在可以在 Apple Watch 上使用。Bitwarden 高级会员或付费组织的成员现在将有一个额外的选项来访问基于时间的一次性密码 (TOTP) 代码。Apple Watch Bitwarden 将显示存储有种子的密码库项目的 TOTP 代码，以便在登录受 TOTP 保护的账户时更容易访问。
 
 {% hint style="info" %}
 TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企业）成员资格。
@@ -18,7 +18,7 @@ TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企
 
 1、您的 iOS 移动设备上安装了 Bitwarden 应用程序。
 
-2、检查你的 Apple Watch，Bitwarden 应该会自动安装在你的手表上。如果您没有在您的 Apple Watch上看到 Bitwarden ，您可以在 Apple Watch 上手动安装 Bitwarden。
+2、检查你的 Apple Watch，Bitwarden 应该会自动安装在你的手表上。如果没有在您的 Apple Watch上看到 Bitwarden ，请在 Apple Watch 上手动安装 Bitwarden。
 
 <div align="left">
 
@@ -26,9 +26,9 @@ TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企
 
 </div>
 
-3、在 iPhone 移动应用程序上访问您的 Bitwarden 帐户，然后选择 **⚙️设置**选项卡。
+3、在 iPhone 移动应用程序上访问您的 Bitwarden 账户，然后选择 **⚙️设置**选项卡。
 
-4、向下滚动到**帐户**部分，然后选择**连接 Apple Watch**。选择后，在弹出窗口中确认设置已**打开**。
+4、向下滚动到**账户**部分，然后选择**连接 Apple Watch**。选择后，在弹出窗口中确认设置已**打开**。
 
 <div align="left">
 
@@ -38,7 +38,7 @@ TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企
 
 5、启动后，手表将开始与 Bitwarden 同步。
 
-当您注销帐户或切换到其他帐户时，Apple Watch 将擦除当前数据。在您的 iOS 移动设备上重新登录 Bitwarden 帐户时，将再次进行同步。
+当您注销账户或切换到其他账户时，Apple Watch 将擦除当前数据。在您的 iOS 移动设备上重新登录 Bitwarden 账户时，将再次进行同步。
 
 {% hint style="info" %}
 在移动应用程序中关闭 Bitwarden Apple Watch 连接将删除 Apple Watch 上的 Bitwarden 应用程序的所有数据并禁用与其的通信。
@@ -66,7 +66,7 @@ TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企
 
 </div>
 
-3、密码库将与您 iOS 移动设备上的活动 Bitwarden 帐户同步。可以在密码库页面的顶部看到当前的帐户。
+3、密码库将与您 iOS 移动设备上的活动 Bitwarden 账户同步。可以在密码库页面的顶部看到当前的账户。
 
 <div align="left">
 
@@ -84,7 +84,7 @@ TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企
 
 ## Apple Watch 上的 Bitwarden 的安全性 <a href="#bitwarden-on-the-apple-watch-security" id="bitwarden-on-the-apple-watch-security"></a>
 
-Bitwarden 的零知识加密与 Apple 的 WatchConnectivity 和 Secure Enclave 一起工作，将保留 iPhone 和 Apple Watch 之间的零知识和安全通信。可以采取几个步骤来提高您的帐户和设备的安全性：
+Bitwarden 的零知识加密与 Apple 的 WatchConnectivity 和 Secure Enclave 一起工作，将保留 iPhone 和 Apple Watch 之间的零知识和安全通信。可以采取几个步骤来提高您的账户和设备的安全性：
 
 * 设置安全密码以防止在 Apple Watch 上对 Bitwarden 进行不必要的访问。只有 Apple Watch 解锁后，才可以查看设备上的信息。
 * 在 Apple Watch 上启用手腕检测，以便设备从用户手腕上取下后自动锁定。

@@ -50,7 +50,7 @@ Bitwarden 可以被配置为接受生物识别的的方式来解锁您的密码�
 
 生物识别解锁支持 Windows 上的 [Windows Hello](https://support.microsoft.com/zh-cn/help/4028017/windows-learn-about-windows-hello-and-set-it-up) PIN、面部识别或[其他符合 Windows Hello 生物识别要求的硬件](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)，以及 macOS 上的[触控 ID](https://support.apple.com/zh-cn/HT207054)。
 
-生物识别解锁是为登录到桌面应用程序的每一个帐户单独设置的。要启用生物识别解锁：
+生物识别解锁是为登录到桌面应用程序的每一个账户单独设置的。要启用生物识别解锁：
 
 1、在设备的原生设置（例如 macOS **⚙️系统首选项**应用程序）中，确保您的生物识别方式已打开。
 

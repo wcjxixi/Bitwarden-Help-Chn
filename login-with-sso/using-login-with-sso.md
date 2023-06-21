@@ -7,7 +7,7 @@
 作为 Bitwarden 的最终用户，在您[使用 SSO 登录](using-login-with-sso.md#login-using-sso)之前，您需要获取组织 [SSO 标识符](using-login-with-sso.md#get-your-organization-identifier)：
 
 {% hint style="success" %}
-根据您组织的设置方式，您可能还需要[将您的账户链接到 SSO](using-login-with-sso.md#link-your-account)。如果您**已经拥有作为组织成员的 Bitwarden 帐户**，或者**您的组织不要求您使用 SSO**，则通常需要这样做。
+根据您组织的设置方式，您可能还需要[将您的账户链接到 SSO](using-login-with-sso.md#link-your-account)。如果您**已经拥有作为组织成员的 Bitwarden 账户**，或者**您的组织不要求您使用 SSO**，则通常需要这样做。
 {% endhint %}
 
 ## 获取组织标识符 <a href="#get-your-organization-identifier" id="get-your-organization-identifier"></a>
@@ -80,7 +80,7 @@
 
 要使用 SSO 和您的主密码登录：
 
-1、打开您的 Bitwarden 网页密码库，然后输入您的 Bitwarden 电子邮件并选择**继续**。如果您还没有 Bitwarden 帐户电子邮件，您可以输入您的公司电子邮件。
+1、打开您的 Bitwarden 网页密码库，然后输入您的 Bitwarden 电子邮件并选择**继续**。如果您还没有 Bitwarden 账户电子邮件，您可以输入您的公司电子邮件。
 
 {% embed url="https://bitwarden.com/_gatsby/image/2cabcf38f4a4b36d40891d1876e39315/0c3e98384836d57b216b7aaf24bdd37a/Screen%20Shot%202022-11-17%20at%2010.56.00%20AM%20(2).webp?eu=dddd58e3eac8a9d55e6da88439753560b23f01abaf5133823a32e3fb4dfc988726f54f5126922eb7786008dbd5b143bb65927d641fe9d7d3c1bd4ef4ef3cab5a52845cbf63b2780f552b95fce6f3011361cf4e50abdb8c4ce32e78cbfaeaea214e055f35fb3eeed0afea6020f39d7167aea9a16c3b91ed22e14456098c1f6eff0cdbe4a2541799bceb6eeb8297f208979a925c6f01c4f73170761e1d0aeb2ae8a0b601756f7c415b619ba95acf61c3b23d156071595a1c9434788500a503529bbbbfce5fd97879fca9c82c7181acffc4821bac3473e1d127a9ed4a076162ae7cb3fc25a0&a=w%3D386%26h%3D231%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.775Z" %}
 电子邮件地址
@@ -102,7 +102,7 @@ SSO 标识符
 我们建议将此页面添加为书签，并将您的组织标识符作为查询字符串包含在内，这样您就不必每次都输入它了，比如： `https://vault.bitwarden.com/#/sso?identifier=YOUR-ORG-ID` 或 `https://your.domain.com/#/sso?identifier=YOUR-ORG-ID`。
 {% endhint %}
 
-4、现在您已经使用 SSO 登录验证了您的身份，系统将提示您为新帐户**创建**[主密码](../your-vault/your-master-password.md)，或者如果您已经拥有 Bitwarden 账户，输入您的主密码以解密您的密码库。
+4、现在您已经使用 SSO 登录验证了您的身份，系统将提示您为新账户**创建**[主密码](../your-vault/your-master-password.md)，或者如果您已经拥有 Bitwarden 账户，输入您的主密码以解密您的密码库。
 
 {% hint style="info" %}
 **为什么仍然需要我的主密码？**

@@ -14,7 +14,7 @@
 {% tab title="个人用户" %}
 ### 获取 Duo 密钥 <a href="#retrieve-duo-keys" id="retrieve-duo-keys"></a>
 
-您需要一个 Duo 帐户才能获取 Bitwarden 所需的一些信息以完成设置。[免费注册](https://signup.duo.com/)，或登录到现有的 [Duo Admin Panel](https://admin.duosecurity.com/login)。要配置 Duo：
+您需要一个 Duo 账户户才能获取 Bitwarden 所需的一些信息以完成设置。[免费注册](https://signup.duo.com/)，或登录到现有的 [Duo Admin Panel](https://admin.duosecurity.com/login)。要配置 Duo：
 
 1. 在左侧菜单中，导航至 **Applications**。
 2. 选择 **Protect an Application** 按钮。

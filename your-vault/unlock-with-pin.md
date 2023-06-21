@@ -9,7 +9,7 @@ Bitwarden 可以配置为接受个人识别码（PIN）的方式解锁您的密�
 PIN 码**只能用于解锁**您的密码库，**登录**时您仍然会被要求使用您的主密码和任何已启用的[两步登录方式](../two-step-login/two-step-login-methods.md)。如果不确定两者之间的区别，请向下滚动至[理解解锁与登录](unlock-with-pin.md#understanding-unlock-vs-log-in)。
 
 {% hint style="info" %}
-在 5 次 PIN 尝试失败后，Bitwarden 应用程序将自动注销您的帐户。
+在 5 次 PIN 尝试失败后，Bitwarden 应用程序将自动注销您的账户。
 {% endhint %}
 
 ## 启用 PIN 码解锁 <a href="#enable-unlock-with-pin" id="enable-unlock-with-pin"></a>
@@ -58,7 +58,7 @@ PIN 码**只能用于解锁**您的密码库，**登录**时您仍然会被要�
 {% endtab %}
 
 {% tab title="桌面端" %}
-使用 PIN 码解锁是为登录到桌面应用程序的每一个帐户单独设置的。要启用使用 PIN 码解锁：
+使用 PIN 码解锁是为登录到桌面应用程序的每一个账户单独设置的。要启用使用 PIN 码解锁：
 
 1、打开您的**设置**（WIndows 上为**文件 → 设置**，macOS 上为 **Bitwarden → 偏好设置**）。
 

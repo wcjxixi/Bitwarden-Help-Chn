@@ -56,8 +56,8 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 
 * **域名验证**：组织可以验证域名（例如 `mycompany.com`）的所有权，允许用户在使用 SSO 登录时跳过组织标识符步骤。参阅[这里](admin-console/login-with-sso/domain-verification.md)。
 * **浏览器扩展 - 改进的自动填充安全性**：浏览器扩展现在不允许在页面加载时自动填充不受信任的 iframe。浏览器扩展还会在手动自动填充、使用上下文菜单或使用键盘快捷键时警告用户有关不受信任的 iframe，并在自动填充 HTTP 站点时警告用户，该站点需要基于该项目的已保存 URI 的 HTTPS。参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
-* **主密码安全性检查**：用户现在可以在创建帐户或在 Web 密码库上更改主密码时通过 Have I Been Pwned 检查已知的数据泄露，以查找他们预期的主密码。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
-* **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 帐户和[更改主密码](your-vault/your-master-password.md#change-your-master-password)的任何用户强制执行。
+* **主密码安全性检查**：用户现在可以在创建账户或在 Web 密码库上更改主密码时通过 Have I Been Pwned 检查已知的数据泄露，以查找他们预期的主密码。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
+* **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 账户和[更改主密码](your-vault/your-master-password.md#change-your-master-password)的任何用户强制执行。
 * **激活自动填充策略**：对于企业组织，激活自动填充策略将自动为组织的新成员和现有成员打开页面加载时的自动填充。参阅[这里](organizations/enterprise-policies.md#activate-auto-fill)。
 * **浏览器扩展 - 改进的通知栏**：用于将未检测到的项目添加到您的密码库的通知栏现在为遵守删除单个密码库策略的用户提供了更直观的工作流程。参阅[这里](getting-started/getting-started-browserext.md#auto-save-a-login)。
 * **iOS - 选择 Bitwarden 获取验证码**：iOS 16+ 用户现在可以将 Bitwarden 设置为直接从相机应用程序扫描代码时用于存储验证码的默认应用程序。参阅[这里](your-vault/totp.md#bitwarden-authenticator-on-ios)。
@@ -77,13 +77,13 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 在此版本中，我们已迁移到新的 [SQL 客户端](https://devblogs.microsoft.com/dotnet/introducing-the-new-microsoftdatasqlclient/)，该客户端需要一个有效的证书或在 `global.override.env` 中设置的[连接字符串](self-hosting/configure-environment-variables.md#included-variables)中存在 `TrustServerCertificate=True`。请在更新您的服务器之前检查这些。
 {% endhint %}
 
-* **Argon2**：您现在可以从**帐户设置** → **安全** → **密钥**页面将用于派生帐户主密钥的算法更改为 Argon2id。参阅[这里](security/kdf-algorithms.md)。
+* **Argon2**：您现在可以从**账户设置** → **安全** → **密钥**页面将用于派生账户主密钥的算法更改为 Argon2id。参阅[这里](security/kdf-algorithms.md)。
 
 {% hint style="info" %}
 **2023-02-14**：2023.2.0 及以后版本的 Bitwarden 客户端支持 Argon2，通过网页密码库切换到 Argon2 可能意味着其他客户端在更新之前无法加载您的密码库。通常在发布后一周内更新这些客户端。
 {% endhint %}
 
-* **增加了 PBKDF2 的默认 KDF 迭代**：按照 [OWASP](https://zh.wikipedia.org/zh-cn/OWASP) 的建议，新的 Bitwarden 帐户将为 PBKDF2 使用 600,000 次 KDF 迭代。现有的帐户可以手动增加此数值。参阅[这里](security/encryption.md#changing-kdf-iterations)。
+* **增加了 PBKDF2 的默认 KDF 迭代**：按照 [OWASP](https://zh.wikipedia.org/zh-cn/OWASP) 的建议，新的 Bitwarden 账户将为 PBKDF2 使用 600,000 次 KDF 迭代。现有的账户可以手动增加此数值。参阅[这里](security/encryption.md#changing-kdf-iterations)。
 * **主密码安全检查**：在移动应用程序、浏览器扩展和桌面应用程序上创建账户的新用户现在可以通过 HIBP 检查已知的数据泄露，以了解他们的潜在主密码。这将在以后的版本中被带到网页密码库。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
 * **组织密码库更新**：作为改进网页密码库 UI 的持续努力的一部分，一些组织管理功能进行了重新设计，例如用于项目和集合管理的合并**密码库**视图，以及专用的**成员**和**群组**视图。
 * **在其他客户端上使用设备登录**：现在可以在其他客户端上使用设备登录。登录请求现在也可以从浏览器扩展、桌面应用程序和移动应用程序发起，现在也可以从桌面应用程序获得批准。参阅[这里](your-vault/log-in-with-device.md)。
@@ -96,11 +96,11 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 
 此次发布包含：
 
-* **Apple Watch 上的 Bitwarden**：Bitwarden 添加了 Apple Watch 支持，以提供访问 TOTP 登录代码的附加选项。参阅这里。
+* **Apple Watch 上的 Bitwarden**：Bitwarden 添加了 Apple Watch 支持，以提供访问 TOTP 登录代码的附加选项。参阅[这里](miscellaneous/apple-watch-totp.md)。
 * **新的环境变量**：一个用于为所有者和管理员强制执行要求 SSO 身份验证策略的环境变量现在可用于自托管服务器。参阅[这里](self-hosting/configure-environment-variables.md#optional-variables)。
 * **Bitwarden unified - 支持自定义数据库端口**：统一部署现在支持使用新的环境变量在自定义端口上运行数据库。参阅[这里](self-hosting/install-and-deploy-guides/install-and-deploy-unified-beta.md#environment-variables)。
 * **Passsky 导入器 (json)**：新的导入选项可用于未加密的 Passsky (json) 导出。参阅[这里](import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
-* **自定义头像颜色**：从 Web 密码库的**帐户设置** → **我的帐户**页面更改您的头像颜色。
+* **自定义头像颜色**：从 Web 密码库的**账户设置** → **我的账户**页面更改您的头像颜色。
 
 ## 2022.12.0
 
@@ -128,19 +128,19 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 
 此次发布包含：
 
-* **组织密码库更新**：作为改进 Web 密码库 UI 的持续努力的一部分，某些组织管理功能已被移动，例如转移到专用的**账单**和**报告**选项卡中。
+* **组织密码库更新**：作为改进 Web 密码库 UI 的持续努力的一部分，某些组织管理功能已被移动，例如转移到专用的**计费**和**报告**选项卡中。
 * **登录流程更新**：为了适应新的登录选项，登录流程已分为两个界面。
 * **SCIM 更新**：SCIM 触发的事件现在将被记录为 `SCIM` 而不是 `Unkown`，并且 SCIM API 密钥现在默认会被混淆。
 * **从 iOS 应用扩展生成用户名和密码**：现在可以从 iOS 应用扩展「即时」生成用户名和密码，在使用浏览器等应用时可从「共享」菜单访问。
 * **用于移动设备的新主题**：流行的 Solarized Dark 主题已引入移动设备。
 * **目录连接器 - 用于 Google Workspace 的群组筛选器查询**：查询参数可被用于 Google Workspace 的群组筛选器中（参阅[这里](directory-connector/sync-with-google-workspace.md#specify-sync-filters)）。
-* **性能优化**：我们改进了 Web 密码库的加载时间和访问具有数千个密码库项目的帐户时的体验。
+* **性能优化**：我们改进了 Web 密码库的加载时间和访问具有数千个密码库项目的账户时的体验。
 
 ## 2022.10.0
 
 此次发布包含：
 
-* **受密码保护的加密导出**：加密的 `.json` 导出现在可以使用您选择的密码进行加密。密码保护的导出可以导入任何 Bitwarden 帐户（参阅[这里](import-export/encrypted-exports.md)）。
+* **受密码保护的加密导出**：加密的 `.json` 导出现在可以使用您选择的密码进行加密。密码保护的导出可以导入任何 Bitwarden 账户（参阅[这里](import-export/encrypted-exports.md)）。
 * **移动端用户名生成器**：用户名生成器现在可用于 Bitwarden 移动端应用程序（参阅[这里](your-vault/username-password-generator.md#generate-a-username)）。
 * **DuckDuckGo 电子邮件别名集成**：将 Bitwarden 用户名生成器连接到 DuckDuckGo，以便轻松创建电子邮件别名（参阅[这里](your-vault/username-password-generator.md#username-types)）。
 * **DuckDuckGo macOS 浏览器集成**：我们与 DuckDuckGo 合作创建了与他们[即将推出的 macOS 浏览器](https://spreadprivacy.com/introducing-duckduckgo-for-mac/)的集成！请继续关注他们何时启动此功能的更多信息。
@@ -176,7 +176,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 
 此次发布包含关键功能和可用性改进，使 Bitwarden 在旅途中更加出色：
 
-* **自动填充期间的帐户切换 (iOS)**：在自动填充期间通过点击头像按钮快速切换到另一个帐户，现在可在 Android 和 iOS 上使用（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)）。
+* **自动填充期间的账户切换 (iOS)**：在自动填充期间通过点击头像按钮快速切换到另一个账户，现在可在 Android 和 iOS 上使用（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)）。
 * **移动端的密码库筛选器**：在移动应用程序上，您现在可以按密码库筛选项目。
 * **组织成员高级状态**：组织成员现在可以在收到邀请后立即使用高级功能，例如高级 2FA 方式，而无需确认。
 * **可访问性改进**：此版本包括一些更改，这些更改将通过辅助技术提高 Bitwarden 的性能，包括具有 [hCaptcha 无障碍访问](https://dashboard.hcaptcha.com/signup?type=accessibility)的用户能够使用其无障碍 Cookie 跳过 hCaptcha 挑战（现在可用于桌面和移动应用程序）。
@@ -196,7 +196,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 * **用户名生成器 - 转发的电子邮件别名类型**：将用户名生成器与 SimpleLogin、AnonAddy 或 Firefox Relay 集成，以自动同时创建用户名和相应的电子邮件别名（参阅[这里](your-vault/username-password-generator.md#username-types)）。
 * **项目链接**：复制一个项目的 URL 时，将作为直接链接提供给组织成员或在文档中使用（参阅[这里](organizations/link-to-an-item.md)）。
 * **自动填写期间的账户切换**：在安卓系统中，通过点击头像气泡，以在自动填写过程中快速切换到另一个账户（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md#auto-fill-while-account-switching)）。
-* **客户组织计费的变化**：从这个发布版本开始，只有[提供商](provider-portal/get-started-with-provider-portal.md)用户可以查看[客户组织](provider-portal/get-started-with-provider-portal.md#client-organizations)的账单信息。
+* **客户组织计费的变化**：从这个发布版本开始，只有[提供商](provider-portal/get-started-with-provider-portal.md)用户可以查看[客户组织](provider-portal/get-started-with-provider-portal.md#client-organizations)的计费信息。
 
 ## 2022-04-26 <a href="#2022-04-26" id="2022-04-26"></a>
 
@@ -228,7 +228,7 @@ _浏览器扩展 1.57.0，移动端 2.17.0_
 
 继上周的发布之后，针对移动应用程序和浏览器扩展发布了以下内容：
 
-* **移动端添加帐户切换功能**：在 Android 和 iOS 上使用 Bitwarden 时，最多可登录 5 个帐户并在它们之间无缝切换（参阅[这里](your-vault/account-switching.md)）。
+* **移动端添加账户切换功能**：在 Android 和 iOS 上使用 Bitwarden 时，最多可登录 5 个账户并在它们之间无缝切换（参阅[这里](your-vault/account-switching.md)）。
 * **支持 Firefox 隐私模式**：此版本包含对 Firefox 隐私窗口更强大的支持（参阅[这里](miscellaneous/use-bitwarden-in-firefoxs-private-mode.md)）。
 
 ## 2022-03-15 <a href="#2021-10-26" id="2021-10-26"></a>
@@ -250,9 +250,9 @@ _服务器 1.46.0、Web 2.26.0，桌面端 1.31.0，浏览器扩展 1.56.0，移
 
 2022 年初始，Bitwarden 很高兴地发布以下内容：
 
-* **桌面端帐户切换**：在 Bitwarden 桌面应用程序中一次性登录最多 5 个帐户。此功能在 Bitwarden 应用程序中分阶段推出，很快将适用于更多其他应用程序（参阅[这里](your-vault/account-switching.md)）。
+* **桌面端账户切换**：在 Bitwarden 桌面应用程序中一次性登录最多 5 个账户。此功能在 Bitwarden 应用程序中分阶段推出，很快将适用于更多其他应用程序（参阅[这里](your-vault/account-switching.md)）。
 * **iOS 上的 Send**：现在可以直接从 iOS 的共享菜单分享 Bitwarden Send（参阅[这里](bitwarden-send/create-a-send.md)）。
-* **从移动端删除帐户**：您现在可以从移动应用程序中删除您的 Bitwarden 帐户，但您为什么要这样做（参阅[这里](plans-and-pricing/delete-an-account-or-organization.md)）？
+* **从移动端删除账户**：您现在可以从移动应用程序中删除您的 Bitwarden 账户，但您为什么要这样做（参阅[这里](plans-and-pricing/delete-an-account-or-organization.md)）？
 * **新的图标**：我们使用全新的图标更新了所有 Bitwarden 应用程序的外观。尽情欣赏！
 * **目录连接器 - Azure AD 同步性能**：针对 Azure Active Directory 的目录连接器同步，性能已得到提升。与 Azure AD 同步的组织_将不再_需要更改其同步配置。
 * **后端改进**：我们一直在努力改进 Bitwarden 平台的总体性能和稳定性，这将在未来推出一些很棒的新功能。

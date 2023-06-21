@@ -7,7 +7,7 @@
 密码库超时决定了您的密码库在指定的不活动时间段后的行为方式。从**设置**中为每一种 Bitwarden 客户端程序单独配置超时选项。可以从各个 Bitwarden 应用程序的**设置**菜单中配置密码库超时。在配置密码库超时设置时，您可以同时设置[超时时间](vault-timeout-options.md#vault-timeout)和[超时行为](vault-timeout-options.md#vault-timeout-action)：
 
 {% hint style="success" %}
-如果您在 Bitwarden 桌面应用程序中登录了多个帐户，超时时间和超时行为需根据每个帐户分别设置。[了解更多](account-switching.md)。
+如果您在 Bitwarden 桌面应用程序中登录了多个账户，超时时间和超时行为需根据每个账户分别设置。[了解更多](account-switching.md)。
 {% endhint %}
 
 ## 密码库超时时间 <a href="#vault-timeout" id="vault-timeout"></a>
