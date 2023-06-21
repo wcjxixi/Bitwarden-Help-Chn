@@ -24,10 +24,10 @@ Bitwarden 为您的密码库使用 [AES-CBC](encryption.md#aes-cbc) 256 位加�
 
 [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) SHA-256 用于从您的主密码派生出加密密钥，您也可以选择 [Argon2](encryption.md#argon2id) 作为替代方案。Bitwarden 使用您的电子邮件地址将您的主密码在**本地**进行[盐化和哈希](https://www.okta.com/blog/2019/03/what-are-salted-passwords-and-password-hashing/)处理，然后再传输到我们的服务器。Bitwarden 服务器收到哈希的密码后，会使用一个加密安全的随机值再次对其进行盐化，并再次对其哈希，然后存储在我们的数据库中。
 
-PBKDF2 使用的默认迭代数是客户端上的 600,001 次迭代（可从您的帐户设置中配置客户端迭代数），当存储到我们的服务器上时会再进行 100,000 次迭代（默认情况下总计为 700,001 次迭代）。组织密钥使用 [RSA-2048](https://en.wikipedia.org/wiki/RSA\_numbers#RSA-2048) 共享。
+PBKDF2 使用的默认迭代数是客户端上的 600,001 次迭代（可从您的账户设置中配置客户端迭代数），当存储到我们的服务器上时会再进行 100,000 次迭代（默认情况下总计为 700,001 次迭代）。组织密钥使用 [RSA-2048](https://en.wikipedia.org/wiki/RSA\_numbers#RSA-2048) 共享。
 
 {% hint style="success" %}
-Bitwarden 使用的默认迭代数在 2023 年 2 月增加。在此之后创建的帐户将使用 600,00，但是如果您在此之前创建了帐户，则应增加迭代次数。可以在以下部分中找到这样做的说明。
+Bitwarden 使用的默认迭代数在 2023 年 2 月增加。在此之后创建的账户将使用 600,00，但是如果您在此之前创建了账户，则应增加迭代次数。可以在以下部分中找到这样做的说明。
 {% endhint %}
 
 所使用的哈希函数是单向哈希，这意味着 Bitwarden 的任何人都**无法对其逆向工程**，从而泄露您的主密码。即使 Bitwarden 被黑客攻击，也无任何办法获取您的主密码。

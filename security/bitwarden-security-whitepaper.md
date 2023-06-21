@@ -111,7 +111,7 @@ Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻�
 
 更多细节请参考[在用户之间共享数据](bitwarden-security-whitepaper.md#sharing-data-between-users)。下面的图表显示了创建 Bitwarden 用户账户时生成的各种密钥。
 
-![注册新的 Bitwarden 帐户时创建的各种密钥的概述](https://github.com/bitwarden/help/raw/master/images/security-white-paper/overview-of-keys-generated.png)
+![注册新的 Bitwarden 账户时创建的各种密钥的概述](https://github.com/bitwarden/help/raw/master/images/security-white-paper/overview-of-keys-generated.png)
 
 主密码哈希值也是使用带主密钥有效载荷和主密码盐化的 PBKDF-SHA256 生成。主密码哈希值在账户创建和登录时被发送到服务器，用于验证用户账户。到达服务器后，将使用随机盐化的 PBKDF2-SHA256 和 100,000 次迭代再次对主密码哈希值进行哈希。密码哈希、密钥派生和加密过程的概述如下图所示：
 
@@ -137,7 +137,7 @@ Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻�
 
 两步登录（也称为双因素验证或 2FA）是您账户的额外安全层，旨在确保您是**唯一**可以访问您的账户的人，即使有人得到了您的主密码。
 
-作为最佳实践，我们建议所有用户在其 Bitwarden 帐户中激活并使用两步登录。激活两步登录后，您需要在登录 Bitwarden 时完成第二步（除了您的主密码）。默认情况下，每次都会提示您完成第二步，但是会出现一个「记住我」提示，该提示将保存您的 2FA 状态，因此您下次无需使用 2FA 即可在该特定设备上登录最多长达 30 天。
+作为最佳实践，我们建议所有用户在其 Bitwarden 账户中激活并使用两步登录。激活两步登录后，您需要在登录 Bitwarden 时完成第二步（除了您的主密码）。默认情况下，每次都会提示您完成第二步，但是会出现一个「记住我」提示，该提示将保存您的 2FA 状态，因此您下次无需使用 2FA 即可在该特定设备上登录最多长达 30 天。
 
 注意：更改你的主密码或取消会话授权都需要重新验证 2FA，无论你之前是否勾选了「记住我」。
 
@@ -168,10 +168,10 @@ Bitwarden 支持如下方式的两步登录：
 
 #### 轮换账户的加密密钥 <a href="#rotating-your-accounts-encryption-key" id="rotating-your-accounts-encryption-key"></a>
 
-在进行密码更改操作期间，您还可以选择轮换（更改）帐户的加密密钥。如果您认为以前的主密码已被盗用，或者您的 Bitwarden 密码库的数据已从其中一台设备上被窃取，则轮换加密密钥是一个好主意。
+在进行密码更改操作期间，您还可以选择轮换（更改）账户的加密密钥。如果您认为以前的主密码已被盗用，或者您的 Bitwarden 密码库的数据已从其中一台设备上被窃取，则轮换加密密钥是一个好主意。
 
 {% hint style="danger" %}
-轮换帐户的加密密钥是一项敏感操作，因此这不是默认选项。密钥轮换会为您的帐户生成一个新的随机加密密钥，并使用此新密钥**重新加密所有密码库数据**。请参阅[此 Bitwarden 帮助文章](../your-vault/your-master-password.md)了解更多详情。
+轮换账户的加密密钥是一项敏感操作，因此这不是默认选项。密钥轮换会为您的账户生成一个新的随机加密密钥，并使用此新密钥**重新加密所有密码库数据**。请参阅[此 Bitwarden 帮助文章](../your-vault/your-master-password.md)了解更多详情。
 {% endhint %}
 
 #### 中转过程中的数据保护 <a href="#data-protection-in-transit" id="data-protection-in-transit"></a>
@@ -271,7 +271,7 @@ Bitwarden 帮助中心的[用户类型和访问控制](../admin-console/user-man
 
 如今，对于基本、高级、家庭和团队计划，Bitwarden 提供的具有安全模式的账户保护不支持用户丢失密码或丢失两步登录恢复代码。
 
-如果你的账户已经启用了两步登录，Bitwarden 不能重置用户密码，也不能禁用两步登录。家庭和团队帐户的所有者或管理员无法重置用户密码。有关企业计划的详细信息，请参阅下一章节。
+如果你的账户已经启用了两步登录，Bitwarden 不能重置用户密码，也不能禁用两步登录。家庭和团队账户的所有者或管理员无法重置用户密码。有关企业计划的详细信息，请参阅下一章节。
 
 {% hint style="warning" %}
 对于丢失了主密码或者丢失了两步登录恢复代码的用户，需要删除他们的账户然后重新开始。

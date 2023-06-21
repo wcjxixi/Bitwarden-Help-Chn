@@ -1,4 +1,4 @@
-# 机密管理器概述
+# Secrets Manager 概述
 
 {% hint style="info" %}
 对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-overview/)
@@ -16,8 +16,8 @@ Secrets Manager 使用的核心范例是以下关系：
 
 * [**机密**](your-secrets/secrets.md)：敏感的键值对，如 API 密钥，您的组织需要安全地存储它们，并且永远不应以明码形式公开或通过未加密的渠道传输。
 * [**工程**](your-secrets/projects.md)：按逻辑组合在一起的机密集合，供您的 DevOps 和网络安全团队进行可管理的访问。
-* [**服务帐户**](your-secrets/service-accounts.md)：非人类机器用户，如应用程序或部署管道，需要对一组谨慎的机密进行编程式访问。
-* [**访问令牌**](your-secrets/access-tokens.md)：一组密钥，有助于服务帐户访问和解密存储在您的密码库中的机密。
+* [**服务账户**](your-secrets/service-accounts.md)：非人类机器用户，如应用程序或部署管道，需要对一组谨慎的机密进行编程式访问。
+* [**访问令牌**](your-secrets/access-tokens.md)：一组密钥，有助于服务账户访问和解密存储在您的密码库中的机密。
 
 Secrets Manager 旨在保护和管理您在特权开发人员环境中高度敏感的凭据。多向访问层和权限级别将确保只有经过身份验证的机器和具有正确权限的人员才能查看或操作存储在您的密码库中的机密：
 

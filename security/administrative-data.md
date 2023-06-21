@@ -26,7 +26,7 @@
 * 高级订阅状态和续费日期
 * 账单历史
 * 记录的付款方式的最后 4 位数字、卡类型和到期日期
-  * 任何现有的帐户信用额度
+  * 任何现有的账户信用额度
 
 ### 组织信息 <a href="#organization-information" id="organization-information"></a>
 
