@@ -1,4 +1,4 @@
-# 使用您的 Bitwarden 帐户开始企业试用
+# 使用您的 Bitwarden 账户开始企业试用
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/enterprise-free-trial/)
@@ -14,7 +14,7 @@
 
 ## 已是 Bitwardne 用户？ <a href="#already-a-user" id="already-a-user"></a>
 
-如果您已经有一个 Bitwarden 帐户，完成以下步骤以开始您的企业版计划 7 天免费试用：
+如果您已经有一个 Bitwarden 账户，完成以下步骤以开始您的企业版计划 7 天免费试用：
 
 1、登录您的[网页版密码库](https://vault.bitwarden.com/)。
 

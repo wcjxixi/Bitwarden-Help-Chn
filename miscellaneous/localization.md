@@ -10,13 +10,13 @@
 
 {% tabs %}
 {% tab title="网页密码库" %}
-1、选择个人资料图标然后从下拉列表中选择**帐户设置**：
+1、选择个人资料图标然后从下拉列表中选择**账户设置**：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/74BqYDU6qE9evz6wEz8K7Y/773eec1c0b00e00db4dedd3456e9a3f9/Screen_Shot_2022-05-13_at_10.34.10_AM.png?fm=webp&h=226&q=50&w=773" %}
 账户设置
 {% endembed %}
 
-2、从帐户设置菜单中，选择**偏好设置**。
+2、从账户设置菜单中，选择**偏好设置**。
 
 3、从**语言**下拉列表中选择一种语言。
 {% endtab %}

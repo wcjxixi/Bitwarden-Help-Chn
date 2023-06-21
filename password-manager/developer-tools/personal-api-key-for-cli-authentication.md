@@ -14,13 +14,13 @@
 
 使用以下步骤来获取您的 API 密码：
 
-1、在[网页密码库](https://vault.bitwarden.com/)中，选择配置文件图标然后从下拉列表中选择**帐户设置**：
+1、在[网页密码库](https://vault.bitwarden.com/)中，选择配置文件图标然后从下拉列表中选择**账户设置**：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/74BqYDU6qE9evz6wEz8K7Y/773eec1c0b00e00db4dedd3456e9a3f9/Screen_Shot_2022-05-13_at_10.34.10_AM.png?fm=webp&h=226&q=50&w=773" %}
 账户设置
 {% endembed %}
 
-2、从帐户设置菜单中，选择**安全**页面然后选择**密钥**选项卡：
+2、从账户设置菜单中，选择**安全**页面然后选择**密钥**选项卡：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3IHpaOpEB5a13TF3B3RqqB/2d3f5e721eda8aa02210c4b476fc9434/Screen_Shot_2022-05-18_at_9.17.41_AM.png?fm=webp&h=594&q=50&w=787" %}
 密钥选项卡

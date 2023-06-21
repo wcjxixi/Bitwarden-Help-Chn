@@ -12,9 +12,9 @@ _大多数_自动填充方案都依赖登录项目的 URI 属性。如果您不�
 请注意，移动端的自动填充当前不支持自定义字段。
 {% endhint %}
 
-## 在自动填充期间切换帐户 <a href="#switch-accounts-during-auto-fill" id="switch-accounts-during-auto-fill"></a>
+## 在自动填充期间切换账户 <a href="#switch-accounts-during-auto-fill" id="switch-accounts-during-auto-fill"></a>
 
-如果您登录了多个帐户，您的移动应用程序将默认尝试从当前活动帐户中自动填充凭据。您可以在自动填充期间通过点击头像气泡从一个帐户切换到另一个帐户：
+如果您登录了多个账户，您的移动应用程序将默认尝试从当前活动账户中自动填充凭据。您可以在自动填充期间通过点击头像气泡从一个账户切换到另一个账户：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5xCOZa3yJ2PGs64tYD6xgU/e7cf2eba869392edde0945f58224b1b4/as_gif_24.gif?fm=gif&h=197&q=50&w=427" %}
 iOS 账号切换

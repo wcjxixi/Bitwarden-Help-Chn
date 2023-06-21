@@ -21,7 +21,7 @@ DuckDuckGo 中的 Bitwarden
 3. 如果您的计算机上尚未安装 Bitwarden 桌面应用程序，请安装它。
 4. 打开 Bitwarden 桌面应用程序然后登录或解锁您的密码库。
 5. 从 macOS 菜单栏中选择 **Bitwarden** → **偏好设置**。
-6. 滚动找到**应用程序设置（所有帐户）**部分。
+6. 滚动找到**应用程序设置（所有账户）**部分。
 7. 勾选**允许 DuckDuckGo 浏览器集成**。
 8. 在 DuckDuckGo 中，当浏览器检测到 Bitwarden 准备就绪时，选择**连接**。
 9. 在 Bitwarden 中，选择**是**以批准 DuckDuckGo 的连接请求。

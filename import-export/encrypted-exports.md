@@ -6,13 +6,13 @@
 
 密码库数据可以[导出](export-vault-data.md)为加密的 `.json` 文件。加密的导出文件将包含来自您的组织或个人密码库的项目，但不包含 Send、密码历史记录、回收站或项目附件。可以使用网页密码库或 CLI 创建受密码保护的导出。Bitwarden 提供两种加密导出类型：
 
-* **账户备份**：导出的加密文件，只能重新导入到生成加密导出文件的 Bitwarden 账户。此过程使用专用于 Bitwarden 帐户的[帐户加密密钥](../security/account-encryption-key.md)。
-* **密码保护**：使用您选择的密码保护导出的加密文件。该文件使用您选择的密码解密，并且可以导入任何 Bitwarden 帐户。
+* **账户备份**：导出的加密文件，只能重新导入到生成加密导出文件的 Bitwarden 账户。此过程使用专用于 Bitwarden 账户的[账户加密密钥](../security/account-encryption-key.md)。
+* **密码保护**：使用您选择的密码保护导出的加密文件。该文件使用您选择的密码解密，并且可以导入任何 Bitwarden 账户。
 
 {% hint style="warning" %}
-**帐户备份**的导出不能导入到其他帐户。此外，[轮换您账户的加密密钥](../security/account-encryption-key.md)将导致已加密导出无法解密。**如果您轮换了您的加密密钥，请使用新的加密密钥导出新文件以替换所有旧文件。**
+**账户备份**的导出不能导入到其他账户。此外，[轮换您账户的加密密钥](../security/account-encryption-key.md)将导致已加密导出无法解密。**如果您轮换了您的加密密钥，请使用新的加密密钥导出新文件以替换所有旧文件。**
 
-如果您希望将加密的 `.json` 文件导入不同的 Bitwarden 帐户，请在创建导出时选择**密码保护**的导出类型。
+如果您希望将加密的 `.json` 文件导入不同的 Bitwarden 账户，请在创建导出时选择**密码保护**的导出类型。
 {% endhint %}
 
 加密导出将包含所有密码库数据，包括登录、支付卡、安全笔记和身份。比如如下明文的登录项目：
@@ -58,7 +58,7 @@
 4、如果选择 `.json (Encrypted)`，请选择您希望用于加密导出的**文件类型**：
 
 * **账户备份**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
-* **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 帐户。
+* **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
 
 5、选择**确认格式**，输入您的主密码，然后选择**导出密码库**按钮以完成。
 {% endtab %}
@@ -131,7 +131,7 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 导入加密导出遵循[普通的导入过程](import-data-to-your-vault.md)。当提示**文件格式**时，请选择 `.json`：
 
 {% hint style="success" %}
-没有专门针对加密导出的导入选项。处理程序将确定 `.json` 文件已加密，并尝试使用您的[帐户加密密钥](../security/account-encryption-key.md)解密该文件。
+没有专门针对加密导出的导入选项。处理程序将确定 `.json` 文件已加密，并尝试使用您的[账户加密密钥](../security/account-encryption-key.md)解密该文件。
 {% endhint %}
 
 {% tabs %}

@@ -1,4 +1,4 @@
-# 密码管理器常见问题
+# Password Manager 常见问题
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/product-faqs/)
@@ -21,17 +21,17 @@
 **答：**要更改您的主密码提示：
 
 1. 打开[网页密码库](https://vault.bitwarden.com/)，选择配置文件图标，然后从下拉列表中选择**账户设置**。
-2. 从帐户设置菜单中，选择**安全**页面然后**主密码**选项卡。
+2. 从账户设置菜单中，选择**安全**页面然后**主密码**选项卡。
 3. 要_仅_更改您的提示，请在**当前主密码**、**新主密码**和**确认主密码**框中全部输入您当前的主密码以防止更改，然后在**主密码提示**框中输入提示。
 4. 选择**更改主密码**按钮。
 
 ### 问：如何更改电子邮件地址？ <a href="#q-how-do-i-change-my-email-address" id="q-how-do-i-change-my-email-address"></a>
 
 {% hint style="info" %}
-如果您使用[电子邮件方式的两步登录](../two-step-login/setup-guides/two-step-login-via-email.md)，则更改您的帐户电子邮件地址不会更改用于接收 2FA 代码的地址。
+如果您使用[电子邮件方式的两步登录](../two-step-login/setup-guides/two-step-login-via-email.md)，则更改您的账户电子邮件地址不会更改用于接收 2FA 代码的地址。
 {% endhint %}
 
-**答：**要更改帐户所附属的电子邮件地址：
+**答：**要更改账户所附属的电子邮件地址：
 
 1. 打开[网页密码库](https://vault.bitwarden.com)，选择配置文件图标，然后从下拉列表中选择**账户设置**。
 2. 在**我的账户**页面，找到**更改电子邮件**部分。
@@ -129,4 +129,4 @@
 
 ### 问：卸载或删除我的 Bitwarden 应用程序是否也会删除我的密码库数据吗？ <a href="#q-does-uninstalling-or-deleting-my-bitwarden-app-also-delete-my-vault-data" id="q-does-uninstalling-or-deleting-my-bitwarden-app-also-delete-my-vault-data"></a>
 
-**答：**不会，删除 Bitwarden 应用程序/扩展程序并不会删除您的密码库数据。密码库数据加密保存在服务器上。如果您希望**永久**删除您的密码库数据，请参阅[删除帐户或组织](../plans-and-pricing/delete-an-account-or-organization.md)。
+**答：**不会，删除 Bitwarden 应用程序/扩展程序并不会删除您的密码库数据。密码库数据加密保存在服务器上。如果您希望**永久**删除您的密码库数据，请参阅[删除账户或组织](../plans-and-pricing/delete-an-account-or-organization.md)。

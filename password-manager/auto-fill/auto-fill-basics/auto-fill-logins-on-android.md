@@ -6,7 +6,7 @@
 
 Bitwarden 可以自动填充您的密码，以便您可以无缝登录网站和应用程序，同时维护强大而安全的密码。自动填充通过检测与您登录的服务相匹配的密码库项目，以减少您在登录过程中的复制和粘贴操作。
 
-如果您使用[帐户切换](../../../your-vault/account-switching.md)，将使用最后一个活动帐户的项目来自动填充。
+如果您使用[账户切换](../../../your-vault/account-switching.md)，将使用最后一个活动账户的项目来自动填充。
 
 {% hint style="success" %}
 _大多数_自动填充方案都依赖登录项目的 URI 属性。如果您不熟悉 URI，请阅读 [URI 的使用](../../../auto-fill/using-uris.md)一文。
@@ -16,7 +16,7 @@ _大多数_自动填充方案都依赖登录项目的 URI 属性。如果您不�
 
 ## 账户切换时的自动填充 <a href="#auto-fill-while-account-switching" id="auto-fill-while-account-switching"></a>
 
-如果您使用[帐户切换](../../../your-vault/account-switching.md)，您的移动应用程序将默认尝试从当前的活动帐户来自动填充凭据。在 Android 上，您可以在自动填充期间通过点击头像气泡从一个帐户切换到另一个帐户：
+如果您使用[账户切换](../../../your-vault/account-switching.md)，您的移动应用程序将默认尝试从当前的活动账户来自动填充凭据。在 Android 上，您可以在自动填充期间通过点击头像气泡从一个账户切换到另一个账户：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3bN7xwY4iOL4UoywSAi8Vq/58c5529af388736a1f5ace002bfba542/attempt5.gif?fm=gif&h=324&q=50&w=652" %}
 Android 账户切换

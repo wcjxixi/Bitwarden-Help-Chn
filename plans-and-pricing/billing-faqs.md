@@ -21,7 +21,7 @@
 
 **答：**查看计费信息取决于您是查看个人还是组织订阅的计费信息。使用[更新您的计费信息](update-your-billing-information.md)来指导您完成这两个过程。
 
-### 问：如何删除我的帐户？ <a href="#q-how-do-i-delete-my-account" id="q-how-do-i-delete-my-account"></a>
+### 问：如何删除我的账户？ <a href="#q-how-do-i-delete-my-account" id="q-how-do-i-delete-my-account"></a>
 
 **答：**我们很遗憾看到你离开。使用[删除您的账号](delete-an-account-or-organization.md)来指导您完成这个过程。
 
@@ -53,7 +53,7 @@
 
 ### 问：你们接受美国国内的客户的哪些付款方式？ <a href="#q-what-payment-options-do-you-accept-for-customers-based-in-the-united-states" id="q-what-payment-options-do-you-accept-for-customers-based-in-the-united-states"></a>
 
-**答：**我们接受信用卡/借记卡、PayPal、银行帐户（ACH），以及比特币。对于企业订阅，我们还接受电汇和企业支票，最低付款额为 500 美元。有关付款方式的更多信息，请联系我们的[售后支持](https://bitwarden.com/contact/)。
+**答：**我们接受信用卡/借记卡、PayPal、银行账户（ACH），以及比特币。对于企业订阅，我们还接受电汇和企业支票，最低付款额为 500 美元。有关付款方式的更多信息，请联系我们的[售后支持](https://bitwarden.com/contact/)。
 
 ### 问：你们接受美国国外的客户的哪些付款方式？ <a href="#q-what-payment-options-do-you-accept-for-customers-outside-the-united-states" id="q-what-payment-options-do-you-accept-for-customers-outside-the-united-states"></a>
 
@@ -63,7 +63,7 @@
 
 **答：**可以。请注意，在购买订阅之前，您需要在**设置** → **计费**界面使用比特币添加信用额度。
 
-### 问：在我的帐户的什么地方输入税务信息（VAT）？ <a href="#q-how-do-i-enter-my-tax-information-vat" id="q-how-do-i-enter-my-tax-information-vat"></a>
+### 问：在我的账户的什么地方输入税务信息（VAT）？ <a href="#q-how-do-i-enter-my-tax-information-vat" id="q-how-do-i-enter-my-tax-information-vat"></a>
 
 **答：**登录到[网页版密码库](https://vault.bitwarden.com/)并打开您的组织，在您的组织的**设置**选项卡下，向下滚动到**税务信息**部分：
 

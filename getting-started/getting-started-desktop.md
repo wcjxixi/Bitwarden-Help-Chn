@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/getting-started-desktop)
 {% endhint %}
 
-Bitwarden 的桌面应用程序将完整的密码库体验从浏览器直接带入您的桌面。桌面应用程序一次支持最多 5 个已登录的帐户，可以随时在个人帐户和工作帐户之间轻松切换（[了解更多](../your-vault/account-switching.md)）。
+Bitwarden 的桌面应用程序将完整的密码库体验从浏览器直接带入您的桌面。桌面应用程序一次支持最多 5 个已登录的账户，可以随时在个人账户和工作账户之间轻松切换（[了解更多](../your-vault/account-switching.md)）。
 
 在 **🔒我的密码库**视图中，您可以浏览您的所有项目，包括您所属的组织拥有的项目。使用密码库下拉列表来筛选**所有密码库**、**我的密码库**和任何组织密码库中的项目。
 
@@ -33,7 +33,7 @@ Bitwarden 桌面应用程序
    * 帮助您轻松识别它的**名称**（例如 `Twitter Account`）
    * 您的**用户名**。
    * 您的当前**密码**（我们待会会用一个强大的替换它）。
-4. 选择 ✚**新建 URI** 按钮，然后输入您登录帐户的 URL（例如 `https://twitter.com/login`）。
+4. 选择 ✚**新建 URI** 按钮，然后输入您登录账户的 URL（例如 `https://twitter.com/login`）。
 5. 从文件夹下拉列表中选择一个**文件夹**，如果您按照我们的示例进行操作，请选择我们刚刚创建的 **Social Media** 文件夹！
 6. 很好！选择 **💾保存**以完成。
 
@@ -41,7 +41,7 @@ Bitwarden 桌面应用程序
 
 现在，您已经保存了一个新的登录项目，让我们使用一个强密码替换您的密码来提高它的安全性：
 
-1、打开网页浏览器并使用您现有的用户名和密码登录该帐户。在该帐户中，找到可以**更改密码**的位置。
+1、打开网页浏览器并使用您现有的用户名和密码登录该账户。在该账户中，找到可以**更改密码**的位置。
 
 2、在**更改密码**表单上，输入您的**当前密码**，您可以使用 **❐复制**图标从 Bitwarden 复制并粘贴该密码。
 
@@ -61,15 +61,15 @@ Bitwarden 桌面应用程序
 
 ### 添加第二个账户 <a href="#add-a-second-account" id="add-a-second-account"></a>
 
-您是否有多个 Bitwarden 帐户？例如一个用于个人使用，一个用于工作。桌面应用程序可以一次性同时登录 5 个帐户！
+您是否有多个 Bitwarden 账户？例如一个用于个人使用，一个用于工作。桌面应用程序可以一次性同时登录 5 个账户！
 
-要登录第二个帐户，请从桌面应用程序的右上角选择当前已登录的帐户，然后选择 ✚**添加帐户**：
+要登录第二个账户，请从桌面应用程序的右上角选择当前已登录的账户，然后选择 ✚**添加账户**：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/7fpUmakpNIByzoWQa1cU8L/3673552e2fcc77ea3c0a8cae7fbd2b83/Screen_Shot_2022-05-18_at_3.33.08_PM.png?fm=webp&h=772&q=50&w=1066" %}
 桌面应账户切换
 {% endembed %}
 
-登录第二个帐户后，您可以从同一菜单中快速切换它们，该菜单还将显示每一个帐户的密码库的当前状态（_已锁定_或_已解锁_）。如果您注销其中一个帐户，它将从此列表中移除。
+登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每一个账户的密码库的当前状态（_已锁定_或_已解锁_）。如果您注销其中一个账户，它将从此列表中移除。
 
 ## 下一步
 
@@ -82,7 +82,7 @@ Bitwarden 桌面应用程序
 要设置您的首选项，请从菜单栏中选择**文件** → **设置**。您会注意到三个部分：**安全性**、**首选项**和**应用程序设置**。
 
 {% hint style="success" %}
-**安全性**和**首选项**适用于[活动帐户](getting-started-desktop.md#add-a-second-account)，应为每个帐户单独设置。**应用程序设置**适用于所有帐户。
+**安全性**和**首选项**适用于[活动账户](getting-started-desktop.md#add-a-second-account)，应为每个账户单独设置。**应用程序设置**适用于所有账户。
 {% endhint %}
 
 ### 使用生物识别解锁 <a href="#unlock-with-biometrics" id="unlock-with-biometrics"></a>
@@ -105,13 +105,13 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 
 ![使用 Windows Hello 解锁](../.gitbook/assets/hello-unlock.png)
 
-记住，**安全性**设置是针对每一个帐户设置的，因此如果您想为另一个帐户启用生物识别解锁，您需要再次执行这些步骤！
+记住，**安全性**设置是针对每一个账户设置的，因此如果您想为另一个账户启用生物识别解锁，您需要再次执行这些步骤！
 
 ### 自动启动 Bitwarden <a href="#start-bitwarden-automatically" id="start-bitwarden-automatically"></a>
 
 另一个有用的功能是在启动计算机时始终启动 Bitwarden。要启用此功能，请导航到**应用程序设置**部分并勾选**登录时自动启动**复选框。
 
-与生物识别不同，此设置适用于所有已登录的帐户！
+与生物识别不同，此设置适用于所有已登录的账户！
 {% endtab %}
 
 {% tab title="macOS" %}
@@ -120,7 +120,7 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 要设置您的偏好设置，请从菜单栏中选择**Bitwarden** → **偏好设置**。您会注意到三个部分：**安全性**、**偏好设置**和**应用程序设置**。
 
 {% hint style="success" %}
-**安全性**和**偏好设置**适用于[活动帐户](getting-started-desktop.md#add-a-second-account)，应为每个帐户单独设置。**应用程序设置**适用于所有帐户。
+**安全性**和**偏好设置**适用于[活动账户](getting-started-desktop.md#add-a-second-account)，应为每个账户单独设置。**应用程序设置**适用于所有账户。
 {% endhint %}
 
 ### 使用生物识别解锁 <a href="#unlock-with-biometrics" id="unlock-with-biometrics"></a>
@@ -141,13 +141,13 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 使用触控 ID 解锁
 {% endembed %}
 
-记住，**安全性**设置是针对每一个帐户设置的，因此如果您想为另一个帐户启用生物识别解锁，您需要再次执行这些步骤！
+记住，**安全性**设置是针对每一个账户设置的，因此如果您想为另一个账户启用生物识别解锁，您需要再次执行这些步骤！
 
 ### 自动启动 Bitwarden <a href="#start-bitwarden-automatically" id="start-bitwarden-automatically"></a>
 
 另一个有用的功能是在启动计算机时始终启动 Bitwarden。要启用此功能，请导航到**应用程序设置**部分并勾选**登录时自动启动**复选框。
 
-与生物识别不同，此设置适用于所有已登录的帐户！
+与生物识别不同，此设置适用于所有已登录的账户账户！
 {% endtab %}
 
 {% tab title="Linux" %}
@@ -156,13 +156,13 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 要设置您的首选项，请从菜单栏中选择**文件** → **设置**。您会注意到三个部分：**安全性**、**首选项**和**应用程序设置**。
 
 {% hint style="success" %}
-**安全性**和**首选项**适用于[活动帐户](getting-started-desktop.md#add-a-second-account)，应为每个帐户单独设置。**应用程序设置**适用于所有帐户。
+**安全性**和**首选项**适用于[活动账户](getting-started-desktop.md#add-a-second-account)，应为每个账户单独设置。**应用程序设置**适用于所有账户。
 {% endhint %}
 
 ### 自动启动 Bitwarden <a href="#start-bitwarden-automatically" id="start-bitwarden-automatically"></a>
 
 另一个有用的功能是在启动计算机时始终启动 Bitwarden。要启用此功能，请导航到**应用程序设置**部分并勾选**登录时自动启动**复选框。
 
-与生物识别不同，此设置适用于所有已登录的帐户！
+与生物识别不同，此设置适用于所有已登录的账户！
 {% endtab %}
 {% endtabs %}

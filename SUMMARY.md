@@ -31,7 +31,7 @@
     * [Bitwarden 经销商](my-account/plans-and-pricing/bitwarden-resellers.md)
     * [\*哪种计划适合我？](plans-and-pricing/what-plan-is-right-for-me.md)
     * [从个人升级到组织](plans-and-pricing/upgrade-from-individual-to-organization.md)
-    * [使用您的 Bitwarden 帐户开始企业试用](my-account/plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)
+    * [使用您的 Bitwarden 账户开始企业试用](my-account/plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)
     * [兑换家庭赞助](plans-and-pricing/redeem-families-sponsorship.md)
     * [更新您的计费信息](plans-and-pricing/update-your-billing-information.md)
     * [高级会员续费](plans-and-pricing/premium-renewal.md)

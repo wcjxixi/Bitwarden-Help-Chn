@@ -185,7 +185,7 @@ bw generate -uln --length 14
 
 在某些情况下，拥有自己域名（例如 `@bitwarden.com`）的公司可以使用 Catch-all 收件箱避免电子邮件进入您的个人收件箱，而是将它们路由到一个已共享的（有时未经检查）公司收件箱，以备万一将来需要他们的这些记录。
 
-在其他情况下，拥有自己域名（例如 `@gardenllc.com`）的个人可以使用 Catch-all 设置将电子邮件从具有面向隐私的用户名（例如 `github.com@gardenllc.com`）的帐户路由到他们的实际收件箱。
+在其他情况下，拥有自己域名（例如 `@gardenllc.com`）的个人可以使用 Catch-all 设置将电子邮件从具有面向隐私的用户名（例如 `github.com@gardenllc.com`）的账户路由到他们的实际收件箱。
 {% endhint %}
 
 #### 转发的电子邮件别名 <a href="#forwarded-email-alias" id="forwarded-email-alias"></a>
@@ -195,14 +195,14 @@ bw generate -uln --length 14
 {% hint style="success" %}
 **为什么使用转发的电子邮件别名？**
 
-使用 [SimpleLogin](https://simplelogin.io/) 和 [AnonAddy](https://anonaddy.com/) 等电子邮件别名服务时，您可以使用匿名地址（例如，`nobody-knows-its-me.d0p0r@slmail.me`）来注册网络帐户，邮件将转发到您实际的收件箱（例如， `alice@bitwarden.com`）。这可以防止网站或服务在您注册时收集个人信息（在此示例中，名称 Alice 以及她在 Bitwarden 工作的事实）。
+使用 [SimpleLogin](https://simplelogin.io/) 和 [AnonAddy](https://anonaddy.com/) 等电子邮件别名服务时，您可以使用匿名地址（例如，`nobody-knows-its-me.d0p0r@slmail.me`）来注册网络账户，邮件将转发到您实际的收件箱（例如， `alice@bitwarden.com`）。这可以防止网站或服务在您注册时收集个人信息（在此示例中，名称 Alice 以及她在 Bitwarden 工作的事实）。
 {% endhint %}
 
 要设置您的电子邮件别名集成：
 
 {% tabs %}
 {% tab title="SimpleLogin" %}
-1、登录到您的 SimpleLogin 帐户。
+1、登录到您的 SimpleLogin 账户。
 
 2、从导航中选择 **API Keys**。SimpleLogin 会要求您输入密码以创建 API 密钥。
 
@@ -222,7 +222,7 @@ SimpleLogin API 密钥
 {% endtab %}
 
 {% tab title="AnonAddy" %}
-1、登录到您的 AnonAddy 帐户。
+1、登录到您的 AnonAddy 账户。
 
 2、在 AnonAddy 中，选择 **Settings** 并向下滚动到 API 部分。
 
@@ -254,7 +254,7 @@ Anon Addy 生成令牌
 由于 Firefox Relay 的配置设置，此集成只能在 Bitwarden 浏览器扩展和桌面应用程序中使用。
 {% endhint %}
 
-1、登录到您的 Firefox Relay 帐户。
+1、登录到您的 Firefox Relay 账户账户。
 
 2、选择配置文件图标并从下拉列表中选择 **Setting**：
 
@@ -268,7 +268,7 @@ Firefox Relay Settings 菜单
 {% endtab %}
 
 {% tab title="Fastmail" %}
-1、登录到您的 Fastmail 帐户。
+1、登录到您的 Fastmail 账户。
 
 2、选择配置文件图标并从下拉列表中选择 **Setting**：
 

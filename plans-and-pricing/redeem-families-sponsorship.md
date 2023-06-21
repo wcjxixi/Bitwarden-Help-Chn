@@ -16,15 +16,15 @@
 
 要兑换您的赞助：
 
-1、登录到隶属于赞助组织的 Bitwarden 帐户。
+1、登录到隶属于赞助组织的 Bitwarden 账户。
 
-2、选择配置文件图标并从下拉列表中选择**帐户设置**：
+2、选择配置文件图标并从下拉列表中选择**账户设置**：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/74BqYDU6qE9evz6wEz8K7Y/773eec1c0b00e00db4dedd3456e9a3f9/Screen_Shot_2022-05-13_at_10.34.10_AM.png?fm=webp&h=226&q=50&w=773" %}
 账户设置
 {% endembed %}
 
-3、从帐户设置菜单中，选择**免费 Bitwarden 家庭**：
+3、从账户设置菜单中，选择**免费 Bitwarden 家庭**：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/4N84OPFobJYDw7pr05Ls1W/52999bf7594e0ca20125d1c0de7a85f0/Screen_Shot_2022-05-17_at_3.47.42_PM.png?fm=webp&h=392&q=50&w=778" %}
 启用企业家庭
@@ -33,7 +33,7 @@
 4、在此界面上，输入一个您想要兑换赞助的**个人电子邮箱**，然后选择**兑换**。
 
 {% hint style="success" %}
-如果您已经有一个单独的个人 Bitwarden 帐户，请使用隶属于该帐户的电子邮箱地址。如果您还没有单独的个人 Bitwarden 帐户，则需要使用您在此处输入的个人电子邮箱地址创建一个账户。**不要**使用隶属于赞助组织的电子邮箱地址或 Bitwarden 帐户。
+如果您已经有一个单独的个人 Bitwarden 账户，请使用隶属于该账户的电子邮箱地址。如果您还没有单独的个人 Bitwarden 账户，则需要使用您在此处输入的个人电子邮箱地址创建一个账户。**不要**使用隶属于赞助组织的电子邮箱地址或 Bitwarden 账户。
 {% endhint %}
 
 5、在您的收件箱中，您会收到一封来自 Bitwarden 的电子邮件，邀请您接受此赞助：
@@ -44,12 +44,12 @@
 
 选择**接受赞助**以继续。
 
-6、如果有与提供的**个人电子邮箱**相关联的 Bitwarden 帐户，请登录。如果没有与个人电子邮箱关联的帐户，您将被引导至创建帐户界面。
+6、如果有与提供的**个人电子邮箱**相关联的 Bitwarden 账户，请登录。如果没有与个人电子邮箱关联的账户，您将被引导至创建账户界面。
 
 {% hint style="success" %}
-必须始终从 `https://vault.bitwarden.com` 访问受赞助的家庭组织。您的工作帐户可能使用不同的 URL，例如 `https://company.bitwarden.com`，因此您需要确保使用正确的 URL 登录到正确的帐户。
+必须始终从 `https://vault.bitwarden.com` 访问受赞助的家庭组织。您的工作账户可能使用不同的 URL，例如 `https://company.bitwarden.com`，因此您需要确保使用正确的 URL 登录到正确的账户。
 
-**提示**：Bitwarden 移动端和桌面端应用程序可以使用不同的 URL 在[帐户间快速切换](../your-vault/account-switching.md)。
+**提示**：Bitwarden 移动端和桌面端应用程序可以使用不同的 URL 在[账户间快速切换](../your-vault/account-switching.md)。
 {% endhint %}
 
 7、登录后，您将被定向到一个界面，在此界面您可以完成为**新的家庭组织**或**现有的家庭组织**兑换您的赞助的操作：
@@ -89,13 +89,13 @@
 
 ## 常见问题 <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
 
-### 问：我可以使用属于赞助企业成员的帐户进行兑换吗？ <a href="#can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise" id="can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise"></a>
+### 问：我可以使用属于赞助企业成员的账户进行兑换吗？ <a href="#can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise" id="can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise"></a>
 
-**答：**不可以。兑换时，系统会要求您输入您拥有的**个人电子邮件地址**。如果您已有个人 Bitwarden 帐户，请输入该帐户的电子邮件地址。如果没有，请输入您要为其创建个人 Bitwarden 帐户的个人电子邮件地址。
+**答：**不可以。兑换时，系统会要求您输入您拥有的**个人电子邮件地址**。如果您已有个人 Bitwarden 账户，请输入该账户的电子邮件地址。如果没有，请输入您要为其创建个人 Bitwarden 账户的个人电子邮件地址。
 
 ### 问：我可以为我现有的家庭组织兑换吗？ <a href="#can-i-redeem-for-my-existing-families-organization" id="can-i-redeem-for-my-existing-families-organization"></a>
 
-**答：**可以！为活跃的家庭组织兑换赞助将立即将您切换到赞助订阅，并在您已支付的订阅剩余时间上按比例添加帐户信用额度。
+**答：**可以！为活跃的家庭组织兑换赞助将立即将您切换到赞助订阅，并在您已支付的订阅剩余时间上按比例添加账户信用额度。
 
 ### 问：我可以添加额外的存储空间吗？ <a href="#can-i-add-additional-storage" id="can-i-add-additional-storage"></a>
 

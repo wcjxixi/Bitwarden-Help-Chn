@@ -47,7 +47,7 @@
 
 ## 企业组织 <a href="#enterprise-organizations" id="enterprise-organizations"></a>
 
-从经典 2019 计划升级到当前的企业计划，可解锁备受期待的 SSO 登录功能集，通过与您现有的身份管理解决方案完全集成，简化企业用户的访问。它还可以解锁[管理员密码重置](../organizations/admin-password-reset.md)，以允许指定的管理员恢复企业组织用户帐户并在员工忘记主密码时恢复访问权限。
+从经典 2019 计划升级到当前的企业计划，可解锁备受期待的 SSO 登录功能集，通过与您现有的身份管理解决方案完全集成，简化企业用户的访问。它还可以解锁[管理员密码重置](../organizations/admin-password-reset.md)，以允许指定的管理员恢复企业组织用户账户并在员工忘记主密码时恢复访问权限。
 
 和以前一样，您企业组织的所有成员将自动获得所有高级功能，包括高级 2FA 选项、Bitwarden 验证器（TOTP）、加密文件附件等。
 
@@ -65,7 +65,7 @@
 
 ### 问：这些更改何时生效？ <a href="#q-when-did-these-changes-go-into-effect" id="q-when-did-these-changes-go-into-effect"></a>
 
-**答：**这些更改于 2020 年 9 月 6 日生效。如果您在该日期之前已创建了 Bitwarden 帐户，但尚未升级，则表示您使用的是经典 2019 计划。
+**答：**这些更改于 2020 年 9 月 6 日生效。如果您在该日期之前已创建了 Bitwarden 账户，但尚未升级，则表示您使用的是经典 2019 计划。
 
 ### 问：如何从经典 2019 升级到当前计划？ <a href="#q-how-do-i-upgrade-from-classic-2019-to-a-current-plan" id="q-how-do-i-upgrade-from-classic-2019-to-a-current-plan"></a>
 

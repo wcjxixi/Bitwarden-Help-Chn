@@ -587,7 +587,7 @@ bw export [--output <filePath>] [--format <format>] [--password <password>] [--o
 
 * `--format json`：导出为 `.json` 文件
 * `--format encrypted_json`：导出为[加密的 .json](../../import-export/encrypted-exports.md) 文件
-  * `--password <password>`：指定用于加密 `encrypted_json` 导出的密码，而不是您的[帐户加密密钥](../../security/account-encryption-key.md)
+  * `--password <password>`：指定用于加密 `encrypted_json` 导出的密码，而不是您的[账户加密密钥](../../security/account-encryption-key.md)
 * `--output <path>`：指定导出位置
 * `--raw`：将导出返回到 stdout（标准输出）而不是文件
 
