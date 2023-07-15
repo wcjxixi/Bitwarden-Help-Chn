@@ -42,7 +42,7 @@
 {% endtab %}
 
 {% tab title="桌面端" %}
-从菜单栏中选择查看 → 生成器：
+从菜单栏中选择**查看** → **生成器**：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6cFQ3iojZXLy1ZIdIXp6Zr/20841fa4babfccc3d7dc6ef4e9b307ca/Screen_Shot_2022-04-05_at_10.43.06_AM.png?fm=webp&h=630&q=50&w=992" %}
 桌面应用程序的密码生成器
@@ -295,7 +295,7 @@ Fastmail API 令牌
 {% tab title="Forward Email" %}
 1、登录您的 [Forward Email](https://forwardemail.net/) 账户。
 
-2、Forward Email 使用默认域名 `hideaddress.net`，但是如果您有已注册的域名，则可以将其连接到该服务。有关详细信息，请参阅 [Forward Email 设置指南](https://forwardemail.net/en/guides)。
+2、Forward Email 使用默认域名 `hideaddress.net`，但是如果您有已注册的域名，则可以将其连接到该服务。有关详细信息，请参阅 [Forward Email 设置指南](https://forwardemail.net/zh/guides)。
 
 3、在 Forward Email 中，导航至**我的账户** → **安全**页面并复制开发人员访问 API 令牌：
 
