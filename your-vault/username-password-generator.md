@@ -190,7 +190,7 @@ bw generate -uln --length 14
 
 #### 转发的电子邮件别名 <a href="#forwarded-email-alias" id="forwarded-email-alias"></a>
 
-选择此类型以将用户名生成器与您的外部别名服务集成。目前，Bitwarden 支持与 SimpleLogin、AnonAddy 和 Firefox Relay 的集成。
+选择此类型以将用户名生成器与您的外部别名服务集成。大多数 Bitwarden 应用程序支持与 SimpleLogin、AnonAddy、Firefox Relay、Fastmail、Forward Email 和 DuckDuckGo 集成。移动应用程序目前支持与 SimpleLogin、AnonAddy 和 Firefox Relay 集成。
 
 {% hint style="success" %}
 **为什么使用转发的电子邮件别名？**
