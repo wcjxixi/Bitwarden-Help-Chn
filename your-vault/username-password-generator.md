@@ -292,6 +292,22 @@ Fastmail API 令牌
 6、选择**重新生成用户名**以生成用户名并在 Fastmail 中自动创建相应的别名。
 {% endtab %}
 
+{% tab title="Forward Email" %}
+1、登录您的 [Forward Email](https://forwardemail.net/) 账户。
+
+2、Forward Email 使用默认域名 `hideaddress.net`，但是如果您有已注册的域名，则可以将其连接到该服务。有关详细信息，请参阅 [Forward Email 设置指南](https://forwardemail.net/en/guides)。
+
+3、在 Forward Email 中，导航至**我的账户** → **安全**页面并复制开发人员访问 API 令牌：
+
+{% embed url="https://bitwarden.com/_gatsby/image/8656d578f3f917b02cd90966b05e2e4b/dda4d7d526374ccc43f8b195172906e9/Screen%20Shot%202023-06-30%20at%201.06.04%20PM.webp?eu=d68951b7b5cdfd8f086fa1d63c20346fb43f03abad503385396cb7f91dac9b8570f21b0120c77ae0296f59da85e241ba34c67d6948b8d88cc1bf1cfce331fb08508558ec34e62452057fc4afe1f101463d95495ea084cd59f23f7a81b7e1e4711a504f79a02bb2d9a8ed7527ba9c306bb7e7f17b26dcf83cb6431d179e5c32e23aeed4c1345cb09df645eeb0e6f44eca83e77f6e0a87a97570230d675f9c79cde4c65c767a6b5f0d31cdfe5ac564c3b33a1d65725e5f51f6336ed35cfa3a30c4b2a9f554d87c2ffecb9a7325d39dc1e3b545e84574e7cd24b4823d670d0dc342e9d37ae9d262180e85459ae852f25d52&a=w%3D850%26h%3D528%26fm%3Dwebp%26q%3D75&cd=2023-07-12T12%3A18%3A44.529Z" %}
+复制 Forward Email API 令牌
+{% endembed %}
+
+4、在 Bitwarden 用户名生成器中，将复制的令牌粘贴到 **API 访问令牌**中，然后输入 `hideaddress.net` 或您的**已注册的域名**。
+
+5、选择**重新生成用户名**以生成用户名并在 Forward Email 中自动创建相应的别名。
+{% endtab %}
+
 {% tab title="DuckDuckGo" %}
 1、按照 [DuckDuckGo 说明](https://duckduckgo.com/email/)设置您的 Duck 地址。
 

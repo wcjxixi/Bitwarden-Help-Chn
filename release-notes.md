@@ -22,6 +22,16 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2023.7.0
+
+此次发布包含：
+
+* **用于自托管的设备登录**：连接到自托管服务器的 Bitwarden 应用程序现在可以通过向已注册设备发送身份验证请求来登录，而不是使用主密码（参阅[这里](your-vault/log-in-with-device.md)）。
+* **Forward Email 别名集成**：将 Bitwarden 用户名生成器连接到 [Forward Email](https://forwardemail.net/)，以便轻松创建电子邮件别名（参阅[这里](your-vault/username-password-generator.md#username-types)）。
+* **浏览器扩展 TOTP 自动填充**：浏览器扩展现在将自动填充 TOTP 代码，除非您使用了在页面加载时自动填充功能（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#totp-auto-fill)）。
+* **在 \<textarea> 中使用自动填充**：Bitwarden 应用程序现在可以将凭据自动填充到 HTML 的 `<textarea>` 元素中。
+* **从密码库页面创建文件夹和集合**：现在可以从主**密码库**页面使用**新建**按钮创建文件夹和集合。
+
 ## 2023.5.0
 
 {% hint style="danger" %}
