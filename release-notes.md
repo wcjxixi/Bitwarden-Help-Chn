@@ -26,8 +26,8 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 
 此次发布包含：
 
-* **Secrets Manager - CLI 更新**：添加了用于编辑和创建工程和机密的新命令，并且 CLI 使用的语法已重新构建（参阅这里）。
-* **EU（欧盟）云**：Bitwarden 云服务器现已在欧盟提供带有密码库数据存储的服务（参阅这里）。
+* **Secrets Manager - CLI 更新**：添加了用于编辑和创建工程和机密的新命令，并且 CLI 使用的语法已重新构建（参阅[这里](secrets-manager/developer-tools/secrets-manager-cli.md)）。
+* **EU（欧盟）云**：Bitwarden 云服务器现已在欧盟提供带有密码库数据存储的服务（参阅[这里](security/server-geographies.md)）。
 
 ## 2023.7.0
 
