@@ -8,13 +8,7 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 
 **Secrets Manager 网页应用程序**将是您设置机密管理基础设施的主页。您将使用它来添加和组织[机密](secrets-manager-quick-start.md#add-secrets)、创建适合您需要的[权限系统](secrets-manager-quick-start.md#assign-members-to-your-project)，以及生成供您的应用程序使用的[访问令牌](secrets-manager-quick-start.md#create-an-access-token)。完成后，您将继续阅读[开发者快速入门指南](developer-quick-start.md)，以了解如何将机密注入您的机器和应用程序。
 
-{% hint style="info" %}
-Bitwarden Secrets Manager 目前作为测试程序提供。在[此处](beta-signup.md)了解有关测试版的更多信息，进而更好地使用本文档学习 Secrets Manager 网页密码库入门。
-{% endhint %}
-
-## 欢迎使用 Beta 版 <a href="#welcome-to-the-beta" id="welcome-to-the-beta"></a>
-
-### 激活 Secrets Manager <a href="#activate-secrets-manager" id="activate-secrets-manager"></a>
+## 激活 Secrets Manager <a href="#activate-secrets-manager" id="activate-secrets-manager"></a>
 
 Secrets Manager 可以从您组织的**计费** → **订阅**页面激活。您必须是组织的所有者才能执行此操作：
 
@@ -38,15 +32,13 @@ Secrets Manager 可以从您组织的**计费** → **订阅**页面激活。您
 
 要授予成员对 Secrets Manager 的访问权限，您必须是组织的所有者或者管理员：
 
-1、打开您组织的**成员**选项卡，然后使用 (**≡**) 选项菜单打开您的**成员角色**面板。
+1、打开您组织的**成员**选项卡，然后选中您要授予他们 Secrets Manager 访问权限的成员。
 
-2、在面板底部，选中**此用户可以访问 Secrets Manager Beta 版**：
+2、使用 **≡** 菜单，选择**启用 Secrets Manager** 以向选定成员授予访问权限：
 
-{% embed url="https://bitwarden.com/_gatsby/image/16428fa0dec70919daa1ff46235f2795/fd47c23b1af4ee88e1f2061428b4f6b1/give-member-access.webp?eu=df8f51e4b5ccfa8e063cf58769756061b63653faab5536d96b6ce7aa1bfc98d775f41d0772c67fb32e3a588a87e340ec63c72a604bbcd4d3c5b519f5e830f95d53d10cbd62e225065278ccafe4a754423c93120aa6879e5af16d20d6e5e0bd285d145c68a265a7d8b1f86231f39d7c76bce7e56d3086e866be471a4bcc5a2faf22e191883b43a9c9af1dee9c88eb7dc9d6b22a55079ff77657324a7c25846fa4f3e104763d7c135a31c9ab5ac46394b3691a3320585f05a6353a865da86b38c6fbacf81b8c6726b4f59b64329b92fdd3b859ef3436b998&a=w%3D850%26h%3D675%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.653Z" %}
-分配对 beta 版的访问权限
+{% embed url="https://bitwarden.com/_gatsby/image/a160b75f2f6f68f1da1027f8cbf872ae/1705ae65ec2ddaebf8005a26ee57b8f0/Screen%20Shot%202023-07-05%20at%209.56.35%20AM.webp?eu=8ddf04b7e799fa82093af6836f26606ae56d06aaa85065d56b60e4fb47a09bd572f01851219728e37f6d0bdcd2b346be6ec17a331ab8d2dd94ed10f6ea33fc0f05d05aee35e57955042e91fcb5f0531461941a5ff38acf00a76f23d2efebf33459131634b723e5d0bbfc767ae3c77963a9f5f36a26dcf52da40d5916954b37a665ed98837419f1cdc96d919ae8df5d93c8b04d5205b3a2327f740e4338f224bda6b652223a20130f319daa51c56694be6a1d6871585f0ba46e3dd154f3392ea0b7b9f408871518b9f78d5e7286c1ad9ded1db12a73889e63c68b257f0813af16c2cd06e9923a51&a=w%3D850%26h%3D419%26fm%3Dwebp%26q%3D75&cd=2023-07-18T16%3A04%3A51.094Z" %}
+添加 Secrets Manager 用户
 {% endembed %}
-
-对要授予 Secrets Manager 访问权限的任何其他组织成员重复这些步骤。
 
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
 

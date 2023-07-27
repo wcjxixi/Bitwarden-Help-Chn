@@ -258,6 +258,7 @@
   * [账户指纹短语](security/account-fingerprint-phrase.md)
   * [数据存储](security/storage.md)
   * [合规、审计和认证](security/compliance-audits-and-certifications.md)
+  * [=服务器地理位置](security/server-geographies.md)
   * [版本控制](security/versioning.md)
   * [使用网站图标时的隐私](security/privacy-when-using-website-icons.md)
   * [Bitwarden 的分包商](security/who-are-bitwardens-subprocessors.md)
