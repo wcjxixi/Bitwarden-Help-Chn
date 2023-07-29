@@ -273,7 +273,7 @@
   * [Bitwarden 入门：团队成员](miscellaneous/get-started-team-member.md)
   * [Bitwarden 入门：经销商或 MSP](miscellaneous/get-started-provider.md)
   * [Bitwarden 软件发布支持](miscellaneous/bitwarden-software-release-support.md)
-  * [=迁移脚本](miscellaneous/migration-script.md)
+  * [迁移脚本](miscellaneous/migration-script.md)
 
 ## 附录 <a href="#appendix" id="appendix"></a>
 
