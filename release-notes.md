@@ -46,8 +46,8 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 * **Secrets Manager - 服务账户写入权限**：现在服务账户可以被授予对工程和机密的写入权限（参阅[这里](secrets-manager/your-secrets/service-accounts.md)）。
 * **Secrets Manager - 批量用户管理**：现在可以将组织成员批量添加到 Secrets Manager（参阅[这里](secrets-manager/get-started/secrets-manager-quick-start.md#give-members-access)）。
 
-{% hint style="success" %}
-服务账户的写​​入访问权限的充分利用取决于即将发布的 [CLI](secrets-manager/developer-tools/secrets-manager-cli.md) 版本。目前，这只是在 UI 中提供了此选项。请继续关注[发行说明](release-notes.md)以获取更多信息。
+{% hint style="info" %}
+服务账户的写​​入访问权限的充分利用取决于即将发布的 [CLI](secrets-manager/developer-tools/secrets-manager-cli.md) 版本。目前，这只是简单地使该选项在 UI 中可用。请继续关注[发行说明](release-notes.md)以获取更多信息。
 {% endhint %}
 
 ## 2023.5.0

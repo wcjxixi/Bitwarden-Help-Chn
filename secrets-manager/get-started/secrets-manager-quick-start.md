@@ -16,7 +16,7 @@ Secrets Manager 可以从您组织的**计费** → **订阅**页面激活。您
 激活 Secrets Manager
 {% endembed %}
 
-激活后，通过网页 ([https://vault.bitwarden.com](https://vault.bitwarden.com/)) 上的新版产品切换器可以切换到 Secrets Manager：
+激活后，通过网页应用上的产品切换器切换到 Secrets Manager：
 
 {% embed url="https://bitwarden.com/_gatsby/image/c2437774c5a9e867285a6527fa20b4f0/dbf13f712f25a111d687c1fb316d3dfc/product-switcher-1.webp?eu=d7d851e2e4c9ad8e0c3da6813e72363ae43b56abfa0331d56b37e1a848fa9a8121fa4c5774c37ae42e685a8bd2e846bb33c779374bebd1d9c2ee19f4ef61af005b8a52ea66ba7355517ac4fdb4f504456d90480af781cd5baa3e2786b6b3be211f571922f972ee86eda16730b38a256aaef2e66d6fddb421bd430901880622b832ead39d665aadd0ee4aabf9e9eb579edabd2c514886b4323d72346912af6de7c6bb7a16797301214ecbfa23a61cc1a96d4e62215d5b03f5356bd904fa6862cbe6f3a50fd8737fe8a0983074d5c0af80f25aee7522a29c63b4c17c234a5ef446efa17ae9923a51&a=w%3D850%26h%3D310%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.814Z" %}
 产品切换器
