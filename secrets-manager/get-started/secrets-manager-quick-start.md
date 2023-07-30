@@ -27,7 +27,7 @@ Secrets Manager 可以从您组织的**计费** → **订阅**页面激活。您
 ### 给予成员访问权限 <a href="#give-members-access" id="give-members-access"></a>
 
 {% hint style="success" %}
-在继续之前，我们建议为 Secrets Manager 的用户设置一个或多个群组。您需要单独授予成员访问权限，但一旦您的密码库被填充，您可以使用群组来大规模地分配对机密的访问权限。
+在继续之前，我们建议为 Secrets Manager 的用户设置一个或多个群组。您需要通过**成员**页面授予成员对 Secrets Manager 的访问权限，但一旦您的密码库被填充，您可以使用群组来大规模地分配对机密的访问权限。
 {% endhint %}
 
 要授予成员对 Secrets Manager 的访问权限，您必须是组织的所有者或者管理员：
