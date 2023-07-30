@@ -1,10 +1,10 @@
-# Secrets Manager CLI
+# =Secrets Manager CLI
 
 {% hint style="info" %}
 对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-cli/)
 {% endhint %}
 
-Secrets Manager 命令行界面 (CLI) 是用于检索和注入您的机密的强大工具。自 Beta 发布以来，CLI 主要可用于从您的密码库中 `list` 和 `get` [机密](../your-secrets/secrets.md)和[工程](../your-secrets/projects.md)。
+Secrets Manager 命令行界面 (CLI) 是用于检索和注入您的机密的强大工具。Secrets Manager CLI 通过 `create`、`delete`、`edit` 和 `list` 您的机密和工程来组织您的密码库。
 
 Secrets Manager CLI 是自记录的。在命令行中，使用以下命令了解有关可用命令的更多信息：
 

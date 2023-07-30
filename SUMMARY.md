@@ -136,7 +136,7 @@
     * [导入数据](secrets-manager/import-export/import-data.md)
     * [导出数据](secrets-manager/import-export/export-data.md)
   * [开发人员工具](secrets-manager/developer-tools/README.md)
-    * [Secrets Manager CLI](secrets-manager/developer-tools/secrets-manager-cli.md)
+    * [=Secrets Manager CLI](secrets-manager/developer-tools/secrets-manager-cli.md)
     * [Secrets Manager SDK](secrets-manager/developer-tools/secrets-manager-sdk.md)
   * [集成](secrets-manager/integrations/README.md)
     * [GitHub Actions](secrets-manager/integrations/github-actions.md)
