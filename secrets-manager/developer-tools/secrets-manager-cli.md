@@ -55,11 +55,103 @@ Secrets Manager CLI 将暂时保留对旧语法的支持。如果您不确定正
 
 ## secret
 
+`secret` 命令用于访问、操作和创建[机密](../your-secrets/secrets.md)。与所有命令一样，访问令牌访问范围之外的机密和[工程](../your-secrets/projects.md)无法读取或写入。
+
 ### secret create
+
+使用 `bws secret create` 创建一个新的机密。此命令需要 `KEY`、`VALUE` 和 `PROJECT_ID`：
+
+```batch
+bws secret create <KEY> <VALUE> <PROJECT_ID>
+```
+
+或者，您可以使用 `--note <NOTE>` 选项添加注释。例如：
+
+```batch
+bws secret create SES_KEY 0.982492bc-7f37-4475-9e60 f588b2f2-4780-4a78-be2a-b02d014d622f --note "API Key for AWS SES"
+```
+
+默认情况下，此命令将返回一个 JSON 对象并将机密保存到 Secrets Manager。您可以使用 `--output` 标记更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
+
+```yaml
+{
+  "object": "secret",
+  "id": "be8e0ad8-d545-4017-a55a-b02f014d4158",
+  "organizationId": "10e8cbfa-7bd2-4361-bd6f-b02e013f9c41",
+  "projectId": "e325ea69-a3ab-4dff-836f-b02e013fe530",
+  "key": "SES_KEY",
+  "value": "0.982492bc-7f37-4475-9e60",
+  "note": "API Key for AWS SES",
+  "creationDate": "2023-06-28T20:13:20.643567Z",
+  "revisionDate": "2023-06-28T20:13:20.643567Z"
+}
+```
 
 ### secret delete
 
+`bws secret delete` 命令用来删除 `SECRET_IDS` 指定的一个或多个机密。
+
+```batch
+bws secret delete <SECRET_IDS>
+```
+
+要删除 ID 为 `be8e0ad8-d545-4017-a55a-b02f014d4158` 的单个机密：
+
+```batch
+bws secret delete be8e0ad8-d545-4017-a55a-b02f014d4158
+```
+
+对于 ID 为 `382580ab-1368-4e85-bfa3-b02e01400c9f` 和 `47201c5c-5653-4e14-9007-b02f015b2d82` 的多个机密：
+
+```batch
+bws secret delete 382580ab-1368-4e85-bfa3-b02e01400c9f 47201c5c-5653-4e14-9007-b02f015b2d82
+```
+
+输出：
+
+```
+1 secret deleted successfully.
+```
+
 ### secret edit
+
+要编辑机密，以下结构会将更改应用于所选值。在 CLI 中，此命令可以编辑机密的 `KEY`、`VALUE`、`NOTE` 或 `PROJECT_ID`。
+
+```batch
+bws secret edit <SECRET_ID> --key <KEY> --value <VALUE> --note <NOTE> --project-id <PROJECT_ID>
+```
+
+例如，如果您希望向现有机密添加注释：
+
+```batch
+bws secret edit be8e0ad8-d545-4017-a55a-b02f014d4158 --note "I am adding a note"
+```
+
+{% hint style="info" %}
+编辑包含空格的 `NOTE` 时，请在字符串两边加上引号。
+{% endhint %}
+
+要编辑多个字段，其中 `SES_KEY2` 是新的 `key`，`0.1982492bc-7f37-4475-9e60` 是新 `value`：
+
+```batch
+bws secret edit be8e0ad8-d545-4017-a55a-b02f014d4158 --key SES_KEY2 --value 0.1982492bc-7f37-4475-9e60
+```
+
+输出：
+
+```yaml
+{
+  "object": "secret",
+  "id": "be8e0ad8-d545-4017-a55a-b02f014d4158",
+  "organizationId": "10e8cbfa-7bd2-4361-bd6f-b02e013f9c41",
+  "projectId": "e325ea69-a3ab-4dff-836f-b02e013fe530",
+  "key": "SES_KEY2",
+  "value": "0.1982492bc-7f37-4475-9e60",
+  "note": "I am adding a note",
+  "creationDate": "2023-06-28T20:13:20.643567Z",
+  "revisionDate": "2023-06-28T20:45:37.46232Z"
+}
+```
 
 ### secret get
 
