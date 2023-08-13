@@ -1,4 +1,4 @@
-# =Secrets Manager CLI
+# Secrets Manager CLI
 
 {% hint style="info" %}
 对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-cli/)
@@ -71,7 +71,7 @@ bws secret create <KEY> <VALUE> <PROJECT_ID>
 bws secret create SES_KEY 0.982492bc-7f37-4475-9e60 f588b2f2-4780-4a78-be2a-b02d014d622f --note "API Key for AWS SES"
 ```
 
-默认情况下，此命令将返回一个 JSON 对象并将机密保存到 Secrets Manager。您可以使用 `--output` 标记更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
+默认情况下，此命令将返回一个 JSON 对象并将机密保存到 Secrets Manager。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
 ```yaml
 {
@@ -155,19 +155,215 @@ bws secret edit be8e0ad8-d545-4017-a55a-b02f014d4158 --key SES_KEY2 --value 0.19
 
 ### secret get
 
+`bws secret get` 用于检索特定的机密：
+
+```batch
+bws secret get <SECRET_ID>
+```
+
+默认情况下，此命令将检索具有 `SECRET_ID` 的机密对象。
+
+```batch
+bws secret get be8e0ad8-d545-4017-a55a-b02f014d4158
+```
+
+默认情况下，`get` 将以 JSON 数组的形式返回对象，如以下示例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
+
+```yaml
+{
+  "object": "secret",
+  "id": "be8e0ad8-d545-4017-a55a-b02f014d4158",
+  "organizationId": "10e8cbfa-7bd2-4361-bd6f-b02e013f9c41",
+  "projectId": "e325ea69-a3ab-4dff-836f-b02e013fe530",
+  "key": "SES_KEY",
+  "value": "0.982492bc-7f37-4475-9e60",
+  "note": "",
+  "creationDate": "2023-06-28T20:13:20.643567Z",
+  "revisionDate": "2023-06-28T20:13:20.643567Z"
+}
+```
+
 ### secret list
+
+要列出服务账户可以访问的机密，请使用以下命令：
+
+```batch
+bws secret list
+```
+
+您还可以使用以下命令仅列出特定项目中的机密，其中 `e325ea69-a3ab-4dff-836f-b02e013fe530` 表示项目标识符：
+
+```batch
+bws secret list e325ea69-a3ab-4dff-836f-b02e013fe530
+```
+
+默认情况下，`list` 将以 JSON 数组的形式返回对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
+
+```yaml
+[
+  {
+    "object": "secret",
+    "id": "382580ab-1368-4e85-bfa3-b02e01400c9f",
+    "organizationId": "10e8cbfa-7bd2-4361-bd6f-b02e013f9c41",
+    "projectId": "e325ea69-a3ab-4dff-836f-b02e013fe530",
+    "key": "Repository 1",
+    "value": "1234567ertthrjytkuy",
+    "note": "Main Repo",
+    "creationDate": "2023-06-27T19:25:15.822004Z",
+    "revisionDate": "2023-06-27T19:25:15.822004Z"
+  },
+  {
+    "object": "secret",
+    "id": "be8e0ad8-d545-4017-a55a-b02f014d4158",
+    "organizationId": "10e8cbfa-7bd2-4361-bd6f-b02e013f9c41",
+    "projectId": "e325ea69-a3ab-4dff-836f-b02e013fe530",
+    "key": "SES_KEY",
+    "value": "0.982492bc-7f37-4475-9e60",
+    "note": "",
+    "creationDate": "2023-06-28T20:13:20.643567Z",
+    "revisionDate": "2023-06-28T20:13:20.643567Z"
+  }
+]
+```
 
 ## project
 
+`project` 命令用于访问、操作和创建[工程](../your-secrets/projects.md)。分配给您的服务账户的访问范围将决定可以使用 `project` 命令完成哪些操作。
+
+{% hint style="info" %}
+工程可以由具有只读访问权限的服务账户创建。但是，如果此服务账户没有**读取**和**写入**访问权限，则无法编辑不是由其创建的现有工程。
+{% endhint %}
+
 ### project create
+
+`bws project create` 用于创建一个新的工程。此命令需要一个 `NAME`。
+
+```batch
+bws project create <NAME>
+```
+
+在此示例中，将创建一个名为 `My project` 的工程。
+
+```batch
+bws project create "My project"
+```
+
+默认情况下，`bws project create` 将以 JSON 数组的形式返回对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#huan-jing-bian-liang)）。
+
+```yaml
+{
+  "object": "project",
+  "id": "1c80965c-acb3-486e-ac24-b03000dc7318",
+  "organizationId": "10e8cbfa-7bd2-4361-bd6f-b02e013f9c41",
+  "name": "My project",
+  "creationDate": "2023-06-29T13:22:37.942559Z",
+  "revisionDate": "2023-06-29T13:22:37.942559Z"
+}
+```
 
 ### project delete
 
+`bws project delete` 用于删除 `PROJECT_IDS` 指定的一个或多个工程。
+
+```batch
+bws project delete <PROJECT_IDS>
+```
+
+对于单个项目，其中 `f1fe5978-0aa1-4bb0-949b-b03000e0402a` 代表 `PROJECT_ID`：
+
+```batch
+bws project delete f1fe5978-0aa1-4bb0-949b-b03000e0402a
+```
+
+对于多个项目，其中 `1c80965c-acb3-486e-ac24-b03000dc7318` 和 `f277fd80-1bd2-4532-94b2-b03000e00c6c` 代表 `PROJECT_IDS`：
+
+```batch
+bws project delete 1c80965c-acb3-486e-ac24-b03000dc7318 f277fd80-1bd2-4532-94b2-b03000e00c6c
+```
+
+输出：
+
+```
+1 project deleted successfully.
+```
+
 ### project edit
+
+用 `edit` 命令，您可以通过以下输入更改g工程的名称：
+
+```batch
+bws project edit <PROJECT_ID> --name <NEW_NAME>
+```
+
+例如，此命令会将项目名称更改为 `My project 2`。
+
+```batch
+bws project edit 1c80965c-acb3-486e-ac24-b03000dc7318 --name "My project 2"
+```
+
+默认情况下，`bws project edit` 将返回 JSON 数组形式的对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
+
+```yaml
+{
+  "object": "project",
+  "id": "1c80965c-acb3-486e-ac24-b03000dc7318",
+  "organizationId": "10e8cbfa-7bd2-4361-bd6f-b02e013f9c41",
+  "name": "My project 2",
+  "creationDate": "2023-06-29T13:22:37.942559Z",
+  "revisionDate": "2023-06-29T13:31:07.927829Z"
+}
+```
 
 ### project get
 
+`get` 命令检索已登录的服务账户可以从您的密码库访问的特定工程。无法检索密码库中服务账户无权访问的对象。
+
+```batch
+bws project get <PROJECT_ID>
+```
+
+要获取特定工程，请使用以下命令，其中 `e325ea69-a3ab-4dff-836f-b02e013fe530` 代表 `PROJECT_ID`：
+
+```batch
+bws project get e325ea69-a3ab-4dff-836f-b02e013fe530
+```
+
+默认情况下，`get` 将返回 JSON 数组形式的对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
+
+```yaml
+{
+  "object": "project",
+  "id": "e325ea69-a3ab-4dff-836f-b02e013fe530",
+  "organizationId": "10e8cbfa-7bd2-4361-bd6f-b02e013f9c41",
+  "name": "App 1",
+  "creationDate": "2023-06-27T19:24:42.181607Z",
+  "revisionDate": "2023-06-27T19:24:42.181607Z"
+}
+```
+
 ### project list
+
+要列出此服务账户有权访问的工程，请使用以下命令：
+
+```batch
+bws project list
+```
+
+默认情况下，`list` 将返回 JSON 数组形式的对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
+
+```yaml
+[
+  {
+    "object": "project",
+    "id": "e325ea69-a3ab-4dff-836f-b02e013fe530",
+    "organizationId": "10e8cbfa-7bd2-4361-bd6f-b02e013f9c41",
+    "name": "App 1",
+    "creationDate": "2023-06-27T19:24:42.181607Z",
+    "revisionDate": "2023-06-27T19:24:42.181607Z"
+  }.
+  ...
+]
+```
 
 ## config
 
