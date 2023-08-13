@@ -6,7 +6,7 @@
 
 Secrets Manager 命令行界面 (CLI) 是用于检索和注入您的机密的强大工具。Secrets Manager CLI 通过 `create`、`delete`、`edit` 和 `list` 您的机密和工程来组织您的密码库。
 
-Secrets Manager CLI 是自记录的。在命令行中，使用以下命令了解有关可用命令的更多信息：
+Secrets Manager CLI 是自描述的。在命令行中，使用以下命令了解有关可用命令的更多信息：
 
 ```batch
 bws --help, -h
@@ -20,7 +20,7 @@ CLI 可以在 Windows、macOS 和 Linux 发行版上跨平台使用。要下载�
 
 ## 身份验证 <a href="#authentication" id="authentication"></a>
 
-可以使用为特定[服务账户](../your-secrets/service-accounts.md)生成的访问令牌登录 Secrets Manager CLI。这意味着只有对机密和工程有访问权限的服务账户可以使用 CLI 进行交互。有多种方式可以对 CLI 会话进行身份验证：
+可以使用为特定[服务账户](../your-secrets/service-accounts.md)生成的[访问令牌](../your-secrets/access-tokens.md)登录 Secrets Manager CLI。这意味着**只有对机密和工程有访问权限的服务账户可以使用 CLI 进行交互**。有多种方式可以对 CLI 会话进行身份验证：
 
 {% tabs %}
 {% tab title="环境变量" %}
@@ -42,110 +42,42 @@ bws list secrets --access-token 0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHn
 
 ## 命令 <a href="#commands" id="commands"></a>
 
-### list
+命令用于与 Secrets Manager CLI 进行交互。机密和工程是否能被读取或写入，具体取决于授予您的特定访问令牌的权限。要获取 `secret` 和 `project` 命令的更多详细信息，请使用：
 
-`list` 命令用于检索已登录的服务账户可以从您的密码库访问的对象阵列。服务账户对其无访问权限的密码库对象不会被列出。
+* `bws secret --help`
+* `bws project --help`
 
-**list secrets**
+{% hint style="info" %}
+从 Secrets Manager 版本 0.3.0 开始，CLI 语法已更改。例如，列出机密的命令已从 `bws list secret` 更改为 `bws secret list`。
 
-要列出服务账户可以访问的机密，请使用以下命令：
+Secrets Manager CLI 将暂时保留对旧语法的支持。如果您不确定正在使用的 Secrets Manager CLI 的版本，请输入 `bws --version`。
+{% endhint %}
 
-```batch
-bws list secrets
-```
+## secret
 
-默认情况下，`list` 会将对象作为 JSON 数组返回，如下面的示例所示。您可以使用 `--output` 标志更改输出的格式（[了解更多](secrets-manager-cli.md#o-output)）。
+### secret create
 
-```javascript
-[
-  {
-    "object": "secret",
-    "id": "fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff",
-    "organizationId": "9292592f-1efe-43fa-8947-acfd01232bb5",
-    "projectId": "80b55c29-5cc8-42eb-a898-acfd01232bbb",
-    "key": "Stripe API Key",
-    "value": "AIzaSyDaGmWKa4JsXZ-HjGw7ISLn_3namBGewQe",
-    "note": "For Stripe billing & payments",
-    "creationDate": "2023-02-08T15:46:14.114158Z",
-    "revisionDate": "2023-02-24T19:29:19.158506Z"
-  },
-  ...
-]
-```
+### secret delete
 
-**list secrets {projectId}**
+### secret edit
 
-您还可以使用以下命令仅列出特定工程中的机密，其中 `80b55c29-5cc8-42eb-a898-acfd01232bbb` 表示工程标识符：
+### secret get
 
-```batch
-bws list secrets 80b55c29-5cc8-42eb-a898-acfd01232bbb
-```
+### secret list
 
-默认情况下，`list` 会将对象作为 JSON 数组返回，如下面的示例所示。您可以使用 `--output` 标志更改输出的格式（[了解更多](secrets-manager-cli.md#o-output)）。
+## project
 
-```javascript
-[
-  {
-    "object": "secret",
-    "id": "fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff",
-    "organizationId": "9292592f-1efe-43fa-8947-acfd01232bb5",
-    "projectId": "80b55c29-5cc8-42eb-a898-acfd01232bbb",
-    "key": "Stripe API Key",
-    "value": "AIzaSyDaGmWKa4JsXZ-HjGw7ISLn_3namBGewQe",
-    "note": "For Stripe billing & payments",
-    "creationDate": "2023-02-08T15:46:14.114158Z",
-    "revisionDate": "2023-02-24T19:29:19.158506Z"
-  },
-  ...
-]
-```
+### project create
 
-**list projects**
+### project delete
 
-要列出此服务账户可以访问的工程，请使用以下命令：
+### project edit
 
-```batch
-bws list projects
-```
+### project get
 
-默认情况下，`list` 会将对象作为 JSON 数组返回，如下面的示例所示。您可以使用 `--output` 标志更改输出的格式（[了解更多](secrets-manager-cli.md#o-output)）。
+### project list
 
-### get
-
-`get` 命令用于检索已登录的服务账户可以从您的密码库访问的特定对象。服务账户对其无访问权限的密码库对象无法检索。
-
-**get secret {secretId}**
-
-要检索特定的机密，请使用以下命令，其中 `fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff` 表示机密标识符：
-
-```batch
-bws get secret fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff
-```
-
-默认情况下，`get` 会将对象作为 JSON 数组返回，如下面的示例所示。您可以使用 `--output` 标志更改输出的格式（[了解更多](secrets-manager-cli.md#o-output)）。
-
-**get project {projectId}**
-
-要检索特定的工程，请使用以下命令，其中 `80b55c29-5cc8-42eb-a898-acfd01232bbb` 表示工程标识符：
-
-```batch
-bws get project 80b55c29-5cc8-42eb-a898-acfd01232bbb
-```
-
-默认情况下，`get` 会将对象作为 JSON 数组返回，如下面的示例所示。您可以使用 `--output` 标志更改输出的格式（[了解更多](secrets-manager-cli.md#o-output)）。
-
-```javascript
-{
-  "object": "project",
-  "id": "80b55c29-5cc8-42eb-a898-acfd01232bbb",
-  "organizationId": "9292592f-1efe-43fa-8947-acfd01232bb5",
-  "name": "My Project",
-  "creationDate": "2023-02-08T15:39:52.943244Z",
-  "revisionDate": "2023-02-08T15:39:52.943244Z"
-}
-```
-
-### config
+## config
 
 {% hint style="info" %}
 虽然下面描述的功能是由 CLI 提供的，但有些功能是用于自托管的，这在 Secrets Manager 测试版期间不可用。
@@ -159,7 +91,7 @@ bws config server-base https://my_hosted_server.comText Copi
 
 以这种方式完成后，您指定的服务器值将保存到 `~/.bws/config` 文件中作为默认个人资料。您可以使用后续选项来创建备用个人资料和配置文件：
 
-**config --profile**
+### **config --profile**
 
 将 `--profile` 选项与 `config` 命令一起使用可将指定的服务器值保存到备用个人资料，例如：
 
@@ -173,7 +105,7 @@ bws config server-base http://other_hosted_server.com --profile dev
 bws get secret 2863ced6-eba1-48b4-b5c0-afa30104877a --profile dev
 ```
 
-**config --config-file**
+### **config --config-file**
 
 将 `--config-file` 选项与 `config` 命令一起使用可将指定的服务器值保存到备用配置文件，例如将值保存到新配置文件中的默认个人资料：
 
