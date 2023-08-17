@@ -22,7 +22,7 @@
 
 ## 获取免费的家庭版计划 <a href="#get-a-free-families-plan" id="get-a-free-families-plan"></a>
 
-一些组织提供免费的 Bitwarden 家庭计划，您可以使用该计划将安全的密码共享带回家给您所爱的人。询问您的 Bitwarden 管理员您是否有资格[立即开始您的免费家庭计划](../plans-and-pricing/redeem-families-sponsorship.md)。
+一些组织提供免费的 Bitwarden 家庭计划，您可以使用该计划将安全的密码共享带回家给您所爱的人。询问您的 Bitwarden 管理员您是否有资格[立即开始您的免费家庭计划](../plans-and-pricing/password-manager/redeem-families-sponsorship.md)。
 
 使用个人 Bitwarden 帐户而不是您的工作帐户来设置此免费计划，并[了解如何即时在账户间切换](../your-vault/account-switching.md)。
 

@@ -7,7 +7,7 @@
 本文将指导现有的 Bitwarden 个人用户（[免费](about-bitwarden-plans.md#free-individual)或[高级](about-bitwarden-plans.md#premium-individual)）升级到组织计划（[免费](about-bitwarden-plans.md#free-organizations)、[家庭](about-bitwarden-plans.md#families-organizations)、[团队](about-bitwarden-plans.md#teams-organizations)或[企业](about-bitwarden-plans.md#enterprise-organizations)），以便开始在朋友、家人、同事、部门或整个公司之间安全地共享组织数据。
 
 {% hint style="success" %}
-如果您想了解如何将现有的免费组织升级为付费组织，请参阅[此常见问题解答](../organizations/organizations-faqs.md#q-how-do-i-upgrade-my-free-organization)。
+如果您想了解如何将现有的免费组织升级为付费组织，请参阅[此常见问题解答](../../organizations/organizations-faqs.md#q-how-do-i-upgrade-my-free-organization)。
 {% endhint %}
 
 ## 创建您的组织 <a href="#start-your-organization" id="start-your-organization"></a>
@@ -48,7 +48,7 @@
 
 6、如果您选择了付费组织，输入以下信息：
 
-* 对于**团队**或**企业**，输入您需要的 Bitwarden **用户席位**的数量。如果超过此数量，则会增加席位，除非您[指定限制](../organizations/user-management.md#set-a-seat-limit)。
+* 对于**团队**或**企业**，输入您需要的 Bitwarden **用户席位**的数量。如果超过此数量，则会增加席位，除非您[指定限制](../../organizations/user-management.md#set-a-seat-limit)。
 * 对于**家庭**、**团队**或**企业**，输入你需要的**附加存储（GB）**的大小。您的计划带有 1GB 的共享加密文件存储空间，您也可以在以后需要的时候增加附加存储。
 * 对于**家庭**或**企业**，选择是**按年**还是**按月**计费。家庭组织只能按年计费。
 * 对于任何付费组织，请输入您的**付款信息**。
@@ -81,6 +81,6 @@ Bitwarden 提供在**账户创建后 30 天内**取消高级个人计划的退�
 
 现在您已经创建了您的组织。我们建议您：
 
-* [邀请用户到您的组织](../organizations/user-management.md)
-* [创建一个集合](../organizations/collections.md#create-a-collection)
-* [共享项目到集合](../organizations/sharing.md)
+* [邀请用户到您的组织](../../organizations/user-management.md)
+* [创建一个集合](../../organizations/collections.md#create-a-collection)
+* [共享项目到集合](../../organizations/sharing.md)

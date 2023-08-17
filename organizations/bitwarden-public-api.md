@@ -18,7 +18,7 @@ Bitwarden Public API 为组织提供了一套用于管理成员、集合、群�
 * 对于自托管实例：https://your.domain.com/api/docs/
 
 {% hint style="info" %}
-以下计划的客户可以访问 Bitwarden 公共 API：**经典 2019 企业组织**、当前的**企业组织**和当前的**团队组织**。有关更多信息，请参阅[关于 Bitwarden 计划](../plans-and-pricing/about-bitwarden-plans.md)。
+以下计划的客户可以访问 Bitwarden 公共 API：**经典 2019 企业组织**、当前的**企业组织**和当前的**团队组织**。有关更多信息，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 {% endhint %}
 
 > \[**译者注**]：Swagger-UI 是一套 HTML/CSS/JS 框架，用于解析遵守 Swagger 规范的 JSON 或 YAML 文件，展示 swagger-editor 生成的 API 文档，还可以在其中调试 API。它将我们编写的 OpenAPI 规范呈现为交互式的 API 文档，使用浏览器来查看并且操作我们的 RESTful API。

@@ -38,4 +38,4 @@ Bitwarden Send 的使用是一个简单的两步过程：
 现在您已经了解了 Bitwarden Send 的基础知识，我们建议：
 
 * [创建您的第一个 Send](create-a-send.md)
-* [高级会员的文件 Send](../plans-and-pricing/about-bitwarden-plans.md#premium-individual)
+* [高级会员的文件 Send](../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)

@@ -12,11 +12,11 @@
 
 ## 免费个人 <a href="#free-individual" id="free-individual"></a>
 
-对于个人用户，**免费**计划没有任何更改。有关该计划的更多信息，请参阅[关于 Bitwarden 计划](about-bitwarden-plans.md)。
+对于个人用户，**免费**计划没有任何更改。有关该计划的更多信息，请参阅[关于 Bitwarden 计划](password-manager/about-bitwarden-plans.md)。
 
 ## 高级个人 <a href="#premium-individual" id="premium-individual"></a>
 
-对于个人用户，**高级**计划没有任何更改。有关该计划的更多信息，请参阅[关于 Bitwarden 计划](about-bitwarden-plans.md)。
+对于个人用户，**高级**计划没有任何更改。有关该计划的更多信息，请参阅[关于 Bitwarden 计划](password-manager/about-bitwarden-plans.md)。
 
 ## 家庭组织 <a href="#families-organizations" id="families-organizations"></a>
 
@@ -85,8 +85,8 @@
 
 ### 问：我有一个企业组织，如何升级我的计划，以便可以使用 SSO 登录？ <a href="#q-i-have-an-enterprise-organization-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso" id="q-i-have-an-enterprise-organization-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso"></a>
 
-**答：**[联系我们](https://bitwarden.com/contact/)，然后从 **Subject** 下拉菜单中选择 **Upgrade/Change Plan**。我们强烈建议您通过开始一个 [7 天企业免费试用](../my-account/plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)来测试 SSO 登录。
+**答：**[联系我们](https://bitwarden.com/contact/)，然后从 **Subject** 下拉菜单中选择 **Upgrade/Change Plan**。我们强烈建议您通过开始一个 [7 天企业免费试用](start-an-enterprise-trial-with-your-bitwarden-account.md)来测试 SSO 登录。
 
 ### 问：我想测试 SSO 登录。如果我决定不需要它，可以恢复到经典 2019 计划吗？ <a href="#q-i-would-like-to-test-login-with-sso-if-i-decide-i-dont-need-it-can-i-revert-to-my-classic-2019-pla" id="q-i-would-like-to-test-login-with-sso-if-i-decide-i-dont-need-it-can-i-revert-to-my-classic-2019-pla"></a>
 
-**答：**不幸的是，升级后，我们将无法将您恢复为经典 2019 计划。我们建议创建一个新的组织以开始一个 [7 天企业免费试用](../my-account/plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)，以在您的主要组织之外测试 SSO 登录。
+**答：**不幸的是，升级后，我们将无法将您恢复为经典 2019 计划。我们建议创建一个新的组织以开始一个 [7 天企业免费试用](start-an-enterprise-trial-with-your-bitwarden-account.md)，以在您的主要组织之外测试 SSO 登录。

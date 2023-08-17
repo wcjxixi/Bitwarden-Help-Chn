@@ -4,12 +4,12 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/families-for-enterprise/)
 {% endhint %}
 
-云端[企业组织](../organizations/organizations.md#types-of-organizations)的成员可以获得一个**免费的家庭组织**赞助，该赞助可以应用于一个新的或现有的家庭组织，并可直接从网页密码库兑换。如果您自托管您的 Bitwarden 企业组织，请[完成这些步骤](../self-hosting/self-hosting-families-sponsorships.md)以启用家庭赞助。
+云端[企业组织](../../organizations/organizations.md#types-of-organizations)的成员可以获得一个**免费的家庭组织**赞助，该赞助可以应用于一个新的或现有的家庭组织，并可直接从网页密码库兑换。如果您自托管您的 Bitwarden 企业组织，请[完成这些步骤](../../self-hosting/self-hosting-families-sponsorships.md)以启用家庭赞助。
 
-使用**家庭组织**，您可以在自己和最多 5 位朋友或家人之间安全地共享密码库数据。家庭组织包含用于所有 6 位用户的高级 Bitwarden 功能，包括[高级两步登录方式](../two-step-login/two-step-login-methods.md)、[加密文件附件](../your-vault/file-attachments.md)、[紧急访问](../security/emergency-access.md)及[更多](about-bitwarden-plans.md#compare-the-plans)其他功能。
+使用**家庭组织**，您可以在自己和最多 5 位朋友或家人之间安全地共享密码库数据。家庭组织包含用于所有 6 位用户的高级 Bitwarden 功能，包括[高级两步登录方式](../../two-step-login/two-step-login-methods.md)、[加密文件附件](../../your-vault/file-attachments.md)、[紧急访问](../../security/emergency-access.md)及[更多](about-bitwarden-plans.md#compare-the-plans)其他功能。
 
 {% hint style="info" %}
-如果您已加入 [2019 版年家庭计划](updates-to-bitwarden-plans-2019-2020.md#families-organizations)，您仍然可以兑换赞助，但您的组织不会更新以包含 2020 年版计划中所包含的功能。
+如果您已加入 [2019 版年家庭计划](../updates-to-bitwarden-plans-2019-2020.md#families-organizations)，您仍然可以兑换赞助，但您的组织不会更新以包含 2020 年版计划中所包含的功能。
 {% endhint %}
 
 ## 兑换您的赞助 <a href="#redeem-your-sponsorship" id="redeem-your-sponsorship"></a>
@@ -49,7 +49,7 @@
 {% hint style="success" %}
 必须始终从 `https://vault.bitwarden.com` 访问受赞助的家庭组织。您的工作账户可能使用不同的 URL，例如 `https://company.bitwarden.com`，因此您需要确保使用正确的 URL 登录到正确的账户。
 
-**提示**：Bitwarden 移动端和桌面端应用程序可以使用不同的 URL 在[账户间快速切换](../your-vault/account-switching.md)。
+**提示**：Bitwarden 移动端和桌面端应用程序可以使用不同的 URL 在[账户间快速切换](../../your-vault/account-switching.md)。
 {% endhint %}
 
 7、登录后，您将被定向到一个界面，在此界面您可以完成为**新的家庭组织**或**现有的家庭组织**兑换您的赞助的操作：
@@ -84,7 +84,7 @@
 {% endtabs %}
 
 {% hint style="success" %}
-**恭喜！**如果您刚开始使用 Bitwarden 家庭组织，我们建议您查看[这篇文章](../admin-console/organizations-quick-start.md#get-to-know-your-organization)以了解其基础知识。
+**恭喜！**如果您刚开始使用 Bitwarden 家庭组织，我们建议您查看[这篇文章](../../admin-console/organizations-quick-start.md#get-to-know-your-organization)以了解其基础知识。
 {% endhint %}
 
 ## 常见问题 <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
@@ -113,14 +113,14 @@
 
 ### 问：自托管企业组织可以发出赞助吗？ <a href="#q-can-self-hosted-enterprise-organizations-issue-sponsorships" id="q-can-self-hosted-enterprise-organizations-issue-sponsorships"></a>
 
-**答：**可以。你可以在[这里](../self-hosting/self-hosting-families-sponsorships.md)找到简短设置过程的说明。请提醒您的用户，他们的赞助家庭组织将通过我们的公共云 (`https://vault.bitwarden.com`) 提供，而不是通过您的自托管服务器提供。
+**答：**可以。你可以在[这里](../../self-hosting/self-hosting-families-sponsorships.md)找到简短设置过程的说明。请提醒您的用户，他们的赞助家庭组织将通过我们的公共云 (`https://vault.bitwarden.com`) 提供，而不是通过您的自托管服务器提供。
 
 ### 问：受赞助的家庭组织可以放在自托管服务器上吗？ <a href="#q-can-a-sponsored-families-organization-be-on-a-self-hosted-server" id="q-can-a-sponsored-families-organization-be-on-a-self-hosted-server"></a>
 
 **答：**可以。但是有几个步骤需要完成：
 
 1. [如上所述](redeem-families-sponsorship.md#redeem-your-sponsorship)，在 `https://vault.bitwarden.com` 兑换您的赞助。
-2. 还是在 `https://vault.bitwarden.com`，[按照此处所述](../self-hosting/licensing-for-paid-features.md#retrieve-your-license-1)获取您的家庭组织的许可证文件。
-3. [如此处所述](../self-hosting/licensing-for-paid-features.md#apply-your-license-1)，登录到您的自托管服务器并将许可证文件应用到组织。
+2. 还是在 `https://vault.bitwarden.com`，[按照此处所述](../../self-hosting/licensing-for-paid-features.md#retrieve-your-license-1)获取您的家庭组织的许可证文件。
+3. [如此处所述](../../self-hosting/licensing-for-paid-features.md#apply-your-license-1)，登录到您的自托管服务器并将许可证文件应用到组织。
 
 请注意，您的自托管服务器需要连接到 SMTP 邮件服务器，以便将您的家庭组织的邀请发送给其他成员。

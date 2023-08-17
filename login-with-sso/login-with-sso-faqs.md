@@ -63,15 +63,15 @@
 
 ### 问：哪些计划提供 SSO 登录功能？ <a href="#q-what-plans-offer-login-with-sso" id="q-what-plans-offer-login-with-sso"></a>
 
-**答：**仅当前的企业计划提供此功能。参阅[这里](../plans-and-pricing/premium-renewal.md)以了解更多信息。
+**答：**仅当前的企业计划提供此功能。参阅[这里](../plans-and-pricing/password-manager/premium-renewal.md)以了解更多信息。
 
 ### 问：如何升级我的计划，使我可以使用 SSO 登录功能？ <a href="#q-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso" id="q-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso"></a>
 
-**答：**[联系我们](https://bitwarden.com/contact/)并从**主题**下拉列表中选择**升级/更改计划**。我们强烈建议您通过[开始 7 天企业免费试用](../my-account/plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)来测试 SSO 登录。
+**答：**[联系我们](https://bitwarden.com/contact/)并从**主题**下拉列表中选择**升级/更改计划**。我们强烈建议您通过[开始 7 天企业免费试用](../plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)来测试 SSO 登录。
 
 ### 问：我想测试 SSO 登录功能。如果我决定我不需要它，我可以恢复到我的经典 2019 计划吗？ <a href="#q-i-would-like-to-test-login-with-sso-if-i-decide-i-dont-need-it-can-i-revert-to-my-classic-2019-pla" id="q-i-would-like-to-test-login-with-sso-if-i-decide-i-dont-need-it-can-i-revert-to-my-classic-2019-pla"></a>
 
-**答：**很遗憾，一旦您升级，我们无法将您恢复到经典 2019 计划。我们建议创建一个新的组织，开始 [7 天企业免费试用](../my-account/plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)，以测试在您的主要组织之外使用 SSO 登录。
+**答：**很遗憾，一旦您升级，我们无法将您恢复到经典 2019 计划。我们建议创建一个新的组织，开始 [7 天企业免费试用](../plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)，以测试在您的主要组织之外使用 SSO 登录。
 
 ## 可支持性 <a href="#supportability" id="supportability"></a>
 

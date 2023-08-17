@@ -18,12 +18,12 @@
 
 Bitwarden 的愿景是想象一个没有人被黑客入侵的世界。我们将这一使命贯彻到我们的使命中，即帮助个人和公司轻松、安全地管理他们的敏感信息。 Bitwarden 认为：
 
-* 针对个人的基本密码管理可以而且应该是**免费**的。我们提供的就是这样，为个人提供[基本的免费账户](../plans-and-pricing/about-bitwarden-plans.md#free-individual)。
-* 个人和家庭应使用 [TOTP、紧急访问和其他支持的安全功能](../plans-and-pricing/about-bitwarden-plans.md#premium-individual)，以在安全方面发挥积极作用。
-* 组织可以通过[组织密码管理和安全共享](../plans-and-pricing/about-bitwarden-plans.md#bitwarden-business-plans)极大地提高他们的安全配置。
+* 针对个人的基本密码管理可以而且应该是**免费**的。我们提供的就是这样，为个人提供[基本的免费账户](../plans-and-pricing/password-manager/about-bitwarden-plans.md#free-individual)。
+* 个人和家庭应使用 [TOTP、紧急访问和其他支持的安全功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)，以在安全方面发挥积极作用。
+* 组织可以通过[组织密码管理和安全共享](../plans-and-pricing/password-manager/about-bitwarden-plans.md#bitwarden-business-plans)极大地提高他们的安全配置。
 
 {% hint style="success" %}
-对于 Bitwarden 而言，[不同的计划](../plans-and-pricing/about-bitwarden-plans.md)和选项是相互关联和互补的，这些都源于我们对无黑客世界的愿景。通过密码管理赋予每个人在工作**和**家庭中的权力，使我们离这个目标更近了一步。
+对于 Bitwarden 而言，[不同的计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)和选项是相互关联和互补的，这些都源于我们对无黑客世界的愿景。通过密码管理赋予每个人在工作**和**家庭中的权力，使我们离这个目标更近了一步。
 {% endhint %}
 
 Bitwarden 的一个关键方面是，与许多软件应用程序不同，每个密码库中的所有内容都是[端到端加密](../security/encryption.md)的。为了保持这种安全模式，每个使用 Bitwarden 的人都必须有一个唯一的账户和一个唯一的[主密码](../your-vault/your-master-password.md)。主密码应该是**强大**和**易记**的。

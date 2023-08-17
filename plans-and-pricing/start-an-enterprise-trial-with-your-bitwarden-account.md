@@ -1,7 +1,7 @@
-# 使用您的 Bitwarden 账户开始企业试用
+# 开始企业试用
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/enterprise-free-trial/)
+对应的[官方文档地址](https://bitwarden.com/help/enterprise-free-trial/)
 {% endhint %}
 
 ## Bitwarden 新用户？ <a href="#new-to-bitwarden" id="new-to-bitwarden"></a>
@@ -10,7 +10,7 @@
 
 * [开始免费试用企业计划](https://vault.bitwarden.com/#/register?org=enterprise)
 
-或者，要了解 Bitwarden 企业版计划包含的功能，请参阅 [Bitwarden 计划和价格](https://bitwarden.com/pricing/business)或[关于 Bitwarden 计划](../../plans-and-pricing/about-bitwarden-plans.md)。
+或者，要了解 Bitwarden 企业版计划包含的功能，请参阅 [Bitwarden 计划和价格](https://bitwarden.com/pricing/business)或[关于 Bitwarden 计划](password-manager/about-bitwarden-plans.md)。
 
 ## 已是 Bitwardne 用户？ <a href="#already-a-user" id="already-a-user"></a>
 
@@ -37,7 +37,7 @@
 
 5、选择**企业**计划选项。这样做将触发显示额外的面向企业的字段内容。
 
-6、在**用户**部分，输入您需要的 Bitwarden **用户席位**的数量。如果超过此数量，则会增加席位，除非您[指定限制](../../organizations/user-management.md#set-a-seat-limit)。
+6、在**用户**部分，输入您需要的 Bitwarden **用户席位**的数量。如果超过此数量，则会增加席位，除非您[指定限制](../organizations/user-management.md#set-a-seat-limit)。
 
 7、在**附加项目**部分，输入您需要的**附加存储（GB）**的数量。您的计划附带 1GB 加密存储。您也可以在以后需要的时候增加附加存储。
 
@@ -49,6 +49,6 @@
 
 现在，您已经创建好了您的试用版企业组织。我们建议您：
 
-* [添加用户到您的组织](../../organizations/user-management.md)
-* [创建一个集合](../../organizations/collections.md#create-a-collection)
-* 设置 [SSO 登录](../../login-with-sso/about-login-with-sso.md)
+* [添加用户到您的组织](../organizations/user-management.md)
+* [创建一个集合](../organizations/collections.md#create-a-collection)
+* 设置 [SSO 登录](../login-with-sso/about-login-with-sso.md)

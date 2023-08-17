@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/families-for-enterprise-self-hosted/)
 {% endhint %}
 
-如果您自托管 Bitwarden 企业组织，您需要完成一个简短的设置过程，以允许您的用户[兑换家庭组织赞助](../plans-and-pricing/redeem-families-sponsorship.md)。
+如果您自托管 Bitwarden 企业组织，您需要完成一个简短的设置过程，以允许您的用户[兑换家庭组织赞助](../plans-and-pricing/password-manager/redeem-families-sponsorship.md)。
 
 ## 第 1 步：启用云端通信 <a href="#step-1-enable-cloud-communication" id="step-1-enable-cloud-communication"></a>
 

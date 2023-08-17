@@ -6,7 +6,7 @@
 
 本文包含有关**计划和定价**的常见问题（FAQ）。
 
-有关为您选择合适的 Bitwarden 计划的帮助，请参阅[哪种计划适合我？](what-plan-is-right-for-me.md)以及[关于 Bitwarden 计划](about-bitwarden-plans.md)。
+有关为您选择合适的 Bitwarden 计划的帮助，请参阅[哪种计划适合我？](what-plan-is-right-for-me.md)以及[关于 Bitwarden 计划](password-manager/about-bitwarden-plans.md)。
 
 ## 账户管理 <a href="#account-management" id="account-management"></a>
 
@@ -27,7 +27,7 @@
 
 ### 问：如何从个人订阅升级到组织订阅？ <a href="#q-how-do-i-upgrade-from-an-individual-subscription-to-an-organization" id="q-how-do-i-upgrade-from-an-individual-subscription-to-an-organization"></a>
 
-**答：**使用[从个人升级到组织](upgrade-from-individual-to-organization.md)来知道您完成这个过程。
+**答：**使用[从个人升级到组织](password-manager/upgrade-from-individual-to-organization.md)来知道您完成这个过程。
 
 ### 问：如何从我的组织中添加或移除用户席位？ <a href="#q-how-do-i-add-or-remove-a-user-seat-from-my-organization" id="q-how-do-i-add-or-remove-a-user-seat-from-my-organization"></a>
 

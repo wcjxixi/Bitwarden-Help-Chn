@@ -27,7 +27,7 @@ SSO 登录是一种灵活的解决方案，可以满足您的企业需求。SSO 
 
 ## 如何开始使用 SSO 登录？ <a href="#how-do-i-start-using-login-with-sso" id="how-do-i-start-using-login-with-sso"></a>
 
-SSO 登录适用于所有[企业组织](../plans-and-pricing/about-bitwarden-plans.md#enterprise-organizations)的客户 。如果您是 Bitwarden 的新手，我们很乐意通过我们的专用注册页面帮助您完成设置帐户和开始一个 7 天免费试用企业组织的过程：
+SSO 登录适用于所有[企业组织](../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)的客户 。如果您是 Bitwarden 的新手，我们很乐意通过我们的专用注册页面帮助您完成设置帐户和开始一个 7 天免费试用企业组织的过程：
 
 {% embed url="https://vault.bitwarden.com/#/register?org=enterprise" %}
 开始您的企业免费试用

@@ -56,7 +56,7 @@
 
 ### 问：如何升级我的免费组织？ <a href="#q-how-do-i-upgrade-my-free-organization" id="q-how-do-i-upgrade-my-free-organization"></a>
 
-**答：**如果您想升级到付费组织以解锁[许多附加功能](../plans-and-pricing/about-bitwarden-plans.md)，请导航到您的组织**设置** → **订阅**视图，然后选择**升级计划**按钮：
+**答：**如果您想升级到付费组织以解锁[许多附加功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md)，请导航到您的组织**设置** → **订阅**视图，然后选择**升级计划**按钮：
 
 {% embed url="https://bitwarden.com/help/images/plans-and-pricing/upgrade-org.png" %}
 升级您的组织

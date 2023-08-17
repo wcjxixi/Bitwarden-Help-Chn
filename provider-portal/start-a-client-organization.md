@@ -26,7 +26,7 @@
 邀请将自动发送到**客户所有者的电子邮件地址**，以作为[所有者](../admin-console/user-management/member-roles-and-permissions.md)加入组织。
 {% endhint %}
 
-3、从**选择您的计划**列表中，选择要创建的[组织类型](../plans-and-pricing/about-bitwarden-plans.md#compare-the-plans)。
+3、从**选择您的计划**列表中，选择要创建的[组织类型](../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-the-plans)。
 
 {% hint style="success" %}
 团队和企业组织包含适用于所有注册用户的高级功能。

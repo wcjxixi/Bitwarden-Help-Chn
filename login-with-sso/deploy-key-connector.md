@@ -14,7 +14,7 @@
 
 要使用 Key Connector，您必须：
 
-* [拥有一个企业组织](../plans-and-pricing/about-bitwarden-plans.md#enterprise-organizations)
+* [拥有一个企业组织](../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)
 * [拥有一个自托管的 Bitwarden 服务器](../self-hosting/)
 * [拥有一个活跃的 SSO 实施](about-login-with-sso.md)
 * [激活单一组织和单点登录策略](../organizations/enterprise-policies.md)

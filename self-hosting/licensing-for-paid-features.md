@@ -9,7 +9,7 @@
 使用[个人许可证](licensing-for-paid-features.md#individual-license)与使用[组织许可证](licensing-for-paid-features.md#organization-license)时的步骤不同。
 
 {% hint style="info" %}
-本文中的过程假定您已经开始了一个 Bitwarden 付费订阅。如果还没有，请参阅[关于 Bitwarden 计划](../plans-and-pricing/about-bitwarden-plans.md)以及[那种计划适合我？](../plans-and-pricing/what-plan-is-right-for-me.md)。
+本文中的过程假定您已经开始了一个 Bitwarden 付费订阅。如果还没有，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)以及[那种计划适合我？](../plans-and-pricing/what-plan-is-right-for-me.md)。
 {% endhint %}
 
 ## 个人许可证 <a href="#individual-license" id="individual-license"></a>
