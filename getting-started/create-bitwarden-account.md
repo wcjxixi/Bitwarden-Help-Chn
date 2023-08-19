@@ -6,15 +6,13 @@
 
 很高兴我们能成为您的密码安全管理之旅的一部分。要创建 Bitwarden 账户，请点击我们主页上的 **Get Started** 按钮，或者点击[这里](https://vault.bitwarden.com/#/register)。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/Otac80UIyndurzwRV0Lkv/7bd3e6578fe54f615c8bd2b4e129b68a/get-started-homepage-overlay.png?fm=webp&h=519&q=50&w=1007" %}
-Bitwarden 主页
-{% endembed %}
-
 ## 创建您的账户 <a href="#create-your-account" id="create-your-account"></a>
 
-在创建账户界面，填写完所有的字段（_主密码提示_是可选的），然后选择**提交**。在提交主密码之前，您还可以选择**检查密码的已知数据泄露情况**（[了解更多](../your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)）。
+在创建账户界面，填写完所有的字段（主密码提示是可选的），然后选择**提交**。在提交主密码之前，您还可以选择**检查密码的已知数据泄露情况**（[了解更多](../your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)）。
 
-![创建您的账户](../.gitbook/assets/create-account-screen-overlay.png)
+{% hint style="success" %}
+您的 Bitwarden 账户可以创建在我们位于**美国**或**欧盟**的云服务器上，或创建在自托管服务器上。要选择在哪个服务器上创建账户，请滚动到页面底部并使用服务器或登录下拉列表进行选择，然后再提交表单。
+{% endhint %}
 
 ### 通过组织邀请创建账户 <a href="#create-an-account-from-an-organization-invite" id="create-an-account-from-an-organization-invite"></a>
 

@@ -26,8 +26,8 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 
 此次发布包含：
 
-* Secrets Manager - 全面上市：Bitwarden Secrets Manager 现已全面上市，使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理、自动化和部署机密。了解有关 Secrets Manager 计划的更多信息并立即注册。
-* 导入到文件夹或集合：将数据直接导入到现有文件夹，或者如果您是组织成员，则从“工具”→“导入数据”屏幕直接导入到集合。
+* **Secrets Manager - 全面上市**：Bitwarden Secrets Manager 现已全面上市，使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理、自动化和部署机密。了解有关 [Secrets Manager 计划](plans-and-pricing/secrets-manager/secrets-manager-plans.md)和[注册](plans-and-pricing/secrets-manager/sign-up-for-secrets-manager.md)的更多信息。
+* **导入到文件夹或集合**：从**工具** → **导入数据**界面，将数据直接导入到现有文件夹，或者如果您是组织成员，将数据直接导入到集合。
 
 ## 2023.7.1
 
@@ -95,7 +95,7 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 
 此次发布包含：
 
-* **域名验证**：组织可以验证域名（例如 `mycompany.com`）的所有权，允许用户在使用 SSO 登录时跳过组织标识符步骤。参阅[这里](admin-console/login-with-sso/domain-verification.md)。
+* **域验证**：组织可以验证域（例如 `mycompany.com`）的所有权，允许用户在使用 SSO 登录时跳过组织标识符步骤。参阅[这里](admin-console/login-with-sso/domain-verification.md)。
 * **浏览器扩展 - 改进的自动填充安全性**：浏览器扩展现在不允许在页面加载时自动填充不受信任的 iframe。浏览器扩展还会在手动自动填充、使用上下文菜单或使用键盘快捷键时警告用户有关不受信任的 iframe，并在自动填充 HTTP 站点时警告用户，该站点需要基于该项目的已保存 URI 的 HTTPS。参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
 * **主密码安全性检查**：用户现在可以在创建账户或在 Web 密码库上更改主密码时通过 Have I Been Pwned 检查已知的数据泄露，以查找他们预期的主密码。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
 * **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 账户和[更改主密码](your-vault/your-master-password.md#change-your-master-password)的任何用户强制执行。

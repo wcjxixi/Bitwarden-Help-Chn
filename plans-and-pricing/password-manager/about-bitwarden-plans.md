@@ -1,16 +1,12 @@
-# =Password Manager 计划
+# Password Manager 计划
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/password-manager-plans/)
 {% endhint %}
 
-这篇文章中，我们将阐述 Bitwarden 的每一种订阅计划，以帮助你开启您的密码管理和安全数据存储之旅。
+这篇文章中，我们将阐述 Bitwarden Password Manager 的每一种订阅计划，以帮助你开启您的密码管理和安全数据存储之旅。本文反映的是当前的 Password Manager 计划，更新时间为 2020 年 09 月 06 日。在该日期之前已创建了账户的用户可以在[这里](premium-renewal.md)了解如何选择加入更新。
 
-_本文反映的是当前的 Bitwarden 计划，更新时间为 2020 年 09 月 06 日。在该日期之前已创建了账户的用户可以在_[_这里_](premium-renewal.md)_了解如何选择加入更新。_
-
-{% hint style="info" %}
-在公开测试计划期间，[Bitwarden Secrets Manager](../../secrets-manager/secrets-manager-overview.md) 可供所有组织免费使用，更多详细信息将在 GA 临近时公布。[了解更多](../../secrets-manager/get-started/beta-signup.md)。
-{% endhint %}
+要查看 Secrets Manager 计划，请参阅[此处](../secrets-manager/secrets-manager-plans.md)。
 
 ## 个人计划 <a href="#personal-plans" id="personal-plans"></a>
 
@@ -69,3 +65,7 @@ Bitwarden 商业计划旨在满足小型团队、成长型公司和大型企业�
 在下表中，「高级功能」（包含在**团队组织**和**企业组织**中）使用星号 (\*) 标记。
 
 <table><thead><tr><th width="200">商业计划包含的功能</th><th>团队组织</th><th>企业组织</th></tr></thead><tbody><tr><td>登录、笔记、支付卡和身份的安全存储</td><td>无限制</td><td>无限制</td></tr><tr><td>数据共享</td><td>无限制</td><td>无限制</td></tr><tr><td>跨设备访问 Bitwarden</td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td>跨设备同步</td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td>密码生成器</td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td>基础用户数</td><td>1</td><td>1</td></tr><tr><td>最大用户数</td><td>无限制</td><td>无限制</td></tr><tr><td>最大集合数</td><td>无限制</td><td>无限制</td></tr><tr><td><a href="../../import-export/encrypted-exports.md">加密导出</a></td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td><a href="../../bitwarden-send/about-send.md">Bitwarden Send</a></td><td>文本+文件</td><td>文本+文件</td></tr><tr><td>*<a href="../../two-step-login/two-step-login-methods.md">两步登录</a></td><td>验证器程序、电子邮件、Yubikey、FIDO2 以及 Duo</td><td>验证器程序、电子邮件、Yubikey、FIDO2 以及 Duo</td></tr><tr><td>适用于组织的 Duo</td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td>*<a href="../../your-vault/file-attachments.md">加密文件附件</a></td><td>1 GB/用户 + 1 GB 共享</td><td>1 GB/用户 + 1 GB 共享</td></tr><tr><td>*<a href="../../your-vault/totp.md">Bitwarden 验证器</a>(TOTP)</td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td>*<a href="../../security/emergency-access.md">个人紧急访问</a></td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td>*<a href="../../your-vault/vault-health-reports.md">密码库健康报告</a></td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td>*优先支持</td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td><a href="../../admin-console/reporting/event-logs.md">事件日志</a></td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td><a href="../../organizations/groups.md">用户群组</a></td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td><a href="../../organizations/bitwarden-public-api.md">API 访问</a></td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td><a href="../../directory-connector/about-directory-connector.md">目录连接器</a></td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td><a href="../../login-with-sso/about-login-with-sso.md">SSO 登录</a></td><td>—</td><td><strong>✔︎</strong></td></tr><tr><td><a href="../../login-with-sso/about-key-connector.md">Key Connector</a></td><td>—</td><td><strong>✔︎</strong></td></tr><tr><td><a href="../../organizations/enterprise-policies.md">企业策略</a></td><td>—</td><td><strong>✔︎</strong></td></tr><tr><td><a href="../../organizations/admin-password-reset.md">管理员密码重置</a></td><td>—</td><td><strong>✔︎</strong></td></tr><tr><td><a href="../../self-hosting/">自托管选项</a></td><td>—</td><td><strong>✔︎</strong></td></tr><tr><td><a href="../../admin-console/user-management/member-roles-and-permissions.md">自定义管理角色</a></td><td>—</td><td><strong>✔</strong></td></tr><tr><td><a href="redeem-families-sponsorship.md">适用于成员的家庭赞助</a></td><td>—</td><td><strong>✔︎</strong></td></tr><tr><td>费用</td><td>$3/用户/月（按年计费）或 $4/用户/月（按月计费）</td><td>$5/用户/月（按年计费）或$6/用户/月（按月计费）</td></tr></tbody></table>
+
+## 自托管组织 <a href="#self-hosted-organizations" id="self-hosted-organizations"></a>
+
+自托管 Bitwarden 组织可以使用其所选计划提供的所有付费功能。只有家庭和企业组织可以导入到自托管服务器。了解有关[自托管组织](../../self-hosting/self-host-an-organization.md)的更多信息。
