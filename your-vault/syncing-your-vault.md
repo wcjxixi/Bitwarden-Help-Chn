@@ -8,7 +8,7 @@
 
 为了将这些更改拉取到另一个 Bitwarden 客户端应用程序，您的密码库将需要同步。
 
-## 自动同步 <a href="#what-is-vault-syncing" id="what-is-vault-syncing"></a>
+## 自动同步 <a href="#automatic-sync" id="automatic-sync"></a>
 
 您的个人[网页密码库](../getting-started/getting-started-webvault.md)中的项目将始终保持同步。组织密码库的项目将跨用户和客户端应用程序每 30 分钟自动同步一次。
 
@@ -18,7 +18,7 @@ Bitwarden 客户端应用程序（桌面应用程序、浏览器扩展、移动�
 当您在新设备上安装了 Bitwarden，只需登录到您现有的账户，就会自动拉取您的最新密码库数据。
 {% endhint %}
 
-## 手动同步 <a href="#what-is-vault-syncing" id="what-is-vault-syncing"></a>
+## 手动同步 <a href="#manual-sync" id="manual-sync"></a>
 
 要从 Bitwarden 客户端应用程序手动同步密码库：
 
