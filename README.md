@@ -1,5 +1,9 @@
 # 关于
 
+> 20230825：由于官方帮助中心改动频繁，以及个人能力+精力有限，暂时无限期停止更新！
+
+***
+
 这里是对 Bitwarden 官方 [Bitwarden Help Center](https://bitwarden.com/help/) 的中文翻译，并参考了 Github 上的 [Bitwarden Help](https://github.com/bitwarden/help) 项目（已停止更新）。
 
 在便于理解的基础上，文字内容尽量将其中文化，同时也包括部分图片内容。

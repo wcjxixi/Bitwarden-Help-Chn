@@ -51,14 +51,14 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 ### 主密码重置 <a href="#master-password-reset" id="master-password-reset"></a>
 
-启用**主密码重置**策略将允许所有者和管理员使用[密码重置功能](../admin-console/user-management/account-recovery.md)来重置已注册用户的主密码。默认情况下，用户需要[自行注册密码重置](../admin-console/user-management/account-recovery.md#self-enroll-in-password-reset)，但是，[自动注册](enterprise-policies.md#automatic-enrollment)选项可用于受邀用户的强制自动注册：
+启用**主密码重置**策略将允许所有者和管理员使用[密码重置功能](admin-password-reset.md)来重置已注册用户的主密码。默认情况下，用户需要[自行注册密码重置](admin-password-reset.md#self-enroll-in-password-reset)，但是，[自动注册](enterprise-policies.md#automatic-enrollment)选项可用于受邀用户的强制自动注册：
 
 #### 自动注册 <a href="#automatic-enrollment" id="automatic-enrollment"></a>
 
 启用**自动注册**选项将在新用户[加入组织的邀请被接受后](user-management.md#accept)自动注册新用户的密码重置功能并阻止他们撤销。
 
 {% hint style="info" %}
-已经在组织中的用户不会被注册密码重置，而是需要[自行注册](../admin-console/user-management/account-recovery.md#self-enroll-in-password-reset)。
+已经在组织中的用户不会被注册密码重置，而是需要[自行注册](admin-password-reset.md#self-enroll-in-password-reset)。
 {% endhint %}
 
 ### 密码生成器 <a href="#password-generator" id="password-generator"></a>

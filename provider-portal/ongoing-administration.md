@@ -17,7 +17,7 @@
 | 添加和移除用户      | 当他们加入或离开客户的组织时，从 Bitwarden 入职和离职用户。 | <p><a href="../organizations/user-management.md#onboard-users">用入职用户</a><br><a href="../organizations/user-management.md#offboard-users">离职用户</a></p> |
 | 更改用户权限       | 当最终用户更改角色时，根据需要更改他们的权限。             | [用户类型和访问控制](../admin-console/user-management/member-roles-and-permissions.md)                                                                         |
 | 添加和移除用户席位    | 随着客户业务的增长，管理客户组织的用户席位的数量。           | [管理用户席位](../organizations/user-management.md#manage-user-seats)                                                                                       |
-| 重置用户主密码      | 如果启用，请使用管理员密码重置来恢复忘记主密码的最终用户帐户。     | [管理员密码重置](../admin-console/user-management/account-recovery.md)                                                                                       |
+| 重置用户主密码      | 如果启用，请使用管理员密码重置来恢复忘记主密码的最终用户帐户。     | [管理员密码重置](../organizations/admin-password-reset.md)                                                                                                   |
 | 创建 & 共享密码库项目 | 当用户需要访问新系统时，即时添加和共享新的密码库项目。         | [共享](../organizations/sharing.md)                                                                                                                     |
 | 安全的一次性共享     | 使用 Bitwarden 安全地一次性共享凭证、文档等。        | [创建 Send](../bitwarden-send/create-a-send.md)                                                                                                         |
 | 监控密码库健康      | 使用组织密码库健康报告和事件日志来密切关注客户组织的整体健康状况。   | <p><a href="../your-vault/vault-health-reports.md">密码库健康报告</a></p><p><a href="../admin-console/reporting/event-logs.md">事件日志</a></p>                  |

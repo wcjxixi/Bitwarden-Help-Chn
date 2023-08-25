@@ -325,7 +325,7 @@ _服务器 1.44.0，Web 2.24.0，桌面 端1.29.0，浏览器扩展 1.54.0，移
 * **自动扩展组织席位**：团队和企业组织将在邀请新用户时自动扩展用户席位。组织可以设置扩展限制，以防止席位数量超过指定的数量（参阅[这里](organizations/user-management.md)）。
 * **自定义密码库超时**：您现在可以为密码库超时指定自定义时间范围（小时和分钟）（参阅[这里](your-vault/vault-timeout-options.md#vault-timeout)）。
 * **自定义角色 - 改进的集合权限**：自定义角色的集合管理权限已扩展为包括对用户是否可以创建、编辑或删除已分配的集合或所有集合的精细控制（参阅[这里](your-vault/vault-timeout-options.md#vault-timeout)）。
-* **管理员密码重置 - 重置后更新密码**：管理员重置的密码现在必须由他们所属的用户在登录 Bitwarden 时立即更新（参阅[这里](admin-console/user-management/account-recovery.md#after-a-password-reset)）。
+* **管理员密码重置 - 重置后更新密码**：管理员重置的密码现在必须由他们所属的用户在登录 Bitwarden 时立即更新（参阅[这里](organizations/admin-password-reset.md#after-a-password-reset)）。
 * **浏览器扩展 - 自动填充 Span 元素**：浏览器扩展现在可以在 HTML `<span>` 元素的 innerText 中自动填充[自定义字段](your-vault/custom-fields.md)（参阅[这里](<password-manager/auto-fill/auto-fill-basics/Auto-fill Custom Fields.md#html-span-elements>)）。
 * &#x20;**浏览器扩展 - 自动生物识别提示**：浏览器扩展现在可以在打开时自动提示您生物识别输入。您可以从 **⚙️设置**菜单切换此行为（参阅[这里](your-vault/unlocking-with-biometrics.md)）。
 * **网页密码库 - 黑暗模式**：网页密码库现在拥有黑暗模式（参阅[这里](miscellaneous/change-app-theme.md)）。
@@ -338,7 +338,7 @@ _服务器 1.43.0，Web 2.23.0，桌面端 1.28.3，浏览器扩展 1.53.0，移
 Bitwarden 的最新版本侧重于对现有功能进行经常性的改进：
 
 * **移动设备上的 FIDO2 WebAuthn**：iOS 和 Android 现在支持通过 FIDO2 WebAuthn 进行两步登录（参阅[这里](two-step-login/setup-guides/two-step-login-via-fido2-webauthn.md)）。
-* **管理员密码重置 - 自动注册改进**：自动注册策略选项现在会阻止用户撤销管理员密码重置（参阅[这里](admin-console/user-management/account-recovery.md#automatic-enrollment)）。
+* **管理员密码重置 - 自动注册改进**：自动注册策略选项现在会阻止用户撤销管理员密码重置（参阅[这里](organizations/admin-password-reset.md#automatic-enrollment)）。
 * **浏览器扩展 - 从保存栏中选择文件夹**：您现在可以直接从浏览器扩展的保存提示中选择要将项目保存到哪个[文件夹](your-vault/folders.md)（参阅[这里](getting-started/getting-started-browserext.md#add-a-login)）。
 * **浏览器扩展 - 上下文菜单项目自定义字段**：您现在可以直接从浏览器扩展的上下文菜单中复制 HTML 元素名称，以便轻松创建自定义字段（参阅[这里](your-vault/custom-fields.md#custom-field-names)）。
 * **网页密码库 - 策略位置更改**：现在只能从组织的**管理 → 策略**界面配置[企业策略](organizations/enterprise-policies.md)，而不能从业务门户配置。
@@ -367,7 +367,7 @@ Bitwarden 的最新版本专注于使托管服务提供商（MSP）能够支持�
 
 Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一项最新功能，旨在帮助需要大规模地确保密码安全的企业。此次发布包括：
 
-* **管理员密码重置**：企业组织可以注册管理员密码重置功能，以允许指定的管理员重置组织用户的主密码（参阅[这里](admin-console/user-management/account-recovery.md)）。
+* **管理员密码重置**：企业组织可以注册管理员密码重置功能，以允许指定的管理员重置组织用户的主密码（参阅[这里](organizations/admin-password-reset.md)）。
 * **主密码重新提示**：使用新的主密码重新提示选项，要求验证您的主密码才能查看被用户指定的敏感密码库项目。（参阅[这里](your-vault/vault-items.md#protect-individual-items)）。
 * **批量用户管理**：组织所有者和管理员现在可以从组织中批量重新发送邀请、确认已接受的用户以及移除用户（参阅[这里](organizations/user-management.md#onboard-users)）。
 * **事件日志导出**：直接从网页密码库导出事件日志（参阅[这里](admin-console/reporting/event-logs.md#export-events)）。
