@@ -61,11 +61,11 @@ Bitwarden 还提供组织账户（用于密码共享等），分别为针对个�
 
 {% tabs %}
 {% tab title="2020-8-31之前" %}
-<table><thead><tr><th width="150"></th><th width="150">家庭版（仅年付）</th><th width="150">团队版年付</th><th width="150">企业版年付</th><th width="150">团队版月付</th><th>企业版月付</th></tr></thead><tbody><tr><td>初始价格</td><td>$1.00/月</td><td>$5.00/月</td><td>$3.00/人/月</td><td>$8.00/月</td><td>$4.00/人/月</td></tr><tr><td>附加用户</td><td>-</td><td>$2.00/人/月</td><td>$3.00/人/月</td><td>$2.50/人/月</td><td>$4.00/人/月</td></tr><tr><td>附加存储</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td><td>$0.50/GB/月</td><td>$0.50/GB/月</td></tr><tr><td>高级功能</td><td>$3.33/月</td><td>需个人购买</td><td>需个人购买</td><td>需个人购买</td><td>需个人购买</td></tr></tbody></table>
+<table><thead><tr><th width="150">项目</th><th width="150">家庭版（仅年付）</th><th width="150">团队版年付</th><th width="150">企业版年付</th><th width="150">团队版月付</th><th>企业版月付</th></tr></thead><tbody><tr><td>初始价格</td><td>$1.00/月</td><td>$5.00/月</td><td>$3.00/人/月</td><td>$8.00/月</td><td>$4.00/人/月</td></tr><tr><td>附加用户</td><td>-</td><td>$2.00/人/月</td><td>$3.00/人/月</td><td>$2.50/人/月</td><td>$4.00/人/月</td></tr><tr><td>附加存储</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td><td>$0.50/GB/月</td><td>$0.50/GB/月</td></tr><tr><td>高级功能</td><td>$3.33/月</td><td>需个人购买</td><td>需个人购买</td><td>需个人购买</td><td>需个人购买</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="2020-8-31之后" %}
-<table><thead><tr><th width="150"></th><th width="150">家庭版（仅年付）</th><th width="150">团队版年付</th><th width="150">企业版年付</th><th width="150">团队版月付</th><th>企业版月付</th></tr></thead><tbody><tr><td>初始价格</td><td>$3.33/月</td><td>$3.00/人/月</td><td>$5.00/人/月</td><td>$4.00/人/月</td><td>$6.00/人/月</td></tr><tr><td>附加用户</td><td>-</td><td>$3.00/人/月</td><td>$5.00/人/月</td><td>$4.00/人/月</td><td>$6.00/人/月</td></tr><tr><td>附加存储</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td><td>$0.5/GB/月</td><td>0.5/GB/月</td></tr><tr><td>高级功能</td><td>已包含</td><td>已包含</td><td>已包含</td><td>已包含</td><td>已包含</td></tr></tbody></table>
+<table><thead><tr><th width="150">项目</th><th width="150">家庭版（仅年付）</th><th width="150">团队版年付</th><th width="150">企业版年付</th><th width="150">团队版月付</th><th>企业版月付</th></tr></thead><tbody><tr><td>初始价格</td><td>$3.33/月</td><td>$3.00/人/月</td><td>$5.00/人/月</td><td>$4.00/人/月</td><td>$6.00/人/月</td></tr><tr><td>附加用户</td><td>-</td><td>$3.00/人/月</td><td>$5.00/人/月</td><td>$4.00/人/月</td><td>$6.00/人/月</td></tr><tr><td>附加存储</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td><td>$0.5/GB/月</td><td>0.5/GB/月</td></tr><tr><td>高级功能</td><td>已包含</td><td>已包含</td><td>已包含</td><td>已包含</td><td>已包含</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
 
