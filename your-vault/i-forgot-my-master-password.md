@@ -9,7 +9,7 @@ Bitwarden 使用零知识加密运行。这意味着 Bitwarden 不知道、也�
 1. 尝试在另外一台设备上登录。
 2. [设置主密码提示](https://vault.bitwarden.com/#/hint)。如果您设置了，提示将通过电子邮件发送到您的收件箱。如果你没有设置提示，你会收到一封邮件来告知您。
 3. 如果您启用了[紧急访问](../security/emergency-access.md)，请联系您信任的紧急联系人以重新获得对您的密码库的读取或接管访问权限。
-4. 如果您的组织使用了[管理员密码重置](../organizations/admin-password-reset.md)，请联系管理员重置您的主密码。
+4. 如果您的组织使用了[管理员密码重置](../admin-console/user-management/account-recovery.md)，请联系管理员重置您的主密码。
 
 如果以上选项都不能让您访问您的密码库，您需要删除您的账户并重新创建一个新的账户：
 

@@ -159,7 +159,7 @@
       * [与 Google Workspace 同步](directory-connector/sync-with-google-workspace.md)
       * [与 Okta 同步](directory-connector/sync-with-okta.md)
       * [与 OneLogin 同步](directory-connector/sync-with-onelogin.md)
-    * [管理员密码重置](organizations/admin-password-reset.md)
+    * [=账户恢复](admin-console/user-management/account-recovery.md)
   * [导入&导出](admin-console/import-and-export/README.md)
     * [导入数据到组织](import-export/import-data-to-an-organization.md)
   * [SSO 登录](login-with-sso/README.md)

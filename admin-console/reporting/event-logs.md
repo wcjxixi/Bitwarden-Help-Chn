@@ -37,7 +37,7 @@
 * Login attempted failed with incorrect password. (`1005`)
 * Login attempt failed with incorrect two-step login. (`1006`)
 * User Exported their personal Vault items. (`1007`)
-* User updated a password issued through [Admin Password Reset](../../organizations/admin-password-reset.md). (`1008`)
+* User updated a password issued through [Admin Password Reset](../user-management/account-recovery.md). (`1008`)
 * User migrated their decryption key with [Key Connector](../../login-with-sso/about-key-connector.md). (`1009`)
 
 ### 项目事件 <a href="#item-events" id="item-events"></a>

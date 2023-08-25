@@ -90,7 +90,7 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 
 ## 管理员密码重置 <a href="#admin-password-reset" id="admin-password-reset"></a>
 
-管理员密码重置允许指定的管理员恢复企业组织用户账户以及在员工忘记主密码时恢复访问权限。通过启用主密码重置策略，可以为组织激活管理员密码重置。[了解如何开始](../../organizations/admin-password-reset.md)。
+管理员密码重置允许指定的管理员恢复企业组织用户账户以及在员工忘记主密码时恢复访问权限。通过启用主密码重置策略，可以为组织激活管理员密码重置。[了解如何开始](../../admin-console/user-management/account-recovery.md)。
 
 ## 事件日志 <a href="#event-logs" id="event-logs"></a>
 
