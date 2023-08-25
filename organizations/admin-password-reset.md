@@ -10,23 +10,13 @@
 
 ## 什么是账户恢复？ <a href="#what-is-account-recovery" id="what-is-account-recovery"></a>
 
-账户恢复允许[指定的管理员](admin-password-reset.md#permissions)恢复企业组织用户帐户并在员工忘记[主密码](../your-vault/your-master-password.md)时恢复访问权限。通过[启用账户恢复策略](admin-password-reset.md#activate-account-recovery)为组织激活账户恢复。
+账户恢复（以前叫「管理员密码重置」）允许[指定的管理员](admin-password-reset.md#permissions)恢复企业组织用户账户并在员工忘记[主密码](../your-vault/your-master-password.md)时恢复访问权限。通过[启用账户恢复策略](admin-password-reset.md#activate-account-recovery)为组织激活账户恢复。
 
 个人用户必须注册（通过[自行注册](admin-password-reset.md#self-enroll-in-password-reset)或使用[自动注册策略选项](admin-password-reset.md#automatic-enrollment)）才有资格进行账户恢复，因为注册会触发密钥交换，以确保恢复的安全。
 
-**账户恢复不会绕过两步登录或 SSO 登录。**如果为帐户启用了[两步登录方式](../two-step-login/two-step-login-methods.md)，或者如果您的组织[要求 SSO 身份验证](enterprise-policies.md#single-sign-on-authentication)，您在密码重置后仍将需要使用该方式访问您的密码库。
+**账户恢复不会绕过两步登录或 SSO 登录。**如果为账户启用了[两步登录方式](../two-step-login/two-step-login-methods.md)，或者如果您的组织[要求 SSO 身份验证](enterprise-policies.md#single-sign-on-authentication)，您在密码重置后仍将需要使用该方式访问您的密码库。
 
 ### 加密 <a href="#encryption" id="encryption"></a>
-
-{% hint style="info" %}
-**2021-06-01：**账户恢复功能的发布为所有组织引入了一个全新的 RSA 公钥/私钥对。私钥在存储之前使用组织预先存在的对称密钥进一步加密。
-
-此密钥对在创建新的组织时，在客户端生成并加密。或者对于已有的组织，使用以下方式生成并加密密钥对：
-
-* 导航至**管理** → **人员**界面。
-* 更新**设置** → **我的组织**界面上的任何内容。
-* 从一种组织类型升级到另一种组织类型。
-{% endhint %}
 
 当组织的成员[注册](admin-password-reset.md#automatic-enrollment)管理员密码重置时，该用户的[加密密钥](../security/account-encryption-key.md)将使用组织的公钥进行加密。然后将其作为**密码重置密钥**存储。
 
