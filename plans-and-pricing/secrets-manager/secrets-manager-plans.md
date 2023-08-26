@@ -1,4 +1,4 @@
-# =Secrets Manager 计划
+# Secrets Manager 计划
 
 {% hint style="success" %}
 机密优先支持即将推出对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-plans/)
@@ -22,7 +22,7 @@
 
 ## 团队 <a href="#teams" id="teams"></a>
 
-为您的整个开发团队提供额外的业务功能。Secrets Manager 团队版计划的价格为 **$6/每用户每月**，提供：
+为您的整个开发团队提供额外的业务功能。Secrets Manager 团队版计划的价格为 **$6/用户/月**，提供：
 
 * 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
 * 最多 50 个[服务账户](../../secrets-manager/your-secrets/service-accounts.md)
@@ -31,7 +31,7 @@
 
 ## 企业 <a href="#enterprise" id="enterprise"></a>
 
-通过自动化配置和其他管理功能支持企业需求。Secrets Manager 企业版计划的价格为 **$12/每用户每月**，提供：
+通过自动化配置和其他管理功能支持企业需求。Secrets Manager 企业版计划的价格为 **$12//用户/月**，提供：
 
 * 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
 * 最多 200 个[服务账户](../../secrets-manager/your-secrets/service-accounts.md)
@@ -40,24 +40,24 @@
 
 ## 计划比较 <a href="#compare-plans" id="compare-plans"></a>
 
-| 功能                                  | 免费版                      | 团队版                                                         | 企业版                                                          |
-| ----------------------------------- | ------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------ |
-| 无限数量机密存储                            | **✔︎**                   | **✔︎**                                                      | **✔︎**                                                       |
-| Securely share secrets with users   | 最多 2 位用户                 | 7b00d19a614b46fd9cbf6f82d7f5eabc                            | Unlimited users                                              |
-| Machine access via service accounts | Up to 3 service accounts | Up to 50 service accounts<mark style="color:red;">\*</mark> | Up to 200 service accounts<mark style="color:red;">\*</mark> |
-| Organize secrets via projects       | Up to 3 projects         | Unlimited projects                                          | Unlimited projects                                           |
-| 机密导出                                | **✔︎**                   | **✔︎**                                                      | **✔︎**                                                       |
-| 两步登录                                | 验证器程序，电子邮件               | 验证器程序、电子邮件、Yubikey、FIOD2 以及 Duo                             | 验证器程序、电子邮件、Yubikey、FIOD2 以及 Duo                              |
-| Duo 方式的组织两步登录                       | —                        | **✔︎**                                                      | **✔︎**                                                       |
-| 事件和审计日志                             | —                        | **✔︎**                                                      | **✔︎**                                                       |
-| 用户群组                                | —                        | **✔︎**                                                      | **✔︎**                                                       |
-| 目录连接器                               | —                        | **✔︎**                                                      | **✔︎**                                                       |
-| SSO 集成                              | —                        | —                                                           | **✔︎**                                                       |
-| SCIM 支持                             | —                        | —                                                           | **✔︎**                                                       |
-| 企业策略                                | —                        | —                                                           | **✔︎**                                                       |
-| 管理员密码重置                             | —                        | —                                                           | **✔︎**                                                       |
-| 自定义角色                               | —                        | —                                                           | **✔︎**                                                       |
-| 优先支持                                | —                        | —                                                           | **✔︎**                                                       |
-| 即将推出：自托管选项                          | —                        | —                                                           | **✔︎**                                                       |
+| 功能            | 免费版        | 团队版                                           | 企业版                                            |
+| ------------- | ---------- | --------------------------------------------- | ---------------------------------------------- |
+| 不限数量机密存储      | **✔︎**     | **✔︎**                                        | **✔︎**                                         |
+| 与用户安全地共享机密    | 最多 2 位用户   | 不限数量的用户                                       | 不限数量的用户                                        |
+| 通过服务账户的机器访问   | 最多 3 个服务账户 | 最多 50 个服务账户<mark style="color:red;">\*</mark> | 最多 200 个服务账户<mark style="color:red;">\*</mark> |
+| 通过工程组织机密      | 最多 3 个工程   | 不限数量的工程                                       | 不限数量的工程                                        |
+| 机密导出          | **✔︎**     | **✔︎**                                        | **✔︎**                                         |
+| 两步登录          | 验证器程序、电子邮件 | 验证器程序、电子邮件、Yubikey、FIOD2 以及 Duo               | 验证器程序、电子邮件、Yubikey、FIOD2 以及 Duo                |
+| Duo 方式的组织两步登录 | —          | **✔︎**                                        | **✔︎**                                         |
+| 事件和审计日志       | —          | **✔︎**                                        | **✔︎**                                         |
+| 用户群组          | —          | **✔︎**                                        | **✔︎**                                         |
+| 目录连接器         | —          | **✔︎**                                        | **✔︎**                                         |
+| SSO 集成        | —          | —                                             | **✔︎**                                         |
+| SCIM 支持       | —          | —                                             | **✔︎**                                         |
+| 企业策略          | —          | —                                             | **✔︎**                                         |
+| 管理员密码重置       | —          | —                                             | **✔︎**                                         |
+| 自定义角色         | —          | —                                             | **✔︎**                                         |
+| 优先支持          | —          | —                                             | **✔︎**                                         |
+| 即将推出：自托管选项    | —          | —                                             | **✔︎**                                         |
 
-<mark style="color:red;">\*</mark>可以以每个 50 美分购买额外的服务账户。
+<mark style="color:red;">\*</mark>可以以每个 50 美分购买附加服务账户。
