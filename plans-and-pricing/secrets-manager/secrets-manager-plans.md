@@ -1,7 +1,7 @@
 # =Secrets Manager 计划
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-plans/)
+机密优先支持即将推出对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-plans/)
 {% endhint %}
 
 这篇文章中，我们将阐述 Bitwarden Secrets Manager 的每一种订阅计划，以帮助你开启您的机密管理和安全数据存储之旅。要查看 Password Manager 计划，请参阅[此处](../password-manager/about-bitwarden-plans.md)。
@@ -27,8 +27,37 @@
 * 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
 * 最多 50 个[服务账户](../../secrets-manager/your-secrets/service-accounts.md)
 * 每个附加服务账户 50 美分
-* 为组 织提供的所有功能，例如事件日志和 API 访问
+* 提供给[团队组织](../../organizations/organizations.md#types-of-organizations)的所有功能，例如[事件日志](../../admin-console/reporting/event-logs.md)和 [API 访问](../../organizations/bitwarden-public-api.md)
 
 ## 企业 <a href="#enterprise" id="enterprise"></a>
 
+通过自动化配置和其他管理功能支持企业需求。Secrets Manager 企业版计划的价格为 **$12/每用户每月**，提供：
+
+* 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
+* 最多 200 个[服务账户](../../secrets-manager/your-secrets/service-accounts.md)
+* 每个附加服务账户 50 美分
+* 提供给[企业组织](../../organizations/organizations.md#types-of-organizations)的所有功能，例如 [SCIM 配置](../../scim/about-scim.md)和[企业策略](../../organizations/enterprise-policies.md)
+
 ## 计划比较 <a href="#compare-plans" id="compare-plans"></a>
+
+| 功能                                  | 免费版                      | 团队版                                                         | 企业版                                                          |
+| ----------------------------------- | ------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------ |
+| 无限数量机密存储                            | **✔︎**                   | **✔︎**                                                      | **✔︎**                                                       |
+| Securely share secrets with users   | 最多 2 位用户                 | 7b00d19a614b46fd9cbf6f82d7f5eabc                            | Unlimited users                                              |
+| Machine access via service accounts | Up to 3 service accounts | Up to 50 service accounts<mark style="color:red;">\*</mark> | Up to 200 service accounts<mark style="color:red;">\*</mark> |
+| Organize secrets via projects       | Up to 3 projects         | Unlimited projects                                          | Unlimited projects                                           |
+| 机密导出                                | **✔︎**                   | **✔︎**                                                      | **✔︎**                                                       |
+| 两步登录                                | 验证器程序，电子邮件               | 验证器程序、电子邮件、Yubikey、FIOD2 以及 Duo                             | 验证器程序、电子邮件、Yubikey、FIOD2 以及 Duo                              |
+| Duo 方式的组织两步登录                       | —                        | **✔︎**                                                      | **✔︎**                                                       |
+| 事件和审计日志                             | —                        | **✔︎**                                                      | **✔︎**                                                       |
+| 用户群组                                | —                        | **✔︎**                                                      | **✔︎**                                                       |
+| 目录连接器                               | —                        | **✔︎**                                                      | **✔︎**                                                       |
+| SSO 集成                              | —                        | —                                                           | **✔︎**                                                       |
+| SCIM 支持                             | —                        | —                                                           | **✔︎**                                                       |
+| 企业策略                                | —                        | —                                                           | **✔︎**                                                       |
+| 管理员密码重置                             | —                        | —                                                           | **✔︎**                                                       |
+| 自定义角色                               | —                        | —                                                           | **✔︎**                                                       |
+| 优先支持                                | —                        | —                                                           | **✔︎**                                                       |
+| 即将推出：自托管选项                          | —                        | —                                                           | **✔︎**                                                       |
+
+<mark style="color:red;">\*</mark>可以以每个 50 美分购买额外的服务账户。
