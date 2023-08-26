@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/releasenotes/)
 {% endhint %}
 
-Bitwarden 相信，源代码的透明度是诸如像我们这样的安全解决方案的一个绝对要求。访问以下 GitHub 链接查看详细的发行记录：
+Bitwarden 相信，源代码透明是诸如像我们这样的安全解决方案的一个绝对要求。访问以下 GitHub 链接查看完整、详细的发行记录：
 
 * [Server Releases](https://github.com/bitwarden/server/releases)
 * [Web Releases](https://github.com/bitwarden/web/releases)
@@ -16,7 +16,7 @@ Bitwarden 相信，源代码的透明度是诸如像我们这样的安全解决�
 
 ## 发行公告
 
-Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器扩展、移动端等），以及自托管服务器，以确保功能的有效性和稳定性。因此，客户端应用程序和自托管服务器将在初始发布后逐步获得所列的功能。
+Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌面端、浏览器扩展、移动端等），以及用于自托管的服务器，以确保功能的有效性和稳定性。因此，客户端应用程序和自托管服务器将在初始发布后逐步获得所列的功能。
 
 {% hint style="success" %}
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
@@ -34,7 +34,7 @@ Bitwarden 会逐步更新每一个客户端应用程序（桌面端、浏览器�
 此次发布包含：
 
 * **Secrets Manager - CLI 更新**：添加了用于编辑和创建工程和机密的新命令，并且 CLI 使用的语法已重新构建（参阅[这里](secrets-manager/developer-tools/secrets-manager-cli.md)）。
-* **EU（欧盟）云**：Bitwarden 云服务器现已在欧盟提供带有密码库数据存储的服务（参阅[这里](security/server-geographies.md)）。
+* **EU（欧盟）云**：带有密码库数据存储的 Bitwarden 云服务器现已在欧盟提供（参阅[这里](security/server-geographies.md)）。
 
 ## 2023.7.0
 
