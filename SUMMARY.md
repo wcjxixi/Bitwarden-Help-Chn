@@ -31,7 +31,7 @@
     * [本地化](miscellaneous/localization.md)
     * [异常流量错误](miscellaneous/unusual-traffic-error.md)
 * [Password Manager](password-manager/README.md)
-  * [=Password Manager 概述](password-manager/password-manager-overview.md)
+  * [Password Manager 概述](password-manager/password-manager-overview.md)
   * [入门](getting-started/README.md)
     * [网页密码库入门](getting-started/getting-started-webvault.md)
     * [浏览器扩展入门](getting-started/getting-started-browserext.md)

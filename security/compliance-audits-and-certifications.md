@@ -12,17 +12,17 @@ Bitwarden 是一家全球性的公司，客户遍布世界各地。我们的业�
 
 ### GDPR
 
-Bitwarden 符合 GDPR 标准。我们在必要时使用适用的、经批准的信息传输机制，如欧盟标准合同条款（SCC）或欧盟 - 美国隐私保护。
+Bitwarden 符合 GDPR 标准。我们在必要时使用适用的、经批准的信息传输机制，如欧盟标准合同条款 (SCC) 或欧盟 - 美国隐私保护。
 
-Bitwarden 依据欧洲议会和理事会的法规（EU）2016/679 使用标准合同条款，该条款由欧盟委员会于 2021 年 6 月 4 日实施的决议（EU）2021/914 批准，目前其位于 [https://eur-lex .europa.eu/eli/dec\_impl/2021/914/oj](https://eur-lex.europa.eu/eli/dec\_impl/2021/914/oj)。
+Bitwarden 依据欧洲议会和理事会的法规 (EU) 2016/679 使用标准合同条款，该条款由欧盟委员会于 2021 年 6 月 4 日实施的决议 (EU) 2021/914 批准，目前其位于 [https://eur-lex .europa.eu/eli/dec\_impl/2021/914/oj](https://eur-lex.europa.eu/eli/dec\_impl/2021/914/oj)。
 
 ### CCPA
 
-Bitwarden 符合加州消费者隐私法案（CCPA）。
+Bitwarden 符合加州消费者隐私法案 (CCPA)。
 
 ### 隐私保护 <a href="#privacy-shield" id="privacy-shield"></a>
 
-Bitwarden 符合欧盟-美国的隐私保护框架。此外，Bitwarden 使用并符合欧盟标准合同条款（SCC）。有关更多信息，请参阅 [Bitwarden 隐私保护框架](https://www.privacyshield.gov/participant?id=a2zt0000000CoURAA0)。
+Bitwarden 符合欧盟-美国的隐私保护框架。此外，Bitwarden 使用并符合欧盟标准合同条款 (SCC)。有关更多信息，请参阅 [Bitwarden 隐私保护框架](https://www.privacyshield.gov/participant?id=a2zt0000000CoURAA0)。
 
 ### HIPAA
 

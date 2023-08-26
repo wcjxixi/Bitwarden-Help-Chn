@@ -97,7 +97,7 @@ Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻�
 
 #### 用户账户创建 <a href="#user-account-creation" id="user-account-creation"></a>
 
-提交「创建账户」表单后，Bitwarden 使用具有 100,000 次迭代的基于密码的密钥派生函数 2（PBKDF2）来扩展具有盐化的用户电子邮件地址的用户主密码。最终的盐化值是 256 位主密钥。使用基于 HMAC 的提取和扩展密钥派生函数（HKDF），还可以将主密钥的长度扩展为 512 位长度。主密钥和扩展主密钥永远不会存储到 Bitwarden 服务器或传输到 Bitwarden 服务器。
+提交「创建账户」表单后，Bitwarden 使用具有 100,000 次迭代的基于密码的密钥派生函数 2 (PBKDF2) 来扩展具有盐化的用户电子邮件地址的用户主密码。最终的盐化值是 256 位主密钥。使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF)，还可以将主密钥的长度扩展为 512 位长度。主密钥和扩展主密钥永远不会存储到 Bitwarden 服务器或传输到 Bitwarden 服务器。
 
 {% hint style="info" %}
 在 2023.2.0 版本中，Bitwarden 添加了 Argon2id 作为 PBKDF2 的备用选项。[了解更多](kdf-algorithms.md)。
@@ -105,9 +105,9 @@ Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻�
 
 ![基于密码的密钥派生](https://github.com/bitwarden/help/raw/master/images/security-white-paper/password-based-key-deviation.png)
 
-此外，使用加密安全伪随机数生成器（CSPRNG）生成 512 位对称密钥和初始化向量。使用扩展的主密钥和初始化向量，用 AES-256 位加密对对称密钥进行加密。得到的密钥称为受保护的对称密钥。受保护的对称密钥是与用户相关联的主密钥，在账户创建时被发送到服务器，并在同步时返回到 Bitwarden 客户端应用程序。
+此外，使用加密安全伪随机数生成器 (CSPRNG) 生成 512 位对称密钥和初始化向量。使用扩展的主密钥和初始化向量，用 AES-256 位加密对对称密钥进行加密。得到的密钥称为受保护的对称密钥。受保护的对称密钥是与用户相关联的主密钥，在账户创建时被发送到服务器，并在同步时返回到 Bitwarden 客户端应用程序。
 
-当用户注册账户时，也会生成一个非对称密钥（RSA 密钥对）。当用户创建组织时，会使用生成的 RSA 密钥对。组织被创建并用于在用户之间共享数据。当您创建一个组织时，将使用加密安全伪随机数生成器（CSPRNG）生成组织对称密钥。使用生成的 RSA 密钥对中的公钥加密组织对称密钥。生成的 RSA 密钥对中的私钥与生成的对称密钥使用 AES-256 加密。
+当用户注册账户时，也会生成一个非对称密钥（RSA 密钥对）。当用户创建组织时，会使用生成的 RSA 密钥对。组织被创建并用于在用户之间共享数据。当您创建一个组织时，将使用加密安全伪随机数生成器 (CSPRNG) 生成组织对称密钥。使用生成的 RSA 密钥对中的公钥加密组织对称密钥。生成的 RSA 密钥对中的私钥与生成的对称密钥使用 AES-256 加密。
 
 更多细节请参考[在用户之间共享数据](bitwarden-security-whitepaper.md#sharing-data-between-users)。下面的图表显示了创建 Bitwarden 用户账户时生成的各种密钥。
 
@@ -121,13 +121,13 @@ Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻�
 
 您需要先输入您的电子邮件地址和主密码才能登录您的 Bitwarden 账户。
 
-接下来，Bitwarden 使用具有默认为 100,000 次迭代的基于密码的密钥衍生函数 2（PBKDF2）来扩展具有盐化的用户电子邮件地址的主密码。所得的盐化值就是 256 位的主密钥。主密钥的哈希值会在账户创建和登录时发送到服务器，并用于验证用户账户。
+接下来，Bitwarden 使用具有默认为 100,000 次迭代的基于密码的密钥衍生函数 2 (PBKDF2) 来扩展具有盐化的用户电子邮件地址的主密码。所得的盐化值就是 256 位的主密钥。主密钥的哈希值会在账户创建和登录时发送到服务器，并用于验证用户账户。
 
 {% hint style="info" %}
 在 2023.2.0 版本中，Bitwarden 添加了 Argon2id 作为 PBKDF2 的备用选项。[了解更多](kdf-algorithms.md)。
 {% endhint %}
 
-主密钥还可以使用基于 HMAC 的提取和扩展密钥派生函数（HKDF）扩展到 512 位长度。受保护的对称密钥使用扩展的主密钥进行解密。对称密钥用于解密密码库项目。解密工作完全在 Bitwarden 客户端上完成，因为您的主密码或扩展主密钥绝不会存储到 Bitwarden 服务器，也不会传输到 Bitwarden 服务器。
+主密钥还可以使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF) 扩展到 512 位长度。受保护的对称密钥使用扩展的主密钥进行解密。对称密钥用于解密密码库项目。解密工作完全在 Bitwarden 客户端上完成，因为您的主密码或扩展主密钥绝不会存储到 Bitwarden 服务器，也不会传输到 Bitwarden 服务器。
 
 ![用户登录概述](https://github.com/bitwarden/help/raw/master/images/security-white-paper/user-login-diagram.png)
 
@@ -180,7 +180,7 @@ Bitwarden 支持如下方式的两步登录：
 
 此外，Bitwarden 使用 TLS/SSL 来确保 Bitwarden 客户端和用户设备与 Bitwarden 云之间的通信安全。Bitwarden 的 TLS 实施使用 2048 位 X.509 证书进行服务器认证和密钥交换，使用强密码套件进行批量加密。我们的服务器被配置为拒绝弱密码和协议。
 
-Bitwarden 还实现了 HTTP 安全头文件，如 HTTP 严格传输安全（HSTS），它将强制所有连接使用 TLS。这种具有 HSTS 的额外保护层降低了降级攻击和错误配置的风险。
+Bitwarden 还实现了 HTTP 安全头文件，如 HTTP 严格传输安全 (HSTS)，它将强制所有连接使用 TLS。这种具有 HSTS 的额外保护层降低了降级攻击和错误配置的风险。
 
 #### 空闲时的数据保护 <a href="#data-protection-at-rest" id="data-protection-at-rest"></a>
 
@@ -239,7 +239,7 @@ Bitwarden 还使用 Azure 透明数据加密 (TDE) 通过对数据库、关联�
 
 您可以从网页密码库中创建一个新的 Bitwarden 组织，或者请求现有组织的管理员向您发出邀请。
 
-当您创建一个组织时，将使用加密安全伪随机数生成器（CSPRNG）生成组织对称密钥。使用您生成的 RSA 密钥对中的公钥加密组织对称密钥。使用 AES-256 与生成的对称密钥加密生成的 RSA 密钥对中的私钥。生成的 RSA 密钥对和生成的对称密钥在你第一次注册账户时创建。
+当您创建一个组织时，将使用加密安全伪随机数生成器 (CSPRNG) 生成组织对称密钥。使用您生成的 RSA 密钥对中的公钥加密组织对称密钥。使用 AES-256 与生成的对称密钥加密生成的 RSA 密钥对中的私钥。生成的 RSA 密钥对和生成的对称密钥在你第一次注册账户时创建。
 
 阅读更多：[什么是组织？](../organizations/organizations.md)
 
@@ -263,7 +263,7 @@ Bitwarden 帮助中心的[用户类型和访问控制](../admin-console/user-man
 
 #### SIEM 集成和外部系统 <a href="#siem-integration-and-external-systems" id="siem-integration-and-external-systems"></a>
 
-对于像 Splunk 这样的安全信息和事件管理（SIEM）系统，当从 Bitwarden 导出数据时，可能会使用 API 和 CLI 的数据组合来收集数据。
+对于像 Splunk 这样的安全信息和事件管理 (SIEM) 系统，当从 Bitwarden 导出数据时，可能会使用 API 和 CLI 的数据组合来收集数据。
 
 在帮助中心的 [SIEM 和外部系统集成](../admin-console/reporting/event-logs.md#siem-and-external-systems-integrations)下的**组织事件日志**的说明中概述此过程。
 
@@ -307,7 +307,7 @@ Bitwarden 使用微软团队管理的服务，在微软 Azure 云中安全地处
 
 #### 安全更新和补丁 <a href="#security-updates-and-patching" id="security-updates-and-patching"></a>
 
-微软的团队在两个层面上管理操作系统补丁，即物理服务器和运行 Azure 应用服务资源的客户虚拟机（VM）。两者每月都会更新，这与每月的[微软周二补丁计划](https://docs.microsoft.com/zh-cn/security-updates/)保持一致。这些更新会自动应用，以保证 Azure 服务 SLA 的高可用性。
+微软的团队在两个层面上管理操作系统补丁，即物理服务器和运行 Azure 应用服务资源的客户虚拟机 (VM)。两者每月都会更新，这与每月的[微软周二补丁计划](https://docs.microsoft.com/zh-cn/security-updates/)保持一致。这些更新会自动应用，以保证 Azure 服务 SLA 的高可用性。
 
 阅读更多内容：[Azure 应用服务中的补丁](https://docs.microsoft.com/zh-cn/azure/app-service/overview-patch-os-runtime)或[应用服务 SLA](https://azure.microsoft.com/zh-cn/support/legal/sla/app-service/v1\_0/)。
 
@@ -332,7 +332,7 @@ Bitwarden 会对平台、应用程序和生产基础设施的变更进行评估�
 * 使用 GitHub 中的拉取请求进行开发、构建和迭代
 * 让功能达到可测试的程度
 * 工程部门在开发和构建过程中对功能和/或产品进行功能测试
-* 作为 Bitwarden 持续集成（CI）管道的一部分，单元测试构建是自动化的
+* 作为 Bitwarden 持续集成 (CI) 管道的一部分，单元测试构建是自动化的
 * &#x20;一些测试也由客户成功团队执行
 * 工程总监协助审核，并帮助正式确定流程，包括文档更新
 * CTO 提供最后的执行/不执行批准
@@ -400,7 +400,7 @@ Bitwarden 是一个开源软件。我们所有的源代码都托管在 GitHub �
 
 #### 审计性和合规性 <a href="#auditability-and-compliance" id="auditability-and-compliance"></a>
 
-Bitwarden 安全与合规计划基于 ISO27001 信息安全管理系统（ISMS）。我们已经定义了管理我们的安全政策和流程的政策，并不断更新我们的安全计划，以符合适用的法律、行业和监管要求，以便我们在我们的[服务条款协议](https://bitwarden.com/terms/)下向您提供服务。
+Bitwarden 安全与合规计划基于 ISO27001 信息安全管理系统 (ISMS)。我们已经定义了管理我们的安全政策和流程的政策，并不断更新我们的安全计划，以符合适用的法律、行业和监管要求，以便我们在我们的[服务条款协议](https://bitwarden.com/terms/)下向您提供服务。
 
 Bitwarden 遵守行业标准的应用程序安全准则，包括一个专门的安全工程团队，并定期审查应用程序源代码和 IT 基础设施，以检测、验证和修复任何安全漏洞。
 
@@ -423,7 +423,7 @@ SOC 3 报告是对 SOC 2 报告的总结，可以公开发布。根据 AICPA 的
 
 #### HTTP 安全头文件 <a href="#http-security-headers" id="http-security-headers"></a>
 
-Bitwarden 使用 HTTP 安全头文件作为 Bitwarden 网络应用和通信的额外保护层。例如，HTTP 严格传输安全（HSTS）将强制所有连接使用 TLS，从而降低降级攻击和错误配置的风险。内容安全策略头文件提供进一步的保护，防止注入攻击，如跨站点脚本（XSS）。此外，Bitwarden 还实现了 X-Frame-Options：SAMEORIGIN 用来抵御点击劫持。
+Bitwarden 使用 HTTP 安全头文件作为 Bitwarden 网络应用和通信的额外保护层。例如，HTTP 严格传输安全 (HSTS) 将强制所有连接使用 TLS，从而降低降级攻击和错误配置的风险。内容安全策略头文件提供进一步的保护，防止注入攻击，如跨站点脚本 (XSS)。此外，Bitwarden 还实现了 X-Frame-Options：SAMEORIGIN 用来抵御点击劫持。
 
 ### 威胁模型和攻击面分析概述 <a href="#threat-model-and-attack-surface-analysis-overview" id="threat-model-and-attack-surface-analysis-overview"></a>
 
@@ -441,7 +441,7 @@ Bitwarden 网页客户端运行在您的网页浏览器中。Bitwarden 网页客
 
 * **社会工程元素，如网络钓鱼**：欺骗和说服受害者采用任何危害其用户机密和账户安全的行为
 * **浏览器攻击和浏览器扩展/附加组件漏洞**：当用户在键盘上打字时，恶意扩展程序就会捕捉到用户的机密
-* **通过浏览器对网页应用程序的攻击**：点击劫持、跨站点脚本（XSS）、跨站点请求伪造（CSRF）。
+* **通过浏览器对网页应用程序的攻击**：点击劫持、跨站点脚本 (XSS)、跨站点请求伪造 (CSRF)。
 
 Bitwarden 使用 [HTTP 安全头文件](bitwarden-security-whitepaper.md#http-security-headers)作为 Bitwarden 网络应用和通信的额外保护层。
 
@@ -459,6 +459,6 @@ Bitwarden 是一个开源的密码管理器。我们所有的源代码都托管�
 
 提供此 Bitwarden 安全与合规计划概述，以供您参考。Bitwarden 的解决方案、软件、基础设施和安全流程都是以多层次、深入防御的方式从头设计的。
 
-Bitwarden 的安全与合规计划基于 ISO27001 信息安全管理体系（ISMS）。我们定义了管理我们的安全政策和流程的政策，并不断更新我们的安全计划，以符合适用的法律、行业和监管要求，以便我们在我们的[服务条款协议](https://bitwarden.com/terms/)下向您提供服务。
+Bitwarden 的安全与合规计划基于 ISO27001 信息安全管理体系 (ISMS)。我们定义了管理我们的安全政策和流程的政策，并不断更新我们的安全计划，以符合适用的法律、行业和监管要求，以便我们在我们的[服务条款协议](https://bitwarden.com/terms/)下向您提供服务。
 
 如果您有任何疑问，请[联系我们](https://github.com/bitwarden/help/blob/master/\_articles/security/www.bitwarden.com/contact)。
