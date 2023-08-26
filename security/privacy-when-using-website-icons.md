@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/website-icons/)
 {% endhint %}
 
-_当您为存储在 Bitwarden 密码库中的网站登录信息下载图标时，Bitwarden 不会收集任何信息。_
+当您为存储在 Bitwarden 密码库中的网站登录信息下载图标时，Bitwarden 不会收集任何信息。
 
 ## 使用网站图标 <a href="#using-website-icons" id="using-website-icons"></a>
 
