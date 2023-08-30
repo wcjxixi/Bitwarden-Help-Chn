@@ -37,7 +37,6 @@
     * [浏览器扩展入门](getting-started/getting-started-browserext.md)
     * [移动应用程序入门](getting-started/getting-started-mobile.md)
     * [桌面应用程序入门](getting-started/getting-started-desktop.md)
-    * [\*Bitwarden 101 视频系列-入门](getting-started/bitwarden-101-video-series-getting-started.md)
   * [密码库基础](password-manager/vault-basics/README.md)
     * [密码库项目](your-vault/vault-items.md)
     * [用户名和密码生成器](your-vault/username-password-generator.md)
@@ -108,7 +107,6 @@
 * [Secrets Manager](secrets-manager/README.md)
   * [Secrets Manager 概述](secrets-manager/secrets-manager-overview.md)
   * [入门](secrets-manager/get-started/README.md)
-    * [\*Beta 版注册](secrets-manager/get-started/beta-signup.md)
     * [Secrets Manager 快速入门](secrets-manager/get-started/secrets-manager-quick-start.md)
     * [开发者快速入门](secrets-manager/get-started/developer-quick-start.md)
     * [登录 Secrets Manager](secrets-manager/get-started/log-in-to-secrets-manager.md)
@@ -273,12 +271,14 @@
 * [\*杂项](miscellaneous/README.md)
   * [11 月弃用通知](miscellaneous/november-deprecation-notice.md)
   * [Bitwarden 术语表](miscellaneous/bitwarden-glossary-of-terms.md)
+  * [Bitwarden 软件发布支持](miscellaneous/bitwarden-software-release-support.md)
+  * [迁移脚本](miscellaneous/migration-script.md)
   * [Bitwarden 入门：个人用户](miscellaneous/get-started-individual-user.md)
   * [Bitwarden 入门：管理员](miscellaneous/get-started-administrator.md)
   * [Bitwarden 入门：团队成员](miscellaneous/get-started-team-member.md)
   * [Bitwarden 入门：经销商或 MSP](miscellaneous/get-started-provider.md)
-  * [Bitwarden 软件发布支持](miscellaneous/bitwarden-software-release-support.md)
-  * [迁移脚本](miscellaneous/migration-script.md)
+  * [Bitwarden 101 视频系列-入门](miscellaneous/bitwarden-101-video-series-getting-started.md)
+  * [Secrets Manager Beta 版注册](miscellaneous/beta-signup.md)
 
 ## 附录 <a href="#appendix" id="appendix"></a>
 

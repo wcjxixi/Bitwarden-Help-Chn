@@ -1,4 +1,4 @@
-# 机密管理器常见问题
+# Secrets Manager 常见问题
 
 {% hint style="info" %}
 对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-faqs/)
@@ -10,7 +10,7 @@
 
 ## 问：Secrets Manager 是如何定价的？ <a href="#q-how-is-secrets-manager-priced" id="q-how-is-secrets-manager-priced"></a>
 
-**答**：在公开测试计划期间，Bitwarden Secrets Manager 可供所有组织免费使用，更多详细信息将在 GA 临近时公布。[了解更多](../get-started/beta-signup.md)。
+**答**：在公开测试计划期间，Bitwarden Secrets Manager 可供所有组织免费使用，更多详细信息将在 GA 临近时公布。[了解更多](../../miscellaneous/beta-signup.md)。
 
 ## 问：我可以自行托管 Secrets Manager 吗？ <a href="#q-can-i-self-host-secrets-manager" id="q-can-i-self-host-secrets-manager"></a>
 

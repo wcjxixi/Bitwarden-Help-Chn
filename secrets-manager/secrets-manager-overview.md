@@ -51,4 +51,4 @@ Bitwarden 致力于打造安全至上的产品。与 Password Manager 一样，S
 
 ## 开始吧 <a href="#get-started-today" id="get-started-today"></a>
 
-我们很高兴能参与您的机密管理之旅，也很高兴您能加入我们的新冒险之旅。Secrets Manager 目前在公开测试计划中。[立即了解如何加入](get-started/beta-signup.md)。
+我们很高兴能参与您的机密管理之旅，也很高兴您能加入我们的新冒险之旅。Secrets Manager 目前在公开测试计划中。[立即了解如何加入](../miscellaneous/beta-signup.md)。
