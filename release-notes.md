@@ -26,7 +26,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-* **受信任设备 SSO**：受信任设备 SSO 允许用户使用 SSO 进行身份验证，以及解密其密码库存储的加密密钥，而无需输入主密码（参阅[这里](admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)）。
+* **受信任设备 SSO**：受信任设备 SSO 允许用户使用 SSO 进行身份验证，以及使用存储的加密密钥解密其密码库，而无需输入主密码（参阅[这里](admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)）。
 * **经理集合访问权限**：为了降低对非必要数据的可见性，经理现在只能查看分配给他们的集合。
 
 ## 2023.8.0
