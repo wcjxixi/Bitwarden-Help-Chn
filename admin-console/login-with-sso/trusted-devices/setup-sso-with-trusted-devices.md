@@ -1,4 +1,4 @@
-# =设置受信任设备 SSO
+# 设置受信任设备 SSO
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/setup-sso-with-trusted-devices/)
@@ -26,6 +26,6 @@
 {% hint style="danger" %}
 目前不建议从受信任设备 SSO 迁移到其他成员解密选项：
 
-* 如果您的组织出于某种原因需要将其成员解密选项从受信任设备加密切换回主密码，**您必须使用**[**账户恢复**](../../../organizations/admin-password-reset.md#reset-a-master-password)**功能向所有**[**未使用主密码**](about-trusted-devices.md#impact-on-master-passwords)**的用户颁发主密码，以保留对其账户的访问权限**。如果有用户失去访问权限，您可以随时切换回受信任设备加密以恢复服务。
+* 如果您的组织出于某种原因需要将其成员解密选项从受信任设备加密切换回主密码，**您必须使用**[**账户恢复**](../../../organizations/admin-password-reset.md#recover-an-account)**功能向所有**[**未使用主密码**](about-trusted-devices.md#impact-on-master-passwords)**的用户颁发主密码，以保留对其账户的访问权限**。如果有用户失去访问权限，您可以随时切换回受信任设备加密以恢复服务。
 * 不支持从受信任设备 SSO 迁移到 Key Connector。
 {% endhint %}

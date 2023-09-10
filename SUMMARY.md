@@ -182,7 +182,7 @@
       * [Okta OIDC 实施](login-with-sso/implementation-guides/okta-oidc-implementation.md)
     * [=受信任设备](admin-console/login-with-sso/trusted-devices/README.md)
       * [关于受信任设备](admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)
-      * [=设置受信任设备 SSO](admin-console/login-with-sso/trusted-devices/setup-sso-with-trusted-devices.md)
+      * [设置受信任设备 SSO](admin-console/login-with-sso/trusted-devices/setup-sso-with-trusted-devices.md)
       * [=添加受信任设备](admin-console/login-with-sso/trusted-devices/add-a-trusted-device.md)
       * [=批准受信任设备](admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)
     * [Key Connector](admin-console/login-with-sso/key-connector/README.md)
