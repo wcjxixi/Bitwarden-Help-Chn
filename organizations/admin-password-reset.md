@@ -86,7 +86,7 @@
 
 已启用[自动注册](admin-password-reset.md#automatic-enrollment)策略选项的组织中的用户将**不允许撤销**账户恢复。此外，手动更改您的主密码或[轮换您的加密密钥](../security/account-encryption-key.md)**不会**使您撤销账户恢复。
 
-## 重置主密码 <a href="#reset-a-master-password" id="reset-a-master-password"></a>
+## 恢复账户 <a href="#recover-an-account" id="recover-an-account"></a>
 
 {% hint style="info" %}
 您必须是[所有者、管理员或允许的自定义用户](admin-password-reset.md#permissions)才能重置主密码。检查本文的[权限](admin-password-reset.md#permissions)章节以了解您可以重置谁的主密码。
