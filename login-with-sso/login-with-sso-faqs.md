@@ -83,7 +83,7 @@
 
 **答：**是的。SSO 登录适用于自托管实例，无论实例是在本地还是在您自己的云中，只要实例可以访问您的身份服务器即可。
 
-### 问：使用SSO登录是否可以在混合云环境下工作？ <a href="#q-does-login-with-sso-work-across-hybrid-cloud-environments" id="q-does-login-with-sso-work-across-hybrid-cloud-environments"></a>
+### 问：使用 SSO 登录是否可以在混合云环境下工作？ <a href="#q-does-login-with-sso-work-across-hybrid-cloud-environments" id="q-does-login-with-sso-work-across-hybrid-cloud-environments"></a>
 
 答：可以。SSO 登录只要求能够从您的 Bitwarden 实例连接到您的身份提供程序。它可以用于云或本地身份提供程序，以及云或自托管的 Bitwarden 实例。
 
