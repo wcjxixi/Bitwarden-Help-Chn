@@ -4,9 +4,9 @@
 对应的 [GitHub 地址](https://github.com/bitwarden/help/blob/25bc445da1a9484e93ae6759ea2ef391d0c1881a/\_articles/organizations/deploying-bitwarden-as-a-msp.md)
 {% endhint %}
 
-> **\[译者注]**：[MSP](https://wiki.mbalib.com/wiki/%E7%AE%A1%E7%90%86%E6%9C%8D%E5%8A%A1%E6%8F%90%E4%BE%9B%E5%95%86)：Managed Service provider（托管服务提供商）
+> **\[译者注]**：[MSP](https://wiki.mbalib.com/wiki/%E7%AE%A1%E7%90%86%E6%9C%8D%E5%8A%A1%E6%8F%90%E4%BE%9B%E5%95%86)：Managed Service provider，托管服务提供商。
 
-Bitwarden 支持经销商和托管服务提供商（MSP）模式。您可以立即开始，而无需签署正式协议。如果您正在寻找有关 Bitwarden 合作伙伴计划的信息，请不要错过这篇文章。
+Bitwarden 支持经销商和托管服务提供商 (MSP) 模式。您可以立即开始，而无需签署正式协议。如果您正在寻找有关 Bitwarden 合作伙伴计划的信息，请不要错过这篇文章。
 
 本文详细介绍了一个推荐的实施方案，以帮助合作伙伴和他们的客户获得成功，同时也解答了一些关于我们合作伙伴计划的常见问题。
 

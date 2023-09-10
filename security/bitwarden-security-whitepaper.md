@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/bitwarden-security-white-paper/)
 {% endhint %}
 
-> **\[译者注]**术语解释：
+> **\[译者注]**：
 >
 > * [ISMS](https://en.wikipedia.org/wiki/Information\_security\_management)：Information Security Management System（信息安全管理体系）
 > * [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)：Password-Based Key Derivation Function 2（基于密码的密钥派生函数 2）
