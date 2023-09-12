@@ -127,7 +127,7 @@
     * [GitHub Actions](secrets-manager/integrations/github-actions.md)
   * [更多](secrets-manager/more/README.md)
     * [Secrets Manager 常见问题](secrets-manager/more/secrets-manager-faqs.md)
-* [=管理控制台](admin-console/README.md)
+* [管理控制台](admin-console/README.md)
   * [组织快速入门](admin-console/organizations-quick-start.md)
   * [组织基础](admin-console/organization-basics/README.md)
     * [组织](organizations/organizations.md)
