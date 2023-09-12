@@ -108,7 +108,7 @@
   * [Secrets Manager 概述](secrets-manager/secrets-manager-overview.md)
   * [入门](secrets-manager/get-started/README.md)
     * [Secrets Manager 快速入门](secrets-manager/get-started/secrets-manager-quick-start.md)
-    * [开发者快速入门](secrets-manager/get-started/developer-quick-start.md)
+    * [开发人员快速入门](secrets-manager/get-started/developer-quick-start.md)
     * [登录 Secrets Manager](secrets-manager/get-started/log-in-to-secrets-manager.md)
     * [管理您的组织](secrets-manager/get-started/manage-your-organization.md)
   * [您的机密](secrets-manager/your-secrets/README.md)
