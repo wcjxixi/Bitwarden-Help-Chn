@@ -13,11 +13,11 @@
 致谢 [Google Translate](https://translate.google.com/) 以及 [DeepL](https://www.deepl.com/) ！
 
 {% hint style="danger" %}
-个人能力有限，具体请以 [Bitwarden](https://bitwarden.com/) 官方页面为准。使用本手册所产生的一切后果，与 @wcjxixi 无关。Use at your own risk！！！
+个人能力有限，具体请以 [Bitwarden](https://bitwarden.com/) 官方页面为准。使用本内容所产生的一切后果，与 @wcjxixi 无关。Use at your own risk！！！
 {% endhint %}
 
 {% hint style="info" %}
-**备注：**标题前有 **\*** 的表示在 Github 上的 [Bitwarden 官方帮助中心项目](https://github.com/bitwarden/help)里有，但在官方 [Bitwarden Help Center](https://bitwarden.com/help/) 里被移除或未显示的文章和/或分类，我将其保留仅作为参考之用。
+**备注：**标题前有 **\*** 的表示在 Github 上的 [Bitwarden 官方帮助中心项目](https://github.com/bitwarden/help)里有，但在官方 [Bitwarden Help Center](https://bitwarden.com/help/) 里被移除或未显示的页面和/或分类，我将其保留仅作为参考之用。
 {% endhint %}
 
 ## Bitwarden 介绍 <a href="#about-bitwarden" id="about-bitwarden"></a>
