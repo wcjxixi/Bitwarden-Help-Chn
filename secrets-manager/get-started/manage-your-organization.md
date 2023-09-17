@@ -88,9 +88,9 @@ Bitwarden 服务器提供一个 SCIM 端点，该端点具有一个有效的 SCI
 
 SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，企业组织可以利用其现有的身份提供程序使用 SAML 2.0 或 Open ID Connect (OIDC) 协议对 Bitwarden 用户进行身份验证。[了解如何开始](../../login-with-sso/about-login-with-sso.md)。
 
-## 管理员密码重置 <a href="#admin-password-reset" id="admin-password-reset"></a>
+## 账户恢复管理 <a href="#https-bitwarden.com-help-manage-your-secrets-org-account-recovery-administration" id="https-bitwarden.com-help-manage-your-secrets-org-account-recovery-administration"></a>
 
-管理员密码重置允许指定的管理员恢复企业组织用户账户以及在员工忘记主密码时恢复访问权限。通过启用主密码重置策略，可以为组织激活管理员密码重置。[了解如何开始](../../organizations/admin-password-reset.md)。
+账户恢复允许指定的管理员恢复企业组织用户账户以及在员工忘记主密码时恢复访问权限。通过启用账户恢复管理策略，可以为组织激活账户恢复功能。[了解如何开始](../../organizations/admin-password-reset.md)。
 
 ## 事件日志 <a href="#event-logs" id="event-logs"></a>
 

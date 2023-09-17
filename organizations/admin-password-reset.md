@@ -31,7 +31,7 @@
 
 ### 权限 <a href="#permissions" id="permissions"></a>
 
-管理员密码重置可由[所有者、管理员和允许的自定义用户](../admin-console/user-management/member-roles-and-permissions.md)执行。管理员密码重置使用分级权限结构来确定谁可以重置谁的主密码：
+账户恢复可由[所有者、管理员和允许的自定义用户](../admin-console/user-management/member-roles-and-permissions.md)执行。账户恢复使用分级权限结构来确定谁可以重置谁的主密码：
 
 * 任何所有者、管理员或允许的自定义用户都可以重置用户、经理或自定义用户的主密码。
 * 只有管​​理员或所有者可以重置管理员的主密码。

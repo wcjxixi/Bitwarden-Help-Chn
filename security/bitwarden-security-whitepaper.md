@@ -50,7 +50,7 @@ Bitwarden 采用以下关键安全措施来保护用户数据。
 **零知识加密**：Bitwarden 团队成员无法看到您的密码。您的数据使用您的个人电子邮件和主密码被端到端加密。我们永不存储也无法访问您的主密码或您的加密密钥。
 
 {% hint style="info" %}
-2021 年中期发布的管理员密码重置功能为所有组织引入了一个新的 RSA 公钥/私钥对。私钥在存储之前将使用组织中预先存在的对称密钥进一步加密。在创建新组织时将在客户端生成并加密此密钥，或者对于现有的组织：
+2021 年中期发布的[账户恢复](../organizations/admin-password-reset.md)功能为所有组织引入了一个新的 RSA 公钥/私钥对。私钥在存储之前将使用组织中预先存在的对称密钥进一步加密。在创建新组织时将在客户端生成并加密此密钥，或者对于现有的组织：
 
 * 导航到**管理** → **人员**界面。
 * 更新**设置** → **我的组织**界面上的任何内容。
@@ -90,7 +90,7 @@ Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻�
 在创建您的账户并指定您的主密码后，Bitwarden 接下来会生成一系列密钥，用于保护您账户的数据。
 
 {% hint style="info" %}
-2021 年中期，Bitwarden 为企业计划引入了管理员密码重置功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。有关此功能的更多详细信息，请访问我们的帮助站点 [https://bitwarden.com/help/article/releasenotes/](https://bitwarden.com/help/article/releasenotes/)
+2021 年中期，Bitwarden 为企业计划推出了账户恢复功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。有关此功能的更多详细信息，请访问[这篇文章](../organizations/admin-password-reset.md)。
 {% endhint %}
 
 ### 主密码哈希、密钥派生和加密过程概述 <a href="#overview-of-the-master-password-hashing-key-derivation-and-encryption-process" id="overview-of-the-master-password-hashing-key-derivation-and-encryption-process"></a>
@@ -159,7 +159,7 @@ Bitwarden 支持如下方式的两步登录：
 **非常重要的一点是，千万不要丢失两步登录恢复代码。**Bitwarden 提供的账户保护安全模式不支持用户丢失主密码或两步登录恢复代码。如果您在账户上启用了两步登录，并丢失了两步登录恢复代码，您将无法登录您的 Bitwarden 账户。
 
 {% hint style="info" %}
-2021 年中期，Bitwarden 为企业计划引入了管理员密码重置功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。有关此功能的更多详细信息，请访问我们的帮助站点 [https://bitwarden.com/help/article/releasenotes/](https://bitwarden.com/help/article/releasenotes/)
+2021 年中期，Bitwarden 为企业计划推出了账户恢复功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。
 {% endhint %}
 
 #### 更改用户密码 <a href="#changing-user-password" id="changing-user-password"></a>
@@ -295,9 +295,9 @@ Bitwarden 帮助中心的[用户类型和访问控制](../admin-console/user-man
 
 如果您选择设置两步登录或组织要求您设置两步登录，请务必访问并保留您的恢复代码，并将其存储在与主密码同样安全的地方。
 
-### 企业计划中的管理员密码重置 <a href="#admin-password-reset-in-enterprise-plans" id="admin-password-reset-in-enterprise-plans"></a>
+### 企业计划中的账户恢复 <a href="#account-recovery-in-enterprise-plans" id="account-recovery-in-enterprise-plans"></a>
 
-2021 年中期，Bitwarden 为企业计划引入了管理员密码重置功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。有关此功能的更多详细信息，请访问我们的帮助站点 [https://bitwarden.com/help/article/releasenotes/](https://bitwarden.com/help/article/releasenotes/)。
+2021 年中期，Bitwarden 为企业计划推出了账户恢复功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。
 
 ### Bitwarden 云平台和网页应用程序安全 <a href="#bitwarden-cloud-platform-and-web-application-security" id="bitwarden-cloud-platform-and-web-application-security"></a>
 

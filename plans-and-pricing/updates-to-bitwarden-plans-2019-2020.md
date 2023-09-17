@@ -55,7 +55,7 @@
 
 ### 企业比较表 <a href="#enterprise-comparison-table" id="enterprise-comparison-table"></a>
 
-<table><thead><tr><th width="225.33333333333331">功能</th><th>经典 2019</th><th>当前（2020-）</th></tr></thead><tbody><tr><td>预先存在的企业功能，包括：<br><br>- 所有用户的高级功能<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 目录连接器<br>- 企业策略</td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td><a href="../login-with-sso/about-login-with-sso.md">SSO 登录</a></td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td><a href="../login-with-sso/about-key-connector.md">Key Connector</a><br>（<em>适用于客户管理的加密</em>）</td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td><a href="../organizations/admin-password-reset.md">管理员密码重置</a></td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td>价格</td><td>$3 每用户每月（按年付费）</td><td>$5 每用户每月（按年付费）</td></tr></tbody></table>
+<table><thead><tr><th width="225.33333333333331">功能</th><th>经典 2019</th><th>当前（2020-）</th></tr></thead><tbody><tr><td>预先存在的企业功能，包括：<br><br>- 所有用户的高级功能<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 目录连接器<br>- 企业策略</td><td><strong>✔︎</strong></td><td><strong>✔︎</strong></td></tr><tr><td><a href="../login-with-sso/about-login-with-sso.md">SSO 登录</a></td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td><a href="../login-with-sso/about-key-connector.md">Key Connector</a><br>（<em>适用于客户管理的加密</em>）</td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td><a href="../organizations/admin-password-reset.md">管理员密码重置</a>账户</td><td>-</td><td><strong>✔︎</strong></td></tr><tr><td>价格</td><td>$3 每用户每月（按年付费）</td><td>$5 每用户每月（按年付费）</td></tr></tbody></table>
 
 {% hint style="info" %}
 额外的仅针对企业的功能仅适用于当前计划，包括扩展的企业策略。
