@@ -68,7 +68,7 @@ Bitwarden 组织使用的某些功能未通过上述文章中记录的标准安�
 
 ### 设置策略（仅限企业） <a href="#set-policies-enterprise-only" id="set-policies-enterprise-only"></a>
 
-您的企业需要独特的安全需求。使用策略为所有团队成员构建一致的部署和体验，例如要求 SSO 身份验证或在账户恢复中注册成员。为了让您的组织为更多团队成员做好准备，[尽早制定策略](../organizations/enterprise-policies.md)非常重要。
+您的业务具有独特的安全需求。使用策略为所有团队成员构建一致的部署和用户体验，例如要求 SSO 身份验证或在账户恢复管理中注册成员。为了让您的组织为更多团队成员做好准备，[尽早制定策略](../organizations/enterprise-policies.md)非常重要。
 
 ### 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
