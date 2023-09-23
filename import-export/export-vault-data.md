@@ -8,7 +8,7 @@
 
 我们建议使用 `.json` 作为更完整的导出，而 `.csv` 目前不能导出支付卡和身份。有关 Bitwarden `.csv` 和 `.json` 文件格式的完整信息，请参阅[使用 Bitwarden .csv 或 .json](condition-a-bitwarden-.csv-or-.json.md)。
 
-密码库导出**不包含**[文件附件](../your-vault/file-attachments.md)、回收站中的项目、密码历史记录以及 Send。
+密码库导出**将不会包含**[文件附件](../your-vault/file-attachments.md)、回收站中的项目、~~密码历史记录~~以及 Send。
 
 {% hint style="warning" %}
 除非您使用[加密导出](encrypted-exports.md)，否则不要通过不安全的渠道（例如电子邮件）来存储或发送导出的文件，用完后请立即将其删除。
