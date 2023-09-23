@@ -42,12 +42,12 @@
 
 *   将访问令牌导出到主机上的 `BWS_ACCESS_TOKEN` 环境变量。如下所示的 CLI 命令将自动检查具有该密钥的变量以进行身份​​验证：
 
-    ```javascript
+    ```batch
     bws get secret fc3a93f4-2a16-445b-b0c4-aeaf0102f0ffText C
     ```
 *   在脚本中使用 `-access-token` 选项 `get` 和注入机密，例如包含以下行的内容：
 
-    ```javascript
+    ```batch
     ...
     export DB_PW=$(bws get secret fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff --access-token 0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHnAp1h0gL8bngprlPOYutt0:B3h5D+YgLvFiQhWkIq6Bow== | .jq '.value')
     ...

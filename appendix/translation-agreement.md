@@ -5,9 +5,9 @@
 | 英文词汇                            | 本文翻译为   | 其他翻译                                                                    |
 | ------------------------------- | ------- | ----------------------------------------------------------------------- |
 | Auto-Fill                       | 自动填充    | 自动填写                                                                    |
-| Search                          | 检索      | 搜索                                                                      |
+| Search                          | 搜索      | 检索                                                                      |
 | Accessibility                   | 无障碍     | 辅助                                                                      |
-| provision                       | 布建/预配   | 维护、配置 \[[参考](https://blog.csdn.net/catharryy/article/details/48661557)] |
+| provision                       | 布建/配置   | 维护、预配 \[[参考](https://blog.csdn.net/catharryy/article/details/48661557)] |
 | remove                          | 移除      | 删除                                                                      |
 | Granular Access Control         | 粒度访问控制  | 精细访问控制                                                                  |
 | MSP (Managed Service Providers) | 托管服务提供商 | 管理服务提供商                                                                 |

@@ -6,7 +6,7 @@
 
 Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理和部署机密。
 
-**Secrets Manager 网页应用程序**将是您设置机密管理基础设施的主页。您将使用它来添加和组织[机密](secrets-manager-quick-start.md#add-secrets)、创建适合您需要的[权限系统](secrets-manager-quick-start.md#assign-members-to-your-project)，以及生成供您的应用程序使用的[访问令牌](secrets-manager-quick-start.md#create-an-access-token)。完成后，您将继续阅读[开发者快速入门指南](developer-quick-start.md)，以了解如何将机密注入您的机器和应用程序。
+**Secrets Manager 网页应用程序**将是您设置机密管理基础设施的主页。您将使用它来添加和组织[机密](secrets-manager-quick-start.md#add-secrets)、创建适合您需要的[权限系统](secrets-manager-quick-start.md#assign-members-to-your-project)，以及生成供您的应用程序使用的[访问令牌](secrets-manager-quick-start.md#create-an-access-token)。完成后，您可以继续阅读[开发者快速入门指南](developer-quick-start.md)，以了解如何将机密注入您的机器和应用程序。
 
 ## 激活 Secrets Manager <a href="#activate-secrets-manager" id="activate-secrets-manager"></a>
 
@@ -80,8 +80,8 @@ Secrets Manager 可以从您组织的**计费** → **订阅**页面激活。您
 
 3、将成员或组添加到工程后，为这些成员或群组设置**权限**级别。成员和群组可以具有以下权限级别之一：
 
-* **可以读取**：成员/群组将能够查看 \[_以及编辑_] 此工程中的现有机密。
-* **可以读取、写入**：成员/群组将能够查看现有机密并在此工程中创建新的机密。
+* **可以读取**：成员/群组将能够查看此工程中的现有机密。
+* **可以读取、写入**：成员/群组将能够查看此工程中的现有机密，以及在此工程中创建新的机密。
 
 ### 新增机密 <a href="#add-secrets" id="add-secrets"></a>
 

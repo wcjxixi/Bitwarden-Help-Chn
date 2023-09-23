@@ -73,7 +73,7 @@ bws secret create SES_KEY 0.982492bc-7f37-4475-9e60 f588b2f2-4780-4a78-be2a-b02d
 
 默认情况下，此命令将返回一个 JSON 对象并将机密保存到 Secrets Manager。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```yaml
+```javascript
 {
   "object": "secret",
   "id": "be8e0ad8-d545-4017-a55a-b02f014d4158",
@@ -139,7 +139,7 @@ bws secret edit be8e0ad8-d545-4017-a55a-b02f014d4158 --key SES_KEY2 --value 0.19
 
 输出：
 
-```yaml
+```javascript
 {
   "object": "secret",
   "id": "be8e0ad8-d545-4017-a55a-b02f014d4158",
@@ -169,7 +169,7 @@ bws secret get be8e0ad8-d545-4017-a55a-b02f014d4158
 
 默认情况下，`get` 将以 JSON 数组的形式返回对象，如以下示例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```yaml
+```javascript
 {
   "object": "secret",
   "id": "be8e0ad8-d545-4017-a55a-b02f014d4158",
@@ -199,7 +199,7 @@ bws secret list e325ea69-a3ab-4dff-836f-b02e013fe530
 
 默认情况下，`list` 将以 JSON 数组的形式返回对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```yaml
+```javascript
 [
   {
     "object": "secret",
@@ -250,7 +250,7 @@ bws project create "My project"
 
 默认情况下，`bws project create` 将以 JSON 数组的形式返回对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#huan-jing-bian-liang)）。
 
-```yaml
+```javascript
 {
   "object": "project",
   "id": "1c80965c-acb3-486e-ac24-b03000dc7318",
@@ -303,7 +303,7 @@ bws project edit 1c80965c-acb3-486e-ac24-b03000dc7318 --name "My project 2"
 
 默认情况下，`bws project edit` 将返回 JSON 数组形式的对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```yaml
+```javascript
 {
   "object": "project",
   "id": "1c80965c-acb3-486e-ac24-b03000dc7318",
@@ -330,7 +330,7 @@ bws project get e325ea69-a3ab-4dff-836f-b02e013fe530
 
 默认情况下，`get` 将返回 JSON 数组形式的对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```yaml
+```javascript
 {
   "object": "project",
   "id": "e325ea69-a3ab-4dff-836f-b02e013fe530",
@@ -351,7 +351,7 @@ bws project list
 
 默认情况下，`list` 将返回 JSON 数组形式的对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```yaml
+```javascript
 [
   {
     "object": "project",

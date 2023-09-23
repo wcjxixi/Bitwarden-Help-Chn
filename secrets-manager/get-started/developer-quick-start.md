@@ -1,4 +1,4 @@
-# 开发者快速入门
+# 开发人员快速入门
 
 {% hint style="info" %}
 对应的[官方文档地址](https://bitwarden.com/help/developer-quick-start/)
@@ -22,7 +22,7 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 
 可以使用为特定[服务账户](../your-secrets/service-accounts.md)生成的[访问令牌](../your-secrets/access-tokens.md)登录 Secrets Manager CLI。这意味着**只有服务账户具有访问权限的机密和工程**可以使用 CLI 进行交互。有多种方法可以验证 CLI 会话，但最简单的方法是将环境变量 `BWS_ACCESS_TOKEN` 与您的访问令牌的值一起保存，例如：
 
-```
+```batch
 export BWS_ACCESS_TOKEN=0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHnAp1h0gL8bngprlPOYutt0:B3h5D+YgLvFiQhWkIq6Bow==
 ```
 
@@ -30,13 +30,13 @@ export BWS_ACCESS_TOKEN=0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHnAp1h0gL8
 
 接下来，使用以下命令获取您的数据库用户名并将其存储为临时环境变量。在此示例中，`fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff` 表示数据库用户名机密的唯一标识符：
 
-```
+```batch
 export SECRET_1=$(bws get secret fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff | jq '.value')
 ```
 
 此命令会将您的机密的 `value` 保存到一个临时环境变量中，该变量将在系统重启、用户注销或任何新 shell 中被清除。现在，对数据库密码运行相同的命令：
 
-```
+```batch
 export SECRET_2=$(bws get secret 80b55c29-5cc8-42eb-a898-acfd01232bbb | jq '.value')
 ```
 
@@ -44,7 +44,7 @@ export SECRET_2=$(bws get secret 80b55c29-5cc8-42eb-a898-acfd01232bbb | jq '.val
 
 现在您的数据库凭据已保存为临时环境变量，可以将它们注入到 `docker run` 命令中。在此示例中，我们省略了 [Bitwarden Unified](../../self-hosting/install-and-deploy-guides/install-and-deploy-unified-beta.md) 强调注入机密所需的许多变量：
 
-```
+```batch
 docker run -d --name bitwarden .... -env BW_DB_USERNAME=$SECRET_1 BW_BD_PASSWORD=$SECRET_2 .... bitwarden/self-host:beta
 ```
 
@@ -58,17 +58,17 @@ docker run -d --name bitwarden .... -env BW_DB_USERNAME=$SECRET_1 BW_BD_PASSWORD
 
 要在您的 Docker 映像中安装 Secrets Manager CLI，您需要将以下内容添加到您的 Dockerfile：
 
-```
+```batch
 RUN curl -O https://github.com/bitwarden/sdk/releases/download/bws-v0.2.1/bws-x86_64-unknown-linux-gnu-0.2.1.zip && unzip bws-x86_64-unknown-linux-gnu-0.2.1.zip && export PATH=/this/directory:$PATH
 ```
 
 接下来，您需要构建 `RUN` 语句来获取每个凭据，以便它们可用于注入。这些语句将包括内联身份验证，但这并不是您能够实施的唯一方式：
 
-```
+```batch
 RUN SECRET_1=$(bws get secret fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff --access-token $BWS_ACCESS_TOKEN | jq '.value')
 ```
 
-```
+```batch
 RUN SECRET_2=$(bws get secret 80b55c29-5cc8-42eb-a898-acfd01232bbb --access-token $BWS_ACCESS_TOKEN | jq '.value')
 ```
 
@@ -78,7 +78,7 @@ RUN SECRET_2=$(bws get secret 80b55c29-5cc8-42eb-a898-acfd01232bbb --access-toke
 
 现在您的数据库凭据将可用于注入，调整您的 `settings.env` 文件以能够接收这些值。为此，请将文件中的相关硬编码值替换为指定的变量名称（在本例中为 `SECRET_1` 和 `SECRET_2`）：
 
-```
+```systemd
 # Database
 # Available providers are sqlserver, postgresql, mysql/mariadb, or sqlite
 BW_DB_PROVIDER=mysql
@@ -92,7 +92,7 @@ BW_DB_PASSWORD=$SECRET_2
 
 现在您的数据库凭据已准备好并准备好注入，启动您的容器并指定访问令牌以作为环境变量与 `bws login` 一起使用：
 
-```
+```batch
 docker run -e BWS_ACCESS_TOKEN=<your-access-token> docker-unified
 ```
 

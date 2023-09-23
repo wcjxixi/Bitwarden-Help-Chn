@@ -51,12 +51,12 @@ Bitwarden 服务器提供一个 SCIM 端点，该端点具有一个有效的 SCI
 
 入职后，为您组织的个别成员授予对 Secrets Manager 的访问权限：
 
-1、打开您组织的**成员**选项卡，然后使用 (**≡**) 选项菜单打开您的**成员角色**面板。
+1、打开您组织的**成员**选项卡，然后选中您想要授予 Secrets Manager 访问权限的成员。
 
-2、在面板底部，选中**此用户可以访问 Secrets Manager Beta 版**：
+2、使用 **≡**菜单，选中**启用 Secrets Manager** 以向选定成员授予访问权限：
 
-{% embed url="https://bitwarden.com/_gatsby/image/16428fa0dec70919daa1ff46235f2795/fd47c23b1af4ee88e1f2061428b4f6b1/give-member-access.webp?eu=d78a52b0b6ccfcd35d6ba2826b7a633cb16901afaf0263843e63ecfd4aad9cd223a01150279c2bb42f38098a86e617ee639370341defd7d294ed10f7ea31ac5b55d70ce764e07100032fc6adb0f7004d6ac0490aa2829e00f16b7780e3b7e5761d571d7dfa73bbd4e9a03d60e5832d31ecb6f27f61c7ad7cea4a1a108b5b7be37be2cd8f644badd0e35bb9b7adea5c89dff9735204c4f4777c240a4559bb25e6e2b51b733853261941cae50dc033d1f2385f1466583c7e9e25258606fb6b3596b7faa55add7878e3aacc6476d4c0a880eb4bfe2a20ef9c20a087242d574bf90ef0e926a587261b5fd279afd60fac435b62&a=w%3D850%26h%3D675%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.653Z" %}
-分配对测试版的访问权限
+{% embed url="https://bitwarden.com/_gatsby/image/a160b75f2f6f68f1da1027f8cbf872ae/1705ae65ec2ddaebf8005a26ee57b8f0/Screen%20Shot%202023-07-05%20at%209.56.35%20AM.webp?eu=d7dc02b7e2c9fa8e076ca4876d24346ce26950a8ad5334d26f63e1ae47facbd52cf44f5225c629e578600bd986e916ee63937d6410bdd3dbc0ed4cf6e237fe5c008209bb61b576005822c2feb8fc54176ac51a5ea981cc0ea56a2180b7b2b67318511d23fa72bc89edaf3066b28b256aaef2e66d6fddb421bd430901880622b832ead39d665aadd0ee4aabf9e9eb579edabd2c514886b4323d74356d26912bcdf1ec5026597c053364c9f25b853df6a9351a6227080c00fe346ed406fe6533c4e6f3f75cd0287de1a09a387787c2a6d5f279ff6823b29148cada643e610fac11aea17bf0cf640361d06e959c52b7051b3645ed6df43a60876f&a=w%3D850%26h%3D419%26fm%3Dwebp%26q%3D75&cd=2023-07-18T16%3A04%3A51.094Z" %}
+添加 Secrets Manager 用户
 {% endembed %}
 
 {% hint style="success" %}
