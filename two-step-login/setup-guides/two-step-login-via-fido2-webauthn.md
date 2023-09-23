@@ -10,12 +10,16 @@
 > * [U2F](https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E7%AC%AC%E4%BA%8C%E5%9B%A0%E7%B4%A0)：Universal 2nd Factor，通用第二因素。由 [FIDO 联盟](https://fidoalliance.org/)制定的一个开放认证标准，使用专门的 USB 或 NFC 设备来加强并简化双重认证。
 > * [Yubiley](https://zh.wikipedia.org/wiki/YubiKey)：YubiKey 是由 [Yubico](https://www.yubico.com/) 公司生产的用于身份认证的硬件设备。部分 Yubikey 型号支持 FIDO。其他支持 FIDO 的硬件还有 Google 的 [Titan 安全钥匙](https://cloud.google.com/titan-security-key)、FEITIAN 的[安全钥匙](https://www.ftsafe.com/Products/FIDO)等。
 
-FIDO2 WebAuthn 方式的两步登录适用于高级用户，包括付费组织（家庭、团队或企业）的成员。&#x20;
+所有 Bitwarden 用户均可免费使用 FIDO2 WebAuthn 凭据进行两步登录。
+
+{% hint style="info" %}
+**\[译者注]**：2023.9.0 之前，FIDO2 WebAuthn 方式的两步登录适用于高级用户，包括付费组织（家庭、团队或企业）的成员，不适用于免费用户。
+{% endhint %}
 
 可以使用任何经过 FIDO2 WebAuthn 认证的验证器，包括 [YubiKey](https://www.yubico.com/)、[SoloKeys](https://solokeys.com/)、[Google Titan](https://store.google.com/product/titan\_security\_key)、[Nitrokey](https://www.nitrokey.com/) 等安全钥匙，以及 Windows Hello 和 Touch ID 等本机生物识别选项。
 
 {% hint style="success" %}
-已存在的 FIDO U2F 安全钥匙仍将可用，其在两步登录 → 管理 FIDO2 WebAuthn 对话框中被标记为**（迁移自 FIDO）**。
+已存在的 FIDO U2F 安全钥匙仍将可用，其在两步登录 → 管理 FIDO2 WebAuthn 对话框中被标记为（**迁移自 FIDO**）。
 {% endhint %}
 
 FIDO2 WebAuthn 不能在所有 Bitwarden 应用程序上使用。您应该额外启用另一种两步登录方式，以便在不受支持的应用程序上访问您的密码库。支持的应用程序：
@@ -83,7 +87,7 @@ FIDO2 WebAuthn 不能在所有 Bitwarden 应用程序上使用。您应该额外
 ![FIDO2 提示](../../.gitbook/assets/u2f-web.png)
 
 {% hint style="success" %}
-勾选**记住我**方框，以记住您的设备，为期30天。记住你的设备意味着你不会被要求完成两步登陆步骤。
+勾选**记住我**复选框，以记住您的设备，为期30天。记住你的设备意味着您不会被要求完成两步登陆步骤。
 {% endhint %}
 
 登录后，您将不会被要求完成第二步的两步登录步骤就可以**解锁**您的密码库。有关配置注销和锁定行为的帮助，请参阅[密码库超时选项](../../your-vault/vault-timeout-options.md)。
@@ -100,12 +104,12 @@ FIDO2 WebAuthn 不能在所有 Bitwarden 应用程序上使用。您应该额外
 
 在移动设备上，你可能会遇到你的 YubiKey 被连续读取两次的情况。当您设备的浏览器打开 YubiKey OTP 网站（`https://demo.yubico.com/yk`），如果您的设备多次振动以发出多次 NFC 读取信号时，您就会知道发生了这种情况。
 
-**要解决此问题**，请使用 [YubiKey Manager](https://www.yubico.com/support/download/yubikey-manager/) 应用程序为您的钥匙禁用 **NFC → OTP** 接口：
+**要解决此问题**，请使用 [YubiKey Manager](https://www.yubico.com/support/download/yubikey-manager/) 应用程序为您的钥匙禁用 **NFC** → **OTP** 接口：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2aUJJ6C3Gnro62dCtQnUxR/12849b304695f5e9d6430f558feace0e/yubikey_manager.png?fm=webp&h=1280&q=50&w=1724" %}
 YubiKey Manager
 {% endembed %}
 
 {% hint style="warning" %}
-禁用 **NFC → OTP** 后，您将无法通过此钥匙的 NFC 使用 [YubiKey 方式的两步登录](two-step-login-via-yubikey.md)（OTP）。在这种情况下，通过 USB 的 OTP 仍将按预期运行。
+禁用 **NFC** → **OTP** 后，您将无法通过此钥匙的 NFC 使用 [YubiKey 方式的两步登录](two-step-login-via-yubikey.md) (OTP)。在这种情况下，通过 USB 的 OTP 仍将按预期运行。
 {% endhint %}

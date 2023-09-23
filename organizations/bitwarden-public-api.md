@@ -12,7 +12,7 @@ Bitwarden Public API 为组织提供了一套用于管理成员、集合、群�
 
 此 Public API 是一种 RESTful API，RESTful API 具有可预测的面向资源的 URL，接受 JSON 编码的请求正文，返回 JSON 编码的响应，并使用标准的 HTTP 响应代码、验证和动态词。
 
-此 Public API 与 OpenAPI 规范（OAS3）兼容，并发布兼容的 [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) 定义文件。使用 [Swagger UI](https://swagger.io/tools/swagger-ui/) 探索 OpenAPI 规范：
+此 Public API 与 OpenAPI 规范 (OAS3) 兼容，并发布兼容的 [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) 定义文件。使用 [Swagger UI](https://swagger.io/tools/swagger-ui/) 探索 OpenAPI 规范：
 
 * 对于公共云托管实例：[https://bitwarden.com/help/api/](https://bitwarden.com/help/api/)
 * 对于自托管实例：https://your.domain.com/api/docs/
@@ -21,7 +21,7 @@ Bitwarden Public API 为组织提供了一套用于管理成员、集合、群�
 以下计划的客户可以访问 Bitwarden 公共 API：**经典 2019 企业组织**、当前的**企业组织**和当前的**团队组织**。有关更多信息，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 {% endhint %}
 
-> \[**译者注**]：Swagger-UI 是一套 HTML/CSS/JS 框架，用于解析遵守 Swagger 规范的 JSON 或 YAML 文件，展示 swagger-editor 生成的 API 文档，还可以在其中调试 API。它将我们编写的 OpenAPI 规范呈现为交互式的 API 文档，使用浏览器来查看并且操作我们的 RESTful API。
+> **\[译者注]**：Swagger-UI 是一套 HTML/CSS/JS 框架，用于解析遵守 Swagger 规范的 JSON 或 YAML 文件，展示 swagger-editor 生成的 API 文档，还可以在其中调试 API。它将我们编写的 OpenAPI 规范呈现为交互式的 API 文档，使用浏览器来查看并且操作我们的 RESTful API。
 >
 > [Swagger 官方网站](https://swagger.io/)、[Swagger 介绍 1](https://fallenk.github.io/2018/11/28/Swagger%E7%9A%84%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/)、[Swagger 介绍 2](https://lingmoumou.github.io/p/2020/01/31/631e780c/)、[Swagger UI 介绍](https://bbs.huaweicloud.com/blogs/160304)。
 

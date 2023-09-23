@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/why-choose-bitwarden-for-your-team/)
 {% endhint %}
 
-> \[**译者注**]：本文中对比的对象简称分别代表：
+> **\[译者注]**：本文中对比的对象简称分别代表：
 >
 > * 1P：[1Password](https://1password.com/)
 > * LP：[LastPass](https://www.lastpass.com/)

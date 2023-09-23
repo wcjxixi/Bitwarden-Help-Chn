@@ -90,7 +90,7 @@ Bitwarden 浏览器扩展将动态地使用您的网页浏览器设置的语言�
 | zh-CN | 中文（中国大陆）            | [简体中文](https://zh.wikipedia.org/wiki/%E7%AE%80%E5%8C%96%E5%AD%97)                                                       |
 | zh-TW | 中文（台灣）              | [繁体中文](https://zh.wikipedia.org/wiki/%E7%B9%81%E4%BD%93%E5%AD%97)                                                       |
 
-> \[**译者注**]：更多语言代码参阅 [ISO 639-1](https://zh.wikipedia.org/wiki/ISO\_639-1)。
+> **\[译者注]**：更多语言代码参阅 [ISO 639-1](https://zh.wikipedia.org/wiki/ISO\_639-1)。
 
 ## 看不到您的语言？ <a href="#dont-see-your-language" id="dont-see-your-language"></a>
 

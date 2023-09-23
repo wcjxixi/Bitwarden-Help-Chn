@@ -103,7 +103,7 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 * Microsoft App Store 桌面应用程序（从 [bitwarden.com/download](https://bitwarden.com/download) 获取的侧面加载的 Windows 桌面应用程序可以正常工作）。
 * 侧面加载的 macOS 桌面应用程序（App Store 桌面应用程序可以正常工作）。
 
-> \[**译者注**]：**侧面加载（side-loaded）的大致理解**：从非官方 App Store 或从网络上下载安装的应用程序，就叫做侧面加载的应用程序。
+> **\[译者注]**：**侧面加载（side-loaded）的大致理解**：从非官方 App Store 或从网络上下载安装的应用程序，就叫做侧面加载的应用程序。
 
 ### 在浏览器扩展上启用 <a href="#enable-for-browser-extensions" id="enable-for-browser-extensions"></a>
 

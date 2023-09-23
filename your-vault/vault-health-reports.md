@@ -66,7 +66,7 @@
 
 ### 不安全网站报告 <a href="#unsecured-websites-report" id="unsecured-websites-report"></a>
 
-**不安全网站报告**可以识别在 URI 中使用不安全(`http://`)方案的登录项目。使用 `https://` 的 TLS/SSL 加密通信要安全得多。要了解更多信息，请参阅 [URI 的使用](../auto-fill/using-uris.md)。
+**不安全网站报告**可以识别在 URI 中使用不安全 (`http://`) 方案的登录项目。使用 `https://` 的 TLS/SSL 加密通信要安全得多。要了解更多信息，请参阅 [URI 的使用](../auto-fill/using-uris.md)。
 
 确定后，您应该将违规的 URI 由 `http://` 更改为 `https://`。
 
@@ -74,18 +74,18 @@
 
 **未激活 2FA 报告**可以识别如下的登录项目：
 
-* 该服务提供了通过 TOTP 的双重验证（2FA）
+* 该服务提供了通过 TOTP 的双重验证 (2FA)
 * 您尚未存储 TOTP 验证证器密钥
 
-双重验证（2FA）是保护您帐户安全的一个重要安全设置。如果网站提供，您应该始终启用双重验证。通过将 URI 数据与来自 [https://2fa.directory/](https://2fa.directory/) 的数据进行交叉引用，可以识别出违规项目。
+双重验证 (2FA) 是保护您帐户安全的一个重要安全设置。如果网站提供，您应该始终启用双重验证。通过将 URI 数据与来自 [https://2fa.directory/](https://2fa.directory/) 的数据进行交叉引用，可以识别出违规项目。
 
-确定后，使用`说明（Instructions）`超链接来为每个违规项目设置 2FA。
+确定后，使用`说明 (Instructions)` 超链接来为每个违规项目设置 2FA。
 
 ### 数据泄露报告（仅个人密码库） <a href="#data-breach-report-individual-vaults-only" id="data-breach-report-individual-vaults-only"></a>
 
 数据泄露报告使用一种叫做 Have I Been Pwned (HIBP) 的服务来识别已知事件中的泄露数据（电子邮件地址、密码、信用卡、DoB 等）。
 
-> \[**译者注**]：DoB：Date of Birth，出生日期
+> **\[译者注]**：DoB：Date of Birth，出生日期
 
 当您创建一个 Bitwarden 帐户时，您可以选择在您决定使用主密码之前运行此报告。要运行此报告，您的主密码的哈希值将发送到 HIBP，并与存储的公开哈希值进行比较。Bitwarden 永远不会暴露您的主密码本身。
 

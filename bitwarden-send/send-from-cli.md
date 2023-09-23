@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/send-cli/)
 {% endhint %}
 
-> \[**译者注**]：
+> **\[译者注]**：
 >
 > * stdout：标准输出
 > * stdin：标准输入

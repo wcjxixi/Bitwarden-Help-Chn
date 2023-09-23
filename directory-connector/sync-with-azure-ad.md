@@ -46,7 +46,7 @@
 3. 填写完成后选择**保存**。
 4. 将密码的**值**复制到安全的地方，稍后将使用它。
 
-> \[**译者注**]：注意客户端密码的值必须及时备份，退出此页面后你将无法再次查看。
+> **\[译者注]**：注意客户端密码的值必须及时备份，退出此页面后你将无法再次查看。
 
 ### 获取应用程序 ID <a href="#get-app-id" id="get-app-id"></a>
 
@@ -134,9 +134,9 @@ include:Group A,Group B
 exclude:Group A,Group B
 ```
 
-#### 根据管理单元（AU）筛选群组 <a href="#group-by-administrative-unit-au" id="group-by-administrative-unit-au"></a>
+#### 根据管理单元 (AU) 筛选群组 <a href="#group-by-administrative-unit-au" id="group-by-administrative-unit-au"></a>
 
-您可以使用 `includeadministrativeunit` 和 `excludeadministrativeunit` 关键词根据已标记的 [Azure Active Directory 管理单元（AU）](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units)在同步中包含或排除群组。`includeadministrativeunit`  和 `excludeadministrativeunit` 使用管理单元的 **Object ID**（对象 ID）：
+您可以使用 `includeadministrativeunit` 和 `excludeadministrativeunit` 关键词根据已标记的 [Azure Active Directory 管理单元 (AU)](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units) 在同步中包含或排除群组。`includeadministrativeunit`  和 `excludeadministrativeunit` 使用管理单元的 **Object ID**（对象 ID）：
 
 ```systemd
 includeadministrativeunit:7ckcq6e5-d733-4b96-be17-5bad81fe679d
