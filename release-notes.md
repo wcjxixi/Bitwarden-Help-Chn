@@ -27,10 +27,10 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 此次发布包含：
 
 * **FIDO2 WebAuthn 现已成为免费的两步登录选项**：用于两步登录的 FIDO2 WebAuthn 方法已扩展到免费账户。现在，所有 Bitwarden 用户都可以使用兼容的 FIDO2 WebAuthn 凭证（如那些与硬件安全钥匙绑定的设备）来提高登录的安全性（参阅[这里](two-step-login/setup-guides/two-step-login-via-fido2-webauthn.md)）。
-* **组织成员电子邮件验证**：当组织成员接受加入邀请时，或如果他们是使用域验证的组织成员，他们的电子邮件将自动通过验证。
-* **导出更新**：密码库数据的 JSON 导出现在将包括适用项目的密码历史记录（参阅这里）。
-* **CLI 密码生成器选项**：使用 CLI 生成密码时增加了自定义密码复杂度的选项标志（参阅这里）。
-* **ProtonPass JSON 导入器**：ProtonPass JSON 已添加到可用于直接导入 Bitwarden Password Manager 的格式列表中（参阅这里）。
+* **组织成员电子邮件验证**：当组织成员[接受加入邀请](organizations/user-management.md#accept)时，或如果他们是使用[域验证](admin-console/login-with-sso/domain-verification.md)的组织成员，他们的电子邮件将自动通过验证。
+* **导出更新**：密码库数据的 JSON 导出现在将包括适用项目的密码历史记录（参阅[这里](import-export/export-vault-data.md)）。
+* **CLI 密码生成器选项**：使用 CLI 生成密码时增加了自定义密码复杂度的选项标志（参阅[这里](your-vault/username-password-generator.md#cli)）。
+* **ProtonPass JSON 导入器**：ProtonPass JSON 已添加到可用于直接导入 Bitwarden Password Manager 的格式列表中（参阅[这里](import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)）。
 * **桌面应用程序主题更新**：桌面应用程序的暗色主题已更新！
 
 ## 2023.8.2

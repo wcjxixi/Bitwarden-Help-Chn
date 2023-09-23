@@ -76,7 +76,13 @@
 bw generate -uln --length 14
 ```
 
-有关详细信息，请参阅我们的 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+生成密码的附加选项标志包括：
+
+* `--minNumber`
+* `--minSpecial`
+* `--ambiguous`
+
+有关详细信息，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 

@@ -1,4 +1,4 @@
-# 导入和导出常见问题
+# 导入 & 导出常见问题
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/import-faqs/)
@@ -96,6 +96,7 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * Password Dragon (xml)
 * Password Safe (xml)
 * PasswordWallet (txt)
+* ProtonPass (json)
 * Psono (json)
 * RememBear (csv)
 * RoboForm (csv)
