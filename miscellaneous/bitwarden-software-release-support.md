@@ -1,4 +1,4 @@
-# \*Bitwarden 软件发布支持
+# Bitwarden 软件发布支持
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/bitwarden-software-release-support/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/\_articles/hosting/bitwarden-software-release-support.md)
@@ -8,7 +8,7 @@ Bitwarden 为 Bitwarden 服务器、Bitwarden 客户端以及其他支持的集�
 
 作为一家安全公司，Bitwarden 创立了一个全球值得信赖的产品，Bitwarden 为我们所有的用户群维护最新和相应的软件版本，使其广泛可用和易于访问。
 
-同时，我们也认识到需要在频繁的更新和发布寿命之间取得平衡。我们还认识到，在较新系统上推进新功能和放弃对旧系统的支持之间需要取得平衡。（这里的“系统”指的是设备、操作系统、软件应用程序和框架）。
+同时，我们也认识到需要在频繁的更新和发布寿命之间取得平衡。我们还认识到，在较新系统上推进新功能和放弃对旧系统的支持之间需要取得平衡。（这里的「系统」指的是设备、操作系统、软件应用程序和框架）。
 
 我们的软件生命周期支持政策如下。此信息将帮助您准备适合您组织的更新。
 

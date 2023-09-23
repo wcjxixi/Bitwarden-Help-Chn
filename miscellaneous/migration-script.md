@@ -16,7 +16,7 @@
 
 安装 Python 模块的常用工具称为 pip。要使用 pip 安装此模块：
 
-```
+```batch
 pip3 install requests
 ```
 
@@ -71,48 +71,48 @@ pip3 install requests
 
 要显示脚本帮助文本：
 
-```
+```batch
 python3 bwAdminTools.py -h
 ```
 
 要比较源组织和目标组织：
 
-```
+```batch
 python3 bwAdminTools.py -c diffbw
 ```
 
 要将组织库数据、群组和群组权限从源组织迁移到目标组织：
 
-```
+```batch
 python3 bwAdminTools.py -c migratebw
 ```
 
 要将成员的权限（群组以外的）从源组织迁移到目标组织：
 
-```
+```batch
 python3 bwAdminTools.py -c migratebwusers
 ```
 
 要从源组织中删除所有集合：
 
-```
+```batch
 python3 bwAdminTools.py -c purgecol
 ```
 
 要从目标组织中删除所有集合：
 
-```
+```batch
 python3 bwAdminTools.py -c purgecoldest
 ```
 
 要从源组织中删除所有群组：
 
-```
+```batch
 python3 bwAdminTools.py -c purgegroup
 ```
 
 要从目标组织中删除所有群组：
 
-```
+```batch
 python3 bwAdminTools.py -c purgegroupdest
 ```
