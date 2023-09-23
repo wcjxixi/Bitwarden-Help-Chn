@@ -72,7 +72,7 @@
 {% tab title="CLI" %}
 使用 generate 命令生成密码：
 
-```
+```batch
 bw generate -uln --length 14
 ```
 

@@ -41,7 +41,7 @@ CLI 的本地打包版本可用于每个平台，并且无须依赖。使用以�
 {% hint style="success" %}
 在 UNIX 系统中，您可能会收到 `Permission denied` （权限被拒绝）的消息。通过运行下面的命令授予权限：：
 
-```shell
+```batch
 bash chmod +x </path/to/executable>
 ```
 {% endhint %}
@@ -50,7 +50,7 @@ bash chmod +x </path/to/executable>
 {% tab title="NPM" %}
 如果您的系统上已安装了 Node.js，则可以使用 NPM 安装 CLI。使用 NPM 进行安装是使安装保持最新的最简单方式，并且**对于已经熟悉 NPM 的用户来说，它应该是首选的方式**：
 
-```shell
+```batch
 npm install -g @bitwarden/cli
 ```
 
@@ -60,7 +60,7 @@ npm install -g @bitwarden/cli
 {% tab title="Chocolatey" %}
 要使用 Chocolatey 进行安装：
 
-```shell
+```batch
 choco install bitwarden-cli
 ```
 
@@ -70,7 +70,7 @@ choco install bitwarden-cli
 {% tab title="Snap" %}
 要使用 Snap 进行安装：
 
-```shell
+```batch
 sudo snap install bw
 ```
 
