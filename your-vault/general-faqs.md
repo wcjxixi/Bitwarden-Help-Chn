@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/product-faqs/)
 {% endhint %}
 
-本文包含有关一般的密码库管理和 Bitwarden 功能的常见问题（FAQ）。
+本文包含有关一般的密码库管理和 Bitwarden 功能的常见问题 (FAQ)。
 
 ## 最常问的问题 <a href="#most-asked-questions" id="most-asked-questions"></a>
 
@@ -43,7 +43,7 @@
 
 ### 问：验证邮箱后会解锁哪些功能？ <a href="#q-what-features-are-unlocked-when-i-verify-my-email" id="q-what-features-are-unlocked-when-i-verify-my-email"></a>
 
-**答：**当验证您的电子邮件地址后，将解锁[创建文件 Send](../bitwarden-send/create-a-send.md) 的（前提是您具有高级功能权限）。
+**答：**当验证您的电子邮件地址后，将解锁[创建文件 Send](../bitwarden-send/create-a-send.md)（前提是您具有高级功能权限）。
 
 ### 问：为什么我的移动应用程序、桌面应用程序或浏览器扩展程序中丢失了密码库项目？ <a href="#q-why-is-a-vault-item-missing-from-my-mobile-app-desktop-app-or-browser-extension" id="q-why-is-a-vault-item-missing-from-my-mobile-app-desktop-app-or-browser-extension"></a>
 

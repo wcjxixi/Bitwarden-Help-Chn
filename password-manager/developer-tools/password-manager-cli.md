@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/cli/)
 {% endhint %}
 
-Bitwarden 命令行界面（CLI）是一个强大且功能齐全的工具，用于访问和管理您的密码库。您在其他 Bitwarden 客户端应用程序（桌面、浏览器扩展等）能找到的许多功能也可以通过 CLI 实现。
+Bitwarden 命令行界面 (CLI) 是一个强大且功能齐全的工具，用于访问和管理您的密码库。您在其他 Bitwarden 客户端应用程序（桌面、浏览器扩展等）能找到的许多功能也可以通过 CLI 实现。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/269bjiuC0f18YVu0VYJO9V/e192e552baa3bfe2f2efba30161f4a70/cli.png?fm=webp&h=578&q=50&w=799" %}
 Bitwarden CLI

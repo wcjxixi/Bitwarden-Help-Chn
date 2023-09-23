@@ -7,7 +7,7 @@
 使用这篇文章帮助您从 Google Chrome 导出数据并将其导入 Bitwarden 中。
 
 {% hint style="success" %}
-本文中的步骤也适用于任何基于 Chromium 的浏览器，包括 Opera、Microsoft Edge（Chromium）、Brave 和 Vivaldi。
+本文中的步骤也适用于任何基于 Chromium 的浏览器，包括 Opera、Microsoft Edge (Chromium)、Brave 和 Vivaldi。
 {% endhint %}
 
 ## 从 Chrome 中导出 <a href="#export-from-chrome" id="export-from-chrome"></a>

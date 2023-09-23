@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/twostep-faqs/)
 {% endhint %}
 
-本文包含有关**两步登录**的常见问题（FAQ）。
+本文包含有关**两步登录**的常见问题 (FAQ)。
 
 ### 问：可以使用 SMS 2FA 吗？ <a href="#q-can-i-use-sms-2-fa" id="q-can-i-use-sms-2-fa"></a>
 

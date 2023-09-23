@@ -103,7 +103,7 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 * Microsoft App Store 桌面应用程序（从 [bitwarden.com/download](https://bitwarden.com/download) 获取的侧面加载的 Windows 桌面应用程序可以正常工作）。
 * 侧面加载的 macOS 桌面应用程序（App Store 桌面应用程序可以正常工作）。
 
-> **\[译者注]**：**侧面加载（side-loaded）的大致理解**：从非官方 App Store 或从网络上下载安装的应用程序，就叫做侧面加载的应用程序。
+> **\[译者注]**：**侧面加载 (side-loaded) 的大致理解**：从非官方 App Store 或从网络上下载安装的应用程序，就叫做侧面加载的应用程序。
 
 ### 在浏览器扩展上启用 <a href="#enable-for-browser-extensions" id="enable-for-browser-extensions"></a>
 
@@ -113,7 +113,7 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 在继续操作之前，必须在您的桌面应用程序中启用生物识别（Windows Hello 或触控 ID）。如果在您的桌面应用程序中没有看到 Windows Hello 选项，则可能需要安装 [Microsoft Visual C++ 可再发行软件包](https://support.microsoft.com/zh-cn/topic/%E6%9C%80%E6%96%B0%E6%94%AF%E6%8C%81%E7%9A%84-visual-c-%E4%B8%8B%E8%BD%BD-2647da03-1eea-4433-9aff-95f26a218cc0)。此外，**如果您使用的是 Safari**，则可以直接跳至**步骤 4**。
 {% endhint %}
 
-1、在 Bitwarden 桌面应用程序 中，导航到设置（Windows：**文件 → 设置**；macOS：**Bitwarden → 首选项**）。
+1、在 Bitwarden 桌面应用程序 中，导航到设置（Windows：**文件** → **设置**；macOS：**Bitwarden** → **首选项**）。
 
 2、向下滚动到**选项**部分并选中**启用浏览器整合**复选框。
 

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/import-faqs/)
 {% endhint %}
 
-本文包含有关**导入和导出**的常见问题（FAQ）。
+本文包含有关**导入和导出**的常见问题 (FAQ)。
 
 ### 问：如果在导入选项列表中没有看到我的服务，如何导入我的数据？ <a href="#q-how-do-i-import-my-data-if-i-dont-see-my-service-on-the-import-options-list" id="q-how-do-i-import-my-data-if-i-dont-see-my-service-on-the-import-options-list"></a>
 

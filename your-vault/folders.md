@@ -72,7 +72,7 @@
 bw create folder <foldername>
 ```
 
-您可以使用 `bw edit <folderId>` 编辑现有文件夹，使用 `bw delete folder <folderId>` 删除文件夹。更多信息，请参阅我们的 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+您可以使用 `bw edit <folderId>` 编辑现有文件夹，使用 `bw delete folder <folderId>` 删除文件夹。更多信息，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -90,7 +90,7 @@ bw create folder <foldername>
 在「父」文件夹中进行检索不会将嵌套在其中的文件夹中的项目作为潜在检索结果包括在内。有关更多信息，请参阅[检索密码库](search-your-vault.md)。
 {% endhint %}
 
-要创建一个嵌套文件夹，给新的文件夹起一个名字，这个名字需包括「父」文件夹，后面使用一个正斜线（`/`）分隔符，例如 `Personal/Email`。
+要创建一个嵌套文件夹，给新的文件夹起一个名字，这个名字需包括「父」文件夹，后面使用一个正斜线 (`/`) 分隔符，例如 `Personal/Email`。
 
 如果没有相应的「父」文件夹名，则该文件夹不会被嵌套，其标题将完整显示。
 
@@ -142,7 +142,7 @@ bw create folder <foldername>
 {% tab title="CLI" %}
 使用 `bw edit` 命令来操作密码库项目 JSON 对象的 `folderId` 属性，如下例所示：
 
-```
+```batch
 bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.folderId="3d9cecac-71a2-4637-9341-acf000eedf04"' | bw encode | bw edit item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328
 ```
 
@@ -154,7 +154,7 @@ bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.folderId="3d9cecac-71a2-
 * 使用 [jq 之类的命令行 JSON 处理器](https://stedolan.github.io/jq/)操作 JSON 对象（特别是 `folderId` 属性）。
 * 使用 `encode` 命令对 JSON 对象的更改进行 `encode`。
 
-如果您不熟悉对这些部分的使用，请参阅我们的 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+如果您不熟悉对这些部分的使用，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
 {% endhint %}
 {% endtab %}
 {% endtabs %}

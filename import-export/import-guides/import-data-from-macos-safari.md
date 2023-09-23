@@ -36,7 +36,7 @@
 
 2、在系统偏好设置中，选择**密码**。系统会提示您使用触控 ID 或密码以继续。
 
-3、在密码对话框中，选择菜单图标（**⋯**）然后选择**导出密码...**：
+3、在密码对话框中，选择菜单图标 (**⋯**) 然后选择**导出密码...**：
 
 {% embed url="https://d33wubrfki0l68.cloudfront.net/63dc688ce144a4c7e8f4b438a19cd7b3f03926f4/6ba3a/help/images/importing/macos.png" %}
 从 macOS 系统偏好设置导出
@@ -82,13 +82,13 @@
 {% tab title="CLI" %}
 要从 CLI 将数据导入您的密码库，请使用以下命令：
 
-```shell
+```batch
 bw import <format> <path>
 ```
 
 `bw import` 命令需要格式（使用 `bw import --formats` 获取格式列表）和路径，例如：
 
-```shell
+```batch
 bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ```
 

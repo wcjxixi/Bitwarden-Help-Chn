@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-当前，URI 黑名单仅适用于 **Android 8.0（Oreo）**或更高版本上的 Bitwarden 移动端。
+当前，URI 黑名单仅适用于 **Android 8.0 (Oreo)** 或更高版本上的 Bitwarden 移动端。
 {% endhint %}
 
 自动填充依赖于登录项目的 URI 属性。如果您不熟悉 URI，请阅读 [URI 的使用](../../auto-fill/using-uris.md)一文。Android 用户可以明确地将 URI 列入黑名单，以防止 Bitwarden 向其提供自动填充功能。要将 URI 列入黑名单，请执行以下操作：

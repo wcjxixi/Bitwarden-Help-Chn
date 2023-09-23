@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/encrypted-export/)
 {% endhint %}
 
-密码库数据可以[导出](export-vault-data.md)为加密的 `.json` 文件。加密的导出文件将包含来自您的组织或个人密码库的项目，但不包含 Send、密码历史记录、回收站或项目附件。可以使用网页密码库或 CLI 创建受密码保护的导出。Bitwarden 提供两种加密导出类型：
+密码库数据可以[导出](export-vault-data.md)为加密的 `.json` 文件。加密的导出文件将包含来自您的组织或个人密码库的项目，但不包含 Send、~~密码历史记录、~~回收站或项目附件。可以使用网页密码库或 CLI 创建受密码保护的导出。Bitwarden 提供两种加密导出类型：
 
 * **账户备份**：导出的加密文件，只能重新导入到生成加密导出文件的 Bitwarden 账户。此过程使用专用于 Bitwarden 账户的[账户加密密钥](../security/account-encryption-key.md)。
 * **密码保护**：使用您选择的密码保护导出的加密文件。该文件使用您选择的密码解密，并且可以导入任何 Bitwarden 账户。
@@ -116,13 +116,13 @@
 {% tab title="CLI" %}
 要从 CLI 导出您的个人密码库数据，需使用 `export` 命令。默认情况下，`export` 导出密码库为 `.csv` 文件并保存在工作目录下，然而，这种行为可以通过使用选项来更改：
 
-```shell
+```batch
 bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 ```
 
 `--password` 选项可用于指定一个加密 `encrypted_json` 导出的密码，而不是您的[帐户加密密钥](../security/account-encryption-key.md)。
 
-更多详情，请参阅我们的 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -156,19 +156,19 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 
 7、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 
-[文件附件](../your-vault/file-attachments.md)、[Send](../bitwarden-send/about-send.md)、回收站和密码历史记录不包含在导入文件中。这些额外的项目需要手动上传到您的密码库。
+[文件附件](../your-vault/file-attachments.md)、[Send](../bitwarden-send/about-send.md)、回收站~~和密码历史记录~~不包含在导入文件中。这些额外的项目需要手动上传到您的密码库。
 {% endtab %}
 
 {% tab title="CLI" %}
 要通过 CLI 将数据导入您的密码库，请使用以下命令：
 
-```shell
+```batch
 bw import <format> <path>
 ```
 
 `bw import` 命令需要一个格式（使用 `bw import --formats` 获取格式列表）和一个路径，例如：
 
-```shell
+```batch
 bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ```
 

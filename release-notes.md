@@ -311,7 +311,7 @@ _服务器 1.46.0、Web 2.26.0，桌面端 1.31.0，浏览器扩展 1.56.0，移
 
 * **桌面端账户切换**：在 Bitwarden 桌面应用程序中一次性登录最多 5 个账户。此功能在 Bitwarden 应用程序中分阶段推出，很快将适用于更多其他应用程序（参阅[这里](your-vault/account-switching.md)）。
 * **iOS 上的 Send**：现在可以直接从 iOS 的共享菜单分享 Bitwarden Send（参阅[这里](bitwarden-send/create-a-send.md)）。
-* **从移动端删除账户**：您现在可以从移动应用程序中删除您的 Bitwarden 账户，但您为什么要这样做（参阅[这里](plans-and-pricing/delete-an-account-or-organization.md)）？
+* **从移动端删除账户**：您现在可以从移动应用程序中删除您的 Bitwarden 账户（参阅[这里](plans-and-pricing/delete-an-account-or-organization.md)），但您为什么要这样做？
 * **新的图标**：我们使用全新的图标更新了所有 Bitwarden 应用程序的外观。尽情欣赏！
 * **目录连接器 - Azure AD 同步性能**：针对 Azure Active Directory 的目录连接器同步，性能已得到提升。与 Azure AD 同步的组织_将不再_需要更改其同步配置。
 * **后端改进**：我们一直在努力改进 Bitwarden 平台的总体性能和稳定性，这将在未来推出一些很棒的新功能。
@@ -375,9 +375,9 @@ Bitwarden 的最新版本侧重于对现有功能进行经常性的改进：
 [联系我们](https://bitwarden.com/contact)
 {% endhint %}
 
-Bitwarden 的最新版本专注于使托管服务提供商（MSP）能够支持其客户的密码管理需求：
+Bitwarden 的最新版本专注于使托管服务提供商 (MSP) 能够支持其客户的密码管理需求：
 
-* **提供商门户**：提供商门户网站允许托管服务提供商（MSP）和经销商代表客户创建和管理组织。使用该门户，提供商可以无缝地支持多个客户的凭证管理（参阅[这里](provider-portal/get-started-with-provider-portal.md)）。
+* **提供商门户**：提供商门户网站允许托管服务提供商 (MSP) 和经销商代表客户创建和管理组织。使用该门户，提供商可以无缝地支持多个客户的凭证管理（参阅[这里](provider-portal/get-started-with-provider-portal.md)）。
 * **共享用词的变化**：我们将**共享**按钮更新为**移动到组织**，以明确共享项目是由组织所拥有的。此外，我们还将「已共享项目」的指示符号（）更改为与集合的指示符号（）保持一致。
 * **CLI `move` 命令**：为了与上述条目保持一致，CLI 的 `share` 命令已被更改为 `move`（参阅[这里](password-manager/developer-tools/password-manager-cli.md#move)）。
 
@@ -392,7 +392,7 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 * **目录连接器 API 密钥认证**：从此版本开始，目录连接器的用户将需要使用[组织 API 密钥](organizations/bitwarden-public-api.md#authentication)才能登录。
 * **目录连接器同步限制增加**：目录连接器现在可以同步无限数量的用户或群组，之前的限制被设置为 2000。要同步 2000 以上的用户或群组，请切换到新的同步选项（参阅[这里](directory-connector/sync-options-and-filters.md#large-syncs)）。
 * **页面加载时自动填充功能的增强**：浏览器扩展的页面加载时自动填充功能已升级，可以更灵活地满足用户的独特需求（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#on-page-load)）。
-* **更多 CLI 选项**：我们添加了一些新的 CLI 选项，包括轻松检索密码库项目的备注（`bw get notes <id>`）和设置 Send 的最大访问计数的功能（`bw send create --maxAccessCount <#>`）。
+* **更多 CLI 选项**：我们添加了一些新的 CLI 选项，包括轻松检索密码库项目的备注 (`bw get notes <id>`) 和设置 Send 的最大访问计数的功能 (`bw send create --maxAccessCount <#>`)。
 * **Web 开发人员自动填充排除**：Web 开发贡献者现在可以通过向 `<input>` 元素添加 `data-bwignore` 属性（例如 `data-bwignore="true"`）来阻止浏览器扩展自动填充给定的表单元素。
 
 ## 2021-05-11 <a href="#2021-05-11" id="2021-05-11"></a>
@@ -433,7 +433,7 @@ Bitwarden 自豪地宣布我们发布了 Bitwarden Send，一个用于短暂共�
 ## 2021-01-19 发行后的更新 <a href="#2021-01-19-post-release-update" id="2021-01-19-post-release-update"></a>
 
 {% hint style="info" %}
-如果您拥有最新版（2021-01-19）的桌面应用程序，则浏览器扩展的生物识别解锁**仅适用于基于 Chromium 的浏览器**（比如 Chrome、Edge）上安装的 v1.48.0 版本的浏览器扩展。
+如果您拥有最新版 (2021-01-19) 的桌面应用程序，则浏览器扩展的生物识别解锁**仅适用于基于 Chromium 的浏览器**（比如 Chrome、Edge）上安装的 v1.48.0 版本的浏览器扩展。
 
 当您的浏览器扩展更新到这个版本时，您可能会被要求接受一个新的权限，以便 Bitwarden `Communicate with cooperating native applications（与本机应用程序通信）`。这个权限是安全的，也是**可选的**，它允许浏览器扩展与 Bitwarden 桌面应用程序进行通信，而这是启用生物识别解锁所必需的（参阅[这里](your-vault/unlocking-with-biometrics.md#browser-extensions)）。拒绝此权限也将允许您使用 v1.48.0 扩展，只是不带生物识别解锁功能。
 
@@ -460,7 +460,7 @@ Bitwarden 团队正在调查这些问题，并将随着情况的进展提供更�
 
 最新版本的 Bitwarden 为所有客户端应用程序添加了与 SSO 相关的增强功能，包括：
 
-* **新的企业策略**：单一组织和单点登录（SSO）认证策略现在可供企业组织使用（参阅[这里](organizations/enterprise-policies.md)）。
+* **新的企业策略**：单一组织和单点登录 (SSO) 认证策略现在可供企业组织使用（参阅[这里](organizations/enterprise-policies.md)）。
 * **用于 CLI 的 API 密钥**：使用从你的网页密码库中新获得的 API 密钥来验证进入 Bitwarden CLI（参阅[这里](password-manager/developer-tools/personal-api-key-for-cli-authentication.md)）。
 * **SSO 入职改进**：我们对用户通过 SSO 入职的方式进行了一些改进，以预防潜在的安全风险（参阅[这里](https://github.com/bitwarden/server/pull/945)）。
 * **GDPR 确认**：从现在开始，Bitwarden 的新用户在注册时将被要求确认隐私政策。

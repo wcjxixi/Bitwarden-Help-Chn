@@ -124,11 +124,11 @@ bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 {% tab title="CLI" %}
 使用 `bw create attachment` 来下载文件，示例：
 
-```
+```batch
 bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --output /Users/myaccount/Pictures/
 ```
 
-更多详情，请参阅我们的 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -172,11 +172,11 @@ bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --outp
 {% tab title="CLI" %}
 使用 `bw deleteattachment` 来删除文件附件，示例：
 
-```
+```batch
 bw delete attachment 7063feab-4b10-472e-b64c-785e2b870b92
 ```
 
-更多详情，请参阅我们的 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 

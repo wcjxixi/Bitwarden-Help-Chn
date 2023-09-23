@@ -201,7 +201,7 @@ bw generate -uln --length 14
 {% hint style="success" %}
 **为什么使用转发的电子邮件别名？**
 
-使用 [SimpleLogin](https://simplelogin.io/) 和 [AnonAddy](https://anonaddy.com/) 等电子邮件别名服务时，您可以使用匿名地址（例如，`nobody-knows-its-me.d0p0r@slmail.me`）来注册网络账户，邮件将转发到您实际的收件箱（例如， `alice@bitwarden.com`）。这可以防止网站或服务在您注册时收集个人信息（在此示例中，名称 Alice 以及她在 Bitwarden 工作的事实）。
+使用 [SimpleLogin](https://simplelogin.io/) 和 [AnonAddy](https://anonaddy.com/) 等电子邮件别名服务时，您可以使用匿名地址（例如，`nobody-knows-its-me.d0p0r@slmail.me`）来注册网络账户，邮件将转发到您实际的收件箱（例如，`alice@bitwarden.com`）。这可以防止网站或服务在您注册时收集个人信息（在此示例中，名称 Alice 以及她在 Bitwarden 工作的事实）。
 {% endhint %}
 
 要设置您的电子邮件别名集成：

@@ -91,13 +91,13 @@
 {% tab title="CLI" %}
 要从 CLI 导出您的个人密码库数据，需使用 `export` 命令。默认情况下，`export` 导出密码库为 `.csv` 文件并保存在工作目录下，然而，这种行为可以通过使用选项来更改：
 
-```shell
+```batch
 bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 ```
 
 `--password` 选项可用于指定一个加密 `encrypted_json` 导出的密码，而不是您的[帐户加密密钥](../security/account-encryption-key.md)。
 
-更多详情，请参阅我们的 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -131,7 +131,7 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 
 默认情况下，`export` 导出密码库为 `.csv` 文件并保存在工作目录下，然而，这种行为可以通过使用选项来更改：
 
-```shell
+```batch
 bw export my-master-password --organizationid 7063feab-4b10-472e-b64c-785e2b870b92 --output /users/me/documents/ --format json
 ```
 
@@ -139,7 +139,7 @@ bw export my-master-password --organizationid 7063feab-4b10-472e-b64c-785e2b870b
 如果您一时不知道您的 `organizationid` 值，可以在命令行使用 `bw list organizations` 来获取它。
 {% endhint %}
 
-更多详情，请参阅我们的 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
 
 {% hint style="info" %}
 导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/reporting/event-logs.md)。

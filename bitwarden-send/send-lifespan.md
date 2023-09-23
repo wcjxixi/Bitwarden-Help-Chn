@@ -164,7 +164,7 @@ Send 被禁用后：
 
 要从 CLI 禁用 Send，你需要使用 `edit` 命令将 `"disabled":false` 键值对更改为 `"disabled":true`，例如：
 
-```
+```batch
 bw send get <id> | jq '.disabled=true' | bw encode | bw send edit
 ```
 
@@ -174,7 +174,7 @@ bw send get <id> | jq '.disabled=true' | bw encode | bw send edit
 
 要从 CLI 删除 Send，请使用带有 Send 的确切唯一 `id` 作为参数的 `delete` 命令：
 
-```
+```batch
 bw send delete <id>
 ```
 

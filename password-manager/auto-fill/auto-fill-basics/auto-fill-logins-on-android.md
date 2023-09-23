@@ -26,12 +26,12 @@ Android 账户切换
 
 根据你设备上所运行的 Android 版本， 有几种不同的方式启用 Bitwarden 上的自动填充：
 
-| 选项        | 要求的版本...      | 要求先启用...                              |
-| --------- | ------------- | ------------------------------------- |
-| 自动填充服务    | Android 8+    | -                                     |
-| 内嵌自动填充    | Android 11+   | 自动填充服务，支持内嵌的 IME（Input Method Editor） |
-| Draw-Over | Android 6+    | 无障碍                                   |
-| 无障碍       | 所有 Android 版本 | -                                     |
+| 选项        | 要求的版本...      | 要求先启用...                               |
+| --------- | ------------- | -------------------------------------- |
+| 自动填充服务    | Android 8+    | -                                      |
+| 内嵌自动填充    | Android 11+   | 自动填充服务，支持内嵌的 IME (Input Method Editor) |
+| Draw-Over | Android 6+    | 无障碍                                    |
+| 无障碍       | 所有 Android 版本 | -                                      |
 
 ### 自动填充服务 <a href="#autofill-service" id="autofill-service"></a>
 
@@ -60,7 +60,7 @@ Android 账户切换
 需先启用**自动填充服务**，才能启用内嵌自动填充。
 {% endhint %}
 
-内嵌自动填充（_要求 Android 11+、兼容的 IME（Input Method Editor）并且已启用**自动填充服务**_）将自动填充服务叠加层移动至键盘中：
+内嵌自动填充（_要求 Android 11+、兼容的 IME (Input Method Editor) 并且已启用**自动填充服务**_）将自动填充服务叠加层移动至键盘中：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2LxDxR7KcVd68U9UydYxat/e13bbf0b49f9a4b50b3b0d93fdd2aea8/inline.png?fm=webp&h=281&q=50&w=378" %}
 GBoard 上的内嵌自动填充

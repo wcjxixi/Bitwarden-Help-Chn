@@ -24,7 +24,7 @@
 账户设置
 {% endembed %}
 
-3、选择**安全**页面和**两步登录**选项卡：
+3、选择**安全**页面然后选择**两步登录**选项卡：
 
 {% embed url="https://bitwarden.com/_gatsby/image/825426d227e1afce2f4b644e6a3e9e84/3cbf2a88c5de2a53993ef05ef68dd09e/Screen%20Shot%202022-05-16%20at%2011.13.53%20AM.webp?eu=da8a56b3b0c9ff8e0a6ef2806a713261e96b52aca85232853c31e0ad4ffa99d220a51f01249279b5246b0c8dd0b344ee66937e3348eb82dac0b81cf3ef36a85c008650b623f730445b34dba7eda451102bd8491cf7d28b4bf62931cabbe6f36f1e124278ee20b9d7e4f47263af815d7191f5ae2d32c6f825b9613b13834e73ad30b393c1301beb98b84ee9e1ecfb5bccceb32c0e40d9a73277774b1909ea28bda2e60c75264a1319609bf137a439c9f2531e61215c4203f27a3bd63aaa285ec2e5e5a05ec77f788ed9b42f30d894&a=w%3D779%26h%3D301%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.371Z" %}
 两步登录
@@ -57,5 +57,5 @@
 
 ![](<../.gitbook/assets/image (3).png>)
 
-如果 **Duo（Organization）**提示窗口提示您被锁定在您的密码库之外了，请与您公司的 Duo 管理员联系，以帮助绕过此提示。
+如果 **Duo (Organization)** 提示窗口提示您被锁定在您的密码库之外了，请与您公司的 Duo 管理员联系，以帮助绕过此提示。
 {% endhint %}

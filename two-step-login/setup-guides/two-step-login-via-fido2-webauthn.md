@@ -6,9 +6,9 @@
 
 > **\[译者注]**：
 >
-> * FIDO：Fast IDentity Online，在线快速身份认证。FIDO 是一套身份认证框架协议，由 [FIDO 联盟](https://fidoalliance.org/)维护并制定相应的技术规范和标准。
-> * [U2F](https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E7%AC%AC%E4%BA%8C%E5%9B%A0%E7%B4%A0)：Universal 2nd Factor，通用第二因素。由 [FIDO 联盟](https://fidoalliance.org/)制定的一个开放认证标准，使用专门的 USB 或 NFC 设备来加强并简化双重认证。
-> * [Yubiley](https://zh.wikipedia.org/wiki/YubiKey)：YubiKey 是由 [Yubico](https://www.yubico.com/) 公司生产的用于身份认证的硬件设备。部分 Yubikey 型号支持 FIDO。其他支持 FIDO 的硬件还有 Google 的 [Titan 安全钥匙](https://cloud.google.com/titan-security-key)、FEITIAN 的[安全钥匙](https://www.ftsafe.com/Products/FIDO)等。
+> * **FIDO**：Fast IDentity Online，在线快速身份认证。FIDO 是一套身份认证框架协议，由 [FIDO 联盟](https://fidoalliance.org/)维护并制定相应的技术规范和标准。
+> * [**U2F**](https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E7%AC%AC%E4%BA%8C%E5%9B%A0%E7%B4%A0)：Universal 2nd Factor，通用第二因素。由 [FIDO 联盟](https://fidoalliance.org/)制定的一个开放认证标准，使用专门的 USB 或 NFC 设备来加强并简化双重认证。
+> * [**YubiKey**](https://zh.wikipedia.org/wiki/YubiKey)：YubiKey 是由 [Yubico](https://www.yubico.com/) 公司生产的用于身份认证的硬件设备。部分 Yubikey 型号支持 FIDO。其他支持 FIDO 的硬件还有 Google 的 [Titan 安全钥匙](https://cloud.google.com/titan-security-key)、FEITIAN 的[安全钥匙](https://www.ftsafe.com/Products/FIDO)等。
 
 所有 Bitwarden 用户均可免费使用 FIDO2 WebAuthn 凭据进行两步登录。
 
@@ -87,7 +87,7 @@ FIDO2 WebAuthn 不能在所有 Bitwarden 应用程序上使用。您应该额外
 ![FIDO2 提示](../../.gitbook/assets/u2f-web.png)
 
 {% hint style="success" %}
-勾选**记住我**复选框，以记住您的设备，为期30天。记住你的设备意味着您不会被要求完成两步登陆步骤。
+勾选**记住我**复选框，以记住您的设备，有效期 30 天。记住您的设备意味着您不会被要求完成两步登陆步骤。
 {% endhint %}
 
 登录后，您将不会被要求完成第二步的两步登录步骤就可以**解锁**您的密码库。有关配置注销和锁定行为的帮助，请参阅[密码库超时选项](../../your-vault/vault-timeout-options.md)。
@@ -102,7 +102,7 @@ FIDO2 WebAuthn 不能在所有 Bitwarden 应用程序上使用。您应该额外
 
 ### YubiKey NFC 故障排除 <a href="#troubleshooting-yubikey-nfc" id="troubleshooting-yubikey-nfc"></a>
 
-在移动设备上，你可能会遇到你的 YubiKey 被连续读取两次的情况。当您设备的浏览器打开 YubiKey OTP 网站（`https://demo.yubico.com/yk`），如果您的设备多次振动以发出多次 NFC 读取信号时，您就会知道发生了这种情况。
+在移动设备上，你可能会遇到你的 YubiKey 被连续读取两次的情况。当您设备的浏览器打开 YubiKey OTP 网站 (`https://demo.yubico.com/yk`)，如果您的设备多次振动以发出多次 NFC 读取信号时，您就会知道发生了这种情况。
 
 **要解决此问题**，请使用 [YubiKey Manager](https://www.yubico.com/support/download/yubikey-manager/) 应用程序为您的钥匙禁用 **NFC** → **OTP** 接口：
 

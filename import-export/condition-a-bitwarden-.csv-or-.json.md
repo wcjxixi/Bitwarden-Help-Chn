@@ -32,7 +32,7 @@ Social,1,login,Twitter,,,0,twitter.com,me@example.com,password123,
 ,,note,My Note,"This is a secure note.",,,,,
 ```
 
-导入此文件时，请选择 **Bitwarden(csv)** 作为您的文件格式。
+导入此文件时，请选择 **Bitwarden (csv)** 作为您的文件格式。
 
 ⬇️[下载示例 csv 文件](https://assets.ctfassets.net/7rncvj1f8mw7/70BRfxAoqXCQXvNvBmpjyt/60a86b19b0d9a349478110b17d1fc698/bitwarden\_export.csv)
 
@@ -54,7 +54,7 @@ collections,type,name,notes,fields,reprompt,login_uri,login_username,login_passw
 ,note,My Note,"This is a secure note.",,,,,
 ```
 
-导入此文件时，请选择 **Bitwarden(csv)** 作为您的文件格式。
+导入此文件时，请选择 **Bitwarden (csv)** 作为您的文件格式。
 
 ⬇️[下载示例 csv 文件](https://assets.ctfassets.net/7rncvj1f8mw7/4DdJLATeuhMYlE581pPErF/ef60b56917b58f59141ae9aa58b5a46d/bitwarden\_export\_org.csv)
 
@@ -119,7 +119,7 @@ folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_p
 }
 ```
 
-导入此文件时，请选择 **Bitwarden(json)** 作为您的文件格式。
+导入此文件时，请选择 **Bitwarden (json)** 作为您的文件格式。
 
 ⬇️[下载示例 csv 文件](https://assets.ctfassets.net/7rncvj1f8mw7/2gWg0hxdS1y4a3SSZnesDN/3baec2b17ce618ec2296cd4dbcbd8f31/bitwarden\_export.json)
 
@@ -174,7 +174,7 @@ folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_p
 }
 ```
 
-导入此文件时，请选择 **Bitwarden(json)** 作为您的文件格式。
+导入此文件时，请选择 **Bitwarden (json)** 作为您的文件格式。
 
 ⬇️[下载示例 csv 文件](https://assets.ctfassets.net/7rncvj1f8mw7/3qTuEXkLZiEXewdcHxzttW/a6f4ba7f7ac5fbe94059d1d9416074f4/bitwarden\_org\_export.json)
 

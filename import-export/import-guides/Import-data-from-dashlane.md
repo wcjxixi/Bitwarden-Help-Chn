@@ -10,7 +10,7 @@
 
 要从 Dashlane 网页应用程序导出数据：
 
-1、选择**我的帐户**下拉菜单，然后选择**设置**：
+1、选择**我的账户**下拉菜单，然后选择**设置**：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5JMQiiNRcMkyPjzC3lsvBp/ef2a9492c16bbeaa7f9eedecf9a11764/Screen_Shot_2022-03-10_at_2.57.56_PM.png?fm=webp&h=597&q=50&w=946" %}
 从 Dashlane 导出
@@ -58,13 +58,13 @@ Dashlane 将数据导出为可解压缩为多个 `.csv` 文件的 `.zip` 文件�
 {% tab title="CLI" %}
 要从 CLI 将数据导入您的密码库，请使用以下命令：
 
-```shell
+```batch
 bw import <format> <path>
 ```
 
 `bw import` 命令需要格式（使用 `bw import --formats` 获取格式列表）和路径，例如：
 
-```shell
+```batch
 bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ```
 

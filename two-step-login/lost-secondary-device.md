@@ -19,7 +19,7 @@
 
 ![](<../.gitbook/assets/image (2).png>)
 
-如果 **Duo（Organization）**提示窗口提示您被锁定在您的密码库之外了，请与您公司的 Duo 管理员联系，以帮助绕过此提示。
+如果 **Duo (Organization)** 提示窗口提示您被锁定在您的密码库之外了，请与您公司的 Duo 管理员联系，以帮助绕过此提示。
 {% endhint %}
 
 ## 没有恢复代码？ <a href="#i-dont-have-a-recovery-code" id="i-dont-have-a-recovery-code"></a>

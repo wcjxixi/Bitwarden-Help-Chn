@@ -212,13 +212,13 @@ iOS 和 Android 上的 Send 视图
 
 要创建一个简单的文本 Send，将[删除日期](send-lifespan.md#deletion-date)设置为自创建之日起 14 天：
 
-```
+```batch
 bw send -n "My Text Send" -d 14 "My first secret message."
 ```
 
 要创建一个简单的文件 Send，将[删除日期](send-lifespan.md#deletion-date)设置为自创建之日起 14 天：
 
-```
+```batch
 bw send -n "My File Send" - d 14 -f /Users/myaccount/Documents/my_file.pdf
 ```
 {% endtab %}

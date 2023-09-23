@@ -42,7 +42,7 @@
 
 **答：**Send 被设计成一个可以通过网络共享的端到端加密的 URL。在内部网络之外使用 Send 需要打开 80 和 443 端口。如果您使用反向代理，则必须将以下变量添加到 `./bwdata/env/global-override.env`：
 
-```
+```systemd
 globalSettings__attachment__baseDirectory=/etc/bitwarden/core/attachments
 globalSettings__attachment__baseUrl=https://YOURDOMAINHERE/attachments
 globalSettings__send__baseDirectory=/etc/bitwarden/core/attachments/send

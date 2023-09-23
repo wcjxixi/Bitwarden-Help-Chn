@@ -134,13 +134,13 @@ nickname,status,tags,authToken,additionalInfo
 {% tab title="CLI" %}
 要通过 CLI 将数据导入您的密码库，请使用以下命令：
 
-```shell
+```batch
 bw import <format> <path>
 ```
 
 `bw import` 命令需要格式（使用 `bw import --formats` 获取格式列表）和路径，例如：
 
-```shell
+```batch
 bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ```
 

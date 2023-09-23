@@ -34,7 +34,7 @@
 
 ### 问：出现「生物识别解锁已禁用，等待验证主密码」时怎么办？ <a href="#q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password" id="q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password"></a>
 
-**答：**在 iOS 系统中，当你更改了设备的生物识别设置时（例如在 Touch ID 中添加另一个手指），这种情况最常发生。要解决这个错误：
+**答：**在 iOS 系统中，当你更改了设备的生物识别设置时（例如在触控 ID 中添加另一个手指），这种情况最常发生。要解决这个错误：
 
 1. **如果你已激活了** [**PIN 码**](../your-vault/unlock-with-pin.md)**验证**，禁用它。
 2. 注销你的 Bitwarden 移动应用程序。
