@@ -4,7 +4,7 @@
 
 ***
 
-这里是对 Bitwarden 官方 [Bitwarden Help Center](https://bitwarden.com/help/) 的中文翻译，并参考了 Github 上的 [Bitwarden Help](https://github.com/bitwarden/help) 项目（已停止更新）。
+这里是对 Bitwarden 官方 [Bitwarden Help Center](https://bitwarden.com/help/) 的中文翻译，并参考了 Github 上的 [bitwarden / help](https://github.com/bitwarden/help) 项目（已停止更新）。
 
 译者：[@wcjxixi](mailto:wcjxixi@gmail.com)
 
@@ -15,7 +15,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-**备注：**标题前有 **\*** 的表示在 Github 上的 [Bitwarden 官方帮助中心项目](https://github.com/bitwarden/help)里有，但在官方 [Bitwarden Help Center](https://bitwarden.com/help/) 里被移除或未显示的页面和/或分类，我将其保留仅作为参考之用。
+**备注：**标题前有 **\*** 的表示在 Github 上的 [bitwarden / help](https://github.com/bitwarden/help) 里有，但在官方 [Bitwarden Help Center](https://bitwarden.com/help/) 里被移除或未显示的页面和/或分类，我将其保留仅作为参考之用。
 {% endhint %}
 
 ## Bitwarden 介绍 <a href="#about-bitwarden" id="about-bitwarden"></a>
