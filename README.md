@@ -15,7 +15,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-**备注：**标题前有 **\*** 的表示在 Github 上的 [bitwarden / help](https://github.com/bitwarden/help) 仓库里有，但在官方 [Bitwarden Help Center](https://bitwarden.com/help/) 里被移除或未显示的页面和/或分类，我将其保留仅作为参考之用。
+**备注：**标题前有 \* 的表示官方曾经有但现已移除的页面和/或分类，我将其保留仅作为参考之用。
 {% endhint %}
 
 ## Bitwarden 介绍 <a href="#about-bitwarden" id="about-bitwarden"></a>
