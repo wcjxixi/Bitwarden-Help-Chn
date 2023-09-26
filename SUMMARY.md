@@ -42,7 +42,7 @@
     * [用户名和密码生成器](your-vault/username-password-generator.md)
     * [自定义字段](your-vault/custom-fields.md)
     * [Bitwarden 验证器 (TOTP)](your-vault/totp.md)
-    * [=文件附件](your-vault/file-attachments.md)
+    * [文件附件](your-vault/file-attachments.md)
     * [=共享](organizations/sharing.md)
   * [密码库管理](password-manager/vault-administration/README.md)
     * [文件夹](your-vault/folders.md)
