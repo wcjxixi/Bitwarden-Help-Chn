@@ -1,5 +1,11 @@
 # 首页
 
+{% embed url="https://status.bitwarden.com/" %}
+云服务器状态
+{% endembed %}
+
+***
+
 {% hint style="info" %}
 **对于自托管用户：**
 
@@ -21,3 +27,10 @@
 {% hint style="success" %}
 找不到您需要的吗？[联系支持](https://bitwarden.com/contact/)获取帮助。
 {% endhint %}
+
+### 现场演示和点播演示 <a href="#live-and-on-demand-demonstrations" id="live-and-on-demand-demonstrations"></a>
+
+立即预订业务演示和问答，或观看点播演示。
+
+* [现场演示注册 >](https://bitwarden.com/weekly/)
+* [点播观看 >](https://bitwarden.com/resources/videos/enterprise-demo/)
