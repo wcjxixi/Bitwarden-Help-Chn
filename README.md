@@ -4,7 +4,7 @@
 
 ***
 
-这里是对 Bitwarden 官方 [Bitwarden Help Center](https://bitwarden.com/help/) 的中文翻译，并参考了 Github 上的 [bitwarden / help](https://github.com/bitwarden/help) 仓库（已停止更新）。
+这里是对 Bitwarden 官方 [Bitwarden Help Center](https://bitwarden.com/help/) 的中文翻译，同时参考了 Github 上的 [bitwarden / help](https://github.com/bitwarden/help) 仓库（已停止更新）内容。
 
 译者：[@wcjxixi](mailto:wcjxixi@gmail.com)
 
