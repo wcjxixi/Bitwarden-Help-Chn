@@ -4,13 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/server-geographies/)
 {% endhint %}
 
-Bitwarden 云可在全球范围内使用，数据存储在**美国**和**欧盟**地区。无论您使用哪个地区的服务器，Bitwarden 用于保护您的敏感数据采取的措施都是相同的。详细了解 [Bitwarden 如何保护您的数据](storage.md)。
+Bitwarden 云可在全球范围内使用，数据存储在**美国**和**欧盟**地区。无论您使用哪个区域的服务器，Bitwarden 用于保护您的敏感数据采取的措施都是相同的。详细了解 [Bitwarden 如何保护您的数据](storage.md)。
 
 ## 选择您的云服务器 <a href="#choose-your-cloud-server" id="choose-your-cloud-server"></a>
 
-要选择在哪个 Bitwarden 服务器地理位置上创建您的账户或组织，请选择登录或注册界面上的**地区**下拉菜单，然后选择您所需的地区，例如在 Web 应用程序中：
+要选择在哪个 Bitwarden 服务器地理位置上创建您的账户或组织，请选择登录或注册界面上的**服务器**下拉菜单，然后选择您所需的区域，例如在 Web 应用程序中：
 
-{% embed url="https://bitwarden.com/_gatsby/image/0d8eeb2547df51c4f647ecd98ef99270/daa6057fbfbbdda53fbd6e1504d08ee3/Screen%20Shot%202023-06-30%20at%201.13.20%20PM.webp?eu=d7dc59e4eacdff805961f3876a716869e83b03abf65063d83d60b0ae4aa1cdd520f0110473972ee3253b598fdae816bc6fc1796711edd0d992b84ca0bb35f80d01d759ef6eb623075879c7adb5a100453dc21f0bf7829a0ca53c7086e7b2e4214a52197fa97abe85bfff366db0d02b61efb0f52c6297fd7de51a540c8f5c31bf6ea48f876e4fb99bf301bca2b8f84a8ec9a36e191e8eb72a2535124c1eb72cedadef4376262a403c36bcaf09bd2896e276636163253b5285253d884aaa646390e1adf05bda7a29b7aec06278d5caab81be1ffa2b22b1c825fd826a73116eff51f8e92598b13c594aee28fa974faf030328438273d8604fd8265e8f1986e128f355e22e7861&a=w%3D850%26h%3D631%26fm%3Dwebp%26q%3D75&cd=2023-07-26T11%3A49%3A48.711Z" %}
+{% embed url="https://bitwarden.com/_gatsby/image/e90a48f400781ce31b6f64c26bd5fb00/9dfed6e43dcce5bd724dfb6bf4af0789/Screen%20Shot%202023-08-14%20at%209.35.12%20AM.webp?eu=898805e0e0c0a9835a6bf1876c7a673db53d51a9a8593ed3696db2f91bfc9fd372fb100476907fb42e6f09dddae140bd33c27c304ae8d2dec0b418f2be67f90050d009bf35b52402557dcea6f4b1460662d90501fcd29f5de0732190b3e2f4334c145f35f62ffc9eebeb6b37f6d92e64e2ebe1297ac1ab1fe3605e05b15171a82ec4909e487abfbcf218b7f9bcaf0e9b98e72e02118df2312b254a1d5aed2deaa1b502796b7d480f349da95fd802c5f469493f4c3d075cb30838d057f87131cbf9faa532883e14e8b6ca346e87c1c1f19004ec7421&a=w%3D850%26h%3D505%26fm%3Dwebp%26q%3D75&cd=2023-08-16T11%3A53%3A15.653Z" %}
 区域选择器
 {% endembed %}
 
