@@ -147,8 +147,8 @@ Bitwarden 支持如下方式的两步登录：
 
 **免费计划**
 
-* 使用验证器应用程序（如 [2FAS](https://2fas.com/)、[Ravio](https://raivo-otp.com/) 和 [Aegis](https://getaegis.app/)
-* FIDO2 WebAuthn（任何经 FIDO U2F 认证的钥匙）&#x20;
+* 使用验证器应用程序（如 [2FAS](https://2fas.com/)、[Ravio](https://raivo-otp.com/) 和 [Aegis](https://getaegis.app/)）
+* FIDO2 WebAuthn（任何经 FIDO WebAuthn 认证的钥匙）
 * 电子邮件&#x20;
 
 **高级功能 - 包含于家庭、团队和企业计划中**
@@ -161,7 +161,7 @@ Bitwarden 支持如下方式的两步登录：
 **非常重要的一点是，千万不要丢失两步登录恢复代码。**Bitwarden 提供的账户保护安全模式不支持用户丢失主密码或两步登录恢复代码。如果您在账户上启用了两步登录，并丢失了两步登录恢复代码，您将无法登录您的 Bitwarden 账户。
 
 {% hint style="info" %}
-2021 年中期，Bitwarden 为企业计划推出了账户恢复功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。
+2021 年中期，Bitwarden 为企业计划推出了[账户恢复](../organizations/admin-password-reset.md)功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。
 {% endhint %}
 
 #### 更改用户密码 <a href="#changing-user-password" id="changing-user-password"></a>
@@ -227,7 +227,7 @@ Bitwarden 还使用 Azure 透明数据加密 (TDE) 通过对数据库、关联�
 
 ### 将密码和其他机密导入 Bitwarden <a href="#importing-passwords-and-other-secrets-into-bitwarden" id="importing-passwords-and-other-secrets-into-bitwarden"></a>
 
-您可以轻松地将数据从 40 多种不同的服务（包括所有流行的密码管理器应用程序）导入 Bitwarden。 [Bitwarden 帮助中心](../import-export/import-data-to-your-vault.md)记录了受支持的应用程序的完整列表以及一些其他信息，包括将数据导入 Bitwarden 的疑难解答步骤。
+您可以轻松地将数据从 40 多种不同的服务（包括所有流行的密码管理器应用程序）导入 Bitwarden。[Bitwarden 帮助中心](../import-export/import-data-to-your-vault.md)记录了受支持的应用程序的完整列表以及一些其他信息，包括将数据导入 Bitwarden 的疑难解答步骤。
 
 如果要从 LastPass.com 网页密码库导出您的站点信息，请参考此帮助说明中的具体信息：[从 LastPass 导入数据](../import-export/import-guides/import-your-data-from-lastpass.md)。
 
@@ -237,15 +237,39 @@ Bitwarden 还使用 Azure 透明数据加密 (TDE) 通过对数据库、关联�
 图示：组织密钥保护与交换
 {% endembed %}
 
-![图示：组织密钥保护与交换](https://github.com/bitwarden/help/raw/master/images/security-white-paper/overview-organization-symmetric-key-and-rsa-key-pair.png)
-
 使用密码管理器的优势之一就是协作。为了实现共享，首先需要创建一个组织。Bitwarden 组织是一个实体，它将想要共享项目的用户联系在一起。一个组织可以是一个家庭、团队、公司、或希望共享数据的任何其他类型的团体。
 
-一个用户账户可以创建和/或属于许多不同的组织，允许你从一个账户管理你的项目。
+单个用户账户可以创建和/或属于许多不同的组织，允许你从一个账户管理你的项目。
 
 您可以从网页密码库中创建一个新的 Bitwarden 组织，或者请求现有组织的管理员向您发出邀请。
 
-当您创建一个组织时，将使用加密安全伪随机数生成器 (CSPRNG) 生成组织对称密钥。使用您生成的 RSA 密钥对中的公钥加密组织对称密钥。使用 AES-256 与生成的对称密钥加密生成的 RSA 密钥对中的私钥。生成的 RSA 密钥对和生成的对称密钥在你第一次注册账户时创建。
+#### 当您创建一个组织时 <a href="#when-you-create-an-organization" id="when-you-create-an-organization"></a>
+
+将使用加密安全伪随机数生成器 (CSPRNG) 生成组织对称密钥。该组织对称密钥用于解密组织拥有的密码库数据，因此与组织成员共享数据需要安全地提供对其的访问权限。原始组织对称密钥永远不会存储在 Bitwarden 服务器上。
+
+生成了组织对称密钥后，就会使用 RSA-OAEP 通过组织创建者的 RSA 公钥加密组织对称密钥。在创建账户时会为每个用户生成一个 RSA 密钥对，无论他们是否是组织成员，因此该密钥在组织创建之前就已经存在。
+
+{% hint style="info" %}
+RSA 私钥（其用途如下所述）是使用用户账户加密密钥加密存储的，因此用户必须完全登录才能访问它。
+{% endhint %}
+
+此操作的结果值称为受保护的组织对称密钥，并发送到Bitwarden服务器。
+
+当组织创建者或任何组织成员登录到他们的账户时，客户端应用程序使用已解密的 RSA 私钥来解密受保护的组织对称密钥，从而产生组织对称密钥。使用组织对称密钥，在本地解密组织拥有的密码库数据。
+
+#### 当用户加入组织时 <a href="#when-users-join-an-organization" id="when-users-join-an-organization"></a>
+
+后续用户加入组织的过程非常相似，但有些差异值得注意。
+
+首先，组织的既定成员（特别是有权限入职其他用户的成员）向组织确认该用户。该既定成员由于已经登录其账户并完成了上一节中描述的组织数据解密过程，因此可以访问已解密的组织对称密钥。
+
+因此，当新用户得到确认时，既定成员的客户端将连接到 Bitwarden 服务器，检索新用户的 RSA 公钥（该密钥在创建账户时存储在 Bitwarden 服务器上），并用它来加密已解密的组织对称密钥。这会产生一个新的受保护组织对称密钥，该密钥将发送到 Bitwarden 服务器并为新成员存储。
+
+{% hint style="info" %}
+每个受保护的组织对称密钥对于其用户来说都是唯一的，但是当使用其特定用户的 RSA 私钥解密时，每个受保护的组织对称密钥都将解密为相同的所需组织对称密钥。
+{% endhint %}
+
+新用户登录其账户时，客户端应用程序使用已解密的 RSA 私钥来解密新的受保护组织对称密钥，从而生成组织对称密钥。使用组织对称密钥，在本地解密组织拥有的密码库数据。
 
 阅读更多：[什么是组织？](../organizations/organizations.md)
 
@@ -257,7 +281,7 @@ Bitwarden 还使用 Azure 透明数据加密 (TDE) 通过对数据库、关联�
 
 Bitwarden 帮助中心的[用户类型和访问控制](../admin-console/user-management/member-roles-and-permissions.md)部分记录了完整的角色和访问控制列表。
 
-阅读更多：[如何管理集合](broken-reference)。
+阅读更多：[如何](broken-reference)
 
 #### 事件日志 <a href="#event-logs" id="event-logs"></a>
 
