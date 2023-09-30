@@ -69,15 +69,15 @@ Bitwarden 采用以下关键安全措施来保护用户数据。
 
 Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻。我们强烈建议在入职过程中使用一个强大的主密码。Bitwarden 提供了一个密码强度计，它将评估并显示正在输入的主密码的整体强度，以鼓励使用强大的主密码。
 
-![创建一个 Bitwarden 账户](https://github.com/bitwarden/help/raw/master/images/security-white-paper/create-account.png)
+![图示：创建一个 Bitwarden 账户](https://github.com/bitwarden/help/raw/master/images/security-white-paper/create-account.png)
 
 如果您试图使用弱密码注册，Bitwarden 会提醒你选择的主密码是弱密码。当您创建 Bitwarden 账户时，您还可以选择使用 HIBP 检查主密码的已知数据泄露。
 
-![弱主密码警告](https://github.com/bitwarden/help/raw/master/images/security-white-paper/weak-master-password-warning.png)
+![图示：弱主密码警告](https://github.com/bitwarden/help/raw/master/images/security-white-paper/weak-master-password-warning.png)
 
 使用一个强大的主密码是为您自己的安全利益着想，因为它是您用来访问您的安全密码库的令牌，您的敏感物品就存放在那里。在您使用 Bitwarden 服务时，您有责任保证您的账户安全。我们提供额外的措施，如两步登录，帮助您维护您的账户安全，但您的账户内容及其安全由您决定。
 
-![选择一个强主密码](https://github.com/bitwarden/help/raw/master/images/security-white-paper/choose-a-strong-master-password.png)
+![图示：选择一个强主密码](https://github.com/bitwarden/help/raw/master/images/security-white-paper/choose-a-strong-master-password.png)
 
 阅读更多：[密码管理的五种最佳实践](https://bitwarden.com/blog/post/five-best-practices-for-password-management/)和[来自 NIST 的 3 个小贴士让你的密码安全无忧](https://bitwarden.com/blog/post/3-tips-from-nist-to-keep-passwords-secure/)。
 
@@ -130,10 +130,8 @@ Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻�
 主密钥还可以使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF) 扩展到 512 位长度。受保护的对称密钥使用扩展的主密钥进行解密。对称密钥用于解密密码库项目。解密工作完全在 Bitwarden 客户端上完成，因为您的主密码或扩展主密钥绝不会存储到 Bitwarden 服务器，也不会传输到 Bitwarden 服务器。
 
 {% embed url="https://bitwarden.com/_gatsby/image/a0a18fcaa28161be6da533d94fb29d81/df3d74ff52a7f409cfdddc70d8d1be60/whitepaper-login.webp?eu=8cda06e6e5c8fbd1096ea9826b26326eb56e52a8fc5036d43d61e6fb1bae9fd02ca11b50209d7bb32b605adfd7e913bf36972d3410ea868fc4bb1df4be3cfe59508209e832e72253007eccfbe5a603106dc7485aa2d69e5df56874d0b0e2b47310031a23ae73bd80e5a83c66b9d72667ebb0f42c36c6a87ce540540c8f5c31bf6ea48f876e4fb99bf301bca2b8f84a8ec9a36e191e8eb72a2535124c1eb72cedadef43762675022776bfd00b8113d5c83d5a304a2f0e69961c7ecf04fc6f60c5b2ffa709dc7f28b7afc9347484c0ffd1ea4baa7b77e59d20ff8a6a654955f557f8fc2ab787261b52de7da3cb52f25d52&a=w%3D850%26h%3D478%26fm%3Dwebp%26q%3D75&cd=2023-09-08T13%3A16%3A13.822Z" %}
-图示：
+图示：用户登录概述
 {% endembed %}
-
-![用户登录概述](https://github.com/bitwarden/help/raw/master/images/security-white-paper/user-login-diagram.png)
 
 我们不会将主密码保存在本地或 Bitwarden 客户端内存中。您的加密密钥（对称密钥）会在应用程序解锁时保存在内存中。这是您解密密码库数据所需要的。当密码库被锁定时，这些数据会从内存中清除。在锁屏一定时间内不活动后，我们会重新加载应用程序进程，以确保任何剩余的管理内存地址也被清除。我们尽最大努力确保任何用于应用程序运作的数据只在您需要的时候保留在内存中，并且每当应用程序被锁定时，内存都会被清理。我们认为应用程序在锁定状态下是完全安全的。
 
@@ -149,14 +147,14 @@ Bitwarden 支持如下方式的两步登录：
 
 **免费计划**
 
-* 使用验证应用程序，如 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=zh-Hans)
+* 使用验证器应用程序（如 [2FAS](https://2fas.com/)、[Ravio](https://raivo-otp.com/) 和 [Aegis](https://getaegis.app/)
+* FIDO2 WebAuthn（任何经 FIDO U2F 认证的钥匙）&#x20;
 * 电子邮件&#x20;
 
 **高级功能 - 包含于家庭、团队和企业计划中**
 
-* 具有 Duo 推送、短信、电话和 U2F 安全钥匙的 Duo 安全
+* 具有 Duo 推送、短信、电话的 Duo Security 和 U2F 安全钥匙
 * YubiKey（任何 4/5 系列设备或 YubiKey NEO/NFC）
-* FIDO U2F（任何经 FIDO U2F 认证的钥匙）&#x20;
 
 您可以启用多种两步登录方式。如果您启用了多种两步登录方式，则登录时显示的默认方式的优先顺序如下：FIDO U2F > YubiKey > Duo > 验证器应用 > Email。不过，您可以在登录时手动切换并使用任何一种方式。
 
@@ -235,7 +233,11 @@ Bitwarden 还使用 Azure 透明数据加密 (TDE) 通过对数据库、关联�
 
 ### 用户之间共享数据 <a href="#sharing-data-between-users" id="sharing-data-between-users"></a>
 
-![RSA 密钥对：组织对称密钥和用户非对称密钥](https://github.com/bitwarden/help/raw/master/images/security-white-paper/overview-organization-symmetric-key-and-rsa-key-pair.png)
+{% embed url="https://bitwarden.com/_gatsby/image/247a0dc16f67c8c202ec1075c4eaa600/df3d74ff52a7f409cfdddc70d8d1be60/whitepaper-orgcloseup.webp?eu=dd8f59e4ea9ea8d1596cf2836c23676de96e54aef60767833935b0ae1cfecdd02df64a5124902be52d6f58de80b213eb6fce7d3748bad8dfc9ba1ff6b93cff0850d10fec64e57354517ec2fdb0f302176e941350f082cb5af1687bd5edb6b07610034d2ffb28ed80e6f17120f0c0252df5effb7f3297e866b3560805885b24b827a5ce8b7701e98cee4ca9bcefff0190dbe0320616d3813123300b5a3e8b68eadfd20c0f635048017cd1fc58c268c7e43c4a30270f5907f23268d151f26b32c6e3faf25adf7c72e0aac12e37de9aead5ad4bec7f34fa9065fed167254d58e953b3fc25a0&a=w%3D850%26h%3D478%26fm%3Dwebp%26q%3D75&cd=2023-09-08T13%3A16%3A28.412Z" %}
+图示：组织密钥保护与交换
+{% endembed %}
+
+![图示：组织密钥保护与交换](https://github.com/bitwarden/help/raw/master/images/security-white-paper/overview-organization-symmetric-key-and-rsa-key-pair.png)
 
 使用密码管理器的优势之一就是协作。为了实现共享，首先需要创建一个组织。Bitwarden 组织是一个实体，它将想要共享项目的用户联系在一起。一个组织可以是一个家庭、团队、公司、或希望共享数据的任何其他类型的团体。
 
@@ -301,7 +303,7 @@ Bitwarden 帮助中心的[用户类型和访问控制](../admin-console/user-man
 
 ### 企业计划中的账户恢复 <a href="#account-recovery-in-enterprise-plans" id="account-recovery-in-enterprise-plans"></a>
 
-2021 年中期，Bitwarden 为企业计划推出了账户恢复功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。
+2021 年中期，Bitwarden 为企业计划推出了[账户恢复](../organizations/admin-password-reset.md)功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。
 
 ### Bitwarden 云平台和网页应用程序安全 <a href="#bitwarden-cloud-platform-and-web-application-security" id="bitwarden-cloud-platform-and-web-application-security"></a>
 
