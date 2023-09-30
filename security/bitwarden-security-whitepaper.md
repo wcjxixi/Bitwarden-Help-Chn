@@ -147,13 +147,13 @@ Bitwarden 支持如下方式的两步登录：
 
 **免费计划**
 
-* 使用验证器应用程序（如 [2FAS](https://2fas.com/)、[Ravio](https://raivo-otp.com/) 和 [Aegis](https://getaegis.app/)）
+* 使用验证器应用程序（如 [2FAS](https://2fas.com/)、[Ravio](https://raivo-otp.com/) 或 [Aegis](https://getaegis.app/)）
 * FIDO2 WebAuthn（任何经 FIDO WebAuthn 认证的钥匙）
 * 电子邮件&#x20;
 
 **高级功能 - 包含于家庭、团队和企业计划中**
 
-* 具有 Duo 推送、短信、电话的 Duo Security 和 U2F 安全钥匙
+* Duo Security 的 Duo Push、短信、电话和安全钥匙
 * YubiKey（任何 4/5 系列设备或 YubiKey NEO/NFC）
 
 您可以启用多种两步登录方式。如果您启用了多种两步登录方式，则登录时显示的默认方式的优先顺序如下：FIDO U2F > YubiKey > Duo > 验证器应用 > Email。不过，您可以在登录时手动切换并使用任何一种方式。
@@ -281,7 +281,7 @@ RSA 私钥（其用途如下所述）是使用用户账户加密密钥加密存�
 
 Bitwarden 帮助中心的[用户类型和访问控制](../admin-console/user-management/member-roles-and-permissions.md)部分记录了完整的角色和访问控制列表。
 
-阅读更多：[如何](broken-reference)
+阅读更多：[关于集合](../organizations/collections.md)
 
 #### 事件日志 <a href="#event-logs" id="event-logs"></a>
 
@@ -343,7 +343,9 @@ Bitwarden 使用微软团队管理的服务，在微软 Azure 云中安全地处
 
 有关更新如何应用的详细信息，请阅读[这里](https://azure.github.io/AppService/2018/01/18/Demystifying-the-magic-behind-App-Service-OS-updates.html)。
 
-![Bitwarden 架构概述](https://github.com/bitwarden/help/raw/master/images/security-white-paper/bitwarden-architecture-overview.png)
+{% embed url="https://bitwarden.com/_gatsby/image/4e05430a00a931e81bbbe914306e5ef8/df3d74ff52a7f409cfdddc70d8d1be60/whitepaper-final.webp?eu=d68853e0e0cdff8f0b3cf4d73c233169b16d51feaf5835d03c66b1ae1cad96d22cf41156279778b52a6808d8d6e546ec33952c681aee828f93ba1bf2eb66a80b55805fea64e6700f507dc3fbe1fd534d6ccf1d51f080cc0ea06474d6e3b5b47410594f23fa72b9d3e4ab3735b08b7a33e2b1af2c3796fe7ee6445c51c14035b824f89ac12c47b39fe74aacf8bded5f9cdfa4784303c5ad6066684b5d06be6be1a4e40c2c7e2e5f5d55baee06b060dce0547d1d425b5b41aa676b9506fb7360cab2fbf454d17f73e9abcd35708fcbfa83ea4fa42876e4c972a1d03a790a5fb354f5e53fa29235465bc337accc12e35f1b751ed5&a=w%3D850%26h%3D478%26fm%3Dwebp%26q%3D75&cd=2023-09-08T13%3A16%3A35.988Z" %}
+图示：Bitwarden 架构概述
+{% endembed %}
 
 #### Bitwarden 访问控制 <a href="#bitwarden-access-controls" id="bitwarden-access-controls"></a>
 
