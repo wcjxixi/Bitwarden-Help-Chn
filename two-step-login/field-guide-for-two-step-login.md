@@ -84,7 +84,7 @@ Bitwarden 可能不是你使用的唯一一个具有两步登录选项的网站�
 下次登录 Reddit 时，你会被要求输入来自 Authy 的验证码来验证身份。验证码每 30 秒轮换一次，所以恶意行为者在无法访问你的物理设备的情况下，将无法获取你的代码。
 
 {% hint style="info" %}
-Authy 是 Bitwarden 推荐的验证器应用程序，因为它拥有任一个设备的验证器备份功能。即使你丢失了安装 Authy 的设备，备份也能防止你失去对两步登录令牌的访问。在 Authy 程序的  **Accounts** 界面打开 **Authenticator Backups** 开关，即可使用该功能。
+Authy 是 Bitwarden 推荐的验证器应用程序，因为它拥有任一设备的备份功能。即使您丢失了安装 Authy 的设备，备份功能也能防止您失去对两步登录令牌的访问。在 Authy 程序的 **Accounts** 界面打开 **Authenticator Backups** 开关，即可使用该功能。
 
 其他验证器应用程序包括 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) 和 [FreeOTP](https://freeotp.github.io/)，从 2020 年 5 月 7 日起，Google Authenticator 包含了验证码在跨 Android 设备上的可移植性功能。
 {% endhint %}
