@@ -23,7 +23,7 @@
 
 ### 问：如何删除我的账户？ <a href="#q-how-do-i-delete-my-account" id="q-how-do-i-delete-my-account"></a>
 
-**答：**我们很遗憾看到你离开。使用[删除您的账号](delete-an-account-or-organization.md)来指导您完成这个过程。
+**答：**我们很遗憾看到您离开。使用[删除您的账户](delete-an-account-or-organization.md)来指导您完成这个过程。
 
 ### 问：如何从个人订阅升级到组织订阅？ <a href="#q-how-do-i-upgrade-from-an-individual-subscription-to-an-organization" id="q-how-do-i-upgrade-from-an-individual-subscription-to-an-organization"></a>
 
@@ -48,6 +48,22 @@
 **答：**当前的家庭计划（2020 年 9 月推出）自动为组织的所有 6 名成员提供高级功能，所以不需要！
 
 传统的家庭计划不会自动提供高级功能，因此用户需要单独升级到高级版，或者由家庭组织的所有者升级组织。
+
+### 问：为什么我的云许可证到期日期和自托管许可证到期日期不匹配？
+
+**答：**为了确保您不会无意中失去组织功能，我们在云上许可证到期和自托管服务器上许可证到期之间提供 2 个月的宽限期。[了解更多](organization-renewal.md)。
+
+### 问：我的组织的计费电子邮件的持有者可以执行哪些操作？
+
+**答：**您组织的[计费电子邮件](../organizations/organizations.md#create-an-organization)的持有人可以通过联系我们：
+
+* 在订阅中添加或移除信用卡。
+* 更改组织的计费电子邮件地址。
+* 查询存档的账单和计费信息。
+* 在每月和每年计费周期之间切换（如果适用于您的组织）。
+* 请求计划升级、降级、取消或席位调整。
+
+他们**不得**以任何理由请求删除组织、获取当前组织所有者的身份或请求将任何用户提升为所有者。
 
 ## 付款方式 <a href="#payment-options" id="payment-options"></a>
 

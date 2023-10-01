@@ -8,7 +8,7 @@
 
 ## 最常问的问题 <a href="#most-asked-questions" id="most-asked-questions"></a>
 
-### 问：我忘记了主密码，该怎么办？ <a href="#q-i-have-forgotten-my-master-password-what-can-i-do" id="q-i-have-forgotten-my-master-password-what-can-i-do"></a>
+### 问：如果我忘记了主密码应该该怎么办？ <a href="#q-what-do-i-do-if-i-forgot-my-master-password" id="q-what-do-i-do-if-i-forgot-my-master-password"></a>
 
 **答：**作为一个零知识解决方案，Bitwarden 及其系统对您的主密码不了解，没有办法找回，也没有办法重置您的主密码。如果您已经丢失了您的主密码，很遗憾，团队没有办法恢复账户。想了解下一步该怎么做，或者如何主动保护自己，避免出现这种情况，请参考[您的主密码](your-master-password.md)这篇文章。
 
@@ -70,7 +70,7 @@
 
 1. 点击**开始**（Windows 徽标）按钮，选择所有应用程序，然后滚动并找到 Bitwarden 桌面应用程序/快捷方式。
 2. 右键单击 Bitwarden 桌面应用程序，选择**更多**，然后选择**打开文件位置**。
-3. 文件位置打开后，按 Windows 徽标键 + R 键，键入 `shell:startup`，然后点击**确定**。这将打开启动文件夹。
+3. 文件位置打开后，按 **Windows 徽标键** + **R** 键，键入 `shell:startup`，然后点击**确定**。这将打开启动文件夹。
 4. 将 Bitwarden 桌面应用程序的快捷方式从文件位置复制并粘贴到到启动文件夹中。
 
 ### 问：为什么会收到「新的设备」电子邮件消息？ <a href="#q-why-am-i-getting-a-new-device-email-message" id="q-why-am-i-getting-a-new-device-email-message"></a>
@@ -130,3 +130,7 @@
 ### 问：卸载或删除我的 Bitwarden 应用程序是否也会删除我的密码库数据吗？ <a href="#q-does-uninstalling-or-deleting-my-bitwarden-app-also-delete-my-vault-data" id="q-does-uninstalling-or-deleting-my-bitwarden-app-also-delete-my-vault-data"></a>
 
 **答：**不会，删除 Bitwarden 应用程序/扩展程序并不会删除您的密码库数据。密码库数据加密保存在服务器上。如果您希望**永久**删除您的密码库数据，请参阅[删除账户或组织](../plans-and-pricing/delete-an-account-or-organization.md)。
+
+### 问：Bitwarden 是否管理 Android 手机上的 Firefox 浏览器扩展？ <a href="#q-does-bitwarden-manage-the-firefox-browser-extension-on-android-mobile" id="q-does-bitwarden-manage-the-firefox-browser-extension-on-android-mobile"></a>
+
+**答：**Android 移动设备上有适用于 Firefox 的 Bitwarden 浏览器扩展。但是，此扩展并未得到 Bitwarden 的正式支持，并且团队意识到此客户端中的某些功能无法正常工作。Android 用户可能更喜欢使用 Bitwarden [移动应用程序](../getting-started/getting-started-mobile.md)作为官方支持的密码管理器客户端。

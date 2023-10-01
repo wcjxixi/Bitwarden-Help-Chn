@@ -6,7 +6,7 @@
 
 本文包含有关**安全**的常见问题（FAQ）。
 
-## 问：为什么我应该在密码方面信任 Bitwarden？ <a href="#q-why-should-i-trust-bitwarden-with-my-passwords" id="q-why-should-i-trust-bitwarden-with-my-passwords"></a>
+### 问：为什么我应该在密码方面信任 Bitwarden？ <a href="#q-why-should-i-trust-bitwarden-with-my-passwords" id="q-why-should-i-trust-bitwarden-with-my-passwords"></a>
 
 **答：**您可以出于以下这些原因信任我们：
 
@@ -17,19 +17,19 @@
 
 还是不相信我们吗？不必这样。开源是美丽的。您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由你自己控制。在[这里](../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md)了解更多。
 
-## 问：如果 Bitwarden 被黑会怎么样？ <a href="#q-what-happens-if-bitwarden-gets-hacked" id="q-what-happens-if-bitwarden-gets-hacked"></a>
+### 问：如果 Bitwarden 被黑会怎么样？ <a href="#q-what-happens-if-bitwarden-gets-hacked" id="q-what-happens-if-bitwarden-gets-hacked"></a>
 
 **答：**Bitwarden 采取极端措施确保其网站、应用程序和云服务器的安全。Bitwarden 使用 Microsoft Azure 托管服务来管理服务器基础设施和安全，而不是直接自己来做。
 
 如果由于某些原因 Bitwarden 被黑客攻击，您的数据因此遭泄露，由于对您的密码库数据和主密码采取了[强大的加密和单向盐化哈希](encryption.md)措施，您的信息仍然受到保护。
 
-## 问：Bitwarden 可以看到我的密码吗？ <a href="#q-can-bitwarden-see-my-passwords" id="q-can-bitwarden-see-my-passwords"></a>
+### 问：Bitwarden 可以看到我的密码吗？ <a href="#q-can-bitwarden-see-my-passwords" id="q-can-bitwarden-see-my-passwords"></a>
 
 **答：**不能。
 
 您的数据在离开您的本地设备之前就已经被完全加密和/或哈希，因此 Bitwarden 团队的任何人都无法看到、读取或进行逆向工程来获取您的真实数据。Bitwarden 服务器只存储已被加密和哈希的数据。有关您的数据如何被加密的更多信息，请参阅[加密](encryption.md)。
 
-## 问：我的 Bitwarden 主密码是否存储在本地？ <a href="#q-is-my-bitwarden-master-password-stored-locally" id="q-is-my-bitwarden-master-password-stored-locally"></a>
+### 问：我的 Bitwarden 主密码是否存储在本地？ <a href="#q-is-my-bitwarden-master-password-stored-locally" id="q-is-my-bitwarden-master-password-stored-locally"></a>
 
 **答：**不会。
 
@@ -37,11 +37,11 @@
 
 我们还会在锁屏 10 秒后重新加载应用程序的渲染进程，以确保任何尚未被垃圾收集的托管内存地址也被清除。我们尽最大努力确保任何可能在内存中为应用程序运作的数据只在您需要的时间内保存在内存中，并且每当应用程序被锁定时，内存都会被清理。当应用程序处于锁定状态时，我们认为应用程序的加密数据是完全安全的。
 
-## 问：如果有无法识别的新设备登录 Bitwarden 该怎么办？ <a href="#q-what-do-i-do-if-i-dont-recognize-a-new-device-logging-into-bitwarden" id="q-what-do-i-do-if-i-dont-recognize-a-new-device-logging-into-bitwarden"></a>
+### 问：如果有无法识别的新设备登录 Bitwarden 该怎么办？ <a href="#q-what-do-i-do-if-i-dont-recognize-a-new-device-logging-into-bitwarden" id="q-what-do-i-do-if-i-dont-recognize-a-new-device-logging-into-bitwarden"></a>
 
 **答：**如果新设备的 IP 地址与任何已知的 IP 地址（家庭网络、工作网络、移动网络等）不匹配，请更改您的主密码，并确保您的账户启用了两步登录。您还应该从网络密码库的**设置**页面取消会话授权，以强制在所有设备上注销。如果您认为您的密码库项目可能受到威胁，您应该更改您的密码。
 
-## 问：Bitwarden 符合哪些合规？拥有哪些认证？ <a href="#q-what-is-bitwarden-compliant-with-what-certifications-do-you-have" id="q-what-is-bitwarden-compliant-with-what-certifications-do-you-have"></a>
+### 问：Bitwarden 符合哪些合规？拥有哪些认证？ <a href="#q-what-is-bitwarden-compliant-with-what-certifications-do-you-have" id="q-what-is-bitwarden-compliant-with-what-certifications-do-you-have"></a>
 
 **答：**Bitwarden 符合以下政策：
 
@@ -53,7 +53,19 @@
 
 有关更多信息，请访问我们的[安全与合规](https://bitwarden.com/compliance)页面。
 
-## 问：在我的 Biwatrden 账户中使用了哪些第三方服务、库和标识符？ <a href="#q-what-third-party-services-libraries-or-identifiers-are-used-in-my-bitwarden-account" id="q-what-third-party-services-libraries-or-identifiers-are-used-in-my-bitwarden-account"></a>
+### 问：Bitwarden 如何满足欧洲合规要求？ <a href="#q-how-does-bitwarden-meet-european-compliance-requirements" id="q-how-does-bitwarden-meet-european-compliance-requirements"></a>
+
+**答：**Bitwarden 符合 GDPR 标准，并使用经批准的信息传输机制，包括根据 2021 年 6 月 4 日欧盟委员会实施决定 (EU) 2021/914 批准的欧洲议会和理事会条例 (EU) 2016/679 制定的欧盟标准合同条款 (SCC)。目前载于 [https://eur-lex.europa.eu/eli/dec\_impl/2021/914/oj](https://eur-lex.europa.eu/eli/dec\_impl/2021/914/oj)。对于商业和企业客户，Bitwarden 可以执行 Bitwarden 数据保护协议。
+
+Bitwarden 云服务器目前托管在美国和欧盟的 Microsoft Azure 上。如今，Bitwarden 通过这一基础设施为数百万用户提供服务，其中包括欧洲和世界各地的政府和企业客户。
+
+对于需要完全控制数据驻留的客户，也可以将 Bitwarden 私有托管在您自己的基础设施上。
+
+存储在 Bitwarden 中的所有密码库数据，无论是在云端还是自托管，都经过端到端加密，除 Bitwarden 用户外任何人都无法访问。通过这种端到端、零知识加密架构，即使 Bitwarden 也无法访问您的数据。
+
+有关 Bitwarden 安全性和合规性认证的完整列表，请访问 [https://bitwarden.com/compliance/](https://bitwarden.com/compliance/)。
+
+### 问：在我的 Biwatrden 账户中使用了哪些第三方服务、库和标识符？ <a href="#q-what-third-party-services-libraries-or-identifiers-are-used-in-my-bitwarden-account" id="q-what-third-party-services-libraries-or-identifiers-are-used-in-my-bitwarden-account"></a>
 
 **答：**在移动应用程序中，Firebase 云消息传递（经常被误认为是跟踪器）仅用于与[同步](../your-vault/syncing-your-vault.md)相关的推送通知，并且绝对不执行任何跟踪功能。Microsoft Visual Studio App Center 用于在一系列移动设备上进行崩溃报告。在 Web Vault 中，Stripe 和 PayPal 脚本仅用于支付页面上的支付处理。
 
@@ -61,19 +73,19 @@
 
 Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到端加密，对您的加密密钥零了解。作为一家专注于开源的公司，我们邀请任何人随时在 [GitHub](https://github.com/bitwarden) 上查看我们的库实现。
 
-## 问：如何对我的 Bitwarden 组织要求两步登录？ <a href="#q-how-do-i-require-two-step-login-for-my-bitwarden-organization" id="q-how-do-i-require-two-step-login-for-my-bitwarden-organization"></a>
+### 问：如何对我的 Bitwarden 组织要求两步登录？ <a href="#q-how-do-i-require-two-step-login-for-my-bitwarden-organization" id="q-how-do-i-require-two-step-login-for-my-bitwarden-organization"></a>
 
 **答：**使用企业组织订阅中的[企业策略](../organizations/enterprise-policies.md)，可以实现强制 2FA 功能。您也可以为您的组织启用 Duo MFA 集成来实现强制 2FA/MFA。有关更多信息，请参阅  [Duo 方式的两步登录](../two-step-login/setup-guides/two-step-login-via-duo.md)。
 
-## 问：Bitwarden 的自托管实例的证书选项是什么？ <a href="#q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden" id="q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden"></a>
+### 问：Bitwarden 的自托管实例的证书选项是什么？ <a href="#q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden" id="q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden"></a>
 
 **答：**有关完整列表以及说明，请参阅[证书选项](../self-hosting/certificate-options.md)。
 
-## 问：Bitwarden 如何审核代码的更改？ <a href="#q-how-does-bitwarden-vet-code-changes" id="q-how-does-bitwarden-vet-code-changes"></a>
+### 问：Bitwarden 如何审核代码的更改？ <a href="#q-how-does-bitwarden-vet-code-changes" id="q-how-does-bitwarden-vet-code-changes"></a>
 
 **答：**对我们系统的安全性有信心，这对 Bitwarden 来说是极度重要的。所有提交的代码更改在被合并到任何代码库之前，都会由团队中的一个或多个非作者成员进行审查。所有的代码在生产前都要经过多个测试和 QA 环境。Bitwarden 已经实施了 SOC2 报告来审计和验证我们的内部程序。正如报告中提到的，我们的团队要经过严格的背景调查和彻底的面试过程。Bitwarden 作为一个开源产品，也欢迎同行在任何时候对我们的代码进行审查。Bitwarden 团队将努力尽一切可能让我们的用户感到舒适，并保证他们的数据安全。
 
-## 问：Bitwarden 缓存会话信息会保持多长时间？ <a href="#q-how-long-does-bitwarden-cache-session-information" id="q-how-long-does-bitwarden-cache-session-information"></a>
+### 问：Bitwarden 缓存会话信息会保持多长时间？ <a href="#q-how-long-does-bitwarden-cache-session-information" id="q-how-long-does-bitwarden-cache-session-information"></a>
 
 **答：**好问题！答案取决于特定的信息和客户端应用程序：
 
@@ -86,9 +98,25 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 * 目录连接器[同步缓存](../directory-connector/clear-sync-cache.md)将在 30 天后被清除。
 * 组织邀请将在 5 天后过期。自托管客户可以[使用环境变量](../self-hosting/configure-environment-variables.md#optional-variables)对其进行配置。
 
-## 问：如何验证 Bitwarden 应用程序的校验和？ <a href="#q-how-do-i-validate-the-checksum-of-a-bitwarden-app" id="q-how-do-i-validate-the-checksum-of-a-bitwarden-app"></a>
+### 问：如何验证 Bitwarden 应用程序的校验和？ <a href="#q-how-do-i-validate-the-checksum-of-a-bitwarden-app" id="q-how-do-i-validate-the-checksum-of-a-bitwarden-app"></a>
 
 **答：**首先，获取相应版本的 `latest` 版 yaml 文件（例如 `latest-linux.yml`）和相应的发布包（例如 `Bitwarden-1.33.0-amd64.deb`）。为已下载的发布包生成 SHA512 哈希值（例如 `sha512sum Bitwarden-1.33.0-amd64.deb`）然后将生成的 Hex 值转换为 Base64。将计算出的 Base64 值与 yaml 文件中的 `sha512:` 值进行比较以进行验证。
+
+### 问：如何向 Bitwarden 进行安全披露或报告？ <a href="#q-how-do-i-make-a-security-disclosure-or-report-to-bitwarden" id="q-how-do-i-make-a-security-disclosure-or-report-to-bitwarden"></a>
+
+**答：**Bitwarden 认为，与全球安全研究人员合作对于确保用户安全至关重要。如果您认为在我们的产品或服务中发现了安全问题，我们鼓励您通过我们的 [HackerOne 计划](https://hackerone.com/bitwarden/)提交报告。我们欢迎与您合作，尽快解决问题。[详细了解我们的披露政策](https://github.com/bitwarden/server/security/policy)。
+
+### 问：为什么我的网络密码库会转到 web-vault.pages.dev？ <a href="#q-why-is-my-web-vault-going-to-web-vault.pages.dev" id="q-why-is-my-web-vault-going-to-web-vault.pages.dev"></a>
+
+**答：**`web-vault.pages.dev` 是 Bitwarden 独有的子域名，由 Cloudflare Pages 使用。当 Cloudflare 遇到 DNS 问题时，此 URL 可能会向用户显示。在输入用户名和主密码之前，您应该通过检查 URL 来始终警惕网络钓鱼尝试，但 `web-vault.pages.dev` 应被视为可以安全登录。
+
+### 问：如何保护我的 Bitwarden 账户免受暴力攻击？ <a href="#q-how-can-i-protect-my-bitwarden-account-from-brute-force-attacks" id="q-how-can-i-protect-my-bitwarden-account-from-brute-force-attacks"></a>
+
+**答：**暴力攻击是指恶意行为者循环使用弱密码和短密码的组合来尝试访问您的账户。Bitwarden 提供了几种保护自己免受这些潜在攻击的方法：
+
+* 拥有一个长且唯一的主密码。Bitwarden 要求至少 12 个字符以提高账户安全性。
+* 在所有 Bitwarden 账户上设置 [2FA](../two-step-login/field-guide-for-two-step-login.md) 以添加额外的安全层。
+* 在未知设备尝试登录 9 次失败后，Bitwarden 将要求 CAPTCHA 验证。
 
 ## 关于特定客户端应用程序的问题 <a href="#questions-regarding-specific-client-apps" id="questions-regarding-specific-client-apps"></a>
 

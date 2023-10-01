@@ -38,7 +38,7 @@
 
 ### 问：我可以防止用户自我注册到我的组织吗？ <a href="#q-can-i-prevent-users-from-self-registering-into-my-organization" id="q-can-i-prevent-users-from-self-registering-into-my-organization"></a>
 
-如果你是自托管，请[配置环境变量](../self-hosting/configure-environment-variables.md) `globalSettings__disableUserRegistration=` 为 `true`，以防止用户通过注册页面注册账户。配置后，组织管理员或所有者必须邀请用户才能在自托管的实例上注册账户。
+**答：**如果您是自托管，请[配置环境变量](../self-hosting/configure-environment-variables.md) `globalSettings__disableUserRegistration=` 为 `true`，以防止用户通过注册页面注册账户。配置后，组织管理员或所有者必须邀请用户才能在自托管的实例上注册账户。
 
 ### 问：如何更改组织名称？ <a href="#q-how-do-i-change-the-name-of-my-organization" id="q-how-do-i-change-the-name-of-my-organization"></a>
 
@@ -54,13 +54,13 @@
 2. 选择**下载许可证**按钮来下载更新了组织名称的许可证。
 3. [上传新的许可证](../self-hosting/licensing-for-paid-features.md#organization-license)到您的自托管服务器。
 
-### 问：如何升级我的免费组织？ <a href="#q-how-do-i-upgrade-my-free-organization" id="q-how-do-i-upgrade-my-free-organization"></a>
+### 问：如何优化包含大量项目的密码库的性能？ <a href="#q-how-do-i-optimize-performance-for-a-vault-with-lots-of-items" id="q-how-do-i-optimize-performance-for-a-vault-with-lots-of-items"></a>
 
-**答：**如果您想升级到付费组织以解锁[许多附加功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md)，请导航到您的组织**设置** → **订阅**视图，然后选择**升级计划**按钮：
+**答：**由于密码库项目的解密是在本地完成的，而不是在我们的服务器中完成，因此对于包含大量项目的密码库，加载时间有时可能会更长。我们的团队始终致力于性能优化，但是这里有一些可以帮助减少加载时间的提示：
 
-{% embed url="https://bitwarden.com/help/images/plans-and-pricing/upgrade-org.png" %}
-升级您的组织
-{% endembed %}
+* 遵循最小权限原则，例如使用集合来组织密码库项目。减少用户可以访问的项目数量将减少应用程序加载时要解密的项目数量。
+* 对于所有者和管理员，请勿使用**此用户可以访问和修改所有项目**选项。无论如何，这些用户角色都可以通过组织密码库访问所有内容，因此选择此选项只会将其他项目也添加到其密码库视图中，并增加应用程序加载时要解密的项目数量。
+* 如果您管理多个组织，请考虑联系我们成为[提供商](../provider-portal/provider-portal-overview.md)。从提供商门户访问组织将稍微减少解密所有托管项目所需的数量。
 
 ## 组织共享 <a href="#sharing-with-an-organization" id="sharing-with-an-organization"></a>
 
@@ -68,15 +68,21 @@
 
 **答：**要取消共享一个项目：
 
-1. 导航到您的组织密码库，并从您要克隆的项目的齿轮下拉菜单中选择**克隆**，将项目克隆到您的个人密码库。只有用户类型为**管理员**或更高级别的用户才能通过更改**所有权**设置将项目克隆到他们的个人密码库。
-2. 从同一齿轮下拉菜单中选择**删除**，从组织密码库中删除该项目。
+1. 导航到您的组织密码库（从菜单栏中选择**组织**，而不是使用组织**筛选器**），然后从您要克隆的项目的选项菜单中选择**克隆**，将项目克隆回您的个人密码库。只有用户类型为管理员或更高级别的用户才能通过更改**所有权**设置将项目克隆到他们的个人密码库。
+2. 从同样的菜单中选择**删除**，以从组织密码库中删除该项目。
 
 或者，您也可以通过将项目移动到具有更高访问控制限制的其他集合来取消共享项目。
 
 ### 问：如何向组织用户隐藏密码？ <a href="#q-how-do-i-hide-a-password-from-my-organizations-users" id="q-how-do-i-hide-a-password-from-my-organizations-users"></a>
 
-**答：**在添加新用户或编辑现有用户时，使用**访问控制**部分中的**隐藏密码**选项，以对他们隐藏指定集合的密码和隐藏字段。有关更多信息，请参阅[访问控制](../admin-console/user-management/member-roles-and-permissions.md)。
+**答：**为您想要对其隐藏密码的用户分配对相关集合的「可以查看（密码除外）」或「可以编辑（密码除外）」[权限](../admin-console/user-management/member-roles-and-permissions.md#permissions)。
 
 ### 问：我离开后，移动到组织的项目是否会被保留？ <a href="#q-does-an-item-i-share-with-the-organization-stay-after-i-leave" id="q-does-an-item-i-share-with-the-organization-stay-after-i-leave"></a>
 
-答：是的！当用户与组织共享项目时，组织将获得该项目的所有权。即使用户离开组织或删除其帐户，该项目仍将保留在组织密码库中。
+**答：**是的！当用户与组织共享项目时，组织将获得该项目的所有权。即使用户离开组织或删除其账户，该项目仍将保留在组织密码库中。
+
+## 组织装置 <a href="#organization-installations" id="organization-installations"></a>
+
+### 问：我可以为我的用户静默安装 Bitwarden 桌面应用程序吗？ <a href="#q-can-i-silently-install-the-bitwarden-desktop-app-for-my-users" id="q-can-i-silently-install-the-bitwarden-desktop-app-for-my-users"></a>
+
+**答：**可以。跨工作站静默安装桌面应用程序时，请以管理员等特权账户身份执行此操作，并除了 `/S` 之外还使用 `/allusers` 开关，因为 `/S` 默认为单用户安装，这将导致自动部署出现问题。
