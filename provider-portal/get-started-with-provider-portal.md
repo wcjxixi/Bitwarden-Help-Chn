@@ -137,11 +137,11 @@
 
 无论您是从组织密码库邀请用户还是使用目录连接器，在[入职提供商用户](get-started-with-provider-portal.md#onboard-users)时遵循的 3 步过程（邀请 → 接受 → 确认）也适用于这里。
 
-## 管理自托管组织
+## 管理自托管组织 <a href="#managing-self-hosted-organizations" id="managing-self-hosted-organizations"></a>
 
 MSP 还可以为 Bitwarden 自托管实例提供管理支持和经销商服务。目前，对托管客户的提供商门户访问仅适用于云托管环境。要为自托管实例提供管理服务，需要购买额外的服务席位来管理自托管实例。
 
-### 启用自托管实例
+### 启用自托管实例 <a href="#enabling-the-self-hosted-instances" id="enabling-the-self-hosted-instances"></a>
 
 1、创建一个新的 Bitwarden 用户作为服务账户。在初始安装期间，该用户将被授予以所有者身份管理客户的访问权限。
 
