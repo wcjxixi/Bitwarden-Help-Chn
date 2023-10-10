@@ -43,7 +43,7 @@
     * [自定义字段](your-vault/custom-fields.md)
     * [Bitwarden 验证器 (TOTP)](your-vault/totp.md)
     * [文件附件](your-vault/file-attachments.md)
-    * [=共享](organizations/sharing.md)
+    * [共享](organizations/sharing.md)
   * [密码库管理](password-manager/vault-administration/README.md)
     * [文件夹](your-vault/folders.md)
     * [收藏](your-vault/favorites.md)

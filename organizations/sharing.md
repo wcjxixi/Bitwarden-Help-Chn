@@ -1,14 +1,14 @@
-# =共享
+# 共享
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/share-to-a-collection/)
+对应的[官方文档地址](https://bitwarden.com/help/sharing/)
 {% endhint %}
 
 {% hint style="info" %}
-要共享项目，你需要是组织的成员。了解更多关于[组织](organizations.md)或了解如何[创建自己的两个人的组织](../admin-console/organizations-quick-start.md)。
+要共享项目，您需要是组织的成员。了解更多关于[组织](organizations.md)或了解如何[创建自己的两个人的组织](../admin-console/organizations-quick-start.md)。
 {% endhint %}
 
-共享 Bitwarden 项目意味着将它们放入一个集合中，集合是用于将共享的项目、笔记、支付卡和身份集中到一起，以供多个用户访问的一种结构。您可以通过几种不同的方式将项目共享到集合：
+使用 Bitwarden 共享项目意味要着将它们移入组织和集合中，集合是用于将共享的项目、笔记、支付卡和身份集中到一起，以供多个用户访问的一种结构。您可以通过几种不同的方式创建用于共享的组织项目：
 
 ## 移动项目到组织 <a href="#move-an-item-to-an-organization" id="move-an-item-to-an-organization"></a>
 
@@ -77,8 +77,8 @@ bw move <itemid> <organizationid> [encodedJson]
 {% tab title="我的密码库视图" %}
 要创建一个新的共享项目：
 
-1. 在 **🔒我的密码库**页面，选择 **🞤添加项目**按钮。
-2. 填写此共享项目的所有相关信息。
+1. 在**密码库**页面，选择 **🞤新增项目**按钮。
+2. 为这个新的密码库项目填写所有相关信息。
 3. 在添加项目面板底部的**所有权**部分中，选择要与其共享此项目的组织。
 4. 选中一个或多个集合，以将此项目共享到其中。您必须至少选择一个集合。
 5. 点击**保存**以完成共享项目的创建。
@@ -90,7 +90,7 @@ bw move <itemid> <organizationid> [encodedJson]
 要创建一个新的共享项目：
 
 1. 在您的组织的 **🔒密码库**选项卡，选择**新建**按钮并从下拉列表中选择**项目**。。
-2. 填写此共享项目的所有相关信息。
+2. 为这个新的密码库项目填写所有相关信息。
 3. 使用此方式时，项目的所有权会自动设置为组织，因此您所要做的就是选中一个或多个集合，以将此项目共享到其中。您必须至少选择一个集合。
 4. 点击**保存**以完成共享项目的创建。
 
