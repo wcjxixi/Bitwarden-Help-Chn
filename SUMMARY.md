@@ -214,7 +214,7 @@
   * [提供商事件日志](provider-portal/provider-event-logs.md)
   * [提供商常见问题](provider-portal/providers-faqs.md)
 * [自托管](self-hosting/README.md)
-  * [安装&部署指南](self-hosting/install-and-deploy-guides/README.md)
+  * [安装 & 部署指南](self-hosting/install-and-deploy-guides/README.md)
     * [安装和部署-Linux](self-hosting/install-and-deploy-guides/install-and-deploy-linux.md)
     * [安装和部署-Windows](self-hosting/install-and-deploy-guides/install-and-deploy-windows.md)
     * [安装和部署-手动](self-hosting/install-and-deploy-guides/install-and-deploy-manually.md)
