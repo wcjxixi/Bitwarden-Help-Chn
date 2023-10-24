@@ -1,7 +1,7 @@
 # 安装和部署-Linux
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/install-on-premise-manual/)
+对应的[官方文档地址](https://bitwarden.com/help/install-on-premise-linux/)
 {% endhint %}
 
 这篇文章将引导你完成安装和部署 Bitwarden 到你自己的 Linux 服务器上的过程。Bitwarden 也可以安装和部署在 [Windows](install-and-deploy-windows.md) 机器上。
