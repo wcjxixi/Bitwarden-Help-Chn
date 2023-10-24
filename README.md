@@ -20,7 +20,7 @@
 
 ## Bitwarden 介绍 <a href="#about-bitwarden" id="about-bitwarden"></a>
 
-Bitwarden 是一个开源的密码管理系统，你可以使用 Bitwarden 官方提供的云服务，也可以将 Bitwarden 安装和托管在自己的服务器上。
+Bitwarden 是一个开源的密码管理系统，您可以使用 Bitwarden 官方提供的云服务，也可以将 Bitwarden 安装和托管在自己的服务器上。
 
 个人账户的免费版不限制使用时间、不限制密码条目数、不限制设备数量、不限制文件夹数量、支持常见的验证器 App（如 [Authy](https://authy.com/)、 [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator)、[Google Authenticator](https://github.com/google/google-authenticator)），完全可以满足大部分个人的日常使用。
 
@@ -46,13 +46,13 @@ Bitwarden 还提供组织账户（用于密码共享等），分别为针对个�
 
 部分功能解释：
 
-* **文件夹**：Bitwarden 里面的文件夹可以理解为「分类」，你可以把任何类型（登录、支付卡、身份或安全笔记）的项目放到某个「文件夹」中。
+* **文件夹**：Bitwarden 里面的文件夹可以理解为「分类」，您可以把任何类型（登录、支付卡、身份或安全笔记）的项目放到某个「文件夹」中。
 * **内置 TOTP**：相当于内置了一个类似 [Authy](https://authy.com/) 这样的两步验证管理工具，这样就不需要再单独安装和使用一个 Authy 应用程序了。
 * **两步登录类型**：这里的两步登录类型是针对登录 Bitwarden 的两步登录，与 Bitwarden 之外的其他网站或程序的两步登录没关系。
 
 ## 价格和账单 <a href="#price-and-billing" id="price-and-billing"></a>
 
-1. 付费组织订阅如何 7 天免费试用：您必须先订阅才能试用（订阅时需要输入付款信息），7 天免费试用期结束的时候，才会从您输入的付款方式中扣款。记得在订阅后的 7 天内主动取消订阅。
+1. 付费组织订阅如何 7 天免费试用：您必须先订阅才能试用（订阅时需要输入付款信息），7 天免费试用期结束的时候，才会从您的付款方式中扣款。记得在订阅后的 7 天内主动取消订阅。
 2. 支持订阅开始日期 30 天内的无条件退款（需要给 [Bitwarden 支持](https://bitwarden.com/contact/)发邮件）。
 
 ### 价格比较 <a href="#compare-price" id="compare-price"></a>
