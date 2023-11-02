@@ -39,7 +39,7 @@
 {% endtab %}
 
 {% tab title="文件导入" %}
-文件可以从大多数密码管理器应用程序导入到 Bitwarden（了解如何[从 LastPass 导出文件](import-your-data-from-lastpass.md#export-from-lastpass)）。在本节中，我们将重点介绍使用 Web 应用程序进行导入：
+从大多数密码管理器应用程序导出的文件可以导入到 Bitwarden（了解如何[从 LastPass 导出文件](import-your-data-from-lastpass.md#export-from-lastpass)）。在本节中，我们将重点介绍使用 Web 应用程序进行导入：
 
 1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
 
@@ -163,7 +163,7 @@ LastPass 导出
 
 ### 文件大小导入限制 <a href="#file-size-import-limitations" id="file-size-import-limitations"></a>
 
-超过以下任何数据限制的进口可能会被拒绝：
+超过以下任一数据限制的导入可能会被拒绝：
 
 * 如果您的导入超过 6,000 条项目。
 * 如果您的导入超过 1,000 个文件夹。
@@ -181,10 +181,10 @@ Web 密码库中的密码错误
 
 要解决这个问题，请在文本编辑器或电子表格程序中打开 `.csv` 文件，将违规项目移除或减少其字符数。Bitwarden 不会导入您的 `.csv` 文件直到无任何违规项目。错误信息中的内容包含了几条相关的数据，这可以帮助你识别违规项目。例如，在上面的示例中：
 
-* `[1]` 标识违规项目所在的索引号，调整后与_大多数_电子表格程序中的行号一致
-* `[Login]` 标识违规项目的项目`类型`
-* `"Facebook"` 标识违规项目的`名称`
-* `Notes` 标识超过字符数限制的字段（列）
+* `[1]` 标识违规项目所在的索引号，调整后与大多数电子表格程序中的行号一致
+* `[Login]` 标识违规项目的项目 `type`（类型）
+* `"Facebook"` 标识违规项目的 `name`（名称）
+* `Notes` 标识超出字符数限制的字段（列）
 * `10000` 标识该字段（列）允许的字符数限制
 
 {% hint style="success" %}
