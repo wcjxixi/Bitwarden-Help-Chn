@@ -103,7 +103,7 @@
 
 ## 通行密钥管理常见问题 <a href="#passkey-management-faq" id="passkey-management-faq"></a>
 
-以下常见问题与 Bitwarden 通行密钥存储有关。有关通行密钥的一般信息，请参阅[通行密钥常见问题](https://bitwarden.com/resources/passkeys-faq/)。
+以下常见问题与 Bitwarden 通行密钥存储有关。有关通行密钥的一般信息，请参阅通行密钥常见问题。
 
 ### 问：如果我没有主密码（受信任设备 SSO 或 Key Connector 用户），可以使用通行密钥吗？ <a href="#q-can-passkeys-be-used-if-i-do-not-have-a-master-password-sso-with-trusted-devices-or-key-connector" id="q-can-passkeys-be-used-if-i-do-not-have-a-master-password-sso-with-trusted-devices-or-key-connector"></a>
 
