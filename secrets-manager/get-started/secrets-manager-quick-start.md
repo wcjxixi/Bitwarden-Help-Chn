@@ -40,6 +40,22 @@ Secrets Manager 可以从您组织的**计费** → **订阅**页面激活。您
 添加 Secrets Manager 用户
 {% endembed %}
 
+### 用户席位和服务账户扩展 <a href="#user-seats-and-service-account-scaling" id="user-seats-and-service-account-scaling"></a>
+
+从您组织的**计费** → **订阅**页面，您可以为 Secrets Manager 组织分配允许的用户席位和服务账户总数。
+
+{% embed url="https://bitwarden.com/_gatsby/image/5a13d89b182e15cb9a734686032d6669/0574d459f5ebc3b46729bb9424b1ec46/SM%20seats.webp?eu=d68b06e3e3cfa9d5066aa68b3c75616ae33750ffff0032853e61b5a84ba1cc8123a74a0075c42ce479615ad7d2b441e832c27f6848bcd0d891e91df7e93daf0a01820fea6deb34431168cee1afac5b143f935946f2c79e59e02e2790a6ade9255d4f1b69f629fedbedff3d39f7843031b2c9e64b6da5d07e9b512f569e6513bb32fbe5814901e69ab94de9e5eea10c9b99e67e014188a5342a71494d0abc28e8a3e10470387b5f3848a1ec0d9625d5a87c4236&a=w%3D850%26h%3D511%26fm%3Dwebp%26q%3D75&cd=2023-08-16T11%3A53%3A15.658Z" %}
+Secrets Manager 用户管理
+{% endembed %}
+
+添加新用户或服务账户时，Secrets Manager 将自动扩展您的用户席位和服务账户。可以通过勾选**限制订阅**和**限制服务账户**复选框来设置限制。
+
+{% hint style="info" %}
+在**用户席位**字段中，指定的数量必须小于或等于您的 Password Manager 订阅指定的席位数量。
+
+您还可以使用**附加服务账户**字段，明确添加高于计划预包装数量的服务账户；团队账户为 50 个，企业账户为 200 个。
+{% endhint %}
+
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
 
 ### 您的机密密码库 <a href="#your-secrets-vault" id="your-secrets-vault"></a>

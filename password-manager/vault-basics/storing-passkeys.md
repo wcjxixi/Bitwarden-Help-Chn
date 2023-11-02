@@ -1,4 +1,4 @@
-# =通行密钥
+# 通行密钥
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/storing-passkeys/)
@@ -10,7 +10,7 @@
 
 ## 什么是通行密钥？ <a href="#what-are-passkeys" id="what-are-passkeys"></a>
 
-通行密钥是密码的替代品，可以让用户在不同设备上快速、方便、安全地登录网站和应用程序。更确切地说，"通行密钥 "是一个对消费者友好的术语，指的是一种可发现的 FIDO 凭证，它可以通过同步实现跨设备的安全无密码登录，或作为设备绑定通行密钥专用于单个硬件。
+通行密钥是密码的替代品，可以让用户在不同设备上快速、方便、安全地登录网站和应用程序。更确切地说，「通行密钥」是一个对消费者友好的术语，指的是一种可发现的 FIDO 凭证，它可以通过同步实现跨设备的安全无密码登录，或作为设备绑定通行密钥专用于单个硬件。
 
 可以通过多种方法执行通行密钥验证：
 
@@ -83,13 +83,41 @@
 
 ### 使用 Bitwarden 中存储的通行密钥登录网站 <a href="#sign-in-to-a-website-using-a-passkey-stored-in-bitwarden" id="sign-in-to-a-website-using-a-passkey-stored-in-bitwarden"></a>
 
+要使用 Bitwarden 中存储的通行密钥，请在网站上启动通行密钥登录。
+
+{% embed url="https://bitwarden.com/_gatsby/image/d32e6f047a0665f517498397b207a241/b73904793d95b6daae114c4e14995ea6/initiate%20passwordless%20login.webp?eu=8bd804b7e3cba9d4076aa0856d74683ce03857afaf5965d26e63ecac1caecd8622fb115320c77fe37d615dded4e343b963c57c321febd9dfc8ee18f6e861fc0a54800ebf61b17006532f90a8e3f7571160c71e0df7d19b0bf63c7a81b4e5b0791a024e28fa7cbb86efac3061e4852831ebe0a02d6497a92bea4a1a108b5b7be37be2cd8f644badd0e35bb9b7adea5c89dff9735204c4f4777c240a4559bb25e6e2b51b70615f203235ada8039908eade38581d463f0a40a41b25d15da86d3595e1f8a75ed0292ee9afce342682cbfb82eb1ba57827ee9c76aad724235054e84afcf82e989235454dc675b8c110e740465a1cdd4bd07a3e996608&a=w%3D650%26h%3D590%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A47.983Z" %}
+启动无密码登录
+{% endembed %}
+
+在网站上选择通行密钥登录选项后，您的系统将提示您使用通行密钥登录。启用 Bitwarden 后，Bitwarden 浏览器扩展将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项。
+
+{% embed url="https://bitwarden.com/_gatsby/image/d389f67e84035ea41d74ddafc8b80b7b/c43fa799a00bba893c2f4639173a17c1/passkey%20login.webp?eu=d88753b4eac8ad82093ba9d06126656ae83e57aeff0764853d31b7af46adcd8121f44f5c729c72b3793b09ddd5e243e96fc2786511efd0dac4bb19a6e33da90d07865ceb66b57707542bc3f8e3f7504c6fc5125ea583990da56971d4b0bbb62618511b7aa82fb2d9a8ed7527ba9c306bb7e7f17b26dcf83cb6431d179e5c32e23aeed4c1345cb09df645eeb0e6f44eca83e2565205be996a6a720f470ced67cfd8fa640942411e4467c9ac5cc46893b33a1a60725a5d56f6346bd401f96e3896ecf3f5598c2878b4b7896033c598fbc98246f37d2fb9d167f7d5&a=w%3D700%26h%3D476%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A48.107Z" %}
+使通行密钥登录
+{% endembed %}
+
+相关通行密钥将显示在 Bitwarden 对话框中。选择您要使用的通行密钥并按**确认**。
+
+{% hint style="info" %}
+如果此登录项目启用了主密码重新提示，您将需要重新输入主密码才能访问通行密钥。
+{% endhint %}
+
 ## 通行密钥管理常见问题 <a href="#passkey-management-faq" id="passkey-management-faq"></a>
+
+以下常见问题与 Bitwarden 通行密钥存储有关。有关通行密钥的一般信息，请参阅[通行密钥常见问题](https://bitwarden.com/resources/passkeys-faq/)。
 
 ### 问：如果我没有主密码（受信任设备 SSO 或 Key Connector 用户），可以使用通行密钥吗？ <a href="#q-can-passkeys-be-used-if-i-do-not-have-a-master-password-sso-with-trusted-devices-or-key-connector" id="q-can-passkeys-be-used-if-i-do-not-have-a-master-password-sso-with-trusted-devices-or-key-connector"></a>
 
-### 问：如果克隆密码库项目，是否会包含通行密钥？ <a href="#q-will-passkeys-be-included-if-you-clone-a-vault-item" id="q-will-passkeys-be-included-if-you-clone-a-vault-item"></a>
+**答：**没有主密码的用户可以使用通行密钥功能。对于受信任设备 SSO 和 Key Connector 用户，将禁用[主密码重新提示](../../your-vault/vault-items.md#protect-individual-items)。
+
+### 问：如果[克隆](../../your-vault/vault-items.md#clone)密码库项目，是否会包含通行密钥？ <a href="#q-will-passkeys-be-included-if-you-clone-a-vault-item" id="q-will-passkeys-be-included-if-you-clone-a-vault-item"></a>
+
+**答：**完成克隆操作时，Bitwarden 不会复制通行密钥。
 
 ### 问：Bitwarden 导入和导出中是否包含存储的通行密钥？ <a href="#q-are-stored-passkeys-included-in-bitwarden-imports-and-exports" id="q-are-stored-passkeys-included-in-bitwarden-imports-and-exports"></a>
 
+**答：**后期版本中将包含通行密钥导入和导出。
+
 ### 问：我可以在移动应用程序中存储通行密钥吗？ <a href="#q-can-i-store-passkeys-in-the-mobile-app" id="q-can-i-store-passkeys-in-the-mobile-app"></a>
+
+**答：**计划在后期版本中提供对移动应用程序的通行密钥支持。
 

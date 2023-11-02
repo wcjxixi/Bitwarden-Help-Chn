@@ -27,7 +27,7 @@
 
 ## 用户管理 <a href="#user-management" id="user-management"></a>
 
-除了[授予组织成员对 Secrets Manager 的访问权限](manage-your-organization.md#access-to-secrets-manager)和一些[成员角色](manage-your-organization.md#member-roles)差异外，使用 Secrets Manager 的组织用户管理与使用 Password Manager 的组织用户管理是相同的。
+Secrets Manager 的组织用户管理与使用 Password Manager 的组织用户管理是相似的，除了一些 Secrets Manager 特定的元素（[授予组织成员对 Secrets Manager 的访问权限](manage-your-organization.md#access-to-secrets-manager)、[成员角色](manage-your-organization.md#member-roles)差异，以及指定[用户席位和服务账户](secrets-manager-quick-start.md#user-seats-and-service-account-scaling)）。
 
 ### 入职 <a href="#onboarding" id="onboarding"></a>
 
@@ -55,7 +55,7 @@ Bitwarden 服务器提供一个 SCIM 端点，该端点具有一个有效的 SCI
 
 2、使用 **≡**菜单，选中**启用 Secrets Manager** 以向选定成员授予访问权限：
 
-{% embed url="https://bitwarden.com/_gatsby/image/a160b75f2f6f68f1da1027f8cbf872ae/1705ae65ec2ddaebf8005a26ee57b8f0/Screen%20Shot%202023-07-05%20at%209.56.35%20AM.webp?eu=d7dc02b7e2c9fa8e076ca4876d24346ce26950a8ad5334d26f63e1ae47facbd52cf44f5225c629e578600bd986e916ee63937d6410bdd3dbc0ed4cf6e237fe5c008209bb61b576005822c2feb8fc54176ac51a5ea981cc0ea56a2180b7b2b67318511d23fa72bc89edaf3066b28b256aaef2e66d6fddb421bd430901880622b832ead39d665aadd0ee4aabf9e9eb579edabd2c514886b4323d74356d26912bcdf1ec5026597c053364c9f25b853df6a9351a6227080c00fe346ed406fe6533c4e6f3f75cd0287de1a09a387787c2a6d5f279ff6823b29148cada643e610fac11aea17bf0cf640361d06e959c52b7051b3645ed6df43a60876f&a=w%3D850%26h%3D419%26fm%3Dwebp%26q%3D75&cd=2023-07-18T16%3A04%3A51.094Z" %}
+{% embed url="https://bitwarden.com/_gatsby/image/49069ce6634a549b44a93e91e10543b4/1eb063407be47e7482e8f7da648d5ce3/allow%20sm%20access.webp?eu=8adf02e1b6cefd850939a9806e7b6038b43b56a2f85962826f65e6a61baac88726a51a54729072b92e3b5c8fd2e543b266c42b651dbad48c94b811a1e834ac005b8a0fec6fe27505502ec2adb0a3534c6e954f58abdb8c4ce32e78cbfaeaea214e055f35fb3eeed0afea6020f39d7167aea9a16c3b91ed22e14456098c1f6eff1dc9eea23568ba90e4488fb3abc158cac1e46f5b20c4a2327121181f5fea2cbef4bb0d276b20115367cffa50c466c0b3341833770a591ca63b668f12942f6cacb5a8f2089a3965a1f69e&a=w%3D850%26h%3D476%26fm%3Dwebp%26q%3D75&cd=2023-09-26T13%3A40%3A14.677Z" %}
 添加 Secrets Manager 用户
 {% endembed %}
 
@@ -103,3 +103,17 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 事件日志可从 Bitwarden 公共 API 的 `/events` 端点访问和导出，并无限期保留。虽然许多事件适用于所有 Bitwarden 产品，有些是特定于 Password Manager 的，但 Secrets Manager 将专门记录以下内容：
 
 * 机密被服务账户访问
+
+## 自托管
+
+企业组织可以在 Linux 和 Windows 计算机上使用 Docker 自行托管 Bitwarden Secrets Manager。如果您之前没有自行托管过 Bitwarden，请使用[本指南](../../self-hosting/self-host-an-organization.md)让自己走上正轨。
+
+如果您已经自行托管一个 Enterprise Bitwarden 组织，并希望在该服务器上访问 Secrets Manager：
+
+1. 在云托管的 Bitwarden 组织中注册一个 Secrets Manager 订阅。
+2. 将您的自托管服务器更新到至少 2023.10.0 版本。
+3. 从您的云托管组织[获取新的许可证文件](../../self-hosting/licensing-for-paid-features.md#retrieve-organization-license)，然后[将其上传到您的自托管服务器](../../self-hosting/licensing-for-paid-features.md#update-organization-license)。
+
+{% hint style="info" %}
+Bitwarden [统一自托管部署选项](../../self-hosting/install-and-deploy-guides/install-and-deploy-unified-beta.md)不支持自托管 Secrets Manager。团队和企业组织应使用标准的 [Linux](../../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md) 或 [Windows](../../self-hosting/install-and-deploy-guides/install-and-deploy-windows.md) 安装。
+{% endhint %}
