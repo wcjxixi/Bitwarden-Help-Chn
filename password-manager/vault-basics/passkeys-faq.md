@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/resources/passkeys-faq/)
 {% endhint %}
 
-> 这是 Bitwarden 资源库的一篇文章，我把它放在帮助中心的「通行密钥」旁边，以便于阅读以及理解什么是通行密钥 (Passkey)。
+> 这是 Bitwarden 资源库的一篇文章，我把它放在帮助中心的「通行密钥」旁边，以便于理解什么是通行密钥 (Passkey)。
 
 ### 什么是通行密钥以及它是如何工作的？ <a href="#what-is-a-passkey-and-how-does-it-work" id="what-is-a-passkey-and-how-does-it-work"></a>
 
@@ -14,17 +14,31 @@
 
 ### 通行密钥可以取代物理 Yubikey 吗？ <a href="#do-passkeys-replace-physical-yubikeys" id="do-passkeys-replace-physical-yubikeys"></a>
 
+现代化的 Yubikey 可以作为一种通行密钥的形式。具体来说，它们就是所谓的安全密钥或「设备绑定的通行密钥」- 密钥本身保存在小型设备上，并且从不同步或备份。这可能会使它们比同步通行密钥更难使用，但在某些情况下可能更有用。
+
 ### 使用通行密钥的最佳方式是什么？ <a href="#whats-the-best-way-to-use-passkeys" id="whats-the-best-way-to-use-passkeys"></a>
+
+通行密钥的使用比您想象的要简单得多。在您注册新账户时，您无需创建传统的用户名和密码（以及注册额外的两步登录），而是创建一个单一的通行密钥。如果通行密钥要求用户验证，该通行密钥可以与设备上的生物识别（如指纹扫描仪）结合使用。因此，当您登录账户时，只需通过生物识别验证即可进入。生物识别只会在您的设备上本地使用，绝不会发送到网站。
 
 ### 设置通行密钥的流程是怎样的？当我将来访问某个网站或应用程序时，该流程会发生怎样的变化？ <a href="#what-is-the-process-to-set-up-a-passkey-how-does-that-process-change-when-i-go-to-a-site-or-app-in-t" id="what-is-the-process-to-set-up-a-passkey-how-does-that-process-change-when-i-go-to-a-site-or-app-in-t"></a>
 
+当以前使用传统用户名/密码的网站或应用程序支持通行密钥时，通常只需单击按钮即可创建您的第一个通行密钥。该过程就像解锁您的设备一样简单。在后台，当您创建通行密钥时，它将生成一对加密密钥。第一个是公钥，存储在您为其创建账户的网站上。第二个是私钥，存储在您的设备或 Bitwarden 密码库中。这对密钥对在您的设备上受到生物指纹或面部扫描的保护。
+
 ### 设置通行密钥时需要哪些信息？ <a href="#what-information-is-required-when-setting-up-a-passkey" id="what-information-is-required-when-setting-up-a-passkey"></a>
+
+当您为站点创建通行密钥时，您必须首先使用现有的用户名和密码登录。然后，服务器将向您的浏览器推送一个请求，要求您提供特定的加密信息。然后，您必须使用诸如生物识别（指纹扫描仪或面部解锁）或您的设备 PIN 码来批准该请求。验证成功后，您的设备将生成密钥对，并将公钥发送到该站点。这就是您在设置通行密钥时需要提供的所有信息。
 
 ### 我的通行密钥存储在哪里？ <a href="#where-are-my-passkeys-stored" id="where-are-my-passkeys-stored"></a>
 
+公钥存储在网站上，私钥存储在您的设备或您的通行密钥提供商中，例如您的 Bitwarden 密码库。
+
 ### 如果我丢失了手机怎么办？如何在没有密码之类的方式来验证自己身份的情况下恢复我的通行密钥？ <a href="#what-happens-if-i-lose-my-phone-how-do-i-recover-my-passkey-with-nothing-like-a-password-to-identify" id="what-happens-if-i-lose-my-phone-how-do-i-recover-my-passkey-with-nothing-like-a-password-to-identify"></a>
 
+通行密钥通常能够在您的设备之间同步，但并非所有平台都支持这一点。Bitwarden 允许您将密钥存储在您的密码库中，该密码库已备份并在您的所有设备之间同步。如果您因某种原因丢失了通行密钥，大多数网站都应该有恢复选项，以便您可以为您的账户创建一个新的通行密钥。当然，这要根据每个网站的具体情况而定。
+
 ### 如果我的设备被盗怎么办？小偷可以通过这种方式获取通行密钥吗？ <a href="#what-happens-if-my-device-is-stolen-can-a-thief-gain-access-to-passkeys-in-that-way" id="what-happens-if-my-device-is-stolen-can-a-thief-gain-access-to-passkeys-in-that-way"></a>
+
+窃贼要想在设备上成功使用密码，唯一方法是他们也可以解锁您的设备，从而有效地获取对您的数据的完全访问权限。然而，每次使用通行密钥通常都需要用户验证，例如生物识别或重新输入设备密码，因此在解锁后窃取您的设备是远远不够的。
 
 ### 从安全角度来看，密码和通行密钥有何不同？ <a href="#from-a-security-perspective-how-do-passwords-and-passkeys-compare" id="from-a-security-perspective-how-do-passwords-and-passkeys-compare"></a>
 
