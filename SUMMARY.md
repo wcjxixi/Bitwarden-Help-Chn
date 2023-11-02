@@ -52,7 +52,7 @@
     * [检索密码库](your-vault/search-your-vault.md)
     * [密码库健康报告](your-vault/vault-health-reports.md)
   * [导入 & 导出](import-export/README.md)
-    * [=导入数据到密码库](import-export/import-data-to-your-vault.md)
+    * [导入数据到密码库](import-export/import-data-to-your-vault.md)
     * [导入指南](import-export/import-guides/README.md)
       * [从 LastPass 导入数据](import-export/import-guides/import-your-data-from-lastpass.md)
       * [从 1Password 导入数据](import-export/import-guides/import-your-data-from-1password.md)

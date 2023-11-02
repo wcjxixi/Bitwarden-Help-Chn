@@ -4,28 +4,26 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/import-from-1password/)
 {% endhint %}
 
-使用这篇文章帮助您从 1Password 导出数据并将其导入 Bitwarden 中。1Password 数据支持导出为 `.1pif` 或 `.csv` 文件，这取决于您使用的客户端版本和操作系统。
+使用这篇文章帮助您从 1Password 导出数据并将其导入 Bitwarden 中。1Password 数据支持导出为 `.1pux`（要求 1Password v8.5+）、`.1pif` 或 `.csv` 文件，这取决于您使用的客户端版本和操作系统。
 
 ## 从 1Password 导出 <a href="#export-your-1-password-1-pif-logins" id="export-your-1-password-1-pif-logins"></a>
 
 完成以下步骤以从 1Password 桌面端应用程序导出数据：
 
-1、导航到您想要导出数据的密码库
+{% hint style="success" %}
+目前，只有 1Password 8 允许您一次导出多个密码库。如果您使用 1Password 8，请跳至**步骤 3**。
+{% endhint %}
 
-目前，1Password 不允许一次性从多个密码库中导出数据。
+1、导航到您想要导出数据的密码库。
 
-2、在密码库中，选择您要导出的项目
-
-按住 Ctrl/Cmd 键可以选择多个密码库项目，或者按 Ctrl/Cmd + A 键选择所有项目。
+2、在密码库中，选择您要导出的项目。按住 Ctrl/Cmd 键可以选择多个密码库项目，或者按 Ctrl/Cmd + A 键选择所有项目。
 
 3、在 Windows 中，选择**文件** → **导出**或右键单击并选择**导出**/在 macOS 中，选择**文件** → **导出** → **所有项目...**。
 
 4、在导出窗口中，指定一个位置和文件格式。
 
-根据您的客户端版本和操作系统，您可能需要在 1Password Interchange Format (.1pif) 和 Comma Delimited Text (.csv) 之间选择。
-
 {% hint style="info" %}
-**如果您从 macOS 导出 `.csv` 文件**，您还必须选择 **All Fields** 单选按钮，并选中 **Include Column Labels** 复选框。
+如果您从 macOS 导出 `.csv` 文件，您还必须选择 **All Fields** 单选按钮，然后选中 **Include Column Labels** 复选框。
 {% endhint %}
 
 ## 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
@@ -73,3 +71,15 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 {% endtab %}
 {% endtabs %}
+
+## 导入故障排除 <a href="#import-troubleshooting" id="import-troubleshooting"></a>
+
+### 文件大小导入限制 <a href="#file-size-import-limitations" id="file-size-import-limitations"></a>
+
+超过以下任一项数据限制，导入可能会被拒绝：
+
+* 如果您的导入超过 6,000 条项目。
+* 如果您的导入超过 1,000 个文件夹。
+* 如果您的导入超过 1,000 个集合。
+* 如果您的导入超过 6,000 个项目-文件夹关系（例如，3 个文件夹中的单个项目可以说具有 3 个项目-文件夹关系）。
+* 如果您的导入超过 6,000 个项目-集合关系（例如，3 个集合中的单个项目可以说具有 3 个项目-集合关系）。

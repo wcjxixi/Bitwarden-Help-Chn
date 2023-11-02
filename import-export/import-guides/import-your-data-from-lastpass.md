@@ -11,7 +11,7 @@
 数据可以直接从 LastPass 导入，也可以使用 LastPass [导出的文件](import-your-data-from-lastpass.md#export-from-lastpass)导入。如果您是使用 LastPass SSO 的团队成员，LastPass 管理员将需要完成一个简短的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-your-data-from-lastpass.md#direct-import-with-sso)）。在所有情况下，数据在发送到服务器存储之前会在本地进行[加密](../../security/encryption.md)。
 
 {% hint style="info" %}
-请参阅这篇 [LastPass 支持文章](https://support.lastpass.com/help/export-your-passwords-and-secure-notes-lp040004)，了解 LastPass 支持和不支持导出的内容。请注意，Bitwarden 不支持导入附件。
+请参阅这篇 [LastPass 支持文章](https://support.lastpass.com/help/export-your-passwords-and-secure-notes-lp040004)，了解 LastPass 支持和不支持哪些导出内容。请注意，Bitwarden 不支持导入附件。
 {% endhint %}
 
 {% tabs %}
@@ -63,7 +63,7 @@
 
 7、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 
-[文件附件](../../your-vault/file-attachments.md)、[Send](../../bitwarden-send/about-send.md) 以及回收站等附加项目需要手动上传到您的密码库。
+[文件附件](../../your-vault/file-attachments.md)、[Send](../../bitwarden-send/about-send.md)、回收站以及密码历史记录等附加项目需要手动上传到您的密码库。
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -163,7 +163,7 @@ LastPass 导出
 
 ### 文件大小导入限制 <a href="#file-size-import-limitations" id="file-size-import-limitations"></a>
 
-超过以下任一数据限制的导入可能会被拒绝：
+超过以下任一项数据限制，导入可能会被拒绝：
 
 * 如果您的导入超过 6,000 条项目。
 * 如果您的导入超过 1,000 个文件夹。

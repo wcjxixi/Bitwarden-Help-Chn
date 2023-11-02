@@ -147,3 +147,15 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 {% endtab %}
 {% endtabs %}
+
+## 导入故障排除 <a href="#import-troubleshooting" id="import-troubleshooting"></a>
+
+### 文件大小导入限制 <a href="#file-size-import-limitations" id="file-size-import-limitations"></a>
+
+超过以下任一项数据限制，导入可能会被拒绝：
+
+* 如果您的导入超过 6,000 条项目。
+* 如果您的导入超过 1,000 个文件夹。
+* 如果您的导入超过 1,000 个集合。
+* 如果您的导入超过 6,000 个项目-文件夹关系（例如，3 个文件夹中的单个项目可以说具有 3 个项目-文件夹关系）。
+* 如果您的导入超过 6,000 个项目-集合关系（例如，3 个集合中的单个项目可以说具有 3 个项目-集合关系）。
