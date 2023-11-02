@@ -1,0 +1,153 @@
+{
+  "encrypted": false,
+  "collections": [
+    {
+      "id": "",
+      "organizationId": "",
+      "name": "",
+      "externalId": null
+    }
+  ],
+  "items": [
+    {
+      "passwordHistory": null,
+      "revisionDate": "",
+      "creationDate": "",
+      "deletedDate": null,
+      "id": "",
+      "organizationId": "",
+      "folderId": null,
+      "type": 2,
+      "reprompt": 0,
+      "name": "",
+      "notes": "",
+      "favorite": false,
+      "secureNote": {
+        "type": 0
+      },
+      "collectionIds": [
+        ""
+      ]
+    },
+    {
+      "passwordHistory": null,
+      "revisionDate": "",
+      "creationDate": "",
+      "deletedDate": null,
+      "id": "",
+      "organizationId": "",
+      "folderId": null,
+      "type": 4,
+      "reprompt": 0,
+      "name": "",
+      "notes": "",
+      "favorite": false,
+      "identity": {
+        "title": "",
+        "firstName": "",
+        "middleName": "",
+        "lastName": "",
+        "address1": "",
+        "address2": "",
+        "address3": null,
+        "city": null,
+        "state": "",
+        "postalCode": "",
+        "country": "",
+        "company": "",
+        "email": "",
+        "phone": "",
+        "ssn": "",
+        "username": "",
+        "passportNumber": "",
+        "licenseNumber": ""
+      },
+      "collectionIds": [
+        ""
+      ]
+    },
+    {
+      "passwordHistory": null,
+      "revisionDate": "",
+      "creationDate": "",
+      "deletedDate": null,
+      "id": "",
+      "organizationId": "",
+      "folderId": null,
+      "type": 3,
+      "reprompt": 0,
+      "name": "",
+      "notes": "",
+      "favorite": false,
+      "card": {
+        "cardholderName": "",
+        "brand": null,
+        "number": "",
+        "expMonth": "",
+        "expYear": "",
+        "code": ""
+      },
+      "collectionIds": [
+        ""
+      ]
+    },
+    {
+      "passwordHistory": null,
+      "revisionDate": "",
+      "creationDate": "",
+      "deletedDate": null,
+      "id": "",
+      "organizationId": "",
+      "folderId": null,
+      "type": 1,
+      "reprompt": 0,
+      "name": "",
+      "notes": "",
+      "favorite": false,
+      "login": {
+        "username": "",
+        "password": "",
+        "totp": ""
+      },
+      "collectionIds": [
+        ""
+      ]
+    },
+    {
+      "passwordHistory": null,
+      "revisionDate": "",
+      "creationDate": "",
+      "deletedDate": null,
+      "id": "",
+      "organizationId": "",
+      "folderId": null,
+      "type": 1,
+      "reprompt": 1,
+      "name": "",
+      "notes": "",
+      "favorite": false,
+      "fields": [
+        {
+          "name": "Custom field 2",
+          "value": "12345",
+          "type": 0,
+          "linkedId": null
+        }
+      ],
+      "login": {
+        "uris": [
+          {
+            "match": null,
+            "uri": ""
+          }
+        ],
+        "username": "",
+        "password": "",
+        "totp": null
+      },
+      "collectionIds": [
+        ""
+      ]
+    }
+  ]
+}

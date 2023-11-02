@@ -178,6 +178,54 @@ folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_p
 
 ⬇️[下载示例 csv 文件](https://assets.ctfassets.net/7rncvj1f8mw7/3qTuEXkLZiEXewdcHxzttW/a6f4ba7f7ac5fbe94059d1d9416074f4/bitwarden\_org\_export.json)
 
+### 导入到现有集合 <a href="#import-to-existing-collections" id="import-to-existing-collections"></a>
+
+通过适当调整组织的 `.json` 文件，可以将新的登录项目导入到预先存在的[集合](../organizations/collections.md)中。
+
+下面的示例演示了将单个项目导入到预先存在的集合中的正确格式。请注意，您需要：
+
+* 获取组织和集合 ID。这些可以通过导航到网页应用程序中的集合，然后从地址栏中提取（例如 `https://vault.bitwarden.com/#/organizations/<organizationId>/vault?collectionId=<collectionId>` ）。
+* 定义一个 `"collections": []` 数组，其中包含预先存在的集合的数据，包括组织和集合 ID（见上文）及其名称。只要这 3 个数据点匹配，导入时就不会创建新的集合，而是将文件中的项目导入到预先存在的集合中。
+
+```yaml
+{
+  "encrypted": false,
+  "collections": [
+    {
+      "id": "b8e6df17-5143-495e-92b2-aff700f48ecd",
+      "organizationId": "55d8fa8c-32bb-47d7-a789-af8710f5eb99",
+      "name": "My Existing Collection",
+      "externalId": null
+    }
+  ],
+  "folders": [],
+  "items": [
+    {
+      "id": "2f27f8f8-c980-47f4-829a-aff801415845",
+      "organizationId": "55d8fa8c-32bb-47d7-a789-af8710f5eb99",
+      "folderId": null,
+      "type": 1,
+      "reprompt": 0,
+      "name": "Item to Import",
+      "notes": "A login item for sharing.",
+      "favorite": false,
+      "login": {
+        "uris": [
+          {
+            "match": null,
+            "uri": "https://mail.google.com"
+          }
+        ],
+        "username": "my_username",
+        "password": "my_password",
+        "totp": null
+      },
+      "collectionIds": ["b8e6df17-5143-495e-92b2-aff700f48ecd"]
+    }
+  ]
+}
+```
+
 ### 最少要求键值对 <a href="#minimum-required-key-value-pairs" id="minimum-required-key-value-pairs"></a>
 
 你可能没有上述格式中显示的所有键值对的数据，但他们大多数是可选的。为了让 Bitwarden `.json` 导入器能正常工作，你只需要为每个对象提供以下键值对即可：

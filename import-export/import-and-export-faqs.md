@@ -42,7 +42,7 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * 编辑您的导入文件，使只包含全新的密码库项目。
 * 在导入操作前清空您的密码库。
 
-个人密码库可以从**设置** → **我的账户**页面清空。组织密码库可以从**组织设置** → **我的组织**页面清空。
+个人密码库可以从**设置** → **我的账户**页面清空。组织密码库可以从组织**设置** → **组织信息**页面清空。
 
 ### 问：Bitwarden 支持导入哪些文件格式？ <a href="#q-what-file-formats-does-bitwarden-support-for-import" id="q-what-file-formats-does-bitwarden-support-for-import"></a>
 

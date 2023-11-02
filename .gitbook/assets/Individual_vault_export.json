@@ -1,0 +1,121 @@
+{
+  "encrypted": false,
+  "folders": [
+    {
+      "id": "",
+      "name": ""
+    }
+  ],
+  "items": [
+    {
+      "passwordHistory": null,
+      "revisionDate": "",
+      "creationDate": "",
+      "deletedDate": null,
+      "id": "",
+      "organizationId": null,
+      "folderId": null,
+      "type": 3,
+      "reprompt": 0,
+      "name": "",
+      "notes": "",
+      "favorite": false,
+      "card": {
+        "cardholderName": "",
+        "brand": null,
+        "number": "",
+        "expMonth": "",
+        "expYear": "",
+        "code": ""
+      },
+      "collectionIds": null
+    },
+    {
+      "passwordHistory": null,
+      "revisionDate": "",
+      "creationDate": "",
+      "deletedDate": null,
+      "id": "",
+      "organizationId": null,
+      "folderId": null,
+      "type": 2,
+      "reprompt": 0,
+      "name": "",
+      "notes": "", 
+      "favorite": false,
+      "secureNote": {
+        "type": 0
+      },
+      "collectionIds": null
+    },
+    {
+      "passwordHistory": null,
+      "revisionDate": "",
+      "creationDate": "",
+      "deletedDate": null,
+      "id": "",
+      "organizationId": null,
+      "folderId": null,
+      "type": 4,
+      "reprompt": 1,
+      "name": "",
+      "notes": "",
+      "favorite": false,
+      "identity": {
+        "title": "",
+        "firstName": "",
+        "middleName": "",
+        "lastName": "",
+        "address1": "",
+        "address2": null,
+        "address3": null,
+        "city": "",
+        "state": "",
+        "postalCode": "",
+        "country": "",
+        "company": "",
+        "email": "",
+        "phone": "",
+        "ssn": "",
+        "username": "",
+        "passportNumber": "",
+        "licenseNumber": ""
+      },
+      "collectionIds": null
+    },
+    {
+      "passwordHistory": null,
+      "revisionDate": "",
+      "creationDate": "",
+      "deletedDate": null,
+      "id": "",
+      "organizationId": null,
+      "folderId": null,
+      "type": 1,
+      "reprompt": 1,
+      "name": "",
+      "notes": "",
+      "favorite": false,
+      "fields": [
+        {
+          "name": "",
+          "value": "",
+          "type": 0,
+          "linkedId": null
+        }
+      ],
+      "login": {
+        "uris": [
+          {
+            "match": null,
+            "uri": ""
+          }
+        ],
+        "username": "",
+        "password": "",
+        "totp": null
+      },
+      "collectionIds": null
+    }
+  ]
+}

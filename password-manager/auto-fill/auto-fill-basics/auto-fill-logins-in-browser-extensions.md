@@ -105,3 +105,17 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为_热键_）�
 浏览器扩展会悄悄地禁用不受信任的 iframe 的[页面加载自动填充](auto-fill-logins-in-browser-extensions.md#on-page-load)，如果用户使用键盘快捷键、上下文菜单或直接从浏览器扩展手动触发自动填充，则会警告用户有关 iframe 的信息。
 
 「不受信任」的 iframe 被定义为 `src=""` 值与登录项目的 URI 不匹配的 iframe，如全局设置或特定于项目的[匹配检测行为](../../../auto-fill/using-uris.md#match-detection-options)所指示的那样。
+
+## 使用 Bitwarden 中存储的通行密钥登录 <a href="#log-in-with-passkeys-stored-in-bitwarden" id="log-in-with-passkeys-stored-in-bitwarden"></a>
+
+存储新的通行密钥时，网站 URI 将保存在新的登录项目中。访问您希望使用通行密钥登录的网站，然后开始通行密钥登录工作流程。
+
+{% embed url="https://bitwarden.com/_gatsby/image/d32e6f047a0665f517498397b207a241/b73904793d95b6daae114c4e14995ea6/initiate%20passwordless%20login.webp?eu=8c8f52eee6c0f5870e69f3d16920693ae93f02a2a80464846863b0fa48a89cd720f7480075c12cb428610edf86e516b932c2716948e6d48ec7bc1ba0e837a20a528108ba63e52356047dcdfab6f3074739c4185ef382c250e7293297efaca82944014b7eeb64ebc5baf87627e5c76c2cb4e3e2316280f52ba6485f02c34536fb7bbac8a85377eeadb744b18f92c10d89e0824c5203888f2a237f1f1e5cbb28b8a3b10d226c21475c3098ab50926390b7354e302a0d0e00a278638e0cbf356087b194e10c9a393cbeea9d6d25c580c1dcb24df57468a79170&a=w%3D650%26h%3D590%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A47.983Z" %}
+启动无密码登录
+{% endembed %}
+
+相关的通行密钥将显示在 Bitwarden 浏览器扩展对话框中。选择您要使用的通行密钥然后按下**确认**。
+
+{% embed url="https://bitwarden.com/_gatsby/image/d389f67e84035ea41d74ddafc8b80b7b/c43fa799a00bba893c2f4639173a17c1/passkey%20login.webp?eu=de8b58e3ebcbaf850a39a5803e77663de26c5ea2a85536826f31b6fb4cadcd8127a01e5124902be07838098dd6b141ba61947f6119ee818c92ba4cf2b93dfe0e5bd00bee35e12405032d96aab3a40f456c93495ba0839e09a46e788ca1f7f733134f0372f52befd4afb76620e6d26c71bff2e5303b97ef67e75000078d4270aa6ce6d7d92c1b959bf57a85b9a6ac4a95c8e767733d93934d591f12000aea2ebfa6bb01743f2f410a31ccfa59943092e23e1e6876565757f33268d300e42c6080a7a0f414b62624b6f1972f30d894&a=w%3D700%26h%3D476%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A48.107Z" %}
+使用通行密钥登录
+{% endembed %}

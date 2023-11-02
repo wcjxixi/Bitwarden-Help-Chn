@@ -22,7 +22,7 @@
 
 {% tabs %}
 {% tab title="网页密码库" %}
-要从网页密码库导出您的个人密码库数据：
+要通过网页密码库导出您的个人密码库数据：
 
 1、从顶部导航栏中选择**工具**。
 
@@ -39,7 +39,7 @@
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-要从浏览器扩展导出您的个人密码库数据：
+要通过浏览器扩展导出您的个人密码库数据：
 
 1、打开 **⚙️设置**标签。
 
@@ -59,7 +59,7 @@
 {% endtab %}
 
 {% tab title="桌面端" %}
-要从桌面应用程序导出您的个人密码库数据：
+要通过桌面应用程序导出您的个人密码库数据：
 
 1、从菜单栏中，导航到**文件** → **导出密码库**。
 
@@ -73,7 +73,7 @@
 {% endtab %}
 
 {% tab title="移动端" %}
-要从移动应用程序导出您的个人密码库数据：
+要通过移动应用程序导出您的个人密码库数据：
 
 1、点击 ⚙️**设置**标签。
 
@@ -89,7 +89,7 @@
 {% endtab %}
 
 {% tab title="CLI" %}
-要从 CLI 导出您的个人密码库数据，需使用 `export` 命令。默认情况下，`export` 导出密码库为 `.csv` 文件并保存在工作目录下，然而，这种行为可以通过使用选项来更改：
+要通过 CLI 导出您的个人密码库数据，需使用 `export` 命令。默认情况下，`export` 导出密码库为 `.csv` 文件并保存在工作目录下，然而，这种行为可以通过使用选项来更改：
 
 ```batch
 bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
@@ -101,25 +101,27 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 {% endtab %}
 {% endtabs %}
 
+有关个人密码库导出中包含的所有项目和字段的完整列表，请参阅此 **⬇️**[JSON 示例](https://assets.ctfassets.net/7rncvj1f8mw7/3klSoZBBd57skEvwFkcMJc/9dfe5d696c102cd32da88dc325706738/Individual\_vault\_export.json)。
+
 ## 导出组织密码库 <a href="#export-an-organization-vault" id="export-an-organization-vault"></a>
 
 组织的[管理员和所有者](../admin-console/user-management/member-roles-and-permissions.md)可以通过网页密码库或 CLI 导出他们的组织密码库（即组织拥有的所有项目）：
 
 {% tabs %}
 {% tab title="网页密码库" %}
-要从网页密码库导出您的组织密码库：
+要通过网页密码库导出您的组织密码库：
 
-1、打开您的组织并选择**工具**标签页：
+1、打开您的组织然后选择**设置**标签页。
 
-{% embed url="https://bitwarden.com/_gatsby/image/311837f02e3437995c8358a122e5cd27/bbe264169e2cda0721f81dc34b00459b/Screen%20Shot%202022-05-16%20at%2011.06.12%20AM.webp?eu=dd8c06e1e0c0f5d10968f4816876636de0385eaba85363d63a62e5fb48adca822df31c57209529e224385e8f86e841b367c779694ae7d7d3c3ba1ca6ec61a90e07d15fe936e27651522290fcb1f5034c6ec44b5fa3d29c59ab6924d7e6b3b5771c011f78fb2cbdd2b9ae6760b78a7a63bee2a1266f9aef3ca051544bd4412cad33eed3c0605ab89ff35cbaa2adb75798d8f82a451e88b56f232144421fea32b9c0d34d245f6e0326669dae0ec027c5cc43423f46214055f6633a8406ad6538c5e3fda80fd17f7de5a0ca3475d2c0af83eb12ac7872b1d044fac06e2f5062cf4bf2f814f5d2660413812fe7944add52415a41830289223ed83a30fd7a9aa119c4&a=w%3D779%26h%3D457%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.366Z" %}
+2、在**设置**菜单中选择**导出密码库**：
+
+{% embed url="https://bitwarden.com/_gatsby/image/1b51ec6faaad683faf85662a97be2ee7/9491affef7bef9021a7c1e0b8604530a/Screen%20Shot%202022-12-27%20at%204.10.38%20PM.webp?eu=dc8852e2e69aad850861a1d13b7a693ab53f03a8f65133d03d64ecaf1bfa98d522f54d56259d2fb62d615288d4e414ba63c12e371eedd5da92b44cf1e267a30e06865be86ee624545523c3abe2fc04163bce490ef3d6cd0fa3682387e0b2b7251a564e7efe28b884e8fc3764b4862d33e9e2a2286091fd7de2115c019d1b7ba420ffd09d3901f197ed4eb8b3adb75a89cab66e44159fb02b7c2208005faf73e8e3e805273174075c2accca398e34f0f17f6132705f0904b13440af0ba5094edcecfca50c8b7d73e4fdcf3275d0c2fbd2e819fa2c75b4c927fc843f28080cac15b2df28b587315861e272a5d123b00307375d831e942627b6691be3039ae0478d2bf401464b2f80a24d&a=w%3D850%26h%3D440%26fm%3Dwebp%26q%3D75&cd=2023-02-15T12%3A50%3A03.846Z" %}
 导出组织密码库
 {% endembed %}
 
-2、在工具菜单中选择**导出密码库**。
+3、在导出密码库页面，选择一个**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`），然后选择**确认格式**按钮。
 
-3、在导出密码库页面，选择一个**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。
-
-4、输入您的**主密码**然后选择**导出密码库**按钮。
+4、输入您的主密码然后选择**导出密码库**按钮。
 
 {% hint style="info" %}
 导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/reporting/event-logs.md)。
@@ -127,7 +129,7 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 {% endtab %}
 
 {% tab title="CLI" %}
-要从 CLI 导出您的组织密码库，需使用带 `--organizationid <orgId>` 选项的 `export` 命令。
+要通过 CLI 导出您的组织密码库，需使用带 `--organizationid <orgId>` 选项的 `export` 命令。
 
 默认情况下，`export` 导出密码库为 `.csv` 文件并保存在工作目录下，然而，这种行为可以通过使用选项来更改：
 
@@ -148,3 +150,5 @@ bw export my-master-password --organizationid 7063feab-4b10-472e-b64c-785e2b870b
 
 {% endtab %}
 {% endtabs %}
+
+有关组织密码库导出中包含的所有项目和字段的完整列表，请参阅此 **⬇️**[JSON 示例](https://assets.ctfassets.net/7rncvj1f8mw7/2oQPd5ZsY1N0hph4N6pBrY/b5fc7c05ac238d71d9a1902a58559cc6/Organization\_vault\_export.json)。
