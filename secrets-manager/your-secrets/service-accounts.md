@@ -103,3 +103,21 @@
 ## 删除服务账户 <a href="#delete-a-service-account" id="delete-a-service-account"></a>
 
 要删除服务账户，请使用要删除的服务账户的 (**≡**) 选项菜单选择**删除服务账户**。删除服务账户不会删除与其关联的机密。服务账户一旦删除就会被完全移除，**不会**像[机密那样被发送到回收站](secrets.md#delete-a-secret)。
+
+## 服务账户事件 <a href="#service-account-events" id="service-account-events"></a>
+
+每个服务账户执行操作的时间戳记录可从服务账户的**事件日志**选项卡中获得：
+
+{% embed url="https://bitwarden.com/_gatsby/image/9feb9274651fc97145948cb3d866b806/4daa32f8e75a6dc0af60401543c21650/Screenshot%202023-10-23%20at%2010.26.06%20AM.webp?eu=d9df03e4e19afcd20b6af3806c23656de23e02fff85265853f62b5a71aa89a872ca01d0723922fb82b600cde80b114eb63937d661aeed6dfc5ea1ba1eb3da30050d653ec63ba2556002cc1aabaad420128851047beda9559f43831cab6f7e1215a13496feb64e6d4a8b63226eed06968ebe0ae7322c5b47ae81a0456ad7c2b8f3dc299ac744994b9b27ab383a6b6089c9fb32c0213d8a53227764a1f5fb82db9a7b250753b2e4908309aa80c926689d56f5e3476001c5ba82355d255f96f2cc2e4e6a35eb62b3f8ea9c92f7280ddae86826bd13436b998&a=w%3D850%26h%3D323%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A47.993Z" %}
+服务账户事件
+{% endembed %}
+
+有权访问给定服务账户的任何用户都可以查看该服务账户的事件。捕获的事件包括：
+
+* 已访问秘密标 识符。( `2100` )
+
+{% hint style="info" %}
+每个事件都与类型代码（ `1000` 、 `1001` 等）关联，用于标识事件捕获的操作。 Bitwarden 公共 API 使用类型代码来识别事件记录的操作。
+{% endhint %}
+
+事件日志可导出并无限期保留。导出事件将创建指定日期范围内所有事件的 `.csv` ，该日期范围不应超过 367 天。
