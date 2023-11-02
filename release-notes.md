@@ -22,6 +22,24 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2023.10.0
+
+此次发布包含：
+
+### **Password Manager**
+
+* **保存通行密钥到您的密码库**：现在可以将通行密钥存储在您的 Bitwarden 密码库中了！使用 Bitwarden 浏览器扩展程序存储并使用通行密钥登录（参阅这里）。
+* **LastPass 直接导入器**：使用浏览器扩展或桌面应用程序将数据从 LastPass 直接导入到 Bitwarden（参阅[这里](import-export/import-guides/import-your-data-from-lastpass.md#import-to-bitwarden)）。
+* **从浏览器扩展和桌面应用程序导入**：现在可以从浏览器扩展和桌面应用程序将数据导入到 Bitwarden（参阅这里）。
+* **移动端设置重组**：移动应用程序上的「设置」选项卡已重新组织为更直观的类别。
+* **支持自托管别名提供程序**：Password Manager 客户端上的用户名生成器现在可以连接到自托管 Addy.io 和 SimpleLogin 实例（参阅这里）。
+* **通过上下文菜单自动填充支付卡和身份**：现在可以使用浏览器扩展的上下文菜单自动填充支付卡和身份（参阅这里）。
+
+### **Secrets Manager**
+
+* **支持自托管**：企业组织现在可以自行托管 Secrets Manager（参阅这里）。
+* **全新的事件日志视图**：现在可以直接从服务账户视图访问服务账户事件日志（参阅这里）。
+
 ## 2023.9.0
 
 此次发布包含：
