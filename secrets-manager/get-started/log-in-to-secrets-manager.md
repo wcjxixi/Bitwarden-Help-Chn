@@ -4,10 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/log-in-to-secrets-manager/)
 {% endhint %}
 
-您用于登录 Password Manager 的端到端零知识加密 Bitwarden 账户与您用于登录 Secrets Manager 的账户相同。
+您用于登录 Password Manager 的端到端零知识加密的 Bitwarden 账户与您用于登录 Secrets Manager 的账户相同。
 
 {% hint style="success" %}
-本文与登录 Secrets Manager 网页密码库相关。 [Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 主要用于编写机密注入到您的应用程序和基础设施中的脚本，需要使用[访问令牌](../your-secrets/access-tokens.md)登录。
+本文与登录 Secrets Manager 网页密码库相关。[Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 主要用于编写机密注入到您的应用程序和基础设施中的脚本，需要使用[访问令牌](../your-secrets/access-tokens.md)登录。
 {% endhint %}
 
 ## 主密码 <a href="#master-password" id="master-password"></a>
