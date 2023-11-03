@@ -1,4 +1,4 @@
-# =\*通行密钥常见问题
+# \*通行密钥常见问题
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/resources/passkeys-faq/)
@@ -34,34 +34,62 @@
 
 ### 如果我丢失了手机怎么办？如何在没有密码之类的方式来验证自己身份的情况下恢复我的通行密钥？ <a href="#what-happens-if-i-lose-my-phone-how-do-i-recover-my-passkey-with-nothing-like-a-password-to-identify" id="what-happens-if-i-lose-my-phone-how-do-i-recover-my-passkey-with-nothing-like-a-password-to-identify"></a>
 
-通行密钥通常能够在您的设备之间同步，但并非所有平台都支持这一点。Bitwarden 允许您将密钥存储在您的密码库中，该密码库已备份并在您的所有设备之间同步。如果您因某种原因丢失了通行密钥，大多数网站都应该有恢复选项，以便您可以为您的账户创建一个新的通行密钥。当然，这要根据每个网站的具体情况而定。
+通行密钥通常能够在您的设备之间同步，但并非所有平台都支持这一点。Bitwarden 允许您将通行密钥存储在您的密码库中，该密码库已备份并在您的所有设备之间同步。如果您因某种原因丢失了通行密钥，大多数网站都应该有恢复选项，以便您可以为您的账户创建一个新的通行密钥。当然，这要根据每个网站的具体情况而定。
 
-### 如果我的设备被盗怎么办？小偷可以通过这种方式获取通行密钥吗？ <a href="#what-happens-if-my-device-is-stolen-can-a-thief-gain-access-to-passkeys-in-that-way" id="what-happens-if-my-device-is-stolen-can-a-thief-gain-access-to-passkeys-in-that-way"></a>
+### 如果我的设备被盗怎么办？小窃贼可以通过这种方式获取通行密钥吗？ <a href="#what-happens-if-my-device-is-stolen-can-a-thief-gain-access-to-passkeys-in-that-way" id="what-happens-if-my-device-is-stolen-can-a-thief-gain-access-to-passkeys-in-that-way"></a>
 
 窃贼要想在设备上成功使用密码，唯一方法是他们也可以解锁您的设备，从而有效地获取对您的数据的完全访问权限。然而，每次使用通行密钥通常都需要用户验证，例如生物识别或重新输入设备密码，因此在解锁后窃取您的设备是远远不够的。
 
 ### 从安全角度来看，密码和通行密钥有何不同？ <a href="#from-a-security-perspective-how-do-passwords-and-passkeys-compare" id="from-a-security-perspective-how-do-passwords-and-passkeys-compare"></a>
 
+通行密钥比传统的用户名/密码身份验证方法更安全，原因有很多。首先，您将无法使用易于破解的密码，例如「password」。此外，通行密钥中内置了 2FA，某人访问您账户的唯一方法是同时拥有私钥和您的生物识别登录信息或设备 PIN 码。
+
 ### 我的通行密钥需要 2FA 吗？ <a href="#do-i-need-2fa-with-my-passkey" id="do-i-need-2fa-with-my-passkey"></a>
+
+不需要，因为通行密钥中内置了 2FA。
 
 ### 我的通行密钥会被破解吗？ <a href="#can-my-passkey-be-hacked" id="can-my-passkey-be-hacked"></a>
 
-### 谷歌最近宣布支持通行密钥。这和 Bitwarden 宣布的事情是一样的吗？ <a href="#google-recently-announced-passkey-support.-is-this-the-same-thing-that-bitwarden-is-announcing" id="google-recently-announced-passkey-support.-is-this-the-same-thing-that-bitwarden-is-announcing"></a>
+没有什么是 100% 万无一失的。然而，破解通行密钥需要付出相当大的努力，不仅要获得对存储私钥的设备的访问权限，还要侵入你的设备，例如重新创建您的生物识别登录信息（指纹或面部）或设备 PIN 码。因此，通行密钥比传统方法安全得多。
 
-### 无论我使用什么浏览器，我是否都使用相同的通行密钥？还是取决于浏览器或设备，每个站点都需要不同的通行密钥？ <a href="#do-i-use-the-same-passkey-regardless-of-the-browser-im-on-or-will-each-site-require-a-different-pass" id="do-i-use-the-same-passkey-regardless-of-the-browser-im-on-or-will-each-site-require-a-different-pass"></a>
+### 谷歌最近宣布支持通行密钥。Bitwarden 宣布的事情和这个是一样的吗？ <a href="#google-recently-announced-passkey-support.-is-this-the-same-thing-that-bitwarden-is-announcing" id="google-recently-announced-passkey-support.-is-this-the-same-thing-that-bitwarden-is-announcing"></a>
 
-### 支持通行密钥的有哪些网站？ <a href="#what-are-some-examples-of-sites-that-support-passkeys" id="what-are-some-examples-of-sites-that-support-passkeys"></a>
+部分一样。Google 宣布已为其 Workspaces 账户添加了通行密钥验证支持，这意味着用户可以使用通行密钥而不是常规密码登录其 Google Workspace。同样，Bitwarden 用户也可以用通行密钥代替主密码访问自己的 Bitwarden 账户。
 
-### 通行密钥与无密码相同吗？ <a href="#are-passkeys-the-same-as-passwordless" id="are-passkeys-the-same-as-passwordless"></a>
+Bitwarden 还宣布，用户将能够保存、存储以及管理与他们在密码库中使用的网站和应用程序相关联的已注册通行密钥。因此，Google 现在可以在账户中使用通行密钥，而 Bitwarden 也可以在密码库中存储通行密钥。
 
-### 我将如何在 Bitwarden 中使用通行密钥？我还需要主密码吗？ <a href="#how-will-i-use-passkeys-with-bitwarden-do-i-still-need-a-master-password" id="how-will-i-use-passkeys-with-bitwarden-do-i-still-need-a-master-password"></a>
+### 无论使用何种浏览器，我都要使用相同的通行密钥吗？还是每个网站要根据浏览器或设备使用不同的通行密钥？ <a href="#do-i-use-the-same-passkey-regardless-of-the-browser-im-on-or-will-each-site-require-a-different-pass" id="do-i-use-the-same-passkey-regardless-of-the-browser-im-on-or-will-each-site-require-a-different-pass"></a>
 
-### 通行密钥可以跨平台使用吗？如果没不能，根据使用的平台使用不同的通行密钥是否有任何问题？ <a href="#can-passkeys-be-used-across-platforms-if-not-are-there-any-issues-with-having-different-passkeys-dep" id="can-passkeys-be-used-across-platforms-if-not-are-there-any-issues-with-having-different-passkeys-dep"></a>
+如果您使用 Bitwarden 来存储您的通行密钥，并且浏览器支持 Bitwarden 扩展（以及通行密钥的底层技术），您就可以使用相同的通行密钥访问您的账户，而无需创建新的通行密钥。如果您不将通行密钥存储在 Bitwarden 中，这将取决于浏览器与您的设备操作系统（通行密钥的存储位置）的集成程度。
+
+### 支持通行密钥的网站有哪些？ <a href="#what-are-some-examples-of-sites-that-support-passkeys" id="what-are-some-examples-of-sites-that-support-passkeys"></a>
+
+目前支持通行密钥的网站越来越多，包括 Best Buy、Cloudflare、eBay、Google、Kayak、PayPal 和 GitHub。[GitHub](https://github.com/passwordless/passkeys-index/blob/main/passkey-index.md) 上有一个来自社区的支持通行密钥的网站索引。
+
+### 通行密钥与无密码是一样的吗？ <a href="#are-passkeys-the-same-as-passwordless" id="are-passkeys-the-same-as-passwordless"></a>
+
+是的。由于通行密钥不需要密码，所以被认为是一种无密码的身份验证方法。请注意，与其他更容易被伪造的无密码身份验证方式相比，通行密钥一般更为安全。
+
+### 如何在 Bitwarden 中使用通行密钥？我还需要主密码吗？ <a href="#how-will-i-use-passkeys-with-bitwarden-do-i-still-need-a-master-password" id="how-will-i-use-passkeys-with-bitwarden-do-i-still-need-a-master-password"></a>
+
+到 2023 年秋季，用户将可以使用通行密钥访问自己的账户，而无需主密码。用户还可以在自己的密码库中存储和保护他们的通行密钥。
+
+### 通行密钥可以跨平台使用吗？如果不能，根据使用的平台使用不同的通行密钥是否有任何问题？ <a href="#can-passkeys-be-used-across-platforms-if-not-are-there-any-issues-with-having-different-passkeys-dep" id="can-passkeys-be-used-across-platforms-if-not-are-there-any-issues-with-having-different-passkeys-dep"></a>
+
+最初，通行密钥只能在创建通行密钥的设备上使用。接下来，同步通行密钥将通过支持存储通行密钥的密码管理器（如 Bitwarden）跨设备存储和管理。
 
 ### 如果我采用它，我是否会被锁定为只能使用通行密钥？ <a href="#will-i-be-locked-into-using-passkeys-if-i-adopt-it" id="will-i-be-locked-into-using-passkeys-if-i-adopt-it"></a>
 
+这取决于网站或账户。有些网站可能只提供通行密钥身份验证，而其他网站可能还会提供传统的用户名/密码身份验证、用户名/密码/2FA 身份验证。
+
 ### 可以与其他受信任的个人共享通行密钥吗？ <a href="#can-passkeys-be-shared-with-other-trusted-individuals" id="can-passkeys-be-shared-with-other-trusted-individuals"></a>
 
-### 是否支持，例如当我在使用通行密钥遇到问题时可以与实时聊天代表交谈？ <a href="#is-there-support-such-as-a-live-chat-representative-to-speak-with-if-im-having-trouble-with-my-passk" id="is-there-support-such-as-a-live-chat-representative-to-speak-with-if-im-having-trouble-with-my-passk"></a>
+这取决于平台。包括 Bitwarden 在内的一些平台将允许与受信任的个人共享通行密钥。
 
-### 如果我不想再使用我的通行密钥，我可以将其移除吗？ <a href="#if-i-no-longer-want-to-use-my-passkey-can-i-remove-it" id="if-i-no-longer-want-to-use-my-passkey-can-i-remove-it"></a>
+### 如果我在使用通行密钥时遇到困难，是否有支持服务，例如与代表实时聊天？ <a href="#is-there-support-such-as-a-live-chat-representative-to-speak-with-if-im-having-trouble-with-my-passk" id="is-there-support-such-as-a-live-chat-representative-to-speak-with-if-im-having-trouble-with-my-passk"></a>
+
+这将取决于网站。如果网站支持通行密钥身份验证，并且他们提供支持服务，他们将能够回答您有关该特定网站的通行密钥身份验证的问题。
+
+### 如果我不想再使用我的通行密钥了，我可以将其移除吗？ <a href="#if-i-no-longer-want-to-use-my-passkey-can-i-remove-it" id="if-i-no-longer-want-to-use-my-passkey-can-i-remove-it"></a>
+
+可以。执行此操作的方式与移除设备上的密码是一样的。

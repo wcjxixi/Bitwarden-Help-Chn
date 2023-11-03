@@ -45,7 +45,7 @@
     * [文件附件](your-vault/file-attachments.md)
     * [共享](organizations/sharing.md)
     * [通行密钥](password-manager/vault-basics/storing-passkeys.md)
-    * [=\*通行密钥常见问题](password-manager/vault-basics/passkeys-faq.md)
+    * [\*通行密钥常见问题](password-manager/vault-basics/passkeys-faq.md)
   * [密码库管理](password-manager/vault-administration/README.md)
     * [文件夹](your-vault/folders.md)
     * [收藏](your-vault/favorites.md)
