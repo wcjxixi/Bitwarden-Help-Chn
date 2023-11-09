@@ -17,7 +17,7 @@
 {% tabs %}
 {% tab title="直接导入" %}
 {% hint style="info" %}
-如果您是使用 LastPass SSO 的团队成员，LastPass 管理员将需要完成一个简短的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-your-data-from-lastpass.md#direct-import-with-sso)）。
+如果您是使用 LastPass SSO 的团队成员，LastPass 管理员需要先完成一个简单的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-your-data-from-lastpass.md#direct-import-with-sso)）。
 {% endhint %}
 
 可以使用 Password Manager 浏览器扩展和桌面应用程序从您的 LastPass 账户直接导入数据，而无需您上传文件。要进行直接导入：
