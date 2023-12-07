@@ -30,11 +30,11 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 * **关闭使用通行密钥提示的选项**：您现在可以选择浏览器扩展程序是否要求保存和使用通行密钥（参阅[这里](password-manager/vault-basics/storing-passkeys.md#turn-off-passkey-prompt)）。
 * **移动设备上的转发电子邮件支持**：转发电子邮件现在可以在移动应用程序上用作用户名生成器的转发电子邮件别名提供程序（参阅[这里](your-vault/username-password-generator.md#generate-a-username)）。
-* **密码库健康报告更新**：组织成员现在可以在个人密码库健康报告中看到自己拥有**可以编辑**权限的组织拥有的项目。
+* **密码库健康报告更新**：组织成员现在可以在个人密码库健康报告中看到自己拥有**可编辑**权限的组织拥有的项目。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **Elastic 集成**：Bitwarden 组织现在可以使用 Elastic 进行安全信息和事件管理 (SIEM)（参阅这里）。
+* **Elastic 集成**：Bitwarden 组织现在可以使用 Elastic 进行安全信息和事件管理 (SIEM)（参阅[这里](admin-console/reporting/elastic-siem.md)）。
 * **CLI 事件日志**：从 Web 应用程序查看的事件日志现在会指明哪些事件是由 Bitwarden CLI 记录的。
 
 ## 2023.10.0
