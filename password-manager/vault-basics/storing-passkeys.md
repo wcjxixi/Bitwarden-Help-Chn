@@ -1,4 +1,4 @@
-# 通行密钥
+# 存储通行密钥
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/storing-passkeys/)
@@ -82,6 +82,14 @@
 {% hint style="info" %}
 如果此登录项目启用了主密码重新提示，您将需要重新输入主密码才能访问通行密钥。
 {% endhint %}
+
+## 关闭通行密钥提示 <a href="#turn-off-passkey-prompt" id="turn-off-passkey-prompt"></a>
+
+如果您不想使用 Bitwarden 浏览器扩展程序提示您保存和使用特定站点的通行密钥，您可以设置排除的域。您还可以通过以下方式完全关闭提示：
+
+1. 导航至 **⚙️设置**选项卡。
+2. 选择**选项**。
+3. 取消选中**询问保存和使用通行密钥**选项。
 
 ## 通行密钥管理常见问题 <a href="#passkey-management-faq" id="passkey-management-faq"></a>
 
