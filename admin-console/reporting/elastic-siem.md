@@ -84,4 +84,4 @@ Elastic 设置
 
 #### 查询 <a href="#queries" id="queries"></a>
 
-弹性数据监控利用 Kibana 查询语言 (KQL) 来过滤数据。要了解有关查询和搜索的更多信息，请参阅 Elastic 查询文档。
+Elastic 数据监控利用 Kibana 查询语言 (KQL) 来过滤数据。要了解有关查询和搜索的更多信息，请参阅 [Elastic 查询文档](https://www.elastic.co/guide/en/kibana/current/kuery-query.html)。
