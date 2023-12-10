@@ -1,4 +1,4 @@
-# =欢迎电子邮件模板
+# 欢迎电子邮件模板
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/welcome-email-templates/)
@@ -28,7 +28,7 @@
 >
 > To get started, follow these steps:
 >
-> _\[Insert company-preferred_ [_onboarding workflow_](https://bitwarden.com/help/onboarding-workflows/)_]_
+> _\[_插入公司首选的[入职流程](onboarding-workflows.md)_]_
 >
 > Your administrator will help to make sure you have access to the correct shared password collections.
 >
@@ -44,7 +44,7 @@
 >
 > Thank you,
 >
-> _\[Sender's name and title]_
+> _\[发送者名称和标题]_
 
 ## 对于管理员：向管理员宣告 Bitwarden 的电子邮件 <a href="#to-admins-email-announcing-bitwarden-to-administrators" id="to-admins-email-announcing-bitwarden-to-administrators"></a>
 
@@ -68,7 +68,7 @@
 >
 > To get started, follow these steps:
 >
-> _\[Insert company-preferred_ [_onboarding workflow_](https://bitwarden.com/help/onboarding-workflows/)_]_
+> _\[_插入公司首选的[入职流程](onboarding-workflows.md)_]_
 >
 > Your administrator will help to make sure you have access to the correct shared password collections.
 >
@@ -84,4 +84,4 @@
 >
 > Thank you,
 >
-> _\[Sender's name and title]_
+> _\[发送者名称和标题]_
