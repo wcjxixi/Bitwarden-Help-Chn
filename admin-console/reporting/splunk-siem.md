@@ -96,7 +96,7 @@ Splunk 仪表板上的 Bitwarden
 设置 Bitwarden 菜单
 {% endembed %}
 
-3、保持此界面打开，在另一个选项卡上，访问您的 Bitwarden 网页密码库。打开您的组织并导航到**设置**、**组织信息**然后**查看 API 密钥**。您将被要求重新输入您的主密码以访问您的 API 密钥信息。
+3、保持此界面打开，在另一个选项卡上，访问您的 Bitwarden 网页密码库。打开您的组织，导航至**设置** → **组织信息** → **查看 API 密钥**。系统会要求您重新输入主密码，以访问 API 密钥信息。
 
 {% embed url="https://bitwarden.com/_gatsby/image/315d5b501b7ed05fa4559a26973023cc/cd1cb57dd86ba6f41cae5995f3e3dd6f/API%20key.webp?eu=8a8d58b3e09bfcd30960a2806b27646db43b5efdad0762d83d67b5ae4aac9a802ca5185628c079b37f3f52d682e342e96fc770611aebd0d8c9bc1da1e233ae5905d00fee32b12103057ac5fde1f6534669901000e5c7884ba9726d8db8e2e0255a4e4f6ffe2bfbc2b9ed767aeed66b2dedf4f87d2398aa2ee84f1953d41e26843ecad99f644bafbaea198a868aaf589adf955618138ff2302726441f0cbe78bca6e100713f20155f30c7ac0bcf62c2b035193524412e638e0861851ce52c6f94&a=w%3D400%26h%3D397%26fm%3Dwebp%26q%3D75&cd=2023-04-26T11%3A56%3A43.429Z" %}
 组织 api 信息

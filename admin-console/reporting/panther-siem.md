@@ -1,4 +1,4 @@
-# =Panther SIEM
+# Panther SIEM
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/panther-siem/)
@@ -46,7 +46,7 @@ Panther SIEM 服务仅适用于 Bitwarden 云托管组织。
 
 1、输入集成的名称，然后选择 **Setup**。
 
-2、接下来，您必须访问 Bitwarden 组织的**客户端 ID** 和**客户端密钥**。保持此界面打开，在另一个选项卡上访问您的 Bitwarden 网络密码库。打开您的组织然后导航到**设置**、**组织信息**然后**查看 API 密钥**。系统将要求您重新输入主密码才能访问您的 API 密钥信息。
+2、接下来，您必须访问 Bitwarden 组织的**客户端 ID** 和**客户端密钥**。保持此界面打开，在另一个选项卡上访问您的 Bitwarden 网络密码库。打开您的组织，导航至**设置** → **组织信息** → **查看 API 密钥**。系统会要求您重新输入主密码，以访问 API 密钥信息。
 
 {% embed url="https://bitwarden.com/_gatsby/image/315d5b501b7ed05fa4559a26973023cc/cd1cb57dd86ba6f41cae5995f3e3dd6f/API%20key.webp?eu=de8957efe69afd805b68a8826124646ab23b50a2fd5835d6686db6aa47fe988f70a11d5472c47de3286f53d780b640bd67947d341fecd5df96bd10f0ee63ac09558053e633e124515b7380baf0b60c5a779f4709f6d68b16f0292485a6f0e2345a4e427eec65bfc3b2fa733eb1d5276fadb1b92832baf109a95309018a6c2bfa01dbf4d86249adbccb00bcb2efac0c9c94e7795415dcf06626774a160de928b2a6e10c726d2f495e61c9b029a718f9ed69557f630008&a=w%3D400%26h%3D397%26fm%3Dwebp%26q%3D75&cd=2023-12-06T13%3A28%3A13.496Z" %}
 组织 API 信息

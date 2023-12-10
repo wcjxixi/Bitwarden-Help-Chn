@@ -196,7 +196,7 @@
     * [事件日志](admin-console/reporting/event-logs.md)
     * [Splunk SIEM](admin-console/reporting/splunk-siem.md)
     * [Panther SIEM](admin-console/reporting/panther-siem.md)
-    * [=Elastic SIEM](admin-console/reporting/elastic-siem.md)
+    * [Elastic SIEM](admin-console/reporting/elastic-siem.md)
   * [=最终用户入职](admin-console/end-user-onboarding/README.md)
     * [=欢迎电子邮件模板](admin-console/end-user-onboarding/welcome-email-templates.md)
     * [=管理团队入职电子邮件](admin-console/end-user-onboarding/admin-team-onboarding-emails.md)
