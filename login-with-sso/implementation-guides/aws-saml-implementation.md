@@ -58,7 +58,7 @@ AWS SSO 元数据
 
 ### 应用程序属性 <a href="#application-properties" id="application-properties"></a>
 
-在 **Application start URL** 字段中，指定用户将从其访问 Bitwarden 的登录 URL。对于托管云的客户，此地址始终为 `https://vault.bitwarden.com/#/sso`。对于自托管实例，这取决于您[配置的服务器 URL](../../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md#configure-your-domain)，例如为 `https://your.domain/#/sso`。
+在 **Application start URL** 字段中，指定用户将从其访问 Bitwarden 的登录 URL。对于托管云的客户，此地址始终为 `https://vault.bitwarden.com/#/sso`。对于自托管实例，这取决于您[配置的服务器 URL](../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain)，例如为 `https://your.domain/#/sso`。
 
 ### 应用程序元数据 <a href="#application-metadata" id="application-metadata"></a>
 
@@ -70,10 +70,10 @@ AWS SSO 元数据
 
 配置以下字段：
 
-| 字段                        | 描述                                                                                                                                                                                                                                                                                                                                                                                              |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Application ACS URL       | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。</p><p></p><p>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2/your-org-id/Acs</code>。对于自托管实例，这由您<a href="../../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2/your-org-id/Acs</code>。</p> |
-| Application SAML audience | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>SP Entity ID</strong>。</p><p></p><p>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2</code>。对于自托管实例，这由您<a href="../../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2</code>。</p>                                                         |
+| 字段                        | 描述                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Application ACS URL       | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。</p><p></p><p>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2/your-org-id/Acs</code>。对于自托管实例，这由您<a href="../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2/your-org-id/Acs</code>。</p> |
+| Application SAML audience | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>SP Entity ID</strong>。</p><p></p><p>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2</code>。对于自托管实例，这由您<a href="../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2</code>。</p>                                                         |
 
 完成后，选择 **Save changes**。
 

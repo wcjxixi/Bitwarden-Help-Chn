@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/certificates/)
 {% endhint %}
 
-本文定义了可用于 Bitwarden 的自托管实例的证书选项。您需要在安装过程中选择您的证书选项。有关安装说明，请参阅[本地安装和部署](install-and-deploy-guides/install-and-deploy-linux.md)。
+本文定义了可用于 Bitwarden 的自托管实例的证书选项。您需要在安装过程中选择您的证书选项。有关安装说明，请参阅[本地安装和部署](install-and-deploy-guides/docker/linux-standard-deployment.md)。
 
 ## 使用 Let’s Encrypt 生成证书 <a href="#generate-a-certificate-with-lets-encrypt" id="generate-a-certificate-with-lets-encrypt"></a>
 

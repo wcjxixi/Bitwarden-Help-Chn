@@ -10,7 +10,7 @@
 
 Bitwarden 的 Docker 容器使用卷映射来持久化主机上的所有重要数据，这意味着停止你的容器不会删除任何数据。另一方面，Docker 容器要被认为是短暂的，不持久化数据或状态。
 
-所有的 Bitwarden 数据都存储在主机上相对于你安装 Bitwarden 的位置的 `./bwdata` 目录中。更多信息，请参阅[安装和部署](install-and-deploy-guides/install-and-deploy-linux.md)。
+所有的 Bitwarden 数据都存储在主机上相对于你安装 Bitwarden 的位置的 `./bwdata` 目录中。更多信息，请参阅[安装和部署](install-and-deploy-guides/docker/linux-standard-deployment.md)。
 
 ## 备份托管数据 <a href="#backup-hosted-data" id="backup-hosted-data"></a>
 

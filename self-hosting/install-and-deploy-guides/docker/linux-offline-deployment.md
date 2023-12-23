@@ -1,4 +1,4 @@
-# 安装和部署-离线 (Linux)
+# Linux 离线部署
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-offline/)
@@ -92,7 +92,7 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 要使用 Bitwarden 服务器所需的资产配置您的机器：
 
 {% hint style="success" %}
-如果您[已创建 Bitwarden 用户和目录](install-and-deploy-offline.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。
+如果您[已创建 Bitwarden 用户和目录](linux-offline-deployment.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。
 {% endhint %}
 
 1、创建一个名为 `bwdata` 的新目录，并将 `docker-stub.zip` 解压到其中，例如：
@@ -115,9 +115,9 @@ unzip docker-stub.zip -d bwdata
 * `globalSettings__installation__key=`：输入从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装密钥。
 
 {% hint style="success" %}
-此时，还要考虑为所有 `globalSettings__mail__smtp__` 变量和 `adminSettings__admins` 设置值。这样做将配置用于向新组织成员发送邀请的 SMTP 邮件服务器，并提供对[系统管理员门户](../system-administrator-portal.md)的访问权限。
+此时，还要考虑为所有 `globalSettings__mail__smtp__` 变量和 `adminSettings__admins` 设置值。这样做将配置用于向新组织成员发送邀请的 SMTP 邮件服务器，并提供对[系统管理员门户](../../system-administrator-portal.md)的访问权限。
 
-[了解有关环境变量的更多信息](../configure-environment-variables.md)。
+[了解有关环境变量的更多信息](../../configure-environment-variables.md)。
 {% endhint %}
 
 3、从 `./bwdata` 为身份容器生成一个 `.pfx` 证书文件并将其移动到已映射的卷目录（默认为 `./bwdata/identity/`）。例如，运行以下命令：
@@ -205,11 +205,11 @@ docker ps
 
 恭喜！ Bitwarden 现已启动并运行在 `https://your.domain.com` 了。在您的浏览器中访问网络密码库以确认其正常工作。
 
-您现在可以注册一个新帐户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../configure-environment-variables.md)）以验证您的新帐户的电子邮件。
+您现在可以注册一个新帐户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../../configure-environment-variables.md)）以验证您的新帐户的电子邮件。
 
 ## 更新您的服务器 <a href="#update-your-server" id="update-your-server"></a>
 
-更新已手动安装和部署的自托管服务器与[标准更新过程](../update-your-instance.md)有所不同。要更新您手动安装的服务器：
+更新已手动安装和部署的自托管服务器与[标准更新过程](../../update-your-instance.md)有所不同。要更新您手动安装的服务器：
 
 1. 从 [GitHub 发行页面](https://github.com/bitwarden/server/releases)下载最新的 `docker-stub.zip` 存档。
 2. 将此新的 `docker-stub.zip` 存档解压缩并将其内容与当前 `bwdata` 目录中的内容进行比较，将任何新内容复制到 `bwdata` 中预先存在的文件中。\

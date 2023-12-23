@@ -15,7 +15,7 @@
 3. Bitwarden **不存储您的密码**。Bitwarden 存储的是您的密码的加密版本，只有您才能解锁。您的敏感信息在被发送到我们的云服务器之前，会在您的个人设备上进行本地加密。
 4. **Bitwarden 的声誉很好**。Bitwarden 被数百万个人和企业使用。如果我们做任何有问题或有风险的事情，我们就会被淘汰！
 
-还是不相信我们吗？不必这样。开源是美丽的。您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由你自己控制。在[这里](../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md)了解更多。
+还是不相信我们吗？不必这样。开源是美丽的。您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由你自己控制。在[这里](../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)了解更多。
 
 ### 问：如果 Bitwarden 被黑会怎么样？ <a href="#q-what-happens-if-bitwarden-gets-hacked" id="q-what-happens-if-bitwarden-gets-hacked"></a>
 

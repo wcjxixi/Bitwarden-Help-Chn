@@ -92,7 +92,7 @@ globalSettings__mail__smtp__password=<valid-gmail-password>
 
 ### 问：如何将 Bitwarden 添加到系统启动中？ <a href="#q-how-do-i-add-bitwarden-to-system-boot" id="q-how-do-i-add-bitwarden-to-system-boot"></a>
 
-**答：**在将 Bitwarden 添加到系统启动之前，请先完成 [Docker 后安装](install-and-deploy-guides/install-and-deploy-linux.md#docker-post-installation-linux-only)以设置 bitwarden 专用服务帐户。&#x20;
+**答：**在将 Bitwarden 添加到系统启动之前，请先完成 [Docker 后安装](install-and-deploy-guides/docker/linux-standard-deployment.md#docker-post-installation-linux-only)以设置 bitwarden 专用服务帐户。&#x20;
 
 然后，完成以下步骤：
 

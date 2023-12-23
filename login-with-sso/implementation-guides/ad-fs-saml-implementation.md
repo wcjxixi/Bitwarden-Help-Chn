@@ -43,13 +43,13 @@ SAML 2.0 配置
 4、在 Configure URL（配置 URL）界面，选择 **Enable support for SAML 2.0 WebSSO protocol**。
 
 * 在 **Relying party SAML 2.0 SSO service URL** 输入框中，输入从 Bitwarden SSO 配置界面获取到的断言消费者服务（ACS）URL。\
-  对于云托管客户，其始终为 `https://sso.bitwarden.com/saml2/your-org-id/Acs`；对于自托管实例，这取决于您[已配置的服务器 URL](../../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md#configure-your-domain)，例如 `https://your.domain.com/sso/saml2/your-org-id/Acs`。
+  对于云托管客户，其始终为 `https://sso.bitwarden.com/saml2/your-org-id/Acs`；对于自托管实例，这取决于您[已配置的服务器 URL](../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain)，例如 `https://your.domain.com/sso/saml2/your-org-id/Acs`。
 
 5、在 **Choose Access Control Policy** 界面，选择
 
 6、在 **Configure Identifiers** 界面，添加 SP 实体 ID（从 Bitwarden SSO 配置界面获取）作为依赖方信任标识符。
 
-对于云托管客户，其始终为 `https://sso.bitwarden.com/saml2`；对于自托管实例，这取决于您[已配置的服务器 URL](../../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md#configure-your-domain)，例如 `https://your.domain.com/sso/saml2`。
+对于云托管客户，其始终为 `https://sso.bitwarden.com/saml2`；对于自托管实例，这取决于您[已配置的服务器 URL](../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain)，例如 `https://your.domain.com/sso/saml2`。
 
 7、在 **Choose Access Control Policy** 界面，选择所需的策略（默认为 **Permit Everyone**）。
 

@@ -115,5 +115,5 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 3. 从您的云托管组织[获取新的许可证文件](../../self-hosting/licensing-for-paid-features.md#retrieve-organization-license)，然后[将其上传到您的自托管服务器](../../self-hosting/licensing-for-paid-features.md#update-organization-license)。
 
 {% hint style="info" %}
-Bitwarden [统一自托管部署选项](../../self-hosting/install-and-deploy-guides/install-and-deploy-unified-beta.md)不支持自托管 Secrets Manager。团队和企业组织应使用标准的 [Linux](../../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md) 或 [Windows](../../self-hosting/install-and-deploy-guides/install-and-deploy-windows.md) 安装。
+Bitwarden [统一自托管部署选项](../../self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md)不支持自托管 Secrets Manager。团队和企业组织应使用标准的 [Linux](../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md) 或 [Windows](../../self-hosting/install-and-deploy-guides/docker/windows-standard-deployment.md) 安装。
 {% endhint %}

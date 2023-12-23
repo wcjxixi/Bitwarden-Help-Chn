@@ -18,7 +18,7 @@ Bitwarden 将所有数据安全地处理和存储在位于美国的 [Microsoft A
 
 Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。 Bitwarden 为此目的利用的功能不涉及创建或存储 BACPAC 或其他可移动备份文件，而是允许通过反向处理事务日志进行灾难恢复以使数据库与选定的时间点保持一致（请参阅 [Microsoft文档](https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-automated-backups-overview?view=azuresql)）。Bitwarden 为 PITR 配置了严格的 7 天保留策略和不长期保留策略。此功能**仅用于灾难恢复目的**，用户和组织负责创建和安全地存储他们自己的密码库数据的备份。Blob 存储的数据，特别是附件和 Send 文件，不受 PITR 功能的约束，一旦从 Bitwarden 中删除就无法恢复。
 
-不信任 Bitwarden 服务器吗？不必这样。开源是美丽的，您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由你自己控制。在[这里](../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md)了解更多。
+不信任 Bitwarden 服务器吗？不必这样。开源是美丽的，您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由你自己控制。在[这里](../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)了解更多。
 
 ## 在您的本地机器上 <a href="#on-your-local-machine" id="on-your-local-machine"></a>
 

@@ -8,8 +8,8 @@
 
 在您可以自托管组织之前，您需要安装和部署 Bitwarden 到您的服务器。Bitwarden 可以在 Linux 和 Windows 机器上使用 Docker 运行。虽然有多种安装 Bitwarden 的方式，包括用于离线或气隙环境的方式，但我们建议从以下指南之一开始：
 
-* [安装和部署 - Linux](install-and-deploy-guides/install-and-deploy-linux.md)
-* [安装和部署 - Windows](install-and-deploy-guides/install-and-deploy-windows.md)
+* [安装和部署 - Linux](install-and-deploy-guides/docker/linux-standard-deployment.md)
+* [安装和部署 - Windows](install-and-deploy-guides/docker/windows-standard-deployment.md)
 
 ## 第 2 步：配置组织环境变量 <a href="#step-2-configure-organization-environment-variables" id="step-2-configure-organization-environment-variables"></a>
 

@@ -10,12 +10,12 @@
 {% tab title="云端到自托管" %}
 要从云端迁移到自托管服务器：
 
-1、将 Bitwarden [安装和部署](install-and-deploy-guides/install-and-deploy-linux.md)到您的服务器上。此过程大概涉及到：
+1、将 Bitwarden [安装和部署](install-and-deploy-guides/docker/linux-standard-deployment.md)到您的服务器上。此过程大概涉及到：
 
-1. 为 Bitwarden [配置一个域名](install-and-deploy-guides/install-and-deploy-linux.md#configure-your-domain)。
-2. [安装 Docker 和 Docker Compose](install-and-deploy-guides/install-and-deploy-linux.md#install-docker-and-docker-compose)。
-3. 运行[安装 Shell 脚本](install-and-deploy-guides/install-and-deploy-linux.md#install-bitwarden)。
-4. [配置您的环境](install-and-deploy-guides/install-and-deploy-linux.md#configure-your-environment)以设置管理门户、SMTP 服务器连接等。
+1. 为 Bitwarden [配置一个域名](install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain)。
+2. [安装 Docker 和 Docker Compose](install-and-deploy-guides/docker/linux-standard-deployment.md#install-docker-and-docker-compose)。
+3. 运行[安装 Shell 脚本](install-and-deploy-guides/docker/linux-standard-deployment.md#install-bitwarden)。
+4. [配置您的环境](install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-environment)以设置管理门户、SMTP 服务器连接等。
 
 2、运行 `./bitwarden.sh start` 启动服务器。
 
@@ -93,7 +93,7 @@
 
 2、制作旧服务器的 `./bwdata` 目录的完整副本。此副本将用于在新服务器上重新创建您的配置、数据库、附件等。
 
-3、[安装并部署](install-and-deploy-guides/install-and-deploy-linux.md) Bitwarden 到您的新服务器上。
+3、[安装并部署](install-and-deploy-guides/docker/linux-standard-deployment.md) Bitwarden 到您的新服务器上。
 
 4、新的 Bitwarden 服务器设置好后，将新创建的 `./bwdata` 目录替换为旧服务器的副本。
 

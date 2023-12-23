@@ -1,4 +1,4 @@
-# 安装和部署-Unified (Beta)
+# Unified 部署 (Beta)
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-unified-beta/)
@@ -7,7 +7,7 @@
 {% hint style="danger" %}
 这是一个测试版，这意味着此部署选项可能不稳定并存在问题。如果您管理 Bitwarden 组织密码库，我们建议使用官方支持的标准部署选项。
 
-[了解如何报告问题](install-and-deploy-unified-beta.md#reporting-issues)。
+[了解如何报告问题](unified-deployment-beta.md#reporting-issues)。
 {% endhint %}
 
 本文将引导您安装和启动 Bitwarden Unified 自托管部署。使用此部署方法可以：
@@ -34,11 +34,11 @@ Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)在您
 
 ## 运行 Bitwarden Unified <a href="#run-bitwarden-unified" id="run-bitwarden-unified"></a>
 
-可以使用 `docker run` 命令（参见[此处](install-and-deploy-unified-beta.md#using-docker-run)）或使用 Docker Compose（参见[此处](install-and-deploy-unified-beta.md#using-docker-compose)）运行 Unified 部署。无论哪种方式，您都需要为容器指定环境变量。
+可以使用 `docker run` 命令（参见[此处](unified-deployment-beta.md#using-docker-run)）或使用 Docker Compose（参见[此处](unified-deployment-beta.md#using-docker-compose)）运行 Unified 部署。无论哪种方式，您都需要为容器指定环境变量。
 
 ### 指定环境变量 <a href="#specify-environment-variables" id="specify-environment-variables"></a>
 
-运行 Unified 部署需要为容器设置环境变量。可以通过创建一个 `settings.env` 文件来指定环境变量，您可以在我们的 [GitHub 存储库](https://github.com/bitwarden/server/blob/master/docker-unified/settings.env)中找到该文件的示例，或者如果您使用的是 `docker run` 方式，则可以使用 `--env` 标志来指定。一系列可选的变量可用于更个性化 Unified 部署体验。有关这些变量的更多详细信息，请参阅[此处](install-and-deploy-unified-beta.md#environment-variables)。
+运行 Unified 部署需要为容器设置环境变量。可以通过创建一个 `settings.env` 文件来指定环境变量，您可以在我们的 [GitHub 存储库](https://github.com/bitwarden/server/blob/master/docker-unified/settings.env)中找到该文件的示例，或者如果您使用的是 `docker run` 方式，则可以使用 `--env` 标志来指定。一系列可选的变量可用于更个性化 Unified 部署体验。有关这些变量的更多详细信息，请参阅[此处](unified-deployment-beta.md#environment-variables)。
 
 至少为示例 `.env` 文件的 `# Required Settings #` 部分下的变量设置值：
 
@@ -54,7 +54,7 @@ Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)在您
 | BW\_INSTALLATION\_KEY | 从 [https://bitwarden.com/host/](https://bitwarden.com/host/) 生成的有效安装密钥。         |
 
 {% hint style="info" %}
-与 Bitwarden 标准部署不同，Unified 部署使用的数据库并不是开箱即用的。您可以使用现有数据库，也可以创建一个新数据库，如[本示例中](install-and-deploy-unified-beta.md#using-docker-compose)所述，在这两种情况下，您都必须在本文档记录的 `BW_DB_...` 变量中输入有效的信息。
+与 Bitwarden 标准部署不同，Unified 部署使用的数据库并不是开箱即用的。您可以使用现有数据库，也可以创建一个新数据库，如[本示例中](unified-deployment-beta.md#using-docker-compose)所述，在这两种情况下，您都必须在本文档记录的 `BW_DB_...` 变量中输入有效的信息。
 
 使用非 MSSQL 数据库提供程序可能会导致性能问题，对这些平台的支持将在整个测试版中继续进行。请使用[此问题模板](https://github.com/bitwarden/server/issues/new?assignees=\&labels=bug%2Cbw-unified-deploy\&template=bw-unified.yml)报告与您的 Bitwarden Unified 部署相关的任何内容，并查看[此页面](https://github.com/bitwarden/server/issues/2480)以跟踪已知问题或加入讨论。
 {% endhint %}
@@ -69,13 +69,13 @@ docker run -d --name bitwarden -v ./bwdata/:/etc/bitwarden -p 80:80  --env-file 
 
 上面的命令有一系列 `docker run` 命令必需的选项，包括：
 
-| 名称，缩写          | 描述                                                                                                                                                                                                                                |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| --detach , -d  | 在后台运行容器并输出容器 ID。                                                                                                                                                                                                                  |
-| --name         | 为容器提供一个名称。该示例中使用的是 `bitwarden`。                                                                                                                                                                                                   |
-| --volume , -v  | 绑定挂载卷。至少挂载 `/etc/bitwarden`。                                                                                                                                                                                                      |
-| --publish , -p | 将容器端口映射到主机。该示例显示映射了 `80` 端口。配置 SSL 时需要使用 `443` 端口。                                                                                                                                                                                |
-| --env-file     | [要从中读取环境变量的文件](install-and-deploy-unified-beta.md#specify-environment-variables)的路径。或者，在同一行中使用 `--env` 标志声明环境变量（[了解更多](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file)）。 |
+| 名称，缩写          | 描述                                                                                                                                                                                                                        |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --detach , -d  | 在后台运行容器并输出容器 ID。                                                                                                                                                                                                          |
+| --name         | 为容器提供一个名称。该示例中使用的是 `bitwarden`。                                                                                                                                                                                           |
+| --volume , -v  | 绑定挂载卷。至少挂载 `/etc/bitwarden`。                                                                                                                                                                                              |
+| --publish , -p | 将容器端口映射到主机。该示例显示映射了 `80` 端口。配置 SSL 时需要使用 `443` 端口。                                                                                                                                                                        |
+| --env-file     | [要从中读取环境变量的文件](unified-deployment-beta.md#specify-environment-variables)的路径。或者，在同一行中使用 `--env` 标志声明环境变量（[了解更多](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file)）。 |
 
 运行此命令后，验证容器是否正在运行且运行状况良好：
 
@@ -207,7 +207,7 @@ docker compose ps
 默认情况下，Unified 部署可以在不具备一些列标准 Bitwarden 服务的情况下运行。这允许增加 Unified 部署的定制和优化。通过编辑各种环境变量来配置这些服务和更多可选设置。
 
 {% hint style="info" %}
-每当您更改环境变量后，都需要重新创建 Docker 容器。在[这里](install-and-deploy-unified-beta.md#restart-the-container)了解更多。
+每当您更改环境变量后，都需要重新创建 Docker 容器。在[这里](unified-deployment-beta.md#restart-the-container)了解更多。
 {% endhint %}
 
 #### Webserver 端口 <a href="#webserver-ports" id="webserver-ports"></a>
@@ -219,13 +219,13 @@ docker compose ps
 
 #### SSL
 
-使用这些值更改证书设置。有关更多信息，请参阅[证书选项](../certificate-options.md)。
+使用这些值更改证书设置。有关更多信息，请参阅[证书选项](../../certificate-options.md)。
 
 | 变量                  | 描述                                                                                                                                                                            |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BW\_ENABLE\_SSL     | <p>使用 SSL/TLS。<code>true</code>/<code>false</code>。默认为 <code>false</code>。</p><p></p><p>Bitwarden 需要 SSL 才能正常运行。如果您没有使用在 Bitwarden 容器中配置的 SSL，您应该在 Bitwarden 前面使用 SSL 代理。</p> |
-| BW\_SSL\_CERT       | SSL 证书文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.crt`。 如果您希望使用现有证书，在[此处](../certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。                               |
-| BW\_SSL\_KEY        | SSL 密钥文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.key`。 如果您希望使用现有证书，在[此处](../certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。                               |
+| BW\_SSL\_CERT       | SSL 证书文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.crt`。 如果您希望使用现有证书，在[此处](../../certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。                            |
+| BW\_SSL\_KEY        | SSL 密钥文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.key`。 如果您希望使用现有证书，在[此处](../../certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。                            |
 | BW\_ENABLE\_SSL\_CA | 使用具有证书颁发机构 (CA) 支持服务 的 SSL。`true`/`false`。默认为 `false`。                                                                                                                        |
 | BW\_SSL\_CA\_CERT   | SSL CA 证书的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ca.crt`。                                                                                                                   |
 | BW\_ENABLE\_SSL\_DH | 使用具有Diffie-Hellman 密钥交换的 SSL。`true`/`false`。默认为 `false`。                                                                                                                      |
@@ -239,17 +239,17 @@ docker compose ps
 
 | 变量                                | 描述                                                                                                                                                 |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BW\_ENABLE\_ADMIN                 | <p><strong>不要禁用此服务</strong>。</p><p>在<a href="../system-administrator-portal.md">此处</a>了解有关管理面板功能的更多信息。默认为 <code>true</code>。</p>                   |
+| BW\_ENABLE\_ADMIN                 | <p><strong>不要禁用此服务</strong>。</p><p>在<a href="../../system-administrator-portal.md">此处</a>了解有关管理面板功能的更多信息。默认为 <code>true</code>。</p>                |
 | BW\_ENABLE\_API                   | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
 | BW\_ENABLE\_EVENTS                | 为团队和企业事件监控启用或禁用 Bitwarden 事件日志。默认为 `false`。                                                                                                        |
-| BW\_ENABLE\_ICONS                 | 启用或禁用登录项目 URI 设置的 Bitwarden 品牌图标。在[此处](../../security/privacy-when-using-website-icons.md)了解更多。默认为 `true`。                                         |
+| BW\_ENABLE\_ICONS                 | 启用或禁用登录项目 URI 设置的 Bitwarden 品牌图标。在[此处](../../../security/privacy-when-using-website-icons.md)了解更多。默认为 `true`。                                      |
 | BW\_ENABLE\_IDENTITY              | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
 | BW\_ENABLE\_NOTIFICATIONS         | 当使用设备登录、移动端密码库同步等时，启用或禁用用于接收移动设备推送通知的通知服务。默认为 `true`。                                                                                              |
 | BW\_ENABLE\_SCIM                  | 为企业组织启用或禁用 SCIM。默认为 `false`。                                                                                                                       |
 | BW\_ENABLE\_SSO                   | 为企业组织启用或禁用 SSO 服务。默认为 `false`。                                                                                                                     |
 | BW\_ICONS\_PROXY\_TO\_CLOUD       | <p>启用此服务将代理图标服务请求以通过云服务进行操作，以降低系统内存负载。</p><p>如果选择使用此设置，则应将 <code>BW_ENABLE_ICONS</code> 设置为 <code>false</code> 以减少容器负载。默认为 <code>false</code>。</p> |
-| BW\_ENABLE\_KEY\_CONNECTOR        | 设置为 `true` 以启用 [Key Connector](../../login-with-sso/about-key-connector.md)。                                                                       |
-| BW\_KEY\_CONNECTOR\_INTERNAL\_URL | [Key Connector](../../login-with-sso/about-key-connector.md) 使用的内部 URL。                                                                            |
+| BW\_ENABLE\_KEY\_CONNECTOR        | 设置为 `true` 以启用 [Key Connector](../../../login-with-sso/about-key-connector.md)。                                                                    |
+| BW\_KEY\_CONNECTOR\_INTERNAL\_URL | [Key Connector](../../../login-with-sso/about-key-connector.md) 使用的内部 URL。                                                                         |
 
 #### 电子邮件 <a href="#mail" id="mail"></a>
 
@@ -355,6 +355,6 @@ services:
 
 有关 Bitwarden 标准自托管部署的更多信息，请参阅：
 
-* [安装和部署 - Linux](install-and-deploy-linux.md)
-* [安装和部署 - Windows](install-and-deploy-windows.md)
-* [安装和部署 - 手动](install-and-deploy-manually.md)
+* [安装和部署 - Linux](linux-standard-deployment.md)
+* [安装和部署 - Windows](windows-standard-deployment.md)
+* [安装和部署 - 手动](linux-standard-deployment-1.md)

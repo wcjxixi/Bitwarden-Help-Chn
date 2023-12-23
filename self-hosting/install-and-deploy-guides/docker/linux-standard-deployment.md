@@ -1,10 +1,10 @@
-# 安装和部署-Linux
+# Linux 标准部署
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/install-on-premise-linux/)
 {% endhint %}
 
-这篇文章将引导你完成安装和部署 Bitwarden 到你自己的 Linux 服务器上的过程。Bitwarden 也可以安装和部署在 [Windows](install-and-deploy-windows.md) 机器上。
+这篇文章将引导你完成安装和部署 Bitwarden 到你自己的 Linux 服务器上的过程。Bitwarden 也可以安装和部署在 [Windows](windows-standard-deployment.md) 机器上。
 
 ## 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
 
@@ -18,25 +18,25 @@
 
 > **\[译者注]**：TL;DL - Too long; Don't read，直译为「太长，请不要看」，实际意思为「此文篇幅较长，看此总结」，一般用在比较长篇幅的内容前面，后面跟着一段简短的总结内容。
 
-以下是本文中[安装步骤](install-and-deploy-linux.md#installation-procedure)的摘要。本节中的链接将跳转至详细的**安装步骤**部分：
+以下是本文中[安装步骤](linux-standard-deployment.md#installation-procedure)的摘要。本节中的链接将跳转至详细的**安装步骤**部分：
 
-1、[**配置您的域名**](install-and-deploy-linux.md#configure-your-domain)。设置你的域名 DNS 记录指向你的主机，并打开主机上的 80 和 443 端口。
+1、[**配置您的域名**](linux-standard-deployment.md#configure-your-domain)。设置你的域名 DNS 记录指向你的主机，并打开主机上的 80 和 443 端口。
 
-2、在您的主机上[**安装 Docker 和 Docker Compose**](install-and-deploy-linux.md#install-docker-and-docker-compose)。
+2、在您的主机上[**安装 Docker 和 Docker Compose**](linux-standard-deployment.md#install-docker-and-docker-compose)。
 
-3、[**创建一个 Bitwarden 用户和目录**](install-and-deploy-linux.md#create-bitwarden-local-user-and-directory)。
+3、[**创建一个 Bitwarden 用户和目录**](linux-standard-deployment.md#create-bitwarden-local-user-and-directory)。
 
-4、从 [**https://bitwarden.com/host**](https://bitwarden.com/host) 获取安装 ID 和密钥用于安装过程。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)。
+4、从 [**https://bitwarden.com/host**](https://bitwarden.com/host) 获取安装 ID 和密钥用于安装过程。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)。
 
-5、在你机器上[**安装 Bitwarden**](install-and-deploy-linux.md#install-bitwarden)。
+5、在你机器上[**安装 Bitwarden**](linux-standard-deployment.md#install-bitwarden)。
 
-6、在 `./bwdata/env/global.override.env` 中调整设置以[**配置您的环境**](install-and-deploy-linux.md#post-install-configuration)。
+6、在 `./bwdata/env/global.override.env` 中调整设置以[**配置您的环境**](linux-standard-deployment.md#post-install-configuration)。
 
 {% hint style="success" %}
 至少要配置 `globalSettings__mail__smtp...` 变量以设置用于邀请和验证用户的电子邮件服务器。
 {% endhint %}
 
-7、[**启动您的实例**](install-and-deploy-linux.md#start-bitwarden)。
+7、[**启动您的实例**](linux-standard-deployment.md#start-bitwarden)。
 
 8、在网页浏览器中打开您配置的域名来测试您的安装。
 
@@ -112,7 +112,7 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 Bitwarden 提供了一个 Shell 脚本，可以轻松地在 Linux 和 macOS（Bash）或 Windows（PowerShell）上安装。完成以下步骤以使用 shell 脚本安装 Bitwarden：
 
 {% hint style="success" %}
-如果您[已经创建 Bitwarden 用户和目录](install-and-deploy-linux.md#chuang-jian-bitwarden-ben-di-yong-hu-he-mu-lu)，请从 `/opt/bitwarden` 目录中以 `bitwarden` 用户身份进行操作。
+如果您[已经创建 Bitwarden 用户和目录](linux-standard-deployment.md#chuang-jian-bitwarden-ben-di-yong-hu-he-mu-lu)，请从 `/opt/bitwarden` 目录中以 `bitwarden` 用户身份进行操作。
 {% endhint %}
 
 1、将 Bitwarden 安装脚本（`bitwarden.sh`）下载到您主机上：
@@ -132,20 +132,20 @@ curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platfor
 * **Enter the domain name for your Bitwarden instance（输入您的 Bitwarden 实例的域名）:**\
   通常，此值应该是已配置的 DNS 记录。
 *   **Do you want to use Let's Encrypt to generate a free SSL certificate? (y/n)（您想使用 Let's Encrypt 生成免费的 SSL 证书吗？）:**\
-    指定 `y` 来使用 Let's Encrypt 生成一个可信的 SSL 证书。你会被提示输入一个电子邮件地址，以便从 Let's Encrypt 获取到期提醒。更多信息，请参阅[证书选项](../certificate-options.md)。
+    指定 `y` 来使用 Let's Encrypt 生成一个可信的 SSL 证书。你会被提示输入一个电子邮件地址，以便从 Let's Encrypt 获取到期提醒。更多信息，请参阅[证书选项](../../certificate-options.md)。
 
     或者，指定 `n` 并使用 **Do you have a SSL certificate to use?** 选项。
 * **Enter your installation id（输入您的安装 ID）:**\
-  通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装 ID。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
+  通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装 ID。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
 *   **Enter your installation key（输入您的安装密钥）:**
 
-    通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装密钥。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
+    通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装密钥。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
 *   **Do you have a SSL certificate to use? (y/n)（您拥有自己的 SSL 证书吗？）:**\
-    如果你已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `/.bwdata/ssl/your.domain` 目录下。你会被问到是否使用受信任的 SSL 证书（y/n）。更多信息，请参阅[证书选项](../certificate-options.md)。
+    如果你已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `/.bwdata/ssl/your.domain` 目录下。你会被问到是否使用受信任的 SSL 证书（y/n）。更多信息，请参阅[证书选项](../../certificate-options.md)。
 
     或者，指定 `n` 并使用 **self-signed SSL certificate?** 选项，这只是为了测试目的而推荐的。
 *   **Do you want to generate a self-signed SSL certificate? (y/n)（您想生成一个自签名证书吗？）:**\
-    指定 `y` 让 Bitwarden 为你生成一个自签名证书。这个选项只推荐用于测试。更多信息，请参阅[证书选项](../certificate-options.md)。
+    指定 `y` 让 Bitwarden 为你生成一个自签名证书。这个选项只推荐用于测试。更多信息，请参阅[证书选项](../../certificate-options.md)。
 
     如果你指定 `n`，你的实例将不使用 SSL 证书，你需要使用前置 HTTPS 代理来安装，否则 Bitwarden 应用程序将无法正常运行。
 
@@ -209,7 +209,7 @@ docker ps
 
 恭喜你！Bitwarden 现在已启动并运行在 `https://your.domain.com` 上了。在网页浏览器中访问网页密码库以确认他是否已经正常工作。
 
-现在，您可以注册一个新帐户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](install-and-deploy-linux.md#environment-variables)）以验证新帐户的电子邮件地址。
+现在，您可以注册一个新帐户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新帐户的电子邮件地址。
 
 ## 脚本命令参考 <a href="#script-commands-reference" id="script-commands-reference"></a>
 

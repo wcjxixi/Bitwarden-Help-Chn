@@ -7,7 +7,7 @@
 Bitwarden 网页密码库为个人用户和组织提供了最丰富的 Bitwarden 体验。许多重要功能，例如设置[两步登录](../two-step-login/two-step-login-methods.md)或管理[组织](../organizations/organizations.md)，只能从网页密码库完成。
 
 {% hint style="success" %}
-可以从任何流行的网页浏览器访问网页密码库，网址为 [vault.bitwarden.com](https://vault.bitwarden.com)。或者，如果**您是自托管** Bitwarden，则网址为您[已配置的域名](../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md)，例如 `https://my.bitwarden.server.com`。
+可以从任何流行的网页浏览器访问网页密码库，网址为 [vault.bitwarden.com](https://vault.bitwarden.com)。或者，如果**您是自托管** Bitwarden，则网址为您[已配置的域名](../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)，例如 `https://my.bitwarden.server.com`。
 {% endhint %}
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/7b076851ff275c641b6343cd1f311cd3/Screen_Shot_2022-05-13_at_10.29.39_AM.png?fm=webp&h=440&q=50&w=773" %}

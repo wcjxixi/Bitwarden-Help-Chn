@@ -1,4 +1,4 @@
-# 安装和部署-离线 (Windows)
+# Windows 离线部署
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-offline-windows/)
@@ -37,7 +37,7 @@
 在 Windows 服务器上运行 Bitwarden 需要使用嵌套虚拟化。请检查您的  Hypervisor 文档以了解是否支持嵌套虚拟化以及如何启用它。
 
 {% hint style="info" %}
-如果您将 Windows Server 作为 Azure VM 运行，我们建议使用**运行 Windows Server 2019 Gen2 的标准 D2s v3 虚拟机**，它满足所有[系统规格要求](install-and-deploy-offline-windows.md#system-specifications)，包括对嵌套虚拟化的支持。
+如果您将 Windows Server 作为 Azure VM 运行，我们建议使用**运行 Windows Server 2019 Gen2 的标准 D2s v3 虚拟机**，它满足所有[系统规格要求](windows-offline-deployment.md#system-specifications)，包括对嵌套虚拟化的支持。
 {% endhint %}
 
 ## 安装步骤 <a href="#installation-procedure" id="installation-procedure"></a>
@@ -79,7 +79,7 @@ PS C:\> mkdir Bitwarden
 要使用 Bitwarden 服务器所需的资产配置您的机器：
 
 {% hint style="success" %}
-如果您[已创建 Bitwarden 用户和目录](install-and-deploy-offline-windows.md#create-bitwarden-local-user-and-directory)，请以 `bitwarden` 用户身份完成以下操作。
+如果您[已创建 Bitwarden 用户和目录](windows-offline-deployment.md#create-bitwarden-local-user-and-directory)，请以 `bitwarden` 用户身份完成以下操作。
 {% endhint %}
 
 1、在 `C:\Bitwarden` 中创建一个名为 `bwdata` 的新目录，并将 `docker-stub.zip` 解压到其中，例如：
@@ -96,12 +96,12 @@ PS C:\> mkdir Bitwarden
 * `globalSettings__duo__aKey=`：将 `RANDOM_DUO_AKEY` 替换为随机密钥字符串。
 * `globalSettings__installation__id=`：输入从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装 ID。
 * `globalSettings__installation__key=`：输入从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装密钥。
-* `globalSettings__pushRelayBaseUri=`：这个变量应该是空。有关详细信息，请参阅[配置推送中继](../configure-push-relay.md)。
+* `globalSettings__pushRelayBaseUri=`：这个变量应该是空。有关详细信息，请参阅[配置推送中继](../../configure-push-relay.md)。
 
 {% hint style="success" %}
-此时，还要考虑为所有 `globalSettings__mail__smtp__` 变量和 `adminSettings__admins` 设置值。这样做将配置用于向新组织成员发送邀请的 SMTP 邮件服务器，并提供对[系统管理员门户](../system-administrator-portal.md)的访问权限。
+此时，还要考虑为所有 `globalSettings__mail__smtp__` 变量和 `adminSettings__admins` 设置值。这样做将配置用于向新组织成员发送邀请的 SMTP 邮件服务器，并提供对[系统管理员门户](../../system-administrator-portal.md)的访问权限。
 
-[了解有关环境变量的更多信息](../configure-environment-variables.md)。
+[了解有关环境变量的更多信息](../../configure-environment-variables.md)。
 {% endhint %}
 
 3、为身份容器生成一个 `identity.pfx` 证书。您可以使用 OpenSSL 或使用任何工具来生成自签名证书。如果您使用的是 OpenSSL，请运行以下命令：
@@ -180,11 +180,11 @@ docker ps
 
 恭喜！ Bitwarden 现已启动并运行在 `https://your.domain.com` 了。在您的浏览器中访问网络密码库以确认其正常工作。
 
-您现在可以注册一个新帐户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../configure-environment-variables.md)）以验证您的新帐户的电子邮件。
+您现在可以注册一个新帐户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../../configure-environment-variables.md)）以验证您的新帐户的电子邮件。
 
 ## 更新您的服务器 <a href="#update-your-server" id="update-your-server"></a>
 
-更新已手动安装和部署的自托管服务器与[标准更新过程](../update-your-instance.md)有所不同。要更新您手动安装的服务器：
+更新已手动安装和部署的自托管服务器与[标准更新过程](../../update-your-instance.md)有所不同。要更新您手动安装的服务器：
 
 1. 从 [GitHub 发行页面](https://github.com/bitwarden/server/releases)下载最新的 `docker-stub.zip` 存档。
 2. 将此新的 `docker-stub.zip` 存档解压缩并将其内容与当前 `bwdata` 目录中的内容进行比较，将任何新内容复制到 `bwdata` 中预先存在的文件中。\

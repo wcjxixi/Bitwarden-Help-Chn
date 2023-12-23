@@ -55,7 +55,7 @@ Bitwarden 当前将项目字段的长度限制为 1,000 个字符，将安全笔
 
 有关创建 Bitwarden 组织的更多信息，请访问[这篇文章](../../organizations/organizations.md)。
 
-对于自托管实例，需要先在 Bitwarden 云实例上创建一个组织来生成其[许可证密钥](https://bitwarden.com/host/)，然后再继续[安装和配置 Bitwarden 服务器实例](../../self-hosting/install-and-deploy-guides/install-and-deploy-linux.md)。
+对于自托管实例，需要先在 Bitwarden 云实例上创建一个组织来生成其[许可证密钥](https://bitwarden.com/host/)，然后再继续[安装和配置 Bitwarden 服务器实例](../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)。
 
 {% hint style="info" %}
 自托管适用于企业计划。
