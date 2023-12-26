@@ -1,4 +1,4 @@
-# 浏览器扩展中的自动填充登录
+# =浏览器扩展中的自动填充登录
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-browser/)
@@ -24,7 +24,13 @@ Bitwarden 浏览器扩展有一个独特的**标签页**视图，它可以自动
 
 选择**标签页**视图中的密码库项目，即可将登录信息自动填入检测到的输入字段中。如果一个网页或服务具有多个关联 URI 的登录项目，Bitwarden 将始终自动填充上次使用的登录项目。
 
-## 使用上下文菜单 <a href="#using-the-context-menu" id="using-the-context-menu"></a>
+## 内嵌自动填充菜单 <a href="#inline-auto-fill-menu" id="inline-auto-fill-menu"></a>
+
+### 启用内嵌自动填充菜单 <a href="#enable-the-inline-auto-fill-menu" id="enable-the-inline-auto-fill-menu"></a>
+
+### 使用内嵌自动填充菜单 <a href="#use-the-inline-auto-fill-menu" id="use-the-inline-auto-fill-menu"></a>
+
+## 上下文菜单 <a href="#context-menu" id="context-menu"></a>
 
 {% hint style="info" %}
 此功能目前在 Safari 浏览器扩展程序中不可用。
@@ -38,7 +44,7 @@ Bitwarden 浏览器扩展有一个独特的**标签页**视图，它可以自动
 
 在使用此方法自动填充不受信任的 iframe 或 HTTP 站点（当基于该项目的已保存 URI 使用 HTTPS ）时，浏览器扩展将警告用户。
 
-## 使用键盘快捷键 <a href="#using-keyboard-shortcuts" id="using-keyboard-shortcuts"></a>
+## 键盘快捷键 <a href="#keyboard-shortcuts" id="keyboard-shortcuts"></a>
 
 Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为_热键_）来自动填充登录信息。当您尝试此操作时，如果您的密码库已锁定，则会打开一个新的标签页，提示您解锁。解锁后，浏览器扩展将自动继续填充您的凭据。
 
@@ -63,7 +69,7 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为_热键_）�
 
 某些浏览器包括 **Safari** 和旧版 **Edge**，目前不支持更改扩展程序的默认键盘快捷键。
 
-## 页面加载时自动填充 <a href="#on-page-load" id="on-page-load"></a>
+## 页面加载时 <a href="#on-page-load" id="on-page-load"></a>
 
 {% hint style="warning" %}
 此功能默认情况下被禁用，因为虽然它通常比较安全，但受损或不受信任的网站可能会利用此功能窃取凭据。

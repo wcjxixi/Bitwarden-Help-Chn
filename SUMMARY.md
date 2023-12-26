@@ -70,7 +70,7 @@
     * [导入 & 导出常见问题](import-export/import-and-export-faqs.md)
   * [自动填充](auto-fill/README.md)
     * [自动填充基础](password-manager/auto-fill/auto-fill-basics/README.md)
-      * [浏览器扩展中的自动填充登录](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)
+      * [=浏览器扩展中的自动填充登录](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)
       * [Android 上的自动填充登录](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md)
       * [iOS 上的自动填充登录](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)
       * [自动填充支付卡和身份](password-manager/auto-fill/auto-fill-basics/auto-fill-cards-and-identities.md)
