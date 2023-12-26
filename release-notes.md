@@ -24,7 +24,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ## 使用 Helm GA 自托管 <a href="#self-host-with-helm-ga" id="self-host-with-helm-ga"></a>
 
-Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参阅这里）。
+Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参阅[这里](self-hosting/install-and-deploy-guides/helm/self-host-with-helm.md)）。
 
 ## 2023.12.1
 
@@ -32,7 +32,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 ### **Password Manager**
 
-* **自动填充菜单**：通过打开新的内联自动填充菜单，在浏览网页时自动填充凭据（参阅这里）。
+* **自动填充菜单**：通过打开新的内联自动填充菜单，在浏览网页时自动填充凭据（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#inline-auto-fill-menu)）。
 
 ## 2023.12.0
 
