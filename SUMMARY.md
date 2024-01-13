@@ -10,7 +10,7 @@
     * [忘记主密码](your-vault/i-forgot-my-master-password.md)
     * [SSO 登录的使用](login-with-sso/using-login-with-sso.md)
     * [设备登录](your-vault/log-in-with-device.md)
-    * [=通行密钥登录（测试版）](my-account/log-in-and-unlock/log-in-with-passkeys.md)
+    * [=通行密钥登录 (Beta)](my-account/log-in-and-unlock/log-in-with-passkeys.md)
     * [账户切换](your-vault/account-switching.md)
     * [使用 PIN 码解锁](your-vault/unlock-with-pin.md)
     * [使用生物识别解锁](your-vault/unlocking-with-biometrics.md)

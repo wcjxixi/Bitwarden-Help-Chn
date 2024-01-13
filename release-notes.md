@@ -28,7 +28,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### 我的账户 <a href="#my-account" id="my-account"></a>
 
-* **使用通行密钥登录（测试版）**：通行密钥可用于登录 Bitwarden Web 应用程序，作为使用主密码和电子邮件的替代方法（参阅[这里](my-account/log-in-and-unlock/log-in-with-passkeys.md)）。
+* **使用通行密钥登录 (Beta)**：通行密钥可以作为使用主密码和电子邮件的替代方法来登录 Bitwarden Web 应用程序（参阅[这里](my-account/log-in-and-unlock/log-in-with-passkeys.md)）。
 
 ### **Password Manager** <a href="#password-manager" id="password-manager"></a>
 
