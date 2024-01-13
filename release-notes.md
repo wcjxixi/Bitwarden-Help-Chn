@@ -22,6 +22,23 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2024.1.1
+
+此次发布包含：
+
+### 我的账户 <a href="#my-account" id="my-account"></a>
+
+* **使用通行密钥登录（测试版）**：通行密钥可用于登录 Bitwarden Web 应用程序，作为使用主密码和电子邮件的替代方法（参阅这里）。
+
+### **Password Manager** <a href="#password-manager" id="password-manager"></a>
+
+* **浏览器扩展程序的账户切换**：使用 Bitwarden 浏览器扩展程序时，最多可登录 5 个账户并在这些账户之间无缝切换（参阅[这里](your-vault/account-switching.md)）。
+
+### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+
+* **通过公共 API 配置订阅**：使用新的公共 API 端点来配置订阅信息，例如席位数、最大自动扩展和存储（参阅[这里](https://bitwarden.com/help/api/)）。
+* **更多组织升级路径**：更多 Bitwarden 组织现在可以升级到不同的订阅，而无需联系支持人员。
+
 ## 使用 Helm GA 自托管 <a href="#self-host-with-helm-ga" id="self-host-with-helm-ga"></a>
 
 Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参阅[这里](self-hosting/install-and-deploy-guides/helm/self-host-with-helm.md)）。
@@ -302,7 +319,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 * **自动填写期间的账户切换**：在安卓系统中，通过点击头像气泡，以在自动填写过程中快速切换到另一个账户（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md#auto-fill-while-account-switching)）。
 * **客户组织计费的变化**：从这个发布版本开始，只有[提供商](provider-portal/get-started-with-provider-portal.md)用户可以查看[客户组织](provider-portal/get-started-with-provider-portal.md#client-organizations)的计费信息。
 
-## 2022-04-26 <a href="#2022-04-26" id="2022-04-26"></a>
+## 2022-04-26 <a href="#id-2022-04-26" id="id-2022-04-26"></a>
 
 _桌面端 1.33.0，浏览器扩展 1.58.0，移动端 2.18.0，CLI 1.22.0，目录连接器 2.10.1_
 
@@ -335,7 +352,7 @@ _浏览器扩展 1.57.0，移动端 2.17.0_
 * **移动端添加账户切换功能**：在 Android 和 iOS 上使用 Bitwarden 时，最多可登录 5 个账户并在它们之间无缝切换（参阅[这里](your-vault/account-switching.md)）。
 * **支持 Firefox 隐私模式**：此版本包含对 Firefox 隐私窗口更强大的支持（参阅[这里](miscellaneous/use-bitwarden-in-firefoxs-private-mode.md)）。
 
-## 2022-03-15 <a href="#2021-10-26" id="2021-10-26"></a>
+## 2022-03-15 <a href="#id-2021-10-26" id="id-2021-10-26"></a>
 
 _服务器 1.47.0、Web 2.27.0，桌面端 1.32.0，CLI 1.22.0，目录连接器 2.9.11_
 
@@ -348,7 +365,7 @@ _服务器 1.47.0、Web 2.27.0，桌面端 1.32.0，CLI 1.22.0，目录连接器
 * **弃用工件绑定**：出于安全考虑，已删除 SAML SSO 配置的工件绑定（参阅[这里](https://github.com/bitwarden/server/pull/1885)）。
 * **支持 Docker Compose v2**
 
-## 2022-02-08 <a href="#2021-10-26" id="2021-10-26"></a>
+## 2022-02-08 <a href="#id-2021-10-26" id="id-2021-10-26"></a>
 
 _服务器 1.46.0、Web 2.26.0，桌面端 1.31.0，浏览器扩展 1.56.0，移动端 2.16.0，CLI 1.21.0，目录连接器 2.9.9_
 
@@ -361,7 +378,7 @@ _服务器 1.46.0、Web 2.26.0，桌面端 1.31.0，浏览器扩展 1.56.0，移
 * **目录连接器 - Azure AD 同步性能**：针对 Azure Active Directory 的目录连接器同步，性能已得到提升。与 Azure AD 同步的组织_将不再_需要更改其同步配置。
 * **后端改进**：我们一直在努力改进 Bitwarden 平台的总体性能和稳定性，这将在未来推出一些很棒的新功能。
 
-## 2012-12-07 <a href="#2021-10-26" id="2021-10-26"></a>
+## 2012-12-07 <a href="#id-2021-10-26" id="id-2021-10-26"></a>
 
 _服务器 1.45.0、Web 2.25.0，桌面端 1.30.0，浏览器扩展 1.55.0，移动端 2.15.0，CLI 1.20.0_
 
@@ -373,7 +390,7 @@ Bitwarden 很自豪地宣布在 12 月的版本中增加了新的企业功能，
 * **新的自定义字段类型**：链接型自定义字段可用于解决您的浏览器扩展在自动填写特定网站的用户名和密码时遇到的问题，方法是将用户名和密码链接到定制的表单元素（参阅[此处](<password-manager/auto-fill/auto-fill-basics/Auto-fill Custom Fields.md#using-linked-custom-fields>)）。
 * **浏览器扩展 - 自动填充时解锁密码库**：当您尝试在密码库被锁定时使用上下文菜单或键盘快捷键进行自动填充，现在将提示您解锁密码库，并在解锁后自动填写您的凭证。
 
-## 2021-10-26 <a href="#2021-10-26" id="2021-10-26"></a>
+## 2021-10-26 <a href="#id-2021-10-26" id="id-2021-10-26"></a>
 
 _服务器 1.44.0，Web 2.24.0，桌面 端1.29.0，浏览器扩展 1.54.0，移动端 2.14.0，CLI 1.19.0_
 
@@ -407,7 +424,7 @@ Bitwarden 的最新版本侧重于对现有功能进行经常性的改进：
 * **网页密码库 - 策略位置更改**：现在只能从组织的**管理 → 策略**界面配置[企业策略](organizations/enterprise-policies.md)，而不能从业务门户配置。
 * **CAPTCHA 验证**：从这个版本开始，我们将开启 [hCaptcha](https://www.hcaptcha.com/about) 验证以防止诸如撞库之类的机器人攻击。请注意，CLI 中的挑战与其他客户端应用程序中的挑战不同（有关 CLI 的详细信息，请参阅[此处](password-manager/developer-tools/cli-authentication-challenges.md)）。
 
-## 2021-08-18 <a href="#2021-06-29" id="2021-06-29"></a>
+## 2021-08-18 <a href="#id-2021-06-29" id="id-2021-06-29"></a>
 
 {% hint style="success" %}
 有兴趣成为提供商吗？首先，我们要求：
@@ -426,7 +443,7 @@ Bitwarden 的最新版本专注于使托管服务提供商 (MSP) 能够支持其
 * **共享用词的变化**：我们将**共享**按钮更新为**移动到组织**，以明确共享项目是由组织所拥有的。此外，我们还将「已共享项目」的指示符号（）更改为与集合的指示符号（）保持一致。
 * **CLI `move` 命令**：为了与上述条目保持一致，CLI 的 `share` 命令已被更改为 `move`（参阅[这里](password-manager/developer-tools/password-manager-cli.md#move)）。
 
-## 2021-06-29 <a href="#2021-06-29" id="2021-06-29"></a>
+## 2021-06-29 <a href="#id-2021-06-29" id="id-2021-06-29"></a>
 
 Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一项最新功能，旨在帮助需要大规模地确保密码安全的企业。此次发布包括：
 
@@ -440,7 +457,7 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 * **更多 CLI 选项**：我们添加了一些新的 CLI 选项，包括轻松检索密码库项目的备注 (`bw get notes <id>`) 和设置 Send 的最大访问计数的功能 (`bw send create --maxAccessCount <#>`)。
 * **Web 开发人员自动填充排除**：Web 开发贡献者现在可以通过向 `<input>` 元素添加 `data-bwignore` 属性（例如 `data-bwignore="true"`）来阻止浏览器扩展自动填充给定的表单元素。
 
-## 2021-05-11 <a href="#2021-05-11" id="2021-05-11"></a>
+## 2021-05-11 <a href="#id-2021-05-11" id="id-2021-05-11"></a>
 
 很高兴 Bitwarden 团队发布了一系列新功能和更新，以继续我们让个人和企业的密码管理变得简单易用的使命：
 
@@ -465,7 +482,7 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 在 2021 年 5 月 15 日之前，我们建议您在回收站中进行挖掘，以寻找你可能想要恢复的任何内容！
 {% endhint %}
 
-## 2021-03-11 <a href="#2021-03-11" id="2021-03-11"></a>
+## 2021-03-11 <a href="#id-2021-03-11" id="id-2021-03-11"></a>
 
 Bitwarden 自豪地宣布我们发布了 Bitwarden Send，一个用于短暂共享的端到端加密解决方案。此次发布包括：
 
@@ -475,7 +492,7 @@ Bitwarden 自豪地宣布我们发布了 Bitwarden Send，一个用于短暂共�
 * **改进的导入错误消息**：最近有很多人迁移到 Bitwarden，所以我们清理了一个导入错误的消息，以帮助你更快地解决问题（参阅[这里](import-export/import-data-to-your-vault.md#length-related-import-errors)）。
 * **Safari 网页扩展移植**：我们的 Safari 应用程序扩展已经正式移植到 Safari 14 以上版本的网页扩展中使用。由于 Safari 的变化，网页扩展的使用现在仅限于那些通过 Mac App Store 下载获取的应用（参阅[这里](miscellaneous/safari-web-extension.md)）。
 
-## 2021-01-19 发行后的更新 <a href="#2021-01-19-post-release-update" id="2021-01-19-post-release-update"></a>
+## 2021-01-19 发行后的更新 <a href="#id-2021-01-19-post-release-update" id="id-2021-01-19-post-release-update"></a>
 
 {% hint style="info" %}
 如果您拥有最新版 (2021-01-19) 的桌面应用程序，则浏览器扩展的生物识别解锁**仅适用于基于 Chromium 的浏览器**（比如 Chrome、Edge）上安装的 v1.48.0 版本的浏览器扩展。
