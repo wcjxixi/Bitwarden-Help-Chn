@@ -41,7 +41,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
-* **使用通行密钥登录 (Beta)**：自托管 Bitwarden 服务器现在支持使用通行密钥登录功能（参阅这里）。
+* **支持使用通行密钥登录 (Beta)**：自托管 Bitwarden 服务器现在支持使用通行密钥登录功能（参阅[这里](my-account/log-in-and-unlock/log-in-with-passkeys.md)）。
 
 ## 2024.2.2
 
@@ -49,8 +49,8 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### **管理控制台** <a href="#admin-console" id="admin-console"></a>
 
-* **适用于终端用户的集合管理**：组织现在可以选择允许所有用户创建和管理他们自己的集合。此选项位于 **组织信息**界面，现有组织可选择加入，2024.2.2 之后创建的组织可选择退出（参阅这里）。
-* **弃用经理角色**：开启集合管理后，具有**经理**角色的组织用户将被迁移到**用户**角色，并获得对其分配的集合进行管理的新权限（参阅这里）。
+* **适用于终端用户的集合管理**：组织现在可以选择允许所有用户创建和管理他们自己的集合。此选项位于 **组织信息**界面，现有组织可选择加入，2024.2.2 之后创建的组织可选择退出（参阅[这里](admin-console/organization-basics/collection-management.md)）。
+* **弃用经理角色**：开启集合管理后，具有**经理**角色的组织用户将被迁移到**用户**角色，并获得对其分配的集合进行管理的新权限（参阅[这里](admin-console/user-management/member-roles-and-permissions.md)）。
 
 ### **Secrets Manager**
 

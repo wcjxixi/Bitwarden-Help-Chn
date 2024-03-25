@@ -137,6 +137,7 @@
     * [集合](organizations/collections.md)
     * [群组](organizations/groups.md)
     * [企业策略](organizations/enterprise-policies.md)
+    * [=集合管理](admin-console/organization-basics/collection-management.md)
   * [用户管理](admin-console/user-management/README.md)
     * [入职和继任](business-resources/onboarding-and-succession.md)
     * [用户管理](organizations/user-management.md)
