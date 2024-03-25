@@ -24,16 +24,34 @@ Bitwarden 验证器是 Authy 等专用验证应用程序的替代解决方案，
 
 在 Bitwarden 中，你可以使用两种方式生成 TOTP：
 
-* 通过在 Bitwarden 移动应用中[**扫描二维码**](totp.md#scan-a-qr-code)
-* 通过在任一个 Bitwarden 应用程序中[**手动输入一个安全代码**](totp.md#manually-enter-a-secret)
+* 通过在 Bitwarden 移动应用中[扫描二维码](totp.md#scan-a-qr-code)
+* 通过在任一个 Bitwarden 应用程序中[手动输入安全代码](totp.md#manually-enter-a-secret)
 
 ### 通过扫描 QR 码 <a href="#scan-a-qr-code" id="scan-a-qr-code"></a>
 
-完成以下步骤，以从 iOS 或 Android 应用程序设置 Bitwarden 验证器：
+完成以下步骤，以从您选择的应用程序设置 Bitwarden 验证器：
 
-1. **编辑**要为其生成 TOTP 的密码库项目。
-2. 点击 **📷 设置 TOTP** 按钮。
-3. 扫描 QR 码，然后点击**保存**以开始生成 TOTP。
+{% tabs %}
+{% tab title="iOS 或 Android App" %}
+1、**编辑**要为其生成 TOTP 的密码库项目。
+
+2、点击 **📷 设置 TOTP** 按钮。
+
+3、扫描 QR 码，然后点击**保存**以开始生成 TOTP。
+{% endtab %}
+
+{% tab title="浏览器扩展" %}
+1、**编辑**要为其生成 TOTP 的密码库项目。
+
+2、选择 **📷 TOTP** 按钮。它将从当前网页扫描验证器二维码。完整的二维码必须在屏幕上可见。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7vTPBRNX8Q1xxOZsqFxWBQ/f5e30d5811348f89d94b3a278210059c/2024-02-01_17-18-10.png?_a=BAJFJtWIB" %}
+浏览器 TOTP 扫描
+{% endembed %}
+
+3、扫描 QR 码，然后点击**保存**以开始生成 TOTP。
+{% endtab %}
+{% endtabs %}
 
 设置完成后，Bitwarden 验证器将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或应用程序的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
 
@@ -46,8 +64,6 @@ Bitwarden 验证器是 Authy 等专用验证应用程序的替代解决方案，
 3. 在此界面底部点击**手动输入代码**连接。
 4. 将安全密钥粘贴到**验证器密钥**字段中，然后点击**添加 TOTP**。
 
-从任一个 Bitwarden 应用中设置 Bitwarden 验证器，从网站或应用中复制秘钥（通常可作为二维码的替代），并将其粘贴到相应的密码库项目的**认证器密钥 (TOTP)** 字段中。
-
 设置完成后，Bitwarden 验证器将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或应用程序的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
 
 ## 使用生成的代码 <a href="#use-generated-codes" id="use-generated-codes"></a>
@@ -56,7 +72,7 @@ Bitwarden 验证器是 Authy 等专用验证应用程序的替代解决方案，
 TOTP 依赖于基于时间的代码生成。如果您的设备与服务器相比，其时间不正确，它将生成不起作用的代码。如果您的 TOTP 代码有问题，请将设备的时间和时区设置为**自动**。
 {% endhint %}
 
-Bitwarden 移动应用程序和浏览器扩展程序将在自动填充后自动将 TOTP 代码复制到您的设备剪贴板上，除非**启用页面加载时自动填充**选项处于活动状态。在自动填充成功后，立即从剪贴板上粘贴以使用您的 TOTP，或如果使用浏览器扩展，则使用上下文菜单：
+Bitwarden 移动应用程序和浏览器扩展程序将在自动填充后自动将 TOTP 代码复制到您的设备剪贴板上，除非**页面加载时自动填充**选项处于活动状态。在自动填充成功后，立即从剪贴板上粘贴以使用您的 TOTP，或如果使用浏览器扩展，则使用上下文菜单：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5YmvBLK63g2xMnUewNVjOg/fbaaf6ff2987bee4623ef65952809085/be-totpcopy.png?fm=webp&h=526&q=50&w=865" %}
 浏览器扩展上下文菜单
@@ -79,6 +95,38 @@ Bitwarden 移动应用程序和浏览器扩展程序将在自动填充后自动�
 {% embed url="https://bitwarden.com/_gatsby/image/1597f6f1a3435f7c8dbb113ba53f7da4/f733d76482dc17b25769efd395e73745/bitwarden-ios-trio-totp.webp?eu=dd8653eee6c8f980593da3873921696de53e04fefa5334d46f66e3fc4ead9ed42df71a0721c02ee42e6e5ad882e643eb60947e331db8d48cc1e84df7ee60a30b51840ee834b32404057ac1aae2f704413e974e5fa683cc5ba03823d0edb2b2711955482bfd7aea88eca83c62badb6b76aaf5ac317a9bf629b7471d4a985c27ad27f8c59a7000b09bf400e8a4b0fa4f979db1255a07dcec365f151e1a50ac75c8d3f462095f73200a7db3f45ea57e97e53a1c33260c5f55a5653ed55dad6b67c6b2a8f05adf7a7fe0adc96579d2cbb1d2b45eeb7b34b39a79b4db64391349ee4af2a13fa89624184edf7d&a=w%3D850%26h%3D654%26fm%3Dwebp%26q%3D75&cd=2022-12-09T19%3A02%3A40.330Z" %}
 移动端验证码界面
 {% endembed %}
+
+### 故障排除 <a href="#troubleshooting" id="troubleshooting"></a>
+
+TOTP 代码是根据您设备的系统时钟生成的。如果您生成的代码不起作用，最可能的原因是您的设备时钟与 Bitwarden 服务器的时钟不同步。要重新同步设备上的时钟：
+
+{% tabs %}
+{% tab title="Windows" %}
+导航到**开始** → **设置** → **时间和语言** → **日期和时间**，关闭然后重新打开**自动设置时间**选项。
+
+如果这不起作用，请使用以下 PowerShell 命令设置您的时区，确保将时区名称替换为[此列表](https://learn.microsoft.com/zh-cn/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)中正确的时区名称，然后重新启动计算机：
+
+```bash
+Set-TimeZone -Id "Central Standard Time"
+```
+
+```bash
+Restart-Computer
+```
+{% endtab %}
+
+{% tab title="macOS" %}
+导航至**系统设置** → **常规** → **日期和时间**，关闭然后重新打开**自动设置时间和日期**以及**使用当前位置自动设置时区**选项。
+{% endtab %}
+
+{% tab title="Android" %}
+导航至**设置** → **系统** → **日期和时间**，关闭然后重新打开**自动设置时间**选项。
+{% endtab %}
+
+{% tab title="iOS" %}
+导航至**设置** → **常规** → **日期和时间**，关闭然后重新打开**自动设置**选项。
+{% endtab %}
+{% endtabs %}
 
 ## 支持的更多参数 <a href="#support-for-more-parameters" id="support-for-more-parameters"></a>
 

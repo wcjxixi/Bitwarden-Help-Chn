@@ -14,6 +14,8 @@
 
 当您保存或访问应用程序和服务时，应用程序和服务可以请求使用 PIN、密码、图案或生物识别因素验证使用它们创建的通行密钥。Bitwarden Password Manager 将在未来版本中添加对 PIN、密码和生物识别验证的支持。有关通行密钥的更多信息，请参阅[通行密钥常见问题](passkeys-faq.md)。
 
+### 通行密钥的类型 <a href="#types-of-passkeys" id="types-of-passkeys"></a>
+
 通行密钥通过 Bitwarden 浏览器扩展进行存储和调用。这意味着可发现和不可发现的通行密钥都可以存储在 Bitwarden 中，并用于登录具有通行密钥功能的网站。
 
 ## 通行密钥存储 <a href="#passkey-storage" id="passkey-storage"></a>
@@ -34,9 +36,7 @@
 
 在网站或应用程序上创建新的通行密钥时，Bitwarden 会提示您将此通行密钥存储在 Bitwarden 浏览器扩展中。
 
-{% embed url="https://bitwarden.com/_gatsby/image/baf274466805ed1f10a19ef0af5a3cb6/bc05b959dd23600af6c51d12975aaa30/save%20passkey%20for%20login.webp?eu=d6df06b7b5ccafd2073af4d76e73686ab16a5efaf75232d16937b2f946fb968623f74f5024932ce42e6b5bdfd6b143ef66977e671de9d188c9be1ffcef33fb5b59db1eaa27f07a184e7299afe7a0455b3b824c09e2c09d4ce0732c81a1acb03247035a71a92cb0dcabae2a67ebd926789cc1f42f3bb8fc1fe2115837ae4903831aa4c18b3648eacab21ce9eeeaa009c8c8b42905458dfa347476181a0ee579b8a6b01b32686f1534759fec1b9c34dfd96a43234c020054ae3924900bac&a=w%3D850%26h%3D558%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A48.099Z" %}
-保存通行密钥
-{% endembed %}
+<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/e_vectorize/q_auto/f_svg/v1/ctf/7rncvj1f8mw7/3kj9zFGb1nJgW236SUaBON/ace40f6c363a533381be89f5ca579a07/Screenshot_2024-03-06_at_1.01.15_PM.png?_a=BATAUVAA0" alt=""><figcaption><p>保存通行密钥</p></figcaption></figure>
 
 {% hint style="info" %}
 如果您不希望将通行密钥存储在 Bitwarden 密码库中，请选择**使用浏览器**。
@@ -48,9 +48,7 @@
 每个登录项目只能保存一个通行密钥。如果一个凭证保存在多个地方，例如作为两个登录项目分别保存在个人密码库和组织密码库中，则每个登录项目都可以保存不同的通行密钥。
 {% endhint %}
 
-{% embed url="https://bitwarden.com/_gatsby/image/5112b24fae2615d9768475b703a6a1fb/f638faaddf60cc80a8a587f7c9b0af65/save%20or%20overwrite.webp?eu=8bda57e7e1cbff8f0e68a38b60206138b26b53a9f90463836f66ecf91ca897d077f11e5d72c029e52f6d5bdad3e844b864947d351cecd48b95bd4ef5ec31a20807850eec33e67851512397a8b6f155176fc3490ea2d0ca08a1652385e6b1b22610024d7dfa7fb883eafc3235e3832636bee7a2286f9aef3ca051544bd4412cad33eed3c0605ab89ff35cbaa2adb75798d8f82a451e88b56f232144421fea32b9d2ec6d2b73611b3e438dc60e8326e9d547566055074004f334338303f23a3192e7ada05fd17e7db3fcce607082c5af86ed18a57e75e2d064f8c46e15514fc34cebe939b0903d425b9f6aa4c2&a=w%3D850%26h%3D554%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A48.092Z" %}
-保存新的或覆盖通行密钥
-{% endembed %}
+<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/e_vectorize/q_auto/f_svg/v1/ctf/7rncvj1f8mw7/2GnYjzxkUFsYftwOSKz1Fi/7cf67ddcbf93581f57c97218b9553e4f/Screenshot_2024-03-06_at_1.02.00_PM.png?_a=BATAUVAA0" alt=""><figcaption><p>为现有登录保存通行密钥</p></figcaption></figure>
 
 要覆盖现有的通行密钥：
 
@@ -60,22 +58,14 @@
 在这里测试一下 [https://demo.yubico.com/playground](https://demo.yubico.com/playground)。
 
 {% hint style="info" %}
-无法在密码库项目视图中编辑通行密钥字段。如果需要同一网站的额外的通行密钥，请保存一个与新的通行密钥相关联的新登录项目。
+无法在密码库项目视图中编辑通行密钥字段。如果同一网站需要额外的通行密钥，请保存一个与新的通行密钥相关联的新的登录项目。
 {% endhint %}
 
 ### 使用 Bitwarden 中存储的通行密钥登录网站 <a href="#sign-in-to-a-website-using-a-passkey-stored-in-bitwarden" id="sign-in-to-a-website-using-a-passkey-stored-in-bitwarden"></a>
 
-要使用 Bitwarden 中存储的通行密钥，请在网站上启动通行密钥登录。
+要使用 Bitwarden 中存储的通行密钥，请在网站上启动通行密钥登录。您的系统将提示通行密钥登录。Bitwarden 启用后，Bitwarden 浏览器扩展将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项。
 
-{% embed url="https://bitwarden.com/_gatsby/image/d32e6f047a0665f517498397b207a241/b73904793d95b6daae114c4e14995ea6/initiate%20passwordless%20login.webp?eu=8bd804b7e3cba9d4076aa0856d74683ce03857afaf5965d26e63ecac1caecd8622fb115320c77fe37d615dded4e343b963c57c321febd9dfc8ee18f6e861fc0a54800ebf61b17006532f90a8e3f7571160c71e0df7d19b0bf63c7a81b4e5b0791a024e28fa7cbb86efac3061e4852831ebe0a02d6497a92bea4a1a108b5b7be37be2cd8f644badd0e35bb9b7adea5c89dff9735204c4f4777c240a4559bb25e6e2b51b70615f203235ada8039908eade38581d463f0a40a41b25d15da86d3595e1f8a75ed0292ee9afce342682cbfb82eb1ba57827ee9c76aad724235054e84afcf82e989235454dc675b8c110e740465a1cdd4bd07a3e996608&a=w%3D650%26h%3D590%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A47.983Z" %}
-启动无密码登录
-{% endembed %}
-
-在网站上选择通行密钥登录选项后，您的系统将提示您使用通行密钥登录。启用 Bitwarden 后，Bitwarden 浏览器扩展将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项。
-
-{% embed url="https://bitwarden.com/_gatsby/image/d389f67e84035ea41d74ddafc8b80b7b/c43fa799a00bba893c2f4639173a17c1/passkey%20login.webp?eu=d88753b4eac8ad82093ba9d06126656ae83e57aeff0764853d31b7af46adcd8121f44f5c729c72b3793b09ddd5e243e96fc2786511efd0dac4bb19a6e33da90d07865ceb66b57707542bc3f8e3f7504c6fc5125ea583990da56971d4b0bbb62618511b7aa82fb2d9a8ed7527ba9c306bb7e7f17b26dcf83cb6431d179e5c32e23aeed4c1345cb09df645eeb0e6f44eca83e2565205be996a6a720f470ced67cfd8fa640942411e4467c9ac5cc46893b33a1a60725a5d56f6346bd401f96e3896ecf3f5598c2878b4b7896033c598fbc98246f37d2fb9d167f7d5&a=w%3D700%26h%3D476%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A48.107Z" %}
-使通行密钥登录
-{% endembed %}
+<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5KeuUZox5shd0zDMxPHKXn/1c49a0c70ad63cabad33cfd213417e14/Screenshot_2024-03-06_at_1.02.35_PM.png?_a=BAJFJtWIB" alt=""><figcaption><p>使用通行密钥登录</p></figcaption></figure>
 
 相关通行密钥将显示在 Bitwarden 对话框中。选择您要使用的通行密钥并按**确认**。
 
@@ -85,7 +75,7 @@
 
 ## 关闭通行密钥提示 <a href="#turn-off-passkey-prompt" id="turn-off-passkey-prompt"></a>
 
-如果您不想使用 Bitwarden 浏览器扩展程序提示您保存和使用特定站点的通行密钥，您可以设置排除的域。您还可以通过以下方式完全关闭提示：
+如果您不想使用 Bitwarden 浏览器扩展程序提示您保存和使用特定站点的通行密钥，您可以设置[排除域名](../../miscellaneous/exclude-domains.md)。您还可以通过以下方式完全关闭提示：
 
 1. 导航至 **⚙️设置**选项卡。
 2. 选择**选项**。

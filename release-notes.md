@@ -54,7 +54,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### **Secrets Manager**
 
-* **Ansible 集成**：使用 Bitwarden Secrets Manager 检索机密并将其注入您的 playbook 剧本中（参阅这里）。
+* **Ansible 集成**：使用 Bitwarden Secrets Manager 检索机密并将其注入您的 playbook 剧本中（参阅[这里](secrets-manager/integrations/ansible.md)）。
 
 ## 2024.2.0
 
@@ -62,12 +62,12 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### **Password Manager**
 
-* **浏览器扩展的 TOTP 捕获**：使用 Bitwarden 浏览器扩展扫描网页并保存 TOTP 验证器二维码（参阅这里）。
-* **增加导入项目数量上限**：Bitwarden 密码管理器的导入相对之前，现在可以包含大约两倍的数据量（参阅这里）。
+* **浏览器扩展的 TOTP 捕获**：使用 Bitwarden 浏览器扩展扫描网页并保存 TOTP 验证器二维码（参阅[这里](your-vault/totp.md#scan-a-qr-code)）。
+* **增加导入项目数量上限**：Bitwarden 密码管理器的导入相对之前，现在可以包含大约两倍的数据量（参阅[这里](import-export/import-data-to-your-vault.md)）。
 
 ### **管理控制台** <a href="#admin-console" id="admin-console"></a>
 
-* **组织唯一的 SP 实体 ID**：使用 SSO SAML 的组织现在可以升级其实体 ID，升级后的实体 ID 对于其组织来说是唯一的。这样做需要在 IdP 上重新配置（参阅这里）。
+* **组织唯一的 SP 实体 ID**：使用 SSO SAML 的组织现在可以升级其实体 ID，升级后的实体 ID 对于其组织来说是唯一的。这样做需要在 IdP 上重新配置（参阅[这里](login-with-sso/saml-2.0-configuration.md)）。
 
 ### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
 
@@ -79,11 +79,11 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### **Password Manager**
 
-* **适用于自托管的通行密钥存储**：现在可以将通行密钥存储在自托管的 Bitwarden 服务器中（参阅这里）。
+* **适用于自托管的通行密钥存储**：现在可以将通行密钥存储在自托管的 Bitwarden 服务器中（参阅[这里](password-manager/vault-basics/storing-passkeys.md)）。
 
 ### **管理控制台** <a href="#admin-console" id="admin-console"></a>
 
-* **通过公共 API 获得更多集合权限**： 现在，您可以使用公共 API 向用户隐藏任何集合的密码（参阅这里）。
+* **通过公共 API 获得更多集合权限**： 现在，您可以使用公共 API 向用户隐藏任意集合的密码（参阅[这里](https://bitwarden.com/help/api/)）。
 
 ## 2024.1.0
 

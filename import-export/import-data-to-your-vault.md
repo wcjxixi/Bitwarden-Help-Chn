@@ -11,7 +11,7 @@ Bitwarden 提供了一个数据导入工具，可以轻松地将任何密码管�
 * [从 LastPass 导入](import-guides/import-your-data-from-lastpass.md)
 * [从1Password 导入](import-guides/import-your-data-from-1password.md)
 * [从 Firefox 导入](import-guides/import-your-data-from-firefox.md)
-* [从 Google Chrome 导入](import-guides/import-your-data-from-google-chrome.md)
+* [从 Google Chrome 或 Chromium 导入](import-guides/import-your-data-from-google-chrome.md)
 * [从 Microsoft Edge 导入](import-guides/import-your-data-from-google-chrome.md)
 * [从 Password Safe 导入](import-guides/import-data-from-password-safe.md)
 
@@ -23,27 +23,29 @@ Bitwarden 提供了一个数据导入工具，可以轻松地将任何密码管�
 {% tab title="网页端程序" %}
 要导入数据到您的密码库：
 
-1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
+1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com)、[https://vault.bitwarden.eu](https://vault.bitwarden.eu,) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
 
-2、从顶部导航条选择**工具**。
+2、从导航条选择**工具** → **导入数据**：
 
-3、从工具菜单选择**导入数据**。
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/6d09a2630cdb4c4499575997af5569ea/Screenshot_2024-02-27_at_11.21.15_AM.png?_a=BAJFJtWIB" %}
+导入数据
+{% endembed %}
 
-4、从下拉菜单中完成以下字段：
+3、从下拉菜单中完成以下字段：
 
 * **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
 * **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
 * [**文件格式**](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
-5、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
+4、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
 {% hint style="warning" %}
 导入时不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件**将创建重复项目**。
 {% endhint %}
 
-6、选择**导入数据**按钮以开始导入。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+5、选择**导入数据**按钮以开始导入。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
-7、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
+6、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 
 [文件附件](../your-vault/file-attachments.md)、[Send](../bitwarden-send/about-send.md)、回收站以及密码历史记录等附加项目需要手动上传到您的密码库。
 {% endtab %}
@@ -111,19 +113,13 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 
 ## 故障排除 <a href="#troubleshooting" id="troubleshooting"></a>
 
-### 文件大小导入限制 <a href="#file-size-import-limitations" id="file-size-import-limitations"></a>
+### 导入文件附件 <a href="#importing-file-attachments" id="importing-file-attachments"></a>
 
-超过以下任一项数据限制，导入可能会被拒绝：
-
-* 如果您的导入超过 6,000 条项目。
-* 如果您的导入超过 1,000 个文件夹。
-* 如果您的导入超过 1,000 个集合。
-* 如果您的导入超过 6,000 个项目-文件夹关系（例如，3 个文件夹中的单个项目可以说具有 3 个项目-文件夹关系）。
-* 如果您的导入超过 6,000 个项目-集合关系（例如，3 个集合中的单个项目可以说具有 3 个项目-集合关系）。
+文件附件只能手动迁移到您的 Bitwarden 密码库，因为它们目前不包含在批量导入操作中。请注意，文件附件的存储仅适用于高级用户，以及付费组织（家庭、团队或企业）的成员。
 
 ### 长度相关导入错误 <a href="#length-related-import-errors" id="length-related-import-errors"></a>
 
-尝试导入 `.csv` 时通常会收到以下错误信息，这些信息表明导入文件中的某个特定值超出了该字段类型所允许的加密字符的限制：
+尝试导入 `.csv` 时通常会收到如下的错误信息，这些信息表明导入文件中的某个特定值超出了该字段类型所允许的**加密**字符的限制：
 
 {% embed url="https://bitwarden.com/_gatsby/image/1ae5b6b8d8ce6f6f4df15d95f5ffdcde/753d98128cb9b6556367e944a99d0205/ciphererror_2021.webp?eu=dd8c02b2b5cbadd45a3ca5d56f73673be96b01feaf023ed93b60e3fd1aaecdd476a2105175907fb6283f08dd85b44bbe62c57f6019bad7dfc0b811fdec36ae0e57875ebf6fe77004052f92afb8f202463dc51c09a882c00eaa6a26d4e6bab5721c544e22fb29b2d9a8ed7527ba9c306bb7e7f17b26dcf83cb6431d179e5c32e23aeed4c1345cb09df645eeb0e6f44eca83e05b5d1d9fa15d23170b6d0d9156e0fde958395b411c443098a85ec26497e3691e622b5c0b55f3643a825dfd696096e2ffa958dd7328b5b79a6830de96ecd5af58f36819e5cf25a89c7b2459&a=w%3D500%26h%3D336%26fm%3Dwebp%26q%3D75&cd=2022-12-09T19%3A03%3A12.435Z" %}
 Web 密码库中的密码错误
@@ -142,3 +138,13 @@ Web 密码库中的密码错误
 {% endhint %}
 
 如果您在使用错误信息中提供的数据来查找违规项目时遇到问题，可以首先将重点放在备注上，因为备注通常会导致此错误。
+
+### 文件大小导入限制 <a href="#file-size-import-limitations" id="file-size-import-limitations"></a>
+
+超过以下任一项数据限制，导入可能会被拒绝：
+
+* 如果您的导入超过 ~~6,000~~ 7,000 条项目。
+* 如果您的导入超过 ~~1,000~~ 2,000 个文件夹。
+* 如果您的导入超过 ~~1,000~~ 2,000 个集合。
+* 如果您的导入超过 ~~6,000~~ 7,000 个项目-文件夹关系（例如，3 个文件夹中的单个项目可以说具有 3 个项目-文件夹关系）。
+* 如果您的导入超过 ~~6,000~~ 14,000 个项目-集合关系（例如，3 个集合中的单个项目可以说具有 3 个项目-集合关系）。

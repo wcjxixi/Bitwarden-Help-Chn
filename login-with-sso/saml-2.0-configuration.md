@@ -6,17 +6,21 @@
 
 ## 第 1 步：设置组织标识符 <a href="#step-1-set-an-organization-identifier" id="step-1-set-an-organization-identifier"></a>
 
-使[用 SSO 验证身份](using-login-with-sso.md#login-using-sso)的用户将被要求输入一个**组织标识符**，该标识符表明要验证的组织（以及 SSO 集成）。要设置唯一的组织标识符：
+[使用 SSO 验证身份](using-login-with-sso.md#login-using-sso)的用户将被要求输入一个**组织标识符**，该标识符表明要验证的组织（以及 SSO 集成）。要设置唯一的组织标识符：
 
-1、登录到您的[网页密码库](https://vault.bitwarden.com/)并打开您的组织。
+1、登录到 Bitwarden [网页密码库](https://vault.bitwarden.com/)然后使用产品切换器 (**☷**) 打开管理控制台：
 
-2、打开**设置**选项卡然后为您的组织输入一个唯一的**标识符**。
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6pr4tqMnrLCvwDBMlba5x7/7febd98161d60656c9bc5ab57508be02/org-id.png?fm=webp&h=568&q=50&w=1017" %}
-输入一个标识符
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/f9368992bf9f9089e981c52f3065a551/Screenshot_2024-02-27_at_9.02.16_AM.png?_a=BAJFJtWIB" %}
+产品切换器
 {% endembed %}
 
-3、在退出此页面之前**保存**您的更改。
+2、打导航到 **设置** → **单点登录**，然后为您的组织输入一个唯一的**标识符**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6pr4tqMnrLCvwDBMlba5x7/221aa2bff63cad584651aba15f1b2c95/Screenshot_2024-02-28_at_11.15.00_AM.png?_a=BAJFJtWIB" %}
+输入标识符
+{% endembed %}
+
+3、继续执行**步骤 2：启用 SSO 登录**。
 
 {% hint style="success" %}
 此配置准备好使用后，您需要将这个值分享给用户。
@@ -24,25 +28,25 @@
 
 ## 第 2 步：启用 SSO 登录 <a href="#step-2-enable-login-with-sso" id="step-2-enable-login-with-sso"></a>
 
-拥有组织标识符后，您可以继续启用和配置集成。要启用 SSO 登录：
+拥有 SSO 标识符后，您可以继续启用和配置集成。要启用 SSO 登录：
 
-1、从组织密码库中，导航到**管理**选项卡并从左侧菜单中选择**单点登录**：
+1、在 **设置** → **单点登录** 视图中，勾选**允许 SSO 身份验证**复选框：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/51wSToXTHHVmBCrLrE8T0E/70700e2bbbf8ed9ec51fc02d72f2aecb/manage-sso.png?fm=webp&h=472&q=50&w=783" %}
-启用 SSO
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/20720mRAluo6crSdTiYJrn/40dfe05a9f55e50ec691bb0e332ed461/Screenshot_2024-02-28_at_11.20.09_AM.png?_a=BAJFJtWIB" %}
+SAML 2.0 配置
 {% endembed %}
 
-2、在单点登录界面，勾选**允许 SSO 身份验证**复选框。
+2、从**类型**下拉菜单中，选择 **SAML 2.0** 选项。如果您打算改用 OIDC，请切换到 [OIDC 配置指南](oidc-configuration.md)。
 
-3、从**类型**下拉菜单中，选择 **SAML 2.0** 选项。如果您打算改用 OIDC，请切换到 [OIDC 配置指南](oidc-configuration.md)。
+如果您愿意，可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做将从 SP 实体 ID 值中删除您的组织 ID，但在几乎所有情况下，建议保留此选项。
 
 {% hint style="success" %}
-如果您是自托管 Bitwarden，您可以选择性使用**成员解密选项**。此功能默认情况下被禁用，因此现在继续使用**主密码**解密，并了解如何在配置完成并成功运行后开始使用 [Key Connector](about-key-connector.md)。
+还有其他成员解密选项。了解如何开始将 SSO 与受信任的设备或 [Key Connector](about-key-connector.md) 结合使用。
 {% endhint %}
 
 ## 第 3 步：配置 <a href="#step-3-configuration" id="step-3-configuration"></a>
 
-从这里开始，**实施将因提供程序而异**。跳转到我们的特定**实施指南**之一，以帮助完成配置过程：
+从这里开始，实施将因提供程序而异。跳转到我们的特定**实施指南**之一，以帮助完成配置过程：
 
 | 提供程序         | 指南                                                                             |
 | ------------ | ------------------------------------------------------------------------------ |
