@@ -22,7 +22,70 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
-## 2024.1.1
+## 2024.3.0
+
+此次发布包含：
+
+### 自托管 <a href="#self-hosting" id="self-hosting"></a>
+
+* **适用于 Linux 部署的新的日志功能**：使用标准 `bitwarden.sh` shell 脚本的 Linux 部署现在可以使用新选项来下载压缩日志文件（参阅[这里](self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#script-commands-reference)）。
+
+## 2024.2.3
+
+此次发布包含：
+
+### **Password Manager**
+
+* **Web 应用程序导航更新**：Bitwarden Web 应用程序已完全重新设计！我们希望您能喜欢这个新的体验（[了解更多](https://bitwarden.com/blog/bitwarden-design-updating-the-navigation-in-the-web-app/)）。
+* **Duo 2FA 登录更新**：Duo 为用户和管理员引入了通用提示。启用该服务的 Duo 管理员会发现 Duo 2FA 登录流程稍微有一些变化（参阅[这里](two-step-login/setup-guides/two-step-login-via-duo.md)）。
+
+### 自托管 <a href="#self-hosting" id="self-hosting"></a>
+
+* **使用通行密钥登录 (Beta)**：自托管 Bitwarden 服务器现在支持使用通行密钥登录功能（参阅这里）。
+
+## 2024.2.2
+
+此次发布包含：
+
+### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+
+* **适用于终端用户的集合管理**：组织现在可以选择允许所有用户创建和管理他们自己的集合。此选项位于 **组织信息**界面，现有组织可选择加入，2024.2.2 之后创建的组织可选择退出（参阅这里）。
+* **弃用经理角色**：开启集合管理后，具有**经理**角色的组织用户将被迁移到**用户**角色，并获得对其分配的集合进行管理的新权限（参阅这里）。
+
+### **Secrets Manager**
+
+* **Ansible 集成**：使用 Bitwarden Secrets Manager 检索机密并将其注入您的 playbook 剧本中（参阅这里）。
+
+## 2024.2.0
+
+此次发布包含：
+
+### **Password Manager**
+
+* **浏览器扩展的 TOTP 捕获**：使用 Bitwarden 浏览器扩展扫描网页并保存 TOTP 验证器二维码（参阅这里）。
+* **增加导入项目数量上限**：Bitwarden 密码管理器的导入相对之前，现在可以包含大约两倍的数据量（参阅这里）。
+
+### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+
+* **组织唯一的 SP 实体 ID**：使用 SSO SAML 的组织现在可以升级其实体 ID，升级后的实体 ID 对于其组织来说是唯一的。这样做需要在 IdP 上重新配置（参阅这里）。
+
+### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
+
+* **自动税率计算**： 用于订阅的税率现在将由我们的支付分包商根据地理位置自动计算。Bitwarden 收取的小计将保持不变，但您可能会注意到您的含税月度账单将有所变化。
+
+## 2024.1.2
+
+此次发布包含：
+
+### **Password Manager**
+
+* **适用于自托管的通行密钥存储**：现在可以将通行密钥存储在自托管的 Bitwarden 服务器中（参阅这里）。
+
+### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+
+* **通过公共 API 获得更多集合权限**： 现在，您可以使用公共 API 向用户隐藏任何集合的密码（参阅这里）。
+
+## 2024.1.0
 
 此次发布包含：
 
