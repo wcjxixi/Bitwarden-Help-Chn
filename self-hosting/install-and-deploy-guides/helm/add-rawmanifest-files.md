@@ -3,3 +3,5 @@
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/add-rawmanifest-files/)
 {% endhint %}
+
+## Traefik IngressRoute 示例 <a href="#traefik-ingressroute-example" id="traefik-ingressroute-example"></a>
