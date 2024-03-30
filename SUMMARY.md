@@ -127,7 +127,7 @@
     * [Secrets Manager CLI](secrets-manager/developer-tools/secrets-manager-cli.md)
     * [Secrets Manager SDK](secrets-manager/developer-tools/secrets-manager-sdk.md)
   * [集成](secrets-manager/integrations/README.md)
-    * [=Ansible](secrets-manager/integrations/ansible.md)
+    * [Ansible](secrets-manager/integrations/ansible.md)
     * [GitHub Actions](secrets-manager/integrations/github-actions.md)
     * [=GitLab CI/CD](secrets-manager/integrations/gitlab-ci-cd.md)
   * [更多](secrets-manager/more/README.md)
