@@ -84,11 +84,28 @@
 {% tab title="启用了加密的通行密钥" %}
 ### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
 
+当注册用于登录 Bitwarden 的通行密钥时：
+
+* 通过 WebAuthn API，验证器生成一个**通行密钥公钥和私钥对**。根据定义，该密钥对构成了您的通行密钥。
+* 通过 WebAuthn API PRF 扩展，验证器生成一个 **PRF 对称密钥**。该密钥源自于您的通行密钥的特有的**内部机密**和 Bitwarden 提供的**盐化**。
+* Bitwarden 客户端生成一个 **PRF 公钥和私钥对**。PRF 公钥对您的**账户加密密钥**进行加密，您的客户端可以通过登录和解锁来访问该密钥，然后将生成的 **PRF 加密的账户加密密钥**发送到服务器。
+* 使用 **PRF 对称密钥**对 **PRF 私钥**进行加密（参见第 2 步），然后将得到的 **PRF 加密的私钥**发送到服务器。
+* 客户端将数据发送到 Bitwarden 服务器，以用于为您的账户创建一个新的通行密钥凭据记录。如果您的通行密钥凭据被注册为支持密码库加密和解密，此记录将包括：
+  * 通行密钥名称
+  * 通行密钥公钥
+  * PRF 公钥
+  * PRF 加密的账户加密密钥
+  * PRF 加密的私钥
+
+完成身份验证所需的通行密钥私钥只会以加密格式保留在客户端。
+
 ### 使用通行密钥登录 <a href="#log-in-with-your-passkey" id="log-in-with-your-passkey"></a>
 {% endtab %}
 
 {% tab title="关闭了加密的通行密钥" %}
 ### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
+
+### &#x20;<a href="#log-in-with-your-passkey" id="log-in-with-your-passkey"></a>
 
 ### 使用通行密钥登录 <a href="#log-in-with-your-passkey" id="log-in-with-your-passkey"></a>
 {% endtab %}
