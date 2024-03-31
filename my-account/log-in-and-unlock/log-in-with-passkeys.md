@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-通行密钥登录目前尚处于测试阶段。
+使用通行密钥登录目前尚处于测试阶段。
 {% endhint %}
 
 通行密钥可以作为使用主密码和电子邮件的替代方式来登录 Bitwarden。用于登录 Bitwarden 的通行密钥需要用户验证，这意味着您需要使用生物识别因素或安全钥匙等来成功建立对通行密钥的访问。
@@ -96,4 +96,4 @@
 
 ## 轮换加密密钥 <a href="#rotating-your-encryption-key" id="rotating-your-encryption-key"></a>
 
-轮换您的账户加密密钥将使任何用于密码库加密的通行密钥设置的加密和解密功能失效。在您轮换账户加密密钥时，该密码可以继续用于在登录 Bitwarden 时进行身份验证的功能不会受到影响。
+[轮换您的账户加密密钥](../../security/account-encryption-key.md#rotate-your-encryption-key)将使[设置为用于密码库加密的任何通行密钥](log-in-with-passkeys.md#set-up-encryption)的加密和解密功能失效。在您轮换账户加密密钥时，该通行密钥用于在登录 Bitwarden 时进行身份验证的功能不会受到影响。
