@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/ansible-integration/)
 {% endhint %}
 
-Bitwarden 提供了与 Ansible 的集成，可以从 Secrets Manager 中获取机密并将其注入到 Ansible playbook 中。查找插件会将检索到的机密作为掩码环境变量注入 Ansible playbook 中。设置集合的方法如下：
+Bitwarden 提供了与 Ansible 的集成，可以从 Secrets Manager 中获取机密并将其注入到 Ansible playbook 中。lookup 插件会将检索到的机密作为隐藏的环境变量注入 Ansible playbook 中。设置集合的方法如下：
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
@@ -52,7 +52,7 @@ macOS 用户可能需要在 shell 中设置以下环境变量，以避免来自[
 export BWS_ACCESS_TOKEN=<ACCESS_TOKEN_VALUE>
 ```
 
-2、现在环境变量已经设置好，我们可以使用查找插件来填充剧本中的变量。例如：
+2、现在环境变量已经设置好，我们可以使用 lookup 插件来填充 playbook 中的变量。例如：
 
 ```bash
   vars:
@@ -130,7 +130,7 @@ vars:
 
 ## 附加请求和字段 <a href="#additional-requests-and-fields" id="additional-requests-and-fields"></a>
 
-除了 `secret_id` 字段之外， `bitwarden.secrets.lookup` 中还可以包含其他好几个字段。以下 JSON 对象包含了在 playbook 查找中可以引用的所有字段。
+除了 `secret_id` 字段之外， `bitwarden.secrets.lookup` 中还可以包含其他好几个字段。以下 JSON 对象包含了在 playbook lookup 中可以引用的所有字段。
 
 ```bash
 {

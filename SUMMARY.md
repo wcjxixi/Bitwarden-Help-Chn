@@ -129,7 +129,7 @@
   * [集成](secrets-manager/integrations/README.md)
     * [Ansible](secrets-manager/integrations/ansible.md)
     * [GitHub Actions](secrets-manager/integrations/github-actions.md)
-    * [=GitLab CI/CD](secrets-manager/integrations/gitlab-ci-cd.md)
+    * [GitLab CI/CD](secrets-manager/integrations/gitlab-ci-cd.md)
   * [更多](secrets-manager/more/README.md)
     * [Secrets Manager 常见问题](secrets-manager/more/secrets-manager-faqs.md)
 * [管理控制台](admin-console/README.md)
