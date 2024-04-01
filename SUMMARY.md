@@ -205,7 +205,7 @@
     * [欢迎电子邮件模板](admin-console/end-user-onboarding/welcome-email-templates.md)
     * [管理团队入职电子邮件](admin-console/end-user-onboarding/admin-team-onboarding-emails.md)
     * [=最终用户采用电子邮件](admin-console/end-user-onboarding/end-user-adoption-emails.md)
-    * [=入职流程](admin-console/end-user-onboarding/onboarding-workflows.md)
+    * [入职流程](admin-console/end-user-onboarding/onboarding-workflows.md)
   * [Bitwarden 公共 API](organizations/bitwarden-public-api.md)
   * [更多](admin-console/more/README.md)
     * [组织常见问题](organizations/organizations-faqs.md)
