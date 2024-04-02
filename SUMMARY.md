@@ -238,7 +238,7 @@
     * [=Helm](self-hosting/install-and-deploy-guides/helm/README.md)
       * [=使用 Helm 自托管](self-hosting/install-and-deploy-guides/helm/self-host-with-helm.md)
       * [=Azure AKS 部署](self-hosting/install-and-deploy-guides/helm/azure-aks-deployment.md)
-      * [=OpenShift 部署](self-hosting/install-and-deploy-guides/helm/openshift-deployment.md)
+      * [OpenShift 部署](self-hosting/install-and-deploy-guides/helm/openshift-deployment.md)
       * [AWS EKS 部署](self-hosting/install-and-deploy-guides/helm/aws-eks-deployment.md)
       * [添加 rawManifest 文件](self-hosting/install-and-deploy-guides/helm/add-rawmanifest-files.md)
   * [自托管组织](self-hosting/self-host-an-organization.md)
