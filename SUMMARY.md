@@ -237,7 +237,7 @@
       * [Unified 部署 (Beta)](self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md)
     * [=Helm](self-hosting/install-and-deploy-guides/helm/README.md)
       * [使用 Helm 自托管](self-hosting/install-and-deploy-guides/helm/self-host-with-helm.md)
-      * [=Azure AKS 部署](self-hosting/install-and-deploy-guides/helm/azure-aks-deployment.md)
+      * [Azure AKS 部署](self-hosting/install-and-deploy-guides/helm/azure-aks-deployment.md)
       * [OpenShift 部署](self-hosting/install-and-deploy-guides/helm/openshift-deployment.md)
       * [AWS EKS 部署](self-hosting/install-and-deploy-guides/helm/aws-eks-deployment.md)
       * [添加 rawManifest 文件](self-hosting/install-and-deploy-guides/helm/add-rawmanifest-files.md)

@@ -91,7 +91,7 @@ helm show values bitwarden/self-host --devel > my-values.yaml
 使用 `kubectl create secret` 命令设置这些值的示例将如下所示：
 
 {% hint style="warning" %}
-此示例将命令记录到您的 shell 历史记录中。可以考虑其他方法来安全地设置机密。
+此示例将命令记录到您的 shell 历史记录中。可以考虑使用其他方法来安全地设置机密。
 {% endhint %}
 
 ```bash
