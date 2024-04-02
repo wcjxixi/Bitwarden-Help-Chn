@@ -1,4 +1,4 @@
-# =AWS EKS 部署
+# AWS EKS 部署
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/aws-eks-deployment/)
@@ -146,23 +146,124 @@ sharedStorageClassName: "shared-storage"
 
 您需要将以下机密存储在 AWS Secrets Manager 中。请注意，您可以更改此处使用的**密钥**，但如果您这样做，还必须对后续步骤进行更改：
 
-| 密钥                                                                                                                 | 值                                                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| `installationid`                                                                                                   | 从https://bitwarden.com/host 获取到的有效安装 ID  。有关更多信息，请参阅我的安装 ID 和安装密钥有何用途？                                              |
-| `installationkey`                                                                                                  | 从 https://bitwarden.com/host 获取到的有效安装密钥 。有关更多信息，请参阅我的安装 ID 和安装密钥有何用途？                                               |
-| `smtpusername`                                                                                                     | 您的 SMTP 服务器的有效用户名。                                                                                                  |
-| `smtppassword`                                                                                                     | 输入的 SMTP 服务器用户名的有效密码。                                                                                               |
-| `yubicoclientid`                                                                                                   | YubiCloud 验证服务或自托管 Yubico 验证服务器的客户端 ID。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。 |
-| `yubicokey`                                                                                                        | YubiCloud 验证服务或自托管 Yubico 验证服务器的机密密钥。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。   |
-| globalSettings\_\_hibpApiKey                                                                                       | 您的 HaveIBeenPwned (HIBP) API 密钥可[在此处](https://haveibeenpwned.com/API/Key)获取。此密钥允许用户在创账户时运行数据泄露报告并检查其主密码是否存在泄露。      |
-| <p>如果您使用 Bitwarden SQL pod  <code>sapassword</code>，.</p><p>如果您使用自己的 SQL 服务器， <code>dbconnectionString.</code></p> | 连接到 Bitwarden 实例的数据库的凭据。所需内容取决于您使用的是附带的 SQL pod 还是外部 SQL 服务器。                                                       |
+| 密钥                                                                                                                 | 值                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `installationid`                                                                                                   | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装 ID  。有关更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for) |
+| `installationkey`                                                                                                  | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装密钥 。有关更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)   |
+| `smtpusername`                                                                                                     | 您的 SMTP 服务器的有效用户名。                                                                                                                                                                             |
+| `smtppassword`                                                                                                     | 输入的 SMTP 服务器用户名的有效密码。                                                                                                                                                                          |
+| `yubicoclientid`                                                                                                   | YubiCloud 验证服务或自托管 Yubico 验证服务器的客户端 ID。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。                                                                            |
+| `yubicokey`                                                                                                        | YubiCloud 验证服务或自托管 Yubico 验证服务器的机密密钥。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。                                                                              |
+| globalSettings\_\_hibpApiKey                                                                                       | 您的 HaveIBeenPwned (HIBP) API 密钥可[在此处](https://haveibeenpwned.com/API/Key)获取。此密钥允许用户在创账户时运行数据泄露报告并检查其主密码是否存在泄露。                                                                                 |
+| <p>如果您使用 Bitwarden SQL pod  <code>sapassword</code>，.</p><p>如果您使用自己的 SQL 服务器， <code>dbconnectionString.</code></p> | 连接到 Bitwarden 实例的数据库的凭据。所需内容取决于您使用的是附带的 SQL pod 还是外部 SQL 服务器。                                                                                                                                  |
 
 1、安全存储您的机密后，[安装 ACSP](https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrating\_csi\_driver.html#integrating\_csi\_driver\_install)。
 
 2、创建权限策略以允许访问您的机密。该策略**必须**授予 `secretsmanager:GetSecretValue` 和 `secretsmanager:DescribeSecret` 权限，例如：
 
-3、创建一个可以通过创建的权限策略访问您的机密的服务帐户，例如：
+```bash
+{
+   "Version": "2012-10-17",
+   "Statement": {
+     "Effect": "Allow",
+     "Action": [
+       "secretsmanager:DescribeSecret",
+       "secretsmanager:GetSecretValue"
+     ],
+     "Resource": "arn:aws:secretsmanager:REPLACEME:REPLACEME:secret:REPLACEME"
+   }
+}
+```
 
-4、接下来，创建 SecretProviderClass，如以下示例所示。请务必将 替换`region`为您所在的区域，并将替换`objectName`为您创建的 Secrets Manager 密钥的名称（**步骤 1**）：
+3、创建一个可以通过已创建的权限策略访问您的机密的服务账户，例如：
+
+```bash
+CLUSTER_NAME="REPLACE"
+ACCOUNT_ID="REPLACE" # replace with your AWS account ID
+ROLE_NAME="REPLACE" # name of a role that will be created in IAM
+POLICY_NAME="REPLACE" # the name of the policy you created earlier
+eksctl create iamserviceaccount \
+  --cluster=$CLUSTER_NAME \
+  --namespace=bitwarden \
+  --name=bitwarden-sa \
+  --role-name $ROLE_NAME \
+  --attach-policy-arn=arn:aws:iam::$ACCOUNT_ID:policy/$POLICY_NAME \
+  --approve
+```
+
+4、接下来，创建 SecretProviderClass，如以下示例所示。请务必将 `region` 替换为您所在的区域，并将`objectName` 替换为您创建的 Secrets Manager 机密的名称（**步骤 1**）：
+
+```bash
+cat <<EOF | kubectl apply -n bitwarden -f -
+apiVersion: secrets-store.csi.x-k8s.io/v1
+kind: SecretProviderClass
+metadata:
+  name: bitwarden-secrets-manager-csi
+  labels:
+    app.kubernetes.io/component: secrets
+  annotations:
+spec:
+  provider: aws
+  parameters:
+    region: REPLACE
+    objects: |
+      - objectName: "REPLACE"
+        objectType: "secretsmanager"
+        objectVersionLabel: "AWSCURRENT"
+        jmesPath:
+          - path: installationid
+            objectAlias: installationid
+          - path: installationkey
+            objectAlias: installationkey
+          - path: smtpusername
+            objectAlias: smtpusername
+          - path: smtppassword
+            objectAlias: smtppassword
+          - path: yubicoclientid
+            objectAlias: yubicoclientid
+          - path: yubicokey
+            objectAlias: yubicokey
+          - path: hibpapikey
+             objectAlias: hibpapikey
+          - path: sapassword #-OR- dbconnectionstring if external SQL
+            objectAlias: sapassword #-OR- dbconnectionstring if external SQL
+  secretObjects:
+  - secretName: "bitwarden-secret"
+    type: Opaque
+    data:
+    - objectName: installationid
+       key: globalSettings__installation__id
+    - objectName: installationkey
+       key: globalSettings__installation__key
+    - objectName: smtpusername
+       key: globalSettings__mail__smtp__username
+    - objectName: smtppassword
+       key: globalSettings__mail__smtp__password
+    - objectName: yubicoclientid
+       key: globalSettings__yubico__clientId
+    - objectName: yubicokey
+       key: globalSettings__yubico__key
+    - objectName: hibpapikey
+       key: globalSettings__hibpApiKey
+    - objectName: sapassword #-OR- dbconnectionstring if external SQL
+       key: SA_PASSWORD #-OR- globalSettings__sqlServer__connectionString if external SQL
+EOF
+```
 
 5、在您的 `my-values.yaml` 文件中，设置以下值：
+
+* `secrets.secretName` ：设置为 SecretProviderClass 中定义的 `secretName` （步骤 3）。
+* `secrets.secretProviderClass` ：设置为 SecretProviderClass 中定义的 `metedata.name` （第 3 步）。
+* `component.admin.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `component.api.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `component.attachments.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `component.events.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `component.icons.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `component.identity.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `component.notifications.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `component.scim.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `component.sso.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `component.web.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `database.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `serviceAccount.name` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `serviceAccount.deployRolesOnly` ：设置为 `true` 。

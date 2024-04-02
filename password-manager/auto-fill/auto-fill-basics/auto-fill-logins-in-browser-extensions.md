@@ -1,4 +1,4 @@
-# =浏览器扩展中的自动填充登录
+# 浏览器扩展中的自动填充登录
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-browser/)
@@ -26,9 +26,47 @@ Bitwarden 浏览器扩展有一个独特的**标签页**视图，它可以自动
 
 ## 内嵌自动填充菜单 <a href="#inline-auto-fill-menu" id="inline-auto-fill-menu"></a>
 
+使用内嵌自动填充菜单可以快速输入来自您 Bitwarden 密码库中的登录凭据。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/H7DjdJNvQH00yGNLf5gsC/da28dfa7ec407a3b4496123073cab255/2024-02-29_12-04-51.png?_a=BAJFJtWIB" %}
+自动填充菜单
+{% endembed %}
+
 ### 启用内嵌自动填充菜单 <a href="#enable-the-inline-auto-fill-menu" id="enable-the-inline-auto-fill-menu"></a>
 
+要启用内嵌自动填充菜单：
+
+1、登录并解锁 Bitwarden [浏览器扩展](../../../getting-started/getting-started-browserext.md)。
+
+2、选择 **⚙️设置** → **自动填充**，然后定位到**在表单字段显示自动填充菜单**下拉菜单。选择您首选的自动填充菜单行为。
+
+3、下一步，我们建议您禁用浏览器的自动填充选项。如果您的浏览器的自动填充功能已启用，它可能会与 Bitwarden 的自动填充菜单产生冲突。在[这里](../../../auto-fill/disable-a-browsers-built-in-password-manager.md)了解更多信息。
+
+Chrome 和 Brave 用户可以勾选**覆盖浏览器的自动填充设置**选项来禁用浏览器自带的自动填充。
+
 ### 使用内嵌自动填充菜单 <a href="#use-the-inline-auto-fill-menu" id="use-the-inline-auto-fill-menu"></a>
+
+要使用内嵌自动填充菜单：
+
+1、选择位于登录框中的 Bitwarden 图标。如果您尝试执行此操作时您的密码库已经锁定，菜单将提示您解锁密码库。
+
+2、将出现内联自动填充菜单，选择您希望用于网站的登录名。
+
+{% hint style="info" %}
+没有看到您想要使用的登录凭据吗？编辑密码库项目然后选择**自动填充并保存**，或在 URI 字段中手动输入网站地址。
+{% endhint %}
+
+3、如果尚未保存此站点的登录凭据，请选择 ✚**新增项目**，浏览器扩展将打开一个新的项目，您可以在其中保存新的登录凭据。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1nVpqyl5FuzMPIaKezwZ8c/eb0665b4957f94d3219d54450f36973d/Screenshot_2023-11-27_at_4.27.47_PM__2_.png?_a=BAJFJtWIB" %}
+自动填充创建项目
+{% endembed %}
+
+当基于[项目保存的 URI](../../../auto-fill/using-uris.md) 需要 HTTPS 时，浏览器扩展将在使用此方法自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点之前警告用户。
+
+{% hint style="info" %}
+如果内嵌自动填充菜单对您的浏览器造成意外干扰，可以通过按 **Esc** 键将其关闭。
+{% endhint %}
 
 ## 上下文菜单 <a href="#context-menu" id="context-menu"></a>
 
