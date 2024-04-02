@@ -1,4 +1,4 @@
-# =使用 Helm 自托管
+# 使用 Helm 自托管
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/self-host-with-helm/)
@@ -110,10 +110,87 @@ kubectl create secret generic custom-secret -n bitwarden \
 
 ### 证书设置示例 <a href="#example-certificate-setup" id="example-certificate-setup"></a>
 
+部署需要 TLS 证书和密钥，或者通过证书提供商创建一个。以下示例将引导您使用 [cert-manager](https://cert-manager.io/docs/) 生成一个由 Let's Encrypt 签发的证书：
+
+1、使用以下命令在集群上安装 cert-manager：
+
+```bash
+kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml
+```
+
+2、定义证书颁发者。在您的 DNS 记录指向您的集群之前，Bitwarden 建议在此示例中使用暂存配置。请务必将占位符 `email:` 替换为有效值：
+
+{% tabs %}
+{% tab title="Staging" %}
+```bash
+cat <<EOF | kubectl apply -n bitwarden -f -
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-staging
+spec:
+  acme:
+    server: https://acme-staging-v02.api.letsencrypt.org/directory
+    email: me@example.com
+    privateKeySecretRef:
+      name: tls-secret
+    solvers:
+      - http01:
+          ingress:
+            class: nginx #use "azure/application-gateway" for Application Gateway ingress
+EOF
+```
+{% endtab %}
+
+{% tab title="Production" %}
+```bash
+cat <<EOF | kubectl apply -n bitwarden -f -
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-production
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: me@example.com
+    privateKeySecretRef:
+      name: tls-secret
+    solvers:
+      - http01:
+          ingress:
+            class: nginx #use "azure/application-gateway" for Application Gateway ingress
+EOF
+```
+{% endtab %}
+{% endtabs %}
+
+3、如果还没有的话，请确保在 `my-values.yaml` 中设置 `general.ingress.cert.tls.name:` 和 `general.ingress.cert.tls.clusterIssuer:` 的值。在这个例子中，您需要设置为：
+
+* `general.ingress.cert.tls.name: tls-secret`
+* `general.ingress.cert.tls.clusterIssuer: letsencrypt-staging`
+
 ### 添加 rawManifest 文件 <a href="#adding-rawmanifest-files" id="adding-rawmanifest-files"></a>
 
+Bitwarden 自托管 Helm 图表允许您在安装之前或之后包含其他 Kubernetes 清单文件。为此，请更新图表的 `rawManifests` 部分（[了解更多](add-rawmanifest-files.md)）。例如，在您想使用除默认定义的 nginx 控制器以外的其他入口控制器的情况下，这非常有用。
+
 ## 安装图表 <a href="#install-the-chart" id="install-the-chart"></a>
+
+要使用 `my-values.yaml` 中的配置安装 Bitwarden，请运行以下命令：
+
+```bash
+helm upgrade bitwarden bitwarden/self-host --install --namespace bitwarden --values my-values.yaml
+```
+
+恭喜！Bitwarden 现已移动并在 `https://your.domain.com` 正常运行了，正如在 `my-values.yaml` 中所定义的那样。请在浏览器中访问网页密码库以确认其正在运行。您现在可以注册一个新账户然后登录。
+
+您需要设置 SMTP 配置和相关的机密信息，以便验证您的新账户的电子邮件。
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 ### 数据库备份与恢复 <a href="#database-backup-and-restore" id="database-backup-and-restore"></a>
+
+在[此仓库](https://github.com/bitwarden/helm-charts/tree/main/examples)中，我们提供了两个示例作业，用于在 Bitwarden 数据库 Pod 中备份和恢复数据库。如果您正在使用的是未作为此 Helm 图表的一部分部署的自己的 SQL Server 实例，请遵循您公司的备份和恢复策略。
+
+数据库备份和备份策略最终由实施者决定。备份可以在集群之外按照一定的时间间隔进行调度，也可以修改为在 Kubernetes 中创建 CronJob 对象进行调度。
+
+备份工作将为以前的备份创建带有时间戳的版本。当前备份简单地称为 `vault.bak` 。这些文件放在 MS SQL 备份持久卷中。还原任务将在同一持久卷中查找 `vault.bak` 。

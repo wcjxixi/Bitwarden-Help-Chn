@@ -236,7 +236,7 @@
       * [Windows 离线部署](self-hosting/install-and-deploy-guides/docker/windows-offline-deployment.md)
       * [Unified 部署 (Beta)](self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md)
     * [=Helm](self-hosting/install-and-deploy-guides/helm/README.md)
-      * [=使用 Helm 自托管](self-hosting/install-and-deploy-guides/helm/self-host-with-helm.md)
+      * [使用 Helm 自托管](self-hosting/install-and-deploy-guides/helm/self-host-with-helm.md)
       * [=Azure AKS 部署](self-hosting/install-and-deploy-guides/helm/azure-aks-deployment.md)
       * [OpenShift 部署](self-hosting/install-and-deploy-guides/helm/openshift-deployment.md)
       * [AWS EKS 部署](self-hosting/install-and-deploy-guides/helm/aws-eks-deployment.md)
