@@ -14,9 +14,7 @@ Bitwarden 密码库可以很容易地检索到相关的密码库项目。[基本
 
 检索框中的占位符文本将转换为指示当前检索的位置：
 
-{% embed url="https://bitwarden.com/_gatsby/image/8e7cd120403794a92d277ebcd1f1c91f/d1fd7d5296c1032bea4f4f389a5cd89a/Screen%20Shot%202022-05-16%20at%2010.09.29%20AM.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F2Mdb392zQHEfC44zhwLmGl%2F5a324b40f4e789d5c52180ebdfe786d2%2FScreen_Shot_2022-05-16_at_10.09.29_AM.png&a=w%3D776%26h%3D226%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.292Z" %}
-搜索集合
-{% endembed %}
+<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/e_vectorize/q_auto/f_svg/v1/ctf/7rncvj1f8mw7/2Mdb392zQHEfC44zhwLmGl/60b1d764cbaefcc3b5c5614186c31338/Screenshot_2024-02-27_at_11.14.14_AM.png?_a=BATAUVAA0" alt=""><figcaption><p>搜索文件夹</p></figcaption></figure>
 
 ## 基本检索 <a href="#applications-that-use-full-text-search" id="applications-that-use-full-text-search"></a>
 

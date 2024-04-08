@@ -22,6 +22,19 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2024.3.1
+
+此次发布包含：
+
+### **Password Manager**
+
+* Bitwarden 应用程序可使用新的语言：在社区翻译人员的贡献下，Bitwarden 应用程序现在提供了新的语言选项！[点击这里](miscellaneous/localization.md)查看完整的语言列表。[点击这里](https://contributing.bitwarden.com/contributing/#localization-l10n)了解更多关于 Bitwarden 本地化的信息。
+* **桌面应用程序硬件加速**：Bitwarden 桌面应用程序现在可以选择打开或关闭硬件加速以优化性能。该设置默认启用。
+
+### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+
+* **批量将项目分配到集合**：从管理控制台可以将组织项目批量分配到集合。了解更多。
+
 ## 2024.3.0
 
 此次发布包含：
