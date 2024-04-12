@@ -37,7 +37,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### **管理控制台** <a href="#admin-console" id="admin-console"></a>
 
-* **批量将项目分配到集合**：从管理控制台可以将组织项目批量分配到集合。了解更多。
+* **批量将项目分配到集合**：从管理控制台可以将组织项目批量分配到集合。[了解更多](organizations/collections.md#collections-ji-he-storing-passkeys-cun-chu-mi-ma-vault-administration-import-export-autofill-bitward)。
 
 ## 2024.3.0
 
