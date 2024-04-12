@@ -24,6 +24,10 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ## 2024.3.1
 
+{% hint style="success" %}
+随着[最近迁移到新的权限结构](admin-console/organization-basics/collection-management.md#collection-management-settings)，为您的组织带来了更大的集合管理灵活性，未分配给[集合](organizations/collections.md)的密码库项目现在不再显示在您的密码管理器的**所有保管库**视图中了。[了解如何访问这些项目](miscellaneous/unassigned-vault-items-moved-to-admin-console.md)。
+{% endhint %}
+
 此次发布包含：
 
 ### **Password Manager**
