@@ -26,17 +26,17 @@
 
 在 Bitwarden 密码库中，新字段现在将显示已存储的通行密钥。新的通行密钥保存后，可以从任意 Bitwarden 密码库查看该项目，该项目位于**通行密钥**字段中。
 
-{% embed url="https://bitwarden.com/_gatsby/image/b5b3c6f21636107b8d055eaab91ce07b/d4b781c8bd57cc67014033106ffbc097/Passkey%20vault%20item.webp?eu=d78653b7e2caa8d4596aa18a397a666de53851fdac0563863963b6a949fa99d271fb4a03739c2ee528690f8ad7e747e965c37c661eead4d9c9bb4aa7ee66f95d01800cb866bb7353572c92afb1f653433ac01850a58a9a08f03e2687b1b4b3701c06142aac72ee89e4ad3762badb6b76aaf5ac317a9bf629b7471d4a985c27ad27f8c59a7000b09bf400e8a4b0fa4f979db1255a07dcec3741281a7e18a84cf8e1f25b776e77390c3c97ed1fba7ec7e43b1c68765c0e52a464688450ae3e37c5e5f3f70b8a7b28e6aac8317183cab1e0bc59ef7123aea061f8c7673e6154e846f0a23ba985&a=w%3D800%26h%3D689%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A48.096Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2SofQpuQstpo6gnIg9irwM/735cf5646450f939707a9cc1f27bcd0e/2024-04-09_14-25-56.png?_a=BAJFJtWIB" %}
 通行密钥密码库项目
 {% endembed %}
-
-通行密钥字段不可编辑，该字段包含通行密钥的创建日期。
 
 ### 创建新的通行密钥 <a href="#create-a-new-passkey" id="create-a-new-passkey"></a>
 
 在网站或应用程序上创建新的通行密钥时，Bitwarden 会提示您将此通行密钥存储在 Bitwarden 浏览器扩展中。
 
-<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/e_vectorize/q_auto/f_svg/v1/ctf/7rncvj1f8mw7/3kj9zFGb1nJgW236SUaBON/ace40f6c363a533381be89f5ca579a07/Screenshot_2024-03-06_at_1.01.15_PM.png?_a=BATAUVAA0" alt=""><figcaption><p>保存通行密钥</p></figcaption></figure>
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3kj9zFGb1nJgW236SUaBON/ace40f6c363a533381be89f5ca579a07/Screenshot_2024-03-06_at_1.01.15_PM.png?_a=BAJFJtWIB" %}
+保存通行密钥
+{% endembed %}
 
 {% hint style="info" %}
 如果您不希望将通行密钥存储在 Bitwarden 密码库中，请选择**使用浏览器**。
@@ -48,18 +48,11 @@
 每个登录项目只能保存一个通行密钥。如果一个凭证保存在多个地方，例如作为两个登录项目分别保存在个人密码库和组织密码库中，则每个登录项目都可以保存不同的通行密钥。
 {% endhint %}
 
-<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/e_vectorize/q_auto/f_svg/v1/ctf/7rncvj1f8mw7/2GnYjzxkUFsYftwOSKz1Fi/7cf67ddcbf93581f57c97218b9553e4f/Screenshot_2024-03-06_at_1.02.00_PM.png?_a=BATAUVAA0" alt=""><figcaption><p>为现有登录保存通行密钥</p></figcaption></figure>
-
-要覆盖现有的通行密钥：
-
-1. 从您选择的网站或服务开始创建一个新的通行密钥。
-2. 选择您想要存储新通行密钥的现有登录项目，然后选择**保存通行密钥**。
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2GnYjzxkUFsYftwOSKz1Fi/7cf67ddcbf93581f57c97218b9553e4f/Screenshot_2024-03-06_at_1.02.00_PM.png?_a=BAJFJtWIB" %}
+为现有登录保存通行密钥
+{% endembed %}
 
 在这里测试一下 [https://demo.yubico.com/playground](https://demo.yubico.com/playground)。
-
-{% hint style="info" %}
-无法在密码库项目视图中编辑通行密钥字段。如果同一网站需要额外的通行密钥，请保存一个与新的通行密钥相关联的新的登录项目。
-{% endhint %}
 
 ### 使用 Bitwarden 中存储的通行密钥登录网站 <a href="#sign-in-to-a-website-using-a-passkey-stored-in-bitwarden" id="sign-in-to-a-website-using-a-passkey-stored-in-bitwarden"></a>
 
@@ -72,6 +65,17 @@
 {% hint style="info" %}
 如果此登录项目启用了主密码重新提示，您将需要重新输入主密码才能访问通行密钥。
 {% endhint %}
+
+### 删除密码库项目的通行密钥 <a href="#delete-vault-item-passkey" id="delete-vault-item-passkey"></a>
+
+要从密码库项目中删除通行密钥字段：
+
+1. 从密码管理器 Web 应用程序访问密码库项目**编辑**界面。
+2. 选择**通行密钥**字段的 ⛔删除图标。
+
+
+
+<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/448nZ5ybyis0nUEwWsq6kt/44632756c8ddcacb0678608b53342ac2/2024-04-09_10-57-481.png?_a=BAJFJtWIB" alt=""><figcaption><p>通行密钥删除</p></figcaption></figure>
 
 ## 关闭通行密钥提示 <a href="#turn-off-passkey-prompt" id="turn-off-passkey-prompt"></a>
 
