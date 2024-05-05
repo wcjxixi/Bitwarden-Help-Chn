@@ -22,6 +22,24 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2024.4.2
+
+此次发布包含：
+
+### **Password Manager**
+
+* **在移动应用程序上使用通行密钥**：密码管理器移动应用程序现在可以使用通行密钥创建和登录。此功能适用于 iOS 系统，安卓系统为测试版。[了解更多](password-manager/vault-basics/storing-passkeys.md)。
+* **删除已存储的通行密钥**：现在可以使用 Bitwarden 浏览器扩展和桌面应用程序删除存储在 Bitwarden 登录项目中的通行密钥。[了解更多](password-manager/vault-basics/storing-passkeys.md)。
+
+### **Secrets Manager**
+
+* **新的集成页面**：通过 Secrets Manager Web 应用程序中的新页面快速访问 Secrets Manager 集成。
+* **Secrets Manager CLI Docker 映像**：Bitwarden Secrets Manager CLI 现在已作为 Docker 镜像的形式提供。[了解更多](secrets-manager/developer-tools/secrets-manager-cli.md)。
+
+## Bitwarden Authenticator
+
+介绍全新的 Bitwarden Authenticator 独立移动应用程序。使用 Bitwarden Authenticator 生成用于应用程序和网站双因素身份验证的验证码。从应用商店下载或了解更多。
+
 ## 2024.4.1
 
 此次发布包含：

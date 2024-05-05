@@ -1,10 +1,16 @@
-# 存储通行密钥
+# =存储通行密钥
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/storing-passkeys/)
 {% endhint %}
 
 可以通过 Bitwarden 密码管理器密码库存储和使用通行密钥。使用 Bitwarden 浏览器扩展，用户可以登录自己喜欢的具有通行密钥登录功能的应用程序和网站。通行密钥是一种安全、无密码的替代方案，可供用户跨设备登录各种服务。
+
+{% hint style="info" %}
+在 iOS 上，存储和使用通行密钥要求版本 17.0 或更高版本。了解更多。
+
+在 Android 上，存储和使用通行密钥要求 14.0 或更高版本。可能需要额外的设置步骤。了解更多。
+{% endhint %}
 
 通行密钥根据 [FIDO 联盟](https://fidoalliance.org/overview/)制定的标准开发，允许用户保护其账户安全，并绕过标准密码身份验证带来的漏洞（如网络钓鱼）。存储的通行密钥受到 Bitwarden 可信的端到端加密技术的保护。
 

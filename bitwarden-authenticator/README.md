@@ -1,0 +1,2 @@
+# Bitwarden Authenticator
+
