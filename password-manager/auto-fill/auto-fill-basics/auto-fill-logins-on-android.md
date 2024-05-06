@@ -1,4 +1,4 @@
-# =Android 上的自动填充登录
+# Android 上的自动填充登录
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-android/)
@@ -41,7 +41,7 @@ Android 账户切换
 Android 自动填充服务
 {% endembed %}
 
-您将看到两个选项。第一个（上图中，Twitter）将使用匹配的 URI 自动填充第一个登录名（上图，my\_username）。第二个（上面的“使用 Bitwarden 自动填充”）将允许您从具有匹配 URI 的登录列表中进行选择。
+您将看到两个选项。第一个（上图中的 **Twitter**）将使用匹配的 URI 自动填充第一个登录名（上图中的 `my_username`）。第二个（上图中的 **使用 Bitwarden 自动填充**）将允许您从具有匹配 URI 的登录列表中进行选择。
 
 要启用自动填充服务：
 
@@ -60,7 +60,7 @@ Android 自动填充服务
 需先启用**自动填充服务**，才能启用内嵌自动填充。
 {% endhint %}
 
-内嵌自动填充（_要求 Android 11+、兼容的 IME (Input Method Editor) 并且已启用**自动填充服务**_）将自动填充服务叠加层移动至键盘中：
+内嵌自动填充（要求 Android 11+、兼容的 IME (Input Method Editor) 并且已启用**自动填充服务**）将自动填充服务叠加层移动至键盘中：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2LxDxR7KcVd68U9UydYxat/e13bbf0b49f9a4b50b3b0d93fdd2aea8/inline.png?fm=webp&h=281&q=50&w=378" %}
 GBoard 上的内嵌自动填充
@@ -78,7 +78,9 @@ GBoard 上的内嵌自动填充
 
 当聚焦在设备上的输入字段时，无障碍方式将叠加一个弹出窗口，用于打开您的密码库来浏览[匹配的登录项目](../../../auto-fill/using-uris.md)：
 
-![无障碍提示](../../../.gitbook/assets/drawover.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5M8b0oAB3G1eLNv307fWNi/bac88b0acd1815d4fec2dc9b721e596b/drawover.png?_a=BAJFJtWIB" %}
+无障碍弹出窗口
+{% endembed %}
 
 要启用无障碍方式：
 
@@ -103,7 +105,9 @@ GBoard 上的内嵌自动填充
 
 当聚焦在设备上的输入字段时，Draw-Over（_要求在 Android 6+ 上使用无障碍_）将叠加一个弹出窗口，用于打开您的密码库来浏览[匹配的登录项目](../../../auto-fill/using-uris.md)：
 
-![无障碍提示](../../../.gitbook/assets/drawover.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5M8b0oAB3G1eLNv307fWNi/bac88b0acd1815d4fec2dc9b721e596b/drawover.png?_a=BAJFJtWIB" %}
+无障碍弹出窗口
+{% endembed %}
 
 要启用 Draw-Over 方式：
 
@@ -118,8 +122,59 @@ GBoard 上的内嵌自动填充
 如果您仍然无法使用 Android 自动填充功能，请[联系我们](https://bitwarden.com/contact)。
 {% endhint %}
 
+## 使用通行密钥 (beta) <a href="#using-passkeys" id="using-passkeys"></a>
+
 ### 设置 Bitwarden 以使用通行密钥 <a href="#setup-bitwarden-for-use-with-passkeys" id="setup-bitwarden-for-use-with-passkeys"></a>
+
+在 Google Play 商店中打开 Bitwarden 密码管理器，然后点击**加入测试版**中的**加入**。Bitwarden 应用程序更新到 Beta 版本后，转到**设置** → **自动填充**并点击**通行密钥管理**以访问 Android 设置，将 Bitwarden 配置为您的通行密钥提供程序。
+
+{% hint style="danger" %}
+在 Android 上使用 Bitwarden 通行密钥目前处于测试阶段。要将 Bitwarden 激活为您的首选通行密钥提供程序，可能需要做以下操作：
+
+* 在您的网络浏览器标识（例如 `chrome://flags`）中启用第三方通行密钥提供程序。
+* 更新到最新版本后，禁用然后重新启用 Bitwarden 作为您的自动填充提供程序。
+* 更改上述设置后重启您的手机。
+* 移除 Google 密码管理器中存储的所有通行密钥，因为 Android 会优先选择此提供程序。
+
+另请注意，Android 不允许 Bitwarden 等第三方通行密钥提供商支持基于通行密钥的 2FA（也称为「不可发现的凭据」）。
+
+此外，虽然支持网络浏览器通行密钥，但对应用程序的支持很快就会在未来的测试版本中推出。
+{% endhint %}
 
 ### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
 
+在网站或应用程序上创建新的通行密钥时，Android 应用程序将提示您存储此通行密钥：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4mBZ6s599BKxzn86CDwBhH/e2a313ab3dc263cd93f5da24e7cad778/passkey-android-1__1_.png?_a=BAJFJtWIB" %}
+创建通行密钥
+{% endembed %}
+
+选择**创建**。
+
+{% hint style="info" %}
+如果您不想将此通行密钥存储在 Bitwarden 中，请选择**以另一种方式保存**，或者选择**更多已保存的登录**以使用未存储在 Bitwarden 中的通行密钥登录。
+{% endhint %}
+
+如果该服务已存在一个通行密钥，Bitwarden 将允许您通过选择 **➕** 图标以创建一个新的项目来保存新的通行密钥，或覆盖现有的通行密钥：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/m8rHHqT8hmuEY7wB9WKld/573de4ef230d2d9cdbdcd94574b55168/passkey-android-2__1_.png?_a=BAJFJtWIB" %}
+保存或覆盖通行密钥
+{% endembed %}
+
+{% hint style="info" %}
+每个登录项目只能保存一个通行密钥。如果一个凭证保存在多个地方，例如作为两个登录项目分别保存在个人密码库和组织密码库中，则每个登录项目都可以保存不同的通行密钥。
+{% endhint %}
+
 ### 使用存储在 Bitwarden 中的通行密钥登录 <a href="#sign-in-using-a-passkey-stored-in-bitwarden" id="sign-in-using-a-passkey-stored-in-bitwarden"></a>
+
+要使用 Bitwarden 中存储的密钥，请在网站上启动密钥登录。移动应用程序将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2COiWur13OpX1QZ7Fy0tbR/65e2b4d39e2387fdcb0ba380ab52fa04/passkey-android-3__1_.png?_a=BAJFJtWIB" %}
+使用通行密钥登录
+{% endembed %}
+
+选择**登录**以使用您的通行密钥登录。
+
+{% hint style="info" %}
+如果您不想将此通行密钥存储在 Bitwarden 中，请选择**以另一种方式保存**，或者选择**更多已保存的登录**以使用未存储在 Bitwarden 中的通行密钥登录。
+{% endhint %}

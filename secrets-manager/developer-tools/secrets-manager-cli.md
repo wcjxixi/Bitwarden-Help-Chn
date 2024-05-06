@@ -4,7 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-cli/)
 {% endhint %}
 
-Secrets Manager 命令行界面 (CLI) 是用于检索和注入您的机密的强大工具。Secrets Manager CLI 通过 `create`、`delete`、`edit` 和 `list` 您的机密和工程来组织您的密码库。
+Secrets Manager 命令行界面 (CLI) 是用于检索和注入您的机密的强大工具。Secrets Manager CLI 通过 `create`、`delete`、`edit` 和 `list` 您的机密和工程来组织您的密码库。Secrets Manager CLI 有两种运行选项：
+
+* [标准用法](secrets-manager-cli.md#download-and-install)
+* [Docker 用法](secrets-manager-cli.md#run-with-docker)
 
 Secrets Manager CLI 是自描述的。在命令行中，使用以下命令了解有关可用命令的更多信息：
 
@@ -17,6 +20,20 @@ bws --help, -h
 CLI 可以在 Windows、macOS 和 Linux 发行版上跨平台使用。要下载并安装 Secrets Manager CLI：
 
 从 [https://github.com/bitwarden/sdk/releases](https://github.com/bitwarden/sdk/releases) 下载 Secrets Manager CLI。
+
+## 使用 Docker 运行 <a href="#run-with-docker" id="run-with-docker"></a>
+
+Secrets Manager CLI 还可以与 Docker 一起运行。示例 Dockerfile 位于 [Bitwarden Secrets Manager SDK 存储库](https://github.com/bitwarden/sdk/tree/84c73826d58e848d92b7b86f9595d9169c541f20/crates/bws)中。
+
+您可以使用以下命令运行 Docker 映像：
+
+```bash
+docker run --rm -it bitwarden/bws --help
+```
+
+{% hint style="info" %}
+如果您想在主机和容器中使用相同的配置文件路径，则父目录必须已存在于主机和容器中。
+{% endhint %}
 
 ## 身份验证 <a href="#authentication" id="authentication"></a>
 
@@ -39,6 +56,10 @@ bws list secrets --access-token 0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHn
 ```
 {% endtab %}
 {% endtabs %}
+
+{% hint style="danger" %}
+如果您的工作流程使用许多单独的会话（每次使用访问令牌进行身份验证都构成一个「会话」）在短时间内从同一 IP 地址发出请求，您可能会遇到速率限制。
+{% endhint %}
 
 ## 命令 <a href="#commands" id="commands"></a>
 
@@ -411,6 +432,14 @@ bws config server-base http://third_hosted_server.com --config-file ~/.bws/alt_c
 
 ```batch
 bws get secret 2863ced6-eba1-48b4-b5c0-afa30104877a --config-file ~/.bws/alt_config --profile alt_dev
+```
+
+## 配置 Docker <a href="#config-docker" id="config-docker"></a>
+
+运行以下命令将配置文件传递到 Docker 容器：
+
+```bash
+docker run -it -v /PATH/TO/YOUR/CONFIGFILE:/home/app/.bws/config -e BWS_ACCESS_TOKEN=<ACCESS_TOKEN_VALUE> bitwarden/bws secret list
 ```
 
 ## 选项 <a href="#options" id="options"></a>
