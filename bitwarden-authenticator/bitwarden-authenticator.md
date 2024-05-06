@@ -57,7 +57,7 @@ Bitwarden Authenticator
 
 **问：新的 Bitwarden Authenticator 是 Bitwarden 密码管理器的一部分吗？**
 
-**答：**Bitwarden Authenticator 是一款独立的应用程序，可供所有人使用，甚至是非 Bitwarden 客户。 Bitwarden 密码管理器将保留一个集成的身份验证器，供高级用户或付费组织成员使用。
+**答：**Bitwarden Authenticator 是一款独立的应用程序，可供所有人使用，甚至是非 Bitwarden 客户。 Bitwarden Password Manager 将保留一个集成的身份验证器，供高级用户或付费组织成员使用。
 
 **问：我可以使用 Bitwarden Authenticator 将 2FA 添加到我的 Bitwarden 账户吗？**
 

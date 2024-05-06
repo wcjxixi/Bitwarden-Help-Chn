@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/integrated-authenticator/)
 {% endhint %}
 
-密码管理器集成身份验证是 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 等专用身份验证应用程序的替代解决方案，您可以使用它来验证使用两步登录的网站和应用程序的身份。集成身份验证使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based\_One-time\_Password\_algorithm) (TOTP)，每 30 秒轮换一次。
+Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 等专用身份验证应用程序的替代解决方案，您可以使用它来验证使用两步登录的网站和应用程序的身份。集成身份验证使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based\_One-time\_Password\_algorithm) (TOTP)，每 30 秒轮换一次。
 
 {% hint style="info" %}
 密钥存储适用于所有账户。但 TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企业）成员资格。
@@ -20,16 +20,14 @@
 
 ## 生成 TOTP 代码 <a href="#generate-totp-codes" id="generate-totp-codes"></a>
 
-每个支持验证器 TOTP 或双因素认证 (2FA) 的网站处理配置的方式不一样。从你要访问的每个单独的网站或服务（例如 google.com、github.com）开始设置。
+在 Bitwarden Password Manager 中，你可以使用两种方式生成 TOTP：
 
-在 Bitwarden 中，你可以使用两种方式生成 TOTP：
-
-* 通过在 Bitwarden 移动应用中[扫描二维码](totp.md#scan-a-qr-code)
+* 通过在 Bitwarden 移动应用或浏览器扩展中[扫描二维码](totp.md#scan-a-qr-code)
 * 通过在任一个 Bitwarden 应用程序中[手动输入安全代码](totp.md#manually-enter-a-secret)
 
 ### 通过扫描 QR 码 <a href="#scan-a-qr-code" id="scan-a-qr-code"></a>
 
-完成以下步骤，以从您选择的应用程序设置 Bitwarden 验证器：
+完成以下步骤，以从您选择的应用程序设置集成身份验证：
 
 {% tabs %}
 {% tab title="iOS 或 Android App" %}
@@ -53,7 +51,7 @@
 {% endtab %}
 {% endtabs %}
 
-设置完成后，Bitwarden 验证器将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或应用程序的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
+设置完成后，集成身份验证将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或应用程序的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
 
 ### 通过手动输入安全密钥 <a href="#manually-enter-a-secret" id="manually-enter-a-secret"></a>
 
@@ -64,7 +62,7 @@
 3. 在此界面底部点击**手动输入代码**连接。
 4. 将安全密钥粘贴到**验证器密钥**字段中，然后点击**添加 TOTP**。
 
-设置完成后，Bitwarden 验证器将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或应用程序的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
+设置完成后，集成身份验证将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或应用程序的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
 
 ## 使用生成的代码 <a href="#use-generated-codes" id="use-generated-codes"></a>
 
@@ -72,7 +70,9 @@
 TOTP 依赖于基于时间的代码生成。如果您的设备与服务器相比，其时间不正确，它将生成不起作用的代码。如果您的 TOTP 代码有问题，请将设备的时间和时区设置为**自动**。
 {% endhint %}
 
-Bitwarden 移动应用程序和浏览器扩展程序将在自动填充后自动将 TOTP 代码复制到您的设备剪贴板上，除非**页面加载时自动填充**选项处于活动状态。在自动填充成功后，立即从剪贴板上粘贴以使用您的 TOTP，或如果使用浏览器扩展，则使用上下文菜单：
+Bitwarden 浏览器扩展将自动填充您的 TOTP 代码，除非**页面加载时自动填充**选项处于活动状态。在这种情况下，浏览器扩展程序还会将 TOTP 代码复制到剪贴板，以便轻松粘贴到表单中。移动应用程序只会在自动填充后自动将 TOTP 代码复制到您设备的剪贴板。
+
+在浏览器扩展上，您还可以从上下文菜单复制 TOTP 代码：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5YmvBLK63g2xMnUewNVjOg/fbaaf6ff2987bee4623ef65952809085/be-totpcopy.png?fm=webp&h=526&q=50&w=865" %}
 浏览器扩展上下文菜单
