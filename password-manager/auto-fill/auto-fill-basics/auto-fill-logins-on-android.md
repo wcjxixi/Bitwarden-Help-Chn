@@ -9,7 +9,7 @@ Bitwarden 可以自动填充您的密码，以便您可以无缝登录网站和�
 如果您使用[账户切换](../../../your-vault/account-switching.md)，将使用最后一个活动账户的项目来自动填充。
 
 {% hint style="success" %}
-_大多数_自动填充方案都依赖登录项目的 URI 属性。如果您不熟悉 URI，请阅读 [URI 的使用](../../../auto-fill/using-uris.md)一文。
+大多数自动填充方案都依赖登录项目的 URI 属性。如果您不熟悉 URI，请阅读 [URI 的使用](../../../auto-fill/using-uris.md)一文。
 
 请注意，移动端的自动填充当前不支持自定义字段。
 {% endhint %}
@@ -35,13 +35,13 @@ Android 账户切换
 
 ### 自动填充服务 <a href="#autofill-service" id="autofill-service"></a>
 
-当聚焦在设备上具有[匹配的登录项目](../../../auto-fill/using-uris.md)的输入字段时，自动填充服务（_要求 Android 8+_）将叠加一个弹出窗口。密码库被解锁后，系统会为您提供立即自动填充或打开密码库的选项：
+当聚焦在设备上具有[匹配的登录项目](../../../auto-fill/using-uris.md)的输入字段时，自动填充服务（要求 Android 8+）将叠加一个弹出窗口。密码库被解锁后，系统会为您提供立即自动填充或打开密码库的选项：
 
-<div align="center">
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1fIoPhOLMcXzvd0Y8aw1pm/7be8b29042323210b92ab7b8113fe792/only-autofill-service.png?_a=BAJFJtWIB" %}
+Android 自动填充服务
+{% endembed %}
 
-<img src="../../../.gitbook/assets/only-autofill-service.png" alt="Android 自动填充登录">
-
-</div>
+您将看到两个选项。第一个（上图中，Twitter）将使用匹配的 URI 自动填充第一个登录名（上图，my\_username）。第二个（上面的“使用 Bitwarden 自动填充”）将允许您从具有匹配 URI 的登录列表中进行选择。
 
 要启用自动填充服务：
 

@@ -1,4 +1,4 @@
-# =iOS 上的自动填充登录
+# iOS 上的自动填充登录
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-ios/)
@@ -49,14 +49,14 @@ iOS 上的自动填充有两种：
 
 3、点击**密码选项**。
 
-4、打开**自动填充密码和通行密钥**开关，然后从**使用密码和通行密钥来源：**列表中选中 **Bitwarden**：
+4、打开**自动填充密码和通行密钥**开关，然后从**密码和通行密钥来源：**列表中选中 **Bitwarden**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5jxVP3WslH4ppIdFq9viqX/fa255fd5cdf68bd1bb5d363f3fe44988/IMG_5421.png?_a=BAJFJtWIB" %}
 iOS 密码选项界面
 {% endembed %}
 
 {% hint style="success" %}
-我们强烈建议在**使用密码和通行密钥来源：**列表中禁用任何其他自动填充服务（例如钥匙串）。
+我们强烈建议在**密码和通行密钥来源：**列表中禁用任何其他自动填充服务（例如钥匙串）。
 {% endhint %}
 
 **让我们测试一下自动填充以确保其可以正常工作：**
@@ -117,6 +117,45 @@ iOS 上的自动填充
 
 ### 设置 Bitwarden 以使用通行密钥 <a href="#setup-bitwarden-for-use-with-passkeys" id="setup-bitwarden-for-use-with-passkeys"></a>
 
+要使用下述功能，请打开 iOS **设置**应用程序然后导航至**密码** → **密码选项**。打开以下选项：
+
+* 打开**自动填充密码和通行密钥**。
+* 在**密码和通行密钥来源：** 列表中打开 **Bitwarden**。
+
 ### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
 
+在网站或应用程序上创建新的通行密钥时，iOS 应用程序将提示您存储此通行密钥：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6rccoaRtUBbEnUjQxfSTNi/d033196df75950bae5bd7a20e8a7edd2/passkey-ios-1__1_.png?_a=BAJFJtWIB" %}
+创建通行密钥
+{% endembed %}
+
+选择**继续**。
+
+{% hint style="info" %}
+如果您不想将此通行密钥存储在 Bitwarden 中，请选择**其他选项**，或者选择**其他登录选项**以使用未存储在 Bitwarden 中的通行密钥登录。
+{% endhint %}
+
+如果该服务已存在一个通行密钥，Bitwarden 将允许您通过选择 **➕** 图标以创建一个新的项目来保存新的通行密钥，或覆盖现有的通行密钥：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6L5s6XBFjvaaEiDZ68m00Q/a130745c2276068fd0be066a47a34684/passkey-ios-2__1_.png?_a=BAJFJtWIB" %}
+保存或覆盖通行密钥
+{% endembed %}
+
+{% hint style="info" %}
+每个登录项目只能保存一个通行密钥。如果一个凭证保存在多个地方，例如作为两个登录项目分别保存在个人密码库和组织密码库中，则每个登录项目都可以保存不同的通行密钥。
+{% endhint %}
+
 ### 使用存储在 Bitwarden 中的通行密钥登录 <a href="#sign-in-using-a-passkey-stored-in-bitwarden" id="sign-in-using-a-passkey-stored-in-bitwarden"></a>
+
+要使用 Bitwarden 中存储的密钥，请在网站上启动密钥登录。移动应用程序将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/b6fY5o4CBxhW4ZjDIpanR/56ffdbf1ff93b7387be273bc7df15e6b/passkey-ios-3__1_.png?_a=BAJFJtWIB" %}
+使用通行密钥登录
+{% endembed %}
+
+选择**继续**。
+
+{% hint style="info" %}
+如果您不想将此通行密钥存储在 Bitwarden 中，请选择**其他选项**，或者选择**其他登录选项**以使用未存储在 Bitwarden 中的通行密钥登录。
+{% endhint %}
