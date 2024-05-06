@@ -1,4 +1,4 @@
-# iOS 上的自动填充登录
+# =iOS 上的自动填充登录
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-ios/)
@@ -36,7 +36,7 @@ iOS 上的自动填充有两种：
 {% endhint %}
 
 {% hint style="info" %}
-如果您使用的 Argon2id 的 KDF 内存值高于 48 MB，则每次启动 iOS 自动填充或通过共享表单创建新的 Send 时，都会显示警告对话框。要避免出现此消息，请在此处调整 Argon2id 设置或启用[生物识别解锁](../../../your-vault/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
+如果您使用的 Argon2id 的 KDF 内存值高于 48 MB，则每次启动 iOS 自动填充或通过共享表单创建新的 Send 时，都会显示警告对话框。要避免出现此消息，请在[此处](../../../security/kdf-algorithms.md#argon2id)调整 Argon2id 设置或启用[生物识别解锁](../../../your-vault/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
 {% endhint %}
 
 ### 键盘自动填充 <a href="#keyboard-auto-fill" id="keyboard-auto-fill"></a>
@@ -47,14 +47,16 @@ iOS 上的自动填充有两种：
 
 2、点击**密码**。&#x20;
 
-3、点击**自动填充密码**。
+3、点击**密码选项**。
 
-4、打开自动填充密码开关，并从**允许的填充来源**列表中选中 **Bitwarden**：
+4、打开**自动填充密码和通行密钥**开关，然后从**使用密码和通行密钥来源：**列表中选中 **Bitwarden**：
 
-![iOS 自动填充界面](../../../.gitbook/assets/autofill-ios-enable.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5jxVP3WslH4ppIdFq9viqX/fa255fd5cdf68bd1bb5d363f3fe44988/IMG_5421.png?_a=BAJFJtWIB" %}
+iOS 密码选项界面
+{% endembed %}
 
 {% hint style="success" %}
-我们强烈建议在继续操作之前，在允许的填充来源列表中禁用任何其他自动填充服务（例如钥匙串）。
+我们强烈建议在**使用密码和通行密钥来源：**列表中禁用任何其他自动填充服务（例如钥匙串）。
 {% endhint %}
 
 **让我们测试一下自动填充以确保其可以正常工作：**
@@ -63,7 +65,9 @@ iOS 上的自动填充有两种：
 
 6、在登录界面点击用户名或密码字段。键盘将上滑出一个匹配的登录 (`my_username`) 或 **🔑密码**按钮：
 
-![iOS 上的自动填充](../../../.gitbook/assets/autofill-ios.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/vQG8BTWlHg2AQxBlXe4S3/63f2a5e9c32c2f38b29ec0ab0af24d57/autofill-ios.jpeg?_a=BAJFJtWIB" %}
+iOS 上的自动填充
+{% endembed %}
 
 如果显示一个[匹配的登录](../../../auto-fill/using-uris.md)，请点击以自动填充。如果显示 **🔑密码**按钮，请点击它浏览您的密码库以搜索要使用的登录项目。如果显示 **🔑密码**按钮，可能是因为您的密码库中没有具有匹配 URI 的项目。
 
@@ -77,30 +81,42 @@ iOS 上的自动填充有两种：
 
 1、打开 Bitwarden iOS 应用程序并点击 **⚙️设置**。
 
-2、在自动填充部分点击**应用程序扩展**选项。&#x20;
+2、点击**自动填充**选项。
 
-3、点击**启用应用程序扩展**按钮。&#x20;
+3、在自动填充部分点击**应用程序扩展**选项。&#x20;
 
-4、从上滑出的分享菜单中，点击 **Bitwarden**。&#x20;
+4、点击**启用应用程序扩展**按钮。&#x20;
+
+5、从上滑出的分享菜单中，点击 **Bitwarden**。&#x20;
 
 绿色的`扩展已激活！`消息指示已成功激活此选项。
 
 **让我们测试一下应用程序扩展以确保其可以正常工作：**
 
-5、打开您设备的网页浏览器并导航一个您当前未登录的网站。
+6、打开您设备的网页浏览器并导航一个您当前未登录的网站。
 
-6、点击**分享**图标。
+7、点击**分享**图标。
 
-7、向下滚动并点击 **Bitwarden** 选项：
+8、向下滚动并点击 **Bitwarden** 选项：
 
-![分享菜单中的 Bitwarden](../../../.gitbook/assets/extension.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Icxd3YqcXjBrjHVAeluwm/8be732b1ed2adebfd0a7af00f7150a97/extension.png?_a=BAJFJtWIB" %}
+共享菜单中的 Bitwarden
+{% endembed %}
 
 {% hint style="info" %}
 如果启用了[使用生物识别解锁](../../../your-vault/unlocking-with-biometrics.md)，则首次点击此选项时，系统将提示您验证您的主密码。
 {% endhint %}
 
-8、Bitwarden 界面将在您的设备上向上滑出，并列出此网站的[匹配登录项目](../../../auto-fill/using-uris.md)。点击该项目以自动填充。
+9、Bitwarden 界面将在您的设备上向上滑出，并列出此网站的[匹配登录项目](../../../auto-fill/using-uris.md)。点击该项目以自动填充。
 
 {% hint style="success" %}
 如果未列出登录项目，则可能是因为您的密码库中没有与 [URI 匹配](../../../auto-fill/using-uris.md)的项目。
 {% endhint %}
+
+## 使用通行密钥 <a href="#using-passkeys" id="using-passkeys"></a>
+
+### 设置 Bitwarden 以使用通行密钥 <a href="#setup-bitwarden-for-use-with-passkeys" id="setup-bitwarden-for-use-with-passkeys"></a>
+
+### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
+
+### 使用存储在 Bitwarden 中的通行密钥登录 <a href="#sign-in-using-a-passkey-stored-in-bitwarden" id="sign-in-using-a-passkey-stored-in-bitwarden"></a>

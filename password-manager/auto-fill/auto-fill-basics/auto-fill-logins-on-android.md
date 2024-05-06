@@ -1,4 +1,4 @@
-# Android 上的自动填充登录
+# =Android 上的自动填充登录
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-android/)
@@ -117,3 +117,9 @@ GBoard 上的内嵌自动填充
 
 如果您仍然无法使用 Android 自动填充功能，请[联系我们](https://bitwarden.com/contact)。
 {% endhint %}
+
+### 设置 Bitwarden 以使用通行密钥 <a href="#setup-bitwarden-for-use-with-passkeys" id="setup-bitwarden-for-use-with-passkeys"></a>
+
+### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
+
+### 使用存储在 Bitwarden 中的通行密钥登录 <a href="#sign-in-using-a-passkey-stored-in-bitwarden" id="sign-in-using-a-passkey-stored-in-bitwarden"></a>

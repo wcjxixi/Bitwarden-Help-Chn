@@ -9,7 +9,7 @@
 {% hint style="info" %}
 在 iOS 上，存储和使用通行密钥要求版本 17.0 或更高版本。[了解更多](../auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)。
 
-在 Android 上，存储和使用通行密钥要求 14.0 或更高版本。可能需要额外的设置步骤。了解更多。
+在 Android 上，存储和使用通行密钥要求 14.0 或更高版本。可能需要额外的设置步骤。[了解更多](../auto-fill/auto-fill-basics/auto-fill-logins-on-android.md)。
 {% endhint %}
 
 通行密钥根据 [FIDO 联盟](https://fidoalliance.org/overview/)制定的标准开发，允许用户保护其账户安全，并绕过标准密码身份验证带来的漏洞（如网络钓鱼）。存储的通行密钥受到 Bitwarden 可信的端到端加密技术的保护。
