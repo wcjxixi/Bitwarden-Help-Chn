@@ -6,15 +6,17 @@
 
 Bitwarden 可以自动填充您的密码，以便您可以无缝登录网站和应用程序，同时维护强大而安全的密码。自动填充通过检测与您登录的服务相匹配的密码库项目，以减少您在登录过程中的复制和粘贴操作。
 
+自动填充通行密钥（包括创建新的通行密钥时 Bitwarden 发出提示）要求 iOS 17.0 或更高版本。
+
 {% hint style="success" %}
-_大多数_自动填充方案都依赖登录项目的 URI 属性。如果您不熟悉 URI，请阅读 [URI 的使用](../../../auto-fill/using-uris.md)一文。
+大多数自动填充方案都依赖登录项目的 URI 属性。如果您不熟悉 URI，请阅读 [URI 的使用](../../../auto-fill/using-uris.md)一文。
 
 请注意，移动端的自动填充当前不支持自定义字段。
 {% endhint %}
 
 ## 在自动填充期间切换账户 <a href="#switch-accounts-during-auto-fill" id="switch-accounts-during-auto-fill"></a>
 
-如果您登录了多个账户，您的移动应用程序将默认尝试从当前活动账户中自动填充凭据。您可以在自动填充期间通过点击头像气泡从一个账户切换到另一个账户：
+如果您[登录了多个账户](../../../your-vault/account-switching.md)，您的移动应用程序将默认尝试从当前活动账户中自动填充凭据。您可以在自动填充期间通过点击头像气泡从一个账户切换到另一个账户：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5xCOZa3yJ2PGs64tYD6xgU/e7cf2eba869392edde0945f58224b1b4/as_gif_24.gif?fm=gif&h=197&q=50&w=427" %}
 iOS 账号切换
@@ -31,6 +33,10 @@ iOS 上的自动填充有两种：
 如果设备的[密码库超时行为](../../../your-vault/vault-timeout-options.md#vault-timeout-action)设置为**注销**，并且您仅启用了需要 NFC（例如带 NFC 的 YubiKey）的[两步登录方式](../../../two-step-login/two-step-login-methods.md)，则当前无法在 iOS 上使用自动填充，因为 iOS 不允许 NFC 输入中断自动填充工作流。
 
 要么将您的密码库超时行为改为**锁定**，要么启用另一种两步登录方式。
+{% endhint %}
+
+{% hint style="info" %}
+如果您使用的 Argon2id 的 KDF 内存值高于 48 MB，则每次启动 iOS 自动填充或通过共享表单创建新的 Send 时，都会显示警告对话框。要避免出现此消息，请在此处调整 Argon2id 设置或启用[生物识别解锁](../../../your-vault/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
 {% endhint %}
 
 ### 键盘自动填充 <a href="#keyboard-auto-fill" id="keyboard-auto-fill"></a>
