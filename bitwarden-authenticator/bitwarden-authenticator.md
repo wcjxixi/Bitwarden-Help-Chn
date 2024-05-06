@@ -65,7 +65,7 @@ Bitwarden Authenticator
 
 **问：如何将此应用设置为 iOS 上的默认验证码应用？**
 
-**答：**运行 iOS 16+ 的 iOS 用户可以将任何应用程序设置为直接从相机应用程序扫码时默认存储验证码的应用程序，包括 Bitwarden Authenticator 和 Password Manager 集成身份验证。要进行此设置：
+**答：**运行 iOS 16+ 的 iOS 用户可以将任何应用程序设置为直接从相机应用程序扫码时默认存储验证码的应用程序，包括 [Bitwarden Authenticator](bitwarden-authenticator.md) 和 Password Manager [集成身份验证](../your-vault/totp.md)。要进行此设置：
 
 1. 打开设备上的 iOS **设置**应用程序。
 2. 点击**密码**。

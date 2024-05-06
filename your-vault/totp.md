@@ -1,13 +1,13 @@
-# Bitwarden 验证器 (TOTP)
+# 集成的验证器
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/authenticator-keys/)
+对应的[官方文档地址](https://bitwarden.com/help/integrated-authenticator/)
 {% endhint %}
 
-Bitwarden 验证器是 Authy 等专用验证应用程序的替代解决方案，您可以使用它来验证使用两步登录的网站和应用程序的身份。Bitwarden 验证器使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based\_One-time\_Password\_algorithm) (TOTP)，每 30 秒轮换一次。
+密码管理器集成身份验证是 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 等专用身份验证应用程序的替代解决方案，您可以使用它来验证使用两步登录的网站和应用程序的身份。集成身份验证使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based\_One-time\_Password\_algorithm) (TOTP)，每 30 秒轮换一次。
 
 {% hint style="info" %}
-验证器密钥 (TOTP) 存储可用于所有账户。但 TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企业）成员资格。
+密钥存储适用于所有账户。但 TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企业）成员资格。
 
 > **\[译者注]**：
 >
@@ -146,22 +146,14 @@ otpauth://totp/Test:me?secret=JBSWY3DPEHPK3PXP&algorithm=sha256&digits=8&period=
 
 在[此处](https://github.com/google/google-authenticator/wiki/Key-Uri-Format)了解有关 `otpauth://` URI 的使用的更多信息。
 
-## iOS 上的 Bitwarden 验证器 <a href="#bitwarden-authenticator-on-ios" id="bitwarden-authenticator-on-ios"></a>
+## 在 iOS 上设置未默认 <a href="#set-a-default-on-ios" id="set-a-default-on-ios"></a>
 
-运行 iOS 16+ 的 iOS 用户还可以将 Bitwarden 设置为默认应用程序，用于在直接从相机应用程序扫描代码时存储验证码。要进行设置：
+运行 iOS 16+ 的 iOS 用户可以将任何应用程序设置为直接从相机应用程序扫描代码时存储验证码的默认应用程序，包括 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 和 Password Manager [集成身份验证](totp.md)。要进行此设置：
 
 1. 在您的设备上打开 iOS **设置**应用程序。
 2. 点击**密码**。
 3. 点击**密码选项**。
-4. 从**设置验证码使用：**列表中，选择 **Bitwarden**。
-
-启用后，相机应用程序中的二维码将具有一个**在 Bitwarden 中打开**的按钮。点击时，您将能够选择是否将验证器密钥添加到新的或现有的密码库项目中。创建或编辑项目后，请确保在关闭前先保存。
-
-{% embed url="https://bitwarden.com/_gatsby/image/807611fe56c4ea40c21ce113752cec2a/98d33f830e7906b43839217dde1793e1/Screenshot%202023-03-15%20at%2010.01.02%20AM.webp?eu=df8b01b0e7caad8e0d3aa6813e206161e53805adfa0731846f30eda81cae99d720a51e06249578b32f6d5ad987b644bf31927c661ee9d5d993b411a2ef3dab0b53d50be66deb34431168cee1afac5b143f935946f2c79e59e02e2790a6ade9255d4f1b69f629fedbedff3d39f78430319fd6f86834abe123b2722723a91073a862bfee864001eb9bb94de8b0eea80a9e99b6250e46d3a160707045165fb97fb3a4b1512339215f38668cfa0d9922cee9787363235c5c1ef76427d150943d75ace5fbbf5dd8647be3c7b84c6ec69df9&a=w%3D250%26h%3D415%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.721Z" %}
-添加新的或现有的验证码
-{% endembed %}
-
-当您在 iOS 上自动填填充登录时，TOTP 代码将自动复制到您的剪贴板。将您的 TOTP 代码粘贴到验证代码字段中以完成登录。
+4. 从**验证码**部分的**设置验证码**下拉列表中选择 **Bitwarden**。
 
 ## Azure 和 Office 365 <a href="#azure-and-office-365" id="azure-and-office-365"></a>
 
