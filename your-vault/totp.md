@@ -146,7 +146,7 @@ otpauth://totp/Test:me?secret=JBSWY3DPEHPK3PXP&algorithm=sha256&digits=8&period=
 
 在[此处](https://github.com/google/google-authenticator/wiki/Key-Uri-Format)了解有关 `otpauth://` URI 的使用的更多信息。
 
-## 在 iOS 上设置未默认 <a href="#set-a-default-on-ios" id="set-a-default-on-ios"></a>
+## 在 iOS 上设置为默认 <a href="#set-a-default-on-ios" id="set-a-default-on-ios"></a>
 
 运行 iOS 16+ 的 iOS 用户可以将任何应用程序设置为直接从相机应用程序扫描代码时存储验证码的默认应用程序，包括 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 和 Password Manager [集成身份验证](totp.md)。要进行此设置：
 
