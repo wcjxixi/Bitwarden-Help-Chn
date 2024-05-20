@@ -1,10 +1,10 @@
-# =Password Manager 计划
+# Password Manager 计划
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/password-manager-plans/)
 {% endhint %}
 
-这篇文章中，我们将阐述 Bitwarden Password Manager 的每一种订阅计划，以帮助你开启您的密码管理和安全数据存储之旅。本文反映的是当前的 Password Manager 计划，更新时间为 2020 年 09 月 06 日。在该日期之前已创建了账户的用户可以在[这里](premium-renewal.md)了解如何选择加入更新。
+本文介绍了 Bitwarden Password Manager 的每一种订阅计划，以帮助你开启您的密码管理和安全数据存储之旅。本文反映的是当前的 Password Manager 计划，更新时间为 2023 年 11 月 06 日。在该日期之前已创建了账户的用户可以在[这里](../updates-to-plans.md)了解他们的计划。
 
 要查看 Secrets Manager 计划，请参阅[此处](../secrets-manager/secrets-manager-plans.md)。
 
