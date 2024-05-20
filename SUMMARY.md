@@ -295,7 +295,7 @@
   * [取消订阅](plans-and-pricing/cancel-a-subscription.md)
   * [计费常见问题](plans-and-pricing/billing-faqs.md)
   * [\*更新 Bitwarden 计划 (2019-2020)](plans-and-pricing/updates-to-bitwarden-plans-2019-2020.md)
-  * [\*更新到 Password Manager 计划 & 订阅](plans-and-pricing/updates-to-plans.md)
+  * [\*更新 Password Manager 计划 & 订阅](plans-and-pricing/updates-to-plans.md)
   * [\*哪种计划适合我？](plans-and-pricing/what-plan-is-right-for-me.md)
 * [\*杂项](miscellaneous/README.md)
   * [11 月弃用通知](miscellaneous/november-deprecation-notice.md)
