@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/updates-to-plans/)
 {% endhint %}
 
-## 所有客户都可以使用最新的功能集 <a href="#every-customer-is-on-the-latest-feature-set" id="every-customer-is-on-the-latest-feature-set"></a>
+## 所有客户都可以使用最新功能 <a href="#every-customer-is-on-the-latest-feature-set" id="every-customer-is-on-the-latest-feature-set"></a>
 
 ## 2020 年 09 月 06 日之前购买的订阅 <a href="#subscriptions-purchased-prior-to-september-6-2020" id="subscriptions-purchased-prior-to-september-6-2020"></a>
 
