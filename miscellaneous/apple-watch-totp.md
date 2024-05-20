@@ -8,10 +8,12 @@
 Bitwarden 在 Apple Watch 上添加了对 Bitwarden 的官方支持。之前通过 TestFlight 在 Apple Watch 上注册使用 Bitwarden 的用户现在可以切换到受支持的应用程序。
 {% endhint %}
 
-我们的 Bitwarden [身份验证器功能](../your-vault/totp.md)现在可以在 Apple Watch 上使用。Bitwarden 高级会员或付费组织的成员现在将有一个额外的选项来访问基于时间的一次性密码 (TOTP) 代码。Apple Watch Bitwarden 将显示存储有种子的密码库项目的 TOTP 代码，以便在登录受 TOTP 保护的账户时更容易访问。
+我们的密码管理器[集成验证器功能](../your-vault/totp.md)现在可以在 Apple Watch 上使用。Bitwarden 高级会员或付费组织的成员现在将有一个额外的选项来访问基于时间的一次性密码 (TOTP) 代码。Apple Watch Bitwarden 将显示存储有种子的密码库项目的 TOTP 代码，以便在登录受 TOTP 保护的账户时更容易访问。
 
 {% hint style="info" %}
-TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企业）成员资格。
+TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企业）成员资格。在[此处](../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-personal-plans)详细了解每种计划的详细信息。
+
+Families 2019 不再向该计划的用户提供个人高级会员资格。在此处了解此计划的变更情况。
 {% endhint %}
 
 ## 设置 <a href="#setup" id="setup"></a>
