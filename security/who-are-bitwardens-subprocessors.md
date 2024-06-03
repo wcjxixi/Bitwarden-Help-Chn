@@ -9,11 +9,13 @@
 | 分包商                            | 交付性质       | 所在地     |
 | ------------------------------ | ---------- | ------- |
 | Microsoft Inc.                 | 基础设施托管     | USA, EU |
-| DigitalOcean, LLC              | 基础设施托管     | USA     |
 | Amazon Web Services, Inc.      | 基础设施托管     | USA     |
-| Cloudflare, Inc.               | 代理服务器      | USA     |
-| Google, Inc.                   | 交流工具       | USA     |
+| Cloudflare, Inc.               | 基础设施托管     | USA     |
+| Fastly, Inc.                   | 基础设施托管     | USA     |
+| Netacea Limited                | 基础设施托管     | UK      |
+| Google, LLC                    | 交流工具       | USA     |
 | Slack Technologies, LLC        | 协作工具       | USA     |
+| SendGrid, Inc. (Twilio)        | 电子邮件服务提供商  | USA     |
 | Freshworks Inc.                | 客户关系管理     | USA     |
 | ChartMogul CMTDE GmbH & Co. KG | 销售分析       | 德国      |
 | Stripe, Inc.                   | 款项处理       | USA     |
@@ -21,8 +23,8 @@
 | BitPay, Inc.                   | 款项处理       | USA     |
 | DataDog, Inc.                  | 基础设施监控     | USA     |
 | Hubspot, Inc.                  | 交流工具       | USA     |
+| Outreach.io                    | 业务开发/交流工具  | USA     |
 | APIHub, Inc.                   | 业务开发 (B2B) | USA     |
-| ZoomInfo Technologies, LLC.    | 业务开发 (B2B) | USA     |
 
 ## 请求有关 Bitwarden 分包商的通知 <a href="#request-notifications-about-bitwarden-subprocessors" id="request-notifications-about-bitwarden-subprocessors"></a>
 
