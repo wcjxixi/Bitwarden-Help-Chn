@@ -37,7 +37,7 @@ docker run --rm -it bitwarden/bws --help
 
 ## 身份验证 <a href="#authentication" id="authentication"></a>
 
-可以使用为特定[服务账户](../your-secrets/machine-accounts.md)生成的[访问令牌](../your-secrets/access-tokens.md)登录 Secrets Manager CLI。这意味着**只有对机密和工程有访问权限的服务账户可以使用 CLI 进行交互**。有多种方式可以对 CLI 会话进行身份验证：
+可以使用为特定[机器账户](../your-secrets/machine-accounts.md)生成的[访问令牌](../your-secrets/access-tokens.md)登录 Secrets Manager CLI。这意味着**只有对机密和工程有访问权限的机器账户可以使用 CLI 进行交互**。有多种方式可以对 CLI 会话进行身份验证：
 
 {% tabs %}
 {% tab title="环境变量" %}
@@ -206,7 +206,7 @@ bws secret get be8e0ad8-d545-4017-a55a-b02f014d4158
 
 ### secret list
 
-要列出服务账户可以访问的机密，请使用以下命令：
+要列出机器账户可以访问的机密，请使用以下命令：
 
 ```batch
 bws secret list
@@ -249,10 +249,10 @@ bws secret list e325ea69-a3ab-4dff-836f-b02e013fe530
 
 ## project
 
-`project` 命令用于访问、操作和创建[工程](../your-secrets/projects.md)。分配给您的服务账户的访问范围将决定可以使用 `project` 命令完成哪些操作。
+`project` 命令用于访问、操作和创建[工程](../your-secrets/projects.md)。分配给您的机器账户的访问范围将决定可以使用 `project` 命令完成哪些操作。
 
 {% hint style="info" %}
-工程可以由具有只读访问权限的服务账户创建。但是，如果此服务账户没有**读取**和**写入**访问权限，则无法编辑不是由其创建的现有工程。
+工程可以由具有只读访问权限的机器账户创建。但是，如果此机器账户没有**读取**和**写入**访问权限，则无法编辑不是由其创建的现有工程。
 {% endhint %}
 
 ### project create
@@ -337,7 +337,7 @@ bws project edit 1c80965c-acb3-486e-ac24-b03000dc7318 --name "My project 2"
 
 ### project get
 
-`get` 命令检索已登录的服务账户可以从您的密码库访问的特定工程。无法检索密码库中服务账户无权访问的对象。
+`get` 命令检索已登录的机器账户可以从您的密码库访问的特定工程。无法检索密码库中机器账户无权访问的对象。
 
 ```batch
 bws project get <PROJECT_ID>
@@ -364,7 +364,7 @@ bws project get e325ea69-a3ab-4dff-836f-b02e013fe530
 
 ### project list
 
-要列出此服务账户有权访问的工程，请使用以下命令：
+要列出此机器账户有权访问的工程，请使用以下命令：
 
 ```batch
 bws project list

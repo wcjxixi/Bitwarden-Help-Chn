@@ -22,7 +22,7 @@
 * [密码库超时](../../organizations/enterprise-policies.md#vault-timeout)
 
 {% hint style="info" %}
-如果您是 Bitwarden 的新手，我们建议您在入职用户之前先设置策略
+如果您是 Bitwarden 的新手，我们建议您在入职用户之前先设置策略。
 {% endhint %}
 
 ## 用户管理 <a href="#user-management" id="user-management"></a>
@@ -49,13 +49,15 @@ Bitwarden 服务器提供一个 SCIM 端点，该端点具有一个有效的 SCI
 
 ### 访问 Secrets Manager <a href="#access-to-secrets-manager" id="access-to-secrets-manager"></a>
 
-入职后，为您组织的个别成员授予对 Secrets Manager 的访问权限：
+入职后，为您组织的个人成员授予对 Secrets Manager 的访问权限：
 
 1、打开您组织的**成员**选项卡，然后选中您想要授予 Secrets Manager 访问权限的成员。
 
 2、使用 **≡**菜单，选中**启用 Secrets Manager** 以向选定成员授予访问权限：
 
-{% embed url="https://bitwarden.com/_gatsby/image/49069ce6634a549b44a93e91e10543b4/1eb063407be47e7482e8f7da648d5ce3/allow%20sm%20access.webp?eu=8adf02e1b6cefd850939a9806e7b6038b43b56a2f85962826f65e6a61baac88726a51a54729072b92e3b5c8fd2e543b266c42b651dbad48c94b811a1e834ac005b8a0fec6fe27505502ec2adb0a3534c6e954f58abdb8c4ce32e78cbfaeaea214e055f35fb3eeed0afea6020f39d7167aea9a16c3b91ed22e14456098c1f6eff1dc9eea23568ba90e4488fb3abc158cac1e46f5b20c4a2327121181f5fea2cbef4bb0d276b20115367cffa50c466c0b3341833770a591ca63b668f12942f6cacb5a8f2089a3965a1f69e&a=w%3D850%26h%3D476%26fm%3Dwebp%26q%3D75&cd=2023-09-26T13%3A40%3A14.677Z" %}
+* 对于自托管组织，也必须在自托管实例中重复此步骤。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3IBNL6FdndgPeuXa7m3rlP/429b9a1a63919be675b047521ff034a4/Screenshot_2024-02-27_at_2.16.52_PM.png?_a=BAJFJtWIB" %}
 添加 Secrets Manager 用户
 {% endembed %}
 
@@ -70,7 +72,6 @@ Bitwarden 服务器提供一个 SCIM 端点，该端点具有一个有效的 SCI
 | 成员角色 | 描述                                                                                                                                        |
 | ---- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | 用户   | <p>用户可以创建自己的机密、工程、服务账户和访问令牌。创建后，他们就可以编辑这些对象。</p><p>必须将用户分配给工程或服务账户才能与现有对象交互，并且可以授予<strong>可以读取</strong>或<strong>可以读取、写入</strong>访问权限。</p> |
-| 经理   | <p>用户可以创建自己的机密、工程、服务账户和访问令牌。创建后，他们就可以编辑这些对象。</p><p>必须将用户分配给工程或服务账户才能与现有对象交互，并且可以授予<strong>读取</strong>或<strong>读取、写入</strong>访问权限。</p>     |
 | 管理员  | <p>管理员自动拥有对所有机密、项目、服务账户和访问令牌的<strong>读取、写入</strong>权限。</p><p>管理员可以为自己分配对 Secrets Manager 的访问权限，并为其他成员分配对 Secrets Manager 的访问权限。</p>       |
 | 所有者  | <p>所有者自动拥有对所有机密、项目、服务账户和访问令牌的<strong>读取、写入</strong>权限。</p><p>所有者可以为自己分配对 Secrets Manager 的访问权限，并为其他成员分配对 Secrets Manager 的访问权限。</p>       |
 
@@ -94,13 +95,9 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 
 ## 事件日志 <a href="#event-logs" id="event-logs"></a>
 
-事件日志是团队或企业组织内发生的事件的时间戳记录。管理员和所有者可以从组织密码库的**报告**选项卡访问事件日志：
+[事件日志](../../admin-console/reporting/event-logs.md)是团队或企业组织内发生的事件的时间戳记录。Secrets Manager 事件可从组织密码库的**报告** → **事件日志**以及[机器账户事件日志页面](../your-secrets/machine-accounts.md#service-account-events)获取。
 
-{% embed url="https://bitwarden.com/_gatsby/image/c61bc9497ba3efd1d98c1968c59051df/02be0a0a1922d2ed743e4c57a532c5a9/Screen%20Shot%202022-12-28%20at%209.15.04%20AM.webp?eu=d98856b4b099a8870c61a6d26071683ce0375ea9fd0762d23b35edfa4aac97d420f54b0674c47fb9256e52ddd3b411ec60c72e691be6d9ddc7bd19f4ed64fb0c528b09b831e1240f5578c4feb4f4021460921c51a1859c0af73b72d6e7b1b3731c011f78a072b2d9a8ed7527ba9c306bb7e7f17b26dcf83cb6431d179e5c32e23aeed4c1345cb09df645eeb0e6f44eca83e56e0229baf0715b12346721ed48fbc1d46c2c5c6a3a44609fad509663c4e56d1b67725a0901f46569d254fd6a3397e6aaa75fdc2c2fe4b7aa6232d396f0ef8e42f36e19e5cf25ab9f3a78130fa47cfcf814fecc650310812e95e431ac435b62&a=w%3D850%26h%3D413%26fm%3Dwebp%26q%3D75&cd=2023-06-01T21%3A20%3A06.470Z" %}
-事件日志
-{% endembed %}
-
-事件日志可从 Bitwarden 公共 API 的 `/events` 端点访问和导出，并无限期保留。虽然许多事件适用于所有 Bitwarden 产品，有些是特定于 Password Manager 的，但 Secrets Manager 将专门记录以下内容：
+事件日志可以导出并无限期保留。虽然许多事件适用于所有 Bitwarden 产品，有些是特定于 Password Manager 的，但 Secrets Manager 将专门记录以下内容：
 
 * 机密被机器账户访问
 
@@ -113,6 +110,7 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 1. 在云托管的 Bitwarden 组织中注册一个 Secrets Manager 订阅。
 2. 将您的自托管服务器更新到至少 2023.10.0 版本。
 3. 从您的云托管组织[获取新的许可证文件](../../self-hosting/licensing-for-paid-features.md#retrieve-organization-license)，然后[将其上传到您的自托管服务器](../../self-hosting/licensing-for-paid-features.md#update-organization-license)。
+4. 授予个人用户对自托管实例中的 [Secrets Manager 访问权限](manage-your-organization.md#access-to-secrets-manager)。
 
 {% hint style="info" %}
 Bitwarden [统一自托管部署选项](../../self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md)不支持自托管 Secrets Manager。团队和企业组织应使用标准的 [Linux](../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md) 或 [Windows](../../self-hosting/install-and-deploy-guides/docker/windows-standard-deployment.md) 安装。

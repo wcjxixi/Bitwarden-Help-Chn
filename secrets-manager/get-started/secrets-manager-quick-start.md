@@ -183,7 +183,7 @@ Secrets Manager 用户管理
 * **可以读取和写入**：机器账户可以从已分配的工程中检索和编辑机密，以及在已分配的工程中创建新的机密或创建新的工程。
 
 {% hint style="info" %}
-充分利用机器账户的写入访问权限取决于即将发布的 CLI 版本。目前，这只是使该选项在 UI 中可用。请继续关注[发行说明](../../release-notes.md)以获取更多信息。
+机器账户的写入​​访问权限的充分利用取决于即将发布的 [CLI](../developer-tools/secrets-manager-cli.md) 版本。目前，这只是在 UI 中提供了此选项。请继续关注[发行说明](../../release-notes.md)以获取更多信息。
 {% endhint %}
 
 ### 创建访问令牌 <a href="#create-an-access-token" id="create-an-access-token"></a>
