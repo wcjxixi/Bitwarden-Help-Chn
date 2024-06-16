@@ -133,7 +133,7 @@
     * [Ansible](secrets-manager/integrations/ansible.md)
     * [GitHub Actions](secrets-manager/integrations/github-actions.md)
     * [GitLab CI/CD](secrets-manager/integrations/gitlab-ci-cd.md)
-    * [=Secrets Manager Kubernetes Operator](secrets-manager/integrations/secrets-manager-kubernetes-operator.md)
+    * [Secrets Manager Kubernetes Operator](secrets-manager/integrations/secrets-manager-kubernetes-operator.md)
   * [更多](secrets-manager/more/README.md)
     * [Secrets Manager 常见问题](secrets-manager/more/secrets-manager-faqs.md)
 * [管理控制台](admin-console/README.md)
