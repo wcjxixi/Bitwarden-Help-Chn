@@ -4,21 +4,29 @@
 对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-quick-start/)
 {% endhint %}
 
+{% hint style="success" %}
+如果您是开发人员，您可能更喜欢[开发人员快速入门](developer-quick-start.md)。您当前阅读的文章将从管理和设置的角度介绍 Secrets Manager。
+{% endhint %}
+
 Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理和部署机密。
 
 **Secrets Manager 网页应用程序**将是您设置机密管理基础设施的主页。您将使用它来添加和组织[机密](secrets-manager-quick-start.md#add-secrets)、创建适合您需要的[权限系统](secrets-manager-quick-start.md#assign-members-to-your-project)，以及生成供您的应用程序使用的[访问令牌](secrets-manager-quick-start.md#create-an-access-token)。完成后，您可以继续阅读[开发者快速入门指南](developer-quick-start.md)，以了解如何将机密注入您的机器和应用程序。
 
 ## 激活 Secrets Manager <a href="#activate-secrets-manager" id="activate-secrets-manager"></a>
 
-Secrets Manager 可以从您组织的**计费** → **订阅**页面激活。您必须是组织的所有者才能执行此操作：
+您必须是组织所有者才能启用 Secrets Manager。要开始使用 Secrets Manager：
 
-{% embed url="https://bitwarden.com/_gatsby/image/02a63b8db104aef1d4ec68d6dab4f68e/386e310bdde8d6cc3a1de335b535fdf0/activate-sm.webp?eu=898f59b3e2c0fed65e68a7836a71653ae33e01fdfb0560d06c63b5a81cab99d021a04a5323c17ce5243d5cdf85e34bbd63c27f651abcd2d392bb1bfdb93daa5b54d552ec6eba2500072b90afe3f201163dc71000e5c7884ba9726d8db8e2e0255a4e4f6ffe2bfbc2b9ed767aeed66b2dedf4f87d2398aa2ee84f1953d41d378620e0e9dd521aa8a4c24b8fa0b2d261ccf8b0541845daf166227f1f1651b97ebfa2e400753f2e410a63c7ab0dce65c7b338486222410e50b33e7c8111ae71729efabbff0a&a=w%3D850%26h%3D492%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.835Z" %}
-激活 Secrets Manager
+1、在管理控制台中，导航至您组织的**计费** → **订阅**页面
+
+2、在**来自 Bitwarden 的更多产品**部分中，勾选**订阅 Secrets Manager** 复选框。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/eYPz7jQRhG0PvU7gclzXk/04bbea42872c078a1aa3d38e755ae2bc/Screenshot_2024-04-09_at_10.21.39_AM.png?_a=BAJFJtWIB" %}
+添加 Secrets Manager
 {% endembed %}
 
 激活后，通过网页应用上的产品切换器切换到 Secrets Manager：
 
-{% embed url="https://bitwarden.com/_gatsby/image/c2437774c5a9e867285a6527fa20b4f0/dbf13f712f25a111d687c1fb316d3dfc/product-switcher-1.webp?eu=d7d851e2e4c9ad8e0c3da6813e72363ae43b56abfa0331d56b37e1a848fa9a8121fa4c5774c37ae42e685a8bd2e846bb33c779374bebd1d9c2ee19f4ef61af005b8a52ea66ba7355517ac4fdb4f504456d90480af781cd5baa3e2786b6b3be211f571922f972ee86eda16730b38a256aaef2e66d6fddb421bd430901880622b832ead39d665aadd0ee4aabf9e9eb579edabd2c514886b4323d72346912af6de7c6bb7a16797301214ecbfa23a61cc1a96d4e62215d5b03f5356bd904fa6862cbe6f3a50fd8737fe8a0983074d5c0af80f25aee7522a29c63b4c17c234a5ef446efa17ae9923a51&a=w%3D850%26h%3D310%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.814Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/919a2c332ed6a53707f80ac3f734e0a8/2024-06-04_10-13-18.png?_a=BAJFJtWIB" %}
 产品切换器
 {% endembed %}
 
@@ -36,24 +44,28 @@ Secrets Manager 可以从您组织的**计费** → **订阅**页面激活。您
 
 2、使用 **≡** 菜单，选择**启用 Secrets Manager** 以向选定成员授予访问权限：
 
-{% embed url="https://bitwarden.com/_gatsby/image/a160b75f2f6f68f1da1027f8cbf872ae/1705ae65ec2ddaebf8005a26ee57b8f0/Screen%20Shot%202023-07-05%20at%209.56.35%20AM.webp?eu=8ddf04b7e799fa82093af6836f26606ae56d06aaa85065d56b60e4fb47a09bd572f01851219728e37f6d0bdcd2b346be6ec17a331ab8d2dd94ed10f6ea33fc0f05d05aee35e57955042e91fcb5f0531461941a5ff38acf00a76f23d2efebf33459131634b723e5d0bbfc767ae3c77963a9f5f36a26dcf52da40d5916954b37a665ed98837419f1cdc96d919ae8df5d93c8b04d5205b3a2327f740e4338f224bda6b652223a20130f319daa51c56694be6a1d6871585f0ba46e3dd154f3392ea0b7b9f408871518b9f78d5e7286c1ad9ded1db12a73889e63c68b257f0813af16c2cd06e9923a51&a=w%3D850%26h%3D419%26fm%3Dwebp%26q%3D75&cd=2023-07-18T16%3A04%3A51.094Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3IBNL6FdndgPeuXa7m3rlP/429b9a1a63919be675b047521ff034a4/Screenshot_2024-02-27_at_2.16.52_PM.png?_a=BAJFJtWIB" %}
 添加 Secrets Manager 用户
 {% endembed %}
 
-### 用户席位和服务账户扩展 <a href="#user-seats-and-service-account-scaling" id="user-seats-and-service-account-scaling"></a>
+{% hint style="info" %}
+向用户（或您自己）授予 Secrets Manager 访问权限后，您可能需要刷新密码库以使 Secrets Manager 出现在产品切换器中。
+{% endhint %}
+
+### 用户席位和机器账户扩展 <a href="#user-seats-and-service-account-scaling" id="user-seats-and-service-account-scaling"></a>
 
 从您组织的**计费** → **订阅**页面，您可以为 Secrets Manager 组织分配允许的用户席位和服务账户总数。
 
-{% embed url="https://bitwarden.com/_gatsby/image/5a13d89b182e15cb9a734686032d6669/0574d459f5ebc3b46729bb9424b1ec46/SM%20seats.webp?eu=d68b06e3e3cfa9d5066aa68b3c75616ae33750ffff0032853e61b5a84ba1cc8123a74a0075c42ce479615ad7d2b441e832c27f6848bcd0d891e91df7e93daf0a01820fea6deb34431168cee1afac5b143f935946f2c79e59e02e2790a6ade9255d4f1b69f629fedbedff3d39f7843031b2c9e64b6da5d07e9b512f569e6513bb32fbe5814901e69ab94de9e5eea10c9b99e67e014188a5342a71494d0abc28e8a3e10470387b5f3848a1ec0d9625d5a87c4236&a=w%3D850%26h%3D511%26fm%3Dwebp%26q%3D75&cd=2023-08-16T11%3A53%3A15.658Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3hOpU8WK6KsA2eMRwfpEoJ/3865ba0b4b91fcdfccd9c8de9a7ff993/Screenshot_2024-04-09_at_10.24.29_AM.png?_a=BAJFJtWIB" %}
 Secrets Manager 用户管理
 {% endembed %}
 
-添加新用户或服务账户时，Secrets Manager 将自动扩展您的用户席位和服务账户。可以通过勾选**限制订阅**和**限制服务账户**复选框来设置限制。
+添加新用户或机器账户时，Secrets Manager 将自动扩展您的用户席位和机器账户。可以通过勾选**限制订阅**和**限制机器账户**复选框来设置限制。
 
 {% hint style="info" %}
 在**用户席位**字段中，指定的数量必须小于或等于您的 Password Manager 订阅指定的席位数量。
 
-您还可以使用**附加服务账户**字段，明确添加高于计划预包装数量的服务账户；团队账户为 50 个，企业账户为 200 个。
+您还可以使用**附加机器账户**字段，明确添加高于计划预包装数量的机器账户；团队账户为 20 个，企业账户为 50 个。
 {% endhint %}
 
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
@@ -62,7 +74,7 @@ Secrets Manager 用户管理
 
 使用产品切换器打开 Secrets Manager 网页应用程序。如果这是您第一次打开该应用程序，您将看到一个空的密码库，但最终它将充满您的工程和机密：
 
-{% embed url="https://bitwarden.com/_gatsby/image/4ee0e3286a978b55a86a210bfa86d8e8/a2abe2db17d0078d7a820976a35c1dbe/Screen%20Shot%202023-03-22%20at%209.46.39%20AM.webp?eu=de8a06e0e6c8fdd3076ff1866b26313db56c52a2ac5160823a64b5fa4aa8978126a5115623967bb12560088bd3e440e960947b694aebd68e92e81ca6ed3daf0e52870bea62b22552072990f8b0f154446ec61b0ea9d29e5cf73e73d0e5b3b6721308586fe839b29ef3f06835e7d66c2cb9f2f07f2681fe3ca30c00018f0776be3ae8d6843248e693f718f0e0eaad48a4dfb87a6117dbb9715e2c261658be56dbfcad07206b2f485e3ccda759c36893e33f193422080c52a4653a8652a8646590e4aebe3e8a382eb4f6a65228d987c182ed18af3776e4d225abed6a3e6104b217aba278febd157b10c174ad&a=w%3D850%26h%3D563%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A47%3A03.932Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/644qYsogVg0ztLkZ90cKPi/37f6bfbea1a691513e77f4a36a723fbe/Screenshot_2024-04-09_at_10.28.33_AM.png?_a=BAJFJtWIB" %}
 机密密码库
 {% endembed %}
 
@@ -74,7 +86,7 @@ Secrets Manager 用户管理
 
 1、使用**新增**下拉菜单选择**工程**：
 
-{% embed url="https://bitwarden.com/_gatsby/image/9ec307c2cd6c1b17138196203755eb3e/928e30c874b06e59f97b658b618bcd66/Screen%20Shot%202023-02-24%20at%202.31.44%20PM.webp?eu=d8da54b2b7ceff805c6fa6856a7b653fe93b56adf85833816931eda647ae99802df3110371c72ee72b3a5ad8d7e514bc34c07c651eeed6dc96ea4da5e235ae5e518a09bf34b070060478c5a8e2a101416dc31350a78acb0df73c7bdce7b2e17911021e7dfc7dbfd4e4aa3c31e6d0256aaef2e66d6fddb421bd430901880622b832ead39d665aadd0ee4aabf9e9eb579edabd2c514886b4323d741b680f9e44dfa5c153123a543b2a6b99d42c983eeaa96d4d612a575604f13668d104f8683090e5aaa90ede7b2fe4ac9b3073d391ad82f279ff6823b29148cada643e610fac11aea17bf5cf660261d06e959752b1021b3144ed7cf43a60876f&a=w%3D850%26h%3D124%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.727Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gGgCYT0CgS3MKAngKDooL/e9c55079d352999db5cd76c55333c729/Screenshot_2024-04-09_at_10.29.34_AM.png?_a=BAJFJtWIB" %}
 创建一个工程
 {% endembed %}
 
@@ -90,14 +102,14 @@ Secrets Manager 用户管理
 
 2、从「人员」下拉列表中，输入或选择要添加到工程的成员或群组。选择了合适的人员后，选择**添加**按钮：
 
-{% embed url="https://bitwarden.com/_gatsby/image/e9bb73e3052de06a4e8b28867b6975e5/e681e48097835dcdff2f106983d95d69/Screen%20Shot%202023-03-22%20at%209.44.33%20AM.webp?eu=8c8856e6b29cff870a6aa4816c756961b66a5ef8fb0333d03d36b5fb49f9998772f21103739572b92e6053d981b341e962977f3748bbd38f92bd10f7eb30fc0802875cba66e7720f552e96fab0f20c1d2c825a1bab9cd751fe3c2581a6ade4344f015f68fd3efb9fb2fc717bb7c17161aceca7786d9fec7fff163811c25f348e30b3c38b4654e994e91889e4b5d163d29be7250342dff6362b70181c5fef7cedf3e10771312b430e6398a759c43394b6237f32610b0a5d9804628f11946e31c1e7e6a15ec478798ef98d5e7998c7aa9eee19c35b0bf98f79fe&a=w%3D850%26h%3D320%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A44%3A53.961Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4Vu9wuBd8ceEz7ji7V2kHZ/4bf1df872a882798d20f9aa868cc3ff8/Screenshot_2024-04-09_at_10.33.54_AM.png?_a=BAJFJtWIB" %}
 将人员添加到工程
 {% endembed %}
 
 3、将成员或组添加到工程后，为这些成员或群组设置**权限**级别。成员和群组可以具有以下权限级别之一：
 
 * **可以读取**：成员/群组将能够查看此工程中的现有机密。
-* **可以读取、写入**：成员/群组将能够查看此工程中的现有机密，以及在此工程中创建新的机密。
+* **可以读取和写入**：成员/群组将能够查看此工程中的现有机密，以及在此工程中创建新的机密。
 
 ### 新增机密 <a href="#add-secrets" id="add-secrets"></a>
 
@@ -118,7 +130,7 @@ Secrets Manager 用户管理
 
 2、从左侧导航中选择**设置** → **导入数据**：
 
-{% embed url="https://bitwarden.com/_gatsby/image/dddea76f1081f886b571e53d9c758815/8a7169edff092ec6b001e02265ff4469/import%20(2).webp?eu=df8f05e4eaccfa80093df5d26127656db63b05fdf6533fd03d30e3fe46a8ca8322a51d5d75927ee728610b8dd1e642b931927b351dead2dcc6b84efded31ad5e5b820cba6eba7907507ac1ffe4f455133a93130da4d7ce0ef76524d7b6b0b4214b521c22fd72bdd2e9fd6631badb6b76aaf5ac317a9bf629b7471d4a985c27ad27f8c59a7000b09bf400e8a4b0fa4f979db1255a07dcec344b16094631ac45c2e0db6d06384d00336aadd507a27e9ebf6a496876595705f56f69d75dfb386296e2f2f554dd287fe0fd9f6071d0c5b1d9b05af3683288a025c69c7b2459&a=w%3D850%26h%3D243%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.646Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1YQuiYqXIuYYG1TpXoSJoU/ccb036a10f2c5e7abf28aec1f772ee2b/Screenshot_2024-04-09_at_10.35.18_AM.png?_a=BAJFJtWIB" %}
 导入数据
 {% endembed %}
 
@@ -129,6 +141,10 @@ Secrets Manager 用户管理
 要手动添加机密：
 
 1、使用**新增**下拉菜单选择**机密**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3uEcZ7G5L2TJM4QgMmFZ4H/7db487049197b1a741749967d02a3cbb/Screenshot_2024-04-09_at_10.36.07_AM.png?_a=BAJFJtWIB" %}
+创建机密
+{% endembed %}
 
 2、在「新增机密」窗口的最顶部部分，输入**名称**和**值**。可选添加**备注**。
 
@@ -144,36 +160,41 @@ Secrets Manager 用户管理
 {% endtab %}
 {% endtabs %}
 
-### 新增服务账户 <a href="#add-a-service-account" id="add-a-service-account"></a>
+### 新增机器账户 <a href="#add-a-service-account" id="add-a-service-account"></a>
 
-现在您已经有了一个填满机密的工程了，是时候开始构建对这些机密的机器访问了。**服务账户**代表非人类机器用户或一组机器用户，他们需要以编程方式访问存储在您的保管库中的某些机密。服务账户用于：
+现在您已经有了一个填满机密的工程了，是时候开始构建对这些机密的机器访问了。**机器账户**代表非人类机器用户或一组机器用户，他们需要以编程方式访问存储在您的密码库中的某些机密。机器账户用于：
 
 * 适当地限制机器用户对一定范围的机密的访问权限。
 * 发布访问令牌以促进对机密的编程访问和解密能力。
 
-要为此工程添加服务账户：
+要为此工程添加机器账户：
 
-1、使用**新增**下拉菜单选择**服务账户**：
+1、使用**新增**下拉菜单选择**机器账户**：
 
-{% embed url="https://bitwarden.com/_gatsby/image/9b5074ec4c99b594233e0c1540706f8f/928e30c874b06e59f97b658b618bcd66/Screen%20Shot%202023-02-24%20at%202.33.47%20PM.webp?eu=dbdc01e1b0cefa815a3af1863e726469e23855f8f75962d83e6de4af4fa89dd075f61f0074977bb52d6a0cdcd0e24ab932c4706910ee83d2c2ba1ca7eb35fc0905855aec61b573075022c1f7b8f20e4c6dc0490df7d59a0af76c7081ede0b7254c57492da17cb2d9a8ed7527ba9c306bb7e7f17b26dcf83cb6431d179e5c32e23aeed4c1345cb09df645eeb0e6f44eca839b7c610782a067632f0a4d04b445dbf8b4582e464c5f0866cef951c464c5b13b4960775c5a02f7353ad606f26c63cbe6a8a708d9282dfecb9a7325d39dc1e3b545e84574e7cd24b48239670c09c342e9d379e9d167180a86459ae852f25d52&a=w%3D850%26h%3D124%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.906Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/LaVwicbqhvbliXPm6loOU/917efb20141bc4c18f6b9f19335f9306/Screenshot_2024-04-09_at_10.37.53_AM.png?_a=BAJFJtWIB" %}
 新增服务账户
 {% endembed %}
 
-2、输入**服务账户名称**，然后在「访问权限」部分，输入或选择该服务账户应该能够访问的工程的名称和/或个人机密。
+2、输入**机器账户名称**，然后点击**保存**。
+
+3、打开机器账户，然后在“项目”选项卡中键入或选择该计算机帐户应能够访问的项目的名称。对于每个添加的项目，选择权限级别：
+
+* **可以读取**：机器账户可以从已分配的工程中检索机密。
+* **可以读取和写入**：机器账户可以从已分配的工程中检索和编辑机密，以及在已分配的工程中创建新的机密或创建新的工程。
 
 {% hint style="info" %}
-对于测试版，服务账户将被限制为对工程的只读访问权限。
+充分利用机器账户的写入访问权限取决于即将发布的 CLI 版本。目前，这只是使该选项在 UI 中可用。请继续关注[发行说明](../../release-notes.md)以获取更多信息。
 {% endhint %}
 
 ### 创建访问令牌 <a href="#create-an-access-token" id="create-an-access-token"></a>
 
 **访问令牌**有助于以编程方式访问和解密存储在您的密码库中的机密。访问令牌颁发给特定的服务账户，并将赋予应用它们的任何机器仅能访问**与该服务账户相关联的机密**的能力。要创建访问令牌：
 
-1、从导航中选择**服务账户**。
+1、从导航中选择**机器账户**。
 
-2、选择要为其创建访问令牌的服务账户，然后打开**访问令牌**选项卡：
+2、选择要为其创建访问令牌的机器账户，然后打开**访问令牌**选项卡：
 
-{% embed url="https://bitwarden.com/_gatsby/image/9ce9ddc8aa45160b5caff34b37a3e9d2/70a07780b34d25e1c964fd2e853af8e1/Screen%20Shot%202023-02-24%20at%2010.12.38%20AM.webp?eu=d9df50b0e0c8fa84086fa7873e236638b26b05aeaa0567d56f65b7a81ca89fd026f11c52239c28e77e6059d8d2b54bbf67957d601ae7d58bc8e94af5ea35a2595a8a09ec34b17853557d92afb0a3034761904e5aa386c800f23971d2e4bab02248051e79fc2be9d4eafd3267b6802d61eae2a62e6cc3f97de9465c53cf4d7ba420ffd09d3901f197ed4eb8b3adb75a89cab66e44159fb02b7c2208005faf73e8e3e805273174075c2ac8da21b915c7de657c0063571e62a4183c9154b12834dcb1f9f408d8787fe2aac86322d591fd80b913a4237fb6c92ea8853f7d5b0ef915b2df28b587315861e272a5d123b00307365d821e942624b6691be30684ff469136ff6649474cdebc4406&a=w%3D850%26h%3D329%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.853Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6EINDaXiPQp9qQcO6q1zt5/40e157b6e8385572f58e817d49100c7a/Screenshot_2024-04-09_at_10.40.41_AM.png?_a=BAJFJtWIB" %}
 创建访问令牌
 {% endembed %}
 
@@ -182,14 +203,13 @@ Secrets Manager 用户管理
 4、在「创建访问令牌」面板上，提供以下信息：
 
 * 令牌的**名称**。
-* 令牌的**权限**级别。在 Beta 期间，只有**读取**访问权限可用。
 * 令牌的**到期**时间。默认为`从不`。
 
 5、完成令牌配置后，选择**创建访问令牌**按钮。
 
 6、将出现一个显示访问令牌的窗口。关闭此窗口之前请将您的令牌复制到安全的地方，因为您的令牌**以后无法获取**：
 
-{% embed url="https://bitwarden.com/_gatsby/image/36952bd7fa3514dc9b301eba61b3f256/02b860cb3c232ecb9c257c521dbb8153/Screen%20Shot%202023-02-24%20at%2010.16.14%20AM.webp?eu=d9df59b4b5ceaf870e6ef6d66f77366de86904abfe5760d93b32e4a94ca99ed376f54a53229328e22f3d0ed7dae84abf639371651ae986da91ed4ea0e337f85e57d10fe761b67a5f156f84bdbaea191c35974d0de29d9b4cf53c3197b0f7f46e47055834af38e6d2aaf33432b8de6835f5b5c7782596c819b14b5c0cbd5a168b30ccf382527c90d1e54bbde4e8a85d9fcae57e0547d2f1332b704b1d5ee979b2a4b30d753e7a410e2aadfc1a9234c8d95f443e67315d03f56427d057e66e35acb5bfce5cd9647ae7b6c8351ff7beb0c0b34d&a=w%3D850%26h%3D587%26fm%3Dwebp%26q%3D75&cd=2023-03-22T13%3A13%3A20.747Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3QfpdSQai2hFrWGdGSlQRN/8453d5425eba62421e443b4b7a677f7a/Screenshot_2024-04-09_at_10.41.34_AM.png?_a=BAJFJtWIB" %}
 访问令牌示例
 {% endembed %}
 

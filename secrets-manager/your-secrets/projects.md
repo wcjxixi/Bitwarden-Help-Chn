@@ -81,7 +81,7 @@
 
 ## 添加服务账户到工程 <a href="#add-service-accounts-to-a-project" id="add-service-accounts-to-a-project"></a>
 
-您可以将新的和现有的[服务账户](service-accounts.md)添加到工程中：
+您可以将新的和现有的[服务账户](machine-accounts.md)添加到工程中：
 
 {% tabs %}
 {% tab title="添加现有的服务账户" %}

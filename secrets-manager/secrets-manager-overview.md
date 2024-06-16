@@ -16,12 +16,12 @@ Secrets Manager 使用的核心范例是以下关系：
 
 * [**机密**](your-secrets/secrets.md)：敏感的键值对，如 API 密钥，您的组织需要安全地存储它们，并且永远不应以明码形式公开或通过未加密的渠道传输。
 * [**工程**](your-secrets/projects.md)：按逻辑组合在一起的机密集合，供您的 DevOps 和网络安全团队进行可管理的访问。
-* [**服务账户**](your-secrets/service-accounts.md)：非人类机器用户，如应用程序或部署管道，需要对一组谨慎的机密进行编程式访问。
+* [**机器账户**](your-secrets/machine-accounts.md)：非人类机器用户，如应用程序或部署管道，需要对一组谨慎的机密进行编程式访问。
 * [**访问令牌**](your-secrets/access-tokens.md)：一组密钥，有助于服务账户访问和解密存储在您的密码库中的机密。
 
 Secrets Manager 旨在保护和管理您在特权开发人员环境中高度敏感的凭据。多向访问层和权限级别将确保只有经过身份验证的机器和具有正确权限的人员才能查看或操作存储在您的密码库中的机密：
 
-{% embed url="https://bitwarden.com/_gatsby/image/0a35ee7adec51f22639ee5a0cb8d40a8/df3d74ff52a7f409cfdddc70d8d1be60/Marketing%20Diagrams%202023%20-%20Baylor%20WIP%20(1).webp?eu=dcdc56e1e5cbfb860f68a0d16d24326ab13952f8f70731d66962ecfe4af99ed377f41d53739c2ce2253a098bd2e117b263c17b691fe7d08e94ee1bf3bc32a308028a08ea66bb2156037d90fbb2fc0e4d61c7130cf3d7c95ba56d7085e7e7b7791e501b23fa7cb986e8ff666ce4877a64e2bea37d6f9aef3ca051544bd4412cad33eed3c0605ab89ff35cbaa2adb75798d8f82a451e88b56f232144421fea32b9c2c304036d49172a46b4d706a567eeb45f6d37265c4050fe3633d804ad3a63c0e4aaa55dd97d7fe1fc9d38738fc2fd82e412aa2822e2d05af8c0602f4a54f244c2c822a685265753c245f8954eb16c185a32d355d57b62b65f26ec68ebe0288d68a239&a=w%3D850%26h%3D478%26fm%3Dwebp%26q%3D75&cd=2023-03-22T18%3A51%3A20.506Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2WA0BdPgACJHnR6H2SAf52/aa1572d76e0dae8cd955ae82094c4c81/Frame_178.png?_a=BAJFJtWI0" %}
 Secrets Manager 示意图
 {% endembed %}
 

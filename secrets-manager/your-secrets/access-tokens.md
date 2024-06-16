@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/access-tokens/)
 {% endhint %}
 
-访问令牌是促进[服务账户](service-accounts.md)访问和解密存储在 Secrets Manager 中的[机密](secrets.md)的对象。访问令牌颁发给特定的服务账户，并将赋予应用它们的任何机器仅能访问**与该服务账户相关联的机密**的能力。
+访问令牌是促进[服务账户](machine-accounts.md)访问和解密存储在 Secrets Manager 中的[机密](secrets.md)的对象。访问令牌颁发给特定的服务账户，并将赋予应用它们的任何机器仅能访问**与该服务账户相关联的机密**的能力。
 
 ## 创建访问令牌 <a href="#create-an-access-token" id="create-an-access-token"></a>
 

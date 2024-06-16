@@ -37,7 +37,7 @@ docker run --rm -it bitwarden/bws --help
 
 ## 身份验证 <a href="#authentication" id="authentication"></a>
 
-可以使用为特定[服务账户](../your-secrets/service-accounts.md)生成的[访问令牌](../your-secrets/access-tokens.md)登录 Secrets Manager CLI。这意味着**只有对机密和工程有访问权限的服务账户可以使用 CLI 进行交互**。有多种方式可以对 CLI 会话进行身份验证：
+可以使用为特定[服务账户](../your-secrets/machine-accounts.md)生成的[访问令牌](../your-secrets/access-tokens.md)登录 Secrets Manager CLI。这意味着**只有对机密和工程有访问权限的服务账户可以使用 CLI 进行交互**。有多种方式可以对 CLI 会话进行身份验证：
 
 {% tabs %}
 {% tab title="环境变量" %}

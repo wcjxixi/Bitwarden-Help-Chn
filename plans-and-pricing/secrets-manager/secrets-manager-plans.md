@@ -18,14 +18,14 @@
 
 * 最多 2 个用户
 * 最多 3 个[工程](../../secrets-manager/your-secrets/projects.md)
-* 最多 3 个[服务账户](../../secrets-manager/your-secrets/service-accounts.md)
+* 最多 3 个[服务账户](../../secrets-manager/your-secrets/machine-accounts.md)
 
 ## 团队 <a href="#teams" id="teams"></a>
 
 为您的整个开发团队提供额外的业务功能。Secrets Manager 团队版计划的价格为 **$6/用户/月**，提供：
 
 * 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
-* 最多 50 个[服务账户](../../secrets-manager/your-secrets/service-accounts.md)
+* 最多 50 个[服务账户](../../secrets-manager/your-secrets/machine-accounts.md)
 * 每个附加服务账户 50 美分
 * 提供给[团队组织](../../organizations/organizations.md#types-of-organizations)的所有功能，例如[事件日志](../../admin-console/reporting/event-logs.md)和 [API 访问](../../organizations/bitwarden-public-api.md)
 
@@ -34,7 +34,7 @@
 通过自动化配置和其他管理功能支持企业需求。Secrets Manager 企业版计划的价格为 **$12//用户/月**，提供：
 
 * 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
-* 最多 200 个[服务账户](../../secrets-manager/your-secrets/service-accounts.md)
+* 最多 200 个[服务账户](../../secrets-manager/your-secrets/machine-accounts.md)
 * 每个附加服务账户 50 美分
 * 提供给[企业组织](../../organizations/organizations.md#types-of-organizations)的所有功能，例如 [SCIM 配置](../../scim/about-scim.md)和[企业策略](../../organizations/enterprise-policies.md)
 

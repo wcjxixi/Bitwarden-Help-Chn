@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/developer-quick-start/)
 {% endhint %}
 
-Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理和部署机密。[Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 是您通过经身份验证的[服务账户](../your-secrets/service-accounts.md)将[机密](../your-secrets/secrets.md)注入应用程序和基础设施的主要工具。
+Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理和部署机密。[Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 是您通过经身份验证的[机器账户](../your-secrets/machine-accounts.md)将[机密](../your-secrets/secrets.md)注入应用程序和基础设施的主要工具。
 
 在本文中，我们将通过查看几种检索存储在密码库中的数据库凭据以在容器运行时注入 [Bitwarden Unified](../../self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md) Docker 镜像的方式来演示 Secrets Manager CLI 的使用。
 
@@ -20,7 +20,7 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 
 ### 身份验证 <a href="#authenticate" id="authenticate"></a>
 
-可以使用为特定[服务账户](../your-secrets/service-accounts.md)生成的[访问令牌](../your-secrets/access-tokens.md)登录 Secrets Manager CLI。这意味着**只有服务账户具有访问权限的机密和工程**可以使用 CLI 进行交互。有多种方法可以验证 CLI 会话，但最简单的方法是将环境变量 `BWS_ACCESS_TOKEN` 与您的访问令牌的值一起保存，例如：
+可以使用为特定[服务账户](../your-secrets/machine-accounts.md)生成的[访问令牌](../your-secrets/access-tokens.md)登录 Secrets Manager CLI。这意味着**只有机器账户具有访问权限的机密和工程**可以使用 CLI 进行交互。有多种方法可以验证 CLI 会话，但最简单的方法是将环境变量 `BWS_ACCESS_TOKEN` 与您的访问令牌的值一起保存，例如：
 
 ```batch
 export BWS_ACCESS_TOKEN=0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHnAp1h0gL8bngprlPOYutt0:B3h5D+YgLvFiQhWkIq6Bow==

@@ -13,7 +13,7 @@ Bitwarden 提供与 GitHub Actions 的集成，以从 Secrets Manager 获取机�
 1. 在 GitHub 中，导航到您的存储库并选择 **Settings** 选项卡。
 2. 在左侧导航的 Security 部分，选择 **Secrets and variables** → **Actions**。
 3. 打开 Secrets 选项卡然后选择 **New repository secret** 按钮。
-4. 在另一个选项卡中，打开 Secrets Manager Web 密码库然后[创建一个访问令牌](../your-secrets/service-accounts.md)。
+4. 在另一个选项卡中，打开 Secrets Manager Web 密码库然后[创建一个访问令牌](../your-secrets/machine-accounts.md)。
 5. 返回 GitHub，为您的机密命名，例如 `BW_ACCESS_TOKEN`，然后将步骤 4 中的访问令牌值粘贴到 **Secret** 输入框中。
 6. 选择 **Add secret** 按钮。
 

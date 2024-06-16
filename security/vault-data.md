@@ -57,7 +57,7 @@
   * 机密值
   * 机密备注
 * [工程](../secrets-manager/your-secrets/projects.md)名称
-* [服务账户](../secrets-manager/your-secrets/service-accounts.md)名称
+* [服务账户](../secrets-manager/your-secrets/machine-accounts.md)名称
 * [访问令牌](../secrets-manager/your-secrets/access-tokens.md)名称（Bitwarden 永远不会存储访问令牌值的）
 
 某些数据，但**绝非密码库或机密数据**，用于向您提供 Bitwarden 服务，这称为管理数据，可被 Bitwarden 访问。[了解更多](administrative-data.md)。

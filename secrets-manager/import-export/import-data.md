@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/import-secrets-data/)
 {% endhint %}
 
-将数据导入您的机密密码库，以便从其他组织或机密管理解决方案轻松迁移。Secrets Manager 支持直接导入[机密](../your-secrets/secrets.md)和[工程](../your-secrets/projects.md)。无法导入[服务账户](../your-secrets/service-accounts.md)和[访问令牌](../your-secrets/access-tokens.md)。
+将数据导入您的机密密码库，以便从其他组织或机密管理解决方案轻松迁移。Secrets Manager 支持直接导入[机密](../your-secrets/secrets.md)和[工程](../your-secrets/projects.md)。无法导入[服务账户](../your-secrets/machine-accounts.md)和[访问令牌](../your-secrets/access-tokens.md)。
 
 ## 调整导入的文件 <a href="#condition-an-import-file" id="condition-an-import-file"></a>
 

@@ -27,7 +27,7 @@
 
 ## 用户管理 <a href="#user-management" id="user-management"></a>
 
-Secrets Manager 的组织用户管理与使用 Password Manager 的组织用户管理是相似的，除了一些 Secrets Manager 特定的元素（[授予组织成员对 Secrets Manager 的访问权限](manage-your-organization.md#access-to-secrets-manager)、[成员角色](manage-your-organization.md#member-roles)差异，以及指定[用户席位和服务账户](secrets-manager-quick-start.md#user-seats-and-service-account-scaling)）。
+Secrets Manager 的组织用户管理与使用 Password Manager 的组织用户管理是相似的，除了一些 Secrets Manager 特定的元素（[授予组织成员对 Secrets Manager 的访问权限](manage-your-organization.md#access-to-secrets-manager)、[成员角色](manage-your-organization.md#member-roles)差异，以及指定[用户席位和机器账户](secrets-manager-quick-start.md#user-seats-and-service-account-scaling)）。
 
 ### 入职 <a href="#onboarding" id="onboarding"></a>
 
@@ -102,7 +102,7 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 
 事件日志可从 Bitwarden 公共 API 的 `/events` 端点访问和导出，并无限期保留。虽然许多事件适用于所有 Bitwarden 产品，有些是特定于 Password Manager 的，但 Secrets Manager 将专门记录以下内容：
 
-* 机密被服务账户访问
+* 机密被机器账户访问
 
 ## 自托管
 

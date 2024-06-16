@@ -240,7 +240,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 ### **Secrets Manager**
 
 * **支持自托管**：企业组织现在可以自行托管 Secrets Manager（参阅[这里](secrets-manager/get-started/manage-your-organization.md#zi-tuo-guan)）。
-* **全新的事件日志视图**：现在可以直接从服务账户视图访问服务账户事件日志（参阅[这里](secrets-manager/your-secrets/service-accounts.md#service-account-events)）。
+* **全新的事件日志视图**：现在可以直接从服务账户视图访问服务账户事件日志（参阅[这里](secrets-manager/your-secrets/machine-accounts.md#service-account-events)）。
 
 ## 2023.9.0
 
@@ -288,7 +288,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-* **Secrets Manager - 服务账户写入权限**：现在服务账户可以被授予对工程和机密的写入权限（参阅[这里](secrets-manager/your-secrets/service-accounts.md)）。
+* **Secrets Manager - 服务账户写入权限**：现在服务账户可以被授予对工程和机密的写入权限（参阅[这里](secrets-manager/your-secrets/machine-accounts.md)）。
 * **Secrets Manager - 批量用户管理**：现在可以将组织成员批量添加到 Secrets Manager（参阅[这里](secrets-manager/get-started/secrets-manager-quick-start.md#give-members-access)）。
 
 {% hint style="success" %}
