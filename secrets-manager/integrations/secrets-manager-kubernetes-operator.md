@@ -132,7 +132,7 @@ EOF
 | `spec.authToken`      | BitwardenSecrets 对象部署到的 Kubernetes 命名空间内的机密名称，其中包含跨机密使用的 Secrets Manager 机器账户授权令牌。 |
 
 {% hint style="danger" %}
-Secrets Manager 不保证跨工程的唯一机密名称。默认情况下，将使用 Secrets Manager 机密 UUID 用作密钥来创建机密。
+Secrets Manager 不保证跨工程机密名称的唯一性。默认情况下，将使用作为密钥使用的 Secrets Manager 机密 UUID 来创建机密。
 {% endhint %}
 
 为了使生成的机密更易于使用，您可以创建 Bitwarden Secrets ID 到 Kubernetes 机密密钥的映射。生成的机密将用您提供的映射名称替换 Bitwarden 机密 ID。

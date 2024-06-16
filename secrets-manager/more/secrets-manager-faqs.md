@@ -14,7 +14,7 @@
 
 对于团队和企业，Bitwarden Secrets Manager 提供团队和企业订阅，具有高级业务功能，如审核日志、目录和 SCIM 集成以及企业策略。
 
-Teams 订阅起价为每位用户每月 6 美元，拥有无限数量的机密、用户和工程，以及最多 20 个机器账户。Enterprise 订阅起价为每位用户每月 12 美元，拥有无限数量的机密、用户和工程，以及最多 50 个机器账户。
+Teams 订阅起价为 $6/用户/月，拥有无限数量的机密、用户和工程，以及最多 20 个机器账户。Enterprise 订阅起价为 $12/用户/月，拥有无限数量的机密、用户和工程，以及最多 50 个机器账户。
 
 [了解有关 Secrets Manager 定价的更多信息](https://bitwarden.com/products/secrets-manager/#pricing)。
 
