@@ -4,13 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/encrypted-export/)
 {% endhint %}
 
-密码库数据可以[导出](export-vault-data.md)为加密的 `.json` 文件。加密的导出文件将包含来自您的组织或个人密码库的项目，但不包含 Send、~~密码历史记录、~~回收站或项目附件。可以使用网页密码库或 CLI 创建受密码保护的导出。Bitwarden 提供两种加密导出类型：
+密码库数据可以[导出](export-vault-data.md)为加密的 `.json` 文件。加密的导出文件将包含来自您的组织或个人密码库的项目，但不包含 Send、~~密码历史记录、~~回收站或项目附件。可以使用网页密码库或 [CLI](../password-manager/developer-tools/password-manager-cli.md#export) 创建受密码保护的导出。Bitwarden 提供两种加密导出类型：
 
-* **账户备份**：导出的加密文件，只能重新导入到生成加密导出文件的 Bitwarden 账户。此过程使用专用于 Bitwarden 账户的[账户加密密钥](../security/account-encryption-key.md)。
-* **密码保护**：使用您选择的密码保护导出的加密文件。该文件使用您选择的密码解密，并且可以导入任何 Bitwarden 账户。
+* **账户限制**：导出的加密文件，只能重新导入到生成加密导出文件的 Bitwarden 账户。此过程使用专用于 Bitwarden 账户的[账户加密密钥](../security/account-encryption-key.md)。
+* **密码保护**：使用您选择的密码保护导出的加密文件。该文件使用您选择的密码解密，并且可以导入任何 Bitwarden 账户。此指定的密码经过加盐处理，使用 PBKDF2 以 100,000 次迭代派生出加密密钥，最后使用 HDKF 拉伸为一个新的加密密钥，用于加密您的数据和消息身份验证代码 (MAC)。
 
 {% hint style="warning" %}
-**账户备份**的导出不能导入到其他账户。此外，[轮换您账户的加密密钥](../security/account-encryption-key.md)将导致已加密导出无法解密。**如果您轮换了您的加密密钥，请使用新的加密密钥导出新文件以替换所有旧文件。**
+**账户限制**的导出不能导入到其他账户。此外，[轮换您账户的加密密钥](../security/account-encryption-key.md)将导致已加密的导出无法解密。**如果您轮换了您的加密密钥，请使用新的加密密钥导出新文件以替换所有旧文件。**
 
 如果您希望将加密的 `.json` 文件导入不同的 Bitwarden 账户，请在创建导出时选择**密码保护**的导出类型。
 {% endhint %}
@@ -49,15 +49,17 @@
 {% tab title="网页密码库" %}
 要通过网页密码库导出您的个人密码库数据：
 
-1、从顶部导航栏中选择**工具**。
+1、在网页密码库中，从导航栏选择**工具** → **导出密码库**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5PUGzasNsQnABG9gtso4o3/7570e4655e1ad686596a2a53301c6d08/Screenshot_2024-02-27_at_11.32.04_AM.png?_a=BAJFJtWIB" %}
 
 2、从左侧工具菜单中选择**导出密码库**。
 
-3、在导出密码库页面中，选择一个**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。
+3、选择**导出自**位置和**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。如果您从**导出自**下拉列表中选择了某个组织，则只会导出您拥有「[可以管理](../admin-console/user-management/member-roles-and-permissions.md)」权限的集合。
 
-4、如果选择 `.json (Encrypted)`，请选择您希望用于加密导出的**文件类型**：
+4、如果选择 `.json (Encrypted)`，请选择您希望用于加密导出的**导出类型**：
 
-* **账户备份**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
+* **账户限制**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
 * **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
 
 5、选择**确认格式**，输入您的主密码，然后选择**导出密码库**按钮以完成。
@@ -72,11 +74,12 @@
 
 3、在导出密码库视图中，选择一个**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。
 
-{% hint style="success" %}
-如果您需要将此数据导入新的 Bitwarden 帐户，我们建议使用网络密码库创建**密码保护**的导出。
-{% endhint %}
+4、如果选择 `.json (Encrypted)`，请选择您希望用于加密导出的**导出类型**：
 
-4、输入您的**主密码**然后选择**提交**。
+* **账户限制**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
+* **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
+
+5、输入您的**主密码**然后选择**提交**。
 
 {% hint style="info" %}
 如果您是从 Vivaldi 浏览器扩展导出，您可能需要弹出浏览器扩展以便导出能正常工作。
@@ -90,11 +93,12 @@
 
 2、在导出密码库窗口中，选择一个**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。
 
-{% hint style="success" %}
-如果您需要将此数据导入新的 Bitwarden 帐户，我们建议使用网络密码库创建**密码保护**的导出。
-{% endhint %}
+3、如果选择 `.json (Encrypted)`，请选择您希望用于加密导出的**导出类型**：
 
-3、输入您的**主密码**然后选择 **⬇️下载**按钮。
+* **账户限制**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
+* **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
+
+4、输入您的**主密码**然后选择 **⬇️下载**按钮。
 {% endtab %}
 
 {% tab title="移动端" %}

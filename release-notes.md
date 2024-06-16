@@ -22,6 +22,33 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2024.6.0
+
+此次发布包含：
+
+### **Password Manager**
+
+* **通行密钥用户验证**：当使用存储的通行密钥登录时，浏览器扩展现在可能会提示用户使用生物识别、PIN 或主密码进行验证。[了解更多](password-manager/vault-basics/storing-passkeys.md#liu-lan-qi-kuo-zhan)。
+* **产品内入门**：密码管理器的新用户现在将看到一个入门模块，以帮助他们快速开始保护凭据。
+* **浏览器扩展设置重组**：使用浏览器扩展上新重组的设置界面可以快速定位和修改浏览器扩展设置。
+* **Firefox 扩展在隐私窗口中获得完整功能**：在 Firefox 隐私窗口中使用 Bitwarden 浏览器扩展不再有任何限制。[了解更多](miscellaneous/use-bitwarden-in-firefoxs-private-mode.md)。
+* **增加产品切换器的位置**：用于在密码管理器、管理控制台、Secrets Manager 和提供商门户之间切换的产品切换器现在也可以在导航的左下角找到。
+* **浏览器扩展和桌面端的密码保护导出**：浏览器扩展和桌面端应用程序现在可以导出受密码保护的加密导出。[了解更多](import-export/encrypted-exports.md#create-an-encrypted-export)。
+
+### Bitwarden Authenticator
+
+* **导入到 Bitwarden Authenticator**：将数据从 Google Authenticator、LastPass Authenticator、Raivo 以及 2FAS 等其他各种身份验证软件直接导入到 Bitwarden Authenticator。[了解更多](bitwarden-authenticator/import-and-export.md)。
+
+### **Secrets Manager**
+
+* **开始 Secrets Manager 试用**：开始 Secrets Manager 企业版试用，以测试概念验证，并获得对 SSO 和 SCIM 集成、企业策略、自托管、事件日志和优先级支持等企业功能。[立即注册 Secrets Manager 7 天免费试用](https://vault.bitwarden.com/#/register?org=enterprise\&layout=secretsManager)。
+* **Secrets Manager Kubernetes Operator (beta)**：使用 Bitwarden Secrets Manager Kubernetes Operator 安全高效地将 Secrets Manager 集成到 Kubernetes 工作流中。[了解更多](secrets-manager/integrations/secrets-manager-kubernetes-operator.md)。
+
+### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+
+* **集合管理更新**：添加了一个集合管理选项，允许您决定是否自动向管理员和所有者提供对组织中所有集合及其中的项目的管理权限。[了解更多](admin-console/organization-basics/collection-management.md)。
+* **通过 API 配置自定义用户**：现在可以通过公共 API 配置组织成员的自定义角色权限。[了解更多](https://bitwarden.com/help/api/)。
+
 ## 2024.5.0
 
 此次发布包含：
