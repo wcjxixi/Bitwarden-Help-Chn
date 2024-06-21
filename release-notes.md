@@ -22,6 +22,14 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2024.6.1
+
+此次发布包含：
+
+### **Password Manager**
+
+* **集合管理更新**：添加了集合管理选项，允许您决定是否自动向管理员和所有者提供对组织中所有集合及其项目的管理权限。[了解更多](admin-console/organization-basics/collection-management.md)。
+
 ## 2024.6.0
 
 此次发布包含：
