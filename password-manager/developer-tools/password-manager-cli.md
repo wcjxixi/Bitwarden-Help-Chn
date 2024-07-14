@@ -491,6 +491,50 @@ bw confirm org-member <id> --organizationid <orgid>
 bw confirm org-member 7063feab-4b10-472e-b64c-785e2b870b92 --organizationid 310d5ffd-e9a2-4451-af87-ea054dce0f78
 ```
 
+### 设备批准 <a href="#device-approval" id="device-approval"></a>
+
+允许管理员和所有者在用户已请求管理员批准时管理设备批准请求。
+
+{% hint style="info" %}
+目前，批量设备批准仅适用于从 Bitwarden.com 下载的 Bitwarden CLI 客户端。
+{% endhint %}
+
+{% hint style="danger" %}
+在大多数情况下，用户可以批准自己的登录请求，不需要管理员设备批准。请参阅[添加受信任设备](../../admin-console/login-with-sso/trusted-devices/add-a-trusted-device.md)。自动或批量批准管理员设备批准请求会忽略管理员为确保请求合法而执行的验证步骤，例如检查用户报告的指纹短语。
+
+Bitwarden 建议在启用和使用批量设备批准之前，先审查重要的安全控制措施，例如 IdP 凭证标准、IdP MFA 以及 IdP 设备注册和信任。
+{% endhint %}
+
+`list` 命令用于显示组织内所有待处理的设备批准请求：
+
+```bash
+bw device-approval list --organizationid <organization_Id>
+```
+
+`approve` 命令用于批准组织内待处理的设备授权请求：
+
+```bash
+bw device-approval approve --organizationid <organizationId> <requestId>
+```
+
+同理， `approve-all` 命令用于批准所有当前待处理的请求：
+
+```bash
+bw device-approval approve-all --organization <organizationId>
+```
+
+`deny` 用于拒绝待处理的授权请求：
+
+```bash
+bw device-approval deny --organizationid <organizationId> <requestId>
+```
+
+`deny-all` 用于拒绝所有待处理的授权请求：
+
+```bash
+bw device-approval deny-all --organizationid <organizationId>
+```
+
 ## 其他命令 <a href="#other-commands" id="other-commands"></a>
 
 ### config

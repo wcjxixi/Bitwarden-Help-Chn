@@ -22,6 +22,19 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2024.6.3
+
+此次发布包含：
+
+### **Password Manager**
+
+* **批量批准可信任设备 SSO**：管理员和所有者现在可以使用 [Web 应用程序](admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md#bulk-approve-requests)或 [CLI](password-manager/developer-tools/password-manager-cli.md#device-approval) 批量批准可信设备请求。
+* **陈旧的用户加密密钥迁移**：2021 年之前创建的 Bitwarden 账户已将其账户加密密钥迁移到 Bitwarden 的更现代化的用户对称密钥。这些用户将被从非 Web Bitwarden 客户端注销，直到他们通过登录 Bitwarden Web 客户端完成迁移。[此处](security/encryption.md)了解有关 Bitwarden 加密的更多信息。
+
+### 自托管 <a href="#self-hosting" id="self-hosting"></a>
+
+* **支持更多集合管理选项**：自托管 Bitwarden 服务器现在支持**所有者和管理员可以管理所有集合和项目**集合管理选项。[了解更多](admin-console/organization-basics/collection-management.md)。
+
 ## 2024.6.1
 
 此次发布包含：
