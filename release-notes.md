@@ -22,6 +22,20 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2024.7.1 <a href="#id-2024.7.1" id="id-2024.7.1"></a>
+
+此次发布包含：
+
+### **Password Manager**
+
+### **Secrets Manager**
+
+### 自托管 <a href="#self-hosting" id="self-hosting"></a>
+
+### 安全 <a href="#security" id="security"></a>
+
+### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
+
 ## 2024.6.3
 
 此次发布包含：
