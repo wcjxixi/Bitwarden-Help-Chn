@@ -26,9 +26,9 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
-### **Secrets Manager**
+### Secrets Manager
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
@@ -40,7 +40,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * **批量批准可信任设备 SSO**：管理员和所有者现在可以使用 [Web 应用程序](admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md#bulk-approve-requests)或 [CLI](password-manager/developer-tools/password-manager-cli.md#device-approval) 批量批准可信设备请求。
 * **陈旧的用户加密密钥迁移**：2021 年之前创建的 Bitwarden 账户已将其账户加密密钥迁移到 Bitwarden 的更现代化的用户对称密钥。这些用户将被从非 Web Bitwarden 客户端注销，直到他们通过登录 Bitwarden Web 客户端完成迁移。[此处](security/encryption.md)了解有关 Bitwarden 加密的更多信息。
@@ -53,7 +53,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * **集合管理更新**：添加了集合管理选项，允许您决定是否自动向管理员和所有者提供对组织中所有集合及其项目的管理权限。[了解更多](admin-console/organization-basics/collection-management.md)。
 
@@ -61,7 +61,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * **通行密钥用户验证**：当使用存储的通行密钥登录时，浏览器扩展现在可能会提示用户使用生物识别、PIN 或主密码进行验证。[了解更多](password-manager/vault-basics/storing-passkeys.md#liu-lan-qi-kuo-zhan)。
 * **产品内入门**：密码管理器的新用户现在将看到一个入门模块，以帮助他们快速开始保护凭据。
@@ -74,12 +74,12 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 * **导入到 Bitwarden Authenticator**：将数据从 Google Authenticator、LastPass Authenticator、Raivo 以及 2FAS 等其他各种身份验证软件直接导入到 Bitwarden Authenticator。[了解更多](bitwarden-authenticator/import-and-export.md)。
 
-### **Secrets Manager**
+### Secrets Manager
 
 * **开始 Secrets Manager 试用**：开始 Secrets Manager 企业版试用，以测试概念验证，并获得对 SSO 和 SCIM 集成、企业策略、自托管、事件日志和优先级支持等企业功能。[立即注册 Secrets Manager 7 天免费试用](https://vault.bitwarden.com/#/register?org=enterprise\&layout=secretsManager)。
 * **Secrets Manager Kubernetes Operator (beta)**：使用 Bitwarden Secrets Manager Kubernetes Operator 安全高效地将 Secrets Manager 集成到 Kubernetes 工作流中。[了解更多](secrets-manager/integrations/secrets-manager-kubernetes-operator.md)。
 
-### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **集合管理更新**：添加了一个集合管理选项，允许您决定是否自动向管理员和所有者提供对组织中所有集合及其中的项目的管理权限。[了解更多](admin-console/organization-basics/collection-management.md)。
 * **通过 API 配置自定义用户**：现在可以通过公共 API 配置组织成员的自定义角色权限。[了解更多](https://bitwarden.com/help/api/)。
@@ -88,12 +88,12 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * 从我的密码库克隆组织项目：具有「可以管理」权限的用户现在可以从其密码库视图克隆组织所拥有的项目。[了解更多](your-vault/vault-items.md#clone)。
 * 浏览器扩展平台升级：从本周开始，Password Manager 浏览器扩展将开始逐步升级到名为 Manifest V3 的新扩展平台，从 1% 的用户开始，并在整个 5 月份逐步增加。不论是启动此升级或完成升级后，您都无需采取任何行动。
 
-### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * Splunk Cloud 集成：Bitwarden 事件日志应用程序可用于 Splunk Cloud Classic 和 Splunk Cloud Victoria 上的信息和事件管理。[了解更多](admin-console/reporting/splunk-siem.md)。
 
@@ -109,12 +109,12 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * **在移动应用程序上使用通行密钥**：密码管理器移动应用程序现在可以使用通行密钥创建和登录。此功能适用于 iOS 系统，安卓系统为测试版。[了解更多](password-manager/vault-basics/storing-passkeys.md)。
 * **删除已存储的通行密钥**：现在可以使用 Bitwarden 浏览器扩展和桌面应用程序删除存储在 Bitwarden 登录项目中的通行密钥。[了解更多](password-manager/vault-basics/storing-passkeys.md)。
 
-### **Secrets Manager**
+### Secrets Manager
 
 * **新的集成页面**：通过 Secrets Manager Web 应用程序中的新页面快速访问 Secrets Manager 集成。
 * **Secrets Manager CLI Docker 映像**：Bitwarden Secrets Manager CLI 现在已作为 Docker 镜像的形式提供。[了解更多](secrets-manager/developer-tools/secrets-manager-cli.md)。
@@ -127,11 +127,11 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * **删除存储的通行密钥**：现在可以从 Bitwarden Web 应用程序的**密码库项目** → **编辑**界面中删除存储在 Bitwarden 登录项目中的通行密钥。[了解更多](password-manager/vault-basics/storing-passkeys.md#delete-vault-item-passkey)。
 
-### **Secrets Manager**
+### Secrets Manager
 
 * **「服务账户」现在为「机器账户」**：服务账户已重命名为机器账户。
 
@@ -143,12 +143,12 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * Bitwarden 应用程序可使用新的语言：在社区翻译人员的贡献下，Bitwarden 应用程序现在提供了新的语言选项！[点击这里](miscellaneous/localization.md)查看完整的语言列表。[点击这里](https://contributing.bitwarden.com/contributing/#localization-l10n)了解更多关于 Bitwarden 本地化的信息。
 * **桌面应用程序硬件加速**：Bitwarden 桌面应用程序现在可以选择打开或关闭硬件加速以优化性能。该设置默认启用。
 
-### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **批量将项目分配到集合**：从管理控制台可以将组织项目批量分配到集合。[了解更多](organizations/collections.md#collections-ji-he-storing-passkeys-cun-chu-mi-ma-vault-administration-import-export-autofill-bitward)。
 
@@ -164,7 +164,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * **Web 应用程序导航更新**：Bitwarden Web 应用程序已完全重新设计！我们希望您能喜欢这个新的体验（[了解更多](https://bitwarden.com/blog/bitwarden-design-updating-the-navigation-in-the-web-app/)）。
 * **Duo 2FA 登录更新**：Duo 为用户和管理员引入了通用提示。启用该服务的 Duo 管理员会发现 Duo 2FA 登录流程稍微有一些变化（参阅[这里](two-step-login/setup-guides/two-step-login-via-duo.md)）。
@@ -177,12 +177,12 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **适用于终端用户的集合管理**：组织现在可以选择允许所有用户创建和管理他们自己的集合。此选项位于 **组织信息**界面，现有组织可选择加入，2024.2.2 之后创建的组织可选择退出（参阅[这里](admin-console/organization-basics/collection-management.md)）。
 * **弃用经理角色**：开启集合管理后，具有**经理**角色的组织用户将被迁移到**用户**角色，并获得对其分配的集合进行管理的新权限（参阅[这里](admin-console/user-management/member-roles-and-permissions.md)）。
 
-### **Secrets Manager**
+### Secrets Manager
 
 * **Ansible 集成**：使用 Bitwarden Secrets Manager 检索机密并将其注入您的 playbook 剧本中（参阅[这里](secrets-manager/integrations/ansible.md)）。
 
@@ -190,12 +190,12 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * **浏览器扩展的 TOTP 捕获**：使用 Bitwarden 浏览器扩展扫描网页并保存 TOTP 验证器二维码（参阅[这里](your-vault/totp.md#scan-a-qr-code)）。
 * **增加导入项目数量上限**：Bitwarden 密码管理器的导入相对之前，现在可以包含大约两倍的数据量（参阅[这里](import-export/import-data-to-your-vault.md)）。
 
-### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **组织唯一的 SP 实体 ID**：使用 SSO SAML 的组织现在可以升级其实体 ID，升级后的实体 ID 对于其组织来说是唯一的。这样做需要在 IdP 上重新配置（参阅[这里](login-with-sso/saml-2.0-configuration.md)）。
 
@@ -207,11 +207,11 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * **适用于自托管的通行密钥存储**：现在可以将通行密钥存储在自托管的 Bitwarden 服务器中（参阅[这里](password-manager/vault-basics/storing-passkeys.md)）。
 
-### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **通过公共 API 获得更多集合权限**： 现在，您可以使用公共 API 向用户隐藏任意集合的密码（参阅[这里](https://bitwarden.com/help/api/)）。
 
@@ -223,11 +223,11 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 * **使用通行密钥登录 (Beta)**：通行密钥可以作为使用主密码和电子邮件的替代方法来登录 Bitwarden Web 应用程序（参阅[这里](my-account/log-in-and-unlock/log-in-with-passkeys.md)）。
 
-### **Password Manager** <a href="#password-manager" id="password-manager"></a>
+### Password Manager
 
 * **浏览器扩展程序的账户切换**：使用 Bitwarden 浏览器扩展程序时，最多可登录 5 个账户并在这些账户之间无缝切换（参阅[这里](your-vault/account-switching.md)）。
 
-### **管理控制台** <a href="#admin-console" id="admin-console"></a>
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **通过公共 API 配置订阅**：使用新的公共 API 端点来配置订阅信息，例如席位数、最大自动扩展和存储（参阅[这里](https://bitwarden.com/help/api/)）。
 * **更多组织升级路径**：更多 Bitwarden 组织现在可以升级到不同的订阅，而无需联系支持人员。
@@ -240,7 +240,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * **自动填充菜单**：通过打开新的内联自动填充菜单，在浏览网页时自动填充凭据（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#inline-auto-fill-menu)）。
 
@@ -248,7 +248,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * **关闭使用通行密钥提示的选项**：您现在可以选择浏览器扩展程序是否要求保存和使用通行密钥（参阅[这里](password-manager/vault-basics/storing-passkeys.md#turn-off-passkey-prompt)）。
 * **移动设备上的 ForwardEmail 支持**：移动应用程序上的用户名生成器的转发电子邮件别名提供程序现在支持 ForwardEmail（参阅[这里](your-vault/username-password-generator.md#generate-a-username)）。
@@ -263,7 +263,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-### **Password Manager**
+### Password Manager
 
 * **保存通行密钥到您的密码库**：现在可以将通行密钥存储在您的 Bitwarden 密码库中了！使用 Bitwarden 浏览器扩展程序存储并使用通行密钥登录（参阅[这里](password-manager/vault-basics/storing-passkeys.md)）。
 * **LastPass 直接导入器**：使用浏览器扩展或桌面应用程序将数据从 LastPass 直接导入到 Bitwarden（参阅[这里](import-export/import-guides/import-your-data-from-lastpass.md#import-to-bitwarden)）。
@@ -272,7 +272,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 * **支持自托管别名提供程序**：Password Manager 客户端上的用户名生成器现在可以连接到自托管 Addy.io 和 SimpleLogin 实例（参阅[这里](your-vault/username-password-generator.md#simplelogin)）。
 * **通过上下文菜单自动填充支付卡和身份**：现在可以使用浏览器扩展的上下文菜单自动填充支付卡和身份（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-cards-and-identities.md#using-the-context-menu)）。
 
-### **Secrets Manager**
+### Secrets Manager
 
 * **支持自托管**：企业组织现在可以自行托管 Secrets Manager（参阅[这里](secrets-manager/get-started/manage-your-organization.md#zi-tuo-guan)）。
 * **全新的事件日志视图**：现在可以直接从服务账户视图访问服务账户事件日志（参阅[这里](secrets-manager/your-secrets/machine-accounts.md#service-account-events)）。
