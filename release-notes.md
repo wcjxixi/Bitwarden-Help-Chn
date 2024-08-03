@@ -28,7 +28,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### 提供商门户 <a href="#provider-portal" id="provider-portal"></a>
 
-* **新提供商的合并计费**：在此版本之后加入 Bitwarden 的提供商的计费程序现已简化，并仅通过提供商门户进行管理。现有提供商将在未来版本中迁移到新的计费系统。了解更多。
+* **新提供商的合并计费**：在此版本之后加入 Bitwarden 的提供商的计费程序现已简化，并仅通过提供商门户进行管理。现有提供商将在未来版本中迁移到新的计费系统。[了解更多](provider-portal/provider-portal-overview.md)。
 
 ## 2024.7.1 <a href="#id-2024.7.1" id="id-2024.7.1"></a>
 
@@ -37,16 +37,16 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 ### Password Manager
 
 * **移除通行密钥用户验证**：最近的更新要求在浏览器扩展上使用通行密钥时进行用户验证，该更新已暂时回退。
-* **启用了 PRF 的通行密钥将在账户加密密钥轮换后继续有效**：如果用户轮换了他们的账户加密密钥，使用通行密钥登录 Bitwarden 时使用的 PRF 密钥现在继续有效。了解更多。
+* **启用了 PRF 的通行密钥将在账户加密密钥轮换后继续有效**：如果用户轮换了他们的账户加密密钥，使用通行密钥登录 Bitwarden 时使用的 PRF 密钥现在继续有效。[了解更多](security/account-encryption-key.md#rotate-your-encryption-key)。
 * **紧急联系人和提供商的邀请说明**：受信任的紧急联系人和提供商用户在接受邀请后，现在将进入「需要确认」状态，使您的下一步操作更清晰。
-* **批量分配项目到集合**：现在，您可以从密码库视图中将项目批量分配到组织的集合中。此功能的前一版本称为「移动到组织」。了解更多。
-* **重命名将项目添加到文件夹**：在密码库视图中，将项目添加到文件夹的选项已从「移动所选」重命名为「添加到文件夹」。了解更多。
+* **批量分配项目到集合**：现在，您可以从密码库视图中将项目批量分配到组织的集合中。此功能的前一版本称为「移动到组织」。[了解更多](your-vault/vault-items.md#assign-to-collections)。
+* **重命名将项目添加到文件夹**：在密码库视图中，将项目添加到文件夹的选项已从「移动所选」重命名为「添加到文件夹」。[了解更多](your-vault/folders.md#move-items-to-a-folder)。
 * **弃用桌面应用程序设置**：桌面应用程序现在默认可以批准设备登录。了解更多。
-* **改进的 SSO 标识符工作流程**：管理员现在可以分发企业单点登录界面的 URL，并将其 SSO 标识符作为查询参数包含在内，以自动将组织成员重定向到 IdP，从而获得更简化的 SSO 体验。了解更多。
+* **改进的 SSO 标识符工作流程**：管理员现在可以分发企业单点登录界面的 URL，并将其 SSO 标识符作为查询参数包含在内，以自动将组织成员重定向到 IdP，从而获得更简化的 SSO 体验。[了解更多](login-with-sso/login-with-sso-faqs.md#q-do-i-need-to-enter-my-organization-identifier-every-time-i-login)。
 
 ### Secrets Manager
 
-* **添加对机密的直接访问权限**：现在可以直接授予人员和机器账户对机密的访问权限，而不需要项目作为中介。了解更多。
+* **添加对机密的直接访问权限**：现在可以直接授予人员和机器账户对机密的访问权限，而不需要项目作为中介。[了解更多](secrets-manager/your-secrets/secrets.md)。
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
@@ -54,7 +54,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 用户应在 2024.10.x 版本之前将自托管服务器至少升级到此版本，以确保与使用密码库项目密钥的客户端兼容。
 {% endhint %}
 
-* **支持批量设备批准**：自托管 Bitwarden 服务器现在支持用于受信任设备 SSO 的批量设备批准。了解更多。
+* **支持批量设备批准**：自托管 Bitwarden 服务器现在支持用于受信任设备 SSO 的批量设备批准。[了解更多](admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md#bulk-approve-requests)。
 
 ### 安全 <a href="#security" id="security"></a>
 

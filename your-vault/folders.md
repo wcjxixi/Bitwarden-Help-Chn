@@ -105,13 +105,13 @@ bw create folder <foldername>
 * 导航到**添加项目**或**编辑项目**界面，从**文件夹**下拉列表中选择您的新文件夹并**保存**您的项目：
 
 {% embed url="https://bitwarden.com/help/images/manage-items/add-to-folder.png" %}
-将项目移动到文件夹
+移动项目到文件夹
 {% endembed %}
 
-* 导航到**我的密码库**视图，选择要移动的密码库项目，然后使用最上面的 **⚙️**齿轮下拉列表选择 **⮫移动所选**按钮。在移动所选按对话框中，选择要将项目移动到的文件夹：
+* 导航到**我的密码库**视图，选择要移动的密码库项目，然后使用最上面的 **⚙️**齿轮下拉列表选择 **⮫添加到文件夹**按钮。在移动所选按对话框中，选择要将项目移动到的文件夹：
 
-{% embed url="https://bitwarden.com/_gatsby/image/40f19d80b51ebdf340f7b827688a8a39/41329136cc6d0c219f220332a09232dd/Screen%20Shot%202022-05-16%20at%2010.23.16%20AM.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F7zQPzdrcVIbPeX5E8LqTq%2F4db20cc1bb32d9494bcae2355df7dcee%2FScreen_Shot_2022-05-16_at_10.23.16_AM.png&a=w%3D770%26h%3D157%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.312Z" %}
-将项目移动到文件夹
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7zQPzdrcVIbPeX5E8LqTq/781900835d36ecf71db0b47893c41346/2024-07-15_14-16-27.png?_a=DAJAUVWIZAAB" %}
+移动项目到文件夹
 {% endembed %}
 {% endtab %}
 
@@ -119,15 +119,15 @@ bw create folder <foldername>
 打开要移动的密码库项目，选择**文件夹**下拉列表，然后选择要将项目移动到的文件夹：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6b8EOCtuuHmulnNQNJmWWk/5cf0c1ba3608c5aec3bb26121e0cbab6/folder-move-be.png?fm=webp&h=734&q=50&w=966" %}
-将项目移动到文件夹
+移动项目到文件夹
 {% endembed %}
 {% endtab %}
 
 {% tab title="桌面端" %}
 打开要移动的密码库项目，选择**文件夹**下拉列表，然后选择要将项目移动到的文件夹：
 
-{% embed url="https://bitwarden.com/_gatsby/image/05cd8f73c599715ac0beac16d12fb456/cf5322320d1656eb7c000692a381ac76/Screen%20Shot%202022-05-18%20at%204.00.25%20PM.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F63jzyM75IRzhAbw5nNzMHx%2F29b8ed60015ebf272ce62cb0034ac68e%2FScreen_Shot_2022-05-18_at_4.00.25_PM.png&a=w%3D850%26h%3D611%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.685Z" %}
-将项目移动到文件夹
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/63jzyM75IRzhAbw5nNzMHx/29b8ed60015ebf272ce62cb0034ac68e/Screen_Shot_2022-05-18_at_4.00.25_PM.png?_a=DAJAUVWIZAAB" %}
+移动项目到文件夹
 {% endembed %}
 {% endtab %}
 
@@ -135,7 +135,7 @@ bw create folder <foldername>
 打开要移动的密码库项目，点击**文件夹**下拉菜单，然后选择要将项目移动到的文件夹：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/169hAtd0PhW3BcYlSPy6vn/3fbd101ece93cc272dec77c80bd2d4c1/folder-move-mob.jpeg?fm=webp&h=672&q=50&w=311" %}
-将项目移动到文件夹
+移动项目到文件夹
 {% endembed %}
 {% endtab %}
 

@@ -46,7 +46,8 @@
 
 **答：**不需要！将您的组织标识符作为您的企业单点登录页面的查询字符串，并将企业单点登录页面加入书签，将省去您每次输入的麻烦。示例：
 
-* 对于云托管实例：`https://vault.bitwarden.com/#/sso?identifier=your-org-id`
+* 对于 US 云托管实例：`https://vault.bitwarden.com/#/sso?identifier=your-org-id`
+* 对于 EU 云托管实例：`https://vault.bitwarden.eu/#/sso?identifier=your-org-id`
 * 对于自托管实例：`https://your.domain.com/#/sso?identifier=your-org-id`
 
 ### 问：如何更改预先生成的 SSO 配置的值？ <a href="#q-how-do-i-change-pre-generated-sso-configuration-values" id="q-how-do-i-change-pre-generated-sso-configuration-values"></a>
