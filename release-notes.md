@@ -22,6 +22,14 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2024.7.2 <a href="#id-2024.7.1" id="id-2024.7.1"></a>
+
+此次发布包含：
+
+### 提供商门户 <a href="#provider-portal" id="provider-portal"></a>
+
+* **新提供商的合并计费**：在此版本之后加入 Bitwarden 的提供商的计费程序现已简化，并仅通过提供商门户进行管理。现有提供商将在未来版本中迁移到新的计费系统。了解更多。
+
 ## 2024.7.1 <a href="#id-2024.7.1" id="id-2024.7.1"></a>
 
 此次发布包含：
