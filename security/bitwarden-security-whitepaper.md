@@ -1,4 +1,4 @@
-# Bitwarden 安全白皮书
+# =Bitwarden 安全白皮书
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/bitwarden-security-white-paper/)
@@ -19,35 +19,51 @@
 请阅读下面的全文，或[下载 PDF](https://bitwarden.com/images/resources/security-white-paper-2021.pdf)（英文）。
 {% endhint %}
 
-## Bitwarden 安全与合规计划概述 <a href="#overview-of-bitwarden-security-and-compliance-program" id="overview-of-bitwarden-security-and-compliance-program"></a>
+## 概述 <a href="#overview" id="overview"></a>
 
-随着越来越多地使用远程工作，互联网的使用率比以往任何时候都高，创建和维护几十个（甚至上百个）具有登录和密码的在线账户的需求也是惊人的。
+### 每个人的联系都比以往任何时候都更加紧密 <a href="#everyone-is-more-connected-than-ever" id="everyone-is-more-connected-than-ever"></a>
 
-安全专家建议对每一个创建的账户使用不同的、随机生成的密码。但如何管理所有这些密码呢？又如何在整个组织中保持良好的密码健康呢？
+在当今社会，与互联网连接的设备和服务比以往任何时候都更加重要。随着越来越多的公司提供创新的软件即服务产品来改善用户的家庭和工作生活，凭证和机器机密的数量呈指数级增长。对他们安全的威胁也是如此。
 
-有效的密码管理是企业中还未被充分利用的资源。[Rapid7 2020 年连帽衫报告](https://www.rapid7.com/research/reports/under-the-hoodie-2020/)指出，密码管理和二次控制（如双因素验证）「严重缺乏导致 ‘轻松’ 泄露」。以不安全的方式重复使用密码或共享密码，使企业变得脆弱。
+### 网络安全威胁很大，但实践很少 <a href="#cybersecurity-threats-are-high-but-practices-are-low" id="cybersecurity-threats-are-high-but-practices-are-low"></a>
 
-要给企业带来改变，安全和 IT 团队必须对员工进行最佳实践的教育。关于密码管理，对密码健康有促进的最简单方法之一就是在整个工作场所部署密码管理解决方案。
+用户和客户数据面临的威胁不断增加。几乎每周都会有数据泄露或勒索软件攻击的新闻出现，而这些仅仅是规模大到足以被公布的事件。2023 年，[IBM 报告](https://www.ibm.com/reports/data-breach)称，考虑到调查成本、法律费用、机会成本和客户信任损失，美国数据泄露的平均成本接近 948 万美元。
 
-要存储所有的登录、密码和其他敏感信息，同时又可以方便地在所有设备之间同步，Bitwarden 是最简单、最安全的方式。
+[Verizon](https://www.verizon.com/business/resources/reports/2023-data-breach-investigations-report-dbir.pdf) 的研究表明，在数据泄露事件中，被泄露的凭证占 86%。这包括使用在其他外泄事件中被猜测、钓鱼或泄露的密码。
 
-Bitwarden 提供了创建、存储和共享密码的工具，同时又保持最高级别的安全性。
+面对这些威胁，人们希望企业为员工尽可能多地提供培训和工具，但 [Bitwarden 的研究](https://bitwarden.com/resources/2023-password-decisions-survey-results/)表明，用户并不总是遵循最佳实践，其中 90% 的受访者表示他们重复使用了密码。
 
-Bitwarden 的解决方案、软件、基础设施和安全流程都是以多层次、深入防御的方式从头设计的。Bitwarden 的安全与合规计划基于 ISO27001 信息安全管理体系 (ISMS)。我们定义了管理我们的安全政策和流程的政策，并不断更新我们的安全计划，以符合适用的法律、行业和监管要求，以便我们在我们的[服务条款协议](https://bitwarden.com/terms/)下向您提供服务。
+安全专家建议用户为每个账户使用不同的随机生成的密码。但如何管理所有这些密码呢？如何在整个组织中保持良好的密码习惯呢？
+
+### Bitwarden 帮助保护个人、企业和基础设施的安全 <a href="#bitwarden-helps-secure-individuals-businesses-and-infrastructure-secrets" id="bitwarden-helps-secure-individuals-businesses-and-infrastructure-secrets"></a>
+
+Bitwarden 提供了一系列安全产品，旨在保护每个人，防止数据泄露，并确保工作效率。
+
+Bitwarden Password Manager 为用户提供了创建、存储和共享密码的工具，同时保持了最高级别的安全性。它是存储所有登录信息、密码和其他敏感信息的最简单和最安全的方法，同时还能方便地在所有设备之间保持同步。
+
+Bitwarden Secrets Manager 使开发人员、DevOps 和 IT 团队能够存储、共享和自动处理机器机密，例如身份验证密钥、数据库密码和 API 密钥。这种端到端加密的机密管理解决方案支持安全地部署基础设施和应用代码，没有暴露关键机器机密的风险。
+
+Bitwarden Passwordless.dev 提供了开发人员所需的 API 和工具，以实施基于 FIDO2 WebAuthn 通行密钥身份验证（用于网站和应用程序的下一代安全凭证验证）。
+
+### 维护安全性和合规性 <a href="#maintaining-security-and-compliance" id="maintaining-security-and-compliance"></a>
+
+Bitwarden 的解决方案、软件、基础设施和安全流程都是以多层次、深入防御的方式从头设计的。Bitwarden 的安全与合规计划基于 ISO27001 信息安全管理体系 (ISMS)。我们定义了管理我们的安全政策和流程的政策，并不断更新我们的安全计划，以符合适用的法律、行业和监管要求。
 
 Bitwarden 遵守行业标准的应用安全准则，包括一个专门的安全工程团队，并定期审查应用源代码和 IT 基础设施，以检测、验证和修复任何安全漏洞。
 
-本白皮书概述了 Bitwarden 的安全原则，并提供了其他文件的链接，以在特定领域提供更多细节。
+本白皮书概述了 Bitwarden 的安全原则，并提供了其他文件的链接，这些文件提供了在特定领域的更多细节。
 
 ## Bitwarden 安全原则 <a href="#bitwarden-security-principles" id="bitwarden-security-principles"></a>
 
-### 用户数据保护 <a href="#user-data-protection" id="user-data-protection"></a>
+使用 Bitwarden 产品保护用户数据是 Bitwarden 系统和员工以及用户本身之间的合作关系。本章节将概括介绍 Bitwarden 使用的关键安全措施以及 Bitwarden 为用户提供的用于保护 Bitwarden 中存储的数据的工具。
 
-Bitwarden 采用以下关键安全措施来保护用户数据。
+### 关键安全措施 <a href="#key-security-measures" id="key-security-measures"></a>
 
-**端到端加密**：使用端到端的 AES-CBC 256 位加密、盐化的哈希和 PBKDF2 SHA-256 来锁定您的密码以及私人信息。所有的加密密钥都由您设备上的客户端生成和管理，以及所有的加密都在本地完成。更多详情请查看[密码哈希派生](bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)部分。
+Bitwarden 采用以下关键的安全措施来保护 Bitwarden 中存储的数据：
 
-**零知识加密**：Bitwarden 团队成员无法看到您的密码。您的数据使用您的个人电子邮件和主密码被端到端加密。我们永不存储也无法访问您的主密码或您的加密密钥。
+**端到端加密**：通过端到端 AES-CBC 256 位加密以及 HMAC 身份验证、加盐哈希和密钥导出函数（例如 [PBKDF2 SHA-256](encryption.md#pbkdf2) 或 [Argon2id](encryption.md#argon2id) ）来锁定您的密码和私人信息。所有的加密密钥都由您设备上的客户端生成和管理，并且所有的加密都在本地完成。[这里](bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)查看更多详情。
+
+**零知识加密**：Bitwarden 团队成员无法查看您的密码。您的数据使用您的个人电子邮件和主密码进行端到端加密。Bitwarden 绝不会存储也无法访问您的主密码或加密密钥。
 
 {% hint style="info" %}
 2021 年中期发布的[账户恢复](../organizations/admin-password-reset.md)功能为所有组织引入了一个新的 RSA 公钥/私钥对。私钥在存储之前将使用组织中预先存在的对称密钥进一步加密。在创建新组织时将在客户端生成并加密此密钥，或者对于现有的组织：
@@ -57,41 +73,59 @@ Bitwarden 采用以下关键安全措施来保护用户数据。
 * 从一种组织类型升级到另一种组织类型。
 {% endhint %}
 
-**安全密码共享**：Bitwarden 可以在整个组织中与用户安全地共享和管理敏感数据。当敏感信息被共享时，受到非对称和对称加密组合的保护。
+**安全密码共享**：Bitwarden 支持在整个组织中与用户安全地共享和管理敏感数据。非对称和对称加密的组合可以在共享敏感信息时对其进行保护。
 
 **开源和可用源码**：所有 Bitwarden 软件产品的源代码都托管在 [GitHub](https://github.com/bitwarden) 上，我们欢迎大家对 Bitwarden 代码库进行审查、审计和贡献。Bitwarden 源代码由著名的第三方安全审计公司以及独立的安全研究人员进行审计。此外，[Bitwarden 漏洞披露计划](https://hackerone.com/bitwarden?type=team\&view\_policy=true)还得到了 HackerOne 黑客社区的帮助，以使 Bitwarden 更加安全。
 
-**通过设计保护隐私**：Bitwarden 将你所有的登录信息存储在一个加密的密码库中，并在你所有的设备上同步。由于它在离开你的设备之前就已经完全加密了，所以只有你才能访问你的数据。即使 Bitwarden 团队也无法读取您的数据（即使我们想读取）。您的数据被 AES-CBC 256 位加密、盐化哈希和 PBKDF2 SHA-256 密封。
+**隐私设计**：Bitwarden 将你所有的登录信息存储在一个加密的密码库中，并在你所有的设备上同步。由于它在离开你的设备之前就已经完全加密了，因此只有你才能访问你的数据。即使 Bitwarden 团队也无法读取您的数据（即使我们想读取）。
 
-**安全审计 & 合规**：Bitwarden 符合 AICPA SOC2 类型 2 /隐私保护，GDPR 和 CCPA 法规，开源并经第三方审计。
+**安全审计**：每年至少对应用程序和/或平台进行一次第三方安全审查和评估。
+
+**合规：**Bitwarden 符合 AICPA SOC2 Type 2 /数据隐私框架、GDPR 和 CCPA 法规。[了解更多](compliance-audits-and-certifications.md)。
+
+### 为用户提供的安全工具 <a href="#security-tools-for-users" id="security-tools-for-users"></a>
+
+以下工具由 Bitwarden 提供，个人用户和企业必须采取行动，以优化账户保护和避免锁定：
 
 #### 主密码 <a href="#master-password" id="master-password"></a>
 
-Bitwarden 的用户数据保护始于用户创建账户和主密码的那一刻。我们强烈建议在入职过程中使用一个强大的主密码。Bitwarden 提供了一个密码强度计，它将评估并显示正在输入的主密码的整体强度，以鼓励使用强大的主密码。
+Bitwarden 的用户数据保护从用户创建账户和主密码的那一刻开始。主密码是用户访问其存储了敏感数据的密码库的令牌。用户应使用强密码创建账户，Bitwarden 提供了一个密码强度计，以帮助用户创建强大的主密码：
 
-![图示：创建一个 Bitwarden 账户](https://github.com/bitwarden/help/raw/master/images/security-white-paper/create-account.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6Nopwp0Wbr6FmfQBfzhAGb/e80b52613f70186f491e629cc7906c91/Screenshot_2024-04-01_at_9.41.44_AM.png?_a=DAJAUVWIZAAB" %}
+密码强度计
+{% endembed %}
 
-如果您试图使用弱密码注册，Bitwarden 会提醒你选择的主密码是弱密码。当您创建 Bitwarden 账户时，您还可以选择使用 HIBP 检查主密码的已知数据泄露。
+如当用户试图使用弱密码注册时，Bitwarden 会发出警告，并且还提供了通过与 [Have I Been Pwned (HIBP)](https://haveibeenpwned.com/FAQs) 的集成来检查主密码是否已被泄露的选项：
 
-![图示：弱主密码警告](https://github.com/bitwarden/help/raw/master/images/security-white-paper/weak-master-password-warning.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2fc9uAmERxfK7QEkFzeeO0/0fbe2a9b1d207950a2d30358f904c405/Screenshot_2024-04-01_at_9.50.46_AM.png?_a=DAJAUVWIZAAB" %}
+主密码弱或暴露
+{% endembed %}
 
-使用一个强大的主密码是为您自己的安全利益着想，因为它是您用来访问您的安全密码库的令牌，您的敏感物品就存放在那里。在您使用 Bitwarden 服务时，您有责任保证您的账户安全。我们提供额外的措施，如两步登录，帮助您维护您的账户安全，但您的账户内容及其安全由您决定。
+**用户永远不要忘记他们的主密码，这一点非常重要**。主密码：
 
-![图示：选择一个强主密码](https://github.com/bitwarden/help/raw/master/images/security-white-paper/choose-a-strong-master-password.png)
+* 使用后会从内存中被清除
+* 不会通过互联网传输到 Bitwarden 服务器
+* Bitwarden 的任何人都无法看到、读取或进行逆向
 
-阅读更多：[密码管理的五种最佳实践](https://bitwarden.com/blog/post/five-best-practices-for-password-management/)和[来自 NIST 的 3 个小贴士让你的密码安全无忧](https://bitwarden.com/blog/post/3-tips-from-nist-to-keep-passwords-secure/)。
-
-有用的工具：[Bitwarden 密码强度测试工具](https://bitwarden.com/password-strength/)和 [Bitwarden 密码生成器](https://bitwarden.com/password-generator/)。
-
-**非常重要的是，永远不要忘记您的主密码**。主密码在使用后会从内存中清除，不会通过互联网传输到 Bitwarden 服务器，因此，如果您忘记了主密码，无任何办法恢复它。
-
-这也意味着 Bitwarden 团队的任何人都无法看到、阅读或通过逆向工程获得您的真实数据。您的数据在离开您的本地设备之前就已经被完全加密和/或哈希了。这是 Bitwarden 保护您和您的数据的一个关键步骤。
-
-在创建您的账户并指定您的主密码后，Bitwarden 接下来会生成一系列密钥，用于保护您账户的数据。
+基于此，以及由于您的数据在离开本地设备之前已完全加密和/或哈希，忘记主密码将导致用户无法访问其账户，除非他们启用了紧急访问或账户恢复功能，这两者将在本文后面进行详细介绍。
 
 {% hint style="info" %}
-2021 年中期，Bitwarden 为企业计划推出了账户恢复功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。有关此功能的更多详细信息，请访问[这篇文章](../organizations/admin-password-reset.md)。
+用户可以通过 Bitwarden 网页应用程序更改他们的主密码。[了解如何操作](../your-vault/your-master-password.md#change-your-master-password)。
 {% endhint %}
+
+#### 替代登录方法 <a href="#alternative-log-in-methods" id="alternative-log-in-methods"></a>
+
+Bitwarden 客户端提供以下替代身份验证方法。其中一些方法也可用于登录时解密：
+
+* **设备登录**：从 Bitwarden 客户端发起身份验证请求，并通过在您已登录的设备上批准该请求来完成身份验证。[了解它是如何工作的](../your-vault/log-in-with-device.md)。
+* **通行密钥登录**：使用通行密钥登录 Bitwarden 客户端，如果该通行密钥支持 PRF，则使用它来解密您的密码库数据。[了解它是如何工作的](../my-account/log-in-and-unlock/log-in-with-passkeys.md)。
+* **受信任设备 SSO** ：受信任设备 SSO 允许用户使用 SSO 进行身份验证并使用设备存储的加密密钥解密其密码库，从而无需输入主密码。[了解它是如何工作的](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)。
+
+#### 两步登录 <a href="#two-step-login" id="two-step-login"></a>
+
+#### 紧急访问 <a href="#emergency-access" id="emergency-access"></a>
+
+#### 账户恢复 <a href="#account-recovery" id="account-recovery"></a>
 
 ### 主密码哈希、密钥派生和加密过程概述 <a href="#overview-of-the-master-password-hashing-key-derivation-and-encryption-process" id="overview-of-the-master-password-hashing-key-derivation-and-encryption-process"></a>
 
