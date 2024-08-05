@@ -6,7 +6,7 @@
 * [账户](my-account/README.md)
   * [创建 Bitwarden 账户](getting-started/create-bitwarden-account.md)
   * [登录 & 解锁](my-account/log-in-and-unlock/README.md)
-    * [=主密码](your-vault/your-master-password.md)
+    * [主密码](your-vault/your-master-password.md)
     * [忘记主密码](your-vault/i-forgot-my-master-password.md)
     * [SSO 登录的使用](login-with-sso/using-login-with-sso.md)
     * [设备登录](your-vault/log-in-with-device.md)

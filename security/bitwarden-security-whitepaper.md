@@ -21,7 +21,7 @@
 
 ## 概述 <a href="#overview" id="overview"></a>
 
-### 每个人的联系都比以往任何时候都更加紧密 <a href="#everyone-is-more-connected-than-ever" id="everyone-is-more-connected-than-ever"></a>
+### 每个人的联系比以往任何时候都更加紧密 <a href="#everyone-is-more-connected-than-ever" id="everyone-is-more-connected-than-ever"></a>
 
 在当今社会，与互联网连接的设备和服务比以往任何时候都更加重要。随着越来越多的公司提供创新的软件即服务产品来改善用户的家庭和工作生活，凭证和机器机密的数量呈指数级增长。对他们安全的威胁也是如此。
 
