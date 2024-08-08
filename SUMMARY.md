@@ -28,7 +28,7 @@
     * [丢失了辅助设备](two-step-login/lost-secondary-device.md)
     * [两步登录常见问题](two-step-login/two-step-login-faq.md)
   * [更多](my-account/more/README.md)
-    * [紧急访问](security/emergency-access.md)
+    * [=紧急访问](security/emergency-access.md)
     * [本地化](miscellaneous/localization.md)
     * [异常流量错误](miscellaneous/unusual-traffic-error.md)
 * [Password Manager](password-manager/README.md)

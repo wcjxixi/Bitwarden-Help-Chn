@@ -123,13 +123,73 @@ Bitwarden 客户端提供以下替代身份验证方法。其中一些方法也�
 
 #### 两步登录 <a href="#two-step-login" id="two-step-login"></a>
 
+两步登录（也称为「二因素认证」或「2FA」）是一种用于保护在线账户的额外的安全层，即使有人掌握了主密码，也能确保账户安全。当启用两步登录时，用户在登录 Bitwarden 时需要完成一个额外的步骤，比如使用 [FIDO2 安全密钥](../two-step-login/setup-guides/two-step-login-via-fido2-webauthn.md)或[验证器 App](../two-step-login/setup-guides/two-step-login-via-authenticator.md) 来确认登录尝试。作为最佳实践，**Bitwarden 推荐所有用户启用并使用两步登录**。
+
+Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备（例如 YubiKey）时关闭两步登录功能。**用户应该在启用此功能后立即获取并保存此恢复代码**，因为 Bitwarden 员工和系统无法代表用户禁用两步登录。
+
+了解更多关于可用的[两步登录方式](../two-step-login/two-step-login-methods.md)、[使用多种方式](../two-step-login/two-step-login-methods.md#using-multiple-methods)以及在[丢失辅助设备](../two-step-login/lost-secondary-device.md)时该怎么做的信息。
+
 #### 紧急访问 <a href="#emergency-access" id="emergency-access"></a>
+
+高级用户，包括付费组织（家庭、团队或企业）的成员，可以指定[可信的紧急联系人](emergency-access.md)，以便在紧急情况下请求访问他们的密码库。可信的紧急联系人可以被分配为仅查看或接管账户的权限。
+
+紧急访问使用非对称加密，使用户能够在零知识环境中授权可信的紧急联系人访问密码库数据。
+
+{% hint style="info" %}
+以下信息涉及到加密密钥名称和过程，其包含在[哈希、密钥派生和加密](bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)部分中。请考虑先阅读那部分。
+{% endhint %}
+
+1. 一个 Bitwarden 用户（授予人）邀请另一个 Bitwarden 用户成为其可信紧急联系人（受让人）。邀请（有效期仅 5 天）指定了用户访问级别，并包含对受让人的 **RSA 公共密钥**的请求。
+2. 受让人将通过电子邮件收到邀请通知，并接受邀请成为可信紧急联系人。接受邀请后，受让人的 **RSA 公共密钥**将与邀请一起存储。
+3. 授予人将通过电子邮件收到接受通知，并确认受让人成为其可信紧急联系人。确认后，授予人的**用户对称密钥**将使用受让人的 **RSA 公共密钥**进行加密，并在加密后存储。受让人将收到确认通知。
+4. 发生紧急情况时，受让人可以提交紧急访问请求以要求进入授予人的密码库。
+5. 授予人将通过电子邮件收到请求通知。授予人可以随时手动批准请求，否则请求将受到授予人指定的等待时间的约束。当请求被批准或等待时间结束后，经**公钥加密的主密钥**将交付给受让人，并使用受让人的 **RSA 私钥**进行解密。
+6. 根据指定的用户访问级别，受让人可以：
+   * 获得对授予人密码库中的项目的查看/读取权限。
+   * 提示为授予人的密码库创建新的主密码。
 
 #### 账户恢复 <a href="#account-recovery" id="account-recovery"></a>
 
-### 主密码哈希、密钥派生和加密过程概述 <a href="#overview-of-the-master-password-hashing-key-derivation-and-encryption-process" id="overview-of-the-master-password-hashing-key-derivation-and-encryption-process"></a>
+[账户恢复](../organizations/admin-password-reset.md)功能允许企业组织的指定管理员在员工忘记主密码的情况下恢复成员账户并恢复访问权限。企业也可能希望当员工离职时使用账户恢复功能来重新获得成员账户的所有权。
 
-#### 用户账户创建 <a href="#user-account-creation" id="user-account-creation"></a>
+{% hint style="info" %}
+以下信息涉及到加密密钥名称和过程，其包含在[哈希、密钥派生和加密](bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)部分中。请考虑先阅读那部分。
+{% endhint %}
+
+当组织成员注册账户恢复时，该用户的账户加密密钥（即**用户对称密钥**）会使用组织的 RSA 公钥进行加密。加密后的结果存储为**账户恢复密钥**。
+
+在进行恢复操作时：
+
+1. 使用**组织对称密钥**解密组织的 **RSA 私钥**。
+2. 使用解密后的 **RSA 私钥**解密用户的**账户恢复密钥**，从而得到**用户对称密钥**（在产品中称为「账户加密密钥」）。
+3. 使用新的**主密钥**对**用户对称密钥**进行加密，并从新的主密码中生成新的**主密码哈希**。替换服务器端原有的**主密钥加密的用户对称密钥**和**主密码哈希**。
+4. 使用组织的 **RSA 公钥**重新加密用**户对称密钥**，将先前的**账户恢复密钥**替换为新的密钥。
+
+## 哈希、密钥派生和加密 <a href="#hashing-key-derivation-and-encryption" id="hashing-key-derivation-and-encryption"></a>
+
+### 账户创建 <a href="#account-creation" id="account-creation"></a>
+
+### 身份验证和解密 <a href="#authentication-and-decryption" id="authentication-and-decryption"></a>
+
+### 轮换账户加密密钥 <a href="#rotating-the-account-encryption-key" id="rotating-the-account-encryption-key"></a>
+
+### 变体 <a href="#variations" id="variations"></a>
+
+#### 使用设备登录 <a href="#log-in-with-device" id="log-in-with-device"></a>
+
+#### 使用通行密钥登录 <a href="#log-in-with-passkeys" id="log-in-with-passkeys"></a>
+
+#### 信任设备 SSO <a href="#sso-with-trusted-devices" id="sso-with-trusted-devices"></a>
+
+## 用户之间共享数据 <a href="#sharing-data-between-users" id="sharing-data-between-users"></a>
+
+### 当创建组织时 <a href="#when-you-create-an-organization" id="when-you-create-an-organization"></a>
+
+### 当用户加入组织时 <a href="#when-users-join-an-organization" id="when-users-join-an-organization"></a>
+
+### 额外的安全措施 <a href="#additional-security-measures" id="additional-security-measures"></a>
+
+
 
 提交「创建账户」表单后，Bitwarden 使用具有 600,000 次迭代的基于密码的密钥派生函数 2 (PBKDF2) 来扩展具有盐化的用户电子邮件地址的用户主密码。最终的盐化值是 256 位主密钥。使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF)，还可以将主密钥的长度扩展为 512 位长度。主密钥和扩展主密钥永远不会存储到 Bitwarden 服务器或传输到 Bitwarden 服务器。
 
