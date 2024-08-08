@@ -181,13 +181,79 @@ Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备�
 
 #### 信任设备 SSO <a href="#sso-with-trusted-devices" id="sso-with-trusted-devices"></a>
 
-## 用户之间共享数据 <a href="#sharing-data-between-users" id="sharing-data-between-users"></a>
+## 在用户之间共享数据 <a href="#sharing-data-between-users" id="sharing-data-between-users"></a>
 
 ### 当创建组织时 <a href="#when-you-create-an-organization" id="when-you-create-an-organization"></a>
 
 ### 当用户加入组织时 <a href="#when-users-join-an-organization" id="when-users-join-an-organization"></a>
 
 ### 额外的安全措施 <a href="#additional-security-measures" id="additional-security-measures"></a>
+
+#### 访问控制、权限和角色 <a href="#access-controls-permissions-and-roles" id="access-controls-permissions-and-roles"></a>
+
+#### 事件日志 <a href="#event-logs" id="event-logs"></a>
+
+#### SIEM 集成 <a href="#siem-integrations" id="siem-integrations"></a>
+
+## 数据保护 <a href="#data-protection" id="data-protection"></a>
+
+### 密码库数据是如何加密的 <a href="#how-vault-data-is-encrypted" id="how-vault-data-is-encrypted"></a>
+
+### 密码库健康报告 <a href="#vault-health-reports" id="vault-health-reports"></a>
+
+### 中转过程中的数据保护 <a href="#data-protection-in-transit" id="data-protection-in-transit"></a>
+
+### 空闲时的数据保护 <a href="#data-protection-at-rest" id="data-protection-at-rest"></a>
+
+### 数据类型和数据保留 <a href="#data-types-and-data-retention" id="data-types-and-data-retention"></a>
+
+## 云平台和网页应用安全 <a href="#cloud-platform-and-web-application-security" id="cloud-platform-and-web-application-security"></a>
+
+### 架构概述 <a href="#architecture-overview" id="architecture-overview"></a>
+
+### 安全更新和补丁 <a href="#security-updates-and-patching" id="security-updates-and-patching"></a>
+
+#### Azure Kubernetes Services (AKS)
+
+### 生产系统控制 <a href="#control-of-production-systems" id="control-of-production-systems"></a>
+
+#### 基线配置 <a href="#baseline-configurations" id="baseline-configurations"></a>
+
+#### Azure Kubernetes Services (AKS)
+
+#### HTTP 安全标头 <a href="#http-security-headers" id="http-security-headers"></a>
+
+### 密钥管理程序 <a href="#key-management-procedures" id="key-management-procedures"></a>
+
+### 日志记录、监控和警报通知 <a href="#logging-monitoring-and-alert-notification" id="logging-monitoring-and-alert-notification"></a>
+
+### 威胁预防和响应 <a href="#threat-prevention-and-response" id="threat-prevention-and-response"></a>
+
+#### 代码评估 <a href="#code-assessments" id="code-assessments"></a>
+
+### 业务连续性和灾难恢复 <a href="#business-continuity-and-disaster-recovery" id="business-continuity-and-disaster-recovery"></a>
+
+### 软件生命周期和变更管理 <a href="#software-lifecycle-and-change-management" id="software-lifecycle-and-change-management"></a>
+
+### 可审计性和合规性 <a href="#auditability-and-compliance" id="auditability-and-compliance"></a>
+
+#### 外部安全审查 <a href="#external-security-reviews" id="external-security-reviews"></a>
+
+#### 认证 <a href="#certifications" id="certifications"></a>
+
+### 员工访问控制 <a href="#employee-access-controls" id="employee-access-controls"></a>
+
+## 威胁模型和攻击面分析概述 <a href="#threat-model-and-attack-surface-analysis-overview" id="threat-model-and-attack-surface-analysis-overview"></a>
+
+### Bitwarden 客户 <a href="#bitwarden-clients" id="bitwarden-clients"></a>
+
+### HTTPS TLS 和网页浏览器加密端到端加密 <a href="#https-tls-and-web-browser-crypto-end-to-end-encryption" id="https-tls-and-web-browser-crypto-end-to-end-encryption"></a>
+
+## 结语 <a href="#conclusion" id="conclusion"></a>
+
+### 文档变更日志 <a href="#document-changelog" id="document-changelog"></a>
+
+
 
 
 
