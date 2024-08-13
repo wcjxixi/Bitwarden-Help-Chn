@@ -22,7 +22,19 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
-## 2024.7.2 <a href="#id-2024.7.1" id="id-2024.7.1"></a>
+## 2024.7.3
+
+此次发布包含：
+
+### Secrets Manager
+
+* **新的 Secrets Manager 登录页面**：快速了解有关 Secrets Manager 的更多信息并直接从 Web 应用程序注册该产品。[了解更多](secrets-manager/get-started/secrets-manager-quick-start.md)。
+
+### 提供商门户 <a href="#provider-portal" id="provider-portal"></a>
+
+* **限制提供商对密码库项目的访问**：为了提高客户的安全性和隐私性，提供商用户可能不再直接查看、管理或创建客户组织的保管库中的项目。但是，提供商用户可以将库数据直接导入到客户组织。
+
+## 2024.7.2
 
 此次发布包含：
 
@@ -30,7 +42,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 * **新提供商的合并计费**：在此版本之后加入 Bitwarden 的提供商的计费程序现已简化，并仅通过提供商门户进行管理。现有提供商将在未来版本中迁移到新的计费系统。[了解更多](provider-portal/provider-portal-overview.md)。
 
-## 2024.7.1 <a href="#id-2024.7.1" id="id-2024.7.1"></a>
+## 2024.7.1
 
 此次发布包含：
 
