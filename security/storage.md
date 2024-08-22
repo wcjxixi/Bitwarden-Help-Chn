@@ -24,7 +24,7 @@ Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。 Bitwarden 
 
 存储在您的计算机/设备上的数据是被加密的，并且仅当您解锁您的密码库时才会被解密。被解密的数据仅存储在**内存中**，并且**永远不会被写入到持久存储**。加密的数据存储在以下静态位置：
 
-### 桌面端 <a href="#desktop-app" id="desktop-app"></a>
+### 桌面 App <a href="#desktop-app" id="desktop-app"></a>
 
 * Windows
   * 标准安装版： `%AppData%\Bitwarden`
@@ -71,7 +71,7 @@ Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。 Bitwarden 
 * iOS：`group.com.8bit.bitwarden` 应用程序组
 * Android：`/data/data/com.x8bit.bitwarden/`
 
-### 网页端
+### 网页端 <a href="#web" id="web"></a>
 
 * Chrome：**≡菜单** → **更多工具** → **开发人员工具**，然后选择**应用程序** → **本地存储**。
 * Safari：**开发** → **显示网页检查器** → **存储** → **本地存储**。
