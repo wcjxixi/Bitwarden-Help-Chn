@@ -28,7 +28,25 @@ Bitwarden 是一个开源的密码管理系统，您可以使用 Bitwarden 官�
 
 ## 个人账户比较 <a href="#compare-individual-plans" id="compare-individual-plans"></a>
 
-<table><thead><tr><th width="211.77867335127684">功能</th><th width="164.19100031205608">免费版</th><th>高级版</th></tr></thead><tbody><tr><td>价格</td><td>免费</td><td>$10.00/年</td></tr><tr><td>安装所有平台程序</td><td>支持</td><td>支持</td></tr><tr><td>无限制同步所有设备</td><td>支持</td><td>支持</td></tr><tr><td>项目条数</td><td>无限制</td><td>无限制</td></tr><tr><td>文件夹数量</td><td>无限制</td><td>无限制</td></tr><tr><td>密码生成器</td><td>支持</td><td>支持</td></tr><tr><td>存储空间</td><td>无</td><td>1GB</td></tr><tr><td>附加存储</td><td>不支持</td><td>$4.00/GB/年</td></tr><tr><td>两步登录类型</td><td>验证器 App+电子邮件+FIDO2 WebAuthn</td><td>免费版+YubiKey+Duo</td></tr><tr><td>内置 TOTP 功能</td><td>不支持</td><td>支持</td></tr><tr><td>Bitwarden Send</td><td>文本</td><td>文本+文件</td></tr><tr><td>紧急访问</td><td>不支持</td><td>支持</td></tr><tr><td>数据泄漏报告</td><td>支持</td><td>支持</td></tr><tr><td>健康报告</td><td>不支持</td><td>支持</td></tr><tr><td>本地托管</td><td>支持</td><td>支持</td></tr><tr><td>免费试用</td><td>-</td><td>不支持</td></tr><tr><td>付款周期</td><td>-</td><td>年付</td></tr></tbody></table>
+| 功能             | 免费版                         | 高级版             |
+| -------------- | --------------------------- | --------------- |
+| 价格             | 免费                          | $10.00/年        |
+| 安装所有平台程序       | 支持                          | 支持              |
+| 无限制同步所有设备      | 支持                          | 支持              |
+| 项目条数           | 无限制                         | 无限制             |
+| 文件夹数量          | 无限制                         | 无限制             |
+| 密码生成器          | 支持                          | 支持              |
+| 存储空间           | 无                           | 1GB             |
+| 附加存储           | 不支持                         | $4.00/GB/年      |
+| 两步登录类型         | 验证器 App+电子邮件+FIDO2 WebAuthn | 免费版+YubiKey+Duo |
+| 内置 TOTP 功能     | 不支持                         | 支持              |
+| Bitwarden Send | 文本                          | 文本+文件           |
+| 紧急访问           | 不支持                         | 支持              |
+| 数据泄漏报告         | 支持                          | 支持              |
+| 健康报告           | 不支持                         | 支持              |
+| 本地托管           | 支持                          | 支持              |
+| 免费试用           | -                           | 不支持             |
+| 付款周期           | -                           | 年付              |
 
 ## 组织账户比较 <a href="#compare-organization-plans" id="compare-organization-plans"></a>
 
