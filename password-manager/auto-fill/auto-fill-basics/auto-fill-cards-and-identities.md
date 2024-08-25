@@ -38,10 +38,39 @@ Bitwarden 不止于[自动填充用户名和密码](auto-fill-logins-in-browser-
 浏览器扩展上下文菜单
 {% endembed %}
 
+## 使用内嵌菜单 <a href="#using-the-inline-menu" id="using-the-inline-menu"></a>
+
+使用内嵌自动填充菜单自动填充支付卡和身份。要启用内嵌自动填充菜单：
+
+1、登录并解锁 Bitwarden [浏览器扩展](../../../getting-started/getting-started-browserext.md)。
+
+2、选择 **⚙️设置** → **自动填充**，然后定位到「在表单字段上显示自动填充菜单」下拉列表。选择您喜欢的自动填充菜单行为。
+
+3、我们建议您禁用浏览器的自动填充选项（如果已启用）。[了解更多](../../../auto-fill/disable-a-browsers-built-in-password-manager.md)。
+
+启用内嵌自动填充设置后，当您点击某个表单时，将显示您存储的支付卡和身份信息。选择您在填写此表单信息时要使用的支付卡或身份：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2IZKkQJjPBvDgT3Z6IZMoR/2d00c6b6789b78addd486fd974720ddd/2024-08-13_13-10-20.png?_a=DAJAUVWIZAAB" %}
+内嵌自动填充支付卡
+{% endembed %}
+
+{% hint style="info" %}
+如果您的 Bitwarden 密码库中没有已保存的支付卡或身份信息，您可以在填写信息后从内嵌菜单中选择 ✚**新增支付卡** / **新增身份**，以将新项目保存到您的 Bitwarden 密码库中。
+{% endhint %}
+
+## 使用键盘快捷键 <a href="#using-keyboard-shortcuts" id="using-keyboard-shortcuts"></a>
+
+可以使用键盘快捷键自动填充支付卡和身份。要使用此功能，必须为支付卡和身份手动设置键盘快捷键：
+
+1、打开 Bitwarden 浏览器扩展然后选择 **⚙️设置**。
+
+2、从设置菜单中选择**自动填充**，然后选择**自动填充键盘快捷键**以打开浏览器自动填充设置窗口。
+
+3、在 Bitwarden 密码管理器键盘快捷键中，**为当前网站自动填充最后一次使用的支付卡信息**和**为当前网站自动填充最后一次使用的身份信息**配置您喜欢的键盘快捷键。
+
 ## 隐藏支付卡和身份 <a href="#hide-cards-and-identities" id="hide-cards-and-identities"></a>
 
-如果您不希望将支付卡和身份用于自动填充，则可以禁用在 **📁选项卡**视图中显示：
+如果您不希望将支付卡和身份用于自动填充，则可以禁止它们在 **📁选项卡**视图中显示：
 
-1. 在浏览器扩展中，打开 **⚙️设置**标签。
-2. 向下滚动到**其他**部分，选择**选项**。
-3. 向下滚动并勾选**标签页上不显示支付卡**和/或**标签页上不显示身份**复选框。
+1. 在浏览器扩展中，打开 **⚙️设置**选项卡，然后打开**自动填充**。
+2. 向下滚动并取消勾选**在标签页上显示支付卡**和/或**标签页上显示身份**复选框。

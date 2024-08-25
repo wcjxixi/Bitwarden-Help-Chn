@@ -89,10 +89,15 @@
 虽然使用受信任设备 SSO 可以消除对主密码的需求，但并非在所有情况下都能消除主密码本身：
 
 * 如果用户是在受信任设备 SSO 激活**之前**入职的，或者如果他们从组织邀请中选择了**创建账户**，则他们的账户将保留其主密码。
-* 如果用户是在受信任设备 SSO 激活**之后**入职的，并从组织邀请中选择**登录** → **企业 SSO** 进行 [JIT 配置](../../../login-with-sso/login-with-sso-faqs.md#q-how-does-login-with-sso-work-for-new-users-just-in-time)，则他们的账户将没有主密码。
+* 如果用户是在受信任设备 SSO 激活**之后**入职的，并从组织邀请中选择**登录** → **企业 SSO** 进行 [JIT 配置](../../../login-with-sso/login-with-sso-faqs.md#q-how-does-login-with-sso-work-for-new-users-just-in-time)，则他们的账户将无需拥有主密码。如果您更改为主密码[成员解密选项](../../../login-with-sso/member-decryption-options.md)，只要这些用户仍然是组织的成员，系统就会在他们登录时提示创建一个主密码（[了解更多](setup-sso-with-trusted-devices.md)）。
 
 {% hint style="danger" %}
-对于那些因使用受信任设备 SSO 而没有主密码的账户，[将其从您的组织中移除](../../../organizations/user-management.md#offboard-users)或[撤销其访问权限](../../../organizations/user-management.md#revoke-access)将切断其对 Bitwarden 账户的所有访问权限，**除非您事先使用**[**账户恢复**](../../../organizations/admin-password-reset.md)**功能为其分配了主密码**。
+对于那些因使用受信任设备 SSO 而没有主密码的账户，[将其从您的组织中移除](../../../organizations/user-management.md#offboard-users)或[撤销其访问权限](../../../organizations/user-management.md#revoke-access)将切断其对 Bitwarden 账户的所有访问权限，除非：
+
+1. 您事先使用[账户恢复](../../../organizations/admin-password-reset.md)功能为其分配了主密码。
+2. 用户在账户恢复后至少登录一次，以便完全完成账户恢复流程。
+
+此外，除非在将用户从组织中删除之前执行上述步骤，否则用户将无法重新加入您的组织。在这种情况下，用户将需要[删除其账户](../../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并接收一个新的邀请以创建账户并加入您的组织。
 {% endhint %}
 
 ### 对其它功能的影响 <a href="#impact-on-other-features" id="impact-on-other-features"></a>

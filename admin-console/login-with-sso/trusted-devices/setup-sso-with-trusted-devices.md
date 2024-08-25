@@ -4,20 +4,30 @@
 对应的[官方文档地址](https://bitwarden.com/help/setup-sso-with-trusted-devices/)
 {% endhint %}
 
-本文档将引导您将受信任设备 SSO 添加到您的组织。要完成以下步骤，您必须是组织所有者或管理员：
+本文档将引导您将[受信任设备 SSO](./) 添加到您的组织。要完成以下步骤，您必须是组织所有者或管理员：
 
-1. 打开您的组织然后导航至**设置** → **策略**页面。
-2. 在策略页面上，激活受信任设备所需的以下策略：
-   * **单一组织**策略。
-   * **要求单点登录身份验证**策略。
-   * **账户恢复管理**策略。
-   * 账户恢复管理策略的**为新用户启用自动注册**选项。
-3. 导航至**设置** → **单点登录**页面。如果您尚未设置 SSO，请按照我们的[ SAML 2.0](../../../login-with-sso/saml-2.0-configuration.md) 或 [OIDC 实施](../../../login-with-sso/oidc-configuration.md)指南之一获取帮助。
-4. 接下来，在「成员解密选项」部分中选择**受信任设备**选项。
+1、登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/919a2c332ed6a53707f80ac3f734e0a8/2024-06-04_10-13-18.png?_a=DAJAUVWIZAAB" %}
+产品切换器
+{% endembed %}
+
+2、从导航中选择**设置** → **策略**。
+
+3、在策略页面上，激活受信任设备所需的以下策略：
+
+* **单一组织**策略。
+* **要求单点登录身份验证**策略。
+* **账户恢复管理**策略。
+* 账户恢复管理策略的**为新用户启用自动注册**选项。
 
 {% hint style="info" %}
-如果您没有事先激活这些策略，它们将在您激活**受信任设备**成员解密选项时自动激活。
+如果您没有事先激活这些策略，它们将在您激活**受信任设备**成员解密选项时自动激活。但是，如果任何账户未启用账户恢复，则他们需要[自行注册](../../../organizations/admin-password-reset.md#self-enroll-in-password-reset)，然后使用受信任设备[管理员批准](approve-a-trusted-device.md)。启用[账户恢复](../../../organizations/admin-password-reset.md)的用户必须在账户恢复后至少登录一次才能完全完成账户恢复流程。
 {% endhint %}
+
+4、从导航中选择**设置** → **单点登录**。如果您尚未设置 SSO，请按照我们的[ SAML 2.0](../../../login-with-sso/saml-2.0-configuration.md) 或 [OIDC 实施](../../../login-with-sso/oidc-configuration.md)指南之一获取帮助。
+
+5、在「成员解密选项」部分中选择**受信任设备**选项。
 
 激活后，用户可以开始使用受信任的设备解密其保密码库。
 
@@ -27,5 +37,5 @@
 目前不建议从受信任设备 SSO 迁移到其他成员解密选项：
 
 * 如果您的组织出于某种原因需要将其成员解密选项从受信任设备加密切换回主密码，**您必须使用**[**账户恢复**](../../../organizations/admin-password-reset.md#recover-an-account)**功能向所有**[**未使用主密码**](about-trusted-devices.md#impact-on-master-passwords)**的用户颁发主密码，以保留对其账户的访问权限**。如果有用户失去访问权限，您可以随时切换回受信任设备加密以恢复服务。
-* 不支持从受信任设备 SSO 迁移到 Key Connector。
+* **不支持**从受信任设备 SSO 迁移到 Key Connector。
 {% endhint %}

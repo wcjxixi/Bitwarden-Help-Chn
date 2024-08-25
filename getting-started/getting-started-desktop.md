@@ -97,15 +97,19 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 
 2、如果您的计算机支持并已启用 Windows Hello，在**安全性**部分中将显示**使用 Windows Hello 解锁**选项：
 
-![Windows 解锁选项](../.gitbook/assets/windows.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/HQYTF4l5WyPbeTMHhhDnN/fe4ddb713557443e7836f3737534ca1e/windows.png?_a=DAJAUVWIZAAB" %}
+Windows 解锁选项
+{% endembed %}
 
 选中**使用 Windows Hello 解锁**选项以继续。您的计算机将提示您输入您的生物特征。
 
 3、启用后，使用**使用 Windows Hello 解锁**按钮来解锁您的密码库。
 
-![使用 Windows Hello 解锁](../.gitbook/assets/hello-unlock.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/JSmueUxWjUGxQK0bA716O/4eec88c7a242681f7c78c5b87adcf7ef/hello-unlock.png?_a=DAJAUVWIZAAB" %}
+使用 Windows Hello 解锁
+{% endembed %}
 
-记住，**安全性**设置是针对每一个账户设置的，因此如果您想为另一个账户启用生物识别解锁，您需要再次执行这些步骤！
+记住，**安全性**设置是针对单个账户设置的，因此如果您想为另一个账户启用生物识别解锁，您需要再次执行这些步骤！
 
 ### 自动启动 Bitwarden <a href="#start-bitwarden-automatically" id="start-bitwarden-automatically"></a>
 
@@ -131,17 +135,19 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 
 2、如果您的计算机支持并已启用了触控 ID，在**安全性**部分中将显示**使用触控 ID 解锁**选项：
 
-![Windows 解锁选项](../.gitbook/assets/windows.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3O1If6IchE83Qb8ee0mYqx/9c61afb380d8479eb4e55e97c2e628c6/macos-bio1.png?_a=DAJAUVWIZAAB" %}
+Windows 解锁选项
+{% endembed %}
 
 选中**使用触控 ID 解锁**选项以继续。您的计算机将提示您输入您的指纹。
 
 3、启用后，使用**使用触控 ID 解锁**按钮来解锁您的密码库。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/MPQwBfgcoTZJvan99sZCZ/b6726f50b710a49d004cfd8f54fce94e/macos-bio2.png?fm=webp&h=361&q=50&w=481" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/MPQwBfgcoTZJvan99sZCZ/b6726f50b710a49d004cfd8f54fce94e/macos-bio2.png?_a=DAJAUVWIZAAB" %}
 使用触控 ID 解锁
 {% endembed %}
 
-记住，**安全性**设置是针对每一个账户设置的，因此如果您想为另一个账户启用生物识别解锁，您需要再次执行这些步骤！
+记住，**安全性**设置是针对单个账户设置的，因此如果您想为另一个账户启用生物识别解锁，您需要再次执行这些步骤！
 
 ### 自动启动 Bitwarden <a href="#start-bitwarden-automatically" id="start-bitwarden-automatically"></a>
 
@@ -151,6 +157,13 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 {% endtab %}
 
 {% tab title="Linux" %}
+### Snap 预安装说明 <a href="#snap-post-installation-instructions" id="snap-post-installation-instructions"></a>
+
+当您登录到应用程序时，Bitwarden 密码管理器桌面 App 使用安全存储来持久保存身份验证令牌。**如果您使用 Snap 安装的桌面 App**，则需要通过以下方式允许应用程序访问安全存储：
+
+1. 在所有发行版上，运行命令 `sudo snap connect bitwarden:password-manager-service` 。
+2. 如果您已经登录到密码管理器桌面应 App，请注销所有账户然后重新登录。
+
 ### 设置您的首选项 <a href="#set-your-preferences" id="set-your-preferences"></a>
 
 要设置您的首选项，请从菜单栏中选择**文件** → **设置**。您会注意到三个部分：**安全性**、**首选项**和**应用程序设置**。
