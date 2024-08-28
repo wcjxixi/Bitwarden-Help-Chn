@@ -1,6 +1,6 @@
 # 发行记录
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/releasenotes/)
 {% endhint %}
 
@@ -23,6 +23,10 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 {% endhint %}
 
 ## 2024.8.0
+
+{% hint style="info" %}
+在未来的发布中，通过 Apple App Store 和 Google Play Store 下载的密码管理器移动 App 将升级为原生移动应用程序。了解更多。
+{% endhint %}
 
 此次发布包含：
 
