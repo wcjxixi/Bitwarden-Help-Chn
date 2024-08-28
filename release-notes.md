@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/releasenotes/)
 {% endhint %}
 
-Bitwarden 相信，源代码透明是诸如像我们这样的安全解决方案的一个绝对要求。访问以下 GitHub 链接查看完整、详细的发行记录：
+Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个绝对要求。访问以下 GitHub 链接查看完整、详细的发行记录：
 
 * [Server Releases](https://github.com/bitwarden/server/releases)
 * [Web Releases](https://github.com/bitwarden/web/releases)
