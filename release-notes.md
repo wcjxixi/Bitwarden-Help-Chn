@@ -25,7 +25,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 ## 2024.8.0
 
 {% hint style="info" %}
-在未来的发布中，通过 Apple App Store 和 Google Play Store 下载的密码管理器移动 App 将升级为原生移动应用程序。了解更多。
+在未来的发布中，通过 Apple App Store 和 Google Play Store 下载的密码管理器移动 App 将升级为原生移动应用程序。[了解更多](miscellaneous/native-mobile-apps.md)。
 {% endhint %}
 
 此次发布包含：
