@@ -167,11 +167,59 @@ Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备�
 
 ## 哈希、密钥派生和加密 <a href="#hashing-key-derivation-and-encryption" id="hashing-key-derivation-and-encryption"></a>
 
+这部分介绍了当用户创建 Bitwarden 账户并随后登录以访问其数据时所实施的加密过程：
+
 ### 账户创建 <a href="#account-creation" id="account-creation"></a>
+
+创建账户时，Bitwarden 使用基于密码的密钥派生函数 2 (PBKDF2)，经过 600,000 次迭代，使用具有盐化的用户电子邮件地址来扩展用户主密码。
+
+{% hint style="info" %}
+虽然用户账户在初始时使用 PBKDF2，但用户可以选择在账户创建后将其密钥派生函数更改为 [Argon2id](encryption.md#pbkdf2)。了解如何[更改 KDF 算法](kdf-algorithms.md#changing-kdf-algorithm)。
+{% endhint %}
+
+得到的盐化值是 256 位**主密钥**。然后，使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF)，将**主密钥**的长度再次扩展为 512 位，从而产生**扩展主密钥**。**主密钥**和**扩展主密钥**永远不会存储到 Bitwarden 服务器或传输到 Bitwarden 服务器。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6nm36M2VAPwxdwlD8HoR2N/0b39079292cb7c80ac5147ffa5ab36eb/whitepaper-1.png?_a=DAJAUVWIZAAB" %}
+基于密码的密钥派生
+{% endembed %}
+
+接下来，使用加密安全伪随机数生成器 (CSPRNG) 创建 512 位**生成的对称密钥**和**初始化向量**。使用**扩展主密钥**和**初始化向量**，用 AES-256 位加密对**生成的对称密钥**进行加密。得到的密钥称为**受保护的对称密钥**，其是与用户相关联的主密钥，**受保护的对称密钥**在账户创建时被发送到 Bitwarden 服务器，并在同步时发送回 Bitwarden 客户端应用程序。
+
+当用户注册账户时，也会创建一个非对称密钥对。[当用户创建组织时](bitwarden-security-whitepaper.md#when-you-create-an-organization-1)，以及在可用于在用户之间共享数据（比如[紧急访问](emergency-access.md)）等过程中，将使用这个**已生成的 RSA 密钥对**。
+
+最后，使用具有**主密钥**有效载荷和主密码盐化的 PBKDF-SHA256 生成**主密码哈希值**。**主密码哈希值**会在账户创建和登录时被发送到 Bitwarden 服务器，用于验证用户账户。到达服务器后，将使用随机盐化的 PBKDF2-SHA256 和 600,000 次迭代再次对**主密码哈希值**进行哈希：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1rLMJoZFka4Per5lIyuMv9/33bc3f62358591bfe4cb86d3c3375535/whitepaper-acctcreate.png?_a=DAJAUVWIZAAB" %}
+Bitwarden 密码散列、密钥派生和加密
+{% endembed %}
 
 ### 身份验证和解密 <a href="#authentication-and-decryption" id="authentication-and-decryption"></a>
 
+用户需要输入电子邮件地址，通常还需要输入主密码才能[登录](https://vault.bitwarden.com/#/) Bitwarden 账户。
+
+接下来，Bitwarden 使用具有默认为 600,000 次迭代的基于密码的密钥衍生函数 2 (PBKDF2) 来扩展具有盐化的用户电子邮件地址的主密码。所得的盐化值就是 256 位的**主密钥**。使用 PBKDF-SHA256 生成的**主密码哈希值**以及**主密钥**的有效载荷和主密码盐化，通过将哈希值与服务器端存储的哈希值进行比较，将其发送到服务器进行身份验证。
+
+{% hint style="info" %}
+虽然用户账户在初始时使用 PBKDF2，但用户可以选择在账户创建后将其密钥派生函数更改为 [Argon2id](encryption.md#pbkdf2)。了解如何[更改 KDF 算法](kdf-algorithms.md#changing-kdf-algorithm)。
+{% endhint %}
+
+同时，使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF)，将**主密钥**的长度扩展为 512 位，从而产生**扩展主密钥**。**受保护的对称密钥**存储在服务器端并由客户端检索，使用此**扩展主密钥**进行解密。客户端使用生成的**对称密钥**来解密密码库数据。此解密完全在 Bitwarden 客户端上完成。**主密码**和**扩展主密钥**永远不会存储到 Bitwarden 服务器或传输到 Bitwarden 服务器。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/lrLsAOcvBsN1vaYAaZQKt/a73a6f46d55cf705423aa7a6a12b7f8a/whitepaper-login.png?_a=DAJAUVWIZAAB" %}
+用户登录概述
+{% endembed %}
+
+Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存中。您的账户加密密钥（**用户对称密钥**）会保存在内存中，以用于密码库解密。
+
+当 Bitwarden 客户端被锁定时，您的加密密钥和密码库数据将从内存中清除。在锁屏一定时间内不活动后，我们会重新加载应用程序进程，以确保任何剩余的管理内存地址也被清除。我们尽最大努力确保任何用于应用程序运作的数据只在您需要的时候保留在内存中，并且每当应用程序被锁定时，内存都会被清理。我们认为 Bitwarden 应用程序在锁定状态下是完全安全的。
+
 ### 轮换账户加密密钥 <a href="#rotating-the-account-encryption-key" id="rotating-the-account-encryption-key"></a>
+
+在进行密码更改操作期间，您还可以选择轮换（即更改）其**用户对称密钥**（在产品中称为「账户加密密钥」）。如果用户认为以前的主密码已被盗用，或者他们存储在 Bitwarden 密码库的数据已从其中一台设备上被窃取，则轮换此密钥是一个好主意。
+
+{% hint style="danger" %}
+轮换账户加密密钥是一项敏感操作，因此在更改主密码时这不是默认选项。密钥轮换会为您的账户生成一个新的随机加密密钥，并使用此新密钥**重新加密所有密码库数据**。请参阅[本文](account-encryption-key.md)了解更多详情。
+{% endhint %}
 
 ### 变体 <a href="#variations" id="variations"></a>
 
@@ -257,44 +305,6 @@ Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备�
 
 
 
-提交「创建账户」表单后，Bitwarden 使用具有 600,000 次迭代的基于密码的密钥派生函数 2 (PBKDF2) 来扩展具有盐化的用户电子邮件地址的用户主密码。最终的盐化值是 256 位主密钥。使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF)，还可以将主密钥的长度扩展为 512 位长度。主密钥和扩展主密钥永远不会存储到 Bitwarden 服务器或传输到 Bitwarden 服务器。
-
-{% hint style="info" %}
-在 2023.2.0 版本中，Bitwarden 添加了 Argon2id 作为 PBKDF2 的备用选项。[了解更多](kdf-algorithms.md)。
-{% endhint %}
-
-{% embed url="https://bitwarden.com/_gatsby/image/cf1eb71332b871b2cad29c023d674a4b/df3d74ff52a7f409cfdddc70d8d1be60/whitepaper-1.webp?eu=da8703b0eb99aa870a69a2d53d21636ae86a51fdfa0230d63835b1f947f99cd277f04f0628967de3253c5c8ad0b413b936cf703511ecd2d2c0bc1cf0e836f95b05835fe831e22401072cc4abe1fd521339c71858abdb8c4ce32e78cbfaeaea214e055f35fb3eeed0afea6020f39d7167aea9a16c3b91ed22e14456098c1f6efa3ae693d84e1c88bfd058a7b2a9f57dc5e4b84f053ec4f367217e4c1851ef24b9f6e003223129110830cfab5f9137c7b36d4e62250b0d1cb03f639400bb3d7196a6e6a04399242c&a=w%3D850%26h%3D478%26fm%3Dwebp%26q%3D75&cd=2023-09-08T13%3A16%3A01.554Z" %}
-图示：基于密码的密钥派生
-{% endembed %}
-
-此外，使用加密安全伪随机数生成器 (CSPRNG) 生成 512 位对称密钥和初始化向量。使用扩展的主密钥和初始化向量，用 AES-256 位加密对对称密钥进行加密。得到的密钥称为受保护的对称密钥。受保护的对称密钥是与用户相关联的主密钥，在账户创建时被发送到服务器，并在同步时返回到 Bitwarden 客户端应用程序。
-
-当用户注册账户时，也会生成一个非对称密钥（RSA 密钥对）。当用户创建组织时，会使用已生成的 RSA 密钥对。组织被创建并用于在用户之间共享数据。更多信息，请参考[在用户之间共享数据](bitwarden-security-whitepaper.md#sharing-data-between-users)。
-
-主密码哈希值也是使用带主密钥有效载荷和主密码盐化的 PBKDF-SHA256 生成。主密码哈希值在账户创建和登录时被发送到服务器，用于验证用户账户。到达服务器后，将使用随机盐化的 PBKDF2-SHA256 和 600,000 次迭代再次对主密码哈希值进行哈希。密码哈希、密钥派生和加密过程的概述如下图所示：
-
-{% embed url="https://bitwarden.com/_gatsby/image/a5ad7b3b79384829b83640a13b0a87cb/df3d74ff52a7f409cfdddc70d8d1be60/whitepaper-acctcreate.webp?eu=8a8906b2b2c8aa870f6af2836176603fe33c53ffac5431d16e6cedac1ca9968721fb4a5c25912cb3786e59dfd5e417b966c37e304dedd3dac6e919f2bc63a90b5bd55bea64b52205522992f9b7f705453ec24c59f7d09e0ef6657580e4e6b6794c034d2fac7dead0e9a96436e5d12c35edb5ac762186eb3bea0d410d964926a927a5c39a654fad8de55bacf8b0fc4dd29ba573540681f2632a2a0b1847ec6fc7d8c85b1b4f72115f559bed5d9b18dff3415a683c5d5c51a4646cd657f86939c6edfaf30b8c7e28b3a0cf6573d5c0ad87e81faf2f69a0977eedd77b2b4e58ee0efcef28b38126535fc57fe4d512e5&a=w%3D850%26h%3D478%26fm%3Dwebp%26q%3D75&cd=2023-09-08T13%3A16%3A07.305Z" %}
-图示：Bitwarden 密码散列、密钥派生和加密
-{% endembed %}
-
-#### 用户登录 | 用户验证 | 访问用户密码库数据 <a href="#user-login-or-user-authentication-or-access-to-user-vault-data" id="user-login-or-user-authentication-or-access-to-user-vault-data"></a>
-
-您需要先输入您的电子邮件地址和主密码才能[登录](https://vault.bitwarden.com/#/)您的 Bitwarden 账户。
-
-接下来，Bitwarden 使用具有默认为 600,000 次迭代的基于密码的密钥衍生函数 2 (PBKDF2) 来扩展具有盐化的用户电子邮件地址的主密码。所得的盐化值就是 256 位的主密钥。主密钥的哈希值会在账户创建和登录时发送到服务器，并用于验证用户账户。
-
-{% hint style="info" %}
-在 2023.2.0 版本中，Bitwarden 添加了 Argon2id 作为 PBKDF2 的备用选项。[了解更多](kdf-algorithms.md)。
-{% endhint %}
-
-主密钥还可以使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF) 扩展到 512 位长度。受保护的对称密钥使用扩展的主密钥进行解密。对称密钥用于解密密码库项目。解密工作完全在 Bitwarden 客户端上完成，因为您的主密码或扩展主密钥绝不会存储到 Bitwarden 服务器，也不会传输到 Bitwarden 服务器。
-
-{% embed url="https://bitwarden.com/_gatsby/image/a0a18fcaa28161be6da533d94fb29d81/df3d74ff52a7f409cfdddc70d8d1be60/whitepaper-login.webp?eu=8cda06e6e5c8fbd1096ea9826b26326eb56e52a8fc5036d43d61e6fb1bae9fd02ca11b50209d7bb32b605adfd7e913bf36972d3410ea868fc4bb1df4be3cfe59508209e832e72253007eccfbe5a603106dc7485aa2d69e5df56874d0b0e2b47310031a23ae73bd80e5a83c66b9d72667ebb0f42c36c6a87ce540540c8f5c31bf6ea48f876e4fb99bf301bca2b8f84a8ec9a36e191e8eb72a2535124c1eb72cedadef43762675022776bfd00b8113d5c83d5a304a2f0e69961c7ecf04fc6f60c5b2ffa709dc7f28b7afc9347484c0ffd1ea4baa7b77e59d20ff8a6a654955f557f8fc2ab787261b52de7da3cb52f25d52&a=w%3D850%26h%3D478%26fm%3Dwebp%26q%3D75&cd=2023-09-08T13%3A16%3A13.822Z" %}
-图示：用户登录概述
-{% endembed %}
-
-我们不会将主密码保存在本地或 Bitwarden 客户端内存中。您的加密密钥（对称密钥）会在应用程序解锁时保存在内存中。这是您解密密码库数据所需要的。当密码库被锁定时，这些数据会从内存中清除。在锁屏一定时间内不活动后，我们会重新加载应用程序进程，以确保任何剩余的管理内存地址也被清除。我们尽最大努力确保任何用于应用程序运作的数据只在您需要的时候保留在内存中，并且每当应用程序被锁定时，内存都会被清理。我们认为应用程序在锁定状态下是完全安全的。
-
 #### 启用两步登录后的额外用户数据保护 <a href="#additional-user-data-protection-when-enabling-two-step-login" id="additional-user-data-protection-when-enabling-two-step-login"></a>
 
 两步登录（也称为双因素验证或 2FA）是您账户的额外安全层，旨在确保您是**唯一**可以访问您的账户的人，即使有人得到了您的主密码。
@@ -330,11 +340,7 @@ Bitwarden 支持如下方式的两步登录：
 
 #### 轮换账户的加密密钥 <a href="#rotating-your-accounts-encryption-key" id="rotating-your-accounts-encryption-key"></a>
 
-在进行密码更改操作期间，您还可以选择轮换（更改）账户的加密密钥。如果您认为以前的主密码已被盗用，或者您的 Bitwarden 密码库的数据已从其中一台设备上被窃取，则轮换加密密钥是一个好主意。
 
-{% hint style="danger" %}
-轮换账户的加密密钥是一项敏感操作，因此这不是默认选项。密钥轮换会为您的账户生成一个新的随机加密密钥，并使用此新密钥**重新加密所有密码库数据**。请参阅[此 Bitwarden 帮助文章](../your-vault/your-master-password.md)了解更多详情。
-{% endhint %}
 
 #### 中转过程中的数据保护 <a href="#data-protection-in-transit" id="data-protection-in-transit"></a>
 
