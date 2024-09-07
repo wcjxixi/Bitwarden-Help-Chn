@@ -4,7 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/premium-renewal/)
 {% endhint %}
 
-高级个人订阅按年自动续费。您可以在您的密码库中通过导航到**账户设置** → **订阅**，来查看您的续费日期。
+高级个人订阅按年自动续费。您可以在您的网页版 App 中导航到**账户设置** → **订阅**，来查看您的续费日期。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Ru9TSLguhRNYtLe2TLwXk/d22aff277b0ac14120199d766f0ef564/Screenshot_2024-02-27_at_3.07.48_PM.png?_a=DAJAUVWIZAAB" %}
+订阅页面
+{% endembed %}
 
 当您的续费日期临近时，Bitwarden 建议您导航到**账户设置** → **订阅** → **付款方式**来验证付款方式。有关更新您的付款方式的帮助，请参阅[更新您的计费信息](../update-your-billing-information.md)。
 
@@ -22,7 +26,7 @@
 
 您的密匙将继续存储在密码库项目的**验证器密钥 (TOTP)** 字段中，但是 Bitwarden 不会生成 TOTP 代码。
 
-**加密文件存储**
+**加密文件附件**
 
 文件**不会**从您的密码库中删除，但您无法上传或下载。
 
