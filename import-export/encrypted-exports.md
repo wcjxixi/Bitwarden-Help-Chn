@@ -46,23 +46,21 @@
 创建加密导出遵循[普通的导出过程](export-vault-data.md)。当提示**文件格式**时，请选择 `.json (Encrypted)`：
 
 {% tabs %}
-{% tab title="网页密码库" %}
+{% tab title="网页 App" %}
 要通过网页密码库导出您的个人密码库数据：
 
-1、在网页密码库中，从导航栏选择**工具** → **导出密码库**：
+1、在 Bitwarden 网页 App 中，从导航栏选择**工具** → **导出密码库**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5PUGzasNsQnABG9gtso4o3/7570e4655e1ad686596a2a53301c6d08/Screenshot_2024-02-27_at_11.32.04_AM.png?_a=BAJFJtWIB" %}
 
-2、从左侧工具菜单中选择**导出密码库**。
+2、选择**导出自**的位置和**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。如果您从**导出自**下拉列表中选择了某个组织，则只会导出您拥有「[可以管理](../admin-console/user-management/member-roles-and-permissions.md)」权限的集合。
 
-3、选择**导出自**位置和**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。如果您从**导出自**下拉列表中选择了某个组织，则只会导出您拥有「[可以管理](../admin-console/user-management/member-roles-and-permissions.md)」权限的集合。
-
-4、如果选择 `.json (Encrypted)`，请选择您希望用于加密导出的**导出类型**：
+3、如果选择 `.json (Encrypted)`，请选择您希望用于加密导出的**导出类型**：
 
 * **账户限制**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
 * **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
 
-5、选择**确认格式**，输入您的主密码，然后选择**导出密码库**按钮以完成。
+4、选择**确认格式**，输入您的主密码，然后选择**导出密码库**按钮以完成。您需要使用主密码或电子邮件验证码来确认您具有执行此操作的权限。
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -139,30 +137,32 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 {% endhint %}
 
 {% tabs %}
-{% tab title="网页端程序" %}
+{% tab title="网页 App" %}
 要导入数据到您的密码库：
 
-1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
+1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com)，[https://vault.bitwarden.eu](https://vault.bitwarden.eu,) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
 
-2、从顶部导航条选择**工具**。
+2、从导航条选择**工具** → **导入数据**：
 
-3、从工具菜单选择**导入数据**。
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/6d09a2630cdb4c4499575997af5569ea/Screenshot_2024-02-27_at_11.21.15_AM.png?_a=DAJAUVWIZAAB" %}
+导入数据
+{% endembed %}
 
-4、从下拉菜单中完成以下字段：
+3、从下拉菜单中完成以下字段：
 
 * **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
 * **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
 * [**文件格式**](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
-5、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
+4、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
 {% hint style="warning" %}
 导入时不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件**将创建重复项目**。
 {% endhint %}
 
-6、选择**导入数据**按钮以开始导入。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+5、选择**导入数据**按钮以开始导入。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
-7、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
+6、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 
 [文件附件](../your-vault/file-attachments.md)、[Send](../bitwarden-send/about-send.md)、回收站以及密码历史记录等附加项目需要手动上传到您的密码库。
 {% endtab %}

@@ -22,6 +22,19 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2024.8.2
+
+此次发布包含：
+
+### Password Manager
+
+* **iOS 原生移动 App**：通过 Apple App Store 下载的密码管理器移动 App 已升级为原生移动应用程序。[了解更多](miscellaneous/native-mobile-apps.md)。
+* **用于密码保护导出的密码生成器**：Bitwarden 现在可以为受密码保护的导出生成唯一密码。[此处](import-export/encrypted-exports.md#create-an-encrypted-export)了解有关密码保护导出的更多信息。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* Rapid7 SIEM 集成： Bitwarden 组织现在可以使用 Rapid7 进行安全信息和事件管理 (SIEM)。了解更多。
+
 ## 2024.8.0
 
 {% hint style="info" %}
