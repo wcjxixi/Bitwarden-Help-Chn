@@ -268,6 +268,48 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 
 #### 信任设备 SSO <a href="#sso-with-trusted-devices" id="sso-with-trusted-devices"></a>
 
+下面章节介绍不同可信设备程序中的加密过程和密钥交换：
+
+{% tabs %}
+{% tab title="入职" %}
+当新用户加入组织时，会通过使用**组织公钥**加密其账户加密密钥来创建**账户恢复密钥**（了解更多）。账户恢复是受信任设备 SSO 的必要条件。
+
+然后会询问用户是否要记住或信任设备。当用户选择这样做时：
+
+<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2o9o8L0JZMvWZYJvfKGMzj/b7cab59682862c8e782331ed6a2ef9d9/td-create.png?_a=DAJAUVWIZAAB" alt=""><figcaption><p>创建受信任设备</p></figcaption></figure>
+
+1. 客户端生成一个新的**设备密钥**。该密钥永远不会离开客户端。
+2. 客户端生成一个新的 RSA 密钥对，称为**设备私钥**和**设备公钥**。
+3. 用户的账户加密密钥使用未加密的**设备公钥**进行加密，并将结果值作为**公钥加密的用户密钥**发送到服务器。
+4. **设备公钥**使用用户的账户加密密钥进行加密，并将结果值作为**用户密钥加密的公钥**发送到服务器。
+5. **设备私钥**使用第一个**设备密钥**进行加密，并将所得值作为**设备密钥加密的私钥**发送到服务器。
+
+最重要的是，在启动发起时**，公钥加密的用户密钥**和**设备密钥加密的私钥**将从服务器发送到客户端。
+
+如果用户需要轮换其账户加密密钥，则将使用**用户密钥加密的公钥**。
+{% endtab %}
+
+{% tab title="登录" %}
+当用户在已信任的设备上使用 SSO 进行身份验证时：
+
+<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/61SSa6ITlRaICIUoCzEiVp/746cf3ba3005b4118d20319e894c47c7/td-use.png?_a=DAJAUVWIZAAB" alt=""><figcaption><p>使用受信任设备</p></figcaption></figure>
+
+1. 用户的**公钥加密的用户密钥**（用于解密密码库数据的账户加密密钥的加密版本）从服务器发送到客户端。
+2. 用户的**设备密钥加密的私钥**（用于解密**公钥加密的用户密钥**的未加密版本）从服务器发送到客户端。
+3. 客户端使用**设备密钥**解密**设备密钥加密的私钥**，该**设备密钥**永远不会离开客户端。
+4. 现在未加密的**设备私钥**用于解密**公钥加密的用户密钥**，从而产生用户的账户加密密钥。
+5. 用户的账户加密密钥解密密码库数据。
+{% endtab %}
+
+{% tab title="批准" %}
+
+{% endtab %}
+
+{% tab title="密钥轮换" %}
+
+{% endtab %}
+{% endtabs %}
+
 ## 在用户之间共享数据 <a href="#sharing-data-between-users" id="sharing-data-between-users"></a>
 
 ### 当创建组织时 <a href="#when-you-create-an-organization" id="when-you-create-an-organization"></a>
