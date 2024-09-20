@@ -22,6 +22,19 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2024.9.1
+
+此次发布包含：
+
+### Password Manager
+
+* **通行密钥的内联自动填充菜单**： 使用内联自动填充菜单通过通行密钥进行身份验证。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#use-the-inline-auto-fill-menu)。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **成员访问报告**： 企业组织可使用成员访问报告来监控组织成员对群组、集合和项目的访问情况。了解更多。
+* **移除用户事件的修复**： 现在可以正确记录通过公共 API 或目录连接器移除用户的事件。
+
 ## 2024.8.2
 
 此次发布包含：

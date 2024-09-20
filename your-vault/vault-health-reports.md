@@ -4,37 +4,39 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/reports/)
 {% endhint %}
 
-密码库健康报告可用于评估 Bitwarden 个人或组织密码库的安全性。
+密码库健康报告可用于评估 Bitwarden 个人或组织密码库的安全性。报告（重复使用密码和弱密码报告）在客户端本地运行。Bitwarden 在不访问未加密版本数据的情况下就可以识别出违规项目。
 
 {% hint style="info" %}
-密码库健康报告功能适用于高级用户，包括付费组织（家庭、团队或企业）的成员。
+大部分密码库健康报告功能适用于高级用户，包括付费组织（家庭、团队或企业）的成员。但[数据泄露报告](vault-health-reports.md#data-breach-report-individual-vaults-only)对所有用户都是免费的。
 {% endhint %}
 
 ## 查看报告 <a href="#view-a-report" id="view-a-report"></a>
 
 完成以下步骤以查看您的**个人密码库**的任何密码库健康报告：
 
-1、登录到[网页密码库](../getting-started/getting-started-webvault.md) 。
+1、登录到网页 App 然后从导航栏选择**报告：**
 
-2、从顶部导航栏选择**报告**。
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/JcoKvP7eLrZHUEKmjTqgc/ac824e27d1c6d09866d1a3abdcecf277/Screen_Shot_2022-04-06_at_9.08.04_AM.png?fm=webp&h=593&q=50&w=800" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/JcoKvP7eLrZHUEKmjTqgc/b9662935feecba2f9eb553ed2fb5c53c/Screenshot_2024-02-27_at_11.16.54_AM.png?_a=DAJAUVWIZAAB" %}
 报告页面
 {% endembed %}
 
-3、选择要运行的报告。
+2、选择要运行的报告。
 
-完成以下步骤以查看您的**组织密码库**的任何密码库健康报告：
+要查看您的**组织密码库**的任何密码库健康报告：
 
-1、登录到[网页密码库](../getting-started/getting-started-webvault.md)并打开您的组织 。
+1、登录到 Bitwarden 网页 App。
 
-2、在您的组织中，打开**工具**标签页。
+2、使用产品切换器打开管理控制台：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5POQmt3TrEgfFzRNwHancg/17f24424c574f0b4f845fb348771ce5a/tools-section.png?fm=webp&h=421&q=50&w=707" %}
-组织报告
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/919a2c332ed6a53707f80ac3f734e0a8/2024-06-04_10-13-18.png?_a=DAJAUVWIZAAB" %}
+产品切换器
 {% endembed %}
 
-3、从左侧菜单的**报告**部分选择一个报告。
+3、在您的组织中，从导航栏选择**报告** → **报告**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5POQmt3TrEgfFzRNwHancg/e6d981a253c6c1fadb7481fbb3fdb91c/2024-09-10_16-46-48.png?_a=DAJAUVWIZAAB" %}
+组织报告
+{% endembed %}
 
 ## 可用的报告 <a href="#available-reports" id="available-reports"></a>
 
@@ -80,6 +82,22 @@
 双重验证 (2FA) 是保护您帐户安全的一个重要安全设置。如果网站提供，您应该始终启用双重验证。通过将 URI 数据与来自 [https://2fa.directory/](https://2fa.directory/) 的数据进行交叉引用，可以识别出违规项目。
 
 确定后，使用`说明 (Instructions)` 超链接来为每个违规项目设置 2FA。
+
+<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3USpBf7beuGcdJvMhDrwNI/570672e3220f09e0398ced33a154b1ea/inactive-2fa.png?_a=DAJAUVWIZAAB" alt=""><figcaption><p>报告说明</p></figcaption></figure>
+
+### 成员访问权限 <a href="#member-access" id="member-access"></a>
+
+企业组织可以使用成员访问权限报告来查看组织成员有权访问的群组、集合和项目的列表。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4oNfzpIcDwn2XjUgG0lPG3/a51bac815082055fdd6f47a40937b72d/2024-09-10_16-13-31.png?_a=DAJAUVWIZAAB" %}
+成员访问权限报告
+{% endembed %}
+
+使用成员访问权限报告，您可以：
+
+* 查看每个用户有权访问的群组、集合和项目的总数。
+* 使用搜索成员在成员访问页面上搜索单个成员。
+* 使用**导出** 按钮创建 CSV 导出。CSV 导出包含了每个成员的**群组**和**集合**访问权限的详细列表，以及**集合权限**、**两步登录**和**账户恢复**状态。
 
 ### 数据泄露报告（仅个人密码库） <a href="#data-breach-report-individual-vaults-only" id="data-breach-report-individual-vaults-only"></a>
 
