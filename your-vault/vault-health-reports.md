@@ -40,9 +40,9 @@
 
 ## 可用的报告 <a href="#available-reports" id="available-reports"></a>
 
-### 公开密码报告 <a href="#exposed-passwords-report" id="exposed-passwords-report"></a>
+### 泄露密码报告 <a href="#exposed-passwords-report" id="exposed-passwords-report"></a>
 
-**公开密码报告**可以识别被黑客公开发布或在暗网上出售的已知数据泄露事件中发现的密码。
+**泄露密码报告**可以识别被黑客公开发布或在暗网上出售的已知数据泄露事件中发现的密码。
 
 该报告使用受信任的网络服务在已知泄露密码的数据库中检索您所有密码哈希值的前 5 位，然后，将返回的匹配的散列列表与你的密码的完整散列列表进行本地比较。这种比较只在本地进行，以保护你的 [k-匿名性](https://en.wikipedia.org/wiki/K-anonymity)。
 
