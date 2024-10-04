@@ -100,3 +100,11 @@
 {% endhint %}
 
 事件日志可导出并且无限期保留。导出事件将创建一个指定日期范围内所有事件的 `.csv` 文件，该日期范围不应超过 367 天。
+
+## 配置信息 <a href="#configuration-information" id="configuration-information"></a>
+
+**配置**选项卡提供了配置应用程序以使用机器账户时可能需要的信息的快速视图。将显示**身份服务器 URL**、**API 服务器 URL**、**组织 ID** 和**工程 ID**，并且可以通过选择每个字段各自的 **❐**图标来复制它们。有关 Secrets Manager 环境的更多信息，请参阅 [Secrets Manager SDK 文档](../developer-tools/secrets-manager-sdk.md)和 [CLI 文档](../developer-tools/secrets-manager-cli.md)。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4XRItVAnKy1iVtOM2DbDLg/44cfa6e49c66186455e9668bd1461682/2024-09-24_15-12-40.png?_a=DAJAUVWIZAAB" %}
+机器账户配置视图
+{% endembed %}

@@ -26,13 +26,9 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 此次发布包含：
 
-### 我的账户 <a href="#my-account" id="my-account"></a>
-
-* **注册时的电子邮件验证**：通过网页 App 创建 Bitwarden 账户的用户现在将被要求在创建主密码之前验证其电子邮件地址。了解更多。
-
 ### Password Manager
 
-* **现在，网页 App 默认将下载 PDF 附件**：作为项目附件存储的 PDF 将下载到您的设备上进行查看，而不是在新的浏览器选项卡中打开。了解更多。
+* **现在，网页 App 默认将下载 PDF 附件**：作为项目附件存储的 PDF 将下载到您的设备上进行查看，而不是在新的浏览器选项卡中打开。[了解更多](your-vault/file-attachments.md)。
 
 ### Secrets Manager
 
