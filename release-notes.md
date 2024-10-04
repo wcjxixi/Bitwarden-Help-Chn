@@ -32,7 +32,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### Secrets Manager
 
-* **新的机器账户视图**：机器账户有一个新的**配置**选项卡，可以快速查看配置应用程序以使用机器账户时可能需要的信息。了解更多。
+* **新的机器账户视图**：机器账户有一个新的**配置**选项卡，可以快速查看配置应用程序以使用机器账户时可能需要的信息。[了解更多](secrets-manager/your-secrets/machine-accounts.md#configuration-information)。
 
 ## 2024.9.1
 
@@ -58,7 +58,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* Rapid7 SIEM 集成： Bitwarden 组织现在可以使用 Rapid7 进行安全信息和事件管理 (SIEM)。了解更多。
+* Rapid7 SIEM 集成： Bitwarden 组织现在可以使用 Rapid7 进行安全信息和事件管理 (SIEM)。[了解更多](admin-console/reporting/rapid7-siem.md)。
 
 ## 2024.8.0
 
