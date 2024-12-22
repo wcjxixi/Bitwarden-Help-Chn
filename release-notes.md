@@ -22,6 +22,46 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2024.12.0
+
+{% hint style="info" %}
+2025 年，Bitwarden 将开始逐步取消对 FIDO 通用第二因素 (U2F) 的支持。如果您当前使用 FIDO U2F 密钥进行两步登录，请确保[更新您的两步登录设置](two-step-login/two-step-login-methods.md)，以避免账户被锁定。
+{% endhint %}
+
+此次发布包含：
+
+### Password Manager
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+## 2024.11.0
+
+此次发布包含：
+
+### 我的账户 <a href="#my-account" id="my-account"></a>
+
+### Password Manager
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+## 2024.10.4
+
+此次发布包含：
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+### 提供商门户 <a href="#provider-portal" id="provider-portal"></a>
+
+## 2024.10.2
+
+此次发布包含：
+
+### 我的账户 <a href="#my-account" id="my-account"></a>
+
+### Password Manager
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
 ## 2024.9.2
 
 此次发布包含：
@@ -674,7 +714,7 @@ _服务器 1.46.0、Web 2.26.0，桌面端 1.31.0，浏览器扩展 1.56.0，移
 * **iOS 上的 Send**：现在可以直接从 iOS 的共享菜单分享 Bitwarden Send（参阅[这里](bitwarden-send/create-a-send.md)）。
 * **从移动端删除账户**：您现在可以从移动应用程序中删除您的 Bitwarden 账户（参阅[这里](plans-and-pricing/delete-an-account-or-organization.md)），但您为什么要这样做？
 * **新的图标**：我们使用全新的图标更新了所有 Bitwarden 应用程序的外观。尽情欣赏！
-* **目录连接器 - Azure AD 同步性能**：针对 Azure Active Directory 的目录连接器同步，性能已得到提升。与 Azure AD 同步的组织_将不再_需要更改其同步配置。
+* **目录连接器 - Azure AD 同步性能**：针对 Azure Active Directory 的目录连接器同步，性能已得到提升。与 Azure AD 同步的组&#x7EC7;_&#x5C06;不&#x518D;_&#x9700;要更改其同步配置。
 * **后端改进**：我们一直在努力改进 Bitwarden 平台的总体性能和稳定性，这将在未来推出一些很棒的新功能。
 
 ## 2012-12-07 <a href="#id-2021-10-26" id="id-2021-10-26"></a>
