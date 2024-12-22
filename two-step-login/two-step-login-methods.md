@@ -4,9 +4,15 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/setup-two-step-login/)
 {% endhint %}
 
+{% hint style="success" %}
+**2024 年 12 月**：为了提高账户安全性，当从新设备登录您的账户或清除浏览器 cookie 后，Bitwarden 很快将要求进行额外验证。您可能已收到一封表明这一点的电子邮件。
+
+输入 Bitwarden 主密码后，系统将提示您输入发送到您账户电子邮箱的一次性验证码。或者，您可以按照本页上的任何指南预先设置两步登录。
+{% endhint %}
+
 使用两步登录（也称为双因素验证或 2FA）来保护您的 Bitwarden 密码库，通过在您登录时要求使用辅助设备进行身份验证，防止恶意行为者访问您的数据（即使他们发现了您的主密码）。如果您不熟悉 2FA 的基础知识，请查看我们的[现场指南](field-guide-for-two-step-login.md)。
 
-两步登录有许多不同的方式，从专用的验证器应用程序到硬件安全钥匙。无论你选择什么，Bitwarden 强烈建议你使用两步登录来保护你的密码库。事实上，我们认为这是非常重要的，所以我们很乐意为您[免费](two-step-login-methods.md#free-methods)提供一些方式。
+两步登录有许多不同的方式，从专用的验证器 App 到硬件安全钥匙。无论你选择什么，Bitwarden 强烈建议你使用两步登录来保护你的密码库。事实上，我们认为这是非常重要的，所以我们很乐意为您提供一些[免费](two-step-login-methods.md#free-methods)的方式。
 
 ## 用于个人的两步登录 <a href="#two-step-login-for-individuals" id="two-step-login-for-individuals"></a>
 
@@ -16,38 +22,38 @@
 
 Bitwarden 提供多种免费的两步登录方式，包括：
 
-| 方式                                                                                                       | 设置说明                                                     |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| 通过 FIDO2 WebAuthn 验凭据                                                                                    | 点[这里](setup-guides/two-step-login-via-fido2-webauthn.md) |
-| 通过验证器应用程序（例如 [2FAS](https://2fas.com/)、[Ravio](https://raivo-otp.com/) 或 [Aegis](https://getaegis.app/)） | 点[这里](setup-guides/two-step-login-via-authenticator.md)  |
-| 通过电子邮件                                                                                                   | 点[这里](setup-guides/two-step-login-via-email.md)          |
+| 方式                                                                                                       | 设置说明                                                      |
+| -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| 通过 FIDO2 WebAuthn 凭据                                                                                     | 点击[这里](setup-guides/two-step-login-via-fido2-webauthn.md) |
+| 通过验证器 App（例如 [2FAS](https://2fas.com/)、[Ravio](https://raivo-otp.com/) 或 [Aegis](https://getaegis.app/)） | 点击[这里](setup-guides/two-step-login-via-authenticator.md)  |
+| 通过电子邮件                                                                                                   | 点击[这里](setup-guides/two-step-login-via-email.md)          |
 
 ### 高级方式 <a href="#premium-methods" id="premium-methods"></a>
 
-对于高级用户（包括付费组织的成员），Bitwarden 提供了几种高级的两步登录方式：
+对于高级用户（包括付费组织的成员），Bitwarden 提供了几种额外的高级两步登录方式：
 
-| 方式                                       | 设置说明                                              |
-| ---------------------------------------- | ------------------------------------------------- |
-| 通过 Duo Security 的 Duo Push、短信、电话和安全钥匙    | 点[这里](setup-guides/two-step-login-via-duo.md)     |
-| 通过 YubiKey（任何 4/5 系列设备或 YubiKey NEO/NFC） | 点[这里](setup-guides/two-step-login-via-yubikey.md) |
+| 方式                                       | 设置说明                                               |
+| ---------------------------------------- | -------------------------------------------------- |
+| 通过 Duo Security 的 Duo Push、短信、电话和安全钥匙    | 点击[这里](setup-guides/two-step-login-via-duo.md)     |
+| 通过 YubiKey（任何 4/5 系列设备或 YubiKey NEO/NFC） | 点击[这里](setup-guides/two-step-login-via-yubikey.md) |
 
 ## 用于团队和企业的两步登录 <a href="#two-step-login-for-teams-and-enterprise" id="two-step-login-for-teams-and-enterprise"></a>
 
 虽然上述所有用于个人的方式都可以启用，但只有团队和企业组织可以从组织的**设置**菜单启用以下组织层面的方式。
 
-| 方式                                    | 设置说明                                          |
-| ------------------------------------- | --------------------------------------------- |
-| 通过 Duo Security 的 Duo Push、短信、电话和安全钥匙 | 点[这里](setup-guides/two-step-login-via-duo.md) |
+| 方式                                    | 设置说明                                           |
+| ------------------------------------- | ---------------------------------------------- |
+| 通过 Duo Security 的 Duo Push、短信、电话和安全钥匙 | 点击[这里](setup-guides/two-step-login-via-duo.md) |
 
 ## 使用多个方式 <a href="#using-multiple-methods" id="using-multiple-methods"></a>
 
-您可以选择启用多个两步登录方式。当你使用多个已启用的方式登录到 Bitwarden 时，将按照以下优先顺序提示您使用最高优先级的两步登录方式：
+您可以选择启用多个两步登录方式。当您使用多个已启用的方式登录到 Bitwarden 时，将按照以下优先顺序提示您使用最高优先级的两步登录方式：
 
 1. Duo（组织）
 2. FIDO2 WebAuthn
 3. YubiKey
 4. Duo（个人）
-5. 验证器应用程序
+5. 验证器 App
 6. 电子邮件
 
 {% hint style="warning" %}
