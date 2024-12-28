@@ -32,15 +32,15 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### Password Manager
 
-* **浏览器扩展和网页 App 用户界面更新**： 重新设计了 Bitwarden Password Manager 浏览器扩展的用户界面。也包含一些网页 App 的用户界面的样式改变。[了解更多](https://bitwarden.com/blog/bringing-intuitive-workflows-and-visual-updates-to-the-bitwarden-browser/)。
-* **网页 App 视图项目面板**： 网页 App 现在将打开项目到「查看」面板，而不是直接打开「编辑」面板。只有拥有项目编辑权限的用户才能使用「编辑」按钮更改密码库项目。[了解更多](your-vault/vault-items.md)。
+* **浏览器扩展和网页 App 用户界面更新**：重新设计了 Bitwarden Password Manager 浏览器扩展的用户界面，同时包含网页 App 用户界面的一些增强的样式更改。[了解更多](https://bitwarden.com/blog/bringing-intuitive-workflows-and-visual-updates-to-the-bitwarden-browser/)。
+* **网页 App 视图项目面板**：网页 App 现在将打开项目到「查看」面板，而不是直接打开「编辑」面板。只有拥有项目编辑权限的用户才能使用「编辑」按钮更改密码库项目。[了解更多](your-vault/vault-items.md)。
 * **iOS 18.0+ 自动填充 TOTP 代码**：iOS 18.0（或更新版本）上的 Bitwarden 键盘自动填充功能现在可以在登录表单中自动填充 TOTP 代码。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)有关 iOS 自动填充的信息。
 * **PasswordXP .csv 导入器**：PasswordXP .csv 已被添加到可导入 Bitwarden 密码管理器的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
 * **Netwrix Password Secure .csv 导入器**：Netwrix Password Secure .csv 已被添加到可导入 Bitwarden 密码管理器的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* 适用于团队组织的 SCIM：团队组织现在可以使用跨域身份管理系统 (SCIM) 自动从源目录配置成员和群组。此前，这仅适用于企业组织。了解更多。
+* **适用于团队组织的 SCIM**：团队组织现在可以使用跨域身份管理系统 (SCIM) 自动从源目录配置成员和群组。此前，这仅适用于企业组织。[了解更多](scim/about-scim.md)。
 
 ## 2024.11.0
 
@@ -48,7 +48,16 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### 我的账户 <a href="#my-account" id="my-account"></a>
 
+* **所有客户端注册期间的电子邮箱验证**：使用任何 Bitwarden 客户端创建新 Bitwarden 账户的用户现在将被要求在创建主密码之前验证其电子邮邮箱。了解更多。
+
 ### Password Manager
+
+* **内联自动填充菜单密码生成**：现在，在填写账户创建或密码更新字段时，可使用内联自动填写菜单轻松生成密码。了解更多。
+* **支付卡和身份的内联自动填充菜单选项**：您现在可以打开或关闭将支付卡和身份作为建议包含在内联自动填写菜单中的选项。了解更多。
+* **iOS 复制和粘贴更新**：Bitwarden 在 iOS 复制和粘贴功能上添加了多项更新，以方便使用。
+* **改进了非官方服务器的错误处理**：为了帮助使用非官方 Bitwarden 服务器的用户，添加了新的错误消息以帮助识别连接到非官方服务器时的错误。
+* **暂时移除桌面应用程序上的「允许屏幕捕获」开关**：为了改善此功能的体验，它已从 macOS 和 Windows 桌面应用程序中暂时移除。目前，桌面应用程序将通过屏幕截图和屏幕共享来捕获。
+* **增加密码短语的最少单词数**：密码短语生成器现在要求生成的密码短语至少包含 6 个单词（移动客户端除外）。了解更多。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
