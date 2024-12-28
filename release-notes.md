@@ -25,14 +25,22 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 ## 2024.12.0
 
 {% hint style="info" %}
-2025 年，Bitwarden 将开始逐步取消对 FIDO 通用第二因素 (U2F) 的支持。如果您当前使用 FIDO U2F 密钥进行两步登录，请确保[更新您的两步登录设置](two-step-login/two-step-login-methods.md)，以避免账户被锁定。
+2025 年，Bitwarden 将开始逐步取消对 FIDO 通用第二因素 (U2F) 的支持。如果您当前使用 FIDO U2F 密钥进行两步登录，请[更新您的两步登录设置](two-step-login/two-step-login-methods.md)，以避免账户被锁定。
 {% endhint %}
 
 此次发布包含：
 
 ### Password Manager
 
+* **浏览器扩展和网页 App 用户界面更新**： 重新设计了 Bitwarden Password Manager 浏览器扩展的用户界面。也包含一些网页 App 的用户界面的样式改变。[了解更多](https://bitwarden.com/blog/bringing-intuitive-workflows-and-visual-updates-to-the-bitwarden-browser/)。
+* **网页 App 视图项目面板**： 网页 App 现在将打开项目到「查看」面板，而不是直接打开「编辑」面板。只有拥有项目编辑权限的用户才能使用「编辑」按钮更改密码库项目。[了解更多](your-vault/vault-items.md)。
+* **iOS 18.0+ 自动填充 TOTP 代码**：iOS 18.0（或更新版本）上的 Bitwarden 键盘自动填充功能现在可以在登录表单中自动填充 TOTP 代码。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)有关 iOS 自动填充的信息。
+* **PasswordXP .csv 导入器**：PasswordXP .csv 已被添加到可导入 Bitwarden 密码管理器的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
+* **Netwrix Password Secure .csv 导入器**：Netwrix Password Secure .csv 已被添加到可导入 Bitwarden 密码管理器的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
+
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* 适用于团队组织的 SCIM：团队组织现在可以使用跨域身份管理系统 (SCIM) 自动从源目录配置成员和群组。此前，这仅适用于企业组织。了解更多。
 
 ## 2024.11.0
 

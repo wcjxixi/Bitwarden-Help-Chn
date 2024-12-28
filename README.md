@@ -15,7 +15,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-**备注：**标题前有 \* 的表示官方曾经有但现已移除的页面和/或分类，我将其保留仅作为参考之用。
+**备注：**&#x6807;题前有 \* 的表示官方曾经有但现已移除的页面和/或分类，我将其保留仅作为参考之用。
 {% endhint %}
 
 ## Bitwarden 介绍 <a href="#about-bitwarden" id="about-bitwarden"></a>
@@ -33,12 +33,12 @@ Bitwarden 是一个开源的密码管理系统，您可以使用 Bitwarden 官�
 | 价格             | 免费                          | $10.00/年        |
 | 安装所有平台程序       | 支持                          | 支持              |
 | 无限制同步所有设备      | 支持                          | 支持              |
-| 项目条数           | 无限制                         | 无限制             |
+| 项目数量           | 无限制                         | 无限制             |
 | 文件夹数量          | 无限制                         | 无限制             |
 | 密码生成器          | 支持                          | 支持              |
 | 存储空间           | 无                           | 1GB             |
 | 附加存储           | 不支持                         | $4.00/GB/年      |
-| 两步登录类型         | 验证器 App+电子邮件+FIDO2 WebAuthn | 免费版+YubiKey+Duo |
+| 两步登录类型         | 验证器 App+电子邮箱+FIDO2 WebAuthn | 免费版+YubiKey+Duo |
 | 内置 TOTP 功能     | 不支持                         | 支持              |
 | Bitwarden Send | 文本                          | 文本+文件           |
 | 紧急访问           | 不支持                         | 支持              |
@@ -87,6 +87,6 @@ Bitwarden 还提供组织账户（用于密码共享等），分别为针对个�
 
 ### 账单示例 <a href="#example-bill" id="example-bill"></a>
 
-Bitwarden Inc. 与 Stripe 合作，提供安全的账单和支付处理服务。[在线账单示例](https://pay.stripe.com/invoice/acct\_19smIXIGBnsLynRr/invst\_Gxl9wk8thL7uIP8FnEWcpplsD0MsFKd)或本地账单示例。
+Bitwarden Inc. 与 Stripe 合作，提供安全的账单和支付处理服务。[在线账单示例](https://pay.stripe.com/invoice/acct_19smIXIGBnsLynRr/invst_Gxl9wk8thL7uIP8FnEWcpplsD0MsFKd)或本地账单示例。
 
 {% file src=".gitbook/assets/Invoice-3167AF0C-0001.pdf" %}
