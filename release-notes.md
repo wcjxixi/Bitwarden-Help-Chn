@@ -22,6 +22,26 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.1.0
+
+此次发布包含：
+
+### Password Manager
+
+* **更多自动填充自定义选项**：浏览器扩展现在具有更多选项来自定义您的自动填充体验，包括选择项目卡片而不是「**填充**」按钮来自动填充，以及多个快速复制操作。了解更多。
+* **Snap Store 桌面 App 生物识别解锁**：通过 Snap Store 下载的密码管理桌面 App 现在支持生物识别解锁。了解更多。
+* **TOTP 代码的内联自动填充**：内联自动填充菜单现在可用于选择 TOTP 代码。此处了解有关内联自动填充菜单的更多信息。
+* **新的公共 API 操作**：`/public/organization/subscription` 端点添加了一个 GET 操作。此处了解有关 Bitwarden 公共 API 的更多信息。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **移除免费的 Bitwarden 家庭赞助策略**：该策略允许企业组织阻止用户通过他们的组织兑换赞助的家庭计划。了解更多。
+* **集成页面**：管理控制台导航菜单中添加了集成页面。集成页面提供了Bitwarden SSO 集成、事件管理等常用的帮助中心链接！
+
+### 提供商门户 <a href="#provider-portal" id="provider-portal"></a>
+
+* **提供商成员不再能导出客户密码库**：为了提高客户组织的安全性和私密性，提供商成员将不再具有导出客户密码库的权限。
+
 ## 2024.12.0
 
 {% hint style="info" %}
@@ -35,8 +55,8 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 * **浏览器扩展和网页 App 用户界面更新**：重新设计了 Bitwarden Password Manager 浏览器扩展的用户界面，同时包含网页 App 用户界面的一些增强的样式更改。[了解更多](https://bitwarden.com/blog/bringing-intuitive-workflows-and-visual-updates-to-the-bitwarden-browser/)。
 * **网页 App 视图项目面板**：网页 App 现在将打开项目到「查看」面板，而不是直接打开「编辑」面板。只有拥有项目编辑权限的用户才能使用「编辑」按钮更改密码库项目。[了解更多](your-vault/vault-items.md)。
 * **iOS 18.0+ 自动填充 TOTP 代码**：iOS 18.0（或更新版本）上的 Bitwarden 键盘自动填充功能现在可以在登录表单中自动填充 TOTP 代码。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)有关 iOS 自动填充的信息。
-* **PasswordXP .csv 导入器**：PasswordXP .csv 已被添加到可导入 Bitwarden 密码管理器的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
-* **Netwrix Password Secure .csv 导入器**：Netwrix Password Secure .csv 已被添加到可导入 Bitwarden 密码管理器的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
+* **PasswordXP.csv 导入器**：PasswordXP.csv 已被添加到可导入 Bitwarden 密码管理器的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
+* **Netwrix Password Secure.csv 导入器**：Netwrix Password Secure.csv 已被添加到可导入 Bitwarden 密码管理器的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
