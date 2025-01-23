@@ -16,7 +16,7 @@
 
 ### 问：组织和高级会员之间有什么区别？ <a href="#q-whats-the-difference-between-organizations-and-premium" id="q-whats-the-difference-between-organizations-and-premium"></a>
 
-**答：**组织支持从组织到组织用户的安全共享。
+**答：**&#x7EC4;织支持从组织到组织用户的安全共享。
 
 高级个人计划可解锁高级密码安全和管理功能，包括高级 2FA 选项、Bitwarden 验证器（TOTP）、加密文件附件等。高级个人计划不包括安全数据共享。
 
@@ -26,23 +26,23 @@
 
 ### 问：组织的所有者不再在公司任职，可以创建新的所有者吗？ <a href="#q-my-organizations-owner-is-no-longer-with-the-company-can-a-new-owner-be-created" id="q-my-organizations-owner-is-no-longer-with-the-company-can-a-new-owner-be-created"></a>
 
-**答：**只有组织的所有者才能创建新的所有者或将所有者分配给现有用户。为了进行故障转移，Bitwarden 建议创建多个所有者用户。如果您的唯一所有者离开了公司，请[与我们联系](https://bitwarden.com/contact)。
+**答：**&#x53EA;有组织的所有者才能创建新的所有者或将所有者分配给现有用户。为了进行故障转移，Bitwarden 建议创建多个所有者用户。如果您的唯一所有者离开了公司，请[与我们联系](https://bitwarden.com/contact)。
 
 ### 问：我已邀请用户，但他们看不到共享的项目，我该怎么办？ <a href="#q-i-have-invited-users-but-they-cannot-see-shared-items-what-do-i-do" id="q-i-have-invited-users-but-they-cannot-see-shared-items-what-do-i-do"></a>
 
-**答：**被邀请的用户会收到一封邮件，询问他们加入本组织。首先，确保他们已经接受了邀请。如果他们接受了邀请，管理员或所有者应导航到**管理** → **人员**，将鼠标悬停在该用户上，打开齿轮下拉菜单，然后选择**确认**。
+**答：**&#x88AB;邀请的用户会收到一封邮件，询问他们加入本组织。首先，确保他们已经接受了邀请。如果他们接受了邀请，管理员或所有者应导航到**管理** → **人员**，将鼠标悬停在该用户上，打开齿轮下拉菜单，然后选择**确认**。
 
 ### 问：我的组织可以审计哪些事件？ <a href="#q-what-events-are-auditing-for-my-organization" id="q-what-events-are-auditing-for-my-organization"></a>
 
-**答：**有关 Bitwarden 事件日志中包含的内容的完整列表，请参阅[事件日志](../admin-console/reporting/event-logs.md)。
+**答：**&#x6709;关 Bitwarden 事件日志中包含的内容的完整列表，请参阅[事件日志](../admin-console/reporting/event-logs.md)。
 
 ### 问：我可以防止用户自我注册到我的组织吗？ <a href="#q-can-i-prevent-users-from-self-registering-into-my-organization" id="q-can-i-prevent-users-from-self-registering-into-my-organization"></a>
 
-**答：**如果您是自托管，请[配置环境变量](../self-hosting/configure-environment-variables.md) `globalSettings__disableUserRegistration=` 为 `true`，以防止用户通过注册页面注册账户。配置后，组织管理员或所有者必须邀请用户才能在自托管的实例上注册账户。
+**答：**&#x5982;果您是自托管，请[配置环境变量](../self-hosting/configure-environment-variables.md) `globalSettings__disableUserRegistration=` 为 `true`，以防止用户通过注册页面注册账户。配置后，组织管理员或所有者必须邀请用户才能在自托管的实例上注册账户。
 
 ### 问：如何更改组织名称？ <a href="#q-how-do-i-change-the-name-of-my-organization" id="q-how-do-i-change-the-name-of-my-organization"></a>
 
-**答：**要更改组织名称：
+**答：**&#x8981;更改组织名称：
 
 1. 在[网页密码库](https://vault.bitwarden.com/)中，打开您的组织。
 2. 导航到组织的 **⚙️设置**页面。
@@ -56,7 +56,7 @@
 
 ### 问：如何优化包含大量项目的密码库的性能？ <a href="#q-how-do-i-optimize-performance-for-a-vault-with-lots-of-items" id="q-how-do-i-optimize-performance-for-a-vault-with-lots-of-items"></a>
 
-**答：**由于密码库项目的解密是在本地完成的，而不是在我们的服务器中完成，因此对于包含大量项目的密码库，加载时间有时可能会更长。我们的团队始终致力于性能优化，但是这里有一些可以帮助减少加载时间的提示：
+**答：**&#x7531;于密码库项目的解密是在本地完成的，而不是在我们的服务器中完成，因此对于包含大量项目的密码库，加载时间有时可能会更长。我们的团队始终致力于性能优化，但是这里有一些可以帮助减少加载时间的提示：
 
 * 遵循最小权限原则，例如使用集合来组织密码库项目。减少用户可以访问的项目数量将减少应用程序加载时要解密的项目数量。
 * 对于所有者和管理员，请勿使用**此用户可以访问和修改所有项目**选项。无论如何，这些用户角色都可以通过组织密码库访问所有内容，因此选择此选项只会将其他项目也添加到其密码库视图中，并增加应用程序加载时要解密的项目数量。
@@ -66,7 +66,7 @@
 
 ### 问：如何「取消共享」组织中的项目？ <a href="#q-how-do-i-unshare-an-item-from-my-organization" id="q-how-do-i-unshare-an-item-from-my-organization"></a>
 
-**答：**要取消共享一个项目：
+**答：**&#x8981;取消共享一个项目：
 
 1. 导航到您的组织密码库（从菜单栏中选择**组织**，而不是使用组织**筛选器**），然后从您要克隆的项目的选项菜单中选择**克隆**，将项目克隆回您的个人密码库。只有用户类型为管理员或更高级别的用户才能通过更改**所有权**设置将项目克隆到他们的个人密码库。
 2. 从同样的菜单中选择**删除**，以从组织密码库中删除该项目。
@@ -75,14 +75,14 @@
 
 ### 问：如何向组织用户隐藏密码？ <a href="#q-how-do-i-hide-a-password-from-my-organizations-users" id="q-how-do-i-hide-a-password-from-my-organizations-users"></a>
 
-**答：**为您想要对其隐藏密码的用户分配对相关集合的「可以查看（密码除外）」或「可以编辑（密码除外）」[权限](../admin-console/user-management/member-roles-and-permissions.md#permissions)。
+**答：**&#x4E3A;您想要对其隐藏密码的用户分配对相关集合的「可以查看（密码除外）」或「可以编辑（密码除外）」[权限](../admin-console/user-management/member-roles-and-permissions.md#permissions)。
 
 ### 问：我离开后，移动到组织的项目是否会被保留？ <a href="#q-does-an-item-i-share-with-the-organization-stay-after-i-leave" id="q-does-an-item-i-share-with-the-organization-stay-after-i-leave"></a>
 
-**答：**是的！当用户与组织共享项目时，组织将获得该项目的所有权。即使用户离开组织或删除其账户，该项目仍将保留在组织密码库中。
+**答：**&#x662F;的！当用户与组织共享项目时，组织将获得该项目的所有权。即使用户离开组织或删除其账户，该项目仍将保留在组织密码库中。
 
 ## 组织装置 <a href="#organization-installations" id="organization-installations"></a>
 
 ### 问：我可以为我的用户静默安装 Bitwarden 桌面应用程序吗？ <a href="#q-can-i-silently-install-the-bitwarden-desktop-app-for-my-users" id="q-can-i-silently-install-the-bitwarden-desktop-app-for-my-users"></a>
 
-**答：**可以。跨工作站静默安装桌面应用程序时，请以管理员等特权账户身份执行此操作，并除了 `/S` 之外还使用 `/allusers` 开关，因为 `/S` 默认为单用户安装，这将导致自动部署出现问题。
+**答：**&#x53EF;以。跨工作站静默安装桌面应用程序时，请以管理员等特权账户身份执行此操作，并除了 `/S` 之外还使用 `/allusers` 开关，因为 `/S` 默认为单用户安装，这将导致自动部署出现问题。

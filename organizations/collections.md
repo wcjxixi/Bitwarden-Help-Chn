@@ -53,7 +53,7 @@
 
 ## 管理集合 <a href="#manage-a-collection" id="manage-a-collection"></a>
 
-你可能需要从一个集合中添加或移除用户/群组，或者完全删除一个集合。这都可以在密码库视图中通过勾选集合，然后使用 **⮟**按钮来完成：
+你可能需要从一个集合中添加或移除用户/群组，或者完全删除一个集合。这都可以在密码库视图中通过勾选集合，然后使用 **⮟**&#x6309;钮来完成：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/m7O6TwNqNzsOCJNp1caor/522079b1a54e7b3d2db6a6949c7e47a2/Screenshot_2024-02-27_at_11.00.14_AM.png?_a=BAJFJtWIB" %}
 管理集合
@@ -113,7 +113,7 @@
 
 可以批量将组织密码库项目分配给集合：
 
-1、从管理控制台中选择一个或多个密码库项目，然后使用 **≡**菜单选择**添加到集合**。
+1、从管理控制台中选择一个或多个密码库项目，然后使用 **≡**&#x83DC;单选择**添加到集合**。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1u6EPNgAlCnvC9DcmUIosQ/fa0dc2a311d763d982cd2b448851cbbd/assign_multiple_items_to_colleciton.png?_a=BAJFJtWIB" %}
 批量分配到集合

@@ -38,7 +38,7 @@
 
 现在您的服务器已启用 SCIM 了，请使用我们的 SCIM 集成指南之一将您的 Bitwarden 组织与其集成：
 
-* [Azure 活动目录](../scim/azure-ad-scim-integration.md)
+* [Azure 活动目录](../admin-console/user-management/scim/microsoft-entra-id-scim-integration.md)
 * [Okta](../scim/okta-scim-integration.md)
 * [OneLogin](../scim/onelogin-scim-integration.md)
 * [JumpCloud](../scim/jumpcloud-scim-integration.md)

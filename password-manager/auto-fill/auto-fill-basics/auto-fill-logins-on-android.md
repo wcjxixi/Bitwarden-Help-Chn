@@ -52,7 +52,7 @@ Android 自动填充服务
 
 将提示您确认信任 Bitwarden。点击**确定**将使 Bitwarden 可以阅读屏幕上的内容，以了解何时提供自动填充。从[我们的这篇博客文章](https://bitwarden.com/blog/post/the-oreo-autofill-framework)中了解更多信息。
 
-**自动填充服务不起作用？**参阅[自动填充服务疑难解答](../../../auto-fill/troubleshooting-android-auto-fill.md#troubleshooting-the-autofill-service)。
+**自动填充服务不起作用？**&#x53C2;阅[自动填充服务疑难解答](../../../auto-fill/troubleshooting-android-auto-fill.md#troubleshooting-the-autofill-service)。
 
 ### 内嵌自动填充 <a href="#inline-autofill" id="inline-autofill"></a>
 
@@ -94,7 +94,7 @@ GBoard 上的内嵌自动填充
 {% hint style="warning" %}
 如果您使用 Android 6+，您也可以启用 **Draw-Over**。
 
-**无障碍不起作用？**参阅[无障碍服务疑难解答](../../../auto-fill/troubleshooting-android-auto-fill.md#troubleshooting-the-accessibility-service)。
+**无障碍不起作用？**&#x53C2;阅[无障碍服务疑难解答](../../../auto-fill/troubleshooting-android-auto-fill.md#troubleshooting-the-accessibility-service)。
 {% endhint %}
 
 ### Draw-Over <a href="#draw-over" id="draw-over"></a>
@@ -117,7 +117,7 @@ GBoard 上的内嵌自动填充
 4. 从列表中点击 **Bitwarden** 并切换**允许在其他应用程序上绘制**选项。
 
 {% hint style="success" %}
-**仍然有问题？**请参阅我们的 [Android 自动填充疑难解答](../../../auto-fill/troubleshooting-android-auto-fill.md)突破指南。
+**仍然有问题？**&#x8BF7;参阅我们的 [Android 自动填充疑难解答](../../../auto-fill/troubleshooting-android-auto-fill.md)突破指南。
 
 如果您仍然无法使用 Android 自动填充功能，请[联系我们](https://bitwarden.com/contact)。
 {% endhint %}

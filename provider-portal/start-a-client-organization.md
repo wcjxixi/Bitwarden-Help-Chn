@@ -1,4 +1,4 @@
-# 设置客户组织
+# 添加客户组织
 
 {% hint style="info" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/client-org-setup/)
@@ -9,7 +9,7 @@
 ## 创建一个客户组织 <a href="#create-a-client-organization" id="create-a-client-organization"></a>
 
 {% hint style="success" %}
-**已经为您的客户设置了组织？**您可以[将现有的组织添加到提供商门户](providers-faqs.md#q-im-already-providing-bitwarden-as-a-service-for-my-clients-what-do-i-need-to-do-to-move-to-the-provider-portal)。
+**已经为您的客户设置了组织？**&#x60A8;可以[将现有的组织添加到提供商门户](providers-faqs.md#q-im-already-providing-bitwarden-as-a-service-for-my-clients-what-do-i-need-to-do-to-move-to-the-provider-portal)。
 {% endhint %}
 
 要创建客户组织，您必须是[提供商管理员](provider-users.md#provider-user-types)：

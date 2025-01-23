@@ -9,7 +9,7 @@
 配置需要在 Bitwarden 网页密码库和 JumpCloud 门户网站中同时进行。在您继续进行操作时，我们建议您随时准备好并按照记录的顺序完成步骤。
 
 {% hint style="success" %}
-**已经是 SSO 专家？**跳过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
+**已经是 SSO 专家？**&#x8DF3;过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
 
 **⬇️**[下载示例](https://assets.ctfassets.net/7rncvj1f8mw7/2jY7iejfs0KgdWBnwhGMHF/4bdd393ef26aac504ac2dd5b38cd283f/saml-jumpcloud-sample.zip)
 {% endhint %}

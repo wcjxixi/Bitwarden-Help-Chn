@@ -49,14 +49,14 @@ iOS 上的自动填充有两种：
 
 3、点击**密码选项**。
 
-4、打开**自动填充密码和通行密钥**开关，然后从**密码和通行密钥来源：**列表中选中 **Bitwarden**：
+4、打开**自动填充密码和通行密钥**开关，然后从**密码和通行密钥来源：**&#x5217;表中选中 **Bitwarden**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5jxVP3WslH4ppIdFq9viqX/fa255fd5cdf68bd1bb5d363f3fe44988/IMG_5421.png?_a=BAJFJtWIB" %}
 iOS 密码选项界面
 {% endembed %}
 
 {% hint style="success" %}
-我们强烈建议在**密码和通行密钥来源：**列表中禁用任何其他自动填充服务（例如钥匙串）。
+我们强烈建议在**密码和通行密钥来源：**&#x5217;表中禁用任何其他自动填充服务（例如钥匙串）。
 {% endhint %}
 
 **让我们测试一下自动填充以确保其可以正常工作：**

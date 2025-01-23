@@ -35,6 +35,6 @@ adminSettings__admins=john@example.com,bill@gmail.com,tom@example.com
 
 您的实例的系统管理员门户位于 `https://your.domain.com/admin`。
 
-该门户使用安全的_无密码认证_方式。当用户尝试登录时，**仅**向在 `adminSettings__admins=` 中指定的电子邮件地址发送一个安全链接。
+该门户使用安全&#x7684;_&#x65E0;密码认&#x8BC1;_&#x65B9;式。当用户尝试登录时，**仅**向在 `adminSettings__admins=` 中指定的电子邮件地址发送一个安全链接。
 
 点击该临时链接将使该用户登录到系统管理员门户。该链接在尝试登录后的 15 分钟内有效。

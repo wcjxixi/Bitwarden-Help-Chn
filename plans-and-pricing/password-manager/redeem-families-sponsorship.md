@@ -84,26 +84,26 @@
 {% endtabs %}
 
 {% hint style="success" %}
-**恭喜！**如果您刚开始使用 Bitwarden 家庭组织，我们建议您查看[这篇文章](../../admin-console/organizations-quick-start.md#get-to-know-your-organization)以了解其基础知识。
+**恭喜！**&#x5982;果您刚开始使用 Bitwarden 家庭组织，我们建议您查看[这篇文章](../../admin-console/organizations-quick-start.md#get-to-know-your-organization)以了解其基础知识。
 {% endhint %}
 
 ## 常见问题 <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
 
 ### 问：我可以使用属于赞助企业成员的账户进行兑换吗？ <a href="#can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise" id="can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise"></a>
 
-**答：**不可以。兑换时，系统会要求您输入您拥有的**个人电子邮件地址**。如果您已有个人 Bitwarden 账户，请输入该账户的电子邮件地址。如果没有，请输入您要为其创建个人 Bitwarden 账户的个人电子邮件地址。
+**答：**&#x4E0D;可以。兑换时，系统会要求您输入您拥有的**个人电子邮件地址**。如果您已有个人 Bitwarden 账户，请输入该账户的电子邮件地址。如果没有，请输入您要为其创建个人 Bitwarden 账户的个人电子邮件地址。
 
 ### 问：我可以为我现有的家庭组织兑换吗？ <a href="#can-i-redeem-for-my-existing-families-organization" id="can-i-redeem-for-my-existing-families-organization"></a>
 
-**答：**可以！为活跃的家庭组织兑换赞助将立即将您切换到赞助订阅，并在您已支付的订阅剩余时间上按比例添加账户信用额度。
+**答：**&#x53EF;以！为活跃的家庭组织兑换赞助将立即将您切换到赞助订阅，并在您已支付的订阅剩余时间上按比例添加账户信用额度。
 
 ### 问：我可以添加额外的存储空间吗？ <a href="#can-i-add-additional-storage" id="can-i-add-additional-storage"></a>
 
-**答：**可以，但是您的赞助中只包含 1 GB。可以随时添加更多存储空间，这样做会通过您已存档的付款方式收取费用。
+**答：**&#x53EF;以，但是您的赞助中只包含 1 GB。可以随时添加更多存储空间，这样做会通过您已存档的付款方式收取费用。
 
 ### 问：如果我离开赞助我的组织会怎样？ <a href="#what-happens-if-i-leave-the-organization-sponsoring-me" id="what-happens-if-i-leave-the-organization-sponsoring-me"></a>
 
-**答：**如果您离开或从赞助组织中被移除，或手动结束您的赞助，在下一个计费周期将通过您已存档的付款方式收取费用。
+**答：**&#x5982;果您离开或从赞助组织中被移除，或手动结束您的赞助，在下一个计费周期将通过您已存档的付款方式收取费用。
 
 ### 问：`Awaiting Sync` 是什么意思？ <a href="#q-what-does-awaiting-sync-mean" id="q-what-does-awaiting-sync-mean"></a>
 
@@ -113,11 +113,11 @@
 
 ### 问：自托管企业组织可以发出赞助吗？ <a href="#q-can-self-hosted-enterprise-organizations-issue-sponsorships" id="q-can-self-hosted-enterprise-organizations-issue-sponsorships"></a>
 
-**答：**可以。你可以在[这里](../../self-hosting/self-hosting-families-sponsorships.md)找到简短设置过程的说明。请提醒您的用户，他们的赞助家庭组织将通过我们的公共云 (`https://vault.bitwarden.com`) 提供，而不是通过您的自托管服务器提供。
+**答：**&#x53EF;以。你可以在[这里](../../self-hosting/self-hosting-families-sponsorships.md)找到简短设置过程的说明。请提醒您的用户，他们的赞助家庭组织将通过我们的公共云 (`https://vault.bitwarden.com`) 提供，而不是通过您的自托管服务器提供。
 
 ### 问：受赞助的家庭组织可以放在自托管服务器上吗？ <a href="#q-can-a-sponsored-families-organization-be-on-a-self-hosted-server" id="q-can-a-sponsored-families-organization-be-on-a-self-hosted-server"></a>
 
-**答：**可以。但是有几个步骤需要完成：
+**答：**&#x53EF;以。但是有几个步骤需要完成：
 
 1. [如上所述](redeem-families-sponsorship.md#redeem-your-sponsorship)，在 `https://vault.bitwarden.com` 兑换您的赞助。
 2. 还是在 `https://vault.bitwarden.com`，[按照此处所述](../../self-hosting/licensing-for-paid-features.md#retrieve-your-license-1)获取您的家庭组织的许可证文件。

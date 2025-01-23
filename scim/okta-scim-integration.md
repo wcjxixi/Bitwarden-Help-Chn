@@ -1,6 +1,6 @@
 # Okta SCIM 集成
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/okta-scim-integration/)
 {% endhint %}
 
@@ -15,7 +15,7 @@ SCIM 集成适用于**企业组织**。团队组织或未使用与 SCIM 兼容�
 ## 启用 SCIM <a href="#enable-scim" id="enable-scim"></a>
 
 {% hint style="info" %}
-**您是自托管 Bitwarden 吗？**如果是，请在继续操作之前完成[这些步骤为您的服务器启用 SCIM](../self-hosting/self-hosting-scim.md)。
+**您是自托管 Bitwarden 吗？**&#x5982;果是，请在继续操作之前完成[这些步骤为您的服务器启用 SCIM](../self-hosting/self-hosting-scim.md)。
 {% endhint %}
 
 要开始您的 SCIM 集成，请打开您组织的**管理** → **SCIM 配置**页面：

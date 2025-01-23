@@ -213,13 +213,13 @@
 
 ### 问：如果[克隆](../../your-vault/vault-items.md#clone)密码库项目，是否会包含通行密钥？ <a href="#q-will-passkeys-be-included-if-you-clone-a-vault-item" id="q-will-passkeys-be-included-if-you-clone-a-vault-item"></a>
 
-**答：**完成克隆操作时，Bitwarden 不会复制通行密钥。
+**答：**&#x5B8C;成克隆操作时，Bitwarden 不会复制通行密钥。
 
 ### 问：Bitwarden 导入和导出中是否包含存储的通行密钥？ <a href="#q-are-stored-passkeys-included-in-bitwarden-imports-and-exports" id="q-are-stored-passkeys-included-in-bitwarden-imports-and-exports"></a>
 
-**答：**后期版本中将包含通行密钥导入和导出。
+**答：**&#x540E;期版本中将包含通行密钥导入和导出。
 
 ### 问：我可以在移动应用程序中存储通行密钥吗？ <a href="#q-can-i-store-passkeys-in-the-mobile-app" id="q-can-i-store-passkeys-in-the-mobile-app"></a>
 
-**答：**计划在后期版本中提供对移动应用程序的通行密钥支持。
+**答：**&#x8BA1;划在后期版本中提供对移动应用程序的通行密钥支持。
 

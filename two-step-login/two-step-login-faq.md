@@ -8,19 +8,19 @@
 
 ### 问：可以使用 SMS 2FA 吗？ <a href="#q-can-i-use-sms-2-fa" id="q-can-i-use-sms-2-fa"></a>
 
-**答：**鉴于 SIM 卡劫持等漏洞的存在，Bitwarden 不支持 SMS 2FA。我们也不建议其他账户使用 SMS 2FA，除非它是唯一可用的方法。虽然任何第二个因素都比没有更推荐，但大多数替代方案都比 SMS 2FA 更安全。
+**答：**&#x9274;于 SIM 卡劫持等漏洞的存在，Bitwarden 不支持 SMS 2FA。我们也不建议其他账户使用 SMS 2FA，除非它是唯一可用的方法。虽然任何第二个因素都比没有更推荐，但大多数替代方案都比 SMS 2FA 更安全。
 
 ### 问：我可以要求我的组织用户使用两步登录吗？ <a href="#q-can-i-require-my-organizations-users-to-use-two-step-login" id="q-can-i-require-my-organizations-users-to-use-two-step-login"></a>
 
-**答：**您可以通过启用[两步登录策略](../organizations/enterprise-policies.md#two-step-login)来要求组织用户使用两步登录。此外，您还可以设置[组织层面的 Duo 2FA](setup-guides/two-step-login-via-duo.md)，以确保您的所有用户都拥有他们可以支配的安全的两步登录方式。
+**答：**&#x60A8;可以通过启用[两步登录策略](../organizations/enterprise-policies.md#two-step-login)来要求组织用户使用两步登录。此外，您还可以设置[组织层面的 Duo 2FA](setup-guides/two-step-login-via-duo.md)，以确保您的所有用户都拥有他们可以支配的安全的两步登录方式。
 
 ### 问：iOS 或 Android 应用程序支持 FIDO U2F 或 FIDO2 WebAuthn 吗？ <a href="#q-is-fido-u-2-f-or-fido-2-webauthn-supported-on-my-ios-or-android-app" id="q-is-fido-u-2-f-or-fido-2-webauthn-supported-on-my-ios-or-android-app"></a>
 
-**答：**支持。请参阅 [FIDO2 WebAuthn 方式的两步登录](setup-guides/two-step-login-via-fido2-webauthn.md)。
+**答：**&#x652F;持。请参阅 [FIDO2 WebAuthn 方式的两步登录](setup-guides/two-step-login-via-fido2-webauthn.md)。
 
 ### 问：为什么 Bitwarden 没有询问我已启用的「两步登录」方式？ <a href="#q-why-is-bitwarden-not-asking-for-my-enabled-two-step-login-method" id="q-why-is-bitwarden-not-asking-for-my-enabled-two-step-login-method"></a>
 
-**答：**大多数情况下，可能是以下两种情况之一：
+**答：**&#x5927;多数情况下，可能是以下两种情况之一：
 
 1、您可能已经登录了 Bitwarden，而您只是解锁您的密码库。**登录**您的密码库需要两步登录但**解锁**不需要。有关登录与解锁之间的区别的更多信息，请参阅[密码库超时行为](../your-vault/vault-timeout-options.md#vault-timeout-action)。
 
@@ -32,7 +32,7 @@
 
 ### 问：设备登录是否适用于两步登录？ <a href="#q-does-log-in-with-device-work-with-two-step-login" id="q-does-log-in-with-device-work-with-two-step-login"></a>
 
-**答：**是的。设备登录将取代输入您的主密码。如果您的账户启用了两步登录，用户仍需要完成身份验证请求。如果出现以下情况，使用设备登录将直接将您带到身份验证步骤：
+**答：**&#x662F;的。设备登录将取代输入您的主密码。如果您的账户启用了两步登录，用户仍需要完成身份验证请求。如果出现以下情况，使用设备登录将直接将您带到身份验证步骤：
 
 * 您正在使用已记住的设备。
 * 之前已在登录界面选中「记住我」。

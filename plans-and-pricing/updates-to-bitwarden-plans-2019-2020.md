@@ -1,7 +1,7 @@
 # \*更新 Bitwarden 计划 (2019-2020)
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/2020-plan-updates/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/\_articles/plans-and-pricing/2020-plan-updates.md)
+对应的[官方文档地址](https://bitwarden.com/help/article/2020-plan-updates/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/_articles/plans-and-pricing/2020-plan-updates.md)
 {% endhint %}
 
 在继续我们的使命以使个人和组织能够轻松安全地存储和共享敏感数据的过程中，我们最近对我们的产品进行了一些升级。**本文面向在 2020 年 09 月 06 日之前创建了 Bitwarden 账户并希望了解经典 2019 计划和当前计划的区别的用户。**
@@ -67,7 +67,7 @@
 
 ### 问：这些更改何时生效？ <a href="#q-when-did-these-changes-go-into-effect" id="q-when-did-these-changes-go-into-effect"></a>
 
-**答：**这些更改于 2020 年 9 月 6 日生效。如果您在该日期之前已创建了 Bitwarden 账户，但尚未升级，则表示您使用的是经典 2019 计划。
+**答：**&#x8FD9;些更改于 2020 年 9 月 6 日生效。如果您在该日期之前已创建了 Bitwarden 账户，但尚未升级，则表示您使用的是经典 2019 计划。
 
 ### 问：如何从经典 2019 升级到当前计划？ <a href="#q-how-do-i-upgrade-from-classic-2019-to-a-current-plan" id="q-how-do-i-upgrade-from-classic-2019-to-a-current-plan"></a>
 
@@ -75,15 +75,15 @@
 
 ### 问：如果我想保留我的经典 2019 计划，我需要做些什么吗？ <a href="#q-if-i-want-to-stay-on-my-classic-2019-plan-do-i-need-to-do-anything" id="q-if-i-want-to-stay-on-my-classic-2019-plan-do-i-need-to-do-anything"></a>
 
-**答：**不需要。除非您升级，否则您的计划将保持不变。
+**答：**&#x4E0D;需要。除非您升级，否则您的计划将保持不变。
 
 ### 问：如果我继续使用经典 2019 计划，价格会改变吗？ <a href="#q-if-i-stay-on-my-classic-2019-plan-will-my-pricing-change" id="q-if-i-stay-on-my-classic-2019-plan-will-my-pricing-change"></a>
 
-**答：**不会。只有选择升级到当前计划，价格才会改变。
+**答：**&#x4E0D;会。只有选择升级到当前计划，价格才会改变。
 
 ### 问：我可以购买没有高级功能的家庭组织吗？ <a href="#q-can-i-purchase-a-families-organization-without-premium-features" id="q-can-i-purchase-a-families-organization-without-premium-features"></a>
 
-**答：**如果您在 2020 年 9 月 6 日之前已创建了家庭组织，您可以保留您的家庭（不含高级功能）组织，只需选择不升级到当前计划即可。2020 年 9 月 6 日之后创建的家庭组织将始终包含高级功能。
+**答：**&#x5982;果您在 2020 年 9 月 6 日之前已创建了家庭组织，您可以保留您的家庭（不含高级功能）组织，只需选择不升级到当前计划即可。2020 年 9 月 6 日之后创建的家庭组织将始终包含高级功能。
 
 ### 问：我有一个企业组织，如何升级我的计划，以便可以使用 SSO 登录？ <a href="#q-i-have-an-enterprise-organization-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso" id="q-i-have-an-enterprise-organization-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso"></a>
 
@@ -91,4 +91,4 @@
 
 ### 问：我想测试 SSO 登录。如果我决定不需要它，可以恢复到经典 2019 计划吗？ <a href="#q-i-would-like-to-test-login-with-sso-if-i-decide-i-dont-need-it-can-i-revert-to-my-classic-2019-pla" id="q-i-would-like-to-test-login-with-sso-if-i-decide-i-dont-need-it-can-i-revert-to-my-classic-2019-pla"></a>
 
-**答：**不幸的是，升级后，我们将无法将您恢复为经典 2019 计划。我们建议创建一个新的组织以开始一个 [7 天企业免费试用](start-an-enterprise-trial-with-your-bitwarden-account.md)，以在您的主要组织之外测试 SSO 登录。
+**答：**&#x4E0D;幸的是，升级后，我们将无法将您恢复为经典 2019 计划。我们建议创建一个新的组织以开始一个 [7 天企业免费试用](start-an-enterprise-trial-with-your-bitwarden-account.md)，以在您的主要组织之外测试 SSO 登录。

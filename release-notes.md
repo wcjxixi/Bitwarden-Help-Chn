@@ -22,6 +22,37 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.1.1
+
+{% hint style="info" %}
+为确保您的账户安全，2025 年初开始，Bitwarden 将对未使用两步登录的用户要求额外的验证。[了解更多](miscellaneous/new-device-login-protection.md)。
+{% endhint %}
+
+此次发布包含：
+
+### Password Manager
+
+* **SSH 代理**：Bitwarden 用户现在可以直接使用 Bitwarden 密码管理器安全地存储和生成 SSH 密钥。[了解更多](password-manager/developer-tools/ssh-agent.md)有关 Bitwarden SSH 代理的信息。
+* **使用网页设备批准**：使用网页 App 批准新的受信任设备和设备登录请求。[了解更多](your-vault/log-in-with-device.md)。
+* **浏览器扩展的阻止自动填充**：浏览器扩展现在可以明确指定不允许在某些域名上进行自动填充。[了解更多](password-manager/auto-fill/blocking-autofill.md)。
+* **更新了桌面端的生成器**：桌面 App 上的密码和用户名生成器的用户界面已更新，以反映其他 Bitwarden App 的最新设计。[了解更多](your-vault/username-password-generator.md)。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **SSO 外部 ID 被添加到公共 API 响应中**：返回组织成员数据的公共 API 响应现在将在适用时包含其 SSO 外部标识符。[了解更多](https://bitwarden.com/help/api/)。
+
+### 自托管 <a href="#self-hosting" id="self-hosting"></a>
+
+* **旧用户加密密钥迁移**：更新到服务器版本 `2025.1.3` 时，自托管服务器将要求具有现有旧加密密钥的用户（通常是 2021 年之前创建的不经常使用网页 App 的账户）登录网页 App 迁移旧加密密钥。
+
+{% hint style="info" %}
+受影响的用户将被注销，并被阻止登录非网页 Bitwarden 客户端，直到他们通过登录 Bitwarden 网页 App 完成迁移。**为确保您的用户不会失去服务，Bitwarden 建议：**
+
+1. 尽快将您的自托管服务器升级到版本 `2025.1.0`。
+2. 知用户应在此更新后登录网页 App ，以确保在被 `2025.1.3` **强制执行之前**迁移现有的旧密钥。
+3. 在收到通知后的一段时间内，安排将托管服务器升级到版本 `2025.1.3`，以允许用户迁移现有的旧密钥。
+{% endhint %}
+
 ## 2025.1.0
 
 此次发布包含：
@@ -30,8 +61,8 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 * **更多自动填充自定义选项**：浏览器扩展现在具有更多选项来自定义您的自动填充体验，包括选择项目卡片而不是「**填充**」按钮来自动填充，以及多个快速复制操作。了解更多。
 * **Snap Store 桌面 App 生物识别解锁**：通过 Snap Store 下载的密码管理桌面 App 现在支持生物识别解锁。了解更多。
-* **TOTP 代码的内联自动填充**：内联自动填充菜单现在可用于选择 TOTP 代码。此处了解有关内联自动填充菜单的更多信息。
-* **新的公共 API 操作**：`/public/organization/subscription` 端点添加了一个 GET 操作。此处了解有关 Bitwarden 公共 API 的更多信息。
+* **TOTP 代码的内联自动填充**：内联自动填充菜单现在可用于选择 TOTP 代码。了解更多有关内联自动填充菜单的信息。
+* **新的公共 API 操作**：`/public/organization/subscription` 端点添加了一个 GET 操作。了解更多有关 Bitwarden 公共 API 的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -45,7 +76,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 ## 2024.12.0
 
 {% hint style="info" %}
-2025 年，Bitwarden 将开始逐步取消对 FIDO 通用第二因素 (U2F) 的支持。如果您当前使用 FIDO U2F 密钥进行两步登录，请[更新您的两步登录设置](two-step-login/two-step-login-methods.md)，以避免账户被封锁。
+2025 年，Bitwarden 将开始逐步停止对 FIDO 通用第二因素 (U2F) 密钥的支持，这些密钥可以在网页 App 的两步登录 → 管理 FIDO2 WebAuthn 视图中识别为标记为「**迁移自 FIDO**」。如果您目前使用的是已迁移的 U2F 密钥，请移除并重新注册该密钥，以便自动[将其设置为 WebAuthn](two-step-login/setup-guides/two-step-login-via-fido2-webauthn.md)。
 {% endhint %}
 
 此次发布包含：
@@ -54,7 +85,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 * **浏览器扩展和网页 App 用户界面更新**：重新设计了 Bitwarden Password Manager 浏览器扩展的用户界面，同时包含网页 App 用户界面的一些增强的样式更改。[了解更多](https://bitwarden.com/blog/bringing-intuitive-workflows-and-visual-updates-to-the-bitwarden-browser/)。
 * **网页 App 视图项目面板**：网页 App 现在将打开项目到「查看」面板，而不是直接打开「编辑」面板。只有拥有项目编辑权限的用户才能使用「编辑」按钮更改密码库项目。[了解更多](your-vault/vault-items.md)。
-* **iOS 18.0+ 自动填充 TOTP 代码**：iOS 18.0（或更新版本）上的 Bitwarden 键盘自动填充功能现在可以在登录表单中自动填充 TOTP 代码。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)有关 iOS 自动填充的信息。
+* **iOS 18.0+ 自动填充 TOTP 代码**：iOS 18.0（或更新版本）上的 Bitwarden 键盘自动填充功能现在可以在登录表单中自动填充 TOTP 代码。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)有关 iOS 自动填充的更多信息。
 * **PasswordXP.csv 导入器**：PasswordXP.csv 已被添加到可导入 Bitwarden 密码管理器的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
 * **Netwrix Password Secure.csv 导入器**：Netwrix Password Secure.csv 已被添加到可导入 Bitwarden 密码管理器的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
 
@@ -149,7 +180,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 ### Password Manager
 
 * **iOS 原生移动 App**：通过 Apple App Store 下载的密码管理器移动 App 已升级为原生移动应用程序。[了解更多](miscellaneous/native-mobile-apps.md)。
-* **用于密码保护导出的密码生成器**：Bitwarden 现在可以为受密码保护的导出生成唯一密码。[此处](import-export/encrypted-exports.md#create-an-encrypted-export)了解有关密码保护导出的更多信息。
+* **用于密码保护导出的密码生成器**：Bitwarden 现在可以为受密码保护的导出生成唯一密码。[了解更多](import-export/encrypted-exports.md#create-an-encrypted-export)有关密码保护导出的更多信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -213,7 +244,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 * **紧急联系人和提供商的邀请说明**：受信任的紧急联系人和提供商用户在接受邀请后，现在将进入「需要确认」状态，使您的下一步操作更清晰。
 * **批量分配项目到集合**：现在，您可以从密码库视图中将项目批量分配到组织的集合中。此功能的前一版本称为「移动到组织」。[了解更多](your-vault/vault-items.md#assign-to-collections)。
 * **重命名将项目添加到文件夹**：在密码库视图中，将项目添加到文件夹的选项已从「移动所选」重命名为「添加到文件夹」。[了解更多](your-vault/folders.md#move-items-to-a-folder)。
-* **弃用桌面应用程序设置**：桌面应用程序现在默认可以批准设备登录。了解更多。
+* **弃用桌面应用程序设置**：桌面应用程序现在默认可以批准设备登录。[了解更多](your-vault/log-in-with-device.md)。
 * **改进的 SSO 标识符工作流程**：管理员现在可以分发企业单点登录界面的 URL，并将其 SSO 标识符作为查询参数包含在内，以自动将组织成员重定向到 IdP，从而获得更简化的 SSO 体验。[了解更多](login-with-sso/login-with-sso-faqs.md#q-do-i-need-to-enter-my-organization-identifier-every-time-i-login)。
 
 ### Secrets Manager
@@ -230,7 +261,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ### 安全 <a href="#security" id="security"></a>
 
-* **密码库项目秘钥**：添加了额外的加密层，其形式是为每个单独的密码库项目生成新的加密密钥。了解更多。
+* **密码库项目秘钥**：添加了额外的加密层，其形式是为每个单独的密码库项目生成新的加密密钥。[了解更多](security/bitwarden-security-whitepaper.md#how-vault-data-is-encrypted)。
 
 ### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
 
@@ -244,7 +275,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 ### Password Manager
 
 * **批量批准可信任设备 SSO**：管理员和所有者现在可以使用 [Web 应用程序](admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md#bulk-approve-requests)或 [CLI](password-manager/developer-tools/password-manager-cli.md#device-approval) 批量批准可信设备请求。
-* **陈旧的用户加密密钥迁移**：2021 年之前创建的 Bitwarden 账户已将其账户加密密钥迁移到 Bitwarden 的更现代化的用户对称密钥。这些用户将被从非 Web Bitwarden 客户端注销，直到他们通过登录 Bitwarden Web 客户端完成迁移。[此处](security/encryption.md)了解有关 Bitwarden 加密的更多信息。
+* **陈旧的用户加密密钥迁移**：2021 年之前创建的 Bitwarden 账户已将其账户加密密钥迁移到 Bitwarden 的更现代化的用户对称密钥。这些用户将被从非 Web Bitwarden 客户端注销，直到他们通过登录 Bitwarden Web 客户端完成迁移。[了解更多](security/encryption.md)有关 Bitwarden 加密的信息。
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
@@ -322,7 +353,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 ## Bitwarden Authenticator
 
-介绍全新的 Bitwarden Authenticator 独立移动应用程序。使用 Bitwarden Authenticator 生成用于应用程序和网站双因素身份验证的验证码。从应用商店下载或了解更多。
+介绍全新的 Bitwarden Authenticator 独立移动应用程序。使用 Bitwarden Authenticator 生成用于应用程序和网站双因素身份验证的验证码。从应用商店下载或[了解更多](bitwarden-authenticator/bitwarden-authenticator.md)。
 
 ## 2024.4.1
 
@@ -339,14 +370,14 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 ## 2024.3.1
 
 {% hint style="success" %}
-[最近迁移到新的权限结构](admin-console/organization-basics/collection-management.md#collection-management-settings)，为您的组织带来了更大的集合管理灵活性，未分配给[集合](organizations/collections.md)的密码库项目现在不再显示在您的密码管理器的**所有保管库**视图中了。[了解如何访问这些项目](miscellaneous/unassigned-vault-items-moved-to-admin-console.md)。
+[最近迁移到新的权限结构](admin-console/organization-basics/collection-management.md#collection-management-settings)，为您的组织带来了更大的集合管理灵活性，未分配给[集合](organizations/collections.md)的密码库项目现在不再显示在您的密码管理器的**所有密码库**视图中了。[了解如何访问这些项目](miscellaneous/unassigned-vault-items-moved-to-admin-console.md)。
 {% endhint %}
 
 此次发布包含：
 
 ### Password Manager
 
-* Bitwarden 应用程序可使用新的语言：在社区翻译人员的贡献下，Bitwarden 应用程序现在提供了新的语言选项！[点击这里](miscellaneous/localization.md)查看完整的语言列表。[点击这里](https://contributing.bitwarden.com/contributing/#localization-l10n)了解更多关于 Bitwarden 本地化的信息。
+* Bitwarden 应用程序可使用新的语言：在社区翻译人员的贡献下，Bitwarden 应用程序现在提供了新的语言选项！[点击这里](miscellaneous/localization.md)查看完整的语言列表。[了解更多](https://contributing.bitwarden.com/contributing/#localization-l10n)关于 Bitwarden 本地化的信息。
 * **桌面应用程序硬件加速**：Bitwarden 桌面应用程序现在可以选择打开或关闭硬件加速以优化性能。该设置默认启用。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>

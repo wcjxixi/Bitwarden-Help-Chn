@@ -1,6 +1,6 @@
 # 关于 SCIM
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/about-scim/)
 {% endhint %}
 
@@ -14,7 +14,7 @@ SCIM 集成适用于**企业组织**。团队组织或未使用与 SCIM 兼容�
 
 Bitwarden 支持使用标准属性映射的 SCIM v2，并提供以下官方 SCIM 集成：
 
-* [Azure 活动目录](azure-ad-scim-integration.md)
+* [Azure 活动目录](../admin-console/user-management/scim/microsoft-entra-id-scim-integration.md)
 * [Okta](okta-scim-integration.md)
 * [OneLogin](onelogin-scim-integration.md)
 * [JumpCloud](jumpcloud-scim-integration.md)
@@ -32,7 +32,7 @@ SCIM 预配
 {% endembed %}
 
 {% hint style="success" %}
-我们建议使用我们的专用指南之一来设置 Bitwarden 与 [Azure AD](azure-ad-scim-integration.md)、[Okta](okta-scim-integration.md)、[OneLogin](onelogin-scim-integration.md) 或 [JumpCloud](jumpcloud-scim-integration.md) 的 SCIM 集成。
+我们建议使用我们的专用指南之一来设置 Bitwarden 与 [Azure AD](../admin-console/user-management/scim/microsoft-entra-id-scim-integration.md)、[Okta](okta-scim-integration.md)、[OneLogin](onelogin-scim-integration.md) 或 [JumpCloud](jumpcloud-scim-integration.md) 的 SCIM 集成。
 {% endhint %}
 
 ### 属性要求 <a href="#required-attributes" id="required-attributes"></a>

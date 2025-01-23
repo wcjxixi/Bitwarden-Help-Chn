@@ -57,15 +57,15 @@ Bitwarden Authenticator
 
 **问：新的 Bitwarden Authenticator 是 Bitwarden 密码管理器的一部分吗？**
 
-**答：**Bitwarden Authenticator 是一款独立的应用程序，可供所有人使用，甚至是非 Bitwarden 客户。 Bitwarden Password Manager 将保留一个集成的身份验证器，供高级用户或付费组织成员使用。
+**答：**&#x42;itwarden Authenticator 是一款独立的应用程序，可供所有人使用，甚至是非 Bitwarden 客户。 Bitwarden Password Manager 将保留一个集成的身份验证器，供高级用户或付费组织成员使用。
 
 **问：我可以使用 Bitwarden Authenticator 将 2FA 添加到我的 Bitwarden 账户吗？**
 
-**答：**可以！由于 Bitwarden Authenticator 允许您在 Bitwarden 账户之外存储代码，因此该应用程序可用于将 2FA 添加到您的 Bitwarden 账户。
+**答：**&#x53EF;以！由于 Bitwarden Authenticator 允许您在 Bitwarden 账户之外存储代码，因此该应用程序可用于将 2FA 添加到您的 Bitwarden 账户。
 
 **问：如何将此应用设置为 iOS 上的默认验证码应用？**
 
-**答：**运行 iOS 16+ 的 iOS 用户可以将任何应用程序设置为直接从相机应用程序扫码时默认存储验证码的应用程序，包括 [Bitwarden Authenticator](bitwarden-authenticator.md) 和 Password Manager [集成身份验证](../your-vault/totp.md)。要进行此设置：
+**答：**&#x8FD0;行 iOS 16+ 的 iOS 用户可以将任何应用程序设置为直接从相机应用程序扫码时默认存储验证码的应用程序，包括 [Bitwarden Authenticator](bitwarden-authenticator.md) 和 Password Manager [集成身份验证](../your-vault/totp.md)。要进行此设置：
 
 1. 打开设备上的 iOS **设置**应用程序。
 2. 点击**密码**。
@@ -74,12 +74,12 @@ Bitwarden Authenticator
 
 **问：我什么时候应该使用这个独立的应用程序而不是集成的身份验证器？**
 
-**答：**除了使用独立应用程序为您的 Bitwarden 账户设置 2FA 之外，您还可以使用任一应用程序为所有其他账户存储和生成验证码。它们可以一起使用，也可以单独使用，具体取决于您的安全偏好。
+**答：**&#x9664;了使用独立应用程序为您的 Bitwarden 账户设置 2FA 之外，您还可以使用任一应用程序为所有其他账户存储和生成验证码。它们可以一起使用，也可以单独使用，具体取决于您的安全偏好。
 
 **问：我的数据如何存储和保护？**
 
-**答：**您的身份验证密钥（有时称为「机密密钥」或「TOTP 种子」）和所有关联的元数据都存储在您设备上的本地数据库中。此数据未同步到 Bitwarden 服务器。加密数据的备份由您设备的云备份系统（例如 iCloud 或 Google One）进行备份。为了保护应用程序中的数据，您还可以设置生物识别登录。
+**答：**&#x60A8;的身份验证密钥（有时称为「机密密钥」或「TOTP 种子」）和所有关联的元数据都存储在您设备上的本地数据库中。此数据未同步到 Bitwarden 服务器。加密数据的备份由您设备的云备份系统（例如 iCloud 或 Google One）进行备份。为了保护应用程序中的数据，您还可以设置生物识别登录。
 
 **问：如何备份和恢复数据？**
 
-**答：**您的加密数据的备份是由您设备的云备份系统（例如 iCloud 或 Google One）进行的。要恢复数据，请恢复设备的云备份。
+**答：**&#x60A8;的加密数据的备份是由您设备的云备份系统（例如 iCloud 或 Google One）进行的。要恢复数据，请恢复设备的云备份。

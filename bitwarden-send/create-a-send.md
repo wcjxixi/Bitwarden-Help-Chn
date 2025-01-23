@@ -69,7 +69,7 @@
 
 3、在**添加 Send** 视图中，为 Send 指定如下内容：
 
-* **名称：**为此 Send 指定一个可识别的有含义的名称。
+* **名称：**&#x4E3A;此 Send 指定一个可识别的有含义的名称。
 *   **类型**：指定此 Send 是**文本**还是**文件**：
 
     <table data-header-hidden><thead><tr><th width="226">类型</th><th>描述</th></tr></thead><tbody><tr><td><strong>类型</strong></td><td><strong>描述</strong></td></tr><tr><td><strong>文本</strong></td><td>在输入框中输入或粘贴所需的文本。切换<strong>访问 Send 时，默认隐藏文本</strong>选项，将要求接收者在打开 Send 时<a href="send-privacy.md">切换可见性</a>。</td></tr><tr><td><strong>文件</strong></td><td><p>点按<strong>选择文件</strong>按钮，然后浏览用于 Send 的文件。每个 Send 的最大文件大小为 100 MB（移动端为 100 MB）。（<strong>需要高级会员</strong> &#x26; 已验证电子邮件）</p><p></p><p>如果您使用的是 Firefox 或 Safari，则需要弹出浏览器扩展程序才能浏览用于 Send 的文件。</p></td></tr></tbody></table>

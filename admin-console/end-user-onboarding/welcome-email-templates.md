@@ -28,7 +28,7 @@
 >
 > To get started, follow these steps:
 >
-> _\[_插入公司首选的[入职流程](onboarding-workflows.md)_]_
+> _\[_&#x63D2;入公司首选的[入职流程](onboarding-workflows.md)_]_
 >
 > Your administrator will help to make sure you have access to the correct shared password collections.
 >
@@ -68,7 +68,7 @@
 >
 > To get started, follow these steps:
 >
-> _\[_插入公司首选的[入职流程](onboarding-workflows.md)_]_
+> _\[_&#x63D2;入公司首选的[入职流程](onboarding-workflows.md)_]_
 >
 > Your administrator will help to make sure you have access to the correct shared password collections.
 >

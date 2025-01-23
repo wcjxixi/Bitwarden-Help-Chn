@@ -1,7 +1,7 @@
 # 原生移动 App
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/unassigned-vault-items-moved-to-admin-console/)
+对应的[官方文档地址](https://bitwarden.com/help/native-mobile-apps-release/)
 {% endhint %}
 
 在**将来的**发布中，通过 Apple App Store 和 Google Play Store 下载的 Bitwarden 密码管理器移动 App 将升级为 [iOS 和 Android 原生移动应用程序](https://bitwarden.com/blog/native-mobile-apps/)：

@@ -93,7 +93,7 @@ Bitwarden 浏览器扩展有一个独特的**标签页**视图，它可以自动
 更新登录
 {% endembed %}
 
-如果您是使用[移除个人密码库策略](../organizations/enterprise-policies.md#remove-individual-vault)的组织的成员，选择**保存**将带您进入一个屏幕，您可以在其中选择要将其添加到的[集合](../organizations/collections.md)。否则，您可以选择为项目**选择文件夹...**或在保存之前**编辑**项目。
+如果您是使用[移除个人密码库策略](../organizations/enterprise-policies.md#remove-individual-vault)的组织的成员，选择**保存**将带您进入一个屏幕，您可以在其中选择要将其添加到的[集合](../organizations/collections.md)。否则，您可以选择为项目**选择文件夹...**&#x6216;在保存之前**编辑**项目。
 
 如果您不想看到此横幅，请关闭**选项**菜单中的**询问添加登录**选项。
 
@@ -121,7 +121,7 @@ Bitwarden 浏览器扩展有一个独特的**标签页**视图，它可以自动
 {% endtab %}
 
 {% tab title="Firefox" %}
-在地址栏中输入`about:addons`，然后打开 Bitwarden 扩展。要自定义它在浏览器中的显示_位置_，右键单击 Bitwarden  浏览器扩展图标，然后选择**定制...** 打开一个拖放界面，以让你移动或移除工具栏中的图标。你也可以使用**固定到折叠菜单**选项，将 Bitwarden 固定到折叠（ **»**）菜单中：
+在地址栏中输入`about:addons`，然后打开 Bitwarden 扩展。要自定义它在浏览器中的显&#x793A;_&#x4F4D;置_，右键单击 Bitwarden  浏览器扩展图标，然后选择**定制...** 打开一个拖放界面，以让你移动或移除工具栏中的图标。你也可以使用**固定到折叠菜单**选项，将 Bitwarden 固定到折叠（ **»**）菜单中：
 
 ![Firefox 中的 Pin](../.gitbook/assets/ff-overflowpin.png)
 {% endtab %}

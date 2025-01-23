@@ -70,7 +70,7 @@ https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/l
 
 点击**确定**。
 
-7、返回文件树，选择 **Firefox**。在右侧的设置区域中，**编辑...**并禁用**提供保存登录信息**和**提供保存登录信息（默认）**选项。
+7、返回文件树，选择 **Firefox**。在右侧的设置区域中，**编辑...**&#x5E76;禁用**提供保存登录信息**和**提供保存登录信息（默认）**&#x9009;项。
 
 8、将新配置的 GPO 应用到所需的范围。
 {% endtab %}
@@ -176,7 +176,7 @@ mkdir /etc/opt/chrome/policies/managed
 * `/etc/opt/chrome/policies/managed/managed_preferences.json`
 
 {% hint style="success" %}
-如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Linux)](https://support.google.com/chrome/a/answer/9025926?hl=zh-Hans\&ref\_topic=9025817) 指南。
+如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Linux)](https://support.google.com/chrome/a/answer/9025926?hl=zh-Hans\&ref_topic=9025817) 指南。
 {% endhint %}
 {% endtab %}
 
@@ -276,7 +276,7 @@ mkdir /etc/opt/chrome/policies/managed
 8、使用您的软件分发或 MDM 工具将 Chrome `.dmg` 或 `.pkg` 和配置文件部署到所有托管计算机。
 
 {% hint style="success" %}
-如需更多帮助，请参阅 Google 的ya [Chrome 浏览器快速入门 (Mac)](https://support.google.com/chrome/a/answer/9020580?hl=zh-Hans\&ref\_topic=7650028) 指南。
+如需更多帮助，请参阅 Google 的ya [Chrome 浏览器快速入门 (Mac)](https://support.google.com/chrome/a/answer/9020580?hl=zh-Hans\&ref_topic=7650028) 指南。
 {% endhint %}
 {% endtab %}
 

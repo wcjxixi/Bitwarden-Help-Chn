@@ -1,4 +1,4 @@
-# \*更新到 Password Manager 计划 & 订阅
+# \*更新 Password Manager 计划 & 订阅
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/updates-to-plans/)
@@ -45,23 +45,23 @@
 
 ### 问：何时涨价？ <a href="#q-when-will-the-price-increase-take-place" id="q-when-will-the-price-increase-take-place"></a>
 
-**答：**将于 2023 年 11 月 06 日提价。此次涨价对现有用户没有影响。
+**答：**&#x5C06;于 2023 年 11 月 06 日提价。此次涨价对现有用户没有影响。
 
 ### 问：11 月 06 日有哪些升级？ <a href="#q-what-upgrade-is-happening-on-november-6" id="q-what-upgrade-is-happening-on-november-6"></a>
 
-**答：**所有 2019 Teams 版和 Enterprise 版 Bitwarden Password Manager 订阅都将自动升级到最新的功能集。它们的价格将保持不变。
+**答：**&#x6240;有 2019 Teams 版和 Enterprise 版 Bitwarden Password Manager 订阅都将自动升级到最新的功能集。它们的价格将保持不变。
 
 ### 问：这对新客户有何影响？ <a href="#q-how-will-this-impact-new-customers" id="q-how-will-this-impact-new-customers"></a>
 
-**答：**在 2023 年 11 月 06 日或之后购买 Bitwarden Password Manager Teams 版或 Enterprise 版的新客户将支付当前的列表价格。
+**答：**&#x5728; 2023 年 11 月 06 日或之后购买 Bitwarden Password Manager Teams 版或 Enterprise 版的新客户将支付当前的列表价格。
 
 ### 问：这对现有客户有何影响？ <a href="#q-how-will-this-impact-existing-customers" id="q-how-will-this-impact-existing-customers"></a>
 
-**答：**在 2023 年 11 月 06 日之前购买 Bitwarden Teams 版或 Enterprise 版的现有客户将保持原价。
+**答：**&#x5728; 2023 年 11 月 06 日之前购买 Bitwarden Teams 版或 Enterprise 版的现有客户将保持原价。
 
 ### 问：2019 年 Teams 版和 Enterprise 版计划客户可以获得哪些新功能？ <a href="#q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting" id="q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting"></a>
 
-**答：**客户将以相同的价格获得如下最新功能：
+**答：**&#x5BA2;户将以相同的价格获得如下最新功能：
 
 | Teams 版                                                                                                       | Enterprise 版                                                            |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
@@ -69,8 +69,8 @@
 
 ### 问：作为现有客户，我需要采取任何行动吗？ <a href="#q-as-an-existing-customer-do-i-need-to-take-any-action" id="q-as-an-existing-customer-do-i-need-to-take-any-action"></a>
 
-**答：**不需要。您将继续以最初订购时的价格收到账单，您的订购将自动升级以包含最新功能。
+**答：**&#x4E0D;需要。您将继续以最初订购时的价格收到账单，您的订购将自动升级以包含最新功能。
 
 ### 问：对添加席位有什么影响？ <a href="#q-what-about-when-i-add-seats" id="q-what-about-when-i-add-seats"></a>
 
-**答：**新增席位将以与现有用户相同的价格计费。
+**答：**&#x65B0;增席位将以与现有用户相同的价格计费。

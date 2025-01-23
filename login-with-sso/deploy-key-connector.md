@@ -262,7 +262,7 @@ keyConnectorSettings__rsaKey__awsRegion={Region_Name}
 keyConnectorSettings__rsaKey__awsKeyId={Key_Id}
 ```
 
-[了解如何使用 AWS KMS 创建非对称密钥](https://docs.aws.amazon.com/zh\_cn/kms/latest/developerguide/asymm-create-key.html)
+[了解如何使用 AWS KMS 创建非对称密钥](https://docs.aws.amazon.com/zh_cn/kms/latest/developerguide/asymm-create-key.html)
 
 ### PKCS11 Physical HSM
 
@@ -313,7 +313,7 @@ keyConnectorSettings__rsaKey__pkcs11PrivateKeyId={PrivateKeyId}
 
 5、（如果您还没有）请导航到**策略**界面，然后启用[单一组](../organizations/enterprise-policies.md#single-organization)织和[单点登录验证](../organizations/enterprise-policies.md#single-sign-on-authentication)策略。**两者都需要使用 Key Connector**。
 
-6、导航到**单点登录（SSO）**界面：
+6、导航到**单点登录（SSO）**&#x754C;面：
 
 {% hint style="success" %}
 接下来的几个步骤假设您已经拥有一个使用 [SAML 2.0](saml-2.0-configuration.md) 或 [OIDC](oidc-configuration.md) 的、激活了 [SSO 登录](about-login-with-sso.md)的实施。**如果还没有**，请在继续之前先实施和测试 SSO 登录。

@@ -1,7 +1,7 @@
 # Secrets Manager Beta 版注册
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-beta/)
+~~对应的~~[~~官方文档地址~~](https://bitwarden.com/help/secrets-manager-beta/)
 {% endhint %}
 
 [Bitwarden Secrets Manager](../secrets-manager/secrets-manager-overview.md) 目前作为公开测试程序提供。了解如何[开始使用 Secrets Manager](../secrets-manager/get-started/secrets-manager-quick-start.md)。

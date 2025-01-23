@@ -1,13 +1,13 @@
-# Azure AD SCIM 集成
+# Microsoft Entra ID SCIM 集成
 
-{% hint style="info" %}
-对应的[官方文档地址](https://bitwarden.com/help/azure-ad-scim-integration/)
+{% hint style="success" %}
+对应的[官方文档地址](https://bitwarden.com/help/microsoft-entra-id-scim-integration/)
 {% endhint %}
 
 跨域身份管理系统 (SCIM) 用于在您的 Bitwarden 组织中自动配置和取消配置成员和群组。
 
 {% hint style="info" %}
-SCIM 集成适用于**企业组织**。团队组织或未使用与 SCIM 兼容的身份提供程序的客户可以考虑使用[目录连接器](../directory-connector/directory-connector-cli.md)作为替代的预配方式。
+SCIM 集成适用于**团队和企业组织**。未使用与 SCIM 兼容的身份提供程序的客户可以考虑使用[目录连接器](../../../directory-connector/directory-connector-cli.md)作为替代的预配方式。
 {% endhint %}
 
 本文将帮助您配置与 Azure 的 SCIM 集成。配置涉及同时使用 Bitwarden 网页密码库和 Azure 门户。在进行配置时，我们建议您准备好这两样东西，并按照文档规定的顺序完成这些步骤。
@@ -15,7 +15,7 @@ SCIM 集成适用于**企业组织**。团队组织或未使用与 SCIM 兼容�
 ## 启用 SCIM <a href="#enable-scim" id="enable-scim"></a>
 
 {% hint style="info" %}
-**您是自托管 Bitwarden 吗？**如果是，请在继续操作之前完成[这些步骤为您的服务器启用 SCIM](../self-hosting/self-hosting-scim.md)。
+**您是自托管 Bitwarden 吗？**&#x5982;果是，请在继续操作之前完成[这些步骤为您的服务器启用 SCIM](../../../self-hosting/self-hosting-scim.md)。
 {% endhint %}
 
 要开始您的 SCIM 集成，请打开您组织的**管理** → **SCIM 配置**页面：
@@ -29,7 +29,7 @@ SCIM 配置
 ## 创建一个企业应用程序 <a href="#create-an-enterprise-application" id="create-an-enterprise-application"></a>
 
 {% hint style="success" %}
-如果您的 SSO 登录已在使用此 IdP，请打开现有的企业应用程序并[跳至此步骤](azure-ad-scim-integration.md#enable-provisioning)。否则，继续本部分以创建一个新的应用程序。
+如果您的 SSO 登录已在使用此 IdP，请打开现有的企业应用程序并[跳至此步骤](microsoft-entra-id-scim-integration.md#enable-provisioning)。否则，继续本部分以创建一个新的应用程序。
 {% endhint %}
 
 在 Azure 门户中，导航到 **Azure Active Directory** 并从导航菜单中选择 **Enterprise applications**：
@@ -62,8 +62,8 @@ SCIM 配置
 
 1. 选择 **Get started** 按钮。
 2. 从 **Provisioning Mode** 下拉菜单中选择 **Automatic**。
-3. 在 **Tenant URL** 字段中输入您的 SCIM URL（[了解更多](azure-ad-scim-integration.md#enable-scim)）。
-4. 在 **Secret Token** 字段中输入您的 SCIM API 密钥（[了解更多](azure-ad-scim-integration.md#enable-scim)）。
+3. 在 **Tenant URL** 字段中输入您的 SCIM URL（[了解更多](microsoft-entra-id-scim-integration.md#enable-scim)）。
+4. 在 **Secret Token** 字段中输入您的 SCIM API 密钥（[了解更多](microsoft-entra-id-scim-integration.md#enable-scim)）。
 5. 选择 **Test Connection** 按钮。
 6. 如果您的连接测试成功，请选择 **Save** 按钮。
 
@@ -95,7 +95,7 @@ Bitwarden 使用标准的 SCIM v2 属性名称，尽管这些名称可能与 Azu
 在 **Settings** 下拉菜单下，选择：
 
 * 发生故障时是否发送电子邮件通知，如果是，发送到哪个地址（_推荐_）。
-* 是 **sync only assigned users and groups** 还是 **sync all users and groups**。如果您选择 sync all users and groups，请跳过[下一步](azure-ad-scim-integration.md#assign-users-and-groups)。
+* 是 **sync only assigned users and groups** 还是 **sync all users and groups**。如果您选择 sync all users and groups，请跳过[下一步](microsoft-entra-id-scim-integration.md#assign-users-and-groups)。
 
 ## 分配用户和群组 <a href="#assign-users-and-groups" id="assign-users-and-groups"></a>
 
@@ -117,7 +117,7 @@ Bitwarden 使用标准的 SCIM v2 属性名称，尽管这些名称可能与 Azu
 
 ## 完成用户入职 <a href="#finish-user-onboarding" id="finish-user-onboarding"></a>
 
-现在您的用户已配置完毕，他们将收到加入组织的邀请。指导您的用户[接受邀请](../organizations/user-management.md#accept)，并在接受邀请后，[确认他们加入组织](../organizations/user-management.md#confirm)。
+现在您的用户已配置完毕，他们将收到加入组织的邀请。指导您的用户[接受邀请](../../../organizations/user-management.md#accept)，并在接受邀请后，[确认他们加入组织](../../../organizations/user-management.md#confirm)。
 
 {% hint style="info" %}
 邀请 → 接受 → 确认工作流程有利于解密密钥的握手，以允许用户安全地访问组织密码库数据。

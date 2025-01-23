@@ -6,7 +6,7 @@
 
 Bitwarden 为您的密码库使用 [AES-CBC](encryption.md#aes-cbc) 256 位加密方式，并使用 [PBKDF2](encryption.md#pbkdf2) SHA-256 来派生加密密钥。
 
-在将任何内容发送到云服务器进行存储之前，Bitwarden **始终**会在本地设备上加密和/或哈希数据。 **Bitwarden 服务器仅用于存储已加密的数据。**有关更多信息，请参阅[存储](storage.md)。
+在将任何内容发送到云服务器进行存储之前，Bitwarden **始终**会在本地设备上加密和/或哈希数据。 **Bitwarden 服务器仅用于存储已加密的数据。**&#x6709;关更多信息，请参阅[存储](storage.md)。
 
 密码库数据只能使用从您的主密码派生的密钥来解密。Bitwarden 是一种零知识的解决方案，这意味着您是唯一能够获得您的密钥并能够解密您的密码库数据的一方。
 
@@ -18,13 +18,13 @@ Bitwarden 为您的密码库使用 [AES-CBC](encryption.md#aes-cbc) 256 位加�
 
 ## AES-CBC
 
-[AES](https://en.wikipedia.org/wiki/Advanced\_Encryption\_Standard)-CBC（[Cipher Block Chaining](https://en.wikipedia.org/wiki/Block\_cipher\_mode\_of\_operation#Cipher\_block\_chaining\_\(CBC\))）是一种加密技术的标准，被美国政府和世界各地的其他政府机构用于保护顶级机密数据。正确的实施加上复杂的加密密钥（您的主密码），AES 被认为是坚不可摧的。
+[AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)-CBC（[Cipher Block Chaining](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_block_chaining_\(CBC\))）是一种加密技术的标准，被美国政府和世界各地的其他政府机构用于保护顶级机密数据。正确的实施加上复杂的加密密钥（您的主密码），AES 被认为是坚不可摧的。
 
 ## PBKDF2
 
 [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) SHA-256 用于从您的主密码派生出加密密钥，您也可以选择 [Argon2](encryption.md#argon2id) 作为替代方案。Bitwarden 使用您的电子邮件地址将您的主密码在**本地**进行[盐化和哈希](https://www.okta.com/blog/2019/03/what-are-salted-passwords-and-password-hashing/)处理，然后再传输到我们的服务器。Bitwarden 服务器收到哈希的密码后，会使用一个加密安全的随机值再次对其进行盐化，并再次对其哈希，然后存储在我们的数据库中。
 
-PBKDF2 使用的默认迭代数是客户端上的 600,001 次迭代（可从您的账户设置中配置客户端迭代数），当存储到我们的服务器上时会再进行 100,000 次迭代（默认情况下总计为 700,001 次迭代）。组织密钥使用 [RSA-2048](https://en.wikipedia.org/wiki/RSA\_numbers#RSA-2048) 共享。
+PBKDF2 使用的默认迭代数是客户端上的 600,001 次迭代（可从您的账户设置中配置客户端迭代数），当存储到我们的服务器上时会再进行 100,000 次迭代（默认情况下总计为 700,001 次迭代）。组织密钥使用 [RSA-2048](https://en.wikipedia.org/wiki/RSA_numbers#RSA-2048) 共享。
 
 {% hint style="success" %}
 Bitwarden 使用的默认迭代数在 2023 年 2 月增加。在此之后创建的账户将使用 600,00，但是如果您在此之前创建了账户，则应增加迭代次数。可以在以下部分中找到这样做的说明。
@@ -44,9 +44,9 @@ Bitwarden 使用的默认迭代数在 2023 年 2 月增加。在此之后创建�
 
 ## Argon2id
 
-Argon2 是 2015 年[密码哈希竞赛](https://www.password-hashing.net/)的获胜者，可作为 PBKDF2 的替代品（[了解更多](kdf-algorithms.md)）。该算法共有三个版本，Bitwarden 已经实现了 [OWASP 推荐](https://cheatsheetseries.owasp.org/cheatsheets/Password\_Storage\_Cheat\_Sheet.html)的 Argon2id。Argon2id 是其他版本的混合体，结合了数据相关和数据无关的内存访问，这使其具有 Argon2i 对侧通道缓存定时攻击的一些抵抗力以及 Argon2d 对 GPU 破解攻击的大部分抵抗力（[来源](https://github.com/p-h-c/phc-winner-argon2)）。
+Argon2 是 2015 年[密码哈希竞赛](https://www.password-hashing.net/)的获胜者，可作为 PBKDF2 的替代品（[了解更多](kdf-algorithms.md)）。该算法共有三个版本，Bitwarden 已经实现了 [OWASP 推荐](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)的 Argon2id。Argon2id 是其他版本的混合体，结合了数据相关和数据无关的内存访问，这使其具有 Argon2i 对侧通道缓存定时攻击的一些抵抗力以及 Argon2d 对 GPU 破解攻击的大部分抵抗力（[来源](https://github.com/p-h-c/phc-winner-argon2)）。
 
-默认情况下，Bitwarden 设置为分配 64 MiB 内存，迭代 3 次，并跨 4 个线程执行此操作。这些默认值高于[当前的 OWASP 建议](https://cheatsheetseries.owasp.org/cheatsheets/Password\_Storage\_Cheat\_Sheet.html#introduction)，但如果您要更改您的设置，这里有一些提示：
+默认情况下，Bitwarden 设置为分配 64 MiB 内存，迭代 3 次，并跨 4 个线程执行此操作。这些默认值高于[当前的 OWASP 建议](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#introduction)，但如果您要更改您的设置，这里有一些提示：
 
 * 增加 **KDF 迭代**将线性增加运行时间。
 * 您可以使用的 **KDF 并行**数量取决于您机器的 CPU。一般来说，最大。并行数 = 核心数量 x 2。

@@ -18,14 +18,14 @@
 
 2、解压缩 `.zip` 并将其文件（`bwdc` 和 `keytar.node`）移动到您的  `$PATH` 中的 `/usr/local/bin` 或其他目录。请注意，`keytar.node` **必须**与主 `bwdc` 可执行文件位于同一目录中。
 
-**对于 Linux：**如果尚未安装，请使用您的软件包管理器安装 `libsecret`：
+**对于 Linux：**&#x5982;果尚未安装，请使用您的软件包管理器安装 `libsecret`：
 
 ```shell
 apt-get install libsecret-1-0
 brew install libsecret
 ```
 
-**对于 Windows：**Windows 用户可以[将 `bwdc.exe` 添加到当前用户的 `PATH` 中](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)。
+**对于 Windows：**&#x57;indows 用户可以[将 `bwdc.exe` 添加到当前用户的 `PATH` 中](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)。
 
 3、运行下面的命令来验证 `bwdc` 命令在您的终端上是否可以正常工作：
 
@@ -131,7 +131,7 @@ bwdc sync
 
 ### last-sync <a href="#last-sync" id="last-sync"></a>
 
-`last-sync` 命令用于返回上一次对用户或群组执行同步操作的 [ISO 8601](https://en.wikipedia.org/wiki/ISO\_8601) 时间戳。您必须将 `<object>` 指定为 `users` 或 `groups` 才能运行此命令：
+`last-sync` 命令用于返回上一次对用户或群组执行同步操作的 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) 时间戳。您必须将 `<object>` 指定为 `users` 或 `groups` 才能运行此命令：
 
 ```shell
 bwdc last-sync <object>

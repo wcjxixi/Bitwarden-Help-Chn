@@ -35,7 +35,7 @@ Bitwarden 在许多设备上提供了应用程序，包括浏览器扩展、移�
 [创建一个 Bitwarden 帐户](https://vault.bitwarden.com/#/register)，并确保您挑选了一个强大而难忘的[主密码](../your-vault/your-master-password.md)。我们甚至建议您写下您的主密码，并将其存储在安全的地方。
 
 {% hint style="success" %}
-**不要忘记您的主密码！**Bitwarden 是一种零知识的解决方案，这意味着 Bitwarden 团队以及 Bitwarden 系统本身对你的主密码一无所知，也没有办法找回或重置你的主密码。
+**不要忘记您的主密码！**&#x42;itwarden 是一种零知识的解决方案，这意味着 Bitwarden 团队以及 Bitwarden 系统本身对你的主密码一无所知，也没有办法找回或重置你的主密码。
 {% endhint %}
 
 创建帐户后，登录到[网页密码库](../getting-started/getting-started-webvault.md)并验证帐户的电子邮件地址以解锁对所有功能的访问权限：

@@ -314,7 +314,7 @@ bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --outp
 bw get template (item|item.field|item.login|item.login.uri|item.card|item.identity|item.securenote|folder|collection|item-collections|org-collection)
 ```
 
-虽然你_可以_使用 `get template` 将格式输出到你的屏幕上，但最常见的用法是将输出的数据输送到  `bw create` 操作中，使用 [jq 之类的命令行 JSON 处理器](https://stedolan.github.io/jq/)和 `bw encode` 来处理从模板获取的值，例如：
+虽然&#x4F60;_&#x53EF;&#x4EE5;_&#x4F7F;用 `get template` 将格式输出到你的屏幕上，但最常见的用法是将输出的数据输送到  `bw create` 操作中，使用 [jq 之类的命令行 JSON 处理器](https://stedolan.github.io/jq/)和 `bw encode` 来处理从模板获取的值，例如：
 
 ```batch
 bw get template folder | jq '.name="My First Folder"' | bw encode | bw create folder
@@ -371,7 +371,7 @@ bw list (items|folders|collections|organizations|org-collections|org-members) [o
 bw list items --folderid null --collectionid null
 ```
 
-此命令将返回_不属于_任何文件夹或集合的项目。
+此命令将返&#x56DE;_&#x4E0D;属&#x4E8E;_&#x4EFB;何文件夹或集合的项目。
 
 另外，您可以使用 `--search <search-term>` 来搜索明确的对象。将筛选器和搜索结合在一个命令中将执行逻辑 AND 运算，例如：
 
@@ -454,7 +454,7 @@ bw list org-collections --organizationid 4016326f-98b6-42ff-b9fc-ac63014988f5
 ```
 
 {% hint style="success" %}
-您可以同时 `bw list`  `collections` 和 `org-collections`。`bw list collections`  将列出_所有_集合，而与它们所属的组织无关。`bw list org-collections` 将_仅_列出属于使用 `--organizationid` 指定的组织的集合。
+您可以同时 `bw list`  `collections` 和 `org-collections`。`bw list collections`  将列&#x51FA;_&#x6240;&#x6709;_&#x96C6;合，而与它们所属的组织无关。`bw list org-collections` &#x5C06;_&#x4EC5;_&#x5217;出属于使用 `--organizationid` 指定的组织的集合。
 {% endhint %}
 
 ### move
@@ -585,7 +585,7 @@ bw config server --key-connector <url>
 bw sync
 ```
 
-您可以传递 `--last` 选项，以仅返回上次执行同步的时间戳（[ISO 8601](https://zh.wikipedia.org/wiki/ISO\_8601)）。
+您可以传递 `--last` 选项，以仅返回上次执行同步的时间戳（[ISO 8601](https://zh.wikipedia.org/wiki/ISO_8601)）。
 
 {% hint style="success" %}
 重要的是要知道 `sync` **仅从服务器执行拉取操作**。任何时候您更改密码库时（例如 `create`、`edit`、`delete`），数据都会自动推送到服务器。
@@ -698,7 +698,7 @@ shbw update
 
 ### status
 
-`status` 命令用于返回 Bitwarden CLI 的状态信息，包括[已配置](password-manager-cli.md#config)的服务器 URL、最后一次同步的时间戳（[ISO 8601](https://zh.wikipedia.org/wiki/ISO\_8601)）、用户电子邮件和 ID，以及密码库状态。
+`status` 命令用于返回 Bitwarden CLI 的状态信息，包括[已配置](password-manager-cli.md#config)的服务器 URL、最后一次同步的时间戳（[ISO 8601](https://zh.wikipedia.org/wiki/ISO_8601)）、用户电子邮件和 ID，以及密码库状态。
 
 ```batch
 bw status
@@ -788,7 +788,7 @@ zinit creinstall ~/.local/share/zsh/completions
 
 ### 使用自签名证书 <a href="#using-self-signed-certificates" id="using-self-signed-certificates"></a>
 
-如果您的自托管 Bitwarden 服务器公开为自签名 TLS 证书，请指定 Node.js 环境变量 [`NODE_EXTRA_CA_CERTS`](https://nodejs.org/api/cli.html#cli\_node\_extra\_ca\_certs\_file)：
+如果您的自托管 Bitwarden 服务器公开为自签名 TLS 证书，请指定 Node.js 环境变量 [`NODE_EXTRA_CA_CERTS`](https://nodejs.org/api/cli.html#cli_node_extra_ca_certs_file)：
 
 <img src="../../.gitbook/assets/linux-24.png" alt="" data-size="line"><img src="../../.gitbook/assets/apple-24.png" alt="" data-size="line">Bash：
 

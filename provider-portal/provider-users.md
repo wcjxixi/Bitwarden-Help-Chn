@@ -30,7 +30,7 @@
 5、单击**保存**以邀请这些指定的用户加入提供商。
 
 {% hint style="info" %}
-**邀请将在 5 天后过期**，届时需要重新邀请用户。通过选择每个用户并使用 **⚙️**齿轮下拉菜单以**重新发送邀请**来批量重新邀请用户**。**
+**邀请将在 5 天后过期**，届时需要重新邀请用户。通过选择每个用户并使用 **⚙️**齿轮下拉菜单以**重新发送邀请**来批量重新邀请用&#x6237;**。**
 {% endhint %}
 
 ### 接受 <a href="#accept" id="accept"></a>
@@ -76,7 +76,7 @@
 ## 提供商用户的类型 <a href="#provider-user-types" id="provider-user-types"></a>
 
 {% hint style="success" %}
-**管理客户组织的用户？**组织有一组不同于提供商用户类型的[用户类型和访问控制](../admin-console/user-management/member-roles-and-permissions.md)。
+**管理客户组织的用户？**&#x7EC4;织有一组不同于提供商用户类型的[用户类型和访问控制](../admin-console/user-management/member-roles-and-permissions.md)。
 {% endhint %}
 
 Bitwarden 提供商用户可以被授予两种用户类型之一来管理他们对提供商的访问权限。**两种用户类型都能够完全管理任何客户组织**。Bitwarden 强烈建议您为第二个用户提供供应商管理员角色以进行故障转移。

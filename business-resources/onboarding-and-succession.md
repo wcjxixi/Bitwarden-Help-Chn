@@ -122,7 +122,7 @@ Bitwarden 使用了一种企业友好的方法来实现大规模的共享。用�
 
 ### 离职用户 <a href="#offboarding-users" id="offboarding-users"></a>
 
-在 Bitwarden，我们认为共享凭证是高效且安全地完成工作的一个重要方面。我们也认识到，从_技术上_来说，一旦一个凭证被共享，接收者就有可能保留它。出于这个原因，使用适当的[基于角色的访问控制](onboarding-and-succession.md#comprehensive-role-based-access-controls)和[实施策略](onboarding-and-succession.md#enterprise-policies)的安全入职，在促进安全离职方面起着重要作用。
+在 Bitwarden，我们认为共享凭证是高效且安全地完成工作的一个重要方面。我们也认识到，&#x4ECE;_&#x6280;术&#x4E0A;_&#x6765;说，一旦一个凭证被共享，接收者就有可能保留它。出于这个原因，使用适当的[基于角色的访问控制](onboarding-and-succession.md#comprehensive-role-based-access-controls)和[实施策略](onboarding-and-succession.md#enterprise-policies)的安全入职，在促进安全离职方面起着重要作用。
 
 用户从 Bitwarden 离职涉及到从组织中移除用户，就像入职一样，可以[直接从网页密码库](onboarding-and-succession.md#adding-users)或[使用目录连接器](onboarding-and-succession.md#directory-connector)以自动方式完成。
 
@@ -230,12 +230,12 @@ Bitwarden 组织包括了对[事件日志](../admin-console/reporting/event-logs
 
 ### 问：如果员工已经有 Bitwarden 账户，是否可以将其附加到组织中，这样他们就不需要另一个 Bitwarden 账户了？ <a href="#q-if-an-employee-already-has-a-bitwarden-account-can-we-attach-it-to-the-organization-so-they-dont-n" id="q-if-an-employee-already-has-a-bitwarden-account-can-we-attach-it-to-the-organization-so-they-dont-n"></a>
 
-**答：**是的！可以。一些客户建议在将附加用户到组织之前，这些用户将 Bitwarden 密码库附加到他们的公司电子邮件中。这种选择是特定于公司的，任何一种方法都可以。
+**答：**&#x662F;的！可以。一些客户建议在将附加用户到组织之前，这些用户将 Bitwarden 密码库附加到他们的公司电子邮件中。这种选择是特定于公司的，任何一种方法都可以。
 
 ### 问：当员工离职时，我们是否可以将他们的帐户从组织中分离出来，这样他们就无法再访问公司凭据，也不会丢失个人凭据？ <a href="#q-when-an-employee-leaves-can-we-detach-their-account-from-the-organization-so-that-they-dont-have-a" id="q-when-an-employee-leaves-can-we-detach-their-account-from-the-organization-so-that-they-dont-have-a"></a>
 
-**答：**可以！这正是[离职](onboarding-and-succession.md#offboarding-users)所需要做的事情。
+**答：**&#x53EF;以！这正是[离职](onboarding-and-succession.md#offboarding-users)所需要做的事情。
 
 ### 问：我们能否防止员工将公司组织的凭据复制到他们的个人密码库中？ <a href="#q-can-we-prevent-employees-from-duplicating-credentials-from-the-company-organization-to-their-perso" id="q-can-we-prevent-employees-from-duplicating-credentials-from-the-company-organization-to-their-perso"></a>
 
-**答：**可以！使用我们[全面的基于角色的访问控制套件](../admin-console/user-management/member-roles-and-permissions.md#access-control)，您可以将凭据设为**只读**以防止复制副本。
+**答：**&#x53EF;以！使用我们[全面的基于角色的访问控制套件](../admin-console/user-management/member-roles-and-permissions.md#access-control)，您可以将凭据设为**只读**以防止复制副本。

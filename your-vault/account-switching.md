@@ -31,7 +31,7 @@
 登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每个账户的密码库的当前状态（已锁定或已解锁）。如果您注销其中一个账户，它将从列表中移除，除非[密码库超时](vault-timeout-options.md)设置为注销。
 
 {% hint style="info" %}
-大多数密码库操作，包括添加新项目或文件夹、同步、自动填充以及[密码库超时](vault-timeout-options.md)和解锁（[PIN](unlock-with-pin.md) 或[生物识别](unlocking-with-biometrics.md)）等设置仅适用于_活动_账户，您可以通过应用程序顶部菜单栏中显示的图标来确定活动账户。
+大多数密码库操作，包括添加新项目或文件夹、同步、自动填充以及[密码库超时](vault-timeout-options.md)和解锁（[PIN](unlock-with-pin.md) 或[生物识别](unlocking-with-biometrics.md)）等设置仅适用&#x4E8E;_&#x6D3B;&#x52A8;_&#x8D26;户，您可以通过应用程序顶部菜单栏中显示的图标来确定活动账户。
 
 但某些**选项**，例如[主题](../miscellaneous/change-app-theme.md)，则适用于**所有账户**。
 {% endhint %}
@@ -67,7 +67,7 @@ Android 账户切换
 登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每个账户的密码库的当前状态（已锁定或已解锁）。如果您注销其中一个账户，它将从列表中移除。
 
 {% hint style="info" %}
-大多数密码库操作，包括添加新项目或文件夹、同步、搜索以及[密码库超时](vault-timeout-options.md)和解锁（[PIN](unlock-with-pin.md) 或[生物识别](unlocking-with-biometrics.md)）等设置仅适用于_活动_账户，您可以通过显示在应用程序右上角中的电子邮件来确定活动账户。
+大多数密码库操作，包括添加新项目或文件夹、同步、搜索以及[密码库超时](vault-timeout-options.md)和解锁（[PIN](unlock-with-pin.md) 或[生物识别](unlocking-with-biometrics.md)）等设置仅适用&#x4E8E;_&#x6D3B;&#x52A8;_&#x8D26;户，您可以通过显示在应用程序右上角中的电子邮件来确定活动账户。
 
 但某些**偏好设置**，则适用于**所有账户**。
 {% endhint %}

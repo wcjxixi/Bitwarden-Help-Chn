@@ -1,7 +1,7 @@
 # 成员角色和权限
 
 {% hint style="success" %}
-可以管理对应的[官方文档地址](https://bitwarden.com/help/article/user-types-access-control/)
+对应的[官方文档地址](https://bitwarden.com/help/article/user-types-access-control/)
 {% endhint %}
 
 Bitwarden 组织的成员可以被授予各种角色和集合权限。您可以在[邀请用户加入您的组织](../../organizations/user-management.md)时设置角色和集合权限，或者随时从您组织的**成员**界面使用 **☷选项**菜单设置角色和集合权限：

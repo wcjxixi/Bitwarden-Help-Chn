@@ -6,14 +6,14 @@
 
 > **\[译者注]**：
 >
-> * [ISMS](https://en.wikipedia.org/wiki/Information\_security\_management)：Information Security Management System（信息安全管理体系）
+> * [ISMS](https://en.wikipedia.org/wiki/Information_security_management)：Information Security Management System（信息安全管理体系）
 > * [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)：Password-Based Key Derivation Function 2（基于密码的密钥派生函数 2）
 > * [HKDF](https://en.wikipedia.org/wiki/HKDF)：HMAC-based Extract-and-Expand Key Derivation Function（基于 HMAC 的提取和扩展密钥派生函数）
 > * [CSPRNG](https://en.wikipedia.org/wiki/CSPRNG)：Cryptographically Secure Pseudorandom Number Generator（加密安全伪随机数生成器）
-> * [HSTS](https://en.wikipedia.org/wiki/HTTP\_Strict\_Transport\_Security)：HTTP Strict Transport Security（HTTP 严格传输安全）
-> * [SIEM](https://en.wikipedia.org/wiki/Security\_information\_and\_event\_management)：Security Information and Event Management（安全信息和事件管理）
-> * [XSS](https://en.wikipedia.org/wiki/Cross-site\_scripting)：Cross-Site Scripting（跨站点脚本）
-> * [CSRF](https://en.wikipedia.org/wiki/Cross-site\_request\_forgery)：Cross-Site Request Forgery（跨站点请求伪造）
+> * [HSTS](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)：HTTP Strict Transport Security（HTTP 严格传输安全）
+> * [SIEM](https://en.wikipedia.org/wiki/Security_information_and_event_management)：Security Information and Event Management（安全信息和事件管理）
+> * [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting)：Cross-Site Scripting（跨站点脚本）
+> * [CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery)：Cross-Site Request Forgery（跨站点请求伪造）
 
 {% hint style="success" %}
 请阅读下面的全文，或[下载 PDF](https://bitwarden.com/images/resources/security-white-paper-2021.pdf)（英文）。
@@ -75,13 +75,13 @@ Bitwarden 采用以下关键的安全措施来保护 Bitwarden 中存储的数�
 
 **安全密码共享**：Bitwarden 支持在整个组织中与用户安全地共享和管理敏感数据。非对称和对称加密的组合可以在共享敏感信息时对其进行保护。
 
-**开源和可用源码**：所有 Bitwarden 软件产品的源代码都托管在 [GitHub](https://github.com/bitwarden) 上，我们欢迎大家对 Bitwarden 代码库进行审查、审计和贡献。Bitwarden 源代码由著名的第三方安全审计公司以及独立的安全研究人员进行审计。此外，[Bitwarden 漏洞披露计划](https://hackerone.com/bitwarden?type=team\&view\_policy=true)还得到了 HackerOne 黑客社区的帮助，以使 Bitwarden 更加安全。
+**开源和可用源码**：所有 Bitwarden 软件产品的源代码都托管在 [GitHub](https://github.com/bitwarden) 上，我们欢迎大家对 Bitwarden 代码库进行审查、审计和贡献。Bitwarden 源代码由著名的第三方安全审计公司以及独立的安全研究人员进行审计。此外，[Bitwarden 漏洞披露计划](https://hackerone.com/bitwarden?type=team\&view_policy=true)还得到了 HackerOne 黑客社区的帮助，以使 Bitwarden 更加安全。
 
 **隐私设计**：Bitwarden 将你所有的登录信息存储在一个加密的密码库中，并在你所有的设备上同步。由于它在离开你的设备之前就已经完全加密了，因此只有你才能访问你的数据。即使 Bitwarden 团队也无法读取您的数据（即使我们想读取）。
 
 **安全审计**：每年至少对应用程序和/或平台进行一次第三方安全审查和评估。
 
-**合规：**Bitwarden 符合 AICPA SOC2 Type 2 /数据隐私框架、GDPR 和 CCPA 法规。[了解更多](compliance-audits-and-certifications.md)。
+**合规：**&#x42;itwarden 符合 AICPA SOC2 Type 2 /数据隐私框架、GDPR 和 CCPA 法规。[了解更多](compliance-audits-and-certifications.md)。
 
 ### 为用户提供的安全工具 <a href="#security-tools-for-users" id="security-tools-for-users"></a>
 
@@ -284,7 +284,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 4. **设备公钥**使用用户的账户加密密钥进行加密，并将结果值作为**用户密钥加密的公钥**发送到服务器。
 5. **设备私钥**使用第一个**设备密钥**进行加密，并将所得值作为**设备密钥加密的私钥**发送到服务器。
 
-最重要的是，在启动发起时**，公钥加密的用户密钥**和**设备密钥加密的私钥**将从服务器发送到客户端。
+最重要的是，在启动发起&#x65F6;**，公钥加密的用户密钥**和**设备密钥加密的私钥**将从服务器发送到客户端。
 
 如果用户需要轮换其账户加密密钥，则将使用**用户密钥加密的公钥**。
 {% endtab %}
@@ -409,7 +409,7 @@ Bitwarden 支持如下方式的两步登录：
 
 您可以启用多种两步登录方式。如果您启用了多种两步登录方式，则登录时显示的默认方式的优先顺序如下：FIDO U2F > YubiKey > Duo > 验证器应用 > Email。不过，您可以在登录时手动切换并使用任何一种方式。
 
-**非常重要的一点是，千万不要丢失两步登录恢复代码。**Bitwarden 提供的账户保护安全模式不支持用户丢失主密码或两步登录恢复代码。如果您在账户上启用了两步登录，并丢失了两步登录恢复代码，您将无法登录您的 Bitwarden 账户。
+**非常重要的一点是，千万不要丢失两步登录恢复代码。**&#x42;itwarden 提供的账户保护安全模式不支持用户丢失主密码或两步登录恢复代码。如果您在账户上启用了两步登录，并丢失了两步登录恢复代码，您将无法登录您的 Bitwarden 账户。
 
 {% hint style="info" %}
 2021 年中期，Bitwarden 为企业计划推出了[账户恢复](../organizations/admin-password-reset.md)功能。使用此选项，用户和组织可以选择实施一个允许管理员和所有者为用户重置密码的新策略。
@@ -586,7 +586,7 @@ Bitwarden 使用微软团队管理的服务，在微软 Azure 云中安全地处
 
 微软的团队在两个层面上管理操作系统补丁，即物理服务器和运行 Azure 应用服务资源的客户虚拟机 (VM)。两者每月都会更新，这与每月的[微软周二补丁计划](https://docs.microsoft.com/zh-cn/security-updates/)保持一致。这些更新会自动应用，以保证 Azure 服务 SLA 的高可用性。
 
-阅读更多内容：[Azure 应用服务中的补丁](https://docs.microsoft.com/zh-cn/azure/app-service/overview-patch-os-runtime)或[应用服务 SLA](https://azure.microsoft.com/zh-cn/support/legal/sla/app-service/v1\_0/)。
+阅读更多内容：[Azure 应用服务中的补丁](https://docs.microsoft.com/zh-cn/azure/app-service/overview-patch-os-runtime)或[应用服务 SLA](https://azure.microsoft.com/zh-cn/support/legal/sla/app-service/v1_0/)。
 
 有关更新如何应用的详细信息，请阅读[这里](https://azure.github.io/AppService/2018/01/18/Demystifying-the-magic-behind-App-Service-OS-updates.html)。
 
@@ -675,7 +675,7 @@ Bitwarden 定期进行漏洞评估。我们使用第三方工具和外部服务�
 
 Bitwarden 使用 Cloudflare 用于在边缘提供 WAF、更好的 DDoS 防护、分布式可用性和缓存。Bitwarden 还使用 Cloudflare 代理，以为我们的服务和网站获得更好的网络安全及性能。
 
-Bitwarden 是一个开源软件。我们所有的源代码都托管在 GitHub 上，任何人都可以免费审查。Bitwarden 的源代码由著名的第三方安全审计公司以及独立的安全研究人员进行审计。此外，[Bitwarden 漏洞披露计划](https://hackerone.com/bitwarden?type=team\&view\_policy=true)还得到了 HackerOne 黑客社区的帮助，以使 Bitwarden 更加安全。
+Bitwarden 是一个开源软件。我们所有的源代码都托管在 GitHub 上，任何人都可以免费审查。Bitwarden 的源代码由著名的第三方安全审计公司以及独立的安全研究人员进行审计。此外，[Bitwarden 漏洞披露计划](https://hackerone.com/bitwarden?type=team\&view_policy=true)还得到了 HackerOne 黑客社区的帮助，以使 Bitwarden 更加安全。
 
 #### 审计性和合规性 <a href="#auditability-and-compliance" id="auditability-and-compliance"></a>
 
@@ -740,4 +740,4 @@ Bitwarden 是一个开源的密码管理器。我们所有的源代码都托管�
 
 Bitwarden 的安全与合规计划基于 ISO27001 信息安全管理体系 (ISMS)。我们定义了管理我们的安全政策和流程的政策，并不断更新我们的安全计划，以符合适用的法律、行业和监管要求，以便我们在我们的[服务条款协议](https://bitwarden.com/terms/)下向您提供服务。
 
-如果您有任何疑问，请[联系我们](https://github.com/bitwarden/help/blob/master/\_articles/security/www.bitwarden.com/contact)。
+如果您有任何疑问，请[联系我们](https://github.com/bitwarden/help/blob/master/_articles/security/www.bitwarden.com/contact)。

@@ -26,7 +26,7 @@ Bitwarden 组织允许任何规模的团队安全地共享密码、信用卡等�
 
 ## 建立群组和集合 <a href="#build-groups-and-collections" id="build-groups-and-collections"></a>
 
-您的保密码库中有了项目后，就可以设置集合和群组以确保正_合适_的用户可以访问_合适_的凭据。每个组织有差别，但这里[有一些提示可以帮助您入门](../organizations/collections.md#using-collections)。
+您的保密码库中有了项目后，就可以设置集合和群组以确保&#x6B63;_&#x5408;&#x9002;_&#x7684;用户可以访&#x95EE;_&#x5408;&#x9002;_&#x7684;凭据。每个组织有差别，但这里[有一些提示可以帮助您入门](../organizations/collections.md#using-collections)。
 
 ## 邀请你的成员 <a href="#invite-your-team" id="invite-your-team"></a>
 

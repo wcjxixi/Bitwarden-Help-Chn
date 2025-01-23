@@ -9,7 +9,7 @@
 配置需要在 Bitwarden 网页密码库和 OneLogin 门户中同时进行。在您继续进行操作时，我们建议您随时准备好并按照记录的顺序完成步骤。
 
 {% hint style="success" %}
-**是 SSO 专业人士？**请跳过本文中的说明，然后下载配置示例的截图以与您自己的配置进行比较。
+**是 SSO 专业人士？**&#x8BF7;跳过本文中的说明，然后下载配置示例的截图以与您自己的配置进行比较。
 
 **⬇️**[下载示例](https://assets.ctfassets.net/7rncvj1f8mw7/mQMTlMcvpyBPzgAkgqDvg/ace51cc7a46379048140042282e6b24f/saml-onelogin-sample.zip)
 {% endhint %}
