@@ -100,12 +100,12 @@ Bitwarden 网页密码库
 
 好消息！如果您将用户名和密码保存在网络浏览器或其他密码管理器中，则无需为每次登录重复以上过程。使用我们的专业导入指南之一来帮助您将数据直接传输到 Bitwarden：
 
-* [LastPass](../import-export/import-guides/import-your-data-from-lastpass.md)
-* [1Password](../import-export/import-guides/import-your-data-from-1password.md)
+* [LastPass](../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)
+* [1Password](../password-manager/import-and-export/import-guides/import-data-from-1password.md)
 * [Dashlane](../import-export/import-guides/Import-data-from-dashlane.md)
-* [macOS & Safari](../import-export/import-guides/import-data-from-macos-safari.md)
-* [Google Chrome](../import-export/import-guides/import-your-data-from-google-chrome.md)
-* [Firefox](../import-export/import-guides/import-your-data-from-firefox.md)
+* [macOS & Safari](../password-manager/import-and-export/import-guides/import-data-from-macos-and-safari.md)
+* [Google Chrome](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
+* [Firefox](../password-manager/import-and-export/import-guides/import-data-from-firefox.md)
 
 ## 保护您的密码库 <a href="#secure-your-vault" id="secure-your-vault"></a>
 

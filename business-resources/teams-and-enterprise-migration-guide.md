@@ -26,7 +26,7 @@
 
 ## 第 1 步：导出数据 <a href="#step-1-export-your-data" id="step-1-export-your-data"></a>
 
-从另一个密码管理器导出数据，对于每个解决方案，都是不相同的，并且在某些情况下可能有点棘手。请使用我们的[导入和导出指南](../import-export/)来获取帮助，例如，从 [Lastpass](../import-export/import-guides/import-your-data-from-lastpass.md#export-from-lastpass) 或 [1Password](../import-export/import-guides/import-your-data-from-1password.md#export-your-1-password-1-pif-logins) 导出。
+从另一个密码管理器导出数据，对于每个解决方案，都是不相同的，并且在某些情况下可能有点棘手。请使用我们的[导入和导出指南](../import-export/)来获取帮助，例如，从 [Lastpass](../password-manager/import-and-export/import-guides/import-data-from-lastpass.md#export-from-lastpass) 或 [1Password](../password-manager/import-and-export/import-guides/import-data-from-1password.md#export-your-1-password-1-pif-logins) 导出。
 
 收集完整的数据导出可能需要将共享文件夹或项目分配给单个用户进行导出，或者在具有适当权限的用户之间执行多个导出。此外，导出的数据可能包含个人数据以及共享/组织数据，所以在导入 Bitwarden 之前，请确保从导出文件中移除个人项目。
 
@@ -127,7 +127,7 @@ Bitwarden 使团队和组织能够以一种可扩展的方式轻松、安全地�
 
 集合以多种方式来组织安全项目，包括但不限于：业务功能、群组分配、应用程序访问级别，甚至安全协议。集合与共享文件夹的功能相同，允许用户群组之间的共享和访问控制的一致性。
 
-来自其他密码管理器的共享文件夹可以通过使用[这里](https://bitwarden.com/help/files/bitwarden\_export\_org.csv)的组织导入模板并将共享文件夹的名称放在 `Collections` 栏中，从而将其作为集合导入到 Bitwarden 中。
+来自其他密码管理器的共享文件夹可以通过使用[这里](https://bitwarden.com/help/files/bitwarden_export_org.csv)的组织导入模板并将共享文件夹的名称放在 `Collections` 栏中，从而将其作为集合导入到 Bitwarden 中。
 
 导出示例：
 

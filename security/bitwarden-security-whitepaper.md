@@ -476,7 +476,7 @@ Bitwarden 还使用 Azure 透明数据加密 (TDE) 通过对数据库、关联�
 
 您可以轻松地将数据从 40 多种不同的服务（包括所有流行的密码管理器应用程序）导入 Bitwarden。[Bitwarden 帮助中心](../import-export/import-data-to-your-vault.md)记录了受支持的应用程序的完整列表以及一些其他信息，包括将数据导入 Bitwarden 的疑难解答步骤。
 
-如果要从 LastPass.com 网页密码库导出您的站点信息，请参考此帮助说明中的具体信息：[从 LastPass 导入数据](../import-export/import-guides/import-your-data-from-lastpass.md)。
+如果要从 LastPass.com 网页密码库导出您的站点信息，请参考此帮助说明中的具体信息：[从 LastPass 导入数据](../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)。
 
 ### 用户之间共享数据 <a href="#sharing-data-between-users" id="sharing-data-between-users"></a>
 

@@ -26,7 +26,7 @@
 * `androidapp://` 引用 Android 应用程序的包 ID 或名称（例如：`androidapp://com.twitter.android`）
 
 {% hint style="success" %}
-为 Android 应用程序获取正确的 URI 的一种简单方法是访问 Google Play 商店中的应用程序页面，点击共享按钮，然后将复制的链接粘贴到您方便阅读的地方。此链接看起来类似于 `https://play.google.com/store/apps/details?id=com.twitter.android`，`id=` 之后的值就是您的 URI，在本示例中为 `com.twitter.android`。[了解更多](../password-manager/auto-fill/blocking-autofill.md#android-app-uris)。
+为 Android 应用程序获取正确的 URI 的一种简单方法是访问 Google Play 商店中的应用程序页面，点击共享按钮，然后将复制的链接粘贴到您方便阅读的地方。此链接看起来类似于 `https://play.google.com/store/apps/details?id=com.twitter.android`，`id=` 之后的值就是您的 URI，在本示例中为 `com.twitter.android`。[了解更多](../password-manager/auto-fill/auto-fill-blocked-uris.md#android-app-uris)。
 {% endhint %}
 
 ## 匹配检测选项 <a href="#match-detection-options" id="match-detection-options"></a>

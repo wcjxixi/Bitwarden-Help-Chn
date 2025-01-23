@@ -1,7 +1,7 @@
-# 从 Dashlane 导入数据
+# 从 Dashlane 导入
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/import-from-dashlane/)
+对应的[官方文档地址](https://bitwarden.com/help/import-from-dashlane/)
 {% endhint %}
 
 使用这篇文章帮助您从 Dashlane 导出数据并导入到 Bitwarden。Dashlane 数据导出主要以 `.csv` 文件的形式提供，可从 Web 应用程序下载，其可以直接导入到 Bitwarden。如果您从旧版 Dashlane 应用程序导出 `.json`，也可以将其导入 Bitwarden。

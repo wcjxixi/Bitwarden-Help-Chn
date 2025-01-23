@@ -9,7 +9,7 @@
 每一种目录服务器类型的可用同步选项和筛选器语法都不同。请参阅以下文章之一中的**配置同步选项**和**指定同步筛选器**部分以获取帮助：
 
 * [与 AD 或 LDAP 同步](sync-with-active-directory-or-ldap.md)
-* [与 Azure AD 同步](sync-with-azure-ad.md)
+* [与 Azure AD 同步](../admin-console/user-management/directory-connector/sync-with-microsoft-entra-id.md)
 * [与 G Suite（Google）同步](sync-with-google-workspace.md)
 * [与 Okta 同步](sync-with-okta.md)
 * [与 OneLogin 同步](sync-with-onelogin.md)

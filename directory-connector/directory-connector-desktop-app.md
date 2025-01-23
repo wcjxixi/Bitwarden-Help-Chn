@@ -1,4 +1,4 @@
-# 目录连接器桌面应用
+# 目录连接器桌面 App
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/directory-sync-desktop/)
@@ -18,10 +18,10 @@
 
 1、从我们的 [GitHub 发布页面](https://github.com/bitwarden/directory-connector/releases)或使用以下官方链接之一下载最新版本的应用程序：
 
-* ​![](https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-M2XqgFI6fAcTD0lL3MZ%2F-M2lgIMT8p-h\_KydT0nq%2F-M2lmjhiYHSJ5-sYyb6Z%2Fos-windows-24.png?alt=media\&token=0d9e6b96-ec16-4dc0-a39a-a78fdfb0e33a)[Windows Installer（.exe）](https://vault.bitwarden.com/download/?app=connector\&platform=windows)​
-* ​​![](https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-M2XqgFI6fAcTD0lL3MZ%2F-M2lgIMT8p-h\_KydT0nq%2F-M2lmjhiYHSJ5-sYyb6Z%2Fos-windows-24.png?alt=media\&token=0d9e6b96-ec16-4dc0-a39a-a78fdfb0e33a)[Windows Portable（.exe）](https://vault.bitwarden.com/download/?app=connector\&platform=windows\&variant=portable)​
-* ​​![](https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-M2XqgFI6fAcTD0lL3MZ%2F-M2lgIMT8p-h\_KydT0nq%2F-M2lmd9QDMlX1Sn3aHOo%2Fapple-24.png?alt=media\&token=e90fd6d0-5ca3-43a7-9818-441b86ae2147)[macOS（.dmg）](https://vault.bitwarden.com/download/?app=connector\&platform=macos)​
-* ​​![](https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-M2XqgFI6fAcTD0lL3MZ%2F-M2lgIMT8p-h\_KydT0nq%2F-M2lmhr5ffWYeEG74jXf%2Flinux-24.png?alt=media\&token=26403b17-eb24-4721-8c42-b6fb70164cc2)[Linux（.AppImage）](https://vault.bitwarden.com/download/?app=connector\&platform=linux)
+* ​![](https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-M2XqgFI6fAcTD0lL3MZ%2F-M2lgIMT8p-h_KydT0nq%2F-M2lmjhiYHSJ5-sYyb6Z%2Fos-windows-24.png?alt=media\&token=0d9e6b96-ec16-4dc0-a39a-a78fdfb0e33a)[Windows Installer（.exe）](https://vault.bitwarden.com/download/?app=connector\&platform=windows)​
+* ​​![](https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-M2XqgFI6fAcTD0lL3MZ%2F-M2lgIMT8p-h_KydT0nq%2F-M2lmjhiYHSJ5-sYyb6Z%2Fos-windows-24.png?alt=media\&token=0d9e6b96-ec16-4dc0-a39a-a78fdfb0e33a)[Windows Portable（.exe）](https://vault.bitwarden.com/download/?app=connector\&platform=windows\&variant=portable)​
+* ​​![](https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-M2XqgFI6fAcTD0lL3MZ%2F-M2lgIMT8p-h_KydT0nq%2F-M2lmd9QDMlX1Sn3aHOo%2Fapple-24.png?alt=media\&token=e90fd6d0-5ca3-43a7-9818-441b86ae2147)[macOS（.dmg）](https://vault.bitwarden.com/download/?app=connector\&platform=macos)​
+* ​​![](https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-M2XqgFI6fAcTD0lL3MZ%2F-M2lgIMT8p-h_KydT0nq%2F-M2lmhr5ffWYeEG74jXf%2Flinux-24.png?alt=media\&token=26403b17-eb24-4721-8c42-b6fb70164cc2)[Linux（.AppImage）](https://vault.bitwarden.com/download/?app=connector\&platform=linux)
 
 2、如果您使用的是 Bitwarden 的自托管版本，请在登录前更改 Directory Connector 使用的服务器 URL：
 
@@ -34,7 +34,7 @@
 4、在 **⚙️Setting** 选项卡上，连接到您的目录并配置同步选项。此过程将根据所使用的目录而有所不同，请参阅以下文章之一以获取说明：
 
 * [与 AD 或 LDAP 同步](sync-with-active-directory-or-ldap.md)
-* [与 Azure AD 同步](sync-with-azure-ad.md)
+* [与 Azure AD 同步](../admin-console/user-management/directory-connector/sync-with-microsoft-entra-id.md)
 * [与 G Suite（Google）同步](sync-with-google-workspace.md)
 * [与 Okta 同步](sync-with-okta.md)
 * [与 OneLogin 同步](sync-with-onelogin.md)

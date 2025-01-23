@@ -24,7 +24,7 @@ Bitwarden Directory Connector（Bitwarden 目录连接器）应用程序用于�
 
 * [Active Directory](sync-with-active-directory-or-ldap.md)
 * [任何基于 LDAP 的目录](sync-with-active-directory-or-ldap.md)
-* [Azure Active Directory](sync-with-azure-ad.md)
+* [Azure Active Directory](../admin-console/user-management/directory-connector/sync-with-microsoft-entra-id.md)
 * [G Suite（Google）](sync-with-google-workspace.md)
 * [Okta](sync-with-okta.md)
 * [OneLogin](sync-with-onelogin.md)

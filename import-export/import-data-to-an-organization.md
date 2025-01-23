@@ -8,10 +8,10 @@ Bitwarden 提供了一个数据导入工具，可以轻松地将任何密码管�
 
 关于支持的导入格式的完整列表，请参阅 [Bitwarden 支持导入哪些文件格式？](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)，或者使用这些文章用于从最流行的解决方案导入：
 
-* [从 LastPass 导入](import-guides/import-your-data-from-lastpass.md)
-* [从1Password 导入](import-guides/import-your-data-from-1password.md)
-* [从 Firefox 导入](import-guides/import-your-data-from-firefox.md)
-* [从 Google Chrome 导入](import-guides/import-your-data-from-google-chrome.md)
+* [从 LastPass 导入](../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)
+* [从1Password 导入](../password-manager/import-and-export/import-guides/import-data-from-1password.md)
+* [从 Firefox 导入](../password-manager/import-and-export/import-guides/import-data-from-firefox.md)
+* [从 Google Chrome 导入](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
 
 {% hint style="info" %}
 **上面列出的文章**描述如何导入到个人 Bitwarden 密码库。虽然从每一个解决方案中导出的指导是适当的，但重要的是要知道，导入到组织的过程略有不同，并在[下面进行了记录](import-data-to-an-organization.md#import-to-your-organization)。

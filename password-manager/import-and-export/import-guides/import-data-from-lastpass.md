@@ -1,14 +1,14 @@
-# 从 LastPass 导入数据
+# 从 LastPass 导入
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/import-from-lastpass/)
+对应的[官方文档地址](https://bitwarden.com/help/import-from-lastpass/)
 {% endhint %}
 
 使用这篇文章帮助您从 LastPass 导出数据并将其导入 Bitwarden 中。
 
 ## 导入到 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
-数据可以直接从 LastPass 导入，也可以使用 LastPass [导出的文件](import-your-data-from-lastpass.md#export-from-lastpass)导入。如果您是使用 LastPass SSO 的团队成员，LastPass 管理员将需要完成一个简短的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-your-data-from-lastpass.md#direct-import-with-sso)）。在所有情况下，数据在发送到服务器存储之前会在本地进行[加密](../../security/encryption.md)。
+数据可以直接从 LastPass 导入，也可以使用 LastPass [导出的文件](import-data-from-lastpass.md#export-from-lastpass)导入。如果您是使用 LastPass SSO 的团队成员，LastPass 管理员将需要完成一个简短的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-data-from-lastpass.md#direct-import-with-sso)）。在所有情况下，数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption.md)。
 
 {% hint style="info" %}
 请参阅这篇 [LastPass 支持文章](https://support.lastpass.com/help/export-your-passwords-and-secure-notes-lp040004)，了解 LastPass 支持和不支持哪些导出内容。请注意，Bitwarden 不支持导入附件。
@@ -17,7 +17,7 @@
 {% tabs %}
 {% tab title="直接导入" %}
 {% hint style="info" %}
-如果您是使用 LastPass SSO 的团队成员，LastPass 管理员需要先完成一个简单的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-your-data-from-lastpass.md#direct-import-with-sso)）。
+如果您是使用 LastPass SSO 的团队成员，LastPass 管理员需要先完成一个简单的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-data-from-lastpass.md#direct-import-with-sso)）。
 {% endhint %}
 
 可以使用 Password Manager 浏览器扩展和桌面应用程序从您的 LastPass 账户直接导入数据，而无需您上传文件。要进行直接导入：
@@ -27,7 +27,7 @@
 3. 从下拉菜单中完成以下字段：
    1. **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
    2. **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
-   3. [**文件格式**](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择 LastPass。
+   3. [**文件格式**](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择 LastPass。
    4. 在 LastPass 说明框中，选择**直接从 LastPass 导入**选项。
    5. 输入您的 **LastPass 电子邮件地址**。
 4. 选择**导入数据**按钮以触发导入。
@@ -39,7 +39,7 @@
 {% endtab %}
 
 {% tab title="文件导入" %}
-从大多数密码管理器应用程序导出的文件可以导入到 Bitwarden（了解如何[从 LastPass 导出文件](import-your-data-from-lastpass.md#export-from-lastpass)）。在本节中，我们将重点介绍使用 Web 应用程序进行导入：
+从大多数密码管理器应用程序导出的文件可以导入到 Bitwarden（了解如何[从 LastPass 导出文件](import-data-from-lastpass.md#export-from-lastpass)）。在本节中，我们将重点介绍使用 Web 应用程序进行导入：
 
 1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
 
@@ -51,7 +51,7 @@
 
 * **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
 * **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
-* [**文件格式**](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
+* [**文件格式**](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 5、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
@@ -63,7 +63,7 @@
 
 7、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 
-[文件附件](../../your-vault/file-attachments.md)、[Send](../../bitwarden-send/about-send.md)、回收站以及密码历史记录等附加项目需要手动上传到您的密码库。
+[文件附件](../../../your-vault/file-attachments.md)、[Send](../../../bitwarden-send/about-send.md)、回收站以及密码历史记录等附加项目需要手动上传到您的密码库。
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -84,7 +84,7 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 {% endtabs %}
 
 {% hint style="info" %}
-Bitwarden 提供了一个独立的导入器工具，可帮助您将数据从 LastPass 迁移到 Bitwarden。请参阅此处获取 [Bitwarden 导入器工具](../../password-manager/import-and-export/bitwarden-importer-tool.md)入门指南。如果您希望使用 `.csv` 导入，此页面将指导您完成手动下载和上传过程。
+Bitwarden 提供了一个独立的导入器工具，可帮助您将数据从 LastPass 迁移到 Bitwarden。请参阅此处获取 [Bitwarden 导入器工具](../bitwarden-importer-tool.md)入门指南。如果您希望使用 `.csv` 导入，此页面将指导您完成手动下载和上传过程。
 {% endhint %}
 
 ## 从 LastPass 导出 <a href="#export-from-lastpass" id="export-from-lastpass"></a>
@@ -92,7 +92,7 @@ Bitwarden 提供了一个独立的导入器工具，可帮助您将数据从 Las
 您可以从 LastPass 的网页密码库或从 LastPass 浏览器扩展导出数据：
 
 {% hint style="success" %}
-您可以跳过此步骤并立即开始使用[直接导入选项](import-your-data-from-lastpass.md#import-to-bitwarden)导入到 Bitwarden。
+您可以跳过此步骤并立即开始使用[直接导入选项](import-data-from-lastpass.md#import-to-bitwarden)导入到 Bitwarden。
 {% endhint %}
 
 {% tabs %}
@@ -195,13 +195,13 @@ Web 密码库中的密码错误
 
 ### 最大集合错误 <a href="#maximum-collections-error" id="maximum-collections-error"></a>
 
-当将 Lastpass 的 `.csv` 导出文件导入到[免费组织](../../plans-and-pricing/password-manager/about-bitwarden-plans.md)时，您可能会看到如下错误：
+当将 Lastpass 的 `.csv` 导出文件导入到[免费组织](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md)时，您可能会看到如下错误：
 
 {% embed url="https://bitwarden.com/_gatsby/image/1fc86e561312a1d2ee8810743571dfd9/7d9c8827861df387d48095fa03565c23/Screen%20Shot%202022-11-02%20at%209.51.25%20AM.webp?eu=dadc03b7e099a9835d3df38a697b6060e93d52f8fc546583346cb1af4ffa9e8075f7480320c028b12f6c5bd881b316ef65c77d3048bdd48fc8bf1ff3bb37f90a01850bee36e67507507e91adb7f754103ec71f58abdb8c4ce32e78cbfaeaea214e055f35fb3eeed0afea6020f39d7167aea9a16c3b91ed22e14456098c1f6ef818efc896456be79ada19ae9cbdc04394c5bd2e5f35c4fb33247f44160cee2ce9f3bb01733c2a140f329aad5a94609eb36d4e692057581c9434788500a503529bbbbfce5fd97879fca9c82c7084acffc48213b22f77f9cd22c6f346644e53fb&a=w%3D831%26h%3D327%26fm%3Dwebp%26q%3D75&cd=2022-11-29T13%3A10%3A06.522Z" %}
 免费组织最大集合错误
 {% endembed %}
 
-当 Lastpass 导出包含 3 个或更多 `grouping` 值时，就会发生该错误。`grouping` 字段中的值被 Bitwarden 解释为[集合](../../organizations/collections.md)，但[免费组织](../../plans-and-pricing/password-manager/about-bitwarden-plans.md)限制为仅两个集合。例如，下面的 `.csv` 将导致该错误：
+当 Lastpass 导出包含 3 个或更多 `grouping` 值时，就会发生该错误。`grouping` 字段中的值被 Bitwarden 解释为[集合](../../../organizations/collections.md)，但[免费组织](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md)限制为仅两个集合。例如，下面的 `.csv` 将导致该错误：
 
 ```
 url,username,password,totp,extra,name,grouping,fav

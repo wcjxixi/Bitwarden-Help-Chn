@@ -1,62 +1,42 @@
-# 从 Firefox 导入数据
+# 从 Google Chrome 导入
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/import-from-firefox/)
+对应的[官方文档地址](https://bitwarden.com/help/import-from-chrome/)
 {% endhint %}
 
-使用这篇文章帮助您从 Firefox 导出数据并将其导入 Bitwarden 中。
+使用这篇文章帮助您从 Google Chrome 导出数据并将其导入 Bitwarden 中。
 
-## 从 Firefox 导出 <a href="#export-from-firefox" id="export-from-firefox"></a>
+{% hint style="success" %}
+本文中的步骤也适用于任何基于 Chromium 的浏览器，包括 Opera、Microsoft Edge (Chromium)、Brave 和 Vivaldi。
+{% endhint %}
 
-从 Firefox 导出可能会有所不同，具体取决于您所使用的版本，或者如果您使用的是基于 Firefox 的浏览器（例如 Tor 浏览器或 Waterfox）：
+## 从 Chrome 中导出 <a href="#export-from-chrome" id="export-from-chrome"></a>
+
+您可以从桌面浏览器或移动浏览器导出 Google Chrome 的数据：
 
 {% tabs %}
-{% tab title="最新版本" %}
-要从最新版 Firefox 导出您的登录信息：
+{% tab title="桌面端 Chrome" %}
+要从桌面端 Chrome 导出密码：
 
-1、使用地址栏导航到 `about:logins`。
-
-2、选择右上方的 **⋯** 菜单按钮，并从下拉列表中选择**导出登录信息...**。
-
-将提示您指定一个位置来保存导出的登录信息。
-
-Firefox 将登录信息导出为 `.csv` 文件。
+1. 使用地址栏导航至 `chrome://password-manager/settings`。
+2. 在左侧，选择**设置**。定位到**导出密码**，然后点击**下载文件**。可能会提示您输入计算机的密码以进行授权。
+3. 指定一个保存导出文件的位置，并验证格式是否为 **comma-separated values (CSV)**。
+4. 选择**保存**以完成从 Chrome 的导出。
 {% endtab %}
 
-{% tab title="旧版本" %}
-某些旧版本的 Firefox 不支持本地导出。完成以下步骤以使用 FF Password Exporter 导出：
+{% tab title="移动端 Chrome" %}
+要从移动设备 Chrome 导出密码：
 
-1、[下载](https://github.com/kspearrin/ff-password-exporter)，安装然后打开 FF Password Exporter。
-
-2、从检测到的 Firefox 用户配置中或从指定的自定义配置目录中，选择一个用户配置。如果您为用户配置设置了主密码，请输入该密码。
-
-![](../../.gitbook/assets/image.png)
-
-3、选择**导出密码**按钮。
-
-4、选择 `.csv` 文件格式，并将文件保存到设备中。
-{% endtab %}
-
-{% tab title="基于 Firefox" %}
-某些基于 Firefox 的浏览器提供了不同于 vanilla Firefox 的登录导出位置。如果从**最新版本**导出不成功，请尝试以下方法：
-
-1、使用地址栏导航到 `about:preferences#privacy`。
-
-2、点击**保存登录信息**按钮。
-
-3、选择右上方的 **⋯** 菜单按钮，并从下拉列表中选择**导出登录信息**。
-
-将提示您指定一个位置来保存导出的登录信息。
-
-大多数基于 Firefox 的浏览器将登录信息导出为 `.csv` 文件。
+1. 点击 **⋯** 菜单按钮并点击**密码管理器**。
+2. 点击**设置**。
+3. 点击**导出密码**。可能会提示您输入计算机的密码以进行授权。
+4. 指定一个位置以保存您的导出文件。
 {% endtab %}
 {% endtabs %}
 
 ## 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
-
-
-**数据必须从网页密码库或 CLI 导入到 Bitwarden**。数据在发送到服务器存储之前会在本地进行[加密](../../security/encryption.md)。
+**数据必须从网页密码库或 CLI 导入到 Bitwarden**。数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption.md)。
 
 {% tabs %}
 {% tab title="网页端程序" %}
@@ -72,7 +52,7 @@ Firefox 将登录信息导出为 `.csv` 文件。
 
 * **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
 * **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
-* [**文件格式**](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
+* [**文件格式**](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 5、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
@@ -84,7 +64,7 @@ Firefox 将登录信息导出为 `.csv` 文件。
 
 7、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 
-[文件附件](../../your-vault/file-attachments.md)、[Send](../../bitwarden-send/about-send.md)、回收站以及密码历史记录等附加项目需要手动上传到您的密码库。
+[文件附件](../../../your-vault/file-attachments.md)、[Send](../../../bitwarden-send/about-send.md)、回收站以及密码历史记录等附加项目需要手动上传到您的密码库。
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -96,7 +76,7 @@ Firefox 将登录信息导出为 `.csv` 文件。
 
 * **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
 * **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
-* [**文件格式**](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
+* [**文件格式**](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 3、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
@@ -118,7 +98,7 @@ Firefox 将登录信息导出为 `.csv` 文件。
 
 * **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
 * **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
-* [**文件格式**](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
+* [**文件格式**](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 3、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
@@ -134,13 +114,13 @@ Firefox 将登录信息导出为 `.csv` 文件。
 {% tab title="CLI" %}
 要通过 CLI 将数据导入您的密码库，请使用以下命令：
 
-```batch
+```shell
 bw import <format> <path>
 ```
 
 `bw import` 命令需要格式（使用 `bw import --formats` 获取格式列表）和路径，例如：
 
-```batch
+```shell
 bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ```
 

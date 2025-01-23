@@ -26,7 +26,7 @@
 
 ![Chrme 已保存的密码](../.gitbook/assets/chrome-delete-passwords.png)
 
-如果你还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../import-export/import-guides/import-your-data-from-google-chrome.md#export-from-chrome)，为将来导入 Bitwarden 做准备。导出后，你应该从浏览器的存储中删除这些密码。
+如果你还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md#export-from-chrome)，为将来导入 Bitwarden 做准备。导出后，你应该从浏览器的存储中删除这些密码。
 {% endtab %}
 
 {% tab title="Firefox" %}
@@ -38,7 +38,7 @@
 
 ![Firefox 已保存的登录信息](../.gitbook/assets/firefox-delete.png)
 
-如果你还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../import-export/import-guides/import-your-data-from-firefox.md)，以便将来导入 Bitwarden。导出后，你应该从 Firefox 中 **🗑️移除**这些密码。
+如果你还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../password-manager/import-and-export/import-guides/import-data-from-firefox.md)，以便将来导入 Bitwarden。导出后，你应该从 Firefox 中 **🗑️移除**这些密码。
 {% endtab %}
 
 {% tab title="Safari" %}

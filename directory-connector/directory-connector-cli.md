@@ -40,7 +40,7 @@ bwdc --help
 可用的**同步选项**取决于使用的目录类型，因此请参考以下文章之一，以获取可供您使用的选项列表：
 
 * [与 AD 或 LDAP 同步](sync-with-active-directory-or-ldap.md)
-* [与 Azure AD 同步](sync-with-azure-ad.md)
+* [与 Azure AD 同步](../admin-console/user-management/directory-connector/sync-with-microsoft-entra-id.md)
 * [与 G Suite（Google）同步](sync-with-google-workspace.md)
 * [与 Okta 同步](sync-with-okta.md)
 * [与 OneLogin 同步](sync-with-onelogin.md)

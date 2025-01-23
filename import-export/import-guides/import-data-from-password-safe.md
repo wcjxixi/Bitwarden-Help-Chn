@@ -1,7 +1,7 @@
-# 从 Password Safe 导入数据
+# 从 Password Safe 导入
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/import-from-passwordsafe/)
+对应的[官方文档地址](https://bitwarden.com/help/import-from-passwordsafe/)
 {% endhint %}
 
 使用这篇文章帮助您从 Password Safe 导出数据并将其导入 Bitwarden 中。 Password Safe (V8) 目前仅支持导出为 `.csv` 文件，旧版本还支持 `.xml`。
