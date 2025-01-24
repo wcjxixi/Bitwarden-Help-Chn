@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/updating-on-premise/)
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="warning" %}
 请注意，自托管服务器的发行会比云服务器的发行滞后几天。。
 {% endhint %}
 

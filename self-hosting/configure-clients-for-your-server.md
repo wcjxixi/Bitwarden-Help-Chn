@@ -1,10 +1,10 @@
-# 集中式配置客户端
+# 为您的服务器配置客户端
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/configure-clients/)
 {% endhint %}
 
-在业务环境中操作自托管的 Bitwarden 服务器时，管理员可能希望在使用端点管理平台部署给用户之前，集中配置客户端应用程序设置（特别是服务器 URL）。
+在业务环境中操作自托管的 Bitwarden 服务器时，管理员可能希望先集中配置客户端应用程序的设置（尤其是服务器 URL），然后再通过端点管理平台部署给用户。设置会在安装客户端应用程序时被应用。 如果您使用的是 [Bitwarden Cloud EU 服务器](../security/server-geographies.md)，这些流程可能也会有所帮助。
 
 对于每一种客户端应用程序，操作过程会有所不同：
 
