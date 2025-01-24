@@ -1,25 +1,25 @@
-# 两步登录-验证器
+# 两步登录 - 验证器
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/setup-two-step-login-authenticator/)
 {% endhint %}
 
-第三方验证器应用程序（例如 [Authy](https://authy.com/)，[Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) 或 [FreeOTP](https://freeotp.github.io/)）方式的两步登录对于所有 Bitwarden 用户是免费的。
+第三方验证器 App（例如 [Authy](https://authy.com/)，[Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) 或 [FreeOTP](https://freeotp.github.io/)）方式的两步登录对于所有 Bitwarden 用户是免费的。
 
 {% hint style="info" %}
-某些身份验证器应用程序（例如 Google 身份验证器）不会自动备份您的 2FA 令牌以方便迁移到新的移动设备。在这些情况下，您应该手动保存每个令牌的身份验证器恢复代码。
+某些身份验证器 App（例如 Google 身份验证器）不会自动备份您的 2FA 令牌以方便迁移到新的移动设备。在这些情况下，您应该手动保存每个令牌的身份验证器恢复代码。
 
 其他应用程序如 Authy 等，支持跨设备备份和同步。在这些情况下，请务必设置一个强大的备份密码并将其记录在您的 Bitwarden 密码库中。
 {% endhint %}
 
 ## 设置验证器 <a href="#setup-an-authenticator" id="setup-an-authenticator"></a>
 
-完成以下步骤以启用验证器应用程序方式的两步登录：
+完成以下步骤以启用验证器 App 方式的两步登录：
 
 {% hint style="warning" %}
-**丢失对验证器应用程序的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
+**丢失对两步登录设备的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
 
-启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。
+启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden 导出来备份密码库数据。
 {% endhint %}
 
 1、登录您的[网页密码库](https://vault.bitwarden.com/)。

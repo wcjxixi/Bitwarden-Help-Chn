@@ -1,7 +1,7 @@
-# 两步登录-FIDO2 WebAuthn
+# 两步登录 - FIDO2 WebAuthn 通行密钥
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/setup-two-step-login-u2f/)
+对应的[官方文档地址](https://bitwarden.com/help/setup-two-step-login-fido/)
 {% endhint %}
 
 > **\[译者注]**：
@@ -16,7 +16,7 @@
 **\[译者注]**：2023.9.0 之前，FIDO2 WebAuthn 方式的两步登录适用于高级用户，包括付费组织（家庭、团队或企业）的成员，不适用于免费用户。
 {% endhint %}
 
-可以使用任何经过 FIDO2 WebAuthn 认证的验证器，包括 [YubiKey](https://www.yubico.com/)、[SoloKeys](https://solokeys.com/)、[Google Titan](https://store.google.com/product/titan\_security\_key)、[Nitrokey](https://www.nitrokey.com/) 等安全钥匙，以及 Windows Hello 和 Touch ID 等本机生物识别选项。
+可以使用任何经过 FIDO2 WebAuthn 认证的验证器，包括 [YubiKey](https://www.yubico.com/)、[SoloKeys](https://solokeys.com/)、[Google Titan](https://store.google.com/product/titan_security_key)、[Nitrokey](https://www.nitrokey.com/) 等安全钥匙，以及 Windows Hello 和 Touch ID 等本机生物识别选项。
 
 {% hint style="success" %}
 已存在的 FIDO U2F 安全钥匙仍将可用，其在两步登录 → 管理 FIDO2 WebAuthn 对话框中被标记为（**迁移自 FIDO**）。
