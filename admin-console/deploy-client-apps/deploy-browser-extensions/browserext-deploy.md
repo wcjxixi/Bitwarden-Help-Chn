@@ -1,7 +1,7 @@
-# 部署浏览器扩展到托管设备
+# =使用 GPO、Linux 策略和 .plist 文件部署浏览器扩展
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/browserext-deploy/)
+对应的[官方文档地址](https://bitwarden.com/help/browserext-deploy/)
 {% endhint %}
 
 在商业环境中操作 Bitwarden 时，管理员可能希望使用端点管理平台或组策略自动向用户部署 Bitwarden 浏览器扩展。

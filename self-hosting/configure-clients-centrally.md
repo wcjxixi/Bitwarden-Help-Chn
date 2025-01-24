@@ -62,7 +62,7 @@
 ```
 
 {% hint style="info" %}
-如果您打算使用 Chrome 或 Chromium Web Store 版本的 Bitwarden，则可以在分发托管策略时按照[这些说明](../organizations/deploy-browser-extension-to-managed-devices.md#linux)在终端用户计算机上强制安装 Bitwarden。您可以跳过重叠的步骤，例如创建所需的目录。
+如果您打算使用 Chrome 或 Chromium Web Store 版本的 Bitwarden，则可以在分发托管策略时按照[这些说明](../admin-console/deploy-client-apps/deploy-browser-extensions/browserext-deploy.md#linux)在终端用户计算机上强制安装 Bitwarden。您可以跳过重叠的步骤，例如创建所需的目录。
 {% endhint %}
 
 3、由于您需要将这些文件部署到用户的计算机上，我们建议确保只有管理员可以在 `/policies` 目录中写入文件。
@@ -104,7 +104,7 @@
 * 值名称：`events`
 
 {% hint style="info" %}
-您还可以使用 GPO 强制安装浏览器扩展。[了解更多](../organizations/deploy-browser-extension-to-managed-devices.md#windows)。
+您还可以使用 GPO 强制安装浏览器扩展。[了解更多](../admin-console/deploy-client-apps/deploy-browser-extensions/browserext-deploy.md#windows)。
 {% endhint %}
 {% endtab %}
 
@@ -162,7 +162,7 @@
 3、将 `.plist` 文件转换为 `.mobileconfig` 配置文件。
 
 {% hint style="info" %}
-如果您打算使用 Chrome 或 Chromium Web Store 版本的 Bitwarden，你可以按照[这些说明](../organizations/deploy-browser-extension-to-managed-devices.md#macos)，通过创建另一个可以在下一步分发的配置文件，将 Bitwarden 强制安装在终端用户计算机上。
+如果您打算使用 Chrome 或 Chromium Web Store 版本的 Bitwarden，你可以按照[这些说明](../admin-console/deploy-client-apps/deploy-browser-extensions/browserext-deploy.md#macos)，通过创建另一个可以在下一步分发的配置文件，将 Bitwarden 强制安装在终端用户计算机上。
 {% endhint %}
 
 4、使用您首选的软件分发或 MDM 工具，将以下内容部署到用户的计算机：
