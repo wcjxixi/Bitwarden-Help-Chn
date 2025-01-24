@@ -48,19 +48,19 @@ SAML 2.0 配置
 
 从这里开始，实施将因提供程序而异。跳转到我们的特定**实施指南**之一，以帮助完成配置过程：
 
-| 提供程序         | 指南                                                                             |
-| ------------ | ------------------------------------------------------------------------------ |
-| AD FS        | [AD FS 实施指南](implementation-guides/ad-fs-saml-implementation.md)               |
-| Auth0        | [Auth0 实施指南](implementation-guides/auth0-saml-configuration.md)                |
-| AWS          | [AWS 实施指南](implementation-guides/aws-saml-implementation.md)                   |
-| Azure        | [Azure 实施指南](implementation-guides/azure-saml-implementation.md)               |
-| Duo          | [Duo 实施指南](implementation-guides/duo-saml-implementation.md)                   |
-| Google       | [Google 实施指南](implementation-guides/google-saml-implementation.md)             |
-| JumpCloud    | [JumpCloud 实施指南](implementation-guides/jumpcloud-saml-implementation.md)       |
-| Keycloak     | [Keycloak 实施指南](implementation-guides/keycloak-saml-implementation-1.md)       |
-| Okta         | [Okta 实施指南](implementation-guides/okta-saml-implementation.md)                 |
-| OneLogin     | [OneLogin 实施指南](implementation-guides/onelogin-saml-implementation.md)         |
-| PingFederate | [PingFederate 实施指南](implementation-guides/pingfederate-saml-implementation.md) |
+| 提供程序         | 指南                                                                                                            |
+| ------------ | ------------------------------------------------------------------------------------------------------------- |
+| AD FS        | [AD FS 实施指南](implementation-guides/ad-fs-saml-implementation.md)                                              |
+| Auth0        | [Auth0 实施指南](implementation-guides/auth0-saml-configuration.md)                                               |
+| AWS          | [AWS 实施指南](implementation-guides/aws-saml-implementation.md)                                                  |
+| Azure        | [Azure 实施指南](../admin-console/login-with-sso/implementation-guides/microsoft-entra-id-saml-implementation.md) |
+| Duo          | [Duo 实施指南](implementation-guides/duo-saml-implementation.md)                                                  |
+| Google       | [Google 实施指南](implementation-guides/google-saml-implementation.md)                                            |
+| JumpCloud    | [JumpCloud 实施指南](implementation-guides/jumpcloud-saml-implementation.md)                                      |
+| Keycloak     | [Keycloak 实施指南](implementation-guides/keycloak-saml-implementation-1.md)                                      |
+| Okta         | [Okta 实施指南](implementation-guides/okta-saml-implementation.md)                                                |
+| OneLogin     | [OneLogin 实施指南](implementation-guides/onelogin-saml-implementation.md)                                        |
+| PingFederate | [PingFederate 实施指南](implementation-guides/pingfederate-saml-implementation.md)                                |
 
 ### 配置参考资料 <a href="#configuration-reference-materials" id="configuration-reference-materials"></a>
 
