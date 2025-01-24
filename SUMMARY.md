@@ -173,6 +173,8 @@
     * [账户恢复](organizations/admin-password-reset.md)
   * [导入 & 导出](admin-console/import-and-export/README.md)
     * [导入数据到组织](import-export/import-data-to-an-organization.md)
+    * [导出密码库数据](admin-console/import-and-export/export-vault-data.md)
+    * [调整 Bitwarden .csv 或 .json](admin-console/import-and-export/condition-a-bitwarden-.csv-or-.json.md)
   * [SSO 登录](login-with-sso/README.md)
     * [关于 SSO 登录](login-with-sso/about-login-with-sso.md)
     * [SAML 2.0 配置](login-with-sso/saml-2.0-configuration.md)
