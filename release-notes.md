@@ -62,6 +62,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 * **更多自动填充自定义选项**：浏览器扩展现在具有更多选项来自定义您的自动填充体验，包括选择项目卡片而不是「**填充**」按钮来自动填充，以及多个快速复制操作。了解更多。
 * **Snap Store 桌面 App 生物识别解锁**：通过 Snap Store 下载的密码管理桌面 App 现在支持生物识别解锁。了解更多。
 * **TOTP 代码的内联自动填充**：内联自动填充菜单现在可用于选择 TOTP 代码。了解更多有关内联自动填充菜单的信息。
+* **iOS 上长按自动填充**：在 iOS 18+ 上长按任何文本字段即可从 Bitwarden 自动填充。了解更多。
 * **新的公共 API 操作**：`/public/organization/subscription` 端点添加了一个 GET 操作。了解更多有关 Bitwarden 公共 API 的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
