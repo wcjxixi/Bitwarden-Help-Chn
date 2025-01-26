@@ -9,9 +9,9 @@
 配置需要在 Bitwarden 网页密码库和 Azure 控制台中同时进行。在您继续进行操作时，我们建议您随时准备好并按照记录的顺序完成步骤。
 
 {% hint style="success" %}
-**已经是 SSO 专家？**&#x8DF3;过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
+**已经是 SSO 专家？**&#x8DF3;过本文中的说明，然后下载快速配置以与您自己的配置进行比较。
 
-**⬇️**[下载示例](https://assets.ctfassets.net/7rncvj1f8mw7/7CKe4TX98FPF86eAimKgak/3231357075649fdc9924c4b8c153af34/saml-azure-sample.zip)
+**⬇️**[快速配置指南](https://assets.ctfassets.net/7rncvj1f8mw7/3dX9IKG6TQ9chQXJaVkP1w/4a84bf2b3a7eb68255e4924de7078b41/Soft_Guides__1_.pdf)
 {% endhint %}
 
 ## 在网页密码库中打开 SSO <a href="#open-sso-in-the-web-vault" id="open-sso-in-the-web-vault"></a>
