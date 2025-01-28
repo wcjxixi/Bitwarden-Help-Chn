@@ -34,7 +34,6 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 
 * **SSH 代理**：Bitwarden 用户现在可以直接使用 Bitwarden 密码管理器安全地存储和生成 SSH 密钥。[了解更多](password-manager/developer-tools/ssh-agent.md)有关 Bitwarden SSH 代理的信息。
 * **使用网页设备批准**：使用网页 App 批准新的受信任设备和设备登录请求。[了解更多](your-vault/log-in-with-device.md)。
-* **浏览器扩展的阻止自动填充**：浏览器扩展现在可以明确指定不允许在某些域名上进行自动填充。[了解更多](password-manager/auto-fill/auto-fill-blocked-uris.md)。
 * **更新了桌面端的生成器**：桌面 App 上的密码和用户名生成器的用户界面已更新，以反映其他 Bitwarden App 的最新设计。[了解更多](your-vault/username-password-generator.md)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>

@@ -8,7 +8,7 @@
 
 可以在网页密码库、浏览器扩展、桌面应用程序和移动应用程序上发起设备登录。这些应用程序发出的请求可以在网页密码库、移动应用程序和桌面应用程序上获得批准。
 
-## 设备登陆准备 <a href="#prepare-to-log-in-with-a-device" id="prepare-to-log-in-with-a-device"></a>
+## 设备登录准备 <a href="#prepare-to-log-in-with-a-device" id="prepare-to-log-in-with-a-device"></a>
 
 要设置设备登录：
 
@@ -24,15 +24,79 @@
 作为企业组织的成员，您需要遵守[要求 SSO 策略](../organizations/enterprise-policies.md#require-single-sign-on-authentication)，如果您无法使用**设备登录**选项，则需要改用 [SSO 登录](../login-with-sso/using-login-with-sso.md#login-using-sso)。
 {% endhint %}
 
-## 使用设备登录 <a href="#logging-in-with-a-device" id="logging-in-with-a-device"></a>
+## 设备登录使用 <a href="#logging-in-with-a-device" id="logging-in-with-a-device"></a>
 
 在发起的应用程序的登录界面，输入您的电子邮件地址并选择**继续**。然后，选择**使用设备登录**选项：
 
-{% embed url="https://bitwarden.com/_gatsby/image/2c94e98a15f2d8ca5d4b77082f8dc44a/ee6b7982ad0bb5d39c9a2fa12fd64110/Screen%20Shot%202022-11-01%20at%209.08.26%20AM.webp?eu=d88f03b0e0c9ad835c6ea2826874333de53c57adfa0236d73f6ce7ac4ea096d276fa1855769d2be22c3d588c86e647bb6197793510ebd9d396bc10a1ec33ad0952800ebb60e174055979c0fcb7a752436f901e5da1d79908f6647282b7b3e1731156157da978b0d4b9ff3437e4842d3ab8e3a4286f9aef3ca051544bd4412cad33eed3c0605ab89ff35cbaa2adb75798d8f82a451e88b56f232144421fea32bcfaf545205d5c15524791af5d8037ead4567c397d564055f26e3d8203fa6d3390ecffa654dc2c7eb3aecd3479d590ff87ed1fac7e71e7d044fac06e2f5062cf4bf2f814f5d2660413802be7954ddd52415a499c1c813a22df572ef119c4bf10&a=w%3D731%26h%3D491%26fm%3Dwebp%26q%3D75&cd=2022-11-29T13%3A10%3A06.427Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7owqaTEe9Bo05wfLRZPhn8/7b66e262c26b4d4cb98cdb9584fafe13/2024-12-02_10-39-22.png?_a=DAJAUVWIZAAB" %}
 设备登录
 {% endembed %}
 
-使用**设备登录**会将身份验证请求发送到您当前已登录并且已启用了该选项的任何移动或桌面应用程序以获得批准。对比发起客户端和批准客户端上的[指纹短语](../security/account-fingerprint-phrase.md)，如果匹配，则在批准设备上选择**确认登录**。请注意，这是一个独特的指纹，与您的账户指纹短语不一样。
+使用**设备登录**会将身份验证请求发送到您当前已登录并且已启用了该选项的任何网页密码库、移动或桌面应用程序以获得批准。
+
+{% tabs %}
+{% tab title="移动应用程序" %}
+发起**设备登录**后，要使用移动应用程序批准请求：
+
+1、登录到移动应用程序。
+
+2、导航到**设置** → **账户安全** → **待处理的登录请求**。
+
+3、找到并选择活动设备请求。
+
+4、验证指纹短语然后选择**确认登录**。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6xeP36n7g2dbwLI9YWjNg4/dbc18de80ace51b789021cc7083e76e0/IMG_1954.jpeg?_a=DAJAUVWIZAAB" %}
+移动设备批准
+{% endembed %}
+{% endtab %}
+
+{% tab title="网页应用程序" %}
+发起**设备登录**后，要使用网页应用程序批准请求：
+
+1、登录到网页应用程序。
+
+{% hint style="info" %}
+在为浏览器扩展批准登录请求时，扩展窗口必须保持打开状态，直到过程完成。Bitwarden 建议：
+
+* **对于 Chrome 和 chromium 浏览器**：在单独的浏览器窗口中打开网页应用程序，这将允许扩展在原始窗口中保持打开状态。
+* **对于 Safari 浏览器**：在单独的浏览器窗口中打开网页应用程序，这将允许扩展在原始窗口中保持打开状态。
+* **对于 Firefox**：在侧边栏中打开扩展，这将允许在打开网页应用程序时继续保留扩展。
+
+这些将在未来的版本中得到改进。
+{% endhint %}
+
+2、导航到**设置** → **安全** → **设备**。
+
+3、找到并选择活动设备请求。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7GLmOwtReFuUD3uxPQ0LB8/71b896fcc76d3918e3fe37dee978e2dd/2025-01-14_12-35-31.png?_a=DAJAUVWIZAAB" %}
+网页应用程序批准设备登录
+{% endembed %}
+
+4、验证指纹短语然后选择**确认登录**。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6s6Hdn9L1EyeRfBsmOcfgX/ada1215dc8e370c7b82f1a0fc6bd8923/2025-01-14_15-55-10.png?_a=DAJAUVWIZAAB" %}
+网页应用程序确认指纹
+{% endembed %}
+{% endtab %}
+
+{% tab title="桌面应用程序" %}
+发起**设备登录**后，要使用桌面应用程序批准请求：
+
+1、登录到桌面应用程序。
+
+2、验证请求将发送到您的桌面应用程序：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5cpkevhyuiSg82yfopvmc1/3bccaff5f02ad79bab67fb7ed941ed0e/2025-01-16_11-44-40.png?_a=DAJAUVWIZAAB" %}
+桌面应用程序批准设备
+{% endembed %}
+
+3、验证指纹短语然后选择**确认登录**。
+{% endtab %}
+{% endtabs %}
+
+请注意，这是一个独特的指纹，与您的[账户指纹短语](../security/account-fingerprint-phrase.md)不一样。
 
 如果请求未被批准或被拒绝，则请求将在 15 分钟后过期。如果您没有收到登录请求或正在使用 F-Droid，请尝试从移动应用程序[手动同步您的密码库](syncing-your-vault.md)。
 

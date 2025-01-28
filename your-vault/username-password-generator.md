@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/generator/)
 {% endhint %}
 
-使用 Bitwarden 生成器工具可以轻松创建强密码和唯一用户名。密码生成器可用于所有 Bitwarden 客户端，用户名生成器可用于网页密码库、浏览器扩展和桌面应用程序。
+使用 Bitwarden 生成器工具可以轻松创建强密码和唯一用户名。密码生成器可用于所有 Bitwarden 客户端，用户名生成器可用于网页密码库、浏览器扩展、桌面应用程序和移动应用程序。
 
 如果您目前还不是 Bitwarden 用户，您也可以在 [https://bitwarden.com/password-generator/](https://bitwarden.com/password-generator/) 测试我们的免费密码生成器。
 
