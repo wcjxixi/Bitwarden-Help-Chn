@@ -25,7 +25,7 @@ Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌�
 ## 2025.1.1
 
 {% hint style="info" %}
-为确保您的账户安全，2025 年初开始，Bitwarden 将对未使用两步登录的用户要求额外的验证。[了解更多](miscellaneous/new-device-login-protection.md)。
+为确保账户安全，2025 年初开始，对于**未使用两步登录的用户**，Bitwarden 将对其要求额外的验证。[了解更多](miscellaneous/new-device-login-protection.md)。
 {% endhint %}
 
 此次发布包含：
