@@ -50,7 +50,7 @@ SAML 2.0 配置
 
 | 提供程序         | 指南                                                                                                            |
 | ------------ | ------------------------------------------------------------------------------------------------------------- |
-| AD FS        | [AD FS 实施指南](implementation-guides/ad-fs-saml-implementation.md)                                              |
+| AD FS        | [AD FS 实施指南](../admin-console/login-with-sso/implementation-guides/adfs-saml-implementation.md)               |
 | Auth0        | [Auth0 实施指南](implementation-guides/auth0-saml-configuration.md)                                               |
 | AWS          | [AWS 实施指南](implementation-guides/aws-saml-implementation.md)                                                  |
 | Azure        | [Azure 实施指南](../admin-console/login-with-sso/implementation-guides/microsoft-entra-id-saml-implementation.md) |
