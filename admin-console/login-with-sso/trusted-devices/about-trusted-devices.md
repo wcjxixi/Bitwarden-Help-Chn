@@ -8,7 +8,7 @@
 
 受信任设备 SSO 可为企业终端用户提供零知识和端到端加密的无密码体验。这可以防止用户因忘记主密码而被锁定，让他们享受简化的登录体验。
 
-受信任设备 SSO 适用于云组织，未来版本将支持自托管组织。
+~~受信任设备 SSO 适用于云组织，未来版本将支持自托管组织。~~
 
 ## 开始使用受信任设备 <a href="#start-using-trusted-devices" id="start-using-trusted-devices"></a>
 
@@ -26,6 +26,10 @@
 
 然后询问用户是否想要记住或信任此设备。当他们选择这样做时：
 
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2o9o8L0JZMvWZYJvfKGMzj/b7cab59682862c8e782331ed6a2ef9d9/td-create.png?_a=DAJAUVWIZAAB" %}
+创建受信任设备
+{% endembed %}
+
 1. 客户端生成新的**设备密钥**。该密钥永远不会离开客户端。
 2. 客户端生成新的 RSA 密钥对：**设备私钥**和**设备公钥**。
 3. 用户的账户加密密钥使用未加密的设备公钥进行加密，然后将结果值作为**公钥-已加密的用户密钥**发送到服务器。
@@ -39,6 +43,10 @@
 
 {% tab title="登录" %}
 当某个用户在已受信任的设备上使用 SSO 进行身份验证时：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/61SSa6ITlRaICIUoCzEiVp/746cf3ba3005b4118d20319e894c47c7/td-use.png?_a=DAJAUVWIZAAB" %}
+使用受信任设备
+{% endembed %}
 
 1. 用户的**公钥-已加密的用户密钥**（用于解密密码库数据的账户加密密钥的加密版本）从服务器发送到客户端。
 2. 用户的**设备密钥-已加密的私钥**（解密**公钥-已加密的用户密钥**所需的未加密版本）从服务器发送到客户端。
@@ -61,10 +69,10 @@
   5. 发起请求的客户端 GET 到加密后的账户加密密钥，然后使用**身份验证请求私钥**ª 对它进行**本地**解密。
   6. 使用解密后的账户加密密钥，与客户端建立信任关系，详见**入职**选项卡。
 
-ª - **身份验证请求公钥**和**私钥**是为每一个无密码登录请求生成的唯一密钥，其存在时间与请求的存在时间相同。如果请求未被批准或被拒绝，请求将在 15 分钟后过期并从数据库中清除。
+ª - **身份验证请求公钥**和**私钥**是为每一个无密码登录请求生成的唯一密钥，其存在时间与请求的存在时间相同。未被批准的请求，请求将在 1 周后过期。
 
 * **使用主密码批准：**
-  1. 按照[安全白皮书](../../../security/bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)中「用户登录」部分的记录，获取并解密用户的账户加密密钥。
+  1. 按照安全白皮书中「[身份验证和解密](../../../security/bitwarden-security-whitepaper.md#authentication-and-decryption)」部分的说明，获取并解密用户的账户加密密钥。
   2. 使用解密后的账户加密密钥，按照**入职**选项卡中的说明与客户建立信任。
 {% endtab %}
 
@@ -84,12 +92,25 @@
 {% endtab %}
 {% endtabs %}
 
+### 用于受信设备的密钥 <a href="#keys-used-for-trusted-devices" id="keys-used-for-trusted-devices"></a>
+
+本表格提供了有关上述过程中所使用的每一种密钥的更多信息：
+
+| 密钥          | 详细信息                                                      |
+| ----------- | --------------------------------------------------------- |
+| 设备密钥        | AES-256 CBC HMAC SHA-256，长度为 512 位（其中密钥 256 位，HMAC 256 位） |
+| 设备私钥和设备公钥   | RSA-2048 OAEP SHA1，长度为 2048 位                             |
+| 公钥-已加密的用户密钥 | RSA-2048 OAEP SHA1                                        |
+| 用户密钥-已加密的公钥 | AES-256 CBC HMAC SHA-256                                  |
+| 设备密钥-已加密的私钥 | AES-256 CBC HMAC SHA-256                                  |
+
 ### 对主密码的影响 <a href="#impact-on-master-passwords" id="impact-on-master-passwords"></a>
 
 虽然使用受信任设备 SSO 可以消除对主密码的需求，但并非在所有情况下都能消除主密码本身：
 
 * 如果用户是在受信任设备 SSO 激活**之前**入职的，或者如果他们从组织邀请中选择了**创建账户**，则他们的账户将保留其主密码。
 * 如果用户是在受信任设备 SSO 激活**之后**入职的，并从组织邀请中选择**登录** → **企业 SSO** 进行 [JIT 配置](../../../login-with-sso/login-with-sso-faqs.md#q-how-does-login-with-sso-work-for-new-users-just-in-time)，则他们的账户将无需拥有主密码。如果您更改为主密码[成员解密选项](../../../login-with-sso/member-decryption-options.md)，只要这些用户仍然是组织的成员，系统就会在他们登录时提示创建一个主密码（[了解更多](setup-sso-with-trusted-devices.md)）。
+* 如果使用账户恢复功能恢复了用户账户，就必须为其分配一个主密码。目前，有了主密码后，就无法将其从账户中移除，因此，为了避免出现这种结果，我们建议：(i) 指导用户将数据导出到备份中；(ii) 完全删除丢失的账户；(iii) 要求用户[使用受信任设备重新入职到您组织](add-a-trusted-device.md)；(iv) 用户完成这些后，指导他们导入备份。
 
 {% hint style="danger" %}
 对于那些因使用受信任设备 SSO 而没有主密码的账户，[将其从您的组织中移除](../../../organizations/user-management.md#offboard-users)或[撤销其访问权限](../../../organizations/user-management.md#revoke-access)将切断其对 Bitwarden 账户的所有访问权限，除非：
@@ -97,7 +118,9 @@
 1. 您事先使用[账户恢复](../../../organizations/admin-password-reset.md)功能为其分配了主密码。
 2. 用户在账户恢复后至少登录一次，以便完全完成账户恢复流程。
 
-此外，除非在将用户从组织中删除之前执行上述步骤，否则用户将无法重新加入您的组织。在这种情况下，用户将需要[删除其账户](../../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并接收一个新的邀请以创建账户并加入您的组织。
+此外，除非在将用户从组织中删除之前执行上述步骤，否则用户将无法重新加入您的组织。在这种情况下，用户将需要[删除其账户](../../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并接收新的邀请以创建账户并加入您的组织。
+
+撤销对组织的访问权限，但不将其从组织中移除，仍可让他们登录 Bitwarden 并**只能**访问其个人密码库。
 {% endhint %}
 
 ### 对其它功能的影响 <a href="#impact-on-other-features" id="impact-on-other-features"></a>
@@ -108,5 +131,6 @@
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 验证       | <p>Bitwarden 客户端应用程序中有许多功能通常需要输入主密码才能使用，包括<a href="../../../import-export/export-vault-data.md">导出密码库数据</a>、更改<a href="../../../two-step-login/two-step-login-methods.md">两步登录设置</a>、检索 <a href="../../../password-manager/developer-tools/personal-api-key-for-cli-authentication.md">API 密钥</a>等。</p><p>如果用户不使用主密码访问客户端，<strong>所有这些功能</strong>都将使用基于电子邮件的 TOTP 验证来取代主密码确认。</p> |
 | 密码库锁定/解锁 | <p>一般情况下，被锁定的密码库可以使用主密码解锁。如果用户不使用主密码访问客户端，则被锁定的客户端应用程序只能使用 <a href="../../../your-vault/unlock-with-pin.md">PIN</a> 或<a href="../../../your-vault/unlocking-with-biometrics.md">生物识别</a>解锁。</p><p>如果客户端应用程序既没有启用 PIN 也没有启用生物识别，则密码库将始终注销而不是锁定。解锁和登录<strong>始终</strong>需要互联网连接。</p>                                                                                                |
-| 主密码重新提示  | 如果用户未使用主密码解锁其密码库，则[主密码重新提示](../../../your-vault/vault-items.md#protect-individual-items)将被禁用。                                                                                                                                                                                                                                                                                     |
+| 主密码重新提示  | 如果用户不使用主密码解锁其密码库，则[主密码重新提示](../../../your-vault/vault-items.md#protect-individual-items)将被禁用。                                                                                                                                                                                                                                                                                     |
+| 更改电子邮箱地址 | [没有主密码](about-trusted-devices.md#impact-on-master-passwords)的用户将**无法**更改他们电子邮箱地址。                                                                                                                                                                                                                                                                                                 |
 | CLI      | [没有主密码](about-trusted-devices.md#impact-on-master-passwords)的用户将**无法**访问密码管理器 CLI。                                                                                                                                                                                                                                                                                                |

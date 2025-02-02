@@ -188,7 +188,7 @@
       * [Duo SAML 实施](login-with-sso/implementation-guides/duo-saml-implementation.md)
       * [Google SAML 实施](login-with-sso/implementation-guides/google-saml-implementation.md)
       * [JumpCloud SAML 实施](login-with-sso/implementation-guides/jumpcloud-saml-implementation.md)
-      * [Keycloak SAML 实施](login-with-sso/implementation-guides/keycloak-saml-implementation-1.md)
+      * [=Keycloak SAML 实施](login-with-sso/implementation-guides/keycloak-saml-implementation-1.md)
       * [=Microsoft Entra ID SAML 实施](admin-console/login-with-sso/implementation-guides/microsoft-entra-id-saml-implementation.md)
       * [Okta SAML 实施](login-with-sso/implementation-guides/okta-saml-implementation.md)
       * [OneLogin SAML 实施](login-with-sso/implementation-guides/onelogin-saml-implementation.md)

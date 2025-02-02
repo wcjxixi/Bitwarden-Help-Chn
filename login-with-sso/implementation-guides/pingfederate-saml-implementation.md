@@ -4,24 +4,28 @@
 对应的[官方文档地址](https://bitwarden.com/help/adfs-oidc-implementation/)
 {% endhint %}
 
-本文是**专门针对 Active Directory Federation Services (AD FS)** 用于配置 OpenID 连接（OIDC） 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](../oidc-configuration.md)或 ADFS SAML 实施。
+本文是**专门针对 Active Directory Federation Services (AD FS)** 用于配置 OpenID Connect (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](../oidc-configuration.md)或 [ADFS SAML 实施](../../admin-console/login-with-sso/implementation-guides/adfs-saml-implementation.md)。
 
 配置需要在 Bitwarden 网页 App 和 AD FS 服务器管理器中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
-## 在网页密码库中打开 SSO <a href="#open-sso-in-the-web-vault" id="open-sso-in-the-web-vault"></a>
+## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
-如果您是直接从 [OIDC 配置](../oidc-configuration.md)过来的，你应该[已经创建了一个组织 ID](../saml-2.0-configuration.md#step-1-set-an-organization-identifier) 并打开了 SSO 配置界面。如果你没有，请参考那篇文章，为 SSO 创建一个组织 ID。
+登录到 Bitwarden 网页 App，使用产品切换器打开管理控制台：
 
-导航到您组织的**管理** → **单点登录**界面：
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6hhSOvtqAuWemfaN78atRv/f7b2d1732a25b110c1b7eb1296637453/sso-oidc1.png?fm=webp&h=612&q=50&w=822" %}
-OIDC 配置
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJAUVWIZAAB" %}
+产品切换器
 {% endembed %}
 
-你不需要编辑此界面上的任何内容，但要保持打开以方便引用。
+从导航中选择**设置** → **单点登录**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/20720mRAluo6crSdTiYJrn/1175889d7f6ab42fe7614f34cdd1dcdd/2024-12-04_09-41-15.png?_a=DAJAUVWIZAAB" %}
+SAML 2.0 配置
+{% endembed %}
+
+如果还没有为您的组织创建唯一的 **SSO 标识符**，请创建一个。否则，您不需要在此界面上编辑任何内容，但保持此界面打开，以方便参考。
 
 {% hint style="success" %}
-如果您是自托管 Bitwarden，您可以选择性使用**成员解密选项**。此功能默认情况下被禁用，因此现在继续使用**主密码**解密，并了解如何在配置完成并成功运行后开始使用 [Key Connector](../about-key-connector.md)。
+您可以选择性使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 和 [Key Connector](../about-key-connector.md)。
 {% endhint %}
 
 ## 创建应用程序组 <a href="#create-an-application-group" id="create-an-application-group"></a>
@@ -91,9 +95,9 @@ AD FS 配置声明规则界面
 * 从 LDAP Attribute 下拉列表中，选择 **E-Mail-Addresses**。
 * 从 Outgoing Claim Type 下拉列表中，选择 **E-Mail Address**。
 
-## 回到网页密码库 <a href="#back-to-the-web-vault" id="back-to-the-web-vault"></a>
+## 回到网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
 
-至此，您已经配置好了 AD FS 服务器管理器所需要的一切。回到 Bitwarden 网页密码库以配置以下字段：
+至此，您已经配置好了 AD FS 服务器管理器所需要的一切。回到 Bitwarden 网页 App 以配置以下字段：
 
 | 字段                                                      | 描述                                                                                                                                    |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |

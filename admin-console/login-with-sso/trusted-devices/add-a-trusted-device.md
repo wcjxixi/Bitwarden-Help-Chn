@@ -12,10 +12,64 @@
 
 不过，当您登录新设备时，您需要批准或信任该设备。有几种方法可以做到这一点：
 
-* **从其他设备批准**：如果您有其他 Bitwarden 密码管理器移动应用程序或桌面应用程序，您可以从那里批准新设备，类似于设备登录。
+* **从其他设备批准**：如果您有其他 Bitwarden 密码管理器网页 App、移动 App 或桌面 App，您可以从那里批准新设备，类似于设备登录。在移动端，首先确保已启用**批准登录请求**选项。
+
+{% tabs %}
+{% tab title="移动 App" %}
+发起设备登录后，要使用移动 App 批准请求：
+
+1、登录到移动 App。
+
+2、导航至**设置** → **账户安全** → **待处理的登录请求**。
+
+3、定位并选择活动设备请求。
+
+4、验证指纹短语然后选择**确认登录**。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6xeP36n7g2dbwLI9YWjNg4/dbc18de80ace51b789021cc7083e76e0/IMG_1954.jpeg?_a=DAJAUVWIZAAB" %}
+{% endtab %}
+
+{% tab title="网页 App" %}
+发起设备登录后，要使用网页 App 批准请求：
+
+1、登录到网页 App。
 
 {% hint style="info" %}
-我们建议您先信任一个移动或桌面应用程序，这样您就可以使用**从其他设备批准**选项来添加后续设备。
+在请求批准登录浏览器扩展时，扩展窗口必须保持打开状态，直到程序完成。Bitwarden 建议：
+
+* **对于 Chrome 和 chromium 浏览器**： 在单独的浏览器窗口中打开网络应用程序，这将允许扩展在原始窗口中保持打开状态。
+* **对于 Safari 浏览器**：在单独的浏览器窗口中打开网页 App，这将允许扩展在原始窗口中保持打开状态。
+* **对于 Firefox**：在侧边栏中打开扩展，这样就可以在打开网页 App 时继续保留扩展。
+
+这将在以后的版本中得到改进。
+{% endhint %}
+
+2、导航至**设置** → **安全** → **设备**。
+
+3、定位并选择活动设备请求。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7GLmOwtReFuUD3uxPQ0LB8/71b896fcc76d3918e3fe37dee978e2dd/2025-01-14_12-35-31.png?_a=DAJAUVWIZAAB" %}
+
+4、验证指纹短语然后选择**确认登录**。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6s6Hdn9L1EyeRfBsmOcfgX/ada1215dc8e370c7b82f1a0fc6bd8923/2025-01-14_15-55-10.png?_a=DAJAUVWIZAAB" %}
+{% endtab %}
+
+{% tab title="桌面 App" %}
+发起设备登录后，要使用桌面 App 批准请求：
+
+1、登录到桌面 App。
+
+2、验证请求将发送到您的桌面 App。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5cpkevhyuiSg82yfopvmc1/3bccaff5f02ad79bab67fb7ed941ed0e/2025-01-16_11-44-40.png?_a=DAJAUVWIZAAB" %}
+
+3、验证指纹短语然后选择**确认登录**。
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+我们建议您先信任一个移动或桌面 App，然后立即打开**批准登录请求**选项。这样您就可以使用**从其他设备批准**选项来添加后续设备。
 {% endhint %}
 
 * **请求管理员批准**：您可以向组织内的管理员和所有者发送设备批准请求以供批准。在许多情况下，这将是您唯一可用的选择（[了解更多](approve-a-trusted-device.md)）。
@@ -30,7 +84,7 @@
 
 * **使用主密码批准**：如果您是管理员或所有者，或者在受信任设备 SSO 实施之前加入了您的组织，因此仍然拥有与您的账户关联的主密码，则可以输入主密码来批准设备。
 
-{% embed url="https://bitwarden.com/_gatsby/image/de2933daf25a7a11c475abdf52457c94/06b22fd7741271198dde2e569fe19e3e/requires%20device%20approval.webp?eu=d8df59b2e09aa8d50868a683607b646cb23d55affd5163813a30edfb1bfdca8125f04804739772b3793c0cddd7e541b861c329301eee85d2c9bd49fce961aa5e058553ec35b57801537ec2afb2f10e426dcf1f50a38b9b01f0387481edb4e4751058192ca828be85b8fd3231b98b2f66bce4a7293096a120a4561e17c1076ea539eac78b7000bd8ae64eaca5bbed4ad3c2b269184799ad66642d4d4950b06abcbad8413565290a027f90ac329317e7ce5e641672265e1ca6636c8201fa6537c1e6faf70b8a2c73e1fe9862788692fc89bb1aa42973b29e38ebd77a3f574ff950c2e82eb18b375361d06abad713f452592b00dc4b&a=w%3D504%26h%3D555%26fm%3Dwebp%26q%3D75&cd=2023-08-31T17%3A56%3A43.270Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/Zutl0zizn3ZdFAHRHGaH1/a4fbd196221ffcf80fac80ab9f0835ea/requires_device_approval.png?_a=DAJAUVWIZAAB" %}
 使用主密码批准
 {% endembed %}
 
