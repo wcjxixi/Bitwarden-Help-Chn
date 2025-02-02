@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/import-from-dashlane/)
 {% endhint %}
 
-使用这篇文章帮助您从 Dashlane 导出数据并导入到 Bitwarden。Dashlane 数据导出主要以 `.csv` 文件的形式提供，可从 Web 应用程序下载，其可以直接导入到 Bitwarden。如果您从旧版 Dashlane 应用程序导出 `.json`，也可以将其导入 Bitwarden。
+使用这篇文章帮助您从 Dashlane 导出数据并导入到 Bitwarden。Dashlane 数据导出主要以 `.csv` 文件的形式提供，可从网页 App 下载，其可以直接导入到 Bitwarden。如果您从旧版 Dashlane 应用程序导出 `.json`，也可以将其导入 Bitwarden。
 
 ## 从 Dashlane 网页应用程序导出 <a href="#export-from-dashlane-web-app" id="export-from-dashlane-web-app"></a>
 
@@ -28,7 +28,7 @@ Dashlane 将数据导出为可解压缩为多个 `.csv` 文件的 `.zip` 文件�
 
 ## 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
-**数据必须从网页密码库或 CLI 导入到 Bitwarden**。数据在发送到服务器存储之前会在本地进行[加密](../../security/encryption.md)。
+**数据可以从网页 App、CLI、桌面 App 或浏览器扩展导入到 Bitwarden**。数据在发送到服务器存储之前会在本地进行[加密](../../security/encryption.md)。
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -36,7 +36,7 @@ Dashlane 将数据导出为可解压缩为多个 `.csv` 文件的 `.zip` 文件�
 
 1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com)，[https://vault.bitwarden.eu](https://vault.bitwarden.eu/) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
 
-2、从导航条选择**工具** → **导入数据**：
+2、从导航栏选择**工具** → **导入数据**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/7ed2e5650e9988bf7595bccebe8a5114/2024-12-03_08-52-08.png?_a=DAJAUVWIZAAB" %}
 导入数据
