@@ -7,10 +7,10 @@
 跨域身份管理系统 (SCIM) 用于在您的 Bitwarden 组织中自动配置和取消配置成员和群组。
 
 {% hint style="info" %}
-SCIM 集成适用于**团队和企业组织**。未使用与 SCIM 兼容的身份提供程序的客户可以考虑使用[目录连接器](../directory-connector/directory-connector-cli.md)作为替代的预配方式。
+SCIM 集成适用于**团队组织和企业组织**。未使用与 SCIM 兼容的身份提供程序的客户可以考虑使用 [Directory Connector](../directory-connector/directory-connector-cli.md) 作为替代的配置方式。
 {% endhint %}
 
-本文将帮助您配置与 Azure 的 SCIM 集成。配置涉及同时使用 Bitwarden 网页密码库和 Azure 门户。在进行配置时，我们建议您准备好这两样东西，并按照文档规定的顺序完成这些步骤。
+本文将帮助您配置与 Azure 的 SCIM 集成。配置涉及同时使用 Bitwarden 网页密码库和 Azure 门户。在进行配置时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
 ## 启用 SCIM <a href="#enable-scim" id="enable-scim"></a>
 
@@ -18,7 +18,7 @@ SCIM 集成适用于**团队和企业组织**。未使用与 SCIM 兼容的身�
 **您是自托管 Bitwarden 吗？**&#x5982;果是，请在继续操作之前完成[这些步骤为您的服务器启用 SCIM](../self-hosting/self-hosting-scim.md)。
 {% endhint %}
 
-要开始您的 SCIM 集成，请打开您组织的**管理** → **SCIM 配置**页面：
+要开始您的 SCIM 集成，请打开管理控制台并导航至**设置** → **SCIM 配置**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6sw1kuK7GuZ3dfQkkbs6rV/a4f4e18e561733297338e4ed44c6ed8c/2024-12-03_15-25-46.png?_a=DAJAUVWIZAAB" %}
 SCIM 配置
@@ -26,7 +26,7 @@ SCIM 配置
 
 选中**启用 SCIM** 复选框并记下您的 **SCIM URL** 和 **SCIM API 密钥**。在后面的步骤中您将需要使用这两个值。
 
-## 创建一个企业应用程序 <a href="#create-an-enterprise-application" id="create-an-enterprise-application"></a>
+## 创建企业应用程序 <a href="#create-an-enterprise-application" id="create-an-enterprise-application"></a>
 
 {% hint style="success" %}
 如果您的 SSO 登录已在使用此 IdP，请打开现有的企业应用程序并[跳至此步骤](azure-ad-scim-integration.md#enable-provisioning)。否则，继续本部分以创建一个新的应用程序。
@@ -88,7 +88,7 @@ Bitwarden 使用标准的 SCIM v2 属性名称，尽管这些名称可能与 Mic
 | `displayName`          | `displayName`                                                 |
 | `externalId`           | `mailNickname`                                                |
 
-ª -由于 SCIM 允许用户将多个电子邮件地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
+ª - 由于 SCIM 允许用户将多个电子邮件地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
 
 #### 群组映射 <a href="#group-mapping" id="group-mapping"></a>
 

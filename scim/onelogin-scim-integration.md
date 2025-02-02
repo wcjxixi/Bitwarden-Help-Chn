@@ -7,10 +7,10 @@
 跨域身份管理系统 (SCIM) 用于在您的 Bitwarden 组织中自动配置和取消配置成员和群组。
 
 {% hint style="info" %}
-SCIM 集成适用于**企业组织**。团队组织或未使用与 SCIM 兼容的身份提供程序的客户可以考虑使用[目录连接器](../directory-connector/directory-connector-cli.md)作为替代的预配方式。
+SCIM 集成适用于**团队组织和企业组织**。未使用与 SCIM 兼容的身份提供程序的客户可以考虑使用 [Directory Connector](../directory-connector/directory-connector-cli.md) 作为替代的配置方式。
 {% endhint %}
 
-本文将帮助您配置与 OneLogin 的 SCIM 集成。配置涉及同时使用 Bitwarden 网页密码库和 OneLogin 管理员门户。在进行配置时，我们建议您准备好这两样东西，并按照文档规定的顺序完成这些步骤。
+本文将帮助您配置与 OneLogin 的 SCIM 集成。配置涉及同时使用 Bitwarden 网页密码库和 OneLogin 管理员门户。在进行配置时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
 ## 启用 SCIM <a href="#enable-scim" id="enable-scim"></a>
 
@@ -18,19 +18,15 @@ SCIM 集成适用于**企业组织**。团队组织或未使用与 SCIM 兼容�
 **您是自托管 Bitwarden 吗？**&#x5982;果是，请在继续操作之前完成[这些步骤为您的服务器启用 SCIM](../self-hosting/self-hosting-scim.md)。
 {% endhint %}
 
-要开始您的 SCIM 集成，请打开您组织的**管理** → **SCIM 配置**页面：
+要开始您的 SCIM 集成，请打开管理控制台并导航至**设置** → **SCIM 配置**：
 
-{% embed url="https://bitwarden.com/_gatsby/image/c70bf678c406888fdf350cedde0490ed/684599a3378fc51acd1d29f150dcb312/scim1.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F6sw1kuK7GuZ3dfQkkbs6rV%2F11680a14a2c77af699e8c5a9d86394c6%2Fscim1.png&a=w%3D850%26h%3D473%26fm%3Dwebp%26q%3D75&cd=2022-08-12T12%3A07%3A34.818Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6sw1kuK7GuZ3dfQkkbs6rV/a4f4e18e561733297338e4ed44c6ed8c/2024-12-03_15-25-46.png?_a=DAJAUVWIZAAB" %}
 SCIM 配置
 {% endembed %}
 
 选中**启用 SCIM** 复选框并记下您的 **SCIM URL** 和 **SCIM API 密钥**。在后面的步骤中您将需要使用这两个值。
 
-## 创建一个 OneLogin 应用程序 <a href="#create-a-onelogin-app" id="create-a-onelogin-app"></a>
-
-{% hint style="success" %}
-如果您的 SSO 登录已在使用此 IdP，请打开现有的企业应用程序并[跳至此步骤](onelogin-scim-integration.md#enable-provisioning)。否则，继续本部分以创建一个新的应用程序。
-{% endhint %}
+## 创建 OneLogin 应用程序 <a href="#create-a-onelogin-app" id="create-a-onelogin-app"></a>
 
 在 OneLogin 门户中，导航到 **Applications** 页面然后选择 **Add App** 按钮：
 
@@ -62,7 +58,7 @@ SCIM App 配置
 
 在 **API Connection** 部分输入以下值：
 
-| **应用程序设置**        | **描述**                                                                 |
+| Application 设置    | 描述                                                                     |
 | ----------------- | ---------------------------------------------------------------------- |
 | SCIM Base URL     | 将此字段设置为 SCIM URL（[了解更多](onelogin-scim-integration.md#enable-scim)）。    |
 | SCIM Bearer Token | 将此字段设置为 SCIM API 密钥（[了解更多](onelogin-scim-integration.md#enable-scim)）。 |
@@ -78,7 +74,7 @@ SCIM App 配置
 从左侧导航中选择 **Parameters**。从表中选择 **Groups**，启用 **Include in User Provisioning** 复选框，然后选择 **Save** 按钮：
 
 {% embed url="https://bitwarden.com/_gatsby/image/3913633bd7259d11b26a246138fb97af/45bc29c1c677ef2ff5d81ed57c62c8a5/remove-name-5.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F2h03FR4hdjbrxWuUojzzGb%2Fc004d00d53e780b98429453f20591125%2Fremove-name-5.png&a=w%3D850%26h%3D635%26fm%3Dwebp%26q%3D75&cd=2022-08-12T12%3A09%3A49.888Z" %}
-Include Groups in User Provisioning
+在用户配置中包含群组
 {% endembed %}
 
 ### 规则 <a href="#rules" id="rules"></a>
@@ -151,4 +147,4 @@ Bitwarden 和 OneLogin 的 SCIM Provisioner with SAML (SCIM v2 Enterprise) 应�
 * `displayName`
 * `externalId`
 
-ª -由于 SCIM 允许用户将多个电子邮件地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
+ª - 由于 SCIM 允许用户将多个电子邮箱地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。

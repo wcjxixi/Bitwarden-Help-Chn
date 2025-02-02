@@ -156,7 +156,7 @@
       * [Microsoft Entra ID SCIM 集成](scim/azure-ad-scim-integration.md)
       * [Okta SCIM 集成](scim/okta-scim-integration.md)
       * [OneLogin SCIM 集成](scim/onelogin-scim-integration.md)
-      * [=Ping Identity SCIM 集成](admin-console/user-management/scim/ping-identity-scim-integration.md)
+      * [Ping Identity SCIM 集成](admin-console/user-management/scim/ping-identity-scim-integration.md)
     * [目录连接器](directory-connector/README.md)
       * [关于目录连接器](directory-connector/about-directory-connector.md)
       * [目录连接器桌面 App](directory-connector/directory-connector-desktop-app.md)
