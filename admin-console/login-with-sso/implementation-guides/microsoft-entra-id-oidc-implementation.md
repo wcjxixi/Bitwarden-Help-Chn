@@ -10,7 +10,7 @@ description: 本文包含为 Azure OIDC 实施配置 Bitwarden SSO 登录的说�
 
 本文是**专门针对 Azure** 用于配置 OpenID 连接（OIDC） 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](../../../login-with-sso/oidc-configuration.md)或 [Azure SAML 实施](microsoft-entra-id-saml-implementation.md)。
 
-配置需要在 Bitwarden 网页密码库和 Azure 门户网站中同时进行。在您继续进行操作时，我们建议您随时准备好并按照记录的顺序完成步骤。
+配置需要在 Bitwarden 网页 App 和 Azure 门户网站中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
 ## 在网页密码库中打开 SSO <a href="#open-sso-in-the-web-vault" id="open-sso-in-the-web-vault"></a>
 
