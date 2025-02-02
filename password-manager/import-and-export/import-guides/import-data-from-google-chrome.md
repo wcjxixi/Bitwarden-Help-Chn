@@ -12,22 +12,22 @@
 
 ## 从 Chrome 中导出 <a href="#export-from-chrome" id="export-from-chrome"></a>
 
-您可以从桌面浏览器或移动浏览器导出 Google Chrome 的数据：
+您可以从Google Chrome（或基于 Chromium 的浏览器）的桌面或移动端导出数据：
 
 {% tabs %}
 {% tab title="桌面端 Chrome" %}
 要从桌面端 Chrome 导出密码：
 
-1. 使用地址栏导航至 `chrome://password-manager/settings`。
-2. 在左侧，选择**设置**。定位到**导出密码**，然后点击**下载文件**。可能会提示您输入计算机的密码以进行授权。
+1. 使用地址栏导航至 `chrome://password-manager/settings` 或 `edge://wallet/passwords`。
+2. 定位到**导出密码**，然后点击**下载文件**。可能会提示您输入计算机的密码以进行授权。对于 Microsoft Edge，这可能隐藏在已保存密码部分的 **⋯**&#x83DC;单后面。
 3. 指定一个保存导出文件的位置，并验证格式是否为 **comma-separated values (CSV)**。
-4. 选择**保存**以完成从 Chrome 的导出。
+4. 选择**保存**以完成导出。
 {% endtab %}
 
 {% tab title="移动端 Chrome" %}
 要从移动设备 Chrome 导出密码：
 
-1. 点击 **⋯** 菜单按钮并点击**密码管理器**。
+1. 点击 **⋯**&#x83DC;单按钮并点击**密码管理器**。
 2. 点击**设置**。
 3. 点击**导出密码**。可能会提示您输入计算机的密码以进行授权。
 4. 指定一个位置以保存您的导出文件。
