@@ -18,14 +18,14 @@
 
 您可以随时向客户组织添加超过您指定的最低席位数的席位，并且席位数将是：
 
-* 列为在管理客户组织的席位数或创建新客户组织时**购买的附加席位**。
+* 列为在管理客户组织的席位数或创建新客户组织时**已购买的附加席位**。
 * 在下一个计费周期自动添加到您的账单中。
 
 ## 管理席位 <a href="#manage-seats" id="manage-seats"></a>
 
 要在客户组织中添加或删除席位，请使用 **≡** 选项菜单然后选择**管理订阅**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5azlW7UdPa9zT23P9Iou6B/2e56540f24ab0c4699c2bab7ddf6cacc/2024-07-02_10-42-36.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5azlW7UdPa9zT23P9Iou6B/13bc3905d44745494afac3f847d87ff2/2024-12-05_16-14-43.png?_a=DAJAUVWIZAAB" %}
 添加客户组织席位
 {% endembed %}
 
