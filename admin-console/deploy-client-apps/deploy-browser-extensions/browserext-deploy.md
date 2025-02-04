@@ -1,22 +1,20 @@
-# =使用 GPO、Linux 策略和 .plist 文件部署浏览器扩展
+# 使用 GPO、Linux 策略和 .plist 文件部署浏览器扩展
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/browserext-deploy/)
 {% endhint %}
 
-在商业环境中操作 Bitwarden 时，管理员可能希望使用端点管理平台或组策略自动向用户部署 Bitwarden 浏览器扩展。
-
-对于每种操作系统和浏览器，操作过程会有所不同：
+在商业环境中操作 Bitwarden 时，管理员可能希望通过端点管理平台或组策略向用户自动部署 Bitwarden 浏览器扩展。本文将介绍如何使用 GPO 和其他模板通过端点管理平台向用户自动部署 Bitwarden 浏览器扩展。
 
 ## Windows
 
-要将 Bitwarden 浏览器扩展部署到 Windows 上的浏览​​器，通常需要使用 Windows 组策略将 ADMX 策略模板作为目标托管计算机。每种浏览器的过程略有不同：
+要在 Windows 浏览器上部署 Bitwarden 浏览器扩展，通常需要使用 Windows 组策略，将受管计算机作为 ADMX 策略模板的目标。每种浏览器的步骤略有不同：
 
 {% tabs %}
 {% tab title="Chrome" %}
 要在 Windows Google Chrome 上部署浏览器扩展：
 
-1、下载并解压适用于 Windows 的 [Chrome Enterprise Bundle](https://chromeenterprise.google/browser/download/#windows-tab)。
+1、下载并解压适用于 Windows 的 [Chrome Enterprise Bundle](https://chromeenterprise.google/intl/zh_cn/download/)。
 
 2、从已解压缩的目录：
 
@@ -78,7 +76,7 @@ https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/l
 {% tab title="Edge" %}
 在 Windows Edge 上部署浏览器扩展：
 
-1、下载并解压缩 [Microsoft Edge 策略](https://www.microsoft.com/en-us/edge/business/download)文件。
+1、下载并解压缩 [Microsoft Edge 策略文件](https://www.microsoft.com/zh-cn/edge/business/download?form=MA13FJ)。
 
 2、从已解压缩的目录：
 
@@ -111,7 +109,7 @@ jbkfoedolllekgbhcbcoahefnbanhhlh;https://edge.microsoft.com/extensionwebstorebas
 
 ## Linux
 
-要将 Bitwarden 浏览器扩展部署到 Linux 上的浏览​​器，通常涉及使用 `.json` 文件来设置配置属性。每种浏览器的过程略有不同：
+要在 Linux 浏览器上部署 Bitwarden 浏览器扩展，通常涉及使用 `.json` 文件来设置配置属性。每种浏览器的步骤略有不同：
 
 {% tabs %}
 {% tab title="Chrome" %}
@@ -119,7 +117,7 @@ jbkfoedolllekgbhcbcoahefnbanhhlh;https://edge.microsoft.com/extensionwebstorebas
 
 1、下载适用于 Linux 的 [Google Chrome .deb 或 .rpm](https://www.google.com/chrome/?platform=linux)。
 
-2、下载 [Chrome Enterprise Bundle](https://chromeenterprise.google/browser/download/#windows-tab)。
+2、下载 [Chrome Enterprise Bundle](https://chromeenterprise.google/intl/zh_cn/download/)。
 
 3、解压缩 Enterprise Bundle（`GoogleChromeEnterpriseBundle64.zip` 或 `GoogleChromeEnterpriseBundle32.zip`）并打开 `/Configuration` 文件夹。
 
@@ -155,7 +153,7 @@ jbkfoedolllekgbhcbcoahefnbanhhlh;https://edge.microsoft.com/extensionwebstorebas
 }
 ```
 
-7、如果以下目录尚不存在，则创建以下目录：
+7、如果以下目录不存在，则创建以下目录：
 
 ```shell
 mkdir /etc/opt/chrome/policies
@@ -166,8 +164,8 @@ mkdir /etc/opt/chrome/policies/managed
 
 9、由于您需要将这些文件部署到用户的机器上，我们建议确保只有管理员可以在 /managed 目录中写入文件：
 
-```
-// Some codechmod -w /etc/opt/chrome/policies/managed
+```bash
+chmod -R 755 /etc/opt/chrome/policies
 ```
 
 10、使用您首选的软件分发或 MDM 工具，将以下内容部署到用户的机器上：
@@ -176,14 +174,14 @@ mkdir /etc/opt/chrome/policies/managed
 * `/etc/opt/chrome/policies/managed/managed_preferences.json`
 
 {% hint style="success" %}
-如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Linux)](https://support.google.com/chrome/a/answer/9025926?hl=zh-Hans\&ref_topic=9025817) 指南。
+如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Linux)](https://support.google.com/chrome/a/answer/9025926?hl=zh-Hans) 指南。
 {% endhint %}
 {% endtab %}
 
 {% tab title="Firefox" %}
 要在 Linux Firefox 上部署浏览器扩展：
 
-1、下载适用于 Linux 的 [Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release)。
+1、下载适用于 [Linux 版 Firefox](https://www.mozilla.org/zh-CN/firefox/all/#product-desktop-release)。
 
 2、在 Firefox 安装目录中创建一个 `distribution` 目录。
 
@@ -227,15 +225,15 @@ mkdir /etc/opt/chrome/policies/managed
 
 ## macOS
 
-要将 Bitwarden 浏览器扩展部署到 macOS 上的浏览​​器，通常涉及使用属性列表（`.plist`）文件。每种浏览器的过程略有不同：
+要在 macOS 浏览器上部署 Bitwarden 浏览器扩展，通常涉及使用属性列表（`.plist`）文件。每种浏览器的步骤略有不同：
 
 {% tabs %}
 {% tab title="Chrome" %}
 要在 macOS Google Chrome 上部署浏览器扩展：
 
-1、下载适用于 macOS 的 [Google Chrome .dmg 或 .pkg](https://chromeenterprise.google/browser/download/#mac-tab)。
+1、下载适用于 macOS 的 [Google Chrome .dmg 或 .pkg](https://chromeenterprise.google/intl/zh_cn/download/)。
 
-2、下载 [Chrome Enterprise Bundle](https://chromeenterprise.google/browser/download/#windows-tab)。
+2、下载 [Chrome Enterprise Bundle](https://chromeenterprise.google/intl/zh_cn/download/)。
 
 3、解压缩 Enterprise Bundle（`GoogleChromeEnterpriseBundle64.zip` 或 `GoogleChromeEnterpriseBundle32.zip`）。
 
@@ -258,8 +256,6 @@ mkdir /etc/opt/chrome/policies/managed
 
 在此代码块中，`nngceckbapebfimnlniiiahkandclblb` 是 Bitwarden 浏览器扩展的应用程序标识符。类似地，`https://clients2.google.com/service/update2/crx` 示意 Chrome 让其使用 Chrome 网上应用商店检索已识别的应用程序。
 
-
-
 {% hint style="info" %}
 您也可以使用 [ExtensionInstallForcelist](https://chromeenterprise.google/policies/?policy=ExtensionInstallForcelist) 策略来配置强制性安装，但是 [ExtensionSettings](https://support.google.com/chrome/a/answer/7517525#getID\&zippy=%2Cset-custom-message-for-blocked-apps-and-extensions%2Cprevent-apps-and-extensions-from-altering-webpages) 方法将取代 ExtensionInstallForceList。
 {% endhint %}
@@ -276,14 +272,14 @@ mkdir /etc/opt/chrome/policies/managed
 8、使用您的软件分发或 MDM 工具将 Chrome `.dmg` 或 `.pkg` 和配置文件部署到所有托管计算机。
 
 {% hint style="success" %}
-如需更多帮助，请参阅 Google 的ya [Chrome 浏览器快速入门 (Mac)](https://support.google.com/chrome/a/answer/9020580?hl=zh-Hans\&ref_topic=7650028) 指南。
+如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Mac)](https://support.google.com/chrome/a/answer/9020580?hl=zh-Hans) 指南。
 {% endhint %}
 {% endtab %}
 
 {% tab title="Firefox" %}
 要在 macOS Firefox 上部署浏览器扩展：
 
-1、下载并安装适用于 macOS 的[企业版 Firefox](https://www.mozilla.org/en-US/firefox/enterprise/#download)。
+1、下载并安装适用于 macOS 的[企业版 Firefox](https://www.mozilla.org/zh-CN/firefox/enterprise/#download)。
 
 2、在 `Firefox.app/Contents/Resources/` 中创建一个 `distribution` 目录。
 
@@ -327,7 +323,7 @@ mkdir /etc/opt/chrome/policies/managed
 {% tab title="Edge" %}
 要在 macOS Edge 上部署浏览器扩展：
 
-1、下载适用于 macOS 的 [Microsoft Edge .pkg](https://www.microsoft.com/en-us/edge) 文件。
+1、下载适用于 macOS 的 [Microsoft Edge .pkg](https://www.microsoft.com/zh-cn/edge/) 文件。
 
 2、在终端中，使用以下命令为 Microsoft Edge 创建 `.plist` 文件：
 
