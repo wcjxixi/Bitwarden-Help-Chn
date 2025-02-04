@@ -4,7 +4,7 @@
 对应的官[方文档地址](https://bitwarden.com/help/article/proof-of-concept/)
 {% endhint %}
 
-> **\[译者注]**：[PoC](https://zh.wikipedia.org/wiki/%E6%A6%82%E5%BF%B5%E9%AA%8C%E8%AF%81)：Proof of Concept，概念验证。概念验证是对某些想法的一个较短而不完整的实现，以证明其可行性，示范其原理，其目的是为了验证一些概念或理论。概念验证通常被认为是一个有里程碑意义的实现的原型 。
+> **\[译者注]**：[PoC](https://zh.wikipedia.org/wiki/%E6%A6%82%E5%BF%B5%E9%AA%8C%E8%AF%81)：Proof of Concept（概念验证）。概念验证是对某些想法的一个较短而不完整的实现，以证明其可行性，示范其原理，其目的是为了验证一些概念或理论。概念验证通常被认为是一个有里程碑意义的实现的原型 。
 
 本指南由 Bitwarden 的产品、实施和销售专家设计，以帮助指导您的企业运行 Bitwarden 的 PoC。Bitwarden 提供[企业组织](../organizations/organizations.md)的免费试用，我们相信通过在这段时间内分散这些步骤将有助于形成一个成功的 PoC。
 
