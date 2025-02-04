@@ -1,10 +1,10 @@
-# 税收计算
+# 税费计算
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/tax-calculation/)
 {% endhint %}
 
-本文介绍了如何对付费 Bitwarden 订阅进行税收评估。有关您的 Bitwarden 订阅信息，可在以下位置查看：
+本文介绍了如何对付费 Bitwarden 订阅进行税费评估。有关您的 Bitwarden 订阅信息，可在以下位置查看：
 
 * 对于个人用户，可以在密码管理器**设置** → **订阅**菜单中查看。
 * 对于组织，可以在管理控制台**计费** → **订阅**菜单中查看。
@@ -27,7 +27,7 @@
 
 ### 商业订阅 <a href="#business-subscriptions" id="business-subscriptions"></a>
 
-对于商业订阅，包括[团队组织](password-manager/about-bitwarden-plans.md#teams-organizations)和[企业组织](password-manager/about-bitwarden-plans.md#enterprise-organizations)，**如果您提供了有效的增值税 (VAT) / 消费税 (GST) 税号**，则增值税包含在您的 Bitwarden 订阅费用中。您可以在注册时提供税号，也可以随时在管理控制面板的**计费** → **付款方式**视图中选择**更改付款方式**，或联系客户支持：
+对于商业订阅，包括[团队组织](password-manager/about-bitwarden-plans.md#teams-organizations)和[企业组织](password-manager/about-bitwarden-plans.md#enterprise-organizations)，**如果您提供了有效的增值税 (VAT) / 消费税 (GST) 税号**，则增值税包含在您的 Bitwarden 订阅费用中。您可以在注册时提供税务 ID，也可以随时在管理控制面板的**计费** → **付款方式**视图中选择**更改付款方式**，或联系客户支持：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/R4dZ2RT4aA3Qli29vSGz2/54b99a3132aa27a0b1a1cd3bd0eda397/2025-01-21_10-42-28.png?_a=DAJAUVWIZAAB" %}
 

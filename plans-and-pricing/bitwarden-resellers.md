@@ -14,6 +14,8 @@
 
 以下是一些有用的链接，供您在转售 Bitwarden 时使用，或提供给您的客户：
 
-* [关于 Bitwarden 计划](password-manager/about-bitwarden-plans.md#business-plans)
+* [Password Manager 计划](password-manager/about-bitwarden-plans.md#business-plans)
+* [Secrets Manager 计划](secrets-manager/secrets-manager-plans.md)
 * [组织快速入门](../admin-console/organizations-quick-start.md)
+* [Secrets Manager 快速入门](../secrets-manager/get-started/secrets-manager-quick-start.md)
 * [Bitwarden 入门：团队成员](../miscellaneous/get-started-team-member.md)
