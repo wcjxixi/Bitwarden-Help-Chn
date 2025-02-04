@@ -174,7 +174,7 @@ chmod -R 755 /etc/opt/chrome/policies
 * `/etc/opt/chrome/policies/managed/managed_preferences.json`
 
 {% hint style="success" %}
-如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Linux)](https://support.google.com/chrome/a/answer/9025926?hl=zh-Hans) 指南。
+如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Linux)](https://support.google.com/chrome/a/answer/9025903?hl=en\&ref_topic=9025817\&sjid=18069515108639844992-NC) 指南。
 {% endhint %}
 {% endtab %}
 
@@ -272,7 +272,7 @@ chmod -R 755 /etc/opt/chrome/policies
 8、使用您的软件分发或 MDM 工具将 Chrome `.dmg` 或 `.pkg` 和配置文件部署到所有托管计算机。
 
 {% hint style="success" %}
-如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Mac)](https://support.google.com/chrome/a/answer/9020580?hl=zh-Hans) 指南。
+如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Mac)](https://support.google.com/chrome/a/answer/7550274?hl=zh-Hans\&sjid=18069515108639844992-NC) 指南。
 {% endhint %}
 {% endtab %}
 
