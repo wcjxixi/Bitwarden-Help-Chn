@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/deploy-browser-extensions-with-intune/)
 {% endhint %}
 
-在商业环境中操作 Bitwarden 时，管理员可能希望通过 **Microsoft Intune** 向用户自动部署 Bitwarden 浏览器扩展。本文将介绍如何使用 Intune 将 Bitwarden Password Manager 浏览器扩展部署到您的终端。
+在商业环境中操作 Bitwarden 时，管理员可能希望通过 **Microsoft Intune** 向用户自动部署 Bitwarden 浏览器扩展。本文将介绍如何使用 Intune 将 Bitwarden Password Manager 浏览器扩展部署到您的端点。
 
 ## 获取扩展 ID 和更新 URL <a href="#get-extension-id-and-update-url" id="get-extension-id-and-update-url"></a>
 
