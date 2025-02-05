@@ -1,7 +1,7 @@
 # 为您的服务器配置客户端
 
 {% hint style="success" %}
-参阅[为您的服务器配置客户端](../../self-hosting/configure-clients-centrally.md)
+对应的[官方文档地址](https://bitwarden.com/help/article/configure-clients/)
 {% endhint %}
 
 > **\[译者注]**：

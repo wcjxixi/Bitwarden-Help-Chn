@@ -6,16 +6,16 @@
 
 ## 什么是组织？ <a href="#what-are-organizations" id="what-are-organizations"></a>
 
-组织将 Bitwarden 用户和密码库项目联系在一起，以[安全地共享](sharing.md)登录、笔记、支付卡和身份信息。组织有一个独立的密码库，[管理员](../admin-console/user-management/member-roles-and-permissions.md)可以在其中管理组织的项目、用户和设置：
+组织将 Bitwarden 用户和密码库项目联系在一起，以[安全地共享](sharing.md)登录、笔记、支付卡和身份信息。组织有一个独立的视图，即管理员控制台，[管理员](../admin-console/user-management/member-roles-and-permissions.md)可在此管理组织的项目和成员、运行报告以及配置组织设置等：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1pgKWi4j94eDV9ehpEeUvw/b8658ed64c38494c4ce5643a38614d98/org-vault-admin.png?fm=webp&h=264&q=50&w=766" %}
-组织密码库
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?_a=DAJCwlWIZAAB" %}
+免费组织管理控制台
 {% endembed %}
 
-组织的成员可以在他们的**我的密码库**视图中找到已共享的项目，其与个人项目列在一起，以及已分配的集合筛选器，[集合](collections.md)用于分组组织项目，类似于[文件夹](../your-vault/folders.md)用于组织个人项目：
+组织的成员可以在他们的**密码库**视图中找到已共享的项目，其与个人项目列在一起，以及使用多种方法将项目列表筛选为组织项目或特定[集合](collections.md)中的项目：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2eTZv2cAjumq5CpxEksC6l/16016ba8f33911a75266a15edf2b5c14/personal-vault-org-enabled.png?fm=webp&h=403&q=50&w=766" %}
-访问已共享的项目
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?_a=DAJCwlWIZAAB" %}
+组织密码库
 {% endembed %}
 
 ### 组织的类型 <a href="#types-of-organizations" id="types-of-organizations"></a>
@@ -36,32 +36,63 @@ Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需�
 
 ## 创建组织 <a href="#create-an-organization" id="create-an-organization"></a>
 
-通过[网页密码库](../getting-started/getting-started-webvault.md)创建和管理组织。如果您是 Bitwarden 新手，请在开始一个组织之前[创建一个帐户](https://vault.bitwarden.com/#/register)，然后按照以下说明进行操作：
+通过[网页 App](../getting-started/getting-started-webvault.md) 创建和管理组织。如果您是 Bitwarden 新手，请在开始一个组织之前[创建一个帐户](https://vault.bitwarden.com/#/register)，然后按照以下说明进行操作：
 
-1、从您的网页密码库中选择**新建组织**按钮：
+1、从 Bitwarden 网页 App 中选择**新建组织**按钮：
 
-![选择新建组织](../.gitbook/assets/new-org-button-overlay.png)
+![新建组织](../.gitbook/assets/new-org-button-overlay.png)
 
-输入**组织名称**和一个我们可以联系到您的**账单电子邮件**。
+输入**组织名称**和一个我们可以联系到您的**账单电子邮箱**。[了解计费电子邮箱持有者的权限](../plans-and-pricing/billing-faqs.md#wen-wo-de-zu-zhi-de-ji-fei-dian-zi-you-jian-de-chi-you-zhe-ke-yi-zhi-xing-na-xie-cao-zuo)。
 
-2、选中**此帐户由公司拥有**复选框，将过滤为适合企业的选项，并提示您输入**企业名称**，以便我们知道该感谢谁！
-
-3、**选择您的计划**。Bitwarden 提供适合任何需求的组织。查看[功能区别](../plans-and-pricing/password-manager/about-bitwarden-plans.md#ji-hua-bi-jiao)，以找出最适合您的组织。
+2、**选择您的计划**。Bitwarden 提供适合任何需求的组织。查看[功能区别](../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-business-plans)，以找出最适合您的组织。
 
 {% hint style="success" %}
-所有付费组织（家庭、团队或企业）都包含了所有注册用户的高级功能！
+所有付费组织（家庭、初创团队、团队或企业）都包含了所有注册用户的高级功能！
 {% endhint %}
 
 4、如果您选择**免费组织**，那么一切就准备好了！如果您选择我们的付费组织之一，
 
-* **家庭/团队/企业**：您的计划随附了 1GB 加密[附件存储](../your-vault/file-attachments.md)空间。$0.33/月/GB 添**加附加存储（GB）**。
+* **家庭/团队/企业**：您的计划随附了 1GB 加密[附件存储](../your-vault/file-attachments.md)空间。$0.33 /GB / 月添加**加附加存储（GB）**。
 * **团队/企业**：指定组织所需的**用户席位**数量。以后可以随时添加更多席位。如果超过此数量，席位会自动增加，除非您[指定限制](user-management.md#set-a-seat-limit)。
 * **团队/企业**：选择您要**按年**还是**按月**付费。家庭组织只能**按年**付费。
 
-5、对组织满意后，请输入您的**付款信息**，然后选择**提交**。
+5、对组织满意后，请输入您的**付款信息**（如果您创建的是免费组织，则不需要），然后选择**提交**。
 
 {% hint style="success" %}
 新的家庭、团队和企业组织内置了 7 天免费试用！在您的试用期结束之前，我们不会向您收费，您可以随时从组织的**设置**选项卡中取消订阅。
 {% endhint %}
 
 创建您的组织后，就可以创建[集合](collections.md)、[邀请用户](user-management.md)并[开始共享](sharing.md)。
+
+## 集合和群组 <a href="#collections-and-groups" id="collections-and-groups"></a>
+
+Bitwarden 集合和群组是一种组织工具，可以让您安全地共享数据并管理大规模访问。
+
+### 集合 <a href="#collections" id="collections"></a>
+
+集合是一种关联和共享项目的方式，类似于共享文件夹。项目可以属于一个或多个集合。拥有相应权限的用户可以对集合进行管理。集合通常可以按以下方式组织：
+
+* 部门（工程部、人力资源部）
+* 责任领域（社交媒体、软件开发）
+* 功能（合规报告、客户外联）
+
+要开始使用集合，请参阅[此处](collections.md)。
+
+### 群组 <a href="#groups" id="groups"></a>
+
+群组关联组织成员的一种方式，类似于身份提供商中的用户群组。群组使管理员能够批量授予或撤销集合权限，或在新成员加入组织时充当模板。群组通通常可以按以下方式组织：
+
+* 部门（工程部、人力资源部）
+* 供应商或系统（AWS、生产服务器）
+* 地区（美国员工、欧盟员工）
+
+要开始使用群组，请参阅[此处](groups.md)。
+
+## 升级组织 <a href="#upgrade-an-organization" id="upgrade-an-organization"></a>
+
+如果您想将组织升级到另一个计划，以解锁[附加功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md)：
+
+1. 在管理控制台中，导航到组织的**计费** → **订阅**视图。
+2. 选择**升级计划**按钮。
+
+您只能将组织升级到更高的计划，例如从团队计划升级到企业计划。以这种方式升级组织不会像创建新组织那样启动 7 天免费试用。
