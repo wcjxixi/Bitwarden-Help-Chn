@@ -214,7 +214,7 @@
     * [密码库健康报告](admin-console/reporting/vault-health-reports.md)
     * [事件日志](admin-console/reporting/event-logs.md)
     * [Elastic SIEM](admin-console/reporting/elastic-siem.md)
-    * [=Microsoft Sentinel SIEM](admin-console/reporting/microsoft-sentinel-siem.md)
+    * [Microsoft Sentinel SIEM](admin-console/reporting/microsoft-sentinel-siem.md)
     * [Panther SIEM](admin-console/reporting/panther-siem.md)
     * [Rapid7 SIEM](admin-console/reporting/rapid7-siem.md)
     * [Splunk SIEM](admin-console/reporting/splunk-siem.md)
