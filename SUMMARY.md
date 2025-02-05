@@ -276,7 +276,7 @@
   * [配置环境变量](self-hosting/configure-environment-variables.md)
   * [数据库选项](self-hosting/database-options.md)
   * [连接到外部 MSSQL 数据库](self-hosting/connect-to-an-external-mssql-database.md)
-  * [=Kerberos 集成](self-hosting/kerberos-integration.md)
+  * [Kerberos 集成](self-hosting/kerberos-integration.md)
   * [更新您的实例](self-hosting/update-your-instance.md)
   * [备份您的托管数据](self-hosting/backup-your-hosted-data.md)
   * [付费功能许可证](self-hosting/licensing-for-paid-features.md)
