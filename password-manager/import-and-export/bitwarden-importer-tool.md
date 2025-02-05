@@ -1,7 +1,7 @@
-# Bitwarden 导入器工具
+# \*Bitwarden 导入器工具
 
 {% hint style="success" %}
-描述对应的[官方文档地址](https://bitwarden.com/help/bitwarden-importer-tool/)
+对应的[官方文档地址](https://bitwarden.com/help/bitwarden-importer-tool/)
 {% endhint %}
 
 Bitwarden 导入器工具可以轻松地将您的密码和其他信息从其他服务转移到 Bitwarden。Bitwarden 导入器工具兼容：

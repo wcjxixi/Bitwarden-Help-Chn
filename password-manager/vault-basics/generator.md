@@ -1,4 +1,4 @@
-# 用户名和密码生成器
+# 用户名 & 密码生成器
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/generator/)
@@ -20,7 +20,7 @@
 网页密码库的密码生成器
 {% endembed %}
 
-您在此页面上[指定的选项](username-password-generator.md#password-types)将保存以供密码生成器将来使用。您也可以使用相同的选项直接从添加/编辑项目界面使用 **⟳生成**按钮快速生成强密码：
+您在此页面上[指定的选项](generator.md#password-types)将保存以供密码生成器将来使用。您也可以使用相同的选项直接从添加/编辑项目界面使用 **⟳生成**按钮快速生成强密码：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5ZVBOSK13MaXJ2S8iJTOMX/59d4f77d47be9ecfd5957d00b70655e7/Screen_Shot_2022-04-05_at_9.09.39_AM.png?fm=webp&h=242&q=50&w=776" %}
 网页密码库的密码生成器
@@ -82,7 +82,7 @@ bw generate -uln --length 14
 * `--minSpecial`
 * `--ambiguous`
 
-有关详细信息，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+有关详细信息，请参阅 Bitwarden [CLI 文档](../developer-tools/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -176,7 +176,7 @@ bw generate -uln --length 14
 
 选择此类型以使用您的电子邮件提供商的子地址（也称为「附加寻址」或「别名」）功能。这将基于您指定的**电子邮件地址**生成一个附加地址（以 `+` 和随机字符串命名）的用户名。
 
-在浏览器扩展和桌面应用程序的添加/编辑项目界面，您可以选择使用**随机字符串**（例如 `alice+gsd4aqqe@bitwarden.com`）生成用户名，或基于项目的**网站名称**（例如 `alice+github.com@ bitwarden.com`）生成用户名。**网站名称**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../auto-fill/using-uris.md)，在其他位置，用户名生成器默认为**随机**。
+在浏览器扩展和桌面应用程序的添加/编辑项目界面，您可以选择使用**随机字符串**（例如 `alice+gsd4aqqe@bitwarden.com`）生成用户名，或基于项目的**网站名称**（例如 `alice+github.com@ bitwarden.com`）生成用户名。**网站名称**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../../auto-fill/using-uris.md)，在其他位置，用户名生成器默认为**随机**。
 
 {% hint style="success" %}
 **为什么要使用附加地址电子邮件？**
@@ -188,7 +188,7 @@ bw generate -uln --length 14
 
 选择此类型以使用您的域名配置的 Catch-all 收件箱。这将在您指定的**域名**中生成一个随机的电子邮件地址。
 
-在浏览器扩展和桌面应用程序的添加/编辑项目界面，您可以选择使用**随机字符串**（例如 `bqzjlero@gardenllc.com`）生成用户名，或基于项目的**网站名称**（例如 `twitter.com@gardenllc.com`）生成用户名。**网站名称**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../auto-fill/using-uris.md)，在其他位置，用户名生成器默认为**随机**。
+在浏览器扩展和桌面应用程序的添加/编辑项目界面，您可以选择使用**随机字符串**（例如 `bqzjlero@gardenllc.com`）生成用户名，或基于项目的**网站名称**（例如 `twitter.com@gardenllc.com`）生成用户名。**网站名称**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../../auto-fill/using-uris.md)，在其他位置，用户名生成器默认为**随机**。
 
 {% hint style="success" %}
 **为什么要使用 Catch-all 电子邮件？**

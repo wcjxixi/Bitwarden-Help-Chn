@@ -4,6 +4,8 @@
 对应的[官方文档地址](https://bitwarden.com/help/admin-team-onboarding-emails/)
 {% endhint %}
 
+本文包含从 **care@bitwarden.com** 发送给新的 Bitwarden Enterprise 和 Team 管理员和所有者的入职电子邮件。请随意一次性阅读下面的全部内容，或将它们提取并根据您团队的需求进行调整。
+
 {% tabs %}
 {% tab title="企业" %}
 ## 入职概述 <a href="#onboarding-overview" id="onboarding-overview"></a>

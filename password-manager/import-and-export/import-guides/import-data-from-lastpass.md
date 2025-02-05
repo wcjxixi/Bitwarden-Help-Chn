@@ -84,7 +84,7 @@ LastPass 导出
 2. 在浏览器扩展中，选择**设置**选项卡，然后选择**导入项目**选项。或者，在桌面应用程序中，选择**文件** -> **导入数据**。
 3. 从下拉菜单中完成以下字段：
    1. **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
-   2. **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
+   2. **文件夹**或**集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
    3. [**文件格式**](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择 LastPass。
    4. 在 LastPass 说明框中，选择**直接从 LastPass 导入**选项。
    5. 输入您的 **LastPass 电子邮件地址**。
@@ -94,6 +94,8 @@ LastPass 导出
 {% hint style="success" %}
 如果您的 LastPass 账户激活了多重身份验证，系统将提示您输入来自身份验证器应用程序的一次性密码。如果您使用 Duo 方式的 MFA，则仅支持应用内审批以满足您的 MFA 要求。
 {% endhint %}
+
+[文件附件](../../../your-vault/file-attachments.md)、回收站等附加项目需要手动上传到您的密码库。
 {% endtab %}
 
 {% tab title="文件导入" %}
@@ -110,7 +112,7 @@ LastPass 导出
 3、从下拉菜单中完成以下字段：
 
 * **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
-* **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
+* **文件夹**或**集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
 * [**文件格式**](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 4、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
@@ -146,13 +148,14 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ## 使用 SSO 直接导入 <a href="#direct-import-with-sso" id="direct-import-with-sso"></a>
 
 {% hint style="danger" %}
-以下 IdP 不支持使用 SSO 的 LastPass 账户的直接导入：
+以下 IdP 不支持 LastPass 账户使用 SSO 直接导入：
 
 * Google Workspace
 * ADFS
+* Microsoft Entra ID
 {% endhint %}
 
-如果您是使用 SSO LastPass 的团队管理员，则您需要先完成以下操作，然后您的团队才能使用**直接导入**选项：
+如果您是使用 SSO 的 LastPass 团队管理员，则您需要先完成以下操作，然后您的团队才能使用**直接导入**选项：
 
 * 在 IdP 的 LastPass 应用程序中添加 `bitwarden://sso-callback-lp` 和 `bitwarden://import-callback-lp` 作为允许的回调 URL。
 
