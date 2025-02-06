@@ -148,6 +148,10 @@ function (user, context, callback) {
 | Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                                  |
 | Want Authentication Requests Signed       | Auth0 是否要求 SAML 请求被签名。                                                                                                                                                                                                              |
 
+{% hint style="info" %}
+填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
+{% endhint %}
+
 完成身份提供程序配置部分后，**Save**（保存）您的工作。
 
 {% hint style="success" %}
@@ -156,12 +160,18 @@ function (user, context, callback) {
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 并选择 **Enterprise Single Sign-On** 按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
 
-![企业 Single Sign-On 按钮](https://raw.githubusercontent.com/bitwarden/help/master/images/sso/sso-button-lg.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
+登录选项界面
+{% endembed %}
 
-输入[已配置的组织标识符](../saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择 **Log In**。如果您的实施已成功配置，您将被重定向到 Auth0 的登录界面：
+输入[已配置的组织标识符](../saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Auth0 的登录界面：
 
 ![Auth0 登录界面](https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-login.png)
 
 使用您的 Auth0 凭据进行身份验证后，输入您的 Bitwarden 主密码来解密您的密码库！
+
+{% hint style="info" %}
+Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致错误。SSO 登录流程必须从 Bitwarden 发起。
+{% endhint %}

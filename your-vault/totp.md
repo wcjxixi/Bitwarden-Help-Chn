@@ -20,7 +20,7 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-au
 
 ## 生成 TOTP 代码 <a href="#generate-totp-codes" id="generate-totp-codes"></a>
 
-在 Bitwarden Password Manager 中，你可以使用两种方式生成 TOTP：
+在 Bitwarden Password Manager 中，您可以使用两种方式生成 TOTP：
 
 * 通过在 Bitwarden 移动 App 或浏览器扩展中[扫描二维码](totp.md#scan-a-qr-code)
 * 通过在任一个 Bitwarden App 中[手动输入安全代码](totp.md#manually-enter-a-secret)
@@ -30,12 +30,16 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-au
 完成以下步骤，以从您选择的应用程序设置集成身份验证：
 
 {% tabs %}
-{% tab title="iOS 或 Android App" %}
+{% tab title="移动 App" %}
 1、**编辑**要为其生成 TOTP 的密码库项目。
 
 2、点击 **📷 设置 TOTP** 按钮。
 
-3、扫描 QR 码，然后点击**保存**以开始生成 TOTP。
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1cjF7IObqGhZL2ETA6XhTU/10641831c6fb690b85c3c99f39f1b1b1/2025-01-21_16-46-53.png?_a=DAJCwlWIZAAB" %}
+在移动 App 上设置 TOTP
+{% endembed %}
+
+3、扫描二维码，然后点击**保存**以开始生成 TOTP。
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -43,11 +47,11 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-au
 
 2、选择 **📷 TOTP** 按钮。它将从当前网页扫描验证器二维码。完整的二维码必须在屏幕上可见。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7vTPBRNX8Q1xxOZsqFxWBQ/f5e30d5811348f89d94b3a278210059c/2024-02-01_17-18-10.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7vTPBRNX8Q1xxOZsqFxWBQ/3a91391f5c233743b8f6be509086f895/2024-10-29_11-04-36.png?_a=DAJCwlWIZAAB" %}
 浏览器 TOTP 扫描
 {% endembed %}
 
-3、扫描 QR 码，然后点击**保存**以开始生成 TOTP。
+3、扫描二维码，然后点击**保存**以开始生成 TOTP。
 {% endtab %}
 {% endtabs %}
 
@@ -62,7 +66,7 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-au
 3. 在此界面底部点击**手动输入代码**连接。
 4. 将安全密钥粘贴到**验证器密钥**字段中，然后点击**添加 TOTP**。
 
-设置完成后，集成身份验证将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或 App 的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
+设置完成后，集成身份验证将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或 App 辅助步骤。您可以随时使用「编辑项目」界面上的 **📷** 图标来编辑 TOTP 种子。
 
 ## 使用生成的代码 <a href="#use-generated-codes" id="use-generated-codes"></a>
 
@@ -136,11 +140,11 @@ Restart-Computer
 
 默认情况下，Bitwarden 使用 SHA-1 生成 6 位数 TOTP 代码，并且每 30 秒轮换一次，但有些网站或服务的 TOTP 代码会要求不同的参数。参数可以在 Bitwarden 中通过手动编辑您的密码库项目的 `otpauth://totp/` URI 来定制。
 
-| 参数        | 描述              | 值                                  | 示例                 |
-| --------- | --------------- | ---------------------------------- | ------------------ |
-| Algorithm | 用于生成 TOTP 的加密算法 | <p>-sha1<br>-sha256<br>-sha512</p> | `algorithm=sha256` |
-| Digits    | 生成的 TOTP 的位数    | 1-10                               | `digits=8`         |
-| Period    | 轮换 TOTP 的秒数     | 必须 > 0                             | `period=60`        |
+| 参数          | 描述              | 值                                  | 示例                 |
+| ----------- | --------------- | ---------------------------------- | ------------------ |
+| `algorithm` | 用于生成 TOTP 的加密算法 | <p>-sha1<br>-sha256<br>-sha512</p> | `algorithm=sha256` |
+| `digits`    | 生成的 TOTP 的位数    | 1-10                               | `digits=8`         |
+| `period`    | 轮换 TOTP 的秒数     | 必须 > 0                             | `period=60`        |
 
 示例：
 
@@ -171,9 +175,9 @@ otpauth://totp/Test:me?secret=JBSWY3DPEHPK3PXP&algorithm=sha256&digits=8&period=
 开启 2FA
 {% endembed %}
 
-3、选择两步验证的**打开**按钮或**添加登录方式**按钮，然后从下拉列表中选择 **Authenticator 应用程序**。
+3、选择两步验证的**打开**按钮或**添加登录方式**按钮，然后从下拉列表中选择 Authenticator App。
 
-4、在设置过程中，您会看到一个验证方法的下拉菜单。选择**验证器应用程序**或**应用程序**。
+4、在设置过程中，您会看到一个验证方法的下拉菜单。选择**验证器 App** 或 **An App**。
 
 5、继续，直到您看到蓝色的不同的身份验证器应用程序超链接。看到超链接时选择它。
 

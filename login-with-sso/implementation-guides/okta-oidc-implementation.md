@@ -99,14 +99,31 @@ Okta 授权服务器设置
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 并选择 **Enterprise Single Sign-On** 按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
 
-![企业 Single Sign-On 按钮](https://images.ctfassets.net/7rncvj1f8mw7/3TjmG99YArRXpsaBHH77Mt/0e4be9262c1a51be449880390ddd19f5/sso-button-lg.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
+登录选项界面
+{% endembed %}
 
-输入[已配置的组织标识符](../saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择 **Log In**。如果您的实施已成功配置，您将被重定向到 Okta 登录界面：
+输入[已配置的组织标识符](../saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Okta 登录界面：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3Rh2Bg17sCE57xJsUKfqwN/4342c56fa656be94ef90dd620251a868/okta-login.png?fm=webp&h=620&q=50&w=427" %}
 Okta 登录界面
 {% endembed %}
 
 使用 Okta 凭据进行身份验证后，输入您的 Bitwarden 主密码以解密您的密码库！
+
+{% hint style="info" %}
+Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致错误。SSO 登录流程必须从 Bitwarden 发起。Okta 管理员可以创建一个 [Okta Bookmark App](https://support.okta.com/help/s/article/How-do-you-create-a-bookmark-app?language=en_US)，这将直接链接到 Bitwarden 网络密码库登录页面。
+
+1. 作为管理员，进入主导航栏上的 **Applications** 下拉菜单，选择 **Applications**。
+2. 点击 **Browse App Catalog**。
+3. 搜索 **Bookmark App** 然后单击 **Add Integration**。
+4. 向应用程序添加以下设置：
+   1. 为应用程序命名，如 **Bitwarden Login**。
+   2. 在 **URL** 字段，提供 Bitwarden 客户端的 URL，如 `https://vault.bitwarden.com/#/login` 或 `your-self-hostedURL.com`。
+5. 选择 **Done** 并返回应用程序仪表板，编辑新创建的应用程序。
+6. 为应用程序分配人员和群组。您还可以为应用程序指定一个徽标，以便最终用户识别。 Bitwarden 徽标可在[此处](https://github.com/bitwarden/brand/tree/master)获取。
+
+完成此过程后，被分配的人员和群组将在其 Okta 面板上拥有一个 Bitwarden 书签应用程序，该应用程序将直接链接到 Bitwarden 网络密码库登录页面。
+{% endhint %}

@@ -1,4 +1,4 @@
-# =Microsoft Entra ID SAML 实施
+# Microsoft Entra ID SAML 实施
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/saml-microsoft-entra-id/)
@@ -38,21 +38,21 @@ SAML 2.0 配置
 
 ## 创建企业应用程序 <a href="#create-an-enterprise-application" id="create-an-enterprise-application"></a>
 
-在 Azure 门户中，导航到 **Azure Active Directory** 并从导航菜单中选择 **Enterprise applications**：
+在 Azure 门户中，导航到 **Microsoft Entra ID** 然后从导航菜单中选择 **Enterprise applications**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/69h0vJlyvkF5J6tsKfQ7jd/1a6cd30a127f597a3f5b53121bc60adc/az-create.png?fm=webp&h=641&q=50&w=1079" %}
-企业应用
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/69h0vJlyvkF5J6tsKfQ7jd/4994ed3200bdce4b5faea87e1ac2de83/Enterprise_application.png?_a=DAJCwlWIZAAB" %}
+企业应用程序
 {% endembed %}
 
 选择 **🞤New application** 按钮：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/7f6vbFmJRpfwDXbjHNKp1i/1245c6faab19cd3ea78bc547a98e9fcf/az-newapp.png?fm=webp&h=353&q=50&w=924" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7f6vbFmJRpfwDXbjHNKp1i/c314ef0bcbb68306858fa0f76da1e369/new_application.png?_a=DAJCwlWIZAAB" %}
 创建新的应用程序
 {% endembed %}
 
-在 Browse Azure AD Gallery 界面，选择 **🞤Create your own application** 按钮：
+在 Microsoft Entra ID Gallery 界面，选择 **🞤Create your own application** 按钮：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6oF8nrPsl7riqg3jWFDk7N/37af1c6f11f95c4822058b6a7da5e067/az-newapp2.png?fm=webp&h=284&q=50&w=924" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6oF8nrPsl7riqg3jWFDk7N/5cf08062f5656e0aee44ea627a2071c5/Create_your_own_application.png?_a=DAJCwlWIZAAB" %}
 创建您自己的应用程序
 {% endembed %}
 
@@ -62,7 +62,7 @@ SAML 2.0 配置
 
 在应用程序概览界面，从导航菜单选择 **Single sign-on**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6Qn48f1wL7TLRfVfr2JG44/dc23ef91363bbc338ad7f6f5dcf17fd3/az-sso.png?fm=webp&h=521&q=50&w=924" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6Qn48f1wL7TLRfVfr2JG44/1db741ce68225229a69978bbf5a1c3ad/configure_single_sign_on.png?_a=DAJCwlWIZAAB" %}
 配置单点登录
 {% endembed %}
 
@@ -74,19 +74,19 @@ SAML 2.0 配置
 
 选择 **Edit** 按钮并配置如下字段：
 
-| 字段                                         | 描述                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Identifier (Entity ID)                     | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>SP Entity ID</strong>。<br><br>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2</code>。对于自托管实例，这由您<a href="../../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2</code>。</p>                                                         |
-| Reply URL (Assertion Consumer Service URL) | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。<br><br>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2/your-org-id/Acs</code>。对于自托管实例，这由您<a href="../../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2/your-org-id/Acs</code>。</p> |
-| Sign on URL                                | <p>将此字段设置为用户访问 Bitwarden 的登录 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code>。对于自托管实例，这由您<a href="../../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p>                                                                                            |
+| 字段                                         | 描述                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Identifier (Entity ID)                     | <p>将此字段设置为预先生成的 <strong>SP Entity ID</strong>。<br><br></p>                                                                                                                                                                                                                                                                                                |
+| Reply URL (Assertion Consumer Service URL) | <p>将此字段设置为预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → 单<strong>点登录</strong>界面复制，并根据设置而有所不同。</p>                                                                                                                                                                                                |
+| Sign on URL                                | <p>将此字段设置为用户访问 Bitwarden 的登录 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code> 或 <code>https://vault.bitwarden.eu/#/sso</code>。对于自托管实例，这由您<a href="../../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p> |
 
 ### 用户属性 & 声明 <a href="#user-attributes-and-claims" id="user-attributes-and-claims"></a>
 
-Azure 构造的默认声明可用于 SSO 登录，但你可以选择使用此部分来配置 Azure 在 SAML 响应中使用的 NameID 格式。
+Azure 构造的默认声明可用于 SSO 登录，但您可以选择使用此部分来配置 Azure 在 SAML 响应中使用的 NameID 格式。
 
 选择 **Edit** 按钮并选择 **Unique User Identifier (Name ID)** 条目以编辑 NameID 声明：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/12hujApHx80QmzCJnfXXdY/2eae2db547a8fae0310b97c30ce8fa62/az-claim.png?fm=webp&h=427&q=50&w=1380" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/12hujApHx80QmzCJnfXXdY/5886d6acc55723d9b2531377048ba89a/desktop.png?_a=DAJCwlWIZAAB" %}
 编辑 NameID 声明
 {% endembed %}
 
@@ -100,9 +100,13 @@ Azure 构造的默认声明可用于 SSO 登录，但你可以选择使用此部
 
 复制或记下此部分中的 **Login URL** 和 **Azure AD Identifier**，以在[后续步骤中](microsoft-entra-id-saml-implementation.md#identity-provider-configuration)使用：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1NZm0dZkDOJ6UbUu5lgtex/48d3f7ab5dc33362175a1fd038285495/az-urls.png?fm=webp&h=220&q=50&w=645" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NZm0dZkDOJ6UbUu5lgtex/427c7467486c8135d6f51d5fb158e7da/Azure_URLS.png?_a=DAJCwlWIZAAB" %}
 Azure URL
 {% endembed %}
+
+{% hint style="info" %}
+如果在 SSO 登录时收到任何密钥错误，请尝试从联邦元数据 XML 文件中复制 X509 证书信息。
+{% endhint %}
 
 ### 用户和群组 <a href="#users-and-groups" id="users-and-groups"></a>
 
@@ -114,9 +118,9 @@ Azure URL
 
 选择 **Add user/group** 按钮，以分配用户或群组级别对 SSO 登录应用程序的访问权限。
 
-## 回到网页密码库 <a href="#back-to-the-web-vault" id="back-to-the-web-vault"></a>
+## 返回网页密码库 <a href="#back-to-the-web-vault" id="back-to-the-web-vault"></a>
 
-至此，你已经在 Azure 门户范围内配置好了你所需要的一切。回到 Bitwarden 网页密码库来完成配置。
+至此，你已经在 Azure 门户范围内配置好了你所需要的一切。返回 Bitwarden 网页 App 来完成配置。
 
 单点登录界面将配置分为两个部分：
 
@@ -155,6 +159,10 @@ Azure URL
 | Disable Outbound Logout Requests          | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                                           |
 | Want Authentication Requests Signed       | Azure 是否要求 SAML 请求被签名。                                                                                                                                                                                                                      |
 
+{% hint style="info" %}
+填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
+{% endhint %}
+
 完成身份提供程序配置部分后，**Save**（保存）您的工作。
 
 {% hint style="success" %}
@@ -163,14 +171,30 @@ Azure URL
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 并选择 **Enterprise Single Sign-On** 按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
 
-![企业 Single Sign-On 按钮](https://raw.githubusercontent.com/bitwarden/help/master/images/sso/sso-button-lg.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
+登录选项界面
+{% endembed %}
 
-输入[已配置的组织标识符](../../../login-with-sso/saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择 **Log In**。如果您的实施已成功配置，您将被重定向到 Microsoft 的登录界面：
+输入[已配置的组织标识符](../../../login-with-sso/saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Microsoft 的登录界面：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/j1YuXioPGFIwxsqfxCrpm/d0185848b3812c22940c6c5956e0b2be/az-login.png?fm=webp&h=433&q=50&w=464" %}
 Azure 登录界面
 {% endembed %}
 
 使用您的 Azure 凭据进行身份验证后，输入您的 Bitwarden 主密码来解密您的密码库！
+
+{% hint style="info" %}
+Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致错误。SSO 登录流程必须从 Bitwarden 发起。 Entra ID SAML 管理员可以为用户设置一个[应用程序注册](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-configure-custom-home-page)，将其引导到 Bitwarden 网络密码库登录页面：
+
+1. 通过导航到当前的 Bitwarden 企业应用程序，选择 **Properties** 并将 **Visible to users** 选项设置为 **No**，禁用 **All Applications** 页面中现有的 Bitwarden 按钮。
+2. 在 **App Registrations** 中选择 **New Registration**，创建新的应用程序注册。
+3. 为应用程序提供一个名称，如 **Bitwarden SSO**，但不要指定重定向 URL。 选择 **Register** 完成表格。
+4. 应用程序创建完成后，导航至导航菜单上的 **Branding & Properties**。
+5. 向应用程序添加以下设置：
+   1. 上传一个用于终端用户识别的徽标。您可以在[此处](https://github.com/bitwarden/brand)获取 Bitwarden 徽标。
+   2. 将**主页 URL** 设为 Bitwarden 客户端登录页面，如 `https://vault.bitwarden.com/#/login`。
+
+完成此过程后，分配的用户将拥有一个直接链接到 Bitwarden 网络密码库登录页面的 Bitwarden 应用程序。
+{% endhint %}
