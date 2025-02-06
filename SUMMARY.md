@@ -240,7 +240,7 @@
     * [企业版 Bitwarden 功能数据表](business-resources/bitwarden-for-enterprise-features-datasheet.md)
     * [团队版和企业版迁移指南](business-resources/teams-and-enterprise-migration-guide.md)
     * [LastPass 企业版迁移指南](admin-console/more/lastpass-enterprise-migration-guide.md)
-    * [=组织所有者离职时的访问权限管理](admin-console/more/managing-access-when-the-organization-owner-leaves.md)
+    * [组织所有者离职时的访问权限管理](admin-console/more/managing-access-when-the-organization-owner-leaves.md)
     * [PoC 项目清单](business-resources/proof-of-concept-project-checklist.md)
     * [为生产准备试用组织](admin-console/more/prepare-your-trial-organization-for-production.md)
     * [\*团队版 Bitwarden 对比指南](business-resources/bitwarden-for-teams-comparison-guide.md)

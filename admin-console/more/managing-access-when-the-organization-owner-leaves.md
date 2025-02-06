@@ -1,16 +1,16 @@
-# =组织所有者离职时的访问权限管理
+# 组织所有者离职时的访问权限管理
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/managing-access-when-the-organization-owner-leaves/)
 {% endhint %}
 
-本文针对组织所有者离开公司后的常见问题。如果组织所有权在所有者离开之前没有转移，则以下场景之一可能适用于您的组织。
+本文解答了组织所有者离开公司后常见的问题。如果在所有者离开之前没有转移组织所有权，则以下场景之一可能适用于您的组织。
 
 {% hint style="info" %}
 Bitwarden 支持部门无法透露组织当前所有者的身份。这些信息只能直接与组织所有者核实。为方便过程顺畅，我们建议使用所有者注册的电子邮箱地址联系支持部门。
 {% endhint %}
 
-## 组织所有者已离职，我可以访问他们的账户凭据 <a href="#the-organization-owner-has-left-and-i-have-access-to-their-account-credentials" id="the-organization-owner-has-left-and-i-have-access-to-their-account-credentials"></a>
+## 组织所有者已离职，我可以访问其账户凭据 <a href="#the-organization-owner-has-left-and-i-have-access-to-their-account-credentials" id="the-organization-owner-has-left-and-i-have-access-to-their-account-credentials"></a>
 
 如果您可以访问所有者的账户凭据：
 
@@ -18,9 +18,9 @@ Bitwarden 支持部门无法透露组织当前所有者的身份。这些信息�
 2. **备份组织数据**：确保备份所有重要的组织数据，以防将来数据丢失。[此处](../../import-export/export-vault-data.md#export-an-organization-vault)了解更多信息。
 3. **为冗余访问设置管理员或备用的所有者**：确保设置多个管理员或备用的所有者，以保证未来访问的连续性和账户的管理。
 
-## The organization owner has left and I
+## 组织所有者已离职，我无法访问其账户凭据 <a href="#the-organization-owner-has-left-and-i-do-not-have-access-to-their-account-credentials" id="the-organization-owner-has-left-and-i-do-not-have-access-to-their-account-credentials"></a>
 
-组织中有任何现任管理员吗？
+组织中有任何现任的管理员吗？
 
 {% tabs %}
 {% tab title="是" %}

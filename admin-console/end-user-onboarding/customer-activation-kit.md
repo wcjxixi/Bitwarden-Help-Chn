@@ -8,22 +8,24 @@
 
 该套件包括：
 
-* 向最终用户介绍 Bitwarden 的品牌营销材料
+* 用于向最终用户介绍 Bitwarden 的品牌营销材料
 * 入职培训资源
 * 轻松的最佳实践以推动采用
 
 ## 品牌材料 <a href="#brand-materials" id="brand-materials"></a>
 
-您可以在我们的网站 [bitwarden.com/brand](https://bitwarden.com/brand/) 上访问以下资源列表：
+您可以在我们的网站 [bitwarden.com/brand](https://bitwarden.com/brand/) 上获取以下资源列表：
 
 * Bitwarden 徽标/图标（[徽标包](https://assets.ctfassets.net/7rncvj1f8mw7/3a6urtBG0WClJPLF0NtnCC/11b675042b35ab47a611330215c24b62/bitwarden-logos.zip)）
 * 品牌印刷体（[下载 DM Sans](https://fonts.google.com/specimen/DM+Sans)）
-* 调色板
+* 调色方案
 * 视觉语言（按钮样式、图标等）
 * 产品模型
   * [下载 Password Manager 图片](https://drive.google.com/drive/folders/10LNjuihl6PBWRef-CenXrJNNi1fu-N0P?usp=sharing)
   * [下载 Secrets Manager 图片](https://drive.google.com/drive/folders/1_NWWPeecq5FRZwXimAhOw2g6gazaT6Mn?usp=sharing)
-* Bitwarden b-roll（[下载媒体资产](https://vimeo.com/showcase/9351873)）
+* Bitwarden B-Roll（[下载媒体资产](https://vimeo.com/showcase/9351873)）
+
+> B-Rol&#x6C;**\[译者注]**：
 
 ## 媒体和促销营销材料 <a href="#media-and-promotional-marketing-materials" id="media-and-promotional-marketing-materials"></a>
 
