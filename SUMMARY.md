@@ -199,7 +199,7 @@
       * [Microsoft Entra ID OIDC 实施](admin-console/login-with-sso/implementation-guides/microsoft-entra-id-oidc-implementation.md)
       * [Okta OIDC 实施](login-with-sso/implementation-guides/okta-oidc-implementation.md)
       * [=Ping Identity OIDC 实施](admin-console/login-with-sso/implementation-guides/ping-identity-oidc-implementation.md)
-      * [=Cloudflare Zero Trust SSO 实施](admin-console/login-with-sso/implementation-guides/cloudflare-zero-trust-sso-implementation.md)
+      * [Cloudflare Zero Trust SSO 实施](admin-console/login-with-sso/implementation-guides/cloudflare-zero-trust-sso-implementation.md)
     * [受信任设备](admin-console/login-with-sso/trusted-devices/README.md)
       * [关于受信任设备](admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)
       * [设置受信任设备 SSO](admin-console/login-with-sso/trusted-devices/setup-sso-with-trusted-devices.md)

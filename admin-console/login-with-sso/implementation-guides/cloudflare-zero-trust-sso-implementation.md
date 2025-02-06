@@ -1,4 +1,4 @@
-# =Cloudflare Zero Trust SSO 实施
+# Cloudflare Zero Trust SSO 实施
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/cloudflare-zero-trust-sso-implementation/)
@@ -45,7 +45,90 @@ SAML 2.0 配置
 
 ## 创建 Cloudflare Zero Trust 登录方法 <a href="#create-a-cloudflare-zero-trust-login-method" id="create-a-cloudflare-zero-trust-login-method"></a>
 
+创建 Cloufdlare Zero Trust 登录方法：
+
+1、导航至 [Cloudflare Zero Trust](https://dash.cloudflare.com/login) 然后登录或创建账户。
+
+2、配置一个域名，作为用户访问应用程序或**应用程序启动器**的 URL，例如 `https://my-business.cloudflareaccess.com/`。从 Cloudflare Zero Trust 菜单中选择**设置** → **自定义页面**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4lN2NFw46RAynArFfiW3kD/6dfd8ef5b844347a60f9e230b9736450/2024-12-16_15-43-43.png?_a=DAJCwlWIZAAB" %}
+团队域名设置
+{% endembed %}
+
+3、导航至**设置** → **身份验证** → **添加新内容**，开始配置第一种登录方法。
+
+4、选择连接到 Cloudflare Zero Trust 的登录方法。如果您使用的 IdP 不在 IdP 列表中，请使用 SAML 或 OIDC 通用选项。本文将以 Okta 为例：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5Zk3txh2X9fhcPVpMZVJPC/18ad36aaf277af50df063c96f89804e8/Screen_Shot_2022-10-11_at_4.17.21_PM.png?_a=DAJCwlWIZAAB" %}
+Cloudflare Zero Trust IdP 列表
+{% endembed %}
+
+{% hint style="info" %}
+Google Workspace 用户应在此步骤中选择通用 **SAML** 设置。Google Workspace 登录方法可能会导致错误。
+{% endhint %}
+
+5、选择所选 IdP 登录方法后，请按照 Cloudflare 提供的产品内指南集成您的 IdP。
+
+{% hint style="info" %}
+如果您使用的 IdP 具有**支持群组**的功能，则必须**禁用**此选项。Bitwarden 不支持基于群组的声明，启用该选项将导致 Bitwarden 端出现 XML 元素错误。
+{% endhint %}
+
 ## 创建 Cloudflare Zero Trust  应用程序 <a href="#create-a-cloudflare-zero-trust-application" id="create-a-cloudflare-zero-trust-application"></a>
+
+配置好 IdP 后，您需要为 Bitwarden 创建一个 Cloudflare Zero Trust 应用程序。在本例中，我们将创建一个 SAML 应用程序：
+
+1、导航至**访问权限** → **应用程序** → **添加应用程序**，然后选择 **SaaS**。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/70oK8FUQYXpKEvX00NZ9ai/a065258c17b5b01360a6aed574ce2192/2024-07-08_10-46-37.png?_a=DAJCwlWIZAAB" %}
+Cloufflare Zero Trust 添加应用程序
+{% endembed %}
+
+2、在下一个界面，添加应用程序名称，如 **Bitwarden**。然后，选择身份验证协议为 **SAML**。完成后，选择**添加应用程序**。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1zm03fKF8Nqu30YbH7duoo/58e66188a1437c3339daee414d7f9bb3/2024-07-08_10-43-34.png?_a=DAJCwlWIZAAB" %}
+Cloufflare Zero Trust 添加应用程序
+{% endembed %}
+
+3、在 Bitwarden 网页密码库中，打开您的组织并导航至**设置** → **单点登录**页面。使用来自网页密码库中的信息填写**配置应用程序**界面上的信息：
+
+| 键                                  | 描述                                                |
+| ---------------------------------- | ------------------------------------------------- |
+| **Application**                    | 输入 `Bitwarden`.                                   |
+| **Entity ID**                      | 将 Bitwarden 单点登录页面上的 **SP 实体 ID** 复制到此字段。         |
+| **Assertion Consumer Service URL** | 将 Bitwarden 单点登录页面上的**断言消费者服务 (ACS)** URL 复制到此字段。 |
+| **Name ID Format**                 | 从下拉菜单中选择**电子邮箱**。                                 |
+
+{% hint style="info" %}
+对于通用 OIDC 配置，Auth URL、令牌 URL 和证书 URL 可通过众所周知的 URL 定位。
+{% endhint %}
+
+4、向下滚动到**身份提供程序**菜单。选择您在上一节中配置的 IdP，向后滚动到顶部，然后选择**下一步**。
+
+5、接下来，创建用户访问应用程序的访问策略。为每个策略填写**策略名称**、**操作**和**会话持续时间**字段。
+
+6、您可以选择指定组策略（**访问权限** → **群组**）或明确的用户策略规则（如电子邮箱、「mails ending in」、「country」 或 「everyone」）。在下面的示例中，"匿名用户 "组已包含在策略中。还添加了一条附加规则，以包括以所选域名结尾的电子邮件：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2VCZsMzbeUtuO9jx1oh6g7/a1fbe343872934b796ce486cf46835fb/Screen_Shot_2022-10-12_at_10.55.31_AM.png?_a=DAJCwlWIZAAB" %}
+Cloufflare Zero Trust 应用程序策略
+{% endembed %}
+
+{% hint style="info" %}
+您还可以通过**应用程序启动器**申请应用用户访问权限，以使用 SSO 快捷方式访问 Bitwarden 登录。这可以通过导航至**身份验证** → **应用程序启动器** → **管理**进行管理。上例中的应用策略可在这里复制或生成。
+{% endhint %}
+
+7、配置好访问策略后，滚动到顶部并选择**下一步**。
+
+8、在**设置**页面，复制以下值并将其输入 Bitwarden **单点登录**页面的相应字段：
+
+| 键                              | 描述                                                                                                   |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **SSO endpoint**               | <p>SSO 端点指示 SaaS 应用程序向何处发送登录请求。</p><p></p><p>此值将被输入到 Bitwarden 的<strong>单点登录服务 URL</strong> 字段中。</p> |
+| **Access Entity ID or Issuer** | <p>访问实体 ID 或发行者是 SaaS 应用程序的唯一标识符。</p><p></p><p>该值将被输入到 Bitwarden 的<strong>实体 ID</strong> 字段中。</p>    |
+| **Public key**                 | <p>公钥是用于验证您身份的访问公共证书。</p><p></p><p>该值将输入到 Bitwarden 的 <strong>X509 公共证书</strong>字段中。</p>             |
+
+9、将值输入 Bitwarden 后，在 Bitwarden 单点登录屏幕上选择**保存**，然后在 Cloudflare 页面上选择**完成**以保存应用程序。
+
+10、要在 Bitwarden 使用 SSO 登录页面创建书签，请选择**添加应用程序** → **书签**。检查书签是否在**应用程序启动器**中可见。
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
