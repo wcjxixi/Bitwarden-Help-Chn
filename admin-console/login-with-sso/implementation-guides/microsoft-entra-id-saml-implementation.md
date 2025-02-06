@@ -171,7 +171,7 @@ Azure URL
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
 登录选项界面
@@ -186,11 +186,11 @@ Azure 登录界面
 使用您的 Azure 凭据进行身份验证后，输入您的 Bitwarden 主密码来解密您的密码库！
 
 {% hint style="info" %}
-Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致错误。SSO 登录流程必须从 Bitwarden 发起。 Entra ID SAML 管理员可以为用户设置一个[应用程序注册](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-configure-custom-home-page)，将其引导到 Bitwarden 网络密码库登录页面：
+Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致错误。SSO 登录流程必须从 Bitwarden 发起。Entra ID SAML 管理员可以为用户设置一个[应用程序注册](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-configure-custom-home-page)，将其引导到 Bitwarden 网络密码库登录页面：
 
 1. 通过导航到当前的 Bitwarden 企业应用程序，选择 **Properties** 并将 **Visible to users** 选项设置为 **No**，禁用 **All Applications** 页面中现有的 Bitwarden 按钮。
 2. 在 **App Registrations** 中选择 **New Registration**，创建新的应用程序注册。
-3. 为应用程序提供一个名称，如 **Bitwarden SSO**，但不要指定重定向 URL。 选择 **Register** 完成表格。
+3. 为应用程序提供一个名称，如 **Bitwarden SSO**，但不要指定重定向 URL。选择 **Register** 完成表格。
 4. 应用程序创建完成后，导航至导航菜单上的 **Branding & Properties**。
 5. 向应用程序添加以下设置：
    1. 上传一个用于终端用户识别的徽标。您可以在[此处](https://github.com/bitwarden/brand)获取 Bitwarden 徽标。

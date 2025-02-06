@@ -175,7 +175,7 @@ IdP 值
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
 登录选项界面

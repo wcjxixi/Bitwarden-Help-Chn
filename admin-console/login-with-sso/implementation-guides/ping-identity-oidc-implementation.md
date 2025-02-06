@@ -4,6 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/ping-identity-oidc-implementation/)
 {% endhint %}
 
+本文是**专门针对 Ping Identity** 用于配置 OpenID Connect (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Ping Identity 的帮助，请参阅 [OIDC 配置](../../../login-with-sso/oidc-configuration.md)或 [Ping Identity SAML 部署](../../user-management/scim/ping-identity-scim-integration.md)。
+
+配置需要在 Bitwarden 网页 App 和 Ping Identity 管理门户网站中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
+
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
 登录到 Bitwarden 网页 App，使用产品切换器打开管理控制台：
@@ -42,15 +46,13 @@ SAML 2.0 配置
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](../../../login-with-sso/saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Microsoft 登录界面：
+输入[已配置的组织标识符](../../../login-with-sso/saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Ping Identity 登录界面：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/j1YuXioPGFIwxsqfxCrpm/d0185848b3812c22940c6c5956e0b2be/az-login.png?fm=webp&h=433&q=50&w=464" %}
-Azure 登录界面
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1QwyIzAp4JtyGwNLXZNXFI/6d1cc0ca3f278f46d7ad251ff2898dd4/2024-07-22_12-18-19.png?_a=DAJCwlWIZAAB" %}
+Ping Identity SSO
 {% endembed %}
 
-
-
-使用 P凭nP据进行身份验证后，输入您的 Bitwarden 主密码以解密您的密码库！
+使用 Ping 凭据进行身份验证后，输入您的 Bitwarden 主密码以解密您的密码库！
 
 {% hint style="info" %}
 Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致错误。SSO 登录流程必须从 Bitwarden 发起。
