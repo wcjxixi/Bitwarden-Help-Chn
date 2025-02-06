@@ -8,7 +8,7 @@
   * [登录 & 解锁](my-account/log-in-and-unlock/README.md)
     * [主密码](your-vault/your-master-password.md)
     * [忘记主密码](your-vault/i-forgot-my-master-password.md)
-    * [SSO 登录的使用](login-with-sso/using-login-with-sso.md)
+    * [使用 SSO 登录](login-with-sso/using-login-with-sso.md)
     * [设备登录](your-vault/log-in-with-device.md)
     * [通行密钥登录 (Beta)](my-account/log-in-and-unlock/log-in-with-passkeys.md)
     * [账户切换](your-vault/account-switching.md)
