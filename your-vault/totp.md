@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/integrated-authenticator/)
 {% endhint %}
 
-Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 等专用身份验证应用程序的替代解决方案，您可以使用它来验证使用两步登录的网站和应用程序的身份。集成身份验证使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTP)，每 30 秒轮换一次。
+Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 等专用身份验证 App 的替代解决方案，您可以使用它来验证使用两步登录的网站和 App 的身份。集成身份验证使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTP)，每 30 秒轮换一次。
 
 {% hint style="info" %}
 密钥存储适用于所有账户。但 TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企业）成员资格。
@@ -13,7 +13,7 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-au
 >
 > 上面这句话的意思是所有账户都可以将支持双重验证 (2FA) 的网站或服务加入验证器密钥 (TOTP) 字段，但以后要使用自动生成的 TOTP 验证码，则需要高级会员或付费组织账户。
 >
-> Bitwarden 的 TOTP 相当于 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) 等专用验证器应用程序。对于支持两步验证的网站或服务，你可以使用专用验证器应用程序生成验证码，也可以使用 Bitwarden 的 TOTP 生成验证码。
+> Bitwarden 的 TOTP 相当于 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) 等专用验证器 App。对于支持两步验证的网站或服务，你可以使用专用验证器 App 生成验证码，也可以使用 Bitwarden 的 TOTP 生成验证码。
 {% endhint %}
 
 如果您不熟悉用于两步登录的 TOTP 的使用，请参阅[两步登录现场指南](../two-step-login/field-guide-for-two-step-login.md)以了解更多信息。
@@ -22,8 +22,8 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-au
 
 在 Bitwarden Password Manager 中，你可以使用两种方式生成 TOTP：
 
-* 通过在 Bitwarden 移动应用或浏览器扩展中[扫描二维码](totp.md#scan-a-qr-code)
-* 通过在任一个 Bitwarden 应用程序中[手动输入安全代码](totp.md#manually-enter-a-secret)
+* 通过在 Bitwarden 移动 App 或浏览器扩展中[扫描二维码](totp.md#scan-a-qr-code)
+* 通过在任一个 Bitwarden App 中[手动输入安全代码](totp.md#manually-enter-a-secret)
 
 ### 通过扫描 QR 码 <a href="#scan-a-qr-code" id="scan-a-qr-code"></a>
 
@@ -51,11 +51,11 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-au
 {% endtab %}
 {% endtabs %}
 
-设置完成后，集成身份验证将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或应用程序的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
+设置完成后，集成身份验证将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或 App 的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
 
 ### 通过手动输入安全密钥 <a href="#manually-enter-a-secret" id="manually-enter-a-secret"></a>
 
-完成以下步骤，以从 iOS 或 Android A手pA动p输入安全密钥：
+完成以下步骤，以从 iOS 或 Android App 手动输入安全密钥：
 
 1. **编辑**要为其生成 TOTP 的密码库项目。
 2. 点击 **📷 设置 TOTP** 按钮。
