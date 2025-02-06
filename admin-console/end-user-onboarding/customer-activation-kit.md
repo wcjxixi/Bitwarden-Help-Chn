@@ -25,7 +25,9 @@
   * [下载 Secrets Manager 图片](https://drive.google.com/drive/folders/1_NWWPeecq5FRZwXimAhOw2g6gazaT6Mn?usp=sharing)
 * Bitwarden B-Roll（[下载媒体资产](https://vimeo.com/showcase/9351873)）
 
-> B-Rol&#x6C;**\[译者注]**：
+> **\[译者注]**：[B-Roll](https://en.wikipedia.org/wiki/B-roll)：B-Roll 是指用于补充主镜头（A-Roll）的辅助视频素材。它通常包含与主题相关的背景画面、场景细节、环境镜头或其他视觉元素，用于丰富视频内容、增强叙事效果或填补剪辑中的空白。B-Roll 可以帮助观众更好地理解故事背景，增加视觉吸引力。
+>
+> 在 Bitwarden 的 B-Roll 素材中，可能包括产品界面演示、团队工作场景、用户使用画面等，这些素材可以用于制作宣传视频或展示产品功能。
 
 ## 媒体和促销营销材料 <a href="#media-and-promotional-marketing-materials" id="media-and-promotional-marketing-materials"></a>
 

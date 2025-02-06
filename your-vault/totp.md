@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/integrated-authenticator/)
 {% endhint %}
 
-Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 等专用身份验证应用程序的替代解决方案，您可以使用它来验证使用两步登录的网站和应用程序的身份。集成身份验证使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based\_One-time\_Password\_algorithm) (TOTP)，每 30 秒轮换一次。
+Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 等专用身份验证应用程序的替代解决方案，您可以使用它来验证使用两步登录的网站和应用程序的身份。集成身份验证使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTP)，每 30 秒轮换一次。
 
 {% hint style="info" %}
 密钥存储适用于所有账户。但 TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企业）成员资格。
@@ -55,14 +55,14 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-au
 
 ### 通过手动输入安全密钥 <a href="#manually-enter-a-secret" id="manually-enter-a-secret"></a>
 
-完成以下步骤，以从 iOS 或 Android 应用程序手动输入安全密钥：
+完成以下步骤，以从 iOS 或 Android A手pA动p输入安全密钥：
 
 1. **编辑**要为其生成 TOTP 的密码库项目。
 2. 点击 **📷 设置 TOTP** 按钮。
 3. 在此界面底部点击**手动输入代码**连接。
 4. 将安全密钥粘贴到**验证器密钥**字段中，然后点击**添加 TOTP**。
 
-设置完成后，集成身份验证将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或应用程序的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
+设置完成后，集成身份验证将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或 App 的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
 
 ## 使用生成的代码 <a href="#use-generated-codes" id="use-generated-codes"></a>
 
@@ -74,7 +74,7 @@ Bitwarden 浏览器扩展将自动填充您的 TOTP 代码，除非**页面加�
 
 在浏览器扩展上，您还可以从上下文菜单复制 TOTP 代码：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5YmvBLK63g2xMnUewNVjOg/fbaaf6ff2987bee4623ef65952809085/be-totpcopy.png?fm=webp&h=526&q=50&w=865" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5YmvBLK63g2xMnUewNVjOg/a63aec8b36ac65d6d91acf666fc8406f/2024-10-29_11-11-51.png?_a=DAJCwlWIZAAB" %}
 浏览器扩展上下文菜单
 {% endembed %}
 
@@ -84,15 +84,19 @@ Bitwarden 浏览器扩展将自动填充您的 TOTP 代码，除非**页面加�
 
 ### 查看 TOTP 代码 <a href="#viewing-totp-codes" id="viewing-totp-codes"></a>
 
-所有 Bitwarden 应用程序都会在密码库项目中显示轮换的 TOTP 代码，其可以像用户名或密码一样将其复制和粘贴：
+{% hint style="success" %}
+只要您能访问您的 Bitwarden 密码库，即使您在离线状态下登录 Bitwarden，也能查看生成的代码。
+{% endhint %}
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/41IqtUVMLh7MLxwwNU2ZpD/0a50f89342c3de1fae6ac0adc2c8c8f3/totpcode.png?fm=webp&h=340&q=50&w=730" %}
+所有 Bitwarden App 都会在密码库项目中显示轮换的 TOTP 代码，其可以像用户名或密码一样将其复制和粘贴：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/41IqtUVMLh7MLxwwNU2ZpD/b9fc56ddc82ab78130305c0751aac0ca/2024-12-02_14-55-24.png?_a=DAJCwlWIZAAB" %}
 复制 TOTP 代码
 {% endembed %}
 
 移动应用程序还有一个专用的验证码界面，其中列出了用于快速复制的活动 TOTP：
 
-{% embed url="https://bitwarden.com/_gatsby/image/1597f6f1a3435f7c8dbb113ba53f7da4/f733d76482dc17b25769efd395e73745/bitwarden-ios-trio-totp.webp?eu=dd8653eee6c8f980593da3873921696de53e04fefa5334d46f66e3fc4ead9ed42df71a0721c02ee42e6e5ad882e643eb60947e331db8d48cc1e84df7ee60a30b51840ee834b32404057ac1aae2f704413e974e5fa683cc5ba03823d0edb2b2711955482bfd7aea88eca83c62badb6b76aaf5ac317a9bf629b7471d4a985c27ad27f8c59a7000b09bf400e8a4b0fa4f979db1255a07dcec365f151e1a50ac75c8d3f462095f73200a7db3f45ea57e97e53a1c33260c5f55a5653ed55dad6b67c6b2a8f05adf7a7fe0adc96579d2cbb1d2b45eeb7b34b39a79b4db64391349ee4af2a13fa89624184edf7d&a=w%3D850%26h%3D654%26fm%3Dwebp%26q%3D75&cd=2022-12-09T19%3A02%3A40.330Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3MRb58qhCFvVHVjPaxMk6R/227fae64af8e1a13e6c86a74412929eb/2025-01-21_17-13-12.png?_a=DAJCwlWIZAAB" %}
 移动端验证码界面
 {% endembed %}
 
@@ -130,11 +134,11 @@ Restart-Computer
 
 ## 支持的更多参数 <a href="#support-for-more-parameters" id="support-for-more-parameters"></a>
 
-默认情况下，Bitwarden 使用 SHA-1 生成 6 位数 TOTP 代码，并且每 30 秒轮换一次，但有些网站或服务的 TOTP 代码会要求不同的参数。参数可以在 Bitwarden 中通过手动编辑你的密码库项目的 `otpauth://totp/` URI 来定制。
+默认情况下，Bitwarden 使用 SHA-1 生成 6 位数 TOTP 代码，并且每 30 秒轮换一次，但有些网站或服务的 TOTP 代码会要求不同的参数。参数可以在 Bitwarden 中通过手动编辑您的密码库项目的 `otpauth://totp/` URI 来定制。
 
 | 参数        | 描述              | 值                                  | 示例                 |
 | --------- | --------------- | ---------------------------------- | ------------------ |
-| Algorithm | 用于生成 TOTP 的密码算法 | <p>-sha1<br>-sha256<br>-sha512</p> | `algorithm=sha256` |
+| Algorithm | 用于生成 TOTP 的加密算法 | <p>-sha1<br>-sha256<br>-sha512</p> | `algorithm=sha256` |
 | Digits    | 生成的 TOTP 的位数    | 1-10                               | `digits=8`         |
 | Period    | 轮换 TOTP 的秒数     | 必须 > 0                             | `period=60`        |
 
@@ -144,16 +148,16 @@ Restart-Computer
 otpauth://totp/Test:me?secret=JBSWY3DPEHPK3PXP&algorithm=sha256&digits=8&period=60
 ```
 
-在[此处](https://github.com/google/google-authenticator/wiki/Key-Uri-Format)了解有关 `otpauth://` URI 的使用的更多信息。
+在[此处](https://github.com/google/google-authenticator/wiki/Key-Uri-Format)了解更多有关 `otpauth://` URI 的使用的信息。
 
 ## 在 iOS 上设置为默认 <a href="#set-a-default-on-ios" id="set-a-default-on-ios"></a>
 
-运行 iOS 16+ 的 iOS 用户可以将任何应用程序设置为直接从相机应用程序扫描代码时存储验证码的默认应用程序，包括 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 和 Password Manager [集成身份验证](totp.md)。要进行此设置：
+运行 iOS 16+ 的 iOS 用户可以将任何应用程序设置为直接从相机 App 扫描代码时存储验证码的默认应用程序，包括 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 和 Password Manager [集成身份验证](totp.md)。要进行此设置：
 
-1. 在您的设备上打开 iOS **设置**应用程序。
-2. 点击**密码**。
-3. 点击**密码选项**。
-4. 从**验证码**部分的**设置验证码**下拉列表中选择 **Bitwarden**。
+1. 在您的设备上打开 iOS **设置** App。
+2. 点击**通用**。
+3. 点击**自动填充和密码**。
+4. 在**验证码**部分，从**设置验证码**下拉菜单中选择 **Bitwarden**。
 
 ## Azure 和 Office 365 <a href="#azure-and-office-365" id="azure-and-office-365"></a>
 
@@ -177,16 +181,12 @@ otpauth://totp/Test:me?secret=JBSWY3DPEHPK3PXP&algorithm=sha256&digits=8&period=
 
 ## Steam 令牌 TOTP
 
-> **\[译者注]**：[Steam](https://store.steampowered.com/) 游戏平台（蒸汽平台）是美国电子游戏商[威尔乌](https://www.valvesoftware.com/) (Valve) 于 2003 年 9 月 12 日推出的数字发行平台。 Steam 被认为是全世界的电脑游戏界最大的数字发行平台。有关 Steam Guard（Steam 令牌）的详细信息，请参阅 [Steam Support](https://support.steampowered.com/kb\_article.php?ref=4020-ALZM-5519\&l=simplified%20chinese)。
+> **\[译者注]**：[Steam](https://store.steampowered.com/) 游戏平台（蒸汽平台）是美国电子游戏商[威尔乌](https://www.valvesoftware.com/) (Valve) 于 2003 年 9 月 12 日推出的数字发行平台。Steam 被认为是全世界的电脑游戏界最大的数字发行平台。有关 Steam Guard（Steam 令牌）的详细信息，请参阅 [Steam 令牌](https://help.steampowered.com/zh-cn/faqs/view/06B0-26E6-2CF8-254C)。
 
-Bitwarden 验证器 (TOTP) 可以用作 Steam 的 TOTP 生成的另一种方式，该方式使用 `steam://` 前缀后面跟随您的 Steam 密钥：
+Bitwarden Authenticator (TOTP) 可以用作 Steam 的 TOTP 生成的另一种方式，该方式使用 `steam://` 前缀后面跟随您的安全密钥。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1Rp8AcaNWen3DklMAhF9WT/7541d630b64ec5d9f53c46127bf30624/steam-totp.png?fm=webp&h=298&q=50&w=726" %}
-Steam TOTP 生成
-{% endembed %}
-
-生成的 `steam://` TOTP 默认是 5 位数的字母数字型，与传统的 6 位数字型 TOTP 不同。
+生成的 `steam://` TOTP 默认是 5 位数的字母数字组合型，而不是传统的 6 位数字型 TOTP。
 
 {% hint style="danger" %}
-要使用这个功能，你需要使用第三方工具手动提取你的 Steam 账号的密钥。如 [SteamTimeIdler](https://github.com/SteamTimeIdler/stidler/wiki/Getting-your-'shared\_secret'-code-for-use-with-Auto-Restarter-on-Mobile-Authentication#getting-shared-secret-from-ios-windows) 和 [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator) 等工具可以帮助你完成这个功能，但是这类**提取工具不受 Bitwarden 或 Steam 官方的支持**。使用这些工具，风险自负。
+要使用这个功能，您需要使用第三方工具手动提取你的 Steam 账户的密钥。有一些工具（如 [SteamTimeIdler](https://github.com/SteamTimeIdler/stidler/wiki/Getting-your-'shared_secret'-code-for-use-with-Auto-Restarter-on-Mobile-Authentication#getting-shared-secret-from-ios-windows) 和 [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator) 等）可以帮助您完成这个操作，但此类**提取工具不受 Bitwarden 或 Steam 官方的支持**。使用这些工具，风险自负。
 {% endhint %}
