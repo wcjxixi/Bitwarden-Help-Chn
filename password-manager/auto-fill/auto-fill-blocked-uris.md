@@ -9,10 +9,10 @@ Bitwarden 浏览器扩展和 Android 移动 App 的用户可以明确屏蔽在�
 {% tabs %}
 {% tab title="浏览器扩展" %}
 {% hint style="success" %}
-指定屏蔽的域名将屏蔽自动填充、通信密钥提示以及保存或更新凭据的提示。
+指定屏蔽的域名将屏蔽自动填充、屏蔽通行密钥提示以及屏蔽保存或更新凭据提示。
 {% endhint %}
 
-要为浏览器扩展指定要屏蔽的域名，请执行以下操作：
+要为浏览器扩展指定要屏蔽的域名：
 
 1. 在 Bitwarden 浏览器扩展中，打开 **⚙️设置**选项卡。
 2. 选择**自动填充**，然后滚动到屏幕底部并选择**屏蔽的域名**。
@@ -22,20 +22,22 @@ Bitwarden 浏览器扩展和 Android 移动 App 的用户可以明确屏蔽在�
 
 {% tab title="Android" %}
 {% hint style="info" %}
-自动填充屏蔽的 URI 仅适用于 **Android 8.0 (Oreo)** 或更高版本上的 Bitwarden 移动端。
+屏蔽自动填充 URI 仅适用于 **Android 8.0 (Oreo)** 或更高版本。
 {% endhint %}
+
+要指定 URI 以屏蔽 Android 的自动填充：
 
 1、在 Bitwarden Android App 中，打开 **⚙️设置**标签页。
 
 2、点击**自动填充**。
 
-3、滚动到**屏蔽自动填充**字段，在输入框中输入 URI。应使用逗号分隔的列表指定被屏蔽的 URI，示例：
+3、滚动到**屏蔽自动填充**字段，在输入框中输入 URI。使用逗号分隔的列表指定被屏蔽的 URI，示例：
 
 ```bash
 https://instagram.com,androidapp://com.instagram.android,https://facebook.com
 ```
 
-4、此界面没有**保存**按钮，因此只需按后退按钮或返回上一个界面即可保存您的输入结果。
+4、此界面没有**保存**按钮，因此只需按后退按钮或返回上一个界面即可保存您的结果。
 
 ## 获取 Android App URI <a href="#getting-android-app-uris" id="getting-android-app-uris"></a>
 

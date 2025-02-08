@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/send-lifespan/)
 {% endhint %}
 
-与传统的 Bitwarden 密码库项目和文件附件不同，Send 是短暂的，**默认生命周期为 7 天**。Send 的生命周期完全使用[删除日期](send-lifespan.md#deletion-date)选项来配置，每个 Send 的最大允许生命周期为 31 天。当一个 Send 达到删除日期时，它将从 Bitwarden 系统中被清除，发送者和接收者都无法再次访问。
+与传统的 Bitwarden 密码库项目和文件附件不同，Send 是短暂的，**默认生命周期为 7 天**，使用[删除日期](send-lifespan.md#deletion-date)选项可设置为最长 31 天。当一个 Send 达到删除日期时，它将从 Bitwarden 系统中被清除，发送者和接收者都无法再次访问。
 
-可选，您可以使用[到期日期](send-lifespan.md#expiration-date)和/或[最大访问次数](send-lifespan.md#maximum-access-count)选项来额外配置接收者访问限制。您也可以在任何时候手动[禁用或删除](send-lifespan.md#manually-disable-or-delete) Send。
+不同的客户端 App 允许您设置访问的额外限制，例如[到期日期](send-lifespan.md#expiration-date)和/或[最大访问次数](send-lifespan.md#maximum-access-count)选项。您也可以在任何时候手动[禁用或删除](send-lifespan.md#manually-disable-or-delete) Send。
 
 ## 删除日期 <a href="#deletion-date" id="deletion-date"></a>
 
@@ -22,33 +22,37 @@
 * 对于发送者，一个 **🗑️等待删除**的图标将出现在 Send 旁边。Send 将在几分钟内等待删除，之后它将从 Bitwarden 系统和发送者的 Send 视图中永久删除。
 
 {% hint style="info" %}
-对于 Send，没有「软删除」或回收站，这意味着等待删除窗口一旦关闭，您将无法访问 Send 的内容。
+已删除的 Send 不会发送或存储在回收站中。一旦确认删除，您将无法访问 Send 内容。
 {% endhint %}
 
 ## 到期日期 <a href="#expiration-date" id="expiration-date"></a>
 
-默认情况下，Send 的到期日期设置为永不。使用**到期日期**选项，您可以将其更改为一系列预先指定的选项（比如，_1 小时、1 天、7 天_），或使用日期选择器指定一个**自定义**时间戳（或在文本输入中使用格式 `MM/DD/YYYY HH:MM AM/PM`）。
+{% hint style="info" %}
+仅适用于网页 App 和桌面 App。
+{% endhint %}
+
+默认情况下，Send 永远不会过期，但会被删除。使用**到期日期**选项，您可以将其更改为一系列预先指定的选项（比如，1 小时、1 天、7 天），或使用日期选择器指定一个**自定义**时间戳（或在文本输入中使用格式 `MM/DD/YYYY HH:MM AM/PM`）。
 
 ### 到期行为 <a href="#expiration-behavior" id="expiration-behavior"></a>
 
 当一个 Send 达到指定的到期日期时：
 
 * 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
-* 对于发送者，一个 **🕘到期**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的**删除日期**。
+* 对于发送者，一个 **🕘到期**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的删除日期。
 
-## 最大访问次数 <a href="#maximum-access-count" id="maximum-access-count"></a>
+## 最大访问次数（或叫限制查看） <a href="#maximum-access-count" id="maximum-access-count"></a>
 
-对于所有 Send，**当前访问次数**代码将跟踪 Send 链接被访问的次数：
+对于所有 Send，**当前访问次数**计数器将跟踪 Send 链接被访问的次数：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/0OzPRjLVfEDJ3EIZC90Cp/35fc2a6115d47601536ccf95a70d9480/send-access-ticker.png?fm=webp&h=109&q=50&w=702" %}
 当前访问计数
 {% endembed %}
 
-对于任何 Send，您可以指定一个正整数的**最大访问次数**。
+对于任何 Send，您可以指定一个正整数的**最大访问次数**（在浏览器扩展叫做**限制查看**）。
 
 ### 最大访问次数行为 <a href="#maximum-access-count-behavior" id="maximum-access-count-behavior"></a>
 
-当一个 Send 达到其指定的最大访问次数时：
+当一个 Send 达到其指定的最大访问次数（或查看）时：
 
 * 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
 * 对于发送者，一个 **🚫达到最大访问次数**图标将出现在 Send 旁边。发送者仍可访问该 Send，直到达到指定的**删除日期**。

@@ -194,7 +194,7 @@
       * [Microsoft Entra ID SAML 实施](admin-console/login-with-sso/implementation-guides/microsoft-entra-id-saml-implementation.md)
       * [Okta SAML 实施](login-with-sso/implementation-guides/okta-saml-implementation.md)
       * [OneLogin SAML 实施](login-with-sso/implementation-guides/onelogin-saml-implementation.md)
-      * [=Ping Identity SAML 实施](admin-console/login-with-sso/implementation-guides/ping-identity-saml-implementation.md)
+      * [Ping Identity SAML 实施](admin-console/login-with-sso/implementation-guides/ping-identity-saml-implementation.md)
       * [ADFS OIDC 实施](login-with-sso/implementation-guides/pingfederate-saml-implementation.md)
       * [Microsoft Entra ID OIDC 实施](admin-console/login-with-sso/implementation-guides/microsoft-entra-id-oidc-implementation.md)
       * [Okta OIDC 实施](login-with-sso/implementation-guides/okta-oidc-implementation.md)

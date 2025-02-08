@@ -16,17 +16,33 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 
 ## 发行公告
 
-Bitwarden 会在初始发布后逐步更新每一个客户端应用程序（桌面端、浏览器扩展、移动端等），以及用于自托管的服务器，以确保功能的有效性和稳定性。因此，客户端应用程序和自托管服务器将在初始发布后逐步获得所列的功能。
+Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面端、浏览器扩展、移动端等），以及自托管服务器，以确保功能的有效性和稳定性。因此，客户端应用程序和自托管服务器将在初始发布后逐步获得所列的功能。请查看 Bitwarden [软件发布支持](security/bitwarden-software-release-support.md)文档。
 
 {% hint style="success" %}
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
-## 2025.1.1
+## 2025.1.2
+
+_（所列版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版本号分别为服务器 2025.1.4、桌面 2025.1.4、浏览器扩展 2025.1.3、CLI 2025.1.3、iOS 2025.1.2 和安卓 2025.1.1）_
 
 {% hint style="info" %}
 为确保账户安全，2025 年初开始，对于**未使用两步登录的用户**，Bitwarden 将对其要求额外的验证。[了解更多](miscellaneous/new-device-login-protection.md)。
 {% endhint %}
+
+此次发布包含：
+
+### Password Manager
+
+* **更改密码库项目所有者**：在网页 App 上，现在您可以直接从编辑窗口通过将其所有者更改为您所属的任何组织来共享密码库项目。[了解更多](organizations/sharing.md)。
+* **屏蔽浏览器扩展的自动填充**：现在可以专门指示浏览器扩展不允许在某些域名上进行自动填充。[了解更多](password-manager/auto-fill/auto-fill-blocked-uris.md)。
+* **移动版 Bitwarden Send 更新**：移动 App 上的 Bitwarden Send选项已不再支持设置有效期和停用 Send，这与浏览器扩展目前提供的功能一致。在未来的版本中，其他客户端也将停止对这些选项的支持。[了解更多](bitwarden-send/send-lifespan.md)。
+
+### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
+
+* 重新启动组织订阅：已终止或失效的 Bitwarden 订阅现在有 7 天的宽限期，用户可以重新激活订阅。了解更多有关组织续费的信息。
+
+## 2025.1.1
 
 此次发布包含：
 
