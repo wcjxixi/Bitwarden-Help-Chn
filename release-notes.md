@@ -40,7 +40,7 @@ _（所列版本号为 Bitwarden 网页 App 的版本号，本周期发布的其
 
 ### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
 
-* 重新启动组织订阅：已终止或失效的 Bitwarden 订阅现在有 7 天的宽限期，用户可以重新激活订阅。了解更多有关组织续费的信息。
+* **重新启动组织订阅**：已终止或失效的 Bitwarden 订阅现在有 7 天的宽限期，用户可以重新激活订阅。了解更多有关[组织续费](plans-and-pricing/organization-renewal.md)的信息。
 
 ## 2025.1.1
 

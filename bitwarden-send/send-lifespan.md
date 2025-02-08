@@ -48,7 +48,7 @@
 当前访问计数
 {% endembed %}
 
-对于任何 Send，您可以指定一个正整数的**最大访问次数**（在浏览器扩展叫做**限制查看**）。
+对于任何 Send，您可以指定一个正整数的**最大访问次数**（在浏览器扩展中叫做**限制查看**）。
 
 ### 最大访问次数行为 <a href="#maximum-access-count-behavior" id="maximum-access-count-behavior"></a>
 
@@ -58,7 +58,7 @@
 * 对于发送者，一个 **🚫达到最大访问次数**图标将出现在 Send 旁边。发送者仍可访问该 Send，直到达到指定的**删除日期**。
 
 {% hint style="success" %}
-**当前访问次数**代码的含义：
+**当前访问次数**计数器的含义：
 
 * 对于文本 Send，表示链接被访问的次数
 * 对于文件 Send，表示内容被下载的次数
@@ -66,29 +66,25 @@
 
 ## 手动禁用或删除 <a href="#manually-disable-or-delete" id="manually-disable-or-delete"></a>
 
-可以从任何 Bitwarden 应用程序中手动禁用或删除 Send：
+可以从任何 Bitwarden App 中手动禁用或删除 Send：
 
 {% tabs %}
-{% tab title="网页密码库" %}
-### 从网页密码库禁用 <a href="#disable-from-the-web-vault" id="disable-from-the-web-vault"></a>
+{% tab title="网页 App" %}
+### 从网页 App 禁用 <a href="#disable-from-the-web-vault" id="disable-from-the-web-vault"></a>
 
-要从网页密码库禁用 Send，请打开**编辑 Send** 视图并勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5sEtu1yAH9h3Jsu7uTLCPD/ac1e4629acc782befc7ab83237819a93/send-disable-wv.png?fm=webp&h=293&q=50&w=732" %}
-网页密码库禁用
-{% endembed %}
+要从网页 App 禁用 Send，请打开**编辑 Send** 视图，展开**选项**，然后勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
 
 Send 被禁用后：
 
-* 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
+* 对于 Send 的接收者（即任何拥有已生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
 * 对于发送者，一个 **⚠️已禁用**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的**删除日期**。
 
-### 从网页密码库删除 <a href="#delete-from-the-web-vault" id="delete-from-the-web-vault"></a>
+### 从网页 App 删除 <a href="#delete-from-the-web-vault" id="delete-from-the-web-vault"></a>
 
-要从网页密码库删除 Send，请使用悬停 **⚙️**齿轮下拉菜单并选择 **🗑️删除**按钮：
+要从网页 App 删除 Send，请使用 **≡选项**菜单然后选择 **🗑️删除**按钮：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/47ec2QcoS6zrLiuyEtzorO/0fb00df7042463d5682de4a9064b07c0/send-delete.png?fm=webp&h=386&q=50&w=911" %}
-从网页密码库删除
+从桌面 App 删除 Send
 {% endembed %}
 {% endtab %}
 
@@ -98,7 +94,7 @@ Send 被禁用后：
 要从浏览器扩展禁用 Send，请打开**编辑 Send** 视图并勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6uyNGtFobbFb2UiA2z9n8C/1c8b4cfcfbbb5c2624c94339db26b16d/send-disable-be.png?fm=webp&h=617&q=50&w=392" %}
-从浏览器扩展禁用
+从浏览器扩展禁用 Send
 {% endembed %}
 
 Send 被禁用后：
@@ -112,18 +108,18 @@ Send 被禁用后：
 
 要从浏览器扩展删除 Send，请选择在您要删除的 Send 旁边的 🗑️**回收站**图标：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/74CotzsfAWKjUQkXfuu7zq/7a2725f845cff46a8f013a449ff7dee3/send-delete-be.png?fm=webp&h=307&q=50&w=392" %}
-从浏览器扩展删除
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/74CotzsfAWKjUQkXfuu7zq/83dfe90f44893fc674a980d884ddff60/2024-12-03_10-39-04.png?_a=DAJCwlWIZAAB" %}
+从浏览器扩展删除 Send
 {% endembed %}
 {% endtab %}
 
-{% tab title="桌面端" %}
-### 从桌面应用程序禁用 <a href="#disable-from-desktop-apps" id="disable-from-desktop-apps"></a>
+{% tab title="桌面 App" %}
+### 从桌面 App 禁用 <a href="#disable-from-desktop-apps" id="disable-from-desktop-apps"></a>
 
-要从桌面应用程序禁用 Send，请打开**编辑 Send** 视图并勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
+要从桌面应 App 禁用 Send，请打开**编辑 Send** 视图并勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/49ar4y0apFFvUDIksGIr2C/b24ab75b84dcfbb4dc253eb56f1e8b20/send-desktop-disable.png?fm=webp&h=681&q=50&w=1136" %}
-从桌面应用程序禁用
+从桌面应用程序禁用 Send
 {% endembed %}
 
 Send 被禁用后：
@@ -131,22 +127,22 @@ Send 被禁用后：
 * 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
 * 对于发送者，一个 **⚠️已禁用**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的**删除日期**。
 
-### 从桌面应用程序删除 <a href="#delete-from-desktop-apps" id="delete-from-desktop-apps"></a>
+### 从桌面 App 删除 <a href="#delete-from-desktop-apps" id="delete-from-desktop-apps"></a>
 
-要从桌面应用程序删除 Send，请打开**编辑 Send** 视图并选择 🗑️**删除**图标：
+要从桌面 App 删除 Send，请打开**编辑 Send** 视图并选择 🗑️**删除**图标：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/12eLcz2aoBkcDRGS3U1jzP/42f085a0fffd81f5643df7c5ad08f69f/send-desktop-delete.png?fm=webp&h=681&q=50&w=1136" %}
-从桌面应用程序删除
+从桌面应用程序删除 Send
 {% endembed %}
 {% endtab %}
 
-{% tab title="移动端" %}
-### 从移动应用程序禁用 <a href="#disable-from-mobile-apps" id="disable-from-mobile-apps"></a>
+{% tab title="移动 App" %}
+### 从移动 App 禁用 <a href="#disable-from-mobile-apps" id="disable-from-mobile-apps"></a>
 
-要从移动应用程序禁用 Send，请打开**编辑 Send** 视图并勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
+要从移动 App 禁用 Send，请打开**编辑 Send** 视图并勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/WJOkIW0AIUsX8gbfBxdHK/74da676382bf36f80221eeb13f442c5f/send-disable-mobile.png?fm=webp&h=686&q=50&w=675" %}
-从移动应用程序禁用
+从移动应用程序禁用 Send
 {% endembed %}
 
 Send 被禁用后：
@@ -154,34 +150,34 @@ Send 被禁用后：
 * 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
 * 对于发送者，一个 **⚠️已禁用**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的**删除日期**。
 
-### 从移动应用程序删除 <a href="#delete-from-mobile-apps" id="delete-from-mobile-apps"></a>
+### 从移动 App 删除 <a href="#delete-from-mobile-apps" id="delete-from-mobile-apps"></a>
 
-要从移动应用程序删除 Send，请点击菜单图标（**≡** 或 **⋯**）并点击**删除**选项：
+要从移动 App 删除 Send，请点击菜单图标（**≡** 或 **⋯**）并点击**删除**选项：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/4jWcljHXWnKZcSZZmVNyQo/5fa335d353210682cf3fb5464f483587/send-delete-mob.png?fm=webp&h=686&q=50&w=675" %}
-从移动应用程序删除
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4jWcljHXWnKZcSZZmVNyQo/af2acd968efa16f42b75b04b875d666d/2025-01-22_10-05-07.png?_a=DAJCwlWIZAAB" %}
+从移动 App 删除 Send
 {% endembed %}
 {% endtab %}
 
 {% tab title="CLI" %}
 ### 从 CLI 禁用 <a href="#disable-from-the-cli" id="disable-from-the-cli"></a>
 
-要从 CLI 禁用 Send，你需要使用 `edit` 命令将 `"disabled":false` 键值对更改为 `"disabled":true`，例如：
+要从 CLI 禁用 Send，您需要使用 `edit` 命令将 `"disabled":false` 键值对更改为 `"disabled":true`，例如：
 
 ```batch
 bw send get <id> | jq '.disabled=true' | bw encode | bw send edit
 ```
 
-建议阅读 [CLI 上的 Send](send-from-cli.md) 一文，以获取有关在 CLI 上使用 Send 的完整信息。
+建议阅读 [CLI 上的 Send](send-from-cli.md)，以获取有关在 CLI 上使用 Send 的完整信息。
 
 ### 从 CLI 删除 <a href="#delete-from-the-cli" id="delete-from-the-cli"></a>
 
-要从 CLI 删除 Send，请使用带有 Send 的确切唯一 `id` 作为参数的 `delete` 命令：
+要从 CLI 删除 Send，请使用 `delete` 命令，并将 Send 的唯一 `id` 作为参数：
 
 ```batch
 bw send delete <id>
 ```
 
-建议阅读 [CLI 上的 Send](send-from-cli.md) 一文，以获取有关在 CLI 上使用 Send 的完整信息。
+建议阅读 [CLI 上的 Send](send-from-cli.md)，以获取有关在 CLI 上使用 Send 的完整信息。
 {% endtab %}
 {% endtabs %}

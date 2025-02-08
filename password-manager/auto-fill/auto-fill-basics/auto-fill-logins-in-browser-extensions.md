@@ -10,26 +10,52 @@
 此外，基本验证提示的工作方式与常规自动填充略有不同。有关更多信息，请参阅另一篇[基本验证提示](../../../auto-fill/basic-auth-prompts.md)的文章。
 {% endhint %}
 
-Bitwarden 浏览器扩展有一个独特的**标签页**视图，它可以自动检测打开的标签页中显示的网页的 URI（例如 `google.com`），并找到所有具有相应 URI 的密码库项目。如果您不熟悉 URI 的使用，我们建议您阅读[此文](../../../auto-fill/using-uris.md)。
+使用 Bitwarden 浏览器扩展有很多自动填写凭据的方法！最基本的方法是在网站登录页面打开 Bitwarden 浏览器扩展，在**密码库**选项卡中选择建议项目的**填充**按钮：
 
-当一个密码库项目有对应的 URI 时，Bitwarden 图标将覆盖一个角标计数器，报告该网页所对应的密码库项目的数量（_如下图_）。
-
-{% embed url="https://bitwarden.com/_gatsby/image/f6a740c2ca09135be71d4a61008439e6/b4b305513c1909542532d5c62739b41f/Screen%20Shot%202022-05-18%20at%203.23.12%20PM.webp?eu=d6df03b3b09aa8810b6ea4803972683be43602acaf0263d86b32e5a91ea9978e23f51f50229228b37e3b088dd0b414ec6ec279371dbfd78c95ed4ba0eb60f90a568552ef61b62656547dc2ffb8f2021069ce1259a8869a0ca4397186e6b5be2310591b2daf29bbd3ebfc606db4862667b8e2a52e3397f879e21a540c8f5c31bf6ea48f876e4fb99bf301bca2b8f84a8ec9a36e191e8eb72a2535124c1eb72cedadef43762628423e76b8ea29c522dee4596f135e270c498d2472964aff6e39c5e7afa109d1287eb4aece632283c7a788bc1caf2f20ee9e2fabd43a2e116eff51f8e92598b13c594aee28fa974eaf030028418a73d8604fda265d8f1985e328f355e22e7861&a=w%3D850%26h%3D616%26fm%3Dwebp%26q%3D75&cd=2022-12-09T16%3A36%3A00.883Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pamjhdWn7obh8UBxXcIPF/cb72c2921ce5f717cfd81bf157e50f4d/2024-12-02_13-59-23.png?_a=DAJCwlWIZAAB" %}
 浏览器扩展自动填充
 {% endembed %}
 
+请注意，当您在试图登录的网站上保存有登录信息时，Bitwarden 浏览器扩展会覆盖一个通知气泡，报告您在该网站上的登录信息的数量。这些项目将显示在**自动填充建议**的顶部。您可以使用过筛选器下拉菜单筛选建议中的内容和所有项目列表中的显示内容，这些下拉菜单可以通过 **☷**&#x6309;钮显示或隐藏：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/12UsFuA2sxbUCBMIczJsxv/22c20404137193420d3b2d1f5fa8611f/2024-12-02_14-07-09.png?_a=DAJCwlWIZAAB" %}
+浏览器扩展筛选器和建议
+{% endembed %}
+
 {% hint style="success" %}
-如果需要，您可以使用 ⚙️**设置** → **选项**菜单中的显示**角标计数器**来金禁用角标计数器。
+如果需要，您可以在 ⚙️**设置** → **外观**菜单中的**在扩展图标上显示自动填充建议的登录数量**切换按钮来隐藏角标计数器。
 {% endhint %}
 
-选择**标签页**视图中的密码库项目，即可将登录信息自动填入检测到的输入字段中。如果一个网页或服务具有多个关联 URI 的登录项目，Bitwarden 将始终自动填充上次使用的登录项目。
+选择**填充**按钮将在检测到的输入字段中自动填充信息。如果一个网页或服务有多个带有关联 URI 的项目，Bitwarden 将始终自动填充上次使用的登录项目。
+
+## 自定义自动填充行为
+
+### 单击项目以自动填充 <a href="#customizing-autofill-behaviorclick-items-to-autofill" id="customizing-autofill-behaviorclick-items-to-autofill"></a>
+
+您可以将浏览器扩展设置为在选择密码库项目时自动填充，而不是使用**填充**按钮。要激活此选项，请导航至**设置** → **自动填充**，然后切换**在密码库视图中单击项目以自动填充**选项。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3tnagVMjtTufvRCrih3ctQ/b3698262ce7c19baeda6afc87c485167/2025-01-02_11-14-19.png?_a=DAJCwlWIZAAB" %}
+单击项目以自动填充
+{% endembed %}
+
+激活后，从密码库视图中选择项目将自动填充此项目，而不是使用**填充**按钮，页可以使用 **≡**&#x9009;项菜单来查看此项目。
+
+### 快速复制操作 <a href="#quick-copy-actions" id="quick-copy-actions"></a>
+
+除**填充**按钮外，您还可以使用**密码库**选项卡上的三个快速复制操作按钮，以专门将用户名、密码或验证码复制到剪贴板：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5w7lobEk81aOGfLKFjRp2e/07041024e69f8fae1892b7b56c7ff898/2024-12-17_09-32-41.png?_a=DAJCwlWIZAAB" %}
+快速复制操作
+{% endembed %}
+
+默认情况下，显示这些按钮的选项是关闭的，可以通过导航到**设置** → **外观**，然后将**在密码库上显示快速复制操作**选项切换为打开来激活。
 
 ## 内嵌自动填充菜单 <a href="#inline-auto-fill-menu" id="inline-auto-fill-menu"></a>
 
-使用内嵌自动填充菜单可以快速输入来自您 Bitwarden 密码库中的登录凭据。
+使用内嵌自动填充菜单可以快速输入来自您 Bitwarden 密码库中的登录凭据、通行密钥以及 TOTP 代码。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/H7DjdJNvQH00yGNLf5gsC/da28dfa7ec407a3b4496123073cab255/2024-02-29_12-04-51.png?_a=BAJFJtWIB" %}
-自动填充菜单
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/H7DjdJNvQH00yGNLf5gsC/1ec6f0ce9a94862b0cae1d8b8d679fc8/2024-10-29_14-41-02.png?_a=DAJCwlWIZAAB" %}
+内嵌自动填充菜单
 {% endembed %}
 
 ### 启用内嵌自动填充菜单 <a href="#enable-the-inline-auto-fill-menu" id="enable-the-inline-auto-fill-menu"></a>
@@ -38,35 +64,79 @@ Bitwarden 浏览器扩展有一个独特的**标签页**视图，它可以自动
 
 1、登录并解锁 Bitwarden [浏览器扩展](../../../getting-started/getting-started-browserext.md)。
 
-2、选择 **⚙️设置** → **自动填充**，然后定位到**在表单字段显示自动填充菜单**下拉菜单。选择您首选的自动填充菜单行为。
+2、选择 **⚙️设置** → **自动填充**，然后定位到**在表单字段显示自动填充建议**下拉菜单。选择您首选的自动填充菜单行为。
 
-3、下一步，我们建议您禁用浏览器的自动填充选项。如果您的浏览器的自动填充功能已启用，它可能会与 Bitwarden 的自动填充菜单产生冲突。在[这里](../../../auto-fill/disable-a-browsers-built-in-password-manager.md)了解更多信息。
+3、如果您希望内嵌自动填充菜单建议这些项目类型，还可以切换**将身份显示为建议**和**将支付卡显示为建议**选项。在[这里](auto-fill-cards-and-identities.md#using-the-inline-menu)了解更多信息。
+
+4、下一步，我们建议您禁用浏览器的自动填充选项。如果您的浏览器的自动填充功能已启用，它可能会与 Bitwarden 的自动填充菜单产生冲突。在[这里](../../../auto-fill/disable-a-browsers-built-in-password-manager.md)了解更多信息。
 
 Chrome 和 Brave 用户可以勾选**覆盖浏览器的自动填充设置**选项来禁用浏览器自带的自动填充。
 
 ### 使用内嵌自动填充菜单 <a href="#use-the-inline-auto-fill-menu" id="use-the-inline-auto-fill-menu"></a>
 
-要使用内嵌自动填充菜单：
+{% tabs %}
+{% tab title="使用内嵌自动填充登录" %}
+使用内嵌自动填充菜单登录账户：
 
-1、选择位于登录框中的 Bitwarden 图标。如果您尝试执行此操作时您的密码库已经锁定，菜单将提示您解锁密码库。
+1、选择登录表单的用户名字段。如果您尝试登录时密码库已锁定，菜单会提示您解锁密码库。
 
-2、将出现内联自动填充菜单，选择您希望用于网站的登录名。
+2、将显示内嵌自动填充菜单。此时，请选择您希望在网站上使用的登录名或密码。
 
 {% hint style="info" %}
-没有看到您想要使用的登录凭据吗？编辑密码库项目然后选择**自动填充并保存**，或在 URI 字段中手动输入网站地址。
+没有看到您想使用的登录凭据吗？编辑密码库项目并选择**自动填充和保存**，或在 URI 字段中手动输入网站。
 {% endhint %}
 
-3、如果尚未保存此站点的登录凭据，请选择 ✚**新增项目**，浏览器扩展将打开一个新的项目，您可以在其中保存新的登录凭据。
+3、如果没有为该网站保存凭据，请选择✚**新建项目**，浏览器扩展将打开一个新的项目，您可以在其中保存新的登录凭据。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1nVpqyl5FuzMPIaKezwZ8c/eb0665b4957f94d3219d54450f36973d/Screenshot_2023-11-27_at_4.27.47_PM__2_.png?_a=BAJFJtWIB" %}
-自动填充创建项目
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1nVpqyl5FuzMPIaKezwZ8c/8a715cb0b1e1423815f0b66b0e8b1b42/web-browser-extension-autofill-newitem.png?_a=DAJCwlWIZAAB" %}
+
+当基于该项目的[已保存 URI](../../../auto-fill/using-uris.md) 预期使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点之前发出警告。
+
+{% hint style="info" %}
+如果内嵌自动填充菜单对浏览器造成意外干扰，可按 Esc 键关闭。
+{% endhint %}
+{% endtab %}
+
+{% tab title="使用内嵌自动填充 TOTP" %}
+要使用内嵌自动填充功能自动填充 TOTP 代码：
+
+1、在登录表单中选择 TOTP 字段。
+
+2、将显示内联自动填写菜单，选择 TOTP 代码：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3RaBZBRgkfwVF0mQPRZYBJ/840a46c911d09ead87ac09fdb0955493/2025-01-03_09-22-34.png?_a=DAJCwlWIZAAB" %}
+TOTP 内嵌自动填充单次登录
 {% endembed %}
 
-当基于[项目保存的 URI](../../../auto-fill/using-uris.md) 需要 HTTPS 时，浏览器扩展将在使用此方法自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点之前警告用户。
+3、如果此网站有多个登录，内嵌自动填充菜单将显示每一个登录的 TOTP 代码：
 
-{% hint style="info" %}
-如果内嵌自动填充菜单对您的浏览器造成意外干扰，可以通过按 **Esc** 键将其关闭。
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1rc2rXC3daH5mcEZNRgbv1/db47ffbb4a3b987ff2e3e7842900ceb6/2025-01-02_17-23-28.png?_a=DAJCwlWIZAAB" %}
+内嵌 TOTP 自动填充
+{% endembed %}
+{% endtab %}
+
+{% tab title="使用内嵌自动填充创建账户" %}
+要使用内嵌自动填充菜单创建一个新的账户：
+
+1、在登录表单的用户名字段中输入用户名。然后，选择密码字段。
+
+2、将显示内嵌自动填充菜单。如果对生成的密码满意，请选择**填充生成的密码**。您也可以使用 **⟳**&#x751F;成按钮生成新的密码，直到满意为止：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2JcceqWgFbk4ViLCMe6qm5/ce116e8ff337f90fbbd57b52aa15fdcd/2024-11-05_10-07-08.png?_a=DAJCwlWIZAAB" %}
+
+{% hint style="success" %}
+该选项将使用您在浏览器扩展的**生成器**选项卡中配置的设置。了解[如何更改这些设置](../../vault-basics/generator.md#password-types)。
 {% endhint %}
+
+3、**在点击「注册」或「创建账户」提交表单之前**，内嵌自动填充菜单将提供在 ✚**新增登录**中保存此信息的选项。使用该选项可在弹出窗口中打开 Bitwarden，然后选择**保存**按钮保存生成的凭证：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7cMSUQLfvxHNwHS8xMX1j7/296b7fdfcb384808284aa3f5e67d769a/2024-11-05_10-12-29.png?_a=DAJCwlWIZAAB" %}
+保存登录到 Bitwarden
+{% endembed %}
+
+4、选择注册、创建账户或网站或应用程序提供的其他按钮来完成账户的创建。
+{% endtab %}
+{% endtabs %}
 
 ## 上下文菜单 <a href="#context-menu" id="context-menu"></a>
 
@@ -74,17 +144,19 @@ Chrome 和 Brave 用户可以勾选**覆盖浏览器的自动填充设置**选�
 此功能目前在 Safari 浏览器扩展程序中不可用。
 {% endhint %}
 
-在不打开浏览器扩展程序的情况下，您可以在用户名或密码输入栏上点击右键，然后使用 **Bitwarden** → **自动填充**选项。当您尝试此操作时，如果您的密码库已锁定，则会打开一个新的标签页，提示您解锁。解锁后，浏览器扩展将自动继续填充您的凭据。
+在不打开浏览器扩展程序的情况下，您可以在用户名或密码输入栏上点击右键，然后使用 **Bitwarden** → **自动填充**选项。当您尝试此操作时，如果您的密码库已锁定，则会打开一个新的标签页，提示您解锁。解锁后，浏览器扩展将自动继续填充您的用户名、密码、支付卡或身份信息。
 
-{% embed url="https://bitwarden.com/_gatsby/image/c51dd4594b09d2e34ca4dab6bea03db5/8c4cb6cbf15a5dc6af5be4ee0a22d95b/browserext-context.webp?eu=dd8a51e3e7c8fed1593ca3856070356ab33754faf9043fd83435e2af19abc88e24fb1b5620c32cb8293f5e8c86b247ef6095706411bd84d393bd1ef6ec32ac0b55d25ebf65b57156522dc6ffb0f201413dc11d5aa186cc5ef7642386b6b1b3784c51492fac7fbdd3b9f83237b8d62d63ecb5a72e6f9aef3ca051544bd4412cad33eed3c0605ab89ff35cbaa2adb75798d8f82a451e88b56f232144421fea32bdd2c97f37407c472c7289d02a83219fe1614469255c4003f4633fd601fb6c37c3e3adf55dda2f7de5fa9d3426d295a8d3eb4ea42a27e7d075ebdd7c395b4ff95be9a128a88c205346c534bacb1b&a=w%3D850%26h%3D560%26fm%3Dwebp%26q%3D75&cd=2022-12-09T16%3A36%3A19.771Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6GKKvIe7GwwOBtp9gmh862/4d39f59a8a862bb83d53e50f9f68d107/2024-12-03_09-12-06.png?_a=DAJCwlWIZAAB" %}
 浏览器扩展上下文菜单
 {% endembed %}
 
-在使用此方法自动填充不受信任的 iframe 或 HTTP 站点（当基于该项目的已保存 URI 使用 HTTPS ）时，浏览器扩展将警告用户。
+当基于该项目的[已保存 URI](../../../auto-fill/using-uris.md) 使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点时发出警告。
 
 ## 键盘快捷键 <a href="#keyboard-shortcuts" id="keyboard-shortcuts"></a>
 
-Bitwarden 浏览器扩展提供了一组键盘快捷键（又称&#x4E3A;_&#x70ED;键_）来自动填充登录信息。当您尝试此操作时，如果您的密码库已锁定，则会打开一个新的标签页，提示您解锁。解锁后，浏览器扩展将自动继续填充您的凭据。
+Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为热键）来自动填充登录信息。当您尝试此操作时，如果您的密码库已锁定，则会打开一个弹出窗口，提示您解锁。解锁后，浏览器扩展将自动继续填充您的凭据。
+
+当基于该项目的[已保存 URI](../../../auto-fill/using-uris.md) 预期使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点之前发出警告。
 
 要自动填充登录信息，请使用以下**默认**快捷键。如果检测到的 URI 匹配多个项目，最后使用的登录项目将用于自动填充操作。您可以通过反复使用键盘快捷键来循环浏览多个登录项目：
 
@@ -93,14 +165,14 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称&#x4E3A;_&#x70ED
 * Linux：`Ctrl + Shift + L`
 
 {% hint style="success" %}
-如果登录使用 [Bitwarden 验证器 TOTP](../../../your-vault/totp.md)，使用 `Cmd/Ctrl+Shift+L` 在自动填充后会自动将你的 TOTP 复制到剪贴板。你要做的就是使用 `Cmd/Ctrl+V` 来粘贴！
+如果登录使用 [Bitwarden 验证器](../../../your-vault/totp.md) TOTP，使用 `Cmd/Ctrl+Shift+L` 在自动填充后会自动将你的 TOTP 复制到剪贴板。您要做的就是使用 `Cmd/Ctrl+V` 来粘贴！
 {% endhint %}
 
 如果任何已指定的快捷键不能使用，很可能是因为你的设备上的另一个应用程序已经占用了它。例如，Windows 上的自动填充快捷键通常被 AMD Radeon Adrenaline 软件（AMD 图形驱动程序）使用，因此不能被 Bitwarden 使用。在这种情况下，您应该释放该快捷键，或者配置 Bitwarden 使用其他快捷键。
 
 ### 配置键盘快捷键 <a href="#configuring-keyboard-shortcuts" id="configuring-keyboard-shortcuts"></a>
 
-根据你使用的浏览器不同，配置 Bitwarden 浏览器扩展程序使用的键盘快捷键也不同。要访问配置菜单：
+根据您使用的浏览器不同，配置 Bitwarden 浏览器扩展程序使用的键盘快捷键也不同。要访问配置菜单：
 
 * **在 Chrome 中**，在地址栏输入 `chrome://extensions/shortcuts`。在基于 Chromium 的浏览器（如 Brave）中，用 `chrome` 代替相应的浏览器名称（如 `brave://extensions/shortcuts`）。
 * **在 Firefox 中**，在地址栏中输入 `about:addons`，选择**管理您的扩展程序**旁边的 **⚙️齿轮**图标，并从下拉菜单中选择**管理扩展程序快捷键**。
@@ -115,11 +187,11 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称&#x4E3A;_&#x70ED
 浏览器扩展不允许在页面加载时自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes)，并且当根据[该项目的已保存 URI](../../../auto-fill/using-uris.md) 预期使用 HTTPS 时，浏览器扩展将在 HTTP 站点上自动填充之前向用户发出警告。
 {% endhint %}
 
-页面加载时自动填充是 Bitwarden 浏览器扩展提供的一个**实验性的和可选的**功能。页面加载时自动填充功能将在加载与登录项目的 URI 值对应的网页时自动填充登录信息。启用后，您可以设置其默认的行为（即对所有密码库项目开启或对密码库项目关闭）。
+页面加载时自动填充是 Bitwarden 浏览器扩展提供的一个选择性功能（参见上面的**警告**）。页面加载时自动填充功能将在加载与登录项目的 URI 值对应的网页时自动填充登录信息。启用后，您可以设置其默认的行为（即对所有密码库项目开启或对密码库项目关闭）。
 
-要启用此功能，请导航到浏览器扩展中的**设置** → **选项**，勾选**页面加载时自动填充**选项，然后选择默认行为。启用并设置默认行为后，您还可以为每一个单独的密码库项目指定页面加载时的自动填充行为：
+要启用此功能，请导航到浏览器扩展中的**设置** → **自动填充**，勾选**页面加载时自动填充**复选框，然后选择默认行为。启用并设置默认行为后，您还可以为每一个单独的密码库项目指定页面加载时的自动填充行为：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5PxR0j79XtzMCrF4R6xUtu/c530d1df7e7b34aac88336213740b62a/onpageloadfull.png?fm=webp&h=822&q=50&w=1398" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5PxR0j79XtzMCrF4R6xUtu/49fca8557bb393247d750e3b3030c0e8/2024-12-03_09-14-59.png?_a=DAJCwlWIZAAB" %}
 页面加载选项
 {% endembed %}
 
@@ -130,13 +202,13 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称&#x4E3A;_&#x70ED
 
 ## 手动自动填充 <a href="#manually-auto-fill" id="manually-auto-fill"></a>
 
-您可以手动自动填充没有保存 URI 的项目，方法是在 **🔒我的密码库**视图中打开它，然后选择**自动填充**按钮。
+您可以在**🔒密码库**视图中打开没有保存 URI 的项目，然后选择**填充**按钮，从而手动自动填充这些项目。
 
-浏览器扩展在使用此方法自动填充不受信任的 iframe 或 HTTP 站点（当基于该项目的已保存 URI 使用 HTTPS ）时，将警告用户。
+当基于该项目的[已保存 URI](../../../auto-fill/using-uris.md) 预期使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点之前发出警告。
 
 ## TOTP 自动填充 <a href="#totp-auto-fill" id="totp-auto-fill"></a>
 
-如果您使用 [Bitwarden 验证器](../../../your-vault/totp.md)，浏览器扩展将自动填充您的 TOTP 代码（前提是您使用上下文菜单、键盘快捷键或手动自动填充）。**如果您使用页面加载时自动填充功能，浏览器扩展将不会自动填充您的 TOTP 代码**。
+如果您使用 [Bitwarden 验证器](../../../your-vault/totp.md)，浏览器扩展将自动填充您的 TOTP 代码，前提是您使用上下文菜单、键盘快捷键或手动自动填充。您也可以使用内嵌自动填充菜单来填写 TOTP 代码。**如果您在页面加载时使用自动填充功能，浏览器扩展程序将不会自动填写您的 TOTP 代码**。
 
 默认情况下，自动填充登录信息时，您的 TOTP 也会被复制到剪贴板。如果您使用页面加载时自动填充功能，这是推荐的工作流程。
 
@@ -152,14 +224,18 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称&#x4E3A;_&#x70ED
 
 ## 使用 Bitwarden 中存储的通行密钥登录 <a href="#log-in-with-passkeys-stored-in-bitwarden" id="log-in-with-passkeys-stored-in-bitwarden"></a>
 
-存储新的通行密钥时，网站 URI 将保存在新的登录项目中。访问您希望使用通行密钥登录的网站，然后开始通行密钥登录工作流程。
+{% hint style="info" %}
+如果某个域名位于[排除域名](../../../miscellaneous/exclude-domains.md)列表中，Bitwarden 浏览器扩展就不会发出通行密钥提示。
+{% endhint %}
 
-{% embed url="https://bitwarden.com/_gatsby/image/d32e6f047a0665f517498397b207a241/b73904793d95b6daae114c4e14995ea6/initiate%20passwordless%20login.webp?eu=8c8f52eee6c0f5870e69f3d16920693ae93f02a2a80464846863b0fa48a89cd720f7480075c12cb428610edf86e516b932c2716948e6d48ec7bc1ba0e837a20a528108ba63e52356047dcdfab6f3074739c4185ef382c250e7293297efaca82944014b7eeb64ebc5baf87627e5c76c2cb4e3e2316280f52ba6485f02c34536fb7bbac8a85377eeadb744b18f92c10d89e0824c5203888f2a237f1f1e5cbb28b8a3b10d226c21475c3098ab50926390b7354e302a0d0e00a278638e0cbf356087b194e10c9a393cbeea9d6d25c580c1dcb24df57468a79170&a=w%3D650%26h%3D590%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A47.983Z" %}
-启动无密码登录
-{% endembed %}
+存储新的通行密钥时，网站 URI 将保存在新的登录项目中。访问您希望使用通行密钥登录的网站，然后开始通行密钥登录工作流程。相关通行密钥将显示在 Bitwarden 浏览器扩展对话框中。选择要使用的通行密钥，然后按**确认**。
 
-相关的通行密钥将显示在 Bitwarden 浏览器扩展对话框中。选择您要使用的通行密钥然后按下**确认**。
-
-{% embed url="https://bitwarden.com/_gatsby/image/d389f67e84035ea41d74ddafc8b80b7b/c43fa799a00bba893c2f4639173a17c1/passkey%20login.webp?eu=de8b58e3ebcbaf850a39a5803e77663de26c5ea2a85536826f31b6fb4cadcd8127a01e5124902be07838098dd6b141ba61947f6119ee818c92ba4cf2b93dfe0e5bd00bee35e12405032d96aab3a40f456c93495ba0839e09a46e788ca1f7f733134f0372f52befd4afb76620e6d26c71bff2e5303b97ef67e75000078d4270aa6ce6d7d92c1b959bf57a85b9a6ac4a95c8e767733d93934d591f12000aea2ebfa6bb01743f2f410a31ccfa59943092e23e1e6876565757f33268d300e42c6080a7a0f414b62624b6f1972f30d894&a=w%3D700%26h%3D476%26fm%3Dwebp%26q%3D75&cd=2023-11-01T12%3A58%3A48.107Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5KeuUZox5shd0zDMxPHKXn/1aab35dfceed0ed9cdb17b143be9a890/2024-10-29_11-39-33.png?_a=DAJCwlWIZAAB" %}
 使用通行密钥登录
 {% endembed %}
+
+
+
+{% hint style="success" %}
+[内嵌自动填充菜单](auto-fill-logins-in-browser-extensions.md#inline-auto-fill-menu)还可用于轻松使用行密钥进行身份验证。
+{% endhint %}
