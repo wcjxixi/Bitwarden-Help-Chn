@@ -4,41 +4,43 @@
 对应的[官方文档地址](https://bitwarden.com/help/log-in-with-device/)
 {% endhint %}
 
-您知道吗？您可以使用辅助设备而不是您的主密码来登录 Bitwarden。设备登录是一种无密码的身份验证方式，通过向您当前已登录的任何特定设备发送身份验证请求以获得批准，从而无需输入您的主密码。[了解我们的零知识加密实施方案](log-in-with-device.md#yun-zuo-fang-shi)。
+虽然大多数人都使用主密码登录他们的 Bitwarden 密码库，但还有一种更方便的方法，叫做无密码验证。使用**设备登录**，当您在一台设备上登录 Bitwarden 时，您可以选择使用另一台已登录的网页 App、移动 App 或桌面 App 来批准这些验证请求，而无需输入主密码。
 
-可以在网页密码库、浏览器扩展、桌面应用程序和移动应用程序上发起设备登录。这些应用程序发出的请求可以在网页密码库、移动应用程序和桌面应用程序上获得批准。
+设备登录可以在网页 App、浏览器扩展、移动 App 或桌面 App 上启动。这些 App 发出的请求可在网页 App、移动 App 或桌面 App 上批准。
+
+[了解我们的零知识加密实施方案](log-in-with-device.md#yun-zuo-fang-shi)。
 
 ## 设备登录准备 <a href="#prepare-to-log-in-with-a-device" id="prepare-to-log-in-with-a-device"></a>
 
 要设置设备登录：
 
-* 正常登录发起设备登录的应用程序（网页密码库、浏览器扩展、桌面或移动应用程序），以便 Bitwarden 可以识别您的设备。
+* 至少正常登录一次发起 App（网页 App、浏览器扩展、移动 App 或桌面 App），以便 Bitwarden 可以识别您的设备。
 
 {% hint style="info" %}
 使用隐身模式或隐私浏览会阻止 Bitwarden 注册您的浏览器，因此您将无法在隐私浏览器窗口中使用设备登录。
 {% endhint %}
 
-* 在用于批准的应用程序（网页密码库、移动或桌面应用程序）上拥有认可的账户。要识别账户，您必须随时已成功登录到该设备。
+* 在用于批准的 App （网页 App、移动 App 或桌面 App）上拥有认可的账户。要认可该账户，您必须随时已成功登录到该设备。
 
 {% hint style="info" %}
 作为企业组织的成员，您需要遵守[要求 SSO 策略](../organizations/enterprise-policies.md#require-single-sign-on-authentication)，如果您无法使用**设备登录**选项，则需要改用 [SSO 登录](../login-with-sso/using-login-with-sso.md#login-using-sso)。
 {% endhint %}
 
-## 设备登录使用 <a href="#logging-in-with-a-device" id="logging-in-with-a-device"></a>
+## 使用设备登录 <a href="#logging-in-with-a-device" id="logging-in-with-a-device"></a>
 
-在发起的应用程序的登录界面，输入您的电子邮件地址并选择**继续**。然后，选择**使用设备登录**选项：
+在发起 App 的登录界面，输入您的电子邮箱地址并选择**继续**。然后，选择**使用设备登录**选项：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7owqaTEe9Bo05wfLRZPhn8/7b66e262c26b4d4cb98cdb9584fafe13/2024-12-02_10-39-22.png?_a=DAJAUVWIZAAB" %}
 设备登录
 {% endembed %}
 
-使用**设备登录**会将身份验证请求发送到您当前已登录并且已启用了该选项的任何网页密码库、移动或桌面应用程序以获得批准。
+使用**设备登录**会将身份验证请求发送到您当前已登录并且已启用了该选项的任何网页 App、移动 App 或桌面 App 以用于批准。
 
 {% tabs %}
-{% tab title="移动应用程序" %}
-发起**设备登录**后，要使用移动应用程序批准请求：
+{% tab title="移动 App" %}
+发起**使用设备登录**后，要使用移动 App 批准请求：
 
-1、登录到移动应用程序。
+1、登录到移动 App。
 
 2、导航到**设置** → **账户安全** → **待处理的登录请求**。
 
@@ -51,10 +53,10 @@
 {% endembed %}
 {% endtab %}
 
-{% tab title="网页应用程序" %}
-发起**设备登录**后，要使用网页应用程序批准请求：
+{% tab title="网页 App" %}
+发起**设备登录**后，要使用网页 App 批准请求：
 
-1、登录到网页应用程序。
+1、登录到网页 App。
 
 {% hint style="info" %}
 在为浏览器扩展批准登录请求时，扩展窗口必须保持打开状态，直到过程完成。Bitwarden 建议：
@@ -81,12 +83,12 @@
 {% endembed %}
 {% endtab %}
 
-{% tab title="桌面应用程序" %}
-发起**设备登录**后，要使用桌面应用程序批准请求：
+{% tab title="桌面 App" %}
+发起**使用设备登录**后，要使用桌面 App 批准请求：
 
-1、登录到桌面应用程序。
+1、登录到桌面 App。
 
-2、验证请求将发送到您的桌面应用程序：
+2、验证请求将发送到您的桌面 App：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5cpkevhyuiSg82yfopvmc1/3bccaff5f02ad79bab67fb7ed941ed0e/2025-01-16_11-44-40.png?_a=DAJAUVWIZAAB" %}
 桌面应用程序批准设备
@@ -98,7 +100,7 @@
 
 请注意，这是一个独特的指纹，与您的[账户指纹短语](../security/account-fingerprint-phrase.md)不一样。
 
-如果请求未被批准或被拒绝，则请求将在 15 分钟后过期。如果您没有收到登录请求或正在使用 F-Droid，请尝试从移动应用程序[手动同步您的密码库](syncing-your-vault.md)。
+如果请求未被批准或被拒绝，则请求将在 15 分钟后过期。如果您没有收到登录请求或正在使用 F-Droid，请尝试从移动 App [手动同步您的密码库](syncing-your-vault.md)。
 
 {% hint style="info" %}
 如果您使用**设备登录**选项，您仍然需要使用任何当前有效的[两步登录方法](../two-step-login/two-step-login-methods.md)。

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/generator/)
 {% endhint %}
 
-使用 Bitwarden 生成器工具可以轻松创建强密码和唯一用户名。密码生成器可用于所有 Bitwarden 客户端，用户名生成器可用于网页密码库、浏览器扩展、桌面应用程序和移动应用程序。
+使用 Bitwarden 生成器工具可以轻松创建强密码和唯一用户名。密码生成器可用于所有 Bitwarden 客户端，用户名生成器可用于网页 App、浏览器扩展、桌面 App 和移动 App。
 
 如果您目前还不是 Bitwarden 用户，您也可以在 [https://bitwarden.com/password-generator/](https://bitwarden.com/password-generator/) 测试我们的免费密码生成器。
 
@@ -13,59 +13,65 @@
 要生成强的密码：
 
 {% tabs %}
-{% tab title="网页密码库" %}
-从导航栏中选择**工具**，然后从工具菜单中选择**生成器**：
+{% tab title="网页 App" %}
+从导航栏中选择**工具** → **生成器**：
 
-{% embed url="https://bitwarden.com/_gatsby/image/78fa92d4874cd311549a49577ffd31de/ec0480954ab1f7edee60a1e3dd2c9683/Screen%20Shot%202022-05-19%20at%209.17.11%20AM.webp?eu=8cdf03e3b79caf8e5c6aa7873e27343be13901acfa0463d83f31e5fb1bf9cc8325a74f54279229b728680b8bd6e617e934c57b6311ecd5d2c5bb11f7e866f90d008a0eee31b07703057a95afb6f5541661921b0da0d6c000f53e2781b6b6b7761b014e28fd2cbcd3bdaa3535b5d6256aaef2e66d6fddb421bd430901880622b832ead39d665aadd0ee4aabf9e9eb579edabd2c514886b4323d704c4d10ed75dce3fa7537626345394f9ad602c765c8a9691d32245c5a02fe636fd357fa6d60cae3fcf75ede7928e1fece3877d3c3fb88f279ff6823b29148cada643e610fac11afa17bf2cf650f61d06e959c52b3041b3441ed6df43a60876f&a=w%3D804%26h%3D502%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.713Z" %}
-网页密码库的密码生成器
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/70bx0hWvxAvkz5RJdIj04n/44fa449c9573f69cc5e63d04d6d90646/2024-12-02_14-42-39.png?_a=DAJCwlWIZAAB" %}
+网页 App 的密码生成器
 {% endembed %}
 
-您在此页面上[指定的选项](generator.md#password-types)将保存以供密码生成器将来使用。您也可以使用相同的选项直接从添加/编辑项目界面使用 **⟳生成**按钮快速生成强密码：
+您在此页面上[指定的选项](generator.md#password-types)将保存以供密码生成器将来使用。您也可以使用相同的选项直接从添加或编辑项目界面使用 **⟳生成**按钮快速生成强密码：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5ZVBOSK13MaXJ2S8iJTOMX/59d4f77d47be9ecfd5957d00b70655e7/Screen_Shot_2022-04-05_at_9.09.39_AM.png?fm=webp&h=242&q=50&w=776" %}
-网页密码库的密码生成器
+网页 App 的密码生成器
 {% endembed %}
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
 选择 **⟳生成器**标签页：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6eOmI3kZOdnfw9i5JinfUD/1e378c15585598ba8f38f18c9a02e0a4/Screen_Shot_2022-04-05_at_10.22.19_AM.png?fm=webp&h=749&q=50&w=1210" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6eOmI3kZOdnfw9i5JinfUD/f1a7129244f49c7d904664632e329076/2024-10-29_10-34-01.png?_a=DAJCwlWIZAAB" %}
 浏览器扩展的密码生成器
 {% endembed %}
 
-您也可以从添加/编辑项目的界面使用 **⟳生成**按钮即时生成强密码：
+您也可以从添加/编辑项目的界面使用 **⟳生成**按钮生成强密码：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2Cbja6OBxW2S6GVxLOqlYh/bd200dbd854ddf5058d034ae9a374075/Screen_Shot_2022-04-05_at_10.26.34_AM.png?fm=webp&h=749&q=50&w=1210" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2Cbja6OBxW2S6GVxLOqlYh/b71de03b37f5a4f4960e344a5b17cc01/2024-10-29_10-35-25.png?_a=DAJCwlWIZAAB" %}
 浏览器扩展的密码生成器
 {% endembed %}
+
+如果您创建的账户没有存储在 Bitwarden 中，您也可以使用内嵌自动填充菜单，在**填充已生成的密码**提示下生成并自动填写密码：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2JcceqWgFbk4ViLCMe6qm5/ce116e8ff337f90fbbd57b52aa15fdcd/2024-11-05_10-07-08.png?_a=DAJCwlWIZAAB" %}
+填充已生成的密码
+{% endembed %}
+
+使用内嵌功能时，请使用 **⟳生成**按钮生成新的密码，直到您满意为止。确保在提示时选择**新增登录**，以便将登录信息保存到 Bitwarden。[了解更多](../auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#inline-auto-fill-menu)。
 {% endtab %}
 
 {% tab title="桌面端" %}
 从菜单栏中选择**查看** → **生成器**：
 
-{% embed url="https://bitwarden.com/_gatsby/image/a88398975c6364dc7efef7a9dead7f95/13354a603b21eb99207c17af33c02057/Screen%20Shot%202022-05-19%20at%209.20.01%20AM.webp?eu=8cda58e1e2ccf88f5968a4823b24603fb66e05fefa5035843967edad4cae998720f41d5374c779e02d6a538ad0e04abf62cf70351fedd388c2ba18a7bc3ca85b508a09bf36b724005422c0abb9fd00413cc51f5da181c95df66475ddb7e7e6231308586fe839b29ef3f06835e7d66c2cb9f2f07f2681fe3ca30c00018f0776be3ae8d6843248e693f718f0e0bddf68cec5b8776d28a7ba34480e186630ad2bd1e7ad07226f7d480961c9ad58c3339fe46a1464710d5650f666328550f9686096b0a8be3e8a382eb4f6a65228d987c182ed18ae3776e2d226a0ed6a3e6104b211ada27bf6bd157b10c174ad&a=w%3D850%26h%3D632%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.719Z" %}
-桌面应用程序的密码生成器
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6cFQ3iojZXLy1ZIdIXp6Zr/f69517b01aa7f370f91dc823e7a403b5/2025-01-13_16-26-13.png?_a=DAJCwlWIZAAB" %}
+桌面 App 的密码生成器
 {% endembed %}
 
-您也可以从添加/编辑项目的界面使用 **⟳生成**按钮即时生成强密码：
+您也可以从添加/编辑项目的界面使用 **⟳生成**按钮生成强密码：
 
-{% embed url="https://bitwarden.com/_gatsby/image/bb42abee62db9db01ca9899c90a20c61/747ba0ea51c42d6053c31c008a7ebdca/Screen%20Shot%202022-05-19%20at%209.20.39%20AM.webp?eu=dd8b52b3e39cfe810c60f5d06a736138e33804adaf5834d96960ecfa4afdca8e72a64f50299573e57a380edf81e014bb63977b691cbad9d296e81ff7bf33ab0d538b09ef35e27452077fc2f7b8a0024369931e5da0d1c05df76471dce0bae1251102147afa72ecd5beaf6432b186256aaef2e66d6fddb421bd430901880622b832ead39d665aadd0ee4aabf9e9eb579edabd2c514886b4323d712a66068b4ff9acf66e034677140d60cac91a8709c0a93c1e61705a5657f76e68d75caf6f3390e0f2a308d07278b3a0ce3526d3c6ab80f279ff6823b29148cada643e610fac11afa17bf2cf650f61d06e959c52b0031b3649ed6df43a60876f&a=w%3D850%26h%3D613%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.724Z" %}
-桌面应用程序的密码生成器
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6VInVRr9tZBOndfe4VrpXf/6cc882381f85a2e275e841a8521d4eea/2025-01-13_16-27-33.png?_a=DAJCwlWIZAAB" %}
+桌面 App 的密码生成器
 {% endembed %}
 {% endtab %}
 
 {% tab title="移动端" %}
 选择 **⟳生成器**标签页：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/lRJGxcbGbpu5FkVlPkhkC/17c76d7587bda6b2d8f9ce30d55dabbf/bitwarden-mobile-generator.png?fm=webp&h=1461&q=50&w=1899" %}
-移动端的密码生成器
-{% endembed %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/Cqrt6OGquQLRJvZDuqtCk/5b42dad11498bc5c62a749c4fc096fc9/2025-01-21_15-49-19.png?_a=DAJCwlWIZAAB" %}
 
-您也可以从添加/编辑项目的界面使用 **⟳生成**按钮即时生成强密码：
+您也可以从添加/编辑项目的界面生成强密码，以及通过从 iOS 应用程序扩展点按共享图标，使用 **⟳生成**按钮生成强密码：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/Q08IQ6qRaeN41EnbL7oJd/98324b437286e0e5f14b72ba8cebf973/bitwarden-mobile-generator2.png?fm=webp&h=1461&q=50&w=1899" %}
-移动端的密码生成器
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4NeVmiRcKfedg6Fzwp0N1Y/f91ad1097dcd379925cedee724dc7592/2025-01-21_15-51-01.png?_a=DAJCwlWIZAAB" %}
+移动端的密码生成
 {% endembed %}
 {% endtab %}
 
@@ -85,6 +91,8 @@ bw generate -uln --length 14
 有关详细信息，请参阅 Bitwarden [CLI 文档](../developer-tools/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
+
+
 
 ### 密码类型 <a href="#password-types" id="password-types"></a>
 
@@ -119,24 +127,30 @@ bw generate -uln --length 14
 要生成用户名：
 
 {% tabs %}
-{% tab title="网页密码库" %}
-从导航栏中选择**工具**，然后从工具菜单中选择**生成器**：
+{% tab title="网页 App" %}
+从导航栏中选择**工具** → **生成器**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2862v5xPV5qQM7XfdUvNlI/e041328a88535315aff51fa2d688d395/Screen_Shot_2022-05-10_at_9.43.01_AM.png?fm=webp&h=465&q=50&w=831" %}
-网页密码库用户名生
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2862v5xPV5qQM7XfdUvNlI/7481cc930fd05b05580ae5226825b613/2024-12-02_14-43-42.png?_a=DAJCwlWIZAAB" %}
+网页 App 用户名生成器
+{% endembed %}
+
+您也可以从添加/编辑项目界面使用 **⟳生成**按钮生成用户名：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1zpNFR8fu9DBo2krqln5hr/e893f1f3e8d85d58d20c8e316f247666/2024-12-02_14-44-30.png?_a=DAJCwlWIZAAB" %}
+网页 App 用户名生成器
 {% endembed %}
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-选择 **⟳生成器器**选项卡：
+选择 **⟳生成器器**选项卡然后选择**用户名**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3WEaJYUplgEdjgoSxlQ842/6f7df712204ed7d3bf2141b166aeb616/Screen_Shot_2022-05-10_at_9.45.26_AM.png?fm=webp&h=810&q=50&w=1235" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3WEaJYUplgEdjgoSxlQ842/40d3eed8347cb6b0a600d06f42cc1941/2024-10-29_10-39-00.png?_a=DAJCwlWIZAAB" %}
 浏览器扩展用户名生成器
 {% endembed %}
 
-您还可以从添加/编辑项目界面使用 **⟳生成器**按钮即时生成用户名：
+您还可以从添加/编辑项目界面使用 **⟳生成器**按钮生成用户名：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/23CDvd3ErFQIZNYwgh000F/cefb90b6cc43ce537d0fc688a5623e58/Screen_Shot_2022-04-05_at_10.24.15_AM.png?fm=webp&h=749&q=50&w=1210" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/23CDvd3ErFQIZNYwgh000F/c19c373ecb6ca2d6aad2587a1b16dd12/2024-10-29_10-39-56.png?_a=DAJCwlWIZAAB" %}
 浏览器扩展用户名生成器
 {% endembed %}
 {% endtab %}
@@ -144,51 +158,51 @@ bw generate -uln --length 14
 {% tab title="桌面端" %}
 从菜单栏中选择**查看** → **生成器**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2VGPd4WOwydbovDJdyVT51/7ad41a976c1b1beda1440f152f5068af/Screen_Shot_2022-05-19_at_9.24.13_AM.png?fm=webp&h=804&q=50&w=1088" %}
-桌面应用程序用户名生成器
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2VGPd4WOwydbovDJdyVT51/7978eb9934404198e94c030e2633dc3f/2025-01-13_16-28-11.png?_a=DAJCwlWIZAAB" %}
+桌面 App 用户名生成器
 {% endembed %}
 
-您还可以从添加/编辑项目界面使用 **⟳生成器**按钮即时生成用户名：
+您还可以从添加/编辑项目界面使用 **⟳生成器**按钮生成用户名：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/7xTg7VVE7CgTZhBl5LlYui/d4dbe3adf0d8d52a803e45b28acf97bc/Screen_Shot_2022-05-19_at_9.23.45_AM.png?fm=webp&h=777&q=50&w=1077" %}
-桌面应用程序用户名生成器
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7xTg7VVE7CgTZhBl5LlYui/e8e8d7abb103f07671015847f63521c8/2025-01-13_16-27-19.png?_a=DAJCwlWIZAAB" %}
+桌面 App 用户名生成器
 {% endembed %}
 {% endtab %}
 
 {% tab title="移动端" %}
 选择 **⟳生成器器**选项卡：
 
-{% embed url="https://bitwarden.com/_gatsby/image/b550176ea2a69ea56a0a51b954e8bde8/f733d76482dc17b25769efd395e73745/a.webp?eu=898e57b2e3c8add50c39a6866c7a693db33801fff75733d43e62e2fa4ba1cd8423f44d5776917db87d685a8881e245b834c37f3318b8d089c4bb1ea6bb35ff5c5b8b58e960e12601027992fcb1a601466e901b5ca88a9a0ef06f21d0e4e7b5761e554d2af972e983bdad636cb68b2e61e2e7f72a64caae2de7410f57c14035b824f89ac12c47b39fe74aacf8bded5f9cdfa4784303c5ad6066684b5d06be6be1a4e40c2c7e2e5f5d6b98ec3c9e19dff65d5a0961081504b61e3da12e827360cbb0fda75edb797bb0a0cf35758591a988bc4fa42871b6cc25fc823c7d5859b342b3fc25a0&a=w%3D850%26h%3D654%26fm%3Dwebp%26q%3D75&cd=2022-10-12T12%3A26%3A53.209Z" %}
-移动应用程序用户名生成器
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6nfsTiHypQvXrfz7qI7AKI/6e41b1fedea81895497268b0fd825215/2025-01-21_15-56-24.png?_a=DAJCwlWIZAAB" %}
+移动 App 用户名生成器
 {% endembed %}
 
 您还可以从添加/编辑项目界面使用 **⟳生成器**按钮即时生成用户名：
 
-{% embed url="https://bitwarden.com/_gatsby/image/cedb7a4d2d75ace960469ecc208b25e0/f733d76482dc17b25769efd395e73745/d.webp?eu=d9db01b2e7c8a8870a3ef1816170343ae56c04a2ac0063853862b1fa4daac8d42da5115425957cb17f3a5bddd0b316be34c22e624dbbd38ec5ba18fced36fb0f068750b623f730445b34dba7eda451102bd8491cf7d28b4bf62931cabbe6f36f1e124278ee20b9d7e4f47263af815060bcf6fb290096d921aa491925a84d318107bdcac1351ee89bb819e8e0effb5bc998e32a0548d2fa31712548195bb87cbcf1e30723267d5e1b6b99&a=w%3D850%26h%3D654%26fm%3Dwebp%26q%3D75&cd=2022-10-12T12%3A26%3A53.203Z" %}
-移动应用程序用户名生成器
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2Obfpm7UdBizkwASepMS6j/998c1448556484b867160f7412aa984c/2025-01-21_15-51-01.png?_a=DAJCwlWIZAAB" %}
+移动 App 用户名生成器
 {% endembed %}
 {% endtab %}
 {% endtabs %}
 
 ### 用户名类型 <a href="#username-types" id="username-types"></a>
 
-#### 附加地址电子邮件 <a href="#plus-addressed-email" id="plus-addressed-email"></a>
+#### 附加地址电子邮箱 <a href="#plus-addressed-email" id="plus-addressed-email"></a>
 
-选择此类型以使用您的电子邮件提供商的子地址（也称为「附加寻址」或「别名」）功能。这将基于您指定的**电子邮件地址**生成一个附加地址（以 `+` 和随机字符串命名）的用户名。
+选择此类型以使用您的电子邮箱提供商的子地址（也称为「附加寻址」或「别名」）功能。这将基于您指定的**电子邮箱地址**生成一个附加地址（以 `+` 和随机字符串命名）的用户名。
 
-在浏览器扩展和桌面应用程序的添加/编辑项目界面，您可以选择使用**随机字符串**（例如 `alice+gsd4aqqe@bitwarden.com`）生成用户名，或基于项目的**网站名称**（例如 `alice+github.com@ bitwarden.com`）生成用户名。**网站名称**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../../auto-fill/using-uris.md)，在其他位置，用户名生成器默认为**随机**。
+在浏览器扩展和桌面 App 的添加/编辑项目界面，您可以选择使用**随机字符串**（例如 `alice+gsd4aqqe@bitwarden.com`）生成用户名，或基于项目的**网站名称**（例如 `alice+github.com@ bitwarden.com`）生成用户名。**电子邮箱地址**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../../auto-fill/using-uris.md)，在其他位置，用户名生成器默认为**随机**。
 
 {% hint style="success" %}
 **为什么要使用附加地址电子邮件？**
 
-附加地址电子邮件可以让您在注册新的服务时过滤您的电子邮件中的所有垃圾邮件。使用用户名 `alice+rnok6xsh@bitwarden.com` 注册服务时，仍会向 `alice@bitwarden.com` 发送电子邮件，但您可以轻松过滤包含 `+rnok6xsh` 的电子邮件，以防止它们堵塞您的收件箱。
+附加地址电子邮箱可以让您在注册新的服务时过滤您的电子邮箱中的所有垃圾邮件。使用用户名 `alice+rnok6xsh@bitwarden.com` 注册服务时，仍会向 `alice@bitwarden.com` 发送电子邮件，但您可以轻松过滤包含 `+rnok6xsh` 的电子邮件，以防止它们堵塞您的收件箱。
 {% endhint %}
 
-#### Catch-all 电子邮件 <a href="#catch-all-email" id="catch-all-email"></a>
+#### Catch-all 电子邮箱 <a href="#catch-all-email" id="catch-all-email"></a>
 
-选择此类型以使用您的域名配置的 Catch-all 收件箱。这将在您指定的**域名**中生成一个随机的电子邮件地址。
+选择此类型以使用您的域名配置的 Catch-all 收件箱。这将在您指定的**域名**中生成一个随机的电子邮箱地址。
 
-在浏览器扩展和桌面应用程序的添加/编辑项目界面，您可以选择使用**随机字符串**（例如 `bqzjlero@gardenllc.com`）生成用户名，或基于项目的**网站名称**（例如 `twitter.com@gardenllc.com`）生成用户名。**网站名称**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../../auto-fill/using-uris.md)，在其他位置，用户名生成器默认为**随机**。
+在浏览器扩展和桌面 App 的添加/编辑项目界面，您可以选择使用**随机**（例如 `bqzjlero@gardenllc.com`）字符串生成用户名，或基于项目的**网站名称**（例如 `twitter.com@gardenllc.com`）生成用户名。**网站名称**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../../auto-fill/using-uris.md)，在其他位置，用户名生成器默认为**随机**。
 
 {% hint style="success" %}
 **为什么要使用 Catch-all 电子邮件？**
@@ -198,14 +212,14 @@ bw generate -uln --length 14
 在其他情况下，拥有自己域名（例如 `@gardenllc.com`）的个人可以使用 Catch-all 设置将电子邮件从具有面向隐私的用户名（例如 `github.com@gardenllc.com`）的账户路由到他们的实际收件箱。
 {% endhint %}
 
-#### 转发的电子邮件别名 <a href="#forwarded-email-alias" id="forwarded-email-alias"></a>
+#### 转发的电子邮箱别名 <a href="#forwarded-email-alias" id="forwarded-email-alias"></a>
 
-选择此类型以将用户名生成器与您的外部别名服务集成。大多数 Bitwarden 应用程序支持与 SimpleLogin、AnonAddy、Firefox Relay、Fastmail、Forward Email 和 DuckDuckGo 集成。移动应用程序目前支持与 SimpleLogin、AnonAddy 和 Firefox Relay 集成。
+选择此类型以将用户名生成器与您的外部别名服务集成。大多数 Bitwarden 应用程序支持与 SimpleLogin、AnonAddy、Firefox Relay、Fastmail、Forward Email 和 DuckDuckGo 集成。移动 App 目前支持与 SimpleLogin、AnonAddy 和 Firefox Relay 集成。
 
 {% hint style="success" %}
 **为什么使用转发的电子邮件别名？**
 
-使用 [SimpleLogin](https://simplelogin.io/) 和 [Addy.io](https://addy.io/) 等电子邮件别名服务时，您可以使用匿名地址（例如，`nobody-knows-its-me.d0p0r@slmail.me`）来注册网络账户，邮件将转发到您实际的收件箱（例如，`alice@bitwarden.com`）。这可以防止网站或服务在您注册时收集个人信息（在此示例中，名称 Alice 以及她在 Bitwarden 工作的事实）。
+使用 [SimpleLogin](https://simplelogin.io/) 和 [Addy.io](https://addy.io/) 等电子邮箱别名服务时，您可以使用匿名地址（例如，`nobody-knows-its-me.d0p0r@slmail.me`）来注册网络账户，邮件将转发到您实际的收件箱（例如，`alice@bitwarden.com`）。这可以防止网站或服务在您注册时收集个人信息（在此示例中，名称 Alice 以及她在 Bitwarden 工作的事实）。
 {% endhint %}
 
 要设置您的电子邮件别名集成：
@@ -238,7 +252,7 @@ SimpleLogin API 密钥
 
 2、在 Addy.io 中，从导航菜单选择 **Setting**。
 
-{% embed url="https://bitwarden.com/_gatsby/image/d6b84837fe5cdbb955f8df155ce986b4/96e485394ee6cc373bea86dd9750298f/addy%20settings.webp?eu=8eda59b0b69dfad15960f4d76d746538e13d01faab0763836b32e4fc1bfe98d421a01d5476947cb77e385e8cd6e545eb63c22c351ae986d2c6b411a5ef3cff0d548050b623f730445b34dba7eda451102bd8491cf7d28b4bf62931cabbe6f36f1e124278ee20b9d7e4f47263af8227528fe1e3540d99da0abc4e1b02b34f358211c1c9c13618ea98e54dbdb0bbab01999fb12d5414dffa3471744e1e5eb92bb9f1e00d242678140f7ca1ec0d8325cfe86b5f7f630008&a=w%3D850%26h%3D434%26fm%3Dwebp%26q%3D75&cd=2023-09-20T11%3A59%3A54.215Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/18PUguJXkABllufHgtNEJi/564febbfe28d3f0cd491c3216d62db9e/addy_settings.png?_a=DAJCwlWIZAAB" %}
 AnonAddy Settings
 {% endembed %}
 
