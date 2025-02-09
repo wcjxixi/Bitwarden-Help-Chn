@@ -4,11 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/create-bitwarden-account/)
 {% endhint %}
 
-很高兴我们能成为您的密码安全管理之旅的一部分。要创建 Bitwarden 账户，请点击我们主页上的 **Get Started** 按钮，或者点击[这里](https://vault.bitwarden.com/#/register)。
+我们很高兴能参与您的安全信息管理之旅。要创建 Bitwarden 账户，请点击我们主页上的 **Get Started** 按钮，或者点击[这里](https://vault.bitwarden.com/#/register)。
 
 ## 创建账户 <a href="#create-your-account" id="create-your-account"></a>
 
-在创建账户界面，输入您的**电子邮件地址**，然后从**将账户创建于**下拉列表中选择一个域名：
+在创建账户界面，输入您的**电子邮箱地址**，然后从**账户创建于**下拉列表中选择一个域名：
 
 {% hint style="success" %}
 您的 Bitwarden 账户可以创建在我们位于**美国**或**欧盟**的云服务器上，或创建在自托管服务器上。要选择在哪个服务器上创建账户，请滚动到页面底部并使用服务器或登录下拉列表进行选择，然后再提交表单。
@@ -18,7 +18,7 @@
 创建账户
 {% endembed %}
 
-选择**继续**以继续。Bitwarden 将向您的电子邮件收件箱发送一封验证电子邮件。当您收到该电子邮件时，选择**验证电子邮件**按钮，通过设置和确认**主密码**来完成账户的创建：
+选择**继续**以继续。Bitwarden 将向您的电子邮箱收件箱发送一封验证电子邮件。当您收到该电子邮件时，选择**验证电子邮箱**按钮，通过设置和确认**主密码**来完成账户的创建：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2pST1WXY0Xk7GQ4GpwzELn/02b9aa0c2b820030240e6023b237de5b/2024-08-28_10-09-18.png?_a=DAJAUVWIZAAB" %}
 
@@ -30,7 +30,7 @@
 
 ## 验证您的电子邮件 <a href="#verify-your-email" id="verify-your-email"></a>
 
-创建账户后，登录您的[网页密码库](https://vault.bitwarden.com/)并选择**验证电子邮件**按钮，Bitwarden 将向您发送一封验证电子邮件。如果如上所述在账户创建过程中提示您验证电子邮件，您可以跳过此步骤。
+创建账户后，登录您的[网页密码库](https://vault.bitwarden.com/)并选择**验证电子邮箱**按钮，Bitwarden 将向您发送一封验证电子邮件。如果如上所述在账户创建过程中提示您验证电子邮箱，您可以跳过此步骤。
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 

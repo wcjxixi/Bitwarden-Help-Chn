@@ -27,7 +27,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 _（所列版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版本号分别为服务器 2025.1.4、桌面 2025.1.4、浏览器扩展 2025.1.3、CLI 2025.1.3、iOS 2025.1.2 和安卓 2025.1.1）_
 
 {% hint style="info" %}
-为确保账户安全，2025 年初开始，对于**未使用两步登录的用户**，Bitwarden 将对其要求额外的验证。[了解更多](miscellaneous/new-device-login-protection.md)。
+为确保账户安全，2025 年初开始，**对于没有使用两步登录的用户**，Bitwarden 将对其要求额外的验证。[了解更多](miscellaneous/new-device-login-protection.md)。
 {% endhint %}
 
 此次发布包含：
@@ -48,7 +48,7 @@ _（所列版本号为 Bitwarden 网页 App 的版本号，本周期发布的其
 
 ### Password Manager
 
-* **SSH 代理**：Bitwarden 用户现在可以直接使用 Bitwarden 密码管理器安全地存储和生成 SSH 密钥。[了解更多](password-manager/developer-tools/ssh-agent.md)有关 Bitwarden SSH 代理的信息。
+* **SSH 代理**：Bitwarden 用户现在可以直接使用 Bitwarden Password Manager 安全地存储和生成 SSH 密钥。[了解更多](password-manager/developer-tools/ssh-agent.md)有关 Bitwarden SSH 代理的信息。
 * **使用网页设备批准**：使用网页 App 批准新的受信任设备和设备登录请求。[了解更多](your-vault/log-in-with-device.md)。
 * **更新了桌面端的生成器**：桌面 App 上的密码和用户名生成器的用户界面已更新，以反映其他 Bitwarden App 的最新设计。[了解更多](password-manager/vault-basics/generator.md)。
 
@@ -74,15 +74,15 @@ _（所列版本号为 Bitwarden 网页 App 的版本号，本周期发布的其
 
 ### Password Manager
 
-* **更多自动填充自定义选项**：浏览器扩展现在具有更多选项来自定义您的自动填充体验，包括选择项目卡片而不是「**填充**」按钮来自动填充，以及多个快速复制操作。了解更多。
-* **Snap Store 桌面 App 生物识别解锁**：通过 Snap Store 下载的密码管理桌面 App 现在支持生物识别解锁。了解更多。
-* **TOTP 代码的内嵌自动填充**：内嵌自动填充菜单现在可用于选择 TOTP 代码。了解更多有关内嵌自动填充菜单的信息。
-* **iOS 上长按自动填充**：在 iOS 18+ 上长按任何文本字段即可从 Bitwarden 自动填充。了解更多。
+* **更多自动填充自定义选项**：浏览器扩展现在具有更多选项来自定义您的自动填充体验，包括选择项目卡片而不是「**填充**」按钮来自动填充，以及多个快速复制操作。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#zi-ding-yi-zi-dong-tian-chong-xing-wei)。
+* **Snap Store 桌面 App 生物识别解锁**：通过 Snap Store 下载的密码管理桌面 App 现在支持生物识别解锁。[了解更多](your-vault/unlocking-with-biometrics.md#zhuo-mian-duan)。
+* **TOTP 代码的内嵌自动填充**：内嵌自动填充菜单现在可用于选择 TOTP 代码。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#use-the-inline-auto-fill-menu)有关内嵌自动填充菜单的信息。
+* **iOS 上长按自动填充**：在 iOS 18+ 上长按任何文本字段即可从 Bitwarden 自动填充。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)。
 * **新的公共 API 操作**：`/public/organization/subscription` 端点添加了一个 GET 操作。了解更多有关 Bitwarden 公共 API 的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **移除免费的 Bitwarden 家庭赞助策略**：该策略允许企业组织阻止用户通过他们的组织兑换赞助的家庭计划。了解更多。
+* **移除免费的 Bitwarden 家庭赞助策略**：该策略允许企业组织阻止用户通过他们的组织兑换赞助的家庭计划。[了解更多](plans-and-pricing/password-manager/redeem-families-sponsorship.md)。
 * **集成页面**：管理控制台导航菜单中添加了集成页面。集成页面提供了Bitwarden SSO 集成、事件管理等常用的帮助中心链接！
 
 ### 提供商门户 <a href="#provider-portal" id="provider-portal"></a>
@@ -115,7 +115,7 @@ _（所列版本号为 Bitwarden 网页 App 的版本号，本周期发布的其
 
 ### 我的账户 <a href="#my-account" id="my-account"></a>
 
-* **所有客户端注册期间的电子邮箱验证**：使用任何 Bitwarden 客户端创建新 Bitwarden 账户的用户现在将被要求在创建主密码之前验证其电子邮邮箱。了解更多。
+* **所有客户端注册期间的电子邮箱验证**：使用任何 Bitwarden 客户端创建新 Bitwarden 账户的用户现在将被要求在创建主密码之前验证其电子邮邮箱。[了解更多](getting-started/create-bitwarden-account.md)。
 
 ### Password Manager
 
