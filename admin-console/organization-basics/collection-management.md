@@ -53,7 +53,7 @@
 此选项即使**启用，**&#x4EFB;何用户仍然可以被授予「可以管理」集合的权限，以便他们可以管理其创建后的成员和内容。
 {% endhint %}
 
-### 限制为所有者和管理员可以创建集合 <a href="#limit-collection-deletion-to-owners-and-admins" id="limit-collection-deletion-to-owners-and-admins"></a>
+### 限制为所有者和管理员可以删除集合 <a href="#limit-collection-deletion-to-owners-and-admins" id="limit-collection-deletion-to-owners-and-admins"></a>
 
 该选项将决定是否为具有用户角色的组织成员提供删除收藏集的功能。
 
