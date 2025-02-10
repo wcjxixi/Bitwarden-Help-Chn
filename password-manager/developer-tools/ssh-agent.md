@@ -33,7 +33,7 @@ Flatpak 版本目前暂不支持 SSH 代理，[Snap 下载](https://bitwarden.co
 | 公钥   | 与您要连接的服务器共享的密钥的一部分                                                    |
 | 指纹   | 从公钥生成的短唯一字符串，用于识别。例如，可以使用指纹验证 SSH 签名的 Git 提交                          |
 
-存储在 Bitwarden 密码管理器中的 SSH 密钥可以使用 Bitwarden 的功能，例如文件夹、收藏、主密码重新提示、笔记、克隆项目、附件和自定义字段。
+存储在 Bitwarden 密码管理器中的 SSH 密钥可以使用 Bitwarden 的功能，例如[文件夹](../../your-vault/folders.md)、[收藏](../../your-vault/favorites.md)、[主密码重新提示](../../your-vault/vault-items.md#protect-individual-items)、笔记、[克隆项目](../../your-vault/vault-items.md#clone)、[附件](../../your-vault/file-attachments.md)和[自定义字段](../../your-vault/custom-fields.md)。
 
 ## 创建新的 SSH 密钥 <a href="#create-new-ssh-key" id="create-new-ssh-key"></a>
 
@@ -41,7 +41,9 @@ Flatpak 版本目前暂不支持 SSH 代理，[Snap 下载](https://bitwarden.co
 
 1、点击**新建**按钮并选择 **SSH 密钥**作为项目类型。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7wKQygR79OFJP1Nk1c3V3D/8b4f5620b35ad79951b55a3153843753/edit.png?_a=DAJAUVWIZAA0" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1XYC3HwXOTMAPvyW1GS3Mk/89c7ee8a5127ad1295fc3074ce3339bb/2024-11-08_15-08-44.png?_a=DAJCwlWIZAAB" %}
+在桌面客户端创建新的 SSH 密钥
+{% endembed %}
 
 {% hint style="info" %}
 目前，Bitwarden 只能生成 `ED25519` 类型的 SSH 密钥。
@@ -55,7 +57,7 @@ Flatpak 版本目前暂不支持 SSH 代理，[Snap 下载](https://bitwarden.co
 
 ### 编辑现有密钥 <a href="#edit-existing-keys" id="edit-existing-keys"></a>
 
-SSH 密钥保存到 Bitwarden 密钥库中后，您就可以编辑该密钥了：
+SSH 密钥保存到 Bitwarden 密钥库中后，您可以对它们进行编辑：
 
 {% tabs %}
 {% tab title="桌面端" %}
@@ -178,15 +180,33 @@ git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
 {% endtab %}
 
 {% tab title="macOS" %}
+要在 macOS 上启用 Bitwarden SSH 代理：
 
+1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何在 macOS 上执行此操作（将 `<user>` 替换为您的用户名）：
+
+```bash
+export SSH_AUTH_SOCK=/Users/<user>/.bitwarden-ssh-agent.sock
+```
 {% endtab %}
 
 {% tab title="Linux" %}
+要在 Linux 上启用 Bitwarden SSH 代理：
 
+1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何在 Linux 上执行此操作（将 `<user>` 替换为您的用户名）：
+
+```bash
+export SSH_AUTH_SOCK=/home/<user>/.bitwarden-ssh-agent.sock
+```
 {% endtab %}
 
 {% tab title="Snap" %}
+要在 snap 安装上启用 Bitwarden SSH 代理：
 
+1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何在 snap 上执行此操作（将 `<user>` 替换为您的用户名）：
+
+```bash
+export SSH_AUTH_SOCK=/home/<user>/snap/bitwarden/current/.bitwarden-ssh-agent.sock
+```
 {% endtab %}
 {% endtabs %}
 
