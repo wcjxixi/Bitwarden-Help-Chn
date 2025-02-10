@@ -29,24 +29,34 @@
 
 ### 所有者和管理员可以管理所有集合和项目 <a href="#owners-and-admins-can-manage-all-collections-and-items" id="owners-and-admins-can-manage-all-collections-and-items"></a>
 
-此选项将决定具有[所有者或管理员角色](../user-management/member-roles-and-permissions.md)的成员是否具有对组织中所有集合以及所属项目的管理权限。
+此选项将决定具有所有者或管理员角色的成员是否具有对组织中**所有**集合以及所属项目的管理权限。
 
-关闭此选项后，所有者或管理员无法自动获取访问或更改权限。所有者和管理员只能具有对他们已直接分配权限的集合的访问权限。
+**关闭**此选项后，所有者或管理员无法自动获取访问或更改权限。所有者和管理员只能具有对他们已直接分配权限的集合的访问权限。
 
-启用此选项后，所有者和管理员将能够从任何集合中添加、编辑、查看或删除密码库项目，从任何集合中添加或删除成员和群组，以及从管理控制台直接删除集合。
+**关闭**此选项后，对于没有分配具有「[可以管理](../user-management/member-roles-and-permissions.md)」权限的成员的任何集合，集合视图中将显示添加访问权限徽章。所有者和管理员将暂时获得对这些集合的访问权限，直到他们为这些集合分配了具有「可以管理」权限的成员。&#x20;
+
+**打开**此选项后，所有者和管理员将可以从管理控制台添加、编辑、查看或删除任何集合中的密码库项目，从任何集合中添加或删除成员和群组，编辑集合信息，以及直接删除集合。
 
 {% hint style="success" %}
 例如，如果您的 IT 团队需要访问与您的组织关联的所有密码库项目以进行定期审核，则此选项适合您。
 {% endhint %}
 
-### 限制为仅所有者和管理员可以创建和删除集合 <a href="#limit-collection-creation-and-deletion-to-owners-and-admins" id="limit-collection-creation-and-deletion-to-owners-and-admins"></a>
+### 限制为所有者和管理员可以创建集合 <a href="#limit-collection-creation-to-owners-and-admins" id="limit-collection-creation-to-owners-and-admins"></a>
 
 此选项将决定具有[用户角色](../user-management/member-roles-and-permissions.md)的组织成员是否具有管理集合的能力。
 
-**关闭**此选项后，用户将可以自由地为自己及其团队创建、管理和删除集合。创建集合的成员将自动获取对该集合的可以管理的权限。因此，他们可以分配新成员或群组访问权限，包括添加具有「[可以管理](../user-management/member-roles-and-permissions.md)」权限的其他成员。
+**关闭**此选项后，用户将可以自由地为自己及其团队创建集合。创建集合的成员将自动获取对该集合的可以管理的权限。因此，他们可以为新成员或群组分配访问权限，包括添加具有「[可以管理](../user-management/member-roles-and-permissions.md)」权限的其他成员。
 
-**启用**此选项后，您的所有者和管理员将需要代表您的用户创建组织的集合基础架构，但也可以分配单个用户来管理创建后的集合中的项目和人员。
+**打开**此选项后，则需要所有者和管理员来代表您的用户创建组织的集合基础架构，但也可以分配单个用户来管理创建后的集合中的项目和人员。
 
 {% hint style="success" %}
 此选项即使**启用，**&#x4EFB;何用户仍然可以被授予「可以管理」集合的权限，以便他们可以管理其创建后的成员和内容。
 {% endhint %}
+
+### 限制为所有者和管理员可以创建集合 <a href="#limit-collection-deletion-to-owners-and-admins" id="limit-collection-deletion-to-owners-and-admins"></a>
+
+该选项将决定是否为具有用户角色的组织成员提供删除收藏集的功能。
+
+**关闭**此选项后，用户可以自由删除集合。
+
+**打开**此选项后，组织所有者和管理员可以删除组织的集合。
