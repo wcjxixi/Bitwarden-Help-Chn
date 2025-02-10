@@ -7,7 +7,7 @@
 {% hint style="info" %}
 **如果您的提供商是在 2024 年 8 月 1 日之前建立的**，则每个客户组织当前均使用在[客户组织创建](start-a-client-organization.md)期间注册的付款方式单独计费。客户组织所有者（即**不是**提供商成员​​的所有者）将能够查看计费信息。
 
-您的提供商将在未来版本中迁移到本文其余部分中描述的计费系统。
+已有的提供商将从 2024 年 10 月开始转入新的计费系统。
 {% endhint %}
 
 ## 关于提供商计费 <a href="#about-provider-billing" id="about-provider-billing"></a>
