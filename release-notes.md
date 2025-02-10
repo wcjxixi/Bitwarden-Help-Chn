@@ -149,12 +149,12 @@ _（所列版本号为 Bitwarden 网页 App 的版本号，本周期发布的其
 
 ### 我的账户 <a href="#my-account" id="my-account"></a>
 
-* **注册期间的电子邮箱验证**：通过网页 App 创建 Bitwarden 账户的用户现在将被要求在创建主密码之前验证其电子邮箱。了解更多。
+* **注册期间的电子邮箱验证**：通过网页 App 创建 Bitwarden 账户的用户现在将被要求在创建主密码之前验证其电子邮箱。[了解更多](getting-started/create-bitwarden-account.md)。
 
 ### Password Manager
 
-* **使用生物识别解锁 - Linux 浏览器扩展**：Linux 用户现在可以在基于 Chromium 的浏览器上使用 Bitwarden 浏览器扩展的生物识别解锁功能。了解更多。
-* 桌**面 App 阻止屏幕捕获**：默认情况下，Windows 和 macOS 的桌面应用程序现在将阻止屏幕捕获和录制。了解更多。
+* **使用生物识别解锁 - Linux 浏览器扩展**：Linux 用户现在可以在基于 Chromium 的浏览器上使用 Bitwarden 浏览器扩展的生物识别解锁功能。[了解更多](your-vault/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
+* 桌**面 App 阻止屏幕捕获**：默认情况下，Windows 和 macOS 的桌面应用程序现在将阻止屏幕捕获和录制。[了解更多](getting-started/getting-started-desktop.md#xia-yi-bu)。
 * **在桌面端同步锁定的密码库**：即使活动账户被锁定，桌面 App 现在也可以手动同步。了解更多。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
