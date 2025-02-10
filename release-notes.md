@@ -155,14 +155,14 @@ _（所列版本号为 Bitwarden 网页 App 的版本号，本周期发布的其
 
 * **使用生物识别解锁 - Linux 浏览器扩展**：Linux 用户现在可以在基于 Chromium 的浏览器上使用 Bitwarden 浏览器扩展的生物识别解锁功能。[了解更多](your-vault/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
 * 桌**面 App 阻止屏幕捕获**：默认情况下，Windows 和 macOS 的桌面应用程序现在将阻止屏幕捕获和录制。[了解更多](getting-started/getting-started-desktop.md#xia-yi-bu)。
-* **在桌面端同步锁定的密码库**：即使活动账户被锁定，桌面 App 现在也可以手动同步。了解更多。
+* **在桌面端同步锁定的密码库**：即使活动账户被锁定，桌面 App 现在也可以手动同步。[了解更多](your-vault/syncing-your-vault.md#manual-sync)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **Microsoft Sentinel 集成**：新的本地集成可用于 Microsoft Sentinel 安全信息和事件管理 (SIEM)。该集成提供了跨身份验证、组织活动和密码库项目的全面事件覆盖。了解更多。
-* **Ping Identity SCIM 支持**：Bitwarden 组织现已正式支持 Ping Identity 跨域身份管理 (SCIM) 系统。使用 Ping Identity SCIM 集成来自动配置 Bitwarden 组织中的成员和群组。了解更多。
-* **UI 改进升级计划**：为简化将您的组织升级到另一个计划的流程，对 UI 进行了改进。了解更多。
-* **为允许的应用程序策略自动登录用户**： 这项新策略将允许 IdP 管理员启用非 SSO 应用程序，以便在从其 IdP 面板启动时自动登录用户。了解更多。
+* **Microsoft Sentinel 集成**：新的本地集成可用于 Microsoft Sentinel 安全信息和事件管理 (SIEM)。该集成提供了跨身份验证、组织活动和密码库项目的全面事件覆盖。[了解更多](admin-console/reporting/microsoft-sentinel-siem.md)。
+* **Ping Identity SCIM 支持**：Bitwarden 组织现已正式支持 Ping Identity 跨域身份管理 (SCIM) 系统。使用 Ping Identity SCIM 集成来自动配置 Bitwarden 组织中的成员和群组。[了解更多](admin-console/login-with-sso/implementation-guides/ping-identity-saml-implementation.md)。
+* **UI 改进升级计划**：为简化将您的组织升级到另一个计划的流程，对 UI 进行了改进。[了解更多](organizations/organizations.md#upgrade-an-organization)。
+* **为允许的应用程序策略自动登录用户**： 这项新策略将允许 IdP 管理员启用非 SSO 应用程序，以便在从其 IdP 面板启动时自动登录用户。[了解更多](organizations/enterprise-policies.md#automatically-log-in-users-for-allowed-applications)。
 
 ## 2024.9.2
 

@@ -22,7 +22,7 @@
 
 Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需求。关于每种组织类型的逐一功能细分，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 
-<table><thead><tr><th width="150">类型</th><th>描述</th></tr></thead><tbody><tr><td>免费组织</td><td>免费组织允许 2 个用户在最多 2 个<a href="collections.md">集合</a>中安全地共享。</td></tr><tr><td>家庭住址</td><td>家庭组织允许 6 个用户在无限的<a href="collections.md">集合</a>中安全地共享。</td></tr><tr><td>团队组织</td><td>团队组织允许无限的用户（按每用户每月计费）在无限的<a href="collections.md">集合</a>中安全地共享，并提供一套操作工具，如事件日志。</td></tr><tr><td>企业组织</td><td>企业组织允许无限的用户（按每用户每月计费）在无限的<a href="collections.md">集合</a>中安全地共享，并在 Bitwarden 的操作工具套件中添加了仅针对企业的功能，例如 <a href="../login-with-sso/about-login-with-sso.md">SSO 登录</a>和<a href="enterprise-policies.md">策略</a>。</td></tr></tbody></table>
+<table><thead><tr><th width="150">类型</th><th>描述</th></tr></thead><tbody><tr><td>免费组织</td><td>免费组织允许 2 个用户在最多 2 个<a href="collections.md">集合</a>中安全地共享。</td></tr><tr><td>家庭组织</td><td>家庭组织允许 6 个用户在无限的<a href="collections.md">集合</a>中安全地共享。</td></tr><tr><td>团队组织</td><td>团队组织允许无限的用户（按每用户每月计费）在无限的<a href="collections.md">集合</a>中安全地共享，并提供一套操作工具，如事件日志。</td></tr><tr><td>企业组织</td><td>企业组织允许无限的用户（按每用户每月计费）在无限的<a href="collections.md">集合</a>中安全地共享，并在 Bitwarden 的操作工具套件中添加了仅针对企业的功能，例如 <a href="../login-with-sso/about-login-with-sso.md">SSO 登录</a>和<a href="enterprise-policies.md">策略</a>。</td></tr></tbody></table>
 
 ### 组织与高级会员比较 <a href="#comparing-organizations-with-premium" id="comparing-organizations-with-premium"></a>
 
@@ -36,11 +36,13 @@ Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需�
 
 ## 创建组织 <a href="#create-an-organization" id="create-an-organization"></a>
 
-通过[网页 App](../getting-started/getting-started-webvault.md) 创建和管理组织。如果您是 Bitwarden 新手，请在开始一个组织之前[创建一个帐户](https://vault.bitwarden.com/#/register)，然后按照以下说明进行操作：
+通过[网页 App](../getting-started/getting-started-webvault.md) 创建和管理组织。如果您是 Bitwarden 新手，请在开始一个组织之前[创建一个账户](https://vault.bitwarden.com/#/register)，然后按照以下说明进行操作：
 
 1、从 Bitwarden 网页 App 中选择**新建组织**按钮：
 
-![新建组织](../.gitbook/assets/new-org-button-overlay.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3eSqWiTIuPSFxXdo5AAjT9/248b0fa7bb381add0d71682acd244a63/2024-12-03_13-57-58.png?_a=DAJCwlWIZAAB" %}
+新建组织
+{% endembed %}
 
 输入**组织名称**和一个我们可以联系到您的**账单电子邮箱**。[了解计费电子邮箱持有者的权限](../plans-and-pricing/billing-faqs.md#wen-wo-de-zu-zhi-de-ji-fei-dian-zi-you-jian-de-chi-you-zhe-ke-yi-zhi-xing-na-xie-cao-zuo)。
 
@@ -50,13 +52,13 @@ Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需�
 所有付费组织（家庭、初创团队、团队或企业）都包含了所有注册用户的高级功能！
 {% endhint %}
 
-4、如果您选择**免费组织**，那么一切就准备好了！如果您选择我们的付费组织之一，
+3、如果您选择**免费组织**，那么一切就准备好了！如果您选择我们的付费组织之一，
 
 * **家庭/团队/企业**：您的计划随附了 1GB 加密[附件存储](../your-vault/file-attachments.md)空间。$0.33 /GB / 月添加**加附加存储（GB）**。
 * **团队/企业**：指定组织所需的**用户席位**数量。以后可以随时添加更多席位。如果超过此数量，席位会自动增加，除非您[指定限制](user-management.md#set-a-seat-limit)。
 * **团队/企业**：选择您要**按年**还是**按月**付费。家庭组织只能**按年**付费。
 
-5、对组织满意后，请输入您的**付款信息**（如果您创建的是免费组织，则不需要），然后选择**提交**。
+4、对组织满意后，请输入您的**付款信息**（如果您创建的是免费组织，则不需要），然后选择**提交**。
 
 {% hint style="success" %}
 新的家庭、团队和企业组织内置了 7 天免费试用！在您的试用期结束之前，我们不会向您收费，您可以随时从组织的**设置**选项卡中取消订阅。
