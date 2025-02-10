@@ -78,7 +78,7 @@ _（所列版本号为 Bitwarden 网页 App 的版本号，本周期发布的其
 * **Snap Store 桌面 App 生物识别解锁**：通过 Snap Store 下载的密码管理桌面 App 现在支持生物识别解锁。[了解更多](your-vault/unlocking-with-biometrics.md#zhuo-mian-duan)。
 * **TOTP 代码的内嵌自动填充**：内嵌自动填充菜单现在可用于选择 TOTP 代码。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#use-the-inline-auto-fill-menu)有关内嵌自动填充菜单的信息。
 * **iOS 上长按自动填充**：在 iOS 18+ 上长按任何文本字段即可从 Bitwarden 自动填充。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)。
-* **新的公共 API 操作**：`/public/organization/subscription` 端点添加了一个 GET 操作。了解更多有关 Bitwarden 公共 API 的信息。
+* **新的公共 API 操作**：`/public/organization/subscription` 端点添加了一个 GET 操作。[了解更多](organizations/bitwarden-public-api.md)有关 Bitwarden 公共 API 的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -119,8 +119,8 @@ _（所列版本号为 Bitwarden 网页 App 的版本号，本周期发布的其
 
 ### Password Manager
 
-* **内联自动填充菜单密码生成**：现在，在填写账户创建或密码更新字段时，可使用内联自动填写菜单轻松生成密码。了解更多。
-* **支付卡和身份的内联自动填充菜单选项**：您现在可以打开或关闭将支付卡和身份作为建议包含在内联自动填写菜单中的选项。了解更多。
+* **内联自动填充菜单密码生成**：现在，在填写账户创建或密码更新字段时，可使用内联自动填写菜单轻松生成密码。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
+* **支付卡和身份的内联自动填充菜单选项**：您现在可以打开或关闭将支付卡和身份作为建议包含在内联自动填写菜单中的选项。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-cards-and-identities.md#using-the-inline-menu)。
 * **iOS 复制和粘贴更新**：Bitwarden iOS 复制和粘贴功能添加了多个更新，以方便使用。
 * **改进了非官方服务器的错误处理**：为了帮助使用非官方 Bitwarden 服务器的用户，添加了新的错误消息以帮助识别连接到非官方服务器时的错误。
 * **暂时移除桌面 App 上的「允许屏幕捕获」开关**：为改善该功能的使用体验，已暂时移除 macOS 和 Windows 桌面 App 上的该功能。目前，桌面 App 将通过截图和屏幕共享捕获。

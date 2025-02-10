@@ -7,18 +7,18 @@
 Bitwarden Public API 为组织提供了一套用于管理成员、集合、群组、事件日志和策略的工具。
 
 {% hint style="success" %}
-对于**密码库项目管理**，请使用 [CLI](../password-manager/developer-tools/password-manager-cli.md)。对密码库项目的访问依赖于密码库解密，解密必须使用主密码。
+该 API 不允许管理个人密码库项目。要管理个人密码库项目，请使用[密码库管理 API](../password-manager/developer-tools/password-manager-apis.md#vault-management-api)。
 {% endhint %}
 
 此 Public API 是一种 RESTful API，RESTful API 具有可预测的面向资源的 URL，接受 JSON 编码的请求正文，返回 JSON 编码的响应，并使用标准的 HTTP 响应代码、验证和动态词。
 
-此 Public API 与 OpenAPI 规范 (OAS3) 兼容，并发布兼容的 [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) 定义文件。使用 [Swagger UI](https://swagger.io/tools/swagger-ui/) 探索 OpenAPI 规范：
+此 Public API 与 OpenAPI 规范 (OAS3) 兼容，并发布符合标准的 [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) 定义文件。使用 [Swagger UI](https://swagger.io/tools/swagger-ui/) 探索 OpenAPI 规范：
 
-* 对于公共云托管实例：[https://bitwarden.com/help/api/](https://bitwarden.com/help/api/)
-* 对于自托管实例：https://your.domain.com/api/docs/
+* 对于公共云托管实例：`https://bitwarden.com/help/api/`
+* 对于自托管实例：`https://your.domain.com/api/docs/`
 
 {% hint style="info" %}
-以下计划的客户可以访问 Bitwarden 公共 API：**经典 2019 企业组织**、当前的**企业组织**和当前的**团队组织**。有关更多信息，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
+**经典 2019 企业组织**、当前的**企业组织**和当前的**团队组织**均可以访问 Bitwarden 公共 API。更多信息，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 {% endhint %}
 
 > **\[译者注]**：Swagger-UI 是一套 HTML/CSS/JS 框架，用于解析遵守 Swagger 规范的 JSON 或 YAML 文件，展示 swagger-editor 生成的 API 文档，还可以在其中调试 API。它将我们编写的 OpenAPI 规范呈现为交互式的 API 文档，使用浏览器来查看并且操作我们的 RESTful API。
@@ -29,13 +29,13 @@ Bitwarden Public API 为组织提供了一套用于管理成员、集合、群�
 
 ### 基本 URL <a href="#base-url" id="base-url"></a>
 
-对于云托管：`https://api.bitwarden.com`
+对于云托管：`https://api.bitwarden.com` 或 `https://api.bitwarden.eu`
 
 对于自托管：`https://your.domain.com/api`
 
 ### 验证端点 <a href="#authentication-endpoints" id="authentication-endpoints"></a>
 
-对于云托管：`https://identity.bitwarden.com/connect/token`
+对于云托管：`https://identity.bitwarden.com/connect/token` 或 `https://identity.bitwarden.eu/connect/token`
 
 对于自托管：`https://your.domain.com/identity/connect/token`
 
@@ -47,9 +47,9 @@ API 使用承载访问令牌对受保护的 API 端点进行验证。Bitwarden �
 用于验证公共 API 的[ API 密钥](bitwarden-public-api.md#authentication)与个人 API 密钥是**不同的**。组织 API 密钥的 `client_id` 格式为 `"organization.ClientId"`，而个人 API 密钥的 `client_id` 格式为 `"user.clientId"`。
 {% endhint %}
 
-API 密钥 `client_id` 和 `client_secret` 可以由**所有者**从网页密码库获得，方法是通过导航到组织**设置** → **我的组织**，并向下滚动到 **API 密钥**部分：
+API 密钥 `client_id` 和 `client_secret` 可以由所有者从管理控制台获得，方法是通过导航到组织**设置** → **组织信息**，然后向下滚动到 **API 密钥**部分：
 
-{% embed url="https://bitwarden.com/help/images/organizations/org-api-key.png" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1Mq824Xunm2wmzd8f905AJ/792cca9c6edddee71abfc350479ec813/Screenshot_2024-02-28_at_2.43.34_PM.png?_a=DAJCwlWIZAAB" %}
 获取组织 API 密钥
 {% endembed %}
 
@@ -80,7 +80,7 @@ curl -X POST \
 }
 ```
 
-在此响应中，`3600` 表示到期值（以秒为单位），表示此令牌在发出后 60 分钟内有效。使用过期的令牌进行 API 调用将返回一个 `401 未经授权` 的[响应代码](bitwarden-public-api.md#response-codes)。
+在此响应中，`3600` 表示到期值（以秒为单位），表示此令牌在发出后 60 分钟内有效。使用过期的令牌进行 API 调用将返回一个 `401 Unauthorized` 的[响应代码](bitwarden-public-api.md#response-codes)。
 
 ## 内容类型 <a href="#content-types" id="content-types"></a>
 

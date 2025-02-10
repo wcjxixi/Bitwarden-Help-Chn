@@ -4,31 +4,23 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/personal-api-key/)
 {% endhint %}
 
-您的 Bitwarden 个人 API 密钥可以作为一种验证进入命令行界面（CLI）的方式。
+您的 Bitwarden 个人 API 密钥可用作命令行界面 (CLI) 的验证方法。
 
 {% hint style="info" %}
-个人 API 密钥与用于访问 [Bitwarden 公共 API](../../organizations/bitwarden-public-api.md) 或[目录连接器](../../directory-connector/about-directory-connector.md)的[组织 API 密钥](../../organizations/bitwarden-public-api.md#authentication)是**不同的**。个人 API 密钥的 `client_id` 格式为 `"user.clientId"`，而组织 API 密钥的 `client_id` 格式为 `"organization.ClientId"`。
+个人 API 密钥与[组织 API 密钥](../../organizations/bitwarden-public-api.md#authentication)是**不同的，**&#x7EC4;织 API 密钥用于访问 [Bitwarden 公共 API](../../organizations/bitwarden-public-api.md) 或[目录连接器](../../directory-connector/about-directory-connector.md)。个人 API 密钥的 `client_id` 格式为 `"user.clientId"`，而组织 API 密钥的 `client_id` 格式为 `"organization.ClientId"`。
 {% endhint %}
 
 ## 获取您的个人 API 密钥 <a href="#get-your-personal-api-key" id="get-your-personal-api-key"></a>
 
-使用以下步骤来获取您的 API 密码：
+要获取您的个人 API 密码：
 
-1、在[网页密码库](https://vault.bitwarden.com/)中，选择配置文件图标然后从下拉列表中选择**账户设置**：
+1、在网页 App 中，导航到**设置** → **安全** → **密钥**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/74BqYDU6qE9evz6wEz8K7Y/773eec1c0b00e00db4dedd3456e9a3f9/Screen_Shot_2022-05-13_at_10.34.10_AM.png?fm=webp&h=226&q=50&w=773" %}
-账户设置
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3IHpaOpEB5a13TF3B3RqqB/05511a849898a1d2d46efb2764df0547/2024-12-03_10-47-30.png?_a=DAJCwlWIZAAB" %}
+密钥
 {% endembed %}
 
-2、从账户设置菜单中，选择**安全**页面然后选择**密钥**选项卡：
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3IHpaOpEB5a13TF3B3RqqB/2d3f5e721eda8aa02210c4b476fc9434/Screen_Shot_2022-05-18_at_9.17.41_AM.png?fm=webp&h=594&q=50&w=787" %}
-密钥选项卡
-{% endembed %}
-
-3、选择**查看 API 密钥**按钮后将提示您输入主密码。
-
-输入正确的主密码后，将为你提供以下内容：
+3、选择**查看 API 密钥**按钮然后输入主密码以验证访问权限。输入后，您将看到以下内容：
 
 * `client_id: "user.clientId"` （这个值对于你的账户是唯一的，并且不会改变）
 * `client_secret: "clientSecret"` （这个值是唯一的，但可以被轮换）
