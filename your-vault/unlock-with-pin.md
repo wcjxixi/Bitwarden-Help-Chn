@@ -4,17 +4,21 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/unlock-with-pin/)
 {% endhint %}
 
-Bitwarden 可以配置为接受个人识别码 (PIN) 的方式解锁您的密码库。
+您可以设置 PIN 码作为解锁密码库的方法。PIN 码只能用于解锁密码库，登录时仍需使用主密码或使用设备登录，以及任何已启用的[两步登录方式](../two-step-login/two-step-login-methods.md)。
 
-PIN 码**只能用于解锁**您的密码库，**登录**时您仍然会被要求使用您的主密码和任何已启用的[两步登录方式](../two-step-login/two-step-login-methods.md)。如果不确定两者之间的区别，请向下滚动至[理解解锁与登录](unlock-with-pin.md#understanding-unlock-vs-log-in)。
+使用PIN码解锁不是访问 Bitwarden 账户的无密码方法，如果您不清楚两者的区别，请参阅[理解锁与登录](unlock-with-pin.md#understanding-unlock-vs-log-in)。
 
 {% hint style="info" %}
-在 5 次 PIN 尝试失败后，Bitwarden 应用程序将自动注销您的账户。
+在 **5 次** PIN 尝试失败后，Bitwarden App 将自动注销您的账户。
 {% endhint %}
 
 ## 启用 PIN 码解锁 <a href="#enable-unlock-with-pin" id="enable-unlock-with-pin"></a>
 
-可以为 Bitwarden 浏览器扩展、桌面应用程序和移动应用程序启用 PIN 码解锁：
+可以为 Bitwarden 浏览器扩展、移动 App 和桌面 App 启用 PIN 码解锁：
+
+{% hint style="info" %}
+使用 PIN 码会降低保护应用程序的本地密码库数据库的加密级别。如果您担心设备的本地数据会受到攻击，您可能需要重新考虑使用 PIN 码是否方便。
+{% endhint %}
 
 {% tabs %}
 {% tab title="浏览器扩展" %}

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/account-switching/)
 {% endhint %}
 
-您知道吗？您可以在 Bitwarden 桌面和移动应用程序中同时登录**多达 5 个** Bitwarden 账户。使用账户切换功能，在个人账户和工作账户等 Bitwarden 账户之间无缝切换。
+您知道吗？您可以在 Bitwarden 浏览器扩展、桌面 App 和移动 App 中同时登录**多达 5 个** Bitwarden 账户。使用账户切换功能，在个人账户和工作账户等 Bitwarden 账户之间无缝切换。
 
 ## 登录第二个账户 <a href="#login-to-a-second-account" id="login-to-a-second-account"></a>
 
@@ -12,20 +12,22 @@
 {% tab title="移动端" %}
 要登录第二个（或第三个、第四个或第五个）账户，请从顶部菜单栏中选择当前已登录的账户，然后选择 **🞤添加账户**。
 
-{% embed url="https://bitwarden.com/_gatsby/image/24972ae798dd78136d3862197dc1eb0f/f733d76482dc17b25769efd395e73745/mobile%20account%20switching.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F56xAZhiS6wZqKktMlFwbVn%2F163fe1ed9686da777b621eb7c37d5128%2Fmobile_account_switching.png&a=w%3D850%26h%3D654%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.154Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/56xAZhiS6wZqKktMlFwbVn/9af5d0ce782af44fc48ebfd8057ddc4c/2025-01-21_14-58-15.png?_a=DAJCwlWIZAAB" %}
 移动端账户切换
 {% endembed %}
 
 选择 **🞤添加账户**将带您进入登录界面：
 
-{% embed url="https://bitwarden.com/_gatsby/image/adb3a869b1f73d7d81030856e1273f4c/f733d76482dc17b25769efd395e73745/mobile%20account%20switching%202.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F112EwzW6sPKPGu65R8rKHc%2Facb93d1607ea1b8cf0018e99272f79fc%2Fmobile_account_switching_2.png&a=w%3D850%26h%3D654%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.159Z" %}
-移动端账户切换
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/112EwzW6sPKPGu65R8rKHc/679b2686d9b67e5ccb37a2ebf56ea062/2025-01-21_15-04-00.png?_a=DAJCwlWIZAAB" %}
+移动端登录
 {% endembed %}
 
 {% hint style="success" %}
-如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了家庭组织赞助，请使用 **⚙️设置**菜单将**服务器 URL** 更改为账户的 URL。
+如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../plans-and-pricing/password-manager/redeem-families-sponsorship.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
 
-在此示例中，您的工作账户可能使用诸如 `https://your.company.bitwarden.com`，而您的家庭组织账户将使用 `https://vault.bitwarden.com`。
+<img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1Bc4QseUed27nuuhbeD7WR/1822635ca4cdd527903a0f9d5b85d271/2023-08-29_08-48-42.png?_a=DAJCwlWIZAAB" alt="自托管域名选择器" data-size="original">
+
+在此示例中，您的工作账户可能使用诸如 `https://your.company.bitwarden.com`，而您的家庭组织账户可能使用 `https://vault.bitwarden.com`。
 {% endhint %}
 
 登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每个账户的密码库的当前状态（已锁定或已解锁）。如果您注销其中一个账户，它将从列表中移除，除非[密码库超时](vault-timeout-options.md)设置为注销。
@@ -38,30 +40,28 @@
 
 ### 自动填充 <a href="#auto-fill" id="auto-fill"></a>
 
-如果您正使用账户切换，您的移动应用程序将默认自动填充当前活动账户账户的凭据，但是，您可以在自动填充期间从一个账户切换到另一个账户：
-
-{% embed url="https://bitwarden.com/_gatsby/image/e6f1ac306e89db673337892c9c2903f4/8be7ce6e6da40a01ff27e11ec51903d7/attempt5.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F3bN7xwY4iOL4UoywSAi8Vq%2F58c5529af388736a1f5ace002bfba542%2Fattempt5.gif&a=w%3D652%26h%3D324%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.171Z" %}
-Android 账户切换
-{% endembed %}
+如果您正使用账户切换，您的移动 App 将默认自动填充当前活动账户账户的凭据，但是，您可以在自动填充期间从一个账户切换到另一个账户。
 {% endtab %}
 
 {% tab title="桌面端" %}
-要登录第二个（或第三个、第四个或第五个）账户，请从桌面应用程序顶部右上角选择当前已登录的账户，然后选择 **🞤添加账户**。
+要登录第二个（或第三个、第四个或第五个）账户，请从桌面 App 顶部右上角选择当前已登录的账户，然后选择 **🞤添加账户**。
 
-{% embed url="https://bitwarden.com/_gatsby/image/0cdc034d62123377eacdff5652ebbf70/b4b305513c1909542532d5c62739b41f/Screen%20Shot%202022-05-18%20at%203.33.08%20PM.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F7fpUmakpNIByzoWQa1cU8L%2F3673552e2fcc77ea3c0a8cae7fbd2b83%2FScreen_Shot_2022-05-18_at_3.33.08_PM.png&a=w%3D850%26h%3D616%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.650Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7fpUmakpNIByzoWQa1cU8L/3673552e2fcc77ea3c0a8cae7fbd2b83/Screen_Shot_2022-05-18_at_3.33.08_PM.png?_a=DAJCwlWIZAAB" %}
 桌面端账户切换
 {% endembed %}
 
 选择 **🞤添加账户**将带您进入登录界面：
 
-{% embed url="https://bitwarden.com/_gatsby/image/a5638680a365b752e29e02e23a8a0120/067393f8d5348109439cff77586cfa4a/Screen%20Shot%202022-05-12%20at%2010.58.33%20AM.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F3gAo9PEjSXwgf4VY0Ew3TZ%2F11e2e56da3fa052e41f7606a029a004b%2FScreen_Shot_2022-05-12_at_10.58.33_AM.png&a=w%3D850%26h%3D550%26fm%3Dwebp%26q%3D75&cd=2022-06-01T12%3A31%3A35.164Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gAo9PEjSXwgf4VY0Ew3TZ/11e2e56da3fa052e41f7606a029a004b/Screen_Shot_2022-05-12_at_10.58.33_AM.png?_a=DAJCwlWIZAAB" %}
 桌面端账户切换
 {% endembed %}
 
 {% hint style="success" %}
-如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了家庭组织赞助，请使用 **⚙️设置**菜单将**服务器 URL** 更改为账户的 URL。
+如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../plans-and-pricing/password-manager/redeem-families-sponsorship.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
 
-在此示例中，您的工作账户可能使用诸如 `https://your.company.bitwarden.com`，而您的家庭组织账户将使用 `https://vault.bitwarden.com`。
+<img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1Bc4QseUed27nuuhbeD7WR/1822635ca4cdd527903a0f9d5b85d271/2023-08-29_08-48-42.png?_a=DAJCwlWIZAAB" alt="自托管域名选择器" data-size="original">
+
+在此示例中，您的工作账户可能使用诸如 `https://your.company.bitwarden.com`，而您的家庭组织账户可能使用 `https://vault.bitwarden.com`。
 {% endhint %}
 
 登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每个账户的密码库的当前状态（已锁定或已解锁）。如果您注销其中一个账户，它将从列表中移除。
@@ -69,7 +69,29 @@ Android 账户切换
 {% hint style="info" %}
 大多数密码库操作，包括添加新项目或文件夹、同步、搜索以及[密码库超时](vault-timeout-options.md)和解锁（[PIN](unlock-with-pin.md) 或[生物识别](unlocking-with-biometrics.md)）等设置仅适用&#x4E8E;_&#x6D3B;&#x52A8;_&#x8D26;户，您可以通过显示在应用程序右上角中的电子邮件来确定活动账户。
 
-但某些**偏好设置**，则适用于**所有账户**。
+但某些**偏好设置**，则适用于**所有账户**：
+
+<img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4tZUuuDPHnHQh5RNihx0TB/d82c343ba033d122e0910a6fe7a23f76/Screen_Shot_2022-01-31_at_11.18.49_AM.png?_a=DAJCwlWIZAAB" alt="桌面 App 首选项" data-size="original">
 {% endhint %}
+{% endtab %}
+
+{% tab title="浏览器扩展" %}
+要登录第二个（或第三个、第四个或第五个）账户，请从顶部菜单选择当前已登录的账户：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7xbbMZ89zcTHz6ee0cA1MK/4cb688e3d593e379ddd8192c6545d5b6/2024-12-02_10-49-10.png?_a=DAJCwlWIZAAB" %}
+浏览器扩展账户切换
+{% endembed %}
+
+选择账户图标后，从账户切换菜单中选择 **🞤添加账户**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/343trVk3zLCF7Z12uA5wjO/332a681bf34d66dee8b032812f0f85ad/2024-12-02_10-50-07.png?_a=DAJCwlWIZAAB" %}
+浏览器扩展添加账户
+{% endembed %}
+
+登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每个账户的密码库的当前状态（已锁定或已解锁）。如果您注销其中一个账户，它将从列表中移除。
+
+### 自动填充 <a href="#auto-fill" id="auto-fill"></a>
+
+如果您正使用账户切换，浏览器扩展将默认自动填充当前活动账户账户的凭据。
 {% endtab %}
 {% endtabs %}
