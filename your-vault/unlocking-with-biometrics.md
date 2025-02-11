@@ -24,9 +24,9 @@ Bitwarden 可以被配置为接受生物识别的的方式来解锁您的密码�
 
 要为您的移动设备启用生物识别解锁：
 
-1、在设备的原生设置（例如 iOS **⚙️设置**应用程序）中，确保您的生物识别方式已打开。
+1、在设备的原生设置（例如 iOS **⚙️设置** App）中，确保您的生物识别方式已打开。
 
-2、在 Bitwarden 应用程序中，打开 **⚙️设置**选项卡。
+2、在 Bitwarden App 中，打开 **⚙️设置**选项卡。
 
 3、打开账户安全部分，然后点击您想要启用的生物识别选项。此界面上可用的内容取决于您的设备的硬件功能以及已启用的功能（**步骤 1**），例如：
 
@@ -50,9 +50,9 @@ Bitwarden 可以被配置为接受生物识别的的方式来解锁您的密码�
 
 生物识别解锁支持 Windows 上的 [Windows Hello](https://support.microsoft.com/zh-cn/help/4028017/windows-learn-about-windows-hello-and-set-it-up) PIN、面部识别或[其他符合 Windows Hello 生物识别要求的硬件](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)，以及 macOS 上的[触控 ID](https://support.apple.com/zh-cn/HT207054)。
 
-生物识别解锁是为登录到桌面应用程序的每一个账户单独设置的。要启用生物识别解锁：
+生物识别解锁是为[登录到桌面 App 的每一个账户](account-switching.md)单独设置的。要启用生物识别解锁：
 
-1、在设备的原生设置（例如 macOS **⚙️系统首选项**应用程序）中，确保您的生物识别方式已打开。
+1、在设备的原生设置（例如 macOS **⚙️系统首选项** App）中，确保您的生物识别方式已打开。
 
 {% hint style="success" %}
 Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](https://support.microsoft.com/zh-cn/help/2977003/the-latest-supported-visual-c-downloads)，然后才能在桌面偏好设置中打开 Windows Hello。
@@ -62,7 +62,7 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 <img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4E03e08rL4VzqmOE7T5Rg2/9000a8b08ce9fd7a2e4a19656048bf3c/45f12ceb-b723-4a40-b18a-74bb2e1b0078.png?_a=DAJCwlWIZAAB" alt="Windows Hello 提示" data-size="original">
 {% endhint %}
 
-2、在 Bitwarden 应用程序中，打开**设置**（Windows：**文件** → **设置**；macOS：**Bitwarden** → **首选项**）。
+2、在 Bitwarden App 中，打开**设置**（Windows：**文件** → **设置**；macOS：**Bitwarden** → **首选项**）。
 
 3、在安全部分，选择您想要启用的生物识别选项。此界面上可用的内容取决于您的设备的硬件功能以及已打开的功能（**步骤 1**）。在 Linux 上，这将始终是**使用系统身份验证解锁**。示例：
 
@@ -88,7 +88,7 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 
 通过与 Bitwarden 桌面 App 的整合，生物识别解锁支持浏览器扩展。在实际操作中，这意味着：
 
-1. **对于所有浏览器扩展**，在继续操作之前，您需要先在桌面端启用生物识别解锁。**对于除 Safari 之外的其他扩展**，Bitwarden 桌面应用程序必须已登录并且已经在运行，才能在浏览器扩展中使用生物识别解锁。
+1. **对于所有浏览器扩展**，在继续操作之前，您需要先在桌面端启用生物识别解锁。**对于除 Safari 之外的其他扩展**，Bitwarden 桌面 App 必须已登录并且已经在运行，才能在浏览器扩展中使用生物识别解锁。
 2. 浏览器扩展支持与桌面相同的生物识别选项：对于 Windows，通过 [Windows Hello](https://support.microsoft.com/zh-cn/help/4028017/windows-learn-about-windows-hello-and-set-it-up) PIN、面部识别或[其他符合 Windows Hello 生物识别要求的硬件](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)，对于 macOS， 通过[触控 ID](https://support.apple.com/zh-cn/HT207054)。
 
 在启用整合之前，需要记住两件事，即**权限**和**可支持性**，如下文所述：
@@ -101,11 +101,11 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 
 **支持性**
 
-生物识别解锁支持 **基于 Chromium** 的浏览器（Chrome、Edge、Opera、Brave 等）、Firefox 87+、和 Safari 14+ 上的扩展程序。生物识别解锁**当前不支持**：
+生物识别解锁支持 **基于 Chromium** 的浏览器（Chrome、Edge、Opera、Brave 等）、Firefox 87+、和 Safari 14+ 上的扩展程序。生物识别解锁**当前不受支持**：
 
 * Firefox ESR（Firefox v87+ 可以正常工作）。
-* Microsoft App Store 桌面应用程序（从 [bitwarden.com/download](https://bitwarden.com/download) 获取的侧面加载的 Windows 桌面应用程序可以正常工作）。
-* 侧面加载的 macOS 桌面应用程序（App Store 桌面应用程序可以正常工作）。
+* Microsoft App Store 桌面 App（从 [bitwarden.com/download](https://bitwarden.com/download) 获取的侧面加载的 Windows 桌面应用程序可以正常工作）。
+* 侧面加载的 macOS 桌面 App（App Store 桌面 App 可以正常工作）。
 
 > **\[译者注]**：**侧面加载 (side-loaded) 的大致理解**：从非官方 App Store 或从网络上下载安装的应用程序，就叫做侧面加载的应用程序。
 
@@ -121,7 +121,7 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 <img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4E03e08rL4VzqmOE7T5Rg2/9000a8b08ce9fd7a2e4a19656048bf3c/45f12ceb-b723-4a40-b18a-74bb2e1b0078.png?_a=DAJCwlWIZAAB" alt="Windows Hello 提示" data-size="original">
 {% endhint %}
 
-1、在 Bitwarden 桌面 App 中，导航到设置（Windows：**文件** → **设置**；macOS：**Bitwarden** → **首选项**）。
+1、在 Bitwarden 桌面 App 中，导航到设置（Windows：**文件** → **设置**；macOS：**Bitwarden** → 设置）。
 
 2、向下滚动到**选项**部分并选中**启用浏览器整合**复选框。
 
@@ -138,7 +138,7 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 5、选择**账户安全**然后选中**使用生物识别解锁**复选框。
 
 {% hint style="success" %}
-在此阶段可能会提示您允许 Bitwarden `communicate with cooperating native applications（与本机应用程序进行通信）`。这个权限是安全的，但也是**可选的**，并且如上所述，它仅使浏览器扩展能够与桌面端通信。
+在此阶段可能会提示您允许 Bitwarden `communicate with cooperating native applications`（与本机应用程序进行通信）。这个权限是安全的，但也是**可选的**，并且如上所述，它仅使浏览器扩展能够与桌面端通信。
 {% endhint %}
 
 桌面 App 会提示您输入生物特征数据。这样做将完成初始设置过程。如果您选择要求验证（**步骤 2**），则需要批准指纹验证检查。
@@ -171,25 +171,28 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 
 ### 登录 <a href="#logging-in" id="logging-in"></a>
 
-**登录**到 Bitwarden 检会获取已加密的密码库数据然后在您的设备上本地解密。在实践中，这意味着两件事：
+**登录** Bitwarden 可以获取已加密的密码库数据，并在本地设备上解密。在实践中，这意味着两件事：
 
-1. 登录时，将始终要求使用您的主密码或使用设备登录，以获取解密密码库数据所需的账户加密密钥。在此阶段也要求使用[任何已启用的两步登录方式](../two-step-login/two-step-login-methods.md)。
-2. 登录时，将始终要求您已连接到互联网（或者，如果您是自托管，则连接到服务器），以将已加密的密码库下载到磁盘，然后在设备内存中解密。
+1、登录时始终需要使用主密码或[使用设备登录](log-in-with-device.md)，以获取解密密码库数据所需的[账户加密密钥](../security/account-encryption-key.md)。
+
+在此阶段也需要使用[任何已启用的两步登录方式](../two-step-login/two-step-login-methods.md)。
+
+2.、登录时始终需要连接到互联网（或者，如果是自托管，则需要连接到服务器），以便将加密的密码库下载到磁盘，随后在设备内存中进行解密。
 
 ### 解锁 <a href="#unlocking" id="unlocking"></a>
 
-**解锁**只能在您已经登录时使用。这就意味着，根据上述部分，您的设备在磁盘上存储了**已加密**的密码库数据。实际上，这意味着两件事：
+只有在已登录的情况下才能**解锁**。 这就意味着，根据上述章节，您的设备在磁盘上存储了**已加密**的密码库数据。在实践中，这意味着两件事：
 
-1、您不一定需要主密码。虽然您的主密码可以用来解锁密码库，PIN 码和生物识别等其他方法也可以用来解锁密码库。
+1、您不需要您的主密码。虽然主密码可以用来解锁密码库，但 PIN 码和生物识别等其他方法也可以用来解锁密码库。
 
 {% hint style="info" %}
-当您设置 PIN 码或生物识别时，会使用 PIN 码或生物识别因素派生出一个新的加密密钥，该密钥用于加密账户加密密钥。您可以通过登录访问账户加密密钥，并将其存储在磁盘ª 上。
+当您设置 PIN 码或生物识别时，从 PIN 码或生物识别因素中派生的新加密密钥将用于加密[账户加密密钥](../security/account-encryption-key.md)，您登录后即可访问该密钥，并将其存储在磁盘<mark style="color:red;">ª</mark>。
 
 **解锁**密码库会使用 PIN 码或生物识别密钥解密内存中的账户加密密钥。解密后的账户加密密钥将用于解密内存中的所有密码库数据。
 
-**锁定**密码库会删除所有已解密的密码库数据，包括已解密的账户加密密钥。
+**锁定**密码库会导致删除所有已解密的密码库数据，包括已解密的账户加密密钥。
 
-ª - 如果启用了重启时使用主密码锁定选项，该密钥只会存储在内存中，而不会存储在磁盘上。
+ª - 如果使用**重启时使用主密码锁定**选项，此密钥只会存储在内存中，而不会存储在磁盘上。
 {% endhint %}
 
-2、您不需要连接到互联网（或者，如果您是自托管，则不需要连接到服务器）。
+2、您不需要连接到互联网（或者，如果是自托管，则不需要连接到服务器）。
