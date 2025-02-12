@@ -1,20 +1,20 @@
-# 网页密码库入门
+# Password Manager 网页 App
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/getting-started-webvault/)
 {% endhint %}
 
-Bitwarden 网页密码库为个人用户和组织提供了最丰富的 Bitwarden 体验。许多重要功能，例如设置[两步登录](../two-step-login/two-step-login-methods.md)或管理[组织](../organizations/organizations.md)，只能从网页密码库完成。
+Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体验。许多重要功能，例如设置[两步登录](../two-step-login/two-step-login-methods.md)或管理[组织](../organizations/organizations.md)，只能从网页 App 完成。
 
 {% hint style="success" %}
-可以从任何流行的网页浏览器访问网页密码库，网址为 [vault.bitwarden.com](https://vault.bitwarden.com)。或者，如果**您是自托管** Bitwarden，则网址为您[已配置的域名](../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)，例如 `https://my.bitwarden.server.com`。
+可以从任何流行的网页浏览器访问网页 App，网址为 [vault.bitwarden.com](https://vault.bitwarden.com) 和 [vault.bitwarden.eu](https://vault.bitwarden.eu/)。如果您是**自托管** Bitwarden，则网址为您[已配置的域名](../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)，例如 `https://my.bitwarden.server.com`。
 {% endhint %}
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/7b076851ff275c641b6343cd1f311cd3/Screen_Shot_2022-05-13_at_10.29.39_AM.png?fm=webp&h=440&q=50&w=773" %}
-Bitwarden 网页密码库
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}
+Bitwarden 网页 App
 {% endembed %}
 
-当您首次登录网页密码库时，您将进入**密码库**视图。此空间将列出您的所有密码库项目，包括[登录信息、支付卡、身份和安全笔记](../your-vault/vault-items.md)。
+当您首次登录网页 App 时，您将进入**密码库**视图。此空间将列出您的所有密码库项目，包括[登录信息、支付卡、身份和安全笔记](../your-vault/vault-items.md)。
 
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
 
@@ -26,7 +26,11 @@ Bitwarden 网页密码库
 
 要创建文件夹：
 
-1、在筛选器列中，选择文件夹部分旁边的 ✚**添加**图标。
+1、从下拉菜单中选择 ✚**新增**图标然后选择**文件夹**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BvTWidqL4xWQvFqBSiJIR/d68bc851d44df1b571eed16366159e0c/2024-12-02_13-50-55.png?_a=DAJCwlWIZAAB" %}
+新增文件夹
+{% endembed %}
 
 2、为您的文件夹输入一个名称（例如 `Social Media Logins`），然后选择**保存**。
 
@@ -38,23 +42,21 @@ Bitwarden 网页密码库
 
 要添加一个新的登录项目：
 
-1、选择密码库右上角附近的 ✚**添加项目**按钮。
+1、从下拉菜单中选择 ✚**新增**图标然后选择**登录。**
 
-2、确保从类型下拉列表中选择了**登录**（如果您要添加支付卡、身份或安全笔记，请选择相应的类型）。
+2、输入**项目名称**。名称用于帮助您轻松识别密码库中的项目，因此请为其指定一个可识别的名称（例如`My X.com Account`）。
 
-3、输入项目的**名称**。名称用于帮助您轻松识别密码库中的项目，因此请为其指定一个可识别的名称（例如`我的 Twitter 登录`）。
+3、从**文件夹**下拉菜单中，选择要添加此项目的文件夹名称（例如，我们之前创建的 `Social Media Logins` 文件夹）。
 
 4、为登录项目输入您的**用户名**和**密码**。现在，请输入您**现有的**密码，我们稍后会帮助您[用更强的密码替换它](getting-started-webvault.md#generate-a-strong-password)。
 
-5、在 **URI 1** 字段中，输入网站的 URL（例如 `https://twitter.com/login`）。如果您不知道要使用哪个 URL，请导航到网站的登录界面并从地址栏中复制它。
+5、在**网站 (URI)** 字段中，输入网站的 URL（例如 `https://x.com/i/flow/login`）。如果您不知道要使用哪个 URL，请导航到网站的登录界面并从地址栏中复制它。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6WQaVgVC3thQYd07vIPsn6/027862bedaee138c1386c3e342dc882e/gs-uri.png?fm=webp&h=946&q=50&w=2260" %}
-查找 URI
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/62IycEwbVrumSyPjB9n5XS/b187d731c95145d4ef8af741fc670c59/2024-08-10_13-02-50.png?_a=DAJCwlWIZAAB" %}
+定位 X.com URI
 {% endembed %}
 
-6、从**文件夹**下拉菜单中，选择要将此项目添加到的文件夹的名称（例如，我们之前创建的`社交媒体登录`文件夹）。
-
-如果要将此项目添加到收藏夹，请选择此面板右下角的 **⭐️收藏夹**图标。标记为收藏时，图标将被填充（**★** → **✰**）。
+6、选择 **⭐️收藏**图标以将此项目添加到您的收藏夹。标记为收藏时，图标将被填充（**★** → **✰**）。
 
 7、干得好！选择**保存**按钮完成添加此项目。
 
@@ -62,7 +64,7 @@ Bitwarden 网页密码库
 
 现在新的登录项目已保存在您的密码库中，您可以使用用更强的密码替换现有的密码来增强其安全性：
 
-1、在您的 Bitwarden 密码库中，单击要保护的项目以查看其信息。
+1、在您的密码库中，选择要保护的项目，打开并选择**编辑**按钮。
 
 2、在新的标签页或窗口中，打开相应的网站并登录您的账户。
 
@@ -86,13 +88,11 @@ Bitwarden 网页密码库
 
 {% hint style="info" %}
 不用担心会覆盖您现有的密码！如果出现问题，Bitwarden 会为每个登录项目维护最近五个密码的**密码历史记录**：
+
+<img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/RT3R5a33WrejA8qnIcmqa/7600909424c7c74ac3b6b5fa76ae42ea/2024-12-02_13-56-29.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
 {% endhint %}
 
-{% embed url="https://bitwarden.com/help/images/getting-started/pwhistory.png" %}
-查看密码历史
-{% endembed %}
-
-7、返回到刚才的网站，然后将您的强密码粘贴到**新的密码**和**确认新的密码**字段中。
+7、返回到刚才的网站，然后将您的强密码粘贴到**新密码**和**确认新密码**字段中。
 
 8、**保存**密码更改后，您就完成了！
 
@@ -111,40 +111,38 @@ Bitwarden 网页密码库
 
 现在您的密码库中已充满了数据，让我们通过设置两步登录来采取一些措施来保护它。两步登录要求您在登录账户时使用额外的「令牌」验证您的身份，「令牌」通常是从不同的设备中获取。
 
-两步登录有很多[可用的方式](../two-step-login/two-step-login-methods.md)，但对于免费 Bitwarden 账户，推荐的方式是使用像 [Authy](https://authy.com/) 这样的移动设备身份验证器应用程序：
+两步登录有很多[可用的方式](../two-step-login/two-step-login-methods.md)，但对于免费 Bitwarden 账户，推荐的方式是使用像 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 这样的移动设备身份验证器 App：
 
-1、在您的移动设备上下载 Authy。
+1、在您的移动设备上下载 Bitwarden Authenticator。
 
-2、在您的 Bitwarden网页密码库中，选择配置文件图标并从下拉列表中选择**账户设置**：
+2、在您的 Bitwarden 网页 App 中，从导航中选择**设置** → **安全** → **两步登录**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/74BqYDU6qE9evz6wEz8K7Y/773eec1c0b00e00db4dedd3456e9a3f9/Screen_Shot_2022-05-13_at_10.34.10_AM.png?fm=webp&h=226&q=50&w=773" %}
-账户设置
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2BsKs83g4cmiCUwxf2ad83/b2a90e85355f3d937aeb46139203737e/2024-12-02_10-54-31.png?_a=DAJCwlWIZAAB" %}
+两步登录
 {% endembed %}
 
-3、从账户设置菜单中，选择**安全**页面然后选择**两步登录**选项卡。
+3、定位到**验证器 App** 选项然后选择**管理**：
 
-4、定位到**验证器应用**选项然后选择**管理**：
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1InFT255RrriK85CfBkaoA/deb7e64cf51642e1ea444af43c4f49d2/Screen_Shot_2022-05-13_at_10.40.55_AM.png?fm=webp&h=616&q=50&w=773" %}
-管理验证器应用
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5GqQynIX94PhzJQ0tVW1aE/5dcea8d04c8a543daa7f96989f220756/2024-12-02_10-55-22.png?_a=DAJCwlWIZAAB" %}
+两步登录提供程序
 {% endembed %}
 
 将提示您输入您的主密码以继续。
 
-5、在您的移动设备上，打开 Authy 并点击 ✚**添加账户**按钮。
+4、在您的移动设备上，打开 Bitwarden Authenticator 并点击 ✚按钮。
 
-6、使用 Authy 扫描您的网页密码库中的二维码。扫描完成后，Authy 将显示一个 6 位数的验证码。
+5、使用 Bitwarden Authenticator 扫描您的网页 App 中的二维码。扫描完成后，Bitwarden Authenticator 将显示一个 6 位数的验证码。
 
-7、在网页密码库的对话框中输入 6 位验证码，然后选择**启用**按钮。
+6、在网页 App 的对话框中输入 6 位验证码，然后选择**启用**按钮。
 
-8、选择**关闭**按钮返回两步登录界面，然后选择**查看恢复代码**按钮。
+7、选择**关闭**按钮返回两步登录界面，然后选择**查看恢复代码**按钮。
 
 如果您丢失了移动设备，可以使用您的两步登录恢复代码。**这是确保您永远不会被锁定在密码库之外的关键步骤**，所以请不要跳过这一步！
 
-9、输入您的主密码并选择**继续**按钮以获取您的恢复代码。
+8、输入您的主密码并选择**继续**按钮以获取您的恢复代码。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/y0iYBDQrnWIYSmMtsZF3s/048ebcda08abb8500e38912933adf639/recoverycode.png?fm=webp&h=200&q=50&w=462" %}
-恢复代码示例
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/64piqJsX7vN25To16iRFIp/09e977fae9485c0764f832c6bb4b4b04/2024-12-02_11-24-35.png?_a=DAJCwlWIZAAB" %}
+示例恢复代码
 {% endembed %}
 
 以最适合您的方式保存您的恢复代码。信不信由你，将您的恢复代码打印出来并将其保存在安全的地方，是使代码不易被盗或无意被删除的最佳方法之一。
@@ -159,15 +157,11 @@ Bitwarden 网页密码库
 
 * 高级两步登录选项，例如 [Duo](../two-step-login/setup-guides/two-step-login-via-duo.md) 和 [YubiKey 安全钥匙](../two-step-login/setup-guides/two-step-login-via-yubikey.md)
 * [加密文件附件](../your-vault/file-attachments.md)的存储空间
-* 内置[临时一次性密码（TOTP）身份验证器](../your-vault/totp.md)
+* 集成的[临时一次性密码（TOTP）身份验证器](../your-vault/totp.md)
 * 通过受信任的紧急联系人[紧急访问](../security/emergency-access.md)您的密码库
 * 报告密码和安全卫生的[密码库健康报告](../your-vault/vault-health-reports.md)
 
-要开始高级订阅：
-
-1、在您的 Bitwarden 网页密码库中，从顶部导航栏中导航到**设置**选项卡。
-
-2、从左侧的设置菜单中，选择**高级会员**。
+要开始高级订阅，请从**密码库**视图中选择**成为高级会员**按钮！
 
 ### 开始一个组织 <a href="#start-an-organization" id="start-an-organization"></a>
 
@@ -175,4 +169,4 @@ Bitwarden 网页密码库
 
 Bitwarden 组织可让您做到这一点。我们建议[通过创建一个免费的 2 人组织](../admin-console/organizations-quick-start.md)来尝试从组织中共享密码的功能。要了解如何操作，请参阅[组织入门](../admin-console/organizations-quick-start.md)。
 
-您测试了组织后，请查看我们的 [Bitwarden 计划和定价](https://bitwarden.com/pricing/business/)页面，了解您可能感兴趣的不同付费组织类型。
+您测试了组织后，请查看我们的 [Bitwarden 定价](https://bitwarden.com/pricing/business/)页面，了解您可能感兴趣的不同付费组织类型。
