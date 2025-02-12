@@ -20,7 +20,7 @@
     * [两步登录方式](two-step-login/two-step-login-methods.md)
     * [设置指南](two-step-login/setup-guides/README.md)
       * [两步登录 - 验证器](two-step-login/setup-guides/two-step-login-via-authenticator.md)
-      * [两步登录 - 电子邮件](two-step-login/setup-guides/two-step-login-via-email.md)
+      * [两步登录 - 电子邮箱](two-step-login/setup-guides/two-step-login-via-email.md)
       * [两步登录 - Duo](two-step-login/setup-guides/two-step-login-via-duo.md)
       * [两步登录 - YubiKey](two-step-login/setup-guides/two-step-login-via-yubikey.md)
       * [两步登录 - FIDO2 WebAuthn 通行密钥](two-step-login/setup-guides/two-step-login-via-fido2-webauthn.md)

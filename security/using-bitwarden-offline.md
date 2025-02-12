@@ -12,6 +12,8 @@ Bitwarden 的大多数功能都可以在离线模式下无障碍使用，但是�
 
 客户偶尔希望将 Bitwarden 安装到离线机器上，例如在物理隔离的环境中。要在离线机器上安装 Bitwarden 桌面应用程序：
 
+> **\[译者注]**：[网闸](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8) (air-gapped) 网络，是指与外部网络（如互联网或其他外部系统）完全隔离的计算机网络。这种隔离通过物理或逻辑手段实现，确保网络无法与外部环境进行数据交换，从而增强安全性。
+
 {% hint style="success" %}
 **仅适用于 Windows**，作为以下过程的替代方法，您可以下载 `Bitwarden-Portable-x.xx.x.exe` 并将其传输到离线机器。便携式应用程序不需要安装。
 {% endhint %}
