@@ -35,18 +35,12 @@ Bitwarden 应用程序页面
 ### 在 Bitwarden 中设置 Duo <a href="#setup-duo-in-bitwarden" id="setup-duo-in-bitwarden"></a>
 
 {% hint style="warning" %}
-**失去对两步登录设备的访问权限可能会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
-
-启用任何方法后，您应该立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。
-{% endhint %}
-
-要为个人用户启用 Duo 方式的两步登录：
-
-{% hint style="warning" %}
 **丢失对两步登录设备的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
 
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../import-export/export-vault-data.md)来备份密码库数据。
 {% endhint %}
+
+要为个人用户启用 Duo 方式的两步登录：
 
 1、登录您的网页 App。
 
@@ -74,7 +68,9 @@ Bitwarden 应用程序页面
 
 一个绿色的 `已启用` 消息表明已为您的密码库成功启用了 Duo。通过选择**关闭**按钮并看到 **Duo** 选项上有一个绿色的复选标记（**✔️**）以再次检查。
 
+{% hint style="info" %}
 我们建议在继续测试两步登录之前保持活动的网页密码库选项卡为打开状态，以防出现配置错误的情况。当您确认它正常工作后，您应该注销所有的 Bitwarden App，以为每个 App 立即激活两步登录。您最终会被自动注销。
+{% endhint %}
 
 {% hint style="info" %}
 在网闸 (Air-gapped) 网络上运行的自托管实例可能需要额外的设置才能保持与 Duo 服务器的通信。
@@ -84,7 +80,7 @@ Bitwarden 应用程序页面
 
 ### 注册设备 <a href="#register-a-device" id="register-a-device"></a>
 
-设置好 Duo 后，打开网页密码库。如果 Duo 是您[已启用的最高优先级方式](../two-step-login-methods.md#using-multiple-methods)，下次登录时，系统将提示您启动 Duo：
+设置好 Duo 后，打开网页密码库。如果 Duo 是您[已启用的最高优先级方式](../two-step-login-methods.md#using-multiple-methods)，下次登录时，系统将提示您**启动 Duo**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1PNSfz6l3pjpOUHYd7Dv8e/53c4c5186b28a361132d1bdf663caf5c/duo_indv.png?_a=BAJFJtWIB" %}
 个人启动 Duo
@@ -105,13 +101,13 @@ Duo 2FA 设置
 {% tab title="组织用户" %}
 ### 注册设备 <a href="#register-a-device" id="register-a-device"></a>
 
-您的组织管理员设置了 Duo 后，下次登录时，系统将提示您启动 Duo：
+您的组织管理员设置了 Duo 后，下次登录时，系统将提示您**启动 Duo**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/44SjeVrDTuQPz52cBxGhCX/25d783c2b2a152f26a358d4d155e38d1/launch.png?_a=BAJFJtWIB" %}
 启动 Duo
 {% endembed %}
 
-系统会要求您注册两步登录设备，按照屏幕上的提示将辅助设备配置为使用 Duo（例如，注册和发送 SMS 或发送推送通知的设备类型）。
+您将被要求注册一个两步登录设备，然后按照屏幕提示将辅助设备配置为使用 Duo（例如，要注册何种设备类型，以及是发送短信还是推送通知）。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5Mm1G5tjfPmzs5V8obaxl1/7f482a7643742c5adefed45630ad6f1f/register.png?_a=BAJFJtWIB" %}
 Duo 2FA 设置
@@ -121,22 +117,22 @@ Duo 2FA 设置
 如果 Duo 没有要求您注册设备，请尝试使用隐身或隐私浏览窗口登录。
 {% endhint %}
 
-如果您尚未下载 Duo 移动应用程序，建议您下载：
+如果您尚未下载 Duo 移动 App，建议您下载：
 
 * [下载 iOS 版](https://itunes.apple.com/us/app/duo-mobile/id422663827?mt=8)
 * [下载 Android 版](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile)
 {% endtab %}
 
 {% tab title="组织管理员" %}
-为一个组织启用 Duo 后，将提示所有已注册成员在他们下次登录时注册一个设备以用于 Duo 方式的两步登录。
+为组织启用 Duo 后，所有已注册成员在他们下次登录密码库时将被提示注册一个设备以用于 Duo 方式的两步登录。
 
 {% hint style="info" %}
-Bitwarden 将仅识别具有电子邮件地址用户名的用户。没有电子邮件地址作为主要用户名的 Duo 用户将需要一个。请参考 [Duo 用户名别名配置指南](https://help.duo.com/s/article/aliases-guide?language=en_US)以获取更多信息和说明。
+Bitwarden 将仅识别具有电子邮箱地址用户名的用户。没有电子邮箱地址作为主要用户名的 Duo 用户将需要一个。请参考 [Duo 用户名别名配置指南](https://help.duo.com/s/article/aliases-guide?language=en_US)以获取更多信息和说明。
 {% endhint %}
 
 ### 获取 Duo 密钥 <a href="#retrieve-duo-keys" id="retrieve-duo-keys"></a>
 
-您需要一个 Duo 帐户才能获取 Bitwarden 所需的一些信息以完成设置。[免费注册](https://signup.duo.com/)，或登录到现有的 [Duo Admin Panel](https://admin.duosecurity.com/login)。要配置 Duo：
+您需要一个 Duo 账户才能获取 Bitwarden 所需的一些信息以完成设置。[免费注册](https://signup.duo.com/)，或登录到现有的 [Duo Admin Panel](https://admin.duosecurity.com/login)。要配置 Duo：
 
 1. 在左侧菜单中，导航至 **Applications**。
 2. 选择 **Protect an Application** 按钮。
@@ -158,11 +154,11 @@ Duo Bitwarden 应用程序
 
 您必须是[组织所有者](../../admin-console/user-management/member-roles-and-permissions.md)才能为您的组织设置 Duo。要为您的组织启用 Duo 方式的两步登录：
 
-1、登录到 Bitwarden 网页密码库。
+1、登录到 Bitwarden 网页 App。
 
 2、使用产品切换器打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/f9368992bf9f9089e981c52f3065a551/Screenshot_2024-02-27_at_9.02.16_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
 产品切换器
 {% endembed %}
 
@@ -187,22 +183,30 @@ Duo Bitwarden 应用程序
 一个绿色的 `已启用` 消息表明已为您的密码库成功启用了 Duo。通过选择**关闭**按钮并看到 **Duo** 选项上有一个绿色的复选标记（**✔️**）以再次检查。
 
 {% hint style="info" %}
-在气隙网络上运行的自托管实例可能需要额外的设置才能保持与 Duo 服务器的通信。
+在网闸 (Air-gapped) 网络上运行的自托管实例可能需要额外的设置才能保持与 Duo 服务器的通信。
 {% endhint %}
+
+> **\[译者注]**：[网闸](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8) (air-gapped) 网络，是指与外部网络（如互联网或其他外部系统）完全隔离的计算机网络。这种隔离通过物理或逻辑手段实现，确保网络无法与外部环境进行数据交换，从而增强安全性。
 
 ### 注册设备 <a href="#register-a-device" id="register-a-device"></a>
 
-设置好 Duo 后，打开网页密码库。如果 Duo 是您[优先级最高的启用方式](../two-step-login-methods.md#using-multiple-methods)，您将在下次登录时被要求注册一个两步登录设备：
+设置好 Duo 后，下次登录时，将提示您和您的组织成员**启动 Duo**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1PNSfz6l3pjpOUHYd7Dv8e/53c4c5186b28a361132d1bdf663caf5c/duo_indv.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/44SjeVrDTuQPz52cBxGhCX/25d783c2b2a152f26a358d4d155e38d1/launch.png?_a=BAJFJtWIB" %}
+启动 Duo
+{% endembed %}
 
-系统会要求您注册两步登录设备，按照屏幕上的提示将辅助设备配置为使用 Duo（例如，注册和发送 SMS 或发送推送通知的设备类型）。
+您将被要求注册一个两步登录设备，然后按照屏幕提示将辅助设备配置为使用 Duo（例如，要注册何种设备类型，以及是发送短信还是推送通知）。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5Mm1G5tjfPmzs5V8obaxl1/7f482a7643742c5adefed45630ad6f1f/register.png?_a=BAJFJtWIB" %}
 Duo 2FA 设置
 {% endembed %}
 
-如果您尚未下载 Duo 移动应用程序，建议您下载：
+{% hint style="success" %}
+如果 Duo 没有要求您注册设备，请尝试使用隐身或隐私浏览窗口登录。
+{% endhint %}
+
+如果您尚未下载 Duo 移动 App，建议您下载：
 
 * [下载 iOS 版](https://itunes.apple.com/us/app/duo-mobile/id422663827?mt=8)
 * [下载 Android 版](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile)
@@ -211,9 +215,9 @@ Duo 2FA 设置
 
 ## 使用 Duo <a href="#use-duo" id="use-duo"></a>
 
-以下内容假设 **Duo** 是您[已启用的最高优先级方式](../two-step-login-methods.md#using-multiple-methods)。对于组织成员来说，**组织范围的 Duo 始终是最优先的方式**。要使用 Duo 两步登录方式访问您的密码库：
+以下内容假设 **Duo** 是您[已启用的最高优先级方式](../two-step-login-methods.md#using-multiple-methods)。对于组织成员来说，**组织层面的 Duo 始终是最优先的方式**。要使用 Duo 两步登录方式访问您的密码库：
 
-1. 在任一个 Bitwarden App 上输入您的电子邮箱地址和主密码以登录密码库。系统会出现提示，要求您启动 Duo。启动后，将出现一个 Duo 界面，以开始您的两步登录验证。
+1. 在任一个 Bitwarden App 上输入您的电子邮箱地址和主密码以登录您的密码库。系统会出现提示，要求您启动 Duo。启动后，将出现一个 Duo 界面，以开始您的两步登录验证。
 2. 根据您的 Duo 的配置方式，通过以下方式完成验证请求：
    * 从您已注册的设备上批准 **Duo Push** 请求。
    * 在您的 **Duo 移动 App** 或**短信**中找到 6 位验证码，并在密码库登录界面输入此验证码。
