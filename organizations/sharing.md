@@ -12,7 +12,7 @@
 
 ## 移动项目到组织 <a href="#move-an-item-to-an-organization" id="move-an-item-to-an-organization"></a>
 
-组织成员可以将项目移动到任何已分配的集合，除非他们被赋予了此集合的[可以查看](../admin-console/user-management/member-roles-and-permissions.md#permissions)权限。只要移动项目到组织：
+组织成员可以将项目移动到任何已分配的集合，除非他们被赋予了此集合的[可以查看](../admin-console/user-management/member-roles-and-permissions.md#permissions)权限。要移动项目到组织：
 
 {% tabs %}
 {% tab title="网页 App" %}

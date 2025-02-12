@@ -22,8 +22,8 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-au
 
 在 Bitwarden Password Manager 中，您可以使用两种方式生成 TOTP：
 
-* 通过在 Bitwarden 移动 App 或浏览器扩展中[扫描二维码](totp.md#scan-a-qr-code)
-* 通过在任一个 Bitwarden App 中[手动输入安全代码](totp.md#manually-enter-a-secret)
+* 通过在 Bitwarden 移动 App 或浏览器扩展中[**扫描二维码**](totp.md#scan-a-qr-code)
+* 通过在任一个 Bitwarden App 中[**手动输入安全代码**](totp.md#manually-enter-a-secret)
 
 ### 通过扫描 QR 码 <a href="#scan-a-qr-code" id="scan-a-qr-code"></a>
 

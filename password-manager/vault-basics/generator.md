@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/generator/)
 {% endhint %}
 
-使用 Bitwarden 生成器工具可以轻松创建强密码和唯一用户名。密码生成器可用于所有 Bitwarden 客户端，用户名生成器可用于网页 App、浏览器扩展、桌面 App 和移动 App。
+使用 Bitwarden 生成器工具可以轻松创建强密码和唯一用户名。密码生成器可在所有 Bitwarden 客户端中使用，用户名生成器可在网页 App、浏览器扩展、桌面 App 和移动 App 中使用。
 
 如果您目前还不是 Bitwarden 用户，您也可以在 [https://bitwarden.com/password-generator/](https://bitwarden.com/password-generator/) 测试我们的免费密码生成器。
 
@@ -193,7 +193,7 @@ bw generate -uln --length 14
 在浏览器扩展和桌面 App 的添加/编辑项目界面，您可以选择使用**随机字符串**（例如 `alice+gsd4aqqe@bitwarden.com`）生成用户名，或基于项目的**网站名称**（例如 `alice+github.com@ bitwarden.com`）生成用户名。**电子邮箱地址**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../../auto-fill/using-uris.md)，在其他位置，用户名生成器默认为**随机**。
 
 {% hint style="success" %}
-**为什么要使用附加地址电子邮件？**
+**为什么要使用附加地址电子邮箱？**
 
 附加地址电子邮箱可以让您在注册新的服务时过滤您的电子邮箱中的所有垃圾邮件。使用用户名 `alice+rnok6xsh@bitwarden.com` 注册服务时，仍会向 `alice@bitwarden.com` 发送电子邮件，但您可以轻松过滤包含 `+rnok6xsh` 的电子邮件，以防止它们堵塞您的收件箱。
 {% endhint %}
@@ -217,12 +217,12 @@ bw generate -uln --length 14
 选择此类型以将用户名生成器与您的外部别名服务集成。大多数 Bitwarden 应用程序支持与 SimpleLogin、AnonAddy、Firefox Relay、Fastmail、Forward Email 和 DuckDuckGo 集成。移动 App 目前支持与 SimpleLogin、AnonAddy 和 Firefox Relay 集成。
 
 {% hint style="success" %}
-**为什么使用转发的电子邮件别名？**
+**为什么使用转发的电子邮箱别名？**
 
 使用 [SimpleLogin](https://simplelogin.io/) 和 [Addy.io](https://addy.io/) 等电子邮箱别名服务时，您可以使用匿名地址（例如，`nobody-knows-its-me.d0p0r@slmail.me`）来注册网络账户，邮件将转发到您实际的收件箱（例如，`alice@bitwarden.com`）。这可以防止网站或服务在您注册时收集个人信息（在此示例中，名称 Alice 以及她在 Bitwarden 工作的事实）。
 {% endhint %}
 
-要设置您的电子邮件别名集成：
+要设置您的电子邮箱别名集成：
 
 {% tabs %}
 {% tab title="SimpleLogin" %}

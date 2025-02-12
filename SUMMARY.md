@@ -48,7 +48,7 @@
     * [集合](password-manager/vault-basics/collections.md)
     * [存储通行密钥](password-manager/vault-basics/storing-passkeys.md)
     * [\*通行密钥 FAQ](password-manager/vault-basics/passkeys-faq.md)
-  * [密码库管理](password-manager/vault-administration/README.md)
+  * [===密码库管理](password-manager/vault-administration/README.md)
     * [文件夹](your-vault/folders.md)
     * [收藏](your-vault/favorites.md)
     * [同步密码库](your-vault/syncing-your-vault.md)
