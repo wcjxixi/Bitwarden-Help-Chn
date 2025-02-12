@@ -9,7 +9,7 @@ Bitwarden 浏览器扩展将密码管理直接集成到您最喜爱的浏览器�
 浏览器扩展支持 **Google Chrome**、**Mozilla Firefox**、**Opera**、**Microsoft Edge** 和 **Safari** 的最近两个版本。对于 **Vivaldi**、**Brave** 和 **Tor**，只支持最新的版本。
 
 {% hint style="success" %}
-Safari 浏览器扩展与桌面应用程序打包在一起，其可从 App Store 下载。[了解更多](../miscellaneous/safari-web-extension.md)。
+Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载。[了解更多](../miscellaneous/safari-web-extension.md)。
 {% endhint %}
 
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
@@ -28,7 +28,7 @@ Safari 浏览器扩展与桌面应用程序打包在一起，其可从 App Store
 
 现在，让我们添加一个登录项目到您的新文件夹中。要创建新的登录项目：
 
-1、导航到 **🔒我的密码库**选项卡，然后选择 ✚**添加**图标。
+1、导航到 **🔒密码库**选项卡，然后选择 ✚**添加**图标。
 
 2、选择要创建的项目的类型（这里我们选择**登录**）。
 
@@ -40,7 +40,7 @@ Safari 浏览器扩展与桌面应用程序打包在一起，其可从 App Store
 
 4、从文件夹下拉列表中选择一个**文件夹**，如果您按照我们的示例进行操作，请选择我们刚刚创建的 **Social Media** 文件夹！
 
-5、在 **URI 1** 字段中，输入您登录账户的 URL（例如 `https://instaagram.com/login`）。
+5、在**网站 (URI)** 字段中，输入您登录账户的 URL（例如 `https://instaagram.com/login`）。
 
 6、很好！选择**保存**以继续。
 
@@ -48,69 +48,109 @@ Safari 浏览器扩展与桌面应用程序打包在一起，其可从 App Store
 
 现在，您已经保存了一个新的登录项目，让我们使用一个强密码替换您的密码来提高它的安全性：
 
-1、在您的网页浏览器中，使用您现有的用户名和密码登录到此账户。在账户中，找到**更改密码**页面。
+1、在您的网页浏览器中，使用您现有的用户名和密码登录到此账户。我们将用一个更强的密码替换现有密码，但这也是练习自动填充的好机会！
 
-2、在**更改密码**页面，输入您的**当前密码**，您可以从 Bitwarden 使用 **❐复制**图标来复制并粘贴该密码。
+要进行自动填充，请在网站登录页面打开 Bitwarden 浏览器扩展，在 **🔒密码库**选项卡中选择建议的项目的**填充**按钮：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pamjhdWn7obh8UBxXcIPF/cb72c2921ce5f717cfd81bf157e50f4d/2024-12-02_13-59-23.png?_a=DAJCwlWIZAAB" %}
+通过浏览器扩展自动填充
+{% endembed %}
+
+2、登录后，找到可以更改密码的地方。
+
+3、在网站的更改密码表单中输入您的**当前密码**，您可以从 Bitwarden 使用 **❐复制**图标来复制并粘贴该密码：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/40l7cU1a0jzaTNUJXd5jPD/79406c7da76e692a92d06f5aeb0501c0/2024-12-02_14-01-44.png?_a=DAJCwlWIZAAB" %}
+复制密码
+{% endembed %}
+
+在**更改密码**页面，输入您的**当前密码**，您可以从 Bitwarden 使用 **❐复制**图标来复制并粘贴该密码。
 
 3、返回到 Bitwarden，选择此登录项目然后选择**编辑**按钮**️**。
 
-4、在密码框中，选择 **⟳生成**然后选择**确认**以覆盖您的旧密码。这将使用随机生成的强密码替换您的密码。从 `Fido1234` 更改为 `X@Ln@x9J@&u@5n##B` 可以阻止潜在的黑客攻击。
+4、填入旧密码后，在 Bitwarden 中打开登录项目并选择**编辑**。
 
-5、选择**保存**。
+5、在**密码框**中，选择 **⟳生成**然后根据自己的喜好调整密码设置。您可以使用 **⟳**&#x56FE;标，直到找到您喜欢的密码，然后选择**使用此密码**。从 `Fido1234` 更改为 `X@Ln@x9J@&u@5n##B` 可以阻止潜在的黑客攻击。
 
-6、复制您的新密码并将其粘贴到网站上的**新密码**和**确认密码**字段中。
+6、选择**保存**。
+
+7、复制您的新密码并将其粘贴到网站上的**新密码**和**确认密码**字段中。
 
 恭喜！您的登录项目现已安全且易于使用地保存在 Bitwarden 中了！
+
+## 添加第二个账户 <a href="#add-a-second-account" id="add-a-second-account"></a>
+
+您是否拥有多个 Bitwarden 账户，一个用于个人使用，一个用于工作？浏览器扩展可以同时登录五个账户！
+
+要登录其他账户，请在浏览器扩展右上角选择当前已登录的账户：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7xbbMZ89zcTHz6ee0cA1MK/4cb688e3d593e379ddd8192c6545d5b6/2024-12-02_10-49-10.png?_a=DAJCwlWIZAAB" %}
+浏览器扩展账户切换
+{% endembed %}
+
+打开账户切换菜单后，选择 **🞤添加账户**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/343trVk3zLCF7Z12uA5wjO/332a681bf34d66dee8b032812f0f85ad/2024-12-02_10-50-07.png?_a=DAJCwlWIZAAB" %}
+浏览器扩展添加账户
+{% endembed %}
+
+登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每个账户的密码库的当前状态（已锁定或已解锁）。如果您注销其中一个账户，它将从列表中移除。
+
+{% hint style="info" %}
+账户切换功能目前还不适用于 Safari 浏览器扩展。
+{% endhint %}
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 现在您已经掌握了基础知识，让我们深入了解您将经常使用的更多操作，**自动填充**和三个推荐的设置步骤，更轻松地**解锁**密码库，将扩展**固定**到浏览器，以及**禁用浏览器内置**的密码管理器：
 
-### 自动填充登录信息 <a href="#auto-fill-a-login" id="auto-fill-a-login"></a>
+### 自动填充登录 <a href="#auto-fill-a-login" id="auto-fill-a-login"></a>
 
-Bitwarden 浏览器扩展有一个独特的**标签页**视图，它可以自动检测已打开的标签页中显示的网页的 URI（例如 `google.com`），并浮现所有具有相应 URI 的密码库项目。
+使用 Bitwarden 浏览器扩展有很多自动填充凭据的方法！最基本的方法是在网站登录页面打开 Bitwarden 浏览器扩展，在 **🔒密码库**选项卡中选择建议的项目的**填充**按钮：
 
-当一个密码库项目有对应的 URI 时，Bitwarden 图标将覆盖一个气泡通知，报告该网页对应的密码库项目的数量：
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/12UsFuA2sxbUCBMIczJsxv/42863d0d8b5e67bb5498a635f9a82f1d/Screen_Shot_2022-05-18_at_3.23.12_PM.png?fm=webp&h=772&q=50&w=1066" %}
-浏览器扩展自动填充
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pamjhdWn7obh8UBxXcIPF/cb72c2921ce5f717cfd81bf157e50f4d/2024-12-02_13-59-23.png?_a=DAJCwlWIZAAB" %}
+通过浏览器扩展自动填充
 {% endembed %}
 
-只要简单地点击浏览器扩展中的密码库项目，就会自动将登录信息填入检测到的输入字段中。
+请注意，当您在试图登录的网站上以保存了登录信息时，Bitwarden 浏览器扩展会覆盖一个通知气泡，报告您在该网站上的登录项目的数量。这些项目将显示在**自动填充建议**的顶部。您可以使用筛选器下拉菜单过滤建议中的内容和**所有项目**列表中的显示内容，这些下拉菜单可以通过 **☷**&#x6309;钮显示或隐藏：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/12UsFuA2sxbUCBMIczJsxv/22c20404137193420d3b2d1f5fa8611f/2024-12-02_14-07-09.png?_a=DAJCwlWIZAAB" %}
+浏览器扩展筛选器和建议
+{% endembed %}
 
 浏览器扩展项有好几种可供选择的自动填充选项，包括上下文菜单和键盘快捷键。[了解更多](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
 
-### 自动保存登录信息 <a href="#auto-save-a-login" id="auto-save-a-login"></a>
+### 自动保存登录 <a href="#auto-save-a-login" id="auto-save-a-login"></a>
 
 当您登录一个**未使用自动填充**的网站时，如果出现以下情况，Bitwarden 将建议您记住登录信息：
 
 * 具有该 [URI](../auto-fill/using-uris.md) 的项目不在您的密码库中。
 * 具有该 [URI](../auto-fill/using-uris.md) 的项目在您的密码库中，但具有不同的用户名或密码。
 
-当您看到此横幅时，选择**保存**以使用用户名、密码和 URI 添加新的登录项目，或选择**更新**按钮以使用新密码或用户名更新现有项目：
+当您看到此横幅时，选择**保存**以使用用户名、密码和 URI 添加新的登录项目，或更新现有项目。如果是新项目，还可以选择**选择文件夹...**，或在保存前**编辑**此项目：
 
-{% embed url="https://bitwarden.com/_gatsby/image/929a0ac495dc52464400401ba780ae97/75956eab07ad93006c76c7c63afff52b/Screen%20Shot%202023-03-30%20at%209.07.20%20AM.webp?eu=8a8952b4e4caa8d30f6ba4876a7b366ae66a50aefd0465823460e3fa1af99f832ca24a5c24967be02c695c8c85e310bf31c02e661ebad3da95ee4aa6e935ab0f5b8708e733e171540223c1aab3a0551369c7495ef7d59b5af56574dde7b0b27818534a23a17fbed3e9fc376de6842f36b8b3a62b6cc2fd29e243540c8f5c31bf6ea48f876e4fb99bf301bca2b8f84a8ec9a36e191e8eb72a2535124c1eb72cedadef4376262e370572afa93dbc0890e37e1b01632d3859f12f64d04aae6c34c0e3f8a7088c2872e7fdce32778496a889ef4bae2825e29b25a9d1332c116eff51f8e92598b13c594aee28fa974faf030628438273d8604fd0265f8b1986e128e255e22e7861&a=w%3D850%26h%3D109%26fm%3Dwebp%26q%3D75&cd=2023-03-30T13%3A11%3A12.033Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7GnwQ6UKY6er7PpCWj6xn0/3c4804ffe63521cc5c48394d0f9624d6/2024-12-02_14-08-47.png?_a=DAJCwlWIZAAB" %}
 添加登录
 {% endembed %}
 
-{% embed url="https://bitwarden.com/_gatsby/image/fd60fd318ac24c2fdf871e9e390445a9/75956eab07ad93006c76c7c63afff52b/Screen%20Shot%202023-03-30%20at%209.06.23%20AM.webp?eu=d78c51e5e1c0f987063ef2d06870686eb53b03aef60232856832edfb48ad96d523f31d01269473e72a3a5a8ad5e940ee63c17d3348e6d2dac1e91ff4bb36ab59528452eb34e67254072fc1f9b3f4054661971c5ff3d5cf0df0697ad3edb7e3251154157efd2ce9d0ebab3165b7d57b33eabff7266cc7a120a4561e17c1076ea539eac78b7000bd8ae64eaca5bbed4ad3c2b269184799ad66642d4d4950b06abcbab45b0c532c2713439fca508635d7d34e56367b273e5be86e398300fa3d33c6e3aaf35d8c7972e3afca6578d2c4fb86e91da87b7ee5cd71b6e168385b58f27ccee424b3bd66060c8237fa9651b1036a6404ed15972426c73a5ce376f9ff07cd7f&a=w%3D850%26h%3D109%26fm%3Dwebp%26q%3D75&cd=2023-03-30T13%3A09%3A35.807Z" %}
-更新登录
-{% endembed %}
+如果您是使用[移除个人密码库策略](../organizations/enterprise-policies.md#remove-individual-vault)的组织的成员，选择**保存**将带您进入一个屏幕，您可以在其中选择要将其添加到的[集合](../organizations/collections.md)。
 
-如果您是使用[移除个人密码库策略](../organizations/enterprise-policies.md#remove-individual-vault)的组织的成员，选择**保存**将带您进入一个屏幕，您可以在其中选择要将其添加到的[集合](../organizations/collections.md)。否则，您可以选择为项目**选择文件夹...**&#x6216;在保存之前**编辑**项目。
+如果不想看到这些横幅，请打开浏览器扩展的 **⚙️设置**选项卡，选择**通知**，然后取消选中**询问添加登录**和 **询问更新现有登录**复选框。
 
-如果您不想看到此横幅，请关闭**选项**菜单中的**询问添加登录**选项。
+{% hint style="success" %}
+您知道使用 Bitwarden 浏览器扩展可以保存和自动填充通行密钥吗？[了解更多](../password-manager/vault-basics/storing-passkeys.md)关于通行密钥的信息。
+{% endhint %}
 
-### 使用 PIN 码/生物识别解锁 <a href="#unlock-with-pin-or-biometrics" id="unlock-with-pin-or-biometrics"></a>
+### 使用 PIN 码或生物识别解锁 <a href="#unlock-with-pin-or-biometrics" id="unlock-with-pin-or-biometrics"></a>
 
-要快速访问您的凭证，请设置 PIN 码或生物识别来解锁您的密码库。要设置一个 PIN 码。
+要快速访问您的凭据，请设置 [PIN 码](../your-vault/unlock-with-pin.md)或[生物识别](../your-vault/unlocking-with-biometrics.md)来解锁您的密码库。要设置一个 PIN 码：
 
 1. 在浏览器扩展中，打开 ⚙️**设置**标签。
-2. 在安全部分，选中**使用 PIN 码解锁**复选框。
+2. 在**账户安全**部分，选中**使用 PIN 码解锁**复选框。
 3. 在输入框中输入所需的 PIN 码。PIN 码可以是任意字符（a-z、0-9、$、＃ 等）的组合。
 
 {% hint style="success" %}
-**可选**：预先选中的**浏览器重启时使用主密码锁定**选项将要求您在浏览器重新启动时输入主密码而不是 PIN 码。如果您希望能够在浏览器重新启动时使用 PIN 码解锁，请取消选中此选项。
+**可选**：预先选中的**启动时要求生物识别**选项将要求您在浏览器重新启动时输入主密码而不是 PIN 码。如果您希望能够在浏览器重新启动时使用 PIN 码解锁，请取消选中此选项。
 {% endhint %}
 
 ### 固定扩展 <a href="#pin-an-extension" id="pin-an-extension"></a>
@@ -121,17 +161,21 @@ Bitwarden 浏览器扩展有一个独特的**标签页**视图，它可以自动
 {% tab title="Chrome" %}
 选择地址栏右侧的**扩展程序**图标，然后在扩展程序列表中选择 Bitwarden 旁边的**固定**图标：
 
-![Chrome 中的 Pin](../.gitbook/assets/chrome-pin.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4cwP0QDHWh01v1K8nMV0ma/3a4b404bbf095bc7cc6c627c7f61969d/chrome-pin.png?_a=DAJCwlWIZAAB" %}
+Chrome 中的 Pin
+{% endembed %}
 {% endtab %}
 
 {% tab title="Firefox" %}
-在地址栏中输入`about:addons`，然后打开 Bitwarden 扩展。要自定义它在浏览器中的显&#x793A;_&#x4F4D;置_，右键单击 Bitwarden  浏览器扩展图标，然后选择**定制...** 打开一个拖放界面，以让你移动或移除工具栏中的图标。你也可以使用**固定到折叠菜单**选项，将 Bitwarden 固定到折叠（ **»**）菜单中：
+右键单击 Bitwarden 浏览器扩展，选择**固定到工具栏。** 您还可以从 Firefox 菜单中选择**查看** → **侧边栏** → **Bitwarden** 来激活持久的 Bitwarden 侧边栏。
 
-![Firefox 中的 Pin](../.gitbook/assets/ff-overflowpin.png)
+{% hint style="info" %}
+如果不想在浏览器启动时打开 Bitwarden 侧边栏，请从 Firefox 侧边栏的 Bitwarden 选项卡中选择**关闭侧边栏**。用户可能需要在每个活动的 Firefox 标签页上选择**关闭侧边栏**并重新启动 Firefox。
+{% endhint %}
 {% endtab %}
 
 {% tab title="Safari" %}
-右键单击工具栏中的任意位置，然后选择**自定义工具栏**打开一个拖放界面，以让你移动或移除工具栏中的图标：
+右键单击工具栏中的任意位置，然后选择**自定义工具栏**打开一个拖放界面，以让您可以移动或移除工具栏中的图标：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3mD3G3rNMEUu24XBh6a3Kt/9d4bd3492b6194355611aa5b321733aa/safari-pin.png?fm=webp&h=278&q=50&w=570" %}
 Safari 中的 Pin
@@ -139,23 +183,33 @@ Safari 中的 Pin
 {% endtab %}
 {% endtabs %}
 
+### 浏览器弹出窗口 <a href="#browser-pop-out" id="browser-pop-out"></a>
+
+Bitwarden 浏览器扩展具有弹出窗口功能，允许您在使用网络浏览器时重新定位客户端。要弹出浏览器扩展，请选择下面截图中所示的图标：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1cbJy0jLBmSQmRumvYzVwp/be8132e558dd91c6d282f08a02e2d5fa/2024-12-02_14-10-52.png?_a=DAJCwlWIZAAB" %}
+浏览器扩展弹出窗口
+{% endembed %}
+
+弹出时，浏览器扩展不会遵守您选择的[密码库超时](../your-vault/vault-timeout-options.md)设置。
+
 ### 禁用内置的密码管理器 <a href="#disable-a-built-in-password-manager" id="disable-a-built-in-password-manager"></a>
 
 大多数网络浏览器默认会自动保存您的密码，但专业人士普遍认为，相比 Bitwarden 等专用解决方案，[内置的密码管理器更容易受到攻击](https://www.wired.com/2016/08/browser-password-manager-probably-isnt-enough/)：
 
 {% tabs %}
 {% tab title="Chrome/Chromium" %}
-在 Chrome 或任何基于 Chromium 的浏览器（Edge、Opera 和 Brave）中，通过在地址栏中输入 `chrome://settings/passwords` 以导航到密码页面，将 `chrome` 替换为您的浏览器的名称（例如，`brave://settings/passwords`）。
+在 Chrome 或任何基于 Chromium 的浏览器（Edge、Opera 和 Brave）中，通过在地址栏中输入 `chrome://password-manager/settings` 以导航到**密码**页面，将 `chrome` 替换为您的浏览器的名称（例如，`brave://password-manager/settings`）。对于 Edge 用户，请导航至 `edge://wallet/settings`。
 
-在此页面上，同时关闭**自动保存密码**选项和**自动登录**选项：
+在此页面上，同时关闭**主动提出保存密码**选项和**自动登录**选项：
 
-{% embed url="https://bitwarden.com/_gatsby/image/bec8466895c6cdf57c5889bc093fe6e2/ff2e3f564e55864b4efc8ba345d4781b/chrome-disable-autofill.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F6bpi4fkyZhnkhW5RBtugDW%2Fd8e2de4536d6a34f092fd9d5975fd04a%2Fchrome-disable-autofill.png&a=w%3D850%26h%3D339%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A22%3A30.687Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6bpi4fkyZhnkhW5RBtugDW/d8e2de4536d6a34f092fd9d5975fd04a/chrome-disable-autofill.png?_a=DAJCwlWIZAAB" %}
 Chrome 浏览器选项
 {% endembed %}
 
 此页面还将列出浏览器存储的所有**已保存的密码**：
 
-{% embed url="https://bitwarden.com/_gatsby/image/f0a41442bf670e994ef31452099de52b/02bdd03f039f7e37de7bcadbdbdbd89b/chrome-delete-passwords.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F4P5alfndwwNgCpTYrSCg61%2Fb3545839a8429f28ee7b6ac66559c3ce%2Fchrome-delete-passwords.png&a=w%3D850%26h%3D299%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A22%3A30.693Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4P5alfndwwNgCpTYrSCg61/b3545839a8429f28ee7b6ac66559c3ce/chrome-delete-passwords.png?_a=DAJCwlWIZAAB" %}
 Chrome 已保存的密码
 {% endembed %}
 
@@ -165,13 +219,17 @@ Chrome 已保存的密码
 {% tab title="Firefox" %}
 在 Firefox 中，导航到**首选项** → **隐私与安全**，然后向下滚动到**登录信息与密码**部分。在这部分中，取消选中所有预先选中的选项：
 
-{% embed url="https://bitwarden.com/_gatsby/image/0341d97906f3865c48152c0db53cbfb0/4a3b074f7313bbd147643d2e3ce31d09/firefox-disable.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F72yK5CCMKa9pcfCcdvUZqL%2F43842f5ab8ed69f16b05513ed16fe864%2Ffirefox-disable.png&a=w%3D850%26h%3D379%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A22%3A30.752Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/72yK5CCMKa9pcfCcdvUZqL/43842f5ab8ed69f16b05513ed16fe864/firefox-disable.png?_a=DAJCwlWIZAAB" %}
 Firefox 密码选项
 {% endembed %}
 
+{% hint style="success" %}
+Bitwarden Password Manager 为高级用户提供各种[报告](../your-vault/vault-health-reports.md)，如**暴露的密码**和**重复使用的密码**报告，并为所有用户提供免费的**数据泄露**报告。
+{% endhint %}
+
 您还可以通过选择**已保存的登录信息...** 按钮找出 Firefox 已经保存了哪些登录信息：
 
-{% embed url="https://bitwarden.com/_gatsby/image/1bba46aad2566d8c3b4950078cb6c2b3/4a3b074f7313bbd147643d2e3ce31d09/firefox-delete.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F5UrQ6bGCjV0VdHvy6rzece%2F576d7d25e03348dee8f06a9af5badb25%2Ffirefox-delete.png&a=w%3D850%26h%3D379%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A22%3A30.687Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5UrQ6bGCjV0VdHvy6rzece/576d7d25e03348dee8f06a9af5badb25/firefox-delete.png?_a=DAJCwlWIZAAB" %}
 Firefox 已经保存的登录信息
 {% endembed %}
 
@@ -181,13 +239,13 @@ Firefox 已经保存的登录信息
 {% tab title="Safari" %}
 在 Safari 中，从菜单栏中打开**首选项**然后导航到**自动填充**选项卡。在此选项卡上，取消选中所有预先选中的选项：
 
-{% embed url="https://bitwarden.com/_gatsby/image/5bf928b2f97577c49055c93909bbb42c/892d190c49271c85d8019df6cee053c3/safari-disable.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F4nuEz911vsIAUegHVL0Zec%2F7d663935c4f9e65297c14598f1037b72%2Fsafari-disable.png&a=w%3D850%26h%3D425%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A15%3A58.390Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4nuEz911vsIAUegHVL0Zec/7d663935c4f9e65297c14598f1037b72/safari-disable.png?_a=DAJCwlWIZAAB" %}
 Safari 密码选项
 {% endembed %}
 
 您还可以通过导航到**密码**选项卡找出 Safari 已经保存了哪些密码：
 
-{% embed url="https://bitwarden.com/_gatsby/image/9dbe139d36f69f5320bfb0f2b893fff9/b0a95e30dca9e0b43e12c10499df5e09/safari-delete.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F6eZMZC98Grc7sbdHbBfXtK%2F4c72d19c26e56ad7dfb3267f466bd119%2Fsafari-delete.png&a=w%3D850%26h%3D621%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A15%3A58.390Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6eZMZC98Grc7sbdHbBfXtK/4c72d19c26e56ad7dfb3267f466bd119/safari-delete.png?_a=DAJCwlWIZAAB" %}
 Safari 已保存的密码
 {% endembed %}
 
@@ -197,17 +255,17 @@ Safari 已保存的密码
 {% tab title="Vivaldi" %}
 在 Vivaldi 中，打开 **⚙️Vivaldi 设置**窗口，然后从左侧导航中选择 **👁‍🗨隐私**。向下滚动到密码部分并取消选中**保存网页密码**选项：
 
-{% embed url="https://bitwarden.com/_gatsby/image/78b1623b1cbab2c7f237dfb8d21c545a/e6e4fa4772e717496252877322331d72/vivaldi-disable.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F6nk9FVDeg8XaUz22Xahr8T%2Fee0f597cc264da5a30853588d541f074%2Fvivaldi-disable.png&a=w%3D850%26h%3D411%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A15%3A58.396Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6nk9FVDeg8XaUz22Xahr8T/ee0f597cc264da5a30853588d541f074/vivaldi-disable.png?_a=DAJCwlWIZAAB" %}
 Vivaldi 密码选项
 {% endembed %}
 
 您还可以通过选择**显示已保存的密码**按钮找出 Vivaldi 已经保存了哪些密码：
 
-{% embed url="https://bitwarden.com/_gatsby/image/58891ea82fd0aa4023a48db343d9e5b5/880784a713e5346ee292517901892eb4/vivaldi-delete.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F1j5qvcTAVsXficByKFewec%2Ffd6f86731a9e15d38e0cbc39f4f64197%2Fvivaldi-delete.png&a=w%3D756%26h%3D263%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A15%3A58.382Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1j5qvcTAVsXficByKFewec/fd6f86731a9e15d38e0cbc39f4f64197/vivaldi-delete.png?_a=DAJCwlWIZAAB" %}
 Vivaldi 已保存的密码
 {% endembed %}
 
-如果您尚未在 Bitwarden 中保存这些密码，请在 Bitwarden 中为这些密码创建登录项目。所有已保存的密码都保存到 Bitwarden 中后，通过右键单击每个密码并选择**删除密码**从 Vivaldi 中删除这些密码。
+如果您尚未在 Bitwarden 中保存这些密码，请在 Bitwarden 中为这些密码创建登录项目。所有已保存的密码都保存到 Bitwarden 中后，请从 Vivaldi 中移除这些密码。[了解更多](https://help.vivaldi.com/desktop/privacy/password-management/#Deleting_passwords)。
 {% endtab %}
 
 {% tab title="Tor" %}
@@ -215,16 +273,28 @@ Vivaldi 已保存的密码
 
 如果您配置过了，请通过在地址栏中输入 `about:preferences#privacy` 导航到**密码**页面，然后向下滚动到登录和密码部分。关闭您勾选过的所有选项：
 
-{% embed url="https://bitwarden.com/_gatsby/image/2491c33c8a021be60933dfcf36ce463e/9dfed6e43dcce5bd724dfb6bf4af0789/tor-disable.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F4FcJnbhCUhDNITJjiy9ciD%2Fd0f83af69188afaf619788c7e60c9a1b%2Ftor-disable.png&a=w%3D850%26h%3D505%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A15%3A57.376Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4FcJnbhCUhDNITJjiy9ciD/d0f83af69188afaf619788c7e60c9a1b/tor-disable.png?_a=DAJCwlWIZAAB" %}
 Tor 密码选项
 {% endembed %}
 
 您还可以通过选择**已保存的登录信息...** 按钮找出 Tor 已经保存了哪些登录信息：
 
-{% embed url="https://bitwarden.com/_gatsby/image/469e117604582f5fa838f9a8a135d4b0/aa7a7bd527502fe311a7f50119e50a6c/tor-delete.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F3NHOIo5RIwTjVecqRPeT5Y%2F6c1e26dc5385006a498b77c48e1048c2%2Ftor-delete.png&a=w%3D850%26h%3D490%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A15%3A57.375Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3NHOIo5RIwTjVecqRPeT5Y/6c1e26dc5385006a498b77c48e1048c2/tor-delete.png?_a=DAJCwlWIZAAB" %}
 Tor 已保存的密码
 {% endembed %}
 
 如果您尚未在 Bitwarden 中保存这些密码，请在 Bitwarden 中为这些密码创建登录项目。所有密码都保存到 Bitwarden 中后，从 Tor 中 **🗑️移除**这些密码。
+{% endtab %}
+
+{% tab title="DuckDuckGo" %}
+在 DuckDuckGo 中，导航至**设置** → **自动填充**。 在此页面中，取消选中**用户名和密码**复选框。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6kAbV4w8EiJX20O9VZOQyl/c6df545c4bc464122b250527b80494d3/Screenshot_2023-11-03_at_11.06.54_AM.png?_a=DAJCwlWIZAAB" %}
+禁用 DuckDuckGo 密码管理器
+{% endembed %}
+
+您可以通过选择**导出密码**来创建现有数据的备份。创建备份文件后，选择**查看自动填写内容...**，然后删除存储的自动填充数据，以移除之前保存的建议。
+
+在密码管理器部分，macOS 用户可以选择使用 Bitwarden。[了解更多](../miscellaneous/duckduckgo-macos-browser-integration.md)有关 Bitwarden DuckDuckGo macOS 浏览器集成的信息。
 {% endtab %}
 {% endtabs %}
