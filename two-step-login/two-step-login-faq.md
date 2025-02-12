@@ -1,4 +1,4 @@
-# 两步登录常见问题
+# 两步登录 FAQ
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/twostep-faqs/)
@@ -14,11 +14,11 @@
 
 **答：**&#x60A8;可以通过启用[两步登录策略](../organizations/enterprise-policies.md#two-step-login)来要求组织用户使用两步登录。此外，您还可以设置[组织层面的 Duo 2FA](setup-guides/two-step-login-via-duo.md)，以确保您的所有用户都拥有他们可以支配的安全的两步登录方式。
 
-### 问：iOS 或 Android 应用程序支持 FIDO U2F 或 FIDO2 WebAuthn 吗？ <a href="#q-is-fido-u-2-f-or-fido-2-webauthn-supported-on-my-ios-or-android-app" id="q-is-fido-u-2-f-or-fido-2-webauthn-supported-on-my-ios-or-android-app"></a>
+### 问：iOS 或 Android App 支持 FIDO U2F 或 FIDO2 WebAuthn 吗？ <a href="#q-is-fido-u-2-f-or-fido-2-webauthn-supported-on-my-ios-or-android-app" id="q-is-fido-u-2-f-or-fido-2-webauthn-supported-on-my-ios-or-android-app"></a>
 
 **答：**&#x652F;持。请参阅 [FIDO2 WebAuthn 方式的两步登录](setup-guides/two-step-login-via-fido2-webauthn.md)。
 
-### 问：为什么 Bitwarden 没有询问我已启用的「两步登录」方式？ <a href="#q-why-is-bitwarden-not-asking-for-my-enabled-two-step-login-method" id="q-why-is-bitwarden-not-asking-for-my-enabled-two-step-login-method"></a>
+### 问：为什么 Bitwarden 没有询问我已启用的两步登录方式？ <a href="#q-why-is-bitwarden-not-asking-for-my-enabled-two-step-login-method" id="q-why-is-bitwarden-not-asking-for-my-enabled-two-step-login-method"></a>
 
 **答：**&#x5927;多数情况下，可能是以下两种情况之一：
 
@@ -26,9 +26,11 @@
 
 2、在使用两步登录访问您的密码库时，您可能已经在设备上勾选了**记住我**复选框。
 
-![记住我选项](../.gitbook/assets/twostep-remember.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6ZKXQZRh1riGuGy44rlebh/7985d990f64c1ee20556aa88b63b591a/2024-12-02_11-26-14.png?_a=DAJCwlWIZAAB" %}
+记住我选项
+{% endembed %}
 
-如果您使用了**记住我**选项，需要从您的网页密码库中（**设置** → **我的账户**）**取消会话授权**，以便该设备继续询问您的两步登录方式。
+如果您使用了**记住我**选项，需要从您的网页密码库（**设置** → **我的账户**）中**取消会话授权**，以便该设备继续询问您的两步登录方式。
 
 ### 问：设备登录是否适用于两步登录？ <a href="#q-does-log-in-with-device-work-with-two-step-login" id="q-does-log-in-with-device-work-with-two-step-login"></a>
 

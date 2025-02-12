@@ -9,12 +9,12 @@
 {% hint style="info" %}
 只有高级用户，包括付费组织（家庭、团队或企业）的成员才能指定可信任的紧急联系人，但任何拥有 Bitwarden 账户的人都可以被指定为可信任的紧急联系人。
 
-**如果您的高级功能因付款方式失败而被取消或失效，**&#x60A8;的可信紧急联系人仍然可以请求并获得对您的密码库的访问。但是，您将无法添加新的或编辑现有的可信紧急联系人。
+**如果您的高级功能因付款方式失败而被取消或失效，**&#x60A8;的可信紧急联系人仍然可以请求并获得对您的密码库的访问。但是，您将无法添加新的可信紧急联系人或编辑现有的可信紧急联系人。
 {% endhint %}
 
 ## 设置紧急访问 <a href="#setup-emergency-access" id="setup-emergency-access"></a>
 
-设置紧急访问分为 3 个步骤：您必须首先邀请用户成为受信任的紧急联系人，然后他们必须接受邀请，最后您必须确认他们的接受：
+设置紧急访问分为 3 个步骤：您必须首先**邀请**用户成为受信任的紧急联系人，然后他们必须**接受**邀请，最后您必须**确认**他们的接受：
 
 {% tabs %}
 {% tab title="邀请" %}
@@ -22,17 +22,17 @@
 
 1、在 Bitwarden 网页 App 中，导航至**设置** → **紧急访问**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gb0Zm4K935RUmzjd62eJq/62093565b919b3c8822da654217bb2f5/Screenshot_2024-02-27_at_9.20.34_AM.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gb0Zm4K935RUmzjd62eJq/d5ba9e65a6f5905fa39c8a601f207a0a/2024-12-02_11-29-43.png?_a=DAJCwlWIZAAB" %}
 紧急访问页面
 {% endembed %}
 
 2、选择 **🞤添加紧急联系人**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7vRyx6gsjm4H9ej6mw4mTv/b792f793e35164e9a026bdc7e24c816a/Screenshot_2024-02-27_at_9.22.06_AM.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7vRyx6gsjm4H9ej6mw4mTv/6750adcecb6c00d740b61b85e7b20baf/2024-12-02_11-35-11.png?_a=DAJCwlWIZAAB" %}
 添加紧急联系人
 {% endembed %}
 
-3、输入您的可信紧急联系人的**电子邮件**地址。可信紧急联系人必须拥有他们自己的 Bitwarden 账户，但不需要是高级会员。
+3、输入您的可信紧急联系人的**电子邮箱**地址。可信紧急联系人必须拥有他们自己的 Bitwarden 账户，但不需要是高级会员。
 
 4、为可信紧急联系人设置**用户访问权限**级别（[仅查看或接管](emergency-access.md#user-access)）。
 
@@ -56,7 +56,7 @@
 紧急访问邀请
 {% endembed %}
 
-2、登录您的 Bitwarden 帐户以接受邀请。如果您还没有 Bitwarden 帐户，则需要创建一个。
+2、登录您的 Bitwarden 账户以接受邀请。如果您还没有 Bitwarden 账户，则需要创建一个。
 
 接受邀请后，邀请的用户**必须确认您的接受**，然后您才能[发起访问请求](emergency-access.md#use-emergency-access)。
 {% endtab %}
@@ -66,13 +66,13 @@
 
 1、在 Bitwarden 网页 App 中，导航至**设置** → **紧急访问**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gb0Zm4K935RUmzjd62eJq/62093565b919b3c8822da654217bb2f5/Screenshot_2024-02-27_at_9.20.34_AM.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gb0Zm4K935RUmzjd62eJq/d5ba9e65a6f5905fa39c8a601f207a0a/2024-12-02_11-29-43.png?_a=DAJCwlWIZAAB" %}
 紧急访问页面
 {% endembed %}
 
 2、在**可信紧急联系人**部分，受邀请的用户应该显示一个 `需要确认` 状态卡。使用 **≡**&#x83DC;单，从下拉菜单中选择**确认**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/jEvLxG2nmFJRnlTbcpwRO/3875aa797496dbf2763e40b4b0ec7621/2024-07-15_13-45-00.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/jEvLxG2nmFJRnlTbcpwRO/8b564a834758b744b5a2f86114393302/2024-12-02_11-38-53.png?_a=DAJCwlWIZAAB" %}
 确认紧急联系人
 {% endembed %}
 
@@ -92,13 +92,13 @@
 
 1、在 Bitwarden 网页 App 中，导航至**设置** → **紧急访问**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gb0Zm4K935RUmzjd62eJq/62093565b919b3c8822da654217bb2f5/Screenshot_2024-02-27_at_9.20.34_AM.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gb0Zm4K935RUmzjd62eJq/d5ba9e65a6f5905fa39c8a601f207a0a/2024-12-02_11-29-43.png?_a=DAJCwlWIZAAB" %}
 紧急访问页面
 {% endembed %}
 
 2、在**指定为紧急联系人**部分，选择 ≡菜单图标然后选择**请求访问**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6x38VldDaEOAqpuCQ4htRJ/33953ef95fd719509efd7d794d2f575c/Screenshot_2024-02-27_at_9.30.07_AM.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6x38VldDaEOAqpuCQ4htRJ/25f126a7ae7cc932562fe62e7aac7bc2/2024-12-02_11-40-35.png?_a=DAJCwlWIZAAB" %}
 请求紧急访问
 {% endembed %}
 
@@ -112,14 +112,14 @@
 
 1、在 Bitwarden 网页 App 中，导航至**设置** → **紧急访问**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gb0Zm4K935RUmzjd62eJq/62093565b919b3c8822da654217bb2f5/Screenshot_2024-02-27_at_9.20.34_AM.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gb0Zm4K935RUmzjd62eJq/d5ba9e65a6f5905fa39c8a601f207a0a/2024-12-02_11-29-43.png?_a=DAJCwlWIZAAB" %}
 紧急访问页面
 {% endembed %}
 
 2、在**指定为紧急联系人**部分，选择 **≡**&#x83DC;单图标，然后从下拉列表中选择与[分配给您的访问权限](emergency-access.md#user-access)相对应的选项：
 
 * **查看** - 选择此选项将在此屏幕上显示授予人的密码库项目。
-* **接管** - 选择此选项将打开接管对话框。输入并确认授予者账户的新主密码。保存后，输入授予人的电子邮件地址和创建的主密码，和往常一样登录 Bitwarden。
+* **接管** - 选择此选项将打开接管对话框。输入并确认授予者账户的新主密码。保存后，输入授予人的电子邮箱地址和新的主密码，和往常一样登录 Bitwarden。
 {% endtab %}
 
 {% tab title="管理访问" %}
@@ -129,13 +129,13 @@
 
 1、在 Bitwarden 网页 App 中，导航至**设置** → **紧急访问**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gb0Zm4K935RUmzjd62eJq/62093565b919b3c8822da654217bb2f5/Screenshot_2024-02-27_at_9.20.34_AM.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gb0Zm4K935RUmzjd62eJq/d5ba9e65a6f5905fa39c8a601f207a0a/2024-12-02_11-29-43.png?_a=DAJCwlWIZAAB" %}
 紧急访问页面
 {% endembed %}
 
 2、在**可信紧急联系人**部分，使用 **≡**&#x83DC;单图标然后选择**批准**或**拒绝**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7iPFwb2NfsjeVywrwlZxSx/b10b8520451b339504c763fb665383b7/Screenshot_2024-02-27_at_9.32.40_AM.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7iPFwb2NfsjeVywrwlZxSx/e7986fffd8b304d4bf8ae6734caba206/2024-12-02_11-42-09.png?_a=DAJCwlWIZAAB" %}
 批准或拒绝紧急访问
 {% endembed %}
 
@@ -147,7 +147,7 @@
 
 他们获得批准后，直到他们的访问权限被手动撤销，获得**查看**访问权限的可信紧急联系人在获得批准后，将能够查看您的密码库项目，直到他们的访问权限被手动撤销。要手动撤销访问，请使用 **≡**&#x83DC;单选择 **✘拒绝**访问：
 
-{% embed url="https://bitwarden.com/help/images/features/emergency-access/ea-revoke.png" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7dhQEDLZNKCwwspstJnhj0/148c5963b9b0e81c0e5e1e0803c45812/2024-12-02_11-44-01.png?_a=DAJCwlWIZAAB" %}
 撤销紧急访问
 {% endembed %}
 
@@ -166,7 +166,9 @@
 
 紧急访问依赖于 Bitwarden 内的公钥交换，因此可信紧急联系人必须是现有的 Bitwarden 用户，或者在接受邀请前会被提示创建一个 Bitwarden 账户。可信紧急联系人不需要必须是高级用户。
 
-作为受信任的紧急联系人的用户状态，其与唯一的 Bitwarden 账户 ID 相关联，这意味着，如果受让人[更改了他的电子邮件地址](../your-vault/general-faqs.md)，则无需重新配置即可维持其紧急访问权限。如果受让人创建了一个**新的 Bitwarden 账户**，并[删除](../plans-and-pricing/delete-an-account-or-organization.md)了已被指定为受信任的紧急联系人的旧账户，他们将自动从授予人的名单中移除，必须[重新邀请](emergency-access.md#setup-emergency-access)。
+作为受信任的紧急联系人的用户状态，其与唯一的 Bitwarden 账户 ID 相关联，这意味着，如果受让人[更改了他的电子邮箱地址](../your-vault/general-faqs.md)，则无需重新配置即可维持其紧急访问权限。
+
+如果受让人创建了一个**新的 Bitwarden 账户**，并[删除](../plans-and-pricing/delete-an-account-or-organization.md)了已被指定为受信任的紧急联系人的旧账户，他们将自动从授予人的名单中移除，必须[重新邀请](emergency-access.md#setup-emergency-access)。
 
 一个用户可以拥有的可信紧急联系人的数量没有限制。
 
@@ -189,13 +191,18 @@
 
 ### 它是如何工作的 <a href="#how-it-works" id="how-it-works"></a>
 
+{% hint style="info" %}
+以下信息引用了加密密钥名称和过程，这些内容在[散列、密钥派生和加密](bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)章节中有介绍。请先阅读该章节。
+{% endhint %}
+
 紧急访问使用公共密钥交换和加密/解密来允许用户授予[可信紧急联系人](emergency-access.md#trusted-emergency-contacts)在零知识环境下[访问密码库数据](emergency-access.md#user-access)的权限：
 
-1. 一个 Bitwarden 用户（_授予人_）[邀请另一个 Bitwarden 用户](emergency-access.md#setup-emergency-access)成为其可信紧急联系人（_受让人_）。邀请（有效期仅 5 天）指定了[用户访问级别](emergency-access.md#user-access)，并包含对受让人的公共密钥的请求。
-2. 受让人将通过电子邮件收到邀请通知，并[接受邀请](emergency-access.md#setup-emergency-access)成为可信紧急联系人。接受邀请后，受让人的公钥将与邀请一起存储。
-3. 授予人将通过电子邮件收到接受通知，并[确认受让人](emergency-access.md#setup-emergency-access)成为其可信紧急联系人。确认后，授予人的主密钥将使用受让人的公钥进行加密，并在加密后存储。受让人将收到确认通知。
-4. 发生紧急情况时，受让人可以[提交紧急访问请求](emergency-access.md#use-emergency-access)以要求进入授予人的密码库。
-5. 授予人将通过电子邮件收到请求通知。授予人可以随时[手动批准请求](emergency-access.md#use-emergency-access)，否则请求将受到授予人指定的等待时间的约束。当请求被批准或等待时间结束后，经公钥加密的主密钥将交付给受让人，并使用受让人的私钥进行解密。
-6. 根据指定的[用户访问级别](emergency-access.md#user-access)，受让人可以：
+1. 一个 Bitwarden 用户（授予人）邀请另一个 Bitwarden 用户成为其可信紧急联系人（受让人）。邀请（有效期仅 5 天）指定了用户访问级别，并包含对受让人 **RSA 公钥**的请求。
+2. 受让人将通过电子邮件收到邀请通知，并接受邀请成为可信紧急联系人。接受邀请后，受让人的 **RSA 公钥**将与用户记录一起存储。
+3. 授予人将通过电子邮件收到接受通知，并确认受让人成为其可信紧急联系人。确认后，授予人的**用户对称密钥**将使用受让人的 **RSA 公钥**进行加密，并与邀请一起存储。受让人将收到确认通知。
+4. 发生紧急情况时，受让人可以提交紧急访问请求以要求进入授予人的密码库。
+5. 授予人将通过电子邮件收到请求通知。授予人可以随时手动批准请求，否则请求将受到授予人指定的等待时间的约束。当请求被批准或等待时间结束后，经**公钥加密的用户对称密钥**将交付给受让人，并使用受让人的 **RSA 私钥**进行解密。\
+   或者，授予人可以拒绝请求，这将阻止受让人获得下一步所述的访问权限。拒绝请求不会使受让人不再是受信任的紧急联系人，也不会阻止他们在未来提出访问请求。
+6. 根据指定的用户访问级别，受让人可以：
    * 获得对授予人密码库中的项目的查看/读取权限（**查看**）。
-   * 提示为授予人的密码库创建新的主密码（**接管**）。
+   * 被要求为授予人的密码库创建一个新的主密码（**接管**）。

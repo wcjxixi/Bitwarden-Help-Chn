@@ -4,34 +4,43 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/localization/)
 {% endhint %}
 
-## 更改应用程序语言 <a href="#change-app-language" id="change-app-language"></a>
+## 更改 App 语言 <a href="#change-app-language" id="change-app-language"></a>
 
 在网页密码库和桌面应用程序中，Bitwarden 将默认使用美国英语。浏览器扩展程序和移动应用程序将默认使用您的系统语言。可以在以下 Bitwarden 客户端上手动更改语言：
 
-{% tabs %}
-{% tab title="网页密码库" %}
-1、选择个人资料图标然后从下拉列表中选择**账户设置**：
+在网页 App 中，Bitwarden 将默认使用您的浏览器语言，这通常由您指定的系统语言决定。浏览器扩展、手机 App 和桌面 App 直接默认为您的系统语言。在以下 Bitwarden 客户端上可以手动更改语言：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/74BqYDU6qE9evz6wEz8K7Y/773eec1c0b00e00db4dedd3456e9a3f9/Screen_Shot_2022-05-13_at_10.34.10_AM.png?fm=webp&h=226&q=50&w=773" %}
-账户设置
+{% embed url="https://vimeo.com/795737043" %}
+
+{% tabs %}
+{% tab title="网页 App" %}
+1、从导航中选择**设置** → **偏好设置**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7vKmhsOfJqieQbYRxALV75/ce2505a6fa89531d5784ca6afe45cecd/2024-12-02_11-46-04.png?_a=DAJCwlWIZAAB" %}
+**偏好设置**
 {% endembed %}
 
-2、从账户设置菜单中，选择**偏好设置**。
-
-3、从**语言**下拉列表中选择一种语言。
+2、从**语言**下拉列表中选择一种语言。
 {% endtab %}
 
 {% tab title="桌面端" %}
-1、打开桌面应用程序的**偏好设置**面板（在 Windows 上，**文件** → **设置**）（在 macOS 上，**Bitwarden** → **偏好设置**）。
+1、打开桌面 App 的**偏好设置**面板（在 Windows 上，**文件** → **设置**）（在 macOS 上，**Bitwarden** → **偏好设置**）。
 
-2、滚动到**应用设置**部分然后使用**语言**下拉菜单选择您的语言。
+2、滚动到 **App 设置**部分然后使用**语言**下拉菜单选择您的语言。
 {% endtab %}
 
 {% tab title="移动端" %}
-1. 打开移动应用程序然后点击**设置**选项卡。
-2. 滚动到其他部分并点击**选项**。
-3. 找到**语言**字段并选择您的首选语言。
-4. 重新启动应用程序以应用更改。
+1、打开移动 App 然后点击**设置**选项卡。
+
+2、点击**外观**。
+
+3、定位到**语言**字段然后选择您的首选语言。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5pqOwt6W99sLHRCpN1DX1w/bc3581ebc015c0343c116c5eb609e2f5/2025-01-21_15-19-31.png?_a=DAJCwlWIZAAB" %}
+移动端语言设置
+{% endembed %}
+
+4、重新启动应用程序以应用更改。
 {% endtab %}
 {% endtabs %}
 
@@ -90,11 +99,11 @@ Bitwarden 浏览器扩展将动态地使用您的网页浏览器设置的语言�
 | zh-CN | 中文（中国大陆）            | [简体中文](https://zh.wikipedia.org/wiki/%E7%AE%80%E5%8C%96%E5%AD%97)                                                       |
 | zh-TW | 中文（台灣）              | [繁体中文](https://zh.wikipedia.org/wiki/%E7%B9%81%E4%BD%93%E5%AD%97)                                                       |
 
-> **\[译者注]**：更多语言代码参阅 [ISO 639-1](https://zh.wikipedia.org/wiki/ISO\_639-1)。
+> **\[译者注]**：更多语言代码参阅 [ISO 639-1](https://zh.wikipedia.org/wiki/ISO_639-1)。
 
 ## 看不到您的语言？ <a href="#dont-see-your-language" id="dont-see-your-language"></a>
 
-如果您的语言没有在网页密码库或桌面应用程序中列出，或者您的浏览器扩展或移动应用程序没有动态地使用您的语言，**我们希望您能提供帮助！**
+如果您的语言没有在网页密码库或桌面 App 中列出，或者您的浏览器扩展或移动 App 没有动态地使用您的语言，**我们希望您能提供帮助！**
 
 Bitwarden 使用一个名为 [Crowdin](https://crowdin.com/) 的翻译工具来管理我们在许多不同语言上的本地化工作（**无需编程知识**）。
 

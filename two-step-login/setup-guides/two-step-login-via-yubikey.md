@@ -101,13 +101,13 @@ YubiKey 提示
 
 **检查 NFC 是否已启用：**
 
-1. 下载 [YubiKey Manager](https://www.yubico.com/products/services-software/download/yubikey-manager/)
+1. 下载 [YubiKey Manager](https://www.yubico.com/products/services-software/download/yubikey-manager/)。
 2. 将 YubiKey 插入设备。
 3. 选择 **Interface** 选项卡，然后检查 NFC 部分中的所有复选框是否都已选中。
 
-**检查 NFC 的配置是否正确：**
+**检查 NFC 配置是否正确：**
 
-1. 下载 [YubiKey Personalization Tool](https://www.yubico.com/products/services-software/download/yubikey-personalization-tools/)
+1. 下载 [YubiKey Personalization Tool](https://www.yubico.com/products/services-software/download/yubikey-personalization-tools/)。
 2. 将 YubiKey 插入设备。
 3. 选择 **Tools** 选项卡。
 4. 选择 **NDEF Programming** 按钮。
