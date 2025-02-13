@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/import-data/)
 {% endhint %}
 
-Bitwarden 提供了一个数据导入工具，可以轻松地将任何密码管理解决方案迁移到您的个人密码库或组织密码库。您也可以使用数据导入工具从一个 Bitwarden 密码库导入到另一个 Bitwarden 密码库，或者导入一个 Bitwarden [加密导出](encrypted-exports.md)。
+将数据导入您的个人 Bitwarden 密码库，以便从任何密码管理解决方案轻松迁移。您也可以从一个 Bitwarden 密码库导入数据到另一个 Bitwarden 密码库，或者导入一个 Bitwarden [加密导出](encrypted-exports.md)。
 
 关于支持的导入格式的完整列表，请参阅 [Bitwarden 支持导入哪些文件格式？](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)，或者使用这些文章用于从最流行的解决方案导入：
 
@@ -15,32 +15,36 @@ Bitwarden 提供了一个数据导入工具，可以轻松地将任何密码管�
 * [从 Microsoft Edge 导入](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
 * [从 Password Safe 导入](import-guides/import-data-from-password-safe.md)
 
+{% hint style="info" %}
+如果您需要导入到您的组织而不是您的个人密码库，请[参阅本文](import-data-to-an-organization.md)。
+{% endhint %}
+
 ## 导入到您的个人密码库 <a href="#import-to-your-personal-vault" id="import-to-your-personal-vault"></a>
 
-数据可以从 **Web 密码库**或 **CLI** 导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行加密。要导入您的数据：
+数据可以从网页密码库、CLI、桌面 App 或浏览器扩展导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../security/encryption.md)。要导入您的数据：
 
 {% tabs %}
-{% tab title="网页端程序" %}
+{% tab title="网页 App" %}
 要导入数据到您的密码库：
 
 1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com)、[https://vault.bitwarden.eu](https://vault.bitwarden.eu,) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
 
-2、从导航条选择**工具** → **导入数据**：
+2、从导航选择**工具** → **导入数据**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/6d09a2630cdb4c4499575997af5569ea/Screenshot_2024-02-27_at_11.21.15_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/7ed2e5650e9988bf7595bccebe8a5114/2024-12-03_08-52-08.png?_a=DAJCwlWIZAAB" %}
 导入数据
 {% endembed %}
 
 3、从下拉菜单中完成以下字段：
 
-* **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
-* **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
+* **密码库**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
+* **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
 * [**文件格式**](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 4、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
 {% hint style="warning" %}
-导入时不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件**将创建重复项目**。
+导入过程不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件**将创建重复项目**。
 {% endhint %}
 
 5、选择**导入数据**按钮以开始导入。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
@@ -53,18 +57,18 @@ Bitwarden 提供了一个数据导入工具，可以轻松地将任何密码管�
 {% tab title="浏览器扩展" %}
 要导入数据到您的密码库：
 
-1、选择**设置**选项卡，然后选择**导入项目**选项。
+1、在**设置**选项卡中，选择**密码库**然后选择**导入项目**选项。
 
 2、从下拉菜单中完成以下字段：
 
-* **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
-* **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
+* **密码库**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
+* **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
 * [**文件格式**](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 3、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
 {% hint style="warning" %}
-导入时不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件**将创建重复项目**。
+导入过程不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件**将创建重复项目**。
 {% endhint %}
 
 4、选择**导入数据**按钮以开始导入。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
@@ -72,21 +76,21 @@ Bitwarden 提供了一个数据导入工具，可以轻松地将任何密码管�
 5、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 {% endtab %}
 
-{% tab title="桌面端程序" %}
+{% tab title="桌面 App" %}
 要导入数据到您的密码库：
 
 1、选择**文件** -> **导入数据**。
 
 2、从下拉菜单中完成以下字段：
 
-* **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
-* **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
+* **导入目的地**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
+* **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
 * [**文件格式**](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 3、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
 {% hint style="warning" %}
-导入时不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件**将创建重复项目**。
+导入过程不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件**将创建重复项目**。
 {% endhint %}
 
 4、选择**导入数据**按钮以开始导入。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
@@ -121,8 +125,8 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 
 尝试导入 `.csv` 时通常会收到如下的错误信息，这些信息表明导入文件中的某个特定值超出了该字段类型所允许的**加密**字符的限制：
 
-{% embed url="https://bitwarden.com/_gatsby/image/1ae5b6b8d8ce6f6f4df15d95f5ffdcde/753d98128cb9b6556367e944a99d0205/ciphererror_2021.webp?eu=dd8c02b2b5cbadd45a3ca5d56f73673be96b01feaf023ed93b60e3fd1aaecdd476a2105175907fb6283f08dd85b44bbe62c57f6019bad7dfc0b811fdec36ae0e57875ebf6fe77004052f92afb8f202463dc51c09a882c00eaa6a26d4e6bab5721c544e22fb29b2d9a8ed7527ba9c306bb7e7f17b26dcf83cb6431d179e5c32e23aeed4c1345cb09df645eeb0e6f44eca83e05b5d1d9fa15d23170b6d0d9156e0fde958395b411c443098a85ec26497e3691e622b5c0b55f3643a825dfd696096e2ffa958dd7328b5b79a6830de96ecd5af58f36819e5cf25a89c7b2459&a=w%3D500%26h%3D336%26fm%3Dwebp%26q%3D75&cd=2022-12-09T19%3A03%3A12.435Z" %}
-Web 密码库中的密码错误
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7FjmtbX1PwBeLKkhklxRXl/ed7e4cd0fcaba916e75725c9153890da/2024-12-05_16-21-00.png?_a=DAJCwlWIZAAB" %}
+网页密码库中的密码错误
 {% endembed %}
 
 要解决这个问题，请在文本编辑器或电子表格程序中打开 `.csv` 文件，将违规项目移除或减少其字符数。Bitwarden 不会导入您的 `.csv` 文件直到无任何违规项目。错误信息中的内容包含了几条相关的数据，这可以帮助你识别违规项目。例如，在上面的示例中：
@@ -148,3 +152,14 @@ Web 密码库中的密码错误
 * 如果您的导入超过 ~~1,000~~ 2,000 个集合。
 * 如果您的导入超过 ~~6,000~~ 7,000 个项目-文件夹关系（例如，3 个文件夹中的单个项目可以说具有 3 个项目-文件夹关系）。
 * 如果您的导入超过 ~~6,000~~ 14,000 个项目-集合关系（例如，3 个集合中的单个项目可以说具有 3 个项目-集合关系）。
+
+### 文件包含未分配的项目 <a href="#file-contains-unassigned-items" id="file-contains-unassigned-items"></a>
+
+如果您是用户，而不是管理员或所有者，则向组织导入数据要求所有要导入的凭据至少有一个与之关联的集合。要解决此错误，您可以：
+
+* 在导入数据之前，从导入界面上的**集合**下拉菜单中选择一个您具有**可以管理**访问权限的现有集合。这样做会将项目添加到该集合中。
+* 为导入文件中未分配的项目指定一个新的集合名称。这样做将自动创建该集合并将项目添加到其中。有关调整导入文件的帮助，请[参阅本文](condition-a-bitwarden-.csv-or-.json.md)。
+
+{% hint style="info" %}
+只有当您的组织关闭了**限制为所有者和管理员可以创建和删除集合**选项时，才会出现此错误，因为关闭这个选项将允许用户创建和导入自己的集合。
+{% endhint %}
