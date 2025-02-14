@@ -39,7 +39,7 @@ LastPass 导出
 {% hint style="warning" %}
 一些用户报告了一个 bug：密码中的特殊字符（`&`、`<`、`>` 等）在导出时，被更改成了 HTML 编码的值（如，`&amp;`）。
 
-如果你在导出的数据中发现了这个 bug，请在导入 Bitwarden 之前，使用文本编辑器查找并替换所有被更改的值。
+如果您在导出的数据中发现了这个 bug，请在导入 Bitwarden 之前，使用文本编辑器查找并替换所有被更改的值。
 {% endhint %}
 {% endtab %}
 
@@ -49,7 +49,7 @@ LastPass 导出
 1、在浏览器扩展中，导航到 **Account** → **Fix a problem yourself** → **Export vault items** → **Export data for use anywhere**。
 
 {% hint style="info" %}
-如果您使用旧版本的 LastPass 浏览器扩展程序，则可能需要导航至 **Account Options** → **Advanced** → **Export** → **LastPass CSV File**。
+如果您使用旧版本的 LastPass 浏览器扩展，则可能需要导航至 **Account Options** → **Advanced** → **Export** → **LastPass CSV File**。
 {% endhint %}
 
 2、输入您的主密码以验证导出尝试。
@@ -78,32 +78,37 @@ LastPass 导出
 如果您是使用 LastPass SSO 的团队成员，LastPass 管理员需要先完成一个简单的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-data-from-lastpass.md#direct-import-with-sso)）。
 {% endhint %}
 
-可以使用 Password Manager 浏览器扩展和桌面应用程序从您的 LastPass 账户直接导入数据，而无需您上传文件。要进行直接导入：
+可以使用 Password Manager 浏览器扩展和桌面 App 从您的 LastPass 账户直接导入个人密码库数据，而无需您上传文件。要进行直接导入：
 
-1. 登录到密码管理器浏览器扩展程序或桌面应用程序。
-2. 在浏览器扩展中，选择**设置**选项卡，然后选择**导入项目**选项。或者，在桌面应用程序中，选择**文件** -> **导入数据**。
-3. 从下拉菜单中完成以下字段：
-   1. **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
-   2. **文件夹**或**集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
-   3. [**文件格式**](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择 LastPass。
-   4. 在 LastPass 说明框中，选择**直接从 LastPass 导入**选项。
-   5. 输入您的 **LastPass 电子邮件地址**。
-4. 选择**导入数据**按钮以触发导入。
-5. 将提示您输入 LastPass 主密码，或者如果您的 LastPass 账户使用 SSO，则将提示您登录到您的 IdP。无论哪种情况，请按照提示登录到您的 LastPass 账户。
+1、登录到 Password Manager 浏览器扩展或桌面 App。
+
+2、在浏览器扩展中，选择**设置**选项卡，然后选择密码库然后选择**导入项目**选项。或者，在桌面 App 中，选择**文件** -> **导入数据**。
+
+3、从下拉菜单中完成以下字段：
+
+* **密码库**或**导入目的地**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
+* **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
+* [**文件格式**](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择 LastPass。
+* 在 LastPass 说明框中，选择**直接从 LastPass 导入**选项。
+* 输入您的 **LastPass 电子邮箱地址**。如果您代表企业进行导入，我们建议您使用 LastPass [管理员](https://support.lastpass.com/s/document-item?language=en_US\&bundleId=lastpass\&topicId=LastPass/uac_admin_roles.html&_LANG=enus)凭据。使用超级管理员凭据可能会导致导入失败。
+
+4、选择**导入数据**按钮以触发导入。
+
+5、将提示您输入 LastPass 主密码，或者如果您的 LastPass 账户使用 SSO，登录到您的 IdP。无论哪种情况，请按照提示登录到您的 LastPass 账户。
 
 {% hint style="success" %}
-如果您的 LastPass 账户激活了多重身份验证，系统将提示您输入来自身份验证器应用程序的一次性密码。如果您使用 Duo 方式的 MFA，则仅支持应用内审批以满足您的 MFA 要求。
+如果您的 LastPass 账户激活了多重身份验证，系统将提示您输入来自身份验证器 App 的一次性通行代码。如果您使用 Duo 方式的 MFA，则仅支持应用内审批以满足您的 MFA 要求。
 {% endhint %}
 
 [文件附件](../../../your-vault/file-attachments.md)、回收站等附加项目需要手动上传到您的密码库。
 {% endtab %}
 
 {% tab title="文件导入" %}
-从大多数密码管理器应用程序导出的文件可以导入到 Bitwarden（了解如何[从 LastPass 导出文件](import-data-from-lastpass.md#export-from-lastpass)）。在本节中，我们将重点介绍使用 Web 应用程序进行导入：
+从大多数 Password Manager App 导出的文件可以导入到 Bitwarden（了解如何[从 LastPass 导出文件](import-data-from-lastpass.md#export-from-lastpass)）。在本节中，我们将重点介绍使用网页 App 进行导入：
 
 1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com)，[https://vault.bitwarden.eu](https://vault.bitwarden.eu) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
 
-2、从导航条选择**工具** → **导入数据**：
+2、从导航选择**工具** → **导入数据**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/7ed2e5650e9988bf7595bccebe8a5114/2024-12-03_08-52-08.png?_a=DAJAUVWIZAAB" %}
 导入数据
@@ -111,8 +116,8 @@ LastPass 导出
 
 3、从下拉菜单中完成以下字段：
 
-* **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
-* **文件夹**或**集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
+* **导入目的地**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
+* **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
 * [**文件格式**](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 4、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
@@ -148,7 +153,7 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ## 使用 SSO 直接导入 <a href="#direct-import-with-sso" id="direct-import-with-sso"></a>
 
 {% hint style="danger" %}
-以下 IdP 不支持 LastPass 账户使用 SSO 直接导入：
+以下 IdP 不支持使用 SSO 的 LastPass 账户的直接导入：
 
 * Google Workspace
 * ADFS
@@ -159,10 +164,10 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 
 * 在 IdP 的 LastPass 应用程序中添加 `bitwarden://sso-callback-lp` 和 `bitwarden://import-callback-lp` 作为允许的回调 URL。
 
-如果您的用户使用 Password Manager 浏览器扩展程序：
+如果您的用户使用 Password Manager 浏览器扩展：
 
-* 在 IdP 的 LastPass 应用程序中添加 `[protocol]://[identifier]/sso-connector.html?lastpass=1` 或 `https://your.server.com/sso-connector.html?lp=1` 作为允许的回调 URL。
-* 在 IdP 的 LastPass 应用程序中添加 `chrome-extension://nngceckbapebfimnlniiiahkandclblb`，`ms-browser-extension://jbkfoedolllekgbhcbcoahefnbanhhlh` 和/或 `moz-extension://23462205-0e62-4cc8-80c4-910cf54b82c2` 作为允许的回调 URL。
+* 在您的 IdP 的 LastPass 应用程序中添加 `[protocol]://[identifier]/sso-connector.html?lastpass=1` 或 `https://your.server.com/sso-connector.html?lp=1` 作为允许的回调 URL。
+* 在您的 IdP 的 LastPass 应用程序中添加 `chrome-extension://nngceckbapebfimnlniiiahkandclblb`，`ms-browser-extension://jbkfoedolllekgbhcbcoahefnbanhhlh` 和/或 `moz-extension://23462205-0e62-4cc8-80c4-910cf54b82c2` 作为允许的回调 URL。
 
 ## 导入故障排除 <a href="#import-troubleshooting" id="import-troubleshooting"></a>
 

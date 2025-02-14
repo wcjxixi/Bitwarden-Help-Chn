@@ -6,8 +6,8 @@
 
 密码库数据可以[导出](export-vault-data.md)为加密的 `.json` 文件。加密的导出文件将包含来自您的组织或个人密码库的项目，但不包含 Send、~~密码历史记录、~~回收站或项目附件。可以使用网页密码库或 [CLI](../password-manager/developer-tools/password-manager-cli.md#export) 创建受密码保护的导出。Bitwarden 提供两种加密导出类型：
 
-* **账户限制**：导出的加密文件，只能重新导入到生成加密导出文件的 Bitwarden 账户。此过程使用专用于 Bitwarden 账户的[账户加密密钥](../security/account-encryption-key.md)。
-* **密码保护**：使用您选择的密码保护导出的加密文件。该文件使用您选择的密码解密，并且可以导入任何 Bitwarden 账户。此指定的密码经过加盐处理，使用 PBKDF2 以 100,000 次迭代派生出加密密钥，最后使用 HDKF 拉伸为一个新的加密密钥，用于加密您的数据和消息身份验证代码 (MAC)。
+* **账户限制**：导出加密文件，只能重新导入到生成加密导出文件的 Bitwarden 账户。此过程使用专用于 Bitwarden 账户的[账户加密密钥](../security/account-encryption-key.md)。
+* **密码保护**：使用您选择的密码保护导出的加密文件。该文件使用您选择的密码解密，并且可以导入任何 Bitwarden 账户。此指定的密码经过加盐处理，使用 PBKDF2 以 100,000 次迭代派生出加密密钥，最后使用 HDKF 拉伸为一个新的加密密钥，用于加密您的数据以及消息身份验证代码 (MAC)。
 
 {% hint style="warning" %}
 **账户限制**的导出不能导入到其他账户。此外，[轮换您账户的加密密钥](../security/account-encryption-key.md)将导致已加密的导出无法解密。**如果您轮换了您的加密密钥，请使用新的加密密钥导出新文件以替换所有旧文件。**
@@ -47,7 +47,7 @@
 
 {% tabs %}
 {% tab title="网页 App" %}
-要通过网页密码库导出您的个人密码库数据：
+要通过网页 App 导出您的个人密码库数据：
 
 1、在 Bitwarden 网页 App 中，从导航栏选择**工具** → **导出密码库**：
 
@@ -142,16 +142,16 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 
 1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com)，[https://vault.bitwarden.eu](https://vault.bitwarden.eu,) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
 
-2、从导航条选择**工具** → **导入数据**：
+2、从导航栏选择**工具** → **导入数据**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/6d09a2630cdb4c4499575997af5569ea/Screenshot_2024-02-27_at_11.21.15_AM.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/7ed2e5650e9988bf7595bccebe8a5114/2024-12-03_08-52-08.png?_a=DAJCwlWIZAAB" %}
 导入数据
 {% endembed %}
 
 3、从下拉菜单中完成以下字段：
 
-* **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
-* **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
+* **密码库**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
+* **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
 * [**文件格式**](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 4、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
@@ -164,18 +164,18 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 
 6、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 
-[文件附件](../your-vault/file-attachments.md)、[Send](../bitwarden-send/about-send.md)、回收站以及密码历史记录等附加项目需要手动上传到您的密码库。
+[文件附件](../your-vault/file-attachments.md)、[Send](../bitwarden-send/about-send.md)、回收站等附加项目需要手动上传到您的密码库。
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
 要导入数据到您的密码库：
 
-1、选择**设置**选项卡，然后选择**导入项目**选项。
+1、在**设置**选项卡中，选择**密码库**然后选择**导入项目**选项。
 
 2、从下拉菜单中完成以下字段：
 
-* **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
-* **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
+* **密码库**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
+* **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
 * [**文件格式**](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 3、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
@@ -189,15 +189,15 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 5、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 {% endtab %}
 
-{% tab title="桌面端程序" %}
+{% tab title="桌面 App" %}
 要导入数据到您的密码库：
 
-1、选择**文件** -> **导入数据**。
+1、选择**文件** → **导入数据**。
 
 2、从下拉菜单中完成以下字段：
 
-* **导入目的地**：选择导入目的地，例如您拥有访问权限的个人密码库或组织密码库。
-* **文件夹或集合**：选择您是否希望将导入的内容移动到您拥有访问权限的特定文件夹或组织集合。
+* **密码库**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
+* **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
 * [**文件格式**](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 3、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
