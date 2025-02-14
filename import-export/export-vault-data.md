@@ -68,7 +68,7 @@
 {% endtab %}
 
 {% tab title="桌面端" %}
-要通过桌面应用程序导出您的个人密码库数据：
+要通过桌面 App 导出您的个人密码库数据：
 
 1、从菜单栏中，导航到**文件** → **导出密码库**。
 
@@ -82,7 +82,7 @@
 {% endtab %}
 
 {% tab title="移动端" %}
-要通过移动应用程序导出您的个人密码库数据：
+要通过移动 App 导出您的个人密码库数据：
 
 1、点击 ⚙️**设置**标签。
 
@@ -120,7 +120,7 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 
 {% tabs %}
 {% tab title="网页 App" %}
-要从网页 App 导出您的组织密码库：
+要通过网页 App 导出您的组织密码库：
 
 1、使用产品切换器打开**管理控制台**：
 
@@ -129,6 +129,10 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 {% endembed %}
 
 2、从导航栏选择**导出** → **导出密码库**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2UQyeVwsMcc1f7vcJOnnUO/4949e1a6b8422222865fdd7a6275aea5/2024-12-03_09-01-45.png?_a=DAJCwlWIZAAB" %}
+导出组织密码库
+{% endembed %}
 
 3、在导出密码库页面，选择一个**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`），然后选择**确认格式**按钮。
 
@@ -140,7 +144,7 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 {% endtab %}
 
 {% tab title="CLI" %}
-要从 CLI 导出您的组织密码库，需使用带 `--organizationid <orgId>` 选项的 `export` 命令。
+要通过 CLI 导出您的组织密码库，需使用带 `--organizationid <orgId>` 选项的 `export` 命令。
 
 默认情况下，`export` 导出密码库为 `.csv` 文件并保存在工作目录下，然而，这种行为可以通过使用选项来更改：
 
@@ -157,8 +161,6 @@ bw export my-master-password --organizationid 7063feab-4b10-472e-b64c-785e2b870b
 {% hint style="info" %}
 导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/reporting/event-logs.md)。
 {% endhint %}
-
-
 {% endtab %}
 {% endtabs %}
 

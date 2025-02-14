@@ -1,10 +1,10 @@
-# 导入 & 导出常见问题
+# 导入 & 导出 FAQ
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/import-faqs/)
 {% endhint %}
 
-本文包含有关**导入和导出**的常见问题 (FAQ)。
+本文包含有关导入和导出的常见问题 (FAQ)。
 
 ### 问：如果在导入选项列表中没有看到我的服务，如何导入我的数据？ <a href="#q-how-do-i-import-my-data-if-i-dont-see-my-service-on-the-import-options-list" id="q-how-do-i-import-my-data-if-i-dont-see-my-service-on-the-import-options-list"></a>
 
@@ -27,7 +27,7 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 
 ### 问：如何将项目直接导入到集合中？ <a href="#q-how-can-i-import-items-directly-to-collections" id="q-how-can-i-import-items-directly-to-collections"></a>
 
-**答：**&#x8981;将项目直接导入到集合中，请将您的导入格式化为 Bitwarden `.csv`（更多信息请参阅[调整 Bitwarden .csv 或 .json](condition-a-bitwarden-.csv-or-.json.md)），并在文件中指定要导入的每一个项目的集合。
+**答：**&#x60A8;可以在导入前通过适当调整 `.json` 文件将项目导入现有的集合，也可以在导入文件中定义新的集合，以便在上传文件时创建新的集合。[了解方法](condition-a-bitwarden-.csv-or-.json.md)。
 
 ### 问：如何将文件附件导入 Bitwarden？ <a href="#q-how-do-i-import-file-attachments-to-bitwarden" id="q-how-do-i-import-file-attachments-to-bitwarden"></a>
 
@@ -49,7 +49,7 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 **答：**&#x4EE5;下格式支持开箱即用：
 
 {% hint style="info" %}
-如果你的格式没有在下面列出，请手动[调整 Bitwarden .csv 或 .json](condition-a-bitwarden-.csv-or-.json.md)。
+如果您的格式没有在下面列出，请手动[调整 Bitwarden .csv 或 .json](condition-a-bitwarden-.csv-or-.json.md)。
 {% endhint %}
 
 * [1Password (1pif)](../password-manager/import-and-export/import-guides/import-data-from-1password.md)
@@ -61,7 +61,7 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * Avira (json)
 * BlackBerry Password Keeper (csv)
 * Blur (csv)
-* [Brave (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
+* [Brave (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)（请选择 **Chrome**）
 * Buttercup (csv)
 * [Chrome (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
 * Clipperz (html)
@@ -82,9 +82,10 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * Meldium (csv)
 * mSecure (csv)
 * Myki (csv)
-* [Microsoft Edge (Chromium) (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
+* [Microsoft Edge (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)（请选择 **Chrome**）
 * Nordpass (csv)
-* [Opera (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
+* Netwrix Password Secure (csv)
+* [Opera (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)（请选择 **Chrome**）
 * Padlock (csv)
 * Passbolt (csv)
 * PassKeep (csv)

@@ -47,84 +47,47 @@
 
 {% tabs %}
 {% tab title="网页 App" %}
-要通过网页 App 导出您的个人密码库数据：
+要通过网页 App 导出您的组织密码库：
 
-1、在 Bitwarden 网页 App 中，从导航栏选择**工具** → **导出密码库**：
+1、使用产品切换器打开**管理控制台**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5PUGzasNsQnABG9gtso4o3/7570e4655e1ad686596a2a53301c6d08/Screenshot_2024-02-27_at_11.32.04_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
+产品切换器
+{% endembed %}
 
-2、选择**导出自**的位置和**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。如果您从**导出自**下拉列表中选择了某个组织，则只会导出您拥有「[可以管理](../admin-console/user-management/member-roles-and-permissions.md)」权限的集合。
+2、从导航栏选择**导出** → **导出密码库**：
 
-3、如果选择 `.json (Encrypted)`，请选择您希望用于加密导出的**导出类型**：
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2UQyeVwsMcc1f7vcJOnnUO/4949e1a6b8422222865fdd7a6275aea5/2024-12-03_09-01-45.png?_a=DAJCwlWIZAAB" %}
+导出组织密码库
+{% endembed %}
 
-* **账户限制**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
-* **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
+3、在导出密码库页面，选择一个**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`），然后选择**确认格式**按钮。
 
-4、选择**确认格式**，输入您的主密码，然后选择**导出密码库**按钮以完成。您需要使用主密码或电子邮件验证码来确认您具有执行此操作的权限。
-{% endtab %}
-
-{% tab title="浏览器扩展" %}
-要通过浏览器扩展导出您的个人密码库数据：
-
-1、打开 **⚙️设置**标签。
-
-2、向下滚动到**工具**部分并选择**导出密码库**选项。
-
-3、在导出密码库视图中，选择一个**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。
-
-4、如果选择 `.json (Encrypted)`，请选择您希望用于加密导出的**导出类型**：
-
-* **账户限制**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
-* **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
-
-5、输入您的**主密码**然后选择**提交**。
+4、输入您的主密码然后选择**导出密码库**按钮。
 
 {% hint style="info" %}
-如果您是从 Vivaldi 浏览器扩展导出，您可能需要弹出浏览器扩展以便导出能正常工作。
+导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/reporting/event-logs.md)。
 {% endhint %}
-{% endtab %}
-
-{% tab title="桌面端" %}
-要通过桌面应用程序导出您的个人密码库数据：
-
-1、从菜单栏中，导航到**文件** → **导出密码库**。
-
-2、在导出密码库窗口中，选择一个**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。
-
-3、如果选择 `.json (Encrypted)`，请选择您希望用于加密导出的**导出类型**：
-
-* **账户限制**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
-* **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
-
-4、输入您的**主密码**然后选择 **⬇️下载**按钮。
-{% endtab %}
-
-{% tab title="移动端" %}
-要通过移动应用程序导出您的个人密码库数据：
-
-1、点击 ⚙️**设置**标签。
-
-2、向下滚动到**工具**部分并点击**导出密码库**选项。
-
-3、在导出密码库视图中，选择一个**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。
-
-{% hint style="success" %}
-如果您需要将此数据导入新的 Bitwarden 帐户，我们建议使用网络密码库创建**密码保护**的导出。
-{% endhint %}
-
-4、输入您的**主密码**然后点击**导出密码库**按钮。
 {% endtab %}
 
 {% tab title="CLI" %}
-要通过 CLI 导出您的个人密码库数据，需使用 `export` 命令。默认情况下，`export` 导出密码库为 `.csv` 文件并保存在工作目录下，然而，这种行为可以通过使用选项来更改：
+要通过 CLI 导出您的组织密码库，需使用带 `--organizationid <orgId>` 选项的 `export` 命令。
+
+默认情况下，`export` 导出密码库为 `.csv` 文件并保存在工作目录下，然而，这种行为可以通过使用选项来更改：
 
 ```batch
-bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
+bw export my-master-password --organizationid 7063feab-4b10-472e-b64c-785e2b870b92 --output /users/me/documents/ --format json
 ```
 
-`--password` 选项可用于指定一个加密 `encrypted_json` 导出的密码，而不是您的[账户加密密钥](../security/account-encryption-key.md)。
+{% hint style="success" %}
+如果您一时不知道您的 `organizationid` 值，可以在命令行使用 `bw list organizations` 来获取它。
+{% endhint %}
 
 更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+
+{% hint style="info" %}
+导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/reporting/event-logs.md)。
+{% endhint %}
 {% endtab %}
 {% endtabs %}
 
