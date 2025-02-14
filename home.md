@@ -28,7 +28,7 @@
 找不到您需要的吗？[联系支持](https://bitwarden.com/contact/)获取帮助。
 {% endhint %}
 
-### 现场演示和点播演示 <a href="#live-and-on-demand-demonstrations" id="live-and-on-demand-demonstrations"></a>
+### 现场演示和点播演示 <a href="#demo" id="demo"></a>
 
 立即预订业务演示和问答，或观看点播演示。
 
