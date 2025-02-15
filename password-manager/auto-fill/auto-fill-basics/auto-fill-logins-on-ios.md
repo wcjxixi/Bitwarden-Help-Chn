@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-ios/)
 {% endhint %}
 
-Bitwarden 可以自动填充您的密码和通行密钥，以便您可以无缝登录网站和应用程序，同时维护强大而安全的密码。自动填充通过检测与您登录的服务相匹配的密码库项目，以减少您在登录过程中的复制和粘贴操作。
+Bitwarden 可以自动填充您的密码和通行密钥，以便您可以无缝登录网站和 App，同时维护强大而安全的密码。自动填充功能通过检测与您登录的服务相匹配的密码库项目，以减少了您在登录过程中的复制和粘贴操作。
 
 自动填充通行密钥（包括创建新的通行密钥时 Bitwarden 发出提示）要求 iOS 17.0 或更高版本。
 
@@ -19,7 +19,7 @@ Bitwarden 可以自动填充您的密码和通行密钥，以便您可以无缝�
 iOS 上的自动填充有几种行为：
 
 * **键盘自动填充**：（推荐）使用此选项可以在任何 iOS App（包括网页浏览器）中通过一个键盘按钮或上滑提示来使用 Bitwarden 自动填充。
-* **浏览器应用程序扩展自动填充**：使用此选项仅可以在网页浏览器 App（例如 Safari）中通过分享菜单来使用 Bitwarden 自动填充。
+* **浏览器 App 扩展自动填充**：使用此选项仅可以在网页浏览器 App（例如 Safari）中通过分享菜单来使用 Bitwarden 自动填充。
 * **长按文本字段**：使用此选项可在更多地点从 Bitwarden 自动填充。
 
 {% hint style="success" %}
@@ -52,7 +52,7 @@ iOS 上的自动填充有几种行为：
 
 **让我们测试一下自动填充以确保其可以正常工作：**
 
-4、打开一个您当前未登录的应用程序或网站。
+4、打开一个您当前未登录的 App 或网站。
 
 5、在登录界面点击用户名或密码字段。键盘将上滑出一个匹配的登录 (`my_username`) 或 **🔑密码**按钮：
 
@@ -63,16 +63,16 @@ iOS 上的自动填充
 如果显示一个[匹配的登录](../../../auto-fill/using-uris.md)，请点击以自动填充。如果显示 **🔑密码**按钮，请点击它浏览您的密码库以搜索要使用的登录项目。如果显示 **🔑密码**按钮，可能是因为您的密码库中没有具有匹配 URI 的项目。
 
 {% hint style="success" %}
-遇到 `Biometric unlock disabled pending verification of master password（生物识别解锁已禁用，等待验证主密码）` 消息吗？了解[该怎么做](../../../auto-fill/auto-fill-faqs.md#q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password)。
+遇到 `Biometric unlock disabled pending verification of master password`（生物识别解锁已禁用，等待验证主密码） 消息吗？了解[该怎么做](../../../auto-fill/auto-fill-faqs.md#q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password)。
 {% endhint %}
 
-### 浏览器应用程序扩展自动填充 <a href="#browser-app-extension-auto-fill" id="browser-app-extension-auto-fill"></a>
+### 浏览器 App 扩展自动填充 <a href="#browser-app-extension-auto-fill" id="browser-app-extension-auto-fill"></a>
 
-要启用 iOS 上的浏览器应用程序扩展自动填充：
+要启用 iOS 上的浏览器 App 扩展自动填充：
 
-1、打开 Bitwarden iOS 应用程序并点击 **⚙️设置**。
+1、打开 Bitwarden iOS  App 然后点击 **⚙️设置**。
 
-2、点击**自动填充**选项。
+2、点击**自动填充**。
 
 3、在自动填充部分点击 **App 扩展**选项。&#x20;
 
@@ -112,15 +112,15 @@ iOS 上的自动填充
 iOS 上长按文本字段
 {% endembed %}
 
-## 在自动填充期间切换账户 <a href="#switch-accounts-during-auto-fill" id="switch-accounts-during-auto-fill"></a>
+## 自动填充期间切换账户 <a href="#switch-accounts-during-autofill" id="switch-accounts-during-autofill"></a>
 
-如果您[登录了多个账户](../../../your-vault/account-switching.md)，您的移动 App 将默认尝试从当前活动账户中自动填充凭据。您可以在自动填充期间通过点击头像气泡从一个账户切换到另一个账户。
+如果您[登录了多个账户](../../../your-vault/account-switching.md)，您的移动 App 将默认尝试自动填充当前活动账户的凭据。在自动填充过程中，您可以通过轻按头像气泡从一个账户切换到另一个账户。
 
 ## 使用通行密钥 <a href="#using-passkeys" id="using-passkeys"></a>
 
 ### 设置 Bitwarden 以使用通行密钥 <a href="#setup-bitwarden-for-use-with-passkeys" id="setup-bitwarden-for-use-with-passkeys"></a>
 
-要使用下述功能，请打开 iOS **设置**应用程序然后导航至**密码** → **密码选项**。打开以下选项：
+要使用下述功能，请打开 iOS **设置** App 然后导航至**密码** → **密码选项**。打开以下选项：
 
 * 打开**自动填充密码和通行密钥**。
 * 在**密码和通行密钥来源：** 列表中打开 **Bitwarden**。
@@ -151,7 +151,7 @@ iOS 上长按文本字段
 
 ### 使用存储在 Bitwarden 中的通行密钥登录 <a href="#sign-in-using-a-passkey-stored-in-bitwarden" id="sign-in-using-a-passkey-stored-in-bitwarden"></a>
 
-要使用 Bitwarden 中存储的密钥，请在网站上启动密钥登录。移动应用程序将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项：
+要使用 Bitwarden 中存储的密钥，请在网站上启动通行密钥登录。移动 App 将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/b6fY5o4CBxhW4ZjDIpanR/56ffdbf1ff93b7387be273bc7df15e6b/passkey-ios-3__1_.png?_a=BAJFJtWIB" %}
 使用通行密钥登录

@@ -237,5 +237,5 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为热键）来�
 
 
 {% hint style="success" %}
-[内嵌自动填充菜单](auto-fill-logins-in-browser-extensions.md#inline-auto-fill-menu)还可用于轻松使用行密钥进行身份验证。
+[内嵌自动填充菜单](auto-fill-logins-in-browser-extensions.md#inline-auto-fill-menu)还可用于轻松使用通行密钥进行身份验证。
 {% endhint %}
