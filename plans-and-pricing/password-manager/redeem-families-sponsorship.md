@@ -53,7 +53,7 @@
 {% hint style="success" %}
 必须始终从 `https://vault.bitwarden.com` 访问受赞助的家庭组织。您的工作账户可能使用不同的 URL，例如 `https://company.bitwarden.com`，因此您需要确保使用正确的 URL 登录到正确的账户。
 
-**提示**：Bitwarden 移动端和桌面端应用程序可以使用不同的 URL 在[账户间快速切换](../../your-vault/account-switching.md)。
+**提示**：Bitwarden 移动端和桌面端 App 可以使用不同的 URL 在[账户间快速切换](../../your-vault/account-switching.md)。
 {% endhint %}
 
 6、登录后，您将被定向到一个界面，在此界面您可以完成为**新的家庭组织**或**现有的家庭组织**兑换您的赞助的操作：
@@ -95,7 +95,7 @@
 
 ### 问：我可以使用属于赞助企业成员的账户进行兑换吗？ <a href="#can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise" id="can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise"></a>
 
-**答：**&#x4E0D;可以。兑换时，系统会要求您输入您拥有的**个人电子邮件地址**。如果您已有个人 Bitwarden 账户，请输入该账户的电子邮件地址。如果没有，请输入您要为其创建个人 Bitwarden 账户的个人电子邮件地址。
+**答：**&#x4E0D;可以。兑换时，系统会要求您输入您拥有的**个人电子邮箱地址**。如果您已有个人 Bitwarden 账户，请输入该账户的电子邮箱地址。如果没有，请输入您要为其创建个人 Bitwarden 账户的个人电子邮箱地址。
 
 ### 问：我可以为我现有的家庭组织兑换吗？ <a href="#can-i-redeem-for-my-existing-families-organization" id="can-i-redeem-for-my-existing-families-organization"></a>
 
@@ -103,7 +103,7 @@
 
 ### 问：我可以添加额外的存储空间吗？ <a href="#can-i-add-additional-storage" id="can-i-add-additional-storage"></a>
 
-**答：**&#x53EF;以，但是您的赞助中只包含 1 GB。可以随时添加更多存储空间，这样做会通过您已存档的付款方式收取费用。
+**答：**&#x53EF;以。但是您的赞助中只包含 1 GB。可以随时添加更多存储空间，这样做会通过您已存档的付款方式收取费用。
 
 ### 问：如果我离开赞助我的组织会怎样？ <a href="#what-happens-if-i-leave-the-organization-sponsoring-me" id="what-happens-if-i-leave-the-organization-sponsoring-me"></a>
 
@@ -135,8 +135,8 @@
 
 ### 问：如果我的组织在美国服务器上，我能否在欧盟服务器上兑换家庭组织？ <a href="#q-if-my-organization-is-on-a-us-server-can-i-redeem-a-families-organization-on-the-eu-server" id="q-if-my-organization-is-on-a-us-server-can-i-redeem-a-families-organization-on-the-eu-server"></a>
 
-答：不能，家庭计划赞助只能在与赞助企业组织相同的云服务器上兑换。如果您的企业组织已从一个云服务器迁移到另一个云服务器，则必须在正确的云服务器上赞助新的 Families 组织。有关迁移组织的更多信息，请参阅 Bitwarden 迁移指南。
+答：不能。家庭计划赞助只能在与赞助企业组织相同的云服务器上兑换。如果您的企业组织已从一个云服务器迁移到另一个云服务器，则必须在正确的云服务器上赞助新的家庭组织。有关迁移组织的更多信息，请参阅 [Bitwarden 迁移指南](../../business-resources/teams-and-enterprise-migration-guide.md)。
 
-### 问：如何移除一个Families组织？ <a href="#q-how-do-i-remove-a-families-organization" id="q-how-do-i-remove-a-families-organization"></a>
+### 问：如何移除家庭组织？ <a href="#q-how-do-i-remove-a-families-organization" id="q-how-do-i-remove-a-families-organization"></a>
 
-答：要移除Families组织，请登录作为企业组织成员的账户，然后导航到设置→免费Bitwarden Families。选择与赞助的 Families 组织相关的  齿轮图标，然后选择移除。
+答：要移除家庭组织，请登录作为企业组织成员的账户，然后导航到**设置** → **免费 Bitwarden 家庭**。选择与赞助的家庭组织相关的 **⚙️**齿轮图标，然后选择**移除**。
