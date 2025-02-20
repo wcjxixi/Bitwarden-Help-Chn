@@ -22,9 +22,34 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.2.0
+
+（版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.2.1）
+
+{% hint style="info" %}
+为确保账户安全，在即将发布的版本中，**对于没有使用两步登录的用户**，Bitwarden 将对其要求额外的验证。希望避免新设备验证工作流的用户可以：
+
+* 按照[此页面](two-step-login/two-step-login-methods.md)上的任何指南预先设置两步登录。
+* 从**设置** → **我的账户** → **危险操作区**界面中退出此功能。
+
+[了解更多](miscellaneous/new-device-login-protection.md)。
+{% endhint %}
+
+此次发布包含：
+
+### Password Manager
+
+* **提高了导入项目的限制**：提高了密码管理器导入项目的数量限制。[了解更多](import-export/import-data-to-your-vault.md)。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **集合权限更新**：
+  * **集合权限名称已更新**：更新了集合权限名称，使其更加清晰。[了解更多](admin-console/user-management/member-roles-and-permissions.md#permissions)。
+  * **更新「编辑项目、隐藏密码」权限**：为提高安全性，「编辑项目、隐藏密码」权限将不再允许用户将集合中的项目分配到另一个集合。
+
 ## 2025.1.2
 
-_（所列版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版本号分别为服务器 2025.1.4、桌面 2025.1.4、浏览器扩展 2025.1.3、CLI 2025.1.3、iOS 2025.1.2 和安卓 2025.1.1）_
+（版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版本号分别为服务器 2025.1.4、桌面 2025.1.4、浏览器扩展 2025.1.3、CLI 2025.1.3、iOS 2025.1.2 和安卓 2025.1.1）
 
 {% hint style="info" %}
 为确保账户安全，2025 年初开始，**对于没有使用两步登录的用户**，Bitwarden 将对其要求额外的验证。[了解更多](miscellaneous/new-device-login-protection.md)。
