@@ -348,7 +348,7 @@
   * [Secrets Manager Beta 版注册](miscellaneous/beta-signup.md)
   * [未分配的密码库项目已移至管理控制台](miscellaneous/unassigned-vault-items-moved-to-admin-console.md)
   * [原生移动 App](miscellaneous/native-mobile-apps.md)
-  * [新设备登录保护（2025 年初）](miscellaneous/new-device-login-protection.md)
+  * [新设备登录保护（2025 年 2 月/3 月）](miscellaneous/new-device-verification.md)
 
 ## 附录 <a href="#appendix" id="appendix"></a>
 

@@ -24,7 +24,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ## 2025.2.0
 
-（版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.2.1）
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.2.1）
 
 {% hint style="info" %}
 为确保账户安全，在即将发布的版本中，**对于没有使用两步登录的用户**，Bitwarden 将对其要求额外的验证。希望避免新设备验证工作流的用户可以：
@@ -32,7 +32,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 * 按照[此页面](two-step-login/two-step-login-methods.md)上的任何指南预先设置两步登录。
 * 从**设置** → **我的账户** → **危险操作区**界面中退出此功能。
 
-[了解更多](miscellaneous/new-device-login-protection.md)。
+[了解更多](miscellaneous/new-device-verification.md)。
 {% endhint %}
 
 此次发布包含：
@@ -52,7 +52,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 （版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版本号分别为服务器 2025.1.4、桌面 2025.1.4、浏览器扩展 2025.1.3、CLI 2025.1.3、iOS 2025.1.2 和安卓 2025.1.1）
 
 {% hint style="info" %}
-为确保账户安全，2025 年初开始，**对于没有使用两步登录的用户**，Bitwarden 将对其要求额外的验证。[了解更多](miscellaneous/new-device-login-protection.md)。
+为确保账户安全，2025 年初开始，**对于没有使用两步登录的用户**，Bitwarden 将对其要求额外的验证。[了解更多](miscellaneous/new-device-verification.md)。
 {% endhint %}
 
 此次发布包含：

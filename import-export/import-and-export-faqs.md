@@ -48,6 +48,8 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 
 **答：**&#x4EE5;下格式支持开箱即用：
 
+> **\[译者注]**：out-of-the-box，开箱即用。「out-of-the-box」 是一个常用短语，表示「无需额外配置或修改即可直接使用」。在这里，表示以下格式可以直接在 Bitwarden 中导入，而无需额外手动[调整 Bitwarden .csv 或 .json](condition-a-bitwarden-.csv-or-.json.md)。
+
 {% hint style="info" %}
 如果您的格式没有在下面列出，请手动[调整 Bitwarden .csv 或 .json](condition-a-bitwarden-.csv-or-.json.md)。
 {% endhint %}
