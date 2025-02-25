@@ -8,7 +8,7 @@
 
 ### 问：如果在导入选项列表中没有看到我的服务，如何导入我的数据？ <a href="#q-how-do-i-import-my-data-if-i-dont-see-my-service-on-the-import-options-list" id="q-how-do-i-import-my-data-if-i-dont-see-my-service-on-the-import-options-list"></a>
 
-**答：**&#x5982;果我们对你使用的服务没有提供官方支持，请手动调整 `.csv` 或 `.json` 来导入 Bitwarden。关于如何操作的更多信息，请参阅[调整 Bitwarden .csv 或 .json](condition-a-bitwarden-.csv-or-.json.md)。
+**答：**&#x5982;果我们对您使用的服务没有提供官方支持，请手动调整 `.csv` 或 `.json` 来导入 Bitwarden。关于如何操作的更多信息，请参阅[调整 Bitwarden .csv 或 .json](condition-a-bitwarden-.csv-or-.json.md)。
 
 ### 问：我可以从 iCloud/Mac 钥匙串/Safari 导入 Bitwarden 吗？ <a href="#q-can-i-import-to-bitwarden-from-icloud-mac-keychain-safari" id="q-can-i-import-to-bitwarden-from-icloud-mac-keychain-safari"></a>
 
