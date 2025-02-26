@@ -44,16 +44,12 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **集合权限更新**：
-  * **集合权限名称已更新**：更新了集合权限名称，使其更加清晰。[了解更多](admin-console/user-management/member-roles-and-permissions.md#permissions)。
+  * **集合权限名称已更新**：更新了集合权限名称，使其更加清晰明了。[了解更多](admin-console/user-management/member-roles-and-permissions.md#permissions)。
   * **更新「编辑项目、隐藏密码」权限**：为提高安全性，「编辑项目、隐藏密码」权限将不再允许用户将集合中的项目分配到另一个集合。
 
 ## 2025.1.2
 
 （版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版本号分别为服务器 2025.1.4、桌面 2025.1.4、浏览器扩展 2025.1.3、CLI 2025.1.3、iOS 2025.1.2 和安卓 2025.1.1）
-
-{% hint style="info" %}
-为确保账户安全，2025 年初开始，**对于没有使用两步登录的用户**，Bitwarden 将对其要求额外的验证。[了解更多](miscellaneous/new-device-verification.md)。
-{% endhint %}
 
 此次发布包含：
 
