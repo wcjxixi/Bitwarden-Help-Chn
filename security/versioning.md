@@ -30,26 +30,26 @@
 
 {% tabs %}
 {% tab title="浏览器扩展" %}
-导航到 **⚙️设置**选项卡然后选择**关于**选项：
+导航到 **⚙️设置**选项卡然后选择**关于** → **关于 Bitwarden**：
 
-{% embed url="https://bitwarden.com/_gatsby/image/9f8d75cdc21b5b8a2341487d65b523e4/a325be3253f911beb131cb50326e0f7f/Screen%20Shot%202022-09-29%20at%2011.46.14%20AM.webp?eu=8d8c50b4e2cef8860b3ef5d66a26696de23b5fabfb5160823d61e6fd1af9988270a01904229073b878385c88dab545eb3590293511bcd2dec0e84ba0ec67a80856865dbc65e779045b7380baf0b60c5a779f4709f6d68b16f0292485a6f0e2345a4e427eec65bfc3b2fa733eb1d5276fadb1b9283ba5e210a2111e1ea17d23a132e1d79d6f1a8ec8d400eee2eca15f98c9e3250549d9a26477761a195ee92eb3a3e756713c7c470e639db03b9423c3e36273027b011b6cf56738d248fb652cc1ed94f019b67b7affaccf2f7182acdffdf35af27d&a=w%3D300%26h%3D480%26fm%3Dwebp%26q%3D75&cd=2022-10-12T12%3A26%3A53.166Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4EkEPm8QGo6KCPTCnn4Pg5/090ff5cd26b2fddeedcbddf9edf49e7a/2024-12-04_10-10-53.png?_a=DAJCwlWIZAAB" %}
 浏览器扩展版本
 {% endembed %}
 {% endtab %}
 
-{% tab title="桌面应用程序" %}
+{% tab title="桌面 App" %}
 在 Windows 上，选择**帮助** → **关于 Bitwarden**。在 macOS 上，选择 **Bitwarden** → **关于 Bitwarden**：
 
 {% embed url="https://bitwarden.com/_gatsby/image/339e0009c2297e447d679a237568d1b4/ad7506f4707c8d765b9747472e310983/Screen%20Shot%202022-09-29%20at%202.52.13%20PM.webp?eu=8e8c52efb59bfdd65969a8d66d70326be43604abf60430816c67b1a81ca19fd271f34d5022927eb72b60598dd7e816b860947c641be785df93bf4bf4ee60aa5c55d65fef67b62604522cc5adb0a055416bc24e09f58b9d01a06a7082b7e0b1261d571b7fae2be983baa06364b8d72d66beb1a47c6394fa79e7105f519d1f7ba420ffd09d3901f197ed4eb8b3adb75a89cab66e44159fb02b7c2208005faf73e8e3e805273174075c2ac8d827ad62f2d64741237d2c0d5cab664cb728910f6cdcecaaa95b8a7e7ee4ae9c627484c2a980bb1ca92f75ef9c21ac8b33290b0ea846b2df28b587315861e272a5d123b00307375d8215942629b6691be3059ae4458d29ff01464b2f80a24d&a=w%3D500%26h%3D482%26fm%3Dwebp%26q%3D75&cd=2022-10-12T12%3A26%3A53.189Z" %}
-桌面应用程序版本
+桌面 App 版本
 {% endembed %}
 {% endtab %}
 
-{% tab title="移动应用程序" %}
+{% tab title="移动 App" %}
 导航到 **⚙️设置**选项卡然后选择**关于**选项：
 
-{% embed url="https://bitwarden.com/_gatsby/image/a75173250dab1ed38165a14598c18b45/dddaa76341119efc8d6f69a7d208fc07/IMG_0527.webp?eu=d88b54b7e1cca9820e6af4813b73643ce13e54acab0064d73c67e4af47fe978527f31006249529e3256a59ddd6b144e860937e611ce9d4d893ef4cf4bf37a80151815ebf35b225045522ccaab1a307103cc3120ca5d1cb0ef63e26dcefebf33459131634b723e5d0bbfc767ae3c77963a9f5f36a26dcf52da40d5916954b37a665ed98837419f1cdfa76879a99c04b9bdf9d4742379caf5125110d1c1ef22bbea7b052753028445d669bf90ec737c4e034193327570900f26f6fd65cfc3f2eba998cce5ddc787cfff28966&a=w%3D222%26h%3D480%26fm%3Dwebp%26q%3D75&cd=2022-10-12T12%3A26%3A53.182Z" %}
-移动应用程序版本
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3zYXLGYrfsJZuGwlT7Vq3v/9db9b271b977e94468cdf04b8cab70f2/2025-01-22_10-19-54.png?_a=DAJCwlWIZAAB" %}
+移动 App 版本
 {% endembed %}
 {% endtab %}
 

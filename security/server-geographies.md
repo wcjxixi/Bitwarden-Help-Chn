@@ -8,11 +8,35 @@ Bitwarden 云可在全球范围内使用，数据存储在**美国**和**欧盟*
 
 ## 选择您的云服务器 <a href="#choose-your-cloud-server" id="choose-your-cloud-server"></a>
 
-要选择在哪个 Bitwarden 服务器地理位置上创建您的账户或组织，请选择登录或注册界面上的**服务器**下拉菜单，然后选择您所需的区域，例如在 Web 应用程序中：
+要选择在哪个 Bitwarden 服务器地理位置上创建您的账户或组织，请在登录或注册页面上选择**服务器**或**登录到：**&#x4E0B;拉菜单：
 
-{% embed url="https://bitwarden.com/_gatsby/image/e90a48f400781ce31b6f64c26bd5fb00/9dfed6e43dcce5bd724dfb6bf4af0789/Screen%20Shot%202023-08-14%20at%209.35.12%20AM.webp?eu=898805e0e0c0a9835a6bf1876c7a673db53d51a9a8593ed3696db2f91bfc9fd372fb100476907fb42e6f09dddae140bd33c27c304ae8d2dec0b418f2be67f90050d009bf35b52402557dcea6f4b1460662d90501fcd29f5de0732190b3e2f4334c145f35f62ffc9eebeb6b37f6d92e64e2ebe1297ac1ab1fe3605e05b15171a82ec4909e487abfbcf218b7f9bcaf0e9b98e72e02118df2312b254a1d5aed2deaa1b502796b7d480f349da95fd802c5f469493f4c3d075cb30838d057f87131cbf9faa532883e14e8b6ca346e87c1c1f19004ec7421&a=w%3D850%26h%3D505%26fm%3Dwebp%26q%3D75&cd=2023-08-16T11%3A53%3A15.653Z" %}
-区域选择器
+{% tabs %}
+{% tab title="网页 App" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/30W3B0aJy0dzO0pKTaBr7h/ed4fa669856dc3b13dbd80a1e0b237b5/2024-12-04_10-09-00.png?_a=DAJCwlWIZAAB" %}
+网页 App 上的区域选择器
 {% endembed %}
+{% endtab %}
+
+{% tab title="浏览器扩展" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4Kas8J6TjKZWMdaTo7pZMX/7d33be1c411bcf7eaf0816842beb824b/2025-02-18_14-09-00.png?_a=DAJCwlWIZAAB" %}
+浏览器扩展上的区域选择器
+{% endembed %}
+{% endtab %}
+
+{% tab title="移动 App" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/753jtQ6dg9u6Rln2A7TF4R/01b3d12d193d8f00432b925c29999d91/2025-02-18_14-18-33.png?_a=DAJCwlWIZAAB" %}
+移动 App 上的区域选择器
+{% endembed %}
+{% endtab %}
+
+{% tab title="桌面 App" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3FlU02971dqGGkp86WJJc5/68840c81afe53921ae85e7c0d86041ab/2025-02-18_14-11-00.png?_a=DAJCwlWIZAAB" %}
+桌面 App 上的区域选择器
+{% endembed %}
+{% endtab %}
+{% endtabs %}
+
+Bitwarden 数据区域是独立的，您的账户或组织只存在于其最初创建的区域上。
 
 ### 连接您的自托管服务器 <a href="#connect-your-self-hosted-server" id="connect-your-self-hosted-server"></a>
 
@@ -25,9 +49,13 @@ globalSettings__installation__apiUri=https://api.bitwarden.eu
 globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 ```
 
+{% hint style="info" %}
+`globalSettings__baseServiceUri__cloudRegion` 的值必须与[获取安装 ID 和密钥](https://bitwarden.com/host/)时选择的数据区域一致。
+{% endhint %}
+
 ## 迁移到另一个云 <a href="#migrate-to-another-cloud" id="migrate-to-another-cloud"></a>
 
-要从一个 Bitwarden 云服务器迁移到另一个，例如从美国服务器迁移到欧盟服务器：
+要从一个 Bitwarden 云服务器迁移到另一个，例如从 US 服务器迁移到 EU 服务器：
 
 1、[导出您的组织密码库](../import-export/export-vault-data.md#export-an-organization-vault)并指导所有组织成员[导出其个人密码库](../import-export/export-vault-data.md#export-a-personal-vault)。
 
@@ -35,32 +63,36 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 单独下载密码库项目的所有文件附件并记下它们属于哪些项目。
 {% endhint %}
 
-2、在所需区域创建新的 Bitwarden 账户并开始试用组织。当您准备好时，Bitwarden 支持会将您的订阅迁移到这个新的组织。
+2、在所需区域创建新的 Bitwarden 账户并开始试用组织。当您准备好时，Bitwarden 支持会将您的订阅迁移到新的区域（见**步骤 4**）。
 
 3、设置您的新组织，配置企业策略、SSO 登录，构建群组 - 集合关系以及使用目录连接器或 SCIM 邀请用户等。如需帮助，请参阅[概念验证清单](../business-resources/proof-of-concept-project-checklist.md)。
 
-4、导入在**步骤 1** 中获得的组织密码库数据，然后指导组织成员也导入其个人密码库。
+4、[请联系 Bitwarden 支持](https://bitwarden.com/contact/)，让您的新组织停止试用并在新的区域恢复订阅。
 
-{% hint style="info" %}
-将**步骤 1** 中获得的文件附件手动上传回与其相关联的密码库项目。
-{% endhint %}
+5、导入在**步骤 1** 中获得的组织密码库数据，然后指导组织成员也导入其个人密码库。
 
-5、[请联系 Bitwarden 支持](https://bitwarden.com/contact/)，让您的新组织停止试用并在新的区域恢复订阅。
+### 迁移 FAQ <a href="#migration-faqs" id="migration-faqs"></a>
 
-### 迁移常见问题 <a href="#migration-faqs" id="migration-faqs"></a>
-
-#### 问：我需要迁移吗？
+#### 问：我需要迁移吗？ <a href="#q-do-i-need-to-migrate" id="q-do-i-need-to-migrate"></a>
 
 **答**：不需要迁移区域。区域选择器允许组织指定密码库数据的地理位置。不同区域的特性和功能是相同的。
 
-#### 问：有迁移流程吗？
+#### 问：有迁移流程吗？ <a href="#q-is-there-a-process-for-migrating" id="q-is-there-a-process-for-migrating"></a>
 
-**答**：Bitwarden 区域是不同的云环境。与零知识加密相结合，Bitwarden 无法为客户迁移账户。组织可以使用脚本来帮助完成迁移。
+**答**：Bitwarden 区域是不同的云环境。Bitwarden 无法为客户将账户从一个区域迁移到另一个区域。企业可使用脚本来帮助迁移。您可以通过[联系我们](https://bitwarden.com/contact/)将订阅从一个区域转移到另一个区域。
 
-#### 问：迁移脚本有什么作用？
+#### 问：在某个服务器位置创建的账户能否加入另一个服务器位置的组织？ <a href="#q-can-an-account-created-in-one-server-geography-join-an-organization-in-another-server-geography" id="q-can-an-account-created-in-one-server-geography-join-an-organization-in-another-server-geography"></a>
 
-**答**：该脚本与 Bitwarden CLI 配合使用，将数据从一个安装移动到另一个安装。[本文](../miscellaneous/migration-script.md)中提供了说明。此脚本迁移所有组织密码库数据，包括附件、成员角色（不包括自定义角色）以及分配给成员和群组的集合权限。如果您不使用目录集成进行自动配置，该脚本还会自动在新组织中重新创建您的群组。请注意，这不包括单个用户密码库的迁移。
+**答**：不能，密码库数据和用户数据在服务器地理位置之间是完全独立的。如果用户与组织位于不同的服务器，则用户无法访问该组织或与之交互。 这种分离包括已迁移且不再与组织成员位于同一云服务器上的组织。
 
-#### 问：手动迁移是什么样的？
+#### 问：迁移脚本有什么作用？ <a href="#q-what-does-the-migration-script-do" id="q-what-does-the-migration-script-do"></a>
 
-**答**：完整的手动迁移涉及在首选区域创建新账户并开始新组织创建过程。配置新组织后，重新邀请用户，然后从旧组织导出密码库数据并导入到新组织中。用户需要手动导出/导入其个人密码库。
+**答**：该脚本与 Bitwarden CLI 配合使用，可以将数据从一个安装移动到另一个安装。[本文](../miscellaneous/migration-script.md)中提供了相关说明。该脚本迁移所有组织密码库数据，包括附件、成员角色（不包括自定义角色）以及分配给成员和群组的集合权限。如果您不使用目录集成进行自动配置，该脚本还会自动在新组织中重新创建您的群组。请注意，这不包括单个用户密码库的迁移。
+
+#### 问：手动迁移是什么样的？ <a href="#q-what-does-a-manual-migration-look-like" id="q-what-does-a-manual-migration-look-like"></a>
+
+**答**：完整的手动迁移涉及在首选区域创建新账户，并开始新组织的创建过程。新组织配置完成后，重新邀请用户，然后从旧组织导出密码库数据并导入到新组织中。用户需要手动导出/导入其个人密码库。
+
+#### 问：如果我们迁移了企业计划，我已赞助家庭计划会发生什么情况？ <a href="#q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan" id="q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan"></a>
+
+答：企业员工的免费家庭计划必须与赞助计划位于同一区域。如果您的企业计划迁移到其他地区，您的家庭计划赞助将终止。您需要迁移家庭计划，然后按照[兑换家庭赞助](../plans-and-pricing/password-manager/redeem-families-sponsorship.md)文章中的步骤赞助新计划。

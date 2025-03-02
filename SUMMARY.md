@@ -78,7 +78,7 @@
       * [iOS 上的自动填充登录](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)
       * [自动填充支付卡和身份](password-manager/auto-fill/auto-fill-basics/auto-fill-cards-and-identities.md)
       * [自动填充自定义字段](<password-manager/auto-fill/auto-fill-basics/Auto-fill Custom Fields.md>)
-    * [URI 的使用](auto-fill/using-uris.md)
+    * [使用 URI](auto-fill/using-uris.md)
     * [屏蔽自动填充](password-manager/auto-fill/auto-fill-blocked-uris.md)
     * [基本验证提示](auto-fill/basic-auth-prompts.md)
     * [键盘快捷键](password-manager/auto-fill/keyboard-shortcuts.md)

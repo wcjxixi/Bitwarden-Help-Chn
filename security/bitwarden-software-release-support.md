@@ -25,7 +25,7 @@ Bitwarden Cloud 由 Bitwarden 直接运营和维护。我们会定期更新 Bitw
 * 在给定时间内，Bitwarden 会维护当前的主要服务器版本和前两个主要服务器版本。
 * 每个服务器版本都与同一主要客户端版本、前两个主要客户端版本以及后两个主要客户端版本兼容。
 
-{% hint style="info" %}
+{% hint style="success" %}
 我们鼓励自托管用户保持其服务器为最新，以获得最新的 Bitwarden 功能和支持，并与最新发布的客户端保持兼容。
 {% endhint %}
 
@@ -50,6 +50,6 @@ Bitwarden API 的发布周期和持续时间与 Bitwarden 服务器保持一致�
 
 对于安装或使用 Bitwarden 客户端应用程序的所有底层平台，例如桌面或移动操作系统和网络浏览器版本，Bitwarden 致力于支持供应商当前支持的版本。
 
-### 自托管 Bitwarden 服务器的平台 <a href="#platforms-for-self-hosted-bitwarden-servers" id="platforms-for-self-hosted-bitwarden-servers"></a>
+### 自托管 Bitwarden 服务器平台 <a href="#platforms-for-self-hosted-bitwarden-servers" id="platforms-for-self-hosted-bitwarden-servers"></a>
 
 除非系统要求中另有规定，自托管安装应维护在最新的操作系统和计算平台上，并得到其供应商的积极支持。

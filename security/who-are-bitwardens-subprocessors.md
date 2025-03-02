@@ -10,21 +10,24 @@
 | ------------------------------ | ---------- | ------- |
 | Microsoft Inc.                 | 基础设施托管     | USA, EU |
 | Amazon Web Services, Inc.      | 基础设施托管     | USA     |
-| Cloudflare, Inc.               | 基础设施托管     | USA     |
 | Fastly, Inc.                   | 基础设施托管     | USA     |
-| Netacea Limited                | 基础设施托管     | UK      |
 | Google, LLC                    | 交流工具       | USA     |
 | Slack Technologies, LLC        | 协作工具       | USA     |
 | SendGrid, Inc. (Twilio)        | 电子邮件服务提供商  | USA     |
 | Freshworks Inc.                | 客户关系管理     | USA     |
-| ChartMogul CMTDE GmbH & Co. KG | 销售分析       | 德国      |
+| ChartMogul CMTDE GmbH & Co. KG | 销售分析       | Germany |
 | Stripe, Inc.                   | 款项处理       | USA     |
 | Paypal, Inc. 包括布伦特里分部          | 款项处理，支付网关  | USA     |
 | BitPay, Inc.                   | 款项处理       | USA     |
-| DataDog, Inc.                  | 基础设施监控     | USA     |
+| DataDog, Inc.                  | 基础设施监控     | USA, EU |
 | Hubspot, Inc.                  | 交流工具       | USA     |
 | Outreach.io                    | 业务开发/交流工具  | USA     |
 | APIHub, Inc.                   | 业务开发 (B2B) | USA     |
+| 6Sense Insights, Inc.          | 基于账户的营销    | USA     |
+| LinkedIn Corporation           | 业务开发/交流工具  | USA     |
+| Zapier, Inc.                   | 工作流程自动化    | USA     |
+| QuotaPath Inc.                 | 销售分析       | USA     |
+| Lusha Systems Inc.             | 销售情报       | USA     |
 
 ## 请求有关 Bitwarden 分包商的通知 <a href="#request-notifications-about-bitwarden-subprocessors" id="request-notifications-about-bitwarden-subprocessors"></a>
 
