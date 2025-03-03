@@ -17,7 +17,7 @@
 {% endhint %}
 
 {% tabs %}
-{% tab title="免费" %}
+{% tab title="免费版" %}
 如果您使用的是免费组织，则可以免费使用 Secrets Manager 与其他用户共享[机密](../../secrets-manager/your-secrets/secrets.md)，或升级到付费计划以解锁更多功能。要将 Secrets Manager 添加到您的免费​​组织：
 
 1、打开您组织的**计费** → **订阅**视图。
@@ -35,13 +35,13 @@
 3、选择**保存**按钮以激活 Secrets Manager。
 {% endtab %}
 
-{% tab title="家庭" %}
+{% tab title="家庭版" %}
 自正式发布以来，家庭组织将不支持 Secrets Manager。如果您使用家庭组织进行的 Beta 版，则需要升级到[团队或企业组织](secrets-manager-plans.md)才能继续使用 Secrets Manager。
 
 如需升级，请使用 **Upgrade/Change Plan** 主题[联系我们](https://bitwarden.com/contact/)。
 {% endtab %}
 
-{% tab title="团队" %}
+{% tab title="团队版" %}
 如果您使用的是团队组织，要将 Secrets Manager 添加到您的现有计划中：
 
 1、打开您组织的**计费** → **订阅**视图。
@@ -59,7 +59,7 @@
 5、选择**保存**按钮。
 {% endtab %}
 
-{% tab title="企业" %}
+{% tab title="企业版" %}
 如果您使用的是企业组织，要将 Secrets Manager 添加到您的现有计划中：
 
 1、打开您组织的**计费** → **订阅**视图。

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/bitwarden-resellers/)
 {% endhint %}
 
-在 Bitwarden，我们热爱我们的合作伙伴！如果你是一个想开始为您的客户提供 Bitwarden 组织的经销商，请不要再犹豫了：
+在 Bitwarden，我们热爱我们的合作伙伴！如果你是一个想开始为您的客户提供 Bitwarden 组织的经销商，请不要再犹豫了。
 
 ## 成为合作合伙 <a href="#become-a-partner" id="become-a-partner"></a>
 
