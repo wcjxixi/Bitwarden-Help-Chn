@@ -8,7 +8,7 @@
 
 [企业组织](../../organizations/organizations.md#types-of-organizations)的成员可以获得一个**免费的家庭组织**赞助，该赞助可以应用于一个新的或现有的家庭组织，并可直接从网页密码库兑换。
 
-{% hint style="info" %}
+{% hint style="success" %}
 企业组织可通过[策略](../../organizations/enterprise-policies.md)关闭该功能。
 {% endhint %}
 
@@ -28,7 +28,7 @@
 
 要兑换您的赞助：
 
-1、登录到隶属于赞助组织的 Bitwarden 账户。
+1、以附属于赞助组织的账户登录 Bitwarden 网页 App。
 
 2、使用导航，选择**设置** → **免费 Bitwarden 家庭**：
 
@@ -51,7 +51,7 @@
 5、如果有与提供的**个人电子邮箱**相关联的 Bitwarden 账户，请登录。如果没有与个人电子邮箱关联的账户，您将被引导至创建账户界面。
 
 {% hint style="success" %}
-必须始终从 `https://vault.bitwarden.com` 访问受赞助的家庭组织。您的工作账户可能使用不同的 URL，例如 `https://company.bitwarden.com`，因此您需要确保使用正确的 URL 登录到正确的账户。
+必须始终从 `https://vault.bitwarden.com` 或  `https://vault.bitwarden.eu` 访问受赞助的家庭组织。您的工作账户可能使用不同的 URL，例如 `https://company.bitwarden.com`，因此您需要确保使用正确的 URL 登录到正确的账户。
 
 **提示**：Bitwarden 移动端和桌面端 App 可以使用不同的 URL 在[账户间快速切换](../../your-vault/account-switching.md)。
 {% endhint %}
@@ -60,10 +60,10 @@
 
 {% tabs %}
 {% tab title="新的家庭组织" %}
-从下拉列表中选择**新建家庭组织**：
+从下拉列表中选择**新增家庭组织**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3NnhjGPkYir4aMCLzvmJf1/db51c17a40db8d7a399ed49ec65d98f5/2024-12-04_10-24-32.png?_a=DAJCwlWIZAAB" %}
-新建免费 Bitwarden 家庭
+新增免费 Bitwarden 家庭
 {% endembed %}
 
 填写以下信息：
@@ -87,11 +87,7 @@
 {% endtab %}
 {% endtabs %}
 
-{% hint style="success" %}
-**恭喜！**&#x5982;果您刚开始使用 Bitwarden 家庭组织，我们建议您查看[这篇文章](../../admin-console/organizations-quick-start.md#get-to-know-your-organization)以了解其基础知识。
-{% endhint %}
-
-## 常见问题 <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
+## FAQ <a href="#can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise" id="can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise"></a>
 
 ### 问：我可以使用属于赞助企业成员的账户进行兑换吗？ <a href="#can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise" id="can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise"></a>
 
@@ -103,13 +99,13 @@
 
 ### 问：我可以添加额外的存储空间吗？ <a href="#can-i-add-additional-storage" id="can-i-add-additional-storage"></a>
 
-**答：**&#x53EF;以。但是您的赞助中只包含 1 GB。可以随时添加更多存储空间，这样做会通过您已存档的付款方式收取费用。
+**答：**&#x53EF;以。您的赞助中只包含 1 GB。可以随时添加更多存储空间，这样做会通过您已存档的付款方式收取费用。
 
 ### 问：如果我离开赞助我的组织会怎样？ <a href="#what-happens-if-i-leave-the-organization-sponsoring-me" id="what-happens-if-i-leave-the-organization-sponsoring-me"></a>
 
 **答：**&#x5982;果您离开或从赞助组织中被移除，或手动结束您的赞助，在下一个计费周期将通过您已存档的付款方式收取费用。
 
-### 问：如果我的电子邮件中收到了续订提醒，我该怎么办？ <a href="#q-what-do-i-do-if-i-received-a-renewal-reminder-in-my-email" id="q-what-do-i-do-if-i-received-a-renewal-reminder-in-my-email"></a>
+### 问：如果我的电子邮件中收到了续订提醒，我应该做什么？ <a href="#q-what-do-i-do-if-i-received-a-renewal-reminder-in-my-email" id="q-what-do-i-do-if-i-received-a-renewal-reminder-in-my-email"></a>
 
 答：如果您仍然是赞助您的免费家庭组织的企业组织（通常是雇主）的成员，您可以放心地忽略这封邮件。如果您不再是该企业组织的成员，请打开您的家庭组织管理控制台，导航至**计费** → **付款方式**，检查付款方式是否有效，以确保您的组织能够顺利续订。
 
@@ -121,7 +117,7 @@
 
 ### 问：自托管企业组织可以发出赞助吗？ <a href="#q-can-self-hosted-enterprise-organizations-issue-sponsorships" id="q-can-self-hosted-enterprise-organizations-issue-sponsorships"></a>
 
-**答：**&#x53EF;以。你可以在[这里](../../self-hosting/self-hosting-families-sponsorships.md)找到简短设置过程的说明。请提醒您的用户，他们的赞助家庭组织将通过我们的公共云 (`https://vault.bitwarden.com`) 提供，而不是通过您的自托管服务器提供。
+**答：**&#x53EF;以。您可以在[这里](../../self-hosting/self-hosting-families-sponsorships.md)找到简短设置过程的说明。请提醒您的用户，他们的赞助家庭组织将通过我们的公共云 (`https://vault.bitwarden.com`) 提供，而不是通过您的自托管服务器提供。
 
 ### 问：受赞助的家庭组织可以放在自托管服务器上吗？ <a href="#q-can-a-sponsored-families-organization-be-on-a-self-hosted-server" id="q-can-a-sponsored-families-organization-be-on-a-self-hosted-server"></a>
 

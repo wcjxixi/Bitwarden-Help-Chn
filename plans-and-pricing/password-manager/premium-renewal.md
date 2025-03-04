@@ -4,13 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/premium-renewal/)
 {% endhint %}
 
-高级个人订阅按年自动续费。您可以在您的网页版 App 中导航到**账户设置** → **订阅**，来查看您的续费日期。
+高级个人订阅按年自动续费。您可以在您的网页版 App 中导航到**设置** → **订阅**，来查看您的续费日期：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Ru9TSLguhRNYtLe2TLwXk/d22aff277b0ac14120199d766f0ef564/Screenshot_2024-02-27_at_3.07.48_PM.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Ru9TSLguhRNYtLe2TLwXk/d601c1c639cf3eccc0860793aae3299e/2024-12-04_10-15-22.png?_a=DAJCwlWIZAAB" %}
 订阅页面
 {% endembed %}
 
-当您的续费日期临近时，Bitwarden 建议您导航到**账户设置** → **订阅** → **付款方式**来验证付款方式。有关更新您的付款方式的帮助，请参阅[更新您的计费信息](../update-your-billing-information.md)。
+当您的续费日期临近时，Bitwarden 建议您导航到**设置** → **订阅** → **付款方式**来验证付款方式。有关更新您的付款方式的帮助，请参阅[更新您的计费信息](../update-your-billing-information.md)。
 
 {% hint style="danger" %}
 如果我们无法处理您的付款方式，或者您取消了订阅，您的账户将恢复为[免费个人版](about-bitwarden-plans.md#free-individual)。在您重新启动您的高级订阅之前，将导致以下情况：

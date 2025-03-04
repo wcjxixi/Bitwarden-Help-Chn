@@ -40,7 +40,7 @@
 7、在**概要**部分，选择您希望**按年**或**按月**计费。
 
 {% hint style="success" %}
-如果要使用 [Secrets Manager](../secrets-manager/secrets-manager-overview.md)，请完成以下步骤以将其添加到您的计划中：
+如果您想使用 [Secrets Manager](../secrets-manager/secrets-manager-overview.md)，请完成以下步骤以将其添加到您的计划中：
 
 1. 在**更多来自 Bitwarden 的产品**部分，选中**订阅机密管理器**复选框。
 2. 在**用户席位**字段中，指定要为 Secrets Manager 购买的席位数量。该数字必须小于或等于密码管理器订阅的席位数。
