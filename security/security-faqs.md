@@ -1,10 +1,10 @@
-# 安全常见问题
+# 安全 FAQ
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/security-faqs/)
 {% endhint %}
 
-本文包含有关**安全**的常见问题（FAQ）。
+本文包含有关安全的常见问题解答（FAQ）。
 
 ### 问：为什么我应该在密码方面信任 Bitwarden？ <a href="#q-why-should-i-trust-bitwarden-with-my-passwords" id="q-why-should-i-trust-bitwarden-with-my-passwords"></a>
 
@@ -15,7 +15,7 @@
 3. Bitwarden **不存储您的密码**。Bitwarden 存储的是您的密码的加密版本，只有您才能解锁。您的敏感信息在被发送到我们的云服务器之前，会在您的个人设备上进行本地加密。
 4. **Bitwarden 的声誉很好**。Bitwarden 被数百万个人和企业使用。如果我们做任何有问题或有风险的事情，我们就会被淘汰！
 
-还是不相信我们吗？不必这样。开源是美丽的。您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由你自己控制。在[这里](../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)了解更多。
+还是不相信我们吗？不必这样。开源是美丽的。您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由您自己掌控。在[这里](../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)了解更多。
 
 ### 问：如果 Bitwarden 被黑会怎么样？ <a href="#q-what-happens-if-bitwarden-gets-hacked" id="q-what-happens-if-bitwarden-gets-hacked"></a>
 
@@ -31,15 +31,15 @@
 
 ### 问：我的 Bitwarden 主密码是否存储在本地？ <a href="#q-is-my-bitwarden-master-password-stored-locally" id="q-is-my-bitwarden-master-password-stored-locally"></a>
 
-**答：**&#x4E0D;会。
+**答：**&#x6CA1;有。
 
-我们不会将主密码保存在本地或内存中。仅当应用程序解锁后，您的加密密钥（从主密码派生而来）将会保存在内存中，这用于来解密您密码库中的数据。当密码库被锁定时，这些数据会从内存中清除。
+我们不会将主密码保存在本地或内存中。仅当 App 解锁后，您的加密密钥（从主密码派生而来）将会保存在内存中，这用于来解密您密码库中的数据。当密码库被锁定时，这些数据会从内存中清除。
 
 我们还会在锁屏 10 秒后重新加载应用程序的渲染进程，以确保任何尚未被垃圾收集的托管内存地址也被清除。我们尽最大努力确保任何可能在内存中为应用程序运作的数据只在您需要的时间内保存在内存中，并且每当应用程序被锁定时，内存都会被清理。当应用程序处于锁定状态时，我们认为应用程序的加密数据是完全安全的。
 
 ### 问：如果有无法识别的新设备登录 Bitwarden 该怎么办？ <a href="#q-what-do-i-do-if-i-dont-recognize-a-new-device-logging-into-bitwarden" id="q-what-do-i-do-if-i-dont-recognize-a-new-device-logging-into-bitwarden"></a>
 
-**答：**&#x5982;果新设备的 IP 地址与任何已知的 IP 地址（家庭网络、工作网络、移动网络等）不匹配，请更改您的主密码，并确保您的账户启用了两步登录。您还应该从网络密码库的**设置**页面取消会话授权，以强制在所有设备上注销。如果您认为您的密码库项目可能受到威胁，您应该更改您的密码。
+**答：**&#x5982;果新设备的 IP 地址与任何已知的 IP 地址（家庭网络、工作网络、移动网络等）不匹配，请更改您的主密码，并确保您的账户启用了两步登录。您还应该从网络密码库的**账户设置**页面取消会话授权，以强制在所有设备上注销。如果您认为您的密码库项目可能受到威胁，您应该更改您的密码。
 
 ### 问：Bitwarden 符合哪些合规？拥有哪些认证？ <a href="#q-what-is-bitwarden-compliant-with-what-certifications-do-you-have" id="q-what-is-bitwarden-compliant-with-what-certifications-do-you-have"></a>
 
@@ -98,17 +98,67 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 * 目录连接器[同步缓存](../directory-connector/clear-sync-cache.md)将在 30 天后被清除。
 * 组织邀请将在 5 天后过期。自托管客户可以[使用环境变量](../self-hosting/configure-environment-variables.md#optional-variables)对其进行配置。
 
-### 问：如何验证 Bitwarden 应用程序的校验和？ <a href="#q-how-do-i-validate-the-checksum-of-a-bitwarden-app" id="q-how-do-i-validate-the-checksum-of-a-bitwarden-app"></a>
+### 问：如何验证 Bitwarden App 的校验和？ <a href="#q-how-do-i-validate-the-checksum-of-a-bitwarden-app" id="q-how-do-i-validate-the-checksum-of-a-bitwarden-app"></a>
 
-**答：**&#x9996;先，获取相应版本的 `latest` 版 yaml 文件（例如 `latest-linux.yml`）和相应的发布包（例如 `Bitwarden-1.33.0-amd64.deb`）。为已下载的发布包生成 SHA512 哈希值（例如 `sha512sum Bitwarden-1.33.0-amd64.deb`）然后将生成的 Hex 值转换为 Base64。将计算出的 Base64 值与 yaml 文件中的 `sha512:` 值进行比较以进行验证。
+**答：**&#x76EE;前可对 Password Manager 桌面 App、Android 移动 App 和 CLI 客户端进行校验和验证：
+
+{% tabs %}
+{% tab title="桌面端" %}
+1、从 [https://github.com/bitwarden/clients/releases/](https://github.com/bitwarden/clients/releases/) 下载最新版本的桌面 App 软件包（例如 `Bitwarden-Installer-2024.8.2.exe`）。
+
+2、从同一页面下载该版本的 `sha256-checksums.txt` 文件，然后用文本编辑器打开它。
+
+3、使用 `CertUtil` 或 `sha256sum` 命令生成已下载的软件包的 SHA-256 哈希值，例如：
+
+```
+sha256sum Bitwarden-2024.8.2-universal.dmg
+```
+
+该命令将在控制台打印哈希值。
+
+4、将打印的哈希值与已下载的软件包的 `sha256-checksums.txt` 中列出的值进行比较。
+{% endtab %}
+
+{% tab title="Android" %}
+1、从 [https://github.com/bitwarden/android/releases/](https://github.com/bitwarden/android/releases/) 下载最新版本的 Android App 软件包（例如 `com.x8bit.bitwarden.apk`）。
+
+2、从同一页面下载相应的 `{package}-sha256.txt` 文件，然后用文本编辑器打开它。
+
+3、使用 `CertUtil` 或 `sha256sum` 命令生成已下载的软件包的 SHA-256 哈希值，例如：
+
+```
+sha256sum com.x8bit.bitwarden.apk
+```
+
+该命令将在控制台打印哈希值。
+
+4、将打印的哈希值与已下载的软件包的 `{package}-sha256.txt` 中列出的值进行比较。
+{% endtab %}
+
+{% tab title="CLI" %}
+1、从 [https://github.com/bitwarden/clients/releases/](https://github.com/bitwarden/clients/releases/) 下载最新版本的 CLI 软件包（例如 `bw-linux-2024.8.2.zip`）。
+
+2、从同一页面下载相应的 SHA-256 `.txt` 文件，此例中为 `bw-linux-sha256-2024.8.2.txt`，然后用文本编辑器打开它。
+
+3、使用 `CertUtil` 或 `sha256sum` 命令生成已下载的 `.zip` 文件的 SHA-256 哈希值，例如：
+
+```
+sha256sum bw-linux-2024.8.2.zip
+```
+
+该命令将在控制台打印哈希值。
+
+4、将打印的哈希值与已下载的软件包的 `.txt` 文件中列出的值进行比较。
+{% endtab %}
+{% endtabs %}
 
 ### 问：如何向 Bitwarden 进行安全披露或报告？ <a href="#q-how-do-i-make-a-security-disclosure-or-report-to-bitwarden" id="q-how-do-i-make-a-security-disclosure-or-report-to-bitwarden"></a>
 
 **答：**&#x42;itwarden 认为，与全球安全研究人员合作对于确保用户安全至关重要。如果您认为在我们的产品或服务中发现了安全问题，我们鼓励您通过我们的 [HackerOne 计划](https://hackerone.com/bitwarden/)提交报告。我们欢迎与您合作，尽快解决问题。[详细了解我们的披露政策](https://github.com/bitwarden/server/security/policy)。
 
-### 问：为什么我的网络密码库会转到 web-vault.pages.dev？ <a href="#q-why-is-my-web-vault-going-to-web-vault.pages.dev" id="q-why-is-my-web-vault-going-to-web-vault.pages.dev"></a>
+### ~~问：为什么我的网络密码库会转到 web-vault.pages.dev？~~ <a href="#q-why-is-my-web-vault-going-to-web-vault.pages.dev" id="q-why-is-my-web-vault-going-to-web-vault.pages.dev"></a>
 
-**答：**`web-vault.pages.dev` 是 Bitwarden 独有的子域名，由 Cloudflare Pages 使用。当 Cloudflare 遇到 DNS 问题时，此 URL 可能会向用户显示。在输入用户名和主密码之前，您应该通过检查 URL 来始终警惕网络钓鱼尝试，但 `web-vault.pages.dev` 应被视为可以安全登录。
+~~**答：**`web-vault.pages.dev` 是 Bitwarden 独有的子域名，由 Cloudflare Pages 使用。当 Cloudflare 遇到 DNS 问题时，此 URL 可能会向用户显示。在输入用户名和主密码之前，您应该通过检查 URL 来始终警惕网络钓鱼尝试，但 `web-vault.pages.dev` 应被视为可以安全登录。~~
 
 ### 问：如何保护我的 Bitwarden 账户免受暴力攻击？ <a href="#q-how-can-i-protect-my-bitwarden-account-from-brute-force-attacks" id="q-how-can-i-protect-my-bitwarden-account-from-brute-force-attacks"></a>
 
@@ -118,20 +168,20 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 * 在所有 Bitwarden 账户上设置 [2FA](../two-step-login/field-guide-for-two-step-login.md) 以添加额外的安全层。
 * 在未知设备尝试登录 9 次失败后，Bitwarden 将要求 CAPTCHA 验证。
 
-## 关于特定客户端应用程序的问题 <a href="#questions-regarding-specific-client-apps" id="questions-regarding-specific-client-apps"></a>
+## 关于特定客户端 App 的问题 <a href="#questions-regarding-specific-client-apps" id="questions-regarding-specific-client-apps"></a>
 
 ### 问：Bitwarden 使用客户端应用程序的哪些数据？
 
-**答：**&#x42;itwarden 使用管理数据为您提供 Bitwarden 服务。如某些**应用程序隐私**报告所示，用户在创建账户时提供以下信息：
+**答：**&#x42;itwarden 使用管理数据为您提供 Bitwarden 服务。如某些**App 隐私**报告所示，用户在创建账户时提供以下信息：
 
-* 您的名称（_可选_）
-* 您的电子邮件地址（用于电子邮件验证、账户管理以及您与 Bitwarden 之间的交流）
+* 您的名称（可选）
+* 您的电子邮件地址（用于电子邮箱验证、账户管理以及您与 Bitwarden 之间的交流沟通）
 
-此外，**Bitwarden 生成的**特定于设备的 GUID（有时称&#x4E3A;_&#x8BBE;备 ID_）将分配给您的设备。当新设备登录到您的密码库时，此 GUID 用于提醒您。
+此外，**Bitwarden 生成的**特定于设备的 GUID（有时称为**设备 ID**）将分配给您的设备。当新设备登录到您的密码库时，此 GUID 用于提醒您。
 
 ### 问：可以解释一下电子应用程序安全吗？ <a href="#q-can-you-explain-electron-app-security" id="q-can-you-explain-electron-app-security"></a>
 
-**答：**&#x4E00;篇经常被分享的文章表明，电子应用存在缺陷，然而所提到的攻击需要用户拥有一台已被入侵的机器，这当然会让恶意攻击者入侵该机器上的数据。只要你没有理由相信你所使用的设备已经被入侵，你的数据是安全的。
+**答：**&#x4E00;篇经常被分享的文章表明，电子应用程序存在缺陷，然而所提到的攻击需要用户拥有一台已被入侵的机器，这当然会让恶意攻击者入侵该机器上的数据。只要您没有理由相信您所使用的设备已经被入侵，您的数据就是安全的。
 
 ### 问：Bitwarden 如何保护浏览器扩展？ <a href="#q-how-does-bitwarden-secure-browser-extensions" id="q-how-does-bitwarden-secure-browser-extensions"></a>
 
@@ -139,24 +189,26 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 ### 问：浏览器扩展要求哪些权限？ <a href="#q-what-is-the-browser-extension-asking-permission-for" id="q-what-is-the-browser-extension-asking-permission-for"></a>
 
-**答：**&#x5728;安装时，浏览器扩展程序会要求访问剪贴板的权限，以便使用预定的剪贴板清除功能（在**选项**菜单中设置）。
+**答：**&#x5B89;装时，浏览器扩展会请求访问剪贴板，以便使用计划的剪贴板清除功能（在**选项**菜单中访问）。
 
-启用此**可选功能**后，剪贴板清除功能将在一个可配置的时间间隔内清除  Bitwarden 产生或填充的任何条目。通过访问剪贴板，将允许 Bitwarden 不清除与 Bitwarden 应用程序无关的剪贴板项目，方法是再次从你的密码库中检测最后复制的项目。请注意，这个功能**默认是关闭的**。
+启用该**可选功能**后，剪贴板清除功能将在可配置的时间间隔内清除任何由 Bitwarden 创建或填充的条目。访问剪贴板，Bitwarden 将能够通过检查最后复制的项目与您密码库中最后复制的项目是否匹配，从而在不移除与 Bitwarden 应用程序无关的剪贴板项目的情况下执行此操作。请注意，该功能**默认是关闭**的。
 
-### 问：移动应用程序要求哪些应用程序权限？ <a href="#q-what-app-permissions-are-asked-for-by-the-mobile-app" id="q-what-app-permissions-are-asked-for-by-the-mobile-app"></a>
+### 问：移动 App 要求哪些 App 权限？ <a href="#q-what-app-permissions-are-asked-for-by-the-mobile-app" id="q-what-app-permissions-are-asked-for-by-the-mobile-app"></a>
 
-**答：**&#x5F53;您使用这些应用程序时，Bitwarden Android 和 iOS 应用程序可能会要求以下权限：
+**答：**&#x5F53;您使用这些 App 时，Bitwarden Android 和 iOS App 可能会要求以下权限：
 
 | 权限                          | 理由                                     |
 | --------------------------- | -------------------------------------- |
 | 允许 Bitwarden 拍照和录制视频吗？      | 用于两步登录或 Bitwarden Authenticator 扫描二维码。 |
 | 允许 Bitwarden 访问您设备上的照片和媒体吗？ | 用于从设备上保存的文件创建附件或 Send。                 |
 
+Bitwarden 所需的其他基本权限已[在 Google Play 商店中列出](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden)。
+
 ### 问：为何浏览器扩展需要 `nativeMessaging` 权限？ <a href="#q-why-does-the-browser-extension-need-nativemessaging-permission" id="q-why-does-the-browser-extension-need-nativemessaging-permission"></a>
 
 **答：**&#x31;.48.0 版本的浏览器扩展启用了[浏览扩展的生物识别解锁](../your-vault/unlocking-with-biometrics.md#browser-extensions)。
 
-此权限，也就是 `nativeMessaging`，可以安全地接受它，它允许浏览器扩展与 Bitwarden 桌面应用程序进行通信，这是启用生物识别解锁所必需的。
+此权限，也就是 `nativeMessaging`，可以安全地接受它，它允许浏览器扩展与 Bitwarden 桌面 App 进行通信，这是启用生物识别解锁所必需的。
 
 请注意，当您的浏览器更新到此版本时，您可能会被要求接受一个名为「与本机应用程序通信」（在基于 Chromium 的浏览器中）或 「与 Firefox 以外的程序交换消息」的新权限。如果您不接受此权限，该扩展将保持禁用状态。
 
@@ -170,4 +222,8 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 ### 问：Bitwarden 有便携版应用程序吗？ <a href="#q-does-bitwarden-have-a-portable-application" id="q-does-bitwarden-have-a-portable-application"></a>
 
-**答：**&#x6709;的！ Bitwarden 桌面应用程序在 Windws 中有提供便携版 `.exe`，其可在[此处](https://bitwarden.com/download)下载。便携版应用程序非常适合**始终离线**的环境或不需要应用程序自动更新的场景。便携版应用程序**不会自行更新**。
+**答：**&#x6709;的！ Bitwarden 桌面 App 在 Windws 中有提供便携版 `.exe`，其可在[此处](https://bitwarden.com/download)下载。便携版 App 非常适合**始终离线**的环境或不需要 App 自动更新的场景。便携版 App **不会自行更新**。
+
+### 问：网站访问选项会干扰 Bitwarden 浏览器扩展吗？ <a href="#q-will-site-access-options-interfere-with-the-bitwarden-browser-extension" id="q-will-site-access-options-interfere-with-the-bitwarden-browser-extension"></a>
+
+**答：**&#x4E3A;了使 Bitwarden 浏览器扩展正常工作，必须将其网站访问权限设置为**在所有网站上**或**在特定网站上**并将 Bitwarden 服务器添加到列表中。将网站访问权限设置为**点击时**会限制 Bitwarden 从 Bitwarden 服务器获取数据的能力，而这正是保存或更新凭据所必需的基本功能。

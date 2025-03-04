@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="success" %}
-您是否希望使用指纹读取器解锁您的密码库？如果是这样，请查看[这篇文章](../your-vault/unlocking-with-biometrics.md)。
+您是否希望使用指纹阅读器解锁您的密码库？如果是这样，请查看[这篇文章](../your-vault/unlocking-with-biometrics.md)。
 {% endhint %}
 
 每个 Bitwarden 用户账户都有一个与之关联的「指纹短语」。您账户的指纹短语永远不会改变，它由五个以特定顺序出现的随机英语单词组成。例如：
@@ -16,21 +16,21 @@ alligator-transfer-laziness-macaroni-blue
 
 ## 我的指纹短语是用来做什么的？ <a href="#what-is-my-fingerprint-phrase-used-for" id="what-is-my-fingerprint-phrase-used-for"></a>
 
-指纹短语是一项重要的安全功能，当执行与加密相关的重要操作（例如共享）时，有助于唯一且安全地标识 Bitwarden 用户账户。
+您的指纹短语是一个重要的安全特征，当执行与加密相关的操作（如共享凭证）时，它有助于安全地识别 Bitwarden 用户。某些 Bitwarden 过程（例如，将新用户添加到组织，或确认[设备登录请求](../your-vault/log-in-with-device.md)），会要求您验证指纹短语是否与您本人或其他用户的指纹短语相匹配。
 
-某些 Bitwarden 过程（例如，将新用户添加到组织，启用浏览器扩展的生物识别解锁）可能会要求您验证指纹短语是否与您自己或其他用户的指纹短语相匹配。
+在相关操作过程中，请使用辅助通讯方式（如电话或短信）与 Bitwarden 用户进行协调，以验证您的指纹。
 
-验证指纹短语可确保安全初始端到端加密，并确保与您通信（和连接）的 Bitwarden 服务器未被恶意篡改。
+验证指纹短语可确保安全初始端到端加密，并确保与您通信的 Bitwarden 服务器未被恶意篡改。
 
 ## 在哪里可以找到我的指纹短语？ <a href="#where-can-i-find-my-fingerprint-phrase" id="where-can-i-find-my-fingerprint-phrase"></a>
 
 您可以在 Bitwarden 应用程序的以下位置找到账户的指纹短语：
 
-* **网页密码库**：账户设置 → 我的账户
-* **桌面应用程序**：账户 → 指纹短语
-* **浏览器扩展**：设置 → 账户 → 指纹短语
-* **移动应用程序**：设置 → 账户 → 指纹短语
-* **CLI**：`bw get fingerprint me`
+* **网页 App**：设置 → 我的账户
+* **桌面 App**：账户 → 指纹短语
+* **浏览器扩展**：设置 → 账户安全 → 指纹短语
+* **移动 App**：设置 → 账户安全 → 指纹短语
+* **CLI**：使用命令 `bw get fingerprint me`
 
 ## 我需要写下我的指纹短语吗？ <a href="#do-i-need-to-write-down-my-fingerprint-phrase" id="do-i-need-to-write-down-my-fingerprint-phrase"></a>
 
