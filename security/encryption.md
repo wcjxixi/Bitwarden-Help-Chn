@@ -51,6 +51,10 @@ Argon2 是 2015 年[密码哈希竞赛](https://www.password-hashing.net/)的获
 * 增加 **KDF 迭代**将线性增加运行时间。
 * 您可以使用的 **KDF 并行**数量取决于您机器的 CPU。一般来说，最大。并行数 = 核心数量 x 2。
 
+{% hint style="info" %}
+KDF 内存值大于 48 MB 的 Argon2id 用户每次启动 iOS 自动填充或通过共享表创建新 Send 时，都会收到警告对话。若要避免此消息，请调整 Argon2id 设置或启用[生物识别解锁](../your-vault/unlocking-with-biometrics.md)。
+{% endhint %}
+
 ## 调用的加密库 <a href="#invoked-crypto-libraries" id="invoked-crypto-libraries"></a>
 
 **Bitwarden 不编写任何加密代码**。Bitwarden 仅从流行且信誉良好的加密库中调用加密，这些库由加密专家编写和维护。我们使用以下加密库：

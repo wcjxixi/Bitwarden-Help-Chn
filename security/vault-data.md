@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/vault-data/)
 {% endhint %}
 
-所有的密码库数据在存储到任何地方之前都会被 Bitwarden 加密。要了解如何加密，请参阅[加密](encryption.md)。
+所有的密码库数据在存储到任何地方之前都会被 Bitwarden 加密。请参阅 Bitwarden 安全白皮书。Bitwarden 是一种零知识的解决方案，这意味着您是唯一能够获得您的密钥并能够解密您的密码库数据的一方。
 
-密码库数据只能使用从您的主密码派生的密钥来解密。Bitwarden 是一种零知识的解决方案，这意味着您是唯一能够获得您的密钥并能够解密您的密码库数据的一方。
+下面面列出了加密数据的示例以及加密数据的下载链接。
 
 {% hint style="success" %}
 我们鼓励您查看我们的[隐私政策](https://bitwarden.com/privacy)页面以了解更多信息。
@@ -22,7 +22,7 @@
     * 文件内容
     * 文件加密密钥
   * 自定义字段名称和值
-* 对于[登录](https://assets.ctfassets.net/7rncvj1f8mw7/yfr02nYyvD0GmjXzXjAu5/7e1091a1f05638807caa3268e3333038/login1\_\_1\_.json)：
+* 对于[登录](https://assets.ctfassets.net/7rncvj1f8mw7/yfr02nYyvD0GmjXzXjAu5/7e1091a1f05638807caa3268e3333038/login1__1_.json)：
   * 用户名
   * 密码
     * 密码历史记录
