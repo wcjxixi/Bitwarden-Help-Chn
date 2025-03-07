@@ -67,11 +67,11 @@ Windows 上的 Docker Desktop 版可能需要许可证，这取决于贵公司�
 
 ### 问：如何更改我的自助托管组织的名称？ <a href="#q-how-do-i-change-the-name-of-my-self-hosted-organization" id="q-how-do-i-change-the-name-of-my-self-hosted-organization"></a>
 
-答：首先，使用网页 App 更改云中的组织名称。更改云组织后，重新下载许可证文件，并将新的许可证文件上传到自托管组织，参阅[这里](licensing-for-paid-features.md#organization-license)。
+答：首先，使用网页 App 更改云中的组织名称。更改云端组织后，重新下载许可证文件，并将新的许可证文件上传到自托管组织，参阅[这里](licensing-for-paid-features.md#organization-license)。
 
 ### 问：为什么当运行更新命令显示是最新版本时，系统管理员门户还会显示有可用的更新？ <a href="#q-why-does-the-admin-portal-show-an-update-available-when-update-and-updateself-show-im-on-the-lates" id="q-why-does-the-admin-portal-show-an-update-available-when-update-and-updateself-show-im-on-the-lates"></a>
 
-**答：**&#x7CFB;统管理员门户将在我们发布云服务器后立即显示可用更新，但如[发行说明](../release-notes.md)中所述，自托管服务器更新通常在云服务器后几天才可用。请等待几天，然后再次尝试[更新您的实例](update-your-instance.md)。
+**答：**&#x7CFB;统管理员门户将在我们发布云端服务器后立即显示可用更新，但如[发行说明](../release-notes.md)中所述，自托管服务器更新通常在云端服务器后几天才可用。请等待几天，然后再次尝试[更新您的实例](update-your-instance.md)。
 
 ### 问：我可以在域名子文件夹下运行 Bitwarden 吗？ <a href="#q-can-i-run-bitwarden-under-a-domain-subfolder" id="q-can-i-run-bitwarden-under-a-domain-subfolder"></a>
 
@@ -103,8 +103,6 @@ globalSettings__mail__smtp__password=<valid-gmail-password>
 ```
 
 您还需要在 Google 中启用 SMTP 中继。更多信息，请参阅 [Google 文档](https://support.google.com/a/answer/176600?hl=zh-Hans)。
-
-如果你的 Gmail 账户开启了两步验证，你需要生成一个用于 Bitwarden 的应用程序专用密码，并更新到 `./bwdata/env/global.override.env` 的 `globalSettingsmailsmtp__password=` 字段中。
 
 ## 高级配置 <a href="#advanced-configuration" id="advanced-configuration"></a>
 
