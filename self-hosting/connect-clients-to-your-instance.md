@@ -4,10 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/change-client-environment/)
 {% endhint %}
 
-默认情况下，Bitwarden 客户端连接到 Bitwarden 托管的服务器。可以将客户端应用程序配置为连接到您的自托管 Bitwarden 实例。
+默认情况下，Bitwarden 客户端连接到 Bitwarden 托管的服务器，但也可以将客户端应用程序配置为连接到您的自托管 Bitwarden 实例。
 
 {% hint style="info" %}
-如果您正试图连接到 Bitwarden 托管的服务器，但您的客户端试图连接到自托管的实例，请从**登录到**菜单中选择 **bitwarden.com** 或 **bitwarden.eu**。
+如果您希望连接到 Bitwarden 托管的服务器，但您的客户端却试图连接到自托管的实例，请从**登录到**菜单中选择 **bitwarden.com** 或 **bitwarden.eu**。
 {% endhint %}
 
 {% tabs %}

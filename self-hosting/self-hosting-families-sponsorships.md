@@ -47,7 +47,7 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 ## 第 2 步：获取计费同步令牌 <a href="#step-2-retrieve-billing-sync-token" id="step-2-retrieve-billing-sync-token"></a>
 
-在服务器层面启用云端通信后，需要将同步令牌从用于计费的云组织传递到自托管组织。要从云端网页密码库获取同步令牌，您必须是组织的所有者。要获取令牌：
+在服务器层面启用云端通信后，需要将同步令牌从用于计费的云端组织传递到自托管组织。要从云端网页密码库获取同步令牌，您必须是组织的所有者。要获取令牌：
 
 1、打开云端网页 App，使用产品切换器打开管理控制台：
 
