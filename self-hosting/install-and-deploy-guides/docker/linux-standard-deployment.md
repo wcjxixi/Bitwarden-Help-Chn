@@ -4,11 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/install-on-premise-linux/)
 {% endhint %}
 
-这篇文章将引导你完成安装和部署 Bitwarden 到你自己的 Linux 服务器上的过程。Bitwarden 也可以安装和部署在 [Windows](windows-standard-deployment.md) 机器上。
+这篇文章将指导您在您自己的 Linux 服务器上安装和部署 Bitwarden。Bitwarden 也可以安装和部署在 [Windows](windows-standard-deployment.md) 机器上。请查看 Bitwarden [软件发布支持](../../../security/bitwarden-software-release-support.md)文档。
 
 ## 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
 
-<table data-header-hidden><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td></td><td><strong>最低</strong></td><td><strong>推荐</strong></td></tr><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 19+ 以及 Compose 1.24+</td><td>Engine 19+ 以及 Compose 1.24+</td></tr></tbody></table>
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
+
+<mark style="color:red;">ª</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。
 
 {% hint style="success" %}
 如果您正在寻找价格实惠的优质供应商，我们推荐 DigitalOcean。[立即开始](https://marketplace.digitalocean.com/apps/bitwarden)或阅读我们[在 DigitalOcean 上的关于 Bitwarden 的博客文章](https://bitwarden.com/blog/digitalocean-marketplace/)。
@@ -20,7 +22,7 @@
 
 以下是本文中[安装步骤](linux-standard-deployment.md#installation-procedure)的摘要。本节中的链接将跳转至详细的**安装步骤**部分：
 
-1、[**配置您的域名**](linux-standard-deployment.md#configure-your-domain)。设置你的域名 DNS 记录指向你的主机，并打开主机上的 80 和 443 端口。
+1、[**配置您的域名**](linux-standard-deployment.md#configure-your-domain)。设置您的域名 DNS 记录指向您的主机，并打开主机上的 80 和 443 端口。
 
 2、在您的主机上[**安装 Docker 和 Docker Compose**](linux-standard-deployment.md#install-docker-and-docker-compose)。
 
@@ -28,7 +30,7 @@
 
 4、从 [**https://bitwarden.com/host**](https://bitwarden.com/host) 获取安装 ID 和密钥用于安装过程。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)。
 
-5、在你机器上[**安装 Bitwarden**](linux-standard-deployment.md#install-bitwarden)。
+5、在您机器上[**安装 Bitwarden**](linux-standard-deployment.md#install-bitwarden)。
 
 6、在 `./bwdata/env/global.override.env` 中调整设置以[**配置您的环境**](linux-standard-deployment.md#post-install-configuration)。
 
@@ -40,28 +42,27 @@
 
 8、在网页浏览器中打开您配置的域名来测试您的安装。
 
+9、部署完成后，我们建议定期[备份您的服务器](../../backup-your-hosted-data.md)并[检查系统更新](../../update-your-instance.md)。
+
 ## 安装步骤 <a href="#installation-procedure" id="installation-procedure"></a>
 
 ### 配置您的域名 <a href="#configure-your-domain" id="configure-your-domain"></a>
 
-默认情况下，Bitwarden 通过本地主机上的 80（`http`）和 443（`https`）端口提供服务。您应该打开这些端口，以便可以从网络内部和/或外部访问 Bitwarden。如果你愿意，也可以在安装过程中选择使用其他端口。
+默认情况下，Bitwarden 通过本地主机上的 80（`http`）和 443（`https`）端口提供服务。您应该打开这些端口，以便可以从网络内部和/或外部访问 Bitwarden。如果您愿意，也可以在安装过程中选择使用其他端口。
 
 我们建议配置一个带 DNS 记录的域名（例如，`bitwarden.example.com`）指向您的托管主机，特别是当您通过互联网提供 Bitwarden 服务时。
 
 ### 安装 Docker 和 Docker Compose <a href="#install-docker-and-docker-compose" id="install-docker-and-docker-compose"></a>
 
-Bitwarden 使用一组 [Docker 容器](https://docs.docker.com/get-started/)部署和运行在你的机器上。Bitwarden 可以使用任何 Docker 版本或计划运行。评估哪个版本最适合你的安装。
+使用一组 [Docker 容器](https://docs.docker.com/get-started/)在您的机器上部署和运行 Bitwarden。Bitwarden 可以使用任何 Docker 版本或计划运行。评估哪个版本最适合你的安装。
 
-容器的部署是通过 [Docker Compose](https://docs.docker.com/compose/) 来协调的。某些 Docker 安装，包括 Docker for macOS，已经安装了 Docker Compose。
+容器的部署是通过 [Docker Compose](https://docs.docker.com/compose/) 来协调的。下载 Docker Engine 时，Docker Compose 会作为插件自动安装。
 
-**进行安装之前，请先在您的机器上安装 Docker 和 Docker Compose**。请参考以下 Docker 文档以获得帮助：
-
-* [安装 Docker 引擎](https://docs.docker.com/engine/installation/)
-* [安装 Docker Compose](https://docs.docker.com/compose/install/)
+[下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
 
 ### 创建 Bitwarden 本地用户和目录 <a href="#create-bitwarden-local-user-and-directory" id="create-bitwarden-local-user-and-directory"></a>
 
-Bitwarden 建议在你的 Linux 服务器上配置一个专用的 `bitwarden` 服务账户，用来安装和运行 Bitwarden。这样做可以将您的 Bitwarden 实例与服务器上运行的其他应用程序隔离开来。
+Bitwarden 建议在您的 Linux 服务器上配置一个专用的 `bitwarden` 服务账户，用来安装和运行 Bitwarden。这样做可以将您的 Bitwarden 实例与服务器上运行的其他应用程序隔离开来。
 
 **这些步骤是 Bitwarden 推荐的最佳实践，但不是必须的**。更多信息，请参阅 Docker 的[用于 Linux 的后安装步骤](https://docs.docker.com/engine/install/linux-postinstall/)文档。
 
@@ -109,11 +110,11 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 
 ### 安装 Bitwarden <a href="#install-bitwarden" id="install-bitwarden"></a>
 
-Bitwarden 提供了一个 Shell 脚本，可以轻松地在 Linux 和 macOS（Bash）或 Windows（PowerShell）上安装。完成以下步骤以使用 shell 脚本安装 Bitwarden：
-
-{% hint style="success" %}
+{% hint style="danger" %}
 如果您[已经创建 Bitwarden 用户和目录](linux-standard-deployment.md#chuang-jian-bitwarden-ben-di-yong-hu-he-mu-lu)，请从 `/opt/bitwarden` 目录中以 `bitwarden` 用户身份进行操作。
 {% endhint %}
+
+Bitwarden 提供了一个 Shell 脚本，可以轻松地在 Linux 和 macOS（Bash）或 Windows（PowerShell）上安装。完成以下步骤以使用 shell 脚本安装 Bitwarden：
 
 1、将 Bitwarden 安装脚本（`bitwarden.sh`）下载到您主机上：
 
@@ -127,35 +128,35 @@ curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platfor
 ./bitwarden.sh install
 ```
 
-3、完成安装程序中的以下提示：
+3、完成安装程序中的提示：
 
 * **Enter the domain name for your Bitwarden instance（输入您的 Bitwarden 实例的域名）:**\
   通常，此值应该是已配置的 DNS 记录。
 *   **Do you want to use Let's Encrypt to generate a free SSL certificate? (y/n)（您想使用 Let's Encrypt 生成免费的 SSL 证书吗？）:**\
-    指定 `y` 来使用 Let's Encrypt 生成一个可信的 SSL 证书。你会被提示输入一个电子邮件地址，以便从 Let's Encrypt 获取到期提醒。更多信息，请参阅[证书选项](../../certificate-options.md)。
+    指定 `y` 来使用 Let's Encrypt 生成一个可信的 SSL 证书。您会被提示输入一个电子邮箱地址，以便从 Let's Encrypt 获取到期提醒。更多信息，请参阅[证书选项](../../certificate-options.md)。
 
     或者，指定 `n` 并使用 **Do you have a SSL certificate to use?** 选项。
 * **Enter your installation id（输入您的安装 ID）:**\
   通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装 ID。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
 *   **Enter your installation key（输入您的安装密钥）:**
 
-    通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装密钥。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
+    通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮箱地址来获取安装密钥。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
 *   **Do you have a SSL certificate to use? (y/n)（您拥有自己的 SSL 证书吗？）:**\
-    如果你已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `/.bwdata/ssl/your.domain` 目录下。你会被问到是否使用受信任的 SSL 证书（y/n）。更多信息，请参阅[证书选项](../../certificate-options.md)。
+    如果您已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `/.bwdata/ssl/your.domain` 目录下。您会被问到是否使用受信任的 SSL 证书（y/n）。更多信息，请参阅[证书选项](../../certificate-options.md)。
 
     或者，指定 `n` 并使用 **self-signed SSL certificate?** 选项，这只是为了测试目的而推荐的。
 *   **Do you want to generate a self-signed SSL certificate? (y/n)（您想生成一个自签名证书吗？）:**\
-    指定 `y` 让 Bitwarden 为你生成一个自签名证书。这个选项只推荐用于测试。更多信息，请参阅[证书选项](../../certificate-options.md)。
+    指定 `y` 让 Bitwarden 为您生成一个自签名证书。这个选项只推荐用于测试。更多信息，请参阅[证书选项](../../certificate-options.md)。
 
-    如果你指定 `n`，你的实例将不使用 SSL 证书，你需要使用前置 HTTPS 代理来安装，否则 Bitwarden 应用程序将无法正常运行。
+    如果您指定 `n`，您的实例将不使用 SSL 证书，您需要使用前置 HTTPS 代理来安装，否则 Bitwarden 应用程序将无法正常运行。
 
 ### 安装后配置 <a href="#post-install-configuration" id="post-install-configuration"></a>
 
 配置您的环境可能涉及对两个文件进行更改：一个环境变量文件和一个安装文件：
 
-#### 环境变量（_必须_） <a href="#environment-variables-required" id="environment-variables-required"></a>
+#### 环境变量（必须） <a href="#environment-variables-required" id="environment-variables-required"></a>
 
-安装程序 `Bitwarden.sh` 未配置 Bitwarden 的某些功能。通过编辑位于 `./bwdata/env/global.override.env` 的环境文件来配置这些设置。至少，您应该替换以下值：
+安装程序 `Bitwarden.sh` 未配置 Bitwarden 的某些功能。通过编辑位于 `./bwdata/env/global.override.env` 的环境文件来配置这些设置。**至少，您应该替换以下值**：
 
 ```systemd
 ...
@@ -207,9 +208,18 @@ docker ps
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3Sq7MaJZ1jaEJUCW44wmwj/0671877450882e4c9f3a8d614bafd734/docker-healthy.png?fm=webp&h=232&q=50&w=1567" %}
 
-恭喜你！Bitwarden 现在已启动并运行在 `https://your.domain.com` 上了。在网页浏览器中访问网页密码库以确认他是否已经正常工作。
+恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认他是否已经正常工作。
 
-现在，您可以注册一个新帐户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新帐户的电子邮件地址。
+现在，您可以注册一个新账户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新账户的电子邮箱地址。
+
+{% hint style="success" %}
+部署完成后，我们建议定期[备份您的服务器](../../backup-your-hosted-data.md)并[检查系统更新](../../update-your-instance.md)。
+{% endhint %}
+
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+
+1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../self-host-an-organization.md)以开始。
+2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
 
 ## 脚本命令参考 <a href="#script-commands-reference" id="script-commands-reference"></a>
 
@@ -219,4 +229,4 @@ Bitwarden 的安装脚本（`bitwarden.sh` 或 `bitwarden.ps1`）具有以下可
 PowerShell 用户将以前缀`-`（开关）运行命令。例如`.\bitwarden.ps1 -start`。
 {% endhint %}
 
-<table><thead><tr><th width="186">命令</th><th>描述</th></tr></thead><tbody><tr><td>install</td><td>启动安装程序。</td></tr><tr><td>start</td><td>启动所有容器。</td></tr><tr><td>restart</td><td>重新启动所有容器（与 start 相同）。</td></tr><tr><td>stop</td><td>停止所有容器。</td></tr><tr><td>update</td><td>更新所有容器和数据库。</td></tr><tr><td>updatedb</td><td>更新/初始化数据库。</td></tr><tr><td>updaterun</td><td>更新 <code>run.sh</code> 文件。</td></tr><tr><td>updateself</td><td>更新主脚本。</td></tr><tr><td>updateconf</td><td>更新所有容器，而无需重新启动正在运行的实例。</td></tr><tr><td>uninstall</td><td><p>在执行此命令之前，系统会提示您保存数据库文件。选 <code>y</code> 将创建一个包含最新备份的数据库的 tar 文件。</p><p>停止容器，删除 <code>bwdata</code> 目录及其所有内容，并删除临时卷。执行后，系统会询问您是否还要清除所有 Bitwarden 镜像。</p></td></tr><tr><td>compresslogs</td><td><p>将所有服务器日志或指定日期范围内的服务器日志的压缩包下载到当前目录。</p><p>例如，使用 <code>./bitwarden.sh compresslogs 20240304 20240305</code> 下载 2024 年 3 月 4 日至 2024 年 3 月 5 日的日志。</p></td></tr><tr><td>renewcert</td><td>续签证书。</td></tr><tr><td>rebuild</td><td>重建从 <code>config.yml</code> 生成的安装资产。</td></tr><tr><td>help</td><td>列出所有命令。</td></tr></tbody></table>
+<table><thead><tr><th width="186">命令</th><th>描述</th></tr></thead><tbody><tr><td>install</td><td>启动安装程序。</td></tr><tr><td>start</td><td>启动所有容器。</td></tr><tr><td>restart</td><td>重新启动所有容器（与 start 相同）。</td></tr><tr><td>stop</td><td>停止所有容器。</td></tr><tr><td>update</td><td>更新所有容器和数据库。</td></tr><tr><td>updatedb</td><td>更新/初始化数据库。</td></tr><tr><td>updaterun</td><td>更新 <code>run.sh</code> 文件。</td></tr><tr><td>updateself</td><td>更新主脚本。</td></tr><tr><td>updateconf</td><td>更新所有容器，而无需重新启动正在运行的实例。</td></tr><tr><td>uninstall</td><td><p>在执行此命令之前，系统会提示您保存数据库文件。选 <code>y</code> 将创建一个包含最新备份的数据库的 tar 文件。</p><p></p><p>停止容器，删除 <code>bwdata</code> 目录及其所有内容，并删除临时卷。执行后，系统会询问您是否还要清除所有 Bitwarden 镜像。</p></td></tr><tr><td>compresslogs</td><td><p>将所有服务器日志或指定日期范围内的服务器日志的压缩包下载到当前目录。</p><p></p><p>例如，使用 <code>./bitwarden.sh compresslogs 20240304 20240305</code> 下载 2024 年 3 月 4 日至 2024 年 3 月 5 日的日志。</p></td></tr><tr><td>renewcert</td><td>续签证书。</td></tr><tr><td>rebuild</td><td>重建从 <code>config.yml</code> 生成的安装资产。</td></tr><tr><td>help</td><td>列出所有命令。</td></tr></tbody></table>
