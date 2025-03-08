@@ -14,7 +14,7 @@
 
 > **\[译者注]**：2023.9.0 之前，FIDO2 WebAuthn 方式的两步登录适用于高级用户，包括付费组织（家庭、团队或企业）的成员，不适用于免费用户。
 
-可以使用任何经过 FIDO2 WebAuthn 认证的验证器，包括 [YubiKey](https://www.yubico.com/)、[SoloKeys](https://solokeys.com/)、[Google Titan](https://store.google.com/product/titan_security_key)、[Nitrokey](https://www.nitrokey.com/) 等安全钥匙，以及 Windows Hello 和 Touch ID 等原生生物识别选项。
+可以使用任何经过 FIDO2 WebAuthn 认证的验证器，包括 [YubiKey](https://www.yubico.com/)、[SoloKeys](https://solokeys.com/)、[Google Titan](https://store.google.com/product/titan_security_key)、[Nitrokey](https://www.nitrokey.com/) 等安全密钥，以及 Windows Hello 和 Touch ID 等原生生物识别选项。
 
 {% hint style="success" %}
 所有通过 Bitwarden 设置的新 FIDO 钥匙都会注册为 WebAuthn 钥匙。如果您已注册的 FIDO 钥匙在网络应用程序的两步登录 → 管理 FIDO2 WebAuthn 视图中被标记为（**迁移自 FIDO**），则该钥匙为 U2F 钥匙，应将其删除并重新注册，以便自动将该钥匙设置为 WebAuthn 钥匙。Bitwarden 将于 2025 年开始逐步停止支持（**迁移自 FIDO**）U2F 钥匙。
@@ -53,19 +53,19 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想使用不
 
 将提示您输入您的主密码以继续。
 
-4、给您的安全钥匙起一个友好的**名称**。
+4、给您的安全密钥起一个友好的**名称**。
 
-5、将安全钥匙插入设备的 USB 端口，然后选择**读取钥匙**。如果安全钥匙具有按钮，请触摸它。
+5、将安全密钥插入设备的 USB 端口，然后选择**读取密钥**。如果安全密钥具有按钮，请触摸它。
 
 {% hint style="info" %}
-某些设备（包括支持密钥的 Windows Hello 或 macOS 设备）是原生 FIDO2 身份验证器，它们将默认提供这些选项。如果您想注册安全钥匙或其他验证器，您可能需要选择**尝试另一种方式**、**其他选项**或**取消**按钮以打开其他选项。
+某些设备（包括支持密钥的 Windows Hello 或 macOS 设备）是原生 FIDO2 身份验证器，它们将默认提供这些选项。如果您想注册安全密钥或其他验证器，您可能需要选择**尝试另一种方式**、**其他选项**或**取消**按钮以打开其他选项。
 {% endhint %}
 
-6、选择**保存**按钮。一个绿色的 `已启用` 消息表明已成功启用了 FIDO2 WebAuthn 方式的两步登录，并且您的钥匙旁将显示绿色的勾号 **✔️**。
+6、选择**保存**按钮。一个绿色的 `已启用` 消息表明已成功启用了 FIDO2 WebAuthn 方式的两步登录，并且您的密钥旁将显示绿色的勾号 **✔️**。
 
 7、选择**关闭**按钮，并确认 **FIDO2 WebAuthn** 选项现在已启用（通过一个绿色的勾号 **✔️** 指示）。
 
-重复此过程以向您的账户中添加最多 5 个 FIDO2 WebAuthn 安全钥匙。
+重复此过程以向您的账户中添加最多 5 个 FIDO2 WebAuthn 安全密钥。
 
 {% hint style="info" %}
 我们建议在继续测试两步登录之前保持活动的网页密码库选项卡为打开状态，以防出现配置错误的情况。当您确认它正常工作后，您应该注销所有的 Bitwarden App，以为每个 App 立即激活两步登录。您最终会被自动注销。
@@ -75,9 +75,9 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想使用不
 
 以下内容假设 **FIDO 2 WebAuthn** 是您[已启用的最高优先级方式](../two-step-login-methods.md#using-multiple-methods)。完成以下步骤，以使用FIDO2 WebAuthn 设备访问您的密码库：
 
-1、输入您的电子邮件地址和主密码登录您的 Bitwarden 密码库。
+1、输入您的电子邮箱地址和主密码登录您的 Bitwarden 密码库。
 
-2、系统将提示您将安全钥匙插入设备的 USB 端口。如果有按钮，请触摸它：
+2、系统将提示您将安全密钥插入设备的 USB 端口。如果有按钮，请触摸它：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3RuttlEwwfVX3UJKA8GTFg/9cd8908cbb8994b58ee23791f1abece8/fido2.png?_a=DAJCwlWIZAAB" %}
 FIDO2 提示

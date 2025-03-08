@@ -1,24 +1,24 @@
-# 新设备登录保护（2025 年初）
+# 新设备登录保护（2025 年 2 月/3 月）
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/new-device-verification/)
 {% endhint %}
 
-为确保您的账户安全，2025 年 2 月/3 月开始，Bitwarden 将对**未使用**[**两步登录**](../two-step-login/two-step-login-methods.md)**的用户**要求额外的验证。**当从一个以前未登录过的设备登录时**，在您输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码，以完成登录过程。例如，如果您登录的是以前使用过的移动 App 或浏览器扩展，则不会收到此提示。
+{% hint style="success" %}
+从 **2025 年 3 月 4 日**开始，新设备登录时将会提示进行新的验证。这一变更最初将反应在网页 App 中，在用户更新到最新的发布版本将后扩展到其他 Bitwarden App 中。
+{% endhint %}
+
+为确保您的账户安全，Bitwarden 将对**未使用**[**两步登录**](../two-step-login/two-step-login-methods.md)**的用户**要求额外的验证。**当从一个以前未登录过的设备登录时**，在您输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码，以完成登录过程。例如，如果您登录的是以前使用过的移动 App 或浏览器扩展，则不会收到此提示。
 
 除非频繁登录新的设备，否则大多数用户不会收到此提示。只有新设备或清除浏览器 cookie 后才需要进行此验证。
 
 如果您经常访问电子邮箱，获取此验证码应该很简单。如果您不想依赖您的 Bitwarden 账户电子邮箱进行验证，您可以通过[验证器 App](../two-step-login/setup-guides/two-step-login-via-authenticator.md)、[硬件密钥](../two-step-login/setup-guides/two-step-login-via-yubikey.md)或不同的[电子邮箱](../two-step-login/setup-guides/two-step-login-via-email.md)来[设置两步登录](../two-step-login/two-step-login-methods.md)。
 
-受此变更影响的用户将看到以下产品内信息，并且应该已经收到了通知变更的电子邮件：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2tYcj1sDClqQ23ANh7nrIq/b88330b0a660fa47baaf59c68e0b9178/541c2ef1-b086-4489-a21f-a21fa6c1a905.png?_a=DAJCwlWIZAAB" %}
-
 ## FAQ
 
-### 何时实施？ <a href="#when-will-this-happen" id="when-will-this-happen"></a>
+### 何时会发生？ <a href="#when-will-this-happen" id="when-will-this-happen"></a>
 
-这一变更将于 2025 年 2 月/3 月生效。一旦确定了发布日期，本页面将及时更新。
+从 **2025 年 3 月 4 日**开始，新设备登录时将会提示进行新的验证。这一变更最初将反应在网页 App 中，在用户更新到最新的发布版本将后扩展到其他 Bitwarden App 中。
 
 ### Bitwarden 为什么要实施这一举措？ <a href="#why-is-bitwarden-implementing-this" id="why-is-bitwarden-implementing-this"></a>
 
@@ -34,8 +34,9 @@ Bitwarden 正在实施这一变更，以增强未激活[两步登录](../two-ste
 
 会触发新设备的其他情况包括：
 
-* 卸载并重新安装移动、桌面 App 或浏览器扩展将触发新设备。
+* 卸载并重新安装移动 App、桌面 App 或浏览器扩展将触发新设备。
 * 清除浏览器 cookie 将为网页 App 触发新设备，但不会为浏览器扩展触发新设备。
+* 在虚拟桌面基础架构 (VDI) 中使用浏览器扩展，在每次会话后重置用户配置文件存储。在这种情况下，本地存储不会持久化。
 
 ### 我的电子邮箱凭据保存在 Bitwarden 中。我会被锁定在 Bitwarden 之外吗？ <a href="#my-email-credentials-are-saved-in-bitwarden.-will-i-be-locked-out-of-bitwarden" id="my-email-credentials-are-saved-in-bitwarden.-will-i-be-locked-out-of-bitwarden"></a>
 
