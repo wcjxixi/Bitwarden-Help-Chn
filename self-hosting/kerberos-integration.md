@@ -12,7 +12,7 @@ Kerberos 集成身份验证允许 Bitwarden 用户在外部 MSSQL 数据库中�
 
 ## keytab 文件 <a href="#keytab-file" id="keytab-file"></a>
 
-Bitwarden 服务器使用导出的 `keytab` 文件来验证域。
+Bitwarden 服务器使用导出的 `keytab` 文件来验证域名。
 
 1、从 Windows 域控制器中输入以下代码示例（根据需要可能会有所不同）：
 

@@ -6,15 +6,15 @@
 
 ## 服务器部署的默认数据库 <a href="#default-database-for-server-deployments" id="default-database-for-server-deployments"></a>
 
-除统一 (Unified) 部署外，所有 Bitwarden 自托管服务器部署默认使用 MSSQL Express 镜像。这将您的加密密码库数据与应用程序容器一起部署，并通过确保更新、维护和备份与代码的其余部分同时进行，从而简化部署流程。此默认数据库不需要额外许可，并已按照 Bitwarden 标准预配置，以安全存储并自动备份密码库数据（了解更多）。
+除 [Unified](install-and-deploy-guides/docker/unified-deployment-beta.md)（统一）部署外，所有 Bitwarden 自托管服务器部署默认使用 MSSQL Express 镜像。这将您的加密密码库数据与应用程序容器一起部署，并通过确保更新、维护和备份与代码的其余部分同时进行，从而简化部署流程。此默认数据库不需要额外许可，并已按照 Bitwarden 标准预配置，以安全存储并自动备份密码库数据（[了解更多](backup-your-hosted-data.md)）。
 
 ### 服务器部署使用外部数据库 <a href="#using-an-external-database-for-server-deployments" id="using-an-external-database-for-server-deployments"></a>
 
-在默认使用 MSSQL Express 镜像的自托管服务器部署中，使用该容器是可选的。为了实现高可用性或利用现有基础设施，客户可以连接到外部 MSSQL 服务器或集群（了解更多），版本需为 2019 或更高版本，但建议使用 2022 或更高版本。
+在默认使用 MSSQL Express 镜像的自托管服务器部署中，使用该容器是可选的。为了实现高可用性或利用现有基础设施，客户可以连接到外部 MSSQL 服务器或集群（[了解更多](connect-to-an-external-mssql-database.md)），版本需为 2019 或更高版本，但建议使用 2022 或更高版本。
 
 ## 统一部署的数据库 <a href="#databases-for-unified-deployments" id="databases-for-unified-deployments"></a>
 
-Bitwarden 统一 (Unified) 自托管部署不附带内置数据库，但可以连接到现有的 MySQL/MariaDB、MSSQL、SQLite 或 PostgreSQL 数据库（了解更多）。由于该数据库不与应用程序容器不在同一位置，因此从基础设施角度来看，数据库的维护（包括更新、维护和备份）需要单独管理。
+Bitwarden Unified（统一）自托管部署不附带内置数据库，但可以连接到现有的 MySQL/MariaDB、MSSQL、SQLite 或 PostgreSQL 数据库（[了解更多](install-and-deploy-guides/docker/unified-deployment-beta.md)）。由于该数据库不与应用程序容器不在同一位置，因此从基础设施角度来看，数据库的维护（包括更新、维护和备份）需要单独管理。
 
 ## 可选的数据库任务 <a href="#optional-database-jobs" id="optional-database-jobs"></a>
 

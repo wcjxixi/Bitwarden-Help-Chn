@@ -170,13 +170,13 @@ globalSettings__enableCloudCommunication=true
 要手动重新上传许可证文件：
 
 1. 按照步骤再次**获取您的许可证**。
-2. 打开自托管组织的**计费**选项卡，然后从左侧菜单中选择**订阅**。
-3. 在许可证和计费管理部分，选择**手动上传**选项。
+2. 打开自托管的管理控制台，然后导航到**计费** → **订阅**。
+3. 在「许可证和计费管理」部分，选择**手动上传**选项。
 4. 选择**浏览...**&#x6216;**选择文件**按钮以添加您的许可证文件。
 5. 选择**提交**。
 
 {% hint style="info" %}
-如果您收到一个 `version not supported`（版本不受支持）的错误消息，请更新您的服务器并尝试再次上传您的许可证文件。要更新您的服务器，请备份 `bwdata` 目录并按照[这些说明](update-your-instance.md)进行操作。
+如果您收到一条 `version not supported`（版本不支持）的错误消息，请更新您的服务器并尝试再次上传您的许可证文件。要更新您的服务器，请备份 `bwdata` 目录，然后按照[这些说明](https://help.ppgg.in/self-hosting/update-your-instance)进行操作。
 {% endhint %}
 {% endtab %}
 {% endtabs %}

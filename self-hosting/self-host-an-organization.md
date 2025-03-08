@@ -62,6 +62,8 @@ Bitwarden 组织使用的某些功能未通过上述文章中记录的标准安�
 
 您现在已准备好开始管理您的自托管组织了！以下是您可以采用的方法：
 
+{% tabs %}
+{% tab title="Password Manager" %}
 ### 邀请您的管理团队 <a href="#invite-your-admin-team" id="invite-your-admin-team"></a>
 
 每个全明星组织都需要一个全明星管理团队。开始邀请高权限成员，他们可以帮助您为与 Bitwarden 的安全凭证共享奠定基础。如果您正在构建企业组织，您可以为成员提供[满足您的要求的高度灵活的自定义权限](../admin-console/user-management/member-roles-and-permissions.md#custom-role)。
@@ -83,3 +85,25 @@ Bitwarden 组织使用的某些功能未通过上述文章中记录的标准安�
 ### 邀请您的团队 <a href="#invite-your-team" id="invite-your-team"></a>
 
 终于可以开始邀请用户了！如果您使用 Azure Active Directory 等身份提供商或目录服务，请使用 [SCIM](../scim/about-scim.md) 或[目录连接器](../directory-connector/about-directory-connector.md)自动同步用户。否则，请按照您建立管理团队所采取的相同步骤邀请更多用户加入组织。
+{% endtab %}
+
+{% tab title="Secrets Manager" %}
+### 邀请您的管理团队 <a href="#invite-your-admin-team" id="invite-your-admin-team"></a>
+
+每个全明星组织都需要一个全明星管理团队。开始邀请高权限成员，他们可以帮助您为与 Bitwarden 的安全机密共享奠定基础。
+
+以保护冗余为目的，我们建议在您新成立的管理团队中至少包括一名额外的**组织所有者**。
+
+### 设置策略（仅限企业） <a href="#set-policies-enterprise-only" id="set-policies-enterprise-only"></a>
+
+您的业务具有独特的安全需求。使用策略为所有团队成员构建一致的部署和用户体验，例如要求 SSO 身份验证或在账户恢复管理中注册成员。为了让您的组织为更多团队成员做好准备，[尽早制定策略](../organizations/enterprise-policies.md)非常重要。
+
+### 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
+
+您需要从另一个密码管理器转到 Bitwarden 的吗？好消息！您可以将这些数据直接导入您的组织，[以避免痛苦的复制和粘贴一天](../secrets-manager/import-export/import-data.md)。
+
+### 邀请您的团队 <a href="#invite-your-team" id="invite-your-team"></a>
+
+终于可以开始邀请用户了！如果您使用 Azure Active Directory 等身份提供商或目录服务，请使用 [SCIM](../scim/about-scim.md) 或[目录连接器](../directory-connector/about-directory-connector.md)自动同步用户。否则，请按照您建立管理团队所采取的相同步骤邀请更多用户加入组织。每个人都入职之后，[开始授予用户对 Secrets Manager 的访问权限](../secrets-manager/get-started/secrets-manager-quick-start.md#give-members-access)。
+{% endtab %}
+{% endtabs %}

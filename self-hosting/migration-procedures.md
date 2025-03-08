@@ -27,7 +27,7 @@
 
 4、还是在云端网页密码库中，[导出您的个人密码库数据](../import-export/export-vault-data.md#export-a-personal-vault)或[导出您的组织密码库数据](../import-export/export-vault-data.md#export-an-organization-vault)。如果您要迁移组织，请鼓励您的最终用户也导出他们的个人密码库。
 
-5、打开您的自托管网页密码库并创建一个帐户。此帐户**必须使用与您下载许可证所用的云端帐户相同的电子邮件地址**。
+5、打开您的自托管网页密码库并创建一个账户。此账户**必须使用与您下载许可证所用的云端账户相同的电子邮箱地址**。
 
 6、还是在您自托管的网页密码库中，上传您的[许可证](licensing-for-paid-features.md)。
 
@@ -63,7 +63,7 @@
 
 2、在您自托管网页密码库中，[导出您的个人密码库数据](../import-export/export-vault-data.md#export-a-personal-vault)或[导出您的组织密码库数据](../import-export/export-vault-data.md#export-an-organization-vault)。如果您要迁移组织，请鼓励您的最终用户也导出他们的个人密码库。
 
-3、打开云端网页密码库。大多数用户在之前都已创建了用于计费目的的云端帐户，因此请登录该帐户。如果您之前的免费账户不是用于计费的云端账户，请立即创建一个帐户。
+3、打开云端网页密码库。大多数用户在之前都已创建了用于计费目的的云端账户，因此请登录该账户。如果您之前的免费账户不是用于计费的云端账户，请立即创建一个账户。
 
 {% hint style="success" %}
 如果您要迁移组织，则您已经拥有了一个用于计费和许可目的的云端组织。为了最平稳地过渡，我们建议使用这个已经建立的组织，而不是[创建一个新的组织](../organizations/organizations.md#create-an-organization)。
@@ -87,6 +87,10 @@
 {% endtab %}
 
 {% tab title="主机到主机" %}
+{% hint style="success" %}
+这些说明目前只适用于从一个 Linux 托管服务器迁移到另一个 Linux 托管服务器。
+{% endhint %}
+
 要从一个自托管的 Bitwarden 服务器迁移到另一个：
 
 1、运行 `./bitwarden.sh stop` 停止现有的 Bitwarden 服务器。当您运行此命令时，Bitwarden 将为当前使用它的任何人关闭。
@@ -109,5 +113,45 @@
 8、运行 `./bitwarden.sh rebuild` 以将更改应用于 `config.yml` 和 `global.override.env`。
 
 9、使用 `./bitwarden.sh start` 启动您的 Bitwarden 服务器。
+{% endtab %}
+
+{% tab title="云端到云端" %}
+要从一个 Bitwarden 云端服务器迁移到另一个 Bitwarden 云端服务器，例如，从美国服务器迁移到欧盟服务器：
+
+1、[导出您的组织密码库](../import-export/export-vault-data.md#export-an-organization-vault)，然后指导所有组织成员[导出他们的个人密码库](../import-export/export-vault-data.md#export-a-personal-vault)。
+
+{% hint style="success" %}
+单独下载密码库项目的任何文件附件，并注明它们属于哪个项目。
+{% endhint %}
+
+2、在所需区域创建一个新的 Bitwarden 账户，并开始试用组织。Bitwarden 支持人员会将您的订阅迁移到新的地区（见**步骤 4**）。
+
+3、建立新组织，配置企业策略、SSO 登录、构建群组收-集合关系以及使用目录连接器或 SCIM 邀请用户等。如需帮助，请参阅[概念验证清单](../business-resources/proof-of-concept-project-checklist.md)。
+
+4、[联系 Bitwarden 支持](https://bitwarden.com/contact/)，将您的新组织从试用期中移出，并在新区域恢复您订阅。&#x20;
+
+5、导入在**步骤 1** 中获得的组织保密码库数据，并指导组织成员也导入他们的个人密码库。
+
+{% hint style="info" %}
+将**步骤 1** 中获得的文件附件手动上传回与之关联的密码库项目。
+{% endhint %}
+
+## 迁移 FAQ <a href="#migration-faqs" id="migration-faqs"></a>
+
+### 问：我需要迁移吗？ <a href="#q-do-i-need-to-migrate" id="q-do-i-need-to-migrate"></a>
+
+答：不需要迁移区域。区域选择器允许企业指定密码库数据的地理位置。不同区域的功能和作用是相同的。
+
+### 问：迁移有流程吗？  <a href="#q-is-there-a-process-for-migrating" id="q-is-there-a-process-for-migrating"></a>
+
+答：Bitwarden 区域是不同的云端环境。Bitwarden 不能为客户将账户从一个区域迁移到另一个区域。企业可以使用脚本来帮助迁移。您可以[联系我们](https://bitwarden.com/contact/)将订阅从一个区域转移到另一个区域。
+
+### 问：迁移脚本的作用是什么？ <a href="#q-what-does-the-migration-script-do" id="q-what-does-the-migration-script-do"></a>
+
+答：脚本与 Bitwarden CLI 配合使用，将数据从一个安装转移到另一个安装。[本文](../miscellaneous/migration-script.md)提供了相关说明。该脚本会迁移所有组织密码库数据，包括附件、成员角色（不包括自定义角色）以及分配给成员和群组的集合权限。如果不使用目录集成进行自动配置，脚本还会在新组织中自动重新创建组。请注意，这不包括个人用户密码库的迁移。
+
+### 问：手动迁移是怎样的？ <a href="#q-what-does-a-manual-migration-look-like" id="q-what-does-a-manual-migration-look-like"></a>
+
+答：完整的手动迁移包括在首选区域创建一个新账户，并开始新机构创建流程。新组织配置完成后，重新邀请用户，然后从旧组织导出密码库数据并导入新组织。用户需要手动导出/导入他们的个人密码库。
 {% endtab %}
 {% endtabs %}

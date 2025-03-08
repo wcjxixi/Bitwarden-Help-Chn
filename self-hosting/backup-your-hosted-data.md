@@ -8,21 +8,22 @@
 
 ## 关于托管数据 <a href="#about-hosted-data" id="about-hosted-data"></a>
 
-Bitwarden 的 Docker 容器使用卷映射来持久化主机上的所有重要数据，这意味着停止你的容器不会删除任何数据。另一方面，Docker 容器要被认为是短暂的，不持久化数据或状态。
+Bitwarden Docker 容器使用卷映射来持久化主机上的所有重要数据，这意味着停止您的容器不会删除任何数据。另一方面，Docker 容器被认为是短暂的，不会持久化数据或状态。
 
-所有的 Bitwarden 数据都存储在主机上相对于你安装 Bitwarden 的位置的 `./bwdata` 目录中。更多信息，请参阅[安装和部署](install-and-deploy-guides/docker/linux-standard-deployment.md)。
+所有的 Bitwarden 数据都存储在主机上相对于您安装 Bitwarden 的位置的 `./bwdata` 目录中。
 
 ## 备份托管数据 <a href="#backup-hosted-data" id="backup-hosted-data"></a>
 
 建议您备份并保护整个 `./bwdata` 目录。如果发生数据丢失，则需要此目录中包含的全部或部分数据来还原您的实例。
 
-定期备份的 `./bwdata` 中特别重要的部分包括：
+需要定期备份的 `./bwdata` 中特别重要的部分包括：
 
 * `./bwdata/env` - 实例的环境变量，包括数据库和证书密码
 * `./bwdata/core/attachments` - 实例的密码库项目的附件
 * `./bwdata/mssql/data` - 实例的数据库数据
+* `./bwdata/core/aspnet-dataprotection` - 框架级数据保护，包括身份验证令牌和部分数据库列。
 
-Bitwarden 将在运行时自动对 mssql 数据库容器进行夜间备份。
+Bitwarden 将在运行时自动对 `mssql` 数据库容器进行夜间备份。
 
 ### 夜间数据库备份 <a href="#nightly-database-backups" id="nightly-database-backups"></a>
 
@@ -32,13 +33,13 @@ Bitwarden 会自动对 `mssql` 容器数据库进行夜间备份。备份保存�
 
 ### 恢复夜间备份 <a href="#restore-a-nightly-backup" id="restore-a-nightly-backup"></a>
 
-如果发生数据丢失，请完成以下步骤以恢复夜间备份。
+如果发生数据丢失，请使用以下步骤来恢复夜间备份：
 
 1、从  `global.override.env` 中查找 `globalSettings__sqlServer__connectionString=...Password=` 的值以获取您的数据库密码。
 
 2、使用 `docker ps` 命令标识 `mssql` 容器的容器 ID。
 
-3、运行以下命令以为您的 `mssql` docker 容器打开一个 bash 会话：
+3、运行以下命令为您的 `mssql` docker 容器打开一个 bash 会话：
 
 ```shell
 docker exec -it bitwarden-mssql /bin/bash
@@ -64,7 +65,7 @@ docker exec -it bitwarden-mssql /bin/bash
 
 6、在 `sqlcmd` 实用程序中，有两种备份选项：
 
-* **离线备份**（_首选_）
+* **离线备份**（首选）
 
 运行下面的 SQL 命令：
 
