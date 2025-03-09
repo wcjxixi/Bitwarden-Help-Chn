@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-offline/)
 {% endhint %}
 
-这篇文章将引导你完成在**离线或**[**网闸**](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8)**环境**中安装和部署 Bitwarden 到你自己的服务器的过程。
+这篇文章将指导您在**离线或**[**网闸**](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8)**环境**中安装和部署 Bitwarden 到您自己的服务器。请查看 Bitwarden [软件发布支持](../../../security/bitwarden-software-release-support.md)文档。
 
 > **\[译者注]**：[网闸](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8) (air-gapped) 网络，是指与外部网络（如互联网或其他外部系统）完全隔离的计算机网络。这种隔离通过物理或逻辑手段实现，确保网络无法与外部环境进行数据交换，从而增强安全性。
 

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/install-on-premise-manual/)
 {% endhint %}
 
-这篇文章将引导你完成手动安装和部署 Bitwarden 到你自己的服务器的过程。
+这篇文章将指导您手动安装和部署 Bitwarden 到您自己的服务器。请查看 Bitwarden [软件发布支持](../../../security/bitwarden-software-release-support.md)文档。
 
 {% hint style="warning" %}
 **手动安装仅适合高级用户使用。**&#x4EC5;当您非常熟悉 Docker 技术，并且希望对您的 Bitwarden 安装进行更多控制时才可以进行此操作。
@@ -14,24 +14,19 @@
 我们会尽量在 [GitHub 上的发行说明](https://github.com/bitwarden/server/releases)中强调这些。你也可以在 GitHub 上监控 Bitwarden 安装脚本所使用的[依赖模板](https://github.com/bitwarden/server/tree/master/util/Setup/Templates)的更改。
 {% endhint %}
 
-## 要求 <a href="#installation-procedure" id="installation-procedure"></a>
+## 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
 
-在继续安装之前，请确保 [Docker Engine](https://docs.docker.com/engine/installation/) 和 [Docker Compose](https://docs.docker.com/compose/install/) 已安装并准备好在您的服务器上使用，并且您的机器符合以下系统规格：
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
 
-### 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
+<mark style="color:red;">ª</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
 
-|           | **最低**                      | **推荐**                      |
-| --------- | --------------------------- | --------------------------- |
-| 处理器       | x64, 1.4GHz                 | x64, 2GHz 双核                |
-| 内存        | 2GB RAM                     | 4GB RAM                     |
-| 存储        | 12GB                        | 25GB                        |
-| Docker 版本 | Engine 19+ 以及 Compose 1.24+ | Engine 19+ 以及 Compose 1.24+ |
+此外，如果要构建自己的 Bitwarden 镜像，还需要使用与 Bitwarden 相同 .NET 版本的官方 .NET Core Runtime 镜像（从 [DockerHub](https://hub.docker.com/_/microsoft-dotnet-aspnet) 下载）。您必须使用 Debian 或 Ubuntu 版本。
 
 ## 安装步骤 <a href="#installation-procedure" id="installation-procedure"></a>
 
 ### 创建 Bitwarden 本地用户和目录 <a href="#create-bitwarden-local-user-and-directory" id="create-bitwarden-local-user-and-directory"></a>
 
-Bitwarden 建议在你的 Linux 服务器上配置一个专用的 `bitwarden` 服务账户，用来安装和运行 Bitwarden。这样做可以将您的 Bitwarden 实例与服务器上运行的其他应用程序隔离开来。
+Bitwarden 建议在您的 Linux 服务器上配置一个专用的 `bitwarden` 服务账户，用来安装和运行 Bitwarden。这样做可以将您的 Bitwarden 实例与服务器上运行的其他应用程序隔离开来。
 
 **这些步骤是 Bitwarden 推荐的最佳实践，但不是必须的**。更多信息，请参阅 Docker 的[用于 Linux 的后安装步骤](https://docs.docker.com/engine/install/linux-postinstall/)文档。
 
@@ -78,6 +73,10 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 ```
 
 ### 下载和配置 <a href="#download-and-configure" id="download-and-configure"></a>
+
+{% hint style="danger" %}
+如果已创建 Bitwarden 用户和目录，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。 **请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题。
+{% endhint %}
 
 要下载 Bitwarden 并配置 Bitwarden 服务器资产：
 
@@ -174,11 +173,16 @@ docker-compose -f ./docker/docker-compose.yml up -d
 docker ps
 ```
 
-{% embed url="https://bitwarden.com/_gatsby/image/44cd09376223f66d253aa2a2c26bf420/d335a0afdef5beeea3a4ce0a3f3dcc88/docker-healthy.webp?eu=8b8652b4e29afd865c6ca5816d21676ee96d02abfd5037d96964e5a746ab9e8376f34c0029962ee32e6c5b8bd3b610ef66c678301fbb84d3c1ba18f6e33cf80a05840cba61b47607052891fdb1f406106dc6490ca7d1c90ba2697bd2e1e6b12548041579f928bc89e9fd3632b78a2833e8b6f27f6694a971e812540c8f5c31bf6ea48f876e4fb99bf301bca2b8f84a8ec9a36e191e8eb72a2535124c1eb72cedadef4376262a231a32b3fe22ad60cce749660450395b07b03a7d8a4afb6a36c2ecfca659dc7a73e9aa9c35238f95add1e54eaa2b72b59e71fd85387e1159f340f6e939ea8a315752c572b38b0cec54&a=w%3D850%26h%3D126%26fm%3Dwebp%26q%3D75&cd=2022-12-09T17%3A18%3A21.193Z" %}
+<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/e_vectorize/q_auto/f_svg/v1/ctf/7rncvj1f8mw7/3Sq7MaJZ1jaEJUCW44wmwj/0671877450882e4c9f3a8d614bafd734/docker-healthy.png?_a=DAJCwlWIZAAB" alt=""><figcaption></figcaption></figure>
 
 恭喜！ Bitwarden 现已启动并运行在 `https://your.domain.com` 了。在您的浏览器中访问网络密码库以确认其正常工作。
 
 您现在可以注册一个新帐户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../../configure-environment-variables.md)）以验证您的新帐户的电子邮件。
+
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+
+1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../self-host-an-organization.md)以开始。
+2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
 
 ## 更新您的服务器 <a href="#update-your-server" id="update-your-server"></a>
 

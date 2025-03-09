@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/install-on-premise-linux/)
 {% endhint %}
 
-这篇文章将指导您在您自己的 Linux 服务器上安装和部署 Bitwarden。Bitwarden 也可以安装和部署在 [Windows](windows-standard-deployment.md) 机器上。请查看 Bitwarden [软件发布支持](../../../security/bitwarden-software-release-support.md)文档。
+这篇文章将指导您安装和部署 Bitwarden 到您自己的 Liunx 服务器。Bitwarden 也可以安装和部署在 [Windows](windows-standard-deployment.md) 机器上。请查看 Bitwarden [软件发布支持](../../../security/bitwarden-software-release-support.md)文档。
 
 ## 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
 
