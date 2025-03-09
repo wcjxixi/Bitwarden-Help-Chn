@@ -175,9 +175,13 @@ docker ps
 
 <figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/e_vectorize/q_auto/f_svg/v1/ctf/7rncvj1f8mw7/3Sq7MaJZ1jaEJUCW44wmwj/0671877450882e4c9f3a8d614bafd734/docker-healthy.png?_a=DAJCwlWIZAAB" alt=""><figcaption></figcaption></figure>
 
-恭喜！ Bitwarden 现已启动并运行在 `https://your.domain.com` 了。在您的浏览器中访问网络密码库以确认其正常工作。
+恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
 
-您现在可以注册一个新帐户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../../configure-environment-variables.md)）以验证您的新帐户的电子邮件。
+现在，您可以注册一个新账户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新账户的电子邮箱地址。
+
+{% hint style="success" %}
+部署完成后，我们建议定期[备份您的服务器](../../backup-your-hosted-data.md)并[检查系统更新](../../update-your-instance.md)。
+{% endhint %}
 
 ## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 

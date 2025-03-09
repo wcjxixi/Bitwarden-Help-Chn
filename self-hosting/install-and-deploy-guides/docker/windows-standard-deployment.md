@@ -4,18 +4,20 @@
 对应的[官方文档地址](https://bitwarden.com/help/install-on-premise-windows/)
 {% endhint %}
 
-这篇文章将引导你完成安装和部署 Bitwarden 到你自己的 Windows 服务器上的过程。Bitwarden 也可以安装和部署在 [Linux 和 macOS](linux-standard-deployment.md) 机器上。
+这篇文章将指导您安装和部署 Bitwarden 到您自己的 Windows 服务器。Bitwarden 也可以安装和部署在 [Linux 和 macOS](linux-standard-deployment.md) 机器上。请查看 Bitwarden [软件发布支持](../../../security/bitwarden-software-release-support.md)文档。
 
 ## 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
 
-<table><thead><tr><th width="177.46326865053078"></th><th width="240.55465526874184">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>6GB RAM</td><td>8+GB RAM</td></tr><tr><td>存储</td><td>76GB</td><td>90GB</td></tr><tr><td>Docker 版本</td><td>Engine 19+ 以及 Compose 1.24+</td><td>Engine 19+ 以及 Compose 1.24+</td></tr></tbody></table>
+<table><thead><tr><th width="177.46326865053078"></th><th width="240.55465526874184">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>6GB RAM</td><td>8+GB RAM</td></tr><tr><td>存储</td><td>76GB</td><td>90GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ and Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ and Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
+
+<mark style="color:red;">ª</mark> - Docker Compose 可以通过 Docker Desktop 安装，其中包含 Engine 和 Compose。
 
 ### 嵌套虚拟化 <a href="#nested-virtualization" id="nested-virtualization"></a>
 
 在 Windows 服务器上运行 Bitwarden **需要使用嵌套虚拟化**。请检查您的管理程序的文档以了解是否支持嵌套虚拟化以及如何启用它。
 
 {% hint style="success" %}
-如果你将 Windows Server 作为 Azure VM 运行，我们建议**使用运行 Windows Server 2019 Gen2 的标准 D2s v3 虚拟机**，它满足所有[系统要求](windows-standard-deployment.md#system-specifications)，包括对嵌套虚拟化的支持。
+如果您将 Windows Server 作为 Azure VM 运行，我们建议**使用运行 Windows Server 2022 的标准 D2s v3 虚拟机**，它满足所有[系统要求](windows-standard-deployment.md#system-specifications)，包括对嵌套虚拟化的支持。
 {% endhint %}
 
 ## TL;DR <a href="#tl-dr" id="tl-dr"></a>
@@ -26,13 +28,15 @@
 
 1、[**配置您的域名**](windows-standard-deployment.md#configure-your-domain)。设置你的域名 DNS 记录指向你的主机，并打开主机上的 80 和 443 端口。
 
-2、在您的主机上[**安装 Docker 和 Docker Compose**](windows-standard-deployment.md#install-docker-and-docker-compose)。
+2、在您的机器上[**安装和设置桌面版 Docker**](windows-standard-deployment.md#setup-docker-desktop)。
 
-3、[**安装和设置桌面版 Docker**](windows-standard-deployment.md#zhi-docker-zhuo-mian)。
+3、[**创建一个 Bitwarden 用户和目录**](windows-standard-deployment.md#create-bitwarden-local-user-and-directory)以完成安装。
 
-4、从 [**https://bitwarden.com/host**](https://bitwarden.com/host) 获取安装 ID 和密钥用于安装过程。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)。
+4、从 [**https://bitwarden.com/host**](https://bitwarden.com/host) 获取安装 ID 和密钥用于安装过程。
 
-5、在你机器上[**安装 Bitwarden**](windows-standard-deployment.md#install-bitwarden)。
+更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)。
+
+5、在您机器上[**安装 Bitwarden**](windows-standard-deployment.md#install-bitwarden)。
 
 6、在 `./bwdata/env/global.override.env` 中调整设置以[**配置您的环境**](windows-standard-deployment.md#configure-your-environment)。
 
@@ -44,17 +48,31 @@
 
 8、在网页浏览器中打开您配置的域名来测试您的安装。
 
+9、部署后，我们建议定期备份您的服务器并检查系统更新。
+
 ## 安装步骤 <a href="#installation-procedure" id="installation-procedure"></a>
+
+{% hint style="info" %}
+使用 PowerShell ISE 运行 PowerShell 命令会导致 Bitwarden 安装失败。要成功完成安装将需要 PowerShell。
+{% endhint %}
 
 ### 配置您的域名 <a href="#configure-your-domain" id="configure-your-domain"></a>
 
 默认情况下，Bitwarden 通过本地主机上的 80（http）和 443（https）端口提供服务。您应该打开这些端口，以便可以从网络内部和/或外部访问 Bitwarden。如果你愿意，也可以在安装过程中选择使用其他端口。
 
 {% hint style="success" %}
-**如果您使用的是 Windows 防火墙**，Docker Desktop for Windows 不会自动在 Windows 防火墙中为自己添加例外。为 TCP 端口 80 和 443（或选择的替代端口）添加例外以防止出现一些错误。
+**如果您使用的是 Windows 防火墙**，Windows 版 Docker Desktop 不会自动在 Windows 防火墙中为自己添加例外。为 TCP 端口 80 和 443（或选择的替代端口）添加例外以防止出现一些错误。
 {% endhint %}
 
 我们建议配置一个带 DNS 记录的域名（例如，`bitwarden.example.com`）指向您的托管主机，特别是当您通过互联网提供 Bitwarden 服务时。
+
+### 设置 Docker Desktop <a href="#setup-docker-desktop" id="setup-docker-desktop"></a>
+
+Bitwarden 将使用一系列 [Docker 容器](https://docs.docker.com/get-started/)部署并运行在您的机器上。Bitwarden 可以使用任何 Docker 版本或计划运行。评估哪个版本最适合您的安装。
+
+容器部署使用 Docker Compose 进行编排。Docker Compose 可以通过 Docker Desktop 安装，其中包含 Engine 和 Compose。
+
+在此次设置过程中，您必须**取消选择** **Use WSL2 instead of Hyper-V (recommended)** 选项。安装后，打开 Docker Desktop 并选择 **⚙️Settings**，然后选择 **Resources**。Bitwarden 至少需要分配 4GB RAM 给 Docker Desktop。此设置将 Windows 的 RAM 专用于 Docker。因此，设置此值过高可能会导致 Windows 不稳定。
 
 ### 创建 Bitwarden 本地用户和目录 <a href="#create-bitwarden-local-user-and-directory" id="create-bitwarden-local-user-and-directory"></a>
 
@@ -76,11 +94,13 @@ New-LocalUser "Bitwarden" -Password $Password -Description "Bitwarden Local Admi
 PS C:\> mkdir Bitwarden
 ```
 
-在桌面版 Docker 中，导航到 **Settings** → **Resources** → **File Sharing** 并将创建的目录（`C:\Bitwarden`）添加到 Resources 列表中。选择 **Apply & Restart** 以使您的更改生效。
+在 Docker Desktop中，导航到 **Settings** → **Resources** → **File Sharing** 并将创建的目录（`C:\Bitwarden`）添加到 Resources 列表中。选择 **Apply & Restart** 以使您的更改生效。
 
-### 设置桌面版 Docker <a href="#setup-docker-desktop" id="setup-docker-desktop"></a>
+{% hint style="info" %}
+Bitwarden 用户必须添加到 docker-users 组中。请参阅 [Docker 文档](https://docs.docker.com/desktop/install/windows-install/#install-docker-desktop-on-windows)了解如何操作。
+{% endhint %}
 
-Bitwarden 将使用一系列 [Docker 容器](https://docs.docker.com/get-started/)部署并运行在您的机器上。适用于 Windows 的桌面版 Docker 包含了 Docker Engine 和 Docker Compose。下载并安装[适用于 Windows 的桌面版 Docker](https://docs.docker.com/desktop/windows/install/)，并在安装过程中选中**启用 Hyper-V Windows 功能**配置选项。
+我们建议在完成本文件中所有后续步骤之前，以新创建的用户登录。
 
 ### 安装 Bitwarden <a href="#install-bitwarden" id="install-bitwarden"></a>
 
@@ -121,6 +141,8 @@ Invoke-RestMethod -OutFile bitwarden.ps1 -Uri "https://func.bitwarden.com/api/dl
 *   **Enter your installation key（输入您的安装密钥）:**
 
     通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装密钥。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
+* **Enter your region (US/EU)（输入您的区域 (US/EU)）：**\
+  输入 US 或 EU，具体取决于您将用于许可付费功能的[云端服务器](../../../security/server-geographies.md)，仅适用于您将自托管账户或组织连接到付费订阅的情况。
 *   **Do you have a SSL certificate to use? (y/n)（您拥有自己的 SSL 证书吗？）:**\
     如果你已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `C:\Bitwarden\bwdata\ssl\<your_domain>` 目录下。你会被问到是否使用受信任的 SSL 证书（y/n）。更多信息，请参阅[证书选项](../../certificate-options.md)。
 
@@ -177,7 +199,7 @@ Bitwarden 安装脚本使用 `./bwdata/config.yml` 中的设置来生成必要�
 ```
 
 {% hint style="info" %}
-首次启动 Bitwarden 时，可能会花费一些时间，因为它会从 Docker Hub 下载所有镜像。
+首次启动 Bitwarden 时，可能会花费一些时间，因为它会从 Docker Hub 下载镜像。
 {% endhint %}
 
 验证所有容器是否正常运行：
@@ -190,9 +212,18 @@ docker ps
 显示健康容器的列表
 {% endembed %}
 
-恭喜你！Bitwarden 现在已启动并运行在`https://your.domain.com`上了。在网页浏览器中访问网页密码库以确认他是否已经正常工作。
+恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
 
-现在，您可以注册一个新帐户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新帐户的电子邮件地址。
+现在，您可以注册一个新账户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新账户的电子邮箱地址。
+
+{% hint style="success" %}
+部署完成后，我们建议定期[备份您的服务器](../../backup-your-hosted-data.md)并[检查系统更新](../../update-your-instance.md)。
+{% endhint %}
+
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+
+1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../self-host-an-organization.md)以开始。
+2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
 
 ## 在启动时启动 Docker <a href="#start-docker-on-boot" id="start-docker-on-boot"></a>
 

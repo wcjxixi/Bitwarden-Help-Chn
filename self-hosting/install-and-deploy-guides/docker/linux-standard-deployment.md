@@ -141,6 +141,8 @@ curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platfor
 *   **Enter your installation key（输入您的安装密钥）:**
 
     通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮箱地址来获取安装密钥。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
+* **Enter your region (US/EU)（输入您的区域 (US/EU)）：**\
+  输入 US 或 EU，具体取决于您将用于许可付费功能的[云端服务器](../../../security/server-geographies.md)，仅适用于您将自托管账户或组织连接到付费订阅的情况。
 *   **Do you have a SSL certificate to use? (y/n)（您拥有自己的 SSL 证书吗？）:**\
     如果您已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `/.bwdata/ssl/your.domain` 目录下。您会被问到是否使用受信任的 SSL 证书（y/n）。更多信息，请参阅[证书选项](../../certificate-options.md)。
 
@@ -208,7 +210,7 @@ docker ps
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3Sq7MaJZ1jaEJUCW44wmwj/0671877450882e4c9f3a8d614bafd734/docker-healthy.png?fm=webp&h=232&q=50&w=1567" %}
 
-恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认他是否已经正常工作。
+恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
 
 现在，您可以注册一个新账户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新账户的电子邮箱地址。
 

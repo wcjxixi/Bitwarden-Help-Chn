@@ -207,9 +207,9 @@ docker ps
 
 {% embed url="https://bitwarden.com/_gatsby/image/44cd09376223f66d253aa2a2c26bf420/d335a0afdef5beeea3a4ce0a3f3dcc88/docker-healthy.webp?eu=d88606e2e2cca8840d3af6d66177626be13b5faaaa5330d93860edaa1dfbca8f72f1105723c77ab1286b58dcd7b645ec64cf7a684be8d8dac7bb1ffce964ff0d54805bbc66e67a5f156f84bdbaea191c35974d0de29d9b4cf53c3197b0f7f46e47055834af38e6d2aaf33432b8de6835f5b5c56f62bffa028a130405be62148f03bf94996e59b4d1b019e8e7e6ae0ec999e7250f428ef7662b214f4e50b92bbaa1e055276d2e435f2a9af00b9c34d4ab6449307f1a074ae9276487&a=w%3D850%26h%3D126%26fm%3Dwebp%26q%3D75&cd=2022-12-09T17%3A18%3A21.193Z" %}
 
-恭喜！ Bitwarden 现已启动并运行在 `https://your.domain.com` 了。在您的浏览器中访问网络密码库以确认其正常工作。
+恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
 
-您现在可以注册一个新帐户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../../configure-environment-variables.md)）以验证您的新帐户的电子邮件。
+现在，您可以注册一个新账户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新账户的电子邮箱地址。
 
 ## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 
