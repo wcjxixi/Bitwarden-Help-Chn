@@ -26,7 +26,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 ### 要求两步登录 <a href="#require-two-step-login" id="require-two-step-login"></a>
 
-打开**要求两步登录**策略将要求成员使用任何两步登录方法访问其密码库。如果使用的是 SSO 或身份提供商的 2FA 功能，则无需启用此策略。 即使是只接受了组织邀请的用户，也会执行此策略。
+打开**要求两步登录**策略将要求成员使用任何两步登录方法访问其密码库。如果使用的是 SSO 或身份提供商的 2FA 功能，则无需启用此策略。即使是只接受了组织邀请的用户，也会执行此策略。
 
 {% hint style="warning" %}
 **不是所有者或管理员，且其账户未设置两步登录的组织成员，在激活此策略后将从组织中被移除。**&#x7531;于该策略而被移除的用户将收到电子邮件通知，并且必须重新邀请他们加入组织。更多信息：
@@ -37,7 +37,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 ### 主密码要求 <a href="#master-password-requirements" id="master-password-requirements"></a>
 
-打开**主密码要求**策略，将对用户的主密码强度执行一套可配置的最低要求。 组织可以强制执行：
+打开**主密码要求**策略，将对用户的主密码强度执行一套可配置的最低要求。组织可以强制执行：
 
 * 最小主密码复杂度
 * 最小主密码长度
@@ -94,7 +94,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 ### 单一组织 <a href="#single-organization" id="single-organization"></a>
 
-打开**单一组织**策略将限制组织内的非所有者/非管理员成员加入其他组织或创建其他组织。即使是只接受了组织邀请的用户，也可以执行此策略，所有者和管理员不受此政策的约束。
+打开**单一组织**策略将限制组织内的非所有者/非管理员成员加入其他组织或创建其他组织。即使是只接受了组织邀请的用户，也可以执行此策略，所有者和管理员不受此策略的约束。
 
 {% hint style="warning" %}
 **启用此策略后，本组织中属于多个组织成员的用户将被从本组织中移除。**
@@ -104,7 +104,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 ### 要求单点登陆验证 <a href="#require-single-sign-on-authentication" id="require-single-sign-on-authentication"></a>
 
-打开**要求单点登录验证**策略将要求非所有者/非管理员用户使用 SSO 登录。如果是自托管，可以使用环境变量对所有者和管理员强制执行该策略。有关更多信息，请参阅 [SSO 登录的使用](../login-with-sso/using-login-with-sso.md)。所有者和管理员不受此政策的约束。
+打开**要求单点登录验证**策略将要求非所有者/非管理员用户使用 SSO 登录。如果是自托管，可以使用环境变量对所有者和管理员强制执行该策略。有关更多信息，请参阅 [SSO 登录的使用](../login-with-sso/using-login-with-sso.md)。所有者和管理员不受此策略的约束。
 
 使用此策略的组织成员将无法使用密码登录。
 
@@ -114,13 +114,13 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 同理，必须先禁用**单点登录验证**策略，然后才能禁用**单一组织**策略。
 {% endhint %}
 
-### 移除个人密码库 <a href="#remove-individual-vault" id="remove-individual-vault"></a>
+### 禁用个人密码库 <a href="#remove-individual-vault" id="remove-individual-vault"></a>
 
-打开**移除个人密码库**策略将要求非所有者/非管理员用户通过禁用组织用户对密码库项目的个人所有权来将密码库项目保存到组织。
+打开**禁用个人密码库**策略将要求非所有者/非管理员用户将密码库项目保存到组织中，防止组织成员拥有密码库项目的所有权。
 
 在**添加项目**界面上将向用户显示一条横幅，表明某个策略正在影响他们的所有权选项。
 
-即使是只接受了组织邀请的用户，也可以执行此策略，所有者和管理员不受此政策的约束。
+即使是只接受了组织邀请的用户，也可以执行此策略，所有者和管理员不受此策略的约束。
 
 {% hint style="info" %}
 在实施本策略之前或加入本组织之前创建的密码库项目将保留在用户的个人密码库中。
@@ -128,17 +128,17 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 ### 禁用 Send <a href="#disable-send" id="disable-send"></a>
 
-打开**禁用 Send** 策略将阻止非所有者/非管理员用户使用 [Bitwarden Send](../bitwarden-send/about-send.md) 创建或编辑 Send。受此策略约束的用户仍然可以删除尚未达到[删除日期](../bitwarden-send/send-lifespan.md)的现有 Send。所有者和管理员不受此政策的约束。
+打开**禁用 Send** 策略将阻止非所有者/非管理员用户使用 [Bitwarden Send](../bitwarden-send/about-send.md) 创建或编辑 Send。受此策略约束的用户仍然可以删除尚未达到[删除日期](../bitwarden-send/send-lifespan.md)的现有 Send。所有者和管理员不受此策略的约束。
 
 在 **Send** 视图中和打开任何现有的 Send 时，会向用户显示一个横幅，以表明某个策略限制他们只能删除 Send。
 
 ### Send 选项 <a href="#send-options" id="send-options"></a>
 
-打开 **Send 选项**策略将允许所有者和管理员指定用于创建和编辑 Send 的选项。所有者和管理员不受此政策的约束。选项包括：
+打开 **Send 选项**策略将允许所有者和管理员指定用于创建和编辑 Send 的选项。所有者和管理员不受此策略的约束。选项包括：
 
 | 选项             | 描述                                                                                                                                   |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| 不允许用户隐藏其电子邮件地址 | 启用该选项可以禁用[隐藏电子邮箱](../bitwarden-send/send-privacy.md#hide-email)选项，这意味着所有[接收到的 Send](../bitwarden-send/receive-a-send.md) 都将包含其发送者信息。 |
+| 不允许用户隐藏其电子邮箱地址 | 启用该选项可以禁用[隐藏电子邮箱](../bitwarden-send/send-privacy.md#hide-email)选项，这意味着所有[接收到的 Send](../bitwarden-send/receive-a-send.md) 都将包含其发送者信息。 |
 
 ### 密码库超时 <a href="#vault-timeout" id="vault-timeout"></a>
 
@@ -148,7 +148,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 * 为**除所有者外**的所有成员设置[密码库超时](../your-vault/vault-timeout-options.md#vault-timeout-action)动作。此选项可以设置为**用户首选项**、在发生密码库超时时**锁定**或**注销**。\
   **注销**选项可用于比如在用户每次访问其密码库时提示用户使用 2FA，并通过定期清除用户机器上的本地数据来防止离线使用。
 
-在密码库超时配置期间将向用户显示一条横幅，表明某个策略正在影响他们的选项。激活该策略后，用户将无法使用某些密码库超时选项，如浏**览器重启时**或**永不**。所有者和管理员不受此政策的约束。
+在密码库超时配置期间将向用户显示一条横幅，表明某个策略正在影响他们的选项。激活该策略后，用户将无法使用某些密码库超时选项，如浏**览器重启时**或**永不**。所有者和管理员不受此策略的约束。
 
 {% hint style="info" %}
 在激活此策略之前，必须启用**单一组织**策略。
@@ -158,7 +158,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 ### 禁用个人密码库导出 <a href="#disable-personal-vault-export" id="disable-personal-vault-export"></a>
 
-打开**禁用个人密码库导出**策略将禁止您组织的非所有者/非管理员成员[导出其私人密码库数据](../import-export/export-vault-data.md#export-a-personal-vault)。所有者和管理员不受此政策的约束。
+打开**禁用个人密码库导出**策略将禁止您组织的非所有者/非管理员成员[导出其私人密码库数据](../import-export/export-vault-data.md#export-a-personal-vault)。所有者和管理员不受此策略的约束。
 
 在网页密码库和 CLI 中，会向用户显示一条消息，以表明某个策略正在影响他们的选项。在其他客户端中，该选项将被简单地禁用：
 
@@ -166,9 +166,9 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 移除了密码库导出
 {% endembed %}
 
-### 移除免费 Bitwarden 家庭赞助 <a href="#remove-free-bitwarden-families-sponsorship" id="remove-free-bitwarden-families-sponsorship"></a>
+### 禁用免费 Bitwarden 家庭赞助 <a href="#remove-free-bitwarden-families-sponsorship" id="remove-free-bitwarden-families-sponsorship"></a>
 
-打开**移除免费 Bitwarden 家庭赞助**策略将禁止您的组织成员通过您的组织[兑换免费的家庭计划](../plans-and-pricing/password-manager/redeem-families-sponsorship.md)。
+打开**禁用免费 Bitwarden 家庭赞助**策略将禁止您的组织成员通过您的组织[兑换免费的家庭计划](../plans-and-pricing/password-manager/redeem-families-sponsorship.md)。
 
 在该策略激活前已兑换赞助家庭组织的用户将继续获得其组织的赞助，直至当前账单周期结束。在下一个账单周期开始时，将通过该组织存储的付款方式收取费用。
 
@@ -176,7 +176,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 打开**激活自动填充**策略将自动为组织的所有现有和新成员打开浏览器扩展上的[页面加载时自动填充](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#on-page-load)功能。如果激活，成员将无法禁用页面加载时自动填充功能。
 
-### 为允许的应用程序中自动登录用户 <a href="#automatically-log-in-users-for-allowed-applications" id="automatically-log-in-users-for-allowed-applications"></a>
+### 为允许的应用程序自动登录用户 <a href="#automatically-log-in-users-for-allowed-applications" id="automatically-log-in-users-for-allowed-applications"></a>
 
 打开**为允许的应用程序自动登录用户**策略，将允许在访问身份提供程序提供的非 SSO  App 时自动填充并提交登录表单。要启用此设置：
 

@@ -32,13 +32,13 @@
 
 ### 单击项目以自动填充 <a href="#customizing-autofill-behaviorclick-items-to-autofill" id="customizing-autofill-behaviorclick-items-to-autofill"></a>
 
-您可以将浏览器扩展设置为在选择密码库项目时自动填充，而不是使用**填充**按钮。要激活此选项，请导航至**设置** → **自动填充**，然后切换**在密码库视图中单击项目以自动填充**选项。
+您可以将浏览器扩展设置为在选择密码库项目时自动填充，而不是使用**填充**按钮。要激活此选项，请导航至**设置** → **外观**，然后切换**在自动填充建议中单击项目以自动填充**选项。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3tnagVMjtTufvRCrih3ctQ/b3698262ce7c19baeda6afc87c485167/2025-01-02_11-14-19.png?_a=DAJCwlWIZAAB" %}
 单击项目以自动填充
 {% endembed %}
 
-激活后，从密码库视图中选择项目将自动填充此项目，而不是使用**填充**按钮，页可以使用 **≡**&#x9009;项菜单来查看此项目。
+激活后，从密码库视图中选择项目时（而不是使用**填充**按钮）将自动填充此项目。可以使用 **≡**&#x9009;项菜单来**查看**此项目。
 
 ### 快速复制操作 <a href="#quick-copy-actions" id="quick-copy-actions"></a>
 

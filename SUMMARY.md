@@ -8,9 +8,10 @@
   * [登录 & 解锁](my-account/log-in-and-unlock/README.md)
     * [主密码](your-vault/your-master-password.md)
     * [忘记主密码](your-vault/i-forgot-my-master-password.md)
+    * [新设备登录保护](my-account/log-in-and-unlock/new-device-protection.md)
     * [使用 SSO 登录](login-with-sso/using-login-with-sso.md)
-    * [使用设备登录](your-vault/log-in-with-device.md)
-    * [使用通行密钥登录 (Beta)](my-account/log-in-and-unlock/log-in-with-passkeys.md)
+    * [设备登录](your-vault/log-in-with-device.md)
+    * [通行密钥登录 ](my-account/log-in-and-unlock/log-in-with-passkeys.md)
     * [账户切换](your-vault/account-switching.md)
     * [使用 PIN 码解锁](your-vault/unlock-with-pin.md)
     * [使用生物识别解锁](your-vault/unlocking-with-biometrics.md)
@@ -348,7 +349,6 @@
   * [Secrets Manager Beta 版注册](miscellaneous/beta-signup.md)
   * [未分配的密码库项目已移至管理控制台](miscellaneous/unassigned-vault-items-moved-to-admin-console.md)
   * [原生移动 App](miscellaneous/native-mobile-apps.md)
-  * [新设备登录保护（2025 年 2 月/3 月）](miscellaneous/new-device-verification.md)
 
 ## 附录 <a href="#appendix" id="appendix"></a>
 

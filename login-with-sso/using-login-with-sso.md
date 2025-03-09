@@ -81,25 +81,19 @@
 {% tab title="SSO 登录 & 主密码" %}
 要使用 SSO 和您的主密码登录：
 
-1、打开您的 Bitwarden App。在第一个界面，输入与您的账户关联的电子邮箱地址，然后选择**继续**。如果您还没有 Bitwarden 账户电子邮箱，可以输入您的公司电子邮箱。
+1、打开 Bitwarden App，输入与您的电子邮箱地址，然后选择**使用单点登录**。如果您还没有 Bitwarden 账户电子邮箱，可以输入您的公司电子邮箱。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3XPDLW9GBkA4TIk1j6EAXq/c475c321cca4b27b8e74abb687d7d599/2024-12-02_10-27-01.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3XPDLW9GBkA4TIk1j6EAXq/153e77e3b278808b3d05cc13a4fc80f9/login.png?_a=DAJCwlWIZAAB" %}
 输入您的电子邮箱地址
 {% endembed %}
 
-2、选择**企业单点登录**按钮：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJCwlWIZAAB" %}
-登录选项界面
-{% endembed %}
-
-3、输入您的 **SSO 标识符**然后选择**登录**：
+2、输入您的 **SSO 标识符**然后选择**登录**：
 
 {% hint style="success" %}
 并非每个人都需要完成这一步，您的组织可能已将登录程序设置为不需要！ 如果您没有看到此界面，请进入下一步。
 {% endhint %}
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5sNF8v7r2HsyLQm8gd6xBC/0ba3bbab0ede6d89d0bfcaa89184bdd7/2024-12-02_10-29-11.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5sNF8v7r2HsyLQm8gd6xBC/0925fe8383a4324c359932ed77bcf96f/sso.png?_a=DAJCwlWIZAAB" %}
 SSO 标识符界面
 {% endembed %}
 
@@ -107,9 +101,9 @@ SSO 标识符界面
 如果您必须完成 SSO 标识符步骤，我们建议将此页面添加为书签，并将您的组织标识符作为查询字符串包含在内，这样您就不必每次都输入组织标识符了，比如： `https://vault.bitwarden.com/#/sso?identifier=my-organization's-identifier` 或 `https://your.domain.com/#/sso?identifier=my-organization's-identifier`。
 {% endhint %}
 
-4、现在您将被重定向到你的 IdP（例如 Microsoft Azure、Duo、OneLogin 等）。输入你的 SSO 凭据，像往常一样登录。
+3、现在您将被重定向到你的 IdP（例如 Microsoft Azure、Duo、OneLogin 等）。输入你的 SSO 凭据，像往常一样登录。
 
-5、使用 SSO 进行身份验证后，系统会提示您输入主密码以解密密码库，如果您的账户是新的账户，则需要创建主密码。
+4、使用 SSO 进行身份验证后，系统会提示您**输入主密码**以解密密码库，如果您的账户是新的账户，则需要**创建**[**主密码**](../your-vault/your-master-password.md)。
 
 {% hint style="info" %}
 **为什么仍然需要我的主密码？**
@@ -119,35 +113,29 @@ SSO 标识符界面
 您的主密码是该解密密钥的来源。即使您使用 SSO 向 Bitwarden 进行身份验证（证明您的身份），您仍然必须使用该解密密钥（您的主密码）来解密密码库数据。
 {% endhint %}
 
-6、如果您使用[两步登录](../two-step-login/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。
+5、如果您使用[两步登录](../two-step-login/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。
 
 {% hint style="danger" %}
-如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议通过电子邮件进行两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../two-step-login/setup-guides/two-step-login-via-authenticator.md)。
+如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../two-step-login/setup-guides/two-step-login-via-authenticator.md)。
 {% endhint %}
 {% endtab %}
 
 {% tab title="SSO 登录 & 受信任设备" %}
-要使用 SSO 和您的主密码登录：
+要使用 SSO 和受信任设备登录：
 
-1、打开您的 Bitwarden App。在第一个界面，输入与您的账户关联的电子邮箱地址，然后选择**继续**。如果您还没有 Bitwarden 账户电子邮箱，可以输入您的公司电子邮箱。
+1、打开 Bitwarden App，输入与您的电子邮箱地址，然后选择**使用单点登录**。如果您还没有 Bitwarden 账户电子邮箱，可以输入您的公司电子邮箱。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3XPDLW9GBkA4TIk1j6EAXq/c475c321cca4b27b8e74abb687d7d599/2024-12-02_10-27-01.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3XPDLW9GBkA4TIk1j6EAXq/153e77e3b278808b3d05cc13a4fc80f9/login.png?_a=DAJCwlWIZAAB" %}
 输入您的电子邮箱地址
 {% endembed %}
 
-2、选择**企业单点登录**按钮：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJCwlWIZAAB" %}
-登录选项界面
-{% endembed %}
-
-3、输入您的 **SSO 标识符**然后选择**登录**：
+2、输入您的 **SSO 标识符**然后选择**登录**：
 
 {% hint style="success" %}
 并非每个人都需要完成这一步，您的组织可能已将登录程序设置为不需要！ 如果您没有看到此界面，请进入下一步。
 {% endhint %}
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5sNF8v7r2HsyLQm8gd6xBC/0ba3bbab0ede6d89d0bfcaa89184bdd7/2024-12-02_10-29-11.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5sNF8v7r2HsyLQm8gd6xBC/0925fe8383a4324c359932ed77bcf96f/sso.png?_a=DAJCwlWIZAAB" %}
 SSO 标识符界面
 {% endembed %}
 
@@ -155,9 +143,9 @@ SSO 标识符界面
 如果您必须完成 SSO 标识符步骤，我们建议将此页面添加为书签，并将您的组织标识符作为查询字符串包含在内，这样您就不必每次都输入组织标识符了，比如： `https://vault.bitwarden.com/#/sso?identifier=my-organization's-identifier` 或 `https://your.domain.com/#/sso?identifier=my-organization's-identifier`。
 {% endhint %}
 
-4、现在您将被重定向到你的 IdP（例如 Microsoft Azure、Duo、OneLogin 等）。输入你的 SSO 凭据，像往常一样登录。
+3、现在您将被重定向到你的 IdP（例如 Microsoft Azure、Duo、OneLogin 等）。输入你的 SSO 凭据，像往常一样登录。
 
-5、使用 SSO 进行身份验证后，系统会提示您选择与登录设备建立信任的选项（[了解更多选项信息](../admin-console/login-with-sso/trusted-devices/add-a-trusted-device.md)）：
+4、使用 SSO 进行身份验证后，系统会提示您选择与登录设备建立信任的选项（[了解更多选项信息](../admin-console/login-with-sso/trusted-devices/add-a-trusted-device.md)）：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1zrsBanU5CNhFnDHAXazwP/45aebda6d73fefcb0c47bea1fe254d3d/2024-10-09_16-02-23.png?_a=DAJCwlWIZAAB" %}
 建立信任的选项
@@ -170,51 +158,45 @@ SSO 标识符界面
 5、如果您使用[两步登录](../two-step-login/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。
 
 {% hint style="danger" %}
-如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议通过电子邮件进行两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../two-step-login/setup-guides/two-step-login-via-authenticator.md)。
+如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../two-step-login/setup-guides/two-step-login-via-authenticator.md)。
 {% endhint %}
 {% endtab %}
 
 {% tab title="SSO 登录 & Key Connector" %}
-要使用 SSO 和您的主密码登录：
+要使用 SSO 和 Key Connector 登录：
 
-1、打开您的 Bitwarden App。在第一个界面，输入与您的账户关联的电子邮箱地址，然后选择**继续**。如果您还没有 Bitwarden 账户电子邮箱，可以输入您的公司电子邮箱。
+1、打开 Bitwarden App，输入与您的电子邮箱地址，然后选择**使用单点登录**。如果您还没有 Bitwarden 账户电子邮箱，可以输入您的公司电子邮箱。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3XPDLW9GBkA4TIk1j6EAXq/c475c321cca4b27b8e74abb687d7d599/2024-12-02_10-27-01.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3XPDLW9GBkA4TIk1j6EAXq/153e77e3b278808b3d05cc13a4fc80f9/login.png?_a=DAJCwlWIZAAB" %}
 输入您的电子邮箱地址
 {% endembed %}
 
-2、选择**企业单点登录**按钮：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJCwlWIZAAB" %}
-登录选项界面
-{% endembed %}
-
-3、输入您的 **SSO 标识符**然后选择**登录**：
+2、输入您的 **SSO 标识符**然后选择**登录**：
 
 {% hint style="success" %}
 并非每个人都需要完成这一步，您的组织可能已将登录程序设置为不需要！ 如果您没有看到此界面，请进入下一步。
 {% endhint %}
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5sNF8v7r2HsyLQm8gd6xBC/0ba3bbab0ede6d89d0bfcaa89184bdd7/2024-12-02_10-29-11.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5sNF8v7r2HsyLQm8gd6xBC/0925fe8383a4324c359932ed77bcf96f/sso.png?_a=DAJCwlWIZAAB" %}
 SSO 标识符界面
 {% endembed %}
 
 {% hint style="success" %}
-我们建议将此页面添加为书签，并将您的组织标识符作为查询字符串包含在内，这样您就不必每次都输入组织标识符了，比如： `https://vault.bitwarden.com/#/sso?identifier=my-organization's-identifier` 或 `https://your.domain.com/#/sso?identifier=my-organization's-identifier`。
+如果您必须完成 SSO 标识符步骤，我们建议将此页面添加为书签，并将您的组织标识符作为查询字符串包含在内，这样您就不必每次都输入组织标识符了，比如： `https://vault.bitwarden.com/#/sso?identifier=my-organization's-identifier` 或 `https://your.domain.com/#/sso?identifier=my-organization's-identifier`。
 {% endhint %}
 
-4、现在您将被重定向到你的 IdP（例如 Microsoft Azure、Duo、OneLogin 等）。输入你的 SSO 凭据，像往常一样登录。
+3、现在您将被重定向到你的 IdP（例如 Microsoft Azure、Duo、OneLogin 等）。输入你的 SSO 凭据，像往常一样登录。
 
-5、根据您的账户状态，您可能需要在首次使用 SSO 和 Key Connector 登录时输入或创建主密码。这样做将从您的账户中移除主密码。
+4、根据您的账户状态，您可能需要在首次使用 SSO 和 Key Connector 登录时输入或创建主密码。这样做将从您的账户中移除主密码。
 
 {% hint style="info" %}
 我们希望您阅读[这里](about-key-connector.md#impact-on-master-passwords)和[这里](about-key-connector.md#impact-on-organization-membership)，以充分了解从您的账户中删除主密码意味着什么。您可以选择**离开组织**，但这将取消对组织拥有的密码库项目和集合以及单点登录的访问权限。
 {% endhint %}
 
-6、如果您使用[两步登录](../two-step-login/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。
+5、如果您使用[两步登录](../two-step-login/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。
 
 {% hint style="danger" %}
-如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议通过电子邮件进行两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../two-step-login/setup-guides/two-step-login-via-authenticator.md)。
+如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../two-step-login/setup-guides/two-step-login-via-authenticator.md)。
 {% endhint %}
 {% endtab %}
 {% endtabs %}
@@ -225,7 +207,7 @@ SSO 标识符界面
 
 1、打开网页 App，选择组织旁边的 **≡选项**菜单。
 
-2、从下拉菜单选择 **链接 SSO**。
+2、从下拉菜单选择**链接 SSO**。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/cv0DGhcgyEbQEn4MvdJp5/fefb4158c09be8cf9804ed5579c2d7dc/Screenshot_2024-02-26_at_2.07.03_PM.png?_a=DAJCwlWIZAAB" %}
 链接 SSO

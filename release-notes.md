@@ -30,15 +30,15 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### 我的账户 <a href="#my-account" id="my-account"></a>
 
-* **新设备登录保护**：为确保您的账户安全，Bitwarden 将逐步开始要求未使用两步登录或 SSO 的用户进行额外的验证。[了解更多](miscellaneous/new-device-verification.md)。
+* **新设备登录保护**：为确保您的账户安全，Bitwarden 将逐步开始要求未使用两步登录或 SSO 的用户进行额外的验证。[了解更多](my-account/log-in-and-unlock/new-device-protection.md)。
 * **恢复密码使用更新**：使用恢复密码时，虽然仍需要您的电子邮箱地址和主密码，但现在将自动登录您的密码库并停用两步登录，而不是仅停用两步登录。[了解更多](two-step-login/recovery-codes.md#use-your-recovery-code)。
 * **适用于 macOS 桌面的 FIDO2 两步登录**：macOS 桌面 App 现在支持使用 FIDO2 通行密钥的两步登录。[了解更多](two-step-login/setup-guides/two-step-login-via-fido2-webauthn.md)。
 
 ### Password Manager
 
-* **「点击以自动填充」设置已移动**：浏览器扩展上的「点击以自动填充」设置已移至**设置** → **外观**选项卡。了解更多。
-* **阻止 iOS 上的重复通行密码**：在 iOS 上无法保存与 Bitwarden 密码库中已存储的现有用户名和服务相匹配的重复通行密钥。现有通行密钥可能会被修改或覆盖。了解更多有关创建通行密钥的信息。
-* **企业单点登录更新**：在单点登录工作流程的第一步添加了「使用单点登录」按钮，以简化企业单点登录。了解更多。
+* **「点击以自动填充」设置已移动**：浏览器扩展上的「点击以自动填充」设置已移至**设置** → **外观**选项卡。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#zi-ding-yi-zi-dong-tian-chong-xing-wei)。
+* **阻止 iOS 上的重复通行密码**：在 iOS 上无法保存与 Bitwarden 密码库中已存储的现有用户名和服务相匹配的重复通行密钥。现有通行密钥可能会被修改或覆盖。[了解更多](password-manager/vault-basics/storing-passkeys.md#using-passkeys-with-bitwarden)有关创建通行密钥的信息。
+* **企业单点登录更新**：在单点登录工作流程的第一步添加了「使用单点登录」按钮，以简化企业单点登录。[了解更多](login-with-sso/using-login-with-sso.md#login-using-sso)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -60,7 +60,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 * 按照[此页面](two-step-login/two-step-login-methods.md)上的任何指南预先设置两步登录。
 * 从**设置** → **我的账户** → **危险操作区**界面中退出此功能。
 
-[了解更多](miscellaneous/new-device-verification.md)。
+[了解更多](my-account/log-in-and-unlock/new-device-protection.md)。
 {% endhint %}
 
 此次发布包含：
