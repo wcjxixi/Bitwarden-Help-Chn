@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-offline/)
 {% endhint %}
 
-这篇文章将指导您在**离线或**[**网闸**](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8)**环境**中安装和部署 Bitwarden 到您自己的服务器。请查看 Bitwarden [软件发布支持](../../../security/bitwarden-software-release-support.md)文档。
+这篇文章将指导您在**离线或网闸环境**中安装和部署 Bitwarden 到您自己的服务器。请查看 Bitwarden [软件发布支持](../../../security/bitwarden-software-release-support.md)文档。
 
 > **\[译者注]**：[网闸](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8) (air-gapped) 网络，是指与外部网络（如互联网或其他外部系统）完全隔离的计算机网络。这种隔离通过物理或逻辑手段实现，确保网络无法与外部环境进行数据交换，从而增强安全性。
 
@@ -16,22 +16,26 @@
 我们会尽量在 [GitHub 上的发行说明](https://github.com/bitwarden/server/releases)中强调这些。你也可以在 GitHub 上监控 Bitwarden 安装脚本所使用的[依赖模板](https://github.com/bitwarden/server/tree/master/util/Setup/Templates)的更改。
 {% endhint %}
 
-## 要求 <a href="#installation-procedure" id="installation-procedure"></a>
+## 系统规格要求 <a href="#requirements" id="requirements"></a>
 
-在继续安装之前，请确保满足以下要求：
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
 
-* [Docker Engine](https://docs.docker.com/engine/installation/) 和 [Docker Compose](https://docs.docker.com/compose/install/) 已安装并准备好在您的服务器上使用。
-* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发行页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub.zip` 文件，并已将该文件传输到您的服务器。
+<mark style="color:red;">ª</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
+
+另外，请确保满足以下要求：
+
+* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发行页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub.zip` 或 `docker-stub-EU.zip` 文件，并已将该文件传输到您的服务器。
 * 离线 SMTP 服务器已在您的环境中设置并处于活动状态。
 
-### 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
+运行您的 Bitwarden 部署的服务器不需要允许出站流量访问网络外部的任何地址，但客户端应用程序必须配置为访问服务器的完全限定域名 (FQDN)，默认情况下使用端口 80 和 443。在安装过程中，您可以选择使用不同的端口，但无论选择哪个端口，都必须开放这些端口以供客户端访问。
 
-|           | **最低**                      | **推荐**                      |
-| --------- | --------------------------- | --------------------------- |
-| 处理器       | x64, 1.4GHz                 | x64, 2GHz 双核                |
-| 内存        | 2GB RAM                     | 4GB RAM                     |
-| 存储        | 12GB                        | 25GB                        |
-| Docker 版本 | Engine 19+ 以及 Compose 1.24+ | Engine 19+ 以及 Compose 1.24+ |
+> **\[译者注]**：[FQDN](https://zh.wikipedia.org/wiki/%E5%AE%8C%E6%95%B4%E7%B6%B2%E5%9F%9F%E5%90%8D%E7%A8%B1)：即完全限定域名 (Fully Qualified Domain Name)，是互联网上用于标识特定主机或服务器的完整域名。它由主机名和域名组成，确保在全球范围内唯一地定位到一个网络资源。FQDN 从最具体的部分（主机名）到最一般的部分（顶级域名）依次排列，各部分之间用点（.）分隔。
+>
+> 例如，一个典型的 FQDN `mail.example.com` ：
+>
+> * `mail` 是主机名，指定了特定的服务器或服务。
+> * `example.com` 是域名，指定了该主机所属的组织或实体。
+> * `.com` 是顶级域名 (TLD)，表示这是一个商业实体。
 
 ## 安装步骤 <a href="#installation-procedure" id="installation-procedure"></a>
 
@@ -91,11 +95,11 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 
 ### 配置您的机器 <a href="#configure-your-machine" id="configure-your-machine"></a>
 
-要使用 Bitwarden 服务器所需的资产配置您的机器：
-
-{% hint style="success" %}
-如果您[已创建 Bitwarden 用户和目录](linux-offline-deployment.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。
+{% hint style="danger" %}
+如果[已创建 Bitwarden 用户和目录](linux-offline-deployment.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。 **请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题
 {% endhint %}
+
+要使用 Bitwarden 服务器所需的资产配置您的机器：
 
 1、创建一个名为 `bwdata` 的新目录，并将 `docker-stub.zip` 解压到其中，例如：
 
@@ -136,21 +140,19 @@ openssl pkcs12 -export -out ./identity/identity.pfx -inkey identity.key -in iden
 
 在上述命令中，将 `IDENTITY_CERT_PASSWORD` 替换为在**步骤 2** 中创建和使用的证书密码。
 
-4、将 `identity.pfx` 复制到 `./bwdata/ssl` 目录。
-
-5、在 `./bwdata/ssl` 中创建一个以您的域名命名的子目录，例如：
+4、在 `./bwdata/ssl` 中创建一个以您的域名命名的子目录，例如：
 
 ```shell
 mkdir ./ssl/bitwarden.example.com
 ```
 
-6、在新创建的 `./bwdata/ssl/bitwarden.example.com` 子目录中提供受信任的 SSL 证书和私钥。
+5、在新创建的 `./bwdata/ssl/bitwarden.example.com` 子目录中提供受信任的 SSL 证书和私钥。
 
 {% hint style="info" %}
 此目录映射到 NGINX 容器的 `/etc/ssl` 目录。如果您无法提供受信任的 SSL 证书，请在安装前使用代理，以为 Bitwarden 客户端应用程序提供一个 HTTPS 端点。
 {% endhint %}
 
-7、在 `./bwdata/nginx/default.conf` 中：
+6、在 `./bwdata/nginx/default.conf` 中：
 
 1. 将所有实例 `bitwarden.example.com` 替换为您的域名，包括 `Content-Security-Policy` 标头。
 2. 将 `ssl_certificate` 和 `ssl_certificate_key` 变量设置为**步骤 6** 中提供的证书和私钥的路径。
@@ -158,11 +160,11 @@ mkdir ./ssl/bitwarden.example.com
    * 如果您使用受信任的 SSL 证书，请将 `ssl_trusted_certificate` 变量设置为证书的路径。
    * 如果您使用自签名证书，请注释掉 `ssl_trusted_certificate` 变量。
 
-8、在 `./bwdata/env/mssql.override.env` 中，将 `RANDOM_DATABASE_PASSWORD` 替换为在**步骤 2** 中创建的密码。
+7、在 `./bwdata/env/mssql.override.env` 中，将 `RANDOM_DATABASE_PASSWORD` 替换为在**步骤 2** 中创建的密码。
 
-9、在 `./bwdata/web/app-id.json` 中，将 `bitwarden.example.com` 替换为您的域名。
+8、在 `./bwdata/web/app-id.json` 中，将 `bitwarden.example.com` 替换为您的域名。
 
-10、在 `./bwdata/env/uid.env` 中，设置您之前创建的 `bitwarden` 用户和组的 UID 和 GID，以便容器在它们下面运行，例如：
+9、在 `./bwdata/env/uid.env` 中，设置您之前创建的 `bitwarden` 用户和组的 UID 和 GID，以便容器在它们下面运行，例如：
 
 ```shell
 LOCAL_UID=1001
@@ -209,6 +211,11 @@ docker ps
 
 您现在可以注册一个新帐户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../../configure-environment-variables.md)）以验证您的新帐户的电子邮件。
 
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+
+1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../self-host-an-organization.md)以开始。
+2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
+
 ## 更新您的服务器 <a href="#update-your-server" id="update-your-server"></a>
 
 更新已手动安装和部署的自托管服务器与[标准更新过程](../../update-your-instance.md)有所不同。要更新您手动安装的服务器：
@@ -216,7 +223,8 @@ docker ps
 1. 从 [GitHub 发行页面](https://github.com/bitwarden/server/releases)下载最新的 `docker-stub.zip` 存档。
 2. 将此新的 `docker-stub.zip` 存档解压缩并将其内容与当前 `bwdata` 目录中的内容进行比较，将任何新内容复制到 `bwdata` 中预先存在的文件中。\
    **不要**使用此较新的 `docker-stub.zip` 存档的内容直接覆盖您预先存在的 `bwdata` 目录，因为这会覆盖您已经完成的任何自定义配置工作。
-3.  运行以下命令以使用已更新的配置和最新的容器重新启动服务器：
+3. 下载最新的容器镜像，并按照[上面的文档](linux-offline-deployment.md#download-and-transfer-images)所述将其传输到离线计算机。
+4.  运行以下命令以使用已更新的配置和最新的容器重新启动服务器：
 
     ```bash
     docker-compose -f ./docker/docker-compose.yml down && docker-compose -f ./docker/docker-compose.yml up -d

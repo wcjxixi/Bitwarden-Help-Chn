@@ -8,7 +8,7 @@
 
 ## 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
 
-<table data-header-hidden><thead><tr><th width="177.46326865053078"></th><th width="240.55465526874184">最低</th><th>推荐</th></tr></thead><tbody><tr><td></td><td><strong>最低</strong></td><td><strong>推荐</strong></td></tr><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>6GB RAM</td><td>8+GB RAM</td></tr><tr><td>存储</td><td>76GB</td><td>90GB</td></tr><tr><td>Docker 版本</td><td>Engine 19+ 以及 Compose 1.24+</td><td>Engine 19+ 以及 Compose 1.24+</td></tr></tbody></table>
+<table><thead><tr><th width="177.46326865053078"></th><th width="240.55465526874184">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>6GB RAM</td><td>8+GB RAM</td></tr><tr><td>存储</td><td>76GB</td><td>90GB</td></tr><tr><td>Docker 版本</td><td>Engine 19+ 以及 Compose 1.24+</td><td>Engine 19+ 以及 Compose 1.24+</td></tr></tbody></table>
 
 ### 嵌套虚拟化 <a href="#nested-virtualization" id="nested-virtualization"></a>
 

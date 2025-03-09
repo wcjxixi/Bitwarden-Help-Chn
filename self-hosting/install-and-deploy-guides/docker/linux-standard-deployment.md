@@ -6,7 +6,7 @@
 
 这篇文章将指导您安装和部署 Bitwarden 到您自己的 Liunx 服务器。Bitwarden 也可以安装和部署在 [Windows](windows-standard-deployment.md) 机器上。请查看 Bitwarden [软件发布支持](../../../security/bitwarden-software-release-support.md)文档。
 
-## 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
+## 系统规格要求 <a href="#requirements" id="requirements"></a>
 
 <table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
 
@@ -111,7 +111,7 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 ### 安装 Bitwarden <a href="#install-bitwarden" id="install-bitwarden"></a>
 
 {% hint style="danger" %}
-如果您[已经创建 Bitwarden 用户和目录](linux-standard-deployment.md#chuang-jian-bitwarden-ben-di-yong-hu-he-mu-lu)，请从 `/opt/bitwarden` 目录中以 `bitwarden` 用户身份进行操作。
+如果[已创建 Bitwarden 用户和目录](linux-standard-deployment.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。 **请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题。
 {% endhint %}
 
 Bitwarden 提供了一个 Shell 脚本，可以轻松地在 Linux 和 macOS（Bash）或 Windows（PowerShell）上安装。完成以下步骤以使用 shell 脚本安装 Bitwarden：

@@ -14,7 +14,7 @@
 我们会尽量在 [GitHub 上的发行说明](https://github.com/bitwarden/server/releases)中强调这些。你也可以在 GitHub 上监控 Bitwarden 安装脚本所使用的[依赖模板](https://github.com/bitwarden/server/tree/master/util/Setup/Templates)的更改。
 {% endhint %}
 
-## 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
+## 系统规格要求 <a href="#requirements" id="requirements"></a>
 
 <table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
 
@@ -75,7 +75,7 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 ### 下载和配置 <a href="#download-and-configure" id="download-and-configure"></a>
 
 {% hint style="danger" %}
-如果已创建 Bitwarden 用户和目录，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。 **请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题。
+如果[已创建 Bitwarden 用户和目录](linux-standard-deployment-1.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。 **请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题。
 {% endhint %}
 
 要下载 Bitwarden 并配置 Bitwarden 服务器资产：
