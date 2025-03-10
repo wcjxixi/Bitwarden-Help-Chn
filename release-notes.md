@@ -42,13 +42,13 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **「移除使用 PIN 码解锁」策略**：企业组织现在可以一个设置策略，禁止成员在客户端 App 中使用 PIN 码解锁。了解更多。
-* **策略不合规变更**：以前因不合规而从组织中删移除成员的策略，现在将改为撤销这些成员的访问权限。了解更多。
-* **适用于设备批准请求的电子邮件通知**：每当组织成员提交可信设备批准请求时，管理员现在都会收到一封电子邮件。了解更多。
+* **「禁用 PIN 码解锁」策略**：企业组织现在可以一个设置策略，禁止成员在客户端 App 中使用 PIN 码解锁。[了解更多](organizations/enterprise-policies.md)。
+* **策略不合规变更**：以前因不合规而从组织中删移除成员的策略，现在将改为撤销这些成员的访问权限。[了解更多](organizations/user-management.md#revoke-access)。
+* **适用于设备批准请求的电子邮件通知**：每当组织成员提交可信设备批准请求时，管理员现在都会收到一封电子邮件。[了解更多](admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)。
 
 ### 提供商门户 <a href="#provider-portal" id="provider-portal"></a>
 
-* **将现有组织添加到提供商门户**：如果提供商用户也是组织的所有者，现在可以将现有组织添加到提供商门户。了解更多。
+* **将现有组织添加到提供商门户**：如果提供商用户也是组织的所有者，现在可以将现有组织添加到提供商门户。[了解更多](provider-portal/get-started-with-provider-portal.md#add-an-existing-organization)。
 
 ## 2025.2.0
 

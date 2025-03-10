@@ -12,9 +12,9 @@
 
 作为组织管理员、所有者或具有**管理账户恢复**权限的[自定义用户](../../user-management/member-roles-and-permissions.md#custom-role)，要批准请求：
 
-1、登录到 Bitwarden Web 应用程序然后使用产品切换器打开「管理控制台」：
+1、登录到 Bitwarden 网页 App 然后使用产品切换器打开「管理控制台」：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/919a2c332ed6a53707f80ac3f734e0a8/2024-06-04_10-13-18.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
 产品切换器
 {% endembed %}
 
@@ -46,7 +46,7 @@ Bitwarden 建议在启用和使用批量设备批准之前，先审查重要的�
 
 当设备请求获得批准后，请求用户会收到一封电子邮件，通知他们可以继续在该设备登录。用户必须在 12 小时内登录新设备，否则批准将失效。
 
-未批准的请求将在 1 周后失效。您可以通过选择 **✘拒绝请求**来拒绝登录尝试，或者通过选择最上面的选项 **☷** 菜单然后选择 **✘拒绝所有请求**来拒绝所有现有请求。
+未批准的请求将在 1 周后失效。您可以通过选择 **✘拒绝请求**来拒绝登录尝试，或者通过选择最上面的选项 **≡**&#x83DC;单然后选择 **✘拒绝所有请求**来拒绝所有现有请求。
 
 [事件](../../reporting/event-logs.md)在以下情况下被记录：
 
