@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/self-host-with-helm/)
 {% endhint %}
 
-本文将指导您完成使用 Helm 图表在不同 Kubernetes 部署中安装和部署 Bitwarden 的过程。
+本文将指导您使用 Helm 图表在不同的 Kubernetes 部署中安装和部署 Bitwarden。
 
 本文将描述在 Kubernetes 上托管 Bitwarden 的通用步骤。提供了特定于提供商的指南，可帮助您深入了解如何根据每个提供商的特定产品来更改部署：
 

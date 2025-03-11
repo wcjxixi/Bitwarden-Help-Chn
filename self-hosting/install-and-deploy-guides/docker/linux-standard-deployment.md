@@ -209,6 +209,8 @@ docker ps
 ```
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3Sq7MaJZ1jaEJUCW44wmwj/0671877450882e4c9f3a8d614bafd734/docker-healthy.png?fm=webp&h=232&q=50&w=1567" %}
+显示健康容器的列表
+{% endembed %}
 
 恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
 

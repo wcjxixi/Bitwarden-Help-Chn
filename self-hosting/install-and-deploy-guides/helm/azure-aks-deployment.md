@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/azure-aks-deployment/)
 {% endhint %}
 
-本文将指导您完成使用 Azure 和 AKS 的特定功能来修改您的 [Bitwarden 自托管 Helm Chart 部署](self-host-with-helm.md)。
+本文将指导您使用 Azure 和 AKS 的特定功能来修改您的 [Bitwarden 自托管 Helm Chart 部署](self-host-with-helm.md)。
 
 ## 入口控制器 <a href="#ingress-controllers" id="ingress-controllers"></a>
 

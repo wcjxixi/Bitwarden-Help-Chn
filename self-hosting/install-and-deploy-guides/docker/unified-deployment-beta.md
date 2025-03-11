@@ -5,12 +5,14 @@
 {% endhint %}
 
 {% hint style="danger" %}
-这是一个测试版，这意味着此部署选项可能不稳定并存在问题。如果您管理 Bitwarden 组织密码库，我们建议使用官方支持的标准部署选项。
+该解决方案处于测试阶段，仅供个人使用。商业计划应使用官方支持的标准部署选项。
+
+虽然 Bitwarden Unified 自托管部署还处于测试阶段，但 Unified 安装不会设置自动升级过程来获取最新的可用镜像。Bitwarden 建议，在升级之前，应留出一些时间让发布的版本趋于稳定。
 
 [了解如何报告问题](unified-deployment-beta.md#reporting-issues)。
 {% endhint %}
 
-本文将引导您安装和启动 Bitwarden Unified 自托管部署。使用此部署方法可以：
+本文将指导您安装和启动 [Bitwarden Unified 自托管部署](https://github.com/bitwarden/self-host/tree/main/docker-unified)。使用此部署方法可以：
 
 * 通过使用单个 Docker 映像部署 Bitwarden 来简化配置并优化资源使用（CPU、内存）。
 * 利用不同的数据库解决方案，例如 MSSQL、PostgreSQL、MySQL/MariaDB。
@@ -18,23 +20,29 @@
 
 ## 系统要求 <a href="#system-requirements" id="system-requirements"></a>
 
-Bitwarden Unified 部署需要：
+Bitwarden Unified 部署要求：
 
 * 至少 200 MB RAM
 * 1GB 存储
-* Docker Engine 19+
+* Docker Engine 26+
 
 ### 安装 Docker <a href="#install-docker" id="install-docker"></a>
 
-Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)在您的机器上运行。Unified 部署可以与任何 Docker 版本或计划一起运行。请评估哪个版本最适合您的安装。
+Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)运行在您的机器上。Unified 部署可以与任何 Docker 版本或计划一起运行。请评估哪个版本最适合您的安装。
 
 **在继续安装之前需要在您的计算机上安装 Docker**。请参阅以下 Docker 文档获取帮助：
 
-* [安装 Docker 引擎](https://docs.docker.com/engine/installation/)
+* [安装 Docker Engine](https://docs.docker.com/engine/installation/)
 
 ## 运行 Bitwarden Unified <a href="#run-bitwarden-unified" id="run-bitwarden-unified"></a>
 
 可以使用 `docker run` 命令（参见[此处](unified-deployment-beta.md#using-docker-run)）或使用 Docker Compose（参见[此处](unified-deployment-beta.md#using-docker-compose)）运行 Unified 部署。无论哪种方式，您都需要为容器指定环境变量。
+
+### 快速入门指南 <a href="#quick-start-guide" id="quick-start-guide"></a>
+
+使用 `docker run` 在 Raspberry Pi 上启动 Bitwarden：
+
+{% embed url="https://vimeo.com/799236723" %}
 
 ### 指定环境变量 <a href="#specify-environment-variables" id="specify-environment-variables"></a>
 
@@ -42,16 +50,17 @@ Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)在您
 
 至少为示例 `.env` 文件的 `# Required Settings #` 部分下的变量设置值：
 
-| 变量                    | 描述                                                                              |
-| --------------------- | ------------------------------------------------------------------------------- |
-| BW\_DOMAIN            | 将 `bitwarden.yourdomain.com` 替换为用于访问 Bitwarden 所使用域名。                           |
-| BW\_DB\_PROVIDER      | 您将用于 Bitwarden 服务器的数据库提供程序。可用选项包括 `sqlserver`、`postgresql` 或 `mysql`/`mariadb`。 |
-| BW\_DB\_SERVER        | 运行数据库的服务器的名称。                                                                   |
-| BW\_DB\_DATABASE      | 您的 Bitwarden 数据库的名称。                                                            |
-| BW\_DB\_USERNAME      | 用于访问 Bitwarden 数据库的用户名。                                                         |
-| BW\_DB\_PASSWORD      | 用于访问 Bitwarden 数据库的密码。                                                          |
-| BW\_INSTALLATION\_ID  | 从 [https://bitwarden.com/host/](https://bitwarden.com/host/) 生成的有效安装 ID。        |
-| BW\_INSTALLATION\_KEY | 从 [https://bitwarden.com/host/](https://bitwarden.com/host/) 生成的有效安装密钥。         |
+| 变量                    | 描述                                                                                    |
+| --------------------- | ------------------------------------------------------------------------------------- |
+| BW\_DOMAIN            | 将 `bitwarden.yourdomain.com` 替换为用于访问 Bitwarden 所使用域名。                                 |
+| BW\_DB\_PROVIDER      | 您将用于 Bitwarden 服务器的数据库提供程序。可用选项包括 `sqlserver`、`postgresql` 或 `mysql`/`mariadb`。       |
+| BW\_DB\_SERVER        | 运行数据库的服务器的名称。                                                                         |
+| BW\_DB\_DATABASE      | 您的 Bitwarden 数据库的名称。                                                                  |
+| BW\_DB\_USERNAME      | 用于访问 Bitwarden 数据库的用户名。                                                               |
+| BW\_DB\_PASSWORD      | 用于访问 Bitwarden 数据库的密码。                                                                |
+| BW\_DB\_FILE          | 仅 `sqlite` 需要，如果您想指定数据库文件的路径。如果不指定，`sqlite` 会自动在 `/etc/bitwarden` 卷下创建 `vault.db` 文件。 |
+| BW\_INSTALLATION\_ID  | 从 [https://bitwarden.com/host/](https://bitwarden.com/host/) 生成的有效安装 ID。              |
+| BW\_INSTALLATION\_KEY | 从 [https://bitwarden.com/host/](https://bitwarden.com/host/) 生成的有效安装密钥。               |
 
 {% hint style="info" %}
 与 Bitwarden 标准部署不同，Unified 部署使用的数据库并不是开箱即用的。您可以使用现有数据库，也可以创建一个新数据库，如[本示例中](unified-deployment-beta.md#using-docker-compose)所述，在这两种情况下，您都必须在本文档记录的 `BW_DB_...` 变量中输入有效的信息。
@@ -67,7 +76,7 @@ Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)在您
 docker run -d --name bitwarden -v ./bwdata/:/etc/bitwarden -p 80:80  --env-file settings.env bitwarden/self-host:beta
 ```
 
-上面的命令有一系列 `docker run` 命令必需的选项，包括：
+上面的命令有一系列 `docker run` 命令所需的选项，包括：
 
 | 名称，缩写          | 描述                                                                                                                                                                                                                        |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -149,7 +158,7 @@ docker ps
 要更新您的 Unified 部署：
 
 {% tabs %}
-{% tab title="docker run 更新" %}
+{% tab title="Docker run 更新" %}
 1、停止正在运行的 Docker 容器：
 
 ```bash
@@ -219,7 +228,7 @@ docker compose ps
 
 #### SSL
 
-使用这些值更改证书设置。有关更多信息，请参阅[证书选项](../../certificate-options.md)。
+使用这些值更改证书设置。
 
 | 变量                  | 描述                                                                                                                                                                            |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -230,26 +239,30 @@ docker compose ps
 | BW\_SSL\_CA\_CERT   | SSL CA 证书的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ca.crt`。                                                                                                                   |
 | BW\_ENABLE\_SSL\_DH | 使用具有Diffie-Hellman 密钥交换的 SSL。`true`/`false`。默认为 `false`。                                                                                                                      |
 | BW\_SSL\_DH\_CERT   | Diffie-Hellman 参数文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `dh.pem`。                                                                                                         |
-| BW\_SSL\_PROTOCOLS  | NGINX 使用的 SSL 版本。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server\_Side\_TLS)。                                                                                          |
-| BW\_SSL\_CIPHERS    | NGINX 使用的 SSL 密码套件。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server\_Side\_TLS)。                                                                                        |
+| BW\_SSL\_PROTOCOLS  | NGINX 使用的 SSL 版本。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server_Side_TLS)。                                                                                            |
+| BW\_SSL\_CIPHERS    | NGINX 使用的 SSL 密码套件。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server_Side_TLS)。                                                                                          |
+
+{% hint style="info" %}
+如果使用的是现有的 SSL 证书，则必须在 `settings.env` 中启用相应的 SSL 选项。SSL 文件必须存储在 `/etc/bitwarden` 中，可以在 `docker-compose.yml` 文件中引用。这些文件必须与 `settings.env` 中配置的名称一致。
+
+如果启用了 SSL，且预期位置 (`/etc/bitwarden`) 中不存在的证书文件，默认情况下会生成自签名证书。
+{% endhint %}
 
 #### 服务 <a href="#services" id="services"></a>
 
-通过更改以下值，可以针对特定用例（例如企业或团队需求）启用或禁用其他服务：
+通过更改以下值，可以针对特定用例（例如企业或团队需求）启用或禁用附加服务：
 
-| 变量                                | 描述                                                                                                                                                 |
-| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BW\_ENABLE\_ADMIN                 | <p><strong>不要禁用此服务</strong>。</p><p>在<a href="../../system-administrator-portal.md">此处</a>了解有关管理面板功能的更多信息。默认为 <code>true</code>。</p>                |
-| BW\_ENABLE\_API                   | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
-| BW\_ENABLE\_EVENTS                | 为团队和企业事件监控启用或禁用 Bitwarden 事件日志。默认为 `false`。                                                                                                        |
-| BW\_ENABLE\_ICONS                 | 启用或禁用登录项目 URI 设置的 Bitwarden 品牌图标。在[此处](../../../security/privacy-when-using-website-icons.md)了解更多。默认为 `true`。                                      |
-| BW\_ENABLE\_IDENTITY              | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
-| BW\_ENABLE\_NOTIFICATIONS         | 当使用设备登录、移动端密码库同步等时，启用或禁用用于接收移动设备推送通知的通知服务。默认为 `true`。                                                                                              |
-| BW\_ENABLE\_SCIM                  | 为企业组织启用或禁用 SCIM。默认为 `false`。                                                                                                                       |
-| BW\_ENABLE\_SSO                   | 为企业组织启用或禁用 SSO 服务。默认为 `false`。                                                                                                                     |
-| BW\_ICONS\_PROXY\_TO\_CLOUD       | <p>启用此服务将代理图标服务请求以通过云服务进行操作，以降低系统内存负载。</p><p>如果选择使用此设置，则应将 <code>BW_ENABLE_ICONS</code> 设置为 <code>false</code> 以减少容器负载。默认为 <code>false</code>。</p> |
-| BW\_ENABLE\_KEY\_CONNECTOR        | 设置为 `true` 以启用 [Key Connector](../../../login-with-sso/about-key-connector.md)。                                                                    |
-| BW\_KEY\_CONNECTOR\_INTERNAL\_URL | [Key Connector](../../../login-with-sso/about-key-connector.md) 使用的内部 URL。                                                                         |
+| 变量                          | 描述                                                                                                                                                 |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BW\_ENABLE\_ADMIN           | <p><strong>不要禁用此服务</strong>。</p><p>在<a href="../../system-administrator-portal.md">此处</a>了解有关管理面板功能的更多信息。默认为 <code>true</code>。</p>                |
+| BW\_ENABLE\_API             | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
+| BW\_ENABLE\_EVENTS          | 为团队和企业事件监控启用或禁用 Bitwarden 事件日志。默认为 `false`。                                                                                                        |
+| BW\_ENABLE\_ICONS           | 启用或禁用登录项目 URI 设置的 Bitwarden 品牌图标。在[此处](../../../security/privacy-when-using-website-icons.md)了解更多。默认为 `true`。                                      |
+| BW\_ENABLE\_IDENTITY        | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
+| BW\_ENABLE\_NOTIFICATIONS   | 当使用设备登录、移动端密码库同步等时，启用或禁用用于接收移动设备推送通知的通知服务。默认为 `true`。                                                                                              |
+| BW\_ENABLE\_SCIM            | 为企业组织启用或禁用 SCIM。默认为 `false`。                                                                                                                       |
+| BW\_ENABLE\_SSO             | 为企业组织启用或禁用 SSO 服务。默认为 `false`。                                                                                                                     |
+| BW\_ICONS\_PROXY\_TO\_CLOUD | <p>启用此服务将代理图标服务请求以通过云服务进行操作，以降低系统内存负载。</p><p>如果选择使用此设置，则应将 <code>BW_ENABLE_ICONS</code> 设置为 <code>false</code> 以减少容器负载。默认为 <code>false</code>。</p> |
 
 #### 电子邮件 <a href="#mail" id="mail"></a>
 
@@ -271,22 +284,80 @@ docker compose ps
 | globalSettings\_yubico\_clientId | <p>替换从 Yubico Key 获取的 ID 值。</p><p>在<a href="https://upgrade.yubico.com/getapikey/">此处</a>注册 Yubico 密钥。</p> |
 | globalSettings\_yubico\_key      | 输入从 Yubico 获取的密钥值。                                                                                         |
 
+#### 数据库配置 <a href="#database-configurations" id="database-configurations"></a>
+
+使用与  Unified 部署兼容的各种数据库选项需要额外的 `.env` 配置。
+
+{% tabs %}
+{% tab title="MySQL/MariaDB" %}
+在 `settings.env` 中：
+
+```bash
+# Database
+BW_DB_PROVIDER=mysql
+BW_DB_SERVER=db
+BW_DB_DATABASE=bitwarden_vault
+BW_DB_USERNAME=bitwarden
+BW_DB_PASSWORD=super_strong_password
+```
+{% endtab %}
+
+{% tab title="MSSQL" %}
+在 `settings.env` 中：
+
+```bash
+# Database
+BW_DB_PROVIDER=sqlserver
+BW_DB_SERVER=db
+BW_DB_DATABASE=bitwarden_vault
+BW_DB_USERNAME=bitwarden
+BW_DB_PASSWORD=super_strong_password
+```
+{% endtab %}
+
+{% tab title="SQLite" %}
+在 `settings.env` 中：
+
+```bash
+# Database
+BW_DB_PROVIDER=sqlite
+BW_DB_FILE=/path/to/.db
+```
+
+指定 `sqlite` 值将自动在 `/etc/bitwardenvolume` 中创建 `vault.db` 文件。只有在您想要指定不同数据库文件的路径时，才需要指定 `BW_DB_FILE`。
+{% endtab %}
+
+{% tab title="PostgreSQL" %}
+在 `settings.env` 中：
+
+```bash
+# Database
+BW_DB_PROVIDER=postgresql
+BW_DB_SERVER=db
+BW_DB_DATABASE=bitwarden_vault
+BW_DB_USERNAME=bitwarden
+BW_DB_PASSWORD=super_strong_password
+```
+{% endtab %}
+{% endtabs %}
+
 #### 其他 <a href="#other" id="other"></a>
 
-| 变量                                        | 描述                                                                                                                          |
-| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| globalSettings\_\_disableUserRegistration | 启用或禁用用户帐户注册功能。                                                                                                              |
-| globalSettings\_\_hibpApiKey              | 输入 Have I Been Pwnd 提供的 API 密钥。在[此处](https://haveibeenpwned.com/API/Key)注册以获取 API 密钥。                                       |
-| adminSettings\_\_admins                   | 输入管理员电子邮件地址。                                                                                                                |
-| BW\_REAL\_IPS                             | 在 `nginx.conf` 中以逗号分隔列表定义真实 IP。用于定义转发客户端 IP 地址的代理服务器。[了解更多](https://nginx.org/en/docs/http/ngx\_http\_realip\_module.html)。 |
-| BW\_CSP                                   | 内容安全策略参数。重新配置此参数可能会破坏功能。更改此参数，您将负责维护此值。                                                                                     |
+| 变量                                        | 描述                                                                                                                       |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| globalSettings\_\_disableUserRegistration | 启用或禁用用户帐户注册功能。                                                                                                           |
+| globalSettings\_\_hibpApiKey              | 输入 Have I Been Pwnd 提供的 API 密钥。在[此处](https://haveibeenpwned.com/API/Key)注册以获取 API 密钥。                                    |
+| adminSettings\_\_admins                   | 输入管理员电子邮件地址。                                                                                                             |
+| BW\_REAL\_IPS                             | 在 `nginx.conf` 中以逗号分隔列表定义真实 IP。用于定义转发客户端 IP 地址的代理服务器。[了解更多](https://nginx.org/en/docs/http/ngx_http_realip_module.html)。 |
+| BW\_CSP                                   | 内容安全策略参数。重新配置此参数可能会破坏功能。更改此参数，您将负责维护此值。                                                                                  |
+| BW\_DB\_PORT                              | 为数据库流量指定自定义端口。如果未指定，默认端口将取决于您选择的数据库提供程序。                                                                                 |
 
 ### 重新启动容器 <a href="#restart-the-container" id="restart-the-container"></a>
 
 要在更改环境变量后重新启动 Docker 容器，请从 Bitwarden Unified 部署目录运行以下命令：
 
 {% tabs %}
-{% tab title="docker run" %}
+{% tab title="Docker run" %}
 1、停止正在运行的 Docker 容器：
 
 ```shell
@@ -331,9 +402,9 @@ docker compose ps
 
 默认情况下，Bitwarden 容器消耗的内存，通常超过运行所需的最低内存。对于内存敏感的环境，您可以使用 docker `-m` 或 `--memory=` 来限制 Bitwarden 容器的内存使用。
 
-| 名称，缩写         | 描述                                                                                                                                                             |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| --memory=, -m | 容器可以使用的最大内存量。Bitwarden 至少需要 200M。请参阅 [Docker 文档](https://docs.docker.com/config/containers/resource\_constraints/#limit-a-containers-access-to-memory)以了解更多信息。 |
+| 名称，缩写         | 描述                                                                                                                                                            |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --memory=, -m | 容器可以使用的最大内存量。Bitwarden 至少需要 200M。请参阅 [Docker 文档](https://docs.docker.com/config/containers/resource_constraints/#limit-a-containers-access-to-memory)以了解更多信息。 |
 
 要使用 Docker Compose 控制内存使用，请使用 `mem_limit` 键：
 
@@ -352,6 +423,8 @@ services:
 虽然 Bitwarden Unified 部署仍处于测试版，但我们鼓励您通过 GitHub 报告问题并提供反馈。请使用[此问题模板](https://github.com/bitwarden/server/issues/new?assignees=\&labels=bug%2Cbw-unified-deploy\&template=bw-unified.yml)报告与您的 Bitwarden Unified 部署相关的任何内容，并查看[此页面](https://github.com/bitwarden/server/issues/2480)以跟踪已知问题或加入讨论。
 
 ## 附加资源 <a href="#additional-resources" id="additional-resources"></a>
+
+* 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../self-host-an-organization.md)以入门。
 
 有关 Bitwarden 标准自托管部署的更多信息，请参阅：
 

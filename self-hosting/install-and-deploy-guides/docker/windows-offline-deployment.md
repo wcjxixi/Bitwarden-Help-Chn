@@ -4,35 +4,38 @@
 对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-offline-windows/)
 {% endhint %}
 
-这篇文章将引导你完成在**离线或**[**网闸**](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8)**环境**中安装和部署 Bitwarden 到你自己的 Windows 服务器的过程。
+这篇文章将指导您在**离线或网闸环境**中安装和部署 Bitwarden 到您自己的 Windows 服务器。请查看 Bitwarden [软件发布支持](https://help.ppgg.in/security/bitwarden-software-release-support)文档。
 
 > **\[译者注]**：[网闸](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8) (air-gapped) 网络，是指与外部网络（如互联网或其他外部系统）完全隔离的计算机网络。这种隔离通过物理或逻辑手段实现，确保网络无法与外部环境进行数据交换，从而增强安全性。
 
 {% hint style="warning" %}
 **手动安装仅适合高级用户使用。**&#x4EC5;当您非常熟悉 Docker 技术，并且希望对您的 Bitwarden 安装进行更多控制时才可以进行此操作。
 
-手动安装缺乏自动更新 Bitwarden 安装所需的某些依赖项的能力。当你将 Bitwarden 从一个版本升级到下一个版本时，你将负责修改所需的环境变量，修改 nginx 的 `default.conf`，修改 `docker-compose.yml` 等等。
+手动安装缺乏自动更新 Bitwarden 安装所需的某些依赖项的能力。当您将 Bitwarden 从一个版本升级到下一个版本时，您将负责修改所需的环境变量，修改 nginx 的 `default.conf`，修改 `docker-compose.yml` 等等。
 
-我们会尽量在 [GitHub 上的发行说明](https://github.com/bitwarden/server/releases)中强调这些。你也可以在 GitHub 上监控 Bitwarden 安装脚本所使用的[依赖模板](https://github.com/bitwarden/server/tree/master/util/Setup/Templates)的更改。
+我们会尽量在 [GitHub 上的发行说明](https://github.com/bitwarden/server/releases)中强调这些。您也可以在 GitHub 上监控 Bitwarden 安装脚本所使用的[依赖模板](https://github.com/bitwarden/server/tree/master/util/Setup/Templates)的更改。
 {% endhint %}
 
-## 要求 <a href="#installation-procedure" id="installation-procedure"></a>
+## 系统规格要求 <a href="#requirements" id="requirements"></a>
 
-在继续安装之前，请确保满足以下要求：
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
 
-* [Docker Engine](https://docs.docker.com/engine/installation/) 和 [Docker Compose](https://docs.docker.com/compose/install/) 已安装并准备好在您的服务器上使用，以及 **Hyper-V Windows 功能**已启用。
-* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发布页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub.zip` 文件，并已将该文件传输到您的服务器。
+<mark style="color:red;">ª</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[为 Engine 和 Compose 安装 Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)。
+
+另外，请确保满足以下要求：
+
+* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发行页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub.zip` 或 `docker-stub-EU.zip` 文件，并已将该文件传输到您的服务器。
 * 离线 SMTP 服务器已在您的环境中设置并处于活动状态。
-* （**可选**）[OpenSSL Windows 二进制文件](https://wiki.openssl.org/index.php/Binaries)已安装并准备好在您的服务器上使用。如果您愿意，您也可以使用自签名证书代替 OpenSSL。
 
-### 系统规格要求 <a href="#system-specifications" id="system-specifications"></a>
+运行您的 Bitwarden 部署的服务器不需要允许出站流量访问网络外部的任何地址，但客户端应用程序必须配置为访问服务器的完全限定域名 (FQDN)，默认情况下使用端口 80 和 443。在安装过程中，您可以选择使用不同的端口，但无论选择哪个端口，都必须开放这些端口以供客户端访问。
 
-|           | **最低**                      | **推荐**                      |
-| --------- | --------------------------- | --------------------------- |
-| 处理器       | x64, 1.4GHz                 | x64, 2GHz 双核                |
-| 内存        | 6GB RAM                     | 8+GB RAM                    |
-| 存储        | 76GB                        | 90GB                        |
-| Docker 版本 | Engine 19+ 以及 Compose 1.24+ | Engine 19+ 以及 Compose 1.24+ |
+> **\[译者注]**：[FQDN](https://zh.wikipedia.org/wiki/%E5%AE%8C%E6%95%B4%E7%B6%B2%E5%9F%9F%E5%90%8D%E7%A8%B1)：即完全限定域名 (Fully Qualified Domain Name)，是互联网上用于标识特定主机或服务器的完整域名。它由主机名和域名组成，确保在全球范围内唯一地定位到一个网络资源。FQDN 从最具体的部分（主机名）到最一般的部分（顶级域名）依次排列，各部分之间用点（.）分隔。
+>
+> 例如，一个典型的 FQDN `mail.example.com` ：
+>
+> * `mail` 是主机名，指定了特定的服务器或服务。
+> * `example.com` 是域名，指定了该主机所属的组织或实体。
+> * `.com` 是顶级域名 (TLD)，表示这是一个商业实体。
 
 ### 嵌套虚拟化 <a href="#nested-virtualization" id="nested-virtualization"></a>
 
@@ -74,7 +77,7 @@ New-LocalUser "Bitwarden" -Password $Password -Description "Bitwarden Local Admi
 PS C:\> mkdir Bitwarden
 ```
 
-安装 Docker Desktop 后，导航至**设置** → **资源** → **文件共享**并将已创建的目录 (C:\Bitwarden) 添加到资源列表。选择**应用并重新启动**以应用您的更改。
+安装 Docker Desktop 后，导航至 **Settings** → **Resources** → **File Sharing** 然后将已创建的目录 (`C:\Bitwarden`) 添加到资源列表。选择 **Apply & Restart** 以应用您的更改。
 
 ### 配置您的机器 <a href="#configure-your-machine" id="configure-your-machine"></a>
 
@@ -178,11 +181,18 @@ docker-compose -f ./docker/docker-compose.yml up -d
 docker ps
 ```
 
-{% embed url="https://bitwarden.com/_gatsby/image/0042d32f0382fc54a9915e105dc44d11/1625e7787e20d0a58c5062e888806b5b/docker-ps-win.webp?eu=d98a58b5b6c8fc855b60a38168203469e63e51affb5737d66862e0ae49ad9d8324f11f0776c32be02f385e8fd1b247ef60c67e691fbf83db96ea1cf5e966ad5b008650b623f730445b34dba7eda451102bd8491cf7d28b4bf62931cabbe6f36f1e124278ee20b9d7e4f47263af8074618cbfd5583ea5d13aa7171f2796631bbf2dc9c7c1364dbacbb01cefb2e7af0ac89eb22b55418df6632077181e0ebb7fbcacb40175267d1f086e9bed4587228bf165427f630008&a=w%3D850%26h%3D123%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A15%3A52.342Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3kcV9CFkWJrw5qCmKZsyBg/5cd5030d96352e6b1f5f20d1ffb79654/docker-ps-win.png?_a=DAJCwlWIZAAB" %}
+显示健康容器的列表
+{% endembed %}
 
 恭喜！ Bitwarden 现已启动并运行在 `https://your.domain.com` 了。在您的浏览器中访问网络密码库以确认其正常工作。
 
-您现在可以注册一个新帐户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../../configure-environment-variables.md)）以验证您的新帐户的电子邮件。
+您现在可以注册一个新账户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../../configure-environment-variables.md)）以验证您的新账户的电子邮箱。
+
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+
+1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../self-host-an-organization.md)以开始。
+2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
 
 ## 更新您的服务器 <a href="#update-your-server" id="update-your-server"></a>
 
