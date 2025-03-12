@@ -1,16 +1,28 @@
 # 持续管理
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/manage-client-orgs/)
 {% endhint %}
 
-要以[服务用户](provider-users.md#provider-user-types)身份访问[客户组织](provider-portal-overview.md#client-organizations)，请从顶部导航中选择**提供商**，然后从提供商列表中选择您的提供商。在提供商门户中，从**客户**选项卡中选择要管理的客户组织：
+要以[服务用户](provider-users.md#provider-user-types)身份访问[客户组织](provider-portal-overview.md#client-organizations)：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/PnZSleguQQqQUlOY6XLpZ/171f6042afcce28d4e71aeaa831b4029/provider-as-serviceuser.png?fm=webp&h=326&q=50&w=783" %}
+1、使用产品切换器打开**提供商门户**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4xn04Sj9u8n73TPxZUWi5f/dac0d56f47a05e2d8b28754e997a1391/2025-02-25_15-16-00.png?_a=DAJCwlWIZAAB" %}
+品切换器 - 提供商门户
+{% endembed %}
+
+2、从**客户**选项卡中选择要管理的客户组织：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7AoSHeZgJJTBXQmpZ13UBr/56ca464fe6987c8c5fc8e7099235d640/2025-02-25_15-17-46.png?_a=DAJCwlWIZAAB" %}
 提供商门户
 {% endembed %}
 
-进入组织密码库后，您可以全面管理客户组织，包括以下重要的工作内容：
+进入客户管理控制台后，您可以全面管理客户组织，包括以下重要的工作内容：
+
+{% hint style="danger" %}
+提供商用户不能再直接查看、管理、创建或导出客户组织密码库中的项目。但提供商用户可以直接向客户组织导入密码库数据。
+{% endhint %}
 
 | 工作内容         | 描述                                  | 资源                                                                                                                                                    |
 | ------------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -1,6 +1,6 @@
-# 解除客户组织
+# 取消链接客户组织
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/client-org-removal/)
 {% endhint %}
 

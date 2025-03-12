@@ -1,20 +1,24 @@
-# 添加现有组织
+# \*添加现有组织
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/add-existing-client-org/)
+{% endhint %}
+
+{% hint style="danger" %}
+自 2024.7.0 起，不再支持将已有组织迁移到提供商的选项。
 {% endhint %}
 
 代表其客户管理组织的 MSP、经销商和其他 Bitwarden 合作伙伴可以将现有的组织添加到他们的提供商门户。
 
 当 Bitwarden 检测到[提供商管理员](provider-users.md#provider-user-types)的帐户是**非提供商组织的所有者**时，提供商门户将显示 ✚**添加现有组织**按钮：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3Ci2yJ6edQLwkgUON38T1v/123eec87a04a7fdd694fe50d1f7f0db4/add-existing-client-1.png?fm=webp&h=359&q=50&w=691" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Ci2yJ6edQLwkgUON38T1v/07ce5dd908d82067e95eea52c8fa3c00/Screenshot_2024-02-29_at_10.19.05_AM.png?_a=DAJCwlWIZAAB" %}
 添加现有的客户
 {% endembed %}
 
 选择 ✚**添加现有组织**按钮会弹出提示您选择此组织以添加到提供商：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/7beHAnPEiOIZzSp3GjXyIH/b9e85907abd3566f3f7a0f62e849e5e7/add-existing-client-2.png?fm=webp&h=279&q=50&w=765" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7beHAnPEiOIZzSp3GjXyIH/4bb717c2412ea38a26dbe53b38a26a60/Screenshot_2024-02-29_at_10.20.07_AM.png?_a=DAJCwlWIZAAB" %}
 确认添加现有的客户
 {% endembed %}
 

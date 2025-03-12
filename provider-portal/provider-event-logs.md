@@ -1,21 +1,21 @@
 # 提供商事件日志
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/provider-events/)
 {% endhint %}
 
 ## 什么是事件日志？ <a href="#what-are-event-logs" id="what-are-event-logs"></a>
 
-事件日志是您的提供商中发生的事件的时间戳记录。提供商的事件日志只能由[提供商管理员](provider-users.md)从提供商门户的**管理**选项卡中访问：
+事件日志是您的提供商中发生的事件的时间戳记录。提供商的事件日志只能由[提供商管理员](provider-users.md)从提供商门户的**管理** → **事件日志**选项视图访问：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/78qTc5NI4nFDbpxWMDjwJz/b4098e38a47a542e60bbbe573841bfed/provider-events.png?fm=webp&h=440&q=50&w=774" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/78qTc5NI4nFDbpxWMDjwJz/e17201d717128c15e9fb55e55be6b57c/2024-12-05_09-44-47.png?_a=DAJCwlWIZAAB" %}
 提供商事件日志
 {% endembed %}
 
 选择**导出**按钮将创建一个位于指定日期范围内所有事件的 `.csv` 文件：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1BYgVWThvhR5CWpNKBTuOT/a6b7b03285534c47feee2fca4dfb824b/provider-events-export.png?fm=webp&h=214&q=50&w=774" %}
-导出事件日志
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1BYgVWThvhR5CWpNKBTuOT/862268581c453d9f3a0aa25df477f9ef/2024-12-05_09-44-47.png?_a=DAJCwlWIZAAB" %}
+导出提供商事件日志
 {% endembed %}
 
 ### 事件 <a href="#events" id="events"></a>

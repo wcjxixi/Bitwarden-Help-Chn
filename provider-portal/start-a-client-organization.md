@@ -1,26 +1,31 @@
 # 添加客户组织
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/client-org-setup/)
 {% endhint %}
 
 本文将引导您完成[客户组织的创建](start-a-client-organization.md#create-a-client-organization)，并概述了开始管理客户组织的典型[设置步骤](start-a-client-organization.md#initial-setup-procedure)。
 
-## 创建一个客户组织 <a href="#create-a-client-organization" id="create-a-client-organization"></a>
-
-{% hint style="success" %}
-**已经为您的客户设置了组织？**&#x60A8;可以[将现有的组织添加到提供商门户](providers-faqs.md#q-im-already-providing-bitwarden-as-a-service-for-my-clients-what-do-i-need-to-do-to-move-to-the-provider-portal)。
-{% endhint %}
+## 创建客户组织 <a href="#create-a-client-organization" id="create-a-client-organization"></a>
 
 要创建客户组织，您必须是[提供商管理员](provider-users.md#provider-user-types)：
 
-1、导航到提供商门户并选择 ✚**新建客户组织**按钮：
+1、使用产品切换器打开**提供商门户**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5WjBETB0YFm7TS1zpIHeSC/38b2b8a919d8b9c6cd6d0af286f90d71/provider-add-client.png?fm=webp&h=291&q=50&w=691" %}
-创建客户组织
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4xn04Sj9u8n73TPxZUWi5f/dac0d56f47a05e2d8b28754e997a1391/2025-02-25_15-16-00.png?_a=DAJCwlWIZAAB" %}
+产品切换器 - 提供商门户
 {% endembed %}
 
-2、在新建客户组织界面上，输入**组织名称**、**账单电子邮件地址**和**客户所有者的电子邮件地址**。
+2、导航到提供方门户的**客户**标签，然后选择 ✚**添加** → **新增客户**：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5WjBETB0YFm7TS1zpIHeSC/a22563b9172036b1c90bfb61d9ab310b/new_client_org_1.png?_a=DAJCwlWIZAAB" %}
+新增客户组织
+{% endembed %}
+
+3、在新建客户组织界面上1
+
+* 选择创建团队组织还是企业组织。
+* 输入组织名称、客户所有者电子邮件和座位数。
 
 {% hint style="info" %}
 邀请将自动发送到**客户所有者的电子邮件地址**，以作为[所有者](../admin-console/user-management/member-roles-and-permissions.md)加入组织。

@@ -252,7 +252,7 @@
   * [添加客户组织](provider-portal/start-a-client-organization.md)
   * [\*添加现有组织](provider-portal/add-existing-organizations.md)
   * [持续管理](provider-portal/ongoing-administration.md)
-  * [解除客户组织](provider-portal/unlink-client-organization.md)
+  * [取消链接客户组织](provider-portal/unlink-client-organization.md)
   * [提供商事件日志](provider-portal/provider-event-logs.md)
   * [提供商计费](provider-portal/provider-billing.md)
   * [提供商 FAQ](provider-portal/providers-faqs.md)
