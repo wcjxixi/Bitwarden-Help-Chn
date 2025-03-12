@@ -22,34 +22,22 @@
 新增客户组织
 {% endembed %}
 
-3、在新建客户组织界面上1
+3、在新建客户组织界面上：
 
-* 选择创建团队组织还是企业组织。
-* 输入组织名称、客户所有者电子邮件和座位数。
+* 选择创建**团队**组织还是**企业**组织。
+* 输入**组织名称**、**客户所有者电子邮箱**和**席位**。
+
+未分配的席位（即您已付费但未使用的座位）的数量将显示在此界面。如果超过此数量，则会显示已购买的附加席位数量。[了解更多](provider-billing.md)。
 
 {% hint style="info" %}
-邀请将自动发送到**客户所有者的电子邮件地址**，以作为[所有者](../admin-console/user-management/member-roles-and-permissions.md)加入组织。
+邀请将自动发送到**客户所有者的电子邮箱**，以作为[所有者](../admin-console/user-management/member-roles-and-permissions.md)加入组织。
 {% endhint %}
 
-3、从**选择您的计划**列表中，选择要创建的[组织类型](../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-the-plans)。
-
-{% hint style="success" %}
-团队和企业组织包含适用于所有注册用户的高级功能。
-{% endhint %}
-
-4、为组织设置以下选项：
-
-* **用户席位**：指定客户组织所需的用户席位的数量。如果超过此数量，则会增加席位，除非您[指定限制](../organizations/user-management.md#set-a-seat-limit)。
-* **额外存储空间（GB）**：组织包含了 1GB 的附件加密存储空间。以 $0.33 每 GB 每月添加额外的存储空间。
-* **计费周期**：选择您要按年还是按月为此组织计费。
-
-5、您对组织感到满意后，请输入您的**付款信息**并选择**提交**。
-
-6、选择**提交**完成组织的创建。
+4、对组织满意后，选择**添加组织**。
 
 创建后，从提供商门户导航到客户组织会将您带到组织密码库，您可以从中完成[初始化设置](start-a-client-organization.md#initial-setup-procedure)并参与[持续管理](ongoing-administration.md)：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/A3dca6m6j41ImTfCCcw5x/646a4f68a42be54bf36127b30dc87edc/client-org-manage.png?fm=webp&h=265&q=50&w=764" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5fXREt9aHmnVgLLRPBs8yg/dbecd580231e8ea2f4eec2be224a1e64/2025-02-25_15-20-08.png?_a=DAJCwlWIZAAB" %}
 客户组织密码库
 {% endembed %}
 
@@ -65,10 +53,10 @@
 集合
 {% endembed %}
 
-2、**填充组织密码库**。存储密码库项目的结构就位后，就可以开始使用客户的登录、笔记、支付卡和身份来填充组织了。
+2、**导入数据**。 一旦确定了存储密码库项目的结构，就可以开始[向组织导入数据](../import-export/import-data-to-an-organization.md)。
 
-{% hint style="success" %}
-您可以从头开始[创建共享项目](../organizations/sharing.md#create-an-organization-item)，但我们建议您[导入一个包含其所有密码库项目的文件](../import-export/import-data-to-an-organization.md)。
+{% hint style="info" %}
+请注意，作为提供商用户，您无法直接查看、创建或管理单个项目。
 {% endhint %}
 
 3、**配置企业策略**。在开始用户管理部分的设置之前，[配置企业策略](../organizations/enterprise-policies.md)以便为诸如[主密码复杂性](../organizations/enterprise-policies.md#master-password)、[两步登录的使用](../organizations/enterprise-policies.md#two-step-login)和[管理员密码重置](../organizations/enterprise-policies.md#master-password-reset)等设置使用规则。
@@ -87,8 +75,8 @@
 集合
 {% endembed %}
 
-6、**开始邀请用户**。现在，用于安全地和可扩展地共享凭据的基础架构已为您的客户准备就绪，您可以开始邀请用户加入组织了。为确保组织的安全，Bitwarden 对新用户的入职流程采用了 3 步流程，邀请 → 接受 → 确认。
+6、**开始邀请用户**。现在，用于安全地和可扩展地共享凭据的基础架构已为您的客户准备就绪，您可以开始邀请用户加入组织了。为确保组织的安全，Bitwarden 对新用户的入职流程采用了 3 步流程，**邀请** → **接受** → **确认**。
 
 {% hint style="success" %}
-如果您的客户使用目录服务（活动目录、LDAP、Okta 等），请使用[目录连接器](../directory-connector/about-directory-connector.md)从源目录自动同步组织用户并自动发出邀请。
+如果您的客户使用目录服务（活动目录、LDAP、Okta 等），请使用 [SCIM](../scim/about-scim.md) 或[目录连接器](../directory-connector/about-directory-connector.md)从源目录自动同步组织用户并自动发出邀请。
 {% endhint %}
