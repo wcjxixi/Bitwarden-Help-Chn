@@ -7,8 +7,8 @@
 {% hint style="success" %}
 有兴趣成为提供商吗？首先，我们要求：
 
-* 您的企业有一个活跃的企业组织。&#x20;
-* 您的企业有一个客户准备在您的提供商下入职。
+* 您的业务有一个活跃的企业组织。&#x20;
+* 您的业务有一个客户准备在您的提供商下入职。
 
 [成为合伙人](https://bitwarden.com/partners/become-a-partner/)
 {% endhint %}
@@ -39,7 +39,7 @@
 
 ### 入职用户 <a href="#onboard-users" id="onboard-users"></a>
 
-作为提供商的创建者，您将自动获得[提供商管理员](provider-users.md#provider-user-types)的身份，让您能够全面管理提供商和所有[客户组织](get-started-with-provider-portal.md#client-organizations)的所有方面。 Bitwarden 强烈建议您为故障转移目的配置第二个提供商管理员。
+作为提供商的创建者，您将自动获得[提供商管理员](provider-users.md#provider-user-types)的身份，让您能够全面管理提供商和所有[客户组织](get-started-with-provider-portal.md#client-organizations)的所有方面。Bitwarden 强烈建议您为故障转移目的配置第二个提供商管理员。
 
 现在，开始将您的员工添加为[服务用户](provider-users.md#provider-user-types)，这将使他们能够全面管理所有客户组织并创建新的组织或管理提供商本身：
 
@@ -79,7 +79,7 @@
 
 ### 创建客户组织 <a href="#create-a-client-organization" id="create-a-client-organization"></a>
 
-要创建新的客户组织，您必须是提[供商管理员](provider-users.md#provider-user-types)。导航到提供商门户的**客户**选项卡，然后选择 ✚**添加** → **新增客户**按钮：
+要创建新的客户组织，您必须是提[供商管理员](provider-users.md#provider-user-types)。导航到提供商门户的**客户**选项卡，然后选择 ✚**添加**按钮 → **新增客户**按钮：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5WjBETB0YFm7TS1zpIHeSC/a22563b9172036b1c90bfb61d9ab310b/new_client_org_1.png?_a=DAJCwlWIZAAB" %}
 新增客户组织
@@ -87,11 +87,11 @@
 
 ### 添加现有组织 <a href="#add-an-existing-organization" id="add-an-existing-organization"></a>
 
+要添加现有组织，您必须是活跃的提供商用户，并且是要添加的组织的所有者。
+
 {% hint style="info" %}
 服务用户只能在提供商的最小席位范围内添加组织。 如果组织席位超过了提供商的可用席位，该组织将处于禁用状态。
 {% endhint %}
-
-要添加现有组织，您必须是活跃的提供商用户，并且是要添加的组织的所有者。
 
 1、前往提供商门户的户端标签页，然后选择 ✚**新增**按钮 → **现有组织**：
 
