@@ -7,12 +7,10 @@
 {% hint style="success" %}
 有兴趣成为提供商吗？首先，我们要求：
 
-* 您的企业有一个活跃的企业组织。&#x20;
-* 您的企业有一个客户准备在您的提供商下入职。
+* 您的业务有一个活跃的企业组织。&#x20;
+* 您的业务有一个客户准备在您的提供商下入职。
 
-如果您还没有准备好开始成为提供商，Bitwarden 团队希望支持你作为一个经销商或客户的 Bitwarden 之旅。
-
-[联系我们](https://bitwarden.com/contact)
+[成为合伙人](https://bitwarden.com/partners/become-a-partner/)
 {% endhint %}
 
 ## 什么是提供商？ <a href="#what-are-providers" id="what-are-providers"></a>
