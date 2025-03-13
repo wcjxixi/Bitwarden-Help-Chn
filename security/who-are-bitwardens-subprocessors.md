@@ -16,9 +16,9 @@
 | SendGrid, Inc. (Twilio)        | 电子邮件服务提供商  | USA     |
 | Freshworks Inc.                | 客户关系管理     | USA     |
 | ChartMogul CMTDE GmbH & Co. KG | 销售分析       | Germany |
-| Stripe, Inc.                   | 款项处理       | USA     |
-| Paypal, Inc. 包括布伦特里分部          | 款项处理，支付网关  | USA     |
-| BitPay, Inc.                   | 款项处理       | USA     |
+| Stripe, Inc.                   | 付款处理       | USA     |
+| Paypal, Inc. 包括布伦特里分部          | 付款处理，支付网关  | USA     |
+| BitPay, Inc.                   | 付款处理       | USA     |
 | DataDog, Inc.                  | 基础设施监控     | USA, EU |
 | Hubspot, Inc.                  | 交流工具       | USA     |
 | Outreach.io                    | 业务开发/交流工具  | USA     |
@@ -28,6 +28,8 @@
 | Zapier, Inc.                   | 工作流程自动化    | USA     |
 | QuotaPath Inc.                 | 销售分析       | USA     |
 | Lusha Systems Inc.             | 销售情报       | USA     |
+| Kluster Enterprises Limited    | 销售分析       | UK      |
+| GNAU Inc. d/b/a Rillet         | 财务分析       | USA     |
 
 ## 请求有关 Bitwarden 分包商的通知 <a href="#request-notifications-about-bitwarden-subprocessors" id="request-notifications-about-bitwarden-subprocessors"></a>
 

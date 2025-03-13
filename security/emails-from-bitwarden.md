@@ -15,7 +15,7 @@
 诸如新设备警报、加入组织的邀请、请求访问机密管理器，以及两步登录代码之类的电子邮件将来自 `no-reply@bitwarden.com`，或者，如果您是自托管，则来自已配置的域名，例如 `no-reply@my.domain.com`。
 
 {% hint style="info" %}
-自 2024.9.2 起，电子邮件验证请求在创建账户时发送给云用户，也是从 `no-reply@bitwarden.com` 发出的：
+自 2024.9.2 起，电子邮件验证请求在创建账户时发送给云端用户，也是从 `no-reply@bitwarden.com` 发出的：
 
 <img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2QR4MYirRuYyMJnkx5ce6e/858d2d1fc23440e31ce87a8ff6efa4f5/2024-09-26_10-01-00.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
 {% endhint %}
