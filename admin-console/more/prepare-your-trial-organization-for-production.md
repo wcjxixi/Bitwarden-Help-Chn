@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/prepare-your-org-for-prod/)
 {% endhint %}
 
-本指南将帮助指导您的企业在成功试用 Bitwarden 后，为 Bitwarden 的生产实施做好准备。如果您刚刚开始试用期，我们建议您在使用本指南之前，先从[概念验证项目清单](../../business-resources/proof-of-concept-project-checklist.md)开始。
+本指南将帮助指导您的企业在成功试用 Bitwarden 后，为 Bitwarden 的生产实施做好准备。如果您刚开始试用期，我们建议您在使用本指南之前，先从[概念验证项目清单](../../business-resources/proof-of-concept-project-checklist.md)开始。
 
 ## 第 1 步： 升级或重新创建新组织 <a href="#step-1-upgrade-or-restart-your-organization" id="step-1-upgrade-or-restart-your-organization"></a>
 
@@ -16,7 +16,7 @@
 | -- | -------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1a | 0.5      | 升级或从头创建您的组织 | [升级您的组织](../../organizations/organizations.md#upgrade-an-organization)或[创建新的组织](../../organizations/organizations.md#create-an-organization)。 |
 
-{% hint style="info" %}
+{% hint style="success" %}
 如果您选择为生产实施从头开始创建一个新的组织，请再次查看[概念验证项目核对表](../../business-resources/proof-of-concept-project-checklist.md)，并在继续之前完成这些步骤。
 {% endhint %}
 

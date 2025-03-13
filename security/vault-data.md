@@ -39,7 +39,7 @@
   * 用户名
   * 公司
   * 社会安全号码、护照号码和驾照号码
-  * 电子邮件和电话
+  * 电子邮箱和电话
   * 地址 1、地址 2、地址 3、城市/城镇、州/省、邮政编码、国家/地区
 * 对于 [Send](https://assets.ctfassets.net/7rncvj1f8mw7/5QUNWhFSzC7EIo8CaHjxta/681e78b34a6beba57e0e7e753a3c5ce3/send1.json)：
   * Send 名称
@@ -58,6 +58,6 @@
   * 机密备注
 * [工程](../secrets-manager/your-secrets/projects.md)名称
 * [服务账户](../secrets-manager/your-secrets/machine-accounts.md)名称
-* [访问令牌](../secrets-manager/your-secrets/access-tokens.md)名称（Bitwarden 永远不会存储访问令牌值的）
+* [访问令牌](../secrets-manager/your-secrets/access-tokens.md)名称（Bitwarden 永远不会存储访问令牌的值）
 
 某些数据，但**绝非密码库或机密数据**，用于向您提供 Bitwarden 服务，这称为管理数据，可被 Bitwarden 访问。[了解更多](administrative-data.md)。
