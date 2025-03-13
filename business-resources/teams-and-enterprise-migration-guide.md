@@ -1,13 +1,13 @@
-# 团队和企业迁移指南
+# 团队版和企业版迁移指南
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/teams-enterprise-migration-guide/)
 {% endhint %}
 
-使用 Bitwarden 安全迁移您的组织，这既简单又安全。简单地遵循本指南中的步骤，以从您现有的密码管理器中迁移数据和用户：
+使用 Bitwarden 安全迁移您的组织，这既简单又安全。简单地遵循本指南中的步骤从您现有的密码管理器中迁移数据和用户：
 
 1. [导出数据](teams-and-enterprise-migration-guide.md#step-1-export-your-data)
-2. [创建和配置 Bitwarden 组织](teams-and-enterprise-migration-guide.md#step-2-setup-your-bitwarden-organization)
+2. [创建和配置您的 Bitwarden 组织](teams-and-enterprise-migration-guide.md#step-2-setup-your-bitwarden-organization)
 3. [导入数据到 Bitwarden](teams-and-enterprise-migration-guide.md#step-3-import-data-to-your-organization)
 4. [入职用户](teams-and-enterprise-migration-guide.md#step-4-onboard-users-to-the-organization)
 5. [配置对集合和密码库项目的访问权限](teams-and-enterprise-migration-guide.md#step-5-configure-access-to-collections-and-items)
@@ -42,7 +42,7 @@
 * 密码管理基础架构中的任何自定义结构
 {% endhint %}
 
-## 第 2 步：设置 Bitwarden 组织 <a href="#step-2-setup-your-bitwarden-organization" id="step-2-setup-your-bitwarden-organization"></a>
+## 第 2 步：设置您的组织 <a href="#step-2-setup-your-organization" id="step-2-setup-your-organization"></a>
 
 Bitwarden 组织将用户和密码库项目联系在一起，以[安全地共享](../organizations/sharing.md)登录、笔记、卡支付卡身份信息。
 
@@ -99,7 +99,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以[安全地共享
 
 我们建议将文件格式化为 Bitwarden `.CSV` 以获得最佳的效果，或着对于高级用户，将文件格式化为 Bitwarden `.JSON` 文件。有关 Bitwarden 特定的导入文件的说明，请参阅[此导入指南](../import-export/condition-a-bitwarden-.csv-or-.json.md)。有关更多导入文档，请参阅[这些文章](../import-export/)。
 
-## 第 4 步：将用户加入组织 <a href="#step-4-onboard-users-to-the-organization" id="step-4-onboard-users-to-the-organization"></a>
+## 第 4 步：入职用户 <a href="#step-4-onboard-users" id="step-4-onboard-users"></a>
 
 Bitwarden 支持通过网页密码库进行手动入职，以及通过同步到您现有的目录服务进行自动入职：
 
@@ -159,4 +159,4 @@ Bitwarden 使用权限联合来确定一个用户和一个集合项目的最终�
 
 ## 迁移支持 <a href="#migration-support" id="migration-support"></a>
 
-Bitwarden 客户成功团队提供 24/7 全天候服务，为企业和团队组织提供优先支持。如果您需要帮助或有任何疑问，请随时[联系我们](https://bitwarden.com/contact)。
+Bitwarden 客户成功团队 24/7 全天候为企业和团队组织提供优先支持。如果您需要帮助或有疑问，请随时[联系我们](https://bitwarden.com/contact/)。

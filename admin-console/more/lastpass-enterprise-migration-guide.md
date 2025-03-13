@@ -4,10 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/lastpass-enterprise-migration-guide/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/_articles/importing/lastpass-enterprise-migration-guide.md)
 {% endhint %}
 
-使用 Bitwarden 对您的组织进行安全迁移既直接又安全。请按照本指南中的步骤从 LastPass 迁移数据和用户：
+使用 Bitwarden 安全迁移您的组织，这既简单又安全。遵循本指南中的步骤从 LastPass 迁移数据和用户：
 
-1. [创建和配置 Bitwarden 组织](lastpass-enterprise-migration-guide.md#step-1-setup-your-organization)。
-2. [导入数据到 Bitwarden](lastpass-enterprise-migration-guide.md#step-2-import-data)。
+1. [创建和配置您的 Bitwarden 组织](lastpass-enterprise-migration-guide.md#step-1-setup-your-organization)。
+2. [导入您的数据到 Bitwarden](lastpass-enterprise-migration-guide.md#step-2-import-data)。
 3. [入职用户](lastpass-enterprise-migration-guide.md#step-3-onboard-users)
 4. [配置对集合和密码库项目的访问权限](lastpass-enterprise-migration-guide.md#step-4-configure-access-to-collections-and-items)。
 
@@ -25,19 +25,19 @@
 
 ## 第 1 步：设置您的组织 <a href="#step-1-setup-your-organization" id="step-1-setup-your-organization"></a>
 
-Bitwarden 组织将用户和密码库项目联系在一起，以便安全地共享登录、笔记、支付卡和身份。
+Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../../organizations/sharing.md)登录、笔记、支付卡和身份。
 
 {% hint style="success" %}
-最佳的做法是，首先创建一个组织，然后直接[向组织导入数据](../../import-export/import-data-to-an-organization.md)，而不是先向个人账户导入数据，然后再将项目移动到组织。
+最佳的做法是，首先创建一个组织，然后直接[向组织导入数据](../../import-export/import-data-to-an-organization.md)，而不是先向个人账户导入数据，然后再将[移动项目](../../organizations/sharing.md)到组织。
 {% endhint %}
 
-1、**创建你的组织**。从创建组织开始。要了解如何创建，请查看[这篇文章](../../organizations/organizations.md#create-an-organization)。
+1、**创建您的组织**。从创建组织开始。要了解如何创建，请查看[这篇文章](../../organizations/organizations.md#create-an-organization)。
 
 {% hint style="info" %}
-要自托管 Bitwarden，请在 Bitwarden 云上创建一个组织，生成一个[许可证密钥](https://bitwarden.com/host/)，并使用该密钥[解锁服务器上的组织](../../self-hosting/licensing-for-paid-features.md#organization-license)。
+要自托管 Bitwarden，请在 Bitwarden 云端创建一个组织，生成一个[许可证密钥](https://bitwarden.com/host/)，并使用该密钥[解锁服务器上的组织](../../self-hosting/licensing-for-paid-features.md#organization-license)。
 {% endhint %}
 
-2、**入职管理用户**。创建好组织后，可以通过入职一些[管理用户](../user-management/member-roles-and-permissions.md)来简化进一步的设置过程。重要的是，此时**不要开始最终用户入职**，因为还有几个步骤需要您为组织做好准备。[在此](../../organizations/user-management.md#onboard-users)了解如何邀请管理员。
+2、**入职管理用户**。创建好组织后，可以通过入职一些[管理用户](../user-management/member-roles-and-permissions.md)来简化进一步的设置过程。重要的是，此时**不要开始最终用户入职**，因为还有几个步骤需要您为组织做好准备。[此处](../../organizations/user-management.md#onboard-users)了解如何邀请管理员。
 
 3、**配置身份服务**。企业组织支持使用 SAML 2.0 或 OpenID Connect (OIDC) 的[单点登录](../../login-with-sso/about-login-with-sso.md) (SSO)。要配置单点登录，请在管理控制台中打开组织的**设置** → **单点登录**界面，[组织所有者和管理员](../user-management/member-roles-and-permissions.md)都可以访问该界面。
 
