@@ -1,21 +1,21 @@
 # LastPass 企业版迁移指南
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/lastpass-enterprise-migration-guide/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/\_articles/importing/lastpass-enterprise-migration-guide.md)
+对应的[官方文档地址](https://bitwarden.com/help/article/lastpass-enterprise-migration-guide/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/_articles/importing/lastpass-enterprise-migration-guide.md)
 {% endhint %}
 
 ## Bitwarden 独家内容：使迁移变得简单 <a href="#bitwarden-exclusive-content-making-migration-easy" id="bitwarden-exclusive-content-making-migration-easy"></a>
 
-使用 Bitwarden 保护您的组织既直接又安全。
+使用 Bitwarden 对您的组织进行安全迁移既直接又安全。请按照本指南中的步骤从 LastPass 迁移数据和用户：
 
-只需遵循以下步骤从 LastPass（或其他平台） 迁移数据和用户：
+1. [创建和配置 Bitwarden 组织](lastpass-enterprise-migration-guide.md#creating-an-organization)。
+2. [导入数据到 Bitwarden](lastpass-enterprise-migration-guide.md#importing-data)。
+3. [入职用户](lastpass-enterprise-migration-guide.md#onboarding-users)
+4. 配置对集合和密码库项目的访问权限。
 
-1. [导出数据](lastpass-enterprise-migration-guide.md#exporting-data)
-2. [创建和配置 Bitwarden 组织](lastpass-enterprise-migration-guide.md#creating-an-organization)
-3. [导入数据到 Bitwarden](lastpass-enterprise-migration-guide.md#importing-data)
-4. [入职用户](lastpass-enterprise-migration-guide.md#onboarding-users)并[共享](lastpass-enterprise-migration-guide.md#sharing-collections-and-items)
-
-如果您在迁移期间需要协助，我们的[客户成功团队将为您提供帮助](lastpass-enterprise-migration-guide.md#migration-support)！
+{% hint style="success" %}
+如果您在迁移期间需要协助，我们的[客户成功团队将随时为您提供帮助](lastpass-enterprise-migration-guide.md#migration-support)！
+{% endhint %}
 
 ## 适用范围 <a href="#scope" id="scope"></a>
 
@@ -121,7 +121,7 @@ Bitwarden 使团队和组织能够以一种可扩展的方式轻松、安全地�
 
 集合以多种方式来组织安全项目，包括但不限于：业务功能、群组分配、应用程序访问级别，甚至安全协议。集合与共享文件夹的功能相同，允许用户群组之间的共享和访问控制的一致性。
 
-LastPass 的共享文件夹可以通过使用[这里](https://bitwarden.com/help/files/bitwarden\_export\_org.csv)的组织导入模板并将共享文件夹的名称放在集合栏中，从而将其作为集合导入到 Bitwarden 中。
+LastPass 的共享文件夹可以通过使用[这里](https://bitwarden.com/help/files/bitwarden_export_org.csv)的组织导入模板并将共享文件夹的名称放在集合栏中，从而将其作为集合导入到 Bitwarden 中。
 
 LastPass 导出示例：
 
