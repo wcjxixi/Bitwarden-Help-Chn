@@ -12,12 +12,12 @@
 4. [配置对集合和密码库项目的访问权限](lastpass-enterprise-migration-guide.md#step-4-configure-access-to-collections-and-items)。
 
 {% hint style="success" %}
-如果您在迁移期间需要协助，我们的[客户成功团队将随时为您提供帮助](lastpass-enterprise-migration-guide.md#migration-support)！
+如果您在迁移期间需要协助，我们的[客户成功团队将随时为您提供帮助](https://bitwarden.com/contact/)！
 {% endhint %}
 
 ## 适用范围 <a href="#scope" id="scope"></a>
 
-本文档将描述将安全数据从 LastPass 实例迁移到 Bitwarden [团队或企业组织](../../organizations/organizations.md)的最佳实践，基于简单和可扩展的方法构建安全基础设施。
+本文档描述了将安全数据从 LastPass 实例迁移到 Bitwarden [团队或企业组织](../../organizations/organizations.md)的最佳实践，基于简单和可扩展的方法构建安全基础设施。
 
 [密码管理](https://bitwarden.com/products/business/)对于组织安全和运营效率至关重要。这里提供有关执行迁移和配置的最佳方法的见解，旨在最大程度地减少交换企业工具时经常需要的试错方法。
 
@@ -31,15 +31,15 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 最佳的做法是，首先创建一个组织，然后直接[向组织导入数据](../../import-export/import-data-to-an-organization.md)，而不是先向个人账户导入数据，然后再将[移动项目](../../organizations/sharing.md)到组织。
 {% endhint %}
 
-1、**创建您的组织**。从创建组织开始。要了解如何创建，请查看[这篇文章](../../organizations/organizations.md#create-an-organization)。
+1、**创建您的组织**。从创建组织开始。要了解如何操作，请查看[这篇文章](../../organizations/organizations.md#create-an-organization)。
 
 {% hint style="info" %}
-要自托管 Bitwarden，请在 Bitwarden 云端创建一个组织，生成一个[许可证密钥](https://bitwarden.com/host/)，并使用该密钥[解锁服务器上的组织](../../self-hosting/licensing-for-paid-features.md#organization-license)。
+对于自托管 Bitwarden，请在 Bitwarden 云端创建一个组织，生成[许可证密钥](https://bitwarden.com/host/)，然后在您的服务器上使用该密钥[解锁组织](../../self-hosting/licensing-for-paid-features.md#organization-license)。
 {% endhint %}
 
-2、**入职管理用户**。创建好组织后，可以通过入职一些[管理用户](../user-management/member-roles-and-permissions.md)来简化进一步的设置过程。重要的是，此时**不要开始最终用户入职**，因为还有几个步骤需要您为组织做好准备。[此处](../../organizations/user-management.md#onboard-users)了解如何邀请管理员。
+2、**入职管理用户**。创建好组织后，可以通过入职一些[管理用户](../user-management/member-roles-and-permissions.md)来简化进一步的设置过程。此时**不要开始最终用户入职**，这一点很重要，因为还有几个步骤来准备您为组织。[此处](../../organizations/user-management.md#onboard-users)了解如何邀请管理员。
 
-3、**配置身份服务**。企业组织支持使用 SAML 2.0 或 OpenID Connect (OIDC) 的[单点登录](../../login-with-sso/about-login-with-sso.md) (SSO)。要配置单点登录，请在管理控制台中打开组织的**设置** → **单点登录**界面，[组织所有者和管理员](../user-management/member-roles-and-permissions.md)都可以访问该界面。
+3、**配置身份服务**。企业组织支持使用 SAML 2.0 或 OpenID Connect (OIDC) 的[单点登录](../../login-with-sso/about-login-with-sso.md) (SSO)。要配置 SSO，请在管理控制台中打开组织的**设置** → **单点登录**界面，[组织所有者和管理员](../user-management/member-roles-and-permissions.md)都可以访问该界面。
 
 4、**启用企业策略**。[企业策略](../../organizations/enterprise-policies.md)使组织能够为用户实施规则，例如要求使用两步登录。强烈建议在用户入职前配置策略。
 
@@ -47,7 +47,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 
 ### &#x20;从 LastPass 导出 <a href="#export-from-lastpass" id="export-from-lastpass"></a>
 
-从 LastPass 网页密码库完整导出包含所有您的共享数据为 `.csv` 文件（[了解如何导出](https://support.lastpass.com/s/document-item?language=en_US\&bundleId=lastpass\&topicId=LastPass/export-generic-csv.html&_LANG=enus)）。收集完整导出可能需要在创建导出之前将所有共享文件夹分配给导出用户。
+从 LastPass 网页密码库完整导出包含所有您的共享数据为 `.csv` 文件（[了解如何导出](https://support.lastpass.com/s/document-item?language=en_US\&bundleId=lastpass\&topicId=LastPass/export-generic-csv.html&_LANG=enus)）。收集完整的导出可能需要在创建导出之前将所有共享文件夹分配给导出用户。
 
 此外，在 LastPass 中创建的任何导出都将包含来自个人密码库和指定共享文件夹的数据。在此阶段，我们建议对创建的导出进行审核，以确保其中包含所有共享数据，而不包含个人数据。
 
@@ -63,6 +63,10 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 
 2、导航至**设置** → **导入数据**：
 
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/12fA17Iq9LdCXdhPsPYQyq/6fb380ff6165058fefe6fd311e038364/2024-12-03_15-42-21.png?_a=DAJCwlWIZAAB" %}
+管理控制台导入
+{% endembed %}
+
 3、从下拉菜单中填写以下字段：
 
 * **集合**：选择是否要将导入的内容移动到现有的集合中。在大多数情况下，您不会在 Bitwarden 中创建集合，因为导入会为您创建集合，所以请将此选项留空。
@@ -71,7 +75,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 4、选择**选择文件**然后添加要导入的文件，或在输入框中复制并粘贴文件内容。
 
 {% hint style="danger" %}
-导入到 Bitwarden 无法检查要导入的文件中的项目是否与您密码库中的项目重复。这意味着，如果密码库和要导入的文件中都已经有一个项目，那么导入多个文件就会创建重复的密码库项目。
+导入到 Bitwarden 无法检查要导入的文件中的项目是否与您的密码库中的项目重复。这意味着，如果某个项目已经存在密码库和要导入的文件中，则**导入多个文件将创建重复**的密码库项目。
 {% endhint %}
 
 5、选择**导入数据**触发导入。
@@ -79,7 +83,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 [文件附件](../../your-vault/file-attachments.md)需要手动上传到密码库。请注意，LastPass 中嵌套的共享文件夹会在你的 Bitwarden 组织中重新创建为嵌套的集合，但如果「父」集合中没有数据，需要您手动创建名称匹配的父集合。
 
 {% hint style="success" %}
-您还应建议员工从现有的密码管理器中导出个人拥有的数据，并准备将其导入 Bitwarden。[了解更多](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)。
+您还应建议员工从现有的密码管理器中导出他们的个人数据，并准备将其导入 Bitwarden。[了解更多](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)。
 {% endhint %}
 
 ## 第 3 步：入职用户 <a href="#step-3-onboard-users" id="step-3-onboard-users"></a>
@@ -96,7 +100,7 @@ Bitwarden 支持通过网页密码库手动入职和通过 SCIM 集成或从现�
 
 ### 自动入职 <a href="#automated-onboarding" id="automated-onboarding"></a>
 
-通过 SCIM 与 [Azure AD](../../scim/azure-ad-scim-integration.md)、[Okta](../../scim/okta-scim-integration.md)、[OneLogin](../../scim/onelogin-scim-integration.md) 和 [JumpCloud](../../scim/jumpcloud-scim-integration.md) 的 SCIM 集成，或使用 [Directory Connector](../../directory-connector/about-directory-connector.md)（一个可在[桌面 App](../../directory-connector/directory-connector-desktop-app.md) 和 [CLI](../../directory-connector/directory-connector-cli.md) 工具中使用的独立应用程序），可实现自动用户入职，从而同步现有目录服务中的用户和群组。
+通过与 [Azure AD](../../scim/azure-ad-scim-integration.md)、[Okta](../../scim/okta-scim-integration.md)、[OneLogin](../../scim/onelogin-scim-integration.md) 和 [JumpCloud](../../scim/jumpcloud-scim-integration.md) 的 SCIM 集成，或使用 [Directory Connector](../../directory-connector/about-directory-connector.md)（一个可在[桌面 App](../../directory-connector/directory-connector-desktop-app.md) 和 [CLI](../../directory-connector/directory-connector-cli.md) 工具中使用的独立应用程序），可实现自动用户入职，从而同步现有目录服务中的用户和群组。
 
 无论使用哪种方式，用户都会被自动邀请加入组织，并可使用 [Bitwarden CLI](../../password-manager/developer-tools/password-manager-cli.md#confirm) 工具手动或自动确认。
 
@@ -124,11 +128,11 @@ LastPass 的共享文件夹可以通过使用[这里](https://bitwarden.com/help
 
 ### 群组 <a href="#groups" id="groups"></a>
 
-利用群组进行共享是提供凭证和安全访问的最有效方式。群组和用户一样，可以使用 SCIM 或目录连接器同步到组织中。
+使用群组进行共享是提供凭证和安全访问的最有效方式。群组和用户一样，可以使用 SCIM 或目录连接器同步到组织中。
 
 ### 权限 <a href="#permissions" id="permissions"></a>
 
-Bitwarden 集合的权限可以在群组或用户级别上分配。这意味着每个群组或用户可以为同一个集合配置不同的权限。集合权限选项包括：
+可以在群组或用户级别分配 Bitwarden 集合的权限。这意味着每一个群组或用户可以配置为对同一个集合拥有权限。集合权限选项包括：
 
 * 可以查看
 * 可以查看，密码除外

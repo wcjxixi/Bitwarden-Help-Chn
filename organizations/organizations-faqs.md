@@ -1,4 +1,4 @@
-# 组织常见问题
+# 组织 FAQ
 
 {% hint style="info" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/org-faqs/)
@@ -24,13 +24,13 @@
 
 ## 组织管理 <a href="#organization-administration" id="organization-administration"></a>
 
-### 问：组织的所有者不再在公司任职，可以创建新的所有者吗？ <a href="#q-my-organizations-owner-is-no-longer-with-the-company-can-a-new-owner-be-created" id="q-my-organizations-owner-is-no-longer-with-the-company-can-a-new-owner-be-created"></a>
+### 问：我的组织的所有者不再在公司任职，可以创建新的所有者吗？ <a href="#q-my-organizations-owner-is-no-longer-with-the-company-can-a-new-owner-be-created" id="q-my-organizations-owner-is-no-longer-with-the-company-can-a-new-owner-be-created"></a>
 
-**答：**&#x53EA;有组织的所有者才能创建新的所有者或将所有者分配给现有用户。为了进行故障转移，Bitwarden 建议创建多个所有者用户。如果您的唯一所有者离开了公司，请[与我们联系](https://bitwarden.com/contact)。
+**答：**&#x53EA;有组织的所有者才能创建新的所有者或将所有者分配给现有用户。为了进行故障转移，Bitwarden 建议创建多个所有者用户。如果您的唯一所有者离开了公司，请[联系我们](https://bitwarden.com/contact)。
 
 ### 问：我已邀请用户，但他们看不到共享的项目，我该怎么办？ <a href="#q-i-have-invited-users-but-they-cannot-see-shared-items-what-do-i-do" id="q-i-have-invited-users-but-they-cannot-see-shared-items-what-do-i-do"></a>
 
-**答：**&#x88AB;邀请的用户会收到一封邮件，询问他们加入本组织。首先，确保他们已经接受了邀请。如果他们接受了邀请，管理员或所有者应导航到**管理** → **人员**，将鼠标悬停在该用户上，打开齿轮下拉菜单，然后选择**确认**。
+**答：**&#x88AB;邀请的用户会收到一封邮件，询问他们加入本组织。首先，确保他们已经接受了邀请。如果他们接受了邀请，管理员或所有者应导航到**成员**界面，然后使用 **≡**&#x9009;项菜单以选择**确认**。
 
 ### 问：我的组织可以审计哪些事件？ <a href="#q-what-events-are-auditing-for-my-organization" id="q-what-events-are-auditing-for-my-organization"></a>
 
@@ -44,15 +44,23 @@
 
 **答：**&#x8981;更改组织名称：
 
-1. 在[网页密码库](https://vault.bitwarden.com/)中，打开您的组织。
-2. 导航到组织的 **⚙️设置**页面。
-3. 编辑**组织名称**字段然后选择**保存**按钮。
+1、在网页 App 中，使用产品切换器打开管理控制台：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
+产品切换器
+{% endembed %}
+
+2、导航到 **⚙️设置** → **组织信息**界面。
+
+3、编辑**组织名称**字段然后选择**保存**按钮。
 
 **如果您是自托管**，您还需要：
 
-1. 导航到 **⚙️设置 → 订阅**页面。
-2. 选择**下载许可证**按钮来下载更新了组织名称的许可证。
-3. [上传新的许可证](../self-hosting/licensing-for-paid-features.md#organization-license)到您的自托管服务器。
+1、导航到 **⚙️计费 → 订阅**页面。
+
+2、选择**下载许可证**按钮来下载更新了组织名称的许可证。
+
+3、[上传新的许可证](../self-hosting/licensing-for-paid-features.md#organization-license)到您的自托管服务器。
 
 ### 问：如何优化包含大量项目的密码库的性能？ <a href="#q-how-do-i-optimize-performance-for-a-vault-with-lots-of-items" id="q-how-do-i-optimize-performance-for-a-vault-with-lots-of-items"></a>
 
@@ -75,14 +83,14 @@
 
 ### 问：如何向组织用户隐藏密码？ <a href="#q-how-do-i-hide-a-password-from-my-organizations-users" id="q-how-do-i-hide-a-password-from-my-organizations-users"></a>
 
-**答：**&#x4E3A;您想要对其隐藏密码的用户分配对相关集合的「可以查看（密码除外）」或「可以编辑（密码除外）」[权限](../admin-console/user-management/member-roles-and-permissions.md#permissions)。
+**答：**&#x4E3A;您想要对其隐藏密码的用户分配对相关集合的「**查看项目，隐藏密码**」或「编**辑项目，隐藏密码**」[权限](../admin-console/user-management/member-roles-and-permissions.md#permissions)。
 
 ### 问：我离开后，移动到组织的项目是否会被保留？ <a href="#q-does-an-item-i-share-with-the-organization-stay-after-i-leave" id="q-does-an-item-i-share-with-the-organization-stay-after-i-leave"></a>
 
 **答：**&#x662F;的！当用户与组织共享项目时，组织将获得该项目的所有权。即使用户离开组织或删除其账户，该项目仍将保留在组织密码库中。
 
-## 组织装置 <a href="#organization-installations" id="organization-installations"></a>
+## 组织安装 <a href="#organization-installations" id="organization-installations"></a>
 
 ### 问：我可以为我的用户静默安装 Bitwarden 桌面应用程序吗？ <a href="#q-can-i-silently-install-the-bitwarden-desktop-app-for-my-users" id="q-can-i-silently-install-the-bitwarden-desktop-app-for-my-users"></a>
 
-**答：**&#x53EF;以。跨工作站静默安装桌面应用程序时，请以管理员等特权账户身份执行此操作，并除了 `/S` 之外还使用 `/allusers` 开关，因为 `/S` 默认为单用户安装，这将导致自动部署出现问题。
+**答：**&#x53EF;以。跨工作站静默安装桌面 App 时，请以管理员等特权账户身份执行此操作，并除了 `/S` 之外还要使用 `/allusers` 开关。如果是单用户安装，或者系统支持 `Logged on User`，请使用不带 `/allusers` 的 `/S`。
