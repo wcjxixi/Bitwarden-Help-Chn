@@ -1,6 +1,6 @@
 # 管理您的组织
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[方文档地址](https://bitwarden.com/help/manage-your-sercrets-org/)
 {% endhint %}
 
