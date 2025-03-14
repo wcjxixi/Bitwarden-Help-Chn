@@ -29,6 +29,6 @@
 
 **答**：您的验证密钥（有时称为「安全秘钥」或「TOTP 种子」）和所有相关元数据都存储在您设备上的本地数据库中。这些数据不会同步到 Bitwarden 服务器。您的数据将由您设备的云备份系统（如 iCloud 或 Google One）进行备份。要保护您的 App 中的数据，您还可以设置生物识别登录。
 
-## 问：如何备份和恢复数据？ <a href="#q-how-do-i-backup-and-restore-my-data" id="q-how-do-i-backup-and-restore-my-data"></a>
+## 问：如何备份和恢复我的数据？ <a href="#q-how-do-i-backup-and-restore-my-data" id="q-how-do-i-backup-and-restore-my-data"></a>
 
 **答**：您设备的云备份系统（如 iCloud 或 Google One）会对您的数据进行加密备份。要恢复数据，请恢复您设备的云备份。

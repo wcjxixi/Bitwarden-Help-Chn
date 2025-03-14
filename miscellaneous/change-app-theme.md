@@ -1,28 +1,22 @@
-# 更改应用程序主题
+# 更改 App 主题
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/change-theme/)
 {% endhint %}
 
-Bitwarden 的网页密码库、浏览器扩展、桌面应用程序和移动应用程序带有优美时尚的主题：
+Bitwarden 的网页密码库、浏览器扩展、桌面 App 和移动 App 带有优美时尚的主题。浏览器扩展还包含一些其他外观选项：
 
 {% tabs %}
-{% tab title="网页密码库" %}
-要更改网页密码库的主题：
+{% tab title="网页 App" %}
+要更改网页 App 的主题：
 
-1、选择配置文件图标然后从下拉列表中选择**账户设置**：
+1、导航至**设置** → **偏好设置**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/74BqYDU6qE9evz6wEz8K7Y/773eec1c0b00e00db4dedd3456e9a3f9/Screen_Shot_2022-05-13_at_10.34.10_AM.png?fm=webp&h=226&q=50&w=773" %}
-账户设置
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7vKmhsOfJqieQbYRxALV75/ce2505a6fa89531d5784ca6afe45cecd/2024-12-02_11-46-04.png?_a=DAJCwlWIZAAB" %}
+偏好设置
 {% endembed %}
 
-2、从账户设置菜单中，选择**首选项**。
-
-3、从**主题**下拉列表中，选择您喜欢的主题！
-
-{% embed url="https://bitwarden.com/help/images/features/theme-webvault.png" %}
-更改主题
-{% endembed %}
+2、从**主题**下拉列表中，选择您喜欢的主题然后选择**保存**！
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -30,37 +24,45 @@ Bitwarden 的网页密码库、浏览器扩展、桌面应用程序和移动应�
 
 1、打开浏览器扩展的 **⚙️设置**选项卡。
 
-2、滚动到**其他**部分然后选择**选项**。
+2、选择**外观**。
 
-3、滚动到**显示**部分然后使用**主题**下拉列表选择您喜欢的主题！
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3eiapYgwfvXNsoJJSCuvxk/15c2e4a4f9d001a2cb21d8e9eb76943b/theme-browserext.png?fm=webp&h=704&q=50&w=880" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6IZpsItvhtnImItOfXJ9HW/5502397e3024f97c473eaf05fc7cb9cd/2024-12-03_10-51-17.png?_a=DAJCwlWIZAAB" %}
 更改主题
 {% endembed %}
+
+3、使用主题下拉菜单选择您喜欢的主题。
+
+4、使用**扩展宽度**选项扩大浏览器扩展的尺寸。
+
+5、使用**紧凑模式**增加浏览器扩展中显示的信息密度。
 {% endtab %}
 
 {% tab title="桌面端" %}
-要更改桌面应用程序的主题：
+要更改桌面 App 的主题：
 
-1、打开桌面应用程序的**偏好设置**面板（Windows 上为**文件** → **设置**；macOS 上为 **Bitwarden** → **偏好设置**）。&#x20;
+1、打开桌面 App 的**偏好设置**面板（Windows 上为**文件** → **设置**；macOS 上为 **Bitwarden** → **偏好设置**）。&#x20;
 
 2、滚动到**应用程序设置**部分然后使用**主题**下拉列表选择您喜欢的主题！
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/7dOzSglXr4rlM97zKoqptq/d507fedf33ee0300c61e8da6079f1dae/theme-desktop.png?fm=webp&h=586&q=50&w=855" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7dOzSglXr4rlM97zKoqptq/cef7c6abf3657a9694e4fd0cc735a290/Screen_Shot_2022-05-19_at_9.37.03_AM.png?_a=DAJCwlWIZAAB" %}
 更改主题
 {% endembed %}
+
+{% hint style="success" %}
+主题是为桌面 App 中所有登录账户全局设置的。[了解更多](../your-vault/account-switching.md)。
+{% endhint %}
 {% endtab %}
 
 {% tab title="移动端" %}
-要更改移动应用程序的主题：
+要更改移动 App 的主题：
 
-1、打开移动应用程序的 **⚙️设置**选项卡。&#x20;
+1、打开移动 App 的 **⚙️设置**选项卡。&#x20;
 
-2、滚动到**其他**部分然后选择**选项**。&#x20;
+2、点击**外观**。&#x20;
 
 3、点击**主题**选项然后选择您喜欢的主题！
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/ntCXOl03Oi6zmXx5Z9j5C/2b30e319debbcf54ef39fda551d1ad85/theme-mobile.jpeg?fm=webp&h=672&q=50&w=311" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/ntCXOl03Oi6zmXx5Z9j5C/8af7beacf4b86c50ba7993a122eea7e9/2025-01-22_10-08-35.png?_a=DAJCwlWIZAAB" %}
 更改主题
 {% endembed %}
 {% endtab %}

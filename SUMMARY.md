@@ -113,7 +113,7 @@
     * [uMatrix 和 NoScript 访问规则](miscellaneous/umatrix-and-noscript-access-rules.md)
 * [Bitwarden Authenticator](bitwarden-authenticator/README.md)
   * [Bitwarden Authenticator](bitwarden-authenticator/bitwarden-authenticator.md)
-  * [导入和导出](bitwarden-authenticator/import-and-export.md)
+  * [导入 & 导出](bitwarden-authenticator/import-and-export.md)
   * [FAQ](bitwarden-authenticator/authenticator-faqs.md)
 * [Secrets Manager](secrets-manager/README.md)
   * [Secrets Manager 概述](secrets-manager/secrets-manager-overview.md)
