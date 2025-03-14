@@ -4,22 +4,26 @@
 对应的[官方文档地址](https://bitwarden.com/help/duckduckgo-macos-browser-integration/)
 {% endhint %}
 
+{% hint style="success" %}
+要使用与 Bitwarden 集成的 DuckDuckGo macOS App，您需要从 [https://duckduckgo.com/mac](https://duckduckgo.com/mac) 而不是从 macOS App Store 下载 DuckDuckGo macOS 浏览器。
+{% endhint %}
+
 Bitwarden 和 DuckDuckGo 合作在 DuckDuckGo macOS 浏览器中提供 Bitwarden 功能！在 DuckDuckGo 中使用登录表单时，该集成允许无缝自动填充、创建和更新 Bitwarden 密码库中的凭据：
 
 {% embed url="https://bitwarden.com/_gatsby/image/1f5019824aa90bb770f148bc104c8991/892d190c49271c85d8019df6cee053c3/ddg_macos.webp?eu=898e54e7b7cbf9d3083ca7d06b73366fe23b51acff573fd73f61e0fa1aa99f8226f44a0723c17de32d6f5c8dd5b514b262c52d351ae9d888c0b94cf0e260fb0f078353e936b3230e592c91afb3a053476b94495da182c009f26c788ca1f7f733134f0372f52befd4afb76620e6d26c71bff2e5303b97ef67e75000078d4270aa6ce6d7d92c1abc98d27887e7afca71cde29c247f37d9a14756131e000abb78b8a0e60578317c160e61cfae5c926792e36a1d332a590b05a16e3fd05de43865948ba6f00e863965a1f69e&a=w%3D850%26h%3D425%26fm%3Dwebp%26q%3D75&cd=2022-12-05T20%3A02%3A15.487Z" %}
 DuckDuckGo 中的 Bitwarden
 {% endembed %}
 
-该集成要求在您的计算机上安装 Bitwarden [桌面应用程序](../getting-started/getting-started-desktop.md)并解锁，以便从 DuckDuckGo 访问密码库项目。
+该集成要求在您的计算机上安装 Bitwarden [桌面 App](../getting-started/getting-started-desktop.md) 并解锁，以便从 DuckDuckGo 访问密码库项目。
 
 ## 设置集成 <a href="#set-up-the-integration" id="set-up-the-integration"></a>
 
 要设置 DuckDuckGo macOS 浏览器和 Bitwarden 之间的集成：
 
-1. 打开 DuckDuckGo 的**设置**界面然后从菜单中选择**自动填充**。
+1. 打开 DuckDuckGo 的**设置**界面然后从菜单中选择**密码和自动填充**。
 2. 在密码管理器部分，选择 **Bitwarden**。向导将帮助您完成集成的设置，但我们也将在这里概述剩余的步骤。
-3. 如果您的计算机上尚未安装 Bitwarden 桌面应用程序，请安装它。
-4. 打开 Bitwarden 桌面应用程序然后登录或解锁您的密码库。
+3. 如果您的计算机上尚未安装 Bitwarden 桌面 App，请安装它。
+4. 打开 Bitwarden 桌面 App 然后登录或解锁您的密码库。
 5. 从 macOS 菜单栏中选择 **Bitwarden** → **偏好设置**。
 6. 滚动找到**应用程序设置（所有账户）**&#x90E8;分。
 7. 勾选**允许 DuckDuckGo 浏览器集成**。
