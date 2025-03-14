@@ -16,7 +16,7 @@
 ## 其他入职资源 <a href="#additional-onboarding-resources" id="additional-onboarding-resources"></a>
 
 * [在您的组织中推广 Bitwarden Password manager](https://bitwarden.com/learning/rolling-out-bitwarden-to-your-organization/)：对成功推广 Bitwarden 所需的步骤的高度概述，并提供深入分析和关键资源的链接。
-* Bitwarden 企业版 Password manager 实施指南：分 4 个阶段成功启动 Bitwarden Password manager。
+* [Bitwarden 企业版 Password manager 实施指南](https://bitwarden.com/resources/bitwarden-enterprise-password-manager-implementation-guide/)：分 4 个阶段成功启动 Bitwarden Password manager。
 * [为生产试用做好准备](https://bitwarden.com/help/prepare-your-org-for-prod/)：在试用期成功后，为 Bitwarden 的生产实施做好准备。
 * [Bitwarden 海报 - 办公室装饰资源](https://bitwarden.com/resources/bitwarden-posters/)：打印并在办公室悬挂这些海报，以有趣的方式提高员工对 Bitwarden 的认知度和采用率。请联系您的销售代表免费提供。
-* 定制培训：联系您的 Bitwarden 销售联系人，了解如何培训您的管理员、最终用户或组织的培训师。
+* **定制培训**：联系您的 Bitwarden 销售联系人，了解如何培训您的管理员、最终用户或组织的培训师。

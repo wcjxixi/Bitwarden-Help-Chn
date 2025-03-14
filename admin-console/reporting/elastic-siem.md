@@ -8,9 +8,9 @@ Elastic 是一种可提供搜索和可观察选项的解决方案，用于监控
 
 ## 设置 <a href="#setup" id="setup"></a>
 
-### 创建一个 Elastic 账户 <a href="#create-a-elastic-account" id="create-a-elastic-account"></a>
+### 创建 Elastic 账户 <a href="#create-a-elastic-account" id="create-a-elastic-account"></a>
 
-首先，创建一个 Elastic 账户。要通过 Elastic 的云托管服务（推荐）或内部部署服务设置仪表板以监控数据，需要执行此步骤。
+首先，[创建一个 Elastic 账户](https://www.elastic.co/)。要通过 Elastic 的云托管服务（推荐）或内部部署服务设置仪表板以监控数据，需要执行此步骤。
 
 ### 添加 Bitwarden 集成 <a href="#add-bitwarden-integration" id="add-bitwarden-integration"></a>
 
@@ -28,9 +28,9 @@ Elastic 是一种可提供搜索和可观察选项的解决方案，用于监控
 Bitwarden Elastic 集成
 {% endembed %}
 
-3、选择 **Add Bitwarden** 按钮来安装集成。
+3、选择 **Add Bitwarden** 以安装此集成。
 
-4、如果这是您第一次运行 Elastic 集成，则需要安装 Elastic Agent。在以下界面上，选择 Install Elastic Agent 然后按照安装说明进行操作。
+4、如果这是您第一次运行 Elastic 集成，则需要安装 Elastic Agent。在以下界面上，选择 **Install Elastic Agent** 然后按照安装说明进行操作。
 
 {% embed url="https://bitwarden.com/_gatsby/image/40634aca157c5f34616d3edb5c8dabb4/e6e4fa4772e717496252877322331d72/2023-09-08_10-24-05.webp?eu=db8f58e2e7cff58e5d6da7836820606de36c06abaf0231d23962eca74badca8e23a64f5d22917fe029605b88d5b110b96ecf71641ce9d08fc6b510f1b964f85e05d652e961b57053572d91fdb5f45543629e5e1ce1c0c217bc342f85b2e6f46e4a144a7aeb39edc5afb76b31f49c2870b4e5e0746494a325a71541568d1b38fd36edd187454ab5ccc816be9a9bf573cf9af87b0f4689a2312623191658bc7be8f6b103243a21135b33ccac5b963596e03b1c7e215e5d00ea6733cd55f30330c3f9f9a540d97f65a1f69e&a=w%3D850%26h%3D411%26fm%3Dwebp%26q%3D75&cd=2023-12-06T13%3A28%3A13.486Z" %}
 安装 Elastic 代理
@@ -44,9 +44,15 @@ Elastic 设置
 
 ### 将集成连接到 Bitwarden <a href="#connect-integration-to-bitwarden" id="connect-integration-to-bitwarden"></a>
 
-添加 Bitwarden 集成后，您将进入设置界面配置集成。在此步骤中，您需要访问组织的 API 信息。打开您的组织，导航至**设置** → **组织信息** → **查看 API 密钥**。系统会要求您重新输入主密码，以访问 API 密钥信息。
+添加 Bitwarden 集成后，您将进入设置界面配置此集成。在此步骤中，您需要访问组织的 API 信息。保持该界面打开，在另一个标签页上登录 Bitwarden Web 应用程序，使用产品切换器打开管理控制台：
 
-{% embed url="https://bitwarden.com/_gatsby/image/315d5b501b7ed05fa4559a26973023cc/cd1cb57dd86ba6f41cae5995f3e3dd6f/API%20key.webp?eu=d9db59e4b2cdfd8e5e6ba3826074683de13a03a9fa5034d93965b5fa47ac968470a1195522c772b67d6f5d8b85e245b360c3716811bfd1d891ba1bf4bf32ac0f5b855fbf65b52302552ac5fae4f206426dc61a09f4849c5ca16921ddb4b3b0771a551b79aa29ed81eba16067b6d7256aaef2e66d6fddb421bd430901880622b832ead39d665aadd0ee4aabf9e9eb579edabd2c514886b4323d711b67029c64faf2e74505632f253b51c8fe0f8413eda96f4860265b0e0bf733698552f83f35c3e2f2f459dc7378b2a0ca65768fc6fa87f26bcc5319bc9a6eb7c2652d&a=w%3D400%26h%3D397%26fm%3Dwebp%26q%3D75&cd=2023-12-06T13%3A28%3A13.496Z" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
+产品切换器
+{% endembed %}
+
+打开您的组织，导航至您的组织的**设置** → **组织信息** → **查看 API 密钥**。系统会要求您重新输入主密码，以访问 API 密钥信息。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6gHjAyqgeqDj6UPT6agsBK/3a614e043cb3836a41bd68f226835e53/2024-12-04_09-51-07.png?_a=DAJCwlWIZAAB" %}
 组织 API 信息
 {% endembed %}
 
@@ -55,8 +61,8 @@ Elastic 设置
 | Elastic 字段    | 值                                                                                                                                                  |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | URL           | <p>对于 Bitwarden 云用户，默认 URL 为 <code>https://api.bitwarden.com</code>。</p><p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。确保 URL 末尾不包含任何尾部正斜杠「<code>/</code>」</p> |
-| Client ID     | 输入从 Bitwarden 组织 API KEY 窗口获取的 `client_id` 值。                                                                                                      |
-| Client Secret | 输入从 Bitwarden 组织 API KEY 窗口获取的 `client_secret` 值。                                                                                                  |
+| Client ID     | 输入从 Bitwarden 组织 API 密钥窗口获取的 `client_id` 值。                                                                                                        |
+| Client Secret | 输入从 Bitwarden 组织 API 密钥窗口获取的 `client_secret` 值。                                                                                                    |
 
 {% hint style="info" %}
 您的组织 API 密钥信息是敏感数据。不要在不安全的位置共享这些值。
@@ -74,14 +80,14 @@ Elastic 设置
 
 设置完成后，您就可以开始查看您的 Bitwarden 组织数据了。选择任何一个 Bitwarden 仪表板来监控与仪表板相关的数据。以下是每个仪表板监控数据的简要概述：
 
-| 日志                                     | 描述                                          |
-| -------------------------------------- | ------------------------------------------- |
-| \[Logs Bitwarden] Policy               | 查看组织的策略变更，如启用、禁用或更新组织策略。                    |
-| \[Logs Bitwarden] Group and Collection | 监控与组织相关的群组和集合的记录事件。                         |
-| \[Logs Bitwarden] Event                | 监控组织事件日志。在[此处](event-logs.md)了解有关事件日志的更多信息。 |
+| 日志                                     | 描述                                         |
+| -------------------------------------- | ------------------------------------------ |
+| \[Logs Bitwarden] Policy               | 查看组织的策略变更，如启用、禁用或更新组织策略。                   |
+| \[Logs Bitwarden] Group and Collection | 监控与组织相关的群组和集合的记录事件。                        |
+| \[Logs Bitwarden] Event                | 监控组织事件日志。[此处](event-logs.md)了解有关事件日志的更多信息。 |
 
 ### 了解仪表板 <a href="#understanding-the-dashboards" id="understanding-the-dashboards"></a>
 
 #### 查询 <a href="#queries" id="queries"></a>
 
-Elastic 数据监控利用 Kibana 查询语言 (KQL) 来过滤数据。要了解有关查询和搜索的更多信息，请参阅 [Elastic 查询文档](https://www.elastic.co/guide/en/kibana/current/kuery-query.html)。
+Elastic 数据监控利用 Kibana 查询语言 (KQL) 来筛选数据。要了解有关查询和搜索的更多信息，请参阅 [Elastic 查询文档](https://www.elastic.co/guide/en/kibana/current/kuery-query.html)。

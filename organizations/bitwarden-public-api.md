@@ -4,21 +4,21 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/public-api/)
 {% endhint %}
 
-Bitwarden Public API 为组织提供了一套用于管理成员、集合、群组、事件日志和策略的工具。
+Bitwarden 公共 API 为组织提供了一套用于管理成员、集合、群组、事件日志和策略的工具。
 
 {% hint style="success" %}
 该 API 不允许管理个人密码库项目。要管理个人密码库项目，请使用[密码库管理 API](../password-manager/developer-tools/password-manager-apis.md#vault-management-api)。
 {% endhint %}
 
-此 Public API 是一种 RESTful API，RESTful API 具有可预测的面向资源的 URL，接受 JSON 编码的请求正文，返回 JSON 编码的响应，并使用标准的 HTTP 响应代码、验证和动态词。
+公共 API 是一种 RESTful API，RESTful API 具有可预测的面向资源的 URL，接受 JSON 编码的请求正文，返回 JSON 编码的响应，并使用标准的 HTTP 响应代码、验证和动态词。
 
-此 Public API 与 OpenAPI 规范 (OAS3) 兼容，并发布符合标准的 [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) 定义文件。使用 [Swagger UI](https://swagger.io/tools/swagger-ui/) 探索 OpenAPI 规范：
+公共 API 与 OpenAPI 规范 (OAS3) 兼容，并发布符合标准的 [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) 定义文件。使用 [Swagger UI](https://swagger.io/tools/swagger-ui/) 探索 OpenAPI 规范：
 
 * 对于公共云托管实例：`https://bitwarden.com/help/api/`
 * 对于自托管实例：`https://your.domain.com/api/docs/`
 
 {% hint style="info" %}
-**经典 2019 企业组织**、当前的**企业组织**和当前的**团队组织**均可以访问 Bitwarden 公共 API。更多信息，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
+~~**经典 2019 企业组织**、当前的**企业组织**和当前的**团队组织**均可以访问 Bitwarden 公共 API。更多信息，请参阅~~[~~关于 Bitwarden 计划~~](../plans-and-pricing/password-manager/about-bitwarden-plans.md)~~。~~
 {% endhint %}
 
 > **\[译者注]**：Swagger-UI 是一套 HTML/CSS/JS 框架，用于解析遵守 Swagger 规范的 JSON 或 YAML 文件，展示 swagger-editor 生成的 API 文档，还可以在其中调试 API。它将我们编写的 OpenAPI 规范呈现为交互式的 API 文档，使用浏览器来查看并且操作我们的 RESTful API。
@@ -27,7 +27,7 @@ Bitwarden Public API 为组织提供了一套用于管理成员、集合、群�
 
 ## 端点 <a href="#endpoints" id="endpoints"></a>
 
-### 基本 URL <a href="#base-url" id="base-url"></a>
+### 基础 URL <a href="#base-url" id="base-url"></a>
 
 对于云托管：`https://api.bitwarden.com` 或 `https://api.bitwarden.eu`
 
@@ -137,7 +137,7 @@ Bitwarden 拥有一个公共[状态页面](https://status.bitwarden.com/)，您�
 
 ## 进一步阅读 <a href="#further-reading" id="further-reading"></a>
 
-有关使用 Bitwarden Public API 的更多信息，请参阅以下文章：
+有关使用 Bitwarden 公共 API 的更多信息，请参阅以下文章：
 
 * [Bitwarden Public API OAS 规范](https://bitwarden.com/help/api/)
 * [事件日志](../admin-console/reporting/event-logs.md)

@@ -6,15 +6,11 @@
 
 Splunk Enterprise 是一个安全信息和事件管理 (SIEM) 平台，可与 Bitwarden 组织一起使用。组织可以在 Splunk Enterprise 仪表板上监埪 Bitwarden 应用程序的[事件](event-logs.md)活动。
 
-{% hint style="info" %}
-**本地 Splunk Enterprise** 目前支持 Bitwarden Splunk 集成。
-{% endhint %}
-
 ## 设置 <a href="#setup" id="setup"></a>
 
 ### 创建 Splunk 账户 <a href="#create-a-splunk-account" id="create-a-splunk-account"></a>
 
-在 Splunk Enterprise 上安装 Bitwarden 应用程序要求 [Splunk Base](https://www.splunk.com/en\_us/sign-up.html) 账户。
+在 Splunk Enterprise 上安装 Bitwarden 应用程序要求 [Splunk Base](https://www.splunk.com/en_us/sign-up.html) 账户。
 
 ### 安装 Splunk <a href="#install-splunk" id="install-splunk"></a>
 

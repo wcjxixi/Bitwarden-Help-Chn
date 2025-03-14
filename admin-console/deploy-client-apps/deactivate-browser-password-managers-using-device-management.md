@@ -4,12 +4,12 @@
 对应的[官方文档地址](https://bitwarden.com/help/deactivate-browser-password-managers/)
 {% endhint %}
 
-本文将指导您如何使用组策略禁用各种网络浏览器的内置密码管理器。这些步骤将有助于防止公司登录信息被保存并同步到个人账户。您还可以考虑[将 Bitwarden 浏览器扩展部署到所有浏览器](deploy-browser-extensions/browserext-deploy.md)，以作为同一策略的一部分。
+本文将指导您如何使用组策略禁用各种网页浏览器的内置密码管理器。这些步骤将有助于防止公司登录信息被保存并同步到个人账户。您还可以考虑[将 Bitwarden 浏览器扩展部署到所有浏览器](deploy-browser-extensions/browserext-deploy.md)，以作为同一策略的一部分。
 
 ## 使用 Windows GPO 禁用 <a href="#disable-with-windows-gpo" id="disable-with-windows-gpo"></a>
 
 {% tabs %}
-{% tab title="禁用 Edge" %}
+{% tab title="Edge" %}
 1、在您的托管 Windows 服务器上打开组策略管理编辑器。
 
 2、[下载相应的 Edge 策略模板](https://www.microsoft.com/zh-cn/edge/business/download?form=MA13FJ)。
@@ -38,7 +38,7 @@ Edge 设置
 9、确保 GPO 链接已启用。
 {% endtab %}
 
-{% tab title="禁用 Chrome" %}
+{% tab title="Chrome" %}
 1、在您的托管 Windows 服务器上打开组策略管理编辑器。
 
 2、[下载相应的 Chrome 策略模板](https://support.google.com/chrome/a/answer/187202?hl)。
@@ -70,7 +70,7 @@ Chrome 设置
 11、确保 GPO 链接已启用。
 {% endtab %}
 
-{% tab title="禁用 Firefox" %}
+{% tab title="Firefox" %}
 1、在您的托管 Windows 服务器上打开组策略管理编辑器。
 
 2、[下载最新的 Firefox 策略模板 .zip 文件](https://github.com/mozilla/policy-templates/releases)。
