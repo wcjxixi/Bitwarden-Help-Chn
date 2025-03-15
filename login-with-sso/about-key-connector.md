@@ -4,11 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/about-key-connector/)
 {% endhint %}
 
-## 什么是 Key Connector？ <a href="#what-is-key-connector" id="what-is-key-connector"></a>
+Key Connector（密钥连接器）是一个用于促进客户管理的加密 (CMS) 的自托管应用程序，其允许企业组织向 Bitwarden 客户端提供加密密钥。
 
-Key Connector（密钥连接器）是一个用于促进**客户管理的加密**的自托管应用程序，其允许企业组织向 Bitwarden 客户端提供加密密钥。Key Connector 在与现有服务相同的网络上作为 docker 容器运行，并且可以与 [SSO 登录](about-login-with-sso.md)一起使用为组织提供加密密钥，作为使用主密码进行密码库解密的一种替代（[了解更多](about-key-connector.md#why-use-key-connector)）。
+Key Connector 在与现有服务相同的网络上作为 docker 容器运行，并且可以与 [SSO 登录](about-login-with-sso.md)一起使用为组织提供加密密钥，以作为使用主密码进行密码库解密的一种替代方式（[了解更多](about-key-connector.md#why-use-key-connector)）。Bitwarden 支持部署 Key Connector，以供组织在自托管实例中使用。
 
-Key Connector 需要连接到存储了已加密用户密钥的数据库和用于加密和解密已存储的用户密钥的 RSA 密钥对。Key Connector 可以使用各类数据库提供程序（例如 MSSQL、PostgreSQL、MySQL）和密钥对存储提供程序（例如 Hashicorp Vault、云 KMS 提供程序、本地 HSM 设备）来进行[配置](deploy-key-connector.md)，以满足您公司的基础架构要求。
+Key Connector 需要连接到**存储了已加密用户密钥的数据库**和**用于加密和解密已存储的用户密钥的 RSA 密钥对**。Key Connector 可以使用各类数据库提供程序（例如 MSSQL、PostgreSQL、MySQL）和密钥对存储提供程序（例如 Hashicorp Vault、云 KMS 提供程序、本地 HSM 设备）来进行[配置](deploy-key-connector.md)，以满足您公司的基础架构要求。
 
 {% embed url="https://bitwarden.com/help/images/sso/keyconnector/keyconnector-diagram-2.png" %}
 Key Connector 架构
@@ -24,19 +24,19 @@ Key Connector 架构
 
 ### 对主密码的影响 <a href="#impact-on-master-passwords" id="impact-on-master-passwords"></a>
 
-由于 Key Connector 使用客户管理的解密密钥代替基于主密码的解密，因此组织成员将被**要求从他们的帐户中移除主密码**。移除后，所有密码库解密操作都将使用已存储的用户密钥进行。除了登录之外，这还会对离职和以及您应该注意的其他功能产生一些影响。
+由于 Key Connector 使用客户管理的解密密钥代替基于主密码的解密，因此组织成员将被**要求从他们的账户中移除主密码**。移除后，所有密码库解密操作都将使用已存储的用户密钥进行。除了登录之外，这还会对离职和以及您应该注意的其他功能产生一些影响。
 
 {% hint style="warning" %}
-目前，无法为已移除了主密码的帐户重新创建主密码。
+目前，无法为已移除了主密码的账户重新创建主密码。
 
 因此，组织所有者和管理员无法移除他们的主密码，并且即使使用 SSO 也必须继续使用他们的主密码。可以将已移除主密码的用户提升为所有者或管理员，但我们**强烈建议**您的组织始终至少有一个拥有主密码的所有者。
 {% endhint %}
 
 ### 对组织成员的影响 <a href="#impact-on-organization-membership" id="impact-on-organization-membership"></a>
 
-Key Connector 要求用户[移除他们的主密码](about-key-connector.md#impact-on-master-passwords)，改用使用公司拥有的加密密钥数据库来解密用户的密码库。由于无法为已移除主密码的帐户重新创建主密码，这意味着，一旦帐户使用 Key Connector 解密，就所有的意图和目的而言，都**属于组织所有**。
+Key Connector 要求用户[移除他们的主密码](about-key-connector.md#impact-on-master-passwords)，改用使用公司拥有的加密密钥数据库来解密用户的密码库。由于无法为已移除主密码的账户重新创建主密码，这意味着，一旦账户使用 Key Connector 解密，就所有的意图和目的而言，都**属于组织所有**。
 
-这些帐户**不能离开组织**，因为这样做他们将失去任何解密密码库数据的方法。同样，如果组织管理员从组织中移除帐户，该帐户将失去任何解密密码库数据的方法。
+这些账户**不能离开组织**，因为这样做他们将失去任何解密密码库数据的方法。同样，如果组织管理员从组织中移除账户，该账户将失去任何解密密码库数据的方法。
 
 ### 对其他功能的影响 <a href="#impact-on-other-features" id="impact-on-other-features"></a>
 
@@ -47,6 +47,7 @@ Key Connector 要求用户[移除他们的主密码](about-key-connector.md#impa
 | **主密码重新提示**  | 使用 Key Connector 后，对于因实施密钥连接器而移除了其主密码的任何用户，[主密码重新提示](../your-vault/vault-items.md#protect-individual-items)将被禁用。                                                                                                                                                                                                                                                                                                                              |
 | **管理员密码重置**  | 使用 Key Connector 后，对于因实施密钥连接器而移除了其主密码的任何用户，[管理员密码重置](../organizations/admin-password-reset.md)将被禁用。                                                                                                                                                                                                                                                                                                                                           |
 | **紧急访问**     | <p>使用 Key Connector 后，对于因实施密钥连接器而移除了其主密码的任何用户，紧急访问的<a href="../security/emergency-access.md#user-access">账户接管选项</a>将被禁用。<br><br>根据既定的紧急访问工作流程，受信任的紧急联系人仍可以<strong>查看</strong>授予人的个人密码库数据。</p>                                                                                                                                                                                                                                                 |
+| **更改电子邮箱**   | 使用 Key Connector 时，不能更改用户的密码库电子邮箱地址。                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 ## 如何开始使用 Key Connector？ <a href="#how-do-i-start-using-key-connector" id="how-do-i-start-using-key-connector"></a>
 

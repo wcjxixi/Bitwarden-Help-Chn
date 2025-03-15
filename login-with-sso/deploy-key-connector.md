@@ -291,6 +291,18 @@ keyConnectorSettings__rsaKey__pkcs11PrivateKeyId={PrivateKeyId}
 {% endtab %}
 {% endtabs %}
 
+### 确保 Key Connector 的安全 <a href="#securing-key-connector" id="securing-key-connector"></a>
+
+建议 Key Connector 用户采取额外的安全措施，以保持数据库和数据传输的零知识加密。
+
+* 使用 TLS 拦截代理的组织需要采取额外措施，以保持零知识加密。为确保安全，请将 Bitwarden URL 添加到代理的排除列表中，这将确保与 Key Connector 的数据传输在整个数据传输过程中保持加密和非登录状态。
+* 加密机制之间的迁移并非总是可行的。
+* 目前**不支持**从一个数据库迁移到另一个数据库。请确保为数据库执行频繁的自动备份计划。
+
+{% hint style="danger" %}
+加密密钥的管理非常敏感，只建议拥有能安全支持部署和管理密钥服务器的团队和基础设施的企业使用。
+{% endhint %}
+
 ### 激活 Key Connector <a href="#activate-key-connector" id="activate-key-connector"></a>
 
 现在 [Key Connector 已配置完成](deploy-key-connector.md#configure-key-connector)，并且您也拥有[启用了 Key Connector 的许可证](deploy-key-connector.md#obtain-new-license-file)，请完成以下步骤：
@@ -301,26 +313,20 @@ keyConnectorSettings__rsaKey__pkcs11PrivateKeyId={PrivateKeyId}
 ./bitwarden.sh restart
 ```
 
-2、以**组织所有者**身份登录您的自托管 Bitwarden，然后导航至组织**设置** → **订阅**界面。
+2、以**组织所有者**身份登录您的自托管 Bitwarden，然后导航至管理控制台的**计费** → **订阅**界面。
 
-3、选择**更新许可证**按钮，然后上传[在前面的步骤中获取的](deploy-key-connector.md#obtain-new-license-file)启用了 Key Connector 的许可证：
+3、选择**更新许可证**按钮，然后上传[在前面的步骤中获取的](deploy-key-connector.md#obtain-new-license-file)启用了 Key Connector 的许可证。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3fYAN71thZdXeRUNwBFfDC/e56e3e4c9f8d406da87eca5a8cccf64d/update-license.png?fm=webp&h=1296&q=50&w=2040" %}
-更新您的许可证
-{% endembed %}
+4、如果您还没有准备好，请导航到**设置** → **策略**界面，启用**单一组织**和**要求单点登录身份验证**策略。这两项都是使用 Key Connector 的必要条件。
 
-4、导航到组织**管理**界面。
-
-5、（如果您还没有）请导航到**策略**界面，然后启用[单一组](../organizations/enterprise-policies.md#single-organization)织和[单点登录验证](../organizations/enterprise-policies.md#single-sign-on-authentication)策略。**两者都需要使用 Key Connector**。
-
-6、导航到**单点登录（SSO）**&#x754C;面：
+5、导航至**设置** → **单点登录**界面。
 
 {% hint style="success" %}
 接下来的几个步骤假设您已经拥有一个使用 [SAML 2.0](saml-2.0-configuration.md) 或 [OIDC](oidc-configuration.md) 的、激活了 [SSO 登录](about-login-with-sso.md)的实施。**如果还没有**，请在继续之前先实施和测试 SSO 登录。
 {% endhint %}
 
-7、在**成员解密选项**部分，选择 **Key Connector**。
+6、在**成员解密选项**部分，选择 **Key Connector**。
 
-8、在 **Key Connector URL** 输入框中，输入 Key Connector 运行的地址（默认为 `https://your.domain/key-connector`），选然后择**测试**按钮以确保您可以访问 Key Connector。
+7、在 **Key Connector URL** 输入框中，输入 Key Connector 运行的地址（默认为 `https://your.domain/key-connector`），选然后择**测试**按钮以确保您可以访问 Key Connector。
 
-9、滚动到屏幕底部然后选择**保存**。
+8、滚动到屏幕底部然后选择**保存**。
