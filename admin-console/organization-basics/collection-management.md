@@ -11,10 +11,6 @@
 
 ## 集合管理设置 <a href="#collection-management-settings" id="collection-management-settings"></a>
 
-{% hint style="success" %}
-如果您是自托管，请[在云组织中设置集合管理设置](collection-management.md)，然后[更新自托管服务器的许可证](../../self-hosting/licensing-for-paid-features.md#update-organization-license)以将这些设置转移到您的自托管组织。
-{% endhint %}
-
 集合管理设置可进行自定义，以最大限度地满足您的组织需求。组织所有者可以访问位于管理控制台的**设置** →  **组织信息**视图选项，您可以使用以下这些选项：
 
 {% hint style="info" %}

@@ -10,7 +10,7 @@ Bitwarden 提供了与 Ansible 的集成，可以从 Secrets Manager 中获取�
 
 * 我们建议在 [Python 虚拟环境](https://python.land/virtual-environments/virtualenv)中安装 Python 包。
 * 您系统上已安装的 Ansible 的当前版本。
-* Bitwarden 机密管理器与一个[活动的服务账户](../get-started/secrets-manager-quick-start.md#add-a-service-account)。
+* Bitwarden 机密管理器与一个[活动的机器账户](../get-started/secrets-manager-quick-start.md#add-a-service-account)。
 
 在设置 Ansible 集合之前，我们建议您同时打开 Secrets Manager，以方便访问您的访问令牌以及您希望包含在设置中的任何机密。
 
@@ -33,7 +33,7 @@ ansible-galaxy collection install bitwarden.secrets
 现在 Ansible 集合已安装好，我们可以使用 `bitwarden.secrets.lookup` 从 Ansible playbook 中开始调用 Bitwarden 机密。以下部分将包含用于演示此过程的的示例。
 
 {% hint style="info" %}
-macOS 用户可能需要在 shell 中设置以下环境变量，以避免来自[上游的 Ansible 故障](https://docs.ansible.com/ansible/latest/reference\_appendices/faq.html#running-on-macos-as-a-control-node)。
+macOS 用户可能需要在 shell 中设置以下环境变量，以避免来自[上游的 Ansible 故障](https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#running-on-macos-as-a-control-node)。
 
 * `export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES`
 {% endhint %}
@@ -77,9 +77,9 @@ access_token='<ACCESS_TOKEN_VALUE>') }}"
 
 使用此方法，可以在单个 playbook 中引用多个访问令牌。
 
-## 从不同的服务器检索机密 <a href="#retrieve-secret-from-different-server" id="retrieve-secret-from-different-server"></a>
+## 从不同的服务器获取机密 <a href="#retrieve-secret-from-different-server" id="retrieve-secret-from-different-server"></a>
 
-Bitwarden 自托管用户可以通过包含 `base_url,` `api_url` 和 `identity_url` 从他们的 Bitwarden 服务器中检索机密：
+Bitwarden 自托管用户可以通过包含 `base_url,` `api_url` 和 `identity_url` 从他们的 Bitwarden 服务器中获取机密：
 
 ```bash
 vars:
@@ -145,7 +145,7 @@ vars:
 }
 ```
 
-要检索额外的字段，例如 `"note"` ，可以将以下命令添加到 playbook 中：
+要获取额外的字段，例如 `"note"` ，可以将以下命令添加到 playbook 中：
 
 ```bash
   vars:

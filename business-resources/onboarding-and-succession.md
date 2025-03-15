@@ -92,15 +92,15 @@ Bitwarden 组织以可扩展且安全的方式管理用户和数据。单独管�
 集合的使用
 {% endembed %}
 
-### 入职用户 <a href="#onboarding-users" id="onboarding-users"></a>
+### 入职成员 <a href="#onboarding-members" id="onboarding-members"></a>
 
 您的组织被建立并且用于存储数据的集合设置好后，此时，所有者和管理员应邀请新的成员。为了确保您组织的安全，Bitwarden 应用了一个 3 步流程来加入新的成员：[邀请](../organizations/user-management.md#invite) → [接受](../organizations/user-management.md#accept) → [确认](../organizations/user-management.md#confirm)。
 
 用户可以[直接从网页密码库](onboarding-and-succession.md#adding-users)登录，也可以使用[目录连接器](onboarding-and-succession.md#directory-connector)应用程序同步个人用户和[群组](onboarding-and-succession.md#groups)。
 
-#### 添加用户 <a href="#adding-users" id="adding-users"></a>
+#### 添加成员 <a href="#adding-members" id="adding-members"></a>
 
-在最简单的情况下，用户可以直接从网页密码库被添加到你的组织。在添加用户时，你可以指定授予他们可以访问哪些[集合](onboarding-and-succession.md#collections)、赋予他们哪个[角色](onboarding-and-succession.md#comprehensive-role-based-access-controls)，以及更多。
+在最简单的情况下，用户可以直接从网页 App 被添加到您的组织。在添加用户时，你可以指定授予他们可以访问哪些[集合](onboarding-and-succession.md#collections)、赋予他们哪个[角色](onboarding-and-succession.md#comprehensive-role-based-access-controls)，以及更多。
 
 [了解如何一步一步将用户到您的组织。](../organizations/user-management.md#onboard-users)
 
@@ -128,23 +128,57 @@ Bitwarden 使用了一种企业友好的方法来实现大规模的共享。用�
 
 Bitwarden 提供了多种工具，可用于定制工作流程和加强对继任的控制。下文将介绍一个基本的继任工作流程（不使用这些工具）和一些组织常用的高级继任策略：
 
-基本离职\
-从Bitwarden 中删除用户涉及到将用户从您的组织中移除，就像入职一样，可以直接从网络保险库中完成，也可以使用SCIM或目录连接器自动完成。\
-Alice是您企业中的一个用户，该用户托管在Bitwarden云上并使用公司电子邮件地址（如first-last@company.com）。 目前，Alice是这样使用Bitwarden的：
+### 基本离职 <a href="#basic-deprovisioning" id="basic-deprovisioning"></a>
 
-Alice 是您的组织的**经理**，该组织托管在 Bitwarden Cloud 上并使用公司电子邮件地址（例如 `first-last@company.com`）。以下是 Alice 目前使用 Bitwarden 的方式：
+从Bitwarden 中离职用户涉及到将用户从您的组织中移除，就像入职一样，可以[直接从网页密码库](../organizations/user-management.md#offboard-users)中完成，也可以使用 [SCIM](../scim/about-scim.md) 或 [Directory Connector](onboarding-and-succession.md#directory-connector) 自动完成。
 
-<table data-header-hidden><thead><tr><th width="150"></th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td>在个人和职业上使用 Bitwarden 手机和浏览器扩展，在组织上偶尔使用网页密码库进行相关工作。</td></tr><tr><td><strong>电子邮件 &#x26; 主密码</strong></td><td>使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录 Bitwarden。</td></tr><tr><td><strong>个人项目</strong></td><td>在她的个人密码库中存储各种个人项目，包括登录信息和信用卡。</td></tr><tr><td><strong>组织中的权限</strong></td><td>作为<a href="../admin-console/user-management/member-roles-and-permissions.md">经理</a>，Alice 可以管理集合的许多方面。</td></tr><tr><td><strong>两步登录</strong></td><td>使用组织层面的 <a href="../two-step-login/setup-guides/two-step-login-via-duo.md">Duo 2FA</a>。</td></tr><tr><td><strong>已创建的集合</strong></td><td>已为她的团队创建了一个集合：「Alice’s Team Collection」。</td></tr><tr><td><strong>已共享的项目</strong></td><td>创建并共享了多个归组织所有并驻留在她团队集合中的密码库项目。</td></tr></tbody></table>
+Alice 是您企业中的一个**用户**，该组织托管在 Bitwarden Cloud 并使用公司电子邮箱地址（例如 `first-last@company.com`）。 目前，Alice 是这样使用 Bitwarden 的：
 
-#### 离职后 <a href="#once-offboarded" id="once-offboarded"></a>
+<table><thead><tr><th width="150">产品领域</th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td>在个人和职业上使用 Bitwarden 移动端和浏览器扩展，在组织上偶尔使用网页密码库进行相关工作。</td></tr><tr><td><strong>电子邮箱 &#x26; 主密码</strong></td><td>使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录 Bitwarden。</td></tr><tr><td><strong>个人项目</strong></td><td>在她的个人密码库中存储各种个人项目，包括登录和信用卡。</td></tr><tr><td><strong>两步登录</strong></td><td>使用组织层面的 <a href="../two-step-login/setup-guides/two-step-login-via-duo.md">Duo 2FA</a>。</td></tr><tr><td><strong>集合</strong></td><td>Alice 对「Marketing Credentials」集合具有「可以管理」权限，授予她可以管理该集合的许多方面。</td></tr><tr><td><strong>已共享的项目</strong></td><td>创建并共享了多个归组织所有并驻留在她团队集合中的密码库项目。</td></tr></tbody></table>
 
-当 Alice 从您的组织中被移除后：
+#### 当 Alice 从您的组织中被移除后： <a href="#once-offboarded" id="once-offboarded"></a>
 
-<table data-header-hidden><thead><tr><th width="150"></th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td>可以继续使用任一个 Bitwarden 应用程序访问她的个人密码库，但将<strong>立即失去对组织密码库、所有集合和所有已共享项目的所有访问权限</strong>。</td></tr><tr><td><strong>电子邮件 &#x26; 主密码</strong></td><td>可以继续使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录，但是由于她无法访问她的 <code>@company.com</code> 收件箱，因此应该建议她更改为与她的 Bitwarden 帐户关联的电子邮件。</td></tr><tr><td><strong>个人项目</strong></td><td>仍然可以使用她的个人密码库并访问存储在其中的项目。</td></tr><tr><td><strong>组织中的权限</strong></td><td>将<strong>立即失去与组织相关的所有事物的所有权限和访问权限</strong>。</td></tr><tr><td><strong>两步登录</strong></td><td>将无法使用组织层面的 Duo 2FA 访问她的密码库，但可以设置为我们的免费两步登录选项之一或升级到高级版以获取更多功能。</td></tr><tr><td><strong>已创建的集合</strong></td><td>集合和已共享项目的所有权<strong>属于组织</strong>，因此 Alice 将无法访问「Alice’s Team Collection」，尽管已经创建了它。</td></tr><tr><td><strong>已共享的项目</strong></td><td>集合和已共享项目的所有权<strong>属于组织</strong>，因此 Alice 将无法访问所有这些项目，尽管已创建它们。</td></tr></tbody></table>
+<table><thead><tr><th width="150">产品领域</th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td><p>可以继续使用任一个 Bitwarden 应用程序访问她的个人密码库，但将<strong>立即失去对组织密码库、所有集合和所有已共享项目的访问权限</strong>。</p><p></p><p>有关本地缓存的信息，请参阅本节末尾的提示。</p></td></tr><tr><td><strong>电子邮箱 &#x26; 主密码</strong></td><td>可以继续使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录，但是由于她无法访问她的 <code>@company.com</code> 收件箱，因此应该建议她更改为与她的 Bitwarden 账户关联的电子邮箱。</td></tr><tr><td><strong>个人项目</strong></td><td>仍然可以使用她的个人密码库并访问存储在其中的项目。</td></tr><tr><td><strong>组织中的权限</strong></td><td>将<strong>立即失去与组织相关的所有事物的所有权限和访问权限</strong>。</td></tr><tr><td><strong>两步登录</strong></td><td>将无法使用组织层面的 Duo 2FA 访问她的密码库，但可以设置为我们的免费两步登录选项之一或升级到高级版以获取更多功能。</td></tr><tr><td><strong>已创建的集合</strong></td><td>Alice 的「Marketing Credentials」集合，将由组织所有者和管理员保留，他们可以为某个新用户分配「可以管理」权限。</td></tr><tr><td><strong>已共享的项目</strong></td><td>集合和已共享项目的所有权<strong>属于组织</strong>，因此 Alice 将无法访问所有这些项目，尽管已创建它们。</td></tr></tbody></table>
 
 {% hint style="success" %}
-离线设备会缓存密码库数据的只读副本，包括组织密码库数据。如果您预料这些数据会被恶意利用，则应在离职后更新员工有权访问权限的凭据。
+离线设备会缓存密码库数据（包括组织密码库数据）的只读副本。 某些客户端可能会在成员离职后的短时间内保留对该只读数据的访问权限。如果预计会有人恶意利用这一点，则应在将成员从组织中移除时更新其曾拥有访问权限的凭据。
 {% endhint %}
+
+### 高级离职 <a href="#advanced-deprovisioning" id="advanced-deprovisioning"></a>
+
+{% hint style="danger" %}
+对于那些使用[受信任设备 SSO](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 而没有主密码的账户，[从您的组织中移除他们](../organizations/user-management.md#offboard-users)将切断其对 Bitwarden 账户的所有访问权限，除非：
+
+1. 您事先使用[账户恢复](../organizations/admin-password-reset.md)为其分配了主密码。
+2. 用户在账户恢复后至少登录一次，以便完全完成账户恢复工作流程。
+
+此外，除非在用户从组织中删除之前采取上述步骤，否则用户将无法重新加入组织。在这种情况下，用户将被要求[删除其账户](../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并收到创建账户和加入组织的新邀请。
+
+撤销对组织的访问权限，但不将其从组织中移除，将允许其登录 Bitwarden 并**仅**访问其个人密码库。
+{% endhint %}
+
+#### 管理接管 <a href="#administrative-take-over" id="administrative-take-over"></a>
+
+使用[主密码重置策略](../organizations/enterprise-policies.md#account-recovery-administration)，您企业的所有者和管理员可以在继任期间重置用户的主密码。
+
+重置用户的主密码后，用户将退出所有活动的 Bitwarden 会话，并将其登录凭据重置为管理员指定的凭据，这意味着该管理员（也只有该管理员）将拥有该用户密码库数据的密钥，包括个人密码库中的项目。 这种密码库接管策略通常被企业用来确保员工不会保留对可能与工作相关的个人密码库项目的访问权限，并可用于促进对员工可能使用的每个凭据的审计。
+
+{% hint style="info" %}
+**管理员密码重置不会绕过两步登录**。在许多情况下，我们建议使用 SSO，因为有些 IdP 允许您为用户配置 2FA 和 2FA 旁路策略。
+{% endhint %}
+
+#### 移除个人密码库 <a href="#removing-the-individual-vault" id="removing-the-individual-vault"></a>
+
+如果组织需要实时控制所有密码库项目，您可以使用[禁用个人密码库策略](../organizations/enterprise-policies.md#remove-individual-vault)，要求用户将所有密码库项目保存到组织。这将避免在继任过程中接管和审计用户账户，因为一旦从组织中移除，账户中的数据将完全清空。
+
+#### 删除不再登录的账户 <a href="#login-less-account-deletion" id="login-less-account-deletion"></a>
+
+如前所述，从组织中移除用户并不会自动删除其 Bitwarden 账户。在基本的继任工作流程中，当用户被移除后，他们就不能再访问组织或任何共享项目和集合，但他们仍然可以使用现有的主密码登录 Bitwarden 并访问任何个人密码库项目。
+
+组织如果希望完全删除账户，包括所有个人密码库项目，可以在继任过程中使用以下方法之一来实现：
+
+1. 如果您是自行托管 Bitwarden，授权管理员可以从[系统管理员门户](../self-hosting/system-administrator-portal.md)删除账户。
+2. 如果该账户有一个由贵公司控制的 @yourcompany.com 电子邮箱地址，您可以使用[无需登录而删除](../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)工作流程，并在 @yourcompany.com 收件箱中确认删除。
 
 ## 为您的业务设计您的组织 <a href="#designing-your-organization-for-your-business" id="designing-your-organization-for-your-business"></a>
 
@@ -152,17 +186,21 @@ Alice 是您的组织的**经理**，该组织托管在 Bitwarden Cloud 上并�
 
 [立即开始](https://bitwarden.com/pricing/business/)免费试用企业版或团队版。
 
-### 目录连接器 <a href="#directory-connector" id="directory-connector"></a>
+### SCIM
 
-对于使用目录服务（LDAP、AD、Okta 等）运营的拥有大量用户群的公司，目录连接器可以将目录中的用户和群组同步到 Bitwarden 组织。目录连接器是一个独立的应用程序，用以访问您的目录和 Bitwarden，可以在任何地方运行。
+对于拥有使用受支持的身份（目前包括 Azure AD、Okta、OneLogin 和 JumpCloud）运营的庞大用户群的企业组织，SCIM 集成可用于自动配置 Bitwarden 组织中的成员和群组。[了解更多](../scim/about-scim.md)。
+
+### Directory Connector
+
+对于使用目录服务（LDAP、AD、Okta 等）运营的拥有庞大用户群的公司，Directory Connector 可以将目录中的用户和群组同步到 Bitwarden 组织。Directory Connector 是一个独立的应用程序，用以访问您的目录和 Bitwarden，可以在任何地方运行。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6kt3QORL97ZWxcZX2gicVl/038aaad07a9c4e00dd4cf7d6303d9578/bitwarden-directory-connector.png?fm=webp&h=424&q=50&w=930" %}
 目录连接器
 {% endembed %}
 
-许多 Bitwarden 团队和企业组织将他们的入职工作的重点放在目录连接器上，并使用组织密码库管理区域来管理组​群组-集合关系。
+许多 Bitwarden 团队和企业组织将他们的入职工作的重点放在 Directory Connector 上，并使用组织密码库管理区域来管理组​群组-集合关系。
 
-目录连接器可以：
+Directory Connector 可以：
 
 * 将基于 LDAP 的目录群组与 Bitwarden 群组同步
 * 同步每个群组内的用户
@@ -171,33 +209,30 @@ Alice 是您的组织的**经理**，该组织托管在 Bitwarden Cloud 上并�
 
 ### SSO 登录 <a href="#login-with-sso" id="login-with-sso"></a>
 
-Bitwarden 企业组织可以使用 SAML 2.0 或 OIDC 与您现有的身份提供程序（IdP）集成，以允许您组织的成员使用 SSO 登录 Bitwarden。SSO 登录将用户身份验证与密码库解密分开：
+Bitwarden 企业组织可以使用 SAML 2.0 或 OIDC 与您现有的身份提供程序 (IdP) 集成，以允许您组织的成员使用 SSO 登录 Bitwarden。SSO 登录将用户身份验证与密码库解密分开：
 
 **身份验证**通过您选择的 IdP 完成，并保留连接到该 IdP 的任何双重身份验证过程。密码库数据的**解密**需要用户的个人密钥，该密钥部分源自主密码。有两个[解密选项](../login-with-sso/member-decryption-options.md)，这两个选项都会让用户使用他们的常规 SSO 凭据进行身份验证。
 
 * **主密码**：通过身份验证后，组织成员将使用他们的主密码解密密码库数据。
-* **客户管理的加密**：连接 SSO 登录到您的自托管解密密钥服务器。使用此选项，组织成员无需使用其主密码来解密密码库数据。相反，[密钥连接器](../login-with-sso/about-key-connector.md)将检索安全存储在您拥有和管理的数据库中的解密密钥。
-
-这种方法确保您可以：
-
-* 利用您现有的身份提供程序
-* 保护数据的端到端加密
-* 自动布建用户
-* 配置使用或不使用 SSO 访问
-* 根据贵公司的安全需求解密密码库数据
+* **客户管理的加密**：连接 SSO 登录到您的自托管解密密钥服务器。使用此选项，组织成员无需使用其主密码来解密密码库数据。相反，[Key Connector](../login-with-sso/about-key-connector.md) 将获取安全地存储在您拥有和管理的数据库中的解密密钥。这种方法确保您可以：
+  * 利用您现有的身份提供程序
+  * 保护数据的端到端加密
+  * 自动布建用户
+  * 配置使用或不使用 SSO 访问
+  * 根据贵公司的安全需求解密密码库数据
 
 ### 企业策略 <a href="#enterprise-policies" id="enterprise-policies"></a>
 
 企业组织可以实施各种旨在为任何企业奠定安全基础的策略。这些策略包括：
 
-* **两步登录**：要求用户在个人账户上设置两步登录。
-* **主密码**：设置主密码强度的最低要求。
+* **要求两步登录**：要求用户在个人账户上设置两步登录。
+* **主密码要求**：设置主密码强度的最低要求。
 * **密码生成器**：设置密码生成器配置的最低要求。
 * **单一组织**：限制用户加入任何其他组织。
-* **个人所有权**：要求用户通过删除个人所有权选项将密码库项目保存到组织。
+* **禁用个人密码库**：要求用户通过删除个人所有权选项将密码库项目保存到组织。
 
 {% hint style="success" %}
-例如，**个人所有权策略**符合前面关于个人密码库和组织密码库之间相互作用的讨论。一些公司可能希望确保所有凭据都保留在组织金密码中。一个可能的实施方案是允许每个个人用户拥有自己的集合，这与个人密码库不同，集合可以由组织所有者和管理员来监督。
+例如，**禁用个人密码库**策略与前面关于个人密码库和组织密码库之间相互作用的讨论相吻合。一些公司可能希望确保所有凭据都保留在组织密码库中。一种可能的实施方案是允许每个个人用户拥有自己的集合，这与个人密码库不同，集合可以由组织所有者和管理员来监督。
 {% endhint %}
 
 ### 事件日志 <a href="#event-logs" id="event-logs"></a>
@@ -211,14 +246,14 @@ Bitwarden 组织包括了对[事件日志](../admin-console/reporting/event-logs
 * 以及更多
 
 {% hint style="success" %}
-除了这些好处外，客户还很欣赏将 Bitwarden 紧密集成到他们现有系统中的能力。Bitwarden 提供了一个强大的公共 [API](https://bitwarden.com/help/api/) 和一个功能齐全的[命令行界面](../password-manager/developer-tools/password-manager-cli.md)（CLI），以进一步整合到现有的组织工作流程中。
+除了这些好处外，客户还很欣赏将 Bitwarden 紧密集成到他们现有系统中的能力。Bitwarden 提供了一个强大的公共 [API](https://bitwarden.com/help/api/) 和一个功能齐全的[命令行界面](../password-manager/developer-tools/password-manager-cli.md) (CLI)，以进一步整合到现有的组织工作流程中。
 {% endhint %}
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
 为了与 Bitwarden 随时随地提供密码管理的方法保持一致，Bitwarden 提供了一个自托管选项，以为企业解决更广泛的使用情况。公司选择自托管的原因有很多。特别是在入职、离职和增强功能方面，以下是公司选择这样做的一些原因：
 
-* **立即删除用户帐户**：由于您控制服务器，因此可以完全删除用户（包括他们的个人密码库）。
+* **立即删除用户账户**：由于您控制服务器，因此可以完全删除用户（包括他们的个人密码库）。
 * **网络访问控制**：组织所有者可以确定员工必须使用哪些网络访问权限来访问他们的 Bitwarden 服务器。
 * **高级代理设置**：管理员可以选择启用或禁用某些类型的设备访问 Bitwarden 服务器。
 * **使用现有的数据库集群**：连接到现有的 Microsoft SQL Server 数据库。将来会支持其他数据库。
@@ -226,20 +261,24 @@ Bitwarden 组织包括了对[事件日志](../admin-console/reporting/event-logs
 
 ## 把碎片放在一起 <a href="#put-the-pieces-together" id="put-the-pieces-together"></a>
 
-目录连接器、SSO 登录、企业策略和您的密码库独立或协调工作，以优化您的入职、离职和组织管理体验。下表详细说明了将这些部分串在一起形成一个平滑过程的方式：
+Directory Connector、SSO 登录、企业策略和您的密码库独立或协调工作，以优化您的入职、离职和组织管理体验。下表详细说明了将这些部分串在一起形成一个平滑过程的方式：
 
-<table><thead><tr><th width="150">步骤</th><th>描述</th></tr></thead><tbody><tr><td><strong>同步</strong></td><td>使用目录连接器将群组和用户从您现有的目录服务同步到 Bitwarden。</td></tr><tr><td><strong>邀请</strong></td><td>目录连接器会自动向同步的用户发出邀请。</td></tr><tr><td><strong>验证</strong></td><td>将您的 SSO 登录实施与 SSO 策略配对，以要求用户在接受邀请时注册 SSO。</td></tr><tr><td><strong>管理</strong></td><td>使用网页密码库界面将一些用户提升到不同的角色，并确保群组 - 集合关系被配置为授予正确的用户以正确的访问权限。</td></tr><tr><td><strong>重新同步</strong></td><td>定期重新运行目录连接器以从 Bitwarden 中移除不再在您的目录服务中处于活动状态的用户并开始新员工入职。</td></tr></tbody></table>
+<table><thead><tr><th width="150">步骤</th><th>描述</th></tr></thead><tbody><tr><td><strong>同步</strong></td><td>使用 Directory Connector 将群组和用户从您现有的目录服务同步到 Bitwarden。</td></tr><tr><td><strong>邀请</strong></td><td>Directory Connector 会自动向同步的用户发出邀请。</td></tr><tr><td>身份<strong>验证</strong></td><td>将您的 SSO 登录实施与 SSO 策略配对，以要求用户在接受邀请时注册 SSO。</td></tr><tr><td><strong>管理</strong></td><td>使用网页密码库界面将一些用户提升到不同的角色，并确保群组 - 集合关系被配置为授予正确的用户以正确的访问权限。</td></tr><tr><td><strong>重新同步</strong></td><td>定期重新运行 Directory Connector 以从 Bitwarden 中移除不再在您的目录服务中处于活动状态的用户并开始新员工入职。</td></tr></tbody></table>
 
 ## FAQ <a href="#faqs" id="faqs"></a>
 
 ### 问：如果员工已经有 Bitwarden 账户，是否可以将其附加到组织中，这样他们就不需要另一个 Bitwarden 账户了？ <a href="#q-if-an-employee-already-has-a-bitwarden-account-can-we-attach-it-to-the-organization-so-they-dont-n" id="q-if-an-employee-already-has-a-bitwarden-account-can-we-attach-it-to-the-organization-so-they-dont-n"></a>
 
-**答：**&#x662F;的！可以。一些客户建议在将附加用户到组织之前，这些用户将 Bitwarden 密码库附加到他们的公司电子邮件中。这种选择是特定于公司的，任何一种方法都可以。
+**答：**&#x662F;的！可以。一些客户建议在将附加用户到组织之前，这些用户将 Bitwarden 密码库附加到他们的公司电子邮箱中。这种选择是特定于公司的，任何一种方法都可以。
 
 ### 问：当员工离职时，我们是否可以将他们的帐户从组织中分离出来，这样他们就无法再访问公司凭据，也不会丢失个人凭据？ <a href="#q-when-an-employee-leaves-can-we-detach-their-account-from-the-organization-so-that-they-dont-have-a" id="q-when-an-employee-leaves-can-we-detach-their-account-from-the-organization-so-that-they-dont-have-a"></a>
 
 **答：**&#x53EF;以！这正是[离职](onboarding-and-succession.md#offboarding-users)所需要做的事情。
 
-### 问：我们能否防止员工将公司组织的凭据复制到他们的个人密码库中？ <a href="#q-can-we-prevent-employees-from-duplicating-credentials-from-the-company-organization-to-their-perso" id="q-can-we-prevent-employees-from-duplicating-credentials-from-the-company-organization-to-their-perso"></a>
+### 问：组织前成员创建或共享的项目会发生什么？这些项目是否也会被删除吗？ <a href="#q-what-happens-to-items-that-were-created-or-shared-by-a-former-member-of-the-organization-will-thes" id="q-what-happens-to-items-that-were-created-or-shared-by-a-former-member-of-the-organization-will-thes"></a>
+
+**答：**&#x4E0D;会。将项目从个人密码库共享到组织密码库也会将项目所有权扩展到组织。
+
+### 问：我们能否防止员工将公司组织的凭据复制到他们的个人密码库中？ <a href="#q-can-we-prevent-employees-from-duplicating-credentials-from-the-company-organization-to-their-indiv" id="q-can-we-prevent-employees-from-duplicating-credentials-from-the-company-organization-to-their-indiv"></a>
 
 **答：**&#x53EF;以！使用我们[全面的基于角色的访问控制套件](../admin-console/user-management/member-roles-and-permissions.md#access-control)，您可以将凭据设为**只读**以防止复制副本。
