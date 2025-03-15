@@ -4,52 +4,64 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/import-to-org/)
 {% endhint %}
 
-Bitwarden 提供了一个数据导入工具，可以轻松地将任何密码管理解决方案迁移到您的组织密码库。您也可以使用数据导入工具从一个 Bitwarden 密码库导入到另一个 Bitwarden 密码库，或者导入一个 Bitwarden [加密导出](encrypted-exports.md)。
+直接将数据导入您的组织，以便于从任何密码管理解决方案迁移。您可以从一个组织导入另一个组织，管理员可以从其个人密码库导入到组织密码库。为了获得其他安全性，您还可以导入[加密导出](encrypted-exports.md)。
 
-关于支持的导入格式的完整列表，请参阅 [Bitwarden 支持导入哪些文件格式？](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)，或者使用这些文章用于从最流行的解决方案导入：
-
-* [从 LastPass 导入](../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)
-* [从1Password 导入](../password-manager/import-and-export/import-guides/import-data-from-1password.md)
-* [从 Firefox 导入](../password-manager/import-and-export/import-guides/import-data-from-firefox.md)
-* [从 Google Chrome 导入](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
+有关支持的导入格式的完整列表，请参阅 [Bitwarden 支持导入哪些文件格式？](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
 {% hint style="info" %}
-**上面列出的文章**描述如何导入到个人 Bitwarden 密码库。虽然从每一个解决方案中导出的指导是适当的，但重要的是要知道，导入到组织的过程略有不同，并在[下面进行了记录](import-data-to-an-organization.md#import-to-your-organization)。
+您可以在上传 `.json` 文件之前，根据本文的步骤对其进行适当调整，从而将新的密码库项目直接导入现有的集合。 [了解如何操作](condition-a-bitwarden-.csv-or-.json.md)。
 {% endhint %}
 
 ## 导入到您的组织 <a href="#import-to-your-organization" id="import-to-your-organization"></a>
 
-**只能从**[**网页密码库**](../getting-started/getting-started-webvault.md)**或** [**CLI**](../password-manager/developer-tools/password-manager-cli.md#import) **完成**导入数据到 Bitwarden 的操作。数据在发送到服务器存储之前会在本地进行加密。要导入您的数据：
+数据可从网页 App 导入 Bitwarden。数据先在本地[加密](../security/encryption.md)，然后再发送到服务器进行存储。要将数据导入一个组织，请执行以下操作：
 
-1、在您的组织中导航到**工具**选项卡
+1、登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
 
-![](../.gitbook/assets/org-tools.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
+产品切换器
+{% endembed %}
 
-2、从左侧工具菜单选择**导入数据**
+2、导航到**设置** → **导入数据**：
 
-3、从格式下拉菜单，选择一个**文件格式**（参阅 [Bitwarden 支持导入哪些文件格式？](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)）
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/12fA17Iq9LdCXdhPsPYQyq/6fb380ff6165058fefe6fd311e038364/2024-12-03_15-42-21.png?_a=DAJCwlWIZAAB" %}
+管理控制台导入
+{% endembed %}
 
-4、选择**选择文件**按钮并添加一个文件用于导入
+3、从下拉菜单中填写以下字段：
 
-5、选择**导入数据**按钮以完成导入
+* **集合**：选择是否要将导入的内容移至现有的集合。
+* **文件格式**：选择要导入的文件的格式。
+
+4、选择**选择文件**并添加要导入的文件，或将文件内容复制/粘贴到输入框中。
 
 {% hint style="warning" %}
-导入到 Bitwarden 无法检查要导入的文件中的项目是否与您的密码库中的项目重复。这意味着，如果某个项目已同时存在于密码库和要导入的文件中，则**多次导入将创建重复的密码库项目**。
+导入时不会检查要导入文件中的项目是否已存在于密码库中。如果您导入多个文件或导入的文件中的项目已经存在于您的密码库中，**则会产生重复**。
 {% endhint %}
 
-目前，文件附件不包括在 Bitwarden 导入操作中，需要手动上传至您的密码库。有关更多信息，请参阅[文件附件](../your-vault/file-attachments.md)。
+5、选择**导入数据**按钮以触发导入。如果要导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
-## 长度相关的导入错误 <a href="#length-related-import-errors" id="length-related-import-errors"></a>
+[文件附件](../your-vault/file-attachments.md)需要手动上传至您的密码库。
+
+## 故障排除 <a href="#troubleshooting" id="troubleshooting"></a>
+
+### 导入文件附件 <a href="#importing-file-attachments" id="importing-file-attachments"></a>
+
+文件附件必须手动迁移到您的 Bitwarden 密码库，因为它们目前不包括在批量导入操作中。请注意，只有高级用户，包括付费组织（家庭、团队或企业）成员才能存储文件附件。
+
+### 长度相关的导入错误 <a href="#length-related-import-errors" id="length-related-import-errors"></a>
 
 尝试导入 `.csv` 时通常会收到以下错误信息，这些信息表明导入文件中的某个特定值超出了该字段类型所允许的**加密**字符的限制：
 
-![网页密码库中的 Cipher 错误](../.gitbook/assets/ciphererror_2021.png)
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7FjmtbX1PwBeLKkhklxRXl/ed7e4cd0fcaba916e75725c9153890da/2024-12-05_16-21-00.png?_a=DAJCwlWIZAAB" %}
+网页密码库中的 Cipher 错误
+{% endembed %}
 
 要解决这个问题，请在文本编辑器或电子表格程序中打开 `.csv` 文件，将违规项目**移除**或**减少其字符数**。Bitwarden 不会导入您的 `.csv` 文件直到无任何违规项目。错误信息中的内容包含了几条相关的数据，这可以帮助你识别违规项目。例如，在上面的示例中：
 
 * `[1]` 标识违规项目所在的索引号，调整后&#x4E0E;_&#x5927;多&#x6570;_&#x7535;子表格程序中的行号一致
 * `[Login]` 标识违规项目的项目`类型`
-* `"Google"` 、`"Twitter"` 标识违规项目的`名称`
+* `""` 、识违规项目的`名称`
 * `Notes` 标识超过字符数限制的字段（列）
 * `10000` 标识该字段（列）允许的字符数限制
 

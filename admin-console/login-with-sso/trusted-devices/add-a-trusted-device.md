@@ -88,15 +88,15 @@
 使用主密码批准
 {% endembed %}
 
-新设备成为可信设备后，您只需完成公司既定的单点登录流程，即可登录 Bitwarden 并解密您的密码库数据。
+新设备成为受信任设备后，您只需完成公司既定的单点登录流程，即可登录 Bitwarden 并解密您的密码库数据。
 
 ## 添加第一台受信任设备 <a href="#adding-your-first-trusted-device" id="adding-your-first-trusted-device"></a>
 
-对于通过使用 SSO 登录及时 (JIT) 配置而被邀请的用户，用于访问 Bitwarden 的初始客户端将成为他们的第一台受信任设备。如果访问的初始客户端是 Bitwarden 桌面或移动 App，则该设备可用于批准其他设备。
+对于通过使用 SSO 登录即时 (JIT) 配置而被邀请的用户，用于访问 Bitwarden 的初始客户端将成为他们的第一台受信任设备。如果访问的初始客户端是 Bitwarden 桌面或移动 App，则该设备可用于批准其他设备。
 
 要使桌面或移动 App 成为第一个受信任设备，用户不应使用组织邀请链接。取而代之的是，打开移动或桌面 App，选择**企业单点登录**选项，以开始 JIT 流程。
 
-> **\[译者注]**：JIT
+> **\[译者注]**：JIT：Just-In-Time，指的是「即时配置」或「按需配置」，是一种用户管理和资源配置的方式。Bitwarden 使用这种方式简化了管理流程并提升了安全性。
 
 ## 移除受信任设备 <a href="#remove-a-trusted-device" id="remove-a-trusted-device"></a>
 

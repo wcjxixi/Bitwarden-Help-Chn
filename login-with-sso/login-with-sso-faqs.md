@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/sso-faqs/)
 {% endhint %}
 
-本文包含了关于 **SSO 登录**的常见问题（FAQ）。有关 **SSO 登录**的更多高级信息，请参考[关于 SSO 登录](about-login-with-sso.md)。
+本文包含了关于 **SSO 登录**的常见问题 (FAQ)。有关 **SSO 登录**的更多高级信息，请参考[关于 SSO 登录](about-login-with-sso.md)。
 
 ## 使用 SSO 登录 <a href="#using-login-with-sso" id="using-login-with-sso"></a>
 
@@ -16,7 +16,7 @@
 
 **答：**&#x9664;非您的企业使用受信设备 SSO，否则用户在使用 SSO 登录时必须输入主密码才能解密他们的密码库，从而保护企业的关键凭据和机密。
 
-SSO 登录保留了我们的端到端零知识加密模型；Bitwarden 的任何人都没有您的密码库数据的访问权限，重要的是，**您的身份提供程序也没有**。这就是为什么 Bitwarden 的 SSO 登录服务**将身份验证和解密分开**的原因。您的 IdP 可以确认 Alice 确实是 Alice，但不能也不应该拥有解密 Alice 密码库的工具。只有 Alice 才能拥有这种工具，在标准的 SSO 登录流程中，这就是她的主密码。[了解使用受信任设备 SSO 时如何解密数据](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md#how-it-works)。
+SSO 登录保留了我们的端到端零知识加密模型；Bitwarden 的任何人都没有您的密码库数据的访问权限，重要的是，**您的身份提供程序也没有**。这就是为什么 Bitwarden 的 SSO 登录要**将身份验证和解密分开**的原因。您的 IdP 可以确认 Alice 确实是 Alice，但不能也不应该拥有解密 Alice 密码库的工具。只有 Alice 才能拥有这种工具，在标准的 SSO 登录流程中，这就是她的主密码。[了解使用受信任设备 SSO 时如何解密数据](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md#how-it-works)。
 
 {% hint style="info" %}
 Bitwarden 为企业提供了两种解决方案，允许经过批准的企业成员在不使用主密码的情况下访问他们的 Bitwarden 账户：
