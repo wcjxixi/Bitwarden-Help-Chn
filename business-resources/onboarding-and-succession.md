@@ -1,4 +1,4 @@
-# 入职和继任
+# 入职和继任概述
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/onboarding-and-succession/)
@@ -14,7 +14,7 @@
 
 本指南涵盖了 Bitwarden 为你的组织中的用户提供的入职和继任计划的方法，从我们对用户和组织之间的关系的方法开始，然后涵盖了入职和离职的最简单的用例，最后转向你可以支配的杠杆和选项，使 Bitwarden 符合你的需求。
 
-## Bitwarden 的理念 <a href="#tenets-of-the-bitwarden-approach" id="tenets-of-the-bitwarden-approach"></a>
+## Bitwarden 理念 <a href="#the-bitwarden-approach" id="the-bitwarden-approach"></a>
 
 Bitwarden 的愿景是想象一个没有人被黑客入侵的世界。我们将这一使命贯彻到我们的使命中，即帮助个人和公司轻松、安全地管理他们的敏感信息。 Bitwarden 认为：
 
@@ -68,23 +68,25 @@ Bitwarden 组织为你的团队或企业的密码管理添加了一层协作和�
 组织密码库
 {% endembed %}
 
-任何人都可以直接从网页密码库创建一个组织：
+任何人都可以直接从网页 App 创建一个组织：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3eSqWiTIuPSFxXdo5AAjT9/7d6cbb4a1fa078819f7185c801b7733b/new-org-button-overlay.png?fm=webp&h=279&q=50&w=1013" %}
-创建新的组织
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3eSqWiTIuPSFxXdo5AAjT9/248b0fa7bb381add0d71682acd244a63/2024-12-03_13-57-58.png?_a=DAJCwlWIZAAB" %}
+新增组织
 {% endembed %}
 
 创建后，您将进入组织密码库，这里是所有内容共享和组织管理的中心枢纽。启动该组织的人将成为所有者，他们能够完全控制**密码库**，**管理**用户、[集合](onboarding-and-succession.md#collections)、[群组](onboarding-and-succession.md#groups)和[策略](onboarding-and-succession.md#enterprise-policies)、使用一套 Bitwarden **工具**、以及配置组织的**设置**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/7b6dDzRsGEu75zf74MRQMQ/cee49c17e42b693e3be6b7c146b8a071/org-vault.png?fm=webp&h=557&q=50&w=1019" %}
-组织密码库
+创建后，您将进入管理控制台，这里是所有内容共享和组织管理的中心枢纽。启动该组织的人将成为所有者，他们能够完全控制**密码库**，以**管理**用户项目、成员、[集合](onboarding-and-succession.md#collections)和[群组](onboarding-and-succession.md#groups)，以及运行报告和配置[策略](onboarding-and-succession.md#enterprise-policies)等设置：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pgKWi4j94eDV9ehpEeUvw/e7ed54a25b128c60fee92b4281cee633/Screenshot_2024-02-28_at_9.42.12_AM.png?_a=DAJCwlWIZAAB" %}
+管理控制台
 {% endembed %}
 
 ### 集合 <a href="#collections" id="collections"></a>
 
 Bitwarden 组织以可扩展且安全的方式管理用户和数据。单独管理用户和数据对于大型企业来说效率低下，并且可能会出现错误。为了解决这个问题，组织提供了集合和[群组](onboarding-and-succession.md#collections)功能。
 
-集合将登录、笔记、支付卡和身份收集在一起，以便在组织内[安全共享](../organizations/sharing.md)：
+**集合**将登录、笔记、支付卡和身份收集在一起，以便在组织内[安全共享](../organizations/sharing.md)：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3dkYfn5K3E4t3Ts3Rs5At0/02954064a4a43a626f03fc9746db4006/collections-graphic-1.png?fm=webp&h=140&q=50&w=509" %}
 集合的使用
@@ -124,9 +126,11 @@ Bitwarden 使用了一种企业友好的方法来实现大规模的共享。用�
 
 在 Bitwarden，我们认为共享凭证是高效且安全地完成工作的一个重要方面。我们也认识到，&#x4ECE;_&#x6280;术&#x4E0A;_&#x6765;说，一旦一个凭证被共享，接收者就有可能保留它。出于这个原因，使用适当的[基于角色的访问控制](onboarding-and-succession.md#comprehensive-role-based-access-controls)和[实施策略](onboarding-and-succession.md#enterprise-policies)的安全入职，在促进安全离职方面起着重要作用。
 
-用户从 Bitwarden 离职涉及到从组织中移除用户，就像入职一样，可以[直接从网页密码库](onboarding-and-succession.md#adding-users)或[使用目录连接器](onboarding-and-succession.md#directory-connector)以自动方式完成。
+Bitwarden 提供了多种工具，可用于定制工作流程和加强对继任的控制。下文将介绍一个基本的继任工作流程（不使用这些工具）和一些组织常用的高级继任策略：
 
-### 离职示例 <a href="#sample-offboarding" id="sample-offboarding"></a>
+基本离职\
+从Bitwarden 中删除用户涉及到将用户从您的组织中移除，就像入职一样，可以直接从网络保险库中完成，也可以使用SCIM或目录连接器自动完成。\
+Alice是您企业中的一个用户，该用户托管在Bitwarden云上并使用公司电子邮件地址（如first-last@company.com）。 目前，Alice是这样使用Bitwarden的：
 
 Alice 是您的组织的**经理**，该组织托管在 Bitwarden Cloud 上并使用公司电子邮件地址（例如 `first-last@company.com`）。以下是 Alice 目前使用 Bitwarden 的方式：
 
