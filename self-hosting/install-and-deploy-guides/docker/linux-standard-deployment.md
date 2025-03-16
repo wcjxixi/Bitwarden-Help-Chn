@@ -6,7 +6,7 @@
 
 这篇文章将指导您安装和部署 Bitwarden 到您自己的 Liunx 服务器。Bitwarden 也可以安装和部署在 [Windows](windows-standard-deployment.md) 机器上。请查看 Bitwarden [软件发布支持](../../../security/bitwarden-software-release-support.md)文档。
 
-## 系统规格要求 <a href="#requirements" id="requirements"></a>
+## 要求 <a href="#requirements" id="requirements"></a>
 
 <table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
 
@@ -220,7 +220,7 @@ docker ps
 部署完成后，我们建议定期[备份您的服务器](../../backup-your-hosted-data.md)并[检查系统更新](../../update-your-instance.md)。
 {% endhint %}
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../self-host-an-organization.md)以开始。
 2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。

@@ -198,7 +198,7 @@
 回收站
 {% endembed %}
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 现在，您已了解密码库项目使用的基础知识，我们建议：
 

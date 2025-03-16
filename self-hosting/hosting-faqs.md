@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/hosting-faqs/)
 {% endhint %}
 
-本文包含有关自托管的常见问题（FAQ）。
+本文包含有关自托管的常见问题 (FAQ)。
 
 ## 通用 <a href="#general" id="general"></a>
 

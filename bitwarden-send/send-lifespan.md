@@ -10,7 +10,7 @@
 
 ## 删除日期 <a href="#deletion-date" id="deletion-date"></a>
 
-默认情况下，Send 的删除日期设置为创建后 7 天。使用**删除日期**选项，您可以将其更改为一系列预先指定的选项（比如，_1 小时、1 天、31 天_），或使用日期选择器指定一个**自定义**时间戳（或在文本输入中使用格式 `MM/DD/YYYY HH:MM AM/PM`）。
+默认情况下，Send 会在创建七天后自动删除。使用**删除日期**选项，您可以将其更改为一系列预先指定的选项（比如，1 小时、1 天、31 天）。
 
 删除日期的**最大允许值为自创建后 31 天**。
 
@@ -40,7 +40,7 @@
 * 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
 * 对于发送者，一个 **🕘到期**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的删除日期。
 
-## 最大访问次数（或叫限制查看） <a href="#maximum-access-count" id="maximum-access-count"></a>
+## 最大访问次数（或叫限制查看次数） <a href="#maximum-access-count" id="maximum-access-count"></a>
 
 对于所有 Send，**当前访问次数**计数器将跟踪 Send 链接被访问的次数：
 
@@ -48,11 +48,11 @@
 当前访问计数
 {% endembed %}
 
-对于任何 Send，您可以指定一个正整数的**最大访问次数**（在浏览器扩展中叫做**限制查看**）。
+对于任何 Send，您可以指定一个正整数的**最大访问次数**（在浏览器扩展中叫做**限制查看次数**）。
 
 ### 最大访问次数行为 <a href="#maximum-access-count-behavior" id="maximum-access-count-behavior"></a>
 
-当一个 Send 达到其指定的最大访问次数（或查看）时：
+当一个 Send 达到其指定的最大访问次数（或查看次数）时：
 
 * 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
 * 对于发送者，一个 **🚫达到最大访问次数**图标将出现在 Send 旁边。发送者仍可访问该 Send，直到达到指定的**删除日期**。
@@ -83,27 +83,12 @@ Send 被禁用后：
 
 要从网页 App 删除 Send，请使用 **≡选项**菜单然后选择 **🗑️删除**按钮：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/47ec2QcoS6zrLiuyEtzorO/0fb00df7042463d5682de4a9064b07c0/send-delete.png?fm=webp&h=386&q=50&w=911" %}
-从桌面 App 删除 Send
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6y6TJ0P7YbMza7p90kxu6X/929e10a4eac5d842b4cf283d46a41824/2024-12-03_10-09-52.png?_a=DAJCwlWIZAAB" %}
+Send 选项
 {% endembed %}
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-### 从浏览器扩展禁用 <a href="#disable-from-browser-extensions" id="disable-from-browser-extensions"></a>
-
-要从浏览器扩展禁用 Send，请打开**编辑 Send** 视图并勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6uyNGtFobbFb2UiA2z9n8C/1c8b4cfcfbbb5c2624c94339db26b16d/send-disable-be.png?fm=webp&h=617&q=50&w=392" %}
-从浏览器扩展禁用 Send
-{% endembed %}
-
-Send 被禁用后：
-
-* 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
-* 对于发送者，一个 **⚠️已禁用**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的**删除日期**。
-
-要从网页密码库删除 Send，请使用悬停 ⚙️齿轮下拉菜单并选择 🗑️删除按钮：
-
 ### 从浏览器扩展删除 <a href="#delete-from-browser-extensions" id="delete-from-browser-extensions"></a>
 
 要从浏览器扩展删除 Send，请选择在您要删除的 Send 旁边的 🗑️**回收站**图标：
@@ -119,7 +104,7 @@ Send 被禁用后：
 要从桌面应 App 禁用 Send，请打开**编辑 Send** 视图并勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/49ar4y0apFFvUDIksGIr2C/b24ab75b84dcfbb4dc253eb56f1e8b20/send-desktop-disable.png?fm=webp&h=681&q=50&w=1136" %}
-从桌面应用程序禁用 Send
+从桌面 App 禁用 Send
 {% endembed %}
 
 Send 被禁用后：
@@ -132,24 +117,11 @@ Send 被禁用后：
 要从桌面 App 删除 Send，请打开**编辑 Send** 视图并选择 🗑️**删除**图标：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/12eLcz2aoBkcDRGS3U1jzP/42f085a0fffd81f5643df7c5ad08f69f/send-desktop-delete.png?fm=webp&h=681&q=50&w=1136" %}
-从桌面应用程序删除 Send
+从桌面 App 删除 Send
 {% endembed %}
 {% endtab %}
 
 {% tab title="移动 App" %}
-### 从移动 App 禁用 <a href="#disable-from-mobile-apps" id="disable-from-mobile-apps"></a>
-
-要从移动 App 禁用 Send，请打开**编辑 Send** 视图并勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/WJOkIW0AIUsX8gbfBxdHK/74da676382bf36f80221eeb13f442c5f/send-disable-mobile.png?fm=webp&h=686&q=50&w=675" %}
-从移动应用程序禁用 Send
-{% endembed %}
-
-Send 被禁用后：
-
-* 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
-* 对于发送者，一个 **⚠️已禁用**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的**删除日期**。
-
 ### 从移动 App 删除 <a href="#delete-from-mobile-apps" id="delete-from-mobile-apps"></a>
 
 要从移动 App 删除 Send，请点击菜单图标（**≡** 或 **⋯**）并点击**删除**选项：

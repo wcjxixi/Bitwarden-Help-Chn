@@ -16,7 +16,7 @@
 我们会尽量在 [GitHub 上的发行说明](https://github.com/bitwarden/server/releases)中强调这些。您也可以在 GitHub 上监控 Bitwarden 安装脚本所使用的[依赖模板](https://github.com/bitwarden/server/tree/master/util/Setup/Templates)的更改。
 {% endhint %}
 
-## 系统规格要求 <a href="#requirements" id="requirements"></a>
+## 要求 <a href="#requirements" id="requirements"></a>
 
 <table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
 
@@ -189,7 +189,7 @@ docker ps
 
 您现在可以注册一个新账户并登录了。您需要配置 SMPT 环境变量（请参阅[环境变量](../../configure-environment-variables.md)）以验证您的新账户的电子邮箱。
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../self-host-an-organization.md)以开始。
 2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。

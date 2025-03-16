@@ -18,7 +18,7 @@
 * 利用不同的数据库解决方案，例如 MSSQL、PostgreSQL、MySQL/MariaDB。
 * 使用替代系统在 ARM 架构上运行，例如 Raspberry Pi 和 NAS 服务器。
 
-## 系统要求 <a href="#system-requirements" id="system-requirements"></a>
+## 要求 <a href="#requirements" id="requirements"></a>
 
 Bitwarden Unified 部署要求：
 

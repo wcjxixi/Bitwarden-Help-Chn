@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-从 **2025 年 3 月 4 日**开始，从新设备登录时将会提示进行此新的验证。这一变更最初将反应在网页 App 中，在用户更新到最新的发布版本将后扩展到其他 Bitwarden App 中。
+从 **2025 年 3 月 4 日**开始，从新设备登录时，将会提示进行这个新的验证。这一变更最初将反应在网页 App 中，随着用户更新到最新的发行版本，将逐步扩展到其他 Bitwarden App 中。
 {% endhint %}
 
 为确保您的账户安全，Bitwarden 将对**未使用**[**两步登录**](../../two-step-login/two-step-login-methods.md)**的用户**要求额外的验证。**当从一个以前未登录过的设备登录时**，在您输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码，以完成登录过程。例如，如果您登录的是以前使用过的移动 App 或浏览器扩展，则不会收到此提示。
@@ -36,7 +36,7 @@ Bitwarden 正在实施这一变更，以增强未激活[两步登录](../../two-
 
 * 卸载并重新安装移动 App、桌面 App 或浏览器扩展将触发新设备。
 * 清除浏览器 cookie 将为网页 App 触发新设备，但不会为浏览器扩展触发新设备。
-* 在虚拟桌面基础架构 (VDI) 中使用浏览器扩展，在每次会话后重置用户配置文件存储。在这种情况下，本地存储不会持久化。
+* 在虚拟桌面基础架构 (VDI) 中使用浏览器扩展，在每次会话后重置用户配置文件存储。在这种情况下，[本地存储](../../security/storage.md#on-your-local-machine)不会持久化。
 
 ### 我的电子邮箱凭据保存在 Bitwarden 中。我会被锁定在 Bitwarden 之外吗？ <a href="#my-email-credentials-are-saved-in-bitwarden.-will-i-be-locked-out-of-bitwarden" id="my-email-credentials-are-saved-in-bitwarden.-will-i-be-locked-out-of-bitwarden"></a>
 
@@ -46,7 +46,7 @@ Bitwarden 正在实施这一变更，以增强未激活[两步登录](../../two-
 
 如果您经常使用保存在 Bitwarden 中的凭据登录电子邮箱，或者不希望依赖电子邮箱进行验证，您应该设置独立于 Bitwarden 账户电子邮箱的[两步登录方式](../../two-step-login/two-step-login-methods.md)。这包括验证器 App、安全密钥或使用不同电子邮箱的基于电子邮箱的两步登录。激活任何 2FA 方法都将使用户退出基于电子邮箱的新设备验证。已激活 2FA 的用户还应将其 Bitwarden [恢复代码](../../two-step-login/recovery-codes.md)保存在安全的地方。
 
-### 哪些人被排除在基于账户电子邮件的新设备验证之外？ <a href="#who-is-excluded-from-this-account-email-based-new-device-verification" id="who-is-excluded-from-this-account-email-based-new-device-verification"></a>
+### 哪些人被排除在基于账户电子邮箱的新设备验证之外？ <a href="#who-is-excluded-from-this-account-email-based-new-device-verification" id="who-is-excluded-from-this-account-email-based-new-device-verification"></a>
 
 不包括以下类别的登录：
 
@@ -98,4 +98,4 @@ Bitwarden 正在更新恢复代码流程，以便当您提交密码和恢复代�
 
 如果用户不希望使用新设备验证，强烈建议启用其他两步登录方式（验证器 App、硬件密钥或不同的电子邮箱）之一来保护您的账户。
 
-如果用户不希望使用新设备验证，也不想设置其他两步登录方式，并且不希望账户有任何安全保护，可以通过导航到**设置** → **我的账户** 页面并滚动到 **危险区域** 部分选择退出。我们必须强调，**强烈不建议这样做**，因为这会使您的账户容易受到各种攻击。
+如果用户不希望使用新设备验证，也不想设置其他两步登录方式，并且不希望账户有任何安全保护，可以通过导航到**设置** → **我的账户**页面并滚动到**危险区域**部分选择退出。我们必须强调，**强烈不建议这样做**，因为这会使您的账户容易受到各种攻击。
