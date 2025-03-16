@@ -44,7 +44,7 @@ Elastic 设置
 
 ### 将集成连接到 Bitwarden <a href="#connect-integration-to-bitwarden" id="connect-integration-to-bitwarden"></a>
 
-添加 Bitwarden 集成后，您将进入设置界面配置此集成。在此步骤中，您需要访问组织的 API 信息。保持该界面打开，在另一个标签页上登录 Bitwarden Web 应用程序，使用产品切换器打开管理控制台：
+添加 Bitwarden 集成后，您将进入设置界面配置此集成。在此步骤中，您需要访问组织的 API 信息。保持该界面打开，在另一个标签页上登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
 产品切换器
