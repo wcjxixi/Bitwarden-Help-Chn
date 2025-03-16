@@ -173,7 +173,7 @@ Windows 解锁选项
 {% tab title="Linux" %}
 ### Snap 预安装说明 <a href="#snap-post-installation-instructions" id="snap-post-installation-instructions"></a>
 
-当您登录到应用程序时，Bitwarden 密码管理器桌面 App 使用安全存储来持久保存身份验证令牌。**如果您使用 Snap 安装的桌面 App**，则需要通过以下方式允许 App 访问安全存储：
+当您登录到应用程序时，Bitwarden Password Manager 桌面 App 使用安全存储来持久保存身份验证令牌。**如果您使用 Snap 安装的桌面 App**，则需要通过以下方式允许 App 访问安全存储：
 
 1. 在所有发行版上，运行命令 `sudo snap connect bitwarden:password-manager-service` 。
 2. 如果您已经登录到密码管理器桌面 App，请注销所有账户然后重新登录。

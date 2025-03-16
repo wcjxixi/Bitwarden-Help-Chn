@@ -35,11 +35,11 @@ Bitwarden 致力于打造安全至上的产品。与 Password Manager 一样，S
 
 ## 客户端 <a href="#clients" id="clients"></a>
 
-在测试期间，Secrets Manager 将提供 Web 应用程序、CLI 和 SDK。未来会支持更多的 SDK 库。
+在测试期间，Secrets Manager 将提供网页 App、CLI 和 SDK。未来会支持更多的 SDK 库。
 
 ### 网页密码库 <a href="#web-vault" id="web-vault"></a>
 
-[Secrets Manager Web 应用程序](get-started/secrets-manager-quick-start.md)是您设置机密管理基础设施的主页。您将使用它来添加和组织机密、创建适合您需要的权限系统，以及生成供您的应用程序使用的访问令牌。
+[Secrets Manager 网页 App](get-started/secrets-manager-quick-start.md) 是您设置机密管理基础设施的主页。您将使用它来添加和组织机密、创建适合您需要的权限系统，以及生成供您的应用程序使用的访问令牌。
 
 ### CLI
 

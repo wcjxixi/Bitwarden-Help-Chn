@@ -4,11 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/welcome-email-templates/)
 {% endhint %}
 
-此页面提供电子邮件模板，您可以使用这些模板向最终用户和 IT 团队宣布推出 Bitwarden 密码管理器。
+此页面提供电子邮件模板，您可以使用这些模板向最终用户和 IT 团队宣布推出 Bitwarden Password Manager。
 
 ## 对于最终用户：向员工宣告 Bitwarden 的电子邮件 <a href="#to-end-users-email-announcing-bitwarden-to-employees" id="to-end-users-email-announcing-bitwarden-to-employees"></a>
 
-以下电子邮件模板可在 Bitwarden 密码管理器推出时发送给您的最终用户。确保将占位符文本（例如 _\[Event details]_）替换为特定于您的企业的信息。
+以下电子邮件模板可在 Bitwarden Password Manager 推出时发送给您的最终用户。确保将占位符文本（例如 _\[Event details]_）替换为特定于您的企业的信息。
 
 > **示例**
 >
@@ -48,7 +48,7 @@
 
 ## 对于管理员：向管理员宣告 Bitwarden 的电子邮件 <a href="#to-admins-email-announcing-bitwarden-to-administrators" id="to-admins-email-announcing-bitwarden-to-administrators"></a>
 
-以下电子邮件模板可在 Bitwarden 密码管理器推出时发送给您的 IT 团队。确保将占位符文本（例如 _\[Event details]_）替换为特定于您的企业的信息。
+以下电子邮件模板可在 Bitwarden Password Manager 推出时发送给您的 IT 团队。确保将占位符文本（例如 _\[Event details]_）替换为特定于您的企业的信息。
 
 > **示例**
 >

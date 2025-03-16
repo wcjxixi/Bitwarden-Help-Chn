@@ -8,7 +8,7 @@
 
 ## 从 Myki 导出 <a href="#export-from-myki" id="export-from-myki"></a>
 
-根据您使用的平台，从 Myki 导出数据的过程会有所不同。我们建议尽可能从 Myki Web 应用程序导出，以获得最流畅的导入 Bitwarden 的体验。
+根据您使用的平台，从 Myki 导出数据的过程会有所不同。我们建议尽可能从 Myki 网页 App 导出，以获得最流畅的导入 Bitwarden 的体验。
 
 有关从 Myki 导出的帮助，请参阅[这些 Myki 文章](https://support.myki.com/en/articles/6007957-how-to-export-my-myki-vault)。
 

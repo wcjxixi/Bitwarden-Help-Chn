@@ -134,7 +134,7 @@ Bitwarden 采用零知识加密的方法来管理密码，这意味着您密码�
 
 ### Bitwarden 中的密码库安全 <a href="#vault-security-in-bitwarden" id="vault-security-in-bitwarden"></a>
 
-有关如何保护 Bitwarden 密码库，包括 Bitwarden 客户端应用程序的选项的更多信息，请参阅博客文章 [Bitwarden 密码管理器中的密码库安全](https://bitwarden.com/blog/post/vault-security-bitwarden-password-manager/)。
+有关如何保护 Bitwarden 密码库，包括 Bitwarden 客户端应用程序的选项的更多信息，请参阅博客文章 [Bitwarden Password Manager 中的密码库安全](https://bitwarden.com/blog/vault-security-bitwarden-password-manager/)。
 
 ### Bug 赏金计划 <a href="#bug-bounty-program" id="bug-bounty-program"></a>
 

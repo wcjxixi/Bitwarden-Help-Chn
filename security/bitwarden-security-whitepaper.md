@@ -706,11 +706,11 @@ Bitwarden 使用 HTTP 安全头文件作为 Bitwarden 网络应用和通信的�
 
 ### 威胁模型和攻击面分析概述 <a href="#threat-model-and-attack-surface-analysis-overview" id="threat-model-and-attack-surface-analysis-overview"></a>
 
-Bitwarden 遵循基于风险的方法来设计安全服务和系统，包括威胁建模和攻击面分析，以识别威胁并制定缓解措施。风险和威胁建模分析扩展到 Bitwarden 平台的所有领域，包括核心 Bitwarden 云服务器应用程序和 Bitwarden 客户端，如移动端、桌面端、Web 应用程序、浏览器和/或命令行界面。
+Bitwarden 遵循基于风险的方法来设计安全服务和系统，包括威胁建模和攻击面分析，以识别威胁并制定缓解措施。风险和威胁建模分析扩展到 Bitwarden 平台的所有领域，包括核心 Bitwarden 云服务器应用程序和 Bitwarden 客户端，如移动端、桌面端、网页 App、浏览器和/或命令行界面。
 
 #### Bitwarden 客户端 <a href="#bitwarden-clients" id="bitwarden-clients"></a>
 
-用户主要通过我们的客户端应用程序与 Bitwarden 进行交互，如移动端、桌面端、Web 应用程序、浏览器和/或命令行界面。这些设备、工作站和网页浏览器的安全是至关重要的，因为如果这些设备中的一个或多个被入侵，攻击者可能会安装恶意软件，如键盘记录器，从而获取在这些设备上输入的所有信息，包括您的任何密码和机密。作为终端用户和/或设备所有者，您有责任确保您的设备安全，并防止非授权访问。
+用户主要通过我们的客户端应用程序与 Bitwarden 进行交互，如移动端、桌面端、网页 App、浏览器和/或命令行界面。这些设备、工作站和网页浏览器的安全是至关重要的，因为如果这些设备中的一个或多个被入侵，攻击者可能会安装恶意软件，如键盘记录器，从而获取在这些设备上输入的所有信息，包括您的任何密码和机密。作为终端用户和/或设备所有者，您有责任确保您的设备安全，并防止非授权访问。
 
 #### HTTPS TLS 和网页浏览器端到端加密 <a href="#https-tls-and-web-browser-crypto-end-to-end-encryption" id="https-tls-and-web-browser-crypto-end-to-end-encryption"></a>
 

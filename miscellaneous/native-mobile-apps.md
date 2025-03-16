@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/native-mobile-apps-release/)
 {% endhint %}
 
-在**将来的**发布中，通过 Apple App Store 和 Google Play Store 下载的 Bitwarden 密码管理器移动 App 将升级为 [iOS 和 Android 原生移动应用程序](https://bitwarden.com/blog/native-mobile-apps/)：
+在**将来的**发布中，通过 Apple App Store 和 Google Play Store 下载的 Bitwarden Password Manager 移动 App 将升级为 [iOS 和 Android 原生移动应用程序](https://bitwarden.com/blog/native-mobile-apps/)：
 
 * 在此发布之后**安装** Bitwarden 的用户将始终获得新的原生应用程序。
 * 在设备上**已经安装了 Bitwarden** 的用户将分阶段接收到新的原生应用程序。
