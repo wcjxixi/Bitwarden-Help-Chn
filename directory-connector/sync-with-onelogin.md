@@ -1,4 +1,4 @@
-# 与 OneLogin 同步
+# 使用 OneLogin 同步
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/onelogin-directory/)
@@ -43,8 +43,8 @@
 | Interval                                                                                       | 自动同步检查的时间间隔（分钟为单位）。                                                                                                                                             |
 | Remove disabled users during sync                                                              | 选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。                                                                                                                             |
 | Overwrite existing organization users based on current sync settings                           | <p>选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。</p><p></p><p><strong>推荐用于 OneLogin 目录。</strong></p>                                                       |
-| If a user has no email address, combine a username prefix with a suffix value to form an email | <p>选中此框可为没有电子邮件地址的用户生成有效的电子邮件选项。<strong>没有真实或没有生成电子邮件地址的用户将被目录连接器跳过。</strong></p><p></p><p>生成的电子邮件 = <code>username</code> + <strong>Email Suffix</strong></p>  |
-| Email Suffix                                                                                   | 用于生成电子邮件地址时创建后缀的字符串（ `@example.com`）。                                                                                                                           |
+| If a user has no email address, combine a username prefix with a suffix value to form an email | <p>选中此框可为没有电子邮箱地址的用户生成有效的电子邮箱选项。<strong>没有真实或没有生成电子邮箱地址的用户将被目录连接器跳过。</strong></p><p></p><p>生成的电子邮箱 = <code>username</code> + <strong>Email Suffix</strong></p>  |
+| Email Suffix                                                                                   | 用于生成电子邮箱地址时创建后缀的字符串（ `@example.com`）。                                                                                                                           |
 | Sync Users                                                                                     | <p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p>                                                                                          |
 | User Filter                                                                                    | 参阅指定[同步筛选器](sync-with-onelogin.md#specify-sync-filters)。                                                                                                        |
 | Sync Groups                                                                                    | <p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p><p></p><p><strong>请注意，目录连接器使用 OneLogin  <code>role</code> 值来创建 Bitwarden 群组。</strong></p> |
@@ -52,7 +52,7 @@
 
 ## 指定同步筛选器 <a href="#specify-sync-filters" id="specify-sync-filters"></a>
 
-使用逗号分隔的列表可根据用户电子邮件、群组在同步中包含或排除。
+使用逗号分隔的列表可根据用户电子邮箱、群组在同步中包含或排除。
 
 {% hint style="info" %}
 目录连接器将基于 OneLogin 角色而不是 OneLogin 群组来创建 Bitwarden 群组。
@@ -60,7 +60,7 @@
 
 ### 用户筛选器 <a href="#user-filters" id="user-filters"></a>
 
-要基于电子邮件地址在同步中包含或排除特定用户：
+要基于电子邮箱地址在同步中包含或排除特定用户：
 
 ```python
 include:joe@example.com,bill@example.com,tom@example.com

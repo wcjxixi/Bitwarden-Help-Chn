@@ -88,15 +88,15 @@
 
 ## 指定同步筛选器 <a href="#specify-sync-filters" id="specify-sync-filters"></a>
 
-使用逗号分隔的列表可根据用户电子邮件、群组名称或群组成员资格在同步中包含或排除：
+使用逗号分隔的列表可根据用户电子邮箱、群组名称或群组成员资格在同步中包含或排除：
 
 ### 用户筛选器 <a href="#user-filters" id="user-filters"></a>
 
 在 **User Filter** 字段中使用以下筛选语法：
 
-#### 根据电子邮件包含/排除用户 <a href="#include-exclude-users-by-email" id="include-exclude-users-by-email"></a>
+#### 根据电子邮箱包含/排除用户 <a href="#include-exclude-users-by-email" id="include-exclude-users-by-email"></a>
 
-要基于电子邮件地址在同步中包含或排除特定用户：
+要基于电子邮箱地址在同步中包含或排除特定用户：
 
 ```systemd
 include:joe@example.com,bill@example.com,tom@example.com

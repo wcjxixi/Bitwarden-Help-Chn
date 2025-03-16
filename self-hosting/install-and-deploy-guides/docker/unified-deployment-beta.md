@@ -264,13 +264,13 @@ docker compose ps
 | BW\_ENABLE\_SSO             | 为企业组织启用或禁用 SSO 服务。默认为 `false`。                                                                                                                     |
 | BW\_ICONS\_PROXY\_TO\_CLOUD | <p>启用此服务将代理图标服务请求以通过云服务进行操作，以降低系统内存负载。</p><p>如果选择使用此设置，则应将 <code>BW_ENABLE_ICONS</code> 设置为 <code>false</code> 以减少容器负载。默认为 <code>false</code>。</p> |
 
-#### 电子邮件 <a href="#mail" id="mail"></a>
+#### 电子邮箱 <a href="#mail" id="mail"></a>
 
-为您的 Unified 部署配置 SMTP 设置。将您选择的邮件 SMTP 提供商的信息复制到以下字段中：
+为您的 Unified 部署配置 SMTP 设置。将您选择的电子邮箱 SMTP 提供商的信息复制到以下字段中：
 
 | 变量                                         | 描述                                                                                             |
 | ------------------------------------------ | ---------------------------------------------------------------------------------------------- |
-| globalSettings\_\_mail\_\_replyToEmail     | 输入服务器的回复电子邮件。                                                                                  |
+| globalSettings\_\_mail\_\_replyToEmail     | 输入服务器的回复电子邮箱。                                                                                  |
 | globalSettings\_\_mail\_\_smtp\_\_host     | 输入 SMTP 服务器的主机域名。                                                                              |
 | globalSettings\_\_mail\_\_smtp\_\_port     | 输入来自 SMTP 主机的端口号。                                                                              |
 | globalSettings\_\_mail\_\_smtp\_\_ssl      | <p>如果您的 SMTP 主机使用 SSL，请输入 <code>true</code>。<br>如果您的主机使用 TLS 服务，请将值设置为 <code>false</code>。</p> |
@@ -347,7 +347,7 @@ BW_DB_PASSWORD=super_strong_password
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | globalSettings\_\_disableUserRegistration | 启用或禁用用户帐户注册功能。                                                                                                           |
 | globalSettings\_\_hibpApiKey              | 输入 Have I Been Pwnd 提供的 API 密钥。在[此处](https://haveibeenpwned.com/API/Key)注册以获取 API 密钥。                                    |
-| adminSettings\_\_admins                   | 输入管理员电子邮件地址。                                                                                                             |
+| adminSettings\_\_admins                   | 输入管理员电子邮箱地址。                                                                                                             |
 | BW\_REAL\_IPS                             | 在 `nginx.conf` 中以逗号分隔列表定义真实 IP。用于定义转发客户端 IP 地址的代理服务器。[了解更多](https://nginx.org/en/docs/http/ngx_http_realip_module.html)。 |
 | BW\_CSP                                   | 内容安全策略参数。重新配置此参数可能会破坏功能。更改此参数，您将负责维护此值。                                                                                  |
 | BW\_DB\_PORT                              | 为数据库流量指定自定义端口。如果未指定，默认端口将取决于您选择的数据库提供程序。                                                                                 |

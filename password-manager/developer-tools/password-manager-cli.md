@@ -1,4 +1,4 @@
-# 密码管理器 CLI
+# Password Manager CLI
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/cli/)
@@ -82,25 +82,25 @@ sudo snap install bw
 
 使用 `login` 命令登录 Bitwarden CLI 共有三种方式，每种方式适用于不同的场景。请查看以下选项以确定使用哪种方式：
 
-* [使用电子邮件和密码](password-manager-cli.md#using-email-and-password)
+* [使用电子邮箱和密码](password-manager-cli.md#using-email-and-password)
 * [使用 API 密钥](password-manager-cli.md#using-an-api-key)
 * [使用 SSO](password-manager-cli.md#using-sso)
 
 {% hint style="success" %}
-[使用电子邮件和密码](password-manager-cli.md#using-email-and-password)方式登录将使用您的主密码，因此可以将 `login` 和 `unlock` 命令串在一起，以验证您的身份并同时解密您的密码库。如果您直接使用密码库数据，则[使用 API 密钥](password-manager-cli.md#using-an-api-key)或 [SSO](password-manager-cli.md#using-sso) 方式将要求您在 `login` 命令后紧接着使用显式 `bw unlock` 命令。
+[使用电子邮箱和密码](password-manager-cli.md#using-email-and-password)方式登录将使用您的主密码，因此可以将 `login` 和 `unlock` 命令串在一起，以验证您的身份并同时解密您的密码库。如果您直接使用密码库数据，则[使用 API 密钥](password-manager-cli.md#using-an-api-key)或 [SSO](password-manager-cli.md#using-sso) 方式将要求您在 `login` 命令后紧接着使用显式 `bw unlock` 命令。
 
 这是因为您的主密码是解密密码库数据所必须的密钥的来源。但是，有一些命令不需要您的密码库已解密，包括 `config`、`encode`、`generate`、`update` 以及 `status`。
 {% endhint %}
 
-### 使用电子邮件和密码 <a href="#using-email-and-password" id="using-email-and-password"></a>
+### 使用电子邮箱和密码 <a href="#using-email-and-password" id="using-email-and-password"></a>
 
-电子邮件和密码方式的登录**建议用于交互式会话场景**。要使用电子邮件和密码登录：
+电子邮箱和密码方式的登录**建议用于交互式会话场景**。要使用电子邮箱和密码登录：
 
 ```batch
 bw login
 ```
 
-此命令将提示您输入**电子邮件地址**、**主密码**和**两步登录代码**（若[已启用](../../two-step-login/two-step-login-methods.md)）。CLI 目前支持[身份验证器](../../two-step-login/setup-guides/two-step-login-via-authenticator.md)、[电子邮件](../../two-step-login/setup-guides/two-step-login-via-email.md)或 [YubiKey](../../two-step-login/setup-guides/two-step-login-via-yubikey.md) 方式的两步登录。
+此命令将提示您输入**电子邮箱地址**、**主密码**和**两步登录代码**（若[已启用](../../two-step-login/two-step-login-methods.md)）。CLI 目前支持[身份验证器](../../two-step-login/setup-guides/two-step-login-via-authenticator.md)、[电子邮箱](../../two-step-login/setup-guides/two-step-login-via-email.md)或 [YubiKey](../../two-step-login/setup-guides/two-step-login-via-yubikey.md) 方式的两步登录。
 
 您可以像如下的示例那样将这些因素组合成一个命令，但是出于安全原因不建议这样操作。
 
@@ -180,7 +180,7 @@ bw unlock --passwordfile ~/Users/Me/Documents/mp.txt
 
 ### 使用会话密钥 <a href="#using-a-session-key" id="using-a-session-key"></a>
 
-当您使用电子邮件和密码方式的 `bw login` 或 `bw unlock` 解锁您的密码库时，CLI 将同时返回 `export BW_SESSION`（Bash）和 `env:BW_SESSION`（PowerShell）命令，其中包含了您的会话密钥。复制并粘贴相关条目以保存所需的环境变量。
+当您使用电子邮箱和密码方式的 `bw login` 或 `bw unlock` 解锁您的密码库时，CLI 将同时返回 `export BW_SESSION`（Bash）和 `env:BW_SESSION`（PowerShell）命令，其中包含了您的会话密钥。复制并粘贴相关条目以保存所需的环境变量。
 
 如果设置了 `BW_SESSION` 环境变量，`bw` 命令将引用该变量，以干净清爽地运行，例如：
 
@@ -698,7 +698,7 @@ shbw update
 
 ### status
 
-`status` 命令用于返回 Bitwarden CLI 的状态信息，包括[已配置](password-manager-cli.md#config)的服务器 URL、最后一次同步的时间戳（[ISO 8601](https://zh.wikipedia.org/wiki/ISO_8601)）、用户电子邮件和 ID，以及密码库状态。
+`status` 命令用于返回 Bitwarden CLI 的状态信息，包括[已配置](password-manager-cli.md#config)的服务器 URL、最后一次同步的时间戳（[ISO 8601](https://zh.wikipedia.org/wiki/ISO_8601)）、用户电子邮箱和 ID，以及密码库状态。
 
 ```batch
 bw status
@@ -813,7 +813,7 @@ $env:NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 | 名称      | 值 |
 | ------- | - |
 | 验证器     | 0 |
-| 电子邮件    | 1 |
+| 电子邮箱    | 1 |
 | Yubikey | 3 |
 
 {% hint style="info" %}

@@ -1,4 +1,4 @@
-# 与 Google Workspace 同步
+# 使用 Google Workspace 同步
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/gsuite-directory/)
@@ -77,7 +77,7 @@ https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.google
 3. 从 **Type** 下拉列表中选择 **G Suite（Google）**。\
    此部分中的可用字段将根据您选择的类型而变化。
 4. 输入您的 Google 账号的 **Domain**。
-5. 输入对您的 Google 目录具有完全访问权限的 **Admin User** 的电子邮件地址。
+5. 输入对您的 Google 目录具有完全访问权限的 **Admin User** 的电子邮箱地址。
 6. 如果您有，请输入目录的**客户 ID**。许多用户没有或不需要输入客户 ID。
 7. 选择**选择文件**按钮并选择[已下载的 JSON  密钥文件](sync-with-google-workspace.md#Obtain-Service-Account-Credentials-)。
 
@@ -105,7 +105,7 @@ https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.google
 
 ## 指定同步筛选器 <a href="#specify-sync-filters" id="specify-sync-filters"></a>
 
-使用逗号分隔的列表可根据用户电子邮件、群组名称或群组成员资格在同步中包含或排除。
+使用逗号分隔的列表可根据用户电子邮箱、群组名称或群组成员资格在同步中包含或排除。
 
 Admin SDK API 通过一个 `query` 参数为用户和裙组提供有限的筛选功能。了解更多：
 
@@ -116,9 +116,9 @@ Admin SDK API 通过一个 `query` 参数为用户和裙组提供有限的筛选
 
 在 **User Filter** 字段中使用以下筛选语法：
 
-#### 通过电子邮件包含/排除用户 <a href="#include-exclude-users-by-email" id="include-exclude-users-by-email"></a>
+#### 通过电子邮箱包含/排除用户 <a href="#include-exclude-users-by-email" id="include-exclude-users-by-email"></a>
 
-要基于电子邮件地址在同步中包含或排除特定用户：
+要基于电子邮箱地址在同步中包含或排除特定用户：
 
 ```systemd
 include:joe@example.com,bill@example.com,tom@example.com

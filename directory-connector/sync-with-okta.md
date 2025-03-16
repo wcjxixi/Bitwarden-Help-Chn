@@ -1,4 +1,4 @@
-# 与 Okta 同步
+# 使用 Okta 同步
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/okta-directory/)
@@ -53,15 +53,15 @@
 
 ## 指定同步筛选器 <a href="#specify-sync-filters" id="specify-sync-filters"></a>
 
-使用逗号分隔的列表可根据用户电子邮件、群组名称在同步中包含或排除。此外，Okta API 为用户和群组提供了有限的筛选功能，这些功能可以在目录连接器筛选器字段中使用。
+使用逗号分隔的列表可根据用户电子邮箱、群组名称在同步中包含或排除。此外，Okta API 为用户和群组提供了有限的筛选功能，这些功能可以在目录连接器筛选器字段中使用。
 
 有关为[用户](https://developer.okta.com/docs/api/resources/users#list-users-with-a-filter)和[群组](https://developer.okta.com/docs/api/resources/groups#filters)使用 `filter` 参数的更多信息，请查阅 Okta 文档。
 
 ### 用户筛选器 <a href="#user-filters" id="user-filters"></a>
 
-#### 根据电子邮件包含/排除用户 <a href="#include-exclude-users-by-email" id="include-exclude-users-by-email"></a>
+#### 根据电子邮箱包含/排除用户 <a href="#include-exclude-users-by-email" id="include-exclude-users-by-email"></a>
 
-要基于电子邮件地址在同步中包含或排除特定用户：
+要基于电子邮箱地址在同步中包含或排除特定用户：
 
 ```python
 include:joe@example.com,bill@example.com,tom@example.com
