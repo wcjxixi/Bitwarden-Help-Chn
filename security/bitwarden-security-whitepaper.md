@@ -4,32 +4,17 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/bitwarden-security-white-paper/)
 {% endhint %}
 
-> **\[译者注]**：
->
-> * [ISMS](https://en.wikipedia.org/wiki/Information_security_management)：Information Security Management System（信息安全管理体系）
-> * [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)：Password-Based Key Derivation Function 2（基于密码的密钥派生函数 2）
-> * [HKDF](https://en.wikipedia.org/wiki/HKDF)：HMAC-based Extract-and-Expand Key Derivation Function（基于 HMAC 的提取和扩展密钥派生函数）
-> * [CSPRNG](https://en.wikipedia.org/wiki/CSPRNG)：Cryptographically Secure Pseudorandom Number Generator（加密安全伪随机数生成器）
-> * [HSTS](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)：HTTP Strict Transport Security（HTTP 严格传输安全）
-> * [SIEM](https://en.wikipedia.org/wiki/Security_information_and_event_management)：Security Information and Event Management（安全信息和事件管理）
-> * [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting)：Cross-Site Scripting（跨站点脚本）
-> * [CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery)：Cross-Site Request Forgery（跨站点请求伪造）
-
-{% hint style="success" %}
-请阅读下面的全文，或[下载 PDF](https://bitwarden.com/images/resources/security-white-paper-2021.pdf)（英文）。
-{% endhint %}
-
 ## 概述 <a href="#overview" id="overview"></a>
 
 ### 每个人的联系比以往任何时候都更加紧密 <a href="#everyone-is-more-connected-than-ever" id="everyone-is-more-connected-than-ever"></a>
 
-在当今社会，与互联网连接的设备和服务比以往任何时候都更加重要。随着越来越多的公司提供创新的软件即服务产品来改善用户的家庭和工作生活，凭证和机器机密的数量呈指数级增长。对他们安全的威胁也是如此。
+在当今社会，与互联网连接的设备和服务比以往任何时候都更加重要。随着越来越多的公司提供创新的软件即服务产品来改善用户的家庭和工作生活，凭据和机器机密的数量呈指数级增长。对他们安全的威胁也是如此。
 
 ### 网络安全威胁很大，但实践很少 <a href="#cybersecurity-threats-are-high-but-practices-are-low" id="cybersecurity-threats-are-high-but-practices-are-low"></a>
 
 用户和客户数据面临的威胁不断增加。几乎每周都会有数据泄露或勒索软件攻击的新闻出现，而这些仅仅是规模大到足以被公布的事件。2023 年，[IBM 报告](https://www.ibm.com/reports/data-breach)称，考虑到调查成本、法律费用、机会成本和客户信任损失，美国数据泄露的平均成本接近 948 万美元。
 
-[Verizon](https://www.verizon.com/business/resources/reports/2023-data-breach-investigations-report-dbir.pdf) 的研究表明，在数据泄露事件中，被泄露的凭证占 86%。这包括使用在其他外泄事件中被猜测、钓鱼或泄露的密码。
+[Verizon](https://www.verizon.com/business/resources/reports/2023-data-breach-investigations-report-dbir.pdf) 的研究表明，在数据泄露事件中，被泄露的凭据占 86%。这包括使用在其他外泄事件中被猜测、钓鱼或泄露的密码。
 
 面对这些威胁，人们希望企业为员工尽可能多地提供培训和工具，但 [Bitwarden 的研究](https://bitwarden.com/resources/2023-password-decisions-survey-results/)表明，用户并不总是遵循最佳实践，其中 90% 的受访者表示他们重复使用了密码。
 
@@ -43,7 +28,7 @@ Bitwarden Password Manager 为用户提供了创建、存储和共享密码的�
 
 Bitwarden Secrets Manager 使开发人员、DevOps 和 IT 团队能够存储、共享和自动处理机器机密，例如身份验证密钥、数据库密码和 API 密钥。这种端到端加密的机密管理解决方案支持安全地部署基础设施和应用代码，没有暴露关键机器机密的风险。
 
-Bitwarden Passwordless.dev 提供了开发人员所需的 API 和工具，以实施基于 FIDO2 WebAuthn 通行密钥身份验证（用于网站和应用程序的下一代安全凭证验证）。
+Bitwarden Passwordless.dev 提供了开发人员所需的 API 和工具，以实施基于 FIDO2 WebAuthn 通行密钥身份验证（用于网站和应用程序的下一代安全凭据验证）。
 
 ### 维护安全性和合规性 <a href="#maintaining-security-and-compliance" id="maintaining-security-and-compliance"></a>
 
@@ -241,7 +226,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 2. 身份验证器通过 WebAuthn API 的 PRF 扩展生成 **PRF 对称密钥**。该密钥源自您的通行密钥特有的**内部机密**和 Bitwarden 提供的**盐化**。
 3. Bitwarden 客户端生成 **PRF 公钥和私钥对**。PRF 公钥对您的**用户对称密钥**（在产品中称为“账户加密密钥”）进行加密，您的客户端可以通过登录和解锁来访问该密钥，并将生成的 **PRF 加密的用户对称密钥**发送到服务器。
 4. 使用 **PRF 对称密钥**（请参阅步骤 2）加密 **PRF 私钥**，并将生成的 **PRF 加密的私钥**发送到服务器。
-5. 您的客户端将数据发送到 Bitwarden 服务器，为您的账户创建新的通行密钥凭证记录。如果您的通行密钥已注册并支持密码库加密和解密，则此记录包括：
+5. 您的客户端将数据发送到 Bitwarden 服务器，为您的账户创建新的通行密钥凭据记录。如果您的通行密钥已注册并支持密码库加密和解密，则此记录包括：
    * 通行密钥名称
    * 通行密钥公钥
    * PRF 公钥
@@ -388,7 +373,7 @@ Bitwarden 组织使用集合、工程和群组对密码库数据和用户进行�
 
 #### 事件日志 <a href="#event-logs" id="event-logs"></a>
 
-事件日志包含带有时间戳的详细信息，说明组织内发生了哪些操作或变更。这些日志有助于研究凭证或配置的更改，对审计跟踪调查和故障排除非常有用。拥有 Password Manager 和 Secrets Manager的团队和企业组织均可使用事件日志。了解更多有关[事件日志](../admin-console/reporting/event-logs.md)的信息。
+事件日志包含带有时间戳的详细信息，说明组织内发生了哪些操作或变更。这些日志有助于研究凭据或配置的更改，对审计跟踪调查和故障排除非常有用。拥有 Password Manager 和 Secrets Manager的团队和企业组织均可使用事件日志。了解更多有关[事件日志](../admin-console/reporting/event-logs.md)的信息。
 
 团队和企业组织也可以使用 [Bitwarden 公共 API ](../organizations/bitwarden-public-api.md)为其事件日志收集更多数据。
 
