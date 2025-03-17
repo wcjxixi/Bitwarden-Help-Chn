@@ -4,17 +4,21 @@
 对应的[官方文档地址](https://bitwarden.com/help/unassigned-vault-items-moved-to-admin-console/)
 {% endhint %}
 
-最近迁移到新的权限结构，为您的组织带来了更大的集合管理灵活性后，未分配给特定集合的密码库项目现在不再显示在您的密码管理器**所有密码库**视图中了。
+最近[迁移到新的权限结构](../admin-console/organization-basics/collection-management.md#collection-management-settings)，为您的组织带来了更大的集合管理灵活性后，未分配给特定集合的密码库项目现在不再显示在您的 Password Manager 的**所有密码库**视图中了。
 
 **您不会失去对这些项目的访问权限！**&#x60A8;可以将这些项目分配到集合中，以使它们显示在**所有密码库**视图中。
 
 若要查看这些项目并将其批量分配到集合中：
 
-1、使用 Bitwarden Web 应用程序，使用产品切换器 (☷) 打开管理控制台：
+1、使用 Bitwarden 网页 App，使用产品切换器打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/f9368992bf9f9089e981c52f3065a551/Screenshot_2024-02-27_at_9.02.16_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
 产品切换器
 {% endembed %}
+
+{% hint style="info" %}
+组织管理员、所有者和具有自定义**管理所有集合**权限的用户可以访问管理控制台中的**未指定**筛选器。
+{% endhint %}
 
 2、从管理控制台中选择**集合**，然后选择**未分配**筛选器：
 
