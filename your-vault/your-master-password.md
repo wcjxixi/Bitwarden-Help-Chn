@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/master-password/)
 {% endhint %}
 
-主密码是访问密码库的主要方法。您的主密码非常重要：
+主密码是访问密码库的主要方式。您的主密码非常重要：
 
-* **难忘**：Bitwarden 的员工以及 Bitwarden 系统对您的主密码一无所知、没有办法找回或重置您的主密码。**千万不要忘记你的主密码！**
+* 易记：Bitwarden 的员工以及 Bitwarden 系统对您的主密码一无所知、没有办法找回或重置您的主密码。**千万不要忘记您的主密码！**
 * **强大**：保护账户的最佳方式是使用更长、更复杂、更不常见的密码。Bitwarden 提供了一个免费的[密码强度测试工具](https://bitwarden.com/password-strength/)，可以测试您正在考虑的一些易记密码的强度。
 
 [2023.3.0 版本](../release-notes.md)发布后，主密码要求必须至少包含 12 个字符。

@@ -66,11 +66,11 @@ Bitwarden 采用以下关键的安全措施来保护 Bitwarden 中存储的数�
 **零知识加密**：Bitwarden 团队成员无法查看您的密码。您的数据使用您的个人电子邮件和主密码进行端到端加密。Bitwarden 绝不会存储也无法访问您的主密码或加密密钥。
 
 {% hint style="info" %}
-2021 年中期发布的[账户恢复](../organizations/admin-password-reset.md)功能为所有组织引入了一个新的 RSA 公钥/私钥对。私钥在存储之前将使用组织中预先存在的对称密钥进一步加密。在创建新组织时将在客户端生成并加密此密钥，或者对于现有的组织：
+~~2021 年中期发布的~~[~~账户恢复~~](../organizations/admin-password-reset.md)~~功能为所有组织引入了一个新的 RSA 公钥/私钥对。私钥在存储之前将使用组织中预先存在的对称密钥进一步加密。在创建新组织时将在客户端生成并加密此密钥，或者对于现有的组织：~~
 
-* 导航到**管理** → **人员**界面。
-* 更新**设置** → **我的组织**界面上的任何内容。
-* 从一种组织类型升级到另一种组织类型。
+* ~~导航到**管理** → **人员**界面。~~
+* ~~更新**设置** → **我的组织**界面上的任何内容。~~
+* ~~从一种组织类型升级到另一种组织类型。~~
 {% endhint %}
 
 **安全密码共享**：Bitwarden 支持在整个组织中与用户安全地共享和管理敏感数据。非对称和对称加密的组合可以在共享敏感信息时对其进行保护。
@@ -83,7 +83,7 @@ Bitwarden 采用以下关键的安全措施来保护 Bitwarden 中存储的数�
 
 **合规：**&#x42;itwarden 符合 AICPA SOC2 Type 2 /数据隐私框架、GDPR 和 CCPA 法规。[了解更多](compliance-audits-and-certifications.md)。
 
-### 为用户提供的安全工具 <a href="#security-tools-for-users" id="security-tools-for-users"></a>
+### 适用于用户的安全工具 <a href="#security-tools-for-users" id="security-tools-for-users"></a>
 
 以下工具由 Bitwarden 提供，个人用户和企业必须采取行动，以优化账户保护和避免锁定：
 
@@ -103,14 +103,14 @@ Bitwarden 的用户数据保护从用户创建账户和主密码的那一刻开�
 
 **用户永远不要忘记他们的主密码，这一点非常重要**。主密码：
 
-* 使用后会从内存中被清除
-* 不会通过互联网传输到 Bitwarden 服务器
-* Bitwarden 的任何人都无法看到、读取或进行逆向
+* 使用后会从内存中被清除。
+* 不会通过互联网传输到 Bitwarden 服务器。
+* Bitwarden 的任何人都无法看到、读取或进行逆向。
 
 基于此，以及由于您的数据在离开本地设备之前已完全加密和/或哈希，忘记主密码将导致用户无法访问其账户，除非他们启用了紧急访问或账户恢复功能，这两者将在本文后面进行详细介绍。
 
-{% hint style="info" %}
-用户可以通过 Bitwarden 网页应用程序更改他们的主密码。[了解如何操作](../your-vault/your-master-password.md#change-your-master-password)。
+{% hint style="success" %}
+用户可以通过 Bitwarden 网页 App 更改他们的主密码。[了解如何操作](../your-vault/your-master-password.md#change-your-master-password)。
 {% endhint %}
 
 #### 替代登录方法 <a href="#alternative-log-in-methods" id="alternative-log-in-methods"></a>
@@ -177,7 +177,7 @@ Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备�
 虽然用户账户在初始时使用 PBKDF2，但用户可以选择在账户创建后将其密钥派生函数更改为 [Argon2id](encryption.md#pbkdf2)。了解如何[更改 KDF 算法](kdf-algorithms.md#changing-kdf-algorithm)。
 {% endhint %}
 
-得到的盐化值是 256 位**主密钥**。然后，使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF)，将**主密钥**的长度再次扩展为 512 位，从而产生**扩展主密钥**。**主密钥**和**扩展主密钥**永远不会存储到 Bitwarden 服务器或传输到 Bitwarden 服务器。
+盐化值的结果是 256 位**主密钥**。然后，使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF)，将**主密钥**的长度再次扩展为 512 位，从而产生**扩展主密钥**。**主密钥**和**扩展主密钥**永远不会存储到 Bitwarden 服务器或传输到 Bitwarden 服务器。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6nm36M2VAPwxdwlD8HoR2N/0b39079292cb7c80ac5147ffa5ab36eb/whitepaper-1.png?_a=DAJAUVWIZAAB" %}
 基于密码的密钥派生
@@ -195,9 +195,9 @@ Bitwarden 密码散列、密钥派生和加密
 
 ### 身份验证和解密 <a href="#authentication-and-decryption" id="authentication-and-decryption"></a>
 
-用户需要输入电子邮件地址，通常还需要输入主密码才能[登录](https://vault.bitwarden.com/#/) Bitwarden 账户。
+用户需要输入电子邮箱地址，通常还需要输入主密码才能[登录](https://vault.bitwarden.com/#/) Bitwarden 账户。
 
-接下来，Bitwarden 使用具有默认为 600,000 次迭代的基于密码的密钥衍生函数 2 (PBKDF2) 来扩展具有盐化的用户电子邮件地址的主密码。所得的盐化值就是 256 位的**主密钥**。使用 PBKDF-SHA256 生成的**主密码哈希值**以及**主密钥**的有效载荷和主密码盐化，通过将哈希值与服务器端存储的哈希值进行比较，将其发送到服务器进行身份验证。
+接下来，Bitwarden 使用具有默认为 600,000 次迭代的基于密码的密钥衍生函数 2 (PBKDF2) 来扩展具有盐化的用户电子邮箱地址的主密码。所得的盐化值就是 256 位的**主密钥**。使用 PBKDF-SHA256 生成的**主密码哈希值**以及**主密钥**的有效载荷和主密码盐化，通过将哈希值与服务器端存储的哈希值进行比较，将其发送到服务器进行身份验证。
 
 {% hint style="info" %}
 虽然用户账户在初始时使用 PBKDF2，但用户可以选择在账户创建后将其密钥派生函数更改为 [Argon2id](encryption.md#pbkdf2)。了解如何[更改 KDF 算法](kdf-algorithms.md#changing-kdf-algorithm)。
@@ -266,9 +266,9 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 4. **PRF 对称密钥**用于解密您的**PRF 加密私钥**，从而生成您的 **PRF 私钥**。
 5. **PRF 私钥**用于解密您的 **PRF 加密的用户对称密钥**，从而生成您的**用户对称密钥**。这用于解密您的密码库数据。
 
-#### 信任设备 SSO <a href="#sso-with-trusted-devices" id="sso-with-trusted-devices"></a>
+#### 受信任设备 SSO <a href="#sso-with-trusted-devices" id="sso-with-trusted-devices"></a>
 
-下面章节介绍不同可信设备程序中的加密过程和密钥交换：
+下面章节介绍不同受信任设备程序中的加密过程和密钥交换：
 
 {% tabs %}
 {% tab title="入职" %}
@@ -302,11 +302,37 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 {% endtab %}
 
 {% tab title="批准" %}
+当用户使用 SSO 进行身份验证，并选择使用未受信任的设备（即**设备对称密钥**不存在于该设备上）解密其密码库时，他们需要选择一种方法来批准该设备，并选择信任该设备，以便将来无需进一步批准即可使用。接下来会发生什么取决于所选的选项：
 
+* **从其他设备批准：**
+  1. 触发[此处](https://help.ppgg.in/my-account/log-in-and-unlock/log-in-with-device#how-it-works)记录的流程后，客户端就获得并解密了账户加密密钥。
+  2. 用户现在可以使用解密后的账户加密密钥解密其密码库数据。如果用户选择信任该设备，则会按照**入职**选项卡中的说明与客户端建立信任。
+* **请求管理员批准：**
+  1. 发起请求的客户端向 Bitwarden 数据库中的验证请求表 POST 一个请求，其中包括账户电子邮件地址、唯一的**身份验证请求公钥**ª 和访问代码。
+  2. 管理员可在设备批准页面上[批准或拒绝此请求](https://help.ppgg.in/admin-console/login-with-sso/trusted-devices/approve-a-trusted-device)。
+  3. 请求获得管理员批准后，被批准客户端会使用请求中包含的**身份验证请求公钥**对用户的账户加密密钥进行加密。
+  4. 然后，被批准客户端将加密后的账户加密密钥 PUT 到验证请求记录，并标记为请求已完成。
+  5. 发起请求的客户端 GET 到加密后的账户加密密钥，然后使用**身份验证请求私钥**ª 对它进行**本地**解密。
+  6. 使用解密后的账户加密密钥，与客户端建立信任关系，详见**入职**选项卡。
+
+ª - **身份验证请求公钥**和**私钥**是为每一个无密码登录请求生成的唯一密钥，其存在时间与请求的存在时间相同。未被批准的请求，请求将在 1 周后过期。
+
+* **使用主密码批准：**
+  1. 按照安全白皮书中「[身份验证和解密](https://help.ppgg.in/security/bitwarden-security-whitepaper#authentication-and-decryption)」部分的说明，获取并解密用户的账户加密密钥。
+  2. 使用解密后的账户加密密钥，按照**入职**选项卡中的说明与客户建立信任。
 {% endtab %}
 
 {% tab title="密钥轮换" %}
+只有拥有主密码的用户才能轮换其[账户加密密钥](https://help.ppgg.in/security/account-encryption-key)。[了解更多](https://help.ppgg.in/admin-console/login-with-sso/trusted-devices/about-trusted-devices#impact-on-master-passwords)。
 
+当某个用户轮换其账户加密密钥时，正常轮换过程如下：
+
+1. **用户密钥-已加密的公钥**从服务器发送到客户端，然后使用旧的账户加密密钥（又称**用户密钥**）对其解密，得到**设备公钥**。
+2. 使用未加密的设备公钥对用户的新的账户加密密钥进行加密，然后将结果值作为新的**公钥-已加密的用户密钥**发送到服务器。
+3. 使用用户的新的账户加密密钥对设备公钥进行加密，然后将结果值作为新的**用户密钥-已加密的公钥**发送到服务器。
+4. 为此用户持久保存在服务器上的所有其他设备的受信任设备加密密钥都会被清除。这样，服务器上就只保留该单个设备所需的三个密钥（**公钥-已加密的用户密钥**、**用户密钥-已加密的公钥**和在此过程中未被更改的**设备密钥-已加密的私钥**）。
+
+任何现在未受信任的客户端都必须通过**批准**选项卡中说明的方法之一重新建立信任。
 {% endtab %}
 {% endtabs %}
 

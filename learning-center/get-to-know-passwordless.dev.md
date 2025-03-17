@@ -8,4 +8,7 @@
 
 {% embed url="https://vimeo.com/840978573" %}
 
-[此处](https://docs.passwordless.dev/)了解更多有关 Passwordless.dev 的信息。
+[此处](https://docs.passwordless.dev/)了解更多有关 Passwordless.dev 的信息，或跳转到视频中的以下时间点，了解特定主题：
+
+* **00:05**：在移动设备上使用通行密钥。
+* **01:59**：在网络浏览器中使用通行密钥。

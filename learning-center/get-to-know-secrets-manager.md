@@ -16,25 +16,39 @@
 
 {% embed url="https://vimeo.com/846445432" %}
 
-[此处](../secrets-manager/your-secrets/projects.md)了解更多有关工程的信息。
+[此处](../secrets-manager/your-secrets/projects.md)了解更多有关工程的信息，或跳转到视频中的以下时间点，了解特定主题：
+
+* **00:05**：创建工程。
+* **00:33**：将人员添加到工程。
 
 ## 如何添加机密 <a href="#how-to-add-secrets" id="how-to-add-secrets"></a>
 
 {% embed url="https://vimeo.com/854758635" %}
 
-[此处](../secrets-manager/your-secrets/secrets.md)了解更多有关机密的信息。
+[此处](../secrets-manager/your-secrets/secrets.md)了解更多有关机密的信息，或跳转到视频中的以下时间点，了解特定主题：
+
+* **00:14**：将机密导入 Bitwarden。
+* **00:47**：调整导入文件。
+* **01:52**：手动添加机密到 Bitwarden。
 
 ## 如何添加机器账户 <a href="#how-to-create-a-machine-account" id="how-to-create-a-machine-account"></a>
 
 {% embed url="https://vimeo.com/845933062" %}
 
-[此处](../secrets-manager/your-secrets/machine-accounts.md)了解更多有关机器账户的信息。
+[此处](../secrets-manager/your-secrets/machine-accounts.md)了解更多有关机器账户的信息，或跳转到视频中的以下时间点，了解特定主题：
+
+* **00:10**：关于机器账户。
+* **00:33**：添加机器账户。
 
 ## 如何创建和使用访问令牌 <a href="#how-to-create-and-use-an-access-token" id="how-to-create-and-use-an-access-token"></a>
 
 {% embed url="https://vimeo.com/854806168" %}
 
-[此处](../secrets-manager/your-secrets/access-tokens.md)了解更多有关访问令牌的信息。
+[此处](../secrets-manager/your-secrets/access-tokens.md)了解更多有关访问令牌的信息，或跳转到视频中的以下时间点，了解特定主题：
+
+* **00:22**：创建访问令牌。
+* **00:57**：使用访问令牌。
+* **01:57**：吊销访问令牌。
 
 ## 如何导出工程和机密 <a href="#how-to-export-projects-and-secrets" id="how-to-export-projects-and-secrets"></a>
 
