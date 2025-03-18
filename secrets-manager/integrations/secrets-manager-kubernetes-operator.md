@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="danger" %}
-Bitwarden Secrets Manager Helm 集成目前处于 **Beta 状态**。某些功能目前可能无法提供完整功能。
+~~Bitwarden Secrets Manager Helm 集成目前处于 **Beta 状态**。某些功能目前可能无法提供完整功能。~~
 {% endhint %}
 
 Bitwarden Secrets Manager Kubernetes Operator 允许团队安全高效地将 Secrets Manager 集成到 Kubernetes 工作流中。使用 Helm 包管理器部署的 operator，可以从 Secrets Manager 中存储和检索机密。
@@ -16,7 +16,7 @@ Bitwarden Secrets Manager Kubernetes Operator 允许团队安全高效地将 Sec
 
 首先，需要一个具有 [Secrets Manager](../secrets-manager-overview.md) 的活动 Bitwarden 组织。此外，还需要一个或多个与[机器账户](../your-secrets/machine-accounts.md)关联的[访问令牌](../your-secrets/access-tokens.md)。
 
-**额外的依赖**
+### 额外的依赖 <a href="#additional-dependencies" id="additional-dependencies"></a>
 
 * [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
 * [Helm 3](https://v3.helm.sh/docs/intro/install/)
@@ -49,13 +49,13 @@ helm show values bitwarden/sm-operator > my-values.yaml
 
 定位到 `my-values.yaml` 并填写所需的值。[Bitwarden 存储库](https://github.com/bitwarden/helm-charts/blob/535ad726cfc9dd5c9cd18531c15008d0d939ed74/charts/sm-operator/values.yaml)中提供了一个示例。我们建议根据您的设置调整以下值：
 
-| 值                                               | 描述                                                                                                                                                                                                                                                                            |
-| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `settings.bwSecretsManagerRefreshInterval`      | 机密同步的频率（以秒为单位）。最小值为 180。                                                                                                                                                                                                                                                      |
-| `settings.cloudRegion`                          | 自托管用户设置为 `US` 或 `EU` 云区域以用于同步。有关更多信息，请参阅[启用云通信](../../self-hosting/self-hosting-families-sponsorships.md#step-1-enable-cloud-communication)。                                                                                                                                  |
-| `settings.bwApiUrlOverride`                     | 仅适用于自托管用户。这是您的实例 API 的 URL。                                                                                                                                                                                                                                                   |
-| `settings.bwIdentityUrlOverride`                | 仅适用于自托管用户。这是您的实例的身份服务的 URL。                                                                                                                                                                                                                                                   |
-| `containers.enableSeccompProfileRuntimeDefault` | <p>设置为 <code>false</code> 以在较旧的 Kubernetes 版本 (&#x3C; 1.19) 或默认情况下不支持此字段的供应商版本（例如 OpenShift &#x3C; 4.11）上工作。</p><p>对于不需要升级权限来限制容器的大多数常见情况，建议使用此设置。有关更多信息，请参阅 <a href="https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted">Kubernetes 文档</a>。</p> |
+| 值                                               | 描述                                                                                                                                                                                                                                                                                   |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `settings.bwSecretsManagerRefreshInterval`      | 机密同步的频率（以秒为单位）。最小值为 180。                                                                                                                                                                                                                                                             |
+| `settings.cloudRegion`                          | 自托管用户设置为 `US` 或 `EU` 云区域以用于同步。有关更多信息，请参阅[启用云通信](../../self-hosting/self-hosting-families-sponsorships.md#step-1-enable-cloud-communication)。                                                                                                                                         |
+| `settings.bwApiUrlOverride`                     | 仅适用于自托管用户。这是您的实例 API 的 URL。                                                                                                                                                                                                                                                          |
+| `settings.bwIdentityUrlOverride`                | 仅适用于自托管用户。这是您的实例的身份服务的 URL。                                                                                                                                                                                                                                                          |
+| `containers.enableSeccompProfileRuntimeDefault` | <p>设置为 <code>false</code> 以在较旧的 Kubernetes 版本 (&#x3C; 1.19) 或默认情况下不支持此字段的供应商版本（例如 OpenShift &#x3C; 4.11）上工作。</p><p></p><p>对于不需要升级权限来限制容器的大多数常见情况，建议使用此设置。有关更多信息，请参阅 <a href="https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted">Kubernetes 文档</a>。</p> |
 
 {% hint style="info" %}
 要使用与图表中包含的版本不同的操作映像版本，请更新：\
@@ -92,7 +92,7 @@ kubectl create secret generic bw-auth-token -n <YOUR_NAMESPACE> --from-literal=t
 
 ## 部署 BitwardenSecret <a href="#deploy-bitwardensecret" id="deploy-bitwardensecret"></a>
 
-`BitwardenSecret` 对象是同步设置，operator 将使用它来创建和同步 Kubernetes 机密。 Kubernetes 机密属于命名空间，并将被注入 Secrets Manager [机器账户](../your-secrets/machine-accounts.md)有权访问的数据。
+`BitwardenSecret` 对象是同步设置，operator 将使用它来创建和同步 Kubernetes 机密。Kubernetes 机密属于命名空间，并将被注入 Secrets Manager [机器账户](../your-secrets/machine-accounts.md)有权访问的数据。
 
 使用自定义映射的 BitwardenSecret 部署示例：
 
@@ -146,7 +146,7 @@ Available map settings: 可用的图标设置：
 
 ## 图表使用示例 <a href="#example-usage-chart" id="example-usage-chart"></a>
 
-```bash
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:

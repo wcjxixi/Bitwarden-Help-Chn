@@ -4,10 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/bitwarden-authenticator/)
 {% endhint %}
 
-Bitwarden Authenticator 是一款移动端的身份验证应用程序，可用于验证使用双因素身份验证 (2FA) 的网站和应用程序的身份。Bitwarden Authenticator 生成 5-10 位基于时间的一次性密码 (TOTP)，默认使用 SHA-1 并每 30 秒轮换一次。
+Bitwarden Authenticator 是一款移动端的身份验证 App，可用于验证使用双重身份验证 (2FA) 的网站和 App 的身份。Bitwarden Authenticator 生成 5-10 位基于时间的一次性密码 (TOTP)，默认使用 SHA-1 并每 30 秒轮换一次。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4fMWMI0YBJQybhhyOlV0Zb/a9914cb08081d0dc424f2174dc3e62c7/bitwarden-authenticator-app.png?_a=BAJFJtWIB" %}
-Bitwarden Authenticator
+Bitwarden iOS Authenticator App
 {% endembed %}
 
 ## 添加代码 <a href="#add-codes" id="add-codes"></a>
@@ -34,7 +34,7 @@ Bitwarden Authenticator
 
 ### 编辑项目 <a href="#edit-an-item" id="edit-an-item"></a>
 
-长按验**证码**界面上的条目可对其进行更改。除了更改已添加的名称和机密之外，您还可以：
+长按**验证码**界面上的条目可对其进行更改。除了更改已添加的名称和机密之外，您还可以：
 
 * 将**用户名**添加到项目中。当您在同一网站拥有多个账户并且每个账户需要单独的验证码时，请使用此字段。
 * 更改用于生成代码的**算法**。Bitwarden Authenticator 默认使用 SHA-1。
@@ -47,4 +47,4 @@ Bitwarden Authenticator
 
 ## 使用代码 <a href="#use-codes" id="use-codes"></a>
 
-要在该账户的机密存储在 Bitwarden Authenticator 中后使用验证码，请打开 Bitwarden Authenticator 并点击该条目以将其验证码复制到剪贴板。然后，将验证码粘贴到您要登录的网站或应用程序的输入框中。
+要在该账户的机密存储在 Bitwarden Authenticator 中后使用验证码，请打开 Bitwarden Authenticator 并点击该条目以将其验证码复制到剪贴板。然后，将验证码粘贴到您要登录的网站或 App 的输入框中。

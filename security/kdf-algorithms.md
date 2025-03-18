@@ -29,11 +29,11 @@ Argon2 已被 Bitwarden 实现，其工作原理是将您的主密码与您的�
 
 Argon2 分配一部分内存（**KDF 内存**）然后用已计算的哈希值填充它直到填满。这是重复的，从它在第一个停止的内存的后续部分开始，在多个线程（**KDF 并行**）上迭代多次（**KDF 迭代**）。所有迭代后的结果值是您的主密钥，它充当主密码哈希的输入，用于在用户登录时验证该用户（[了解更多](bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)）。
 
-默认情况下，Bitwarden 设置为分配 64 MiB 内存，迭代 3 次，并跨 4 个线程执行此操作。这些默认值高于[当前 OWASP 的推荐](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#introduction)，但如果您要更改您的设置，这里有一些提示：
+默认情况下，Bitwarden 设置为分配 64 MB 内存，迭代 3 次，并跨 4 个线程执行此操作。这些默认值高于[当前 OWASP 的推荐](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#introduction)，但如果您要更改您的设置，这里有一些提示：
 
 * 增加 **KDF 迭代**将线性增加运行时间。
-* 您可以使用的 **KDF 并行**数量取决于您机器的 CPU。一般来说，最大。并行数 = 核心数量 x 2。
-* iOS 会限制用于自动填充的应用程序内存。从默认的 64MB 增加迭代可能会导致在解锁密码库时出错。
+* 您可以使用的 **KDF 并行**数量取决于您机器的 CPU。一般来说，最大并行数 = 核心数量 x 2。
+* iOS 会限制用于自动填充的 App 内存。从默认的 64 MB 增加迭代可能会导致在解锁密码库时出错。
 
 ## 更改 KDF 算法 <a href="#changing-kdf-algorithm" id="changing-kdf-algorithm"></a>
 

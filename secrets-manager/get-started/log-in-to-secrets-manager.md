@@ -38,7 +38,7 @@ Bitwarden 提供多种免费的两步登录方式，包括：
 
 | 方式                                                                                                                                | 设置说明                                                                          |
 | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| 通过验证器应用程序（例如 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=zh-Hans)） | 点[这里](../../two-step-login/setup-guides/two-step-login-via-authenticator.md)  |
+| 通过验证器 App（例如 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=zh-Hans)） | 点[这里](../../two-step-login/setup-guides/two-step-login-via-authenticator.md)  |
 | 通过电子邮件                                                                                                                            | 点[这里](../../two-step-login/setup-guides/two-step-login-via-email.md)          |
 | 通过 FIDO2 WebAuthn 验证器                                                                                                             | 点[这里](../../two-step-login/setup-guides/two-step-login-via-fido2-webauthn.md) |
 
@@ -48,13 +48,13 @@ Bitwarden 提供多种免费的两步登录方式，包括：
 
 | 方式                                        | 设置说明                                                                   |
 | ----------------------------------------- | ---------------------------------------------------------------------- |
-| 通过具有 Duo Push、短信、电话和安全钥匙的 Duo Security    | 点[这里](../../two-step-login/setup-guides/two-step-login-via-duo.md)     |
+| 通过具有 Duo Push、短信、电话和安全密钥的 Duo Security    | 点[这里](../../two-step-login/setup-guides/two-step-login-via-duo.md)     |
 | 通过 YubiKey（任何 4/5 系列或 YubiKey NEO/NFC 设备） | 点[这里](../../two-step-login/setup-guides/two-step-login-via-yubikey.md) |
 
 ## 设备登录 <a href="#log-in-with-device" id="log-in-with-device"></a>
 
-知道吗？您可以使用辅助设备而不是您的主密码登录 Bitwarden 网页应用程序。设备登录是一种无密码的身份验证方法，通过向您当前登录的任何特定设备发送身份验证请求以供批准，而无需输入您的主密码。[了解更多](../../your-vault/log-in-with-device.md)。
+您知道吗？您可以使用辅助设备而不是您的主密码登录 Bitwarden 网页 App。设备登录是一种无密码的身份验证方法，通过向您当前登录的任何特定设备发送身份验证请求以供批准，而无需输入您的主密码。[了解更多](../../your-vault/log-in-with-device.md)。
 
 ## 单点登录 <a href="#single-sign-on" id="single-sign-on"></a>
 
-如果您的组织使用 [SSO 登录](../../login-with-sso/about-login-with-sso.md)，您还可以[使用联合 SSO 凭据](../../login-with-sso/using-login-with-sso.md)访问您的 Bitwarden 网页应用程序。
+如果您的组织使用 [SSO 登录](../../login-with-sso/about-login-with-sso.md)，您还可以[使用联合 SSO 凭据](../../login-with-sso/using-login-with-sso.md)访问您的 Bitwarden 网页 App。

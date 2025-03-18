@@ -8,13 +8,15 @@
 
 要导出您的数据：
 
+{% embed url="https://vimeo.com/846444688" %}
+
 {% hint style="info" %}
 要导出 Secrets Manager 数据，您的用户账户必须是组织内的所有者或管理员。
 {% endhint %}
 
 1、从左侧导航中选择**设置** → **导出数据**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4UTBBbo0rrqRtsYSBmiCLy/9aac6ff493e1fe9de93791516d5c6847/Screenshot_2024-04-10_at_9.56.08_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4UTBBbo0rrqRtsYSBmiCLy/0af1a1818c660f8baf24c46999a8a81d/2024-12-03_13-41-37.png?_a=DAJCwlWIZAAB" %}
 导出数据
 {% endembed %}
 

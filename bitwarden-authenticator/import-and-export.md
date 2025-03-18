@@ -1,4 +1,4 @@
-# 导入和导出
+# 导入 & 导出
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/authenticator-import-export/)
@@ -24,7 +24,7 @@
 要从 Bitwarden Authenticator 导出数据，请打开 **⚙️设置**选项卡，然后点击**导出**按钮。您可以选择将数据导出为 `.json` 或 `.csv` 文件。
 
 {% hint style="info" %}
-您导出的数据将包含每个条目的 `otpauth://totp/?secret=` 字符串。如果您希望将此数据存储在其他地方或设置第二个身份验证器应用程序，这就是您要保存的最重要的数据。
+您导出的数据将包含每个条目的 `otpauth://totp/?secret=` 字符串。如果您希望将此数据存储在其他地方或设置第二个身份验证器 App，这就是您要保存的最重要的数据。
 {% endhint %}
 
 ### 导出示例 <a href="#example-exports" id="example-exports"></a>

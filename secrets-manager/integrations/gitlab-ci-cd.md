@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/gitlab-integration/)
 {% endhint %}
 
-Bitwarden 提供了一种使用 Bitwarden [Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 将机密注入 [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) 流水线的方法。这使您可以在 CI/CD 工作流程中安全地存储和使用机密。开始：
+Bitwarden 提供了一种使用 Bitwarden [Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 将机密注入 [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) 流水线的方法。这使您可以在 CI/CD 工作流程中安全地存储和使用机密。要开始：
 
 ## 保存访问令牌 <a href="#save-an-access-token" id="save-an-access-token"></a>
 

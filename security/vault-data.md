@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/vault-data/)
 {% endhint %}
 
-所有的密码库数据在存储到任何地方之前都会被 Bitwarden 加密。请参阅 Bitwarden 安全白皮书。Bitwarden 是一种零知识的解决方案，这意味着您是唯一能够获得您的密钥并能够解密您的密码库数据的一方。
+所有的密码库数据在存储到任何地方之前都会被 Bitwarden 加密。请参阅 [Bitwarden 安全白皮书](bitwarden-security-whitepaper.md)。Bitwarden 是一种零知识的解决方案，这意味着您是唯一能够获得您的密钥并能够解密您的密码库数据的一方。
 
 下面面列出了加密数据的示例以及加密数据的下载链接。
 
@@ -60,4 +60,4 @@
 * [服务账户](../secrets-manager/your-secrets/machine-accounts.md)名称
 * [访问令牌](../secrets-manager/your-secrets/access-tokens.md)名称（Bitwarden 永远不会存储访问令牌的值）
 
-某些数据，但**绝非密码库或机密数据**，用于向您提供 Bitwarden 服务，这称为管理数据，可被 Bitwarden 访问。[了解更多](administrative-data.md)。
+某些数据，但**绝非密码库或机密数据**，用于向您提供 Bitwarden 服务，这被称为管理数据，可被 Bitwarden 访问。[了解更多](administrative-data.md)。

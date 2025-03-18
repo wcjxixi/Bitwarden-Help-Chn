@@ -6,6 +6,8 @@
 
 将数据导入您的机密密码库，以便从其他组织或机密管理解决方案轻松迁移。Secrets Manager 支持直接导入[机密](../your-secrets/secrets.md)和[工程](../your-secrets/projects.md)。无法导入[机器账户](../your-secrets/machine-accounts.md)和[访问令牌](../your-secrets/access-tokens.md)。
 
+{% embed url="https://vimeo.com/854758635" %}
+
 ## 调整导入的文件 <a href="#condition-an-import-file" id="condition-an-import-file"></a>
 
 Secrets Manager 当前支持将机密和工程作为 `.json` 文件直接导入。您的导入文件应根据以下架构和规则进行调整：
@@ -100,11 +102,11 @@ Secrets Manager 当前支持将机密和工程作为 `.json` 文件直接导入�
 
 1、从左侧导航中选择**设置** → **导入数据**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1YQuiYqXIuYYG1TpXoSJoU/ccb036a10f2c5e7abf28aec1f772ee2b/Screenshot_2024-04-09_at_10.35.18_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1YQuiYqXIuYYG1TpXoSJoU/f76b3ee08dda7b470f96da9ebbe4f9b1/2024-12-03_11-28-29.png?_a=DAJCwlWIZAAB" %}
 导入数据
 {% endembed %}
 
-2、选择**选择文件**然后选择要导入的 `.json` 文件，或将要导入的内容复制并粘贴到输入框中。
+2、选择**选择文件**然后选择要导入的 `.json` 文件，或将要导入的内容**复制并粘贴**到输入框中。
 
 3、选择**导入数据**按钮。根据提示，输入您的主密码。
 

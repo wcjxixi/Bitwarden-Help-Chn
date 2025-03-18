@@ -46,13 +46,13 @@ Bitwarden 使用的默认迭代数在 2023 年 2 月增加。在此之后创建�
 
 Argon2 是 2015 年[密码哈希竞赛](https://www.password-hashing.net/)的获胜者，可作为 PBKDF2 的替代品（[了解更多](kdf-algorithms.md)）。该算法共有三个版本，Bitwarden 已经实现了 [OWASP 推荐](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)的 Argon2id。Argon2id 是其他版本的混合体，结合了数据相关和数据无关的内存访问，这使其具有 Argon2i 对侧通道缓存定时攻击的一些抵抗力以及 Argon2d 对 GPU 破解攻击的大部分抵抗力（[来源](https://github.com/p-h-c/phc-winner-argon2)）。
 
-默认情况下，Bitwarden 设置为分配 64 MiB 内存，迭代 3 次，并跨 4 个线程执行此操作。这些默认值高于[当前的 OWASP 建议](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#introduction)，但如果您要更改您的设置，这里有一些提示：
+默认情况下，Bitwarden 设置为分配 64 MB 内存，迭代 3 次，并跨 4 个线程执行此操作。这些默认值高于[当前的 OWASP 建议](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#introduction)，但如果您要更改您的设置，这里有一些提示：
 
 * 增加 **KDF 迭代**将线性增加运行时间。
-* 您可以使用的 **KDF 并行**数量取决于您机器的 CPU。一般来说，最大。并行数 = 核心数量 x 2。
+* 您可以使用的 **KDF 并行**数量取决于您机器的 CPU。一般来说，最大并行数 = 核心数量 x 2。
 
 {% hint style="info" %}
-KDF 内存值大于 48 MB 的 Argon2id 用户每次启动 iOS 自动填充或通过共享表创建新 Send 时，都会收到警告对话。若要避免此消息，请调整 Argon2id 设置或启用[生物识别解锁](../your-vault/unlocking-with-biometrics.md)。
+KDF 内存值大于 48 MB 的 Argon2id 用户每次启动 iOS 自动填充或通过共享表创建新 Send 时，都会收到一个警告对话框。若要避免此消息，请调整 Argon2id 设置或启用[生物识别解锁](../your-vault/unlocking-with-biometrics.md)。
 {% endhint %}
 
 ## 调用的加密库 <a href="#invoked-crypto-libraries" id="invoked-crypto-libraries"></a>

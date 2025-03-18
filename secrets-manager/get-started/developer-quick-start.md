@@ -8,6 +8,10 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 
 在本文中，我们将通过查看几种检索存储在密码库中的数据库凭据以在容器运行时注入 [Bitwarden Unified](../../self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md) Docker 镜像的方式来演示 Secrets Manager CLI 的使用。
 
+{% hint style="success" %}
+如果您要查找 SDK 信息和 Secrets Manager 功能的语言封装，请参阅[本文](../developer-tools/secrets-manager-sdk.md)。
+{% endhint %}
+
 如果您还没有阅读 [Secrets Manager 快速入门](secrets-manager-quick-start.md)文章，建议您在继续之前先阅读。
 
 ## 基础教程 <a href="#basic-tutorial" id="basic-tutorial"></a>
@@ -59,33 +63,55 @@ docker run -d --name bitwarden .... -env BW_DB_USERNAME=$SECRET_1 BW_BD_PASSWORD
 要在您的 Docker 映像中安装 Secrets Manager CLI，您需要将以下内容添加到您的 Dockerfile：
 
 ```batch
-RUN curl -O https://github.com/bitwarden/sdk/releases/download/bws-v0.2.1/bws-x86_64-unknown-linux-gnu-0.2.1.zip && unzip bws-x86_64-unknown-linux-gnu-0.2.1.zip && export PATH=/this/directory:$PATH
+# Install dependencies
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && \
+  apt-get install -y \
+  ca-certificates \
+  curl \
+  jq \
+  unzip && \
+  rm -rf /var/lib/apt/lists/*
+
+# Download bws
+RUN curl -LO https://github.com/bitwarden/sdk/releases/download/bws-v1.0.0/bws-x86_64-unknown-linux-gnu-1.0.0.zip && \
+  unzip bws-x86_64-unknown-linux-gnu-1.0.0.zip -d /usr/local/bin/ && \
+  rm -f bws-x86_64-unknown-linux-gnu-1.0.0.zip
+
+# Add anything else you will need to your image
+
+# Entrypoint script will retrieve secrets at runtime
+COPY ./entrypoint.sh /
+ENTRYPOINT ["/entrypoint.sh"]
 ```
 
-接下来，您需要构建 `RUN` 语句来获取每个凭据，以便它们可用于注入。这些语句将包括内联身份验证，但这并不是您能够实施的唯一方式：
+接下来，使用 `entrypoint.sh` 文件在运行时注入机密。一种方法是在 `entrypoint.sh` 文件中构建 `RUN` 语句，用于检索每个凭据。不过，这并不是你能实现的唯一方法：
 
 ```batch
-RUN SECRET_1=$(bws get secret fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff --access-token $BWS_ACCESS_TOKEN | jq '.value')
+#!/usr/bin/env bash
+# One way to retrieve individual secrets is to use the `get` command and extract the value:
+SECRET_1=$(bws secret get fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff | jq '.value')
+
+# Another option., this method is sensitive to spaces in the secret name. See the `run` command documentation for more options
+bws run -- 'echo $SECRET_NAME'
+
+# Run your project
 ```
 
-```batch
-RUN SECRET_2=$(bws get secret 80b55c29-5cc8-42eb-a898-acfd01232bbb --access-token $BWS_ACCESS_TOKEN | jq '.value')
+这些 `RUN` 语句将提示您的 Dockerfile 获取指示的机密，其中 `fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff` 代表机密的唯一标识符。代码示例中的另一个选项代表机密名称，即 `"echo $SECRET_NAME"`。
+
+### 构建镜像 <a href="#build-the-image" id="build-the-image"></a>
+
+要构建 docker 镜像，首先要使 `entrypoint.sh` 可执行：
+
+```bash
+chmod +x ./entrypoint.sh
 ```
 
-这些 `RUN` 语句将提示您的 Dockerfile 获取指示的机密，其中 `fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff` 代表机密的唯一标识符。
+构建镜像：
 
-### 准备您的环境文件 <a href="#prepare-your-env-file" id="prepare-your-env-file"></a>
-
-现在您的数据库凭据将可用于注入，调整您的 `settings.env` 文件以能够接收这些值。为此，请将文件中的相关硬编码值替换为指定的变量名称（在本例中为 `SECRET_1` 和 `SECRET_2`）：
-
-```systemd
-# Database
-# Available providers are sqlserver, postgresql, mysql/mariadb, or sqlite
-BW_DB_PROVIDER=mysql
-BW_DB_SERVER=db
-BW_DB_DATABASE=bitwarden_vault
-BW_DB_USERNAME=$SECRET_1
-BW_DB_PASSWORD=$SECRET_2
+```bash
+docker build -t image-name
 ```
 
 ### 运行容器 <a href="#run-the-container" id="run-the-container"></a>
@@ -93,7 +119,7 @@ BW_DB_PASSWORD=$SECRET_2
 现在您的数据库凭据已准备好并准备好注入，启动您的容器并指定访问令牌以作为环境变量与 `bws login` 一起使用：
 
 ```batch
-docker run -e BWS_ACCESS_TOKEN=<your-access-token> docker-unified
+docker run --rm -it -e BWS_ACCESS_TOKEN=<your-access-token> image-name
 ```
 
 运行此命令时，您的 Docker 容器将启动并从容器获取到的值中注入您的数据库凭据，从而使您能够安全地启动 Bitwarden Unified，而无需将敏感值作为明文传递。

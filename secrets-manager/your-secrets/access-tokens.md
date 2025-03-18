@@ -14,7 +14,7 @@
 
 2、选择要为其创建访问令牌的机器账户，然后打开**访问令牌**选项卡：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6EINDaXiPQp9qQcO6q1zt5/40e157b6e8385572f58e817d49100c7a/Screenshot_2024-04-09_at_10.40.41_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6EINDaXiPQp9qQcO6q1zt5/259e6c2c6e91e0df63c83d03a89ac4a2/2024-12-03_11-31-26.png?_a=DAJCwlWIZAAB" %}
 创建访问令牌
 {% endembed %}
 
@@ -29,7 +29,7 @@
 
 6、将出现一个显示访问令牌的窗口。关闭此窗口之前请将您的令牌复制到安全的地方，因为您的令牌**不会被存储并且以后无法获取**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3QfpdSQai2hFrWGdGSlQRN/8453d5425eba62421e443b4b7a677f7a/Screenshot_2024-04-09_at_10.41.34_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3QfpdSQai2hFrWGdGSlQRN/a5a5483cfbbbf690a8436043be58cea7/2024-12-03_11-32-26.png?_a=DAJCwlWIZAAB" %}
 访问令牌示例
 {% endembed %}
 
@@ -62,6 +62,6 @@
 
 2、对于要撤销的访问令牌，使用 (**≡**) 选项菜单选择**吊销访问令牌**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1rujDBqHJ6lYy26kqmTZw4/e280c0f28b2b2377e8d9c4f07b7f6f5e/Screenshot_2024-04-10_at_9.51.37_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1rujDBqHJ6lYy26kqmTZw4/38b09b908992c91639a49012adbec93c/2024-12-03_13-40-17.png?_a=DAJCwlWIZAAB" %}
 吊销访问令牌
 {% endembed %}

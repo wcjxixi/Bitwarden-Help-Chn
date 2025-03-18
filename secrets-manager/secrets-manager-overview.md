@@ -49,6 +49,12 @@ Bitwarden 致力于打造安全至上的产品。与 Password Manager 一样，S
 
 [Secrets Manager 软件开发工具包 (SDK)](developer-tools/secrets-manager-sdk.md) 可帮助开发人员创建用于机密管理的应用程序。Bitwarden 团队使用 Secrets Manager SDK 构建与 GitHub Actions 等流行产品的谨慎集成，并且社区可以使用它来构建自己的应用程序。
 
-## 开始吧 <a href="#get-started-today" id="get-started-today"></a>
+## 立即开始 <a href="#get-started-today" id="get-started-today"></a>
 
-我们很高兴能参与您的机密管理之旅，也很高兴您能加入我们的新冒险之旅。Secrets Manager 目前在公开测试计划中。[立即了解如何加入](../miscellaneous/beta-signup.md)。
+我们很高兴能参与您的机密管理之旅，也很高兴您能加入我们的新冒险之旅。Secrets Manager 目前在公开测试计划中。[立即注册 Secrets Manager](https://bitwarden.com/products/secrets-manager/#secrets-manager-get-started)。
+
+Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务。如果您有家庭计划并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费组织并按照[这些步骤](get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
+
+{% hint style="success" %}
+如需深入了解产品，请查看 [Secrets Manager 演示](https://bitwarden.com/resources/videos/bitwarden-secrets-manager-product-demo-replay/)。
+{% endhint %}

@@ -14,9 +14,11 @@ Bitwarden 还使用 Azure 透明数据加密 (TDE) 通过对数据库、关联�
 
 ## 在 Bitwarden 服务器上 <a href="#on-bitwarden-servers" id="on-bitwarden-servers"></a>
 
-Bitwarden 将所有数据安全地处理和存储在位于[美国和欧盟](server-geographies.md)的 [Microsoft Azure Cloud](https://en.wikipedia.org/wiki/Microsoft\_Azure) 中，而 Microsoft Azure Cloud 使用由属于微软的团队管理的服务。由于 Bitwarden 仅使用 Azure 提供的服务，因此无需管理和维护服务器基础结构。运行时间、可伸缩性以及安全更新和保证均由 Microsoft 及其云基础架构提供支持。查看 [Microsoft Azure 合规性产品](https://azure.microsoft.com/en-us/resources/microsoft-azure-compliance-offerings/)文档以获取更多详细信息。
+Bitwarden 将所有数据安全地处理和存储在位于[美国和欧盟](server-geographies.md)的 [Microsoft Azure Cloud](https://en.wikipedia.org/wiki/Microsoft_Azure) 中，而 Microsoft Azure Cloud 使用由属于微软的团队管理的服务。由于 Bitwarden 仅使用 Azure 提供的服务，因此无需管理和维护服务器基础结构。运行时间、可伸缩性以及安全更新和保证均由 Microsoft 及其云基础架构提供支持。查看 [Microsoft Azure 合规性产品](https://azure.microsoft.com/en-us/resources/microsoft-azure-compliance-offerings/)文档以获取更多详细信息。
 
-Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。 Bitwarden 为此目的利用的功能不涉及创建或存储 BACPAC 或其他可移动备份文件，而是允许通过反向处理事务日志进行灾难恢复以使数据库与选定的时间点保持一致（请参阅 [Microsoft 文档](https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-automated-backups-overview?view=azuresql)）。Bitwarden 为 PITR 配置了严格的 7 天保留策略和非长期保留策略。此功能**仅用于灾难恢复目的**，用户和组织负责创建和安全地存储他们自己的密码库数据的备份。Blob 存储的数据，特别是附件和 Send 文件，不受 PITR 功能的约束，一旦从 Bitwarden 中删除就无法恢复。
+Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。Bitwarden 为此目的利用的功能不涉及创建或存储 BACPAC 或其他可移动备份文件，而是允许通过反向处理事务日志进行灾难恢复以使数据库与选定的时间点保持一致（请参阅 [Microsoft 文档](https://learn.microsoft.com/zh-cn/azure/azure-sql/database/hyperscale-automated-backups-overview?view=azuresql)）。Bitwarden 为 PITR 配置了严格的 7 天保留策略和非长期保留策略。此功能**仅用于灾难恢复目的**，用户和组织负责创建和安全地存储他们自己的密码库数据的备份。Blob 存储的数据，特别是附件和 Send 文件，不受 PITR 功能的约束，一旦从 Bitwarden 中删除就无法恢复。
+
+> **\[译者注]**：**PITR**：Point-in-Time Restore（时间点恢复） ，是一种数据恢复技术，允许将数据库或系统恢复到某个特定时间点的状态。它通过持续记录数据库的变更（如事务日志）来实现，确保在发生故障或数据损坏时，能够恢复到故障前的任意时间点。
 
 不信任 Bitwarden 服务器吗？没关系。开源的力量让一切变得简单美好，您可以轻松地自己托管整个 Bitwarden 系统，您的数据由你自己控制。在[这里](../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)了解更多。
 
@@ -38,7 +40,7 @@ Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。 Bitwarden 
   * Snap 版： `~/snap/bitwarden/current/.config/Bitwarden`
 
 {% hint style="success" %}
-您可以通过将 `BITWARDEN_APPDATA_DIR` 环境变量值设置为绝对路径来覆盖 Bitwarden 桌面应用程序数据的存储位置。
+您可以通过将 `BITWARDEN_APPDATA_DIR` 环境变量值设置为绝对路径来覆盖 Bitwarden 桌面 App 数据的存储位置。
 {% endhint %}
 
 ### 浏览器扩展 <a href="#browser-extension" id="browser-extension"></a>
@@ -88,5 +90,5 @@ Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。 Bitwarden 
 * Linux：`~/.config/Bitwarden CLI`
 
 {% hint style="success" %}
-您可以通过将 `BITWARDEN_APPDATA_DIR` 环境变量值设置为绝对路径来覆盖 Bitwarden CLI 应用程序数据的存储位置。
+您可以通过将 `BITWARDEN_APPDATA_DIR` 环境变量值设置为绝对路径来覆盖 Bitwarden CLI App 数据的存储位置。
 {% endhint %}

@@ -10,23 +10,42 @@
 
 Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理和部署机密。
 
-**Secrets Manager 网页应用程序**将是您设置机密管理基础设施的主页。您将使用它来添加和组织[机密](secrets-manager-quick-start.md#add-secrets)、创建适合您需要的[权限系统](secrets-manager-quick-start.md#assign-members-to-your-project)，以及生成供您的应用程序使用的[访问令牌](secrets-manager-quick-start.md#create-an-access-token)。完成后，您可以继续阅读[开发者快速入门指南](developer-quick-start.md)，以了解如何将机密注入您的机器和应用程序。
+**Secrets Manager 网页 App** 将是您设置机密管理基础设施的主页。您将使用它来添加和组织[机密](secrets-manager-quick-start.md#add-secrets)、创建适合您需要的[权限系统](secrets-manager-quick-start.md#assign-members-to-your-project)，以及生成供您的应用程序使用的[访问令牌](secrets-manager-quick-start.md#create-an-access-token)。完成后，您可以继续阅读[开发者快速入门指南](developer-quick-start.md)，以了解如何将机密注入您的机器和应用程序。
+
+## 了解 Secrets Manager <a href="#getting-to-secrets-manager" id="getting-to-secrets-manager"></a>
+
+要导航到 Secrets Manager，请从导航菜单的产品切换器中选择 Secrets Manager：
+
+{% embed url="https://vimeo.com/840459200" %}
+
+如果您或您的组织不是 Secrets Manager 的活跃用户，Secrets Manager 页面将提供有关该产品的信息。 所有者和用户可以单击**立即尝试**进行重定向：
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7iZGZNg39Z2l0OnoMIeFK9/88af82e4dec707e2b293c2ae60370b2b/2024-08-05_09-18-08.png?_a=DAJCwlWIZAAB" %}
+Secrets Manager 主页
+{% endembed %}
+
+* **所有者**将被重定向到组织订阅页面的 Secrets Manager 部分。
+* **用户**将被重定向到一封预先生成的电子邮件，用户可在此申请 Bitwarden Secrets Manager 的访问权限。该邮件在发送给组织管理员前可进行编辑。
+
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1yTEdQGVkLtkvZjRErjBkO/e68e6dafe143a5166ccddfdc4d61fc0e/2024-07-30_15-14-33.png?_a=DAJCwlWIZAAB" %}
+请求对 Secrets Manager 的访问权限
+{% endembed %}
 
 ## 激活 Secrets Manager <a href="#activate-secrets-manager" id="activate-secrets-manager"></a>
 
 您必须是组织所有者才能启用 Secrets Manager。要开始使用 Secrets Manager：
 
-1、在管理控制台中，导航至您组织的**计费** → **订阅**页面
+1、在管理控制台中，导航至您组织的**计费** → **订阅**页面，或单击 Secrets Manager 界面上的**立即尝试**。
 
 2、在**来自 Bitwarden 的更多产品**部分中，勾选**订阅 Secrets Manager** 复选框。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/eYPz7jQRhG0PvU7gclzXk/04bbea42872c078a1aa3d38e755ae2bc/Screenshot_2024-04-09_at_10.21.39_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/eYPz7jQRhG0PvU7gclzXk/04bbea42872c078a1aa3d38e755ae2bc/Screenshot_2024-04-09_at_10.21.39_AM.png?_a=DAJCwlWIZAAB" %}
 添加 Secrets Manager
 {% endembed %}
 
-激活后，通过网页应用上的产品切换器切换到 Secrets Manager：
+激活后，通过网页 App 上的产品切换器切换到 Secrets Manager：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/919a2c332ed6a53707f80ac3f734e0a8/2024-06-04_10-13-18.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
 产品切换器
 {% endembed %}
 
@@ -44,7 +63,7 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 
 2、使用 **≡** 菜单，选择**启用 Secrets Manager** 以向选定成员授予访问权限：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3IBNL6FdndgPeuXa7m3rlP/429b9a1a63919be675b047521ff034a4/Screenshot_2024-02-27_at_2.16.52_PM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3IBNL6FdndgPeuXa7m3rlP/fd04ec9951123e5a0ccd5fe4f04fa4de/2024-12-03_11-18-52.png?_a=DAJCwlWIZAAB" %}
 添加 Secrets Manager 用户
 {% endembed %}
 
@@ -74,7 +93,7 @@ Secrets Manager 用户管理
 
 使用产品切换器打开 Secrets Manager 网页应用程序。如果这是您第一次打开该应用程序，您将看到一个空的密码库，但最终它将充满您的工程和机密：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/644qYsogVg0ztLkZ90cKPi/37f6bfbea1a691513e77f4a36a723fbe/Screenshot_2024-04-09_at_10.28.33_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/644qYsogVg0ztLkZ90cKPi/a68037e16818da6ac3b335ab4a7d3a90/2024-12-03_11-24-23.png?_a=DAJCwlWIZAAB" %}
 机密密码库
 {% endembed %}
 
@@ -86,8 +105,8 @@ Secrets Manager 用户管理
 
 1、使用**新增**下拉菜单选择**工程**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gGgCYT0CgS3MKAngKDooL/e9c55079d352999db5cd76c55333c729/Screenshot_2024-04-09_at_10.29.34_AM.png?_a=BAJFJtWIB" %}
-创建一个工程
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gGgCYT0CgS3MKAngKDooL/03bd6080e1f8c695c46fd23918f56951/2024-12-03_11-25-44.png?_a=DAJCwlWIZAAB" %}
+创建工程
 {% endembed %}
 
 2、输入**工程名称**。
@@ -102,7 +121,7 @@ Secrets Manager 用户管理
 
 2、从「人员」下拉列表中，输入或选择要添加到工程的成员或群组。选择了合适的人员后，选择**添加**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4Vu9wuBd8ceEz7ji7V2kHZ/4bf1df872a882798d20f9aa868cc3ff8/Screenshot_2024-04-09_at_10.33.54_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4Vu9wuBd8ceEz7ji7V2kHZ/2f11a06f3ed09a1cd64190ad8197e914/2024-12-03_11-27-19.png?_a=DAJCwlWIZAAB" %}
 将人员添加到工程
 {% endembed %}
 
@@ -130,7 +149,7 @@ Secrets Manager 用户管理
 
 2、从左侧导航中选择**设置** → **导入数据**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1YQuiYqXIuYYG1TpXoSJoU/ccb036a10f2c5e7abf28aec1f772ee2b/Screenshot_2024-04-09_at_10.35.18_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1YQuiYqXIuYYG1TpXoSJoU/f76b3ee08dda7b470f96da9ebbe4f9b1/2024-12-03_11-28-29.png?_a=DAJCwlWIZAAB" %}
 导入数据
 {% endembed %}
 
@@ -142,7 +161,7 @@ Secrets Manager 用户管理
 
 1、使用**新增**下拉菜单选择**机密**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3uEcZ7G5L2TJM4QgMmFZ4H/7db487049197b1a741749967d02a3cbb/Screenshot_2024-04-09_at_10.36.07_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3uEcZ7G5L2TJM4QgMmFZ4H/24d73aa7121de9c77383f51de618db02/2024-12-03_11-29-17.png?_a=DAJCwlWIZAAB" %}
 创建机密
 {% endembed %}
 
@@ -171,13 +190,13 @@ Secrets Manager 用户管理
 
 1、使用**新增**下拉菜单选择**机器账户**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/LaVwicbqhvbliXPm6loOU/917efb20141bc4c18f6b9f19335f9306/Screenshot_2024-04-09_at_10.37.53_AM.png?_a=BAJFJtWIB" %}
-新增服务账户
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/LaVwicbqhvbliXPm6loOU/5559a5caf8ad70a95be3ea89f1b760ad/2024-12-03_11-29-17.png?_a=DAJCwlWIZAAB" %}
+新增机器账户
 {% endembed %}
 
 2、输入**机器账户名称**，然后点击**保存**。
 
-3、打开机器账户，然后在“项目”选项卡中键入或选择该计算机帐户应能够访问的项目的名称。对于每个添加的项目，选择权限级别：
+3、打开机器账户，然后在**工程**选项卡中键入或选择该机器账户具有访问权限的工程名称。对于每个添加的工程，选择一个**权限**级别：
 
 * **可以读取**：机器账户可以从已分配的工程中检索机密。
 * **可以读取和写入**：机器账户可以从已分配的工程中检索和编辑机密，以及在已分配的工程中创建新的机密或创建新的工程。
@@ -194,7 +213,7 @@ Secrets Manager 用户管理
 
 2、选择要为其创建访问令牌的机器账户，然后打开**访问令牌**选项卡：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6EINDaXiPQp9qQcO6q1zt5/40e157b6e8385572f58e817d49100c7a/Screenshot_2024-04-09_at_10.40.41_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6EINDaXiPQp9qQcO6q1zt5/259e6c2c6e91e0df63c83d03a89ac4a2/2024-12-03_11-31-26.png?_a=DAJCwlWIZAAB" %}
 创建访问令牌
 {% endembed %}
 
@@ -209,7 +228,7 @@ Secrets Manager 用户管理
 
 6、将出现一个显示访问令牌的窗口。关闭此窗口之前请将您的令牌复制到安全的地方，因为您的令牌**以后无法获取**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3QfpdSQai2hFrWGdGSlQRN/8453d5425eba62421e443b4b7a677f7a/Screenshot_2024-04-09_at_10.41.34_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3QfpdSQai2hFrWGdGSlQRN/a5a5483cfbbbf690a8436043be58cea7/2024-12-03_11-32-26.png?_a=DAJCwlWIZAAB" %}
 访问令牌示例
 {% endembed %}
 
@@ -218,3 +237,9 @@ Secrets Manager 用户管理
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 现在您已经掌握了创建用于安全地管理机密的基础设施以及为机器访问机密创建路径的诀窍，让我们继续阅读[开发人员快速入门](developer-quick-start.md)指南。
+
+或者，了解更多有关 Secrets Manager 的信息：
+
+* [Bitwarden 为秘密管理带来开源安全和零知识加密](https://bitwarden.com/blog/bitwarden-brings-open-source-security-to-secrets-management/)
+* [为什么我的开发团队需要 Secrets Manager？](https://bitwarden.com/blog/why-does-my-development-team-need-a-secrets-manager/)
+* [为什么端到端加密对开发人员的机密管理至关重要？](https://bitwarden.com/blog/why-end-to-end-encryption-is-crucial-for-developer-secrets-management/)

@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/secret-decryption/)
 {% endhint %}
 
-除了主密码之外，Secrets Manager 还可以使用访问令牌来解密密码库机密。具体来说，是在像[这里](../get-started/developer-quick-start.md)的例子这样的机密注入场景中完成的。
+除了主密码之外，Secrets Manager 还可以使用访问令牌来来解密、编辑和创建机密。具体来说，是在像[这里](../get-started/developer-quick-start.md)的例子这样的机密注入场景中完成的。
 
-从概念上讲，访问令牌由两个组成部分组成：
+从概念上讲，访问令牌由两部分组成：
 
 * **一个 API 密钥**，包含用于与 Bitwarden 服务器进行身份验证的客户端 ID 和密码。
 * **一个唯一的加密密钥**，用于解密包含您的组织对称加密密钥的加密载荷。

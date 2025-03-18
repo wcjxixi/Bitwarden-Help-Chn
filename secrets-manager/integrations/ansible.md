@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/ansible-integration/)
 {% endhint %}
 
-Bitwarden 提供了与 Ansible 的集成，可以从 Secrets Manager 中获取机密并将其注入到 Ansible playbook 中。lookup 插件会将检索到的机密作为隐藏的环境变量注入 Ansible playbook 中。设置集合的方法如下：
+Bitwarden 提供了与 Ansible 的集成，可以从 Secrets Manager 中获取机密并将其注入到 Ansible playbook 中。lookup 插件会将检索到的机密作为隐藏的环境变量注入 Ansible playbook 中。要设置集合：
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
