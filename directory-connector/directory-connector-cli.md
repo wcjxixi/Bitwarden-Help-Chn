@@ -43,11 +43,11 @@ bwdc --help
 
 可用的**同步选项**取决于使用的目录类型，因此请参考以下文章之一，以获取可供您使用的选项列表：
 
-* [与 AD 或 LDAP 同步](sync-with-active-directory-or-ldap.md)
-* [与 Azure AD 同步](../admin-console/user-management/directory-connector/sync-with-microsoft-entra-id.md)
-* [与 G Suite（Google）同步](sync-with-google-workspace.md)
-* [与 Okta 同步](sync-with-okta.md)
-* [与 OneLogin 同步](sync-with-onelogin.md)
+* [使用 AD 或 LDAP 同步](sync-with-active-directory-or-ldap.md)
+* [使用 Microsoft Entra ID 同步](../admin-console/user-management/directory-connector/sync-with-microsoft-entra-id.md)
+* [使用 Google Workspace 同步](sync-with-google-workspace.md)
+* [使用 Okta 同步](sync-with-okta.md)
+* [使用 OneLogin 同步](sync-with-onelogin.md)
 
 6、运行 `bwdc test` 命令以检查您的配置是否将同步预期结果。
 
@@ -165,8 +165,8 @@ bwdc config <setting> <value>
 
 | 选项                           | 描述                                                                                        |
 | ---------------------------- | ----------------------------------------------------------------------------------------- |
-| `server <server-url>`        | URL 您自托管的安装的地址（例如 `https://business.bitwarden.com` ）或欧盟服务器（`https://vault.bitwarden.eu`）。 |
-| `directory <directory-type>` | 使用目录的类型。请参阅以下表格以获取枚举值。                                                                    |
+| `server <server-url>`        | 您的自托管安装的 URL（例如 `https://business.bitwarden.com` ）或 EU 服务器（`https://vault.bitwarden.eu`）。 |
+| `directory <directory-type>` | 使用的目录的类型。请参阅以下表格以获取枚举值。                                                                   |
 | `ldap.password <password>`   | 用于连接到 LDAP 服务器的密码。                                                                        |
 | `azure.key <key>`            | Azure AD 密钥。                                                                              |
 | `gsuite.key <key>`           | Google Workspace/GSuite 私钥。                                                               |
@@ -191,7 +191,7 @@ bwdc config <setting> <value>
 bwdc data-file
 ```
 
-通过直接在您喜欢的文本编辑器中编辑 `data.json` 配置文件，来修改目录连接器 CLI 的配置设置项。
+目录连接器 CLI 的某些配置设置可以通过在您喜欢的文本编辑器中直接编辑 `data.json` 配置文件来修改，但 `ldap.password`、`azure.key`、`gsuite.key`、`okta.token` 和 `onelogin.secret` 只能通过 CLI 使用 config 或[桌面 App](directory-connector-desktop-app.md) 来修改。
 
 ### clean-cache <a href="#clear-cache" id="clear-cache"></a>
 
@@ -212,7 +212,7 @@ bwdc update
 如果发现新版本，此命令将返回新版本的下载 URL 地址。**目录连接器 CLI 不会自动更新**。您需要使用此 URL 手动下载新版本。
 
 {% hint style="warning" %}
-如果您同时使用 CLI 和桌面版应用程序，确保它俩的版本是匹配的，这非常重要。运行两个不同版本的目录连接器，可能会导致意外问题。
+如果您同时使用 CLI 和桌面 App，确保它俩的版本是匹配的，这非常重要。运行两个不同版本的目录连接器，可能会导致意外问题。
 
 使用全局选项 `--version` 查看目录连接器 CLI 的版本。
 {% endhint %}
@@ -231,6 +231,14 @@ bwdc update
 export BITWARDENCLI_CONNECTOR_PLAINTEXT_SECRETS=true
 ```
 
+### 调试 <a href="#debug" id="debug"></a>
+
+可添加调试环境变量，以获取故障排除信息。
+
+```bash
+export BITWARDENCLI_CONNECTOR_DEBUG=true
+```
+
 ### 无法获取本地颁发者证书 <a href="#unable-to-get-local-issuer-certificate" id="unable-to-get-local-issuer-certificate"></a>
 
 如果您收到一条 `unable to get local issuer certificate` 的错误消息，请将 `NODE_EXTRA_CA_CERTS` 变量设置到您的 `root.pem` 中，例如：
@@ -239,4 +247,29 @@ export BITWARDENCLI_CONNECTOR_PLAINTEXT_SECRETS=true
 export NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 ```
 
-如果您使用的是桌面应用程序，可能收到以下错误：`Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.`
+如果您使用的是桌面 App，可能收到以下错误：`Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.`
+
+### 设置私钥失败 <a href="#failing-to-set-private-key" id="failing-to-set-private-key"></a>
+
+如果您在配置私钥时，收到一条  `Object does not exist at path "/org/freedesktop/secrets/collection/login"` 的错误消息，请参阅以下步骤纠正该问题。
+
+Bitwarden 目录连接器使用 Linux 密钥环，请检查是否已安装以下依赖项：
+
+```bash
+sudo apt install dbus-x11 gnome-keyring
+```
+
+接下来，运行以下命令启动守护进程：
+
+```bash
+export $(dbus-launch)
+dbus-launch
+gnome-keyring-daemon --start --daemonize --components=secrets
+echo '<RANDOM-PASSPHRASE>' | gnome-keyring-daemon -r -d --unlock
+```
+
+执行这些命令后，尝试再次运行密钥，例如:
+
+```bash
+bwdc config gsuite.key /path/to/key/
+```

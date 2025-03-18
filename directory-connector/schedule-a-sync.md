@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/schedule-directory-sync/)
 {% endhint %}
 
-对于使用目录连接器 CLI 的组织，作为使用桌面应用程序**间隔**设置的替代方案，可以在定义的时间间隔内调度自动同步。这在无头环境或桌面应用程序不能在后台运行的情况下特别有用。
+对于使用目录连接器 CLI 的组织，可以根据定义的时间间隔安排自动同步，以替代使用桌面 App 的**间隔**设置。这在无头环境或桌面应用程序不能在后台运行的情况下特别有用。
 
 要调度同步，请在类 Unix 环境（包括 Linux 和 MacOS）中使用 **Cron**，在 Windows 环境中使用**任务计划程序**：
 
@@ -79,6 +79,17 @@ BITWARDENCLI_CONNECTOR_APPDATA_DIR="./instance-2" bwdc sync
 ### 设置同步脚本 <a href="#setup-a-sync-script" id="setup-a-sync-script"></a>
 
 为了避免会话超时，您需要创建一个脚本以作为任务计划程序操作运行。此脚本应安全地读取您的 `client_secret` 以完成登录，然后运行 `bwdc sync` 命令并将输出写入 `bwdc.log` 文件。
+
+{% hint style="success" %}
+需要从多个目录同步吗？在同步脚本中，您可以指定多个文件夹，每个文件夹都必须包含一个带有目录同步设置的 `data.json` 文件。
+
+然后，您可以通过执行多个 `bwdc sync` 操作来指定要同步的每个目录，例如：
+
+```shell
+BITWARDENCLI_CONNECTOR_APPDATA_DIR="./instance-1" bwdc sync
+BITWARDENCLI_CONNECTOR_APPDATA_DIR="./instance-2" bwdc sync
+```
+{% endhint %}
 
 ### 创建一个任务
 

@@ -66,7 +66,7 @@
 
 完成以下步骤以配置目录连接器使用您的 Azure Active Directory。如果尚未准备好，请执行适当的 [Azure AD 设置](sync-with-microsoft-entra-id.md#azure-ad-setup)步骤，然后继续：
 
-1. 打开目录连接器[桌面版应用程序](../../../directory-connector/directory-connector-desktop-app.md)。
+1. 打开目录连接器[桌面 App](../../../directory-connector/directory-connector-desktop-app.md)。
 2. 导航到 **Setting** 标签页。
 3. 从 **Type** 下拉列表中选择 **Azure Active Directory**。\
    此部分中的可用字段将根据您选择的类型而变化。
@@ -80,13 +80,13 @@
 
 完成以下步骤以配置当使用目录连接器同步时要使用的设置：
 
-1. 打开目录连接器[桌面版应用程序](../../../directory-connector/directory-connector-desktop-app.md)。
+1. 打开目录连接器[桌面 App](../../../directory-connector/directory-connector-desktop-app.md)。
 2. 导航到 **Setting** 标签页。
 3. 在 **Sync** 部分，根据需要配置如下选项：
 
-<table><thead><tr><th width="332.75477397414636">选项</th><th>描述</th></tr></thead><tbody><tr><td>Interval</td><td>自动同步检查的时间间隔（分钟为单位）。</td></tr><tr><td>Remove disabled users during sync</td><td>选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。</td></tr><tr><td>Overwrite existing organization users based on current sync settings</td><td>选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。</td></tr><tr><td>Sync Users</td><td><p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p></td></tr><tr><td>User Filter</td><td>参阅<a href="sync-with-microsoft-entra-id.md#specify-sync-filters">指定同步筛选器</a>。</td></tr><tr><td>Sync Groups</td><td><p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p></td></tr><tr><td>Group Filter</td><td>参阅<a href="sync-with-microsoft-entra-id.md#specify-sync-filters">指定同步筛选器</a>。</td></tr></tbody></table>
+<table><thead><tr><th width="332.75477397414636">选项</th><th>描述</th></tr></thead><tbody><tr><td>Interval</td><td>自动同步检查的时间间隔（分钟为单位）。</td></tr><tr><td>Remove disabled users during sync</td><td>选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。</td></tr><tr><td>Overwrite existing organization users based on current sync settings</td><td>选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。</td></tr><tr><td>More than 2000 users or groups are expected to sync</td><td>如果预计同步 2000 个以上用户或群组，请选中此框。如果不勾选此框，目录连接器会将同步限制在 2000 个用户或群组。</td></tr><tr><td>Sync Users</td><td><p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p></td></tr><tr><td>User Filter</td><td>参阅<a href="sync-with-microsoft-entra-id.md#specify-sync-filters">指定同步筛选器</a>。</td></tr><tr><td>Sync Groups</td><td><p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p></td></tr><tr><td>Group Filter</td><td>参阅<a href="sync-with-microsoft-entra-id.md#specify-sync-filters">指定同步筛选器</a>。</td></tr></tbody></table>
 
-## 指定同步筛选器 <a href="#specify-sync-filters" id="specify-sync-filters"></a>
+### 指定同步筛选器 <a href="#specify-sync-filters" id="specify-sync-filters"></a>
 
 使用逗号分隔的列表可根据用户电子邮箱、群组名称或群组成员资格在同步中包含或排除：
 
@@ -164,7 +164,7 @@ excludeadministrativeunit:7ckcq6e5-d733-4b96-be17-5bad81fe679d
 
 配置并测试[同步选项](../../../directory-connector/sync-with-active-directory-or-ldap.md#configure-sync-options)和[筛选器](../../../directory-connector/sync-with-active-directory-or-ldap.md#specify-sync-filters)后，就可以开始同步了。完成以下步骤以使用目录连接器启动自动同步：
 
-1. 打开目录连接器[桌面版应用程序](../../../directory-connector/directory-connector-desktop-app.md)。
+1. 打开目录连接器[桌面 App](../../../directory-connector/directory-connector-desktop-app.md)。
 2. 导航到 **Dashboard** 标签页。
 3. 在 **Sync** 部分选择 **Start Now** 按钮。\
    或者你可以选择 **Sync Now** 按钮以运行一次性手动同步。
@@ -172,3 +172,9 @@ excludeadministrativeunit:7ckcq6e5-d733-4b96-be17-5bad81fe679d
 目录连接器将根据配置的[同步选项](../../../directory-connector/sync-with-active-directory-or-ldap.md#configure-sync-options)和[筛选器](../../../directory-connector/sync-with-active-directory-or-ldap.md#specify-sync-filters)开始轮询目录。
 
 如果您退出或关闭了目录连接器，自动同步将停止。最小化或隐藏此程序到系统托盘，以保持后台运行。
+
+{% hint style="info" %}
+如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations) 计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
+
+**该计划已不再提供购买**。此错误不适用于团队计划。
+{% endhint %}

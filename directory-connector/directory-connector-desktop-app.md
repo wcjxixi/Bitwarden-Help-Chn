@@ -33,11 +33,11 @@
 
 4、在 **⚙️Setting** 选项卡上，连接到您的目录并配置[同步选项](sync-options-and-filters.md)。此过程基于所使用的目录而有所不同，请参阅以下文章之一以获取说明：
 
-* [与 AD 或 LDAP 同步](sync-with-active-directory-or-ldap.md)
-* [与 Azure AD 同步](../admin-console/user-management/directory-connector/sync-with-microsoft-entra-id.md)
-* [与 G Suite（Google）同步](sync-with-google-workspace.md)
-* [与 Okta 同步](sync-with-okta.md)
-* [与 OneLogin 同步](sync-with-onelogin.md)
+* [使用 AD 或 LDAP 同步](sync-with-active-directory-or-ldap.md)
+* [使用 Microsoft Entra ID 同步](../admin-console/user-management/directory-connector/sync-with-microsoft-entra-id.md)
+* [使用 Google Workspace 同步](sync-with-google-workspace.md)
+* [使用 Okta 同步](sync-with-okta.md)
+* [使用 OneLogin 同步](sync-with-onelogin.md)
 
 {% hint style="success" %}
 如果您要重新配置同步选项，而不是第一次设置它们，请导航到 **More** 选项卡然后选择 **Clear Sync Cache** 按钮以防止与之前的同步操作发生潜在冲突（[了解更多](clear-sync-cache.md)）。
