@@ -8,6 +8,10 @@
 
 ## 入门 <a href="#getting-started" id="getting-started"></a>
 
+{% hint style="success" %}
+桌面 App 和 CLI [共享数据库和配置](directory-connector-file-storage.md)，因此不建议在一台机器上**同时**使用。建议使用[桌面 App](directory-connector-desktop-app.md) 完成配置和测试，然后使用 [CLI](directory-connector-cli.md) [调度自动同步](schedule-a-sync.md)到生产组织。
+{% endhint %}
+
 要开始使用 Bitwarden 目录连接器 CLI：
 
 1、从以下链接之一下载 CLI：
@@ -18,14 +22,14 @@
 
 2、解压缩 `.zip` 并将其文件（`bwdc` 和 `keytar.node`）移动到您的  `$PATH` 中的 `/usr/local/bin` 或其他目录。请注意，`keytar.node` **必须**与主 `bwdc` 可执行文件位于同一目录中。
 
-**对于 Linux：**&#x5982;果尚未安装，请使用您的软件包管理器安装 `libsecret`：
+**仅限 Linux**：如果尚未安装，请使用软件包管理器安装 `libsecret`。请注意，Ubuntu 和 Debian 的软件包标题为 `libsecret-1-0`，用户应根据自己的特定发布查找相应的标题：
 
 ```shell
 apt-get install libsecret-1-0
 brew install libsecret
 ```
 
-**对于 Windows：**&#x57;indows 用户可以[将 `bwdc.exe` 添加到当前用户的 `PATH` 中](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)。
+**仅限 Windows：**&#x57;indows 用户可以[将 `bwdc.exe` 添加到当前用户的 `PATH` 中](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)。
 
 3、运行下面的命令来验证 `bwdc` 命令在您的终端上是否可以正常工作：
 
@@ -49,7 +53,11 @@ bwdc --help
 
 7、当正确配置了目录和同步选项，并且 `bwdc test` 产生了预期的结果，请运行 `bwdc sync` 命令以启动实时同步操作。
 
-## 命令参考
+{% hint style="info" %}
+可在 `bdwc` 命令中加入 --pretty 标志，以修改输出结果的可读性。
+{% endhint %}
+
+## 命令参考 <a href="#commands-reference" id="commands-reference"></a>
 
 ### login
 
@@ -129,6 +137,12 @@ bwdc sync
 
 同步的用户和群组将立即在您的 Bitwarden 组织中可用。新增加的用户将收到一封邀请加入您组织的电子邮件。
 
+{% hint style="info" %}
+如果您使用的是[团队入门版](../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations) 计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
+
+**该计划已不再提供购买**。此错误不适用于团队计划。
+{% endhint %}
+
 ### last-sync <a href="#last-sync" id="last-sync"></a>
 
 `last-sync` 命令用于返回上一次对用户或群组执行同步操作的 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) 时间戳。您必须将 `<object>` 指定为 `users` 或 `groups` 才能运行此命令：
@@ -149,17 +163,25 @@ bwdc config <setting> <value>
 
 可用的选项包括：
 
-* `server <server-url>`
-* `directory <directory-type>`
-* `ldap.password <password>`
-* `azure.key <key>`
-* `gsuite.key <key>`
-* `okta.token <token>`
-* `onelogin.secret <secret>`
+| 选项                           | 描述                                                                                        |
+| ---------------------------- | ----------------------------------------------------------------------------------------- |
+| `server <server-url>`        | URL 您自托管的安装的地址（例如 `https://business.bitwarden.com` ）或欧盟服务器（`https://vault.bitwarden.eu`）。 |
+| `directory <directory-type>` | 使用目录的类型。请参阅以下表格以获取枚举值。                                                                    |
+| `ldap.password <password>`   | 用于连接到 LDAP 服务器的密码。                                                                        |
+| `azure.key <key>`            | Azure AD 密钥。                                                                              |
+| `gsuite.key <key>`           | Google Workspace/GSuite 私钥。                                                               |
+| `okta.token <token>`         | Okta 令牌。                                                                                  |
+| `onelogin.secret <secret>`   | OneLogin 客户端密钥。                                                                           |
 
-{% hint style="success" %}
-`ldap.password`、`azure.key`、`gsuite.key`、`okta.token` 以及 `onelogin.secret` **只能**使用 CLI 的 bwdc 命令修改，或者使用[桌面版应用程序](directory-connector-desktop-app.md)。
-{% endhint %}
+#### **`directory-type`** 值 <a href="#directory-type-values" id="directory-type-values"></a>
+
+| 源目录                     | 值 |
+| ----------------------- | - |
+| Active Directory/LDAP   | 0 |
+| Azure Active Directory  | 1 |
+| Google Workspace/GSuite | 2 |
+| Okta                    | 3 |
+| OneLogin                | 4 |
 
 ### data-file <a href="#data-file" id="data-file"></a>
 

@@ -48,13 +48,13 @@
 
 Bitwarden 商业计划旨在满足小型团队、成长型公司和大型企业的存储和共享需求：
 
-### ~~入门版团队组织~~ <a href="#teams-starter-organizations" id="teams-starter-organizations"></a>
+### ~~团队入门版组织~~ <a href="#teams-starter-organizations" id="teams-starter-organizations"></a>
 
-~~Teams Starter 组织包含了所有注册用户的所有高级功能、Teams Starter 组织内无限制的安全数据共享，以及一套业务工具，如事件日志和用于组织管理的 API。~~
+~~团队入门版组织包含了所有注册用户的所有高级功能、组织内无限制的安全数据共享，以及一套业务工具，如事件日志和用于组织管理的 API。~~
 
-~~Teams Starter 组织可以将~~ [~~Secrets Manager~~](../../secrets-manager/secrets-manager-overview.md) ~~添加到其产品组合中，但需~~[~~支付额外费用~~](../secrets-manager/secrets-manager-plans.md)~~。~~
+~~团队入门版组织可以将~~ [~~Secrets Manager~~](../../secrets-manager/secrets-manager-overview.md) ~~添加到其产品组合中，但需~~[~~支付额外费用~~](../secrets-manager/secrets-manager-plans.md)~~。~~
 
-~~Teams Starter 组织按照 $20/月共计 10 名成员的统一费率计费。当您的业务发展到 11 名或更多成员时，您可以~~[~~联系我们~~](https://bitwarden.com/contact/)~~更新到标准的~~ [~~Teams~~](about-bitwarden-plans.md#teams-organizations) ~~或~~ [~~Enterprise~~](about-bitwarden-plans.md#enterprise-organizations) ~~组织。~~
+~~团队入门版组织按照 $20/月共计 10 名成员的统一费率计费。当您的业务发展到 11 名或更多成员时，您可以~~[~~联系我们~~](https://bitwarden.com/contact/)~~更新到标准的~~ [~~Teams~~](about-bitwarden-plans.md#teams-organizations) ~~或~~ [~~Enterprise~~](about-bitwarden-plans.md#enterprise-organizations) ~~组织。~~
 
 ### 团队组织 <a href="#teams-organizations" id="teams-organizations"></a>
 
