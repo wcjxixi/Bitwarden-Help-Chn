@@ -12,11 +12,11 @@
 
 让新员工快速上手并投入使用可以提高生产力。同样，适当的告别也能保证您企业系统和账户的安全。无论您的企业倾向于整合和集中化，还是更喜欢灵活和动态的环境，Bitwarden 都能满足您的需求。
 
-本指南涵盖了 Bitwarden 为你的组织中的用户提供的入职和继任计划的方法，从我们对用户和组织之间的关系的方法开始，然后涵盖了入职和离职的最简单的用例，最后转向你可以支配的杠杆和选项，使 Bitwarden 符合你的需求。
+本指南涵盖了 Bitwarden 为您的组织中的用户提供的入职和继任计划的方法，从我们对用户和组织之间的关系的方法开始，然后涵盖了入职和离职的最简单的用例，最后转向您可以支配的杠杆和选项，使 Bitwarden 符合您的需求。
 
 ## Bitwarden 理念 <a href="#the-bitwarden-approach" id="the-bitwarden-approach"></a>
 
-Bitwarden 的愿景是想象一个没有人被黑客入侵的世界。我们将这一使命贯彻到我们的使命中，即帮助个人和公司轻松、安全地管理他们的敏感信息。 Bitwarden 认为：
+Bitwarden 的愿景是想象一个没有人被黑客入侵的世界。我们将这一使命贯彻到我们的使命中，即帮助个人和公司轻松、安全地管理他们的敏感信息。Bitwarden 认为：
 
 * 针对个人的基本密码管理可以而且应该是**免费**的。我们提供的就是这样，为个人提供[基本的免费账户](../plans-and-pricing/password-manager/about-bitwarden-plans.md#free-individual)。
 * 个人和家庭应使用 [TOTP、紧急访问和其他支持的安全功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)，以在安全方面发挥积极作用。
@@ -28,7 +28,7 @@ Bitwarden 的愿景是想象一个没有人被黑客入侵的世界。我们将�
 
 Bitwarden 的一个关键方面是，与许多软件应用程序不同，每个密码库中的所有内容都是[端到端加密](../security/encryption.md)的。为了保持这种安全模式，每个使用 Bitwarden 的人都必须有一个唯一的账户和一个唯一的[主密码](../your-vault/your-master-password.md)。主密码应该是**强大**和**易记**的。
 
-每一个用户负责他们的主密码。Bitwarden 是一种零知识加密解决方案，这意味着 Bitwarden 的团队以及 Bitwarden 系统本身不知道、无法检索或重置任何主密码。
+每一个用户负责他们的主密码。Bitwarden 是一种零知识加密解决方案，这意味着 Bitwarden 的团队以及 Bitwarden 系统本身不知道、无法获取或重置任何主密码。
 
 {% hint style="success" %}
 Bitwarden 已在 2021 年中期推出一项新的功能，使企业能够重置其组织用户的密码。这不会影响没有连接到启用了此功能的企业组织的个人账户。
@@ -36,7 +36,7 @@ Bitwarden 已在 2021 年中期推出一项新的功能，使企业能够重置�
 
 ### 随处使用 Bitwarden <a href="#use-bitwarden-anywhere" id="use-bitwarden-anywhere"></a>
 
-无处不在的安全意味着无处不在的安全，因此最好的密码管理器提供跨越你所有设备的访问。 Bitwarden 支持[一系列客户端应用程序](https://bitwarden.com/download/)，任何一个都可以连接到我们的云托管服务器或您自己的自托管服务器：
+无所不在的守护，方成就无处不在的安全，因此最好的密码管理器提供跨越您所有设备的访问。Bitwarden 支持[一系列客户端应用程序](https://bitwarden.com/download/)，任何一个都可以连接到我们的云托管服务器或您自己的自托管服务器：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/aONk4rWXWWHtOivPOt58m/e75d2f9876a86d7d9a81b7d9fd7182c3/bitwarden-clients-cloud-server.png?fm=webp&h=203&q=50&w=933" %}
 Bitwarden 客户端/服务器
@@ -44,25 +44,25 @@ Bitwarden 客户端/服务器
 
 ### 用户个人密码库 <a href="#users-personal-vaults" id="users-personal-vaults"></a>
 
-创建 Bitwarden 帐户的任何人都将拥有自己的个人密码库，可以从任何客户端应用程序访问。个人密码库对每个用户都是唯一的，并且只有该用户拥有访问它的钥匙，使用他们的电子邮件地址和主密码的组合。帐户所有者对个人帐户以及存储在其中的个人[密码库项目](../your-vault/vault-items.md)负责。组织[所有者、管理员和经理](../admin-console/user-management/member-roles-and-permissions.md)在设计上无法看到任何其他用户的个人密码库，从而确保某人的个人数据仍然属于他们自己。
+创建 Bitwarden 账户的任何人都将拥有自己的个人密码库，可以从任何客户端应用程序访问。个人密码库对每个用户都是唯一的，并且只有该用户拥有访问它的钥匙，使用他们的电子邮箱地址和主密码的组合。账户所有者对个人账户以及存储在其中的个人[密码库项目](../your-vault/vault-items.md)负责。组织[所有者、管理员和经理](../admin-console/user-management/member-roles-and-permissions.md)在设计上无法看到任何其他用户的个人密码库，从而确保某人的个人数据仍然属于他们自己。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/211wU2Nguupsr80j2vCSRz/d157eca06fe478049a3386cbe5b7ce56/bitwarden-individual-personal-vault.png?fm=webp&h=285&q=50&w=920" %}
 个人了密码库
 {% endembed %}
 
-家庭、团队和企业组织自动为成员单独提供高级功能，如[紧急访问](../security/emergency-access.md)和[加密附件存储](../your-vault/file-attachments.md)，他们可以选择使用。个人密码库仅仅是**个人**的，但个人密码库不支持共享，[组织密码库则可以](onboarding-and-succession.md#bitwarden-organizations)。
+家庭、团队和企业组织自动为成员单独提供高级功能，如[紧急访问](../security/emergency-access.md)和[加密附件存储](../your-vault/file-attachments.md)，他们可以选择性使用。个人密码库仅仅是**个人**的，但个人密码库不支持共享，[组织密码库则可以](onboarding-and-succession.md#bitwarden-organizations)。
 
 {% hint style="success" %}
 **为什么默认提供个人密码库？**
 
-个人密码库是 [Bitwarden 方法](onboarding-and-succession.md#tenets-of-the-bitwarden-approach)的一个重要组成部分。员工每天都会使用一系列的证书，无论是个人的还是职业的，**在一个领域形成的习惯通常会成为另一个领域的习惯**。我们认为，在个人生活中使用适当的安全措施的员工会将这种良好的行为带到他们的职业生活中，从而在此过程中**保护你的业务**。
+个人密码库是 [Bitwarden 理念](onboarding-and-succession.md#the-bitwarden-approach)的一个重要组成部分。员工每天都会使用一系列的凭据，无论是个人的还是职业的，**在一个领域形成的习惯通常会成为另一个领域的习惯**。我们认为，在个人生活中使用适当的安全措施的员工会将这种良好的行为带到他们的职业生活中，从而在此过程中**保护您的业务**。
 
 在这两个领域使用相同的工具有助于更快和更容易地形成这种习惯。企业组织拥有[配置策略](../organizations/enterprise-policies.md)选项，包括禁用个人密码库。
 {% endhint %}
 
 ## Bitwarden 组织 <a href="#bitwarden-organizations" id="bitwarden-organizations"></a>
 
-Bitwarden 组织为你的团队或企业的密码管理添加了一层协作和共享，使您可以安全地共享公共信息，例如办公室的 wifi 密码、在线证书，或共享的公司信用卡等。通过组织进行安全共享既安全又容易。
+Bitwarden 组织为您的团队或企业的密码管理添加了一层协作和共享，使您可以安全地共享公共信息，例如办公室的 wifi 密码、在线凭据，或共享的公司信用卡等。通过组织进行安全共享既安全又容易。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/8wJfYqraeZpZLtfdsVRRF/f0eaf08e43e72d9ea4f728e2de197a1a/bitwarden-organization-collections.png?fm=webp&h=399&q=50&w=926" %}
 组织密码库
@@ -74,11 +74,9 @@ Bitwarden 组织为你的团队或企业的密码管理添加了一层协作和�
 新增组织
 {% endembed %}
 
-创建后，您将进入组织密码库，这里是所有内容共享和组织管理的中心枢纽。启动该组织的人将成为所有者，他们能够完全控制**密码库**，**管理**用户、[集合](onboarding-and-succession.md#collections)、[群组](onboarding-and-succession.md#groups)和[策略](onboarding-and-succession.md#enterprise-policies)、使用一套 Bitwarden **工具**、以及配置组织的**设置**：
-
 创建后，您将进入管理控制台，这里是所有内容共享和组织管理的中心枢纽。启动该组织的人将成为所有者，他们能够完全控制**密码库**，以**管理**用户项目、成员、[集合](onboarding-and-succession.md#collections)和[群组](onboarding-and-succession.md#groups)，以及运行报告和配置[策略](onboarding-and-succession.md#enterprise-policies)等设置：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pgKWi4j94eDV9ehpEeUvw/e7ed54a25b128c60fee92b4281cee633/Screenshot_2024-02-28_at_9.42.12_AM.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?_a=DAJCwlWIZAAB" %}
 管理控制台
 {% endembed %}
 
@@ -124,7 +122,7 @@ Bitwarden 使用了一种企业友好的方法来实现大规模的共享。用�
 
 ### 离职用户 <a href="#offboarding-users" id="offboarding-users"></a>
 
-在 Bitwarden，我们认为共享凭证是高效且安全地完成工作的一个重要方面。我们也认识到，&#x4ECE;_&#x6280;术&#x4E0A;_&#x6765;说，一旦一个凭证被共享，接收者就有可能保留它。出于这个原因，使用适当的[基于角色的访问控制](onboarding-and-succession.md#comprehensive-role-based-access-controls)和[实施策略](onboarding-and-succession.md#enterprise-policies)的安全入职，在促进安全离职方面起着重要作用。
+在 Bitwarden，我们认为共享凭据是高效且安全地完成工作的一个重要方面。我们也认识到，从技术上来说，一旦一个凭据被共享，接收者就有可能保留它。出于这个原因，使用适当的[基于角色的访问控制](onboarding-and-succession.md#comprehensive-role-based-access-controls)和[实施策略](onboarding-and-succession.md#enterprise-policies)的安全入职，在促进安全离职方面起着重要作用。
 
 Bitwarden 提供了多种工具，可用于定制工作流程和加强对继任的控制。下文将介绍一个基本的继任工作流程（不使用这些工具）和一些组织常用的高级继任策略：
 
