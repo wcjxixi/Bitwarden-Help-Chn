@@ -37,12 +37,12 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **域名验证更名**：面向企业组织的「域名验证」已更名为「声明域名」。[了解更多](admin-console/login-with-sso/claimed-domains.md)。
-* 声称账户：当企业组织声称拥有一个域时，任何成员账户中与该域匹配的电子邮件现在都将被该组织声称拥有，允许管理员删除账户。已认领账户还对账户操作有一些其他限制。了解更多。
-* 报告中未分配的项目：未分配给收藏集的组织所有项目现在会列出互动链接，以便在组织保管库健康状况报告中进一步查看。
+* **声明账户**：当企业组织声明一个域名时，具有与此域名匹配的电子邮箱的所有成员账户现在也将被组织声明，允许管理员删除账户。声明账户也有一些账户操作限制。[了解更多](admin-console/user-management/claimed-accounts.md)。
+* **报告中未分配的项目**：未分配给集合的组织拥有的项目现在会列出互动链接，以便在组织密码库健康状况报告中进一步查看。
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
-* 移至 GitHub 容器注册中心：容器镜像已从 Docker Hub 移至 GitHub Container Registry。如果您正在使用不使用 `bitwarden.sh` 或 `bitwarden.ps1` 脚本的方法进行部署，请将镜像引用更新为 GitHub 容器注册表 URL（例如 `ghcr.io/bitwarden/image_name:version`）。
+* **移至 GitHub Container Registry**：容器镜像已从 Docker Hub 移至 GitHub Container Registry。如果您正在使用不使用 `bitwarden.sh` 或 `bitwarden.ps1` 脚本的方法进行部署，请将镜像引用更新为 GitHub Container Registry URL（例如 `ghcr.io/bitwarden/image_name:version`）。
 
 ## 2025.2.1
 
@@ -107,11 +107,11 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 * **更改密码库项目所有者**：在网页 App 上，现在您可以直接从编辑窗口通过将其所有者更改为您所属的任何组织来共享密码库项目。[了解更多](organizations/sharing.md)。
 * **屏蔽浏览器扩展的自动填充**：现在可以专门指示浏览器扩展不允许在某些域名上进行自动填充。[了解更多](password-manager/auto-fill/auto-fill-blocked-uris.md)。
-* **移动版 Bitwarden Send 更新**：移动 App 上的 Bitwarden Send选项已不再支持设置有效期和停用 Send，这与浏览器扩展目前提供的功能一致。在未来的版本中，其他客户端也将停止对这些选项的支持。[了解更多](bitwarden-send/send-lifespan.md)。
+* **移动版 Bitwarden Send 更新**：移动 App 上的 Bitwarden Send 选项已不再支持设置有效期和停用 Send，这与浏览器扩展目前提供的功能一致。在未来的版本中，其他客户端也将停止对这些选项的支持。[了解更多](bitwarden-send/send-lifespan.md)。
 
 ### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
 
-* **重新启动组织订阅**：已终止或失效的 Bitwarden 订阅现在有 7 天的宽限期，用户可以重新激活订阅。了解更多有关[组织续费](plans-and-pricing/organization-renewal.md)的信息。
+* **重启组织订阅**：已终止或失效的 Bitwarden 订阅现在有 7 天的宽限期，用户可以重新激活订阅。了解更多有关[组织续费](plans-and-pricing/organization-renewal.md)的信息。
 
 ## 2025.1.1
 
