@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/domain-verification/)
 {% endhint %}
 
-> **\[译者注]**：从版本 2025.3.0 开始，之前的「域名验证」 (Domain verification) 已改名为「声明域名」 (Claimed domains)
+> **\[译者注]**：从版本 2025.3.0 开始，之前的「域名验证」(Domain verification) 已改名为「声明域名」(Claimed domains)
 
 企业客户可以声明其组织所拥有的域名（如 `mycompany.com`）的所有权。
 
