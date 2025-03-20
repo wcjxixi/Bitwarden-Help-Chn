@@ -22,6 +22,28 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.3.0
+
+此次发布包含：
+
+### 我的账户 <a href="#my-account" id="my-account"></a>
+
+* **新设备验证，新账户宽限期**：新创建的账户在创建后的 24 小时内将不受新设备登录保护。[了解更多](my-account/log-in-and-unlock/new-device-protection.md)。
+
+### Password Manager
+
+* **登录请求横幅通知**：设备登录请求现在会在等待批准时在网页 App 中显示一个横幅通知。[了解更多](your-vault/log-in-with-device.md)有关设备登录的信息。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **域名验证更名**：面向企业组织的「域名验证」已更名为「声明域名」。[了解更多](admin-console/login-with-sso/claimed-domains.md)。
+* 声称账户：当企业组织声称拥有一个域时，任何成员账户中与该域匹配的电子邮件现在都将被该组织声称拥有，允许管理员删除账户。已认领账户还对账户操作有一些其他限制。了解更多。
+* 报告中未分配的项目：未分配给收藏集的组织所有项目现在会列出互动链接，以便在组织保管库健康状况报告中进一步查看。
+
+### 自托管 <a href="#self-hosting" id="self-hosting"></a>
+
+* 移至 GitHub 容器注册中心：容器镜像已从 Docker Hub 移至 GitHub Container Registry。如果您正在使用不使用 `bitwarden.sh` 或 `bitwarden.ps1` 脚本的方法进行部署，请将镜像引用更新为 GitHub 容器注册表 URL（例如 `ghcr.io/bitwarden/image_name:version`）。
+
 ## 2025.2.1
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.2.2、浏览器扩展 2025.2.2、桌面 2025.2.1、CLI 2025.2.0）
@@ -579,7 +601,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 此次发布包含：
 
 * **FIDO2 WebAuthn 现已成为免费的两步登录选项**：用于两步登录的 FIDO2 WebAuthn 方法已扩展到免费账户。现在，所有 Bitwarden 用户都可以使用兼容的 FIDO2 WebAuthn 凭证（如那些与硬件安全钥匙绑定的设备）来提高登录的安全性（参阅[这里](two-step-login/setup-guides/two-step-login-via-fido2-webauthn.md)）。
-* **组织成员电子邮件验证**：当组织成员[接受加入邀请](organizations/user-management.md#accept)时，或如果他们是使用[域验证](admin-console/login-with-sso/domain-verification.md)的组织成员，他们的电子邮件将自动通过验证。
+* **组织成员电子邮件验证**：当组织成员[接受加入邀请](organizations/user-management.md#accept)时，或如果他们是使用[域验证](admin-console/login-with-sso/claimed-domains.md)的组织成员，他们的电子邮件将自动通过验证。
 * **导出更新**：密码库数据的 JSON 导出现在将包括适用项目的密码历史记录（参阅[这里](import-export/export-vault-data.md)）。
 * **CLI 密码生成器选项**：使用 CLI 生成密码时增加了自定义密码复杂度的选项标志（参阅[这里](password-manager/vault-basics/generator.md#cli)）。
 * **ProtonPass JSON 导入器**：ProtonPass JSON 已添加到可用于直接导入 Bitwarden Password Manager 的格式列表中（参阅[这里](import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)）。
@@ -665,7 +687,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-* **域验证**：组织可以验证域（例如 `mycompany.com`）的所有权，允许用户在使用 SSO 登录时跳过组织标识符步骤。参阅[这里](admin-console/login-with-sso/domain-verification.md)。
+* **域验证**：组织可以验证域（例如 `mycompany.com`）的所有权，允许用户在使用 SSO 登录时跳过组织标识符步骤。参阅[这里](admin-console/login-with-sso/claimed-domains.md)。
 * **浏览器扩展 - 改进的自动填充安全性**：浏览器扩展现在不允许在页面加载时自动填充不受信任的 iframe。浏览器扩展还会在手动自动填充、使用上下文菜单或使用键盘快捷键时警告用户有关不受信任的 iframe，并在自动填充 HTTP 站点时警告用户，该站点需要基于该项目的已保存 URI 的 HTTPS。参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
 * **主密码安全性检查**：用户现在可以在创建账户或在网页密码库上更改主密码时通过 Have I Been Pwned 检查已知的数据泄露，以查找他们预期的主密码。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
 * **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 账户和[更改主密码](your-vault/your-master-password.md#change-your-master-password)的任何用户强制执行。

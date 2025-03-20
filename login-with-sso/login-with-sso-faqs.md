@@ -46,7 +46,7 @@ Bitwarden 为企业提供了两种解决方案，允许经过批准的企业成�
 
 ### 问：每次登录时是否都需要输入 SSO 标识符吗？ <a href="#q-do-i-need-to-enter-my-organization-identifier-every-time-i-login" id="q-do-i-need-to-enter-my-organization-identifier-every-time-i-login"></a>
 
-**答：**&#x4E0D;需要！如果您的组织使用[域名验证](../admin-console/login-with-sso/domain-verification.md)，则无需输入此标识符。否则，管理员应分发以下 URL（其中 `{your-sso-identifier}` 是您的组织的 SSO 标识符），以自动将用户重定向到 SSO 登录界面：
+**答：**&#x4E0D;需要！如果您的组织使用[域名验证](../admin-console/login-with-sso/claimed-domains.md)，则无需输入此标识符。否则，管理员应分发以下 URL（其中 `{your-sso-identifier}` 是您的组织的 SSO 标识符），以自动将用户重定向到 SSO 登录界面：
 
 * 对于 US 云托管实例：`https://vault.bitwarden.com/#/sso?identifier={your-sso-identifier}`
 * 对于 EU 云托管实例：`https://vault.bitwarden.eu/#/sso?identifier={your-sso-identifier}`

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/claimed-accounts/)
 {% endhint %}
 
-在即将发布的版本（2025 年第一季度）中，Bitwarden 将为拥有[已验证域名](../login-with-sso/domain-verification.md)的企业组织引入对具有匹配域名的成员账户（例如 `jdoe@mycompany.com`）主张所有权的功能。
+在即将发布的版本（2025 年第一季度）中，Bitwarden 将为拥有[已验证域名](../login-with-sso/claimed-domains.md)的企业组织引入对具有匹配域名的成员账户（例如 `jdoe@mycompany.com`）主张所有权的功能。
 
 被声明的成员账户将在功能上**归组织所有**，这将对账户的工作方式产生一些关键的变化：
 

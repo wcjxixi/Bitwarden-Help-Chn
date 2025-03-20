@@ -43,7 +43,7 @@
 此功能仅适用于[企业组织](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 {% endhint %}
 
-[此处](../admin-console/login-with-sso/domain-verification.md)了解更多有关域名验证的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../admin-console/login-with-sso/claimed-domains.md)了解更多有关域名验证的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:20**：激活域名验证。
 * 01:00：Bitwarden 如何验证域名。

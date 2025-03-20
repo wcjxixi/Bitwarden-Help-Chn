@@ -19,7 +19,7 @@
 
 <img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7xZNW8JqRBbT9BAkTzMIfE/9588c393ada5dee74cca9278e97004c1/Screenshot_2023-03-24_at_9.33.11_AM__2_.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
 
-要了解有关域验证的更多信息，请参阅[这里](../admin-console/login-with-sso/domain-verification.md)。
+要了解有关域验证的更多信息，请参阅[这里](../admin-console/login-with-sso/claimed-domains.md)。
 {% endhint %}
 
 ## 使用 SSO 加入组织 <a href="#join-an-organization-using-sso" id="join-an-organization-using-sso"></a>
