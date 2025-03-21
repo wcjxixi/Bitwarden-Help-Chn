@@ -4,14 +4,15 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/releasenotes/)
 {% endhint %}
 
-Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个绝对要求。访问以下 GitHub 链接查看完整、详细的发行记录：
+Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个绝对要求。请访问以下 GitHub 链接查看完整、详细的发行记录：
 
 * [Server Releases](https://github.com/bitwarden/server/releases)
-* [Web Releases](https://github.com/bitwarden/web/releases)
-* [Desktop Releases](https://github.com/bitwarden/desktop/releases)
-* [Browser Extension Releases](https://github.com/bitwarden/browser/releases)
-* [Mobile Releases](https://github.com/bitwarden/mobile/releases)
-* [CLI Releases](https://github.com/bitwarden/cli/releases)
+* [Web Releases](https://github.com/bitwarden/clients/releases/)
+* [Desktop Releases](https://github.com/bitwarden/clients/releases)
+* [Browser Extension Releases](https://github.com/bitwarden/clients/releases)
+* [Android Releases](https://github.com/bitwarden/android/releases)
+* [iOS Releases](https://github.com/bitwarden/ios/releases)
+* [CLI Releases](https://github.com/bitwarden/clients/releases)
 * [Directory Connector Releases](https://github.com/bitwarden/directory-connector/releases)
 
 ## 发行公告
