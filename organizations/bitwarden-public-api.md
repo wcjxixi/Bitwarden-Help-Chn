@@ -12,18 +12,18 @@ Bitwarden 公共 API 为组织提供了一套用于管理成员、集合、群�
 
 公共 API 是一种 RESTful API，RESTful API 具有可预测的面向资源的 URL，接受 JSON 编码的请求正文，返回 JSON 编码的响应，并使用标准的 HTTP 响应代码、验证和动态词。
 
+> **\[译者注]**：Swagger-UI 是一套 HTML/CSS/JS 框架，用于解析遵守 Swagger 规范的 JSON 或 YAML 文件，展示 swagger-editor 生成的 API 文档，还可以在其中调试 API。它将我们编写的 OpenAPI 规范呈现为交互式的 API 文档，使用浏览器来查看并且操作我们的 RESTful API。
+>
+> [Swagger 官方网站](https://swagger.io/)、[Swagger 介绍 1](https://fallenk.github.io/2018/11/28/Swagger%E7%9A%84%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/)、[Swagger 介绍 2](https://lingmoumou.github.io/p/2020/01/31/631e780c/)、[Swagger UI 介绍](https://bbs.huaweicloud.com/blogs/160304)。
+
 公共 API 与 OpenAPI 规范 (OAS3) 兼容，并发布符合标准的 [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) 定义文件。使用 [Swagger UI](https://swagger.io/tools/swagger-ui/) 探索 OpenAPI 规范：
 
 * 对于公共云托管实例：`https://bitwarden.com/help/api/`
 * 对于自托管实例：`https://your.domain.com/api/docs/`
 
 {% hint style="info" %}
-~~**经典 2019 企业组织**、当前的**企业组织**和当前的**团队组织**均可以访问 Bitwarden 公共 API。更多信息，请参阅~~[~~关于 Bitwarden 计划~~](../plans-and-pricing/password-manager/about-bitwarden-plans.md)~~。~~
+所有企业和团队组织的客户均可访问 Bitwarden 公共 API。更多信息，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 {% endhint %}
-
-> **\[译者注]**：Swagger-UI 是一套 HTML/CSS/JS 框架，用于解析遵守 Swagger 规范的 JSON 或 YAML 文件，展示 swagger-editor 生成的 API 文档，还可以在其中调试 API。它将我们编写的 OpenAPI 规范呈现为交互式的 API 文档，使用浏览器来查看并且操作我们的 RESTful API。
->
-> [Swagger 官方网站](https://swagger.io/)、[Swagger 介绍 1](https://fallenk.github.io/2018/11/28/Swagger%E7%9A%84%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/)、[Swagger 介绍 2](https://lingmoumou.github.io/p/2020/01/31/631e780c/)、[Swagger UI 介绍](https://bbs.huaweicloud.com/blogs/160304)。
 
 ## 端点 <a href="#endpoints" id="endpoints"></a>
 
@@ -126,14 +126,16 @@ Bitwarden 拥有一个公共[状态页面](https://status.bitwarden.com/)，您�
 
 ## 响应代码 <a href="#response-codes" id="response-codes"></a>
 
-| 状态代码                              | 描述                                                                     |
-| --------------------------------- | ---------------------------------------------------------------------- |
-| `200 OK`                          | 一切都按预期进行。                                                              |
-| `400 Bad Request`                 | 该请求不可接受。可能是由于参数丢失或格式错误。                                                |
-| `401 Unauthorized`                | 承载访问令牌丢失、无效或过期。                                                        |
-| `404 Not Found`                   | 所请求的资源不存在。                                                             |
-| `429 Too Many Requests`           | 太多请求太快到达 API。我们建议缩减请求数。                                                |
-| `500, 502, 503, 504 Server Error` | Bitwarden 端出现问题。这些情况很少见，如果发生，请[与我们联系](https://bitwarden.com/contact/)。 |
+Bitwarden 公共 API 使用传统的 HTTP 响应代码来表示 API 请求是成功或失败：
+
+| 状态代码                              | 描述                                                                    |
+| --------------------------------- | --------------------------------------------------------------------- |
+| `200 OK`                          | 一切都按预期进行。                                                             |
+| `400 Bad Request`                 | 该请求不可接受。可能是由于参数丢失或格式错误。                                               |
+| `401 Unauthorized`                | 承载访问令牌丢失、无效或过期。                                                       |
+| `404 Not Found`                   | 所请求的资源不存在。                                                            |
+| `429 Too Many Requests`           | 太多请求太快到达 API。我们建议缩减请求数。                                               |
+| `500, 502, 503, 504 Server Error` | Bitwarden 端出现问题。这些情况很少见，如果发生，请[联系我们](https://bitwarden.com/contact/)。 |
 
 ## 进一步阅读 <a href="#further-reading" id="further-reading"></a>
 
