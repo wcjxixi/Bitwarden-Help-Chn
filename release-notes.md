@@ -33,17 +33,17 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **登录请求横幅通知**：设备登录请求现在会在等待批准时在网页 App 中显示一个横幅通知。[了解更多](your-vault/log-in-with-device.md)有关设备登录的信息。
+* **登录请求横幅通知**：设备登录请求现在会在等待批准期间在网页 App 中显示一个横幅通知。[了解更多](your-vault/log-in-with-device.md)有关设备登录的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **域名验证更名**：面向企业组织的「域名验证」已更名为「声明域名」。[了解更多](admin-console/login-with-sso/claimed-domains.md)。
-* **声明账户**：当企业组织声明一个域名时，具有与此域名匹配的电子邮箱的所有成员账户现在也将被组织声明，允许管理员删除账户。声明账户也有一些账户操作限制。[了解更多](admin-console/user-management/claimed-accounts.md)。
-* **报告中未分配的项目**：未分配给集合的组织拥有的项目现在会列出互动链接，以便在组织密码库健康状况报告中进一步查看。
+* **声明账户**：当企业组织声明一个域名时，具有与此域名匹配的电子邮箱的所有成员账户现在也将被组织声明，允许管理员删除账户。被声明的账户还有一些其他账户操作限制。[了解更多](admin-console/user-management/claimed-accounts.md)。
+* **报告中未分配的项目**：组织拥有的未分配给集合的项目现在会列出互动链接，以便在组织密码库健康状况报告中进一步查看。
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
-* **移至 GitHub Container Registry**：容器镜像已从 Docker Hub 移至 GitHub Container Registry。如果您正在使用不使用 `bitwarden.sh` 或 `bitwarden.ps1` 脚本的方法进行部署，请将镜像引用更新为 GitHub Container Registry URL（例如 `ghcr.io/bitwarden/image_name:version`）。
+* **移至 GitHub Container Registry**：容器镜像已从 Docker Hub 移至 GitHub Container Registry。如果您正在使用非 `bitwarden.sh` 或 `bitwarden.ps1` 脚本方法进行部署，请将镜像引用更新为 GitHub Container Registry URL（例如 `ghcr.io/bitwarden/image_name:version`）。
 
 ## 2025.2.1
 
