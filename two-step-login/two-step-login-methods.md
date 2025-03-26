@@ -47,7 +47,7 @@ Bitwarden 提供多种免费的两步登录方式，包括：
 
 ## 使用多个方式 <a href="#using-multiple-methods" id="using-multiple-methods"></a>
 
-您可以选择启用多个两步登录方式。当您使用多个已启用的方式登录到 Bitwarden 时，将按照以下优先顺序提示您使用最高优先级的两步登录方式：
+您可以选择启用多个两步登录方式。当您使用多个已启用的方式登录 Bitwarden 时，将按照以下优先顺序提示您使用最高优先级的两步登录方式：
 
 1. Duo（组织）
 2. FIDO2 WebAuthn

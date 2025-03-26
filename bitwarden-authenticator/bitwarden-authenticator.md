@@ -42,7 +42,7 @@ Bitwarden iOS Authenticator App
 * 更改代码的**位数**。Bitwarden Authenticator 默认使用 6 位数字。
 
 {% hint style="info" %}
-**算法**、**刷新周期**和**位数**由您使用验证码的网站决定。除非该网站要求或允许您自定义验证码行为，否则请勿更改项目的这些设置。
+**算法**、**刷新周期**和**位数**由您使用验证码的网站决定。除非该网站要求或允许您自定义验证码行为，否则请勿更改这些设置项目。
 {% endhint %}
 
 ## 使用代码 <a href="#use-codes" id="use-codes"></a>

@@ -20,7 +20,7 @@
 所有通过 Bitwarden 设置的新 FIDO 密钥都会注册为 WebAuthn 密钥。如果您已注册的 FIDO 密钥在网页 App 的两步登录 → 管理 FIDO2 WebAuthn 视图中被标记为（**迁移自 FIDO**），则说明该密钥为 U2F 密钥，应将其删除并重新注册，以便自动将该密钥设置为 WebAuthn 密钥。Bitwarden 将于 2025 年开始逐步停止对（**迁移自 FIDO**）U2F 密钥的支持。
 {% endhint %}
 
-FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想使用不支持它的版本，请确保您开启了其他两步登录方法。支持的应用程序包括：
+FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用不支持 FIDO2 WebAuthn 的应用程序版本，请确保您开启了其他两步登录方式。支持的应用程序包括：
 
 * 具有[支持 FIDO2](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/) 的浏览器的设备上的**网页密码库**
 * [支持 FIDO2](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/) 的浏览器上的**浏览器扩展**
@@ -45,7 +45,7 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想使用不
 两步登录
 {% endembed %}
 
-3、定位到 **通行密钥**选项然后选择**管理**按钮：
+3、定位到**通行密钥**选项然后选择**管理**按钮：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5GqQynIX94PhzJQ0tVW1aE/5dcea8d04c8a543daa7f96989f220756/2024-12-02_10-55-22.png?_a=DAJCwlWIZAAB" %}
 两步登录提供程序
@@ -58,10 +58,10 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想使用不
 5、将安全密钥插入设备的 USB 端口，然后选择**读取密钥**。如果安全密钥具有按钮，请触摸它。
 
 {% hint style="info" %}
-某些设备（包括支持密钥的 Windows Hello 或 macOS 设备）是原生 FIDO2 身份验证器，它们将默认提供这些选项。如果您想注册安全密钥或其他验证器，您可能需要选择**尝试另一种方式**、**其他选项**或**取消**按钮以打开其他选项。
+某些设备（包括支持通行密钥的 Windows Hello 或 macOS 设备）是原生 FIDO2 身份验证器，它们将默认提供这些选项。如果您想注册安全密钥或其他验证器，您可能需要选择**尝试另一种方式**、**其他选项**或**取消**按钮以打开其他选项。
 {% endhint %}
 
-6、选择**保存**按钮。一个绿色的 `已启用` 消息表明已成功启用了 FIDO2 WebAuthn 方式的两步登录，并且您的密钥旁将显示绿色的勾号 **✔️**。
+6、选择**保存**按钮。一个绿色的 `已启用` 消息表明已成功启用了 FIDO2 WebAuthn 方式的两步登录，并且您的密钥旁边将显示绿色的勾号 **✔️**。
 
 7、选择**关闭**按钮，并确认 **FIDO2 WebAuthn** 选项现在已启用（通过一个绿色的勾号 **✔️** 指示）。
 

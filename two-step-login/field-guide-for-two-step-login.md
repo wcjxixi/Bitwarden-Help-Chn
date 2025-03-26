@@ -6,9 +6,9 @@
 
 ## 什么是两步登录？ <a href="#what-is-two-step-login" id="what-is-two-step-login"></a>
 
-两步登录（也称为双因素身份验证或 2FA）是网站和 App 常用的一种安全技术，用于保护您的敏感数据。使用两步登录的网站会要求您除了输入用户名和密码外，还要输入一个额外的「令牌」（也称为验证码或一次性密码 (OTP)）来验证您的身份，该令牌通常从不同的设备上获取。
+两步登录（也称为双重身份验证或 2FA）是网站和 App 常用的一种安全技术，用于保护您的敏感数据。使用两步登录的网站会要求您除了输入用户名和密码外，还要输入一个额外的「令牌」（也称为验证码或一次性密码 (OTP)）来验证您的身份，该令牌通常从不同的设备上获取。
 
-如果他们无法从您的辅助设备上访问令牌，恶意行为者即使知道了您的用户名和密码，他们也无法访问网站：
+如果没有辅助设备令牌的物理访问权限，恶意行为者即使知道了您的用户名和密码，他们也无法访问网站：
 
 {% embed url="https://bitwarden.com/_gatsby/image/c94b8d98db4e25b087c13ae5b3380ffe/df3d74ff52a7f409cfdddc70d8d1be60/fg-1.webp?eu=db8f50e1b29dfcd60739a3d06c716469b43f50a3a85430823860edfd47a196d020f44d5721c072e57d6d52dad3e340ec66cf2d611abad0de96ba4bf0ef61a20152d250b623f730445b34dba7eda451102bd8491cf7d28b4bf62931cabbe6f36f1e124278ee20b9d7e4f47263af855a34b6f6ee5c6da7fd1085153852a24b16f864d893c16116e79fb819ecb3baad0dc5c8e67f0e408ef73773244a4c5ae82cbfa5e75025267f174634d0ef0690&a=w%3D850%26h%3D478%26fm%3Dwebp%26q%3D75&cd=2023-09-26T13%3A34%3A24.243Z" %}
 基本两步登录流程
@@ -16,7 +16,7 @@
 
 通常，拥有敏感数据（例如您的网上银行账户）的网站或 App会尝试在登录界面之外通过以下方式验证您的身份：
 
-* 将包含令牌的 SMS/文本信息发送到移动设备上
+* 将包含令牌的 SMS / 文本信息发送到移动设备上
 * 要求提供由移动设备上的验证器 App（例如 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md)）生成的令牌
 * 从物理安全钥匙（例如 YubiKey）中查找令牌
 
@@ -61,7 +61,7 @@ Bitwarden 为免费账户提供了好几种两步登录方式，包括：
 
 ## 保护重要的网站 <a href="#securing-important-websites" id="securing-important-websites"></a>
 
-Bitwarden 可能不是你使用的唯一一个具有两步登录选项的网站或应用，两步登录选项对于存储敏感信息（例如，信用卡或银行账号）的网站特别有用。可以在大多数具有两步登录选项的网站的**设置**、**安全**或**隐私**菜单中找到它。
+Bitwarden 可能不是您使用的唯一一个具有两步登录选项的网站或 App，两步登录选项对于存储敏感信息（例如，信用卡或银行账号）的网站特别有用。大多数网站的两步登录选项都位于**设置**、**安全**或**隐私**菜单中。
 
 激活两步登录时，通常会打开一个二维码，比如 Reddit 的这个：
 
@@ -75,7 +75,7 @@ TOTP 令牌
 
 ### 使用 Bitwarden Authenticator <a href="#use-bitwarden-authenticator" id="use-bitwarden-authenticator"></a>
 
-Bitwarden Authenticator 是一款移动身份验证 App，您可以用它在使用双因素身份验证 (2FA) 的网站和 App 上验证您的身份。Bitwarden Authenticator 可从 iOS App Store 和 Google Play Store 下载。
+Bitwarden Authenticator 是一款移动身份验证 App，您可以用它在使用双因素身份验证 (2FA) 的网站和 App 上验证您的身份。Bitwarden Authenticator 可以从 iOS App Store 和 Google Play Store 下载。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5WsEwCqHd3BmAKTGdhXpQZ/bc84335eeb3655916781b1dd7cd4f4f1/fg-5.png?_a=DAJCwlWIZAAB" %}
 使用 Bitwarden Authenticator 进行两步登录
@@ -95,18 +95,18 @@ Bitwarden Authenticator 是一款移动身份验证 App，您可以用它在使�
 
 ### 什么时候我应该使用独立的 App 而不是集成的验证器？
 
-只有独立 App 允许您为自己的 Bitwarden 账户设置 2FA，但您可以使用其中任何一款 App 为您的所有其他账户存储和生成验证码。目前只有集成验证器允许您在团队成员之间共享生成令牌。它们可以一起使用，也可以分开使用，这取决于您的安全偏好。
+只有独立 App 允许您为自己的 Bitwarden 账户设置 2FA，但您可以使用其中任何一款 App 为您的所有其他账户存储和生成验证码。目前只有集成验证器允许您在团队成员之间共享生成的令牌。它们可以一起使用，也可以分开使用，这取决于您的安全偏好。
 
-## 2FA 安全钥匙和通行密钥 <a href="#id-2fa-security-keys-and-passkeys" id="id-2fa-security-keys-and-passkeys"></a>
+## 2FA 安全密钥和通行密钥 <a href="#id-2fa-security-keys-and-passkeys" id="id-2fa-security-keys-and-passkeys"></a>
 
-FIDO2 安全钥匙是一种流行且安全的选项，用于将 2FA 添加到您的 Bitwarden 账户。如果您还不熟悉 FIDO2 安全钥匙，请[访问 FIDO 联盟网站](https://fidoalliance.org/fido2/)，了解有关 FIDO2 的更多信息。
+FIDO2 安全密钥是一种流行且安全的选项，用于将 2FA 添加到您的 Bitwarden 账户。如果您还不熟悉 FIDO2 安全密钥，请[访问 FIDO 联盟网站](https://fidoalliance.org/fido2/)，了解有关 FIDO2 的更多信息。
 
-YubiKey 设备是一种与 FIDO 身份验证协议配合使用的安全钥匙，并且可以有多种用例。其中两种用途是作为 2FA 安全钥匙或[通行密钥](https://bitwarden.com/blog/what-are-passkeys-and-passkey-login/)。
+YubiKey 设备是一种与 FIDO 身份验证协议配合使用的安全密钥，并且可以有多种用例。其中两种用途是作为 2FA 安全钥匙或[通行密钥](https://bitwarden.com/blog/what-are-passkeys-and-passkey-login/)。
 
-* **2FA 安全钥匙**：使用 YubiKey 作为 2FA 安全钥匙将充当身份验证过程中的附加设备。这将伴随另一种主要的身份验证方法（例如主密码）。YubiKey 安全钥匙必须物理插入才能提供身份验证凭据。
-* **通行密钥**：通行密钥是一对加密密钥或公私加密密钥，用于验证登录。使用单一通行密钥，而不是创建用户名、密码并向账户添加 2FA。在创建通行密钥期间，YubiKey 能够作为通行密钥生成器来创建通行密钥登录所需的公钥和私钥。在[此处](https://www.yubico.com/resources/glossary/what-is-a-passkey/)了解有关使用 YubiKey 作为通行密钥的更多信息。
+* **2FA 安全密钥**：使用 YubiKey 作为 2FA 安全密钥将充当身份验证过程中的附加设备。这将伴随另一种主要的身份验证方法（例如主密码）。YubiKey 安全密钥必须物理插入才能提供身份验证凭据。
+* **通行密钥**：通行密钥是一对加密密钥或公私加密密钥，用于验证登录。使用单一通行密钥，可以替代创建用户名、密码并向账户添加 2FA。在创建通行密钥期间，YubiKey 能够作为通行密钥生成器来创建通行密钥登录所需的公钥和私钥。在[此处](https://www.yubico.com/resources/glossary/what-is-a-passkey/)了解有关更多使用 YubiKey 作为通行密钥的信息。
 
-对于 Bitwarden，YubiKey 设备等安全钥匙的主要用途是提供 2FA 身份验证。
+对于 Bitwarden，YubiKey 设备等安全密钥的主要用途是提供 2FA 身份验证。
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
