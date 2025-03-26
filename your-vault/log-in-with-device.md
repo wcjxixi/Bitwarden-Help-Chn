@@ -103,7 +103,7 @@
 如果请求未被批准或被拒绝，则请求将在 15 分钟后过期。如果您没有收到登录请求或正在使用 F-Droid，请尝试从移动 App [手动同步您的密码库](syncing-your-vault.md)。
 
 {% hint style="info" %}
-如果您使用**设备登录**选项，您仍然需要使用任何当前有效的[两步登录方法](../two-step-login/two-step-login-methods.md)。
+如果您使用**设备登录**选项，您仍然需要使用任何当前有效的[两步登录方式](../two-step-login/two-step-login-methods.md)。
 {% endhint %}
 
 ## 工作原理 <a href="#how-it-works" id="how-it-works"></a>
