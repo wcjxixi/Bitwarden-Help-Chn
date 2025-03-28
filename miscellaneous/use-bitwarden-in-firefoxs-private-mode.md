@@ -1,7 +1,7 @@
 # 在 Firefox 隐私窗口中使用 Bitwarden
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/extension-wont-load-in-private-mode/)
+对应的[官方文档地址](https://bitwarden.com/help/private-mode/)
 {% endhint %}
 
 ## 允许隐私窗口 <a href="#allow-private-windows" id="allow-private-windows"></a>
