@@ -24,9 +24,9 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 2. 选择要创建的项目类型（本例中选择**文件夹**）。
 3. 给您的新文件夹起个名字（例如 `Social Media`），然后选择**保存**。
 
-### 添加一个登录项目 <a href="#add-a-login" id="add-a-login"></a>
+### 添加一个登录 <a href="#add-a-login" id="add-a-login"></a>
 
-现在，让我们添加一个登录项目到您的新文件夹中。要创建新的登录项目：
+现在，让我们添加一个登录到您的新文件夹中。要创建新的登录：
 
 1、导航到 **🔒密码库**选项卡，然后选择 ✚**添加**图标。
 
@@ -46,7 +46,7 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 ### 生成一个强密码 <a href="#generate-a-strong-password" id="generate-a-strong-password"></a>
 
-现在，您已经保存了一个新的登录项目，让我们使用一个强密码替换您的密码来提高它的安全性：
+现在，您已经保存了一个新的登录，让我们使用一个强密码替换您的密码来提高它的安全性：
 
 1、在您的网页浏览器中，使用您现有的用户名和密码登录到此账户。我们将用一个更强的密码替换现有密码，但这也是练习自动填充的好机会！
 
@@ -58,15 +58,11 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 2、登录后，找到可以更改密码的地方。
 
-3、在网站的更改密码表单中输入您的**当前密码**，您可以从 Bitwarden 使用 **❐复制**图标来复制并粘贴该密码：
+3、在网站的更改密码表单中，输入您的**当前密码**，您可以从 Bitwarden 使用 **❐复制**图标来复制并粘贴该密码：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/40l7cU1a0jzaTNUJXd5jPD/79406c7da76e692a92d06f5aeb0501c0/2024-12-02_14-01-44.png?_a=DAJCwlWIZAAB" %}
 复制密码
 {% endembed %}
-
-在**更改密码**页面，输入您的**当前密码**，您可以从 Bitwarden 使用 **❐复制**图标来复制并粘贴该密码。
-
-3、返回到 Bitwarden，选择此登录项目然后选择**编辑**按钮**️**。
 
 4、填入旧密码后，在 Bitwarden 中打开登录项目并选择**编辑**。
 
@@ -76,7 +72,7 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 7、复制您的新密码并将其粘贴到网站上的**新密码**和**确认密码**字段中。
 
-恭喜！您的登录项目现已安全且易于使用地保存在 Bitwarden 中了！
+恭喜！您的登录现已安全且易于使用地保存在 Bitwarden 中了！
 
 ## 添加第二个账户 <a href="#add-a-second-account" id="add-a-second-account"></a>
 
@@ -127,15 +123,15 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 * 具有该 [URI](../auto-fill/using-uris.md) 的项目不在您的密码库中。
 * 具有该 [URI](../auto-fill/using-uris.md) 的项目在您的密码库中，但具有不同的用户名或密码。
 
-当您看到此横幅时，选择**保存**以使用用户名、密码和 URI 添加新的登录项目，或更新现有项目。如果是新项目，还可以选择**选择文件夹...**，或在保存前**编辑**此项目：
+当您看到此横幅时，选择**保存**以使用用户名、密码和 URI 添加新的登录项目，或更新现有登录项目。如果是新项目，还可以选择**选择文件夹...**，或在保存前**编辑**此项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7GnwQ6UKY6er7PpCWj6xn0/3c4804ffe63521cc5c48394d0f9624d6/2024-12-02_14-08-47.png?_a=DAJCwlWIZAAB" %}
 添加登录
 {% endembed %}
 
-如果您是使用[移除个人密码库策略](../organizations/enterprise-policies.md#remove-individual-vault)的组织的成员，选择**保存**将带您进入一个屏幕，您可以在其中选择要将其添加到的[集合](../organizations/collections.md)。
+如果您是使用[禁用个人密码库策略](../organizations/enterprise-policies.md#remove-individual-vault)的组织的成员，选择**保存**将带您进入一个屏幕，您可以在其中选择要将其添加到的[集合](../organizations/collections.md)。
 
-如果不想看到这些横幅，请打开浏览器扩展的 **⚙️设置**选项卡，选择**通知**，然后取消选中**询问添加登录**和 **询问更新现有登录**复选框。
+如果不想看到这些横幅，请打开浏览器扩展的 **⚙️设置**选项卡，选择**通知**，然后取消选中**询问添加登录**和**询问更新现有登录**复选框。
 
 {% hint style="success" %}
 您知道使用 Bitwarden 浏览器扩展可以保存和自动填充通行密钥吗？[了解更多](../password-manager/vault-basics/storing-passkeys.md)关于通行密钥的信息。

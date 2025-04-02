@@ -24,7 +24,7 @@
       * [两步登录 - 电子邮箱](two-step-login/setup-guides/two-step-login-via-email.md)
       * [两步登录 - Duo](two-step-login/setup-guides/two-step-login-via-duo.md)
       * [两步登录 - YubiKey](two-step-login/setup-guides/two-step-login-via-yubikey.md)
-      * [两步登录 - FIDO2 WebAuthn 通行密钥](two-step-login/setup-guides/two-step-login-via-fido2-webauthn.md)
+      * [两步登录 - 通行密钥](my-account/two-step-login/setup-guides/two-step-login-via-fido.md)
     * [恢复代码](two-step-login/recovery-codes.md)
     * [丢失了辅助设备](two-step-login/lost-secondary-device.md)
     * [两步登录 FAQ](two-step-login/two-step-login-faq.md)

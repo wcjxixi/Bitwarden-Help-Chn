@@ -16,7 +16,7 @@
 
 ### 问：iOS 或 Android App 支持 FIDO U2F 或 FIDO2 WebAuthn 吗？ <a href="#q-is-fido-u-2-f-or-fido-2-webauthn-supported-on-my-ios-or-android-app" id="q-is-fido-u-2-f-or-fido-2-webauthn-supported-on-my-ios-or-android-app"></a>
 
-**答：**&#x652F;持。请参阅 [FIDO2 WebAuthn 方式的两步登录](setup-guides/two-step-login-via-fido2-webauthn.md)。
+**答：**&#x652F;持。请参阅 [FIDO2 WebAuthn 方式的两步登录](../my-account/two-step-login/setup-guides/two-step-login-via-fido.md)。
 
 ### 问：为什么 Bitwarden 没有询问我已启用的两步登录方式？ <a href="#q-why-is-bitwarden-not-asking-for-my-enabled-two-step-login-method" id="q-why-is-bitwarden-not-asking-for-my-enabled-two-step-login-method"></a>
 

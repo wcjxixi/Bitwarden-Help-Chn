@@ -22,11 +22,11 @@
 
 Bitwarden 提供多种免费的两步登录方式，包括：
 
-| 方式                                                                                            | 设置说明                                                      |
-| --------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| 通过 FIDO2 WebAuthn 凭据（如 YubiKey 和 Google Titan 等硬件钥匙）                                          | 点击[这里](setup-guides/two-step-login-via-fido2-webauthn.md) |
-| 通过验证器 App（如 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md)） | 点击[这里](setup-guides/two-step-login-via-authenticator.md)  |
-| 通过电子邮箱                                                                                        | 点击[这里](setup-guides/two-step-login-via-email.md)          |
+| 方式                                                                                            | 设置说明                                                                         |
+| --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| 通过 FIDO2 WebAuthn 凭据（如 YubiKey 和 Google Titan 等硬件钥匙）                                          | 点击[这里](../my-account/two-step-login/setup-guides/two-step-login-via-fido.md) |
+| 通过验证器 App（如 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md)） | 点击[这里](setup-guides/two-step-login-via-authenticator.md)                     |
+| 通过电子邮箱                                                                                        | 点击[这里](setup-guides/two-step-login-via-email.md)                             |
 
 ### 高级方式 <a href="#premium-methods" id="premium-methods"></a>
 

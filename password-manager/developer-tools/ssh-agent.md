@@ -10,9 +10,11 @@ Bitwarden SSH 代理可以安全地加密和存储您的 SSH（安全 Shell）�
 * 签署 Git 提交
 * 与基于 SSH 的服务进行交互
 
-Bitwarden SSH 代理将您的密钥组织并保护在一个安全的位置。SSH 密钥可以通过桌面 App、网页 App、浏览器扩展和移动 App 访问。SSH 密钥可以通过桌面 App、网页 App和浏览器扩展生成。
+Bitwarden SSH 代理将您的密钥组织并保护在一个安全的位置。SSH 密钥可以通过桌面 App、网页 App、浏览器扩展和移动 App 访问。SSH 密钥可以通过桌面 App、网页 App 和浏览器扩展生成。
 
 {% hint style="info" %}
+SSH 代理需要 2025.1.2 或更新版本。
+
 **macOS**：
 
 macOS 商店构建版本目前暂不支持 SSH 代理，[.dmg 下载](https://bitwarden.com/download/)可用于获得 SSH 代理支持。
@@ -33,15 +35,15 @@ Flatpak 版本目前暂不支持 SSH 代理，[Snap 下载](https://bitwarden.co
 | 公钥   | 与您要连接的服务器共享的密钥的一部分                                                    |
 | 指纹   | 从公钥生成的短唯一字符串，用于识别。例如，可以使用指纹验证 SSH 签名的 Git 提交                          |
 
-存储在 Bitwarden 密码管理器中的 SSH 密钥可以使用 Bitwarden 的功能，例如[文件夹](../../your-vault/folders.md)、[收藏](../../your-vault/favorites.md)、[主密码重新提示](../../your-vault/vault-items.md#protect-individual-items)、笔记、[克隆项目](../../your-vault/vault-items.md#clone)、[附件](../../your-vault/file-attachments.md)和[自定义字段](../../your-vault/custom-fields.md)。
+存储在 Bitwarden 密码管理器中的 SSH 密钥可以访问 Bitwarden 功能，例如[文件夹](../../your-vault/folders.md)、[收藏](../../your-vault/favorites.md)、[主密码重新提示](../../your-vault/vault-items.md#protect-individual-items)、笔记、[克隆项目](../../your-vault/vault-items.md#clone)、[附件](../../your-vault/file-attachments.md)和[自定义字段](../../your-vault/custom-fields.md)等。
 
 ## 创建新的 SSH 密钥 <a href="#create-new-ssh-key" id="create-new-ssh-key"></a>
 
-您可以通过 Bitwarden 桌面 App、网页 App或浏览器扩展创建新的 SSH 密钥。创建后，存储在 Bitwarden 中的 SSH 密钥可以通过桌面 App、网页 App、浏览器扩展和移动 App 访问。
+您可以通过 Bitwarden 桌面 App、网页 App 或浏览器扩展创建新的 SSH 密钥。创建后，存储在 Bitwarden 中的 SSH 密钥可以通过桌面 App、网页 App、浏览器扩展和移动 App 访问。
 
-1、点击**新建**按钮并选择 **SSH 密钥**作为项目类型。
+1、选择**新建**按钮然后选择 **SSH 密钥**作为项目类型。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1XYC3HwXOTMAPvyW1GS3Mk/89c7ee8a5127ad1295fc3074ce3339bb/2024-11-08_15-08-44.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1XYC3HwXOTMAPvyW1GS3Mk/4689e814ffe356b6bc262713d7b27668/New_SSH_key.png?_a=DAJCwlWIZAAB" %}
 在桌面客户端创建新的 SSH 密钥
 {% endembed %}
 
@@ -67,7 +69,7 @@ SSH 密钥保存到 Bitwarden 密钥库中后，您可以对它们进行编辑�
 
 2、找到要编辑的 SSH 密钥，然后选择 **✏️编辑**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7wKQygR79OFJP1Nk1c3V3D/8b4f5620b35ad79951b55a3153843753/edit.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7wKQygR79OFJP1Nk1c3V3D/4b697f7068083c34da9ba0aed7e33fe8/desktop_edit.png?_a=DAJCwlWIZAAB" %}
 桌面端编辑 SSH 项目
 {% endembed %}
 
@@ -81,7 +83,7 @@ SSH 密钥保存到 Bitwarden 密钥库中后，您可以对它们进行编辑�
 
 2、定位并选择要编辑的 SSH 密钥。屏幕上将出现一个对话框，然后选择**编辑**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/oAvkQjLxtG1yCFAddNMtJ/e75bf0f6314df1b30e691a78665f0efa/2024-12-05_10-43-25.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/oAvkQjLxtG1yCFAddNMtJ/40a8a4b0ed6bc95ff0f2db99949da330/edit_web.png?_a=DAJCwlWIZAAB" %}
 网页 App 编辑 SSH 项目
 {% endembed %}
 
@@ -93,13 +95,9 @@ SSH 密钥保存到 Bitwarden 密钥库中后，您可以对它们进行编辑�
 
 1、打开 Bitwarden 移动 App 然后导航至 **SSH 密钥**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6jJtth7lywypuSBqYZlzm1/45d9642e8d01698f8201d3960467f5ab/IMG_1900.jpg?_a=DAJAUVWIZAAB" %}
-移动端 SSH 密钥密码库
-{% endembed %}
-
 2、定位要编辑的 SSH 密钥，然后选择**编辑**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/65alCgNCYUdRpxoIwMocLr/8c43526942a90f89b0c3547059ea5148/IMG_1903.jpg?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/65alCgNCYUdRpxoIwMocLr/5bd62fa5cbdc9b6f38becc978541ab87/IMG_1973.jpeg?_a=DAJCwlWIZAAB" %}
 iOS 上选择编辑 SSH 密钥
 {% endembed %}
 
@@ -113,7 +111,7 @@ iOS 上选择编辑 SSH 密钥
 
 2、定位并选择要编辑的 SSH 密钥。屏幕上将出现一个对话框，然后选择**编辑**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5DVs8Vi3dJOQsFxbAUElw8/bf4126ae5575fdd5f04ad298a38e57d9/2025-01-15_12-17-04.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5DVs8Vi3dJOQsFxbAUElw8/63aa4e007078e646029421e350904be8/2025-02-12_17-02-38.png?_a=DAJCwlWIZAAB" %}
 浏览器扩展上编辑 SSH
 {% endembed %}
 
@@ -123,13 +121,13 @@ iOS 上选择编辑 SSH 密钥
 
 ## 将密钥导入 Bitwarden <a href="#import-key-to-bitwarden" id="import-key-to-bitwarden"></a>
 
-现有的 SSH 密钥可以导入 Bitwarden。
+现有的 SSH 密钥可通过桌面客户端导入 Bitwarden。
 
 1、从导航菜单中选择 **🔑SSH 密钥**。
 
 2、复制要导入到 Bitwarden 的现有 SSH 密钥。使用**从剪贴板导入密钥**选项。这将自动将 SSH 密钥粘贴到 Bitwarden 中。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5QTvyu39h3o0azkjU26P3t/05f61ac4ebe4683844d0130d48c00a70/2024-11-08_16-02-04.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5QTvyu39h3o0azkjU26P3t/57dde763e9f7fa60dc837f1ba25e17b3/import.png?_a=DAJCwlWIZAAB" %}
 在桌面客户端上导入 SSH 密钥
 {% endembed %}
 
@@ -160,52 +158,72 @@ Windows 服务面板
 {% endembed %}
 
 3、调整设置后，选择**应用**，然后选择**确定**。
-
-{% hint style="info" %}
-如果服务列表中没有 OpenSSH Authentication Agent 选项，则无需禁用该服务。
-{% endhint %}
-
-4、要在 Git 中使用 SSH 代理，请将 Git 配置中的 `core.sshCommand` 变量配置为使用 Microsoft OpenSSH：
-
-```bash
-git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
-```
-
-5、这也可以使用您的 `gitconfig` 文件来设置：
-
-```bash
-[core]
-  sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
-```
 {% endtab %}
 
 {% tab title="macOS" %}
-要在 macOS 上启用 Bitwarden SSH 代理：
+### macOS 商店 <a href="#macos-store" id="macos-store"></a>
 
-1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何在 macOS 上执行此操作（将 `<user>` 替换为您的用户名）：
+要在 macOS 商店下载上启用 Bitwarden SSH 代理：
+
+1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何执行此操作（将 `<user>` 替换为您的用户名）：
+
+```bash
+export SSH_AUTH_SOCK=/Users/<user>/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
+```
+
+### .dmg 下载 <a href="#dmg-download" id="dmg-download"></a>
+
+要在 macOS .dmg 下载上启用 Bitwarden SSH 代理：
+
+1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何执行此操作（将 `<user>` 替换为您的用户名）：
 
 ```bash
 export SSH_AUTH_SOCK=/Users/<user>/.bitwarden-ssh-agent.sock
+```
+
+2、或者，配置 SSH\_AUTH\_SOCKET：
+
+```bash
+launchctl setenv "SSH_AUTH_SOCKET" "/Users/<user>/.bitwarden-ssh-agent.sock"
 ```
 {% endtab %}
 
 {% tab title="Linux" %}
 要在 Linux 上启用 Bitwarden SSH 代理：
 
-1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何在 Linux 上执行此操作（将 `<user>` 替换为您的用户名）：
+1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何执行此操作（将 `<user>` 替换为您的用户名）：
 
 ```bash
 export SSH_AUTH_SOCK=/home/<user>/.bitwarden-ssh-agent.sock
 ```
-{% endtab %}
 
-{% tab title="Snap" %}
-要在 snap 安装上启用 Bitwarden SSH 代理：
+### Shell 配置 <a href="#shell-configuration" id="shell-configuration"></a>
 
-1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何在 snap 上执行此操作（将 `<user>` 替换为您的用户名）：
+1、访问您的 `.bashrc` 或 `.zshrc` 文件：
 
 ```bash
+nano ~/.bashrc
+nano ~/.zshrc
+```
+
+2、在 `.bashrc` 或 `.zshrc` 文件中设置环境变量：
+
+```bash
+export SSH_AUTH_SOCK=/home/<user>/.bitwarden-ssh-agent.sock
+```
+
+### Snap 和 Flatpak <a href="#snap-and-flatpak" id="snap-and-flatpak"></a>
+
+要在 Snap 和 Flatpak 安装上启用 Bitwarden SSH 代理：
+
+1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何执行此操作（将 `<user>` 替换为您的用户名）：
+
+```bash
+# Snap
 export SSH_AUTH_SOCK=/home/<user>/snap/bitwarden/current/.bitwarden-ssh-agent.sock
+
+# Flatpak
+export SSH_AUTH_SOCK=/home/<user>/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock`
 ```
 {% endtab %}
 {% endtabs %}
@@ -214,7 +232,7 @@ export SSH_AUTH_SOCK=/home/<user>/snap/bitwarden/current/.bitwarden-ssh-agent.so
 
 要在 Bitwarden 桌面 App 上启用 SSH 代理，请导航至**设置**然后**启用 SSH 代理**。
 
-<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7Fx7AnfIPXmiJpHq1lFhTx/db8dc33356f28b7c347dbe6f7af490fe/2024-12-09_09-09-08.png?_a=DAJAUVWIZAAB" alt=""><figcaption><p>在桌面客户端上启用 SSH 存储</p></figcaption></figure>
+<div align="left"><figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7Fx7AnfIPXmiJpHq1lFhTx/db8dc33356f28b7c347dbe6f7af490fe/2024-12-09_09-09-08.png?_a=DAJAUVWIZAAB" alt=""><figcaption><p>在桌面客户端上启用 SSH 存储</p></figcaption></figure></div>
 
 ## 测试 SSH 密钥 <a href="#testing-ssh-keys" id="testing-ssh-keys"></a>
 
@@ -239,13 +257,9 @@ SSH 可用于 Git 身份验证。Bitwarden SSH 代理能为你的 Git 工作流�
 
 1、在 GitHub 账户上，通过导航至**设置** → **SSH 和 GPG 密钥**，然后选择**新建 SSH 密钥**，来设置 SSH 密钥。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4lrBnoOuS7qBO5Ql4V4QD9/872c38b4e3a2331aa60ed507a86426d5/2024-11-08_16-40-05.png?_a=DAJAUVWIZAAB" %}
-创建新的 GitHub SSH 密钥
-{% endembed %}
-
 2、在添加新 SSH 密钥界面，添加**名称**，选择**密钥类型**，选择**验证密钥**。将 Bitwarden 密码库中的**公钥**复制并粘贴到 GitHub 上的**密钥**字段。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1bZWyhzPtdpdhoDM6GNYdz/3c59429b416a648550dbc07f960db41d/2024-11-08_16-53-44.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1bZWyhzPtdpdhoDM6GNYdz/3c326b32d15d134ff7532a57041ceff4/2025-02-12_11-26-35.png?_a=DAJCwlWIZAAB" %}
 创建新的 GitHub 密钥
 {% endembed %}
 
@@ -259,7 +273,7 @@ ssh git@github.com
 
 5、如果成功，Bitwarden 会提示您验证访问请求。选择**授权**以确认。如果成功，您将收到一条验证身份验证尝试的消息：
 
-```bash
+```
 Hi <USER>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
@@ -324,6 +338,29 @@ nano ~/.gitconfig
         gpgsign = true
 ```
 
+{% hint style="info" %}
+对于 Windows 用户：
+
+1、将 `core.sshCommand` 变量添加到 Git 配置中，以使用 Microsoft OpenSSH：
+
+```bash
+git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
+```
+
+或者，在 `.gitconfig` 文件中设置变量：
+
+```bash
+[core]
+  sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+```
+
+2、接下来，可能需要设置 `gpg.ssh.program` 参数：
+
+```bash
+git config gpg.ssh.program "C:/Windows/System32/OpenSSH/ssh-keygen.exe"
+```
+{% endhint %}
+
 ### 签署 Git 提交 <a href="#sign-git-commits" id="sign-git-commits"></a>
 
 使用 SSH 对 Git 进行身份验证，能为您的工作流增添安全性和易用性。同样，存储在 Bitwarden 中的 SSH 密钥也可用于使用 SSH 协议签署和验证 Git 提交。在本示例中，我们将使用 Bitwarden SSH 代理签署 Git 提交到 GitHub。
@@ -334,7 +371,7 @@ nano ~/.gitconfig
 
 3、使用 SSH 密钥以 SSH 方式克隆您的仓库：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/76Snkd9TQMrVMmegeJRqK/d072dc808665212512221d0f176c0b98/2024-11-19_12-09-07.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/76Snkd9TQMrVMmegeJRqK/21836de7c7500b9ebdabaeb1d17b9659/2025-02-12_17-16-13.png?_a=DAJCwlWIZAAB" %}
 SSH 克隆
 {% endembed %}
 
@@ -348,9 +385,9 @@ git clone git@github.com:<USER>/<repository>.git
 git commit -m "This commit is signed using SSH"
 ```
 
-5、Bitwarden 将提示您授权密钥的使用：
+5、Bitwarden 将提示您对此密钥的使用进行授权：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/0aGz4U3YpB63EHRWVU2YY/fd1c54888857fc77e0f68b58549e5db7/2024-11-12_09-33-00.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/0aGz4U3YpB63EHRWVU2YY/6664aea9ab6649911947cac667549e7f/signing_key_approve.png?_a=DAJCwlWIZAAB" %}
 使用客户端授权 SSH
 {% endembed %}
 
@@ -362,4 +399,4 @@ git push
 
 7、通过导航到 GitHub commits 以验证您在 Github 上的提交：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1PR4Sss3Pvf3anlau5AlgC/cca4c1ec9936109d7434aa77f1afa7ce/2024-12-04_11-32-12.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1PR4Sss3Pvf3anlau5AlgC/ecfdb02b50fb83f59a21ebc7ed550042/2025-02-12_14-51-41.png?_a=DAJCwlWIZAAB" %}

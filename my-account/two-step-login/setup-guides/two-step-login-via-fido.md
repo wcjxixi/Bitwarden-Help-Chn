@@ -1,4 +1,4 @@
-# 两步登录 - FIDO2 WebAuthn 通行密钥
+# 两步登录 - 通行密钥
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/setup-two-step-login-fido/)
@@ -24,8 +24,8 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 
 * 具有[支持 FIDO2](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/) 的浏览器的设备上的**网页密码库**
 * [支持 FIDO2](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/) 的浏览器上的**浏览器扩展**
-* Windows 10 及以上的**桌面 App**
 * 具有[支持 FIDO2](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/) 的浏览器的 Android 和 iOS 13.3+ 上的**移动 App**
+* macOS 和 Windows 10+ 上的**桌面 App**
 
 ## 设置 FIDO2 WebAuthn <a href="#setup-fido-2-webauthn" id="setup-fido-2-webauthn"></a>
 
@@ -34,7 +34,7 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 {% hint style="warning" %}
 **丢失对两步登录设备的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
 
-启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../import-export/export-vault-data.md)来备份密码库数据。
+启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../../../two-step-login/recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../import-export/export-vault-data.md)来备份密码库数据。
 {% endhint %}
 
 1、登录您的网页 App。
@@ -73,13 +73,13 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 
 ## 使用 FIDO2 WebAuthn <a href="#use-fido-2-webauthn" id="use-fido-2-webauthn"></a>
 
-以下内容假设 **FIDO 2 WebAuthn** 是您[已启用的最高优先级方式](../two-step-login-methods.md#using-multiple-methods)。完成以下步骤，以使用FIDO2 WebAuthn 设备访问您的密码库：
+以下内容假设 **FIDO 2 WebAuthn** 是您[已启用的最高优先级方式](../../../two-step-login/two-step-login-methods.md#using-multiple-methods)。完成以下步骤，以使用FIDO2 WebAuthn 设备访问您的密码库：
 
 1、输入您的电子邮箱地址和主密码登录您的 Bitwarden 密码库。
 
-2、系统将提示您将安全密钥插入设备的 USB 端口。如果有按钮，请触摸它：
+2、系统会提示您读取安全密钥，例如将安全密钥插入设备的 USB 端口并轻按按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3RuttlEwwfVX3UJKA8GTFg/9cd8908cbb8994b58ee23791f1abece8/fido2.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3RuttlEwwfVX3UJKA8GTFg/ab7e0ba835a7f42ea3f10369cb66c008/2025-03-25_10-28-20.png?_a=DAJCwlWIZAAB" %}
 FIDO2 提示
 {% endembed %}
 
@@ -87,7 +87,7 @@ FIDO2 提示
 勾选**记住我**复选框，以记住您的设备，有效期 30 天。记住您的设备意味着您不会被要求完成两步登陆步骤。
 {% endhint %}
 
-登录后，您将不会被要求完成第二步的两步登录步骤就可以**解锁**您的密码库。有关配置注销和锁定行为的帮助，请参阅[密码库超时选项](../../your-vault/vault-timeout-options.md)。
+登录后，您将不会被要求完成第二步的两步登录步骤就可以**解锁**您的密码库。有关配置注销和锁定行为的帮助，请参阅[密码库超时选项](../../../your-vault/vault-timeout-options.md)。
 
 ## NFC 故障排除 <a href="#nfc-troubleshooting" id="nfc-troubleshooting"></a>
 
@@ -108,5 +108,5 @@ YubiKey Manager
 {% endembed %}
 
 {% hint style="warning" %}
-禁用 **NFC** → **OTP** 后，您将无法通过此密钥的 NFC 使用 [YubiKey 方式的两步登录](two-step-login-via-yubikey.md) (OTP)。在这种情况下，通过 USB 的 OTP 仍将按预期运行。
+禁用 **NFC** → **OTP** 后，您将无法通过此密钥的 NFC 使用 [YubiKey 方式的两步登录](../../../two-step-login/setup-guides/two-step-login-via-yubikey.md) (OTP)。在这种情况下，通过 USB 的 OTP 仍将按预期运行。
 {% endhint %}
