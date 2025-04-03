@@ -37,7 +37,7 @@
 
 * 高级 2FA 选项，如 Yubikey、FIDO2 以及 Duo
 * 1 GB 加密文件存储
-* Bitwarden 验证器（TOTP）
+* Bitwarden 验证器 (TOTP)
 * 紧急访问
 * 密码库健康报告
 
@@ -61,7 +61,7 @@ Bitwarden 有两种针对公司的计划：团队和企业。 团队组织和企
 * 事件日志
 * 用户群组
 * 用于组织管理的 API
-* 目录连接器
+* Directory Connector
 
 但是，仅企业组织包括：
 

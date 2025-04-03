@@ -1,7 +1,7 @@
 # \*更新 Bitwarden 计划 (2019-2020)
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/2020-plan-updates/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/_articles/plans-and-pricing/2020-plan-updates.md)
+对应的[~~官方文档地址~~](https://bitwarden.com/help/article/2020-plan-updates/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/_articles/plans-and-pricing/2020-plan-updates.md)
 {% endhint %}
 
 在继续我们的使命以使个人和组织能够轻松安全地存储和共享敏感数据的过程中，我们最近对我们的产品进行了一些升级。**本文面向在 2020 年 09 月 06 日之前创建了 Bitwarden 账户并希望了解经典 2019 计划和当前计划的区别的用户。**

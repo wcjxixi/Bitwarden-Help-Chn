@@ -27,7 +27,11 @@
 如果您已购买 **2019 年家庭版**组织订阅，您目前不会自动转移到新的功能集。由 2019 年家庭版组织升级到[当前的家庭版组织订阅](password-manager/about-bitwarden-plans.md#families-organizations)，将：
 
 * 可共享的用户数量从 5 个增加到 6 个。
-* 为所有成员解锁高级功能，例如高级 2FA 选项、TOTP 生成、文件附件和紧急访问。在 2019 年家庭版组织订阅中，组织拥有的项目可使用 TOTP 生成和附件等功能，但如果您还为每位成员购买了高级版，则个人拥有的项目才能使用这些功能。
+* 为所有成员解锁高级功能，例如高级 2FA 选项、TOTP 生成、文件附件和紧急访问。在 2019 年家庭版组织订阅中，组织拥有的项目可使用 TOTP 生成和附件等功能，但如果您为每位成员购买了高级版，则个人拥有的项目才能使用这些功能。
+
+{% hint style="info" %}
+截至 2025 年 03 月 10 日，2019 年家庭版计划已升级为为所有组织成员提供高级 2FA 选项、TOTP 生成、文件附件和紧急访问等高级功能。
+{% endhint %}
 
 这意味着，$40/年的当前家庭版组织，比 $52/年的家庭组织和所有用户的高级会员更便宜。
 
@@ -40,6 +44,12 @@
 ### 2020 年团队版 <a href="#id-2020-teams" id="id-2020-teams"></a>
 
 如果您已购买 **2020 年 Teams 版组织**订阅，功能和价格将保持不变，您将继续按照最初购买订阅的价格付费。新增加的席位也将以相同价格计费。
+
+## 2024 年 06 月 11 日之前购买的订阅 <a href="#subscriptions-purchased-prior-to-june-11-2024" id="subscriptions-purchased-prior-to-june-11-2024"></a>
+
+## 团队入门版 <a href="#teams-starter" id="teams-starter"></a>
+
+团队入门版计划自 2024 年 06 月 11 日起不再作为创建新组织的选项。如果您已经是团队入门版客户，您的功能集和价格将保持不变，并将继续按照您最初购买订阅的价格计费。
 
 ## 常见问题 <a href="#faqs" id="faqs"></a>
 
@@ -59,11 +69,11 @@
 
 **答：**&#x5728; 2023 年 11 月 06 日之前购买 Bitwarden Teams 版或 Enterprise 版的现有客户将保持原价。
 
-### 问：2019 年 Teams 版和 Enterprise 版计划客户可以获得哪些新功能？ <a href="#q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting" id="q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting"></a>
+### 问：2019 年团队版和企业版计划客户可以获得哪些新功能？ <a href="#q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting" id="q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting"></a>
 
 **答：**&#x5BA2;户将以相同的价格获得如下最新功能：
 
-| Teams 版                                                                                                       | Enterprise 版                                                            |
+| 团队版                                                                                                           | 企业版                                                                     |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | <p>- 所有成员的高级访问权限（2FA、TOTP、文件附件等）<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 组织 Duo 2FA<br>- Directory Connector</p> | <p>- SSO 登录<br>- 客户管理加密的 SSO<br>- 信任设备 SSO<br>- SCIM 配置<br>- 帐户恢复管理</p> |
 
