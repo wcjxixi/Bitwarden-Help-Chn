@@ -46,7 +46,7 @@ Microsoft Edge 的自动填充要求是最新的基于 Chromium 的版本。
 
 * `Ctrl/CMD + Z` → 撤销
 * `Ctrl/CMD + Y` → 重做
-* `Ctrl/CMD + X` → C剪切
+* `Ctrl/CMD + X` → 剪切
 * `Ctrl/CMD + C` → 复制
 * `Ctrl/CMD + V` → 黏贴
 * `Ctrl/CMD + A` → 全选
