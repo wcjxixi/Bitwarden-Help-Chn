@@ -4,11 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/gitlab-integration/)
 {% endhint %}
 
-Bitwarden 提供了一种使用 Bitwarden [Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 将机密注入 [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) 流水线的方法。这使您可以在 CI/CD 工作流程中安全地存储和使用机密。要开始：
+Bitwarden 提供了一种使用 Bitwarden [Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 将机密注入 [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) 流水线的方法。这使您可以在 CI/CD 工作流中安全地存储和使用机密。要开始：
 
 ## 保存访问令牌 <a href="#save-an-access-token" id="save-an-access-token"></a>
 
-在这个步骤中，我们将把[访问令牌](../your-secrets/access-tokens.md)保存为 GitLab CI/CD 变量。该令牌被用于使用 Bitwarden Secrets Manager API 进行身份验证以及检索[机密](../your-secrets/secrets.md)。
+在这个步骤中，我们将把[访问令牌](../your-secrets/access-tokens.md)保存为 GitLab CI/CD 变量。该令牌被用于使用 Bitwarden Secrets Manager API 进行身份验证以及获取[机密](../your-secrets/secrets.md)。
 
 1. 在 GitLab 中，导航到您的项目的 **设置** → **CI/CD** 页面。
 2. 在**变量**部分中选择**展开**。
@@ -38,30 +38,13 @@ build:
   - |
     # install bws
     apt-get update && apt-get install -y curl git jq unzip
-    export BWS_VER="$(
-      curl -s https://api.github.com/repos/bitwarden/sdk/releases/latest | \
-      jq -r '.tag_name' | sed 's/bws-v//'
-    )"
+    export BWS_VER="1.0.0"
     curl -LO \
       "https://github.com/bitwarden/sdk/releases/download/bws-v$BWS_VER/bws-x86_64-unknown-linux-gnu-$BWS_VER.zip"
     unzip -o bws-x86_64-unknown-linux-gnu-$BWS_VER.zip -d /usr/local/bin
 
-    # secrets to retrieve
-    secret_ids=(
-      "534cc788-a143-4743-94f5-afdb00a40a41"
-      "9a0b500c-cb3a-42b2-aaa2-afdb00a41daa"
-    )
-
-    # export secrets as environment variables
-    for secret_id in "${secret_ids[@]}"; do
-      secret="$(bws secret get "$secret_id")"
-      secret_key="$(echo "$secret" | jq -r '.key')"
-      secret_value="$(echo "$secret" | jq -r '.value')"
-      export "$secret_key"="$secret_value"
-    done
-
-  # run the command that requires secrets
-  - npm run start
+  # use the `bws run` command to inject secrets into your commands
+  - bws run -- 'npm run start'
 ```
 
 说明：

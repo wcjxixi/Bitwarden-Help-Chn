@@ -4,11 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/github-actions-integration/)
 {% endhint %}
 
-Bitwarden 提供与 GitHub Actions 的集成，以从 Secrets Manager 获取机密并将它们注入 GitHub Actions 工作流程。集成会将获取到的机密作为隐藏的环境变量注入到操作中。要设置集成：
+Bitwarden 提供与 GitHub Actions 的集成，以从 Secrets Manager 获取机密并将它们注入 GitHub Actions 工作流。此集成会将获取到的机密作为隐藏的环境变量注入到 Action 中。要设置集成：
 
 ## 保存访问令牌 <a href="#save-an-access-token" id="save-an-access-token"></a>
 
-在此步骤中，我们将把访问令牌保存为 GitHub 加密密钥。可以为组织、存储库或存储库环境创建加密的秘密，并使其可用于 GitHub Actions 工作流程：
+在此步骤中，我们将把访问令牌保存为 GitHub 加密密钥。可以为组织、存储库或存储库环境创建加密的秘密，并使其可用于 GitHub Actions 工作流：
 
 1. 在 GitHub 中，导航到您的存储库并选择 **Settings** 选项卡。
 2. 在左侧导航的 Security 部分，选择 **Secrets and variables** → **Actions**。
@@ -17,7 +17,7 @@ Bitwarden 提供与 GitHub Actions 的集成，以从 Secrets Manager 获取机�
 5. 返回 GitHub，为您的机密命名，例如 `BW_ACCESS_TOKEN`，然后将步骤 4 中的访问令牌值粘贴到 **Secret** 输入框中。
 6. 选择 **Add secret** 按钮。
 
-## 添加到您的工作流程文件 <a href="#add-to-your-workflow-file" id="add-to-your-workflow-file"></a>
+## 添加到您的工作流文件 <a href="#add-to-your-workflow-file" id="add-to-your-workflow-file"></a>
 
 接下来，我们将向您的 GitHub Actions 工作流文件添加几个步骤。
 
@@ -48,4 +48,27 @@ Bitwarden 提供与 GitHub Actions 的集成，以从 Secrets Manager 获取机�
 ```yaml
 - name: Use Secret
   run: SQLCMD -S MYSQLSERVER -U "$SECRET_NAME_1" -P "$SECRET_NAME_2"
+```
+
+## 工作流示例 <a href="#example-workflow" id="example-workflow"></a>
+
+以下示例是使用 `get secrets` 的 GitHub Actions 工作流文件：
+
+```bash
+- name: Get Secrets
+        uses: bitwarden/sm-action@v2
+        with:
+          access_token: ${{ secrets.BW_ACCESS_TOKEN }}
+          secrets: |
+            fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff > GITHUB_GPG_PRIVATE_KEY
+            bdbb16bc-0b9b-472e-99fa-af4101309076 > GITHUB_GPG_PRIVATE_KEY_PASSPHRASE 
+  
+- name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ env.GITHUB_GPG_PRIVATE_KEY }}
+          passphrase: ${{ env.GITHUB_GPG_PRIVATE_KEY_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
 ```

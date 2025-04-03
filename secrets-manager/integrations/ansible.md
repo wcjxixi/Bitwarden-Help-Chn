@@ -4,13 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/ansible-integration/)
 {% endhint %}
 
-Bitwarden 提供了与 Ansible 的集成，可以从 Secrets Manager 中获取机密并将其注入到 Ansible playbook 中。lookup 插件会将检索到的机密作为隐藏的环境变量注入 Ansible playbook 中。要设置集合：
+Bitwarden 提供与 Ansible 的集成，以从 Secrets Manager 中获取机密并将其注入到您的 Ansible playbook 中。lookup 插件会将获取到的机密作为隐藏的环境变量注入到 Ansible playbook 中。要设置集合：
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
 * 我们建议在 [Python 虚拟环境](https://python.land/virtual-environments/virtualenv)中安装 Python 包。
-* 您系统上已安装的 Ansible 的当前版本。
-* Bitwarden 机密管理器与一个[活动的机器账户](../get-started/secrets-manager-quick-start.md#add-a-service-account)。
+* 您系统上已安装了 Ansible 的当前版本。
+* 具有[活动的机器账户](../get-started/secrets-manager-quick-start.md#add-a-service-account)的 Bitwarden Secrets Manager。
 
 在设置 Ansible 集合之前，我们建议您同时打开 Secrets Manager，以方便访问您的访问令牌以及您希望包含在设置中的任何机密。
 

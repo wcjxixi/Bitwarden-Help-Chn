@@ -8,7 +8,7 @@
 ~~Bitwarden Secrets Manager Helm 集成目前处于 **Beta 状态**。某些功能目前可能无法提供完整功能。~~
 {% endhint %}
 
-Bitwarden Secrets Manager Kubernetes Operator 允许团队安全高效地将 Secrets Manager 集成到 Kubernetes 工作流中。使用 Helm 包管理器部署的 operator，可以从 Secrets Manager 中存储和检索机密。
+Bitwarden Secrets Manager Kubernetes Operator 允许团队安全高效地将 Secrets Manager 集成到 Kubernetes 工作流中。使用 Helm 包管理器部署的 operator，可以从 Secrets Manager 中存储和获取机密。
 
 `sm-operator` 使用控制器将 Bitwarden 机密同步到 Kubernetes 机密中。operator 将 Custom Resource Definition: `BitwardenSecret` 注册到 Kubernetes 集群中。集群将侦听新注册的 `BitwardenSecret` ，并按可配置的时间间隔进行同步。
 
