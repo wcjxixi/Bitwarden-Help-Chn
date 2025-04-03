@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/blocker-access-rule/)
 {% endhint %}
 
-默认情况下，uMatrix 和 NoScript 扩展可能会阻止 Bitwarden Firefox 扩展访问 Bitwarden API 服务器。如果不添加适当的规则将 Bitwarden API 服务器列入白名单，登录以及其他 API 操作将失败。
+默认情况下，[uMatrix 扩展](https://github.com/gorhill/uMatrix)和 [NoScript 扩展](https://noscript.net/)可能会阻止 Bitwarden Firefox 扩展访问 Bitwarden API 服务器。如果不添加适当的规则将 Bitwarden API 服务器列入白名单，登录以及其他 API 操作将失败。
 
 ## uMatrix
 
