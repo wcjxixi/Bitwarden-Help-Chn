@@ -16,10 +16,6 @@
 基本验证提示
 {% endembed %}
 
-下面的动画显示了 Google Chrome 浏览器中用于自动填充基本验证凭证的验证流程。
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/31AzrdlVAPc8M6Z0NbIzIq/7f3c6e8678119188d6c7e4bdbee5c607/saving-basic-auth.gif?fm=gif&h=692&q=50&w=1246" %}
-
 {% hint style="info" %}
-由于基本验证提示的设计方式，自动填充必须是非交互式的。这意味着您不能使用 **📁标签页**视图、上下文菜单或键盘快捷键在基本验证提示上自动填充。
+由于基本验证提示的设计方式，自动填充必须是非交互式的。这意味着您不能使用**密码库**视图、上下文菜单或键盘快捷键在基本验证提示上进行自动填充。
 {% endhint %}
