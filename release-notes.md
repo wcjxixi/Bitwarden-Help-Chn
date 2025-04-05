@@ -23,7 +23,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
-## 2025.3.4
+## 2025.3.3
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.3.1、浏览器扩展 2025.3.2、桌面 2025.3.2、CLI 2025.3.0）
 
