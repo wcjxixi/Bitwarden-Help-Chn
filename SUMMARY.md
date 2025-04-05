@@ -2,7 +2,7 @@
 
 * [关于](README.md)
 * [首页](home.md)
-* [发行记录](release-notes.md)
+* [发布记录](release-notes.md)
 * [账户](my-account/README.md)
   * [创建 Bitwarden 账户](getting-started/create-bitwarden-account.md)
   * [登录 & 解锁](my-account/log-in-and-unlock/README.md)

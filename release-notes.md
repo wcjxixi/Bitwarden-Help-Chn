@@ -1,10 +1,10 @@
-# 发行记录
+# 发布记录
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/releasenotes/)
 {% endhint %}
 
-Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个绝对要求。请访问以下 GitHub 链接查看完整、详细的发行记录：
+Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个绝对要求。请访问以下 GitHub 链接查看完整、详细的发布记录：
 
 * [Server Releases](https://github.com/bitwarden/server/releases)
 * [Web Releases](https://github.com/bitwarden/clients/releases)
@@ -15,7 +15,7 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 * [CLI Releases](https://github.com/bitwarden/clients/releases)
 * [Directory Connector Releases](https://github.com/bitwarden/directory-connector/releases)
 
-## 发行公告
+## 发布公告
 
 Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面端、浏览器扩展、移动端等），以及自托管服务器，以确保功能的有效性和稳定性。因此，客户端应用程序和自托管服务器将在初始发布后逐步获得所列的功能。请查看 Bitwarden [软件发布支持](security/bitwarden-software-release-support.md)文档。
 
