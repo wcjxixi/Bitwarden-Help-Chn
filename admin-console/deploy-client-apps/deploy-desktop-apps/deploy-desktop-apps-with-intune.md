@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/deploy-desktop-apps-with-intune/)
 {% endhint %}
 
-在商业环境中操作 Bitwarden 时，管理员可能希望通过 **Microsoft Intune** 向用户自动部署 Bitwarden 桌面 App。本文将介绍如何使用 Intune 将 Bitwarden Password Manager 桌面 App 部署到您的端点。
+在业务环境中操作 Bitwarden 时，管理员可能希望通过 **Microsoft Intune** 向用户自动部署 Bitwarden 桌面 App。本文将介绍如何使用 Intune 将 Bitwarden Password Manager 桌面 App 部署到您的端点。
 
 可以使用 Win32 应用程序（推荐）或通过 Microsoft App Store 将 Bitwarden 桌面 App 部署到端点：
 

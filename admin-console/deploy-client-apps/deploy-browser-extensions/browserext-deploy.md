@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/browserext-deploy/)
 {% endhint %}
 
-在商业环境中操作 Bitwarden 时，管理员可能希望通过端点管理平台或组策略向用户自动部署 Bitwarden 浏览器扩展。本文将介绍如何使用 GPO 和其他模板通过端点管理平台向用户自动部署 Bitwarden 浏览器扩展。
+在业务环境中操作 Bitwarden 时，管理员可能希望通过端点管理平台或组策略向用户自动部署 Bitwarden 浏览器扩展。本文将介绍如何使用 GPO 和其他模板通过端点管理平台向用户自动部署 Bitwarden 浏览器扩展。
 
 ## Windows
 

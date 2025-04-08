@@ -9,7 +9,7 @@
 > * [MDM](https://zh.wikipedia.org/zh-cn/%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E7%AE%A1%E7%90%86)：Mobile Device Management（移动设备管理）。
 > * [EMM](https://zh.wikipedia.org/wiki/%E4%BC%81%E6%A5%AD%E8%A1%8C%E5%8B%95%E7%AE%A1%E7%90%86)：Enterprise Mobility Management（企业移动管理）。
 
-在商业环境中操作自托管 Bitwarden 服务器时，管理员可能希望先集中配置客户端应用程序的设置（尤其是服务器 URL），然后再通过端点管理平台部署给用户。设置会在安装客户端应用程序时应用。如果您使用的是 [Bitwarden Cloud EU 服务器](../../security/server-geographies.md)，这些流程可能也会有所帮助。&#x20;
+在业务环境中操作自托管 Bitwarden 服务器时，管理员可能希望先集中配置客户端应用程序的设置（尤其是服务器 URL），然后再通过端点管理平台部署给用户。设置会在安装客户端应用程序时应用。如果您使用的是 [Bitwarden Cloud EU 服务器](../../security/server-geographies.md)，这些流程可能也会有所帮助。&#x20;
 
 执行此操作的过程，对于每个客户端应用程序将有所不一样：
 
