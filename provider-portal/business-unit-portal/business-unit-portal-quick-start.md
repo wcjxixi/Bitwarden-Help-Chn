@@ -1,4 +1,4 @@
-# =业务单元门户快速入门
+# 业务单元门户快速入门
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/business-unit-portal-quick-start/)
@@ -38,13 +38,13 @@
 
 业务单元组织是指任何隶属于或由业务单元管理的组织。对于您的用户来说，「业务单元」组织与「常规」组织之间没有区别，唯一的区别在于谁在进行管理。
 
-组织将 Bitwarden 用户和保险库项目关联起来，以安全地共享登录信息、卡片、笔记和身份。组织拥有一个视图，即管理员控制台，服务用户可以在其中管理组织的集合、管理成员和组、运行报告、导入数据以及配置组织设置：
+组织将 Bitwarden 用户和密码库项目关联起来，以安全地共享登录、支付卡、笔记和身份。组织拥有一个独立的视图，即管理员控制台，服务用户可以在其中管理组织的集合、管理成员和群组、运行报告、导入数据以及配置组织设置：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4mkDEc9h4ASRgM4bKXGO1B/35b93b53a782c377aa8bdc98b70de4aa/2025-03-27_15-36-51.png?_a=DAJCwlWIZAAB" %}
 业务单元组织
 {% endembed %}
 
-业务单元组织的成员将在“保险库”视图中找到共享项目，与个人拥有的项目并列，同时还有多种方法来过滤项目列表，仅显示组织项目或特定集合中的项目：
+业务单元的成员将在他们的**密码库**视图中找到共享项目，以及个人拥有的项目，还可以使用几种方式来筛选项目列表，以只显示组织项目或特定集合中的项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?_a=DAJCwlWIZAAB" %}
 启用了组织的密码库
@@ -52,7 +52,7 @@
 
 ## 创建业务单元组织 <a href="#create-a-business-unit-organization" id="create-a-business-unit-organization"></a>
 
-创建新的业务单元组织，您必须作为业务单元管理员。导航到业务单元门户的  **客户** 选项卡，并选择  **新建** 按钮：
+要创建新的业务单元组织，您必须是业务单元管理员。导航到业务单元门户的**客户**选项卡，然后选择 ✚**新增**按钮：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Z2OgnsPU5RUx5J05pPYs8/afaef6763510d84b62c5bbda625961af/Create_new_Client_org.png?_a=DAJCwlWIZAAB" %}
 创建业务单元组织
@@ -62,29 +62,29 @@
 
 使用您新创建的业务单元组织，开始为您的用户构建完美的解决方案。具体的设置将根据您的需求而有所不同，但通常包括：
 
-1、创建集合。第一步是创建一组集合，这将为你在下一步添加到保险库的项目提供一个组织结构。
+1、**创建集合**。第一步是[创建一组集合](../../organizations/collections.md#create-a-collection)，这将为你在下一步添加到密码库的项目提供一个组织结构。
 
-常见集合模式包括 **按部门集合** （例如，客户的营销团队用户被分配到 **营销** 集合）或 **按功能集合** （例如，来自客户营销团队的用户被分配到 **社交媒体** 集合）：
+常见的集合形式包括**按部门的集合** （例如，客户的营销团队用户被分配到**营销**集合）或**按功能的集合** （例如，客户的营销团队用户被分配到**社交媒体**集合）：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6qodHGqBPABEFv3XJxaOUe/780cd4624a5d0a5fe315677968003e2d/collections-graphic-2.png?_a=DAJCwlWIZAAB" %}
 集合
 {% endembed %}
 
-2、**导入数据** 。一旦您存储保险库项目的结构确定，您就可以开始[导入数据到组织 ](https://bitwarden.com/help/import-to-org/)。
+2、**导入数据** 。您用来存储密码库项目的结构确定后，就可以开始[导入数据到组织](../../import-export/import-data-to-an-organization.md) 。
 
 {% hint style="success" %}
-注意，作为服务用户，您将无法直接查看、创建或管理单个项目。
+注意，作为服务用户，您将无法直接查看、创建或管理个人项目。
 {% endhint %}
 
-3、配置企业策略。在开始设置用户管理部分之前，请先[配置企业策略 ](https://bitwarden.com/help/policies/)，以便为诸如[主密码复杂性 ](https://bitwarden.com/help/policies/#master-password-requirements)、[ 使用两步登录](https://bitwarden.com/help/policies/#require-two-step-login)和[管理员密码重置](https://bitwarden.com/help/account-recovery/#master-password-reset)等事项设置使用规则。
+3、**配置企业策略**。在开始设置用户管理部分之前，请先[配置企业策略](../../organizations/enterprise-policies.md) ，以便为诸如[主密码复杂性](../../organizations/enterprise-policies.md#master-password-requirements)、[使用两步登录](../../organizations/enterprise-policies.md#require-two-step-login)和[管理员密码重置](../../organizations/enterprise-policies.md#account-recovery-administration)等事项设置使用规则。
 
 {% hint style="success" %}
-企业策略仅对**企业组织可用。**
+企业策略仅适用于**企业组织。**
 {% endhint %}
 
-4、设置使用 SSO 的登录 。如果您的业务单元使用单点登录(SSO)来验证其他应用程序，请将 Bitwarden 与他们的 IdP 连接 ，以便使用最终用户的 SSO 凭据进行 Bitwarden 的验证。
+4、**设置 SSO 登录**。如果您的业务单元使用单点登录 (SSO) 与其他应用程序进行身份验证，请[将 Bitwarden 与他们的 IdP 连接](../../login-with-sso/about-login-with-sso.md) ，以使用最终用户的 SSO 凭据与 Bitwarden 进行身份验证。
 
-5、创建用户组 。对于团队和企业组织， 创建一组组以进行可扩展的权限分配。当您开始添加用户时，将他们添加到组中，以便每个用户自动继承组配置的权限（例如，访问哪些集合）。一种常见的组-集合模式是创建按部门分组和按功能分组的集合，例如：
+5、**创建用户群组**。对于团队和企业组织， [创建一组群组](../../organizations/groups.md#create-a-group)以进行可扩展的权限分配。当您开始添加用户时，将他们添加到群组中，以使每个用户自动继承群组配置的权限（例如，访问哪些集合）。一种常见的群组 - 集合形式是创建**按部门的群组**和**按功能的集合**，例如：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6qodHGqBPABEFv3XJxaOUe/780cd4624a5d0a5fe315677968003e2d/collections-graphic-2.png?_a=DAJCwlWIZAAB" %}
 集合
@@ -92,20 +92,20 @@
 
 ## 邀请客户用户 <a href="#invite-client-users" id="invite-client-users"></a>
 
-建立了安全且可扩展的凭证共享基础设施后，您可以开始邀请用户加入组织。根据您的业务单元规模，有三种方式可以将用户纳入 Bitwarden：
+建立了安全且可扩展的凭据共享基础设施后，您就可以开始邀请用户加入组织了。根据您的业务单元规模，有三种方式可以将用户加入 Bitwarden：
 
-1、**对于小型单元** ，您可以从管理员控制台的 **成员** 视图中发送电子邮件邀请给用户：
+1、**对于小型单元** ，您可以从管理员控制台的 **☷成员**视图中发送电子邮件邀请给用户：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4jxLRBNC6RR0cICdBpOm4o/f7fb1c120b75e55515de92822c2ecccc/Invite_Member_Client_Org.png?_a=DAJCwlWIZAAB" %}
 邀请成员加入业务单元组织
 {% endembed %}
 
-2、对于使用 Azure AD、Okta、OneLogin 或 JumpCloud 等身份提供者的大型单位，请使用 [SCIM](https://bitwarden.com/help/about-scim/) 自动分配用户。
+2、**对于大型单元**，如使用 Azure AD、Okta、OneLogin 或 JumpCloud 等身份提供程序的单元，请使用 [SCIM](../../scim/about-scim.md) 自动分配用户。
 
-3、对于更大型的单位， **利用目录服务（Active Directory、LDAP、Okta 等）**，请使用 [目录连接器 ](https://bitwarden.com/help/directory-sync/)从源目录同步组织用户并自动发送邀请。
+3、**对于大型单元**，如使用目录服务（Active Directory、LDAP、Okta 等）的单元，请使用[目录连接器](../../directory-connector/about-directory-connector.md)从源目录同步组织用户并自动发起邀请。
 
-无论您是通过组织保险库、使用 SCIM 还是使用目录连接器邀请用户，您在[注册服务用户](https://bitwarden.com/help/getting-started-providers/#onboard-users)时遵循的相同三个步骤（邀请→接受→确认）也适用于此处。
+无论您是通过组织密码库、使用 SCIM 还是使用目录连接器邀请用户，您在[注册服务用户](../get-started-with-provider-portal.md#onboard-users)时遵循的相同的三个步骤（邀请 → 接受 → 确认）也适用于这里。
 
 ## 管理自托管组织 <a href="#managing-self-hosted-organizations" id="managing-self-hosted-organizations"></a>
 
-业务单元门户对托管组织的访问目前仅适用于云托管环境。要为自托管实例提供管理服务，需要额外购买一个服务座位来管理自托管实例。有关更多信息，请参阅[管理自托管组织 ](https://bitwarden.com/help/getting-started-providers/#managing-self-hosted-organizations)。
+托管组织对业务单元门户的访问目前仅适用于云托管环境。要为自托管实例提供管理服务，需要购买附加服务席位来管理自托管实例。更多信息，请参阅[管理自托管组织](../get-started-with-provider-portal.md#managing-self-hosted-organizations)。
