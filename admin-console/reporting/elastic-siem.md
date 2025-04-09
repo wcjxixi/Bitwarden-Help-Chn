@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/elastic-siem/)
 {% endhint %}
 
-Elastic 是一种可提供搜索和可观察选项的解决方案，用于监控您的 Bitwarden 组织。通过与 Elastic Bitwarden 的集成，Elastic Agent 提供了监控 `collection`、`event`、`group` 和 `policy` 信息的功能。
+Elastic 是一种可提供搜索和可观察性选项的解决方案，用于监控您的 Bitwarden 组织。通过与 Elastic Bitwarden 的集成，Elastic Agent 提供了监控 `collection`、`event`、`group` 和 `policy` 信息的功能。
 
 ## 设置 <a href="#setup" id="setup"></a>
 

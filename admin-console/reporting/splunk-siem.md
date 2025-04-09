@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/splunk-siem/)
 {% endhint %}
 
-Splunk Enterprise 是一个安全信息和事件管理 (SIEM) 平台，可与 Bitwarden 组织一起使用。组织可以在 Splunk Enterprise 仪表板上监埪 Bitwarden 应用程序的[事件](event-logs.md)活动。
+Splunk Enterprise 是一个安全信息和事件管理 (SIEM) 平台，可与 Bitwarden 组织一起使用。组织可以使用 Splunk Enterprise 仪表板上的 Bitwarden App 监控[事件](event-logs.md)活动。
 
 ## 设置 <a href="#setup" id="setup"></a>
 

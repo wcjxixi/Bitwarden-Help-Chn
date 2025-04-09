@@ -6,7 +6,7 @@
 
 事件日志是团队或企业组织内发生的事件的时间戳记录。要访问事件日志：
 
-1、登录 Bitwarden 网页，使用产品切换器打开管理控制台：
+1、登录到 Bitwarden 网页 App 然后使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
 产品切换器
@@ -24,14 +24,14 @@ Bitwarden 客户端和服务器都会捕获事件，其中大多数事件发生�
 
 ## 检查事件 <a href="#inspect-events" id="inspect-events"></a>
 
-在网页 App 的**事件日志**视图中，选择一个粉红色的资源标识符（例如 `1e685004`）将做两件事：
+在网页 App 的**事件日志**视图中，选择粉红色的资源标识符（例如 `1e685004`）将做两件事：
 
-1. 打开一个对话框，其中包含与该资源关联的事件列表。例如，选择一个项目的标识符将打开该项目被编辑、查看等的时间列表，包括哪个成员执行的每个操作。
-2. 导航到您访问资源的视图。例如，从**事件日志**中选择成员的标识符将带您进入**成员**视图并自动将列表过滤到该成员。
+1. 打开一个对话框，其中包含与该资源关联的事件列表。例如，选择一个项目的标识符将打开该项目被编辑、被查看等的时间列表，包括哪个成员执行的每个操作。
+2. 导航到您访问资源的视图。例如，从**事件日志**中选择成员的标识符将带您进入**成员**视图并自动将列表筛选为该成员。
 
 ## 事件列表 <a href="#events-list" id="events-list"></a>
 
-事件日志记录了超过 60 种不同类型的事件。事件日志界面捕捉事件的**时间戳**、包含了应用程序的类型和 IP （通过悬停在 **🌎**地球图标上访问）的客户端应用程序信息、连接到事件的**用户**、以及**事件**的描述。
+事件日志记录了超过 60 种不同类型的事件。事件日志界面捕捉事件的**时间戳**，包括应用程序的类型和 IP （通过悬停在 **🌎**地球图标上访问）等客户端 App 信息、连接到事件的**用户**、以及**事件**的描述。
 
 {% hint style="info" %}
 每一个**事件**都使用类型代码（`1000`、`1001` 等）关联，以标识事件所捕获的操作。[Bitwarden 公共 API](../../organizations/bitwarden-public-api.md) 使用类型代码来标识被事件所记录的操作。
@@ -197,4 +197,4 @@ Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19h
 * 集合
 * 群组
 
-在收集这些数据后，您可以将行连接到它们唯一的 ID 上，以建立对您的 Bitwarden 组织所有部分的参考。有关使用 Bitwarden CLI 的更多信息，请参阅 [Bitwarden 命令行工具（CLI）](../../password-manager/developer-tools/password-manager-cli.md)。
+在收集这些数据后，您可以将行连接到它们唯一的 ID 上，以建立对您的 Bitwarden 组织所有部分的参考。有关 Bitwarden CLI 使用的更多信息，请参阅 [Bitwarden 命令行工具 (CLI)](../../password-manager/developer-tools/password-manager-cli.md)。
