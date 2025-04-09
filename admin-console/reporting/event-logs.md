@@ -49,7 +49,7 @@ Bitwarden 客户端和服务器都会捕获事件，其中大多数事件发生�
 * Login attempted failed with incorrect password. (`1005`)
 * Login attempt failed with incorrect two-step login. (`1006`)
 * User Exported their personal Vault items. (`1007`)
-* User updated a password issued through [Admin Password Reset](../../organizations/admin-password-reset.md). (`1008`)
+* User updated a password issued through [account recovery](../../organizations/admin-password-reset.md). (`1008`)
 * User migrated their decryption key with [Key Connector](../../login-with-sso/about-key-connector.md). (`1009`)
 * User requested [device approval](../login-with-sso/trusted-devices/approve-a-trusted-device.md). (`1010`)
 
@@ -151,7 +151,7 @@ Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19h
 
 从 [Bitwarden 公共 API](../../organizations/bitwarden-public-api.md) 的 `/events` 端点访问事件日志将返回 JSON 响应，例如下面这样：
 
-```python
+```bash
 {
   "object": "list",
   "data": [
@@ -173,7 +173,14 @@ Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19h
 }
 ```
 
-## [SIEM](https://en.wikipedia.org/wiki/Security_information_and_event_management) 和外部系统集成 <a href="#siem-and-external-systems-integrations" id="siem-and-external-systems-integrations"></a>
+## SIEM 和外部系统集成 <a href="#siem-and-external-systems-integrations" id="siem-and-external-systems-integrations"></a>
+
+> **\[译者注]**：[SIEM](https://en.wikipedia.org/wiki/Security_information_and_event_management)（Security Information and Event Management，安全信息与事件管理）是一种综合性的网络安全解决方案，用于实时收集、分析、关联和响应来自企业IT基础设施中的安全事件和日志数据。其核心目标是通过集中化监控和智能分析，帮助组织检测威胁、调查安全事件并满足合规要求。
+>
+> 常见的 SIEM 工具有：
+>
+> * 商业产品：Splunk Enterprise Security、IBM QRadar、Microsoft Sentinel、LogRhythm 等
+> * 开源/免费方案：Elastic Stack、OSSIM、Wazuh 等
 
 当将数据从 Bitwarden 导出到其他系统时，可以使用 API​​ 和 CLI 的组合数据来收集数据。
 
