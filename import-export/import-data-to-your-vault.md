@@ -9,7 +9,7 @@
 关于支持的导入格式的完整列表，请参阅 [Bitwarden 支持导入哪些文件格式？](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)，或者使用这些文章用于从最流行的解决方案导入：
 
 * [从 LastPass 导入](../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)
-* [从1Password 导入](../password-manager/import-and-export/import-guides/import-data-from-1password.md)
+* [从 1Password 导入](../password-manager/import-and-export/import-guides/import-data-from-1password.md)
 * [从 Firefox 导入](../password-manager/import-and-export/import-guides/import-data-from-firefox.md)
 * [从 Google Chrome 或 Chromium 导入](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
 * [从 Microsoft Edge 导入](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
