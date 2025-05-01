@@ -23,6 +23,23 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.4.3
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.4.1、浏览器扩展 2025.4.0、桌面 2025.4.2、CLI 2025.4.0）
+
+此次发布包含：
+
+### Password Manager
+
+* **设备批准时浏览器扩展中的持久性：**&#x73B0;在，即使您点击退出或最小化扩展程序窗口以使用网页 App 批准请求，浏览器扩展程序也会等待最多两分钟才能获得批准。
+* **桌面端主密码重新提示更新：**&#x5F53;某个项目的主密码重新提示选项处于活动状态时，桌面 App 现在会将所有字段（而不仅仅是隐藏的字段）置于成功验证之后。[了解更多](your-vault/vault-items.md#protect-individual-items)。
+* **移动 App 的高级故障排除：**&#x5728;移动 App 中，打开飞行记录器以本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/shi-yong-bitwarden-zhi-chi-jie-jue-yi-dong-she-bei-wen-ti.md)。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **外部 ID 显示更新** ：外部 ID 现在只有在通过 SCIM、Bitwarden Directory Connector 或 API 配置后，才会显示在群组、集合和成员对话框中。了解更多有关 [Directory Connector](directory-connector/about-directory-connector.md) 的信息。
+* **成员 SSO 外部 ID**：对于配置为使用 SSO 的成员，成员 SSO 外部 ID 将显示在成员对话框中。
+
 ## 2025.4.0
 
 此次发布包含：
