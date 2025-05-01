@@ -33,7 +33,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 * **设备批准时浏览器扩展中的持久性：**&#x73B0;在，即使您点击退出或最小化扩展程序窗口以使用网页 App 批准请求，浏览器扩展程序也会等待最多两分钟才能获得批准。
 * **桌面端主密码重新提示更新：**&#x5F53;某个项目的主密码重新提示选项处于活动状态时，桌面 App 现在会将所有字段（而不仅仅是隐藏的字段）置于成功验证之后。[了解更多](your-vault/vault-items.md#protect-individual-items)。
-* **移动 App 的高级故障排除：**&#x5728;移动 App 中，打开飞行记录器以本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/shi-yong-bitwarden-zhi-chi-jie-jue-yi-dong-she-bei-wen-ti.md)。
+* **移动 App 的高级故障排除：**&#x5728;移动 App 中，打开飞行记录器以本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/yu-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 

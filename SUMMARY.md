@@ -111,7 +111,7 @@
     * [排除域名](miscellaneous/exclude-domains.md)
     * [Safari 网页扩展](miscellaneous/safari-web-extension.md)
     * [uMatrix 和 NoScript 访问规则](miscellaneous/umatrix-and-noscript-access-rules.md)
-    * [使用 Bitwarden 支持解决移动设备问题](password-manager/more/shi-yong-bitwarden-zhi-chi-jie-jue-yi-dong-she-bei-wen-ti.md)
+    * [与 Bitwarden 支持排除移动端故障](password-manager/more/yu-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)
 * [Bitwarden Authenticator](bitwarden-authenticator/README.md)
   * [Bitwarden Authenticator](bitwarden-authenticator/bitwarden-authenticator.md)
   * [导入 & 导出](bitwarden-authenticator/import-and-export.md)
