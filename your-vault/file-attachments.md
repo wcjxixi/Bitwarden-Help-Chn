@@ -128,6 +128,22 @@ bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --outp
 {% endtab %}
 {% endtabs %}
 
+## 导出所有附件 <a href="#export-all-attachments" id="export-all-attachments"></a>
+
+要从网页 App 创建包含附件的导出：
+
+1、在 Bitwarden 网页 App 中，从导航中选择**工具**  → **导出密码库**：
+
+{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5PUGzasNsQnABG9gtso4o3/9be00b37afafd779c20fd9624dd9512d/2024-12-03_08-59-25.png" %}
+导出个人密码库
+{% endembed %}
+
+2、从**文件格式**下拉菜单中选择 `.zip (with attachments)`。目前，附件只能从个人密码库中导出。
+
+3、选择**确认格式**，然后选择**导出密码库**按钮以完成。您需要使用主密码或电子邮件验证码确认您的权限。
+
+导出文件将被发送到您的下载文件夹或网络浏览器设置为下载文件的位置。
+
 ## 删除文件 <a href="#delete-a-file" id="delete-a-file"></a>
 
 要删除文件附件：
