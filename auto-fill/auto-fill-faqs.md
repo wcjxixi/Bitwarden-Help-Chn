@@ -6,7 +6,7 @@
 
 ### 问：如何禁用 Bitwarden 无障碍气泡？ <a href="#q-how-do-i-disable-the-bitwarden-accessbility-bubble" id="q-how-do-i-disable-the-bitwarden-accessbility-bubble"></a>
 
-1. 在您的安卓设备中打开**设置**。
+1. 在您的 Android 设备中打开**设置**。
 2. 导航到**无障碍**。
 3. 选择 **Bitwarden**。
 4. 将 Bitwarden 快捷方式切换为关闭。

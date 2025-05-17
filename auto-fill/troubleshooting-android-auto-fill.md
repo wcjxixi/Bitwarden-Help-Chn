@@ -34,7 +34,7 @@
 
 ## 无障碍服务故障排除 <a href="#troubleshooting-the-accessibility-service" id="troubleshooting-the-accessibility-service"></a>
 
-使用无障碍服务遇到的最常见的问题是，**安卓电池优化**设置会自动关闭服务（如无障碍服务）以保护电池。要解决这个问题，**请关闭针对 Bitwarden 的电池优化**。
+使用无障碍服务遇到的最常见的问题是，**Android 电池优化**设置会自动关闭服务（如无障碍服务）以保护电池。要解决这个问题，**请关闭针对 Bitwarden 的电池优化**。
 
 如果您持续遇到无障碍服务的问题：
 

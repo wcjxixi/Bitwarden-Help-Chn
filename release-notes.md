@@ -30,7 +30,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 ### Password Manager
 
 * **增强的 PIN 要求**：在浏览器扩展中，用于解锁的 PIN 现在必须至少为 4 个字符。这将在今后的版本中更新到其他客户端中。
-* **从网页和浏览器导出附件**：在网页 App 和浏览器扩展中，现在可以创建包含文件附件的 .zip 导出。这将在今后的版本中添加到其他客户端中。[了解更多](your-vault/file-attachments.md)。
+* **从网页和浏览器导出附件**：在网页 App 和浏览器扩展中，现在可以创建包含文件附件的 `.zip` 导出。这将在今后的版本中添加到其他客户端中。[了解更多](your-vault/file-attachments.md)。
 * **搜索结果中的嵌套集合**：嵌套集合现在包含在搜索结果中，使查找相关项目变得更容易。[了解更多](organizations/collections.md)有关集合的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -153,7 +153,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ## 2025.1.2
 
-（版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版本号分别为服务器 2025.1.4、桌面 2025.1.4、浏览器扩展 2025.1.3、CLI 2025.1.3、iOS 2025.1.2 和安卓 2025.1.1）
+（版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版本号分别为服务器 2025.1.4、桌面 2025.1.4、浏览器扩展 2025.1.3、CLI 2025.1.3、iOS 2025.1.2 和 Android 2025.1.1）
 
 此次发布包含：
 
@@ -484,7 +484,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **在移动 App 上使用通行密钥**：Password Manager 移动 App 现在可以使用通行密钥创建和登录。此功能适用于 iOS 系统，安卓系统为测试版。[了解更多](password-manager/vault-basics/storing-passkeys.md)。
+* **在移动 App 上使用通行密钥**：Password Manager 移动 App 现在可以使用通行密钥创建和登录。此功能适用于 iOS 系统，Android 系统为测试版。[了解更多](password-manager/vault-basics/storing-passkeys.md)。
 * **删除已存储的通行密钥**：现在可以使用 Bitwarden 浏览器扩展和桌面应用程序删除存储在 Bitwarden 登录项目中的通行密钥。[了解更多](password-manager/vault-basics/storing-passkeys.md)。
 
 ### Secrets Manager
@@ -882,7 +882,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 * **用于自托管企业组织的家庭赞助**：现在可以为自托管的企业组织成员发放家庭组织赞助（参阅[这里](self-hosting/self-hosting-families-sponsorships.md)）。
 * **用户名生成器 - 转发的电子邮件别名类型**：将用户名生成器与 SimpleLogin、AnonAddy 或 Firefox Relay 集成，以自动同时创建用户名和相应的电子邮件别名（参阅[这里](password-manager/vault-basics/generator.md#username-types)）。
 * **项目链接**：复制一个项目的 URL 时，将作为直接链接提供给组织成员或在文档中使用（参阅[这里](organizations/link-to-an-item.md)）。
-* **自动填写期间的账户切换**：在安卓系统中，通过点击头像气泡，以在自动填写过程中快速切换到另一个账户（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md#auto-fill-while-account-switching)）。
+* **自动填写期间的账户切换**：在 Android 系统中，通过点击头像气泡，以在自动填写过程中快速切换到另一个账户（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md#auto-fill-while-account-switching)）。
 * **客户组织计费的变化**：从这个发布版本开始，只有[提供商](provider-portal/get-started-with-provider-portal.md)用户可以查看[客户组织](provider-portal/get-started-with-provider-portal.md#client-organizations)的计费信息。
 
 ## 2022-04-26 <a href="#id-2022-04-26" id="id-2022-04-26"></a>
