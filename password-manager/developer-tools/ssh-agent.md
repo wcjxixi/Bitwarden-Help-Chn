@@ -127,7 +127,7 @@ iOS 上选择编辑 SSH 密钥
 
 2、复制要导入到 Bitwarden 的现有 SSH 密钥。使用**从剪贴板导入密钥**选项。这将自动将 SSH 密钥粘贴到 Bitwarden 中。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5QTvyu39h3o0azkjU26P3t/57dde763e9f7fa60dc837f1ba25e17b3/import.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/5QTvyu39h3o0azkjU26P3t/9c2203a723f91c6a9b34c848bd0cb300/imported_key_ui.png?w=563&fm=avif&q=80" %}
 在桌面客户端上导入 SSH 密钥
 {% endembed %}
 
@@ -230,9 +230,21 @@ export SSH_AUTH_SOCK=/home/<user>/.var/app/com.bitwarden.desktop/data/.bitwarden
 
 ## 启用 SSH 代理 <a href="#enable-ssh-agent" id="enable-ssh-agent"></a>
 
-要在 Bitwarden 桌面 App 上启用 SSH 代理，请导航至**设置**然后**启用 SSH 代理**。
+要在 Bitwarden 桌面 App 上启用 SSH 代理，请导航至**设置**然后选中**启用 SSH 代理**。
 
-<div align="left"><figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7Fx7AnfIPXmiJpHq1lFhTx/db8dc33356f28b7c347dbe6f7af490fe/2024-12-09_09-09-08.png?_a=DAJAUVWIZAAB" alt=""><figcaption><p>在桌面客户端上启用 SSH 存储</p></figcaption></figure></div>
+{% embed url="https://bitwarden.com/assets/7Fx7AnfIPXmiJpHq1lFhTx/4591ef1b514df8fe1d51c30dc5ffd4d5/2025-05-20_16-06-21.png?w=992&fm=avif&q=80" %}
+在桌面客户端上启用 SSH 存储
+{% endembed %}
+
+启用 SSH 代理后，还可以调整**使用 SSH 代理时要求身份验证**设置。该设置将决定 Bitwarden 何时要求验证对 SSH 密钥的访问权限：
+
+{% embed url="https://bitwarden.com/assets/7M0oE4BXZWiTpub3Vqwfpp/803eabf2073b2035266469c6c2d4ead8/2025-05-22_09-00-17.png?w=450&fm=avif&q=80" %}
+
+* 总是
+* 从不
+* 记住知道密码库被锁定
+
+m
 
 ## 测试 SSH 密钥 <a href="#testing-ssh-keys" id="testing-ssh-keys"></a>
 

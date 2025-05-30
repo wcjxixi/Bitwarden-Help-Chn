@@ -27,12 +27,16 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.5.1、浏览器扩展 2025.5.1、桌面 2025.5.0、iOS 2025.5.0、Android 2025.5.0、CLI 2025.5.0）
 
+{% hint style="info" %}
+Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，旧版本将无法正常运行（尤其影响 CLI 用户）。为了提升安全性和可维护性，请务必将所有已安装客户端升级至最新版本。
+{% endhint %}
+
 ### Password Manager
 
 * **更新了通知设计**：浏览器扩展通知已更新为全新的视觉设计。[了解更多](password-manager/autofill/autofill-from/autosave-from-browser-extensions.md)。
 * **支持从桌面和 CLI 导出附件**：现在可以通过桌面 App 和 CLI 将个人密码库文件附件导出为 `.zip` 压缩包。[了解更多](your-vault/file-attachments.md)。
-* **Android 动态颜色支持**：Bitwarden Android App 现在支持根据壁纸自动应用配色方案。了解更多。
-* **SSH 批准设置**：已在桌面 App 上启用 SSH 代理的用户可使用一项新的设置：可以指定 Bitwarden 何时要求您授权访问存储在密码库中的 SSH 凭据。了解更多有关 SSH 代理设置的信息。
+* **Android 动态颜色支持**：Bitwarden Android App 现在支持根据壁纸自动应用配色方案。[了解更多](miscellaneous/change-app-theme.md#yi-dong-duan)。
+* **SSH 批准设置**：已在桌面 App 上启用 SSH 代理的用户可使用一项新的设置：可以指定 Bitwarden 何时要求您授权访问存储在密码库中的 SSH 凭据。[了解更多](password-manager/developer-tools/ssh-agent.md)有关 SSH 代理设置的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 

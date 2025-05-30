@@ -62,8 +62,8 @@ Bitwarden 的网页密码库、浏览器扩展、桌面 App 和移动 App 带有
 
 3、点击**主题**选项然后选择您喜欢的主题！
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/ntCXOl03Oi6zmXx5Z9j5C/8af7beacf4b86c50ba7993a122eea7e9/2025-01-22_10-08-35.png?_a=DAJCwlWIZAAB" %}
-更改主题
+{% embed url="https://bitwarden.com/assets/ntCXOl03Oi6zmXx5Z9j5C/1329fb58540811d4b195b638b2628aca/2025-05-20_15-28-44.png?w=720&fm=avif&q=80" %}
+更改移动端主题
 {% endembed %}
 {% endtab %}
 {% endtabs %}
