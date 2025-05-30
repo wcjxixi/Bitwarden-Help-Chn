@@ -1,10 +1,10 @@
-# 发布记录
+# 发行记录
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/releasenotes/)
 {% endhint %}
 
-Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个绝对要求。请访问以下 GitHub 链接查看完整、详细的发布记录：
+Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个绝对要求。请访问以下 GitHub 链接查看完整、详细的发行记录：
 
 * [Server Releases](https://github.com/bitwarden/server/releases)
 * [Web Releases](https://github.com/bitwarden/clients/releases)
@@ -15,7 +15,7 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 * [CLI Releases](https://github.com/bitwarden/clients/releases)
 * [Directory Connector Releases](https://github.com/bitwarden/directory-connector/releases)
 
-## 发布公告
+## 发行公告
 
 Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面端、浏览器扩展、移动端等），以及自托管服务器，以确保功能的有效性和稳定性。因此，客户端应用程序和自托管服务器将在初始发布后逐步获得所列的功能。请查看 Bitwarden [软件发布支持](security/bitwarden-software-release-support.md)文档。
 
@@ -29,8 +29,8 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **更新了通知设计**：浏览器扩展通知已更新为全新的视觉设计。了解更多。
-* **支持从桌面和 CLI 导出附件**：现在可以通过桌面 App 和 CLI 将个人密码库文件附件导出为 `.zip` 压缩包。了解更多。
+* **更新了通知设计**：浏览器扩展通知已更新为全新的视觉设计。[了解更多](password-manager/autofill/autofill-from/autosave-from-browser-extensions.md)。
+* **支持从桌面和 CLI 导出附件**：现在可以通过桌面 App 和 CLI 将个人密码库文件附件导出为 `.zip` 压缩包。[了解更多](your-vault/file-attachments.md)。
 * **Android 动态颜色支持**：Bitwarden Android App 现在支持根据壁纸自动应用配色方案。了解更多。
 * **SSH 批准设置**：已在桌面 App 上启用 SSH 代理的用户可使用一项新的设置：可以指定 Bitwarden 何时要求您授权访问存储在密码库中的 SSH 凭据。了解更多有关 SSH 代理设置的信息。
 
