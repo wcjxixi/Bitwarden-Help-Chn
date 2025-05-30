@@ -71,7 +71,7 @@
     * [调整 Bitwarden .csv 或 .json](import-export/condition-a-bitwarden-.csv-or-.json.md)
     * [\*Bitwarden 导入器工具](password-manager/import-and-export/bitwarden-importer-tool.md)
     * [导入 & 导出 FAQ](import-export/import-and-export-faqs.md)
-  * [=自动填充](password-manager/autofill/README.md)
+  * [自动填充](password-manager/autofill/README.md)
     * [从 ... 自动填充](password-manager/autofill/autofill-from/README.md)
       * [从浏览器扩展自动填充](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)
       * [从浏览器扩展自动保存](password-manager/autofill/autofill-from/autosave-from-browser-extensions.md)
