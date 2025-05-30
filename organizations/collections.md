@@ -1,4 +1,4 @@
-# 集合
+# =集合
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/about-collections/)
@@ -121,6 +121,12 @@
 
 2、从对话窗口中，使用下拉菜单选择您希望将密码库项目分配到的集合。完成分配方案后，选择**分配**。
 
+### 从所有集合移除某个项目 <a href="#remove-an-item-from-all-collections" id="remove-an-item-from-all-collections"></a>
+
+### 对非管理集合添加访问权限 <a href="#add-access-to-un-managed-collections" id="add-access-to-un-managed-collections"></a>
+
 ## 集合设置 <a href="#collections-settings" id="collections-settings"></a>
 
 组织的所有者可以在**设置** → **组织信息**界面上配置集合行为，以适应组织需求。[了解更多](../admin-console/organization-basics/collection-management.md)。
+
+## 集合权限 <a href="#collections-permissions" id="collections-permissions"></a>

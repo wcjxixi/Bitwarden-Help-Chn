@@ -242,9 +242,9 @@ export SSH_AUTH_SOCK=/home/<user>/.var/app/com.bitwarden.desktop/data/.bitwarden
 
 * 总是
 * 从不
-* 记住知道密码库被锁定
+* 记住直到密码库被锁定
 
-m
+默认情况下将选择**始终**。
 
 ## 测试 SSH 密钥 <a href="#testing-ssh-keys" id="testing-ssh-keys"></a>
 
@@ -412,3 +412,29 @@ git push
 7、通过导航到 GitHub commits 以验证您在 Github 上的提交：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1PR4Sss3Pvf3anlau5AlgC/ecfdb02b50fb83f59a21ebc7ed550042/2025-02-12_14-51-41.png?_a=DAJCwlWIZAAB" %}
+
+## SSH 代理转发 <a href="#ssh-agent-forwarding" id="ssh-agent-forwarding"></a>
+
+SSH 代理转发允许您访问的远程服务器使用您的密钥向其他服务器进行身份验证，而不会将您的私钥暴露在密码库之外。您登录的服务器可以请求您的本地 Bitwarden 实例对远程服务器进行身份验证。在本例中，我们将演示在服务器之间传输一个文件：
+
+1、首先，通过导航至**设置**然后**启用 SSH 代理**，确保已在 Bitwarden 桌面 App 上启用 SSH 代理：
+
+2、创建新的 SSH 密钥或导入现有的 SSH 密钥到 Bitwarden 桌面 App。
+
+3、打开与要发送文件的服务器的连接，激活代理转发：
+
+```bash
+ssh -A <Hostname>
+```
+
+4、向服务器发送一个文件：
+
+```bash
+rsync -avzP ./TEST.txt <USER>@<Hostname>:/home/<USER>/test.txt
+```
+
+5、Bitwarden 会提示您批准此 SSH 密钥得访问权限。将显示 SSH 密钥已被请求并用于完成文件传输。
+
+{% embed url="https://bitwarden.com/assets/26n37qx0HKJ47ZdAzP2UFw/611025ed1513d6441acc4fecf547e12e/395218105-683d4ead-1f7e-46b3-8799-7591a74952af.png?w=750&fm=avif&q=80" %}
+确认 SSH 代理转发
+{% endembed %}
