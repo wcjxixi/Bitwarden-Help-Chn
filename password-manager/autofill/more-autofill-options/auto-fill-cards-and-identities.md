@@ -1,10 +1,10 @@
-# 自动填充支付卡和身份
+# 自动填充支付卡 & 身份
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-card-id/)
 {% endhint %}
 
-Bitwarden 不止于[自动填充用户名和密码](auto-fill-logins-in-browser-extensions.md)！Bitwarden 浏览器扩展可以使用[独特的选项卡视图](auto-fill-logins-in-browser-extensions.md)自动填充[支付卡](../../../your-vault/vault-items.md#zhi-fu-ka)和[身份信息](../../../your-vault/vault-items.md#shen-fen)，以简化网上购物、账户创建等操作。
+Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！Bitwarden 浏览器扩展可以使用[独特的选项卡视图](../autofill-from/autofill-from-browser-extensions.md)自动填充[支付卡](../../../your-vault/vault-items.md#zhi-fu-ka)和[身份信息](../../../your-vault/vault-items.md#shen-fen)，以简化网上购物、账户创建等操作。
 
 {% hint style="info" %}
 目前，自动填充支付卡和身份的功能仅适用于浏览器扩展。Android 和 iOS 等移动平台不支持此类型的自动填充功能。

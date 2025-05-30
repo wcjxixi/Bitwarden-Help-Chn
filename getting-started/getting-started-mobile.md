@@ -108,14 +108,14 @@ Android 自动填充选项
 
 4、在**自动填充服务**列表中，点击 **Bitwarden**。
 
-系统会提示您确认信任 Bitwarden。点击**确定**将让 Bitwarden 读取屏幕上的内容，以了解何时提供自动填充服务。更多信息，请参阅 [Android 上的自动填充登录](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md)。
+系统会提示您确认信任 Bitwarden。点击**确定**将让 Bitwarden 读取屏幕上的内容，以了解何时提供自动填充服务。更多信息，请参阅 [Android 上的自动填充登录](../password-manager/autofill/autofill-from/autofill-from-android.md)。
 
 并将其开启。绿色的`已启用`信息表明自动填充处于活动状态。\
-切换后，您可能需要根据您可用的或已启用的自动填充选项来更改某些 Android 本地设置。有关更多信息，请参阅 [Android 上的自动填充登录](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md)。
+切换后，您可能需要根据您可用的或已启用的自动填充选项来更改某些 Android 本地设置。有关更多信息，请参阅 [Android 上的自动填充登录](../password-manager/autofill/autofill-from/autofill-from-android.md)。
 
 ### 从移动应用程序启动 <a href="#launch-from-mobile-apps" id="launch-from-mobile-apps"></a>
 
-您可以在任何具有有效 URI 的密码库项目中选择 **⮫启动**按钮，以直接从 Bitwarden 启动网站。如果你不熟悉 URI 的使用，请参阅 [URI 的使用](../auto-fill/using-uris.md)。
+您可以在任何具有有效 URI 的密码库项目中选择 **⮫启动**按钮，以直接从 Bitwarden 启动网站。如果你不熟悉 URI 的使用，请参阅 [URI 的使用](../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md)。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2PsCaLjOAe6WEfnwMkYG0P/be1fde317404835cba1e600244922d98/2025-01-21_15-32-37.png?_a=DAJCwlWIZAAB" %}
 从移动端启动
@@ -173,7 +173,7 @@ Android 自动填充种类
 
 ### 从移动应用程序启动 <a href="#launch-from-mobile-apps" id="launch-from-mobile-apps"></a>
 
-您可以直接从 Bitwarden 移动 App 启动一个网站，方法是在任何具有有效 URI 的密码库项目中选择 **⮫启动**按钮。如果您还不熟悉 URI 的使用，请参阅 [URI 的使用](../auto-fill/using-uris.md)。
+您可以直接从 Bitwarden 移动 App 启动一个网站，方法是在任何具有有效 URI 的密码库项目中选择 **⮫启动**按钮。如果您还不熟悉 URI 的使用，请参阅 [URI 的使用](../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md)。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2PsCaLjOAe6WEfnwMkYG0P/be1fde317404835cba1e600244922d98/2025-01-21_15-32-37.png?_a=DAJCwlWIZAAB" %}
 从移动端启动

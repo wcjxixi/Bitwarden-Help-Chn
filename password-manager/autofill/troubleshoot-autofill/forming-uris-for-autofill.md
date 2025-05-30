@@ -1,12 +1,12 @@
-# URI 的使用
+# 用于自动填充的 URI
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/uri-match-detection/)
 {% endhint %}
 
-密码库中的任何登录项目都可以具有一个或多个 URI（Uniform Resource Identifier：统一资源标识符）。URI 可以是网站地址（即 URL）、服务器 IP 地址、移动 App 包 ID 等。
+密码库中的任何登录项目都可以具有一个或多个 URI（Uniform Resource Identifier：统一资源标识符）。URI 可以是网站地址（即 URL）、服务器 IP 地址、移动 App 包 ID 等。在网页 App 和浏览器扩展的**编辑登录**视图中，如果有多个网站 URI，可以使用拖放按钮重新排序，以便更好地进行视觉组织：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/aDbOEJ6x8G44gkDYcuHJ6/ac31ce7e6a9314e04ec6e5e3b9a615ba/2024-12-03_10-00-28.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/aDbOEJ6x8G44gkDYcuHJ6/dfef7ac49894805dd0e1e718452e6a60/2025-03-25_09-45-56.png?w=967&fm=avif&q=80" %}
 网页 App 中登录项目的 URI 字段
 {% endembed %}
 
@@ -75,7 +75,7 @@ Bitwarden 浏览器扩展和移动应用程序可以通过导航到 **⚙️设�
 | `http://yahoo.c`om            | **✘**  |
 
 {% hint style="info" %}
-带有本地 TLD（例如 `http://mysite.local` 或 `https://mysite.lan`）或单术语主机名（例如 `http://localdevice`）URI 的用于自动填充的登录项目，将无法使用基础域名检测。我们建议使用[主机匹配](using-uris.md#host)。
+带有本地 TLD（例如 `http://mysite.local` 或 `https://mysite.lan`）或单术语主机名（例如 `http://localdevice`）URI 的用于自动填充的登录项目，将无法使用基础域名检测。我们建议使用[主机匹配](forming-uris-for-autofill.md#host)。
 {% endhint %}
 
 > **\[译者注]**：本地 TLD、单术语主机名，通常用于本地环境，而不是互联网上的公开服务。因此，Bitwarden 等工具无法对它们进行基础域名检测。
@@ -99,7 +99,7 @@ Bitwarden 浏览器扩展和移动应用程序可以通过导航到 **⚙️设�
 | `https://sub.domain.com:5000`           | **✘**  |
 
 {% hint style="danger" %}
-在使用[基于键盘的建议](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md#keyboard-auto-fill)时，iOS 将始终使用基础域匹配自动填充建议。登录时打开 Bitwarden App，将允许您手动选择适当的 App 进行自动填充。
+在使用[基于键盘的建议](../autofill-from/autofill-from-ios.md#keyboard-auto-fill)时，iOS 将始终使用基础域匹配自动填充建议。登录时打开 Bitwarden App，将允许您手动选择适当的 App 进行自动填充。
 {% endhint %}
 
 ### 开始于 <a href="#starts-with" id="starts-with"></a>
@@ -178,5 +178,5 @@ URI 为 `^https://[a-z]+\.wikipedia\.org/w/index\.php`，使用正则表达式�
 Bitwarden 维护一个经过审核的主要网站的默认等效域名列表，例如 apple.com 和 icloud.com，以改善您的自动填填充体验。您可以将鼠标悬停在任何给定的等效域名上，然后使用 **⚙️**选项菜单选择 **✘排除**，以禁用该等效域名。
 
 {% hint style="success" %}
-对于使用[精确匹配检测](using-uris.md#exact)的项目，等效域名将被忽略。例如，一个保存的 URI 为 `apple.com` 并设置为**精确**的项目，将不会为 `icloud.com` 提供自动填充，即使 `icloud.com` 是默认的等效域名。
+对于使用[精确匹配检测](forming-uris-for-autofill.md#exact)的项目，等效域名将被忽略。例如，一个保存的 URI 为 `apple.com` 并设置为**精确**的项目，将不会为 `icloud.com` 提供自动填充，即使 `icloud.com` 是默认的等效域名。
 {% endhint %}

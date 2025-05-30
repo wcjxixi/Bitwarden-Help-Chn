@@ -114,14 +114,14 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 浏览器扩展筛选器和建议
 {% endembed %}
 
-浏览器扩展项有好几种可供选择的自动填充选项，包括上下文菜单和键盘快捷键。[了解更多](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
+浏览器扩展项有好几种可供选择的自动填充选项，包括上下文菜单和键盘快捷键。[了解更多](../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 
 ### 自动保存登录 <a href="#auto-save-a-login" id="auto-save-a-login"></a>
 
 当您登录一个**未使用自动填充**的网站时，如果出现以下情况，Bitwarden 将建议您记住登录信息：
 
-* 具有该 [URI](../auto-fill/using-uris.md) 的项目不在您的密码库中。
-* 具有该 [URI](../auto-fill/using-uris.md) 的项目在您的密码库中，但具有不同的用户名或密码。
+* 具有该 [URI](../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md) 的项目不在您的密码库中。
+* 具有该 [URI](../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md) 的项目在您的密码库中，但具有不同的用户名或密码。
 
 当您看到此横幅时，选择**保存**以使用用户名、密码和 URI 添加新的登录项目，或更新现有登录项目。如果是新项目，还可以选择**选择文件夹...**，或在保存前**编辑**此项目：
 
@@ -134,7 +134,7 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 如果不想看到这些横幅，请打开浏览器扩展的 **⚙️设置**选项卡，选择**通知**，然后取消选中**询问添加登录**和**询问更新现有登录**复选框。
 
 {% hint style="success" %}
-您知道使用 Bitwarden 浏览器扩展可以保存和自动填充通行密钥吗？[了解更多](../password-manager/vault-basics/storing-passkeys.md)关于通行密钥的信息。
+您知道使用 Bitwarden 浏览器扩展可以保存和自动填充通行密钥吗？[了解更多](../password-manager/autofill/more-autofill-options/autofill-passkeys.md)关于通行密钥的信息。
 {% endhint %}
 
 ### 使用 PIN 码或生物识别解锁 <a href="#unlock-with-pin-or-biometrics" id="unlock-with-pin-or-biometrics"></a>

@@ -1,13 +1,13 @@
-# 浏览器扩展中的自动填充登录
+# 从浏览器扩展自动填充
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-browser/)
 {% endhint %}
 
 {% hint style="success" %}
-如果您的浏览器扩展在自动填充特定站点的用户名和密码时遇到问题，使用[已链接的自定义字段](<Auto-fill Custom Fields.md#using-linked-custom-fields>)可以强制自动填充。
+如果您的浏览器扩展在自动填充特定站点的用户名和密码时遇到问题，使用[已链接的自定义字段](../more-autofill-options/auto-fill-custom-fields.md#using-linked-custom-fields)可以强制自动填充。
 
-此外，基本验证提示的工作方式与常规自动填充略有不同。有关更多信息，请参阅另一篇[基本验证提示](../../../auto-fill/basic-auth-prompts.md)的文章。
+此外，基本验证提示的工作方式与常规自动填充略有不同。有关更多信息，请参阅另一篇[基本验证提示](../more-autofill-options/basic-auth-prompts.md)的文章。
 {% endhint %}
 
 使用 Bitwarden 浏览器扩展有很多自动填写凭据的方法！最基本的方法是在网站登录页面打开 Bitwarden 浏览器扩展，在**密码库**选项卡中选择建议项目的**填充**按钮：
@@ -66,9 +66,9 @@
 
 2、选择 **⚙️设置** → **自动填充**，然后定位到**在表单字段显示自动填充建议**下拉菜单。选择您首选的自动填充菜单行为。
 
-3、如果您希望内嵌自动填充菜单建议这些项目类型，还可以切换**将身份显示为建议**和**将支付卡显示为建议**选项。在[这里](auto-fill-cards-and-identities.md#using-the-inline-menu)了解更多信息。
+3、如果您希望内嵌自动填充菜单建议这些项目类型，还可以切换**将身份显示为建议**和**将支付卡显示为建议**选项。在[这里](../more-autofill-options/auto-fill-cards-and-identities.md#using-the-inline-menu)了解更多信息。
 
-4、下一步，我们建议您禁用浏览器的自动填充选项。如果您的浏览器的自动填充功能已启用，它可能会与 Bitwarden 的自动填充菜单产生冲突。在[这里](../../../auto-fill/disable-a-browsers-built-in-password-manager.md)了解更多信息。
+4、下一步，我们建议您禁用浏览器的自动填充选项。如果您的浏览器的自动填充功能已启用，它可能会与 Bitwarden 的自动填充菜单产生冲突。在[这里](../troubleshoot-autofill/disable-a-browsers-built-in-password-manager.md)了解更多信息。
 
 Chrome 和 Brave 用户可以勾选**覆盖浏览器的自动填充设置**选项来禁用浏览器自带的自动填充。
 
@@ -90,7 +90,7 @@ Chrome 和 Brave 用户可以勾选**覆盖浏览器的自动填充设置**选�
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1nVpqyl5FuzMPIaKezwZ8c/8a715cb0b1e1423815f0b66b0e8b1b42/web-browser-extension-autofill-newitem.png?_a=DAJCwlWIZAAB" %}
 
-当基于该项目的[已保存 URI](../../../auto-fill/using-uris.md) 预期使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点之前发出警告。
+当基于该项目的[已保存 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 预期使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](autofill-from-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点之前发出警告。
 
 {% hint style="info" %}
 如果内嵌自动填充菜单对浏览器造成意外干扰，可按 Esc 键关闭。
@@ -150,13 +150,13 @@ TOTP 内嵌自动填充单次登录
 浏览器扩展上下文菜单
 {% endembed %}
 
-当基于该项目的[已保存 URI](../../../auto-fill/using-uris.md) 使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点时发出警告。
+当基于该项目的[已保存 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](autofill-from-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点时发出警告。
 
 ## 键盘快捷键 <a href="#keyboard-shortcuts" id="keyboard-shortcuts"></a>
 
 Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为热键）来自动填充登录信息。当您尝试此操作时，如果您的密码库已锁定，则会打开一个弹出窗口，提示您解锁。解锁后，浏览器扩展将自动继续填充您的凭据。
 
-当基于该项目的[已保存 URI](../../../auto-fill/using-uris.md) 预期使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点之前发出警告。
+当基于该项目的[已保存 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 预期使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](autofill-from-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点之前发出警告。
 
 要自动填充登录信息，请使用以下**默认**快捷键。如果检测到的 URI 匹配多个项目，最后使用的登录项目将用于自动填充操作。您可以通过反复使用键盘快捷键来循环浏览多个登录项目：
 
@@ -179,12 +179,23 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为热键）来�
 
 某些浏览器包括 **Safari** 和旧版 **Edge**，目前不支持更改扩展程序的默认键盘快捷键。
 
+## 拖动和填充用户名 & 密码 <a href="#drag-and-fill-username-passwords" id="drag-and-fill-username-passwords"></a>
+
+浏览器扩展程序和桌面 App 包含一个功能，将用户名和密码字段拖动到网站的登录表单中以填充凭据：
+
+{% embed url="https://bitwarden.com/assets/7m5Ghz2w281MDQXtvWVdAZ/ded43247a3295552fed4690a3431b095/browser_gif.gif?w=750&fm=avif&q=80" %}
+
+要拖动并填充证书：
+
+1. 将光标移至 Bitwarden 浏览器扩展或桌面 App 上的用户名或密码字段。
+2. 图标出现后，将字段拖入所需的登录表单中。
+
 ## 页面加载时 <a href="#on-page-load" id="on-page-load"></a>
 
 {% hint style="warning" %}
 此功能默认情况下被禁用，因为虽然它通常比较安全，但受损或不受信任的网站可能会利用此功能窃取凭据。
 
-浏览器扩展不允许在页面加载时自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes)，并且当根据[该项目的已保存 URI](../../../auto-fill/using-uris.md) 预期使用 HTTPS 时，浏览器扩展将在 HTTP 站点上自动填充之前向用户发出警告。
+浏览器扩展不允许在页面加载时自动填充[不受信任的 iframe](autofill-from-browser-extensions.md#auto-fill-in-inframes)，并且当根据[该项目的已保存 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 预期使用 HTTPS 时，浏览器扩展将在 HTTP 站点上自动填充之前向用户发出警告。
 {% endhint %}
 
 页面加载时自动填充是 Bitwarden 浏览器扩展提供的一个选择性功能（参见上面的**警告**）。页面加载时自动填充功能将在加载与登录项目的 URI 值对应的网页时自动填充登录信息。启用后，您可以设置其默认的行为（即对所有密码库项目开启或对密码库项目关闭）。
@@ -204,7 +215,7 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为热键）来�
 
 您可以在**🔒密码库**视图中打开没有保存 URI 的项目，然后选择**填充**按钮，从而手动自动填充这些项目。
 
-当基于该项目的[已保存 URI](../../../auto-fill/using-uris.md) 预期使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](auto-fill-logins-in-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点之前发出警告。
+当基于该项目的[已保存 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 预期使用 HTTPS 时，浏览器扩展将在用户使用此方法自动填充[不受信任的 iframe](autofill-from-browser-extensions.md#auto-fill-in-inframes) 或 HTTP 站点之前发出警告。
 
 ## TOTP 自动填充 <a href="#totp-auto-fill" id="totp-auto-fill"></a>
 
@@ -218,14 +229,14 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为热键）来�
 
 ## 自动填充框架 <a href="#auto-fill-in-inframes" id="auto-fill-in-inframes"></a>
 
-浏览器扩展会悄悄地禁用不受信任的 iframe 的[页面加载自动填充](auto-fill-logins-in-browser-extensions.md#on-page-load)，如果用户使用键盘快捷键、上下文菜单或直接从浏览器扩展手动触发自动填充，则会警告用户有关 iframe 的信息。
+浏览器扩展会悄悄地禁用不受信任的 iframe 的[页面加载自动填充](autofill-from-browser-extensions.md#on-page-load)，如果用户使用键盘快捷键、上下文菜单或直接从浏览器扩展手动触发自动填充，则会警告用户有关 iframe 的信息。
 
-「不受信任」的 iframe 被定义为 `src=""` 值与登录项目的 URI 不匹配的 iframe，如全局设置或特定于项目的[匹配检测行为](../../../auto-fill/using-uris.md#match-detection-options)所指示的那样。
+「不受信任」的 iframe 被定义为 `src=""` 值与登录项目的 URI 不匹配的 iframe，如全局设置或特定于项目的[匹配检测行为](../troubleshoot-autofill/forming-uris-for-autofill.md#match-detection-options)所指示的那样。
 
 ## 使用 Bitwarden 中存储的通行密钥登录 <a href="#log-in-with-passkeys-stored-in-bitwarden" id="log-in-with-passkeys-stored-in-bitwarden"></a>
 
 {% hint style="info" %}
-如果某个域名位于[排除域名](../../../miscellaneous/exclude-domains.md)列表中，Bitwarden 浏览器扩展就不会发出通行密钥提示。
+如果某个域名位于[排除域名](../more-autofill-options/exclude-domains.md)列表中，Bitwarden 浏览器扩展就不会发出通行密钥提示。
 {% endhint %}
 
 存储新的通行密钥时，网站 URI 将保存在新的登录项目中。访问您希望使用通行密钥登录的网站，然后开始通行密钥登录工作流程。相关通行密钥将显示在 Bitwarden 浏览器扩展对话框中。选择要使用的通行密钥，然后按**确认**。
@@ -237,5 +248,5 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为热键）来�
 
 
 {% hint style="success" %}
-[内嵌自动填充菜单](auto-fill-logins-in-browser-extensions.md#inline-auto-fill-menu)还可用于轻松使用通行密钥进行身份验证。
+[内嵌自动填充菜单](autofill-from-browser-extensions.md#inline-auto-fill-menu)还可用于轻松使用通行密钥进行身份验证。
 {% endhint %}

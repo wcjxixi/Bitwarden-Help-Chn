@@ -23,5 +23,5 @@ Safari 网页扩展具有与以前的 App 扩展完全相同的功能。有关 S
 3. 选中 **Bitwarden** 复选框，然后在确认对话框中选择**开启**。
 
 {% hint style="info" %}
-这些说明适用于桌面网页浏览器的浏览器扩展，点击[此处](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md#browser-app-extension-auto-fill)了解如何为 iOS 上的移动网页浏览器设置扩展。
+这些说明适用于桌面网页浏览器的浏览器扩展，点击[此处](../password-manager/autofill/autofill-from/autofill-from-ios.md#browser-app-extension-auto-fill)了解如何为 iOS 上的移动网页浏览器设置扩展。
 {% endhint %}

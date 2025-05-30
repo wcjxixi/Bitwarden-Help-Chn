@@ -23,11 +23,11 @@ Microsoft Edge 的自动填充要求是最新的基于 Chromium 的版本。
 * `Ctrl/CMD + Shift + L` → 自动填充，再次按下可在匹配的登录之间循环
 * `Ctrl/CMD + Shift + 9` → 生成密码并复制到剪贴板
 * `Ctrl/CMD + Shift + N` → 锁定扩展
-* 手动分配 → 为当前网站自动填充上次使用的支付卡。[了解如何操作](auto-fill-basics/auto-fill-cards-and-identities.md#using-keyboard-shortcuts)。
-* 手动分配 → 为当前网站自动填充上次使用的身份信息。[了解如何操作](auto-fill-basics/auto-fill-cards-and-identities.md#using-the-inline-menu)。
+* 手动分配 → 为当前网站自动填充上次使用的支付卡。[了解如何操作](auto-fill-cards-and-identities.md#using-keyboard-shortcuts)。
+* 手动分配 → 为当前网站自动填充上次使用的身份信息。[了解如何操作](auto-fill-cards-and-identities.md#using-the-inline-menu)。
 
 {% hint style="success" %}
-如果一个登录使用 [Bitwarden TOTP 验证器](../../your-vault/totp.md)，使用 `Cmd/Ctrl + Shift + L` 会在自动填充后自动将您的 TOTP 复制到剪贴板。您所要做的就是 `Cmd/Ctrl + V` 以粘贴！
+如果一个登录使用 [Bitwarden TOTP 验证器](../../../your-vault/totp.md)，使用 `Cmd/Ctrl + Shift + L` 会在自动填充后自动将您的 TOTP 复制到剪贴板。您所要做的就是 `Cmd/Ctrl + V` 以粘贴！
 {% endhint %}
 
 ## 桌面应用程序快捷键 <a href="#desktop-application-shortcuts" id="desktop-application-shortcuts"></a>

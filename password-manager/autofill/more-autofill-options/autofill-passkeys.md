@@ -1,4 +1,4 @@
-# 存储通行密钥
+# 自动填充通行密钥
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/storing-passkeys/)
@@ -7,9 +7,9 @@
 可以通过 Bitwarden Password Manager 存储和使用通行密钥。使用 Bitwarden 浏览器扩展和移动 App，用户可以登录自己喜欢的具有通行密钥登录功能的 App 和网站。通行密钥是一种安全、无密码的替代方案，可供用户跨设备登录各种服务。
 
 {% hint style="info" %}
-在 iOS 上，存储和使用通行密钥要求版本 17.0 或更高版本。[了解更多](../auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)。
+在 iOS 上，存储和使用通行密钥要求版本 17.0 或更高版本。[了解更多](../autofill-from/autofill-from-ios.md)。
 
-在 Android 上，存储和使用通行密钥要求 14.0 或更高版本。可能需要额外的设置步骤。[了解更多](../auto-fill/auto-fill-basics/auto-fill-logins-on-android.md)。
+在 Android 上，存储和使用通行密钥要求 14.0 或更高版本。可能需要额外的设置步骤。[了解更多](../autofill-from/autofill-from-android.md)。
 {% endhint %}
 
 通行密钥根据 [FIDO 联盟](https://fidoalliance.org/overview/)制定的标准开发，允许用户保护其账户安全，并绕过标准密码身份验证带来的漏洞（如网络钓鱼）。存储的通行密钥受到 Bitwarden 可信的端到端加密技术的保护。
@@ -18,7 +18,7 @@
 
 通行密钥是密码的替代品，可以让用户在不同设备上快速、方便、安全地登录网站和 App。更确切地说，「通行密钥」是一个对消费者友好的术语，指的是一种可发现的 FIDO 凭证，它可以通过同步实现跨设备的安全无密码登录，或作为设备绑定通行密钥专用于单个硬件。
 
-App 和服务可以要求在保存或访问用它们创建的通行密钥时使用 PIN、密码、图案或生物识别因素进行验证。有关通行密钥的更多信息，请参阅[通行密钥 FAQ](passkeys-faq.md)。
+App 和服务可以要求在保存或访问用它们创建的通行密钥时使用 PIN、密码、图案或生物识别因素进行验证。有关通行密钥的更多信息，请参阅[通行密钥 FAQ](../../vault-basics/passkeys-faq.md)。
 
 ### 通行密钥的类型 <a href="#types-of-passkeys" id="types-of-passkeys"></a>
 
@@ -29,21 +29,21 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 {% hint style="info" %}
 保存和使用通行密钥是 Bitwarden 浏览器扩展和移动 App 的一项功能。其他 Bitwarden 客户端可用于查看已保存的通行密钥。
 
-* 在 iOS 上，存储和使用通行密钥要求版本 17.0 或更高版本。[了解更多](../auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)。
-* 在 Android 上，存储和使用通行密钥要求 14.0 或更高版本。可能需要额外的设置步骤。[了解更多](../auto-fill/auto-fill-basics/auto-fill-logins-on-android.md)。
+* 在 iOS 上，存储和使用通行密钥要求版本 17.0 或更高版本。[了解更多](../autofill-from/autofill-from-ios.md)。
+* 在 Android 上，存储和使用通行密钥要求 14.0 或更高版本。可能需要额外的设置步骤。[了解更多](../autofill-from/autofill-from-android.md)。
 {% endhint %}
 
 {% tabs %}
 {% tab title="浏览器扩展" %}
 {% hint style="info" %}
-如果某个域名位于[**排除域名**](../../miscellaneous/exclude-domains.md)列表中，Bitwarden 浏览器扩展就不会发出通行密钥提示。
+如果某个域名位于[**排除域名**](exclude-domains.md)列表中，Bitwarden 浏览器扩展就不会发出通行密钥提示。
 {% endhint %}
 
 ### 询问保存和使用通行密钥 <a href="#ask-to-save-and-use-passkeys" id="ask-to-save-and-use-passkeys"></a>
 
 要使用下述功能，请确保打开浏览器扩展**设置** → **通知**菜单中的**询问保存和使用通行密钥**选项。
 
-如果您不希望在某些特定站点上使用 Bitwarden 通行密钥，您可以设置[排除域名](../../miscellaneous/exclude-domains.md)。
+如果您不希望在某些特定站点上使用 Bitwarden 通行密钥，您可以设置[排除域名](exclude-domains.md)。
 
 ### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
 
@@ -72,7 +72,7 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 要使用存储在 Bitwarden 中的通行密钥，请在网站上发起通行密钥登录。当**询问保存和使用通行密钥**选项打开时，浏览器扩展将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项：
 
 {% hint style="success" %}
-[内嵌自动填充菜单](../auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#inline-auto-fill-menu)也可用于轻松使用通行密钥进行身份验证。
+[内嵌自动填充菜单](../autofill-from/autofill-from-browser-extensions.md#inline-auto-fill-menu)也可用于轻松使用通行密钥进行身份验证。
 {% endhint %}
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5KeuUZox5shd0zDMxPHKXn/1aab35dfceed0ed9cdb17b143be9a890/2024-10-29_11-39-33.png?_a=DAJCwlWIZAAB" %}
@@ -220,9 +220,9 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 
 ## 通行密钥管理 FAQ <a href="#passkey-management-faq" id="passkey-management-faq"></a>
 
-以下 FAQ 与 Bitwarden 通行密钥存储有关。有关通行密钥的一般信息，请参阅[通行密钥 FAQ](passkeys-faq.md)。
+以下 FAQ 与 Bitwarden 通行密钥存储有关。有关通行密钥的一般信息，请参阅[通行密钥 FAQ](../../vault-basics/passkeys-faq.md)。
 
-### 问：如果[克隆](../../your-vault/vault-items.md#clone)密码库项目，是否会包含通行密钥？ <a href="#q-will-passkeys-be-included-if-you-clone-a-vault-item" id="q-will-passkeys-be-included-if-you-clone-a-vault-item"></a>
+### 问：如果[克隆](../../../your-vault/vault-items.md#clone)密码库项目，是否会包含通行密钥？ <a href="#q-will-passkeys-be-included-if-you-clone-a-vault-item" id="q-will-passkeys-be-included-if-you-clone-a-vault-item"></a>
 
 **答：**&#x5B8C;成克隆操作时，Bitwarden 不会复制通行密钥。
 
@@ -232,5 +232,5 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 
 ### 问：我可以在移动 App 中存储通行密钥吗？ <a href="#q-can-i-store-passkeys-in-the-mobile-app" id="q-can-i-store-passkeys-in-the-mobile-app"></a>
 
-**答：**&#x8BA1;划在后期版本中提供对移动应用程序的通行密钥支持。移动 App 通行密钥支持适用于 iOS（[了解更多](../auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)）和 Android（[了解更多](../auto-fill/auto-fill-basics/auto-fill-logins-on-android.md)）。
+**答：**&#x8BA1;划在后期版本中提供对移动应用程序的通行密钥支持。移动 App 通行密钥支持适用于 iOS（[了解更多](../autofill-from/autofill-from-ios.md)）和 Android（[了解更多](../autofill-from/autofill-from-android.md)）。
 

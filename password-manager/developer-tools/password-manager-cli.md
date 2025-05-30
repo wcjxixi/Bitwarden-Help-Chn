@@ -833,7 +833,7 @@ CLI 不支持 FIDO2 和 Duo。
 
 #### 登录 URI 匹配类型 <a href="#login-uri-match-types" id="login-uri-match-types"></a>
 
-与 `create` 和 `edit` 命令一起使用以指定 [URI 匹配检测](../../auto-fill/using-uris.md)行为：
+与 `create` 和 `edit` 命令一起使用以指定 [URI 匹配检测](../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)行为：
 
 | 名称    | 值 |
 | ----- | - |

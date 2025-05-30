@@ -1,4 +1,4 @@
-# 屏蔽自动填充
+# 对指定站点屏蔽自动填充
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/blocking-uris/)
@@ -43,7 +43,7 @@ https://instagram.com,androidapp://com.instagram.android,https://facebook.com
 
 对于通过网络浏览器访问的网站，正确的 URI 是登录页面的 `https://..` 地址，例如 `https://instagram.com` 或 `https://instagram.com/accounts/login`。
 
-**对于 Android App**，[URI 方案](../../auto-fill/using-uris.md#uri-schemes)总是以 `androidapp://` 作为开头，这与典型的网络浏览器 URI 有些不一样。例如：
+**对于 Android App**，[URI 方案](../troubleshoot-autofill/forming-uris-for-autofill.md#uri-schemes)总是以 `androidapp://` 作为开头，这与典型的网络浏览器 URI 有些不一样。例如：
 
 * Instagram Android App 的 URI 为 `androidapp://com.instagram.android`。
 * Reddit Android App 的 URI 为 `androidapp://com.reddit.frontpage`。

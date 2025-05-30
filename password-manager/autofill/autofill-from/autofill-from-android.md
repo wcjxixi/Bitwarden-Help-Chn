@@ -1,4 +1,4 @@
-# Android 上的自动填充登录
+# 从 Android App 自动填充
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-android/)
@@ -7,7 +7,7 @@
 Bitwarden 可以自动填充您的密码和通行密钥，以便您可以无缝登录网站和 App，同时维护强大而安全的密码。自动填充功能通过检测与您登录的服务相匹配的密码库项目，以减少了您在登录过程中的复制和粘贴操作。
 
 {% hint style="success" %}
-大多数自动填充方案都依赖登录项目的 URI 属性。如果您不熟悉 URI，请阅读 [URI 的使用](../../../auto-fill/using-uris.md)一文。
+大多数自动填充方案都依赖登录项目的 URI 属性。如果您不熟悉 URI，请阅读 [URI 的使用](../troubleshoot-autofill/forming-uris-for-autofill.md)一文。
 
 请注意，移动端的自动填充当前不支持自定义字段。
 {% endhint %}
@@ -25,7 +25,7 @@ Bitwarden 可以自动填充您的密码和通行密钥，以便您可以无缝�
 
 ### 自动填充服务 <a href="#autofill-service" id="autofill-service"></a>
 
-当聚焦在设备上具有[匹配的登录项目](../../../auto-fill/using-uris.md)的输入字段时，自动填充服务（要求 Android 8+）将叠加一个弹出窗口。密码库被解锁后，系统会为您提供立即自动填充或打开密码库的选项：
+当聚焦在设备上具有[匹配的登录项目](../troubleshoot-autofill/forming-uris-for-autofill.md)的输入字段时，自动填充服务（要求 Android 8+）将叠加一个弹出窗口。密码库被解锁后，系统会为您提供立即自动填充或打开密码库的选项：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1fIoPhOLMcXzvd0Y8aw1pm/543758a75a52f952772945bf3a43a40b/Android.png?_a=DAJCwlWIZAAB" %}
 Android 自动填充服务
@@ -42,7 +42,7 @@ Android 自动填充服务
 
 将提示您确认信任 Bitwarden。点击**确定**将使 Bitwarden 可以阅读屏幕上的内容，以知道何时提供自动填充。从[我们的这篇博客文章](https://bitwarden.com/blog/post/the-oreo-autofill-framework)中了解更多信息。
 
-**自动填充服务不起作用？**&#x53C2;阅[自动填充服务疑难解答](../../../auto-fill/troubleshooting-android-auto-fill.md#troubleshooting-the-autofill-service)。
+**自动填充服务不起作用？**&#x53C2;阅[自动填充服务疑难解答](../troubleshoot-autofill/troubleshooting-android-auto-fill.md#troubleshooting-the-autofill-service)。
 
 ### 内嵌自动填充 <a href="#inline-autofill" id="inline-autofill"></a>
 
@@ -94,12 +94,12 @@ GBoard 中的内嵌自动填充
 5、您将被带到 Bitwarden App 中的自动填充页面。选择要自动填充的凭据。
 
 {% hint style="success" %}
-仍有问题吗？请参阅我们的 [Android 自动填充故障排除](../../../auto-fill/troubleshooting-android-auto-fill.md)指南。如果您仍然无法使用 Android 自动填充功能，请[联系我们](https://bitwarden.com/contact/)。
+仍有问题吗？请参阅我们的 [Android 自动填充故障排除](../troubleshoot-autofill/troubleshooting-android-auto-fill.md)指南。如果您仍然无法使用 Android 自动填充功能，请[联系我们](https://bitwarden.com/contact/)。
 {% endhint %}
 
 ### ~~无障碍~~ <a href="#accessibility" id="accessibility"></a>
 
-~~当聚焦在设备上的输入字段时，无障碍方式将叠加一个弹出窗口，用于打开您的密码库来浏览~~[~~匹配的登录项目~~](../../../auto-fill/using-uris.md)~~：~~
+~~当聚焦在设备上的输入字段时，无障碍方式将叠加一个弹出窗口，用于打开您的密码库来浏览~~[~~匹配的登录项目~~](../troubleshoot-autofill/forming-uris-for-autofill.md)~~：~~
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5M8b0oAB3G1eLNv307fWNi/bac88b0acd1815d4fec2dc9b721e596b/drawover.png?_a=BAJFJtWIB" %}
 无障碍弹出窗口
@@ -117,7 +117,7 @@ GBoard 中的内嵌自动填充
 {% hint style="warning" %}
 ~~如果您使用 Android 6+，您也可以启用 **Draw-Over**。~~
 
-~~**无障碍不起作用？**&#x53C2;阅~~[~~无障碍服务疑难解答~~](../../../auto-fill/troubleshooting-android-auto-fill.md#troubleshooting-the-accessibility-service)~~。~~
+~~**无障碍不起作用？**&#x53C2;阅~~[~~无障碍服务疑难解答~~](../troubleshoot-autofill/troubleshooting-android-auto-fill.md#troubleshooting-the-accessibility-service)~~。~~
 {% endhint %}
 
 ### ~~Draw-Over~~ <a href="#draw-over" id="draw-over"></a>
@@ -126,7 +126,7 @@ GBoard 中的内嵌自动填充
 ~~需先启用**无障碍**，才能启用 Draw-Over。~~
 {% endhint %}
 
-~~当聚焦在设备上的输入字段时，Draw-Over（_要求在 Android 6+ 上使用无障碍_）将叠加一个弹出窗口，用于打开您的密码库来浏览~~[~~匹配的登录项目~~](../../../auto-fill/using-uris.md)~~：~~
+~~当聚焦在设备上的输入字段时，Draw-Over（_要求在 Android 6+ 上使用无障碍_）将叠加一个弹出窗口，用于打开您的密码库来浏览~~[~~匹配的登录项目~~](../troubleshoot-autofill/forming-uris-for-autofill.md)~~：~~
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5M8b0oAB3G1eLNv307fWNi/bac88b0acd1815d4fec2dc9b721e596b/drawover.png?_a=BAJFJtWIB" %}
 无障碍弹出窗口
@@ -140,7 +140,7 @@ GBoard 中的内嵌自动填充
 4. ~~从列表中点击 **Bitwarden** 并切换**允许在其他应用程序上绘制**选项。~~
 
 {% hint style="success" %}
-~~**仍然有问题？**&#x8BF7;参阅我们的~~ [~~Android 自动填充疑难解答~~](../../../auto-fill/troubleshooting-android-auto-fill.md)~~突破指南。~~
+~~**仍然有问题？**&#x8BF7;参阅我们的~~ [~~Android 自动填充疑难解答~~](../troubleshoot-autofill/troubleshooting-android-auto-fill.md)~~突破指南。~~
 
 ~~如果您仍然无法使用 Android 自动填充功能，请~~[~~联系我们~~](https://bitwarden.com/contact)~~。~~
 {% endhint %}

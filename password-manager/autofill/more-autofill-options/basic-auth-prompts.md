@@ -1,12 +1,12 @@
-# 基本验证提示
+# 自动填充基本验证提示
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/basic-auth-autofill/)
 {% endhint %}
 
-像下图这样的登录提示，被称为「基本」或「原生」验证提示，**如果只有 1 个具有**[**匹配 URI**](using-uris.md) **的登录项目**，Bitwarden 浏览器扩展将自动填充。您也可以使用浏览器扩展的 **⮫启动**按钮来自动打开并登录基本的受自治保护的资源。
+像下图这样的登录提示，被称为「基本」或「原生」验证提示，**如果只有 1 个具有**[**匹配 URI**](../troubleshoot-autofill/forming-uris-for-autofill.md) **的登录项目**，Bitwarden 浏览器扩展将自动填充。您也可以使用浏览器扩展的 **⮫启动**按钮来自动打开并登录基本的受自治保护的资源。
 
-默认情况下，基本验证提示的自动填充将使用[主机](using-uris.md#host) URI 匹配检测选项，这样自动填充的限制性更强。可以通过设置相关密码库项目的[匹配检测选项](using-uris.md)来更改。
+默认情况下，基本验证提示的自动填充将使用[主机](../troubleshoot-autofill/forming-uris-for-autofill.md#host) URI 匹配检测选项，这样自动填充的限制性更强。可以通过设置相关密码库项目的[匹配检测选项](../troubleshoot-autofill/forming-uris-for-autofill.md)来更改。
 
 如果发现多个登录项目有匹配的 URI，浏览器扩展将无法自动填充您的凭据，您需要手动复制/粘贴您的用户名和密码来登录。
 

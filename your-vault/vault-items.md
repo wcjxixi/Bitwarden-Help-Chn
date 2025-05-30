@@ -8,7 +8,7 @@
 
 {% tabs %}
 {% tab title="登录" %}
-登录常用于存储用户名和密码的组合，并支持针对高级用户的 [TOTP 种子](totp.md)。无论您使用的是何种计划，我们都建议为每个登录提供一个[用于方便自动填充的 URI](../auto-fill/using-uris.md)：
+登录常用于存储用户名和密码的组合，并支持针对高级用户的 [TOTP 种子](totp.md)。无论您使用的是何种计划，我们都建议为每个登录提供一个[用于方便自动填充的 URI](../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md)：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5VGRnEvX53BOXa9CCgrhRx/9cdf22fc63819a8f24fc80f0effb5ad3/2024-12-02_14-17-14.png?_a=DAJCwlWIZAAB" %}
 登录项目

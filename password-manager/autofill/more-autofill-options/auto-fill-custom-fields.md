@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-custom-fields/)
 {% endhint %}
 
-Bitwarden 可以做的不仅仅是[自动填充您的用户名和密码](auto-fill-logins-in-browser-extensions.md)！Bitwarden 浏览器扩展还可以自动填充[自定义字段](../../../your-vault/custom-fields.md)，以简化安全问题、PIN 等的填充。
+Bitwarden 可以做的不仅仅是[自动填充您的用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！Bitwarden 浏览器扩展还可以自动填充[自定义字段](../../../your-vault/custom-fields.md)，以简化安全问题、PIN 等的填充。
 
-此外，如果您的浏览器扩展在自动填充特定站点的用户名和密码时遇到问题，使用[链接型自定义字段](<Auto-fill Custom Fields.md#shi-yong-lian-jie-de-zi-ding-yi-zi-duan>)可以强制自动填充。
+此外，如果您的浏览器扩展在自动填充特定站点的用户名和密码时遇到问题，使用[链接型自定义字段](auto-fill-custom-fields.md#shi-yong-lian-jie-de-zi-ding-yi-zi-duan)可以强制自动填充。
 
 {% hint style="success" %}
 要使自动填充起作用，对自定义字段正确命名很重要。[了解更多](../../../your-vault/custom-fields.md#custom-field-names)。
@@ -44,7 +44,7 @@ Bitwarden 可以做的不仅仅是[自动填充您的用户名和密码](auto-fi
 
 5、**保存**对密码库项目的更改。
 
-现在您已经创建了一个或多个链接型自定义字段，您可以使用[前面部分中描述的方法](<Auto-fill Custom Fields.md#auto-fill-custom-fields>)自动填充了。当您操作时，您的浏览器扩展将自动填充用户名、密码或两者到为字段名称指定的 HTML 表单元素中。
+现在您已经创建了一个或多个链接型自定义字段，您可以使用[前面部分中描述的方法](auto-fill-custom-fields.md#auto-fill-custom-fields)自动填充了。当您操作时，您的浏览器扩展将自动填充用户名、密码或两者到为字段名称指定的 HTML 表单元素中。
 
 ## 特殊自动填充场景 <a href="#special-auto-fill-scenarios" id="special-auto-fill-scenarios"></a>
 

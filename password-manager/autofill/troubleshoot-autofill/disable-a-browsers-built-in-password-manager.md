@@ -9,7 +9,7 @@
 鉴于这个原因，并且由于一个活动的内置密码管理器可能会干扰您的 Bitwarden 体验，我们建议禁用网页浏览器的内置密码管理器。
 
 {% hint style="info" %}
-Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设备上部署 Bitwarden 浏览器扩展](../admin-console/deploy-client-apps/deploy-browser-extensions/)的更多信息。
+Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设备上部署 Bitwarden 浏览器扩展](../../../admin-console/deploy-client-apps/deploy-browser-extensions/)的更多信息。
 {% endhint %}
 
 了解如何禁用主流浏览器的内置密码管理器：
@@ -34,7 +34,7 @@ Chrome 密码选项
 Chrme 已保存的密码
 {% endembed %}
 
-如果您还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md#export-from-chrome)，为将来导入 Bitwarden 做准备。导出后，您应该从浏览器的存储中删除这些密码。
+如果您还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-google-chrome.md#export-from-chrome)，为将来导入 Bitwarden 做准备。导出后，您应该从浏览器的存储中删除这些密码。
 {% endtab %}
 
 {% tab title="Firefox" %}
@@ -45,7 +45,7 @@ Firefox 密码选项
 {% endembed %}
 
 {% hint style="success" %}
-Bitwarden Password Manager 为高级用户提供各种[报告](../your-vault/vault-health-reports.md)，如「泄露密码」报告和「重复使用的密码」报告，并**为所有用户提供免费的数据泄露报告**。
+Bitwarden Password Manager 为高级用户提供各种[报告](../../../your-vault/vault-health-reports.md)，如「泄露密码」报告和「重复使用的密码」报告，并**为所有用户提供免费的数据泄露报告**。
 {% endhint %}
 
 您还可以通过选择**已保存的登录信息...** 按钮来了解 Firefox 已经保存了哪些登录信息：
@@ -54,7 +54,7 @@ Bitwarden Password Manager 为高级用户提供各种[报告](../your-vault/vau
 Firefox 已保存的登录信息
 {% endembed %}
 
-如果你还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../password-manager/import-and-export/import-guides/import-data-from-firefox.md)，以便将来导入 Bitwarden。导出后，您应该从 Firefox 中 **🗑️移除**这些密码。
+如果你还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-firefox.md)，以便将来导入 Bitwarden。导出后，您应该从 Firefox 中 **🗑️移除**这些密码。
 {% endtab %}
 
 {% tab title="Safari" %}
@@ -116,6 +116,6 @@ Tor 已保存的密码
 
 您可以通过选择**导出密码**来创建现有数据的备份。创建备份文件后，选择**查看自动填充内容...** 并删除已存储的自动填充数据，以移除之前保存的建议。
 
-在密码管理器部分，macOS 用户可以选择使用 Bitwarden。[此处](../miscellaneous/duckduckgo-macos-browser-integration.md)了解更多有关 Bitwarden DuckDuckGo macOS 浏览器集成的信息。
+在密码管理器部分，macOS 用户可以选择使用 Bitwarden。[此处](../../../miscellaneous/duckduckgo-macos-browser-integration.md)了解更多有关 Bitwarden DuckDuckGo macOS 浏览器集成的信息。
 {% endtab %}
 {% endtabs %}

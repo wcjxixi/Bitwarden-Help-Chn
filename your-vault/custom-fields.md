@@ -9,7 +9,7 @@
 * **文本型**：存储自由格式的输入（文本、数字等）的字段值
 * **隐藏型**：存储从视图中隐藏的自由格式输入的字段值（对于使用[隐藏密码访问控制](../admin-console/user-management/member-roles-and-permissions.md)的组织特别有用）
 * **布尔型**：存储布尔值（真/假）的字段值
-* **链接型**：链接到项目的用户名或密码的字段值。指定[正确的字段名称](custom-fields.md#custom-field-names)后，链接型自定义字段可用于解决浏览器扩展无法自动填充特定站点的用户名和密码的问题（[了解更多](<../password-manager/auto-fill/auto-fill-basics/Auto-fill Custom Fields.md#using-linked-custom-fields>)）。
+* **链接型**：链接到项目的用户名或密码的字段值。指定[正确的字段名称](custom-fields.md#custom-field-names)后，链接型自定义字段可用于解决浏览器扩展无法自动填充特定站点的用户名和密码的问题（[了解更多](../password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md#using-linked-custom-fields)）。
 
 {% hint style="success" %}
 ### 用于密钥的自定义字段 <a href="#custom-fields-for-keys" id="custom-fields-for-keys"></a>
@@ -29,7 +29,7 @@
 
 ### 自定义字段名称 <a href="#custom-field-names" id="custom-field-names"></a>
 
-指定的**名称**对于成功[自动填充自定义字段](<../password-manager/auto-fill/auto-fill-basics/Auto-fill Custom Fields.md>)很重要。对于浏览器扩展，您可以使用上下文菜单中的**复制自定义字段名称**选项快速获取正确的字段名称（在大多数情况下，通过右键单击表单元素）：
+指定的**名称**对于成功[自动填充自定义字段](../password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md)很重要。对于浏览器扩展，您可以使用上下文菜单中的**复制自定义字段名称**选项快速获取正确的字段名称（在大多数情况下，通过右键单击表单元素）：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5nnPLqyzgAhDCinQNB0uUC/a721194f39f0a8fa919066d73ff9e2c8/2024-10-29_10-50-34.png?_a=DAJCwlWIZAAB" %}
 复制自定义字段名称
@@ -37,7 +37,7 @@
 
 选择此上下文菜单选项将复制表单元素的 `id`、`name`、`aria-label` 或 `placeholder` 的值（按优先顺序）。
 
-保存自定义字段后，您可以[从浏览器扩展中自动填充它](<../password-manager/auto-fill/auto-fill-basics/Auto-fill Custom Fields.md>)。
+保存自定义字段后，您可以[从浏览器扩展中自动填充它](../password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md)。
 
 #### 手动查找自定义字段名称 <a href="#find-custom-field-names-manually" id="find-custom-field-names-manually"></a>
 
@@ -59,7 +59,7 @@
 
 6、保存此密码库项目。
 
-保存自定义字段后，您可以[从浏览器扩展中自动填充它](<../password-manager/auto-fill/auto-fill-basics/Auto-fill Custom Fields.md>)。
+保存自定义字段后，您可以[从浏览器扩展中自动填充它](../password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md)。
 
 ### 更多关于自定义字段名称 <a href="#more-about-custom-field-names" id="more-about-custom-field-names"></a>
 

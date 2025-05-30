@@ -63,7 +63,7 @@ Password Manager 网页 App
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 
-Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
+Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pamjhdWn7obh8UBxXcIPF/cb72c2921ce5f717cfd81bf157e50f4d/2024-12-02_13-59-23.png?_a=DAJCwlWIZAAB" %}
 通过浏览器扩展自动填充
@@ -73,7 +73,7 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 
 ## 随身携带 Bitwarden <a href="#take-bitwarden-on-the-go" id="take-bitwarden-on-the-go"></a>
 
-安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md) 或 [Android](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md) 上如何自动填充密码：
+安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/53OzJZ4klYWemxUepHMtq4/5ab47331f033259bd2e82817a99e992f/2025-01-21_15-22-10.png?_a=DAJCwlWIZAAB" %}
 iOS 和 Android 上的 Bitwarden
@@ -134,7 +134,7 @@ Password Manager 网页 App
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 
-Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
+Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pamjhdWn7obh8UBxXcIPF/cb72c2921ce5f717cfd81bf157e50f4d/2024-12-02_13-59-23.png?_a=DAJCwlWIZAAB" %}
 通过浏览器扩展自动填充
@@ -144,7 +144,7 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 
 ## 随身携带 Bitwarden <a href="#take-bitwarden-on-the-go" id="take-bitwarden-on-the-go"></a>
 
-安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md) 或 [Android](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md) 上如何自动填充密码：
+安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/53OzJZ4klYWemxUepHMtq4/5ab47331f033259bd2e82817a99e992f/2025-01-21_15-22-10.png?_a=DAJCwlWIZAAB" %}
 iOS 和 Android 上的 Bitwarden
@@ -201,7 +201,7 @@ Password Manager 网页 App
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 
-Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
+Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pamjhdWn7obh8UBxXcIPF/cb72c2921ce5f717cfd81bf157e50f4d/2024-12-02_13-59-23.png?_a=DAJCwlWIZAAB" %}
 通过浏览器扩展自动填充
@@ -211,7 +211,7 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 
 ## 随身携带 Bitwarden <a href="#take-bitwarden-on-the-go" id="take-bitwarden-on-the-go"></a>
 
-安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md) 或 [Android](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md) 上如何自动填充密码：
+安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/53OzJZ4klYWemxUepHMtq4/5ab47331f033259bd2e82817a99e992f/2025-01-21_15-22-10.png?_a=DAJCwlWIZAAB" %}
 iOS 和 Android 上的 Bitwarden

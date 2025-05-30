@@ -1,4 +1,4 @@
-# iOS 上的自动填充登录
+# 从 iOS App 自动填充
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-ios/)
@@ -9,7 +9,7 @@ Bitwarden 可以自动填充您的密码和通行密钥，以便您可以无缝�
 自动填充通行密钥（包括创建新的通行密钥时 Bitwarden 发出提示）要求 iOS 17.0 或更高版本。
 
 {% hint style="success" %}
-大多数自动填充方案都依赖登录项目的 URI 属性。如果您不熟悉 URI，请阅读 [URI 的使用](../../../auto-fill/using-uris.md)一文。
+大多数自动填充方案都依赖登录项目的 URI 属性。如果您不熟悉 URI，请阅读 [URI 的使用](../troubleshoot-autofill/forming-uris-for-autofill.md)一文。
 
 请注意，移动端的自动填充当前不支持自定义字段。
 {% endhint %}
@@ -60,10 +60,10 @@ iOS 上的自动填充有几种行为：
 iOS 上的自动填充
 {% endembed %}
 
-如果显示一个[匹配的登录](../../../auto-fill/using-uris.md)，请点击以自动填充。如果显示 **🔑密码**按钮，请点击它浏览您的密码库以搜索要使用的登录项目。如果显示 **🔑密码**按钮，可能是因为您的密码库中没有具有匹配 URI 的项目。
+如果显示一个[匹配的登录](../troubleshoot-autofill/forming-uris-for-autofill.md)，请点击以自动填充。如果显示 **🔑密码**按钮，请点击它浏览您的密码库以搜索要使用的登录项目。如果显示 **🔑密码**按钮，可能是因为您的密码库中没有具有匹配 URI 的项目。
 
 {% hint style="success" %}
-遇到 `Biometric unlock disabled pending verification of master password`（生物识别解锁已禁用，等待验证主密码） 消息吗？了解[该怎么做](../../../auto-fill/auto-fill-faqs.md#q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password)。
+遇到 `Biometric unlock disabled pending verification of master password`（生物识别解锁已禁用，等待验证主密码） 消息吗？了解[该怎么做](../auto-fill-faqs.md#q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password)。
 {% endhint %}
 
 ### 浏览器 App 扩展自动填充 <a href="#browser-app-extension-auto-fill" id="browser-app-extension-auto-fill"></a>
@@ -98,10 +98,10 @@ iOS 上的自动填充
 如果启用了[使用生物识别解锁](../../../your-vault/unlocking-with-biometrics.md)，则首次点击此选项时，系统将提示您验证您的主密码。
 {% endhint %}
 
-9、Bitwarden 界面将在您的设备上向上滑出，并列出此网站的[匹配登录项目](../../../auto-fill/using-uris.md)。点击该项目以自动填充。
+9、Bitwarden 界面将在您的设备上向上滑出，并列出此网站的[匹配登录项目](../troubleshoot-autofill/forming-uris-for-autofill.md)。点击该项目以自动填充。
 
 {% hint style="success" %}
-如果未列出登录项目，则可能是因为您的密码库中没有与 [URI 匹配](../../../auto-fill/using-uris.md)的项目。
+如果未列出登录项目，则可能是因为您的密码库中没有与 [URI 匹配](../troubleshoot-autofill/forming-uris-for-autofill.md)的项目。
 {% endhint %}
 
 ### 长按文本字段 <a href="#long-press-a-text-field" id="long-press-a-text-field"></a>

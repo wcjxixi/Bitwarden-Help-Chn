@@ -13,7 +13,7 @@
 | ~~Draw-Over~~ | ~~Android 6+~~ | ~~无障碍~~          |
 | 无障碍           | 所有 Android 版本  | -                |
 
-有关在 Android 上设置自动填充的说明，请参阅 [Android 上的自动填充登录](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md)。
+有关在 Android 上设置自动填充的说明，请参阅 [Android 上的自动填充登录](../autofill-from/autofill-from-android.md)。
 
 ## 自动填充服务故障排除 <a href="#troubleshooting-the-autofill-service" id="troubleshooting-the-autofill-service"></a>
 

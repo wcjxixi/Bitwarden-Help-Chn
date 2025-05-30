@@ -23,14 +23,31 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.5.2
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.5.1、浏览器扩展 2025.5.1、桌面 2025.5.0、iOS 2025.5.0、Android 2025.5.0、CLI 2025.5.0）
+
+### Password Manager
+
+* **更新了通知设计**：浏览器扩展通知已更新为全新的视觉设计。了解更多。
+* **支持从桌面和 CLI 导出附件**：现在可以通过桌面 App 和 CLI 将个人密码库文件附件导出为 `.zip` 压缩包。了解更多。
+* **Android 动态颜色支持**：Bitwarden Android App 现在支持根据壁纸自动应用配色方案。了解更多。
+* **SSH 批准设置**：已在桌面 App 上启用 SSH 代理的用户可使用一项新的设置：可以指定 Bitwarden 何时要求您授权访问存储在密码库中的 SSH 凭据。了解更多有关 SSH 代理设置的信息。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **组织赞助的家庭计划**：组织可以直接为员工个人电子邮箱账户（包括非当前组织成员的员工）发放赞助版家庭计划。了解更多有关赞助版家庭计划的信息。
+* **集合权限调整**：「可以编辑」和「可以编辑，隐藏密码」权限现默认允许用户删除集合项目，除非启用了新增的「限制为具有「管理集合」权限的成员可以删项目」选项。了解更多有关集合权限的信息。
+* **新的集合管理设置**：为了增加权限定制，添加了一个新的集合管理设置：「限制为具有「管理集合」权限的成员可以删项目」选项。了解更多有关集合管理设置的信息。
+
 ## 2025.5.0
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.5.0、浏览器扩展 2025.5.0）
 
 ### Password Manager
 
-* **增强的 PIN 要求**：在浏览器扩展中，用于解锁的 PIN 现在必须至少为 4 个字符。这将在今后的版本中更新到其他客户端中。
-* **从网页和浏览器导出附件**：在网页 App 和浏览器扩展中，现在可以创建包含文件附件的 `.zip` 导出。这将在今后的版本中添加到其他客户端中。[了解更多](your-vault/file-attachments.md)。
+* **增强的 PIN 要求**：在浏览器扩展中，用于解锁的 PIN 现在必须至少为 4 个字符。这将在未来的版本中逐步更新到其他客户端。
+* **从网页和浏览器导出附件**：在网页 App 和浏览器扩展中，现在可以创建包含文件附件的 `.zip` 导出。这将在未来的版本中逐步添加到其他客户端。[了解更多](your-vault/file-attachments.md)。
 * **搜索结果中的嵌套集合**：嵌套集合现在包含在搜索结果中，使查找相关项目变得更容易。[了解更多](organizations/collections.md)有关集合的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -112,8 +129,8 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **「点击以自动填充」设置已移动**：浏览器扩展上的「点击以自动填充」设置已移至**设置** → **外观**选项卡。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#zi-ding-yi-zi-dong-tian-chong-xing-wei)。
-* **阻止 iOS 上的重复通行密码**：在 iOS 上无法保存与 Bitwarden 密码库中已存储的现有用户名和服务相匹配的重复通行密钥。现有通行密钥可能会被修改或覆盖。[了解更多](password-manager/vault-basics/storing-passkeys.md#using-passkeys-with-bitwarden)有关创建通行密钥的信息。
+* **「点击以自动填充」设置已移动**：浏览器扩展上的「点击以自动填充」设置已移至**设置** → **外观**选项卡。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#zi-ding-yi-zi-dong-tian-chong-xing-wei)。
+* **阻止 iOS 上的重复通行密码**：在 iOS 上无法保存与 Bitwarden 密码库中已存储的现有用户名和服务相匹配的重复通行密钥。现有通行密钥可能会被修改或覆盖。[了解更多](password-manager/autofill/more-autofill-options/autofill-passkeys.md#using-passkeys-with-bitwarden)有关创建通行密钥的信息。
 * **企业单点登录更新**：在单点登录工作流程的第一步添加了「使用单点登录」按钮，以简化企业单点登录。[了解更多](login-with-sso/using-login-with-sso.md#login-using-sso)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -160,7 +177,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 ### Password Manager
 
 * **更改密码库项目所有者**：在网页 App 上，现在您可以直接从编辑窗口通过将其所有者更改为您所属的任何组织来共享密码库项目。[了解更多](organizations/sharing.md)。
-* **屏蔽浏览器扩展的自动填充**：现在可以专门指示浏览器扩展不允许在某些域名上进行自动填充。[了解更多](password-manager/auto-fill/auto-fill-blocked-uris.md)。
+* **屏蔽浏览器扩展的自动填充**：现在可以专门指示浏览器扩展不允许在某些域名上进行自动填充。[了解更多](password-manager/autofill/more-autofill-options/blocking-autofill.md)。
 * **移动版 Bitwarden Send 更新**：移动 App 上的 Bitwarden Send 选项已不再支持设置有效期和停用 Send，这与浏览器扩展目前提供的功能一致。在未来的版本中，其他客户端也将停止对这些选项的支持。[了解更多](bitwarden-send/send-lifespan.md)。
 
 ### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
@@ -199,10 +216,10 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **更多自动填充自定义选项**：浏览器扩展现在具有更多选项来自定义您的自动填充体验，包括选择项目卡片而不是「**填充**」按钮来自动填充，以及多个快速复制操作。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#zi-ding-yi-zi-dong-tian-chong-xing-wei)。
+* **更多自动填充自定义选项**：浏览器扩展现在具有更多选项来自定义您的自动填充体验，包括选择项目卡片而不是「**填充**」按钮来自动填充，以及多个快速复制操作。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#zi-ding-yi-zi-dong-tian-chong-xing-wei)。
 * **Snap Store 桌面 App 生物识别解锁**：通过 Snap Store 下载的密码管理桌面 App 现在支持生物识别解锁。[了解更多](your-vault/unlocking-with-biometrics.md#zhuo-mian-duan)。
-* **TOTP 代码的内嵌自动填充**：内嵌自动填充菜单现在可用于选择 TOTP 代码。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#use-the-inline-auto-fill-menu)有关内嵌自动填充菜单的信息。
-* **iOS 上长按自动填充**：在 iOS 18+ 上长按任何文本字段即可从 Bitwarden 自动填充。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)。
+* **TOTP 代码的内嵌自动填充**：内嵌自动填充菜单现在可用于选择 TOTP 代码。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#use-the-inline-auto-fill-menu)有关内嵌自动填充菜单的信息。
+* **iOS 上长按自动填充**：在 iOS 18+ 上长按任何文本字段即可从 Bitwarden 自动填充。[了解更多](password-manager/autofill/autofill-from/autofill-from-ios.md)。
 * **新的公共 API 操作**：`/public/organization/subscription` 端点添加了一个 GET 操作。[了解更多](organizations/bitwarden-public-api.md)有关 Bitwarden 公共 API 的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -226,7 +243,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 * **浏览器扩展和网页 App 用户界面更新**：重新设计了 Bitwarden Password Manager 浏览器扩展的用户界面，同时包含网页 App 用户界面的一些增强的样式更改。[了解更多](https://bitwarden.com/blog/bringing-intuitive-workflows-and-visual-updates-to-the-bitwarden-browser/)。
 * **网页 App 视图项目面板**：网页 App 现在将打开项目到「查看」面板，而不是直接打开「编辑」面板。只有拥有项目编辑权限的用户才能使用「编辑」按钮更改密码库项目。[了解更多](your-vault/vault-items.md)。
-* **iOS 18.0+ 自动填充 TOTP 代码**：iOS 18.0（或更新版本）上的 Bitwarden 键盘自动填充功能现在可以在登录表单中自动填充 TOTP 代码。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)有关 iOS 自动填充的更多信息。
+* **iOS 18.0+ 自动填充 TOTP 代码**：iOS 18.0（或更新版本）上的 Bitwarden 键盘自动填充功能现在可以在登录表单中自动填充 TOTP 代码。[了解更多](password-manager/autofill/autofill-from/autofill-from-ios.md)有关 iOS 自动填充的更多信息。
 * **PasswordXP .csv 导入器**：PasswordXP .csv 已被添加到可导入 Bitwarden Password Manager 的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
 * **Netwrix Password Secure .csv 导入器**：Netwrix Password Secure .csv 已被添加到可导入 Bitwarden Password Manager 的格式列表中。[了解更多](secrets-manager/import-export/import-data.md)。
 
@@ -244,8 +261,8 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **内联自动填充菜单密码生成**：现在，在填写账户创建或密码更新字段时，可使用内联自动填写菜单轻松生成密码。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
-* **支付卡和身份的内联自动填充菜单选项**：您现在可以打开或关闭将支付卡和身份作为建议包含在内联自动填写菜单中的选项。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-cards-and-identities.md#using-the-inline-menu)。
+* **内联自动填充菜单密码生成**：现在，在填写账户创建或密码更新字段时，可使用内联自动填写菜单轻松生成密码。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
+* **支付卡和身份的内联自动填充菜单选项**：您现在可以打开或关闭将支付卡和身份作为建议包含在内联自动填写菜单中的选项。[了解更多](password-manager/autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-the-inline-menu)。
 * **iOS 复制和粘贴更新**：Bitwarden iOS 复制和粘贴功能添加了多个更新，以方便使用。
 * **改进了非官方服务器的错误处理**：为了帮助使用非官方 Bitwarden 服务器的用户，添加了新的错误消息以帮助识别连接到非官方服务器时的错误。
 * **暂时移除桌面 App 上的「允许屏幕捕获」开关**：为改善该功能的使用体验，已暂时移除 macOS 和 Windows 桌面 App 上的该功能。目前，桌面 App 将通过截图和屏幕共享捕获。
@@ -307,7 +324,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **通行密钥的内联自动填充菜单**： 使用内联自动填充菜单通过通行密钥进行身份验证。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#use-the-inline-auto-fill-menu)。
+* **通行密钥的内联自动填充菜单**： 使用内联自动填充菜单通过通行密钥进行身份验证。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#use-the-inline-auto-fill-menu)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -338,8 +355,8 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 ### Password Manager
 
 * **自动填充支付卡和身份**：现在可以使用其他自动填充方式填充支付卡和身份：
-  * 使用键盘快捷键自动填充支付卡和身份。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-cards-and-identities.md#using-keyboard-shortcuts)。
-  * 使用内嵌自动填充菜单填充支付卡和身份。[了解更多](password-manager/auto-fill/auto-fill-basics/auto-fill-cards-and-identities.md#using-the-inline-menu)。
+  * 使用键盘快捷键自动填充支付卡和身份。[了解更多](password-manager/autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-keyboard-shortcuts)。
+  * 使用内嵌自动填充菜单填充支付卡和身份。[了解更多](password-manager/autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-the-inline-menu)。
 * **使用生物识别解锁 Linux 桌面 App**：使用 Polkit 的 Linux 用户现在可以在 Bitwarden 桌面 App 上使用生物识别解锁功能。[了解更多](getting-started/getting-started-desktop.md#linux)。
 
 ### Secrets Manager
@@ -436,7 +453,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **通行密钥用户验证**：当使用存储的通行密钥登录时，浏览器扩展现在可能会提示用户使用生物识别、PIN 或主密码进行验证。[了解更多](password-manager/vault-basics/storing-passkeys.md#liu-lan-qi-kuo-zhan)。
+* **通行密钥用户验证**：当使用存储的通行密钥登录时，浏览器扩展现在可能会提示用户使用生物识别、PIN 或主密码进行验证。[了解更多](password-manager/autofill/more-autofill-options/autofill-passkeys.md#liu-lan-qi-kuo-zhan)。
 * **产品内入门**：Password Manager 的新用户现在将看到一个入门模块，以帮助他们快速开始保护凭据。
 * **浏览器扩展设置重组**：使用浏览器扩展上新重组的设置界面可以快速定位和修改浏览器扩展设置。
 * **Firefox 扩展在隐私窗口中获得完整功能**：在 Firefox 隐私窗口中使用 Bitwarden 浏览器扩展不再有任何限制。[了解更多](miscellaneous/use-bitwarden-in-firefoxs-private-mode.md)。
@@ -484,8 +501,8 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **在移动 App 上使用通行密钥**：Password Manager 移动 App 现在可以使用通行密钥创建和登录。此功能适用于 iOS 系统，Android 系统为测试版。[了解更多](password-manager/vault-basics/storing-passkeys.md)。
-* **删除已存储的通行密钥**：现在可以使用 Bitwarden 浏览器扩展和桌面应用程序删除存储在 Bitwarden 登录项目中的通行密钥。[了解更多](password-manager/vault-basics/storing-passkeys.md)。
+* **在移动 App 上使用通行密钥**：Password Manager 移动 App 现在可以使用通行密钥创建和登录。此功能适用于 iOS 系统，Android 系统为测试版。[了解更多](password-manager/autofill/more-autofill-options/autofill-passkeys.md)。
+* **删除已存储的通行密钥**：现在可以使用 Bitwarden 浏览器扩展和桌面应用程序删除存储在 Bitwarden 登录项目中的通行密钥。[了解更多](password-manager/autofill/more-autofill-options/autofill-passkeys.md)。
 
 ### Secrets Manager
 
@@ -502,7 +519,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **删除存储的通行密钥**：现在可以从 Bitwarden 网页 App 的**密码库项目** → **编辑**界面中删除存储在 Bitwarden 登录项目中的通行密钥。[了解更多](password-manager/vault-basics/storing-passkeys.md#delete-vault-item-passkey)。
+* **删除存储的通行密钥**：现在可以从 Bitwarden 网页 App 的**密码库项目** → **编辑**界面中删除存储在 Bitwarden 登录项目中的通行密钥。[了解更多](password-manager/autofill/more-autofill-options/autofill-passkeys.md#delete-vault-item-passkey)。
 
 ### Secrets Manager
 
@@ -582,7 +599,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **适用于自托管的通行密钥存储**：现在可以将通行密钥存储在自托管的 Bitwarden 服务器中（参阅[这里](password-manager/vault-basics/storing-passkeys.md)）。
+* **适用于自托管的通行密钥存储**：现在可以将通行密钥存储在自托管的 Bitwarden 服务器中（参阅[这里](password-manager/autofill/more-autofill-options/autofill-passkeys.md)）。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -615,7 +632,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 ### Password Manager
 
-* **自动填充菜单**：通过打开新的内联自动填充菜单，在浏览网页时自动填充凭据（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#inline-auto-fill-menu)）。
+* **自动填充菜单**：通过打开新的内联自动填充菜单，在浏览网页时自动填充凭据（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#inline-auto-fill-menu)）。
 
 ## 2023.12.0
 
@@ -623,7 +640,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 ### Password Manager
 
-* **关闭使用通行密钥提示的选项**：您现在可以选择浏览器扩展程序是否要求保存和使用通行密钥（参阅[这里](password-manager/vault-basics/storing-passkeys.md#turn-off-passkey-prompt)）。
+* **关闭使用通行密钥提示的选项**：您现在可以选择浏览器扩展程序是否要求保存和使用通行密钥（参阅[这里](password-manager/autofill/more-autofill-options/autofill-passkeys.md#turn-off-passkey-prompt)）。
 * **移动设备上的 ForwardEmail 支持**：移动应用程序上的用户名生成器的转发电子邮件别名提供程序现在支持 ForwardEmail（参阅[这里](password-manager/vault-basics/generator.md#generate-a-username)）。
 * **密码库健康报告更新**：组织成员现在可以在个人密码库健康报告中看到自己拥有**可编辑**权限的组织拥有的项目。
 
@@ -638,12 +655,12 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 ### Password Manager
 
-* **保存通行密钥到您的密码库**：现在可以将通行密钥存储在您的 Bitwarden 密码库中了！使用 Bitwarden 浏览器扩展程序存储并使用通行密钥登录（参阅[这里](password-manager/vault-basics/storing-passkeys.md)）。
+* **保存通行密钥到您的密码库**：现在可以将通行密钥存储在您的 Bitwarden 密码库中了！使用 Bitwarden 浏览器扩展程序存储并使用通行密钥登录（参阅[这里](password-manager/autofill/more-autofill-options/autofill-passkeys.md)）。
 * **LastPass 直接导入器**：使用浏览器扩展或桌面应用程序将数据从 LastPass 直接导入到 Bitwarden（参阅[这里](password-manager/import-and-export/import-guides/import-data-from-lastpass.md#import-to-bitwarden)）。
 * **从浏览器扩展和桌面应用程序导入**：现在可以从浏览器扩展和桌面应用程序将数据导入到 Bitwarden，包括如果您是使用 LastPass SSO 的团队成员（参阅[这里](import-export/import-data-to-your-vault.md)）。
 * **移动端设置重组**：移动应用程序上的「设置」选项卡已重新组织为更直观的类别。
 * **支持自托管别名提供程序**：Password Manager 客户端上的用户名生成器现在可以连接到自托管 Addy.io 和 SimpleLogin 实例（参阅[这里](password-manager/vault-basics/generator.md#simplelogin)）。
-* **通过上下文菜单自动填充支付卡和身份**：现在可以使用浏览器扩展的上下文菜单自动填充支付卡和身份（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-cards-and-identities.md#using-the-context-menu)）。
+* **通过上下文菜单自动填充支付卡和身份**：现在可以使用浏览器扩展的上下文菜单自动填充支付卡和身份（参阅[这里](password-manager/autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-the-context-menu)）。
 
 ### Secrets Manager
 
@@ -688,7 +705,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 * **用于自托管的设备登录**：连接到自托管服务器的 Bitwarden 应用程序现在可以通过向已注册设备发送身份验证请求来登录，而不是使用主密码（参阅[这里](your-vault/log-in-with-device.md)）。
 * **Forward Email 别名集成**：将 Bitwarden 用户名生成器连接到 [Forward Email](https://forwardemail.net/)，以便轻松创建电子邮件别名（参阅[这里](password-manager/vault-basics/generator.md#username-types)）。
-* **浏览器扩展 TOTP 自动填充**：浏览器扩展现在将自动填充 TOTP 代码，除非您使用了在页面加载时自动填充功能（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#totp-auto-fill)）。
+* **浏览器扩展 TOTP 自动填充**：浏览器扩展现在将自动填充 TOTP 代码，除非您使用了在页面加载时自动填充功能（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#totp-auto-fill)）。
 * **在 \<textarea> 中使用自动填充**：Bitwarden 应用程序现在可以将凭据自动填充到 HTML 的 `<textarea>` 元素中。
 * **从密码库页面创建文件夹和集合**：现在可以从主**密码库**页面使用**新建**按钮创建文件夹和集合。
 
@@ -742,7 +759,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 此次发布包含：
 
 * **域验证**：组织可以验证域（例如 `mycompany.com`）的所有权，允许用户在使用 SSO 登录时跳过组织标识符步骤。参阅[这里](admin-console/login-with-sso/claimed-domains.md)。
-* **浏览器扩展 - 改进的自动填充安全性**：浏览器扩展现在不允许在页面加载时自动填充不受信任的 iframe。浏览器扩展还会在手动自动填充、使用上下文菜单或使用键盘快捷键时警告用户有关不受信任的 iframe，并在自动填充 HTTP 站点时警告用户，该站点需要基于该项目的已保存 URI 的 HTTPS。参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)。
+* **浏览器扩展 - 改进的自动填充安全性**：浏览器扩展现在不允许在页面加载时自动填充不受信任的 iframe。浏览器扩展还会在手动自动填充、使用上下文菜单或使用键盘快捷键时警告用户有关不受信任的 iframe，并在自动填充 HTTP 站点时警告用户，该站点需要基于该项目的已保存 URI 的 HTTPS。参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 * **主密码安全性检查**：用户现在可以在创建账户或在网页密码库上更改主密码时通过 Have I Been Pwned 检查已知的数据泄露，以查找他们预期的主密码。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
 * **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 账户和[更改主密码](your-vault/your-master-password.md#change-your-master-password)的任何用户强制执行。
 * **激活自动填充策略**：对于企业组织，激活自动填充策略将自动为组织的新成员和现有成员打开页面加载时的自动填充。参阅[这里](organizations/enterprise-policies.md#activate-auto-fill)。
@@ -863,7 +880,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 
 此次发布包含关键功能和可用性改进，使 Bitwarden 在旅途中更加出色：
 
-* **自动填充期间的账户切换 (iOS)**：在自动填充期间通过点击头像按钮快速切换到另一个账户，现在可在 Android 和 iOS 上使用（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-ios.md)）。
+* **自动填充期间的账户切换 (iOS)**：在自动填充期间通过点击头像按钮快速切换到另一个账户，现在可在 Android 和 iOS 上使用（参阅[这里](password-manager/autofill/autofill-from/autofill-from-ios.md)）。
 * **移动端的密码库筛选器**：在移动应用程序上，您现在可以按密码库筛选项目。
 * **组织成员高级状态**：组织成员现在可以在收到邀请后立即使用高级功能，例如高级 2FA 方式，而无需确认。
 * **可访问性改进**：此版本包括一些更改，这些更改将通过辅助技术提高 Bitwarden 的性能，包括具有 [hCaptcha 无障碍访问](https://dashboard.hcaptcha.com/signup?type=accessibility)的用户能够使用其无障碍 Cookie 跳过 hCaptcha 挑战（现在可用于桌面和移动应用程序）。
@@ -882,7 +899,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 * **用于自托管企业组织的家庭赞助**：现在可以为自托管的企业组织成员发放家庭组织赞助（参阅[这里](self-hosting/self-hosting-families-sponsorships.md)）。
 * **用户名生成器 - 转发的电子邮件别名类型**：将用户名生成器与 SimpleLogin、AnonAddy 或 Firefox Relay 集成，以自动同时创建用户名和相应的电子邮件别名（参阅[这里](password-manager/vault-basics/generator.md#username-types)）。
 * **项目链接**：复制一个项目的 URL 时，将作为直接链接提供给组织成员或在文档中使用（参阅[这里](organizations/link-to-an-item.md)）。
-* **自动填写期间的账户切换**：在 Android 系统中，通过点击头像气泡，以在自动填写过程中快速切换到另一个账户（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-on-android.md#auto-fill-while-account-switching)）。
+* **自动填写期间的账户切换**：在 Android 系统中，通过点击头像气泡，以在自动填写过程中快速切换到另一个账户（参阅[这里](password-manager/autofill/autofill-from/autofill-from-android.md#auto-fill-while-account-switching)）。
 * **客户组织计费的变化**：从这个发布版本开始，只有[提供商](provider-portal/get-started-with-provider-portal.md)用户可以查看[客户组织](provider-portal/get-started-with-provider-portal.md#client-organizations)的计费信息。
 
 ## 2022-04-26 <a href="#id-2022-04-26" id="id-2022-04-26"></a>
@@ -953,7 +970,7 @@ Bitwarden 很自豪地宣布在 12 月的版本中增加了新的企业功能，
 * &#x20;[**Key Connector**](login-with-sso/about-key-connector.md)：(_仅适用于自托管组织_）当使用带有客户管理加密的 SSO 登录时，作为使用主密码解密密码库的一个替代方案，自托管 Key Connector 应用程序向 Bitwarden 客户端提供加密密钥（参阅[这里](login-with-sso/about-key-connector.md)）。
 * **用于企业的家庭**：(_目前仅适用于云托管组织，未来版本的自托管_）从这个版本开始，企业组织的成员可以兑换一个与最多 5 个朋友或家庭成员共享的免费 [Bitwarden 家庭组织](plans-and-pricing/password-manager/about-bitwarden-plans.md#families-organizations)。家庭组织包括所有 6 个用户的所有高级功能和无限制的安全数据共享（参阅[这里](plans-and-pricing/password-manager/redeem-families-sponsorship.md)）。
 * **MacOS 和 Safari 导入器**：我们为从 Safari 和 macOS 导出的密码增加了一个自定义导入器（详情见[这里](password-manager/import-and-export/import-guides/import-data-from-macos-and-safari.md)）。
-* **新的自定义字段类型**：链接型自定义字段可用于解决您的浏览器扩展在自动填写特定网站的用户名和密码时遇到的问题，方法是将用户名和密码链接到定制的表单元素（参阅[此处](<password-manager/auto-fill/auto-fill-basics/Auto-fill Custom Fields.md#using-linked-custom-fields>)）。
+* **新的自定义字段类型**：链接型自定义字段可用于解决您的浏览器扩展在自动填写特定网站的用户名和密码时遇到的问题，方法是将用户名和密码链接到定制的表单元素（参阅[此处](password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md#using-linked-custom-fields)）。
 * **浏览器扩展 - 自动填充时解锁密码库**：当您尝试在密码库被锁定时使用上下文菜单或键盘快捷键进行自动填充，现在将提示您解锁密码库，并在解锁后自动填写您的凭证。
 
 ## 2021-10-26 <a href="#id-2021-10-26" id="id-2021-10-26"></a>
@@ -972,7 +989,7 @@ _服务器 1.44.0，Web 2.24.0，桌面 端1.29.0，浏览器扩展 1.54.0，移
 * **自定义密码库超时**：您现在可以为密码库超时指定自定义时间范围（小时和分钟）（参阅[这里](your-vault/vault-timeout-options.md#vault-timeout)）。
 * **自定义角色 - 改进的集合权限**：自定义角色的集合管理权限已扩展为包括对用户是否可以创建、编辑或删除已分配的集合或所有集合的精细控制（参阅[这里](your-vault/vault-timeout-options.md#vault-timeout)）。
 * **管理员密码重置 - 重置后更新密码**：管理员重置的密码现在必须由他们所属的用户在登录 Bitwarden 时立即更新（参阅[这里](organizations/admin-password-reset.md#after-a-password-reset)）。
-* **浏览器扩展 - 自动填充 Span 元素**：浏览器扩展现在可以在 HTML `<span>` 元素的 innerText 中自动填充[自定义字段](your-vault/custom-fields.md)（参阅[这里](<password-manager/auto-fill/auto-fill-basics/Auto-fill Custom Fields.md#html-span-elements>)）。
+* **浏览器扩展 - 自动填充 Span 元素**：浏览器扩展现在可以在 HTML `<span>` 元素的 innerText 中自动填充[自定义字段](your-vault/custom-fields.md)（参阅[这里](password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md#html-span-elements)）。
 * &#x20;**浏览器扩展 - 自动生物识别提示**：浏览器扩展现在可以在打开时自动提示您生物识别输入。您可以从 **⚙️设置**菜单切换此行为（参阅[这里](your-vault/unlocking-with-biometrics.md)）。
 * **网页密码库 - 黑暗模式**：网页密码库现在拥有黑暗模式（参阅[这里](miscellaneous/change-app-theme.md)）。
 * **CLI - `generate` 密码短语选项**： `bw generate --passphrase` 命令现在包含 `--capitalize` 和 `--includeNumber` 选项（参阅[这里](password-manager/developer-tools/password-manager-cli.md#generate)）。
@@ -1019,7 +1036,7 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 * **事件日志导出**：直接从网页密码库导出事件日志（参阅[这里](admin-console/reporting/event-logs.md#export-events)）。
 * **目录连接器 API 密钥认证**：从此版本开始，目录连接器的用户将需要使用[组织 API 密钥](organizations/bitwarden-public-api.md#authentication)才能登录。
 * **目录连接器同步限制增加**：目录连接器现在可以同步无限数量的用户或群组，之前的限制被设置为 2000。要同步 2000 以上的用户或群组，请切换到新的同步选项（参阅[这里](directory-connector/sync-options-and-filters.md#large-syncs)）。
-* **页面加载时自动填充功能的增强**：浏览器扩展的页面加载时自动填充功能已升级，可以更灵活地满足用户的独特需求（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#on-page-load)）。
+* **页面加载时自动填充功能的增强**：浏览器扩展的页面加载时自动填充功能已升级，可以更灵活地满足用户的独特需求（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#on-page-load)）。
 * **更多 CLI 选项**：我们添加了一些新的 CLI 选项，包括轻松检索密码库项目的备注 (`bw get notes <id>`) 和设置 Send 的最大访问计数的功能 (`bw send create --maxAccessCount <#>`)。
 * **Web 开发人员自动填充排除**：Web 开发贡献者现在可以通过向 `<input>` 元素添加 `data-bwignore` 属性（例如 `data-bwignore="true"`）来阻止浏览器扩展自动填充给定的表单元素。
 
@@ -1031,7 +1048,7 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 * **FIDO 更新 & 扩展支持**：我们的 FIDO 实施已经从 FIDO U2F 升级为 FIDO2 WebAuthn，但现有的 FIDO U2F 密钥将保留其完整性。对 FIDO 的支持已经扩展到更多的浏览器扩展和 Windows 桌面应用程序（参阅[这里](my-account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
 * **用于密钥的自定义字段**：自定义字段的值已经升级到支持多达 5000 个字符，允许存储像 RSA 4096 位 SSH 密钥这样的密钥（参阅[这里](your-vault/custom-fields.md#custom-fields-for-keys)）。
 * **文件大小增加**：现在可以创建最大 500 MB 的文件附件或文件 Send。由于设备限制，移动应用程序仍采用旧的 100 MB 限制。
-* **禁用浏览器扩展计数器**：使用 **⚙️设置 → 选项**菜单中的新开关来禁用浏览器扩展的角标计数器（参阅[这里](password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md)）。
+* **禁用浏览器扩展计数器**：使用 **⚙️设置 → 选项**菜单中的新开关来禁用浏览器扩展的角标计数器（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)）。
 * **Safari 的生物识别**：Safari 网页扩展现在包含对 Safari 14+ 生物识别解锁的支持（参阅[这里](your-vault/unlocking-with-biometrics.md)）。
 * **搜索国际化**：现在可以使用 1 个字符搜索密码库，改善了使用 1 个字符单词的语言（如简体中文和繁体中文）的使用体验。
 * **弱密码报告排序**：弱密码报告现在按照密码弱性的严重程度来排序（参阅[这里](your-vault/vault-health-reports.md#weak-passwords-report)）。
@@ -1054,7 +1071,7 @@ Bitwarden 自豪地宣布我们发布了 Bitwarden Send，一个用于短暂共�
 
 * **Bitwarden Send**：Bitwarden Send 是一个用于短暂共享的端到端加密解决方案。在我们的网站和帮助中心有很多关于 Send 的资料，但你可以从[这里](bitwarden-send/about-send.md)开始。
 * **FIDO U2F 支持 Edge**：FIDO U2F 方式的两步登录现在可以用于微软 Edge 中的网页密码库和浏览器扩展（参阅[这里](my-account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
-* **浏览器扩展中的域名排除**：Bitwarden 浏览器扩展现在可以对其明确不提供记住密码的域名进行配置（参阅[这里](miscellaneous/exclude-domains.md)）。
+* **浏览器扩展中的域名排除**：Bitwarden 浏览器扩展现在可以对其明确不提供记住密码的域名进行配置（参阅[这里](password-manager/autofill/more-autofill-options/exclude-domains.md)）。
 * **改进的导入错误消息**：最近有很多人迁移到 Bitwarden，所以我们清理了一个导入错误的消息，以帮助你更快地解决问题（参阅[这里](import-export/import-data-to-your-vault.md#length-related-import-errors)）。
 * **Safari 网页扩展移植**：我们的 Safari 应用程序扩展已经正式移植到 Safari 14 以上版本的网页扩展中使用。由于 Safari 的变化，网页扩展的使用现在仅限于那些通过 Mac App Store 下载获取的应用（参阅[这里](miscellaneous/safari-web-extension.md)）。
 

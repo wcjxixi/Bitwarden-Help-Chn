@@ -174,7 +174,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 ### 激活自动填充 <a href="#activate-auto-fill" id="activate-auto-fill"></a>
 
-打开**激活自动填充**策略将自动为组织的所有现有和新成员打开浏览器扩展上的[页面加载时自动填充](../password-manager/auto-fill/auto-fill-basics/auto-fill-logins-in-browser-extensions.md#on-page-load)功能。如果激活，成员将无法禁用页面加载时自动填充功能。
+打开**激活自动填充**策略将自动为组织的所有现有和新成员打开浏览器扩展上的[页面加载时自动填充](../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#on-page-load)功能。如果激活，成员将无法禁用页面加载时自动填充功能。
 
 ### 为允许的应用程序自动登录用户 <a href="#automatically-log-in-users-for-allowed-applications" id="automatically-log-in-users-for-allowed-applications"></a>
 
