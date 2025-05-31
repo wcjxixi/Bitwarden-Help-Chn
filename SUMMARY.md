@@ -149,7 +149,7 @@
   * [组织快速入门](admin-console/organizations-quick-start.md)
   * [组织基础](admin-console/organization-basics/README.md)
     * [组织](organizations/organizations.md)
-    * [=集合](organizations/collections.md)
+    * [集合](organizations/collections.md)
     * [群组](organizations/groups.md)
     * [企业策略](organizations/enterprise-policies.md)
     * [集合管理](admin-console/organization-basics/collection-management.md)

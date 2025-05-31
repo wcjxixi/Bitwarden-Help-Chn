@@ -57,7 +57,7 @@
 
 **打开**此选项后，组织所有者和管理员可以删除组织的集合。
 
-### 限制为具有「管理集合」权限的成员可以删项目 <a href="#limit-item-deletion-to-member-with-the-manage-collection-permissions" id="limit-item-deletion-to-member-with-the-manage-collection-permissions"></a>
+### 限制为具有「管理集合」权限的成员可以删除项目 <a href="#limit-item-deletion-to-member-with-the-manage-collection-permissions" id="limit-item-deletion-to-member-with-the-manage-collection-permissions"></a>
 
 此选项将决定拥有**可以编辑**和**可以编辑，隐藏密码**的组织成员是否可以删除集合项目。
 
