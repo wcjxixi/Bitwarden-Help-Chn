@@ -33,9 +33,9 @@
 
 {% tabs %}
 {% tab title="iOS App" %}
-1. 在 App 的登录界面，使用 **🔑Passwords** 打开 Bitwarden。
+1. 在 App 的登录界面，点击 **🔑密码**打开 Bitwarden。
 2. 打开 Bitwarden 后，选择屏幕右上角的 ✚图标。
-3. URI 将自动包含到新的密码库项目（如果 App 允许）中，可以复制并粘贴到任何现有的登录项目中。
+3. URI 将自动包含到新的密码库项目（如果 App 允许）中，可以将其复制并粘贴到任何现有的登录项目中。
 {% endtab %}
 
 {% tab title="Android App" %}
