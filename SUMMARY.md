@@ -314,7 +314,7 @@
   * [合规、审计和认证](security/compliance-audits-and-certifications.md)
   * [服务器地理位置](security/server-geographies.md)
   * [版本控制](security/versioning.md)
-  * [使用网站图标时的隐私](security/privacy-when-using-website-icons.md)
+  * [网站图标的数据隐私](security/website-icons.md)
   * [Bitwarden 软件发布支持](security/bitwarden-software-release-support.md)
   * [Bitwarden 的分包商](security/who-are-bitwardens-subprocessors.md)
   * [来自 Bitwarden 的电子邮件](security/emails-from-bitwarden.md)

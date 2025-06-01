@@ -257,7 +257,7 @@ docker compose ps
 | BW\_ENABLE\_ADMIN           | <p><strong>不要禁用此服务</strong>。</p><p>在<a href="../../system-administrator-portal.md">此处</a>了解有关管理面板功能的更多信息。默认为 <code>true</code>。</p>                |
 | BW\_ENABLE\_API             | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
 | BW\_ENABLE\_EVENTS          | 为团队和企业事件监控启用或禁用 Bitwarden 事件日志。默认为 `false`。                                                                                                        |
-| BW\_ENABLE\_ICONS           | 启用或禁用登录项目 URI 设置的 Bitwarden 品牌图标。在[此处](../../../security/privacy-when-using-website-icons.md)了解更多。默认为 `true`。                                      |
+| BW\_ENABLE\_ICONS           | 启用或禁用登录项目 URI 设置的 Bitwarden 品牌图标。在[此处](../../../security/website-icons.md)了解更多。默认为 `true`。                                                         |
 | BW\_ENABLE\_IDENTITY        | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
 | BW\_ENABLE\_NOTIFICATIONS   | 当使用设备登录、移动端密码库同步等时，启用或禁用用于接收移动设备推送通知的通知服务。默认为 `true`。                                                                                              |
 | BW\_ENABLE\_SCIM            | 为企业组织启用或禁用 SCIM。默认为 `false`。                                                                                                                       |
