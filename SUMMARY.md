@@ -45,7 +45,7 @@
     * [密码库项目](your-vault/vault-items.md)
     * [用户名 & 密码生成器](password-manager/vault-basics/generator.md)
     * [自定义字段](your-vault/custom-fields.md)
-    * [集成的验证器](your-vault/totp.md)
+    * [集成的身份验证器](your-vault/totp.md)
     * [文件附件](your-vault/file-attachments.md)
     * [共享](organizations/sharing.md)
     * [集合](password-manager/vault-basics/collections.md)
