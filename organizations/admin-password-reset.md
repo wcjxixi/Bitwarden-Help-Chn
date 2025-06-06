@@ -10,11 +10,11 @@
 
 ## 什么是账户恢复？ <a href="#what-is-account-recovery" id="what-is-account-recovery"></a>
 
-账户恢复（以前叫「管理员密码重置」）允许[指定的管理员](admin-password-reset.md#permissions)恢复企业组织用户账户以及在员工忘记[主密码](../your-vault/your-master-password.md)时恢复访问权限。通过[启用账户恢复策略](admin-password-reset.md#activate-account-recovery)为组织激活账户恢复。
+账户恢复（以前叫「管理员密码重置」）允许[指定的管理员](admin-password-reset.md#permissions)恢复企业组织用户账户以及在员工忘记[主密码](../account/log-in-and-unlock/your-master-password.md)时恢复访问权限。通过[启用账户恢复策略](admin-password-reset.md#activate-account-recovery)为组织激活账户恢复。
 
 个人用户必须被注册（通过[自行注册](admin-password-reset.md#self-enroll-in-password-reset)或使用[自动注册策略选项](admin-password-reset.md#automatic-enrollment)）才有资格进行账户恢复，因为注册会触发密钥交换，以确保恢复的安全。
 
-**账户恢复不会绕过两步登录或 SSO 登录。**&#x5982;果为账户启用了[两步登录方式](../two-step-login/two-step-login-methods.md)，或者如果您的组织[要求 SSO 身份验证](enterprise-policies.md#single-sign-on-authentication)，您在密码重置后仍将需要使用该方式访问您的密码库。
+**账户恢复不会绕过两步登录或 SSO 登录。**&#x5982;果为账户启用了[两步登录方式](../account/two-step-login/setup-guides/two-step-login-methods.md)，或者如果您的组织[要求 SSO 身份验证](enterprise-policies.md#single-sign-on-authentication)，您在密码重置后仍将需要使用该方式访问您的密码库。
 
 ### 加密 <a href="#encryption" id="encryption"></a>
 

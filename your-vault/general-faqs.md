@@ -10,11 +10,11 @@
 
 ### 问：如果我忘记了主密码应该该怎么办？ <a href="#q-what-do-i-do-if-i-forgot-my-master-password" id="q-what-do-i-do-if-i-forgot-my-master-password"></a>
 
-**答：**&#x4F5C;为一个零知识解决方案，Bitwarden 及其系统对您的主密码不了解，没有办法找回，也没有办法重置您的主密码。如果您已经丢失了您的主密码，很遗憾，团队没有办法恢复账户。想了解下一步该怎么做，或者如何主动保护自己，避免出现这种情况，请参考[您的主密码](your-master-password.md)这篇文章。
+**答：**&#x4F5C;为一个零知识解决方案，Bitwarden 及其系统对您的主密码不了解，没有办法找回，也没有办法重置您的主密码。如果您已经丢失了您的主密码，很遗憾，团队没有办法恢复账户。想了解下一步该怎么做，或者如何主动保护自己，避免出现这种情况，请参考[您的主密码](../account/log-in-and-unlock/your-master-password.md)这篇文章。
 
 ### 问：在紧急情况下，是否有办法让别人访问我的密码库项目？ <a href="#q-is-there-a-way-for-someone-to-access-my-vault-items-in-case-of-emergency" id="q-is-there-a-way-for-someone-to-access-my-vault-items-in-case-of-emergency"></a>
 
-**答：**&#x6709;！拥有高级订阅的用户可以主动设置受信任的紧急联系人，以便在紧急情况下访问您的密码库。如需了解更多信息，请参阅[紧急访问](../security/emergency-access.md)。
+**答：**&#x6709;！拥有高级订阅的用户可以主动设置受信任的紧急联系人，以便在紧急情况下访问您的密码库。如需了解更多信息，请参阅[紧急访问](../account/log-in-and-unlock/more-log-in-options/emergency-access.md)。
 
 ### 问：如何更改我的主密码提示？ <a href="#q-how-do-i-change-my-master-password-hint" id="q-how-do-i-change-my-master-password-hint"></a>
 
@@ -27,7 +27,7 @@
 ### 问：如何更改电子邮箱地址？ <a href="#q-how-do-i-change-my-email-address" id="q-how-do-i-change-my-email-address"></a>
 
 {% hint style="info" %}
-如果您使用[电子邮箱方式的两步登录](../two-step-login/setup-guides/two-step-login-via-email.md)，则更改您的账户电子邮箱地址不会更改用于接收 2FA 代码的地址。
+如果您使用[电子邮箱方式的两步登录](../account/two-step-login/setup-guides/two-step-login-via-email.md)，则更改您的账户电子邮箱地址不会更改用于接收 2FA 代码的地址。
 {% endhint %}
 
 **答：**&#x8981;更改账户所附属的电子邮箱地址：

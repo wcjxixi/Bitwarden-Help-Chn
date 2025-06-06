@@ -26,7 +26,7 @@ Bitwarden 的愿景是想象一个没有人被黑客入侵的世界。我们将�
 对于 Bitwarden 而言，[不同的计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)和选项是相互关联和互补的，这些都源于我们对无黑客世界的愿景。通过密码管理赋予每个人在工作**和**家庭中的权力，使我们离这个目标更近了一步。
 {% endhint %}
 
-Bitwarden 的一个关键方面是，与许多软件应用程序不同，每个密码库中的所有内容都是[端到端加密](../security/encryption.md)的。为了保持这种安全模式，每个使用 Bitwarden 的人都必须有一个唯一的账户和一个唯一的[主密码](../your-vault/your-master-password.md)。主密码应该是**强大**和**易记**的。
+Bitwarden 的一个关键方面是，与许多软件应用程序不同，每个密码库中的所有内容都是[端到端加密](../security/encryption.md)的。为了保持这种安全模式，每个使用 Bitwarden 的人都必须有一个唯一的账户和一个唯一的[主密码](../account/log-in-and-unlock/your-master-password.md)。主密码应该是**强大**和**易记**的。
 
 每一个用户负责他们的主密码。Bitwarden 是一种零知识加密解决方案，这意味着 Bitwarden 的团队以及 Bitwarden 系统本身不知道、无法获取或重置任何主密码。
 
@@ -50,7 +50,7 @@ Bitwarden 客户端/服务器
 个人了密码库
 {% endembed %}
 
-家庭、团队和企业组织自动为成员单独提供高级功能，如[紧急访问](../security/emergency-access.md)和[加密附件存储](../your-vault/file-attachments.md)，他们可以选择性使用。个人密码库仅仅是**个人**的，但个人密码库不支持共享，[组织密码库则可以](onboarding-and-succession.md#bitwarden-organizations)。
+家庭、团队和企业组织自动为成员单独提供高级功能，如[紧急访问](../account/log-in-and-unlock/more-log-in-options/emergency-access.md)和[加密附件存储](../your-vault/file-attachments.md)，他们可以选择性使用。个人密码库仅仅是**个人**的，但个人密码库不支持共享，[组织密码库则可以](onboarding-and-succession.md#bitwarden-organizations)。
 
 {% hint style="success" %}
 **为什么默认提供个人密码库？**
@@ -132,7 +132,7 @@ Bitwarden 提供了多种工具，可用于定制工作流程和加强对继任�
 
 Alice 是您企业中的一个**用户**，该组织托管在 Bitwarden Cloud 并使用公司电子邮箱地址（例如 `first-last@company.com`）。 目前，Alice 是这样使用 Bitwarden 的：
 
-<table><thead><tr><th width="150">产品领域</th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td>在个人和职业上使用 Bitwarden 移动端和浏览器扩展，在组织上偶尔使用网页密码库进行相关工作。</td></tr><tr><td><strong>电子邮箱 &#x26; 主密码</strong></td><td>使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录 Bitwarden。</td></tr><tr><td><strong>个人项目</strong></td><td>在她的个人密码库中存储各种个人项目，包括登录和信用卡。</td></tr><tr><td><strong>两步登录</strong></td><td>使用组织层面的 <a href="../two-step-login/setup-guides/two-step-login-via-duo.md">Duo 2FA</a>。</td></tr><tr><td><strong>集合</strong></td><td>Alice 对「Marketing Credentials」集合具有「可以管理」权限，授予她可以管理该集合的许多方面。</td></tr><tr><td><strong>已共享的项目</strong></td><td>创建并共享了多个归组织所有并驻留在她团队集合中的密码库项目。</td></tr></tbody></table>
+<table><thead><tr><th width="150">产品领域</th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td>在个人和职业上使用 Bitwarden 移动端和浏览器扩展，在组织上偶尔使用网页密码库进行相关工作。</td></tr><tr><td><strong>电子邮箱 &#x26; 主密码</strong></td><td>使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录 Bitwarden。</td></tr><tr><td><strong>个人项目</strong></td><td>在她的个人密码库中存储各种个人项目，包括登录和信用卡。</td></tr><tr><td><strong>两步登录</strong></td><td>使用组织层面的 <a href="../account/two-step-login/setup-guides/two-step-login-via-duo.md">Duo 2FA</a>。</td></tr><tr><td><strong>集合</strong></td><td>Alice 对「Marketing Credentials」集合具有「可以管理」权限，授予她可以管理该集合的许多方面。</td></tr><tr><td><strong>已共享的项目</strong></td><td>创建并共享了多个归组织所有并驻留在她团队集合中的密码库项目。</td></tr></tbody></table>
 
 #### 当 Alice 从您的组织中被移除后： <a href="#once-offboarded" id="once-offboarded"></a>
 

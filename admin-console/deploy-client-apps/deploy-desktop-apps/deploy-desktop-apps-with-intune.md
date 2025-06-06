@@ -48,7 +48,7 @@
 {% hint style="success" %}
 要使用这种方式，端点设备必须能够访问 Microsoft App Store，并且必须支持 Intune 管理扩展 (IME)。
 
-请注意，Microsoft App Store 中的 Bitwarden 桌面 App 目前不支持浏览器扩展生物识别集成（[了解更多](../../../your-vault/unlocking-with-biometrics.md)）。
+请注意，Microsoft App Store 中的 Bitwarden 桌面 App 目前不支持浏览器扩展生物识别集成（[了解更多](../../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)）。
 {% endhint %}
 
 要部署 Microsoft App Store 版本的 Bitwarden Password Manager，请打开 Microsoft Intune 门户然后完成以下步骤：

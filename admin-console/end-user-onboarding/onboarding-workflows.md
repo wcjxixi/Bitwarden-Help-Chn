@@ -46,7 +46,7 @@
 
 您将登录到 Bitwarden。管理员将收到通知，说明您已接受加入我们组织的邀请，然后需要确认您的成员资格。完成后，您将获得团队共享的密码库数据的访问权限。
 
-您的成员资格确认后，请完成以下步骤将您的网页浏览器或 App 设置为[受信任设备](../login-with-sso/trusted-devices/add-a-trusted-device.md)：
+您的成员资格确认后，请完成以下步骤将您的网页浏览器或 App 设置为[受信任设备](../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)：
 
 1. 打开 \[vault.bitwarden.com 或 vault.bitwarden.eu] 或您的 Bitwarden App \[然后将**登录到：**&#x9009;择器更改为 bitwarden.eu]。
 2. 输入您的电子邮箱地址然后选择**继续**。
@@ -67,7 +67,7 @@
 
 您将登录到 Bitwarden。管理员将收到通知，说明您已接受加入我们组织的邀请，然后需要确认您的成员资格。完成后，您将获得团队共享的密码库数据的访问权限。
 
-您的会员资格确认后，请完成以下步骤将您的网络浏览器或 App 设置为[受信任设备](../login-with-sso/trusted-devices/add-a-trusted-device.md)：
+您的会员资格确认后，请完成以下步骤将您的网络浏览器或 App 设置为[受信任设备](../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)：
 
 1. 打开 \[vault.bitwarden.com 或 vault.bitwarden.eu] 或您的 Bitwarden App \[然后将**登录到：**&#x9009;择器更改为 bitwarden.eu]。
 2. 输入您的电子邮箱地址然后选择**继续**。

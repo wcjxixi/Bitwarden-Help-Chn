@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/about-trusted-devices/)
 {% endhint %}
 
-受信任设备 SSO 允许用户[使用 SSO 进行身份验证](../../../login-with-sso/about-login-with-sso.md)，并使用设备存储的加密密钥解密其密码库，而无需输入主密码。受信任设备必须在登录尝试前注册，或[通过几种不同的方法获得批准](add-a-trusted-device.md)。
+受信任设备 SSO 允许用户[使用 SSO 进行身份验证](../../../login-with-sso/about-login-with-sso.md)，并使用设备存储的加密密钥解密其密码库，而无需输入主密码。受信任设备必须在登录尝试前注册，或[通过几种不同的方法获得批准](../../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)。
 
 受信任设备 SSO 可为企业终端用户提供零知识和端到端加密的无密码体验。这可以防止用户因忘记主密码而被锁定，让他们享受简化的登录体验。
 
@@ -14,7 +14,7 @@
 
 1. 为您的组织[设置受信任设备 SSO](setup-sso-with-trusted-devices.md)。
 2. 向管理员提供有关[如何批准设备请求](approve-a-trusted-device.md)的信息。
-3. 向最终用户提供有关[如何添加受信任设备](add-a-trusted-device.md)的信息。
+3. 向最终用户提供有关[如何添加受信任设备](../../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)的信息。
 
 ## 工作原理 <a href="#how-it-works" id="how-it-works"></a>
 
@@ -59,7 +59,7 @@
 当用户使用 SSO 进行身份验证，并选择使用未受信任的设备（即**设备对称密钥**不存在于该设备上）解密其密码库时，他们需要选择一种方法来批准该设备，并选择信任该设备，以便将来无需进一步批准即可使用。接下来会发生什么取决于所选的选项：
 
 * **从其他设备批准：**
-  1. 触发[此处](../../../your-vault/log-in-with-device.md#how-it-works)记录的流程后，客户端就获得并解密了账户加密密钥。
+  1. 触发[此处](../../../account/log-in-and-unlock/more-log-in-options/log-in-with-device.md#how-it-works)记录的流程后，客户端就获得并解密了账户加密密钥。
   2. 用户现在可以使用解密后的账户加密密钥解密其密码库数据。如果用户选择信任该设备，则会按照**入职**选项卡中的说明与客户端建立信任。
 * **请求管理员批准：**
   1. 发起请求的客户端向 Bitwarden 数据库中的验证请求表 POST 一个请求，其中包括账户电子邮件地址、唯一的**身份验证请求公钥**ª 和访问代码。
@@ -110,7 +110,7 @@
 
 * 如果用户是在受信任设备 SSO 激活**之前**入职的，或者如果他们从组织邀请中选择了**创建账户**，则他们的账户将保留其主密码。
 * 如果用户是在受信任设备 SSO 激活**之后**入职的，并从组织邀请中选择**登录** → **企业 SSO** 进行 [JIT 配置](../../../login-with-sso/login-with-sso-faqs.md#q-how-does-login-with-sso-work-for-new-users-just-in-time)，则他们的账户将无需拥有主密码。如果您更改为主密码[成员解密选项](../../../login-with-sso/member-decryption-options.md)，只要这些用户仍然是组织的成员，系统就会在他们登录时提示创建一个主密码（[了解更多](setup-sso-with-trusted-devices.md)）。
-* 如果使用账户恢复功能恢复了用户账户，就必须为其分配一个主密码。目前，有了主密码后，就无法将其从账户中移除，因此，为了避免出现这种结果，我们建议：(i) 指导用户将数据导出到备份中；(ii) 完全删除丢失的账户；(iii) 要求用户[使用受信任设备重新入职到您组织](add-a-trusted-device.md)；(iv) 用户完成这些后，指导他们导入备份。
+* 如果使用账户恢复功能恢复了用户账户，就必须为其分配一个主密码。目前，有了主密码后，就无法将其从账户中移除，因此，为了避免出现这种结果，我们建议：(i) 指导用户将数据导出到备份中；(ii) 完全删除丢失的账户；(iii) 要求用户[使用受信任设备重新入职到您组织](../../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)；(iv) 用户完成这些后，指导他们导入备份。
 
 {% hint style="danger" %}
 对于那些因使用受信任设备 SSO 而没有主密码的账户，[将其从您的组织中移除](../../../organizations/user-management.md#offboard-users)或[撤销其访问权限](../../../organizations/user-management.md#revoke-access)将切断其对 Bitwarden 账户的所有访问权限，除非：
@@ -127,10 +127,10 @@
 
 根据您的客户端内存中是否有主密码哈希（由客户端应用程序最初被访问的方式决定），它可能会表现出以下行为变化：
 
-| 功能       | 影响                                                                                                                                                                                                                                                                                                                                                                                |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 验证       | <p>Bitwarden 客户端应用程序中有许多功能通常需要输入主密码才能使用，包括<a href="../../../import-export/export-vault-data.md">导出密码库数据</a>、更改<a href="../../../two-step-login/two-step-login-methods.md">两步登录设置</a>、检索 <a href="../../../password-manager/developer-tools/personal-api-key-for-cli-authentication.md">API 密钥</a>等。</p><p>如果用户不使用主密码访问客户端，<strong>所有这些功能</strong>都将使用基于电子邮件的 TOTP 验证来取代主密码确认。</p> |
-| 密码库锁定/解锁 | <p>一般情况下，被锁定的密码库可以使用主密码解锁。如果用户不使用主密码访问客户端，则被锁定的客户端应用程序只能使用 <a href="../../../your-vault/unlock-with-pin.md">PIN</a> 或<a href="../../../your-vault/unlocking-with-biometrics.md">生物识别</a>解锁。</p><p>如果客户端应用程序既没有启用 PIN 也没有启用生物识别，则密码库将始终注销而不是锁定。解锁和登录<strong>始终</strong>需要互联网连接。</p>                                                                                                |
-| 主密码重新提示  | 如果用户不使用主密码解锁其密码库，则[主密码重新提示](../../../your-vault/vault-items.md#protect-individual-items)将被禁用。                                                                                                                                                                                                                                                                                     |
-| 更改电子邮箱地址 | [没有主密码](about-trusted-devices.md#impact-on-master-passwords)的用户将**无法**更改他们电子邮箱地址。                                                                                                                                                                                                                                                                                                 |
-| CLI      | [没有主密码](about-trusted-devices.md#impact-on-master-passwords)的用户将**无法**访问密码管理器 CLI。                                                                                                                                                                                                                                                                                                |
+| 功能       | 影响                                                                                                                                                                                                                                                                                                                                                                                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 验证       | <p>Bitwarden 客户端应用程序中有许多功能通常需要输入主密码才能使用，包括<a href="../../../import-export/export-vault-data.md">导出密码库数据</a>、更改<a href="../../../account/two-step-login/setup-guides/two-step-login-methods.md">两步登录设置</a>、检索 <a href="../../../password-manager/developer-tools/personal-api-key-for-cli-authentication.md">API 密钥</a>等。</p><p>如果用户不使用主密码访问客户端，<strong>所有这些功能</strong>都将使用基于电子邮件的 TOTP 验证来取代主密码确认。</p> |
+| 密码库锁定/解锁 | <p>一般情况下，被锁定的密码库可以使用主密码解锁。如果用户不使用主密码访问客户端，则被锁定的客户端应用程序只能使用 <a href="../../../account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md">PIN</a> 或<a href="../../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md">生物识别</a>解锁。</p><p>如果客户端应用程序既没有启用 PIN 也没有启用生物识别，则密码库将始终注销而不是锁定。解锁和登录<strong>始终</strong>需要互联网连接。</p>                                               |
+| 主密码重新提示  | 如果用户不使用主密码解锁其密码库，则[主密码重新提示](../../../your-vault/vault-items.md#protect-individual-items)将被禁用。                                                                                                                                                                                                                                                                                                          |
+| 更改电子邮箱地址 | [没有主密码](about-trusted-devices.md#impact-on-master-passwords)的用户将**无法**更改他们电子邮箱地址。                                                                                                                                                                                                                                                                                                                      |
+| CLI      | [没有主密码](about-trusted-devices.md#impact-on-master-passwords)的用户将**无法**访问密码管理器 CLI。                                                                                                                                                                                                                                                                                                                     |

@@ -75,7 +75,7 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 ### 问：如何对我的 Bitwarden 组织要求两步登录？ <a href="#q-how-do-i-require-two-step-login-for-my-bitwarden-organization" id="q-how-do-i-require-two-step-login-for-my-bitwarden-organization"></a>
 
-**答：**&#x4F7F;用企业组织订阅中的[企业策略](../organizations/enterprise-policies.md)，可以实现强制 2FA 功能。您也可以为您的组织启用 Duo MFA 集成来实现强制 2FA/MFA。有关更多信息，请参阅  [Duo 方式的两步登录](../two-step-login/setup-guides/two-step-login-via-duo.md)。
+**答：**&#x4F7F;用企业组织订阅中的[企业策略](../organizations/enterprise-policies.md)，可以实现强制 2FA 功能。您也可以为您的组织启用 Duo MFA 集成来实现强制 2FA/MFA。有关更多信息，请参阅  [Duo 方式的两步登录](../account/two-step-login/setup-guides/two-step-login-via-duo.md)。
 
 ### 问：Bitwarden 的自托管实例的证书选项是什么？ <a href="#q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden" id="q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden"></a>
 
@@ -94,7 +94,7 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
     * 移动客户端应用程序**除外**，它将在 90 天后过期。
 
 
-* [两步登录](../two-step-login/two-step-login-methods.md)的**记住我**选项将在 30 天后过期。
+* [两步登录](../account/two-step-login/setup-guides/two-step-login-methods.md)的**记住我**选项将在 30 天后过期。
 * 目录连接器[同步缓存](../directory-connector/clear-sync-cache.md)将在 30 天后被清除。
 * 组织邀请将在 5 天后过期。自托管客户可以[使用环境变量](../self-hosting/configure-environment-variables.md#optional-variables)对其进行配置。
 
@@ -165,7 +165,7 @@ sha256sum bw-linux-2024.8.2.zip
 **答：**&#x66B4;力攻击是指恶意行为者循环使用弱密码和短密码的组合来尝试访问您的账户。Bitwarden 提供了几种保护自己免受这些潜在攻击的方法：
 
 * 拥有一个长且唯一的主密码。Bitwarden 要求至少 12 个字符以提高账户安全性。
-* 在所有 Bitwarden 账户上设置 [2FA](../two-step-login/field-guide-for-two-step-login.md) 以添加额外的安全层。
+* 在所有 Bitwarden 账户上设置 [2FA](../account/two-step-login/field-guide-for-two-step-login.md) 以添加额外的安全层。
 * 在未知设备尝试登录 9 次失败后，Bitwarden 将要求 CAPTCHA 验证。
 
 ## 关于特定客户端 App 的问题 <a href="#questions-regarding-specific-client-apps" id="questions-regarding-specific-client-apps"></a>
@@ -206,7 +206,7 @@ Bitwarden 所需的其他基本权限已[在 Google Play 商店中列出](https:
 
 ### 问：为何浏览器扩展需要 `nativeMessaging` 权限？ <a href="#q-why-does-the-browser-extension-need-nativemessaging-permission" id="q-why-does-the-browser-extension-need-nativemessaging-permission"></a>
 
-**答：**&#x31;.48.0 版本的浏览器扩展启用了[浏览扩展的生物识别解锁](../your-vault/unlocking-with-biometrics.md#browser-extensions)。
+**答：**&#x31;.48.0 版本的浏览器扩展启用了[浏览扩展的生物识别解锁](../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#browser-extensions)。
 
 此权限，也就是 `nativeMessaging`，可以安全地接受它，它允许浏览器扩展与 Bitwarden 桌面 App 进行通信，这是启用生物识别解锁所必需的。
 

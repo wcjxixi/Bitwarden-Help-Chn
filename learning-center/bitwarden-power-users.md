@@ -30,7 +30,7 @@
 
 {% embed url="https://vimeo.com/795737043" %}
 
-[此处](../miscellaneous/localization.md)了解更多有关更改 App 语言的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../password-manager/more/localization.md)了解更多有关更改 App 语言的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:15**：在网页 App 中更改语言。
 * **00:56**：在桌面 App 中更改语言。

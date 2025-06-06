@@ -100,7 +100,7 @@ sudo snap install bw
 bw login
 ```
 
-此命令将提示您输入**电子邮箱地址**、**主密码**和**两步登录代码**（若[已启用](../../two-step-login/two-step-login-methods.md)）。CLI 目前支持[身份验证器](../../two-step-login/setup-guides/two-step-login-via-authenticator.md)、[电子邮箱](../../two-step-login/setup-guides/two-step-login-via-email.md)或 [YubiKey](../../two-step-login/setup-guides/two-step-login-via-yubikey.md) 方式的两步登录。
+此命令将提示您输入**电子邮箱地址**、**主密码**和**两步登录代码**（若[已启用](../../account/two-step-login/setup-guides/two-step-login-methods.md)）。CLI 目前支持[身份验证器](../../account/two-step-login/setup-guides/two-step-login-via-authenticator.md)、[电子邮箱](../../account/two-step-login/setup-guides/two-step-login-via-email.md)或 [YubiKey](../../account/two-step-login/setup-guides/two-step-login-via-yubikey.md) 方式的两步登录。
 
 您可以像如下的示例那样将这些因素组合成一个命令，但是出于安全原因不建议这样操作。
 
@@ -500,7 +500,7 @@ bw confirm org-member 7063feab-4b10-472e-b64c-785e2b870b92 --organizationid 310d
 {% endhint %}
 
 {% hint style="danger" %}
-在大多数情况下，用户可以批准自己的登录请求，不需要管理员设备批准。请参阅[添加受信任设备](../../admin-console/login-with-sso/trusted-devices/add-a-trusted-device.md)。自动或批量批准管理员设备批准请求会忽略管理员为确保请求合法而执行的验证步骤，例如检查用户报告的指纹短语。
+在大多数情况下，用户可以批准自己的登录请求，不需要管理员设备批准。请参阅[添加受信任设备](../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)。自动或批量批准管理员设备批准请求会忽略管理员为确保请求合法而执行的验证步骤，例如检查用户报告的指纹短语。
 
 Bitwarden 建议在启用和使用批量设备批准之前，先审查重要的安全控制措施，例如 IdP 凭证标准、IdP MFA 以及 IdP 设备注册和信任。
 {% endhint %}
@@ -572,7 +572,7 @@ bw config server --key-connector <url>
 ```
 
 {% hint style="info" %}
-如果您的组织使用 [Key Connector](../../login-with-sso/about-key-connector.md) 并且您在[移除您的主密码](../../login-with-sso/using-login-with-sso.md#login-using-sso)后使用 `--apikey` 选项登录，则需要运行 `bw config server --key-connector` 命令。
+如果您的组织使用 [Key Connector](../../login-with-sso/about-key-connector.md) 并且您在[移除您的主密码](../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)后使用 `--apikey` 选项登录，则需要运行 `bw config server --key-connector` 命令。
 
 联系组织所有者以获取所需的 URL。
 {% endhint %}
@@ -808,7 +808,7 @@ $env:NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 
 #### 两步登录方式 <a href="#two-step-login-methods" id="two-step-login-methods"></a>
 
-用于指定在[登录](password-manager-cli.md#log-in)时使用哪一种[两步登录方式](../../two-step-login/two-step-login-methods.md)：
+用于指定在[登录](password-manager-cli.md#log-in)时使用哪一种[两步登录方式](../../account/two-step-login/setup-guides/two-step-login-methods.md)：
 
 | 名称      | 值 |
 | ------- | - |

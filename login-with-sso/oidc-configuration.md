@@ -6,7 +6,7 @@
 
 ## 第 1 步：设置 SSO 标识符 <a href="#step-1-set-an-sso-identifier" id="step-1-set-an-sso-identifier"></a>
 
-[使用 SSO 验证身份](using-login-with-sso.md#login-using-sso)的用户将被要求输入一个**组织标识符**，该标识符指示要进行身份验证的组织（以及 SSO 集成）。要设置唯一的组织标识符：
+[使用 SSO 验证身份](../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)的用户将被要求输入一个**组织标识符**，该标识符指示要进行身份验证的组织（以及 SSO 集成）。要设置唯一的组织标识符：
 
 1、登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
 

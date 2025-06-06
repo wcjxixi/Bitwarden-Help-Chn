@@ -16,7 +16,7 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-au
 > Bitwarden 的 TOTP 相当于 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) 等专用验证器 App。对于支持两步验证的网站或服务，你可以使用专用验证器 App 生成验证码，也可以使用 Bitwarden 的 TOTP 生成验证码。
 {% endhint %}
 
-如果您不熟悉用于两步登录的 TOTP 的使用，请参阅[两步登录现场指南](../two-step-login/field-guide-for-two-step-login.md)以了解更多信息。
+如果您不熟悉用于两步登录的 TOTP 的使用，请参阅[两步登录现场指南](../account/two-step-login/field-guide-for-two-step-login.md)以了解更多信息。
 
 ## 生成 TOTP 代码 <a href="#generate-totp-codes" id="generate-totp-codes"></a>
 

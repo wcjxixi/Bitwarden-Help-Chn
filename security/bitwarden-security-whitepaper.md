@@ -87,28 +87,28 @@ Bitwarden 的用户数据保护从用户创建账户和主密码的那一刻开�
 基于此，以及由于您的数据在离开本地设备之前已完全加密和/或哈希，忘记主密码将导致用户无法访问其账户，除非他们启用了紧急访问或账户恢复功能，这两者将在本文后面进行详细介绍。
 
 {% hint style="success" %}
-用户可以通过 Bitwarden 网页 App 更改他们的主密码。[了解如何操作](../your-vault/your-master-password.md#change-your-master-password)。
+用户可以通过 Bitwarden 网页 App 更改他们的主密码。[了解如何操作](../account/log-in-and-unlock/your-master-password.md#change-your-master-password)。
 {% endhint %}
 
 #### 替代登录方法 <a href="#alternative-log-in-methods" id="alternative-log-in-methods"></a>
 
 Bitwarden 客户端提供以下替代身份验证方法。其中一些方法也可用于登录时解密：
 
-* **设备登录**：从 Bitwarden 客户端发起身份验证请求，并通过在您已登录的设备上批准该请求来完成身份验证。[了解它是如何工作的](../your-vault/log-in-with-device.md)。
-* **通行密钥登录**：使用通行密钥登录 Bitwarden 客户端，如果该通行密钥支持 PRF，则使用它来解密您的密码库数据。[了解它是如何工作的](../my-account/log-in-and-unlock/log-in-with-passkeys.md)。
+* **设备登录**：从 Bitwarden 客户端发起身份验证请求，并通过在您已登录的设备上批准该请求来完成身份验证。[了解它是如何工作的](../account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
+* **通行密钥登录**：使用通行密钥登录 Bitwarden 客户端，如果该通行密钥支持 PRF，则使用它来解密您的密码库数据。[了解它是如何工作的](../account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)。
 * **受信任设备 SSO** ：受信任设备 SSO 允许用户使用 SSO 进行身份验证并使用设备存储的加密密钥解密其密码库，从而无需输入主密码。[了解它是如何工作的](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)。
 
 #### 两步登录 <a href="#two-step-login" id="two-step-login"></a>
 
-两步登录（也称为「二因素认证」或「2FA」）是一种用于保护在线账户的额外的安全层，即使有人掌握了主密码，也能确保账户安全。当启用两步登录时，用户在登录 Bitwarden 时需要完成一个额外的步骤，比如使用 [FIDO2 安全密钥](../my-account/two-step-login/setup-guides/two-step-login-via-fido.md)或[验证器 App](../two-step-login/setup-guides/two-step-login-via-authenticator.md) 来确认登录尝试。作为最佳实践，**Bitwarden 推荐所有用户启用并使用两步登录**。
+两步登录（也称为「二因素认证」或「2FA」）是一种用于保护在线账户的额外的安全层，即使有人掌握了主密码，也能确保账户安全。当启用两步登录时，用户在登录 Bitwarden 时需要完成一个额外的步骤，比如使用 [FIDO2 安全密钥](../account/two-step-login/setup-guides/two-step-login-via-fido.md)或[验证器 App](../account/two-step-login/setup-guides/two-step-login-via-authenticator.md) 来确认登录尝试。作为最佳实践，**Bitwarden 推荐所有用户启用并使用两步登录**。
 
 Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备（例如 YubiKey）时关闭两步登录功能。**用户应该在启用此功能后立即获取并保存此恢复代码**，因为 Bitwarden 员工和系统无法代表用户禁用两步登录。
 
-了解更多关于可用的[两步登录方式](../two-step-login/two-step-login-methods.md)、[使用多种方式](../two-step-login/two-step-login-methods.md#using-multiple-methods)以及在[丢失辅助设备](../two-step-login/lost-secondary-device.md)时该怎么做的信息。
+了解更多关于可用的[两步登录方式](../account/two-step-login/setup-guides/two-step-login-methods.md)、[使用多种方式](../account/two-step-login/setup-guides/two-step-login-methods.md#using-multiple-methods)以及在[丢失辅助设备](../account/two-step-login/lost-secondary-device.md)时该怎么做的信息。
 
 #### 紧急访问 <a href="#emergency-access" id="emergency-access"></a>
 
-高级用户，包括付费组织（家庭、团队或企业）的成员，可以指定[可信的紧急联系人](emergency-access.md)，以便在紧急情况下请求访问他们的密码库。可信的紧急联系人可以被分配为仅查看或接管账户的权限。
+高级用户，包括付费组织（家庭、团队或企业）的成员，可以指定[可信的紧急联系人](../account/log-in-and-unlock/more-log-in-options/emergency-access.md)，以便在紧急情况下请求访问他们的密码库。可信的紧急联系人可以被分配为仅查看或接管账户的权限。
 
 紧急访问使用非对称加密，使用户能够在零知识环境中授权可信的紧急联系人访问密码库数据。
 
@@ -162,7 +162,7 @@ Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备�
 
 接下来，使用加密安全伪随机数生成器 (CSPRNG) 创建 512 位**生成的对称密钥**和**初始化向量**。使用**扩展主密钥**和**初始化向量**，用 AES-256 位加密对**生成的对称密钥**进行加密。得到的密钥称为**受保护的对称密钥**，其是与用户相关联的主密钥，**受保护的对称密钥**在账户创建时被发送到 Bitwarden 服务器，并在同步时发送回 Bitwarden 客户端应用程序。
 
-当用户注册账户时，也会创建一个非对称密钥对。[当用户创建组织时](bitwarden-security-whitepaper.md#when-you-create-an-organization-1)，以及在可用于在用户之间共享数据（比如[紧急访问](emergency-access.md)）等过程中，将使用这个**已生成的 RSA 密钥对**。
+当用户注册账户时，也会创建一个非对称密钥对。[当用户创建组织时](bitwarden-security-whitepaper.md#when-you-create-an-organization-1)，以及在可用于在用户之间共享数据（比如[紧急访问](../account/log-in-and-unlock/more-log-in-options/emergency-access.md)）等过程中，将使用这个**已生成的 RSA 密钥对**。
 
 最后，使用具有**主密钥**有效载荷和主密码盐化的 PBKDF-SHA256 生成**主密码哈希值**。**主密码哈希值**会在账户创建和登录时被发送到 Bitwarden 服务器，用于验证用户账户。到达服务器后，将使用随机盐化的 PBKDF2-SHA256 和 600,000 次迭代再次对**主密码哈希值**进行哈希：
 

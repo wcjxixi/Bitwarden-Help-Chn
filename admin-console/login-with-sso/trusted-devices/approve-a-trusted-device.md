@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/approve-a-trusted-device/)
 {% endhint %}
 
-当某个组织成员登录新设备时，他们需要[批准或信任该设备](add-a-trusted-device.md)。其中一种方法是选择**请求管理员批准**选项，将设备批准请求发送给组织内的管理员和所有者进行批准。
+当某个组织成员登录新设备时，他们需要[批准或信任该设备](../../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)。其中一种方法是选择**请求管理员批准**选项，将设备批准请求发送给组织内的管理员和所有者进行批准。
 
 {% embed url="https://bitwarden.com/_gatsby/image/2ae6ef9b326ba69fa7233cda5cd242b6/46e040f6b375ce8ca8c6e3e1ae8af9f6/request%20admin%20approval.webp?eu=8e8f50e7b0c0a886093df58a6173616ae76902a2fa5031863932b5ac47aacb8e21a51e04209c7ee3246b59d887e643be32c77f6218ef82dd94ea4aa1eb3daa0b50865eec31b17654032ac0abe5a303173cc11a5ea68ace0df66d74dce0b0e5214d031b2afc7eb082e6f17120f0c0252df5effb7f3297e866b3560805885b24b827a5ce8b7701e98cee4ca9bcefff0190dbe0320239a6894743080e4404be52fed9d47131684b460c5dd1f959c169c0b334193477085b06f735398450a93d38c7b5fbf40c8d737ee2ac9c2e32d382ebd5ae5ec37b22ba9679c6d37b3a4c52ea42f1a23ba985&a=w%3D493%26h%3D550%26fm%3Dwebp%26q%3D75&cd=2023-08-31T17%3A56%3A38.040Z" %}
 请求管理员批准

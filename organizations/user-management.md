@@ -238,7 +238,7 @@
 已撤销访问权限的用户位于**已撤销**选项卡中，并将：
 
 * 无权限访问任何组织密码库项目、集合等。
-* 无法使用 [SSO 登录](../login-with-sso/)，或使用[组织 Duo](../two-step-login/setup-guides/two-step-login-via-duo.md) 进行两步登录。
+* 无法使用 [SSO 登录](../login-with-sso/)，或使用[组织 Duo](../account/two-step-login/setup-guides/two-step-login-via-duo.md) 进行两步登录。
 * 不受您的组织[策略](enterprise-policies.md)的约束。
 * 不占用许可证座位。
 

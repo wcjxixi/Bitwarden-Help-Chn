@@ -70,7 +70,7 @@ Bitwarden 会对可疑活动（如从未知设备登录和从未知设备尝试�
 
 ### 受信任设备请求被批准 <a href="#trusted-device-request-approved" id="trusted-device-request-approved"></a>
 
-向组织管理员提出的[添加受信任设备](../admin-console/login-with-sso/trusted-devices/add-a-trusted-device.md)的请求获得批准后，会向提出请求的用户发送一封电子邮件，通知他们可以继续在该设备上登录。**用户必须在 12 小时内登录新设备，否则批准将失效。**
+向组织管理员提出的[添加受信任设备](../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)的请求获得批准后，会向提出请求的用户发送一封电子邮件，通知他们可以继续在该设备上登录。**用户必须在 12 小时内登录新设备，否则批准将失效。**
 
 电子邮件内容包括：
 

@@ -104,7 +104,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 ### 要求单点登陆验证 <a href="#require-single-sign-on-authentication" id="require-single-sign-on-authentication"></a>
 
-打开**要求单点登录验证**策略将要求非所有者/非管理员用户使用 SSO 登录。如果是自托管，可以使用环境变量对所有者和管理员强制执行该策略。有关更多信息，请参阅 [SSO 登录的使用](../login-with-sso/using-login-with-sso.md)。所有者和管理员不受此策略的约束。
+打开**要求单点登录验证**策略将要求非所有者/非管理员用户使用 SSO 登录。如果是自托管，可以使用环境变量对所有者和管理员强制执行该策略。有关更多信息，请参阅 [SSO 登录的使用](../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)。所有者和管理员不受此策略的约束。
 
 使用此策略的组织成员将无法使用密码登录。
 
@@ -144,8 +144,8 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 设置**密码库超时**策略将允许您：
 
-* 为**除所有者外**的所有成员实施最大[密码库超时](../your-vault/vault-timeout-options.md#vault-timeout)持续时间。此选项将超时限制应用于所有客户端应用程序（移动端、桌面端、浏览器扩展等）。
-* 为**除所有者外**的所有成员设置[密码库超时](../your-vault/vault-timeout-options.md#vault-timeout-action)动作。此选项可以设置为**用户首选项**、在发生密码库超时时**锁定**或**注销**。\
+* 为**除所有者外**的所有成员实施最大[密码库超时](../account/log-in-and-unlock/vault-timeout-options.md#vault-timeout)持续时间。此选项将超时限制应用于所有客户端应用程序（移动端、桌面端、浏览器扩展等）。
+* 为**除所有者外**的所有成员设置[密码库超时](../account/log-in-and-unlock/vault-timeout-options.md#vault-timeout-action)动作。此选项可以设置为**用户首选项**、在发生密码库超时时**锁定**或**注销**。\
   **注销**选项可用于比如在用户每次访问其密码库时提示用户使用 2FA，并通过定期清除用户机器上的本地数据来防止离线使用。
 
 在密码库超时配置期间将向用户显示一条横幅，表明某个策略正在影响他们的选项。激活该策略后，用户将无法使用某些密码库超时选项，如浏**览器重启时**或**永不**。所有者和管理员不受此策略的约束。

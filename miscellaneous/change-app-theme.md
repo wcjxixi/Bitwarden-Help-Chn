@@ -49,7 +49,7 @@ Bitwarden 的网页密码库、浏览器扩展、桌面 App 和移动 App 带有
 {% endembed %}
 
 {% hint style="success" %}
-主题是为桌面 App 中所有登录账户全局设置的。[了解更多](../your-vault/account-switching.md)。
+主题是为桌面 App 中所有登录账户全局设置的。[了解更多](../account/log-in-and-unlock/more-log-in-options/account-switching.md)。
 {% endhint %}
 {% endtab %}
 

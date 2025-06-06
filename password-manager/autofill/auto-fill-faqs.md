@@ -36,11 +36,11 @@
 
 **答：**&#x5728; iOS 系统中，当您更改了设备的生物识别设置时（例如在触控 ID 中添加了另一个手指），这种情况最常发生。要解决这个错误：
 
-1. **如果您已激活了** [**PIN 码**](../../your-vault/unlock-with-pin.md)**验证**，禁用它。
+1. **如果您已激活了** [**PIN 码**](../../account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md)**验证**，禁用它。
 2. 注销您的 Bitwarden 移动 App。
 3. 检查您的设备设置是否设置为[使用 Bitwarden 进行自动填充](autofill-from/autofill-from-ios.md#keyboard-auto-fill)。
 4. 重新登录到您的 Bitwarden 移动 App。
-5. 如果要将 PIN 码验证用作[生物识别](../../your-vault/unlocking-with-biometrics.md)的备份，请重新启用 [PIN 码](../../your-vault/unlock-with-pin.md)验证。
+5. 如果要将 PIN 码验证用作[生物识别](../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)的备份，请重新启用 [PIN 码](../../account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md)验证。
 
 ### 问：当「基础域名」是设定的规则时，URI 匹配是否对某些网站无效？ <a href="#q-does-uri-matching-not-work-with-certain-websites-when-base-domain-is-the-set-rule" id="q-does-uri-matching-not-work-with-certain-websites-when-base-domain-is-the-set-rule"></a>
 

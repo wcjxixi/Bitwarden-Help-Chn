@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="success" %}
-您是否希望使用指纹阅读器解锁您的密码库？如果是这样，请查看[这篇文章](../your-vault/unlocking-with-biometrics.md)。
+您是否希望使用指纹阅读器解锁您的密码库？如果是这样，请查看[这篇文章](../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
 {% endhint %}
 
 每个 Bitwarden 用户账户都有一个与之关联的「指纹短语」。您账户的指纹短语永远不会改变，它由五个以特定顺序出现的随机英语单词组成。例如：
@@ -16,7 +16,7 @@ alligator-transfer-laziness-macaroni-blue
 
 ## 我的指纹短语是用来做什么的？ <a href="#what-is-my-fingerprint-phrase-used-for" id="what-is-my-fingerprint-phrase-used-for"></a>
 
-您的指纹短语是一个重要的安全特征，当执行与加密相关的操作（如共享凭证）时，它有助于安全地识别 Bitwarden 用户。某些 Bitwarden 过程（例如，将新用户添加到组织，或确认[设备登录请求](../your-vault/log-in-with-device.md)），会要求您验证指纹短语是否与您本人或其他用户的指纹短语相匹配。
+您的指纹短语是一个重要的安全特征，当执行与加密相关的操作（如共享凭证）时，它有助于安全地识别 Bitwarden 用户。某些 Bitwarden 过程（例如，将新用户添加到组织，或确认[设备登录请求](../account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)），会要求您验证指纹短语是否与您本人或其他用户的指纹短语相匹配。
 
 在相关操作过程中，请使用辅助通讯方式（如电话或短信）与 Bitwarden 用户进行协调，以验证您的指纹。
 
@@ -37,7 +37,7 @@ alligator-transfer-laziness-macaroni-blue
 不知道您的指纹短语永远不会导致您被锁定在您的密码库之外。因此，将指纹短语记下并将其存储在安全的地方并不重要，但有些用户可能会选择这样做。
 
 {% hint style="success" %}
-另一方面，[恢复代码](../two-step-login/recovery-codes.md)用于两步登录，应**始终**以对您有意义的方式存储在 Bitwarden 之外。在您[丢失了两步登录辅助设备](../two-step-login/lost-secondary-device.md)时，这将确保您不会被锁定在您的账户之外。
+另一方面，[恢复代码](../account/two-step-login/recovery-codes.md)用于两步登录，应**始终**以对您有意义的方式存储在 Bitwarden 之外。在您[丢失了两步登录辅助设备](../account/two-step-login/lost-secondary-device.md)时，这将确保您不会被锁定在您的账户之外。
 {% endhint %}
 
 ## 我可以更改我的指纹短语吗？ <a href="#can-i-change-my-fingerprint-phrase" id="can-i-change-my-fingerprint-phrase"></a>

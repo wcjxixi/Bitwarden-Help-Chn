@@ -147,7 +147,7 @@ GBoard 中的内嵌自动填充
 
 ## 自动填充期间切换账户 <a href="#switch-accounts-during-autofill" id="switch-accounts-during-autofill"></a>
 
-如果您[登录了多个账户](../../../your-vault/account-switching.md)，您的移动 App 将默认尝试自动填充当前活动账户的凭据。在自动填充过程中，您可以通过轻按头像气泡从一个账户切换到另一个账户。
+如果您[登录了多个账户](../../../account/log-in-and-unlock/more-log-in-options/account-switching.md)，您的移动 App 将默认尝试自动填充当前活动账户的凭据。在自动填充过程中，您可以通过轻按头像气泡从一个账户切换到另一个账户。
 
 ## 使用通行密钥 <a href="#using-passkeys" id="using-passkeys"></a>
 

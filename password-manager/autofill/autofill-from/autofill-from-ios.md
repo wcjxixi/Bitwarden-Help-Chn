@@ -23,13 +23,13 @@ iOS 上的自动填充有几种行为：
 * **长按文本字段**：使用此选项可在更多地点从 Bitwarden 自动填充。
 
 {% hint style="success" %}
-如果设备的[密码库超时行为](../../../your-vault/vault-timeout-options.md#vault-timeout-action)设置为**注销**，并且您仅启用了需要 NFC（例如带 NFC 的 YubiKey）的[两步登录方式](../../../two-step-login/two-step-login-methods.md)，则当前无法在 iOS 上使用自动填充，因为 iOS 不允许 NFC 输入中断自动填充工作流。
+如果设备的[密码库超时行为](../../../account/log-in-and-unlock/vault-timeout-options.md#vault-timeout-action)设置为**注销**，并且您仅启用了需要 NFC（例如带 NFC 的 YubiKey）的[两步登录方式](../../../account/two-step-login/setup-guides/two-step-login-methods.md)，则当前无法在 iOS 上使用自动填充，因为 iOS 不允许 NFC 输入中断自动填充工作流。
 
 要么将您的密码库超时行为改为**锁定**，要么启用另一种两步登录方式。
 {% endhint %}
 
 {% hint style="info" %}
-如果您使用的 Argon2id 的 KDF 内存值高于 48 MB，则每次启动 iOS 自动填充或通过共享表单创建新的 Send 时，都会显示警告对话框。要避免出现此消息，请在[此处](../../../security/kdf-algorithms.md#argon2id)调整 Argon2id 设置或启用[生物识别解锁](../../../your-vault/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
+如果您使用的 Argon2id 的 KDF 内存值高于 48 MB，则每次启动 iOS 自动填充或通过共享表单创建新的 Send 时，都会显示警告对话框。要避免出现此消息，请在[此处](../../../security/kdf-algorithms.md#argon2id)调整 Argon2id 设置或启用[生物识别解锁](../../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
 {% endhint %}
 
 ### 键盘自动填充 <a href="#keyboard-auto-fill" id="keyboard-auto-fill"></a>
@@ -95,7 +95,7 @@ iOS 上的自动填充
 {% endembed %}
 
 {% hint style="info" %}
-如果启用了[使用生物识别解锁](../../../your-vault/unlocking-with-biometrics.md)，则首次点击此选项时，系统将提示您验证您的主密码。
+如果启用了[使用生物识别解锁](../../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)，则首次点击此选项时，系统将提示您验证您的主密码。
 {% endhint %}
 
 9、Bitwarden 界面将在您的设备上向上滑出，并列出此网站的[匹配登录项目](../troubleshoot-autofill/forming-uris-for-autofill.md)。点击该项目以自动填充。
@@ -114,7 +114,7 @@ iOS 上长按文本字段
 
 ## 自动填充期间切换账户 <a href="#switch-accounts-during-autofill" id="switch-accounts-during-autofill"></a>
 
-如果您[登录了多个账户](../../../your-vault/account-switching.md)，您的移动 App 将默认尝试自动填充当前活动账户的凭据。在自动填充过程中，您可以通过轻按头像气泡从一个账户切换到另一个账户。
+如果您[登录了多个账户](../../../account/log-in-and-unlock/more-log-in-options/account-switching.md)，您的移动 App 将默认尝试自动填充当前活动账户的凭据。在自动填充过程中，您可以通过轻按头像气泡从一个账户切换到另一个账户。
 
 ## 使用通行密钥 <a href="#using-passkeys" id="using-passkeys"></a>
 

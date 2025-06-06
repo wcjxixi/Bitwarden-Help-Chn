@@ -31,7 +31,7 @@
 
 ### 受信任的设备 <a href="#trusted-devices" id="trusted-devices"></a>
 
-在其他情况下，登录 Bitwarden 需要将登录设备注册为受信任设备。当您加入组织时，您用来加入的设备会自动注册为受信任设备，但您应该[熟悉添加更多受信任设备的流程](../admin-console/login-with-sso/trusted-devices/add-a-trusted-device.md)，这样您就可以随时随地安全地访问公司凭据了。
+在其他情况下，登录 Bitwarden 需要将登录设备注册为受信任设备。当您加入组织时，您用来加入的设备会自动注册为受信任设备，但您应该[熟悉添加更多受信任设备的流程](../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)，这样您就可以随时随地安全地访问公司凭据了。
 
 ## 了解您的密码库 <a href="#get-to-know-your-vault" id="get-to-know-your-vault"></a>
 

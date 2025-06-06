@@ -37,7 +37,7 @@ Bitwarden App（桌面 App、浏览器扩展、移动 App 和 CLI）将在登录
 从菜单栏选择**文件** → **同步密码库**。
 
 {% hint style="info" %}
-只有[当前活动的账户](account-switching.md)会同步，但即使密码库被锁定，账户也能被同步。
+只有[当前活动的账户](../account/log-in-and-unlock/more-log-in-options/account-switching.md)会同步，但即使密码库被锁定，账户也能被同步。
 {% endhint %}
 {% endtab %}
 

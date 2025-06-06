@@ -139,7 +139,7 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 ### 使用 PIN 码或生物识别解锁 <a href="#unlock-with-pin-or-biometrics" id="unlock-with-pin-or-biometrics"></a>
 
-要快速访问您的凭据，请设置 [PIN 码](../your-vault/unlock-with-pin.md)或[生物识别](../your-vault/unlocking-with-biometrics.md)来解锁您的密码库。要设置一个 PIN 码：
+要快速访问您的凭据，请设置 [PIN 码](../account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md)或[生物识别](../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)来解锁您的密码库。要设置一个 PIN 码：
 
 1. 在浏览器扩展中，打开 ⚙️**设置**标签。
 2. 在**账户安全**部分，选中**使用 PIN 码解锁**复选框。
@@ -187,7 +187,7 @@ Bitwarden 浏览器扩展具有弹出窗口功能，允许您在使用网络浏�
 浏览器扩展弹出窗口
 {% endembed %}
 
-弹出时，浏览器扩展不会遵守您选择的[密码库超时](../your-vault/vault-timeout-options.md)设置。
+弹出时，浏览器扩展不会遵守您选择的[密码库超时](../account/log-in-and-unlock/vault-timeout-options.md)设置。
 
 ### 禁用内置的密码管理器 <a href="#disable-a-built-in-password-manager" id="disable-a-built-in-password-manager"></a>
 

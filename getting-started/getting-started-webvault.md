@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/getting-started-webvault/)
 {% endhint %}
 
-Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体验。许多重要功能，例如设置[两步登录](../two-step-login/two-step-login-methods.md)或管理[组织](../organizations/organizations.md)，只能从网页 App 完成。
+Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体验。许多重要功能，例如设置[两步登录](../account/two-step-login/setup-guides/two-step-login-methods.md)或管理[组织](../organizations/organizations.md)，只能从网页 App 完成。
 
 {% hint style="success" %}
 可以从任何流行的网页浏览器访问网页 App，网址为 [vault.bitwarden.com](https://vault.bitwarden.com) 和 [vault.bitwarden.eu](https://vault.bitwarden.eu/)。如果您是**自托管** Bitwarden，则网址为您[已配置的域名](../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)，例如 `https://my.bitwarden.server.com`。
@@ -111,7 +111,7 @@ Bitwarden 网页 App
 
 现在您的密码库中已充满了数据，让我们通过设置两步登录来采取一些措施来保护它。两步登录要求您在登录账户时使用额外的「令牌」验证您的身份，「令牌」通常是从不同的设备中获取。
 
-两步登录有很多[可用的方式](../two-step-login/two-step-login-methods.md)，但对于免费 Bitwarden 账户，推荐的方式是使用像 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 这样的移动设备身份验证器 App：
+两步登录有很多[可用的方式](../account/two-step-login/setup-guides/two-step-login-methods.md)，但对于免费 Bitwarden 账户，推荐的方式是使用像 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 这样的移动设备身份验证器 App：
 
 1、在您的移动设备上下载 Bitwarden Authenticator。
 
@@ -155,10 +155,10 @@ Bitwarden 网页 App
 
 对于个人用户，我们提供 **10 美元/年**的高级订阅，可解锁高级密码库功能，包括：
 
-* 高级两步登录选项，例如 [Duo](../two-step-login/setup-guides/two-step-login-via-duo.md) 和 [YubiKey 安全钥匙](../two-step-login/setup-guides/two-step-login-via-yubikey.md)
+* 高级两步登录选项，例如 [Duo](../account/two-step-login/setup-guides/two-step-login-via-duo.md) 和 [YubiKey 安全钥匙](../account/two-step-login/setup-guides/two-step-login-via-yubikey.md)
 * [加密文件附件](../your-vault/file-attachments.md)的存储空间
 * 集成的[临时一次性密码（TOTP）身份验证器](../your-vault/totp.md)
-* 通过受信任的紧急联系人[紧急访问](../security/emergency-access.md)您的密码库
+* 通过受信任的紧急联系人[紧急访问](../account/log-in-and-unlock/more-log-in-options/emergency-access.md)您的密码库
 * 报告密码和安全卫生的[密码库健康报告](../your-vault/vault-health-reports.md)
 
 要开始高级订阅，请从**密码库**视图中选择**成为高级会员**按钮！

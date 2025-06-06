@@ -48,7 +48,7 @@
 {% endtab %}
 
 {% tab title="桌面 App" %}
-登录到您的桌面 App 的[每一个账户](../your-vault/account-switching.md)都可以连接到不同的服务器。要将账户连接到您的自托管服务器：
+登录到您的桌面 App 的[每一个账户](../account/log-in-and-unlock/more-log-in-options/account-switching.md)都可以连接到不同的服务器。要将账户连接到您的自托管服务器：
 
 1、在登录或注册界面，选择**登录到**下拉菜单然后选择**自托管**选项。
 

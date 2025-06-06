@@ -100,7 +100,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 * **浏览器扩展筛选器持久性**：为了在浏览器扩展和网页之间导航时获得更好的体验，搜索条件和筛选器现在可持续两分钟，或者直到您更改浏览器扩展中的活动选项卡。
 * **浏览器扩展的加载时间**：我们进行了几项改进，以改善浏览器扩展的加载时间。[了解更多](getting-started/getting-started-browserext.md)有关 Bitwarden 浏览器扩展的信息。
 * **重新排序网站 URI**：在网页 App 和浏览器扩展的「编辑登录」视图中，您现在可以使用拖放 (**≡**) 按钮来重新排序网站 URI，以获得更好的视觉组织效果。
-* **Linux 桌面支持 FIDO2 两步登录**：Linux 桌面 App 现在支持使用 FIDO2 通行密钥的两步登录。[了解更多](my-account/two-step-login/setup-guides/two-step-login-via-fido.md)。
+* **Linux 桌面支持 FIDO2 两步登录**：Linux 桌面 App 现在支持使用 FIDO2 通行密钥的两步登录。[了解更多](account/two-step-login/setup-guides/two-step-login-via-fido.md)。
 * **SSH 代理转发**：Bitwarden 桌面 App 上 SSH 代理转发的支持已得到改进。[了解更多](password-manager/developer-tools/ssh-agent.md)有关 Bitwarden SSH 代理的信息。
 
 ## 2025.3.0
@@ -109,11 +109,11 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 我的账户 <a href="#my-account" id="my-account"></a>
 
-* **新设备验证，新账户宽限期**：新创建的账户在创建后的 24 小时内将不受新设备登录保护。[了解更多](my-account/log-in-and-unlock/new-device-protection.md)。
+* **新设备验证，新账户宽限期**：新创建的账户在创建后的 24 小时内将不受新设备登录保护。[了解更多](account/log-in-and-unlock/new-device-protection.md)。
 
 ### Password Manager
 
-* **登录请求横幅通知**：设备登录请求现在会在等待批准期间在网页 App 中显示一个横幅通知。[了解更多](your-vault/log-in-with-device.md)有关设备登录的信息。
+* **登录请求横幅通知**：设备登录请求现在会在等待批准期间在网页 App 中显示一个横幅通知。[了解更多](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)有关设备登录的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -133,15 +133,15 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 我的账户 <a href="#my-account" id="my-account"></a>
 
-* **新设备登录保护**：为确保您的账户安全，Bitwarden 将逐步开始要求未使用两步登录或 SSO 的用户进行额外的验证。[了解更多](my-account/log-in-and-unlock/new-device-protection.md)。
-* **恢复密码使用更新**：使用恢复密码时，虽然仍需要您的电子邮箱地址和主密码，但现在将自动登录您的密码库并停用两步登录，而不是仅停用两步登录。[了解更多](two-step-login/recovery-codes.md#use-your-recovery-code)。
-* **适用于 macOS 桌面的 FIDO2 两步登录**：macOS 桌面 App 现在支持使用 FIDO2 通行密钥的两步登录。[了解更多](my-account/two-step-login/setup-guides/two-step-login-via-fido.md)。
+* **新设备登录保护**：为确保您的账户安全，Bitwarden 将逐步开始要求未使用两步登录或 SSO 的用户进行额外的验证。[了解更多](account/log-in-and-unlock/new-device-protection.md)。
+* **恢复密码使用更新**：使用恢复密码时，虽然仍需要您的电子邮箱地址和主密码，但现在将自动登录您的密码库并停用两步登录，而不是仅停用两步登录。[了解更多](account/two-step-login/recovery-codes.md#use-your-recovery-code)。
+* **适用于 macOS 桌面的 FIDO2 两步登录**：macOS 桌面 App 现在支持使用 FIDO2 通行密钥的两步登录。[了解更多](account/two-step-login/setup-guides/two-step-login-via-fido.md)。
 
 ### Password Manager
 
 * **「点击以自动填充」设置已移动**：浏览器扩展上的「点击以自动填充」设置已移至**设置** → **外观**选项卡。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#zi-ding-yi-zi-dong-tian-chong-xing-wei)。
 * **阻止 iOS 上的重复通行密码**：在 iOS 上无法保存与 Bitwarden 密码库中已存储的现有用户名和服务相匹配的重复通行密钥。现有通行密钥可能会被修改或覆盖。[了解更多](password-manager/autofill/more-autofill-options/autofill-passkeys.md#using-passkeys-with-bitwarden)有关创建通行密钥的信息。
-* **企业单点登录更新**：在单点登录工作流程的第一步添加了「使用单点登录」按钮，以简化企业单点登录。[了解更多](login-with-sso/using-login-with-sso.md#login-using-sso)。
+* **企业单点登录更新**：在单点登录工作流程的第一步添加了「使用单点登录」按钮，以简化企业单点登录。[了解更多](account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -160,10 +160,10 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 {% hint style="info" %}
 为确保账户安全，在即将发布的版本中，**对于没有使用两步登录的用户**，Bitwarden 将对其要求额外的验证。希望避免新设备验证工作流的用户可以：
 
-* 按照[此页面](two-step-login/two-step-login-methods.md)上的任何指南预先设置两步登录。
+* 按照[此页面](account/two-step-login/setup-guides/two-step-login-methods.md)上的任何指南预先设置两步登录。
 * 从**设置** → **我的账户** → **危险操作区**界面中退出此功能。
 
-[了解更多](my-account/log-in-and-unlock/new-device-protection.md)。
+[了解更多](account/log-in-and-unlock/new-device-protection.md)。
 {% endhint %}
 
 此次发布包含：
@@ -201,7 +201,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### Password Manager
 
 * **SSH 代理**：Bitwarden 用户现在可以直接使用 Bitwarden Password Manager 安全地存储和生成 SSH 密钥。[了解更多](password-manager/developer-tools/ssh-agent.md)有关 Bitwarden SSH 代理的信息。
-* **使用网页设备批准**：使用网页 App 批准新的受信任设备和设备登录请求。[了解更多](your-vault/log-in-with-device.md)。
+* **使用网页设备批准**：使用网页 App 批准新的受信任设备和设备登录请求。[了解更多](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
 * **更新了桌面端的生成器**：桌面 App 上的密码和用户名生成器的用户界面已更新，以反映其他 Bitwarden App 的最新设计。[了解更多](password-manager/vault-basics/generator.md)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -227,7 +227,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### Password Manager
 
 * **更多自动填充自定义选项**：浏览器扩展现在具有更多选项来自定义您的自动填充体验，包括选择项目卡片而不是「**填充**」按钮来自动填充，以及多个快速复制操作。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#zi-ding-yi-zi-dong-tian-chong-xing-wei)。
-* **Snap Store 桌面 App 生物识别解锁**：通过 Snap Store 下载的密码管理桌面 App 现在支持生物识别解锁。[了解更多](your-vault/unlocking-with-biometrics.md#zhuo-mian-duan)。
+* **Snap Store 桌面 App 生物识别解锁**：通过 Snap Store 下载的密码管理桌面 App 现在支持生物识别解锁。[了解更多](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#zhuo-mian-duan)。
 * **TOTP 代码的内嵌自动填充**：内嵌自动填充菜单现在可用于选择 TOTP 代码。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#use-the-inline-auto-fill-menu)有关内嵌自动填充菜单的信息。
 * **iOS 上长按自动填充**：在 iOS 18+ 上长按任何文本字段即可从 Bitwarden 自动填充。[了解更多](password-manager/autofill/autofill-from/autofill-from-ios.md)。
 * **新的公共 API 操作**：`/public/organization/subscription` 端点添加了一个 GET 操作。[了解更多](organizations/bitwarden-public-api.md)有关 Bitwarden 公共 API 的信息。
@@ -244,7 +244,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ## 2024.12.0
 
 {% hint style="info" %}
-2025 年，Bitwarden 将开始逐步停止对 FIDO 通用第二因素 (U2F) 密钥的支持，这些密钥可以在网页 App 的**两步登录** → **管理 FIDO2 WebAuthn** 视图中识别为标记为「**迁移自 FIDO**」。如果您目前使用的是已迁移的 U2F 密钥，请移除并重新注册该密钥，以便自动[将其设置为 WebAuthn](my-account/two-step-login/setup-guides/two-step-login-via-fido.md)。
+2025 年，Bitwarden 将开始逐步停止对 FIDO 通用第二因素 (U2F) 密钥的支持，这些密钥可以在网页 App 的**两步登录** → **管理 FIDO2 WebAuthn** 视图中识别为标记为「**迁移自 FIDO**」。如果您目前使用的是已迁移的 U2F 密钥，请移除并重新注册该密钥，以便自动[将其设置为 WebAuthn](account/two-step-login/setup-guides/two-step-login-via-fido.md)。
 {% endhint %}
 
 此次发布包含：
@@ -267,7 +267,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 我的账户 <a href="#my-account" id="my-account"></a>
 
-* **所有客户端注册期间的电子邮箱验证**：使用任何 Bitwarden 客户端创建新 Bitwarden 账户的用户现在将被要求在创建主密码之前验证其电子邮邮箱。[了解更多](getting-started/create-bitwarden-account.md)。
+* **所有客户端注册期间的电子邮箱验证**：使用任何 Bitwarden 客户端创建新 Bitwarden 账户的用户现在将被要求在创建主密码之前验证其电子邮邮箱。[了解更多](account/create-bitwarden-account.md)。
 
 ### Password Manager
 
@@ -301,11 +301,11 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 我的账户 <a href="#my-account" id="my-account"></a>
 
-* **注册期间的电子邮箱验证**：通过网页 App 创建 Bitwarden 账户的用户现在将被要求在创建主密码之前验证其电子邮箱。[了解更多](getting-started/create-bitwarden-account.md)。
+* **注册期间的电子邮箱验证**：通过网页 App 创建 Bitwarden 账户的用户现在将被要求在创建主密码之前验证其电子邮箱。[了解更多](account/create-bitwarden-account.md)。
 
 ### Password Manager
 
-* **使用生物识别解锁 - Linux 浏览器扩展**：Linux 用户现在可以在基于 Chromium 的浏览器上使用 Bitwarden 浏览器扩展的生物识别解锁功能。[了解更多](your-vault/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
+* **使用生物识别解锁 - Linux 浏览器扩展**：Linux 用户现在可以在基于 Chromium 的浏览器上使用 Bitwarden 浏览器扩展的生物识别解锁功能。[了解更多](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
 * 桌**面 App 阻止屏幕捕获**：默认情况下，Windows 和 macOS 的桌面应用程序现在将阻止屏幕捕获和录制。[了解更多](getting-started/getting-started-desktop.md#xia-yi-bu)。
 * **在桌面端同步锁定的密码库**：即使活动账户被锁定，桌面 App 现在也可以手动同步。[了解更多](your-vault/syncing-your-vault.md#manual-sync)。
 
@@ -412,7 +412,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 * **紧急联系人和提供商的邀请说明**：受信任的紧急联系人和提供商用户在接受邀请后，现在将进入「需要确认」状态，使您的下一步操作更清晰。
 * **批量分配项目到集合**：现在，您可以从密码库视图中将项目批量分配到组织的集合中。此功能的前一版本称为「移动到组织」。[了解更多](your-vault/vault-items.md#assign-to-collections)。
 * **重命名将项目添加到文件夹**：在密码库视图中，将项目添加到文件夹的选项已从「移动所选」重命名为「添加到文件夹」。[了解更多](your-vault/folders.md#move-items-to-a-folder)。
-* **弃用桌面应用程序设置**：桌面应用程序现在默认可以批准设备登录。[了解更多](your-vault/log-in-with-device.md)。
+* **弃用桌面应用程序设置**：桌面应用程序现在默认可以批准设备登录。[了解更多](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
 * **改进的 SSO 标识符工作流程**：管理员现在可以分发企业单点登录界面的 URL，并将其 SSO 标识符作为查询参数包含在内，以自动将组织成员重定向到 IdP，从而获得更简化的 SSO 体验。[了解更多](login-with-sso/login-with-sso-faqs.md#q-do-i-need-to-enter-my-organization-identifier-every-time-i-login)。
 
 ### Secrets Manager
@@ -545,7 +545,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Password Manager
 
-* Bitwarden 应用程序可使用新的语言：在社区翻译人员的贡献下，Bitwarden 应用程序现在提供了新的语言选项！[点击这里](miscellaneous/localization.md)查看完整的语言列表。[了解更多](https://contributing.bitwarden.com/contributing/#localization-l10n)关于 Bitwarden 本地化的信息。
+* Bitwarden 应用程序可使用新的语言：在社区翻译人员的贡献下，Bitwarden 应用程序现在提供了新的语言选项！[点击这里](password-manager/more/localization.md)查看完整的语言列表。[了解更多](https://contributing.bitwarden.com/contributing/#localization-l10n)关于 Bitwarden 本地化的信息。
 * **桌面应用程序硬件加速**：Bitwarden 桌面应用程序现在可以选择打开或关闭硬件加速以优化性能。该设置默认启用。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -567,11 +567,11 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### Password Manager
 
 * **网页 App 导航更新**：Bitwarden 网页 App 已完全重新设计！我们希望您能喜欢这个新的体验（[了解更多](https://bitwarden.com/blog/bitwarden-design-updating-the-navigation-in-the-web-app/)）。
-* **Duo 2FA 登录更新**：Duo 为用户和管理员引入了通用提示。启用该服务的 Duo 管理员会发现 Duo 2FA 登录流程稍微有一些变化（参阅[这里](two-step-login/setup-guides/two-step-login-via-duo.md)）。
+* **Duo 2FA 登录更新**：Duo 为用户和管理员引入了通用提示。启用该服务的 Duo 管理员会发现 Duo 2FA 登录流程稍微有一些变化（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-duo.md)）。
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
-* **支持使用通行密钥登录 (Beta)**：自托管 Bitwarden 服务器现在支持使用通行密钥登录功能（参阅[这里](my-account/log-in-and-unlock/log-in-with-passkeys.md)）。
+* **支持使用通行密钥登录 (Beta)**：自托管 Bitwarden 服务器现在支持使用通行密钥登录功能（参阅[这里](account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)）。
 
 ## 2024.2.2
 
@@ -621,11 +621,11 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 我的账户 <a href="#my-account" id="my-account"></a>
 
-* **使用通行密钥登录 (Beta)**：通行密钥可以作为使用主密码和电子邮件的替代方法来登录 Bitwarden 网页 App （参阅[这里](my-account/log-in-and-unlock/log-in-with-passkeys.md)）。
+* **使用通行密钥登录 (Beta)**：通行密钥可以作为使用主密码和电子邮件的替代方法来登录 Bitwarden 网页 App （参阅[这里](account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)）。
 
 ### Password Manager
 
-* **浏览器扩展程序的账户切换**：使用 Bitwarden 浏览器扩展程序时，最多可登录 5 个账户并在这些账户之间无缝切换（参阅[这里](your-vault/account-switching.md)）。
+* **浏览器扩展程序的账户切换**：使用 Bitwarden 浏览器扩展程序时，最多可登录 5 个账户并在这些账户之间无缝切换（参阅[这里](account/log-in-and-unlock/more-log-in-options/account-switching.md)）。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -681,7 +681,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-* **FIDO2 WebAuthn 现已成为免费的两步登录选项**：用于两步登录的 FIDO2 WebAuthn 方法已扩展到免费账户。现在，所有 Bitwarden 用户都可以使用兼容的 FIDO2 WebAuthn 凭证（如那些与硬件安全钥匙绑定的设备）来提高登录的安全性（参阅[这里](my-account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
+* **FIDO2 WebAuthn 现已成为免费的两步登录选项**：用于两步登录的 FIDO2 WebAuthn 方法已扩展到免费账户。现在，所有 Bitwarden 用户都可以使用兼容的 FIDO2 WebAuthn 凭证（如那些与硬件安全钥匙绑定的设备）来提高登录的安全性（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
 * **组织成员电子邮件验证**：当组织成员[接受加入邀请](organizations/user-management.md#accept)时，或如果他们是使用[域验证](admin-console/login-with-sso/claimed-domains.md)的组织成员，他们的电子邮件将自动通过验证。
 * **导出更新**：密码库数据的 JSON 导出现在将包括适用项目的密码历史记录（参阅[这里](import-export/export-vault-data.md)）。
 * **CLI 密码生成器选项**：使用 CLI 生成密码时增加了自定义密码复杂度的选项标志（参阅[这里](password-manager/vault-basics/generator.md#cli)）。
@@ -713,7 +713,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-* **用于自托管的设备登录**：连接到自托管服务器的 Bitwarden 应用程序现在可以通过向已注册设备发送身份验证请求来登录，而不是使用主密码（参阅[这里](your-vault/log-in-with-device.md)）。
+* **用于自托管的设备登录**：连接到自托管服务器的 Bitwarden 应用程序现在可以通过向已注册设备发送身份验证请求来登录，而不是使用主密码（参阅[这里](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)）。
 * **Forward Email 别名集成**：将 Bitwarden 用户名生成器连接到 [Forward Email](https://forwardemail.net/)，以便轻松创建电子邮件别名（参阅[这里](password-manager/vault-basics/generator.md#username-types)）。
 * **浏览器扩展 TOTP 自动填充**：浏览器扩展现在将自动填充 TOTP 代码，除非您使用了在页面加载时自动填充功能（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#totp-auto-fill)）。
 * **在 \<textarea> 中使用自动填充**：Bitwarden 应用程序现在可以将凭据自动填充到 HTML 的 `<textarea>` 元素中。
@@ -760,8 +760,8 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 * **改进的经销商计费**：Bitwarden 经销商现在是唯一有权查看其客户组织的计费、订阅或付款信息的实体。参阅[这里](plans-and-pricing/bitwarden-resellers.md)。
 * **主密码要求策略更新**：如果启用，主密码要求策略现在可以设置为提示现有的不合规用户更新他们的主密码。参阅[这里](organizations/enterprise-policies.md#master-password-requirements)。
 * **密码库超时策略更新**：密码库超时策略现在提供了指定密码库超时动作的选项。参阅[这里](organizations/enterprise-policies.md#vault-timeout)。
-* **桌面端 - 新的生物识别选项**：您现在可以选择是在应用程序启动时要求主密码还是在打开时允许生物识别。参阅[这里](your-vault/unlocking-with-biometrics.md)。
-* **桌面端 - Windows Hello 安全改进**：解决了与 Windows Hello 和 Windows Credential Manager 相关的漏洞。作为一项附加措施，我们建议使用新选项以在应用程序启动时要求输入主密码。参阅[这里](your-vault/unlocking-with-biometrics.md)。
+* **桌面端 - 新的生物识别选项**：您现在可以选择是在应用程序启动时要求主密码还是在打开时允许生物识别。参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
+* **桌面端 - Windows Hello 安全改进**：解决了与 Windows Hello 和 Windows Credential Manager 相关的漏洞。作为一项附加措施，我们建议使用新选项以在应用程序启动时要求输入主密码。参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
 * **浏览器扩展 - 改进的表单检测**：改进了表单检测的逻辑，并针对浏览器扩展的通知栏解决了错误报告。有关技术细节，请参阅[这里](https://github.com/bitwarden/clients/pull/4798)。
 
 ## 2023.3.0
@@ -771,11 +771,11 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 * **域验证**：组织可以验证域（例如 `mycompany.com`）的所有权，允许用户在使用 SSO 登录时跳过组织标识符步骤。参阅[这里](admin-console/login-with-sso/claimed-domains.md)。
 * **浏览器扩展 - 改进的自动填充安全性**：浏览器扩展现在不允许在页面加载时自动填充不受信任的 iframe。浏览器扩展还会在手动自动填充、使用上下文菜单或使用键盘快捷键时警告用户有关不受信任的 iframe，并在自动填充 HTTP 站点时警告用户，该站点需要基于该项目的已保存 URI 的 HTTPS。参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 * **主密码安全性检查**：用户现在可以在创建账户或在网页密码库上更改主密码时通过 Have I Been Pwned 检查已知的数据泄露，以查找他们预期的主密码。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
-* **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 账户和[更改主密码](your-vault/your-master-password.md#change-your-master-password)的任何用户强制执行。
+* **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 账户和[更改主密码](account/log-in-and-unlock/your-master-password.md#change-your-master-password)的任何用户强制执行。
 * **激活自动填充策略**：对于企业组织，激活自动填充策略将自动为组织的新成员和现有成员打开页面加载时的自动填充。参阅[这里](organizations/enterprise-policies.md#activate-auto-fill)。
 * **浏览器扩展 - 改进的通知栏**：用于将未检测到的项目添加到您的密码库的通知栏现在为遵守删除单个密码库策略的用户提供了更直观的工作流程。参阅[这里](getting-started/getting-started-browserext.md#auto-save-a-login)。
 * **iOS - 选择 Bitwarden 获取验证码**：iOS 16+ 用户现在可以将 Bitwarden 设置为直接从相机应用程序扫描代码时用于存储验证码的默认应用程序。参阅[这里](your-vault/totp.md#bitwarden-authenticator-on-ios)。
-* **移动端 - 在应用程序内更改语言**：不同于在设备操作系统上设置语言，用户可以在 Bitwarden 移动应用程序中更改语言。参阅[这里](miscellaneous/localization.md#change-app-language)。
+* **移动端 - 在应用程序内更改语言**：不同于在设备操作系统上设置语言，用户可以在 Bitwarden 移动应用程序中更改语言。参阅[这里](password-manager/more/localization.md#change-app-language)。
 
 ### 机密管理器 Beta <a href="#secrets-manager-beta" id="secrets-manager-beta"></a>
 
@@ -800,7 +800,7 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 * **增加了 PBKDF2 的默认 KDF 迭代**：按照 [OWASP](https://zh.wikipedia.org/zh-cn/OWASP) 的建议，新的 Bitwarden 账户将为 PBKDF2 使用 600,000 次 KDF 迭代。现有的账户可以手动增加此数值。参阅[这里](security/encryption.md#changing-kdf-iterations)。
 * **主密码安全检查**：在移动应用程序、浏览器扩展和桌面应用程序上创建账户的新用户现在可以通过 HIBP 检查已知的数据泄露，以了解他们的潜在主密码。这将在以后的版本中被带到网页密码库。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
 * **组织密码库更新**：作为改进网页密码库 UI 的持续努力的一部分，一些组织管理功能进行了重新设计，例如用于项目和集合管理的合并**密码库**视图，以及专用的**成员**和**群组**视图。
-* **在其他客户端上使用设备登录**：现在可以在其他客户端上使用设备登录。登录请求现在也可以从浏览器扩展、桌面应用程序和移动应用程序发起，现在也可以从桌面应用程序获得批准。参阅[这里](your-vault/log-in-with-device.md)。
+* **在其他客户端上使用设备登录**：现在可以在其他客户端上使用设备登录。登录请求现在也可以从浏览器扩展、桌面应用程序和移动应用程序发起，现在也可以从桌面应用程序获得批准。参阅[这里](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
 * **自托管组织的自动许可证同步**：自托管组织可以启用自动许可证同步，以便自动更新计费和订阅更改，而不必手动重新上传许可证。参阅[这里](self-hosting/licensing-for-paid-features.md#update-a-renewed-organization-license)。
 * **用于 Bitwarden 统一的 SQLite 数据库选项**：SQLite 现在是 Bitwarden 统一自托管部署的可用数据库选项。参阅[这里](self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md)。
 * **更新了自托管安装程序 URL**：用于下载自托管服务器安装程序的 URL 已更改。Linux 参阅[这里](self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#install-bitwarden)，Windows 参阅[这里](self-hosting/install-and-deploy-guides/docker/windows-standard-deployment.md#install-bitwarden)。
@@ -832,7 +832,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 
 此次发布包含：
 
-* **设备登录**：通过向您已注册的移动设备发送身份验证请求而不是使用您的主密码来登录网页密码库（参阅[这里](your-vault/log-in-with-device.md)）。
+* **设备登录**：通过向您已注册的移动设备发送身份验证请求而不是使用您的主密码来登录网页密码库（参阅[这里](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)）。
 
 ## 2022.11.0
 
@@ -942,7 +942,7 @@ _浏览器扩展 1.57.0，移动端 2.17.0_
 
 继上周的发布之后，针对移动应用程序和浏览器扩展发布了以下内容：
 
-* **移动端添加账户切换功能**：在 Android 和 iOS 上使用 Bitwarden 时，最多可登录 5 个账户并在它们之间无缝切换（参阅[这里](your-vault/account-switching.md)）。
+* **移动端添加账户切换功能**：在 Android 和 iOS 上使用 Bitwarden 时，最多可登录 5 个账户并在它们之间无缝切换（参阅[这里](account/log-in-and-unlock/more-log-in-options/account-switching.md)）。
 * **支持 Firefox 隐私模式**：此版本包含对 Firefox 隐私窗口更强大的支持（参阅[这里](miscellaneous/use-bitwarden-in-firefoxs-private-mode.md)）。
 
 ## 2022-03-15 <a href="#id-2021-10-26" id="id-2021-10-26"></a>
@@ -964,7 +964,7 @@ _服务器 1.46.0、Web 2.26.0，桌面端 1.31.0，浏览器扩展 1.56.0，移
 
 2022 年初始，Bitwarden 很高兴地发布以下内容：
 
-* **桌面端账户切换**：在 Bitwarden 桌面应用程序中一次性登录最多 5 个账户。此功能在 Bitwarden 应用程序中分阶段推出，很快将适用于更多其他应用程序（参阅[这里](your-vault/account-switching.md)）。
+* **桌面端账户切换**：在 Bitwarden 桌面应用程序中一次性登录最多 5 个账户。此功能在 Bitwarden 应用程序中分阶段推出，很快将适用于更多其他应用程序（参阅[这里](account/log-in-and-unlock/more-log-in-options/account-switching.md)）。
 * **iOS 上的 Send**：现在可以直接从 iOS 的共享菜单分享 Bitwarden Send（参阅[这里](bitwarden-send/create-a-send.md)）。
 * **从移动端删除账户**：您现在可以从移动应用程序中删除您的 Bitwarden 账户（参阅[这里](plans-and-pricing/delete-an-account-or-organization.md)），但您为什么要这样做？
 * **新的图标**：我们使用全新的图标更新了所有 Bitwarden 应用程序的外观。尽情欣赏！
@@ -996,11 +996,11 @@ _服务器 1.44.0，Web 2.24.0，桌面 端1.29.0，浏览器扩展 1.54.0，移
 * **密码库超时策略**：密码库超时策略将为您组织的所有成员应用最长的密码库超时持续时间（参阅[这里](organizations/enterprise-policies.md#vault-timeout)）。
 * **禁用个人密码库导出策略**：禁用个人密码库导出策略将禁止您组织的非所有者/非管理员成员导出私人密码库数据（参阅[这里](organizations/enterprise-policies.md#disable-personal-vault-export)）。
 * **自动扩展组织席位**：团队和企业组织将在邀请新用户时自动扩展用户席位。组织可以设置扩展限制，以防止席位数量超过指定的数量（参阅[这里](organizations/user-management.md)）。
-* **自定义密码库超时**：您现在可以为密码库超时指定自定义时间范围（小时和分钟）（参阅[这里](your-vault/vault-timeout-options.md#vault-timeout)）。
-* **自定义角色 - 改进的集合权限**：自定义角色的集合管理权限已扩展为包括对用户是否可以创建、编辑或删除已分配的集合或所有集合的精细控制（参阅[这里](your-vault/vault-timeout-options.md#vault-timeout)）。
+* **自定义密码库超时**：您现在可以为密码库超时指定自定义时间范围（小时和分钟）（参阅[这里](account/log-in-and-unlock/vault-timeout-options.md#vault-timeout)）。
+* **自定义角色 - 改进的集合权限**：自定义角色的集合管理权限已扩展为包括对用户是否可以创建、编辑或删除已分配的集合或所有集合的精细控制（参阅[这里](account/log-in-and-unlock/vault-timeout-options.md#vault-timeout)）。
 * **管理员密码重置 - 重置后更新密码**：管理员重置的密码现在必须由他们所属的用户在登录 Bitwarden 时立即更新（参阅[这里](organizations/admin-password-reset.md#after-a-password-reset)）。
 * **浏览器扩展 - 自动填充 Span 元素**：浏览器扩展现在可以在 HTML `<span>` 元素的 innerText 中自动填充[自定义字段](your-vault/custom-fields.md)（参阅[这里](password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md#html-span-elements)）。
-* &#x20;**浏览器扩展 - 自动生物识别提示**：浏览器扩展现在可以在打开时自动提示您生物识别输入。您可以从 **⚙️设置**菜单切换此行为（参阅[这里](your-vault/unlocking-with-biometrics.md)）。
+* &#x20;**浏览器扩展 - 自动生物识别提示**：浏览器扩展现在可以在打开时自动提示您生物识别输入。您可以从 **⚙️设置**菜单切换此行为（参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)）。
 * **网页密码库 - 黑暗模式**：网页密码库现在拥有黑暗模式（参阅[这里](miscellaneous/change-app-theme.md)）。
 * **CLI - `generate` 密码短语选项**： `bw generate --passphrase` 命令现在包含 `--capitalize` 和 `--includeNumber` 选项（参阅[这里](password-manager/developer-tools/password-manager-cli.md#generate)）。
 
@@ -1010,7 +1010,7 @@ _服务器 1.43.0，Web 2.23.0，桌面端 1.28.3，浏览器扩展 1.53.0，移
 
 Bitwarden 的最新版本侧重于对现有功能进行经常性的改进：
 
-* **移动设备上的 FIDO2 WebAuthn**：iOS 和 Android 现在支持通过 FIDO2 WebAuthn 进行两步登录（参阅[这里](my-account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
+* **移动设备上的 FIDO2 WebAuthn**：iOS 和 Android 现在支持通过 FIDO2 WebAuthn 进行两步登录（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
 * **管理员密码重置 - 自动注册改进**：自动注册策略选项现在会阻止用户撤销管理员密码重置（参阅[这里](organizations/admin-password-reset.md#automatic-enrollment)）。
 * **浏览器扩展 - 从保存栏中选择文件夹**：您现在可以直接从浏览器扩展的保存提示中选择要将项目保存到哪个[文件夹](your-vault/folders.md)（参阅[这里](getting-started/getting-started-browserext.md#add-a-login)）。
 * **浏览器扩展 - 上下文菜单项目自定义字段**：您现在可以直接从浏览器扩展的上下文菜单中复制 HTML 元素名称，以便轻松创建自定义字段（参阅[这里](your-vault/custom-fields.md#custom-field-names)）。
@@ -1055,11 +1055,11 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 很高兴 Bitwarden 团队发布了一系列新功能和更新，以继续我们让个人和企业的密码管理变得简单易用的使命：
 
 * **Send 隐私 & 安全选项**：使用新的 Send 隐私选项以对接收者隐藏您的电子邮件地址（参阅[这里](bitwarden-send/send-privacy.md#hide-email)）。为了防止滥用，文件 Send 现在将需要一个经过验证的电子邮件地址。此外，企业组织可以实施一条新的策略来设置隐藏电子邮件选项的可用性（参阅[这里](organizations/enterprise-policies.md#send-options)）。
-* **FIDO 更新 & 扩展支持**：我们的 FIDO 实施已经从 FIDO U2F 升级为 FIDO2 WebAuthn，但现有的 FIDO U2F 密钥将保留其完整性。对 FIDO 的支持已经扩展到更多的浏览器扩展和 Windows 桌面应用程序（参阅[这里](my-account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
+* **FIDO 更新 & 扩展支持**：我们的 FIDO 实施已经从 FIDO U2F 升级为 FIDO2 WebAuthn，但现有的 FIDO U2F 密钥将保留其完整性。对 FIDO 的支持已经扩展到更多的浏览器扩展和 Windows 桌面应用程序（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
 * **用于密钥的自定义字段**：自定义字段的值已经升级到支持多达 5000 个字符，允许存储像 RSA 4096 位 SSH 密钥这样的密钥（参阅[这里](your-vault/custom-fields.md#custom-fields-for-keys)）。
 * **文件大小增加**：现在可以创建最大 500 MB 的文件附件或文件 Send。由于设备限制，移动应用程序仍采用旧的 100 MB 限制。
 * **禁用浏览器扩展计数器**：使用 **⚙️设置 → 选项**菜单中的新开关来禁用浏览器扩展的角标计数器（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)）。
-* **Safari 的生物识别**：Safari 网页扩展现在包含对 Safari 14+ 生物识别解锁的支持（参阅[这里](your-vault/unlocking-with-biometrics.md)）。
+* **Safari 的生物识别**：Safari 网页扩展现在包含对 Safari 14+ 生物识别解锁的支持（参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)）。
 * **搜索国际化**：现在可以使用 1 个字符搜索密码库，改善了使用 1 个字符单词的语言（如简体中文和繁体中文）的使用体验。
 * **弱密码报告排序**：弱密码报告现在按照密码弱性的严重程度来排序（参阅[这里](your-vault/vault-health-reports.md#weak-passwords-report)）。
 
@@ -1080,7 +1080,7 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 Bitwarden 自豪地宣布我们发布了 Bitwarden Send，一个用于短暂共享的端到端加密解决方案。此次发布包括：
 
 * **Bitwarden Send**：Bitwarden Send 是一个用于短暂共享的端到端加密解决方案。在我们的网站和帮助中心有很多关于 Send 的资料，但你可以从[这里](bitwarden-send/about-send.md)开始。
-* **FIDO U2F 支持 Edge**：FIDO U2F 方式的两步登录现在可以用于微软 Edge 中的网页密码库和浏览器扩展（参阅[这里](my-account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
+* **FIDO U2F 支持 Edge**：FIDO U2F 方式的两步登录现在可以用于微软 Edge 中的网页密码库和浏览器扩展（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
 * **浏览器扩展中的域名排除**：Bitwarden 浏览器扩展现在可以对其明确不提供记住密码的域名进行配置（参阅[这里](password-manager/autofill/more-autofill-options/exclude-domains.md)）。
 * **改进的导入错误消息**：最近有很多人迁移到 Bitwarden，所以我们清理了一个导入错误的消息，以帮助你更快地解决问题（参阅[这里](import-export/import-data-to-your-vault.md#length-related-import-errors)）。
 * **Safari 网页扩展移植**：我们的 Safari 应用程序扩展已经正式移植到 Safari 14 以上版本的网页扩展中使用。由于 Safari 的变化，网页扩展的使用现在仅限于那些通过 Mac App Store 下载获取的应用（参阅[这里](miscellaneous/safari-web-extension.md)）。
@@ -1090,7 +1090,7 @@ Bitwarden 自豪地宣布我们发布了 Bitwarden Send，一个用于短暂共�
 {% hint style="info" %}
 如果您拥有最新版 (2021-01-19) 的桌面应用程序，则浏览器扩展的生物识别解锁**仅适用于基于 Chromium 的浏览器**（比如 Chrome、Edge）上安装的 v1.48.0 版本的浏览器扩展。
 
-当您的浏览器扩展更新到这个版本时，您可能会被要求接受一个新的权限，以便 Bitwarden `Communicate with cooperating native applications（与本机应用程序通信）`。这个权限是安全的，也是**可选的**，它允许浏览器扩展与 Bitwarden 桌面应用程序进行通信，而这是启用生物识别解锁所必需的（参阅[这里](your-vault/unlocking-with-biometrics.md#browser-extensions)）。拒绝此权限也将允许您使用 v1.48.0 扩展，只是不带生物识别解锁功能。
+当您的浏览器扩展更新到这个版本时，您可能会被要求接受一个新的权限，以便 Bitwarden `Communicate with cooperating native applications（与本机应用程序通信）`。这个权限是安全的，也是**可选的**，它允许浏览器扩展与 Bitwarden 桌面应用程序进行通信，而这是启用生物识别解锁所必需的（参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#browser-extensions)）。拒绝此权限也将允许您使用 v1.48.0 扩展，只是不带生物识别解锁功能。
 
 **生物识别解锁当前不适用于：**
 
@@ -1105,11 +1105,11 @@ Bitwarden 团队正在调查这些问题，并将随着情况的进展提供更�
 
 自 2021 年的第一个主要版本以来，Bitwarden 团队合并了多项重大改进，以满足所有用户的关键需求，其中包括：
 
-* **紧急访问**：Bitwarden 新增的紧急访问功能使用户可以指定和管理受信任的紧急联系人，紧急联系人可以在零知识/零信任环境中请求访问其密码库（参阅[这里](security/emergency-access.md)）。
+* **紧急访问**：Bitwarden 新增的紧急访问功能使用户可以指定和管理受信任的紧急联系人，紧急联系人可以在零知识/零信任环境中请求访问其密码库（参阅[这里](account/log-in-and-unlock/more-log-in-options/emergency-access.md)）。
 * **加密导出**：个人用户和组织现在可以将密码库数据导出到加密的 `.json` 文件中（参阅[这里](import-export/encrypted-exports.md)）。
 * **新的角色**：现在可以使用自定义角色来对用户权限进行粒度控制（参阅[这里](admin-console/user-management/member-roles-and-permissions.md#custom-role)）。
 * **新的企业策略**：现在，企业组织可以使用个人所有权策略（参阅[这里](organizations/enterprise-policies.md#personal-ownership)）。
-* **浏览器扩展的生物识别解锁**：通过与本机桌面应用程序的集成，您现在可以使用生物识别输入来解锁基于 Chromium 的浏览器扩展（参阅[这里](your-vault/unlocking-with-biometrics.md#browser-extensions)）。
+* **浏览器扩展的生物识别解锁**：通过与本机桌面应用程序的集成，您现在可以使用生物识别输入来解锁基于 Chromium 的浏览器扩展（参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#browser-extensions)）。
 
 ## 2020-11-12
 
@@ -1130,7 +1130,7 @@ Bitwarden 团队正在调查这些问题，并将随着情况的进展提供更�
 在 2020 年 3 月至 9 月之间发布了以下项目：
 
 * [企业策略](organizations/enterprise-policies.md)
-* [密码库超时选项](your-vault/vault-timeout-options.md)
+* [密码库超时选项](account/log-in-and-unlock/vault-timeout-options.md)
 * [回收站功能](your-vault/vault-items.md#delete-a-vault-item)
 * [密码查看权限 - ](admin-console/user-management/member-roles-and-permissions.md#granular-access-control)[隐藏密码](admin-console/user-management/member-roles-and-permissions.md#granular-access-control)
-* [桌面版应用程序的触控 ID/Windows Hello](your-vault/unlocking-with-biometrics.md#desktop-applications)
+* [桌面版应用程序的触控 ID/Windows Hello](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#desktop-applications)

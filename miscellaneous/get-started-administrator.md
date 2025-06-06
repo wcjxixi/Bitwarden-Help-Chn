@@ -241,8 +241,8 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 既然您已经设置好通过 Bitwarden 与家人安全地共享数据，那么请考虑一些其他方式来确保您所爱的人的上网安全：
 
-* 帮助家人设置[两步登录](../two-step-login/two-step-login-methods.md)，以保护他们的 Bitwarden 账户。
-* 帮助家人设置[紧急访问](../security/emergency-access.md)，以便在紧急情况下访问重要数据。
+* 帮助家人设置[两步登录](../account/two-step-login/setup-guides/two-step-login-methods.md)，以保护他们的 Bitwarden 账户。
+* 帮助家人设置[紧急访问](../account/log-in-and-unlock/more-log-in-options/emergency-access.md)，以便在紧急情况下访问重要数据。
 {% endtab %}
 
 {% tab title="免费版" %}
