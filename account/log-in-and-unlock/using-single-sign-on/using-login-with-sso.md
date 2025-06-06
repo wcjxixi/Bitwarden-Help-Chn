@@ -113,10 +113,10 @@ SSO 标识符界面
 您的主密码是该解密密钥的来源。即使您使用 SSO 向 Bitwarden 进行身份验证（证明您的身份），您仍然必须使用该解密密钥（您的主密码）来解密密码库数据。
 {% endhint %}
 
-5、如果您使用[两步登录](../../two-step-login/setup-guides/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。
+5、如果您使用[两步登录](../../two-step-login/setup-two-step-login/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。
 
 {% hint style="danger" %}
-如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../../two-step-login/setup-guides/two-step-login-via-authenticator.md)。
+如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../../two-step-login/setup-two-step-login/two-step-login-via-authenticator.md)。
 {% endhint %}
 {% endtab %}
 
@@ -155,10 +155,10 @@ SSO 标识符界面
 如果您是第一次登录，您可以将此 App 指定为受信任设备，而不必请求使用上述方法之一。
 {% endhint %}
 
-5、如果您使用[两步登录](../../two-step-login/setup-guides/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。
+5、如果您使用[两步登录](../../two-step-login/setup-two-step-login/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。
 
 {% hint style="danger" %}
-如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../../two-step-login/setup-guides/two-step-login-via-authenticator.md)。
+如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../../two-step-login/setup-two-step-login/two-step-login-via-authenticator.md)。
 {% endhint %}
 {% endtab %}
 
@@ -193,10 +193,10 @@ SSO 标识符界面
 我们希望您阅读[这里](../../../login-with-sso/about-key-connector.md#impact-on-master-passwords)和[这里](../../../login-with-sso/about-key-connector.md#impact-on-organization-membership)，以充分了解从您的账户中删除主密码意味着什么。您可以选择**离开组织**，但这将取消对组织拥有的密码库项目和集合以及单点登录的访问权限。
 {% endhint %}
 
-5、如果您使用[两步登录](../../two-step-login/setup-guides/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。
+5、如果您使用[两步登录](../../two-step-login/setup-two-step-login/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。
 
 {% hint style="danger" %}
-如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../../two-step-login/setup-guides/two-step-login-via-authenticator.md)。
+如果您使用 [SSO 登录](using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多种方式会导致错误。考虑改为[免费的验证器方式的两步登录](../../two-step-login/setup-two-step-login/two-step-login-via-authenticator.md)。
 {% endhint %}
 {% endtab %}
 {% endtabs %}

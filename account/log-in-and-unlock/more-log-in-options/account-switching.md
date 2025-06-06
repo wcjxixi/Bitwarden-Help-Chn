@@ -1,12 +1,10 @@
-# 账户切换
+# 登录到多个账户
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/account-switching/)
 {% endhint %}
 
 您知道吗？您可以在 Bitwarden 浏览器扩展、桌面 App 和移动 App 中同时登录**多达 5 个** Bitwarden 账户。使用账户切换功能，在个人账户和工作账户等 Bitwarden 账户之间无缝切换。
-
-## 登录第二个账户 <a href="#login-to-a-second-account" id="login-to-a-second-account"></a>
 
 {% tabs %}
 {% tab title="移动端" %}
@@ -38,7 +36,7 @@
 但某些**选项**，例如[主题](../../../miscellaneous/change-app-theme.md)，则适用于**所有账户**。
 {% endhint %}
 
-### 自动填充 <a href="#auto-fill" id="auto-fill"></a>
+## 自动填充 <a href="#auto-fill" id="auto-fill"></a>
 
 如果您正使用账户切换，您的移动 App 将默认自动填充当前活动账户账户的凭据，但是，您可以在自动填充期间从一个账户切换到另一个账户。
 {% endtab %}
@@ -90,7 +88,7 @@
 
 登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每个账户的密码库的当前状态（已锁定或已解锁）。如果您注销其中一个账户，它将从列表中移除。
 
-### 自动填充 <a href="#auto-fill" id="auto-fill"></a>
+## 自动填充 <a href="#auto-fill" id="auto-fill"></a>
 
 如果您正使用账户切换，浏览器扩展将默认自动填充当前活动账户账户的凭据。
 {% endtab %}

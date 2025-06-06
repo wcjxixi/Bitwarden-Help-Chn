@@ -72,7 +72,7 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 已撤销访问权限的用户列在组织的**成员**界面的**已撤销**选项卡中，并将：
 
 * 无权访问任何组织密码库项目、集合等。
-* 无法使用 [SSO 登录](../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)，或使用 [Organizational Duo](../account/two-step-login/setup-guides/two-step-login-via-duo.md) 进行两步登录。
+* 无法使用 [SSO 登录](../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)，或使用 [Organizational Duo](../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md) 进行两步登录。
 * 不受您的组织[策略](../organizations/enterprise-policies.md)的约束。
 * 不占用许可席位。
 

@@ -100,7 +100,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 * **浏览器扩展筛选器持久性**：为了在浏览器扩展和网页之间导航时获得更好的体验，搜索条件和筛选器现在可持续两分钟，或者直到您更改浏览器扩展中的活动选项卡。
 * **浏览器扩展的加载时间**：我们进行了几项改进，以改善浏览器扩展的加载时间。[了解更多](getting-started/getting-started-browserext.md)有关 Bitwarden 浏览器扩展的信息。
 * **重新排序网站 URI**：在网页 App 和浏览器扩展的「编辑登录」视图中，您现在可以使用拖放 (**≡**) 按钮来重新排序网站 URI，以获得更好的视觉组织效果。
-* **Linux 桌面支持 FIDO2 两步登录**：Linux 桌面 App 现在支持使用 FIDO2 通行密钥的两步登录。[了解更多](account/two-step-login/setup-guides/two-step-login-via-fido.md)。
+* **Linux 桌面支持 FIDO2 两步登录**：Linux 桌面 App 现在支持使用 FIDO2 通行密钥的两步登录。[了解更多](account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)。
 * **SSH 代理转发**：Bitwarden 桌面 App 上 SSH 代理转发的支持已得到改进。[了解更多](password-manager/developer-tools/ssh-agent.md)有关 Bitwarden SSH 代理的信息。
 
 ## 2025.3.0
@@ -135,7 +135,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 * **新设备登录保护**：为确保您的账户安全，Bitwarden 将逐步开始要求未使用两步登录或 SSO 的用户进行额外的验证。[了解更多](account/log-in-and-unlock/new-device-protection.md)。
 * **恢复密码使用更新**：使用恢复密码时，虽然仍需要您的电子邮箱地址和主密码，但现在将自动登录您的密码库并停用两步登录，而不是仅停用两步登录。[了解更多](account/two-step-login/recovery-codes.md#use-your-recovery-code)。
-* **适用于 macOS 桌面的 FIDO2 两步登录**：macOS 桌面 App 现在支持使用 FIDO2 通行密钥的两步登录。[了解更多](account/two-step-login/setup-guides/two-step-login-via-fido.md)。
+* **适用于 macOS 桌面的 FIDO2 两步登录**：macOS 桌面 App 现在支持使用 FIDO2 通行密钥的两步登录。[了解更多](account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)。
 
 ### Password Manager
 
@@ -160,7 +160,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 {% hint style="info" %}
 为确保账户安全，在即将发布的版本中，**对于没有使用两步登录的用户**，Bitwarden 将对其要求额外的验证。希望避免新设备验证工作流的用户可以：
 
-* 按照[此页面](account/two-step-login/setup-guides/two-step-login-methods.md)上的任何指南预先设置两步登录。
+* 按照[此页面](account/two-step-login/setup-two-step-login/two-step-login-methods.md)上的任何指南预先设置两步登录。
 * 从**设置** → **我的账户** → **危险操作区**界面中退出此功能。
 
 [了解更多](account/log-in-and-unlock/new-device-protection.md)。
@@ -244,7 +244,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ## 2024.12.0
 
 {% hint style="info" %}
-2025 年，Bitwarden 将开始逐步停止对 FIDO 通用第二因素 (U2F) 密钥的支持，这些密钥可以在网页 App 的**两步登录** → **管理 FIDO2 WebAuthn** 视图中识别为标记为「**迁移自 FIDO**」。如果您目前使用的是已迁移的 U2F 密钥，请移除并重新注册该密钥，以便自动[将其设置为 WebAuthn](account/two-step-login/setup-guides/two-step-login-via-fido.md)。
+2025 年，Bitwarden 将开始逐步停止对 FIDO 通用第二因素 (U2F) 密钥的支持，这些密钥可以在网页 App 的**两步登录** → **管理 FIDO2 WebAuthn** 视图中识别为标记为「**迁移自 FIDO**」。如果您目前使用的是已迁移的 U2F 密钥，请移除并重新注册该密钥，以便自动[将其设置为 WebAuthn](account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)。
 {% endhint %}
 
 此次发布包含：
@@ -567,7 +567,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### Password Manager
 
 * **网页 App 导航更新**：Bitwarden 网页 App 已完全重新设计！我们希望您能喜欢这个新的体验（[了解更多](https://bitwarden.com/blog/bitwarden-design-updating-the-navigation-in-the-web-app/)）。
-* **Duo 2FA 登录更新**：Duo 为用户和管理员引入了通用提示。启用该服务的 Duo 管理员会发现 Duo 2FA 登录流程稍微有一些变化（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-duo.md)）。
+* **Duo 2FA 登录更新**：Duo 为用户和管理员引入了通用提示。启用该服务的 Duo 管理员会发现 Duo 2FA 登录流程稍微有一些变化（参阅[这里](account/two-step-login/setup-two-step-login/two-step-login-via-duo.md)）。
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
@@ -681,7 +681,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-* **FIDO2 WebAuthn 现已成为免费的两步登录选项**：用于两步登录的 FIDO2 WebAuthn 方法已扩展到免费账户。现在，所有 Bitwarden 用户都可以使用兼容的 FIDO2 WebAuthn 凭证（如那些与硬件安全钥匙绑定的设备）来提高登录的安全性（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
+* **FIDO2 WebAuthn 现已成为免费的两步登录选项**：用于两步登录的 FIDO2 WebAuthn 方法已扩展到免费账户。现在，所有 Bitwarden 用户都可以使用兼容的 FIDO2 WebAuthn 凭证（如那些与硬件安全钥匙绑定的设备）来提高登录的安全性（参阅[这里](account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)）。
 * **组织成员电子邮件验证**：当组织成员[接受加入邀请](organizations/user-management.md#accept)时，或如果他们是使用[域验证](admin-console/login-with-sso/claimed-domains.md)的组织成员，他们的电子邮件将自动通过验证。
 * **导出更新**：密码库数据的 JSON 导出现在将包括适用项目的密码历史记录（参阅[这里](import-export/export-vault-data.md)）。
 * **CLI 密码生成器选项**：使用 CLI 生成密码时增加了自定义密码复杂度的选项标志（参阅[这里](password-manager/vault-basics/generator.md#cli)）。
@@ -1010,7 +1010,7 @@ _服务器 1.43.0，Web 2.23.0，桌面端 1.28.3，浏览器扩展 1.53.0，移
 
 Bitwarden 的最新版本侧重于对现有功能进行经常性的改进：
 
-* **移动设备上的 FIDO2 WebAuthn**：iOS 和 Android 现在支持通过 FIDO2 WebAuthn 进行两步登录（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
+* **移动设备上的 FIDO2 WebAuthn**：iOS 和 Android 现在支持通过 FIDO2 WebAuthn 进行两步登录（参阅[这里](account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)）。
 * **管理员密码重置 - 自动注册改进**：自动注册策略选项现在会阻止用户撤销管理员密码重置（参阅[这里](organizations/admin-password-reset.md#automatic-enrollment)）。
 * **浏览器扩展 - 从保存栏中选择文件夹**：您现在可以直接从浏览器扩展的保存提示中选择要将项目保存到哪个[文件夹](your-vault/folders.md)（参阅[这里](getting-started/getting-started-browserext.md#add-a-login)）。
 * **浏览器扩展 - 上下文菜单项目自定义字段**：您现在可以直接从浏览器扩展的上下文菜单中复制 HTML 元素名称，以便轻松创建自定义字段（参阅[这里](your-vault/custom-fields.md#custom-field-names)）。
@@ -1055,7 +1055,7 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 很高兴 Bitwarden 团队发布了一系列新功能和更新，以继续我们让个人和企业的密码管理变得简单易用的使命：
 
 * **Send 隐私 & 安全选项**：使用新的 Send 隐私选项以对接收者隐藏您的电子邮件地址（参阅[这里](bitwarden-send/send-privacy.md#hide-email)）。为了防止滥用，文件 Send 现在将需要一个经过验证的电子邮件地址。此外，企业组织可以实施一条新的策略来设置隐藏电子邮件选项的可用性（参阅[这里](organizations/enterprise-policies.md#send-options)）。
-* **FIDO 更新 & 扩展支持**：我们的 FIDO 实施已经从 FIDO U2F 升级为 FIDO2 WebAuthn，但现有的 FIDO U2F 密钥将保留其完整性。对 FIDO 的支持已经扩展到更多的浏览器扩展和 Windows 桌面应用程序（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
+* **FIDO 更新 & 扩展支持**：我们的 FIDO 实施已经从 FIDO U2F 升级为 FIDO2 WebAuthn，但现有的 FIDO U2F 密钥将保留其完整性。对 FIDO 的支持已经扩展到更多的浏览器扩展和 Windows 桌面应用程序（参阅[这里](account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)）。
 * **用于密钥的自定义字段**：自定义字段的值已经升级到支持多达 5000 个字符，允许存储像 RSA 4096 位 SSH 密钥这样的密钥（参阅[这里](your-vault/custom-fields.md#custom-fields-for-keys)）。
 * **文件大小增加**：现在可以创建最大 500 MB 的文件附件或文件 Send。由于设备限制，移动应用程序仍采用旧的 100 MB 限制。
 * **禁用浏览器扩展计数器**：使用 **⚙️设置 → 选项**菜单中的新开关来禁用浏览器扩展的角标计数器（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)）。
@@ -1080,7 +1080,7 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 Bitwarden 自豪地宣布我们发布了 Bitwarden Send，一个用于短暂共享的端到端加密解决方案。此次发布包括：
 
 * **Bitwarden Send**：Bitwarden Send 是一个用于短暂共享的端到端加密解决方案。在我们的网站和帮助中心有很多关于 Send 的资料，但你可以从[这里](bitwarden-send/about-send.md)开始。
-* **FIDO U2F 支持 Edge**：FIDO U2F 方式的两步登录现在可以用于微软 Edge 中的网页密码库和浏览器扩展（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
+* **FIDO U2F 支持 Edge**：FIDO U2F 方式的两步登录现在可以用于微软 Edge 中的网页密码库和浏览器扩展（参阅[这里](account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)）。
 * **浏览器扩展中的域名排除**：Bitwarden 浏览器扩展现在可以对其明确不提供记住密码的域名进行配置（参阅[这里](password-manager/autofill/more-autofill-options/exclude-domains.md)）。
 * **改进的导入错误消息**：最近有很多人迁移到 Bitwarden，所以我们清理了一个导入错误的消息，以帮助你更快地解决问题（参阅[这里](import-export/import-data-to-your-vault.md#length-related-import-errors)）。
 * **Safari 网页扩展移植**：我们的 Safari 应用程序扩展已经正式移植到 Safari 14 以上版本的网页扩展中使用。由于 Safari 的变化，网页扩展的使用现在仅限于那些通过 Mac App Store 下载获取的应用（参阅[这里](miscellaneous/safari-web-extension.md)）。

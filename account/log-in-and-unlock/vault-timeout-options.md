@@ -69,4 +69,4 @@
 * **锁定**（默认）\
   密码库锁定时将在设备上保留密码库数据，因此可以离线解锁您的密码库。您只需要输入[主密码](your-master-password.md)或 PIN 码，或使用生物识别，但不需要使用任何有效的两步登录方式。
 * **注销**\
-  注销密码库时将完全从设备中删除所有密码库数据。重新登录将需要重新验证您的身份，因此登录只能在在线时完成。您需要输入您的[主密码](your-master-password.md)和任何有效的[两步登录](../two-step-login/setup-guides/two-step-login-methods.md)方式。
+  注销密码库时将完全从设备中删除所有密码库数据。重新登录将需要重新验证您的身份，因此登录只能在在线时完成。您需要输入您的[主密码](your-master-password.md)和任何有效的[两步登录](../two-step-login/setup-two-step-login/two-step-login-methods.md)方式。

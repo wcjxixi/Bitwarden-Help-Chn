@@ -1,10 +1,8 @@
-# =两步登录现场指南
+# =为何要使用两步登录？
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/bitwarden-field-guide-two-step-login/)
 {% endhint %}
-
-## 什么是两步登录？ <a href="#what-is-two-step-login" id="what-is-two-step-login"></a>
 
 两步登录（也称为双重身份验证或 2FA）是网站和 App 常用的一种安全技术，用于保护您的敏感数据。使用两步登录的网站会要求您除了输入用户名和密码外，还要输入一个额外的「令牌」（也称为验证码或一次性密码 (OTP)）来验证您的身份，该令牌通常从不同的设备上获取。
 
@@ -14,13 +12,13 @@
 基本两步登录流程
 {% endembed %}
 
-通常，拥有敏感数据（例如您的网上银行账户）的网站或 App会尝试在登录界面之外通过以下方式验证您的身份：
+通常，拥有敏感数据的网站或 App（例如您的网上银行账户）会尝试在登录界面之外通过以下方式验证您的身份：
 
 * 将包含令牌的 SMS / 文本信息发送到移动设备上
 * 要求提供由移动设备上的验证器 App（例如 [Bitwarden Authenticator](../../bitwarden-authenticator/bitwarden-authenticator.md)）生成的令牌
 * 从物理安全钥匙（例如 YubiKey）中查找令牌
 
-## 为何使用两步登录？ <a href="#how-should-i-use-two-step-login" id="how-should-i-use-two-step-login"></a>
+## 为何要使用两步登录？ <a href="#how-should-i-use-two-step-login" id="how-should-i-use-two-step-login"></a>
 
 安全性通常需要在保护和便利之间进行权衡，因此最终取决于您！通常，使用两步登录的两个最重要的用途：
 
@@ -48,12 +46,12 @@ Bitwarden 为免费账户提供了好几种两步登录方式，包括：
 * 验证器 App（如 [Bitwarden Authenticator](../../bitwarden-authenticator/bitwarden-authenticator.md)）
 * 电子邮箱
 
-对于高级会员账户，Bitwarden 还提供了好几种高级两步登录方式：
+对于高级用户，Bitwarden 还提供了好几种高级的两步登录方式：
 
 * Duo Security 的 Duo Push、短信、电话和安全钥匙
 * YubiKey（任何 4/5 系列设备或 YubiKey NEO/NFC）
 
-使用我们的**设置指南**，[了解有关选项的更多信息](setup-guides/two-step-login-methods.md)，或获取设置任何方式的帮助。
+使用我们的**设置指南**，[了解有关选项的更多信息](setup-two-step-login/two-step-login-methods.md)，或获取设置任何方式的帮助。
 
 {% hint style="info" %}
 由于 SIM 劫持等漏洞，Bitwarden 不支持 SMS 2FA。我们不建议对其他账户使用 SMS 2FA，除非它是唯一可用的方法。建议使用任何一种第二个因素而不是不使用，但多数替代方案比 SMS 2FA 更安全。
@@ -93,9 +91,9 @@ Bitwarden Authenticator 是一款移动身份验证 App，您可以用它在使�
 
 有关使用集成身份验证的帮助，请参阅[这篇文章](../../your-vault/totp.md)。
 
-### 什么时候我应该使用独立的 App 而不是集成的验证器？
+### 什么时候我应该使用独立的 App 而不是集成的身份验证器？
 
-只有独立 App 允许您为自己的 Bitwarden 账户设置 2FA，但您可以使用其中任何一款 App 为您的所有其他账户存储和生成验证码。目前只有集成验证器允许您在团队成员之间共享生成的令牌。它们可以一起使用，也可以分开使用，这取决于您的安全偏好。
+只有独立 App 允许您为自己的 Bitwarden 账户设置 2FA，但您可以使用其中任何一款 App 为您的所有其他账户存储和生成验证码。目前只有集成的身份验证器允许您在团队成员之间共享生成的令牌。它们可以一起使用，也可以分开使用，这取决于您的安全偏好。
 
 ## 2FA 安全密钥和通行密钥 <a href="#id-2fa-security-keys-and-passkeys" id="id-2fa-security-keys-and-passkeys"></a>
 
@@ -112,7 +110,7 @@ YubiKey 设备是一种与 FIDO 身份验证协议配合使用的安全密钥，
 
 现在您已经是两步登录的专家了，我们建议你：
 
-* [设置两步登录](setup-guides/two-step-login-methods.md)
+* [设置两步登录](setup-two-step-login/two-step-login-methods.md)
 * [获取高级会员以使用高级两步登录方式](https://vault.bitwarden.com/#/?premium=purchase)
 * [设置 Bitwarden authenticator](../../your-vault/totp.md)
-* [为团队和企业设置两步登录](setup-guides/two-step-login-methods.md#two-step-login-for-teams-and-enterprise)
+* [为团队和企业设置两步登录](setup-two-step-login/two-step-login-methods.md#two-step-login-for-teams-and-enterprise)

@@ -67,5 +67,5 @@
 
 现在您已经创建了**好记**且**强大**的主密码，我们建议：
 
-* [通过两步登录进一步保护您的密码库](../two-step-login/setup-guides/two-step-login-methods.md)
+* [通过两步登录进一步保护您的密码库](../two-step-login/setup-two-step-login/two-step-login-methods.md)
 * [启用紧急访问](more-log-in-options/emergency-access.md)（需要高级会员）

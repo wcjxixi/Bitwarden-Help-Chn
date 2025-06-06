@@ -14,7 +14,7 @@
 
 个人用户必须被注册（通过[自行注册](admin-password-reset.md#self-enroll-in-password-reset)或使用[自动注册策略选项](admin-password-reset.md#automatic-enrollment)）才有资格进行账户恢复，因为注册会触发密钥交换，以确保恢复的安全。
 
-**账户恢复不会绕过两步登录或 SSO 登录。**&#x5982;果为账户启用了[两步登录方式](../account/two-step-login/setup-guides/two-step-login-methods.md)，或者如果您的组织[要求 SSO 身份验证](enterprise-policies.md#single-sign-on-authentication)，您在密码重置后仍将需要使用该方式访问您的密码库。
+**账户恢复不会绕过两步登录或 SSO 登录。**&#x5982;果为账户启用了[两步登录方式](../account/two-step-login/setup-two-step-login/two-step-login-methods.md)，或者如果您的组织[要求 SSO 身份验证](enterprise-policies.md#single-sign-on-authentication)，您在密码重置后仍将需要使用该方式访问您的密码库。
 
 ### 加密 <a href="#encryption" id="encryption"></a>
 

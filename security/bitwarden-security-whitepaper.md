@@ -100,11 +100,11 @@ Bitwarden 客户端提供以下替代身份验证方法。其中一些方法也�
 
 #### 两步登录 <a href="#two-step-login" id="two-step-login"></a>
 
-两步登录（也称为「二因素认证」或「2FA」）是一种用于保护在线账户的额外的安全层，即使有人掌握了主密码，也能确保账户安全。当启用两步登录时，用户在登录 Bitwarden 时需要完成一个额外的步骤，比如使用 [FIDO2 安全密钥](../account/two-step-login/setup-guides/two-step-login-via-fido.md)或[验证器 App](../account/two-step-login/setup-guides/two-step-login-via-authenticator.md) 来确认登录尝试。作为最佳实践，**Bitwarden 推荐所有用户启用并使用两步登录**。
+两步登录（也称为「二因素认证」或「2FA」）是一种用于保护在线账户的额外的安全层，即使有人掌握了主密码，也能确保账户安全。当启用两步登录时，用户在登录 Bitwarden 时需要完成一个额外的步骤，比如使用 [FIDO2 安全密钥](../account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)或[验证器 App](../account/two-step-login/setup-two-step-login/two-step-login-via-authenticator.md) 来确认登录尝试。作为最佳实践，**Bitwarden 推荐所有用户启用并使用两步登录**。
 
 Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备（例如 YubiKey）时关闭两步登录功能。**用户应该在启用此功能后立即获取并保存此恢复代码**，因为 Bitwarden 员工和系统无法代表用户禁用两步登录。
 
-了解更多关于可用的[两步登录方式](../account/two-step-login/setup-guides/two-step-login-methods.md)、[使用多种方式](../account/two-step-login/setup-guides/two-step-login-methods.md#using-multiple-methods)以及在[丢失辅助设备](../account/two-step-login/lost-secondary-device.md)时该怎么做的信息。
+了解更多关于可用的[两步登录方式](../account/two-step-login/setup-two-step-login/two-step-login-methods.md)、[使用多种方式](../account/two-step-login/setup-two-step-login/two-step-login-methods.md#using-multiple-methods)以及在[丢失辅助设备](../account/two-step-login/lost-two-step-device.md)时该怎么做的信息。
 
 #### 紧急访问 <a href="#emergency-access" id="emergency-access"></a>
 

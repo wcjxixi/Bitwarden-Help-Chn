@@ -36,20 +36,20 @@
 
 Bitwarden 提供多种免费的两步登录方式，包括：
 
-| 方式                                                                                                                                | 设置说明                                                                                 |
-| --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| 通过验证器 App（例如 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=zh-Hans)） | 点[这里](../../account/two-step-login/setup-guides/two-step-login-via-authenticator.md) |
-| 通过电子邮件                                                                                                                            | 点[这里](../../account/two-step-login/setup-guides/two-step-login-via-email.md)         |
-| 通过 FIDO2 WebAuthn 验证器                                                                                                             | 点[这里](../../account/two-step-login/setup-guides/two-step-login-via-fido.md)          |
+| 方式                                                                                                                                | 设置说明                                                                                         |
+| --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 通过验证器 App（例如 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=zh-Hans)） | 点[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-authenticator.md) |
+| 通过电子邮件                                                                                                                            | 点[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-email.md)         |
+| 通过 FIDO2 WebAuthn 验证器                                                                                                             | 点[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)          |
 
 ### 高级方式 <a href="#premium-methods" id="premium-methods"></a>
 
 对于高级用户（包括付费组织的成员），Bitwarden 提供了几种高级的两步登录方式：
 
-| 方式                                        | 设置说明                                                                           |
-| ----------------------------------------- | ------------------------------------------------------------------------------ |
-| 通过具有 Duo Push、短信、电话和安全密钥的 Duo Security    | 点[这里](../../account/two-step-login/setup-guides/two-step-login-via-duo.md)     |
-| 通过 YubiKey（任何 4/5 系列或 YubiKey NEO/NFC 设备） | 点[这里](../../account/two-step-login/setup-guides/two-step-login-via-yubikey.md) |
+| 方式                                        | 设置说明                                                                                   |
+| ----------------------------------------- | -------------------------------------------------------------------------------------- |
+| 通过具有 Duo Push、短信、电话和安全密钥的 Duo Security    | 点[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md)     |
+| 通过 YubiKey（任何 4/5 系列或 YubiKey NEO/NFC 设备） | 点[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-yubikey.md) |
 
 ## 设备登录 <a href="#log-in-with-device" id="log-in-with-device"></a>
 

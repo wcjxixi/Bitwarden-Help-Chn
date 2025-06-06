@@ -100,7 +100,7 @@ sudo snap install bw
 bw login
 ```
 
-此命令将提示您输入**电子邮箱地址**、**主密码**和**两步登录代码**（若[已启用](../../account/two-step-login/setup-guides/two-step-login-methods.md)）。CLI 目前支持[身份验证器](../../account/two-step-login/setup-guides/two-step-login-via-authenticator.md)、[电子邮箱](../../account/two-step-login/setup-guides/two-step-login-via-email.md)或 [YubiKey](../../account/two-step-login/setup-guides/two-step-login-via-yubikey.md) 方式的两步登录。
+此命令将提示您输入**电子邮箱地址**、**主密码**和**两步登录代码**（若[已启用](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)）。CLI 目前支持[身份验证器](../../account/two-step-login/setup-two-step-login/two-step-login-via-authenticator.md)、[电子邮箱](../../account/two-step-login/setup-two-step-login/two-step-login-via-email.md)或 [YubiKey](../../account/two-step-login/setup-two-step-login/two-step-login-via-yubikey.md) 方式的两步登录。
 
 您可以像如下的示例那样将这些因素组合成一个命令，但是出于安全原因不建议这样操作。
 
@@ -808,7 +808,7 @@ $env:NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 
 #### 两步登录方式 <a href="#two-step-login-methods" id="two-step-login-methods"></a>
 
-用于指定在[登录](password-manager-cli.md#log-in)时使用哪一种[两步登录方式](../../account/two-step-login/setup-guides/two-step-login-methods.md)：
+用于指定在[登录](password-manager-cli.md#log-in)时使用哪一种[两步登录方式](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)：
 
 | 名称      | 值 |
 | ------- | - |

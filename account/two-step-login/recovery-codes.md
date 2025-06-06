@@ -1,10 +1,10 @@
-# 恢复代码
+# 获取恢复代码
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/two-step-recovery-code/)
 {% endhint %}
 
-如果您启用了任何[两步登录方式](setup-guides/two-step-login-methods.md)，重要的是要明白，失去对您的辅助设备（如安装了验证器的移动设备、安全钥匙、或已链接的电子邮箱收件箱）的访问，有可能将您锁定在您的 Bitwarden 密码库之外。
+如果您启用了任何[两步登录方式](setup-two-step-login/two-step-login-methods.md)，重要的是要明白，失去对您的辅助设备（如安装了验证器的移动设备、安全钥匙、或已链接的电子邮箱收件箱）的访问，有可能将您锁定在您的 Bitwarden 密码库之外。
 
 为了防止这种情况的发生，Bitwarden 生成了一个**恢复代码**，它可以和您的主密码一起使用，以从您的密码库外部禁用任何已启用的两步登录方式。
 
