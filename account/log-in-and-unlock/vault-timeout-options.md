@@ -1,10 +1,10 @@
-# =自动注销或锁定
+# 自动注销或锁定
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/vault-timeout/)
 {% endhint %}
 
-密码库超时决定了您的密码库在指定的不活动时间段后的行为方式。可以为每一种 Bitwarden App 单独配置超时：
+密码库超时选项决定了 Password Manager 是否会在指定的闲置时间后自动注销或锁定。要设置超时行为：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -69,4 +69,4 @@
 * **锁定**（默认）\
   密码库锁定时将在设备上保留密码库数据，因此可以离线解锁您的密码库。您只需要输入[主密码](your-master-password.md)或 PIN 码，或使用生物识别，但不需要使用任何有效的两步登录方式。
 * **注销**\
-  注销密码库时将完全从设备中删除所有密码库数据。重新登录将需要重新验证您的身份，因此登录只能在在线时完成。您需要输入您的[主密码](your-master-password.md)和任何有效的[两步登录](../two-step-login/setup-two-step-login/two-step-login-methods.md)方式。
+  注销密码库时将完全从设备中删除所有密码库数据。重新登录将需要重新验证您的身份，因此登录只能在在线时完成。您需要输入您的[主密码](your-master-password.md)和任何有效的[两步登录](../two-step-login/setup-guides/two-step-login-methods.md)方式。

@@ -37,7 +37,7 @@
 
 {% embed url="https://vimeo.com/795652047" %}
 
-[此处](../account/two-step-login/setup-two-step-login/two-step-login-methods.md)了解更多有关两步登录选项的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../account/two-step-login/setup-guides/two-step-login-methods.md)了解更多有关两步登录选项的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:40**：使用电子邮箱设置两步登录。
 * **00:57**：使用验证器 App 设置两步登录。

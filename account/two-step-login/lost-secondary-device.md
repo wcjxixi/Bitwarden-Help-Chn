@@ -1,4 +1,4 @@
-# 丢失了辅助设备
+# 无法访问两步登录
 
 {% hint style="success" %}
 对应的[官方文档地址](https://help.bitwarden.com/article/lost-two-step-device/)

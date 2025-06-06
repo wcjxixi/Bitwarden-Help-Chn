@@ -12,11 +12,11 @@
 
 ### 问：我可以要求我的组织用户使用两步登录吗？ <a href="#q-can-i-require-my-organizations-users-to-use-two-step-login" id="q-can-i-require-my-organizations-users-to-use-two-step-login"></a>
 
-**答：**&#x60A8;可以通过启用[两步登录策略](../../organizations/enterprise-policies.md#two-step-login)来要求组织用户使用两步登录。此外，您还可以设置[组织层面的 Duo 2FA](setup-two-step-login/two-step-login-via-duo.md)，以确保您的所有用户都拥有他们可以支配的安全的两步登录方式。
+**答：**&#x60A8;可以通过启用[两步登录策略](../../organizations/enterprise-policies.md#two-step-login)来要求组织用户使用两步登录。此外，您还可以设置[组织层面的 Duo 2FA](setup-guides/two-step-login-via-duo.md)，以确保您的所有用户都拥有他们可以支配的安全的两步登录方式。
 
 ### 问：iOS 或 Android App 支持 FIDO U2F 或 FIDO2 WebAuthn 吗？ <a href="#q-is-fido-u-2-f-or-fido-2-webauthn-supported-on-my-ios-or-android-app" id="q-is-fido-u-2-f-or-fido-2-webauthn-supported-on-my-ios-or-android-app"></a>
 
-**答：**&#x652F;持。请参阅 [FIDO2 WebAuthn 方式的两步登录](setup-two-step-login/two-step-login-via-fido.md)。
+**答：**&#x652F;持。请参阅 [FIDO2 WebAuthn 方式的两步登录](setup-guides/two-step-login-via-fido.md)。
 
 ### 问：为什么 Bitwarden 没有询问我已启用的两步登录方式？ <a href="#q-why-is-bitwarden-not-asking-for-my-enabled-two-step-login-method" id="q-why-is-bitwarden-not-asking-for-my-enabled-two-step-login-method"></a>
 

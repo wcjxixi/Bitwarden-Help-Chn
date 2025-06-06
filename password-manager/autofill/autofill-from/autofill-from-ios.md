@@ -23,7 +23,7 @@ iOS 上的自动填充有几种行为：
 * **长按文本字段**：使用此选项可在更多地点从 Bitwarden 自动填充。
 
 {% hint style="success" %}
-如果设备的[密码库超时行为](../../../account/log-in-and-unlock/vault-timeout-options.md#vault-timeout-action)设置为**注销**，并且您仅启用了需要 NFC（例如带 NFC 的 YubiKey）的[两步登录方式](../../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)，则当前无法在 iOS 上使用自动填充，因为 iOS 不允许 NFC 输入中断自动填充工作流。
+如果设备的[密码库超时行为](../../../account/log-in-and-unlock/vault-timeout-options.md#vault-timeout-action)设置为**注销**，并且您仅启用了需要 NFC（例如带 NFC 的 YubiKey）的[两步登录方式](../../../account/two-step-login/setup-guides/two-step-login-methods.md)，则当前无法在 iOS 上使用自动填充，因为 iOS 不允许 NFC 输入中断自动填充工作流。
 
 要么将您的密码库超时行为改为**锁定**，要么启用另一种两步登录方式。
 {% endhint %}

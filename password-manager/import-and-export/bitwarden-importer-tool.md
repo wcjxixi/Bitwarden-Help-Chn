@@ -35,7 +35,7 @@ Bitwarden 导入器会将信息导入您的个人密码库。导入信息后，�
 
 安装后，打开 Bitwarden 导入器工具，查看一个窗口，你将在上面设置一些配置选项。有两种验证选项：
 
-1. **使用您的电子邮件和主密码**：此选项适用于使用验证器应用程序、YubiKey 或电子邮件进行[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)的账户，或不使用两步登录的账户。
+1. **使用您的电子邮件和主密码**：此选项适用于使用验证器应用程序、YubiKey 或电子邮件进行[两步登录](../../account/two-step-login/setup-guides/two-step-login-methods.md)的账户，或不使用两步登录的账户。
 2. **使用您的 API 密钥**：无论您为账户使用哪种两步登录选项，此选项都有效。
 
 | 字段                                                                               | 描述                                                                                                                                                                                    |
@@ -61,7 +61,7 @@ Bitwarden 导入器会将信息导入您的个人密码库。导入信息后，�
 * 您的 Bitwarden 电子邮件和主密码或 API 密钥已输入且正确无误。
 * 其他服务的电子邮件地址和主密码已输入且正确无误。
 * 您使用的验证方法与您账户的两步登录方法兼容。
-  * **使用您的电子邮件和主密码**：此选项适用于使用验证器应用程序、YubiKey 或电子邮件进行[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)的账户，或不使用两步登录的账户。
+  * **使用您的电子邮件和主密码**：此选项适用于使用验证器应用程序、YubiKey 或电子邮件进行[两步登录](../../account/two-step-login/setup-guides/two-step-login-methods.md)的账户，或不使用两步登录的账户。
   * **使用您的 API 密钥**：无论您为账户使用哪种两步登录选项，此选项都有效。
 * 检查您的电子邮件，您的服务提供商可能已经发送了一封关于需要批准的登录尝试的电子邮件。
 

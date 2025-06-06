@@ -12,7 +12,7 @@
 企业组织可通过[策略](../../organizations/enterprise-policies.md)关闭该功能。
 {% endhint %}
 
-使用**家庭组织**，您可以在自己和最多 5 位朋友或家人之间安全地共享密码库数据。家庭组织包含用于所有 6 位用户的高级 Bitwarden 功能，包括[高级两步登录方式](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)、[加密文件附件](../../your-vault/file-attachments.md)、[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)及[更多](about-bitwarden-plans.md#compare-the-plans)其他功能。
+使用**家庭组织**，您可以在自己和最多 5 位朋友或家人之间安全地共享密码库数据。家庭组织包含用于所有 6 位用户的高级 Bitwarden 功能，包括[高级两步登录方式](../../account/two-step-login/setup-guides/two-step-login-methods.md)、[加密文件附件](../../your-vault/file-attachments.md)、[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)及[更多](about-bitwarden-plans.md#compare-the-plans)其他功能。
 
 本文将帮助组织成员兑换他们的赞助，但如果您是自托管 Bitwarden 企业组织的管理员，则需要完成[这些步骤](../../self-hosting/self-hosting-families-sponsorships.md)，为您的成员启用家庭赞助。
 

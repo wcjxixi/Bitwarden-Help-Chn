@@ -27,7 +27,7 @@
 ### 问：如何更改电子邮箱地址？ <a href="#q-how-do-i-change-my-email-address" id="q-how-do-i-change-my-email-address"></a>
 
 {% hint style="info" %}
-如果您使用[电子邮箱方式的两步登录](../account/two-step-login/setup-two-step-login/two-step-login-via-email.md)，则更改您的账户电子邮箱地址不会更改用于接收 2FA 代码的地址。
+如果您使用[电子邮箱方式的两步登录](../account/two-step-login/setup-guides/two-step-login-via-email.md)，则更改您的账户电子邮箱地址不会更改用于接收 2FA 代码的地址。
 {% endhint %}
 
 **答：**&#x8981;更改账户所附属的电子邮箱地址：

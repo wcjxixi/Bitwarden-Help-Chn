@@ -51,7 +51,7 @@ Bitwarden 为免费账户提供了好几种两步登录方式，包括：
 * Duo Security 的 Duo Push、短信、电话和安全钥匙
 * YubiKey（任何 4/5 系列设备或 YubiKey NEO/NFC）
 
-使用我们的**设置指南**，[了解有关选项的更多信息](setup-two-step-login/two-step-login-methods.md)，或获取设置任何方式的帮助。
+使用我们的**设置指南**，[了解有关选项的更多信息](setup-guides/two-step-login-methods.md)，或获取设置任何方式的帮助。
 
 {% hint style="info" %}
 由于 SIM 劫持等漏洞，Bitwarden 不支持 SMS 2FA。我们不建议对其他账户使用 SMS 2FA，除非它是唯一可用的方法。建议使用任何一种第二个因素而不是不使用，但多数替代方案比 SMS 2FA 更安全。
@@ -110,7 +110,7 @@ YubiKey 设备是一种与 FIDO 身份验证协议配合使用的安全密钥，
 
 现在您已经是两步登录的专家了，我们建议你：
 
-* [设置两步登录](setup-two-step-login/two-step-login-methods.md)
+* [设置两步登录](setup-guides/two-step-login-methods.md)
 * [获取高级会员以使用高级两步登录方式](https://vault.bitwarden.com/#/?premium=purchase)
 * [设置 Bitwarden authenticator](../../your-vault/totp.md)
-* [为团队和企业设置两步登录](setup-two-step-login/two-step-login-methods.md#two-step-login-for-teams-and-enterprise)
+* [为团队和企业设置两步登录](setup-guides/two-step-login-methods.md#two-step-login-for-teams-and-enterprise)

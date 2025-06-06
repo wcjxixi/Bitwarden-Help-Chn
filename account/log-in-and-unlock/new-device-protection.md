@@ -8,11 +8,11 @@
 从 **2025 年 05 月 28 日**开始，所有 Bitwarden 客户端将受到新设备登录保护控制。为了确保无缝的登录体验，请更新您的 Bitwarden 客户端，因为非常旧的版本可能不支持此功能。
 {% endhint %}
 
-为确保您的账户安全，Bitwarden 将对**未使用**[**两步登录**](../two-step-login/setup-two-step-login/two-step-login-methods.md)**的用户**要求额外的验证。**当从一个以前未登录过的设备登录时**，在您输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码，以完成登录过程。例如，如果您登录的是以前使用过的移动 App 或浏览器扩展，则不会收到此提示。
+为确保您的账户安全，Bitwarden 将对**未使用**[**两步登录**](../two-step-login/setup-guides/two-step-login-methods.md)**的用户**要求额外的验证。**当从一个以前未登录过的设备登录时**，在您输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码，以完成登录过程。例如，如果您登录的是以前使用过的移动 App 或浏览器扩展，则不会收到此提示。
 
 除非频繁登录新的设备，否则大多数用户不会收到此提示。只有新设备或清除浏览器 cookie 后才需要进行此验证。
 
-如果您经常访问电子邮箱，获取此验证码应该很简单。如果您不想依赖您的 Bitwarden 账户电子邮箱进行验证，您可以通过[验证器 App](../two-step-login/setup-two-step-login/two-step-login-via-authenticator.md)、[硬件钥匙](../two-step-login/setup-two-step-login/two-step-login-via-yubikey.md)或不同的[电子邮箱](../two-step-login/setup-two-step-login/two-step-login-via-email.md)来[设置两步登录](../two-step-login/setup-two-step-login/two-step-login-methods.md)。
+如果您经常访问电子邮箱，获取此验证码应该很简单。如果您不想依赖您的 Bitwarden 账户电子邮箱进行验证，您可以通过[验证器 App](../two-step-login/setup-guides/two-step-login-via-authenticator.md)、[硬件钥匙](../two-step-login/setup-guides/two-step-login-via-yubikey.md)或不同的[电子邮箱](../two-step-login/setup-guides/two-step-login-via-email.md)来[设置两步登录](../two-step-login/setup-guides/two-step-login-methods.md)。
 
 ## FAQ
 
@@ -22,7 +22,7 @@
 
 ### Bitwarden 为什么要实施这一举措？ <a href="#why-is-bitwarden-implementing-this" id="why-is-bitwarden-implementing-this"></a>
 
-Bitwarden 正在实施这一变更，以增强未激活[两步登录](../two-step-login/setup-two-step-login/two-step-login-methods.md)功能的用户的安全性。如果有人获取了您的密码，在没有二次验证（发送到您邮箱的验证码）的情况下，他们仍然无法登录您的账户。这个额外的层级有助于保护您的数据不受黑客攻击，因为黑客通常会利用弱密码或暴露的密码来获得未经授权的访问。
+Bitwarden 正在实施这一变更，以增强未激活[两步登录](../two-step-login/setup-guides/two-step-login-methods.md)功能的用户的安全性。如果有人获取了您的密码，在没有二次验证（发送到您邮箱的验证码）的情况下，他们仍然无法登录您的账户。这个额外的层级有助于保护您的数据不受黑客攻击，因为黑客通常会利用弱密码或暴露的密码来获得未经授权的访问。
 
 ### 何时会提示我进行此验证？ <a href="#when-will-i-get-prompted-for-this-verification" id="when-will-i-get-prompted-for-this-verification"></a>
 
@@ -44,7 +44,7 @@ Bitwarden 正在实施这一变更，以增强未激活[两步登录](../two-ste
 
 如果您登录到新设备，您的 Bitwarden 账户电子邮箱将收到一个一次性验证码。如果您可以访问您的电子邮箱（例如，在手机上已持久登录的电子邮箱），然后您就可以获取一次性验证码来登录了。登录到新设备后，系统不会再提示您输入验证码。
 
-如果您经常使用保存在 Bitwarden 中的凭据登录电子邮箱，或者不希望依赖电子邮箱进行验证，您应该设置独立于 Bitwarden 账户电子邮箱的[两步登录方式](../two-step-login/setup-two-step-login/two-step-login-methods.md)。这包括验证器 App、安全密钥或使用不同电子邮箱的基于电子邮箱的两步登录。激活任何 2FA 方法都将使用户退出基于电子邮箱的新设备验证。已激活 2FA 的用户还应将其 Bitwarden [恢复代码](../two-step-login/recovery-codes.md)保存在安全的地方。
+如果您经常使用保存在 Bitwarden 中的凭据登录电子邮箱，或者不希望依赖电子邮箱进行验证，您应该设置独立于 Bitwarden 账户电子邮箱的[两步登录方式](../two-step-login/setup-guides/two-step-login-methods.md)。这包括验证器 App、安全密钥或使用不同电子邮箱的基于电子邮箱的两步登录。激活任何 2FA 方法都将使用户退出基于电子邮箱的新设备验证。已激活 2FA 的用户还应将其 Bitwarden [恢复代码](../two-step-login/recovery-codes.md)保存在安全的地方。
 
 ### 哪些人被排除在基于账户电子邮箱的新设备验证之外？ <a href="#who-is-excluded-from-this-account-email-based-new-device-verification" id="who-is-excluded-from-this-account-email-based-new-device-verification"></a>
 

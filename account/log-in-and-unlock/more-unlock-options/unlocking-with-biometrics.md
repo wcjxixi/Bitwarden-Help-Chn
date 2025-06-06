@@ -6,7 +6,7 @@
 
 Bitwarden 可以被配置为接受生物识别的的方式来解锁您的密码库。
 
-生物识别**只能用于解锁**您的密码库，**登录**时您仍然会被要求使用您的主密码或使用设备登录，以及任何已启用的[两步登录方式](../../two-step-login/setup-two-step-login/two-step-login-methods.md)。如果您不清楚两者的区别，请向参阅[理解解锁与登录](unlock-with-pin.md#understanding-unlock-vs-log-in)。
+生物识别**只能用于解锁**您的密码库，**登录**时您仍然会被要求使用您的主密码或使用设备登录，以及任何已启用的[两步登录方式](../../two-step-login/setup-guides/two-step-login-methods.md)。如果您不清楚两者的区别，请向参阅[理解解锁与登录](unlock-with-pin.md#understanding-unlock-vs-log-in)。
 
 {% hint style="success" %}
 生物识别功能是设备和/或操作系统内置安全性的一部分。Bitwarden 利用本地 API 来执行这种验证，因此 **Bitwarden 不会从设备上接收任何生物识别信息**。
@@ -175,7 +175,7 @@ Windows 用户可能需要安装 [Microsoft Visual C++ 可再发行软件包](ht
 
 1、登录时始终需要使用主密码或[使用设备登录](../more-log-in-options/log-in-with-device.md)，以获取解密密码库数据所需的[账户加密密钥](../../../security/account-encryption-key.md)。
 
-在此阶段也需要使用[任何已启用的两步登录方式](../../two-step-login/setup-two-step-login/two-step-login-methods.md)。
+在此阶段也需要使用[任何已启用的两步登录方式](../../two-step-login/setup-guides/two-step-login-methods.md)。
 
 2.、登录时始终需要连接到互联网（或者，如果是自托管，则需要连接到服务器），以便将加密的密码库下载到磁盘，随后在设备内存中进行解密。
 
