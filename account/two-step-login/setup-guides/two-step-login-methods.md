@@ -23,21 +23,21 @@
 
 任何人都可以通过访问网页 App，然后选择**设置** → **安全** → **两步登录**，以在他们的个人账户上设置两步登录。请至少设置以下一种两步登录方式。每一种方式都有设置说明：
 
-| 方式                                                                                                  | 设置说明                                        | 订阅要求   |
-| --------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------ |
-| 通过 FIDO2 WebAuthn 凭据（如 YubiKey 和 Google Titan 等硬件钥匙）                                                | [设置指南](two-step-login-via-fido.md)          | 全部免费   |
-| 通过验证器 App（如 [Bitwarden Authenticator](../../../bitwarden-authenticator/bitwarden-authenticator.md)） | [设置指南](two-step-login-via-authenticator.md) | 全部免费   |
-| 通过电子邮箱                                                                                              | [设置指南](two-step-login-via-email.md)         | 全部免费   |
-| 通过 Duo Security 的 Duo Push、短信、电话和安全钥匙                                                               | [设置指南](two-step-login-via-duo.md)           | 要求高级会员 |
-| 通过 YubiKey（任何 4/5 系列设备或 YubiKey NEO/NFC）                                                            | [设置指南](two-step-login-via-yubikey.md)       | 要求高级会员 |
+| 方式                                                                                                | 设置说明                                        | 订阅要求   |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------ |
+| FIDO2 WebAuthn 凭据（如 YubiKey 和 Google Titan 等硬件钥匙）                                                 | [设置说明](two-step-login-via-fido.md)          | 全部免费   |
+| 验证器 App（如 [Bitwarden Authenticator](../../../bitwarden-authenticator/bitwarden-authenticator.md)） | [设置说明](two-step-login-via-authenticator.md) | 全部免费   |
+| 电子邮箱                                                                                              | [设置说明](two-step-login-via-email.md)         | 全部免费   |
+| Duo Security 的 Duo Push、短信、电话和安全钥匙                                                                | [设置说明](two-step-login-via-duo.md)           | 要求高级会员 |
+| YubiKey OTP（任何 4/5 系列设备或 YubiKey NEO/NFC）                                                         | [设置说明](two-step-login-via-yubikey.md)       | 要求高级会员 |
 
 ## 适用于团队和企业的两步登录 <a href="#two-step-login-for-teams-and-enterprise" id="two-step-login-for-teams-and-enterprise"></a>
 
 尽管每个用户可以使用上面图示中的方式在其账户上激活两步登录，但团队和企业组织还有其他选项：
 
-| 方式                                    | 设置说明                              | 订阅要求    |
-| ------------------------------------- | --------------------------------- | ------- |
-| 通过 Duo Security 的 Duo Push、短信、电话和安全钥匙 | 点击[这里](two-step-login-via-duo.md) | 要求团队或企业 |
+| 方式                                 | 设置说明                              | 订阅要求    |
+| ---------------------------------- | --------------------------------- | ------- |
+| Duo Security 的 Duo Push、短信、电话和安全钥匙 | [设置说明](two-step-login-via-duo.md) | 要求团队或企业 |
 
 此外，企业组织可以通过[策略](../../../organizations/enterprise-policies.md#require-two-step-login)要求两步登录，并且当使用单点登录 (SSO) 时，可以使用您的身份提供程序在 Bitwarden 之外实现相同的保护。
 
