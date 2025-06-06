@@ -1,4 +1,4 @@
-# 集成的验证器
+# 集成的身份验证器
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/integrated-authenticator/)
@@ -83,7 +83,7 @@ Bitwarden 浏览器扩展将自动填充您的 TOTP 代码，除非**页面加�
 {% endembed %}
 
 {% hint style="success" %}
-自动 TOTP 复制功能可以通过**设置** → **选项** → **自动复制 TOTP** 将其关闭，其默认为开启状态。此外，使用附近的**清除剪贴板**选项以设置清除复制的值的间隔时间。
+自动 TOTP 复制功能可以通过**设置** → **选项** → **自动复制 TOTP** 将其关闭，其默认为开启状态。此外，使用旁边的**清除剪贴板**选项可以设置清除复制的值的间隔时间。
 {% endhint %}
 
 ### 查看 TOTP 代码 <a href="#viewing-totp-codes" id="viewing-totp-codes"></a>
