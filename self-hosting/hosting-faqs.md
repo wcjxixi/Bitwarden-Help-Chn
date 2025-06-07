@@ -24,22 +24,22 @@ Windows 上的 Docker Desktop 版可能需要许可证，这取决于贵公司�
 
 ### 问：如何在 AWS、Azure、GCP 或 VMware vCenter上部署 Bitwarden？ <a href="#q-how-do-i-deploy-bitwarden-on-aws-azure-gcp-or-vmware-vcenter" id="q-how-do-i-deploy-bitwarden-on-aws-azure-gcp-or-vmware-vcenter"></a>
 
-答：Bitwarden 通常以单个 Windows 或 Linux 虚拟机或机器集群的形式部署。目前，Bitwarden 并未发布针对这些平台的预构建镜像，但您可以在[这里](self-host-an-organization.md)找到如何在上述所有平台上配置虚拟机的说明。
+答：Bitwarden 通常以单个 Windows 或 Linux 虚拟机或机器集群的形式部署。目前，Bitwarden 并未发布针对这些平台的预构建镜像，但您可以在[这里](plan-for-deployment/self-host-an-organization.md)找到如何在上述所有平台上配置虚拟机的说明。
 
 ### 问：我应该如何实现高可用性？ <a href="#q-how-should-i-achieve-high-availability" id="q-how-should-i-achieve-high-availability"></a>
 
-**答：**&#x42;itwarden 客户可以使用 Helm 部署选项在自托管环境中实现高可用性。水平扩展可能会在入口资源上发生。[此处](install-and-deploy-guides/helm/self-host-with-helm.md)了解更多有关 Bitwarden 自托管的信息。
+**答：**&#x42;itwarden 客户可以使用 Helm 部署选项在自托管环境中实现高可用性。水平扩展可能会在入口资源上发生。[此处](deploy-and-configure/helm/self-host-with-helm.md)了解更多有关 Bitwarden 自托管的信息。
 
 ### 问：我需要允许哪些 URL 吗？ <a href="#q-do-i-need-to-allow-any-urls" id="q-do-i-need-to-allow-any-urls"></a>
 
 **答：**&#x5728;安装标准的自托管 Bitwarden 服务器部署时，您的服务器将进行出站连接以实现某些功能，例如更新、向客户端推送通知以及同步企业版赞助家庭。如果您不希望使用这些功能，可以使用其中一个离线部署指南进行部署，这样服务器就不会在您的基础架构之外进行任何出站连接。如果您希望允许标准的出站功能，您需要允许以下 URL 通过防火墙：
 
-* [这里](../security/bitwarden-addresses-and-repositories.md#bitwarden-applications)列出的 **Bitwarden 服务器安装/更新 URL**。
-* [这里](../security/bitwarden-addresses-and-repositories.md#application-endpoints)列出的**应用程序端点**。
+* [这里](../security/trusted-communications/bitwarden-addresses.md#bitwarden-applications)列出的 **Bitwarden 服务器安装/更新 URL**。
+* [这里](../security/trusted-communications/bitwarden-addresses.md#application-endpoints)列出的**应用程序端点**。
 
 ### 问：如何备份和还原我的自托管实例？ <a href="#q-how-do-i-backup-and-restore-my-self-hosted-instance" id="q-how-do-i-backup-and-restore-my-self-hosted-instance"></a>
 
-**答：**&#x42;itwarden 会每晚自动备份 `bitwarden-mssql` 数据库容器，以保护您存储的凭据。有关手动备份，或恢复备份的帮助，请参阅[备份您的托管数据](backup-your-hosted-data.md)。
+**答：**&#x42;itwarden 会每晚自动备份 `bitwarden-mssql` 数据库容器，以保护您存储的凭据。有关手动备份，或恢复备份的帮助，请参阅[备份您的托管数据](backup-server-data.md)。
 
 ### 问：我的安装 ID 和安装密钥是用来干什么的？ <a href="#q-what-are-my-installation-id-and-installation-key-used-for" id="q-what-are-my-installation-id-and-installation-key-used-for"></a>
 
@@ -63,15 +63,15 @@ Windows 上的 Docker Desktop 版可能需要许可证，这取决于贵公司�
 
 检查您的服务器名称或 FQDN，确保它们已经扩散到 `./bwdata/env/global.override.env` 中的所有 `globalSettings_baseServiceUri__*` 变量中，并确保您的证书中包含一个带有新服务器 FQDN 的[主题备用名称](https://zh.wikipedia.org/wiki/%E4%B8%BB%E9%A2%98%E5%A4%87%E7%94%A8%E5%90%8D%E7%A7%B0)（SAN）（Subject Alternative Name）。
 
-如果您正在使用 Let's Encrypt 证书，您需要[手动更新您的证书](certificate-options.md#manually-update-a-lets-encrypt-certificate)。
+如果您正在使用 Let's Encrypt 证书，您需要[手动更新您的证书](deploy-and-configure/configuration-options/certificate-options.md#manually-update-a-lets-encrypt-certificate)。
 
 ### 问：如何更改我的自助托管组织的名称？ <a href="#q-how-do-i-change-the-name-of-my-self-hosted-organization" id="q-how-do-i-change-the-name-of-my-self-hosted-organization"></a>
 
-答：首先，使用网页 App 更改云中的组织名称。更改云端组织后，重新下载许可证文件，并将新的许可证文件上传到自托管组织，参阅[这里](licensing-for-paid-features.md#organization-license)。
+答：首先，使用网页 App 更改云中的组织名称。更改云端组织后，重新下载许可证文件，并将新的许可证文件上传到自托管组织，参阅[这里](licensing.md#organization-license)。
 
 ### 问：为什么当运行更新命令显示是最新版本时，系统管理员门户还会显示有可用的更新？ <a href="#q-why-does-the-admin-portal-show-an-update-available-when-update-and-updateself-show-im-on-the-lates" id="q-why-does-the-admin-portal-show-an-update-available-when-update-and-updateself-show-im-on-the-lates"></a>
 
-**答：**&#x7CFB;统管理员门户将在我们发布云端服务器后立即显示可用更新，但如[发行说明](../release-notes.md)中所述，自托管服务器更新通常在云端服务器后几天才可用。请等待几天，然后再次尝试[更新您的实例](update-your-instance.md)。
+**答：**&#x7CFB;统管理员门户将在我们发布云端服务器后立即显示可用更新，但如[发行说明](../release-notes.md)中所述，自托管服务器更新通常在云端服务器后几天才可用。请等待几天，然后再次尝试[更新您的实例](update-a-server.md)。
 
 ### 问：我可以在域名子文件夹下运行 Bitwarden 吗？ <a href="#q-can-i-run-bitwarden-under-a-domain-subfolder" id="q-can-i-run-bitwarden-under-a-domain-subfolder"></a>
 
@@ -81,7 +81,7 @@ Windows 上的 Docker Desktop 版可能需要许可证，这取决于贵公司�
 
 ### 问：如何设置 SMTP 邮件服务器？ <a href="#q-how-do-i-set-up-an-smtp-mail-server" id="q-how-do-i-set-up-an-smtp-mail-server"></a>
 
-**答：**&#x901A;过编辑 `./bwdata/env/global.overide.env` 中的所有 `globalSettingsmailsmtp__*` 值，以将您的自托管实例连接到现有的 SMTP 邮件服务器。更多信息，请参阅[配置环境变量](configure-environment-variables.md)。
+**答：**&#x901A;过编辑 `./bwdata/env/global.overide.env` 中的所有 `globalSettingsmailsmtp__*` 值，以将您的自托管实例连接到现有的 SMTP 邮件服务器。更多信息，请参阅[配置环境变量](deploy-and-configure/configuration-options/environment-variables.md)。
 
 如果您还没有可以中继电子邮件的 SMTP 邮件服务器，可以考虑使用 [Mailgun](https://www.mailgun.com/) 或 [SparkPost](https://www.sparkpost.com/) 等服务。
 

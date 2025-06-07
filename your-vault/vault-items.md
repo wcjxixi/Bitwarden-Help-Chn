@@ -182,7 +182,7 @@
 * 在网页 App 中，访问或编辑启用了此功能的密码库项目的任何内容都将要求您重新输入主密码。
 * 在浏览器扩展、桌面 App 和移动 App 上，仅查看隐藏字段（例如密码、隐藏的自定义字段、信用卡号）将需要您重新输入主密码。编辑有关该项目的任何内容也需要您重新输入主密码。
 
-没有主密码的用户（例如，使用[受信任设备 SSO](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 或 [Key Connector](../login-with-sso/about-key-connector.md) 的组织中的用户）将禁用主密码重新提示。此外，使用[紧急访问](../account/log-in-and-unlock/more-log-in-options/emergency-access.md#use-emergency-access)的受信任联系人无需重新输入主密码即可查看受保护的密码库项目。
+没有主密码的用户（例如，使用[受信任设备 SSO](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 或 [Key Connector](../self-hosting/key-connector/about-key-connector.md) 的组织中的用户）将禁用主密码重新提示。此外，使用[紧急访问](../account/log-in-and-unlock/more-log-in-options/emergency-access.md#use-emergency-access)的受信任联系人无需重新输入主密码即可查看受保护的密码库项目。
 
 {% hint style="warning" %}
 主密码重新提示**并非**一种加密机制。此功能是一个仅限于界面的防护栏，老练的用户可能会找到解决方法。我们建议您在无人看守或在共享工作站上，不要让您的密码库处于解锁状态。

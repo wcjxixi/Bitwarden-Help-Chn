@@ -7,7 +7,7 @@
 Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体验。许多重要功能，例如设置[两步登录](../account/two-step-login/setup-guides/two-step-login-methods.md)或管理[组织](../organizations/organizations.md)，只能从网页 App 完成。
 
 {% hint style="success" %}
-可以从任何流行的网页浏览器访问网页 App，网址为 [vault.bitwarden.com](https://vault.bitwarden.com) 和 [vault.bitwarden.eu](https://vault.bitwarden.eu/)。如果您是**自托管** Bitwarden，则网址为您[已配置的域名](../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)，例如 `https://my.bitwarden.server.com`。
+可以从任何流行的网页浏览器访问网页 App，网址为 [vault.bitwarden.com](https://vault.bitwarden.com) 和 [vault.bitwarden.eu](https://vault.bitwarden.eu/)。如果您是**自托管** Bitwarden，则网址为您[已配置的域名](../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md)，例如 `https://my.bitwarden.server.com`。
 {% endhint %}
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}

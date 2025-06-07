@@ -17,7 +17,7 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 
 ## 发行公告
 
-Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面端、浏览器扩展、移动端等），以及自托管服务器，以确保功能的有效性和稳定性。因此，客户端应用程序和自托管服务器将在初始发布后逐步获得所列的功能。请查看 Bitwarden [软件发布支持](security/bitwarden-software-release-support.md)文档。
+Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面端、浏览器扩展、移动端等），以及自托管服务器，以确保功能的有效性和稳定性。因此，客户端应用程序和自托管服务器将在初始发布后逐步获得所列的功能。请查看 Bitwarden [软件发布支持](security/software-development/software-release-support.md)文档。
 
 {% hint style="success" %}
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
@@ -311,7 +311,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **Microsoft Sentinel 集成**：新的本地集成可用于 Microsoft Sentinel 安全信息和事件管理 (SIEM)。该集成提供了跨身份验证、组织活动和密码库项目的全面事件覆盖。[了解更多](admin-console/reporting/microsoft-sentinel-siem.md)。
+* **Microsoft Sentinel 集成**：新的本地集成可用于 Microsoft Sentinel 安全信息和事件管理 (SIEM)。该集成提供了跨身份验证、组织活动和密码库项目的全面事件覆盖。[了解更多](admin-console/reporting/configure-siem/microsoft-sentinel-siem.md)。
 * **Ping Identity SCIM 支持**：Bitwarden 组织现已正式支持 Ping Identity 跨域身份管理 (SCIM) 系统。使用 Ping Identity SCIM 集成来自动配置 Bitwarden 组织中的成员和群组。[了解更多](admin-console/login-with-sso/implementation-guides/ping-identity-saml-implementation.md)。
 * **UI 改进升级计划**：为简化将您的组织升级到另一个计划的流程，对 UI 进行了改进。[了解更多](organizations/organizations.md#upgrade-an-organization)。
 * **为允许的应用程序策略自动登录用户**： 这项新策略将允许 IdP 管理员启用非 SSO 应用程序，以便在从其 IdP 面板启动时自动登录用户。[了解更多](organizations/enterprise-policies.md#automatically-log-in-users-for-allowed-applications)。
@@ -352,7 +352,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* Rapid7 SIEM 集成： Bitwarden 组织现在可以使用 Rapid7 进行安全信息和事件管理 (SIEM)。[了解更多](admin-console/reporting/rapid7-siem.md)。
+* Rapid7 SIEM 集成： Bitwarden 组织现在可以使用 Rapid7 进行安全信息和事件管理 (SIEM)。[了解更多](admin-console/reporting/configure-siem/rapid7-siem.md)。
 
 ## 2024.8.0
 
@@ -408,7 +408,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### Password Manager
 
 * **移除通行密钥用户验证**：最近的更新要求在浏览器扩展上使用通行密钥时进行用户验证，该更新已暂时回退。
-* **启用了 PRF 的通行密钥将在账户加密密钥轮换后继续有效**：如果用户轮换了他们的账户加密密钥，使用通行密钥登录 Bitwarden 时使用的 PRF 密钥现在继续有效。[了解更多](security/account-encryption-key.md#rotate-your-encryption-key)。
+* **启用了 PRF 的通行密钥将在账户加密密钥轮换后继续有效**：如果用户轮换了他们的账户加密密钥，使用通行密钥登录 Bitwarden 时使用的 PRF 密钥现在继续有效。[了解更多](security/encryption/encryption-key-rotation.md#rotate-your-encryption-key)。
 * **紧急联系人和提供商的邀请说明**：受信任的紧急联系人和提供商用户在接受邀请后，现在将进入「需要确认」状态，使您的下一步操作更清晰。
 * **批量分配项目到集合**：现在，您可以从密码库视图中将项目批量分配到组织的集合中。此功能的前一版本称为「移动到组织」。[了解更多](your-vault/vault-items.md#assign-to-collections)。
 * **重命名将项目添加到文件夹**：在密码库视图中，将项目添加到文件夹的选项已从「移动所选」重命名为「添加到文件夹」。[了解更多](your-vault/folders.md#move-items-to-a-folder)。
@@ -443,7 +443,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### Password Manager
 
 * **批量批准可信任设备 SSO**：管理员和所有者现在可以使用[网页 App](admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md#bulk-approve-requests) 或 [CLI](password-manager/developer-tools/password-manager-cli.md#device-approval) 批量批准可信设备请求。
-* **陈旧的用户加密密钥迁移**：2021 年之前创建的 Bitwarden 账户已将其账户加密密钥迁移到 Bitwarden 的更现代化的用户对称密钥。这些用户将被从非网页 Bitwarden 客户端注销，直到他们通过登录 Bitwarden 网页客户端完成迁移。[了解更多](security/encryption.md)有关 Bitwarden 加密的信息。
+* **陈旧的用户加密密钥迁移**：2021 年之前创建的 Bitwarden 账户已将其账户加密密钥迁移到 Bitwarden 的更现代化的用户对称密钥。这些用户将被从非网页 Bitwarden 客户端注销，直到他们通过登录 Bitwarden 网页客户端完成迁移。[了解更多](security/encryption/encryption-protocols.md)有关 Bitwarden 加密的信息。
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
@@ -495,14 +495,14 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* Splunk Cloud 集成：Bitwarden 事件日志应用程序可用于 Splunk Cloud Classic 和 Splunk Cloud Victoria 上的信息和事件管理。[了解更多](admin-console/reporting/splunk-siem.md)。
+* Splunk Cloud 集成：Bitwarden 事件日志应用程序可用于 Splunk Cloud Classic 和 Splunk Cloud Victoria 上的信息和事件管理。[了解更多](admin-console/reporting/configure-siem/splunk-siem.md)。
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
 * 集合管理和弃用经理角色：自托管服务器现在可以访问集合管理功能，具有「经理」角色的用户将迁移到具有新的「可以管理」权限的「用户」角色。[了解更多](admin-console/organization-basics/collection-management.md)。
 
 {% hint style="info" %}
-如果是自托管，请在云端组织中设置[集合管理设置](admin-console/organization-basics/collection-management.md)，然后[更新自托管服务器的许可证](self-hosting/licensing-for-paid-features.md#update-organization-license)以将这些设置转移到您的自托管组织。
+如果是自托管，请在云端组织中设置[集合管理设置](admin-console/organization-basics/collection-management.md)，然后[更新自托管服务器的许可证](self-hosting/licensing.md#update-organization-license)以将这些设置转移到您的自托管组织。
 {% endhint %}
 
 ## 2024.4.2
@@ -558,7 +558,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
-* **适用于 Linux 部署的新的日志功能**：使用标准 `bitwarden.sh` shell 脚本的 Linux 部署现在可以使用新选项来下载压缩日志文件（参阅[这里](self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#script-commands-reference)）。
+* **适用于 Linux 部署的新的日志功能**：使用标准 `bitwarden.sh` shell 脚本的 Linux 部署现在可以使用新选项来下载压缩日志文件（参阅[这里](self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#script-commands-reference)）。
 
 ## 2024.2.3
 
@@ -634,7 +634,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ## 使用 Helm GA 自托管 <a href="#self-host-with-helm-ga" id="self-host-with-helm-ga"></a>
 
-Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参阅[这里](self-hosting/install-and-deploy-guides/helm/self-host-with-helm.md)）。
+Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参阅[这里](self-hosting/deploy-and-configure/helm/self-host-with-helm.md)）。
 
 ## 2023.12.1
 
@@ -656,7 +656,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **Elastic 集成**：Bitwarden 组织现在可以使用 Elastic 进行安全信息和事件管理 (SIEM)（参阅[这里](admin-console/reporting/elastic-siem.md)）。
+* **Elastic 集成**：Bitwarden 组织现在可以使用 Elastic 进行安全信息和事件管理 (SIEM)（参阅[这里](admin-console/reporting/configure-siem/elastic-siem.md)）。
 * **CLI 事件日志**：从网页 App 查看的事件日志现在会指明哪些事件是由 Bitwarden CLI 记录的。
 
 ## 2023.10.0
@@ -740,11 +740,11 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-* **环境选择器**：改进了将 Bitwarden 应用程序连接到自托管服务器的工作流程。参阅[这里](self-hosting/connect-clients-to-your-instance.md)。
+* **环境选择器**：改进了将 Bitwarden 应用程序连接到自托管服务器的工作流程。参阅[这里](self-hosting/connect-clients/connect-individual-clients.md)。
 * **Password Manager - 改进了德语 HTML 的自动填充**：德语 HTML 字段现在可用于自动填充。参阅[这里](https://github.com/bitwarden/clients/pull/4210)。
 * **Secrets Manager - 在机密创建期间创建工程**：您现在可以在机密创建菜单中创建新的工程。参阅[这里](secrets-manager/your-secrets/secrets.md)。
-* **自托管 - 阐明有关服务器许可证的措辞**：有 60 天的宽限期来上传新许可证以替换过期的许可证。参阅[这里](self-hosting/licensing-for-paid-features.md#update-organization-license)。
-* **低 KDF 警告**：当用户的 KDF 迭代次数低于行业建议值（目前为 600,000 次迭代）时，网页 App 中将出现一个新的警告。参阅[这里](security/kdf-algorithms.md#low-kdf-iterations)。
+* **自托管 - 阐明有关服务器许可证的措辞**：有 60 天的宽限期来上传新许可证以替换过期的许可证。参阅[这里](self-hosting/licensing.md#update-organization-license)。
+* **低 KDF 警告**：当用户的 KDF 迭代次数低于行业建议值（目前为 600,000 次迭代）时，网页 App 中将出现一个新的警告。参阅[这里](security/encryption/encryption-key-derivation.md#low-kdf-iterations)。
 
 ### 机密管理器 Beta <a href="#secrets-manager-beta" id="secrets-manager-beta"></a>
 
@@ -756,7 +756,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-* **Splunk 集成**：Bitwarden 组织现在可以使用自托管的 Splunk Enterprise 进行安全信息和事件管理 (SIEM)。在[此处](admin-console/reporting/splunk-siem.md)了解如何开始使用 Splunk。
+* **Splunk 集成**：Bitwarden 组织现在可以使用自托管的 Splunk Enterprise 进行安全信息和事件管理 (SIEM)。在[此处](admin-console/reporting/configure-siem/splunk-siem.md)了解如何开始使用 Splunk。
 * **改进的经销商计费**：Bitwarden 经销商现在是唯一有权查看其客户组织的计费、订阅或付款信息的实体。参阅[这里](plans-and-pricing/bitwarden-resellers.md)。
 * **主密码要求策略更新**：如果启用，主密码要求策略现在可以设置为提示现有的不合规用户更新他们的主密码。参阅[这里](organizations/enterprise-policies.md#master-password-requirements)。
 * **密码库超时策略更新**：密码库超时策略现在提供了指定密码库超时动作的选项。参阅[这里](organizations/enterprise-policies.md#vault-timeout)。
@@ -788,22 +788,22 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 {% hint style="info" %}
 **自托管公告**
 
-在此版本中，我们已迁移到新的 [SQL 客户端](https://devblogs.microsoft.com/dotnet/introducing-the-new-microsoftdatasqlclient/)，该客户端需要一个有效的证书或在 `global.override.env` 中设置的[连接字符串](self-hosting/configure-environment-variables.md#included-variables)中存在 `TrustServerCertificate=True`。请在更新您的服务器之前检查这些。
+在此版本中，我们已迁移到新的 [SQL 客户端](https://devblogs.microsoft.com/dotnet/introducing-the-new-microsoftdatasqlclient/)，该客户端需要一个有效的证书或在 `global.override.env` 中设置的[连接字符串](self-hosting/deploy-and-configure/configuration-options/environment-variables.md#included-variables)中存在 `TrustServerCertificate=True`。请在更新您的服务器之前检查这些。
 {% endhint %}
 
-* **Argon2**：您现在可以从**账户设置** → **安全** → **密钥**页面将用于派生账户主密钥的算法更改为 Argon2id。参阅[这里](security/kdf-algorithms.md)。
+* **Argon2**：您现在可以从**账户设置** → **安全** → **密钥**页面将用于派生账户主密钥的算法更改为 Argon2id。参阅[这里](security/encryption/encryption-key-derivation.md)。
 
 {% hint style="info" %}
 **2023-02-14**：2023.2.0 及以后版本的 Bitwarden 客户端支持 Argon2，通过网页密码库切换到 Argon2 可能意味着其他客户端在更新之前无法加载您的密码库。通常在发布后一周内更新这些客户端。
 {% endhint %}
 
-* **增加了 PBKDF2 的默认 KDF 迭代**：按照 [OWASP](https://zh.wikipedia.org/zh-cn/OWASP) 的建议，新的 Bitwarden 账户将为 PBKDF2 使用 600,000 次 KDF 迭代。现有的账户可以手动增加此数值。参阅[这里](security/encryption.md#changing-kdf-iterations)。
+* **增加了 PBKDF2 的默认 KDF 迭代**：按照 [OWASP](https://zh.wikipedia.org/zh-cn/OWASP) 的建议，新的 Bitwarden 账户将为 PBKDF2 使用 600,000 次 KDF 迭代。现有的账户可以手动增加此数值。参阅[这里](security/encryption/encryption-protocols.md#changing-kdf-iterations)。
 * **主密码安全检查**：在移动应用程序、浏览器扩展和桌面应用程序上创建账户的新用户现在可以通过 HIBP 检查已知的数据泄露，以了解他们的潜在主密码。这将在以后的版本中被带到网页密码库。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
 * **组织密码库更新**：作为改进网页密码库 UI 的持续努力的一部分，一些组织管理功能进行了重新设计，例如用于项目和集合管理的合并**密码库**视图，以及专用的**成员**和**群组**视图。
 * **在其他客户端上使用设备登录**：现在可以在其他客户端上使用设备登录。登录请求现在也可以从浏览器扩展、桌面应用程序和移动应用程序发起，现在也可以从桌面应用程序获得批准。参阅[这里](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
-* **自托管组织的自动许可证同步**：自托管组织可以启用自动许可证同步，以便自动更新计费和订阅更改，而不必手动重新上传许可证。参阅[这里](self-hosting/licensing-for-paid-features.md#update-a-renewed-organization-license)。
-* **用于 Bitwarden 统一的 SQLite 数据库选项**：SQLite 现在是 Bitwarden 统一自托管部署的可用数据库选项。参阅[这里](self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md)。
-* **更新了自托管安装程序 URL**：用于下载自托管服务器安装程序的 URL 已更改。Linux 参阅[这里](self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#install-bitwarden)，Windows 参阅[这里](self-hosting/install-and-deploy-guides/docker/windows-standard-deployment.md#install-bitwarden)。
+* **自托管组织的自动许可证同步**：自托管组织可以启用自动许可证同步，以便自动更新计费和订阅更改，而不必手动重新上传许可证。参阅[这里](self-hosting/licensing.md#update-a-renewed-organization-license)。
+* **用于 Bitwarden 统一的 SQLite 数据库选项**：SQLite 现在是 Bitwarden 统一自托管部署的可用数据库选项。参阅[这里](self-hosting/deploy-and-configure/docker/unified-deployment-beta.md)。
+* **更新了自托管安装程序 URL**：用于下载自托管服务器安装程序的 URL 已更改。Linux 参阅[这里](self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#install-bitwarden)，Windows 参阅[这里](self-hosting/deploy-and-configure/docker/windows-standard-deployment.md#install-bitwarden)。
 * **Psono 导入器 (json)**：新的导入选项可用于 Psono (json) 导出。参阅[这里](import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
 ## 2023.1.0
@@ -811,8 +811,8 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 此次发布包含：
 
 * **Apple Watch 上的 Bitwarden**：Bitwarden 添加了 Apple Watch 支持，以提供访问 TOTP 登录代码的附加选项。参阅[这里](miscellaneous/apple-watch-totp.md)。
-* **新的环境变量**：一个用于为所有者和管理员强制执行要求 SSO 身份验证策略的环境变量现在可用于自托管服务器。参阅[这里](self-hosting/configure-environment-variables.md#optional-variables)。
-* **Bitwarden unified - 支持自定义数据库端口**：统一部署现在支持使用新的环境变量在自定义端口上运行数据库。参阅[这里](self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md#environment-variables)。
+* **新的环境变量**：一个用于为所有者和管理员强制执行要求 SSO 身份验证策略的环境变量现在可用于自托管服务器。参阅[这里](self-hosting/deploy-and-configure/configuration-options/environment-variables.md#optional-variables)。
+* **Bitwarden unified - 支持自定义数据库端口**：统一部署现在支持使用新的环境变量在自定义端口上运行数据库。参阅[这里](self-hosting/deploy-and-configure/docker/unified-deployment-beta.md#environment-variables)。
 * **Passsky 导入器 (json)**：新的导入选项可用于未加密的 Passsky (json) 导出。参阅[这里](import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 * **自定义头像颜色**：从网页密码库的**账户设置** → **我的账户**页面更改您的头像颜色。
 
@@ -826,7 +826,7 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 
 ### Bitwarden 统一自托管部署 (Beta) <a href="#bitwarden-unified-self-host-deployment-beta" id="bitwarden-unified-self-host-deployment-beta"></a>
 
-Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的测试版本。对于希望在自己的服务器上控制和部署 Bitwarden 的用户，Bitwarden 统一部署是轻量和灵活的选择。有关测试版的更多信息，请参阅[这里](self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md)。
+Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的测试版本。对于希望在自己的服务器上控制和部署 Bitwarden 的用户，Bitwarden 统一部署是轻量和灵活的选择。有关测试版的更多信息，请参阅[这里](self-hosting/deploy-and-configure/docker/unified-deployment-beta.md)。
 
 ## 2022.11.2
 
@@ -867,7 +867,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 * **Fastmail 电子邮件别名集成**：将 Bitwarden 用户名生成器连接到 Fastmail，以方便创建其电子邮件别名（参阅[这里](password-manager/vault-basics/generator.md#username-types)）。
 * **提供商门户更新**：提供商门户主界面现在具有每一个客户组织的一目了然的席位和计划报告。
 * **组织密码库导出事件**：当所有者或管理员执行密码库导出时，该操作现在将记录在组织的事件日志中（参阅[这里](admin-console/reporting/event-logs.md#organization-events)）。
-* **浏览器扩展 - 支持预配置环境 URL**：自托管客户现在可以为浏览器扩展预配置环境 URL，通过使用端点管理来部署您的配置，从而简化最终用户的部署（参阅[这里](self-hosting/configure-clients-centrally.md#liu-lan-qi-kuo-zhan)）。
+* **浏览器扩展 - 支持预配置环境 URL**：自托管客户现在可以为浏览器扩展预配置环境 URL，通过使用端点管理来部署您的配置，从而简化最终用户的部署（参阅[这里](broken-reference)）。
 * **移动端 - 更新至 Bitwarden Authenticator**：移动端应用程序现在有一个验证码界面，可让您快速轻松地访问您的所有 TOTP（参阅[这里](your-vault/totp.md#viewing-totp-codes)）。我们还改进了通过移动应用程序将 TOTP 代码添加到密码库项目的过程（参阅[这里](your-vault/totp.md#scan-a-qr-code)）。
 * **CLI - `serve` 来源保护**：`serve` 命令现在将默认阻止任何使用 `Origin` 标头发出的请求（参阅[这里](password-manager/developer-tools/password-manager-cli.md#serve)）。
 
@@ -906,7 +906,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 此次发布包含：
 
 * **网页密码库 UI 更新**：网页密码库已收到设计方面的更新，包括改进的个人和组织密码库项目筛选。这是一个由多个部分组成的项目的第一阶段，此项目将同时更新个人用户和组织的网页密码库。
-* **用于自托管企业组织的家庭赞助**：现在可以为自托管的企业组织成员发放家庭组织赞助（参阅[这里](self-hosting/self-hosting-families-sponsorships.md)）。
+* **用于自托管企业组织的家庭赞助**：现在可以为自托管的企业组织成员发放家庭组织赞助（参阅[这里](self-hosting/deploy-and-configure/optional-features/self-hosting-families-sponsorships.md)）。
 * **用户名生成器 - 转发的电子邮件别名类型**：将用户名生成器与 SimpleLogin、AnonAddy 或 Firefox Relay 集成，以自动同时创建用户名和相应的电子邮件别名（参阅[这里](password-manager/vault-basics/generator.md#username-types)）。
 * **项目链接**：复制一个项目的 URL 时，将作为直接链接提供给组织成员或在文档中使用（参阅[这里](organizations/link-to-an-item.md)）。
 * **自动填写期间的账户切换**：在 Android 系统中，通过点击头像气泡，以在自动填写过程中快速切换到另一个账户（参阅[这里](password-manager/autofill/autofill-from/autofill-from-android.md#auto-fill-while-account-switching)）。
@@ -977,7 +977,7 @@ _服务器 1.45.0、Web 2.25.0，桌面端 1.30.0，浏览器扩展 1.55.0，移
 
 Bitwarden 很自豪地宣布在 12 月的版本中增加了新的企业功能，为企业计划增加了灵活性和价值。
 
-* &#x20;[**Key Connector**](login-with-sso/about-key-connector.md)：(_仅适用于自托管组织_）当使用带有客户管理加密的 SSO 登录时，作为使用主密码解密密码库的一个替代方案，自托管 Key Connector 应用程序向 Bitwarden 客户端提供加密密钥（参阅[这里](login-with-sso/about-key-connector.md)）。
+* &#x20;[**Key Connector**](self-hosting/key-connector/about-key-connector.md)：(_仅适用于自托管组织_）当使用带有客户管理加密的 SSO 登录时，作为使用主密码解密密码库的一个替代方案，自托管 Key Connector 应用程序向 Bitwarden 客户端提供加密密钥（参阅[这里](self-hosting/key-connector/about-key-connector.md)）。
 * **用于企业的家庭**：(_目前仅适用于云托管组织，未来版本的自托管_）从这个版本开始，企业组织的成员可以兑换一个与最多 5 个朋友或家庭成员共享的免费 [Bitwarden 家庭组织](plans-and-pricing/password-manager/about-bitwarden-plans.md#families-organizations)。家庭组织包括所有 6 个用户的所有高级功能和无限制的安全数据共享（参阅[这里](plans-and-pricing/password-manager/redeem-families-sponsorship.md)）。
 * **MacOS 和 Safari 导入器**：我们为从 Safari 和 macOS 导出的密码增加了一个自定义导入器（详情见[这里](password-manager/import-and-export/import-guides/import-data-from-macos-and-safari.md)）。
 * **新的自定义字段类型**：链接型自定义字段可用于解决您的浏览器扩展在自动填写特定网站的用户名和密码时遇到的问题，方法是将用户名和密码链接到定制的表单元素（参阅[此处](password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md#using-linked-custom-fields)）。

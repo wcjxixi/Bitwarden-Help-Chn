@@ -10,7 +10,7 @@ SSO 登录是 Bitwarden 的单点登录解决方案。使用 SSO 登录，[企�
 
 SSO 登录的独特之处在于它保留了我们的零知识加密模型。Bitwarden 没有人可以访问您的密码库数据，包括**您的身份提供程序**。这就是 SSO 登录将**身份验证和解密分离**的原因。在所有 SSO 登录的实施中，您的身份提供程序不能也不会访问解密密码库数据所需的解密密钥。
 
-在大多数情况下，解密密钥是用户的[主密码](../account/log-in-and-unlock/your-master-password.md)，他们全权负责，但是组织自托管 Bitwarden 可以使用 [Key Connector](about-key-connector.md) 作为解密密码库数据的替代方法。
+在大多数情况下，解密密钥是用户的[主密码](../account/log-in-and-unlock/your-master-password.md)，他们全权负责，但是组织自托管 Bitwarden 可以使用 [Key Connector](../self-hosting/key-connector/about-key-connector.md) 作为解密密码库数据的替代方法。
 
 {% embed url="https://bitwarden.com/help/images/sso/sso-workflow-3.png" %}
 使用 SSO 和主密码解密登录
@@ -42,6 +42,6 @@ SSO 登录适用于所有[企业组织](../plans-and-pricing/password-manager/ab
 
 1. 按照我们的 [SAML 2.0](saml-2.0-configuration.md) 和 [OIDC](oidc-configuration.md) 实施指南之一配置和部署使用主密码解密的 SSO 登录。
 2. 使用主密码解密测试[最终用户的 SSO 登录体验](../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)。
-3. （**如果自托管**）查看我们不同的[成员解密选项](member-decryption-options.md)，以确定使用 [Key Connector](about-key-connector.md) 的方式是否适合您的组织。
-4. （**如果自托管**）如果您对实施 Key Connector 感兴趣，请[联系我们](https://bitwarden.com/contact/)，我们将帮助您开始[部署 Key Connector](deploy-key-connector.md)。
+3. （**如果自托管**）查看我们不同的[成员解密选项](member-decryption-options.md)，以确定使用 [Key Connector](../self-hosting/key-connector/about-key-connector.md) 的方式是否适合您的组织。
+4. （**如果自托管**）如果您对实施 Key Connector 感兴趣，请[联系我们](https://bitwarden.com/contact/)，我们将帮助您开始[部署 Key Connector](../self-hosting/key-connector/deploy-key-connector.md)。
 5. 培训您的组织成员如何[使用 SSO 登录](../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)。

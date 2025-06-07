@@ -38,7 +38,7 @@
 
 ### 问：我可以防止用户自我注册到我的组织吗？ <a href="#q-can-i-prevent-users-from-self-registering-into-my-organization" id="q-can-i-prevent-users-from-self-registering-into-my-organization"></a>
 
-**答：**&#x5982;果您是自托管，请[配置环境变量](../self-hosting/configure-environment-variables.md) `globalSettings__disableUserRegistration=` 为 `true`，以防止用户通过注册页面注册账户。配置后，组织管理员或所有者必须邀请用户才能在自托管的实例上注册账户。
+**答：**&#x5982;果您是自托管，请[配置环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md) `globalSettings__disableUserRegistration=` 为 `true`，以防止用户通过注册页面注册账户。配置后，组织管理员或所有者必须邀请用户才能在自托管的实例上注册账户。
 
 ### 问：如何更改组织名称？ <a href="#q-how-do-i-change-the-name-of-my-organization" id="q-how-do-i-change-the-name-of-my-organization"></a>
 
@@ -60,7 +60,7 @@
 
 2、选择**下载许可证**按钮来下载更新了组织名称的许可证。
 
-3、[上传新的许可证](../self-hosting/licensing-for-paid-features.md#organization-license)到您的自托管服务器。
+3、[上传新的许可证](../self-hosting/licensing.md#organization-license)到您的自托管服务器。
 
 ### 问：如何优化包含大量项目的密码库的性能？ <a href="#q-how-do-i-optimize-performance-for-a-vault-with-lots-of-items" id="q-how-do-i-optimize-performance-for-a-vault-with-lots-of-items"></a>
 

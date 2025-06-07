@@ -50,7 +50,7 @@ Bitwarden 客户端和服务器都会捕获事件，其中大多数事件发生�
 * Login attempt failed with incorrect two-step login. (`1006`)
 * User Exported their personal Vault items. (`1007`)
 * User updated a password issued through [account recovery](../../organizations/admin-password-reset.md). (`1008`)
-* User migrated their decryption key with [Key Connector](../../login-with-sso/about-key-connector.md). (`1009`)
+* User migrated their decryption key with [Key Connector](../../self-hosting/key-connector/about-key-connector.md). (`1009`)
 * User requested [device approval](../login-with-sso/trusted-devices/approve-a-trusted-device.md). (`1010`)
 
 ### 项目事件 <a href="#item-events" id="item-events"></a>

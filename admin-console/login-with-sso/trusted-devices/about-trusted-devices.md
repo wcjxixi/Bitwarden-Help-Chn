@@ -78,10 +78,10 @@
 
 {% tab title="密钥轮换" %}
 {% hint style="info" %}
-只有拥有主密码的用户才能轮换其[账户加密密钥](../../../security/account-encryption-key.md)。[了解更多](about-trusted-devices.md#impact-on-master-passwords)。
+只有拥有主密码的用户才能轮换其[账户加密密钥](../../../security/encryption/encryption-key-rotation.md)。[了解更多](about-trusted-devices.md#impact-on-master-passwords)。
 {% endhint %}
 
-当用户轮换其[账户加密密钥](../../../security/account-encryption-key.md)时，正常轮换过程如下：
+当用户轮换其[账户加密密钥](../../../security/encryption/encryption-key-rotation.md)时，正常轮换过程如下：
 
 1. **用户密钥-已加密的公钥**从服务器发送到客户端，然后使用旧的账户加密密钥（又称**用户密钥**）对其解密，得到**设备公钥**。
 2. 使用未加密的设备公钥对用户的新的账户加密密钥进行加密，然后将结果值作为新的**公钥-已加密的用户密钥**发送到服务器。

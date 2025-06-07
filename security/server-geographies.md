@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/server-geographies/)
 {% endhint %}
 
-Bitwarden 云可在全球范围内使用，数据存储在**美国**和**欧盟**地区。无论您使用哪个区域的服务器，Bitwarden 用于保护您的敏感数据采取的措施都是相同的。详细了解 [Bitwarden 如何保护您的数据](storage.md)。
+Bitwarden 云可在全球范围内使用，数据存储在**美国**和**欧盟**地区。无论您使用哪个区域的服务器，Bitwarden 用于保护您的敏感数据采取的措施都是相同的。详细了解 [Bitwarden 如何保护您的数据](data/data-storage.md)。
 
 ## 选择您的云服务器 <a href="#choose-your-cloud-server" id="choose-your-cloud-server"></a>
 
@@ -40,7 +40,7 @@ Bitwarden 数据区域是独立的，您的账户或组织只存在于其最初�
 
 ### 连接您的自托管服务器 <a href="#connect-your-self-hosted-server" id="connect-your-self-hosted-server"></a>
 
-自托管 Bitwarden 组织或个人高级计划需要首先在云服务器上启动订阅，然后[上传许可证文件](../self-hosting/licensing-for-paid-features.md)到您的自托管实例。如果您在 EU 服务器上创建订阅，请将以下[环境变量](../self-hosting/configure-environment-variables.md)添加到服务器的 `./bwdata/env/global.override.env` 文件中，以确保与正确的服务器通信：
+自托管 Bitwarden 组织或个人高级计划需要首先在云服务器上启动订阅，然后[上传许可证文件](../self-hosting/licensing.md)到您的自托管实例。如果您在 EU 服务器上创建订阅，请将以下[环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)添加到服务器的 `./bwdata/env/global.override.env` 文件中，以确保与正确的服务器通信：
 
 ```
 globalSettings__baseServiceUri__cloudRegion=EU

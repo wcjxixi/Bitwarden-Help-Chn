@@ -25,7 +25,7 @@ SAML 2.0 配置
 如果还没有为您的组织创建唯一的 **SSO 标识符**，请创建一个。否则，您不需要在此界面上编辑任何内容，但保持此界面打开，以方便参考。
 
 {% hint style="success" %}
-您可以选择性使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 和 [Key Connector](../../../login-with-sso/about-key-connector.md)。
+您可以选择性使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 和 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
 ## 创建应用程序注册 <a href="#create-an-app-registration" id="create-an-app-registration"></a>
@@ -47,7 +47,7 @@ SAML 2.0 配置
 3. 在配置平台界面上选择 **Web** 选项并在重定向 URI 输入框中输入您的 **Callback Path** 。
 
 {% hint style="info" %}
-回调路径可以从 Bitwarden SSO 配置界面中获取。对于云托管客户，这始终为 `https://sso.bitwarden.com/oidc-signin` 或 `https://sso.bitwarden.eu/oidc-signin`。对于自托管实例，这取决于您[已配置的服务器 URL](../../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain)，例如为 `https://your.domain.com/sso/oidc-signin`。
+回调路径可以从 Bitwarden SSO 配置界面中获取。对于云托管客户，这始终为 `https://sso.bitwarden.com/oidc-signin` 或 `https://sso.bitwarden.eu/oidc-signin`。对于自托管实例，这取决于您[已配置的服务器 URL](../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain)，例如为 `https://your.domain.com/sso/oidc-signin`。
 {% endhint %}
 
 ### 创建客户端密钥 <a href="#create-a-client-secret" id="create-a-client-secret"></a>

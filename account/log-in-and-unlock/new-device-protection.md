@@ -36,7 +36,7 @@ Bitwarden 正在实施这一变更，以增强未激活[两步登录](../two-ste
 
 * 卸载并重新安装移动 App、桌面 App 或浏览器扩展将触发新设备。
 * 清除浏览器 cookie 将为网页 App 触发新设备，但不会为浏览器扩展触发新设备。
-* 在虚拟桌面基础架构 (VDI) 中使用浏览器扩展，在每次会话后重置用户配置文件存储。在这种情况下，[本地存储](../../security/storage.md#on-your-local-machine)不会持久化。
+* 在虚拟桌面基础架构 (VDI) 中使用浏览器扩展，在每次会话后重置用户配置文件存储。在这种情况下，[本地存储](../../security/data/data-storage.md#on-your-local-machine)不会持久化。
 
 ### 我的电子邮箱凭据保存在 Bitwarden 中。我会被锁定在 Bitwarden 之外吗？ <a href="#my-email-credentials-are-saved-in-bitwarden.-will-i-be-locked-out-of-bitwarden" id="my-email-credentials-are-saved-in-bitwarden.-will-i-be-locked-out-of-bitwarden"></a>
 

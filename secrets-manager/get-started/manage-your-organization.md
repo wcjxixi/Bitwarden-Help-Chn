@@ -105,15 +105,15 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 
 ## 自托管
 
-企业组织可以在 Linux 和 Windows 计算机上使用 Docker 自行托管 Bitwarden Secrets Manager。如果您之前没有自行托管过 Bitwarden，请使用[本指南](../../self-hosting/self-host-an-organization.md)让自己走上正轨。
+企业组织可以在 Linux 和 Windows 计算机上使用 Docker 自行托管 Bitwarden Secrets Manager。如果您之前没有自行托管过 Bitwarden，请使用[本指南](../../self-hosting/plan-for-deployment/self-host-an-organization.md)让自己走上正轨。
 
 如果您已经自行托管一个 Enterprise Bitwarden 组织，并希望在该服务器上访问 Secrets Manager：
 
 1. 在云托管的 Bitwarden 组织中注册一个 Secrets Manager 订阅。
 2. 将您的自托管服务器更新到至少 2023.10.0 版本。
-3. 从您的云托管组织[获取新的许可证文件](../../self-hosting/licensing-for-paid-features.md#retrieve-organization-license)，然后[将其上传到您的自托管服务器](../../self-hosting/licensing-for-paid-features.md#update-organization-license)。
+3. 从您的云托管组织[获取新的许可证文件](../../self-hosting/licensing.md#retrieve-organization-license)，然后[将其上传到您的自托管服务器](../../self-hosting/licensing.md#update-organization-license)。
 4. 授予个人用户对自托管实例中的 [Secrets Manager 访问权限](manage-your-organization.md#access-to-secrets-manager)。
 
 {% hint style="info" %}
-Bitwarden [统一自托管部署选项](../../self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md)不支持自托管 Secrets Manager。团队和企业组织应使用标准的 [Linux](../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md) 或 [Windows](../../self-hosting/install-and-deploy-guides/docker/windows-standard-deployment.md) 安装。
+Bitwarden [统一自托管部署选项](../../self-hosting/deploy-and-configure/docker/unified-deployment-beta.md)不支持自托管 Secrets Manager。团队和企业组织应使用标准的 [Linux](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md) 或 [Windows](../../self-hosting/deploy-and-configure/docker/windows-standard-deployment.md) 安装。
 {% endhint %}

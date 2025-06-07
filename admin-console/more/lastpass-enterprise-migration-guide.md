@@ -34,7 +34,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 1、**创建您的组织**。从创建组织开始。要了解如何操作，请查看[这篇文章](../../organizations/organizations.md#create-an-organization)。
 
 {% hint style="info" %}
-对于自托管 Bitwarden，请在 Bitwarden 云端创建一个组织，生成[许可证密钥](https://bitwarden.com/host/)，然后在您的服务器上使用该密钥[解锁组织](../../self-hosting/licensing-for-paid-features.md#organization-license)。
+对于自托管 Bitwarden，请在 Bitwarden 云端创建一个组织，生成[许可证密钥](https://bitwarden.com/host/)，然后在您的服务器上使用该密钥[解锁组织](../../self-hosting/licensing.md#organization-license)。
 {% endhint %}
 
 2、**入职管理用户**。创建好组织后，可以通过入职一些[管理用户](../user-management/member-roles-and-permissions.md)来简化进一步的设置过程。此时**不要开始最终用户入职**，这一点很重要，因为还有几个步骤来准备您为组织。[此处](../../organizations/user-management.md#onboard-users)了解如何邀请管理员。

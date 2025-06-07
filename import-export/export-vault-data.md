@@ -104,7 +104,7 @@
 bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 ```
 
-`--password` 选项可用于指定一个加密 `encrypted_json` 导出的密码，而不是您的[帐户加密密钥](../security/account-encryption-key.md)。
+`--password` 选项可用于指定一个加密 `encrypted_json` 导出的密码，而不是您的[帐户加密密钥](../security/encryption/encryption-key-rotation.md)。
 
 更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
 {% endtab %}

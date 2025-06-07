@@ -1,4 +1,4 @@
-# 提供商门户入门
+# 提供商门户快速入门
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/getting-started-providers/)
@@ -181,7 +181,7 @@ MSP 还可以为 Bitwarden 自托管实例提供管理支持和经销商服务�
 
 4、通过提供商门户访问客户端以下载组织许可证。
 
-5、部署 Bitwarden 自托管实例然后[应用组织许可证](../self-hosting/licensing-for-paid-features.md#apply-organization-license)。
+5、部署 Bitwarden 自托管实例然后[应用组织许可证](../self-hosting/licensing.md#apply-organization-license)。
 
 6、将用户提升为托管客户的新的所有者。
 

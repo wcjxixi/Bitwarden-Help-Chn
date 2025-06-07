@@ -545,7 +545,7 @@ bw device-approval deny-all --organizationid <organizationId>
 bw config server <setting> [value]
 ```
 
-`bw config` 的主要用途是[将 CLI 连接到自托管 Bitwarden 服务器](../../self-hosting/connect-clients-to-your-instance.md#cli)：
+`bw config` 的主要用途是[将 CLI 连接到自托管 Bitwarden 服务器](../../self-hosting/connect-clients/connect-individual-clients.md#cli)：
 
 ```batch
 bw config server https://your.bw.domain.com
@@ -572,7 +572,7 @@ bw config server --key-connector <url>
 ```
 
 {% hint style="info" %}
-如果您的组织使用 [Key Connector](../../login-with-sso/about-key-connector.md) 并且您在[移除您的主密码](../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)后使用 `--apikey` 选项登录，则需要运行 `bw config server --key-connector` 命令。
+如果您的组织使用 [Key Connector](../../self-hosting/key-connector/about-key-connector.md) 并且您在[移除您的主密码](../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)后使用 `--apikey` 选项登录，则需要运行 `bw config server --key-connector` 命令。
 
 联系组织所有者以获取所需的 URL。
 {% endhint %}
@@ -631,7 +631,7 @@ bw export [--output <filePath>] [--format <format>] [--password <password>] [--o
 
 * `--format json`：导出为 `.json` 文件
 * `--format encrypted_json`：导出为[加密的 .json](../../import-export/encrypted-exports.md) 文件
-  * `--password <password>`：指定用于加密 `encrypted_json` 导出的密码，而不是您的[账户加密密钥](../../security/account-encryption-key.md)
+  * `--password <password>`：指定用于加密 `encrypted_json` 导出的密码，而不是您的[账户加密密钥](../../security/encryption/encryption-key-rotation.md)
 * `--output <path>`：指定导出位置
 * `--raw`：将导出返回到 stdout（标准输出）而不是文件
 

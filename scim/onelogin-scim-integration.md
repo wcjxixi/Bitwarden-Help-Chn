@@ -15,7 +15,7 @@ SCIM 集成适用于**团队组织和企业组织**。未使用与 SCIM 兼容�
 ## 启用 SCIM <a href="#enable-scim" id="enable-scim"></a>
 
 {% hint style="info" %}
-**您是自托管 Bitwarden 吗？**&#x5982;果是，请在继续操作之前完成[这些步骤为您的服务器启用 SCIM](../self-hosting/self-hosting-scim.md)。
+**您是自托管 Bitwarden 吗？**&#x5982;果是，请在继续操作之前完成[这些步骤为您的服务器启用 SCIM](../self-hosting/deploy-and-configure/optional-features/self-hosting-scim.md)。
 {% endhint %}
 
 要开始您的 SCIM 集成，请打开管理控制台并导航至**设置** → **SCIM 配置**：

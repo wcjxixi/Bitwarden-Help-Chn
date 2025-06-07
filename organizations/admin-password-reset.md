@@ -18,12 +18,12 @@
 
 ### 加密 <a href="#encryption" id="encryption"></a>
 
-当组织的成员[注册](admin-password-reset.md#automatic-enrollment)账户恢复时，该用户的[加密密钥](../security/account-encryption-key.md)将使用组织的公钥进行加密。其结果将作为**账户恢复密钥**存储。
+当组织的成员[注册](admin-password-reset.md#automatic-enrollment)账户恢复时，该用户的[加密密钥](../security/encryption/encryption-key-rotation.md)将使用组织的公钥进行加密。其结果将作为**账户恢复密钥**存储。
 
 当执行恢复操作时：
 
 1. 使用组织对称密钥解密组织私钥。
-2. 使用已解密的组织私钥解密用户的**账户恢复密钥**，从而得到用户的[加密密钥](../security/account-encryption-key.md)。
+2. 使用已解密的组织私钥解密用户的**账户恢复密钥**，从而得到用户的[加密密钥](../security/encryption/encryption-key-rotation.md)。
 3. 用户的加密密钥和主密码散列被替换为新的加密密钥和新的主密码散列，这些散列源自新的主密码。
 4. 使用组织的公钥加密用户新的加密密钥，使用新的密钥替换之前的**账户恢复密钥**。
 
@@ -90,7 +90,7 @@
 撤销账户恢复
 {% endembed %}
 
-已启用[自动注册](admin-password-reset.md#automatic-enrollment)策略选项的组织中的用户将**不允许撤销**账户恢复。此外，手动更改您的主密码或[轮换您的加密密钥](../security/account-encryption-key.md)**不会**使您撤销账户恢复。
+已启用[自动注册](admin-password-reset.md#automatic-enrollment)策略选项的组织中的用户将**不允许撤销**账户恢复。此外，手动更改您的主密码或[轮换您的加密密钥](../security/encryption/encryption-key-rotation.md)**不会**使您撤销账户恢复。
 
 ## 恢复账户 <a href="#recover-an-account" id="recover-an-account"></a>
 

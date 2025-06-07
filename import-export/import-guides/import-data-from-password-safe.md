@@ -44,7 +44,7 @@
 
 ## 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
-**数据可以从网页 App、CLI、桌面 App 或浏览器扩展导入到 Bitwarden**。数据在发送到服务器存储之前会在本地进行[加密](../../security/encryption.md)。
+**数据可以从网页 App、CLI、桌面 App 或浏览器扩展导入到 Bitwarden**。数据在发送到服务器存储之前会在本地进行[加密](../../security/encryption/encryption-protocols.md)。
 
 {% tabs %}
 {% tab title="网页 App" %}

@@ -26,7 +26,7 @@ Bitwarden 的愿景是想象一个没有人被黑客入侵的世界。我们将�
 对于 Bitwarden 而言，[不同的计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)和选项是相互关联和互补的，这些都源于我们对无黑客世界的愿景。通过密码管理赋予每个人在工作**和**家庭中的权力，使我们离这个目标更近了一步。
 {% endhint %}
 
-Bitwarden 的一个关键方面是，与许多软件应用程序不同，每个密码库中的所有内容都是[端到端加密](../security/encryption.md)的。为了保持这种安全模式，每个使用 Bitwarden 的人都必须有一个唯一的账户和一个唯一的[主密码](../account/log-in-and-unlock/your-master-password.md)。主密码应该是**强大**和**易记**的。
+Bitwarden 的一个关键方面是，与许多软件应用程序不同，每个密码库中的所有内容都是[端到端加密](../security/encryption/encryption-protocols.md)的。为了保持这种安全模式，每个使用 Bitwarden 的人都必须有一个唯一的账户和一个唯一的[主密码](../account/log-in-and-unlock/your-master-password.md)。主密码应该是**强大**和**易记**的。
 
 每一个用户负责他们的主密码。Bitwarden 是一种零知识加密解决方案，这意味着 Bitwarden 的团队以及 Bitwarden 系统本身不知道、无法获取或重置任何主密码。
 
@@ -212,7 +212,7 @@ Bitwarden 企业组织可以使用 SAML 2.0 或 OIDC 与您现有的身份提供
 **身份验证**通过您选择的 IdP 完成，并保留连接到该 IdP 的任何双重身份验证过程。密码库数据的**解密**需要用户的个人密钥，该密钥部分源自主密码。有两个[解密选项](../login-with-sso/member-decryption-options.md)，这两个选项都会让用户使用他们的常规 SSO 凭据进行身份验证。
 
 * **主密码**：通过身份验证后，组织成员将使用他们的主密码解密密码库数据。
-* **客户管理的加密**：连接 SSO 登录到您的自托管解密密钥服务器。使用此选项，组织成员无需使用其主密码来解密密码库数据。相反，[Key Connector](../login-with-sso/about-key-connector.md) 将获取安全地存储在您拥有和管理的数据库中的解密密钥。这种方法确保您可以：
+* **客户管理的加密**：连接 SSO 登录到您的自托管解密密钥服务器。使用此选项，组织成员无需使用其主密码来解密密码库数据。相反，[Key Connector](../self-hosting/key-connector/about-key-connector.md) 将获取安全地存储在您拥有和管理的数据库中的解密密钥。这种方法确保您可以：
   * 利用您现有的身份提供程序
   * 保护数据的端到端加密
   * 自动布建用户

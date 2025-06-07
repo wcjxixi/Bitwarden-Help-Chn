@@ -88,7 +88,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 * 将 Bitwarden 与现有的 [SSO](../login-with-sso/about-login-with-sso.md) 工作流程整合。
 * [验证您的组织的域名](../admin-console/login-with-sso/claimed-domains.md)，实现无缝登录体验。
 * 为成员[设置](../admin-console/login-with-sso/trusted-devices/setup-sso-with-trusted-devices.md)或[批准](../admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)设备信任要求的系统。
-* 将 Bitwarden 与现有的 SIEM 工具（如 [Microsoft Sentinel](../admin-console/reporting/microsoft-sentinel-siem.md)）集成。
+* 将 Bitwarden 与现有的 SIEM 工具（如 [Microsoft Sentinel](../admin-console/reporting/configure-siem/microsoft-sentinel-siem.md)）集成。
 {% endtab %}
 
 {% tab title="团队版" %}
@@ -168,7 +168,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 团队版 Bitwarden 组织提供了强大的工具，用于提高在线安全性并与现有工作流程和工具集成。作为组织的管理员，您可能需要管理的其他事项包括：
 
 * 审计[组织成员拥有哪些凭据的访问权限](../your-vault/vault-health-reports.md#member-access)。
-* 将 Bitwarden 与现有的 SIEM 工具（如 [Microsoft Sentinel](../admin-console/reporting/microsoft-sentinel-siem.md)）集成。
+* 将 Bitwarden 与现有的 SIEM 工具（如 [Microsoft Sentinel](../admin-console/reporting/configure-siem/microsoft-sentinel-siem.md)）集成。
 {% endtab %}
 
 {% tab title="家庭版" %}

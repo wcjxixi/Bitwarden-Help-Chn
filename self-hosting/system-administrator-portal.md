@@ -7,7 +7,7 @@
 Bitwarden 系统管理员门户可以用于：
 
 * 检查当前已安装的版本和最新的可用版本。
-* 查看环境配置设置（更多信息，请参阅[配置环境变量](configure-environment-variables.md)）。
+* 查看环境配置设置（更多信息，请参阅[配置环境变量](deploy-and-configure/configuration-options/environment-variables.md)）。
 * 查看和删除已注册的用户。
 * 查看和删除已注册的组织。
 
@@ -29,7 +29,7 @@ adminSettings__admins=john@example.com,bill@gmail.com,tom@example.com
 
 ### 配置 SMTP 邮件服务器 <a href="#configure-smtp-mail-server" id="configure-smtp-mail-server"></a>
 
-系统管理员门户使用电子邮件来提供安全的链接用于验证。因此，在尝试登录到管理门户之前，您需要配置您的实例的 SMTP 邮件服务器设置。有关更多信息，请参阅[配置环境变量](configure-environment-variables.md)。
+系统管理员门户使用电子邮件来提供安全的链接用于验证。因此，在尝试登录到管理门户之前，您需要配置您的实例的 SMTP 邮件服务器设置。有关更多信息，请参阅[配置环境变量](deploy-and-configure/configuration-options/environment-variables.md)。
 
 ## 访问管理门户 <a href="#access-the-admin-portal" id="access-the-admin-portal"></a>
 

@@ -29,7 +29,7 @@ iOS 上的自动填充有几种行为：
 {% endhint %}
 
 {% hint style="info" %}
-如果您使用的 Argon2id 的 KDF 内存值高于 48 MB，则每次启动 iOS 自动填充或通过共享表单创建新的 Send 时，都会显示警告对话框。要避免出现此消息，请在[此处](../../../security/kdf-algorithms.md#argon2id)调整 Argon2id 设置或启用[生物识别解锁](../../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
+如果您使用的 Argon2id 的 KDF 内存值高于 48 MB，则每次启动 iOS 自动填充或通过共享表单创建新的 Send 时，都会显示警告对话框。要避免出现此消息，请在[此处](../../../security/encryption/encryption-key-derivation.md#argon2id)调整 Argon2id 设置或启用[生物识别解锁](../../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
 {% endhint %}
 
 ### 键盘自动填充 <a href="#keyboard-auto-fill" id="keyboard-auto-fill"></a>

@@ -10,7 +10,7 @@
 
 ### 问：SSO 身份验证可以代替我的主密码和电子邮箱吗？ <a href="#q-does-sso-authentication-replace-my-master-password-and-email" id="q-does-sso-authentication-replace-my-master-password-and-email"></a>
 
-**答：**&#x5982;果您的组织正在使用[受信任设备 SSO](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 或使用 [Key Connector](about-key-connector.md) 自托管解密密钥，则 SSO 登录工作流程确实可以取代输入主密码登录的需要。在标准 SSO 工作流程中，Bitwarden 会利用您现有的身份提供程序 (IdP) 对您进行身份验证，但您仍必须输入主密码和电子邮箱才能解密您的密码库数据。
+**答：**&#x5982;果您的组织正在使用[受信任设备 SSO](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 或使用 [Key Connector](../self-hosting/key-connector/about-key-connector.md) 自托管解密密钥，则 SSO 登录工作流程确实可以取代输入主密码登录的需要。在标准 SSO 工作流程中，Bitwarden 会利用您现有的身份提供程序 (IdP) 对您进行身份验证，但您仍必须输入主密码和电子邮箱才能解密您的密码库数据。
 
 ### 问：为什么 SSO 登录需要主密码？ <a href="#q-why-does-login-with-sso-require-my-master-password" id="q-why-does-login-with-sso-require-my-master-password"></a>
 
@@ -23,16 +23,16 @@ Bitwarden 为企业提供了两种解决方案，允许经过批准的企业成�
 
 **受信任设备 SSO** 是一项功能，允许使用 SSO 登录的组织创建并存储成员设备的加密密钥，从而无需输入主密码。[了解更多有关受信任设备 SSO 的信息](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)。
 
-**自托管 Bitwarden 组织**可利用 [Key Connector](about-key-connector.md) 向 Bitwarden 客户端提供解密密钥，而无需用户使用主密码对密码库数据进行解密。在[这里](member-decryption-options.md)和[这里](about-key-connector.md)了解更多信息。
+**自托管 Bitwarden 组织**可利用 [Key Connector](../self-hosting/key-connector/about-key-connector.md) 向 Bitwarden 客户端提供解密密钥，而无需用户使用主密码对密码库数据进行解密。在[这里](member-decryption-options.md)和[这里](../self-hosting/key-connector/about-key-connector.md)了解更多信息。
 {% endhint %}
 
 ### 问：更改我的 SSO 密码会影响我的 Bitwarden 主密码吗？ <a href="#q-will-changing-my-sso-password-affect-my-bitwarden-master-password" id="q-will-changing-my-sso-password-affect-my-bitwarden-master-password"></a>
 
-**答：**&#x4E0D;会，您的主密码将保持不变。必须使用您的主密码来解密密码库数据，除非您的组织使用 [Key Connector](about-key-connector.md) 来自托管解密密钥。
+**答：**&#x4E0D;会，您的主密码将保持不变。必须使用您的主密码来解密密码库数据，除非您的组织使用 [Key Connector](../self-hosting/key-connector/about-key-connector.md) 来自托管解密密钥。
 
 ### 问：如果我的组织启用了 SSO，我仍可以使用主密码登录吗？ <a href="#q-can-i-still-log-in-with-my-master-password-if-my-organization-has-sso-enabled" id="q-can-i-still-log-in-with-my-master-password-if-my-organization-has-sso-enabled"></a>
 
-**答：**&#x9ED8;认情况下，是可以的，您可以使用您的电子邮件地址和主密码登录 Bitwarden。但是，如果您的组织同时启用了[单一组织](../organizations/enterprise-policies.md#single-organization)和[单点登录验证](../organizations/enterprise-policies.md#single-sign-on-authentication)策略，或者您的组织使用了 [Key Connector](about-key-connector.md)，则所有非管理员用户都会被要求使用 SSO 登录。
+**答：**&#x9ED8;认情况下，是可以的，您可以使用您的电子邮件地址和主密码登录 Bitwarden。但是，如果您的组织同时启用了[单一组织](../organizations/enterprise-policies.md#single-organization)和[单点登录验证](../organizations/enterprise-policies.md#single-sign-on-authentication)策略，或者您的组织使用了 [Key Connector](../self-hosting/key-connector/about-key-connector.md)，则所有非管理员用户都会被要求使用 SSO 登录。
 
 ### 问：新用户如何使用 SSO 登录（即时）？ <a href="#q-how-does-login-with-sso-work-for-new-users-just-in-time" id="q-how-does-login-with-sso-work-for-new-users-just-in-time"></a>
 
@@ -60,7 +60,7 @@ Bitwarden 为企业提供了两种解决方案，允许经过批准的企业成�
 
 ### 问：SSO 登录如何与零知识模型协同工作？ <a href="#q-how-does-login-with-sso-work-with-the-zero-knowledge-model" id="q-how-does-login-with-sso-work-with-the-zero-knowledge-model"></a>
 
-**答：**&#x4F7F;用 SSO 凭证登录 Bitwarden 仅执行用户身份验证，并不解密用户数据。在大多数情况下，通过使用[受信任设备 SSO](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 时的设备密钥完成解密，或通过使用主密码完成解密，而主密码则由用户全权负责。自托管 Bitwarden 组织也可以使用 [Key Connector](about-key-connector.md) 作为解密密码库数据的替代手段。添加 SSO 功能不会在 Bitwarden 数据库中引入更多个人身份信息。
+**答：**&#x4F7F;用 SSO 凭证登录 Bitwarden 仅执行用户身份验证，并不解密用户数据。在大多数情况下，通过使用[受信任设备 SSO](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 时的设备密钥完成解密，或通过使用主密码完成解密，而主密码则由用户全权负责。自托管 Bitwarden 组织也可以使用 [Key Connector](../self-hosting/key-connector/about-key-connector.md) 作为解密密码库数据的替代手段。添加 SSO 功能不会在 Bitwarden 数据库中引入更多个人身份信息。
 
 ## 计费 <a href="#billing" id="billing"></a>
 

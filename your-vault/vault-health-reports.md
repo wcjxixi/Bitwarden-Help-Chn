@@ -120,5 +120,5 @@ HIBP 将「泄漏」定义为「通常是由于访问控制不足或软件的安
 globalSettings__hibpApiKey=REPLACE
 ```
 
-更多信息，请参阅[配置环境变量](../self-hosting/configure-environment-variables.md)。
+更多信息，请参阅[配置环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)。
 {% endhint %}

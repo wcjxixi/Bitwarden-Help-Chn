@@ -50,7 +50,7 @@
 
 ### 问：有啥安全的方式备份我的密码库数据？ <a href="#q-whats-the-safest-way-to-make-a-backup-of-my-vault-data" id="q-whats-the-safest-way-to-make-a-backup-of-my-vault-data"></a>
 
-**答：**&#x60A8;可以使用[加密导出](../import-export/encrypted-exports.md)（将使用您的[账户加密密钥](../security/account-encryption-key.md)进行加密）对您的密码库数据进行安全的长期备份。这些备份使用账户加密密钥、组织加密密钥或您选择的密码进行加密。
+**答：**&#x60A8;可以使用[加密导出](../import-export/encrypted-exports.md)（将使用您的[账户加密密钥](../security/encryption/encryption-key-rotation.md)进行加密）对您的密码库数据进行安全的长期备份。这些备份使用账户加密密钥、组织加密密钥或您选择的密码进行加密。
 
 ### 问：如何设置当计算机启动时自动启动 Bitwarden？ <a href="#q-can-i-set-bitwarden-to-automatically-start-when-my-computer-starts" id="q-can-i-set-bitwarden-to-automatically-start-when-my-computer-starts"></a>
 

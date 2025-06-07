@@ -14,7 +14,7 @@
 
 ## 导入到您的组织 <a href="#import-to-your-organization" id="import-to-your-organization"></a>
 
-数据可从网页 App 导入 Bitwarden。数据先在本地[加密](../security/encryption.md)，然后再发送到服务器进行存储。要将数据导入一个组织，请执行以下操作：
+数据可从网页 App 导入 Bitwarden。数据先在本地[加密](../security/encryption/encryption-protocols.md)，然后再发送到服务器进行存储。要将数据导入一个组织，请执行以下操作：
 
 1、登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
 

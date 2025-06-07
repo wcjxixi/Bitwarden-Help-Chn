@@ -46,7 +46,7 @@ Bitwarden 遵守行业标准的应用安全准则，包括一个专门的安全�
 
 Bitwarden 采用以下关键的安全措施来保护 Bitwarden 中存储的数据：
 
-**端到端加密**：通过端到端 AES-CBC 256 位加密以及 HMAC 身份验证、加盐哈希和密钥导出函数（例如 [PBKDF2 SHA-256](encryption.md#pbkdf2) 或 [Argon2id](encryption.md#argon2id) ）来锁定您的密码和私人信息。所有的加密密钥都由您设备上的客户端生成和管理，并且所有的加密都在本地完成。[这里](bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)查看更多详情。
+**端到端加密**：通过端到端 AES-CBC 256 位加密以及 HMAC 身份验证、加盐哈希和密钥导出函数（例如 [PBKDF2 SHA-256](encryption/encryption-protocols.md#pbkdf2) 或 [Argon2id](encryption/encryption-protocols.md#argon2id) ）来锁定您的密码和私人信息。所有的加密密钥都由您设备上的客户端生成和管理，并且所有的加密都在本地完成。[这里](bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)查看更多详情。
 
 **零知识加密**：Bitwarden 团队成员无法查看您的密码。您的数据使用您的个人电子邮件和主密码进行端到端加密。Bitwarden 绝不会存储也无法访问您的主密码或加密密钥。
 
@@ -151,7 +151,7 @@ Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备�
 创建账户时，Bitwarden 使用基于密码的密钥派生函数 2 (PBKDF2)，经过 600,000 次迭代，使用具有盐化的用户电子邮件地址来扩展用户主密码。
 
 {% hint style="info" %}
-虽然用户账户在初始时使用 PBKDF2，但用户可以选择在账户创建后将其密钥派生函数更改为 [Argon2id](encryption.md#pbkdf2)。了解如何[更改 KDF 算法](kdf-algorithms.md#changing-kdf-algorithm)。
+虽然用户账户在初始时使用 PBKDF2，但用户可以选择在账户创建后将其密钥派生函数更改为 [Argon2id](encryption/encryption-protocols.md#pbkdf2)。了解如何[更改 KDF 算法](encryption/encryption-key-derivation.md#changing-kdf-algorithm)。
 {% endhint %}
 
 盐化值的结果是 256 位**主密钥**。然后，使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF)，将**主密钥**的长度再次扩展为 512 位，从而产生**扩展主密钥**。**主密钥**和**扩展主密钥**永远不会存储到 Bitwarden 服务器或传输到 Bitwarden 服务器。
@@ -177,7 +177,7 @@ Bitwarden 密码散列、密钥派生和加密
 接下来，Bitwarden 使用具有默认为 600,000 次迭代的基于密码的密钥衍生函数 2 (PBKDF2) 来扩展具有盐化的用户电子邮箱地址的主密码。所得的盐化值就是 256 位的**主密钥**。使用 PBKDF-SHA256 生成的**主密码哈希值**以及**主密钥**的有效载荷和主密码盐化，通过将哈希值与服务器端存储的哈希值进行比较，将其发送到服务器进行身份验证。
 
 {% hint style="info" %}
-虽然用户账户在初始时使用 PBKDF2，但用户可以选择在账户创建后将其密钥派生函数更改为 [Argon2id](encryption.md#pbkdf2)。了解如何[更改 KDF 算法](kdf-algorithms.md#changing-kdf-algorithm)。
+虽然用户账户在初始时使用 PBKDF2，但用户可以选择在账户创建后将其密钥派生函数更改为 [Argon2id](encryption/encryption-protocols.md#pbkdf2)。了解如何[更改 KDF 算法](encryption/encryption-key-derivation.md#changing-kdf-algorithm)。
 {% endhint %}
 
 同时，使用基于 HMAC 的提取和扩展密钥派生函数 (HKDF)，将**主密钥**的长度扩展为 512 位，从而产生**扩展主密钥**。**受保护的对称密钥**存储在服务器端并由客户端检索，使用此**扩展主密钥**进行解密。客户端使用生成的**对称密钥**来解密密码库数据。此解密完全在 Bitwarden 客户端上完成。**主密码**和**扩展主密钥**永远不会存储到 Bitwarden 服务器或传输到 Bitwarden 服务器。
@@ -195,7 +195,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 在进行密码更改操作期间，您还可以选择轮换（即更改）其**用户对称密钥**（在产品中称为「账户加密密钥」）。如果用户认为以前的主密码已被盗用，或者他们存储在 Bitwarden 密码库的数据已从其中一台设备上被窃取，则轮换此密钥是一个好主意。
 
 {% hint style="danger" %}
-轮换账户加密密钥是一项敏感操作，因此在更改主密码时这不是默认选项。密钥轮换会为您的账户生成一个新的随机加密密钥，并使用此新密钥**重新加密所有密码库数据**。请参阅[本文](account-encryption-key.md)了解更多详情。
+轮换账户加密密钥是一项敏感操作，因此在更改主密码时这不是默认选项。密钥轮换会为您的账户生成一个新的随机加密密钥，并使用此新密钥**重新加密所有密码库数据**。请参阅[本文](encryption/encryption-key-rotation.md)了解更多详情。
 {% endhint %}
 
 ### 变体 <a href="#variations" id="variations"></a>
@@ -207,7 +207,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 当发起设备登录时：
 
 1. 发起客户端向 Bitwarden 服务器发送请求，其中包括账户电子邮件地址、唯一的**身份验证请求公钥**ª 和访问代码。
-2. 已注册设备，即已登录并在 Bitwarden 服务器中存储了[唯一设备 GUID](administrative-data.md) 的移动或桌面 App，将收到请求。
+2. 已注册设备，即已登录并在 Bitwarden 服务器中存储了[唯一设备 GUID](data/administrative-data.md) 的移动或桌面 App，将收到请求。
 3. 当请求获得批准时，批准客户端使用请求中包含的**身份验证请求公钥**对账户的**主密钥**和**主密码哈希**进行加密。
 4. 然后，批准客户端将**加密的主密钥**和**加密的主密码哈希**发送到 Bitwarden 服务器，并将请求标记为已完成。
 5. 发起客户端向 Bitwarden 服务器请求**加密的主密钥**和**加密的主密码哈希**。
@@ -304,7 +304,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 只有拥有主密码的用户才能轮换其[账户加密密钥](https://help.ppgg.in/security/account-encryption-key)。[了解更多](https://help.ppgg.in/admin-console/login-with-sso/trusted-devices/about-trusted-devices#impact-on-master-passwords)。
 {% endhint %}
 
-当用户轮换其[账户加密密钥](account-encryption-key.md)时，正常轮换过程如下：
+当用户轮换其[账户加密密钥](encryption/encryption-key-rotation.md)时，正常轮换过程如下：
 
 1. **用户密钥-已加密的公钥**从服务器发送到客户端，然后使用旧的账户加密密钥（又称**用户密钥**）对其解密，得到**设备公钥**。
 2. 使用未加密的设备公钥对用户的新的账户加密密钥进行加密，然后将结果值作为新的**公钥-已加密的用户密钥**发送到服务器。
@@ -381,9 +381,9 @@ Bitwarden 组织使用集合、工程和群组对密码库数据和用户进行�
 
 Bitwarden 提供多种安全信息和事件管理 (SIEM) 集成：
 
-* [Splunk](../admin-console/reporting/splunk-siem.md)
-* [Panther](../admin-console/reporting/panther-siem.md)
-* [Elastic](../admin-console/reporting/elastic-siem.md)
+* [Splunk](../admin-console/reporting/configure-siem/splunk-siem.md)
+* [Panther](../admin-console/reporting/configure-siem/panther-siem.md)
+* [Elastic](../admin-console/reporting/configure-siem/elastic-siem.md)
 
 对于其他 SIEM 系统，可结合使用 API 和 CLI 来收集数据。[此处](../admin-console/reporting/event-logs.md#siem-and-external-systems-integrations)概述了这一过程。
 
@@ -421,21 +421,21 @@ Bitwarden 还实施了 HTTP 安全标头，如 HTTP 严格传输安全 (HSTS)，
 
 ### 空闲时的数据保护 <a href="#data-protection-at-rest" id="data-protection-at-rest"></a>
 
-在将您的数据发送到云服务器进行同步之前，Bitwarden 总是在您的本地设备上对数据进行加密和/或散列。Bitwarden 服务器仅用于存储和同步加密后的密码库数据，无法从 Bitwarden 云服务器中获取您的未加密数据。具体来说，Bitwarden 使用 AES 256 位加密以及 [PBKDF-SHA256](encryption.md#pbkdf2) 或 [Argon2id](encryption.md#argon2id) 来保护您的数据安全。存储在密码库中的通行密钥使用 ES256 算法生成。
+在将您的数据发送到云服务器进行同步之前，Bitwarden 总是在您的本地设备上对数据进行加密和/或散列。Bitwarden 服务器仅用于存储和同步加密后的密码库数据，无法从 Bitwarden 云服务器中获取您的未加密数据。具体来说，Bitwarden 使用 AES 256 位加密以及 [PBKDF-SHA256](encryption/encryption-protocols.md#pbkdf2) 或 [Argon2id](encryption/encryption-protocols.md#argon2id) 来保护您的数据安全。存储在密码库中的通行密钥使用 ES256 算法生成。
 
 AES 是密码学的一个标准，被美国政府和世界各地的其他政府机构用于保护绝密数据。只要实施得当，加上强大的加密密钥（即您的主密码），AES 被认为是不可破解的。
 
-[PBKDF-SHA256](encryption.md#pbkdf2) 或 [Argon2id](encryption.md#argon2id) 用于从您的主密码派生加密密钥。然后对该密钥进行盐化和哈希处理，以便与 Bitwarden 服务器进行验证。PBKDF2 在客户端默认使用的迭代次数是 600,001 次（此客户端迭代次数可以从您的账户设置中配置）。
+[PBKDF-SHA256](encryption/encryption-protocols.md#pbkdf2) 或 [Argon2id](encryption/encryption-protocols.md#argon2id) 用于从您的主密码派生加密密钥。然后对该密钥进行盐化和哈希处理，以便与 Bitwarden 服务器进行验证。PBKDF2 在客户端默认使用的迭代次数是 600,001 次（此客户端迭代次数可以从您的账户设置中配置）。
 
 {% hint style="info" %}
-虽然用户账户是使用 PBKDF2 初始化的，但用户可以在账户创建后选择将密钥派生函数更改为 [Argon2id](encryption.md#argon2id)。了解[如何更改 KDF 算法](kdf-algorithms.md#changing-kdf-algorithm)。
+虽然用户账户是使用 PBKDF2 初始化的，但用户可以在账户创建后选择将密钥派生函数更改为 [Argon2id](encryption/encryption-protocols.md#argon2id)。了解[如何更改 KDF 算法](encryption/encryption-key-derivation.md#changing-kdf-algorithm)。
 {% endhint %}
 
 Bitwarden 云数据库存储您的已加密的密码库，并托管在安全的 Microsoft Azure 云基础设施中。它配置了 Azure 提供的一种名为透明数据加密 (TDE) 的静态加密技术。TDE 在整个 Bitwarden 云数据库、相关备份数据和事务日志文件不使用时对其进行实时加密和解密。Azure 处理 TDE 的加密密钥，只有经过授权的 Bitwarden 服务器组件才能访问这些密钥。[此处](https://learn.microsoft.com/zh-cn/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql\&tabs=azure-portal)了解更多有关 Azure 透明数据加密的信息。
 
 此外，Bitwarden 服务器应用程序还会对与用户账户相关的敏感数据库列进行加密。主密码哈希值和受保护的用户密钥在进出 Bitwarden 云数据库时会被即时加密。这些列级加密操作是使用 Bitwarden 在严格控制的密钥管理服务 (KMS) 中管理的密钥执行的。
 
-了解更多信息： [端到端加密如何为零知识铺平道路](https://bitwarden.com/blog/end-to-end-encryption-and-zero-knowledge/)以及[使用何种加密方式](encryption.md)。
+了解更多信息： [端到端加密如何为零知识铺平道路](https://bitwarden.com/blog/end-to-end-encryption-and-zero-knowledge/)以及[使用何种加密方式](encryption/encryption-protocols.md)。
 
 ### 数据类型和数据保留 <a href="#data-types-and-data-retention" id="data-types-and-data-retention"></a>
 

@@ -14,7 +14,7 @@
 
 使用**家庭组织**，您可以在自己和最多 5 位朋友或家人之间安全地共享密码库数据。家庭组织包含用于所有 6 位用户的高级 Bitwarden 功能，包括[高级两步登录方式](../../account/two-step-login/setup-guides/two-step-login-methods.md)、[加密文件附件](../../your-vault/file-attachments.md)、[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)及[更多](about-bitwarden-plans.md#compare-the-plans)其他功能。
 
-本文将帮助组织成员兑换他们的赞助，但如果您是自托管 Bitwarden 企业组织的管理员，则需要完成[这些步骤](../../self-hosting/self-hosting-families-sponsorships.md)，为您的成员启用家庭赞助。
+本文将帮助组织成员兑换他们的赞助，但如果您是自托管 Bitwarden 企业组织的管理员，则需要完成[这些步骤](../../self-hosting/deploy-and-configure/optional-features/self-hosting-families-sponsorships.md)，为您的成员启用家庭赞助。
 
 {% hint style="info" %}
 如果您已加入 [2019 版年家庭计划](../updates-to-bitwarden-plans-2019-2020.md#families-organizations)，您仍然可以兑换赞助，但您的组织不会更新以包含 2020 年版计划中所包含的功能。要升级当前计划，请导航至**订阅** → **计费**页面然后选择**升级计划**。
@@ -117,15 +117,15 @@
 
 ### 问：自托管企业组织可以发出赞助吗？ <a href="#q-can-self-hosted-enterprise-organizations-issue-sponsorships" id="q-can-self-hosted-enterprise-organizations-issue-sponsorships"></a>
 
-**答：**&#x53EF;以。您可以在[这里](../../self-hosting/self-hosting-families-sponsorships.md)找到简短设置过程的说明。请提醒您的用户，他们的赞助家庭组织将通过我们的公共云 (`https://vault.bitwarden.com`) 提供，而不是通过您的自托管服务器提供。
+**答：**&#x53EF;以。您可以在[这里](../../self-hosting/deploy-and-configure/optional-features/self-hosting-families-sponsorships.md)找到简短设置过程的说明。请提醒您的用户，他们的赞助家庭组织将通过我们的公共云 (`https://vault.bitwarden.com`) 提供，而不是通过您的自托管服务器提供。
 
 ### 问：受赞助的家庭组织可以放在自托管服务器上吗？ <a href="#q-can-a-sponsored-families-organization-be-on-a-self-hosted-server" id="q-can-a-sponsored-families-organization-be-on-a-self-hosted-server"></a>
 
 **答：**&#x53EF;以。但是有几个步骤需要完成：
 
 1. [如上所述](redeem-families-sponsorship.md#redeem-your-sponsorship)，在 `https://vault.bitwarden.com` 兑换您的赞助。
-2. 还是在 `https://vault.bitwarden.com`，[按照此处所述](../../self-hosting/licensing-for-paid-features.md#retrieve-your-license-1)获取您的家庭组织的许可证文件。
-3. [如此处所述](../../self-hosting/licensing-for-paid-features.md#apply-your-license-1)，登录到您的自托管服务器并将许可证文件应用到组织。
+2. 还是在 `https://vault.bitwarden.com`，[按照此处所述](../../self-hosting/licensing.md#retrieve-your-license-1)获取您的家庭组织的许可证文件。
+3. [如此处所述](../../self-hosting/licensing.md#apply-your-license-1)，登录到您的自托管服务器并将许可证文件应用到组织。
 
 请注意，您的自托管服务器需要连接到 SMTP 邮件服务器，以便将您的家庭组织的邀请发送给其他成员。
 

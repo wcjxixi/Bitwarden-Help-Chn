@@ -39,7 +39,7 @@
 
 {% embed url="https://youtu.be/4GjjfkMYqqs" %}
 
-[此处](../self-hosting/install-and-deploy-guides/docker/unified-deployment-beta.md)了解更多有关使用 Bitwarden Unified 自托管的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../self-hosting/deploy-and-configure/docker/unified-deployment-beta.md)了解更多有关使用 Bitwarden Unified 自托管的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:38**：配置环境变量。
 * **01:53**：配置可选设置。

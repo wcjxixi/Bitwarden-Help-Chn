@@ -16,13 +16,13 @@ Teams 订阅起价为 $6/用户/月，拥有无限数量的机密、用户和工
 
 ## 问：我可以自行托管 Secrets Manager 吗？ <a href="#q-can-i-self-host-secrets-manager" id="q-can-i-self-host-secrets-manager"></a>
 
-**答：**&#x4F01;业组织可以在现有的自托管安装旁边自行托管 Bitwarden Secrets Manager。如果您之前没有自行托管过 Bitwarden，请使用[本指南](../../self-hosting/self-host-an-organization.md)让自己走上正确的道路。
+**答：**&#x4F01;业组织可以在现有的自托管安装旁边自行托管 Bitwarden Secrets Manager。如果您之前没有自行托管过 Bitwarden，请使用[本指南](../../self-hosting/plan-for-deployment/self-host-an-organization.md)让自己走上正确的道路。
 
 如果您已经自行托管 Enterprise Bitwarden 组织并希望访问该服务器上的 Secrets Manager：
 
 1. 在云托管的 Bitwarden 组织中注册 Secrets Manager 订阅。
 2. 将您的自托管服务器至少更新到 2023.10.0。
-3. 从您的云托管组织[获取新的许可证](../../self-hosting/licensing-for-paid-features.md#retrieve-organization-license)文件并[将其上传到您的自托管服务器](../../self-hosting/licensing-for-paid-features.md#update-organization-license)。
+3. 从您的云托管组织[获取新的许可证](../../self-hosting/licensing.md#retrieve-organization-license)文件并[将其上传到您的自托管服务器](../../self-hosting/licensing.md#update-organization-license)。
 
 ## 问：家庭计划支持 Secrets Manager 吗？ <a href="#q-do-families-plans-support-secrets-manager" id="q-do-families-plans-support-secrets-manager"></a>
 

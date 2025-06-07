@@ -107,5 +107,5 @@
 * 用户的加密密钥被轮换。
 
 {% hint style="info" %}
-只有拥有主密码的用户才能轮换其[账户加密密钥](../../../security/account-encryption-key.md)。[了解更多](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md#impact-on-master-passwords)。
+只有拥有主密码的用户才能轮换其[账户加密密钥](../../../security/encryption/encryption-key-rotation.md)。[了解更多](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md#impact-on-master-passwords)。
 {% endhint %}

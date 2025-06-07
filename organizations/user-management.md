@@ -19,7 +19,7 @@
 ### 设置席位限制 <a href="#set-a-seat-limit" id="set-a-seat-limit"></a>
 
 {% hint style="info" %}
-自托管组织拥有的席位数量将始终与其[对应的云端组织](../self-hosting/self-host-an-organization.md#step-3-start-your-organization)保持一致。您将需要通过云端管理控制台管理您的席位数量，但可以通过设置[计费同步](../self-hosting/licensing-for-paid-features.md#zi-dong-tong-bu)，使更改对您的自托管组织生效，而无需重新上传许可证。
+自托管组织拥有的席位数量将始终与其[对应的云端组织](../self-hosting/plan-for-deployment/self-host-an-organization.md#step-3-start-your-organization)保持一致。您将需要通过云端管理控制台管理您的席位数量，但可以通过设置[计费同步](../self-hosting/licensing.md#zi-dong-tong-bu)，使更改对您的自托管组织生效，而无需重新上传许可证。
 {% endhint %}
 
 要对您的组织可以扩展到的席位数量设置限制：
@@ -47,7 +47,7 @@
 ### 手动添加或移除席位 <a href="#manually-add-or-remove-seats" id="manually-add-or-remove-seats"></a>
 
 {% hint style="info" %}
-自托管组织拥有的席位数量将始终与其[对应的云端组织](../self-hosting/self-host-an-organization.md#step-3-start-your-organization)保持一致。您将需要通过云端管理控制台管理您的席位数量，但可以通过设置[计费同步](../self-hosting/licensing-for-paid-features.md#zi-dong-tong-bu)，使更改对您的自托管组织生效，而无需重新上传许可证。
+自托管组织拥有的席位数量将始终与其[对应的云端组织](../self-hosting/plan-for-deployment/self-host-an-organization.md#step-3-start-your-organization)保持一致。您将需要通过云端管理控制台管理您的席位数量，但可以通过设置[计费同步](../self-hosting/licensing.md#zi-dong-tong-bu)，使更改对您的自托管组织生效，而无需重新上传许可证。
 {% endhint %}
 
 要对您的组织手动添加或移除席位：
@@ -117,7 +117,7 @@
 
 <img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1yj3MLJDTr7zOn5TwP0FGJ/3f09a294f42a4bc8772369648afd450d/2024-12-03_15-03-31.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
 
-如果您是自托管 Bitwarden，您可以使用[环境变量](../self-hosting/configure-environment-variables.md)来配置邀请的有效期。
+如果您是自托管 Bitwarden，您可以使用[环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)来配置邀请的有效期。
 {% endhint %}
 
 ### 接受 <a href="#accept" id="accept"></a>
@@ -152,7 +152,7 @@
 确认成员加入组织
 {% endembed %}
 
-4、验证您屏幕上显示的[指纹短语](../security/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置 → 我的帐户**中找到。
+4、验证您屏幕上显示的[指纹短语](../security/encryption/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置 → 我的帐户**中找到。
 
 
 

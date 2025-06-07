@@ -41,7 +41,7 @@
 
 **答：**&#x8981;支付 Bitwarden 自托管实例的费用，您需要在 Bitwarden 云中通过[网页密码库](https://vault.bitwarden.com/)创建一个账户。从那里下载许可证文件，并将其应用到您的自助托管实例上。您的许可证文件将标记您对高级功能的访问，因此，如果您之前使用的是免费计划，请确保下载一个新的许可证文件。
 
-如需了解更多信息，请参阅[本地托管](../self-hosting/licensing-for-paid-features.md#organization-license)。
+如需了解更多信息，请参阅[本地托管](../self-hosting/licensing.md#organization-license)。
 
 ### 问：如果我有一个家庭组织，还需要高级会员吗？ <a href="#q-if-i-have-a-families-organization-do-i-need-premium" id="q-if-i-have-a-families-organization-do-i-need-premium"></a>
 

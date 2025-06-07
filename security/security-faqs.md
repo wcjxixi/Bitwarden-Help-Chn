@@ -15,19 +15,19 @@
 3. Bitwarden **不存储您的密码**。Bitwarden 存储的是您的密码的加密版本，只有您才能解锁。您的敏感信息在被发送到我们的云服务器之前，会在您的个人设备上进行本地加密。
 4. **Bitwarden 的声誉很好**。Bitwarden 被数百万个人和企业使用。如果我们做任何有问题或有风险的事情，我们就会被淘汰！
 
-还是不相信我们吗？不必这样。开源是美丽的。您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由您自己掌控。在[这里](../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md)了解更多。
+还是不相信我们吗？不必这样。开源是美丽的。您可以轻松地自己托管整个 Bitwarden 堆栈，您的数据由您自己掌控。在[这里](../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md)了解更多。
 
 ### 问：如果 Bitwarden 被黑会怎么样？ <a href="#q-what-happens-if-bitwarden-gets-hacked" id="q-what-happens-if-bitwarden-gets-hacked"></a>
 
 **答：**&#x42;itwarden 采取极端措施确保其网站、应用程序和云服务器的安全。Bitwarden 使用 Microsoft Azure 托管服务来管理服务器基础设施和安全，而不是直接自己来做。
 
-如果由于某些原因 Bitwarden 被黑客攻击，您的数据因此遭泄露，由于对您的密码库数据和主密码采取了[强大的加密和单向盐化哈希](encryption.md)措施，您的信息仍然受到保护。
+如果由于某些原因 Bitwarden 被黑客攻击，您的数据因此遭泄露，由于对您的密码库数据和主密码采取了[强大的加密和单向盐化哈希](encryption/encryption-protocols.md)措施，您的信息仍然受到保护。
 
 ### 问：Bitwarden 可以看到我的密码吗？ <a href="#q-can-bitwarden-see-my-passwords" id="q-can-bitwarden-see-my-passwords"></a>
 
 **答：**&#x4E0D;能。
 
-您的数据在离开您的本地设备之前就已经被完全加密和/或哈希，因此 Bitwarden 团队的任何人都无法看到、读取或进行逆向工程来获取您的真实数据。Bitwarden 服务器只存储已被加密和哈希的数据。有关您的数据如何被加密的更多信息，请参阅[加密](encryption.md)。
+您的数据在离开您的本地设备之前就已经被完全加密和/或哈希，因此 Bitwarden 团队的任何人都无法看到、读取或进行逆向工程来获取您的真实数据。Bitwarden 服务器只存储已被加密和哈希的数据。有关您的数据如何被加密的更多信息，请参阅[加密](encryption/encryption-protocols.md)。
 
 ### 问：我的 Bitwarden 主密码是否存储在本地？ <a href="#q-is-my-bitwarden-master-password-stored-locally" id="q-is-my-bitwarden-master-password-stored-locally"></a>
 
@@ -79,7 +79,7 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 ### 问：Bitwarden 的自托管实例的证书选项是什么？ <a href="#q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden" id="q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden"></a>
 
-**答：**&#x6709;关完整列表以及说明，请参阅[证书选项](../self-hosting/certificate-options.md)。
+**答：**&#x6709;关完整列表以及说明，请参阅[证书选项](../self-hosting/deploy-and-configure/configuration-options/certificate-options.md)。
 
 ### 问：Bitwarden 如何审核代码的更改？ <a href="#q-how-does-bitwarden-vet-code-changes" id="q-how-does-bitwarden-vet-code-changes"></a>
 
@@ -96,7 +96,7 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 * [两步登录](../account/two-step-login/setup-guides/two-step-login-methods.md)的**记住我**选项将在 30 天后过期。
 * 目录连接器[同步缓存](../directory-connector/clear-sync-cache.md)将在 30 天后被清除。
-* 组织邀请将在 5 天后过期。自托管客户可以[使用环境变量](../self-hosting/configure-environment-variables.md#optional-variables)对其进行配置。
+* 组织邀请将在 5 天后过期。自托管客户可以[使用环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md#optional-variables)对其进行配置。
 
 ### 问：如何验证 Bitwarden App 的校验和？ <a href="#q-how-do-i-validate-the-checksum-of-a-bitwarden-app" id="q-how-do-i-validate-the-checksum-of-a-bitwarden-app"></a>
 
@@ -214,7 +214,7 @@ Bitwarden 所需的其他基本权限已[在 Google Play 商店中列出](https:
 
 ### 问：Bitwarden 是否符合 FIPS 标准？ <a href="#q-is-bitwarden-fips-compliant" id="q-is-bitwarden-fips-compliant"></a>
 
-**答：**&#x42;itwarden 使用[符合 FIPS 标准的库和密码学](encryption.md#invoked-crypto-libraries)，但是 Bitwarden 平台没有进行任何 FIPS 认证。Bitwarden 的大多数 FIPS 安装利用自托管选项，使评估（即网络安全成熟度模型认证）更容易。
+**答：**&#x42;itwarden 使用[符合 FIPS 标准的库和密码学](encryption/encryption-protocols.md#invoked-crypto-libraries)，但是 Bitwarden 平台没有进行任何 FIPS 认证。Bitwarden 的大多数 FIPS 安装利用自托管选项，使评估（即网络安全成熟度模型认证）更容易。
 
 ### 问：我可以限制某些设备对 Bitwarden 的访问吗？ <a href="#q-can-i-restrict-access-to-bitwarden-to-certain-devices" id="q-can-i-restrict-access-to-bitwarden-to-certain-devices"></a>
 

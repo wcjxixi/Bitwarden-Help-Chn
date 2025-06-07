@@ -18,7 +18,7 @@
 
 通行密钥是密码的替代品，可以让用户在不同设备上快速、方便、安全地登录网站和 App。更确切地说，「通行密钥」是一个对消费者友好的术语，指的是一种可发现的 FIDO 凭证，它可以通过同步实现跨设备的安全无密码登录，或作为设备绑定通行密钥专用于单个硬件。
 
-App 和服务可以要求在保存或访问用它们创建的通行密钥时使用 PIN、密码、图案或生物识别因素进行验证。有关通行密钥的更多信息，请参阅[通行密钥 FAQ](../../vault-basics/passkeys-faq.md)。
+App 和服务可以要求在保存或访问用它们创建的通行密钥时使用 PIN、密码、图案或生物识别因素进行验证。有关通行密钥的更多信息，请参阅[通行密钥 FAQ](../../../miscellaneous/passkeys-faq.md)。
 
 ### 通行密钥的类型 <a href="#types-of-passkeys" id="types-of-passkeys"></a>
 
@@ -220,7 +220,7 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 
 ## 通行密钥管理 FAQ <a href="#passkey-management-faq" id="passkey-management-faq"></a>
 
-以下 FAQ 与 Bitwarden 通行密钥存储有关。有关通行密钥的一般信息，请参阅[通行密钥 FAQ](../../vault-basics/passkeys-faq.md)。
+以下 FAQ 与 Bitwarden 通行密钥存储有关。有关通行密钥的一般信息，请参阅[通行密钥 FAQ](../../../miscellaneous/passkeys-faq.md)。
 
 ### 问：如果[克隆](../../../your-vault/vault-items.md#clone)密码库项目，是否会包含通行密钥？ <a href="#q-will-passkeys-be-included-if-you-clone-a-vault-item" id="q-will-passkeys-be-included-if-you-clone-a-vault-item"></a>
 

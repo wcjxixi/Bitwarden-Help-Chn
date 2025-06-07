@@ -98,7 +98,7 @@
 {% endtab %}
 {% endtabs %}
 
-请注意，这是一个独特的指纹，与您的[账户指纹短语](../../../security/account-fingerprint-phrase.md)不一样。
+请注意，这是一个独特的指纹，与您的[账户指纹短语](../../../security/encryption/account-fingerprint-phrase.md)不一样。
 
 如果请求未被批准或被拒绝，则请求将在 15 分钟后过期。如果您没有收到登录请求或正在使用 F-Droid，请尝试从移动 App [手动同步您的密码库](../../../your-vault/syncing-your-vault.md)。
 
@@ -111,7 +111,7 @@
 当发起设备登录时：
 
 1. 网页密码库客户端向 Bitwarden 数据库中的身份验证请求表 POST（发送）一个请求，其中包括账户电子邮箱地址、唯一的身份验证请求公钥**ᵃ** 和访问代码。
-2. 已注册的设备，即已登录并在 Bitwarden 数据库中存储了[特定于设备的 GUID](../../../security/administrative-data.md) 的移动或桌面 App，将收到此请求。
+2. 已注册的设备，即已登录并在 Bitwarden 数据库中存储了[特定于设备的 GUID](../../../security/data/administrative-data.md) 的移动或桌面 App，将收到此请求。
 3. 请求获得批准后，批准客户端使用此请求中包含的身份验证请求公钥加密账户的主密钥和主密码哈希。
 4. 批准客户端然后将已加密的主密钥和已加密的主密码哈希 PUT（放置）到身份验证请求记录，并将请求标记为已完成。
 5. 发起客户端 GET（获取）已加密的主密钥和已加密的主密码哈希。

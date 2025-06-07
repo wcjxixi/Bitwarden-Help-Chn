@@ -66,7 +66,7 @@ LastPass 导出
 
 ## 导入到 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
-数据可以直接从 LastPass 导入，也可以使用 LastPass [导出的文件](import-data-from-lastpass.md#export-from-lastpass)导入。如果您是使用 LastPass SSO 的团队成员，LastPass 管理员将需要完成一个简短的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-data-from-lastpass.md#direct-import-with-sso)）。在所有情况下，数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption.md)。
+数据可以直接从 LastPass 导入，也可以使用 LastPass [导出的文件](import-data-from-lastpass.md#export-from-lastpass)导入。如果您是使用 LastPass SSO 的团队成员，LastPass 管理员将需要完成一个简短的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-data-from-lastpass.md#direct-import-with-sso)）。在所有情况下，数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
 
 {% hint style="info" %}
 请参阅这篇 [LastPass 支持文章](https://support.lastpass.com/help/export-your-passwords-and-secure-notes-lp040004)，了解 LastPass 支持和不支持哪些导出内容。请注意，Bitwarden 不支持导入附件。

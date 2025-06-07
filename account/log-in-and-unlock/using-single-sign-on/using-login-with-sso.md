@@ -75,7 +75,7 @@
 
 ## 使用 SSO 登录 <a href="#login-using-sso" id="login-using-sso"></a>
 
-使用 SSO 登录所需的步骤将略有不同，具体取决于您的组织是否使用 [Key Connector](../../../login-with-sso/about-key-connector.md)：
+使用 SSO 登录所需的步骤将略有不同，具体取决于您的组织是否使用 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)：
 
 {% tabs %}
 {% tab title="SSO 登录 & 主密码" %}
@@ -190,7 +190,7 @@ SSO 标识符界面
 4、根据您的账户状态，您可能需要在首次使用 SSO 和 Key Connector 登录时输入或创建主密码。这样做将从您的账户中移除主密码。
 
 {% hint style="info" %}
-我们希望您阅读[这里](../../../login-with-sso/about-key-connector.md#impact-on-master-passwords)和[这里](../../../login-with-sso/about-key-connector.md#impact-on-organization-membership)，以充分了解从您的账户中删除主密码意味着什么。您可以选择**离开组织**，但这将取消对组织拥有的密码库项目和集合以及单点登录的访问权限。
+我们希望您阅读[这里](../../../self-hosting/key-connector/about-key-connector.md#impact-on-master-passwords)和[这里](../../../self-hosting/key-connector/about-key-connector.md#impact-on-organization-membership)，以充分了解从您的账户中删除主密码意味着什么。您可以选择**离开组织**，但这将取消对组织拥有的密码库项目和集合以及单点登录的访问权限。
 {% endhint %}
 
 5、如果您使用[两步登录](../../two-step-login/setup-guides/two-step-login-methods.md)，请使用您的辅助设备进行身份验证。

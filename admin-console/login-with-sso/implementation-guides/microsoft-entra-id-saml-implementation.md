@@ -33,7 +33,7 @@ SAML 2.0 配置
 如果愿意，您可以在此阶段关闭**设置专属的 SP 实体 ID** 选项。这样做会从 SP 实体 ID 值中移除组织 ID，但大多数情况下都建议打开该选项。
 
 {% hint style="success" %}
-您可以选择性使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 和 [Key Connector](../../../login-with-sso/about-key-connector.md)。
+您可以选择性使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 和 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
 ## 创建企业应用程序 <a href="#create-an-enterprise-application" id="create-an-enterprise-application"></a>
@@ -74,11 +74,11 @@ SAML 2.0 配置
 
 选择 **Edit** 按钮并配置如下字段：
 
-| 字段                                         | 描述                                                                                                                                                                                                                                                                                                                                                        |
-| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Identifier (Entity ID)                     | <p>将此字段设置为预先生成的 <strong>SP Entity ID</strong>。<br><br></p>                                                                                                                                                                                                                                                                                                |
-| Reply URL (Assertion Consumer Service URL) | <p>将此字段设置为预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并根据设置而有所不同。</p>                                                                                                                                                                                                |
-| Sign on URL                                | <p>将此字段设置为用户访问 Bitwarden 的登录 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code> 或 <code>https://vault.bitwarden.eu/#/sso</code>。对于自托管实例，这由您<a href="../../../self-hosting/install-and-deploy-guides/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p> |
+| 字段                                         | 描述                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Identifier (Entity ID)                     | <p>将此字段设置为预先生成的 <strong>SP Entity ID</strong>。<br><br></p>                                                                                                                                                                                                                                                                                           |
+| Reply URL (Assertion Consumer Service URL) | <p>将此字段设置为预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并根据设置而有所不同。</p>                                                                                                                                                                                           |
+| Sign on URL                                | <p>将此字段设置为用户访问 Bitwarden 的登录 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code> 或 <code>https://vault.bitwarden.eu/#/sso</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p> |
 
 ### 用户属性 & 声明 <a href="#user-attributes-and-claims" id="user-attributes-and-claims"></a>
 

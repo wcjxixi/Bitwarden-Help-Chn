@@ -129,7 +129,7 @@ Bitwarden 邀请
 免费组织 - 确认成员
 {% endembed %}
 
-4、验证您屏幕上显示的[指纹短语](../security/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置** → **我的帐户**中找到。
+4、验证您屏幕上显示的[指纹短语](../security/encryption/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置** → **我的帐户**中找到。
 
 每一个指纹短语对于其帐户都是唯一的，它是确保安全添加用户的最后一层监督。如果它们匹配，请选择**提交**。
 
