@@ -218,7 +218,7 @@
   * [报告](admin-console/reporting/README.md)
     * [密码库健康报告](admin-console/reporting/vault-health-reports.md)
     * [事件日志](admin-console/reporting/event-logs.md)
-    * [=监控事件日志](admin-console/reporting/monitoring-event-logs.md)
+    * [监控事件日志](admin-console/reporting/monitoring-event-logs.md)
     * [配置 SIEM](admin-console/reporting/configure-siem/README.md)
       * [Elastic SIEM](admin-console/reporting/configure-siem/elastic-siem.md)
       * [Microsoft Sentinel SIEM](admin-console/reporting/configure-siem/microsoft-sentinel-siem.md)
