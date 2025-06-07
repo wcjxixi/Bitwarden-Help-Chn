@@ -16,9 +16,9 @@
 
 ### 监控用户频率 <a href="#monitor-user-frequency" id="monitor-user-frequency"></a>
 
-## 关键密码库操作 <a href="#critical-vault-actions" id="critical-vault-actions"></a>
+## 关键的密码库操作 <a href="#critical-vault-actions" id="critical-vault-actions"></a>
 
 ### 超级用户活动 <a href="#super-user-activities" id="super-user-activities"></a>
 
-### 关键项目活动 <a href="#critical-item-activities" id="critical-item-activities"></a>
+### 关键的项目活动 <a href="#critical-item-activities" id="critical-item-activities"></a>
 
