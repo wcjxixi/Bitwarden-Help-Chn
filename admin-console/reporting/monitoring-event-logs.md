@@ -16,7 +16,7 @@
 Panther JSON 对象
 {% endembed %}
 
-SIEM 事件监控平台将提供需要监控以维持高标准的安全性的特定字段：
+SIEM 事件监控平台提供了很多特定的字段，这些字段用于监控以维持高标准的安全性：
 
 | 值                 | 描述                                                                                                                                          |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -33,13 +33,13 @@ SIEM 事件监控平台将提供需要监控以维持高标准的安全性的特
 
 追踪 Bitwarden 使用趋势可以识别可疑活动或潜在的安全威胁：
 
-### 登录尝试失败率异常 <a href="#abnormal-rate-of-failed-login-attempts" id="abnormal-rate-of-failed-login-attempts"></a>
+### 登录尝试失败异常等级 <a href="#abnormal-rate-of-failed-login-attempts" id="abnormal-rate-of-failed-login-attempts"></a>
 
 * 失败的登录尝试
   * `1005` 使用错误的密码导致的登录尝试失败
   * `1006` 使用错误的两步登录导致的登录尝试失败
 
-### 查看敏感或隐藏字段的异常频率 <a href="#abnormal-rate-of-viewing-sensitive-or-hidden-fields" id="abnormal-rate-of-viewing-sensitive-or-hidden-fields"></a>
+### 查看敏感或隐藏字段的异常等级 <a href="#abnormal-rate-of-viewing-sensitive-or-hidden-fields" id="abnormal-rate-of-viewing-sensitive-or-hidden-fields"></a>
 
 * 查看项目
   * `1107` 查看了项目 `item-identifier`
@@ -90,7 +90,7 @@ SIEM 事件监控平台将提供需要监控以维持高标准的安全性的特
 
 ### 关键的项目活动 <a href="#critical-item-activities" id="critical-item-activities"></a>
 
-* 已识别为关键的项目的变更
+* 已识别为关键的项目变更
   * `1101` 编辑了项目 `item-identifier`
   * `1105` 将项目 `item-identifier` 移动至组织
   * `1106` 编辑了项目 `item-identifier` 的收藏集
