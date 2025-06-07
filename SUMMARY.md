@@ -329,7 +329,7 @@
   * [可信任的通讯](security/trusted-communications/README.md)
     * [Bitwarden 域名、端点和 URL](security/trusted-communications/bitwarden-addresses.md)
     * [识别来自 Bitwarden 的合法电子邮件](security/trusted-communications/emails-from-bitwarden.md)
-    * [=来自 Bitwarden 服务器的电子邮件](security/trusted-communications/emails-from-bitwarden-servers.md)
+    * [来自 Bitwarden 服务器的电子邮件](security/trusted-communications/emails-from-bitwarden-servers.md)
   * [合规、审计和认证](security/compliance-audits-and-certifications.md)
   * [Bitwarden 分包商](security/who-are-bitwardens-subprocessors.md)
   * [服务器地理位置](security/server-geographies.md)
