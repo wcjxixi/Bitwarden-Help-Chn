@@ -271,7 +271,7 @@
 * [自托管](self-hosting/README.md)
   * [部署计划](self-hosting/plan-for-deployment/README.md)
     * [=自托管 Bitwarden](self-hosting/plan-for-deployment/self-host-bitwarden.md)
-    * [=自托管检查清单](self-hosting/plan-for-deployment/self-host-checklist.md)
+    * [自托管检查清单](self-hosting/plan-for-deployment/self-host-checklist.md)
     * [自托管组织](self-hosting/plan-for-deployment/self-host-an-organization.md)
     * [迁移到新服务器](self-hosting/plan-for-deployment/migration.md)
   * [部署 & 配置](self-hosting/deploy-and-configure/README.md)
