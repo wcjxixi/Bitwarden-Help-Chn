@@ -1,14 +1,14 @@
-# 加密密钥算法
+# 加密密钥派生
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/kdf-algorithms/)
 {% endhint %}
 
-Bitwarden 首先在创建账户时使用密钥派生函数 (KDF) 从输入的主密码中派生出账户的主密钥，作为账户主密码哈希的输入（[了解更多](../bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)）。每当用户通过身份验证时，例如解锁密码库或满足[主密码重新提示](../../your-vault/vault-items.md#protect-individual-items)时，都会重复该过程，以便可以将新派生的哈希值与最初派生的哈希值进行比较。如果它们匹配，则用户通过身份验证。
+Bitwarden 在创建账户时首先使用密钥派生函数 (KDF)，通过输入的主密码派生出账户的主密钥，该主密码随后作为输入生成账户的主密码哈希值（[了解更多](../bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)）。每当用户通过身份验证时，例如解锁密码库或满足[主密码重新提示](../../your-vault/vault-items.md#protect-individual-items)时，都会重复该过程，将新派生的哈希值与最初派生的哈希值进行比较。若两者匹配，则用户通过身份验证。
 
 KDF 被用来阻止针对主密码的暴力或字典攻击。KDF 迫使攻击者的机器为每次密码猜测计算大量的哈希值，从而增加攻击者的成本。
 
-目前有两种 KDF 算法可用于 Bitwarden：**PBKDF2** 和 **Argon2**。每种算法都有一系列可用选项，可用于增加攻击者的时间和费用，或「工作因素」。
+目前 Bitwarden 支持两种 KDF 算法：**PBKDF2** 和 **Argon2**。每种算法都有一系列可用选项，可用于增加攻击者的时间和费用，或「工作因素」。
 
 ## PBKDF2
 

@@ -18,9 +18,9 @@ Bitwarden 通过多租户 SaaS 模式提供云端托管服务，提供易于使�
 
 ## 自托管部署 <a href="#self-host-deployment" id="self-host-deployment"></a>
 
-对于某些客户而言，出于偏好、监管合规需求或安全策略等原因，需要将 Bitwarden 等平台部署在本地，而不是使用云托管模式。
+对于某些客户而言，出于偏好、监管合规需求或安全策略等原因，需要将 Bitwarden 等平台部署在内网环境，而非使用云端托管模式。
 
-Bitwarden 通过 GitHub Container Registr (GHCR) 发布基于[源代码](../../security/compliance-audits-and-certifications.md#open-source-codebase)构建的 Docker 容器，以支持这种部署模式。Docker 容器可以在多种不同的平台上部署和管理。本文档概述了在您的环境中自托管 Bitwarden 的支持选项。
+为满足此类需求，Bitwarden 提供基于[源代码](../../security/compliance-audits-and-certifications.md#open-source-codebase)构建的 Docker 容器镜像，并托管于 GitHub Container Registry (GHCR)。用户可以在多种不同的平台上部署和管理此 Docker 容器。本文档概述了在您的环境中自托管 Bitwarden 的支持选项。
 
 {% hint style="success" %}
 Bitwarden 的企业版计划包含无额外费用的自托管服务。

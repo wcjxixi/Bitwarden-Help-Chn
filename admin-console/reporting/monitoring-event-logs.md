@@ -36,8 +36,8 @@ SIEM 事件监控平台提供了很多特定的字段，这些字段用于监控
 ### 登录尝试失败异常等级 <a href="#abnormal-rate-of-failed-login-attempts" id="abnormal-rate-of-failed-login-attempts"></a>
 
 * 失败的登录尝试
-  * `1005` 使用错误的密码导致的登录尝试失败
-  * `1006` 使用错误的两步登录导致的登录尝试失败
+  * `1005` 登录尝试因密码错误而失败
+  * `1006` 登录尝试因两步登录错误而失败
 
 ### 查看敏感或隐藏字段的异常等级 <a href="#abnormal-rate-of-viewing-sensitive-or-hidden-fields" id="abnormal-rate-of-viewing-sensitive-or-hidden-fields"></a>
 
@@ -102,5 +102,5 @@ SIEM 事件监控平台提供了很多特定的字段，这些字段用于监控
   * `1112` 复制了项目 `item-identifier` 的隐藏字段
   * `1113` 复制了项目 `item-identifier` 的安全码
   * `1114` 自动填充了项目 `item-identifier`
-  * `1117` 查看了项目 `item-identifier` 的支付卡数量
+  * `1117` 查看了项目 `item-identifier` 的卡号
 
