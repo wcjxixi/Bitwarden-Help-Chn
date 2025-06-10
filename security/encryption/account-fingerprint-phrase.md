@@ -42,6 +42,6 @@ alligator-transfer-laziness-macaroni-blue
 
 ## 我可以更改我的指纹短语吗？ <a href="#can-i-change-my-fingerprint-phrase" id="can-i-change-my-fingerprint-phrase"></a>
 
-虽然您无法更改当前账户的指纹短语，但您可以删除该账户然后开始一个新账户以生成新的短语。
+虽然您无法更改当前账户的指纹短语，但您可以通过删除账户并创建一个新账户来生成新的短语。
 
-我们的指纹短语是从 [Electronic Frontier Foundation 的长单词列表](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases)中生成的，该列表已经过「人工检查，\[EFF] 试图尽可能多地删除亵渎、侮辱、敏感或情绪化的单词」。
+我们的指纹短语源自[电子前哨基金会 (EFF) 的长单词列表](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases)，该列表已经过「人工检查，并尽可能删除了亵渎、侮辱、敏感或带有煽动色彩的单词」。
