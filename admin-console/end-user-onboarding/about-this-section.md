@@ -8,8 +8,8 @@
 
 欢迎！本帮助中心章节包含协助 Bitwarden 用户入职和提高采用率的内容。
 
-* [**欢迎电子邮件模板**](welcome-email-templates.md)：向您的最终用户、管理用户和 IT 团队宣布推出Bitwarden Password manager 的电子邮件模板。
-* [**管理团队入职电子邮件**](admin-team-onboarding-emails.md)：自动发送给新的 Bitwarden 企业和团队管理员和所有者的入职电子邮件。您可以一次性阅读所有邮件，也可以抓取邮件并根据团队需求进行调整。
+* [**欢迎电子邮件模板**](welcome-email-templates.md)：向您的最终用户、管理用户和 IT 团队宣布推出 Bitwarden Password manager 的电子邮件模板。
+* [**管理团队入职电子邮件**](admin-team-onboarding-emails.md)：自动发送给新的 Bitwarden Enterprise 和 Teams 管理员和所有者的入职电子邮件。您可以一次性阅读所有邮件，也可以抓取邮件并根据团队需求进行调整。
 * [**最终用户采用电子邮件**](end-user-adoption-emails.md)：自动发送给 Bitwarden Enterprise 和 Teams 管理员和所有者的电子邮件，帮助提高团队对新密码管理器的整体采用率。您可以一次性阅读所有邮件，也可以根据自己团队的需要进行修改。
 * [**入职流程**](onboarding-workflows.md)：基于不同配置的用户入职说明。
 
