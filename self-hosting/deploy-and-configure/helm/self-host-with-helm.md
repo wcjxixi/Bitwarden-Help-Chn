@@ -23,6 +23,17 @@
 * 一个支持 ReadWriteMany 的[存储类](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)。
 * 您有一个从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装 ID 和密钥。
 
+### 无根模式要求&#xD; <a href="#rootless-requirements" id="rootless-requirements"></a>
+
+Bitwarden 会在启动时检测您的环境是否限制了用户容器的运行身份，并在检测到限制时自动以无根模式启动部署。要成功以无根模式部署，需满足以下两个选项之一：
+
+* 部署外部 MSSQL 数据库，而不是 Helm 图表中默认包含的 SQL 容器。
+* 使用服务账户、pod 安全上下文或其他方法为包含的 SQL 容器分配高级权限。
+
+{% hint style="info" %}
+虽然 Microsoft 要求 SQL 容器必须以 root 身份运行，但在执行应用程序代码之前，容器启动将逐步降级至非 root 用户。
+{% endhint %}
+
 ## 准备图表 <a href="#prepare-the-chart" id="prepare-the-chart"></a>
 
 ### 将存储库添加到 Helm <a href="#add-the-repo-to-helm" id="add-the-repo-to-helm"></a>

@@ -23,9 +23,17 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.6.1
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.6.0、自托管 2025.6.1）
+
+### 自托管 <a href="#self-host" id="self-host"></a>
+
+* **Helm 无根容器**：Helm 部署现在可以在无根模式下运行 Bitwarden。[了解更多](self-hosting/deploy-and-configure/helm/self-host-with-helm.md#rootless-requirements)。
+
 ## 2025.5.3
 
-### 自托管 <a href="#self-hosting" id="self-hosting"></a>
+### 自托管 <a href="#self-host" id="self-host"></a>
 
 * **SQL 版本支持**：2025.5.3 版将是最后一个支持 SQL Server 2019 的 Bitwarden 版本。Bitwarden 完全支持 SQL Server 2022。
 
