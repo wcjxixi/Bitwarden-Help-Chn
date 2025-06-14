@@ -192,9 +192,9 @@ Bitwarden 自托管 Helm 图表允许您在安装之前或之后包含其他 Kub
 helm upgrade bitwarden bitwarden/self-host --install --namespace bitwarden --values my-values.yaml
 ```
 
-恭喜！Bitwarden 现已移动并在 `https://your.domain.com` 正常运行了，正如在 `my-values.yaml` 中所定义的那样。请在浏览器中访问网页密码库以确认其正在运行。您现在可以注册一个新账户然后登录。
+恭喜！Bitwarden 现已启动并在 `https://your.domain.com` 上正常运行了，如在 `my-values.yaml` 中所定义的那样。请在浏览器中访问网页密码库以确认其正在运行。您现在可以注册一个新账户然后登录。
 
-您需要设置 SMTP 配置和相关的机密信息，以便验证您的新账户的电子邮件。
+您需要设置 SMTP 配置和相关的机密信息，以便验证您的新账户的电子邮箱。
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
