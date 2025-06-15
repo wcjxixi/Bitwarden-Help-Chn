@@ -34,13 +34,17 @@
 
 3、输入您的可信紧急联系人的**电子邮箱**地址。可信紧急联系人必须拥有他们自己的 Bitwarden 账户，但不需要是高级会员。
 
+{% embed url="https://bitwarden.com/assets/2IEldGj87MY2IMDQpty6Vr/1a8841c005dfc0a6baddcde9bf9e0476/Emergency_access.png?w=750&fm=avif&q=80" %}
+紧急访问对话框
+{% endembed %}
+
 4、为可信紧急联系人设置**用户访问权限**级别（[仅查看或接管](emergency-access.md#user-access)）。
 
 5、为密码库访问设置**等待时间**。等待时间决定了在发起紧急访问请求后，可信紧急联系人必须等待多长时间才能访问您的密码库。
 
 6、选择**保存**按钮以发送邀请。
 
-您的可信紧急联系人**现在必须接受邀请**。
+您的可信紧急联系人**必须马上接受邀请**。
 
 {% hint style="info" %}
 紧急联系人邀请的有效期只有 5 天。
