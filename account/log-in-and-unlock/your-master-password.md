@@ -23,7 +23,7 @@
 如果您知道当前的主密码，您可以通过[网页密码库](../../getting-started/getting-started-webvault.md)更改它：
 
 {% hint style="info" %}
-如果您不知道主密码，请参阅[我忘记了主密码](i-forgot-my-master-password.md)**。**
+如果您忘记了当前的主密码，请参阅[我忘记了主密码](i-forgot-my-master-password.md)**。**
 {% endhint %}
 
 1、在网页 App 中，从导航栏选择**设置** → **安全**。

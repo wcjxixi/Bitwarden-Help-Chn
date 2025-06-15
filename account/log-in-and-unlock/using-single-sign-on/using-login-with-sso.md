@@ -17,9 +17,9 @@
 {% hint style="info" %}
 企业客户可以验证其组织的域名所有权（例如 `mycompany.com`）。如果您的登录电子邮箱与您组织的已验证域名（例如 `mycompany.com`）相匹配，则在使用 SSO 登录时无需输入 SSO 标识符。
 
-<img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7xZNW8JqRBbT9BAkTzMIfE/9588c393ada5dee74cca9278e97004c1/Screenshot_2023-03-24_at_9.33.11_AM__2_.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
+<img src="https://bitwarden.com/assets/7xZNW8JqRBbT9BAkTzMIfE/237a34afae675507f2e2d657110076e4/sso.png" alt="" data-size="original">
 
-要了解有关域验证的更多信息，请参阅[这里](../../../admin-console/login-with-sso/claimed-domains.md)。
+要了解更多有关域名验证的信息，请参阅[这里](../../../admin-console/login-with-sso/claimed-domains.md)。
 {% endhint %}
 
 ## 使用 SSO 加入组织 <a href="#join-an-organization-using-sso" id="join-an-organization-using-sso"></a>
@@ -51,7 +51,7 @@
 4. 为账户创建主密码。在您继续操作前，组织管理员需要确认您已加入组织。在管理员确认之前，您可能需要使用主密码登录。
 5. 确认后，您就可以使用**企业单点登录**选项或主密码登录 Bitwarden 访问该组织了。
 
-尝试登录时，如果您收到错误消息 `<email> has been invited to the organization, please accept invitation.`（\<email> 已被邀请加入该组织，请接受邀请。）。说明已有一个 Bitwarden 账户与此电子邮箱相关联。请按照上面的**我已经有 Bitwarden 账户**的说明进行操作。
+尝试登录时，如果您收到错误消息 `<email> has been invited to the organization, please accept invitation.`（\<email> 已被邀请加入该组织，请接受邀请）。说明已有一个 Bitwarden 账户与此电子邮箱相关联。请按照上面的**我已经有 Bitwarden 账户**的说明进行操作。
 {% endtab %}
 
 {% tab title="我未被邀请" %}
@@ -75,7 +75,7 @@
 
 ## 使用 SSO 登录 <a href="#login-using-sso" id="login-using-sso"></a>
 
-使用 SSO 登录所需的步骤将略有不同，具体取决于您的组织是否使用 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)：
+使用 SSO 登录所需的步骤会略有不同，具体取决于您的组织是使用主密码进行解密，还是使用其他受支持的[成员解密选项](../../../login-with-sso/member-decryption-options.md)。这些说明是针对网页 App（[vault.bitwarden.com](https://vault.bitwarden.com/#/login)、[vault.bitwarden.eu](https://vault.bitwarden.eu/#/login) 或自托管网页 App）编写的，但这些步骤也适用于大多数 Bitwarden 客户端：
 
 {% tabs %}
 {% tab title="SSO 登录 & 主密码" %}
@@ -205,7 +205,7 @@ SSO 标识符界面
 
 如果您已经拥有属于组织成员的 Bitwarden 账户，或者您的组织不要求您使用 SSO，则您只需要将您的账户链接到 SSO：
 
-1、打开网页 App，选择组织旁边的 **≡选项**菜单。
+1、打开网页 App，然后选择组织旁边的 **≡选项**菜单。
 
 2、从下拉菜单选择**链接 SSO**。
 

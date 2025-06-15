@@ -18,7 +18,7 @@
 
 ### 何时会发生？ <a href="#when-will-this-happen" id="when-will-this-happen"></a>
 
-从 **2025 年 3 月 4 日**开始，新设备登录时将会提示进行新的验证。这一变更最初将反应在网页 App 中，在用户更新到最新的发布版本将后扩展到其他 Bitwarden App 中。
+从 **2025 年 03 月 04 日**开始，新设备登录时将会提示进行新的验证。这一变更最初将反应在网页 App 中，在用户更新到最新的发布版本将后扩展到其他 Bitwarden App 中。
 
 ### Bitwarden 为什么要实施这一举措？ <a href="#why-is-bitwarden-implementing-this" id="why-is-bitwarden-implementing-this"></a>
 
