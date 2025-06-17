@@ -1,10 +1,10 @@
-# \*通行密钥常见问题
+# 通行密钥 FAQ
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/resources/passkeys-faq/)
 {% endhint %}
 
-> 这是 Bitwarden 资源库的一篇文章，我把它放在帮助中心的「通行密钥」旁边，以便于理解什么是通行密钥 (Passkey)。
+> 这是 Bitwarden 资源库的一篇文章，我把它放在帮助中心，以便于理解什么是通行密钥 (Passkey)。
 
 ### 什么是通行密钥以及它是如何工作的？ <a href="#what-is-a-passkey-and-how-does-it-work" id="what-is-a-passkey-and-how-does-it-work"></a>
 
@@ -36,7 +36,7 @@
 
 通行密钥通常能够在您的设备之间同步，但并非所有平台都支持这一点。Bitwarden 允许您将通行密钥存储在您的密码库中，该密码库已备份并在您的所有设备之间同步。如果您因某种原因丢失了通行密钥，大多数网站都应该有恢复选项，以便您可以为您的账户创建一个新的通行密钥。当然，这要根据每个网站的具体情况而定。
 
-### 如果我的设备被盗怎么办？小窃贼可以通过这种方式获取通行密钥吗？ <a href="#what-happens-if-my-device-is-stolen-can-a-thief-gain-access-to-passkeys-in-that-way" id="what-happens-if-my-device-is-stolen-can-a-thief-gain-access-to-passkeys-in-that-way"></a>
+### 如果我的设备被盗怎么办？窃贼可以通过这种方式获取通行密钥吗？ <a href="#what-happens-if-my-device-is-stolen-can-a-thief-gain-access-to-passkeys-in-that-way" id="what-happens-if-my-device-is-stolen-can-a-thief-gain-access-to-passkeys-in-that-way"></a>
 
 窃贼要想在设备上成功使用密码，唯一方法是他们也可以解锁您的设备，从而有效地获取对您的数据的完全访问权限。然而，每次使用通行密钥通常都需要用户验证，例如生物识别或重新输入设备密码，因此在解锁后窃取您的设备是远远不够的。
 

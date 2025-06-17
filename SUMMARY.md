@@ -378,7 +378,7 @@
   * [Secrets Manager Beta 版注册](miscellaneous/beta-signup.md)
   * [未分配的密码库项目已移至管理控制台](miscellaneous/unassigned-vault-items-moved-to-admin-console.md)
   * [原生移动 App](miscellaneous/native-mobile-apps.md)
-  * [\*通行密钥 FAQ](miscellaneous/passkeys-faq.md)
+  * [通行密钥 FAQ](miscellaneous/passkeys-faq.md)
 
 ## 附录 <a href="#appendix" id="appendix"></a>
 
