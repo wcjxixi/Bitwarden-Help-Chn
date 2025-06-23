@@ -26,7 +26,7 @@
 
 * **这是什么类型的 Send？**：选择此 Send 是**文本**还是**文件**：
 
-<table><thead><tr><th width="150">类型</th><th>描述</th></tr></thead><tbody><tr><td><strong>文本</strong></td><td><p>在输入框中输入或粘贴所需的文本。切换<strong>访问 Send 时，默认隐藏文本</strong>选项，将要求接收者在打开 Send 时<a href="send-privacy.md">切换可见性</a>。加密后的发送内容不得超过 1000 个字符。</p><p></p><p>保存时，Send 文本的字符数会因加密而增加，这意味着一个 700 个字符的 Send 文本在与 Bitwarden 接触时会增加到 ~1,000 个字符，从而触发错误。根据经验，加密后字符数会增加 30-50%。</p></td></tr><tr><td><strong>文件</strong></td><td>选择<strong>选择文件</strong>按钮，然后浏览用于 Send 的文件。每个 Send 的最大文件大小为 500 MB（移动端是 100 MB）。（<strong>要求高级会员</strong> &#x26; 已验证电子邮箱）</td></tr></tbody></table>
+<table><thead><tr><th width="272.199951171875">类型</th><th>描述</th></tr></thead><tbody><tr><td><strong>文本</strong></td><td><p>在输入框中输入或粘贴所需的文本。切换<strong>访问 Send 时，默认隐藏文本</strong>选项，将要求接收者在打开 Send 时<a href="send-privacy.md">切换可见性</a>。加密后的发送内容不得超过 1000 个字符。</p><p></p><p>保存时，Send 文本的字符数会因加密而增加，这意味着一个 700 个字符的 Send 文本在与 Bitwarden 接触时会增加到 ~1,000 个字符，从而触发错误。根据经验，加密后字符数会增加 30-50%。</p></td></tr><tr><td><strong>文件</strong></td><td>选择<strong>选择文件</strong>按钮，然后浏览用于 Send 的文件。每个 Send 的最大文件大小为 500 MB（移动端是 100 MB）。（<strong>要求高级会员</strong> &#x26; 已验证电子邮箱）</td></tr></tbody></table>
 
 * **名称**：为此 Send 指定一个可识别的有含义的名称。
 
@@ -34,7 +34,7 @@
 
 4、选择 **⮟选项**菜单，根据需要配置以下选项：
 
-<table><thead><tr><th width="150">选项</th><th>描述</th></tr></thead><tbody><tr><td><strong>删除日期</strong></td><td>此 Send 将在指定的日期和时间被永久<a href="send-lifespan.md#deletion-behavior">删除</a>。默认为创建后 7 天。<strong>允许的最大值</strong>为自创建后 31 天。</td></tr><tr><td><strong>到期日期</strong></td><td>此 Send 将在指定的日期和时间<a href="send-lifespan.md#expiration-behavior">到期</a>。默认为<strong>永不</strong>。</td></tr><tr><td><strong>最大访问次数</strong></td><td>在达到指定的访问次数后，此 Send 将被<a href="send-lifespan.md#maximum-access-count-behavior">禁用</a>。默认为不指定。</td></tr><tr><td><strong>密码</strong></td><td>要求此 Send 的接收者输入<a href="send-privacy.md#send-passwords">密码</a>才能获得访问权限。</td></tr><tr><td><strong>备注</strong></td><td>输入此 Send 的私密备注，该备注仅对发送者可见。</td></tr><tr><td><strong>对接收者隐藏我的电子邮箱地址</strong></td><td>对 Send 接收者<a href="send-privacy.md#hide-email">隐藏您的电子邮箱</a>。</td></tr><tr><td><strong>禁用此 Send 则任何人无法访问它</strong></td><td>选中此复选框可阻止任何接收者访问此 Send。您仍然可以从 Send 视图中交互此 Send。</td></tr></tbody></table>
+<table><thead><tr><th width="272.74289376395086">选项</th><th>描述</th></tr></thead><tbody><tr><td><strong>删除日期</strong></td><td>此 Send 将在指定的日期和时间被永久<a href="send-lifespan.md#deletion-behavior">删除</a>。默认为创建后 7 天。<strong>允许的最大值</strong>为自创建后 31 天。</td></tr><tr><td><strong>到期日期</strong></td><td>此 Send 将在指定的日期和时间<a href="send-lifespan.md#expiration-behavior">到期</a>。默认为<strong>永不</strong>。</td></tr><tr><td><strong>最大访问次数</strong></td><td>在达到指定的访问次数后，此 Send 将被<a href="send-lifespan.md#maximum-access-count-behavior">禁用</a>。默认为不指定。</td></tr><tr><td><strong>密码</strong></td><td>要求此 Send 的接收者输入<a href="send-privacy.md#send-passwords">密码</a>才能获得访问权限。</td></tr><tr><td><strong>备注</strong></td><td>输入此 Send 的私密备注，该备注仅对发送者可见。</td></tr><tr><td><strong>对接收者隐藏我的电子邮箱地址</strong></td><td>对 Send 接收者<a href="send-privacy.md#hide-email">隐藏您的电子邮箱</a>。</td></tr><tr><td><strong>禁用此 Send 则任何人无法访问它</strong></td><td>选中此复选框可阻止任何接收者访问此 Send。您仍然可以从 Send 视图中交互此 Send。</td></tr></tbody></table>
 
 {% hint style="success" %}
 本文的剩余部分将介绍如何将 Send 链接复制到剪贴板，但是您可以通过在**保存**之前勾选**保存时复制此 Send 的分享链接到剪贴板**以自动执行此操作。

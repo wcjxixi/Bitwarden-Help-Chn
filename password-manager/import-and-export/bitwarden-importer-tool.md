@@ -9,7 +9,7 @@ Bitwarden 导入器工具可以轻松地将您的密码和其他信息从其他�
 * LastPass
 
 {% hint style="info" %}
-Bitwarden 导入器会将信息导入您的个人密码库。导入信息后，您可以将项目手动移动组织中用于共享。
+Bitwarden 导入器会将信息导入您的个人密码库。导入信息后，您可以将项目手动移动到组织中用于共享。
 {% endhint %}
 
 ## 下载 <a href="#download" id="download"></a>
