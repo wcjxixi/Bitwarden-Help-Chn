@@ -44,7 +44,7 @@ Bitwarden 组织的成员可以被授予各种角色和集合权限。您可以�
 * 访问事件日志
 * 访问导入/导出
 * 访问报告
-* 管理账户恢复（也可管理设备批准请求）
+*
 * 管理所有集合（提供以下 3 个选项）
   * 创建新的集合
   * 编辑任何集合
@@ -53,17 +53,21 @@ Bitwarden 组织的成员可以被授予各种角色和集合权限。您可以�
 * 管理 SSO
 * 管理策略
 * 管理用户
-* 管理账户恢复
+* 管理账户恢复（也可管理设备批准请求）
 
 {% hint style="success" %}
 具有**管理用户**权限的自定义用户可以管理其他自定义用户，但他们只能为其他自定义用户分配他们自己已经拥有的权限。
+{% endhint %}
+
+{% hint style="info" %}
+**管理帐户恢复**将授予对管理控制台上的**成员**选项卡的有限访问权限，以访问主密码重置操作。
 {% endhint %}
 
 ## 权限 <a href="#permissions" id="permissions"></a>
 
 权限决定了用户可以对特定集合中的项目执行哪些操作。[角色](member-roles-and-permissions.md#member-roles)只能在单个成员的级别上设置，而权限既可以为单个成员设置，也可以为整个群组设置：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7xXXzsMeryCUtvwwjvqjYr/b5ef5c6555e4cc25d6d176cbe0654027/2024-12-03_15-19-10.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/7xXXzsMeryCUtvwwjvqjYr/9a6c7a2916b751acad313f8ddc4ad43e/2025-02-13_10-51-04.png?w=1114&fm=avif&q=80" %}
 权限选项
 {% endembed %}
 

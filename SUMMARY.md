@@ -119,7 +119,7 @@
     * [与 Bitwarden 支持排除移动端故障](password-manager/more/yu-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)
 * [Bitwarden Authenticator](bitwarden-authenticator/README.md)
   * [Bitwarden Authenticator](bitwarden-authenticator/bitwarden-authenticator.md)
-  * [=同步验证码](bitwarden-authenticator/totp-sync.md)
+  * [同步验证码](bitwarden-authenticator/totp-sync.md)
   * [导入 & 导出](bitwarden-authenticator/import-and-export.md)
   * [FAQ](bitwarden-authenticator/authenticator-faqs.md)
 * [Secrets Manager](secrets-manager/README.md)
@@ -378,7 +378,7 @@
   * [Bitwarden 101 视频系列-入门](miscellaneous/bitwarden-101-video-series-getting-started.md)
   * [Secrets Manager Beta 版注册](miscellaneous/beta-signup.md)
   * [未分配的密码库项目已移至管理控制台](miscellaneous/unassigned-vault-items-moved-to-admin-console.md)
-  * [=旧版用户支持](miscellaneous/legacy-user-support.md)
+  * [旧版用户支持](miscellaneous/legacy-user-support.md)
   * [原生移动 App](miscellaneous/native-mobile-apps.md)
   * [通行密钥 FAQ](miscellaneous/passkeys-faq.md)
 
