@@ -23,6 +23,32 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.6.2
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.6.1、浏览器扩展 2025.6.0、桌面 2025.6.0、CLI 2025.6.0）
+
+{% hint style="info" %}
+使用旧版加密方案的账户不再受支持。2017 年之前创建且 2023 年以来未登录过网页 App 的长期未使用的账户，因采使用了旧版加密方案，这些账户将不再受支持。仅两年内无任何使用记录的休眠账户会受到影响。[了解更多](miscellaneous/legacy-user-support.md)。
+{% endhint %}
+
+{% hint style="danger" %}
+仅限自托管：Bitwarden 自托管的 2025.6.0-2025.6.2 版本在无意中移除了某些部署模式下对 **Kerberos** 外部数据库身份验证的支持。这将在即将发布的自托管发布中得到修复，除非 Bitwarden 支持另有说明，否则使用 Kerberos 身份验证的客户应等到下一个版本发布后再升级他们的自托管部署。
+{% endhint %}
+
+### Password Manager
+
+* **添加和编辑项目时，浏览器扩展的持久性**：现在，浏览器扩展对项目数据的更改操作将有最长 2 分钟的缓存周期，即使点击其他区域或最小化扩展窗口也不会丢失更改的数据。
+* **浏览器扩展通知重新设计**：浏览器扩展通知有了新的外观和体验。[了解更多](password-manager/autofill/autofill-from/autosave-from-browser-extensions.md)。
+* **移动 App 的高级故障排除**：在移动 App 中，用户现在可以选择本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/yu-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
+
+### Bitwarden Authenticator
+
+* **使用 Password Manager 同步 TOTP**：用户现在可以选择在 Bitwarden Authenticator 和 Password Manager 之间无缝同步验证码数据。[了解更多](bitwarden-authenticator/totp-sync.md)。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **成员权限更新**：**管理账户恢复**自定义角色权限将授予重置组织成员主密码的权限。成员界面上的任何其他操作也需要**管理用户**权限。了解更多有关[自定义角色](admin-console/user-management/member-roles-and-permissions.md#custom-role)的信息。
+
 ## 2025.6.1
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.6.0、自托管 2025.6.1）
