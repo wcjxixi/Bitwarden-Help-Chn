@@ -340,7 +340,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### Password Manager
 
 * **使用生物识别解锁 - Linux 浏览器扩展**：Linux 用户现在可以在基于 Chromium 的浏览器上使用 Bitwarden 浏览器扩展的生物识别解锁功能。[了解更多](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
-* 桌**面 App 阻止屏幕捕获**：默认情况下，Windows 和 macOS 的桌面应用程序现在将阻止屏幕捕获和录制。[了解更多](getting-started/getting-started-desktop.md#xia-yi-bu)。
+* **桌面 App 阻止屏幕捕获**：默认情况下，Windows 和 macOS 的桌面 App 现在将阻止屏幕捕获和录制。[了解更多](getting-started/getting-started-desktop.md#xia-yi-bu)。
 * **在桌面端同步锁定的密码库**：即使活动账户被锁定，桌面 App 现在也可以手动同步。[了解更多](your-vault/syncing-your-vault.md#manual-sync)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -391,7 +391,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ## 2024.8.0
 
 {% hint style="info" %}
-在未来的发布中，通过 Apple App Store 和 Google Play Store 下载的 Password Manager 移动 App 将升级为原生移动应用程序。[了解更多](miscellaneous/native-mobile-apps.md)。
+在未来的发布中，通过 Apple App Store 和 Google Play Store 下载的 Password Manager 移动 App 将升级为原生移动 App。[了解更多](miscellaneous/native-mobile-apps.md)。
 {% endhint %}
 
 此次发布包含：
@@ -446,7 +446,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 * **紧急联系人和提供商的邀请说明**：受信任的紧急联系人和提供商用户在接受邀请后，现在将进入「需要确认」状态，使您的下一步操作更清晰。
 * **批量分配项目到集合**：现在，您可以从密码库视图中将项目批量分配到组织的集合中。此功能的前一版本称为「移动到组织」。[了解更多](your-vault/vault-items.md#assign-to-collections)。
 * **重命名将项目添加到文件夹**：在密码库视图中，将项目添加到文件夹的选项已从「移动所选」重命名为「添加到文件夹」。[了解更多](your-vault/folders.md#move-items-to-a-folder)。
-* **弃用桌面应用程序设置**：桌面应用程序现在默认可以批准设备登录。[了解更多](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
+* **弃用桌面 App 设置**：桌面应 App 现在默认可以批准设备登录。[了解更多](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
 * **改进的 SSO 标识符工作流程**：管理员现在可以分发企业单点登录界面的 URL，并将其 SSO 标识符作为查询参数包含在内，以自动将组织成员重定向到 IdP，从而获得更简化的 SSO 体验。[了解更多](login-with-sso/login-with-sso-faqs.md#q-do-i-need-to-enter-my-organization-identifier-every-time-i-login)。
 
 ### Secrets Manager
@@ -506,7 +506,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Bitwarden Authenticator
 
-* **导入到 Bitwarden Authenticator**：将数据从 Google Authenticator、LastPass Authenticator、Raivo 以及 2FAS 等其他各种身份验证软件直接导入到 Bitwarden Authenticator。[了解更多](bitwarden-authenticator/import-and-export.md)。
+* **导入到 Bitwarden Authenticator**：将数据从 Google Authenticator、LastPass Authenticator、Raivo 以及 2FAS 等其他各种身份验证 App 直接导入到 Bitwarden Authenticator。[了解更多](bitwarden-authenticator/import-and-export.md)。
 
 ### Secrets Manager
 
@@ -529,7 +529,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **Splunk Cloud 集成**：Bitwarden 事件日志应用程序可用于 Splunk Cloud Classic 和 Splunk Cloud Victoria 上的信息和事件管理。[了解更多](admin-console/reporting/configure-siem/splunk-siem.md)。
+* **Splunk Cloud 集成**：Bitwarden 事件日志 App 可用于 Splunk Cloud Classic 和 Splunk Cloud Victoria 上的信息和事件管理。[了解更多](admin-console/reporting/configure-siem/splunk-siem.md)。
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
@@ -546,7 +546,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### Password Manager
 
 * **在移动 App 上使用通行密钥**：Password Manager 移动 App 现在可以使用通行密钥创建和登录。此功能适用于 iOS 系统，Android 系统为测试版。[了解更多](password-manager/autofill/more-autofill-options/autofill-passkeys.md)。
-* **删除已存储的通行密钥**：现在可以使用 Bitwarden 浏览器扩展和桌面应用程序删除存储在 Bitwarden 登录项目中的通行密钥。[了解更多](password-manager/autofill/more-autofill-options/autofill-passkeys.md)。
+* **删除已存储的通行密钥**：现在可以使用 Bitwarden 浏览器扩展和桌面 App 删除存储在 Bitwarden 登录项目中的通行密钥。[了解更多](password-manager/autofill/more-autofill-options/autofill-passkeys.md)。
 
 ### Secrets Manager
 
@@ -555,7 +555,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ## Bitwarden Authenticator
 
-介绍全新的 Bitwarden Authenticator 独立移动应用程序。使用 Bitwarden Authenticator 生成用于应用程序和网站双因素身份验证的验证码。从应用商店下载或[了解更多](bitwarden-authenticator/bitwarden-authenticator.md)。
+介绍全新的 Bitwarden Authenticator 独立移动 App。使用 Bitwarden Authenticator 生成用于 App 和网站双因素身份验证的验证码。从应用商店下载或[了解更多](bitwarden-authenticator/bitwarden-authenticator.md)。
 
 ## 2024.4.1
 
@@ -579,8 +579,8 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Password Manager
 
-* **Bitwarden 应用程序可使用新的语言**：在社区翻译人员的贡献下，Bitwarden 应用程序现在提供了新的语言选项！[点击这里](password-manager/more/localization.md)查看完整的语言列表。[了解更多](https://contributing.bitwarden.com/contributing/#localization-l10n)关于 Bitwarden 本地化的信息。
-* **桌面应用程序硬件加速**：Bitwarden 桌面应用程序现在可以选择打开或关闭硬件加速以优化性能。该设置默认启用。
+* **Bitwarden App 可使用新的语言**：在社区翻译人员的贡献下，Bitwarden App 现在提供了新的语言选项！[点击这里](password-manager/more/localization.md)查看完整的语言列表。[了解更多](https://contributing.bitwarden.com/contributing/#localization-l10n)关于 Bitwarden 本地化的信息。
+* **桌面 App 硬件加速**：Bitwarden 桌面 App 现在可以选择打开或关闭硬件加速以优化性能。该设置默认启用。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -684,8 +684,8 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 ### Password Manager
 
-* **关闭使用通行密钥提示的选项**：您现在可以选择浏览器扩展程序是否要求保存和使用通行密钥（参阅[这里](password-manager/autofill/more-autofill-options/autofill-passkeys.md#turn-off-passkey-prompt)）。
-* **移动设备上的 ForwardEmail 支持**：移动应用程序上的用户名生成器的转发电子邮件别名提供程序现在支持 ForwardEmail（参阅[这里](password-manager/vault-basics/generator.md#generate-a-username)）。
+* **关闭使用通行密钥提示的选项**：您现在可以选择浏览器扩展是否要求保存和使用通行密钥（参阅[这里](password-manager/autofill/more-autofill-options/autofill-passkeys.md#turn-off-passkey-prompt)）。
+* **移动设备上的 ForwardEmail 支持**：移动 App 上的用户名生成器的转发电子邮件别名提供程序现在支持 ForwardEmail（参阅[这里](password-manager/vault-basics/generator.md#generate-a-username)）。
 * **密码库健康报告更新**：组织成员现在可以在个人密码库健康报告中看到自己拥有**可编辑**权限的组织拥有的项目。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -699,10 +699,10 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 ### Password Manager
 
-* **保存通行密钥到您的密码库**：现在可以将通行密钥存储在您的 Bitwarden 密码库中了！使用 Bitwarden 浏览器扩展程序存储并使用通行密钥登录（参阅[这里](password-manager/autofill/more-autofill-options/autofill-passkeys.md)）。
-* **LastPass 直接导入器**：使用浏览器扩展或桌面应用程序将数据从 LastPass 直接导入到 Bitwarden（参阅[这里](password-manager/import-and-export/import-guides/import-data-from-lastpass.md#import-to-bitwarden)）。
-* **从浏览器扩展和桌面应用程序导入**：现在可以从浏览器扩展和桌面应用程序将数据导入到 Bitwarden，包括如果您是使用 LastPass SSO 的团队成员（参阅[这里](import-export/import-data-to-your-vault.md)）。
-* **移动端设置重组**：移动应用程序上的「设置」选项卡已重新组织为更直观的类别。
+* **保存通行密钥到您的密码库**：现在可以将通行密钥存储在您的 Bitwarden 密码库中了！使用 Bitwarden 浏览器扩展存储并使用通行密钥登录（参阅[这里](password-manager/autofill/more-autofill-options/autofill-passkeys.md)）。
+* **LastPass 直接导入器**：使用浏览器扩展或桌面 App 将数据从 LastPass 直接导入到 Bitwarden（参阅[这里](password-manager/import-and-export/import-guides/import-data-from-lastpass.md#import-to-bitwarden)）。
+* **从浏览器扩展和桌面 App 导入**：现在可以从浏览器扩展和桌面 App 将数据导入到 Bitwarden，包括如果您是使用 LastPass SSO 的团队成员（参阅[这里](import-export/import-data-to-your-vault.md)）。
+* **移动端设置重组**：移动 App 上的「设置」选项卡已重新组织为更直观的类别。
 * **支持自托管别名提供程序**：Password Manager 客户端上的用户名生成器现在可以连接到自托管 Addy.io 和 SimpleLogin 实例（参阅[这里](password-manager/vault-basics/generator.md#simplelogin)）。
 * **通过上下文菜单自动填充支付卡和身份**：现在可以使用浏览器扩展的上下文菜单自动填充支付卡和身份（参阅[这里](password-manager/autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-the-context-menu)）。
 
@@ -720,7 +720,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 * **导出更新**：密码库数据的 JSON 导出现在将包括适用项目的密码历史记录（参阅[这里](import-export/export-vault-data.md)）。
 * **CLI 密码生成器选项**：使用 CLI 生成密码时增加了自定义密码复杂度的选项标志（参阅[这里](password-manager/vault-basics/generator.md#cli)）。
 * **ProtonPass JSON 导入器**：ProtonPass JSON 已添加到可用于直接导入 Bitwarden Password Manager 的格式列表中（参阅[这里](import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)）。
-* **桌面应用程序主题更新**：桌面应用程序的暗色主题已更新！
+* **桌面 App 主题更新**：桌面 App 的暗色主题已更新！
 
 ## 2023.8.2
 
@@ -750,7 +750,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 * **用于自托管的设备登录**：连接到自托管服务器的 Bitwarden 应用程序现在可以通过向已注册设备发送身份验证请求来登录，而不是使用主密码（参阅[这里](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)）。
 * **Forward Email 别名集成**：将 Bitwarden 用户名生成器连接到 [Forward Email](https://forwardemail.net/)，以便轻松创建电子邮件别名（参阅[这里](password-manager/vault-basics/generator.md#username-types)）。
 * **浏览器扩展 TOTP 自动填充**：浏览器扩展现在将自动填充 TOTP 代码，除非您使用了在页面加载时自动填充功能（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#totp-auto-fill)）。
-* **在 \<textarea> 中使用自动填充**：Bitwarden 应用程序现在可以将凭据自动填充到 HTML 的 `<textarea>` 元素中。
+* **在 \<textarea> 中使用自动填充**：Bitwarden App 现在可以将凭据自动填充到 HTML 的 `<textarea>` 元素中。
 * **从密码库页面创建文件夹和集合**：现在可以从主**密码库**页面使用**新建**按钮创建文件夹和集合。
 
 ### 机密管理器 Beta <a href="#secrets-manager-beta" id="secrets-manager-beta"></a>
@@ -767,14 +767,14 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 ## 2023.5.0
 
 {% hint style="danger" %}
-从 **2023.5.0** 版本开始，Password Manager 桌面应用程序将不再支持 Windows 8.1 及更早版本或 Windows Server 2012 及更早版本。
+从 **2023.5.0** 版本开始，Password Manager 桌面 App 将不再支持 Windows 8.1 及更早版本或 Windows Server 2012 及更早版本。
 
-这些操作系统的用户可以在[此处](https://github.com/bitwarden/clients/releases)下载 2023.4.0 桌面应用程序，并且必须禁用自动更新（在[此处](your-vault/general-faqs.md#q-can-i-turn-off-automatic-updates-for-bitwarden)了解更多信息）。我们建议升级到受支持的操作系统，因为 Bitwarden 云服务器不能保证长期支持旧的客户端版本，并且将来可能会给您带来安全风险。
+这些操作系统的用户可以在[此处](https://github.com/bitwarden/clients/releases)下载 2023.4.0 桌面 App，并且必须禁用自动更新（在[此处](your-vault/general-faqs.md#q-can-i-turn-off-automatic-updates-for-bitwarden)了解更多信息）。我们建议升级到受支持的操作系统，因为 Bitwarden 云服务器不能保证长期支持旧的客户端版本，并且将来可能会给您带来安全风险。
 {% endhint %}
 
 此次发布包含：
 
-* **环境选择器**：改进了将 Bitwarden 应用程序连接到自托管服务器的工作流程。参阅[这里](self-hosting/connect-clients/connect-individual-clients.md)。
+* **环境选择器**：改进了将 Bitwarden App 连接到自托管服务器的工作流程。参阅[这里](self-hosting/connect-clients/connect-individual-clients.md)。
 * **Password Manager - 改进了德语 HTML 的自动填充**：德语 HTML 字段现在可用于自动填充。参阅[这里](https://github.com/bitwarden/clients/pull/4210)。
 * **Secrets Manager - 在机密创建期间创建工程**：您现在可以在机密创建菜单中创建新的工程。参阅[这里](secrets-manager/your-secrets/secrets.md)。
 * **自托管 - 阐明有关服务器许可证的措辞**：有 60 天的宽限期来上传新许可证以替换过期的许可证。参阅[这里](self-hosting/licensing.md#update-organization-license)。
@@ -794,8 +794,8 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 * **改进的经销商计费**：Bitwarden 经销商现在是唯一有权查看其客户组织的计费、订阅或付款信息的实体。参阅[这里](plans-and-pricing/bitwarden-resellers.md)。
 * **主密码要求策略更新**：如果启用，主密码要求策略现在可以设置为提示现有的不合规用户更新他们的主密码。参阅[这里](organizations/enterprise-policies.md#master-password-requirements)。
 * **密码库超时策略更新**：密码库超时策略现在提供了指定密码库超时动作的选项。参阅[这里](organizations/enterprise-policies.md#vault-timeout)。
-* **桌面端 - 新的生物识别选项**：您现在可以选择是在应用程序启动时要求主密码还是在打开时允许生物识别。参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
-* **桌面端 - Windows Hello 安全改进**：解决了与 Windows Hello 和 Windows Credential Manager 相关的漏洞。作为一项附加措施，我们建议使用新选项以在应用程序启动时要求输入主密码。参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
+* **桌面端 - 新的生物识别选项**：您现在可以选择是在 App 启动时要求主密码还是在打开时允许生物识别。参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
+* **桌面端 - Windows Hello 安全改进**：解决了与 Windows Hello 和 Windows Credential Manager 相关的漏洞。作为一项附加措施，我们建议使用新选项以在 App 启动时要求输入主密码。参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
 * **浏览器扩展 - 改进的表单检测**：改进了表单检测的逻辑，并针对浏览器扩展的通知栏解决了错误报告。有关技术细节，请参阅[这里](https://github.com/bitwarden/clients/pull/4798)。
 
 ## 2023.3.0
@@ -808,8 +808,8 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 * **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 账户和[更改主密码](account/log-in-and-unlock/your-master-password.md#change-your-master-password)的任何用户强制执行。
 * **激活自动填充策略**：对于企业组织，激活自动填充策略将自动为组织的新成员和现有成员打开页面加载时的自动填充。参阅[这里](organizations/enterprise-policies.md#activate-auto-fill)。
 * **浏览器扩展 - 改进的通知栏**：用于将未检测到的项目添加到您的密码库的通知栏现在为遵守删除单个密码库策略的用户提供了更直观的工作流程。参阅[这里](getting-started/getting-started-browserext.md#auto-save-a-login)。
-* **iOS - 选择 Bitwarden 获取验证码**：iOS 16+ 用户现在可以将 Bitwarden 设置为直接从相机应用程序扫描代码时用于存储验证码的默认应用程序。参阅[这里](your-vault/totp.md#bitwarden-authenticator-on-ios)。
-* **移动端 - 在应用程序内更改语言**：不同于在设备操作系统上设置语言，用户可以在 Bitwarden 移动应用程序中更改语言。参阅[这里](password-manager/more/localization.md#change-app-language)。
+* **iOS - 选择 Bitwarden 获取验证码**：iOS 16+ 用户现在可以将 Bitwarden 设置为直接从相机 App 扫描代码时用于存储验证码的默认应用程序。参阅[这里](your-vault/totp.md#bitwarden-authenticator-on-ios)。
+* **移动端 - 在 App 内更改语言**：不同于在设备操作系统上设置语言，用户可以在 Bitwarden 移动 App 中更改语言。参阅[这里](password-manager/more/localization.md#change-app-language)。
 
 ### 机密管理器 Beta <a href="#secrets-manager-beta" id="secrets-manager-beta"></a>
 
@@ -832,9 +832,9 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 {% endhint %}
 
 * **增加了 PBKDF2 的默认 KDF 迭代**：按照 [OWASP](https://zh.wikipedia.org/zh-cn/OWASP) 的建议，新的 Bitwarden 账户将为 PBKDF2 使用 600,000 次 KDF 迭代。现有的账户可以手动增加此数值。参阅[这里](security/encryption/encryption-protocols.md#changing-kdf-iterations)。
-* **主密码安全检查**：在移动应用程序、浏览器扩展和桌面应用程序上创建账户的新用户现在可以通过 HIBP 检查已知的数据泄露，以了解他们的潜在主密码。这将在以后的版本中被带到网页密码库。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
+* **主密码安全检查**：在移动 App、浏览器扩展和桌面 App 上创建账户的新用户现在可以通过 HIBP 检查已知的数据泄露，以了解他们的潜在主密码。这将在以后的版本中被带到网页密码库。参阅[这里](your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)。
 * **组织密码库更新**：作为改进网页密码库 UI 的持续努力的一部分，一些组织管理功能进行了重新设计，例如用于项目和集合管理的合并**密码库**视图，以及专用的**成员**和**群组**视图。
-* **在其他客户端上使用设备登录**：现在可以在其他客户端上使用设备登录。登录请求现在也可以从浏览器扩展、桌面应用程序和移动应用程序发起，现在也可以从桌面应用程序获得批准。参阅[这里](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
+* **在其他客户端上使用设备登录**：现在可以在其他客户端上使用设备登录。登录请求现在也可以从浏览器扩展、桌面 App 和移动 App 发起，现在也可以从桌面 App 获得批准。参阅[这里](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
 * **自托管组织的自动许可证同步**：自托管组织可以启用自动许可证同步，以便自动更新计费和订阅更改，而不必手动重新上传许可证。参阅[这里](self-hosting/licensing.md#update-a-renewed-organization-license)。
 * **用于 Bitwarden 统一的 SQLite 数据库选项**：SQLite 现在是 Bitwarden 统一自托管部署的可用数据库选项。参阅[这里](self-hosting/deploy-and-configure/docker/unified-deployment-beta.md)。
 * **更新了自托管安装程序 URL**：用于下载自托管服务器安装程序的 URL 已更改。Linux 参阅[这里](self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#install-bitwarden)，Windows 参阅[这里](self-hosting/deploy-and-configure/docker/windows-standard-deployment.md#install-bitwarden)。
@@ -879,7 +879,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 * **组织密码库更新**：作为改进网页密码库 UI 的持续努力的一部分，某些组织管理功能已被移动，例如转移到专用的**计费**和**报告**选项卡中。
 * **登录流程更新**：为了适应新的登录选项，登录流程已分为两个界面。
 * **SCIM 更新**：SCIM 触发的事件现在将被记录为 `SCIM` 而不是 `Unkown`，并且 SCIM API 密钥现在默认会被混淆。
-* **从 iOS 应用扩展生成用户名和密码**：现在可以从 iOS 应用扩展「即时」生成用户名和密码，在使用浏览器等应用时可从「共享」菜单访问。
+* **从 iOS 应用扩展生成用户名和密码**：现在可以从 iOS App 扩展「即时」生成用户名和密码，在使用浏览器等 App 时可从「共享」菜单访问。
 * **用于移动设备的新主题**：流行的 Solarized Dark 主题已引入移动设备。
 * **目录连接器 - 用于 Google Workspace 的群组筛选器查询**：查询参数可被用于 Google Workspace 的群组筛选器中（参阅[这里](directory-connector/sync-with-google-workspace.md#specify-sync-filters)）。
 * **性能优化**：我们改进了网页密码库的加载时间和访问具有数千个密码库项目的账户时的体验。
@@ -889,7 +889,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 此次发布包含：
 
 * **受密码保护的加密导出**：加密的 `.json` 导出现在可以使用您选择的密码进行加密。密码保护的导出可以导入任何 Bitwarden 账户（参阅[这里](import-export/encrypted-exports.md)）。
-* **移动端用户名生成器**：用户名生成器现在可用于 Bitwarden 移动端应用程序（参阅[这里](password-manager/vault-basics/generator.md#generate-a-username)）。
+* **移动端用户名生成器**：用户名生成器现在可用于 Bitwarden 移动端 App（参阅[这里](password-manager/vault-basics/generator.md#generate-a-username)）。
 * **DuckDuckGo 电子邮件别名集成**：将 Bitwarden 用户名生成器连接到 DuckDuckGo，以便轻松创建电子邮件别名（参阅[这里](password-manager/vault-basics/generator.md#username-types)）。
 * **DuckDuckGo macOS 浏览器集成**：我们与 DuckDuckGo 合作创建了与他们[即将推出的 macOS 浏览器](https://spreadprivacy.com/introducing-duckduckgo-for-mac/)的集成！请继续关注他们何时启动此功能的更多信息。
 * **SCIM 更新**：被撤销的用户将不再占据您组织中的许可席位（参阅[这里](scim/about-scim.md#revoking-and-restoring-access)）。
@@ -902,7 +902,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 * **提供商门户更新**：提供商门户主界面现在具有每一个客户组织的一目了然的席位和计划报告。
 * **组织密码库导出事件**：当所有者或管理员执行密码库导出时，该操作现在将记录在组织的事件日志中（参阅[这里](admin-console/reporting/event-logs.md#organization-events)）。
 * **浏览器扩展 - 支持预配置环境 URL**：自托管客户现在可以为浏览器扩展预配置环境 URL，通过使用端点管理来部署您的配置，从而简化最终用户的部署（参阅[这里](broken-reference)）。
-* **移动端 - 更新至 Bitwarden Authenticator**：移动端应用程序现在有一个验证码界面，可让您快速轻松地访问您的所有 TOTP（参阅[这里](your-vault/totp.md#viewing-totp-codes)）。我们还改进了通过移动应用程序将 TOTP 代码添加到密码库项目的过程（参阅[这里](your-vault/totp.md#scan-a-qr-code)）。
+* **移动端 - 更新至 Bitwarden Authenticator**：移动 App 现在有一个验证码界面，可让您快速轻松地访问您的所有 TOTP（参阅[这里](your-vault/totp.md#viewing-totp-codes)）。我们还改进了通过移动 App 将 TOTP 代码添加到密码库项目的过程（参阅[这里](your-vault/totp.md#scan-a-qr-code)）。
 * **CLI - `serve` 来源保护**：`serve` 命令现在将默认阻止任何使用 `Origin` 标头发出的请求（参阅[这里](password-manager/developer-tools/password-manager-cli.md#serve)）。
 
 ## 2022.8.1
@@ -918,23 +918,23 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 
 * **用户撤销**：组织现在可以在不完全移除用户的情况下暂时撤销用户对组织的访问权限（参阅[这里](organizations/user-management.md#revoke-access)）。
 * **企业策略更新**：企业策略名称和描述已更新，以更好地描述它们对您的组织的影响（参阅[这里](organizations/enterprise-policies.md)）。
-* **设置和首选项更新**：一些应用程序设置和首选项的名称和描述已更新，更加直观。
+* **设置和首选项更新**：一些 App 设置和首选项的名称和描述已更新，更加直观。
 
 ## 2022.6.0
 
 此次发布包含关键功能和可用性改进，使 Bitwarden 在旅途中更加出色：
 
 * **自动填充期间的账户切换 (iOS)**：在自动填充期间通过点击头像按钮快速切换到另一个账户，现在可在 Android 和 iOS 上使用（参阅[这里](password-manager/autofill/autofill-from/autofill-from-ios.md)）。
-* **移动端的密码库筛选器**：在移动应用程序上，您现在可以按密码库筛选项目。
+* **移动端的密码库筛选器**：在移动 App 上，您现在可以按密码库筛选项目。
 * **组织成员高级状态**：组织成员现在可以在收到邀请后立即使用高级功能，例如高级 2FA 方式，而无需确认。
-* **可访问性改进**：此版本包括一些更改，这些更改将通过辅助技术提高 Bitwarden 的性能，包括具有 [hCaptcha 无障碍访问](https://dashboard.hcaptcha.com/signup?type=accessibility)的用户能够使用其无障碍 Cookie 跳过 hCaptcha 挑战（现在可用于桌面和移动应用程序）。
+* **可访问性改进**：此版本包括一些更改，这些更改将通过辅助技术提高 Bitwarden 的性能，包括具有 [hCaptcha 无障碍访问](https://dashboard.hcaptcha.com/signup?type=accessibility)的用户能够使用其无障碍 Cookie 跳过 hCaptcha 挑战（现在可用于桌面和移动 App）。
 
 ## 2022.5.0
 
 {% hint style="info" %}
 **我们启用了新的版本编号！**
 
-随着我们进入接近每月一次的发布周期，为了更容易跟踪许多 Bitwarden 应用程序的版本，我们已经采用了一个新的版本编号系统，此版本编号系统将**由所有客户端共用**。此次发布是 `2022.5.0`，因为它是 2022 年 (`2022.`) 5 月 (`.5.`) 的基础发布 (`.0`)。
+随着我们进入接近每月一次的发布周期，为了更容易跟踪许多 Bitwarden App 的版本，我们已经采用了一个新的版本编号系统，此版本编号系统将**由所有客户端共用**。此次发布是 `2022.5.0`，因为它是 2022 年 (`2022.`) 5 月 (`.5.`) 的基础发布 (`.0`)。
 {% endhint %}
 
 此次发布包含：
@@ -953,7 +953,7 @@ _桌面端 1.33.0，浏览器扩展 1.58.0，移动端 2.18.0，CLI 1.22.0，目
 {% hint style="info" %}
 **支持性公告**
 
-在此版本中，从 App Store 下载的 macOS 桌面应用程序要求 macOS Mojave (10.14) 或更高版本。从 [bitwarden.com/download](https://bitwarden.com/download/) 和 Github 获得的 `.dmg` 安装程序不受此限制。
+在此版本中，从 App Store 下载的 macOS 桌面 App 要求 macOS Mojave (10.14) 或更高版本。从 [bitwarden.com/download](https://bitwarden.com/download/) 和 Github 获得的 `.dmg` 安装程序不受此限制。
 {% endhint %}
 
 * **用于浏览器和桌面端的生成器**：使用基于电子邮件的约定（如附加寻址）或使用随机单词为新凭据生成用户名（参阅[这里](password-manager/vault-basics/generator.md)）。
@@ -963,9 +963,9 @@ _桌面端 1.33.0，浏览器扩展 1.58.0，移动端 2.18.0，CLI 1.22.0，目
 
 _服务器 1.48.0，Web 2.28.0_
 
-此此最新的发布包含社区要求的功能以及更新网页密码库 UI 的多部分工作的开始。客户端应用程序（浏览器扩展、移动、桌面和 CLI）的更新将在后续版本中发布：
+此此最新的发布包含社区要求的功能以及更新网页密码库 UI 的多部分工作的开始。客户端 App（浏览器扩展、移动、桌面和 CLI）的更新将在后续版本中发布：
 
-* **用于网页密码库的用户名生成器**：使用基于电子邮件的约定（如附加寻址）或使用随机单词为新凭据生成用户名。后续版本将包括用于浏览器扩展和桌面应用程序的用户名生成器（参阅[这里](password-manager/vault-basics/generator.md)）。
+* **用于网页密码库的用户名生成器**：使用基于电子邮件的约定（如附加寻址）或使用随机单词为新凭据生成用户名。后续版本将包括用于浏览器扩展和桌面 App 的用户名生成器（参阅[这里](password-manager/vault-basics/generator.md)）。
 * **网页密码库 - 报告页面**：我们更新了报告页面的位置和风格，以便更轻松地查找报告结果并对其采取行动（参阅[这里](your-vault/vault-health-reports.md)）。
 * **macOS 和 Safari 导入器的改进**：我们修复了一些导致 macOS 和 Safari 导入器无法正确导入 URL 和备注的问题。
 * **可访问性改进**：此版本包括一些通过屏幕阅读器等辅助技术提高 Bitwarden 性能的更改。
@@ -974,7 +974,7 @@ _服务器 1.48.0，Web 2.28.0_
 
 _浏览器扩展 1.57.0，移动端 2.17.0_
 
-继上周的发布之后，针对移动应用程序和浏览器扩展发布了以下内容：
+继上周的发布之后，针对移动 App 和浏览器扩展发布了以下内容：
 
 * **移动端添加账户切换功能**：在 Android 和 iOS 上使用 Bitwarden 时，最多可登录 5 个账户并在它们之间无缝切换（参阅[这里](account/log-in-and-unlock/more-log-in-options/account-switching.md)）。
 * **支持 Firefox 隐私模式**：此版本包含对 Firefox 隐私窗口更强大的支持（参阅[这里](miscellaneous/use-bitwarden-in-firefoxs-private-mode.md)）。
@@ -983,7 +983,7 @@ _浏览器扩展 1.57.0，移动端 2.17.0_
 
 _服务器 1.47.0、Web 2.27.0，桌面端 1.32.0，CLI 1.22.0，目录连接器 2.9.11_
 
-此最新版本侧重于对单个应用程序的改进，以便您可以完全按照自己的需要使用 Bitwarden。移动应用程序和浏览器扩展的更新将在后续版本中发布：
+此最新版本侧重于对单个应用程序的改进，以便您可以完全按照自己的需要使用 Bitwarden。移动 App 和浏览器扩展的更新将在后续版本中发布：
 
 * **来自 CLI 的密码库管理 API**：使用全新的 CLI 命令 `serve`，您可以对一整套密码库管理端点进行 API 调用（参阅[这里](password-manager/developer-tools/password-manager-cli.md#serve)）。
 * **CLI 导出命令的更改**：`export` 不再要求主密码，您现在可以使用 `--password` 参数为加密导出设置自定义加密/解密密码（参阅[这里](password-manager/developer-tools/password-manager-cli.md#export)）。
@@ -998,10 +998,10 @@ _服务器 1.46.0、Web 2.26.0，桌面端 1.31.0，浏览器扩展 1.56.0，移
 
 2022 年初始，Bitwarden 很高兴地发布以下内容：
 
-* **桌面端账户切换**：在 Bitwarden 桌面应用程序中一次性登录最多 5 个账户。此功能在 Bitwarden 应用程序中分阶段推出，很快将适用于更多其他应用程序（参阅[这里](account/log-in-and-unlock/more-log-in-options/account-switching.md)）。
+* **桌面端账户切换**：在 Bitwarden 桌面 App 中一次性登录最多 5 个账户。此功能在 Bitwarden App 中分阶段推出，很快将适用于更多其他 App（参阅[这里](account/log-in-and-unlock/more-log-in-options/account-switching.md)）。
 * **iOS 上的 Send**：现在可以直接从 iOS 的共享菜单分享 Bitwarden Send（参阅[这里](bitwarden-send/create-a-send.md)）。
-* **从移动端删除账户**：您现在可以从移动应用程序中删除您的 Bitwarden 账户（参阅[这里](plans-and-pricing/delete-an-account-or-organization.md)），但您为什么要这样做？
-* **新的图标**：我们使用全新的图标更新了所有 Bitwarden 应用程序的外观。尽情欣赏！
+* **从移动端删除账户**：您现在可以从移动 App 中删除您的 Bitwarden 账户（参阅[这里](plans-and-pricing/delete-an-account-or-organization.md)），但您为什么要这样做？
+* **新的图标**：我们使用全新的图标更新了所有 Bitwarden App 的外观和体验。尽情欣赏！
 * **目录连接器 - Azure AD 同步性能**：针对 Azure Active Directory 的目录连接器同步，性能已得到提升。与 Azure AD 同步的组&#x7EC7;_&#x5C06;不&#x518D;_&#x9700;要更改其同步配置。
 * **后端改进**：我们一直在努力改进 Bitwarden 平台的总体性能和稳定性，这将在未来推出一些很棒的新功能。
 
@@ -1056,10 +1056,10 @@ Bitwarden 的最新版本侧重于对现有功能进行经常性的改进：
 {% hint style="success" %}
 有兴趣成为提供商吗？首先，我们要求：
 
-* 您的企业有一个活跃的企业组织。&#x20;
+* 您的企业有一个活跃的企业组织。
 * 您的企业有一个客户准备在您的提供商下入职。
 
-如果您还没有准备好开始成为提供商，Bitwarden 团队希望支持你作为一个经销商或客户的 Bitwarden 之旅。
+如果您还没有准备好开始成为提供商，Bitwarden 团队希望支持您作为一个经销商或客户的 Bitwarden 之旅。
 
 [联系我们](https://bitwarden.com/contact)
 {% endhint %}
@@ -1091,46 +1091,46 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 * **Send 隐私 & 安全选项**：使用新的 Send 隐私选项以对接收者隐藏您的电子邮件地址（参阅[这里](bitwarden-send/send-privacy.md#hide-email)）。为了防止滥用，文件 Send 现在将需要一个经过验证的电子邮件地址。此外，企业组织可以实施一条新的策略来设置隐藏电子邮件选项的可用性（参阅[这里](organizations/enterprise-policies.md#send-options)）。
 * **FIDO 更新 & 扩展支持**：我们的 FIDO 实施已经从 FIDO U2F 升级为 FIDO2 WebAuthn，但现有的 FIDO U2F 密钥将保留其完整性。对 FIDO 的支持已经扩展到更多的浏览器扩展和 Windows 桌面应用程序（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
 * **用于密钥的自定义字段**：自定义字段的值已经升级到支持多达 5000 个字符，允许存储像 RSA 4096 位 SSH 密钥这样的密钥（参阅[这里](your-vault/custom-fields.md#custom-fields-for-keys)）。
-* **文件大小增加**：现在可以创建最大 500 MB 的文件附件或文件 Send。由于设备限制，移动应用程序仍采用旧的 100 MB 限制。
+* **文件大小增加**：现在可以创建最大 500 MB 的文件附件或文件 Send。由于设备限制，移动 App 仍采用旧的 100 MB 限制。
 * **禁用浏览器扩展计数器**：使用 **⚙️设置 → 选项**菜单中的新开关来禁用浏览器扩展的角标计数器（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)）。
 * **Safari 的生物识别**：Safari 网页扩展现在包含对 Safari 14+ 生物识别解锁的支持（参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)）。
 * **搜索国际化**：现在可以使用 1 个字符搜索密码库，改善了使用 1 个字符单词的语言（如简体中文和繁体中文）的使用体验。
 * **弱密码报告排序**：弱密码报告现在按照密码弱性的严重程度来排序（参阅[这里](your-vault/vault-health-reports.md#weak-passwords-report)）。
 
 {% hint style="warning" %}
-由于附件升级，通过最新的客户端上传的附件无法在旧版本的客户端上打开。如果你发现你无法访问最近创建的附件，请将你的客户端升级到最新版本。（**提示**：云网页密码库总是为最新版本。）
+由于附件升级，通过最新的客户端上传的附件无法在旧版本的客户端上打开。如果您发现您无法访问最近创建的附件，请将您的客户端升级到最新版本（**提示**：云网页密码库总是为最新版本）。
 
-**冻结的或旧版的客户端**，包括 Safari 13（或更早）macOS 桌面应用程序和应用程序扩展，将不支持访问这些附件。
+**冻结的或旧版的客户端**，包括 Safari 13（或更早）macOS 桌面 App 和 App 扩展，将不支持访问这些附件。
 {% endhint %}
 
 {% hint style="info" %}
-自从 2020 年实施软删除以来，我们一直在耐心地对待回收站。**从 2021 年 5 月 15 日开始**，我们将激活夜间作业，该作业将永久删除你的回收站中已存在 30 天或更长时间的项目。
+自从 2020 年实施软删除以来，我们一直在耐心地对待回收站。**从 2021 年 5 月 15 日开始**，我们将激活夜间作业，该作业将永久删除您的回收站中已存在 30 天或更长时间的项目。
 
-在 2021 年 5 月 15 日之前，我们建议您在回收站中进行挖掘，以寻找你可能想要恢复的任何内容！
+在 2021 年 5 月 15 日之前，我们建议您在回收站中进行挖掘，以寻找您可能想要恢复的任何内容！
 {% endhint %}
 
 ## 2021-03-11 <a href="#id-2021-03-11" id="id-2021-03-11"></a>
 
 Bitwarden 自豪地宣布我们发布了 Bitwarden Send，一个用于短暂共享的端到端加密解决方案。此次发布包括：
 
-* **Bitwarden Send**：Bitwarden Send 是一个用于短暂共享的端到端加密解决方案。在我们的网站和帮助中心有很多关于 Send 的资料，但你可以从[这里](bitwarden-send/about-send.md)开始。
+* **Bitwarden Send**：Bitwarden Send 是一个用于短暂共享的端到端加密解决方案。在我们的网站和帮助中心有很多关于 Send 的资料，但您可以从[这里](bitwarden-send/about-send.md)开始。
 * **FIDO U2F 支持 Edge**：FIDO U2F 方式的两步登录现在可以用于微软 Edge 中的网页密码库和浏览器扩展（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
 * **浏览器扩展中的域名排除**：Bitwarden 浏览器扩展现在可以对其明确不提供记住密码的域名进行配置（参阅[这里](password-manager/autofill/more-autofill-options/exclude-domains.md)）。
-* **改进的导入错误消息**：最近有很多人迁移到 Bitwarden，所以我们清理了一个导入错误的消息，以帮助你更快地解决问题（参阅[这里](import-export/import-data-to-your-vault.md#length-related-import-errors)）。
-* **Safari 网页扩展移植**：我们的 Safari 应用程序扩展已经正式移植到 Safari 14 以上版本的网页扩展中使用。由于 Safari 的变化，网页扩展的使用现在仅限于那些通过 Mac App Store 下载获取的应用（参阅[这里](miscellaneous/safari-web-extension.md)）。
+* **改进的导入错误消息**：最近有很多人迁移到 Bitwarden，所以我们清理了一个导入错误的消息，以帮助您更快地解决问题（参阅[这里](import-export/import-data-to-your-vault.md#length-related-import-errors)）。
+* **Safari 网页扩展移植**：我们的 Safari App 扩展已经正式移植到 Safari 14 以上版本的网页扩展中使用。由于 Safari 的变化，网页扩展的使用现在仅限于那些通过 Mac App Store 下载获取的 App（参阅[这里](miscellaneous/safari-web-extension.md)）。
 
 ## 2021-01-19 发行后的更新 <a href="#id-2021-01-19-post-release-update" id="id-2021-01-19-post-release-update"></a>
 
 {% hint style="info" %}
-如果您拥有最新版 (2021-01-19) 的桌面应用程序，则浏览器扩展的生物识别解锁**仅适用于基于 Chromium 的浏览器**（比如 Chrome、Edge）上安装的 v1.48.0 版本的浏览器扩展。
+如果您拥有最新版 (2021-01-19) 的桌面 App，则浏览器扩展的生物识别解锁**仅适用于基于 Chromium 的浏览器**（比如 Chrome、Edge）上安装的 v1.48.0 版本的浏览器扩展。
 
-当您的浏览器扩展更新到这个版本时，您可能会被要求接受一个新的权限，以便 Bitwarden `Communicate with cooperating native applications（与本机应用程序通信）`。这个权限是安全的，也是**可选的**，它允许浏览器扩展与 Bitwarden 桌面应用程序进行通信，而这是启用生物识别解锁所必需的（参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#browser-extensions)）。拒绝此权限也将允许您使用 v1.48.0 扩展，只是不带生物识别解锁功能。
+当您的浏览器扩展更新到这个版本时，您可能会被要求接受一个新的权限，以便 Bitwarden `Communicate with cooperating native applications（与本机应用程序通信）`。这个权限是安全的，也是**可选的**，它允许浏览器扩展与 Bitwarden 桌面 App 进行通信，而这是启用生物识别解锁所必需的（参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#browser-extensions)）。拒绝此权限也将允许您使用 v1.48.0 扩展，只是不带生物识别解锁功能。
 
 **生物识别解锁当前不适用于：**
 
 * 版本低于 87 的 Firefox 浏览器扩展
-* Microsoft App Store 桌面应用程序（从 [bitwarden.com/download](https://bitwarden.com/download) 获取的侧面加载的 Windows 桌面应用程序可以正常工作）
-* 侧面加载的 macOS 桌面应用程序（App Store 桌面应用程序可以正常工作）
+* Microsoft App Store 桌面 App（从 [bitwarden.com/download](https://bitwarden.com/download) 获取的侧面加载的 Windows 桌面 App 可以正常工作）
+* 侧面加载的 macOS 桌面 App（App Store 桌面 App 可以正常工作）
 
 Bitwarden 团队正在调查这些问题，并将随着情况的进展提供更新。
 {% endhint %}
@@ -1150,7 +1150,7 @@ Bitwarden 团队正在调查这些问题，并将随着情况的进展提供更�
 最新版本的 Bitwarden 为所有客户端应用程序添加了与 SSO 相关的增强功能，包括：
 
 * **新的企业策略**：单一组织和单点登录 (SSO) 认证策略现在可供企业组织使用（参阅[这里](organizations/enterprise-policies.md)）。
-* **用于 CLI 的 API 密钥**：使用从你的网页密码库中新获得的 API 密钥来验证进入 Bitwarden CLI（参阅[这里](password-manager/developer-tools/personal-api-key-for-cli-authentication.md)）。
+* **用于 CLI 的 API 密钥**：使用从您的网页密码库中新获得的 API 密钥来验证进入 Bitwarden CLI（参阅[这里](password-manager/developer-tools/personal-api-key-for-cli-authentication.md)）。
 * **SSO 入职改进**：我们对用户通过 SSO 入职的方式进行了一些改进，以预防潜在的安全风险（参阅[这里](https://github.com/bitwarden/server/pull/945)）。
 * **GDPR 确认**：从现在开始，Bitwarden 的新用户在注册时将被要求确认隐私政策。
 * **Android 11 内嵌自动填充**：对于使用 Android 11+ 的设备，启用自动填充服务将为也支持[此功能](https://developer.android.com/guide/topics/text/ime-autofill#workflow)的 IME 显示内嵌建议（参阅[这里](https://github.com/bitwarden/mobile/pull/1145)）。
