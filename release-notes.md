@@ -386,7 +386,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **Rapid7 SIEM 集成**： Bitwarden 组织现在可以使用 Rapid7 进行安全信息和事件管理 (SIEM)。[了解更多](admin-console/reporting/configure-siem/rapid7-siem.md)。
+* **Rapid7 SIEM 集成**：Bitwarden 组织现在可以使用 Rapid7 进行安全信息和事件管理 (SIEM)。[了解更多](admin-console/reporting/configure-siem/rapid7-siem.md)。
 
 ## 2024.8.0
 
@@ -1036,7 +1036,7 @@ _服务器 1.44.0，Web 2.24.0，桌面 端1.29.0，浏览器扩展 1.54.0，移
 * **浏览器扩展 - 自动填充 Span 元素**：浏览器扩展现在可以在 HTML `<span>` 元素的 innerText 中自动填充[自定义字段](your-vault/custom-fields.md)（参阅[这里](password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md#html-span-elements)）。
 * &#x20;**浏览器扩展 - 自动生物识别提示**：浏览器扩展现在可以在打开时自动提示您生物识别输入。您可以从 **⚙️设置**菜单切换此行为（参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)）。
 * **网页密码库 - 黑暗模式**：网页密码库现在拥有黑暗模式（参阅[这里](miscellaneous/change-app-theme.md)）。
-* **CLI - `generate` 密码短语选项**： `bw generate --passphrase` 命令现在包含 `--capitalize` 和 `--includeNumber` 选项（参阅[这里](password-manager/developer-tools/password-manager-cli.md#generate)）。
+* **CLI - `generate` 密码短语选项**：`bw generate --passphrase` 命令现在包含 `--capitalize` 和 `--includeNumber` 选项（参阅[这里](password-manager/developer-tools/password-manager-cli.md#generate)）。
 
 ## 2021-09-21
 
