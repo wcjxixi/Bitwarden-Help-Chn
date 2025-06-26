@@ -37,9 +37,9 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **添加和编辑项目时，浏览器扩展的持久性**：现在，浏览器扩展对项目数据的更改操作将有最长 2 分钟的缓存周期，即使点击其他区域或最小化扩展窗口也不会丢失更改的数据。
+* **添加和编辑项目时浏览器扩展的持久化**：现在，浏览器扩展对项目数据的更改操作将有最长 2 分钟的缓存周期，即使点击其他区域或最小化扩展窗口也不会丢失更改的数据。
 * **浏览器扩展通知重新设计**：浏览器扩展通知有了新的外观和体验。[了解更多](password-manager/autofill/autofill-from/autosave-from-browser-extensions.md)。
-* **移动 App 的高级故障排除**：在移动 App 中，用户现在可以选择本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/yu-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
+* **移动 App 高级故障排除**：在移动 App 中，用户现在可以选择本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/yu-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
 
 ### Bitwarden Authenticator
 
