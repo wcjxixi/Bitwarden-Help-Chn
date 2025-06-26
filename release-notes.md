@@ -121,7 +121,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Password Manager
 
-* Edge 导出 (csv)：Edge (csv) 导出已添加到可导入 Bitwarden Password Manager 的格式列表中。[了解更多](import-export/import-data-to-your-vault.md)。
+* **Edge 导出 (csv)**：Edge (csv) 导出已添加到可导入 Bitwarden Password Manager 的格式列表中。[了解更多](import-export/import-data-to-your-vault.md)。
 
 ## 2025.3.3
 
@@ -315,7 +315,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **集合管理设置更新**：限制所有者和管理员创建和删除集合的设置已被分离为两个单独的设置，分别用于每种操作。[了解更多](admin-console/organization-basics/collection-management.md#collection-management-settings)有关集合管理的信息。
-* **删除集合项目需要「可以管理」权限**： 现在删除集合项目需要「可以管理」权限。具有「可以编辑」权限的用户不再具有该权限。[了解更多](admin-console/user-management/member-roles-and-permissions.md#permissions)有关成员权限的信息。
+* **删除集合项目需要「可以管理」权限**：现在删除集合项目需要「可以管理」权限。具有「可以编辑」权限的用户不再具有该权限。[了解更多](admin-console/user-management/member-roles-and-permissions.md#permissions)有关成员权限的信息。
 
 ## 2024.10.4
 
@@ -348,7 +348,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 * **Microsoft Sentinel 集成**：新的本地集成可用于 Microsoft Sentinel 安全信息和事件管理 (SIEM)。该集成提供了跨身份验证、组织活动和密码库项目的全面事件覆盖。[了解更多](admin-console/reporting/configure-siem/microsoft-sentinel-siem.md)。
 * **Ping Identity SCIM 支持**：Bitwarden 组织现已正式支持 Ping Identity 跨域身份管理 (SCIM) 系统。使用 Ping Identity SCIM 集成来自动配置 Bitwarden 组织中的成员和群组。[了解更多](admin-console/login-with-sso/implementation-guides/ping-identity-saml-implementation.md)。
 * **UI 改进升级计划**：为简化将您的组织升级到另一个计划的流程，对 UI 进行了改进。[了解更多](organizations/organizations.md#upgrade-an-organization)。
-* **为允许的应用程序策略自动登录用户**： 这项新策略将允许 IdP 管理员启用非 SSO 应用程序，以便在从其 IdP 面板启动时自动登录用户。[了解更多](organizations/enterprise-policies.md#automatically-log-in-users-for-allowed-applications)。
+* **为允许的应用程序策略自动登录用户**：这项新策略将允许 IdP 管理员启用非 SSO 应用程序，以便在从其 IdP 面板启动时自动登录用户。[了解更多](organizations/enterprise-policies.md#automatically-log-in-users-for-allowed-applications)。
 
 ## 2024.9.2
 
@@ -368,12 +368,12 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Password Manager
 
-* **通行密钥的内联自动填充菜单**： 使用内联自动填充菜单通过通行密钥进行身份验证。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#use-the-inline-auto-fill-menu)。
+* **通行密钥的内联自动填充菜单**：使用内联自动填充菜单通过通行密钥进行身份验证。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#use-the-inline-auto-fill-menu)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **成员访问报告**： 企业组织可使用成员访问报告来监控组织成员对群组、集合和项目的访问情况。[了解更多](your-vault/vault-health-reports.md#member-access)。
-* **移除用户事件的修复**： 现在可以正确记录通过公共 API 或目录连接器移除用户的事件。
+* **成员访问报告**：企业组织可使用成员访问报告来监控组织成员对群组、集合和项目的访问情况。[了解更多](your-vault/vault-health-reports.md#member-access)。
+* **移除用户事件的修复**：现在可以正确记录通过公共 API 或目录连接器移除用户的事件。
 
 ## 2024.8.2
 
@@ -386,7 +386,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* Rapid7 SIEM 集成： Bitwarden 组织现在可以使用 Rapid7 进行安全信息和事件管理 (SIEM)。[了解更多](admin-console/reporting/configure-siem/rapid7-siem.md)。
+* **Rapid7 SIEM 集成**： Bitwarden 组织现在可以使用 Rapid7 进行安全信息和事件管理 (SIEM)。[了解更多](admin-console/reporting/configure-siem/rapid7-siem.md)。
 
 ## 2024.8.0
 
@@ -524,16 +524,16 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Password Manager
 
-* 从我的密码库克隆组织项目：具有「可以管理」权限的用户现在可以从其密码库视图克隆组织所拥有的项目。[了解更多](your-vault/vault-items.md#clone)。
-* 浏览器扩展平台升级：从本周开始，Password Manager 浏览器扩展将开始逐步升级到名为 Manifest V3 的新扩展平台，从 1% 的用户开始，并在整个 5 月份逐步增加。不论是启动此升级或完成升级后，您都无需采取任何行动。
+* **从我的密码库克隆组织项目**：具有「可以管理」权限的用户现在可以从其密码库视图克隆组织所拥有的项目。[了解更多](your-vault/vault-items.md#clone)。
+* **浏览器扩展平台升级**：从本周开始，Password Manager 浏览器扩展将开始逐步升级到名为 Manifest V3 的新扩展平台，从 1% 的用户开始，并在整个 5 月份逐步增加。不论是启动此升级或完成升级后，您都无需采取任何行动。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* Splunk Cloud 集成：Bitwarden 事件日志应用程序可用于 Splunk Cloud Classic 和 Splunk Cloud Victoria 上的信息和事件管理。[了解更多](admin-console/reporting/configure-siem/splunk-siem.md)。
+* **Splunk Cloud 集成**：Bitwarden 事件日志应用程序可用于 Splunk Cloud Classic 和 Splunk Cloud Victoria 上的信息和事件管理。[了解更多](admin-console/reporting/configure-siem/splunk-siem.md)。
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
-* 集合管理和弃用经理角色：自托管服务器现在可以访问集合管理功能，具有「经理」角色的用户将迁移到具有新的「可以管理」权限的「用户」角色。[了解更多](admin-console/organization-basics/collection-management.md)。
+* **集合管理和弃用经理角色**：自托管服务器现在可以访问集合管理功能，具有「经理」角色的用户将迁移到具有新的「可以管理」权限的「用户」角色。[了解更多](admin-console/organization-basics/collection-management.md)。
 
 {% hint style="info" %}
 如果是自托管，请在云端组织中设置[集合管理设置](admin-console/organization-basics/collection-management.md)，然后[更新自托管服务器的许可证](self-hosting/licensing.md#update-organization-license)以将这些设置转移到您的自托管组织。
@@ -579,7 +579,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Password Manager
 
-* Bitwarden 应用程序可使用新的语言：在社区翻译人员的贡献下，Bitwarden 应用程序现在提供了新的语言选项！[点击这里](password-manager/more/localization.md)查看完整的语言列表。[了解更多](https://contributing.bitwarden.com/contributing/#localization-l10n)关于 Bitwarden 本地化的信息。
+* **Bitwarden 应用程序可使用新的语言**：在社区翻译人员的贡献下，Bitwarden 应用程序现在提供了新的语言选项！[点击这里](password-manager/more/localization.md)查看完整的语言列表。[了解更多](https://contributing.bitwarden.com/contributing/#localization-l10n)关于 Bitwarden 本地化的信息。
 * **桌面应用程序硬件加速**：Bitwarden 桌面应用程序现在可以选择打开或关闭硬件加速以优化性能。该设置默认启用。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -635,7 +635,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
 
-* **自动税率计算**： 用于订阅的税率现在将由我们的支付分包商根据地理位置自动计算。Bitwarden 收取的小计将保持不变，但您可能会注意到您的含税月度账单将有所变化。
+* **自动税率计算**：用于订阅的税率现在将由我们的支付分包商根据地理位置自动计算。Bitwarden 收取的小计将保持不变，但您可能会注意到您的含税月度账单将有所变化。
 
 ## 2024.1.2
 
@@ -647,7 +647,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **通过公共 API 获得更多集合权限**： 现在，您可以使用公共 API 向用户隐藏任意集合的密码（参阅[这里](https://bitwarden.com/help/api/)）。
+* **通过公共 API 获得更多集合权限**：现在，您可以使用公共 API 向用户隐藏任意集合的密码（参阅[这里](https://bitwarden.com/help/api/)）。
 
 ## 2024.1.0
 
