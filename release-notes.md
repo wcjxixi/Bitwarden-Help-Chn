@@ -106,13 +106,13 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Password Manager
 
-* **设备批准时浏览器扩展中的持久性：**&#x73B0;在，即使您点击退出或最小化扩展程序窗口以使用网页 App 批准请求，浏览器扩展程序也会等待最多两分钟才能获得批准。
-* **桌面端主密码重新提示更新：**&#x5F53;某个项目的主密码重新提示选项处于活动状态时，桌面 App 现在会将所有字段（而不仅仅是隐藏的字段）置于成功验证之后。[了解更多](your-vault/vault-items.md#protect-individual-items)。
-* **移动 App 的高级故障排除：**&#x5728;移动 App 中，打开飞行记录器以本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/yu-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
+* **设备批准时浏览器扩展中的持久性**：现在，即使您点击退出或最小化扩展程序窗口以使用网页 App 批准请求，浏览器扩展程序也会等待最多两分钟才能获得批准。
+* **桌面端主密码重新提示更新**：当某个项目的主密码重新提示选项处于活动状态时，桌面 App 现在会将所有字段（而不仅仅是隐藏的字段）置于成功验证之后。[了解更多](your-vault/vault-items.md#protect-individual-items)。
+* **移动 App 的高级故障排除**：在移动 App 中，打开飞行记录器以本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/yu-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **外部 ID 显示更新** ：外部 ID 现在只有在通过 SCIM、Bitwarden Directory Connector 或 API 配置后，才会显示在群组、集合和成员对话框中。了解更多有关 [Directory Connector](directory-connector/about-directory-connector.md) 的信息。
+* **外部 ID 显示更新**：外部 ID 现在只有在通过 SCIM、Bitwarden Directory Connector 或 API 配置后，才会显示在群组、集合和成员对话框中。了解更多有关 [Directory Connector](directory-connector/about-directory-connector.md) 的信息。
 * **成员 SSO 外部 ID**：对于配置为使用 SSO 的成员，成员 SSO 外部 ID 将显示在成员对话框中。
 
 ## 2025.4.0
@@ -856,7 +856,7 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 
 * **浏览器扩展 - 主题通知栏**：主题通知栏已添加到 Bitwarden 浏览器扩展中以匹配流行的颜色主题。
 * **浏览器扩展 - UI 更新**：已对 Bitwarden 浏览器扩展进行了 UI 更新。
-* **Apple Watch 上的 Bitwarden（测试版）**：Apple Watch 上的 Bitwarden 将以测试版形式提供给通过 TestFlight 注册的用户，并将提供访问 TOTP 登录代码的附加选项。在[这里](miscellaneous/apple-watch-totp.md)了解更多。
+* **Apple Watch 上的 Bitwarden (Beta)**：Apple Watch 上的 Bitwarden 将以测试版形式提供给通过 TestFlight 注册的用户，并将提供访问 TOTP 登录代码的附加选项。在[这里](miscellaneous/apple-watch-totp.md)了解更多。
 
 ### Bitwarden 统一自托管部署 (Beta) <a href="#bitwarden-unified-self-host-deployment-beta" id="bitwarden-unified-self-host-deployment-beta"></a>
 
@@ -1082,7 +1082,7 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 * **目录连接器同步限制增加**：目录连接器现在可以同步无限数量的用户或群组，之前的限制被设置为 2000。要同步 2000 以上的用户或群组，请切换到新的同步选项（参阅[这里](directory-connector/sync-options-and-filters.md#large-syncs)）。
 * **页面加载时自动填充功能的增强**：浏览器扩展的页面加载时自动填充功能已升级，可以更灵活地满足用户的独特需求（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#on-page-load)）。
 * **更多 CLI 选项**：我们添加了一些新的 CLI 选项，包括轻松检索密码库项目的备注 (`bw get notes <id>`) 和设置 Send 的最大访问计数的功能 (`bw send create --maxAccessCount <#>`)。
-* **Web 开发人员自动填充排除**：Web 开发贡献者现在可以通过向 `<input>` 元素添加 `data-bwignore` 属性（例如 `data-bwignore="true"`）来阻止浏览器扩展自动填充给定的表单元素。
+* **Web 开发人员自动填充排除**：网页开发贡献者现在可以通过向 `<input>` 元素添加 `data-bwignore` 属性（例如 `data-bwignore="true"`）来阻止浏览器扩展自动填充给定的表单元素。
 
 ## 2021-05-11 <a href="#id-2021-05-11" id="id-2021-05-11"></a>
 
