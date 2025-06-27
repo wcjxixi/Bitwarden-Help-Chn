@@ -54,11 +54,10 @@ AIDL 是一种进程间通信 (IPC) 抽象，它允许 Authenticator 和 Passwor
 1. 当 Password Manager 中的**允许验证器同步**选项被激活时：
    1. Password Manager 客户端生成一个**全局对称密钥**，然后写入由 Password Manager 和 Authenticator 共享的钥匙串。
    2. 部分项目数据，包括验证器密钥、显示名称和用户名，使用**全局对称密钥**加密，然后写入 App Group（App 组）的共享容器。
-2. 一种
-3. 只要**允许验证器同步**选项被激活，当打开 Authenticator 时：
+2. 只要**允许验证器同步**选项被激活，当打开 Authenticator 时：
    1. Authenticator 从共享的钥匙串中获取**全局对称密钥**。
    2. Authenticator 从 App Group 中获取加密的 Authenticator 密钥、显示名称和用户名。
-4. Authenticator 使用**全局对称密钥**在本地解密您的 Authenticator 密钥、显示名称和用户名。
+3. Authenticator 使用**全局对称密钥**在本地解密您的 Authenticator 密钥、显示名称和用户名。
 
 {% hint style="success" %}
 **钥匙串**使用访问权限组来允许在同一开发者制作的 App 之间安全地本地共享加密密钥或其他数据。
@@ -70,7 +69,7 @@ AIDL 是一种进程间通信 (IPC) 抽象，它允许 Authenticator 和 Passwor
 
 * 之前存储在 App Group 中的已加密的验证器密钥、显示名称和用户名将被删除。
 * 仅当所有用户停用同步或注销时，**全局对称密钥**也将被删除。
+
+> **\[译者注]**：App Group 是 Apple 提供的允许同一开发者账号下的多个 App 或 Extension 共享数据（如登录状态）的机制。它通过提供一个共享的容器（Shared Container），使得不同的 App 或 Extension 可以访问同一份数据，从而突破 iOS 沙盒（Sandbox）的限制，实现跨 App 数据共享。
 {% endtab %}
 {% endtabs %}
-
->
