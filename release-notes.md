@@ -43,7 +43,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Bitwarden Authenticator
 
-* **使用 Password Manager 同步 TOTP**：用户现在可以选择在 Bitwarden Authenticator 和 Password Manager 之间无缝同步验证码数据。[了解更多](bitwarden-authenticator/totp-sync.md)。
+* **使用 Password Manager 同步 TOTP**：用户现在可以选择在 Bitwarden Authenticator 和 Bitwarden Password Manager 之间无缝同步验证码数据。[了解更多](bitwarden-authenticator/totp-sync.md)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 

@@ -4,7 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/totp-sync/)
 {% endhint %}
 
-如果您同时使用 Bitwarden Authenticator 和 Password Manager，您可以在两者之间无缝同步验证码。
+> **\[译者注]**：Bitwarden Password Manager iOS 和 Android 以及 Bitwarden Authenticator 支持验证码同步功能。
+
+如果您同时使用 Bitwarden Authenticator 和 Bitwarden Password Manager，您可以在两者之间无缝同步验证码。
 
 {% embed url="https://bitwarden.com/assets/1DcAOWrPp1qDkIILFUu1f9/59504e02563a5a6faac1635b7e2b843f/2025-05-21_10-33-42.png?w=779&fm=avif&q=80" %}
 在 Bitwarden Authenticator（左）和 Password Manager（右）之间同步
@@ -19,11 +21,11 @@
 
 要设置 TOTP 同步：
 
-1、确保您的设备上已安装 Bitwarden Authenticator 和 Bitwarden Password Manager，并在 Password Manager 中登录您想要同步的账户。
+1、确保您的设备上已同时安装了 Bitwarden Authenticator 和 Bitwarden Password Manager，并在 Password Manager 中登录了您想要同步的账户。
 
 2、在 Password Manager 中，导航至**设置** → **账户安全**，然后打开**允许验证器同步**选项。
 
-3、在 Bitwarden Authenticator 中，确认 Password Manager 中存储的任何代码都列在您的 Bitwarden 账户标题下，而不是在**本地代码**下。
+3、在 Authenticator 中，确认 Password Manager 中存储的任何代码都列在您的 Bitwarden 账户标题下，而不是在**本地代码**下。
 
 设置完成后，同步将自动进行，这意味着：
 
@@ -63,7 +65,7 @@ AIDL 是一种进程间通信 (IPC) 抽象，它允许 Authenticator 和 Passwor
 **App Groups** 使用称为共享容器的安全本地存储位置，以允许同一开发者制作的 App 访问共享数据和某些进程间通信 (IPC)。
 {% endhint %}
 
-任何时候，您停用了**允许验证器同步**选项或完全退出了 Bitwarden Password Manager：
+任何时候，您停用了**允许验证器同步**选项或完全退出了 Password Manager：
 
 * 之前存储在 App Group 中的已加密的验证器密钥、显示名称和用户名将被删除。
 * **全局对称密钥**将被删除，但仅当所有用户停用同步或退出时。

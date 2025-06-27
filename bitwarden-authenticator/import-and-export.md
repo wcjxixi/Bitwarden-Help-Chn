@@ -8,7 +8,7 @@
 
 要将数据导入 Bitwarden Authenticator，请打开 **⚙️设置**选项卡，然后点击**导入**按钮。您可以从以下来源导入：
 
-* **身份验证器导出 (JSON)**：导入 Bitwarden Authenticator 或 Bitwarden 密码管理器 `.json` 的导出。使用下面章节中的说明，了解如何使用 Bitwarden Authenticator 创建 `.json` 导出的信息。导入 Bitwarden 密码管理器 `.json` 的导出（[了解更多](../import-export/export-vault-data.md)）将解析文件并导入 TOTP 种子。
+* **Authenticator 导出 (JSON)**：导入 Bitwarden Authenticator 或 Bitwarden 密码管理器 `.json` 的导出。使用下面章节中的说明，了解如何使用 Bitwarden Authenticator 创建 `.json` 导出的信息。导入 Bitwarden 密码管理器 `.json` 的导出（[了解更多](../import-export/export-vault-data.md)）将解析文件并导入 TOTP 种子。
 * **Google Authenticator（二维码）**：通过 Google Authenticator 中的**转移账户**界面，使用二维码从 Google Authenticator 导入。使用 Bitwarden Authenticator 扫描生成的二维码即可完成导入。
 * **LastPass (JSON)**：通过从 LastPass Authenticator **设置** → **转移账户**界面，导入 LastPass Authenticator 账户的导出，。
 * **2FAS (.2fas)**：导入 2FAS 备份文件，该文件可以从 2FAS **设置** → **2FAS 备份**界面制作。只有不受密码保护的备份文件才能导入到 Bitwarden Authenticator。
