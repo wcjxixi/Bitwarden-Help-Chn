@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-账户恢复适用于当前计划的**企业组织**。与 SSO 登录一样，账户恢复不适用于[经典 2019 企业组织](../plans-and-pricing/updates-to-bitwarden-plans-2019-2020.md)计划。
+账户恢复适用于**企业组织**。与 SSO 登录一样，账户恢复不适用于[经典 2019 企业组织](../plans-and-pricing/updates-to-bitwarden-plans-2019-2020.md)计划。
 {% endhint %}
 
 ## 什么是账户恢复？ <a href="#what-is-account-recovery" id="what-is-account-recovery"></a>
