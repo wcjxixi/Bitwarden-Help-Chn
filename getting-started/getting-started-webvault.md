@@ -32,7 +32,7 @@ Bitwarden 网页 App
 新增文件夹
 {% endembed %}
 
-2、为您的文件夹输入一个名称（例如 `Social Media Logins`），然后选择**保存**。
+2、为您的文件夹输入一个名称（例如 `Important Logins`），然后选择**保存**。
 
 {% hint style="success" %}
 为了使密码库更清爽，您可以[将文件夹嵌套在其他文件夹中](../your-vault/folders.md#nested-folders)。
@@ -44,16 +44,16 @@ Bitwarden 网页 App
 
 1、从下拉菜单中选择 ✚**新增**图标然后选择**登录。**
 
-2、输入**项目名称**。名称用于帮助您轻松识别密码库中的项目，因此请为其指定一个可识别的名称（例如`My X.com Account`）。
+2、输入**项目名称**。名称用于帮助您轻松识别密码库中的项目，因此请为其指定一个可识别的名称（例如`My Gmail Account`）。
 
-3、从**文件夹**下拉菜单中，选择要添加此项目的文件夹名称（例如，我们之前创建的 `Social Media Logins` 文件夹）。
+3、从**文件夹**下拉菜单中，选择要添加此项目的文件夹名称（例如，我们之前创建的 `Important Logins` 文件夹）。
 
 4、为登录项目输入您的**用户名**和**密码**。现在，请输入您**现有的**密码，我们稍后会帮助您[用更强的密码替换它](getting-started-webvault.md#generate-a-strong-password)。
 
-5、在**网站 (URI)** 字段中，输入网站的 URL（例如 `https://x.com/i/flow/login`）。如果您不知道要使用哪个 URL，请导航到网站的登录界面并从地址栏中复制它。
+5、在**网站 (URI)** 字段中，输入网站的 URL（例如 `https://accounts.google.com`）。如果您不知道要使用哪个 URL，请导航到网站的登录界面并从地址栏中复制它。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/62IycEwbVrumSyPjB9n5XS/b187d731c95145d4ef8af741fc670c59/2024-08-10_13-02-50.png?_a=DAJCwlWIZAAB" %}
-定位 X.com URI
+{% embed url="https://bitwarden.com/assets/62IycEwbVrumSyPjB9n5XS/0df14e819c0881be3d813e235271acaf/2025-06-02_14-31-28.png?w=956&fm=avif&q=80" %}
+定位 URI
 {% endembed %}
 
 6、选择 **⭐️收藏**图标以将此项目添加到您的收藏夹。标记为收藏时，图标将被填充（**★** → **✰**）。

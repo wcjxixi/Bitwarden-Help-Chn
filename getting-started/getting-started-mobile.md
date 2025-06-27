@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/getting-started-mobile/)
 {% endhint %}
 
-Bitwarden 的移动 App 让您可以随身携带您的密码管理器。从 App Store 或 Google Play Store，或在您的设备上访问 [get.bitwarden.com](https://get.bitwarden.com/) 以载 Bitwarden。
+Bitwarden 的移动 App 让您可以随身携带您的密码管理器。在任何设备上，从 App Store 或 Google Play Store，或访问 [get.bitwarden.com](https://get.bitwarden.com/) 以下载 Bitwarden。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/53OzJZ4klYWemxUepHMtq4/5ab47331f033259bd2e82817a99e992f/2025-01-21_15-22-10.png?_a=DAJCwlWIZAAB" %}
 Android 和 iOS 上的 Bitwarden

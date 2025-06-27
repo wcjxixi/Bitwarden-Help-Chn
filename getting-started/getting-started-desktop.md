@@ -8,8 +8,8 @@ Bitwarden 的桌面 App 将完整的密码库体验从浏览器直接带入您�
 
 在 **🔒我的密码库**视图中，您可以浏览您的所有项目，包括您所属的组织拥有的项目。使用密码库下拉列表来筛选**所有密码库**、**我的密码库**和任何组织密码库中的项目。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/79qrrbQ4Oi7ZGUnSrE3VpZ/8a7b253b7cc2176db36a7d087f89e796/Screen_Shot_2022-05-18_at_3.30.27_PM.png?fm=webp&h=772&q=50&w=1066" %}
-Bitwarden 桌面应用程序
+{% embed url="https://bitwarden.com/assets/79qrrbQ4Oi7ZGUnSrE3VpZ/f8875d8251750c257f32043c091d1116/geting-started-desktop_1.png?w=1000&fm=avif&q=80" %}
+Bitwarden 桌面 App
 {% endembed %}
 
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
@@ -127,7 +127,7 @@ Windows 解锁选项
 
 ### 自动启动 Bitwarden <a href="#start-bitwarden-automatically" id="start-bitwarden-automatically"></a>
 
-另一个有用的功能是在启动计算机时始终启动 Bitwarden。要启用此功能，请导航到**应用程序设置**部分并勾选**登录时自动启动**复选框。
+另一个有用的功能是在启动计算机时始终启动 Bitwarden。要启用此功能，请导航到 **App 设置**部分并勾选**登录时自动启动**复选框。
 
 与生物识别不同，此设置适用于所有已登录的账户！
 {% endtab %}
@@ -165,7 +165,7 @@ Windows 解锁选项
 
 ### 自动启动 Bitwarden <a href="#start-bitwarden-automatically" id="start-bitwarden-automatically"></a>
 
-另一个有用的功能是在启动计算机时始终启动 Bitwarden。要启用此功能，请导航到**应用程序设置**部分并勾选**登录时自动启动**复选框。
+另一个有用的功能是在启动计算机时始终启动 Bitwarden。要启用此功能，请导航到 **App 设置**部分并勾选**登录时自动启动**复选框。
 
 与生物识别不同，此设置适用于所有已登录的账户账户！
 {% endtab %}
@@ -210,7 +210,7 @@ Windows 解锁选项
 
 ### 自动启动 Bitwarden <a href="#start-bitwarden-automatically" id="start-bitwarden-automatically"></a>
 
-另一个有用的功能是在启动计算机时始终启动 Bitwarden。要启用此功能，请导航到**应用程序设置**部分并勾选**登录时自动启动**复选框。
+另一个有用的功能是在启动计算机时始终启动 Bitwarden。要启用此功能，请导航到 **App 设置**部分并勾选**登录时自动启动**复选框。
 
 与生物识别不同，此设置适用于所有已登录的账户！
 {% endtab %}

@@ -118,15 +118,16 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 ### 自动保存登录 <a href="#auto-save-a-login" id="auto-save-a-login"></a>
 
-当您登录一个**未使用自动填充**的网站时，如果出现以下情况，Bitwarden 将建议您记住登录信息：
+Bitwarden 浏览器扩展提供一系列[浏览器内通知](../password-manager/autofill/autofill-from/autosave-from-browser-extensions.md)，可将已解密的数据与您在登录、注册和类似网页表单中输入的数据进行比较。这些通知包括：
 
-* 具有该 [URI](../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md) 的项目不在您的密码库中。
-* 具有该 [URI](../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md) 的项目在您的密码库中，但具有不同的用户名或密码。
+* 保存或使用通行密钥的通知。
+* 添加未检测到的登录的通知。
+* 更新现有登录的通知。
 
 当您看到此横幅时，选择**保存**以使用用户名、密码和 URI 添加新的登录项目，或更新现有登录项目。如果是新项目，还可以选择**选择文件夹...**，或在保存前**编辑**此项目：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7GnwQ6UKY6er7PpCWj6xn0/3c4804ffe63521cc5c48394d0f9624d6/2024-12-02_14-08-47.png?_a=DAJCwlWIZAAB" %}
-添加登录
+{% embed url="https://bitwarden.com/assets/4vsurEuH5deik26BWn4n1p/b14619e64cd8cd9c1cd4aa2d9f2fe88a/2025-05-20_16-17-25.png?w=1007&fm=avif&q=80" %}
+询问添加登录
 {% endembed %}
 
 如果您是使用[禁用个人密码库策略](../organizations/enterprise-policies.md#remove-individual-vault)的组织的成员，选择**保存**将带您进入一个屏幕，您可以在其中选择要将其添加到的[集合](../organizations/collections.md)。
@@ -157,7 +158,7 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 {% tab title="Chrome" %}
 选择地址栏右侧的**扩展程序**图标，然后在扩展程序列表中选择 Bitwarden 旁边的**固定**图标：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4cwP0QDHWh01v1K8nMV0ma/3a4b404bbf095bc7cc6c627c7f61969d/chrome-pin.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/4cwP0QDHWh01v1K8nMV0ma/4b6107a373a39ce70ced34e585460982/2025-04-23_11-32-35.png?w=450&fm=avif&q=80" %}
 Chrome 中的 Pin
 {% endembed %}
 {% endtab %}
@@ -191,7 +192,23 @@ Bitwarden 浏览器扩展具有弹出窗口功能，允许您在使用网络浏�
 
 ### 禁用内置的密码管理器 <a href="#disable-a-built-in-password-manager" id="disable-a-built-in-password-manager"></a>
 
-大多数网络浏览器默认会自动保存您的密码，但专业人士普遍认为，相比 Bitwarden 等专用解决方案，[内置的密码管理器更容易受到攻击](https://www.wired.com/2016/08/browser-password-manager-probably-isnt-enough/)：
+大多数网络浏览器默认会自动保存您的密码，但专业人士普遍认为，相比 Bitwarden 等专用解决方案，[内置的密码管理器更容易受到攻击](https://www.wired.com/2016/08/browser-password-manager-probably-isnt-enough/)。
+
+#### 将 Bitwarden 设为默认密码管理器 <a href="#make-bitwarden-your-default-password-manager" id="make-bitwarden-your-default-password-manager"></a>
+
+Bitwarden 浏览器扩展有一个内置设置，可以禁用浏览器的默认密码管理器。要使用此设置：
+
+1、导航至 Bitwarden 浏览器扩展中的 **设置**选项卡，然后选择**自动填充**。
+
+2、点击启用**将 Bitwarden 设为默认密码管理器**。
+
+{% embed url="https://bitwarden.com/assets/5fyBdu5X6JCLu2UsaqYUO0/d3ba86c0fc27f1bfa0accccba41e9730/2025-04-15_16-41-28.png?w=380&fm=avif&q=80" %}
+
+3、屏幕上会出现一个对话框，选择**允许**以授予 Bitwarden 更改您的浏览器设置的权限。
+
+#### 手动禁用浏览器内置的密码管理器 <a href="#manually-disable-a-browsers-built-in-password-manager" id="manually-disable-a-browsers-built-in-password-manager"></a>
+
+了解如何禁用常见浏览器的内置密码管理器：
 
 {% tabs %}
 {% tab title="Chrome/Chromium" %}
