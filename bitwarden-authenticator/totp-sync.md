@@ -48,6 +48,8 @@
 {% hint style="success" %}
 AIDL 是一种进程间通信 (IPC) 抽象，它允许 Authenticator 和 Password Manager 安全地连接，而设备中的任何其他组件都无法访问交换的信息。
 {% endhint %}
+
+> **\[译者注]**：AIDL（Android Interface Definition Language，Android 接口定义语言）是 Android 系统用于实现进程间通信 (IPC) 的一种机制。它允许在不同 App 之间进行数据交换和方法调用，使得不同进程能够安全有效地共享数据和功能。﻿
 {% endtab %}
 
 {% tab title="iOS" %}
