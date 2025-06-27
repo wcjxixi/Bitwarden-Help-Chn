@@ -14,7 +14,7 @@
 
 ## 个人许可证 <a href="#individual-license" id="individual-license"></a>
 
-使用高级订阅的个人许可证时，请遵循这些步骤。您将需要同时访问云端网页密码库和自托管网页密码库，并且您的账户电子邮箱地址需一致。
+使用高级订阅的个人许可证时，请遵循以下步骤。您将需要同时访问云端网页密码库和自托管网页密码库，并且您的账户电子邮箱地址需一致。
 
 ### 获取个人许可证 <a href="#retrieve-individual-license" id="retrieve-individual-license"></a>
 
@@ -45,11 +45,7 @@
 
 ## 组织许可证 <a href="#organization-license" id="organization-license"></a>
 
-使用家庭、团队或企业的组织许可证时，请遵循这些步骤。
-
-{% hint style="info" %}
-您必须是[组织的所有者](../admin-console/user-management/member-roles-and-permissions.md)才能获取、应用和更新许可证。
-{% endhint %}
+使用家庭或企业组织的组织许可证时，请遵循以下步骤。您必须是[组织所有者](../admin-console/user-management/member-roles-and-permissions.md)才能检索、申请和更新许可证。
 
 ### 获取组织许可证 <a href="#retrieve-organization-license" id="retrieve-organization-license"></a>
 
@@ -68,7 +64,7 @@
 4、提示时，输入安装自托管服务器时使用的安装 ID 然后选择**提交**。如果您不知道安装 ID，可以从 `./bwdata/env/global.override.env` 获取。
 
 {% hint style="info" %}
-确保您从 bitwarden.com/host 获取的安装 ID 使用的数据区域与您的组织所在的数据区域相同。
+确保您从 [bitwarden.com/host](https://bitwarden.com/host/) 获取的安装 ID 使用的[数据区域](../security/server-geographies.md)与您的组织所在的数据区域相同。
 {% endhint %}
 
 ### 应用组织许可证 <a href="#apply-organization-license" id="apply-organization-license"></a>
