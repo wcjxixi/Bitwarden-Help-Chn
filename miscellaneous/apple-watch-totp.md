@@ -33,7 +33,7 @@ Families 2019 不再向该计划的用户提供个人高级会员资格。[此�
 当您注销账户或切换到其他账户时，Apple Watch 将擦除当前数据。在您的 iOS 移动设备上重新登录 Bitwarden 账户时，将再次进行同步。
 
 {% hint style="info" %}
-在移动 App 中关闭 Bitwarden Apple Watch 连接将删除 Apple Watch 上的 Bitwarden App 的所有数据并禁止与其通信。
+在移动 App 中关闭 Bitwarden Apple Watch 连接将删除 Apple Watch 上 Bitwarden App 的所有数据并禁止与其通信。
 {% endhint %}
 
 ## 启用 TOTP <a href="#enabling-totp" id="enabling-totp"></a>
