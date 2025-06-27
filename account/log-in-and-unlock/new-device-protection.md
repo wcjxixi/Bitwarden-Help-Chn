@@ -5,10 +5,10 @@
 {% endhint %}
 
 {% hint style="info" %}
-从 **2025 年 05 月 28 日**开始，所有 Bitwarden 客户端将受到新设备登录保护 (NDLP - New Device Login Protection) 控制。为确保无缝的登录体验，请更新您的 Bitwarden 客户端，因为非常旧的版本可能不支持此功能。
+从 **2025 年 05 月 28 日**开始，所有 Bitwarden 客户端将受到新设备登录保护控制。为确保无缝的登录体验，请更新您的 Bitwarden 客户端，因为非常旧的版本可能不支持此功能。
 {% endhint %}
 
-> **\[译者注]**：如果您的 Bitwarden 账户对应的电子邮箱已不存在或您无法访问，导致您无法获取验证码，您需要联系 Bitwarden 客服支持说明情况，并提供一个您可以访问的电子邮箱，他们会对您的 Bitwarden 账户暂时免除新设备登录保护（注意豁免期只有 24 小时）
+> **\[译者注]**：如果您的 Bitwarden 账户对应的电子邮箱已不存在或您无法访问，导致您无法获取验证码，您可以[联系 Bitwarden 客服支持](https://bitwarden.com/contact/)说明情况，可能需要提供一个您可以访问的电子邮箱，他们会对您的 Bitwarden 账户暂时免除新设备登录保护 (NDLP - New Device Login Protection)。注意豁免期只有 24 小时！
 
 为确保您的账户安全，Bitwarden 将对**未使用**[**两步登录**](../two-step-login/setup-guides/two-step-login-methods.md)**的用户**要求额外的验证。**当从一个以前未登录过的设备登录时**，在您输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码，以完成登录过程。例如，如果您登录的是以前使用过的移动 App 或浏览器扩展，则不会收到此提示。
 
