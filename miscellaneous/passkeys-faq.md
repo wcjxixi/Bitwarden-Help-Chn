@@ -6,7 +6,7 @@
 
 > 这是 Bitwarden 资源库的一篇文章，我把它放在帮助中心，以便于理解什么是通行密钥 (Passkey)。
 
-### 什么是通行密钥以及它是如何工作的？ <a href="#what-is-a-passkey-and-how-does-it-work" id="what-is-a-passkey-and-how-does-it-work"></a>
+### 什么是通行密钥以及它的工作原理？ <a href="#what-is-a-passkey-and-how-does-it-work" id="what-is-a-passkey-and-how-does-it-work"></a>
 
 通行密钥是一种身份验证形式，可让您快速创建和登录账户，而无需使用安全性较低的密码。这种一步到位的安全登录方法取代了传统的身份验证方法以及双因素身份验证 (2FA) 过程。更妙的是，有了通行密钥，您再也不会创建弱密码了，因为您再也不需要创建密码了。
 

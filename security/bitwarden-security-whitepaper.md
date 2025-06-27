@@ -94,9 +94,9 @@ Bitwarden 的用户数据保护从用户创建账户和主密码的那一刻开�
 
 Bitwarden 客户端提供以下替代身份验证方法。其中一些方法也可用于登录时解密：
 
-* **设备登录**：从 Bitwarden 客户端发起身份验证请求，并通过在您已登录的设备上批准该请求来完成身份验证。[了解它是如何工作的](../account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
-* **通行密钥登录**：使用通行密钥登录 Bitwarden 客户端，如果该通行密钥支持 PRF，则使用它来解密您的密码库数据。[了解它是如何工作的](../account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)。
-* **受信任设备 SSO** ：受信任设备 SSO 允许用户使用 SSO 进行身份验证并使用设备存储的加密密钥解密其密码库，从而无需输入主密码。[了解它是如何工作的](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)。
+* **设备登录**：从 Bitwarden 客户端发起身份验证请求，并通过在您已登录的设备上批准该请求来完成身份验证。[了解它的工作原理](../account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
+* **通行密钥登录**：使用通行密钥登录 Bitwarden 客户端，如果该通行密钥支持 PRF，则使用它来解密您的密码库数据。[了解它的工作原理](../account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)。
+* **受信任设备 SSO** ：受信任设备 SSO 允许用户使用 SSO 进行身份验证并使用设备存储的加密密钥解密其密码库，从而无需输入主密码。[了解它的工作原理](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)。
 
 #### 两步登录 <a href="#two-step-login" id="two-step-login"></a>
 

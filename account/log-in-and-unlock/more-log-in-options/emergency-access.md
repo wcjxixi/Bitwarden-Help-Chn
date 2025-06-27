@@ -193,7 +193,7 @@
 
 **当您是一个组织的成员时**，您将自动从其不是[所有者](../../../admin-console/user-management/member-roles-and-permissions.md)的任何组织中被移除。所有者不会从他们的组织中被移除或失去权限，但是，如果启用，将在接管时执行[主密码策略](../../../organizations/enterprise-policies.md#master-password)。通常，不对所有者执行的策略（例如，[两步登录](../../../organizations/enterprise-policies.md#two-step-login)）将不会在接管时执行。
 
-### 它是如何工作的 <a href="#how-it-works" id="how-it-works"></a>
+### 工作原理 <a href="#how-it-works" id="how-it-works"></a>
 
 {% hint style="info" %}
 以下信息引用了加密密钥名称和过程，这些内容在[散列、密钥派生和加密](../../../security/bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)章节中有介绍。请先阅读该章节。

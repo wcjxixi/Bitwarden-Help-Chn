@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/deploy-key-connector/)
 {% endhint %}
 
-本文将引导您完成在现有自托管环境中启用和配置 Key Connector 的过程。**在继续之前**，请仔细阅读[关于 Key Connector](about-key-connector.md) 一文，以确保完全了解 Key Connector 是什么、它是如何工作的以及实施的影响。
+本文将引导您完成在现有自托管环境中启用和配置 Key Connector 的过程。**在继续之前**，请仔细阅读[关于 Key Connector](about-key-connector.md) 一文，以确保完全了解 Key Connector 是什么、它的工作原理以及实施的影响。
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
