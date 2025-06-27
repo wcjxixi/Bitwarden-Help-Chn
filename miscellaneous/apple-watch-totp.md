@@ -18,7 +18,7 @@ Families 2019 不再向该计划的用户提供个人高级会员资格。[此�
 
 2、检查你的 Apple Watch，Bitwarden 应该会自动安装在您的手表上。如果没有在您的 Apple Watch上看到 Bitwarden ，请在 Apple Watch 上手动安装 Bitwarden。
 
-<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6pWZMbYpUERAe7wPVKBANZ/eb3046159b774c207510b762947e144d/Screen_Shot_2022-12-02_at_3.53.40_PM__2_.png?_a=DAJCwlWIZAAB" alt=""><figcaption><p>Apple Watch Bitwarden App</p></figcaption></figure>
+<div align="left"><figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6pWZMbYpUERAe7wPVKBANZ/eb3046159b774c207510b762947e144d/Screen_Shot_2022-12-02_at_3.53.40_PM__2_.png?_a=DAJCwlWIZAAB" alt=""><figcaption><p>Apple Watch Bitwarden App</p></figcaption></figure></div>
 
 3、在 iPhone 移动 App 上访问您的 Bitwarden 账户，然后选择 **⚙️设置**选项卡。
 
@@ -33,7 +33,7 @@ Families 2019 不再向该计划的用户提供个人高级会员资格。[此�
 当您注销账户或切换到其他账户时，Apple Watch 将擦除当前数据。在您的 iOS 移动设备上重新登录 Bitwarden 账户时，将再次进行同步。
 
 {% hint style="info" %}
-在移动 App 中关闭 Bitwarden Apple Watch 连接将删除 Apple Watch 上的 Bitwarden App 的所有数据并禁用与其的通信。
+在移动 App 中关闭 Bitwarden Apple Watch 连接将删除 Apple Watch 上的 Bitwarden App 的所有数据并禁止与其通信。
 {% endhint %}
 
 ## 启用 TOTP <a href="#enabling-totp" id="enabling-totp"></a>
