@@ -11,7 +11,7 @@
 * **若您的账户创建于 2017 年之前**，只要您在 2023 年后曾登录过网页 App，则不受到此次变更的影响。
 {% endhint %}
 
-2017 年之前创建的账户采用了一种直接使用主密码派生的密钥来加密账户数据的加密方案。这种加密方式缺乏灵活性，并存在潜在安全风险。2017 年，Bitwarden 更新了[加密方案](../security/bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)以解决这些问题。更新后：
+**2017 年之前创建的账户**采用了一种直接使用主密码派生的密钥来加密账户数据的加密方案。这种加密方式缺乏灵活性，并存在潜在安全风险。2017 年，Bitwarden 更新了[加密方案](../security/bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)以解决这些问题。更新后：
 
 * （2017 年）网页 App 中增加了自动将账户迁移至新加密方案的工作流程。
 * （2023 年）Bitwarden 客户端（除网页版外）进行了变更，阻止旧版用户的登录。系统会提示错误信息，并引导用户登录网页 App 完成迁移。
