@@ -4,7 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/totp-sync/)
 {% endhint %}
 
-> **\[译者注]**：Bitwarden Password Manager iOS 和 Android 以及 Bitwarden Authenticator 支持验证码同步功能。
+> **\[译者注]**：Bitwarden Password Manager iOS 版本 + 、和 Android 版本 +
+>
+> 与 Bitwarden Authenticator 版本 + 支持验证码同步功能。
 
 如果您同时使用 Bitwarden Authenticator 和 Bitwarden Password Manager，您可以在两者之间无缝同步验证码。
 
@@ -72,6 +74,6 @@ AIDL 是一种进程间通信 (IPC) 抽象，它允许 Authenticator 和 Passwor
 * 之前存储在 App Group 中的已加密的验证器密钥、显示名称和用户名将被删除。
 * 仅当所有用户停用同步或注销时，**全局对称密钥**也将被删除。
 
-> **\[译者注]**：App Group 是 Apple 提供的允许同一开发者账号下的多个 App 或 Extension 共享数据（如登录状态）的机制。它通过提供一个共享的容器（Shared Container），使得不同的 App 或 Extension 可以访问同一份数据，从而突破 iOS 沙盒（Sandbox）的限制，实现跨 App 数据共享。
+> **\[译者注]**：App Group 是 Apple 提供的允许同一开发者账号下的多个 App 或 Extension 共享数据（如登录状态）的机制。它通过提供一个共享的容器 (Shared Container)，使得不同的 App 或 Extension 可以访问同一份数据，从而突破 iOS 沙盒 (Sandbox) 的限制，实现跨 App 数据共享。
 {% endtab %}
 {% endtabs %}
