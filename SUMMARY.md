@@ -312,7 +312,7 @@
   * [更新服务器](self-hosting/update-a-server.md)
   * [备份服务器数据](self-hosting/backup-server-data.md)
   * [\*作为 MSP 部署 Bitwarden](self-hosting/deploying-bitwarden-as-an-msp.md)
-  * [托管 FAQ](self-hosting/hosting-faqs.md)
+  * [自托管 FAQ](self-hosting/hosting-faqs.md)
 * [安全](security/README.md)
   * [Bitwarden 安全白皮书](security/bitwarden-security-whitepaper.md)
   * [数据](security/data/README.md)
