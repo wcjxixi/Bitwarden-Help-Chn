@@ -39,7 +39,7 @@ helm upgrade self-host-bsfyr9bpzk bitwarden/self-host --version <semver-version>
 
 ### Password Manager
 
-* **Android 的支付卡自动填充**：Bitwarden Android App 现在可以自动填充支付卡，例如借记卡或信用卡。了解更多。
+* **Android 的支付卡自动填充**：Bitwarden Android App 现在可以自动填充支付卡，例如借记卡或信用卡。[了解更多](password-manager/autofill/more-autofill-options/auto-fill-cards-and-identities.md)。
 * **失败的 2FA 电子邮件**：用户现在将收到一封电子邮件，通知他们被两步登录阻止的失败的登录尝试。如果您收到这些电子邮件，请立即将主密码更新为强，唯一且从未使用过的主密码。了解更多。
 
 ### Secrets Manager
