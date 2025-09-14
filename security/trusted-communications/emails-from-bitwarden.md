@@ -59,6 +59,8 @@ Bitwarden 会对可疑活动（如从未知设备登录和从未知设备尝试�
 如果您的账户从未知设备成功登录，您将收到一封包含登录信息的电子邮件。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BPGGp6Wvm3NzDopPbkkj2/b8ff436931e2791d366dda3ea8ed078e/Screenshot_2023-03-29_at_4.05.28_PM.png?_a=DAJCwlWIZAAB" %}
+从未知设备登录
+{% endembed %}
 
 电子邮件内容包括：
 
@@ -77,6 +79,16 @@ Bitwarden 会对可疑活动（如从未知设备登录和从未知设备尝试�
 * 日期
 * IP 地址
 * 设备类型
+
+### 检测到失败的登陆尝试 <a href="#failed-login-attempts-detected" id="failed-login-attempts-detected"></a>
+
+如果检测到错误的两步登录尝试，例如输入了错误的 TOTP 代码，您将收到一封电子邮件通知您：
+
+{% embed url="https://bitwarden.com/assets/7oGzZ6B0WTuRKeKu7DBmAE/8a7b4517cab6b76fd474e05171be5fba/2025-08-28_11-07-13.png?w=626&fm=avif&q=80" %}
+失败的登陆尝试
+{% endembed %}
+
+如果尝试的人是您，您可以放心地忽略这条信息。如果尝试的人**不是您**，则应立即[更改主密码](../../account/log-in-and-unlock/your-master-password.md#change-your-master-password)。
 
 ## 公告电子邮件 <a href="#announcement-emails" id="announcement-emails"></a>
 

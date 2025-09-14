@@ -40,11 +40,11 @@ helm upgrade self-host-bsfyr9bpzk bitwarden/self-host --version <semver-version>
 ### Password Manager
 
 * **Android 的支付卡自动填充**：Bitwarden Android App 现在可以自动填充支付卡，例如借记卡或信用卡。[了解更多](password-manager/autofill/more-autofill-options/auto-fill-cards-and-identities.md)。
-* **失败的 2FA 电子邮件**：用户现在将收到一封电子邮件，通知他们被两步登录阻止的失败的登录尝试。如果您收到这些电子邮件，请立即将主密码更新为强，唯一且从未使用过的主密码。了解更多。
+* **2FA 失败时的电子邮件**：用户现在将收到一封电子邮件，通知他们被两步登录阻止的失败的登录尝试。如果您收到这些电子邮件，请立即将主密码更新为强、唯一且从未使用过的主密码。[了解更多](security/trusted-communications/emails-from-bitwarden.md)。
 
 ### Secrets Manager
 
-* **新事件日志**：Secrets Manager 现在会在访问、创建、编辑或删除工程时记录事件日志。了解更多。
+* **新的事件日志**：Secrets Manager 现在会在访问、创建、编辑或删除工程时记录事件日志。[了解更多](admin-console/reporting/event-logs.md)。
 
 ## 2025.8.2
 
@@ -108,7 +108,7 @@ helm upgrade self-host-bsfyr9bpzk bitwarden/self-host --version <semver-version>
 
 ### Password Manager
 
-* **Password Depot** 17 导入：Password Depot 17 已被添加到可直接导入 Bitwarden Password Manager 的格式列表中。了解更多。
+* **Password Depot 17 导入**：Password Depot 17 已被添加到可直接导入 Bitwarden Password Manager 的格式列表中。了解更多。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -131,7 +131,7 @@ helm upgrade self-host-bsfyr9bpzk bitwarden/self-host --version <semver-version>
 
 * **添加和编辑项目时浏览器扩展的持久化**：现在，浏览器扩展对项目数据的更改操作将有最长 2 分钟的缓存周期，即使点击其他区域或最小化扩展窗口也不会丢失更改的数据。
 * **浏览器扩展通知重新设计**：浏览器扩展通知有了新的外观和体验。[了解更多](password-manager/autofill/autofill-from/autosave-from-browser-extensions.md)。
-* **移动 App 高级故障排除**：在移动 App 中，用户现在可以选择本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/yu-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
+* **移动版 App 高级故障排除**：在移动 App 中，用户现在可以选择本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/yu-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
 
 ### Bitwarden Authenticator
 

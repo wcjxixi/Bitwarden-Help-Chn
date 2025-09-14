@@ -125,7 +125,12 @@ Bitwarden 客户端和服务器都会捕获事件，其中大多数事件发生�
 
 Secrets Manager 事件可从组织密码库的**报告**选项卡和[服务账户事件日志页面](../../secrets-manager/your-secrets/machine-accounts.md#machine-account-events)获取。捕获以下 Secrets Manager 事件：
 
-* 访问了机密 _secret-identifier_。(`2100`)
+* 访问了标识符为 _secret-identifier_ 的机密。(`2100`)
+* 编辑了标识符为 _secret-identifier_ 的机密。(`2101`)
+* 删除了标识符为 _secret-identifier_ 的机密。(`2102`)
+* 创建了标识符为 _secret-identifier_ 的新机密。(`2103`)
+* 访问了标识符为 _project-identifier_ 的工程。
+* Deleted a project with identifier: _project-identifier_ (`2203`)
 
 ### 提供商事件 <a href="#provider-events" id="provider-events"></a>
 
