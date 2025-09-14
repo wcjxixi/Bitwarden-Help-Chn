@@ -129,8 +129,10 @@ Secrets Manager 事件可从组织密码库的**报告**选项卡和[服务账�
 * 编辑了标识符为 _secret-identifier_ 的机密。(`2101`)
 * 删除了标识符为 _secret-identifier_ 的机密。(`2102`)
 * 创建了标识符为 _secret-identifier_ 的新机密。(`2103`)
-* 访问了标识符为 _project-identifier_ 的工程。
-* Deleted a project with identifier: _project-identifier_ (`2203`)
+* 访问了标识符为 _project-identifier_ 的工程。(`2200`)
+* 创建了标识符为 _project-identifier_ 的新工程。(`2201`)
+* 编辑了标识符为 _project-identifier_ 的工程。(`2202`)
+* 删除了标识符为 _project-identifier_ 的工程。(`2203`)
 
 ### 提供商事件 <a href="#provider-events" id="provider-events"></a>
 
@@ -192,19 +194,12 @@ Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19h
 > * 商业产品：Splunk Enterprise Security、IBM QRadar、Microsoft Sentinel、LogRhythm 等
 > * 开源/免费方案：Elastic Stack、OSSIM、Wazuh 等
 
-当将数据从 Bitwarden 导出到其他系统时，可以使用 API​​ 和 CLI 的组合数据来收集数据。
+Bitwarden 提供了一套与安全信息和事件管理 (SIEM) 平台的全面集成，以利用事件日志：
 
-例如，Bitwarden RESTful API 围绕组织结构收集数据。
+* [Elastic SIEM](configure-siem/elastic-siem.md)
+* [Microsoft Sentinel SIEM](configure-siem/microsoft-sentinel-siem.md)
+* [Panther SIEM](configure-siem/panther-siem.md)
+* [Rapid7 SIEM](configure-siem/rapid7-siem.md)
+* [Splunk SIEM](configure-siem/splunk-siem.md)
 
-* GET /public/members：返回成员、ID 和分配的群组 ID
-* GET /public/groups：返回所有群组、ID、分配的集合及其权限
-* GET /public/collections：返回所有集合及其分配的群组
-
-获得每个成员、群组和集合的唯一 ID 之后，您现在就可以使用 CLI 工具通过 CLI 命令 `bw-list` 来收集信息，该命令以 JSON 格式检索以下项目：
-
-* 组织成员
-* 项目
-* 集合
-* 群组
-
-在收集这些数据后，您可以将行连接到它们唯一的 ID 上，以建立对您的 Bitwarden 组织所有部分的参考。有关 Bitwarden CLI 使用的更多信息，请参阅 [Bitwarden 命令行工具 (CLI)](../../password-manager/developer-tools/password-manager-cli.md)。
+Bitwarden 还提供了多种数据访问方法，这些数据可能与 SIEM 平台相关，但目前还没有特定的集成。有关配置上面未列出的 SIEM 的帮助，请参阅[非原生 SIEM](configure-siem/non-native-siem.md)。

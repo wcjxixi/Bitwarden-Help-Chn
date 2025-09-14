@@ -226,6 +226,7 @@
       * [Panther SIEM](admin-console/reporting/configure-siem/panther-siem.md)
       * [Rapid7 SIEM](admin-console/reporting/configure-siem/rapid7-siem.md)
       * [Splunk SIEM](admin-console/reporting/configure-siem/splunk-siem.md)
+      * [非原生 SIEM](admin-console/reporting/configure-siem/non-native-siem.md)
   * [最终用户入职](admin-console/end-user-onboarding/README.md)
     * [关于本章节](admin-console/end-user-onboarding/about-this-section.md)
     * [欢迎电子邮件模板](admin-console/end-user-onboarding/welcome-email-templates.md)
