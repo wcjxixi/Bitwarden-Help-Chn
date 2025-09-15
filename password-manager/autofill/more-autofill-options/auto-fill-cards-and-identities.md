@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-card-id/)
 {% endhint %}
 
-Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！某些 Bitwarden App 可以自动填充[支付卡](../../../your-vault/vault-items.md#zhi-fu-ka)和[身份信息](../../../your-vault/vault-items.md#shen-fen)，以简化网上购物、账户创建等操作。对于组织成员，策略可能会[阻止使用支付卡项目](../../../organizations/enterprise-policies.md#remove-card-item-type)，因此也就无法自动填写支付卡。
+Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！某些 Bitwarden App 可以自动填充[支付卡](../../../your-vault/vault-items.md#zhi-fu-ka)和[身份信息](../../../your-vault/vault-items.md#shen-fen)，以简化网上购物、账户创建等操作。对于组织成员，策略可能会[阻止使用支付卡项目](../../../organizations/enterprise-policies.md#remove-card-item-type)，因此也就无法自动填充支付卡。
 
 {% hint style="info" %}
 目前，自动填充支付卡适用于浏览器扩展和 Android。自动填充身份信息仅适用于浏览器扩展。
@@ -20,8 +20,8 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 
 * **将身份显示为建议**：在内嵌自动填充菜单中包含身份。这要求**在表单字段上显示自动填充建议**选项已打开。
 * **将支付卡显示为建议**：在内嵌自动填充菜单中包含卡片。这要求**在表单字段上显示自动填充建议**选项已打开。
-* **在密码库视图中将支付卡显示为自动填充建议**：在密码库视图的建议中包含支付卡。可以使用**填充**按钮自动填充。
-* **在密码库视图中将身份显示为自动填充建议**：在密码库视图的建议中包含身份。可以使用**填充**按钮自动填充。
+* **在密码库视图中始终将支付卡显示为自动填充建议**：在密码库视图的建议中包含支付卡。可以使用**填充**按钮自动填充。
+* **在密码库视图中始终将身份显示为自动填充建议**：在密码库视图的建议中包含身份。可以使用**填充**按钮自动填充。
 
 ## 自动填充支付卡 & 身份 <a href="#autofilling-cards-and-identities" id="autofilling-cards-and-identities"></a>
 

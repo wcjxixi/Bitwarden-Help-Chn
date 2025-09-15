@@ -1,4 +1,4 @@
-# 密码库项目
+# 项目类型
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/managing-items/)
@@ -10,7 +10,7 @@
 {% tab title="登录" %}
 登录常用于存储用户名和密码的组合，并支持针对高级用户的 [TOTP 种子](totp.md)。无论您使用的是何种计划，我们都建议为每个登录提供一个[用于方便自动填充的 URI](../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md)：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5VGRnEvX53BOXa9CCgrhRx/9cdf22fc63819a8f24fc80f0effb5ad3/2024-12-02_14-17-14.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/5VGRnEvX53BOXa9CCgrhRx/4bde2d7970e8db93c40156d4636cd28b/web_item_view.png?w=1200&fm=avif&q=80" %}
 登录项目
 {% endembed %}
 {% endtab %}
@@ -194,9 +194,39 @@
 
 在回收站中，您可以在 30 天等待期之前使用 **≡**&#x83DC;单将项目**恢复**到您的密码库或**永久删除**它：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/36mo5LyroRq1BhOcjSsBb7/a05100ab172376caf15b4c454beee321/2024-12-02_14-39-40.png?_a=DAJCwlWIZAAB" %}
-回收站
+{% tabs %}
+{% tab title="网页 App" %}
+从筛选菜单选择**回收站**：
+
+{% embed url="https://bitwarden.com/assets/36mo5LyroRq1BhOcjSsBb7/a05100ab172376caf15b4c454beee321/2024-12-02_14-39-40.png?w=1038&fm=avif&q=80" %}
+网页 App 中的回收站
 {% endembed %}
+{% endtab %}
+
+{% tab title="浏览器扩展" %}
+导航到**设置** → **密码库** → **回收站**：
+
+{% embed url="https://bitwarden.com/assets/5Q0mgKjaDiIKy5ymlVaUnS/fa72b454697bedd7319da17ba671a9e5/2025-04-15_09-33-59.png?w=818&fm=avif&q=80" %}
+浏览器扩展中的回收站
+{% endembed %}
+{% endtab %}
+
+{% tab title="移动 App" %}
+在**密码库**选项卡上，向下滚动到**回收站**，然后选择项目：
+
+{% embed url="https://bitwarden.com/assets/7HwDVQp0ma6RxU95ILNVtI/52275cc54ff5d789f8825d225edb0ecf/2025-04-15_10-22-16.png?w=680&fm=avif&q=80" %}
+移动 App 中的回收站
+{% endembed %}
+{% endtab %}
+
+{% tab title="桌面 App" %}
+从导航栏选择**回收站**：
+
+{% embed url="https://bitwarden.com/assets/viaKopya1CJ9N6mWKyLV6/e6fb6c21ef79f87f8d701ea7e8e2d2c3/2025-08-13_14-36-35.png?w=900&fm=avif&q=80" %}
+桌面 App 中的回收站
+{% endembed %}
+{% endtab %}
+{% endtabs %}
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 

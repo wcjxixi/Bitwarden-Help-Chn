@@ -42,7 +42,7 @@
     * [Password Manager 移动 App](getting-started/getting-started-mobile.md)
     * [Password Manager 桌面 App](getting-started/getting-started-desktop.md)
   * [密码库基础](password-manager/vault-basics/README.md)
-    * [密码库项目](your-vault/vault-items.md)
+    * [项目类型](your-vault/vault-items.md)
     * [用户名 & 密码生成器](password-manager/vault-basics/generator.md)
     * [自定义字段](your-vault/custom-fields.md)
     * [集成的身份验证器](your-vault/totp.md)

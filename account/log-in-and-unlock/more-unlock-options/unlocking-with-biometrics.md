@@ -12,7 +12,7 @@ Bitwarden 可以被配置为接受生物识别的的方式来解锁您的密码�
 生物识别功能是设备和/或操作系统内置安全性的一部分。Bitwarden 利用本地 API 来执行这种验证，因此 **Bitwarden 不会从设备上接收任何生物识别信息**。
 {% endhint %}
 
-## 启用生物识别解锁 <a href="#enable-unlock-with-biometrics" id="enable-unlock-with-biometrics"></a>
+## 设置生物识别 <a href="#enable-unlock-with-biometrics" id="enable-unlock-with-biometrics"></a>
 
 可以在移动端、桌面端和浏览器扩展上为 Bitwarden 启用使用生物识别解锁：
 

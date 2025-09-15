@@ -202,4 +202,4 @@ Bitwarden 提供了一套与安全信息和事件管理 (SIEM) 平台的全面�
 * [Rapid7 SIEM](configure-siem/rapid7-siem.md)
 * [Splunk SIEM](configure-siem/splunk-siem.md)
 
-Bitwarden 还提供了多种数据访问方法，这些数据可能与 SIEM 平台相关，但目前还没有特定的集成。有关配置上面未列出的 SIEM 的帮助，请参阅[非原生 SIEM](configure-siem/non-native-siem.md)。
+Bitwarden 还提供了多种数据访问方法，这些数据可能与 SIEM 平台相关，但目前还没有特定的集成。有关上面未列出的 SIEM 的配置帮助，请参阅[非原生 SIEM](configure-siem/non-native-siem.md)。

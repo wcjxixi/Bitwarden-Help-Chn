@@ -62,14 +62,14 @@ helm upgrade self-host-bsfyr9bpzk bitwarden/self-host --version <semver-version>
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **禁用支付卡项目类型策略**：添加了一项企业策略，允许企业组织限制支付卡项目类型的使用。了解更多。
+* **禁用支付卡项目类型策略**：添加了一项企业策略，允许企业组织限制支付卡项目类型的使用。[了解更多](organizations/enterprise-policies.md#remove-card-item-type)。
 
 ### Password Manager
 
-* **内嵌自动填充密码生成器改进**：内嵌自动填充密码生成器现在可立即将生成的密码保存为新的登录项目。了解更多有关内嵌自动填充的信息。
-* **改进的项目视图**：添加了对查看密码库项目的改进。更新包括在密码库项目顶部显示收藏夹和其他重要信息。了解更多有关密码库项目的信息。
-* **Android 现在要求使用 HTTPS**：Android Password Manager App 现在要求使用 HTTPS 连接到服务器。这一更改只会影响没有 SSL/TLS 证书的 Bitwarden 服务器自托管用户。了解更多有关证书的信息。
-* **生物识别解锁更新**：桌面 App 重新启动后，现在必须首先使用 PIN 或主密码等生物识别以外的方法解锁，然后才能使用生物识别解锁。了解更多有关生物识别解锁的信息。
+* **内嵌自动填充密码生成器改进**：内嵌自动填充密码生成器现在可立即将生成的密码保存为新的登录项目。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#inline-auto-fill-menu)有关内嵌自动填充的信息。
+* **改进的项目视图**：添加了对查看密码库项目的改进。更新包括在密码库项目顶部显示收藏夹和其他重要信息。[了解更多](your-vault/vault-items.md)有关密码库项目的信息。
+* **Android 现在要求使用 HTTPS**：Android Password Manager App 现在要求使用 HTTPS 连接到服务器。这一更改只会影响没有 SSL/TLS 证书的 Bitwarden 服务器自托管用户。[了解更多](self-hosting/deploy-and-configure/configuration-options/certificate-options.md)有关证书的信息。
+* **生物识别解锁更新**：桌面 App 重新启动后，现在必须首先使用 PIN 或主密码等生物识别以外的方法解锁，然后才能使用生物识别解锁。[了解更多](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)有关生物识别解锁的信息。
 
 ## 2025.7.3
 
