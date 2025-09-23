@@ -7,7 +7,7 @@
 作为提供商，如果您不再向某个组织提供服务，您可能需要解除与该组织的提供商 - 客户关系。为了使客户组织符合移除条件，您需要：
 
 * 您必须是[提供商管理员](provider-users.md#provider-user-types)。
-* 客户组织必须至少有一名[已确认的所有者](../organizations/user-management.md#onboard-users)。
+* 客户组织必须至少有一名[已确认的所有者](../admin-console/manage-members/user-management.md#onboard-users)。
 
 满足这些条件后：
 

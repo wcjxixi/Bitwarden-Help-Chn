@@ -17,18 +17,18 @@
 
 Bitwarden 组织使用的某些功能未通过上述文章中记录的标准安装过程进行配置。要为您的自托管服务器配备 Bitwarden 组织可用的所有功能，请在您的 `./bwdata/env/global.override.env` 文件中设置以下变量：
 
-| 变量                                                    | 描述                                                                                                                           | 用途                                                                                                                     |
-| ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| globalSettings\_\_mail\_\_smtp\_\_host=               | 您的 SMTP 服务器主机名（推荐）或 IP 地址。                                                                                                   | 用于[邀请用户](../../organizations/user-management.md#invite)加入您的组织。                                                         |
-| globalSettings\_\_mail\_\_smtp\_\_port=               | SMTP 服务器使用的 SMTP 端口。                                                                                                         | 用于[邀请用户](../../organizations/user-management.md#invite)加入您的组织。                                                         |
-| globalSettings\_\_mail\_\_smtp\_\_ssl=                | <p>（布尔值）您的 SMTP 服务器使用何种加密协议：</p><p><code>true</code> = SSL</p><p><code>false</code> = TLS</p>                                | 用于[邀请用户](../../organizations/user-management.md#invite)加入您的组织。                                                         |
-| globalSettings\_\_mail\_\_smtp\_\_username=           | `smtp__host` 的有效用户名。                                                                                                         | 用于[邀请用户](../../organizations/user-management.md#invite)加入您的组织。                                                         |
-| globalSettings\_\_mail\_\_smtp\_\_passsword=          | `smtp__username` 的有效密码。                                                                                                      | 用于[邀请用户](../../organizations/user-management.md#invite)加入您的组织。                                                         |
-| globalSettings\_\_enableCloudCommunication=           | 设置为 `true` 以允许您的服务器和我们的云系统之间进行通信。                                                                                            | 用于[计费和许可证同步](self-host-an-organization.md#step-4-setup-billing-and-license-sync)。                                      |
-| globalSettings\_\_duo\_\_aKey=                        | 随机生成的 Duo 密钥。有关详细信息，请参阅 [Duo 文档](https://duo.com/docs/duoweb-v2#1.-generate-an-akey)。                                        | 用于[组织层面的 DUO 两步登录](../../account/two-step-login/setup-guides/two-step-login-via-duo.md)。                               |
-| globalSettings\_\_hibpApiKey=                         | 您的 HaveIBeenPwned (HIBP) API 密钥，可在[此处](https://haveibeenpwned.com/API/Key)获得。                                                | 允许用户在创建账户时运行[数据泄露报告](../../your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)并检查其主密码是否存在泄露。 |
-| globalSettings\_\_disableUserRegistration=            | 指定为 `true` 以禁止新用户通过注册页面在此实例上注册账户。                                                                                            | 用于将服务器上的用户限制为受邀加入组织的用户。                                                                                                |
-| globalSettings\_\_sso\_\_enforceSsoPolicyForAllUsers= | 指定为 `true` 以对所有者和管理员角色强制执行[要求 SSO 身份验证](../../organizations/enterprise-policies.md#require-single-sign-on-authentication)策略。 | 用于为所有者和管理员角色强制执行[要求 SSO 身份验证](../../organizations/enterprise-policies.md#require-single-sign-on-authentication)策略。     |
+| 变量                                                    | 描述                                                                                                                                               | 用途                                                                                                                                     |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| globalSettings\_\_mail\_\_smtp\_\_host=               | 您的 SMTP 服务器主机名（推荐）或 IP 地址。                                                                                                                       | 用于[邀请用户](../../admin-console/manage-members/user-management.md#invite)加入您的组织。                                                          |
+| globalSettings\_\_mail\_\_smtp\_\_port=               | SMTP 服务器使用的 SMTP 端口。                                                                                                                             | 用于[邀请用户](../../admin-console/manage-members/user-management.md#invite)加入您的组织。                                                          |
+| globalSettings\_\_mail\_\_smtp\_\_ssl=                | <p>（布尔值）您的 SMTP 服务器使用何种加密协议：</p><p><code>true</code> = SSL</p><p><code>false</code> = TLS</p>                                                    | 用于[邀请用户](../../admin-console/manage-members/user-management.md#invite)加入您的组织。                                                          |
+| globalSettings\_\_mail\_\_smtp\_\_username=           | `smtp__host` 的有效用户名。                                                                                                                             | 用于[邀请用户](../../admin-console/manage-members/user-management.md#invite)加入您的组织。                                                          |
+| globalSettings\_\_mail\_\_smtp\_\_passsword=          | `smtp__username` 的有效密码。                                                                                                                          | 用于[邀请用户](../../admin-console/manage-members/user-management.md#invite)加入您的组织。                                                          |
+| globalSettings\_\_enableCloudCommunication=           | 设置为 `true` 以允许您的服务器和我们的云系统之间进行通信。                                                                                                                | 用于[计费和许可证同步](self-host-an-organization.md#step-4-setup-billing-and-license-sync)。                                                      |
+| globalSettings\_\_duo\_\_aKey=                        | 随机生成的 Duo 密钥。有关详细信息，请参阅 [Duo 文档](https://duo.com/docs/duoweb-v2#1.-generate-an-akey)。                                                            | 用于[组织层面的 DUO 两步登录](../../account/two-step-login/setup-guides/two-step-login-via-duo.md)。                                               |
+| globalSettings\_\_hibpApiKey=                         | 您的 HaveIBeenPwned (HIBP) API 密钥，可在[此处](https://haveibeenpwned.com/API/Key)获得。                                                                    | 允许用户在创建账户时运行[数据泄露报告](../../your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)并检查其主密码是否存在泄露。                 |
+| globalSettings\_\_disableUserRegistration=            | 指定为 `true` 以禁止新用户通过注册页面在此实例上注册账户。                                                                                                                | 用于将服务器上的用户限制为受邀加入组织的用户。                                                                                                                |
+| globalSettings\_\_sso\_\_enforceSsoPolicyForAllUsers= | 指定为 `true` 以对所有者和管理员角色强制执行[要求 SSO 身份验证](../../admin-console/manage-shared-items/enterprise-policies.md#require-single-sign-on-authentication)策略。 | 用于为所有者和管理员角色强制执行[要求 SSO 身份验证](../../admin-console/manage-shared-items/enterprise-policies.md#require-single-sign-on-authentication)策略。 |
 
 对环境变量进行更改后，执行 `./bitwarden.sh rebuild` 以将更改应用到服务器。
 
@@ -36,7 +36,7 @@ Bitwarden 组织使用的某些功能未通过上述文章中记录的标准安�
 
 ### 启动云端组织 <a href="#start-a-cloud-organization" id="start-a-cloud-organization"></a>
 
-在此阶段，您已准备好启动您的组织并将其移植到您的自托管服务器。出于计费目的，必须首先在 Bitwarden 云端密码库 ([https://vault.bitwarden.com](https://vault.bitwarden.com)) 中创建组织。按照[这些说明](../../organizations/organizations.md#create-an-organization)创建组织。
+在此阶段，您已准备好启动您的组织并将其移植到您的自托管服务器。出于计费目的，必须首先在 Bitwarden 云端密码库 ([https://vault.bitwarden.com](https://vault.bitwarden.com)) 中创建组织。按照[这些说明](../../admin-console/organizations-overview.md#create-an-organization)创建组织。
 
 ### 启动自托管组织 <a href="#start-a-self-hosted-organization" id="start-a-self-hosted-organization"></a>
 
@@ -66,25 +66,25 @@ Bitwarden 组织使用的某些功能未通过上述文章中记录的标准安�
 {% tab title="Password Manager" %}
 ### 邀请您的管理团队 <a href="#invite-your-admin-team" id="invite-your-admin-team"></a>
 
-每个全明星组织都需要一个全明星管理团队。开始邀请高权限成员，他们可以帮助您为与 Bitwarden 的安全凭证共享奠定基础。如果您正在构建企业组织，您可以为成员提供[满足您的要求的高度灵活的自定义权限](../../admin-console/user-management/member-roles-and-permissions.md#custom-role)。
+每个全明星组织都需要一个全明星管理团队。开始邀请高权限成员，他们可以帮助您为与 Bitwarden 的安全凭证共享奠定基础。如果您正在构建企业组织，您可以为成员提供[满足您的要求的高度灵活的自定义权限](../../admin-console/manage-members/member-roles-and-permissions.md#custom-role)。
 
 以保护冗余为目的，我们建议在您新成立的管理团队中至少包括一名额外的**组织所有者**。
 
 ### 设置策略（仅限企业） <a href="#set-policies-enterprise-only" id="set-policies-enterprise-only"></a>
 
-您的业务具有独特的安全需求。使用策略为所有团队成员构建一致的部署和用户体验，例如要求 SSO 身份验证或在账户恢复管理中注册成员。为了让您的组织为更多团队成员做好准备，[尽早制定策略](../../organizations/enterprise-policies.md)非常重要。
+您的业务具有独特的安全需求。使用策略为所有团队成员构建一致的部署和用户体验，例如要求 SSO 身份验证或在账户恢复管理中注册成员。为了让您的组织为更多团队成员做好准备，[尽早制定策略](../../admin-console/manage-shared-items/enterprise-policies.md)非常重要。
 
 ### 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
-您需要从另一个密码管理器转到 Bitwarden 的吗？好消息！您可以将这些数据直接导入您的组织，以[避免痛苦的复制和粘贴一天](../../import-export/import-data-to-an-organization.md)。
+您需要从另一个密码管理器转到 Bitwarden 的吗？好消息！您可以将这些数据直接导入您的组织，以[避免痛苦的复制和粘贴一天](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)。
 
 ### 建立群组和集合 <a href="#build-groups-and-collections" id="build-groups-and-collections"></a>
 
-您的密码库中有了项目后，就可以设置集合和群组以确&#x4FDD;_&#x5408;&#x9002;_&#x7684;用户可以访&#x95EE;_&#x5408;&#x9002;_&#x7684;凭据。每个组织都是不同的，但这里有一些提示可以帮助您开始使用[集合入门](../../admin-console/organization-basics/about-collections.md#using-collections)和[群组入门](../../organizations/groups.md#using-groups)。
+您的密码库中有了项目后，就可以设置集合和群组以确&#x4FDD;_&#x5408;&#x9002;_&#x7684;用户可以访&#x95EE;_&#x5408;&#x9002;_&#x7684;凭据。每个组织都是不同的，但这里有一些提示可以帮助您开始使用[集合入门](../../admin-console/manage-shared-items/collections/about-collections.md#using-collections)和[群组入门](../../admin-console/manage-members/groups.md#using-groups)。
 
 ### 邀请您的团队 <a href="#invite-your-team" id="invite-your-team"></a>
 
-终于可以开始邀请用户了！如果您使用 Azure Active Directory 等身份提供商或目录服务，请使用 [SCIM](../../scim/about-scim.md) 或[目录连接器](../../directory-connector/about-directory-connector.md)自动同步用户。否则，请按照您建立管理团队所采取的相同步骤邀请更多用户加入组织。
+终于可以开始邀请用户了！如果您使用 Azure Active Directory 等身份提供商或目录服务，请使用 [SCIM](../../admin-console/manage-members/scim/about-scim.md) 或[目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md)自动同步用户。否则，请按照您建立管理团队所采取的相同步骤邀请更多用户加入组织。
 {% endtab %}
 
 {% tab title="Secrets Manager" %}
@@ -96,7 +96,7 @@ Bitwarden 组织使用的某些功能未通过上述文章中记录的标准安�
 
 ### 设置策略（仅限企业） <a href="#set-policies-enterprise-only" id="set-policies-enterprise-only"></a>
 
-您的业务具有独特的安全需求。使用策略为所有团队成员构建一致的部署和用户体验，例如要求 SSO 身份验证或在账户恢复管理中注册成员。为了让您的组织为更多团队成员做好准备，[尽早制定策略](../../organizations/enterprise-policies.md)非常重要。
+您的业务具有独特的安全需求。使用策略为所有团队成员构建一致的部署和用户体验，例如要求 SSO 身份验证或在账户恢复管理中注册成员。为了让您的组织为更多团队成员做好准备，[尽早制定策略](../../admin-console/manage-shared-items/enterprise-policies.md)非常重要。
 
 ### 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
@@ -104,6 +104,6 @@ Bitwarden 组织使用的某些功能未通过上述文章中记录的标准安�
 
 ### 邀请您的团队 <a href="#invite-your-team" id="invite-your-team"></a>
 
-终于可以开始邀请用户了！如果您使用 Azure Active Directory 等身份提供商或目录服务，请使用 [SCIM](../../scim/about-scim.md) 或[目录连接器](../../directory-connector/about-directory-connector.md)自动同步用户。否则，请按照您建立管理团队所采取的相同步骤邀请更多用户加入组织。每个人都入职之后，[开始授予用户对 Secrets Manager 的访问权限](../../secrets-manager/get-started/secrets-manager-quick-start.md#give-members-access)。
+终于可以开始邀请用户了！如果您使用 Azure Active Directory 等身份提供商或目录服务，请使用 [SCIM](../../admin-console/manage-members/scim/about-scim.md) 或[目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md)自动同步用户。否则，请按照您建立管理团队所采取的相同步骤邀请更多用户加入组织。每个人都入职之后，[开始授予用户对 Secrets Manager 的访问权限](../../secrets-manager/get-started/secrets-manager-quick-start.md#give-members-access)。
 {% endtab %}
 {% endtabs %}

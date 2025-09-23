@@ -18,7 +18,7 @@
 
 ## 适用范围 <a href="#scope" id="scope"></a>
 
-本文档描述了将安全数据从您当前的密码管理器迁移到 Bitwarden [团队或企业组织](../organizations/organizations.md)的最佳实践，基于简单和可扩展的方法构建安全基础设施。
+本文档描述了将安全数据从您当前的密码管理器迁移到 Bitwarden [团队或企业组织](../admin-console/organizations-overview.md)的最佳实践，基于简单和可扩展的方法构建安全基础设施。
 
 密码管理对于组织安全和运营效率至关重要。这里提供有关执行迁移和配置的最佳方法的见解，旨在最大程度地减少交换企业工具时经常需要的试错方法。
 
@@ -49,10 +49,10 @@
 Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../organizations/sharing.md)登录、笔记、支付卡和身份。
 
 {% hint style="success" %}
-最佳的做法是，首先创建一个组织，然后直接[向组织导入数据](../import-export/import-data-to-an-organization.md)，而不是先向个人账户导入数据，然后再将[移动项目](../organizations/sharing.md)到组织。
+最佳的做法是，首先创建一个组织，然后直接[向组织导入数据](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)，而不是先向个人账户导入数据，然后再将[移动项目](../organizations/sharing.md)到组织。
 {% endhint %}
 
-1、**创建您的组织**。从创建组织开始。要了解如何操作，请查看[这篇文章](../organizations/organizations.md#create-an-organization)。
+1、**创建您的组织**。从创建组织开始。要了解如何操作，请查看[这篇文章](../admin-console/organizations-overview.md#create-an-organization)。
 
 {% hint style="info" %}
 对于自托管 Bitwarden，请在 Bitwarden 云端创建一个组织，生成[许可证密钥](https://bitwarden.com/host/)，然后在您的服务器上使用该密钥[解锁组织](../self-hosting/licensing.md#organization-license)。
@@ -114,13 +114,13 @@ Bitwarden 支持通过网页密码库手动入职和通过 SCIM 集成或从现�
 
 ### 手动入职 <a href="#manual-onboarding" id="manual-onboarding"></a>
 
-为确保您组织的安全，Bitwarden 采用了三步流程入职新成员：[邀请](../organizations/user-management.md#invite) → [接受](../organizations/user-management.md#accept) → [确认](../organizations/user-management.md#confirm)。了解[如何邀请新用户](../organizations/user-management.md#onboard-users)。
+为确保您组织的安全，Bitwarden 采用了三步流程入职新成员：[邀请](../admin-console/manage-members/user-management.md#invite) → [接受](../admin-console/manage-members/user-management.md#accept) → [确认](../admin-console/manage-members/user-management.md#confirm)。了解[如何邀请新用户](../admin-console/manage-members/user-management.md#onboard-users)。
 
 ### 自动入职 <a href="#automated-onboarding" id="automated-onboarding"></a>
 
-通过与 [Azure AD](../scim/azure-ad-scim-integration.md)、[Okta](../scim/okta-scim-integration.md)、[OneLogin](../scim/onelogin-scim-integration.md) 和 [JumpCloud](../scim/jumpcloud-scim-integration.md) 的 SCIM 集成，或使用 [Directory Connector](../directory-connector/about-directory-connector.md)（一个可在[桌面 App](../directory-connector/directory-connector-desktop-app.md) 和 [CLI](../directory-connector/directory-connector-cli.md) 工具中使用的独立应用程序），可实现自动用户入职，从而同步现有目录服务中的用户和群组。
+通过与 [Azure AD](../admin-console/manage-members/scim/microsoft-entra-id-scim-integration.md)、[Okta](../admin-console/manage-members/scim/okta-scim-integration.md)、[OneLogin](../admin-console/manage-members/scim/onelogin-scim-integration.md) 和 [JumpCloud](../admin-console/manage-members/scim/jumpcloud-scim-integration.md) 的 SCIM 集成，或使用 [Directory Connector](../admin-console/manage-members/directory-connector/about-directory-connector.md)（一个可在[桌面 App](../admin-console/manage-members/directory-connector/directory-connector-desktop-app.md) 和 [CLI](../admin-console/manage-members/directory-connector/directory-connector-cli.md) 工具中使用的独立应用程序），可实现自动用户入职，从而同步现有目录服务中的用户和群组。
 
-无论使用哪种方式，用户都会被自动邀请加入组织，并可使用 [Bitwarden CLI](../password-manager/developer-tools/password-manager-cli.md#confirm) 工具手动或自动确认。
+无论使用哪种方式，用户都会被自动邀请加入组织，并可使用 [Bitwarden CLI](../password-manager/developer-tools/cli/password-manager-cli.md#confirm) 工具手动或自动确认。
 
 ## 第 5 步：配置集合和项目的访问权限 <a href="#step-5-configure-access-to-collections-and-items" id="step-5-configure-access-to-collections-and-items"></a>
 
@@ -146,7 +146,7 @@ Bitwarden 使团队和组织能够以一种可扩展的方式轻松、安全地�
 迁移导入示例
 {% endembed %}
 
-集合既可以与群组共享，也可以与单个用户共享。限制可访问集合的个人用户数量将提高管理员的管理效率。[ 此处了解更多](../admin-console/organization-basics/about-collections.md)。
+集合既可以与群组共享，也可以与单个用户共享。限制可访问集合的个人用户数量将提高管理员的管理效率。[ 此处了解更多](../admin-console/manage-shared-items/collections/about-collections.md)。
 
 ### 群组 <a href="#groups" id="groups"></a>
 
@@ -156,7 +156,7 @@ Bitwarden 使团队和组织能够以一种可扩展的方式轻松、安全地�
 
 可以在群组或用户级别分配 Bitwarden 集合的权限。这意味着每一个群组或用户可以配置为对同一个集合拥有权限。集合的权限包括**只读**和**隐藏密码**选项。
 
-Bitwarden 使用权限结合来确定用户和集合项目的最终访问权限（[了解更多](../admin-console/user-management/member-roles-and-permissions.md#permissions)）。例如：
+Bitwarden 使用权限结合来确定用户和集合项目的最终访问权限（[了解更多](../admin-console/manage-members/member-roles-and-permissions.md#permissions)）。例如：
 
 * 用户 A 是「Tier 1 Support」群组的成员，该群组可以访问「Support」集合，并拥有查看权限。
 * 用户 A 也是「Support Management」群组的成员，该群组可以访问「Support」集合，并拥有编辑权限。

@@ -33,11 +33,11 @@ pip3 install requests
 
 解压 `.zip` 并将这些文件保存到同一目录中。完成后，将以下文件添加到同一目录：
 
-* Bitwarden Password Manager [CLI 本机可执行文件](../password-manager/developer-tools/password-manager-cli.md#download-and-install)。
+* Bitwarden Password Manager [CLI 本机可执行文件](../password-manager/developer-tools/cli/password-manager-cli.md#download-and-install)。
 
 ### 创建目标组织 <a href="#create-destination-organization" id="create-destination-organization"></a>
 
-在继续之前，您必须创建要迁移到的目标组织。[了解如何创建组织](../organizations/organizations.md#create-an-organization)。
+在继续之前，您必须创建要迁移到的目标组织。[了解如何创建组织](../admin-console/organizations-overview.md#create-an-organization)。
 
 {% hint style="info" %}
 我们建议在运行迁移脚本前邀请用户。用户必须至少处于被邀请状态，才能迁移群组和权限设置。
@@ -69,23 +69,23 @@ pip3 install requests
 
 在运行任何 `bwAdminTools.py` [脚本函数](migration-script.md#script-functions)之前，您需要创建一个配置文件。将 `config-example.cfg` 的内容复制到同一目录中的新 `config.cfg` 文件中，并填写以下变量。请注意，由于这是迁移脚本，因此本文档中的变量分为**源**和**目标**两部分：
 
-| 源组织变量                    | 变量描述                                                                                                                                               |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| bw\_vault\_uri=          | 您的来源网页密码库的 FQDN，例如如果您是自托管，为 `https://company.bitwarden.com`；如果您使用的是美国区域的 Bitwarden 云服务，则为 `https://vault.bitwarden.com`。                           |
-| bw\_org\_client\_id=     | 源组织 API 密钥客户端 ID。[了解在哪里可以找到它](../organizations/bitwarden-public-api.md#authentication)。                                                            |
-| bw\_org\_client\_secret= | 源组织 API 密钥客户端机密。[了解在哪里可以找到它](../organizations/bitwarden-public-api.md#authentication)。                                                             |
-| bw\_org\_id=             | 源组织的 GUID。复制 `_client_id=` 值并删除 `organization.` 块。                                                                                                 |
-| bw\_acc\_client\_id      | 源组织管理员或所有者的个人 API 密钥客户端 ID。[了解在哪里可以找到它](../password-manager/developer-tools/personal-api-key-for-cli-authentication.md#get-your-personal-api-key)。 |
-| bw\_acc\_client\_secret= | 源组织管理员或所有者的个人 API 密钥客户端机密。[了解在哪里可以找到它](../password-manager/developer-tools/personal-api-key-for-cli-authentication.md#get-your-personal-api-key)。  |
+| 源组织变量                    | 变量描述                                                                                                                            |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| bw\_vault\_uri=          | 您的来源网页密码库的 FQDN，例如如果您是自托管，为 `https://company.bitwarden.com`；如果您使用的是美国区域的 Bitwarden 云服务，则为 `https://vault.bitwarden.com`。        |
+| bw\_org\_client\_id=     | 源组织 API 密钥客户端 ID。[了解在哪里可以找到它](../organizations/bitwarden-public-api.md#authentication)。                                         |
+| bw\_org\_client\_secret= | 源组织 API 密钥客户端机密。[了解在哪里可以找到它](../organizations/bitwarden-public-api.md#authentication)。                                          |
+| bw\_org\_id=             | 源组织的 GUID。复制 `_client_id=` 值并删除 `organization.` 块。                                                                              |
+| bw\_acc\_client\_id      | 源组织管理员或所有者的个人 API 密钥客户端 ID。[了解在哪里可以找到它](../password-manager/developer-tools/cli/personal-api-key.md#get-your-personal-api-key)。 |
+| bw\_acc\_client\_secret= | 源组织管理员或所有者的个人 API 密钥客户端机密。[了解在哪里可以找到它](../password-manager/developer-tools/cli/personal-api-key.md#get-your-personal-api-key)。  |
 
-| 目标组织变量                         | 变量描述                                                                                                                                                |
-| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dest\_bw\_vault\_uri=          | 您的目标网页密码库的 FQDN，例如如果您是自托管，为 `https://company.bitwarden.com`；如果您使用的是欧盟区域的 Bitwarden 云服务，则为 `https://vault.bitwarden.eu`。                             |
-| dest\_bw\_org\_client\_id=     | 目标组织 API 密钥客户端 ID。[了解在哪里可以找到它](../organizations/bitwarden-public-api.md#authentication)。                                                            |
-| dest\_bw\_org\_client\_secret= | 目标组织 API 密钥客户端机密。[了解在哪里可以找到它](../organizations/bitwarden-public-api.md#authentication)。                                                             |
-| dest\_bw\_org\_id=             | 目标组织的 GUID。复制 `_client_id=` 值并删除 `organization.` 块。                                                                                                 |
-| dest\_bw\_acc\_client\_id=     | 目标组织管理员或所有者的个人 API 密钥客户端 ID。[了解在哪里可以找到它](../password-manager/developer-tools/personal-api-key-for-cli-authentication.md#get-your-personal-api-key)。 |
-| dest\_bw\_ac\_client\_secret=  | 目标组织管理员或所有者的个人 API 密钥客户端机密。[了解在哪里可以找到它](../password-manager/developer-tools/personal-api-key-for-cli-authentication.md#get-your-personal-api-key)。  |
+| 目标组织变量                         | 变量描述                                                                                                                             |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| dest\_bw\_vault\_uri=          | 您的目标网页密码库的 FQDN，例如如果您是自托管，为 `https://company.bitwarden.com`；如果您使用的是欧盟区域的 Bitwarden 云服务，则为 `https://vault.bitwarden.eu`。          |
+| dest\_bw\_org\_client\_id=     | 目标组织 API 密钥客户端 ID。[了解在哪里可以找到它](../organizations/bitwarden-public-api.md#authentication)。                                         |
+| dest\_bw\_org\_client\_secret= | 目标组织 API 密钥客户端机密。[了解在哪里可以找到它](../organizations/bitwarden-public-api.md#authentication)。                                          |
+| dest\_bw\_org\_id=             | 目标组织的 GUID。复制 `_client_id=` 值并删除 `organization.` 块。                                                                              |
+| dest\_bw\_acc\_client\_id=     | 目标组织管理员或所有者的个人 API 密钥客户端 ID。[了解在哪里可以找到它](../password-manager/developer-tools/cli/personal-api-key.md#get-your-personal-api-key)。 |
+| dest\_bw\_ac\_client\_secret=  | 目标组织管理员或所有者的个人 API 密钥客户端机密。[了解在哪里可以找到它](../password-manager/developer-tools/cli/personal-api-key.md#get-your-personal-api-key)。  |
 
 设置好这些变量后，就可以使用 `bwAdminTools.py` [脚本功能](migration-script.md#script-functions)开始迁移了。
 

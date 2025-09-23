@@ -8,11 +8,11 @@
 
 ## 应用程序范围和易用性 <a href="#application-range-and-ease-of-use" id="application-range-and-ease-of-use"></a>
 
-<table><thead><tr><th width="305.15182672540476">企业版功能</th><th>描述</th></tr></thead><tbody><tr><td>部署选项</td><td>云、私有云，以及自托管。</td></tr><tr><td>网页应用程序</td><td><a href="https://vault.bitwarden.com">https://vault.bitwarden.com</a> 或您的自托管服务器上的完全加密的云端网页 App。</td></tr><tr><td>移动 App（带有移动登录控制）</td><td>适用于 iOS 和 Android，<a href="../getting-started/getting-started-mobile.md">了解更多</a>。</td></tr><tr><td>浏览器扩展</td><td>适用于 Chrome、Firefox、Opera、Edge、Vivaldi、Brave、Tor，以及 Safari。<a href="../getting-started/getting-started-browserext.md">了解更多</a>。</td></tr><tr><td>桌面应用程序</td><td>适用于 Windows、Mac，以及 Linux。<a href="../getting-started/getting-started-desktop.md">了解更多</a>。</td></tr><tr><td>命令行界面 (CLI)</td><td>适用于 Windows、Mac，以及 Linux。<a href="../password-manager/developer-tools/password-manager-cli.md">了解更多</a>。</td></tr></tbody></table>
+<table><thead><tr><th width="305.15182672540476">企业版功能</th><th>描述</th></tr></thead><tbody><tr><td>部署选项</td><td>云、私有云，以及自托管。</td></tr><tr><td>网页应用程序</td><td><a href="https://vault.bitwarden.com">https://vault.bitwarden.com</a> 或您的自托管服务器上的完全加密的云端网页 App。</td></tr><tr><td>移动 App（带有移动登录控制）</td><td>适用于 iOS 和 Android，<a href="../getting-started/getting-started-mobile.md">了解更多</a>。</td></tr><tr><td>浏览器扩展</td><td>适用于 Chrome、Firefox、Opera、Edge、Vivaldi、Brave、Tor，以及 Safari。<a href="../getting-started/getting-started-browserext.md">了解更多</a>。</td></tr><tr><td>桌面应用程序</td><td>适用于 Windows、Mac，以及 Linux。<a href="../getting-started/getting-started-desktop.md">了解更多</a>。</td></tr><tr><td>命令行界面 (CLI)</td><td>适用于 Windows、Mac，以及 Linux。<a href="../password-manager/developer-tools/cli/password-manager-cli.md">了解更多</a>。</td></tr></tbody></table>
 
 ## 管理功能和管理能力 <a href="#administrative-features-and-capabilities" id="administrative-features-and-capabilities"></a>
 
-<table><thead><tr><th width="194.57409144628053">企业版功能</th><th>描述</th></tr></thead><tbody><tr><td>简单的用户管理</td><td>直接从网页密码库添加或删除席位以及入职或离职用户。<a href="../organizations/user-management.md">了解更多</a>。</td></tr><tr><td>基于角色的访问控制</td><td>为组织用户分配基于角色的访问权限，包括自定义角色和精细化权限（例如隐藏密码、只读）。<a href="../admin-console/user-management/member-roles-and-permissions.md">了解更多</a>。</td></tr><tr><td>目录同步</td><td>将您的 Bitwarden 组织与您现有的用户目录同步。布建和取消布建用户、群组，以及群组关联。<a href="../directory-connector/about-directory-connector.md">了解更多</a>。</td></tr><tr><td>SCIM 支持</td><td>使用 SCIM 协议从身份提供程序或目录服务管理和配置 Bitwarden 用户、群组和群组关联，以方便入职和员工继任。<a href="../scim/about-scim.md">了解更多</a>。</td></tr><tr><td>账户恢复管理</td><td>如果员工丢失或忘记了他们的主密码，指定的管理员可以重置最终用户帐户的主密码。<a href="../organizations/admin-password-reset.md">了解更多</a>。</td></tr><tr><td>带有精细访问权限的集合</td><td>创建不限数量的密码集合，包含不限数量的密码。 集合可分配给群组或个人用户。<a href="../admin-console/organization-basics/about-collections.md">了解更多</a>。</td></tr><tr><td>企业策略</td><td>为所有用户强制执行安全规则，例如强制使用两步登录。<a href="../organizations/enterprise-policies.md">了解更多</a>。</td></tr><tr><td>临时密码共享和生成</td><td>使用 Bitwarden Send 创建和共享临时数据。<a href="../bitwarden-send/about-send.md">了解更多</a>。</td></tr><tr><td>员工免费家庭计划</td><td>所有企业员工都会收到一份免费的家庭计划，供个人在工作场所之外使用，以培养良好的安全习惯。<a href="../plans-and-pricing/password-manager/redeem-families-sponsorship.md">了解更多</a>。</td></tr></tbody></table>
+<table><thead><tr><th width="194.57409144628053">企业版功能</th><th>描述</th></tr></thead><tbody><tr><td>简单的用户管理</td><td>直接从网页密码库添加或删除席位以及入职或离职用户。<a href="../admin-console/manage-members/user-management.md">了解更多</a>。</td></tr><tr><td>基于角色的访问控制</td><td>为组织用户分配基于角色的访问权限，包括自定义角色和精细化权限（例如隐藏密码、只读）。<a href="../admin-console/manage-members/member-roles-and-permissions.md">了解更多</a>。</td></tr><tr><td>目录同步</td><td>将您的 Bitwarden 组织与您现有的用户目录同步。布建和取消布建用户、群组，以及群组关联。<a href="../admin-console/manage-members/directory-connector/about-directory-connector.md">了解更多</a>。</td></tr><tr><td>SCIM 支持</td><td>使用 SCIM 协议从身份提供程序或目录服务管理和配置 Bitwarden 用户、群组和群组关联，以方便入职和员工继任。<a href="../admin-console/manage-members/scim/about-scim.md">了解更多</a>。</td></tr><tr><td>账户恢复管理</td><td>如果员工丢失或忘记了他们的主密码，指定的管理员可以重置最终用户帐户的主密码。<a href="../admin-console/manage-members/account-recovery.md">了解更多</a>。</td></tr><tr><td>带有精细访问权限的集合</td><td>创建不限数量的密码集合，包含不限数量的密码。 集合可分配给群组或个人用户。<a href="../admin-console/manage-shared-items/collections/about-collections.md">了解更多</a>。</td></tr><tr><td>企业策略</td><td>为所有用户强制执行安全规则，例如强制使用两步登录。<a href="../admin-console/manage-shared-items/enterprise-policies.md">了解更多</a>。</td></tr><tr><td>临时密码共享和生成</td><td>使用 Bitwarden Send 创建和共享临时数据。<a href="../bitwarden-send/about-send.md">了解更多</a>。</td></tr><tr><td>员工免费家庭计划</td><td>所有企业员工都会收到一份免费的家庭计划，供个人在工作场所之外使用，以培养良好的安全习惯。<a href="../plans-and-pricing/password-manager/redeem-families-sponsorship.md">了解更多</a>。</td></tr></tbody></table>
 
 ## 报告 <a href="#reporting" id="reporting"></a>
 
@@ -39,11 +39,11 @@
 
 ## API 和可扩展性 <a href="#apis-and-extensibility" id="apis-and-extensibility"></a>
 
-| 企业版功能  | 描述                                                                                 |
-| ------ | ---------------------------------------------------------------------------------- |
-| 编程无障碍  | 用于组织的公共和私有 API。[了解更多](../organizations/bitwarden-public-api.md)。                   |
-| 命令行界面  | 功能齐全的自文档命令行工具。[了解更多](../password-manager/developer-tools/password-manager-cli.md)。 |
-| 可扩展性支持 | 结合 API​​ 和 CLI 进行自动化工作流程。                                                          |
+| 企业版功能  | 描述                                                                                     |
+| ------ | -------------------------------------------------------------------------------------- |
+| 编程无障碍  | 用于组织的公共和私有 API。[了解更多](../organizations/bitwarden-public-api.md)。                       |
+| 命令行界面  | 功能齐全的自文档命令行工具。[了解更多](../password-manager/developer-tools/cli/password-manager-cli.md)。 |
+| 可扩展性支持 | 结合 API​​ 和 CLI 进行自动化工作流程。                                                              |
 
 ## 适应性 <a href="#resiliciency" id="resiliciency"></a>
 

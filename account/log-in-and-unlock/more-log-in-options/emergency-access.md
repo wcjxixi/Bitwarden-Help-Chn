@@ -191,7 +191,7 @@
 作为授予人，您可以随时撤消受让人的**查看**访问权限。
 {% endhint %}
 
-**当您是一个组织的成员时**，您将自动从其不是[所有者](../../../admin-console/user-management/member-roles-and-permissions.md)的任何组织中被移除。所有者不会从他们的组织中被移除或失去权限，但是，如果启用，将在接管时执行[主密码策略](../../../organizations/enterprise-policies.md#master-password)。通常，不对所有者执行的策略（例如，[两步登录](../../../organizations/enterprise-policies.md#two-step-login)）将不会在接管时执行。
+**当您是一个组织的成员时**，您将自动从其不是[所有者](../../../admin-console/manage-members/member-roles-and-permissions.md)的任何组织中被移除。所有者不会从他们的组织中被移除或失去权限，但是，如果启用，将在接管时执行[主密码策略](../../../admin-console/manage-shared-items/enterprise-policies.md#master-password)。通常，不对所有者执行的策略（例如，[两步登录](../../../admin-console/manage-shared-items/enterprise-policies.md#two-step-login)）将不会在接管时执行。
 
 ### 工作原理 <a href="#how-it-works" id="how-it-works"></a>
 

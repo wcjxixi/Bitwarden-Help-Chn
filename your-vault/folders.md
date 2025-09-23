@@ -68,7 +68,7 @@
 bw create folder <foldername>
 ```
 
-您可以使用 `bw edit <folderId>` 编辑现有文件夹，使用 `bw delete folder <folderId>` 删除文件夹。更多信息，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+您可以使用 `bw edit <folderId>` 编辑现有文件夹，使用 `bw delete folder <folderId>` 删除文件夹。更多信息，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -156,7 +156,7 @@ bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.folderId="3d9cecac-71a2-
 * 使用 [jq 之类的命令行 JSON 处理器](https://stedolan.github.io/jq/)操作 JSON 对象（特别是 `folderId` 属性）。
 * 使用 `encode` 命令对 JSON 对象的更改进行 `encode`。
 
-如果您不熟悉对这些部分的使用，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+如果您不熟悉对这些部分的使用，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
 {% endhint %}
 {% endtab %}
 {% endtabs %}

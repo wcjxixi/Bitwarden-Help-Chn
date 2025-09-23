@@ -86,7 +86,7 @@ SAML 2.0 配置
 完成这些字段的配置后，**Save**（保存）您的工作。
 
 {% hint style="success" %}
-您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织政策。[了解更多](../../../organizations/enterprise-policies.md)。
+您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织政策。[了解更多](../../manage-shared-items/enterprise-policies.md)。
 {% endhint %}
 
 ### 额外的自定义申请类型 <a href="#additional-custom-claim-types" id="additional-custom-claim-types"></a>

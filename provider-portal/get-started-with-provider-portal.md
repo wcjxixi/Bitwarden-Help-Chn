@@ -65,7 +65,7 @@
 
 ## 客户组织 <a href="#client-organizations" id="client-organizations"></a>
 
-客户组织是附属于提供商或由提供商管理的任何[组织](../organizations/organizations.md)。对于您的客户来说，除了谁负责管理，「客户」组织和「常规」组织之间没有区别。
+客户组织是附属于提供商或由提供商管理的任何[组织](../admin-console/organizations-overview.md)。对于您的客户来说，除了谁负责管理，「客户」组织和「常规」组织之间没有区别。
 
 组织将 Bitwarden 用户和密码库项目联系在一起，用于[安全地共享](../organizations/sharing.md)登录、支付卡、笔记和身份信息。组织有一个独立的密码库，提供商服务用户可以在其中管理组织的项目、用户和设置：
 
@@ -73,7 +73,7 @@
 客户组织密码库
 {% endembed %}
 
-客户组织的成员（即您客户的最终用户）将在他们的**密码库**视图中找到已共享的项目以及个人拥有的项目，还可以使用多种方法过滤项目列表，使其只显示组织项目或特定[集合](../admin-console/organization-basics/about-collections.md)中的项目：
+客户组织的成员（即您客户的最终用户）将在他们的**密码库**视图中找到已共享的项目以及个人拥有的项目，还可以使用多种方法过滤项目列表，使其只显示组织项目或特定[集合](../admin-console/manage-shared-items/collections/about-collections.md)中的项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?_a=DAJCwlWIZAAB" %}
 
@@ -111,7 +111,7 @@
 
 使用您新创建的客户组织，开始为您的客户构建完美的解决方案。根据客户的需求，每个客户组织的确切设置会有所不同，但通常涉及：
 
-1、**创建集合**。一个好的第一步是[创建一组集合](../admin-console/organization-basics/about-collections.md#create-a-collection)，它为您在下一步中添加到密码库的项目提供组织结构。
+1、**创建集合**。一个好的第一步是[创建一组集合](../admin-console/manage-shared-items/collections/about-collections.md#create-a-collection)，它为您在下一步中添加到密码库的项目提供组织结构。
 
 常见的集合模式包括**按部门的集合**（即客户营销团队中的用户被分配到**营销**集合）或**按功能的集合**（即来自客户营销团队的用户被分配到**社交媒体**集合）：
 
@@ -125,7 +125,7 @@
 请注意，作为提供商用户，您将无法直接查看、创建或管理个人项目。
 {% endhint %}
 
-3、**配置企业策略**。在开始用户管理部分的设置之前，[配置企业策略](../organizations/enterprise-policies.md)以便为诸如[主密码复杂性](../organizations/enterprise-policies.md#master-password)、[两步登录的使用](../organizations/enterprise-policies.md#two-step-login)和[管理员密码重置](../organizations/enterprise-policies.md#master-password-reset)等设置使用规则。
+3、**配置企业策略**。在开始用户管理部分的设置之前，[配置企业策略](../admin-console/manage-shared-items/enterprise-policies.md)以便为诸如[主密码复杂性](../admin-console/manage-shared-items/enterprise-policies.md#master-password)、[两步登录的使用](../admin-console/manage-shared-items/enterprise-policies.md#two-step-login)和[管理员密码重置](../admin-console/manage-shared-items/enterprise-policies.md#master-password-reset)等设置使用规则。
 
 {% hint style="info" %}
 企业策略**仅适用于企业组织**。
@@ -151,9 +151,9 @@
 邀请成员作为提供者
 {% endembed %}
 
-2、**对于大型客户**（使用 Azure AD、Okta、OneLogin 或 JumpCloud 等 IdP 的），请使用 [SCIM](../scim/about-scim.md) 自动布建用户。
+2、**对于大型客户**（使用 Azure AD、Okta、OneLogin 或 JumpCloud 等 IdP 的），请使用 [SCIM](../admin-console/manage-members/scim/about-scim.md) 自动布建用户。
 
-3、**对于大型客户**（使用活动目录、LDAP、Okta 等目录服务的），请使用[目录连接器](../directory-connector/)从源目录同步组织用户并自动发出邀请。
+3、**对于大型客户**（使用活动目录、LDAP、Okta 等目录服务的），请使用[目录连接器](../admin-console/manage-members/directory-connector/)从源目录同步组织用户并自动发出邀请。
 
 无论您是从组织密码库邀请用户还是使用目录连接器，在[入职提供商用户](get-started-with-provider-portal.md#onboard-users)时遵循的 3 步过程（邀请 → 接受 → 确认）也适用于这里。
 

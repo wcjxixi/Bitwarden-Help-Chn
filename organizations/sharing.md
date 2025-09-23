@@ -1,18 +1,18 @@
-# 共享
+# =共享项目
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/sharing/)
 {% endhint %}
 
 {% hint style="info" %}
-要共享项目，您需要是组织的成员。了解更多关于[组织](organizations.md)或了解如何[创建自己的两个人的组织](../admin-console/organizations-quick-start.md)。
+要共享项目，您需要是组织的成员。了解更多关于[组织](../admin-console/organizations-overview.md)或了解如何[创建自己的两个人的组织](../admin-console/organizations-quick-start.md)。
 {% endhint %}
 
 使用 Bitwarden 共享项目意味要着将它们移动到组织和集合中，集合是用于将共享的项目、笔记、支付卡和身份集中到一起，以供多个用户访问的一种结构。您可以通过几种不同的方式创建用于共享的组织项目：
 
 ## 移动项目到组织 <a href="#move-an-item-to-an-organization" id="move-an-item-to-an-organization"></a>
 
-组织成员可以将项目移动到任何已分配的集合，除非他们被赋予了此集合的[可以查看](../admin-console/user-management/member-roles-and-permissions.md#permissions)权限。要移动项目到组织：
+组织成员可以将项目移动到任何已分配的集合，除非他们被赋予了此集合的[可以查看](../admin-console/manage-members/member-roles-and-permissions.md#permissions)权限。要移动项目到组织：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -105,17 +105,17 @@ bw move <itemid> <organizationid> [encodedJson]
 * `itemid` 代表项目的唯一标识符。
 * `Organizationid` 代表要将项目移动到的组织的唯一标识符。
 
-更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md#move)。
+更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md#move)。
 {% endtab %}
 {% endtabs %}
 
 {% hint style="danger" %}
-将项目移动到某个组织会将所有权转移该组织。组织中拥有适当[权限](../admin-console/user-management/member-roles-and-permissions.md#permissions)的任何人都可以编辑或删除该项目，删除此项目将导致原所有者的项目也被删除。
+将项目移动到某个组织会将所有权转移该组织。组织中拥有适当[权限](../admin-console/manage-members/member-roles-and-permissions.md#permissions)的任何人都可以编辑或删除该项目，删除此项目将导致原所有者的项目也被删除。
 {% endhint %}
 
 ## 创建组织项目 <a href="#create-an-organization-item" id="create-an-organization-item"></a>
 
-组织成员可以直接为任何已分配的集合创建新的项目，除非他们被赋予了此集合的[可以查看](../admin-console/user-management/member-roles-and-permissions.md#permissions)权限。要从网页密码库创建组织拥有的项目：：
+组织成员可以直接为任何已分配的集合创建新的项目，除非他们被赋予了此集合的[可以查看](../admin-console/manage-members/member-roles-and-permissions.md#permissions)权限。要从网页密码库创建组织拥有的项目：：
 
 {% tabs %}
 {% tab title="我的密码库视图" %}

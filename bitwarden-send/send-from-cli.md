@@ -12,7 +12,7 @@
 >
 > stdout 和 stderr 默认都是输出到终端（屏幕）。[参考链接](https://zh.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E4%B8%B2%E6%B5%81)
 
-Bitwarden Send 是一套功能齐全的 CLI 命令。本文介绍了 `bw send` 命令的范围，但是 Send 并**不是一个独立于 Bitwarden 命令行界面 (CLI) b的工具**。因此，[CLI 文档](../password-manager/developer-tools/password-manager-cli.md)中的许多命令、选项和概念与这里的都是相关联的。
+Bitwarden Send 是一套功能齐全的 CLI 命令。本文介绍了 `bw send` 命令的范围，但是 Send 并**不是一个独立于 Bitwarden 命令行界面 (CLI) b的工具**。因此，[CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)中的许多命令、选项和概念与这里的都是相关联的。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6hWfoRgu1yoyrXEB6JqN6E/35bc0f96642a57df42f1b2e6fa7c4c19/send-cli.png?fm=webp&h=433&q=50&w=961" %}
 
@@ -64,7 +64,7 @@ bw send create [options] <encodedJson>
 
 1. 使用 `template` 命令（参阅[详情](send-from-cli.md#template)）为您的 Send 类型输出合适的 JSON 模板。
 2. 使用[像 jq 这样的命令行 JSON 处理器](https://stedolan.github.io/jq/)，根据需要处理输出的模板。
-3. 使用 `encode` 命令（参阅[详情](../password-manager/developer-tools/password-manager-cli.md#encode)）对处理后的 JSON 进行编码。
+3. 使用 `encode` 命令（参阅[详情](../password-manager/developer-tools/cli/password-manager-cli.md#encode)）对处理后的 JSON 进行编码。
 4. 使用 `create` 命令从编码后的 JSON 创建一个 Send。
 
 例如，要创建一个文本 Send：
@@ -127,7 +127,7 @@ bw send template send.text | jq ".name=\"My Send\" | .text.text=\"Secrets I want
 bw send get [options] <id / string>
 ```
 
-如果你在另一个 Bitwarden 应用程序中创建了一个 Send，而这个会话仍然处于活动状态，使用 `bw sync` 命令将提取最近的 Send。有关更多信息，请参阅我们的 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+如果你在另一个 Bitwarden 应用程序中创建了一个 Send，而这个会话仍然处于活动状态，使用 `bw sync` 命令将提取最近的 Send。有关更多信息，请参阅我们的 [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
 
 **选项**：
 
@@ -147,7 +147,7 @@ bw send edit <encodedJson>
 
 1. 使用 `get` 命令（参阅[详情](send-from-cli.md#get)）来根据 `<id>` 检索所需的 Send。
 2. 使用[像 jq 这样的命令行JSON处理器](https://stedolan.github.io/jq/)，来根据需要处理检索到的 Send。
-3. 使用 `encode` 命令（参阅[详情](../password-manager/developer-tools/password-manager-cli.md#encode)）对处理后的 JSON 进行编码。
+3. 使用 `encode` 命令（参阅[详情](../password-manager/developer-tools/cli/password-manager-cli.md#encode)）对处理后的 JSON 进行编码。
 4. 使用 `create` 命令从编码后的 JSON 创建一个 Send。
 
 示例：
@@ -172,7 +172,7 @@ bw send get <id> | jq '.name="New Name" | .password=null' | bw encode | bw send 
 bw send list [options]
 ```
 
-如果你在另一个 Bitwarden 应用程序中创建了一个 Send，而这个会话仍然处于活动状态，使用 `bw sync` 命令将提取最近的 Send。有关更多信息，请参阅我们的 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+如果你在另一个 Bitwarden 应用程序中创建了一个 Send，而这个会话仍然处于活动状态，使用 `bw sync` 命令将提取最近的 Send。有关更多信息，请参阅我们的 [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
 
 **选项**：
 

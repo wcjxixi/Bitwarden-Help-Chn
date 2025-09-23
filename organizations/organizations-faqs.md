@@ -8,9 +8,9 @@
 
 有关**组织**的更多高级信息，请参阅以下文章：
 
-* [关于组织](organizations.md)
-* [关于集合](../admin-console/organization-basics/about-collections.md)
-* [关于群组](groups.md)
+* [关于组织](../admin-console/organizations-overview.md)
+* [关于集合](../admin-console/manage-shared-items/collections/about-collections.md)
+* [关于群组](../admin-console/manage-members/groups.md)
 
 ## 组织通用 <a href="#organizations-general" id="organizations-general"></a>
 
@@ -83,7 +83,7 @@
 
 ### 问：如何向组织用户隐藏密码？ <a href="#q-how-do-i-hide-a-password-from-my-organizations-users" id="q-how-do-i-hide-a-password-from-my-organizations-users"></a>
 
-**答：**&#x4E3A;您想要对其隐藏密码的用户分配对相关集合的「**查看项目，隐藏密码**」或「编**辑项目，隐藏密码**」[权限](../admin-console/user-management/member-roles-and-permissions.md#permissions)。
+**答：**&#x4E3A;您想要对其隐藏密码的用户分配对相关集合的「**查看项目，隐藏密码**」或「编**辑项目，隐藏密码**」[权限](../admin-console/manage-members/member-roles-and-permissions.md#permissions)。
 
 ### 问：我离开后，移动到组织的项目是否会被保留？ <a href="#q-does-an-item-i-share-with-the-organization-stay-after-i-leave" id="q-does-an-item-i-share-with-the-organization-stay-after-i-leave"></a>
 

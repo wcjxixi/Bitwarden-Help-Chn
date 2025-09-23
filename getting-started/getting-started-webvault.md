@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/getting-started-webvault/)
 {% endhint %}
 
-Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体验。许多重要功能，例如设置[两步登录](../account/two-step-login/setup-guides/two-step-login-methods.md)或管理[组织](../organizations/organizations.md)，只能从网页 App 完成。
+Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体验。许多重要功能，例如设置[两步登录](../account/two-step-login/setup-guides/two-step-login-methods.md)或管理[组织](../admin-console/organizations-overview.md)，只能从网页 App 完成。
 
 {% hint style="success" %}
 可以从任何流行的网页浏览器访问网页 App，网址为 [vault.bitwarden.com](https://vault.bitwarden.com) 和 [vault.bitwarden.eu](https://vault.bitwarden.eu/)。如果您是**自托管** Bitwarden，则网址为您[已配置的域名](../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md)，例如 `https://my.bitwarden.server.com`。
@@ -18,7 +18,7 @@ Bitwarden 网页 App
 
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
 
-在上面的屏幕截图中，**密码库**视图显示**我的密码库**视图中的 **☷所有项目**。[组织](../organizations/organizations.md)的用户将在此处列出其他密码库。使用**筛选器**列可以帮助您使用**收藏**和**文件夹**来组织您的密码库。
+在上面的屏幕截图中，**密码库**视图显示**我的密码库**视图中的 **☷所有项目**。[组织](../admin-console/organizations-overview.md)的用户将在此处列出其他密码库。使用**筛选器**列可以帮助您使用**收藏**和**文件夹**来组织您的密码库。
 
 让我们设置一个新的文件夹并向其添加一个新的登录项目来作为开始：
 

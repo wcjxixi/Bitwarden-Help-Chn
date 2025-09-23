@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-如需了解完整的 Bitwarden 入职概述，请查看[本指南](../../business-resources/onboarding-and-succession.md)以获取更多信息。
+如需了解完整的 Bitwarden 入职概述，请查看[本指南](../../admin-console/manage-members/onboarding-and-succession.md)以获取更多信息。
 {% endhint %}
 
 作为一个使用 Secrets Manager 的组织，您会分享许多最初由 Password Manager 使用的工具。这篇文章涵盖了这些常见的领域，并在适当的地方链接到共享文档。
@@ -18,12 +18,12 @@
 
 策略允许企业组织为其成员实施安全规则，例如强制使用两步登录。虽然一些策略主要适用于 Password Manager，但有一些策略也广泛适用于 Secrets Manager 的用户：
 
-* [要求两步登录](../../organizations/enterprise-policies.md#require-two-step-login)
-* [主密码要求](../../organizations/enterprise-policies.md#master-password-requirements)
-* [主密码重置](../../organizations/enterprise-policies.md#master-password-reset)
-* [单一组织](../../organizations/enterprise-policies.md#single-organization)
-* [要求单点登录验证](../../organizations/enterprise-policies.md#require-single-sign-on-authentication)
-* [密码库超时](../../organizations/enterprise-policies.md#vault-timeout)
+* [要求两步登录](../../admin-console/manage-shared-items/enterprise-policies.md#require-two-step-login)
+* [主密码要求](../../admin-console/manage-shared-items/enterprise-policies.md#master-password-requirements)
+* [主密码重置](../../admin-console/manage-shared-items/enterprise-policies.md#master-password-reset)
+* [单一组织](../../admin-console/manage-shared-items/enterprise-policies.md#single-organization)
+* [要求单点登录验证](../../admin-console/manage-shared-items/enterprise-policies.md#require-single-sign-on-authentication)
+* [密码库超时](../../admin-console/manage-shared-items/enterprise-policies.md#vault-timeout)
 
 {% hint style="success" %}
 如果您是 Bitwarden 的新手，我们建议您在入职用户之前先设置策略。
@@ -39,15 +39,15 @@ Secrets Manager 的组织用户管理与使用 Password Manager 的组织用户�
 
 #### 手动 <a href="#manual" id="manual"></a>
 
-Bitwarden 网页密码库提供了一个简单直观的界面，用于邀请新用户加入您的组织。此方法最适合小型组织或不使用 Azure AD 或 Okta 等目录服务的组织。[了解如何开始](../../organizations/user-management.md#invite)。
+Bitwarden 网页密码库提供了一个简单直观的界面，用于邀请新用户加入您的组织。此方法最适合小型组织或不使用 Azure AD 或 Okta 等目录服务的组织。[了解如何开始](../../admin-console/manage-members/user-management.md#invite)。
 
 #### SCIM
 
-Bitwarden 服务器提供一个 SCIM 端点，该端点具有一个有效的 SCIM API 密钥，将接受来自您的身份提供商的请求，以进行用户和群组配置和取消配置。此方法最适合使用了支持 SCIM 的目录服务或 IdP 的大型组织。[了解如何开始](../../scim/about-scim.md)。
+Bitwarden 服务器提供一个 SCIM 端点，该端点具有一个有效的 SCIM API 密钥，将接受来自您的身份提供商的请求，以进行用户和群组配置和取消配置。此方法最适合使用了支持 SCIM 的目录服务或 IdP 的大型组织。[了解如何开始](../../admin-console/manage-members/scim/about-scim.md)。
 
 #### 目录连接器 <a href="#directory-connector" id="directory-connector"></a>
 
-目录连接器通过从一系列源目录服务中提取，自动在您的 Bitwarden 组织中配置用户和群组。此方法最适合使用了不支持 SCIM 的目录服务的大型组织。[了解如何开始](../../directory-connector/about-directory-connector.md)。
+目录连接器通过从一系列源目录服务中提取，自动在您的 Bitwarden 组织中配置用户和群组。此方法最适合使用了不支持 SCIM 的目录服务的大型组织。[了解如何开始](../../admin-console/manage-members/directory-connector/about-directory-connector.md)。
 
 ### 访问 Secrets Manager <a href="#access-to-secrets-manager" id="access-to-secrets-manager"></a>
 
@@ -83,7 +83,7 @@ Bitwarden 服务器提供一个 SCIM 端点，该端点具有一个有效的 SCI
 
 ### 群组 <a href="#groups" id="groups"></a>
 
-群组将个人成员联系在一起，并提供一种可扩展的方式来访问特定工程的访问权和权限。添加新成员时，将他们添加到一个群组中，让他们自动继承该群组配置的权限。[了解更多](../../organizations/groups.md)。
+群组将个人成员联系在一起，并提供一种可扩展的方式来访问特定工程的访问权和权限。添加新成员时，将他们添加到一个群组中，让他们自动继承该群组配置的权限。[了解更多](../../admin-console/manage-members/groups.md)。
 
 在管理控制台中创建群组后，就可以从 Secrets Manager 网页 App 中把它们分配给工程了。
 
@@ -93,7 +93,7 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 
 ## 账户恢复管理 <a href="#https-bitwarden.com-help-manage-your-secrets-org-account-recovery-administration" id="https-bitwarden.com-help-manage-your-secrets-org-account-recovery-administration"></a>
 
-账户恢复允许指定的管理员恢复企业组织用户账户以及在员工忘记主密码时恢复访问权限。通过启用账户恢复管理策略，可以为组织激活账户恢复功能。[了解如何开始](../../organizations/admin-password-reset.md)。
+账户恢复允许指定的管理员恢复企业组织用户账户以及在员工忘记主密码时恢复访问权限。通过启用账户恢复管理策略，可以为组织激活账户恢复功能。[了解如何开始](../../admin-console/manage-members/account-recovery.md)。
 
 ## 事件日志 <a href="#event-logs" id="event-logs"></a>
 

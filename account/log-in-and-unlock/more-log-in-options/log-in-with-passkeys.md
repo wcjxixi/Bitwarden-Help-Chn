@@ -17,7 +17,7 @@
 通行密钥目前可用于登录 Bitwarden 网页 App，并计划在未来的版本中支持其他客户端应用程序。
 
 {% hint style="info" %}
-使用[要求单点登录身份验证策略](../../../organizations/enterprise-policies.md#require-single-sign-on-authentication)、[受信任设备 SSO](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 或 [Key Connector ](../../../self-hosting/key-connector/about-key-connector.md)的组织成员无法使用通行密钥登录。
+使用[要求单点登录身份验证策略](../../../admin-console/manage-shared-items/enterprise-policies.md#require-single-sign-on-authentication)、[受信任设备 SSO](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 或 [Key Connector ](../../../self-hosting/key-connector/about-key-connector.md)的组织成员无法使用通行密钥登录。
 {% endhint %}
 
 ## 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>

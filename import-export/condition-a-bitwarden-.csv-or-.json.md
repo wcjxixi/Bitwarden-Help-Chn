@@ -1,4 +1,4 @@
-# 调整 Bitwarden .csv 或 .json
+# 从自定义文件导入
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/condition-bitwarden-import/)
@@ -209,7 +209,7 @@ folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_p
 
 ### 导入到现有集合 <a href="#import-to-existing-collections" id="import-to-existing-collections"></a>
 
-通过适当调整组织的 `.json` 文件，可以将新的登录项目导入到预先存在的[集合](../admin-console/organization-basics/about-collections.md)中。
+通过适当调整组织的 `.json` 文件，可以将新的登录项目导入到预先存在的[集合](../admin-console/manage-shared-items/collections/about-collections.md)中。
 
 下面的示例演示了将单个项目导入到预先存在的集合中的正确格式。请注意，您需要：
 

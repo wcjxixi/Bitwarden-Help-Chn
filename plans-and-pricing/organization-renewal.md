@@ -17,11 +17,11 @@
 
 **组织拥有的密码库项目**
 
-[所有者](../admin-console/user-management/member-roles-and-permissions.md)将保留对[已共享密码库项目](../organizations/sharing.md)的访问权限，但所有其他用户将无法访问这些项目。组织密码库项目和现有[集合](../admin-console/organization-basics/about-collections.md)**不会被删除**。
+[所有者](../admin-console/manage-members/member-roles-and-permissions.md)将保留对[已共享密码库项目](../organizations/sharing.md)的访问权限，但所有其他用户将无法访问这些项目。组织密码库项目和现有[集合](../admin-console/manage-shared-items/collections/about-collections.md)**不会被删除**。
 
 **组织用户**
 
-用户和现有的[群组](../organizations/groups.md)**不会从组织中移除**。[重新启用](organization-renewal.md#re-enabling-a-disabled-organization)您的组织后，用户无需执行任何操作。
+用户和现有的[群组](../admin-console/manage-members/groups.md)**不会从组织中移除**。[重新启用](organization-renewal.md#re-enabling-a-disabled-organization)您的组织后，用户无需执行任何操作。
 {% endhint %}
 
 ## 重新启用已禁用的组织 <a href="#re-enabling-a-disabled-organization" id="re-enabling-a-disabled-organization"></a>

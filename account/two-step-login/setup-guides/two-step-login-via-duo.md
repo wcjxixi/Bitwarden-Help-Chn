@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/setup-two-step-login-duo/)
 {% endhint %}
 
-使用 Duo 的两步登录在[可用的两步登录方式](two-step-login-methods.md)中是比较特别的，因为它可以为个人账户启用（与其他方式一样），对[团队和企业](../../../organizations/organizations.md)组织来说，可以为整个组织启用。
+使用 Duo 的两步登录在[可用的两步登录方式](two-step-login-methods.md)中是比较特别的，因为它可以为个人账户启用（与其他方式一样），对[团队和企业](../../../admin-console/organizations-overview.md)组织来说，可以为整个组织启用。
 
 ## 设置 Duo <a href="#setup-duo" id="setup-duo"></a>
 
@@ -152,7 +152,7 @@ Duo Bitwarden 应用程序
 这是因为 Duo for organizations 目前不支持[恢复代码](../recovery-codes.md)。相反，您将需要依靠 Duo 管理面板来绕过无法访问 Duo 的成员的两步登录。在 Duo 处于活动状态时从 Duo 管理面板更改应用程序配置可能会失去绕过您或您组织的成员的两步登录的能力。
 {% endhint %}
 
-您必须是[组织所有者](../../../admin-console/user-management/member-roles-and-permissions.md)才能为您的组织设置 Duo。要为您的组织启用 Duo 方式的两步登录：
+您必须是[组织所有者](../../../admin-console/manage-members/member-roles-and-permissions.md)才能为您的组织设置 Duo。要为您的组织启用 Duo 方式的两步登录：
 
 1、登录到 Bitwarden 网页 App。
 

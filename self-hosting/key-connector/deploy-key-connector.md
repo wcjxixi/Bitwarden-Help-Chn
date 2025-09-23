@@ -17,7 +17,7 @@
 * [拥有一个企业组织](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)
 * [拥有一个自托管的 Bitwarden 服务器](../)
 * [拥有一个活跃的 SSO 实施](../../login-with-sso/about-login-with-sso.md)
-* [激活单一组织和单点登录策略](../../organizations/enterprise-policies.md)
+* [激活单一组织和单点登录策略](../../admin-console/manage-shared-items/enterprise-policies.md)
 
 如果您的组织满足或能够满足这些要求，包括拥有可以支持密钥服务器管理的团队和基础设施，请[联系我们](https://bitwarden.com/contact)，我们将为您激活 Key Connector。
 

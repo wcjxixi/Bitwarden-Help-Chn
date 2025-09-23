@@ -29,7 +29,7 @@ Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务�
 * 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
 * 最多 20 个[机器账户](../../secrets-manager/your-secrets/machine-accounts.md)
 * 每个附加机器账户 1 美元
-* 提供给[团队组织](../../organizations/organizations.md#types-of-organizations)的所有功能，例如[事件日志](../../admin-console/reporting/event-logs.md)和 [API 访问](../../organizations/bitwarden-public-api.md)
+* 提供给[团队组织](../../admin-console/organizations-overview.md#types-of-organizations)的所有功能，例如[事件日志](../../admin-console/reporting/event-logs.md)和 [API 访问](../../organizations/bitwarden-public-api.md)
 
 [现在注册 7 天免费试用](https://bitwarden.com/go/start-secrets-teams-trial/)。
 
@@ -40,7 +40,7 @@ Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务�
 * 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
 * 最多 50 个[机器账户](../../secrets-manager/your-secrets/machine-accounts.md)
 * 每个附加机器账户 1 美元
-* 提供给[企业组织](../../organizations/organizations.md#types-of-organizations)的所有功能，例如 [SCIM 配置](../../scim/about-scim.md)和[企业策略](../../organizations/enterprise-policies.md)
+* 提供给[企业组织](../../admin-console/organizations-overview.md#types-of-organizations)的所有功能，例如 [SCIM 配置](../../admin-console/manage-members/scim/about-scim.md)和[企业策略](../../admin-console/manage-shared-items/enterprise-policies.md)
 
 [现在注册 7 天免费试用](https://bitwarden.com/go/start-secrets-teams-trial/)。
 

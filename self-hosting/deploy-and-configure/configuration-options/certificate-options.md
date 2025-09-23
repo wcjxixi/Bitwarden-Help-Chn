@@ -162,7 +162,7 @@ sudo update-ca-certificates
 
 对于 Bitwarden Linux 桌面 App，请使用基于 Chromium 的浏览器和 Directory Connector 桌面 App 访问网页密码库，您还需要完成[此 Linux 证书管理过程](https://chromium.googlesource.com/chromium/src/+/refs/heads/master/docs/linux/cert_management.md)。
 
-对于 [Bitwarden CLI](../../../password-manager/developer-tools/password-manager-cli.md) 和[目录连接器 CLI](../../../directory-connector/directory-connector-cli.md)，您的自签名证书必须存储在本地文件中并由 `NODE_EXTRA_CA_CERTS=` 环境变量引用，例如：
+对于 [Bitwarden CLI](../../../password-manager/developer-tools/cli/password-manager-cli.md) 和[目录连接器 CLI](../../../admin-console/manage-members/directory-connector/directory-connector-cli.md)，您的自签名证书必须存储在本地文件中并由 `NODE_EXTRA_CA_CERTS=` 环境变量引用，例如：
 
 ```shell
 export NODE_EXTRA_CA_CERTS=~/.config/Bitwarden/certificate.crt

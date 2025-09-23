@@ -43,7 +43,7 @@
 
 ## 入职客户 <a href="#onboard-clients" id="onboard-clients"></a>
 
-作为一名提供商成员管理员，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../admin-console/organization-basics/about-collections.md)和[群组](../organizations/groups.md)结构、[导入数据](../import-export/import-data-to-an-organization.md)以及设置[策略](../organizations/enterprise-policies.md)和 [SSO](../login-with-sso/about-login-with-sso.md)。
+作为一名提供商成员管理员，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../admin-console/manage-shared-items/collections/about-collections.md)和[群组](../admin-console/manage-members/groups.md)结构、[导入数据](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)以及设置[策略](../admin-console/manage-shared-items/enterprise-policies.md)和 [SSO](../login-with-sso/about-login-with-sso.md)。
 
 了解[如何创建新的客户组织](../provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../provider-portal/start-a-client-organization.md#initial-setup-procedure)。
 
@@ -78,7 +78,7 @@
 
 ## 入职客户 <a href="#onboard-clients" id="onboard-clients"></a>
 
-作为一名提供商管理员​​，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../admin-console/organization-basics/about-collections.md)和[群组](../organizations/groups.md)结构、[导入数据](../import-export/import-data-to-an-organization.md)以及设置[策略](../organizations/enterprise-policies.md)和 [SSO](../login-with-sso/about-login-with-sso.md)。
+作为一名提供商管理员​​，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../admin-console/manage-shared-items/collections/about-collections.md)和[群组](../admin-console/manage-members/groups.md)结构、[导入数据](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)以及设置[策略](../admin-console/manage-shared-items/enterprise-policies.md)和 [SSO](../login-with-sso/about-login-with-sso.md)。
 
 了解[如何创建新的客户组织](../provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../provider-portal/start-a-client-organization.md#initial-setup-procedure)。
 
@@ -100,10 +100,10 @@
 
 Bitwarden 受到数百万人的信赖，它可以帮助您的客户推动协作、提高生产力并安全地共享数据，无论是在同一组织内部还是外部。对于您的客户，Bitwarden Password Manager 提供的一些最受欢迎的功能包括：
 
-* **轻松导入**：从几乎所有密码管理解决方案中[导入](../import-export/import-data-to-an-organization.md)您的公司的共享凭据。
-* **用户管理集成**：使用多种[跨域身份管理 (SCIM) 系统](../scim/about-scim.md)之一或[直接到目录](../directory-connector/about-directory-connector.md)集成，将最终用户同步到您的 Bitwarden 组织。
+* **轻松导入**：从几乎所有密码管理解决方案中[导入](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)您的公司的共享凭据。
+* **用户管理集成**：使用多种[跨域身份管理 (SCIM) 系统](../admin-console/manage-members/scim/about-scim.md)之一或[直接到目录](../admin-console/manage-members/directory-connector/about-directory-connector.md)集成，将最终用户同步到您的 Bitwarden 组织。
 * **SSO 登录**：通过任何 SAML 2.0 或 OIDC 身份提供程序，[使用现有的单点登录 (SSO) 对终端用户进行身份验证设置](../login-with-sso/about-login-with-sso.md)。
-* **健全的策略**：使用[企业策略](../organizations/enterprise-policies.md)为您的最终用户执行安全实践，例如设置管理员[恢复丢失的账户](../organizations/admin-password-reset.md)的功能。
+* **健全的策略**：使用[企业策略](../admin-console/manage-shared-items/enterprise-policies.md)为您的最终用户执行安全实践，例如设置管理员[恢复丢失的账户](../admin-console/manage-members/account-recovery.md)的功能。
 
 Bitwarden 致力于打造安全第一的产品。Password Manager 是：
 

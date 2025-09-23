@@ -48,7 +48,7 @@ Bitwarden App（桌面 App、浏览器扩展、移动 App 和 CLI）将在登录
 bw sync
 ```
 
-更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 

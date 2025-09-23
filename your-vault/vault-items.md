@@ -129,7 +129,7 @@
 {% endtab %}
 
 {% tab title="CLI" %}
-更多信息，请参阅 [CLI 文档](../password-manager/developer-tools/password-manager-cli.md)。
+更多信息，请参阅 [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -139,7 +139,7 @@
 
 如果您想创建一个项目的副本，您可以克隆对其具有**所有权**的任何密码库项目：
 
-如果您想复制您拥有所有权的任何项目，您可以克隆该项目。克隆组织所拥有的项目只能由所有者、管理员和具有[**可以管理**](../admin-console/organization-basics/collection-management.md#collection-management-settings)权限的用户从网页 App 的[管理控制台](../admin-console/organizations-quick-start.md)或从密码库视图进行：
+如果您想复制您拥有所有权的任何项目，您可以克隆该项目。克隆组织所拥有的项目只能由所有者、管理员和具有[**可以管理**](../admin-console/manage-shared-items/collections/collection-management.md#collection-management-settings)权限的用户从网页 App 的[管理控制台](../admin-console/organizations-quick-start.md)或从密码库视图进行：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -161,13 +161,13 @@
 
 ### 分配到集合 <a href="#assign-to-collections" id="assign-to-collections"></a>
 
-如果您是[组织](../organizations/organizations.md)的成员，您可以将密码库项目分配到组织的集合中，从而将密码库项目的所有权转移给该组织。要与其他组织成员共享，请使用 **≡** 菜单：
+如果您是[组织](../admin-console/organizations-overview.md)的成员，您可以将密码库项目分配到组织的集合中，从而将密码库项目的所有权转移给该组织。要与其他组织成员共享，请使用 **≡** 菜单：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/stm9byteqzZn9dvqonHrc/0da481b0cf1f54457d08ae02fd917377/2024-12-02_14-33-34.png?_a=DAJCwlWIZAAB" %}
 分配到集合
 {% endembed %}
 
-了解更多关于[组织](../organizations/organizations.md)、[集合](../admin-console/organization-basics/about-collections.md)和[共享](../organizations/sharing.md)的信息。
+了解更多关于[组织](../admin-console/organizations-overview.md)、[集合](../admin-console/manage-shared-items/collections/about-collections.md)和[共享](../organizations/sharing.md)的信息。
 
 ### 保护个人项目 <a href="#protect-individual-items" id="protect-individual-items"></a>
 

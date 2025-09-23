@@ -34,7 +34,7 @@
 * **如果您在使用紧急访问**：具有**接管**访问权限的受信任的紧急联系人可以禁用两步登录方式。[了解如何使用紧急访问访问密码库](../log-in-and-unlock/more-log-in-options/emergency-access.md#use-emergency-access)。
 * **请检查您当前是否登录了任何 Bitwarden 客户端应用程序**（移动 App、浏览器扩展等）。如果是，请[导出您的密码库数据](../../import-export/export-vault-data.md)以保存您的数据。
 
-[账户恢复](../../organizations/admin-password-reset.md)不会绕过两步登录。
+[账户恢复](../../admin-console/manage-members/account-recovery.md)不会绕过两步登录。
 {% endhint %}
 
 要删除您的账户：

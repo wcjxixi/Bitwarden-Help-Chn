@@ -12,9 +12,9 @@
 
 大多数客户在将所有共享数据导入生产（**步骤 4a**）之前，会就地升级现有组织并清除试用期间使用的测试数据。
 
-| 步骤 | 持续时间（小时） | 操作          | 描述                                                                                                                                            |
-| -- | -------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1a | 0.5      | 升级或从头创建您的组织 | [升级您的组织](../../organizations/organizations.md#upgrade-an-organization)或[创建新的组织](../../organizations/organizations.md#create-an-organization)。 |
+| 步骤 | 持续时间（小时） | 操作          | 描述                                                                                                                            |
+| -- | -------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 1a | 0.5      | 升级或从头创建您的组织 | [升级您的组织](../organizations-overview.md#upgrade-an-organization)或[创建新的组织](../organizations-overview.md#create-an-organization)。 |
 
 {% hint style="success" %}
 如果您选择为生产实施从头开始创建一个新的组织，请再次查看[概念验证项目核对表](../../business-resources/proof-of-concept-project-checklist.md)，并在继续之前完成这些步骤。
@@ -24,10 +24,10 @@
 
 虽然您的试用组织中可能有一些成员，但大多数企业在转向生产时都会增加更多用户。有鉴于此，在团队其他成员入职之前，您应该采取以下几个关键步骤：
 
-| 步骤 | 持续时间（小时） | 操作       | 描述                                                                                              |
-| -- | -------- | -------- | ----------------------------------------------------------------------------------------------- |
-| 2a | 0.5      | 检查您的策略配置 | 为确保配置的策略在所有成员加入后可以立即应用，请检查是否启用了所有需要的策略。                                                         |
-| 2b | 0.25     | 激活账户恢复   | 许多组织都认为账户恢复策略至关重要，因为它能够恢复忘记主密码或被剥夺的用户的账户。[马上激活该策略。](../../organizations/enterprise-policies.md) |
+| 步骤 | 持续时间（小时） | 操作       | 描述                                                                                                 |
+| -- | -------- | -------- | -------------------------------------------------------------------------------------------------- |
+| 2a | 0.5      | 检查您的策略配置 | 为确保配置的策略在所有成员加入后可以立即应用，请检查是否启用了所有需要的策略。                                                            |
+| 2b | 0.25     | 激活账户恢复   | 许多组织都认为账户恢复策略至关重要，因为它能够恢复忘记主密码或被剥夺的用户的账户。[马上激活该策略。](../manage-shared-items/enterprise-policies.md) |
 
 ## 第 3 步：获取产品许可证 <a href="#step-3-get-a-production-license" id="step-3-get-a-production-license"></a>
 
@@ -47,17 +47,17 @@
 
 您可能已经完成了大部分或全部步骤，但我们建议您仔细检查这些步骤是否完成得令您满意：
 
-| 步骤 | 持续时间（小时） | 操作   | 描述                                                                              |
-| -- | -------- | ---- | ------------------------------------------------------------------------------- |
-| 4a | 0.5      | 导入数据 | [导入所有共享数据](../../import-export/import-data-to-an-organization.md)到生产组织。         |
-| 4b | 0.5      | 审计集合 | 在授予更广泛的访问权限之前，确保您的[集合](../organization-basics/about-collections.md)包含了正确的密码库项目。 |
-| 4c | 0.5      | 审计群组 | 在分配更多用户之前，确保已将您的[群组](../../organizations/groups.md)分配给了正确的集合。                   |
+| 步骤 | 持续时间（小时） | 操作   | 描述                                                                                                   |
+| -- | -------- | ---- | ---------------------------------------------------------------------------------------------------- |
+| 4a | 0.5      | 导入数据 | [导入所有共享数据](../manage-shared-items/import-organization-items/import-data-to-an-organization.md)到生产组织。 |
+| 4b | 0.5      | 审计集合 | 在授予更广泛的访问权限之前，确保您的[集合](../manage-shared-items/collections/about-collections.md)包含了正确的密码库项目。          |
+| 4c | 0.5      | 审计群组 | 在分配更多用户之前，确保已将您的[群组](../manage-members/groups.md)分配给了正确的集合。                                          |
 
 此外，现在也是检查您管理团队中个人用户的特权的好时机。现在，为会员角色和权限定义良好的做法，一旦您开始入职更多员工，促进用户就会变得更加容易：
 
 | 步骤 | 持续时间（小时） | 操作         | 描述                                                                                                                                                  |
 | -- | -------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 4d | 0.75     | 审查成员角色分配   | 审查 Bitwarden 中可用的预定义[成员角色](../user-management/member-roles-and-permissions.md)，并确定哪个角色适合 IT、管理人员等。                                                  |
+| 4d | 0.75     | 审查成员角色分配   | 审查 Bitwarden 中可用的预定义[成员角色](../manage-members/member-roles-and-permissions.md)，并确定哪个角色适合 IT、管理人员等。                                                   |
 | 4e | 1        | 设置自定义管理员账户 | 许多组织发现，为管理员创建自定义角色非常有用，可以为用户分配细粒度的权限。请查看[本指南](https://bitwarden.com/resources/setting-up-administrative-accounts-with-lesser-privileges/)，了解一些最佳做法。 |
 
 ## 第 5 步：配置客户端 App <a href="#step-5-configure-client-apps" id="step-5-configure-client-apps"></a>
@@ -73,8 +73,8 @@
 
 现在，您的组织已准备好在生产中使用了，接下来请引导其他用户加入。取决于您在试用期间设置组织的方式，您可能需要：
 
-* [使用 SCIM](../../scim/about-scim.md)
-* [使用目录连接器](../../directory-connector/about-directory-connector.md)
-* [使用手动邀请](../../organizations/user-management.md#onboard-users)
+* [使用 SCIM](../manage-members/scim/about-scim.md)
+* [使用目录连接器](../manage-members/directory-connector/about-directory-connector.md)
+* [使用手动邀请](../manage-members/user-management.md#onboard-users)
 
-我们强烈建议您在入职其余用户之前，先查看或重新查看[入职和继任](../../business-resources/onboarding-and-succession.md)指南。
+我们强烈建议您在入职其余用户之前，先查看或重新查看[入职和继任](../manage-members/onboarding-and-succession.md)指南。

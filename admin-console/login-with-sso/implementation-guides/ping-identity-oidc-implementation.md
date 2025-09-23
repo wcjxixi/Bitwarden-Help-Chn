@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/ping-identity-oidc-implementation/)
 {% endhint %}
 
-本文是**专门针对 Ping Identity** 用于配置 OpenID Connect (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Ping Identity 的帮助，请参阅 [OIDC 配置](../../../login-with-sso/oidc-configuration.md)或 [Ping Identity SAML 部署](../../user-management/scim/ping-identity-scim-integration.md)。
+本文是**专门针对 Ping Identity** 用于配置 OpenID Connect (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Ping Identity 的帮助，请参阅 [OIDC 配置](../../../login-with-sso/oidc-configuration.md)或 [Ping Identity SAML 部署](../../manage-members/scim/ping-identity-scim-integration.md)。
 
 配置需要在 Bitwarden 网页 App 和 Ping Identity 管理员门户网站中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
@@ -87,7 +87,7 @@ Ping OIDC 配置编辑
 完成这些字段的配置后，**保存**您的工作。
 
 {% hint style="success" %}
-您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织策略。[了解更多](../../../organizations/enterprise-policies.md)。
+您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织策略。[了解更多](../../manage-shared-items/enterprise-policies.md)。
 {% endhint %}
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>

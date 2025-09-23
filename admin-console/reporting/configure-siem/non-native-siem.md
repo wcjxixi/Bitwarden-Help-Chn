@@ -24,7 +24,7 @@ Bitwarden 提供了多种访问与您的 SIEM 监控相关的数据的方法，�
 
 ### CLI 数据提取 <a href="#cli-data-extraction" id="cli-data-extraction"></a>
 
-Password Manager CLI 可用于提取可能为 API 提供的事件分析提供有用上下文的其他数据，例如使用 `list` 命令获取与从 API 访问的成员、群组或集合 ID 相关的项目数据。[了解有关 Password Manager CLI 的更多信息](../../../password-manager/developer-tools/password-manager-cli.md)。
+Password Manager CLI 可用于提取可能为 API 提供的事件分析提供有用上下文的其他数据，例如使用 `list` 命令获取与从 API 访问的成员、群组或集合 ID 相关的项目数据。[了解有关 Password Manager CLI 的更多信息](../../../password-manager/developer-tools/cli/password-manager-cli.md)。
 
 ### 事件导出 <a href="#event-exports" id="event-exports"></a>
 

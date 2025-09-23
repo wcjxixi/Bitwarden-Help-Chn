@@ -32,7 +32,7 @@ Bitwarden 为企业提供了两种解决方案，允许经过批准的企业成�
 
 ### 问：如果我的组织启用了 SSO，我仍可以使用主密码登录吗？ <a href="#q-can-i-still-log-in-with-my-master-password-if-my-organization-has-sso-enabled" id="q-can-i-still-log-in-with-my-master-password-if-my-organization-has-sso-enabled"></a>
 
-**答：**&#x9ED8;认情况下，是可以的，您可以使用您的电子邮件地址和主密码登录 Bitwarden。但是，如果您的组织同时启用了[单一组织](../organizations/enterprise-policies.md#single-organization)和[单点登录验证](../organizations/enterprise-policies.md#single-sign-on-authentication)策略，或者您的组织使用了 [Key Connector](../self-hosting/key-connector/about-key-connector.md)，则所有非管理员用户都会被要求使用 SSO 登录。
+**答：**&#x9ED8;认情况下，是可以的，您可以使用您的电子邮件地址和主密码登录 Bitwarden。但是，如果您的组织同时启用了[单一组织](../admin-console/manage-shared-items/enterprise-policies.md#single-organization)和[单点登录验证](../admin-console/manage-shared-items/enterprise-policies.md#single-sign-on-authentication)策略，或者您的组织使用了 [Key Connector](../self-hosting/key-connector/about-key-connector.md)，则所有非管理员用户都会被要求使用 SSO 登录。
 
 ### 问：新用户如何使用 SSO 登录（即时）？ <a href="#q-how-does-login-with-sso-work-for-new-users-just-in-time" id="q-how-does-login-with-sso-work-for-new-users-just-in-time"></a>
 

@@ -22,7 +22,7 @@
 3、打开云端网页密码库然后[下载您的许可证](../licensing.md)。
 
 {% hint style="success" %}
-[组织许可证](../licensing.md#organization-license)和[个人许可证](../licensing.md#individual-license)是独立的文件。**您不需要下载这两个许可证文件**。如果您要迁移组织，则只需要获取组织许可证，并且必须是[组织所有者](../../admin-console/user-management/member-roles-and-permissions.md)才能执行此操作。
+[组织许可证](../licensing.md#organization-license)和[个人许可证](../licensing.md#individual-license)是独立的文件。**您不需要下载这两个许可证文件**。如果您要迁移组织，则只需要获取组织许可证，并且必须是[组织所有者](../../admin-console/manage-members/member-roles-and-permissions.md)才能执行此操作。
 {% endhint %}
 
 4、还是在云端网页密码库中，[导出您的个人密码库数据](../../import-export/export-vault-data.md#export-a-personal-vault)或[导出您的组织密码库数据](../../import-export/export-vault-data.md#export-an-organization-vault)。如果您要迁移组织，请鼓励您的最终用户也导出他们的个人密码库。
@@ -35,21 +35,21 @@
 上传[组织许可证](../licensing.md#organization-license)和[个人许可证](../licensing.md#individual-license)的位置是不同的。和之前的一样，只上传与你相关的那一个。
 {% endhint %}
 
-7、还是在自托管的网页密码库中，将数据导入您的[个人密码库](../../password-manager/import-and-export/import-data.md)或[组织密码库](../../import-export/import-data-to-an-organization.md)。
+7、还是在自托管的网页密码库中，将数据导入您的[个人密码库](../../password-manager/import-and-export/import-data.md)或[组织密码库](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)。
 
 {% hint style="info" %}
-导入数据到组织将自动重新创建[集合](../../admin-console/organization-basics/about-collections.md)，并将相关的密码库项目添加到其中。
+导入数据到组织将自动重新创建[集合](../../admin-console/manage-shared-items/collections/about-collections.md)，并将相关的密码库项目添加到其中。
 {% endhint %}
 
 ### 下一步（仅针对组织）
 
 如果您要将组织迁移到自托管服务器，请继续执行以下步骤：
 
-1、**（仅企业组织）**&#x91CD;新实施您的[企业策略](../../organizations/enterprise-policies.md)规范和/或配置 [SSO 登录](../../login-with-sso/about-login-with-sso.md)。
+1、**（仅企业组织）**&#x91CD;新实施您的[企业策略](../../admin-console/manage-shared-items/enterprise-policies.md)规范和/或配置 [SSO 登录](../../login-with-sso/about-login-with-sso.md)。
 
-2、在自托管网页密码库中手动[重新创建用户群组](../../organizations/groups.md#create-a-group)，并将它们分配给适当的集合。
+2、在自托管网页密码库中手动[重新创建用户群组](../../admin-console/manage-members/groups.md#create-a-group)，并将它们分配给适当的集合。
 
-3、手动或使用[目录连接器](../../directory-connector/about-directory-connector.md)[邀请用户加入您的组织](../../organizations/user-management.md#invite)。
+3、手动或使用[目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md)[邀请用户加入您的组织](../../admin-console/manage-members/user-management.md#invite)。
 {% endtab %}
 
 {% tab title="自托管到云端" %}
@@ -66,13 +66,13 @@
 3、打开云端网页密码库。大多数用户在之前都已创建了用于计费目的的云端账户，因此请登录该账户。如果您之前的免费账户不是用于计费的云端账户，请立即创建一个账户。
 
 {% hint style="success" %}
-如果您要迁移组织，则您已经拥有了一个用于计费和许可目的的云端组织。为了最平稳地过渡，我们建议使用这个已经建立的组织，而不是[创建一个新的组织](../../organizations/organizations.md#create-an-organization)。
+如果您要迁移组织，则您已经拥有了一个用于计费和许可目的的云端组织。为了最平稳地过渡，我们建议使用这个已经建立的组织，而不是[创建一个新的组织](../../admin-console/organizations-overview.md#create-an-organization)。
 {% endhint %}
 
-4、还是在云端网页密码库中，将数据导入您的[个人密码库](../../password-manager/import-and-export/import-data.md)或[组织密码库](../../import-export/import-data-to-an-organization.md)。
+4、还是在云端网页密码库中，将数据导入您的[个人密码库](../../password-manager/import-and-export/import-data.md)或[组织密码库](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)。
 
 {% hint style="info" %}
-导入数据到组织将自动重新创建您的[集合](../../admin-console/organization-basics/about-collections.md)，并将相关的密码库项目添加到其中。
+导入数据到组织将自动重新创建您的[集合](../../admin-console/manage-shared-items/collections/about-collections.md)，并将相关的密码库项目添加到其中。
 {% endhint %}
 
 5、手动将[文件附件](../../your-vault/file-attachments.md)上传到您的个人或组织密码库。
@@ -81,9 +81,9 @@
 
 如果您要将组织迁移到云端，请继续执行以下步骤：
 
-1. **（仅企业组织）**&#x91CD;新实施您的[企业策略](../../organizations/enterprise-policies.md)规范和/或配置 [SSO 登录](../../login-with-sso/about-login-with-sso.md)。
-2. 在云端手动[重新创建用户群组](../../organizations/groups.md#create-a-group)，并将它们分配给适当的集合。
-3. 手动或使用[目录连接器](../../directory-connector/about-directory-connector.md)[邀请用户加入您的组织](../../organizations/user-management.md#invite)。
+1. **（仅企业组织）**&#x91CD;新实施您的[企业策略](../../admin-console/manage-shared-items/enterprise-policies.md)规范和/或配置 [SSO 登录](../../login-with-sso/about-login-with-sso.md)。
+2. 在云端手动[重新创建用户群组](../../admin-console/manage-members/groups.md#create-a-group)，并将它们分配给适当的集合。
+3. 手动或使用[目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md)[邀请用户加入您的组织](../../admin-console/manage-members/user-management.md#invite)。
 {% endtab %}
 
 {% tab title="主机到主机" %}

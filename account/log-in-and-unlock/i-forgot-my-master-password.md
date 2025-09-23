@@ -10,7 +10,7 @@ Bitwarden 采用零知识加密技术。这意味着 Bitwarden 对您的主密�
 2. 尝试在另外一台设备上登录。
 3. [设置主密码提示](https://vault.bitwarden.com/#/hint)。如果您设置了提示，当您与此页面交互时，提示将通过电子邮件发送到您的收件箱。如果你没有设置提示，则会收到一封报告此情况的电子邮件。
 4. 如果您启用了[紧急访问](more-log-in-options/emergency-access.md)，请联系您信任的紧急联系人以重新获得对您的密码库的读取或接管访问权限。
-5. 如果您的组织启用了[账户恢复](../../organizations/admin-password-reset.md)功能，请联系管理员重置您的主密码。
+5. 如果您的组织启用了[账户恢复](../../admin-console/manage-members/account-recovery.md)功能，请联系管理员重置您的主密码。
 6. 如果您用于访问网页 App 的浏览器是已知设备（即已通过[使用设备登录](more-log-in-options/log-in-with-device.md)注册过），则可以通过网页 App 访问您的账户。
 7. 如果您的 Bitwarden 账户已经注册了启用加密（PRF）的[通行密钥登录](more-log-in-options/log-in-with-passkeys.md)，您可以使用该通行密钥登录。
 

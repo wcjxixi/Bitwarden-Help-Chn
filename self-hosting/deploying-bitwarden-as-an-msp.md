@@ -12,21 +12,21 @@ Bitwarden 支持经销商和托管服务提供商 (MSP) 模式。您可以立即
 
 ## Bitwarden 组织 <a href="#bitwarden-organizations" id="bitwarden-organizations"></a>
 
-Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../organizations/sharing.md)登录、笔记、支付卡和身份信息。组织可以是一个家庭、团队、公司或任何需要安全地共享数据的人群。组织有一个独立的密码库，[管理员](../admin-console/user-management/member-roles-and-permissions.md)可以在那里管理组织的项目、用户和设置。
+Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../organizations/sharing.md)登录、笔记、支付卡和身份信息。组织可以是一个家庭、团队、公司或任何需要安全地共享数据的人群。组织有一个独立的密码库，[管理员](../admin-console/manage-members/member-roles-and-permissions.md)可以在那里管理组织的项目、用户和设置。
 
-MSP 应该为每一个客户[创建一个组织](../organizations/organizations.md#create-an-organization)，或者客户可以为自己创建一个。你可以在好几种[组织类型](../organizations/organizations.md#types-of-organizations-1)中你选择一种最适合你的客户的需要的类型。对于最强大的业务功能集，我们推荐[企业计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)。
+MSP 应该为每一个客户[创建一个组织](../admin-console/organizations-overview.md#create-an-organization)，或者客户可以为自己创建一个。你可以在好几种[组织类型](../admin-console/organizations-overview.md#types-of-organizations-1)中你选择一种最适合你的客户的需要的类型。对于最强大的业务功能集，我们推荐[企业计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)。
 
-在所有情况下，MSP 团队的成员应被[指定为所有者和管理者](../admin-console/user-management/member-roles-and-permissions.md)，以便他们能够管理该组织。管理员可以访问和管理组织中的所有项目、[集合](../admin-console/organization-basics/about-collections.md)和用户。应在多个用户之间分担管理职责，尤其是在有大量用户的组织中。
+在所有情况下，MSP 团队的成员应被[指定为所有者和管理者](../admin-console/manage-members/member-roles-and-permissions.md)，以便他们能够管理该组织。管理员可以访问和管理组织中的所有项目、[集合](../admin-console/manage-shared-items/collections/about-collections.md)和用户。应在多个用户之间分担管理职责，尤其是在有大量用户的组织中。
 
 {% hint style="info" %}
-为了确保你的组织的安全，Bitwarden 对新成员的加入采用了 3 个步骤：[邀请](../organizations/user-management.md#invite) → [接受](../organizations/user-management.md#accept) → [确认](../organizations/user-management.md#confirm)。邀请发出后，应通知用户，如果需要，还可以帮助他们接受。
+为了确保你的组织的安全，Bitwarden 对新成员的加入采用了 3 个步骤：[邀请](../admin-console/manage-members/user-management.md#invite) → [接受](../admin-console/manage-members/user-management.md#accept) → [确认](../admin-console/manage-members/user-management.md#confirm)。邀请发出后，应通知用户，如果需要，还可以帮助他们接受。
 {% endhint %}
 
 **一旦 MSP 团队的成员被配置为所有者和管理员，他们就可以管理和执行本文中剩余的所有任务。**
 
 ## 集合和群组 <a href="#collections-and-groups" id="collections-and-groups"></a>
 
-Bitwarden 组织被设计为以可扩展和安全的方式管理用户和数据。在个人基础上管理用户和数据是非常低效的，并且会导致意外的错误管理。为了解决这个问题，组织提供了[集合](../admin-console/organization-basics/about-collections.md)和[群组](../organizations/groups.md)功能。
+Bitwarden 组织被设计为以可扩展和安全的方式管理用户和数据。在个人基础上管理用户和数据是非常低效的，并且会导致意外的错误管理。为了解决这个问题，组织提供了[集合](../admin-console/manage-shared-items/collections/about-collections.md)和[群组](../admin-console/manage-members/groups.md)功能。
 
 ### 集合 <a href="#collections" id="collections"></a>
 
@@ -34,7 +34,7 @@ Bitwarden 组织被设计为以可扩展和安全的方式管理用户和数据�
 
 ![](https://bitwarden.com/help/images/organizations/collections-graphic-1.png)
 
-[学习如何创建集合](../admin-console/organization-basics/about-collections.md#create-a-collection)
+[学习如何创建集合](../admin-console/manage-shared-items/collections/about-collections.md#create-a-collection)
 
 ### 群组 <a href="#groups" id="groups"></a>
 
@@ -42,7 +42,7 @@ Bitwarden 组织被设计为以可扩展和安全的方式管理用户和数据�
 
 ![](https://bitwarden.com/help/images/organizations/collections-graphic-2.png)
 
-[学习如何创建群组](../organizations/groups.md#create-a-group)
+[学习如何创建群组](../admin-console/manage-members/groups.md#create-a-group)
 
 ## 共享密码库项目 <a href="#share-vault-items" id="share-vault-items"></a>
 
@@ -54,10 +54,10 @@ MSP 团队可以手动管理组织的用户，或使用目录连接器从现有�
 
 ![](https://bitwarden.com/help/images/directory-connector/dc-diagram.png)
 
-确保您的组织拥有正确的[用户席位数](../organizations/user-management.md#manage-user-seats)，为用户入职做准备。然后，入职用户：
+确保您的组织拥有正确的[用户席位数](../admin-console/manage-members/user-management.md#manage-user-seats)，为用户入职做准备。然后，入职用户：
 
-* [直接从网络密码库](../organizations/user-management.md#onboard-users)
-* [使用目录连接器](../directory-connector/about-directory-connector.md)
+* [直接从网络密码库](../admin-console/manage-members/user-management.md#onboard-users)
+* [使用目录连接器](../admin-console/manage-members/directory-connector/about-directory-connector.md)
 
 ## MSP 最佳实践 <a href="#msp-best-practices" id="msp-best-practices"></a>
 

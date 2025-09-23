@@ -33,7 +33,7 @@
 
 ## 密码库超时时间 <a href="#vault-timeout" id="vault-timeout"></a>
 
-密码库超时时间规定了 Bitwarden 在超时之前的非活动状态的时长。「不活动」是由与 Bitwarden 交互后的时间确定的，而不是系统空闲时间。每一种应用程序都有标准选项（例如 1 分钟、15 分钟、1 小时）和自定义时间输入，以及特定于某些 App 的选项（例如在系统空闲时）。企业组织还可以实施[最大允许的超时时长](../../organizations/enterprise-policies.md#vault-timeout)选项。
+密码库超时时间规定了 Bitwarden 在超时之前的非活动状态的时长。「不活动」是由与 Bitwarden 交互后的时间确定的，而不是系统空闲时间。每一种应用程序都有标准选项（例如 1 分钟、15 分钟、1 小时）和自定义时间输入，以及特定于某些 App 的选项（例如在系统空闲时）。企业组织还可以实施[最大允许的超时时长](../../admin-console/manage-shared-items/enterprise-policies.md#vault-timeout)选项。
 
 {% hint style="info" %}
 在 Chromebook 上，无法完全关闭或重新启动浏览器。因此，使用**浏览器重启时**选项，只会在您重新启动设备时才会锁定扩展程序。

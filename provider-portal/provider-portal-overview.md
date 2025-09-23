@@ -36,16 +36,16 @@
 
 ## 客户组织 <a href="#client-organizations" id="client-organizations"></a>
 
-客户组织是指任何隶属于提供商或由提供商管理的[组织](../organizations/organizations.md)。对于您的客户来说，「客户」组织和「常规」组织之间没有区别，唯一的区别在于谁在进行管理。提供商的所有成员都可以访问所有​​所有客户组织：
+客户组织是指任何隶属于提供商或由提供商管理的[组织](../admin-console/organizations-overview.md)。对于您的客户来说，「客户」组织和「常规」组织之间没有区别，唯一的区别在于谁在进行管理。提供商的所有成员都可以访问所有​​所有客户组织：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/28M8mkU03SyVFq70ZgD0Bp/04e3c65eba73892ae3301d366ce97ce1/provider-diagram.png?fm=webp&h=319&q=50&w=719" %}
 提供商的结构
 {% endembed %}
 
 {% hint style="info" %}
-**如上面的图解所示**，如果提供商想使用一个[组织](../organizations/organizations.md)来管理他们自己的凭据，则**不应**把它作为一个由提供商管理的客户组织。
+**如上面的图解所示**，如果提供商想使用一个[组织](../admin-console/organizations-overview.md)来管理他们自己的凭据，则**不应**把它作为一个由提供商管理的客户组织。
 
-为这种情况创建一个独立的组织将确保可以为用户提供适当的[用户类型和对凭据的访问控制](../admin-console/user-management/member-roles-and-permissions.md)。
+为这种情况创建一个独立的组织将确保可以为用户提供适当的[用户类型和对凭据的访问控制](../admin-console/manage-members/member-roles-and-permissions.md)。
 {% endhint %}
 
 组织将 Bitwarden 用户和密码库项目联系在一起，用于[安全地共享](../organizations/sharing.md)登录、支付卡、笔记和身份。组织有一个独立的视图，即管理控制台，提供商服务用户可以在其中管理组织的集合、管理成员和群组、运行报告、导入数据和配置组织设置：
@@ -54,7 +54,7 @@
 客户组织密码库
 {% endembed %}
 
-客户组织的成员（如您客户的最终用户）可以在其**密码库**视图中找到共享项目和个人拥有的项目，还可以使用多种方法筛选项目列表，使其只显示组织项目或特定[集合](../admin-console/organization-basics/about-collections.md)中的项目：
+客户组织的成员（如您客户的最终用户）可以在其**密码库**视图中找到共享项目和个人拥有的项目，还可以使用多种方法筛选项目列表，使其只显示组织项目或特定[集合](../admin-console/manage-shared-items/collections/about-collections.md)中的项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?_a=DAJCwlWIZAAB" %}
 

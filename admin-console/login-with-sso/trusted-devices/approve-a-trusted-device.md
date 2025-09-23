@@ -10,7 +10,7 @@
 请求管理员批准
 {% endembed %}
 
-作为组织管理员、所有者或具有**管理账户恢复**权限的[自定义用户](../../user-management/member-roles-and-permissions.md#custom-role)，要批准请求：
+作为组织管理员、所有者或具有**管理账户恢复**权限的[自定义用户](../../manage-members/member-roles-and-permissions.md#custom-role)，要批准请求：
 
 1、登录到 Bitwarden 网页 App 然后使用产品切换器打开「管理控制台」：
 

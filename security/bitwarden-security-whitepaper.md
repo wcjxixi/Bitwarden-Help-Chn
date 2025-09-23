@@ -127,7 +127,7 @@ Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备�
 
 #### 账户恢复 <a href="#account-recovery" id="account-recovery"></a>
 
-[账户恢复](../organizations/admin-password-reset.md)功能允许企业组织的指定管理员在员工忘记主密码的情况下恢复成员账户并恢复访问权限。企业也可能希望当员工离职时使用账户恢复功能来重新获得成员账户的所有权。
+[账户恢复](../admin-console/manage-members/account-recovery.md)功能允许企业组织的指定管理员在员工忘记主密码的情况下恢复成员账户并恢复访问权限。企业也可能希望当员工离职时使用账户恢复功能来重新获得成员账户的所有权。
 
 {% hint style="info" %}
 以下信息涉及到加密密钥名称和过程，其包含在[哈希、密钥派生和加密](bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)部分中。请考虑先阅读那部分。
@@ -317,7 +317,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 
 ## 在用户之间共享数据 <a href="#sharing-data-between-users" id="sharing-data-between-users"></a>
 
-协作是使用密码管理器的主要好处之一。要实现共享，首先需要创建一个[组织](../organizations/organizations.md)。Bitwarden 组织是一个实体，它将希望共享项目的用户联系在一起。一个组织可以是一个家庭、团队、公司或其他任何希望共享数据的团体。
+协作是使用密码管理器的主要好处之一。要实现共享，首先需要创建一个[组织](../admin-console/organizations-overview.md)。Bitwarden 组织是一个实体，它将希望共享项目的用户联系在一起。一个组织可以是一个家庭、团队、公司或其他任何希望共享数据的团体。
 
 本节将介绍为确保安全、端到端、零知识共享数据加密方法而实施的加密过程，以及为确保数据控制而实施的其他安全措施：
 
@@ -358,7 +358,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 
 新用户登录其账户时，客户端应用程序使用已解密的 **RSA 私钥**来解密**受保护的组织对称密钥**，从而产生**组织对称密钥**。使用组织对称密钥，在本地解密组织拥有的密码库数据。
 
-阅读更多：[什么是组织？](../organizations/organizations.md)
+阅读更多：[什么是组织？](../admin-console/organizations-overview.md)
 
 ### 其他安全措施 <a href="#additional-security-measures" id="additional-security-measures"></a>
 

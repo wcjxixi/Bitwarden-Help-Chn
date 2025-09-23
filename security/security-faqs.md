@@ -75,7 +75,7 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 ### 问：如何对我的 Bitwarden 组织要求两步登录？ <a href="#q-how-do-i-require-two-step-login-for-my-bitwarden-organization" id="q-how-do-i-require-two-step-login-for-my-bitwarden-organization"></a>
 
-**答：**&#x4F7F;用企业组织订阅中的[企业策略](../organizations/enterprise-policies.md)，可以实现强制 2FA 功能。您也可以为您的组织启用 Duo MFA 集成来实现强制 2FA/MFA。有关更多信息，请参阅  [Duo 方式的两步登录](../account/two-step-login/setup-guides/two-step-login-via-duo.md)。
+**答：**&#x4F7F;用企业组织订阅中的[企业策略](../admin-console/manage-shared-items/enterprise-policies.md)，可以实现强制 2FA 功能。您也可以为您的组织启用 Duo MFA 集成来实现强制 2FA/MFA。有关更多信息，请参阅  [Duo 方式的两步登录](../account/two-step-login/setup-guides/two-step-login-via-duo.md)。
 
 ### 问：Bitwarden 的自托管实例的证书选项是什么？ <a href="#q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden" id="q-what-are-the-certificate-options-for-a-self-hosted-instance-of-bitwarden"></a>
 
@@ -95,7 +95,7 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 
 * [两步登录](../account/two-step-login/setup-guides/two-step-login-methods.md)的**记住我**选项将在 30 天后过期。
-* 目录连接器[同步缓存](../directory-connector/clear-sync-cache.md)将在 30 天后被清除。
+* 目录连接器[同步缓存](../admin-console/manage-members/directory-connector/clear-sync-cache.md)将在 30 天后被清除。
 * 组织邀请将在 5 天后过期。自托管客户可以[使用环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md#optional-variables)对其进行配置。
 
 ### 问：如何验证 Bitwarden App 的校验和？ <a href="#q-how-do-i-validate-the-checksum-of-a-bitwarden-app" id="q-how-do-i-validate-the-checksum-of-a-bitwarden-app"></a>

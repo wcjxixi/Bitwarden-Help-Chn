@@ -1,4 +1,4 @@
-# 团队版 Bitwarden 对比指南
+# \*团队版 Bitwarden 对比指南
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/why-choose-bitwarden-for-your-team/)
@@ -9,9 +9,9 @@
 > * 1P：[1Password](https://1password.com/)
 > * LP：[LastPass](https://www.lastpass.com/)
 > * D：[Dashlane](https://www.dashlane.com/)
-> * K：[Keeper](https://www.keepersecurity.com/zh\_CN/)
+> * K：[Keeper](https://www.keepersecurity.com/zh_CN/)
 
-使用 Bitwarden 团队[组织](../organizations/organizations.md)，可以安全地与同事、部门或整个公司共享数据。在众多选择之下，Bitwarden 凭借其更全面的团队产品脱颖而出。
+使用 Bitwarden 团队[组织](../admin-console/organizations-overview.md)，可以安全地与同事、部门或整个公司共享数据。在众多选择之下，Bitwarden 凭借其更全面的团队产品脱颖而出。
 
 ## Bitwarden 的团队版与其他软件的团队版比较 <a href="#comparing-bitwarden-teams-and-others" id="comparing-bitwarden-teams-and-others"></a>
 

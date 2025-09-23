@@ -7,7 +7,7 @@
 Bitwarden 公共 API 为组织提供了一套用于管理成员、集合、群组、事件日志和策略的工具。
 
 {% hint style="success" %}
-该 API 不允许管理个人密码库项目。要管理个人密码库项目，请使用[密码库管理 API](../password-manager/developer-tools/password-manager-apis.md#vault-management-api)。
+该 API 不允许管理个人密码库项目。要管理个人密码库项目，请使用[密码库管理 API](../password-manager/developer-tools/api/password-manager-apis.md#vault-management-api)。
 {% endhint %}
 
 公共 API 是一种 RESTful API，RESTful API 具有可预测的面向资源的 URL，接受 JSON 编码的请求正文，返回 JSON 编码的响应，并使用标准的 HTTP 响应代码、验证和动态词。

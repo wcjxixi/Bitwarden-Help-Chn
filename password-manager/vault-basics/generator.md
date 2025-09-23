@@ -88,7 +88,7 @@ bw generate -uln --length 14
 * `--minSpecial`
 * `--ambiguous`
 
-有关详细信息，请参阅 Bitwarden [CLI 文档](../developer-tools/password-manager-cli.md)。
+有关详细信息，请参阅 Bitwarden [CLI 文档](../developer-tools/cli/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 

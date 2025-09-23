@@ -31,9 +31,9 @@
 
 ### 问：如何从我的组织中添加或移除用户席位？ <a href="#q-how-do-i-add-or-remove-a-user-seat-from-my-organization" id="q-how-do-i-add-or-remove-a-user-seat-from-my-organization"></a>
 
-**答：**&#x5BF9;于团队和企业组织，当您邀请新用户时，将自动添加用户席位。您可以[指定限制](../organizations/user-management.md#set-a-seat-limit)以防止您的席位数超过指定的数量。
+**答：**&#x5BF9;于团队和企业组织，当您邀请新用户时，将自动添加用户席位。您可以[指定限制](../admin-console/manage-members/user-management.md#set-a-seat-limit)以防止您的席位数超过指定的数量。
 
-要移除用户席位，请导航到您组织的**计费** → **订阅**界面，然后使用**订阅席位**输入框来移除席位（[了解更多](../organizations/user-management.md#manually-add-or-remove-seats)）。
+要移除用户席位，请导航到您组织的**计费** → **订阅**界面，然后使用**订阅席位**输入框来移除席位（[了解更多](../admin-console/manage-members/user-management.md#manually-add-or-remove-seats)）。
 
 添加和删​移除用户席位将调整您未来的账单总额。添加席位将立即以调整后的比例向您存档的付款方式扣款，这样**您只需为计费周期（月/年）的剩余时间付费**。移除席位会导致您的下一次收费被调整，已付费席位**未使用的时间将计入您的信用额度**。
 
@@ -55,7 +55,7 @@
 
 ### 问：我的组织的计费电子邮件的持有者可以执行哪些操作？
 
-**答：**&#x60A8;组织的[计费电子邮件](../organizations/organizations.md#create-an-organization)的持有人可以通过联系我们：
+**答：**&#x60A8;组织的[计费电子邮件](../admin-console/organizations-overview.md#create-an-organization)的持有人可以通过联系我们：
 
 * 在订阅中添加或移除信用卡。
 * 更改组织的计费电子邮件地址。

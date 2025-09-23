@@ -6,7 +6,7 @@
 
 ## 什么是 SSO 登录？ <a href="#what-is-login-with-sso" id="what-is-login-with-sso"></a>
 
-SSO 登录是 Bitwarden 的单点登录解决方案。使用 SSO 登录，[企业组织](../organizations/organizations.md#types-of-organizations)可以利用其现有的身份提供程序，通过 Bitwarden 使用 **SAMl 2.0** 或 **Open ID Connect (OIDC)** 协议对用户进行身份验证。
+SSO 登录是 Bitwarden 的单点登录解决方案。使用 SSO 登录，[企业组织](../admin-console/organizations-overview.md#types-of-organizations)可以利用其现有的身份提供程序，通过 Bitwarden 使用 **SAMl 2.0** 或 **Open ID Connect (OIDC)** 协议对用户进行身份验证。
 
 SSO 登录的独特之处在于它保留了我们的零知识加密模型。Bitwarden 没有人可以访问您的密码库数据，包括**您的身份提供程序**。这就是 SSO 登录将**身份验证和解密分离**的原因。在所有 SSO 登录的实施中，您的身份提供程序不能也不会访问解密密码库数据所需的解密密钥。
 
@@ -27,7 +27,7 @@ SSO 登录的独特之处在于它保留了我们的零知识加密模型。Bitw
 SSO 登录是一种灵活的解决方案，可以满足您的企业需求。SSO 登录包括：
 
 * [SAML 2.0](saml-2.0-configuration.md) 和 [OIDC](oidc-configuration.md) 配置选项，支持与各类身份提供程序的集成。
-* 一项[企业策略](../organizations/enterprise-policies.md#single-sign-on-authentication)，可选择要求非所有者/非管理员用户使用单点登录登录 Bitwarden。
+* 一项[企业策略](../admin-console/manage-shared-items/enterprise-policies.md#single-sign-on-authentication)，可选择要求非所有者/非管理员用户使用单点登录登录 Bitwarden。
 * 用于安全数据访问工作流的两个不同的[成员解密选项](member-decryption-options.md)。
 * 通过 SSO 进行「即时」的最终用户入职。
 * 自动登录到 App 而无需使用来自您的身份提供程序仪表板中的 SSO。

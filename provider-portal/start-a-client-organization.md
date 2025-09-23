@@ -30,7 +30,7 @@
 未分配的席位（即您已付费但未使用的座位）的数量将显示在此界面。如果超过此数量，则会显示已购买的附加席位数量。[了解更多](provider-billing.md)。
 
 {% hint style="info" %}
-邀请将自动发送到**客户所有者的电子邮箱**，以作为[所有者](../admin-console/user-management/member-roles-and-permissions.md)加入组织。
+邀请将自动发送到**客户所有者的电子邮箱**，以作为[所有者](../admin-console/manage-members/member-roles-and-permissions.md)加入组织。
 {% endhint %}
 
 4、对组织满意后，选择**添加组织**。
@@ -45,7 +45,7 @@
 
 有了新创建的客户组织，您就可以开始为客户构建完善的解决方案了。根据您客户的需求，每个客户组织的确切设置会有所不同，但通常会涉及以下步骤：
 
-1、**创建集合**。一个好的第一步是[创建一组集合](../admin-console/organization-basics/about-collections.md#create-a-collection)，集合为您在下一步中添加到密码库的项目提供组织结构。
+1、**创建集合**。一个好的第一步是[创建一组集合](../admin-console/manage-shared-items/collections/about-collections.md#create-a-collection)，集合为您在下一步中添加到密码库的项目提供组织结构。
 
 常见的集合模式包括**按部门的集合**（即客户营销团队中的用户被分配到**营销**集合）或**按功能的集合**（即来自客户营销团队的用户被分配到**社交媒体**集合）：
 
@@ -53,13 +53,13 @@
 集合
 {% endembed %}
 
-2、**导入数据**。 一旦确定了存储密码库项目的结构，就可以开始[向组织导入数据](../import-export/import-data-to-an-organization.md)。
+2、**导入数据**。 一旦确定了存储密码库项目的结构，就可以开始[向组织导入数据](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)。
 
 {% hint style="info" %}
 请注意，作为提供商用户，您无法直接查看、创建或管理单个项目。
 {% endhint %}
 
-3、**配置企业策略**。在开始用户管理部分的设置之前，[配置企业策略](../organizations/enterprise-policies.md)以便为诸如[主密码复杂性](../organizations/enterprise-policies.md#master-password)、[两步登录的使用](../organizations/enterprise-policies.md#two-step-login)和[管理员密码重置](../organizations/enterprise-policies.md#master-password-reset)等设置使用规则。
+3、**配置企业策略**。在开始用户管理部分的设置之前，[配置企业策略](../admin-console/manage-shared-items/enterprise-policies.md)以便为诸如[主密码复杂性](../admin-console/manage-shared-items/enterprise-policies.md#master-password)、[两步登录的使用](../admin-console/manage-shared-items/enterprise-policies.md#two-step-login)和[管理员密码重置](../admin-console/manage-shared-items/enterprise-policies.md#master-password-reset)等设置使用规则。
 
 {% hint style="info" %}
 企业策略**仅适用于企业组织**。
@@ -78,5 +78,5 @@
 6、**开始邀请用户**。现在，用于安全地和可扩展地共享凭据的基础架构已为您的客户准备就绪，您可以开始邀请用户加入组织了。为确保组织的安全，Bitwarden 对新用户的入职流程采用了 3 步流程，**邀请** → **接受** → **确认**。
 
 {% hint style="success" %}
-如果您的客户使用目录服务（活动目录、LDAP、Okta 等），请使用 [SCIM](../scim/about-scim.md) 或[目录连接器](../directory-connector/about-directory-connector.md)从源目录自动同步组织用户并自动发出邀请。
+如果您的客户使用目录服务（活动目录、LDAP、Okta 等），请使用 [SCIM](../admin-console/manage-members/scim/about-scim.md) 或[目录连接器](../admin-console/manage-members/directory-connector/about-directory-connector.md)从源目录自动同步组织用户并自动发出邀请。
 {% endhint %}

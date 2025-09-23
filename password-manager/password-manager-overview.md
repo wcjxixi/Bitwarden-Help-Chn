@@ -18,8 +18,8 @@ Bitwarden Password Manager 使企业和个人能够在面临不断上升的网�
 
 对于企业和管理员，Bitwarden Password Manager 提供的一些最受欢迎的功能是：
 
-* **轻松导入**：从几乎任何密码管理解决方案[导入](../import-export/import-data-to-an-organization.md)公司的共享凭据。
-* **用户管理集成**：使用众多[跨域身份管理 (SCIM)](../scim/about-scim.md) 或[直接到目录](../directory-connector/about-directory-connector.md)集成之一来将最终用户同步到您的 Bitwarden 组织。
+* **轻松导入**：从几乎任何密码管理解决方案[导入](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)公司的共享凭据。
+* **用户管理集成**：使用众多[跨域身份管理 (SCIM)](../admin-console/manage-members/scim/about-scim.md) 或[直接到目录](../admin-console/manage-members/directory-connector/about-directory-connector.md)集成之一来将最终用户同步到您的 Bitwarden 组织。
 * **SSO 登录**：通过任何 SAML 2.0 或 OIDC 身份提供程序，[使用现有 SSO 设置对最终用户进行身份验证](../login-with-sso/about-login-with-sso.md)。
 * **健全的策略**：为您的最终用户实施安全实践，例如使用企业策略为管理员设置恢复丢失账户的功能。
 
@@ -39,4 +39,4 @@ Password Manager 为大多数设备和许多用例提供客户端应用程序：
 * **浏览器扩展**：Password Manager 浏览器扩展非常适合自动填写和无缝创建凭证，使网上冲浪更加轻松。立即开始[入门](../getting-started/getting-started-browserext.md)。
 * **移动 App**：Password Manager 移动 App 旨在帮助您随时随地安全地获取凭据。立即开始[入门](../getting-started/getting-started-mobile.md)。
 * **桌面 App**：Password Manager 桌面 App 为您的桌面带来完整、优雅的密码库体验。立即开始[入门](../getting-started/getting-started-desktop.md)。
-* **CLI**：Password Manager CLI 是一款功能强大、功能齐全的工具，可用于访问和管理您的密码库，并且非常适合帮助自动化或开发工作流程。立即开始[入门](developer-tools/password-manager-cli.md)。
+* **CLI**：Password Manager CLI 是一款功能强大、功能齐全的工具，可用于访问和管理您的密码库，并且非常适合帮助自动化或开发工作流程。立即开始[入门](developer-tools/cli/password-manager-cli.md)。

@@ -12,7 +12,7 @@
 
 ## 什么是组织？ <a href="#what-are-organizations" id="what-are-organizations"></a>
 
-Bitwarden 组织将用户和密码库项目关联在一起，以[安全地共享](../organizations/sharing.md)组织拥有的登录、笔记、支付卡和身份。组织可以是一个家庭、团队、公司或需要安全共享数据的任何一群人。组织具有独立的密码库，[管理员](user-management/member-roles-and-permissions.md)可以在其中管理组织的项目、用户和设置：
+Bitwarden 组织将用户和密码库项目关联在一起，以[安全地共享](../organizations/sharing.md)组织拥有的登录、笔记、支付卡和身份。组织可以是一个家庭、团队、公司或需要安全共享数据的任何一群人。组织具有独立的密码库，[管理员](manage-members/member-roles-and-permissions.md)可以在其中管理组织的项目、用户和设置：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1pgKWi4j94eDV9ehpEeUvw/b8658ed64c38494c4ce5643a38614d98/org-vault-admin.png?fm=webp&h=264&q=50&w=766" %}
 组织密码库
@@ -47,7 +47,7 @@ Bitwarden 在许多设备上提供了应用程序，包括浏览器扩展、移�
 为了使用免费的 2 人组织进行安全共享，您需要拥有 2 个 Bitwarden 帐户。设置了第一个 Bitwarden 帐户后，请按照相同的步骤（或帮助您的朋友或伴侣操作）来设置另一个帐户。
 
 {% hint style="success" %}
-Bitwarden 组织具有深层次的[用户级别访问控制](user-management/member-roles-and-permissions.md)。无论你用哪个用户来[设置你的组织](organizations-quick-start.md#setup-your-organization)，其都将成为**所有者**。
+Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/member-roles-and-permissions.md)。无论你用哪个用户来[设置你的组织](organizations-quick-start.md#setup-your-organization)，其都将成为**所有者**。
 {% endhint %}
 
 ## 设置您的组织 <a href="#setup-your-organization" id="setup-your-organization"></a>
@@ -61,7 +61,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](user-management/mem
 
 ### 了解您的组织 <a href="#get-to-know-your-organization" id="get-to-know-your-organization"></a>
 
-创建完成后，您将进入组织密码库，这是所有内容共享和组织管理的中心。作为[组织所有者](user-management/member-roles-and-permissions.md)，您将能够查看您的**密码库**，管理用户和[集合](organizations-quick-start.md#get-to-know-collections)，使用一些 Bitwarden **工具**以及配置组织的**设置**：
+创建完成后，您将进入组织密码库，这是所有内容共享和组织管理的中心。作为[组织所有者](manage-members/member-roles-and-permissions.md)，您将能够查看您的**密码库**，管理用户和[集合](organizations-quick-start.md#get-to-know-collections)，使用一些 Bitwarden **工具**以及配置组织的**设置**：
 
 {% embed url="https://bitwarden.com/_gatsby/image/bade21306371e375ec1a70ceda727886/72add32be5d81e5c969864e380e0e5b8/Screen%20Shot%202023-02-07%20at%2010.25.46%20AM.webp?eu=dadf59e4e79ca88f096ea18b6a24653fe96a5faaff5763826862b7af4bf99c8577a21b0724947fe279385dd881e717ee35c27d614fec86d2c2b81ef6bf63a30d058b59e731e526520529cea6f4b1460662d90501fcd29f5de0732190b3e2f4334c145f35f62ffc9eebeb6b37f6d92e64e2ebe1297a9ae10aa55b1e07ce6112b625c893845643879ce54ef0b4bda1589bc8e0280548dda03676221a4e50bc2feff7e301783928450f369fa847a432d4e369420e4006004798653ad256e66c33dee4fcce0c9d157ae1b6cb346e82c5c1f19004ec7421&a=w%3D850%26h%3D484%26fm%3Dwebp%26q%3D75&cd=2023-02-15T12%3A50%3A04.101Z" %}
 免费组织密码库
@@ -93,9 +93,9 @@ Bitwarden 组织具有深层次的[用户级别访问控制](user-management/mem
 免费组织 - 邀请成员
 {% endembed %}
 
-2、在**角色**选项卡中，输入第二个成员的**电子邮件**，该电子邮件应与他们[注册 Bitwarden](organizations-quick-start.md#sign-up-for-bitwarden-again) 的电子邮件相匹配。然后，选择一个[成员角色](user-management/member-roles-and-permissions.md#member-roles)。
+2、在**角色**选项卡中，输入第二个成员的**电子邮件**，该电子邮件应与他们[注册 Bitwarden](organizations-quick-start.md#sign-up-for-bitwarden-again) 的电子邮件相匹配。然后，选择一个[成员角色](manage-members/member-roles-and-permissions.md#member-roles)。
 
-3、在**集合**选项卡中，选择允许该用户可以访问的集合，以及授予对每个集合的[权限](user-management/member-roles-and-permissions.md#permissions)级别。
+3、在**集合**选项卡中，选择允许该用户可以访问的集合，以及授予对每个集合的[权限](manage-members/member-roles-and-permissions.md#permissions)级别。
 
 4、选择**保存**将邀请发送到指定的电子邮件地址。
 

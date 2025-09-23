@@ -1,4 +1,4 @@
-# =来自 Bitwarden 服务器的电子邮件
+# 来自 Bitwarden 服务器的电子邮件
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/list-of-emails/)
@@ -17,10 +17,10 @@
 | 主题                     | 变量                        | 描述                                                                                                                  |
 | ---------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | 您的订阅即将续订               | n/a                       | 当组织订阅[即将到期](../../plans-and-pricing/organization-renewal.md)时，组织的计费电子邮箱会收到此电子邮件。                                    |
-| {Organization} 席位数量已增加 | {Organization} = 您组织的显示名称 | 当组织[席位数量自动扩展](../../organizations/user-management.md#user-seats)时，所有所有者会收到此电子邮件。                                    |
-| {Organization} 席位已达上限  | {Organization} = 您组织的显示名称 | 当组织成员数量达到他们的[席位限制](../../organizations/user-management.md#set-a-seat-limit)时，所有所有者会收到此电子邮件。                         |
+| {Organization} 席位数量已增加 | {Organization} = 您组织的显示名称 | 当组织[席位数量自动扩展](../../admin-console/manage-members/user-management.md#user-seats)时，所有所有者会收到此电子邮件。                     |
+| {Organization} 席位已达上限  | {Organization} = 您组织的显示名称 | 当组织成员数量达到他们的[席位限制](../../admin-console/manage-members/user-management.md#set-a-seat-limit)时，所有所有者会收到此电子邮件。          |
 | 域名未声明                  | n/a                       | 当组织[尝试声明新域名未成功](../../admin-console/login-with-sso/claimed-domains.md)时，所有所有者和管理员会收到此电子邮件。                          |
-| 需要采取行动：{User} 需要确认     | {User} = 用户的电子邮箱地址        | 当用户[等待确认加入组织](../../organizations/user-management.md#confirm)时，所有所有者和管理员会收到此电子邮件。                                   |
+| 需要采取行动：{User} 需要确认     | {User} = 用户的电子邮箱地址        | 当用户[等待确认加入组织](../../admin-console/manage-members/user-management.md#confirm)时，所有所有者和管理员会收到此电子邮件。                    |
 | 审核新设备的 SSO 登录请求        | n/a                       | 当用户等待[受信任设备被批准](../../admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)时，所有所有者和管理员会收到此电子邮件。 |
 | 请求删除您的组织               | n/a                       | <p>如果向 Bitwarden 支持团队请求删除其组织，其所有者会收到此电子邮件。</p><p>此电子邮件只会发送给已与 Bitwarden 支持团队确认可以启动组织删除的有效所有者。</p>                   |
 
@@ -28,13 +28,13 @@
 
 以下电子邮件用于提醒 Bitwarden 组织成员（所有角色）有关其账户的紧要的变更或操作项目：
 
-| 主题                                  | 变量                        | 描述                                                                                                                                                                             |
-| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 加入 {Organization}                   | {Organization} = 您组织的显示名称 | 当其被邀请加入组织时，用户会收到此电子邮件。                                                                                                                                                         |
-| 您已被从 {Organization} 中移除             | {Organization} = 您组织的显示名称 | 当其因违反[要求两步登录](../../organizations/enterprise-policies.md#require-two-step-login)或[单一组织](../../organizations/enterprise-policies.md#single-organization)策略而被撤销访问权限时，用户会收到此电子邮件。 |
-| 您的管理员已发起账户恢复                        | n/a                       | 当管理员[对其账户发起了账户恢复](../../organizations/admin-password-reset.md#recover-an-account)时，用户会收到此电子邮件。                                                                                 |
-| 登录请求已批准                             | n/a                       | 当其[受信任设备的登录请求被管理员批准](../../admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)时，用户会收到此电子邮件。                                                              |
-| 您的 Bitwarden 账户已被 {Organization} 声明 | {Organization} = 您组织的显示名称 | 当其[账户被他们所属的组织声明](../../admin-console/user-management/claimed-accounts.md)时，用户将收到此电子邮件。                                                                                         |
+| 主题                                  | 变量                        | 描述                                                                                                                                                                                                                     |
+| ----------------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 加入 {Organization}                   | {Organization} = 您组织的显示名称 | 当其被邀请加入组织时，用户会收到此电子邮件。                                                                                                                                                                                                 |
+| 您已被从 {Organization} 中移除             | {Organization} = 您组织的显示名称 | 当其因违反[要求两步登录](../../admin-console/manage-shared-items/enterprise-policies.md#require-two-step-login)或[单一组织](../../admin-console/manage-shared-items/enterprise-policies.md#single-organization)策略而被撤销访问权限时，用户会收到此电子邮件。 |
+| 您的管理员已发起账户恢复                        | n/a                       | 当管理员[对其账户发起了账户恢复](../../admin-console/manage-members/account-recovery.md#recover-an-account)时，用户会收到此电子邮件。                                                                                                              |
+| 登录请求已批准                             | n/a                       | 当其[受信任设备的登录请求被管理员批准](../../admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)时，用户会收到此电子邮件。                                                                                                      |
+| 您的 Bitwarden 账户已被 {Organization} 声明 | {Organization} = 您组织的显示名称 | 当其[账户被他们所属的组织声明](../../admin-console/manage-members/claimed-accounts.md)时，用户将收到此电子邮件。                                                                                                                                  |
 
 ### 紧要的 Secrets Manager 电子邮件 <a href="#critical-secrets-manager-emails" id="critical-secrets-manager-emails"></a>
 
@@ -49,14 +49,14 @@
 
 以下的电子邮件用于提醒 Bitwarden 组织成员（所有角色）有关其账户或组织的非紧要的变更或操作项目：
 
-| 主题                     | 变量                        | 描述                                                                                                                                     |
-| ---------------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| 您已被确认加入 {Organization} | {Organization} = 您组织的显示名称 | 当其组织访问权限被确认时，用户会收到此电子邮件。                                                                                                               |
-| 请求访问 Secrets Manager   | n/a                       | 当有用户请求访问 [Secrets Manager](../../secrets-manager/secrets-manager-overview.md) 时，管理员或所有者会收到此电子邮件。                                       |
-| 接受您的免费家庭订阅             | n/a                       | 当组织的成员被邀请[创建一个赞助的家庭组织](../../admin-console/more/organization-sponsored-families-plans.md)时，用户会收到此电子邮件。                                 |
-| 成功！已接受家庭订阅             | n/a                       | 当其已兑换[创建赞助的家庭组织](../../admin-console/more/organization-sponsored-families-plans.md)的邀请时，用户会收到此电子邮件。                                    |
-| 您的家庭赞助已被移除             | n/a                       | 当其已手动移除[家庭组织的赞助](../../admin-console/more/organization-sponsored-families-plans.md)时，用户会收到此电子邮件。                                       |
-| 移除免费 Bitwarden 家庭计划    | n/a                       | 当[家庭组织的赞助被管理员移除时（通常是通过激活了某个策略后被移除）](../../organizations/enterprise-policies.md#remove-free-bitwarden-families-sponsorship)，用户会收到此电子邮件。 |
+| 主题                     | 变量                        | 描述                                                                                                                                                         |
+| ---------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 您已被确认加入 {Organization} | {Organization} = 您组织的显示名称 | 当其组织访问权限被确认时，用户会收到此电子邮件。                                                                                                                                   |
+| 请求访问 Secrets Manager   | n/a                       | 当有用户请求访问 [Secrets Manager](../../secrets-manager/secrets-manager-overview.md) 时，管理员或所有者会收到此电子邮件。                                                           |
+| 接受您的免费家庭订阅             | n/a                       | 当组织的成员被邀请[创建一个赞助的家庭组织](../../admin-console/more/organization-sponsored-families-plans.md)时，用户会收到此电子邮件。                                                     |
+| 成功！已接受家庭订阅             | n/a                       | 当其已兑换[创建赞助的家庭组织](../../admin-console/more/organization-sponsored-families-plans.md)的邀请时，用户会收到此电子邮件。                                                        |
+| 您的家庭赞助已被移除             | n/a                       | 当其已手动移除[家庭组织的赞助](../../admin-console/more/organization-sponsored-families-plans.md)时，用户会收到此电子邮件。                                                           |
+| 移除免费 Bitwarden 家庭计划    | n/a                       | 当[家庭组织的赞助被管理员移除时（通常是通过激活了某个策略后被移除）](../../admin-console/manage-shared-items/enterprise-policies.md#remove-free-bitwarden-families-sponsorship)，用户会收到此电子邮件。 |
 
 ## 提供商 & 业务单位电子邮件 <a href="#provider-and-business-unit-emails" id="provider-and-business-unit-emails"></a>
 
