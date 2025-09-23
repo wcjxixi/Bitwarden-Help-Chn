@@ -43,4 +43,4 @@
 2. 输入您账户关联的**电子邮箱地址**
 3. 在您的电子邮箱收件箱中，打开邮件并确认您要删除此 Bitwarden 账户
 
-如果您删除了一个与高级订阅相关联的 Bitwarden 账户，请[联系我们](https://bitwarden.com/contact/)，我们将把您现有的订阅重新应用到您的新账户中。如果在删除之前已成功导出了密码库数据，则可以轻松地将其[导入到新的账户](../../import-export/import-data-to-your-vault.md)。
+如果您删除了一个与高级订阅相关联的 Bitwarden 账户，请[联系我们](https://bitwarden.com/contact/)，我们将把您现有的订阅重新应用到您的新账户中。如果在删除之前已成功导出了密码库数据，则可以轻松地将其[导入到新的账户](../../password-manager/import-and-export/import-data.md)。

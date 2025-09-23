@@ -41,7 +41,7 @@
 {% endtabs %}
 
 {% hint style="success" %}
-您可以从大多数密码管理器或网页浏览器将项目直接导入到您的密码库。[了解更多](../import-export/import-data-to-your-vault.md)。
+您可以从大多数密码管理器或网页浏览器将项目直接导入到您的密码库。[了解更多](../password-manager/import-and-export/import-data.md)。
 {% endhint %}
 
 ## 个人和组织密码库 <a href="#individual-and-organizational-vaults" id="individual-and-organizational-vaults"></a>
@@ -167,7 +167,7 @@
 分配到集合
 {% endembed %}
 
-了解更多关于[组织](../organizations/organizations.md)、[集合](../organizations/collections.md)和[共享](../organizations/sharing.md)的信息。
+了解更多关于[组织](../organizations/organizations.md)、[集合](../admin-console/organization-basics/about-collections.md)和[共享](../organizations/sharing.md)的信息。
 
 ### 保护个人项目 <a href="#protect-individual-items" id="protect-individual-items"></a>
 

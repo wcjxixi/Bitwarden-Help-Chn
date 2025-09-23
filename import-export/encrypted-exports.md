@@ -93,7 +93,7 @@ bw export my-master-password --organizationid 7063feab-4b10-472e-b64c-785e2b870b
 
 ## 导入加密导出 <a href="#import-an-encrypted-export" id="import-an-encrypted-export"></a>
 
-导入加密导出遵循[普通的导入过程](import-data-to-your-vault.md)。当提示**文件格式**时，请选择 `.json`：
+导入加密导出遵循[普通的导入过程](../password-manager/import-and-export/import-data.md)。当提示**文件格式**时，请选择 `.json`：
 
 {% hint style="success" %}
 没有专门针对加密导出的导入选项。处理程序将确定 `.json` 文件已加密，并尝试使用您的[账户加密密钥](../security/encryption/encryption-key-rotation.md)解密该文件。

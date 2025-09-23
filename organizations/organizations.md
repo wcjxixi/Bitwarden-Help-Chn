@@ -12,7 +12,7 @@
 免费组织管理控制台
 {% endembed %}
 
-组织的成员可以在他们的**密码库**视图中找到已共享的项目，其与个人项目列在一起，以及使用多种方法将项目列表筛选为组织项目或特定[集合](collections.md)中的项目：
+组织的成员可以在他们的**密码库**视图中找到已共享的项目，其与个人项目列在一起，以及使用多种方法将项目列表筛选为组织项目或特定[集合](../admin-console/organization-basics/about-collections.md)中的项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?_a=DAJCwlWIZAAB" %}
 组织密码库
@@ -22,7 +22,7 @@
 
 Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需求。关于每种组织类型的逐一功能细分，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 
-<table><thead><tr><th width="150">类型</th><th>描述</th></tr></thead><tbody><tr><td>免费组织</td><td>免费组织允许 2 个用户在最多 2 个<a href="collections.md">集合</a>中安全地共享。</td></tr><tr><td>家庭组织</td><td>家庭组织允许 6 个用户在无限的<a href="collections.md">集合</a>中安全地共享。</td></tr><tr><td>团队组织</td><td>团队组织允许无限的用户（按每用户每月计费）在无限的<a href="collections.md">集合</a>中安全地共享，并提供一套操作工具，如事件日志。</td></tr><tr><td>企业组织</td><td>企业组织允许无限的用户（按每用户每月计费）在无限的<a href="collections.md">集合</a>中安全地共享，并在 Bitwarden 的操作工具套件中添加了仅针对企业的功能，例如 <a href="../login-with-sso/about-login-with-sso.md">SSO 登录</a>和<a href="enterprise-policies.md">策略</a>。</td></tr></tbody></table>
+<table><thead><tr><th width="150">类型</th><th>描述</th></tr></thead><tbody><tr><td>免费组织</td><td>免费组织允许 2 个用户在最多 2 个<a href="../admin-console/organization-basics/about-collections.md">集合</a>中安全地共享。</td></tr><tr><td>家庭组织</td><td>家庭组织允许 6 个用户在无限的<a href="../admin-console/organization-basics/about-collections.md">集合</a>中安全地共享。</td></tr><tr><td>团队组织</td><td>团队组织允许无限的用户（按每用户每月计费）在无限的<a href="../admin-console/organization-basics/about-collections.md">集合</a>中安全地共享，并提供一套操作工具，如事件日志。</td></tr><tr><td>企业组织</td><td>企业组织允许无限的用户（按每用户每月计费）在无限的<a href="../admin-console/organization-basics/about-collections.md">集合</a>中安全地共享，并在 Bitwarden 的操作工具套件中添加了仅针对企业的功能，例如 <a href="../login-with-sso/about-login-with-sso.md">SSO 登录</a>和<a href="enterprise-policies.md">策略</a>。</td></tr></tbody></table>
 
 ### 组织与高级会员比较 <a href="#comparing-organizations-with-premium" id="comparing-organizations-with-premium"></a>
 
@@ -64,7 +64,7 @@ Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需�
 新的家庭、团队和企业组织内置了 7 天免费试用！在您的试用期结束之前，我们不会向您收费，您可以随时从组织的**设置**选项卡中取消订阅。
 {% endhint %}
 
-创建您的组织后，就可以创建[集合](collections.md)、[邀请用户](user-management.md)并[开始共享](sharing.md)。
+创建您的组织后，就可以创建[集合](../admin-console/organization-basics/about-collections.md)、[邀请用户](user-management.md)并[开始共享](sharing.md)。
 
 ## 集合和群组 <a href="#collections-and-groups" id="collections-and-groups"></a>
 
@@ -78,7 +78,7 @@ Bitwarden 集合和群组是一种组织工具，可以让您安全地共享数�
 * 责任领域（社交媒体、软件开发）
 * 功能（合规报告、客户外联）
 
-要开始使用集合，请参阅[此处](collections.md)。
+要开始使用集合，请参阅[此处](../admin-console/organization-basics/about-collections.md)。
 
 ### 群组 <a href="#groups" id="groups"></a>
 

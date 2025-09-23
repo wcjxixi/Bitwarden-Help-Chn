@@ -35,10 +35,10 @@
 上传[组织许可证](../licensing.md#organization-license)和[个人许可证](../licensing.md#individual-license)的位置是不同的。和之前的一样，只上传与你相关的那一个。
 {% endhint %}
 
-7、还是在自托管的网页密码库中，将数据导入您的[个人密码库](../../import-export/import-data-to-your-vault.md)或[组织密码库](../../import-export/import-data-to-an-organization.md)。
+7、还是在自托管的网页密码库中，将数据导入您的[个人密码库](../../password-manager/import-and-export/import-data.md)或[组织密码库](../../import-export/import-data-to-an-organization.md)。
 
 {% hint style="info" %}
-导入数据到组织将自动重新创建[集合](../../organizations/collections.md)，并将相关的密码库项目添加到其中。
+导入数据到组织将自动重新创建[集合](../../admin-console/organization-basics/about-collections.md)，并将相关的密码库项目添加到其中。
 {% endhint %}
 
 ### 下一步（仅针对组织）
@@ -69,10 +69,10 @@
 如果您要迁移组织，则您已经拥有了一个用于计费和许可目的的云端组织。为了最平稳地过渡，我们建议使用这个已经建立的组织，而不是[创建一个新的组织](../../organizations/organizations.md#create-an-organization)。
 {% endhint %}
 
-4、还是在云端网页密码库中，将数据导入您的[个人密码库](../../import-export/import-data-to-your-vault.md)或[组织密码库](../../import-export/import-data-to-an-organization.md)。
+4、还是在云端网页密码库中，将数据导入您的[个人密码库](../../password-manager/import-and-export/import-data.md)或[组织密码库](../../import-export/import-data-to-an-organization.md)。
 
 {% hint style="info" %}
-导入数据到组织将自动重新创建您的[集合](../../organizations/collections.md)，并将相关的密码库项目添加到其中。
+导入数据到组织将自动重新创建您的[集合](../../admin-console/organization-basics/about-collections.md)，并将相关的密码库项目添加到其中。
 {% endhint %}
 
 5、手动将[文件附件](../../your-vault/file-attachments.md)上传到您的个人或组织密码库。

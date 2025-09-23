@@ -12,7 +12,7 @@
 
 ### 问：我可以从 iCloud/Mac 钥匙串/Safari 导入 Bitwarden 吗？ <a href="#q-can-i-import-to-bitwarden-from-icloud-mac-keychain-safari" id="q-can-i-import-to-bitwarden-from-icloud-mac-keychain-safari"></a>
 
-**答：**&#x4ECE; Safari 15.0 开始，您可以从 Safari 导出密码到 `.csv` 文件。完成后，[调整您的 .csv](condition-a-bitwarden-.csv-or-.json.md) 以符合 Bitwarden 的格式然后[导入您的数据](import-data-to-your-vault.md)。
+**答：**&#x4ECE; Safari 15.0 开始，您可以从 Safari 导出密码到 `.csv` 文件。完成后，[调整您的 .csv](condition-a-bitwarden-.csv-or-.json.md) 以符合 Bitwarden 的格式然后[导入您的数据](../password-manager/import-and-export/import-data.md)。
 
 Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙串或 Safari 导出数据的方法。
 

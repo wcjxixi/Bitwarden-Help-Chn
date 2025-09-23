@@ -54,5 +54,5 @@
 现在，您已经创建好了您的试用版企业组织。我们建议您：
 
 * [添加用户到您的组织](../organizations/user-management.md)
-* [创建一个集合](../organizations/collections.md#create-a-collection)
+* [创建一个集合](../admin-console/organization-basics/about-collections.md#create-a-collection)
 * 设置 [SSO 登录](../login-with-sso/about-login-with-sso.md)

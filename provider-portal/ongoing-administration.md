@@ -41,7 +41,7 @@
 | ----------------- | ------------------------------------------- | -------------------------------------------------------------------------- |
 | 用户注册              | 帮助最终用户注册 Bitwarden 账户。                      | [注册](https://vault.bitwarden.com/#/register)                               |
 | 观看培训视频            | 传递我们过去进行的一些培训。                              | [Bitwarden 入门](https://bitwarden.com/getting-started)                      |
-| 帮助用户导入他们的数据       | 如果您的客户允许，请向用户提供将其个人数据导入 Bitwarden 的说明。      | [导入数据到密码库](../import-export/import-data-to-your-vault.md)                  |
+| 帮助用户导入他们的数据       | 如果您的客户允许，请向用户提供将其个人数据导入 Bitwarden 的说明。      | [导入数据到密码库](../password-manager/import-and-export/import-data.md)           |
 | 帮助设置两步登录          | 向用户提供说明以帮助简化两步登录的设置。                        | [两步登录方式](../account/two-step-login/setup-guides/two-step-login-methods.md) |
 | 演示 Bitwarden 应用程序 | 帮助用户了解 Bitwarden 移动应用程序、浏览器扩展程序以及其他应用程序的好处。 | [入门指南](../getting-started/)                                                |
 | 演示注册              | 鼓励高级用户通过参加每周演示来独立学习。                        | [Bitwarden 事件](https://www.crowdcast.io/bitwarden)                         |

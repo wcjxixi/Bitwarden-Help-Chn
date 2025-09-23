@@ -6,7 +6,7 @@
 
 ## 什么是群组？ <a href="#what-are-groups" id="what-are-groups"></a>
 
-群组用于将个人用户联系在一起，并提供一种可扩展的方式来分配权限，包括对[集合](collections.md)的访问和其他[访问控制](../admin-console/user-management/member-roles-and-permissions.md#access-control)。当[入职新用户](user-management.md)时，将他们添加到群组中，他们将自动继承该群组的配置权限。
+群组用于将个人用户联系在一起，并提供一种可扩展的方式来分配权限，包括对[集合](../admin-console/organization-basics/about-collections.md)的访问和其他[访问控制](../admin-console/user-management/member-roles-and-permissions.md#access-control)。当[入职新用户](user-management.md)时，将他们添加到群组中，他们将自动继承该群组的配置权限。
 
 {% hint style="info" %}
 群组适用于[团队和企业组织](organizations.md#types-of-organizations)。
@@ -14,7 +14,7 @@
 
 ### 使用群组 <a href="#using-groups" id="using-groups"></a>
 
-团队和企业组织可以基本用户群组而不是个人用户来指定对[集合](collections.md)的访问权限。群组-集合关联为共享资源提供了深层次的访问控制和可扩展性。一种常见的群组-集合方法是创建**按部门的群组**、**按功能的集合**，例如：
+团队和企业组织可以基本用户群组而不是个人用户来指定对[集合](../admin-console/organization-basics/about-collections.md)的访问权限。群组-集合关联为共享资源提供了深层次的访问控制和可扩展性。一种常见的群组-集合方法是创建**按部门的群组**、**按功能的集合**，例如：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1WzkMkukq1i1mueOQP81JC/e6ba38466c2612b64b15344040fea1dd/collections-graphic-2.png?fm=webp&h=304&q=50&w=449" %}
 群组-集合的使用
@@ -66,7 +66,7 @@
 
 ### 编辑集合分配 <a href="#edit-collections-assignments" id="edit-collections-assignments"></a>
 
-如果您要更改已分配给群组的[集合](collections.md)或[访问控制](../admin-console/user-management/member-roles-and-permissions.md#access-control)：
+如果您要更改已分配给群组的[集合](../admin-console/organization-basics/about-collections.md)或[访问控制](../admin-console/user-management/member-roles-and-permissions.md#access-control)：
 
 1. 在您的组织密码库中，打开**管理**选项卡并从左侧菜单中选择**群组**。
 2. 选择要编辑的群组。

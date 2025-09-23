@@ -16,7 +16,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 
 MSP 应该为每一个客户[创建一个组织](../organizations/organizations.md#create-an-organization)，或者客户可以为自己创建一个。你可以在好几种[组织类型](../organizations/organizations.md#types-of-organizations-1)中你选择一种最适合你的客户的需要的类型。对于最强大的业务功能集，我们推荐[企业计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)。
 
-在所有情况下，MSP 团队的成员应被[指定为所有者和管理者](../admin-console/user-management/member-roles-and-permissions.md)，以便他们能够管理该组织。管理员可以访问和管理组织中的所有项目、[集合](../organizations/collections.md)和用户。应在多个用户之间分担管理职责，尤其是在有大量用户的组织中。
+在所有情况下，MSP 团队的成员应被[指定为所有者和管理者](../admin-console/user-management/member-roles-and-permissions.md)，以便他们能够管理该组织。管理员可以访问和管理组织中的所有项目、[集合](../admin-console/organization-basics/about-collections.md)和用户。应在多个用户之间分担管理职责，尤其是在有大量用户的组织中。
 
 {% hint style="info" %}
 为了确保你的组织的安全，Bitwarden 对新成员的加入采用了 3 个步骤：[邀请](../organizations/user-management.md#invite) → [接受](../organizations/user-management.md#accept) → [确认](../organizations/user-management.md#confirm)。邀请发出后，应通知用户，如果需要，还可以帮助他们接受。
@@ -26,7 +26,7 @@ MSP 应该为每一个客户[创建一个组织](../organizations/organizations.
 
 ## 集合和群组 <a href="#collections-and-groups" id="collections-and-groups"></a>
 
-Bitwarden 组织被设计为以可扩展和安全的方式管理用户和数据。在个人基础上管理用户和数据是非常低效的，并且会导致意外的错误管理。为了解决这个问题，组织提供了[集合](../organizations/collections.md)和[群组](../organizations/groups.md)功能。
+Bitwarden 组织被设计为以可扩展和安全的方式管理用户和数据。在个人基础上管理用户和数据是非常低效的，并且会导致意外的错误管理。为了解决这个问题，组织提供了[集合](../admin-console/organization-basics/about-collections.md)和[群组](../organizations/groups.md)功能。
 
 ### 集合 <a href="#collections" id="collections"></a>
 
@@ -34,7 +34,7 @@ Bitwarden 组织被设计为以可扩展和安全的方式管理用户和数据�
 
 ![](https://bitwarden.com/help/images/organizations/collections-graphic-1.png)
 
-[学习如何创建集合](../organizations/collections.md#create-a-collection)
+[学习如何创建集合](../admin-console/organization-basics/about-collections.md#create-a-collection)
 
 ### 群组 <a href="#groups" id="groups"></a>
 

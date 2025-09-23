@@ -54,7 +54,7 @@
 客户组织密码库
 {% endembed %}
 
-客户组织的成员（如您客户的最终用户）可以在其**密码库**视图中找到共享项目和个人拥有的项目，还可以使用多种方法筛选项目列表，使其只显示组织项目或特定[集合](../organizations/collections.md)中的项目：
+客户组织的成员（如您客户的最终用户）可以在其**密码库**视图中找到共享项目和个人拥有的项目，还可以使用多种方法筛选项目列表，使其只显示组织项目或特定[集合](../admin-console/organization-basics/about-collections.md)中的项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?_a=DAJCwlWIZAAB" %}
 

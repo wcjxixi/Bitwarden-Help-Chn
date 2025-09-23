@@ -1,27 +1,38 @@
-# 导入数据到密码库
+# 导入数据到个人密码库 & 集合
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/import-data/)
 {% endhint %}
 
-将数据导入您的个人 Bitwarden 密码库，以便从任何密码管理解决方案轻松迁移。您也可以从一个 Bitwarden 密码库导入数据到另一个 Bitwarden 密码库，或者导入一个 Bitwarden [加密导出](encrypted-exports.md)。
+从不同的密码管理器、其他 Bitwarden 密码库或[加密导出](../../import-export/encrypted-exports.md)来导入登录和数据，即时传输信息，省去手动输入。您可以从任何允许导出的密码管理解决方案中导入数据。
 
-关于支持的导入格式的完整列表，请参阅 [Bitwarden 支持导入哪些文件格式？](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)，或者使用这些文章用于从最流行的解决方案导入：
+## 常见密码管理器和文件类型导入 <a href="#common-password-manager-and-file-type-imports" id="common-password-manager-and-file-type-imports"></a>
 
-* [从 LastPass 导入](../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)
-* [从 1Password 导入](../password-manager/import-and-export/import-guides/import-data-from-1password.md)
-* [从 Firefox 导入](../password-manager/import-and-export/import-guides/import-data-from-firefox.md)
-* [从 Google Chrome 或 Chromium 导入](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
-* [从 Microsoft Edge 导入](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
-* [从 Password Safe 导入](import-guides/import-data-from-password-safe.md)
+Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包括：
+
+* [从 LastPass 导入](import-guides/import-data-from-lastpass.md)
+* [从 1Password 导入](import-guides/import-data-from-1password.md)
+* [从 Firefox 导入](import-guides/import-data-from-firefox.md)
+* [从 Google Chrome、Edge 或 Chromium 导入](import-guides/import-data-from-google-chrome.md)
+* [从 Password Safe 导入](../../import-export/import-guides/import-data-from-password-safe.md)
+* [从其他 Bitwarden 密码库导入](../../import-export/export-vault-data.md)
+
+其他密码管理器的其他文件类型与 Bitwarden 兼容。如果您的解决方案未在列表中，但可以导出数据，请编辑文件以匹配支持的格式。
+
+{% hint style="success" %}
+将数据导入一个组织，以便大型团队共享。对于较小的团队，可导入到集合中。
+{% endhint %}
 
 {% hint style="info" %}
-如果您需要导入到您的组织而不是您的个人密码库，请[参阅本文](import-data-to-an-organization.md)。
+虽然某些项目类型无法导入，但您仍可将其添加到另一个密码库：
+
+* 将文件附件单独上传到新的密码库。
+* 在新的密码库中重新创建 Send。
 {% endhint %}
 
 ## 导入到您的个人密码库 <a href="#import-to-your-personal-vault" id="import-to-your-personal-vault"></a>
 
-数据可以从网页密码库、CLI、桌面 App 或浏览器扩展导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../security/encryption/encryption-protocols.md)。要导入您的数据：
+数据可以从网页密码库、CLI、桌面 App 或浏览器扩展导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../../security/encryption/encryption-protocols.md)。要导入您的数据：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -39,7 +50,7 @@
 
 * **密码库**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
 * **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
-* [**文件格式**](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
+* [**文件格式**](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 4、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
@@ -51,7 +62,7 @@
 
 6、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 
-[文件附件](../your-vault/file-attachments.md)、[Send](../bitwarden-send/about-send.md)、回收站以及密码历史记录等附加项目需要手动上传到您的密码库。
+[文件附件](../../your-vault/file-attachments.md)、[Send](../../bitwarden-send/about-send.md)、回收站以及密码历史记录等附加项目需要手动上传到您的密码库。
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -63,7 +74,7 @@
 
 * **密码库**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
 * **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
-* [**文件格式**](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
+* [**文件格式**](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 3、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
@@ -85,7 +96,7 @@
 
 * **密码库**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
 * **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
-* [**文件格式**](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
+* [**文件格式**](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择导入文件的格式。
 
 3、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
@@ -158,7 +169,7 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 如果您是用户，而不是管理员或所有者，则向组织导入数据要求所有要导入的凭据至少有一个与之关联的集合。要解决此错误，您可以：
 
 * 在导入数据之前，从导入界面上的**集合**下拉菜单中选择一个您具有**可以管理**访问权限的现有集合。这样做会将项目添加到该集合中。
-* 为导入文件中未分配的项目指定一个新的集合名称。这样做将自动创建该集合并将项目添加到其中。有关调整导入文件的帮助，请[参阅本文](condition-a-bitwarden-.csv-or-.json.md)。
+* 为导入文件中未分配的项目指定一个新的集合名称。这样做将自动创建该集合并将项目添加到其中。有关调整导入文件的帮助，请[参阅本文](../../import-export/condition-a-bitwarden-.csv-or-.json.md)。
 
 {% hint style="info" %}
 只有当您的组织关闭了**限制为所有者和管理员可以创建和删除集合**选项时，才会出现此错误，因为关闭这个选项将允许用户创建和导入自己的集合。

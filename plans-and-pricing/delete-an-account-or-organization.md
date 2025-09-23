@@ -27,7 +27,7 @@
 如果您删除账户后要创建一个新的账户，请执行后续步骤：
 
 * 如果您删除了与高级订阅相关联的 Bitwarden 账户，请[联系我们](https://bitwarden.com/contact/)，我们会将您现有的订阅重新应用到新的账户中。
-* 如果您能够在删除前成功导出密码库数据，则可以轻松地将其[导入新的账户](../import-export/import-data-to-your-vault.md)。
+* 如果您能够在删除前成功导出密码库数据，则可以轻松地将其[导入新的账户](../password-manager/import-and-export/import-data.md)。
 {% endtab %}
 
 {% tab title="网页 App" %}

@@ -67,5 +67,5 @@ Bitwarden 导入器会将信息导入您的个人密码库。导入信息后，�
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-* 有关手动导入数据的信息，请参阅[导入数据您的密码库](../../import-export/import-data-to-your-vault.md)或[导入数据到组织](../../import-export/import-data-to-an-organization.md)。
+* 有关手动导入数据的信息，请参阅[导入数据您的密码库](import-data.md)或[导入数据到组织](../../import-export/import-data-to-an-organization.md)。
 * 有关管理组织的信息，请参阅[组织](../../organizations/organizations.md)。

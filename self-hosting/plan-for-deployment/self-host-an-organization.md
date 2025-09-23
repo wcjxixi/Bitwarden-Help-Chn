@@ -80,7 +80,7 @@ Bitwarden 组织使用的某些功能未通过上述文章中记录的标准安�
 
 ### 建立群组和集合 <a href="#build-groups-and-collections" id="build-groups-and-collections"></a>
 
-您的密码库中有了项目后，就可以设置集合和群组以确&#x4FDD;_&#x5408;&#x9002;_&#x7684;用户可以访&#x95EE;_&#x5408;&#x9002;_&#x7684;凭据。每个组织都是不同的，但这里有一些提示可以帮助您开始使用[集合入门](../../organizations/collections.md#using-collections)和[群组入门](../../organizations/groups.md#using-groups)。
+您的密码库中有了项目后，就可以设置集合和群组以确&#x4FDD;_&#x5408;&#x9002;_&#x7684;用户可以访&#x95EE;_&#x5408;&#x9002;_&#x7684;凭据。每个组织都是不同的，但这里有一些提示可以帮助您开始使用[集合入门](../../admin-console/organization-basics/about-collections.md#using-collections)和[群组入门](../../organizations/groups.md#using-groups)。
 
 ### 邀请您的团队 <a href="#invite-your-team" id="invite-your-team"></a>
 

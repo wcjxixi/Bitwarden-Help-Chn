@@ -73,7 +73,7 @@
 客户组织密码库
 {% endembed %}
 
-客户组织的成员（即您客户的最终用户）将在他们的**密码库**视图中找到已共享的项目以及个人拥有的项目，还可以使用多种方法过滤项目列表，使其只显示组织项目或特定[集合](../organizations/collections.md)中的项目：
+客户组织的成员（即您客户的最终用户）将在他们的**密码库**视图中找到已共享的项目以及个人拥有的项目，还可以使用多种方法过滤项目列表，使其只显示组织项目或特定[集合](../admin-console/organization-basics/about-collections.md)中的项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?_a=DAJCwlWIZAAB" %}
 
@@ -111,7 +111,7 @@
 
 使用您新创建的客户组织，开始为您的客户构建完美的解决方案。根据客户的需求，每个客户组织的确切设置会有所不同，但通常涉及：
 
-1、**创建集合**。一个好的第一步是[创建一组集合](../organizations/collections.md#create-a-collection)，它为您在下一步中添加到密码库的项目提供组织结构。
+1、**创建集合**。一个好的第一步是[创建一组集合](../admin-console/organization-basics/about-collections.md#create-a-collection)，它为您在下一步中添加到密码库的项目提供组织结构。
 
 常见的集合模式包括**按部门的集合**（即客户营销团队中的用户被分配到**营销**集合）或**按功能的集合**（即来自客户营销团队的用户被分配到**社交媒体**集合）：
 

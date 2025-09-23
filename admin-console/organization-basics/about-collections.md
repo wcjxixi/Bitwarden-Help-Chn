@@ -1,12 +1,12 @@
-# 集合
+# 关于集合
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/about-collections/)
 {% endhint %}
 
-集合汇集了从组织内[安全共享](sharing.md)的登录、笔记、支付卡和身份信息。集合可以由任何组织类型创建和管理。集合是[文件夹](../your-vault/folders.md)的组织等效物，但有几个关键的区别：
+集合汇集了从组织内[安全共享](../../organizations/sharing.md)的登录、笔记、支付卡和身份信息。集合可以由任何组织类型创建和管理。集合是[文件夹](../../your-vault/folders.md)的组织等效物，但有几个关键的区别：
 
-* 组织可以定义对集合的访问权限，允许用户或[群组](groups.md)仅能访问他们所需的项目。
+* 组织可以定义对集合的访问权限，允许用户或[群组](../../organizations/groups.md)仅能访问他们所需的项目。
 * 存储在组织集合中的项目不属于任何个人用户，而是属于组织。
 * 组织所拥有的项目**必须**至少被包括在一个集合中。
 
@@ -22,7 +22,7 @@
 与许多组织管理任务一样，创建集合**只能从网页 App 完成**。
 {% endhint %}
 
-具有集合管理[权限](../admin-console/user-management/member-roles-and-permissions.md#permissions)的组织用户可以创建集合。要创建集合：
+具有集合管理[权限](../user-management/member-roles-and-permissions.md#permissions)的组织用户可以创建集合。要创建集合：
 
 1、登录到 Bitwarden 网页密码库，选择 ✚**新增**按钮，然后从下拉菜单选择**集合**：
 
@@ -30,13 +30,13 @@
 创建新的集合
 {% endembed %}
 
-2、在**新增集合**选项卡中，为您的集合指定一个**名称**，选择它应属于的**组织**，也可以选择一个集合来[嵌套该集合](collections.md#nested-collections)。
+2、在**新增集合**选项卡中，为您的集合指定一个**名称**，选择它应属于的**组织**，也可以选择一个集合来[嵌套该集合](about-collections.md#nested-collections)。
 
 {% hint style="success" %}
-仅当您使用目录连接器时，**外部 ID** 字段才相关。并且当已配置为使用 [SCIM](../scim/about-scim.md)、目录连接器或 API 时，该字段将在对话框中显示。
+仅当您使用目录连接器时，**外部 ID** 字段才相关。并且当已配置为使用 [SCIM](../../scim/about-scim.md)、目录连接器或 API 时，该字段将在对话框中显示。
 {% endhint %}
 
-3、在**访问权限**选项卡中，为现有的成员或[群组](groups.md)分配访问权限。对于每个选择，分配适当的[权限](../admin-console/user-management/member-roles-and-permissions.md#permissions)级别。作为集合的创建者，您将拥有「可以管理」的权限。
+3、在**访问权限**选项卡中，为现有的成员或[群组](../../organizations/groups.md)分配访问权限。对于每个选择，分配适当的[权限](../user-management/member-roles-and-permissions.md#permissions)级别。作为集合的创建者，您将拥有「可以管理」的权限。
 
 4、选择**保存**以完成集合的创建。
 
@@ -52,10 +52,10 @@
 
 嵌套集合**仅用于显示目的**。嵌套的集合不会从他们的「父集合」中继承项目、访问或权限。
 
-要创建嵌套的集合，遵循[上面的步骤](collections.md#create-a-collection)，然后从**嵌套在集合下**下拉列表中选择一个父集合。
+要创建嵌套的集合，遵循[上面的步骤](about-collections.md#create-a-collection)，然后从**嵌套在集合下**下拉列表中选择一个父集合。
 
 {% hint style="info" %}
-在「父」集合中进行搜索不会将嵌套在其中的集合中的项目包含在潜在的搜索结果当中。有关详细信息，请参阅[检索您的密码库](../your-vault/search-your-vault.md)。
+在「父」集合中进行搜索不会将嵌套在其中的集合中的项目包含在潜在的搜索结果当中。有关详细信息，请参阅[检索您的密码库](../../your-vault/search-your-vault.md)。
 {% endhint %}
 
 ## 管理集合 <a href="#manage-a-collection" id="manage-a-collection"></a>
@@ -78,7 +78,7 @@
 
 ### 在集合间移动项目 <a href="#move-an-item-between-collections" id="move-an-item-between-collections"></a>
 
-有权访问组织内多个集合的用户可以将密码库项目从一个集合移动到另一个集合，或将密码库项目添加到多个集合。与[创建集合](collections.md#create-a-collection)不同，这可以在任何 Bitwarden App 中完成：
+有权访问组织内多个集合的用户可以将密码库项目从一个集合移动到另一个集合，或将密码库项目添加到多个集合。与[创建集合](about-collections.md#create-a-collection)不同，这可以在任何 Bitwarden App 中完成：
 
 {% tabs %}
 {% tab title="网页密码库" %}
@@ -117,7 +117,7 @@
 {% endtab %}
 
 {% tab title="CLI" %}
-要从 CLI 更改项目的集合，请使用 `edit` 命令。[了解更多](../password-manager/developer-tools/password-manager-cli.md#edit)。
+要从 CLI 更改项目的集合，请使用 `edit` 命令。[了解更多](../../password-manager/developer-tools/password-manager-cli.md#edit)。
 {% endtab %}
 {% endtabs %}
 
@@ -144,7 +144,7 @@
 
 ### 对非管理集合添加访问权限 <a href="#add-access-to-un-managed-collections" id="add-access-to-un-managed-collections"></a>
 
-如果**所有者和管理员可以管理所有集合和项目**选项关闭（[了解更多](../admin-console/organization-basics/collection-management.md#collection-management-settings)），则在集合视图中，没有为其分配具有「[可以管理](../admin-console/user-management/member-roles-and-permissions.md)」权限的成员的任何集合都将显示一个**添加访问权限**徽章：
+如果**所有者和管理员可以管理所有集合和项目**选项关闭（[了解更多](collection-management.md#collection-management-settings)），则在集合视图中，没有为其分配具有「[可以管理](../user-management/member-roles-and-permissions.md)」权限的成员的任何集合都将显示一个**添加访问权限**徽章：
 
 {% embed url="https://bitwarden.com/assets/1Nqn29nNIkKtb5HfWkfcWK/64c3875f60d3d292837d0655ad3b146c/2024-12-05_09-56-43.png?w=1031&fm=avif&q=80" %}
 对非管理集合添加访问权限
@@ -154,10 +154,10 @@
 
 ## 集合设置 <a href="#collections-settings" id="collections-settings"></a>
 
-组织的所有者可以在**设置** → **组织信息**界面上配置集合行为，以适应组织需求。[了解更多](../admin-console/organization-basics/collection-management.md)。
+组织的所有者可以在**设置** → **组织信息**界面上配置集合行为，以适应组织需求。[了解更多](collection-management.md)。
 
 {% hint style="info" %}
-企业组织可使用[成员访问权限报告](../your-vault/vault-health-reports.md#member-access)查看单个组织成员对集合、群组、项目的访问权限，以及相关权限的概览。
+企业组织可使用[成员访问权限报告](../../your-vault/vault-health-reports.md#member-access)查看单个组织成员对集合、群组、项目的访问权限，以及相关权限的概览。
 {% endhint %}
 
 ## 集合权限 <a href="#collections-permissions" id="collections-permissions"></a>
@@ -169,7 +169,7 @@
 {% endembed %}
 
 {% hint style="info" %}
-企业组织可使用[成员访问权限报告](../your-vault/vault-health-reports.md#member-access)查看单个组织成员对集合、群组、项目的访问权限，以及相关权限的概览。
+企业组织可使用[成员访问权限报告](../../your-vault/vault-health-reports.md#member-access)查看单个组织成员对集合、群组、项目的访问权限，以及相关权限的概览。
 {% endhint %}
 
 | 权限        | 描述                                                                                                                              |

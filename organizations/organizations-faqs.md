@@ -9,7 +9,7 @@
 有关**组织**的更多高级信息，请参阅以下文章：
 
 * [关于组织](organizations.md)
-* [关于集合](collections.md)
+* [关于集合](../admin-console/organization-basics/about-collections.md)
 * [关于群组](groups.md)
 
 ## 组织通用 <a href="#organizations-general" id="organizations-general"></a>

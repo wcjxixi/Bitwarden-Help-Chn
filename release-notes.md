@@ -23,6 +23,20 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.9.0
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.9.0、浏览器扩展 2025.9.0、移动 2025.9.0、桌面 2025.9.0、CLI 2025.9.0）
+
+### Password Manager
+
+* **使用浏览器扩展批准设备**：使用浏览器扩展审批新的[受信任设备](account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)和[设备登录](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)请求。
+* **CXP for iOS 26**：iOS 26 的用户现在可以直接导入或导出 Bitwarden 和任何其他支持 [Fido 凭证交换协议](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)的 iOS App。了解更多有关导入和[导出](import-export/export-vault-data.md)的信息。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **集合设置更新**：某些集合管理设置已重新命名，现在打开或关闭时将记录更详细的事件。[了解更多](admin-console/organization-basics/collection-management.md)。
+* **组织 SSH 密钥**：使用 Bitwarden SSH 代理创建的 SSH 密钥现在可以在组织集合中存储和共享。[了解更多](password-manager/developer-tools/ssh-agent.md)有关 Bitwarden SSH 代理的信息。
+
 ## 2025.8.1
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.8.2、移动 2025.8.1）
@@ -173,7 +187,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **组织赞助的家庭计划**：组织可以直接为员工个人电子邮箱账户（包括非当前组织成员的员工）发放赞助版家庭计划。[了解更多](admin-console/more/organization-sponsored-families-plans.md)有关赞助版家庭计划的信息。
-* **集合权限调整**：「可以编辑」和「可以编辑，隐藏密码」权限现默认允许用户删除集合项目，除非启用了新增的「限制为具有「管理集合」权限的成员可以删项目」选项。[了解更多](organizations/collections.md#collections-permissions)有关集合权限的信息。
+* **集合权限调整**：「可以编辑」和「可以编辑，隐藏密码」权限现默认允许用户删除集合项目，除非启用了新增的「限制为具有「管理集合」权限的成员可以删项目」选项。[了解更多](admin-console/organization-basics/about-collections.md#collections-permissions)有关集合权限的信息。
 * **新的集合管理设置**：为了增加权限定制，添加了一个新的集合管理设置：「限制为具有「管理集合」权限的成员可以删项目」选项。[了解更多](admin-console/organization-basics/collection-management.md)有关集合管理设置的信息。
 
 ## 2025.5.0
@@ -184,7 +198,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 * **增强的 PIN 要求**：在浏览器扩展中，用于解锁的 PIN 现在必须至少为 4 个字符。这将在未来的版本中逐步更新到其他客户端。
 * **从网页和浏览器导出附件**：在网页 App 和浏览器扩展中，现在可以创建包含文件附件的 `.zip` 导出。这将在未来的版本中逐步添加到其他客户端。[了解更多](your-vault/file-attachments.md)。
-* **搜索结果中的嵌套集合**：嵌套集合现在包含在搜索结果中，使查找相关项目变得更容易。[了解更多](organizations/collections.md)有关集合的信息。
+* **搜索结果中的嵌套集合**：嵌套集合现在包含在搜索结果中，使查找相关项目变得更容易。[了解更多](admin-console/organization-basics/about-collections.md)有关集合的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -213,7 +227,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Password Manager
 
-* **Edge 导出 (csv)**：Edge (csv) 导出已添加到可导入 Bitwarden Password Manager 的格式列表中。[了解更多](import-export/import-data-to-your-vault.md)。
+* **Edge 导出 (csv)**：Edge (csv) 导出已添加到可导入 Bitwarden Password Manager 的格式列表中。[了解更多](password-manager/import-and-export/import-data.md)。
 
 ## 2025.3.3
 
@@ -296,7 +310,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Password Manager
 
-* **提高了导入项目的限制**：提高了 Password Manager 导入项目的数量限制。[了解更多](import-export/import-data-to-your-vault.md)。
+* **提高了导入项目的限制**：提高了 Password Manager 导入项目的数量限制。[了解更多](password-manager/import-and-export/import-data.md)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -664,7 +678,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ## 2024.3.1
 
 {% hint style="success" %}
-[最近迁移到新的权限结构](admin-console/organization-basics/collection-management.md#collection-management-settings)，为您的组织带来了更大的集合管理灵活性，未分配给[集合](organizations/collections.md)的密码库项目现在不再显示在您的 Password Manager 的**所有密码库**视图中了。[了解如何访问这些项目](miscellaneous/unassigned-vault-items-moved-to-admin-console.md)。
+[最近迁移到新的权限结构](admin-console/organization-basics/collection-management.md#collection-management-settings)，为您的组织带来了更大的集合管理灵活性，未分配给[集合](admin-console/organization-basics/about-collections.md)的密码库项目现在不再显示在您的 Password Manager 的**所有密码库**视图中了。[了解如何访问这些项目](miscellaneous/unassigned-vault-items-moved-to-admin-console.md)。
 {% endhint %}
 
 此次发布包含：
@@ -676,7 +690,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **批量将项目分配到集合**：从管理控制台可以将组织项目批量分配到集合。[了解更多](organizations/collections.md#collections-ji-he-storing-passkeys-cun-chu-mi-ma-vault-administration-import-export-autofill-bitward)。
+* **批量将项目分配到集合**：从管理控制台可以将组织项目批量分配到集合。[了解更多](admin-console/organization-basics/about-collections.md#collections-ji-he-storing-passkeys-cun-chu-mi-ma-vault-administration-import-export-autofill-bitward)。
 
 ## 2024.3.0
 
@@ -719,7 +733,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### Password Manager
 
 * **浏览器扩展的 TOTP 捕获**：使用 Bitwarden 浏览器扩展扫描网页并保存 TOTP 验证器二维码（参阅[这里](your-vault/totp.md#scan-a-qr-code)）。
-* **增加导入项目数量上限**：Bitwarden Password Manager 的导入相对之前，现在可以包含大约两倍的数据量（参阅[这里](import-export/import-data-to-your-vault.md)）。
+* **增加导入项目数量上限**：Bitwarden Password Manager 的导入相对之前，现在可以包含大约两倍的数据量（参阅[这里](password-manager/import-and-export/import-data.md)）。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -793,7 +807,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 * **保存通行密钥到您的密码库**：现在可以将通行密钥存储在您的 Bitwarden 密码库中了！使用 Bitwarden 浏览器扩展存储并使用通行密钥登录（参阅[这里](password-manager/autofill/more-autofill-options/autofill-passkeys.md)）。
 * **LastPass 直接导入器**：使用浏览器扩展或桌面 App 将数据从 LastPass 直接导入到 Bitwarden（参阅[这里](password-manager/import-and-export/import-guides/import-data-from-lastpass.md#import-to-bitwarden)）。
-* **从浏览器扩展和桌面 App 导入**：现在可以从浏览器扩展和桌面 App 将数据导入到 Bitwarden，包括如果您是使用 LastPass SSO 的团队成员（参阅[这里](import-export/import-data-to-your-vault.md)）。
+* **从浏览器扩展和桌面 App 导入**：现在可以从浏览器扩展和桌面 App 将数据导入到 Bitwarden，包括如果您是使用 LastPass SSO 的团队成员（参阅[这里](password-manager/import-and-export/import-data.md)）。
 * **移动端设置重组**：移动 App 上的「设置」选项卡已重新组织为更直观的类别。
 * **支持自托管别名提供程序**：Password Manager 客户端上的用户名生成器现在可以连接到自托管 Addy.io 和 SimpleLogin 实例（参阅[这里](password-manager/vault-basics/generator.md#simplelogin)）。
 * **通过上下文菜单自动填充支付卡和身份**：现在可以使用浏览器扩展的上下文菜单自动填充支付卡和身份（参阅[这里](password-manager/autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-the-context-menu)）。
@@ -1208,7 +1222,7 @@ Bitwarden 自豪地宣布我们发布了 Bitwarden Send，一个用于短暂共�
 * **Bitwarden Send**：Bitwarden Send 是一个用于短暂共享的端到端加密解决方案。在我们的网站和帮助中心有很多关于 Send 的资料，但您可以从[这里](bitwarden-send/about-send.md)开始。
 * **FIDO U2F 支持 Edge**：FIDO U2F 方式的两步登录现在可以用于微软 Edge 中的网页密码库和浏览器扩展（参阅[这里](account/two-step-login/setup-guides/two-step-login-via-fido.md)）。
 * **浏览器扩展中的域名排除**：Bitwarden 浏览器扩展现在可以对其明确不提供记住密码的域名进行配置（参阅[这里](password-manager/autofill/more-autofill-options/exclude-domains.md)）。
-* **改进的导入错误消息**：最近有很多人迁移到 Bitwarden，所以我们清理了一个导入错误的消息，以帮助您更快地解决问题（参阅[这里](import-export/import-data-to-your-vault.md#length-related-import-errors)）。
+* **改进的导入错误消息**：最近有很多人迁移到 Bitwarden，所以我们清理了一个导入错误的消息，以帮助您更快地解决问题（参阅[这里](password-manager/import-and-export/import-data.md#length-related-import-errors)）。
 * **Safari 网页扩展移植**：我们的 Safari App 扩展已经正式移植到 Safari 14 以上版本的网页扩展中使用。由于 Safari 的变化，网页扩展的使用现在仅限于那些通过 Mac App Store 下载获取的 App（参阅[这里](miscellaneous/safari-web-extension.md)）。
 
 ## 2021-01-19 发行后的更新 <a href="#id-2021-01-19-post-release-update" id="id-2021-01-19-post-release-update"></a>

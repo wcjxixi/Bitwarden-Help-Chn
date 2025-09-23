@@ -146,7 +146,7 @@ Bitwarden 使团队和组织能够以一种可扩展的方式轻松、安全地�
 迁移导入示例
 {% endembed %}
 
-集合既可以与群组共享，也可以与单个用户共享。限制可访问集合的个人用户数量将提高管理员的管理效率。[ 此处了解更多](../organizations/collections.md)。
+集合既可以与群组共享，也可以与单个用户共享。限制可访问集合的个人用户数量将提高管理员的管理效率。[ 此处了解更多](../admin-console/organization-basics/about-collections.md)。
 
 ### 群组 <a href="#groups" id="groups"></a>
 

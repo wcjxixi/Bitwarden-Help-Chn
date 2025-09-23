@@ -48,7 +48,7 @@ X.com 登录 URI
 6、很好！选择 **💾保存**以完成。
 
 {% hint style="success" %}
-您还可以从桌面 App 直接将数据导入到 Bitwarden。[了解如何操作](../import-export/import-data-to-your-vault.md#zhuo-mian-duan-cheng-xu)。
+您还可以从桌面 App 直接将数据导入到 Bitwarden。[了解如何操作](../password-manager/import-and-export/import-data.md#zhuo-mian-duan-cheng-xu)。
 {% endhint %}
 
 ### 生成强密码 <a href="#generate-a-strong-password" id="generate-a-strong-password"></a>

@@ -443,7 +443,7 @@ bw receive --password passwordforaccess https://vault.bitwarden.com/#/send/yawoi
 
 ### 组织 ID <a href="#organization-ids" id="organization-ids"></a>
 
-从 CLI 访问组织经常需要知道组织的 ID 以及单个[成员](../../organizations/user-management.md)的 ID 和[集合](../../organizations/collections.md)的 ID。
+从 CLI 访问组织经常需要知道组织的 ID 以及单个[成员](../../organizations/user-management.md)的 ID 和[集合](../../admin-console/organization-basics/about-collections.md)的 ID。
 
 使用 `bw list` 命令从 CLI 直接检索这些信息，例如：
 
@@ -603,7 +603,7 @@ bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.login.password="newp@ssw
 
 ### import
 
-`import` 命令用于从之前的 Bitwarden 导出或[其他受支持的密码管理应用程序](../../import-export/import-data-to-your-vault.md)中导入数据。该命令必须指向一个**文件**并包含如下参数：
+`import` 命令用于从之前的 Bitwarden 导出或[其他受支持的密码管理应用程序](../import-and-export/import-data.md)中导入数据。该命令必须指向一个**文件**并包含如下参数：
 
 ```batch
 bw import <format> <path>

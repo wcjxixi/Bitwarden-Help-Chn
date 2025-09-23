@@ -10,7 +10,7 @@ Bitwarden Password Manager 使企业和个人能够在面临不断上升的网�
 
 对于个人和最终用户，Bitwarden Password Manager 提供了一些最受欢迎的功能：
 
-* **轻松导入**：从几乎任何密码管理解决方案中[导入](../import-export/import-data-to-your-vault.md)您的凭据。
+* **轻松导入**：从几乎任何密码管理解决方案中[导入](import-and-export/import-data.md)您的凭据。
 * **健全的自动填充**：使用密码管理器从[浏览器扩展](autofill/autofill-from/autofill-from-browser-extensions.md)和[移动 App](autofill/autofill-from/autofill-from-ios.md) 更轻松地登录网站。
 * **凭据生成器**：在注册新网站时，使用[用户名和密码生成器](vault-basics/generator.md)自信地创建安全凭据。
 * **集成身份验证**：直接从 Bitwarden Password Manager [生成并自动填写 2FA 的 TOTP 代码](../your-vault/totp.md)。

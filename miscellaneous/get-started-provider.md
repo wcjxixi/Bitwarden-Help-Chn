@@ -43,7 +43,7 @@
 
 ## 入职客户 <a href="#onboard-clients" id="onboard-clients"></a>
 
-作为一名提供商成员管理员，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../organizations/collections.md)和[群组](../organizations/groups.md)结构、[导入数据](../import-export/import-data-to-an-organization.md)以及设置[策略](../organizations/enterprise-policies.md)和 [SSO](../login-with-sso/about-login-with-sso.md)。
+作为一名提供商成员管理员，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../admin-console/organization-basics/about-collections.md)和[群组](../organizations/groups.md)结构、[导入数据](../import-export/import-data-to-an-organization.md)以及设置[策略](../organizations/enterprise-policies.md)和 [SSO](../login-with-sso/about-login-with-sso.md)。
 
 了解[如何创建新的客户组织](../provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../provider-portal/start-a-client-organization.md#initial-setup-procedure)。
 
@@ -78,7 +78,7 @@
 
 ## 入职客户 <a href="#onboard-clients" id="onboard-clients"></a>
 
-作为一名提供商管理员​​，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../organizations/collections.md)和[群组](../organizations/groups.md)结构、[导入数据](../import-export/import-data-to-an-organization.md)以及设置[策略](../organizations/enterprise-policies.md)和 [SSO](../login-with-sso/about-login-with-sso.md)。
+作为一名提供商管理员​​，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../admin-console/organization-basics/about-collections.md)和[群组](../organizations/groups.md)结构、[导入数据](../import-export/import-data-to-an-organization.md)以及设置[策略](../organizations/enterprise-policies.md)和 [SSO](../login-with-sso/about-login-with-sso.md)。
 
 了解[如何创建新的客户组织](../provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../provider-portal/start-a-client-organization.md#initial-setup-procedure)。
 

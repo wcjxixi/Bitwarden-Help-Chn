@@ -120,7 +120,7 @@ Bitwarden 使团队和组织能够以一种可扩展的方式轻松、安全地�
 
 LastPass 的共享文件夹可以通过使用[这里](https://bitwarden.com/help/files/bitwarden_export_org.csv)的组织导入模板并将共享文件夹的名称放在 `collections` 列中，从而将 LastPass 中的共享文件夹作为集合导入到 Bitwarden 中。
 
-集合既可以与群组共享，也可以与单个用户共享。限制可访问集合的个人用户数量将提高管理员的管理效率。[ 此处了解更多](../../organizations/collections.md)。
+集合既可以与群组共享，也可以与单个用户共享。限制可访问集合的个人用户数量将提高管理员的管理效率。[ 此处了解更多](../organization-basics/about-collections.md)。
 
 {% hint style="info" %}
 嵌套集合不会继承顶层集合的权限。请参阅[使用群组](../../organizations/groups.md#using-groups)指定权限。

@@ -211,7 +211,7 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 免费组织最大集合错误
 {% endembed %}
 
-当 Lastpass 导出包含 3 个或更多 `grouping` 值时，就会发生该错误。`grouping` 字段中的值被 Bitwarden 解释为[集合](../../../organizations/collections.md)，但[免费组织](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md)限制为仅两个集合。例如，下面的 `.csv` 将导致该错误：
+当 Lastpass 导出包含 3 个或更多 `grouping` 值时，就会发生该错误。`grouping` 字段中的值被 Bitwarden 解释为[集合](../../../admin-console/organization-basics/about-collections.md)，但[免费组织](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md)限制为仅两个集合。例如，下面的 `.csv` 将导致该错误：
 
 ```
 url,username,password,totp,extra,name,grouping,fav
