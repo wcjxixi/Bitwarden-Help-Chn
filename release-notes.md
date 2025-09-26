@@ -23,6 +23,10 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## Secrets Manager Kubernetes Operator 1.0.0
+
+* **更新默认的映射机密行为**：Kubernetes Operator 的新默认行为只会同步映射到 `BitwardenSecret` 对象中的机密，除非使用 `onlyMappedSecrets: false` 另作指定。[了解更多](secrets-manager/integrations/secrets-manager-kubernetes-operator.md)有关 Secrets Manager Kubernetes Operator 的信息。
+
 ## 2025.9.0
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.9.0、浏览器扩展 2025.9.0、移动 2025.9.0、桌面 2025.9.0、CLI 2025.9.0）

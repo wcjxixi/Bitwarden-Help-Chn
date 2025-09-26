@@ -8,9 +8,9 @@
 ~~Bitwarden Secrets Manager Helm 集成目前处于 **Beta 状态**。某些功能目前可能无法提供完整功能。~~
 {% endhint %}
 
-Bitwarden Secrets Manager Kubernetes Operator 允许团队安全高效地将 Secrets Manager 集成到 Kubernetes 工作流中。使用 Helm 包管理器部署的 operator，可以从 Secrets Manager 中存储和获取机密。
+Bitwarden Secrets Manager Kubernetes Operator 允许团队安全高效地将 Secrets Manager 集成到 Kubernetes 工作流中。使用 Helm 包管理器部署的 Operator，可以从 Secrets Manager 中存储和获取机密。
 
-`sm-operator` 使用控制器将 Bitwarden 机密同步到 Kubernetes 机密中。operator 将 Custom Resource Definition: `BitwardenSecret` 注册到 Kubernetes 集群中。集群将侦听新注册的 `BitwardenSecret` ，并按可配置的时间间隔进行同步。
+`sm-operator` 使用控制器将 Bitwarden 机密同步到 Kubernetes 机密中。Operator 将 Custom Resource Definition：`BitwardenSecret` 注册到 Kubernetes 集群中。集群将侦听新注册的 `BitwardenSecret` ，并按可配置的时间间隔进行同步。
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
@@ -53,8 +53,8 @@ helm show values bitwarden/sm-operator > my-values.yaml
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `settings.bwSecretsManagerRefreshInterval`      | 机密同步的频率（以秒为单位）。最小值为 180。                                                                                                                                                                                                                                                             |
 | `settings.cloudRegion`                          | 自托管用户设置为 `US` 或 `EU` 云区域以用于同步。有关更多信息，请参阅[启用云通信](../../self-hosting/deploy-and-configure/optional-features/self-hosting-families-sponsorships.md#step-1-enable-cloud-communication)。                                                                                                  |
-| `settings.bwApiUrlOverride`                     | 仅适用于自托管用户。这是您的实例 API 的 URL。                                                                                                                                                                                                                                                          |
-| `settings.bwIdentityUrlOverride`                | 仅适用于自托管用户。这是您的实例的身份服务的 URL。                                                                                                                                                                                                                                                          |
+| `settings.bwApiUrlOverride`                     | 仅适用于自托管用户。这是您的实例 API 的 URL，例如 `https://your.domain.com/api`。                                                                                                                                                                                                                         |
+| `settings.bwIdentityUrlOverride`                | 仅适用于自托管用户。这是您的实例的身份服务的 URL，例如 `https://your.domain.com/identity/connect/token`。                                                                                                                                                                                                      |
 | `containers.enableSeccompProfileRuntimeDefault` | <p>设置为 <code>false</code> 以在较旧的 Kubernetes 版本 (&#x3C; 1.19) 或默认情况下不支持此字段的供应商版本（例如 OpenShift &#x3C; 4.11）上工作。</p><p></p><p>对于不需要升级权限来限制容器的大多数常见情况，建议使用此设置。有关更多信息，请参阅 <a href="https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted">Kubernetes 文档</a>。</p> |
 
 {% hint style="info" %}
@@ -72,7 +72,7 @@ helm upgrade sm-operator bitwarden/sm-operator -i --debug -n sm-operator-system 
 
 此命令在命名空间 `sm-operator-system` 中安装或升级名为 `sm-operator` 的版本，其值来自 `my-values.yaml` 。
 
-{% hint style="info" %}
+{% hint style="danger" %}
 要查看 `helm install` 或 `helm upgrade` 命令的信息，请运行 `helm install --help` 或 `helm upgrade --help` 。
 {% endhint %}
 
@@ -122,7 +122,7 @@ spec:
 EOF
 ```
 
-在 BitwardenSecret 部署示例中， `custom map` 元素是可选的。
+默认情况下，除非设置了 `onlyMappedSecrets: false`，否则 Kubernetes Operator 只会同步 `map` 部分中指定的机密。
 
 | 设置                    | 描述                                                                                 |
 | --------------------- | ---------------------------------------------------------------------------------- |
@@ -135,14 +135,14 @@ EOF
 Secrets Manager 不保证跨工程机密名称的唯一性。默认情况下，将使用作为密钥使用的 Secrets Manager 机密 UUID 来创建机密。
 {% endhint %}
 
-为了使生成的机密更易于使用，您可以创建 Bitwarden Secrets ID 到 Kubernetes 机密密钥的映射。生成的机密将用您提供的映射名称替换 Bitwarden 机密 ID。
+为了使生成的机密更易于使用，您可以创建 Bitwarden Secrets ID 到 Kubernetes 机密密钥的映射。生成的机密将用您提供的映射名称替换 Bitwarden 机密 ID。默认情况下，除非设置了 `onlyMappedSecrets: false`，否则 Kubernetes Operator 只会同步 `map` 部分中指定的机密。
 
-Available map settings: 可用的图标设置：
+可用的映射设置：
 
-| 设置              | 描述                                                                                                            |
-| --------------- | ------------------------------------------------------------------------------------------------------------- |
-| `bwSecretId`    | 这是 Secrets Manager 中机密的 UUID（通用唯一标识符）。这可以在 Secrets Manager Web 门户中的机密名称下或使用 Bitwarden Secrets Manager CLI 找到。 |
-| `secretKeyName` | Kubernetes 机密中生成的密钥替换了 UUID。                                                                                  |
+| 设置              | 描述                                                                                                                                                         |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `bwSecretId`    | 这是 Secrets Manager 中机密的 UUID（通用唯一标识符）。这可以在 Secrets Manager Web 门户中的机密名称下或使用 Bitwarden [Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 找到。 |
+| `secretKeyName` | Kubernetes 机密中生成的密钥替换了 UUID。                                                                                                                               |
 
 ## 图表使用示例 <a href="#example-usage-chart" id="example-usage-chart"></a>
 
