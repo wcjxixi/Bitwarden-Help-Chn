@@ -160,7 +160,7 @@
       * [关于集合](admin-console/manage-shared-items/collections/about-collections.md)
       * [创建集合](admin-console/manage-shared-items/collections/create-collections.md)
       * [=分配用户到集合](admin-console/manage-shared-items/collections/assign-users-to-collections.md)
-      * [=集合权限](admin-console/manage-shared-items/collections/collection-permissions.md)
+      * [集合权限](admin-console/manage-shared-items/collections/collection-permissions.md)
       * [=集合设置](admin-console/manage-shared-items/collections/collection-settings.md)
     * [导入组织项目](admin-console/manage-shared-items/import-organization-items/README.md)
       * [导入数据到组织](admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)
