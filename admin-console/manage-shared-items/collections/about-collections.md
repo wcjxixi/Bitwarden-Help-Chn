@@ -16,31 +16,7 @@
 组织密码库
 {% endembed %}
 
-## 创建集合 <a href="#create-a-collection" id="create-a-collection"></a>
-
-{% hint style="success" %}
-与许多组织管理任务一样，创建集合**只能从网页 App 完成**。
-{% endhint %}
-
-具有集合管理[权限](../../manage-members/member-roles.md#permissions)的组织用户可以创建集合。要创建集合：
-
-1、登录到 Bitwarden 网页密码库，选择 ✚**新增**按钮，然后从下拉菜单选择**集合**：
-
-{% embed url="https://bitwarden.com/assets/3rq5lVSQlvNT9gu2M2bCbk/8741dc155e8f2fa83d2caeb69218ce64/2024-12-02_15-35-48.png?w=1038&fm=avif&q=80" %}
-创建新的集合
-{% endembed %}
-
-2、在**新增集合**选项卡中，为您的集合指定一个**名称**，选择它应属于的**组织**，也可以选择一个集合来[嵌套该集合](about-collections.md#nested-collections)。
-
-{% hint style="success" %}
-仅当您使用目录连接器时，**外部 ID** 字段才相关。并且当已配置为使用 [SCIM](../../manage-members/scim/about-scim.md)、目录连接器或 API 时，该字段将在对话框中显示。
-{% endhint %}
-
-3、在**访问权限**选项卡中，为现有的成员或[群组](../../manage-members/groups.md)分配访问权限。对于每个选择，分配适当的[权限](../../manage-members/member-roles.md#permissions)级别。作为集合的创建者，您将拥有「可以管理」的权限。
-
-4、选择**保存**以完成集合的创建。
-
-具有管理控制台访问权限的组织成员也可以从那里创建集合。您能否在其中一个或两个位置创建集合、或在两个位置不能创建集合，由组织决定。
+## &#x20;<a href="#create-a-collection" id="create-a-collection"></a>
 
 ### 嵌套集合 <a href="#nested-collections" id="nested-collections"></a>
 
@@ -144,7 +120,7 @@
 
 ### 对非管理集合添加访问权限 <a href="#add-access-to-un-managed-collections" id="add-access-to-un-managed-collections"></a>
 
-如果**所有者和管理员可以管理所有集合和项目**选项关闭（[了解更多](collection-management.md#collection-management-settings)），则在集合视图中，没有为其分配具有「[可以管理](../../manage-members/member-roles.md)」权限的成员的任何集合都将显示一个**添加访问权限**徽章：
+如果**所有者和管理员可以管理所有集合和项目**选项关闭（[了解更多](collection-settings.md#collection-management-settings)），则在集合视图中，没有为其分配具有「[可以管理](../../manage-members/member-roles.md)」权限的成员的任何集合都将显示一个**添加访问权限**徽章：
 
 {% embed url="https://bitwarden.com/assets/1Nqn29nNIkKtb5HfWkfcWK/64c3875f60d3d292837d0655ad3b146c/2024-12-05_09-56-43.png?w=1031&fm=avif&q=80" %}
 对非管理集合添加访问权限
@@ -154,28 +130,10 @@
 
 ## 集合设置 <a href="#collections-settings" id="collections-settings"></a>
 
-组织的所有者可以在**设置** → **组织信息**界面上配置集合行为，以适应组织需求。[了解更多](collection-management.md)。
+组织的所有者可以在**设置** → **组织信息**界面上配置集合行为，以适应组织需求。[了解更多](collection-settings.md)。
 
 {% hint style="info" %}
 企业组织可使用[成员访问权限报告](../../../your-vault/vault-health-reports.md#member-access)查看单个组织成员对集合、群组、项目的访问权限，以及相关权限的概览。
 {% endhint %}
 
-## 集合权限 <a href="#collections-permissions" id="collections-permissions"></a>
-
-权限决定了用户可以对特定集合中的项目执行哪些操作。[角色](https://help.ppgg.in/admin-console/user-management/member-roles-and-permissions#member-roles)只能在单个成员的级别上设置，而权限既可以为单个成员设置，也可以为整个群组设置：
-
-{% embed url="https://bitwarden.com/assets/7xXXzsMeryCUtvwwjvqjYr/9a6c7a2916b751acad313f8ddc4ad43e/2025-02-13_10-51-04.png?w=1114&fm=avif&q=80" %}
-权限选项
-{% endembed %}
-
-{% hint style="info" %}
-企业组织可使用[成员访问权限报告](../../../your-vault/vault-health-reports.md#member-access)查看单个组织成员对集合、群组、项目的访问权限，以及相关权限的概览。
-{% endhint %}
-
-| 权限        | 描述                                                                                                                              |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| 可以查看      | 用户或群组可以查看集合中的所有项目，包括密码等隐藏字段。                                                                                                    |
-| 可以查看，除了密码 | <p>用户或群组可以查看集合中的所有项目，但密码等隐藏字段除外。</p><p>用户仍可通过自动填充使用密码。</p><p>隐藏密码可防被轻易复制​​和粘贴，但不会完全阻止用户访问此信息。请像对待任何共享凭据一样对待隐藏密码。</p>            |
-| 可以编辑      | 用户或群组可以添加新项目、将项目分配到集合、从集合中取消项目分配、更改集合分配以及编辑集合中的现有项目，包括密码等隐藏字段。                                                                  |
-| 可以编辑，除了密码 | <p>用户或群组可以将新项目添加到集合，以及编辑集合中的现有项目，但密码等隐藏字段除外。</p><p>用户仍可通过自动填充使用密码。</p><p>隐藏密码可防止轻松复制​​和粘贴，但不会完全阻止用户访问此信息。像对待任何共享凭据一样对待隐藏密码。</p> |
-| 可以管理      | 用户或群组可以为新的成员或群组分配对集合的访问权限，包括添加具有「可以管理」权限的其他成员，可以删除集合项目，可以删除组织密码库项目，还可以根据需要删除集合。                                                 |
+## &#x20;<a href="#collections-permissions" id="collections-permissions"></a>

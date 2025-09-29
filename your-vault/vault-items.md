@@ -139,7 +139,7 @@
 
 如果您想创建一个项目的副本，您可以克隆对其具有**所有权**的任何密码库项目：
 
-如果您想复制您拥有所有权的任何项目，您可以克隆该项目。克隆组织所拥有的项目只能由所有者、管理员和具有[**可以管理**](../admin-console/manage-shared-items/collections/collection-management.md#collection-management-settings)权限的用户从网页 App 的[管理控制台](../admin-console/organizations-quick-start.md)或从密码库视图进行：
+如果您想复制您拥有所有权的任何项目，您可以克隆该项目。克隆组织所拥有的项目只能由所有者、管理员和具有[**可以管理**](../admin-console/manage-shared-items/collections/collection-settings.md#collection-management-settings)权限的用户从网页 App 的[管理控制台](../admin-console/organizations-quick-start.md)或从密码库视图进行：
 
 {% tabs %}
 {% tab title="网页 App" %}
