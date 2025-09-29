@@ -1,20 +1,24 @@
-# =恢复成员账户
+# 恢复成员账户
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/recover-a-member-account/)
 {% endhint %}
 
-## 恢复账户 <a href="#recover-an-account" id="recover-an-account"></a>
+恢复忘记主密码或丢失可信设备的成员的账户：
 
-{% hint style="info" %}
-您必须是[所有者、管理员或允许的自定义用户](about-account-recovery.md#permissions)才能重置主密码。检查本文的[权限](about-account-recovery.md#permissions)章节以了解您可以重置谁的主密码。
+* 您必须是[所有者、管理员或允许的自定义角色成员](../member-roles.md)。
+* 您的组织必须已开启[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#setting-enterprise-policies)。
+* 要恢复账户的成员必须[已注册](account-recovery-enrollment.md)。
+
+{% hint style="success" %}
+已注册账户恢复的成员将在**策略**栏中显示一个钥匙图标 (**🔑**)。
 {% endhint %}
 
-要重置企业组织成员的主密码：
+完成以下步骤已恢复组织成员的账户：
 
-1、在管理控制台中，导航至**成员**。
+1、在管理控制台中，导航至**成员**视图。
 
-2、对于要重置其主密码的成员，请使用 **≡选项**菜单选择 **🔑恢复账户**：
+2、对于要恢复其账户的成员，请使用 **≡**&#x9009;项菜单选择 **🔑恢复账户**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/26oD8iqDY15SNJXCJlQE71/22e66b7e11a56d99c13ac41a1236c4e7/2024-12-03_15-35-51.png?_a=DAJCwlWIZAAB" %}
 恢复账户
@@ -26,6 +30,6 @@
 创建一个新的密码
 {% endembed %}
 
-复制新的主密码并使用安全的通讯方式联系用户，例如使用 [Bitwarden Send](../../../bitwarden-send/create-a-send.md)。
+4、复制新的主密码然后使用安全的通讯方式联系用户，例如使用 [Bitwarden Send](../../../bitwarden-send/create-a-send.md)。
 
-4、选择**保存**以执行账户恢复。这样做会将用户从当前会话中注销。某些客户端应用程序（比如移动 App）上的活动会话可能会保持活动长达一小时。
+5、选择**保存**以执行账户恢复。这样做会将用户从当前会话中注销。某些客户端应用程序（比如移动 App）上的活动会话可能会保持活动长达一小时。

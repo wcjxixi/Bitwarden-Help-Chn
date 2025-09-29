@@ -5,35 +5,22 @@
 {% endhint %}
 
 {% hint style="info" %}
-账户恢复适用于**企业组织**。与 SSO 登录一样，账户恢复不适用于[经典 2019 企业组织](../../../plans-and-pricing/updates-to-bitwarden-plans-2019-2020.md)计划。
+账户恢复适用于**企业组织**。
 {% endhint %}
 
-## 什么是账户恢复？ <a href="#what-is-account-recovery" id="what-is-account-recovery"></a>
+账户恢复功能允许所有者、管理员和某些自定义角色成员在成员忘记主密码或丢失可信设备时恢复成员账户。账户恢复：
 
-账户恢复（以前叫「管理员密码重置」）允许[指定的管理员](about-account-recovery.md#permissions)恢复企业组织用户账户以及在员工忘记[主密码](../../../account/log-in-and-unlock/your-master-password.md)时恢复访问权限。通过[启用账户恢复策略](about-account-recovery.md#activate-account-recovery)为组织激活账户恢复。
+* 可通过开启账户恢复管理策略为组织激活账户恢复。
+* 要求成员通过自动注册或自助注册的方式注册，以获得账户恢复资格。注册会触发密钥交换，从而确保账户恢复的安全性。
+* **不会绕过成员的两步登录或 SSO**。如果为账户启用了[两步登录方式](../../../account/two-step-login/setup-guides/two-step-login-methods.md)，或者如果组织[要求 SSO 身份验证](../../oversight-visibility/enterprise-policies.md#single-sign-on-authentication)，则成员在恢复后仍需使用这些方法访问他们的账户。
 
-个人用户必须被注册（通过[自行注册](about-account-recovery.md#self-enroll-in-password-reset)或使用[自动注册策略选项](about-account-recovery.md#automatic-enrollment)）才有资格进行账户恢复，因为注册会触发密钥交换，以确保恢复的安全。
+## 更多信息 <a href="#more-information" id="more-information"></a>
 
-**账户恢复不会绕过两步登录或 SSO 登录。**&#x5982;果为账户启用了[两步登录方式](../../../account/two-step-login/setup-guides/two-step-login-methods.md)，或者如果您的组织[要求 SSO 身份验证](../../oversight-visibility/enterprise-policies.md#single-sign-on-authentication)，您在密码重置后仍将需要使用该方式访问您的密码库。
+### 谁可以恢复账户 <a href="#who-can-recover-accounts" id="who-can-recover-accounts"></a>
 
-### 加密 <a href="#encryption" id="encryption"></a>
+账户恢复可由[所有者、管理员和允许的自定义用户](../member-roles.md)执行。账户恢复使用分级权限结构来确定谁可以重置谁的主密码，这意味着：
 
-当组织的成员[注册](about-account-recovery.md#automatic-enrollment)账户恢复时，该用户的[加密密钥](../../../security/encryption/encryption-key-rotation.md)将使用组织的公钥进行加密。其结果将作为**账户恢复密钥**存储。
-
-当执行恢复操作时：
-
-1. 使用组织对称密钥解密组织私钥。
-2. 使用已解密的组织私钥解密用户的**账户恢复密钥**，从而得到用户的[加密密钥](../../../security/encryption/encryption-key-rotation.md)。
-3. 用户的加密密钥和主密码散列被替换为新的加密密钥和新的主密码散列，这些散列源自新的主密码。
-4. 使用组织的公钥加密用户新的加密密钥，使用新的密钥替换之前的**账户恢复密钥**。
-
-任何人，包括执行重置的管理员，都**无法**看到旧的主密码。
-
-### 权限 <a href="#permissions" id="permissions"></a>
-
-账户恢复可由[所有者、管理员和允许的自定义用户](../member-roles.md)执行。账户恢复使用分级权限结构来确定谁可以重置谁的主密码：
-
-* 任何所有者、管理员或允许的自定义用户都可以重置用户、经理或自定义用户的主密码。
+* 任何所有者、管理员或包含**管理账户恢复**的自定义角色都可以重置用户或自定义角色成员的主密码。
 * 只有管​​理员或所有者可以重置管理员的主密码。
 * 只有所有者可以重置其他所有者的主密码。
 
@@ -46,34 +33,22 @@
 * 用户注册了账户恢复。
 * 用户撤销了账户恢复。
 
-## 激活账户恢复 <a href="#activate-account-recovery" id="activate-account-recovery"></a>
+### 工作原理 <a href="#how-it-works" id="how-it-works"></a>
 
-要为您的企业组织激活账户恢复，请使用产品切换器打开管理控制台：
+当组织的成员注册账户恢复时，该用户的[加密密钥](../../../security/encryption/encryption-key-rotation.md)将使用组织的公钥进行加密。其结果将作为**账户恢复密钥**存储。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
-{% endembed %}
+当执行恢复操作时：
 
-在管理控制台中，导航至**设置** → **策略**并开启**账户恢复管理**策略。您必须至少是组织管理员才能激活此策略：
+1. 使用组织对称密钥解密组织私钥。
+2. 使用已解密的组织私钥解密用户的**账户恢复密钥**，从而得到用户的[加密密钥](../../../security/encryption/encryption-key-rotation.md)。
+3. 用户的加密密钥和主密码散列被替换为新的加密密钥和新的主密码散列，这些散列源自新的主密码。
+4. 使用组织的公钥加密用户新的加密密钥，使用新的密钥替换之前的**账户恢复密钥**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2flohk6BsRKvazjztwvzsJ/4258307d845b33cd9f765388ca6bfea6/2024-12-03_14-24-58.png?_a=DAJCwlWIZAAB" %}
-设置策略
-{% endembed %}
+任何人，包括执行重置的管理员，都**无法**看到旧的主密码。
 
-用户需要[自行注册](about-account-recovery.md#self-enroll-in-password-reset)或[自动注册](about-account-recovery.md#automatic-enrollment)账户恢复，然后才能重置其主密码。
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-### &#x20;<a href="#automatic-enrollment" id="automatic-enrollment"></a>
-
-## &#x20;<a href="#recover-an-account" id="recover-an-account"></a>
-
-### 恢复后 <a href="#after-a-recovery" id="after-a-recovery"></a>
-
-当您的主密码被重置时，您将收到一封来自 Bitwarden 的电子邮件，通知您这一点。收到此电子邮件后，请联系您的组织管理员，通过诸如 [Bitwarden Send](../../../bitwarden-send/create-a-send.md) 等安全渠道获取您的新主密码。
-
-当您使用新的主密码重新获得对密码库的访问权限后，系统将提示您再次更新主密码：
-
-{% embed url="https://bitwarden.com/help/images/organizations/pwreset-temporary.png" %}
-更新您的主密码
-{% endembed %}
-
-因为主密码应该是**强大**且**易记**的，并且**只有您自己**知道，所以重置后您会被要求更新您的主密码。
+* 通过开启[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#account-recovery-administration)来设置账户恢复。
+* 如果用户在策略开启前加入或您没有开启自动注册，请指导用户[注册账户恢复](account-recovery-enrollment.md)。
+* 了解如何[恢复已注册成员的账户](recover-a-member-account.md)。
+* 向成员提供[账户恢复后的操作说明](my-account-was-recovered.md)。
