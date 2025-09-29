@@ -167,7 +167,7 @@
       * [加密导出](admin-console/manage-shared-items/export-organization-items/encrypted-exports.md)
     * [链接到项目](admin-console/manage-shared-items/link-to-an-item.md)
   * [=管理成员](admin-console/manage-members/README.md)
-    * [用户管理](admin-console/manage-members/user-management.md)
+    * [=用户管理](admin-console/manage-members/user-management.md)
     * [成员角色](admin-console/manage-members/member-roles.md)
     * [群组](admin-console/manage-members/groups.md)
     * [=撤销 & 移除](admin-console/manage-members/revoke-remove/README.md)
