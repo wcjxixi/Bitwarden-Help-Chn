@@ -62,61 +62,9 @@
 
 用户需要[自行注册](about-account-recovery.md#self-enroll-in-password-reset)或[自动注册](about-account-recovery.md#automatic-enrollment)账户恢复，然后才能重置其主密码。
 
-### 自动注册 <a href="#automatic-enrollment" id="automatic-enrollment"></a>
+### &#x20;<a href="#automatic-enrollment" id="automatic-enrollment"></a>
 
-启用自动注册策略选项将在新用户[加入组织的邀请被接受后](../user-management.md#accept)自动注册新用户的账户恢复功能。并且会阻止他们[撤销](about-account-recovery.md#withdraw-enrollment)账户恢复。
-
-已经在组织中的用户不会被注册账户恢复，需要他们[自行注册](about-account-recovery.md#self-enroll-in-password-reset)。
-
-{% hint style="success" %}
-如果您为组织成员使用自动注册账户恢复，我们**强烈建议您通知他们这一功能**。很多 Bitwarden 组织用户在他们的个人密码库中存储私人凭据，应该让他们知道账户恢复将允许管理员访问他们的个人密码库。
-{% endhint %}
-
-### 自行注册账户恢复 <a href="#self-enroll-in-account-recovery" id="self-enroll-in-account-recovery"></a>
-
-要注册账户恢复，在密码库视图种选择您的组织旁边的 **≡选项**菜单，然后选择**注册账户恢复**：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4ape19S5L7lf0tAAEyInGR/87fadad707f8c7acb5894e94e758c6c3/2024-12-03_15-33-13.png?_a=DAJCwlWIZAAB" %}
-注册账户恢复
-{% endembed %}
-
-如果您愿意，您可以在多个组织中注册账户恢复。
-
-### 撤销注册 <a href="#withdraw-enrollment" id="withdraw-enrollment"></a>
-
-注册后，您可以从用于注册的同一下拉菜单中**撤销**账户恢复：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4GR176lad9pre4sZN3rA35/642bdef55248fb84ddb24fc316875b11/2024-12-03_15-34-30.png?_a=DAJCwlWIZAAB" %}
-撤销账户恢复
-{% endembed %}
-
-已启用[自动注册](about-account-recovery.md#automatic-enrollment)策略选项的组织中的用户将**不允许撤销**账户恢复。此外，手动更改您的主密码或[轮换您的加密密钥](../../../security/encryption/encryption-key-rotation.md)**不会**使您撤销账户恢复。
-
-## 恢复账户 <a href="#recover-an-account" id="recover-an-account"></a>
-
-{% hint style="info" %}
-您必须是[所有者、管理员或允许的自定义用户](about-account-recovery.md#permissions)才能重置主密码。检查本文的[权限](about-account-recovery.md#permissions)章节以了解您可以重置谁的主密码。
-{% endhint %}
-
-要重置企业组织成员的主密码：
-
-1、在管理控制台中，导航至**成员**。
-
-2、对于要重置其主密码的成员，请使用 **≡选项**菜单选择 **🔑恢复账户**：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/26oD8iqDY15SNJXCJlQE71/22e66b7e11a56d99c13ac41a1236c4e7/2024-12-03_15-35-51.png?_a=DAJCwlWIZAAB" %}
-恢复账户
-{% endembed %}
-
-3、在恢复账户窗口中，为用户创建一个**新密码**。如果您的组织启用了[主密码策略](../../oversight-visibility/enterprise-policies.md#master-password)，您将需要创建一个满足实施要求的密码（例如，最少 8 个字符，包含数字）：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/28qKke9XJLj6nTZJjg4mK4/7b1c2c5cb2c139bf08ea4c5f65c9a02a/2024-12-03_15-38-52.png?_a=DAJCwlWIZAAB" %}
-创建一个新的密码
-{% endembed %}
-
-复制新的主密码并使用安全的通讯方式联系用户，例如使用 [Bitwarden Send](../../../bitwarden-send/create-a-send.md)。
-
-4、选择**保存**以执行账户恢复。这样做会将用户从当前会话中注销。某些客户端应用程序（比如移动 App）上的活动会话可能会保持活动长达一小时。
+## &#x20;<a href="#recover-an-account" id="recover-an-account"></a>
 
 ### 恢复后 <a href="#after-a-recovery" id="after-a-recovery"></a>
 

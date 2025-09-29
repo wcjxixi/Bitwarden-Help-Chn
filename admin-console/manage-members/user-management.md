@@ -154,107 +154,21 @@
 
 4、验证您屏幕上显示的[指纹短语](../../security/encryption/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置 → 我的帐户**中找到。
 
-
-
-<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6sWPBv5GFAyMcULNxfCCJG/b3115a77e0d8d8d48fcc1f9e24e42d70/fingerprint-phrase.png?_a=DAJCwlWIZAAB" alt=""><figcaption><p>示例指纹短语</p></figcaption></figure>
+<div align="left"><figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6sWPBv5GFAyMcULNxfCCJG/b3115a77e0d8d8d48fcc1f9e24e42d70/fingerprint-phrase.png?_a=DAJCwlWIZAAB" alt=""><figcaption><p>示例指纹短语</p></figcaption></figure></div>
 
 每一个指纹短语对于其账户都是唯一的，它是确保安全添加用户的最后一层监督。如果它们匹配，请选择**提交**。
 
-## 离职用户 <a href="#offboard-users" id="offboard-users"></a>
-
-{% hint style="danger" %}
-对于那些使用[受信任设备 SSO](../login-with-sso/trusted-devices/) 而没有主密码的账户，[从您的组织中移除它们](user-management.md#offboard-users)将切它们断对的 Bitwarden 账户的所有访问权限，除非：
-
-1. 您事先使用[账户恢复](account-recovery/about-account-recovery.md)为他们分配一个主密码。
-2. 用户在账户恢复后至少登录一次，以完全完成账户恢复流程。
-
-此外，除非在用户被从组织中移除之前采取上述步骤，否则用户将无法重新加入您的组织。在这种情况下，用户将需要[删除他们的账户](../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并收到一份新的邀请以创建账户并加入您的组织。
-
-撤销对组织的访问权限，但不会从组织中移除他们，他们仍然可以登录 Bitwarden 并**仅可以**访问他们个人密码库。
+{% hint style="info" %}
+如果已打开**从不提示验证指纹短语**，则可通过清除浏览器缓存和 cookie 来重新激活指纹短语验证。
 {% endhint %}
-
-要从您的组织移除用户：
-
-1、登录到 Bitwarden [网页 App](../../getting-started/getting-started-webvault.md) 然后使用产品切换器打开管理员控制台：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
-{% endembed %}
-
-2、导航到**成员**。
-
-2、打开**管理**选项卡，然后从左侧菜单中选择**人员**。
-
-3、勾选要从组织中移除的用户，然后使用 ≡选项菜单来 **✘移除**：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5hTYQXah4C90KJcZnWwnqs/83372c5f7e37a9ea27cb14cc78b3b93e/2024-12-03_15-06-01.png?_a=DAJCwlWIZAAB" %}
-移除成员
-{% endembed %}
 
 {% hint style="success" %}
-离线设备会缓存密码库数据的只读副本，包括组织密码库数据。如果您预计有人会对此进行恶意利用，则当您将成员从组织中移除时，应更新该成员拥有访问权限的凭据。
+有关撤销、移除或删除成员账户的信息，请参阅：
+
+* [临时撤销访问权限](revoke-remove/temporarily-revoke-access.md)
+* [永久移除访问权限](revoke-remove/permanently-remove-access.md)
+* [删除成员账户](revoke-remove/delete-member-accounts.md)
 {% endhint %}
-
-### 删除用户账户 <a href="#deleting-user-accounts" id="deleting-user-accounts"></a>
-
-**从您的组织中移除用户不会删除他们的 Bitwarden 帐**户。当用户被移除时，他们将无法再访问组织或任何已共享的项目和集合，但是他们仍然可以使用他们现有的主密码登录 Bitwarden 并访问任何个人密码库项目。
-
-根据实施的具体情况，您可以使用以下方法之一删除已离职用户的 Bitwarden 用户帐户：
-
-1. 如果您是自托管 Bitwarden，已授权的管理员可以从[系统管理员门户](../../self-hosting/system-administrator-portal.md)中删除该帐户。
-2. 如果该账户拥有一个您公司控制的 `@yourcompany.com` 电子邮箱地址，您可以使用[无需登录而删除](https://vault.bitwarden.com/#/recover-delete)工具并在 `@yourcompany.com` 收件箱中确认删除。有关更多信息，请参阅[删除账户或组织](../../plans-and-pricing/delete-an-account-or-organization.md)。
-
-## 撤销访问权限 <a href="#revoke-access" id="revoke-access"></a>
-
-{% hint style="success" %}
-如果您的组织已启用 [SCIM 集成](scim/about-scim.md)，当用户在源目录中被挂起或停用时，用户对组织的访问权限将自动撤销。
-{% endhint %}
-
-{% hint style="danger" %}
-对于那些使用[受信任设备 SSO](../login-with-sso/trusted-devices/) 而没有主密码的账户，[从您的组织中移除它们](user-management.md#offboard-users)将切它们断对的 Bitwarden 账户的所有访问权限，除非：
-
-1. 您事先使用[账户恢复](account-recovery/about-account-recovery.md)为他们分配一个主密码。
-2. 用户在账户恢复后至少登录一次，以完全完成账户恢复流程。
-
-此外，除非在用户被从组织中移除之前采取上述步骤，否则用户将无法重新加入您的组织。在这种情况下，用户将需要[删除他们的账户](../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并收到一份新的邀请以创建账户并加入您的组织。
-
-撤销对组织的访问权限，但不会从组织中移除他们，他们仍然可以登录 Bitwarden 并**仅可以**访问他们个人密码库。
-{% endhint %}
-
-您可以暂时撤销用户对您的组织及组织密码库项目的访问权限，而无需完全删移除用户。要撤销访问权限：
-
-1、在管理控制台中，导航到**成员**。
-
-2、选择您想要撤销访问权限的成员，然后使用 ≡选项菜单**撤销访问权限**：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6hBUggWWvdttF0RUqU8IZ9/389eb47b90742bb3e3844f5105bc643a/2024-12-03_15-06-01.png?_a=DAJCwlWIZAAB" %}
-撤销访问权限
-{% endembed %}
-
-{% hint style="success" %}
-只有**所有者**可以撤销和恢复其他所有者的访问权限。
-{% endhint %}
-
-已撤销访问权限的用户位于**已撤销**选项卡中，并将：
-
-* 无权限访问任何组织密码库项目、集合等。
-* 无法使用 [SSO 登录](../../login-with-sso/)，或使用[组织 Duo](../../account/two-step-login/setup-guides/two-step-login-via-duo.md) 进行两步登录。
-* 不受您的组织[策略](../oversight-visibility/enterprise-policies.md)的约束。
-* 不占用许可证座位。
-
-### 恢复访问权限 <a href="#restore-access" id="restore-access"></a>
-
-要恢复某个用户的访问权限：
-
-1、在管理控制台中，导航到**成员**。
-
-2、选择您想要恢复访问权限的成员，然后使用 ≡选项菜单**恢复访问权限**：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xe3Vt7l9CCO85RhhmoVJU/47321af7571e298c697a412c650403d6/2024-12-03_15-11-35.png?_a=DAJCwlWIZAAB" %}
-恢复访问权限
-{% endembed %}
-
-当您恢复某个用户的访问权限时，他们无需再次执行[邀请](user-management.md#invite) → [接受](user-management.md#accept) → [确认](user-management.md#confirm)流程。
 
 ## 审查用户 2FA 状态 <a href="#review-user-2fa-status" id="review-user-2fa-status"></a>
 
