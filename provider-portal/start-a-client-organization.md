@@ -30,7 +30,7 @@
 未分配的席位（即您已付费但未使用的座位）的数量将显示在此界面。如果超过此数量，则会显示已购买的附加席位数量。[了解更多](provider-billing.md)。
 
 {% hint style="info" %}
-邀请将自动发送到**客户所有者的电子邮箱**，以作为[所有者](../admin-console/manage-members/member-roles-and-permissions.md)加入组织。
+邀请将自动发送到**客户所有者的电子邮箱**，以作为[所有者](../admin-console/manage-members/member-roles.md)加入组织。
 {% endhint %}
 
 4、对组织满意后，选择**添加组织**。
@@ -59,7 +59,7 @@
 请注意，作为提供商用户，您无法直接查看、创建或管理单个项目。
 {% endhint %}
 
-3、**配置企业策略**。在开始用户管理部分的设置之前，[配置企业策略](../admin-console/manage-shared-items/enterprise-policies.md)以便为诸如[主密码复杂性](../admin-console/manage-shared-items/enterprise-policies.md#master-password)、[两步登录的使用](../admin-console/manage-shared-items/enterprise-policies.md#two-step-login)和[管理员密码重置](../admin-console/manage-shared-items/enterprise-policies.md#master-password-reset)等设置使用规则。
+3、**配置企业策略**。在开始用户管理部分的设置之前，[配置企业策略](../admin-console/oversight-visibility/enterprise-policies.md)以便为诸如[主密码复杂性](../admin-console/oversight-visibility/enterprise-policies.md#master-password)、[两步登录的使用](../admin-console/oversight-visibility/enterprise-policies.md#two-step-login)和[管理员密码重置](../admin-console/oversight-visibility/enterprise-policies.md#master-password-reset)等设置使用规则。
 
 {% hint style="info" %}
 企业策略**仅适用于企业组织**。

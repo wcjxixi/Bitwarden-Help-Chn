@@ -11,7 +11,7 @@ Bitwarden 目录连接器 App 通过从一系列源目录服务中提取信息�
 当用户从源目录中被禁用时，目录连接器可被配置为从 Bitwarden 组织中移除用户。这不会删除他们的 Bitwarden 账户，但他们将失去对组织的所有访问权限。
 
 {% hint style="info" %}
-目录连接器功能适用于**团队**和**企业**组织。要使用目录连接器，您必须有权访问您的[组织 API 密钥](../../../organizations/bitwarden-public-api.md#authentication)，该密钥只​​能由[组织所有者](../member-roles-and-permissions.md)获取并使用 [Bitwarden Send](../../../bitwarden-send/about-send.md) 安全共享。
+目录连接器功能适用于**团队**和**企业**组织。要使用目录连接器，您必须有权访问您的[组织 API 密钥](../../../organizations/bitwarden-public-api.md#authentication)，该密钥只​​能由[组织所有者](../member-roles.md)获取并使用 [Bitwarden Send](../../../bitwarden-send/about-send.md) 安全共享。
 {% endhint %}
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6RFsU5sJGDLMPawg64sBqM/85c9e9f6e7758944d76c8ecb79ca4af9/Marketing_Diagram_2024__1_.png?_a=DAJCwlWIZAAB" %}

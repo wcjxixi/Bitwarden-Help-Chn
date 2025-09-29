@@ -22,7 +22,7 @@
 3、打开云端网页密码库然后[下载您的许可证](../licensing.md)。
 
 {% hint style="success" %}
-[组织许可证](../licensing.md#organization-license)和[个人许可证](../licensing.md#individual-license)是独立的文件。**您不需要下载这两个许可证文件**。如果您要迁移组织，则只需要获取组织许可证，并且必须是[组织所有者](../../admin-console/manage-members/member-roles-and-permissions.md)才能执行此操作。
+[组织许可证](../licensing.md#organization-license)和[个人许可证](../licensing.md#individual-license)是独立的文件。**您不需要下载这两个许可证文件**。如果您要迁移组织，则只需要获取组织许可证，并且必须是[组织所有者](../../admin-console/manage-members/member-roles.md)才能执行此操作。
 {% endhint %}
 
 4、还是在云端网页密码库中，[导出您的个人密码库数据](../../import-export/export-vault-data.md#export-a-personal-vault)或[导出您的组织密码库数据](../../import-export/export-vault-data.md#export-an-organization-vault)。如果您要迁移组织，请鼓励您的最终用户也导出他们的个人密码库。
@@ -45,7 +45,7 @@
 
 如果您要将组织迁移到自托管服务器，请继续执行以下步骤：
 
-1、**（仅企业组织）**&#x91CD;新实施您的[企业策略](../../admin-console/manage-shared-items/enterprise-policies.md)规范和/或配置 [SSO 登录](../../login-with-sso/about-login-with-sso.md)。
+1、**（仅企业组织）**&#x91CD;新实施您的[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)规范和/或配置 [SSO 登录](../../login-with-sso/about-login-with-sso.md)。
 
 2、在自托管网页密码库中手动[重新创建用户群组](../../admin-console/manage-members/groups.md#create-a-group)，并将它们分配给适当的集合。
 
@@ -81,7 +81,7 @@
 
 如果您要将组织迁移到云端，请继续执行以下步骤：
 
-1. **（仅企业组织）**&#x91CD;新实施您的[企业策略](../../admin-console/manage-shared-items/enterprise-policies.md)规范和/或配置 [SSO 登录](../../login-with-sso/about-login-with-sso.md)。
+1. **（仅企业组织）**&#x91CD;新实施您的[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)规范和/或配置 [SSO 登录](../../login-with-sso/about-login-with-sso.md)。
 2. 在云端手动[重新创建用户群组](../../admin-console/manage-members/groups.md#create-a-group)，并将它们分配给适当的集合。
 3. 手动或使用[目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md)[邀请用户加入您的组织](../../admin-console/manage-members/user-management.md#invite)。
 {% endtab %}

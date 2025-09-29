@@ -39,7 +39,7 @@
 | ---------------------------------- | --------------------------------- | ------- |
 | Duo Security 的 Duo Push、短信、电话和安全钥匙 | [设置说明](two-step-login-via-duo.md) | 要求团队或企业 |
 
-此外，企业组织可以通过[策略](../../../admin-console/manage-shared-items/enterprise-policies.md#require-two-step-login)要求两步登录，并且当使用单点登录 (SSO) 时，可以使用您的身份提供程序在 Bitwarden 之外实现相同的保护。
+此外，企业组织可以通过[策略](../../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)要求两步登录，并且当使用单点登录 (SSO) 时，可以使用您的身份提供程序在 Bitwarden 之外实现相同的保护。
 
 ## 使用多个方式 <a href="#using-multiple-methods" id="using-multiple-methods"></a>
 

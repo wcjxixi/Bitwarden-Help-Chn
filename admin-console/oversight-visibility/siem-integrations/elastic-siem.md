@@ -80,11 +80,11 @@ Elastic 设置
 
 设置完成后，您就可以开始查看您的 Bitwarden 组织数据了。选择任何一个 Bitwarden 仪表板来监控与仪表板相关的数据。以下是每个仪表板监控数据的简要概述：
 
-| 日志                                     | 描述                                            |
-| -------------------------------------- | --------------------------------------------- |
-| \[Logs Bitwarden] Policy               | 查看组织的策略变更，如启用、禁用或更新组织策略。                      |
-| \[Logs Bitwarden] Group and Collection | 监控与组织相关的群组和集合的记录事件。                           |
-| \[Logs Bitwarden] Event                | 监控组织事件日志。[此处](../event-logs.md)了解有关事件日志的更多信息。 |
+| 日志                                     | 描述                                                          |
+| -------------------------------------- | ----------------------------------------------------------- |
+| \[Logs Bitwarden] Policy               | 查看组织的策略变更，如启用、禁用或更新组织策略。                                    |
+| \[Logs Bitwarden] Group and Collection | 监控与组织相关的群组和集合的记录事件。                                         |
+| \[Logs Bitwarden] Event                | 监控组织事件日志。[此处](../event-logging/event-logs.md)了解有关事件日志的更多信息。 |
 
 ### 了解仪表板 <a href="#understanding-the-dashboards" id="understanding-the-dashboards"></a>
 

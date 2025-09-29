@@ -66,7 +66,7 @@
 4、输入您的主密码然后选择**导出密码库**按钮。
 
 {% hint style="info" %}
-导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/reporting/event-logs.md)。
+导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/oversight-visibility/event-logging/event-logs.md)。
 {% endhint %}
 {% endtab %}
 
@@ -86,7 +86,7 @@ bw export my-master-password --organizationid 7063feab-4b10-472e-b64c-785e2b870b
 更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
 
 {% hint style="info" %}
-导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/reporting/event-logs.md)。
+导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/oversight-visibility/event-logging/event-logs.md)。
 {% endhint %}
 {% endtab %}
 {% endtabs %}

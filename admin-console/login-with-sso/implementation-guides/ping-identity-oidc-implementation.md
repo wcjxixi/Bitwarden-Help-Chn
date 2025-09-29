@@ -87,7 +87,7 @@ Ping OIDC 配置编辑
 完成这些字段的配置后，**保存**您的工作。
 
 {% hint style="success" %}
-您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织策略。[了解更多](../../manage-shared-items/enterprise-policies.md)。
+您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织策略。[了解更多](../../oversight-visibility/enterprise-policies.md)。
 {% endhint %}
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>

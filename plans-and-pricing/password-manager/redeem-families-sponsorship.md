@@ -9,7 +9,7 @@
 [企业组织](../../admin-console/organizations-overview.md#types-of-organizations)的成员可以获得一个**免费的家庭组织**赞助，该赞助可以应用于一个新的或现有的家庭组织，并可直接从网页密码库兑换。
 
 {% hint style="success" %}
-企业组织可通过[策略](../../admin-console/manage-shared-items/enterprise-policies.md)关闭该功能。
+企业组织可通过[策略](../../admin-console/oversight-visibility/enterprise-policies.md)关闭该功能。
 {% endhint %}
 
 使用**家庭组织**，您可以在自己和最多 5 位朋友或家人之间安全地共享密码库数据。家庭组织包含用于所有 6 位用户的高级 Bitwarden 功能，包括[高级两步登录方式](../../account/two-step-login/setup-guides/two-step-login-methods.md)、[加密文件附件](../../your-vault/file-attachments.md)、[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)及[更多](about-bitwarden-plans.md#compare-the-plans)其他功能。

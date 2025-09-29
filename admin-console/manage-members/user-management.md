@@ -13,7 +13,7 @@
 添加和删​移除用户席位将调整您未来的账单总金额。添加席位将立即以调整后的比例向您存档的付款方式扣款，这样**您只需为计费周期的剩余时间（月/年）付费**。移除席位会导致您的下一次收费被调整，已付费席位**未使用的时间将计入您的信用额度**。
 
 {% hint style="info" %}
-只有[组织的所有者](member-roles-and-permissions.md#user-types)或[提供商服务用户](../../provider-portal/provider-users.md#provider-user-types)可以添加或移除席位，因为这会直接影响计费。
+只有[组织的所有者](member-roles.md#user-types)或[提供商服务用户](../../provider-portal/provider-users.md#provider-user-types)可以添加或移除席位，因为这会直接影响计费。
 {% endhint %}
 
 ### 设置席位限制 <a href="#set-a-seat-limit" id="set-a-seat-limit"></a>
@@ -106,9 +106,9 @@
 3、在邀请用户面板上：
 
 * 输入新用户用于接收邀请的**电子邮箱**地址。您可以使用逗号分隔电子邮件地址，一次最多添加 20 个用户。
-* 选择要应用于新用户的**成员角色**。[成员角色](member-roles-and-permissions.md#member-roles)决定了这些用户在组织层面拥有哪些权限。
+* 选择要应用于新用户的**成员角色**。[成员角色](member-roles.md#member-roles)决定了这些用户在组织层面拥有哪些权限。
 * 在群组标签页中，选择要将此用户添加到哪些[群组](groups.md)中。
-* 在集合标签页中，选择要为此用户授予访问权限的集合以及他们应拥有的每个集合的[权限](member-roles-and-permissions.md#permissions)。
+* 在集合标签页中，选择要为此用户授予访问权限的集合以及他们应拥有的每个集合的[权限](member-roles.md#permissions)。
 
 4、点击**保存**以邀请指定的用户加入您的组织。
 
@@ -165,7 +165,7 @@
 {% hint style="danger" %}
 对于那些使用[受信任设备 SSO](../login-with-sso/trusted-devices/) 而没有主密码的账户，[从您的组织中移除它们](user-management.md#offboard-users)将切它们断对的 Bitwarden 账户的所有访问权限，除非：
 
-1. 您事先使用[账户恢复](account-recovery.md)为他们分配一个主密码。
+1. 您事先使用[账户恢复](account-recovery/about-account-recovery.md)为他们分配一个主密码。
 2. 用户在账户恢复后至少登录一次，以完全完成账户恢复流程。
 
 此外，除非在用户被从组织中移除之前采取上述步骤，否则用户将无法重新加入您的组织。在这种情况下，用户将需要[删除他们的账户](../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并收到一份新的邀请以创建账户并加入您的组织。
@@ -213,7 +213,7 @@
 {% hint style="danger" %}
 对于那些使用[受信任设备 SSO](../login-with-sso/trusted-devices/) 而没有主密码的账户，[从您的组织中移除它们](user-management.md#offboard-users)将切它们断对的 Bitwarden 账户的所有访问权限，除非：
 
-1. 您事先使用[账户恢复](account-recovery.md)为他们分配一个主密码。
+1. 您事先使用[账户恢复](account-recovery/about-account-recovery.md)为他们分配一个主密码。
 2. 用户在账户恢复后至少登录一次，以完全完成账户恢复流程。
 
 此外，除非在用户被从组织中移除之前采取上述步骤，否则用户将无法重新加入您的组织。在这种情况下，用户将需要[删除他们的账户](../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并收到一份新的邀请以创建账户并加入您的组织。
@@ -239,7 +239,7 @@
 
 * 无权限访问任何组织密码库项目、集合等。
 * 无法使用 [SSO 登录](../../login-with-sso/)，或使用[组织 Duo](../../account/two-step-login/setup-guides/two-step-login-via-duo.md) 进行两步登录。
-* 不受您的组织[策略](../manage-shared-items/enterprise-policies.md)的约束。
+* 不受您的组织[策略](../oversight-visibility/enterprise-policies.md)的约束。
 * 不占用许可证座位。
 
 ### 恢复访问权限 <a href="#restore-access" id="restore-access"></a>

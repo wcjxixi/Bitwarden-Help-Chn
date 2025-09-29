@@ -125,7 +125,7 @@ bw login --apikey
 此命令将提示您输入个人 `client_id` 和 `client_secret`。使用这些值对您的会话进行身份验证后，您就可以使用 `unlock` 命令了（[了解更多](password-manager-cli.md#unlock)）。
 
 {% hint style="success" %}
-如果您的组织[要求 SSO](../../../admin-console/manage-shared-items/enterprise-policies.md#single-sign-on-authentication)，您仍然可以使用 `--apikey` 登录 CLI。
+如果您的组织[要求 SSO](../../../admin-console/oversight-visibility/enterprise-policies.md#single-sign-on-authentication)，您仍然可以使用 `--apikey` 登录 CLI。
 {% endhint %}
 
 #### 使用 API 密钥环境变量 <a href="#using-api-key-environment-variables" id="using-api-key-environment-variables"></a>
@@ -145,7 +145,7 @@ bw login --sso
 此命令将在您的 Web 浏览器中启动 SSO 身份验证流程。您的会话通过身份验证后，您就可以使用 `unlock` 命令了（[了解更多](password-manager-cli.md#unlock)）。
 
 {% hint style="success" %}
-如果您的组织[要求 SSO](../../../admin-console/manage-shared-items/enterprise-policies.md#single-sign-on-authentication)，您仍然可以使用 `--apikey` 登录 CLI。
+如果您的组织[要求 SSO](../../../admin-console/oversight-visibility/enterprise-policies.md#single-sign-on-authentication)，您仍然可以使用 `--apikey` 登录 CLI。
 {% endhint %}
 
 ## 解锁 <a href="#unlock" id="unlock"></a>
@@ -856,7 +856,7 @@ CLI 不支持 FIDO2 和 Duo。
 
 #### 组织用户类型 <a href="#organization-user-types" id="organization-user-types"></a>
 
-指示[用户的类型](../../../admin-console/manage-members/member-roles-and-permissions.md)：
+指示[用户的类型](../../../admin-console/manage-members/member-roles.md)：
 
 | 名称  | 值 |
 | --- | - |

@@ -44,7 +44,7 @@ Bitwarden 客户端/服务器
 
 ### 用户个人密码库 <a href="#users-personal-vaults" id="users-personal-vaults"></a>
 
-创建 Bitwarden 账户的任何人都将拥有自己的个人密码库，可以从任何客户端应用程序访问。个人密码库对每个用户都是唯一的，并且只有该用户拥有访问它的钥匙，使用他们的电子邮箱地址和主密码的组合。账户所有者对个人账户以及存储在其中的个人[密码库项目](../../your-vault/vault-items.md)负责。组织[所有者、管理员和经理](member-roles-and-permissions.md)在设计上无法看到任何其他用户的个人密码库，从而确保某人的个人数据仍然属于他们自己。
+创建 Bitwarden 账户的任何人都将拥有自己的个人密码库，可以从任何客户端应用程序访问。个人密码库对每个用户都是唯一的，并且只有该用户拥有访问它的钥匙，使用他们的电子邮箱地址和主密码的组合。账户所有者对个人账户以及存储在其中的个人[密码库项目](../../your-vault/vault-items.md)负责。组织[所有者、管理员和经理](member-roles.md)在设计上无法看到任何其他用户的个人密码库，从而确保某人的个人数据仍然属于他们自己。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/211wU2Nguupsr80j2vCSRz/d157eca06fe478049a3386cbe5b7ce56/bitwarden-individual-personal-vault.png?fm=webp&h=285&q=50&w=920" %}
 个人了密码库
@@ -57,7 +57,7 @@ Bitwarden 客户端/服务器
 
 个人密码库是 [Bitwarden 理念](onboarding-and-succession.md#the-bitwarden-approach)的一个重要组成部分。员工每天都会使用一系列的凭据，无论是个人的还是职业的，**在一个领域形成的习惯通常会成为另一个领域的习惯**。我们认为，在个人生活中使用适当的安全措施的员工会将这种良好的行为带到他们的职业生活中，从而在此过程中**保护您的业务**。
 
-在这两个领域使用相同的工具有助于更快和更容易地形成这种习惯。企业组织拥有[配置策略](../manage-shared-items/enterprise-policies.md)选项，包括禁用个人密码库。
+在这两个领域使用相同的工具有助于更快和更容易地形成这种习惯。企业组织拥有[配置策略](../oversight-visibility/enterprise-policies.md)选项，包括禁用个人密码库。
 {% endhint %}
 
 ## Bitwarden 组织 <a href="#bitwarden-organizations" id="bitwarden-organizations"></a>
@@ -118,7 +118,7 @@ Bitwarden 组织以可扩展且安全的方式管理用户和数据。单独管�
 
 #### 全面的基于角色的访问控制 <a href="#comprehensive-role-based-access-controls" id="comprehensive-role-based-access-controls"></a>
 
-Bitwarden 使用了一种企业友好的方法来实现大规模的共享。用户可以被添加到具有[多个不同角色](member-roles-and-permissions.md)的组织中，隶属于不同的[群组](onboarding-and-succession.md#groups)，并将这些群组分配给不同的[集合](onboarding-and-succession.md#collections)，以实现精细化访问权限。可用的角色中有一个[自定义角色](member-roles-and-permissions.md#custom-role)，它用于管理权限的精细化配置。
+Bitwarden 使用了一种企业友好的方法来实现大规模的共享。用户可以被添加到具有[多个不同角色](member-roles.md)的组织中，隶属于不同的[群组](onboarding-and-succession.md#groups)，并将这些群组分配给不同的[集合](onboarding-and-succession.md#collections)，以实现精细化访问权限。可用的角色中有一个[自定义角色](member-roles.md#custom-role)，它用于管理权限的精细化配置。
 
 ### 离职用户 <a href="#offboarding-users" id="offboarding-users"></a>
 
@@ -147,7 +147,7 @@ Alice 是您企业中的一个**用户**，该组织托管在 Bitwarden Cloud �
 {% hint style="danger" %}
 对于那些使用[受信任设备 SSO](../login-with-sso/trusted-devices/about-trusted-devices.md) 而没有主密码的账户，[从您的组织中移除他们](user-management.md#offboard-users)将切断其对 Bitwarden 账户的所有访问权限，除非：
 
-1. 您事先使用[账户恢复](account-recovery.md)为其分配了主密码。
+1. 您事先使用[账户恢复](account-recovery/about-account-recovery.md)为其分配了主密码。
 2. 用户在账户恢复后至少登录一次，以便完全完成账户恢复工作流程。
 
 此外，除非在用户从组织中删除之前采取上述步骤，否则用户将无法重新加入组织。在这种情况下，用户将被要求[删除其账户](../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并收到创建账户和加入组织的新邀请。
@@ -157,7 +157,7 @@ Alice 是您企业中的一个**用户**，该组织托管在 Bitwarden Cloud �
 
 #### 管理接管 <a href="#administrative-take-over" id="administrative-take-over"></a>
 
-使用[主密码重置策略](../manage-shared-items/enterprise-policies.md#account-recovery-administration)，您企业的所有者和管理员可以在继任期间重置用户的主密码。
+使用[主密码重置策略](../oversight-visibility/enterprise-policies.md#account-recovery-administration)，您企业的所有者和管理员可以在继任期间重置用户的主密码。
 
 重置用户的主密码后，用户将退出所有活动的 Bitwarden 会话，并将其登录凭据重置为管理员指定的凭据，这意味着该管理员（也只有该管理员）将拥有该用户密码库数据的密钥，包括个人密码库中的项目。 这种密码库接管策略通常被企业用来确保员工不会保留对可能与工作相关的个人密码库项目的访问权限，并可用于促进对员工可能使用的每个凭据的审计。
 
@@ -167,7 +167,7 @@ Alice 是您企业中的一个**用户**，该组织托管在 Bitwarden Cloud �
 
 #### 移除个人密码库 <a href="#removing-the-individual-vault" id="removing-the-individual-vault"></a>
 
-如果组织需要实时控制所有密码库项目，您可以使用[禁用个人密码库策略](../manage-shared-items/enterprise-policies.md#remove-individual-vault)，要求用户将所有密码库项目保存到组织。这将避免在继任过程中接管和审计用户账户，因为一旦从组织中移除，账户中的数据将完全清空。
+如果组织需要实时控制所有密码库项目，您可以使用[禁用个人密码库策略](../oversight-visibility/enterprise-policies.md#remove-individual-vault)，要求用户将所有密码库项目保存到组织。这将避免在继任过程中接管和审计用户账户，因为一旦从组织中移除，账户中的数据将完全清空。
 
 #### 删除不再登录的账户 <a href="#login-less-account-deletion" id="login-less-account-deletion"></a>
 
@@ -235,7 +235,7 @@ Bitwarden 企业组织可以使用 SAML 2.0 或 OIDC 与您现有的身份提供
 
 ### 事件日志 <a href="#event-logs" id="event-logs"></a>
 
-Bitwarden 组织包括了对[事件日志](../reporting/event-logs.md)的访问，这些日志可以直接从网页密码库查看或[导出以在 Splunk 等安全信息和事件管理（SIEM）系统中进行分析](../reporting/event-logs.md#siem-and-external-systems-integrations)。事件日志包括以下信息：
+Bitwarden 组织包括了对[事件日志](../oversight-visibility/event-logging/event-logs.md)的访问，这些日志可以直接从网页密码库查看或[导出以在 Splunk 等安全信息和事件管理（SIEM）系统中进行分析](../oversight-visibility/event-logging/event-logs.md#siem-and-external-systems-integrations)。事件日志包括以下信息：
 
 * 用户 - 项目交互
 * 对密码库项目所做的更改
@@ -279,4 +279,4 @@ Directory Connector、SSO 登录、企业策略和您的密码库独立或协调
 
 ### 问：我们能否防止员工将公司组织的凭据复制到他们的个人密码库中？ <a href="#q-can-we-prevent-employees-from-duplicating-credentials-from-the-company-organization-to-their-indiv" id="q-can-we-prevent-employees-from-duplicating-credentials-from-the-company-organization-to-their-indiv"></a>
 
-**答：**&#x53EF;以！使用我们[全面的基于角色的访问控制套件](member-roles-and-permissions.md#access-control)，您可以将凭据设为**只读**以防止复制副本。
+**答：**&#x53EF;以！使用我们[全面的基于角色的访问控制套件](member-roles.md#access-control)，您可以将凭据设为**只读**以防止复制副本。

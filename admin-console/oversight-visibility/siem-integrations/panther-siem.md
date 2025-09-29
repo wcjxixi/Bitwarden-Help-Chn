@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/panther-siem/)
 {% endhint %}
 
-Panther 是一个安全信息和事件管理 (SIEM) 平台，可与 Bitwarden 组织一起使用。组织用户可以使用 Panther 监控系统上的 Bitwarden App 监控[事件](../event-logs.md)活动。
+Panther 是一个安全信息和事件管理 (SIEM) 平台，可与 Bitwarden 组织一起使用。组织用户可以使用 Panther 监控系统上的 Bitwarden App 监控[事件](../event-logging/event-logs.md)活动。
 
 ## 设置 <a href="#setup" id="setup"></a>
 
@@ -86,5 +86,5 @@ Panther  事件日志
 Panther JSON 对象
 {% endembed %}
 
-有关 Bitwarden 组织活动的更多信息，请参阅[此处](../event-logs.md#organization-events)。有关针对特定查询的其他选项，请参阅 [Panther Data Explorer](https://docs.panther.com/search/data-explorer) 文档以获取更多信息。
+有关 Bitwarden 组织活动的更多信息，请参阅[此处](../event-logging/event-logs.md#organization-events)。有关针对特定查询的其他选项，请参阅 [Panther Data Explorer](https://docs.panther.com/search/data-explorer) 文档以获取更多信息。
 

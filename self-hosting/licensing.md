@@ -45,7 +45,7 @@
 
 ## 组织许可证 <a href="#organization-license" id="organization-license"></a>
 
-使用家庭或企业组织的组织许可证时，请遵循以下步骤。您必须是[组织所有者](../admin-console/manage-members/member-roles-and-permissions.md)才能检索、申请和更新许可证。
+使用家庭或企业组织的组织许可证时，请遵循以下步骤。您必须是[组织所有者](../admin-console/manage-members/member-roles.md)才能检索、申请和更新许可证。
 
 ### 获取组织许可证 <a href="#retrieve-organization-license" id="retrieve-organization-license"></a>
 

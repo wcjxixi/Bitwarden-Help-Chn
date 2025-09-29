@@ -58,7 +58,7 @@ SIEM 事件监控平台提供了很多特定的字段，这些字段用于监控
 
 * 密码库使用情况
   * `1000` 登录了
-  * `1010` 用户请求了[设备批准](../login-with-sso/trusted-devices/approve-a-trusted-device.md)
+  * `1010` 用户请求了[设备批准](../../login-with-sso/trusted-devices/approve-a-trusted-device.md)
 
 ## 关键的密码库操作 <a href="#critical-vault-actions" id="critical-vault-actions"></a>
 
@@ -72,7 +72,7 @@ SIEM 事件监控平台提供了很多特定的字段，这些字段用于监控
   * `1002` 启用/更新了两步登录
   * `1003` 禁用了两步登录
   * `1007` 用户导出了他们的个人密码库项目
-  * `1603` 管理[提供商](../../provider-portal/provider-portal-overview.md)访问了组织密码库
+  * `1603` 管理[提供商](../../../provider-portal/provider-portal-overview.md)访问了组织密码库
 * 组织活动
   * `1500` 邀请了用户 `user-identifier`
   * `1501` 确认了用户 `user-identifier`

@@ -142,4 +142,4 @@ Bitwarden 公共 API 使用传统的 HTTP 响应代码来表示 API 请求是成
 有关使用 Bitwarden 公共 API 的更多信息，请参阅以下文章：
 
 * [Bitwarden Public API OAS 规范](https://bitwarden.com/help/api/)
-* [事件日志](../admin-console/reporting/event-logs.md)
+* [事件日志](../admin-console/oversight-visibility/event-logging/event-logs.md)

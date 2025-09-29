@@ -73,13 +73,13 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 
 * 无权访问任何组织密码库项目、集合等。
 * 无法使用 [SSO 登录](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)，或使用 [Organizational Duo](../../../account/two-step-login/setup-guides/two-step-login-via-duo.md) 进行两步登录。
-* 不受您的组织[策略](../../manage-shared-items/enterprise-policies.md)的约束。
+* 不受您的组织[策略](../../oversight-visibility/enterprise-policies.md)的约束。
 * 不占用许可席位。
 
 {% hint style="danger" %}
 对于那些因[使用受信任设备 SSO](../../login-with-sso/trusted-devices/about-trusted-devices.md) 而没有主密码的账户，[将其从您的组织中移除](../user-management.md#offboard-users)将切断其对 Bitwarden 账户的所有访问权限，除非：
 
-1. 您事先使用[账户恢复](../account-recovery.md)功能为其分配了主密码。
+1. 您事先使用[账户恢复](../account-recovery/about-account-recovery.md)功能为其分配了主密码。
 2. 用户在账户恢复后至少登录一次，以便全部完成账户恢复工作流程。&#x20;
 
 此外，除非在将用户从组织中删除之前采取上述步骤，否则用户将无法重新加入组织。在这种情况下，用户将被要求[删除其账户](../../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并将收到创建账户并加入组织的新邀请。
@@ -91,7 +91,7 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 
 ## SCIM 事件日志 <a href="#scim-events" id="scim-events"></a>
 
-组织将捕获 SCIM 集成所执行操作的[事件日志](../../reporting/event-logs.md)，包括邀请用户和移除用户，以及创建或删除群组。SCIM 派生的事件将在**成员**列中注册 `SCIM`。
+组织将捕获 SCIM 集成所执行操作的[事件日志](../../oversight-visibility/event-logging/event-logs.md)，包括邀请用户和移除用户，以及创建或删除群组。SCIM 派生的事件将在**成员**列中注册 `SCIM`。
 
 ## 已有用户和群组 <a href="#pre-existing-users-and-groups" id="pre-existing-users-and-groups"></a>
 

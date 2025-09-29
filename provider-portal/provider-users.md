@@ -76,7 +76,7 @@
 ## 提供商用户的类型 <a href="#provider-user-types" id="provider-user-types"></a>
 
 {% hint style="success" %}
-**管理客户组织的用户？**&#x7EC4;织有一组不同于提供商用户类型的[用户类型和访问控制](../admin-console/manage-members/member-roles-and-permissions.md)。
+**管理客户组织的用户？**&#x7EC4;织有一组不同于提供商用户类型的[用户类型和访问控制](../admin-console/manage-members/member-roles.md)。
 {% endhint %}
 
 Bitwarden 提供商用户可以被授予两种用户类型之一来管理他们对提供商的访问权限。**两种用户类型都能够完全管理任何客户组织**。Bitwarden 强烈建议您为第二个用户提供供应商管理员角色以进行故障转移。

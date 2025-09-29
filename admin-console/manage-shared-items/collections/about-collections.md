@@ -22,7 +22,7 @@
 与许多组织管理任务一样，创建集合**只能从网页 App 完成**。
 {% endhint %}
 
-具有集合管理[权限](../../manage-members/member-roles-and-permissions.md#permissions)的组织用户可以创建集合。要创建集合：
+具有集合管理[权限](../../manage-members/member-roles.md#permissions)的组织用户可以创建集合。要创建集合：
 
 1、登录到 Bitwarden 网页密码库，选择 ✚**新增**按钮，然后从下拉菜单选择**集合**：
 
@@ -36,7 +36,7 @@
 仅当您使用目录连接器时，**外部 ID** 字段才相关。并且当已配置为使用 [SCIM](../../manage-members/scim/about-scim.md)、目录连接器或 API 时，该字段将在对话框中显示。
 {% endhint %}
 
-3、在**访问权限**选项卡中，为现有的成员或[群组](../../manage-members/groups.md)分配访问权限。对于每个选择，分配适当的[权限](../../manage-members/member-roles-and-permissions.md#permissions)级别。作为集合的创建者，您将拥有「可以管理」的权限。
+3、在**访问权限**选项卡中，为现有的成员或[群组](../../manage-members/groups.md)分配访问权限。对于每个选择，分配适当的[权限](../../manage-members/member-roles.md#permissions)级别。作为集合的创建者，您将拥有「可以管理」的权限。
 
 4、选择**保存**以完成集合的创建。
 
@@ -144,7 +144,7 @@
 
 ### 对非管理集合添加访问权限 <a href="#add-access-to-un-managed-collections" id="add-access-to-un-managed-collections"></a>
 
-如果**所有者和管理员可以管理所有集合和项目**选项关闭（[了解更多](collection-management.md#collection-management-settings)），则在集合视图中，没有为其分配具有「[可以管理](../../manage-members/member-roles-and-permissions.md)」权限的成员的任何集合都将显示一个**添加访问权限**徽章：
+如果**所有者和管理员可以管理所有集合和项目**选项关闭（[了解更多](collection-management.md#collection-management-settings)），则在集合视图中，没有为其分配具有「[可以管理](../../manage-members/member-roles.md)」权限的成员的任何集合都将显示一个**添加访问权限**徽章：
 
 {% embed url="https://bitwarden.com/assets/1Nqn29nNIkKtb5HfWkfcWK/64c3875f60d3d292837d0655ad3b146c/2024-12-05_09-56-43.png?w=1031&fm=avif&q=80" %}
 对非管理集合添加访问权限

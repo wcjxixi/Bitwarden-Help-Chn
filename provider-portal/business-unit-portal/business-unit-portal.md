@@ -48,7 +48,7 @@
 {% hint style="info" %}
 **如上图所示**，如果单元管理员想要使用组织来管理他们自己的凭据，则**不应**将其包含到业务单元中。
 
-为这种情况创建一个独立的组织将确保可以为用户提供适当的[用户类型和凭据访问控制](../../admin-console/manage-members/member-roles-and-permissions.md)。
+为这种情况创建一个独立的组织将确保可以为用户提供适当的[用户类型和凭据访问控制](../../admin-console/manage-members/member-roles.md)。
 {% endhint %}
 
 组织将 Bitwarden 用户和密码库项目关联起来，以[安全地共享](../../organizations/sharing.md)登录、支付卡、笔记和身份。组织拥有一个独立的视图，即管理员控制台，服务用户可以在其中管理组织的集合、管理成员和群组、运行报告、导入数据以及配置组织设置：

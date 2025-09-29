@@ -28,4 +28,4 @@ Password Manager CLI 可用于提取可能为 API 提供的事件分析提供有
 
 ### 事件导出 <a href="#event-exports" id="event-exports"></a>
 
-对于偏好基于文件摄取的 SIEM 平台，Bitwarden 允许手动以 .csv 格式导出事件日志。这种方法适用于批量处理场景和历史数据分析。[了解有关导出事件日志的更多信息](../event-logs.md#export-events)。
+对于偏好基于文件摄取的 SIEM 平台，Bitwarden 允许手动以 .csv 格式导出事件日志。这种方法适用于批量处理场景和历史数据分析。[了解有关导出事件日志的更多信息](../event-logging/event-logs.md#export-events)。

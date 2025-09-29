@@ -1,4 +1,4 @@
-# 成员角色和权限
+# 成员角色
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/user-types-access-control/)
@@ -12,7 +12,7 @@ Bitwarden 组织的成员可以被授予各种角色和集合权限。您可以�
 
 ## 成员角色 <a href="#member-roles" id="member-roles"></a>
 
-角色决定了成员在组织可用工具范围内可以采取的操作，但无法决定[他们可以访问哪些集合](member-roles-and-permissions.md#permissions)。
+角色决定了成员在组织可用工具范围内可以采取的操作，但无法决定[他们可以访问哪些集合](member-roles.md#permissions)。
 
 {% hint style="info" %}
 ~~从 2024 年 03 月 07 日开始，尚未开启~~[~~集合管理~~](../manage-shared-items/collections/collection-management.md)~~的组织将开始批量迁移到一个更新了的权限结构。如果尚未迁移，您的组织将在接下来的几周内迁移，或者如果您手动打开集合管理。~~
@@ -31,7 +31,7 @@ Bitwarden 组织的成员可以被授予各种角色和集合权限。您可以�
 | 用户                                                                                                        | <p>访问已分配集合中的共享项目。可以从已分配的集合中添加、编辑或删除项目（除非被分配了<strong>查看项目</strong>权限）。</p><p></p><p><a href="../manage-shared-items/collections/collection-management.md">如果组织允许</a>，可以创建、管理和删除集合。</p>                                                                     |
 | 管理员                                                                                                       | <p>上述所有的权限，以及：</p><p>+ 将用户分配给用户群组</p><p>+ 创建或删除用户群组</p><p>+ 邀请并确认新用户</p><p>+ 管理企业策略</p><p>+ 查看事件日志</p><p>+ 导出组织密码库数据</p><p>+ 管理账户恢复<br>+ 查看密码库健康报告</p><p>+ 管理域名验证</p><p>+ 管理 SSO 配置</p><p>+ 管理设备批准</p><p></p><p><strong>管理员用户自动拥有所全部集合的访问权限。</strong></p> |
 | 所有者                                                                                                       | <p>上述所有的权限，以及：</p><p>+ 管理集合管理设置</p><p>+ 管理计费，包括订阅、支付方式和账单历史记录<br>+ 管理 API 密钥<br>+ 管理组织两步登录<br>+ 管理组织信息，例如名称</p><p>+ 管理 SCIM 配置</p><p></p><p><strong>所有者用户自动拥有全部集合的访问权限。</strong></p>                                                                      |
-| 自定义（仅限[企业](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)计划） | 允许基于每个用户逐一对用户权限进行粒度控制，请参阅[自定义角色](member-roles-and-permissions.md#custom-role)。                                                                                                                                                                            |
+| 自定义（仅限[企业](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)计划） | 允许基于每个用户逐一对用户权限进行粒度控制，请参阅[自定义角色](member-roles.md#custom-role)。                                                                                                                                                                                            |
 
 {% hint style="info" %}
 **仅所有者**可以创建新的所有者，或分配所有者类型到一个现有的用户。出于故障转移目的，Bitwarden 建议创建多个所有者用户。
@@ -64,7 +64,7 @@ Bitwarden 组织的成员可以被授予各种角色和集合权限。您可以�
 
 ## 权限 <a href="#permissions" id="permissions"></a>
 
-权限决定了用户可以对特定集合中的项目执行哪些操作。[角色](member-roles-and-permissions.md#member-roles)只能在单个成员的级别上设置，而权限既可以为单个成员设置，也可以为整个群组设置：
+权限决定了用户可以对特定集合中的项目执行哪些操作。[角色](member-roles.md#member-roles)只能在单个成员的级别上设置，而权限既可以为单个成员设置，也可以为整个群组设置：
 
 {% embed url="https://bitwarden.com/assets/7xXXzsMeryCUtvwwjvqjYr/9a6c7a2916b751acad313f8ddc4ad43e/2025-02-13_10-51-04.png?w=1114&fm=avif&q=80" %}
 权限选项

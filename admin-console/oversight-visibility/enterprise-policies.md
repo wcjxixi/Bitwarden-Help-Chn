@@ -59,7 +59,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 ### 账户恢复管理 <a href="#account-recovery-administration" id="account-recovery-administration"></a>
 
-打开**账户恢复管理**策略将允许所有者和管理员使用[密码重置功能](../manage-members/account-recovery.md)来重置已注册用户的主密码。默认情况下，用户需要[自行注册密码重置](../manage-members/account-recovery.md#self-enroll-in-password-reset)，但也可以使用[自动注册](enterprise-policies.md#automatic-enrollment)选项，对受邀用户强制自动注册。
+打开**账户恢复管理**策略将允许所有者和管理员使用[密码重置功能](../manage-members/account-recovery/about-account-recovery.md)来重置已注册用户的主密码。默认情况下，用户需要[自行注册密码重置](../manage-members/account-recovery/about-account-recovery.md#self-enroll-in-password-reset)，但也可以使用[自动注册](enterprise-policies.md#automatic-enrollment)选项，对受邀用户强制自动注册。
 
 要在您的组织中使用[受信任设备 SSO](../login-with-sso/trusted-devices/about-trusted-devices.md)，您的组织必须开启账户恢复管理策略。
 
@@ -74,7 +74,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 打开**自动注册**选项将在新用户[加入组织的邀请被接受后](../manage-members/user-management.md#accept)自动注册密码重置功能并阻止他们撤销。
 
 {% hint style="info" %}
-已经在组织中的用户不会被注册密码重置，而是需要[自行注册](../manage-members/account-recovery.md#self-enroll-in-password-reset)。
+已经在组织中的用户不会被注册密码重置，而是需要[自行注册](../manage-members/account-recovery/about-account-recovery.md#self-enroll-in-password-reset)。
 {% endhint %}
 
 ### 密码生成器 <a href="#password-generator" id="password-generator"></a>

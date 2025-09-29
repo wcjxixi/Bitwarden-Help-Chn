@@ -45,7 +45,7 @@
 {% hint style="info" %}
 **如上面的图解所示**，如果提供商想使用一个[组织](../admin-console/organizations-overview.md)来管理他们自己的凭据，则**不应**把它作为一个由提供商管理的客户组织。
 
-为这种情况创建一个独立的组织将确保可以为用户提供适当的[用户类型和对凭据的访问控制](../admin-console/manage-members/member-roles-and-permissions.md)。
+为这种情况创建一个独立的组织将确保可以为用户提供适当的[用户类型和对凭据的访问控制](../admin-console/manage-members/member-roles.md)。
 {% endhint %}
 
 组织将 Bitwarden 用户和密码库项目联系在一起，用于[安全地共享](../organizations/sharing.md)登录、支付卡、笔记和身份。组织有一个独立的视图，即管理控制台，提供商服务用户可以在其中管理组织的集合、管理成员和群组、运行报告、导入数据和配置组织设置：

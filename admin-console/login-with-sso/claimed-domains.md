@@ -10,7 +10,7 @@
 
 声明域名支持以下功能：
 
-* **声明成员账户**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户也将被您的组织声明。被声明的成员账户在功能上归组织所有，会限制用户进行某些账户操作，并允许管理员直接删除账户，包括删除该用户的个人密码库，而不是仅将其从组织中移除。[了解更多](../manage-members/claimed-accounts.md)。
+* **声明成员账户**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户也将被您的组织声明。被声明的成员账户在功能上归组织所有，会限制用户进行某些账户操作，并允许管理员直接删除账户，包括删除该用户的个人密码库，而不是仅将其从组织中移除。[了解更多](../oversight-visibility/claimed-domains/claimed-accounts.md)。
 * **为成员提供更便捷的 SSO**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户都将在 SSO 过程中自动绕过要求他们输入 [SSO 标识符](../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#get-your-organization-identifier)的步骤。
 * **自动验证成员电子邮箱**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户在入职时就会[自动验证其电子邮箱](../../your-vault/general-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)。
 
@@ -42,7 +42,7 @@ Bitwarden 将使用 DNS TXT 记录来验证域名声明。该 DNS TXT 记录必�
 3、在**声明域名**界面，您将看到一个活动域名的列表，以及状态检查和选项。如果您没有活动域名，请选择**新增域名**。
 
 {% hint style="success" %}
-如果是首次声明域名，[单一组织策略](../manage-shared-items/enterprise-policies.md#single-organization)将在声明工作流程中自动激活。如果您在 2025.3.0 版本发布之前已经声明了一个域名，则无需遵守此要求。
+如果是首次声明域名，[单一组织策略](../oversight-visibility/enterprise-policies.md#single-organization)将在声明工作流程中自动激活。如果您在 2025.3.0 版本发布之前已经声明了一个域名，则无需遵守此要求。
 {% endhint %}
 
 4、在弹出窗口中，输入**域名名称**。

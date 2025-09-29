@@ -6,7 +6,7 @@
 
 ## 什么是群组？ <a href="#what-are-groups" id="what-are-groups"></a>
 
-群组用于将个人用户联系在一起，并提供一种可扩展的方式来分配权限，包括对[集合](../manage-shared-items/collections/about-collections.md)的访问和其他[访问控制](member-roles-and-permissions.md#access-control)。当[入职新用户](user-management.md)时，将他们添加到群组中，他们将自动继承该群组的配置权限。
+群组用于将个人用户联系在一起，并提供一种可扩展的方式来分配权限，包括对[集合](../manage-shared-items/collections/about-collections.md)的访问和其他[访问控制](member-roles.md#access-control)。当[入职新用户](user-management.md)时，将他们添加到群组中，他们将自动继承该群组的配置权限。
 
 {% hint style="info" %}
 群组适用于[团队和企业组织](../organizations-overview.md#types-of-organizations)。
@@ -24,7 +24,7 @@
 
 ## 创建群组 <a href="#create-a-group" id="create-a-group"></a>
 
-组织的[管理员（或更高级别）](member-roles-and-permissions.md)和[提供商用户](../../provider-portal/provider-users.md#provider-user-types)可以创建和管理群组。要创建群组：
+组织的[管理员（或更高级别）](member-roles.md)和[提供商用户](../../provider-portal/provider-users.md#provider-user-types)可以创建和管理群组。要创建群组：
 
 1、登录到[网页密码库](https://vault.bitwarden.com/)并打开您的组织。
 
@@ -36,9 +36,9 @@
 新建群组
 {% endembed %}
 
-4、为您的群组起个**名称**，并分配所需的[访问控制](member-roles-and-permissions.md#access-control)。
+4、为您的群组起个**名称**，并分配所需的[访问控制](member-roles.md#access-control)。
 
-访问控制用于指定用户可以访问所有项目（即所有集合）或仅限指定的集合，以及是否[隐藏密码或登录为只读](member-roles-and-permissions.md#granular-access-control)。
+访问控制用于指定用户可以访问所有项目（即所有集合）或仅限指定的集合，以及是否[隐藏密码或登录为只读](member-roles.md#granular-access-control)。
 
 {% hint style="success" %}
 **外部 ID** 字段仅在您使用[目录连接器](directory-connector/about-directory-connector.md)时相关。
@@ -66,7 +66,7 @@
 
 ### 编辑集合分配 <a href="#edit-collections-assignments" id="edit-collections-assignments"></a>
 
-如果您要更改已分配给群组的[集合](../manage-shared-items/collections/about-collections.md)或[访问控制](member-roles-and-permissions.md#access-control)：
+如果您要更改已分配给群组的[集合](../manage-shared-items/collections/about-collections.md)或[访问控制](member-roles.md#access-control)：
 
 1. 在您的组织密码库中，打开**管理**选项卡并从左侧菜单中选择**群组**。
 2. 选择要编辑的群组。

@@ -7,7 +7,7 @@
 自定义字段可在任何[项目类型](vault-items.md)上使用，使您可以在密码库项目中存储额外的结构良好的数据字段。自定义字段保存为 `Name:Value` 对，它可以是这三种类型之一：
 
 * **文本型**：存储自由格式的输入（文本、数字等）的字段值
-* **隐藏型**：存储从视图中隐藏的自由格式输入的字段值（对于使用[隐藏密码访问控制](../admin-console/manage-members/member-roles-and-permissions.md)的组织特别有用）
+* **隐藏型**：存储从视图中隐藏的自由格式输入的字段值（对于使用[隐藏密码访问控制](../admin-console/manage-members/member-roles.md)的组织特别有用）
 * **布尔型**：存储布尔值（真/假）的字段值
 * **链接型**：链接到项目的用户名或密码的字段值。指定[正确的字段名称](custom-fields.md#custom-field-names)后，链接型自定义字段可用于解决浏览器扩展无法自动填充特定站点的用户名和密码的问题（[了解更多](../password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md#using-linked-custom-fields)）。
 

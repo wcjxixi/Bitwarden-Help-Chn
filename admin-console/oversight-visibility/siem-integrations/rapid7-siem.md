@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/rapid7-siem/)
 {% endhint %}
 
-Rapid7 是一个安全平台，提供多种分析漏洞和威胁数据的方法，例如安全信息和事件管理 (SIEM)。通过 Rapid7 团队开发的 Rapid7 Bitwarden 集成，企业可以使用 Rapid7 InsightConnect 软件上的 Bitwarden App 监控 Bitwarden 组织和[事件](../event-logs.md)活动。
+Rapid7 是一个安全平台，提供多种分析漏洞和威胁数据的方法，例如安全信息和事件管理 (SIEM)。通过 Rapid7 团队开发的 Rapid7 Bitwarden 集成，企业可以使用 Rapid7 InsightConnect 软件上的 Bitwarden App 监控 Bitwarden 组织和[事件](../event-logging/event-logs.md)活动。
 
 {% hint style="info" %}
 InsightConnect 上的 Bitwarden 插件适用于云用户和 Insight Orchestrator 用户。本指南将演示云设置。有关 Insight Orchestrator 的更多信息，请参阅 [Rapid7 文档](https://docs.rapid7.com/insightconnect/orchestrator/)。

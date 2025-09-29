@@ -10,7 +10,7 @@
 请求管理员批准
 {% endembed %}
 
-作为组织管理员、所有者或具有**管理账户恢复**权限的[自定义用户](../../manage-members/member-roles-and-permissions.md#custom-role)，要批准请求：
+作为组织管理员、所有者或具有**管理账户恢复**权限的[自定义用户](../../manage-members/member-roles.md#custom-role)，要批准请求：
 
 1、登录到 Bitwarden 网页 App 然后使用产品切换器打开「管理控制台」：
 
@@ -48,7 +48,7 @@ Bitwarden 建议在启用和使用批量设备批准之前，先审查重要的�
 
 未批准的请求将在 1 周后失效。您可以通过选择 **✘拒绝请求**来拒绝登录尝试，或者通过选择最上面的选项 **≡**&#x83DC;单然后选择 **✘拒绝所有请求**来拒绝所有现有请求。
 
-[事件](../../reporting/event-logs.md)在以下情况下被记录：
+[事件](../../oversight-visibility/event-logging/event-logs.md)在以下情况下被记录：
 
 * 用户请求了设备批准。
 * 设备请求被批准。

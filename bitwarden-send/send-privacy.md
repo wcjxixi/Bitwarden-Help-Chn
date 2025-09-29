@@ -33,7 +33,7 @@ Send 选项
 ## 隐藏电子邮箱 <a href="#hide-email" id="hide-email"></a>
 
 {% hint style="success" %}
-对于企业组织，可以使用[企业策略](../admin-console/manage-shared-items/enterprise-policies.md#send-options)设置此选项的可用性。
+对于企业组织，可以使用[企业策略](../admin-console/oversight-visibility/enterprise-policies.md#send-options)设置此选项的可用性。
 {% endhint %}
 
 默认情况下，Send 对象将对接收者显示发送者的电子邮箱地址：

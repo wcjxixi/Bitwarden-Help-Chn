@@ -18,12 +18,12 @@
 
 策略允许企业组织为其成员实施安全规则，例如强制使用两步登录。虽然一些策略主要适用于 Password Manager，但有一些策略也广泛适用于 Secrets Manager 的用户：
 
-* [要求两步登录](../../admin-console/manage-shared-items/enterprise-policies.md#require-two-step-login)
-* [主密码要求](../../admin-console/manage-shared-items/enterprise-policies.md#master-password-requirements)
-* [主密码重置](../../admin-console/manage-shared-items/enterprise-policies.md#master-password-reset)
-* [单一组织](../../admin-console/manage-shared-items/enterprise-policies.md#single-organization)
-* [要求单点登录验证](../../admin-console/manage-shared-items/enterprise-policies.md#require-single-sign-on-authentication)
-* [密码库超时](../../admin-console/manage-shared-items/enterprise-policies.md#vault-timeout)
+* [要求两步登录](../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)
+* [主密码要求](../../admin-console/oversight-visibility/enterprise-policies.md#master-password-requirements)
+* [主密码重置](../../admin-console/oversight-visibility/enterprise-policies.md#master-password-reset)
+* [单一组织](../../admin-console/oversight-visibility/enterprise-policies.md#single-organization)
+* [要求单点登录验证](../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)
+* [密码库超时](../../admin-console/oversight-visibility/enterprise-policies.md#vault-timeout)
 
 {% hint style="success" %}
 如果您是 Bitwarden 的新手，我们建议您在入职用户之前先设置策略。
@@ -93,11 +93,11 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 
 ## 账户恢复管理 <a href="#https-bitwarden.com-help-manage-your-secrets-org-account-recovery-administration" id="https-bitwarden.com-help-manage-your-secrets-org-account-recovery-administration"></a>
 
-账户恢复允许指定的管理员恢复企业组织用户账户以及在员工忘记主密码时恢复访问权限。通过启用账户恢复管理策略，可以为组织激活账户恢复功能。[了解如何开始](../../admin-console/manage-members/account-recovery.md)。
+账户恢复允许指定的管理员恢复企业组织用户账户以及在员工忘记主密码时恢复访问权限。通过启用账户恢复管理策略，可以为组织激活账户恢复功能。[了解如何开始](../../admin-console/manage-members/account-recovery/about-account-recovery.md)。
 
 ## 事件日志 <a href="#event-logs" id="event-logs"></a>
 
-[事件日志](../../admin-console/reporting/event-logs.md)是团队或企业组织内发生的事件的时间戳记录。Secrets Manager 事件可从组织密码库的**报告** → **事件日志**以及[机器账户事件日志页面](../your-secrets/machine-accounts.md#service-account-events)获取。
+[事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)是团队或企业组织内发生的事件的时间戳记录。Secrets Manager 事件可从组织密码库的**报告** → **事件日志**以及[机器账户事件日志页面](../your-secrets/machine-accounts.md#service-account-events)获取。
 
 事件日志可以导出并无限期保留。虽然许多事件适用于所有 Bitwarden 产品，有些是特定于 Password Manager 的，但 Secrets Manager 将专门记录以下内容：
 

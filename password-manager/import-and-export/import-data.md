@@ -141,7 +141,7 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 
 ## 导入到集合 <a href="#import-to-a-collection" id="import-to-a-collection"></a>
 
-将数据导入集合，以与您的家人或直接队友等小型团队组织并共享项目。（对于较大的团队，[将数据导入组织](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)）。当您组织的[数据所有权策略](../../admin-console/manage-shared-items/enterprise-policies.md#enforce-organization-data-ownership)限制个人密码库时，个人集合是一个很好的选择。
+将数据导入集合，以与您的家人或直接队友等小型团队组织并共享项目。（对于较大的团队，[将数据导入组织](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)）。当您组织的[数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)限制个人密码库时，个人集合是一个很好的选择。
 
 在**导入数据**页面，选择您组织的**密码库**然后选择**集合**：
 
@@ -187,7 +187,7 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 
 ### 未分配的项目 <a href="#unassigned-items" id="unassigned-items"></a>
 
-组织用户（不是[管理员还是所有者](../../admin-console/manage-members/member-roles-and-permissions.md#member-roles)）必须将所有导入的凭证分配给至少一个集合。有两种方法可以解决此导入错误：
+组织用户（不是[管理员还是所有者](../../admin-console/manage-members/member-roles.md#member-roles)）必须将所有导入的凭证分配给至少一个集合。有两种方法可以解决此导入错误：
 
 * 分配一个您拥有**可以管理**权限的现有集合。
 * 为未指定的项目创建一个新的集合。输入新集合的名称来[自定义导入文件](../../import-export/condition-a-bitwarden-.csv-or-.json.md)。这将自动创建该集合并将项目添加到其中。

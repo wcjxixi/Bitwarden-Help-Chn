@@ -12,7 +12,7 @@
 
 ## 移动项目到组织 <a href="#move-an-item-to-an-organization" id="move-an-item-to-an-organization"></a>
 
-组织成员可以将项目移动到任何已分配的集合，除非他们被赋予了此集合的[可以查看](../admin-console/manage-members/member-roles-and-permissions.md#permissions)权限。要移动项目到组织：
+组织成员可以将项目移动到任何已分配的集合，除非他们被赋予了此集合的[可以查看](../admin-console/manage-members/member-roles.md#permissions)权限。要移动项目到组织：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -110,12 +110,12 @@ bw move <itemid> <organizationid> [encodedJson]
 {% endtabs %}
 
 {% hint style="danger" %}
-将项目移动到某个组织会将所有权转移该组织。组织中拥有适当[权限](../admin-console/manage-members/member-roles-and-permissions.md#permissions)的任何人都可以编辑或删除该项目，删除此项目将导致原所有者的项目也被删除。
+将项目移动到某个组织会将所有权转移该组织。组织中拥有适当[权限](../admin-console/manage-members/member-roles.md#permissions)的任何人都可以编辑或删除该项目，删除此项目将导致原所有者的项目也被删除。
 {% endhint %}
 
 ## 创建组织项目 <a href="#create-an-organization-item" id="create-an-organization-item"></a>
 
-组织成员可以直接为任何已分配的集合创建新的项目，除非他们被赋予了此集合的[可以查看](../admin-console/manage-members/member-roles-and-permissions.md#permissions)权限。要从网页密码库创建组织拥有的项目：：
+组织成员可以直接为任何已分配的集合创建新的项目，除非他们被赋予了此集合的[可以查看](../admin-console/manage-members/member-roles.md#permissions)权限。要从网页密码库创建组织拥有的项目：：
 
 {% tabs %}
 {% tab title="我的密码库视图" %}

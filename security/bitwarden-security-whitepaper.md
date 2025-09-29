@@ -127,7 +127,7 @@ Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备�
 
 #### 账户恢复 <a href="#account-recovery" id="account-recovery"></a>
 
-[账户恢复](../admin-console/manage-members/account-recovery.md)功能允许企业组织的指定管理员在员工忘记主密码的情况下恢复成员账户并恢复访问权限。企业也可能希望当员工离职时使用账户恢复功能来重新获得成员账户的所有权。
+[账户恢复](../admin-console/manage-members/account-recovery/about-account-recovery.md)功能允许企业组织的指定管理员在员工忘记主密码的情况下恢复成员账户并恢复访问权限。企业也可能希望当员工离职时使用账户恢复功能来重新获得成员账户的所有权。
 
 {% hint style="info" %}
 以下信息涉及到加密密钥名称和过程，其包含在[哈希、密钥派生和加密](bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)部分中。请考虑先阅读那部分。
@@ -373,7 +373,7 @@ Bitwarden 组织使用集合、工程和群组对密码库数据和用户进行�
 
 #### 事件日志 <a href="#event-logs" id="event-logs"></a>
 
-事件日志包含带有时间戳的详细信息，说明组织内发生了哪些操作或变更。这些日志有助于研究凭据或配置的更改，对审计跟踪调查和故障排除非常有用。拥有 Password Manager 和 Secrets Manager的团队和企业组织均可使用事件日志。了解更多有关[事件日志](../admin-console/reporting/event-logs.md)的信息。
+事件日志包含带有时间戳的详细信息，说明组织内发生了哪些操作或变更。这些日志有助于研究凭据或配置的更改，对审计跟踪调查和故障排除非常有用。拥有 Password Manager 和 Secrets Manager的团队和企业组织均可使用事件日志。了解更多有关[事件日志](../admin-console/oversight-visibility/event-logging/event-logs.md)的信息。
 
 团队和企业组织也可以使用 [Bitwarden 公共 API ](../organizations/bitwarden-public-api.md)为其事件日志收集更多数据。
 
@@ -381,11 +381,11 @@ Bitwarden 组织使用集合、工程和群组对密码库数据和用户进行�
 
 Bitwarden 提供多种安全信息和事件管理 (SIEM) 集成：
 
-* [Splunk](../admin-console/reporting/configure-siem/splunk-siem.md)
-* [Panther](../admin-console/reporting/configure-siem/panther-siem.md)
-* [Elastic](../admin-console/reporting/configure-siem/elastic-siem.md)
+* [Splunk](../admin-console/oversight-visibility/siem-integrations/splunk-siem.md)
+* [Panther](../admin-console/oversight-visibility/siem-integrations/panther-siem.md)
+* [Elastic](../admin-console/oversight-visibility/siem-integrations/elastic-siem.md)
 
-对于其他 SIEM 系统，可结合使用 API 和 CLI 来收集数据。[此处](../admin-console/reporting/event-logs.md#siem-and-external-systems-integrations)概述了这一过程。
+对于其他 SIEM 系统，可结合使用 API 和 CLI 来收集数据。[此处](../admin-console/oversight-visibility/event-logging/event-logs.md#siem-and-external-systems-integrations)概述了这一过程。
 
 ## 数据保护 <a href="#data-protection" id="data-protection"></a>
 

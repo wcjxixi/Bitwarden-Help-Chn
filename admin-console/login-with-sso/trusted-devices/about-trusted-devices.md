@@ -22,7 +22,7 @@
 
 {% tabs %}
 {% tab title="入职" %}
-当新用户加入组织时，会使用**组织公钥**对其账户加密密钥进行加密，从而创建**账户恢复密钥**（[了解更多](../../manage-members/account-recovery.md)）。账户恢复是启用受信任设备 SSO 的先决条件。
+当新用户加入组织时，会使用**组织公钥**对其账户加密密钥进行加密，从而创建**账户恢复密钥**（[了解更多](../../manage-members/account-recovery/about-account-recovery.md)）。账户恢复是启用受信任设备 SSO 的先决条件。
 
 然后询问用户是否想要记住或信任此设备。当他们选择这样做时：
 
@@ -115,7 +115,7 @@
 {% hint style="danger" %}
 对于那些因使用受信任设备 SSO 而没有主密码的账户，[将其从您的组织中移除](../../manage-members/user-management.md#offboard-users)或[撤销其访问权限](../../manage-members/user-management.md#revoke-access)将切断其对 Bitwarden 账户的所有访问权限，除非：
 
-1. 您事先使用[账户恢复](../../manage-members/account-recovery.md)功能为其分配了主密码。
+1. 您事先使用[账户恢复](../../manage-members/account-recovery/about-account-recovery.md)功能为其分配了主密码。
 2. 用户在账户恢复后至少登录一次，以便完全完成账户恢复流程。
 
 此外，除非在将用户从组织中删除之前执行上述步骤，否则用户将无法重新加入您的组织。在这种情况下，用户将需要[删除其账户](../../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并接收新的邀请以创建账户并加入您的组织。

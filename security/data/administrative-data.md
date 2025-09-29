@@ -10,7 +10,7 @@
 我们鼓励您查看我们的[隐私政策](https://bitwarden.com/privacy)页面以了解更多信息。
 {% endhint %}
 
-对于个人、高级和家庭账户，Bitwarden **不会记录**有关身份验证尝试（成功或失败）或使用 Bitwarden 产品的特定信息。对于团队和企业组织的成员，此类信息（包括 IP 地址）会记录在[事件日志](../../admin-console/reporting/event-logs.md)中以供管理员和所有者访问。
+对于个人、高级和家庭账户，Bitwarden **不会记录**有关身份验证尝试（成功或失败）或使用 Bitwarden 产品的特定信息。对于团队和企业组织的成员，此类信息（包括 IP 地址）会记录在[事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)中以供管理员和所有者访问。
 
 如上所述，Bitwarden 确实会访问一些数据以向您提供 Bitwarden 服务，包括：
 

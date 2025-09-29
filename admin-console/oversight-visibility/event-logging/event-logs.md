@@ -18,7 +18,7 @@
 事件日志
 {% endembed %}
 
-事件日志可以从 [Bitwarden 公共 API](../../organizations/bitwarden-public-api.md) 的 `/events` 端点访问和导出，并无限期保留，但每次只能查看 367 天的数据（由范围选择器决定）。
+事件日志可以从 [Bitwarden 公共 API](../../../organizations/bitwarden-public-api.md) 的 `/events` 端点访问和导出，并无限期保留，但每次只能查看 367 天的数据（由范围选择器决定）。
 
 Bitwarden 客户端和服务器都会捕获事件，其中大多数事件发生在客户端。服务器事件捕获是瞬时的，处理速度也很快，而客户端则每 60 秒向服务器推送一次事件数据，因此您可能会观察到最近事件的报告有轻微延迟。此外，客户端事件数据是通过 API 调用进行通信的，并且会重试，直到成功为止。因此，如果客户端无法与 API 通信，或者被修改为不发送事件，就无法接收并处理这些事件。
 
@@ -34,7 +34,7 @@ Bitwarden 客户端和服务器都会捕获事件，其中大多数事件发生�
 事件日志记录了超过 60 种不同类型的事件。事件日志界面捕捉事件的**时间戳**，包括应用程序的类型和 IP （通过悬停在 **🌎**地球图标上访问）等客户端 App 信息、连接到事件的**用户**、以及**事件**的描述。
 
 {% hint style="info" %}
-每一个**事件**都使用类型代码（`1000`、`1001` 等）关联，以标识事件所捕获的操作。[Bitwarden 公共 API](../../organizations/bitwarden-public-api.md) 使用类型代码来标识被事件所记录的操作。
+每一个**事件**都使用类型代码（`1000`、`1001` 等）关联，以标识事件所捕获的操作。[Bitwarden 公共 API](../../../organizations/bitwarden-public-api.md) 使用类型代码来标识被事件所记录的操作。
 {% endhint %}
 
 下面列出了所有事件类型及其相应的类型代码：
@@ -49,9 +49,9 @@ Bitwarden 客户端和服务器都会捕获事件，其中大多数事件发生�
 * 登录尝试因密码错误而失败。(`1005`)
 * 登录尝试因两步登录错误而失败。(`1006`)
 * 用户导出了他们个人的密码库项目。(`1007`)
-* 用户通过[账户恢复](../manage-members/account-recovery.md)更新了密码。(`1008`)
-* 用户使用 [Key Connector](../../self-hosting/key-connector/about-key-connector.md) 迁移了他们的解密密钥。(`1009`)
-* 用户请求了[设备批准](../login-with-sso/trusted-devices/approve-a-trusted-device.md) 。(`1010`)
+* 用户通过[账户恢复](../../manage-members/account-recovery/about-account-recovery.md)更新了密码。(`1008`)
+* 用户使用 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 迁移了他们的解密密钥。(`1009`)
+* 用户请求了[设备批准](../../login-with-sso/trusted-devices/approve-a-trusted-device.md) 。(`1010`)
 
 ### 项目事件 <a href="#item-events" id="item-events"></a>
 
@@ -108,7 +108,7 @@ Bitwarden 客户端和服务器都会捕获事件，其中大多数事件发生�
 * 编辑了组织设置。(`1600`)
 * 清除了组织密码库。(`1601`)
 * 导出了组织密码库。(`1602`)
-* 管理[提供商](../../provider-portal/provider-portal-overview.md)访问了组织密码库。(`1603`)
+* 管理[提供商](../../../provider-portal/provider-portal-overview.md)访问了组织密码库。(`1603`)
 * 组织启用了 SSO。(`1604`)
 * 组织禁用了 SSO。(`1605`)
 * 组织启用了 Key Connector。(`1606`)
@@ -123,7 +123,7 @@ Bitwarden 客户端和服务器都会捕获事件，其中大多数事件发生�
 
 ### Secrets Manager 事件 <a href="#secrets-manager-events" id="secrets-manager-events"></a>
 
-Secrets Manager 事件可从组织密码库的**报告**选项卡和[服务账户事件日志页面](../../secrets-manager/your-secrets/machine-accounts.md#machine-account-events)获取。捕获以下 Secrets Manager 事件：
+Secrets Manager 事件可从组织密码库的**报告**选项卡和[服务账户事件日志页面](../../../secrets-manager/your-secrets/machine-accounts.md#machine-account-events)获取。捕获以下 Secrets Manager 事件：
 
 * 访问了标识符为 _secret-identifier_ 的机密。(`2100`)
 * 编辑了标识符为 _secret-identifier_ 的机密。(`2101`)
@@ -136,7 +136,7 @@ Secrets Manager 事件可从组织密码库的**报告**选项卡和[服务账�
 
 ### 提供商事件 <a href="#provider-events" id="provider-events"></a>
 
-当[管理提供商](../../provider-portal/provider-portal-overview.md)的成员触发上述任何事件时，**用户**栏将记录提供商的名称。此外，每当管理提供商的成员访问您的组织密码库时，专用于提供商的事件也将被记录：
+当[管理提供商](../../../provider-portal/provider-portal-overview.md)的成员触发上述任何事件时，**用户**栏将记录提供商的名称。此外，每当管理提供商的成员访问您的组织密码库时，专用于提供商的事件也将被记录：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4e95ZWDt6ZBPfina42MZhP/d4653c6aebb2bcff6186e6d49415da61/2024-12-05_09-47-18.png?_a=DAJCwlWIZAAB" %}
 提供商访问事件
@@ -161,7 +161,7 @@ Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19h
 
 ## API 响应 <a href="#api-responses" id="api-responses"></a>
 
-从 [Bitwarden 公共 API](../../organizations/bitwarden-public-api.md) 的 `/events` 端点访问事件日志将返回 JSON 响应，例如下面这样：
+从 [Bitwarden 公共 API](../../../organizations/bitwarden-public-api.md) 的 `/events` 端点访问事件日志将返回 JSON 响应，例如下面这样：
 
 ```bash
 {
@@ -196,10 +196,10 @@ Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19h
 
 Bitwarden 提供了一套与安全信息和事件管理 (SIEM) 平台的全面集成，以利用事件日志：
 
-* [Elastic SIEM](configure-siem/elastic-siem.md)
-* [Microsoft Sentinel SIEM](configure-siem/microsoft-sentinel-siem.md)
-* [Panther SIEM](configure-siem/panther-siem.md)
-* [Rapid7 SIEM](configure-siem/rapid7-siem.md)
-* [Splunk SIEM](configure-siem/splunk-siem.md)
+* [Elastic SIEM](../siem-integrations/elastic-siem.md)
+* [Microsoft Sentinel SIEM](../siem-integrations/microsoft-sentinel-siem.md)
+* [Panther SIEM](../siem-integrations/panther-siem.md)
+* [Rapid7 SIEM](../siem-integrations/rapid7-siem.md)
+* [Splunk SIEM](../siem-integrations/splunk-siem.md)
 
-Bitwarden 还提供了多种数据访问方法，这些数据可能与 SIEM 平台相关，但目前还没有特定的集成。有关上面未列出的 SIEM 的配置帮助，请参阅[非原生 SIEM](configure-siem/non-native-siem.md)。
+Bitwarden 还提供了多种数据访问方法，这些数据可能与 SIEM 平台相关，但目前还没有特定的集成。有关上面未列出的 SIEM 的配置帮助，请参阅[非原生 SIEM](../siem-integrations/non-native-siem.md)。

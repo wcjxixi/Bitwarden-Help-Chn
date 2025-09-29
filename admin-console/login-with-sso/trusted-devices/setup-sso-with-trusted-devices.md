@@ -22,7 +22,7 @@
 * 账户恢复管理策略的**为新用户启用自动注册**选项。
 
 {% hint style="info" %}
-如果您没有事先激活这些策略，它们将在您激活**受信任设备**成员解密选项时自动激活。但是，如果任何账户未启用账户恢复，则他们需要[自行注册](../../manage-members/account-recovery.md#self-enroll-in-password-reset)，然后使用受信任设备[管理员批准](approve-a-trusted-device.md)。启用[账户恢复](../../manage-members/account-recovery.md)的用户必须在账户恢复后至少登录一次才能完全完成账户恢复流程。
+如果您没有事先激活这些策略，它们将在您激活**受信任设备**成员解密选项时自动激活。但是，如果任何账户未启用账户恢复，则他们需要[自行注册](../../manage-members/account-recovery/about-account-recovery.md#self-enroll-in-password-reset)，然后使用受信任设备[管理员批准](approve-a-trusted-device.md)。启用[账户恢复](../../manage-members/account-recovery/about-account-recovery.md)的用户必须在账户恢复后至少登录一次才能完全完成账户恢复流程。
 {% endhint %}
 
 4、从导航中选择**设置** → **单点登录**。如果您尚未设置 SSO，请按照我们的[ SAML 2.0](../../../login-with-sso/saml-2.0-configuration.md) 或 [OIDC 实施](../../../login-with-sso/oidc-configuration.md)指南之一获取帮助。

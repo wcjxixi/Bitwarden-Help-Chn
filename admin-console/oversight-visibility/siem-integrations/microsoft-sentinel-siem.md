@@ -4,11 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/microsoft-sentinel-siem/)
 {% endhint %}
 
-Microsoft Sentinel 是一个安全信息和事件管理 (SIEM) 平台，可用于监控 Bitwarden 组织。企业可使用 Microsoft Sentinel 上的 Bitwarden Event Logs App 监控[事件](../event-logs.md)活动。
+Microsoft Sentinel 是一个安全信息和事件管理 (SIEM) 平台，可用于监控 Bitwarden 组织。企业可使用 Microsoft Sentinel 上的 Bitwarden Event Logs App 监控[事件](../event-logging/event-logs.md)活动。
 
 ## 设置 <a href="#setup" id="setup"></a>
 
-要设置 Bitwarden 集成，需要一个可访问 Microsoft Sentinel 工作区的活动 Azure 账户。此外，还需要 Bitwarden [API 密钥](../../../organizations/bitwarden-public-api.md#authentication)，该密钥只能由[组织所有者](../../manage-members/member-roles-and-permissions.md)获取。
+要设置 Bitwarden 集成，需要一个可访问 Microsoft Sentinel 工作区的活动 Azure 账户。此外，还需要 Bitwarden [API 密钥](../../../organizations/bitwarden-public-api.md#authentication)，该密钥只能由[组织所有者](../../manage-members/member-roles.md)获取。
 
 ## 将 Bitwarden App 安装到您的 Microsoft Sentinel 仪表盘 <a href="#install-the-bitwarden-app-to-your-microsoft-sentinel-dashboard" id="install-the-bitwarden-app-to-your-microsoft-sentinel-dashboard"></a>
 

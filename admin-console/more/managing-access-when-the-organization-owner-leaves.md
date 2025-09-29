@@ -33,7 +33,7 @@ Bitwarden 支持部门无法透露组织当前所有者的身份。这些信息�
 
 {% tab title="否" %}
 * **尝试恢复账户**：如果没有管理员，则需要手动备份组织数据，并尽快重新开始。要备份组织信息：
-  * 使用 Bitwarden 导出功能导出组织密码库数据。这需要用户拥有导入/导出权限的[自定义角色](../manage-members/member-roles-and-permissions.md)。
+  * 使用 Bitwarden 导出功能导出组织密码库数据。这需要用户拥有导入/导出权限的[自定义角色](../manage-members/member-roles.md)。
   * 如果没有用户拥有 Bitwarden 导出权限的自定义角色，用户可以手动复制和粘贴数据，以导出组织密码库数据。
 
 {% hint style="danger" %}

@@ -156,7 +156,7 @@ Bitwarden 使团队和组织能够以一种可扩展的方式轻松、安全地�
 
 可以在群组或用户级别分配 Bitwarden 集合的权限。这意味着每一个群组或用户可以配置为对同一个集合拥有权限。集合的权限包括**只读**和**隐藏密码**选项。
 
-Bitwarden 使用权限结合来确定用户和集合项目的最终访问权限（[了解更多](../admin-console/manage-members/member-roles-and-permissions.md#permissions)）。例如：
+Bitwarden 使用权限结合来确定用户和集合项目的最终访问权限（[了解更多](../admin-console/manage-members/member-roles.md#permissions)）。例如：
 
 * 用户 A 是「Tier 1 Support」群组的成员，该群组可以访问「Support」集合，并拥有查看权限。
 * 用户 A 也是「Support Management」群组的成员，该群组可以访问「Support」集合，并拥有编辑权限。

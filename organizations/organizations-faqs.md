@@ -34,7 +34,7 @@
 
 ### 问：我的组织可以审计哪些事件？ <a href="#q-what-events-are-auditing-for-my-organization" id="q-what-events-are-auditing-for-my-organization"></a>
 
-**答：**&#x6709;关 Bitwarden 事件日志中包含的内容的完整列表，请参阅[事件日志](../admin-console/reporting/event-logs.md)。
+**答：**&#x6709;关 Bitwarden 事件日志中包含的内容的完整列表，请参阅[事件日志](../admin-console/oversight-visibility/event-logging/event-logs.md)。
 
 ### 问：我可以防止用户自我注册到我的组织吗？ <a href="#q-can-i-prevent-users-from-self-registering-into-my-organization" id="q-can-i-prevent-users-from-self-registering-into-my-organization"></a>
 
@@ -83,7 +83,7 @@
 
 ### 问：如何向组织用户隐藏密码？ <a href="#q-how-do-i-hide-a-password-from-my-organizations-users" id="q-how-do-i-hide-a-password-from-my-organizations-users"></a>
 
-**答：**&#x4E3A;您想要对其隐藏密码的用户分配对相关集合的「**查看项目，隐藏密码**」或「编**辑项目，隐藏密码**」[权限](../admin-console/manage-members/member-roles-and-permissions.md#permissions)。
+**答：**&#x4E3A;您想要对其隐藏密码的用户分配对相关集合的「**查看项目，隐藏密码**」或「编**辑项目，隐藏密码**」[权限](../admin-console/manage-members/member-roles.md#permissions)。
 
 ### 问：我离开后，移动到组织的项目是否会被保留？ <a href="#q-does-an-item-i-share-with-the-organization-stay-after-i-leave" id="q-does-an-item-i-share-with-the-organization-stay-after-i-leave"></a>
 

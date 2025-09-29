@@ -59,7 +59,7 @@
 ## 删除组织 <a href="#delete-an-organization" id="delete-an-organization"></a>
 
 {% hint style="info" %}
-只有[组织的所有者](../admin-console/manage-members/member-roles-and-permissions.md)才有权执行这个操作。
+只有[组织的所有者](../admin-console/manage-members/member-roles.md)才有权执行这个操作。
 {% endhint %}
 
 1、使用产品切换器打开管理控制台：

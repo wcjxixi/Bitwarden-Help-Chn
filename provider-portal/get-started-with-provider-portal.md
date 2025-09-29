@@ -125,7 +125,7 @@
 请注意，作为提供商用户，您将无法直接查看、创建或管理个人项目。
 {% endhint %}
 
-3、**配置企业策略**。在开始用户管理部分的设置之前，[配置企业策略](../admin-console/manage-shared-items/enterprise-policies.md)以便为诸如[主密码复杂性](../admin-console/manage-shared-items/enterprise-policies.md#master-password)、[两步登录的使用](../admin-console/manage-shared-items/enterprise-policies.md#two-step-login)和[管理员密码重置](../admin-console/manage-shared-items/enterprise-policies.md#master-password-reset)等设置使用规则。
+3、**配置企业策略**。在开始用户管理部分的设置之前，[配置企业策略](../admin-console/oversight-visibility/enterprise-policies.md)以便为诸如[主密码复杂性](../admin-console/oversight-visibility/enterprise-policies.md#master-password)、[两步登录的使用](../admin-console/oversight-visibility/enterprise-policies.md#two-step-login)和[管理员密码重置](../admin-console/oversight-visibility/enterprise-policies.md#master-password-reset)等设置使用规则。
 
 {% hint style="info" %}
 企业策略**仅适用于企业组织**。

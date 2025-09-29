@@ -37,11 +37,11 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 对于自托管 Bitwarden，请在 Bitwarden 云端创建一个组织，生成[许可证密钥](https://bitwarden.com/host/)，然后在您的服务器上使用该密钥[解锁组织](../../self-hosting/licensing.md#organization-license)。
 {% endhint %}
 
-2、**入职管理用户**。创建好组织后，可以通过入职一些[管理用户](../manage-members/member-roles-and-permissions.md)来简化进一步的设置过程。此时**不要开始最终用户入职**，这一点很重要，因为还有几个步骤来准备您为组织。[此处](../manage-members/user-management.md#onboard-users)了解如何邀请管理员。
+2、**入职管理用户**。创建好组织后，可以通过入职一些[管理用户](../manage-members/member-roles.md)来简化进一步的设置过程。此时**不要开始最终用户入职**，这一点很重要，因为还有几个步骤来准备您为组织。[此处](../manage-members/user-management.md#onboard-users)了解如何邀请管理员。
 
-3、**配置身份服务**。企业组织支持使用 SAML 2.0 或 OpenID Connect (OIDC) 的[单点登录](../../login-with-sso/about-login-with-sso.md) (SSO)。要配置 SSO，请在管理控制台中打开组织的**设置** → **单点登录**界面，[组织所有者和管理员](../manage-members/member-roles-and-permissions.md)都可以访问该界面。
+3、**配置身份服务**。企业组织支持使用 SAML 2.0 或 OpenID Connect (OIDC) 的[单点登录](../../login-with-sso/about-login-with-sso.md) (SSO)。要配置 SSO，请在管理控制台中打开组织的**设置** → **单点登录**界面，[组织所有者和管理员](../manage-members/member-roles.md)都可以访问该界面。
 
-4、**启用企业策略**。[企业策略](../manage-shared-items/enterprise-policies.md)使组织能够为用户实施规则，例如要求使用两步登录。强烈建议在用户入职前配置策略。
+4、**启用企业策略**。[企业策略](../oversight-visibility/enterprise-policies.md)使组织能够为用户实施规则，例如要求使用两步登录。强烈建议在用户入职前配置策略。
 
 ## 第 2 步：导入数据 <a href="#step-2-import-data" id="step-2-import-data"></a>
 
@@ -140,7 +140,7 @@ LastPass 的共享文件夹可以通过使用[这里](https://bitwarden.com/help
 * 可以编辑，密码除外
 * 可以管理
 
-[此处](../manage-members/member-roles-and-permissions.md#permissions)了解有关权限的更多信息。Bitwarden 使用权限结合来确定用户和集合的最终访问权限。例如：
+[此处](../manage-members/member-roles.md#permissions)了解有关权限的更多信息。Bitwarden 使用权限结合来确定用户和集合的最终访问权限。例如：
 
 * 用户 A 是「Tier 1 Support」群组的成员，该群组可以访问「Support」集合，并拥有查看权限。
 * 用户 A 也是「Support Management」群组的成员，该群组可以访问「Support」集合，并拥有编辑权限。

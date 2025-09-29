@@ -30,7 +30,7 @@
 导出个人密码库
 {% endembed %}
 
-2、选择**导出自**的位置和**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。如果从**导出自**下拉菜单中选择组织，则只会导出您拥有「[可以管理](../admin-console/manage-members/member-roles-and-permissions.md)」权限的集合。
+2、选择**导出自**的位置和**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`）。如果从**导出自**下拉菜单中选择组织，则只会导出您拥有「[可以管理](../admin-console/manage-members/member-roles.md)」权限的集合。
 
 3、如果您选择了 `.json (Encrypted)`，请选择您希望用于加密导出的**文件类型**：
 
@@ -114,9 +114,9 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 
 ## 导出组织密码库 <a href="#export-an-organization-vault" id="export-an-organization-vault"></a>
 
-组织的[管理员和所有者](../admin-console/manage-members/member-roles-and-permissions.md)可以通过网页密码库或 CLI 导出他们的组织密码库（即组织拥有的所有项目）：
+组织的[管理员和所有者](../admin-console/manage-members/member-roles.md)可以通过网页密码库或 CLI 导出他们的组织密码库（即组织拥有的所有项目）：
 
-组织成员可以按照上述说明，从**导出自**下拉菜单中选择组织，导出其拥有「可以管理」权限的来自任何集合的数据。具有访问导入/导出权限的管理员、所有者和[自定义角色](../admin-console/manage-members/member-roles-and-permissions.md#custom-role)用户可以使用以下说明导出**所有**组织数据：
+组织成员可以按照上述说明，从**导出自**下拉菜单中选择组织，导出其拥有「可以管理」权限的来自任何集合的数据。具有访问导入/导出权限的管理员、所有者和[自定义角色](../admin-console/manage-members/member-roles.md#custom-role)用户可以使用以下说明导出**所有**组织数据：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -139,7 +139,7 @@ bw export --output /users/me/documents/ --format json --password mYP@ssw0rd
 4、输入您的主密码然后选择**导出密码库**按钮。
 
 {% hint style="info" %}
-导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/reporting/event-logs.md)。
+导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/oversight-visibility/event-logging/event-logs.md)。
 {% endhint %}
 {% endtab %}
 
@@ -159,7 +159,7 @@ bw export my-master-password --organizationid 7063feab-4b10-472e-b64c-785e2b870b
 更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
 
 {% hint style="info" %}
-导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/reporting/event-logs.md)。
+导出组织密码库数据将被事件日志捕获。[了解更多](../admin-console/oversight-visibility/event-logging/event-logs.md)。
 {% endhint %}
 {% endtab %}
 {% endtabs %}

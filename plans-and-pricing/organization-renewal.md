@@ -17,7 +17,7 @@
 
 **组织拥有的密码库项目**
 
-[所有者](../admin-console/manage-members/member-roles-and-permissions.md)将保留对[已共享密码库项目](../organizations/sharing.md)的访问权限，但所有其他用户将无法访问这些项目。组织密码库项目和现有[集合](../admin-console/manage-shared-items/collections/about-collections.md)**不会被删除**。
+[所有者](../admin-console/manage-members/member-roles.md)将保留对[已共享密码库项目](../organizations/sharing.md)的访问权限，但所有其他用户将无法访问这些项目。组织密码库项目和现有[集合](../admin-console/manage-shared-items/collections/about-collections.md)**不会被删除**。
 
 **组织用户**
 

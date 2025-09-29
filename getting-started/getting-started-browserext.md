@@ -130,7 +130,7 @@ Bitwarden 浏览器扩展提供一系列[浏览器内通知](../password-manager
 询问添加登录
 {% endembed %}
 
-如果您是使用[禁用个人密码库策略](../admin-console/manage-shared-items/enterprise-policies.md#remove-individual-vault)的组织的成员，选择**保存**将带您进入一个屏幕，您可以在其中选择要将其添加到的[集合](../admin-console/manage-shared-items/collections/about-collections.md)。
+如果您是使用[禁用个人密码库策略](../admin-console/oversight-visibility/enterprise-policies.md#remove-individual-vault)的组织的成员，选择**保存**将带您进入一个屏幕，您可以在其中选择要将其添加到的[集合](../admin-console/manage-shared-items/collections/about-collections.md)。
 
 如果不想看到这些横幅，请打开浏览器扩展的 **⚙️设置**选项卡，选择**通知**，然后取消选中**询问添加登录**和**询问更新现有登录**复选框。
 

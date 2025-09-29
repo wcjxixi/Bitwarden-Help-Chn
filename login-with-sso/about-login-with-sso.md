@@ -27,7 +27,7 @@ SSO 登录的独特之处在于它保留了我们的零知识加密模型。Bitw
 SSO 登录是一种灵活的解决方案，可以满足您的企业需求。SSO 登录包括：
 
 * [SAML 2.0](saml-2.0-configuration.md) 和 [OIDC](oidc-configuration.md) 配置选项，支持与各类身份提供程序的集成。
-* 一项[企业策略](../admin-console/manage-shared-items/enterprise-policies.md#single-sign-on-authentication)，可选择要求非所有者/非管理员用户使用单点登录登录 Bitwarden。
+* 一项[企业策略](../admin-console/oversight-visibility/enterprise-policies.md#single-sign-on-authentication)，可选择要求非所有者/非管理员用户使用单点登录登录 Bitwarden。
 * 用于安全数据访问工作流的两个不同的[成员解密选项](member-decryption-options.md)。
 * 通过 SSO 进行「即时」的最终用户入职。
 * 自动登录到 App 而无需使用来自您的身份提供程序仪表板中的 SSO。

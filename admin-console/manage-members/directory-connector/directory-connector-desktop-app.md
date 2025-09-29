@@ -29,7 +29,7 @@
 2. 在 **Server URL** 字段中，输入带 `https://` 的 Bitwarden 实例的域名。例如，`https://vault.bitwarden.eu` 或 `https://your.domain.bitwarden.com`。
 3. 选择 **Save**。
 
-3、使用您的[组织 API 密钥](../../../organizations/bitwarden-public-api.md#authentication)登录目录连接器。如果您没有 API 密钥，请联系[组织的所有者](../member-roles-and-permissions.md)。
+3、使用您的[组织 API 密钥](../../../organizations/bitwarden-public-api.md#authentication)登录目录连接器。如果您没有 API 密钥，请联系[组织的所有者](../member-roles.md)。
 
 4、在 **⚙️Setting** 选项卡上，连接到您的目录并配置[同步选项](sync-options-and-filters.md)。此过程基于所使用的目录而有所不同，请参阅以下文章之一以获取说明：
 

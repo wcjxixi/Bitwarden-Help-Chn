@@ -12,11 +12,11 @@ Bitwarden 支持经销商和托管服务提供商 (MSP) 模式。您可以立即
 
 ## Bitwarden 组织 <a href="#bitwarden-organizations" id="bitwarden-organizations"></a>
 
-Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../organizations/sharing.md)登录、笔记、支付卡和身份信息。组织可以是一个家庭、团队、公司或任何需要安全地共享数据的人群。组织有一个独立的密码库，[管理员](../admin-console/manage-members/member-roles-and-permissions.md)可以在那里管理组织的项目、用户和设置。
+Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../organizations/sharing.md)登录、笔记、支付卡和身份信息。组织可以是一个家庭、团队、公司或任何需要安全地共享数据的人群。组织有一个独立的密码库，[管理员](../admin-console/manage-members/member-roles.md)可以在那里管理组织的项目、用户和设置。
 
 MSP 应该为每一个客户[创建一个组织](../admin-console/organizations-overview.md#create-an-organization)，或者客户可以为自己创建一个。你可以在好几种[组织类型](../admin-console/organizations-overview.md#types-of-organizations-1)中你选择一种最适合你的客户的需要的类型。对于最强大的业务功能集，我们推荐[企业计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)。
 
-在所有情况下，MSP 团队的成员应被[指定为所有者和管理者](../admin-console/manage-members/member-roles-and-permissions.md)，以便他们能够管理该组织。管理员可以访问和管理组织中的所有项目、[集合](../admin-console/manage-shared-items/collections/about-collections.md)和用户。应在多个用户之间分担管理职责，尤其是在有大量用户的组织中。
+在所有情况下，MSP 团队的成员应被[指定为所有者和管理者](../admin-console/manage-members/member-roles.md)，以便他们能够管理该组织。管理员可以访问和管理组织中的所有项目、[集合](../admin-console/manage-shared-items/collections/about-collections.md)和用户。应在多个用户之间分担管理职责，尤其是在有大量用户的组织中。
 
 {% hint style="info" %}
 为了确保你的组织的安全，Bitwarden 对新成员的加入采用了 3 个步骤：[邀请](../admin-console/manage-members/user-management.md#invite) → [接受](../admin-console/manage-members/user-management.md#accept) → [确认](../admin-console/manage-members/user-management.md#confirm)。邀请发出后，应通知用户，如果需要，还可以帮助他们接受。

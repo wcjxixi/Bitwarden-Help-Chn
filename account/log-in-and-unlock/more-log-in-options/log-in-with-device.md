@@ -23,7 +23,7 @@
 * 在用于批准的 App （网页 App、移动 App 或桌面 App）上拥有认可的账户。要认可该账户，您必须随时已成功登录到该设备。
 
 {% hint style="info" %}
-作为企业组织的成员，您需要遵守[要求 SSO 策略](../../../admin-console/manage-shared-items/enterprise-policies.md#require-single-sign-on-authentication)，如果您无法使用**设备登录**选项，则需要改用 [SSO 登录](../using-single-sign-on/using-login-with-sso.md#login-using-sso)。
+作为企业组织的成员，您需要遵守[要求 SSO 策略](../../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)，如果您无法使用**设备登录**选项，则需要改用 [SSO 登录](../using-single-sign-on/using-login-with-sso.md#login-using-sso)。
 {% endhint %}
 
 ## 使用设备登录 <a href="#logging-in-with-a-device" id="logging-in-with-a-device"></a>

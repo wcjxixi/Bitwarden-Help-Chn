@@ -111,17 +111,17 @@ Bitwarden 商业计划旨在满足小型团队、成长型公司和大型企业�
 | \*[个人紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)          | **✔︎**                             | **✔︎**                            |
 | \*[密码库健康报告](../../your-vault/vault-health-reports.md)                                        | **✔︎**                             | **✔︎**                            |
 | \*优先支持                                                                                       | **✔︎**                             | **✔︎**                            |
-| [事件日志](../../admin-console/reporting/event-logs.md)                                          | **✔︎**                             | **✔︎**                            |
+| [事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)                 | **✔︎**                             | **✔︎**                            |
 | [用户群组](../../admin-console/manage-members/groups.md)                                         | **✔︎**                             | **✔︎**                            |
 | [API 访问](../../organizations/bitwarden-public-api.md)                                        | **✔︎**                             | **✔︎**                            |
 | [目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md) | **✔︎**                             | **✔︎**                            |
 | [Secrets Manager ](../../secrets-manager/secrets-manager-overview.md)附加组件资格                  | **✔︎**                             | **✔︎**                            |
 | [SSO 登录](../../login-with-sso/about-login-with-sso.md)                                       | —                                  | **✔︎**                            |
 | [Key Connector](../../self-hosting/key-connector/about-key-connector.md)                     | —                                  | **✔︎**                            |
-| [企业策略](../../admin-console/manage-shared-items/enterprise-policies.md)                       | —                                  | **✔︎**                            |
-| [账户恢复](../../admin-console/manage-members/account-recovery.md)                               | —                                  | **✔︎**                            |
+| [企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)                      | —                                  | **✔︎**                            |
+| [账户恢复](../../admin-console/manage-members/account-recovery/about-account-recovery.md)        | —                                  | **✔︎**                            |
 | [自托管选项](../../self-hosting/)                                                                 | —                                  | **✔︎**                            |
-| [自定义管理角色](../../admin-console/manage-members/member-roles-and-permissions.md)                | —                                  | **✔**                             |
+| [自定义管理角色](../../admin-console/manage-members/member-roles.md)                                | —                                  | **✔**                             |
 | [适用于成员的家庭赞助](redeem-families-sponsorship.md)                                                 | —                                  | **✔︎**                            |
 | [SCIM 集成](../../admin-console/manage-members/scim/about-scim.md)                             | **✔︎**                             | **✔︎**                            |
 | 费用                                                                                           | $4/用户/月（按年计费）或 $5/用户/月（按月计费）       | $6/用户/月（按年计费）或$7/用户/月（按月计费）       |

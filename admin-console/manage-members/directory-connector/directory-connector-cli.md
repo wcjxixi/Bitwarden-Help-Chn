@@ -61,7 +61,7 @@ bwdc --help
 
 ### login
 
-`login` 命令用于使用您的[组织 API 密钥](../../../organizations/bitwarden-public-api.md#authentication)登录目录连接器。如果您没有 API 密钥，请联系[组织的所有者](../member-roles-and-permissions.md)。有以下几种使用 `login` 命令的方式：
+`login` 命令用于使用您的[组织 API 密钥](../../../organizations/bitwarden-public-api.md#authentication)登录目录连接器。如果您没有 API 密钥，请联系[组织的所有者](../member-roles.md)。有以下几种使用 `login` 命令的方式：
 
 * 自身：
 
