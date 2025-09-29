@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/getting-started-organizations/)
 {% endhint %}
 
-像 Bitwarden 这样的密码管理器使您可以轻松地在您的所有设备上存储和访问唯一且安全的密码，从而使您的在线账户比以往任何时候都更加安全！使用 Bitwarden，你将不需要危险地重复使用简单的密码，也不必以电子表格、文档或便笺等未加密的格式暴露密码。
+像 Bitwarden 这样的密码管理器使您可以轻松地跨您的所有设备存储和访问唯一且安全的密码，从而使您的在线账户比以往任何时候都更加安全！使用 Bitwarden，你将不需要危险地重复使用简单的密码，也不必以电子表格、文档或便笺等未加密的格式暴露密码。
 
 **Bitwarden 组织**为您的家庭、团队或企业的密码管理增加了一层协作和共享，使您可以安全地共享常见信息，例如办公室 wifi 密码、在线凭据或共享的公司信用卡。组织拥有的凭据的安全共享既**安全**又**简单**。
 
@@ -30,17 +30,17 @@ Bitwarden 组织将用户和密码库项目关联在一起，以[安全地共享
 
 免费的 Bitwarden 组织允许 2 位用户安全地共享组织拥有的凭证。您可以使用免费的组织与朋友或伙伴共享，或者在[升级到不同的计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)之前测试组织。
 
-Bitwarden 在许多设备上提供了应用程序，包括浏览器扩展、移动应用程序、桌面应用程序和 CLI，但在本指南中，我们将重点介绍[网页 App](../getting-started/getting-started-webvault.md)。对于管理你的组织，**网页密码库提供了最丰富的 Bitwarden 体验**。
+Bitwarden 在许多设备上提供了应用程序，包括浏览器扩展、移动 App、桌面 App 和 CLI，但在本指南中，我们将重点介绍[网页 App](../getting-started/getting-started-webvault.md)。对于管理你的组织，**网页密码库提供了最丰富的 Bitwarden 体验**。
 
 ### 注册 Bitwarden <a href="#sign-up-for-bitwarden" id="sign-up-for-bitwarden"></a>
 
-[创建一个 Bitwarden 帐户](https://vault.bitwarden.com/#/register)，并确保您挑选了一个强大而难忘的[主密码](../account/log-in-and-unlock/your-master-password.md)。我们甚至建议您写下您的主密码，并将其存储在安全的地方。
+[创建一个 Bitwarden 账户](https://vault.bitwarden.com/#/register)，并确保您挑选了一个强大而难忘的[主密码](../account/log-in-and-unlock/your-master-password.md)。我们甚至建议您写下您的主密码，并将其存储在安全的地方。
 
 {% hint style="success" %}
-**不要忘记您的主密码！**&#x42;itwarden 是一种零知识的解决方案，这意味着 Bitwarden 团队以及 Bitwarden 系统本身对你的主密码一无所知，也没有办法找回或重置你的主密码。
+**不要忘记您的主密码！**&#x42;itwarden 是一种零知识的解决方案，这意味着 Bitwarden 团队以及 Bitwarden 系统本身对您的主密码一无所知，也没有办法找回或重置你的主密码。
 {% endhint %}
 
-创建帐户后，登录到[网页 App](../getting-started/getting-started-webvault.md)然后验证账户的电子邮箱地址以解锁对所有功能的访问权限：
+创建账户后，登录到[网页 App](../getting-started/getting-started-webvault.md) 然后验证账户的电子邮箱地址以解锁对所有功能的访问权限：
 
 {% embed url="https://bitwarden.com/assets/7bJkgn3Qjoon9c1h68WmgW/035a83d213860b7c5b92a29502fc315f/2024-12-03_13-54-17.png?w=1043&fm=avif&q=80" %}
 发送验证电子邮件
@@ -48,23 +48,23 @@ Bitwarden 在许多设备上提供了应用程序，包括浏览器扩展、移�
 
 ### 再次注册 Bitwarden <a href="#sign-up-for-bitwarden-again" id="sign-up-for-bitwarden-again"></a>
 
-为了使用免费的 2 人组织进行安全共享，您需要拥有 2 个 Bitwarden 帐户。设置了第一个 Bitwarden 帐户后，请按照相同的步骤（或帮助您的朋友或伴侣操作）来设置另一个帐户。
+为了使用免费的 2 人组织进行安全共享，您需要拥有 2 个 Bitwarden 账户。设置了第一个 Bitwarden 账户后，请按照相同的步骤（或帮助您的朋友或伴侣操作）来设置另一个账户。
 
 {% hint style="success" %}
-Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/member-roles.md)。无论你用哪个用户来[设置你的组织](organizations-quick-start.md#setup-your-organization)，其都将成为**所有者**。
+Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/member-roles.md)。无论您用哪个用户来[设置您的组织](organizations-quick-start.md#setup-your-organization)，其都将成为**所有者**。
 {% endhint %}
 
 ## 设置您的组织 <a href="#setup-your-organization" id="setup-your-organization"></a>
 
 要设置您的组织：
 
-1、在您的网页密码库中，选择 ✚**新建组织**按钮。
+1、在 Bitwarden 网页 App 中，选择 ✚**新建组织**按钮。
 
 {% embed url="https://bitwarden.com/assets/3eSqWiTIuPSFxXdo5AAjT9/248b0fa7bb381add0d71682acd244a63/2024-12-03_13-57-58.png?w=1043&fm=avif&q=80" %}
 **新建组织**
 {% endembed %}
 
-2、输入**组织名称**和**帐单电子邮件**，我们可以通过此地址与您联系。在本指南中，我们将设置一个免费的组织，所以你将不会被收取任何费用。
+2、输入**组织名称**和**账单电子邮件**，我们可以通过此地址与您联系。在本指南中，我们将设置一个免费的组织，所以您将不会被收取任何费用。
 
 **3、选择您的计划**。Bitwarden 提供适合任何需求的组织，但在这种情况下，请选择**免费**。
 
@@ -108,7 +108,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 作为组织所有者，邀请新成员的步骤如下：
 
-1、在管理控制台，从导航栏选择**成员**选项卡然后选择 ✚**邀请成员**按钮：
+1、在管理控制台中，从导航栏选择**成员**选项卡然后选择 ✚**邀请成员**按钮：
 
 {% embed url="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/a4bd30d71a74ead44e13768dab8c5dff/2024-12-03_14-02-20.png?w=1043&fm=avif&q=80" %}
 邀请成员加入组织
@@ -140,7 +140,7 @@ Bitwarden 邀请
 
 确认组织接受成员是授予成员访问共享项目权限的最后一步。要完成此循环：
 
-1、在管理控制台，从导航栏选择**成员**选项卡。
+1、在管理控制台中，从导航栏选择**成员**选项卡。
 
 2、选中任何`已接受`的用户并使用 **≡选项**菜单 **✔︎确认所选**：
 
@@ -148,13 +148,13 @@ Bitwarden 邀请
 确认成员加入组织
 {% endembed %}
 
-3、验证您屏幕上显示的[指纹短语](../security/encryption/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置** → **我的帐户**中找到。
+3、验证您屏幕上显示的[指纹短语](../security/encryption/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置** → **我的账户**中找到。
 
-每一个指纹短语对于其帐户都是唯一的，它是确保安全添加用户的最后一层监督。如果它们匹配，请选择**提交**。
+每一个指纹短语对于其账户都是唯一的，它是确保安全添加用户的最后一层监督。如果它们匹配，请选择**提交**。
 
 ## 了解您的密码库 <a href="#get-to-know-your-vault" id="get-to-know-your-vault"></a>
 
-Bitwarden组织的神奇之处在于，属于你的项目和[属于组织](organizations-quick-start.md#shared-items)的项目可以在**密码库**视图中并排访问。您可以在个人项目（**我的密码库**）和组织项目（**我的组织**）之间进行筛选：
+Bitwarden组织的神奇之处在于，属于您的项目和[属于组织](organizations-quick-start.md#shared-items)的项目可以在**密码库**视图中并排访问。您可以在个人项目（**我的密码库**）和组织项目（**我的组织**）之间进行筛选：
 
 {% embed url="https://bitwarden.com/assets/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?w=1197&fm=avif&q=80" %}
 已启用的组织密码库
@@ -193,7 +193,7 @@ Bitwarden组织的神奇之处在于，属于你的项目和[属于组织](organ
 
 ## 恭喜！ <a href="#congratulations" id="congratulations"></a>
 
-您已经设置了新的 Bitwarden 帐户、创建了一个组织、了解了一些有关您的密码库的知识、并共享了一个项目！干得好！如果您想升级到付费组织以解锁[许多附加功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md)，请导航到您的组织**设置** → **订阅**视图，然后选择**升级计划**按钮：
+您已经设置了新的 Bitwarden 账户、创建了一个组织、了解了一些有关您的密码库的知识、并共享了一个项目！干得好！如果您想升级到付费组织以解锁[许多附加功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md)，请导航到您的组织**设置** → **订阅**视图，然后选择**升级计划**按钮：
 
 {% embed url="https://bitwarden.com/assets/c7MRk3qA3cxcVZHC2gBBs/4128a414a194af6e446ac39d9c250990/2024-12-03_14-09-22.png?w=1197&fm=avif&q=80" %}
 升级免费组织
