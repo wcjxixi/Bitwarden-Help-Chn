@@ -4,13 +4,16 @@
 对应的[官方文档地址](https://bitwarden.com/help/sharing/)
 {% endhint %}
 
-{% hint style="info" %}
-要共享项目，您需要是组织的成员。了解更多关于[组织](../admin-console/organizations-overview.md)或了解如何[创建自己的两个人的组织](../admin-console/organizations-quick-start.md)。
-{% endhint %}
+使用 Bitwarden，共享一个项目意味着两件事：
 
-使用 Bitwarden 共享项目意味要着将它们移动到组织和集合中，集合是用于将共享的项目、笔记、支付卡和身份集中到一起，以供多个用户访问的一种结构。您可以通过几种不同的方式创建用于共享的组织项目：
+* 将项目添加到一个[组织](../admin-console/organizations-overview.md)。这将把项目的所有权转移给与您共享项目的组织。
+* 将项目添加到一个或多个[集合](../admin-console/manage-shared-items/collections/about-collections.md)。这些集合的**访问权限**设置决定了谁可以访问它。
 
-## 移动项目到组织 <a href="#move-an-item-to-an-organization" id="move-an-item-to-an-organization"></a>
+使用 Bitwarden 共享项目有许多不同的方法。在本文中，我们将介绍这些方法。无论哪种方法最适合您的工作流程，请记住您需要成为组织的成员才能共享。
+
+## 共享新项目 <a href="#share-new-items" id="share-new-items"></a>
+
+## 共享现有项目 <a href="#share-existing-items" id="share-existing-items"></a>
 
 组织成员可以将项目移动到任何已分配的集合，除非他们被赋予了此集合的[可以查看](../admin-console/manage-members/member-roles.md#permissions)权限。要移动项目到组织：
 
@@ -52,14 +55,6 @@
 3、选择该密码库项目应包含在哪个（些）集合中。您必须至少选择一个集合。
 
 4、对密码库项目进行其他必要更改，然后选择**保存**。
-
-## 项目共享后 <a href="#once-an-item-is-shared" id="once-an-item-is-shared"></a>
-
-将项目移动到某个组织**会将所有权转移到该组织**。这意味着任何有权限的人都可以更改或删除该项目，它也将其从您的密码库中删除。您可以通过项目名称旁边的卡片来判断该项目是否为共享项目：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?_a=DAJCwlWIZAAB" %}
-已共享的项目图标
-{% endembed %}
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -109,43 +104,21 @@ bw move <itemid> <organizationid> [encodedJson]
 {% endtab %}
 {% endtabs %}
 
-{% hint style="danger" %}
-将项目移动到某个组织会将所有权转移该组织。组织中拥有适当[权限](../admin-console/manage-members/member-roles.md#permissions)的任何人都可以编辑或删除该项目，删除此项目将导致原所有者的项目也被删除。
+## 项目共享后 <a href="#after-items-are-shared" id="after-items-are-shared"></a>
+
+{% hint style="info" %}
+**提醒**：共享某个项目涉及将其所有权交给组织。管理团队应妥善管理[集合的权限](../admin-console/manage-shared-items/collections/collection-permissions.md)，因为拥有正确权限级别的成员有能力更改或删除已共享的项目。您可以通过项目名称旁边的徽章来判断该项目是否为共享项目：
+
+<img src="https://bitwarden.com/assets/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?w=604&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
 {% endhint %}
 
-## 创建组织项目 <a href="#create-an-organization-item" id="create-an-organization-item"></a>
+### 回收共享项目的所有权 <a href="#reclaimed-shared-item-ownership" id="reclaimed-shared-item-ownership"></a>
 
-组织成员可以直接为任何已分配的集合创建新的项目，除非他们被赋予了此集合的[可以查看](../admin-console/manage-members/member-roles.md#permissions)权限。要从网页密码库创建组织拥有的项目：：
+拥有项目所存储的集合的[管理集合权限](../admin-console/manage-shared-items/collections/collection-permissions.md)的用户可以选择停止与组织共享项目：
 
-{% tabs %}
-{% tab title="我的密码库视图" %}
-要创建一个新的共享项目：
+1. 使用项目的 **≡**&#x9009;项菜单然后选择**克隆**，以克隆该项目。
+2. 在**新建项目**面板上，使用**所有者**下拉菜单选择您的账户电子邮箱。这将确保项目被克隆到非共享上下文中。
+3. **保存**克隆的项目。
+4. 使用项目的 **≡**&#x9009;项菜单然后选择**删除**，以删除原始项目。
 
-1. 在**密码库**页面，选择 **🞤新增**按钮然后选择所需的项目类型。
-2. 为这个新的密码库项目填写所有相关信息。
-3. 在添加项目面板顶部的**所有权**部分，选择要与之共享此项目的组织。
-4. 选中一个或多个集合，以将此项目共享到其中。您必须至少选择一个集合。
-5. 点击**保存**以完成共享项目的创建。
-
-创建一个共享项目**将把所有权设置为这个组织**。这意味着任何有权限的人都可以更改或删除该项目，这也将从您的密码库中移除该项目。您可以通过项目名称旁边的卡片来判断该项目是否为共享项目：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?_a=DAJCwlWIZAAB" %}
-已共享的项目图标
-{% endembed %}
-{% endtab %}
-
-{% tab title="组织视图" %}
-要创建一个新的共享项目：
-
-1. 在您的组织的 **🔒密码库**选项卡，选择**新建**按钮并从下拉列表中选择项目类型。
-2. 为这个新的密码库项目填写所有相关信息。
-3. 使用此方式时，项目的所有权会自动设置为组织，因此您所要做的就是选中一个或多个集合，以将此项目共享到其中。您必须至少选择一个集合。
-4. 点击**保存**以完成共享项目的创建。
-
-创建一个共享项目**将把所有权设置为这个组织**。这意味着任何有权限的人都可以更改或删除该项目，这也将从您的密码库中移除该项目。您可以通过项目名称旁边的卡片来判断该项目是否为共享项目：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?_a=DAJCwlWIZAAB" %}
-已共享的项目图标
-{% endembed %}
-{% endtab %}
-{% endtabs %}
+请注意，在某些情况下，将项目移动到具有更高访问控制限制的集合中，或移动到只有您才能访问的集合中，可能比直接从组织中移除项目更有效。
