@@ -15,17 +15,17 @@
 
 ## 共享现有项目 <a href="#share-existing-items" id="share-existing-items"></a>
 
-组织成员可以将项目移动到任何已分配的集合，除非他们被赋予了此集合的[可以查看](../admin-console/manage-members/member-roles.md#permissions)权限。要移动项目到组织：
+您可能会发现，您当前拥有的项目需要与您组织中的其他成员共享。您可以在任何 Bitwarden App 中，与任何拥有合适[权限](../admin-console/manage-shared-items/collections/collection-permissions.md)的集合共享项目：
 
 {% tabs %}
 {% tab title="网页 App" %}
-从网页 App 将项目移动到组织有两种方法：
+使用网页 App 是共享现有项目的最通用方法，可用于共享组织的全新项目，或简单地将更多集合添加到共享列表中：
 
-## 分配到集合 <a href="#assign-to-collections" id="assign-to-collections"></a>
+1、在**密码库**视图中，使用复选框选择要共享的项目。
 
-此方法最适合与某个组织共享多个项目，前提是您不需要对任何项目的属性或值进行更改：
-
-1、选择要分配给组织集合的项目。
+{% hint style="success" %}
+组织所有者、管理员和某些自定义用户也可以直接从管理控制台执行此步骤，以弹出菜单中跳过此过程中的某些步骤。
+{% endhint %}
 
 2、使用 **≡**&#x83DC;单，选择**分配到集合**选项：
 
@@ -33,28 +33,28 @@
 分配到集合
 {% endembed %}
 
-3、在**分配到集合**界面：
+3、在**分配到集合**：
 
-* 选择您要与之共享此项目的组织。
-* 选中一个或多个集合，以将此项目共享到其中。您必须至少选择一个集合。
+* 使用**移动到组织**下拉菜单选择希望此项目归属的组织。
+* 使用**选择要分配的集合**下拉菜单选择要共享此项目的集合。在这些集合上设置的**访问权限**设置将决定谁可以访问该项目。
 
-4、点击**分配**以完成移动此项目以进行共享。
+4、点击**分配**以完成共享。
 
-## 更改项目所有权 <a href="#change-item-ownership" id="change-item-ownership"></a>
+### 更多共享方法 <a href="#more-methods-for-sharing" id="more-methods-for-sharing"></a>
 
-此方法最适合共享单个项目，而且您还需要在共享之前对其进行更改：
+前面介绍的方法是最通用、最简化的方法，不过您还可以使用其他一些共享方法：
 
-1、打开要更改所有权的项目，然后选择**编辑**按钮。
+* **从管理控制台共享**：如前所述，组织所有者、管理员和某些自定义用户可以直接从管理控制台进行共享，从而简化共享过程：
 
-2、从所有者下拉菜单中，选择打算拥有此项目的组织：
+{% embed url="https://bitwarden.com/assets/1u6EPNgAlCnvC9DcmUIosQ/327c0c24e09dce687540499a8eaa5aac/2024-12-02_15-47-21.png?w=1200&fm=avif&q=80" %}
+批量分配到集合
+{% endembed %}
+
+* **直接编辑项目**：如果需要在共享之前对个人项目进行更改，请打开该项目，然后在**编辑**视图中使用**所有者**和**集合**下拉菜单，在进行必要更改时选择与谁共享：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/34zUaUOVRSXEv90fQiq5mD/e1e41fb5b40e3efcd974c770b101ad55/2025-01-28_10-40-03.png?_a=DAJCwlWIZAAB" %}
 更改项目所有权
 {% endembed %}
-
-3、选择该密码库项目应包含在哪个（些）集合中。您必须至少选择一个集合。
-
-4、对密码库项目进行其他必要更改，然后选择**保存**。
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
