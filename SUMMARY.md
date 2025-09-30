@@ -48,7 +48,7 @@
     * [自定义字段](your-vault/custom-fields.md)
     * [集成的身份验证器](your-vault/totp.md)
     * [文件附件](your-vault/file-attachments.md)
-    * [=共享项目](organizations/sharing.md)
+    * [共享项目](organizations/sharing.md)
     * [关于集合](password-manager/vault-basics/about-collections.md)
   * [密码库管理](password-manager/vault-administration/README.md)
     * [文件夹](your-vault/folders.md)
