@@ -1,4 +1,4 @@
-# 关于集合
+# =关于集合
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/about-collections/)
@@ -127,13 +127,3 @@
 {% endembed %}
 
 在为这些集合分配具有「可以管理」权限的成员之前，所有者和管理员可以临时获得这些集合的访问权限。
-
-## 集合设置 <a href="#collections-settings" id="collections-settings"></a>
-
-组织的所有者可以在**设置** → **组织信息**界面上配置集合行为，以适应组织需求。[了解更多](collection-settings.md)。
-
-{% hint style="info" %}
-企业组织可使用[成员访问权限报告](../../../your-vault/vault-health-reports.md#member-access)查看单个组织成员对集合、群组、项目的访问权限，以及相关权限的概览。
-{% endhint %}
-
-## &#x20;<a href="#collections-permissions" id="collections-permissions"></a>
