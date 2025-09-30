@@ -1,8 +1,22 @@
-# 客户激活套件
+# =客户激活套件
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/customer-activation-kit/)
 {% endhint %}
+
+## 单页文档 <a href="#one-pagers" id="one-pagers"></a>
+
+## 视频 <a href="#videos" id="videos"></a>
+
+## 文档和模板 <a href="#documentation-and-templates" id="documentation-and-templates"></a>
+
+## Bitwarden 商品 <a href="#bitwarden-merch" id="bitwarden-merch"></a>
+
+## 品牌和设计资源 <a href="#brand-and-design-resources" id="brand-and-design-resources"></a>
+
+
+
+
 
 该推广资源旨在帮助客户介绍 Bitwarden、宣传使用密码管理器的好处、改变团队处理密码安全和凭证访问管理的方式，以激发他们对 Bitwarden 的兴趣。
 

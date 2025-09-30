@@ -152,7 +152,7 @@
     * [Secrets Manager Kubernetes Operator](secrets-manager/integrations/secrets-manager-kubernetes-operator.md)
   * [更多](secrets-manager/more/README.md)
     * [Secrets Manager FAQ](secrets-manager/more/secrets-manager-faqs.md)
-* [管理控制台](admin-console/README.md)
+* [=管理控制台](admin-console/README.md)
   * [组织概览](admin-console/organizations-overview.md)
   * [组织快速入门](admin-console/organizations-quick-start.md)
   * [管理共享项目](admin-console/manage-shared-items/README.md)
