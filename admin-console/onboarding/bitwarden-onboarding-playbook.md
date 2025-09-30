@@ -72,11 +72,11 @@
 
 ## 活动 <a href="#activities" id="activities"></a>
 
-### 步骤 1：准备领导层全公司范围的沟通 <a href="#step-1-prepare-company-wide-communication-from-leadership" id="step-1-prepare-company-wide-communication-from-leadership"></a>
+### 步骤 1：准备全公司范围的领导层沟通 <a href="#step-1-prepare-company-wide-communication-from-leadership" id="step-1-prepare-company-wide-communication-from-leadership"></a>
 
-### 步骤 2：组织内部沟通活动 <a href="#step-2-organizational-communication-campaign" id="step-2-organizational-communication-campaign"></a>
+### 步骤 2：组织沟通活动 <a href="#step-2-organizational-communication-campaign" id="step-2-organizational-communication-campaign"></a>
 
-### 步骤 3：变革管理准备情况 <a href="#step-3-change-management-readiness" id="step-3-change-management-readiness"></a>
+### 步骤 3：变更管理准备 <a href="#step-3-change-management-readiness" id="step-3-change-management-readiness"></a>
 
 
 {% endtab %}
@@ -88,11 +88,11 @@
 
 ### 步骤 1：推广规划 <a href="#step-1-rollout-planning" id="step-1-rollout-planning"></a>
 
-### 步骤 2：用户账户创建和访问 <a href="#step-2-user-account-creation-and-access" id="step-2-user-account-creation-and-access"></a>
+### 步骤 2：用户账户创建和访问权限 <a href="#step-2-user-account-creation-and-access" id="step-2-user-account-creation-and-access"></a>
 
 ### 步骤 3：客户端安装和设置 <a href="#step-3-client-installation-and-setup" id="step-3-client-installation-and-setup"></a>
 
-### 步骤 4：保险库设置和导航 <a href="#step-4-vault-setup-and-navigation" id="step-4-vault-setup-and-navigation"></a>
+### 步骤 4：密码库设置和导航 <a href="#step-4-vault-setup-and-navigation" id="step-4-vault-setup-and-navigation"></a>
 
 ### 步骤 5：密码管理实施 <a href="#step-5-password-management-implementation" id="step-5-password-management-implementation"></a>
 
@@ -116,7 +116,7 @@
 
 ### 步骤 5：持续改进 <a href="#step-5-continuous-improvement" id="step-5-continuous-improvement"></a>
 
-### 步骤 6：新员工入职培训 <a href="#step-6-new-employee-onboarding" id="step-6-new-employee-onboarding"></a>
+### 步骤 6：新员工入职 <a href="#step-6-new-employee-onboarding" id="step-6-new-employee-onboarding"></a>
 {% endtab %}
 
 {% tab title="资源" %}
