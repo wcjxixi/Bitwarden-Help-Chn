@@ -150,7 +150,7 @@
     * [GitHub Actions](secrets-manager/integrations/github-actions.md)
     * [GitLab CI/CD](secrets-manager/integrations/gitlab-ci-cd.md)
     * [Secrets Manager Kubernetes Operator](secrets-manager/integrations/secrets-manager-kubernetes-operator.md)
-    * [=Terraform 提供商](secrets-manager/integrations/terraform-provider.md)
+    * [=Terraform 提供程序](secrets-manager/integrations/terraform-provider.md)
   * [更多](secrets-manager/more/README.md)
     * [Secrets Manager FAQ](secrets-manager/more/secrets-manager-faqs.md)
 * [=管理控制台](admin-console/README.md)

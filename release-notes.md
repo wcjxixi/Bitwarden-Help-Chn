@@ -30,11 +30,11 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **成员邀请函主题行更新**：更新了加入组织的邀请的[电子邮件主题行](security/trusted-communications/emails-from-bitwarden-servers.md#critical-member-emails)。
-* **税务 ID 提醒**：如果您是征收[增值税 (VAT)](plans-and-pricing/tax-calculation.md#value-added-tax-vat) 国家的企业主或提供商管理员，并且尚未添加税务 ID，您将在管理控制台、付款详细信息和提供商门户页面上看到横幅。单击**添加税务 ID** 以使用组织的税务 ID 更新账单详细信息。
+* **税务 ID 提醒**：如果您是征收[增值税 (VAT)](plans-and-pricing/tax-calculation.md#value-added-tax-vat) 国家的企业主或提供商管理员，并且尚未添加税务 ID，您将在管理控制台、付款详细信息和提供商门户页面上看到一个横幅。单击**添加税务 ID** 以使用组织的税务 ID 更新账单详细信息。
 
 ### Secrets Manager
 
-* **Terraform 提供商**：Bitwarden Secrets Manager 现在提供 Terraform 提供商，能够为您的 Terraform 基础架构获取、创建和管理 Secrets Manager 的机密。了解更多有关 Terraform 提供商的信息。
+* **Terraform 提供商**：Bitwarden Secrets Manager 现在提供 Terraform 提供商，能够为您的 Terraform 基础架构获取、创建和管理 Secrets Manager 的机密。[了解更多](secrets-manager/integrations/terraform-provider.md)有关 Terraform 提供商的信息。
 
 ## Secrets Manager Kubernetes Operator 1.0.0
 
