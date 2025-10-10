@@ -194,7 +194,7 @@ resource "bitwarden-secrets_secret" "db_admin_secret" {
 
 ### 机密值生成 <a href="#secret-value-generation" id="secret-value-generation"></a>
 
-如果没有提供机密值，Terraform 提供者将为您生成一个。这是推荐的方法。您可以指定可选属性来定制值的生成，例如：
+如果没有提供机密值，Terraform 提供者将为您生成一个。**这是推荐的方法**。您可以指定可选属性来自定义值的生成，例如：
 
 ```bash
 resource "bitwarden-secrets_secret" "db_admin_secret" {
@@ -206,7 +206,7 @@ resource "bitwarden-secrets_secret" "db_admin_secret" {
 }
 ```
 
-对于每个机密，可以使用以下属性来定制值的生成：
+对于每个机密，可以使用以下属性来自定义值的生成：
 
 * `avoid_ambiguous`：（布尔型）默认为 `false` 。设置为 `true` 时，生成的值将不包含歧义字符（`I`、`l`、`1`、`0`、`0`）。
 * `length`：（数值型）默认为 `64` 个字符。设置为其他数字时，生成的值将是该数字数量的字符。
