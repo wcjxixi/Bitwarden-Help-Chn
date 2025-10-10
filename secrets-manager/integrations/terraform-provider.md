@@ -1,15 +1,15 @@
-# =Terraform 提供程序
+# Terraform 提供程序
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/terraform-provider/)
 {% endhint %}
 
-Bitwarden 提供了一个 Terraform 提供程序，可以获取、创建和管理机密，帮助您使用 Terraform 保护您的基础设施机密。[Bitwarden Terraform registry](https://registry.terraform.io/providers/bitwarden/bitwarden-secrets/latest/docs) 中提供了更多提供程序文档。
+Bitwarden 提供了一个用于获取、创建和管理机密的 Terraform 提供程序，帮助您使用 Terraform 保护您的基础设施机密。[Bitwarden Terraform registry](https://registry.terraform.io/providers/bitwarden/bitwarden-secrets/latest/docs) 中提供了更多提供程序文档。
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
 * Terraform 版本 1.5 或更高版本。
-* 一个拥有[机器账户](../your-secrets/machine-accounts.md)和附加[访问令牌](../your-secrets/access-tokens.md)的 [Secrets Manager](../secrets-manager-overview.md) 组织。
+* 拥有[机器账户](../your-secrets/machine-accounts.md)和附加[访问令牌](../your-secrets/access-tokens.md)的 [Secrets Manager](../secrets-manager-overview.md) 组织。
 
 {% hint style="success" %}
 我们推荐：
@@ -90,13 +90,131 @@ resource "bitwarden-secrets_secret" "my_secret" {
 
 ### bitwarden-secrets\_projects <a href="#bitwarden-secrets-projects" id="bitwarden-secrets-projects"></a>
 
+`bitwarden-secrets_projects` 数据源获取机器账户可访问的所有工程列表。以下是一个包含 `bitwarden-secrets_projects` 数据源声明的 `data` 块示例，以及一个使用 `.projects` 属性引用它的 `output` 块示例：
+
+```bash
+data "bitwarden-secrets_projects" "example" {}
+
+output "example" {
+  value = data.bitwarden-secrets_projects.projects
+}
+```
+
+对于每个工程，以下属性可以导出到输出：
+
+* `creation_date`：（字符串）工程创建的时间戳。
+* `id`：（字符串型）工程的唯一标识符。
+* `name`：（字符串型）工程的名称。
+* `organization_id`：（字符串型）工程所属组织的唯一标识符。
+* `revision_date`：（字符串型）工程最近一次修订的时间戳。
+
 ### bitwarden-secrets\_list\_secrets <a href="#bitwarden-secrets-list-secrets" id="bitwarden-secrets-list-secrets"></a>
 
+`bitwarden-secrets_list_secrets` 数据源获取机器账户可访问的所有机密列表。以下是一个 `data` 块的示例，其中包含 `bitwarden-secrets_list_secrets` 数据源声明，以及一个使用 `.secrets` 属性引用它的 `output` 块示例：
+
+```bash
+data "bitwarden-secrets_list_secrets" "example" {}
+
+output "example" {
+  value = data.bitwarden-secrets_list_secrets.secrets
+}
+```
+
+对于每个机密，可以在输出中导出以下属性：
+
+* `id`：（字符串型）机密的唯一标识符。
+* `key`：（字符串型）与机密关联的键，在 Secrets Manager UI 中称为「名称」。
+
+{% hint style="info" %}
+`bitwarden-secrets_list_secrets` 数据源无法获取机密值。
+{% endhint %}
+
 ### bitwarden-secrets\_secret <a href="#bitwarden-secrets-secret" id="bitwarden-secrets-secret"></a>
+
+`bitwarden-secrets_secret` 数据源获取特定的机密，该机密必须可被机器账户访问。使用 `bitwarden-secrets_secret` 数据源获取机密时，需要以下参数：
+
+* `id`：（字符串型）要获取的机密的唯一标识符。此值可以直接从 Secrets Manager 网页 App 中的机密条目中复制。
+
+以下是一个包含 `data` 数据源声明和引用所有可导出属性的 `output` 示例代码块：
+
+```bash
+data "bitwarden-secrets_secret" "example" {
+  id = "e6a8066c-81e6-428e-bf5d-b1b900fe1b42"
+}
+
+output "example" {
+  value = {
+    id  = data.bitwarden-secrets_secret.secret.id
+    key = data.bitwarden-secrets_secret.secret.key
+    value           = data.bitwarden-secrets_secret.secret.value #The actual secret value is marked sensitive and will not be printed to stdout
+    note            = resource.bitwarden-secrets_secret.secret.note
+    project_id      = resource.bitwarden-secrets_secret.secret.project_id
+    organization_id = resource.bitwarden-secrets_secret.secret.organization_id
+    creation_date   = resource.bitwarden-secrets_secret.secret.creation_date
+    revision_date   = resource.bitwarden-secrets_secret.secret.revision_date
+  }
+}
+```
+
+对于每个密钥，可以在输出中导出以下属性：
+
+* `id`：（字符串型）机密的唯一标识符。
+* `key` ：（字符串型）与机密关联的键，在 Secrets Manager UI 中称为「名称」。
+* `value`：（字符串型）与机密关联的值。被视为敏感信息，永远不会打印到 stdout。
+* `note`：（字符串型）保存于机密**备注**字段中的任何文本。
+* `project_id`：（字符串型）机密所属工程的唯一标识符。
+* `organization_id`：（字符串型）机密所属组织的唯一标识符。
+* `creation_date`：（字符串型）机密创建的时间戳。
+* `revision_date`：（字符串型）机密最近一次修订的时间戳。
 
 ## 资源 <a href="#resources" id="resources"></a>
 
 ### bitwarden-secrets\_secret <a href="#bitwarden-secrets-secret" id="bitwarden-secrets-secret"></a>
 
-### 密钥值生成 <a href="#secret-value-generation" id="secret-value-generation"></a>
+`bitwarden-secrets_secret` 资源可用于在 Bitwarden 密钥管理器中创建新机密或管理现有机密。要声明一个 `bitwarden-secrets_secret` 资源块，至少需要以下参数：
 
+* `key` ：（字符串型）与机密关联的键，在 Secrets Manager UI 中称为「名称」。
+
+以下是一个包含 `bitwarden-secrets_secret` 资源声明的 `resource` 块示例：
+
+```
+resource "bitwarden-secrets_secret" "db_admin_secret" {
+  key = "db_admin_password"
+  value      = var.value #It is not recommended to provide the actual secret value via configuration file! By using a terraform variable, users can inject the secret value during runtime via environment variables.
+  project_id = var.project_id
+  note       = "The secret value was provided via terraform configuration."
+}
+```
+
+在上述示例中，其他可选参数包括：
+
+* `value`：（字符串型）机密的值。**不推荐**通过配置文件提供机密值。通过使用 terraform 变量，用户可以在运行时通过环境变量注入机密值。
+* `project_id`：（字符串型）机密应添加到的工程的唯一标识符。机器账户**必须**对该工程有访问权限。
+* `note`：（字符串型）保存于机密**备注**字段中的任何文本。
+
+### 机密值生成 <a href="#secret-value-generation" id="secret-value-generation"></a>
+
+如果没有提供机密值，Terraform 提供者将为您生成一个。这是推荐的方法。您可以指定可选属性来定制值的生成，例如：
+
+```bash
+resource "bitwarden-secrets_secret" "db_admin_secret" {
+  key         = "db_admin_password"
+  project_id  = var.project_id
+  length      = 32
+  special     = true
+  min_special = 5
+}
+```
+
+对于每个机密，可以使用以下属性来定制值的生成：
+
+* `avoid_ambiguous`：（布尔型）默认为 `false` 。设置为 `true` 时，生成的值将不包含歧义字符（`I`、`l`、`1`、`0`、`0`）。
+* `length`：（数值型）默认为 `64` 个字符。设置为其他数字时，生成的值将是该数字数量的字符。
+* `lowercase`：（布尔型）默认为 `true` 。设置为 `false` 时，生成的值将不包含小写字符。
+  * `min_lowercase`：（数值型）如果 `lowercase` 为 `false` ，则忽略。设置为数字时，生成的值将至少包含该数字数量的小写字符（必须为 1-9 之间的数字）。
+* `uppercase`：（布尔型）默认为 `true` 。如果设置为 `false` ，生成的值将不包含大写字母。
+  * `min_uppercase`：（数值型）如果 `uppercase` 为 `false` ，则忽略。如果设置为数字，生成的值将至少包含该数字数量的大写字母（必须为 1-9 之间的数字）。
+* `numbers`：（布尔型）默认为 `true` 。如果设置为 `false` ，生成的值将不包含数字（`0` - `9`）。
+  * `min_numbers`：（数值型）如果 `numbers` 为 `false` ，则忽略。如果设置为数字，生成的值将至少包含该数字数量的数字（必须为 1-9 之间的数字）。
+* `special`：（布尔型）默认为 `true` 。如果设置为 `false` ，生成的值将不包含特殊字符（`@`，`#`，`$`，`%`，`^`，`&`，`*`）。
+  * `min_special`：（数值型）如果 `special` 为 `false` ，则忽略。如果设置为数字，生成的值将至少包含该数字数量的特殊字符（必须为 1-9 之间的数字）。
