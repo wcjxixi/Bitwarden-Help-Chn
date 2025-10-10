@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/terraform-provider/)
 {% endhint %}
 
-Bitwarden 提供了一个 Terraform 提供程序，可以获取、创建和管理机密，帮助您使用 Terraform 保护您的基础设施机密。更多提供商文档可在 [Bitwarden Terraform registry](https://registry.terraform.io/providers/bitwarden/bitwarden-secrets/latest/docs) 找到。
+Bitwarden 提供了一个 Terraform 提供程序，可以获取、创建和管理机密，帮助您使用 Terraform 保护您的基础设施机密。[Bitwarden Terraform registry](https://registry.terraform.io/providers/bitwarden/bitwarden-secrets/latest/docs) 中提供了更多提供程序文档。
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
