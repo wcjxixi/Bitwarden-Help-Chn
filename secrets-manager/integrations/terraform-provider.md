@@ -34,12 +34,12 @@ terraform {
 
 您可以在您的 `.tf` 文件中添加几个可选属性。其中一些值应被视为敏感信息。所有这些值也可以通过环境变量提供，但是所有这些值必须使用这两种方法中的一种来提供：
 
-| 属性                | 等效变量                 | 描述                                                                                                                                           |
-| ----------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `access_token`    | `BW_ACCESS_TOKEN`    | （敏感）配置的机器账户的访问令牌值。这将允许 Terraform 提供程序仅访问 Secrets Manager 中的特定数据。                                                                             |
-| `organization_id` | `BW_ORGANIZATION_ID` | 您组织的唯一标识符。您登录到 Secrets Manager 网页 App 时，可以在地址栏中找到。                                                                                           |
-| `api_url`         | `BW_API_URL`         | Bitwarden Secrets Manager `/api` 终端的 URI。对于美国和欧盟云托管的客户，这将分别是 `https://api.bitwarden.com` 和 `https://identity.bitwarden.eu` ，对于自托管的客户，则由部署决定。 |
-| `identity_url`    | `BW_IDENTITY_URL`    | Secrets Manager `/identity` 终端的 URI。对于美国和欧盟云托管的客户，这将分别是 `https://api.bitwarden.com` 和 `https://identity.bitwarden.eu` ，对于自托管的客户，则由部署决定。      |
+| 属性                | 等效变量                 | 描述                                                                                                                                          |
+| ----------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `access_token`    | `BW_ACCESS_TOKEN`    | （敏感）配置的机器账户的访问令牌值。这将允许 Terraform 提供程序仅访问 Secrets Manager 中的特定数据。                                                                            |
+| `organization_id` | `BW_ORGANIZATION_ID` | 您组织的唯一标识符。您登录到 Secrets Manager 网页 App 时，可以在地址栏中找到。                                                                                          |
+| `api_url`         | `BW_API_URL`         | Bitwarden Secrets Manager `/api` 终端的 URI。对于美国和欧盟云托管的客户，这将分别是 `https://api.bitwarden.com` 和 `https://identity.bitwarden.eu`，对于自托管的客户，则由部署决定。 |
+| `identity_url`    | `BW_IDENTITY_URL`    | Secrets Manager `/identity` 终端的 URI。对于美国和欧盟云托管的客户，这将分别是 `https://api.bitwarden.com` 和 `https://identity.bitwarden.eu`，对于自托管的客户，则由部署决定。      |
 
 一个明确包含所有属性（而不是由环境变量传递）的 `.tf` 文件应如下所示：
 
