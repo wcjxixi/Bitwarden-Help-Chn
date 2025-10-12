@@ -6,7 +6,7 @@
 
 在查看部署方法之前，与自托管 Bitwarden 所需的关键利益相关方保持一致很重要。在继续之前，请与您的团队一起审查并完成以下文档：
 
-* [自托管检查清单](self-host-checklist.md)
+* [自托管检查清单](self-host-setup-checklist.md)
 
 ## 云部署 <a href="#cloud-deployment" id="cloud-deployment"></a>
 
@@ -112,4 +112,4 @@ Bitwarden 的企业版计划包含无额外费用的自托管服务。
 
 * 使用上面链接的**安装和部署指南**之一来部署 Bitwarden。
 * 如果您为组织托管 Bitwarden，请使用[此指南](self-host-an-organization.md)来为推广到用户做好准备。
-* 与您的团队一起完成 [Bitwarden 自托管检查清单](self-host-checklist.md)。此文档将帮助确保您在部署过程中涉及的各方保持一致，并且可以下载为 PDF 格式。
+* 与您的团队一起完成 [Bitwarden 自托管检查清单](self-host-setup-checklist.md)。此文档将帮助确保您在部署过程中涉及的各方保持一致，并且可以下载为 PDF 格式。

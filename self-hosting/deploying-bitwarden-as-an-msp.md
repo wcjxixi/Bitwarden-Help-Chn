@@ -1,6 +1,6 @@
 # \*作为 MSP 部署 Bitwarden
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的 [GitHub 地址](https://github.com/bitwarden/help/blob/25bc445da1a9484e93ae6759ea2ef391d0c1881a/_articles/organizations/deploying-bitwarden-as-a-msp.md)
 {% endhint %}
 
