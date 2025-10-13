@@ -1,4 +1,4 @@
-# =客户成功中心
+# 客户成功中心
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/customer-success-hub/)
@@ -52,12 +52,12 @@
 
 **准备上线**
 
-* Bitwarden 入职手册：为 IT 管理员提供的全面 5 阶段实施路线图，包含可操作的检查清单和分步建议，以确保在您的组织中成功实现用户采用。
-* 公告幻灯片模板：向整个组织宣布 Bitwarden 密码管理器的幻灯片模板。
-* 欢迎邮件模板：用于向最终用户、管理员用户和 IT 团队宣布 Bitwarden 密码管理器推广的邮件模板。
-* 管理员团队入职邮件：自动发送给新企业管理员和所有者的入职邮件。可以一次性全部阅读，或挑选并调整以适应团队需求。
-* 入职工作流程：针对不同组织设置的跨用户入职指导，无论您使用 SSO、SCIM、手动配置还是目录同步。
-* 入职清单：为 IT 和安全团队提供实用、即用型清单，帮助用户自信地入职 Bitwarden。
+* [Bitwarden 入职手册](bitwarden-onboarding-playbook.md)：为 IT 管理员提供的全面 5 阶段实施路线图，包含可操作的检查清单和分步建议，以确保在您的组织中成功实现用户采用。
+* [公告幻灯片模板](https://docs.google.com/presentation/d/1zK8NDB6E8ID_ok_yxn5x5qjO7mzeI5CZ-kqcOsfcQcU/edit?slide=id.g37260cb3e91_1_0#slide=id.g37260cb3e91_1_0)：向整个组织通告 Bitwarden Password Manager 的幻灯片模板。
+* [欢迎电子邮件模板](welcome-email-templates.md)：用于向最终用户、管理员用户和 IT 团队通告 Bitwarden Password Manager 推广的电子邮件模板。
+* [管理团队入职电子邮件](admin-team-onboarding-emails.md)：自动发送给新企业管理员和所有者的入职电子邮件。可以一次性全部阅读，或挑选并调整以适应团队需求。
+* [入职工作流程](onboarding-workflows.md)：针对不同组织设置的跨用户入职指导，无论您使用 SSO、SCIM、手动配置还是目录同步。
+* [入职清单](onboarding-checklist.md)：为 IT 和安全团队提供实用、即用型清单，帮助用户自信地入职 Bitwarden。
 
 ## 采用：培训、参与和建立势头 <a href="#adoption-training-engagement-and-building-momentum" id="adoption-training-engagement-and-building-momentum"></a>
 
@@ -65,26 +65,26 @@
 
 **推动强劲使用和行为改变**
 
-* 最终用户采用邮件：自动发送给 Bitwarden 企业版和团队管理员的邮件，以帮助提高整个团队对其新密码管理器的采用率。您可以一次性全部阅读，也可以挑选并调整以适应您团队的需求。
-* 变更管理成功案例：这些变更策略帮助这位客户在不到 4 个月内实现了 90%的采用率。
-* 采用清单：这份清单有助于确保 Bitwarden 成为您团队安全习惯的日常组成部分。
+* [最终用户采用电子邮件](end-user-adoption-emails.md)：自动发送给 Bitwarden 企业版和团队管理员的电子邮件，以帮助提高整个团队对其新密码管理器的采用率。您可以一次性全部阅读，也可以挑选并调整以适应您团队的需求。
+* [变更管理成功案例](https://bitwarden.com/resources/90-adoption-across-220-employees-in-4-months-one-agencys-success-story/)：这些变更策略帮助这位客户在不到 4 个月内实现了 90%的采用率。
+* [采用清单](adoption-checklist.md)：这份清单有助于确保 Bitwarden 成为您团队安全习惯的日常组成部分。
 
 **充分利用 Bitwarden**
 
-* Bitwarden 简报：获取关于 Bitwarden 最新动态的资讯和知识。
-* 产品更新：获取产品增强功能和能力的发布新闻。
-* Bitwarden 社区：安全爱好者们在此聚集，提出功能请求、分享最佳实践和技巧。
-* 定制培训：通过专门为部分客户举办的培训课程，深入了解高级功能。请联系您的客户代表了解详情。
+* [Bitwarden 简报](https://bitwarden.com/newsletter-subscribe/)：获取关于 Bitwarden 最新动态的资讯和知识。
+* [产品更新](../../release-notes.md)：获取产品增强功能和能力的发布新闻。
+* [Bitwarden 社区](https://community.bitwarden.com/?_gl=1*1ase63s*_gcl_au*NTk2NzU2MTQ2LjE3NTY5MTUxMzguMzM3NzkwNDk5LjE3NTkxMjg4OTMuMTc1OTEzMjE5NQ..*_ga*MTk5NzU0OTg5My4xNzU2OTg5NjI5*_ga_QBRN562QQQ*czE3NjAzMjMwMTAkbzM4JGcxJHQxNzYwMzIzOTg1JGo2MCRsMCRoMA..)：安全爱好者们在此聚集，提出功能请求、分享最佳实践和技巧。
+* **定制培训**：通过专门为部分客户举办的培训课程，深入了解高级功能。请联系您的客户代表了解详细信息。
 
 ## 成功：影响、领导力和创新 <a href="#success-impact-leadership-and-innovation" id="success-impact-leadership-and-innovation"></a>
 
 **证明 Bitwarden 的价值**
 
-* 安全影响报告：利用这些洞察，构建一个强有力的、有数据支持的企业密码管理投资商业案例。
+* [安全影响报告](https://bitwarden.com/resources/bitwarden-security-impact-report/)：利用这些洞察，构建一个强有力的、有数据支持的企业密码管理投资商业案例。
 
 **分享你的成功，为安全社区做出贡献**
 
-* 开源安全峰会：分享您的专业知识，突出您团队的创新成果，并为塑造安全开源软件的未来发展贡献思想领导力。
-* 客户参考与成功案例计划：通过案例研究、演讲活动和媒体报道来展示您的成就，同时建立您作为安全导向领导者的品牌形象。
-* 影响产品路线图：作为尊贵的客户，您的反馈有助于指导开发优先级。
-* GitHub 上的 Bitwarden：探索 Bitwarden 的代码库，为社区做出贡献，并了解活跃的开发动态。
+* [开源安全峰会](https://bitwarden.com/open-source-security-summit/)：分享您的专业知识，突出您团队的创新成果，并为塑造安全开源软件的未来发展贡献思想领导力。
+* [客户参考与成功案例计划](https://bitwarden.com/case-studies/#case-studies)：通过案例研究、演讲活动和媒体报道来展示您的成就，同时建立您作为安全导向领导者的品牌形象。
+* [影响产品路线图](https://community.bitwarden.com/?_gl=1*1ase63s*_gcl_au*NTk2NzU2MTQ2LjE3NTY5MTUxMzguMzM3NzkwNDk5LjE3NTkxMjg4OTMuMTc1OTEzMjE5NQ..*_ga*MTk5NzU0OTg5My4xNzU2OTg5NjI5*_ga_QBRN562QQQ*czE3NjAzMjMwMTAkbzM4JGcxJHQxNzYwMzIzOTg1JGo2MCRsMCRoMA..)：作为尊贵的客户，您的反馈有助于指导开发优先级。
+* [GitHub 上的 Bitwarden](https://github.com/bitwarden/)：探索 Bitwarden 的代码库，为社区做出贡献，并了解活跃的开发动态。
