@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/customer-success-hub/)
 {% endhint %}
 
-该资源中心为 IT 和安全管理领导者提供了一条经过验证的密码安全成功路径，提供了一套精选的指南、清单、资源和里程碑。
+该资源中心为 IT 和安全领导人提供了一条行之有效的密码安全成功之路，提供了一套精选的指南、清单、资源和里程碑。
 
 {% embed url="https://bitwarden.com/assets/7M9VtPT5qIOVXVYGRfnoPw/3fcb1643e0ab11fec200dd90b0d0754a/Screenshot_2025-07-23_at_6.24.51%C3%A2__PM.png?w=1200&fm=avif" %}
 客户成功中心图片
