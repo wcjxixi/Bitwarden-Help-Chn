@@ -35,11 +35,11 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Secrets Manager
 
-* **新的事件日志**：当机器账户被创建、删除，或有用户/群组被分配至其名下，以及用户/群组被移除时，Secrets Manager 现将[记录相关事件](admin-console/oversight-visibility/event-logging/event-logs.md#secrets-manager-events)。
+* **新的事件日志**：当机器账户被创建、删除，或有用户/群组被分配至机器账户，以及用户/群组被从机器账户移除时，Secrets Manager 现在将[记录事件](admin-console/oversight-visibility/event-logging/event-logs.md#secrets-manager-events)。
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 
-* **新的环境变量**：现提供用于配置刷新令牌处理的[新环境变量](self-hosting/deploy-and-configure/configuration-options/environment-variables.md#refresh-token-variables)，允许用户在自托管服务器上设定身份验证令牌的有效期和超时时间。
+* **新的环境变量**：提供用于配置刷新令牌处理的新[环境变量](self-hosting/deploy-and-configure/configuration-options/environment-variables.md#refresh-token-variables)，允许用户在自托管服务器上设定身份验证令牌的有效期和超时时间。
 
 ## 2025.9.2
 
