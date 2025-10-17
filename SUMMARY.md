@@ -255,7 +255,7 @@
   * [=入职](admin-console/onboarding/README.md)
     * [客户成功中心](admin-console/onboarding/customer-success-hub.md)
     * [=Bitwarden 入职手册](admin-console/onboarding/bitwarden-onboarding-playbook.md)
-    * [=客户激活套件](admin-console/onboarding/customer-activation-kit.md)
+    * [客户激活工具包](admin-console/onboarding/customer-activation-kit.md)
     * [入职工作流程](admin-console/onboarding/onboarding-workflows.md)
     * [\*关于本章节](admin-console/onboarding/about-this-section.md)
     * [\*=欢迎电子邮件模板](admin-console/onboarding/welcome-email-templates.md)
