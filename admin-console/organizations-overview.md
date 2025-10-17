@@ -6,7 +6,7 @@
 
 ## 什么是组织？ <a href="#what-are-organizations" id="what-are-organizations"></a>
 
-组织将 Bitwarden 用户和密码库项目联系在一起，以[安全地共享](../organizations/sharing.md)登录、笔记、支付卡和身份信息。组织有一个独立的视图，即管理员控制台，[管理员](manage-members/member-roles.md)可在此管理组织的项目和成员、运行报告以及配置组织设置等：
+组织将 Bitwarden 用户和密码库项目联系在一起，以[安全地共享](../password-manager/vault-basics/organization-members/sharing.md)登录、笔记、支付卡和身份信息。组织有一个独立的视图，即管理员控制台，[管理员](manage-members/member-roles.md)可在此管理组织的项目和成员、运行报告以及配置组织设置等：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?_a=DAJCwlWIZAAB" %}
 免费组织管理控制台
@@ -64,7 +64,7 @@ Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需�
 新的家庭、团队和企业组织内置了 7 天免费试用！在您的试用期结束之前，我们不会向您收费，您可以随时从组织的**设置**选项卡中取消订阅。
 {% endhint %}
 
-创建您的组织后，就可以创建[集合](manage-shared-items/collections/about-collections.md)、[邀请用户](manage-members/user-management.md)并[开始共享](../organizations/sharing.md)。
+创建您的组织后，就可以创建[集合](manage-shared-items/collections/about-collections.md)、[邀请用户](manage-members/user-management.md)并[开始共享](../password-manager/vault-basics/organization-members/sharing.md)。
 
 ## 集合和群组 <a href="#collections-and-groups" id="collections-and-groups"></a>
 

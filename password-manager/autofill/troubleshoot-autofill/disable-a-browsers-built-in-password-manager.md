@@ -34,7 +34,7 @@ Chrome 密码选项
 Chrme 已保存的密码
 {% endembed %}
 
-如果您还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-google-chrome.md#export-from-chrome)，为将来导入 Bitwarden 做准备。导出后，您应该从浏览器的存储中删除这些密码。
+如果您还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-chrome.md#export-from-chrome)，为将来导入 Bitwarden 做准备。导出后，您应该从浏览器的存储中删除这些密码。
 {% endtab %}
 
 {% tab title="Firefox" %}

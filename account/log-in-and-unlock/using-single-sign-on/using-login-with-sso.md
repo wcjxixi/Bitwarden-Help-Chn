@@ -108,7 +108,7 @@ SSO 标识符界面
 {% hint style="info" %}
 **为什么仍然需要我的主密码？**
 
-所有密码库数据，包括[由您组织共享](../../../organizations/sharing.md)的凭据，Bitwarden **仅**以加密形式保存他们。这意味着为了使用任何这些凭据，**您**需要一种方法来解密该数据（我们不能）。
+所有密码库数据，包括[由您组织共享](../../../password-manager/vault-basics/organization-members/sharing.md)的凭据，Bitwarden **仅**以加密形式保存他们。这意味着为了使用任何这些凭据，**您**需要一种方法来解密该数据（我们不能）。
 
 您的主密码是该解密密钥的来源。即使您使用 SSO 向 Bitwarden 进行身份验证（证明您的身份），您仍然必须使用该解密密钥（您的主密码）来解密密码库数据。
 {% endhint %}

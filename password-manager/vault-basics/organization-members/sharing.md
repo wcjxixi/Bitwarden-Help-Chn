@@ -6,14 +6,14 @@
 
 使用 Bitwarden，共享一个项目意味着两件事：
 
-* 将项目添加到一个[组织](../admin-console/organizations-overview.md)。这将把项目的所有权转移给与您共享项目的组织。
-* 将项目添加到一个或多个[集合](../admin-console/manage-shared-items/collections/about-collections.md)。这些集合的**访问权限**设置决定了谁可以访问它。
+* 将项目添加到一个[组织](../../../admin-console/organizations-overview.md)。这将把项目的所有权转移给与您共享项目的组织。
+* 将项目添加到一个或多个[集合](../../../admin-console/manage-shared-items/collections/about-collections.md)。这些集合的**访问权限**设置决定了谁可以访问它。
 
 使用 Bitwarden 共享项目有许多不同的方法。在本文中，我们将介绍这些方法。无论哪种方法最适合您的工作流程，请记住您需要成为组织的成员才能共享。
 
 ## 共享新项目 <a href="#share-new-items" id="share-new-items"></a>
 
-无论是向组织**添加项目**，还是向组织**导入项目**，您都可以从一开始就指定共享对象。您可以将项目添加或导入到任何拥有合适[权限](../admin-console/manage-shared-items/collections/collection-permissions.md)的集合中：
+无论是向组织**添加项目**，还是向组织**导入项目**，您都可以从一开始就指定共享对象。您可以将项目添加或导入到任何拥有合适[权限](../../../admin-console/manage-shared-items/collections/collection-permissions.md)的集合中：
 
 {% tabs %}
 {% tab title="添加项目" %}
@@ -32,7 +32,7 @@
 4、填写项目的其他相关信息，然后选择**保存**完成共享。
 
 {% hint style="success" %}
-**提醒**：共享某个项目涉及将其所有权交给组织。管理团队应妥善管理[集合的权限](../admin-console/manage-shared-items/collections/collection-permissions.md)，因为拥有正确权限级别的成员有能力更改或删除已共享的项目。您可以通过项目名称旁边的徽标来判断该项目是否为共享项目：
+**提醒**：共享某个项目涉及将其所有权交给组织。管理团队应妥善管理[集合的权限](../../../admin-console/manage-shared-items/collections/collection-permissions.md)，因为拥有正确权限级别的成员有能力更改或删除已共享的项目。您可以通过项目名称旁边的徽标来判断该项目是否为共享项目：
 
 <img src="https://bitwarden.com/assets/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?w=604&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
 {% endhint %}
@@ -44,7 +44,7 @@
 1、导航至**工具** → **导入数据**。
 
 {% hint style="success" %}
-组织[所有者、管理员和某些自定义用户](../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以弹出菜单中跳过此过程中的某些步骤。
+组织[所有者、管理员和某些自定义用户](../../../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以弹出菜单中跳过此过程中的某些步骤。
 {% endhint %}
 
 2、使用**密码库**下拉菜单选择希望此项目归属的组织。
@@ -56,7 +56,7 @@
 5、选择**导入数据**以完成共享。
 
 {% hint style="success" %}
-**提醒**：共享某个项目涉及将其所有权交给组织。管理团队应妥善管理[集合的权限](../admin-console/manage-shared-items/collections/collection-permissions.md)，因为拥有正确权限级别的成员有能力更改或删除已共享的项目。您可以通过项目名称旁边的徽标来判断该项目是否为共享项目：
+**提醒**：共享某个项目涉及将其所有权交给组织。管理团队应妥善管理[集合的权限](../../../admin-console/manage-shared-items/collections/collection-permissions.md)，因为拥有正确权限级别的成员有能力更改或删除已共享的项目。您可以通过项目名称旁边的徽标来判断该项目是否为共享项目：
 
 <img src="https://bitwarden.com/assets/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?w=604&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
 {% endhint %}
@@ -65,7 +65,7 @@
 
 ## 共享现有项目 <a href="#share-existing-items" id="share-existing-items"></a>
 
-您可能会发现，您当前拥有的项目需要与您组织中的其他成员共享。您可以在任何 Bitwarden App 中，与任何拥有合适[权限](../admin-console/manage-shared-items/collections/collection-permissions.md)的集合共享项目：
+您可能会发现，您当前拥有的项目需要与您组织中的其他成员共享。您可以在任何 Bitwarden App 中，与任何拥有合适[权限](../../../admin-console/manage-shared-items/collections/collection-permissions.md)的集合共享项目：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -74,7 +74,7 @@
 1、在**密码库**视图中，使用复选框选择要共享的项目。
 
 {% hint style="success" %}
-组织[所有者、管理员和某些自定义用户](../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以弹出菜单中跳过此过程中的某些步骤。
+组织[所有者、管理员和某些自定义用户](../../../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以弹出菜单中跳过此过程中的某些步骤。
 {% endhint %}
 
 2、使用 **≡**&#x83DC;单，选择**分配到集合**选项：
@@ -190,21 +190,21 @@ bw move <itemid> <organizationid> [encodedJson]
 * `itemid` 代表项目的唯一标识符。
 * `Organizationid` 代表要将项目移动到的组织的唯一标识符。
 
-更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md#move)。
+更多详情，请参阅 Bitwarden [CLI 文档](../../developer-tools/cli/password-manager-cli.md#move)。
 {% endtab %}
 {% endtabs %}
 
 ## 项目共享后 <a href="#after-items-are-shared" id="after-items-are-shared"></a>
 
 {% hint style="info" %}
-**提醒**：共享某个项目涉及将其所有权交给组织。管理团队应妥善管理[集合的权限](../admin-console/manage-shared-items/collections/collection-permissions.md)，因为拥有正确权限级别的成员有能力更改或删除已共享的项目。您可以通过项目名称旁边的徽标来判断该项目是否为共享项目：
+**提醒**：共享某个项目涉及将其所有权交给组织。管理团队应妥善管理[集合的权限](../../../admin-console/manage-shared-items/collections/collection-permissions.md)，因为拥有正确权限级别的成员有能力更改或删除已共享的项目。您可以通过项目名称旁边的徽标来判断该项目是否为共享项目：
 
 <img src="https://bitwarden.com/assets/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?w=604&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
 {% endhint %}
 
 ### 回收共享项目的所有权 <a href="#reclaimed-shared-item-ownership" id="reclaimed-shared-item-ownership"></a>
 
-拥有项目所存储的集合的[管理集合权限](../admin-console/manage-shared-items/collections/collection-permissions.md)的用户可以选择停止与组织共享项目：
+拥有项目所存储的集合的[管理集合权限](../../../admin-console/manage-shared-items/collections/collection-permissions.md)的用户可以选择停止与组织共享项目：
 
 1. 使用项目的 **≡**&#x9009;项菜单然后选择**克隆**，以克隆该项目。
 2. 在**新建项目**面板上，使用**所有者**下拉菜单选择您的账户电子邮箱。这将确保项目被克隆到非共享上下文中。

@@ -147,18 +147,10 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 {% endtab %}
 {% endtabs %}
 
-## 导入故障排除 <a href="#import-troubleshooting" id="import-troubleshooting"></a>
+## 导入错误故障排除 <a href="#troubleshoot-import-errors" id="troubleshoot-import-errors"></a>
+
+如果出现「导入错误」消息，则表明没有数据添加到您的密码库中。[修复导入文件问题](../import-data.md#troubleshoot-import-errors)然后重试。
 
 ### iCloud/Mac 钥匙串/Safari 导入问题 <a href="#icloud-mac-keychain-safari-import-issues" id="icloud-mac-keychain-safari-import-issues"></a>
 
 * 从 Safari 15.0 开始，您可以将密码从 Safari 导出到 `.csv` 文件中。导出后，[调整您的 .csv](../../../import-export/condition-a-bitwarden-.csv-or-.json.md) 以符合 Bitwarden 的格式，然后导入您的数据。
-
-### 文件大小导入限制 <a href="#file-size-import-limitations" id="file-size-import-limitations"></a>
-
-超过以下任一项数据限制，导入可能会被拒绝：
-
-* 如果您的导入包含超过 4,000 个项目。
-* 如果您的导入包含超过 2,000 个文件夹。
-* 如果您的导入包含超过 2,000 个集合。
-* 如果您的导入包含超过 7,000 个项目-文件夹关系（例如，1 个项目存在于 3 个文件夹中，可以算作 3 个项目 - 文件夹关系）。
-* 如果您的导入包含超过 8,000 个项目-集合关系（例如，1 个项目存在于 3 个集合中，可以算作 3 个项目 - 集合关系）。

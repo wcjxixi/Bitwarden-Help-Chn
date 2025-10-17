@@ -23,6 +23,24 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.10.0
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.10.0、浏览器扩展 2025.10.0、移动端 2025.10.0、桌面端 2025.10.0、CLI 2025.10.0）
+
+### Password Manager
+
+* **Edge、Opera 和 Vivaldi 浏览器的直接导入功能**：通过 Edge、Opera 和 Vivaldi 浏览器的[直接导入](password-manager/import-and-export/import-guides/import-data-from-chrome.md#import-directly-from-browser)功能，快速安全地将数据迁移至 Bitwarden。
+* **我的项目**：当启用[强制组织数据所有权策略](admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)时，所有项目 将归组织所有。受此策略约束的成员现在可以将项目保存至新的[我的项目](password-manager/vault-basics/organization-members/my-items.md)位置，既保障了成员隐私，又确保了管理员能在成员离开组织后转移数据。
+* **简化单点登录用户登录界面**：采用强制单点登录策略的组织成员，若曾在该设备完成过身份验证，登录界面中其他认证选项将自动灰显。
+
+### Secrets Manager
+
+* **新的事件日志**：当机器账户被创建、删除，或有用户/群组被分配至其名下，以及用户/群组被移除时，Secrets Manager 现将记录相关事件。
+
+### 自托管 <a href="#self-host" id="self-host"></a>
+
+* **新的环境变量**：现提供用于配置刷新令牌处理的新环境变量，允许用户在自托管服务器上设定身份验证令牌的有效期和超时时间。
+
 ## 2025.9.2
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.9.1）
@@ -343,7 +361,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Password Manager
 
-* **更改密码库项目所有者**：在网页 App 上，现在您可以直接从编辑窗口通过将其所有者更改为您所属的任何组织来共享密码库项目。[了解更多](organizations/sharing.md)。
+* **更改密码库项目所有者**：在网页 App 上，现在您可以直接从编辑窗口通过将其所有者更改为您所属的任何组织来共享密码库项目。[了解更多](password-manager/vault-basics/organization-members/sharing.md)。
 * **屏蔽浏览器扩展的自动填充**：现在可以专门指示浏览器扩展不允许在某些域名上进行自动填充。[了解更多](password-manager/autofill/more-autofill-options/blocking-autofill.md)。
 * **移动版 Bitwarden Send 更新**：移动 App 上的 Bitwarden Send 选项已不再支持设置有效期和停用 Send，这与浏览器扩展目前提供的功能一致。在未来的版本中，其他客户端也将停止对这些选项的支持。[了解更多](bitwarden-send/send-lifespan.md)。
 

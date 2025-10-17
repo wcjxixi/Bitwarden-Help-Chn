@@ -226,7 +226,7 @@ Chrome 浏览器选项
 Chrome 已保存的密码
 {% endembed %}
 
-如果您尚未在 Bitwarden 中保存这些密码，请[将它们导出](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md#export-from-chrome)以准备将来导入到 Bitwarden。导出后，您应该从浏览器的存储中删除这些密码。
+如果您尚未在 Bitwarden 中保存这些密码，请[将它们导出](../password-manager/import-and-export/import-guides/import-data-from-chrome.md#export-from-chrome)以准备将来导入到 Bitwarden。导出后，您应该从浏览器的存储中删除这些密码。
 {% endtab %}
 
 {% tab title="Firefox" %}
@@ -246,7 +246,7 @@ Bitwarden Password Manager 为高级用户提供各种[报告](../your-vault/vau
 Firefox 已经保存的登录信息
 {% endembed %}
 
-如果您尚未在 Bitwarden 中保存这些密码，请[将它们导出](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md#export-from-chrome)以准备将来导入到 Bitwarden。导出后，您应该从 Firefox 中**移除**这些密码。
+如果您尚未在 Bitwarden 中保存这些密码，请[将它们导出](../password-manager/import-and-export/import-guides/import-data-from-chrome.md#export-from-chrome)以准备将来导入到 Bitwarden。导出后，您应该从 Firefox 中**移除**这些密码。
 {% endtab %}
 
 {% tab title="Safari" %}

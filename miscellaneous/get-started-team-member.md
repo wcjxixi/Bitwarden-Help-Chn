@@ -59,7 +59,7 @@ Password Manager 网页 App
 
 共享项目被组合成集合，团队可根据业务单元（如「销售团队」）、业务功能（如「社交媒体登录」）、系统（如「AWS 凭据」）等进行组织。
 
-了解[如何与您的团队共享凭据](../organizations/sharing.md)。
+了解[如何与您的团队共享凭据](../password-manager/vault-basics/organization-members/sharing.md)。
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 
@@ -130,7 +130,7 @@ Password Manager 网页 App
 
 共享项目被组合成集合，团队可根据业务单元（如「销售团队」）、业务功能（如「社交媒体登录」）、系统（如「AWS 凭据」）等进行组织。
 
-了解[如何与您的团队共享凭据](../organizations/sharing.md)。
+了解[如何与您的团队共享凭据](../password-manager/vault-basics/organization-members/sharing.md)。
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 
@@ -197,7 +197,7 @@ Password Manager 网页 App
 
 共享项目被组合成集合，家庭可根据谁具有访问权限的单元（如「仅限父母」）、包含的登录类型（如「流媒体登录」）等进行组织。
 
-了解[如何与您的团队共享凭据](../organizations/sharing.md)。
+了解[如何与您的团队共享凭据](../password-manager/vault-basics/organization-members/sharing.md)。
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 

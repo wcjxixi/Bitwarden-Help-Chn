@@ -167,7 +167,7 @@
 分配到集合
 {% endembed %}
 
-了解更多关于[组织](../admin-console/organizations-overview.md)、[集合](../admin-console/manage-shared-items/collections/about-collections.md)和[共享](../organizations/sharing.md)的信息。
+了解更多关于[组织](../admin-console/organizations-overview.md)、[集合](../admin-console/manage-shared-items/collections/about-collections.md)和[共享](../password-manager/vault-basics/organization-members/sharing.md)的信息。
 
 ### 保护个人项目 <a href="#protect-individual-items" id="protect-individual-items"></a>
 

@@ -63,9 +63,9 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * Avira (json)
 * BlackBerry Password Keeper (csv)
 * Blur (csv)
-* [Brave (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)（请选择 **Chrome**）
+* [Brave (csv)](../password-manager/import-and-export/import-guides/import-data-from-chrome.md)（请选择 **Chrome**）
 * Buttercup (csv)
-* [Chrome (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
+* [Chrome (csv)](../password-manager/import-and-export/import-guides/import-data-from-chrome.md)
 * Clipperz (html)
 * Codebook (csv)
 * Dashlane (json)
@@ -84,10 +84,10 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * Meldium (csv)
 * mSecure (csv)
 * Myki (csv)
-* [Microsoft Edge (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)（请选择 **Chrome**）
+* [Microsoft Edge (csv)](../password-manager/import-and-export/import-guides/import-data-from-chrome.md)（请选择 **Chrome**）
 * Nordpass (csv)
 * Netwrix Password Secure (csv)
-* [Opera (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)（请选择 **Chrome**）
+* [Opera (csv)](../password-manager/import-and-export/import-guides/import-data-from-chrome.md)（请选择 **Chrome**）
 * Padlock (csv)
 * Passbolt (csv)
 * PassKeep (csv)
@@ -110,6 +110,6 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * Sticky Password (xml)
 * True Key (csv)
 * Universal Password Manager (csv)
-* [Vivaldi (csv)](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
+* [Vivaldi (csv)](../password-manager/import-and-export/import-guides/import-data-from-chrome.md)
 * Yoti (csv)
 * Zoho Vault (csv)

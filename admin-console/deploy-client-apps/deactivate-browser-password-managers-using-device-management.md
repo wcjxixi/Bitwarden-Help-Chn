@@ -119,7 +119,7 @@ Firefox 设置
 {% hint style="info" %}
 自动登录仍会被选中，因为没有策略设置可将其关闭。
 
-之前在 Edge 中保存的任何登录信息都不会被删除，尽管自动填充功能已禁用，但仍会继续显示给用户。在从 Edge 中删除任何已保存的登录信息之前，请务必指示用户[将任何已保存的登录信息导入 Bitwarden](../../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)。
+之前在 Edge 中保存的任何登录信息都不会被删除，尽管自动填充功能已禁用，但仍会继续显示给用户。在从 Edge 中删除任何已保存的登录信息之前，请务必指示用户[将任何已保存的登录信息导入 Bitwarden](../../password-manager/import-and-export/import-guides/import-data-from-chrome.md)。
 {% endhint %}
 {% endtab %}
 

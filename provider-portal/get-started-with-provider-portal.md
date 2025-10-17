@@ -67,7 +67,7 @@
 
 客户组织是附属于提供商或由提供商管理的任何[组织](../admin-console/organizations-overview.md)。对于您的客户来说，除了谁负责管理，「客户」组织和「常规」组织之间没有区别。
 
-组织将 Bitwarden 用户和密码库项目联系在一起，用于[安全地共享](../organizations/sharing.md)登录、支付卡、笔记和身份信息。组织有一个独立的密码库，提供商服务用户可以在其中管理组织的项目、用户和设置：
+组织将 Bitwarden 用户和密码库项目联系在一起，用于[安全地共享](../password-manager/vault-basics/organization-members/sharing.md)登录、支付卡、笔记和身份信息。组织有一个独立的密码库，提供商服务用户可以在其中管理组织的项目、用户和设置：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5fXREt9aHmnVgLLRPBs8yg/dbecd580231e8ea2f4eec2be224a1e64/2025-02-25_15-20-08.png?_a=DAJCwlWIZAAB" %}
 客户组织密码库

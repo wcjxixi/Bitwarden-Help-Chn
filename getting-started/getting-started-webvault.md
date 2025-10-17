@@ -104,7 +104,7 @@ Bitwarden 网页 App
 * [1Password](../password-manager/import-and-export/import-guides/import-data-from-1password.md)
 * [Dashlane](../import-export/import-guides/Import-data-from-dashlane.md)
 * [macOS & Safari](../password-manager/import-and-export/import-guides/import-data-from-macos-and-safari.md)
-* [Google Chrome](../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md)
+* [Google Chrome](../password-manager/import-and-export/import-guides/import-data-from-chrome.md)
 * [Firefox](../password-manager/import-and-export/import-guides/import-data-from-firefox.md)
 
 ## 保护您的密码库 <a href="#secure-your-vault" id="secure-your-vault"></a>

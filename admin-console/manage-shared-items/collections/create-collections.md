@@ -41,7 +41,7 @@
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 * 从概念层面[了解集合](about-collections.md)。
-* 通过新的集合[与组织成员共享项目](../../../organizations/sharing.md)。
+* 通过新的集合[与组织成员共享项目](../../../password-manager/vault-basics/organization-members/sharing.md)。
 * 为新集合[分配群组和成员访问权限](assign-users-to-collections.md)。
 * 为集合[配置群组和成员权限](collection-permissions.md)。
 * 为组织[配置集合管理设置](collection-settings.md)。

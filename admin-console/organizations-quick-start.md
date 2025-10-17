@@ -12,7 +12,7 @@
 
 ## 什么是组织？ <a href="#what-are-organizations" id="what-are-organizations"></a>
 
-Bitwarden 组织将用户和密码库项目关联在一起，以[安全地共享](../organizations/sharing.md)组织拥有的登录、笔记、支付卡和身份。组织可以是一个家庭、团队、公司或需要安全共享数据的任何一群人。组织具有独立的密码库，[管理员](manage-members/member-roles.md)可以在其中管理组织的项目、用户和设置：
+Bitwarden 组织将用户和密码库项目关联在一起，以[安全地共享](../password-manager/vault-basics/organization-members/sharing.md)组织拥有的登录、笔记、支付卡和身份。组织可以是一个家庭、团队、公司或需要安全共享数据的任何一群人。组织具有独立的密码库，[管理员](manage-members/member-roles.md)可以在其中管理组织的项目、用户和设置：
 
 {% embed url="https://bitwarden.com/assets/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?w=1043&fm=avif&q=80" %}
 免费组织管理控制台

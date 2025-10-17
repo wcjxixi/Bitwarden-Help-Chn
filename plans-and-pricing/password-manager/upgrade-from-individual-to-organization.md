@@ -81,4 +81,4 @@ Bitwarden 提供在**账户创建后 30 天内**取消高级个人计划的退�
 
 * [邀请用户加入您的组织](../../admin-console/manage-members/user-management.md)
 * [创建一个集合](../../admin-console/manage-shared-items/collections/about-collections.md#create-a-collection)
-* [共享项目到集合](../../organizations/sharing.md)
+* [共享项目到集合](../../password-manager/vault-basics/organization-members/sharing.md)

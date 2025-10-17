@@ -13,7 +13,7 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 * [从 LastPass 导入](import-guides/import-data-from-lastpass.md)
 * [从 1Password 导入](import-guides/import-data-from-1password.md)
 * [从 Firefox 导入](import-guides/import-data-from-firefox.md)
-* [从 Google Chrome、Edge 或 Chromium 导入](import-guides/import-data-from-google-chrome.md)
+* [从 Google Chrome、Edge 或 Chromium 导入](import-guides/import-data-from-chrome.md)
 * [从 Password Safe 导入](../../import-export/import-guides/import-data-from-password-safe.md)
 * [从其他 Bitwarden 密码库导入](../../import-export/export-vault-data.md)
 
@@ -49,14 +49,14 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
 
 * **个人密码库**：选择**我的密码库**或（可选）选择移动到的**文件夹**。
-* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(您需要有[**可以管理**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(需要[**可以管理**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
 
 4、从**文件格式**下拉菜单中，选择[导入文件的格式](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
 5、选择**选择文件**然后选取一个文件，或将文件内容复制并粘贴到文本框中。
 
 {% hint style="danger" %}
-导入过程不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件将创建重复项目。
+导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
 6、选择**导入数据**。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
@@ -74,7 +74,7 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
 
 * **个人密码库**：选择**我的密码库**或（可选）选择移动到的**文件夹**。
-* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(您需要有[**可以管理**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(需要[**可以管理**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
 
 4、从**文件格式**下拉菜单中，选择[导入文件的格式](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -107,7 +107,7 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
 
 * **个人密码库**：选择**我的密码库**或（可选）选择移动到的**文件夹**。
-* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(您需要有[**可以管理**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(需要[**可以管理**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
 
 4、从**文件格式**下拉菜单中，选择[导入文件的格式](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -163,6 +163,8 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 * 7,000 个项目-文件夹关系（例如，1 个项目存在于 3 个文件夹中，可以算作 3 个项目 - 文件夹关系）。
 * 8,000 个项目-集合关系（例如，1 个项目存在于 3 个集合中，可以算作 3 个项目 - 集合关系）。
 
+如果您的文件太大，请将其拆分为较小的文件然后分别导入。
+
 ### 字段长度限制 <a href="#field-length-limits" id="field-length-limits"></a>
 
 如果文件（通常是 `.csv`）中的某个项目超过了字段的**加密**字符限制，Bitwarden 将不会导入其中的任何内容。系统将显示一个「导入错误」的消息，并详细说明具体的问题。
@@ -185,9 +187,20 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 4. 保存文件。
 5. 返回 Bitwarden 然后[导入更新后的文件](import-data.md#import-to-your-personal-vault)。
 
-### 未分配的项目 <a href="#unassigned-items" id="unassigned-items"></a>
+### 文件包含未分配的项目 <a href="#https-bitwarden.com-help-import-data-file-contains-unassigned-items" id="https-bitwarden.com-help-import-data-file-contains-unassigned-items"></a>
 
-组织用户（不是[管理员还是所有者](../../admin-console/manage-members/member-roles.md#member-roles)）必须将所有导入的凭证分配给至少一个集合。有两种方法可以解决此导入错误：
+组织用户（不是[管理员或所有者](../../admin-console/manage-members/member-roles.md#member-roles)）必须将所有导入的凭证分配给至少一个集合。有两种方法可以解决此导入错误：
 
 * 分配一个您拥有**可以管理**权限的现有集合。
-* 为未指定的项目创建一个新的集合。输入新集合的名称来[自定义导入文件](../../import-export/condition-a-bitwarden-.csv-or-.json.md)。这将自动创建该集合并将项目添加到其中。
+* 为未指定的项目创建一个新的集合。通过输入一个新的集合名称来[自定义导入文件](../../import-export/condition-a-bitwarden-.csv-or-.json.md)。这将自动创建该集合并将项目添加到其中。
+
+{% hint style="success" %}
+要最大限度地减少此错误，请启用[限制为所有者和管理员可以创建集合](../../admin-console/manage-shared-items/collections/collection-settings.md#restrict-collection-creation-to-owners-and-admins)设置以阻止用户创建集合。
+{% endhint %}
+
+### 组织最多只能拥有俩个集合 <a href="#organization-can-only-have-a-maximum-of-two-collections" id="organization-can-only-have-a-maximum-of-two-collections"></a>
+
+免费组织最多可以拥有两个[集合](../../admin-console/manage-shared-items/collections/about-collections.md)。如果您尝试导入的文件指定了两个以上的集合，则会出现导入错误。有几个选项可以纠正这个问题：
+
+* 如果您尝试导入 `.csv` 或 `.json`，请[编辑该文件](../../import-export/condition-a-bitwarden-.csv-or-.json.md)以删除附加的集合。
+* 升级您的计划，以便您可以创建更多集合并按原样导入文件。

@@ -1,22 +1,23 @@
-# 从 Google Chrome 导入
+# 从 Chrome、Edge & Chromium 浏览器导入
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/import-from-chrome/)
 {% endhint %}
 
-使用这篇文章帮助您从 Google Chrome 导出数据并将其导入 Bitwarden 中。
+将您在基于 Chromium 的浏览器（例如 Google Chrome、Microsoft Edge 和 Opera）中保存的密码快速传输到您的 Bitwarden密码库。有两种方式：
 
-{% hint style="success" %}
-本文中的步骤也适用于任何基于 Chromium 的浏览器，包括 Opera、Microsoft Edge (Chromium)、Brave 和 Vivaldi。
-{% endhint %}
+* [导出浏览器数据](import-data-from-chrome.md#export-from-your-browser)然后将其导入 Bitwarden
+* [从浏览器直接导入](import-data-from-chrome.md#import-directly-from-browser)（仅适用于桌面 App）
 
-## 从 Chrome 中导出 <a href="#export-from-chrome" id="export-from-chrome"></a>
+## 从浏览器导出 & 导入文件 <a href="#export-and-import-a-file-from-your-browser" id="export-and-import-a-file-from-your-browser"></a>
 
-您可以从Google Chrome（或其他基于 Chromium 的浏览器）的桌面浏览器或移动浏览器导出数据：
+### 从浏览器导出 <a href="#export-from-your-browser" id="export-from-your-browser"></a>
+
+从桌面浏览器或移动浏览器导出数据：
 
 {% tabs %}
-{% tab title="桌面端 Chrome" %}
-要从桌面端 Chrome 导出密码：
+{% tab title="桌面端浏览器" %}
+要从桌面端 Chrome 或 Edge 导出密码：
 
 1. 使用地址栏导航至 `chrome://password-manager/settings` 或 `edge://wallet/passwords`。
 2. 定位到**导出密码**，然后点击**下载文件**。可能会提示您输入计算机的密码以进行授权。对于 Microsoft Edge，这可能隐藏在已保存密码部分的 **⋯**&#x83DC;单后面。
@@ -24,8 +25,8 @@
 4. 选择**保存**以完成导出。
 {% endtab %}
 
-{% tab title="移动端 Chrome" %}
-要从移动设备 Chrome 导出密码：
+{% tab title="移动端浏览器" %}
+要从移动设备 Chrome 或 Edge 导出密码：
 
 1. 点击 **⋯**&#x83DC;单按钮然后点击**密码管理器**。
 2. 点击**设置**。
@@ -34,17 +35,24 @@
 {% endtab %}
 {% endtabs %}
 
-## 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
+### 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
-**数据可以从网页 App、CLI、桌面 App 或浏览器扩展导入到 Bitwarden**。数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
+数据可以从网页 App、CLI、桌面 App 或浏览器扩展导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
+
+{% hint style="info" %}
+虽然某些项目类型无法导入，但您仍然可以将它们添加到密码库：
+
+* 将[文件附件](../../../your-vault/file-attachments.md)单独上传到新密码库。
+* 在新密码库中重新创建 [Send](../../../bitwarden-send/about-send.md)。
+{% endhint %}
 
 {% tabs %}
 {% tab title="网页 App" %}
 要导入数据到您的密码库：
 
-1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com/)，[https://vault.bitwarden.eu/](https://vault.bitwarden.eu/) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
+1、选择**工具**。
 
-2、从导航栏选择**工具** → **导入数据**：
+2、选择**导入数据**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/7ed2e5650e9988bf7595bccebe8a5114/2024-12-03_08-52-08.png?_a=DAJAUVWIZAAB" %}
 导入数据
@@ -130,14 +138,35 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 {% endtab %}
 {% endtabs %}
 
-## 导入故障排除 <a href="#import-troubleshooting" id="import-troubleshooting"></a>
+## 从浏览器直接导入 <a href="#import-directly-from-browser" id="import-directly-from-browser"></a>
 
-### 文件大小导入限制 <a href="#file-size-import-limitations" id="file-size-import-limitations"></a>
+您可以将密码从 Microsoft Edge、Opera 和 Vivaldi 导入 Bitwarden，而无需手动导出文件。此方法目前不适用于 Google Chrome。所有 Bitwarden 桌面 App 均兼容，但从 Mac App Store 安装的 App 除外。
 
-超过以下任一项数据限制，导入可能会被拒绝：
+要导入您的数据：
 
-* 如果您的导入包含超过 4,000 个项目。
-* 如果您的导入包含超过 2,000 个文件夹。
-* 如果您的导入包含超过 2,000 个集合。
-* 如果您的导入包含超过 7,000 个项目-文件夹关系（例如，1 个项目存在于 3 个文件夹中，可以算作 3 个项目 - 文件夹关系）。
-* 如果您的导入包含超过 8,000 个项目-集合关系（例如，1 个项目存在于 3 个集合中，可以算作 3 个项目 - 集合关系）。
+1、登录到 Bitwarden 桌面 App。
+
+2、选择**文件**。
+
+3、选择**导入数据**。
+
+4、从**密码库**下拉菜单中，选择数据的保存目的地：
+
+* **个人密码库**：选择**我的密码库**或（可选）选择移动到的**文件夹**。
+* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(需要[**可以管理**](../../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+
+5、从**文件格式**下拉菜单中选择您的浏览器。下方将显示两个选项。
+
+6、选择**直接从浏览器导入**：
+
+{% embed url="https://bitwarden.com/assets/1dZKYVPQpd1TVDcmUuwLq2/23e9b222768964108ade8c02e52134ee/Directly_import_with_Chromium.png?w=652&fm=avif" %}
+
+7、选择包含密码的**浏览器配置文件**。
+
+8、选择**导入数据**。
+
+9、输入计算机密码以确认。
+
+{% hint style="danger" %}
+导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
+{% endhint %}

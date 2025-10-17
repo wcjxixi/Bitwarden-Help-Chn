@@ -69,6 +69,6 @@ Bitwarden 广播包：
 * 区分工作和个人：个人和组织密码库[概述](../../your-vault/vault-items.md)
 * 禁用浏览器的内置密码管理器[概述](../../password-manager/autofill/troubleshoot-autofill/disable-a-browsers-built-in-password-manager.md)
 * 从以下浏览器导出密码：
-  * [Chrome](../../password-manager/import-and-export/import-guides/import-data-from-google-chrome.md#export-from-chrome)
+  * [Chrome](../../password-manager/import-and-export/import-guides/import-data-from-chrome.md#export-from-chrome)
   * [macOS 和 Safari](../../password-manager/import-and-export/import-guides/import-data-from-macos-and-safari.md#export-from-safari-or-macos)
   * [Firefox](../../password-manager/import-and-export/import-guides/import-data-from-firefox.md#export-from-firefox)

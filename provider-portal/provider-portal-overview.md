@@ -48,7 +48,7 @@
 为这种情况创建一个独立的组织将确保可以为用户提供适当的[用户类型和对凭据的访问控制](../admin-console/manage-members/member-roles.md)。
 {% endhint %}
 
-组织将 Bitwarden 用户和密码库项目联系在一起，用于[安全地共享](../organizations/sharing.md)登录、支付卡、笔记和身份。组织有一个独立的视图，即管理控制台，提供商服务用户可以在其中管理组织的集合、管理成员和群组、运行报告、导入数据和配置组织设置：
+组织将 Bitwarden 用户和密码库项目联系在一起，用于[安全地共享](../password-manager/vault-basics/organization-members/sharing.md)登录、支付卡、笔记和身份。组织有一个独立的视图，即管理控制台，提供商服务用户可以在其中管理组织的集合、管理成员和群组、运行报告、导入数据和配置组织设置：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5fXREt9aHmnVgLLRPBs8yg/dbecd580231e8ea2f4eec2be224a1e64/2025-02-25_15-20-08.png?_a=DAJCwlWIZAAB" %}
 客户组织密码库

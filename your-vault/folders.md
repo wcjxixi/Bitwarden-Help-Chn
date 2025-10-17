@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/folders/)
 {% endhint %}
 
-文件夹是用于通过收集登录、支付卡、身份和安全笔记来组织您的个人密码库的结构。使用文件夹是使所有密码库项目易于查找的比较好的方法。可以将任何密码库项目（包括[组织已与您共享的项目](../organizations/sharing.md)）添加到文件夹中。
+文件夹是用于通过收集登录、支付卡、身份和安全笔记来组织您的个人密码库的结构。使用文件夹是使所有密码库项目易于查找的比较好的方法。可以将任何密码库项目（包括[组织已与您共享的项目](../password-manager/vault-basics/organization-members/sharing.md)）添加到文件夹中。
 
 {% hint style="success" %}
 当从筛选器菜单中选择 **☷所有密码库**时，添加到某个文件夹的项目仍会出现在您的密码库中，删除文件夹并**不会**删除该文件夹中的项目。
@@ -77,7 +77,7 @@ bw create folder <foldername>
 {% hint style="info" %}
 如果您是某个组织的成员，在**筛选器**菜单中，集合将显示在文件夹的下方。
 
-文件夹和集合之间有相似之处。**文件夹用于组织个人密码库的项目**（可以包含[已共享的项目](../organizations/sharing.md)），并且对您来说是独一无二的，而集合则用于在组织成员之间共享项目。
+文件夹和集合之间有相似之处。**文件夹用于组织个人密码库的项目**（可以包含[已共享的项目](../password-manager/vault-basics/organization-members/sharing.md)），并且对您来说是独一无二的，而集合则用于在组织成员之间共享项目。
 {% endhint %}
 
 ### 嵌套文件夹 <a href="#nested-folders" id="nested-folders"></a>
@@ -162,5 +162,5 @@ bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.folderId="3d9cecac-71a2-
 {% endtabs %}
 
 {% hint style="success" %}
-[组织已与您共享](../organizations/sharing.md)的项目可以添加到您的文件夹中，这样做只会影响该项目在您的个人密码库中的显示方式（即，将项目添加到文件夹不会授予任何人对该文件夹的访问权限，也不会改变它是否在他们的密码库中的某个文件夹中）。
+[组织已与您共享](../password-manager/vault-basics/organization-members/sharing.md)的项目可以添加到您的文件夹中，这样做只会影响该项目在您的个人密码库中的显示方式（即，将项目添加到文件夹不会授予任何人对该文件夹的访问权限，也不会改变它是否在他们的密码库中的某个文件夹中）。
 {% endhint %}

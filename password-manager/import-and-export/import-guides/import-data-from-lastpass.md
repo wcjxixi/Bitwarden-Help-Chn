@@ -8,7 +8,7 @@
 
 ## 从 LastPass 导出 <a href="#export-from-lastpass" id="export-from-lastpass"></a>
 
-您可以从 LastPass 的网页密码库或从 LastPass 浏览器扩展导出数据：
+您可以从 LastPass 的网页密码库或从 LastPass 浏览器扩展[导出数据](https://support.lastpass.com/help/export-your-passwords-and-secure-notes-lp040004)：
 
 {% hint style="success" %}
 您可以跳过此步骤并立即开始使用[直接导入选项](import-data-from-lastpass.md#import-to-bitwarden)导入到 Bitwarden。
@@ -169,47 +169,13 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 * 在您的 IdP 的 LastPass 应用程序中添加 `[protocol]://[identifier]/sso-connector.html?lastpass=1` 或 `https://your.server.com/sso-connector.html?lp=1` 作为允许的回调 URL。
 * 在您的 IdP 的 LastPass 应用程序中添加 `chrome-extension://nngceckbapebfimnlniiiahkandclblb`，`ms-browser-extension://jbkfoedolllekgbhcbcoahefnbanhhlh` 和/或 `moz-extension://23462205-0e62-4cc8-80c4-910cf54b82c2` 作为允许的回调 URL。
 
-## 导入故障排除 <a href="#import-troubleshooting" id="import-troubleshooting"></a>
+## 导入错误故障排除 <a href="#troubleshoot-import-errors" id="troubleshoot-import-errors"></a>
 
-### 文件大小导入限制 <a href="#file-size-import-limitations" id="file-size-import-limitations"></a>
+如果出现「导入错误」消息，则表明没有数据添加到您的密码库中。[修复导入文件问题](../import-data.md#troubleshoot-import-errors)然后重试。
 
-超过以下任一项数据限制，导入可能会被拒绝：
+### 组织最多只能拥有俩个集合 <a href="#organization-can-only-have-a-maximum-of-two-collections" id="organization-can-only-have-a-maximum-of-two-collections"></a>
 
-* 如果您的导入包含超过 4,000 个项目。
-* 如果您的导入包含超过 2,000 个文件夹。
-* 如果您的导入包含超过 2,000 个集合。
-* 如果您的导入包含超过 7,000 个项目-文件夹关系（例如，1 个项目存在于 3 个文件夹中，可以算作 3 个项目 - 文件夹关系）。
-* 如果您的导入包含超过 8,000 个项目-集合关系（例如，1 个项目存在于 3 个集合中，可以算作 3 个项目 - 集合关系）。
-
-### 字段大小导入错误 <a href="#field-size-import-errors" id="field-size-import-errors"></a>
-
-尝试导入 `.csv` 时通常会收到以下错误信息，这些信息表明导入文件中的某个特定值超出了该字段类型所允许的加密字符的限制：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7FjmtbX1PwBeLKkhklxRXl/ed7e4cd0fcaba916e75725c9153890da/2024-12-05_16-21-00.png?_a=DAJAUVWIZAAB" %}
-网页密码库中的密码错误
-{% endembed %}
-
-要解决这个问题，请在文本编辑器或电子表格程序中打开 `.csv` 文件，将违规项目移除或减少其字符数。Bitwarden 不会导入您的 `.csv` 文件直到无任何违规项目。错误信息中的内容包含了几条相关的数据，这可以帮助您识别违规项目。例如，在上面的示例中：
-
-* `[1]` 标识违规项目所在的索引号，该索引号已调整为与大多数电子表格程序中的行号匹配
-* `[Login]` 标识违规项目的项目 `type`（类型）
-* `"Facebook"` 标识违规项目的 `name`（名称）
-* `Notes` 标识超出了字符数限制的字段（列）
-* `10000` 标识该字段（列）允许的字符数限制
-
-{% hint style="success" %}
-导入时，任何给定字段的字符数都会因为被加密而增加，比如`.csv` 中具有 8000 个字符的`备注`字段在与 Bitwarden 接触时，字符数会扩展到 10000 多个，从而触发这个错误。一般来说，加密后字符数会增加 30-50%。
-{% endhint %}
-
-如果您在使用错误信息中提供的数据来查找违规项目时遇到问题，可以首先将重点放在备注上，因为备注通常会导致此错误。
-
-### 最大集合错误 <a href="#maximum-collections-error" id="maximum-collections-error"></a>
-
-当将 Lastpass 的 `.csv` 导出文件导入到[免费组织](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md)时，您可能会看到如下错误：
-
-{% embed url="https://bitwarden.com/_gatsby/image/1fc86e561312a1d2ee8810743571dfd9/7d9c8827861df387d48095fa03565c23/Screen%20Shot%202022-11-02%20at%209.51.25%20AM.webp?eu=dadc03b7e099a9835d3df38a697b6060e93d52f8fc546583346cb1af4ffa9e8075f7480320c028b12f6c5bd881b316ef65c77d3048bdd48fc8bf1ff3bb37f90a01850bee36e67507507e91adb7f754103ec71f58abdb8c4ce32e78cbfaeaea214e055f35fb3eeed0afea6020f39d7167aea9a16c3b91ed22e14456098c1f6ef818efc896456be79ada19ae9cbdc04394c5bd2e5f35c4fb33247f44160cee2ce9f3bb01733c2a140f329aad5a94609eb36d4e692057581c9434788500a503529bbbbfce5fd97879fca9c82c7084acffc48213b22f77f9cd22c6f346644e53fb&a=w%3D831%26h%3D327%26fm%3Dwebp%26q%3D75&cd=2022-11-29T13%3A10%3A06.522Z" %}
-免费组织最大集合错误
-{% endembed %}
+免费 Bitwarden 组织最多可以拥有两个集合来组织项目。导入数据时，Bitwarden 会将 LastPass  `grouping` 值视为集合。如果您的 LastPass 导出包含 3 个或更多 `grouping` 值，并且您是免费 Bitwarden 组织的一部分，您将收到 「This organization can only have a maximum of two collections（该组织最多只能拥有两个集合）」的导入错误。
 
 当 Lastpass 导出包含 3 个或更多 `grouping` 值时，就会发生该错误。`grouping` 字段中的值被 Bitwarden 解释为[集合](../../../admin-console/manage-shared-items/collections/about-collections.md)，但[免费组织](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md)限制为仅两个集合。例如，下面的 `.csv` 将导致该错误：
 
@@ -223,7 +189,7 @@ https://www.paypal.com/login,username,password,,,Paypal,Finance,0
 https://www.bankofamerica.com/,username,password,,,Bankofamerica,Finance,0
 ```
 
-要解决这个问题，删除每个项目的 `grouping` 列和 `grouping` 基准，包括后面的逗号，例如，编辑：
+要解决这个问题，请删除每个项目的 `grouping` 列和 `grouping` 基准，包括后面的逗号，例如，编辑：
 
 ```
 https://github.com/login,username,password,,,Github,Productivity Tools,0

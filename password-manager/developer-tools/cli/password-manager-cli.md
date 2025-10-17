@@ -463,7 +463,7 @@ bw list org-collections --organizationid 4016326f-98b6-42ff-b9fc-ac63014988f5
 **2021 年 8 月**：`share` 命令已被更改为 `move`。[了解更多](../../../release-notes.md)。
 {% endhint %}
 
-`move` 命令用于将密码库项目[转移到组织](../../../organizations/sharing.md)：
+`move` 命令用于将密码库项目[转移到组织](../../vault-basics/organization-members/sharing.md)：
 
 ```batch
 bw move <itemid> <organizationid> [encodedJson]

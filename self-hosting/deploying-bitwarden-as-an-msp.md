@@ -12,7 +12,7 @@ Bitwarden 支持经销商和托管服务提供商 (MSP) 模式。您可以立即
 
 ## Bitwarden 组织 <a href="#bitwarden-organizations" id="bitwarden-organizations"></a>
 
-Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../organizations/sharing.md)登录、笔记、支付卡和身份信息。组织可以是一个家庭、团队、公司或任何需要安全地共享数据的人群。组织有一个独立的密码库，[管理员](../admin-console/manage-members/member-roles.md)可以在那里管理组织的项目、用户和设置。
+Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../password-manager/vault-basics/organization-members/sharing.md)登录、笔记、支付卡和身份信息。组织可以是一个家庭、团队、公司或任何需要安全地共享数据的人群。组织有一个独立的密码库，[管理员](../admin-console/manage-members/member-roles.md)可以在那里管理组织的项目、用户和设置。
 
 MSP 应该为每一个客户[创建一个组织](../admin-console/organizations-overview.md#create-an-organization)，或者客户可以为自己创建一个。你可以在好几种[组织类型](../admin-console/organizations-overview.md#types-of-organizations-1)中你选择一种最适合你的客户的需要的类型。对于最强大的业务功能集，我们推荐[企业计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)。
 
@@ -30,7 +30,7 @@ Bitwarden 组织被设计为以可扩展和安全的方式管理用户和数据�
 
 ### 集合 <a href="#collections" id="collections"></a>
 
-集合汇集了用于在一个组织内[安全共享](../organizations/sharing.md)的登录、笔记、支付卡和身份信息。构建可扩展集合的常见方式包括：**按部门集合**（比如来自营销团队的用户被分配到 **Marketing** 集合），或**按功能集合**（比如营销团队的用户被分配到 **Social Media** 集合）：
+集合汇集了用于在一个组织内[安全共享](../password-manager/vault-basics/organization-members/sharing.md)的登录、笔记、支付卡和身份信息。构建可扩展集合的常见方式包括：**按部门集合**（比如来自营销团队的用户被分配到 **Marketing** 集合），或**按功能集合**（比如营销团队的用户被分配到 **Social Media** 集合）：
 
 ![](https://bitwarden.com/help/images/organizations/collections-graphic-1.png)
 
