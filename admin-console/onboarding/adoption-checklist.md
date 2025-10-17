@@ -1,10 +1,10 @@
-# \*采用清单
+# \*采用检查清单
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/adoption-checklist/)
 {% endhint %}
 
-使用此清单来推动采用，确保在初始实施后持续使用 Bitwarden。
+使用此检查清单来推动采用，确保在初始实施后持续使用 Bitwarden。
 
 ## 宣传和沟通 <a href="#awareness-and-communication" id="awareness-and-communication"></a>
 
