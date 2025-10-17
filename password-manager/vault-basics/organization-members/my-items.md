@@ -1,4 +1,4 @@
-# =我的项目
+# 我的项目
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/my-items/)
@@ -30,19 +30,19 @@ Bitwarden目前仅建议对尚未开始推广的组织启用[强制组织数据�
 
 ## 导入到「我的项目」 <a href="#import-to-my-items" id="import-to-my-items"></a>
 
-组织成员可以通过从集合下拉菜单中选择「我的项目」在任何 Bitwarden 客户端将项目导入「我的项目」：
+组织成员可以在任何 Bitwarden 客户端上通过从集合下拉菜单中选择「我的项目」将项目导入到「我的项目」：
 
 {% embed url="https://bitwarden.com/assets/3PO3iAbypeTCIXsWCu2jQ2/846cb1ceb1c696ae549b2df413ff0801/2025-10-08_15-43-37.png?w=1200&fm=avif" %}
 导入到「我的项目」
 {% endembed %}
 
-有关将项目导入 Bitwarden 的更多信息，请在此处查找。
+在[此处](../../import-and-export/import-data.md)了解有关将项目导入 Bitwarden 的更多信息。
 
 ## 保存到「我的项目」 <a href="#save-to-my-items" id="save-to-my-items"></a>
 
 当强制组织所有权策略处于激活状态时，创建新密码库项目的用户将能够将项目保存到「我的项目」。
 
-在创建项目时，「我的项目」将默认出现在"集合"字段中。
+在创建项目时，「我的项目」将默认出现在「集合」字段中。
 
 {% embed url="https://bitwarden.com/assets/5Z9lis0vkv5MNSWWIy8XHW/476245dcbeec31c62d6c8881f4eb4586/2025-10-08_11-15-05.png?w=1200&fm=avif" %}
 为「我的项目」创建新项目
@@ -50,4 +50,4 @@ Bitwarden目前仅建议对尚未开始推广的组织启用[强制组织数据�
 
 ## 传输项目 <a href="#transfer-items" id="transfer-items"></a>
 
-启用强制组织所有权策略允许组织管理员在成员继任期间安全地转移成员凭据。已删除或移除用户的凭据可以转移到其他集合。点击此处了解关于员工离职和继任后转移项目的更多信息。
+启用强制组织所有权策略允许组织管理员在成员继任期间安全地转移成员凭据。来自已移除已删除用户的凭据可以转移到其他集合。在[此处](../../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)了解关于员工离职和继任后转移项目的更多信息。

@@ -1,4 +1,4 @@
-# 托管 FAQ
+# 自托管 FAQ
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/hosting-faqs/)
@@ -111,3 +111,36 @@ globalSettings__mail__smtp__password=<valid-gmail-password>
 **答：**&#x8981;使用非 80 和 443 的自定义端口，请编辑 `./bwdata/config.yml` 中的 `http_port=` 和 `https_port=` 值，然后运行 `./bitwarden.sh rebuild` 命令来重建您的服务器资产。
 
 检查自定义端口值是否已经扩散到 `./bwdata/env/global.override.env` 中。
+
+### 问：如何启用 syslog 日志记录？ <a href="#how-do-i-enable-logging-to-syslog" id="how-do-i-enable-logging-to-syslog"></a>
+
+**答：**&#x44;ocker 的 `syslog` 日志记录驱动程序可与 Bitwarden 的容器配合使用。为了记录到 `syslog`，用户可以使用 Docker 的 `daemon.json` 文件（位于[此处](https://docs.docker.com/engine/logging/drivers/syslog/#usage)）在系统范围内设置 `syslog` 日志记录驱动程序。或者，您可以通过在 `bwdata/docker/docker-compose.override.yml` 文件中配置它来仅为 Bitwarden 容器进行配置，如下所示：
+
+```yaml
+services:
+  admin:
+    logging:
+      driver: syslog
+      options:
+        syslog-address: tcp://192.168.0.42:123
+  sso:
+    logging:
+      driver: syslog
+      options:
+        syslog-address: tcp://192.168.0.42:123
+  identity:
+    logging:
+      driver: syslog
+      options:
+        syslog-address: tcp://192.168.0.42:123
+  api:
+    logging:
+      driver: syslog
+      options:
+        syslog-address: tcp://192.168.0.42:123
+  events:
+    logging:
+      driver: syslog
+      options:
+        syslog-address: tcp://192.168.0.42:123
+```
