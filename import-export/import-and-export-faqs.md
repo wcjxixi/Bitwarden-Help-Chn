@@ -97,6 +97,7 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * Password Agent (csv)
 * Password Boss (json)
 * Password Dragon (xml)
+* Password Depot 17 (xml)
 * Password Safe (xml)
 * PasswordWallet (txt)
 * ProtonPass (json)

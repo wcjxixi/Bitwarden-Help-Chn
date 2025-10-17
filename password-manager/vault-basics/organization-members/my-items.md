@@ -36,7 +36,7 @@ Bitwarden目前仅建议对尚未开始推广的组织启用[强制组织数据�
 导入到「我的项目」
 {% endembed %}
 
-在[此处](../../import-and-export/import-data.md)了解有关将项目导入 Bitwarden 的更多信息。
+在[此处](../../import-and-export/import-data.md)了解更多有关将项目导入 Bitwarden 的信息。
 
 ## 保存到「我的项目」 <a href="#save-to-my-items" id="save-to-my-items"></a>
 
@@ -50,4 +50,4 @@ Bitwarden目前仅建议对尚未开始推广的组织启用[强制组织数据�
 
 ## 传输项目 <a href="#transfer-items" id="transfer-items"></a>
 
-启用强制组织所有权策略允许组织管理员在成员继任期间安全地转移成员凭据。来自已移除已删除用户的凭据可以转移到其他集合。在[此处](../../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)了解关于员工离职和继任后转移项目的更多信息。
+启用强制组织所有权策略允许组织管理员在成员继任期间安全地转移成员凭据。来自已移除已删除用户的凭据可以转移到其他集合。在[此处](../../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)了解更多有关员工离职和继任后转移项目的信息。

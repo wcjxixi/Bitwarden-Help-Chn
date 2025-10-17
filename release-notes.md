@@ -130,11 +130,11 @@ helm upgrade self-host-bsfyr9bpzk bitwarden/self-host --version <semver-version>
 
 ### 提供商门户 <a href="#provider-portal" id="provider-portal"></a>
 
-* **计费更新**：尚未在**计费** → **订阅**页面上添加付款方式的提供商应尽快添加付款方式。具有未支付账单的提供商现在将在未支付账单到期 30 天后被暂停服务，包括暂停客户组织。对于尚未添加有效付款方式的提供商，添加一个有效付款方式将确保服务的无缝延续。
+* **计费更新**：尚未在**计费** → **订阅**页面上添加付款方式的提供商应尽快添加一个付款方式。具有未支付账单的提供商现在将在未支付账单到期 30 天后被暂停服务，包括暂停客户组织。对于尚未添加有效付款方式的提供商，添加一个有效付款方式将确保服务的无缝延续。
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 
-* **弃用的日志记录方式**：对于自托管用户，Bitwarden 中与 `syslog` 的直接集成（通过覆盖 `enabledglobalSettings__syslog__destination` 启用）已被弃用，转而与 Docker 的 `syslog` 驱动程序集成。使用弃用方法的用户将收到警告日志，通知他们这一变更。了解更多。
+* **弃用的日志记录方式**：对于自托管用户，Bitwarden 中与 `syslog` 的直接集成（通过覆盖 `enabledglobalSettings__syslog__destination` 启用）已被弃用，转而与 Docker 的 `syslog` 驱动程序集成。使用弃用方法的用户将收到警告日志，通知他们这一变更。[了解更多](self-hosting/hosting-faqs.md#how-do-i-enable-logging-to-syslog)。
 
 ## 2025.7.1
 
@@ -142,14 +142,14 @@ helm upgrade self-host-bsfyr9bpzk bitwarden/self-host --version <semver-version>
 
 ### Password Manager
 
-* **URI 匹配检测警告更新**：选择使用高级选项**开始于**和**正则表达式**设置 URI 匹配检测的用户将看到一个警告对话，以确认他们了解与这些自动填充选项相关的潜在安全风险。了解更多。
-* **针对新用户的屏幕提示 - 浏览器扩展**：为帮助新用户，浏览器扩展中添加了屏幕提示。这些提示将有助于向新用户介绍浏览器扩展的功能和组件。了解更多。
-* **浏览器扩展权限更新**：Firefox 和 Safari 上的浏览器扩展现在需要通知权限才能支持设备登录。
-* **Android 上的 Chromium 集成**：如果您使用 Brave 或 Chrome 浏览器，请切换新的**使用 Brave 自动填充集成**或**使用 Chrome 自动填充集成**选项。了解更多。
+* **URI 匹配检测警告更新**：选择使用高级选项**开始于**和**正则表达式**设置 URI 匹配检测的用户将看到一个警告对话，以确认他们了解与这些自动填充选项相关的潜在安全风险。[了解更多](password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md#match-detection-options)。
+* **针对新用户的屏幕提示 - 浏览器扩展**：为帮助新用户，浏览器扩展中添加了屏幕提示。这些提示将有助于向新用户介绍浏览器扩展的功能和组件。[了解更多](getting-started/getting-started-browserext.md)。
+* **浏览器扩展权限更新**：Firefox 和 Safari 上的浏览器扩展现在需要通知权限才能支持[设备登录](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
+* **Android 上的 Chromium 集成**：如果您使用 Brave 或 Chrome 浏览器，请切换新的**使用 Brave 自动填充集成**或**使用 Chrome 自动填充集成**选项。[了解更多](password-manager/autofill/autofill-from/autofill-from-android.md)。
 
 ### Secrets Manager
 
-* **新的机密事件**：现在会在创建、编辑或删除机密时记录事件日志。了解更多。
+* **新的机密事件**：现在会在创建、编辑或删除机密时记录事件日志。[了解更多](admin-console/oversight-visibility/event-logging/event-logs.md#secrets-manager-events)。
 
 ## 2025.7.0
 
@@ -157,12 +157,12 @@ helm upgrade self-host-bsfyr9bpzk bitwarden/self-host --version <semver-version>
 
 ### Password Manager
 
-* **Password Depot 17 导入**：Password Depot 17 已被添加到可直接导入 Bitwarden Password Manager 的格式列表中。了解更多。
+* **Password Depot 17 导入**：Password Depot 17 已被添加到可直接导入 Bitwarden Password Manager 的格式列表中。[了解更多](import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **策略重命名**：**移除个人密码库**策略已重命名为**执行组织数据所有权**策略。了解更多。
-* **成员权限更新**：拥有**管理账户恢复**权限的组织成员可以重置组织成员的主密码。该权限可与**管理用户**权限分开授予。了解更多。
+* **策略重命名**：**移除个人密码库**策略已重命名为**执行组织数据所有权**策略。[了解更多](admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。
+* **成员权限更新**：拥有**管理账户恢复**权限的组织成员可以重置组织成员的主密码。该权限可与**管理用户**权限分开授予。[了解更多](admin-console/manage-members/member-roles.md#permissions)。
 
 ## 2025.6.2
 
