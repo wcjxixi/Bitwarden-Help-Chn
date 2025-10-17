@@ -48,7 +48,7 @@
 
 * [企业密码管理器实施指南](https://bitwarden.com/resources/bitwarden-enterprise-password-manager-implementation-guide/)：逐步说明如何在您的团队中成功启动 Bitwarden 密码管理器
 * [云端设置清单](../../self-hosting/yun-duan-she-zhi-qing-dan.md)：指导您的团队在云端设置 Bitwarden 的清单。涵盖从账户创建到策略配置的关键步骤。
-* [自托管设置清单](../../self-hosting/plan-for-deployment/self-host-setup-checklist.md)：成功部署自托管的检查清单，包括基础设施要求和安装步骤。
+* [自托管设置清单](../../self-hosting/plan-for-deployment/self-host-checklist.md)：成功部署自托管的检查清单，包括基础设施要求和安装步骤。
 
 **准备上线**
 
