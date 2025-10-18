@@ -11,7 +11,7 @@
 {% tabs %}
 {% tab title="1：培训" %}
 {% hint style="success" %}
-第一阶段专注于培养利益相关者、准备系统，并建立成功设置的知识库。Bitwarden 建议在推广前或推广期间为每个群组或团队安排培训课程。
+第 1 阶段专注于培养利益相关者、准备系统，并建立成功设置的知识库。Bitwarden 建议在推广前或推广期间为每个群组或团队安排培训课程。
 {% endhint %}
 
 ## 主要目标 <a href="#key-objectives" id="key-objectives"></a>
@@ -133,7 +133,7 @@
 
 {% tab title="2：设置" %}
 {% hint style="success" %}
-第二阶段是技术设置阶段，在此阶段为您的组织部署并配置 Bitwarden。
+第 2 阶段是技术设置阶段，在此阶段为您的组织部署并配置 Bitwarden。
 {% endhint %}
 
 ## 主要目标 <a href="#key-objectives" id="key-objectives"></a>
@@ -381,33 +381,129 @@ Directory Integration (if applicable):
 {% endtab %}
 
 {% tab title="3：计划" %}
+{% hint style="success" %}
+第 3 阶段侧重于用户入职开始前的组织准备和沟通。此阶段通过设定适当预期、解决顾虑以及为变革创造组织动力，确保用户顺利采用。
+{% endhint %}
+
 ## 主要目标 <a href="#key-objectives" id="key-objectives"></a>
+
+* 向整个组织传达 Bitwarden 实施情况
+* 解决用户顾虑和变革阻力
+* 准备支持资源和文档
+* 进行最终系统测试和验证
+* 创建组织对改进安全的热情和认可
 
 ## 活动 <a href="#activities" id="activities"></a>
 
 ### 步骤 1：准备全公司范围的领导层沟通 <a href="#step-1-prepare-company-wide-communication-from-leadership" id="step-1-prepare-company-wide-communication-from-leadership"></a>
 
+{% hint style="success" %}
+领导层对采用成功至关重要。[Bitwarden 研究](https://bitwarden.com/resources/bitwarden-security-impact-report/)表明，公司范围内的密码管理要求将常规使用率提高了一倍以上。
+{% endhint %}
+
+**关键人员：** 行政领导层、IT 领导层、沟通团队、部门负责人。
+
+将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+
+```
+[ ] Prepare leadership talking points about security benefits
+[ ] Schedule leadership communication sessions (all-hands, team meetings)
+[ ] CEO/Leadership announcement about password security initiative
+[ ] Clear messaging about why Bitwarden was chosen
+[ ] Timeline communication for rollout phases
+[ ] Expectation setting for mandatory adoption
+[ ] Emphasis on security benefits for both work and personal use
+[ ] Highlight cyberinsurance benefits and that implementing Bitwarden is a prerequisite to get approved for higher level of coverage; document insurance coverage being met
+```
+
 ### 步骤 2：组织沟通活动 <a href="#step-2-organizational-communication-campaign" id="step-2-organizational-communication-campaign"></a>
+
+**关键人员：** 沟通团队、HR、IT 支持。
+
+将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+
+```
+Communication strategy:
+[ ] Develop multi-channel communication plan (email, intranet, meetings)
+[ ] Create consistent messaging about security benefits
+[ ] Address common concerns and objections proactively
+[ ] Highlight ease of use and convenience benefits
+[ ] Share success stories from pilot users or other organizations
+
+Pre-rollout communications:
+[ ] All hands meeting: Initial introduction to Bitwarden
+     [ ] Why we're implementing password management / Bitwarden
+     [ ] Security benefits for the organization and individuals
+     [ ] Why it is important to follow the directions shared by IT
+     [ ] Expect more details in your email inbox
+
+[ ] Announcement email: More details on Bitwarden and roll out plan
+     [ ] Recap: Why we're implementing password management / Bitwarden
+     [ ] Recap: Security benefits for the organization and individuals
+     [ ] Timeline for rollout and training
+     [ ] What to expect in coming weeks
+
+[ ] FAQ document: Address common questions and concerns
+     [ ] "Will this slow down my workflow?"
+     [ ] "What happens to my existing passwords?"
+     [ ] "Is my personal information secure?"
+     [ ] "What if I forget my master password?"
+     [ ] "Do I have to use this for personal passwords, too?"
+```
 
 ### 步骤 3：变更管理准备 <a href="#step-3-change-management-readiness" id="step-3-change-management-readiness"></a>
 
+**关键人员：** HR、变革管理团队、部门经理。
 
+**变更管理活动**
+
+将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+
+```
+ [ ]  Identify and engage change champions in each department
+ [ ]  Conduct department-specific communication sessions
+ [ ]  Address cultural and workflow concerns
+ [ ]  Plan for resistance management and additional support
+ [ ]  Create peer support networks and feedback channels
+```
 {% endtab %}
 
 {% tab title="4：推广" %}
+{% hint style="success" %}
+第 4 阶段确保用户开始使用 Bitwarden，通过向用户介绍 Bitwarden，确保正确设置账户和初始使用。
+
+提醒管理员所有 Bitwarden **入职流程**：邀请 → 接受 → 确认
+{% endhint %}
+
 ## 主要目标 <a href="#key-objectives" id="key-objectives"></a>
 
 ## 选择您的推广路径 <a href="#choose-your-rollout-path" id="choose-your-rollout-path"></a>
 
+{% hint style="success" %}
+运行一个小型试点（用户数量根据组织规模而定，20-100 人）有助于验证在所有主要使用场景（桌面、移动、浏览器、SSO 等）中的推广。这有助于完善沟通并培养内部拥护者。
+{% endhint %}
+
 ### 步骤 1：推广规划 <a href="#step-1-rollout-planning" id="step-1-rollout-planning"></a>
+
+{% hint style="success" %}
+分阶段推广方式，按部门逐个实施，被 [Bitwarden 用户选为“非常有效”。](https://bitwarden.com/resources/bitwarden-security-impact-report/)
+{% endhint %}
 
 ### 步骤 2：用户账户创建和访问权限 <a href="#step-2-user-account-creation-and-access" id="step-2-user-account-creation-and-access"></a>
 
+
+
 ### 步骤 3：客户端安装和设置 <a href="#step-3-client-installation-and-setup" id="step-3-client-installation-and-setup"></a>
+
+
 
 ### 步骤 4：密码库设置和导航 <a href="#step-4-vault-setup-and-navigation" id="step-4-vault-setup-and-navigation"></a>
 
+
+
 ### 步骤 5：密码管理实施 <a href="#step-5-password-management-implementation" id="step-5-password-management-implementation"></a>
+
+
 
 ### 步骤 6：密码迁移和导入 <a href="#step-6-password-migration-and-import" id="step-6-password-migration-and-import"></a>
 
@@ -415,29 +511,49 @@ Directory Integration (if applicable):
 {% endtab %}
 
 {% tab title="5：采用" %}
+{% hint style="success" %}
+第 5 阶段侧重于推广、最大化价值、确保安全合规以及维护长期成功。
+{% endhint %}
+
 ## 主要目标 <a href="#key-objectives" id="key-objectives"></a>
+
+
 
 ## 活动 <a href="#activities" id="activities"></a>
 
+
+
 ### 步骤 1：采用和优化 <a href="#step-1-adoption-and-optimization" id="step-1-adoption-and-optimization"></a>
+
+
 
 ### 步骤 2：安全审计与合规 <a href="#step-2-security-audit-and-compliance" id="step-2-security-audit-and-compliance"></a>
 
+
+
 ### 步骤 3：高级功能实施 <a href="#step-3-advanced-feature-implementation" id="step-3-advanced-feature-implementation"></a>
+
+
 
 ### 步骤 4：持续支持 <a href="#step-4-ongoing-support" id="step-4-ongoing-support"></a>
 
+
+
 ### 步骤 5：持续改进 <a href="#step-5-continuous-improvement" id="step-5-continuous-improvement"></a>
 
+
+
 ### 步骤 6：新员工入职 <a href="#step-6-new-employee-onboarding" id="step-6-new-employee-onboarding"></a>
+
+
 {% endtab %}
 
 {% tab title="资源" %}
 使用这些额外资源来帮助您在 Bitwarden 旅程的各个阶段进行指导：
 
-## 成功清单 <a href="#success-checklist" id="success-checklist"></a>
+## 成功检查清单 <a href="#success-checklist" id="success-checklist"></a>
 
-将此列表直接复制粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] 100% user adoption of all purchased Bitwarden seats 
@@ -456,8 +572,31 @@ Directory Integration (if applicable):
 
 ## Bitwarden 支持 <a href="#bitwarden-support" id="bitwarden-support"></a>
 
+* **计费支持：** 联系客户成功团队以获得加急计费协助
+* **技术支持：** 为所有用户提供全面的技术故障排除服务
+* **企业客户：** 与全球账户经理进行持续会议
+* **高管访问权限：** 企业客户定期与 Bitwarden 高管会面
+
 ## 模板 <a href="#templates" id="templates"></a>
 
+[推广电子邮件模板](welcome-email-templates.md)：用于向最终用户、管理员和 IT 团队宣布 Bitwarden 密码管理器的推广的电子邮件模板。将这些电子邮件附上您的品牌标识，并根据需要进行调整。
+
+[最终用户引入职电子邮件模板](end-user-onboarding-emails.md)：由 care@bitwarden.com 向新 Bitwarden 企业版和团队版用户发送的引导电子邮件。
+
+[客户激活套件](customer-activation-kit.md)：包括单页宣传册、培训视频、海报、电子邮件模板和促销资源的现成沟通材料，以支持您的推广。
+
+[幻灯片演示公告模板](https://docs.google.com/presentation/d/1zK8NDB6E8ID_ok_yxn5x5qjO7mzeI5CZ-kqcOsfcQcU/edit?usp=sharing)：向整个公司或组织介绍 Bitwarden 密码管理器的幻灯片演示模板。根据需要附上公司品牌标识和推广详情。
+
 ## 深入了解 <a href="#go-deeper" id="go-deeper"></a>
+
+[Bitwarden 学习中心](https://bitwarden.com/learning/) - 每月更新的视频内容
+
+[每周直播演示](https://bitwarden.com/resources/demos/) - 互动问答环节
+
+[企业功能列表](../../business-resources/bitwarden-for-enterprise-features-datasheet.md) - 全面的功能性文档
+
+[API 文档](https://bitwarden.com/help/api/) - 适用于高级集成
+
+[社区论坛](https://community.bitwarden.com/) - 用户社区和支持
 {% endtab %}
 {% endtabs %}
