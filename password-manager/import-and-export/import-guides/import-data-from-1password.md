@@ -44,7 +44,7 @@
 
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
 
-* **个人密码库**：选择**我的密码库**或（可选）选择移动到的**文件夹**。
+* **个人密码库**：选择**我的密码库**并（可选）选择移动项目到的**文件夹**。
 * **组织密码库**：选择组织密码库名称然后选择一个**集合**。(要求[**管理集合**](../../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
 
 4、从**文件格式**下拉菜单中，选择[导入文件的格式](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
@@ -71,7 +71,7 @@
 
 4、从**密码库**下拉菜单中，选择数据的保存目的地：
 
-* **个人密码库**：选择**我的密码库**或（可选）选择移动到的**文件夹**。
+* **个人密码库**：选择**我的密码库**并（可选）选择移动项目到的**文件夹**。
 * **组织密码库**：选择组织密码库名称然后选择一个**集合**。(要求[**管理集合**](../../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
 
 5、从**文件格式**下拉菜单中，选择[导入文件的格式](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
@@ -104,7 +104,7 @@
 
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
 
-* **个人密码库**：选择**我的密码库**或（可选）选择移动到的**文件夹**。
+* **个人密码库**：选择**我的密码库**并（可选）选择移动项目到的**文件夹**。
 * **组织密码库**：选择组织密码库名称然后选择一个**集合**。(要求[**管理集合**](../../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
 
 4、从**文件格式**下拉菜单中，选择[导入文件的格式](../../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。

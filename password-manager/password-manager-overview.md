@@ -18,7 +18,7 @@ Bitwarden Password Manager 使企业和个人能够在面临不断上升的网�
 
 对于企业和管理员，Bitwarden Password Manager 提供的一些最受欢迎的功能是：
 
-* **轻松导入**：从几乎任何密码管理解决方案[导入](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)公司的共享凭据。
+* **轻松导入**：从几乎任何密码管理解决方案[导入](../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)公司的共享凭据。
 * **用户管理集成**：使用众多[跨域身份管理 (SCIM)](../admin-console/manage-members/scim/about-scim.md) 或[直接到目录](../admin-console/manage-members/directory-connector/about-directory-connector.md)集成之一来将最终用户同步到您的 Bitwarden 组织。
 * **SSO 登录**：通过任何 SAML 2.0 或 OIDC 身份提供程序，[使用现有 SSO 设置对最终用户进行身份验证](../login-with-sso/about-login-with-sso.md)。
 * **健全的策略**：为您的最终用户实施安全实践，例如使用企业策略为管理员设置恢复丢失账户的功能。

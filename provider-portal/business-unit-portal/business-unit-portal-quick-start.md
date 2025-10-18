@@ -70,7 +70,7 @@
 集合
 {% endembed %}
 
-2、**导入数据** 。您用来存储密码库项目的结构确定后，就可以开始[导入数据到组织](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md) 。
+2、**导入数据** 。您用来存储密码库项目的结构确定后，就可以开始[导入数据到组织](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md) 。
 
 {% hint style="success" %}
 注意，作为服务用户，您将无法直接查看、创建或管理个人项目。

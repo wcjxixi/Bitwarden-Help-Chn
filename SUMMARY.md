@@ -166,7 +166,7 @@
       * [集合权限](admin-console/manage-shared-items/collections/collection-permissions.md)
       * [集合设置](admin-console/manage-shared-items/collections/collection-settings.md)
     * [导入组织项目](admin-console/manage-shared-items/import-organization-items/README.md)
-      * [导入数据到组织](admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)
+      * [=导入到组织密码库](admin-console/manage-shared-items/import-organization-items/import-to-organization.md)
       * [从自定义文件导入](admin-console/manage-shared-items/import-organization-items/condition-a-bitwarden-.csv-or-.json.md)
     * [导出组织项目](admin-console/manage-shared-items/export-organization-items/README.md)
       * [导出组织项目](admin-console/manage-shared-items/export-organization-items/export-organization-items.md)
