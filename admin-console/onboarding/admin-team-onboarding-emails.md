@@ -1,22 +1,22 @@
-# 管理团队入职电子邮件
+# \*管理团队入职电子邮件
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/admin-team-onboarding-emails/)
 {% endhint %}
 
-本文包含从 **care@bitwarden.com** 发送给新的 Bitwarden Enterprise 和 Team 管理员和所有者的入职电子邮件。请随意一次性阅读下面的全部内容，或将它们提取并根据您团队的需求进行调整。
+本文包含从 **care@bitwarden.com** 发送给新的 Bitwarden 企业和团队管理员和所有者的入职电子邮件。请随意一次性阅读下面的全部内容，或将它们提取并根据您团队的需求进行调整。
 
 {% tabs %}
 {% tab title="企业" %}
 ## 入职概述 <a href="#onboarding-overview" id="onboarding-overview"></a>
 
-> **示例**
+> 💡**示例**
 >
 > **Subject**: Your Bitwarden onboarding checklist
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > Welcome to Bitwarden!
 >
@@ -34,17 +34,17 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 邀请您的管理团队 <a href="#invite-your-admin-team" id="invite-your-admin-team"></a>
 
-> **示例**
+> 💡**示例**
 >
 > **Subject**: To do today: Invite your admin team
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > Every all-star business needs an all-star admin team. Today, **invite at least one additional organization owner** to your Bitwarden account - this is essential for protective redundancy. Bitwarden recommends redundant owners and admins for every organization.
 >
@@ -52,17 +52,17 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 制定企业策略 <a href="#set-enterprise-policies" id="set-enterprise-policies"></a>
 
-> **示例**
+> 💡**示例**
 >
 > **Subject**: Pro-tip for Bitwarden admins and owners
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > Today's onboarding tip is critical for getting your Bitwarden organization ready for more team members: **Set your Enterprise policies**.
 >
@@ -74,17 +74,17 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
-> **示例**
+> 💡**示例**
 >
 > **Subject**: Save time and hassle with Bitwarden's data import options
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > Are your migrating to Bitwarden from another password manager?
 >
@@ -94,17 +94,17 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 群组 & 集合 <a href="#groups-and-collections" id="groups-and-collections"></a>
 
-> **示例**
+> 💡**示例**
 >
 > **Subject**: How to organization your data in Bitwarden
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > Now that you've added items to your vault, it's time to set up collections and groups to ensure that the _right_ users have access to the _right_ credentials.
 >
@@ -115,17 +115,17 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 邀请您的用户 <a href="#invite-your-users" id="invite-your-users"></a>
 
-> **示例**
+> 💡**示例**
 >
 > **Subject**: 2 ways to automate Bitwarden user provisioning
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > Scalable success with Bitwarden comes from provisioning users smoothly and securely. Here are the top ways new admins and owners automate the process of getting employees on Bitwarden.
 >
@@ -143,17 +143,17 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 员工支持技巧 <a href="#employee-buy-in-tips" id="employee-buy-in-tips"></a>
 
-> **示例**
+> 💡**示例**
 >
 > **Subject**: How to get your employees to use Bitwarden
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > You likely want to drive the most employee adoption possible with your new password manager. We have some tips to help.
 >
@@ -169,17 +169,17 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 结束 <a href="#conclusion" id="conclusion"></a>
 
-> **示例**
+> 💡**示例**
 >
 > **Subject**: What's next with Bitwarden
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name]
 >
 > This is the end of the onboarding email series - but it's just the beginning of your journey with Bitwarden! Here are some ways to keep learning about Bitwarden:
 >
@@ -197,7 +197,7 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 {% endtab %}
 
 {% tab title="团队" %}
@@ -209,7 +209,7 @@
 >
 > **Body**:
 >
-> Hi _\[name],_
+> Hi \[name]_,_
 >
 > Welcome to Bitwarden!
 >
@@ -226,7 +226,7 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 邀请您的管理团队 <a href="#invite-your-admin-team" id="invite-your-admin-team"></a>
 
@@ -236,7 +236,7 @@
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name]_,_
 >
 > Every all-star business needs an all-star admin team. Today, **invite at least one additional organization owner** to your Bitwarden account - this is essential for protective redundancy. Bitwarden recommends redundant owners and admins for every organization.
 >
@@ -244,7 +244,7 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
@@ -254,7 +254,7 @@
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > Are your migrating to Bitwarden from another password manager?
 >
@@ -264,7 +264,7 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 群组 & 集合 <a href="#groups-and-collections" id="groups-and-collections"></a>
 
@@ -274,7 +274,7 @@
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > Now that you've added items to your vault, it's time to set up collections and groups to ensure that the _right_ users have access to the _right_ credentials.
 >
@@ -285,7 +285,7 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 邀请您的用户 <a href="#invite-your-users" id="invite-your-users"></a>
 
@@ -295,7 +295,7 @@
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > Scalable success with Bitwarden comes from provisioning users smoothly and securely. If you haven't done so already, you'll want to research the options for inviting users to Bitwarden, and select what makes the most sense for company.
 >
@@ -309,7 +309,7 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 员工支持技巧 <a href="#employee-buy-in-tips" id="employee-buy-in-tips"></a>
 
@@ -319,7 +319,7 @@
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > You likely want to drive the most employee adoption possible with your new password manager. We have some tips to help.
 >
@@ -335,7 +335,7 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 
 ## 结束 <a href="#conclusion" id="conclusion"></a>
 
@@ -345,7 +345,7 @@
 >
 > **Body**:
 >
-> Hi _\[name]_,
+> Hi \[name],
 >
 > This is the end of the onboarding email series - but it's just the beginning of your journey with Bitwarden! Here are some ways to keep learning about Bitwarden:
 >
@@ -363,6 +363,6 @@
 >
 > Stay secure,
 >
-> _\[签名]_
+> \[Signature]
 {% endtab %}
 {% endtabs %}
