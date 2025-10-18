@@ -258,7 +258,7 @@
     * [客户激活工具包](admin-console/onboarding/customer-activation-kit.md)
     * [入职工作流程](admin-console/onboarding/onboarding-workflows.md)
     * [\*关于本章节](admin-console/onboarding/about-this-section.md)
-    * [\*=欢迎电子邮件模板](admin-console/onboarding/welcome-email-templates.md)
+    * [\*推广电子邮件模板](admin-console/onboarding/welcome-email-templates.md)
     * [\*管理团队入职电子邮件](admin-console/onboarding/admin-team-onboarding-emails.md)
     * [\*最终用户入职电子邮件](admin-console/onboarding/end-user-onboarding-emails.md)
     * [\*最终用户采用电子邮件](admin-console/onboarding/end-user-adoption-emails.md)
