@@ -49,7 +49,7 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
 
 * **个人密码库**：选择**我的密码库**或（可选）选择移动到的**文件夹**。
-* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(需要[**可以管理**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(要求[**管理集合**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
 
 4、从**文件格式**下拉菜单中，选择[导入文件的格式](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -65,28 +65,30 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-要将数据导入到您的密码库：
+要导入数据到您的密码库：
 
 1、选择**设置**。
 
 2、选择**密码库选项**。
 
-3、从**密码库**下拉菜单中，选择数据的保存目的地：
+3、选择**导入项目**。将出现一个新窗口。
+
+4、从**密码库**下拉菜单中，选择数据的保存目的地：
 
 * **个人密码库**：选择**我的密码库**或（可选）选择移动到的**文件夹**。
-* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(需要[**可以管理**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(要求[**管理集合**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
 
-4、从**文件格式**下拉菜单中，选择[导入文件的格式](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
+5、从**文件格式**下拉菜单中，选择[导入文件的格式](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
-5、选择**选择文件**然后选取一个文件，或将文件内容复制并粘贴到文本框中。
+6、选择**选择文件**然后选取一个文件，或将文件内容复制并粘贴到文本框中。
 
 {% hint style="danger" %}
-导入过程不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件将创建重复项目。
+导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
-6、选择**导入数据**。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+7、选择**导入数据**。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
-7、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
+8、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 {% endtab %}
 
 {% tab title="移动 App" %}
@@ -107,14 +109,14 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
 
 * **个人密码库**：选择**我的密码库**或（可选）选择移动到的**文件夹**。
-* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(需要[**可以管理**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+* **组织密码库**：选择组织密码库名称然后选择一个**集合**。(要求[**管理集合**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
 
 4、从**文件格式**下拉菜单中，选择[导入文件的格式](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
 5、选择**选择文件**然后选取一个文件，或将文件内容复制并粘贴到文本框中。
 
 {% hint style="danger" %}
-导入过程不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件将创建重复项目。
+导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
 6、选择**导入数据**。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
