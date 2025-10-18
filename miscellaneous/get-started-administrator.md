@@ -62,7 +62,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 * 组织拥有的项目**必须**至少包含在一个集合中。
 
 {% hint style="success" %}
-数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-to-organization.md#import-to-your-organization)。
+数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
 {% endhint %}
 
 ## 管理成员和群组 <a href="#managing-members-and-groups" id="managing-members-and-groups"></a>
@@ -146,7 +146,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 * 组织拥有的项目**必须**至少包含在一个集合中。
 
 {% hint style="success" %}
-数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-to-organization.md#import-to-your-organization)。
+数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
 {% endhint %}
 
 ## 管理成员和群组 <a href="#managing-members-and-groups" id="managing-members-and-groups"></a>
@@ -226,7 +226,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 * 组织拥有的项目**必须**至少包含在一个集合中。
 
 {% hint style="success" %}
-数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-to-organization.md#import-to-your-organization)。
+数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
 {% endhint %}
 
 ## 管理成员和群组 <a href="#managing-members-and-groups" id="managing-members-and-groups"></a>
@@ -301,7 +301,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 * 作为免费组织，您最多可以拥有 2 个集合。
 
 {% hint style="success" %}
-数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-to-organization.md#import-to-your-organization)。
+数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
 {% endhint %}
 
 ## 管理成员和群组 <a href="#managing-members-and-groups" id="managing-members-and-groups"></a>

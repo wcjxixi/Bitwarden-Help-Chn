@@ -20,7 +20,7 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 来自其他密码管理器的[其他文件类型](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)与 Bitwarden 兼容。如果您的解决方案未在列表中，但可以导出数据，请编辑文件以匹配[受支持的格式](../../import-export/condition-a-bitwarden-.csv-or-.json.md)。
 
 {% hint style="success" %}
-[将数据导入组织](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)，以便大型团队共享。对于较小的团队，可[导入到集合](import-data.md#import-to-a-collection)。
+[将数据导入组织](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)，以便大型团队共享。对于较小的团队，可[导入到集合](import-data.md#import-to-a-collection)。
 {% endhint %}
 
 {% hint style="info" %}
@@ -143,7 +143,7 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 
 ## 导入到集合 <a href="#import-to-a-collection" id="import-to-a-collection"></a>
 
-将数据导入集合，以与您的家人或直接队友等小型团队组织并共享项目。（对于较大的团队，[将数据导入组织](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)）。当您组织的[数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)限制个人密码库时，个人集合是一个很好的选择。
+将数据导入集合，以与您的家人或直接队友等小型团队组织并共享项目。（对于较大的团队，[将数据导入组织](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)）。当您组织的[数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)限制个人密码库时，个人集合是一个很好的选择。
 
 在**导入数据**页面，选择您组织的**密码库**然后选择**集合**：
 

@@ -76,7 +76,7 @@ Bitwarden 组织使用的某些功能未通过上述文章中记录的标准安�
 
 ### 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
-您需要从另一个密码管理器转到 Bitwarden 的吗？好消息！您可以将这些数据直接导入您的组织，以[避免痛苦的复制和粘贴一天](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)。
+您需要从另一个密码管理器转到 Bitwarden 的吗？好消息！您可以将这些数据直接导入您的组织，以[避免痛苦的复制和粘贴一天](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)。
 
 ### 建立群组和集合 <a href="#build-groups-and-collections" id="build-groups-and-collections"></a>
 

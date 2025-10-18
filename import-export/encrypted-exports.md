@@ -46,4 +46,4 @@
 * [作为个人用户创建加密导出](export-vault-data.md)。
 * [创建您组织数据的加密导出](../admin-console/manage-shared-items/export-organization-items/export-organization-items.md)。
 * [作为个人用户重新导入加密导出](../password-manager/import-and-export/import-data.md)。
-* [以组织身份重新导入加密导出](../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)。
+* [以组织身份重新导入加密导出](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)。

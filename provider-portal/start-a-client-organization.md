@@ -53,7 +53,7 @@
 集合
 {% endembed %}
 
-2、**导入数据**。 一旦确定了存储密码库项目的结构，就可以开始[向组织导入数据](../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)。
+2、**导入数据**。 一旦确定了存储密码库项目的结构，就可以开始[向组织导入数据](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)。
 
 {% hint style="info" %}
 请注意，作为提供商用户，您无法直接查看、创建或管理单个项目。
