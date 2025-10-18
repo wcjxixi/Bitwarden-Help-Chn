@@ -1,4 +1,4 @@
-# 导出密码库数据
+# =导出密码库数据
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/export-your-data/)
@@ -16,7 +16,7 @@
 
 ## 导出个人密码库 <a href="#export-a-personal-vault" id="export-a-personal-vault"></a>
 
-{% hint style="warning" %}
+{% hint style="info" %}
 从个人密码库导出数据**不会**导出您所属组织的任何数据。要导出组织数据，请遵循[此说明](export-vault-data.md#export-an-organization-vault)。
 {% endhint %}
 
