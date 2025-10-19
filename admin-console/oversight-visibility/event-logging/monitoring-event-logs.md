@@ -12,7 +12,7 @@
 
 通过多种 SIEM 平台与 Bitwarden 集成，以审查密码库日常使用情况的关键信息。
 
-{% embed url="https://bitwarden.com/assets/1wHDe1snFJ4NB1G13VBUBC/31248544d432c33c18f56e7fb6800e0a/Panther_JSON_Object.png?w=644&fm=avif&q=80" %}
+{% embed url="https://bitwarden.com/assets/1wHDe1snFJ4NB1G13VBUBC/71def83a275e8bf25e25488b872a02f0/Header_object.png?w=700&fm=avif" %}
 Panther JSON 对象
 {% endembed %}
 

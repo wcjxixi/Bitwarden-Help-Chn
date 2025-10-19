@@ -4,15 +4,19 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/condition-bitwarden-import/)
 {% endhint %}
 
-这篇文章定义了当您手动调整用于导入 Bitwarden 的 `.csv` 或 `.json` 文件时应使用的格式。此格式与[导出您的 Bitwarden 密码库](export-vault-data.md)时创建的 `.csv` 或 `.json` 文件所使用的格式是一样的。
+本文介绍了如何格式化 `.csv` 和 `.json` 文件以导入 Bitwarden。其格式与 [Bitwarden 密码库导出](export-vault-data.md)相同。要选择文件类型和格式，请确定目标密码库以及需要导入的项目类型：
 
-根据您是将数据导入个人密码库或者是导入组织密码库，请确保使用正确的格式。
-
-## 调整 .csv <a href="#condition-a-csv" id="condition-a-csv"></a>
+* 基于您要[导入到个人密码库](../password-manager/import-and-export/import-data.md#import-to-your-personal-vault)还是[导入到组织密码库](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-an-organization-vault)来格式化文件。
+* Bitwarden .`csv` 文件仅包含登录和安全笔记。如果您还需要处理身份和支付卡，请使用 `.json` 文件。
 
 {% hint style="info" %}
-Bitwarden `.csv` 文件仅处理登录和安全笔记。如果还需要导入或导出身份和支付卡信息，请[使用 JSON](condition-a-bitwarden-.csv-or-.json.md#condition-a-json)。
+虽然某些项目类型无法导入，但您仍可将其添加到密码库：
+
+* 将[文件附件](../your-vault/file-attachments.md)单独上传到新的密码库。
+* 在新的密码库中重新创建 [Send](../bitwarden-send/about-send.md)。
 {% endhint %}
+
+## 调整 .csv <a href="#condition-a-csv" id="condition-a-csv"></a>
 
 ### 个人密码库 .csv <a href="#csv-for-individual-vault" id="csv-for-individual-vault"></a>
 
@@ -288,3 +292,7 @@ folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_p
 ```
 
 `"login":`、`"secureNote":`、`"card":` 以及 `"identity":` 对象可以作为空对象导入，但是我们建议使用尽可能多的数据来调整文件。
+
+## 导入到 Bitwarden <a href="#import-into-bitwarden" id="import-into-bitwarden"></a>
+
+准备好 `.csv` 或 `.json` 文件后，就可以将其导入[个人密码库](../password-manager/import-and-export/import-data.md#import-to-your-personal-vault)或[组织密码库](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-an-organization-vault)了。从**文件格式**列表中选择 **Bitwarden (csv)** 或 **Bitwarden (json)**。
