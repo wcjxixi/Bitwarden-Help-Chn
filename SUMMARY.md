@@ -355,6 +355,7 @@
   * [加密](security/encryption/README.md)
     * [加密协议](security/encryption/encryption-protocols.md)
     * [加密密钥派生](security/encryption/encryption-key-derivation.md)
+    * [调用的加密库](security/encryption/invoked-crypto-libraries.md)
     * [加密密钥轮换](security/encryption/encryption-key-rotation.md)
     * [账户指纹短语](security/encryption/account-fingerprint-phrase.md)
   * [软件开发](security/software-development/README.md)
