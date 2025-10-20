@@ -1,4 +1,4 @@
-# Bitwarden 软件发布支持
+# 软件发布支持
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/bitwarden-software-release-support/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/_articles/hosting/bitwarden-software-release-support.md)
@@ -12,6 +12,10 @@ Bitwarden 为 Bitwarden 服务器、Bitwarden 客户端以及其他支持的集�
 
 ## Bitwarden 软件支持 <a href="#bitwarden-software-support" id="bitwarden-software-support"></a>
 
+{% hint style="info" %}
+如本文档中所述，「主版本」由 Bitwarden 客户端和服务器使用的版本格式中的第二个数字表示（例如 2025.`6`.0 或 2025.`7`.1）。
+{% endhint %}
+
 以下章节将介绍 Bitwarden 所开发软件的支持政策：
 
 ### Bitwarden Cloud 服务器 <a href="#bitwarden-cloud" id="bitwarden-cloud"></a>
@@ -22,11 +26,11 @@ Bitwarden Cloud 由 Bitwarden 直接运营和维护。我们会定期更新 Bitw
 
 对于采用订阅计划的自托管实施，Bitwarden 服务器会不断收到更新：
 
-* 在给定时间内，Bitwarden 会维护当前的主要服务器版本和前两个主要服务器版本。
-* 每个服务器版本都与同一主要客户端版本、前两个主要客户端版本以及后两个主要客户端版本兼容。
+* 在给定时间内，Bitwarden 会维护当前的主要服务器版本和前 2 个主要服务器版本。
+* 每个服务器版本都与同一主要客户端版本、前 2 个主要客户端版本以及后 2 个主要客户端版本兼容。
 
-{% hint style="success" %}
-我们鼓励自托管用户保持其服务器为最新，以获得最新的 Bitwarden 功能和支持，并与最新发布的客户端保持兼容。
+{% hint style="info" %}
+自托管用户应保持其服务器最新，以获得最新的 Bitwarden 功能和支持，并与最新发布的客户端保持兼容。不根据 Bitwarden 版本支持策略更新客户端和服务器版本的自托管实例存在引入与其服务器不兼容的客户端变更的风险。
 {% endhint %}
 
 ### Bitwarden 客户端 <a href="#bitwarden-clients" id="bitwarden-clients"></a>

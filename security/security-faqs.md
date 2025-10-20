@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/security-faqs/)
 {% endhint %}
 
-本文包含有关安全的常见问题（FAQ）。
+本文包含有关安全的常见问题 (FAQ)。
 
 ### 问：为什么我应该在密码方面信任 Bitwarden？ <a href="#q-why-should-i-trust-bitwarden-with-my-passwords" id="q-why-should-i-trust-bitwarden-with-my-passwords"></a>
 

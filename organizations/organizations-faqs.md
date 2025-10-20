@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/org-faqs/)
 {% endhint %}
 
-本文包含了关于**组织**的常见问答（FAQ）。
+本文包含了关于**组织**的常见问答 (FAQ)。
 
 有关**组织**的更多高级信息，请参阅以下文章：
 
