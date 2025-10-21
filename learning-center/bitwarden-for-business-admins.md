@@ -37,27 +37,41 @@
 
 ## 如何验证企业 SSO 的域名 <a href="#how-to-verify-your-domain-for-enterprise-sso" id="how-to-verify-your-domain-for-enterprise-sso"></a>
 
-{% embed url="https://vimeo.com/808093301" %}
-
-{% hint style="info" %}
+{% hint style="success" %}
 此功能仅适用于[企业组织](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 {% endhint %}
+
+{% embed url="https://vimeo.com/808093301" %}
 
 [此处](../admin-console/login-with-sso/claimed-domains.md)了解更多有关域名验证的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:20**：激活域名验证。
-* 01:00：Bitwarden 如何验证域名。
+* **01:00**：Bitwarden 如何验证域名。
+
+## 受信任设备单点登录 <a href="#single-sign-on-with-trusted-devices" id="single-sign-on-with-trusted-devices"></a>
+
+{% hint style="success" %}
+此功能仅适用于[企业组织](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
+{% endhint %}
+
+{% embed url="https://vimeo.com/1075687841?fl=pl&fe=sh" %}
+
+详细了解当企业组织配置为[受信任设备加密 SSO](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 时用户将如何体验 SSO 登录工作流程，或跳转到以下主题：
+
+* **00:10**：受信任设备 SSO 登录简介。
+* **00:40**：启动 SSO 登录过程。
+* **01:10**：批准从其他设备登录。
 
 ## 兑换免费家庭计划 <a href="#redeeming-your-free-families-plan" id="redeeming-your-free-families-plan"></a>
-
-{% embed url="https://vimeo.com/828094070" %}
 
 {% hint style="info" %}
 此功能仅适用于[企业组织](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 {% endhint %}
 
+{% embed url="https://vimeo.com/828094070" %}
+
 [此处](../plans-and-pricing/password-manager/redeem-families-sponsorship.md)了解更多有关企业赞助的家庭组织的信息，或跳转到视频中的以下时间点，了解特定主题：
 
-* 00:14：关于赞助家庭计划。
-* 00:35：兑换赞助家庭计划。
+* **00:14**：关于赞助家庭计划。
+* **00:35**：兑换赞助家庭计划。
 

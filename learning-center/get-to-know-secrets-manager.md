@@ -27,9 +27,9 @@
 
 [此处](../secrets-manager/your-secrets/secrets.md)了解更多有关机密的信息，或跳转到视频中的以下时间点，了解特定主题：
 
-* **00:14**：将机密导入 Bitwarden。
+* **00:14**：导入机密。
 * **00:47**：调整导入文件。
-* **01:52**：手动添加机密到 Bitwarden。
+* **01:52**：如何手动添加机。
 
 ## 如何添加机器账户 <a href="#how-to-create-a-machine-account" id="how-to-create-a-machine-account"></a>
 
@@ -37,8 +37,9 @@
 
 [此处](../secrets-manager/your-secrets/machine-accounts.md)了解更多有关机器账户的信息，或跳转到视频中的以下时间点，了解特定主题：
 
-* **00:10**：关于机器账户。
-* **00:33**：添加机器账户。
+* **00:10**：什么是机器账户？
+* **00:19**：机器账户有什么用？
+* **00:33**：如何添加机器账户？
 
 ## 如何创建和使用访问令牌 <a href="#how-to-create-and-use-an-access-token" id="how-to-create-and-use-an-access-token"></a>
 
@@ -55,3 +56,5 @@
 {% embed url="https://vimeo.com/846444688" %}
 
 [此处](../secrets-manager/import-export/export-data.md)了解更多有关导出 Secrets Manager 数据的信息。
+
+* **00:06**：导出工程和机密。
