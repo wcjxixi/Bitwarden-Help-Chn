@@ -14,7 +14,7 @@
 
 * **00:09**：密码库项目。
 * **00:50**：个人和组织密码库。
-* **02:09**：收藏和文件夹。
+* **02:09**：收藏夹和文件夹。
 
 ## 如何使用 Bitwarden Password Manager <a href="#how-to-use-the-bitwarden-password-manager" id="how-to-use-the-bitwarden-password-manager"></a>
 
