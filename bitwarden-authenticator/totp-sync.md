@@ -4,10 +4,6 @@
 对应的[官方文档地址](https://bitwarden.com/help/totp-sync/)
 {% endhint %}
 
-> **\[译者注]**：Bitwarden Password Manager iOS 版本 + 、和 Android 版本 +
->
-> 与 Bitwarden Authenticator 版本 + 支持验证码同步功能。
-
 如果您同时使用 Bitwarden Authenticator 和 Bitwarden Password Manager，您可以在两者之间无缝同步验证码。
 
 {% embed url="https://bitwarden.com/assets/1DcAOWrPp1qDkIILFUu1f9/59504e02563a5a6faac1635b7e2b843f/2025-05-21_10-33-42.png?w=779&fm=avif&q=80" %}
@@ -17,7 +13,7 @@
 可以按照您希望的那样双向同步，这意味着：
 
 * 您可以从所有 Password Manager 账户同步代码到 Authenticator，或者只从您特别选择的那几个账户同步。
-* 您可以轻松地将本地验证码复制到 Password Manager，或仅通过 Authenticator 访问。
+* 您可以轻松地将本地代码复制到 Password Manager，或仅通过 Authenticator 访问。
 
 ## 设置同步 <a href="#set-up-sync" id="set-up-sync"></a>
 
