@@ -33,3 +33,7 @@
 ## 问：如何备份和恢复我的数据？ <a href="#q-how-do-i-backup-and-restore-my-data" id="q-how-do-i-backup-and-restore-my-data"></a>
 
 **答**：您设备的云备份系统（如 iCloud 或 Google One）会对您的数据进行加密备份。要恢复数据，请恢复您设备的云备份。
+
+## 问：如何确定我正在使用的 Bitwarden Authenticator 版本？ <a href="#q-how-do-i-determine-what-version-of-bitwarden-authenticator-im-using" id="q-how-do-i-determine-what-version-of-bitwarden-authenticator-im-using"></a>
+
+**答**：要确定您使用的 Bitwarden Authenticator 版本，请打开「设置」选项卡然后向下滚动到「关于」部分。
