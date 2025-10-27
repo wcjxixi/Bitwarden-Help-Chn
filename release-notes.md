@@ -30,8 +30,8 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 ### Password Manager
 
 * **Edge、Opera 和 Vivaldi 浏览器的直接导入功能**：通过 Edge、Opera 和 Vivaldi 浏览器的[直接导入](password-manager/import-and-export/import-guides/import-data-from-chrome.md#import-directly-from-browser)功能，快速安全地将数据迁移至 Bitwarden。
-* **我的项目**：当启用[强制组织数据所有权策略](admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)时，所有项目 将归组织所有。受此策略约束的成员现在可以将项目保存至新的[我的项目](password-manager/vault-basics/organization-members/my-items.md)位置，既保障了成员隐私，又确保了管理员能在成员离开组织后转移数据。
-* **简化单点登录用户登录界面**：采用[要求单点登录策略](admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)的组织成员，若他们曾在该设备完成过身份验证，登录界面中其他验证选项将自动灰显。
+* ~~**我的项目**：当启用~~[~~强制组织数据所有权策略~~](admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)~~时，所有项目 将归组织所有。受此策略约束的成员现在可以将项目保存至新的~~[~~我的项目~~](password-manager/vault-basics/organization-members/my-items.md)~~位置，既保障了成员隐私，又确保了管理员能在成员离开组织后转移数据。~~
+* **简化了 SSO 用户的登录界面**：采用[要求单点登录策略](admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)的组织成员，若他们曾在该设备完成过身份验证，登录界面中其他验证选项将自动灰显。
 
 ### Secrets Manager
 
@@ -47,7 +47,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **成员邀请函主题行更新**：更新了加入组织的邀请的[电子邮件主题行](security/trusted-communications/emails-from-bitwarden-servers.md#critical-member-emails)。
+* **成员邀请主题行更新**：更新了加入组织的邀请的[电子邮件主题行](security/trusted-communications/emails-from-bitwarden-servers.md#critical-member-emails)。
 * **税务 ID 提醒**：如果您是征收[增值税 (VAT)](plans-and-pricing/tax-calculation.md#value-added-tax-vat) 国家的企业主或提供商管理员，并且尚未添加税务 ID，您将在管理控制台、付款详细信息和提供商门户页面上看到一个横幅。单击**添加税务 ID** 以使用组织的税务 ID 更新账单详细信息。
 
 ### Secrets Manager
