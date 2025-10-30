@@ -29,16 +29,29 @@
 * `http://` 或 `https://` 引用网站地址（例如：`https://www.github.com`）
 * `androidapp://` 引用 Android App 的包 ID 或名称（例如：`androidapp://com.instagram.android`）
 
-### 获取移动 App 的 URI <a href="#obtaining-uris-for-mobile-apps" id="obtaining-uris-for-mobile-apps"></a>
+### 获取移动 App 的 URI <a href="#uris-for-mobile-apps" id="uris-for-mobile-apps"></a>
 
 {% tabs %}
-{% tab title="iOS App" %}
+{% tab title="iOS" %}
+在 iOS 上，查找原生应用程序 URI 的最简单方法是：
+
 1. 在 App 的登录界面，点击 **🔑密码**打开 Bitwarden。
 2. 打开 Bitwarden 后，选择屏幕右上角的 ✚图标。
 3. URI 将自动包含到新的密码库项目中（如果 App 允许），可以将其复制并粘贴到任何现有的登录项目中。
 {% endtab %}
 
-{% tab title="Android App" %}
+{% tab title="Android" %}
+{% hint style="danger" %}
+在 Android 上，Password Manager 使用包名称（例如 `com.google.android.gm`）在已安装的应用程序中自动填充。对于已安装的应用程序，请务必**仅安装并自动填充来自受信任来源**（例如 Google Play Store 或 F-Droid）**的应用程序**，
+
+对于 Google Play Store 或 F-Droid 等外部​​来源，Android 不强制包名称的唯一性。这意味着恶意开发人员可以创建和分发旨在获取使用与官方知名应用程序相同的包名称（例如 `com.google.android.gm`）的凭据的应用程序。此类申请将通过自动填充提供，但您可以通过以下方式保护自己：
+
+* 仅安装来自受信任来源的应用程序，例如 Google Play Store 或 F-Droid。
+* 仅将凭据自动填充到官方版本的应用程序中。
+{% endhint %}
+
+在 Android 上，查找原生应用程序 URI 的最简单方法是：
+
 1. 访问 Google Play 商店中的 App 页面。
 2. 找到分享按钮并将链接复制到剪贴板。
 3.  将复制的链接粘贴到可以阅读的地方。此链接看起来像这样：

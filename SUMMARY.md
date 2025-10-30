@@ -214,6 +214,7 @@
       * [Panther SIEM](admin-console/oversight-visibility/siem-integrations/panther-siem.md)
       * [Rapid7 SIEM](admin-console/oversight-visibility/siem-integrations/rapid7-siem.md)
       * [Splunk SIEM](admin-console/oversight-visibility/siem-integrations/splunk-siem.md)
+      * [Sumo Logic SIEM](admin-console/oversight-visibility/siem-integrations/sumo-logic-siem.md)
       * [非原生 SIEM](admin-console/oversight-visibility/siem-integrations/non-native-siem.md)
     * [事件记录](admin-console/oversight-visibility/event-logging/README.md)
       * [事件日志](admin-console/oversight-visibility/event-logging/event-logs.md)
