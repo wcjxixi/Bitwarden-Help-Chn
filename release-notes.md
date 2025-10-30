@@ -29,12 +29,12 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### Password Manager
 
-* **高级订阅注册流程优化**：希望享受 Bitwarden 付费方案的用户，升级账户将更为便捷。只需在网页 App 导航栏中选择**升级您的方案**按钮，即可进一步了解并选择付费方案。
+* **高级订阅注册流程优化**：希望获取付费 Bitwarden 方案权益的用户将发现升级账户更为便捷。只需在网页 App 导航栏中选择**升级您的方案**按钮，即可了解更多信息并选择付费方案。
 * **Android Chrome 集成版本要求**：如需继续使用 [Android Chrome 浏览器集成](password-manager/autofill/autofill-from/autofill-from-android.md#browser-integrations)，请将 Chrome App 升级至至少 135 版本。这是由于 Chrome 和 Bitwarden 自动填充集成流程的结构性变更所致。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **Sumo Logic SIEM 集成**：现已推出与 Sumo Logic 的安全信息与事件管理 (SIEM) 新集成方案。该集成可全面覆盖身份验证、组织活动和密码库项目等各类事件。
+* **Sumo Logic SIEM 集成**：现已推出 [Sumo Logic SIEM](admin-console/oversight-visibility/siem-integrations/sumo-logic-siem.md) 新集成方案。该集成可全面覆盖身份验证、组织活动和密码库项目等各类事件。
 
 ## 2025.10.0
 
