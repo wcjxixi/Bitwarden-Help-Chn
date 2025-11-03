@@ -52,7 +52,7 @@ Sumo Logic 是一个能够提供您的 Bitwarden 组织用户和密码库活动�
 组织 API 信息
 {% endembed %}
 
-3、将 `client_id` 和 `client_secret` 值复制然后粘贴到 Sumo Logic 的**Configure Source** 界面上对应的位置。
+3、将 `client_id` 和 `client_secret` 的值复制然后粘贴到 Sumo Logic 的 **Configure Source** 界面上对应的位置。
 
 4、完成后，选择 **Next**。
 
@@ -74,7 +74,7 @@ Sumo Logic Bitwarden App 包含预配置的监控器，可主动检测数据导�
 * 导出了组织密码库
 * 组织禁用了 SSO
 
-4、在“新监控器设置”屏幕上，设置所需的监视器触发条件、警报分组和触发类型。
+4、在 New Monitor 设置界面，设置所需监视器的 **Trigger Conditions**、**Alert Grouping** 和 **Trigger Types**。
 
 {% embed url="https://bitwarden.com/assets/3llf1rkTKRkY4zE2Gl34ry/8d2d7684a904f68189af1a6b0a6b6e5f/setup_monitor.png?w=1022&fm=avif" %}
 设置监控器
