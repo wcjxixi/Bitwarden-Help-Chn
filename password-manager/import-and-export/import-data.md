@@ -23,16 +23,16 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 [将数据导入组织](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)，以便大型团队共享。对于较小的团队，可[导入到集合](import-data.md#import-to-a-collection)。
 {% endhint %}
 
+## 导入到您的个人密码库 <a href="#import-to-your-personal-vault" id="import-to-your-personal-vault"></a>
+
+数据可以从网页 App、浏览器扩展、桌面 App 或 CLI 导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../../security/encryption/encryption-protocols.md)。
+
 {% hint style="info" %}
 虽然某些项目类型无法导入，但您仍可将其添加到密码库：
 
 * 将[文件附件](../../your-vault/file-attachments.md)单独上传到新的密码库。
 * 在新的密码库中重新创建 [Send](../../bitwarden-send/about-send.md)。
 {% endhint %}
-
-## 导入到您的个人密码库 <a href="#import-to-your-personal-vault" id="import-to-your-personal-vault"></a>
-
-数据可以从网页密码库、CLI、桌面 App 或浏览器扩展导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../../security/encryption/encryption-protocols.md)。要导入您的数据：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -50,6 +50,10 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 
 * **个人密码库**：选择**我的密码库**并（可选）选择移动项目到的**文件夹**。
 * **组织密码库**：选择组织密码库名称然后选择一个**集合**。(要求[**管理集合**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+
+{% hint style="success" %}
+如果您在此处选择**文件夹**，则导入文件中定义的任何文件夹在创建时都将嵌套在其中。
+{% endhint %}
 
 4、从**文件格式**下拉菜单中，选择[导入文件的格式](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -77,6 +81,10 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 
 * **个人密码库**：选择**我的密码库**并（可选）选择移动项目到的**文件夹**。
 * **组织密码库**：选择组织密码库名称然后选择一个**集合**。(要求[**管理集合**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+
+{% hint style="success" %}
+如果您在此处选择**文件夹**，则导入文件中定义的任何文件夹在创建时都将嵌套在其中。
+{% endhint %}
 
 5、从**文件格式**下拉菜单中，选择[导入文件的格式](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -110,6 +118,10 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 
 * **个人密码库**：选择**我的密码库**并（可选）选择移动项目到的**文件夹**。
 * **组织密码库**：选择组织密码库名称然后选择一个**集合**。(要求[**管理集合**](../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+
+{% hint style="success" %}
+如果您在此处选择**文件夹**，则导入文件中定义的任何文件夹在创建时都将嵌套在其中。
+{% endhint %}
 
 4、从**文件格式**下拉菜单中，选择[导入文件的格式](../../import-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 

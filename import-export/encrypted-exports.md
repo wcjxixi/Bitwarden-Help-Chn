@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/encrypted-export/)
 {% endhint %}
 
-密码库数据可以[导出](export-vault-data.md)为加密的 `.json` 文件。加密的导出文件将包含来自您的组织或个人密码库的项目，但不包含 Send、~~密码历史记录、~~回收站或项目附件。可以使用网页密码库或 [CLI](../password-manager/developer-tools/cli/password-manager-cli.md#export) 创建受密码保护的导出。Bitwarden 提供两种加密导出类型：
+密码库数据可以导出为[用于个人](export-vault-data.md)和[用于组织](../admin-console/manage-shared-items/export-organization-items/)的加密的 `.json` 文件。提供两种加密导出类型：
 
-* **账户限制**：导出加密文件，只能重新导入到生成加密导出文件的 Bitwarden 账户。此过程使用专用于 Bitwarden 账户的[账户加密密钥](../security/encryption/encryption-key-rotation.md)。
+* **账户限制**：导出加密文件，只能重新导入到生成加密导出文件的 Bitwarden 账户或组织。此过程使用专用的受限导出的相关账户或组织的加密密钥。。
 * **密码保护**：使用您选择的密码保护导出的加密文件。该文件使用您选择的密码解密，并且可以导入任何 Bitwarden 账户。此指定的密码经过加盐处理，使用 PBKDF2 以 100,000 次迭代派生出加密密钥，最后使用 HDKF 拉伸为一个新的加密密钥，用于加密您的数据以及消息身份验证代码 (MAC)。
 
 {% hint style="danger" %}
