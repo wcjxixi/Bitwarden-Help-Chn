@@ -10,83 +10,99 @@
 当您登录设备时，设备将默认受到信任。强烈建议您在登录公共或共享设备时取消选中**记住此设备**选项。
 {% endhint %}
 
-不过，当您登录新设备时，您需要批准或信任该设备。有几种方法可以做到这一点：
+当您登录新设备时，您需要批准或信任该设备。有几种方法可以做到这一点：
 
-* **从其他设备批准**：如果您有其他 Bitwarden 密码管理器网页 App、移动 App 或桌面 App，您可以从那里批准新设备，类似于设备登录。在移动端，首先确保已启用**批准登录请求**选项。
+* **从其他设备批准**：如果您已在另一台设备上登录 Bitwarden，您可以从那里批准新设备：
 
 {% tabs %}
 {% tab title="移动 App" %}
-发起设备登录后，要使用移动 App 批准请求：
+要使用移动 App 批准请求：
 
-1、登录到移动 App。
+1、在移动 App 中，导航至**设置** → **账户安全** → **待处理的登录请求**：
 
-2、导航至**设置** → **账户安全** → **待处理的登录请求**。
+{% embed url="https://bitwarden.com/assets/1ZB3Pc8T0mlP96W3IZefrR/a22c8efe63a88941bad11a278b1d113d/2025-09-09_09-39-13.png?w=1193&fm=avif" %}
+移动端上待处理的登录请求
+{% endembed %}
 
-3、定位并选择活动设备请求。
+2、定位并点击待处理的设备请求。
 
-4、验证指纹短语然后选择**确认登录**。
+3、验证指纹短语然后选择**确认登录**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6xeP36n7g2dbwLI9YWjNg4/dbc18de80ace51b789021cc7083e76e0/IMG_1954.jpeg?_a=DAJAUVWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/6xeP36n7g2dbwLI9YWjNg4/2aa9fdc96e765e963ee07f38ad0b6c06/2025-09-09_09-39-44.png?w=1192&fm=avif" %}
+在移动端上批准登录
+{% endembed %}
+{% endtab %}
+
+{% tab title="浏览器扩展" %}
+要使用浏览器扩展批准请求：
+
+1、在浏览器扩展中，等待接收到设备批准请求或导航至**设置** → **账户安全** → **设备**：
+
+{% embed url="https://bitwarden.com/assets/6OZfQt2jDDqa9F0MaUdBUq/1460f0ec04c63ab55da1f5eaf37ca469/2025-09-09_09-49-23.png?w=1190&fm=avif" %}
+浏览器扩展上的设备视图
+{% endembed %}
+
+2、在**设备**选项卡上，定位并选择待处理的设备请求：
+
+{% embed url="https://bitwarden.com/assets/64f1jZ30In2BbWDEUZVtxO/9de965d59fedca2bad4e325f4181f69a/2025-09-09_09-49-42.png?w=1187&fm=avif" %}
+浏览器扩展上的列表
+{% endembed %}
+
+3、验证指纹短语然后选择**确认访问**：
+
+{% embed url="https://bitwarden.com/assets/2LFY10MMpI9G0ZcojcXveg/0a891ec5fa8f6052e5804841e7ec7724/2025-09-09_09-48-55.png?w=1193&fm=avif" %}
+在浏览器扩展上批准设备
+{% endembed %}
 {% endtab %}
 
 {% tab title="网页 App" %}
-发起设备登录后，要使用网页 App 批准请求：
-
-1、登录到网页 App。
+要使用网页 App 批准请求：
 
 {% hint style="info" %}
-在请求批准登录浏览器扩展时，扩展窗口必须保持打开状态，直到程序完成。Bitwarden 建议：
-
-* **对于 Chrome 和 chromium 浏览器**： 在单独的浏览器窗口中打开网络应用程序，这将允许扩展在原始窗口中保持打开状态。
-* **对于 Safari 浏览器**：在单独的浏览器窗口中打开网页 App，这将允许扩展在原始窗口中保持打开状态。
-* **对于 Firefox**：在侧边栏中打开扩展，这样就可以在打开网页 App 时继续保留扩展。
-
-这将在以后的版本中得到改进。
+当请求批准登录浏览器扩展程序时，即使您单击退出或最小化扩展程序窗口，该扩展程序也会等待最多两分钟以获得批准，以便使用网页 App 批准请求。
 {% endhint %}
 
-2、导航至**设置** → **安全** → **设备**。
+1、在网页 App 中，选择横幅通知中的**审查登录请求**链接或导航至**设置** → **安全** → **设备**：
 
-3、定位并选择活动设备请求。
+{% embed url="https://bitwarden.com/assets/1K9FeC1OVOwyu0T8DMiwOp/90852f4e82b80827750bffd19cb6493d/2025-09-09_09-23-06.png?w=1189&fm=avif" %}
+在网页 App 上批准请求
+{% endembed %}
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7GLmOwtReFuUD3uxPQ0LB8/71b896fcc76d3918e3fe37dee978e2dd/2025-01-14_12-35-31.png?_a=DAJAUVWIZAAB" %}
+2、在**设备**选项卡上，定位并选择待处理的设备请求：
 
-4、验证指纹短语然后选择**确认登录**。
+{% embed url="https://bitwarden.com/assets/7GLmOwtReFuUD3uxPQ0LB8/2abd84049d99f0dc0c21158c636ab55d/2025-09-09_09-22-11.png?w=1193&fm=avif" %}
+网页 App 上的设备列表
+{% endembed %}
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6s6Hdn9L1EyeRfBsmOcfgX/ada1215dc8e370c7b82f1a0fc6bd8923/2025-01-14_15-55-10.png?_a=DAJAUVWIZAAB" %}
+3、验证指纹短语然后选择**确认访问**：
+
+{% embed url="https://bitwarden.com/assets/6s6Hdn9L1EyeRfBsmOcfgX/a4e9e4996abc1ac63b8c6f2b3880cd07/2025-09-09_09-22-44.png?w=1189&fm=avif" %}
+使用网页 App 批准访问
+{% endembed %}
 {% endtab %}
 
 {% tab title="桌面 App" %}
-发起设备登录后，要使用桌面 App 批准请求：
+要使用桌面 App 批准请求：
 
-1、登录到桌面 App。
+1、在桌面 App 中，等待接收到设备批准请求：
 
-2、验证请求将发送到您的桌面 App。
+{% embed url="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/7d19d6377dbba8d4c6abee37b96a5037/2025-09-09_09-07-05.png?w=1200&fm=avif" %}
+桌面 App 上的批准
+{% endembed %}
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5cpkevhyuiSg82yfopvmc1/3bccaff5f02ad79bab67fb7ed941ed0e/2025-01-16_11-44-40.png?_a=DAJAUVWIZAAB" %}
-
-3、验证指纹短语然后选择**确认登录**。
+2、验证指纹短语然后选择**确认访问**。
 {% endtab %}
 {% endtabs %}
 
-{% hint style="info" %}
-我们建议您先信任一个移动或桌面 App，然后立即打开**批准登录请求**选项。这样您就可以使用**从其他设备批准**选项来添加后续设备。
-{% endhint %}
+* **使用主密码批准**：如果您是管理员或所有者，或者在受信任设备 SSO 实施之前加入了您的组织，因此仍然拥有与您的账户关联的主密码，则可以输入主密码来批准设备。
 
-* **请求管理员批准**：您可以向组织内的管理员和所有者发送设备批准请求以供批准。在许多情况下，这将是您唯一可用的选择（[了解更多](../../../admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)）。
+{% embed url="https://bitwarden.com/assets/5IMJBQOrklcOuLVEpaR6gX/60ead8f10e34f7acd2467eaaa34ff93d/2025-06-16_15-22-15.png?w=642&fm=avif" %}
 
-{% embed url="https://bitwarden.com/_gatsby/image/2ae6ef9b326ba69fa7233cda5cd242b6/46e040f6b375ce8ca8c6e3e1ae8af9f6/request%20admin%20approval.webp?eu=d98b02e0b1c8fc830d6ca28a6d233460e13d5ffef65567d86f64b5a91ea89cd276a74f0472942ee07d3c08dd80b317e961907a6818e9d889c1be1df2bf61aa0e008153e866b42107007accfab7a002446bc51b0df2d2cf5aa16e7a82b6e6b1781b04187fa222fcc5acea3f7bafda7263bde3e5303686fd29a3510b1088062fa920a4979c6d4da894b149e7bba9ae16c8e59a577521a4b16e7e24335a248b58fbf4d002265136165a33c6f95dcf64c3e26a1864230c5c57f2356bd951aa6c6492b0f2a45edd2f64a3fd887425c587c1d1b947f57419b68f67ebdd7d2b5213ec4dfa&a=w%3D493%26h%3D550%26fm%3Dwebp%26q%3D75&cd=2023-08-31T17%3A56%3A38.040Z" %}
-请求管理员批准
-{% endembed %}
+* **请求管理员批准**：您可以向组织内的管理员和所有者发送设备批准请求以供批准。您必须[注册账户恢复](../../../admin-console/manage-members/account-recovery/account-recovery-enrollment.md#self-enroll-in-account-recovery)才能请求管理员批准，不过您在加入组织时可能已[自动注册](../../../admin-console/manage-members/account-recovery/account-recovery-enrollment.md#automatic-enrollment)。在许多情况下，这将是您唯一可用的选择（[了解更多](../../../admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)）。
 
 {% hint style="info" %}
 如果您使用此选项，（当设备请求获得批准后）您将收到一封电子邮件，通知您可以继续在该设备登录。您必须在 12 小时内登录新设备，否则批准将失效。
 {% endhint %}
-
-* **使用主密码批准**：如果您是管理员或所有者，或者在受信任设备 SSO 实施之前加入了您的组织，因此仍然拥有与您的账户关联的主密码，则可以输入主密码来批准设备。
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/Zutl0zizn3ZdFAHRHGaH1/a4fbd196221ffcf80fac80ab9f0835ea/requires_device_approval.png?_a=DAJAUVWIZAAB" %}
-使用主密码批准
-{% endembed %}
 
 新设备成为受信任设备后，您只需完成公司既定的单点登录流程，即可登录 Bitwarden 并解密您的密码库数据。
 
@@ -109,3 +125,9 @@
 {% hint style="info" %}
 只有拥有主密码的用户才能轮换其[账户加密密钥](../../../security/encryption/encryption-key-rotation.md)。[了解更多](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md#impact-on-master-passwords)。
 {% endhint %}
+
+## 故障排除 <a href="#troubleshooting" id="troubleshooting"></a>
+
+如果您在建立设备信任时遇到问题：
+
+* 在 Chrome 上，检查允许网站在您的设备上保存数据是否已开启（**设置** → **隐私和安全** → **网站设置** → **其他内容设置** → **设备上网站数据** → **允许网站在您的设备上保存数据**）。
