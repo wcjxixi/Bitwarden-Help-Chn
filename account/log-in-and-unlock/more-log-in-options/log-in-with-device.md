@@ -10,11 +10,11 @@
 
 [了解我们的零知识加密实施方案](log-in-with-device.md#how-it-works)。
 
-## 设备登录准备 <a href="#prepare-to-log-in-with-a-device" id="prepare-to-log-in-with-a-device"></a>
+## 准备设备登录 <a href="#prepare-to-log-in-with-a-device" id="prepare-to-log-in-with-a-device"></a>
 
 要设置设备登录：
 
-* 至少正常登录一次发起 App（网页 App、浏览器扩展、移动 App 或桌面 App），以便 Bitwarden 可以识别您的设备。
+* 至少正常登录一次发起 App（网页 App、浏览器扩展、桌面或移动 App），以便 Bitwarden 可以识别您的设备。
 
 {% hint style="info" %}
 使用隐身模式或隐私浏览会阻止 Bitwarden 注册您的浏览器，因此您将无法在隐私浏览器窗口中使用设备登录。
@@ -30,19 +30,21 @@
 
 在发起 App 的登录界面，输入您的电子邮箱地址并选择**继续**。然后，选择**使用设备登录**选项：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7owqaTEe9Bo05wfLRZPhn8/7b66e262c26b4d4cb98cdb9584fafe13/2024-12-02_10-39-22.png?_a=DAJAUVWIZAAB" %}
-设备登录
+{% embed url="https://bitwarden.com/assets/7owqaTEe9Bo05wfLRZPhn8/38f1d0334964bb3d98a430b80b9d6b95/2025-09-09_10-03-52.png?w=692&fm=avif" %}
+使用设备登录
 {% endembed %}
 
-使用**设备登录**会将身份验证请求发送到您当前已登录并且已启用了该选项的任何网页 App、移动 App 或桌面 App 以用于批准。
+### 批准登录请求 <a href="#approve-a-log-in-request" id="approve-a-log-in-request"></a>
+
+使用**设备登录**会将身份验证请求发送到您当前已登录的 Bitwarden App 以用于批准。
 
 {% tabs %}
 {% tab title="移动 App" %}
-发起**使用设备登录**后，要使用移动 App 批准请求：
+要使用移动 App 批准请求：
 
-1、登录到移动 App。
+1、在移动 App 中，导航到**设置** → **账户安全** → **待处理的登录请求**：
 
-2、导航到**设置** → **账户安全** → **待处理的登录请求**。
+
 
 3、找到并选择活动设备请求。
 

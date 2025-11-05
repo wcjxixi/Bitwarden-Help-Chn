@@ -15,6 +15,7 @@
     * [使用单点登录](account/log-in-and-unlock/using-single-sign-on/README.md)
       * [使用 SSO 登录](account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)
       * [添加受信任设备](account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)
+      * [链接 SSO](account/log-in-and-unlock/using-single-sign-on/link-sso.md)
     * [更多登录选项](account/log-in-and-unlock/more-log-in-options/README.md)
       * [登录到多个账户](account/log-in-and-unlock/more-log-in-options/account-switching.md)
       * [使用设备登录](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)
