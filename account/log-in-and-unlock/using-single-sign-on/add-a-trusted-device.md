@@ -87,7 +87,7 @@
 1、在桌面 App 中，等待接收到设备批准请求：
 
 {% embed url="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/7d19d6377dbba8d4c6abee37b96a5037/2025-09-09_09-07-05.png?w=1200&fm=avif" %}
-桌面 App 上的批准
+在桌面 App 上批准
 {% endembed %}
 
 2、验证指纹短语然后选择**确认访问**。

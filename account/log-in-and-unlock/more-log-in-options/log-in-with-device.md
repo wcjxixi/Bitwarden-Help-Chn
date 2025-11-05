@@ -55,46 +55,6 @@
 {% embed url="https://bitwarden.com/assets/6xeP36n7g2dbwLI9YWjNg4/2aa9fdc96e765e963ee07f38ad0b6c06/2025-09-09_09-39-44.png?w=1192&fm=avif" %}
 在移动端上批准登录
 {% endembed %}
-
-
-
-要使用网页 App 批准请求：
-
-{% hint style="info" %}
-当请求批准登录浏览器扩展程序时，即使您单击退出或最小化扩展程序窗口，该扩展程序也会等待最多两分钟以获得批准，以便使用网页 App 批准请求。
-{% endhint %}
-
-1、在网页 App 中，选择横幅通知中的**审查登录请求**链接或导航至**设置** → **安全** → **设备**：
-
-{% embed url="https://bitwarden.com/assets/1K9FeC1OVOwyu0T8DMiwOp/90852f4e82b80827750bffd19cb6493d/2025-09-09_09-23-06.png?w=1189&fm=avif" %}
-在网页 App 上批准请求
-{% endembed %}
-
-2、在**设备**选项卡上，定位并选择待处理的设备请求：
-
-{% embed url="https://bitwarden.com/assets/7GLmOwtReFuUD3uxPQ0LB8/2abd84049d99f0dc0c21158c636ab55d/2025-09-09_09-22-11.png?w=1193&fm=avif" %}
-网页 App 上的设备列表
-{% endembed %}
-
-3、验证指纹短语然后选择**确认访问**：
-
-{% embed url="https://bitwarden.com/assets/6s6Hdn9L1EyeRfBsmOcfgX/a4e9e4996abc1ac63b8c6f2b3880cd07/2025-09-09_09-22-44.png?w=1189&fm=avif" %}
-使用网页 App 批准访问
-{% endembed %}
-
-要使用桌面 App 批准请求：
-
-1、在桌面 App 中，等待接收到设备批准请求：
-
-{% embed url="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/7d19d6377dbba8d4c6abee37b96a5037/2025-09-09_09-07-05.png?w=1200&fm=avif" %}
-桌面 App 上的批准
-{% endembed %}
-
-2、验证指纹短语然后选择**确认访问**。
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6xeP36n7g2dbwLI9YWjNg4/dbc18de80ace51b789021cc7083e76e0/IMG_1954.jpeg?_a=DAJAUVWIZAAB" %}
-移动设备批准
-{% endembed %}
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -151,7 +111,7 @@
 1、在桌面 App 中，等待接收到设备批准请求：
 
 {% embed url="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/7d19d6377dbba8d4c6abee37b96a5037/2025-09-09_09-07-05.png?w=1200&fm=avif" %}
-桌面 App 上批准
+在桌面 App 上批准
 {% endembed %}
 
 2、验证指纹短语然后选择**确认访问**。
@@ -170,12 +130,12 @@
 
 当发起设备登录时：
 
-1. 网页密码库客户端向 Bitwarden 数据库中的身份验证请求表 POST（发送）一个请求，其中包括账户电子邮箱地址、唯一的身份验证请求公钥**ᵃ** 和访问代码。
-2. 已注册的设备，即已登录并在 Bitwarden 数据库中存储了[特定于设备的 GUID](../../../security/data/administrative-data.md) 的移动或桌面 App，将收到此请求。
-3. 请求获得批准后，批准客户端使用此请求中包含的身份验证请求公钥加密账户的主密钥和主密码哈希。
-4. 批准客户端然后将已加密的主密钥和已加密的主密码哈希 PUT（放置）到身份验证请求记录，并将请求标记为已完成。
-5. 发起客户端 GET（获取）已加密的主密钥和已加密的主密码哈希。
-6. 然后，发起客户端使用身份验证请求私钥在**本地**解密主密钥和主密码哈希。
-7. 然后，发起客户端使用访问代码和已完成的身份验证请求通过 Bitwarden Identity 服务对用户进行身份验证。
+1. 发起客户端向 Bitwarden 数据库中的身份验证请求表发送一个请求，其中包括账户电子邮箱地址、唯一的**身份验证请求公钥ᵃ** 和访问代码。已注册的设备，即已登录并在 Bitwarden 数据库中存储了[特定于设备的 GUID](../../../security/data/administrative-data.md) 的客户端，将收到此请求。
+2. 请求获得批准后，批准客户端使用此请求中包含的**身份验证请求公钥**对账户的**用户加密密钥**进行加密。
+3. 批准客户端然后将**用户加密密钥**发送到身份验证请求记录，并将此请求标记为已完成。
+4. 发起客户端请求已加密的**用户加密密钥**。
+5. 然后，发起客户端使用**身份验证请求私钥**在**本地**解密**用户加密密钥**。
+6. 然后，发起客户端使用访问代码通过 Bitwarden Identity 服务对用户进行身份验证。
+7. 然后，发起客户端可以获取用户的密码库数据并使用**用户加密密钥**对其进行解密。
 
-**ª** - 身份验证请求公钥和私钥是为每一个无密码登录请求生成的唯一密钥，其存在时间与请求的存在时间相同。如果请求未被批准或被拒绝，请求将在 15 分钟后过期并从数据库中清除。
+**ª** - **身份验证请求公钥和私钥**是为每一个无密码登录请求生成的唯一密钥，其存在时间与请求的存在时间相同。如果请求未被批准或被拒绝，请求将过期并定期清除。
