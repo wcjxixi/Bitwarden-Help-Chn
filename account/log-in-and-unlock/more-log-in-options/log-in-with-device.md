@@ -42,61 +42,119 @@
 {% tab title="移动 App" %}
 要使用移动 App 批准请求：
 
-1、在移动 App 中，导航到**设置** → **账户安全** → **待处理的登录请求**：
+1、在移动 App 中，导航至**设置** → **账户安全** → **待处理的登录请求**：
+
+{% embed url="https://bitwarden.com/assets/1ZB3Pc8T0mlP96W3IZefrR/a22c8efe63a88941bad11a278b1d113d/2025-09-09_09-39-13.png?w=1193&fm=avif" %}
+移动端上待处理的登录请求
+{% endembed %}
+
+2、定位并点击待处理的设备请求。
+
+3、验证指纹短语然后选择**确认访问**：
+
+{% embed url="https://bitwarden.com/assets/6xeP36n7g2dbwLI9YWjNg4/2aa9fdc96e765e963ee07f38ad0b6c06/2025-09-09_09-39-44.png?w=1192&fm=avif" %}
+在移动端上批准登录
+{% endembed %}
 
 
 
-3、找到并选择活动设备请求。
+要使用网页 App 批准请求：
 
-4、验证指纹短语然后选择**确认登录**。
+{% hint style="info" %}
+当请求批准登录浏览器扩展程序时，即使您单击退出或最小化扩展程序窗口，该扩展程序也会等待最多两分钟以获得批准，以便使用网页 App 批准请求。
+{% endhint %}
+
+1、在网页 App 中，选择横幅通知中的**审查登录请求**链接或导航至**设置** → **安全** → **设备**：
+
+{% embed url="https://bitwarden.com/assets/1K9FeC1OVOwyu0T8DMiwOp/90852f4e82b80827750bffd19cb6493d/2025-09-09_09-23-06.png?w=1189&fm=avif" %}
+在网页 App 上批准请求
+{% endembed %}
+
+2、在**设备**选项卡上，定位并选择待处理的设备请求：
+
+{% embed url="https://bitwarden.com/assets/7GLmOwtReFuUD3uxPQ0LB8/2abd84049d99f0dc0c21158c636ab55d/2025-09-09_09-22-11.png?w=1193&fm=avif" %}
+网页 App 上的设备列表
+{% endembed %}
+
+3、验证指纹短语然后选择**确认访问**：
+
+{% embed url="https://bitwarden.com/assets/6s6Hdn9L1EyeRfBsmOcfgX/a4e9e4996abc1ac63b8c6f2b3880cd07/2025-09-09_09-22-44.png?w=1189&fm=avif" %}
+使用网页 App 批准访问
+{% endembed %}
+
+要使用桌面 App 批准请求：
+
+1、在桌面 App 中，等待接收到设备批准请求：
+
+{% embed url="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/7d19d6377dbba8d4c6abee37b96a5037/2025-09-09_09-07-05.png?w=1200&fm=avif" %}
+桌面 App 上的批准
+{% endembed %}
+
+2、验证指纹短语然后选择**确认访问**。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6xeP36n7g2dbwLI9YWjNg4/dbc18de80ace51b789021cc7083e76e0/IMG_1954.jpeg?_a=DAJAUVWIZAAB" %}
 移动设备批准
 {% endembed %}
 {% endtab %}
 
-{% tab title="网页 App" %}
-发起**设备登录**后，要使用网页 App 批准请求：
+{% tab title="浏览器扩展" %}
+要使用浏览器扩展批准请求：
 
-1、登录到网页 App。
+1、在浏览器扩展中，等待接收到设备批准请求或导航至**设置** → **账户安全** → **设备**：
 
-{% hint style="info" %}
-在为浏览器扩展批准登录请求时，扩展窗口必须保持打开状态，直到过程完成。Bitwarden 建议：
-
-* **对于 Chrome 和 chromium 浏览器**：在单独的浏览器窗口中打开网页应用程序，这将允许扩展在原始窗口中保持打开状态。
-* **对于 Safari 浏览器**：在单独的浏览器窗口中打开网页应用程序，这将允许扩展在原始窗口中保持打开状态。
-* **对于 Firefox**：在侧边栏中打开扩展，这将允许在打开网页应用程序时继续保留扩展。
-
-这些将在以后的版本中得到改进。
-{% endhint %}
-
-2、导航到**设置** → **安全** → **设备**。
-
-3、找到并选择活动设备请求。
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7GLmOwtReFuUD3uxPQ0LB8/71b896fcc76d3918e3fe37dee978e2dd/2025-01-14_12-35-31.png?_a=DAJAUVWIZAAB" %}
-网页应用程序批准设备登录
+{% embed url="https://bitwarden.com/assets/6OZfQt2jDDqa9F0MaUdBUq/1460f0ec04c63ab55da1f5eaf37ca469/2025-09-09_09-49-23.png?w=1190&fm=avif" %}
+浏览器扩展上的设备视图
 {% endembed %}
 
-4、验证指纹短语然后选择**确认登录**。
+2、在**设备**选项卡上，定位并选择待处理的设备请求：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6s6Hdn9L1EyeRfBsmOcfgX/ada1215dc8e370c7b82f1a0fc6bd8923/2025-01-14_15-55-10.png?_a=DAJAUVWIZAAB" %}
-网页应用程序确认指纹
+{% embed url="https://bitwarden.com/assets/64f1jZ30In2BbWDEUZVtxO/9de965d59fedca2bad4e325f4181f69a/2025-09-09_09-49-42.png?w=1187&fm=avif" %}
+浏览器扩展上的列表
+{% endembed %}
+
+3、验证指纹短语然后选择**确认访问**：
+
+{% embed url="https://bitwarden.com/assets/2LFY10MMpI9G0ZcojcXveg/0a891ec5fa8f6052e5804841e7ec7724/2025-09-09_09-48-55.png?w=1193&fm=avif" %}
+在浏览器扩展上批准设备
+{% endembed %}
+{% endtab %}
+
+{% tab title="网页 App" %}
+要使用网页 App 批准请求：
+
+{% hint style="info" %}
+当请求批准登录浏览器扩展程序时，即使您单击退出或最小化扩展程序窗口，该扩展程序也会等待最多两分钟以获得批准，以便使用网页 App 批准请求。
+{% endhint %}
+
+1、在网页 App 中，选择横幅通知中的**审查登录请求**链接或导航至**设置** → **安全** → **设备**：
+
+{% embed url="https://bitwarden.com/assets/1K9FeC1OVOwyu0T8DMiwOp/90852f4e82b80827750bffd19cb6493d/2025-09-09_09-23-06.png?w=1189&fm=avif" %}
+在网页 App 上批准请求
+{% endembed %}
+
+2、在**设备**选项卡上，定位并选择待处理的设备请求：
+
+{% embed url="https://bitwarden.com/assets/7GLmOwtReFuUD3uxPQ0LB8/2abd84049d99f0dc0c21158c636ab55d/2025-09-09_09-22-11.png?w=1193&fm=avif" %}
+网页 App 上的设备列表
+{% endembed %}
+
+3、验证指纹短语然后选择**确认访问**：
+
+{% embed url="https://bitwarden.com/assets/6s6Hdn9L1EyeRfBsmOcfgX/a4e9e4996abc1ac63b8c6f2b3880cd07/2025-09-09_09-22-44.png?w=1189&fm=avif" %}
+使用网页 App 批准访问
 {% endembed %}
 {% endtab %}
 
 {% tab title="桌面 App" %}
-发起**使用设备登录**后，要使用桌面 App 批准请求：
+要使用桌面 App 批准请求：
 
-1、登录到桌面 App。
+1、在桌面 App 中，等待接收到设备批准请求：
 
-2、验证请求将发送到您的桌面 App：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5cpkevhyuiSg82yfopvmc1/3bccaff5f02ad79bab67fb7ed941ed0e/2025-01-16_11-44-40.png?_a=DAJAUVWIZAAB" %}
-桌面应用程序批准设备
+{% embed url="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/7d19d6377dbba8d4c6abee37b96a5037/2025-09-09_09-07-05.png?w=1200&fm=avif" %}
+桌面 App 上批准
 {% endembed %}
 
-3、验证指纹短语然后选择**确认登录**。
+2、验证指纹短语然后选择**确认访问**。
 {% endtab %}
 {% endtabs %}
 

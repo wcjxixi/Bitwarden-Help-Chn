@@ -26,7 +26,7 @@
 
 2、定位并点击待处理的设备请求。
 
-3、验证指纹短语然后选择**确认登录**：
+3、验证指纹短语然后选择**确认访问**：
 
 {% embed url="https://bitwarden.com/assets/6xeP36n7g2dbwLI9YWjNg4/2aa9fdc96e765e963ee07f38ad0b6c06/2025-09-09_09-39-44.png?w=1192&fm=avif" %}
 在移动端上批准登录
