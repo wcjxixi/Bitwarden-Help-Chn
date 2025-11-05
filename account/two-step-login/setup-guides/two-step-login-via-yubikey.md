@@ -22,7 +22,7 @@
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../import-export/export-vault-data.md)来备份密码库数据。
 {% endhint %}
 
-1、登录您的网页 App。
+1、登录到 Bitwarden 网页 App。
 
 2、从导航选择**设置** → **安全** → **两步登录**：
 
@@ -70,9 +70,9 @@
 
 1、在任一个 Bitwarden App 中输入您的电子邮件地址和主密码登录您的密码库。
 
-系统将提示您将 YubiKey 插入计算机的 USB 端口，或将 YubiKey 靠近支持 NFC 的设备背面：
+2、当出现提示时，将您的 YubiKey 插入计算机的 USB 端口，或将 YubiKey 靠近启用了 NFC 的设备背面：
 
-{% embed url="https://bitwarden.com/_gatsby/image/9392233faa5b11af6693f99e90c1b9e5/6a8fb0f3170a253b814eb0085de74ee9/using-yubi.webp?eu=8eda01b7e3ceadd50e3aa6806d7b696fe43c56aeaa513e846830e3a84ea09f8f22a64d5774957db225690fd6d7b24aba62c72e631be8d3da92be11f3bb60aa5907875de667b425525b7380baf0b60c5a779f4709f6d68b16f0292485a6f0e2345a4e427eec65bfc3b2fa733eb1d5276fadb1b9293f9bf038a2643800c87013a41bccf2ad4f5c9ba7d400bcb4b8ff0bcccfe7290112dba76076234d1a09b97feaadb052703978450836cfb01d8438c8e121552471074143a930&a=w%3D850%26h%3D571%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A14%3A29.733Z" %}
+{% embed url="https://bitwarden.com/assets/7jikprFVd3XRhOGRCLrEYT/82b0a7332797a1c6ee6add081ea40ab9/2025-03-25_10-15-37.png?w=874&fm=avif" %}
 YubiKey 提示
 {% endembed %}
 
@@ -80,7 +80,7 @@ YubiKey 提示
 勾选**记住我**复选框，以记住您的设备，有效期 30 天。记住您的设备意味着您不会被要求完成两步登陆步骤。
 {% endhint %}
 
-**如果您在移动设备上使用的是非 NFC 的 YubiKey：**
+3、如果您在移动设备上使用的是**非 NFC** 的 YubiKey：
 
 1. 将 YubiKey 插入设备。
 2. 点击**取消**以结束 NFC 提示。
@@ -91,7 +91,7 @@ YubiKey 提示
 取消 NFC
 {% endembed %}
 
-2、点击或选择**继续**以完成登录。
+4、点击或选择**继续**以完成登录。
 
 登录后，您将不会被要求完成第二步的两步登录步骤就可以**解锁**您的密码库。有关配置注销和锁定行为的帮助，请参阅[密码库超时选项](../../log-in-and-unlock/vault-timeout-options.md)。
 
@@ -116,7 +116,7 @@ YubiKey 提示
 
 （**仅 Android）检查如下项目：**
 
-1. 在设置过程中勾选了**我的钥匙之一支持 NFC** 复选框。
-2. 您的 Android 设备支持 [NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices)，并且[很确定](https://forum.yubico.com/viewtopic1c5f.html?f=26\&t=1302)地可以与 YubiKey NEO 或 YubiKey 5 NFC 一起正常使用。
-3. 您已在 Android 设备上启用了 NFC（**设置** → **更多**）。
-4. 您的键盘布局/格式/模式已设置为 QWERTY。
+* 在设置过程中勾选了**我的钥匙之一支持 NFC** 复选框。
+* 您的 Android 设备支持 [NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices)，并且[很确定](https://forum.yubico.com/viewtopic1c5f.html?f=26\&t=1302)地可以与 YubiKey NEO 或 YubiKey 5 NFC 一起正常使用。
+* 您已在 Android 设备上启用了 NFC（**设置** → **更多**）。
+* 您的键盘布局/格式/模式已设置为 QWERTY。

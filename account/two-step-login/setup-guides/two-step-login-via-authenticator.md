@@ -22,7 +22,7 @@
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../import-export/export-vault-data.md)来备份密码库数据。
 {% endhint %}
 
-1、登录您的网页 App。
+1、登录到 Bitwarden 网页 App。
 
 2、从导航选择**设置** → **安全** → **两步登录**：
 

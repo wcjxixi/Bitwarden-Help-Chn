@@ -42,7 +42,7 @@ Bitwarden 应用程序页面
 
 要为个人用户启用 Duo 方式的两步登录：
 
-1、登录您的网页 App。
+1、登录到 Bitwarden 网页 App。
 
 2、从导航选择**设置** → **安全** → **两步登录**：
 
@@ -82,8 +82,8 @@ Bitwarden 应用程序页面
 
 设置好 Duo 后，打开网页密码库。如果 Duo 是您[已启用的最高优先级方式](two-step-login-methods.md#using-multiple-methods)，下次登录时，系统将提示您**启动 Duo**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1PNSfz6l3pjpOUHYd7Dv8e/53c4c5186b28a361132d1bdf663caf5c/duo_indv.png?_a=BAJFJtWIB" %}
-个人启动 Duo
+{% embed url="https://bitwarden.com/assets/44SjeVrDTuQPz52cBxGhCX/d8cf66018741b808349e6afbd7f0769b/2025-04-08_14-15-16.png?w=649&fm=avif" %}
+启动 Duo
 {% endembed %}
 
 您将被要求注册一个两步登录设备，然后按照屏幕提示将辅助设备配置为使用 Duo（例如，要注册何种设备类型，以及是发送短信还是推送通知）。
@@ -103,7 +103,7 @@ Duo 2FA 设置
 
 您的组织管理员设置了 Duo 后，下次登录时，系统将提示您**启动 Duo**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/44SjeVrDTuQPz52cBxGhCX/25d783c2b2a152f26a358d4d155e38d1/launch.png?_a=BAJFJtWIB" %}
+{% embed url="https://bitwarden.com/assets/44SjeVrDTuQPz52cBxGhCX/d8cf66018741b808349e6afbd7f0769b/2025-04-08_14-15-16.png?w=649&fm=avif" %}
 启动 Duo
 {% endembed %}
 
@@ -146,7 +146,7 @@ Duo Bitwarden 应用程序
 
 ### 在 Bitwarden 中设置 Duo <a href="#setup-duo-in-bitwarden" id="setup-duo-in-bitwarden"></a>
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 最初配置和设置 Duo 后，在从 Duo 管理面板进行任何进一步的应用程序配置更改之前，为组织禁用它**非常重要**。进行配置更改；在 Bitwarden 中禁用 Duo，在 Duo 管理面板中进行必要的更改，然后在 Bitwarden 中重新启用 Duo。
 
 这是因为 Duo for organizations 目前不支持[恢复代码](../recovery-codes.md)。相反，您将需要依靠 Duo 管理面板来绕过无法访问 Duo 的成员的两步登录。在 Duo 处于活动状态时从 Duo 管理面板更改应用程序配置可能会失去绕过您或您组织的成员的两步登录的能力。
@@ -192,7 +192,7 @@ Duo Bitwarden 应用程序
 
 设置好 Duo 后，下次登录时，将提示您和您的组织成员**启动 Duo**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/44SjeVrDTuQPz52cBxGhCX/25d783c2b2a152f26a358d4d155e38d1/launch.png?_a=BAJFJtWIB" %}
+{% embed url="https://bitwarden.com/assets/44SjeVrDTuQPz52cBxGhCX/d8cf66018741b808349e6afbd7f0769b/2025-04-08_14-15-16.png?w=649&fm=avif" %}
 启动 Duo
 {% endembed %}
 

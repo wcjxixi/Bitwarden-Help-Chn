@@ -37,7 +37,7 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../import-export/export-vault-data.md)来备份密码库数据。
 {% endhint %}
 
-1、登录您的网页 App。
+1、登录到 Bitwarden 网页 App。
 
 2、从导航选择**设置** → **安全** → **两步登录**：
 
@@ -107,6 +107,6 @@ FIDO2 提示
 YubiKey Manager
 {% endembed %}
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 禁用 **NFC** → **OTP** 后，您将无法通过此密钥的 NFC 使用 [YubiKey 方式的两步登录](two-step-login-via-yubikey.md) (OTP)。在这种情况下，通过 USB 的 OTP 仍将按预期运行。
 {% endhint %}
