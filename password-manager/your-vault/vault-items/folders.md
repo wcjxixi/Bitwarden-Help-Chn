@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/folders/)
 {% endhint %}
 
-文件夹是用于通过收集登录、支付卡、身份和安全笔记来组织您的个人密码库的结构。使用文件夹是使所有密码库项目易于查找的比较好的方法。可以将任何密码库项目（包括[组织已与您共享的项目](../password-manager/vault-basics/organization-members/sharing.md)）添加到文件夹中。
+文件夹是用于通过收集登录、支付卡、身份和安全笔记来组织您的个人密码库的结构。使用文件夹是使所有密码库项目易于查找的比较好的方法。可以将任何密码库项目（包括[组织已与您共享的项目](../../organization-members/sharing.md)）添加到文件夹中。
 
 {% hint style="success" %}
 当从筛选器菜单中选择 **☷所有密码库**时，添加到某个文件夹的项目仍会出现在您的密码库中，删除文件夹并**不会**删除该文件夹中的项目。
@@ -68,7 +68,7 @@
 bw create folder <foldername>
 ```
 
-您可以使用 `bw edit <folderId>` 编辑现有文件夹，使用 `bw delete folder <folderId>` 删除文件夹。更多信息，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
+您可以使用 `bw edit <folderId>` 编辑现有文件夹，使用 `bw delete folder <folderId>` 删除文件夹。更多信息，请参阅 Bitwarden [CLI 文档](../../developer-tools/cli/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -77,7 +77,7 @@ bw create folder <foldername>
 {% hint style="info" %}
 如果您是某个组织的成员，在**筛选器**菜单中，集合将显示在文件夹的下方。
 
-文件夹和集合之间有相似之处。**文件夹用于组织个人密码库的项目**（可以包含[已共享的项目](../password-manager/vault-basics/organization-members/sharing.md)），并且对您来说是独一无二的，而集合则用于在组织成员之间共享项目。
+文件夹和集合之间有相似之处。**文件夹用于组织个人密码库的项目**（可以包含[已共享的项目](../../organization-members/sharing.md)），并且对您来说是独一无二的，而集合则用于在组织成员之间共享项目。
 {% endhint %}
 
 ### 嵌套文件夹 <a href="#nested-folders" id="nested-folders"></a>
@@ -85,7 +85,7 @@ bw create folder <foldername>
 文件夹可以「嵌套」，以便在密码库中合理地组织它们。嵌套文件夹的深度没有限制，但创建太多层次可能会破坏密码库的界面。
 
 {% hint style="info" %}
-在「父」文件夹中进行检索不会将嵌套在其中的文件夹中的项目作为潜在检索结果包括在内。有关更多信息，请参阅[检索密码库](search-your-vault.md)。
+在「父」文件夹中进行检索不会将嵌套在其中的文件夹中的项目作为潜在检索结果包括在内。有关更多信息，请参阅[检索密码库](../search-your-vault.md)。
 {% endhint %}
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5blNMg0hJ9XW3Ts2qPRzF5/7a2bdfb7672c04a1a1fbae1068b8b422/2024-12-02_16-18-48.png?_a=DAJCwlWIZAAB" %}
@@ -156,11 +156,11 @@ bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.folderId="3d9cecac-71a2-
 * 使用 [jq 之类的命令行 JSON 处理器](https://stedolan.github.io/jq/)操作 JSON 对象（特别是 `folderId` 属性）。
 * 使用 `encode` 命令对 JSON 对象的更改进行 `encode`。
 
-如果您不熟悉对这些部分的使用，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
+如果您不熟悉对这些部分的使用，请参阅 Bitwarden [CLI 文档](../../developer-tools/cli/password-manager-cli.md)。
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
 {% hint style="success" %}
-[组织已与您共享](../password-manager/vault-basics/organization-members/sharing.md)的项目可以添加到您的文件夹中，这样做只会影响该项目在您的个人密码库中的显示方式（即，将项目添加到文件夹不会授予任何人对该文件夹的访问权限，也不会改变它是否在他们的密码库中的某个文件夹中）。
+[组织已与您共享](../../organization-members/sharing.md)的项目可以添加到您的文件夹中，这样做只会影响该项目在您的个人密码库中的显示方式（即，将项目添加到文件夹不会授予任何人对该文件夹的访问权限，也不会改变它是否在他们的密码库中的某个文件夹中）。
 {% endhint %}

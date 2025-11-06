@@ -10,7 +10,7 @@
 
 {% embed url="https://vimeo.com/797787072" %}
 
-[此处](../your-vault/vault-items.md)了解更多有关密码库的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../password-manager/your-vault/vault-items/vault-items.md)了解更多有关密码库的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:09**：密码库项目。
 * **00:50**：个人和组织密码库。

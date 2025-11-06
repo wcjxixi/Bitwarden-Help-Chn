@@ -20,7 +20,7 @@
 
 {% embed url="https://vimeo.com/821402921" %}
 
-[此处](../your-vault/custom-fields.md)了解更多有关自定义字段的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../password-manager/your-vault/vault-items/custom-fields.md)了解更多有关自定义字段的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:30**：自定义字段的类型。
 * **01:30**：在浏览器扩展上创建自定义字段。

@@ -222,7 +222,7 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 
 以下 FAQ 与 Bitwarden 通行密钥存储有关。有关通行密钥的一般信息，请参阅[通行密钥 FAQ](../../../miscellaneous/passkeys-faq.md)。
 
-### 问：如果[克隆](../../../your-vault/vault-items.md#clone)密码库项目，是否会包含通行密钥？ <a href="#q-will-passkeys-be-included-if-you-clone-a-vault-item" id="q-will-passkeys-be-included-if-you-clone-a-vault-item"></a>
+### 问：如果[克隆](../../your-vault/vault-items/vault-items.md#clone)密码库项目，是否会包含通行密钥？ <a href="#q-will-passkeys-be-included-if-you-clone-a-vault-item" id="q-will-passkeys-be-included-if-you-clone-a-vault-item"></a>
 
 **答：**&#x5B8C;成克隆操作时，Bitwarden 不会复制通行密钥。
 

@@ -20,7 +20,7 @@
 设置主密码
 {% endembed %}
 
-当您对主密码感到满意后，请选择**创建账户**。在提交主密码之前，您还可以选择**检查密码的已知数据泄露情况**（[了解更多](../your-vault/vault-health-reports.md#exposed-passwords-report)）。
+当您对主密码感到满意后，请选择**创建账户**。在提交主密码之前，您还可以选择**检查密码的已知数据泄露情况**（[了解更多](../password-manager/your-vault/security-tools/vault-health-reports.md#exposed-passwords-report)）。
 
 {% hint style="info" %}
 如上所述，旧账户可能尚未验证其电子邮箱！如果您在创建账户时没有被要求验证电子邮箱，请登录您的[网页密码库](https://vault.bitwarden.com/)然后选择**验证电子邮箱**按钮。

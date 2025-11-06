@@ -55,7 +55,7 @@
 {% tab title="自托管到云端" %}
 要从自托管服务器迁移到云端：
 
-1、创建自托管 Bitwarden 服务器的 `./bwdata` 目录的完整备份。需要特别注意，您需要访问 `./bwdata/core/attachments` 手动将[文件附件](../../your-vault/file-attachments.md)上传到云端（**步骤 5**）。
+1、创建自托管 Bitwarden 服务器的 `./bwdata` 目录的完整备份。需要特别注意，您需要访问 `./bwdata/core/attachments` 手动将[文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)上传到云端（**步骤 5**）。
 
 {% hint style="success" %}
 如果用户在一段时间内导出了他们的个人密码库，你可能需要从 `./bwdata/core/attachments` 目录中重新同步项目到你的备份位置，并上传任何在切换期间发生变化的新项目。
@@ -75,7 +75,7 @@
 导入数据到组织将自动重新创建您的[集合](../../admin-console/manage-shared-items/collections/about-collections.md)，并将相关的密码库项目添加到其中。
 {% endhint %}
 
-5、手动将[文件附件](../../your-vault/file-attachments.md)上传到您的个人或组织密码库。
+5、手动将[文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)上传到您的个人或组织密码库。
 
 ### 下一步（仅针对组织）
 

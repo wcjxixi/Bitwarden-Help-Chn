@@ -1,4 +1,4 @@
-# Bitwarden 入门：成员
+# Bitwarden 入门：团队成员
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/get-started-team-member/)
@@ -35,7 +35,7 @@
 
 ## 了解您的密码库 <a href="#get-to-know-your-vault" id="get-to-know-your-vault"></a>
 
-Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../your-vault/vault-items.md)：
+Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../password-manager/your-vault/vault-items/vault-items.md)：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}
 Password Manager 网页 App
@@ -59,7 +59,7 @@ Password Manager 网页 App
 
 共享项目被组合成集合，团队可根据业务单元（如「销售团队」）、业务功能（如「社交媒体登录」）、系统（如「AWS 凭据」）等进行组织。
 
-了解[如何与您的团队共享凭据](../password-manager/vault-basics/organization-members/sharing.md)。
+了解[如何与您的团队共享凭据](../password-manager/organization-members/sharing.md)。
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 
@@ -106,7 +106,7 @@ iOS 和 Android 上的 Bitwarden
 
 ## 了解您的密码库 <a href="#get-to-know-your-vault" id="get-to-know-your-vault"></a>
 
-Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../your-vault/vault-items.md)：
+Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../password-manager/your-vault/vault-items/vault-items.md)：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}
 Password Manager 网页 App
@@ -130,7 +130,7 @@ Password Manager 网页 App
 
 共享项目被组合成集合，团队可根据业务单元（如「销售团队」）、业务功能（如「社交媒体登录」）、系统（如「AWS 凭据」）等进行组织。
 
-了解[如何与您的团队共享凭据](../password-manager/vault-basics/organization-members/sharing.md)。
+了解[如何与您的团队共享凭据](../password-manager/organization-members/sharing.md)。
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 
@@ -173,7 +173,7 @@ iOS 和 Android 上的 Bitwarden
 
 ## 了解您的密码库 <a href="#get-to-know-your-vault" id="get-to-know-your-vault"></a>
 
-Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../your-vault/vault-items.md)：
+Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../password-manager/your-vault/vault-items/vault-items.md)：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}
 Password Manager 网页 App
@@ -197,7 +197,7 @@ Password Manager 网页 App
 
 共享项目被组合成集合，家庭可根据谁具有访问权限的单元（如「仅限父母」）、包含的登录类型（如「流媒体登录」）等进行组织。
 
-了解[如何与您的团队共享凭据](../password-manager/vault-basics/organization-members/sharing.md)。
+了解[如何与您的团队共享凭据](../password-manager/organization-members/sharing.md)。
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 

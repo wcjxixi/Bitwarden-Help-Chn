@@ -46,7 +46,7 @@
 填充已生成的密码
 {% endembed %}
 
-使用内嵌功能时，请使用 **⟳生成**按钮生成新的密码，直到您满意为止。确保在提示时选择**新增登录**，以便将登录信息保存到 Bitwarden。[了解更多](../autofill/autofill-from/autofill-from-browser-extensions.md#inline-auto-fill-menu)。
+使用内嵌功能时，请使用 **⟳生成**按钮生成新的密码，直到您满意为止。确保在提示时选择**新增登录**，以便将登录信息保存到 Bitwarden。[了解更多](../../autofill/autofill-from/autofill-from-browser-extensions.md#inline-auto-fill-menu)。
 {% endtab %}
 
 {% tab title="桌面端" %}
@@ -88,7 +88,7 @@ bw generate -uln --length 14
 * `--minSpecial`
 * `--ambiguous`
 
-有关详细信息，请参阅 Bitwarden [CLI 文档](../developer-tools/cli/password-manager-cli.md)。
+有关详细信息，请参阅 Bitwarden [CLI 文档](../../developer-tools/cli/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -190,7 +190,7 @@ bw generate -uln --length 14
 
 选择此类型以使用您的电子邮箱提供商的子地址（也称为「附加寻址」或「别名」）功能。这将基于您指定的**电子邮箱地址**生成一个附加地址（以 `+` 和随机字符串命名）的用户名。
 
-在浏览器扩展和桌面 App 的添加/编辑项目界面，您可以选择使用**随机字符串**（例如 `alice+gsd4aqqe@bitwarden.com`）生成用户名，或基于项目的**网站名称**（例如 `alice+github.com@ bitwarden.com`）生成用户名。**电子邮箱地址**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)，在其他位置，用户名生成器默认为**随机**。
+在浏览器扩展和桌面 App 的添加/编辑项目界面，您可以选择使用**随机字符串**（例如 `alice+gsd4aqqe@bitwarden.com`）生成用户名，或基于项目的**网站名称**（例如 `alice+github.com@ bitwarden.com`）生成用户名。**电子邮箱地址**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)，在其他位置，用户名生成器默认为**随机**。
 
 {% hint style="success" %}
 **为什么要使用附加地址电子邮箱？**
@@ -202,7 +202,7 @@ bw generate -uln --length 14
 
 选择此类型以使用您的域名配置的 Catch-all 收件箱。这将在您指定的**域名**中生成一个随机的电子邮箱地址。
 
-在浏览器扩展和桌面 App 的添加/编辑项目界面，您可以选择使用**随机**（例如 `bqzjlero@gardenllc.com`）字符串生成用户名，或基于项目的**网站名称**（例如 `twitter.com@gardenllc.com`）生成用户名。**网站名称**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)，在其他位置，用户名生成器默认为**随机**。
+在浏览器扩展和桌面 App 的添加/编辑项目界面，您可以选择使用**随机**（例如 `bqzjlero@gardenllc.com`）字符串生成用户名，或基于项目的**网站名称**（例如 `twitter.com@gardenllc.com`）生成用户名。**网站名称**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)，在其他位置，用户名生成器默认为**随机**。
 
 {% hint style="success" %}
 **为什么要使用 Catch-all 电子邮件？**

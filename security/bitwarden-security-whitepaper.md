@@ -411,7 +411,7 @@ Bitwarden 提供多种安全信息和事件管理 (SIEM) 集成：
 
 ### 密码库健康报告 <a href="#vault-health-reports" id="vault-health-reports"></a>
 
-密码库健康状况报告可用于评估 Bitwarden Password Manager中存储的数据的安全性。报告，例如重复使用密码和弱密码报告，可在 Bitwarden 客户端应用程序上本地运行。这样就可以在 Bitwarden 无法访问未加密版本数据的情况下识别出违规项目。进一步了解可用的[密码库健康报告](../your-vault/vault-health-reports.md)。
+密码库健康状况报告可用于评估 Bitwarden Password Manager中存储的数据的安全性。报告，例如重复使用密码和弱密码报告，可在 Bitwarden 客户端应用程序上本地运行。这样就可以在 Bitwarden 无法访问未加密版本数据的情况下识别出违规项目。进一步了解可用的[密码库健康报告](../password-manager/your-vault/security-tools/vault-health-reports.md)。
 
 ### 中转过程中的数据保护 <a href="#data-protection-in-transit" id="data-protection-in-transit"></a>
 

@@ -8,7 +8,7 @@
 
 ## 使用网站图标 <a href="#using-website-icons" id="using-website-icons"></a>
 
-当 Bitwarden 在您的密码库中显示一个带有关联网站（参阅 [URI 的使用](../../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md)）的[登录项目](../../your-vault/vault-items.md)时，它会尝试为其附带一个图形图标。网站图标可帮助您使用可识别的图标轻松识别密码库中的特定登录项目，其通常由该网站的徽标或品牌形象表示。
+当 Bitwarden 在您的密码库中显示一个带有关联网站（参阅 [URI 的使用](../../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md)）的[登录项目](../../password-manager/your-vault/vault-items/vault-items.md)时，它会尝试为其附带一个图形图标。网站图标可帮助您使用可识别的图标轻松识别密码库中的特定登录项目，其通常由该网站的徽标或品牌形象表示。
 
 {% hint style="info" %}
 在 Android 上，自动填充菜单中的条目不会显示网站图标。

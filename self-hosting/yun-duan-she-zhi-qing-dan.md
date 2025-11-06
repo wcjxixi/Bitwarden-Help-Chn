@@ -99,7 +99,7 @@
 
 **支持链接：**
 
-* [密码库健康报告](../your-vault/vault-health-reports.md)
+* [密码库健康报告](../password-manager/your-vault/security-tools/vault-health-reports.md)
 
 ## 变更管理与培训 <a href="#change-management-and-training" id="change-management-and-training"></a>
 

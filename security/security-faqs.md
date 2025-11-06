@@ -67,7 +67,7 @@ Bitwarden 云服务器目前托管在美国和欧盟的 Microsoft Azure 上。�
 
 ### 问：在我的 Biwatrden 账户中使用了哪些第三方服务、库和标识符？ <a href="#q-what-third-party-services-libraries-or-identifiers-are-used-in-my-bitwarden-account" id="q-what-third-party-services-libraries-or-identifiers-are-used-in-my-bitwarden-account"></a>
 
-**答：**&#x5728;移动应用程序中，Firebase 云消息传递（经常被误认为是跟踪器）仅用于与[同步](../your-vault/syncing-your-vault.md)相关的推送通知，并且绝对不执行任何跟踪功能。Microsoft Visual Studio App Center 用于在一系列移动设备上进行崩溃报告。在 Web Vault 中，Stripe 和 PayPal 脚本仅用于支付页面上的支付处理。
+**答：**&#x5728;移动应用程序中，Firebase 云消息传递（经常被误认为是跟踪器）仅用于与[同步](../password-manager/your-vault/syncing-your-vault.md)相关的推送通知，并且绝对不执行任何跟踪功能。Microsoft Visual Studio App Center 用于在一系列移动设备上进行崩溃报告。在 Web Vault 中，Stripe 和 PayPal 脚本仅用于支付页面上的支付处理。
 
 对于那些喜欢排除所有第 3 方通信的用户，Firebase 和 Microsoft Visual Studio App Center 已从 [F-Droid 构建](https://bitwarden.com/download/)中完全移除。此外，关闭自托管 Bitwarden 服务器上的推送通知将禁用推送中继服务器。
 

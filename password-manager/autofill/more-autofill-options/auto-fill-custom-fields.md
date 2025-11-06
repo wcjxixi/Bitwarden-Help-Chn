@@ -4,12 +4,12 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-custom-fields/)
 {% endhint %}
 
-Bitwarden 可以做的不仅仅是[自动填充您的用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！Bitwarden 浏览器扩展还可以自动填充[自定义字段](../../../your-vault/custom-fields.md)，以简化安全问题、PIN 等的填充。
+Bitwarden 可以做的不仅仅是[自动填充您的用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！Bitwarden 浏览器扩展还可以自动填充[自定义字段](../../your-vault/vault-items/custom-fields.md)，以简化安全问题、PIN 等的填充。
 
 此外，如果您的浏览器扩展在自动填充特定站点的用户名和密码时遇到问题，使用[链接型自定义字段](auto-fill-custom-fields.md#shi-yong-lian-jie-de-zi-ding-yi-zi-duan)可以强制自动填充。
 
 {% hint style="success" %}
-要使自动填充起作用，对自定义字段正确命名很重要。[了解更多](../../../your-vault/custom-fields.md#custom-field-names)。
+要使自动填充起作用，对自定义字段正确命名很重要。[了解更多](../../your-vault/vault-items/custom-fields.md#custom-field-names)。
 {% endhint %}
 
 要自动填充自定义字段：
@@ -22,7 +22,7 @@ Bitwarden 可以做的不仅仅是[自动填充您的用户名和密码](../auto
 带有自定义字段的项目
 {% endembed %}
 
-浏览器扩展将查找与[自定义字段名称](../../../your-vault/custom-fields.md#custom-field-names)匹配的任何字段并自动填充该字段的值。
+浏览器扩展将查找与[自定义字段名称](../../your-vault/vault-items/custom-fields.md#custom-field-names)匹配的任何字段并自动填充该字段的值。
 
 ## 使用链接型自定义字段 <a href="#using-linked-custom-fields" id="using-linked-custom-fields"></a>
 
@@ -30,7 +30,7 @@ Bitwarden 可以做的不仅仅是[自动填充您的用户名和密码](../auto
 
 1、在项目**编辑**面板的**自定义字段**部分，从字段类型下拉菜单中选择链接型。
 
-2、在**名称**输入框中，[为自定义字段指定一个名称](../../../your-vault/custom-fields.md#custom-field-names)，使其与用户名或密码的 HTML 表单元素 `id`，`name`，`aria-label` 或 `placeholder` 相对应。
+2、在**名称**输入框中，[为自定义字段指定一个名称](../../your-vault/vault-items/custom-fields.md#custom-field-names)，使其与用户名或密码的 HTML 表单元素 `id`，`name`，`aria-label` 或 `placeholder` 相对应。
 
 {% hint style="success" %}
 您可以通过右键单击表单元素然后使用**复制自定义字段名称**上下文菜单选项来获取其正确的值：

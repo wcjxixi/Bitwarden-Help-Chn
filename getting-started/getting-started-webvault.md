@@ -14,7 +14,7 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 Bitwarden 网页 App
 {% endembed %}
 
-当您首次登录网页 App 时，您将进入**密码库**视图。此空间将列出您的所有密码库项目，包括[登录信息、支付卡、身份和安全笔记](../your-vault/vault-items.md)。
+当您首次登录网页 App 时，您将进入**密码库**视图。此空间将列出您的所有密码库项目，包括[登录信息、支付卡、身份和安全笔记](../password-manager/your-vault/vault-items/vault-items.md)。
 
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
 
@@ -22,7 +22,7 @@ Bitwarden 网页 App
 
 让我们设置一个新的文件夹并向其添加一个新的登录项目来作为开始：
 
-### 创建一个文件夹 <a href="#create-a-folder" id="create-a-folder"></a>
+### 创建文件夹 <a href="#create-a-folder" id="create-a-folder"></a>
 
 要创建文件夹：
 
@@ -35,10 +35,10 @@ Bitwarden 网页 App
 2、为您的文件夹输入一个名称（例如 `Important Logins`），然后选择**保存**。
 
 {% hint style="success" %}
-为了使密码库更清爽，您可以[将文件夹嵌套在其他文件夹中](../your-vault/folders.md#nested-folders)。
+为了使密码库更清爽，您可以[将文件夹嵌套在其他文件夹中](../password-manager/your-vault/vault-items/folders.md#nested-folders)。
 {% endhint %}
 
-### 添加一个登录 <a href="#add-a-login" id="add-a-login"></a>
+### 添加登录 <a href="#add-a-login" id="add-a-login"></a>
 
 要添加一个新的登录项目：
 
@@ -60,7 +60,7 @@ Bitwarden 网页 App
 
 7、干得好！选择**保存**按钮完成添加此项目。
 
-### 生成一个强密码 <a href="#generate-a-strong-password" id="generate-a-strong-password"></a>
+### 生成强密码 <a href="#generate-a-strong-password" id="generate-a-strong-password"></a>
 
 现在新的登录项目已保存在您的密码库中，您可以使用用更强的密码替换现有的密码来增强其安全性：
 
@@ -87,9 +87,7 @@ Bitwarden 网页 App
 6、使用您之前使用的相同的 **❐复制**图标复制您的新密码，然后点击**保存**按钮。
 
 {% hint style="info" %}
-不用担心会覆盖您现有的密码！如果出现问题，Bitwarden 会为每个登录项目维护最近五个密码的**密码历史记录**：
-
-<img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/RT3R5a33WrejA8qnIcmqa/7600909424c7c74ac3b6b5fa76ae42ea/2024-12-02_13-56-29.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
+不用担心会覆盖您现有的密码！如果出现问题，Bitwarden 会为每个登录项目保存最近五个密码的[**密码历史记录**](../password-manager/your-vault/security-tools/password-and-generator-history.md#password-history)。
 {% endhint %}
 
 7、返回到刚才的网站，然后将您的强密码粘贴到**新密码**和**确认新密码**字段中。
@@ -156,10 +154,10 @@ Bitwarden 网页 App
 对于个人用户，我们提供 **10 美元/年**的高级订阅，可解锁高级密码库功能，包括：
 
 * 高级两步登录选项，例如 [Duo](../account/two-step-login/setup-guides/two-step-login-via-duo.md) 和 [YubiKey 安全钥匙](../account/two-step-login/setup-guides/two-step-login-via-yubikey.md)
-* [加密文件附件](../your-vault/file-attachments.md)的存储空间
-* 集成的[临时一次性密码（TOTP）身份验证器](../your-vault/totp.md)
+* [加密文件附件](../password-manager/your-vault/vault-items/file-attachments.md)的存储空间
+* 集成的[临时一次性密码（TOTP）身份验证器](../password-manager/your-vault/security-tools/totp.md)
 * 通过受信任的紧急联系人[紧急访问](../account/log-in-and-unlock/more-log-in-options/emergency-access.md)您的密码库
-* 报告密码和安全卫生的[密码库健康报告](../your-vault/vault-health-reports.md)
+* 报告密码和安全卫生的[密码库健康报告](../password-manager/your-vault/security-tools/vault-health-reports.md)
 
 要开始高级订阅，请从**密码库**视图中选择**成为高级会员**按钮！
 

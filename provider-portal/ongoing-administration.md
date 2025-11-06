@@ -24,16 +24,16 @@
 提供商用户不能再直接查看、管理、创建或导出客户组织密码库中的项目。但提供商用户可以直接向客户组织导入密码库数据。
 {% endhint %}
 
-| 工作内容         | 描述                                  | 资源                                                                                                                                                                                  |
-| ------------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 添加和移除用户      | 当他们加入或离开客户的组织时，从 Bitwarden 入职和离职用户。 | <p><a href="../admin-console/manage-members/user-management.md#onboard-users">用入职用户</a><br><a href="../admin-console/manage-members/user-management.md#offboard-users">离职用户</a></p> |
-| 更改用户权限       | 当最终用户更改角色时，根据需要更改他们的权限。             | [用户类型和访问控制](../admin-console/manage-members/member-roles.md)                                                                                                                        |
-| 添加和移除用户席位    | 随着客户业务的增长，管理客户组织的用户席位的数量。           | [管理用户席位](../admin-console/manage-members/user-management.md#manage-user-seats)                                                                                                      |
-| 重置用户主密码      | 如果启用，请使用管理员密码重置来恢复忘记主密码的最终用户帐户。     | [管理员密码重置](../admin-console/manage-members/account-recovery/about-account-recovery.md)                                                                                               |
-| 创建 & 共享密码库项目 | 当用户需要访问新系统时，即时添加和共享新的密码库项目。         | [共享](../password-manager/vault-basics/organization-members/sharing.md)                                                                                                              |
-| 安全的一次性共享     | 使用 Bitwarden 安全地一次性共享凭证、文档等。        | [创建 Send](../bitwarden-send/create-a-send.md)                                                                                                                                       |
-| 监控密码库健康      | 使用组织密码库健康报告和事件日志来密切关注客户组织的整体健康状况。   | <p><a href="../your-vault/vault-health-reports.md">密码库健康报告</a></p><p><a href="../admin-console/oversight-visibility/event-logging/event-logs.md">事件日志</a></p>                       |
-| 管理计费         | 如果需要，更改客户组织的计费信息。                   | [更新计费信息](../plans-and-pricing/update-your-billing-information.md)                                                                                                                   |
+| 工作内容         | 描述                                  | 资源                                                                                                                                                                                            |
+| ------------ | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 添加和移除用户      | 当他们加入或离开客户的组织时，从 Bitwarden 入职和离职用户。 | <p><a href="../admin-console/manage-members/user-management.md#onboard-users">用入职用户</a><br><a href="../admin-console/manage-members/user-management.md#offboard-users">离职用户</a></p>           |
+| 更改用户权限       | 当最终用户更改角色时，根据需要更改他们的权限。             | [用户类型和访问控制](../admin-console/manage-members/member-roles.md)                                                                                                                                  |
+| 添加和移除用户席位    | 随着客户业务的增长，管理客户组织的用户席位的数量。           | [管理用户席位](../admin-console/manage-members/user-management.md#manage-user-seats)                                                                                                                |
+| 重置用户主密码      | 如果启用，请使用管理员密码重置来恢复忘记主密码的最终用户帐户。     | [管理员密码重置](../admin-console/manage-members/account-recovery/about-account-recovery.md)                                                                                                         |
+| 创建 & 共享密码库项目 | 当用户需要访问新系统时，即时添加和共享新的密码库项目。         | [共享](../password-manager/organization-members/sharing.md)                                                                                                                                     |
+| 安全的一次性共享     | 使用 Bitwarden 安全地一次性共享凭证、文档等。        | [创建 Send](../bitwarden-send/create-a-send.md)                                                                                                                                                 |
+| 监控密码库健康      | 使用组织密码库健康报告和事件日志来密切关注客户组织的整体健康状况。   | <p><a href="../password-manager/your-vault/security-tools/vault-health-reports.md">密码库健康报告</a></p><p><a href="../admin-console/oversight-visibility/event-logging/event-logs.md">事件日志</a></p> |
+| 管理计费         | 如果需要，更改客户组织的计费信息。                   | [更新计费信息](../plans-and-pricing/update-your-billing-information.md)                                                                                                                             |
 
 此外，**如果您的服务用户帮助培训客户的最终用户使用 Bitwarden**，以下资源可能会有所帮助：
 

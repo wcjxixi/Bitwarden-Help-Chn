@@ -89,7 +89,7 @@ Bitwarden Authenticator 是一款移动身份验证 App，您可以用它在使�
 使用 Bitwarden 两步登录
 {% endembed %}
 
-有关使用集成身份验证的帮助，请参阅[这篇文章](../../your-vault/totp.md)。
+有关使用集成身份验证的帮助，请参阅[这篇文章](../../password-manager/your-vault/security-tools/totp.md)。
 
 ### 什么时候我应该使用独立的 App 而不是集成的身份验证器？
 
@@ -112,5 +112,5 @@ YubiKey 设备是一种与 FIDO 身份验证协议配合使用的安全密钥，
 
 * [设置两步登录](setup-guides/two-step-login-methods.md)
 * [获取高级会员以使用高级两步登录方式](https://vault.bitwarden.com/#/?premium=purchase)
-* [设置 Bitwarden authenticator](../../your-vault/totp.md)
+* [设置 Bitwarden authenticator](../../password-manager/your-vault/security-tools/totp.md)
 * [为团队和企业设置两步登录](setup-guides/two-step-login-methods.md#two-step-login-for-teams-and-enterprise)

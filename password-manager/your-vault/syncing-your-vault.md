@@ -4,13 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/vault-sync/)
 {% endhint %}
 
-通过任何 Bitwarden App 添加、编辑或删除[密码库项目](vault-items.md)后，都会自动推送更改到您的 Bitwarden 服务器，无论是云托管还是自托管。
+通过任何 Bitwarden App 添加、编辑或删除[密码库项目](vault-items/vault-items.md)后，都会自动推送更改到您的 Bitwarden 服务器，无论是云托管还是自托管。
 
 为了将这些更改拉取到另一个 Bitwarden App，您的密码库将需要同步。
 
 ## 自动同步 <a href="#automatic-sync" id="automatic-sync"></a>
 
-您的个人[网页密码库](../getting-started/getting-started-webvault.md)拥有的项目将始终保持同步。组织拥有的项目将跨用户和客户端应用程序每 30 分钟自动同步一次。
+您的个人[网页密码库](../../getting-started/getting-started-webvault.md)拥有的项目将始终保持同步。组织拥有的项目将跨用户和客户端应用程序每 30 分钟自动同步一次。
 
 Bitwarden App（桌面 App、浏览器扩展、移动 App 和 CLI）将在登录时自动同步，并在解锁时定期同步。您也可以[手动同步](syncing-your-vault.md#what-is-vault-syncing-1)您的密码库，以立即拉取更改。
 
@@ -37,7 +37,7 @@ Bitwarden App（桌面 App、浏览器扩展、移动 App 和 CLI）将在登录
 从菜单栏选择**文件** → **同步密码库**。
 
 {% hint style="info" %}
-只有[当前活动的账户](../account/log-in-and-unlock/more-log-in-options/account-switching.md)会同步，但即使密码库被锁定，账户也能被同步。
+只有[当前活动的账户](../../account/log-in-and-unlock/more-log-in-options/account-switching.md)会同步，但即使密码库被锁定，账户也能被同步。
 {% endhint %}
 {% endtab %}
 
@@ -48,7 +48,7 @@ Bitwarden App（桌面 App、浏览器扩展、移动 App 和 CLI）将在登录
 bw sync
 ```
 
-更多详情，请参阅 Bitwarden [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
+更多详情，请参阅 Bitwarden [CLI 文档](../developer-tools/cli/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 

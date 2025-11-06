@@ -46,10 +46,10 @@
 
 ## 第 2 步：设置您的组织 <a href="#step-2-setup-your-organization" id="step-2-setup-your-organization"></a>
 
-Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../password-manager/vault-basics/organization-members/sharing.md)登录、笔记、支付卡和身份。
+Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../password-manager/organization-members/sharing.md)登录、笔记、支付卡和身份。
 
 {% hint style="success" %}
-最佳的做法是，首先创建一个组织，然后直接[向组织导入数据](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)，而不是先向个人账户导入数据，然后再将[移动项目](../password-manager/vault-basics/organization-members/sharing.md)到组织。
+最佳的做法是，首先创建一个组织，然后直接[向组织导入数据](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)，而不是先向个人账户导入数据，然后再将[移动项目](../password-manager/organization-members/sharing.md)到组织。
 {% endhint %}
 
 1、**创建您的组织**。从创建组织开始。要了解如何操作，请查看[这篇文章](../admin-console/organizations-overview.md#create-an-organization)。
@@ -93,7 +93,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 
 5、选择**导入数据**触发导入。
 
-目前，文件附件不包含在 Bitwarden 导入操作中，需要手动上传到您的密码库。更多信息，请参阅[文件附件](../your-vault/file-attachments.md)。
+目前，文件附件不包含在 Bitwarden 导入操作中，需要手动上传到您的密码库。更多信息，请参阅[文件附件](../password-manager/your-vault/vault-items/file-attachments.md)。
 
 {% hint style="success" %}
 您还应该建议员工从您现有的密码管理器中导出他们的个人数据，并准备将其导入 Bitwarden。在[此处](../import-export/)了解更多信息。

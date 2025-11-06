@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/integrated-authenticator/)
 {% endhint %}
 
-Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 等专用身份验证 App 的替代解决方案，您可以使用它来验证使用两步登录的网站和 App 的身份。集成身份验证使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTP)，每 30 秒轮换一次。
+Password Manager 集成身份验证是 [Bitwarden Authenticator](../../../bitwarden-authenticator/bitwarden-authenticator.md) 等专用身份验证 App 的替代解决方案，您可以使用它来验证使用两步登录的网站和 App 的身份。集成身份验证使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTP)，每 30 秒轮换一次。
 
 {% hint style="info" %}
 密钥存储适用于所有账户。但 TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企业）成员资格。
@@ -16,7 +16,7 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../bitwarden-au
 > Bitwarden 的 TOTP 相当于 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) 等专用验证器 App。对于支持两步验证的网站或服务，你可以使用专用验证器 App 生成验证码，也可以使用 Bitwarden 的 TOTP 生成验证码。
 {% endhint %}
 
-如果您不熟悉用于两步登录的 TOTP 的使用，请参阅[两步登录现场指南](../account/two-step-login/field-guide-for-two-step-login.md)以了解更多信息。
+如果您不熟悉用于两步登录的 TOTP 的使用，请参阅[两步登录现场指南](../../../account/two-step-login/field-guide-for-two-step-login.md)以了解更多信息。
 
 ## 生成 TOTP 代码 <a href="#generate-totp-codes" id="generate-totp-codes"></a>
 
@@ -156,7 +156,7 @@ otpauth://totp/Test:me?secret=JBSWY3DPEHPK3PXP&algorithm=sha256&digits=8&period=
 
 ## 在 iOS 上设置为默认 <a href="#set-a-default-on-ios" id="set-a-default-on-ios"></a>
 
-运行 iOS 16+ 的 iOS 用户可以将任何应用程序设置为直接从相机 App 扫描代码时存储验证码的默认应用程序，包括 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md) 和 Password Manager [集成身份验证](totp.md)。要进行此设置：
+运行 iOS 16+ 的 iOS 用户可以将任何应用程序设置为直接从相机 App 扫描代码时存储验证码的默认应用程序，包括 [Bitwarden Authenticator](../../../bitwarden-authenticator/bitwarden-authenticator.md) 和 Password Manager [集成身份验证](totp.md)。要进行此设置：
 
 1. 在您的设备上打开 iOS **设置** App。
 2. 点击**通用**。

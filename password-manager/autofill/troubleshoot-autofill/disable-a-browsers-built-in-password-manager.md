@@ -45,7 +45,7 @@ Firefox 密码选项
 {% endembed %}
 
 {% hint style="success" %}
-Bitwarden Password Manager 为高级用户提供各种[报告](../../../your-vault/vault-health-reports.md)，如「泄露密码」报告和「重复使用的密码」报告，并**为所有用户提供免费的数据泄露报告**。
+Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/security-tools/vault-health-reports.md)，如「泄露密码」报告和「重复使用的密码」报告，并**为所有用户提供免费的数据泄露报告**。
 {% endhint %}
 
 您还可以通过选择**已保存的登录信息...** 按钮来了解 Firefox 已经保存了哪些登录信息：

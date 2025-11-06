@@ -29,7 +29,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 ## 了解密码库 <a href="#get-to-know-your-vault" id="get-to-know-your-vault"></a>
 
-Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../your-vault/vault-items.md)：
+Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../password-manager/your-vault/vault-items/vault-items.md)：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}
 Password Manager 网页 App

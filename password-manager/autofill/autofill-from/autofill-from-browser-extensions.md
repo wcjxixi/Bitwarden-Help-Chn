@@ -125,7 +125,7 @@ TOTP 内嵌自动填充单次登录
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2JcceqWgFbk4ViLCMe6qm5/ce116e8ff337f90fbbd57b52aa15fdcd/2024-11-05_10-07-08.png?_a=DAJCwlWIZAAB" %}
 
 {% hint style="success" %}
-该选项将使用您在浏览器扩展的**生成器**选项卡中配置的设置。了解[如何更改这些设置](../../vault-basics/generator.md#password-types)。
+该选项将使用您在浏览器扩展的**生成器**选项卡中配置的设置。了解[如何更改这些设置](../../your-vault/security-tools/generator.md#password-types)。
 {% endhint %}
 
 3、**在点击「注册」或「创建账户」提交表单之前**，内嵌自动填充菜单将提供在 ✚**新增登录**中保存此信息的选项。使用该选项可在弹出窗口中打开 Bitwarden，然后选择**保存**按钮保存生成的凭证：
@@ -165,7 +165,7 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为热键）来�
 * Linux：`Ctrl + Shift + L`
 
 {% hint style="success" %}
-如果登录使用 [Bitwarden 验证器](../../../your-vault/totp.md) TOTP，使用 `Cmd/Ctrl+Shift+L` 在自动填充后会自动将你的 TOTP 复制到剪贴板。您要做的就是使用 `Cmd/Ctrl+V` 来粘贴！
+如果登录使用 [Bitwarden 验证器](../../your-vault/security-tools/totp.md) TOTP，使用 `Cmd/Ctrl+Shift+L` 在自动填充后会自动将你的 TOTP 复制到剪贴板。您要做的就是使用 `Cmd/Ctrl+V` 来粘贴！
 {% endhint %}
 
 如果任何已指定的快捷键不能使用，很可能是因为你的设备上的另一个应用程序已经占用了它。例如，Windows 上的自动填充快捷键通常被 AMD Radeon Adrenaline 软件（AMD 图形驱动程序）使用，因此不能被 Bitwarden 使用。在这种情况下，您应该释放该快捷键，或者配置 Bitwarden 使用其他快捷键。
@@ -219,7 +219,7 @@ Bitwarden 浏览器扩展提供了一组键盘快捷键（又称为热键）来�
 
 ## TOTP 自动填充 <a href="#totp-auto-fill" id="totp-auto-fill"></a>
 
-如果您使用 [Bitwarden 验证器](../../../your-vault/totp.md)，浏览器扩展将自动填充您的 TOTP 代码，前提是您使用上下文菜单、键盘快捷键或手动自动填充。您也可以使用内嵌自动填充菜单来填写 TOTP 代码。**如果您在页面加载时使用自动填充功能，浏览器扩展程序将不会自动填写您的 TOTP 代码**。
+如果您使用 [Bitwarden 验证器](../../your-vault/security-tools/totp.md)，浏览器扩展将自动填充您的 TOTP 代码，前提是您使用上下文菜单、键盘快捷键或手动自动填充。您也可以使用内嵌自动填充菜单来填写 TOTP 代码。**如果您在页面加载时使用自动填充功能，浏览器扩展程序将不会自动填写您的 TOTP 代码**。
 
 默认情况下，自动填充登录信息时，您的 TOTP 也会被复制到剪贴板。如果您使用页面加载时自动填充功能，这是推荐的工作流程。
 

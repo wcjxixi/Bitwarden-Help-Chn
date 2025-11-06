@@ -38,7 +38,7 @@
 
 4、输入并确认您的**新主密码**。
 
-5、如果您想在提交主密码之前通过 HIBP 检查您的主密码，请选中**检查密码的已知数据泄露**（[了解更多](../../your-vault/vault-health-reports.md#data-breach-report-individual-vaults-only)）复选框。要运行此报告，您的主密码的哈希值将发送到 HIBP，并与存储的公开哈希值进行比较。 Bitwarden 永远不会暴露您的主密码本身。
+5、如果您想在提交主密码之前通过 HIBP 检查您的主密码，请选中**检查密码的已知数据泄露**（[了解更多](../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-report-individual-vaults-only)）复选框。要运行此报告，您的主密码的哈希值将发送到 HIBP，并与存储的公开哈希值进行比较。 Bitwarden 永远不会暴露您的主密码本身。
 
 {% hint style="warning" %}
 除非您完全了解其后果和所需的后续步骤，否则请不要选中**同时轮换账户加密密钥**复选框。[了解更多](../../security/encryption/encryption-key-rotation.md)。

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/apple-watch-totp/)
 {% endhint %}
 
-我们的 Password Manager 的[集成验证器功能](../your-vault/totp.md)现在可以在 Apple Watch 上使用。Bitwarden 高级会员或付费组织的成员现在将有一个额外的选项来访问基于时间的一次性密码 (TOTP) 代码。Apple Watch Bitwarden 将显示存储有种子的密码库项目的 TOTP 代码，以便在登录受 TOTP 保护的账户时更容易访问。
+我们的 Password Manager 的[集成验证器功能](../password-manager/your-vault/security-tools/totp.md)现在可以在 Apple Watch 上使用。Bitwarden 高级会员或付费组织的成员现在将有一个额外的选项来访问基于时间的一次性密码 (TOTP) 代码。Apple Watch Bitwarden 将显示存储有种子的密码库项目的 TOTP 代码，以便在登录受 TOTP 保护的账户时更容易访问。
 
 {% hint style="info" %}
 TOTP 验证码的生成要求 Bitwarden 高级会员或付费组织（家庭、团队或企业）的高级成员资格。[此处](../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-personal-plans)详细了解每种计划的详细信息。
@@ -38,7 +38,7 @@ Families 2019 不再向该计划的用户提供个人高级会员资格。[此�
 
 ## 启用 TOTP <a href="#enabling-totp" id="enabling-totp"></a>
 
-如果您还不熟悉为密码库项目启用 TOTP 代码，请参阅[此处](../your-vault/totp.md#generate-totp-codes)。如果没有项目有 TOTP 设置，Apple Watch 将显示此界面：
+如果您还不熟悉为密码库项目启用 TOTP 代码，请参阅[此处](../password-manager/your-vault/security-tools/totp.md#generate-totp-codes)。如果没有项目有 TOTP 设置，Apple Watch 将显示此界面：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/28ELSN09aicT7i20KcFekH/6a062e0391357ae18abcf60cf819db06/2fa.png?_a=DAJCwlWIZAAB" %}
 Apple Watch 添加 2FA 界面

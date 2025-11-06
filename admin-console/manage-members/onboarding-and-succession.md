@@ -44,13 +44,13 @@ Bitwarden 客户端/服务器
 
 ### 用户个人密码库 <a href="#users-personal-vaults" id="users-personal-vaults"></a>
 
-创建 Bitwarden 账户的任何人都将拥有自己的个人密码库，可以从任何客户端应用程序访问。个人密码库对每个用户都是唯一的，并且只有该用户拥有访问它的钥匙，使用他们的电子邮箱地址和主密码的组合。账户所有者对个人账户以及存储在其中的个人[密码库项目](../../your-vault/vault-items.md)负责。组织[所有者、管理员和经理](member-roles.md)在设计上无法看到任何其他用户的个人密码库，从而确保某人的个人数据仍然属于他们自己。
+创建 Bitwarden 账户的任何人都将拥有自己的个人密码库，可以从任何客户端应用程序访问。个人密码库对每个用户都是唯一的，并且只有该用户拥有访问它的钥匙，使用他们的电子邮箱地址和主密码的组合。账户所有者对个人账户以及存储在其中的个人[密码库项目](../../password-manager/your-vault/vault-items/vault-items.md)负责。组织[所有者、管理员和经理](member-roles.md)在设计上无法看到任何其他用户的个人密码库，从而确保某人的个人数据仍然属于他们自己。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/211wU2Nguupsr80j2vCSRz/d157eca06fe478049a3386cbe5b7ce56/bitwarden-individual-personal-vault.png?fm=webp&h=285&q=50&w=920" %}
 个人了密码库
 {% endembed %}
 
-家庭、团队和企业组织自动为成员单独提供高级功能，如[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)和[加密附件存储](../../your-vault/file-attachments.md)，他们可以选择性使用。个人密码库仅仅是**个人**的，但个人密码库不支持共享，[组织密码库则可以](onboarding-and-succession.md#bitwarden-organizations)。
+家庭、团队和企业组织自动为成员单独提供高级功能，如[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)和[加密附件存储](../../password-manager/your-vault/vault-items/file-attachments.md)，他们可以选择性使用。个人密码库仅仅是**个人**的，但个人密码库不支持共享，[组织密码库则可以](onboarding-and-succession.md#bitwarden-organizations)。
 
 {% hint style="success" %}
 **为什么默认提供个人密码库？**
@@ -84,7 +84,7 @@ Bitwarden 组织为您的团队或企业的密码管理添加了一层协作和�
 
 Bitwarden 组织以可扩展且安全的方式管理用户和数据。单独管理用户和数据对于大型企业来说效率低下，并且可能会出现错误。为了解决这个问题，组织提供了集合和[群组](onboarding-and-succession.md#collections)功能。
 
-**集合**将登录、笔记、支付卡和身份收集在一起，以便在组织内[安全共享](../../password-manager/vault-basics/organization-members/sharing.md)：
+**集合**将登录、笔记、支付卡和身份收集在一起，以便在组织内[安全共享](../../password-manager/organization-members/sharing.md)：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3dkYfn5K3E4t3Ts3Rs5At0/02954064a4a43a626f03fc9746db4006/collections-graphic-1.png?fm=webp&h=140&q=50&w=509" %}
 集合的使用

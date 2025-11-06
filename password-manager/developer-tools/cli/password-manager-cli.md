@@ -463,7 +463,7 @@ bw list org-collections --organizationid 4016326f-98b6-42ff-b9fc-ac63014988f5
 **2021 年 8 月**：`share` 命令已被更改为 `move`。[了解更多](../../../release-notes.md)。
 {% endhint %}
 
-`move` 命令用于将密码库项目[转移到组织](../../vault-basics/organization-members/sharing.md)：
+`move` 命令用于将密码库项目[转移到组织](../../organization-members/sharing.md)：
 
 ```batch
 bw move <itemid> <organizationid> [encodedJson]
@@ -822,7 +822,7 @@ CLI 不支持 FIDO2 和 Duo。
 
 #### 项目类型 <a href="#item-types" id="item-types"></a>
 
-与 `create` 命令一起使用以指定[项目的类型](../../../your-vault/vault-items.md)：
+与 `create` 命令一起使用以指定[项目的类型](../../your-vault/vault-items/vault-items.md)：
 
 | 名称   | 值 |
 | ---- | - |
@@ -846,7 +846,7 @@ CLI 不支持 FIDO2 和 Duo。
 
 #### 字段类型 <a href="#field-types" id="field-types"></a>
 
-与 `create` 和 `edit` 命令一起使用以配置[自定义字段](../../../your-vault/custom-fields.md)：
+与 `create` 和 `edit` 命令一起使用以配置[自定义字段](../../your-vault/vault-items/custom-fields.md)：
 
 | 名称  | 值 |
 | --- | - |

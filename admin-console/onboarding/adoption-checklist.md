@@ -79,7 +79,7 @@
 
 **支持链接：**
 
-* [成员访问报告](../../your-vault/vault-health-reports.md#member-access)
+* [成员访问报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#member-access)
 
 ## 故障排除和持续改进 <a href="#troubleshooting-and-continuous-improvement" id="troubleshooting-and-continuous-improvement"></a>
 
@@ -91,7 +91,7 @@
 
 支持链接：
 
-* [成员访问报告](../../your-vault/vault-health-reports.md#member-access)
+* [成员访问报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#member-access)
 
 ## 战略安全调整 <a href="#strategic-security-alignment" id="strategic-security-alignment"></a>
 

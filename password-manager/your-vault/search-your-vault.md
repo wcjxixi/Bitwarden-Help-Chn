@@ -10,8 +10,8 @@
 
 * 如果选择了**所有项目**，检索将检查所有密码库项目以获取结果。
 * 如果选择的类型为**登录**，检索将检查所有登录项目以获取结果。
-* 如果选择了**我的文件夹**，检索将检查该文件夹中的项目以获取结果（不包括[嵌套文件夹](folders.md)中的项目）。
-* 如果选择了**集合**，检索将检查所选集合以获取结果（不包括[嵌套集合](../admin-console/manage-shared-items/collections/about-collections.md#nested-collections)中的项目）。
+* 如果选择了**我的文件夹**，检索将检查该文件夹中的项目以获取结果（不包括[嵌套文件夹](vault-items/folders.md)中的项目）。
+* 如果选择了**集合**，检索将检查所选集合以获取结果（不包括[嵌套集合](../../admin-console/manage-shared-items/collections/about-collections.md#nested-collections)中的项目）。
 
 检索框中的占位符文本将转换为指示当前检索的位置：
 

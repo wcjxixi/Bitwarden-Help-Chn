@@ -8,7 +8,7 @@
 
 {% tabs %}
 {% tab title="登录" %}
-登录常用于存储用户名和密码的组合，并支持针对高级用户的 [TOTP 种子](totp.md)。无论您使用的是何种计划，我们都建议为每个登录提供一个[用于方便自动填充的 URI](../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md)：
+登录常用于存储用户名和密码的组合，并支持针对高级用户的 [TOTP 种子](../security-tools/totp.md)。无论您使用的是何种计划，我们都建议为每个登录提供一个[用于方便自动填充的 URI](../../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)：
 
 {% embed url="https://bitwarden.com/assets/5VGRnEvX53BOXa9CCgrhRx/4bde2d7970e8db93c40156d4636cd28b/web_item_view.png?w=1200&fm=avif&q=80" %}
 登录项目
@@ -41,7 +41,7 @@
 {% endtabs %}
 
 {% hint style="success" %}
-您可以从大多数密码管理器或网页浏览器将项目直接导入到您的密码库。[了解更多](../password-manager/import-and-export/import-data.md)。
+您可以从大多数密码管理器或网页浏览器将项目直接导入到您的密码库。[了解更多](../../import-and-export/import-data.md)。
 {% endhint %}
 
 ## 个人和组织密码库 <a href="#individual-and-organizational-vaults" id="individual-and-organizational-vaults"></a>
@@ -91,7 +91,7 @@
 {% endtab %}
 
 {% tab title="CLI" %}
-使用带有 `--organizationid` 选项（组织标识符或 `null`）的 `bw list` 命令，按密码库列出项目。[了解更多](../bitwarden-send/send-from-cli.md#list)。
+使用带有 `--organizationid` 选项（组织标识符或 `null`）的 `bw list` 命令，按密码库列出项目。[了解更多](../../../bitwarden-send/send-from-cli.md#list)。
 {% endtab %}
 {% endtabs %}
 
@@ -129,7 +129,7 @@
 {% endtab %}
 
 {% tab title="CLI" %}
-更多信息，请参阅 [CLI 文档](../password-manager/developer-tools/cli/password-manager-cli.md)。
+更多信息，请参阅 [CLI 文档](../../developer-tools/cli/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -139,7 +139,7 @@
 
 如果您想创建一个项目的副本，您可以克隆对其具有**所有权**的任何密码库项目：
 
-如果您想复制您拥有所有权的任何项目，您可以克隆该项目。克隆组织所拥有的项目只能由所有者、管理员和具有[**可以管理**](../admin-console/manage-shared-items/collections/collection-settings.md#collection-management-settings)权限的用户从网页 App 的[管理控制台](../admin-console/organizations-quick-start.md)或从密码库视图进行：
+如果您想复制您拥有所有权的任何项目，您可以克隆该项目。克隆组织所拥有的项目只能由所有者、管理员和具有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-settings.md#collection-management-settings)权限的用户从网页 App 的[管理控制台](../../../admin-console/organizations-quick-start.md)或从密码库视图进行：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -161,17 +161,17 @@
 
 ### 分配到集合 <a href="#assign-to-collections" id="assign-to-collections"></a>
 
-如果您是[组织](../admin-console/organizations-overview.md)的成员，您可以将密码库项目分配到组织的集合中，从而将密码库项目的所有权转移给该组织。要与其他组织成员共享，请使用 **≡** 菜单：
+如果您是[组织](../../../admin-console/organizations-overview.md)的成员，您可以将密码库项目分配到组织的集合中，从而将密码库项目的所有权转移给该组织。要与其他组织成员共享，请使用 **≡** 菜单：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/stm9byteqzZn9dvqonHrc/0da481b0cf1f54457d08ae02fd917377/2024-12-02_14-33-34.png?_a=DAJCwlWIZAAB" %}
 分配到集合
 {% endembed %}
 
-了解更多关于[组织](../admin-console/organizations-overview.md)、[集合](../admin-console/manage-shared-items/collections/about-collections.md)和[共享](../password-manager/vault-basics/organization-members/sharing.md)的信息。
+了解更多关于[组织](../../../admin-console/organizations-overview.md)、[集合](../../../admin-console/manage-shared-items/collections/about-collections.md)和[共享](../../organization-members/sharing.md)的信息。
 
 ### 保护个人项目 <a href="#protect-individual-items" id="protect-individual-items"></a>
 
-对于任何项目，您可以从添加/编辑界面激活**主密码重新提示**选项，以要求验证您的[主密码](../account/log-in-and-unlock/your-master-password.md)以访问或自动填充敏感的密码库项目：
+对于任何项目，您可以从添加/编辑界面激活**主密码重新提示**选项，以要求验证您的[主密码](../../../account/log-in-and-unlock/your-master-password.md)以访问或自动填充敏感的密码库项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/sgKb0RX5hGdrdKLmXcR0R/f78654839e18b3f474dd3e95ed0d203c/2024-12-02_14-38-06.png?_a=DAJCwlWIZAAB" %}
 主密码重新提示
@@ -182,7 +182,7 @@
 * 在网页 App 中，访问或编辑启用了此功能的密码库项目的任何内容都将要求您重新输入主密码。
 * 在浏览器扩展、桌面 App 和移动 App 上，仅查看隐藏字段（例如密码、隐藏的自定义字段、信用卡号）将需要您重新输入主密码。编辑有关该项目的任何内容也需要您重新输入主密码。
 
-没有主密码的用户（例如，使用[受信任设备 SSO](../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 或 [Key Connector](../self-hosting/key-connector/about-key-connector.md) 的组织中的用户）将禁用主密码重新提示。此外，使用[紧急访问](../account/log-in-and-unlock/more-log-in-options/emergency-access.md#use-emergency-access)的受信任联系人无需重新输入主密码即可查看受保护的密码库项目。
+没有主密码的用户（例如，使用[受信任设备 SSO](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 的组织中的用户）将禁用主密码重新提示。此外，使用[紧急访问](../../../account/log-in-and-unlock/more-log-in-options/emergency-access.md#use-emergency-access)的受信任联系人无需重新输入主密码即可查看受保护的密码库项目。
 
 {% hint style="warning" %}
 主密码重新提示**并非**一种加密机制。此功能是一个仅限于界面的防护栏，老练的用户可能会找到解决方法。我们建议您在无人看守或在共享工作站上，不要让您的密码库处于解锁状态。
@@ -233,4 +233,4 @@
 现在，您已了解密码库项目使用的基础知识，我们建议：
 
 * 使用[收藏](favorites.md)和[文件夹](folders.md)组织您的密码库项目
-* 将[自定义字段](custom-fields.md)、[TOTP 种子](totp.md)和[文件附件](file-attachments.md)添加到密码库项目
+* 将[自定义字段](custom-fields.md)、[TOTP 种子](../security-tools/totp.md)和[文件附件](file-attachments.md)添加到密码库项目

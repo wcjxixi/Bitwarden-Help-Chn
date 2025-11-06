@@ -42,7 +42,7 @@
 {% hint style="info" %}
 虽然某些项目类型无法导入，但您仍然可以将它们添加到密码库：
 
-* 将[文件附件](../../../your-vault/file-attachments.md)单独上传到新密码库。
+* 将[文件附件](../../your-vault/vault-items/file-attachments.md)单独上传到新密码库。
 * 在新密码库中重新创建 [Send](../../../bitwarden-send/about-send.md)。
 {% endhint %}
 

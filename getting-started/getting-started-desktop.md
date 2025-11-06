@@ -18,7 +18,7 @@ Bitwarden 桌面 App
 
 ### 创建文件夹 <a href="#create-a-folder" id="create-a-folder"></a>
 
-[文件夹](../your-vault/folders.md)是确保您在需要使用时始终可以找到密码库项目的好方法。要创建一个文件夹：
+[文件夹](../password-manager/your-vault/vault-items/folders.md)是确保您在需要使用时始终可以找到密码库项目的好方法。要创建一个文件夹：
 
 1. 在桌面 App 的第一列中，选择**文件夹**旁边的 ✚**添加**图标。
 2. 给您的新文件夹起个名字（例如 `Social Media`），然后选择 **💾保存**。

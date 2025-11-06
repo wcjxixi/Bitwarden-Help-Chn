@@ -25,10 +25,10 @@
 
 ## 第 1 步：设置您的组织 <a href="#step-1-setup-your-organization" id="step-1-setup-your-organization"></a>
 
-Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../../password-manager/vault-basics/organization-members/sharing.md)登录、笔记、支付卡和身份。
+Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../../password-manager/organization-members/sharing.md)登录、笔记、支付卡和身份。
 
 {% hint style="success" %}
-最佳的做法是，首先创建一个组织，然后直接[向组织导入数据](../manage-shared-items/import-organization-items/import-data-to-an-organization.md)，而不是先向个人账户导入数据，然后再将[移动项目](../../password-manager/vault-basics/organization-members/sharing.md)到组织。
+最佳的做法是，首先创建一个组织，然后直接[向组织导入数据](../manage-shared-items/import-organization-items/import-data-to-an-organization.md)，而不是先向个人账户导入数据，然后再将[移动项目](../../password-manager/organization-members/sharing.md)到组织。
 {% endhint %}
 
 1、**创建您的组织**。从创建组织开始。要了解如何操作，请查看[这篇文章](../organizations-overview.md#create-an-organization)。
@@ -80,7 +80,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 
 5、选择**导入数据**触发导入。
 
-[文件附件](../../your-vault/file-attachments.md)需要手动上传到密码库。请注意，LastPass 中嵌套的共享文件夹会在你的 Bitwarden 组织中重新创建为嵌套的集合，但如果「父」集合中没有数据，需要您手动创建名称匹配的父集合。
+[文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)需要手动上传到密码库。请注意，LastPass 中嵌套的共享文件夹会在你的 Bitwarden 组织中重新创建为嵌套的集合，但如果「父」集合中没有数据，需要您手动创建名称匹配的父集合。
 
 {% hint style="success" %}
 您还应建议员工从现有的密码管理器中导出他们的个人数据，并准备将其导入 Bitwarden。[了解更多](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)。

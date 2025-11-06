@@ -70,7 +70,7 @@
 
 ### 不安全网站报告 <a href="#unsecured-websites-report" id="unsecured-websites-report"></a>
 
-不安全网站报告可以识别在 URI 中使用不安全 (`http://`) 方案的登录项目。使用 `https://` 的 TLS/SSL 加密通信要安全得多。要了解更多信息，请参阅 [URI 的使用](../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md)。
+不安全网站报告可以识别在 URI 中使用不安全 (`http://`) 方案的登录项目。使用 `https://` 的 TLS/SSL 加密通信要安全得多。要了解更多信息，请参阅 [URI 的使用](../../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)。
 
 被识别后，您应该将违规的 URI 由 `http://` 更改为 `https://`。
 
@@ -120,5 +120,5 @@ HIBP 将「泄漏」定义为「通常是由于访问控制不足或软件的安
 globalSettings__hibpApiKey=REPLACE
 ```
 
-更多信息，请参阅[配置环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)。
+更多信息，请参阅[配置环境变量](../../../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)。
 {% endhint %}

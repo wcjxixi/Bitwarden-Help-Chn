@@ -100,7 +100,7 @@ LastPass 导出
 如果您的 LastPass 账户激活了多重身份验证，系统将提示您输入来自身份验证器 App 的一次性通行代码。如果您使用 Duo 方式的 MFA，则仅支持应用内审批以满足您的 MFA 要求。
 {% endhint %}
 
-[文件附件](../../../your-vault/file-attachments.md)、回收站等附加项目需要手动上传到您的密码库。
+[文件附件](../../your-vault/vault-items/file-attachments.md)、回收站等附加项目需要手动上传到您的密码库。
 {% endtab %}
 
 {% tab title="文件导入" %}
@@ -130,7 +130,7 @@ LastPass 导出
 
 6、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 
-[文件附件](../../../your-vault/file-attachments.md)、回收站等附加项目需要手动上传到您的密码库。
+[文件附件](../../your-vault/vault-items/file-attachments.md)、回收站等附加项目需要手动上传到您的密码库。
 {% endtab %}
 
 {% tab title="CLI" %}

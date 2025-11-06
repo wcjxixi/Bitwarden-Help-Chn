@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/about-collections/)
 {% endhint %}
 
-集合汇集了从组织内[安全共享](../../../password-manager/vault-basics/organization-members/sharing.md)的登录、笔记、支付卡和身份信息。集合可以由任何组织类型创建和管理。集合是[文件夹](../../../your-vault/folders.md)的组织等效物，但有几个关键的区别：
+集合汇集了从组织内[安全共享](../../../password-manager/organization-members/sharing.md)的登录、笔记、支付卡和身份信息。集合可以由任何组织类型创建和管理。集合是[文件夹](../../../password-manager/your-vault/vault-items/folders.md)的组织等效物，但有几个关键的区别：
 
 * 组织可以定义对集合的访问权限，允许用户或[群组](../../manage-members/groups.md)仅能访问他们所需的项目。
 * 存储在组织集合中的项目不属于任何个人用户，而是属于组织。
@@ -27,7 +27,7 @@
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 * 从概念层面[了解集合](about-collections.md)。
-* 通过新的集合[与组织成员共享项目](../../../password-manager/vault-basics/organization-members/sharing.md)。
+* 通过新的集合[与组织成员共享项目](../../../password-manager/organization-members/sharing.md)。
 * 为新集合[分配群组和成员访问权限](assign-users-to-collections.md)。
 * 为集合[配置群组和成员权限](collection-permissions.md)。
 * 为组织[配置集合管理设置](collection-settings.md)。

@@ -44,8 +44,8 @@
 
 **支持链接：**
 
-* [密码库项目类型](../../your-vault/vault-items.md)
-* [搜索您的密码库](../../your-vault/search-your-vault.md)
+* [密码库项目类型](../../password-manager/your-vault/vault-items/vault-items.md)
+* [搜索您的密码库](../../password-manager/your-vault/search-your-vault.md)
 
 ## 密码管理基础 <a href="#password-management-fundamentals" id="password-management-fundamentals"></a>
 
@@ -83,7 +83,7 @@
 
 * [Bitwarden Send](../../bitwarden-send/about-send.md)
 * [使用生物识别解锁](../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)
-* [生成 TOTP 代码](../../your-vault/totp.md#generate-totp-codes)
+* [生成 TOTP 代码](../../password-manager/your-vault/security-tools/totp.md#generate-totp-codes)
 
 ## 恢复方案 <a href="#recovery-planning" id="recovery-planning"></a>
 
@@ -106,5 +106,5 @@
 
 **支持链接：**
 
-* [密码库健康报告](../../your-vault/vault-health-reports.md)
+* [密码库健康报告](../../password-manager/your-vault/security-tools/vault-health-reports.md)
 

@@ -46,7 +46,7 @@
 
 ### 问：为什么我的移动 App、桌面 App 或浏览器扩展程序中丢失了密码库项目？ <a href="#q-why-is-a-vault-item-missing-from-my-mobile-app-desktop-app-or-browser-extension" id="q-why-is-a-vault-item-missing-from-my-mobile-app-desktop-app-or-browser-extension"></a>
 
-**答：**&#x901A;常，这是因为某个 App 的密码库数据已经滞后于网页 App 或其他客户端 App 的数据。执行密码库同步应该可以使所有数据为最新。有关更多信息，请参阅[同步您的密码库](syncing-your-vault.md)。
+**答：**&#x901A;常，这是因为某个 App 的密码库数据已经滞后于网页 App 或其他客户端 App 的数据。执行密码库同步应该可以使所有数据为最新。有关更多信息，请参阅[同步您的密码库](../password-manager/your-vault/syncing-your-vault.md)。
 
 ### 问：有啥安全的方式备份我的密码库数据？ <a href="#q-whats-the-safest-way-to-make-a-backup-of-my-vault-data" id="q-whats-the-safest-way-to-make-a-backup-of-my-vault-data"></a>
 

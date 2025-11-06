@@ -13,7 +13,7 @@
 * 如果**所有者和管理员可以管理所有集合和项目**设置为开启，则所有所有者和管理员都可以为任何集合更改分配给群组和成员的权限
 
 {% hint style="success" %}
-企业组织可使用[成员访问报告](../../../your-vault/vault-health-reports.md#member-access)下载详尽的 `.csv` 文件，其中注明了成员所在的群组，可访问的集合，他们在每个已分配的集合中的权限级别，等等。
+企业组织可使用[成员访问报告](../../../password-manager/your-vault/security-tools/vault-health-reports.md#member-access)下载详尽的 `.csv` 文件，其中注明了成员所在的群组，可访问的集合，他们在每个已分配的集合中的权限级别，等等。
 {% endhint %}
 
 ## 权限表格 <a href="#permissions-table" id="permissions-table"></a>
@@ -37,7 +37,7 @@
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 * 从概念层面[了解集合](about-collections.md)。
-* 通过新的集合[与组织成员共享项目](../../../password-manager/vault-basics/organization-members/sharing.md)。
+* 通过新的集合[与组织成员共享项目](../../../password-manager/organization-members/sharing.md)。
 * 为新集合[分配群组和成员访问权限](assign-users-to-collections.md)。
 * 为集合[配置群组和成员权限](collection-permissions.md)。
 * 为组织[配置集合管理设置](collection-settings.md)。

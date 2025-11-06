@@ -12,7 +12,7 @@
 
 ## 什么是组织？ <a href="#what-are-organizations" id="what-are-organizations"></a>
 
-Bitwarden 组织将用户和密码库项目关联在一起，以[安全地共享](../password-manager/vault-basics/organization-members/sharing.md)组织拥有的登录、笔记、支付卡和身份。组织可以是一个家庭、团队、公司或需要安全共享数据的任何一群人。组织具有独立的密码库，[管理员](manage-members/member-roles.md)可以在其中管理组织的项目、用户和设置：
+Bitwarden 组织将用户和密码库项目关联在一起，以[安全地共享](../password-manager/organization-members/sharing.md)组织拥有的登录、笔记、支付卡和身份。组织可以是一个家庭、团队、公司或需要安全共享数据的任何一群人。组织具有独立的密码库，[管理员](manage-members/member-roles.md)可以在其中管理组织的项目、用户和设置：
 
 {% embed url="https://bitwarden.com/assets/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?w=1043&fm=avif&q=80" %}
 免费组织管理控制台
@@ -93,7 +93,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 {% endembed %}
 
 {% hint style="success" %}
-在很多方面，集合类似于用来组织个人密码库的[文件夹](../your-vault/folders.md)。一个关键的区别是，[属于您的组织](organizations-quick-start.md#shared-items)的项目**必须包括在至少一个集合中**。
+在很多方面，集合类似于用来组织个人密码库的[文件夹](../password-manager/your-vault/vault-items/folders.md)。一个关键的区别是，[属于您的组织](organizations-quick-start.md#shared-items)的项目**必须包括在至少一个集合中**。
 {% endhint %}
 
 ## 将用户添加到您的组织 <a href="#add-a-user-to-your-organization" id="add-a-user-to-your-organization"></a>
@@ -172,7 +172,7 @@ Bitwarden组织的神奇之处在于，属于您的项目和[属于组织](organ
 
 ## 移动项目到组织 <a href="#move-an-item-to-the-organization" id="move-an-item-to-the-organization"></a>
 
-安全共享之路的最后一步是创建一个项目并将其移动到组织以便共享。现有的[密码库项目](../your-vault/vault-items.md)可以在创建后被移动到组织，但在本指南中，我们将重点放在如何从您的个人密码库创建一个**新的**登录：
+安全共享之路的最后一步是创建一个项目并将其移动到组织以便共享。现有的[密码库项目](../password-manager/your-vault/vault-items/vault-items.md)可以在创建后被移动到组织，但在本指南中，我们将重点放在如何从您的个人密码库创建一个**新的**登录：
 
 1. 在 **🔒我的密码库**页面上，选择 ✚**添加项目**按钮。
 2. 为您的新登录项填写所有相关信息（例如用户名和密码）。该项目可以是您希望自己和其他组织用户都可以访问的任何内容，例如家庭流媒体帐户。

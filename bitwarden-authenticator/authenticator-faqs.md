@@ -14,7 +14,7 @@
 
 ## 问：如何将此 App 设置为我在 iOS 上的默认验证码 App？ <a href="#q-how-do-i-set-this-app-as-my-default-verification-code-app-on-ios" id="q-how-do-i-set-this-app-as-my-default-verification-code-app-on-ios"></a>
 
-**答**：运行 iOS 16 以上版本的 iOS 用户可以将任何应用程序设置为默认应用程序，以便在直接从相机 App 扫描验证码时存储验证码，包括 [Bitwarden Authenticator](bitwarden-authenticator.md) 和 Password Manager [集成验证](../your-vault/totp.md)。要进行设置：
+**答**：运行 iOS 16 以上版本的 iOS 用户可以将任何应用程序设置为默认应用程序，以便在直接从相机 App 扫描验证码时存储验证码，包括 [Bitwarden Authenticator](bitwarden-authenticator.md) 和 Password Manager [集成验证](../password-manager/your-vault/security-tools/totp.md)。要进行设置：
 
 1. 打开设备上的 iOS **设置** App。
 2. 点击**通用**。
