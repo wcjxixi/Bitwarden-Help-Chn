@@ -145,7 +145,7 @@ iOS 上长按文本字段
 如果您不想将此通行密钥存储在 Bitwarden 中，请选择**其他选项**，或者选择**其他登录选项**以使用未存储在 Bitwarden 中的通行密钥登录。
 {% endhint %}
 
-如果该服务已存在一个通行密钥，Bitwarden 将允许您通过选择 **➕** 图标以创建一个新的项目来保存新的通行密钥，或覆盖现有的通行密钥：
+如果该服务已存在一个通行密钥，Bitwarden 将允许您通过选择 **➕**&#x56FE;标以创建一个新的项目来保存新的通行密钥，或覆盖现有的通行密钥：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6L5s6XBFjvaaEiDZ68m00Q/a130745c2276068fd0be066a47a34684/passkey-ios-2__1_.png?_a=BAJFJtWIB" %}
 保存或覆盖通行密钥
