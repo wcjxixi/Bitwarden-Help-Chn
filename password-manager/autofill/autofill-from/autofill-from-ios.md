@@ -6,17 +6,15 @@
 
 Bitwarden 可以自动填充您的密码和通行密钥，以便您可以无缝登录网站和 App，同时维护强大而安全的密码。自动填充功能通过检测与您登录的服务相匹配的密码库项目，以减少了您在登录过程中的复制和粘贴操作。
 
-自动填充通行密钥（包括创建新的通行密钥时 Bitwarden 发出提示）要求 iOS 17.0 或更高版本。
-
-{% hint style="success" %}
-大多数自动填充方案都依赖登录项目的 URI 属性。如果您不熟悉 URI，请阅读 [URI 的使用](../troubleshoot-autofill/forming-uris-for-autofill.md)一文。
-
-请注意，移动端的自动填充当前不支持自定义字段。
-{% endhint %}
+自动填充通行密钥（包括创建新的通行密钥时 Bitwarden 发出提示）要求 iOS 17.0 或更高版本。移动端自动填充当前不支持自定义字段和拆分登录工作流程（当用户名和密码字段显示在独立的界面上时）。
 
 ## 设置自动填充 <a href="#setup-auto-fill" id="setup-auto-fill"></a>
 
-iOS 上的自动填充有几种行为：
+{% hint style="info" %}
+大多数自动填充方式要求登录项目具有[已分配网站 URI](../troubleshoot-autofill/forming-uris-for-autofill.md)。
+{% endhint %}
+
+iOS 上的自动填充有几种方式：
 
 * **键盘自动填充**：（推荐）使用此选项可以在任何 iOS App（包括网页浏览器）中通过一个键盘按钮或上滑提示来使用 Bitwarden 自动填充。
 * **浏览器 App 扩展自动填充**：使用此选项仅可以在网页浏览器 App（例如 Safari）中通过分享菜单来使用 Bitwarden 自动填充。
@@ -36,7 +34,7 @@ iOS 上的自动填充有几种行为：
 
 要在 iOS 上激活键盘自动填充密码，请完成以下步骤。这也将激活用于通行密钥自动填充的上滑菜单：
 
-1、打开设备上的 iOS **⚙️设置** App 然后**通用**。
+1、打开设备上的 iOS **⚙️设置**然后**通用**。
 
 2、点击**自动填充与密码**。&#x20;
 
@@ -50,17 +48,17 @@ iOS 上的自动填充有几种行为：
 我们强烈建议在**自动填充自：**&#x5217;表中禁用任何其他自动填充服务（例如钥匙串）。
 {% endhint %}
 
-**让我们测试一下自动填充以确保其可以正常工作：**
+接下来，测试一下自动填充以确保其可以正常工作：
 
-4、打开一个您当前未登录的 App 或网站。
+1、打开一个您当前未登录的 App 或网站。
 
-5、在登录界面点击用户名或密码字段。键盘将上滑出一个匹配的登录 (`my_username`) 或 **🔑密码**按钮：
+2、在登录界面点击用户名或密码字段。键盘将上滑出一个匹配的登录 (`my_username`) 或 **🔑密码**按钮：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/vQG8BTWlHg2AQxBlXe4S3/63f2a5e9c32c2f38b29ec0ab0af24d57/autofill-ios.jpeg?_a=BAJFJtWIB" %}
 iOS 上的自动填充
 {% endembed %}
 
-如果显示一个[匹配的登录](../troubleshoot-autofill/forming-uris-for-autofill.md)，请点击以自动填充。如果显示 **🔑密码**按钮，请点击它浏览您的密码库以搜索要使用的登录项目。如果显示 **🔑密码**按钮，可能是因为您的密码库中没有具有匹配 URI 的项目。
+3、如果显示一个[匹配的登录](../troubleshoot-autofill/forming-uris-for-autofill.md)，请点击以自动填充。如果显示 **🔑密码**按钮，请点击它浏览您的密码库以搜索要使用的登录项目。如果显示 **🔑密码**按钮，可能是因为您的密码库中没有具有[匹配 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 的项目。
 
 {% hint style="success" %}
 遇到 `Biometric unlock disabled pending verification of master password`（生物识别解锁已禁用，等待验证主密码） 消息吗？了解[该怎么做](../auto-fill-faqs.md#q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password)。
@@ -82,13 +80,13 @@ iOS 上的自动填充
 
 绿色的`扩展已激活！`消息指示已成功激活此选项。
 
-**让我们测试一下 App 扩展以确保其可以正常工作：**
+然后测试一下 App 扩展以确保其可以正常工作：
 
-6、打开您设备的网页浏览器并导航一个您当前未登录的网站。
+1、、打开您设备的网页浏览器并导航一个您当前未登录的网站。
 
-7、点击**分享**图标。
+2、点击**分享**图标。
 
-8、向下滚动并点击 **Bitwarden** 选项：
+3、向下滚动并点击 **Bitwarden** 选项：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Icxd3YqcXjBrjHVAeluwm/8be732b1ed2adebfd0a7af00f7150a97/extension.png?_a=BAJFJtWIB" %}
 共享菜单中的 Bitwarden
@@ -98,7 +96,7 @@ iOS 上的自动填充
 如果启用了[使用生物识别解锁](../../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)，则首次点击此选项时，系统将提示您验证您的主密码。
 {% endhint %}
 
-9、Bitwarden 界面将在您的设备上向上滑出，并列出此网站的[匹配登录项目](../troubleshoot-autofill/forming-uris-for-autofill.md)。点击该项目以自动填充。
+4、Bitwarden 界面将在您的设备上向上滑出，并列出此网站的[匹配登录项目](../troubleshoot-autofill/forming-uris-for-autofill.md)。点击该项目以自动填充。
 
 {% hint style="success" %}
 如果未列出登录项目，则可能是因为您的密码库中没有与 [URI 匹配](../troubleshoot-autofill/forming-uris-for-autofill.md)的项目。
@@ -120,7 +118,15 @@ iOS 上长按文本字段
 
 ### 设置 Bitwarden 以使用通行密钥 <a href="#setup-bitwarden-for-use-with-passkeys" id="setup-bitwarden-for-use-with-passkeys"></a>
 
-要使用下述功能，请打开 iOS **设置** App 然后导航至**密码** → **密码选项**。打开以下选项：
+自动填充通行密钥（包括 Bitwarden 提示创建新通行密钥）需要 iOS 17.0 或更高版本。
+
+要使用下述功能：
+
+1、打开 iOS **设置** App。
+
+2、导航至**密码** → **密码选项**。
+
+3、打开以下选项：
 
 * 打开**自动填充密码和通行密钥**。
 * 在**密码和通行密钥来源：** 列表中打开 **Bitwarden**。
