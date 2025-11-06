@@ -23,9 +23,9 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../../../bitwar
 在 Bitwarden Password Manager 中，您可以使用两种方式生成 TOTP：
 
 * 通过在 Bitwarden 移动 App 或浏览器扩展中[**扫描二维码**](totp.md#scan-a-qr-code)
-* 通过在任一个 Bitwarden App 中[**手动输入安全代码**](totp.md#manually-enter-a-secret)
+* 通过在任一个 Bitwarden App 中[**手动输入安全密钥**](totp.md#manually-enter-a-secret)
 
-### 通过扫描 QR 码 <a href="#scan-a-qr-code" id="scan-a-qr-code"></a>
+### 扫描二维码 <a href="#scan-a-qr-code" id="scan-a-qr-code"></a>
 
 完成以下步骤，以从您选择的应用程序设置集成身份验证：
 
@@ -57,7 +57,7 @@ Password Manager 集成身份验证是 [Bitwarden Authenticator](../../../bitwar
 
 设置完成后，集成身份验证将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或 App 的第二步。您可以随时使用编辑项目界面上的 **📷** 图标来编辑 TOTP 种子。
 
-### 通过手动输入安全密钥 <a href="#manually-enter-a-secret" id="manually-enter-a-secret"></a>
+### 手动输入安全密钥 <a href="#manually-enter-a-secret" id="manually-enter-a-secret"></a>
 
 完成以下步骤，以从 iOS 或 Android App 手动输入安全密钥：
 

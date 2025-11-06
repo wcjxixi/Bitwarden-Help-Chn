@@ -16,28 +16,34 @@
 {% tab title="网页 App" %}
 从导航栏中选择**工具** → **生成器**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/70bx0hWvxAvkz5RJdIj04n/44fa449c9573f69cc5e63d04d6d90646/2024-12-02_14-42-39.png?_a=DAJCwlWIZAAB" %}
-网页 App 的密码生成器
+{% embed url="https://bitwarden.com/assets/70bx0hWvxAvkz5RJdIj04n/63febc4043e13292461c768d910cd450/2025-02-14_11-00-10.png?w=1122&fm=avif" %}
+网页 App 密码生成器
 {% endembed %}
 
 您在此页面上[指定的选项](generator.md#password-types)将保存，即使您注销网页 App。您也可以使用相同的选项直接从添加或编辑项目界面使用 **⟳生成**按钮快速生成强密码：
 
+
+
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5ZVBOSK13MaXJ2S8iJTOMX/1324db87fd867667cbb6e8c1c1f4539a/2024-12-02_14-44-30.png?_a=DAJCwlWIZAAB" %}
-网页 App 的密码生成器
+网页 App 密码生成器
 {% endembed %}
+
+{% hint style="info" %}
+选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您不将它们保存到项目中。当您注销时，此历史记录将被清除。
+{% endhint %}
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
 选择 **⟳生成器**标签页：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6eOmI3kZOdnfw9i5JinfUD/f1a7129244f49c7d904664632e329076/2024-10-29_10-34-01.png?_a=DAJCwlWIZAAB" %}
-浏览器扩展的密码生成器
+浏览器扩展密码生成器
 {% endembed %}
 
 您也可以从添加/编辑项目的界面使用 **⟳生成**按钮生成强密码：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2Cbja6OBxW2S6GVxLOqlYh/b71de03b37f5a4f4960e344a5b17cc01/2024-10-29_10-35-25.png?_a=DAJCwlWIZAAB" %}
-浏览器扩展的密码生成器
+浏览器扩展密码生成器
 {% endembed %}
 
 如果您创建的账户没有存储在 Bitwarden 中，您也可以使用内嵌自动填充菜单，在**填充已生成的密码**提示下生成并自动填写密码：
@@ -47,32 +53,46 @@
 {% endembed %}
 
 使用内嵌功能时，请使用 **⟳生成**按钮生成新的密码，直到您满意为止。确保在提示时选择**新增登录**，以便将登录信息保存到 Bitwarden。[了解更多](../../autofill/autofill-from/autofill-from-browser-extensions.md#inline-auto-fill-menu)。
+
+{% hint style="info" %}
+选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您不将它们保存到项目中。当您注销时，此历史记录将被清除。
+{% endhint %}
 {% endtab %}
 
 {% tab title="桌面端" %}
 从菜单栏中选择**查看** → **生成器**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6cFQ3iojZXLy1ZIdIXp6Zr/f69517b01aa7f370f91dc823e7a403b5/2025-01-13_16-26-13.png?_a=DAJCwlWIZAAB" %}
-桌面 App 的密码生成器
+桌面 App 密码生成器
 {% endembed %}
 
 您也可以从添加/编辑项目的界面使用 **⟳生成**按钮生成强密码：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6VInVRr9tZBOndfe4VrpXf/6cc882381f85a2e275e841a8521d4eea/2025-01-13_16-27-33.png?_a=DAJCwlWIZAAB" %}
-桌面 App 的密码生成器
+{% embed url="https://bitwarden.com/assets/6VInVRr9tZBOndfe4VrpXf/4e08f8a8bc6227ddc8e2fcb7a008434b/Desktop_app_password_generator_2.png?w=1100&fm=avif" %}
+桌面 App 密码生成器
 {% endembed %}
+
+{% hint style="info" %}
+选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您不将它们保存到项目中。当您注销时，此历史记录将被清除。
+{% endhint %}
 {% endtab %}
 
 {% tab title="移动端" %}
 选择 **⟳生成器**标签页：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/Cqrt6OGquQLRJvZDuqtCk/5b42dad11498bc5c62a749c4fc096fc9/2025-01-21_15-49-19.png?_a=DAJCwlWIZAAB" %}
+移动 App 密码生成器
+{% endembed %}
 
-您也可以从添加/编辑项目的界面生成强密码，以及通过从 iOS 应用程序扩展点按共享图标，使用 **⟳生成**按钮生成强密码：
+您也可以从添加/编辑项目的界面生成强密码，以及通过从 iOS App 扩展点按共享图标，使用 **⟳生成**按钮生成强密码：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4NeVmiRcKfedg6Fzwp0N1Y/f91ad1097dcd379925cedee724dc7592/2025-01-21_15-51-01.png?_a=DAJCwlWIZAAB" %}
-移动端的密码生成
+移动 App 密码生成器
 {% endembed %}
+
+{% hint style="info" %}
+选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您不将它们保存到项目中。当您注销时，此历史记录将被清除。
+{% endhint %}
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -92,8 +112,6 @@ bw generate -uln --length 14
 {% endtab %}
 {% endtabs %}
 
-
-
 ### 密码类型 <a href="#password-types" id="password-types"></a>
 
 #### 密码 <a href="#password" id="password"></a>
@@ -109,7 +127,7 @@ bw generate -uln --length 14
 * **!@#$%^&\***：在密码中包含特殊字符。
 * **避免模棱两可的字符**：防止您的密码同时包含 `1` 和 `l` 或同时包含 `0` 和 `o`。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 除非您需要满足网站的特定密码要求，否则我们建议将**最少数字**和**最少特殊字符**保持尽可能低 (0-1)，因为过度约束会限制生成密码的强度。
 {% endhint %}
 
@@ -139,6 +157,10 @@ bw generate -uln --length 14
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1zpNFR8fu9DBo2krqln5hr/e893f1f3e8d85d58d20c8e316f247666/2024-12-02_14-44-30.png?_a=DAJCwlWIZAAB" %}
 网页 App 用户名生成器
 {% endembed %}
+
+{% hint style="info" %}
+选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您不将它们保存到项目中。当您注销时，此历史记录将被清除。
+{% endhint %}
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -153,6 +175,10 @@ bw generate -uln --length 14
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/23CDvd3ErFQIZNYwgh000F/c19c373ecb6ca2d6aad2587a1b16dd12/2024-10-29_10-39-56.png?_a=DAJCwlWIZAAB" %}
 浏览器扩展用户名生成器
 {% endembed %}
+
+{% hint style="info" %}
+选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您不将它们保存到项目中。当您注销时，此历史记录将被清除。
+{% endhint %}
 {% endtab %}
 
 {% tab title="桌面端" %}
@@ -164,9 +190,13 @@ bw generate -uln --length 14
 
 您还可以从添加/编辑项目界面使用 **⟳生成器**按钮生成用户名：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7xTg7VVE7CgTZhBl5LlYui/e8e8d7abb103f07671015847f63521c8/2025-01-13_16-27-19.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/7xTg7VVE7CgTZhBl5LlYui/b614960692c19725bbd69bc86e01c1c3/Desktop_app_username_generator_2.png?w=1100&fm=avif" %}
 桌面 App 用户名生成器
 {% endembed %}
+
+{% hint style="info" %}
+选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您不将它们保存到项目中。当您注销时，此历史记录将被清除。
+{% endhint %}
 {% endtab %}
 
 {% tab title="移动端" %}
