@@ -36,7 +36,7 @@
     * [获取恢复代码](account/two-step-login/recovery-codes.md)
     * [无法访问两步登录](account/two-step-login/lost-secondary-device.md)
     * [两步登录 FAQ](account/two-step-login/two-step-login-faq.md)
-* [=Password Manager](password-manager/README.md)
+* [Password Manager](password-manager/README.md)
   * [Password Manager 概述](password-manager/password-manager-overview.md)
   * [入门](getting-started/README.md)
     * [Password Manager 网页 App](getting-started/getting-started-webvault.md)
