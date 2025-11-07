@@ -44,7 +44,7 @@ export BW_CLIENTSECRET="client_secret"
 env:BW_CLIENTSECRET="client_secret"
 ```
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 如果您的 `client_secret` 不正确，您将收到错误消息。大多数时候，这是因为保存了变量以后您又[轮换了您的 API 密钥](personal-api-key.md#rotate-your-api-key)。使用[上面的步骤](cli-authentication-challenges.md#get-your-personal-api-key)获取正确的值。
 {% endhint %}
 
@@ -56,6 +56,6 @@ env:BW_CLIENTSECRET="client_secret"
 带有身份验证挑战的登录提示
 {% endembed %}
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 如果您的 `client_secret` 不正确，您将收到错误消息。大多数时候，这是因为保存了变量以后您又[轮换了您的 API 密钥](personal-api-key.md#rotate-your-api-key)。使用[上面的步骤](cli-authentication-challenges.md#get-your-personal-api-key)获取正确的值。
 {% endhint %}

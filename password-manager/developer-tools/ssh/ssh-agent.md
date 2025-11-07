@@ -55,11 +55,31 @@ Flatpak 版本目前暂不支持 SSH 代理，[Snap 下载](https://bitwarden.co
 
 ### 组织 SSH 密钥 <a href="#organization-ssh-keys" id="organization-ssh-keys"></a>
 
-组织拥有的 SSH 密钥不能在 SSH 代理中使用。个人组织用户可以创建 SSH 密钥并将其存储在个人密码库中用于身份验证。不建议共享 SSH 凭据。
+可以创建 SSH 密钥并将其存储在组织集合中。具有适当权限的组织成员可以创建、管理和访问组织拥有的 SSH 密钥。在[此处](../../../admin-console/manage-shared-items/collections/collection-permissions.md)了解更多有关集合权限的信息。
+
+要将新的共享 SSH 密钥添加到组织密码库：
+
+1、在桌面或网页 App 的密码库视图中，选择 **✚新增**按钮，然后选择 **SSH 密钥**。
+
+{% hint style="info" %}
+组织[所有者、管理员和某些自定义用户](../../../admin-console/manage-members/member-roles.md)也可以直接从管理控制台执行此步骤，以跳过此过程中的一些步骤。
+{% endhint %}
+
+2、使用**所有者**下拉列表，选择您希望该项目所属的组织。
+
+3、使用**集合**下拉列表，选择要与其共享此项目的集合。
+
+{% embed url="https://bitwarden.com/assets/1YnrhzwCw78KuFsArEioOO/e0d099972f5887f58fc7d09b95bf278f/organization_ssh_key.png?w=750&fm=avif" %}
+组织共享的 SSH 密钥
+{% endembed %}
+
+{% hint style="info" %}
+通常，使用 SSH 密钥的资源可以支持每用户密钥。我们建议在向组织共享 SSH 密钥之前查看 SSH 密钥最佳实践。
+{% endhint %}
 
 ### 编辑现有密钥 <a href="#edit-existing-keys" id="edit-existing-keys"></a>
 
-SSH 密钥保存到 Bitwarden 密钥库中后，您可以对它们进行编辑：
+SSH 密钥保存到 Bitwarden 密钥库中后，您可以对某些关键字段，例如名称、所有者、文件夹和自定义字段进行编辑：
 
 {% tabs %}
 {% tab title="桌面端" %}
@@ -123,17 +143,19 @@ iOS 上选择编辑 SSH 密钥
 
 现有的 SSH 密钥可通过桌面客户端导入 Bitwarden。
 
-1、从导航菜单中选择 **🔑SSH 密钥**。
+1、选择**新增**按钮然后选择 **SSH 密钥**作为项目类型。
 
-2、复制要导入到 Bitwarden 的现有 SSH 密钥。使用**从剪贴板导入密钥**选项。这将自动将 SSH 密钥粘贴到 Bitwarden 中。
+2、复制您想要导入到 Bitwarden 的现有 SSH 密钥。
+
+2、使用**从剪贴板导入密钥**图标。这将自动将 SSH 密钥粘贴到 Bitwarden 中。
+
+* 导入的密钥必须是 **OpenSSH** 或 **PKCS#8** 格式。
 
 {% embed url="https://bitwarden.com/assets/5QTvyu39h3o0azkjU26P3t/9c2203a723f91c6a9b34c848bd0cb300/imported_key_ui.png?w=563&fm=avif&q=80" %}
 在桌面客户端上导入 SSH 密钥
 {% endembed %}
 
 {% hint style="info" %}
-导入的密钥必须是 **OpenSSH** 或 **PKCS#8** 格式。
-
 此外，目前还不兼容从 Putty 导入的 SSH 密钥。
 {% endhint %}
 
@@ -418,6 +440,10 @@ git push
 SSH 代理转发允许您访问的远程服务器使用您的密钥向其他服务器进行身份验证，而不会将您的私钥暴露在密码库之外。您登录的服务器可以请求您的本地 Bitwarden 实例对远程服务器进行身份验证。在本例中，我们将演示在服务器之间传输一个文件：
 
 1、首先，通过导航至**设置**然后**启用 SSH 代理**，确保已在 Bitwarden 桌面 App 上启用 SSH 代理：
+
+{% embed url="https://bitwarden.com/assets/7Fx7AnfIPXmiJpHq1lFhTx/4591ef1b514df8fe1d51c30dc5ffd4d5/2025-05-20_16-06-21.png?w=992&fm=avif" %}
+在桌面客户端上启用 SSH 存储
+{% endembed %}
 
 2、创建新的 SSH 密钥或导入现有的 SSH 密钥到 Bitwarden 桌面 App。
 
