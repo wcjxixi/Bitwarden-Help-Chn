@@ -23,6 +23,10 @@
 
 2、在 Password Manager 中，导航至**设置** → **账户安全**，然后打开**允许验证器同步**选项。
 
+{% hint style="info" %}
+您可以根据需要与任意数量的 Bitwarden 密码管理器账户同步，但您需要为每一个账户单独打开此选项。
+{% endhint %}
+
 3、在 Authenticator 中，确认 Password Manager 中存储的任何代码都列在您的 Bitwarden 账户标题下，而不是在**本地代码**下。
 
 设置完成后，同步将自动进行，这意味着：
@@ -31,6 +35,8 @@
 * 您无需手动解锁 Password Manager 来获取 Authenticator 中所需数据的访问权限。更多关于如何实现这一点的内容将在下一节中介绍。
 
 ## 工作原理 <a href="#how-it-works" id="how-it-works"></a>
+
+尽管各个平台的核心密钥交换工作流程是相同的，但用于实现 Password Manager 和 Authenticator 之间同步的安全存储和通信方法则因 Android 或 iOS 而异：
 
 {% tabs %}
 {% tab title="Android" %}
