@@ -18,4 +18,4 @@
 * [Secrets Manager 计划](secrets-manager/secrets-manager-plans.md)
 * [组织快速入门](../admin-console/organizations-quick-start.md)
 * [Secrets Manager 快速入门](../secrets-manager/get-started/secrets-manager-quick-start.md)
-* [Bitwarden 入门：团队成员](../miscellaneous/get-started-team-member.md)
+* [Bitwarden 入门：团队成员](../courses/password-manager/team-member.md)

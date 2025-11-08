@@ -1,7 +1,7 @@
-# Bitwarden 入门：管理员
+# 管理员
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/get-started-administrator/)
+对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-admin/)
 {% endhint %}
 
 我们很高兴您正在考虑使用 Bitwarden 来满足您业务的安全凭据共享需求。让我们一起走进成功合作的第一步：
@@ -41,7 +41,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 ## 了解管理控制台 <a href="#get-to-know-the-admin-console" id="get-to-know-the-admin-console"></a>
 
-创建后，您将进入管理控制台，这是所有共享和组织管理的中心枢纽。作为组织所有者，您可以查看**密码库**项目和[集合](../admin-console/organizations-overview.md#collections)、管理**成员**、运行**报告**、更改**计费设置**以及配置其他组织**设置**：
+创建后，您将进入管理控制台，这是所有共享和组织管理的中心枢纽。作为组织所有者，您可以查看**密码库**项目和[集合](../../admin-console/organizations-overview.md#collections)、管理**成员**、运行**报告**、更改**计费设置**以及配置其他组织**设置**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?_a=DAJCwlWIZAAB" %}
 免费组织管理控制台
@@ -55,25 +55,25 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 批量分配到集合
 {% endembed %}
 
-说到[集合](../admin-console/manage-shared-items/collections/about-collections.md)，它们是一种重要的结构，用于将相关的登录、备注、支付卡和身份组合在一起，以便与组织安全地共享：
+说到[集合](../../admin-console/manage-shared-items/collections/about-collections.md)，它们是一种重要的结构，用于将相关的登录、备注、支付卡和身份组合在一起，以便与组织安全地共享：
 
 * 组织可以定义对集合的访问权限，允许用户或群组只能访问他们需要的项目。
 * 存储在组织集合中的项目不属于任何个人用户，而是属于组织。
 * 组织拥有的项目**必须**至少包含在一个集合中。
 
 {% hint style="success" %}
-数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
+数据也可以直接导入到您的组织中！[了解如何操作](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
 {% endhint %}
 
 ## 管理成员和群组 <a href="#managing-members-and-groups" id="managing-members-and-groups"></a>
 
 作为所有者或管理员，您可能要负责管理团队成员或更广泛的公司成员。成员可以添加到您的组织中：
 
-* 直接从管理控制台的**成员**页面添加（[了解更多](../admin-console/manage-members/user-management.md#invite)）
-* 使用 SCIM 将 Bitwarden 与您的 IdP 集成（[了解更多](../admin-console/manage-members/scim/about-scim.md)）
-* 使用 Directory Connector 将 Bitwarden 与您的目录服务集成（[了解更多](../admin-console/manage-members/directory-connector/about-directory-connector.md)）
+* 直接从管理控制台的**成员**页面添加（[了解更多](../../admin-console/manage-members/user-management.md#invite)）
+* 使用 SCIM 将 Bitwarden 与您的 IdP 集成（[了解更多](../../admin-console/manage-members/scim/about-scim.md)）
+* 使用 Directory Connector 将 Bitwarden 与您的目录服务集成（[了解更多](../../admin-console/manage-members/directory-connector/about-directory-connector.md)）
 
-成员可以直接分配给集合，以管理他们可以访问的密码库数据，但[群组](../admin-console/manage-members/groups.md)也可以。群组将单个成员联系在一起，提供了一种可扩展的方式来分配对特定集合的访问权限：
+成员可以直接分配给集合，以管理他们可以访问的密码库数据，但[群组](../../admin-console/manage-members/groups.md)也可以。群组将单个成员联系在一起，提供了一种可扩展的方式来分配对特定集合的访问权限：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/FefJG4qBRiWkTzsxBKfm6/53093b4dd48e534cdde9f3e249d3c382/2024-12-03_14-22-27.png?_a=DAJCwlWIZAAB" %}
 新增群组
@@ -83,12 +83,12 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 企业版 Bitwarden 组织提供了强大的工具，用于提高在线安全性并与现有工作流程和工具集成。作为组织的管理员，您可能需要管理的其他事项包括：
 
-* 设置[策略](../admin-console/oversight-visibility/enterprise-policies.md)以执行用户安全规则，例如强制使用两步登录。
-* 审计[组织成员拥有哪些凭据的访问权限](../password-manager/your-vault/security-tools/vault-health-reports.md#member-access)。
-* 将 Bitwarden 与现有的 [SSO](../login-with-sso/about-login-with-sso.md) 工作流程整合。
-* [验证您的组织的域名](../admin-console/login-with-sso/claimed-domains.md)，实现无缝登录体验。
-* 为成员[设置](../admin-console/login-with-sso/trusted-devices/setup-sso-with-trusted-devices.md)或[批准](../admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)设备信任要求的系统。
-* 将 Bitwarden 与现有的 SIEM 工具（如 [Microsoft Sentinel](../admin-console/oversight-visibility/siem-integrations/microsoft-sentinel-siem.md)）集成。
+* 设置[策略](../../admin-console/oversight-visibility/enterprise-policies.md)以执行用户安全规则，例如强制使用两步登录。
+* 审计[组织成员拥有哪些凭据的访问权限](../../password-manager/your-vault/security-tools/vault-health-reports.md#member-access)。
+* 将 Bitwarden 与现有的 [SSO](../../login-with-sso/about-login-with-sso.md) 工作流程整合。
+* [验证您的组织的域名](../../admin-console/login-with-sso/claimed-domains.md)，实现无缝登录体验。
+* 为成员[设置](../../admin-console/login-with-sso/trusted-devices/setup-sso-with-trusted-devices.md)或[批准](../../admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)设备信任要求的系统。
+* 将 Bitwarden 与现有的 SIEM 工具（如 [Microsoft Sentinel](../../admin-console/oversight-visibility/siem-integrations/microsoft-sentinel-siem.md)）集成。
 {% endtab %}
 
 {% tab title="团队版" %}
@@ -125,7 +125,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 ## 了解管理控制台 <a href="#get-to-know-the-admin-console" id="get-to-know-the-admin-console"></a>
 
-创建后，您将进入管理控制台，这是所有共享和组织管理的中心枢纽。作为组织所有者，您可以查看**密码库**项目和[集合](../admin-console/organizations-overview.md#collections)、管理**成员**、运行**报告**、更改**计费设置**以及配置其他组织**设置**：
+创建后，您将进入管理控制台，这是所有共享和组织管理的中心枢纽。作为组织所有者，您可以查看**密码库**项目和[集合](../../admin-console/organizations-overview.md#collections)、管理**成员**、运行**报告**、更改**计费设置**以及配置其他组织**设置**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?_a=DAJCwlWIZAAB" %}
 免费组织管理控制台
@@ -139,25 +139,25 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 批量分配到集合
 {% endembed %}
 
-说到[集合](../admin-console/manage-shared-items/collections/about-collections.md)，它们是一种重要的结构，用于将相关的登录、备注、支付卡和身份组合在一起，以便与组织安全地共享：
+说到[集合](../../admin-console/manage-shared-items/collections/about-collections.md)，它们是一种重要的结构，用于将相关的登录、备注、支付卡和身份组合在一起，以便与组织安全地共享：
 
 * 组织可以定义对集合的访问权限，允许用户或群组只能访问他们需要的项目。
 * 存储在组织集合中的项目不属于任何个人用户，而是属于组织。
 * 组织拥有的项目**必须**至少包含在一个集合中。
 
 {% hint style="success" %}
-数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
+数据也可以直接导入到您的组织中！[了解如何操作](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
 {% endhint %}
 
 ## 管理成员和群组 <a href="#managing-members-and-groups" id="managing-members-and-groups"></a>
 
 作为所有者或管理员，您可能要负责管理团队成员或更广泛的公司成员。成员可以添加到您的组织中：
 
-* 直接从管理控制台的**成员**页面添加（[了解更多](../admin-console/manage-members/user-management.md#invite)）
-* 使用 SCIM 将 Bitwarden 与您的 IdP 集成（[了解更多](../admin-console/manage-members/scim/about-scim.md)）
-* 使用 Directory Connector 将 Bitwarden 与您的目录服务集成（[了解更多](../admin-console/manage-members/directory-connector/about-directory-connector.md)）
+* 直接从管理控制台的**成员**页面添加（[了解更多](../../admin-console/manage-members/user-management.md#invite)）
+* 使用 SCIM 将 Bitwarden 与您的 IdP 集成（[了解更多](../../admin-console/manage-members/scim/about-scim.md)）
+* 使用 Directory Connector 将 Bitwarden 与您的目录服务集成（[了解更多](../../admin-console/manage-members/directory-connector/about-directory-connector.md)）
 
-成员可以直接分配给集合，以管理他们可以访问的密码库数据，但[群组](../admin-console/manage-members/groups.md)也可以。群组将单个成员联系在一起，提供了一种可扩展的方式来分配对特定集合的访问权限：
+成员可以直接分配给集合，以管理他们可以访问的密码库数据，但[群组](../../admin-console/manage-members/groups.md)也可以。群组将单个成员联系在一起，提供了一种可扩展的方式来分配对特定集合的访问权限：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/FefJG4qBRiWkTzsxBKfm6/53093b4dd48e534cdde9f3e249d3c382/2024-12-03_14-22-27.png?_a=DAJCwlWIZAAB" %}
 新增群组
@@ -167,8 +167,8 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 团队版 Bitwarden 组织提供了强大的工具，用于提高在线安全性并与现有工作流程和工具集成。作为组织的管理员，您可能需要管理的其他事项包括：
 
-* 审计[组织成员拥有哪些凭据的访问权限](../password-manager/your-vault/security-tools/vault-health-reports.md#member-access)。
-* 将 Bitwarden 与现有的 SIEM 工具（如 [Microsoft Sentinel](../admin-console/oversight-visibility/siem-integrations/microsoft-sentinel-siem.md)）集成。
+* 审计[组织成员拥有哪些凭据的访问权限](../../password-manager/your-vault/security-tools/vault-health-reports.md#member-access)。
+* 将 Bitwarden 与现有的 SIEM 工具（如 [Microsoft Sentinel](../../admin-console/oversight-visibility/siem-integrations/microsoft-sentinel-siem.md)）集成。
 {% endtab %}
 
 {% tab title="家庭版" %}
@@ -205,7 +205,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 ## 了解管理控制台 <a href="#get-to-know-the-admin-console" id="get-to-know-the-admin-console"></a>
 
-创建后，您将进入管理控制台，这是所有共享和组织管理的中心枢纽。作为组织所有者，您可以查看**密码库**项目和[集合](../admin-console/organizations-overview.md#collections)、管理**成员**、运行**报告**、更改**计费设置**以及配置其他组织**设置**：
+创建后，您将进入管理控制台，这是所有共享和组织管理的中心枢纽。作为组织所有者，您可以查看**密码库**项目和[集合](../../admin-console/organizations-overview.md#collections)、管理**成员**、运行**报告**、更改**计费设置**以及配置其他组织**设置**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?_a=DAJCwlWIZAAB" %}
 免费组织管理控制台
@@ -219,19 +219,19 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 批量分配到集合
 {% endembed %}
 
-说到[集合](../admin-console/manage-shared-items/collections/about-collections.md)，它们是一种重要的结构，用于将相关的登录、备注、支付卡和身份组合在一起，以便与组织安全地共享：
+说到[集合](../../admin-console/manage-shared-items/collections/about-collections.md)，它们是一种重要的结构，用于将相关的登录、备注、支付卡和身份组合在一起，以便与组织安全地共享：
 
 * 组织可以定义对集合的访问权限，允许用户或群组只能访问他们需要的项目。
 * 存储在组织集合中的项目不属于任何个人用户，而是属于组织。
 * 组织拥有的项目**必须**至少包含在一个集合中。
 
 {% hint style="success" %}
-数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
+数据也可以直接导入到您的组织中！[了解如何操作](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
 {% endhint %}
 
 ## 管理成员和群组 <a href="#managing-members-and-groups" id="managing-members-and-groups"></a>
 
-作为所有者或管理员，您可能需要更广泛地管理家庭成员。成员可以直接从管理控制台的**成员**页面添加到您的组织中（[了解更多](../admin-console/manage-members/user-management.md#invite)）：
+作为所有者或管理员，您可能需要更广泛地管理家庭成员。成员可以直接从管理控制台的**成员**页面添加到您的组织中（[了解更多](../../admin-console/manage-members/user-management.md#invite)）：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7AJjR4oqEnCH3A89YYoWpH/0d8004ac55a7ce2dfb3525be56885e66/2024-12-03_14-02-20.png?_a=DAJCwlWIZAAB" %}
 邀请成员到组织
@@ -241,8 +241,8 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 既然您已经设置好通过 Bitwarden 与家人安全地共享数据，那么请考虑一些其他方式来确保您所爱的人的上网安全：
 
-* 帮助家人设置[两步登录](../account/two-step-login/setup-guides/two-step-login-methods.md)，以保护他们的 Bitwarden 账户。
-* 帮助家人设置[紧急访问](../account/log-in-and-unlock/more-log-in-options/emergency-access.md)，以便在紧急情况下访问重要数据。
+* 帮助家人设置[两步登录](../../account/two-step-login/setup-guides/two-step-login-methods.md)，以保护他们的 Bitwarden 账户。
+* 帮助家人设置[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)，以便在紧急情况下访问重要数据。
 {% endtab %}
 
 {% tab title="免费版" %}
@@ -279,7 +279,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 ## 了解管理控制台 <a href="#get-to-know-the-admin-console" id="get-to-know-the-admin-console"></a>
 
-创建后，您将进入管理控制台，这是所有共享和组织管理的中心枢纽。作为组织所有者，您可以查看**密码库**项目和[集合](../admin-console/organizations-overview.md#collections)、管理**成员**、运行**报告**、更改**计费设置**以及配置其他组织**设置**：
+创建后，您将进入管理控制台，这是所有共享和组织管理的中心枢纽。作为组织所有者，您可以查看**密码库**项目和[集合](../../admin-console/organizations-overview.md#collections)、管理**成员**、运行**报告**、更改**计费设置**以及配置其他组织**设置**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?_a=DAJCwlWIZAAB" %}
 免费组织管理控制台
@@ -293,7 +293,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 批量分配到集合
 {% endembed %}
 
-说到[集合](../admin-console/manage-shared-items/collections/about-collections.md)，它们是一种重要的结构，用于将相关的登录、备注、支付卡和身份组合在一起，以便与组织安全地共享：
+说到[集合](../../admin-console/manage-shared-items/collections/about-collections.md)，它们是一种重要的结构，用于将相关的登录、备注、支付卡和身份组合在一起，以便与组织安全地共享：
 
 * 组织可以定义对集合的访问权限，允许用户或群组只能访问他们需要的项目。
 * 存储在组织集合中的项目不属于任何个人用户，而是属于组织。
@@ -301,12 +301,12 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 * 作为免费组织，您最多可以拥有 2 个集合。
 
 {% hint style="success" %}
-数据也可以直接导入到您的组织中！[了解如何操作](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
+数据也可以直接导入到您的组织中！[了解如何操作](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md#import-to-your-organization)。
 {% endhint %}
 
 ## 管理成员和群组 <a href="#managing-members-and-groups" id="managing-members-and-groups"></a>
 
-作为所有者或管理员，您将负责直接从管理控制台的**成员**页面邀请其他成员加入您的组织（[了解更多](../admin-console/manage-members/user-management.md#invite)）：
+作为所有者或管理员，您将负责直接从管理控制台的**成员**页面邀请其他成员加入您的组织（[了解更多](../../admin-console/manage-members/user-management.md#invite)）：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7AJjR4oqEnCH3A89YYoWpH/0d8004ac55a7ce2dfb3525be56885e66/2024-12-03_14-02-20.png?_a=DAJCwlWIZAAB" %}
 邀请成员到组织

@@ -1,7 +1,7 @@
-# 了解 Secrets Manager
+# Secrets Manager
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/get-to-know-secrets-manager/)
+对应的[官方文档地址](https://bitwarden.com/help/courses/secrets-manager/)
 {% endhint %}
 
 按照本文和视频指南开始使用 Bitwarden Secrets Manager，并开始安全地存储、共享和注入基础架构机密到您的开发管道中。了解如何在 Bitwarden 产品之间切换、添加机密和授予机器访问权限。

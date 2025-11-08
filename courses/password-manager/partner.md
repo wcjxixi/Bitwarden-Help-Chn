@@ -1,7 +1,7 @@
-# Bitwarden 入门：经销商或 MSP
+# MSP 或经销商
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/get-started-provider/)
+对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-partner/)
 {% endhint %}
 
 在 Bitwarden，我们热爱我们的合作伙伴！ 如果您是一个想要开始为您的客户管理 Bitwarden 组织的托管服务提供商 (MSP) 或经销商，请不要再犹豫了：
@@ -33,7 +33,7 @@
 
 ## 邀请您的提供商团队 <a href="#invite-your-provider-team" id="invite-your-provider-team"></a>
 
-每一个全明星提供商都需要一个全明星团队。从**管理** → **成员**视图开始邀请您的员工来[充实您的客户管理团队](../provider-portal/provider-users.md#onboard-provider-users)：
+每一个全明星提供商都需要一个全明星团队。从**管理** → **成员**视图开始邀请您的员工来[充实您的客户管理团队](../../provider-portal/provider-users.md#onboard-provider-users)：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6E5GA111xdiHHkA0gb5LtG/5e5b5fddb5911e1b2ed468c1d49134ad/2024-12-05_09-27-45.png?_a=DAJCwlWIZAAB" %}
 添加提供商用户
@@ -43,17 +43,17 @@
 
 ## 入职客户 <a href="#onboard-clients" id="onboard-clients"></a>
 
-作为一名提供商成员管理员，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../admin-console/manage-shared-items/collections/about-collections.md)和[群组](../admin-console/manage-members/groups.md)结构、[导入数据](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)以及设置[策略](../admin-console/oversight-visibility/enterprise-policies.md)和 [SSO](../login-with-sso/about-login-with-sso.md)。
+作为一名提供商成员管理员，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../../admin-console/manage-shared-items/collections/about-collections.md)和[群组](../../admin-console/manage-members/groups.md)结构、[导入数据](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)以及设置[策略](../../admin-console/oversight-visibility/enterprise-policies.md)和 [SSO](../../login-with-sso/about-login-with-sso.md)。
 
-了解[如何创建新的客户组织](../provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../provider-portal/start-a-client-organization.md#initial-setup-procedure)。
+了解[如何创建新的客户组织](../../provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../../provider-portal/start-a-client-organization.md#initial-setup-procedure)。
 
 ## 管理客户订阅 <a href="#manage-client-subscriptions" id="manage-client-subscriptions"></a>
 
-作为提供商管理员，您的主要职责之一是管理客户组织的订阅和席位数量。[了解更多](../provider-portal/provider-billing.md)。
+作为提供商管理员，您的主要职责之一是管理客户组织的订阅和席位数量。[了解更多](../../provider-portal/provider-billing.md)。
 
 ## 深入了解客户管理 <a href="#dig-into-client-administration" id="dig-into-client-administration"></a>
 
-客户组织允许您的客户安全地共享密码、信用卡等，并为您提供代表他们管理这些东西的工具。您可以做很多事情，但这里有一些[您作为提供商需要处理的关键日常任务](../provider-portal/ongoing-administration.md)。
+客户组织允许您的客户安全地共享密码、信用卡等，并为您提供代表他们管理这些东西的工具。您可以做很多事情，但这里有一些[您作为提供商需要处理的关键日常任务](../../provider-portal/ongoing-administration.md)。
 {% endtab %}
 
 {% tab title="服务用户" %}
@@ -78,13 +78,13 @@
 
 ## 入职客户 <a href="#onboard-clients" id="onboard-clients"></a>
 
-作为一名提供商管理员​​，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../admin-console/manage-shared-items/collections/about-collections.md)和[群组](../admin-console/manage-members/groups.md)结构、[导入数据](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)以及设置[策略](../admin-console/oversight-visibility/enterprise-policies.md)和 [SSO](../login-with-sso/about-login-with-sso.md)。
+作为一名提供商管理员​​，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../../admin-console/manage-shared-items/collections/about-collections.md)和[群组](../../admin-console/manage-members/groups.md)结构、[导入数据](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)以及设置[策略](../../admin-console/oversight-visibility/enterprise-policies.md)和 [SSO](../../login-with-sso/about-login-with-sso.md)。
 
-了解[如何创建新的客户组织](../provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../provider-portal/start-a-client-organization.md#initial-setup-procedure)。
+了解[如何创建新的客户组织](../../provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../../provider-portal/start-a-client-organization.md#initial-setup-procedure)。
 
 ## 深入了解客户管理 <a href="#dig-into-client-administration" id="dig-into-client-administration"></a>
 
-客户组织允许您的客户安全地共享密码、信用卡等，并为您提供代表他们管理这些东西的工具。您可以做很多事情，但这里有一些[您作为提供商需要处理的关键日常任务](../provider-portal/ongoing-administration.md)。
+客户组织允许您的客户安全地共享密码、信用卡等，并为您提供代表他们管理这些东西的工具。您可以做很多事情，但这里有一些[您作为提供商需要处理的关键日常任务](../../provider-portal/ongoing-administration.md)。
 {% endtab %}
 
 {% tab title="经销商" %}
@@ -94,16 +94,16 @@
 
 ## 熟悉组织类型 <a href="#get-acquainted-with-organization-types" id="get-acquainted-with-organization-types"></a>
 
-作为经销商，您的大多数客户都会推行团队组织或企业组织。使用我们的[比较图表](../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-business-plans)了解每种计划的独特功能。
+作为经销商，您的大多数客户都会推行团队组织或企业组织。使用我们的[比较图表](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-business-plans)了解每种计划的独特功能。
 
 ## 了解 Bitwarden <a href="#learn-about-bitwarden" id="learn-about-bitwarden"></a>
 
 Bitwarden 受到数百万人的信赖，它可以帮助您的客户推动协作、提高生产力并安全地共享数据，无论是在同一组织内部还是外部。对于您的客户，Bitwarden Password Manager 提供的一些最受欢迎的功能包括：
 
-* **轻松导入**：从几乎所有密码管理解决方案中[导入](../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)您的公司的共享凭据。
-* **用户管理集成**：使用多种[跨域身份管理 (SCIM) 系统](../admin-console/manage-members/scim/about-scim.md)之一或[直接到目录](../admin-console/manage-members/directory-connector/about-directory-connector.md)集成，将最终用户同步到您的 Bitwarden 组织。
-* **SSO 登录**：通过任何 SAML 2.0 或 OIDC 身份提供程序，[使用现有的单点登录 (SSO) 对终端用户进行身份验证设置](../login-with-sso/about-login-with-sso.md)。
-* **健全的策略**：使用[企业策略](../admin-console/oversight-visibility/enterprise-policies.md)为您的最终用户执行安全实践，例如设置管理员[恢复丢失的账户](../admin-console/manage-members/account-recovery/about-account-recovery.md)的功能。
+* **轻松导入**：从几乎所有密码管理解决方案中[导入](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)您的公司的共享凭据。
+* **用户管理集成**：使用多种[跨域身份管理 (SCIM) 系统](../../admin-console/manage-members/scim/about-scim.md)之一或[直接到目录](../../admin-console/manage-members/directory-connector/about-directory-connector.md)集成，将最终用户同步到您的 Bitwarden 组织。
+* **SSO 登录**：通过任何 SAML 2.0 或 OIDC 身份提供程序，[使用现有的单点登录 (SSO) 对终端用户进行身份验证设置](../../login-with-sso/about-login-with-sso.md)。
+* **健全的策略**：使用[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)为您的最终用户执行安全实践，例如设置管理员[恢复丢失的账户](../../admin-console/manage-members/account-recovery/about-account-recovery.md)的功能。
 
 Bitwarden 致力于打造安全第一的产品。Password Manager 是：
 

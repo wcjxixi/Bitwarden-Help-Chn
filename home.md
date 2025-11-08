@@ -18,7 +18,7 @@
 
 ### 角色入门... <a href="#role-quickstart" id="role-quickstart"></a>
 
-<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center">个人用户</td><td><a href="miscellaneous/get-started-individual-user.md">get-started-individual-user.md</a></td></tr><tr><td align="center">管理员</td><td><a href="miscellaneous/get-started-administrator.md">get-started-administrator.md</a></td></tr><tr><td align="center">团队成员</td><td><a href="miscellaneous/get-started-team-member.md">get-started-team-member.md</a></td></tr><tr><td align="center">经销商或 MSP</td><td><a href="miscellaneous/get-started-provider.md">get-started-provider.md</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center">个人用户</td><td><a href="courses/password-manager/personal-user.md">personal-user.md</a></td></tr><tr><td align="center">管理员</td><td><a href="courses/password-manager/admin.md">admin.md</a></td></tr><tr><td align="center">团队成员</td><td><a href="courses/password-manager/team-member.md">team-member.md</a></td></tr><tr><td align="center">经销商或 MSP</td><td><a href="courses/password-manager/partner.md">partner.md</a></td></tr></tbody></table>
 
 ### Secrets Manager 快速入门... <a href="#secrets-manager-quickstart" id="secrets-manager-quickstart"></a>
 

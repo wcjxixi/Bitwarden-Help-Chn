@@ -1,7 +1,7 @@
-# Bitwarden 入门：团队成员
+# 团队成员
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/get-started-team-member/)
+对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-team-member/)
 {% endhint %}
 
 您已被邀请加入 Bitwarden 了吗？无论您是密码管理专家还是新手，您都可以使用以下步骤在工作场所使用 Bitwarden 获得成功：
@@ -31,11 +31,11 @@
 
 ### 受信任的设备 <a href="#trusted-devices" id="trusted-devices"></a>
 
-在其他情况下，登录 Bitwarden 需要将登录设备注册为受信任设备。当您加入组织时，您用来加入的设备会自动注册为受信任设备，但您应该[熟悉添加更多受信任设备的流程](../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)，这样您就可以随时随地安全地访问公司凭据了。
+在其他情况下，登录 Bitwarden 需要将登录设备注册为受信任设备。当您加入组织时，您用来加入的设备会自动注册为受信任设备，但您应该[熟悉添加更多受信任设备的流程](../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)，这样您就可以随时随地安全地访问公司凭据了。
 
 ## 了解您的密码库 <a href="#get-to-know-your-vault" id="get-to-know-your-vault"></a>
 
-Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../password-manager/your-vault/vault-items/vault-items.md)：
+Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../../password-manager/your-vault/vault-items/vault-items.md)：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}
 Password Manager 网页 App
@@ -45,9 +45,9 @@ Password Manager 网页 App
 
 ### 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
-您是否将密码保存在浏览器（如 Chrome 浏览器）中？或者您是从其他密码管理器来到 Bitwarden 的？ 您可以直接将登录信息导入到 Bitwarden，从而[避免了复制粘贴的痛苦](../secrets-manager/import-export/import-data.md)。
+您是否将密码保存在浏览器（如 Chrome 浏览器）中？或者您是从其他密码管理器来到 Bitwarden 的？ 您可以直接将登录信息导入到 Bitwarden，从而[避免了复制粘贴的痛苦](../../secrets-manager/import-export/import-data.md)。
 
-或者，如果您将密码保存在纸上或脑中，让我们开始[添加更多项目到您的密码库](../getting-started/getting-started-webvault.md#first-steps)吧。
+或者，如果您将密码保存在纸上或脑中，让我们开始[添加更多项目到您的密码库](../../getting-started/getting-started-webvault.md#first-steps)吧。
 
 ### 与您的企业共享 <a href="#share-with-your-team" id="share-with-your-team"></a>
 
@@ -59,21 +59,21 @@ Password Manager 网页 App
 
 共享项目被组合成集合，团队可根据业务单元（如「销售团队」）、业务功能（如「社交媒体登录」）、系统（如「AWS 凭据」）等进行组织。
 
-了解[如何与您的团队共享凭据](../password-manager/organization-members/sharing.md)。
+了解[如何与您的团队共享凭据](../../password-manager/organization-members/sharing.md)。
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 
-Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
+Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pamjhdWn7obh8UBxXcIPF/cb72c2921ce5f717cfd81bf157e50f4d/2024-12-02_13-59-23.png?_a=DAJCwlWIZAAB" %}
 通过浏览器扩展自动填充
 {% endembed %}
 
-最好[禁用浏览器的内置密码管理器](../getting-started/getting-started-browserext.md#disable-a-built-in-password-manager)，以确保 Bitwarden 始终是您的首选密码管理器。
+最好[禁用浏览器的内置密码管理器](../../getting-started/getting-started-browserext.md#disable-a-built-in-password-manager)，以确保 Bitwarden 始终是您的首选密码管理器。
 
 ## 随身携带 Bitwarden <a href="#take-bitwarden-on-the-go" id="take-bitwarden-on-the-go"></a>
 
-安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码：
+安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../../password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../../password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/53OzJZ4klYWemxUepHMtq4/5ab47331f033259bd2e82817a99e992f/2025-01-21_15-22-10.png?_a=DAJCwlWIZAAB" %}
 iOS 和 Android 上的 Bitwarden
@@ -81,7 +81,7 @@ iOS 和 Android 上的 Bitwarden
 
 ## 将安全浏览带入家庭 <a href="#bring-secure-browsing-home" id="bring-secure-browsing-home"></a>
 
-一些企业组织为成员提供了一个免费的赞助家庭组织，这样员工就可以与最多 5 位朋友或家人安全地共享个人密码箱项目。了解[如何兑换您的赞助](../plans-and-pricing/password-manager/redeem-families-sponsorship.md#redeem-your-sponsorship)，确保您的家人实践安全浏览。
+一些企业组织为成员提供了一个免费的赞助家庭组织，这样员工就可以与最多 5 位朋友或家人安全地共享个人密码箱项目。了解[如何兑换您的赞助](../../plans-and-pricing/password-manager/redeem-families-sponsorship.md#redeem-your-sponsorship)，确保您的家人实践安全浏览。
 {% endtab %}
 
 {% tab title="团队" %}
@@ -106,7 +106,7 @@ iOS 和 Android 上的 Bitwarden
 
 ## 了解您的密码库 <a href="#get-to-know-your-vault" id="get-to-know-your-vault"></a>
 
-Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../password-manager/your-vault/vault-items/vault-items.md)：
+Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../../password-manager/your-vault/vault-items/vault-items.md)：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}
 Password Manager 网页 App
@@ -116,9 +116,9 @@ Password Manager 网页 App
 
 ### 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
-您是否将密码保存在浏览器（如 Chrome 浏览器）中？或者您是从其他密码管理器来到 Bitwarden 的？ 您可以直接将登录信息导入到 Bitwarden，从而[避免了复制粘贴的痛苦](../secrets-manager/import-export/import-data.md)。
+您是否将密码保存在浏览器（如 Chrome 浏览器）中？或者您是从其他密码管理器来到 Bitwarden 的？ 您可以直接将登录信息导入到 Bitwarden，从而[避免了复制粘贴的痛苦](../../secrets-manager/import-export/import-data.md)。
 
-或者，如果您将密码保存在纸上或脑中，让我们开始[添加更多项目到您的密码库](../getting-started/getting-started-webvault.md#first-steps)吧。
+或者，如果您将密码保存在纸上或脑中，让我们开始[添加更多项目到您的密码库](../../getting-started/getting-started-webvault.md#first-steps)吧。
 
 ### 与您的团队共享 <a href="#share-with-your-team" id="share-with-your-team"></a>
 
@@ -130,21 +130,21 @@ Password Manager 网页 App
 
 共享项目被组合成集合，团队可根据业务单元（如「销售团队」）、业务功能（如「社交媒体登录」）、系统（如「AWS 凭据」）等进行组织。
 
-了解[如何与您的团队共享凭据](../password-manager/organization-members/sharing.md)。
+了解[如何与您的团队共享凭据](../../password-manager/organization-members/sharing.md)。
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 
-Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
+Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pamjhdWn7obh8UBxXcIPF/cb72c2921ce5f717cfd81bf157e50f4d/2024-12-02_13-59-23.png?_a=DAJCwlWIZAAB" %}
 通过浏览器扩展自动填充
 {% endembed %}
 
-最好[禁用浏览器的内置密码管理器](../getting-started/getting-started-browserext.md#disable-a-built-in-password-manager)，以确保 Bitwarden 始终是您的首选密码管理器。
+最好[禁用浏览器的内置密码管理器](../../getting-started/getting-started-browserext.md#disable-a-built-in-password-manager)，以确保 Bitwarden 始终是您的首选密码管理器。
 
 ## 随身携带 Bitwarden <a href="#take-bitwarden-on-the-go" id="take-bitwarden-on-the-go"></a>
 
-安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码：
+安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../../password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../../password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/53OzJZ4klYWemxUepHMtq4/5ab47331f033259bd2e82817a99e992f/2025-01-21_15-22-10.png?_a=DAJCwlWIZAAB" %}
 iOS 和 Android 上的 Bitwarden
@@ -173,7 +173,7 @@ iOS 和 Android 上的 Bitwarden
 
 ## 了解您的密码库 <a href="#get-to-know-your-vault" id="get-to-know-your-vault"></a>
 
-Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../password-manager/your-vault/vault-items/vault-items.md)：
+Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../../password-manager/your-vault/vault-items/vault-items.md)：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}
 Password Manager 网页 App
@@ -183,9 +183,9 @@ Password Manager 网页 App
 
 ### 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
-您是否将密码保存在浏览器（如 Chrome 浏览器）中？或者您是从其他密码管理器来到 Bitwarden 的？ 您可以直接将登录信息导入到 Bitwarden，从而[避免了复制粘贴的痛苦](../secrets-manager/import-export/import-data.md)。
+您是否将密码保存在浏览器（如 Chrome 浏览器）中？或者您是从其他密码管理器来到 Bitwarden 的？ 您可以直接将登录信息导入到 Bitwarden，从而[避免了复制粘贴的痛苦](../../secrets-manager/import-export/import-data.md)。
 
-或者，如果您将密码保存在纸上或脑中，让我们开始[添加更多项目到您的密码库](../getting-started/getting-started-webvault.md#first-steps)吧。
+或者，如果您将密码保存在纸上或脑中，让我们开始[添加更多项目到您的密码库](../../getting-started/getting-started-webvault.md#first-steps)吧。
 
 ### 与您的家庭共享 <a href="#share-with-your-family" id="share-with-your-family"></a>
 
@@ -197,21 +197,21 @@ Password Manager 网页 App
 
 共享项目被组合成集合，家庭可根据谁具有访问权限的单元（如「仅限父母」）、包含的登录类型（如「流媒体登录」）等进行组织。
 
-了解[如何与您的团队共享凭据](../password-manager/organization-members/sharing.md)。
+了解[如何与您的团队共享凭据](../../password-manager/organization-members/sharing.md)。
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 
-Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
+Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pamjhdWn7obh8UBxXcIPF/cb72c2921ce5f717cfd81bf157e50f4d/2024-12-02_13-59-23.png?_a=DAJCwlWIZAAB" %}
 通过浏览器扩展自动填充
 {% endembed %}
 
-最好[禁用浏览器的内置密码管理器](../getting-started/getting-started-browserext.md#disable-a-built-in-password-manager)，以确保 Bitwarden 始终是您的首选密码管理器。
+最好[禁用浏览器的内置密码管理器](../../getting-started/getting-started-browserext.md#disable-a-built-in-password-manager)，以确保 Bitwarden 始终是您的首选密码管理器。
 
 ## 随身携带 Bitwarden <a href="#take-bitwarden-on-the-go" id="take-bitwarden-on-the-go"></a>
 
-安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码：
+安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../../password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../../password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/53OzJZ4klYWemxUepHMtq4/5ab47331f033259bd2e82817a99e992f/2025-01-21_15-22-10.png?_a=DAJCwlWIZAAB" %}
 iOS 和 Android 上的 Bitwarden

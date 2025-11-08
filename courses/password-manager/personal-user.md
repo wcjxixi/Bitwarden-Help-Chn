@@ -1,7 +1,7 @@
-# Bitwarden 入门：个人用户
+# 个人用户
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/get-started-individual-user/)
+对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-personal/)
 {% endhint %}
 
 欢迎加入 Bitwarden 大家庭！您的安全密码管理之旅从这里开始：
@@ -25,11 +25,11 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 使用两步登录（也称双重身份验证或 2FA）是除使用强大的主密码外保护数据的最重要方法。
 
-这一点非常重要，因此我们提供了一些免费选项，包括 [Bitwarden Authenticator](../bitwarden-authenticator/bitwarden-authenticator.md)（一个独立的移动验证器）。
+这一点非常重要，因此我们提供了一些免费选项，包括 [Bitwarden Authenticator](../../bitwarden-authenticator/bitwarden-authenticator.md)（一个独立的移动验证器）。
 
 ## 了解密码库 <a href="#get-to-know-your-vault" id="get-to-know-your-vault"></a>
 
-Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../password-manager/your-vault/vault-items/vault-items.md)：
+Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../../password-manager/your-vault/vault-items/vault-items.md)：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}
 Password Manager 网页 App
@@ -39,23 +39,23 @@ Password Manager 网页 App
 
 ### 导入数据 <a href="#import-your-data" id="import-your-data"></a>
 
-您是否将密码保存在浏览器（如 Chrome 浏览器）中？或者您是从其他密码管理器来到 Bitwarden 的？ 您可以直接将登录信息导入到 Bitwarden，从而[避免了复制粘贴的痛苦](../secrets-manager/import-export/import-data.md)。
+您是否将密码保存在浏览器（如 Chrome 浏览器）中？或者您是从其他密码管理器来到 Bitwarden 的？ 您可以直接将登录信息导入到 Bitwarden，从而[避免了复制粘贴的痛苦](../../secrets-manager/import-export/import-data.md)。
 
-或者，如果您将密码保存在纸上或脑中，让我们开始[添加更多项目到您的密码库](../getting-started/getting-started-webvault.md#first-steps)吧。
+或者，如果您将密码保存在纸上或脑中，让我们开始[添加更多项目到您的密码库](../../getting-started/getting-started-webvault.md#first-steps)吧。
 
 ## 浏览网页时使用 Bitwarden <a href="#use-bitwarden-while-browsing" id="use-bitwarden-while-browsing"></a>
 
-Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
+Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1pamjhdWn7obh8UBxXcIPF/cb72c2921ce5f717cfd81bf157e50f4d/2024-12-02_13-59-23.png?_a=DAJCwlWIZAAB" %}
 通过浏览器扩展自动填充
 {% endembed %}
 
-最好[禁用浏览器的内置密码管理器](../getting-started/getting-started-browserext.md#disable-a-built-in-password-manager)，以确保 Bitwarden 始终是您的首选密码管理器。
+最好[禁用浏览器的内置密码管理器](../../getting-started/getting-started-browserext.md#disable-a-built-in-password-manager)，以确保 Bitwarden 始终是您的首选密码管理器。
 
 ## 随身携带 Bitwarden <a href="#take-bitwarden-on-the-go" id="take-bitwarden-on-the-go"></a>
 
-安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码。
+安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../../password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../../password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/53OzJZ4klYWemxUepHMtq4/5ab47331f033259bd2e82817a99e992f/2025-01-21_15-22-10.png?_a=DAJCwlWIZAAB" %}
 iOS 和 Android 上的 Bitwarden
