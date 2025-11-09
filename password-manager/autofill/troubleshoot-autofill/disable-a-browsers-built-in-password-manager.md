@@ -4,13 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/disable-browser-autofill/)
 {% endhint %}
 
-如果您是 Bitwarden 的新手，很可能您使用的网页浏览器一直在保存和自动填充你的密码。大多数网页浏览器默认启用了这一功能，但专家们普遍认为，内置的密码管理器比 Bitwarden 这样的专业解决方案要脆弱。
-
-鉴于这个原因，并且由于一个活动的内置密码管理器可能会干扰您的 Bitwarden 体验，我们建议禁用网页浏览器的内置密码管理器。
+如果您是 Bitwarden 的新手，很可能您使用的网页浏览器一直在保存和自动填充你的密码。大多数网页浏览器默认启用了这一功能，但专家们普遍认为，[内置的密码管理器比 Bitwarden 这样的专业解决方案要脆弱](https://www.wired.com/2016/08/browser-password-manager-probably-isnt-enough/)。我们建议停用浏览器的内置密码管理器，以提高您的安全性并防止干扰您的 Bitwarden 体验。
 
 {% hint style="info" %}
 Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设备上部署 Bitwarden 浏览器扩展](../../../admin-console/deploy-client-apps/deploy-browser-extensions/)的更多信息。
 {% endhint %}
+
+## 手动禁用浏览器的内置密码管理器 <a href="#manually-disable-a-browsers-built-in-password-manager" id="manually-disable-a-browsers-built-in-password-manager"></a>
 
 了解如何禁用主流浏览器的内置密码管理器：
 
@@ -38,9 +38,9 @@ Chrme 已保存的密码
 {% endtab %}
 
 {% tab title="Firefox" %}
-在 Firefox 中，导航到**首选项** → **隐私和安全**，然后向下滚动到**登录信息与密码**部分。在此部分，取消勾选所有预先勾选的选项：
+在 Firefox 中，导航到**首选项** → **隐私和安全**，然后向下滚动到**密码**和**自动填充**部分。在此部分，取消勾选所有预先勾选的选项：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/72yK5CCMKa9pcfCcdvUZqL/43842f5ab8ed69f16b05513ed16fe864/firefox-disable.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/72yK5CCMKa9pcfCcdvUZqL/459febc76765636f28465ae4875998bd/2025-08-06_16-51-03.png?w=764&fm=avif" %}
 Firefox 密码选项
 {% endembed %}
 
@@ -48,13 +48,13 @@ Firefox 密码选项
 Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/security-tools/vault-health-reports.md)，如「泄露密码」报告和「重复使用的密码」报告，并**为所有用户提供免费的数据泄露报告**。
 {% endhint %}
 
-您还可以通过选择**已保存的登录信息...** 按钮来了解 Firefox 已经保存了哪些登录信息：
+您还可以通过选择**已保存的密码**按钮来了解 Firefox 已经保存了哪些登录信息：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5UrQ6bGCjV0VdHvy6rzece/576d7d25e03348dee8f06a9af5badb25/firefox-delete.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/5UrQ6bGCjV0VdHvy6rzece/a2148eaa8dcaaf4f7158e8d806dcb97b/2025-08-06_16-53-15.png?w=550&fm=avif" %}
 Firefox 已保存的登录信息
 {% endembed %}
 
-如果你还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-firefox.md)，以便将来导入 Bitwarden。导出后，您应该从 Firefox 中 **🗑️移除**这些密码。
+如果您还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-firefox.md)，以便将来导入 Bitwarden。导出后，您应该从 Firefox 中 **🗑️移除**这些密码。
 {% endtab %}
 
 {% tab title="Safari" %}
@@ -119,3 +119,21 @@ Tor 已保存的密码
 在密码管理器部分，macOS 用户可以选择使用 Bitwarden。[此处](../../../miscellaneous/duckduckgo-macos-browser-integration.md)了解更多有关 Bitwarden DuckDuckGo macOS 浏览器集成的信息。
 {% endtab %}
 {% endtabs %}
+
+## 将 Bitwarden 设置为 Chrome 中的默认密码管理器 <a href="#make-bitwarden-your-default-password-manager-in-chrome" id="make-bitwarden-your-default-password-manager-in-chrome"></a>
+
+{% hint style="info" %}
+将 **Bitwarden 设置为默认密码管理器**选项仅适用于 Chrome 浏览器扩展。对于其他浏览器，[请手动禁用其内置密码管理器](disable-a-browsers-built-in-password-manager.md#manually-disable-a-browsers-built-in-password-manager)。
+{% endhint %}
+
+Chrome 上的 Bitwarden 浏览器扩展有一个内置设置，可以禁用浏览器的默认密码管理器。要使用此设置：
+
+1、导航至 Bitwarden 浏览器扩展中的 **⚙️设置**选项卡，然后选择**自动填充**。
+
+2、点击以启用**将 Bitwarden 设置为您的默认密码管理器**。
+
+{% embed url="https://bitwarden.com/assets/5fyBdu5X6JCLu2UsaqYUO0/abfb44cb460314112805bfd0312c1f8f/2025-10-14_12-44-35.png?w=459&fm=avif" %}
+将 Bitwarden 设置为默认密码管理器
+{% endembed %}
+
+3、屏幕上将出现一个对话框，选择**允许**以授予 Bitwarden 更改浏览器设置的权限。

@@ -1,10 +1,10 @@
-# 用于自动填充的 URI
+# 用于自动填充的 URI 结构
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/uri-match-detection/)
 {% endhint %}
 
-密码库中的任何登录项目都可以具有一个或多个 URI（Uniform Resource Identifier：统一资源标识符）。URI 可以是网站地址（即 URL）、服务器 IP 地址、移动 App 包 ID 等。在网页 App 和浏览器扩展的**编辑登录**视图中，如果有多个网站 URI，可以使用拖放按钮重新排序，以便更好地进行视觉组织：
+密码库中的任何登录项目都可以具有一个或多个 URI（Uniform Resource Identifier：统一资源标识符）。URI 可以是网站地址（即 URL）、服务器 IP 地址、[移动 App 包 ID](forming-uris-for-autofill.md#uris-for-mobile-apps) 等。在网页 App 和浏览器扩展的**编辑登录**视图中，如果有多个网站 URI，可以使用拖放按钮重新排序，以便更好地进行视觉组织：
 
 {% embed url="https://bitwarden.com/assets/aDbOEJ6x8G44gkDYcuHJ6/dfef7ac49894805dd0e1e718452e6a60/2025-03-25_09-45-56.png?w=967&fm=avif&q=80" %}
 网页 App 中登录项目的 URI 字段
@@ -29,7 +29,9 @@
 * `http://` 或 `https://` 引用网站地址（例如：`https://www.github.com`）
 * `androidapp://` 引用 Android App 的包 ID 或名称（例如：`androidapp://com.instagram.android`）
 
-### 获取移动 App 的 URI <a href="#uris-for-mobile-apps" id="uris-for-mobile-apps"></a>
+### 移动 App URI <a href="#uris-for-mobile-apps" id="uris-for-mobile-apps"></a>
+
+获取 iOS 和 Android 设备上安装的 App 的 URI 可能比较麻烦。以下是在 iOS 和 Android App 上获取 URI 的一些提示：
 
 {% tabs %}
 {% tab title="iOS" %}
@@ -68,17 +70,21 @@
 URI 示意图
 {% endembed %}
 
+{% hint style="info" %}
+由于 Android API 提供的自动填充服务的限制，Android Password Manager 客户端当前无法基于**端口**或**路径**来匹配 URI。
+{% endhint %}
+
 ### 默认匹配检测 <a href="#default-match-detection" id="default-match-detection"></a>
 
-Bitwarden 浏览器扩展和移动应用程序可以通过导航到 **⚙️设置** → **选项** → **默认 URI 匹配检测**，从下面列出的选项中选择一个**默认匹配检测**行为。您也可以为各个项目设置匹配检测行为，这将覆盖全局默认值。
+Bitwarden 浏览器扩展和移动 App 可以通过导航到 **⚙️设置** → **选项** → **默认 URI 匹配检测**，从下面列出的选项中选择一个**默认匹配检测**行为。您也可以在所有 Bitwarden App 中为各个项目设置匹配检测行为，这将覆盖全局默认值。
 
-默认情况下，Bitwarden 使用**基础域**匹配作为默认选项。
+**基础域名**匹配是默认选项。
 
 ### 基础域名 <a href="#base-domain" id="base-domain"></a>
 
-选择**基础域名**，当登录项目的 URI 值的顶级域名和第二级名与检测到的资源相匹配时，Bitwarden 将弹出提示以提供自动填充。
+选择**基础域名**，当 URI 的顶级域名 (`.com`) 和二级域名 (`google`) 与检测到的资源相匹配时，Bitwarden 将弹出提示提供自动填充。实施基础域名匹配可与任何国家/地区代码顶级域名（例如 `.it` 或 `.co.uk`）配合使用。对于使用唯一域名（例如不同国家/地区）的站点，请创建其他基本域名条目。
 
-例如，URI 为 `https://google.com`，使用基础域匹配检测：
+例如，URI 为 `https://google.com`，使用基础域名匹配检测：
 
 | URL                           | 自动填充？  |
 | ----------------------------- | ------ |
@@ -98,7 +104,11 @@ Bitwarden 浏览器扩展和移动应用程序可以通过导航到 **⚙️设�
 
 ### 主机 <a href="#host" id="host"></a>
 
-选择**主机**，当登录项目的 URI 值的主机名和端口（若指定了）与检测到的资源相匹配时，Bitwarden 将弹出提示以提供自动填充。
+{% hint style="info" %}
+由于 Android API 提供的自动填充服务的限制，Android Password Manager 客户端当前无法基于**端口**或**路径**来匹配 URI。
+{% endhint %}
+
+选择**主机**，当主机名和端口（若指定了）与检测到的资源相匹配时，Bitwarden 将弹出提示以提供自动填充。
 
 例如，URI 为 `https://sub.domain.com:4000`，使用主机匹配检测：
 
