@@ -6,10 +6,12 @@
 
 {% embed url="https://vimeo.com/828094070" %}
 
+在[此处](../../admin-console/more/organization-sponsored-families-plans.md)了解更多有关企业赞助的家庭组织的信息。
+
 [企业组织](../../admin-console/organizations-overview.md#types-of-organizations)的成员可以获得一个**免费的家庭组织**赞助，该赞助可以应用于一个新的或现有的家庭组织，并可直接从网页密码库兑换。
 
 {% hint style="success" %}
-企业组织可通过[策略](../../admin-console/oversight-visibility/enterprise-policies.md)关闭该功能。
+企业组织可通过[策略](../../admin-console/oversight-visibility/enterprise-policies.md)停用该功能。
 {% endhint %}
 
 使用**家庭组织**，您可以在自己和最多 5 位朋友或家人之间安全地共享密码库数据。家庭组织包含用于所有 6 位用户的高级 Bitwarden 功能，包括[高级两步登录方式](../../account/two-step-login/setup-guides/two-step-login-methods.md)、[加密文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)、[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)及[更多](about-bitwarden-plans.md#compare-the-plans)其他功能。
@@ -17,7 +19,7 @@
 本文将帮助组织成员兑换他们的赞助，但如果您是自托管 Bitwarden 企业组织的管理员，则需要完成[这些步骤](../../self-hosting/deploy-and-configure/optional-features/self-hosting-families-sponsorships.md)，为您的成员启用家庭赞助。
 
 {% hint style="info" %}
-如果您已加入 [2019 版年家庭计划](../updates-to-bitwarden-plans-2019-2020.md#families-organizations)，您仍然可以兑换赞助，但您的组织不会更新以包含 2020 年版计划中所包含的功能。要升级当前计划，请导航至**订阅** → **计费**页面然后选择**升级计划**。
+已兑换免费家庭组织赞助的用户仍可能收到 Bitwarden 的续订提醒电子邮件。只要您是赞助企业组织的活跃成员，您就可以忽略这些电子邮件。如果您不再是赞助企业组织的成员，请导航至**计费** → **付款方式**，然后检查付款方式是否有效。
 {% endhint %}
 
 ## 兑换您的赞助 <a href="#redeem-your-sponsorship" id="redeem-your-sponsorship"></a>
@@ -84,8 +86,16 @@
 {% endembed %}
 
 接受邀请后，您的旧订阅将被企业赞助取代。只要您是赞助组织的活跃成员，您就不必为家庭组织支付任何费用，除非您添加了**额外的存储空间**。
+
+{% hint style="info" %}
+如果您已加入 [2019 版年家庭计划](../updates-to-bitwarden-plans-2019-2020.md#families-organizations)，您仍然可以兑换赞助，但您的组织不会更新以包含 2020 年版计划中所包含的功能。要升级当前计划，请导航至**订阅** → **计费**页面然后选择**升级计划**。
+{% endhint %}
 {% endtab %}
 {% endtabs %}
+
+{% hint style="success" %}
+**恭喜！**&#x5982;果您不熟悉 Bitwarden 家庭组织的使用，我们建议您查看[这篇文章](../../admin-console/organizations-quick-start.md#get-to-know-your-organization)以了解基础知识。
+{% endhint %}
 
 ## FAQ <a href="#can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise" id="can-i-redeem-with-the-account-thats-a-member-of-the-sponsoring-enterprise"></a>
 
@@ -131,8 +141,8 @@
 
 ### 问：如果我的组织在美国服务器上，我能否在欧盟服务器上兑换家庭组织？ <a href="#q-if-my-organization-is-on-a-us-server-can-i-redeem-a-families-organization-on-the-eu-server" id="q-if-my-organization-is-on-a-us-server-can-i-redeem-a-families-organization-on-the-eu-server"></a>
 
-答：不能。家庭计划赞助只能在与赞助企业组织相同的云服务器上兑换。如果您的企业组织已从一个云服务器迁移到另一个云服务器，则必须在正确的云服务器上赞助新的家庭组织。有关迁移组织的更多信息，请参阅 [Bitwarden 迁移指南](../../business-resources/teams-and-enterprise-migration-guide.md)。
+**答：**&#x4E0D;能。家庭计划赞助只能在与赞助企业组织相同的云服务器上兑换。如果您的企业组织已从一个云服务器迁移到另一个云服务器，则必须在正确的云服务器上赞助新的家庭组织。有关迁移组织的更多信息，请参阅 [Bitwarden 迁移指南](../../business-resources/teams-and-enterprise-migration-guide.md)。
 
 ### 问：如何移除家庭组织？ <a href="#q-how-do-i-remove-a-families-organization" id="q-how-do-i-remove-a-families-organization"></a>
 
-答：要移除家庭组织，请登录作为企业组织成员的账户，然后导航到**设置** → **免费 Bitwarden 家庭**。选择与赞助的家庭组织相关的 **⚙️**齿轮图标，然后选择**移除**。
+**答：**&#x8981;移除家庭组织，请登录到属于企业组织成员的账户中，然后导航到**设置** → **免费 Bitwarden 家庭**。选择与赞助的家庭组织相关的 **⚙️**齿轮图标，然后选择**移除**。

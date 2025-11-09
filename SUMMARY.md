@@ -376,7 +376,7 @@
 * [计划和定价](plans-and-pricing/README.md)
   * [Password Manager](plans-and-pricing/password-manager/README.md)
     * [Password Manager 计划](plans-and-pricing/password-manager/about-bitwarden-plans.md)
-    * [从个人升级到组织](plans-and-pricing/password-manager/upgrade-from-individual-to-organization.md)
+    * [从个人版升级到组织版](plans-and-pricing/password-manager/upgrade-from-individual-to-organization.md)
     * [兑换家庭赞助](plans-and-pricing/password-manager/redeem-families-sponsorship.md)
     * [高级会员续费](plans-and-pricing/password-manager/premium-renewal.md)
   * [Secrets Manager](plans-and-pricing/secrets-manager/README.md)

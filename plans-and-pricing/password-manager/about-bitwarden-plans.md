@@ -21,7 +21,7 @@
 升级您的个人账户，以解锁高级密码安全和管理功能，包括高级 2FA 选项、Bitwarden 身份验证器 (TOTP)、加密文件附件、紧急访问等。立即[现在](https://vault.bitwarden.com/#/?premium=purchase)。
 
 {% hint style="info" %}
-高级版不包含安全数据共享功能。要使用共享功能，您需要使用组织（[免费](about-bitwarden-plans.md#free-organizations)、[家庭](about-bitwarden-plans.md#families-organizations)、[团队](about-bitwarden-plans.md#teams-organizations)或[企业](about-bitwarden-plans.md#enterprise-organizations)）订阅。付费组织（[家庭](about-bitwarden-plans.md#families-organizations)、[团队](about-bitwarden-plans.md#teams-organizations)或[企业](about-bitwarden-plans.md#enterprise-organizations)）订阅为注册于该组织下的所有用户提供了高级功能。
+高级版不包含安全数据共享功能。要使用共享功能，您需要使用组织（[免费版](about-bitwarden-plans.md#free-organizations)、[家庭版](about-bitwarden-plans.md#families-organizations)、[团队版](about-bitwarden-plans.md#teams-organizations)或[企业版](about-bitwarden-plans.md#enterprise-organizations)）订阅。付费组织（[家庭版](about-bitwarden-plans.md#families-organizations)、[团队版](about-bitwarden-plans.md#teams-organizations)或[企业版](about-bitwarden-plans.md#enterprise-organizations)）订阅为注册于该组织下的所有用户提供了高级功能。
 {% endhint %}
 
 高级个人订阅按年计费。
@@ -90,7 +90,7 @@ Bitwarden 商业计划旨在满足小型团队、成长型公司和大型企业�
 
 ### 商业计划比较 <a href="#compare-business-plans" id="compare-business-plans"></a>
 
-在下表中，「高级功能」（包含在**团队组织**和**企业组织**中）使用星号 (\*) 标记。
+在下面的表格中，「高级功能」（包含在**团队组织**和**企业组织**中）使用星号 (\*) 标记。
 
 | 商业计划包含的功能                                                                                    | 团队组织                               | 企业组织                              |
 | -------------------------------------------------------------------------------------------- | ---------------------------------- | --------------------------------- |
