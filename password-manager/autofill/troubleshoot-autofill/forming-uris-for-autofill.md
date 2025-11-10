@@ -1,4 +1,4 @@
-# 用于自动填充的 URI 结构
+# 自动填充 URI 的结构
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/uri-match-detection/)
@@ -198,7 +198,7 @@ URI 为 `^https://[a-z]+\.wikipedia\.org/w/index\.php`，使用正则表达式�
 
 可以在网页密码库的**账户设置** → **域名规则**页面设置等效域名，这样就可以链接域名，以便于自动填充。例如，将 `turbotax.com` 和 `intuit.com` 设置为等效域名，意味着，将 `turbotax.com` 作为 URI 保存的密码库项目也将在 `intuit.com` 上提供自动填充。
 
-Bitwarden 维护一个经过审核的主要网站的默认等效域名列表，例如 apple.com 和 icloud.com，以改善您的自动填填充体验。您可以将鼠标悬停在任何给定的等效域名上，然后使用 **⚙️**选项菜单选择 **✘排除**，以禁用该等效域名。
+Bitwarden 维护一个经过审核的主要网站的默认等效域名列表，例如 `apple.com` 和 `icloud.com`，以改善您的自动填填充体验。您可以将鼠标悬停在任何给定的等效域名上，然后使用 **⚙️**选项菜单选择 **✘排除**，以禁用该等效域名。
 
 {% hint style="success" %}
 对于使用[精确匹配检测](forming-uris-for-autofill.md#exact)的项目，等效域名将被忽略。例如，一个保存的 URI 为 `apple.com` 并设置为**精确**的项目，将不会为 `icloud.com` 提供自动填充，即使 `icloud.com` 是默认的等效域名。
