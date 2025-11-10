@@ -72,7 +72,7 @@
       * [对指定网站屏蔽自动填充](password-manager/autofill/more-autofill-options/blocking-autofill.md)
       * [对指定网站屏蔽自动保存](password-manager/autofill/more-autofill-options/exclude-domains.md)
     * [自动填充故障排除](password-manager/autofill/troubleshoot-autofill/README.md)
-      * [用于自动填充的 URI 结构](password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md)
+      * [自动填充 URI 的结构](password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md)
       * [禁用浏览器的内置密码管理器](password-manager/autofill/troubleshoot-autofill/disable-a-browsers-built-in-password-manager.md)
       * [Android 自动填充故障排除](password-manager/autofill/troubleshoot-autofill/troubleshooting-android-auto-fill.md)
     * [自动填充 FAQ](password-manager/autofill/auto-fill-faqs.md)
