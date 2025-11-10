@@ -12,3 +12,4 @@
 
 ## 密码管理之外 <a href="#beyond-password-management" id="beyond-password-management"></a>
 
+<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center">Secrets Manager</td><td><a href="get-to-know-secrets-manager.md">get-to-know-secrets-manager.md</a></td></tr><tr><td align="center">Passwordless.dev</td><td><a href="get-to-know-passwordless.dev.md">get-to-know-passwordless.dev.md</a></td></tr></tbody></table>
