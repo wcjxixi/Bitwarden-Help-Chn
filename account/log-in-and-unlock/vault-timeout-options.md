@@ -15,25 +15,25 @@
 导航至**设置** → **账户安全**以设置您的密码库超时时间和密码库超时动作。
 {% endtab %}
 
-{% tab title="移动端" %}
+{% tab title="移动 App" %}
 导航至**设置** → **账户安全**以设置您的会话超时时间和密码库超时动作。
 {% endtab %}
 
-{% tab title="桌面端" %}
+{% tab title="桌面 App" %}
 * 在 macOS 上，导航至 **Bitwarden** → **设置**以设置您的密码库超时时间和密码库超时动作。
 * 在 Windows 和 Linux 上，导航至**文件** → **设置**以设置您的密码库超时时间和密码库超时动作。
 {% endtab %}
 {% endtabs %}
 
 {% hint style="success" %}
-如果您在 Bitwarden 桌面应用程序中登录了多个账户，超时时间和超时行为需根据每个账户分别设置。[了解更多](more-log-in-options/account-switching.md)。
+如果您在 Bitwarden 桌面 App 中登录了多个账户，超时时间和超时行为需根据每个账户分别设置。[了解更多](more-log-in-options/account-switching.md)。
 {% endhint %}
 
 在配置密码库超时设置时，您可以同时设置[超时时间](vault-timeout-options.md#vault-timeout)和[超时行为](vault-timeout-options.md#vault-timeout-action)。
 
 ## 密码库超时时间 <a href="#vault-timeout" id="vault-timeout"></a>
 
-密码库超时时间规定了 Bitwarden 在超时之前的非活动状态的时长。「不活动」是由与 Bitwarden 交互后的时间确定的，而不是系统空闲时间。每一种应用程序都有标准选项（例如 1 分钟、15 分钟、1 小时）和自定义时间输入，以及特定于某些 App 的选项（例如在系统空闲时）。企业组织还可以实施[最大允许的超时时长](../../admin-console/oversight-visibility/enterprise-policies.md#vault-timeout)选项。
+密码库超时时间规定了 Bitwarden 在超时之前的非活动状态的时长。「不活动」是由与 Bitwarden 交互后的时间确定的，而不是系统空闲时间。每一种 App 都有标准选项（例如 1 分钟、15 分钟、1 小时）和自定义时间输入，以及特定于某些 App 的选项（例如在系统空闲时）。企业组织还可以实施[最大允许的超时时长](../../admin-console/oversight-visibility/enterprise-policies.md#vault-timeout)选项。
 
 {% hint style="info" %}
 在 Chromebook 上，无法完全关闭或重新启动浏览器。因此，使用**浏览器重启时**选项，只会在您重新启动设备时才会锁定扩展程序。
@@ -41,7 +41,7 @@
 对于 Microsoft Edge 用户，关闭浏览器时不会重新启动浏览器。为了使 Bitwarden 密码库在浏览器重启时超时，必须禁用 Microsoft Edge 的两个设置：
 
 * **启动增强**
-* **在 Microsoft Edge 关闭后继续运行后台扩展和应用**
+* **在 Microsoft Edge 关闭后继续运行后台扩展和应用程序**
 {% endhint %}
 
 ### 网页版和浏览器扩展超时 <a href="#web-and-browser-extension-timeouts" id="web-and-browser-extension-timeouts"></a>

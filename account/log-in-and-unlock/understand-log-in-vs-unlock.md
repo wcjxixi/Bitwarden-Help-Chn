@@ -8,7 +8,7 @@
 
 ## 登录 <a href="#logging-in" id="logging-in"></a>
 
-**登录** Bitwarden 可以获取已加密的密码库数据，并在本地设备上进行解密。在实践中，这意味着两件事：
+**登录到** Bitwarden 可以获取已加密的密码库数据，并在本地设备上进行解密。在实践中，这意味着两件事：
 
 1、登录时始终需要使用您的主密码或[使用设备登录](more-log-in-options/log-in-with-device.md)，以获取解密密码库数据所需的[账户加密密钥](../../security/encryption/encryption-key-rotation.md)。
 
