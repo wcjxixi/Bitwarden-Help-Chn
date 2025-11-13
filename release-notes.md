@@ -36,9 +36,16 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **组织默认 URI 匹配检测**：组织所有者和管理员现在可以为其成员选择默认的 URI 匹配检测方式。成员仍然可以编辑单个登录项目的 URI 匹配检测方式。
+* **组织默认 URI 匹配检测**：组织所有者和管理员现在可以为其成员选择[默认的 URI 匹配检测方式](admin-console/oversight-visibility/enterprise-policies.md#default-uri-match-detection)。成员仍然可以编辑个人登录项目的 URI 匹配检测方式。
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
+
+{% hint style="info" %}
+**Helm Charts 版本控制更新**：对于 Bitwarden 自托管 Helm Charts，CalVer 版本控制方案（2025.8.0）将于 2025 年 11 月 13 日弃用。今后将仅支持和发布 SemVer 版本。
+{% endhint %}
+
+* **备份脚本更新**：使用打包的 [backup-db.sh 脚本](self-hosting/backup-server-data.md)的 Docker 部署已更新为[简单恢复模式](https://learn.microsoft.com/zh-cn/sql/relational-databases/backup-restore/recovery-models-sql-server?view=sql-server-ver17)，以防止事务日志文件大小不断增加。
+* **网页客户端要求 https 配置**：自托管服务器连接现在要求 `https://` 配置。未使用 https:// 的服务器 URL 将收到错误消息。
 
 ## 2025.10.1
 
