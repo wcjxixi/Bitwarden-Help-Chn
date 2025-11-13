@@ -4,7 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-personal/)
 {% endhint %}
 
-欢迎加入 Bitwarden 大家庭！您的安全密码管理之旅从这里开始：
+准备好最终控制您的密码了吗？本课程将引导您完成设置您的个人 Bitwarden 账户、保护您最重要的登录并让密码管理变得轻松而不是繁重。
+
+{% hint style="info" %}
+查看其他个人课程：两人免费共享、家庭成员和家庭管理员。
+{% endhint %}
 
 ## 注册 Bitwarden <a href="#sign-up-for-bitwarden" id="sign-up-for-bitwarden"></a>
 

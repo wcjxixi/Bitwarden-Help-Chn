@@ -392,7 +392,7 @@
   * [\*更新 Bitwarden 计划 (2019-2020)](plans-and-pricing/updates-to-bitwarden-plans-2019-2020.md)
   * [\*更新 Password Manager 计划 & 订阅](plans-and-pricing/updates-to-plans.md)
   * [\*哪种计划适合我？](plans-and-pricing/what-plan-is-right-for-me.md)
-* [=课堂](courses/README.md)
+* [=课程](courses/README.md)
   * [首页](courses/home.md)
   * [Password Manager](courses/password-manager/README.md)
     * [个人用户](courses/password-manager/personal-user.md)
