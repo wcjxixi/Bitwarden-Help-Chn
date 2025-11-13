@@ -8,25 +8,37 @@
 
 企业策略使企业能够对所有用户强制执行安全规则，例如强制使用两步登录。
 
-企业策略可以由组织的**管理员**或**所有者**的用户来设置。
-
 {% hint style="danger" %}
 Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策略。某些策略会在启用时删除不合要求的用户，而某些策略无法追溯执行。
 {% endhint %}
 
 ## 设置企业策略 <a href="#setting-enterprise-policies" id="setting-enterprise-policies"></a>
 
-可通过在管理控制台中，导航至**管理设置 → 策略**来设置策略：
+组织所有者和管理员可以应用企业策略。要更新策略：
+
+1、使用 Bitwarden 网页 App，打开管理控制台。
+
+2、选择**设置**。
+
+3、选择**策略**。
+
+4、选择您要更改的策略的名称：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2flohk6BsRKvazjztwvzsJ/4258307d845b33cd9f765388ca6bfea6/2024-12-03_14-24-58.png?_a=DAJCwlWIZAAB" %}
 设置策略
 {% endembed %}
 
+5、选中或取消选中**启用**。
+
+6、（可选）如果出现更多选项，请配置它们。
+
+7、选择**保存**。
+
 ## 可用的策略 <a href="#available-policies" id="available-policies"></a>
 
 ### 要求两步登录 <a href="#require-two-step-login" id="require-two-step-login"></a>
 
-打开**要求两步登录**策略将要求成员使用任何两步登录方法访问其密码库。如果使用的是 SSO 或身份提供商的 2FA 功能，则无需启用此策略。即使是只接受了组织邀请的用户，也会执行此策略。
+打开**要求两步登录**策略将要求成员使用任何两步登录方法访问其密码库。如果使用的是 SSO 或身份提供程序的 2FA 功能，则无需启用此策略。即使是只接受了组织邀请的用户，也会执行此策略。
 
 {% hint style="danger" %}
 **不是所有者或管理员，且其账户未设置两步登录的组织成员，在激活此策略后将从组织中被移除。**&#x7531;于该策略而被移除的用户将收到电子邮件通知，并且必须重新邀请他们加入组织。更多信息：
@@ -64,9 +76,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 要在您的组织中使用[受信任设备 SSO](../login-with-sso/trusted-devices/about-trusted-devices.md)，您的组织必须开启账户恢复管理策略。
 
 {% hint style="info" %}
-在激活该策略之前，必须先启用**单一组织**策略。
-
-同理，必须先禁用**账户恢复管理**策略，才能禁用**单一组织**策略。
+在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
 {% endhint %}
 
 #### 自动注册 <a href="#automatic-enrollment" id="automatic-enrollment"></a>
@@ -119,9 +129,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 使用此策略的组织成员将无法使用密码登录。
 
 {% hint style="info" %}
-在激活此策略之前，必须先启用**单一组织**策略。
-
-同理，必须先禁用**单点登录验证**策略，然后才能禁用**单一组织**策略。
+在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
 {% endhint %}
 
 ### 强制组织数据所有权 <a href="#enforce-organization-data-ownership" id="enforce-organization-data-ownership"></a>
@@ -150,6 +158,36 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | 不允许用户隐藏其电子邮箱地址 | 启用该选项可以禁用[隐藏电子邮箱](../../bitwarden-send/send-privacy.md#hide-email)选项，这意味着所有[接收到的 Send](../../bitwarden-send/receive-a-send.md) 都将包含其发送者信息。 |
 
+### 禁用支付卡项目类型 <a href="#remove-card-item-type" id="remove-card-item-type"></a>
+
+打开**禁用支付卡项目类型**策略将阻止成员创建或导入信用卡到组织和个人密码库。
+
+作为多个组织成员的用户仍只能在允许使用支付卡的组织中使用支付卡，即使不同的组织已激活此策略。
+
+现有支付卡将自动隐藏，但数据不会被删除，如果管理员禁用该策略，支付卡将重新出现。
+
+### 默认 URI 匹配检测 <a href="#default-uri-match-detection" id="default-uri-match-detection"></a>
+
+打开**默认 URI 匹配检测**策略以为您的成员设置[默认 URI 匹配检测](../../password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md#default-match-detection)。这可以帮助您配置自动填充，以最好地满足您组织的安全和策略需求。
+
+启用此策略时，从下拉菜单中选择您组织的**默认 URI 匹配检测**：
+
+* 基础域名
+* 主机
+* 开始于
+* 精确
+* 从不
+
+{% hint style="info" %}
+不受此策略约束的用户在设置其个人账户的默认匹配检测时还有两个选项：**开始于**和**正则表达式**。组织默认不提供这些选项，因为它们可能匹配非预期页面并暴露凭据。
+{% endhint %}
+
+激活策略后，成员无法在 **⚙️设置** → **自动填充**中查看或更改其账户的**默认 URI 匹配检测**。但是，他们仍然可以为单个登录项目选择 URI 匹配。此策略不会影响组织所有者和管理员。
+
+{% hint style="info" %}
+在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
+{% endhint %}
+
 ### 密码库超时 <a href="#vault-timeout" id="vault-timeout"></a>
 
 设置**密码库超时**策略将允许您：
@@ -161,9 +199,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 在密码库超时配置期间将向用户显示一条横幅，表明某个策略正在影响他们的选项。激活该策略后，用户将无法使用某些密码库超时选项，如浏**览器重启时**或**永不**。所有者和管理员不受此策略的约束。
 
 {% hint style="info" %}
-在激活此策略之前，必须启用**单一组织**策略。
-
-因此，您必须先禁用**密码库超时**策略，然后才能禁用**单一组织**策略。
+在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
 {% endhint %}
 
 ### 禁用个人密码库导出 <a href="#disable-personal-vault-export" id="disable-personal-vault-export"></a>
@@ -171,10 +207,6 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 打开**禁用个人密码库导出**策略将禁止您组织的非所有者/非管理员成员[导出其私人密码库数据](../../import-export/export-vault-data.md#export-a-personal-vault)。所有者和管理员不受此策略的约束。
 
 在网页密码库和 CLI 中，会向用户显示一条消息，以表明某个策略正在影响他们的选项。在其他客户端中，该选项将被简单地禁用：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5E2871D2vZBzveBmVyv9lO/b89f979980566dda40928db1ce450507/2024-10-14_08-50-45.png?_a=DAJCwlWIZAAB" %}
-移除了密码库导出
-{% endembed %}
 
 ### 禁用免费 Bitwarden 家庭赞助 <a href="#remove-free-bitwarden-families-sponsorship" id="remove-free-bitwarden-families-sponsorship"></a>
 
@@ -190,28 +222,10 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 打开**为允许的应用程序自动登录用户**策略，将允许在访问身份提供程序提供的非 SSO  App 时自动填充并提交登录表单。要启用此设置：
 
-1、要启用**为允许的应用程序自动登录用户**策略，请选中**打开**复选框，并输入**身份提供程序主机** URL。URL 应包括 `protocol://domain`。
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2qHW4T4CDwpQJmPK6oDDn8/4fe9fb9517db6ed1a09a72be3883f2ae/2024-08-27_11-21-32.png?_a=DAJCwlWIZAAB" %}
-为允许的应用程序自动登录用户
-{% endembed %}
-
-2、作为 IdP 的管理员，在终端用户控制面板上添加一个应用程序或应用程序快捷方式，其中包含目标 URL，并添加参数 `?autofill=1`。 例如，假如使用 Microsoft Azure：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/33zjaF3nEYtBB3JaVjBGmS/ab61ee2d6551d5d5bab70319ca64951e/2024-09-24_10-39-55.png?_a=DAJCwlWIZAAB" %}
-Microsoft 应用程序示例
-{% endembed %}
-
-3、保存应用程序后，用户可从 IdP 面板上选择应用程序，Bitwarden 将自动填充并登录应用程序。
+1. 要启用**为允许的应用程序自动登录用户**策略，请选中**打开**复选框，并输入**身份提供程序主机** URL。URL 应包括 `protocol://domain`。
+2. 作为 IdP 的管理员，在终端用户控制面板上添加一个应用程序或应用程序快捷方式，其中包含目标 URL，并添加参数 `?autofill=1`。 例如，假如使用 Microsoft Azure：
+3. 保存应用程序后，用户可从 IdP 面板上选择应用程序，Bitwarden 将自动填充并登录应用程序。
 
 {% hint style="info" %}
 自动登录用户将根据用户当前在 Bitwarden 浏览器扩展上的活动账户自动填充数据。此外，自动填充的数据将是用户最近使用的与目标应用程序 URL 相关联的凭证。
 {% endhint %}
-
-### 禁用支付卡项目类型 <a href="#remove-card-item-type" id="remove-card-item-type"></a>
-
-打开**禁用支付卡项目类型**策略将阻止成员创建或导入信用卡到组织和个人密码库。
-
-作为多个组织成员的用户仍只能在允许使用支付卡的组织中使用支付卡，即使不同的组织已激活此策略。
-
-现有支付卡将自动隐藏，但数据不会被删除，如果管理员禁用该策略，支付卡将重新出现。

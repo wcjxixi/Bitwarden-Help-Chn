@@ -23,6 +23,23 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.11.0
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.11.0、浏览器扩展 2025.11.0、移动端 2025.11.0、桌面端 2025.11.0、CLI 2025.11.0）
+
+### Password Manager
+
+* **通行密钥登录支持浏览器扩展**：用户现在可[使用通行密钥](account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)登录浏览器扩展。当前支持 Chrome 和基于 Chromium 的浏览器（例如 Edge）。
+* **Windows Hello 更新**：Windows 桌面 App 重启后，您现在可以立即使用生物识别解锁密码库，而无需输入主密码或 PIN 码。在 [Windows 桌面 App 中设置生物识别](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-desktop-app)时，取消勾选 **App 重启时要求主密码或 PIN 码**选项。
+* **网页 App 右键点击**：在网页 App 的密码库视图中，现在可通过右键点击调出与 **≡**&#x9009;项菜单相同的操作菜单。
+* **改进了高级订阅注册流程**：希望享受 Bitwarden 付费方案的用户将可以更轻松地升级账户。在网页 App 导航栏中选择**升级您的方案**按钮，即可了解更多信息并选择付费方案。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **组织默认 URI 匹配检测**：组织所有者和管理员现在可以为其成员选择默认的 URI 匹配检测方式。成员仍然可以编辑单个登录项目的 URI 匹配检测方式。
+
+### 自托管 <a href="#self-host" id="self-host"></a>
+
 ## 2025.10.1
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.10.1 和移动端 2025.10.1）
