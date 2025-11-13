@@ -4,9 +4,7 @@
 ~~对应的~~[~~官方文档地址~~](https://bitwarden.com/help/my-items/)
 {% endhint %}
 
-{% hint style="warning" %}
-「我的项目」功能仅短暂添加后移除。
-{% endhint %}
+> **\[译者注]**：「我的项目」功能仅短暂添加后被移除。
 
 「**我的项目**」是组织成员存储不需要与其他用户共享但仍然属于组织所有权的项目的位置。要启用「我的项目」功能，组织必须打开[强制数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。在用户离职后，项目的控制权将作为继承过程的一部分转移给管理员。
 
