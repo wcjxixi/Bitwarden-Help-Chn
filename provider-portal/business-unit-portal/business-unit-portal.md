@@ -57,7 +57,7 @@
 业务单元集合
 {% endembed %}
 
-业务单元的成员将在他们的**密码库**视图中找到共享项目，以及个人拥有的项目，还可以使用几种方式来筛选项目列表，以只显示组织项目或特定[集合](../../password-manager/organization-members/about-collections.md)中的项目：
+业务单元的成员将在他们的**密码库**视图中找到共享项目，以及个人拥有的项目，还可以使用几种方式来筛选项目列表，以只显示组织项目或特定[集合](broken-reference)中的项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?_a=DAJCwlWIZAAB" %}
 启用了组织的密码库

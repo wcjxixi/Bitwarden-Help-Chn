@@ -95,7 +95,6 @@
     * [导入 & 导出 FAQ](import-export/import-and-export-faqs.md)
   * [组织成员](password-manager/organization-members/README.md)
     * [共享项目](password-manager/organization-members/sharing.md)
-    * [\*关于集合](password-manager/organization-members/about-collections.md)
     * [\*我的项目](password-manager/organization-members/my-items.md)
   * [Bitwarden Send](bitwarden-send/README.md)
     * [关于 Send](bitwarden-send/about-send.md)

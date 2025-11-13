@@ -76,7 +76,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（桌面�
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 
-* **新的环境变量**：提供用于配置刷新令牌处理的新[环境变量](self-hosting/deploy-and-configure/configuration-options/environment-variables.md#refresh-token-variables)，允许用户在自托管服务器上设定身份验证令牌的有效期和超时时间。
+* **新的环境变量**：提供用于配置刷新令牌处理的新[环境变量](self-hosting/deploy-and-configure/configuration-options/environment-variables.md#refresh-token-variables)，允许用户在自托管服务器上设置身份验证令牌的有效期和超时时间。
 
 ## 2025.9.2
 
