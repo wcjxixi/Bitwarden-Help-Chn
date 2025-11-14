@@ -208,7 +208,7 @@ resource "bitwarden-secrets_secret" "db_admin_secret" {
 
 对于每个机密，可以使用以下属性来自定义值的生成：
 
-* `avoid_ambiguous`：（布尔型）默认为 `false` 。设置为 `true` 时，生成的值将不包含歧义字符（`I`、`l`、`1`、`0`、`0`）。
+* `avoid_ambiguous`：（布尔型）默认为 `false` 。设置为 `true` 时，生成的值将不包含歧义字符（`I`、`l`、`1`、`0`、`o`、`O`）。
 * `length`：（数值型）默认为 `64` 个字符。设置为其他数字时，生成的值将是该数字数量的字符。
 * `lowercase`：（布尔型）默认为 `true` 。设置为 `false` 时，生成的值将不包含小写字符。
   * `min_lowercase`：（数值型）如果 `lowercase` 为 `false` ，则忽略。设置为数字时，生成的值将至少包含该数字数量的小写字符（必须为 1-9 之间的数字）。

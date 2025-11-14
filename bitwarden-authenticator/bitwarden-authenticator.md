@@ -43,6 +43,10 @@ Bitwarden Authenticator 可以用作完全独立的 App，也可以设置为[与
 3. 在 Bitwarden Authenticator 中，确认 Password Manager 中存储的任何 TOTP 都列在您的 Bitwarden 账户标题下，而不是在**本地代码**下。
 
 {% hint style="info" %}
+身份验证器同步功能适用于 Android 版本 12 或更高版本。
+{% endhint %}
+
+{% hint style="info" %}
 您可以与任意多个 Bitwarden Password Manager 账户同步，但需要为每个账户分别切换**允许验证器同步**选项。
 {% endhint %}
 {% endtab %}
@@ -70,7 +74,7 @@ Bitwarden Authenticator 可以用作完全独立的 App，也可以设置为[与
 * 更改代码的**刷新周期**。Bitwarden Authenticator 默认使用 30 秒。
 * 更改代码的**位数**。Bitwarden Authenticator 默认使用 6 位数字。
 
-{% hint style="info" %}
+{% hint style="success" %}
 **算法**、**刷新周期**和**位数**由您使用验证码的网站决定。除非该网站要求或允许您自定义验证码行为，否则请勿更改这些设置项目。
 {% endhint %}
 

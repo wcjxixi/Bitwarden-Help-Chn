@@ -12,7 +12,7 @@
 
 Teams 订阅起价为 $6/用户/月，拥有无限数量的机密、用户和工程，以及最多 20 个机器账户。Enterprise 订阅起价为 $12/用户/月，拥有无限数量的机密、用户和工程，以及最多 50 个机器账户。
 
-[了解有关 Secrets Manager 定价的更多信息](https://bitwarden.com/products/secrets-manager/#pricing)。
+[了解更多有关 Secrets Manager 定价的信息](https://bitwarden.com/products/secrets-manager/#pricing)。
 
 ## 问：我可以自行托管 Secrets Manager 吗？ <a href="#q-can-i-self-host-secrets-manager" id="q-can-i-self-host-secrets-manager"></a>
 
