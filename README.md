@@ -22,31 +22,31 @@
 
 Bitwarden 是一个开源的密码管理系统，您可以使用 Bitwarden 官方提供的云服务，也可以将 Bitwarden 安装和托管在自己的服务器上。
 
-个人账户的免费版不限制使用时间、不限制密码条目数、不限制设备数量、不限制文件夹数量、支持常见的验证器 App（如 [Authy](https://authy.com/)、 [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator)、[Google Authenticator](https://github.com/google/google-authenticator)），完全可以满足大部分个人的日常使用需求。
+个人账户的免费版不限制使用时间、不限制密码条目数、不限制设备数量、不限制文件夹数量、支持常见的验证器 App（如 [Authy](https://authy.com/)、[Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator)、[Google Authenticator](https://github.com/google/google-authenticator)），完全可以满足大部分个人的日常使用需求。
 
 需要使用高级功能（如 TOTP、文件附件等），可以选择个人账户的高级版，或者使用组织账户。
 
 ## 个人账户比较 <a href="#compare-individual-plans" id="compare-individual-plans"></a>
 
-| 功能             | 免费版                         | 高级版             |
-| -------------- | --------------------------- | --------------- |
-| 价格             | 免费                          | $10.00/年        |
-| 安装所有平台程序       | 支持                          | 支持              |
-| 无限制同步所有设备      | 支持                          | 支持              |
-| 项目数量           | 无限制                         | 无限制             |
-| 文件夹数量          | 无限制                         | 无限制             |
-| 密码生成器          | 支持                          | 支持              |
-| 存储空间           | 无                           | 1GB             |
-| 附加存储           | 不支持                         | $4.00/GB/年      |
-| 两步登录类型         | 验证器 App+电子邮箱+FIDO2 WebAuthn | 免费版+YubiKey+Duo |
-| 内置 TOTP 功能     | 不支持                         | 支持              |
-| Bitwarden Send | 文本                          | 文本+文件           |
-| 紧急访问           | 不支持                         | 支持              |
-| 数据泄漏报告         | 支持                          | 支持              |
-| 健康报告           | 不支持                         | 支持              |
-| 本地托管           | 支持                          | 支持              |
-| 免费试用           | -                           | 不支持             |
-| 付款周期           | -                           | 年付              |
+| 功能             | 免费版                             | 高级版                 |
+| -------------- | ------------------------------- | ------------------- |
+| 价格             | 免费                              | $10.00/年            |
+| 安装所有平台程序       | 支持                              | 支持                  |
+| 无限制同步所有设备      | 支持                              | 支持                  |
+| 项目数量           | 无限制                             | 无限制                 |
+| 文件夹数量          | 无限制                             | 无限制                 |
+| 密码生成器          | 支持                              | 支持                  |
+| 存储空间           | 无                               | 1GB                 |
+| 附加存储           | 不支持                             | $4.00/GB/年          |
+| 两步登录类型         | 验证器 App + 电子邮箱 + FIDO2 WebAuthn | 免费版 + YubiKey + Duo |
+| 内置 TOTP 功能     | 不支持                             | 支持                  |
+| Bitwarden Send | 文本                              | 文本 + 文件             |
+| 紧急访问           | 不支持                             | 支持                  |
+| 数据泄漏报告         | 支持                              | 支持                  |
+| 健康报告           | 不支持                             | 支持                  |
+| 本地托管           | 支持                              | 支持                  |
+| 免费试用           | -                               | 不支持                 |
+| 付款周期           | -                               | 年付                  |
 
 ## 组织账户比较 <a href="#compare-organization-plans" id="compare-organization-plans"></a>
 
