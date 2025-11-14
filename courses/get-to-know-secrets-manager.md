@@ -16,7 +16,7 @@
 
 {% embed url="https://vimeo.com/846445432" %}
 
-[此处](../secrets-manager/your-secrets/projects.md)了解更多有关工程的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../secrets-manager/your-secrets/projects.md)了解更多有关工程的信息。
 
 * **00:05**：创建工程。
 * **00:33**：将人员添加到工程。
