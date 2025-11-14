@@ -80,19 +80,91 @@ Secrets Manager CLI 将暂时保留对旧语法的支持。如果您不确定正
 
 ## run
 
-`run` 命令运行将机密作为环境变量注入的命令，使您能够轻松调整现有开发项目和脚本以使用安全机密管理。
+`run` 命令在执行命令时将密钥注入为环境变量，使您能够轻松调整现有开发项目和脚本以使用安全机密管理。
 
 {% hint style="danger" %}
-**请只执行您信任的命令**。 `run` 命令执行您在 shell 中指定的命令，因此您不应使用它来执行您不信任的二进制文件、shell 脚本或临时 shell 命令。不受信任的可执行文件可能包含命令注入或其他恶意行为，这些行为在 `bws run` 内部运行时会获得对机密的访问权限。
+**请只执行您信任的命令**。`run` 命令执行您在 shell 中指定的命令，因此您不应使用它来执行您不信任的二进制文件、shell 脚本或临时 shell 命令。不受信任的可执行文件可能包含命令注入或其他恶意行为，这些行为在 `bws run` 内部运行时会获得对机密的访问权限。
+{% endhint %}
+
+{% tabs %}
+{% tab title="单个命令" %}
+您可以使用 `bws run -- 'your-command'` 执行单个命令：
+
+```batch
+# run an npm project with secrets injected
+bws run -- 'npm run start'
+```
+{% endtab %}
+
+{% tab title="多个命令" %}
+可以通过将多个 shell 命令用单引号括起来来执行它们。将多个命令用单引号括起来将确保在 shell 解释特殊字符（例如 `$`、`&`、`;`、`"` 等）之前将整个命令传递给 run 命令：
+
+```batch
+# start a container stack, execute a script, and tear down the container stack
+bws run -- 'docker compose up -d && ./second-command.sh; docker compose down'
+
+# echo a secret's value by name
+bws run -- 'echo "$secret_name"'
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="success" %}
+大多数命令行实用程序都受到 POSIX 的限制。POSIX 合规性要求环境变量名称仅包含字母数字字符或下划线，并且只能以字母或下划线开头。
+
+Secrets Manager CLI 仍会将不符合 POSIX 标准的密钥名称设置为环境变量，但是它们只能从不受 POSIX 合规性限制的程序访问。请参阅描述 `--uuids-as-keynames` 参数的部分，以了解确保机密的环境变量名称符合 POSIX 标准的简单方法。
 {% endhint %}
 
 ### run --project-id
 
+使用 `--project-id` 选项和 `run` 命令来注入单个项目的机密，例如：
+
+```batch
+bws run --project-id 7b006643-89c1-4202-a5ca-90510f566030 -- echo "only secrets from the specified project will be available"
+```
+
 ### run --shell
+
+`run` 命令在 Linux 和 macOS 上默认使用 `sh`，在 Windows 上默认使用 PowerShell。将 `--shell` 选项与 `run` 命令一起使用可使用另一个已安装的 shell 运行，例如：
+
+```batch
+bws run --shell fish -- echo “running a command with the Fish shell” 
+```
+
+### run --no-inherit-env
+
+在 `run` 命令中使用 `--no-inherit-env` 选项来执行进程，而不从 shell 继承大部分环境变量，例如：
+
+{% hint style="success" %}
+虽然 `--no-inherit-env` 参数尝试从 shell 中删除环境变量，但它始终会继承 `$PATH`。此外，一些环境变量（`$PWD`、`$SLVL` 等）将由 shell 本身自动设置，因此可能是持久性的。
+{% endhint %}
+
+```batch
+bws run --no-inherit-env -- echo "running a command with a minimal environment"
+```
+
+{% hint style="danger" %}
+`--no-inherit-env` 参数是从 shell 中删除可能与正在执行的进程冲突的环境变量的简单方法。此选项不会创建沙箱。您执行的进程将具有与任何其他非沙盒应用程序相同的系统访问权限。
+{% endhint %}
+
+### run --uuids-as-keynames
+
+默认情况下，`run` 命令将采用机密名称并将其设置为正在执行的进程中的环境变量。将 `--uuids-as-keynames` 参数与 `run` 命令结合使用，以使用符合 POSIX 标准的机密 ID 作为环境变量名称，例如：
+
+```batch
+# echo a secret’s value by its POSIX-compliant UUID
+bws run --uuids-as-keynames -- 'echo $_64246aa4_70b3_4332_8587_8b1284ce6d76'
+```
+
+或者，您可以将 `BWS_UUIDS_AS_KEYNAMES=true` 设置为环境变量，以获得与传递参数相同的效果。
+
+{% hint style="success" %}
+由于 UUIDS 包含连字符，有时以数字开头，因此 `--uuids-as-keynames` 参数将用下划线替换连字符，并始终在机密 UUIDS 前面添加下划线以确保符合 POSIX 标准。例如，ID 为 `64246aa4-70b3-4332-8587-8b1284ce6d76` 的机密将转换为 `_64246aa4_70b3_4332_8587_8b1284ce6d76`。
+{% endhint %}
 
 ## secret
 
-`secret` 命令用于访问、操作和创建[机密](../your-secrets/secrets.md)。与所有命令一样，访问令牌访问范围之外的机密和[工程](../your-secrets/projects.md)无法读取或写入。
+`secret` 命令用于访问、操作和创建[机密](../your-secrets/secrets.md)。与所有命令一样，访问令牌的访问权限范围之外的机密和[工程](../your-secrets/projects.md)无法读取或写入。
 
 ### secret create
 
