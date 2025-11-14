@@ -21,6 +21,10 @@ CLI 可以在 Windows、macOS 和 Linux 发行版上跨平台使用。要下载�
 
 从 [https://github.com/bitwarden/sdk/releases](https://github.com/bitwarden/sdk/releases) 下载 Secrets Manager CLI。
 
+{% hint style="info" %}
+使用已下载的原生可执行文件时，您需要将可执行文件添加到您的 PATH 中，或者从文件下载到的目录运行命令。
+{% endhint %}
+
 ## 使用 Docker 运行 <a href="#run-with-docker" id="run-with-docker"></a>
 
 Secrets Manager CLI 还可以与 Docker 一起运行。示例 Dockerfile 位于 [Bitwarden Secrets Manager SDK 存储库](https://github.com/bitwarden/sdk/tree/84c73826d58e848d92b7b86f9595d9169c541f20/crates/bws)中。
@@ -73,6 +77,18 @@ bws list secrets --access-token 0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHn
 
 Secrets Manager CLI 将暂时保留对旧语法的支持。如果您不确定正在使用的 Secrets Manager CLI 的版本，请输入 `bws --version`。
 {% endhint %}
+
+## run
+
+`run` 命令运行将机密作为环境变量注入的命令，使您能够轻松调整现有开发项目和脚本以使用安全机密管理。
+
+{% hint style="danger" %}
+**请只执行您信任的命令**。 `run` 命令执行您在 shell 中指定的命令，因此您不应使用它来执行您不信任的二进制文件、shell 脚本或临时 shell 命令。不受信任的可执行文件可能包含命令注入或其他恶意行为，这些行为在 `bws run` 内部运行时会获得对机密的访问权限。
+{% endhint %}
+
+### run --project-id
+
+### run --shell
 
 ## secret
 
@@ -388,15 +404,20 @@ bws project list
 
 ## config
 
-{% hint style="info" %}
-虽然下面描述的功能是由 CLI 提供的，但有些功能是用于自托管的，这在 Secrets Manager 测试版期间不可用。
-{% endhint %}
+`config` 命令为 Secrets Manager CLI 指定要使用的服务器设置。`bws config` 的主要用途是将 CLI 连接到自托管的 Bitwarden 服务器。
 
-`config` 命令为 Secrets Manager CLI 指定要使用的服务器设置。可用的设置包括 `server-base`、`server-api` 和 `server-identity`，例如：
+### server
+
+可用的 `bws` 服务器设置包括 `server-base`、`server-api` 和 `server-identity`，例如：
 
 ```batch
-bws config server-base https://my_hosted_server.comText Copi
+bws config server-base https://my_hosted_server.com
 ```
+
+{% hint style="info" %}
+如果未配置 `server_api` 和 `server_identity`，则这些值将默认为 `server_base` 值。例如： `https://serverbase.com/api`\
+`https://serverbase.com/identity`
+{% endhint %}
 
 以这种方式完成后，您指定的服务器值将保存到 `~/.bws/config` 文件中作为默认个人资料。您可以使用后续选项来创建备用个人资料和配置文件：
 
@@ -431,8 +452,18 @@ bws config server-base http://third_hosted_server.com --config-file ~/.bws/alt_c
 创建后，您可以将该个人资料与其他命令一起使用以将请求路由到指定的服务器，例如：
 
 ```batch
-bws get secret 2863ced6-eba1-48b4-b5c0-afa30104877a --config-file ~/.bws/alt_config --profile alt_dev
+bws secret get 2863ced6-eba1-48b4-b5c0-afa30104877a --config-file ~/.bws/alt_config --profile alt_dev
 ```
+
+### config --state
+
+状态文件是完全加密的文件，用于存储身份验证令牌和其他相关数据。状态文件可以使用存储的令牌进行身份验证，从而减少身份验证时的速率限制。状态目录默认位置是 `~/.config/bws/state`。状态文件必须指定绝对路径：
+
+```batch
+bws config state-dir /Users/user/Desktop/bws/state
+```
+
+用户可以通过访问 `~/.config/bws/config` 并将 `state_opt_out` 设置为值 `true` 或 `1` 来选择不使用状态文件。
 
 ## 配置 Docker <a href="#config-docker" id="config-docker"></a>
 
@@ -453,8 +484,15 @@ docker run -it -v /PATH/TO/YOUR/CONFIGFILE:/home/app/.bws/config -e BWS_ACCESS_T
 * `table`：输出一个 ASCII 表，其中键值作为列标题。
 * `tsv`：输出没有键值的制表符分隔值。
 * `none`：只输出错误和警告。
+* `env`：以 KEY=VALUE 格式输出机密。
 
-例如，命令 `bws get secret 2863ced6-eba1-48b4-b5c0-afa30104877a --output yaml` 将返回以下内容：
+例如，以下命令：
+
+```batch
+bws secret get 2863ced6-eba1-48b4-b5c0-afa30104877a --output yaml
+```
+
+将返回以下内容：
 
 ```javascript
 object: secret
@@ -466,6 +504,26 @@ value: osiundfpowubefpouwef
 note: 'These are notes.'
 creationDate: 2023-02-08T15:48:33.470701Z
 revisionDate: 2023-02-08T15:48:33.470702Z
+```
+
+{% hint style="info" %}
+使用 env 输出格式时，如果键名称不符合 POSIX 标准，则该键值对将被注释掉，并且输出底部将显示一条注释，指示输出已被修改。
+{% endhint %}
+
+使用 `--output env` 标志，例如：
+
+```batch
+bws secret list --output env
+```
+
+将返回以下内容：
+
+```batch
+this_is_a_keyname="this is a key value"
+CLOUDFLARE_API_TOKEN="123412341234123412341234"
+# This is an invalid keyname="this will get commented-out"
+
+# one or more secrets have been commented-out due to a problematic key name
 ```
 
 ### -c, --color
