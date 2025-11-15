@@ -8,6 +8,10 @@
 
 {% tabs %}
 {% tab title="提供商管理员" %}
+{% hint style="success" %}
+您还可以观看[演示](partner.md#watch-a-demo)、浏览[部署说明](partner.md#customer-deployment-guide)或参加公共 [MSP 培训课程](https://bitwarden.com/events/tag/msp/)。
+{% endhint %}
+
 ## 开始使用 <a href="#get-started" id="get-started"></a>
 
 ### 成为合作伙伴 <a href="#become-a-partner" id="become-a-partner"></a>
@@ -155,7 +159,7 @@
 
 检查收件箱，查看新组织的邀请！如果您已经有一个账户，那就太好了！您只需接受邀请即可。如果没有，在接受邀请后，系统会提示您创建一个账户。
 
-## 您的主密码 <a href="#your-master-password" id="your-master-password"></a>
+### 您的主密码 <a href="#your-master-password" id="your-master-password"></a>
 
 注册时，您将创建一个用于登录 Bitwarden 的主密码。您的主密码必须是：
 
