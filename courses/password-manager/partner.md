@@ -41,7 +41,7 @@
 
 ### 邀请您的提供商团队 <a href="#invite-your-provider-team" id="invite-your-provider-team"></a>
 
-每一个全明星提供商都需要一个全明星团队。从**管理** → **成员**视图开始邀请您的员工来[充实您的客户管理团队](../../provider-portal/provider-users.md#onboard-provider-users)：
+每一个全明星提供商都需要一个全明星团队。从**管理** → **成员**视图开始邀请您的员工来[充实您的客户管理团队](../../docs/provider-portal/provider-users.md#onboard-provider-users)：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6E5GA111xdiHHkA0gb5LtG/5e5b5fddb5911e1b2ed468c1d49134ad/2024-12-05_09-27-45.png?_a=DAJCwlWIZAAB" %}
 添加提供商用户
@@ -51,17 +51,17 @@
 
 ### 入职客户 <a href="#onboard-clients" id="onboard-clients"></a>
 
-作为一名提供商成员管理员，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../../admin-console/manage-shared-items/collections/about-collections.md)和[群组](../../admin-console/manage-members/groups.md)结构、[导入数据](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)以及设置[策略](../../admin-console/oversight-visibility/enterprise-policies.md)和 [SSO](../../login-with-sso/about-login-with-sso.md)。
+作为一名提供商成员管理员，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../../docs/admin-console/manage-shared-items/collections/about-collections.md)和[群组](../../docs/admin-console/manage-members/groups.md)结构、[导入数据](../../docs/admin-console/manage-shared-items/import-organization-items/import-to-organization.md)以及设置[策略](../../docs/admin-console/oversight-visibility/enterprise-policies.md)和 [SSO](../../docs/admin-console/login-with-sso/about-login-with-sso.md)。
 
-了解[如何创建新的客户组织](../../provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../../provider-portal/start-a-client-organization.md#initial-setup-procedure)。
+了解[如何创建新的客户组织](../../docs/provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../../docs/provider-portal/start-a-client-organization.md#initial-setup-procedure)。
 
 ### 管理客户订阅 <a href="#manage-client-subscriptions" id="manage-client-subscriptions"></a>
 
-作为提供商管理员，您的主要职责之一是管理客户组织的订阅和席位数量。[了解更多](../../provider-portal/provider-billing.md)。
+作为提供商管理员，您的主要职责之一是管理客户组织的订阅和席位数量。[了解更多](../../docs/provider-portal/provider-billing.md)。
 
 ### 深入了解客户管理 <a href="#dig-into-client-administration" id="dig-into-client-administration"></a>
 
-客户组织允许您的客户安全地共享密码、信用卡等，并为您提供代表他们管理这些东西的工具。您可以做很多事情，但这里有一些[您作为提供商需要处理的关键日常任务](../../provider-portal/ongoing-administration.md)。
+客户组织允许您的客户安全地共享密码、信用卡等，并为您提供代表他们管理这些东西的工具。您可以做很多事情，但这里有一些[您作为提供商需要处理的关键日常任务](../../docs/provider-portal/ongoing-administration.md)。
 
 ## 观看演示 <a href="#watch-a-demo" id="watch-a-demo"></a>
 
@@ -93,19 +93,19 @@
 
 为您的客户的 Bitwarden 组织和环境定义技术要求和入职策略。
 
-| 步骤 | 主题         | 操作                                                                                                                                             | 资源                                                                                     | 持续时间（小时） |
-| -- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------- |
-| 1  | 环境决策       | 确定云环境或自托管环境                                                                                                                                    | [托管 FAQ](../../self-hosting/hosting-faqs.md)                                           | 0.5      |
-| 2  | 认证策略       | 确定客户是否将使用单点登录 (SSO)                                                                                                                            | [关于 SSO](../../login-with-sso/about-login-with-sso.md)                                 | 0.25     |
-| 3  | 解密方式       | 如果使用 SSO 登录，请选择主密码或受信任设备进行解密                                                                                                                   | [关于受信任设备](../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) | 0.25     |
-| 4  | 配置策略       | 选择配置策略，如 SCIM、目录连接器或手动配置。                                                                                                                      | [管理用户](../../admin-console/manage-members/user-management.md#onboard-users)            | 0.25     |
-| 5  | 用户识别       | 为推广群组识别用户、团队或部门                                                                                                                                |                                                                                        | 0.25     |
-| 6  | 培训策略       | 确定参加培训的团队和内部倡导者。例如：最终用户、服务台、管理员                                                                                                                |                                                                                        | 0.5      |
-| 7  | 文档集合（共享）策略 | <p>确定集合将如何配置。需要考虑的因素包括：是否允许用户创建集合？<br><br>集合是否将按部门、工程、功能进行配置？<br><br>数据会从另一个通常定义结构的应用程序中导入吗？<br><br>管理员和所有者用户可以访问所有共享项目，还是只有委派了集合的管理员可以访问？</p> | [关于集合](../../admin-console/manage-shared-items/collections/about-collections.md)       | 1        |
-| 8  | 策略方案       | 选择在启动时配置的策略                                                                                                                                    | [策略](../../admin-console/oversight-visibility/enterprise-policies.md)                  | 0.5      |
-| 9  | 推广时间线      | 确定邀请和入职机制及时间                                                                                                                                   |                                                                                        | 0.5      |
-| 10 | 内部沟通       | 创建关于 Bitwarden 推广的内部消息或备忘录。审查 Bitwarden 模板以了解沟通方式                                                                                              | [欢迎电子邮件模板](../../admin-console/onboarding/welcome-email-templates.md)                  | 1        |
-| 11 | 领导层沟通      | 向内部领导者传达密码管理推广策略                                                                                                                               |                                                                                        | 0.25     |
+| 步骤 | 主题         | 操作                                                                                                                                             | 资源                                                                                          | 持续时间（小时） |
+| -- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | -------- |
+| 1  | 环境决策       | 确定云环境或自托管环境                                                                                                                                    | [托管 FAQ](../../docs/self-hosting/hosting-faqs.md)                                           | 0.5      |
+| 2  | 认证策略       | 确定客户是否将使用单点登录 (SSO)                                                                                                                            | [关于 SSO](../../docs/admin-console/login-with-sso/about-login-with-sso.md)                   | 0.25     |
+| 3  | 解密方式       | 如果使用 SSO 登录，请选择主密码或受信任设备进行解密                                                                                                                   | [关于受信任设备](../../docs/admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) | 0.25     |
+| 4  | 配置策略       | 选择配置策略，如 SCIM、目录连接器或手动配置。                                                                                                                      | [管理用户](../../docs/admin-console/manage-members/user-management.md#onboard-users)            | 0.25     |
+| 5  | 用户识别       | 为推广群组识别用户、团队或部门                                                                                                                                |                                                                                             | 0.25     |
+| 6  | 培训策略       | 确定参加培训的团队和内部倡导者。例如：最终用户、服务台、管理员                                                                                                                |                                                                                             | 0.5      |
+| 7  | 文档集合（共享）策略 | <p>确定集合将如何配置。需要考虑的因素包括：是否允许用户创建集合？<br><br>集合是否将按部门、工程、功能进行配置？<br><br>数据会从另一个通常定义结构的应用程序中导入吗？<br><br>管理员和所有者用户可以访问所有共享项目，还是只有委派了集合的管理员可以访问？</p> | [关于集合](../../docs/admin-console/manage-shared-items/collections/about-collections.md)       | 1        |
+| 8  | 策略方案       | 选择在启动时配置的策略                                                                                                                                    | [策略](../../docs/admin-console/oversight-visibility/enterprise-policies.md)                  | 0.5      |
+| 9  | 推广时间线      | 确定邀请和入职机制及时间                                                                                                                                   |                                                                                             | 0.5      |
+| 10 | 内部沟通       | 创建关于 Bitwarden 推广的内部消息或备忘录。审查 Bitwarden 模板以了解沟通方式                                                                                              | [欢迎电子邮件模板](../../docs/admin-console/onboarding/welcome-email-templates.md)                  | 1        |
+| 11 | 领导层沟通      | 向内部领导者传达密码管理推广策略                                                                                                                               |                                                                                             | 0.25     |
 
 ### 第 2 阶段 - 组织设置
 
@@ -176,13 +176,13 @@
 
 ## 入职客户 <a href="#onboard-clients" id="onboard-clients"></a>
 
-作为一名提供商管理员​​，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../../admin-console/manage-shared-items/collections/about-collections.md)和[群组](../../admin-console/manage-members/groups.md)结构、[导入数据](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)以及设置[策略](../../admin-console/oversight-visibility/enterprise-policies.md)和 [SSO](../../login-with-sso/about-login-with-sso.md)。
+作为一名提供商管理员​​，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../../docs/admin-console/manage-shared-items/collections/about-collections.md)和[群组](../../docs/admin-console/manage-members/groups.md)结构、[导入数据](../../docs/admin-console/manage-shared-items/import-organization-items/import-to-organization.md)以及设置[策略](../../docs/admin-console/oversight-visibility/enterprise-policies.md)和 [SSO](../../docs/admin-console/login-with-sso/about-login-with-sso.md)。
 
-了解[如何创建新的客户组织](../../provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../../provider-portal/start-a-client-organization.md#initial-setup-procedure)。
+了解[如何创建新的客户组织](../../docs/provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../../docs/provider-portal/start-a-client-organization.md#initial-setup-procedure)。
 
 ## 深入了解客户管理 <a href="#dig-into-client-administration" id="dig-into-client-administration"></a>
 
-客户组织允许您的客户安全地共享密码、信用卡等，并为您提供代表他们管理这些东西的工具。您可以做很多事情，但这里有一些[您作为提供商需要处理的关键日常任务](../../provider-portal/ongoing-administration.md)。
+客户组织允许您的客户安全地共享密码、信用卡等，并为您提供代表他们管理这些东西的工具。您可以做很多事情，但这里有一些[您作为提供商需要处理的关键日常任务](../../docs/provider-portal/ongoing-administration.md)。
 {% endtab %}
 
 {% tab title="经销商" %}
@@ -192,16 +192,16 @@
 
 ## 熟悉组织类型 <a href="#get-acquainted-with-organization-types" id="get-acquainted-with-organization-types"></a>
 
-作为经销商，您的大多数客户都会推行团队组织或企业组织。使用我们的[比较图表](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-business-plans)了解每种计划的独特功能。
+作为经销商，您的大多数客户都会推行团队组织或企业组织。使用我们的[比较图表](../../docs/plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-business-plans)了解每种计划的独特功能。
 
 ## 了解 Bitwarden <a href="#learn-about-bitwarden" id="learn-about-bitwarden"></a>
 
 Bitwarden 受到数百万人的信赖，它可以帮助您的客户推动协作、提高生产力并安全地共享数据，无论是在同一组织内部还是外部。对于您的客户，Bitwarden Password Manager 提供的一些最受欢迎的功能包括：
 
-* **轻松导入**：从几乎所有密码管理解决方案中[导入](../../admin-console/manage-shared-items/import-organization-items/import-data-to-an-organization.md)您的公司的共享凭据。
-* **用户管理集成**：使用多种[跨域身份管理 (SCIM) 系统](../../admin-console/manage-members/scim/about-scim.md)之一或[直接到目录](../../admin-console/manage-members/directory-connector/about-directory-connector.md)集成，将最终用户同步到您的 Bitwarden 组织。
-* **SSO 登录**：通过任何 SAML 2.0 或 OIDC 身份提供程序，[使用现有的单点登录 (SSO) 对终端用户进行身份验证设置](../../login-with-sso/about-login-with-sso.md)。
-* **健全的策略**：使用[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)为您的最终用户执行安全实践，例如设置管理员[恢复丢失的账户](../../admin-console/manage-members/account-recovery/about-account-recovery.md)的功能。
+* **轻松导入**：从几乎所有密码管理解决方案中[导入](../../docs/admin-console/manage-shared-items/import-organization-items/import-to-organization.md)您的公司的共享凭据。
+* **用户管理集成**：使用多种[跨域身份管理 (SCIM) 系统](../../docs/admin-console/manage-members/scim/about-scim.md)之一或[直接到目录](../../docs/admin-console/manage-members/directory-connector/about-directory-connector.md)集成，将最终用户同步到您的 Bitwarden 组织。
+* **SSO 登录**：通过任何 SAML 2.0 或 OIDC 身份提供程序，[使用现有的单点登录 (SSO) 对终端用户进行身份验证设置](../../docs/admin-console/login-with-sso/about-login-with-sso.md)。
+* **健全的策略**：使用[企业策略](../../docs/admin-console/oversight-visibility/enterprise-policies.md)为您的最终用户执行安全实践，例如设置管理员[恢复丢失的账户](../../docs/admin-console/manage-members/account-recovery/about-account-recovery.md)的功能。
 
 Bitwarden 致力于打造安全第一的产品。Password Manager 是：
 

@@ -16,7 +16,7 @@
 
 {% embed url="https://vimeo.com/846445432" %}
 
-[此处](../secrets-manager/your-secrets/projects.md)了解更多有关工程的信息。
+[此处](../docs/secrets-manager/your-secrets/projects.md)了解更多有关工程的信息。
 
 * **00:05**：创建工程。
 * **00:33**：将人员添加到工程。
@@ -25,7 +25,7 @@
 
 {% embed url="https://vimeo.com/854758635" %}
 
-[此处](../secrets-manager/your-secrets/secrets.md)了解更多有关机密的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/secrets-manager/your-secrets/secrets.md)了解更多有关机密的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:14**：导入机密。
 * **00:47**：调整导入文件。
@@ -35,7 +35,7 @@
 
 {% embed url="https://vimeo.com/845933062" %}
 
-[此处](../secrets-manager/your-secrets/machine-accounts.md)了解更多有关机器账户的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/secrets-manager/your-secrets/machine-accounts.md)了解更多有关机器账户的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:10**：什么是机器账户？
 * **00:19**：机器账户有什么用？
@@ -45,7 +45,7 @@
 
 {% embed url="https://vimeo.com/854806168" %}
 
-[此处](../secrets-manager/your-secrets/access-tokens.md)了解更多有关访问令牌的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/secrets-manager/your-secrets/access-tokens.md)了解更多有关访问令牌的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:22**：创建访问令牌。
 * **00:57**：使用访问令牌。
@@ -55,6 +55,6 @@
 
 {% embed url="https://vimeo.com/846444688" %}
 
-[此处](../secrets-manager/import-export/export-data.md)了解更多有关导出 Secrets Manager 数据的信息。
+[此处](../docs/secrets-manager/import-export/export-data.md)了解更多有关导出 Secrets Manager 数据的信息。
 
 * **00:06**：导出工程和机密。

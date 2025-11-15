@@ -1,4 +1,4 @@
-# 使用 Bitwarden 的第一步
+# \*使用 Bitwarden 的第一步
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/first-steps-with-bitwarden/)
@@ -10,7 +10,7 @@
 
 {% embed url="https://vimeo.com/1086379394?fl=pl&fe=sh" %}
 
-[此处](../account/create-bitwarden-account.md)了解更多有关创建 Bitwarden 账户的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/account/create-bitwarden-account.md)了解更多有关创建 Bitwarden 账户的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:06**：概览。
 * **00:29**：从 Bitwarden 主页创建。
@@ -27,7 +27,7 @@
 
 {% embed url="https://vimeo.com/1084695614?fl=pl&fe=sh" %}
 
-[此处](../getting-started/getting-started-browserext.md)了解更多有关浏览器扩展入门的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/password-manager/getting-started/getting-started-browserext.md)了解更多有关浏览器扩展入门的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:11**：安装 Bitwarden 扩展。
 * **00:23**：固定浏览器扩展。
@@ -62,7 +62,7 @@
 
 {% embed url="https://vimeo.com/1060246387?fl=pl&fe=sh" %}
 
-[此处](../account/two-step-login/setup-guides/two-step-login-methods.md)了解更多有关两步登录选项的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/account/two-step-login/setup-two-step-login/two-step-login-methods.md)了解更多有关两步登录选项的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:40**：使用电子邮件设置两步登录。
 * **00:57**：使用验证器 App 设置两步登录。

@@ -1,4 +1,4 @@
-# Bitwarden 高级用户
+# \*Bitwarden 高级用户
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/bitwarden-power-users/)
@@ -10,7 +10,7 @@
 
 {% embed url="https://vimeo.com/797850224" %}
 
-[此处](../bitwarden-send/about-send.md)了解更多有关 Bitwarden Send 的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/password-manager/bitwarden-send/about-send.md)了解更多有关 Bitwarden Send 的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **01:00**：创建文本 Send。
 * **01:25**：设置 Send 选项。
@@ -20,7 +20,7 @@
 
 {% embed url="https://vimeo.com/821402921" %}
 
-[此处](../password-manager/your-vault/vault-items/custom-fields.md)了解更多有关自定义字段的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/password-manager/your-vault/vault-items/custom-fields.md)了解更多有关自定义字段的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:30**：自定义字段的类型。
 * **01:30**：在浏览器扩展上创建自定义字段。
@@ -30,7 +30,7 @@
 
 {% embed url="https://vimeo.com/795737043" %}
 
-[此处](../password-manager/more/localization.md)了解更多有关更改 App 语言的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/password-manager/more/localization.md)了解更多有关更改 App 语言的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:15**：在网页 App 中更改语言。
 * **00:56**：在桌面 App 中更改语言。
@@ -39,7 +39,7 @@
 
 {% embed url="https://youtu.be/4GjjfkMYqqs" %}
 
-[此处](../self-hosting/deploy-and-configure/docker/unified-deployment-beta.md)了解更多有关使用 Bitwarden Unified 自托管的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/self-hosting/deploy-and-configure/docker/unified-deployment-beta.md)了解更多有关使用 Bitwarden Unified 自托管的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:38**：配置环境变量。
 * **01:53**：配置可选设置。

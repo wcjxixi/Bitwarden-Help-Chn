@@ -1,4 +1,4 @@
-# 了解 Password Manager
+# \*了解 Password Manager
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/get-to-know-password-manager/)
@@ -10,7 +10,7 @@
 
 {% embed url="https://vimeo.com/797787072" %}
 
-[此处](../password-manager/your-vault/vault-items/vault-items.md)了解更多有关密码库的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/password-manager/your-vault/vault-items/vault-items.md)了解更多有关密码库的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:09**：密码库项目。
 * **00:50**：个人和组织密码库。
@@ -20,7 +20,7 @@
 
 {% embed url="https://vimeo.com/797837257" %}
 
-[此处](../getting-started/getting-started-webvault.md)了解更多有关开始使用 Bitwarden Password Manager 入门的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/password-manager/getting-started/getting-started-webvault.md)了解更多有关开始使用 Bitwarden Password Manager 入门的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:09**：导入到 Bitwarden。
 * **01:08**：创建新的项目。
