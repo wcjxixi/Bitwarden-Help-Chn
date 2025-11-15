@@ -396,7 +396,7 @@
   * [首页](courses/home.md)
   * [Password Manager](courses/password-manager/README.md)
     * [=个人用户](courses/password-manager/personal-user.md)
-    * [=管理员](courses/password-manager/admin.md)
+    * [管理员](courses/password-manager/admin.md)
     * [团队成员](courses/password-manager/team-member.md)
     * [MSP 或经销商](courses/password-manager/partner.md)
   * [Secrets Manager](courses/get-to-know-secrets-manager.md)
