@@ -64,13 +64,13 @@ Bitwarden 为企业提供了两种解决方案，允许经过批准的企业成�
 
 ## 计费 <a href="#billing" id="billing"></a>
 
-### 问：哪些计划提供 SSO 登录功能？ <a href="#q-what-plans-offer-login-with-sso" id="q-what-plans-offer-login-with-sso"></a>
+### 问：哪些方案提供 SSO 登录功能？ <a href="#q-what-plans-offer-login-with-sso" id="q-what-plans-offer-login-with-sso"></a>
 
-**答：**&#x4F01;业计划提供此功能。
+**答：**&#x4F01;业方案提供此功能。
 
-### 问：如何升级我的计划，以便使用 SSO 登录？ <a href="#q-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso" id="q-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso"></a>
+### 问：如何升级我的方案，以便使用 SSO 登录？ <a href="#q-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso" id="q-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso"></a>
 
-**答：**&#x5728;管理控制台中，导航至**订阅** → **计费**页面然后选择**升级计划**。我们强烈建议您开始 [7 天企业免费试用](../../plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)，以测试 SSO 登录。
+**答：**&#x5728;管理控制台中，导航至**订阅** → **计费**页面然后选择**升级方案**。我们强烈建议您开始 [7 天企业免费试用](../../plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)，以测试 SSO 登录。
 
 ## 可支持性 <a href="#supportability" id="supportability"></a>
 

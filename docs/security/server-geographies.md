@@ -40,7 +40,7 @@ Bitwarden 数据区域是独立的，您的账户或组织只存在于其最初�
 
 ### 连接您的自托管服务器 <a href="#connect-your-self-hosted-server" id="connect-your-self-hosted-server"></a>
 
-自托管 Bitwarden 组织或个人高级计划需要首先在云服务器上启动订阅，然后[上传许可证文件](../self-hosting/licensing.md)到您的自托管实例。如果您在 EU 服务器上创建订阅，请将以下[环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)添加到服务器的 `./bwdata/env/global.override.env` 文件中，以确保与正确的服务器通信：
+自托管 Bitwarden 组织或个人高级方案需要首先在云服务器上启动订阅，然后[上传许可证文件](../self-hosting/licensing.md)到您的自托管实例。如果您在 EU 服务器上创建订阅，请将以下[环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)添加到服务器的 `./bwdata/env/global.override.env` 文件中，以确保与正确的服务器通信：
 
 ```
 globalSettings__baseServiceUri__cloudRegion=EU
@@ -93,6 +93,6 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 **答**：完整的手动迁移涉及在首选区域创建新账户，并开始新组织的创建过程。新组织配置完成后，重新邀请用户，然后从旧组织导出密码库数据并导入到新组织中。用户需要手动导出/导入其个人密码库。
 
-#### 问：如果我们迁移了企业计划，我已赞助家庭计划会发生什么情况？ <a href="#q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan" id="q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan"></a>
+#### 问：如果我们迁移了企业方案，我已赞助家庭方案会发生什么情况？ <a href="#q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan" id="q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan"></a>
 
-答：企业员工的免费家庭计划必须与赞助计划位于同一区域。如果您的企业计划迁移到其他地区，您的家庭计划赞助将终止。您需要迁移家庭计划，然后按照[兑换家庭赞助](../plans-and-pricing/password-manager/redeem-families-sponsorship.md)文章中的步骤赞助新计划。
+答：企业员工的免费家庭方案必须与赞助方案位于同一区域。如果您的企业方案迁移到其他地区，您的家庭方案赞助将终止。您需要迁移家庭方案，然后按照[兑换家庭赞助](../plans-and-pricing/password-manager/redeem-families-sponsorship.md)文章中的步骤赞助新方案。

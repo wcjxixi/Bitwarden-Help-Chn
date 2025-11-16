@@ -24,9 +24,9 @@ Teams 订阅起价为 $6/用户/月，拥有无限数量的机密、用户和工
 2. 将您的自托管服务器至少更新到 2023.10.0。
 3. 从您的云托管组织[获取新的许可证](../../self-hosting/licensing.md#retrieve-organization-license)文件并[将其上传到您的自托管服务器](../../self-hosting/licensing.md#update-organization-license)。
 
-## 问：家庭计划支持 Secrets Manager 吗？ <a href="#q-do-families-plans-support-secrets-manager" id="q-do-families-plans-support-secrets-manager"></a>
+## 问：家庭方案支持 Secrets Manager 吗？ <a href="#q-do-families-plans-support-secrets-manager" id="q-do-families-plans-support-secrets-manager"></a>
 
-**答：**&#x42;itwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务。如果您拥有家庭计划并希望使用 Bitwarden Secrets Manager，只需按照[这些步骤](../get-started/secrets-manager-quick-start.md)创建一个新的免费组织并注册 Secrets Manager 即可。
+**答：**&#x42;itwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务。如果您拥有家庭方案并希望使用 Bitwarden Secrets Manager，只需按照[这些步骤](../get-started/secrets-manager-quick-start.md)创建一个新的免费组织并注册 Secrets Manager 即可。
 
 ## 问：如果我有支持问题，如何联系 Bitwarden？ <a href="#q-how-do-i-contact-bitwarden-if-i-have-support-questions-during-the-beta" id="q-how-do-i-contact-bitwarden-if-i-have-support-questions-during-the-beta"></a>
 

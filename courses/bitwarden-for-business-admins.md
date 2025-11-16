@@ -4,13 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/bitwarden-for-business-admins/)
 {% endhint %}
 
-本文旨在向 Bitwarden 管理员介绍适用于团队和企业商业计划的所有特点和功能。跟随这些视频指南，探索安全成功的关键步骤。了解您的计划有哪些可用功能、如何从现有解决方案中导入密码、在组织内共享项目、恢复用户账户，以及对您的实施工作很重要的其他主题。
+本文旨在向 Bitwarden 管理员介绍适用于团队和企业商业方案的所有特点和功能。跟随这些视频指南，探索安全成功的关键步骤。了解您的方案有哪些可用功能、如何从现有解决方案中导入密码、在组织内共享项目、恢复用户账户，以及对您的实施工作很重要的其他主题。
 
 ## Bitwarden 团队和企业版演示 <a href="#bitwarden-teams-and-enterprise-demo" id="bitwarden-teams-and-enterprise-demo"></a>
 
 {% embed url="https://vimeo.com/734127077" %}
 
-[此处](../docs/plans-and-pricing/password-manager/about-bitwarden-plans.md)了解更多有关 Bitwarden 计划的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/plans-and-pricing/password-manager/about-bitwarden-plans.md)了解更多有关 Bitwarden 方案的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:19**：为什么选择 Bitwarden？
 * **00:49**：Bitwarden 的零知识加密。
@@ -24,7 +24,7 @@
   * **06:56**：将数据导入 Bitwarden。
   * **07:21**：创建新的登录。
   * **08:30**：使用 Bitwarden Send。
-  * **09:26**：赞助 Bitwarden 家庭计划。
+  * **09:26**：赞助 Bitwarden 家庭方案。
 * **10:27**：管理员体验。
   * **10:42**：入职用户。
   * **14:02**：使用群组分配权限。
@@ -62,7 +62,7 @@
 * **00:40**：启动 SSO 登录过程。
 * **01:10**：批准从其他设备登录。
 
-## 兑换免费家庭计划 <a href="#redeeming-your-free-families-plan" id="redeeming-your-free-families-plan"></a>
+## 兑换免费家庭方案 <a href="#redeeming-your-free-families-plan" id="redeeming-your-free-families-plan"></a>
 
 {% hint style="info" %}
 此功能仅适用于[企业组织](../docs/plans-and-pricing/password-manager/about-bitwarden-plans.md)。
@@ -72,6 +72,6 @@
 
 [此处](../docs/plans-and-pricing/password-manager/redeem-families-sponsorship.md)了解更多有关企业赞助的家庭组织的信息，或跳转到视频中的以下时间点，了解特定主题：
 
-* **00:14**：关于赞助家庭计划。
-* **00:35**：兑换赞助家庭计划。
+* **00:14**：关于赞助家庭方案。
+* **00:35**：兑换赞助家庭方案。
 

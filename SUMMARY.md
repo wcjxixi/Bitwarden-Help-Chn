@@ -287,7 +287,7 @@
     * [团队版和企业版迁移指南](docs/admin-console/more/teams-and-enterprise-migration-guide.md)
     * [LastPass 企业版迁移指南](docs/admin-console/more/lastpass-enterprise-migration-guide.md)
     * [组织所有者离职时的访问权限管理](docs/admin-console/more/managing-access-when-the-organization-owner-leaves.md)
-    * [组织赞助的家庭计划](docs/admin-console/more/organization-sponsored-families-plans.md)
+    * [组织赞助的家庭方案](docs/admin-console/more/organization-sponsored-families-plans.md)
     * [PoC 项目清单](docs/admin-console/more/proof-of-concept-project-checklist.md)
     * [为生产准备试用组织](docs/admin-console/more/prepare-your-trial-organization-for-production.md)
     * [\*团队版 Bitwarden 对比指南](docs/admin-console/more/bitwarden-for-teams-comparison-guide.md)

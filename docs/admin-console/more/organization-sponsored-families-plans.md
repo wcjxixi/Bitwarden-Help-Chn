@@ -1,10 +1,10 @@
-# 组织赞助的家庭计划
+# 组织赞助的家庭方案
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/organization-sponsored-families-plans/)
 {% endhint %}
 
-Bitwarden 企业客户可以为员工赞助 Bitwarden 家庭计划作为一项员工福利。企业组织管理员可以使用企业席位为不是企业组织活跃成员的员工赞助家庭计划。
+Bitwarden 企业客户可以为员工赞助 Bitwarden 家庭方案作为一项员工福利。企业组织管理员可以使用企业席位为不是企业组织活跃成员的员工赞助家庭方案。
 
 本文展示了企业组织管理员如何向非组织成员发放家庭赞助。
 
@@ -14,7 +14,7 @@ Bitwarden 企业客户可以为员工赞助 Bitwarden 家庭计划作为一项�
 
 ## 发放赞助 <a href="#issue-a-sponsorship" id="issue-a-sponsorship"></a>
 
-为您的组织启用 Bitwarden 赞助的家庭计划后，管理控制台上将出现一个新的选项可供选择。要访问新菜单并邀请用户：
+为您的组织启用 Bitwarden 赞助的家庭方案后，管理控制台上将出现一个新的选项可供选择。要访问新菜单并邀请用户：
 
 {% hint style="info" %}
 要发放家庭赞助，所有者、管理员或具有管理用户权限的自定义用户必须首先[联系我们](https://bitwarden.com/contact/)以启用管理员发放的家庭赞助。
@@ -53,7 +53,7 @@ Bitwarden 企业客户可以为员工赞助 Bitwarden 家庭计划作为一项�
 2、选择**接受邀请**后，您将被带到 Bitwarden 网页密码库，您可以创建新账户或登录然后接受邀请：
 
 {% embed url="https://bitwarden.com/assets/7eNVGhvecJt3WcWLx2jUoY/440e7402daa7b9dd1bfba7985387573c/2025-05-22_12-11-30.png?w=1200&fm=avif&q=80" %}
-接受免费 Bitwarden 家庭计划
+接受免费 Bitwarden 家庭方案
 {% endembed %}
 
 3、完成以下内容后，选择**提交**：
