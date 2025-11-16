@@ -1,35 +1,31 @@
-# 自动填充 URI 的结构
+# 用于自动填充的 URI 的结构
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/uri-match-detection/)
 {% endhint %}
 
-密码库中的任何登录项目都可以具有一个或多个 URI（Uniform Resource Identifier：统一资源标识符）。URI 可以是网站地址（即 URL）、服务器 IP 地址、[移动 App 包 ID](forming-uris-for-autofill.md#uris-for-mobile-apps) 等。在网页 App 和浏览器扩展的**编辑登录**视图中，如果有多个网站 URI，可以使用拖放按钮重新排序，以便更好地进行视觉组织：
+在登录项目中包含统一资源标识符 (URI) 以使用自动填充，然后选择 ⮫**启动**图标直接从您的密码库打开网站或 App。URI 是一串字符，用于标识网站地址 (URL)、服务器 IP 地址、[移动 App 包 ID](forming-uris-for-autofill.md#uris-for-mobile-apps) 等。
+
+## 将 URI 保存到登录项目 <a href="#save-uris-in-login-items" id="save-uris-in-login-items"></a>
+
+当您创建或编辑登录项目时，请将其输入到**网站 (URI)** 字段中。当浏览器扩展自动保存新登录时，会自动填充网站的 URI。
+
+您可以将多个 URI 添加到单个登录项目。要重新排序，请在网页 App 或浏览器扩展中编辑项目，然后将 URI 拖放到您的首选顺序中：
 
 {% embed url="https://bitwarden.com/assets/aDbOEJ6x8G44gkDYcuHJ6/dfef7ac49894805dd0e1e718452e6a60/2025-03-25_09-45-56.png?w=967&fm=avif&q=80" %}
 网页 App 中登录项目的 URI 字段
 {% endembed %}
 
-{% hint style="info" %}
-如果您希望在各种 Bitwarden App 中使用自动填充功能，则需要为登录项目指定 URI。
-{% endhint %}
-
-## URI 方案 <a href="#uri-schemes" id="uri-schemes"></a>
+### URI 方案格式 <a href="#format-uri-schemes" id="format-uri-schemes"></a>
 
 格式良好的 URI 在开头应包含一个方案，例如 `https://` 方案用来安全地引用网站地址。如果未指定方案，则假定为 `http://`。
-
-{% hint style="success" %}
-大多数 Bitwarden App 允许您直接从密码库 ⮫**启动**网站或 App。没有此方案，启动功能将无法正常工作。
-
-只有 Android 13 及更新版本才支持启动应用程序。
-{% endhint %}
 
 方案包括：
 
 * `http://` 或 `https://` 引用网站地址（例如：`https://www.github.com`）
 * `androidapp://` 引用 Android App 的包 ID 或名称（例如：`androidapp://com.instagram.android`）
 
-### 移动 App URI <a href="#uris-for-mobile-apps" id="uris-for-mobile-apps"></a>
+### 查找移动 App URI <a href="#find-uris-for-mobile-apps" id="find-uris-for-mobile-apps"></a>
 
 获取 iOS 和 Android 设备上安装的 App 的 URI 可能比较麻烦。以下是在 iOS 和 Android App 上获取 URI 的一些提示：
 
@@ -62,6 +58,30 @@
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+Android 版本 13 及更高版本支持启动应用程序。
+{% endhint %}
+
+## 设置匹配检测 <a href="#match-detection-options" id="match-detection-options"></a>
+
+您可以微调 Bitwarden 将您保存的 URI 与您当前使用的网站或 App 进行比较的方式，确保在合适的时间将您的凭据建议为自动填充。有多种[匹配检测选项](forming-uris-for-autofill.md#match-detection-options-1)可供选择。
+
+### 默认匹配检测 <a href="#default-match-detection" id="default-match-detection"></a>
+
+所有新登录项目的默认 URI 匹配方式是[**基础域名**](forming-uris-for-autofill.md#base-domain)。要更改您的账户的默认匹配检测：
+
+1. 转到 **⚙️设置**。
+2. 选择**自动填充**。
+3. 从**默认 URI 匹配检测**下拉菜单中选择您的首选方式。
+
+{% hint style="info" %}
+如果**默认 URI 匹配检测**选项不存在，则是因为您的组织所有者或管理员已选择了[您的组织的默认匹配](../../../admin-console/oversight-visibility/enterprise-policies.md#default-uri-match-detection)。
+{% endhint %}
+
+### 按项目的匹配检测 <a href="#match-detection-by-item" id="match-detection-by-item"></a>
+
+您还可以为各个项目更改匹配检测。在登录项目的**网站 (URI)** 字段中，选择 **⚙️设置**图标以选择匹配检测方式。这将覆盖您账户的默认匹配检测选项。
+
 ## 匹配检测选项 <a href="#match-detection-options" id="match-detection-options"></a>
 
 分配给登录项目的每一个 URI 都有一个关联的匹配检测选项。该选项决定了 Bitwarden 何时将此登录作为自动填充，这通常是通过与具体的组成部分的匹配来确定的。下图对 URI 的组成部分进行了分解：
@@ -74,12 +94,6 @@ URI 示意图
 由于 Android API 提供的自动填充服务的限制，Android Password Manager 客户端当前无法基于**端口**或**路径**来匹配 URI。
 {% endhint %}
 
-### 默认匹配检测 <a href="#default-match-detection" id="default-match-detection"></a>
-
-Bitwarden 浏览器扩展和移动 App 可以通过导航到 **⚙️设置** → **选项** → **默认 URI 匹配检测**，从下面列出的选项中选择一个**默认匹配检测**行为。您也可以在所有 Bitwarden App 中为各个项目设置匹配检测行为，这将覆盖全局默认值。
-
-**基础域名**匹配是默认选项。
-
 ### 基础域名 <a href="#base-domain" id="base-domain"></a>
 
 选择**基础域名**，当 URI 的顶级域名 (`.com`) 和二级域名 (`google`) 与检测到的资源相匹配时，Bitwarden 将弹出提示提供自动填充。实施基础域名匹配可与任何国家/地区代码顶级域名（例如 `.it` 或 `.co.uk`）配合使用。对于使用唯一域名（例如不同国家/地区）的站点，请创建其他基本域名条目。
@@ -89,9 +103,9 @@ Bitwarden 浏览器扩展和移动 App 可以通过导航到 **⚙️设置** �
 | URL                           | 自动填充？  |
 | ----------------------------- | ------ |
 | `http://google.com`           | **✔︎** |
-| `https://accounts.google.c`om | **✔︎** |
+| `https://accounts.google.com` | **✔︎** |
 | `https://google.net`          | **✘**  |
-| `http://yahoo.c`om            | **✘**  |
+| `http://yahoo.com`            | **✘**  |
 
 {% hint style="info" %}
 带有本地 TLD（例如 `http://mysite.local` 或 `https://mysite.lan`）或单术语主机名（例如 `http://localdevice`）URI 的用于自动填充的登录项目，将无法使用基础域名检测。我们建议使用[主机匹配](forming-uris-for-autofill.md#host)。
