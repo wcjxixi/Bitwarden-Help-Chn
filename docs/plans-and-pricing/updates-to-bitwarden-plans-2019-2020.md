@@ -4,7 +4,7 @@
 对应的[~~官方文档地址~~](https://bitwarden.com/help/article/2020-plan-updates/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/_articles/plans-and-pricing/2020-plan-updates.md)
 {% endhint %}
 
-在继续我们的使命以使个人和组织能够轻松安全地存储和共享敏感数据的过程中，我们最近对我们的产品进行了一些升级。**本文面向在 2020 年 09 月 06 日之前创建了 Bitwarden 账户并希望了解经典 2019 计划和当前方案的区别的用户。**
+在继续我们的使命以使个人和组织能够轻松安全地存储和共享敏感数据的过程中，我们最近对我们的产品进行了一些升级。**本文面向在 2020 年 09 月 06 日之前创建了 Bitwarden 账户并希望了解经典 2019 方案和当前方案的区别的用户。**
 
 要从您的经典 2019 方案升级到当前方案，请[联系我们](https://bitwarden.com/contact/)，并从 **Subject** 下拉菜单中选择 **Upgrade/Change Plan** 。
 
@@ -112,6 +112,6 @@
 
 **答：**[联系我们](https://bitwarden.com/contact/)，然后从 **Subject** 下拉菜单中选择 **Upgrade/Change Plan**。我们强烈建议您通过开始一个 [7 天企业免费试用](start-an-enterprise-trial-with-your-bitwarden-account.md)来测试 SSO 登录。
 
-### 问：我想测试 SSO 登录。如果我决定不需要它，可以恢复到经典 2019 计划吗？ <a href="#q-i-would-like-to-test-login-with-sso-if-i-decide-i-dont-need-it-can-i-revert-to-my-classic-2019-pla" id="q-i-would-like-to-test-login-with-sso-if-i-decide-i-dont-need-it-can-i-revert-to-my-classic-2019-pla"></a>
+### 问：我想测试 SSO 登录。如果我决定不需要它，可以恢复到经典 2019 方案吗？ <a href="#q-i-would-like-to-test-login-with-sso-if-i-decide-i-dont-need-it-can-i-revert-to-my-classic-2019-pla" id="q-i-would-like-to-test-login-with-sso-if-i-decide-i-dont-need-it-can-i-revert-to-my-classic-2019-pla"></a>
 
-**答：**&#x4E0D;幸的是，升级后，我们将无法将您恢复为经典 2019 计划。我们建议创建一个新的组织以开始一个 [7 天企业免费试用](start-an-enterprise-trial-with-your-bitwarden-account.md)，以在您的主要组织之外测试 SSO 登录。
+**答：**&#x4E0D;幸的是，升级后，我们将无法将您恢复为经典 2019 方案。我们建议创建一个新的组织以开始一个 [7 天企业免费试用](start-an-enterprise-trial-with-your-bitwarden-account.md)，以在您的主要组织之外测试 SSO 登录。
