@@ -133,7 +133,7 @@ Bitwarden 还提供组织账户（用于密码共享等），分别为针对个�
 {% endtab %}
 {% endtabs %}
 
-### 账单示例 <a href="#example-bill" id="example-bill"></a>
+### 账单示例 <a href="#example-billing" id="example-billing"></a>
 
 Bitwarden Inc. 与 Stripe 合作，提供安全的账单和支付处理服务。[在线账单示例](https://pay.stripe.com/invoice/acct_19smIXIGBnsLynRr/invst_Gxl9wk8thL7uIP8FnEWcpplsD0MsFKd)或本地账单示例。
 
