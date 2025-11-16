@@ -4,18 +4,18 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/billing-faqs/)
 {% endhint %}
 
-本文包含有关计划和定价的常见问题 (FAQ)。
+本文包含有关方案和定价的常见问题 (FAQ)。
 
-如需帮助选择适合您的 Bitwarden 计划，请参阅[哪种计划适合我？](what-plan-is-right-for-me.md)以及[关于 Bitwarden 计划](password-manager/about-bitwarden-plans.md)。
+如需帮助选择适合您的 Bitwarden 方案，请参阅[哪种方案适合我？](what-plan-is-right-for-me.md)以及[关于 Bitwarden 方案](password-manager/about-bitwarden-plans.md)。
 
 ## 账户管理 <a href="#account-management" id="account-management"></a>
 
-### 问：如何知道我在使用哪一种订阅计划？ <a href="#q-how-do-i-find-out-what-subscription-plan-im-on" id="q-how-do-i-find-out-what-subscription-plan-im-on"></a>
+### 问：如何知道我在使用哪一种订阅方案？ <a href="#q-how-do-i-find-out-what-subscription-plan-im-on" id="q-how-do-i-find-out-what-subscription-plan-im-on"></a>
 
 **答：**&#x767B;录您的网页 App：
 
-* 对于个人订阅：请导航至**设置** → **订阅**。如果看不到此界面，则表示此账户是免费计划。如果存在此界面，则表示此账户是高级计划。
-* 对于组织订阅：打开管理控制台。在组织的**计费** → **订阅**视图中，在**计划**部分记录了此组织的计划。
+* 对于个人订阅：请导航至**设置** → **订阅**。如果看不到此界面，则表示此账户是免费方案。如果存在此界面，则表示此账户是高级方案。
+* 对于组织订阅：打开管理控制台。在组织的**计费** → **订阅**视图中，在**方案**部分记录了此组织的方案。
 
 ### 问：如何查看我的计费信息？ <a href="#q-how-do-i-view-my-billing-information" id="q-how-do-i-view-my-billing-information"></a>
 
@@ -39,15 +39,15 @@
 
 ### 问：在自托管实例上如何为高级功能付款？ <a href="#q-how-do-i-pay-for-premium-on-a-self-hosted-instance" id="q-how-do-i-pay-for-premium-on-a-self-hosted-instance"></a>
 
-**答：**&#x8981;支付 Bitwarden 自托管实例的费用，您需要在 Bitwarden 云中通过[网页密码库](https://vault.bitwarden.com/)创建一个账户。从那里下载许可证文件，并将其应用到您的自助托管实例上。您的许可证文件将标记您对高级功能的访问，因此，如果您之前使用的是免费计划，请确保下载一个新的许可证文件。
+**答：**&#x8981;支付 Bitwarden 自托管实例的费用，您需要在 Bitwarden 云中通过[网页密码库](https://vault.bitwarden.com/)创建一个账户。从那里下载许可证文件，并将其应用到您的自助托管实例上。您的许可证文件将标记您对高级功能的访问，因此，如果您之前使用的是免费方案，请确保下载一个新的许可证文件。
 
 如需了解更多信息，请参阅[本地托管](../self-hosting/licensing.md#organization-license)。
 
 ### 问：如果我有一个家庭组织，还需要高级会员吗？ <a href="#q-if-i-have-a-families-organization-do-i-need-premium" id="q-if-i-have-a-families-organization-do-i-need-premium"></a>
 
-**答：**&#x5F53;前的家庭计划（2020 年 9 月推出）自动为组织的所有 6 名成员提供高级功能，所以不需要！
+**答：**&#x5F53;前的家庭方案（2020 年 9 月推出）自动为组织的所有 6 名成员提供高级功能，所以不需要！
 
-传统的家庭计划不会自动提供高级功能，因此用户需要单独升级到高级版，或者由家庭组织的所有者升级组织。
+传统的家庭方案不会自动提供高级功能，因此用户需要单独升级到高级版，或者由家庭组织的所有者升级组织。
 
 ### 问：为什么我的云许可证到期日期和自托管许可证到期日期不匹配？
 
@@ -61,7 +61,7 @@
 * 更改组织的计费电子邮件地址。
 * 查询存档的账单和计费信息。
 * 在每月和每年计费周期之间切换（如果适用于您的组织）。
-* 请求计划升级、降级、取消或席位调整。
+* 请求方案升级、降级、取消或席位调整。
 
 他们**不得**以任何理由请求删除组织、获取当前组织所有者的身份或请求将任何用户提升为所有者。
 
@@ -90,7 +90,7 @@
 
 **答：**&#x9500;售税的征收标准和税率由美国各州规定。Bitwarden 归类于软件即服务 (SaaS) 税号下。税收标准和适用税率可能会根据您所在地区的要求而发生变化。
 
-### 问：我可以将 Bitwarden 免费计划用于商业用途吗？ <a href="#q-can-i-use-a-bitwarden-free-plan-for-commercial-use" id="q-can-i-use-a-bitwarden-free-plan-for-commercial-use"></a>
+### 问：我可以将 Bitwarden 免费方案用于商业用途吗？ <a href="#q-can-i-use-a-bitwarden-free-plan-for-commercial-use" id="q-can-i-use-a-bitwarden-free-plan-for-commercial-use"></a>
 
 **答：**&#x53EA;要遵守我们的服务条款，用户可以出于个人或商业目的使用 Bitwarden 客户端（无论是付费账户还是免费账户）。
 

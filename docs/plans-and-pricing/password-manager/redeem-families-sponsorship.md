@@ -141,7 +141,7 @@
 
 ### 问：如果我的组织在美国服务器上，我能否在欧盟服务器上兑换家庭组织？ <a href="#q-if-my-organization-is-on-a-us-server-can-i-redeem-a-families-organization-on-the-eu-server" id="q-if-my-organization-is-on-a-us-server-can-i-redeem-a-families-organization-on-the-eu-server"></a>
 
-**答：**&#x4E0D;能。家庭计划赞助只能在与赞助企业组织相同的云服务器上兑换。如果您的企业组织已从一个云服务器迁移到另一个云服务器，则必须在正确的云服务器上赞助新的家庭组织。有关迁移组织的更多信息，请参阅 [Bitwarden 迁移指南](../../admin-console/more/teams-and-enterprise-migration-guide.md)。
+**答：**&#x4E0D;能。家庭方案赞助只能在与赞助企业组织相同的云服务器上兑换。如果您的企业组织已从一个云服务器迁移到另一个云服务器，则必须在正确的云服务器上赞助新的家庭组织。有关迁移组织的更多信息，请参阅 [Bitwarden 迁移指南](../../admin-console/more/teams-and-enterprise-migration-guide.md)。
 
 ### 问：如何移除家庭组织？ <a href="#q-how-do-i-remove-a-families-organization" id="q-how-do-i-remove-a-families-organization"></a>
 

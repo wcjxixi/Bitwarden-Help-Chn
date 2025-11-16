@@ -22,13 +22,13 @@ Bitwarden 组织将用户和密码库项目关联在一起，以[安全地共享
 
 ### 组织与高级会员比较 <a href="#comparing-organizations-with-premium" id="comparing-organizations-with-premium"></a>
 
-关键的是要知道，**组织可以启用组织到用户之间的安全共享**。[高级个人计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)可解锁高级密码安全和管理功能，包括高级 2FA 选项、Bitwarden 验证器 (TOTP)、加密的文件附件等，但高级个人**不包含安全数据共享功能**。
+关键的是要知道，**组织可以启用组织到用户之间的安全共享**。[高级个人方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)可解锁高级密码安全和管理功能，包括高级 2FA 选项、Bitwarden 验证器 (TOTP)、加密的文件附件等，但高级个人**不包含安全数据共享功能**。
 
 付费组织（家庭、团队或企业）自动为组织中已注册的**每一个**用户提供这些高级功能（高级 2FA 选项、Bitwarden 验证器 (TOTP) 等）。
 
 ## 设置 Bitwarden 账户 <a href="#setup-bitwarden-accounts" id="setup-bitwarden-accounts"></a>
 
-免费的 Bitwarden 组织允许 2 位用户安全地共享组织拥有的凭证。您可以使用免费的组织与朋友或伙伴共享，或者在[升级到不同的计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)之前测试组织。
+免费的 Bitwarden 组织允许 2 位用户安全地共享组织拥有的凭证。您可以使用免费的组织与朋友或伙伴共享，或者在[升级到不同的方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md)之前测试组织。
 
 Bitwarden 在许多设备上提供了应用程序，包括浏览器扩展、移动 App、桌面 App 和 CLI，但在本指南中，我们将重点介绍[网页 App](../password-manager/getting-started/getting-started-webvault.md)。对于管理你的组织，**网页密码库提供了最丰富的 Bitwarden 体验**。
 
@@ -66,7 +66,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 2、输入**组织名称**和**账单电子邮件**，我们可以通过此地址与您联系。在本指南中，我们将设置一个免费的组织，所以您将不会被收取任何费用。
 
-**3、选择您的计划**。Bitwarden 提供适合任何需求的组织，但在这种情况下，请选择**免费**。
+**3、选择您的方案**。Bitwarden 提供适合任何需求的组织，但在这种情况下，请选择**免费**。
 
 4、向下滚动并选择**提交**以完成组织的创建。
 
@@ -193,7 +193,7 @@ Bitwarden组织的神奇之处在于，属于您的项目和[属于组织](organ
 
 ## 恭喜！ <a href="#congratulations" id="congratulations"></a>
 
-您已经设置了新的 Bitwarden 账户、创建了一个组织、了解了一些有关您的密码库的知识、并共享了一个项目！干得好！如果您想升级到付费组织以解锁[许多附加功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md)，请导航到您的组织**设置** → **订阅**视图，然后选择**升级计划**按钮：
+您已经设置了新的 Bitwarden 账户、创建了一个组织、了解了一些有关您的密码库的知识、并共享了一个项目！干得好！如果您想升级到付费组织以解锁[许多附加功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md)，请导航到您的组织**设置** → **订阅**视图，然后选择**升级方案**按钮：
 
 {% embed url="https://bitwarden.com/assets/c7MRk3qA3cxcVZHC2gBBs/4128a414a194af6e446ac39d9c250990/2024-12-03_14-09-22.png?w=1197&fm=avif&q=80" %}
 升级免费组织

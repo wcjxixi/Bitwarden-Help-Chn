@@ -6,7 +6,7 @@
 
 ## 用户席位 <a href="#user-seats" id="user-seats"></a>
 
-「用户席位」指的是一个组织内单个用户的许可证。当您的组织成员占用一个用户席位时，该成员将根据您的特定计划获得访问 Bitwarden 服务的权限。用户席位并非永久绑定给该成员；当成员离开组织时，该用户席位将可供新成员使用。
+「用户席位」指的是一个组织内单个用户的许可证。当您的组织成员占用一个用户席位时，该成员将根据您的特定方案获得访问 Bitwarden 服务的权限。用户席位并非永久绑定给该成员；当成员离开组织时，该用户席位将可供新成员使用。
 
 当您[邀请](user-management.md#invite)新用户时，Bitwarden 云端 [团队和企业组织](../organizations-overview.md#types-of-organizations)将**自动扩展**用户席位。您可以在扩展时设置[席位限制](user-management.md#set-a-seat-limit)以防止您的席位数超过指定的数量，或根据需要[手动添加席位](user-management.md#manually-add-or-remove-seats)。无论您选择如何添加席位，您都需要[手动移除](user-management.md#manually-add-or-remove-seats)不再使用的席位。
 

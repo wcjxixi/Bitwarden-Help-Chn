@@ -1,4 +1,4 @@
-# \*哪种计划适合我？
+# \*哪种方案适合我？
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/what-plan-is-right-for-me/)
@@ -6,7 +6,7 @@
 
 嗨，您好！在这里，Bitwarden 将帮助您迈出第一步，无论你是从其他解决方案转换而来，还是完全未曾使用过密码管理器。
 
-本文将通过一些问题，帮助您确定哪一种 Bitwarden 计划适合您。类似于这样的问题：
+本文将通过一些问题，帮助您确定哪一种 Bitwarden 方案适合您。类似于这样的问题：
 
 * [您需要共享您的数据吗？](what-plan-is-right-for-me.md#do-you-need-to-share-your-data)
 * [您需要高级功能吗？](what-plan-is-right-for-me.md#do-you-need-premium-features)
@@ -15,11 +15,11 @@
 
 使用此流程图来指导你完成你的旅程：
 
-![哪种计划适合我？](../../.gitbook/assets/what-plan-flowchart-1.png)
+![哪种方案适合我？](../../.gitbook/assets/what-plan-flowchart-1.png)
 
 ## 您想使用 Bitwarden 保护您的在线账户吗？ <a href="#do-you-want-to-start-protecting-your-online-accounts-with-bitwarden" id="do-you-want-to-start-protecting-your-online-accounts-with-bitwarden"></a>
 
-我们当然希望如此！无论您选择哪种最适合您的计划，[创建账户](https://vault.bitwarden.com/#/register)的步骤都是相同的。
+我们当然希望如此！无论您选择哪种最适合您的方案，[创建账户](https://vault.bitwarden.com/#/register)的步骤都是相同的。
 
 来吧，先[创建一个账户](https://vault.bitwarden.com/#/register)。创建账户后，接着考虑以下问题：
 
@@ -29,7 +29,7 @@
 
 | 如果您的答案是「登录是我的」…                                                                                                                       | 如果您的答案是「我有一些资源需要共享」…                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| <p>…我们建议您选择其中一个个人计划。<br><br><strong>继续：</strong><a href="what-plan-is-right-for-me.md#do-you-need-premium-features">您需要高级功能吗？</a></p> | <p>…我们建议您创建一个组织。<br><br><strong>继续：</strong><a href="what-plan-is-right-for-me.md#who-will-you-share-with">您要与谁共享？</a></p> |
+| <p>…我们建议您选择其中一个个人方案。<br><br><strong>继续：</strong><a href="what-plan-is-right-for-me.md#do-you-need-premium-features">您需要高级功能吗？</a></p> | <p>…我们建议您创建一个组织。<br><br><strong>继续：</strong><a href="what-plan-is-right-for-me.md#who-will-you-share-with">您要与谁共享？</a></p> |
 
 ## 您需要高级功能吗？ <a href="#do-you-need-premium-features" id="do-you-need-premium-features"></a>
 
@@ -43,7 +43,7 @@
 
 | 如果您的答案是「当然」…                                                                                                       | 如果您的答案是「还不需要」…                                                                                          |
 | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| <p>…我们建议您使用高级个人计划。<br><br><a href="https://vault.bitwarden.com/#/?premium=purchase"><strong>现在升级！</strong></a></p> | <p>…我们建议您继续使用免费的个人计划。<br><br><a href="https://bitwarden.com/download/"><strong>下载应用程序！</strong></a></p> |
+| <p>…我们建议您使用高级个人方案。<br><br><a href="https://vault.bitwarden.com/#/?premium=purchase"><strong>现在升级！</strong></a></p> | <p>…我们建议您继续使用免费的个人方案。<br><br><a href="https://bitwarden.com/download/"><strong>下载应用程序！</strong></a></p> |
 
 ## 您要与谁共享？ <a href="#who-will-you-share-with" id="who-will-you-share-with"></a>
 
@@ -59,7 +59,7 @@
 
 ## 您需要哪些工具？ <a href="#what-tools-will-you-need" id="what-tools-will-you-need"></a>
 
-Bitwarden 有两种针对公司的计划：团队和企业。 团队组织和企业组织都允许无限数量的用户（_按每用户每月计费_），并且包括：
+Bitwarden 有两种针对公司的方案：团队和企业。 团队组织和企业组织都允许无限数量的用户（_按每用户每月计费_），并且包括：
 
 * 注册用户的高级功能
 * 事件日志
@@ -79,4 +79,4 @@ Bitwarden 有两种针对公司的计划：团队和企业。 团队组织和企
 
 ## 仍不确定？ <a href="#still-not-sure" id="still-not-sure"></a>
 
-如果仍然不确定哪种计划适合您，您可以在[关于 Bitwarden 计划](password-manager/about-bitwarden-plans.md)中找到各个计划的对比。 或者，随时[联系我们](https://bitwarden.com/contact/)以获取更多帮助。
+如果仍然不确定哪种方案适合您，您可以在[关于 Bitwarden 方案](password-manager/about-bitwarden-plans.md)中找到各个方案的对比。 或者，随时[联系我们](https://bitwarden.com/contact/)以获取更多帮助。

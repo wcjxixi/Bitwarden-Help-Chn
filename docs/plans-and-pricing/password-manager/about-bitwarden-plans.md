@@ -1,16 +1,16 @@
-# Password Manager 计划
+# Password Manager 方案
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/password-manager-plans/)
 {% endhint %}
 
-本文介绍了 Bitwarden Password Manager 的每一种订阅计划，以帮助您开启密码管理和安全数据存储之旅。本文反映的是当前的 Password Manager 计划，最近一次更新是在 2024 年 06 月 04 日。在该日期之前已创建了账户的用户可以在[这里](../updates-to-plans.md)了解他们的计划。
+本文介绍了 Bitwarden Password Manager 的每一种订阅方案，以帮助您开启密码管理和安全数据存储之旅。本文反映的是当前的 Password Manager 方案，最近一次更新是在 2024 年 06 月 04 日。在该日期之前已创建了账户的用户可以在[这里](../updates-to-plans.md)了解他们的方案。
 
-要查看 Secrets Manager 计划，请参阅[此处](../secrets-manager/secrets-manager-plans.md)。
+要查看 Secrets Manager 方案，请参阅[此处](../secrets-manager/secrets-manager-plans.md)。
 
-## 个人计划 <a href="#personal-plans" id="personal-plans"></a>
+## 个人方案 <a href="#personal-plans" id="personal-plans"></a>
 
-个人计划旨在为您或您的家庭提供安全地管理数据所需的所有工具：
+个人方案旨在为您或您的家庭提供安全地管理数据所需的所有工具：
 
 ### 个人免费版 <a href="#free-individual" id="free-individual"></a>
 
@@ -28,7 +28,7 @@
 
 ### 免费组织 <a href="#free-organizations" id="free-organizations"></a>
 
-开始一个免费组织来与另一个用户存储并安全地共享数据。免费组织为 2 个用户提供 Password Manager 的所有核心功能，并可在最多两个集合中安全共享数据。任何计划的任何用户都可以是一个免费组织的所有者。
+开始一个免费组织来与另一个用户存储并安全地共享数据。免费组织为 2 个用户提供 Password Manager 的所有核心功能，并可在最多两个集合中安全共享数据。任何方案的任何用户都可以是一个免费组织的所有者。
 
 ~~**免费组织仅适用于 Bitwarden Cloud。**~~
 
@@ -38,7 +38,7 @@
 
 家庭组织订阅按年计费。
 
-### 个人计划比较 <a href="#compare-personal-plans" id="compare-personal-plans"></a>
+### 个人方案比较 <a href="#compare-personal-plans" id="compare-personal-plans"></a>
 
 在下面的表格中，「高级功能」（包含在**高级个人**和**家庭组织**中）使用星号 (\*) 标记。
 
@@ -62,9 +62,9 @@
 | \*优先支持                                                                                | —                   | **✔︎**                                   | —                   | **✔︎**                                                                                                                                 |
 | 费用                                                                                    | 免费                  | $10/年（按年计费）                              | 免费                  | $40/年（按年计费）                                                                                                                            |
 
-## 商业计划 <a href="#business-plans" id="business-plans"></a>
+## 商业方案 <a href="#business-plans" id="business-plans"></a>
 
-Bitwarden 商业计划旨在满足小型团队、成长型公司和大型企业的存储和共享需求：
+Bitwarden 商业方案旨在满足小型团队、成长型公司和大型企业的存储和共享需求：
 
 ### ~~团队入门版组织~~ <a href="#teams-starter-organizations" id="teams-starter-organizations"></a>
 
@@ -88,11 +88,11 @@ Bitwarden 商业计划旨在满足小型团队、成长型公司和大型企业�
 
 与家庭组织和免费组织不同，企业组织可以拥有无限数量的用户（按每用户计费）。企业组织订阅可以按年或按月计费。
 
-### 商业计划比较 <a href="#compare-business-plans" id="compare-business-plans"></a>
+### 商业方案比较 <a href="#compare-business-plans" id="compare-business-plans"></a>
 
 在下面的表格中，「高级功能」（包含在**团队组织**和**企业组织**中）使用星号 (\*) 标记。
 
-| 商业计划包含的功能                                                                                         | 团队组织                               | 企业组织                              |
+| 商业方案包含的功能                                                                                         | 团队组织                               | 企业组织                              |
 | ------------------------------------------------------------------------------------------------- | ---------------------------------- | --------------------------------- |
 | 安全地存储登录、笔记、支付卡和身份                                                                                 | 无限制                                | 无限制                               |
 | 数据共享                                                                                              | 无限制                                | 无限制                               |

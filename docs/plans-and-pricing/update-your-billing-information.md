@@ -7,7 +7,7 @@
 您的计费信息仅能通过网页 App 进行更新。
 
 {% hint style="warning" %}
-个人计划的订阅和组织计划的订阅是**分开**的。需要在不同的区域更新计费信息。如果您**同时**拥有高级会员和组织订阅，为其中一个更新计费信息并不会同时更新另一个。
+个人方案的订阅和组织方案的订阅是**分开**的。需要在不同的区域更新计费信息。如果您**同时**拥有高级会员和组织订阅，为其中一个更新计费信息并不会同时更新另一个。
 {% endhint %}
 
 ## 更新个人计费信息 <a href="#update-billing-information-for-individuals" id="update-billing-information-for-individuals"></a>

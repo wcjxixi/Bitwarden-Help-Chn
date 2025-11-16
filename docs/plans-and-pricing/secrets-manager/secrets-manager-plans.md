@@ -1,20 +1,20 @@
-# Secrets Manager 计划
+# Secrets Manager 方案
 
 {% hint style="success" %}
 机密优先支持即将推出对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-plans/)
 {% endhint %}
 
-这篇文章中，我们将阐述 Bitwarden Secrets Manager 的每一种订阅计划，以帮助你开启您的机密管理和安全数据存储之旅。要查看 Password Manager 计划，请参阅[此处](../password-manager/about-bitwarden-plans.md)。
+这篇文章中，我们将阐述 Bitwarden Secrets Manager 的每一种订阅方案，以帮助你开启您的机密管理和安全数据存储之旅。要查看 Password Manager 方案，请参阅[此处](../password-manager/about-bitwarden-plans.md)。
 
 {% hint style="success" %}
-Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务。如果您有家庭计划并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费组织并按照[这些步骤](../../secrets-manager/get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
+Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务。如果您有家庭方案并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费组织并按照[这些步骤](../../secrets-manager/get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
 {% endhint %}
 
 本页面上的价格以美元 (USD) 显示，以及基于年度订阅。
 
 ## 免费版 <a href="#free" id="free"></a>
 
-使用 Secrets Manager 存储[机密](../../secrets-manager/your-secrets/secrets.md)并与其他用户安全地共享机密。Secrets Manager 免费版计划提供 Secrets Manager 的核心功能：
+使用 Secrets Manager 存储[机密](../../secrets-manager/your-secrets/secrets.md)并与其他用户安全地共享机密。Secrets Manager 免费版方案提供 Secrets Manager 的核心功能：
 
 * 最多 2 个用户
 * 最多 3 个[工程](../../secrets-manager/your-secrets/projects.md)
@@ -24,7 +24,7 @@ Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务�
 
 ## 团队版 <a href="#teams" id="teams"></a>
 
-为您的整个开发团队提供额外的业务功能。Secrets Manager 团队版计划的价格为 **$6/用户/月**，Secrets Manager 团队版计划提供：
+为您的整个开发团队提供额外的业务功能。Secrets Manager 团队版方案的价格为 **$6/用户/月**，Secrets Manager 团队版方案提供：
 
 * 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
 * 最多 20 个[机器账户](../../secrets-manager/your-secrets/machine-accounts.md)
@@ -35,7 +35,7 @@ Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务�
 
 ## 企业版 <a href="#enterprise" id="enterprise"></a>
 
-通过自动化配置和其他管理功能支持企业需求。Secrets Manager 企业版计划的价格为 **$12/用户/月**，Secrets Manager 企业版计划提供：
+通过自动化配置和其他管理功能支持企业需求。Secrets Manager 企业版方案的价格为 **$12/用户/月**，Secrets Manager 企业版方案提供：
 
 * 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
 * 最多 50 个[机器账户](../../secrets-manager/your-secrets/machine-accounts.md)
@@ -44,7 +44,7 @@ Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务�
 
 [现在注册 7 天免费试用](https://bitwarden.com/go/start-secrets-teams-trial/)。
 
-## 计划比较 <a href="#compare-plans" id="compare-plans"></a>
+## 方案比较 <a href="#compare-plans" id="compare-plans"></a>
 
 | 功能            | 免费版          | 团队版                                           | 企业版                                           |
 | ------------- | ------------ | --------------------------------------------- | --------------------------------------------- |

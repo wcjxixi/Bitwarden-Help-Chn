@@ -258,7 +258,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **组织赞助的家庭计划**：组织可以直接为员工个人电子邮箱账户（包括非当前组织成员的员工）发放赞助版家庭计划。[了解更多](admin-console/more/organization-sponsored-families-plans.md)有关赞助版家庭计划的信息。
+* **组织赞助的家庭方案**：组织可以直接为员工个人电子邮箱账户（包括非当前组织成员的员工）发放赞助版家庭方案。[了解更多](admin-console/more/organization-sponsored-families-plans.md)有关赞助版家庭方案的信息。
 * **集合权限调整**：「可以编辑」和「可以编辑，隐藏密码」权限现默认允许用户删除集合项目，除非启用了新增的「限制为具有「管理集合」权限的成员可以删项目」选项。[了解更多](admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)有关集合权限的信息。
 * **新的集合管理设置**：为了增加权限定制，添加了一个新的集合管理设置：「限制为具有「管理集合」权限的成员可以删项目」选项。[了解更多](admin-console/manage-shared-items/collections/collection-settings.md)有关集合管理设置的信息。
 
@@ -402,7 +402,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 * **屏蔽浏览器扩展的自动填充**：现在可以专门指示浏览器扩展不允许在某些域名上进行自动填充。[了解更多](password-manager/autofill/more-autofill-options/blocking-autofill.md)。
 * **移动版 Bitwarden Send 更新**：移动 App 上的 Bitwarden Send 选项已不再支持设置有效期和停用 Send，这与浏览器扩展目前提供的功能一致。在未来的版本中，其他客户端也将停止对这些选项的支持。[了解更多](password-manager/bitwarden-send/send-lifespan.md)。
 
-### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
+### 方案 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
 
 * **重启组织订阅**：已终止或失效的 Bitwarden 订阅现在有 7 天的宽限期，用户可以重新激活订阅。了解更多有关[组织续费](plans-and-pricing/organization-renewal.md)的信息。
 
@@ -446,7 +446,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **移除免费的 Bitwarden 家庭赞助策略**：该策略允许企业组织阻止用户通过他们的组织兑换赞助的家庭计划。[了解更多](plans-and-pricing/password-manager/redeem-families-sponsorship.md)。
+* **移除免费的 Bitwarden 家庭赞助策略**：该策略允许企业组织阻止用户通过他们的组织兑换赞助的家庭方案。[了解更多](plans-and-pricing/password-manager/redeem-families-sponsorship.md)。
 * **集成页面**：管理控制台导航菜单中添加了集成页面。集成页面提供了Bitwarden SSO 集成、事件管理等常用的帮助中心链接！
 
 ### 提供商门户 <a href="#provider-portal" id="provider-portal"></a>
@@ -525,7 +525,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 * **Microsoft Sentinel 集成**：新的本地集成可用于 Microsoft Sentinel 安全信息和事件管理 (SIEM)。该集成提供了跨身份验证、组织活动和密码库项目的全面事件覆盖。[了解更多](admin-console/oversight-visibility/siem-integrations/microsoft-sentinel-siem.md)。
 * **Ping Identity SCIM 支持**：Bitwarden 组织现已正式支持 Ping Identity 跨域身份管理 (SCIM) 系统。使用 Ping Identity SCIM 集成来自动配置 Bitwarden 组织中的成员和群组。[了解更多](admin-console/login-with-sso/implementation-guides/ping-identity-saml-implementation.md)。
-* **UI 改进升级计划**：为简化将您的组织升级到另一个计划的流程，对 UI 进行了改进。[了解更多](admin-console/organizations-overview.md#upgrade-an-organization)。
+* **UI 改进升级方案**：为简化将您的组织升级到另一个方案的流程，对 UI 进行了改进。[了解更多](admin-console/organizations-overview.md#upgrade-an-organization)。
 * **为允许的应用程序策略自动登录用户**：这项新策略将允许 IdP 管理员启用非 SSO 应用程序，以便在从其 IdP 面板启动时自动登录用户。[了解更多](admin-console/oversight-visibility/enterprise-policies.md#automatically-log-in-users-for-allowed-applications)。
 
 ## 2024.9.2
@@ -643,7 +643,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 * **密码库项目秘钥**：添加了额外的加密层，其形式是为每个单独的密码库项目生成新的加密密钥。[了解更多](security/bitwarden-security-whitepaper.md#how-vault-data-is-encrypted)。
 
-### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
+### 方案 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
 
 * **按月计费的组织账单更新**：按月计费的团队和企业组织将看到按比例分配的席位数调整包含在下一次生成的月度账单中，而不是在席位数变化时新生成的账单中。
 * **按年计费的组织账单更新**：按年计费的团队和企业组织将看到按比例分配的席位数调整包含在每月一次的调整账单中，而不是在席位数变化立即生成的单独账单中。
@@ -811,7 +811,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 * **组织唯一的 SP 实体 ID**：使用 SSO SAML 的组织现在可以升级其实体 ID，升级后的实体 ID 对于其组织来说是唯一的。这样做需要在 IdP 上重新配置（参阅[这里](admin-console/login-with-sso/saml-2.0-configuration.md)）。
 
-### 计划 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
+### 方案 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
 
 * **自动税率计算**：用于订阅的税率现在将由我们的支付分包商根据地理位置自动计算。Bitwarden 收取的小计将保持不变，但您可能会注意到您的含税月度账单将有所变化。
 
@@ -911,7 +911,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-* **Secrets Manager - 全面上市**：Bitwarden Secrets Manager 现已全面上市，使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理、自动化和部署机密。了解有关 [Secrets Manager 计划](plans-and-pricing/secrets-manager/secrets-manager-plans.md)和[注册](plans-and-pricing/secrets-manager/sign-up-for-secrets-manager.md)的更多信息。
+* **Secrets Manager - 全面上市**：Bitwarden Secrets Manager 现已全面上市，使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理、自动化和部署机密。了解有关 [Secrets Manager 方案](plans-and-pricing/secrets-manager/secrets-manager-plans.md)和[注册](plans-and-pricing/secrets-manager/sign-up-for-secrets-manager.md)的更多信息。
 * **导入到文件夹或集合**：从**工具** → **导入数据**界面，将数据直接导入到现有文件夹，或者如果您是组织成员，将数据直接导入到集合。
 
 ## 2023.7.1
@@ -1077,7 +1077,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 此次发布包含：
 
 * **Fastmail 电子邮件别名集成**：将 Bitwarden 用户名生成器连接到 Fastmail，以方便创建其电子邮件别名（参阅[这里](password-manager/your-vault/security-tools/generator.md#username-types)）。
-* **提供商门户更新**：提供商门户主界面现在具有每一个客户组织的一目了然的席位和计划报告。
+* **提供商门户更新**：提供商门户主界面现在具有每一个客户组织的一目了然的席位和方案报告。
 * **组织密码库导出事件**：当所有者或管理员执行密码库导出时，该操作现在将记录在组织的事件日志中（参阅[这里](admin-console/oversight-visibility/event-logging/event-logs.md#organization-events)）。
 * **浏览器扩展 - 支持预配置环境 URL**：自托管客户现在可以为浏览器扩展预配置环境 URL，通过使用端点管理来部署您的配置，从而简化最终用户的部署（参阅[这里](broken-reference)）。
 * **移动端 - 更新至 Bitwarden Authenticator**：移动 App 现在有一个验证码界面，可让您快速轻松地访问您的所有 TOTP（参阅[这里](password-manager/your-vault/security-tools/totp.md#viewing-totp-codes)）。我们还改进了通过移动 App 将 TOTP 代码添加到密码库项目的过程（参阅[这里](password-manager/your-vault/security-tools/totp.md#scan-a-qr-code)）。
@@ -1187,7 +1187,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 
 服务器 1.45.0、Web 2.25.0，桌面端 1.30.0，浏览器扩展 1.55.0，移动端 2.15.0，CLI 1.20.0
 
-Bitwarden 很自豪地宣布在 12 月的版本中增加了新的企业功能，为企业计划增加了灵活性和价值。
+Bitwarden 很自豪地宣布在 12 月的版本中增加了新的企业功能，为企业方案增加了灵活性和价值。
 
 * &#x20;[**Key Connector**](self-hosting/key-connector/about-key-connector.md)：(_仅适用于自托管组织_）当使用带有客户管理加密的 SSO 登录时，作为使用主密码解密密码库的一个替代方案，自托管 Key Connector 应用程序向 Bitwarden 客户端提供加密密钥（参阅[这里](self-hosting/key-connector/about-key-connector.md)）。
 * **用于企业的家庭**：(_目前仅适用于云托管组织，未来版本的自托管_）从这个版本开始，企业组织的成员可以兑换一个与最多 5 个朋友或家庭成员共享的免费 [Bitwarden 家庭组织](plans-and-pricing/password-manager/about-bitwarden-plans.md#families-organizations)。家庭组织包括所有 6 个用户的所有高级功能和无限制的安全数据共享（参阅[这里](plans-and-pricing/password-manager/redeem-families-sponsorship.md)）。

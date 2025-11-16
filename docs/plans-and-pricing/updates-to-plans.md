@@ -1,4 +1,4 @@
-# \*更新 Password Manager 计划 & 订阅
+# \*更新 Password Manager 方案 & 订阅
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/updates-to-plans/)
@@ -8,9 +8,9 @@
 
 忠实客户可以使用 Bitwarden Password Manager 的所有最新和高级功能。从 2023 年 11 月 06 日开始，随着新产品更新，客户将自动收到最新功能，从而提高效率、安全性和生产力。
 
-本文详细介绍了之前的 Bitwarden Password Manager 订阅。您可以通过**计费** → **订阅**页面或查看最新的收据中的说明来确定您所使用的计划。
+本文详细介绍了之前的 Bitwarden Password Manager 订阅。您可以通过**计费** → **订阅**页面或查看最新的收据中的说明来确定您所使用的方案。
 
-如果您在 2023 年 11 月 06 日或之后购买了订阅，请参阅 [Password Manager 计划](password-manager/about-bitwarden-plans.md)一文。
+如果您在 2023 年 11 月 06 日或之后购买了订阅，请参阅 [Password Manager 方案](password-manager/about-bitwarden-plans.md)一文。
 
 ## 2020 年 09 月 06 日之前购买的订阅 <a href="#subscriptions-purchased-prior-to-september-6-2020" id="subscriptions-purchased-prior-to-september-6-2020"></a>
 
@@ -30,7 +30,7 @@
 * 为所有成员解锁高级功能，例如高级 2FA 选项、TOTP 生成、文件附件和紧急访问。在 2019 年家庭版组织订阅中，组织拥有的项目可使用 TOTP 生成和附件等功能，但如果您为每位成员购买了高级版，则个人拥有的项目才能使用这些功能。
 
 {% hint style="info" %}
-截至 2025 年 03 月 10 日，2019 年家庭版计划已升级为为所有组织成员提供高级 2FA 选项、TOTP 生成、文件附件和紧急访问等高级功能。
+截至 2025 年 03 月 10 日，2019 年家庭版方案已升级为为所有组织成员提供高级 2FA 选项、TOTP 生成、文件附件和紧急访问等高级功能。
 {% endhint %}
 
 这意味着，$40/年的当前家庭版组织，比 $52/年的家庭组织和所有用户的高级会员更便宜。
@@ -49,7 +49,7 @@
 
 ## 团队入门版 <a href="#teams-starter" id="teams-starter"></a>
 
-团队入门版计划自 2024 年 06 月 11 日起不再作为创建新组织的选项。如果您已经是团队入门版客户，您的功能集和价格将保持不变，并将继续按照您最初购买订阅的价格计费。
+团队入门版方案自 2024 年 06 月 11 日起不再作为创建新组织的选项。如果您已经是团队入门版客户，您的功能集和价格将保持不变，并将继续按照您最初购买订阅的价格计费。
 
 ## 常见问题 <a href="#faqs" id="faqs"></a>
 
@@ -69,7 +69,7 @@
 
 **答：**&#x5728; 2023 年 11 月 06 日之前购买 Bitwarden Teams 版或 Enterprise 版的现有客户将保持原价。
 
-### 问：2019 年团队版和企业版计划客户可以获得哪些新功能？ <a href="#q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting" id="q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting"></a>
+### 问：2019 年团队版和企业版方案客户可以获得哪些新功能？ <a href="#q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting" id="q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting"></a>
 
 **答：**&#x5BA2;户将以相同的价格获得如下最新功能：
 

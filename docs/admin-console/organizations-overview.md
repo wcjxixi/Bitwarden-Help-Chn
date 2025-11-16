@@ -20,13 +20,13 @@
 
 ### 组织的类型 <a href="#types-of-organizations" id="types-of-organizations"></a>
 
-Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需求。关于每种组织类型的逐一功能细分，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
+Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需求。关于每种组织类型的逐一功能细分，请参阅[关于 Bitwarden 方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 
 <table><thead><tr><th width="150">类型</th><th>描述</th></tr></thead><tbody><tr><td>免费组织</td><td>免费组织允许 2 个用户在最多 2 个<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享。</td></tr><tr><td>家庭组织</td><td>家庭组织允许 6 个用户在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享。</td></tr><tr><td>团队组织</td><td>团队组织允许无限的用户（按每用户每月计费）在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享，并提供一套操作工具，如事件日志。</td></tr><tr><td>企业组织</td><td>企业组织允许无限的用户（按每用户每月计费）在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享，并在 Bitwarden 的操作工具套件中添加了仅针对企业的功能，例如 <a href="login-with-sso/about-login-with-sso.md">SSO 登录</a>和<a href="oversight-visibility/enterprise-policies.md">策略</a>。</td></tr></tbody></table>
 
 ### 组织与高级会员比较 <a href="#comparing-organizations-with-premium" id="comparing-organizations-with-premium"></a>
 
-关键的是要知道，**组织可以实现从组织到用户的安全共享**。[高级个人计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)可解锁高级密码安全和管理功能，包括高级 2FA 选项、Bitwarden 验证器（TOTP）、加密的文件附件等，但高级个人计划**不包含安全数据共享功能**。
+关键的是要知道，**组织可以实现从组织到用户的安全共享**。[高级个人方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)可解锁高级密码安全和管理功能，包括高级 2FA 选项、Bitwarden 验证器（TOTP）、加密的文件附件等，但高级个人方案**不包含安全数据共享功能**。
 
 付费组织（家庭、团队或企业）自动为组织中已注册的**每一个**用户提供这些高级功能（高级 2FA 选项、Bitwarden 验证器（TOTP）等）。
 
@@ -46,7 +46,7 @@ Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需�
 
 输入**组织名称**和一个我们可以联系到您的**账单电子邮箱**。[了解计费电子邮箱持有者的权限](../plans-and-pricing/billing-faqs.md#wen-wo-de-zu-zhi-de-ji-fei-dian-zi-you-jian-de-chi-you-zhe-ke-yi-zhi-xing-na-xie-cao-zuo)。
 
-2、**选择您的计划**。Bitwarden 提供适合任何需求的组织。查看[功能区别](../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-business-plans)，以找出最适合您的组织。
+2、**选择您的方案**。Bitwarden 提供适合任何需求的组织。查看[功能区别](../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-business-plans)，以找出最适合您的组织。
 
 {% hint style="success" %}
 所有付费组织（家庭、初创团队、团队或企业）都包含了所有注册用户的高级功能！
@@ -54,7 +54,7 @@ Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需�
 
 3、如果您选择**免费组织**，那么一切就准备好了！如果您选择我们的付费组织之一，
 
-* **家庭/团队/企业**：您的计划随附了 1GB 加密[附件存储](../password-manager/your-vault/vault-items/file-attachments.md)空间。$0.33 /GB / 月添加**加附加存储（GB）**。
+* **家庭/团队/企业**：您的方案随附了 1GB 加密[附件存储](../password-manager/your-vault/vault-items/file-attachments.md)空间。$0.33 /GB / 月添加**加附加存储（GB）**。
 * **团队/企业**：指定组织所需的**用户席位**数量。以后可以随时添加更多席位。如果超过此数量，席位会自动增加，除非您[指定限制](manage-members/user-management.md#set-a-seat-limit)。
 * **团队/企业**：选择您要**按年**还是**按月**付费。家庭组织只能**按年**付费。
 
@@ -92,9 +92,9 @@ Bitwarden 集合和群组是一种组织工具，可以让您安全地共享数�
 
 ## 升级组织 <a href="#upgrade-an-organization" id="upgrade-an-organization"></a>
 
-如果您想将组织升级到另一个计划，以解锁[附加功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md)：
+如果您想将组织升级到另一个方案，以解锁[附加功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md)：
 
 1. 在管理控制台中，导航到组织的**计费** → **订阅**视图。
-2. 选择**升级计划**按钮。
+2. 选择**升级方案**按钮。
 
-您只能将组织升级到更高的计划，例如从团队计划升级到企业计划。以这种方式升级组织不会像创建新组织那样启动 7 天免费试用。
+您只能将组织升级到更高的方案，例如从团队方案升级到企业方案。以这种方式升级组织不会像创建新组织那样启动 7 天免费试用。
