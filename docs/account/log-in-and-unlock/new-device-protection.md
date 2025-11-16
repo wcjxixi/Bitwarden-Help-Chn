@@ -5,10 +5,10 @@
 {% endhint %}
 
 {% hint style="info" %}
-从 **2025 年 05 月 28 日**开始，所有 Bitwarden 客户端将受到新设备登录保护控制。为确保无缝的登录体验，请更新您的 Bitwarden 客户端，因为非常旧的版本可能不支持此功能。
+从 **2025 年 05 月 28 日**开始，所有 Bitwarden 客户端将受到新设备登录保护。为确保无缝的登录体验，请更新您的 Bitwarden 客户端，因为非常旧的版本可能不支持此功能。
 {% endhint %}
 
-> **\[译者注]**：如果您的 Bitwarden 账户对应的电子邮箱已不存在或您无法访问，导致您无法获取验证码，您可以[联系 Bitwarden 客服支持](https://bitwarden.com/contact/)说明情况，可能需要提供一个您可以访问的电子邮箱，他们会对您的 Bitwarden 账户暂时免除新设备登录保护 (NDLP - New Device Login Protection)。注意豁免期只有 24 小时！
+> **\[译者注]**：如果您的 Bitwarden 账户对应的电子邮箱已不存在或您无法访问，导致您无法获取验证码，您可以[联系 Bitwarden 客服支持](https://bitwarden.com/contact/)说明情况，并提供一个您可以访问的电子邮箱，他们会对您的 Bitwarden 账户临时免除新设备登录保护 (NDLP - New Device Login Protection)。注意豁免期只有 24 小时！
 
 为确保您的账户安全，Bitwarden 将对**未使用**[**两步登录**](../two-step-login/setup-two-step-login/two-step-login-methods.md)**的用户**要求额外的验证。**当从一个以前未登录过的设备登录时**，在您输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码，以完成登录过程。例如，如果您登录的是以前使用过的移动 App 或浏览器扩展，则不会收到此提示。
 
@@ -38,7 +38,7 @@ Bitwarden 正在实施这一变更，以增强未激活[两步登录](../two-ste
 
 * 卸载并重新安装移动 App、桌面 App 或浏览器扩展将触发新设备。
 * 清除浏览器 cookie 将为网页 App 触发新设备，但不会为浏览器扩展触发新设备。
-* 在虚拟桌面基础架构 (VDI) 中使用浏览器扩展，在每次会话后重置用户配置文件存储。在这种情况下，[本地存储](../../security/data/data-storage.md#on-your-local-machine)不会持久化。
+* 在虚拟桌面基础架构 (VDI) 中使用浏览器扩展，在每次会话后会重置用户配置文件存储。在这种情况下，[本地存储](../../security/data/data-storage.md#on-your-local-machine)不会被保留。
 
 ### 我的电子邮箱凭据保存在 Bitwarden 中。我会被锁定在 Bitwarden 之外吗？ <a href="#my-email-credentials-are-saved-in-bitwarden.-will-i-be-locked-out-of-bitwarden" id="my-email-credentials-are-saved-in-bitwarden.-will-i-be-locked-out-of-bitwarden"></a>
 
@@ -56,9 +56,9 @@ Bitwarden 正在实施这一变更，以增强未激活[两步登录](../two-ste
 * 已经使用了 SSO、通行密钥或 API 密钥登录的用户。
 * 自托管用户。
 * 从以前登录过的设备登录的用户。
-* 从**设置** → **我的账户**界面选择退出的用户（**不建议**）。
+* 从**设置** → **我的账户**界面选择了**停用新设备登录保护**的用户（**不建议**）。
 
-### 我的组织使用 SSO，我的用户是否必须完成新设备验证？ <a href="#my-organization-users-sso-do-my-users-have-to-complete-new-device-verification" id="my-organization-users-sso-do-my-users-have-to-complete-new-device-verification"></a>
+### 我的组织使用 SSO，我的用户是否必须完成新设备验证吗？ <a href="#my-organization-users-sso-do-my-users-have-to-complete-new-device-verification" id="my-organization-users-sso-do-my-users-have-to-complete-new-device-verification"></a>
 
 不需要。使用 SSO 登录的用户不会被要求在新设备上验证登录。但是，如果用户未启用两步登录，不通过 SSO 而是使用用户名和密码登录，则他们会被要求验证新设备。
 
@@ -78,7 +78,7 @@ Bitwarden 正在更新恢复代码流程，以便当您提交密码和恢复代�
 
 ### 我想选择退出！有什么选择吗？ <a href="#i-want-to-opt-out-is-there-an-option-to" id="i-want-to-opt-out-is-there-an-option-to"></a>
 
-这是为未启用两步登录的用户增加的额外安全措施。未启用两步登录的用户更容易受到攻击者的未经授权的访问，因为即使密码强度高且唯一，也可能通过多种方式被泄露。例如，常见的方法包括：
+这是为未启用两步登录的用户增加的额外安全措施。未启用两步登录的用户更容易受到攻击者的未经授权的访问，因为即使密码强度高且唯一，也可能通过多种方式被泄露。例如，常见的方式包括：
 
 * **钓鱼攻击**：网络犯罪分子使用欺骗性电子邮件或网站诱骗您泄露密码。
 * **社会工程攻击**：攻击者可能通过电话、短信或其他方式试图操纵或欺骗您泄露您的密码。
@@ -100,4 +100,4 @@ Bitwarden 正在更新恢复代码流程，以便当您提交密码和恢复代�
 
 如果用户不希望使用新设备验证，强烈建议启用其他两步登录方式（验证器 App、硬件密钥或不同的电子邮箱）之一来保护您的账户。
 
-如果用户不希望使用新设备验证，也不想设置其他两步登录方式，并且不希望账户有任何安全保护，可以通过导航到**设置** → **我的账户**页面并滚动到**危险区域**部分选择退出。我们必须强调，**强烈不建议这样做**，因为这会使您的账户容易受到各种攻击。
+如果用户不希望使用新设备验证，也不想设置其他两步登录方式，并且不希望账户有任何安全保护，可以通过导航到**设置** → **我的账户**页面然后滚动到**危险操作区**部分选择**停用新设备登录保护**。我们必须强调，**强烈不建议这样做**，因为这会使您的账户容易受到各种攻击。
