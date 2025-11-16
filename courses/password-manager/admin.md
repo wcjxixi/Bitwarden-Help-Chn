@@ -100,9 +100,9 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 详细了解当企业组织配置为[受信任设备加密的 SSO](../../docs/admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 时，用户将如何体验 SSO 登录流程。
 
-* 00:10：简介
-* 00:40：启动 SSO 登录过程
-* 01:10：从其他设备批准登录
+* **00:10**：简介
+* **00:40**：启动 SSO 登录过程
+* **01:10**：从其他设备批准登录
 
 ### 声明您的域名 <a href="#claim-your-domain" id="claim-your-domain"></a>
 
@@ -116,8 +116,8 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 [此处](../../docs/admin-console/more/organization-sponsored-families-plans.md)了解更多有关企业赞助的家庭组织的信息。
 
-* 00:14：数据安全 & 免费方案
-* 00:35：兑换 & 制定方案
+* **00:14**：数据安全 & 免费方案
+* **00:35**：兑换 & 制定方案
 
 ## 观看演示 <a href="#watch-a-demo" id="watch-a-demo"></a>
 
@@ -127,11 +127,11 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 [此处](../../docs/plans-and-pricing/password-manager/about-bitwarden-plans.md)了解更多有关可用的 Bitwarden 计划的信息。
 
-* 00:07：简介和特点
-* 00:35：加密与安全
-* 02:22：托管和管理
-* 04:11：数据组织
-* 10:28：管理和安全
+* **00:07**：简介和特点
+* **00:35**：加密与安全
+* **02:22**：托管和管理
+* **04:11**：数据组织
+* **10:28**：管理和安全
 
 ## 入职资源 <a href="#onboarding-resources" id="onboarding-resources"></a>
 
@@ -255,11 +255,11 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 [此处](../../docs/plans-and-pricing/password-manager/about-bitwarden-plans.md)了解更多有关可用的 Bitwarden 计划的信息。
 
-* 00:07：简介和特点
-* 00:35：加密与安全
-* 02:22：托管和管理
-* 04:11：数据组织
-* 10:28：管理和安全
+* **00:07**：简介和特点
+* **00:35**：加密与安全
+* **02:22**：托管和管理
+* **04:11**：数据组织
+* **10:28**：管理和安全
 
 ## 入职资源 <a href="#onboarding-resources" id="onboarding-resources"></a>
 

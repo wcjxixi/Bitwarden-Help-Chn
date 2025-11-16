@@ -28,11 +28,11 @@
 
 视频章节：
 
-* 00:06：概述
-* 00:29：1、从 Bitwarden 主页
-* 01:26：2、从 Bitwarden 客户端
-* 01:36：3、从邀请/SSO
-* 02:26：Bitwarden 学习中心
+* **00:06**：概述
+* **00:29**：1、从 Bitwarden 主页
+* **01:26**：2、从 Bitwarden 客户端
+* **01:36**：3、从邀请/SSO
+* **02:26**：Bitwarden 学习中心
 
 ### 主密码和受信任设备 <a href="#master-password-vs-trusted-devices" id="master-password-vs-trusted-devices"></a>
 
@@ -89,20 +89,20 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 
 [此处](../../docs/password-manager/getting-started/getting-started-browserext.md)了解更多有关浏览器扩展入门的信息。
 
-* 00:11：安装 Bitwarden
-* 00:23：固定扩展
-* 00:32：登录或创建账户
-* 00:37：禁用浏览器的密码管理器
-* 00:50：导入项目
-* 01:11：创建一个新项目
-* 01:42：附加字段
-* 01:52：使用文件夹
-* 02:11：收藏一个项目
-* 02:17：自动填充
-* 02:39：自动保存弹出窗口
-* 02:45：PIN 码和生物识别
-* 02:58：账户切换
-* 03:07：自定义 Bitwarden
+* **00:11**：安装 Bitwarden
+* **00:23**：固定扩展
+* **00:32**：登录或创建账户
+* **00:37**：禁用浏览器的密码管理器
+* **00:50**：导入项目
+* **01:11**：创建一个新项目
+* **01:42**：附加字段
+* **01:52**：使用文件夹
+* **02:11**：收藏一个项目
+* **02:17**：自动填充
+* **02:39**：自动保存弹出窗口
+* **02:45**：PIN 码和生物识别
+* **02:58**：账户切换
+* **03:07**：自定义 Bitwarden
 
 最好[禁用浏览器的内置密码管理器](../../docs/password-manager/getting-started/getting-started-browserext.md#disable-a-built-in-password-manager)，以确保 Bitwarden 始终是您的首选密码管理器。
 
@@ -130,8 +130,8 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 
 [此处](../../docs/password-manager/more/localization.md)了解更多有关更改 App 语言的信息。
 
-* 00:15：更改网页 App 中的语言设置
-* 00:56：更改桌面 App 中的语言设置
+* **00:15**：更改网页 App 中的语言设置
+* **00:56**：更改桌面 App 中的语言设置
 
 ### 为您所有设备获取 Bitwarden <a href="#get-bitwarden-for-all-your-devices" id="get-bitwarden-for-all-your-devices"></a>
 
@@ -145,8 +145,8 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 
 [此处](../../docs/password-manager/bitwarden-send/about-send.md)了解更多有关 Bitwarden Send 的信息。
 
-* 00:25：使用 Bitwarden Send
-* 01:26：安全和访问控制
+* **00:25**：使用 Bitwarden Send
+* **01:26**：安全和访问控制
 
 ### 使用自定义字段 <a href="#using-custom-fields" id="using-custom-fields"></a>
 
@@ -154,9 +154,9 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 
 [此处](../../docs/password-manager/your-vault/vault-items/custom-fields.md)了解更多有关使用自定义字段的信息。
 
-* 00:07：自定义字段的创建和类型
-* 00:41：自定义字段的使用和链接
-* 01:30：添加自定义字段
+* **00:07**：自定义字段的创建和类型
+* **00:41**：自定义字段的使用和链接
+* **01:30**：添加自定义字段
 {% endtab %}
 
 {% tab title="团队版" %}
@@ -178,11 +178,11 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 
 视频章节：
 
-* 00:06：概述
-* 00:29：1、从 Bitwarden 主页
-* 01:26：2、从 Bitwarden 客户端
-* 01:36：3、从邀请/SSO
-* 02:26：Bitwarden 学习中心
+* **00:06**：概述
+* **00:29**：1、从 Bitwarden 主页
+* **01:26**：2、从 Bitwarden 客户端
+* **01:36**：3、从邀请/SSO
+* **02:26**：Bitwarden 学习中心
 
 ### 您的主密码 <a href="#your-master-password" id="your-master-password"></a>
 
@@ -233,20 +233,20 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 
 [此处](../../docs/password-manager/getting-started/getting-started-browserext.md)了解更多有关浏览器扩展入门的信息。
 
-* 00:11：安装 Bitwarden
-* 00:23：固定扩展
-* 00:32：登录或创建账户
-* 00:37：禁用浏览器的密码管理器
-* 00:50：导入项目
-* 01:11：创建一个新项目
-* 01:42：附加字段
-* 01:52：使用文件夹
-* 02:11：收藏一个项目
-* 02:17：自动填充
-* 02:39：自动保存弹出窗口
-* 02:45：PIN 码和生物识别
-* 02:58：账户切换
-* 03:07：自定义 Bitwarden
+* **00:11**：安装 Bitwarden
+* **00:23**：固定扩展
+* **00:32**：登录或创建账户
+* **00:37**：禁用浏览器的密码管理器
+* **00:50**：导入项目
+* **01:11**：创建一个新项目
+* **01:42**：附加字段
+* **01:52**：使用文件夹
+* **02:11**：收藏一个项目
+* **02:17**：自动填充
+* **02:39**：自动保存弹出窗口
+* **02:45**：PIN 码和生物识别
+* **02:58**：账户切换
+* **03:07**：自定义 Bitwarden
 
 最好[禁用浏览器的内置密码管理器](../../docs/password-manager/getting-started/getting-started-browserext.md#disable-a-built-in-password-manager)，以确保 Bitwarden 始终是您的首选密码管理器。
 
@@ -274,8 +274,8 @@ iOS 和 Android 上的 Bitwarden
 
 [此处](../../docs/password-manager/more/localization.md)了解更多有关更改 App 语言的信息。
 
-* 00:15：更改网页 App 中的语言设置
-* 00:56：更改桌面 App 中的语言设置
+* **00:15**：更改网页 App 中的语言设置
+* **00:56**：更改桌面 App 中的语言设置
 
 ### 为您所有设备获取 Bitwarden <a href="#get-bitwarden-for-all-your-devices" id="get-bitwarden-for-all-your-devices"></a>
 
@@ -289,8 +289,8 @@ iOS 和 Android 上的 Bitwarden
 
 [此处](../../docs/password-manager/bitwarden-send/about-send.md)了解更多有关 Bitwarden Send 的信息。
 
-* 00:25：使用 Bitwarden Send
-* 01:26：安全和访问控制
+* **00:25**：使用 Bitwarden Send
+* **01:26**：安全和访问控制
 
 ### 使用自定义字段 <a href="#using-custom-fields" id="using-custom-fields"></a>
 
@@ -298,9 +298,9 @@ iOS 和 Android 上的 Bitwarden
 
 [此处](../../docs/password-manager/your-vault/vault-items/custom-fields.md)了解更多有关使用自定义字段的信息。
 
-* 00:07：自定义字段的创建和类型
-* 00:41：自定义字段的使用和链接
-* 01:30：添加自定义字段
+* **00:07**：自定义字段的创建和类型
+* **00:41**：自定义字段的使用和链接
+* **01:30**：添加自定义字段
 {% endtab %}
 
 {% tab title="家庭版" %}
@@ -363,20 +363,20 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 
 [此处](../../docs/password-manager/getting-started/getting-started-browserext.md)了解更多有关浏览器扩展入门的信息。
 
-* 00:11：安装 Bitwarden
-* 00:23：固定扩展
-* 00:32：登录或创建账户
-* 00:37：禁用浏览器的密码管理器
-* 00:50：导入项目
-* 01:11：创建一个新项目
-* 01:42：附加字段
-* 01:52：使用文件夹
-* 02:11：收藏一个项目
-* 02:17：自动填充
-* 02:39：自动保存弹出窗口
-* 02:45：PIN 码和生物识别
-* 02:58：账户切换
-* 03:07：自定义 Bitwarden
+* **00:11**：安装 Bitwarden
+* **00:23**：固定扩展
+* **00:32**：登录或创建账户
+* **00:37**：禁用浏览器的密码管理器
+* **00:50**：导入项目
+* **01:11**：创建一个新项目
+* **01:42**：附加字段
+* **01:52**：使用文件夹
+* **02:11**：收藏一个项目
+* **02:17**：自动填充
+* **02:39**：自动保存弹出窗口
+* **02:45**：PIN 码和生物识别
+* **02:58**：账户切换
+* **03:07**：自定义 Bitwarden
 
 最好[禁用浏览器的内置密码管理器](../../docs/password-manager/getting-started/getting-started-browserext.md#disable-a-built-in-password-manager)，以确保 Bitwarden 始终是您的首选密码管理器。
 

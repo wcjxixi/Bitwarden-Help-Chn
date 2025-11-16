@@ -6,7 +6,7 @@
 
 本文旨在向 Bitwarden 管理员介绍适用于团队和企业商业计划的所有特点和功能。跟随这些视频指南，探索安全成功的关键步骤。了解您的计划有哪些可用功能、如何从现有解决方案中导入密码、在组织内共享项目、恢复用户账户，以及对您的实施工作很重要的其他主题。
 
-## Bitwarden 团队和企业演示 <a href="#bitwarden-teams-and-enterprise-demo" id="bitwarden-teams-and-enterprise-demo"></a>
+## Bitwarden 团队和企业版演示 <a href="#bitwarden-teams-and-enterprise-demo" id="bitwarden-teams-and-enterprise-demo"></a>
 
 {% embed url="https://vimeo.com/734127077" %}
 
