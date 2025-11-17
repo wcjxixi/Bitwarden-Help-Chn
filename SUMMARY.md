@@ -379,7 +379,7 @@
   * [Password Manager](docs/plans-and-pricing/password-manager/README.md)
     * [Password Manager 方案](docs/plans-and-pricing/password-manager/about-bitwarden-plans.md)
     * [从个人版升级到组织版](docs/plans-and-pricing/password-manager/upgrade-from-individual-to-organization.md)
-    * [兑换家庭赞助](docs/plans-and-pricing/password-manager/redeem-families-sponsorship.md)
+    * [适用于成员的家庭赞助](docs/plans-and-pricing/password-manager/families-for-enterprise.md)
     * [高级会员续费](docs/plans-and-pricing/password-manager/premium-renewal.md)
   * [Secrets Manager](docs/plans-and-pricing/secrets-manager/README.md)
     * [Secrets Manager 方案](docs/plans-and-pricing/secrets-manager/secrets-manager-plans.md)

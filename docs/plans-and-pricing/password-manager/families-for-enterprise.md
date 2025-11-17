@@ -1,4 +1,4 @@
-# 兑换家庭赞助
+# 适用于成员的家庭赞助
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/families-for-enterprise/)
@@ -6,7 +6,10 @@
 
 {% embed url="https://vimeo.com/828094070" %}
 
-在[此处](../../admin-console/more/organization-sponsored-families-plans.md)了解更多有关企业赞助的家庭组织的信息。
+[此处](../../admin-console/more/organization-sponsored-families-plans.md)了解更多有关企业赞助的家庭组织的信息。
+
+* **00:14**：数据安全 & 免费计划
+* **00:35**：兑换 & 制定计划
 
 [企业组织](../../admin-console/organizations-overview.md#types-of-organizations)的成员可以获得一个**免费的家庭组织**赞助，该赞助可以应用于一个新的或现有的家庭组织，并可直接从网页密码库兑换。
 
@@ -133,7 +136,7 @@
 
 **答：**&#x53EF;以。但是有几个步骤需要完成：
 
-1. [如上所述](redeem-families-sponsorship.md#redeem-your-sponsorship)，在 `https://vault.bitwarden.com` 兑换您的赞助。
+1. [如上所述](families-for-enterprise.md#redeem-your-sponsorship)，在 `https://vault.bitwarden.com` 兑换您的赞助。
 2. 还是在 `https://vault.bitwarden.com`，[按照此处所述](../../self-hosting/licensing.md#retrieve-your-license-1)获取您的家庭组织的许可证文件。
 3. [如此处所述](../../self-hosting/licensing.md#apply-your-license-1)，登录到您的自托管服务器并将许可证文件应用到组织。
 

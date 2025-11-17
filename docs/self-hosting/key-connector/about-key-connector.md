@@ -4,6 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/about-key-connector/)
 {% endhint %}
 
+{% hint style="info" %}
+Bitwarden 建议将[信任设备解密](../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)作为 Key Connector 的替代选项，这样可以方便成员在无需主密码的情况下登录，并且不需要部署或管理密钥服务器。
+{% endhint %}
+
 Key Connector 是一个用于促进客户管理的加密 (CMS) 的自托管应用程序，其允许企业组织向 Bitwarden 客户端提供加密密钥。
 
 > **\[译者注]**：CMS：Customer-Managed Encryption，即客户管理的加密。客户完全控制加密密钥，而不是由服务提供商管理。
@@ -12,7 +16,7 @@ Key Connector 在与现有服务相同的网络上作为 docker 容器运行，�
 
 Key Connector 需要连接到**存储了已加密用户密钥的数据库**和**用于加密和解密已存储的用户密钥的 RSA 密钥对**。Key Connector 可以使用各类数据库提供程序（例如 MSSQL、PostgreSQL、MySQL）和密钥对存储提供程序（例如 Hashicorp Vault、Cloud KMS 提供程序、本地 HSM 设备）来进行[配置](deploy-key-connector.md)，以满足您公司的基础架构要求。
 
-{% embed url="https://bitwarden.com/help/images/sso/keyconnector/keyconnector-diagram-2.png" %}
+{% embed url="https://bitwarden.com/assets/59mLNik59Pb25ZhJ7vNRa9/6ce753e0215ef199ec0cdef6fc880fe8/keyconnector-diagram-2.png?w=856&fm=avif" %}
 Key Connector 架构
 {% endembed %}
 
@@ -28,7 +32,7 @@ Key Connector 架构
 
 由于 Key Connector 使用客户管理的解密密钥代替基于主密码的解密，因此组织成员将被**要求从他们的账户中移除主密码**。移除后，所有密码库解密操作都将使用已存储的用户密钥进行。除了登录之外，这还会对离职和以及您应该注意的其他功能产生一些影响。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 目前，无法为已移除了主密码的账户重新创建主密码。
 
 因此，组织所有者和管理员无法移除他们的主密码，并且即使使用 SSO 也必须继续使用他们的主密码。可以将已移除主密码的用户提升为所有者或管理员，但我们**强烈建议**您的组织始终至少有一个拥有主密码的所有者。
@@ -50,12 +54,13 @@ Key Connector 要求用户[移除他们的主密码](about-key-connector.md#impa
 | **管理员密码重置**  | 使用 Key Connector 后，对于因实施密钥连接器而移除了其主密码的任何用户，[管理员密码重置](../../admin-console/manage-members/account-recovery/about-account-recovery.md)将被禁用。                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **紧急访问**     | <p>使用 Key Connector 后，对于因实施密钥连接器而移除了其主密码的任何用户，紧急访问的<a href="../../account/log-in-and-unlock/more-log-in-options/emergency-access.md#user-access">账户接管选项</a>将被禁用。<br><br>根据既定的紧急访问工作流程，受信任的紧急联系人仍可以<strong>查看</strong>授予人的个人密码库数据。</p>                                                                                                                                                                                                                                                                                                                         |
 | **更改电子邮箱**   | 使用 Key Connector 时，不能更改用户的密码库电子邮箱地址。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **CLI**      | 没有主密码的用户将无法访问密码管理器 CLI。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 ## 如何开始使用 Key Connector？ <a href="#how-do-i-start-using-key-connector" id="how-do-i-start-using-key-connector"></a>
 
 要开始使用客户管理加密的 Key Connector，请查看以下要求：
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 加密密钥的管理非常敏感，**仅建议拥有可以安全支持部署和管理密钥服务器的团队和基础架构的企业使用**。
 {% endhint %}
 

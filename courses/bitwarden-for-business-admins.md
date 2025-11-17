@@ -70,7 +70,7 @@
 
 {% embed url="https://vimeo.com/828094070" %}
 
-[此处](../docs/plans-and-pricing/password-manager/redeem-families-sponsorship.md)了解更多有关企业赞助的家庭组织的信息，或跳转到视频中的以下时间点，了解特定主题：
+[此处](../docs/plans-and-pricing/password-manager/families-for-enterprise.md)了解更多有关企业赞助的家庭组织的信息，或跳转到视频中的以下时间点，了解特定主题：
 
 * **00:14**：关于赞助家庭方案。
 * **00:35**：兑换赞助家庭方案。

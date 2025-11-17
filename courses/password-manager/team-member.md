@@ -120,7 +120,7 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 
 ### 将安全浏览带入家庭 <a href="#bring-secure-browsing-home" id="bring-secure-browsing-home"></a>
 
-一些企业组织为成员提供了一个免费的赞助家庭组织，这样员工就可以与最多 5 位朋友或家人安全地共享个人密码箱项目。了解[如何兑换您的赞助](../../docs/plans-and-pricing/password-manager/redeem-families-sponsorship.md#redeem-your-sponsorship)，确保您的家人实践安全浏览。
+一些企业组织为成员提供了一个免费的赞助家庭组织，这样员工就可以与最多 5 位朋友或家人安全地共享个人密码箱项目。了解[如何兑换您的赞助](../../docs/plans-and-pricing/password-manager/families-for-enterprise.md#redeem-your-sponsorship)，确保您的家人实践安全浏览。
 
 ## 了解更多 <a href="#learn-more" id="learn-more"></a>
 

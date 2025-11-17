@@ -21,7 +21,7 @@
 {% endembed %}
 
 {% hint style="success" %}
-如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../../../plans-and-pricing/password-manager/redeem-families-sponsorship.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
+如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../../../plans-and-pricing/password-manager/families-for-enterprise.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
 
 <img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1Bc4QseUed27nuuhbeD7WR/1822635ca4cdd527903a0f9d5b85d271/2023-08-29_08-48-42.png?_a=DAJCwlWIZAAB" alt="自托管域名选择器" data-size="original">
 
@@ -55,7 +55,7 @@
 {% endembed %}
 
 {% hint style="success" %}
-如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../../../plans-and-pricing/password-manager/redeem-families-sponsorship.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
+如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../../../plans-and-pricing/password-manager/families-for-enterprise.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
 
 <img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1Bc4QseUed27nuuhbeD7WR/1822635ca4cdd527903a0f9d5b85d271/2023-08-29_08-48-42.png?_a=DAJCwlWIZAAB" alt="自托管域名选择器" data-size="original">
 
