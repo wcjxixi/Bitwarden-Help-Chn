@@ -24,7 +24,7 @@
 
 3、选择**保存**。
 
-{% hint style="info" %}
+{% hint style="success" %}
 具有独立设置的用户可以选择在**自定义环境**部分中单独指定每个服务的 URL。
 {% endhint %}
 {% endtab %}
@@ -42,7 +42,7 @@
 
 3、选择**保存**。
 
-{% hint style="info" %}
+{% hint style="success" %}
 具有独立设置的用户可以选择在**自定义环境**部分中单独指定每个服务的 URL。
 {% endhint %}
 {% endtab %}
@@ -60,7 +60,7 @@
 
 3、选择**保存**。
 
-{% hint style="info" %}
+{% hint style="success" %}
 具有独立设置的用户可以选择在**自定义环境**部分中单独指定每个服务的 URL。
 {% endhint %}
 {% endtab %}
@@ -68,8 +68,8 @@
 {% tab title="CLI" %}
 要将 CLI 连接到您的自托管服务器：
 
-* 使用 `bw logout` 命令注销。
-* 使用如下命令将 CLI 连接到您的自托管服务器：
+1. 使用 `bw logout` 命令注销。
+2. 使用如下命令将 CLI 连接到您的自托管服务器：
 
 ```bash
 bw config server https://your.bw.domain.com
@@ -78,12 +78,13 @@ bw config server https://your.bw.domain.com
 具有独立设置的用户可以使用以下命令单独指定每个服务的 URL：
 
 ```bash
-bw config --web-vault <url>
-bw config --api <url>
-bw config --identity <url>
-bw config --icons <url>
-bw config --notifications <url>
-bw config --events <url>
+bw config server --web-vault <url>
+bw config server --api <url>
+bw config server --identity <url>
+bw config server --icons <url>
+bw config server --notifications <url>
+bw config server --events <url>
+bw config server --key-connector <url>
 ```
 {% endtab %}
 {% endtabs %}

@@ -4,44 +4,87 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/external-db/)
 {% endhint %}
 
-默认情况下，Bitwarden 的自托管实例将使用作为安装设置的正常部分而创建的 Microsoft SQL Server（MSSQL）数据库，但您也可以将 Bi​​twarden 配置为使用外部 MSSQL 数据库。
+默认情况下，Bitwarden 的自托管实例将使用作为[安装设置](../docker/linux-standard-deployment.md)的正常部分而创建的 Microsoft SQL Server（MSSQL）数据库，但您也可以将 Bi​​twarden 配置为使用外部 MSSQL 数据库。
 
 {% hint style="info" %}
-目前，自托管 Bitwarden 实例支持 MSSQL 2017，但 Bitwarden 推荐的**最低** SQL 版本是 Server 2019。
+Bitwarden **仅支持并推荐 SQL Server 2022**。对 Server 2017 和 Server 2019 的主流支持已结束。如果 Bitwarden 实现了特定 SQL Server 版本上不可用的功能，则此处以及给定版本的[发行记录](../../../release-notes.md)中将注明不再支持特定 SQL Server 版本。
 
-Bitwarden **支持并推荐尽可能使用 SQL Server 2022**。由于对 Server 2017 的主流支持已于 [2022 年 10 月](https://learn.microsoft.com/zh-cn/lifecycle/products/sql-server-2017)结束，如果 Bitwarden 实现了特定 SQL Server 版本上不支持的功能，则将在此处和特定版本的**发布说明**中注明对特定 SQL Server 版本支持的弃用。
+了解 [Windows](https://learn.microsoft.com/zh-cn/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server-2022?view=sql-server-ver17) 和 [Linux](https://learn.microsoft.com/zh-cn/sql/linux/sql-server-linux-setup?view=sql-server-ver16#supported-platforms) 上 SQL Server 的系统要求。
 {% endhint %}
 
-## 设置 <a href="#setup" id="setup"></a>
+## 设置外部数据库 <a href="#setup-external-database" id="setup-external-database"></a>
 
-要使用外部数据库设置您的自托管实例：
+要设置您的自托管实例使用外部数据库：
 
-1、创建一个新 MSSQL 数据库。
+{% tabs %}
+{% tab title="Docker" %}
+1、创建一个新的 MSSQL 数据库。
 
-2、（**推荐**）为您的 `vault` 数据库创建一个专用 DBO。
+2、（**推荐**）为您的数据库创建一个专用 DBO。
 
-3、作为 Bitwarden 服务器管理员，在编辑器中打开 `global.override.env` 文件：
-
-```shell
-nano bwdata/env/global.override.env
-```
-
-4、使用如下信息编辑 `globalSettings__sqlServer__connectionString=` 的值：
+3、在您服务器的 `global.override.env` 文件中，使用如下信息编辑 `globalSettings__sqlServer__connectionString=` 的值：
 
 * 使用您的 MSSQL 服务器名称替换 `"Data Source=tcp:mssql,1443";` 中的值，例如 `"Data Source=protocol:server_url,port"`。
 * 使用您的数据库名称替换 `Initial Catalog=vault` 中的 `vault`。
-* 使用您的 DBO 用户 ID 替换 `User ID=sa;` 的值。
-* 使用您的 DBO 密码替换 `Password=<default_pw>;` 的值。
+* 使用您的 DBO 用户 ID 替换 `User ID=sa;` 中的 `sa`
+* 使用您的 DBO 密码替换 `Password=<default_pw>;` 中的 `<default_pw>`。
 
-5、将更改保存到 `global.override.env`。
+4、将更改保存到 `global.override.env`。
 
-6、启动 Bitwarden（`./bitwarden.sh start`）。
+5、启动 Bitwarden（`./bitwarden.sh start`）。
 
 完成上述步骤后，您可以通过网页密码库创建一个新用户并查询外部 `vault` 数据库来测试连通性。
+{% endtab %}
+
+{% tab title="Helm" %}
+1、创建一个新的 MSSQL 数据库。
+
+2、（**推荐**）为您的数据库创建专用的 DBO。
+
+3、在 `my-values.yaml` 配置文件中，设置值 `database.enabled: false` 以停止部署包含的 SQL pod。
+
+4、在用于部署的 Kubernetes Secrets 对象中，使用以下信息设置 `globalSettings__sqlServer__connectionString=` 值：
+
+* `Data Source=tcp:<SERVERNAME>,1433`，其中 `<SERVERNAME>` 是您的 MSSQL 服务器的名称。
+* `Initial Catalog=<VAULT>`，其中 `<VAULT>` 是您的数据库名称。
+* `Persist Security Info=False`。
+* `User ID=<USER>`，其中 `<USER>` 是您的 DBO 用户 ID。
+* `Password=<PASSWORD>`，其中 `<ASSWORD>` 是您的 DBO 密码。
+* `Multiple Active Result Sets=False`。
+* `Connect Timeout=30`。
+* `Encrypt=True`。
+* `Trust Server Certificate=true`。如果您要求 Bitwarden 服务器验证您的 MSSQL 服务器的证书，则可以将该值设置为 `false`。
+{% endtab %}
+{% endtabs %}
 
 ## 验证服务器证书 <a href="#validate-a-server-certificate" id="validate-a-server-certificate"></a>
 
-如果您需要 Bitwarden 验证您的 MSSQL 数据库服务器的证书，请将证书挂载到您自托管的 Bitwarden 服务器的容器中。按如下操作：
+要配置 Bitwarden 验证您的 MSSQL 数据库服务器的证书：
 
+{% tabs %}
+{% tab title="Docker" %}
 1. 将您的 CA 根证书复制到 `./bwdata/ca-certificates`。
-2. 运行 `./bitwarden.sh restart` 命令将证书应用到您的容器并重新启动服务器。
+2. 运行 `./bitwarden.sh restart` 命令将证书应用到您的容器然后重启服务器。
+{% endtab %}
+
+{% tab title="Helm" %}
+1、在 `my-values.yaml` 配置文件中，设置值 `caCertificate.enabled: true`。
+
+2、创建一个包含您的证书文件的 ConfigMap 对象。最简单的方法是将 `preInstall` RawManifest 添加到 `my-values.yaml` 文件中，如下例所示：
+
+```
+rawManifests:
+  preInstall:
+  - kind: ConfigMap
+    apiVersion: v1
+    metadata:
+      name: cacert
+    data:
+      rootca.crt: |
+        -----BEGIN CERTIFICATE-----
+         ...
+        -----END CERTIFICATE-----
+  postInstall:
+```
+{% endtab %}
+{% endtabs %}

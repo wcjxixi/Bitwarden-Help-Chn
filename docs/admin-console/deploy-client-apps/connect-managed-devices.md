@@ -11,6 +11,10 @@
 
 在业务环境中操作自托管 Bitwarden 服务器时，管理员可能希望先集中配置客户端应用程序的设置（尤其是服务器 URL），然后再通过端点管理平台部署给用户。设置会在安装客户端应用程序时应用。如果您使用的是 [Bitwarden Cloud EU 服务器](../../security/server-geographies.md)，这些流程可能也会有所帮助。&#x20;
 
+{% hint style="info" %}
+配置自托管服务器 URL 时，URL 中必须包含 `https://`。不包含 `https://` 的地址（例如 `my.server.com` 或 `http://my.server.com`）将导致错误消息。
+{% endhint %}
+
 执行此操作的过程，对于每个客户端应用程序将有所不一样：
 
 ## 浏览器扩展 <a href="#browser-extensions" id="browser-extensions"></a>
@@ -140,7 +144,7 @@ Microsoft Edge 是基于 Chromium 的浏览器，其**键路径**位置与 Googl
 
 2、在创建的 `.plist` 文件中，添加以下内容：
 
-```bash
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -156,7 +160,7 @@ Microsoft Edge 是基于 Chromium 的浏览器，其**键路径**位置与 Googl
 
 大多数安装只需要 `base <key>` 和  `<string>` 对，但某些独特的设置可能要求您为每个服务单独输入 URL：
 
-```bash
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -348,6 +352,17 @@ xattr -r -d com.apple.quarantine /Applications/Firefox.app
 4、使用您首选的软件发布或 MDM 工具，将 `/etc/firefox/policies/policies.json` 部署到用户的机器上。
 {% endtab %}
 {% endtabs %}
+
+{% hint style="info" %}
+为了将 Bitwarden 浏览器扩展集中部署到 EU 服务器，必须将 `base` 和 `notifications` 设置到 EU 云。例如：
+
+```
+"base": "https://vault.bitwarden.eu"
+"notifications": "https://notifications.bitwarden.eu"
+```
+
+如果正确启用，用户的浏览器扩展将显示**正在登录到：自托管**，但仍会连接到 bitwarden.eu。
+{% endhint %}
 
 ## 桌面 App <a href="#desktop-apps" id="desktop-apps"></a>
 

@@ -1,10 +1,12 @@
 # 自托管 SCIM
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/self-hosting-scim/)
 {% endhint %}
 
+{% hint style="info" %}
 本文所述步骤适用于 Docker 标准部署，在 Helm 部署中，您需要在 `values.yaml` 文件中设置 `scim: true` 以启用 SCIM。
+{% endhint %}
 
 要在您的自托管 Bitwarden 组织中使用 [SCIM](../../../admin-console/manage-members/scim/about-scim.md) 自动配置和取消配置成员和群组，您需要在 `config.yml` 文件中开启一个标志。要为您的 Bitwarden 服务器启用 SCIM：
 
@@ -22,7 +24,7 @@
 
 3、编辑 `.bwdata/config.yml` 文件并将 `enable_scim` 的值切换为 `true` 以启用 SCIM。
 
-```
+```bash
 nano bwdata/config.yml
 ```
 

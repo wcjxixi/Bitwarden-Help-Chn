@@ -38,7 +38,7 @@ docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from / >/bwd
 
 选择 1，然后按照说明进行操作：
 
-```shell
+```batch
 openssl dhparam -out ./bwdata/letsencrypt/live/<your.domain.com>/dhparam.pem 2048
 ./bitwarden.sh rebuild
 ./bitwarden.sh start
@@ -46,7 +46,7 @@ openssl dhparam -out ./bwdata/letsencrypt/live/<your.domain.com>/dhparam.pem 204
 
 <img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line"> PowerShell
 
-{% hint style="info" %}
+{% hint style="success" %}
 需要安装适用于 Windows 的 OpenSSL 构建。
 {% endhint %}
 
@@ -66,9 +66,9 @@ Select 1, then follow instructions
 
 您也可以选择使用现有的 SSL 证书，这要求您已经拥有如下的文件：
 
-* 服务器证书（`certificate.crt`）
-* 私钥（`private.key`）
-* CA 证书（`ca.crt`）
+* 服务器证书 (`certificate.crt`)
+* 私钥 (`private.key`)
+* CA 证书 (`ca.crt`)
 
 您可能需要将主证书与中间 CA 证书捆绑在一起，以防止 SSL 信任错误。当使用根 CA 和中间 CA 证书时，所有证书都应该包含在服务器证书文件中。
 
@@ -100,6 +100,10 @@ ssl_ca_path: /etc/ssl/your.domain/ca.crt
 ```
 
 **您只需要在 `./bwdata/ssl/` 中处理这些文件。不建议直接在 NGINX 容器中处理这些文件。**
+{% endhint %}
+
+{% hint style="success" %}
+如果您的服务器正在记录到 1.1.1.1、1.0.0.1、9.9.9.9 或 149.112.112.112 的出站流量，则您的服务器正在执行 OCSP 检查。您可以通过在 `config.yml` 文件中为 `ssl_ca_path:` 配置空值来阻止此流量。与更改 `config.yml` 中的任何内容一样，更改此值需要重建然后重启服务器。
 {% endhint %}
 
 ### 使用 Diffie-Hellman 密钥交换 <a href="#using-diffie-hellman-key-exchange" id="using-diffie-hellman-key-exchange"></a>
