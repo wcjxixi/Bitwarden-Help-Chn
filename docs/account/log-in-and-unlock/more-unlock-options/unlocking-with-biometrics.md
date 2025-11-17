@@ -20,10 +20,6 @@
 {% tab title="Windows" %}
 通过使用 PIN、面部识别或[其他符合 Windows Hello 生物识别要求的硬件](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) 的 [Windows Hello](https://support.microsoft.com/zh-cn/help/4028017/windows-learn-about-windows-hello-and-set-it-up) 为 Windows 设置生物识别解锁。从 [Bitwarden 下载](https://bitwarden.com/download/#downloads-desktop)安装的 Windows 桌面 App 支持此选项。如果桌面 App 是从 Microsoft Store 安装的，则生物识别功能将无法使用。
 
-{% hint style="info" %}
-为 Windows 桌面 App 配置生物识别后，您仍然需要使用主密码或 PIN 码登录。登录后，使用 Windows Hello 解锁您的密码库。
-{% endhint %}
-
 要启用生物识别解锁：
 
 1、在您的设备系统设置中[启用 Windows Hello](https://support.microsoft.com/zh-cn/windows/%E9%85%8D%E7%BD%AE-windows-hello-dae28983-8242-bb2a-d3d1-87c9d265a5f0)。
@@ -38,7 +34,7 @@
 
 4、在**安全**下，选中**使用 Windows Hello 解锁** 。
 
-在设备上首次使用 Windows Hello 时，您可能会在一个背景窗口中被要求验证是否为您本人。完成安全确认。
+5、（可选）如果您希望在桌面 App 重启时使用生物识别解锁密码库，请取消选中 **App 重启时要求主密码或 PIN 码**。系统将在弹出窗口中提示您确认您的生物识别信息。如果此设置保持选中状态，则每次桌面 App 重启时，您都需要输入主密码或 PIN 码。
 {% endtab %}
 
 {% tab title="macOS" %}
@@ -78,6 +74,14 @@
 {% endtabs %}
 
 ## 为浏览器扩展设置生物识别 <a href="#set-up-biometrics-for-browser-extension" id="set-up-biometrics-for-browser-extension"></a>
+
+这些浏览器支持使用生物识别技术解锁保管库的功能：
+
+* 基于 Chromium 的浏览器，包括 Chrome、Edge、Opera 和 Brave
+* Firefox 87+（不支持 Firefox ESR）
+* Safari 14+
+
+要在浏览器扩展上设置生物识别：
 
 {% tabs %}
 {% tab title="Chromium-based & FireFox" %}

@@ -1,20 +1,23 @@
-# 备份您的托管数据
+# 备份服务器数据
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/backup-on-premise/)
 {% endhint %}
 
-自托管 Bitwarden 时，您有责任实施自己的备份过程，以确保数据安全。
+自托管 Bitwarden 时，您有责任实施自己的备份过程，以确保数据安全。尽管执行此操作所需的步骤取决于您的部署方法，但在所有情况下都建议您：
 
-## 关于托管数据 <a href="#about-hosted-data" id="about-hosted-data"></a>
+* 手动定期备份重要数据，包括配置数据、证书数据等。
+* 确保执行自动重复的数据库备份。
 
-Bitwarden Docker 容器使用卷映射来持久化主机上的所有重要数据，这意味着停止您的容器不会删除任何数据。另一方面，Docker 容器被认为是短暂的，不会持久化数据或状态。
+{% hint style="success" %}
+在使用内置数据库的 **Docker** 部署中，只要 `mssql` 容器正在运行，夜间备份就会运行。在 **Helm** 部署中，您需要在集群外部安排作业或在集群内创建 CronJob 对象，Bitwarden 提供了示例来帮助指导您的方法。
+{% endhint %}
 
-所有的 Bitwarden 数据都存储在主机上相对于您安装 Bitwarden 的位置的 `./bwdata` 目录中。
+{% tabs %}
+{% tab title="Docker" %}
+## 手动备份 <a href="#manual-backups" id="manual-backups"></a>
 
-## 备份托管数据 <a href="#backup-hosted-data" id="backup-hosted-data"></a>
-
-建议您备份并保护整个 `./bwdata` 目录。如果发生数据丢失，则需要此目录中包含的全部或部分数据来还原您的实例。
+Bitwarden 将在夜间自动备份 `mssql` 数据库容器（见下文），但是对于最完整的灾难恢复 (DR) 计划，您应该手动备份并确保整个 `./bwdata` 目录的安全。
 
 需要定期备份的 `./bwdata` 中特别重要的部分包括：
 
@@ -23,17 +26,19 @@ Bitwarden Docker 容器使用卷映射来持久化主机上的所有重要数据
 * `./bwdata/mssql/data` - 实例的数据库数据
 * `./bwdata/core/aspnet-dataprotection` - 框架级数据保护，包括身份验证令牌和部分数据库列。
 
-Bitwarden 将在运行时自动对 `mssql` 数据库容器进行夜间备份。
+您还可以使用以下命令随时手动触发 `mssql` 数据库容器的备份：
 
-### 夜间数据库备份 <a href="#nightly-database-backups" id="nightly-database-backups"></a>
+```bash
+docker exec -i bitwarden-mssql /backup-db.sh
+```
 
-Bitwarden 会自动对 `mssql` 容器数据库进行夜间备份。备份保存在 `./bwdata/mssql/backups` 目录中并将保留 30 天。
+## 自动数据库备份 <a href="#automatic-database-backups" id="automatic-database-backups"></a>
 
-如果发生数据丢失，您可以使用 `./bwdata/mssql/backups` 来还原其中一个夜间备份。
+只要容器正在运行，Bitwarden 会自动对 `mssql` 容器数据库进行夜间备份。备份保存在 `./bwdata/mssql/backups` 目录中并将保留 30 天。
 
-### 恢复夜间备份 <a href="#restore-a-nightly-backup" id="restore-a-nightly-backup"></a>
+### 恢复数据库备份 <a href="#restore-a-database-backup" id="restore-a-database-backup"></a>
 
-如果发生数据丢失，请使用以下步骤来恢复夜间备份：
+如果发生数据丢失，您可以使用 `./bwdata/mssql/backups` 来恢复夜间备份。请完成以下步骤来恢复夜间备份：
 
 1、从  `global.override.env` 中查找 `globalSettings__sqlServer__connectionString=...Password=` 的值以获取您的数据库密码。
 
@@ -93,3 +98,31 @@ docker exec -it bitwarden-mssql /bin/bash
 ```
 
 重启您的 Bitwarden 实例以完成恢复过程。
+{% endtab %}
+
+{% tab title="Helm" %}
+## 手动备份 <a href="#manual-backups" id="manual-backups"></a>
+
+Bitwarden 提供了可用于定期备份数据库的示例作业（见下文），但是对于最完整的灾难恢复 (DR) 计划，您应该手动备份并确保更广泛的服务器数据的安全。
+
+需要定期备份的特别重要的数据包括：
+
+* 您的图表的 `my-values.yaml` 文件。
+* 您的 [Kubernetes Secrets 对象](deploy-and-configure/helm/self-host-with-helm.md#create-a-secret-object)（通常为 `.yaml` 文件）。
+* 为以下目的设置的任何持久卷 (PVC)：
+  * `dataprotection`&#x20;
+  * `attachments`&#x20;
+  * `licenses`
+
+## 定期数据库备份 <a href="#recurring-database-backups" id="recurring-database-backups"></a>
+
+有多种方法可以为 Bitwarden 部署安排定期数据库备份。Bitwarden Helm Charts 存储库包含[一个用于备份预打包的 SQL 容器的示例](https://github.com/bitwarden/helm-charts/tree/main/examples)，其中包括：
+
+* 创建一个 Kubernetes 作业对象 (`backup-job.yaml`)，该对象通过 Kubernetes Secrets 建立与数据库的连接，执行备份，并将生成的 `Vault.bak` 文件存储到持久卷 (PVC)，同时保留以前的备份。
+* 创建一个 Bash 脚本 (`db-backup.sh`)，供集群外部的任务调度程序使用，它将运行 Kubernetes 作业并实时监控它。
+
+## 恢复备份 <a href="#restoring-backups" id="restoring-backups"></a>
+
+要恢复备份，请使用备份的 `my-values` 文件和 Kubernetes Secret 对象 `.yaml` 文件部署新的 Bitwarden Helm 安装。重新安装图表后，重新附加手动备份的持久卷 (PVC) 和 `Vault.bak` 数据库备份。
+{% endtab %}
+{% endtabs %}

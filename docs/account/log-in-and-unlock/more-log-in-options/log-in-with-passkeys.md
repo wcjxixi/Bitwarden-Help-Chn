@@ -25,7 +25,7 @@ Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.
 
 2、选择**主密码**选项卡。
 
-3、在**使用通行密钥登录**部分，选择**启用**，或者如果已经设置了通行密钥，则选择**新增通行密钥**。系统将提示您输入主密码：
+3、在**使用通行密钥登录**部分，选择**启用**，或者如果您已经设置了通行密钥，则选择**新增通行密钥**。系统将提示您输入主密码：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/11CPsvELx3sDoQrLY3C2Cb/d2f3e5544537bb32d4e5d5fc5395f8d6/2024-12-02_10-41-47.png?_a=DAJCwlWIZAAB" %}
 打开通行密钥登录
@@ -33,7 +33,9 @@ Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.
 
 4、按照浏览器的提示创建 FIDO2 通行密钥。您可以使用生物识别等因素或创建 PIN 码来完成用户验证。
 
-在此过程中，您可能需要取消浏览器希望您使用的默认验证器，例如，如果您想在 macOS 设备上使用硬件安全钥匙，它会优先使用 Touch ID。
+{% hint style="success" %}
+您可能需要取消浏览器希望您使用的默认验证器，例如，如果您想在 macOS 设备上使用硬件安全钥匙，它会优先使用 Touch ID。
+{% endhint %}
 
 5、给你您的通行密钥起个**名称**。
 
