@@ -311,7 +311,7 @@ ssh git@github.com
 Hi <USER>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-## 使用 Git 仓库进行身份验证 <a href="#authenticate-with-git-repositories" id="authenticate-with-git-repositories"></a>
+## 使用 Git 存储库进行身份验证 <a href="#authenticate-with-git-repositories" id="authenticate-with-git-repositories"></a>
 
 使用 Bitwarden SSH 代理签署 SSH Git 提交。在使用 Bitwarden SSH 代理签署 Git 提交之前，系统需要满足以下条件：
 
@@ -403,7 +403,7 @@ git config gpg.ssh.program "C:/Windows/System32/OpenSSH/ssh-keygen.exe"
 
 2、在添加新 SSH 密钥界面，添加**名称**并选择**密钥类型**，选择 `Signing Key`。将 Bitwarden 密钥库中的**公钥**复制并粘贴到 GitHub 上的**密钥**字段中。
 
-3、使用 SSH 密钥以 SSH 方式克隆您的仓库：
+3、使用 SSH 密钥以 SSH 方式克隆您的存储库：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/76Snkd9TQMrVMmegeJRqK/21836de7c7500b9ebdabaeb1d17b9659/2025-02-12_17-16-13.png?_a=DAJCwlWIZAAB" %}
 SSH 克隆

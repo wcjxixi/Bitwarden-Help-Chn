@@ -200,7 +200,7 @@ helm upgrade bitwarden bitwarden/self-host --install --namespace bitwarden --val
 
 ### 数据库备份与恢复 <a href="#database-backup-and-restore" id="database-backup-and-restore"></a>
 
-在[此仓库](https://github.com/bitwarden/helm-charts/tree/main/examples)中，我们提供了两个示例作业，用于在 Bitwarden 数据库 Pod 中备份和恢复数据库。如果您正在使用的是未作为此 Helm 图表的一部分部署的自己的 SQL Server 实例，请遵循您公司的备份和恢复策略。
+在[此存储库](https://github.com/bitwarden/helm-charts/tree/main/examples)中，我们提供了两个示例作业，用于在 Bitwarden 数据库 Pod 中备份和恢复数据库。如果您正在使用的是未作为此 Helm 图表的一部分部署的自己的 SQL Server 实例，请遵循您公司的备份和恢复策略。
 
 数据库备份和备份策略最终由实施者决定。备份可以在集群之外按照一定的时间间隔进行调度，也可以修改为在 Kubernetes 中创建 CronJob 对象进行调度。
 
