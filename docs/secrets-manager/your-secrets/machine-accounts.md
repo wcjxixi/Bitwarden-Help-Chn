@@ -33,6 +33,12 @@
 
 {% embed url="https://vimeo.com/845933062" %}
 
+[此处](machine-accounts.md)了解更多有关机器账户的信息。
+
+* **00:10**：什么是机器账户？
+* **00:19**：机器账户有什么用？
+* **00:33**：如何添加机器账户
+
 1、使用**新增**下拉菜单选择**机器账户**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/LaVwicbqhvbliXPm6loOU/5559a5caf8ad70a95be3ea89f1b760ad/2024-12-03_11-29-17.png?_a=DAJCwlWIZAAB" %}
@@ -44,7 +50,7 @@
 3、打开「机器账户」，然后在**工程**选项卡中键入或选择该机器账户应能够访问的工程的名称。对于每个添加的工程，选择一个**权限**级别：
 
 * **可以读取**：机器账户可以从分配的工程中检索机密。
-* **可以读取、写入**：机器账户可以从分配的工程中检索和编辑机密，在分配的工程中创建新的机密，或者完全创建新的工程。
+* **可以读取和写入**：机器账户可以从分配的工程中检索和编辑机密，在分配的工程中创建新的机密，或者完全创建新的工程。
 
 {% hint style="success" %}
 机器账户的写入​​访问权限的充分利用取决于即将发布的 [CLI](../developer-tools/secrets-manager-cli.md) 版本。目前，这只是在 UI 中提供了此选项。请继续关注[发行说明](../../release-notes.md)以获取更多信息。
@@ -92,6 +98,12 @@
 有权访问给定机器账户的任何用户都可以查看该机器账户的事件。捕获的事件包括：
 
 * 访问了机密 _secret-identifier._ (`2100`)
+* 向标识符为 _machine-account-identifier_ 的机器账户添加了用户 _user-identifier_ (`2300`)
+* 从标识符为 _machine-account-identifier_ 的机器账户移除了用户 _user-identifier_ (`2301`)
+* 向标识符为 _machine-account-identifier_ 的机器账户添加了群组 _group-identifier_ (`2302`)
+* 从标识符为 _machine-account-identifier_ 的机器账户移除了群组 _group-identifier_ (`2303`)
+* 创建了标识符为 _machine-account-identifier_ 的机器账户 (`2304`)
+* 删除了标识符为 _machine-account-identifier_ 的机器账户 (`2305`)
 
 {% hint style="info" %}
 每个事件都与类型代码（`1000`、`1001` 等）关联，用于标识事件捕获的操作。[Bitwarden 公共 API](../../admin-console/bitwarden-public-api.md) 使用类型代码来识别事件记录的操作。

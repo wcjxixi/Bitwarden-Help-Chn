@@ -8,6 +8,12 @@
 
 {% embed url="https://vimeo.com/854758635" %}
 
+[此处](../your-secrets/secrets.md)了解更多有关机密的信息。
+
+* **00:14**：导入机密
+* **00:47**：调整 .json
+* **01:52**：如何手动添加机密
+
 ## 调整导入的文件 <a href="#condition-an-import-file" id="condition-an-import-file"></a>
 
 Secrets Manager 当前支持将机密和工程作为 `.json` 文件直接导入。您的导入文件应根据以下架构和规则进行调整：

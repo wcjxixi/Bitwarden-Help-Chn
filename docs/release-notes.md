@@ -253,7 +253,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 * **更新了通知设计**：浏览器扩展通知已更新为全新的视觉设计。[了解更多](password-manager/autofill/autofill-from/autosave-from-browser-extensions.md)。
 * **支持从桌面和 CLI 导出附件**：现在可以通过桌面 App 和 CLI 将个人密码库文件附件导出为 `.zip` 压缩包。[了解更多](password-manager/your-vault/vault-items/file-attachments.md)。
-* **Android 动态颜色支持**：Bitwarden Android App 现在支持根据壁纸自动应用配色方案。[了解更多](password-manager/more/change-app-appearance.md#yi-dong-duan)。
+* **Android 动态颜色支持**：Bitwarden Android App 现在支持根据壁纸自动应用配色方案。[了解更多](password-manager/more/change-app-theme.md#yi-dong-duan)。
 * **SSH 批准设置**：在桌面 App 上，启用了 SSH 代理的用户可使用一项新的设置：可以指定 Bitwarden 何时要求您授权访问存储在密码库中的 SSH 凭据。[了解更多](password-manager/developer-tools/ssh/ssh-agent.md)有关 SSH 代理设置的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -1213,7 +1213,7 @@ Bitwarden 很自豪地宣布在 12 月的版本中增加了新的企业功能，
 * **管理员密码重置 - 重置后更新密码**：管理员重置的密码现在必须由他们所属的用户在登录 Bitwarden 时立即更新（参阅[这里](admin-console/manage-members/account-recovery/about-account-recovery.md#after-a-password-reset)）。
 * **浏览器扩展 - 自动填充 Span 元素**：浏览器扩展现在可以在 HTML `<span>` 元素的 innerText 中自动填充[自定义字段](password-manager/your-vault/vault-items/custom-fields.md)（参阅[这里](password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md#html-span-elements)）。
 * &#x20;**浏览器扩展 - 自动生物识别提示**：浏览器扩展现在可以在打开时自动提示您生物识别输入。您可以从 **⚙️设置**菜单切换此行为（参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)）。
-* **网页密码库 - 黑暗模式**：网页密码库现在拥有黑暗模式（参阅[这里](password-manager/more/change-app-appearance.md)）。
+* **网页密码库 - 黑暗模式**：网页密码库现在拥有黑暗模式（参阅[这里](password-manager/more/change-app-theme.md)）。
 * **CLI - `generate` 密码短语选项**：`bw generate --passphrase` 命令现在包含 `--capitalize` 和 `--includeNumber` 选项（参阅[这里](password-manager/developer-tools/cli/password-manager-cli.md#generate)）。
 
 ## 2021-09-21

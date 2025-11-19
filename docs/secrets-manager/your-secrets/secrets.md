@@ -57,10 +57,34 @@
 
 ## 删除机密 <a href="#delete-a-secret" id="delete-a-secret"></a>
 
-要删除机密，请使用要删除的机密的 (**≡**) 选项菜单选择**删除机密**。删除的机密将被发送到回收站，删除后它们会保留 30 天。 30 天过去后，机密将被永久删除且不可恢复。
+删除机密后，它会被移至回收站保留 30 天。在此之后，它将被永久删除。
 
-在回收站中，您可以在 30 天等待期之前将机密**恢复**到您的密码库或**永久删除**：
+{% hint style="danger" %}
+机密被永久删除后，将无法恢复。
+{% endhint %}
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/35KZdrj3ve0EHvOC0nbxTf/7edcc79a6a0f4af66f11be49748db068/2024-12-03_11-38-33.png?_a=DAJCwlWIZAAB" %}
-回收站
+要删除机密：
+
+1、转到**机密**。
+
+2、在机密所在的同一行，选择 **≡**&#x56FE;标。
+
+3、选择**删除机密**：
+
+{% embed url="https://bitwarden.com/assets/mQdIhUsvlFy5YfC3d8G3p/62b16e096dbd7f2b60ad597b90807608/Delete_secret.png?w=1200&fm=avif" %}
+删除机密
 {% endembed %}
+
+要在 30 天之前撤消删除或永久删除机密：
+
+1、转到**回收站**。
+
+2、在机密所在的同一行，选择 **≡**&#x56FE;标。
+
+3、选择**恢复机密**或**永久删除**：
+
+{% embed url="https://bitwarden.com/assets/35KZdrj3ve0EHvOC0nbxTf/7b793940ffe2e9c0dfbf035ae6f33529/Permanently_delete_secret.png?w=1200&fm=avif" %}
+永久删除机密
+{% endembed %}
+
+4、选择**删除机密**进行确认。

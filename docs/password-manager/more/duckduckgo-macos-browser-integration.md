@@ -34,11 +34,21 @@ DuckDuckGo 中的 Bitwarden
 连接 Bitwarden 后，您可以返回 DuckDuckGo 中的**设置** → **自动填充**页面以查看集成的当前状态（例如，您是否需要解锁 Bitwarden 以自动填充、创建或更新凭据）。
 {% endhint %}
 
-## 使用集成要从 Bitwarden 自动填充凭据，请选择登录表单输入框。如果检测到凭证，它们将被提供用于自动填充：如果您使用的一组凭据未在 Bitwarden 中检测到或与存储在 Bitwarden 中的凭据不同，系统将提示您添加或更新： <a href="#use-the-integration" id="use-the-integration"></a>
+## 使用集成 <a href="#use-the-integration" id="use-the-integration"></a>
 
 {% tabs %}
+{% tab title="自动填充凭据" %}
+要从 Bitwarden 自动填充凭据，请选择登录表单输入框。如果检测到凭证，它们将被提供用于自动填充：
+
+{% embed url="https://bitwarden.com/assets/34RVEdeI6m5IiMXxEBmYJb/5fa66cccef09aed7ef03011a522ad3a3/Screen_Shot_2022-11-14_at_9.25.24_AM.png?w=958&fm=avif" %}
+DuckDuckGo 自动填充
+{% endembed %}
+{% endtab %}
+
 {% tab title="添加或更新凭据" %}
-{% embed url="https://bitwarden.com/_gatsby/image/fe626914d3df0a1e490c78770663441b/4a4c1f3813ae161604a5323aa7724e98/ddg_macos%20copy.webp?eu=d78703efb2cbf5d6066ef3d53a74693ae86b57a2f65035826b36b6ab4afbcc8e26a54b06299d2cb07a3a5cdd82e246be31c37d6948bcd28996ee4bf3ee3ca20c508a5cbd62e17200032891abb0a601146dc04c5fa084c900a46d7b82e4e0bd285d145c68a265a7d8b1f86231f39d7c76bce7e56d3086e866be471a4bcc5a2faf22e191883b43a9c9af1b86bbbdfb5e92cd8624053c83a93765052f170fed4fa4f3b500233e7c110f3398ab5fc660c5e03a4d62770f0c07f1333dd307f83a36c2fbaff50ab6272ab2f78a5e23d983e79ead44fb&a=w%3D850%26h%3D872%26fm%3Dwebp%26q%3D75&cd=2022-12-05T20%3A02%3A37.082Z" %}
+如果您使用的一组凭据未在 Bitwarden 中检测到或与存储在 Bitwarden 中的凭据不同，系统将提示您添加或更新：
+
+{% embed url="https://bitwarden.com/assets/4YmcbgoaQ92Lhj2wBS8g0R/f74b7ead6f4711cf6a3dac46d73b3f71/ddg_macos_copy.png?w=907&fm=avif" %}
 DuckDuckGo 添加或更新
 {% endembed %}
 {% endtab %}

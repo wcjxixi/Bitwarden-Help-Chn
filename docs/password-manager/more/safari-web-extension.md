@@ -7,7 +7,7 @@
 Bitwarden Safari 网页扩展是以前的设计用于 [Safari 14](https://developer.apple.com/documentation/safariservices/safari_web_extensions/converting_a_safari_app_extension_to_a_safari_web_extension?language=objc) 的 App 扩展的移植。Safari 网页扩展与 App Store 上的 Bitwarden 桌面 App 打包在一起。
 
 {% hint style="info" %}
-由于苹果公司的更改，Safari 现在限制 Safari 网页扩展的使用，**只能使用通过 Mac App Store 下载获取的网页扩展**。从 [2021-03-11 版本](../../release-notes.md#2021-03-11)开始，用户将无法使用从 [bitwarden.com/download](https://bitwarden.com/download) 或任何其他非 App Store 来源的 `.dmg` 安装获取的 Bitwarden Safari 扩展。
+由于苹果公司的变更，Safari 现在限制 Safari 网页扩展的使用，**只能使用通过 Mac App Store 下载获取的网页扩展**。从 [2021-03-11 版本](../../release-notes.md#2021-03-11)开始，用户将无法使用从 [bitwarden.com/download](https://bitwarden.com/download) 或任何其他非 App Store 来源的 `.dmg` 安装获取的 Bitwarden Safari 扩展。
 
 **如果您使用的是 Safari 14 及之前的版本**，则可以继续使用 `.dmg` 安装，通过单击**更多桌面安装选项**从 [bitwarden.com/download](https://bitwarden.com/download) 下载。将 `.dmg` 保留在 Applications 文件夹之外，可以同时使用较旧的 Safari 扩展和最新的桌面 App。
 {% endhint %}

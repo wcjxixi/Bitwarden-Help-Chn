@@ -26,7 +26,7 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 
 可以使用为特定[服务账户](../your-secrets/machine-accounts.md)生成的[访问令牌](../your-secrets/access-tokens.md)登录 Secrets Manager CLI。这意味着**只有机器账户具有访问权限的机密和工程**可以使用 CLI 进行交互。有多种方法可以验证 CLI 会话，但最简单的方法是将环境变量 `BWS_ACCESS_TOKEN` 与您的访问令牌的值一起保存，例如：
 
-```batch
+```git-rebase
 export BWS_ACCESS_TOKEN=0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHnAp1h0gL8bngprlPOYutt0:B3h5D+YgLvFiQhWkIq6Bow==
 ```
 

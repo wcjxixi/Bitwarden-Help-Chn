@@ -8,90 +8,91 @@
 如果您是开发人员，您可能更喜欢[开发人员快速入门](developer-quick-start.md)。您当前阅读的文章将从管理和设置的角度介绍 Secrets Manager。
 {% endhint %}
 
-Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理和部署机密。
+Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理和部署机密。使用 Secrets Manager 网页 App 来添加和组织[机密](secrets-manager-quick-start.md#add-secrets)、创建适合您需要的[权限系统](secrets-manager-quick-start.md#assign-members-to-your-project)，以及生成供您的应用程序使用的[访问令牌](secrets-manager-quick-start.md#create-an-access-token)。
 
-**Secrets Manager 网页 App** 将是您设置机密管理基础设施的主页。您将使用它来添加和组织[机密](secrets-manager-quick-start.md#add-secrets)、创建适合您需要的[权限系统](secrets-manager-quick-start.md#assign-members-to-your-project)，以及生成供您的应用程序使用的[访问令牌](secrets-manager-quick-start.md#create-an-access-token)。完成后，您可以继续阅读[开发者快速入门指南](developer-quick-start.md)，以了解如何将机密注入您的机器和应用程序。
+设置 Secrets Manager 后，请继续阅读[开发者快速入门指南](developer-quick-start.md)，以了解如何将机密注入您的机器和应用程序。
 
-## 了解 Secrets Manager <a href="#getting-to-secrets-manager" id="getting-to-secrets-manager"></a>
+## 访问 Secrets Manager <a href="#access-secrets-manager" id="access-secrets-manager"></a>
 
-要导航到 Secrets Manager，请从导航菜单的产品切换器中选择 Secrets Manager：
+登录 Bitwarden 网页 App，然后从导航菜单的产品切换器中选择 Secrets Manager：
 
 {% embed url="https://vimeo.com/840459200" %}
 
-如果您或您的组织不是 Secrets Manager 的活跃用户，Secrets Manager 页面将提供有关该产品的信息。 所有者和用户可以单击**立即尝试**进行重定向：
+如果您或您的组织还不是 Secrets Manager 的活跃用户，请点击**立即尝试**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7iZGZNg39Z2l0OnoMIeFK9/88af82e4dec707e2b293c2ae60370b2b/2024-08-05_09-18-08.png?_a=DAJCwlWIZAAB" %}
 Secrets Manager 主页
 {% endembed %}
 
-* **所有者**将被重定向到组织订阅页面的 Secrets Manager 部分。
-* **用户**将被重定向到一封预先生成的电子邮件，用户可在此申请 Bitwarden Secrets Manager 的访问权限。该邮件在发送给组织管理员前可进行编辑。
+* **所有者**将被重定向到组织**订阅**页面的 Secrets Manager 部分。
+* **用户**会询问是否要向其组织所有者发送一封电子邮件，请求访问 Bitwarden Secrets Manager。他们可以在发送前编辑电子邮件。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1yTEdQGVkLtkvZjRErjBkO/e68e6dafe143a5166ccddfdc4d61fc0e/2024-07-30_15-14-33.png?_a=DAJCwlWIZAAB" %}
 请求对 Secrets Manager 的访问权限
 {% endembed %}
 
-## 激活 Secrets Manager <a href="#activate-secrets-manager" id="activate-secrets-manager"></a>
+## 设置 Secrets Manager <a href="#set-up-secrets-manager" id="set-up-secrets-manager"></a>
 
-您必须是组织所有者才能启用 Secrets Manager。要开始使用 Secrets Manager：
+### 将 Secrets Manager 添加到您的组织 <a href="#add-secrets-manager-to-your-organization" id="add-secrets-manager-to-your-organization"></a>
 
-1、在管理控制台中，导航至您组织的**计费** → **订阅**页面，或单击 Secrets Manager 界面上的**立即尝试**。
+只有所有者才能将 Secrets Manager 添加到他们的组织。要开始使用 Secrets Manager：
 
-2、在**来自 Bitwarden 的更多产品**部分中，勾选**订阅 Secrets Manager** 复选框。
+1、在您组织的管理控制台中，转到**计费** → **订阅**。
+
+2、在**来自 Bitwarden 的更多产品**部分中，勾选**订阅 Secrets Manager**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/eYPz7jQRhG0PvU7gclzXk/04bbea42872c078a1aa3d38e755ae2bc/Screenshot_2024-04-09_at_10.21.39_AM.png?_a=DAJCwlWIZAAB" %}
 添加 Secrets Manager
 {% endembed %}
 
-激活后，通过网页 App 上的产品切换器切换到 Secrets Manager：
+3、根据您组织的方案：
+
+* 如果您使用免费版方案，请选择**提交**。
+* 如果您使用的是升级版方案，请输入所需的**订阅席位**数量（最多不超过您的 Password Manager 订阅总数）以及超出方案已包含的总数量（团队版为 20 个，企业版为 50 个）的**附加机器账户**数量。选择**保存**。
+
+{% hint style="info" %}
+添加新用户或机器账户时，Secrets Manager 将自动扩展您的用户席位和机器账户。您可以随时转到**计费** → **订阅**来更改允许的用户席位和机器账户的总数。要设置扩展限制，请选择**限制订阅**和**限制计机器账户**：
+
+<img src="https://bitwarden.com/assets/6tcOx1PSHT54CQGPkbBZZ2/33a91dde38fdad0fd921403c2de77e00/Limit_subscription_seats_and_machine_accounts.png?w=765&#x26;fm=avif" alt="" data-size="original">
+{% endhint %}
+
+激活后，从产品切换器打开 Secrets Manager：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
 产品切换器
 {% endembed %}
 
-在您使用 Secrets Manager 迈出第一步之前，您需要明确邀请一些组织成员加入。
-
 ### 给予成员访问权限 <a href="#give-members-access" id="give-members-access"></a>
 
 {% hint style="success" %}
-在继续之前，我们建议为 Secrets Manager 的用户设置一个或多个群组。您需要通过**成员**页面授予成员对 Secrets Manager 的访问权限，但一旦您的密码库被填充，您可以使用群组来大规模地分配对机密的访问权限。
+在继续之前，我们建议为 Secrets Manager 用户[创建群组](../../admin-console/manage-members/groups.md#create-a-group)。用户拥有对 Secrets Manager 的访问权限后，您就可以通过群组快速分配对机密的访问权限。
 {% endhint %}
 
-要授予成员对 Secrets Manager 的访问权限，您必须是组织的所有者或者管理员：
+组织所有者和管理员可以授予对 Secrets Manager 的访问权限。要授予成员访问权限：
 
-1、打开您组织的**成员**选项卡，然后选中您要授予他们 Secrets Manager 访问权限的成员。
+1、在您组织的管理控制台中，转到**成员**。
 
-2、使用 **≡** 菜单，选择**启用 Secrets Manager** 以向选定成员授予访问权限：
+2、单击 **≡图标**，然后选择**激活 Secrets Manager**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3IBNL6FdndgPeuXa7m3rlP/fd04ec9951123e5a0ccd5fe4f04fa4de/2024-12-03_11-18-52.png?_a=DAJCwlWIZAAB" %}
 添加 Secrets Manager 用户
+{% endembed %}
+
+或者，转到**成员** → **成员角色**然后选择**此用户可以访问 Secrets Manager**：
+
+{% embed url="https://bitwarden.com/assets/3xGmMTCDMgY5V3tYSdA6O7/49200a3fab891c0aa65008dda65f80e0/Edit_member_role_to_grant_Secrets_Manager_access.png?w=730&fm=avif" %}
+编辑成员角色以授予 Secrets Manager 访问权限
 {% endembed %}
 
 {% hint style="info" %}
 向用户（或您自己）授予 Secrets Manager 访问权限后，您可能需要刷新密码库以使 Secrets Manager 出现在产品切换器中。
 {% endhint %}
 
-### 用户席位和机器账户扩展 <a href="#user-seats-and-service-account-scaling" id="user-seats-and-service-account-scaling"></a>
-
-从您组织的**计费** → **订阅**页面，您可以为 Secrets Manager 组织分配允许的用户席位和服务账户总数。
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3hOpU8WK6KsA2eMRwfpEoJ/3865ba0b4b91fcdfccd9c8de9a7ff993/Screenshot_2024-04-09_at_10.24.29_AM.png?_a=BAJFJtWIB" %}
-Secrets Manager 用户管理
-{% endembed %}
-
-添加新用户或机器账户时，Secrets Manager 将自动扩展您的用户席位和机器账户。可以通过勾选**限制订阅**和**限制机器账户**复选框来设置限制。
-
-{% hint style="info" %}
-在**用户席位**字段中，指定的数量必须小于或等于您的 Password Manager 订阅指定的席位数量。
-
-您还可以使用**附加机器账户**字段，明确添加高于计划预包装数量的机器账户；团队账户为 20 个，企业账户为 50 个。
-{% endhint %}
-
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
 
 ### 您的机密密码库 <a href="#your-secrets-vault" id="your-secrets-vault"></a>
 
-使用产品切换器打开 Secrets Manager 网页应用程序。如果这是您第一次打开该应用程序，您将看到一个空的密码库，但最终它将充满您的工程和机密：
+使用产品切换器打开 Secrets Manager 网页 App。如果这是您第一次打开该 App，您将看到一个空的密码库，但最终它将充满您的工程和机密：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/644qYsogVg0ztLkZ90cKPi/a68037e16818da6ac3b335ab4a7d3a90/2024-12-03_11-24-23.png?_a=DAJCwlWIZAAB" %}
 机密密码库
@@ -101,7 +102,7 @@ Secrets Manager 用户管理
 
 ### 新增工程 <a href="#add-a-project" id="add-a-project"></a>
 
-工程是按逻辑组合在一起的机密的集合，由您的 DevOps、网络安全或其他内部团队进行访问权限的管理。重要的是要考虑到，在创建工程时，工程将是**您分配的成员访问机密的主要机构**。要创建一个工程：
+**工程**是按逻辑组合在一起的机密的集合，用于对您的 DevOps、网络安全或其他内部团队进行访问权限的管理。重要的是要考虑到，在创建工程时，工程将是**您分配的成员访问机密的主要结构**。要创建一个工程：
 
 1、使用**新增**下拉菜单选择**工程**：
 
@@ -200,10 +201,6 @@ Secrets Manager 用户管理
 
 * **可以读取**：机器账户可以从已分配的工程中检索机密。
 * **可以读取和写入**：机器账户可以从已分配的工程中检索和编辑机密，以及在已分配的工程中创建新的机密或创建新的工程。
-
-{% hint style="info" %}
-机器账户的写入​​访问权限的充分利用取决于即将发布的 [CLI](../developer-tools/secrets-manager-cli.md) 版本。目前，这只是在 UI 中提供了此选项。请继续关注[发行说明](../../release-notes.md)以获取更多信息。
-{% endhint %}
 
 ### 创建访问令牌 <a href="#create-an-access-token" id="create-an-access-token"></a>
 

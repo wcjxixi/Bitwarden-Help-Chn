@@ -10,6 +10,10 @@
 
 {% embed url="https://vimeo.com/846444688" %}
 
+[此处](export-data.md)了解更多有关导出 Secrets Manager 数据的信息。
+
+* **00:06**：导出工程和机密
+
 {% hint style="info" %}
 要导出 Secrets Manager 数据，您的用户账户必须是组织内的所有者或管理员。
 {% endhint %}

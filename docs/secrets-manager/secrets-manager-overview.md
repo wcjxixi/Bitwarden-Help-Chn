@@ -33,9 +33,13 @@ Bitwarden 致力于打造安全至上的产品。与 Password Manager 一样，S
 * **端到端加密**：机密数据的所有加密和解密都在客户端完成，这意味着敏感数据不会在未加密的情况下到达我们的服务器。
 * **零知识加密**：Bitwarden 团队成员无法看到您的机密、您的密码或您的主密码。
 
+{% hint style="success" %}
+Bitwarden Secrets Manager 也可以自托管。在[这里](get-started/manage-your-organization.md#zi-tuo-guan)了解更多。
+{% endhint %}
+
 ## 客户端 <a href="#clients" id="clients"></a>
 
-在测试期间，Secrets Manager 将提供网页 App、CLI 和 SDK。未来会支持更多的 SDK 库。
+Secrets Manager 将提供网页 App、CLI 和 SDK。未来会支持更多的 SDK 库。
 
 ### 网页密码库 <a href="#web-vault" id="web-vault"></a>
 

@@ -10,7 +10,7 @@ Bitwarden 的大多数功能都可以在离线模式下无障碍使用，但是�
 
 ## 离线安装 Bitwarden <a href="#installing-bitwarden-offline" id="installing-bitwarden-offline"></a>
 
-客户偶尔希望将 Bitwarden 安装到离线机器上，例如在物网闸环境中。要在离线机器上安装 Bitwarden 桌面 App：
+客户偶尔希望将 Bitwarden 安装到离线机器上，例如在网闸环境中。要在离线机器上安装 Bitwarden 桌面 App：
 
 > **\[译者注]**：[网闸](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8) (air-gapped) 网络，是指与外部网络（如互联网或其他外部系统）完全隔离的计算机网络。这种隔离通过物理或逻辑手段实现，确保网络无法与外部环境进行数据交换，从而增强安全性。
 

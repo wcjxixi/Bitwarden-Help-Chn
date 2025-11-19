@@ -22,6 +22,11 @@
 
 {% embed url="https://vimeo.com/846445432" %}
 
+[此处](projects.md)了解更多有关工程的信息。
+
+* **00:05**：创建工程
+* **00:33**：将人员添加到工程
+
 1、使用**新增**下拉菜单选择**工程**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gGgCYT0CgS3MKAngKDooL/03bd6080e1f8c695c46fd23918f56951/2024-12-03_11-25-44.png?_a=DAJCwlWIZAAB" %}
@@ -104,7 +109,7 @@
 * **可以读取**：机器账户可以从分配的工程中检索机密。
 * **可以读取和写入**：机器账户可以从已分配的工程中检索和编辑机密，在已分配的工程中创建新的机密，或者创新的工程。
 
-{% hint style="info" %}
+{% hint style="success" %}
 机器账户的写入​​访问权限的充分利用取决于即将发布的 [CLI](../developer-tools/secrets-manager-cli.md) 版本。目前，这只是在 UI 中提供了此选项。请继续关注[发行说明](../../release-notes.md)以获取更多信息。
 {% endhint %}
 {% endtab %}
@@ -125,7 +130,7 @@
 * **可以读取**：机器账户可以从分配的工程中检索机密。
 * **可以读取和写入**：机器账户可以从已分配的工程中检索和编辑机密，在已分配的工程中创建新的机密，或者创新的工程。
 
-{% hint style="info" %}
+{% hint style="success" %}
 机器账户的写入​​访问权限的充分利用取决于即将发布的 [CLI](../developer-tools/secrets-manager-cli.md) 版本。目前，这只是在 UI 中提供了此选项。请继续关注[发行说明](../../release-notes.md)以获取更多信息。
 {% endhint %}
 {% endtab %}

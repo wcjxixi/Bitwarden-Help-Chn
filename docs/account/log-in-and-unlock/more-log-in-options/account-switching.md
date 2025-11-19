@@ -33,7 +33,7 @@
 {% hint style="info" %}
 大多数密码库操作，包括添加新项目或文件夹、同步、自动填充以及[密码库超时](../vault-timeout-options.md)和解锁（[PIN](../more-unlock-options/unlock-with-pin.md) 或[生物识别](../more-unlock-options/unlocking-with-biometrics.md)）等设置仅适用&#x4E8E;_&#x6D3B;&#x52A8;_&#x8D26;户，您可以通过应用程序顶部菜单栏中显示的图标来确定活动账户。
 
-但某些**选项**，例如[主题](../../../password-manager/more/change-app-appearance.md)，则适用于**所有账户**。
+但某些**选项**，例如[主题](../../../password-manager/more/change-app-theme.md)，则适用于**所有账户**。
 {% endhint %}
 
 ## 自动填充 <a href="#auto-fill" id="auto-fill"></a>
