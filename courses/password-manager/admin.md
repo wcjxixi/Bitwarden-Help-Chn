@@ -98,7 +98,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 {% embed url="https://vimeo.com/1075687841?fl=pl&fe=sh" %}
 
-详细了解当企业组织配置为[受信任设备加密的 SSO](../../docs/admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 时，用户将如何体验 SSO 登录流程。
+了解更多当企业组织配置为[受信任设备加密的 SSO](../../docs/admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 时，用户将如何体验 SSO 登录流程。
 
 * **00:10**：简介
 * **00:40**：启动 SSO 登录过程
@@ -248,12 +248,12 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 ### 团队版 & 企业版演示 <a href="#teams-and-enterprise-demo" id="teams-and-enterprise-demo"></a>
 
 {% hint style="info" %}
-请注意，某些功能需要企业版方案。如需了解更多信息，请[比较业务功能和计划](https://bitwarden.com/pricing/business/)。
+请注意，某些功能需要企业版方案。如需了解更多信息，请[比较业务功能和方案](https://bitwarden.com/pricing/business/)。
 {% endhint %}
 
 {% embed url="https://vimeo.com/734127077?fl=pl&fe=sh" %}
 
-[此处](../../docs/plans-and-pricing/password-manager/about-bitwarden-plans.md)了解更多有关可用的 Bitwarden 计划的信息。
+[此处](../../docs/plans-and-pricing/password-manager/about-bitwarden-plans.md)了解更多有关可用的 Bitwarden 方案的信息。
 
 * **00:07**：简介和特点
 * **00:35**：加密与安全

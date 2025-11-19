@@ -194,7 +194,7 @@
 
 成为 Bitwarden 合作伙伴计划的成员既快捷又简单。我们的合作伙伴计划旨在最大限度地使您在广泛的共同优先事项、战略要求和客户利益方面获得成功。[今天就开始吧](https://bitwarden.com/partners/become-a-partner/)。
 
-### 熟悉组织类型 <a href="#get-acquainted-with-organization-types" id="get-acquainted-with-organization-types"></a>
+### 了解组织类型 <a href="#learn-about-organization-types" id="learn-about-organization-types"></a>
 
 作为经销商，您的大多数客户都会推行团队组织或企业组织。使用我们的[比较图表](../../docs/plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-business-plans)了解每种计划的独特功能。
 
