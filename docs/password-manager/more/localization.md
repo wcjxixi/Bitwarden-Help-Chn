@@ -6,11 +6,14 @@
 
 ## 更改 App 语言 <a href="#change-app-language" id="change-app-language"></a>
 
-在网页密码库和桌面应用程序中，Bitwarden 将默认使用美国英语。浏览器扩展程序和移动应用程序将默认使用您的系统语言。可以在以下 Bitwarden 客户端上手动更改语言：
-
-在网页 App 中，Bitwarden 将默认使用您的浏览器语言，这通常由您指定的系统语言决定。浏览器扩展、手机 App 和桌面 App 直接默认为您的系统语言。在以下 Bitwarden 客户端上可以手动更改语言：
+在网页 App 中，Bitwarden 将默认使用您的浏览器语言，这通常由您指定的系统语言决定。浏览器扩展、移动 App 和桌面 App 则默认直接使用系统语言。您可以在以下 Bitwarden 客户端中手动更改语言：
 
 {% embed url="https://vimeo.com/795737043" %}
+
+[此处](localization.md)了解更多有关更改 App 语言的信息。
+
+* **00:15**：更改网页 App 中的语言设置
+* **00:56**：更改桌面 App 中的语言设置
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -101,7 +104,7 @@ Bitwarden 浏览器扩展将动态地使用您的网页浏览器设置的语言�
 
 > **\[译者注]**：更多语言代码参阅 [ISO 639-1](https://zh.wikipedia.org/wiki/ISO_639-1)。
 
-## 看不到您的语言？ <a href="#dont-see-your-language" id="dont-see-your-language"></a>
+## 看不到您的语言吗？ <a href="#dont-see-your-language" id="dont-see-your-language"></a>
 
 如果您的语言没有在网页密码库或桌面 App 中列出，或者您的浏览器扩展或移动 App 没有动态地使用您的语言，**我们希望您能提供帮助！**
 

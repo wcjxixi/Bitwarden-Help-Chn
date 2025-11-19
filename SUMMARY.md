@@ -119,7 +119,7 @@
       * [SSH 代理](docs/password-manager/developer-tools/ssh/ssh-agent.md)
   * [更多](docs/password-manager/more/README.md)
     * [Password Manager FAQ](docs/password-manager/more/password-manager-faqs.md)
-    * [更改 App 主题](docs/password-manager/more/change-app-theme.md)
+    * [更改 App 外观](docs/password-manager/more/change-app-appearance.md)
     * [本地化](docs/password-manager/more/localization.md)
     * [DuckDuckGo macOS 浏览器集成](docs/password-manager/more/duckduckgo-macos-browser-integration.md)
     * [Apple Watch 上的 Bitwarden](docs/password-manager/more/apple-watch-totp.md)
