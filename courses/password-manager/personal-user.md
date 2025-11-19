@@ -19,9 +19,9 @@
 视频章节：
 
 * **00:06**：概述
-* **00:29**：1、从 Bitwarden 主页
-* **01:26**：2、从 Bitwarden 客户端
-* **01:36**：3、从邀请/SSO
+* **00:29**：1、从 Bitwarden 主页注册
+* **01:26**：2、从 Bitwarden 客户端注册
+* **01:36**：3、从邀请/SSO 注册
 * **02:26**：Bitwarden 学习中心
 
 Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免费账户。[还等什么呢](https://vault.bitwarden.com/#/register?layout=default)？[此处](../../docs/account/create-bitwarden-account.md)了解更多有关创建 Bitwarden 账户的信息。
@@ -51,7 +51,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 Password Manager 网页 App
 {% endembed %}
 
-您可以通过网页 App 在密码库中填入需要保护的信息，整理您的凭据以便于访问，等等。您在任何 Bitwarden App 中添加的项目都会同步到您登录的其他 Bitwarden  App，因此您可以在任何地方登录账户。
+通过网页 App，您可以将需要保护的信息存入密码库，整理您的凭据以便于快速访问，等等。您在任何 Bitwarden App 中添加的项目都会同步到您已登录的其他 Bitwarden  App 中，因此您可以在任何地方登录账户。
 
 ### 导入数据 <a href="#import-your-data" id="import-your-data"></a>
 
@@ -74,10 +74,10 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 * **00:32**：登录或创建账户
 * **00:37**：禁用浏览器的密码管理器
 * **00:50**：导入项目
-* **01:11**：创建一个新项目
+* **01:11**：创建新项目
 * **01:42**：附加字段
 * **01:52**：使用文件夹
-* **02:11**：收藏一个项目
+* **02:11**：收藏项目
 * **02:17**：自动填充
 * **02:39**：自动保存弹出窗口
 * **02:45**：PIN 码和生物识别
