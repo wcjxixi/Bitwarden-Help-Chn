@@ -16,9 +16,11 @@ Bitwarden 还使用 Azure 透明数据加密 (TDE) 通过对数据库、关联�
 
 Bitwarden 将所有数据安全地处理和存储在位于[美国和欧盟](../server-geographies.md)的 [Microsoft Azure Cloud](https://en.wikipedia.org/wiki/Microsoft_Azure) 中，而 Microsoft Azure Cloud 使用由属于微软的团队管理的服务。由于 Bitwarden 仅使用 Azure 提供的服务，因此无需管理和维护服务器基础结构。运行时间、可伸缩性以及安全更新和保证均由 Microsoft 及其云基础架构提供支持。查看 [Microsoft Azure 合规性产品](https://azure.microsoft.com/en-us/resources/microsoft-azure-compliance-offerings/)文档以获取更多详细信息。
 
-Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。Bitwarden 为此目的利用的功能不涉及创建或存储 BACPAC 或其他可移动备份文件，而是允许通过反向处理事务日志进行灾难恢复以使数据库与选定的时间点保持一致（请参阅 [Microsoft 文档](https://learn.microsoft.com/zh-cn/azure/azure-sql/database/hyperscale-automated-backups-overview?view=azuresql)）。Bitwarden 为 PITR 配置了严格的 7 天保留策略和非长期保留策略。此功能**仅用于灾难恢复目的**，用户和组织负责创建和安全地存储他们自己的密码库数据的备份。Blob 存储的数据，特别是附件和 Send 文件，不受 PITR 功能的约束，一旦从 Bitwarden 中删除就无法恢复。
+Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。Bitwarden 为此用途所采用的功能并不涉及创建或存储 BACPAC 或其他可移动的备份文件，而是通过反向处理事务日志，使数据库与所选定的时间点保持一致，从而实现灾难恢复（参见 [Microsoft 文档](https://learn.microsoft.com/zh-cn/azure/azure-sql/database/hyperscale-automated-backups-overview?view=azuresql)）。Bitwarden 为 PITR 配置了严格的 7 天保留策略和非长期保留策略。此功能**仅用于灾难恢复目的**，用户和组织负责创建和安全地存储他们自己的密码库数据的备份。Blob 存储的数据，特别是附件和 Send 文件，不受 PITR 功能的约束，一旦从 Bitwarden 中删除就无法恢复。
 
 > **\[译者注]**：**PITR**：Point-in-Time Restore（时间点恢复） ，是一种数据恢复技术，允许将数据库或系统恢复到某个特定时间点的状态。它通过持续记录数据库的变更（如事务日志）来实现，确保在发生故障或数据损坏时，能够恢复到故障前的任意时间点。
+>
+> **BACPAC**：BACPAC 是一个可移动的数据库备份文件格式，主要用于 Microsoft SQL Server 和 Azure SQL Database。BACPAC 文件本质上是一个 `.bacpac` 文件（常见的 `.bak` 文件则是普通备份文件），里面包含：数据库的架构和数据库中的数据。
 
 不信任 Bitwarden 服务器吗？没关系。开源的力量让一切变得简单美好，您可以轻松地自己托管整个 Bitwarden 系统，您的数据由你自己控制。在[这里](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md)了解更多。
 
