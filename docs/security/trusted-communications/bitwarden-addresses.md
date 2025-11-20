@@ -1,4 +1,4 @@
-# Bitwarden 地址
+# Bitwarden 域名、端点和 URL
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/bitwarden-addresses-and-repositories/)
@@ -47,6 +47,7 @@
 * artifacts.bitwarden.com
 * selfhost.bitwarden.com
 * btwrdn.co
+* ghcr.io/bitwarden
 
 ## 应用程序端点 <a href="#application-endpoints" id="application-endpoints"></a>
 

@@ -6,15 +6,13 @@
 
 每个 Bitwarden 账户都有一个用于加密所有密码库数据的加密密钥。
 
-## 轮换您的加密密钥 <a href="#rotate-your-encryption-key" id="rotate-your-encryption-key"></a>
-
 {% hint style="warning" %}
 **轮换加密密钥是潜在的危险操作。**&#x8BF7;通读本章节，以了解这样做的全部后果。
 {% endhint %}
 
 轮换账户的加密密钥会生成一个新的加密密钥，用于重新加密所有密码库数据。如果您的账户已被盗用，并且有人获得了您的加密密钥，则您应该考虑轮换您的加密密钥。
 
-### 轮换之前 <a href="#before-rotating" id="before-rotating"></a>
+## 轮换之前 <a href="#before-rotating" id="before-rotating"></a>
 
 在轮换之前，您应该采取以下措施以防止数据丢失或损坏：
 
@@ -34,7 +32,11 @@
 我们建议在轮换您的账户加密密钥之前创建密码库备份。要了解有关密码库导出以及包含哪些项目的更多信息，请参阅[导出密码库数据](../../password-manager/import-and-export/export-vault-data.md)。
 {% endhint %}
 
-### 如何轮换您的加密密钥 <a href="#how-to-rotate-your-encryption-key" id="how-to-rotate-your-encryption-key"></a>
+## 如何轮换加密密钥 <a href="#how-to-rotate-your-encryption-key" id="how-to-rotate-your-encryption-key"></a>
+
+{% hint style="danger" %}
+Bitwarden 建议在轮换账户加密密钥前备份您的项目。在此场景下，推荐使用密码保护的 `.json` 导出格式，但**除账户限制**的 `.json` 导出格式外，任何格式在密钥轮换后均可重新导入。有关密码库导出以及包含哪些项目的更多信息，请参阅[导出密码库数据](../../password-manager/import-and-export/export-vault-data.md)。
+{% endhint %}
 
 要轮换您账户的加密密钥：
 
@@ -45,10 +47,6 @@
 {% endembed %}
 
 2、输入您的**当前主密码**然后创建/确认**新主密码**。
-
-{% hint style="success" %}
-如果您不想更改您的主密码而只想轮换您的账户加密密钥，您可以在**新的**字段中输入您当前的主密码以防止其更改。
-{% endhint %}
 
 3、勾选**同时轮换账户的加密密钥**复选框并接受弹出的对话框。
 

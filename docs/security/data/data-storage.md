@@ -29,15 +29,16 @@ Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。Bitwarden �
 ### 桌面 App <a href="#desktop-app" id="desktop-app"></a>
 
 * Windows
-  * 标准安装版： `%AppData%\Bitwarden`
+  * 标准安装版：`%AppData%\Bitwarden`
   * Microsoft Store 安装版：`%LocalAppData%\Packages\8bitSolutionsLLC.bitwardendesktop_h4e712dmw3xyy\LocalCache\Roaming\Bitwarden`
-  * 便携版： `.\bitwarden-appdata`
+  * 便携版：`.\bitwarden-appdata`&#x20;
 * macOS
-  * 标准安装版： `~/Library/Application Support/Bitwarden`
+  * 标准安装版：`~/Library/Application Support/Bitwarden`
   * Mac App Store 版： `~/Library/Containers/com.bitwarden.desktop/Data/Library/Application Support/Bitwarden`
 * Linux
-  * 标准安装版： `~/.config/Bitwarden`
-  * Snap 版： `~/snap/bitwarden/current/.config/Bitwarden`
+  * 标准安装版：`~/.config/Bitwarden`
+  * Flatpak：`~/.var/app/com.bitwarden.desktop/`
+  * Snap 版：`~/snap/bitwarden/current/.config/Bitwarden`
 
 {% hint style="success" %}
 您可以通过将 `BITWARDEN_APPDATA_DIR` 环境变量值设置为绝对路径来覆盖 Bitwarden 桌面 App 数据的存储位置。
@@ -45,27 +46,31 @@ Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。Bitwarden �
 
 ### 浏览器扩展 <a href="#browser-extension" id="browser-extension"></a>
 
+{% hint style="success" %}
+在 Chromium 浏览器中，`Default` 表示浏览器配置文件的名称。如果您将 Bitwarden 安装在了其他配置文件下，请将路径中的 `Default` 替换为该配置文件的名称。
+{% endhint %}
+
 * Windows
   * Chrome：`%LocalAppData%\Google\Chrome\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
-  * Firefox：`%AppData%\Roaming\Mozilla\Firefox\Profiles\your_profile\storage\default\moz-extension+++[UUID]^userContextId=[integer]`
-  * Opera：`%AppData%\Opera Software\Opera Stable\Local Extension Settings\ccnckbpmaceehanjmeomladnmlffdjgn`
-  * Vivaldi：`%LocalAppData%\Vivaldi\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
+  * Edge：`%LocalAppData%\Microsoft\Edge\User Data\Default\Local Extension Settings\jbkfoedolllekgbhcbcoahefnbanhhlh`
   * Brave：`%LocalAppData%\BraveSoftware\Brave-browser\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
-  * Edge：`%LocalAppData%\Microsoft\Edge\User Data\Default\Extensions\jbkfoedolllekgbhcbcoahefnbanhhlh`
+  * Vivaldi：`%LocalAppData%\Vivaldi\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
+  * Firefox：`%AppData%\Mozilla\Firefox\Profiles\your_profile\storage\default\moz-extension+++[UUID]^userContextId=[integer]`
+  * Opera：`%AppData%\Opera Software\Opera Stable\Local Extension Settings\ccnckbpmaceehanjmeomladnmlffdjgn`
 * macOS
   * Chrome：`~/Library/Application Support/Google/Chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
+  * Edge：`~/Library/Application Support/Microsoft Edge/Default/Local Extension Settings/jbkfoedolllekgbhcbcoahefnbanhhlh`
   * Firefox：`~/Library/Application Support/Firefox/Profiles/your_profile/storage/default/moz-extension+++[UUID]^userContextID=[integer]`
   * Safari：`~/Library/Safari/Databases`
-  * Edge：`~/Library/Application Support/Microsoft Edge/Default/Local Extension Settings/jbkfoedolllekgbhcbcoahefnbanhhlh`
 * Linux
   * Chrome：`~/.config/google-chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
-  * Firefox：`~/.mozilla/firefox/your_profile/storage/default/moz-extension+++[UUID]^userContextID=[integer]`
   * Edge：`~/.config/microsoft-edge/Default/Local Extension Settings/jbkfoedolllekgbhcbcoahefnbanhhlh`
+  * Firefox：`~/.mozilla/firefox/your_profile/storage/default/moz-extension+++[UUID]^userContextID=[integer]`
 
 {% hint style="info" %}
 为了增强安全性，Firefox 在扩展存储文件夹名称中使用通用唯一标识符 (UUID)。打开 `about:debugging#/runtime/this-firefox` 页面（从 Firefox 的地址栏导航）找到您的 Bitwarden 扩展 UUID。用该 UUID 替换上面的 `[UUID]`。
 
-还要注意，Firefox 允许用户自定义存储配置文件的位置（以及本地 Bitwarden 扩展数据）。上面指定的位置是默认位置。
+还要注意，Firefox 允许用户自定义存储配置文件（以及本地 Bitwarden 扩展数据）的位置。上面指定的位置是默认位置。
 {% endhint %}
 
 ### 移动端 <a href="#mobile" id="mobile"></a>
