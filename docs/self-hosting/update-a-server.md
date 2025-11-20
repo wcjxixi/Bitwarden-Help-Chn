@@ -16,7 +16,7 @@
 
 您可以通过导航至[此存储库](https://github.com/bitwarden/self-host)然后选择 **Watch** → **Custom** → **Releases** 来订阅自托管服务器发布的电子邮件通知。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 我们强烈建议您在更新自托管实例之前备份数据。有关更多信息，请参阅[备份您的托管数据](backup-server-data.md)。
 {% endhint %}
 

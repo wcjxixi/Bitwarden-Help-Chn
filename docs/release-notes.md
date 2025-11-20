@@ -714,7 +714,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 * **集合管理和弃用经理角色**：自托管服务器现在可以访问集合管理功能，具有「经理」角色的用户将迁移到具有新的「可以管理」权限的「用户」角色。[了解更多](admin-console/manage-shared-items/collections/collection-settings.md)。
 
 {% hint style="info" %}
-如果是自托管，请在云端组织中设置[集合管理设置](admin-console/manage-shared-items/collections/collection-settings.md)，然后[更新自托管服务器的许可证](self-hosting/licensing.md#update-organization-license)以将这些设置转移到您的自托管组织。
+如果是自托管，请在云端组织中设置[集合管理设置](admin-console/manage-shared-items/collections/collection-settings.md)，然后[更新自托管服务器的许可证](self-hosting/licensing-on-premise.md#update-organization-license)以将这些设置转移到您的自托管组织。
 {% endhint %}
 
 ## 2024.4.2
@@ -955,7 +955,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 * **环境选择器**：改进了将 Bitwarden App 连接到自托管服务器的工作流程。参阅[这里](self-hosting/connect-clients/connect-individual-clients.md)。
 * **Password Manager - 改进了德语 HTML 的自动填充**：德语 HTML 字段现在可用于自动填充。参阅[这里](https://github.com/bitwarden/clients/pull/4210)。
 * **Secrets Manager - 在机密创建期间创建工程**：您现在可以在机密创建菜单中创建新的工程。参阅[这里](secrets-manager/your-secrets/secrets.md)。
-* **自托管 - 阐明有关服务器许可证的措辞**：有 60 天的宽限期来上传新许可证以替换过期的许可证。参阅[这里](self-hosting/licensing.md#update-organization-license)。
+* **自托管 - 阐明有关服务器许可证的措辞**：有 60 天的宽限期来上传新许可证以替换过期的许可证。参阅[这里](self-hosting/licensing-on-premise.md#update-organization-license)。
 * **低 KDF 警告**：当用户的 KDF 迭代次数低于行业建议值（目前为 600,000 次迭代）时，网页 App 中将出现一个新的警告。参阅[这里](security/encryption/encryption-key-derivation.md#low-kdf-iterations)。
 
 ### 机密管理器 Beta <a href="#secrets-manager-beta" id="secrets-manager-beta"></a>
@@ -1013,7 +1013,7 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 * **主密码安全检查**：在移动 App、浏览器扩展和桌面 App 上创建账户的新用户现在可以通过 HIBP 检查已知的数据泄露，以了解他们的潜在主密码。这将在以后的版本中被带到网页密码库。参阅[这里](password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-report-individual-vaults-only)。
 * **组织密码库更新**：作为改进网页密码库 UI 的持续努力的一部分，一些组织管理功能进行了重新设计，例如用于项目和集合管理的合并**密码库**视图，以及专用的**成员**和**群组**视图。
 * **在其他客户端上使用设备登录**：现在可以在其他客户端上使用设备登录。登录请求现在也可以从浏览器扩展、桌面 App 和移动 App 发起，现在也可以从桌面 App 获得批准。参阅[这里](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
-* **自托管组织的自动许可证同步**：自托管组织可以启用自动许可证同步，以便自动更新计费和订阅更改，而不必手动重新上传许可证。参阅[这里](self-hosting/licensing.md#update-a-renewed-organization-license)。
+* **自托管组织的自动许可证同步**：自托管组织可以启用自动许可证同步，以便自动更新计费和订阅更改，而不必手动重新上传许可证。参阅[这里](self-hosting/licensing-on-premise.md#update-a-renewed-organization-license)。
 * **用于 Bitwarden 统一的 SQLite 数据库选项**：SQLite 现在是 Bitwarden 统一自托管部署的可用数据库选项。参阅[这里](self-hosting/deploy-and-configure/docker/unified-deployment-beta.md)。
 * **更新了自托管安装程序 URL**：用于下载自托管服务器安装程序的 URL 已更改。Linux 参阅[这里](self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#install-bitwarden)，Windows 参阅[这里](self-hosting/deploy-and-configure/docker/windows-standard-deployment.md#install-bitwarden)。
 * **Psono 导入器 (json)**：新的导入选项可用于 Psono (json) 导出。参阅[这里](password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。

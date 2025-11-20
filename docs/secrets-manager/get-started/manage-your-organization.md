@@ -111,7 +111,7 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 
 1. 在云托管的 Bitwarden 组织中注册一个 Secrets Manager 订阅。
 2. 将您的自托管服务器更新到至少 2023.10.0 版本。
-3. 从您的云托管组织[获取新的许可证文件](../../self-hosting/licensing.md#retrieve-organization-license)，然后[将其上传到您的自托管服务器](../../self-hosting/licensing.md#update-organization-license)。
+3. 从您的云托管组织[获取新的许可证文件](../../self-hosting/licensing-on-premise.md#retrieve-organization-license)，然后[将其上传到您的自托管服务器](../../self-hosting/licensing-on-premise.md#update-organization-license)。
 4. 授予个人用户对自托管实例中的 [Secrets Manager 访问权限](manage-your-organization.md#access-to-secrets-manager)。
 
 {% hint style="info" %}

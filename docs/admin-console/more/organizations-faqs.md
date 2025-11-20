@@ -36,7 +36,7 @@
 
 **答：**&#x6709;关 Bitwarden 事件日志中包含的内容的完整列表，请参阅[事件日志](../oversight-visibility/event-logging/event-logs.md)。
 
-### 问：我可以防止用户自我注册到我的组织吗？ <a href="#q-can-i-prevent-users-from-self-registering-into-my-organization" id="q-can-i-prevent-users-from-self-registering-into-my-organization"></a>
+### 问：我可以防止用行自我注册到我的组织吗？ <a href="#q-can-i-prevent-users-from-self-registering-into-my-organization" id="q-can-i-prevent-users-from-self-registering-into-my-organization"></a>
 
 **答：**&#x5982;果您是自托管，请[配置环境变量](../../self-hosting/deploy-and-configure/configuration-options/environment-variables.md) `globalSettings__disableUserRegistration=` 为 `true`，以防止用户通过注册页面注册账户。配置后，组织管理员或所有者必须邀请用户才能在自托管的实例上注册账户。
 
@@ -60,7 +60,7 @@
 
 2、选择**下载许可证**按钮来下载更新了组织名称的许可证。
 
-3、[上传新的许可证](../../self-hosting/licensing.md#organization-license)到您的自托管服务器。
+3、[上传新的许可证](../../self-hosting/licensing-on-premise.md#organization-license)到您的自托管服务器。
 
 ### 问：如何优化包含大量项目的密码库的性能？ <a href="#q-how-do-i-optimize-performance-for-a-vault-with-lots-of-items" id="q-how-do-i-optimize-performance-for-a-vault-with-lots-of-items"></a>
 
@@ -69,6 +69,14 @@
 * 遵循最小权限原则，例如使用集合来组织密码库项目。减少用户可以访问的项目数量将减少应用程序加载时要解密的项目数量。
 * 对于所有者和管理员，请勿使用**此用户可以访问和修改所有项目**选项。无论如何，这些用户角色都可以通过组织密码库访问所有内容，因此选择此选项只会将其他项目也添加到其密码库视图中，并增加应用程序加载时要解密的项目数量。
 * 如果您管理多个组织，请考虑联系我们成为[提供商](../../provider-portal/provider-portal-overview.md)。从提供商门户访问组织将稍微减少解密所有托管项目所需的数量。
+
+### 问：如何离开组织？ <a href="#q-how-do-i-leave-an-organization" id="q-how-do-i-leave-an-organization"></a>
+
+**答：**&#x8981;离开组织，请使用网页 App 选择您要离开的组织的 **≡**&#x9009;项菜单。从下拉列表中选择 **→离开**：
+
+{% embed url="https://bitwarden.com/assets/2MP5ZWZbCJe6ArraaEMku9/eda75c81ab46706bd8ef373a395bd78b/2025-04-01_14-59-09.png?w=1094&fm=avif" %}
+离开组织
+{% endembed %}
 
 ## 组织共享 <a href="#sharing-with-an-organization" id="sharing-with-an-organization"></a>
 

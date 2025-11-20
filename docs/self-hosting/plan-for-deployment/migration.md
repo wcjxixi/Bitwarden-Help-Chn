@@ -19,20 +19,20 @@
 
 2、运行 `./bitwarden.sh start` 启动服务器。
 
-3、打开云端网页密码库然后[下载您的许可证](../licensing.md)。
+3、打开云端网页密码库然后[下载您的许可证](../licensing-on-premise.md)。
 
 {% hint style="success" %}
-[组织许可证](../licensing.md#organization-license)和[个人许可证](../licensing.md#individual-license)是独立的文件。**您不需要下载这两个许可证文件**。如果您要迁移组织，则只需要获取组织许可证，并且必须是[组织所有者](../../admin-console/manage-members/member-roles.md)才能执行此操作。
+[组织许可证](../licensing-on-premise.md#organization-license)和[个人许可证](../licensing-on-premise.md#individual-license)是独立的文件。**您不需要下载这两个许可证文件**。如果您要迁移组织，则只需要获取组织许可证，并且必须是[组织所有者](../../admin-console/manage-members/member-roles.md)才能执行此操作。
 {% endhint %}
 
 4、还是在云端网页密码库中，[导出您的个人密码库数据](../../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)或[导出您的组织密码库数据](../../password-manager/import-and-export/export-vault-data.md#export-an-organization-vault)。如果您要迁移组织，请鼓励您的最终用户也导出他们的个人密码库。
 
 5、打开您的自托管网页密码库并创建一个账户。此账户**必须使用与您下载许可证所用的云端账户相同的电子邮箱地址**。
 
-6、还是在您自托管的网页密码库中，上传您的[许可证](../licensing.md)。
+6、还是在您自托管的网页密码库中，上传您的[许可证](../licensing-on-premise.md)。
 
 {% hint style="success" %}
-上传[组织许可证](../licensing.md#organization-license)和[个人许可证](../licensing.md#individual-license)的位置是不同的。和之前的一样，只上传与你相关的那一个。
+上传[组织许可证](../licensing-on-premise.md#organization-license)和[个人许可证](../licensing-on-premise.md#individual-license)的位置是不同的。和之前的一样，只上传与你相关的那一个。
 {% endhint %}
 
 7、还是在自托管的网页密码库中，将数据导入您的[个人密码库](../../password-manager/import-and-export/import-data.md)或[组织密码库](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)。

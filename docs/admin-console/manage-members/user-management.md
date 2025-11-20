@@ -19,7 +19,7 @@
 ### 设置席位限制 <a href="#set-a-seat-limit" id="set-a-seat-limit"></a>
 
 {% hint style="info" %}
-自托管组织拥有的席位数量将始终与其[对应的云端组织](../../self-hosting/plan-for-deployment/self-host-an-organization.md#step-3-start-your-organization)保持一致。您将需要通过云端管理控制台管理您的席位数量，但可以通过设置[计费同步](../../self-hosting/licensing.md#zi-dong-tong-bu)，使更改对您的自托管组织生效，而无需重新上传许可证。
+自托管组织拥有的席位数量将始终与其[对应的云端组织](../../self-hosting/plan-for-deployment/self-host-an-organization.md#step-3-start-your-organization)保持一致。您将需要通过云端管理控制台管理您的席位数量，但可以通过设置[计费同步](../../self-hosting/licensing-on-premise.md#zi-dong-tong-bu)，使更改对您的自托管组织生效，而无需重新上传许可证。
 {% endhint %}
 
 要对您的组织可以扩展到的席位数量设置限制：
@@ -47,7 +47,7 @@
 ### 手动添加或移除席位 <a href="#manually-add-or-remove-seats" id="manually-add-or-remove-seats"></a>
 
 {% hint style="info" %}
-自托管组织拥有的席位数量将始终与其[对应的云端组织](../../self-hosting/plan-for-deployment/self-host-an-organization.md#step-3-start-your-organization)保持一致。您将需要通过云端管理控制台管理您的席位数量，但可以通过设置[计费同步](../../self-hosting/licensing.md#zi-dong-tong-bu)，使更改对您的自托管组织生效，而无需重新上传许可证。
+自托管组织拥有的席位数量将始终与其[对应的云端组织](../../self-hosting/plan-for-deployment/self-host-an-organization.md#step-3-start-your-organization)保持一致。您将需要通过云端管理控制台管理您的席位数量，但可以通过设置[计费同步](../../self-hosting/licensing-on-premise.md#zi-dong-tong-bu)，使更改对您的自托管组织生效，而无需重新上传许可证。
 {% endhint %}
 
 要对您的组织手动添加或移除席位：

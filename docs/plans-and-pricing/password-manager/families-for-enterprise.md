@@ -137,8 +137,8 @@
 **答：**&#x53EF;以。但是有几个步骤需要完成：
 
 1. [如上所述](families-for-enterprise.md#redeem-your-sponsorship)，在 `https://vault.bitwarden.com` 兑换您的赞助。
-2. 还是在 `https://vault.bitwarden.com`，[按照此处所述](../../self-hosting/licensing.md#retrieve-your-license-1)获取您的家庭组织的许可证文件。
-3. [如此处所述](../../self-hosting/licensing.md#apply-your-license-1)，登录到您的自托管服务器并将许可证文件应用到组织。
+2. 还是在 `https://vault.bitwarden.com`，[按照此处所述](../../self-hosting/licensing-on-premise.md#retrieve-your-license-1)获取您的家庭组织的许可证文件。
+3. [如此处所述](../../self-hosting/licensing-on-premise.md#apply-your-license-1)，登录到您的自托管服务器并将许可证文件应用到组织。
 
 请注意，您的自托管服务器需要连接到 SMTP 邮件服务器，以便将您的家庭组织的邀请发送给其他成员。
 

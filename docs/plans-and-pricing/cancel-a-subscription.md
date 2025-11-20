@@ -10,7 +10,7 @@
 
 取消 Bitwarden 订阅将导致您的账户或组织在计费周期结束时无法使用付费功能。如果您的订阅未满 30 天，请[联系我们](https://bitwarden.com/contact/)获得退款。取消订阅不会自动删除您的账户或组织。[了解更多](delete-an-account-or-organization.md)。
 
-如果您是自托管，请从您创建账户的托管 Bitwarden 网络 App 中取消订阅。[了解更多](../self-hosting/licensing.md)。
+如果您是自托管，请从您创建账户的托管 Bitwarden 网络 App 中取消订阅。[了解更多](../self-hosting/licensing-on-premise.md)。
 
 ## 取消个人订阅 <a href="#cancel-a-personal-subscription" id="cancel-a-personal-subscription"></a>
 

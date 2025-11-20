@@ -1,4 +1,4 @@
-# 组织或高级用户许可证
+# 组织或高级版许可证
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/licensing-on-premise/)
@@ -6,7 +6,7 @@
 
 自托管 Bitwarden 是免费的，但是有些功能必须在您的自托管实例中通过注册的许可证文件才能解锁。许可证文件可以由高级个人订阅账户或组织的所有者从 Bitwarden 托管的[网页密码库](https://vault.bitwarden.com/)中获取。
 
-使用[个人许可证](licensing.md#individual-license)与使用[组织许可证](licensing.md#organization-license)时的步骤不同。
+使用[个人许可证](licensing-on-premise.md#individual-license)与使用[组织许可证](licensing-on-premise.md#organization-license)时的步骤不同。
 
 {% hint style="info" %}
 本文中的过程假定您已经开始了一个 Bitwarden 付费订阅。如果还没有，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)以及[哪种计划适合我？](../plans-and-pricing/what-plan-is-right-for-me.md)。

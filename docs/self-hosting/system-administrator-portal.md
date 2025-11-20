@@ -50,10 +50,6 @@ adminSettings__admins=john@example.com,bill@example.com,tom@example.com
 {% endtab %}
 {% endtabs %}
 
-### 配置 SMTP 邮件服务器 <a href="#configure-smtp-mail-server" id="configure-smtp-mail-server"></a>
-
-系统管理员门户使用电子邮件来提供安全的链接用于验证。因此，在尝试登录到管理门户之前，您需要配置实例的 SMTP 邮件服务器设置。有关更多信息，请参阅[配置环境变量](deploy-and-configure/configuration-options/environment-variables.md)。
-
 ## 访问管理门户 <a href="#access-the-admin-portal" id="access-the-admin-portal"></a>
 
 您的服务器的系统管理员门户位于 `https://<your.domain.com>/admin`。当某个用户尝试登录时，**仅**当使用上述过程授权的电子邮箱地址时，才会将安全链接发送到其电子邮箱地址。

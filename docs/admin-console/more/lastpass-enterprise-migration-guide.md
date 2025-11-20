@@ -34,7 +34,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 1、**创建您的组织**。从创建组织开始。要了解如何操作，请查看[这篇文章](../organizations-overview.md#create-an-organization)。
 
 {% hint style="info" %}
-对于自托管 Bitwarden，请在 Bitwarden 云端创建一个组织，生成[许可证密钥](https://bitwarden.com/host/)，然后在您的服务器上使用该密钥[解锁组织](../../self-hosting/licensing.md#organization-license)。
+对于自托管 Bitwarden，请在 Bitwarden 云端创建一个组织，生成[许可证密钥](https://bitwarden.com/host/)，然后在您的服务器上使用该密钥[解锁组织](../../self-hosting/licensing-on-premise.md#organization-license)。
 {% endhint %}
 
 2、**入职管理用户**。创建好组织后，可以通过入职一些[管理用户](../manage-members/member-roles.md)来简化进一步的设置过程。此时**不要开始最终用户入职**，这一点很重要，因为还有几个步骤来准备您为组织。[此处](../manage-members/user-management.md#onboard-users)了解如何邀请管理员。
@@ -45,45 +45,32 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 
 ## 第 2 步：导入数据 <a href="#step-2-import-data" id="step-2-import-data"></a>
 
-### &#x20;从 LastPass 导出 <a href="#export-from-lastpass" id="export-from-lastpass"></a>
+数据可以直接从 LastPass 导入，也可以使用 LastPass [导出的文件](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md#export-from-lastpass)导入。如果您是使用 LastPass SSO 的团队成员，LastPass 管理员将需要完成一个简短的设置过程，然后您才能使用直接导入选项（[了解更多](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md#direct-import-with-sso)）。
 
-从 LastPass 网页密码库完整导出包含所有您的共享数据为 `.csv` 文件（[了解如何导出](https://support.lastpass.com/s/document-item?language=en_US\&bundleId=lastpass\&topicId=LastPass/export-generic-csv.html&_LANG=enus)）。收集完整的导出可能需要在创建导出之前将所有共享文件夹分配给导出用户。
+要使用**直接导入**方式将数据导入到您的组织：
 
-此外，在 LastPass 中创建的任何导出都将包含来自个人密码库和指定共享文件夹的数据。在此阶段，我们建议对创建的导出进行审核，以确保其中包含所有共享数据，而不包含个人数据。
+1、登录到 Password Manager 浏览器扩展或桌面 App。
 
-### 导入到 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
-
-要将数据导入您的组织：
-
-1、登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
-{% endembed %}
-
-2、导航至**设置** → **导入数据**：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/12fA17Iq9LdCXdhPsPYQyq/6fb380ff6165058fefe6fd311e038364/2024-12-03_15-42-21.png?_a=DAJCwlWIZAAB" %}
-管理控制台导入
-{% endembed %}
+2、在浏览器扩展中，选择**设置**选项卡，然后选择**导入项目**选项。或者，在桌面 App 中，选择**文件** > **导入数据**。
 
 3、从下拉菜单中填写以下字段：
 
-* **集合**：选择是否要将导入的内容移动到现有的集合中。在大多数情况下，您不会在 Bitwarden 中创建集合，因为导入会为您创建集合，所以请将此选项留空。
-* [**文件格式**](../../password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择 **Lastpass (csv)**。
-
-4、选择**选择文件**然后添加要导入的文件，或在输入框中复制并粘贴文件内容。
-
-{% hint style="danger" %}
-导入到 Bitwarden 无法检查要导入的文件中的项目是否与您的密码库中的项目重复。这意味着，如果某个项目已经存在密码库和要导入的文件中，则**导入多个文件将创建重复**的密码库项目。
-{% endhint %}
-
-5、选择**导入数据**触发导入。
-
-[文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)需要手动上传到密码库。请注意，LastPass 中嵌套的共享文件夹会在你的 Bitwarden 组织中重新创建为嵌套的集合，但如果「父」集合中没有数据，需要您手动创建名称匹配的父集合。
+* **导入目的地**：选择导入目的地，例如您具有访问权限的组织密码库。
+* **文件夹**或**集合**：选择是否要将导入的内容移动到您具有访问权限的特定集合。
+* [**文件格式**](../../password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择 LastPass。
+* 在 LastPass 说明框中，选择**直接从 LastPass 导入**选项。
+* 输入您的 **LastPass 电子邮箱**。
 
 {% hint style="success" %}
-您还应建议员工从现有的密码管理器中导出他们的个人数据，并准备将其导入 Bitwarden。[了解更多](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)。
+如果您的 LastPass 账户激活了多重身份验证，系统将提示您从身份验证器 App 输入一次性密码。如果您使用 Duo 进行 MFA，则仅支持应用内审批来满足您的 MFA 要求。
+{% endhint %}
+
+4、选择**导入数据**按钮以触发导入。
+
+5、系统将提示您输入 LastPass 主密码，或者如果您的 LastPass 账户使用 SSO，则系统将提示您登录到您的 IdP。无论哪种情况，请按照提示登录您的 LastPass 账户。
+
+{% hint style="success" %}
+您还应建议员工从现有的密码管理器中导出他们个人拥有的数据，并准备将其导入 Bitwarden。[了解更多](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)。
 {% endhint %}
 
 ## 第 3 步：入职用户 <a href="#step-3-onboard-users" id="step-3-onboard-users"></a>

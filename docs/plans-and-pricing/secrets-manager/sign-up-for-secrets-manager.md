@@ -29,14 +29,14 @@
 
 1. 选中**添加 Secrets Manager** 复选框。
 2. 在**用户席位**字段中，指定要为 Secrets Manager 购买的席位数。这必须小于或等于您的 Password Manager 订阅中指定的席位数。
-3. 在**附加机器账户**字段中，指定要添加到 Secrets Manager 的机器账户的数量。团队和企业方案分别预先打包了 20 个和 50 个机器账户。
+3. 在**附加机器账户**字段中，指定要添加到 Secrets Manager 的机器账户的数量。团队版和企业版方案分别预先打包了 20 个和 50 个机器账户。
 {% endhint %}
 
 3、选择**保存**按钮以激活 Secrets Manager。
 {% endtab %}
 
 {% tab title="家庭版" %}
-Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务。如果您有家庭方案并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费组织并按照[这些步骤](../../secrets-manager/get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
+Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务。如果您有家庭版方案并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费组织并按照[这些步骤](../../secrets-manager/get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
 {% endtab %}
 
 {% tab title="团队版" %}
@@ -48,7 +48,7 @@ Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务�
 
 3、在**用户席位**字段中，指定要为 Secrets Manager 购买的席位数。这必须小于或等于您的 Password Manager 订阅中指定的席位数。
 
-4、在**附加服务账户**字段中，指定要添加到 Secrets Manager 的服务账户的数量。您的团队方案预先打包了 50 个服务账户。在**附加机器账户**字段中，指定要添加到 Secrets Manager 的机器账户的数量。您的团队方案预先打包了 20 个机器账户。
+4、在**附加服务账户**字段中，指定要添加到 Secrets Manager 的服务账户的数量。您的团队方案预先打包了 50 个服务账户。在**附加机器账户**字段中，指定要添加到 Secrets Manager 的机器账户的数量。团队版方案预先打包了 20 个机器账户。
 
 {% hint style="info" %}
 添加附加**用户席位**和**机器账户**将自动扩展并添加到您的订阅中。如果您不希望自动应用附加用户席位和机器账户，请选择**限制订阅**和/或**限制机器账户**选项。
@@ -66,7 +66,7 @@ Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务�
 
 3、在**用户席位**字段中，指定要为 Secrets Manager 购买的席位数。这必须小于或等于您的 Password Manager 订阅中指定的席位数。
 
-4、在**附加服务账户**字段中，指定要添加到 Secrets Manager 的服务账户的数量。您的团队方案预先打包了 50 个服务账户。在**附加机器账户**字段中，指定要添加到 Secrets Manager 的机器账户的数量。您的企业方案预先打包了 50 个机器账户。
+4、在**附加服务账户**字段中，指定要添加到 Secrets Manager 的服务账户的数量。您的团队方案预先打包了 50 个服务账户。在**附加机器账户**字段中，指定要添加到 Secrets Manager 的机器账户的数量。企业版方案预先打包了 50 个机器账户。
 
 {% hint style="info" %}
 添加附加**用户席位**和**机器账户**将自动扩展并添加到您的订阅中。如果您不希望自动应用附加用户席位和机器账户，请选择**限制订阅**和/或**限制机器账户**选项。

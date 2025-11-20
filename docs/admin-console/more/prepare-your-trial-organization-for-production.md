@@ -33,11 +33,11 @@
 
 **这一步只适用于您自行托管 Bitwarden 的情况**。在试用 Bitwarden 期间，您使用的是一个特殊的试用许可证，需要升级到生产许可证。将自托管服务器升级到生产许可证后，您就可以激活许可证自动同步。请按照以下步骤操作：
 
-| 步骤 | 持续时间（小时） | 操作        | 描述                                                                                                   |
-| -- | -------- | --------- | ---------------------------------------------------------------------------------------------------- |
-| 3a | 0.25     | 获取您的生产许可证 | 按照[这些步骤](../../self-hosting/licensing.md#retrieve-organization-license)从 Bitwarden 云网页 App 中获取生产许可证。 |
-| 3b | 0.25     | 手动更新许可证文件 | 按照[此处](../../self-hosting/licensing.md#update-organization-license)的**手动更新**步骤，将获取到的许可证上传到您的自托管服务器。  |
-| 3c | 0.5      | 激活计费同步    | 按照[此处](../../self-hosting/licensing.md#update-organization-license)的**自动同步**步骤设置您的组织，以便将来自动拉取许可证文件。  |
+| 步骤 | 持续时间（小时） | 操作        | 描述                                                                                                              |
+| -- | -------- | --------- | --------------------------------------------------------------------------------------------------------------- |
+| 3a | 0.25     | 获取您的生产许可证 | 按照[这些步骤](../../self-hosting/licensing-on-premise.md#retrieve-organization-license)从 Bitwarden 云网页 App 中获取生产许可证。 |
+| 3b | 0.25     | 手动更新许可证文件 | 按照[此处](../../self-hosting/licensing-on-premise.md#update-organization-license)的**手动更新**步骤，将获取到的许可证上传到您的自托管服务器。  |
+| 3c | 0.5      | 激活计费同步    | 按照[此处](../../self-hosting/licensing-on-premise.md#update-organization-license)的**自动同步**步骤设置您的组织，以便将来自动拉取许可证文件。  |
 
 ## 第 4 步：导入数据 <a href="#step-4-import-your-data" id="step-4-import-your-data"></a>
 

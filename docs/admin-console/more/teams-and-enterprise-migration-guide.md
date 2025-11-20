@@ -55,7 +55,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 1、**创建您的组织**。从创建组织开始。要了解如何操作，请查看[这篇文章](../organizations-overview.md#create-an-organization)。
 
 {% hint style="info" %}
-对于自托管 Bitwarden，请在 Bitwarden 云端创建一个组织，生成[许可证密钥](https://bitwarden.com/host/)，然后在您的服务器上使用该密钥[解锁组织](../../self-hosting/licensing.md#organization-license)。
+对于自托管 Bitwarden，请在 Bitwarden 云端创建一个组织，生成[许可证密钥](https://bitwarden.com/host/)，然后在您的服务器上使用该密钥[解锁组织](../../self-hosting/licensing-on-premise.md#organization-license)。
 {% endhint %}
 
 2、**入职管理用户**。创建好组织后，可以通过入职一些[管理用户](https://help.ppgg.in/admin-console/user-management/member-roles-and-permissions)来简化进一步的设置过程。重要的是，此时**不要开始最终用户入职**，因为还有几个步骤需要您为组织做好准备。[此处](https://help.ppgg.in/admin-console/user-management/user-management#onboard-users)了解如何邀请管理员。
@@ -80,12 +80,9 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 管理控制台导入
 {% endembed %}
 
-3、从下拉菜单中填写以下字段：
+3、从格式下拉菜单中选择一个**文件格式**（参阅下方的[导入建议](teams-and-enterprise-migration-guide.md#import-recommendations)）。
 
-* **集合**：选择是否要将导入的内容移动到现有的集合中。在大多数情况下，您不会在 Bitwarden 中创建集合，因为导入会为您创建集合，所以请将此选项留空。
-* [**文件格式**](../../password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择 **Lastpass (csv)**。
-
-4、选择**选择文件**然后添加要导入的文件，或在输入框中复制并粘贴文件内容。
+4、选择**选择文件**然后添加要导入的文件。
 
 {% hint style="danger" %}
 导入到 Bitwarden 无法检查要导入的文件中的项目是否与您的密码库中的项目重复。这意味着，如果某个项目已经存在密码库和要导入的文件中，则**导入多个文件将创建重复**的密码库项目。
@@ -96,7 +93,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 目前，文件附件不包含在 Bitwarden 导入操作中，需要手动上传到您的密码库。更多信息，请参阅[文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)。
 
 {% hint style="success" %}
-您还应该建议员工从您现有的密码管理器中导出他们的个人数据，并准备将其导入 Bitwarden。在[此处](../../password-manager/import-and-export/)了解更多信息。
+您还应建议员工从现有的密码管理器中导出他们个人拥有的数据，并准备将其导入 Bitwarden。[了解更多](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)。
 {% endhint %}
 
 ### 导入建议 <a href="#import-recommendations" id="import-recommendations"></a>

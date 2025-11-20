@@ -252,18 +252,18 @@ EOF
 
 5、在您的 `my-values.yaml` 文件中，设置以下值：
 
-* `secrets.secretName` ：设置为 SecretProviderClass 中定义的 `secretName` （步骤 3）。
-* `secrets.secretProviderClass` ：设置为 SecretProviderClass 中定义的 `metedata.name` （第 3 步）。
-* `component.admin.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
-* `component.api.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
-* `component.attachments.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
-* `component.events.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
-* `component.icons.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
-* `component.identity.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
-* `component.notifications.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
-* `component.scim.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
-* `component.sso.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
-* `component.web.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
-* `database.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 2）。
-* `serviceAccount.name` ：设置为为您的服务账户定义的名称（步骤 2）。
+* `secrets.secretName` ：设置为 SecretProviderClass 中定义的 `secretName` （步骤 4）。
+* `secrets.secretProviderClass` ：设置为 SecretProviderClass 中定义的 `metedata.name` （步骤 4）。
+* `component.admin.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `component.api.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `component.attachments.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `component.events.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `component.icons.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `component.identity.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `component.notifications.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `component.scim.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `component.sso.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `component.web.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `database.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `serviceAccount.name` ：设置为为您的服务账户定义的名称（步骤 3）。
 * `serviceAccount.deployRolesOnly` ：设置为 `true` 。

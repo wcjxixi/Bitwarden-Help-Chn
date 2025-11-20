@@ -12,7 +12,7 @@
 
 **答：**&#x42;itwarden 是一个跨平台的应用程序，使用 Docker Linux 容器进行部署。这意味着 Bitwarden 可以托管在 Linux、macOS 和 Windows 机器上。
 
-Windows 上的 Docker Desktop 版可能需要许可证，这取决于贵公司是否符合 Docker 对许可证的要求，但 Linux 上的 Docker 是免费的。
+Windows 上的 Docker Desktop 版可能需要许可证，这取决于贵公司是否符合 [Docker 许可证要求](https://www.docker.com/pricing/)，但 Linux 上的 Docker 是免费的。
 
 要阅读更多关于 Docker 和容器技术的信息，请访问 [Docker 网站](https://www.docker.com/why-docker)。
 
@@ -24,11 +24,11 @@ Windows 上的 Docker Desktop 版可能需要许可证，这取决于贵公司�
 
 ### 问：如何在 AWS、Azure、GCP 或 VMware vCenter上部署 Bitwarden？ <a href="#q-how-do-i-deploy-bitwarden-on-aws-azure-gcp-or-vmware-vcenter" id="q-how-do-i-deploy-bitwarden-on-aws-azure-gcp-or-vmware-vcenter"></a>
 
-答：Bitwarden 通常以单个 Windows 或 Linux 虚拟机或机器集群的形式部署。目前，Bitwarden 并未发布针对这些平台的预构建镜像，但您可以在[这里](plan-for-deployment/self-host-an-organization.md)找到如何在上述所有平台上配置虚拟机的说明。
+**答：**&#x42;itwarden 通常以单个 Windows 或 Linux 虚拟机或机器集群的形式部署。目前，Bitwarden 并未发布针对这些平台的预构建镜像，但您可以在[这里](plan-for-deployment/self-host-an-organization.md)找到如何在上述所有平台上配置虚拟机的说明。
 
 ### 问：我应该如何实现高可用性？ <a href="#q-how-should-i-achieve-high-availability" id="q-how-should-i-achieve-high-availability"></a>
 
-**答：**&#x42;itwarden 客户可以使用 Helm 部署选项在自托管环境中实现高可用性。水平扩展可能会在入口资源上发生。[此处](deploy-and-configure/helm/self-host-with-helm.md)了解更多有关 Bitwarden 自托管的信息。
+**答：**&#x76EE;前推荐使用 Helm 部署以实现高可用性。但是，增加 Bitwarden 容器副本可能会导致意外行为。[此处](deploy-and-configure/helm/self-host-with-helm.md)了解更多有关使用 Helm 自托管 Bitwarden 的信息。
 
 ### 问：我需要允许哪些 URL 吗？ <a href="#q-do-i-need-to-allow-any-urls" id="q-do-i-need-to-allow-any-urls"></a>
 
@@ -67,7 +67,7 @@ Windows 上的 Docker Desktop 版可能需要许可证，这取决于贵公司�
 
 ### 问：如何更改我的自助托管组织的名称？ <a href="#q-how-do-i-change-the-name-of-my-self-hosted-organization" id="q-how-do-i-change-the-name-of-my-self-hosted-organization"></a>
 
-答：首先，使用网页 App 更改云中的组织名称。更改云端组织后，重新下载许可证文件，并将新的许可证文件上传到自托管组织，参阅[这里](licensing.md#organization-license)。
+答：首先，使用网页 App 更改云中的组织名称。更改云端组织后，重新下载许可证文件，然后将新的许可证文件上传到自托管组织，参阅[这里](licensing-on-premise.md#organization-license)。
 
 ### 问：为什么当运行更新命令显示是最新版本时，系统管理员门户还会显示有可用的更新？ <a href="#q-why-does-the-admin-portal-show-an-update-available-when-update-and-updateself-show-im-on-the-lates" id="q-why-does-the-admin-portal-show-an-update-available-when-update-and-updateself-show-im-on-the-lates"></a>
 

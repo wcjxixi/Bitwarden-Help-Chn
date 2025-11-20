@@ -13,7 +13,7 @@
 随着续订日期的临近，Bitwarden 建议您通过导航至组织**计费** → **付款方式**来验证您的付款方式。如需更新付款方式，请参阅[更新计费信息](update-your-billing-information.md#update-billing-information-for-organizations)。
 
 {% hint style="warning" %}
-如果我们无法处理您的付款方式，或者您取消了您的订阅，您的组织将被禁用。Bitwarden  Cloud 客户，在您的[许可证](../self-hosting/licensing.md#organization-license)到期和您的组织被禁用之间有七天的宽限期，对于**自托管客户**，则有 60 天的宽限期。无论哪种情况，被禁用的组织将导致以下结果：
+如果我们无法处理您的付款方式，或者您取消了您的订阅，您的组织将被禁用。Bitwarden  Cloud 客户，在您的[许可证](../self-hosting/licensing-on-premise.md#organization-license)到期和您的组织被禁用之间有七天的宽限期，对于**自托管客户**，则有 60 天的宽限期。无论哪种情况，被禁用的组织将导致以下结果：
 
 **组织拥有的密码库项目**
 

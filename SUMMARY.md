@@ -344,7 +344,7 @@
     * [关于 Key Connector](docs/self-hosting/key-connector/about-key-connector.md)
     * [部署 Key Connector](docs/self-hosting/key-connector/deploy-key-connector.md)
   * [系统管理员门户](docs/self-hosting/system-administrator-portal.md)
-  * [组织或高级用户许可证](docs/self-hosting/licensing.md)
+  * [组织或高级版许可证](docs/self-hosting/licensing-on-premise.md)
   * [更新服务器](docs/self-hosting/update-a-server.md)
   * [备份服务器数据](docs/self-hosting/backup-server-data.md)
   * [服务器日志](docs/self-hosting/server-logs.md)
