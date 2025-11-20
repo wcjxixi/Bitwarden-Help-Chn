@@ -28,9 +28,25 @@ Bitwarden 遵守数据隐私框架 (DPF)，以前称为隐私保护，该框架�
 
 Bitwarden 符合 HIPAA 标准，并且每年都会接受第三方审计以确保符合 HIPPAA 安全规则。
 
+### ISO 27001
+
+Bitwarden 已通过 ISO 27001 认证，并符合围绕数据安全的 ISO 27001 控制集。要了解更多信息，请联系您的账户管理人员。
+
 ## 第三方安全审计 <a href="#third-party-security-audits" id="third-party-security-audits"></a>
 
 Bitwarden 定期与著名的安全公司进行全面的第三方安全审计。这些年度审计包括跨 Bitwarden IP、服务器和网页应用程序的源代码评估和渗透测试。
+
+### 2024 年 Bitwarden 营销网站安全评估 <a href="#id-2024-bitwarden-marketing-website-security-assessment" id="id-2024-bitwarden-marketing-website-security-assessment"></a>
+
+Bitwarden 完成了安全公司 Paragon Initiative Enterprises (PIE) 对 Bitwarden 营销网站的专门审核。
+
+[阅读报告](https://bitwarden.com/assets/3alBclinYuMVZ9erf1tuhM/59d4a7a3e5f3268fa59747bd86f8cba7/2024_Bitwarden_Marketing_Website_Security_Report.pdf)。
+
+### 2024 年 Bitwarden 移动 App 安全评估 <a href="#id-2024-bitwarden-mobile-app-security-assessment" id="id-2024-bitwarden-mobile-app-security-assessment"></a>
+
+Bitwarden 完成了安全公司 Mandiant 对 Bitwarden 移动和移动身份验证器 App 的专门审核。
+
+[阅读报告](https://bitwarden.com/assets/5xEFYurTu7zhrlKg8dM9Wr/943d125e789b1c4eebc7b29ad6fb9b1a/2024_Bitwarden_Mobile_App_Security_Report.pdf)。
 
 ### 2024 网页 App 和网络安全评估 <a href="#id-2024-web-app-and-network-security-assessment" id="id-2024-web-app-and-network-security-assessment"></a>
 

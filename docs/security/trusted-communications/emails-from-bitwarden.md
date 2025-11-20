@@ -12,7 +12,7 @@
 
 ### 产品交互电子邮件 <a href="#product-interaction-emails" id="product-interaction-emails"></a>
 
-诸如新设备警报、加入组织的邀请、请求访问机密管理器，以及两步登录代码之类的电子邮件将来自 `no-reply@bitwarden.com`，或者，如果您是自托管，则来自已配置的域名，例如 `no-reply@my.domain.com`。
+诸如新设备警报、加入组织的邀请、请求访问机密管理器，以及两步登录代码之类的电子邮件将来自 `no-reply@bitwarden.com` 或 `no-reply@bitwarden.eu`，或者，如果您是自托管，则来自已配置的域名，例如 `no-reply@my.domain.com`。
 
 {% hint style="info" %}
 自 2024.9.2 起，电子邮件验证请求在创建账户时发送给云端用户，也是从 `no-reply@bitwarden.com` 发出的：
@@ -36,7 +36,7 @@
 
 ### 续费电子邮件 <a href="#renewals-emails" id="renewals-emails"></a>
 
-对于即将到期的 Bitwarden 订阅，付费用户将收到电子邮件提醒即将续费。这些电子邮件将来自 `no-reply@bitwarden.com` 和 `upcoming-invoice@bitwarden.com` 两个地址。
+对于即将到期的 Bitwarden 订阅，付费用户将收到电子邮件提醒即将续费。这些电子邮件将来自 `no-reply@bitwarden.com` 或 `no-reply@bitwarden.eu` 和 `upcoming-invoice@bitwarden.com` 两个地址。
 
 ## 交互式电子邮件 <a href="#opt-in-emails" id="opt-in-emails"></a>
 
@@ -53,6 +53,10 @@
 Bitwarden 会对可疑活动（如从未知设备登录和从未知设备尝试登录失败）发送电子邮件提醒。
 
 这些电子邮件**永远不会包含附件**。如果提示您下载文件或点击未知链接，请联系我们。
+
+### 新设备验证 <a href="#new-device-verification" id="new-device-verification"></a>
+
+如果您的账户没有使用两步登录，当您从之前未登录过的设备首次登录时，您将收到一封包含验证码的电子邮件。在[这里](../../account/log-in-and-unlock/new-device-protection.md)了解更多。
 
 ### 新设备登录 <a href="#new-device-logged-in" id="new-device-logged-in"></a>
 

@@ -227,3 +227,19 @@ Bitwarden 所需的其他基本权限已[在 Google Play 商店中列出](https:
 ### 问：网站访问选项会干扰 Bitwarden 浏览器扩展吗？ <a href="#q-will-site-access-options-interfere-with-the-bitwarden-browser-extension" id="q-will-site-access-options-interfere-with-the-bitwarden-browser-extension"></a>
 
 **答：**&#x4E3A;了使 Bitwarden 浏览器扩展正常工作，必须将其网站访问权限设置为**在所有网站上**或**在特定网站上**并将 Bitwarden 服务器添加到列表中。将网站访问权限设置为**点击时**会限制 Bitwarden 从 Bitwarden 服务器获取数据的能力，而这正是保存或更新凭据所必需的基本功能。
+
+### 问：Bitwarden 采取哪些措施来维护本地客户端安全？ <a href="#q-what-steps-does-bitwarden-take-to-maintain-local-client-security" id="q-what-steps-does-bitwarden-take-to-maintain-local-client-security"></a>
+
+**答：**&#x6240;有 Bitwarden 客户端（桌面、网页、移动、浏览器扩展）都会在从 Bitwarden 服务器检索敏感数据时对其进行加密。在 Bitwarden 安全白皮书上了解有关 Bitwarden [身份验证和解密](bitwarden-security-whitepaper.md#authentication-and-decryption)的更多信息。
+
+为了防止中间人 (MitM) 攻击和加密数据操纵，Bitwarden 确保客户端和服务器之间的所有通信均通过采用 TLS 加密的 HTTPS 进行。此外，加密的密码库数据（密码库「blob」）是使用字符串加密算法（PBKDF2 和 Argon2）在客户端本地解密的，这意味着对加密 blob 的任何篡改都可能导致解密失败或数据不可用，从而有助于防止未经授权的操作被悄悄接受。
+
+因此，最终用户或设备所有者有责任确保其设备的安全并防止未经授权的访问。Bitwarden 承认某些用户可能在越狱或取得 root 权限的设备上进行操作。此类环境不受支持，Bitwarden 无法保证安全性和内存管理保护。
+
+### 问：Bitwarden 是否可以在模拟环境中运行？ <a href="#q-does-bitwarden-run-in-emulated-environments" id="q-does-bitwarden-run-in-emulated-environments"></a>
+
+**答：**&#x662F;的，用户可以在模拟环境中运行 Bitwarden。Bitwarden 的开发过程本身涉及各种操作系统的仿真器和模拟器的使用。由于 Bitwarden 是开源的，因此开发人员可以完全访问代码库，并能够在模拟环境中构建、运行和调试应用程序。这种透明度和灵活性支持广泛的用例，从受控环境中的测试到为项目本身做出贡献。
+
+### 问：第三方网站可以知道我安装了 Bitwarden 吗？ <a href="#q-can-third-party-sites-know-that-i-have-bitwarden-installed" id="q-can-third-party-sites-know-that-i-have-bitwarden-installed"></a>
+
+**答：**&#x867D;然 Bitwarden 确实采用了多种技术来帮助防止浏览器指纹识别，但不可能完全阻止对浏览器扩展程序使用的检测。对指纹识别敏感的用户可以选择不使用浏览器扩展，而选择桌面 App。
