@@ -56,7 +56,7 @@
 {% tab title="CLI" %}
 要将当前版本打印到控制台，请运行以下命令：
 
-```
+```shellscript
 bw -v
 ```
 {% endtab %}

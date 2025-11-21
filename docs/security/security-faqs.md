@@ -110,7 +110,7 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 3、使用 `CertUtil` 或 `sha256sum` 命令生成已下载的软件包的 SHA-256 哈希值，例如：
 
-```
+```shellscript
 sha256sum Bitwarden-2024.8.2-universal.dmg
 ```
 
@@ -126,7 +126,7 @@ sha256sum Bitwarden-2024.8.2-universal.dmg
 
 3、使用 `CertUtil` 或 `sha256sum` 命令生成已下载的软件包的 SHA-256 哈希值，例如：
 
-```
+```shellscript
 sha256sum com.x8bit.bitwarden.apk
 ```
 
@@ -142,7 +142,7 @@ sha256sum com.x8bit.bitwarden.apk
 
 3、使用 `CertUtil` 或 `sha256sum` 命令生成已下载的 `.zip` 文件的 SHA-256 哈希值，例如：
 
-```
+```shellscript
 sha256sum bw-linux-2024.8.2.zip
 ```
 

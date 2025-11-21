@@ -16,7 +16,7 @@
 
 安装 Python 模块的常用工具称为 pip。要使用 pip 安装此模块：
 
-```batch
+```shellscript
 pip3 install requests
 ```
 
@@ -49,8 +49,8 @@ pip3 install requests
 
 1、指示所有组织成员[导出他们的个人密码库](../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。
 
-{% hint style="info" %}
-单独下载密码库项目的任何文件附件，并注意它们属于哪个项目。
+{% hint style="success" %}
+请单独下载密码库项目的文件附件，并注意它们属于哪个项目。
 {% endhint %}
 
 2、[申请新的安装 ID 和密钥](https://bitwarden.com/host/)。确保将**数据区域**设置为您希望将 Bitwarden 实例迁移到的目的地。
@@ -99,48 +99,48 @@ pip3 install requests
 
 要显示脚本帮助文本：
 
-```batch
+```shellscript
 python3 bwAdminTools.py -h
 ```
 
 要比较源组织和目标组织：
 
-```batch
+```shellscript
 python3 bwAdminTools.py -c diffbw
 ```
 
 要将组织库数据、群组和群组权限从源组织迁移到目标组织：
 
-```batch
+```shellscript
 python3 bwAdminTools.py -c migratebw
 ```
 
 要将成员的权限（群组以外的）从源组织迁移到目标组织：
 
-```batch
+```shellscript
 python3 bwAdminTools.py -c migratebwusers
 ```
 
 要从源组织中删除所有集合：
 
-```batch
+```shellscript
 python3 bwAdminTools.py -c purgecol
 ```
 
 要从目标组织中删除所有集合：
 
-```batch
+```shellscript
 python3 bwAdminTools.py -c purgecoldest
 ```
 
 要从源组织中删除所有群组：
 
-```batch
+```shellscript
 python3 bwAdminTools.py -c purgegroup
 ```
 
 要从目标组织中删除所有群组：
 
-```batch
+```shellscript
 python3 bwAdminTools.py -c purgegroupdest
 ```
