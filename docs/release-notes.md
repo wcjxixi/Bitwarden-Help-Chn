@@ -329,7 +329,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **域名验证更名**：面向企业组织的「域名验证」已更名为「声明域名」。[了解更多](admin-console/login-with-sso/claimed-domains.md)。
+* **域名验证更名**：面向企业组织的「域名验证」已更名为「声明域名」。[了解更多](admin-console/oversight-visibility/claimed-domains/claimed-domains.md)。
 * **声明账户**：当企业组织声明一个域名时，具有与此域名匹配的电子邮箱的所有成员账户现在也将被组织声明，允许管理员删除账户。被声明的账户还有一些其他账户操作限制。[了解更多](admin-console/oversight-visibility/claimed-domains/claimed-accounts.md)。
 * **报告中未分配的项目**：组织拥有的未分配给集合的项目现在会列出互动链接，以便在组织密码库健康状况报告中进一步查看。
 
@@ -524,7 +524,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **Microsoft Sentinel 集成**：新的本地集成可用于 Microsoft Sentinel 安全信息和事件管理 (SIEM)。该集成提供了跨身份验证、组织活动和密码库项目的全面事件覆盖。[了解更多](admin-console/oversight-visibility/siem-integrations/microsoft-sentinel-siem.md)。
-* **Ping Identity SCIM 支持**：Bitwarden 组织现已正式支持 Ping Identity 跨域身份管理 (SCIM) 系统。使用 Ping Identity SCIM 集成来自动配置 Bitwarden 组织中的成员和群组。[了解更多](admin-console/login-with-sso/implementation-guides/ping-identity-saml-implementation.md)。
+* **Ping Identity SCIM 支持**：Bitwarden 组织现已正式支持 Ping Identity 跨域身份管理 (SCIM) 系统。使用 Ping Identity SCIM 集成来自动配置 Bitwarden 组织中的成员和群组。[了解更多](admin-console/login-with-sso/sso-guides/ping-identity-saml-implementation.md)。
 * **UI 改进升级方案**：为简化将您的组织升级到另一个方案的流程，对 UI 进行了改进。[了解更多](admin-console/organizations-overview.md#upgrade-an-organization)。
 * **为允许的应用程序策略自动登录用户**：这项新策略将允许 IdP 管理员启用非 SSO 应用程序，以便在从其 IdP 面板启动时自动登录用户。[了解更多](admin-console/oversight-visibility/enterprise-policies.md#automatically-log-in-users-for-allowed-applications)。
 
@@ -809,7 +809,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **组织唯一的 SP 实体 ID**：使用 SSO SAML 的组织现在可以升级其实体 ID，升级后的实体 ID 对于其组织来说是唯一的。这样做需要在 IdP 上重新配置（参阅[这里](admin-console/login-with-sso/saml-2.0-configuration.md)）。
+* **组织唯一的 SP 实体 ID**：使用 SSO SAML 的组织现在可以升级其实体 ID，升级后的实体 ID 对于其组织来说是唯一的。这样做需要在 IdP 上重新配置（参阅[这里](admin-console/login-with-sso/sso-guides/generic-saml.md)）。
 
 ### 方案 & 定价 <a href="#plans-and-pricing" id="plans-and-pricing"></a>
 
@@ -894,7 +894,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 此次发布包含：
 
 * **FIDO2 WebAuthn 现已成为免费的两步登录选项**：用于两步登录的 FIDO2 WebAuthn 方法已扩展到免费账户。现在，所有 Bitwarden 用户都可以使用兼容的 FIDO2 WebAuthn 凭证（如那些与硬件安全钥匙绑定的设备）来提高登录的安全性（参阅[这里](account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)）。
-* **组织成员电子邮件验证**：当组织成员[接受加入邀请](admin-console/manage-members/user-management.md#accept)时，或如果他们是使用[域验证](admin-console/login-with-sso/claimed-domains.md)的组织成员，他们的电子邮件将自动通过验证。
+* **组织成员电子邮件验证**：当组织成员[接受加入邀请](admin-console/manage-members/user-management.md#accept)时，或如果他们是使用[域验证](admin-console/oversight-visibility/claimed-domains/claimed-domains.md)的组织成员，他们的电子邮件将自动通过验证。
 * **导出更新**：密码库数据的 JSON 导出现在将包括适用项目的密码历史记录（参阅[这里](password-manager/import-and-export/export-vault-data.md)）。
 * **CLI 密码生成器选项**：使用 CLI 生成密码时增加了自定义密码复杂度的选项标志（参阅[这里](password-manager/your-vault/security-tools/generator.md#cli)）。
 * **ProtonPass JSON 导入器**：ProtonPass JSON 已添加到可用于直接导入 Bitwarden Password Manager 的格式列表中（参阅[这里](password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)）。
@@ -980,7 +980,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-* **域验证**：组织可以验证域（例如 `mycompany.com`）的所有权，允许用户在使用 SSO 登录时跳过组织标识符步骤。参阅[这里](admin-console/login-with-sso/claimed-domains.md)。
+* **域验证**：组织可以验证域（例如 `mycompany.com`）的所有权，允许用户在使用 SSO 登录时跳过组织标识符步骤。参阅[这里](admin-console/oversight-visibility/claimed-domains/claimed-domains.md)。
 * **浏览器扩展 - 改进的自动填充安全性**：浏览器扩展现在不允许在页面加载时自动填充不受信任的 iframe。浏览器扩展还会在手动自动填充、使用上下文菜单或使用键盘快捷键时警告用户有关不受信任的 iframe，并在自动填充 HTTP 站点时警告用户，该站点需要基于该项目的已保存 URI 的 HTTPS。参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 * **主密码安全性检查**：用户现在可以在创建账户或在网页密码库上更改主密码时通过 Have I Been Pwned 检查已知的数据泄露，以查找他们预期的主密码。参阅[这里](password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-report-individual-vaults-only)。
 * **主密码长度要求**：现在主密码的长度必须至少为 12 个字符。此规则将对新的 Bitwarden 账户和[更改主密码](account/log-in-and-unlock/your-master-password.md#change-your-master-password)的任何用户强制执行。

@@ -23,7 +23,7 @@ Bitwarden 为企业提供了两种解决方案，允许经过批准的企业成�
 
 **受信任设备 SSO** 是一项功能，允许使用 SSO 登录的组织创建并存储成员设备的加密密钥，从而无需输入主密码。[了解更多有关受信任设备 SSO 的信息](trusted-devices/about-trusted-devices.md)。
 
-**自托管 Bitwarden 组织**可利用 [Key Connector](../../self-hosting/key-connector/about-key-connector.md) 向 Bitwarden 客户端提供解密密钥，而无需用户使用主密码对密码库数据进行解密。在[这里](member-decryption-options.md)和[这里](../../self-hosting/key-connector/about-key-connector.md)了解更多信息。
+**自托管 Bitwarden 组织**可利用 [Key Connector](../../self-hosting/key-connector/about-key-connector.md) 向 Bitwarden 客户端提供解密密钥，而无需用户使用主密码对密码库数据进行解密。在[这里](sso-decryption-options.md)和[这里](../../self-hosting/key-connector/about-key-connector.md)了解更多信息。
 {% endhint %}
 
 ### 问：更改我的 SSO 密码会影响我的 Bitwarden 主密码吗？ <a href="#q-will-changing-my-sso-password-affect-my-bitwarden-master-password" id="q-will-changing-my-sso-password-affect-my-bitwarden-master-password"></a>
@@ -46,7 +46,7 @@ Bitwarden 为企业提供了两种解决方案，允许经过批准的企业成�
 
 ### 问：每次登录时是否都需要输入 SSO 标识符吗？ <a href="#q-do-i-need-to-enter-my-organization-identifier-every-time-i-login" id="q-do-i-need-to-enter-my-organization-identifier-every-time-i-login"></a>
 
-**答：**&#x4E0D;需要！如果您的组织使用[域名验证](claimed-domains.md)，则无需输入此标识符。否则，管理员应分发以下 URL（其中 `{your-sso-identifier}` 是您的组织的 SSO 标识符），以自动将用户重定向到 SSO 登录界面：
+**答：**&#x4E0D;需要！如果您的组织使用[域名验证](../oversight-visibility/claimed-domains/claimed-domains.md)，则无需输入此标识符。否则，管理员应分发以下 URL（其中 `{your-sso-identifier}` 是您的组织的 SSO 标识符），以自动将用户重定向到 SSO 登录界面：
 
 * 对于 US 云托管实例：`https://vault.bitwarden.com/#/sso?identifier={your-sso-identifier}`
 * 对于 EU 云托管实例：`https://vault.bitwarden.eu/#/sso?identifier={your-sso-identifier}`

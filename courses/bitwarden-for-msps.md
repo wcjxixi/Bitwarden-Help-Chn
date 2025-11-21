@@ -50,18 +50,18 @@
 
 为您的客户设置技术基础并配置 Bitwarden 设置。
 
-| 步骤 | 主题     | 操作                                                                                                            | 资源                                                                               | 持续时间（小时） |
-| -- | ------ | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------- |
-| 12 | 组织所有者  | 识别组织所有者。所有者是能够控制组织所有方面的超级用户。决定是否希望将电子邮件与特定用户或团队收件箱关联。此外，最佳实践是为冗余设置两个所有者账户                                     | [成员角色](../docs/admin-console/manage-members/member-roles.md)                     | 0.25     |
-| 13 | 企业策略   | <p>配置企业策略。<br>任何策略都应在邀请用户之前启用。请务必查看以下策略：</p><p></p><p>账户恢复管理</p><p></p><p>强制执行组织数据所有权</p><p></p><p>激活自动填充</p> | [策略](../docs/admin-console/oversight-visibility/enterprise-policies.md)          | 1        |
-| 14 | 集合管理设置 | 选择集合在组织中的行为方式。这些设置允许从完全的管理控制到完全的自助服务（用户可以创建自己的集合）的多种选择。这些设置可用于建立最小权限策略                                        | [管理用户](../docs/admin-console/manage-members/user-management.md)                  | 0.25     |
-| 15 | 协同管理环境 | 向客户组织添加管理员或所有者以协同管理。最佳实践是为冗余设置两个所有者                                                                           | [管理用户](../docs/admin-console/manage-members/user-management.md)                  | 0.5      |
-| 16 | 创建集合   | 集合是存放安全项目并与用户群组共享的地方                                                                                          | [集合](../docs/admin-console/manage-shared-items/collections/about-collections.md) | 0.5      |
-| 17 | 创建用户群组 | 创建用户群组可以轻松分配集合。如果您决定从您的身份提供程序或目录服务同步群组和用户，您可能需要稍后重新配置用户和群组分配                                                  | [群组](../docs/admin-console/manage-members/groups.md)                             | 0.5      |
-| 18 | 集合分配   | 将群组分配给集合，确保测试并展示“只读”和“隐藏密码”选项                                                                                 | [用户类型访问控制](../docs/admin-console/manage-members/member-roles.md)                 | 0.5      |
-| 19 | 添加项目   | 手动将项目添加到测试集合中，或通过 CSV 或 JSON 从其他密码管理应用程序导入                                                                    | [集合](../docs/admin-console/manage-shared-items/collections/about-collections.md) | 0.25     |
-| 20 | SSO 登录 | <p>如适用，配置 SSO 登录和组织标识符<br>配置以与 SAML 2.0 或 OpenID Connect 协同工作</p>                                             | [开始使用 SSO](../docs/admin-console/login-with-sso/about-login-with-sso.md)         | 1.5      |
-| 21 | 域名验证   | 如适用，验证公司和其他电子邮件域名，以允许您的用户在 Enterprise SSO 过程中跳过输入组织标识符。非 SSO 组织无需此操作                                          | [域名验证](../docs/admin-console/login-with-sso/claimed-domains.md)                  | 0.5      |
+| 步骤 | 主题     | 操作                                                                                                            | 资源                                                                                    | 持续时间（小时） |
+| -- | ------ | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------- |
+| 12 | 组织所有者  | 识别组织所有者。所有者是能够控制组织所有方面的超级用户。决定是否希望将电子邮件与特定用户或团队收件箱关联。此外，最佳实践是为冗余设置两个所有者账户                                     | [成员角色](../docs/admin-console/manage-members/member-roles.md)                          | 0.25     |
+| 13 | 企业策略   | <p>配置企业策略。<br>任何策略都应在邀请用户之前启用。请务必查看以下策略：</p><p></p><p>账户恢复管理</p><p></p><p>强制执行组织数据所有权</p><p></p><p>激活自动填充</p> | [策略](../docs/admin-console/oversight-visibility/enterprise-policies.md)               | 1        |
+| 14 | 集合管理设置 | 选择集合在组织中的行为方式。这些设置允许从完全的管理控制到完全的自助服务（用户可以创建自己的集合）的多种选择。这些设置可用于建立最小权限策略                                        | [管理用户](../docs/admin-console/manage-members/user-management.md)                       | 0.25     |
+| 15 | 协同管理环境 | 向客户组织添加管理员或所有者以协同管理。最佳实践是为冗余设置两个所有者                                                                           | [管理用户](../docs/admin-console/manage-members/user-management.md)                       | 0.5      |
+| 16 | 创建集合   | 集合是存放安全项目并与用户群组共享的地方                                                                                          | [集合](../docs/admin-console/manage-shared-items/collections/about-collections.md)      | 0.5      |
+| 17 | 创建用户群组 | 创建用户群组可以轻松分配集合。如果您决定从您的身份提供程序或目录服务同步群组和用户，您可能需要稍后重新配置用户和群组分配                                                  | [群组](../docs/admin-console/manage-members/groups.md)                                  | 0.5      |
+| 18 | 集合分配   | 将群组分配给集合，确保测试并展示“只读”和“隐藏密码”选项                                                                                 | [用户类型访问控制](../docs/admin-console/manage-members/member-roles.md)                      | 0.5      |
+| 19 | 添加项目   | 手动将项目添加到测试集合中，或通过 CSV 或 JSON 从其他密码管理应用程序导入                                                                    | [集合](../docs/admin-console/manage-shared-items/collections/about-collections.md)      | 0.25     |
+| 20 | SSO 登录 | <p>如适用，配置 SSO 登录和组织标识符<br>配置以与 SAML 2.0 或 OpenID Connect 协同工作</p>                                             | [开始使用 SSO](../docs/admin-console/login-with-sso/about-login-with-sso.md)              | 1.5      |
+| 21 | 域名验证   | 如适用，验证公司和其他电子邮件域名，以允许您的用户在 Enterprise SSO 过程中跳过输入组织标识符。非 SSO 组织无需此操作                                          | [域名验证](../docs/admin-console/oversight-visibility/claimed-domains/claimed-domains.md) | 0.5      |
 
 ### 第三阶段 - 组织推广 <a href="#phase-3-organization-roll-out" id="phase-3-organization-roll-out"></a>
 

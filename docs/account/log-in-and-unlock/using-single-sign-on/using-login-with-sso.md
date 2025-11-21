@@ -21,7 +21,7 @@ SSO 标识符界面
 {% hint style="success" %}
 **组织成员**：请将 URL 中包含标识符的页面（例如 `https://vault.bitwarden.com/#/sso?my-identifier`）添加为书签，这样您就不必在每次登录时输入它。
 
-**组织管理员**：如果您的成员拥有与域名匹配的电子邮件地址，设置[声明域名](../../../admin-console/login-with-sso/claimed-domains.md)将自动跳过此步骤。
+**组织管理员**：如果您的成员拥有与域名匹配的电子邮件地址，设置[声明域名](../../../admin-console/oversight-visibility/claimed-domains/claimed-domains.md)将自动跳过此步骤。
 {% endhint %}
 
 3、当您被重定向至 IdP（例如 Microsoft Azure、Duo 或 OneLogin）后，请输入您的 SSO 凭据进行登录，操作方式与其他应用程序相同。通常，在此阶段，您的 IdP 会要求您完成 2FA。

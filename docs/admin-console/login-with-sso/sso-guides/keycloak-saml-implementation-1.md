@@ -4,7 +4,7 @@
 Name对应的[官方文档地址](https://bitwarden.com/help/article/saml-keycloak/)
 {% endhint %}
 
-本文是**专门针对 Keycloak** 用于配置 SAML 2.0 方式的 SSO 登录的帮助。有关其他 IdP 方式配置 SSO 登录的帮助，请参阅 [SAML 2.0 配置](../saml-2.0-configuration.md)。
+本文是**专门针对 Keycloak** 用于配置 SAML 2.0 方式的 SSO 登录的帮助。有关其他 IdP 方式配置 SSO 登录的帮助，请参阅 [SAML 2.0 配置](generic-saml.md)。
 
 配置需要在 Bitwarden 网页 App 和 Keycloak 门户网站中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
@@ -140,7 +140,7 @@ Keycloak RS256 证书
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](../saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Keycloak 登录界面：
+输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Keycloak 登录界面：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1FOJPAvRf0NCpJleOtMA8e/cc981e5933250dcab63a3f518370a24f/keycloak-login.png?_a=DAJCwlWIZAAB" %}
 Keycloak 登录界面

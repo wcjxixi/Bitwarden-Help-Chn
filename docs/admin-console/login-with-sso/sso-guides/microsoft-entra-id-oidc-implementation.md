@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/oidc-microsoft-entra-id/)
 {% endhint %}
 
-本文是**专门针对 Azure** 用于配置 OpenID 连接（OIDC） 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](../oidc-configuration.md)或 [Microsoft Entra ID SAML 实施](microsoft-entra-id-saml-implementation.md)。
+本文是**专门针对 Azure** 用于配置 OpenID 连接（OIDC） 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](generic-oidc.md)或 [Microsoft Entra ID SAML 实施](microsoft-entra-id-saml-implementation.md)。
 
 配置需要在 Bitwarden 网页 App 和 Azure 门户网站中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
@@ -113,7 +113,7 @@ Microsoft Entra ID 自定义声明
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](../saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Microsoft 登录界面：
+输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Microsoft 登录界面：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/j1YuXioPGFIwxsqfxCrpm/d0185848b3812c22940c6c5956e0b2be/az-login.png?fm=webp&h=433&q=50&w=464" %}
 Azure 登录界面

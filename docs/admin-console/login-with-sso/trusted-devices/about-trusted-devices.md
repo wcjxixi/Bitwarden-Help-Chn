@@ -109,7 +109,7 @@
 虽然使用受信任设备 SSO 可以消除对主密码的需求，但并非在所有情况下都能消除主密码本身：
 
 * 如果用户是在受信任设备 SSO 激活**之前**入职的，或者如果他们从组织邀请中选择了**创建账户**，则他们的账户将保留其主密码。
-* 如果用户是在受信任设备 SSO 激活**之后**入职的，并从组织邀请中选择**登录** → **企业 SSO** 进行 [JIT 配置](../login-with-sso-faqs.md#q-how-does-login-with-sso-work-for-new-users-just-in-time)，则他们的账户将无需拥有主密码。如果您更改为主密码[成员解密选项](../member-decryption-options.md)，只要这些用户仍然是组织的成员，系统就会在他们登录时提示创建一个主密码（[了解更多](setup-sso-with-trusted-devices.md)）。
+* 如果用户是在受信任设备 SSO 激活**之后**入职的，并从组织邀请中选择**登录** → **企业 SSO** 进行 [JIT 配置](../login-with-sso-faqs.md#q-how-does-login-with-sso-work-for-new-users-just-in-time)，则他们的账户将无需拥有主密码。如果您更改为主密码[成员解密选项](../sso-decryption-options.md)，只要这些用户仍然是组织的成员，系统就会在他们登录时提示创建一个主密码（[了解更多](setup-sso-with-trusted-devices.md)）。
 * 如果使用账户恢复功能恢复了用户账户，就必须为其分配一个主密码。目前，有了主密码后，就无法将其从账户中移除，因此，为了避免出现这种结果，我们建议：(i) 指导用户将数据导出到备份中；(ii) 完全删除丢失的账户；(iii) 要求用户[使用受信任设备重新入职到您组织](../../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)；(iv) 用户完成这些后，指导他们导入备份。
 
 {% hint style="danger" %}

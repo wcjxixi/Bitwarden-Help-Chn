@@ -355,7 +355,7 @@ keyConnectorSettings__certificate__filesystemPath=/etc/bitwarden/key-connector/c
 5、导航至**设置** → **单点登录**界面。
 
 {% hint style="success" %}
-接下来的几个步骤假设您已经拥有一个使用 [SAML 2.0](../../admin-console/login-with-sso/saml-2.0-configuration.md) 或 [OIDC](../../admin-console/login-with-sso/oidc-configuration.md) 的、激活了 [SSO 登录](../../admin-console/login-with-sso/about-login-with-sso.md)的实施。**如果还没有**，请在继续之前先实施和测试 SSO 登录。
+接下来的几个步骤假设您已经拥有一个使用 [SAML 2.0](../../admin-console/login-with-sso/sso-guides/generic-saml.md) 或 [OIDC](../../admin-console/login-with-sso/sso-guides/generic-oidc.md) 的、激活了 [SSO 登录](../../admin-console/login-with-sso/about-login-with-sso.md)的实施。**如果还没有**，请在继续之前先实施和测试 SSO 登录。
 {% endhint %}
 
 6、在**成员解密选项**部分，选择 **Key Connector**。

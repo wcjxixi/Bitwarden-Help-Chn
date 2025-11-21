@@ -50,7 +50,7 @@ SCIM 配置
 
 ### SSO
 
-如果您计划使用 JumpCloud 进行单点登录，请选择 **SSO** 选项卡并按照[这些说明](../../login-with-sso/implementation-guides/jumpcloud-saml-implementation.md)设置 SSO。完成后，或者如果您现在要跳过 SSO，请选择 **active** 按钮并完成确认模式。
+如果您计划使用 JumpCloud 进行单点登录，请选择 **SSO** 选项卡并按照[这些说明](../../login-with-sso/sso-guides/jumpcloud-saml-implementation.md)设置 SSO。完成后，或者如果您现在要跳过 SSO，请选择 **active** 按钮并完成确认模式。
 
 ### 身份管理 <a href="#identity-management" id="identity-management"></a>
 

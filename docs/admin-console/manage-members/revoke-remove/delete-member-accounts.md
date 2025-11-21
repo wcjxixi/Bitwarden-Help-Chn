@@ -8,7 +8,7 @@
 
 根据您组织实施的具体情况，您可以使用以下方法之一来删除属于被移除成员的 Bitwarden 账户：
 
-1、如果您有一个[已声明的域名](../../login-with-sso/claimed-domains.md)，那么任何账户电子邮箱地址与域名相匹配（例如：`jdoe@mycompany.com`）的用户都可以被组织管理员直接删除，而不是只能[从组织中移除](permanently-remove-access.md)：
+1、如果您有一个[已声明的域名](../../oversight-visibility/claimed-domains/claimed-domains.md)，那么任何账户电子邮箱地址与域名相匹配（例如：`jdoe@mycompany.com`）的用户都可以被组织管理员直接删除，而不是只能[从组织中移除](permanently-remove-access.md)：
 
 {% embed url="https://bitwarden.com/assets/6HUnGTfMstF4IasZcKBfdi/0d2dbd328ba4a006611576e7d91c70df/2025-01-14_10-45-56.png?w=1117&fm=avif&q=80" %}
 删除已声明的账户

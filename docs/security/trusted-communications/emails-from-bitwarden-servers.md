@@ -19,7 +19,7 @@
 | 您的订阅即将续订               | n/a                       | 当组织订阅[即将到期](../../plans-and-pricing/organization-renewal.md)时，组织的计费电子邮箱会收到此电子邮件。                                    |
 | {Organization} 席位数量已增加 | {Organization} = 您组织的显示名称 | 当组织[席位数量自动扩展](../../admin-console/manage-members/user-management.md#user-seats)时，所有所有者会收到此电子邮件。                     |
 | {Organization} 席位已达上限  | {Organization} = 您组织的显示名称 | 当组织成员数量达到他们的[席位限制](../../admin-console/manage-members/user-management.md#set-a-seat-limit)时，所有所有者会收到此电子邮件。          |
-| 域名未声明                  | n/a                       | 当组织[尝试声明新域名未成功](../../admin-console/login-with-sso/claimed-domains.md)时，所有所有者和管理员会收到此电子邮件。                          |
+| 域名未声明                  | n/a                       | 当组织[尝试声明新域名未成功](../../admin-console/oversight-visibility/claimed-domains/claimed-domains.md)时，所有所有者和管理员会收到此电子邮件。    |
 | 需要采取行动：{User} 需要确认     | {User} = 用户的电子邮箱地址        | 当用户[等待确认加入组织](../../admin-console/manage-members/user-management.md#confirm)时，所有所有者和管理员会收到此电子邮件。                    |
 | 审核新设备的 SSO 登录请求        | n/a                       | 当用户等待[受信任设备被批准](../../admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)时，所有所有者和管理员会收到此电子邮件。 |
 | 请求删除您的组织               | n/a                       | <p>如果向 Bitwarden 支持团队请求删除其组织，其所有者会收到此电子邮件。</p><p>此电子邮件只会发送给已与 Bitwarden 支持团队确认可以启动组织删除的有效所有者。</p>                   |

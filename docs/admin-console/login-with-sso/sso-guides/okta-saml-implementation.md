@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-okta/)
 {% endhint %}
 
-本文是**专门针对** **Okta** 用于配置 SAML 2.0 方式的 SSO 登录的帮助。有关其他 IdP 方式配置 SSO 登录的帮助，请参阅 [SAML 2.0 配置](../saml-2.0-configuration.md)。
+本文是**专门针对** **Okta** 用于配置 SAML 2.0 方式的 SSO 登录的帮助。有关其他 IdP 方式配置 SSO 登录的帮助，请参阅 [SAML 2.0 配置](generic-saml.md)。
 
 配置需要在 Bitwarden 网页 App 和 Okta 管理门户中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
@@ -181,7 +181,7 @@ IdP 值
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](../saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Okta 的登录界面：
+输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Okta 的登录界面：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3Rh2Bg17sCE57xJsUKfqwN/4342c56fa656be94ef90dd620251a868/okta-login.png?fm=webp&h=620&q=50&w=427" %}
 Okta 登录界面

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/adfs-oidc-implementation/)
 {% endhint %}
 
-本文是**专门针对 Active Directory Federation Services (AD FS)** 用于配置 OpenID Connect (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](../oidc-configuration.md)或 [ADFS SAML 实施](adfs-saml-implementation.md)。
+本文是**专门针对 Active Directory Federation Services (AD FS)** 用于配置 OpenID Connect (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](generic-oidc.md)或 [ADFS SAML 实施](adfs-saml-implementation.md)。
 
 配置需要在 Bitwarden 网页 App 和 AD FS 服务器管理器中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
@@ -128,7 +128,7 @@ AD FS 配置声明规则界面
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](../saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 AD FS SSO 登录界面。
+输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 AD FS SSO 登录界面。
 
 使用 AD FS 凭据进行身份验证后，输入您的 Bitwarden 主密码以解密您的密码库！
 

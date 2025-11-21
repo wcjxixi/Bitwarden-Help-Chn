@@ -20,7 +20,7 @@
 {% endembed %}
 
 {% hint style="success" %}
-如果您的组织有一个[已声明的域名](../../login-with-sso/claimed-domains.md)，如果用户的账户电子邮箱地址与您已声明的域名相匹配，**移除**选项将改为**删除**，并将[直接删除账户](delete-member-accounts.md)，而不是只移除对组织的访问权限：
+如果您的组织有一个[已声明的域名](../../oversight-visibility/claimed-domains/claimed-domains.md)，如果用户的账户电子邮箱地址与您已声明的域名相匹配，**移除**选项将改为**删除**，并将[直接删除账户](delete-member-accounts.md)，而不是只移除对组织的访问权限：
 
 <img src="https://bitwarden.com/assets/6HUnGTfMstF4IasZcKBfdi/0d2dbd328ba4a006611576e7d91c70df/2025-01-14_10-45-56.png?w=1117&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
 {% endhint %}

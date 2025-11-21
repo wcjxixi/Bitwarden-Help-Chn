@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-jumpcloud/)
 {% endhint %}
 
-本文是**专门针对** **JumpCloud** 用于配置 SAML 2.0 方式的 SSO 登录的帮助。有关其他 IdP 方式配置 SSO 登录的帮助，请参阅 [SAML 2.0 配置](../saml-2.0-configuration.md)。
+本文是**专门针对** **JumpCloud** 用于配置 SAML 2.0 方式的 SSO 登录的帮助。有关其他 IdP 方式配置 SSO 登录的帮助，请参阅 [SAML 2.0 配置](generic-saml.md)。
 
 配置需要在 Bitwarden 网页 App 和 JumpCloud 门户网站中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
@@ -187,7 +187,7 @@ SAML 2.0 配置
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](../saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 JumpCloud 的登录界面：
+输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 JumpCloud 的登录界面：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/678vDfFuKfH8FBZkhJdt5J/df1e8bad4f88f013ca194d9c9c82fccc/jc-login.png?fm=webp&h=522&q=50&w=486" %}
 JumpCloud 登录界面

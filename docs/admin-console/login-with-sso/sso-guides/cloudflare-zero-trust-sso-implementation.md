@@ -9,8 +9,8 @@
 {% hint style="info" %}
 Cloudflare Zero Trust 可与任何使用 SAML 2.0 或 OIDC SSO 配置的 IdP 一起配置。如果您不熟悉这些配置，请参阅这些文章：
 
-* [SAML 2.0 配置](../saml-2.0-configuration.md)
-* [OIDC 配置](../oidc-configuration.md)
+* [SAML 2.0 配置](generic-saml.md)
+* [OIDC 配置](generic-oidc.md)
 {% endhint %}
 
 ## 为什么要使用 Cloudflare Zero Trust SSO？ <a href="#why-use-cloudflare-zero-trust-with-sso" id="why-use-cloudflare-zero-trust-with-sso"></a>
@@ -138,7 +138,7 @@ Cloufflare Zero Trust 应用程序策略
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](../saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Cloudflare Access 界面，您可以在其中选择登录要使用的 IDP：
+输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Cloudflare Access 界面，您可以在其中选择登录要使用的 IDP：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5SyHu8lc0ZJqjpL4hF53ie/b0d661e6772b58f681c47b7b01ebbaa0/Screen_Shot_2022-10-12_at_5.15.39_PM__2_.png?_a=DAJCwlWIZAAB" %}
 Cloudflare IdP 选择

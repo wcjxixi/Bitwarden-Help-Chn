@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/ping-identity-oidc-implementation/)
 {% endhint %}
 
-本文是**专门针对 Ping Identity** 用于配置 OpenID Connect (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Ping Identity 的帮助，请参阅 [OIDC 配置](../oidc-configuration.md)或 [Ping Identity SAML 部署](../../manage-members/scim/ping-identity-scim-integration.md)。
+本文是**专门针对 Ping Identity** 用于配置 OpenID Connect (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Ping Identity 的帮助，请参阅 [OIDC 配置](generic-oidc.md)或 [Ping Identity SAML 部署](../../manage-members/scim/ping-identity-scim-integration.md)。
 
 配置需要在 Bitwarden 网页 App 和 Ping Identity 管理员门户网站中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
@@ -98,7 +98,7 @@ Ping OIDC 配置编辑
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](../saml-2.0-configuration.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Ping Identity 登录界面：
+输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Ping Identity 登录界面：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1QwyIzAp4JtyGwNLXZNXFI/6d1cc0ca3f278f46d7ad251ff2898dd4/2024-07-22_12-18-19.png?_a=DAJCwlWIZAAB" %}
 Ping Identity SSO

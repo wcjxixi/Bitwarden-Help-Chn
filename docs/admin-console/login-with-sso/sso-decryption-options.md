@@ -1,4 +1,4 @@
-# 成员解密选项
+# SSO 解密选项
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/sso-decryption-options/)
@@ -10,7 +10,7 @@ SSO 登录的独特之处在于它保留了我们的零知识加密模型。Bitw
 
 * **主密码**：通过身份验证后，组织成员将使用他们的[主密码](../../account/log-in-and-unlock/your-master-password.md)解密密码库数据。
 * **受信任设备**： 允许用户使用 SSO 进行身份验证，并使用设备存储的加密密钥解密其密码库，而无需输入主密码。[了解更多](trusted-devices/about-trusted-devices.md)。
-* **密钥连接器**：链接 SSO 登录到您的自托管解密密钥服务器。使用此选项，组织成员无需使用其主密码来解密密码库数据。相反，[Key Connector](../../self-hosting/key-connector/about-key-connector.md) 将获取安全地存储在您拥有和管理的数据库中的解密密钥。
+* **Key Connector**：链接 SSO 登录到您的自托管解密密钥服务器。使用此选项，组织成员无需使用其主密码来解密密码库数据。相反，[Key Connector](../../self-hosting/key-connector/about-key-connector.md) 将获取安全地存储在您拥有和管理的数据库中的解密密钥。
 
 {% hint style="success" %}
 由于存储解密密钥的敏感性，**Key Connector** 选项默认被禁用，目前仅可用于组织自托管 Bitwarden。

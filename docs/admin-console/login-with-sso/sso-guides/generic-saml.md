@@ -1,4 +1,4 @@
-# SAML 2.0 配置
+# 通用 SAML
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/configure-sso-saml/)
@@ -6,7 +6,7 @@
 
 ## 第 1 步：设置组织标识符 <a href="#step-1-set-an-organization-identifier" id="step-1-set-an-organization-identifier"></a>
 
-[使用 SSO 验证身份](../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)的用户将被要求输入一个**组织标识符**，该标识符表明要验证的组织（以及 SSO 集成）。要设置唯一的组织标识符：
+[使用 SSO 验证身份](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)的用户将被要求输入一个**组织标识符**，该标识符表明要验证的组织（以及 SSO 集成）。要设置唯一的组织标识符：
 
 1、登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
 
@@ -36,38 +36,38 @@
 SAML 2.0 配置
 {% endembed %}
 
-2、从**类型**下拉菜单中，选择 **SAML 2.0** 选项。如果您打算改用 OIDC，请切换到 [OIDC 配置指南](oidc-configuration.md)。
+2、从**类型**下拉菜单中，选择 **SAML 2.0** 选项。如果您打算改用 OIDC，请切换到 [OIDC 配置指南](generic-oidc.md)。
 
 如果您愿意，可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做将从 SP 实体 ID 值中删除您的组织 ID，但在几乎所有情况下，建议保留此选项。
 
 {% hint style="success" %}
-还有其他**成员解密选项**。了解[受信任的设备 SSO](trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../self-hosting/key-connector/about-key-connector.md) 使用入门。
+还有其他**成员解密选项**。了解[受信任的设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 使用入门。
 {% endhint %}
 
 ## 第 3 步：配置 <a href="#step-3-configuration" id="step-3-configuration"></a>
 
 从这里开始，实施将因提供程序而异。跳转到我们的特定**实施指南**之一，以帮助完成配置过程：
 
-| 提供程序         | 指南                                                                             |
-| ------------ | ------------------------------------------------------------------------------ |
-| AD FS        | [AD FS 实施指南](implementation-guides/adfs-saml-implementation.md)                |
-| Auth0        | [Auth0 实施指南](implementation-guides/auth0-saml-configuration.md)                |
-| AWS          | [AWS 实施指南](implementation-guides/aws-saml-implementation.md)                   |
-| Azure        | [Azure 实施指南](implementation-guides/microsoft-entra-id-saml-implementation.md)  |
-| Duo          | [Duo 实施指南](implementation-guides/duo-saml-implementation.md)                   |
-| Google       | [Google 实施指南](implementation-guides/google-saml-implementation.md)             |
-| JumpCloud    | [JumpCloud 实施指南](implementation-guides/jumpcloud-saml-implementation.md)       |
-| Keycloak     | [Keycloak 实施指南](implementation-guides/keycloak-saml-implementation-1.md)       |
-| Okta         | [Okta 实施指南](implementation-guides/okta-saml-implementation.md)                 |
-| OneLogin     | [OneLogin 实施指南](implementation-guides/onelogin-saml-implementation.md)         |
-| PingFederate | [PingFederate 实施指南](implementation-guides/pingfederate-saml-implementation.md) |
+| 提供程序         | 指南                                                       |
+| ------------ | -------------------------------------------------------- |
+| AD FS        | [AD FS 实施指南](adfs-saml-implementation.md)                |
+| Auth0        | [Auth0 实施指南](auth0-saml-configuration.md)                |
+| AWS          | [AWS 实施指南](aws-saml-implementation.md)                   |
+| Azure        | [Azure 实施指南](microsoft-entra-id-saml-implementation.md)  |
+| Duo          | [Duo 实施指南](duo-saml-implementation.md)                   |
+| Google       | [Google 实施指南](google-saml-implementation.md)             |
+| JumpCloud    | [JumpCloud 实施指南](jumpcloud-saml-implementation.md)       |
+| Keycloak     | [Keycloak 实施指南](keycloak-saml-implementation-1.md)       |
+| Okta         | [Okta 实施指南](okta-saml-implementation.md)                 |
+| OneLogin     | [OneLogin 实施指南](onelogin-saml-implementation.md)         |
+| PingFederate | [PingFederate 实施指南](pingfederate-saml-implementation.md) |
 
 ### 配置参考资料 <a href="#configuration-reference-materials" id="configuration-reference-materials"></a>
 
 以下部分将定义在单点登录配置界面的字段，其与您要集成的 IdP 无关。必须配置的字段将被标记（**必填**）。
 
 {% hint style="success" %}
-**除非您对 SAML 2.0 非常熟悉**，否则我们建议使用[上述实施指南](saml-2.0-configuration.md#step-3-configuration)之一，而不是以下的通用素材。
+**除非您对 SAML 2.0 非常熟悉**，否则我们建议使用[上述实施指南](generic-saml.md#step-3-configuration)之一，而不是以下的通用素材。
 {% endhint %}
 
 单点登录界面将配置分为两个部分：

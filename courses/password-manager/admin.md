@@ -90,7 +90,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 * 设置[策略](../../docs/admin-console/oversight-visibility/enterprise-policies.md)以执行用户安全规则，例如强制使用两步登录。
 * 审计[组织成员拥有哪些凭据的访问权限](../../docs/password-manager/your-vault/security-tools/vault-health-reports.md#member-access)。
 * 将 Bitwarden 与现有的 [SSO](../../docs/admin-console/login-with-sso/about-login-with-sso.md) 工作流程整合。
-* [验证您的组织的域名](../../docs/admin-console/login-with-sso/claimed-domains.md)，实现无缝登录体验。
+* [验证您的组织的域名](../../docs/admin-console/oversight-visibility/claimed-domains/claimed-domains.md)，实现无缝登录体验。
 * 为成员[设置](../../docs/admin-console/login-with-sso/trusted-devices/setup-sso-with-trusted-devices.md)或[批准](../../docs/admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)设备信任要求的系统。
 * 将 Bitwarden 与现有的 SIEM 工具（如 [Microsoft Sentinel](../../docs/admin-console/oversight-visibility/siem-integrations/microsoft-sentinel-siem.md)）集成。
 
@@ -108,7 +108,7 @@ Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免�
 
 {% embed url="https://vimeo.com/808093301?fl=pl&fe=sh" %}
 
-[此处](../../docs/admin-console/login-with-sso/claimed-domains.md)了解更多有关域验证的信息。
+[此处](../../docs/admin-console/oversight-visibility/claimed-domains/claimed-domains.md)了解更多有关域验证的信息。
 
 ### 兑换您的免费家庭版方案 <a href="#redeeming-your-free-families-plan" id="redeeming-your-free-families-plan"></a>
 
