@@ -45,7 +45,7 @@
 
 如果您要将组织迁移到自托管服务器，请继续执行以下步骤：
 
-1、**（仅企业组织）**&#x91CD;新实施您的[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)规范和/或配置 [SSO 登录](../../admin-console/login-with-sso/about-login-with-sso.md)。
+1、**（仅企业组织）**&#x91CD;新实施您的[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)规范和/或配置 [SSO 登录](../../admin-console/login-with-sso/about-sso.md)。
 
 2、在自托管网页密码库中手动[重新创建用户群组](../../admin-console/manage-members/groups.md#create-a-group)，并将它们分配给适当的集合。
 
@@ -81,7 +81,7 @@
 
 如果您要将组织迁移到云端，请继续执行以下步骤：
 
-1. **（仅企业组织）**&#x91CD;新实施您的[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)规范和/或配置 [SSO 登录](../../admin-console/login-with-sso/about-login-with-sso.md)。
+1. **（仅企业组织）**&#x91CD;新实施您的[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)规范和/或配置 [SSO 登录](../../admin-console/login-with-sso/about-sso.md)。
 2. 在云端手动[重新创建用户群组](../../admin-console/manage-members/groups.md#create-a-group)，并将它们分配给适当的集合。
 3. 手动或使用[目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md)[邀请用户加入您的组织](../../admin-console/manage-members/user-management.md#invite)。
 {% endtab %}

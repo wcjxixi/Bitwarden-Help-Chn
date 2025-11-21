@@ -136,7 +136,7 @@ bw login --apikey
 
 ### 使用 SSO <a href="#using-sso" id="using-sso"></a>
 
-[SSO](../../../admin-console/login-with-sso/about-login-with-sso.md) 方式的登录**建议用于组织要求 SSO 身份验证的场景**。要使用 SSO 方式登录：
+[SSO](../../../admin-console/login-with-sso/about-sso.md) 方式的登录**建议用于组织要求 SSO 身份验证的场景**。要使用 SSO 方式登录：
 
 ```batch
 bw login --sso

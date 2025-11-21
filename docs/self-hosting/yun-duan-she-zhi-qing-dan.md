@@ -45,7 +45,7 @@
 
 **支持链接：**
 
-* [SSO 集成](../admin-console/login-with-sso/about-login-with-sso.md)
+* [SSO 集成](../admin-console/login-with-sso/about-sso.md)
 * [SCIM](../admin-console/manage-members/scim/about-scim.md)
 * [目录连接器](../admin-console/manage-members/directory-connector/directory-connector-cli.md)
 

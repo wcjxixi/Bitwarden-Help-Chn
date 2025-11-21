@@ -82,7 +82,7 @@
 企业策略仅适用于**企业组织。**
 {% endhint %}
 
-4、**设置 SSO 登录**。如果您的业务单元使用单点登录 (SSO) 与其他应用程序进行身份验证，请[将 Bitwarden 与他们的 IdP 连接](../../admin-console/login-with-sso/about-login-with-sso.md) ，以使用最终用户的 SSO 凭据与 Bitwarden 进行身份验证。
+4、**设置 SSO 登录**。如果您的业务单元使用单点登录 (SSO) 与其他应用程序进行身份验证，请[将 Bitwarden 与他们的 IdP 连接](../../admin-console/login-with-sso/about-sso.md) ，以使用最终用户的 SSO 凭据与 Bitwarden 进行身份验证。
 
 5、**创建用户群组**。对于团队和企业组织， [创建一组群组](../../admin-console/manage-members/groups.md#create-a-group)以进行可扩展的权限分配。当您开始添加用户时，将他们添加到群组中，以使每个用户自动继承群组配置的权限（例如，访问哪些集合）。一种常见的群组 - 集合形式是创建**按部门的群组**和**按功能的集合**，例如：
 

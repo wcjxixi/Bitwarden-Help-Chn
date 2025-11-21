@@ -57,4 +57,4 @@ Bitwarden 提供多种免费的两步登录方式，包括：
 
 ## 单点登录 <a href="#single-sign-on" id="single-sign-on"></a>
 
-如果您的组织使用 [SSO 登录](../../admin-console/login-with-sso/about-login-with-sso.md)，您还可以[使用联合 SSO 凭据](../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)访问您的 Bitwarden 网页 App。
+如果您的组织使用 [SSO 登录](../../admin-console/login-with-sso/about-sso.md)，您还可以[使用联合 SSO 凭据](../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)访问您的 Bitwarden 网页 App。

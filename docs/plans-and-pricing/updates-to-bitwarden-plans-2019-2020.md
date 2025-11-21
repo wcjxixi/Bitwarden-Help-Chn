@@ -77,7 +77,7 @@
 | ---------------------------------------------------------------------------------------------------------------- | -------------- | -------------- |
 | <p>预先存在的企业功能，包括：<br><br>- 所有用户的高级功能<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 目录连接器<br>- 企业策略</p>                     | **✔︎**         | **✔︎**         |
 | [企业版家庭](password-manager/families-for-enterprise.md)                                                             | **✔︎**         | **✔︎**         |
-| [SSO 登录](../admin-console/login-with-sso/about-login-with-sso.md)                                                | -              | **✔︎**         |
+| [SSO 登录](../admin-console/login-with-sso/about-sso.md)                                                           | -              | **✔︎**         |
 | <p><a href="../self-hosting/key-connector/about-key-connector.md">Key Connector</a><br>（<em>适用于客户管理的加密</em>）</p> | -              | **✔︎**         |
 | [账户恢复管理](../admin-console/manage-members/account-recovery/about-account-recovery.md)                             | -              | **✔︎**         |
 | 价格                                                                                                               | $3 每用户每月（按年付费） | $5 每用户每月（按年付费） |

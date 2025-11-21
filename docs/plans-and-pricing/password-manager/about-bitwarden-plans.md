@@ -116,7 +116,7 @@ Bitwarden 商业方案旨在满足小型团队、成长型公司和大型企业�
 | [API 访问](../../admin-console/bitwarden-public-api.md)                                        | **✔︎**                             | **✔︎**                            |
 | [目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md) | **✔︎**                             | **✔︎**                            |
 | [Secrets Manager ](../../secrets-manager/secrets-manager-overview.md)附加组件资格                  | **✔︎**                             | **✔︎**                            |
-| [SSO 登录](../../admin-console/login-with-sso/about-login-with-sso.md)                         | —                                  | **✔︎**                            |
+| [SSO 登录](../../admin-console/login-with-sso/about-sso.md)                                    | —                                  | **✔︎**                            |
 | [Key Connector](../../self-hosting/key-connector/about-key-connector.md)                     | —                                  | **✔︎**                            |
 | [企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)                      | —                                  | **✔︎**                            |
 | [账户恢复](../../admin-console/manage-members/account-recovery/about-account-recovery.md)        | —                                  | **✔︎**                            |

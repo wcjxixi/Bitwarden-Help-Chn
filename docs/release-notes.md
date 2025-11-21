@@ -1202,7 +1202,7 @@ Bitwarden 很自豪地宣布在 12 月的版本中增加了新的企业功能，
 很高兴 Bitwarden 团队发布了一系列新功能和更新，以继续我们让个人和企业的密码管理变得简单易用的使命：
 
 {% hint style="info" %}
-**弃用公告**：业务门户已弃用。企业组织可以通过组织**管理**选项卡配置[策略](admin-console/oversight-visibility/enterprise-policies.md)和 [SSO 登录](admin-console/login-with-sso/about-login-with-sso.md)。
+**弃用公告**：业务门户已弃用。企业组织可以通过组织**管理**选项卡配置[策略](admin-console/oversight-visibility/enterprise-policies.md)和 [SSO 登录](admin-console/login-with-sso/about-sso.md)。
 {% endhint %}
 
 * **密码库超时策略**：密码库超时策略将为您组织的所有成员应用最长的密码库超时持续时间（参阅[这里](admin-console/oversight-visibility/enterprise-policies.md#vault-timeout)）。

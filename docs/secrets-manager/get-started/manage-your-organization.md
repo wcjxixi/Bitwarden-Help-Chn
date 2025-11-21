@@ -89,7 +89,7 @@ Bitwarden 服务器提供一个 SCIM 端点，该端点具有一个有效的 SCI
 
 ## 单点登录 <a href="#single-sign-on" id="single-sign-on"></a>
 
-SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，企业组织可以利用其现有的身份提供程序使用 SAML 2.0 或 Open ID Connect (OIDC) 协议对 Bitwarden 用户进行身份验证。[了解如何开始](../../admin-console/login-with-sso/about-login-with-sso.md)。
+SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，企业组织可以利用其现有的身份提供程序使用 SAML 2.0 或 Open ID Connect (OIDC) 协议对 Bitwarden 用户进行身份验证。[了解如何开始](../../admin-console/login-with-sso/about-sso.md)。
 
 ## 账户恢复管理 <a href="#https-bitwarden.com-help-manage-your-secrets-org-account-recovery-administration" id="https-bitwarden.com-help-manage-your-secrets-org-account-recovery-administration"></a>
 

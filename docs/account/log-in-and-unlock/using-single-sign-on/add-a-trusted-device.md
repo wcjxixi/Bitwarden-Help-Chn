@@ -108,7 +108,7 @@
 
 ## 添加第一台受信任设备 <a href="#adding-your-first-trusted-device" id="adding-your-first-trusted-device"></a>
 
-对于通过[使用 SSO 登录](../../../admin-console/login-with-sso/about-login-with-sso.md)即时 (JIT) 配置而被邀请的用户，用于访问 Bitwarden 的初始客户端将成为他们的第一台受信任设备。如果访问的初始客户端是 Bitwarden 桌面 App 或移动 App，则该设备可用于批准其他设备。
+对于通过[使用 SSO 登录](../../../admin-console/login-with-sso/about-sso.md)即时 (JIT) 配置而被邀请的用户，用于访问 Bitwarden 的初始客户端将成为他们的第一台受信任设备。如果访问的初始客户端是 Bitwarden 桌面 App 或移动 App，则该设备可用于批准其他设备。
 
 要使桌面 App 或移动 App 成为第一个受信任设备，用户不应使用组织邀请链接，而是打开桌面 App 或移动 App，选择**企业单点登录**选项，以开始 JIT 流程。
 

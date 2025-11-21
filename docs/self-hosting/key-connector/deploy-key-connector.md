@@ -22,7 +22,7 @@ Bitwarden 支持部署一个 Key Connector，供一个组织用于自托管实�
 
 * [拥有一个企业组织](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)
 * [拥有一个自托管的 Bitwarden 服务器](../)
-* [拥有一个活跃的 SSO 实施](../../admin-console/login-with-sso/about-login-with-sso.md)
+* [拥有一个活跃的 SSO 实施](../../admin-console/login-with-sso/about-sso.md)
 * [激活单一组织和单点登录策略](../../admin-console/oversight-visibility/enterprise-policies.md)
 
 如果您的组织满足或能够满足这些要求，包括拥有可以支持密钥服务器管理的团队和基础设施，请[联系我们](https://bitwarden.com/contact)，我们将为您激活 Key Connector。
@@ -355,7 +355,7 @@ keyConnectorSettings__certificate__filesystemPath=/etc/bitwarden/key-connector/c
 5、导航至**设置** → **单点登录**界面。
 
 {% hint style="success" %}
-接下来的几个步骤假设您已经拥有一个使用 [SAML 2.0](../../admin-console/login-with-sso/sso-guides/generic-saml.md) 或 [OIDC](../../admin-console/login-with-sso/sso-guides/generic-oidc.md) 的、激活了 [SSO 登录](../../admin-console/login-with-sso/about-login-with-sso.md)的实施。**如果还没有**，请在继续之前先实施和测试 SSO 登录。
+接下来的几个步骤假设您已经拥有一个使用 [SAML 2.0](../../admin-console/login-with-sso/sso-guides/generic-saml.md) 或 [OIDC](../../admin-console/login-with-sso/sso-guides/generic-oidc.md) 的、激活了 [SSO 登录](../../admin-console/login-with-sso/about-sso.md)的实施。**如果还没有**，请在继续之前先实施和测试 SSO 登录。
 {% endhint %}
 
 6、在**成员解密选项**部分，选择 **Key Connector**。

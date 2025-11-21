@@ -12,7 +12,7 @@ Key Connector 是一个用于促进客户管理的加密 (CMS) 的自托管应�
 
 > **\[译者注]**：CMS：Customer-Managed Encryption，即客户管理的加密。客户完全控制加密密钥，而不是由服务提供商管理。
 
-Key Connector 在与现有服务相同的网络上作为 docker 容器运行，并且可以与 [SSO 登录](../../admin-console/login-with-sso/about-login-with-sso.md)一起使用为组织提供加密密钥，以作为使用主密码进行密码库解密的一种替代方式（[了解更多](about-key-connector.md#why-use-key-connector)）。Bitwarden 支持部署 Key Connector，以供组织在自托管实例中使用。
+Key Connector 在与现有服务相同的网络上作为 docker 容器运行，并且可以与 [SSO 登录](../../admin-console/login-with-sso/about-sso.md)一起使用为组织提供加密密钥，以作为使用主密码进行密码库解密的一种替代方式（[了解更多](about-key-connector.md#why-use-key-connector)）。Bitwarden 支持部署 Key Connector，以供组织在自托管实例中使用。
 
 Key Connector 需要连接到**存储了已加密用户密钥的数据库**和**用于加密和解密已存储的用户密钥的 RSA 密钥对**。Key Connector 可以使用各类数据库提供程序（例如 MSSQL、PostgreSQL、MySQL）和密钥对存储提供程序（例如 Hashicorp Vault、Cloud KMS 提供程序、本地 HSM 设备）来进行[配置](deploy-key-connector.md)，以满足您公司的基础架构要求。
 
@@ -68,7 +68,7 @@ Key Connector 要求用户[移除他们的主密码](about-key-connector.md#impa
 
 * [拥有一个企业组织](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)
 * [拥有一个自托管的 Bitwarden 服务器](../)
-* [拥有一个活跃的 SSO 实施](../../admin-console/login-with-sso/about-login-with-sso.md)
+* [拥有一个活跃的 SSO 实施](../../admin-console/login-with-sso/about-sso.md)
 * [激活单一组织和单点登录策略](../../admin-console/oversight-visibility/enterprise-policies.md)
 
 如果您的组织满足或能够满足这些要求，包括拥有可以支持密钥服务器管理的团队和基础设施，请[联系我们](https://bitwarden.com/contact)，我们将为您激活 Key Connector。

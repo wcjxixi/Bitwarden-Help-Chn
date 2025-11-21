@@ -55,4 +55,4 @@
 
 * [添加用户到您的组织](../admin-console/manage-members/user-management.md)
 * [创建一个集合](../admin-console/manage-shared-items/collections/about-collections.md#create-a-collection)
-* 设置 [SSO 登录](../admin-console/login-with-sso/about-login-with-sso.md)
+* 设置 [SSO 登录](../admin-console/login-with-sso/about-sso.md)
