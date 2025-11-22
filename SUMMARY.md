@@ -48,7 +48,7 @@
     * [Password Manager 桌面 App](docs/password-manager/getting-started/getting-started-desktop.md)
   * [您的密码库](docs/password-manager/your-vault/README.md)
     * [密码库项目](docs/password-manager/your-vault/vault-items/README.md)
-      * [=密码库项目](docs/password-manager/your-vault/vault-items/vault-items.md)
+      * [密码库项目](docs/password-manager/your-vault/vault-items/vault-items.md)
       * [文件附件](docs/password-manager/your-vault/vault-items/file-attachments.md)
       * [自定义字段](docs/password-manager/your-vault/vault-items/custom-fields.md)
     * [密码库导航](docs/password-manager/your-vault/vault-navigation/README.md)
