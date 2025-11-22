@@ -1,4 +1,4 @@
-# JumpCloud SAML 实施
+# JumpCloud SAML
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-jumpcloud/)
@@ -139,7 +139,7 @@ SAML 2.0 配置
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
-根据在 JumpCloud 门户网站[设置期间](jumpcloud-saml-implementation.md#create-a-jumpcloud-saml-app)所选择的选项配置以下字段：
+根据在 JumpCloud 门户网站[设置期间](jumpcloud-saml.md#create-a-jumpcloud-saml-app)所选择的选项配置以下字段：
 
 | 字段                                 | 描述                                                                                         |
 | ---------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -156,18 +156,18 @@ SAML 2.0 配置
 
 身份提供程序配置通常需要你返回 JumpCloud 门户网站以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                                                 |
-| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                                 |  输入您的 JumpCloud **IdP Entity ID**，这可以从 JumpCloud [单点登录（SSO）配置部分](jumpcloud-saml-implementation.md#single-sign-on-configuration)来获取。                                                                                                |
-| Binding Type                              | 设置为 **Redirect**。                                                                                                                                                                                                                  |
-| Single Sign On Service URL                | 输入您的 JumpCloud **IdP URL**，这可以从 JumpCloud [单点登录（SSO）配置部分](jumpcloud-saml-implementation.md#single-sign-on-configuration)来获取。                                                                                                       |
-| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                                 |
-| Artifact Resolution Service URL           | 对于 JumpCloud 实现，您可以将此字段留空。                                                                                                                                                                                                         |
-| X509 Public Certificate                   | <p>黏贴<a href="jumpcloud-saml-implementation.md#download-the-certificate">已获取的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 如果您创建了自定义 SAML 应用程序，请将其设置为您选择的签名算法。否则，保留为 `rsa-sha256`。                                                                                                                                                                            |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                               |
-| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                                 |
-| Want Authentication Requests Signed       | JumpCloud 是否要求 SAML 请求被签名。                                                                                                                                                                                                         |
+| 字段                                        | 描述                                                                                                                                                                                                                  |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                                 |  输入您的 JumpCloud **IdP Entity ID**，这可以从 JumpCloud [单点登录（SSO）配置部分](jumpcloud-saml.md#single-sign-on-configuration)来获取。                                                                                                |
+| Binding Type                              | 设置为 **Redirect**。                                                                                                                                                                                                   |
+| Single Sign On Service URL                | 输入您的 JumpCloud **IdP URL**，这可以从 JumpCloud [单点登录（SSO）配置部分](jumpcloud-saml.md#single-sign-on-configuration)来获取。                                                                                                       |
+| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                  |
+| Artifact Resolution Service URL           | 对于 JumpCloud 实现，您可以将此字段留空。                                                                                                                                                                                          |
+| X509 Public Certificate                   | <p>黏贴<a href="jumpcloud-saml.md#download-the-certificate">已获取的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm                | 如果您创建了自定义 SAML 应用程序，请将其设置为您选择的签名算法。否则，保留为 `rsa-sha256`。                                                                                                                                                             |
+| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                |
+| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                  |
+| Want Authentication Requests Signed       | JumpCloud 是否要求 SAML 请求被签名。                                                                                                                                                                                          |
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。

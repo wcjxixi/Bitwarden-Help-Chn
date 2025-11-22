@@ -1,4 +1,4 @@
-# ADFS SAML 实施
+# ADFS SAML
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-adfs/)
@@ -110,7 +110,7 @@ ADFS 规则 3
 获取令牌签名证书
 {% endembed %}
 
-在[后面的步骤中](adfs-saml-implementation.md#identity-provider-configuration)您将需要此证书。
+在[后面的步骤中](adfs-saml.md#identity-provider-configuration)您将需要此证书。
 
 ### 获取联合服务标识符 <a href="#get-federation-service-identifier" id="get-federation-service-identifier"></a>
 
@@ -120,7 +120,7 @@ ADFS 规则 3
 获取联合服务标识符
 {% endembed %}
 
-在[后面的步骤中](adfs-saml-implementation.md#identity-provider-configuration)您将需要此标识符。
+在[后面的步骤中](adfs-saml.md#identity-provider-configuration)您将需要此标识符。
 
 ## 回到网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
 
@@ -135,14 +135,14 @@ ADFS 规则 3
 
 在服务提供程序配置部分，配置以下字段：
 
-| 字段                                 | 描述                                                                                                                 |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Name ID Format                     | 选择构建[声明颁发规则](adfs-saml-implementation.md#edit-claim-issuance-rules)时选择的 **Outgoing Name ID Format**（请参阅**规则 3**）。  |
-| Outbound Signing Algorithm         | Bitwarden 用来签署 SAML 请求的算法。                                                                                         |
-| Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                                                  |
-| Minimum Incoming Signing Algorithm | 默认，AD FS 将使用 **SHA-256** 签名。从下拉列表中选择 SHA-256，除非您已[将 AD FS 配置为使用不同的算法](adfs-saml-implementation.md#hash-algorithm)。 |
-| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。                                                                                         |
-| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                         |
+| 字段                                 | 描述                                                                                                  |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Name ID Format                     | 选择构建[声明颁发规则](adfs-saml.md#edit-claim-issuance-rules)时选择的 **Outgoing Name ID Format**（请参阅**规则 3**）。  |
+| Outbound Signing Algorithm         | Bitwarden 用来签署 SAML 请求的算法。                                                                          |
+| Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                                   |
+| Minimum Incoming Signing Algorithm | 默认，AD FS 将使用 **SHA-256** 签名。从下拉列表中选择 SHA-256，除非您已[将 AD FS 配置为使用不同的算法](adfs-saml.md#hash-algorithm)。 |
+| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。                                                                          |
+| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。          |
 
 完成服务提供程序配置部分后，**Save**（保存）您的工作。
 
@@ -152,12 +152,12 @@ ADFS 规则 3
 
 | 字段                                  | 描述                                                                                                                                                         |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                           | 输入获取到的 [Federation Service Identifier](adfs-saml-implementation.md#get-federation-service-identifier)（联合服务标识符）。请注意，这**可能不使用 HTTPS**。                       |
-| Binding Type                        | 默认，AD FS 使用 HTTP POST 端点绑定。除非您已[将 AD FS 配置为使用不同的方法](adfs-saml-implementation.md#endpoint-binding)，否则请选择 **HTTP POST**。                                     |
+| Entity ID                           | 输入获取到的 [Federation Service Identifier](adfs-saml.md#get-federation-service-identifier)（联合服务标识符）。请注意，这**可能不使用 HTTPS**。                                      |
+| Binding Type                        | 默认，AD FS 使用 HTTP POST 端点绑定。除非您已[将 AD FS 配置为使用不同的方法](adfs-saml.md#endpoint-binding)，否则请选择 **HTTP POST**。                                                    |
 | Single Sign On Service URL          | 输入 SSO 服务端点。该值可以从 AD FS 管理器的 **Service** → **Endpoints** 选项卡中获取，默认情况下应以 `http://` 开头并以 `/adfs/services/ls` 结尾。                                             |
-| Artifact Resolution Service URL     | 仅当您选择 **Artifact** 作为您的信赖方信任的[端点绑定方法](adfs-saml-implementation.md#endpoint-binding)时才使用此字段。                                                                |
+| Artifact Resolution Service URL     | 仅当您选择 **Artifact** 作为您的信赖方信任的[端点绑定方法](adfs-saml.md#endpoint-binding)时才使用此字段。                                                                               |
 | X509 Public Certificate             | <p>黏贴已下载的证书，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm          | 默认情，AD FS 将使用 SHA-256 签名。从下拉列表中选择 **SHA-256**，除非您已[将 AD FS 配置为使用不同的算法](adfs-saml-implementation.md#hash-algorithm)。                                        |
+| Outbound Signing Algorithm          | 默认情，AD FS 将使用 SHA-256 签名。从下拉列表中选择 **SHA-256**，除非您已[将 AD FS 配置为使用不同的算法](adfs-saml.md#hash-algorithm)。                                                       |
 | Disable Outbound Logout Requests    | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发。                                                                                                                          |
 | Want Authentication Requests Signed | AD FS 是否要求 SAML 请求被签名。                                                                                                                                     |
 

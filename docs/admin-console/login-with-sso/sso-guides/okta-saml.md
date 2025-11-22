@@ -1,4 +1,4 @@
-# Okta SAML 实施
+# Okta SAML
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-okta/)
@@ -133,16 +133,16 @@ IdP 值
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
-根据在 Okta 管理门户[设置期间](okta-saml-implementation.md#create-an-okta-app)所选择的选项配置以下字段：
+根据在 Okta 管理门户[设置期间](okta-saml.md#create-an-okta-app)所选择的选项配置以下字段：
 
-| 字段                                 | 描述                                                                                                        |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Name ID Format                     | 将其设置为[在 Okta 中指定的](okta-saml-implementation.md#configure-saml) NameID 格式。否则，请保留为 **Unspecified**。         |
-| Outbound Signing Algorithm         | Bitwarden 用于签名 SAML 请求的算法。                                                                                |
-| Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                                         |
-| Minimum Incoming Signing Algorithm | 将其设置为[在 Okta 中指定的](okta-saml-implementation.md#configure-saml) 签名算法。                                      |
-| Want Assertions Signed             | 如果您[在 Okta 中](okta-saml-implementation.md#advanced-settings)将 Assertion Signature 字段设置为 **Signed**，请选中此框。 |
-| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                |
+| 字段                                 | 描述                                                                                         |
+| ---------------------------------- | ------------------------------------------------------------------------------------------ |
+| Name ID Format                     | 将其设置为[在 Okta 中指定的](okta-saml.md#configure-saml) NameID 格式。否则，请保留为 **Unspecified**。         |
+| Outbound Signing Algorithm         | Bitwarden 用于签名 SAML 请求的算法。                                                                 |
+| Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                          |
+| Minimum Incoming Signing Algorithm | 将其设置为[在 Okta 中指定的](okta-saml.md#configure-saml) 签名算法。                                      |
+| Want Assertions Signed             | 如果您[在 Okta 中](okta-saml.md#advanced-settings)将 Assertion Signature 字段设置为 **Signed**，请选中此框。 |
+| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。 |
 
 完成服务提供程序配置部分后，**Save**（保存）您的工作。
 
@@ -150,18 +150,18 @@ IdP 值
 
 身份提供程序配置通常需要你返回 Okta 管理门户以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                                  |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                                 | 输入您的 **Identity Provider Issuer**，这可以从 Okta 的 [**Sign On** 设置](okta-saml-implementation.md#get-idp-values)界面选择 **View Setup Instructions** 按钮来获取。                                                                   |
-| Binding Type                              | 设置为 **Redirect**。Okta 目前不支持 HTTP POST。                                                                                                                                                                              |
-| Single Sign On Service URL                | 输入您的  **Identity Provider Single Sign-On URL**，这可以从 Okta 的 [**Sign On** 设置](okta-saml-implementation.md#get-idp-values)界面获取。                                                                                        |
-| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。但是您可以根据需要预先配置它。                                                                                                                                                                   |
-| Artifact Resolution Service URL           | 对于 Okta 实现，您可以将此字段留空。                                                                                                                                                                                               |
-| X509 Public Certificate                   | <p>黏贴<a href="okta-saml-implementation.md#get-idp-values">已下载的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 选择[在 Okta 应用程序配置期间](okta-saml-implementation.md#advanced-settings)选择的签名算法。如果您没有更改签名算法，请将其保留为默认 (`rsa-sha256`)。                                                                                                      |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                |
-| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                  |
-| Want Authentication Requests Signed       | Okta 是否要求 SAML 请求被签名。                                                                                                                                                                                               |
+| 字段                                        | 描述                                                                                                                                                                                                   |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                                 | 输入您的 **Identity Provider Issuer**，这可以从 Okta 的 [**Sign On** 设置](okta-saml.md#get-idp-values)界面选择 **View Setup Instructions** 按钮来获取。                                                                   |
+| Binding Type                              | 设置为 **Redirect**。Okta 目前不支持 HTTP POST。                                                                                                                                                               |
+| Single Sign On Service URL                | 输入您的  **Identity Provider Single Sign-On URL**，这可以从 Okta 的 [**Sign On** 设置](okta-saml.md#get-idp-values)界面获取。                                                                                        |
+| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。但是您可以根据需要预先配置它。                                                                                                                                                    |
+| Artifact Resolution Service URL           | 对于 Okta 实现，您可以将此字段留空。                                                                                                                                                                                |
+| X509 Public Certificate                   | <p>黏贴<a href="okta-saml.md#get-idp-values">已下载的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm                | 选择[在 Okta 应用程序配置期间](okta-saml.md#advanced-settings)选择的签名算法。如果您没有更改签名算法，请将其保留为默认 (`rsa-sha256`)。                                                                                                      |
+| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                 |
+| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                   |
+| Want Authentication Requests Signed       | Okta 是否要求 SAML 请求被签名。                                                                                                                                                                                |
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。

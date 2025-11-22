@@ -1,10 +1,10 @@
-# ADFS OIDC 实施
+# ADFS OIDC
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/adfs-oidc-implementation/)
 {% endhint %}
 
-本文是**专门针对 Active Directory Federation Services (AD FS)** 用于配置 OpenID Connect (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](generic-oidc.md)或 [ADFS SAML 实施](adfs-saml-implementation.md)。
+本文是**专门针对 Active Directory Federation Services (AD FS)** 用于配置 OpenID Connect (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](generic-oidc.md)或 [ADFS SAML 实施](adfs-saml.md)。
 
 配置需要在 Bitwarden 网页 App 和 AD FS 服务器管理器中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
@@ -102,8 +102,8 @@ AD FS 配置声明规则界面
 | 字段                                                      | 描述                                                                                                                                    |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | Authority                                               | 输入附加了 `/adfs` 的 AD FS 服务器的主机名称，例如 `https://adfs.mybusiness.com/adfs`。                                                                 |
-| Client ID                                               | 输入[获取到的 Client ID](pingfederate-saml-implementation.md#create-an-application-group)。                                                  |
-| Client Secret                                           | 输入[获取到的 Client Secret](pingfederate-saml-implementation.md#create-an-application-group)。                                              |
+| Client ID                                               | 输入[获取到的 Client ID](pingfederate-saml.md#create-an-application-group)。                                                                 |
+| Client Secret                                           | 输入[获取到的 Client Secret](pingfederate-saml.md#create-an-application-group)。                                                             |
 | Metadata Address                                        | 输入附加了 `/.well-known/openid-configuration` 的指定 **Authority** 值，例如 `https://adfs.mybusiness.com/adfs/.well-known/openid-configuration`。 |
 | OIDC Redirect Behavior                                  | 选择 **Redirect GET**。                                                                                                                  |
 | Get Claims From User Info Endpoint                      | 如果您在 SSO 期间收到 URL 太长错误 (HTTP 414)、截断的 URL 和/或失败，请启用此选项。                                                                               |

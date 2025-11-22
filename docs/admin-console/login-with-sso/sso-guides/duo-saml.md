@@ -1,4 +1,4 @@
-# Duo SAML 实施
+# Duo SAML
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-duo/)
@@ -62,7 +62,7 @@ SAML 2.0 配置
 
 ### 元数据 <a href="#metadata" id="metadata"></a>
 
-您不需要在 **Metadata** 部分编辑任何内容（请参阅上面的屏幕截图），但[稍后您需要引用这些值](duo-saml-implementation.md#identity-provider-configuration)：
+您不需要在 **Metadata** 部分编辑任何内容（请参阅上面的屏幕截图），但[稍后您需要引用这些值](duo-saml.md#identity-provider-configuration)：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3ob9jp2RJRhMaxOkRrWHKa/8a9b7c3cc3aa077e323353c8c0cab0ed/duo-urls.png?fm=webp&h=146&q=50&w=804" %}
 配置 URL
@@ -70,7 +70,7 @@ SAML 2.0 配置
 
 ### 下载 <a href="#downloads" id="downloads"></a>
 
-选择 **Download certificate** 按钮以下载您的 X.509 证书，因为您需要在[稍后的配置中](duo-saml-implementation.md#identity-provider-configuration)使用它。
+选择 **Download certificate** 按钮以下载您的 X.509 证书，因为您需要在[稍后的配置中](duo-saml.md#identity-provider-configuration)使用它。
 
 ### 服务提供程序 <a href="#service-provider" id="service-provider"></a>
 
@@ -107,16 +107,16 @@ SAML 2.0 配置
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
-根据在 Duo 管理门户中的[应用程序设置](duo-saml-implementation.md#protect-an-application)中所选择的选项配置以下字段：
+根据在 Duo 管理门户中的[应用程序设置](duo-saml.md#protect-an-application)中所选择的选项配置以下字段：
 
-| 字段                                 | 描述                                                                                                                                                                              |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name ID Format                     | [NameID Format](https://docs.oracle.com/cd/E19316-01/820-3886/ggvxx/index.html) 被用在 SAML 请求（`NameIDPolicy`）中。将此字段设置为[已选择的 NameID 格式](duo-saml-implementation.md#saml-response)。 |
-| Outbound Signing Algorithm         | 用于签名 SAML 请求的算法，默认为 `rsa-sha256`。                                                                                                                                               |
-| Signing Behavior                   | SAML 请求是否/何时将被签名。默认，Duo 不要求对请求进行签名。                                                                                                                                             |
-| Minimum Incoming Signing Algorithm | Bitwarden 在 SAML 响应中接受的最小签名算法。默认，Duo 使用 `rsa-sha256` 进行签名，因此请从下拉列表中选择该选项，除非您[选择了不同的选项](duo-saml-implementation.md#saml-response)。                                               |
-| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。如果您[选择了 **Sign assertion** 选项](duo-saml-implementation.md#saml-response)，请选中此框。                                                                       |
-| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                                                                                      |
+| 字段                                 | 描述                                                                                                                                                               |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name ID Format                     | [NameID Format](https://docs.oracle.com/cd/E19316-01/820-3886/ggvxx/index.html) 被用在 SAML 请求（`NameIDPolicy`）中。将此字段设置为[已选择的 NameID 格式](duo-saml.md#saml-response)。 |
+| Outbound Signing Algorithm         | 用于签名 SAML 请求的算法，默认为 `rsa-sha256`。                                                                                                                                |
+| Signing Behavior                   | SAML 请求是否/何时将被签名。默认，Duo 不要求对请求进行签名。                                                                                                                              |
+| Minimum Incoming Signing Algorithm | Bitwarden 在 SAML 响应中接受的最小签名算法。默认，Duo 使用 `rsa-sha256` 进行签名，因此请从下拉列表中选择该选项，除非您[选择了不同的选项](duo-saml.md#saml-response)。                                               |
+| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。如果您[选择了 **Sign assertion** 选项](duo-saml.md#saml-response)，请选中此框。                                                                       |
+| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                                                                       |
 
 完成服务提供程序配置部分后，**Save**（保存）您的工作。
 
@@ -124,18 +124,18 @@ SAML 2.0 配置
 
 身份提供程序配置通常需要你返回 Duo 管理门户以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                            |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                                 | 输入您的 Duo 应用程序的 **Domain** 值，这可以从 Duo 应用程序[元数据部分](duo-saml-implementation.md#metadata)获取到。                                                                                                                     |
-| Binding Type                              | 将此字段设置为 **HTTP post**。                                                                                                                                                                                        |
-| Single Sign On Service URL                | 输入您的 Duo 应用程序的 **Single Sign-On URL** 值，这可以从 Duo 应用程序[元数据部分](duo-saml-implementation.md#metadata)获取到。                                                                                                         |
-| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发，但是您可以根据需要将其预先配置为您的 Duo 应用程序的 **Single Log-Out URL** 值 。                                                                                                                     |
-| Artifact Resolution Service URL           | 对于 Duo 实现，您可以将此字段留空。                                                                                                                                                                                          |
-| X509 Public Certificate                   | <p>黏贴已下载的<a href="duo-saml-implementation.md#downloads">证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 将此字段设置为[已选择的 SAML 响应签名算法](duo-saml-implementation.md#saml-response)。                                                                                                                                          |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                          |
-| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                            |
-| Want Authentication Requests Signed       | Duo 是否要求 SAML 请求被签名。                                                                                                                                                                                          |
+| 字段                                        | 描述                                                                                                                                                                                             |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                                 | 输入您的 Duo 应用程序的 **Domain** 值，这可以从 Duo 应用程序[元数据部分](duo-saml.md#metadata)获取到。                                                                                                                     |
+| Binding Type                              | 将此字段设置为 **HTTP post**。                                                                                                                                                                         |
+| Single Sign On Service URL                | 输入您的 Duo 应用程序的 **Single Sign-On URL** 值，这可以从 Duo 应用程序[元数据部分](duo-saml.md#metadata)获取到。                                                                                                         |
+| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发，但是您可以根据需要将其预先配置为您的 Duo 应用程序的 **Single Log-Out URL** 值 。                                                                                                      |
+| Artifact Resolution Service URL           | 对于 Duo 实现，您可以将此字段留空。                                                                                                                                                                           |
+| X509 Public Certificate                   | <p>黏贴已下载的<a href="duo-saml.md#downloads">证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm                | 将此字段设置为[已选择的 SAML 响应签名算法](duo-saml.md#saml-response)。                                                                                                                                          |
+| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                           |
+| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                             |
+| Want Authentication Requests Signed       | Duo 是否要求 SAML 请求被签名。                                                                                                                                                                           |
 
 完成身份提供程序配置部分后，**Save**（保存）您的工作。
 

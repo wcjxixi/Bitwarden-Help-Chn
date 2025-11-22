@@ -46,10 +46,10 @@ SAML 2.0 配置
 
 从这一步开始，**实施将因提供程序的不同而不同**。跳转到我们的特定**实施指南**之一，以帮助您完成配置过程：
 
-| 提供程序  | 指南                                                      |
-| ----- | ------------------------------------------------------- |
-| Azure | [Azure 实施指南](microsoft-entra-id-oidc-implementation.md) |
-| Okta  | [Okta 实施指南](okta-oidc-implementation.md)                |
+| 提供程序  | 指南                                       |
+| ----- | ---------------------------------------- |
+| Azure | [Azure 实施指南](microsoft-entra-id-oidc.md) |
+| Okta  | [Okta 实施指南](okta-oidc.md)                |
 
 ### 配置参考资料 <a href="#configuration-reference-materials" id="configuration-reference-materials"></a>
 
@@ -64,8 +64,8 @@ SAML 2.0 配置
 | Callback Path                                           | （**自动生成**）用于验证自动重定向的 URL。对于云托管客户，其为 `https://sso.bitwarden.com/oidc-signin` 或 h`ttps://sso.bitwarden.eu/oidc-signin`。对于自托管实例，这取决于您[已配置的服务器 URL](../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain)，例如 `https://your.domain.com/sso/oidc-signin`。            |
 | Signed Out Callback Path                                | （**自动生成**）用于注销自动重定向的 URL。对于云托管客户，其始终为 `https://sso.bitwarden.com/oidc-signedout` 或 `https://sso.bitwarden.eu/oidc-signedout`。对于自托管实例，这取决于您[已配置的服务器 URL](../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain)，例如 `https://your.domain.com/sso/oidc-signedout`。 |
 | Authority                                               | （**必填**）您的授权服务器（"Authority"）的 URL，Bitwarden 将对其进行身份验证。例如 `https://your.domain.okta.com/oauth2/default` 或 `https://login.microsoft.com/<TENANT_ID>/v2.0`。                                                                                                                                                       |
-| Client ID                                               | （**必填**）用于 OIDC 客户端的标识符。此值通常特定于构建的 IdP 应用程序集成，例如 [Azure 应用程序注册](microsoft-entra-id-oidc-implementation.md)或 [Okta Web 应用程序](okta-oidc-implementation.md)。                                                                                                                                                      |
-| Client Secret                                           | （**必填**）与客户端 ID 结合使用以交换访问令牌的客户端密钥。此值通常特定于构建的 IdP 应用程序集成。例如 [Azure 应用程序注册](microsoft-entra-id-oidc-implementation.md)或 [Okta Web 应用程序](okta-oidc-implementation.md)。                                                                                                                                            |
+| Client ID                                               | （**必填**）用于 OIDC 客户端的标识符。此值通常特定于构建的 IdP 应用程序集成，例如 [Azure 应用程序注册](microsoft-entra-id-oidc.md)或 [Okta Web 应用程序](okta-oidc.md)。                                                                                                                                                                                    |
+| Client Secret                                           | （**必填**）与客户端 ID 结合使用以交换访问令牌的客户端密钥。此值通常特定于构建的 IdP 应用程序集成。例如 [Azure 应用程序注册](microsoft-entra-id-oidc.md)或 [Okta Web 应用程序](okta-oidc.md)。                                                                                                                                                                          |
 | Metadata Address                                        | （**如果 Authority 无效则必填**）一个元数据 URL，Bitwarden 可以在此访问作为 JSON 对象的授权服务器元数据。例如 `https://your.domain.okta.com/oauth2/default/.well-known/oauth-authorization-server`。                                                                                                                                                 |
 | OIDC Redirect Behavior                                  | （**必填**）IdP 用于响应来自 Bitwarden 的身份验证请求的方法。选项包括 **Form POST** 和 **Redirect GET**。                                                                                                                                                                                                                                 |
 | Get Claims From User Info Endpoint                      | 如果您在 SSO 期间收到 URL 太长错误（HTTP 414）、截断的 URL 和/或失败，请启用此选项。                                                                                                                                                                                                                                                         |

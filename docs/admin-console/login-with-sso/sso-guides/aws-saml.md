@@ -1,4 +1,4 @@
-# AWS SAML 实施
+# AWS SAML
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-aws/)
@@ -136,18 +136,18 @@ AWS SSO 元数据
 
 身份提供程序配置通常需要你返回 AWS 控制台以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                                   |
-| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                                 | 输入从 AWS 控制台的 [AWS SSO metadata](https://bitwarden.com/help/article/saml-aws/#aws-sso-metadata) 部分获取到的 **AWS SSO issuer URL**。                                                                                        |
-| Binding Type                              | 设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                                    |
-| Single Sign On Service URL                | 输入从 AWS 控制台的 [AWS SSO metadata](https://bitwarden.com/help/article/saml-aws/#aws-sso-metadata) 部分获取到的 **AWS SSO sign-in URL**。                                                                                       |
-| Single Log Out Service URL                | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发，但是您可以将其预先配置为 **AWS SSO sign-out URL**，从 AWS 控制台的 [AWS SSO metadata](https://bitwarden.com/help/article/saml-aws/#aws-sso-metadata) 部分获取。                                            |
-| Artifact Resolution Service URL           | 对于 AWS 实施，您可以将此字段保留为空。                                                                                                                                                                                               |
-| X509 Public Certificate                   | <p>黏贴<a href="aws-saml-implementation.md#aws-sso-metadata">已下载的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 默认，AWS SSO 将使用 SHA-256 签名。除非您进行了更改，否则请从下拉列表中选择 `sha256`。                                                                                                                                                             |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                 |
-| Disable Outbound Logout Requests          | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                    |
-| Want Authentication Requests Signed       | AWS SSO 是否要求 SAML 请求被签名。                                                                                                                                                                                             |
+| 字段                                        | 描述                                                                                                                                                                                                    |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                                 | 输入从 AWS 控制台的 [AWS SSO metadata](https://bitwarden.com/help/article/saml-aws/#aws-sso-metadata) 部分获取到的 **AWS SSO issuer URL**。                                                                         |
+| Binding Type                              | 设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                     |
+| Single Sign On Service URL                | 输入从 AWS 控制台的 [AWS SSO metadata](https://bitwarden.com/help/article/saml-aws/#aws-sso-metadata) 部分获取到的 **AWS SSO sign-in URL**。                                                                        |
+| Single Log Out Service URL                | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发，但是您可以将其预先配置为 **AWS SSO sign-out URL**，从 AWS 控制台的 [AWS SSO metadata](https://bitwarden.com/help/article/saml-aws/#aws-sso-metadata) 部分获取。                             |
+| Artifact Resolution Service URL           | 对于 AWS 实施，您可以将此字段保留为空。                                                                                                                                                                                |
+| X509 Public Certificate                   | <p>黏贴<a href="aws-saml.md#aws-sso-metadata">已下载的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm                | 默认，AWS SSO 将使用 SHA-256 签名。除非您进行了更改，否则请从下拉列表中选择 `sha256`。                                                                                                                                              |
+| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                  |
+| Disable Outbound Logout Requests          | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                     |
+| Want Authentication Requests Signed       | AWS SSO 是否要求 SAML 请求被签名。                                                                                                                                                                              |
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
