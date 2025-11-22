@@ -4,31 +4,41 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/keyboard-shortcuts/)
 {% endhint %}
 
+键盘快捷键能加速完成 Bitwarden 中的常用操作，例如自动填充登录信息和保存新项目。它们可以帮助您更高效地进行导航，并为使用鼠标提供了一种重要的替代方案。
+
 ## 浏览器扩展快捷键 <a href="#browser-extension-shortcuts" id="browser-extension-shortcuts"></a>
 
-某些浏览器，包括 Microsoft Edge 和 Safari，可能会将以下组合键用做其他的默认快捷键。在这些情况下，您需要配置您的浏览器快捷键。
+这些快捷键允许您使用键盘操作 Bitwarden 浏览器扩展。如果快捷键不起作用，您可能需要更新浏览器的快捷键设置。
 
-* 对于基于 Chromium 的浏览器（Chrome、Edge、Vivaldi、Brave 等），这可以通过 `chrome://extensions/shortcuts`、`edge://extensions/shortcuts` 等完成。
+### 通用 <a href="#general" id="general"></a>
 
-{% hint style="info" %}
-Microsoft Edge 的自动填充要求是最新的基于 Chromium 的版本。
-{% endhint %}
+| 作用          | 按键                         |
+| ----------- | -------------------------- |
+| 激活扩展        | `Ctrl/Cmd` + `Shift` + `Y` |
+| 生成密码并复制到剪贴板 | `Ctrl/Cmd` + `Shift` + `9` |
+| 锁定密码库       | `Ctrl/Cmd` + `Shift` + `N` |
 
-* 对于 Safari，您可能需要重新分配显示/隐藏侧边栏快捷方式，以便腾出 `CMD + Shift + L` 的空间供 Bitwarden 自动填充。[了解方法](https://support.apple.com/zh-cn/guide/mac-help/mchlp2271/mac)。
-* 对于 Firefox，请参考[这些说明](https://support.mozilla.org/zh-CN/kb/%E7%AE%A1%E7%90%86Firefox%E7%9A%84%E6%89%A9%E5%B1%95%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F)。
+### 自动填充 <a href="#autofill" id="autofill"></a>
 
-以下是 Bitwarden 浏览器扩展的默认快捷方式：
+您可以[使用键盘快捷键自动填充凭据](../autofill/autofill-from/autofill-from-browser-extensions.md#keyboard-shortcuts)至网站。当用户名和密码字段在同一页面上并列出现时，或在分步登录流程中分别出现时，自动填充快捷键均可生效。
 
-* `Ctrl/CMD + Shift + Y` → 激活扩展
-* `Ctrl/CMD + Shift + L` → 自动填充，再次按下可在匹配的登录之间循环
-* `Ctrl/CMD + Shift + 9` → 生成密码并复制到剪贴板
-* `Ctrl/CMD + Shift + N` → 锁定扩展
-* 手动分配 → 为当前网站自动填充上次使用的支付卡。[了解如何操作](../autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-keyboard-shortcuts)。
-* 手动分配 → 为当前网站自动填充上次使用的身份信息。[了解如何操作](../autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-the-inline-menu)。
+| 作用               | 按键                                                                                                       |
+| ---------------- | -------------------------------------------------------------------------------------------------------- |
+| 自动填充当前网站上次使用的登录。 | <p><code>Ctrl/Cmd</code> + <code>Shift</code> + <code>L</code></p><p>再次按下可在匹配的登录之间循环。</p>                |
+| 自动填充上次使用的支付卡。    | [创建键盘快捷键](../autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-keyboard-shortcuts)。 |
+| 自动填充上次使用的身份。     | [创建键盘快捷键](../autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-keyboard-shortcuts)。 |
 
 {% hint style="success" %}
-如果一个登录使用 [Bitwarden TOTP 验证器](security-tools/totp.md)，使用 `Cmd/Ctrl + Shift + L` 会在自动填充后自动将您的 TOTP 复制到剪贴板。您所要做的就是 `Cmd/Ctrl + V` 以粘贴！
+如果登录使用 [Bitwarden 身份验证器](security-tools/totp.md)生成的 TOTP，并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按下 `Cmd/Ctrl` + `V` 以粘贴 TOTP。
 {% endhint %}
+
+### 自定义浏览器扩展快捷键 <a href="#customize-browser-extension-shortcuts" id="customize-browser-extension-shortcuts"></a>
+
+部分浏览器（包括 Microsoft Edge 和 Safari）使用的默认快捷键与 Bitwarden 的快捷键存在冲突。要解决此问题，请调整浏览器的默认快捷键，使 Bitwarden 的快捷键能够正常工作。具体步骤因浏览器而异：
+
+* **基于 Chromium 的浏览器（包括 Chrome、Edge、Vivaldi、Brave）**：前往浏览器设置页面，例如 `chrome://extensions/shortcuts` 或 `edge://extensions/shortcuts`，更改存在冲突的快捷键或应用新的快捷键。
+* **Safari**：更新 [Mac 键盘快捷键](https://support.apple.com/zh-cn/guide/mac-help/mchlp2271/mac)。您可能需要为显示/隐藏侧边栏重新分配快捷键，以确保[自动填充快捷键](keyboard-shortcuts.md#autofill)正常工作。
+* **Firefox**：更新[扩展的快捷键设置](https://support.mozilla.org/zh-CN/kb/%E7%AE%A1%E7%90%86Firefox%E7%9A%84%E6%89%A9%E5%B1%95%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F)。
 
 ## 桌面应用程序快捷键 <a href="#desktop-application-shortcuts" id="desktop-application-shortcuts"></a>
 

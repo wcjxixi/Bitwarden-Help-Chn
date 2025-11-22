@@ -61,6 +61,7 @@
       * [用户名 & 密码生成器](docs/password-manager/your-vault/security-tools/generator.md)
       * [密码 & 生成器历史记录](docs/password-manager/your-vault/security-tools/password-and-generator-history.md)
       * [密码库健康报告](docs/password-manager/your-vault/security-tools/vault-health-reports.md)
+      * [主密码重新提示](docs/password-manager/your-vault/security-tools/master-password-re-prompt.md)
     * [同步密码库](docs/password-manager/your-vault/syncing-your-vault.md)
     * [键盘快捷键](docs/password-manager/your-vault/keyboard-shortcuts.md)
   * [自动填充](docs/password-manager/autofill/README.md)
