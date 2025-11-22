@@ -6,8 +6,8 @@
 
 目录连接器桌面 App 是一个独立的桌面应用程序，可用于从一系列目录服务同步用户、群组以及群组关联。
 
-{% embed url="https://bitwarden.com/help/images/directory-connector/app.png" %}
-目录连接器桌面应用程序
+{% embed url="https://bitwarden.com/assets/7r6eylncijFasEUrKXe2Hk/b6eec60c8a6452a300eeba5272c46ea4/app.png?w=896&fm=avif" %}
+目录连接器桌面 App
 {% endembed %}
 
 目录连接器也适用于作为 [CLI 工具](directory-connector-cli.md)。桌面 App 和 CLI [共享数据库和配置](directory-connector-file-storage.md)，因此不建议在一台机器上**同时**使用。建议使用[桌面 App](directory-connector-desktop-app.md) 完成配置和测试，然后使用 [CLI](directory-connector-cli.md) [调度自动同步](schedule-a-sync.md)到生产组织。

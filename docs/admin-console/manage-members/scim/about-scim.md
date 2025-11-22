@@ -1,4 +1,4 @@
-# =关于 SCIM
+# 关于 SCIM
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/about-scim/)
@@ -118,11 +118,30 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 
 ### 成员显示名称 <a href="#member-display-name" id="member-display-name"></a>
 
+虽然 SCIM API 请求可配置为包含成员显示名称，但该数据目前不会在初始配置时或 IdP 发生变更时同步至 Bitwarden。
+
 ### 成员外部 ID <a href="#member-external-id" id="member-external-id"></a>
+
+虽然 SCIM 配置会在用户首次配置时为其分配一个外部 ID，但目前它不会将 IdP 中的外部 ID 更改同步至 Bitwarden。
 
 ## SCIM 实施前的对象更新 <a href="#updates-to-pre-scim-objects" id="updates-to-pre-scim-objects"></a>
 
+{% hint style="danger" %}
+如果您在实施 SCIM 之前使用 Directory Connector，请务必在启用 SCIM 配置之前将 Directory Connector 关闭。
+{% endhint %}
+
+以下章节说明 SCIM 配置将为组织中现有成员和群组同步的变更内容（**针对 SCIM 实施前已存在的成员和群组**）：
+
 ### SCIM 实施前加入的成员 <a href="#members-added-prior-to-scim" id="members-added-prior-to-scim"></a>
+
+SCIM 配置将根据成员是否存在于 IdP 中，对 **SCIM 实施之前加入您的组织**的成员采取不同的处理方式：
+
+* **存在于 IdP 中**且在 SCIM 实施前加入的成员不会被重复创建、无需重新加入组织，也不会从任何群组中移除。
+* **不存在于 IdP 中**且在 SCIM 实施前加入的成员不会被移除，也不会被添加或移出任何群组。
 
 ### SCIM 实施前创建的群组 <a href="#groups-created-prior-to-scim" id="groups-created-prior-to-scim"></a>
 
+SCIM 配置将根据群组是否存在于 IdP 中，对 **SCIM 实施前创建于您的组织**的群组采取不同的处理方式：
+
+* **存在于 IdP 中**且在 SCIM 实施前创建的群组不会被重复创建或移除任何成员，但会根据身份提供商分配的成员资格添加新成员。
+* **不存在于 IdP 中**且在 SCIM 实施前创建的群组不会被移除，也不会添加或移除任何成员。

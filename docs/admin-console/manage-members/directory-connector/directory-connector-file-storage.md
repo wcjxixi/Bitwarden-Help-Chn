@@ -21,7 +21,7 @@
 
 **⬇️**[下载示例配置文件](https://assets.ctfassets.net/7rncvj1f8mw7/1Bkzdf50jZRPq0MRJ85FPi/68b92adf2f5399dc50df1b897a0c0729/data.json)
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 避免在目录连接器桌面 App 或 CLI 可执行文件运行时打开或修改 `data.json` 文件。
 {% endhint %}
 
