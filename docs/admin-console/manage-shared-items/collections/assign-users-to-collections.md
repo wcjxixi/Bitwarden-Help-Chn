@@ -27,7 +27,7 @@
 <img src="https://bitwarden.com/assets/42edJRnvap8xiBpURskIVI/7ff8006517e9bce50dffa4372fcc2911/2024-12-02_15-41-46.png?w=1039&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
 {% endhint %}
 
-## 为未管理的集合分配访问权限 <a href="#assign-access-to-un-managed-collections" id="assign-access-to-un-managed-collections"></a>
+## 为非管理的集合分配访问权限 <a href="#assign-access-to-un-managed-collections" id="assign-access-to-un-managed-collections"></a>
 
 集合应始终至少有一位被分配的成员拥有[管理集合权限](collection-permissions.md)。在某些情况下，例如管理成员离开您的组织时，集合可能会没有具有该权限级别的成员。
 

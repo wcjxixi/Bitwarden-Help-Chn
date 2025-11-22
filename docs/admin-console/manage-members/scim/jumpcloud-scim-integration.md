@@ -40,7 +40,7 @@ SCIM 配置
 
 在搜索框中输入 `Bitwarden` 然后选择 **Configure** 按钮：
 
-{% embed url="https://bitwarden.com/_gatsby/image/5daf3d796baeb30fbb21ae5cf0876808/09f6ad118a199851f5e075fe0ad67ee5/jc-bw.webp?u=https%3A%2F%2Fimages.ctfassets.net%2F7rncvj1f8mw7%2F2pFRcBTjlIjBhMbqlKMhxb%2Fb80b23ecfd660d5c314028297c606879%2Fjc-bw.png&a=w%3D685%26h%3D229%26fm%3Dwebp%26q%3D75&cd=2022-01-19T18%3A15%3A38.342Z" %}
+{% embed url="https://bitwarden.com/assets/2pFRcBTjlIjBhMbqlKMhxb/b80b23ecfd660d5c314028297c606879/jc-bw.png?w=685&fm=avif" %}
 配置 Bitwarden
 {% endembed %}
 

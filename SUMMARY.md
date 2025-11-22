@@ -195,7 +195,7 @@
       * [恢复成员账户](docs/admin-console/manage-members/account-recovery/recover-a-member-account.md)
       * [我的账户已被恢复](docs/admin-console/manage-members/account-recovery/my-account-was-recovered.md)
     * [SCIM](docs/admin-console/manage-members/scim/README.md)
-      * [关于 SCIM](docs/admin-console/manage-members/scim/about-scim.md)
+      * [=关于 SCIM](docs/admin-console/manage-members/scim/about-scim.md)
       * [JumpCloud SCIM 集成](docs/admin-console/manage-members/scim/jumpcloud-scim-integration.md)
       * [Microsoft Entra ID SCIM 集成](docs/admin-console/manage-members/scim/microsoft-entra-id-scim-integration.md)
       * [Okta SCIM 集成](docs/admin-console/manage-members/scim/okta-scim-integration.md)

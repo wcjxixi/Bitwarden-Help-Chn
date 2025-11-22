@@ -7,7 +7,7 @@
 **我的项目**是组织成员存储不需要与其他用户共享但仍然属于组织所有权的项目的位置。要启用「我的项目」功能，组织必须启用[强制数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。在用户离职后，项目的控制权将作为继承过程的一部分转移给管理员。启用策略后，将在每个组织成员的密码库中创建「我的项目」，可以在其中存储和维护组织拥有的项目。
 
 {% hint style="danger" %}
-Bitwarden目前仅建议对尚未开始推广的组织启用[强制组织数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。
+Bitwarden 目前仅建议对尚未开始推广的组织启用[强制组织数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。
 
 如果您的组织在 2025.11.0 版本之前激活了该策略，将为自该版本以后确认的成员创建**我的项目**。现有成员将不会拥有**我的项目**，并且可以继续使用他们的**我的密码库**。未来版本将允许已开始成员入职并使用个人密码库的组织，将所有凭据迁移至组织所有权。
 {% endhint %}
