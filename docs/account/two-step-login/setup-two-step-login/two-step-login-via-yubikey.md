@@ -1,15 +1,13 @@
-# 两步登录 - YubiKey
+# 两步登录 - YubiKey OTP
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/setup-two-step-login-yubikey/)
 {% endhint %}
 
-[YubiKey](https://www.yubico.com/) 方式的两步登录适用于高级用户，包括付费组织（家庭、团队或企业）的成员。
-
-可以使用任何[支持 OTP 功能的 YubiKey](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/) ，包括所有 YubiKey 4 和 5 系列设备以及 YubiKey NEO 和 YubiKey NFC。最多可以添加 5 个 YubiKey 到您的账户中。
+YubiKey OTP 方式的两步登录适用于高级用户，包括付费组织（家庭版、团队版或企业版）的成员。可以使用任何[支持 OTP 功能的 YubiKey](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/) ，包括所有 YubiKey 4 和 5 系列设备以及 YubiKey NEO 和 YubiKey NFC。最多可以添加 5 个 YubiKey 到您的账户中。
 
 {% hint style="success" %}
-大多数现代 YubiKeys，包括 5 系列钥匙，都支持 FIDO2 WebAuthn 协议。如果您的密钥支持它，我们建议按照[这些说明](two-step-login-via-fido.md)将您的密钥设置为 FIDO2 WebAuthn 设备。您可以使用 [YubiKey Manager](https://www.yubico.com/support/download/yubikey-manager/) 应用程序来检测是否支持 FIDO2 WebAuthn。
+大多数现代 YubiKeys，包括 5 系列钥匙，都支持 FIDO2 WebAuthn 协议。如果您的钥匙支持（可以使用 [Yubico Authenticator](https://www.yubico.com/products/yubico-authenticator/) 桌面应用程序确定），我们建议按照[这些说明](two-step-login-via-fido.md)将您的钥匙设置为 FIDO2 WebAuthn 设备。
 {% endhint %}
 
 ## 设置 YubiKey <a href="#setup-yubikey" id="setup-yubikey"></a>
@@ -30,7 +28,7 @@
 两步登录
 {% endembed %}
 
-3、定位到 **YubiKey 安全钥匙**选项然后选择**管理**按钮：
+3、定位到 **YubiKey OTP 安全钥匙**选项然后选择**管理**按钮：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5GqQynIX94PhzJQ0tVW1aE/5dcea8d04c8a543daa7f96989f220756/2024-12-02_10-55-22.png?_a=DAJCwlWIZAAB" %}
 两步登录提供程序
@@ -84,8 +82,8 @@ YubiKey 提示
 
 1. 将 YubiKey 插入设备。
 2. 点击**取消**以结束 NFC 提示。
-3. 点击用灰色下划线表示的文本输入字段
-4. 点击或按下您 YubiKey 上的按钮以插入代码
+3. 点击用灰色下划线表示的文本输入字段。
+4. 点击或按下您 YubiKey 上的按钮以插入代码。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/0SakpfPW6yFdTU34AHxNu/431a5a859949f5d8da8e1a64e0072291/nonfc.png?_a=DAJCwlWIZAAB" %}
 取消 NFC
