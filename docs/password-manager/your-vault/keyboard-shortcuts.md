@@ -47,7 +47,7 @@
 | 作用                                              | 按键                         |
 | ----------------------------------------------- | -------------------------- |
 | 锁定密码库                                           | `Ctrl/Cmd` + `L`           |
-| 打开 Bitwarden 首选项                                | `Ctrl/Cmd` + `,`           |
+| 打开 Bitwarden 偏好设置                               | `Ctrl/Cmd` + `,`           |
 | 重新加载 Bitwarden 桌面 App                           | `Ctrl/Cmd` + `Shift` + `R` |
 | 退出 Bitwarden 桌面 App                             | `Ctrl/Cmd` + `Q`           |
 | 将光标置于密码库的搜索框中                                   | `Ctrl/Cmd` + `F`           |

@@ -91,12 +91,12 @@ X.com 登录 URI
 
 {% tabs %}
 {% tab title="Windows" %}
-### 设置您的首选项 <a href="#set-your-preferences" id="set-your-preferences"></a>
+### 设置您的偏好设置 <a href="#set-your-preferences" id="set-your-preferences"></a>
 
-要设置您的首选项，请从菜单栏中选择**文件** → **设置**。您会注意到三个部分：**安全性**、**首选项**和**应用程序设置**。
+要设置您的首选项，请从菜单栏中选择**文件** → **设置**。您会注意到三个部分：**安全**、**偏好设置**和 **App 设置**。
 
 {% hint style="success" %}
-**安全性**和**首选项**适用于[活动账户](getting-started-desktop.md#add-a-second-account)，应为每个账户单独设置。**应用程序设置**适用于所有账户。
+**安全**和**偏好设置**适用于[活动账户](getting-started-desktop.md#add-a-second-account)，应为每个账户单独设置。**App 序设置**适用于所有账户。
 {% endhint %}
 
 ### 使用生物识别解锁 <a href="#unlock-with-biometrics" id="unlock-with-biometrics"></a>
@@ -109,7 +109,7 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 
 1、在您的计算机上启用 Windows Hello。
 
-2、如果您的计算机支持并已启用 Windows Hello，在**安全性**部分中将显示**使用 Windows Hello 解锁**选项：
+2、如果您的计算机支持并已启用 Windows Hello，在**安全**部分中将显示**使用 Windows Hello 解锁**选项：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/HQYTF4l5WyPbeTMHhhDnN/fe4ddb713557443e7836f3737534ca1e/windows.png?_a=DAJAUVWIZAAB" %}
 Windows 解锁选项
@@ -123,7 +123,7 @@ Windows 解锁选项
 使用 Windows Hello 解锁
 {% endembed %}
 
-记住，**安全性**设置是针对单个账户设置的，因此如果您想为另一个账户启用生物识别解锁，您需要再次执行这些步骤！
+记住，**安全**设置是针对单个账户设置的，因此如果您想为另一个账户启用生物识别解锁，您需要再次执行这些步骤！
 
 ### 自动启动 Bitwarden <a href="#start-bitwarden-automatically" id="start-bitwarden-automatically"></a>
 
@@ -147,7 +147,7 @@ Windows 解锁选项
 
 1、在您的计算机上启用触控 ID。请参阅 Apple 的[触控 ID 文档](https://support.apple.com/en-us/HT207054)以获取帮助。
 
-2、如果您的计算机支持并已启用了触控 ID，在**安全性**部分中将显示**使用触控 ID 解锁**选项：
+2、如果您的计算机支持并已启用了触控 ID，在**安全**部分中将显示**使用触控 ID 解锁**选项：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3O1If6IchE83Qb8ee0mYqx/9c61afb380d8479eb4e55e97c2e628c6/macos-bio1.png?_a=DAJAUVWIZAAB" %}
 Windows 解锁选项
@@ -161,7 +161,7 @@ Windows 解锁选项
 使用触控 ID 解锁
 {% endembed %}
 
-记住，**安全性**设置是针对单个账户设置的，因此如果您想为另一个账户启用生物识别解锁，您需要再次执行这些步骤！
+记住，**安全**设置是针对单个账户设置的，因此如果您想为另一个账户启用生物识别解锁，您需要再次执行这些步骤！
 
 ### 自动启动 Bitwarden <a href="#start-bitwarden-automatically" id="start-bitwarden-automatically"></a>
 
