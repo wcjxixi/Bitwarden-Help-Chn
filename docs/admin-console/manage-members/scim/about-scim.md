@@ -84,7 +84,7 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 当用户在您的 IdP 中被暂时挂起或停用（而非直接移除）时，其对您组织的访问权限将[自动撤销](../revoke-remove/temporarily-revoke-access.md)。被撤销访问权限的用户将显示在组织**成员**界面的**已撤销**标签页中，并且将：
 
 * 无法访问任何组织密码库项目和集合
-* 无法[使用 SSO 登录](../../login-with-sso/)或[组织级 Duo](../../../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md) 双重验证登录
+* 无法[使用 SSO 登录](../../login-with-sso/)或[组织层面 Duo](../../../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md) 两步登录
 * 不受组织[策略](../../oversight-visibility/enterprise-policies.md)的约束
 * 不占用许可证席位
 
