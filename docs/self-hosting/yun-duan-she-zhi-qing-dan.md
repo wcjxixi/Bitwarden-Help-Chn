@@ -79,9 +79,9 @@
 
 * [启用 SCIM 配置](../admin-console/manage-members/scim/about-scim.md)
 * [Microsoft Entra ID SCIM 集成](../admin-console/manage-members/scim/microsoft-entra-id-scim-integration.md)
-* [JumpCloud SCIM 集成](../admin-console/login-with-sso/sso-guides/jumpcloud-saml.md)
+* [JumpCloud SCIM 集成](../admin-console/login-with-sso/sso-guides/jumpcloud-saml-implementation.md)
 * OneLogin SCIM 集成
-* [Ping Identity SCIM 集成](../admin-console/login-with-sso/sso-guides/ping-identity-saml.md)
+* [Ping Identity SCIM 集成](../admin-console/login-with-sso/sso-guides/ping-identity-saml-implementation.md)
 
 ## 部署和上线准备 <a href="#deployment-and-go-live-preparation" id="deployment-and-go-live-preparation"></a>
 

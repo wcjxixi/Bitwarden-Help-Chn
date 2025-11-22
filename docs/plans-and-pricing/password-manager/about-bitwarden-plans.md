@@ -105,7 +105,7 @@ Bitwarden 商业方案旨在满足小型团队、成长型公司和大型企业�
 | [加密导出](../../password-manager/import-and-export/encrypted-exports.md)                        | **✔︎**                             | **✔︎**                            |
 | [Bitwarden Send](../../password-manager/bitwarden-send/about-send.md)                        | 文本+文件                              | 文本+文件                             |
 | \*[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)        | 验证器  App、电子邮箱、Yubikey、FIDO2 以及 Duo | 验证器 App、电子邮箱、Yubikey、FIDO2 以及 Duo |
-| [适用于组织的 Duo](../../admin-console/login-with-sso/sso-guides/duo-saml.md)                      | **✔︎**                             | **✔︎**                            |
+| [适用于组织的 Duo](../../admin-console/login-with-sso/sso-guides/duo-saml-implementation.md)       | **✔︎**                             | **✔︎**                            |
 | \*[加密文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)                | 1 GB/用户 + 1 GB 共享                  | 1 GB/用户 + 1 GB 共享                 |
 | \*[Bitwarden 验证器](../../password-manager/your-vault/security-tools/totp.md) (TOTP)           | **✔︎**                             | **✔︎**                            |
 | \*[个人紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)          | **✔︎**                             | **✔︎**                            |

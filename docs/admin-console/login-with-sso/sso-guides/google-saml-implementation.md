@@ -50,7 +50,7 @@ SAML 2.0 配置
 
 ### Google 身份提供程序详细信息 <a href="#google-identity-provider-details" id="google-identity-provider-details"></a>
 
-在 Google 身份提供程序详细信息界面，复制 **SSO URL**、**Entity ID** 和 **Certificate** 以[供后续步骤使用](google-saml.md#identity-provider-configuration)：
+在 Google 身份提供程序详细信息界面，复制 **SSO URL**、**Entity ID** 和 **Certificate** 以[供后续步骤使用](google-saml-implementation.md#identity-provider-configuration)：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6YxeYEY4VdrJNYO0zYkPqd/bbe5b99b54570ef14f7a4ff5a1bcb7a6/g-details.png?fm=webp&h=1094&q=50&w=1091" %}
 IdP 详细信息
@@ -104,11 +104,11 @@ IdP 详细信息
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
-根据在 Workspace 管理控制台[设置期间](google-saml.md#service-provider-details)所选择的选项配置以下字段：
+根据在 Workspace 管理控制台[设置期间](google-saml-implementation.md#service-provider-details)所选择的选项配置以下字段：
 
 | 字段                                 | 描述                                                                                         |
 | ---------------------------------- | ------------------------------------------------------------------------------------------ |
-| Name ID Format                     | 将此字段设置为在 Workplace 中[所选择的 NameID 格式](duo-saml.md#saml-response)。                           |
+| Name ID Format                     | 将此字段设置为在 Workplace 中[所选择的 NameID 格式](duo-saml-implementation.md#saml-response)。            |
 | Outbound Signing Algorithm         | Bitwarden 用于签名 SAML 请求的算法。                                                                 |
 | Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                          |
 | Minimum Incoming Signing Algorithm | Bitwarden 在 SAML 响应中接受的最小签名算法。默认，Workplace 使用 SHA-256 进行签名。请从下拉列表中选择 `sha-256`。            |
@@ -121,18 +121,18 @@ IdP 详细信息
 
 身份提供程序配置通常需要你返回 Workplace 管理控制台以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                                       |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Entity ID                                 | 将此字段设置为 Workplace 的 **Entity ID**，这可以从 [Google 身份提供程序详细信息部分](google-saml.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                            |
-| Binding Type                              | 将此字段设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                                    |
-| Single Sign On Service URL                | 将此字段设置为 Workplace 的 **SSO URL**，这可以从 [Google 身份提供程序详细信息部分](google-saml.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                              |
-| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发，但是您可以根据需要预先配置它。                                                                                                                                                                        |
-| Artifact Resolution Service URL           | 对于 Workplace SAML 实现，将此字段留空。                                                                                                                                                                                             |
-| X509 Public Certificate                   | <p>黏贴<a href="google-saml.md#google-identity-provider-details">已获取的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 默认，Google Workspace 将使用 RSA SHA-256 进行签名。从下拉列表中选择 `sha-256`。                                                                                                                                                             |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                     |
-| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                       |
-| Want Authentication Requests Signed       | Google Workspace 是否要求 SAML 请求被签名。                                                                                                                                                                                        |
+| 字段                                        | 描述                                                                                                                                                                                                                                      |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                                 | 将此字段设置为 Workplace 的 **Entity ID**，这可以从 [Google 身份提供程序详细信息部分](google-saml-implementation.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                            |
+| Binding Type                              | 将此字段设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                                                   |
+| Single Sign On Service URL                | 将此字段设置为 Workplace 的 **SSO URL**，这可以从 [Google 身份提供程序详细信息部分](google-saml-implementation.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                              |
+| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发，但是您可以根据需要预先配置它。                                                                                                                                                                                       |
+| Artifact Resolution Service URL           | 对于 Workplace SAML 实现，将此字段留空。                                                                                                                                                                                                            |
+| X509 Public Certificate                   | <p>黏贴<a href="google-saml-implementation.md#google-identity-provider-details">已获取的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm                | 默认，Google Workspace 将使用 RSA SHA-256 进行签名。从下拉列表中选择 `sha-256`。                                                                                                                                                                            |
+| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                                    |
+| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                                      |
+| Want Authentication Requests Signed       | Google Workspace 是否要求 SAML 请求被签名。                                                                                                                                                                                                       |
 
 完成身份提供程序配置部分后，**Save**（保存）您的工作。
 

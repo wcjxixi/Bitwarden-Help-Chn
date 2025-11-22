@@ -18,7 +18,7 @@ Bitwarden 支持使用标准属性映射的 SCIM v2，并提供以下官方 SCIM
 * [Okta](okta-scim-integration.md)
 * [OneLogin](onelogin-scim-integration.md)
 * [JumpCloud](jumpcloud-scim-integration.md)
-* [Ping Identity](../../login-with-sso/sso-guides/ping-identity-saml.md)
+* [Ping Identity](../../login-with-sso/sso-guides/ping-identity-saml-implementation.md)
 
 {% hint style="success" %}
 除了上面列出的提供程序之外，Bitwarden 还提供与 Google Workspace 的测试版集成。[联系我们以了解更多信息](https://bitwarden.com/contact/)。

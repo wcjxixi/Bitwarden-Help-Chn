@@ -1,4 +1,4 @@
-# 入职和继任概述
+# 入职和继任指南
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/onboarding-and-succession/)
@@ -261,15 +261,15 @@ Bitwarden 组织包括了对[事件日志](../oversight-visibility/event-logging
 
 Directory Connector、SSO 登录、企业策略和您的密码库独立或协调工作，以优化您的入职、离职和组织管理体验。下表详细说明了将这些部分串在一起形成一个平滑过程的方式：
 
-<table><thead><tr><th width="150">步骤</th><th>描述</th></tr></thead><tbody><tr><td><strong>同步</strong></td><td>使用 Directory Connector 将群组和用户从您现有的目录服务同步到 Bitwarden。</td></tr><tr><td><strong>邀请</strong></td><td>Directory Connector 会自动向同步的用户发出邀请。</td></tr><tr><td>身份<strong>验证</strong></td><td>将您的 SSO 登录实施与 SSO 策略配对，以要求用户在接受邀请时注册 SSO。</td></tr><tr><td><strong>管理</strong></td><td>使用网页密码库界面将一些用户提升到不同的角色，并确保群组 - 集合关系被配置为授予正确的用户以正确的访问权限。</td></tr><tr><td><strong>重新同步</strong></td><td>定期重新运行 Directory Connector 以从 Bitwarden 中移除不再在您的目录服务中处于活动状态的用户并开始新员工入职。</td></tr></tbody></table>
+<table><thead><tr><th width="150">步骤</th><th>描述</th></tr></thead><tbody><tr><td><strong>同步</strong></td><td>使用 Directory Connector 将群组和用户从您现有的目录服务同步到 Bitwarden。</td></tr><tr><td><strong>邀请</strong></td><td>Directory Connector 会自动向同步的用户发出邀请。</td></tr><tr><td>身份<strong>验证</strong></td><td>将您的 SSO 登录实施与 SSO 策略配对，以要求用户在接受邀请时注册 SSO。</td></tr><tr><td><strong>管理</strong></td><td>使用网页密码库界面将一些用户提升到不同的角色，并确保群组 - 集合关系被配置为授予合适的用户以合适的访问权限。</td></tr><tr><td><strong>重新同步</strong></td><td>定期重新运行 Directory Connector 以从 Bitwarden 中移除不再在您的目录服务中处于活动状态的用户并开始新员工入职。</td></tr></tbody></table>
 
 ## FAQ <a href="#faqs" id="faqs"></a>
 
 ### 问：如果员工已经有 Bitwarden 账户，是否可以将其附加到组织中，这样他们就不需要另一个 Bitwarden 账户了？ <a href="#q-if-an-employee-already-has-a-bitwarden-account-can-we-attach-it-to-the-organization-so-they-dont-n" id="q-if-an-employee-already-has-a-bitwarden-account-can-we-attach-it-to-the-organization-so-they-dont-n"></a>
 
-**答：**&#x662F;的！可以。一些客户建议在将附加用户到组织之前，这些用户将 Bitwarden 密码库附加到他们的公司电子邮箱中。这种选择是特定于公司的，任何一种方法都可以。
+**答：**&#x662F;的！可以。一些客户建议在将附加用户到组织之前，这些用户将 Bitwarden 密码库附加到他们的公司电子邮箱中。这种选择是特定于公司的，任何一种方式都可以。
 
-### 问：当员工离职时，我们是否可以将他们的帐户从组织中分离出来，这样他们就无法再访问公司凭据，也不会丢失个人凭据？ <a href="#q-when-an-employee-leaves-can-we-detach-their-account-from-the-organization-so-that-they-dont-have-a" id="q-when-an-employee-leaves-can-we-detach-their-account-from-the-organization-so-that-they-dont-have-a"></a>
+### 问：当员工离职时，我们是否可以将他们的账户从组织中分离出来，这样他们就无法再访问公司凭据，也不会丢失个人凭据？ <a href="#q-when-an-employee-leaves-can-we-detach-their-account-from-the-organization-so-that-they-dont-have-a" id="q-when-an-employee-leaves-can-we-detach-their-account-from-the-organization-so-that-they-dont-have-a"></a>
 
 **答：**&#x53EF;以！这正是[离职](onboarding-and-succession.md#offboarding-users)所需要做的事情。
 

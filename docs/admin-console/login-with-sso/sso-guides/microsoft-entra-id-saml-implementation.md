@@ -94,11 +94,11 @@ Azure 构造的默认声明可用于 SSO 登录，但您可以选择使用此部
 
 ### SAML 签名证书 <a href="#saml-signing-certificate" id="saml-signing-certificate"></a>
 
-下载 Base64 证书以在[后续步骤中](microsoft-entra-id-saml.md#identity-provider-configuration)使用。
+下载 Base64 证书以在[后续步骤中](microsoft-entra-id-saml-implementation.md#identity-provider-configuration)使用。
 
 ### 设置您的应用程序 <a href="#set-up-your-application" id="set-up-your-application"></a>
 
-复制或记下此部分中的 **Login URL** 和 **Azure AD Identifier**，以在[后续步骤中](microsoft-entra-id-saml.md#identity-provider-configuration)使用：
+复制或记下此部分中的 **Login URL** 和 **Azure AD Identifier**，以在[后续步骤中](microsoft-entra-id-saml-implementation.md#identity-provider-configuration)使用：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NZm0dZkDOJ6UbUu5lgtex/427c7467486c8135d6f51d5fb158e7da/Azure_URLS.png?_a=DAJCwlWIZAAB" %}
 Azure URL
@@ -131,14 +131,14 @@ Azure URL
 
 配置以下字段：
 
-| 字段                                 | 描述                                                                                                                                             |
-| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name ID Format                     | 默认，Azure 将使用电子邮件地址。如果您更改[这个设置](microsoft-entra-id-saml.md#user-attributes-and-claims)，请选择对应的值。否则，请将此字段设置为 **Unspecified** 或 **Email Address**。 |
-| Outbound Signing Algorithm         | Bitwarden 用于签名 SAML 请求的算法。                                                                                                                     |
-| Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                                                                              |
-| Minimum Incoming Signing Algorithm | 默认，Azure 将使用 RSA SHA-256 签名。请从下拉列表中选择 `rsa-sha256`。                                                                                            |
-| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名                                                                                                                      |
-| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                                                     |
+| 字段                                 | 描述                                                                                                                                                            |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name ID Format                     | 默认，Azure 将使用电子邮件地址。如果您更改[这个设置](microsoft-entra-id-saml-implementation.md#user-attributes-and-claims)，请选择对应的值。否则，请将此字段设置为 **Unspecified** 或 **Email Address**。 |
+| Outbound Signing Algorithm         | Bitwarden 用于签名 SAML 请求的算法。                                                                                                                                    |
+| Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                                                                                             |
+| Minimum Incoming Signing Algorithm | 默认，Azure 将使用 RSA SHA-256 签名。请从下拉列表中选择 `rsa-sha256`。                                                                                                           |
+| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名                                                                                                                                     |
+| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                                                                    |
 
 完成服务提供程序配置部分后，**Save**（保存）您的工作。
 
@@ -146,18 +146,18 @@ Azure URL
 
 身份提供程序配置通常需要你返回 Azure 门户以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                                           |
-| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                                 | 输入从 Azure 门户的[设置您的应用程序](microsoft-entra-id-saml.md#set-up-your-application)部分获取到的 **Azure AD Identifier**。                                                                                                                   |
-| Binding Type                              | 设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                                            |
-| Single Sign On Service URL                | 输入从 Azure 门户的[设置您的应用程序](microsoft-entra-id-saml.md#set-up-your-application)部分获取到的 **Login URL**。                                                                                                                             |
-| Single Log Out Service URL                | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发，但如果您需要，可以将其预先配置为 **Logout URL**。                                                                                                                                                            |
-| Artifact Resolution Service URL           | Azure 当前不支持 Artifact 绑定，因此请将此字段留空。                                                                                                                                                                                           |
-| X509 Public Certificate                   | <p>黏贴<a href="microsoft-entra-id-saml.md#saml-signing-certificate">已下载的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 默认，Azure 将使用 RSA SHA-256 签名。请从下拉列表中选择 `rsa-sha256`。                                                                                                                                                                          |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                         |
-| Disable Outbound Logout Requests          | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                            |
-| Want Authentication Requests Signed       | Azure 是否要求 SAML 请求被签名。                                                                                                                                                                                                       |
+| 字段                                        | 描述                                                                                                                                                                                                                                          |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                                 | 输入从 Azure 门户的[设置您的应用程序](microsoft-entra-id-saml-implementation.md#set-up-your-application)部分获取到的 **Azure AD Identifier**。                                                                                                                   |
+| Binding Type                              | 设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                                                           |
+| Single Sign On Service URL                | 输入从 Azure 门户的[设置您的应用程序](microsoft-entra-id-saml-implementation.md#set-up-your-application)部分获取到的 **Login URL**。                                                                                                                             |
+| Single Log Out Service URL                | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发，但如果您需要，可以将其预先配置为 **Logout URL**。                                                                                                                                                                           |
+| Artifact Resolution Service URL           | Azure 当前不支持 Artifact 绑定，因此请将此字段留空。                                                                                                                                                                                                          |
+| X509 Public Certificate                   | <p>黏贴<a href="microsoft-entra-id-saml-implementation.md#saml-signing-certificate">已下载的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm                | 默认，Azure 将使用 RSA SHA-256 签名。请从下拉列表中选择 `rsa-sha256`。                                                                                                                                                                                         |
+| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                                        |
+| Disable Outbound Logout Requests          | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                                           |
+| Want Authentication Requests Signed       | Azure 是否要求 SAML 请求被签名。                                                                                                                                                                                                                      |
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。

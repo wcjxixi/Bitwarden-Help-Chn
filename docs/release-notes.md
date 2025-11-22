@@ -524,7 +524,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **Microsoft Sentinel 集成**：新的本地集成可用于 Microsoft Sentinel 安全信息和事件管理 (SIEM)。该集成提供了跨身份验证、组织活动和密码库项目的全面事件覆盖。[了解更多](admin-console/oversight-visibility/siem-integrations/microsoft-sentinel-siem.md)。
-* **Ping Identity SCIM 支持**：Bitwarden 组织现已正式支持 Ping Identity 跨域身份管理 (SCIM) 系统。使用 Ping Identity SCIM 集成来自动配置 Bitwarden 组织中的成员和群组。[了解更多](admin-console/login-with-sso/sso-guides/ping-identity-saml.md)。
+* **Ping Identity SCIM 支持**：Bitwarden 组织现已正式支持 Ping Identity 跨域身份管理 (SCIM) 系统。使用 Ping Identity SCIM 集成来自动配置 Bitwarden 组织中的成员和群组。[了解更多](admin-console/login-with-sso/sso-guides/ping-identity-saml-implementation.md)。
 * **UI 改进升级方案**：为简化将您的组织升级到另一个方案的流程，对 UI 进行了改进。[了解更多](admin-console/organizations-overview.md#upgrade-an-organization)。
 * **为允许的应用程序策略自动登录用户**：这项新策略将允许 IdP 管理员启用非 SSO 应用程序，以便在从其 IdP 面板启动时自动登录用户。[了解更多](admin-console/oversight-visibility/enterprise-policies.md#automatically-log-in-users-for-allowed-applications)。
 
