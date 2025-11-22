@@ -100,7 +100,13 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 
 ### 成员电子邮箱地址 <a href="#member-email-address" id="member-email-address"></a>
 
-SCIM 配置的用户可以在 Bitwarden 及其组织的相关 IdP 中更改电子邮箱地址。要更改 SCIM 组织中的 Bitwarden 电子邮箱地址，请执行以下操作：
+{% hint style="info" %}
+使用[受信任设备](../../login-with-sso/trusted-devices/about-trusted-devices.md)的组织成员无法更改其电子邮件地址，除非已获得带有[账户恢复](../account-recovery/about-account-recovery.md)功能的主密码。
+
+使用 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 的组织成员无法更改其电子邮件地址。成员账户需要[删除](../revoke-remove/delete-member-accounts.md)并重新配置才能更改电子邮件地址。请提醒用户在删除账户前导出数据，并在使用新电子邮件地址重新配置账户后导入数据。
+{% endhint %}
+
+使用 SCIM 配置的用户可以在 Bitwarden 及其组织的相关 IdP 中更改电子邮箱地址。要更改 SCIM 组织中的 Bitwarden 电子邮箱地址，请执行以下操作：
 
 1. 通过导航到**设置** → **我的账户**在 Bitwarden 中更改电子邮箱地址（[了解更多](../../../password-manager/more/password-manager-faqs.md#q-how-do-i-change-my-email-address)）。
 2. 在 Bitwarden 上更改电子邮箱地址后，更新 IdP 或 AD 客户端上的用户值。这可以是 `externalid` 或相应的值，取决于组织对 IdP 的选择。
