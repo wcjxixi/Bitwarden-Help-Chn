@@ -100,7 +100,7 @@
     * [导入 & 导出 FAQ](docs/password-manager/import-and-export/import-and-export-faqs.md)
   * [组织成员](docs/password-manager/organization-members/README.md)
     * [共享项目](docs/password-manager/organization-members/sharing.md)
-    * [\*我的项目](docs/password-manager/organization-members/my-items.md)
+    * [我的项目](docs/password-manager/organization-members/my-items.md)
   * [Bitwarden Send](docs/password-manager/bitwarden-send/README.md)
     * [关于 Send](docs/password-manager/bitwarden-send/about-send.md)
     * [创建 Send](docs/password-manager/bitwarden-send/create-a-send.md)

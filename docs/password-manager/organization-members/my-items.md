@@ -1,18 +1,18 @@
-# \*我的项目
+# 我的项目
 
 {% hint style="success" %}
-~~对应的~~[~~官方文档地址~~](https://bitwarden.com/help/my-items/)
+对应的[官方文档地址](https://bitwarden.com/help/my-items/)
 {% endhint %}
 
-> **\[译者注]**：「我的项目」功能仅短暂添加后被移除。
-
-「**我的项目**」是组织成员存储不需要与其他用户共享但仍然属于组织所有权的项目的位置。要启用「我的项目」功能，组织必须打开[强制数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。在用户离职后，项目的控制权将作为继承过程的一部分转移给管理员。
+**我的项目**是组织成员存储不需要与其他用户共享但仍然属于组织所有权的项目的位置。要启用「我的项目」功能，组织必须启用[强制数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。在用户离职后，项目的控制权将作为继承过程的一部分转移给管理员。启用策略后，将在每个组织成员的密码库中创建「我的项目」，可以在其中存储和维护组织拥有的项目。
 
 {% hint style="danger" %}
-Bitwarden目前仅建议对尚未开始推广的组织启用[强制组织数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。对于已建立的组织，Bitwarden 将在未来更新中启用此功能，使所有员工凭证统一归入组织密码库，确保所有权与控制权的一致性。
+Bitwarden目前仅建议对尚未开始推广的组织启用[强制组织数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。
+
+如果您的组织在 2025.11.0 版本之前激活了该策略，将为自该版本以后确认的成员创建**我的项目**。现有成员将不会拥有**我的项目**，并且可以继续使用他们的**我的密码库**。未来版本将允许已开始成员入职并使用个人密码库的组织，将所有凭据迁移至组织所有权。
 {% endhint %}
 
-管理员激活**强制组织数据所有权**策略后，「**我的项目**」将被添加到所有组织成员的密码库中。
+管理员激活强制组织数据所有权策略后，**我的项目**将被添加到所有组织成员的密码库中。
 
 * 「我的项目」是组织成员存储密码库项目的首选位置。
 * 保存在「我的项目」中的项目将始终属于该组织所有。
@@ -38,13 +38,15 @@ Bitwarden目前仅建议对尚未开始推广的组织启用[强制组织数据�
 导入到「我的项目」
 {% endembed %}
 
-在[此处](../import-and-export/import-data.md)了解更多有关将项目导入 Bitwarden 的信息。
+{% hint style="info" %}
+将文件导入到**我的项目**时，该文件中的任何文件夹引用都不会保留。导入完成后，您可以将导入的数据组织到[文件夹](../your-vault/vault-navigation/folders.md)中。
+{% endhint %}
 
 ## 保存到「我的项目」 <a href="#save-to-my-items" id="save-to-my-items"></a>
 
 当强制组织所有权策略处于激活状态时，创建新密码库项目的用户将能够将项目保存到「我的项目」。
 
-在创建项目时，「我的项目」将默认出现在「集合」字段中。
+在创建项目时，「我的项目」将默认出现在**集合**字段中。
 
 {% embed url="https://bitwarden.com/assets/5Z9lis0vkv5MNSWWIy8XHW/476245dcbeec31c62d6c8881f4eb4586/2025-10-08_11-15-05.png?w=1200&fm=avif" %}
 为「我的项目」创建新项目
@@ -52,4 +54,4 @@ Bitwarden目前仅建议对尚未开始推广的组织启用[强制组织数据�
 
 ## 传输项目 <a href="#transfer-items" id="transfer-items"></a>
 
-启用强制组织所有权策略允许组织管理员在成员继任期间安全地转移成员凭据。来自已移除已删除用户的凭据可以转移到其他集合。在[此处](../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)了解更多有关员工离职和继任后转移项目的信息。
+启用强制组织所有权策略以允许组织管理员在成员继任期间安全地转移成员凭据。来自已移除或已删除用户的凭据可以转移到其他集合。了解更多有关[员工离职和继任后转移项目](../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)的信息。
