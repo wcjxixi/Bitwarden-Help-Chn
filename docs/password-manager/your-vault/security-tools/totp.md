@@ -7,11 +7,11 @@
 Password Manager 集成身份验证是 [Bitwarden Authenticator](../../../bitwarden-authenticator/bitwarden-authenticator.md) 等专用身份验证 App 的替代解决方案，您可以使用它来验证使用两步登录的网站和 App 的身份。集成身份验证使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTP)，每 30 秒轮换一次。
 
 {% hint style="info" %}
-密钥存储适用于所有账户。但 TOTP 验证码的生成要求高级会员或付费组织（家庭、团队或企业）成员资格。
+密钥存储适用于所有账户。但 TOTP 验证码的生成要求高级版或付费组织（家庭版、团队版或企业版）成员资格。
 
 > **\[译者注]**：
 >
-> 上面这句话的意思是所有账户都可以将支持双重验证 (2FA) 的网站或服务加入验证器密钥 (TOTP) 字段，但以后要使用自动生成的 TOTP 验证码，则需要高级会员或付费组织账户。
+> 上面这句话的意思是所有账户都可以将支持双重验证 (2FA) 的网站或服务加入验证器密钥 (TOTP) 字段，但以后要使用自动生成的 TOTP 验证码，则需要高级版或付费组织账户。
 >
 > Bitwarden 的 TOTP 相当于 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) 等专用验证器 App。对于支持两步验证的网站或服务，你可以使用专用验证器 App 生成验证码，也可以使用 Bitwarden 的 TOTP 生成验证码。
 {% endhint %}
@@ -171,15 +171,15 @@ otpauth://totp/Test:me?secret=JBSWY3DPEHPK3PXP&algorithm=sha256&digits=8&period=
 
 2、根据您的账户是个人账户还是企业账户，打开您的**安全仪表板**或选择**安全信息**。如果您正在浏览**安全仪表板**，您还需要从该界面中选择**两步验证**。
 
-{% embed url="https://bitwarden.com/_gatsby/image/ddb1c6fb67c45232ab67ea76f0e28aca/684599a3378fc51acd1d29f150dcb312/Screen%20Shot%202023-02-23%20at%2010.24.27%20AM.webp?eu=da8e53b0b1c1ad830b6fa5846f70333ae16b05a2fd5060856b62edfe4dfdcb8525a01a5d289c7eb6796b5dd9d0e046b367952a344bbbd7d8c9e91ff3e930f90951850ebd61b22401042d91f9e3fc04463cc54c0aa783c801a2642087b6b2e4764f501d7eac2fb8d7e4af3365e58b7c32bfe7f4786f9aef3ca051544bd4412cad33eed3c0605ab89ff35cbaa2adb75798d8f82a451e88b56f232144421fea32bfedba78193f7b13007187cf2c9900ced67a7f1d5c144004fe67398204fe6b6096b6fca40fd87f2ee9abcc37728ec7af81ee1cfd2b70b5d044fac06e2f5062cf4bf2f814f5d26605138128e7974fdd52415a4182028b203edb3f30fd7a9aa119c4&a=w%3D850%26h%3D473%26fm%3Dwebp%26q%3D75&cd=2023-02-23T18%3A54%3A12.978Z" %}
-开启 2FA
+{% embed url="https://bitwarden.com/assets/4x8LX6bcktyPDnQhPvSLOz/7903ba57aeb75b15e83562841136a16b/Screen_Shot_2023-02-23_at_10.24.27_AM.png?w=1200&fm=avif" %}
+启用 2FA
 {% endembed %}
 
 3、选择两步验证的**打开**按钮或**添加登录方式**按钮，然后从下拉列表中选择 Authenticator App。
 
 4、在设置过程中，您会看到一个验证方法的下拉菜单。选择**验证器 App** 或 **An App**。
 
-5、继续，直到您看到蓝色的不同的身份验证器应用程序超链接。看到超链接时选择它。
+5、继续，直到您看到蓝色的不同的身份验证器 App 超链接。看到超链接时选择它。
 
 6、继续，直到您看到二维码，此时您可以按照[此处](totp.md#scan-a-qr-code)的说明进行操作。
 

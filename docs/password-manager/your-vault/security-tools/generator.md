@@ -98,7 +98,7 @@
 {% tab title="CLI" %}
 使用 generate 命令生成密码：
 
-```batch
+```shellscript
 bw generate -uln --length 14
 ```
 
@@ -148,7 +148,7 @@ bw generate -uln --length 14
 {% tab title="网页 App" %}
 从导航栏中选择**工具** → **生成器**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2862v5xPV5qQM7XfdUvNlI/7481cc930fd05b05580ae5226825b613/2024-12-02_14-43-42.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/2862v5xPV5qQM7XfdUvNlI/0f8fe47b6d9efb0a6d77b245a1f63cdf/2025-02-14_11-02-02.png?w=1122&fm=avif" %}
 网页 App 用户名生成器
 {% endembed %}
 
@@ -252,7 +252,7 @@ bw generate -uln --length 14
 使用 [SimpleLogin](https://simplelogin.io/) 和 [Addy.io](https://addy.io/) 等电子邮箱别名服务时，您可以使用匿名地址（例如，`nobody-knows-its-me.d0p0r@slmail.me`）来注册网络账户，邮件将转发到您实际的收件箱（例如，`alice@bitwarden.com`）。这可以防止网站或服务在您注册时收集个人信息（在此示例中，名称 Alice 以及她在 Bitwarden 工作的事实）。
 {% endhint %}
 
-要设置您的电子邮箱别名集成：
+要设置您的电子邮箱别名集成
 
 {% tabs %}
 {% tab title="SimpleLogin" %}
