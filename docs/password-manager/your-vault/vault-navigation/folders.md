@@ -85,7 +85,7 @@ bw create folder <foldername>
 文件夹可以「嵌套」，以便在密码库中合理地组织它们。嵌套文件夹的深度没有限制，但创建太多层次可能会破坏密码库的界面。
 
 {% hint style="info" %}
-在「父」文件夹中进行检索不会将嵌套在其中的文件夹中的项目作为潜在检索结果包括在内。有关更多信息，请参阅[检索密码库](../search-your-vault.md)。
+在「父」文件夹中进行检索不会将嵌套在其中的文件夹中的项目作为潜在检索结果包括在内。有关更多信息，请参阅[检索密码库](search-vault.md)。
 {% endhint %}
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5blNMg0hJ9XW3Ts2qPRzF5/7a2bdfb7672c04a1a1fbae1068b8b422/2024-12-02_16-18-48.png?_a=DAJCwlWIZAAB" %}

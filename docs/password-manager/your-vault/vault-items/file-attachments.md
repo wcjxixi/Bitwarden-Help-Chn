@@ -74,7 +74,7 @@
 {% tab title="CLI" %}
 使用 `bw create attachment` 以附加文件到现有的密码库项目，示例：
 
-```batch
+```shellscript
 bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 ```
 
@@ -120,7 +120,7 @@ bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 {% tab title="CLI" %}
 使用 `bw get attachment` 来下载文件，示例：
 
-```batch
+```shellscript
 bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --output /Users/myaccount/Pictures/
 ```
 
@@ -224,7 +224,7 @@ bw export --format zip
 {% tab title="CLI" %}
 使用 `bw delete attachment` 来删除文件附件，示例：
 
-```batch
+```shellscript
 bw delete attachment 7063feab-4b10-472e-b64c-785e2b870b92
 ```
 

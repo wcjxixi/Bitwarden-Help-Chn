@@ -4,14 +4,14 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/searching-vault/)
 {% endhint %}
 
-通过检索 Bitwarden 密码库，可以快速找到相关项目。[基本检索](search-your-vault.md#applications-that-use-full-text-search)查询可以在任何 Bitwarden App 中进行，高级的[全文检索](search-your-vault.md#applications-that-use-full-text-search-1)查询可以在网页密码库、桌面 App 和浏览器扩展中进行。
+通过检索 Bitwarden 密码库，可以快速找到相关项目。[基本检索](search-vault.md#applications-that-use-full-text-search)查询可以在任何 Bitwarden App 中进行，高级的[全文检索](search-vault.md#applications-that-use-full-text-search-1)查询可以在网页密码库、桌面 App 和浏览器扩展中进行。
 
 任何检索操作的结果都取决于当前通过筛选器菜单或导航打开的内容。例如：
 
 * 如果选择了**所有项目**，检索将检查所有密码库项目以获取结果。
 * 如果选择的类型为**登录**，检索将检查所有登录项目以获取结果。
-* 如果选择了**我的文件夹**，检索将检查该文件夹中的项目以获取结果（不包括[嵌套文件夹](vault-items/folders.md)中的项目）。
-* 如果选择了**集合**，检索将检查所选集合以获取结果（不包括[嵌套集合](../../admin-console/manage-shared-items/collections/about-collections.md#nested-collections)中的项目）。
+* 如果选择了**我的文件夹**，检索将检查该文件夹中的项目以获取结果（不包括[嵌套文件夹](folders.md)中的项目）。
+* 如果选择了**集合**，检索将检查所选集合以获取结果（不包括[嵌套集合](../../../admin-console/manage-shared-items/collections/about-collections.md#nested-collections)中的项目）。
 
 检索框中的占位符文本将转换为指示当前检索的位置：
 
@@ -21,7 +21,7 @@
 
 ## 基本检索 <a href="#applications-that-use-full-text-search" id="applications-that-use-full-text-search"></a>
 
-基本检索由 Bitwarden 移动 App 使用。输入检索文本（例如 `Github` 或 `myusername`）将在密码库项目的以下字段中检索输入的信息：
+基本检索由 Bitwarden **移动 App** 使用。输入检索的文本（例如 `Github` 或 `myusername`）将在密码库项目的以下字段中检索输入的信息：
 
 * 项目**名称**
 * 对于登录为**用户名**
@@ -29,7 +29,7 @@
 * 对于支付卡为**品牌**或**卡号**后四位
 * 对于身份为**名称**
 
-为方便您的使用，基本检索会自动包含前导和后导[通配符](search-your-vault.md#wildcards-and-advanced-search-parameters)。例如，检索 `mail` 将返回名称为 `gmail` 以及 `email` 的密码库项目。
+为方便您的使用，基本检索会自动包含前导和后导[通配符](search-vault.md#wildcards-and-advanced-search-parameters)。例如，检索 `mail` 将返回名称为 `gmail` 以及 `email` 的密码库项目。
 
 检索结果由一个简单的评分机制决定。检索词中出现的字段越多，该密码库项目的得分就越高。[了解更多](https://lunrjs.com/guides/searching.html#scoring)。
 
@@ -45,7 +45,7 @@
 * `organizationid`：项目的组织 ID（如果它属于其中一个）。
 * `name`：项目指定的名称。
 * `subtitle`：取决于项目类型；登录为**用户名**，支付卡为**品牌**或**卡号**后四位，身份为**名称**。
-* `notes`：项目的备注。除非[使用通配符](search-your-vault.md#wildcards-and-advanced-search-parameters)，否则只会列出全词匹配。
+* `notes`：项目的备注。除非[使用通配符](search-vault.md#wildcards-and-advanced-search-parameters)，否则只会列出全词匹配。
 * `fields`：名称和值。仅包&#x542B;**`文本`**&#x7C7B;型字段值。
 * `attachments`：附件文件的名称。
 * `login.username`：登录项目的用户名。

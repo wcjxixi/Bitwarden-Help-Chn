@@ -17,7 +17,7 @@
 在最初创建项目时，或在任何时候编辑项目，都可将任何密码库项目指定为收藏：
 
 {% tabs %}
-{% tab title="网页密码库" %}
+{% tab title="网页 App" %}
 在添加项目或编辑项目界面，选中右下角的 **⭐️星形**图标然后**保存**该项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4XpFH5NFI6Lso21BpGNKsu/e90cd1d0d6c3e4e7296d2e0300ab3ab2/2024-12-02_16-26-17.png?_a=DAJCwlWIZAAB" %}

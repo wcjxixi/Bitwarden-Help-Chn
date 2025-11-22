@@ -93,7 +93,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 {% endembed %}
 
 {% hint style="success" %}
-在很多方面，集合类似于用来组织个人密码库的[文件夹](../password-manager/your-vault/vault-items/folders.md)。一个关键的区别是，[属于您的组织](organizations-quick-start.md#shared-items)的项目**必须包括在至少一个集合中**。
+在很多方面，集合类似于用来组织个人密码库的[文件夹](../password-manager/your-vault/vault-navigation/folders.md)。一个关键的区别是，[属于您的组织](organizations-quick-start.md#shared-items)的项目**必须包括在至少一个集合中**。
 {% endhint %}
 
 ## 将用户添加到您的组织 <a href="#add-a-user-to-your-organization" id="add-a-user-to-your-organization"></a>

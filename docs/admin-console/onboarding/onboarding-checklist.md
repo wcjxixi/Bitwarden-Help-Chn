@@ -45,7 +45,7 @@
 **支持链接：**
 
 * [密码库项目类型](../../password-manager/your-vault/vault-items/vault-items.md)
-* [搜索您的密码库](../../password-manager/your-vault/search-your-vault.md)
+* [搜索您的密码库](../../password-manager/your-vault/vault-navigation/search-vault.md)
 
 ## 密码管理基础 <a href="#password-management-fundamentals" id="password-management-fundamentals"></a>
 

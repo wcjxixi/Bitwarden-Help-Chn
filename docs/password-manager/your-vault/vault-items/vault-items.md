@@ -1,8 +1,26 @@
-# 项目类型
+# =密码库项目
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/managing-items/)
 {% endhint %}
+
+## 项目类型 <a href="#item-types" id="item-types"></a>
+
+## 添加项目 <a href="#add-items" id="add-items"></a>
+
+## 管理项目 <a href="#manage-items" id="manage-items"></a>
+
+### 编辑 <a href="#edit" id="edit"></a>
+
+### 删除 <a href="#delete" id="delete"></a>
+
+#### 密码库回收站 <a href="#vault-trash" id="vault-trash"></a>
+
+### 克隆 <a href="#clone" id="clone"></a>
+
+## 共享项目 <a href="#share-items" id="share-items"></a>
+
+
 
 您知道 Bitwarden 能安全存储的不仅仅是用户名和密码吗？您可以在密码库中存储四种类型的项目：登录、支付卡、身份、安全笔记和 SSH 密钥：
 
@@ -232,5 +250,5 @@
 
 现在，您已了解密码库项目使用的基础知识，我们建议：
 
-* 使用[收藏](favorites.md)和[文件夹](folders.md)组织您的密码库项目
+* 使用[收藏](../vault-navigation/favorites.md)和[文件夹](../vault-navigation/folders.md)组织您的密码库项目
 * 将[自定义字段](custom-fields.md)、[TOTP 种子](../security-tools/totp.md)和[文件附件](file-attachments.md)添加到密码库项目

@@ -35,7 +35,7 @@ Bitwarden 网页 App
 2、为您的文件夹输入一个名称（例如 `Important Logins`），然后选择**保存**。
 
 {% hint style="success" %}
-为了使密码库更清爽，您可以[将文件夹嵌套在其他文件夹中](../your-vault/vault-items/folders.md#nested-folders)。
+为了使密码库更清爽，您可以[将文件夹嵌套在其他文件夹中](../your-vault/vault-navigation/folders.md#nested-folders)。
 {% endhint %}
 
 ### 添加登录 <a href="#add-a-login" id="add-a-login"></a>

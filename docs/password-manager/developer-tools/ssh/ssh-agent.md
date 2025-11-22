@@ -35,7 +35,7 @@ Flatpak 版本目前暂不支持 SSH 代理，[Snap 下载](https://bitwarden.co
 | 公钥   | 与您要连接的服务器共享的密钥的一部分                                                    |
 | 指纹   | 从公钥生成的短唯一字符串，用于识别。例如，可以使用指纹验证 SSH 签名的 Git 提交                          |
 
-存储在 Bitwarden 密码管理器中的 SSH 密钥可以访问 Bitwarden 功能，例如[文件夹](../../your-vault/vault-items/folders.md)、[收藏](../../your-vault/vault-items/favorites.md)、[主密码重新提示](../../your-vault/vault-items/vault-items.md#protect-individual-items)、笔记、[克隆项目](../../your-vault/vault-items/vault-items.md#clone)、[附件](../../your-vault/vault-items/file-attachments.md)和[自定义字段](../../your-vault/vault-items/custom-fields.md)等。
+存储在 Bitwarden 密码管理器中的 SSH 密钥可以访问 Bitwarden 功能，例如[文件夹](../../your-vault/vault-navigation/folders.md)、[收藏](../../your-vault/vault-navigation/favorites.md)、[主密码重新提示](../../your-vault/vault-items/vault-items.md#protect-individual-items)、笔记、[克隆项目](../../your-vault/vault-items/vault-items.md#clone)、[附件](../../your-vault/vault-items/file-attachments.md)和[自定义字段](../../your-vault/vault-items/custom-fields.md)等。
 
 ## 创建新的 SSH 密钥 <a href="#create-new-ssh-key" id="create-new-ssh-key"></a>
 
