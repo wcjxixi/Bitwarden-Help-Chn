@@ -1,14 +1,60 @@
-# 从浏览器扩展自动填充
+# =从浏览器扩展自动填充
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-browser/)
+对应的[官方文档地址](https://bitwarden.com/help/auto-fill-browser/)
 {% endhint %}
 
-{% hint style="success" %}
-如果您的浏览器扩展在自动填充特定站点的用户名和密码时遇到问题，使用[已链接的自定义字段](../more-autofill-options/auto-fill-custom-fields.md#using-linked-custom-fields)可以强制自动填充。
+Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站时，浏览器扩展程序会自动识别该网站，并将您密码库中匹配的凭据填充到登录字段中。您可以根据自己的喜好配置自动填充方式。
 
-此外，基本验证提示的工作方式与常规自动填充略有不同。有关更多信息，请参阅另一篇[基本验证提示](../more-autofill-options/basic-auth-prompts.md)的文章。
+{% hint style="info" %}
+[基本验证提示](../more-autofill-options/basic-auth-prompts.md)的工作方式与本文描述的自动填充方式不同。
 {% endhint %}
+
+## 设置自动填充 <a href="#setup-auto-fill" id="setup-auto-fill"></a>
+
+首先，所有浏览器扩展的自动填充方式都要求您的登录项目[已分配网站 URI](../troubleshoot-autofill/forming-uris-for-autofill.md)。这样才能将您保存的凭据关联到正确的网站。
+
+接下来，不同自动填充方式的配置和使用步骤各不相同，具体说明请参见下文。
+
+在**设置** → **自动填充**菜单中，某些选项适用于所有或大多数自动填充方式：
+
+* 为获得最佳性能，请勾选**将 Bitwarden 设为默认的密码管理器**并[停用浏览器的密码管理器](../troubleshoot-autofill/disable-a-browsers-built-in-password-manager.md)。这样可以防止浏览器的密码管理工具干扰 Bitwarden 的自动填充功能。
+* 如果您不希望在启用自动填充时自动复制 TOTP，请取消选中[**自动复制 TOTP**](autofill-from-browser-extensions.md#totp-autofill)。
+* 从**清除剪贴板**下拉菜单中，选择您偏好的时间间隔，以控制从您的密码库复制的值保留多长时间。
+* 选择您的**默认 URI 匹配检测**，即 Bitwarden 用于将网站与您保存的凭据配对的逻辑。除非[您的组织另有指定](../../../admin-console/oversight-visibility/enterprise-policies.md#default-uri-match-detection)，否则默认值为**基础域名**。
+* 选择并添加[**屏蔽域名**](../more-autofill-options/blocking-autofill.md)，以阻止在特定网站上自动填充。
+
+## 浏览器扩展中的自动填充方式 <a href="#autofill-methods-in-the-browser-extension" id="autofill-methods-in-the-browser-extension"></a>
+
+### 填充按钮 <a href="#fill-button" id="fill-button"></a>
+
+### 复制凭据 <a href="#copy-credentials" id="copy-credentials"></a>
+
+### 单击项目 <a href="#click-items" id="click-items"></a>
+
+### 拖放登录 <a href="#drag-and-drop-logins" id="drag-and-drop-logins"></a>
+
+## 其他填充方式 <a href="#drag-and-drop-logins" id="drag-and-drop-logins"></a>
+
+### 内嵌菜单 <a href="#inline-menu" id="inline-menu"></a>
+
+### 上下文菜单 <a href="#context-menu" id="context-menu"></a>
+
+### 键盘快捷键 <a href="#keyboard-shortcuts" id="keyboard-shortcuts"></a>
+
+### 页面加载时 <a href="#on-page-load" id="on-page-load"></a>
+
+## 解决浏览器扩展中的自动填充问题 <a href="#troubleshoot-autofill-from-the-browser-extension" id="troubleshoot-autofill-from-the-browser-extension"></a>
+
+### iframe 中的自动填充 <a href="#autofill-in-iframes" id="autofill-in-iframes"></a>
+
+## 自动填充不太常见的凭据 <a href="#autofill-less-common-credentials" id="autofill-less-common-credentials"></a>
+
+### TOTP 自动填充 <a href="#totp-autofill" id="totp-autofill"></a>
+
+### 使用 Bitwarden 中存储的通行密钥登录 <a href="#log-in-with-passkeys-stored-in-bitwarden" id="log-in-with-passkeys-stored-in-bitwarden"></a>
+
+
 
 使用 Bitwarden 浏览器扩展有很多自动填写凭据的方法！最基本的方法是在网站登录页面打开 Bitwarden 浏览器扩展，在**密码库**选项卡中选择建议项目的**填充**按钮：
 
