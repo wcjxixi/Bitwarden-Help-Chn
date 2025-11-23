@@ -34,7 +34,7 @@ iOS 上的自动填充有几种方式：
 
 要在 iOS 上激活键盘自动填充密码，请完成以下步骤。这也将激活用于通行密钥自动填充的上滑菜单：
 
-1、打开 iOS **️设置** App 然后**通用**。
+1、在您的设备上打开 iOS **️设置**然后**通用**。
 
 2、点击**自动填充与密码**。&#x20;
 
@@ -60,7 +60,7 @@ iOS 上的自动填充
 
 3、如果显示一个[匹配的登录](../troubleshoot-autofill/forming-uris-for-autofill.md)，请点击以自动填充。如果显示 **🔑密码**按钮，请点击它浏览您的密码库以搜索要使用的登录项目。如果显示 **🔑密码**按钮，可能是因为您的密码库中没有具有[匹配 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 的项目。
 
-{% hint style="success" %}
+{% hint style="info" %}
 遇到 `Biometric unlock disabled pending verification of master password`（生物识别解锁已禁用，等待验证主密码） 消息吗？了解[该怎么做](../auto-fill-faqs.md#q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password)。
 {% endhint %}
 
@@ -82,7 +82,7 @@ iOS 上的自动填充
 
 然后测试一下 App 扩展以确保其可以正常工作：
 
-1、、打开您设备的网页浏览器并导航一个您当前未登录的网站。
+1、打开您设备的网页浏览器并导航一个您当前未登录的网站。
 
 2、点击**分享**图标。
 

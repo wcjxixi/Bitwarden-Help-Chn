@@ -4,15 +4,19 @@
 对应的[官方文档地址](https://bitwarden.com/help/storing-passkeys/)
 {% endhint %}
 
-可以通过 Bitwarden Password Manager 存储和使用通行密钥。使用 Bitwarden 浏览器扩展和移动 App，用户可以登录自己喜欢的具有通行密钥登录功能的 App 和网站。通行密钥是一种安全、无密码的替代方案，可供用户跨设备登录各种服务。
+{% hint style="success" %}
+Bitwarden 提供[使用通行密钥登录 Bitwarden](../../../account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md) 以及[为其他网站和服务自动填充存储的通行密钥](autofill-passkeys.md)的功能。
+{% endhint %}
+
+可以通过 Bitwarden Password Manager 存储和使用通行密钥。使用 Bitwarden 浏览器扩展和移动 App，用户可以登录自己喜欢的支持通行密钥登录功能的常用 App 和网站。通行密钥是一种安全、无密码的替代方案，可供用户跨设备登录各种服务。
+
+通行密钥根据 [FIDO 联盟](https://fidoalliance.org/overview/)制定的标准开发，允许用户保护其账户安全，并绕过标准密码身份验证带来的漏洞（如网络钓鱼）。存储的通行密钥受到 Bitwarden 可信的端到端加密技术的保护。
 
 {% hint style="info" %}
 在 iOS 上，存储和使用通行密钥要求版本 17.0 或更高版本。[了解更多](../autofill-from/autofill-from-ios.md)。
 
-在 Android 上，存储和使用通行密钥要求 14.0 或更高版本。可能需要额外的设置步骤。[了解更多](../autofill-from/autofill-from-android.md)。
+在 Android 上，存储和使用通行密钥要求版本 14.0 或更高版本。可能需要额外的设置步骤。[了解更多](../autofill-from/autofill-from-android.md)。
 {% endhint %}
-
-通行密钥根据 [FIDO 联盟](https://fidoalliance.org/overview/)制定的标准开发，允许用户保护其账户安全，并绕过标准密码身份验证带来的漏洞（如网络钓鱼）。存储的通行密钥受到 Bitwarden 可信的端到端加密技术的保护。
 
 ## 什么是通行密钥？ <a href="#what-are-passkeys" id="what-are-passkeys"></a>
 
@@ -30,7 +34,7 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 保存和使用通行密钥是 Bitwarden 浏览器扩展和移动 App 的一项功能。其他 Bitwarden 客户端可用于查看已保存的通行密钥。
 
 * 在 iOS 上，存储和使用通行密钥要求版本 17.0 或更高版本。[了解更多](../autofill-from/autofill-from-ios.md)。
-* 在 Android 上，存储和使用通行密钥要求 14.0 或更高版本。可能需要额外的设置步骤。[了解更多](../autofill-from/autofill-from-android.md)。
+* 在 Android 上，存储和使用通行密钥要求版本 14.0 或更高版本。可能需要额外的设置步骤。[了解更多](../autofill-from/autofill-from-android.md)。
 {% endhint %}
 
 {% tabs %}

@@ -66,7 +66,7 @@
     * [键盘快捷键](docs/password-manager/your-vault/keyboard-shortcuts.md)
   * [自动填充](docs/password-manager/autofill/README.md)
     * [从 ... 自动填充](docs/password-manager/autofill/autofill-from/README.md)
-      * [=从浏览器扩展自动填充](docs/password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)
+      * [从浏览器扩展自动填充](docs/password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)
       * [从浏览器扩展自动保存](docs/password-manager/autofill/autofill-from/autosave-from-browser-extensions.md)
       * [从 iOS App 自动填充](docs/password-manager/autofill/autofill-from/autofill-from-ios.md)
       * [从 Android App 自动填充](docs/password-manager/autofill/autofill-from/autofill-from-android.md)
