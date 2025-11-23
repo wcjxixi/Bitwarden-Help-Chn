@@ -26,11 +26,65 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 
 ## 浏览器扩展中的自动填充方式 <a href="#autofill-methods-in-the-browser-extension" id="autofill-methods-in-the-browser-extension"></a>
 
+自动填充登录信息的最基本方式是与 Bitwarden 浏览器扩展交互。当您访问某个网站并且与至少一个项目的已保存的 URI 匹配时，该网站的匹配项目数量将显示在 Bitwarden 扩展图标的顶部。
+
+{% hint style="success" %}
+要隐藏匹配项目的总数，请转至 **⚙️设置** → **外观**，然后取消选中**在扩展图标上显示登录自动填充建议的数量**。
+{% endhint %}
+
+选择 **Bitwarden 扩展徽章**以打开您的密码库，匹配的项目将显示在顶部的自动填充建议部分。如果您想要包含支付卡或身份，请转至**设置** → **自动填充**，然后选中**在密码库视图中始终将支付卡显示为自动填充建议**或**在密码库视图中始终将身份显示为自动填充建议**。
+
+要查找项目，请选择 **☷筛选器图标**以打开并应用筛选器到**自动填充建议**和**所有项目**结果中：
+
+{% embed url="https://bitwarden.com/assets/12UsFuA2sxbUCBMIczJsxv/689221013fac56ddb555ed9dabddbdc9/screenshot_6.png?w=584&fm=avif" %}
+浏览器扩展筛选和建议
+{% endembed %}
+
 ### 填充按钮 <a href="#fill-button" id="fill-button"></a>
+
+要自动填充登录：
+
+1. 在网站的登录页面上，打开 Bitwarden 浏览器扩展。
+2. 转到**密码库**选项卡。
+3. 选择登录旁边的**填充**以输入。它可能位于**自动填充建议**部分的顶部：
+
+{% embed url="https://bitwarden.com/assets/1pamjhdWn7obh8UBxXcIPF/1841242fa5299a780d53f3ae70e546b3/screenshot_5.png?w=395&fm=avif" %}
+通过浏览器扩展自动填充
+{% endembed %}
+
+选择**填充**按钮会将凭据输入到已检测到的输入字段中。如果网页或服务包含多个具有相关 URI 的项目，Bitwarden 将始终自动填充上次使用的登录信息。
+
+{% hint style="info" %}
+如果目标字段位于[不受信任的 iframe](autofill-from-browser-extensions.md#autofill-in-iframes) 中，或者当前站点使用 HTTP（[项目已保存 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 要求使用 HTTPS）您可能会在自动填充之前收到警告。
+{% endhint %}
 
 ### 复制凭据 <a href="#copy-credentials" id="copy-credentials"></a>
 
+您也可以选择项目旁边的 **❐复制图标**。将出现一个菜单，您可以在其中选择**复制用户名**或**复制密码**：
+
+{% embed url="https://bitwarden.com/assets/7y8WE9sWACC2KLASo9yASw/5c5fa1150e5e4f4ded19baf0afecfa6e/Standard_Copy_icon.png?w=400&fm=avif" %}
+标准复制图标
+{% endembed %}
+
+或者，您可以在项目旁边添加三个快速复制操作按钮，专门将您的用户名、密码或验证码复制到剪贴板：
+
+{% embed url="https://bitwarden.com/assets/5w7lobEk81aOGfLKFjRp2e/d37711426641f91deb9ea28715901fb0/Quick_copy_icons.png?w=400&fm=avif" %}
+快速复制操作
+{% endembed %}
+
+该选项默认停用。要启用它，请转到**设置** → **外观**，然后打开**在密码库上显示快速复制操作**。
+
 ### 单击项目 <a href="#click-items" id="click-items"></a>
+
+或者，您可以设置浏览器扩展，当该项目出现在**自动填充建议**部分时，您只需单击项目上的任意位置即可自动填充。使用此选项时，不会显示**填充**按钮：
+
+{% embed url="https://bitwarden.com/assets/3tnagVMjtTufvRCrih3ctQ/b3698262ce7c19baeda6afc87c485167/2025-01-02_11-14-19.png?w=862&fm=avif" %}
+单击项目以自动填充
+{% endembed %}
+
+要激活此选项，请导航至**设置** → **外观**，然后切换**在自动填充建议中单击项目以自动填充**选项。
+
+启用此选项时，如果您想在浏览器扩展中打开项目，请选择 **≡菜单图标** → **查看**。
 
 ### 拖放登录 <a href="#drag-and-drop-logins" id="drag-and-drop-logins"></a>
 
@@ -64,37 +118,11 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 
 请注意，当您在试图登录的网站上保存有登录信息时，Bitwarden 浏览器扩展会覆盖一个通知气泡，报告您在该网站上的登录信息的数量。这些项目将显示在**自动填充建议**的顶部。您可以使用过筛选器下拉菜单筛选建议中的内容和所有项目列表中的显示内容，这些下拉菜单可以通过 **☷**&#x6309;钮显示或隐藏：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/12UsFuA2sxbUCBMIczJsxv/22c20404137193420d3b2d1f5fa8611f/2024-12-02_14-07-09.png?_a=DAJCwlWIZAAB" %}
-浏览器扩展筛选器和建议
-{% endembed %}
-
 {% hint style="success" %}
-如果需要，您可以在 ⚙️**设置** → **外观**菜单中的**在扩展图标上显示自动填充建议的登录数量**切换按钮来隐藏角标计数器。
+
 {% endhint %}
 
-选择**填充**按钮将在检测到的输入字段中自动填充信息。如果一个网页或服务有多个带有关联 URI 的项目，Bitwarden 将始终自动填充上次使用的登录项目。
 
-## 自定义自动填充行为
-
-### 单击项目以自动填充 <a href="#customizing-autofill-behaviorclick-items-to-autofill" id="customizing-autofill-behaviorclick-items-to-autofill"></a>
-
-您可以将浏览器扩展设置为在选择密码库项目时自动填充，而不是使用**填充**按钮。要激活此选项，请导航至**设置** → **外观**，然后切换**在自动填充建议中单击项目以自动填充**选项。
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3tnagVMjtTufvRCrih3ctQ/b3698262ce7c19baeda6afc87c485167/2025-01-02_11-14-19.png?_a=DAJCwlWIZAAB" %}
-单击项目以自动填充
-{% endembed %}
-
-激活后，从密码库视图中选择项目时（而不是使用**填充**按钮）将自动填充此项目。可以使用 **≡**&#x9009;项菜单来**查看**此项目。
-
-### 快速复制操作 <a href="#quick-copy-actions" id="quick-copy-actions"></a>
-
-除**填充**按钮外，您还可以使用**密码库**选项卡上的三个快速复制操作按钮，以专门将用户名、密码或验证码复制到剪贴板：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5w7lobEk81aOGfLKFjRp2e/07041024e69f8fae1892b7b56c7ff898/2024-12-17_09-32-41.png?_a=DAJCwlWIZAAB" %}
-快速复制操作
-{% endembed %}
-
-默认情况下，显示这些按钮的选项是关闭的，可以通过导航到**设置** → **外观**，然后将**在密码库上显示快速复制操作**选项切换为打开来激活。
 
 ## 内嵌自动填充菜单 <a href="#inline-auto-fill-menu" id="inline-auto-fill-menu"></a>
 
