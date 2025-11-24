@@ -46,11 +46,11 @@
 
 7、关闭设置选择器。
 
-8、仍然在配置设置界面，启用你选择的任何选项，并输入检索到的扩展 ID 和更新 URL，例如：
+{% hint style="success" %}
+在设置选项中，您还可以停用许多网页浏览器内置的密码管理器。通常，对于 Chrome 或基于 Chromium 内核的浏览器（例如 Microsoft Edge），此设置的名称为**启用将密码保存到密码管理器**或类似名称。
+{% endhint %}
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6lBFbAyf4DqoUbZL2mL6mb/e7c1f91a37d589610b57556666541858/2024-09-05_10-00-46.png?_a=DAJCwlWIZAAB" %}
-使用 Intune 部署浏览器扩展
-{% endembed %}
+8、仍然在配置设置界面，启用您选择的任何选项，并以 `<extension_id>;<update_url>` 格式输入获取到的扩展 ID 和更新 URL。
 
 9、选择**下一步**。
 

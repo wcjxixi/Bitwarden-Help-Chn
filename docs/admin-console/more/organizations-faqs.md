@@ -20,7 +20,7 @@
 
 高级个人方案可解锁高级密码安全和管理功能，包括高级 2FA 选项、Bitwarden 验证器（TOTP）、加密文件附件等。高级个人方案不包括安全数据共享。
 
-付费组织（家庭、团队或企业）自动为组织中已注册的每个用户提供高级功能（高级 2FA 选项、Bitwarden 验证器等）。
+付费版组织（家庭版、团队版或企业版）自动为组织中已注册的每个用户提供高级功能（高级 2FA 选项、Bitwarden 验证器等）。
 
 ## 组织管理 <a href="#organization-administration" id="organization-administration"></a>
 
@@ -99,6 +99,6 @@
 
 ## 组织安装 <a href="#organization-installations" id="organization-installations"></a>
 
-### 问：我可以为我的用户静默安装 Bitwarden 桌面应用程序吗？ <a href="#q-can-i-silently-install-the-bitwarden-desktop-app-for-my-users" id="q-can-i-silently-install-the-bitwarden-desktop-app-for-my-users"></a>
+### 问：我可以为我的用户静默安装 Bitwarden 桌面 App 吗？ <a href="#q-can-i-silently-install-the-bitwarden-desktop-app-for-my-users" id="q-can-i-silently-install-the-bitwarden-desktop-app-for-my-users"></a>
 
 **答：**&#x53EF;以。跨工作站静默安装桌面 App 时，请以管理员等特权账户身份执行此操作，并除了 `/S` 之外还要使用 `/allusers` 开关。如果是单用户安装，或者系统支持 `Logged on User`，请使用不带 `/allusers` 的 `/S`。

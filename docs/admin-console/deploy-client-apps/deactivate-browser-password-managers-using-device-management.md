@@ -288,9 +288,9 @@ chmod 644 /opt/firefox/distribution/policies.json
 
 {% hint style="success" %}
 如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Mac)](https://support.google.com/chrome/a/answer/7550274?hl=zh-Hans\&sjid=18069515108639844992-NC) 指南。
-
-有关其他信息，请参阅 Chrome 文档：[在 Mac 上设置 Chrome 浏览器](https://support.google.com/chrome/a/answer/7550274?hl=zh-Hans)。
 {% endhint %}
+
+更多信息，请参阅 Chrome 文档：[在 Mac 上设置 Chrome 浏览器](https://support.google.com/chrome/a/answer/7550274?hl=zh-Hans)。
 {% endtab %}
 
 {% tab title="Firefox" %}

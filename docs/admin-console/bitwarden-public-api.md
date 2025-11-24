@@ -22,7 +22,7 @@ Bitwarden 公共 API 为组织提供了一套用于管理成员、集合、群�
 * 对于自托管实例：`https://your.domain.com/api/docs/`
 
 {% hint style="info" %}
-所有企业和团队组织的客户均可访问 Bitwarden 公共 API。更多信息，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
+所有企业和团队组织的客户均可访问 Bitwarden 公共 API。更多信息，请参阅 [Password Manager 方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 {% endhint %}
 
 ## 端点 <a href="#endpoints" id="endpoints"></a>
@@ -136,6 +136,46 @@ Bitwarden 公共 API 使用传统的 HTTP 响应代码来表示 API 请求是成
 | `404 Not Found`                   | 所请求的资源不存在。                                                            |
 | `429 Too Many Requests`           | 太多请求太快到达 API。我们建议缩减请求数。                                               |
 | `500, 502, 503, 504 Server Error` | Bitwarden 端出现问题。这些情况很少见，如果发生，请[联系我们](https://bitwarden.com/contact/)。 |
+
+## 延续令牌 <a href="#continuation-token" id="continuation-token"></a>
+
+为返回超过 50 条日志的查询提供延续令牌，该值 `field: string` 在请求响应的底部提供，例如：
+
+```
+{
+  "object": "list",
+  "data": [
+    {
+      "externalId": "external_id_123456",
+      "object": "collection",
+      "id": "539a36c5-e0d2-4cf9-979e-51ecf5cf6593",
+      "groups": [
+        {
+          "id": "bfbc8338-e329-4dc0-b0c9-317c2ebf1a09",
+          "readOnly": true,
+          "hidePasswords": true,
+          "manage": true
+        }
+      ]
+    }
+  ],
+  "continuationToken": "string"
+}
+```
+
+以下端点存在 `continuationToken`：
+
+* `get/public/collections`
+* `get/public/events`
+* `get/public/groups`
+* `get/public/members`
+* `get/public/policies`
+
+&#x20;将 `continuationToken` 的值添加到现有请求中以查看分页结果，例如：
+
+```
+https://api.bitwarden.com/public/events?continuationToken=<token_value>
+```
 
 ## 进一步阅读 <a href="#further-reading" id="further-reading"></a>
 
