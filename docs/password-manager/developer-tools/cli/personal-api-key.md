@@ -37,7 +37,7 @@
 
 使用个人 API 密钥登录 CLI **建议用于自动化工作流程或对外部应用程序提供访问的场景**。要使用 API 密钥登录：
 
-```batch
+```shellscript
 bw login --apikey
 ```
 

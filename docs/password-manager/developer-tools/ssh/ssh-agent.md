@@ -61,7 +61,7 @@ Flatpak 版本目前暂不支持 SSH 代理，[Snap 下载](https://bitwarden.co
 
 1、在桌面或网页 App 的密码库视图中，选择 **✚新增**按钮，然后选择 **SSH 密钥**。
 
-{% hint style="info" %}
+{% hint style="success" %}
 组织[所有者、管理员和某些自定义用户](../../../admin-console/manage-members/member-roles.md)也可以直接从管理控制台执行此步骤，以跳过此过程中的一些步骤。
 {% endhint %}
 
@@ -403,7 +403,23 @@ git config gpg.ssh.program "C:/Windows/System32/OpenSSH/ssh-keygen.exe"
 
 2、在添加新 SSH 密钥界面，添加**名称**并选择**密钥类型**，选择 `Signing Key`。将 Bitwarden 密钥库中的**公钥**复制并粘贴到 GitHub 上的**密钥**字段中。
 
-3、使用 SSH 密钥以 SSH 方式克隆您的存储库：
+3、使用以下命令将 git 配置为使用 `allowedSignersFile`：
+
+```shellscript
+git config --global gpg.ssh.allowedSigners "$HOME/.ssh/allowedSigners"
+```
+
+4、将您的公钥添加到 allowedSignersFile 中：
+
+```shellscript
+# Create allowedSigners file
+touch ~/.ssh/allowedSigners
+
+# Add your public key pair you wish to trust
+ User1@Bitwarden.com ssh-ed25519 <Your_Public_Key>
+```
+
+5、使用 SSH 密钥以 SSH 方式克隆您的存储库：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/76Snkd9TQMrVMmegeJRqK/21836de7c7500b9ebdabaeb1d17b9659/2025-02-12_17-16-13.png?_a=DAJCwlWIZAAB" %}
 SSH 克隆
@@ -413,25 +429,25 @@ SSH 克隆
 git clone git@github.com:<USER>/<repository>.git
 ```
 
-4、使用终端或您喜欢的文本编辑器创建 Git 提交：
+6、使用终端或您喜欢的文本编辑器创建 Git 提交：
 
 ```bash
 git commit -m "This commit is signed using SSH"
 ```
 
-5、Bitwarden 将提示您对此密钥的使用进行授权：
+7、Bitwarden 将提示您对此密钥的使用进行授权：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/0aGz4U3YpB63EHRWVU2YY/6664aea9ab6649911947cac667549e7f/signing_key_approve.png?_a=DAJCwlWIZAAB" %}
 使用客户端授权 SSH
 {% endembed %}
 
-6、授权后，将初始化 SSH 密钥以批准提交。现在您可以推送提交：
+8、授权后，将初始化 SSH 密钥以批准提交。现在您可以推送提交：
 
 ```bash
 git push
 ```
 
-7、通过导航到 GitHub commits 以验证您在 Github 上的提交：
+9、通过导航到 GitHub commits 以验证您在 Github 上的提交：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1PR4Sss3Pvf3anlau5AlgC/ecfdb02b50fb83f59a21ebc7ed550042/2025-02-12_14-51-41.png?_a=DAJCwlWIZAAB" %}
 
