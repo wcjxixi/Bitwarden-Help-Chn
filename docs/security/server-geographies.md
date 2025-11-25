@@ -50,7 +50,7 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 ```
 
 {% hint style="info" %}
-`globalSettings__baseServiceUri__cloudRegion` 的值必须与[获取安装 ID 和密钥](https://bitwarden.com/host/)时选择的数据区域一致。
+`globalSettings__baseServiceUri__cloudRegion` 的值必须与您获取[安装 ID 和密钥](https://bitwarden.com/host/)时选择的数据区域一致。
 {% endhint %}
 
 ## 迁移到另一个云 <a href="#migrate-to-another-cloud" id="migrate-to-another-cloud"></a>
@@ -93,6 +93,6 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 **答**：完整的手动迁移涉及在首选区域创建新账户，并开始新组织的创建过程。新组织配置完成后，重新邀请用户，然后从旧组织导出密码库数据并导入到新组织中。用户需要手动导出/导入其个人密码库。
 
-#### 问：如果我们迁移了企业方案，我已赞助家庭方案会发生什么情况？ <a href="#q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan" id="q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan"></a>
+#### 问：如果我们迁移了企业版方案，我已赞助的家庭版方案会发生什么情况？ <a href="#q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan" id="q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan"></a>
 
-答：企业员工的免费家庭方案必须与赞助方案位于同一区域。如果您的企业方案迁移到其他地区，您的家庭方案赞助将终止。您需要迁移家庭方案，然后按照[兑换家庭赞助](../plans-and-pricing/password-manager/families-for-enterprise.md)文章中的步骤赞助新方案。
+**答**：企业员工的免费家庭版方案必须与赞助方案位于同一区域。如果您的企业版方案迁移到其他地区，您的家庭版方案赞助将终止。您需要迁移家庭版方案，然后按照[兑换家庭赞助](../plans-and-pricing/password-manager/families-for-enterprise.md)文章中的步骤赞助新方案。
