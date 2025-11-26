@@ -12,9 +12,9 @@
 
 通行密钥是一种身份验证形式，可让您快速创建和登录账户，而无需使用安全性较低的密码。这种一步到位的安全登录方法取代了传统的身份验证方法以及双因素身份验证 (2FA) 过程。更妙的是，有了通行密钥，您再也不会创建弱密码了，因为您再也不需要创建密码了。
 
-### 通行密钥可以取代如 Yubikey 物理硬件钥匙吗？ <a href="#do-passkeys-replace-physical-yubikeys" id="do-passkeys-replace-physical-yubikeys"></a>
+### 通行密钥会取代物理硬件钥匙（例如 YubiKey）吗？ <a href="#do-passkeys-replace-physical-yubikeys" id="do-passkeys-replace-physical-yubikeys"></a>
 
-现代化的 Yubikey 可以作为一种通行密钥的形式。具体来说，它们就是所谓的安全密钥或「设备绑定的通行密钥」- 密钥本身保存在小型设备上，并且从不同步或备份。这可能会使它们比同步通行密钥更难使用，但在某些情况下可能更有用。
+现代化的 YubiKey 可以作为一种通行密钥的形式。具体来说，它们就是所谓的安全密钥或「设备绑定的通行密钥」- 密钥本身保存在小型设备上，并且从不同步或备份。这可能会使它们比同步通行密钥更难使用，但在某些情况下可能更有用。
 
 ### 通行密钥与无密码相同吗？ <a href="#are-passkeys-the-same-as-passwordless" id="are-passkeys-the-same-as-passwordless"></a>
 
