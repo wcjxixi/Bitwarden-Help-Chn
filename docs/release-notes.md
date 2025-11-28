@@ -1079,7 +1079,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 * **Fastmail 电子邮件别名集成**：将 Bitwarden 用户名生成器连接到 Fastmail，以方便创建其电子邮件别名（参阅[这里](password-manager/your-vault/security-tools/generator.md#username-types)）。
 * **提供商门户更新**：提供商门户主界面现在具有每一个客户组织的一目了然的席位和方案报告。
 * **组织密码库导出事件**：当所有者或管理员执行密码库导出时，该操作现在将记录在组织的事件日志中（参阅[这里](admin-console/oversight-visibility/event-logging/event-logs.md#organization-events)）。
-* **浏览器扩展 - 支持预配置环境 URL**：自托管客户现在可以为浏览器扩展预配置环境 URL，通过使用端点管理来部署您的配置，从而简化最终用户的部署（参阅[这里](broken-reference)）。
+* **浏览器扩展 - 支持预配置环境 URL**：自托管客户现在可以为浏览器扩展预配置环境 URL，通过使用端点管理来部署您的配置，从而简化最终用户的部署（参阅[这里](/broken/pages/-MdSA_S_8LzDH82OrFhT#liu-lan-qi-kuo-zhan)）。
 * **移动端 - 更新至 Bitwarden Authenticator**：移动 App 现在有一个验证码界面，可让您快速轻松地访问您的所有 TOTP（参阅[这里](password-manager/your-vault/security-tools/totp.md#viewing-totp-codes)）。我们还改进了通过移动 App 将 TOTP 代码添加到密码库项目的过程（参阅[这里](password-manager/your-vault/security-tools/totp.md#scan-a-qr-code)）。
 * **CLI - `serve` 来源保护**：`serve` 命令现在将默认阻止任何使用 `Origin` 标头发出的请求（参阅[这里](password-manager/developer-tools/cli/password-manager-cli.md#serve)）。
 

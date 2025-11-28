@@ -421,11 +421,6 @@
   * [MSP 或经销商](courses/password-manager/partner.md)
 * [Secrets Manager](courses/get-to-know-secrets-manager.md)
 * [Passwordless.dev](courses/get-to-know-passwordless.dev.md)
-* [\*使用 Bitwarden 的第一步](courses/first-steps-with-bitwarden.md)
-* [\*了解 Password Manager](courses/get-to-know-password-manager.md)
-* [\*Bitwarden 高级用户](courses/bitwarden-power-users.md)
-* [\*面向企业管理员的 Bitwarden](courses/bitwarden-for-business-admins.md)
-* [\*托管服务提供商](courses/bitwarden-for-msps.md)
 
 ## 附录 <a href="#appendix" id="appendix"></a>
 

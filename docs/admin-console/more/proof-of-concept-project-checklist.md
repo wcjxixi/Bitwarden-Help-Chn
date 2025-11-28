@@ -38,7 +38,7 @@
 
 我们看过很多部署，发现采取以下行动可以为成功的 PoC 和用户的成功采用做出积极贡献：
 
-<table><thead><tr><th width="150">步骤</th><th width="150">关键人员</th><th>操作</th><th width="150">资源</th></tr></thead><tbody><tr><td>确定向第一轮用户推广的时间安排</td><td>高层领导 + 安全团队</td><td>有很多不同的策略来推广 Bitwarden。使用最适合您的团队的步调。</td><td></td></tr><tr><td>草拟有关 Bitwarden 推广的内部信息</td><td>内部培训/经理</td><td>Bitwarden 提供了许多资源来帮助用户快速采用，请通过<strong>资源</strong>一栏中的链接查看资料。</td><td><p><a href="http://youtube.com/bitwarden">Bitwarden Youtube 频道</a><br></p><p><a href="../../../">帮助中心</a></p><p></p><p><a href="broken-reference">学习中心</a></p></td></tr></tbody></table>
+<table><thead><tr><th width="150">步骤</th><th width="150">关键人员</th><th>操作</th><th width="150">资源</th></tr></thead><tbody><tr><td>确定向第一轮用户推广的时间安排</td><td>高层领导 + 安全团队</td><td>有很多不同的策略来推广 Bitwarden。使用最适合您的团队的步调。</td><td></td></tr><tr><td>草拟有关 Bitwarden 推广的内部信息</td><td>内部培训/经理</td><td>Bitwarden 提供了许多资源来帮助用户快速采用，请通过<strong>资源</strong>一栏中的链接查看资料。</td><td><p><a href="http://youtube.com/bitwarden">Bitwarden Youtube 频道</a><br></p><p><a href="../../../">帮助中心</a></p><p></p><p><a href="/broken/pages/KoHOGYpd6WWsbnxeSFCt">学习中心</a></p></td></tr></tbody></table>
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
