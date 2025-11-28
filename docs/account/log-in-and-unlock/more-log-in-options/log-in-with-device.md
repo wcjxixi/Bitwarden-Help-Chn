@@ -4,9 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/log-in-with-device/)
 {% endhint %}
 
-虽然大多数人都使用主密码登录他们的 Bitwarden 密码库，但还有一种更方便的方法，叫做无密码验证。使用**设备登录**，当您在一台设备上登录 Bitwarden 时，您可以选择使用另一台已登录的网页 App、移动 App 或桌面 App 来批准这些验证请求，而无需输入主密码。
-
-设备登录可以在网页 App、浏览器扩展、移动 App 或桌面 App 上启动。这些 App 发出的请求可在网页 App、移动 App 或桌面 App 上批准。
+虽然大多数人都使用主密码登录他们的 Bitwarden 密码库，但还有一种更方便的方法，称为无密码身份验证。使用**设备登录**，当您在一台设备上登录 Bitwarden 时，您可以选择使用已登录的其他 Bitwarden App 来批准身份验证请求，而无需输入主密码。
 
 [了解我们的零知识加密实施方案](log-in-with-device.md#how-it-works)。
 
@@ -14,13 +12,13 @@
 
 要设置设备登录：
 
-* 至少正常登录一次发起 App（网页 App、浏览器扩展、桌面或移动 App），以便 Bitwarden 可以识别您的设备。
+* 至少正常登录一次发起 App（网页 App、浏览器扩展、桌面 App 或移动 App），以便 Bitwarden 可以识别您的设备。
 
 {% hint style="info" %}
 使用隐身模式或隐私浏览会阻止 Bitwarden 注册您的浏览器，因此您将无法在隐私浏览器窗口中使用设备登录。
 {% endhint %}
 
-* 在用于批准的 App （网页 App、移动 App 或桌面 App）上拥有认可的账户。要认可该账户，您必须随时已成功登录到该设备。
+* 在用于批准的 App （网页 App、浏览器扩展、移动 App 或桌面 App）上拥有认可的账户。要认可该账户，您必须随时已成功登录到该设备。
 
 {% hint style="info" %}
 作为企业组织的成员，您需要遵守[要求 SSO 策略](../../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)，如果您无法使用**设备登录**选项，则需要改用 [SSO 登录](../using-single-sign-on/using-login-with-sso.md#login-using-sso)。
@@ -130,7 +128,7 @@
 
 当发起设备登录时：
 
-1. 发起客户端向 Bitwarden 数据库中的身份验证请求表发送一个请求，其中包括账户电子邮箱地址、唯一的**身份验证请求公钥ᵃ** 和访问代码。已注册的设备，即已登录并在 Bitwarden 数据库中存储了[特定于设备的 GUID](../../../security/data/administrative-data.md) 的客户端，将收到此请求。
+1. 发起客户端向 Bitwarden 数据库中的身份验证请求表发送一个请求，其中包括账户电子邮箱地址、唯一的**身份验证请求公钥ª** 和访问代码。已注册的设备，即已登录并在 Bitwarden 数据库中存储了[特定于设备的 GUID](../../../security/data/administrative-data.md) 的客户端，将收到此请求。
 2. 请求获得批准后，批准客户端使用此请求中包含的**身份验证请求公钥**对账户的**用户加密密钥**进行加密。
 3. 批准客户端然后将**用户加密密钥**发送到身份验证请求记录，并将此请求标记为已完成。
 4. 发起客户端请求已加密的**用户加密密钥**。
