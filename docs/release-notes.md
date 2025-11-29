@@ -30,7 +30,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端 App（桌面端、浏
 ### Password Manager
 
 * **通行密钥登录支持浏览器扩展**：用户现在可[使用通行密钥](account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)登录浏览器扩展。当前支持 Chrome 和基于 Chromium 的浏览器（例如 Edge）。
-* **Windows Hello 更新**：Windows 桌面 App 重启后，您现在可以立即使用生物识别解锁密码库，而无需输入主密码或 PIN 码。在 [Windows 桌面 App 中设置生物识别](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-desktop-app)时，取消勾选 **App 重启时要求主密码或 PIN 码**选项。
+* **Windows Hello 更新**：Windows 桌面 App 重启后，您现在可以立即使用生物识别解锁密码库，而无需输入主密码或 PIN 码。在 [Windows 桌面 App 中设置生物识别](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-desktop-app)时，请取消勾选 **App 重启时要求主密码或 PIN 码**选项。
 * **网页 App 右键点击**：在网页 App 的密码库视图中，现在可通过右键点击调出与 **≡**&#x9009;项菜单相同的操作菜单。
 * **改进了高级订阅注册流程**：希望享受 Bitwarden 付费方案的用户将可以更轻松地升级账户。在网页 App 导航栏中选择**升级您的方案**按钮，即可了解更多信息并选择付费方案。
 
