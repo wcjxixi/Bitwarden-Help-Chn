@@ -6,7 +6,7 @@
 
 [创建集合](about-collections.md)时，您可以分配现有[群组](../../manage-members/groups.md)或成员的访问权限。您可以随时通过 Password Manager 网页 App 修改谁可以访问某个集合：
 
-1、在网页 App 中，打开集合然后选择 按钮以查看您的选项：
+1、在网页 App 中，打开集合然后选择 **⋁**&#x6309;钮以查看您的选项：
 
 {% embed url="https://bitwarden.com/assets/m7O6TwNqNzsOCJNp1caor/914bfbf2192a2cccbe6c3fb58c11a73d/2024-12-02_15-40-10.png?w=1040&fm=avif&q=80" %}
 管理集合

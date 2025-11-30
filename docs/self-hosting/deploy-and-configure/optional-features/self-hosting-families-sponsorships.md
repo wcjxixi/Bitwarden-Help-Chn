@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/families-for-enterprise-self-hosted/)
 {% endhint %}
 
-企业组织成员可获得**免费的家庭组织**赞助，适用于新的或现有的家庭组织，可直接从网页密码库兑换。&#x20;
+[企业组织](../../../admin-console/organizations-overview.md#types-of-organizations)成员可获得**免费的家庭组织**赞助，适用于新的或现有的家庭组织，可直接从网页密码库兑换。&#x20;
 
 {% hint style="info" %}
 如果您想了解有关如何为非赞助自托管家庭组织更新许可证的信息，请参阅[此处](../../licensing-on-premise.md#update-organization-license)。

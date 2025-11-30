@@ -25,9 +25,9 @@
 {% hint style="info" %}
 集合可以被嵌套，以将其逻辑地组织在您的密码库中：
 
-<img src="https://bitwarden.com/assets/7EXnVptHEKQkSfKY1FsOmI/5c41733125c384cddb10bb8ef68fc7a0/2024-12-02_15-37-51.png?w=902&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
+<img src="https://bitwarden.com/assets/7EXnVptHEKQkSfKY1FsOmI/7ffee8ed6f5712cc9fa4419c4eb88b11/Nested_collections_in_filter_column.png?w=250&#x26;fm=avif" alt="" data-size="original">
 
-嵌套集合**仅用于显示目的**。它们不会从其「父」集合中继承项目、访问或权限。
+嵌套集合**仅用于显示目的**。它们不会从其「父」集合中继承项目、访问权限或权限。
 {% endhint %}
 
 3、在**访问权限**选项卡中，[为现有的成员或群组分配访问权限](assign-users-to-collections.md)。对于每个选择，分配适当的[权限](collection-permissions.md)级别。作为集合的创建者，您将拥有「**可以管理**」的权限。
@@ -35,7 +35,7 @@
 4、选择**保存**以完成集合的创建。
 
 {% hint style="success" %}
-外部标识 (External Id) 字段只有在使用[目录连接器](../../manage-members/directory-connector/about-directory-connector.md) (Directory Connector) 时才相关，使用 [SCIM](../../manage-members/scim/about-scim.md)、目录连接器或 API 进行配置时，该字段将在对话框中显示。
+**外部标识** (External Id) 字段只有在使用[目录连接器](../../manage-members/directory-connector/about-directory-connector.md) (Directory Connector) 时才相关，使用 [SCIM](../../manage-members/scim/about-scim.md)、目录连接器或 API 进行配置时，该字段将在对话框中显示。
 {% endhint %}
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>

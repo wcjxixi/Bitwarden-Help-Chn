@@ -34,7 +34,7 @@
 
 2、在 `managed` 文件夹中创建一个 `bitwarden.json` 文件，内容如下：
 
-```bash
+```json
 {
   "3rdparty": {
   "extensions": {
@@ -52,7 +52,7 @@
 
 大多数安装只需要 `"base":` URL，但某些独特的设置可能要求您为每个服务单独输入 URL：
 
-```bash
+```json
 {
   "3rdparty": {
   "extensions": {
@@ -219,7 +219,7 @@ chmod -R 755 /etc/firefox/policies
 
 3、在 `/etc/firefox/policies` 中创建 `policies.json` 文件，并添加以下内容：
 
-```bash
+```json
 {
  "policies": {
     "3rdparty": {
@@ -237,7 +237,7 @@ chmod -R 755 /etc/firefox/policies
 
 大多数安装只需要 `"base":` URL，但某些独特的设置可能要求您为每个服务单独输入 URL：
 
-```bash
+```json
 {
  "policies": {
     "3rdparty": {
@@ -309,7 +309,7 @@ xattr -r -d com.apple.quarantine /Applications/Firefox.app
 
 3、在 `distribution` 文件夹中创建 `policies.json` 文件，并添加以下内容：
 
-```bash
+```json
 {
  "policies": {
     "3rdparty": {
@@ -327,7 +327,7 @@ xattr -r -d com.apple.quarantine /Applications/Firefox.app
 
 大多数安装只需要 `"base":` URL，但某些独特的设置可能要求您为每个服务单独输入 URL：
 
-```bash
+```json
 {
  "policies": {
     "3rdparty": {
@@ -356,7 +356,7 @@ xattr -r -d com.apple.quarantine /Applications/Firefox.app
 {% hint style="info" %}
 为了将 Bitwarden 浏览器扩展集中部署到 EU 服务器，必须将 `base` 和 `notifications` 设置到 EU 云。例如：
 
-```
+```json
 "base": "https://vault.bitwarden.eu"
 "notifications": "https://notifications.bitwarden.eu"
 ```
@@ -378,7 +378,7 @@ xattr -r -d com.apple.quarantine /Applications/Firefox.app
 
 4、编辑 `data.json` 以根据需要配置桌面 App。特别是创建以下对象，以便使用自托管服务器 URL 配置应用程序：
 
-```bash
+```json
  "global_environment_environment": {
     "region": "Self-hosted",
     "urls": {
