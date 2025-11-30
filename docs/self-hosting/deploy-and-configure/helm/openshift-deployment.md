@@ -6,6 +6,28 @@
 
 本文探讨了如何根据 OpenShift 特定功能调整您的 [Bitwarden 自托管 Helm Chart 部署](self-host-with-helm.md)。
 
+## 要求 <a href="#requirements" id="requirements"></a>
+
+在继续安装之前，请确保满足以下要求：
+
+* 已安装 [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)。
+* 已安装 [Helm 3](https://helm.sh/docs/intro/install/)。
+* 您拥有 SSL 证书和密钥，或者可以通过证书提供商创建 SSL 证书和密钥。
+* 您拥有 SMTP 服务器或可以访问云 SMTP 提供商。
+* 一个支持 ReadWriteMany 的[存储类](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)。
+* 您有一个从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装 ID 和密钥。
+
+### 无根模式要求 <a href="#rootless-requirements" id="rootless-requirements"></a>
+
+Bitwarden 会在启动时检测您的环境是否限制了用户容器的运行身份，并在检测到限制时自动以无根模式启动部署。要成功以无根模式部署，需满足以下两个选项之一：
+
+* 部署外部 MSSQL 数据库，而不是 Helm 图表中默认包含的 SQL 容器。
+* 使用服务账户、pod 安全上下文或其他方法为包含的 SQL 容器分配高级权限。
+
+{% hint style="info" %}
+虽然 Microsoft 要求 SQL 容器必须以 root 身份运行，但在执行应用程序代码之前，容器启动将逐步降级至非 root 用户。
+{% endhint %}
+
 ## OpenShift 路由 <a href="#openshift-routes" id="openshift-routes"></a>
 
 这个示例将演示 [OpenShift 路由](https://docs.openshift.com/container-platform/3.11/architecture/networking/routes.html#overview)而不是默认的入口控制器。
@@ -16,7 +38,7 @@
 
 2、通过指定 `ingress.enabled: false` 禁用默认的入口
 
-```bash
+```yml
 general:
   domain: "replaceme.com"
   ingress:
@@ -49,7 +71,7 @@ general:
 此示例将命令记录到您的 shell 历史记录中。可以考虑使用其他方法来安全地设置机密。
 {% endhint %}
 
-```bash
+```yml
 oc create secret generic custom-secret -n bitwarden \
     --from-literal=globalSettings__installation__id="REPLACE" \
     --from-literal=globalSettings__installation__key="REPLACE" \
@@ -61,56 +83,3 @@ oc create secret generic custom-secret -n bitwarden \
     --from-literal=SA_PASSWORD="REPLACE" # If using SQL pod 
     # --from-literal=globalSettings__sqlServer__connectionString="REPLACE" # If using your own SQL server
 ```
-
-## 创建服务账户 <a href="#create-a-service-account" id="create-a-service-account"></a>
-
-OpenShift 中需要一个服务账户，因为每个容器都需要在启动时运行提升的命令。这些命令被 OpenShift 的受限 SCC 所阻止。我们需要创建一个服务账户并将其分配给 `anyuid` SCC。
-
-1、请使用 `oc` 命令行工具运行以下命令：
-
-```bash
-oc create sa bitwarden-sa
-oc adm policy add-scc-to-user anyuid -z bitwarden-sa
-```
-
-2、接下来，更新 `my-values.yaml` 以使用新的服务账户。将以下键设置为上一步创建的服务账户 `bitwarden-sa` 的名称：
-
-```bash
-component.admin.podServiceAccount
-component.api.podServiceAccount
-component.attachments.podServiceAccount
-component.events.podServiceAccount
-component.icons.podServiceAccount
-component.identity.podServiceAccount
-component.notifications.podServiceAccount
-component.scim.podServiceAccount
-component.sso.podServiceAccount
-component.web.podServiceAccount
-database.podServiceAccount
-```
-
-这是在 `my-values.yaml` 文件中的一个例子：
-
-```bash
-component:
-  # The Admin component
-  admin:
-    # Additional deployment labels
-    labels: {}
-    # Image name, tag, and pull policy
-    image:
-      name: bitwarden/admin
-    resources:
-      requests:
-        memory: "64Mi"
-        cpu: "50m"
-      limits:
-        memory: "128Mi"
-        cpu: "100m"
-    securityContext:
-    podServiceAccount: bitwarden-sa
-```
-
-{% hint style="info" %}
-您可以创建自己的 SCC 来微调这些 Pod 的安全性。[在 OpenShift 中管理 SCC](https://cloud.redhat.com/blog/managing-sccs-in-openshift) 描述了开箱即用的 SSC，以及如何根据需要创建自己的 SSC。
-{% endhint %}

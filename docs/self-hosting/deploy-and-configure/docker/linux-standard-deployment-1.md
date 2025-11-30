@@ -6,7 +6,7 @@
 
 这篇文章将指导您手动安装和部署 Bitwarden 到您自己的服务器。请查看 Bitwarden [软件发布支持](../../../security/software-development/software-release-support.md)文档。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **手动安装仅适合高级用户使用。**&#x4EC5;当您非常熟悉 Docker 技术，并且希望对您的 Bitwarden 安装进行更多控制时才可以进行此操作。
 
 手动安装缺乏自动更新 Bitwarden 安装所需的某些依赖项的能力。当你将 Bitwarden 从一个版本升级到下一个版本时，你将负责修改所需的环境变量，修改 nginx 的 `default.conf`，修改 `docker-compose.yml` 等等。
@@ -16,9 +16,9 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
-<mark style="color:red;">ª</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
+<mark style="color:red;">**ª**</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
 
 此外，如果要构建自己的 Bitwarden 镜像，还需要使用与 Bitwarden 相同 .NET 版本的官方 .NET Core Runtime 镜像（从 [DockerHub](https://hub.docker.com/_/microsoft-dotnet-aspnet) 下载）。您必须使用 Debian 或 Ubuntu 版本。
 

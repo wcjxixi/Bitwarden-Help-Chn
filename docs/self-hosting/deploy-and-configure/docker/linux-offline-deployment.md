@@ -8,7 +8,7 @@
 
 > **\[译者注]**：[网闸](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8) (air-gapped) 网络，是指与外部网络（如互联网或其他外部系统）完全隔离的计算机网络。这种隔离通过物理或逻辑手段实现，确保网络无法与外部环境进行数据交换，从而增强安全性。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **手动安装仅适合高级用户使用。**&#x4EC5;当您非常熟悉 Docker 技术，并且希望对您的 Bitwarden 安装进行更多控制时才可以进行此操作。
 
 手动安装缺乏自动更新 Bitwarden 安装所需的某些依赖项的能力。当你将 Bitwarden 从一个版本升级到下一个版本时，你将负责修改所需的环境变量，修改 nginx 的 `default.conf`，修改 `docker-compose.yml` 等等。
@@ -18,9 +18,9 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
-<mark style="color:red;">ª</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
+<mark style="color:red;">**ª**</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
 
 另外，请确保满足以下要求：
 
@@ -205,9 +205,7 @@ docker-compose -f ./docker/docker-compose.yml up -d
 docker ps
 ```
 
-{% embed url="https://bitwarden.com/_gatsby/image/44cd09376223f66d253aa2a2c26bf420/d335a0afdef5beeea3a4ce0a3f3dcc88/docker-healthy.webp?eu=d88606e2e2cca8840d3af6d66177626be13b5faaaa5330d93860edaa1dfbca8f72f1105723c77ab1286b58dcd7b645ec64cf7a684be8d8dac7bb1ffce964ff0d54805bbc66e67a5f156f84bdbaea191c35974d0de29d9b4cf53c3197b0f7f46e47055834af38e6d2aaf33432b8de6835f5b5c56f62bffa028a130405be62148f03bf94996e59b4d1b019e8e7e6ae0ec999e7250f428ef7662b214f4e50b92bbaa1e055276d2e435f2a9af00b9c34d4ab6449307f1a074ae9276487&a=w%3D850%26h%3D126%26fm%3Dwebp%26q%3D75&cd=2022-12-09T17%3A18%3A21.193Z" %}
-显示健康容器的列表
-{% endembed %}
+<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/e_vectorize/q_auto/f_svg/v1/ctf/7rncvj1f8mw7/3Sq7MaJZ1jaEJUCW44wmwj/0671877450882e4c9f3a8d614bafd734/docker-healthy.png?_a=DAJCwlWIZAAB" alt=""><figcaption><p>显示健康容器的列表</p></figcaption></figure>
 
 恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
 

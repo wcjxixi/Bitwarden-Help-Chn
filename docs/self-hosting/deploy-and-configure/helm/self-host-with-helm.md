@@ -18,8 +18,8 @@
 
 * 已安装 [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)。
 * 已安装 [Helm 3](https://helm.sh/docs/intro/install/)。
-* 您拥有 SSL 证书和密钥，或者可以通过证书提供商创建 SSL 证书和密钥。
-* 您拥有 SMTP 服务器或可以访问云 SMTP 提供商。
+* 您拥有 SSL 证书和密钥，或者可以通过证书提供程序创建 SSL 证书和密钥。
+* 您拥有 SMTP 服务器或可以访问云 SMTP 提供程序。
 * 一个支持 ReadWriteMany 的[存储类](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)。
 * 您有一个从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装 ID 和密钥。
 

@@ -6,7 +6,7 @@
 
 ## 服务器部署的默认数据库 <a href="#default-database-for-server-deployments" id="default-database-for-server-deployments"></a>
 
-除 [Unified](../docker/unified-deployment-beta.md)（统一）部署外，所有 Bitwarden 自托管服务器部署默认使用 MSSQL Express 镜像。这将您的加密密码库数据与应用程序容器一起部署，并通过确保更新、维护和备份与代码的其余部分同时进行，从而简化部署流程。
+除 [Unified](../docker/lite-deployment.md)（统一）部署外，所有 Bitwarden 自托管服务器部署默认使用 MSSQL Express 镜像。这将您的加密密码库数据与应用程序容器一起部署，并通过确保更新、维护和备份与代码的其余部分同时进行，从而简化部署流程。
 
 此默认数据库不需要额外许可，并已按照 Bitwarden 标准预配置，以安全存储并自动备份密码库数据（[了解更多](../../backup-server-data.md)）。
 
@@ -16,15 +16,17 @@
 
 无论您是使用附带的 MSSQL Express 映像还是您自己的外部 MSSQL 服务器或集群，标准 Bitwarden 部署当前都必须使用 MSSQL。
 
-## 统一部署的数据库 <a href="#databases-for-unified-deployments" id="databases-for-unified-deployments"></a>
+## Lite 部署的数据库 <a href="#databases-for-lite-deployments" id="databases-for-lite-deployments"></a>
 
-Bitwarden Unified（统一）自托管部署不附带内置数据库，但可以连接到现有的 MySQL/MariaDB、MSSQL、SQLite 或 PostgreSQL 数据库（[了解更多](../docker/unified-deployment-beta.md)）。由于该数据库不与应用程序容器不在同一位置，因此从基础设施角度来看，数据库的维护（包括更新、维护和备份）需要单独管理。
+Bitwarden Lite 自托管部署不附带内置数据库，但可以连接到现有的 MySQL/MariaDB、MSSQL、SQLite 或 PosgreSQL 数据库（[了解更多](../docker/lite-deployment.md)）。由于该数据库不与应用程序容器不在同一位置，因此从基础架构角度来看，数据库的维护（包括更新、维护和备份）需要单独管理。
+
+只有 Lite 部署支持这些数据库选项，标准部署需要 MSSQL。
 
 ## 可选的数据库任务 <a href="#optional-database-jobs" id="optional-database-jobs"></a>
 
 ### 数据库准备 <a href="#database-preparation" id="database-preparation"></a>
 
-在非统一自托管部署中，Bitwarden 会检查构造的连接字符串中指定的数据库是否存在，如果不存在，则会创建它。此任务需要已配置的 SQL 用户在数据库服务器中具有管理员权限。权限不足将导致此任务失败。
+在非 Lite 自托管部署中，Bitwarden 会检查构造的连接字符串中指定的数据库是否存在，如果不存在，则会创建它。此任务需要已配置的 SQL 用户在数据库服务器中具有管理员权限。权限不足将导致此任务失败。
 
 如果您正在部署自己的外部数据库，请通过在 `global.override.env` 文件中设置以下环境变量来禁用此部署步骤：
 

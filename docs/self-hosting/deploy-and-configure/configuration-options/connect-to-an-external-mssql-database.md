@@ -7,9 +7,9 @@
 默认情况下，Bitwarden 的自托管实例将使用作为[安装设置](../docker/linux-standard-deployment.md)的正常部分而创建的 Microsoft SQL Server（MSSQL）数据库，但您也可以将 Bi​​twarden 配置为使用外部 MSSQL 数据库。
 
 {% hint style="info" %}
-Bitwarden **仅支持并推荐 SQL Server 2022**。对 Server 2017 和 Server 2019 的主流支持已结束。如果 Bitwarden 实现了特定 SQL Server 版本上不可用的功能，则此处以及给定版本的[发行记录](../../../release-notes.md)中将注明不再支持特定 SQL Server 版本。
+Bitwarden **仅支持并推荐 SQL Server 2022**。了解 [Windows](https://learn.microsoft.com/zh-cn/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server-2022?view=sql-server-ver17) 和 [Linux](https://learn.microsoft.com/zh-cn/sql/linux/sql-server-linux-setup?view=sql-server-ver16#supported-platforms) 上 SQL Server 的系统要求。
 
-了解 [Windows](https://learn.microsoft.com/zh-cn/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server-2022?view=sql-server-ver17) 和 [Linux](https://learn.microsoft.com/zh-cn/sql/linux/sql-server-linux-setup?view=sql-server-ver16#supported-platforms) 上 SQL Server 的系统要求。
+目前，Bitwarden 不支持 SQL Server 2025，并且对 Server 2017 和 Server 2019 的主流支持结束。如果 Bitwarden 实现了特定 SQL Server 版本上不可用的功能，则此处以及给定版本的[发行记录](../../../release-notes.md)中将注明不再支持特定 SQL Server 版本。
 {% endhint %}
 
 ## 设置外部数据库 <a href="#setup-external-database" id="setup-external-database"></a>
@@ -72,7 +72,7 @@ Bitwarden **仅支持并推荐 SQL Server 2022**。对 Server 2017 和 Server 20
 
 2、创建一个包含您的证书文件的 ConfigMap 对象。最简单的方法是将 `preInstall` RawManifest 添加到 `my-values.yaml` 文件中，如下例所示：
 
-```
+```yml
 rawManifests:
   preInstall:
   - kind: ConfigMap

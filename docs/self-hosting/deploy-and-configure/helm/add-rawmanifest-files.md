@@ -4,9 +4,32 @@
 对应的[官方文档地址](https://bitwarden.com/help/add-rawmanifest-files/)
 {% endhint %}
 
-Bitwarden 自托管 Helm Chart 允许您在安装之前或安装之后包含其他 Kubernetes 清单文件。为此，请更新图表中的 `rawManifests` 部分。
+Bitwarden 自托管 Helm Chart 允许您在安装之前或安装之后包含其他 Kubernetes 清单文件。为此，请更新图表中的 `rawManifests` 部分。本文包含一些有关如何使用 rawManifests 的示例：
 
-## Traefik IngressRoute 示例 <a href="#traefik-ingressroute-example" id="traefik-ingressroute-example"></a>
+## 验证服务器证书 <a href="#validate-server-certificate" id="validate-server-certificate"></a>
+
+例如，要配置 Bitwarden 来验证您的 MSSQL 数据库服务器的证书：
+
+{% hint style="info" %}
+在此示例中，您还需要在 `my-values.yaml` 文件中设置值 `caCertificate.enabled: true`。
+{% endhint %}
+
+```yml
+rawManifests:
+  preInstall:
+  - kind: ConfigMap
+    apiVersion: v1
+    metadata:
+      name: cacert
+    data:
+      rootca.crt: |
+        -----BEGIN CERTIFICATE-----
+         ...
+        -----END CERTIFICATE-----
+  postInstall:
+```
+
+## Traefik IngressRoute <a href="#traefik-ingressroute" id="traefik-ingressroute"></a>
 
 例如，要安装 Traefik 的 IngressRoute 作为 Kubernetes 的 Ingress 控制器的替代，请添加以下内容：
 
@@ -14,7 +37,7 @@ Bitwarden 自托管 Helm Chart 允许您在安装之前或安装之后包含其�
 在此示例中，您还需要在您的 `my-values.yaml` 文件中的 `general.ingress.enabled` 处禁用入口控制器。
 {% endhint %}
 
-```bash
+```yml
 rawManifests:
   preInstall: []
   postInstall:

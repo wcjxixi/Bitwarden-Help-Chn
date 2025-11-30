@@ -6,14 +6,51 @@
 
 本文将指导您使用 Azure 和 AKS 的特定功能来修改您的 [Bitwarden 自托管 Helm Chart 部署](self-host-with-helm.md)。
 
+## 要求 <a href="#requirements" id="requirements"></a>
+
+在继续安装之前，请确保满足以下要求：
+
+* 已安装 [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)。
+* 已安装 [Helm 3](https://helm.sh/docs/intro/install/)。
+* 您拥有 SSL 证书和密钥，或者可以通过证书提供商创建 SSL 证书和密钥。
+* 您拥有 SMTP 服务器或可以访问云 SMTP 提供商。
+* 一个支持 ReadWriteMany 的[存储类](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)。
+* 您有一个从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装 ID 和密钥。
+
+### 无根模式要求 <a href="#rootless-requirements" id="rootless-requirements"></a>
+
+Bitwarden 会在启动时检测您的环境是否限制了用户容器的运行身份，并在检测到限制时自动以无根模式启动部署。要成功以无根模式部署，需满足以下两个选项之一：
+
+* 部署外部 MSSQL 数据库，而不是 Helm 图表中默认包含的 SQL 容器。
+* 使用服务账户、pod 安全上下文或其他方法为包含的 SQL 容器分配高级权限。
+
+{% hint style="info" %}
+虽然 Microsoft 要求 SQL 容器必须以 root 身份运行，但在执行应用程序代码之前，容器启动将逐步降级至非 root 用户。
+{% endhint %}
+
 ## 入口控制器 <a href="#ingress-controllers" id="ingress-controllers"></a>
 
-### nginx <a href="#nginx" id="nginx"></a>
+本部分介绍了可在 Azure AKS 部署中使用的入口控制器的 2 个选项：
 
-默认情况下在 `my-values.yaml` 中定义了一个 nginx 入口控制器。如果您使用这个选项：
+* 使用 **Azure nginx** 入口控制器可选择与 Azure DNS 集成以进行区域管理，并与 Azure Key Vault 集成以进行证书颁发。
+* 使用 **Azure 应用程序网关**入口控制器 (AGIC) 在应用程序负载均衡器后面部署 Bitwarden。
 
-1. 创建一个基本的 nginx 入口控制器。
-2. 在 `general.ingress.annotations:` 部分取消注释数值，并根据需要进行自定义。
+### Azure nginx <a href="#azure-nginx" id="azure-nginx"></a>
+
+Azure 提供了一个 nginx 入口控制器选项，该选项支持应用程序路由插件，并且可以选择与 Azure DNS 集成以进行区域管理，以及与 Azure Key Vault 集成以进行证书颁发。如果您使用此选项：
+
+1、[创建一个「托管」 nginx 入口控制器](https://learn.microsoft.com/zh-cn/azure/aks/app-routing#create-the-ingress-object)。
+
+2、在 `my-values.yaml` 文件中，将 `generic.ingress.className:` 设置为 `webapprouting.kubernetes.azure.com`。
+
+3、在 `my-values.yaml` 文件中，取消注释以下值：
+
+```yml
+nginx.ingress.kubernetes.io/use-regex: "true"
+nginx.ingress.kubernetes.io/rewrite-target: /$1
+```
+
+完成后，您可以使用命令 `kubectl get ingress -n bitwarden` 获取分配给 Azure nginx 入口控制器的 IP 地址。部署后可能需要几分钟时间才能填充您的 IP 地址。
 
 ### Azure 应用程序网关 <a href="#azure-application-gateway" id="azure-application-gateway"></a>
 
@@ -27,7 +64,7 @@ Azure 客户可能更倾向于使用 Azure 应用程序网关作为他们 AKS �
 
 2、更新您的 my-values.yaml 文件，特别是 `general.ingress.className:` ， `general.ingress.annotations:` 和 `general.ingress.paths:` ：
 
-```bash
+```yml
 general:
   domain: "replaceme.com"
   ingress:
@@ -123,11 +160,11 @@ general:
 
 部署需要使用您提供的支持 [ReadWriteMany](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes) 的共享存储类。以下示例是一个可以在 Azure Cloud Shell 中运行的脚本，用于创建满足要求的 Azure 文件存储类。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 以下是一个说明性的示例，请根据您自己的安全要求分配权限。
 {% endhint %}
 
-```bash
+```yml
 cat <<EOF | kubectl apply -n bitwarden -f -
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
@@ -173,7 +210,7 @@ az aks enable-addons --addons azure-keyvault-secrets-provider --name myAKSCluste
 
 2、创建一个 SecretProviderClass，就像以下示例中所示。请注意，这个示例包含了必须替换的 `<REPLACE>` 占位符，其取决于您使用的是附带的 SQL pod 还是使用您自己的 SQL 服务器。
 
-```bash
+```yml
 cat <<EOF | kubectl apply -n bitwarden -f -
 apiVersion: secrets-store.csi.x-k8s.io/v1
 kind: SecretProviderClass
@@ -257,11 +294,11 @@ EOF
 
 3、使用下列命令在密钥库中设置所需的机密值：
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 此示例将命令记录到您的 shell 历史记录中。可以考虑使用其他方法来安全地设置机密。
 {% endhint %}
 
-```bash
+```shellscript
 kvname=<REPLACE>
 az keyvault secret set --name installationid --vault-name $kvname --value <REPLACE>
 az keyvault secret set --name installationkey --vault-name $kvname --value <REPLACE>

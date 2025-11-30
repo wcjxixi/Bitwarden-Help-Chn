@@ -76,9 +76,9 @@ Bitwarden 的企业版计划包含无额外费用的自托管服务。
 | ------------------------- | ------ | -------------------------------- |
 | 具有现有 Docker 管理经验的网络和系统管理员 | 高级     | Windows 服务器管理、Powershell、网络设计和配置 |
 
-### Bitwarden Unified 部署 (beta) <a href="#bitwarden-unified-deployment" id="bitwarden-unified-deployment"></a>
+### Bitwarden Lite <a href="#bitwarden-unified-deployment" id="bitwarden-unified-deployment"></a>
 
-将 Bitwarden 部署为单个 Docker 容器。适合个人用户、家庭实验室或轻量级共享。[立即开始](../deploy-and-configure/docker/unified-deployment-beta.md)。
+将 Bitwarden 部署为单个 Docker 容器。适合个人用户、家庭实验室或轻量级共享。[立即开始](../deploy-and-configure/docker/lite-deployment.md)。
 
 | 目标受众 | 所需技能水平 | 预期知识                      |
 | ---- | ------ | ------------------------- |
@@ -102,7 +102,7 @@ Bitwarden 的企业版计划包含无额外费用的自托管服务。
 
 ### 数据库选项 <a href="#database-options" id="database-options"></a>
 
-所有 Bitwarden 自托管服务器部署，除 [Unified](../deploy-and-configure/docker/unified-deployment-beta.md) 部署外，默认使用 MSSQL Express 镜像，但客户可以连接到 2019 版本或更高版本的 MSSQL 外部服务器或集群。[了解更多](../deploy-and-configure/configuration-options/database-options.md)。
+所有 Bitwarden 自托管服务器部署，除 [Unified](../deploy-and-configure/docker/lite-deployment.md) 部署外，默认使用 MSSQL Express 镜像，但客户可以连接到 2019 版本或更高版本的 MSSQL 外部服务器或集群。[了解更多](../deploy-and-configure/configuration-options/database-options.md)。
 
 ### 证书选项 <a href="#certificate-options" id="certificate-options"></a>
 

@@ -26,19 +26,26 @@ Let's Encrypt 是一个第三方证书颁发机构，它要求 80 和 443 端口
 
 <img src="../../../../.gitbook/assets/linux-24.png" alt="" data-size="line"><img src="../../../../.gitbook/assets/apple-24.png" alt="" data-size="line"> **Bash**
 
-```bash
+```shellscript
 ./bitwarden.sh stop
+
 mv ./bwdata/letsencrypt ./bwdata/letsencrypt_backup
+
 mkdir ./bwdata/letsencrypt
+
 chown -R bitwarden:bitwarden ./bwdata/letsencrypt
+
 chmod -R 740 ./bwdata/letsencrypt
+
 docker pull certbot/certbot
+
 docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from / >/bwdata/letsencrypt:/etc/letsencrypt/ certbot/certbot certonly --email <user@email.com> --logs-dir /etc/letsencrypt/logs
+
 ```
 
 选择 1，然后按照说明进行操作：
 
-```batch
+```shellscript
 openssl dhparam -out ./bwdata/letsencrypt/live/<your.domain.com>/dhparam.pem 2048
 ./bitwarden.sh rebuild
 ./bitwarden.sh start
@@ -50,7 +57,7 @@ openssl dhparam -out ./bwdata/letsencrypt/live/<your.domain.com>/dhparam.pem 204
 需要安装适用于 Windows 的 OpenSSL 构建。
 {% endhint %}
 
-```powershell
+```shellscript
 .\bitwarden.ps1 -stop
 mv .\bwdata\letsencrypt .\bwdata\letsencrypt_backup
 mkdir .\bwdata\letsencrypt
@@ -188,6 +195,6 @@ Exception message: java.security.cert.CertPathValidatorException: Trust anchor f
 
 ## 不使用证书 <a href="#use-no-certificate" id="use-no-certificate"></a>
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 如果您选择不使用证书，则**必须在您的 Bitwarden 安装的前端使用 SSL 代理**。这是因为 Bitwarden 需要 HTTPS。尝试在没有 HTTPS 协议的情况下使用 Bitwarden 将触发错误。
 {% endhint %}

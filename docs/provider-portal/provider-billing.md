@@ -35,7 +35,7 @@
 
 ## 查看计费信息 <a href="#view-billing-information" id="view-billing-information"></a>
 
-{% hint style="info" %}
+{% hint style="success" %}
 只有提供商管理员才能查看其客户组织的计费信息。客户组织的所有者在管理控制台中导航到其**计费** → **订阅**界面时，将显示以下内容：
 
 <img src="../../.gitbook/assets/Managed client billing.png" alt="" data-size="original">

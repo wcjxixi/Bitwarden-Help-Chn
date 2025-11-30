@@ -95,7 +95,7 @@ nano /opt/bitwarden/bwdata/docker/docker-compose.override.yml
 
 2、标准配置包括以下内容：
 
-```docker
+```yml
 services:
 	admin:
 		volumes:
@@ -117,7 +117,7 @@ services:
 
 3、如果使用 SCIM，还必须包括：
 
-```docker
+```yml
 	scim:
 		volumes:
 			- ../kerberos:/etc/bitwarden/kerberos	

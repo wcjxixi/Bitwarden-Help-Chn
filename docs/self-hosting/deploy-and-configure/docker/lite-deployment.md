@@ -1,30 +1,38 @@
-# Unified 部署 (Beta)
+# =Lite 部署
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-unified-beta/)
 {% endhint %}
 
 {% hint style="danger" %}
-该解决方案处于测试阶段，仅供个人使用。商业计划应使用官方支持的标准部署选项。
+~~该解决方案处于测试阶段，仅供个人使用。商业计划应使用官方支持的标准部署选项。~~
 
-虽然 Bitwarden Unified 自托管部署还处于测试阶段，但 Unified 安装不会设置自动升级过程来获取最新的可用镜像。Bitwarden 建议，在升级之前，应留出一些时间让发布的版本趋于稳定。
-
-[了解如何报告问题](unified-deployment-beta.md#reporting-issues)。
+~~虽然 Bitwarden Unified 自托管部署还处于测试阶段，但 Unified 安装不会设置自动升级过程来获取最新的可用镜像。Bitwarden 建议，在升级之前，应留出一些时间让发布的版本趋于稳定。~~
 {% endhint %}
 
-本文将指导您安装和启动 [Bitwarden Unified 自托管部署](https://github.com/bitwarden/self-host/tree/main/docker-unified)。使用此部署方法可以：
+> **\[译者注]**：测试阶段叫做「Unified 部署」，现在更名为「Lite 部署」，即最小化部署。
+
+{% hint style="info" %}
+Bitwarden Lite 适合个人使用和家庭实验用，不适用于商业环境。企业应使用[标准部署选项](../../plan-for-deployment/self-host-bitwarden.md)之一。
+{% endhint %}
+
+本文将指导您安装和启动 [Bitwarden Lite](https://github.com/bitwarden/self-host/tree/main/bitwarden-lite)。使用此部署方式可以：
 
 * 通过使用单个 Docker 映像部署 Bitwarden 来简化配置并优化资源使用（CPU、内存）。
-* 利用不同的数据库解决方案，例如 MSSQL、PostgreSQL、MySQL/MariaDB。
-* 使用替代系统在 ARM 架构上运行，例如 Raspberry Pi 和 NAS 服务器。
+* 利用不同的数据库解决方案，例如 MSSQL、PostgreSQL、SQLite 以及 MySQL/MariaDB。当前只有 Lite 部署可以使用这些数据库，标准部署需要 MSSQL。
+* 作为替代系统运行在 ARM 架构上，例如 Raspberry Pi 和 NAS 服务器。
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
 Bitwarden Unified 部署要求：
 
-* 至少 200 MB RAM
-* 1GB 存储
-* Docker Engine 26+
+* RAM：至少 200 MB
+* 存储：至少 1GB
+* Docker Engine：版本 26+
+
+## 设置 <a href="#setup" id="setup"></a>
+
+在运行 Bitwarden Lite 服务器之前，请安装 Docker、设置 `settings.env` 文件并决定数据库配置：
 
 ### 安装 Docker <a href="#install-docker" id="install-docker"></a>
 
@@ -36,7 +44,7 @@ Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)运行
 
 ## 运行 Bitwarden Unified <a href="#run-bitwarden-unified" id="run-bitwarden-unified"></a>
 
-可以使用 `docker run` 命令（参见[此处](unified-deployment-beta.md#using-docker-run)）或使用 Docker Compose（参见[此处](unified-deployment-beta.md#using-docker-compose)）运行 Unified 部署。无论哪种方式，您都需要为容器指定环境变量。
+可以使用 `docker run` 命令（参见[此处](lite-deployment.md#using-docker-run)）或使用 Docker Compose（参见[此处](lite-deployment.md#using-docker-compose)）运行 Unified 部署。无论哪种方式，您都需要为容器指定环境变量。
 
 ### 快速入门指南 <a href="#quick-start-guide" id="quick-start-guide"></a>
 
@@ -46,7 +54,7 @@ Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)运行
 
 ### 指定环境变量 <a href="#specify-environment-variables" id="specify-environment-variables"></a>
 
-运行 Unified 部署需要为容器设置环境变量。可以通过创建一个 `settings.env` 文件来指定环境变量，您可以在我们的 [GitHub 存储库](https://github.com/bitwarden/server/blob/master/docker-unified/settings.env)中找到该文件的示例，或者如果您使用的是 `docker run` 方式，则可以使用 `--env` 标志来指定。一系列可选的变量可用于更个性化 Unified 部署体验。有关这些变量的更多详细信息，请参阅[此处](unified-deployment-beta.md#environment-variables)。
+运行 Unified 部署需要为容器设置环境变量。可以通过创建一个 `settings.env` 文件来指定环境变量，您可以在我们的 [GitHub 存储库](https://github.com/bitwarden/server/blob/master/docker-unified/settings.env)中找到该文件的示例，或者如果您使用的是 `docker run` 方式，则可以使用 `--env` 标志来指定。一系列可选的变量可用于更个性化 Unified 部署体验。有关这些变量的更多详细信息，请参阅[此处](lite-deployment.md#environment-variables)。
 
 至少为示例 `.env` 文件的 `# Required Settings #` 部分下的变量设置值：
 
@@ -63,7 +71,7 @@ Unified 部署使用 [Docker 容器](https://docs.docker.com/get-started/)运行
 | BW\_INSTALLATION\_KEY | 从 [https://bitwarden.com/host/](https://bitwarden.com/host/) 生成的有效安装密钥。               |
 
 {% hint style="info" %}
-与 Bitwarden 标准部署不同，Unified 部署使用的数据库并不是开箱即用的。您可以使用现有数据库，也可以创建一个新数据库，如[本示例中](unified-deployment-beta.md#using-docker-compose)所述，在这两种情况下，您都必须在本文档记录的 `BW_DB_...` 变量中输入有效的信息。
+与 Bitwarden 标准部署不同，Unified 部署使用的数据库并不是开箱即用的。您可以使用现有数据库，也可以创建一个新数据库，如[本示例中](lite-deployment.md#using-docker-compose)所述，在这两种情况下，您都必须在本文档记录的 `BW_DB_...` 变量中输入有效的信息。
 
 使用非 MSSQL 数据库提供程序可能会导致性能问题，对这些平台的支持将在整个测试版中继续进行。请使用[此问题模板](https://github.com/bitwarden/server/issues/new?assignees=\&labels=bug%2Cbw-unified-deploy\&template=bw-unified.yml)报告与您的 Bitwarden Unified 部署相关的任何内容，并查看[此页面](https://github.com/bitwarden/server/issues/2480)以跟踪已知问题或加入讨论。
 {% endhint %}
@@ -78,13 +86,13 @@ docker run -d --name bitwarden -v ./bwdata/:/etc/bitwarden -p 80:80  --env-file 
 
 上面的命令有一系列 `docker run` 命令所需的选项，包括：
 
-| 名称，缩写          | 描述                                                                                                                                                                                                                        |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| --detach , -d  | 在后台运行容器并输出容器 ID。                                                                                                                                                                                                          |
-| --name         | 为容器提供一个名称。该示例中使用的是 `bitwarden`。                                                                                                                                                                                           |
-| --volume , -v  | 绑定挂载卷。至少挂载 `/etc/bitwarden`。                                                                                                                                                                                              |
-| --publish , -p | 将容器端口映射到主机。该示例显示映射了 `80` 端口。配置 SSL 时需要使用 `443` 端口。                                                                                                                                                                        |
-| --env-file     | [要从中读取环境变量的文件](unified-deployment-beta.md#specify-environment-variables)的路径。或者，在同一行中使用 `--env` 标志声明环境变量（[了解更多](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file)）。 |
+| 名称，缩写          | 描述                                                                                                                                                                                                                |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --detach , -d  | 在后台运行容器并输出容器 ID。                                                                                                                                                                                                  |
+| --name         | 为容器提供一个名称。该示例中使用的是 `bitwarden`。                                                                                                                                                                                   |
+| --volume , -v  | 绑定挂载卷。至少挂载 `/etc/bitwarden`。                                                                                                                                                                                      |
+| --publish , -p | 将容器端口映射到主机。该示例显示映射了 `80` 端口。配置 SSL 时需要使用 `443` 端口。                                                                                                                                                                |
+| --env-file     | [要从中读取环境变量的文件](lite-deployment.md#specify-environment-variables)的路径。或者，在同一行中使用 `--env` 标志声明环境变量（[了解更多](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file)）。 |
 
 运行此命令后，验证容器是否正在运行且运行状况良好：
 
@@ -216,7 +224,7 @@ docker compose ps
 默认情况下，Unified 部署可以在不具备一些列标准 Bitwarden 服务的情况下运行。这允许增加 Unified 部署的定制和优化。通过编辑各种环境变量来配置这些服务和更多可选设置。
 
 {% hint style="info" %}
-每当您更改环境变量后，都需要重新创建 Docker 容器。在[这里](unified-deployment-beta.md#restart-the-container)了解更多。
+每当您更改环境变量后，都需要重新创建 Docker 容器。在[这里](lite-deployment.md#restart-the-container)了解更多。
 {% endhint %}
 
 #### Webserver 端口 <a href="#webserver-ports" id="webserver-ports"></a>

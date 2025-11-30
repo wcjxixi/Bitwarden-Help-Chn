@@ -8,9 +8,9 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th width="177.46326865053078"></th><th width="240.55465526874184">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>6GB RAM</td><td>8+GB RAM</td></tr><tr><td>存储</td><td>76GB</td><td>90GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ and Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ and Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
+<table><thead><tr><th width="177.46326865053078"></th><th width="240.55465526874184">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>6GB RAM</td><td>8+GB RAM</td></tr><tr><td>存储</td><td>76GB</td><td>90GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ and Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ and Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
-<mark style="color:red;">ª</mark> - Docker Compose 可以通过 Docker Desktop 安装，其中包含 Engine 和 Compose。
+<mark style="color:red;">**ª**</mark> - Docker Compose 可以通过 Docker Desktop 安装，其中包含 Engine 和 Compose。
 
 ### 嵌套虚拟化 <a href="#nested-virtualization" id="nested-virtualization"></a>
 
@@ -48,7 +48,7 @@
 
 8、在网页浏览器中打开您配置的域名来测试您的安装。
 
-9、部署后，我们建议定期备份您的服务器并检查系统更新。
+9、部署后，我们建议定期[备份您的服务器](../../backup-server-data.md)并[检查系统更新](../../update-a-server.md)。
 
 ## 安装步骤 <a href="#installation-procedure" id="installation-procedure"></a>
 
@@ -208,7 +208,7 @@ Bitwarden 安装脚本使用 `./bwdata/config.yml` 中的设置来生成必要�
 docker ps
 ```
 
-{% embed url="https://bitwarden.com/help/images/hosting/docker-ps-win.png" %}
+{% embed url="https://bitwarden.com/assets/3kcV9CFkWJrw5qCmKZsyBg/5cd5030d96352e6b1f5f20d1ffb79654/docker-ps-win.png?w=1200&fm=avif" %}
 显示健康容器的列表
 {% endembed %}
 
@@ -229,8 +229,8 @@ docker ps
 
 如果您有已登录的 RDP 会话，桌面版 Docker 才会在启动时自动启动。无论是否有用户登录，都要在启动时启动桌面版 Docker：
 
-{% hint style="warning" %}
-桌面版 Docker 在启动后可能需要长达 15 分钟才能启动完成并可以从网络访问容器。
+{% hint style="danger" %}
+Docker Desktop 在启动后可能需要长达 15 分钟才能启动完成并可以从网络访问容器。
 {% endhint %}
 
 1、打开 Windows 任务计划程序并从操作菜单中选择**创建任务…** 。

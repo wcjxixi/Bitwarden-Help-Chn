@@ -8,6 +8,28 @@
 
 请注意，本文中记录的某些附加组件要求您的 EKS 集群至少已启动一个节点。
 
+## 要求 <a href="#requirements" id="requirements"></a>
+
+在继续安装之前，请确保满足以下要求：
+
+* 已安装 [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)。
+* 已安装 [Helm 3](https://helm.sh/docs/intro/install/)。
+* 您拥有 SSL 证书和密钥，或者可以通过证书提供商创建 SSL 证书和密钥。
+* 您拥有 SMTP 服务器或可以访问云 SMTP 提供商。
+* 一个支持 ReadWriteMany 的[存储类](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)。
+* 您有一个从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装 ID 和密钥。
+
+### 无根模式要求 <a href="#rootless-requirements" id="rootless-requirements"></a>
+
+Bitwarden 会在启动时检测您的环境是否限制了用户容器的运行身份，并在检测到限制时自动以无根模式启动部署。要成功以无根模式部署，需满足以下两个选项之一：
+
+* 部署外部 MSSQL 数据库，而不是 Helm 图表中默认包含的 SQL 容器。
+* 使用服务账户、pod 安全上下文或其他方法为包含的 SQL 容器分配高级权限。
+
+{% hint style="info" %}
+虽然 Microsoft 要求 SQL 容器必须以 root 身份运行，但在执行应用程序代码之前，容器启动将逐步降级至非 root 用户。
+{% endhint %}
+
 ## 入口控制器 <a href="#ingress-controller" id="ingress-controller"></a>
 
 默认情况下， `my-values.yaml` 中定义了一个 nginx 控制器，并且需要一个 AWS 网络负载均衡器。目前不推荐使用 AWS 应用负载均衡器 (Application Load Balancer - ALB)，因为它们不支持路径重写和基于路径的路由。
@@ -41,7 +63,7 @@ helm upgrade ingress-nginx ingress-nginx/ingress-nginx -i \
 
 3、根据以下示例更新您的 `my-values.yaml` 文件，确保替换所有 `REPLACE` 占位符：
 
-```bash
+```yml
 general:
   domain: "REPLACEME.com"
   ingress:
@@ -105,11 +127,11 @@ general:
 
 2、在 AWS CloudShell 中，替换以下脚本中的 `file_system_id= "REPLACE"` 变量并在 AWS CloudShell 中运行它：
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 以下只是一个说明性示例，请务必根据您自己的安全需求分配权限。
 {% endhint %}
 
-```bash
+```yml
 file_system_id="REPLACE"
 
 cat << EOF | kubectl apply -n bitwarden -f -
@@ -146,22 +168,29 @@ sharedStorageClassName: "shared-storage"
 
 您需要将以下机密存储在 AWS Secrets Manager 中。请注意，您可以更改此处使用的**密钥**，但如果您这样做，还必须对后续步骤进行更改：
 
-| 密钥                                                                                                                 | 值                                                                                                                                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `installationid`                                                                                                   | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装 ID  。有关更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                           |
-| `installationkey`                                                                                                  | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装密钥 。有关更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                             |
-| `smtpusername`                                                                                                     | 您的 SMTP 服务器的有效用户名。                                                                                                                                                                                                                       |
-| `smtppassword`                                                                                                     | 输入的 SMTP 服务器用户名的有效密码。                                                                                                                                                                                                                    |
-| `yubicoclientid`                                                                                                   | YubiCloud 验证服务或自托管 Yubico 验证服务器的客户端 ID。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。                                                                                                                      |
-| `yubicokey`                                                                                                        | YubiCloud 验证服务或自托管 Yubico 验证服务器的机密密钥。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。                                                                                                                        |
-| globalSettings\_\_hibpApiKey                                                                                       | 您的 HaveIBeenPwned (HIBP) API 密钥，可[在此处](https://haveibeenpwned.com/API/Key)获取。此密钥允许用户在创账户时运行[数据泄露报告](../../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-report-individual-vaults-only)并检查其主密码是否存在泄露。 |
-| <p>如果您使用 Bitwarden SQL pod  <code>sapassword</code>，.</p><p>如果您使用自己的 SQL 服务器， <code>dbconnectionString.</code></p> | 连接到 Bitwarden 实例的数据库的凭据。所需内容取决于您使用的是附带的 SQL pod 还是外部 SQL 服务器。                                                                                                                                                                            |
+| 密钥                                                                                                             | 值                                                                                                                                                                                                                                        |
+| -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `installationid`                                                                                               | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装 ID  。有关更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                           |
+| `installationkey`                                                                                              | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装密钥 。有关更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                             |
+| `smtpusername`                                                                                                 | 您的 SMTP 服务器的有效用户名。                                                                                                                                                                                                                       |
+| `smtppassword`                                                                                                 | 输入的 SMTP 服务器用户名的有效密码。                                                                                                                                                                                                                    |
+| `yubicoclientid`                                                                                               | YubiCloud 验证服务或自托管 Yubico 验证服务器的客户端 ID。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。                                                                                                                      |
+| `yubicokey`                                                                                                    | YubiCloud 验证服务或自托管 Yubico 验证服务器的机密密钥。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。                                                                                                                        |
+| globalSettings\_\_hibpApiKey                                                                                   | 您的 HaveIBeenPwned (HIBP) API 密钥，可[在此处](https://haveibeenpwned.com/API/Key)获取。此密钥允许用户在创账户时运行[数据泄露报告](../../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-report-individual-vaults-only)并检查其主密码是否存在泄露。 |
+| <p>如果您使用 Bitwarden SQL pod ：<code>sapassword</code></p><p>如果您使用自己的 SQL 服务器：<code>dbconnectionString</code></p> | 连接到 Bitwarden 实例的数据库的凭据。所需内容取决于您使用的是附带的 SQL pod 还是外部 SQL 服务器。                                                                                                                                                                            |
 
-1、安全存储您的机密后，[安装 ACSP](https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrating_csi_driver.html#integrating_csi_driver_install)。
+1、安全存储您的机密后，[安装 ACSP](https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrating_csi_driver.html#integrating_csi_driver_install)。在 ACSP 安装过程中，您将：
+
+{% hint style="info" %}
+安装和配置 Secrets Store CSI 驱动程序时，**必须**启用 `syncSecret.enabled=true`。
+{% endhint %}
+
+* 安装 Secrets Store CSI 驱动程序 (`secrets-store-driver-csi`)。
+* 安装 Secrets Store CSI 驱动程序的 AWS 提供程序 (`secrets-store-driver-csi-provider-aws`)。
 
 2、创建权限策略以允许访问您的机密。该策略**必须**授予 `secretsmanager:GetSecretValue` 和 `secretsmanager:DescribeSecret` 权限，例如：
 
-```bash
+```yml
 {
    "Version": "2012-10-17",
    "Statement": {
@@ -177,7 +206,7 @@ sharedStorageClassName: "shared-storage"
 
 3、创建一个可以通过已创建的权限策略访问您的机密的服务账户，例如：
 
-```bash
+```systemd
 CLUSTER_NAME="REPLACE"
 ACCOUNT_ID="REPLACE" # replace with your AWS account ID
 ROLE_NAME="REPLACE" # name of a role that will be created in IAM
@@ -191,9 +220,13 @@ eksctl create iamserviceaccount \
   --approve
 ```
 
-4、接下来，创建 SecretProviderClass，如以下示例所示。请务必将 `region` 替换为您所在的区域，并将`objectName` 替换为您创建的 Secrets Manager 机密的名称（**步骤 1**）：
+4、接下来，创建 [SecretProviderClass](https://docs.aws.amazon.com/secretsmanager/latest/userguide/ascp-examples.html#ascp-examples-secretproviderclass)，如以下示例所示。请务必：
 
-```bash
+* 将 `region` 替换为您所在的区域。
+* 将 `objectName` 替换为您创建的 Secrets Manager 机密的名称（**步骤 1**）。
+* 如果您使用 IRSA，请使用与 EKS Pod 相同的 `namespace`。
+
+```yml
 cat <<EOF | kubectl apply -n bitwarden -f -
 apiVersion: secrets-store.csi.x-k8s.io/v1
 kind: SecretProviderClass

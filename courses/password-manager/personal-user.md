@@ -144,4 +144,4 @@ iOS 和 Android 上的 Bitwarden
 
 {% embed url="https://youtu.be/4GjjfkMYqqs" %}
 
-[此处](../../docs/self-hosting/deploy-and-configure/docker/unified-deployment-beta.md)了解更多有关 Bitwarden Unified 自托管的信息。
+[此处](../../docs/self-hosting/deploy-and-configure/docker/lite-deployment.md)了解更多有关 Bitwarden Unified 自托管的信息。

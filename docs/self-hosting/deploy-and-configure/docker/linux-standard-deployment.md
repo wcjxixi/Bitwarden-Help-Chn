@@ -8,9 +8,9 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;">ª</mark></td></tr></tbody></table>
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
-<mark style="color:red;">ª</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。
+<mark style="color:red;">**ª**</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。
 
 {% hint style="success" %}
 如果您正在寻找价格实惠的优质供应商，我们推荐 DigitalOcean。[立即开始](https://marketplace.digitalocean.com/apps/bitwarden)或阅读我们[在 DigitalOcean 上的关于 Bitwarden 的博客文章](https://bitwarden.com/blog/digitalocean-marketplace/)。
@@ -220,11 +220,6 @@ docker ps
 部署完成后，我们建议定期[备份您的服务器](../../backup-server-data.md)并[检查系统更新](../../update-a-server.md)。
 {% endhint %}
 
-## 下一步 <a href="#next-steps" id="next-steps"></a>
-
-1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
-2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
-
 ## 脚本命令参考 <a href="#script-commands-reference" id="script-commands-reference"></a>
 
 Bitwarden 的安装脚本（`bitwarden.sh` 或 `bitwarden.ps1`）具有以下可用的命令：
@@ -234,3 +229,8 @@ PowerShell 用户将以前缀`-`（开关）运行命令。例如`.\bitwarden.ps
 {% endhint %}
 
 <table><thead><tr><th width="186">命令</th><th>描述</th></tr></thead><tbody><tr><td>install</td><td>启动安装程序。</td></tr><tr><td>start</td><td>启动所有容器。</td></tr><tr><td>restart</td><td>重新启动所有容器（与 start 相同）。</td></tr><tr><td>stop</td><td>停止所有容器。</td></tr><tr><td>update</td><td>更新所有容器和数据库。</td></tr><tr><td>updatedb</td><td>更新/初始化数据库。</td></tr><tr><td>updaterun</td><td>更新 <code>run.sh</code> 文件。</td></tr><tr><td>updateself</td><td>更新主脚本。</td></tr><tr><td>updateconf</td><td>更新所有容器，而无需重新启动正在运行的实例。</td></tr><tr><td>uninstall</td><td><p>在执行此命令之前，系统会提示您保存数据库文件。选 <code>y</code> 将创建一个包含最新备份的数据库的 tar 文件。</p><p></p><p>停止容器，删除 <code>bwdata</code> 目录及其所有内容，并删除临时卷。执行后，系统会询问您是否还要清除所有 Bitwarden 镜像。</p></td></tr><tr><td>compresslogs</td><td><p>将所有服务器日志或指定日期范围内的服务器日志的压缩包下载到当前目录。</p><p></p><p>例如，使用 <code>./bitwarden.sh compresslogs 20240304 20240305</code> 下载 2024 年 3 月 4 日至 2024 年 3 月 5 日的日志。</p></td></tr><tr><td>renewcert</td><td>续签证书。</td></tr><tr><td>rebuild</td><td>重建从 <code>config.yml</code> 生成的安装资产。</td></tr><tr><td>help</td><td>列出所有命令。</td></tr></tbody></table>
+
+## 下一步 <a href="#next-steps" id="next-steps"></a>
+
+1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
+2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。

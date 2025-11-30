@@ -10,15 +10,15 @@
 
 ## 什么是业务单元门户？ <a href="#what-is-the-business-unit-portal" id="what-is-the-business-unit-portal"></a>
 
-业务单元门户是一个管理中心，允许企业管理员创建和管理任意数量的企业组织。申请访问权限并获得批准后，您可以通过**提供商门户**中的产品切换器轻松访问该门户：
+业务单元门户是一个管理中心，允许企业管理员创建和管理任意数量的企业组织。在您申请访问权限并获得批准后，即可通过产品切换器选择**业务单元门户**来访问该门户：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/PdRRyABfSMxDBcAk7fQDb/c018a27697e32f8161f67a24e1b64a92/2025-03-27_10-16-27.png?_a=DAJCwlWIZAAB" %}
-业务单元产品切换器
+{% embed url="https://bitwarden.com/assets/PdRRyABfSMxDBcAk7fQDb/0e394d3a94eaf85511625c1a15bff384/2025-04-24_08-59-33.png?w=1019&fm=avif" %}
+打开业务单元门户
 {% endembed %}
 
 业务单元门户使管理员能够大规模管理大型企业组织。业务单元门户通过一个专门的空间来集中访问和支持每个托管的组织，或创建一个新的组织，从而简化管理任务：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5nwhryDcaYUXFl72AWBeyO/016e3cccf0b39734f9947ae073d4f5bd/2025-03-27_10-20-49.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/5nwhryDcaYUXFl72AWBeyO/8a5183b4e34803c173ca0281f641d708/2025-04-24_08-59-33.png?w=1019&fm=avif" %}
 业务单元门户
 {% endembed %}
 

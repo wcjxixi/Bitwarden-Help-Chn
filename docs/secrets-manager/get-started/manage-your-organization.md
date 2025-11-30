@@ -115,5 +115,5 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 4. 授予个人用户对自托管实例中的 [Secrets Manager 访问权限](manage-your-organization.md#access-to-secrets-manager)。
 
 {% hint style="info" %}
-Bitwarden [统一自托管部署选项](../../self-hosting/deploy-and-configure/docker/unified-deployment-beta.md)不支持自托管 Secrets Manager。团队和企业组织应使用标准的 [Linux](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md) 或 [Windows](../../self-hosting/deploy-and-configure/docker/windows-standard-deployment.md) 安装。
+Bitwarden [统一自托管部署选项](../../self-hosting/deploy-and-configure/docker/lite-deployment.md)不支持自托管 Secrets Manager。团队和企业组织应使用标准的 [Linux](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md) 或 [Windows](../../self-hosting/deploy-and-configure/docker/windows-standard-deployment.md) 安装。
 {% endhint %}

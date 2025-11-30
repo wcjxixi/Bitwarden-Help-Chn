@@ -50,7 +50,7 @@ adminSettings__admins=john@example.com,bill@example.com,tom@example.com
 {% endtab %}
 {% endtabs %}
 
-## 访问管理门户 <a href="#access-the-admin-portal" id="access-the-admin-portal"></a>
+## 访问门户 <a href="#access-the-portal" id="access-the-portal"></a>
 
 您的服务器的系统管理员门户位于 `https://<your.domain.com>/admin`。当某个用户尝试登录时，**仅**当使用上述过程授权的电子邮箱地址时，才会将安全链接发送到其电子邮箱地址。
 
