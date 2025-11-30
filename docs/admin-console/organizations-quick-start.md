@@ -30,7 +30,7 @@ Bitwarden 组织将用户和密码库项目关联在一起，以[安全地共享
 
 免费的 Bitwarden 组织允许 2 位用户安全地共享组织拥有的凭证。您可以使用免费的组织与朋友或伙伴共享，或者在[升级到不同的方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md)之前测试组织。
 
-Bitwarden 在许多设备上提供了应用程序，包括浏览器扩展、移动 App、桌面 App 和 CLI，但在本指南中，我们将重点介绍[网页 App](../password-manager/getting-started/getting-started-webvault.md)。对于管理你的组织，**网页密码库提供了最丰富的 Bitwarden 体验**。
+Bitwarden 在许多设备上提供了应用程序，包括浏览器扩展、移动 App、桌面 App 和 CLI，但在本指南中，我们将重点介绍[网页 App](../password-manager/getting-started/getting-started-webvault.md)。对于管理你的组织，网页密码库提供了最丰富的 Bitwarden 体验。
 
 ### 注册 Bitwarden <a href="#sign-up-for-bitwarden" id="sign-up-for-bitwarden"></a>
 
@@ -64,7 +64,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 **新建组织**
 {% endembed %}
 
-2、输入**组织名称**和**账单电子邮件**，我们可以通过此地址与您联系。在本指南中，我们将设置一个免费的组织，所以您将不会被收取任何费用。
+2、输入**组织名称**和**计费电子邮件**，我们可以通过此地址与您联系。在本指南中，我们将设置一个免费的组织，所以您将不会被收取任何费用。
 
 **3、选择您的方案**。Bitwarden 提供适合任何需求的组织，但在这种情况下，请选择**免费**。
 
@@ -74,11 +74,13 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 创建完成后，您将进入组织密码库，这是所有内容共享和组织管理的中心。作为[组织所有者](manage-members/member-roles.md)，您将能够查看您的**密码库**，管理用户和[集合](organizations-quick-start.md#get-to-know-collections)，使用一些 Bitwarden **工具**以及配置组织的**设置**：
 
+创建后，您将进入管理控制台，这是所有内容共享和组织管理的中心。作为组织所有者，作为[组织所有者](manage-members/member-roles.md)，您将能够查看您的**密码库**项目、[集合](organizations-quick-start.md#get-to-know-collections)、管理**成员**、运行**报告**、更改**计费**设置以及配置其他组织**设置**：
+
 {% embed url="https://bitwarden.com/assets/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?w=1043&fm=avif&q=80" %}
 免费组织管理控制台
 {% endembed %}
 
-可以访问管理控制台的用户可以随时在网页 App 中通过左侧导航进入管理控制台：
+具有管理控制台访问权限的用户可以随时在网页 App 中通过左侧导航进入管理控制台：
 
 {% embed url="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&fm=avif&q=80" %}
 产品切换器
@@ -114,7 +116,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 邀请成员加入组织
 {% endembed %}
 
-2、在**角色**选项卡中，输入第二个成员的**电子邮件**，该电子邮件应与他们[注册 Bitwarden](organizations-quick-start.md#sign-up-for-bitwarden-again) 的电子邮件相匹配。然后，选择一个[成员角色](manage-members/member-roles.md#member-roles)。
+2、在**角色**选项卡中，输入第二个成员的**电子邮件**，该电子邮件应与他们[注册 Bitwarden](organizations-quick-start.md#sign-up-for-bitwarden-again) 的电子邮件相匹配。然后，选择一个[成员角色](manage-members/member-roles.md#member-roles)。在许多情况下，最好向组织添加第二个具有**所有者**角色的用户。
 
 3、在**集合**选项卡中，选择允许该用户可以访问的集合，以及授予对每个集合的[权限](manage-members/member-roles.md#permissions)级别。
 
@@ -126,14 +128,14 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 作为新的被邀请的成员，打开您的电子邮件收件箱并查找来自 Bitwarden 的邀请您加入组织的电子邮件。单击电子邮件中的链接将打开 Bitwarden 网页客户端邀请窗口：
 
-{% embed url="https://bitwarden.com/_gatsby/image/958ce51e71025d451256ade85e478bd5/106d26c390438e4a0c9b999390e67465/Screen%20Shot%202023-04-28%20at%2010.40.35%20AM.webp?eu=8dd856e2e49af48f5e3da0816923316db66950f8f85437d93b67b2f91caa9b8120a14a5d21962bb22a6e0fddd5e416b23392716411ebd1dfc4ed1af4b93dad095bd75cb866e5710e592cc4fee2fd0e443d944b0ca9829a01f66b72d4e6b6bf774b01152ba92bbad7bfa83767b1d52e61e8e4f32f3794a120a4561e17c1076ea539eac78b7000bd8ae64eaca5bbed4ad3c2b269184799ad66642d4d4950b06abcbab46e3b4149031c7daff019a333cced5f7b3e77191744e86e39d854ae6e3695b0aef458d92e7eb2fe9c317684c7a983eb19af7f20e09a73b6e168385b58f27ccee424b3bd66060c8237fa9151b00b6a6404ed1d893a24d9265c8968f59c59d376ab&a=w%3D601%26h%3D594%26fm%3Dwebp%26q%3D75&cd=2023-04-28T14%3A41%3A41.708Z" %}
+{% embed url="https://bitwarden.com/assets/6ZzHPswxQoqTbjkSWodwxw/9381e27fdee50d5cfe062473633ef7ed/Screen_Shot_2023-04-28_at_10.40.35_AM.png?w=601&fm=avif" %}
 Bitwarden 邀请
 {% endembed %}
 
-由于您已经[注册了 Bitwarden](organizations-quick-start.md#sign-up-for-bitwarden-again)，请选择**登录**。完全登录到您的密码库将接受邀请。
+由于您已经[注册了 Bitwarden](organizations-quick-start.md#sign-up-for-bitwarden-again)，因此只需登录即可。完全登录到 Bitwarden 将接受邀请。
 
 {% hint style="info" %}
-邀请将在 5 天后到期。确保您在该窗口内接受邀请，否则组织所有者将不得不[重新邀请您](organizations-quick-start.md#invite)。
+邀请将在 5 天后到期。确保您在该窗口内接受邀请，否则组织所有者将必须[重新邀请您](organizations-quick-start.md#invite)。
 {% endhint %}
 
 ### 确认 <a href="#confirm" id="confirm"></a>
@@ -142,7 +144,7 @@ Bitwarden 邀请
 
 1、在管理控制台中，从导航栏选择**成员**选项卡。
 
-2、选中任何`已接受`的用户并使用 **≡选项**菜单 **✔︎确认所选**：
+2、选中任何`已接受`的用户并使用 **≡**&#x9009;项菜单 **✔︎确认所选**：
 
 {% embed url="https://bitwarden.com/assets/5eRDRAooRSGqRWJYZB5fgz/95422412e2a27069ca903f4a6ec1a8a7/2024-12-03_14-04-59.png?w=1197&fm=avif&q=80" %}
 确认成员加入组织
@@ -193,7 +195,7 @@ Bitwarden组织的神奇之处在于，属于您的项目和[属于组织](organ
 
 ## 恭喜！ <a href="#congratulations" id="congratulations"></a>
 
-您已经设置了新的 Bitwarden 账户、创建了一个组织、了解了一些有关您的密码库的知识、并共享了一个项目！干得好！如果您想升级到付费组织以解锁[许多附加功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md)，请导航到您的组织**设置** → **订阅**视图，然后选择**升级方案**按钮：
+您已经设置了新的 Bitwarden 账户、创建了一个组织、了解了一些有关您的密码库的知识、并共享了一个项目！干得好！如果您想升级到付费组织以解锁[许多附加功能](../plans-and-pricing/password-manager/about-bitwarden-plans.md)，请导航到您的组织**计费** → **订阅**视图，然后选择**升级方案**按钮：
 
 {% embed url="https://bitwarden.com/assets/c7MRk3qA3cxcVZHC2gBBs/4128a414a194af6e446ac39d9c250990/2024-12-03_14-09-22.png?w=1197&fm=avif&q=80" %}
 升级免费组织
