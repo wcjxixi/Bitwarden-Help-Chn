@@ -16,8 +16,8 @@
 
 1、**邀请用户** 。从业务单元门户 **☷管理** → **成员**选项卡，邀请用户作为服务用户（或邀请额外的管理员）：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3pFCcxegChJXePdeG6Qku/65186e42ac4532bf44341a0395ebc5b5/new_member.png?_a=DAJCwlWIZAAB" %}
-业务单元成员
+{% embed url="https://bitwarden.com/assets/3pFCcxegChJXePdeG6Qku/407a11969d79ea7c58f0845e3072922a/2025-04-23_08-56-22.png?w=1018&fm=avif" %}
+邀请业务单元成员
 {% endembed %}
 
 2、**指导用户接受邀请** 。被邀请的用户将收到来自 Bitwarden 的电子邮件，邀请他们加入业务单元。请告知用户他们应该已收到邀请，并且他们需要使用现有的 Bitwarden 账户**登录**或**创建账户**以继续。
@@ -26,13 +26,13 @@
 业务单元邀请
 {% endembed %}
 
-3、**确认已接受的邀请**。要完成用户的安全入职，请**确认**业务单元门户**人员**选项卡上已接受的邀请。
+3、**确认已接受的邀请**。要完成用户的安全入职，请**确认**业务单元门户**人员**选项卡上已接受的邀请：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/40cMs63Aj1g3xrZ8SwHqMX/48da1c290b7031294df5884bab571bd0/confirm_invite.png?_a=DAJCwlWIZAAB" %}
-确认用户邀请
+{% embed url="https://bitwarden.com/assets/40cMs63Aj1g3xrZ8SwHqMX/615ed6f09ba10c9ef3cba9d858742c3f/2025-04-23_09-08-12.png?w=1019&fm=avif" %}
+确认业务单元邀请
 {% endembed %}
 
-使用服务用户组建的团队，您已准备好开始设置业务单元组织。
+组建好服务用户团队后，您就可以开始设置业务单元组织了。
 
 ## 业务单元组织 <a href="#business-unit-organizations" id="business-unit-organizations"></a>
 
@@ -40,8 +40,8 @@
 
 组织将 Bitwarden 用户和密码库项目关联起来，以安全地共享登录、支付卡、笔记和身份。组织拥有一个独立的视图，即管理员控制台，服务用户可以在其中管理组织的集合、管理成员和群组、运行报告、导入数据以及配置组织设置：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4mkDEc9h4ASRgM4bKXGO1B/35b93b53a782c377aa8bdc98b70de4aa/2025-03-27_15-36-51.png?_a=DAJCwlWIZAAB" %}
-业务单元组织
+{% embed url="https://bitwarden.com/assets/5nwhryDcaYUXFl72AWBeyO/8a5183b4e34803c173ca0281f641d708/2025-04-24_08-59-33.png?w=1019&fm=avif" %}
+业务单元门户
 {% endembed %}
 
 业务单元的成员将在他们的**密码库**视图中找到共享项目，以及个人拥有的项目，还可以使用几种方式来筛选项目列表，以只显示组织项目或特定集合中的项目：
@@ -54,9 +54,27 @@
 
 要创建新的业务单元组织，您必须是业务单元管理员。导航到业务单元门户的**客户**选项卡，然后选择 ✚**新增**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Z2OgnsPU5RUx5J05pPYs8/afaef6763510d84b62c5bbda625961af/Create_new_Client_org.png?_a=DAJCwlWIZAAB" %}
-创建业务单元组织
+{% embed url="https://bitwarden.com/assets/3Z2OgnsPU5RUx5J05pPYs8/00f61fb7d980105bce9feb56496143a5/2025-04-24_09-02-23.png?w=1019&fm=avif" %}
+创建业务单元
 {% endembed %}
+
+## 添加现有组织 <a href="#add-an-existing-organization" id="add-an-existing-organization"></a>
+
+要将现有组织添加到业务单元，您必须是活跃的业务单元管理员以及要添加的组织的所有者。
+
+1、使用产品切换器导航到业务单元门户，然后选择 ✚**添加**按钮 → **现有组织**：
+
+{% embed url="https://bitwarden.com/assets/7xFhBj38LTp1iWJdOadbU7/7f6b2185de459bef885095d8aef0951d/2025-10-02_15-38-46.png?w=1200&fm=avif" %}
+业务单元添加现有组织
+{% endembed %}
+
+2、将出现**添加现有组织**对话框。选择您要添加的组织：
+
+{% embed url="https://bitwarden.com/assets/2j9Zja0U0NJ761L0AzJDJv/843f4135b36ab02c01bf2c1a3f7f17c6/2025-10-02_15-54-06.png?w=579&fm=avif" %}
+将现有组织添加到业务单元
+{% endembed %}
+
+3、系统将提示您确认订阅以及确认对您的提供商订阅的计费变更。完成后，选择**添加组织**。
 
 ## 设置业务单元组织 <a href="#setup-the-business-unit-organization" id="setup-the-business-unit-organization"></a>
 
@@ -72,14 +90,14 @@
 
 2、**导入数据** 。您用来存储密码库项目的结构确定后，就可以开始[导入数据到组织](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md) 。
 
-{% hint style="success" %}
+{% hint style="info" %}
 注意，作为服务用户，您将无法直接查看、创建或管理个人项目。
 {% endhint %}
 
 3、**配置企业策略**。在开始设置用户管理部分之前，请先[配置企业策略](../../admin-console/oversight-visibility/enterprise-policies.md) ，以便为诸如[主密码复杂性](../../admin-console/oversight-visibility/enterprise-policies.md#master-password-requirements)、[使用两步登录](../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)和[管理员密码重置](../../admin-console/oversight-visibility/enterprise-policies.md#account-recovery-administration)等事项设置使用规则。
 
-{% hint style="success" %}
-企业策略仅适用于**企业组织。**
+{% hint style="info" %}
+企业策略**仅适用于企业组织。**
 {% endhint %}
 
 4、**设置 SSO 登录**。如果您的业务单元使用单点登录 (SSO) 与其他应用程序进行身份验证，请[将 Bitwarden 与他们的 IdP 连接](../../admin-console/login-with-sso/about-sso.md) ，以使用最终用户的 SSO 凭据与 Bitwarden 进行身份验证。

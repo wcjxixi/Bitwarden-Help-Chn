@@ -298,7 +298,7 @@
   * [提供商门户概览](docs/provider-portal/provider-portal-overview.md)
   * [提供商门户快速入门](docs/provider-portal/get-started-with-provider-portal.md)
   * [提供商用户](docs/provider-portal/provider-users.md)
-  * [添加客户组织](docs/provider-portal/start-a-client-organization.md)
+  * [建立客户组织](docs/provider-portal/start-a-client-organization.md)
   * [\*添加现有组织](docs/provider-portal/add-existing-organizations.md)
   * [持续管理](docs/provider-portal/ongoing-administration.md)
   * [取消链接客户组织](docs/provider-portal/unlink-client-organization.md)

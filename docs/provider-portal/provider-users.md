@@ -32,7 +32,7 @@
 5、单击**保存**以邀请这些指定的用户加入提供商。
 
 {% hint style="info" %}
-**邀请将在 5 天后过期**，届时需要重新邀请用户。通过选择每个用户并使用 **≡**&#x9009;项菜单以**重新发送邀请**来批量重新邀请用户：
+**邀请将在 5 天后过期**，届时需要重新邀请用户。通过选择每个用户然后使用 **≡**&#x9009;项菜单以**重新发送邀请**来批量重新邀请用户：
 
 <img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6Sx6YxDzCYoaw7qFGgMvvv/77c341b80fd47aa6865821c30a887a8c/2024-12-05_09-34-07.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
 {% endhint %}
@@ -47,7 +47,7 @@
 
 ### 确认 <a href="#confirm" id="confirm"></a>
 
-要确认已接受的邀请加入您的提供商：
+要确认已接受加入您的提供商的邀请：
 
 1、在提供商门户中，导航到**管理** → **成员**视图。
 
@@ -57,11 +57,11 @@
 确认已邀请的提供商用户
 {% endembed %}
 
-3、在出现的面板上，验证新用户的指纹短语与他们在**设置** → **我的账户**界面中找到的是否匹配。
+3、在出现的面板上，验证新用户的[指纹短语](../security/encryption/account-fingerprint-phrase.md)与他们在**设置** → **我的账户**界面中找到的是否匹配。
 
 每个指纹短语对于其账户都是唯一的，并确保在安全添加用户时进行最后一层监督。如果它们匹配，请选择**确认**。
 
-## 离职提供商用户 <a href="#offboard-users" id="offboard-users"></a>
+## 离职提供商用户 <a href="#deprovision-users" id="deprovision-users"></a>
 
 要从提供商移除用户：
 
@@ -73,7 +73,7 @@
 移除提供商用户
 {% endembed %}
 
-## 提供商用户的类型 <a href="#provider-user-types" id="provider-user-types"></a>
+## 提供商用户类型 <a href="#provider-user-types" id="provider-user-types"></a>
 
 {% hint style="success" %}
 **管理客户组织的用户？**&#x7EC4;织有一组不同于提供商用户类型的[用户类型和访问控制](../admin-console/manage-members/member-roles.md)。

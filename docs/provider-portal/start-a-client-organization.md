@@ -1,4 +1,4 @@
-# 添加客户组织
+# 建立客户组织
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/client-org-setup/)
@@ -27,7 +27,7 @@
 * 选择创建**团队**组织还是**企业**组织。
 * 输入**组织名称**、**客户所有者电子邮箱**和**席位**。
 
-未分配的席位（即您已付费但未使用的座位）的数量将显示在此界面。如果超过此数量，则会显示已购买的附加席位数量。[了解更多](provider-billing.md)。
+未分配的席位（即您已付费但未使用的席位）的数量将显示在此界面。如果超过此数量，则会显示已购买的附加席位数量。[了解更多](provider-billing.md)。
 
 {% hint style="info" %}
 邀请将自动发送到**客户所有者的电子邮箱**，以作为[所有者](../admin-console/manage-members/member-roles.md)加入组织。

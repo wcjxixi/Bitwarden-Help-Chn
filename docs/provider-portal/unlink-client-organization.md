@@ -13,7 +13,7 @@
 
 1、使用产品切换器打开提供商门户：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4xn04Sj9u8n73TPxZUWi5f/f8ca44fc6c7e70069ae6887d3f5f7e10/2024-12-05_09-21-04.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/4xn04Sj9u8n73TPxZUWi5f/dac0d56f47a05e2d8b28754e997a1391/2025-02-25_15-16-00.png?w=1080&fm=avif" %}
 产品切换器 - 提供商门户
 {% endembed %}
 
