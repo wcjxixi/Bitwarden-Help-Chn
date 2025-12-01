@@ -6,7 +6,7 @@
 
 Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理和部署机密。[Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 是您通过经身份验证的[机器账户](../your-secrets/machine-accounts.md)将[机密](../your-secrets/secrets.md)注入应用程序和基础设施的主要工具。
 
-在本文中，我们将通过查看几种检索存储在密码库中的数据库凭据以在容器运行时注入 [Bitwarden Unified](../../self-hosting/deploy-and-configure/docker/lite-deployment.md) Docker 镜像的方式来演示 Secrets Manager CLI 的使用。
+在本文中，我们将通过查看几种检索存储在密码库中的数据库凭据以在容器运行时注入 [Bitwarden Lite](../../self-hosting/deploy-and-configure/docker/lite-deployment.md) Docker 镜像的方式来演示 Secrets Manager CLI 的使用。
 
 {% hint style="success" %}
 如果您要查找 SDK 信息和 Secrets Manager 功能的语言封装，请参阅[本文](../developer-tools/secrets-manager-sdk.md)。
@@ -46,13 +46,13 @@ export SECRET_2=$(bws get secret 80b55c29-5cc8-42eb-a898-acfd01232bbb | jq '.val
 
 ### 注入机密 <a href="#inject-the-secret" id="inject-the-secret"></a>
 
-现在您的数据库凭据已保存为临时环境变量，可以将它们注入到 `docker run` 命令中。在此示例中，我们省略了 [Bitwarden Unified](../../self-hosting/deploy-and-configure/docker/lite-deployment.md) 强调注入机密所需的许多变量：
+现在您的数据库凭据已保存为临时环境变量，可以将它们注入到 `docker run` 命令中。在此示例中，我们省略了 [Bitwarden Lite](../../self-hosting/deploy-and-configure/docker/lite-deployment.md) 强调注入机密所需的许多变量：
 
 ```batch
 docker run -d --name bitwarden .... -env BW_DB_USERNAME=$SECRET_1 BW_BD_PASSWORD=$SECRET_2 .... bitwarden/self-host:beta
 ```
 
-运行此命令时，您的 Docker 容器将启动并从临时存储的环境变量中注入您的数据库凭据，从而使您能够安全地启动 Bitwarden Unified，而无需将敏感值作为明文传递。
+运行此命令时，您的 Docker 容器将启动并从临时存储的环境变量中注入您的数据库凭据，从而使您能够安全地启动 Bitwarden Lite，而无需将敏感值作为明文传递。
 
 ## 高级教程 <a href="#advanced-tutorial" id="advanced-tutorial"></a>
 
@@ -122,4 +122,4 @@ docker build -t image-name
 docker run --rm -it -e BWS_ACCESS_TOKEN=<your-access-token> image-name
 ```
 
-运行此命令时，您的 Docker 容器将启动并从容器获取到的值中注入您的数据库凭据，从而使您能够安全地启动 Bitwarden Unified，而无需将敏感值作为明文传递。
+运行此命令时，您的 Docker 容器将启动并从容器获取到的值中注入您的数据库凭据，从而使您能够安全地启动 Bitwarden Lite，而无需将敏感值作为明文传递。

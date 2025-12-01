@@ -24,7 +24,7 @@ Bitwarden Lite 适合个人和家庭实验室使用，不适用于商用环境�
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-Bitwarden Unified 部署要求：
+Bitwarden Lite 部署要求：
 
 * RAM：至少 200 MB
 * 存储：至少 1GB

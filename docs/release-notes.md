@@ -1014,7 +1014,7 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 * **组织密码库更新**：作为改进网页密码库 UI 的持续努力的一部分，一些组织管理功能进行了重新设计，例如用于项目和集合管理的合并**密码库**视图，以及专用的**成员**和**群组**视图。
 * **在其他客户端上使用设备登录**：现在可以在其他客户端上使用设备登录。登录请求现在也可以从浏览器扩展、桌面 App 和移动 App 发起，现在也可以从桌面 App 获得批准。参阅[这里](account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
 * **自托管组织的自动许可证同步**：自托管组织可以启用自动许可证同步，以便自动更新计费和订阅更改，而不必手动重新上传许可证。参阅[这里](self-hosting/licensing-on-premise.md#update-a-renewed-organization-license)。
-* **用于 Bitwarden 统一的 SQLite 数据库选项**：SQLite 现在是 Bitwarden 统一自托管部署的可用数据库选项。参阅[这里](self-hosting/deploy-and-configure/docker/lite-deployment.md)。
+* **用于 Bitwarden unified 的 SQLite 数据库选项**：SQLite 现在是 Bitwarden unified 自托管部署的可用数据库选项。参阅[这里](self-hosting/deploy-and-configure/docker/lite-deployment.md)。
 * **更新了自托管安装程序 URL**：用于下载自托管服务器安装程序的 URL 已更改。Linux 参阅[这里](self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#install-bitwarden)，Windows 参阅[这里](self-hosting/deploy-and-configure/docker/windows-standard-deployment.md#install-bitwarden)。
 * **Psono 导入器 (json)**：新的导入选项可用于 Psono (json) 导出。参阅[这里](password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -1024,7 +1024,7 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 
 * **Apple Watch 上的 Bitwarden**：Bitwarden 添加了 Apple Watch 支持，以提供访问 TOTP 登录代码的附加选项。参阅[这里](password-manager/more/apple-watch-totp.md)。
 * **新的环境变量**：一个用于为所有者和管理员强制执行要求 SSO 身份验证策略的环境变量现在可用于自托管服务器。参阅[这里](self-hosting/deploy-and-configure/configuration-options/environment-variables.md#optional-variables)。
-* **Bitwarden unified - 支持自定义数据库端口**：统一部署现在支持使用新的环境变量在自定义端口上运行数据库。参阅[这里](self-hosting/deploy-and-configure/docker/lite-deployment.md#environment-variables)。
+* **Bitwarden unified - 支持自定义数据库端口**：unified 部署现在支持使用新的环境变量在自定义端口上运行数据库。参阅[这里](self-hosting/deploy-and-configure/docker/lite-deployment.md#environment-variables)。
 * **Passsky 导入器 (json)**：新的导入选项可用于未加密的 Passsky (json) 导出。参阅[这里](password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 * **自定义头像颜色**：从网页密码库的**账户设置** → **我的账户**页面更改您的头像颜色。
 
@@ -1036,9 +1036,9 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 * **浏览器扩展 - UI 更新**：已对 Bitwarden 浏览器扩展进行了 UI 更新。
 * **Apple Watch 上的 Bitwarden (Beta)**：Apple Watch 上的 Bitwarden 将以测试版形式提供给通过 TestFlight 注册的用户，并将提供访问 TOTP 登录代码的附加选项。在[这里](password-manager/more/apple-watch-totp.md)了解更多。
 
-### Bitwarden 统一自托管部署 (Beta) <a href="#bitwarden-unified-self-host-deployment-beta" id="bitwarden-unified-self-host-deployment-beta"></a>
+### Bitwarden unified 自托管部署 (Beta) <a href="#bitwarden-unified-self-host-deployment-beta" id="bitwarden-unified-self-host-deployment-beta"></a>
 
-Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的测试版本。对于希望在自己的服务器上控制和部署 Bitwarden 的用户，Bitwarden 统一部署是轻量和灵活的选择。有关测试版的更多信息，请参阅[这里](self-hosting/deploy-and-configure/docker/lite-deployment.md)。
+Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的测试版本。对于希望在自己的服务器上控制和部署 Bitwarden 的用户，Bitwarden unified 部署是轻量和灵活的选择。有关测试版的更多信息，请参阅[这里](self-hosting/deploy-and-configure/docker/lite-deployment.md)。
 
 ## 2022.11.2
 

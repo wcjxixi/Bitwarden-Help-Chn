@@ -7,7 +7,7 @@
 本文定义了 Bitwarden 自托管实例可用的证书选项。您可以在安装过程中选择证书选项。**设置或更改证书配置总是需要**您在启动 Bitwarden 之前运行 `./bitwarden.sh rebuild` 或 `.\bitwarden.ps1 -rebuild` 命令来应用对 config.yml 文件的更改。
 
 {% hint style="info" %}
-本文中的信息可能不适用于 Bitwarden Unified 自托管部署。
+本文中的信息可能不适用于 Bitwarden Lite 自托管部署。
 {% endhint %}
 
 ## 使用 Let’s Encrypt 生成证书 <a href="#generate-a-certificate-with-lets-encrypt" id="generate-a-certificate-with-lets-encrypt"></a>

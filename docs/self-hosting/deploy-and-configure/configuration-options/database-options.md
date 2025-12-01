@@ -6,7 +6,7 @@
 
 ## 服务器部署的默认数据库 <a href="#default-database-for-server-deployments" id="default-database-for-server-deployments"></a>
 
-除 [Unified](../docker/lite-deployment.md)（统一）部署外，所有 Bitwarden 自托管服务器部署默认使用 MSSQL Express 镜像。这将您的加密密码库数据与应用程序容器一起部署，并通过确保更新、维护和备份与代码的其余部分同时进行，从而简化部署流程。
+除 [Lite](../docker/lite-deployment.md) 部署外，所有 Bitwarden 自托管服务器部署默认使用 MSSQL Express 镜像。这将您的加密密码库数据与应用程序容器一起部署，并通过确保更新、维护和备份与代码的其余部分同时进行，从而简化部署流程。
 
 此默认数据库不需要额外许可，并已按照 Bitwarden 标准预配置，以安全存储并自动备份密码库数据（[了解更多](../../backup-server-data.md)）。
 
@@ -36,7 +36,7 @@ globalSettings__sqlServer__skipDatabasePreparation=true
 
 ### 数据库维护 <a href="#database-maintenance" id="database-maintenance"></a>
 
-在所有自托管部署中，包括统一 (Unified) 部署，Bitwarden 会在数据库上运行计划任务，以执行常规维护，例如计算数据库统计信息和构建索引。这些任务需要已配置的 SQL 用户在数据库服务器中具有管理员权限。权限不足将导致此任务失败，并且失败信息会被记录到 `admin` 容器日志中。
+在所有自托管部署中，包括 Lite 部署，Bitwarden 会在数据库上运行计划任务，以执行常规维护，例如计算数据库统计信息和构建索引。这些任务需要已配置的 SQL 用户在数据库服务器中具有管理员权限。权限不足将导致此任务失败，并且失败信息会被记录到 `admin` 容器日志中。
 
 如果您希望以单独的用户身份运行这些维护任务，请通过在 `global.override.env` 文件中设置以下环境变量来禁用此行为：
 
