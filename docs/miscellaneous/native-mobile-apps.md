@@ -23,7 +23,9 @@
 > * Native Applications：原生应用程序。专门为特定移动操作系统（如 iOS 或 Android）开发的应用程序。能够充分利用设备的硬件和操作系统功能，提供高性能和流畅的用户体验。
 > * Xamarin Applications：使用跨平台开发工具 Xamarin 框架开发的移动应用程序。
 
-#### Xamarin Applications 和 Native Mobile Applications 的区别：
+**\[译者注]**：
+
+**Xamarin Applications 和 Native Mobile Applications 的区别：**
 
 | 特性       | Native Applications                       | Xamarin Applications     |
 | -------- | ----------------------------------------- | ------------------------ |

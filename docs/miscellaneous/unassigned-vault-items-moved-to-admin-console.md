@@ -4,11 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/unassigned-vault-items-moved-to-admin-console/)
 {% endhint %}
 
-最近[迁移到新的权限结构](../admin-console/manage-shared-items/collections/collection-settings.md#collection-management-settings)，为您的组织带来了更大的集合管理灵活性后，未分配给特定集合的密码库项目现在不再显示在您的 Password Manager 的**所有密码库**视图中了。
+最近[迁移到新的权限结构](../admin-console/manage-shared-items/collections/collection-settings.md#collection-management-settings)，为您的组织带来了更大的集合管理灵活性后，未分配给特定[集合](../admin-console/manage-shared-items/collections/about-collections.md)的密码库项目现在不再显示在您的 Password Manager 的**所有密码库**视图中了。
 
 **您不会失去对这些项目的访问权限！**&#x60A8;可以将这些项目分配到集合中，以使它们显示在**所有密码库**视图中。
 
-若要查看这些项目并将其批量分配到集合中：
+要查看这些项目并将其批量分配到集合中：
 
 1、使用 Bitwarden 网页 App，使用产品切换器打开管理控制台：
 

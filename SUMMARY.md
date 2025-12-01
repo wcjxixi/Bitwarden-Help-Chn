@@ -404,7 +404,6 @@
   * [11 月弃用通知](docs/miscellaneous/november-deprecation-notice.md)
   * [Bitwarden 术语表](docs/miscellaneous/bitwarden-glossary-of-terms.md)
   * [迁移脚本](docs/miscellaneous/migration-script.md)
-  * [Bitwarden 101 视频系列-入门](docs/miscellaneous/bitwarden-101-video-series-getting-started.md)
   * [Secrets Manager Beta 版注册](docs/miscellaneous/beta-signup.md)
   * [未分配的密码库项目已移至管理控制台](docs/miscellaneous/unassigned-vault-items-moved-to-admin-console.md)
   * [旧版用户支持](docs/miscellaneous/legacy-user-support.md)

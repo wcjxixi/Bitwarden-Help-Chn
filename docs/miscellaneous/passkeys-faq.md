@@ -34,7 +34,7 @@
 
 ### 我的通行密钥存储在哪里？ <a href="#where-are-my-passkeys-stored" id="where-are-my-passkeys-stored"></a>
 
-公钥存储在网站上，私钥存储在您的设备或您的通行密钥提供商中，例如您的 Bitwarden 密码库。
+公钥存储在网站上，私钥存储在您的设备或您的通行密钥提供程序中，例如您的 Bitwarden 密码库。
 
 ## 通行密钥安全 <a href="#passkey-security" id="passkey-security"></a>
 
