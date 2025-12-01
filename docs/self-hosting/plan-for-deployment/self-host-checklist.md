@@ -29,7 +29,7 @@
 | ----- | -------------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------- |
 | 部署方式  | <p>您将在 Bitwarden 的 US 或 EU 云中部署吗？</p><p>或者在 Linux 或 Windows 上使用 Docker 或 Kubernetes 自托管？</p> |          | [自托管 Bitwarden](self-host-bitwarden.md)                                          |
 | 服务器配置 | <p>您将在服务器上使用哪些环境变量来满足组织的安全要求？</p><p>您会将服务器置于防火墙或代理后面吗？</p>                                   |          | [配置环境变量](../deploy-and-configure/configuration-options/environment-variables.md) |
-| 数据库选择 | <p>您的服务器是否使用打包的 MSSQL 数据库或连接到单独的 MSSQL 数据库？</p><p>如果使用 Unified，您将使用不同的数据库平台吗？</p>            |          | [数据库选项](../deploy-and-configure/configuration-options/database-options.md)       |
+| 数据库选择 | <p>您的服务器是否使用打包的 MSSQL 数据库或连接到单独的 MSSQL 数据库？</p><p>如果使用 Lite，您将使用不同的数据库平台吗？</p>               |          | [数据库选项](../deploy-and-configure/configuration-options/database-options.md)       |
 | 证书选择  | 您将使用哪种证书选项来保护传输中的数据？                                                                         |          | [证书选项](../deploy-and-configure/configuration-options/certificate-options.md)     |
 
 ### 推广准备 <a href="#rollout-preparation" id="rollout-preparation"></a>
