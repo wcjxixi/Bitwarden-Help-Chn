@@ -76,11 +76,11 @@ Bitwarden 还宣布，用户将能够保存、存储以及管理与他们在密�
 
 ### 如何在 Bitwarden 中使用通行密钥？我还需要主密码吗？ <a href="#how-will-i-use-passkeys-with-bitwarden-do-i-still-need-a-master-password" id="how-will-i-use-passkeys-with-bitwarden-do-i-still-need-a-master-password"></a>
 
-到 2023 年秋季，用户将可以使用通行密钥访问自己的账户，而无需主密码。用户还可以在自己的密码库中存储和保护他们的通行密钥。
+用户可通过受支持的浏览器使用通行密钥访问其网页 App 账户，而无需主密码。通行密钥也可创建并存储在 Bitwarden 密码库中，用于访问支持通行密钥的网站。
 
 ### 通行密钥可以跨平台使用吗？如果不能，根据使用的平台使用不同的通行密钥是否有任何问题？ <a href="#can-passkeys-be-used-across-platforms-if-not-are-there-any-issues-with-having-different-passkeys-dep" id="can-passkeys-be-used-across-platforms-if-not-are-there-any-issues-with-having-different-passkeys-dep"></a>
 
-最初，通行密钥只能在创建通行密钥的设备上使用。接下来，同步通行密钥将通过支持存储通行密钥的密码管理器（如 Bitwarden）跨设备存储和管理。
+有两种类型的通行密钥：设备绑定的通行密钥和同步的通行密钥。设备绑定的通行密钥仅限于创建它们的设备。同步的通行密钥可以存储在 Bitwarden 等通行密钥提供程序内，并在任何登录位置使用。
 
 ### 如果我采用它，我是否会被锁定为只能使用通行密钥？ <a href="#will-i-be-locked-into-using-passkeys-if-i-adopt-it" id="will-i-be-locked-into-using-passkeys-if-i-adopt-it"></a>
 
