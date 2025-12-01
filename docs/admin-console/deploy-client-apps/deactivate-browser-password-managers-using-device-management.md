@@ -156,7 +156,7 @@ Firefox 设置
 
 5、要禁用 Chrome 内置的密码管理器，请在 `managed_preferences.json` 的 `"policies": { }` 中添加以下内容：
 
-```
+```yaml
 {
   "PasswordManagerEnabled": false
 }
@@ -228,7 +228,7 @@ wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linu
 
 7、要禁用 Firefox 内置的密码管理器，请将以下内容添加到 `policies.json` 的 `"policies": {}` 中：
 
-```
+```yaml
 {
  "PasswordManagerEnabled": false
 }
@@ -277,7 +277,7 @@ chmod 644 /opt/firefox/distribution/policies.json
 
 5、要禁用 Chrome 的内置密码管理器，请在 `com.Google.Chrome.plist` 中添加以下内容：
 
-```
+```html
 <key>PasswordManagerEnabled</key>
 <false />
 ```
@@ -306,7 +306,7 @@ chmod 644 /opt/firefox/distribution/policies.json
 
 4、要[禁用](https://github.com/mozilla/policy-templates/blob/master/README.md#passwordmanagerenabled) Firefox 内置密码管理器，请在 `org.mozilla.firefox.plist` 中添加以下内容：
 
-```
+```html
 <dict>
   <key>PasswordManagerEnabled</key>
   <false/>
@@ -339,7 +339,7 @@ chmod 644 /opt/firefox/distribution/policies.json
 
 4、要[禁用](https://learn.microsoft.com/zh-cn/deployedge/microsoft-edge-policies#passwordmanagerenabled) Edge 的内置密码管理器，请在 `com.microsoft.Edge.plist` 中添加以下内容：
 
-```
+```html
 <key>PasswordManagerEnabled</key>
 <false/>
 ```

@@ -14,7 +14,7 @@
 
 1. 从 [bitwarden.com/download/](https://bitwarden.com/download/) 下载最新的 Bitwarden Windows 桌面 App 安装程序。
 2. 使用 [Microsoft Win32 Content Prep Tool](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool) 将安装程序转换为所需的 `.intunewin` 格式（[了解更多](https://learn.microsoft.com/zh-cn/mem/intune/apps/apps-win32-prepare)）。
-3. 打开 Intune 门户，导航到**应用程序** → **Windows** 然后选择 ✚**添加**。
+3. 打开 Intune 门户，导航到**应用程序** → **Windows**，然后选择 ✚**添加**。
 4. 在选择应用程序类型窗口中，使用**应用程序类型**下拉菜单选择 **Windows 应用程序 (Win32)**。
 5. 点击**选择**。
 6. 在应用程序信息界面，选择**选择应用程序软件包文件**。
@@ -53,7 +53,7 @@
 
 要部署 Microsoft App Store 版本的 Bitwarden Password Manager，请打开 Microsoft Intune 门户然后完成以下步骤：
 
-1. 在 Intune 门户中，导航至**应用程序** → **Windows** 然后选择 ✚**添加**。
+1. 在 Intune 门户中，导航至**应用程序** → **Windows**，然后选择 ✚**添加**。
 2. 在选择应用程序类型窗口中，使用**应用程序类型**下拉菜单选择 **Microsoft Store 应用程序（新）**。
 3. 点击**选择**。
 4. 在应用程序信息界面，选择**搜索 Microsoft Store 应用程序（新）**。

@@ -241,7 +241,7 @@ chmod -R 755 /etc/opt/chrome/policies
 
 5、将以下内容添加到 `.plist` 文件中：
 
-```yaml
+```html
 <key>ExtensionSettings</key>
 <dict>
   <key>nngceckbapebfimnlniiiahkandclblb</key>
@@ -262,7 +262,7 @@ chmod -R 755 /etc/opt/chrome/policies
 
 6、（**推荐**）要[禁用](https://chromeenterprise.google/policies/#PasswordManagerEnabled) Chrome 的内置密码管理器，请将以下内容添加到 `com.Google.Chrome.plist`：
 
-```yaml
+```html
 <key>PasswordManagerEnabled</key>
 <false />
 ```
@@ -291,7 +291,7 @@ chmod -R 755 /etc/opt/chrome/policies
 
 4、将以下内容添加到 `org.mozilla.firefox.plist`：
 
-```yaml
+```html
 <key>ExtensionSettings</key>
 <dict>
    <key>446900e4-71c2-419f-a6a7-df9c091e268b</key>
@@ -308,7 +308,7 @@ chmod -R 755 /etc/opt/chrome/policies
 
 5、（**推荐**）要[禁用](https://github.com/mozilla/policy-templates/blob/master/README.md#passwordmanagerenabled) Firefox 的内置密码管理器，请将以下内容添加到 `org.mozilla.firefox.plist`：
 
-```yaml
+```html
 <dict>
   <key>PasswordManagerEnabled</key>
   <false/>
@@ -339,7 +339,7 @@ chmod -R 755 /etc/opt/chrome/policies
 
 4、打开 `com.microsoft.Edge.plist` 并添加以下内容：
 
-```yaml
+```html
 <key>ExtensionSettings</key>
 <dict>
   <key>jbkfoedolllekgbhcbcoahefnbanhhlh</key>
@@ -360,7 +360,7 @@ chmod -R 755 /etc/opt/chrome/policies
 
 5、（**推荐**）要[禁用](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#passwordmanagerenabled) Edge 的内置密码管理器，请将以下内容添加到 `com.microsoft.Edge.plist`：
 
-```yaml
+```html
 <key>PasswordManagerEnabled</key>
 <false/>
 ```
