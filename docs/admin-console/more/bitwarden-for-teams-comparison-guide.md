@@ -1,7 +1,7 @@
 # \*团队版 Bitwarden 对比指南
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/why-choose-bitwarden-for-your-team/)
+~~对应的~~[~~官方文档地址~~](https://bitwarden.com/help/article/why-choose-bitwarden-for-your-team/)
 {% endhint %}
 
 > **\[译者注]**：本文中对比的对象简称分别代表：
