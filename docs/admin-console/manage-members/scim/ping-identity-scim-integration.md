@@ -117,16 +117,16 @@ Bitwarden 和 Ping Identity **SCIM Provisioner with SAML (SCIM v2 Enterprise)** 
 #### 用户属性 <a href="#user-attributes" id="user-attributes"></a>
 
 * `active`
-* `emails`ª 或 `userName`
+* `emails`<mark style="color:red;">**ª**</mark> 或 `userName`
 * `displayName`
 * `externalId`
 
-ª - 由于 SCIM 允许用户将多个电子邮箱地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
+<mark style="color:red;">**ª**</mark> - 由于 SCIM 允许用户将多个电子邮箱地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
 
 #### 群组属性 <a href="#group-attributes" id="group-attributes"></a>
 
 * `displayName`（**必填**）
-* `members`ª
+* `members`<mark style="color:red;">**ª**</mark>
 * `externalId`
 
-ª - `members` 是一个对象数组，每个对象代表该群组中的一个用户。
+<mark style="color:red;">**ª**</mark> - `members` 是一个对象数组，每个对象代表该群组中的一个用户。

@@ -33,7 +33,7 @@ SCIM 预配
 {% endembed %}
 
 {% hint style="success" %}
-以下部分涵盖了用于配置 SCIM 的通用信息，但 Bitwarden 建议使用以下集成文档之一：
+以下部分涵盖了可用于设置 SCIM 的通用信息，但 Bitwarden 建议使用以下集成文档之一：
 
 * [JumpCloud](jumpcloud-scim-integration.md)
 * [Microsoft Entra ID](microsoft-entra-id-scim-integration.md)
@@ -51,12 +51,12 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 对于每个用户，Bitwarden 将使用以下属性：
 
 * 表明用户处于 `active` 状态的指示（**必填**）
-* `email`ª 或 `userName`（**必填**）
+* `email`<mark style="color:red;">**ª**</mark> 或 `userName`（**必填**）
 * `displayName`
 * `externalId`
 
 {% hint style="info" %}
-ª - 由于 SCIM 允许用户将多个电子邮箱地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
+<mark style="color:red;">**ª**</mark> - 由于 SCIM 允许用户将多个电子邮箱地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
 {% endhint %}
 
 #### 群组属性 <a href="#group-attributes" id="group-attributes"></a>
@@ -64,11 +64,11 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 对于每个用户，Bitwarden 将使用以下属性：
 
 * `displayName`（**必填**）
-* `members`ª
+* `members`<mark style="color:red;">**ª**</mark>
 * `externalId`
 
 {% hint style="info" %}
-ª - `members` 是一个对象数组，每个对象代表该群组中的一个用户。**必须使用群组配置才能将已同步用户分配到群组**，但是 SCIM API 不能用于查询群组中的成员。要查询群组成员资格，请使用[公共 API](https://bitwarden.com/help/api/)。
+<mark style="color:red;">**ª**</mark> - `members` 是一个对象数组，每个对象代表该群组中的一个用户。**必须使用群组配置才能将已同步用户分配到群组**，但是 SCIM API 不能用于查询群组中的成员。要查询群组成员资格，请使用[公共 API](https://bitwarden.com/help/api/)。
 {% endhint %}
 
 ## SCIM 事件日志 <a href="#scim-events" id="scim-events"></a>

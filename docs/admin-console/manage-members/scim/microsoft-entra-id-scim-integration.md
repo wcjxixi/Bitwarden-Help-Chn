@@ -81,14 +81,14 @@ Bitwarden 使用标准的 SCIM v2 属性名称，尽管这些名称可能与 Mic
 
 如果您希望目录中的用户对象与 Bitwarden 同步，您可以启用或禁用 **Provision Microsoft Entra ID Users**。默认情况下启用此功能。如果您希望根据下表进行更改，请选择 **Provision Microsoft Entra ID Users** 链接以自定义用户对象发送给 Bitwarden 的属性：
 
-| Bitwarden 属性           | 默认 AAD 属性                                                     |
-| ---------------------- | ------------------------------------------------------------- |
-| `active`               | `Switch([IsSoftDeleted], , "False", "True", "True", "False")` |
-| `emails`ª 或 `userName` | `mail` 或 `userPrincipalName`                                  |
-| `displayName`          | `displayName`                                                 |
-| `externalId`           | `mailNickname`                                                |
+| Bitwarden 属性                                               | 默认 AAD 属性                                                     |
+| ---------------------------------------------------------- | ------------------------------------------------------------- |
+| `active`                                                   | `Switch([IsSoftDeleted], , "False", "True", "True", "False")` |
+| `emails`<mark style="color:red;">**ª**</mark> 或 `userName` | `mail` 或 `userPrincipalName`                                  |
+| `displayName`                                              | `displayName`                                                 |
+| `externalId`                                               | `mailNickname`                                                |
 
-ª - 由于 SCIM 允许用户将多个电子邮件地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
+<mark style="color:red;">**ª**</mark> - 由于 SCIM 允许用户将多个电子邮件地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
 
 #### 群组映射 <a href="#group-mapping" id="group-mapping"></a>
 

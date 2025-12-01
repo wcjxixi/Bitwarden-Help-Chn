@@ -321,7 +321,7 @@
       * [Linux 离线部署](docs/self-hosting/deploy-and-configure/docker/linux-offline-deployment.md)
       * [Windows 标准部署](docs/self-hosting/deploy-and-configure/docker/windows-standard-deployment.md)
       * [Windows 离线部署](docs/self-hosting/deploy-and-configure/docker/windows-offline-deployment.md)
-      * [=Lite 部署](docs/self-hosting/deploy-and-configure/docker/lite-deployment.md)
+      * [Lite 部署](docs/self-hosting/deploy-and-configure/docker/lite-deployment.md)
     * [使用 Helm 部署](docs/self-hosting/deploy-and-configure/helm/README.md)
       * [使用 Helm 自托管](docs/self-hosting/deploy-and-configure/helm/self-host-with-helm.md)
       * [AWS EKS 部署](docs/self-hosting/deploy-and-configure/helm/aws-eks-deployment.md)

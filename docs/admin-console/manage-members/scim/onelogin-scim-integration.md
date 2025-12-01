@@ -143,8 +143,8 @@ SCIM App 配置
 Bitwarden 和 OneLogin 的 SCIM Provisioner with SAML (SCIM v2 Enterprise) 应用程序都使用标准的 SCIM v2 属性名称。Bitwarden 将使用以下属性：
 
 * `active`
-* `emails`ª 或 `userName`
+* `emails`<mark style="color:red;">**ª**</mark> 或 `userName`
 * `displayName`
 * `externalId`
 
-ª - 由于 SCIM 允许用户将多个电子邮箱地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
+<mark style="color:red;">**ª**</mark> - 由于 SCIM 允许用户将多个电子邮箱地址表示为对象数组，因此 Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
