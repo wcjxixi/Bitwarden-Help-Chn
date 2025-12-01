@@ -16,11 +16,11 @@
 
 ### 2019 年企业版 <a href="#id-2019-enterprise" id="id-2019-enterprise"></a>
 
-如果您已购买 **2019 年 Enterprise 版组织**订阅，您将在 2023 年 11 月 06 日被自动升级，以包含对当前 Enterprise 版订阅有权访问的所有功能的访问权限，包括 SSO 登录、SCIM 配置和帐户恢复管理。对于现有用户以及添加到组织的新用户，您的订阅和席位价格将保持不变。
+如果您已购买 **2019 年企业版组织**订阅，您将在 2023 年 11 月 06 日被自动升级，以包含对当前企业版订阅有权访问的所有功能的访问权限，包括 SSO 登录、SCIM 配置和帐户恢复管理。对于现有用户以及添加到组织的新用户，您的订阅和席位价格将保持不变。
 
 ### 2019 年团队版 <a href="#id-2019-teams" id="id-2019-teams"></a>
 
-如果您已购买 **2019 年 Teams 版组织**订阅，您将在 2023 年 11 月 06 日被自动更新，以包含对当前 Teams 版订阅有权访问的所有功能的访问权限，包括组织、事件日志和 Duo。对于现有用户以及添加到组织的新用户，您的订阅和席位价格保持不变。
+如果您已购买 **2019 年团队版组织**订阅，您将在 2023 年 11 月 06 日被自动更新，以包含对当前团队版订阅有权访问的所有功能的访问权限，包括组织、事件日志和 Duo。对于现有用户以及添加到组织的新用户，您的订阅和席位价格保持不变。
 
 ### 2019 年家庭版 <a href="#id-2019-families" id="id-2019-families"></a>
 
@@ -39,11 +39,11 @@
 
 ### 2020 年企业版 <a href="#id-2020-enterprise" id="id-2020-enterprise"></a>
 
-如果您已购买 **2020 年 Enterprise 版组织**订阅，功能和价格将保持不变，您将继续按照最初购买订阅的价格付费。新增加的席位也将以相同价格计费。
+如果您已购买 **2020 年企业版组织**订阅，功能和价格将保持不变，您将继续按照最初购买订阅的价格付费。新增加的席位也将以相同价格计费。
 
 ### 2020 年团队版 <a href="#id-2020-teams" id="id-2020-teams"></a>
 
-如果您已购买 **2020 年 Teams 版组织**订阅，功能和价格将保持不变，您将继续按照最初购买订阅的价格付费。新增加的席位也将以相同价格计费。
+如果您已购买 **2020 年团队版组织**订阅，功能和价格将保持不变，您将继续按照最初购买订阅的价格付费。新增加的席位也将以相同价格计费。
 
 ## 2024 年 06 月 11 日之前购买的订阅 <a href="#subscriptions-purchased-prior-to-june-11-2024" id="subscriptions-purchased-prior-to-june-11-2024"></a>
 
@@ -59,15 +59,15 @@
 
 ### 问：11 月 06 日有哪些升级？ <a href="#q-what-upgrade-is-happening-on-november-6" id="q-what-upgrade-is-happening-on-november-6"></a>
 
-**答：**&#x6240;有 2019 Teams 版和 Enterprise 版 Bitwarden Password Manager 订阅都将自动升级到最新的功能集。它们的价格将保持不变。
+**答：**&#x6240;有 2019 团队版和企业版 Bitwarden Password Manager 订阅都将自动升级到最新的功能集。它们的价格将保持不变。
 
 ### 问：这对新客户有何影响？ <a href="#q-how-will-this-impact-new-customers" id="q-how-will-this-impact-new-customers"></a>
 
-**答：**&#x5728; 2023 年 11 月 06 日或之后购买 Bitwarden Password Manager Teams 版或 Enterprise 版的新客户将支付当前的列表价格。
+**答：**&#x5728; 2023 年 11 月 06 日或之后购买 Bitwarden Password Manager 团队版或企业版的新客户将支付当前的列表价格。
 
 ### 问：这对现有客户有何影响？ <a href="#q-how-will-this-impact-existing-customers" id="q-how-will-this-impact-existing-customers"></a>
 
-**答：**&#x5728; 2023 年 11 月 06 日之前购买 Bitwarden Teams 版或 Enterprise 版的现有客户将保持原价。
+**答：**&#x5728; 2023 年 11 月 06 日之前购买 Bitwarden 团队版或企业版的现有客户将保持原价。
 
 ### 问：2019 年团队版和企业版方案客户可以获得哪些新功能？ <a href="#q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting" id="q-what-new-features-are-2019-teams-and-enterprise-plan-customers-getting"></a>
 

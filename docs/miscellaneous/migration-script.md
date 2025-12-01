@@ -33,7 +33,7 @@ pip3 install requests
 
 解压 `.zip` 并将这些文件保存到同一目录中。完成后，将以下文件添加到同一目录：
 
-* Bitwarden Password Manager [CLI 本机可执行文件](../password-manager/developer-tools/cli/password-manager-cli.md#download-and-install)。
+* Bitwarden Password Manager [CLI 原生可执行文件](../password-manager/developer-tools/cli/password-manager-cli.md#download-and-install)。
 
 ### 创建目标组织 <a href="#create-destination-organization" id="create-destination-organization"></a>
 
@@ -97,49 +97,49 @@ pip3 install requests
 `python3` - 有些机器会安装多个版本的 Python。使用 `python3`（而不仅仅是 `python`）指定命令使用 Python v3 运行。如果您的计算机仅安装了一个 Python 版本，请改用 `python`。某些发行版还将提供 `python` 而不是 v3 的 `python3` 二进制文件。
 {% endhint %}
 
-要显示脚本帮助文本：
+* 要显示脚本帮助文本：
 
 ```shellscript
 python3 bwAdminTools.py -h
 ```
 
-要比较源组织和目标组织：
+* 要比较源组织和目标组织：
 
 ```shellscript
 python3 bwAdminTools.py -c diffbw
 ```
 
-要将组织库数据、群组和群组权限从源组织迁移到目标组织：
+* 要将组织库数据、群组和群组权限从源组织迁移到目标组织：
 
 ```shellscript
 python3 bwAdminTools.py -c migratebw
 ```
 
-要将成员的权限（群组以外的）从源组织迁移到目标组织：
+* 要将成员的权限（群组以外的）从源组织迁移到目标组织：
 
 ```shellscript
 python3 bwAdminTools.py -c migratebwusers
 ```
 
-要从源组织中删除所有集合：
+* 要从源组织中删除所有集合：
 
 ```shellscript
 python3 bwAdminTools.py -c purgecol
 ```
 
-要从目标组织中删除所有集合：
+* 要从目标组织中删除所有集合：
 
 ```shellscript
 python3 bwAdminTools.py -c purgecoldest
 ```
 
-要从源组织中删除所有群组：
+* 要从源组织中删除所有群组：
 
 ```shellscript
 python3 bwAdminTools.py -c purgegroup
 ```
 
-要从目标组织中删除所有群组：
+* 要从目标组织中删除所有群组：
 
 ```shellscript
 python3 bwAdminTools.py -c purgegroupdest

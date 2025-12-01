@@ -4,13 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/cloud-setup-checklist/)
 {% endhint %}
 
-使用云托管，Bitwarden 管理基础设施、安全和运营责任。使用此清单了解云部署的组织和用户管理要求。
+使用云托管，Bitwarden 管理基础设施、安全和运营责任。使用此清单了解针对云部署的组织和用户管理要求。
 
 ## 部署前规划 <a href="#pre-deployment-planning" id="pre-deployment-planning"></a>
 
 * 确定云服务器区域（美国、欧盟）
-* 选择认证策略（电子邮件或身份提供程序 SSO）
-* 选择加密类型（主密码或可信任设备）
+* 选择认证策略（电子邮箱或身份提供程序 SSO）
+* 选择加密类型（主密码或受信任设备）
 * 定义用户配置方法（手动、目录连接器、SCIM、即时 SSO）
 * 定义密码库所有权策略（个人密码库与仅限组织）
 * 确定分阶段推广的用户群组
@@ -51,7 +51,7 @@
 
 ## 组织构建和配置 <a href="#organizational-build-out-and-configuration" id="organizational-build-out-and-configuration"></a>
 
-* 确定组织所有者（建议两个以实现冗余）
+* 确定组织所有者（建议设置两个以实现冗余）
 * 向组织中添加其他管理员
 * 在邀请用户前配置企业策略
 * 选择集合管理设置
@@ -80,7 +80,7 @@
 * [启用 SCIM 配置](../admin-console/manage-members/scim/about-scim.md)
 * [Microsoft Entra ID SCIM 集成](../admin-console/manage-members/scim/microsoft-entra-id-scim-integration.md)
 * [JumpCloud SCIM 集成](../admin-console/login-with-sso/sso-guides/jumpcloud-saml-implementation.md)
-* OneLogin SCIM 集成
+* [OneLogin SCIM 集成](../admin-console/manage-members/scim/onelogin-scim-integration.md)
 * [Ping Identity SCIM 集成](../admin-console/login-with-sso/sso-guides/ping-identity-saml-implementation.md)
 
 ## 部署和上线准备 <a href="#deployment-and-go-live-preparation" id="deployment-and-go-live-preparation"></a>
