@@ -102,7 +102,7 @@
   * [组织成员](docs/password-manager/organization-members/README.md)
     * [共享项目](docs/password-manager/organization-members/sharing.md)
     * [我的项目](docs/password-manager/organization-members/my-items.md)
-    * [=更改存在风险的密码](docs/password-manager/organization-members/change-at-risk-passwords.md)
+    * [更改存在风险的密码](docs/password-manager/organization-members/change-at-risk-passwords.md)
   * [Bitwarden Send](docs/password-manager/bitwarden-send/README.md)
     * [关于 Send](docs/password-manager/bitwarden-send/about-send.md)
     * [创建 Send](docs/password-manager/bitwarden-send/create-a-send.md)
