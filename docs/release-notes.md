@@ -35,16 +35,16 @@ Bitwarden 会在初始发布后逐步更新每个客户端 App（桌面端、浏
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **Access Intelligence**：企业组织可使用 [Access Intelligence](admin-console/oversight-visibility/access-intelligence.md) 来审查存在风险的凭据，并通知成员[对这些凭据采取相应措施](password-manager/organization-members/change-at-risk-passwords.md)。
-* **策略名称更新**：「为允许的应用自动登录用户」策略已更名为「[使用 SSO 自动登录](admin-console/oversight-visibility/enterprise-policies.md#automatically-log-in-users-for-allowed-applications)」。
+* **策略名称更新**：「为允许的应用自动登录用户」策略已更名为「[使用 SSO 自动登录](admin-console/oversight-visibility/enterprise-policies.md#automatic-login-with-sso)」。
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 
-* **Bitwarden Lite 全面上线**：Bitwarden Lite（原 Bitwarden Unified）现已正式发布。
-* **环境变量更新**：自托管环境变量 `globalSettings__syslog__destination` 已弃用。了解更多有关自托管环境变量的信息。
+* **Bitwarden Lite 正式发布**：[Bitwarden Lite](self-hosting/deploy-and-configure/docker/lite-deployment.md)（原 Bitwarden Unified）现已正式发布。
+* **环境变量更新**：自托管环境变量 `globalSettings__syslog__destination` 已弃用。了解更多有关自托管[环境变量](self-hosting/deploy-and-configure/configuration-options/environment-variables.md)的信息。
 
 ### 安全 <a href="#security" id="security"></a>
 
-* **KDF 变更不强制注销**：更改 KDF 算法将不再使您退出客户端应用程序。
+* **KDF 变更不强制注销**：更改 [KDF 算法](security/encryption/encryption-key-derivation.md)将不再使您退出客户端应用程序。
 
 ## 2025.11.0
 
