@@ -227,13 +227,13 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 
 启用**激活自动填充**策略将自动为组织的所有现有和新成员打开浏览器扩展上的[页面加载时自动填充](../../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#on-page-load)功能。如果激活，成员将无法禁用页面加载时自动填充功能。
 
-### 为允许的应用程序自动登录用户 <a href="#automatically-log-in-users-for-allowed-applications" id="automatically-log-in-users-for-allowed-applications"></a>
+### 使用 SSO 自动登录 <a href="#automatic-login-with-sso" id="automatic-login-with-sso"></a>
 
-启用**为允许的应用程序自动登录用户**策略，将允许在访问身份提供程序提供的非 SSO  App 时自动填充并提交登录表单。要启用此设置：
+启用**使用 SSO 自动登录**策略，将允许在访问身份提供程序提供的非 SSO App 时自动填充并提交登录表单。要启用此设置：
 
-1、要启用**为允许的应用程序自动登录用户**策略，请选中**启用**复选框，并输入**身份提供程序主机** URL。URL 应包括 `protocol://domain`。
+1、要启用**使用 SSO 自动登录**策略，请选中**启用**复选框，并输入**身份提供程序主机** URL。URL 应包含 `protocol://domain`。
 
-{% embed url="https://bitwarden.com/assets/2qHW4T4CDwpQJmPK6oDDn8/4fe9fb9517db6ed1a09a72be3883f2ae/2024-08-27_11-21-32.png?w=750&fm=avif" %}
+{% embed url="https://bitwarden.com/assets/2qHW4T4CDwpQJmPK6oDDn8/e25f021aa609e6072ffa664ae757ea7f/2025-11-19_09-34-16.png?w=543&fm=avif" %}
 为允许的应用程序自动登录用户
 {% endembed %}
 
@@ -246,5 +246,5 @@ Microsoft App 示例
 3、保存应用程序后，用户可从 IdP 面板上选择应用程序，Bitwarden 将自动填充并登录应用程序。
 
 {% hint style="info" %}
-自动登录用户将根据用户当前在 Bitwarden 浏览器扩展上的活动账户自动填充数据。此外，自动填充的数据将是用户最近使用的与目标应用程序 URL 相关联的凭证。
+**使用 SSO 自动登录**将根据用户当前在 Bitwarden 浏览器扩展上的活动账户自动填充数据。此外，自动填充的数据将是用户最近使用的与目标应用程序 URL 相关联的凭证。
 {% endhint %}

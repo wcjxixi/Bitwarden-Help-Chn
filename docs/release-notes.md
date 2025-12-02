@@ -23,6 +23,29 @@ Bitwarden 会在初始发布后逐步更新每个客户端 App（桌面端、浏
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.11.1
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.11.2、iOS 端 2025.11.0、Android 端 2025.11.1）
+
+### Password Manager
+
+* **通行密钥登录**：浏览器扩展和网页 App 现已全面支持[通行密钥](account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)登录，让您更快更安全地登录 Bitwarden 账户。
+* **自动填充更新**：Android 版 Password Manager 现默认采用改进的[自动填充匹配逻辑，适用于 Opera、Edge 和 Samsung Internet](password-manager/autofill/autofill-from/autofill-from-android.md#browser-integrations)。此前的版本中该功能称为「兼容模式」选项。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **Access Intelligence**：企业组织可使用 [Access Intelligence](admin-console/oversight-visibility/access-intelligence.md) 来审查存在风险的凭据，并通知成员[对这些凭据采取相应措施](password-manager/organization-members/change-at-risk-passwords.md)。
+* **策略名称更新**：「为允许的应用自动登录用户」策略已更名为「[使用 SSO 自动登录](admin-console/oversight-visibility/enterprise-policies.md#automatically-log-in-users-for-allowed-applications)」。
+
+### 自托管 <a href="#self-host" id="self-host"></a>
+
+* **Bitwarden Lite 全面上线**：Bitwarden Lite（原 Bitwarden Unified）现已正式发布。
+* **环境变量更新**：自托管环境变量 `globalSettings__syslog__destination` 已弃用。了解更多有关自托管环境变量的信息。
+
+### 安全 <a href="#security" id="security"></a>
+
+* **KDF 变更不强制注销**：更改 KDF 算法将不再使您退出客户端应用程序。
+
 ## 2025.11.0
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.11.0、浏览器扩展 2025.11.0、移动端 2025.11.0、桌面端 2025.11.0、CLI 2025.11.0）

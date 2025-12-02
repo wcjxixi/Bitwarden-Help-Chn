@@ -77,15 +77,17 @@ Android 弹出自动填充
 
 如果您使用 Brave 或 Chrome 作为网页浏览器，请打开**使用 Brave 自动填充集成**或**使用 Chrome 自动填充集成**选项，以确保自动填充功能在这些浏览器中能正常工作。此操作将引导您进入相应浏览器的设置界面，您需在此启用此选项以使用第三方服务。
 
-这是 Chrome 所必需的，以便它能够安全地使用 Bitwarden 通过其受保护的自动填充系统自动填充密码，并且要求在 Bitwarden 中启用**自动填充服务**，并且安装的 Chrome App 版本至少为 135。
+这是 Chrome 所必需的，以便它能够安全地使用 Bitwarden 通过其受保护的自动填充系统自动填充密码，并且要求在 Bitwarden 中启用**自动填充服务**，并且安装的 Chrome App 版本至少为 135。这些选项将禁用浏览器内置的自动填充功能，转而使用 Bitwarden。
+
+{% hint style="info" %}
+Bitwarden 会自动检测您是否正在使用 **Edge、Opera 或 Samsung Internet**，无需为这些浏览器启用集成选项，并且会在这些浏览器中使用改进后的自动填充逻辑。
+
+在使用 Edge、Opera 或 Samsung Internet 时，请务必仅自动填充受信任且合法的网站，因为存在一个漏洞，该漏洞可能导致凭据被自动填充到恶意网站的嵌入式或隐藏的 iframe 中。
+{% endhint %}
 
 {% embed url="https://bitwarden.com/assets/1Qm4g428OlYOBvzAxKwUNU/77106f75d8f5af42bed8bde4db9dc325/2025-07-30_13-14-04.png?w=892&fm=avif" %}
 启用浏览器集成
 {% endembed %}
-
-{% hint style="info" %}
-这些选项将禁用浏览器内置的自动填充功能。
-{% endhint %}
 
 ### 快速操作磁贴 <a href="#quick-action-tiles" id="quick-action-tiles"></a>
 
