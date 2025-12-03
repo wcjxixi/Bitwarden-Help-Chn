@@ -44,7 +44,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端 App（桌面端、浏
 
 ### 安全 <a href="#security" id="security"></a>
 
-* **KDF 变更时不会注销**：更改 [KDF 算法](security/encryption/encryption-key-derivation.md)将不再使您退出客户端应用程序。
+* **变更 KDF 时不会注销**：更改 [KDF 算法](security/encryption/encryption-key-derivation.md)将不再使您注销客户端应用程序。
 
 ## 2025.11.0
 
