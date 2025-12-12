@@ -16,6 +16,16 @@
 网页 App 中登录项目的 URI 字段
 {% endembed %}
 
+### 将 URI 保存到现有登录项目 <a href="#save-uri-to-existing-login-item" id="save-uri-to-existing-login-item"></a>
+
+您可以使用浏览器扩展来自动填充与您尝试登录的网站没有匹配 URI 的登录项目。
+
+1、打开浏览器扩展并找到您要填充的登录项目。该项目可以被搜索，或位于**所有项目**列表中。选择 **≡**&#x83DC;单然后选择**自动填充**。确认自动填充界面将显示在浏览器中。此界面将显示保存到登录项目的所有 URI，以及您当前所在网站的 URI。
+
+{% embed url="https://bitwarden.com/assets/67h2UzB5cit1oVpEKTUcVs/dfeadfd6749961b76fb9746a36cc9085/2025-12-04_09-37-06.png?w=1200&fm=avif" %}
+
+2、选择您想要执行的操作。
+
 ### URI 方案格式 <a href="#format-uri-schemes" id="format-uri-schemes"></a>
 
 格式良好的 URI 在开头应包含一个方案，例如 `https://` 方案用来安全地引用网站地址。如果未指定方案，则假定为 `http://`。

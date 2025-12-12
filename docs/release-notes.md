@@ -23,6 +23,20 @@ Bitwarden 会在初始发布后逐步更新每个客户端 App（桌面端、浏
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.12.0
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.12.0、浏览器扩展 2025.12.0、移动端 2025.12.0、桌面端 2025.12.0、CLI 2025.12.0）
+
+### Password Manager
+
+* **密码库健康警报与密码指导**：作为高级版计划的新功能，当检测到密码弱、重复使用或暴露时，浏览器扩展将[提醒用户更新密码](password-manager/your-vault/security-tools/change-at-risk-passwords.md)，并建议用户更新。
+* **Chrome 与 Brave 浏览器的直接导入**：通过[直接导入](password-manager/import-and-export/import-guides/import-data-from-chrome.md#import-directly-from-browser)功能，您可将 Chrome 和 Brave 浏览器的数据更快地迁移至 Bitwarden。
+* **自动填充并保存 URI**：在浏览器扩展中，**填充 & 保存**选项已合并到常规的**自动填充**选项中。现在，当为某个没有匹配 URI 的项目选择自动填充时，会出现一个[将当前网站的 URI 保存到登录项目中](password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md#save-uri-to-existing-login-item)的选项。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **阻止已撤销用户的 SSO 登录**：已从组织撤销的用户将无法再使用 SSO 登录其 SSO 链接的账户。
+
 ## 2025.11.1
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.11.2、iOS 端 2025.11.0、Android 端 2025.11.1）
@@ -39,7 +53,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端 App（桌面端、浏
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 
-* **Bitwarden Lite 正式发布**：[Bitwarden Lite](self-hosting/deploy-and-configure/docker/lite-deployment.md)（原 Bitwarden Unified）现已正式发布。
+* **Bitwarden Lite 正式发布**：[Bitwarden Lite](self-hosting/deploy-and-configure/docker/lite-deployment.md)（以前叫做 Bitwarden Unified）现已正式发布。
 * **环境变量更新**：自托管环境变量 `globalSettings__syslog__destination` 已弃用。了解更多有关自托管[环境变量](self-hosting/deploy-and-configure/configuration-options/environment-variables.md)的信息。
 
 ### 安全 <a href="#security" id="security"></a>
