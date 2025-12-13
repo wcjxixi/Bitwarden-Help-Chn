@@ -183,7 +183,7 @@ docker ps
 部署完成后，我们建议定期[备份您的服务器](../../backup-server-data.md)并[检查系统更新](../../update-a-server.md)。
 {% endhint %}
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
 2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。

@@ -63,7 +63,7 @@
 | 使用通行密钥登录        | 通行密钥可用作使用主密码和电子邮件登录 Bitwarden 的替代方案，并且某些通行密钥还可用于密码库加密和解密。在[此处](more-log-in-options/log-in-with-passkeys.md)了解更多信息。                                                                            |
 | 使用生物识别和 PIN 码解锁 | 使用生物识别或 PIN 解锁并不是一种替代登录方法，但是，此功能可以允许您使用系统生物识别或 PIN（而不是主密码）访问已锁定的帐户。了解有关[使用生物识别解锁](more-unlock-options/unlocking-with-biometrics.md)和[使用 PIN 解锁](more-unlock-options/unlock-with-pin.md)的更多信息。 |
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 现在您已经创建了**好记**且**强大**的主密码，我们建议：
 

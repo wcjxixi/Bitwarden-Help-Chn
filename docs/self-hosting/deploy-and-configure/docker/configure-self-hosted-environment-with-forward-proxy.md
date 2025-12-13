@@ -98,6 +98,6 @@ sudo nano -w /opt/bitwarden/.docker/config.json
 sudo cp /opt/bitwarden/.docker/config.json /home/bitwarden/.docker
 ```
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 Docker 配置完成后，我们可以继续 Linux 自托管安装过程。对于每钟部署指南（[Linux 标准部署](linux-standard-deployment.md)、[Linux 手动部署](linux-standard-deployment-1.md)和 [Linux 离线部署](linux-offline-deployment.md)），用户需在完成**创建 Bitwarden 本地用户和目录**步骤后，继续执行后续操作以完成自托管安装。

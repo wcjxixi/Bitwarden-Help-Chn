@@ -211,7 +211,7 @@ docker ps
 
 现在，您可以注册一个新账户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新账户的电子邮箱地址。
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
 2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。

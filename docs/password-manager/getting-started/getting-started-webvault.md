@@ -145,7 +145,7 @@ Bitwarden 网页 App
 
 以最适合您的方式保存您的恢复代码。信不信由你，将您的恢复代码打印出来并将其保存在安全的地方，是使代码不易被盗或无意被删除的最佳方法之一。
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 ### 注册高级版 <a href="#signup-for-premium" id="signup-for-premium"></a>
 

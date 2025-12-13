@@ -26,7 +26,7 @@
 
 这只会更改您的集合列表在筛选列中的显示方式。嵌套的集合不会从其「父」集合中继承项目、访问权限或权限。
 
-## 下一步 <a href="#next-steps" id="next-steps"></a>
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 
 * [创建集合](create-collections.md)以添加共享项目到其中。
 * 从概念层面[了解集合](about-collections.md)。

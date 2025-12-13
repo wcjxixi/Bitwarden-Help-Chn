@@ -86,7 +86,7 @@ Android 和 iOS 上的 Bitwarden
 
 登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每一个账户的密码库的当前状态（_已锁&#x5B9A;_&#x6216;_已解锁_）。如果您注销其中一个账户，它将从此列表中移除。
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 现在您已经掌握了基础知识，让我们深入了解 Bitwarden 移动 App 的一些更强大的功能：
 
