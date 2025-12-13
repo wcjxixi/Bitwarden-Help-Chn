@@ -41,7 +41,7 @@
       ...
 ```
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 * [作为个人用户创建加密导出](export-vault-data.md)。
 * [创建您组织数据的加密导出](../../admin-console/manage-shared-items/export-organization-items/export-organization-items.md)。

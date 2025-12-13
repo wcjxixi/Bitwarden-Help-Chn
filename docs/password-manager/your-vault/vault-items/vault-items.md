@@ -236,7 +236,7 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 分配到集合
 {% endembed %}
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 现在，您已了解密码库项目使用的基础知识，我们建议：
 

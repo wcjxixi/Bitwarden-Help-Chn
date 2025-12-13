@@ -196,7 +196,7 @@ helm upgrade bitwarden bitwarden/self-host --install --namespace bitwarden --val
 
 您需要设置 SMTP 配置和相关的机密信息，以便验证您的新账户的电子邮箱。
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 ### 数据库备份与恢复 <a href="#database-backup-and-restore" id="database-backup-and-restore"></a>
 

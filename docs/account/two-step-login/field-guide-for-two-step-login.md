@@ -106,7 +106,7 @@ YubiKey 设备是一种与 FIDO 身份验证协议配合使用的安全密钥，
 
 对于 Bitwarden，YubiKey 设备等安全密钥的主要用途是提供 2FA 身份验证。
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 现在您已经是两步登录的专家了，我们建议你：
 

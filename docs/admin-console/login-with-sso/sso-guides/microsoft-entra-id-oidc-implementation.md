@@ -127,6 +127,6 @@ Azure 登录界面
 Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致错误。SSO 登录流程必须从 Bitwarden 发起。
 {% endhint %}
 
-## 后续步骤 <a href="#next-steps" id="next-steps"></a>
+## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 1. 培训您的组织成员如何[使用 SSO 登录](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)。
