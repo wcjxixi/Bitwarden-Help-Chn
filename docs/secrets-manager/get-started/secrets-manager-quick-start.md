@@ -231,7 +231,7 @@ Secrets Manager 主页
 
 此访问令牌是身份验证工具，通过它您可以编写机密注入脚本到您的机器和应用程序中。
 
-## 下一步 <a href="#next-steps" id="next-steps"></a>
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 
 现在您已经掌握了创建用于安全地管理机密的基础设施以及为机器访问机密创建路径的诀窍，让我们继续阅读[开发人员快速入门](developer-quick-start.md)指南。
 

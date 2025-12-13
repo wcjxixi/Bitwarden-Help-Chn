@@ -75,7 +75,7 @@ Bitwarden 提供在**账户创建后 30 天内**取消高级个人方案的退�
 
 2、选择**取消订阅**按钮。
 
-## 下一步 <a href="#next-steps" id="next-steps"></a>
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 
 现在您已经创建了您的组织。我们建议您：
 

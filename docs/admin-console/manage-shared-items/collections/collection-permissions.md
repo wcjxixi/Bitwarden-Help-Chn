@@ -34,7 +34,7 @@
 **隐藏密码权限**：隐藏密码可以防止简单的复制和粘贴，但并不能完全防止用户访问这些信息。请像对待任何共享凭据一样对待隐藏密码。
 {% endhint %}
 
-## 下一步 <a href="#next-steps" id="next-steps"></a>
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 
 * 从概念层面[了解集合](about-collections.md)。
 * 通过新的集合[与组织成员共享项目](../../../password-manager/organization-members/sharing.md)。

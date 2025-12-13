@@ -49,7 +49,7 @@
 
 8、输入您的**支付信息**然后选择**提交**。
 
-## 下一步 <a href="#next-steps" id="next-steps"></a>
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 
 现在，您已经创建好了您的试用版企业组织。我们建议您：
 

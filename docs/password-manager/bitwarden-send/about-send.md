@@ -41,7 +41,7 @@ Bitwarden Send 是一种安全和短暂的方案，可传输多达 1000 个加�
 | **🚫**  | 此 Send 已达到指定的[最大访问次数](send-lifespan.md#maximum-access-count)。  |
 | **🗑️** | 此 Send 已达到指定的[删除日期](send-lifespan.md#deletion-date)，**正等待删除**。 |
 
-## 下一步 <a href="#next-steps" id="next-steps"></a>
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 
 现在您已经了解了 Bitwarden Send 的基础知识，我们建议：
 

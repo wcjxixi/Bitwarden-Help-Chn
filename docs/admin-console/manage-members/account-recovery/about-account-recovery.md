@@ -46,7 +46,7 @@
 
 任何人，包括执行重置的管理员，都**无法**看到旧的主密码。
 
-## 下一步 <a href="#next-steps" id="next-steps"></a>
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 
 * 通过开启[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#account-recovery-administration)来设置账户恢复。
 * 如果用户在策略开启前加入或您没有开启自动注册，请指导用户[注册账户恢复](account-recovery-enrollment.md)。

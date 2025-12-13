@@ -46,7 +46,7 @@
 
 按照本文前面描述的步骤，所有者和管理员应将新成员分配为具有[管理集合权限](collection-permissions.md)。完成后，所有者和管理员将失去对该集合的管理能力，并且**添加访问权限**标签将被移除。
 
-## 下一步 <a href="#next-steps" id="next-steps"></a>
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 
 * 从概念层面[了解集合](about-collections.md)。
 * 通过新的集合[与组织成员共享项目](../../../password-manager/organization-members/sharing.md)。
