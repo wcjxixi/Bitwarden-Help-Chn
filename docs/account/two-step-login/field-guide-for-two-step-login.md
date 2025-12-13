@@ -8,7 +8,7 @@
 
 如果没有辅助设备令牌的物理访问权限，恶意行为者即使知道了您的用户名和密码，他们也无法访问网站：
 
-{% embed url="https://bitwarden.com/_gatsby/image/c94b8d98db4e25b087c13ae5b3380ffe/df3d74ff52a7f409cfdddc70d8d1be60/fg-1.webp?eu=db8f50e1b29dfcd60739a3d06c716469b43f50a3a85430823860edfd47a196d020f44d5721c072e57d6d52dad3e340ec66cf2d611abad0de96ba4bf0ef61a20152d250b623f730445b34dba7eda451102bd8491cf7d28b4bf62931cabbe6f36f1e124278ee20b9d7e4f47263af855a34b6f6ee5c6da7fd1085153852a24b16f864d893c16116e79fb819ecb3baad0dc5c8e67f0e408ef73773244a4c5ae82cbfa5e75025267f174634d0ef0690&a=w%3D850%26h%3D478%26fm%3Dwebp%26q%3D75&cd=2023-09-26T13%3A34%3A24.243Z" %}
+{% embed url="https://bitwarden.com/assets/6E6lpxB8UfXU7V6YcW40S3/b89a863ed448d1b90e42ac6c25140edd/fg-1.png?w=960&fm=avif" %}
 基本两步登录流程
 {% endembed %}
 
@@ -106,7 +106,7 @@ YubiKey 设备是一种与 FIDO 身份验证协议配合使用的安全密钥，
 
 对于 Bitwarden，YubiKey 设备等安全密钥的主要用途是提供 2FA 身份验证。
 
-## 下一步 <a href="#next-steps" id="next-steps"></a>
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 
 现在您已经是两步登录的专家了，我们建议你：
 

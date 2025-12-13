@@ -108,7 +108,7 @@ Bitwarden 的企业版计划包含无额外费用的自托管服务。
 
 自托管 Bitwarden 的客户可以选择多种不同的 SSL 证书选项部署 Bitwarden。[了解更多](../deploy-and-configure/configuration-options/certificate-options.md)。
 
-## 下一步 <a href="#next-steps" id="next-steps"></a>
+## 后续步骤 <a href="#next-steps" id="next-steps"></a>
 
 * 使用上面链接的**安装和部署指南**之一来部署 Bitwarden。
 * 如果您为组织托管 Bitwarden，请使用[此指南](self-host-an-organization.md)来为推广到用户做好准备。
