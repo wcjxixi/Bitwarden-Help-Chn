@@ -157,9 +157,23 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 
 ## 从浏览器直接导入 <a href="#import-directly-from-browser" id="import-directly-from-browser"></a>
 
-您可以将密码从 Microsoft Edge、Opera 和 Vivaldi 导入 Bitwarden，而无需手动导出文件。此方法目前不适用于 Google Chrome。所有 Bitwarden 桌面 App 均兼容，但从 Mac App Store 安装的 App 除外。
+Bitwarden 桌面 App 可以从这些浏览器导入密码，而无需手动导出文件：
 
-要导入您的数据：
+* Chrome
+* Edge
+* Opera
+* Brave
+* Vivaldi
+
+此选项适用于从[下载页面](https://bitwarden.com/download/#downloads-desktop)安装的 Windows 和 Mac 桌面 App。直接导入方式不适用于 Linux 系统，也不适用于从 Mac App Store 或 Windows Microsoft Store 安装的桌面 App。
+
+{% hint style="info" %}
+已知在 2025.11.0 及更高版本中，**直接从浏览器导入**选项在从 Chromium 浏览器存储中提取凭据时，会被某些 EDR 软件标记。如果在此过程中出现允许 App 更改您的设备的提示，请选择**是**，以继续完成导入。了解更多有关[直接导入器实现](https://github.com/bitwarden/clients/blob/main/apps/desktop/desktop_native/chromium_importer/README.md)的信息。
+
+**\[译者注]**：EDR - Endpoint Detection and Response（终端威胁检测与响应）。EDR 是一种企业级安全软件，用来监控电脑（终端）上的可疑行为，并及时阻止或警告潜在的攻击。
+{% endhint %}
+
+要导入您的浏览器数据：
 
 1、登录到 Bitwarden 桌面 App。
 

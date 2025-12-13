@@ -5,11 +5,12 @@
 {% endhint %}
 
 {% hint style="success" %}
-Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.md) 的功能，也提供[为其他网站和服务自动填充已存储的通行密钥](../../../password-manager/autofill/more-autofill-options/autofill-passkeys.md)的功能。
+Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.md) 和[为其他网站和服务自动填充已存储的通行密钥](../../../password-manager/autofill/more-autofill-options/autofill-passkeys.md)的功能。
 {% endhint %}
 
 通行密钥可以作为使用主密码和电子邮箱的替代方式来登录 Bitwarden。用于登录 Bitwarden 的通行密钥：
 
+* 可用于网页 App 和基于 chromium 的浏览器扩展。计划在未来版本中支持其他客户端 App。
 * 需要用户验证，这意味着您需要使用生物识别因素或安全密钥等来成功建立对通行密钥的访问。
 * 仅当身份验证器（例如 YubiKey 5）和浏览器（例如 Google Chrome）都[支持 PRF](log-in-with-passkeys.md#set-up-encryption) 时，才能解密您的密码库。非 PRF 设置将要求您在登录后输入主密码才能解密您的密码库。
 * 使用了[要求 SSO](../../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication) 策略的组织成员无法使用[受信任设备 SSO](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
@@ -25,11 +26,7 @@ Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.
 
 2、选择**主密码**选项卡。
 
-3、在**使用通行密钥登录**部分，选择**启用**，或者如果您已经设置了通行密钥，则选择**新增通行密钥**。系统将提示您输入主密码：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/11CPsvELx3sDoQrLY3C2Cb/d2f3e5544537bb32d4e5d5fc5395f8d6/2024-12-02_10-41-47.png?_a=DAJCwlWIZAAB" %}
-打开通行密钥登录
-{% endembed %}
+3、在**使用通行密钥登录**部分，选择**启用**，或者如果您已经设置了通行密钥，则选择**新增通行密钥**。系统将提示您输入主密码。
 
 4、按照浏览器的提示创建 FIDO2 通行密钥。您可以使用生物识别等因素或创建 PIN 码来完成用户验证。
 
@@ -37,7 +34,7 @@ Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.
 您可能需要取消浏览器希望您使用的默认验证器，例如，如果您想在 macOS 设备上使用硬件安全钥匙，它会优先使用 Touch ID。
 {% endhint %}
 
-5、给你您的通行密钥起个**名称**。
+5、给您您的通行密钥起个**名称**。
 
 6、如果不想将通行密钥用于密码库加密和解密，请取消选中**用于密码库加密**复选框：
 
@@ -78,6 +75,12 @@ Bitwarden 不会提示或允许您在密码库中保存登录 Bitwarden 的通�
 ## 使用通行密钥登录 <a href="#log-in-with-your-passkey" id="log-in-with-your-passkey"></a>
 
 创建了您的通行密钥后，您就可以使用它来登录 Bitwarden 网页 App 和基于 chromium 的浏览器扩展了：
+
+{% hint style="danger" %}
+由于已知缺陷，如果您使用的是 Linux，则需要先弹出浏览器扩展，然后才能尝试使用通行密钥登录。
+
+<img src="https://bitwarden.com/assets/1cbJy0jLBmSQmRumvYzVwp/a9e43f4c154686249056924eb3e56323/pop_out_screenshot.png?w=407&#x26;fm=avif" alt="" data-size="original">
+{% endhint %}
 
 1. 在 Bitwarden 登录界面，在通常输入电子邮箱地址的地方，选择**使用通行密钥登录**。
 2. 按照浏览器的提示读取通行密钥，这将用于验证您与 Bitwarden 的身份。

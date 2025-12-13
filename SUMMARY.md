@@ -232,7 +232,7 @@
     * [声明域名](docs/admin-console/oversight-visibility/claimed-domains/README.md)
       * [声明域名](docs/admin-console/oversight-visibility/claimed-domains/claimed-domains.md)
       * [声明账户](docs/admin-console/oversight-visibility/claimed-domains/claimed-accounts.md)
-    * [=Access Intelligence](docs/admin-console/oversight-visibility/access-intelligence.md)
+    * [Access Intelligence](docs/admin-console/oversight-visibility/access-intelligence.md)
     * [企业策略](docs/admin-console/oversight-visibility/enterprise-policies.md)
     * [密码库健康报告](docs/admin-console/oversight-visibility/vault-health-reports.md)
   * [SSO 登录](docs/admin-console/login-with-sso/README.md)
