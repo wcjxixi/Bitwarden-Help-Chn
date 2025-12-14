@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/releasenotes/)
 {% endhint %}
 
-Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个绝对要求。请访问以下 GitHub 链接查看完整、详细的发行记录：
+Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个绝对要求。请访问以下链接在 GitHub 中查看完整、详细的发行记录：
 
 * [Server Releases](https://github.com/bitwarden/server/releases)
 * [Web Releases](https://github.com/bitwarden/clients/releases)
@@ -17,7 +17,7 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 
 ## 发行公告
 
-Bitwarden 会在初始发布后逐步更新每个客户端 App（桌面端、浏览器扩展、移动端等），以及自托管服务器，以确保功能的有效性和稳定性。因此，客户端 App 和自托管服务器将在初始发布后逐步获得所列的功能。请查看 Bitwarden [软件发布支持](security/software-development/software-release-support.md)文档。
+Bitwarden 会在初始发布后逐步更新每个客户端应用程序（浏览器扩展、移动端 App、桌面端 App，以及 CLI），以及自托管服务器，以确保功能的有效性和稳定性。因此，客户端应用程序和自托管服务器将在初始发布后逐步获得所列的功能。请查看 Bitwarden [软件发布支持](security/software-development/software-release-support.md)文档。
 
 {% hint style="success" %}
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
@@ -29,8 +29,8 @@ Bitwarden 会在初始发布后逐步更新每个客户端 App（桌面端、浏
 
 ### Password Manager
 
-* **密码库健康警报与密码指导**：作为高级版计划的新功能，当检测到密码弱、重复使用或暴露时，浏览器扩展将[提醒用户更新密码](password-manager/your-vault/security-tools/change-at-risk-passwords.md)，并建议用户更新。
-* **Chrome 与 Brave 浏览器的直接导入**：通过[直接导入](password-manager/import-and-export/import-guides/import-data-from-chrome.md#import-directly-from-browser)功能，您可将 Chrome 和 Brave 浏览器的数据更快地迁移至 Bitwarden。
+* **密码库健康警报与密码指导**：作为高级版计划的新功能，当 Password Manager 检测到密码弱、重复使用或暴露时，浏览器扩展将[提醒用户更新密码](password-manager/your-vault/security-tools/change-at-risk-passwords.md)，并建议用户更新。
+* **Chrome 与 Brave 浏览器的直接导入**：通过[直接导入](password-manager/import-and-export/import-guides/import-data-from-chrome.md#import-directly-from-browser)功能，您可以将 Chrome 和 Brave 浏览器的数据更快地迁移至 Bitwarden。
 * **自动填充并保存 URI**：在浏览器扩展中，**填充 & 保存**选项已合并到常规的**自动填充**选项中。现在，当为某个没有匹配 URI 的项目选择自动填充时，会出现一个[将当前网站的 URI 保存到登录项目中](password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md#save-uri-to-existing-login-item)的选项。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
