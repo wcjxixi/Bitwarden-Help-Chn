@@ -36,7 +36,7 @@
       * [两步登录 - Duo](docs/account/two-step-login/setup-two-step-login/two-step-login-via-duo.md)
       * [两步登录 - YubiKey OTP](docs/account/two-step-login/setup-two-step-login/two-step-login-via-yubikey.md)
       * [两步登录 - 通行密钥](docs/account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)
-    * [获取恢复代码](docs/account/two-step-login/recovery-codes.md)
+    * [两步登录恢复代码](docs/account/two-step-login/recovery-codes.md)
     * [无法访问两步登录](docs/account/two-step-login/lost-two-step-device.md)
     * [两步登录 FAQ](docs/account/two-step-login/two-step-login-faq.md)
 * [Password Manager](docs/password-manager/README.md)

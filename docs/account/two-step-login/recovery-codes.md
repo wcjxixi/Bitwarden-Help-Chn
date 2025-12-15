@@ -1,55 +1,69 @@
-# 获取恢复代码
+# 两步登录恢复代码
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/two-step-recovery-code/)
 {% endhint %}
 
-如果您启用了任何[两步登录方式](setup-two-step-login/two-step-login-methods.md)，重要的是要明白，失去对您的辅助设备（如安装了验证器的移动设备、安全钥匙、或已链接的电子邮箱收件箱）的访问，有可能将您锁定在您的 Bitwarden 密码库之外。
+当您激活任何[两步登录方式](setup-two-step-login/two-step-login-methods.md)时，Bitwarden 会提供一个唯一的恢复代码。如果您[丢失了身份验证设备](lost-two-step-device.md)，请使用此代码断开所有两步登录方式并重新获得对您账户的访问权限。如果您同时丢失了恢复代码和两步设备（例如带有验证器 App 的手机或已链接的电子邮箱收件箱），您可能会被锁定在您的密码库之外。
 
-为了防止这种情况的发生，Bitwarden 生成了一个**恢复代码**，它可以和您的主密码一起使用，以从您的密码库外部禁用任何已启用的两步登录方式。
+## 保存您的恢复代码 <a href="#save-your-recovery-code" id="save-your-recovery-code"></a>
 
-{% hint style="success" %}
-启用任何两步登录方式之后，应立即[获取您的恢复代码](recovery-codes.md#get-your-recovery-code)。此外，每次[使用](recovery-codes.md#use-your-recovery-code)后都要重新获取一个新的恢复代码，因为每次被使用后它都会更改。
+启用任何两步登录方式后，应立即保存您的恢复代码，并将其存储在您选择的安全位置。将打印副本保存在安全的地方是一个不错的选择，因为它可以防止数字盗窃和意外删除。
+
+{% hint style="info" %}
+[使用恢复代码](recovery-codes.md#use-your-recovery-code)后，会生成一个新的恢复代码。确保保存更新后的代码。添加新的两步登录方式或更改主密码不会影响恢复代码。
 {% endhint %}
 
-除了确保恢复代码的安全，用户可能还希望在启用双重身份验证之前创建[导出](../../password-manager/import-and-export/encrypted-exports.md)以备份密码库数据。
+要在 Bitwarden 网页 App 中查找您的恢复代码：
 
-## 获取您的恢复代码 <a href="#get-your-recovery-code" id="get-your-recovery-code"></a>
+1、设置至少一种两步登录方式后，转到**设置** → **安全**。
 
-要获取您的恢复代码：
+2、选择**两步登录**。
 
-1、登录到 Bitwarden 网页 App。
-
-2、从导航选择**设置** → **安全** → **两步登录**：
+3、选择**查看恢复代码**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2BsKs83g4cmiCUwxf2ad83/b2a90e85355f3d937aeb46139203737e/2024-12-02_10-54-31.png?_a=DAJCwlWIZAAB" %}
 两步登录
 {% endembed %}
 
-3、选择屏幕上方的**查看恢复代码**。将提示您输入您的主密码，然后将打开恢复代码面板：
+3、输入您的主密码然后选择**继续**。您的恢复代码将出现：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/64piqJsX7vN25To16iRFIp/09e977fae9485c0764f832c6bb4b4b04/2024-12-02_11-24-35.png?_a=DAJCwlWIZAAB" %}
 示例恢复代码
 {% endembed %}
 
-以最适合您的方式保存您的恢复代码。不管是否相信，打印代码并将其保存在安全的地方是确保代码不易被盗窃或无意删除的最佳方式之一。
-
-{% hint style="info" %}
-**恢复代码什么时候会更改？**
-
-禁用和重新启用两步登录或更改您的主密码都不会更改您的恢复代码。恢复代码只会[在它被您使用后](recovery-codes.md#use-your-recovery-code)更改。使用恢复代码后，请立即获取一个新的代码，并使用对您最有意义的方式进行保存。
-{% endhint %}
-
 ## 使用您的恢复代码 <a href="#use-your-recovery-code" id="use-your-recovery-code"></a>
 
-要使用您的恢复代码，请导航到 [https://vault.bitwarden.com/#/recover-2fa](https://vault.bitwarden.com/#/recover-2fa) 或 [https://vault.bitwarden.eu/#/recover-2fa/](https://vault.bitwarden.eu/#/recover-2fa/)，或者，如果是自托管，请导航到 `https://your.domain.com/#/recover-2fa`。
+要使用恢复代码重新获取对您的账户的访问权限：
 
-使用恢复代码与正常的登录过程相同，需要提供您的电子邮箱地址和主密码，但也需要提供您的恢复代码。三者都验证成功后，您将登录进您的密码库同时**所有的两步登录方式将被禁用**。
+1. 转到您账户服务器位置的恢复页面：
+   * 美国：[https://vault.bitwarden.com/#/recover-2fa/](https://vault.bitwarden.com/#/recover-2fa/)
+   * 欧盟：[https://vault.bitwarden.eu/#/recover-2fa/](https://vault.bitwarden.eu/#/recover-2fa)
+   * 自托管：`https://your.domain.com/#/recover-2fa/`
+2. 输入您的电子邮箱地址、主密码和恢复代码。
+3. 选择**提交**。
 
-**使用后需重新获取新的恢复代码，因为每次使用后它都会更改**。此时，您还应该重新启用你想在未来使用的任何两步登录方式。
+您的账户详细信息和恢复代码通过身份验证后，您将登录到您的密码库，并且之前设置的所有两步登录方式都将被禁用。
 
 {% hint style="info" %}
-恢复代码不会禁用用于组织的 Duo。如果您被组织 Duo 提示锁定在密码库之外，请联系您公司的 Duo 管理员，以获得绕过提示的帮助。
+恢复代码不会禁用用于组织的 Duo。如果您被组织 Duo 提示锁定在密码库之外，请联系您公司的 Duo 管理员，以获得绕过此提示的帮助。
 
-如果您不确定 Duo 提示是个人设置的还是组织设置的，请尝试使用**使用其他两步登录方式**按钮。
+如果您不确定 Duo 提示是个人设置的还是组织设置的，请尝试选择**使用其他两步登录方式**。
 {% endhint %}
+
+为了以后保持对您账户安全可靠的访问：
+
+* 设置或重新激活至少一种[两步登录方式](setup-two-step-login/two-step-login-methods.md)。如果您不这样做，当您从无法识别的设备登录时，Bitwarden 将向您的账户电子邮箱发送[验证码](../log-in-and-unlock/new-device-protection.md)。
+* [保存您的新恢复代码](recovery-codes.md#save-your-recovery-code)，因为它在使用后会发生变化。
+
+### 企业成员 <a href="#enterprise-members" id="enterprise-members"></a>
+
+当您是企业组织的成员时，提交有效的恢复代码后发生的情况可能会有所不同。
+
+如果您的组织[要求单点登录身份验证](../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)，但不[要求两步登录](../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)，您将被定向到 SSO 登录页面。使用您的 SSO 凭据登录并访问您的 Bitwarden 密码库。
+
+如果您的组织[要求两步登录](../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)，成功使用恢复代码后会将您从组织中移除。登录后要重新加入组织：
+
+1. 设置一个新的[两步登录方式](setup-two-step-login/two-step-login-methods.md)。
+2. 如果您的组织还[要求单点登录身份验证](../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)，请将您的 SSO 凭据重新连接到您的 Bitwarden 账户。
+3. 请求管理员或所有者在组织内[恢复您的账户](../../admin-console/manage-members/revoke-remove/temporarily-revoke-access.md#restore-access)。
