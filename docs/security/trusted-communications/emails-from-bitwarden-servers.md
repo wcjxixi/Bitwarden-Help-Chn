@@ -59,7 +59,7 @@
 | 您的家庭赞助已被移除             | n/a                       | 当其已手动移除[家庭组织的赞助](../../admin-console/more/organization-sponsored-families-plans.md)时，用户会收到此电子邮件。                                                            |
 | 移除免费 Bitwarden 家庭计划    | n/a                       | 当[家庭组织的赞助被管理员移除时（通常是通过激活了某个策略后被移除）](../../admin-console/oversight-visibility/enterprise-policies.md#remove-free-bitwarden-families-sponsorship)，用户会收到此电子邮件。 |
 
-## 提供商 & 业务单位电子邮件 <a href="#provider-and-business-unit-emails" id="provider-and-business-unit-emails"></a>
+## 提供商 & 业务单元电子邮件 <a href="#provider-and-business-unit-emails" id="provider-and-business-unit-emails"></a>
 
 以下的电子邮件用于提醒提供商和业务单元管理员有关其提供商或业务单元的任何变更或操作项目：
 
