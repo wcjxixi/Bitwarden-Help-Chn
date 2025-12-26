@@ -44,6 +44,17 @@ Key Connector 要求用户[移除他们的主密码](about-key-connector.md#impa
 
 这些账户**不能离开组织**，因为这样做他们将失去任何解密密码库数据的方法。同样，如果组织管理员从组织中移除账户，该账户将失去任何解密密码库数据的方法。
 
+### 使用 Key Connector 登录 <a href="#log-in-using-key-connector" id="log-in-using-key-connector"></a>
+
+首次登录启用了 Key Connector 的组织的用户将收到一个对话框，提示用户确认此组织：
+
+{% embed url="https://bitwarden.com/assets/fTrb2sTLVMdjtlpf2yNGD/59e7c37be145ef6525128f73864e3aee/2025-12-17_13-45-48.png?w=424&fm=avif" %}
+
+* 选择**继续登录**将继续登录过程。
+* 选择**不继续**：
+  * 如果选择**立即退出**，现有 Bitwarden 用户将收到一个对话框，提示他们退出组织。
+  * 新的 Bitwarden 用户将被注销。
+
 ### 对其他功能的影响 <a href="#impact-on-other-features" id="impact-on-other-features"></a>
 
 | 功能           | 影响                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |

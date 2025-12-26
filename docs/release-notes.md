@@ -33,7 +33,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（浏览�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **企业策略名称更新**：「禁用个人密码库导出」策略现在叫做「[禁用导出](admin-console/oversight-visibility/enterprise-policies.md#disable-personal-vault-export)」。这只是名称更改，该策略的作用保持不变。
+* **企业策略名称更新**：「禁用个人密码库导出」策略现在叫做「[禁用导出](admin-console/oversight-visibility/enterprise-policies.md#remove-export)」。这只是名称更改，该策略的作用保持不变。
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 
