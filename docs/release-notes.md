@@ -37,7 +37,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（浏览�
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 
-* **Key Connector 确认**：为了提高安全性，在 Key Connector 登录过程中为新用户添加了额外的组织确认对话框。
+* **Key Connector 确认**：为了提高安全性，在 [Key Connector 登录过程](self-hosting/key-connector/about-key-connector.md#log-in-using-key-connector)中为新用户添加了额外的组织确认对话框。
 
 ## 2025.12.0
 
