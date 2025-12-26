@@ -207,9 +207,9 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策�
 在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
 {% endhint %}
 
-### 禁用个人密码库导出 <a href="#disable-personal-vault-export" id="disable-personal-vault-export"></a>
+### 禁用导出 <a href="#remove-export" id="remove-export"></a>
 
-启用**禁用个人密码库导出**策略将禁止您组织的非所有者/非管理员成员[导出其私人密码库数据](../../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。所有者和管理员不受此策略的约束。
+启用**禁用导出**策略将禁止您组织的非所有者/非管理员成员[导出其私人密码库数据](../../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。所有者和管理员不受此策略的约束。
 
 在网页密码库和 CLI 中，会向用户显示一条消息，以表明某个策略正在影响他们的选项。在其他客户端中，该选项将被简单地禁用：
 
