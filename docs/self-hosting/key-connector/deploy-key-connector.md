@@ -27,9 +27,9 @@ Bitwarden 支持部署一个 Key Connector，供一个组织用于自托管实�
 
 如果您的组织满足或能够满足这些要求，包括拥有可以支持密钥服务器管理的团队和基础设施，请[联系我们](https://bitwarden.com/contact)，我们将为您激活 Key Connector。
 
-## 设置和部署 Key Connector <a href="#setup-and-deploy-key-connector" id="setup-and-deploy-key-connector"></a>
+## 设置 & 部署 Key Connector <a href="#setup-and-deploy-key-connector" id="setup-and-deploy-key-connector"></a>
 
-您就 Key Connector 与我们联系后，我们将与您联系以启动一个 Key Connector 的讨论。本文中的步骤必须与 Bitwarden 客户成功与实施专家合作完成。
+**您就 Key Connector 与我们联系后**，我们将与您主动联系以开启一个 Key Connector 相关的讨论。本文后续步骤必须与 Bitwarden 客户成功及实施专家协作完成。
 
 ### 获取新的许可证文件 <a href="#obtain-new-license-file" id="obtain-new-license-file"></a>
 
@@ -37,7 +37,7 @@ Bitwarden 支持部署一个 Key Connector，供一个组织用于自托管实�
 
 1. 打开您的 Bitwarden Cloud 网页密码库，然后导航到您组织的**设置** → **订阅**界面。
 2. 选择**下载许可证**按钮。
-3. 当出现提示时，输入用于安装自托管服务器的安装 ID，然后选择**提交**。如果您不知道自己的安装 ID，可以从 `./bwdata/env/global.override.env` 中检索它。
+3. 当出现提示时，输入用于安装自托管服务器的安装 ID，然后选择**提交**。如果您不知道自己的安装 ID，可以从 `./bwdata/env/global.override.env` 中获取它。
 
 不会立即需要您的许可证文件，但您需要[在后面的步骤中](deploy-key-connector.md#activate-key-connector)将其上传到您的自托管服务器。
 
@@ -333,12 +333,12 @@ keyConnectorSettings__certificate__filesystemPath=/etc/bitwarden/key-connector/c
 * 目前**不支持**从一个数据库迁移到另一个数据库。请确保为数据库执行频繁的自动备份计划。
 
 {% hint style="danger" %}
-加密密钥的管理非常敏感，只建议拥有能安全支持部署和管理密钥服务器的团队和基础设施的企业使用。
+加密密钥的管理非常敏感，**只建议拥有能安全支持部署和管理密钥服务器的团队和基础设施的企业使用**。
 {% endhint %}
 
 ### 激活 Key Connector <a href="#activate-key-connector" id="activate-key-connector"></a>
 
-现在 [Key Connector 已配置完成](deploy-key-connector.md#configure-key-connector)，并且您也拥有[启用了 Key Connector 的许可证](deploy-key-connector.md#obtain-new-license-file)，请完成以下步骤：
+现在 Key Connector 已[配置完成](deploy-key-connector.md#configure-key-connector)，并且您也拥有[启用了 Key Connector 的许可证](deploy-key-connector.md#obtain-new-license-file)，请完成以下步骤：
 
 1、重新启动您的自托管 Bitwarden 安装以应用配置更改：
 
@@ -346,11 +346,11 @@ keyConnectorSettings__certificate__filesystemPath=/etc/bitwarden/key-connector/c
 ./bitwarden.sh restart
 ```
 
-2、以**组织所有者**身份登录您的自托管 Bitwarden，然后导航至管理控制台的**计费** → **订阅**界面。
+2、以组织**所有者**身份登录您的自托管 Bitwarden，然后导航至管理控制台的**计费** → **订阅**界面。
 
 3、选择**更新许可证**按钮，然后上传[在前面的步骤中获取的](deploy-key-connector.md#obtain-new-license-file)启用了 Key Connector 的许可证。
 
-4、如果您还没有准备好，请导航到**设置** → **策略**界面，启用**单一组织**和**要求单点登录身份验证**策略。这两项都是使用 Key Connector 的必要条件。
+4、如果您还没有准备好，请导航到**设置** → **策略**界面，启用[单一组织](../../admin-console/oversight-visibility/enterprise-policies.md#single-organization)和[要求单点登录身份验证](../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)策略。**这两项都是使用 Key Connector 的必要条件**。
 
 5、导航至**设置** → **单点登录**界面。
 
