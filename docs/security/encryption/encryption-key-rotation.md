@@ -6,7 +6,7 @@
 
 每个 Bitwarden 账户都有一个用于加密所有密码库数据的加密密钥。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **轮换加密密钥是潜在的危险操作。**&#x8BF7;通读本章节，以了解这样做的全部后果。
 {% endhint %}
 

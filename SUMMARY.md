@@ -357,7 +357,7 @@
   * [备份服务器数据](docs/self-hosting/backup-server-data.md)
   * [服务器日志](docs/self-hosting/server-logs.md)
   * [\*作为 MSP 部署 Bitwarden](docs/self-hosting/deploying-bitwarden-as-an-msp.md)
-  * [\*云端设置清单](docs/self-hosting/yun-duan-she-zhi-qing-dan.md)
+  * [\*云端设置清单](docs/self-hosting/cloud-setup-checklist.md)
   * [自托管 FAQ](docs/self-hosting/hosting-faqs.md)
 * [安全](docs/security/README.md)
   * [Bitwarden 安全白皮书](docs/security/bitwarden-security-whitepaper.md)
