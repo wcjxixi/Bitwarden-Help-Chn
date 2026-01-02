@@ -8,7 +8,7 @@
 
 ## Password Manager <a href="#password-manager" id="password-manager"></a>
 
-<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center">个人用户</td><td><a href="password-manager/personal-user.md">personal-user.md</a></td></tr><tr><td align="center">管理员</td><td><a href="password-manager/admin.md">admin.md</a></td></tr><tr><td align="center">团队成员</td><td><a href="password-manager/team-member.md">team-member.md</a></td></tr><tr><td align="center">MSP 或经销商</td><td><a href="password-manager/partner.md">partner.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center">个人用户</td><td><a href="password-manager/personal/personal-user.md">personal-user.md</a></td></tr><tr><td align="center">管理员</td><td><a href="password-manager/business/admin.md">admin.md</a></td></tr><tr><td align="center">团队成员</td><td><a href="password-manager/business/team-member.md">team-member.md</a></td></tr><tr><td align="center">MSP 或经销商</td><td><a href="password-manager/partners/reseller.md">reseller.md</a></td></tr></tbody></table>
 
 ## 密码管理之外 <a href="#beyond-password-management" id="beyond-password-management"></a>
 

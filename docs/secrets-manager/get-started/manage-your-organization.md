@@ -11,7 +11,7 @@
 作为一个使用 Secrets Manager 的组织，您会分享许多最初由 Password Manager 使用的工具。这篇文章涵盖了这些常见的领域，并在适当的地方链接到共享文档。
 
 {% hint style="info" %}
-如果您是 Bitwarden 组织的新手，我们建议您查看我们关于[组织管理员入门](../../../courses/password-manager/admin.md)的文章。
+如果您是 Bitwarden 组织的新手，我们建议您查看我们关于[组织管理员入门](../../../courses/password-manager/business/admin.md)的文章。
 {% endhint %}
 
 ## 企业策略 <a href="#enterprise-policies" id="enterprise-policies"></a>
