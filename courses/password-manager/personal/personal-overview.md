@@ -8,7 +8,7 @@
 
 ## 个人 <a href="#individuals" id="individuals"></a>
 
-<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center">个人</td><td><a href="/broken/pages/V4mQvbQhVV5vm5j3JRnB">Broken link</a></td></tr><tr><td align="center">两人免费共享</td><td><a href="individual/free-sharing-for-two.md">free-sharing-for-two.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center">个人</td><td><a href="individual/individual.md">individual.md</a></td></tr><tr><td align="center">两人免费共享</td><td><a href="individual/free-sharing-for-two.md">free-sharing-for-two.md</a></td></tr></tbody></table>
 
 ## 家庭方案 <a href="#families-plan" id="families-plan"></a>
 

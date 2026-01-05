@@ -422,7 +422,7 @@
   * [个人](courses/password-manager/personal/README.md)
     * [个人概览](courses/password-manager/personal/personal-overview.md)
     * [个人](courses/password-manager/personal/individual/README.md)
-      * [个人](courses/password-manager/personal/individual/personal-user.md)
+      * [个人](courses/password-manager/personal/individual/individual.md)
       * [两人免费共享](courses/password-manager/personal/individual/free-sharing-for-two.md)
     * [家庭方案](courses/password-manager/personal/family-plan/README.md)
       * [家庭成员](courses/password-manager/personal/family-plan/family-member.md)
