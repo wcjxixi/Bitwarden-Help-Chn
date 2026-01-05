@@ -1,5 +1,11 @@
 # 服务用户
 
+{% hint style="success" %}
+对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-partner-service-user/)
+{% endhint %}
+
+了解如何以服务用户身份浏览提供商门户、管理客户组织以及处理您支持的企业的日常任务。
+
 ## 开始使用 <a href="#get-started" id="get-started"></a>
 
 ### 加入提供商 <a href="#join-your-provider" id="join-your-provider"></a>

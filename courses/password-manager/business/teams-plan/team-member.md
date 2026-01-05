@@ -1,7 +1,7 @@
-# 团队成员
+# =团队成员
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-team-member/)
+对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-teams-member/)
 {% endhint %}
 
 您的管理员已为您的组织或家庭设置了 Bitwarden，现在是时候让它为您服务了。本课程向您展示如何自动保存密码、安全地共享凭据以及将 Bitwarden 集成到您的日常工作流程中，从而轻松保持安全。

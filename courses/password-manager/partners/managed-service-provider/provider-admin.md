@@ -1,4 +1,8 @@
-# 提供商管理员
+# =提供商管理员
+
+{% hint style="success" %}
+对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-partner-provider-admin/)
+{% endhint %}
 
 ## 开始使用 <a href="#get-started" id="get-started"></a>
 
@@ -80,3 +84,4 @@
 ### 第 1 阶段 - 入职前
 
 为您的客户的 Bitwarden 组织和环境定义技术要求和入职策略。
+
