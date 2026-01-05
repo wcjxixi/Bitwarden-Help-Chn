@@ -7,7 +7,7 @@
 准备好最终控制您的密码了吗？本课程将引导您完成设置您的个人 Bitwarden 账户、保护您最重要的登录并让密码管理变得轻松而不是繁重。
 
 {% hint style="info" %}
-查看其他个人课程：[两人免费共享](../business/admin.md#mian-fei-ban)、[家庭成员](../business/team-member.md#jia-ting-ban)和[家庭管理员](../business/admin.md#jia-ting-ban)。
+查看其他个人课程：[两人免费共享](../business/enterprise-plan/enterprise-admin.md#mian-fei-ban)、[家庭成员](../business/teams-plan/team-member.md#jia-ting-ban)和[家庭管理员](../business/enterprise-plan/enterprise-admin.md#jia-ting-ban)。
 {% endhint %}
 
 ## 开始使用 <a href="#get-started" id="get-started"></a>
