@@ -1,4 +1,4 @@
-# =个人
+# 个人
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-personal/)
@@ -10,7 +10,7 @@
 已经掌握了基础知识并准备好开始分享了吗？查看[两人免费共享](free-sharing-for-two.md)。
 {% endhint %}
 
-## Demo
+## 演示 <a href="#demo" id="demo"></a>
 
 ### 浏览器扩展 <a href="#browser-extension" id="browser-extension"></a>
 
@@ -44,7 +44,7 @@ Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使�
 * **00:06**：概述
 * **00:29**：1、从 Bitwarden 主页注册
 * **01:26**：2、从 Bitwarden 客户端注册
-* **01:36**：3、从邀请/SSO 注册
+* **01:36**：3、从邀请 / SSO 注册
 * **02:26**：Bitwarden 学习中心
 
 Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免费账户。[还等什么呢](https://vault.bitwarden.com/#/register?layout=default)？[此处](../../../../docs/account/create-bitwarden-account.md)了解更多有关创建 Bitwarden 账户的信息。
@@ -84,9 +84,9 @@ Password Manager 网页 App
 iOS 和 Android 上的 Bitwarden
 {% endembed %}
 
-## 导入您的密码 <a href="#import-your-passwords" id="import-your-passwords"></a>
+## 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
-了解如何使用浏览器扩展、桌面 App 和移动 App 导入密码。兼容的浏览器和 App 提供了直接导入功能。
+了解如何使用浏览器扩展导入密码，或探索其他方式，例如桌面 App 和移动 App。兼容的浏览器和 App 提供了直接导入功能。
 
 ### 浏览器扩展 <a href="#browser-extension" id="browser-extension"></a>
 
@@ -98,7 +98,7 @@ iOS 和 Android 上的 Bitwarden
 * **00:05**：开始使用
 * **00:17**：选择导入位置
 * **00:29**：选择文件格式
-* **00:43**：找到您的文件
+* **00:43**：定位您的文件
 * **00:46**：导入您的数据
 
 ### 网页 App <a href="#web-app" id="web-app"></a>
@@ -111,7 +111,7 @@ iOS 和 Android 上的 Bitwarden
 * **00:05**：开始使用
 * **00:18**：选择导入位置
 * **00:30**：  选择文件格式
-* **00:43**：  找到导入文件
+* **00:43**：  定位导入文件
 * **00:49**：  导入数据
 
 ### 桌面 App - 包括 Chromium 浏览器的直接导入 <a href="#desktop-app" id="desktop-app"></a>
@@ -144,7 +144,7 @@ iOS 和 Android 上的 Bitwarden
 
 {% embed url="https://vimeo.com/1145638421?fl=pl&fe=cm" %}
 
-了解从自定义文件如何导入密码和其他数据。
+了解从自定义文件[如何导入](../../../../docs/password-manager/import-and-export/condition-a-bitwarden-.csv-or-.json.md)密码和其他数据。
 
 <a href="../../../../docs/password-manager/import-and-export/condition-a-bitwarden-.csv-or-.json.md" class="button primary">下载示例文件</a>
 
@@ -156,7 +156,7 @@ iOS 和 Android 上的 Bitwarden
 
 ## 从浏览器扩展自动填充 <a href="#autofill-from-browser-extension" id="autofill-from-browser-extension"></a>
 
-了解如何使用内联菜单自动填充密码和其他凭据，或探索其他方法，例如填充按钮或键盘快捷键。
+了解如何使用内嵌菜单自动填充密码和其他凭据，或探索其他方式，例如填充按钮或键盘快捷键。
 
 ### 内嵌菜单 <a href="#inline-menu" id="inline-menu"></a>
 
@@ -169,14 +169,14 @@ iOS 和 Android 上的 Bitwarden
 * **00:17**：故障排除
 
 {% hint style="success" %}
-如果登录使用 [Bitwarden 身份验证器](../../../../docs/password-manager/your-vault/security-tools/totp.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
 {% endhint %}
 
 ### &#xD;&#xD;填充按钮 <a href="#fill-button" id="fill-button"></a>
 
 {% embed url="https://vimeo.com/1141142837?fl=pl&fe=cm" %}
 
-打开浏览器扩展程序，然后单击任何登录名旁边的填充按钮即可立即自动填充。
+打开浏览器扩展，然后单击任何登录名旁边的填充按钮即可立即自动填充。
 
 * **00:00**：简介
 * **00:05**：填充按钮
@@ -186,7 +186,7 @@ iOS 和 Android 上的 Bitwarden
 * **01:07**：拖放
 
 {% hint style="success" %}
-如果登录使用 [Bitwarden 身份验证器](../../../../docs/password-manager/your-vault/security-tools/totp.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
 {% endhint %}
 
 ### 上下文菜单 <a href="#context-menu" id="context-menu"></a>
@@ -202,14 +202,14 @@ iOS 和 Android 上的 Bitwarden
 * 00:30：生成密码
 
 {% hint style="success" %}
-如果登录使用 [Bitwarden 身份验证器](../../../../docs/password-manager/your-vault/security-tools/totp.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
 {% endhint %}
 
 ### 键盘快捷键 <a href="#keyboard-shortcuts" id="keyboard-shortcuts"></a>
 
 {% embed url="https://vimeo.com/1141160672?fl=pl&fe=cm" %}
 
-使用 Ctrl + Shift + L（或 Mac 上的 Cmd + Shift + L）在几秒钟内填写登录凭据。
+使用 Ctrl + Shift + L（或 Mac 上的 Cmd + Shift + L）在几秒钟内填充登录凭据。
 
 在此处了解如何自定义快捷方式。
 
@@ -220,14 +220,48 @@ iOS 和 Android 上的 Bitwarden
 * 00:29：自定义键盘快捷键
 
 {% hint style="success" %}
-如果登录使用 [Bitwarden 身份验证器](../../../../docs/password-manager/your-vault/security-tools/totp.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
 {% endhint %}
 
 ## 从 Android App 自动填充 <a href="#autofill-from-android-app" id="autofill-from-android-app"></a>
 
+了解如何使用内嵌建议自动填充密码和其他凭据，或探索其他方式，例如弹出菜单。
+
 ### 内嵌建议 <a href="#inline-suggestions" id="inline-suggestions"></a>
 
+{% embed url="https://vimeo.com/1149193513?fl=pl&fe=cm" %}
+
+使用 Android 上的 Bitwarden 从键盘上方的内嵌菜单快速填写您的凭据。
+
+没有看到建议吗？请参阅[此处](../../../../docs/password-manager/autofill/autofill-from/autofill-from-android.md#inline)的设备要求，或查看 [Android 故障排除指南](../../../../docs/password-manager/autofill/troubleshoot-autofill/troubleshooting-android-auto-fill.md)。
+
+* **00:00**：简介
+* **00:04**：开始使用
+* **00:13**：启用自动填充服务
+* **00:30**：Chrome 与 Brave 集成
+* **00:51**：自动填充演示
+
+{% hint style="success" %}
+如果您的登录使用 Bitwarden Authenticator TOTP，Bitwarden 会在自动填充后自动将 TOTP 复制到您的剪贴板。长按 TOTP 字段以粘贴代码。
+{% endhint %}
+
 ### 弹出菜单 <a href="#popup-menu" id="popup-menu"></a>
+
+{% embed url="https://vimeo.com/1149326073?fl=pl&fe=cm" %}
+
+使用 Android 上的 Bitwarden 从弹出菜单中快速填写您的凭据。
+
+没有看到建议吗？查看 [Android 故障排除指南](../../../../docs/password-manager/autofill/troubleshoot-autofill/troubleshooting-android-auto-fill.md)。
+
+* **00:00**：简介
+* **00:05**：开始使用
+* **00:13**：启用自动填充服务
+* **00:35**：Chrome 与 Brave 集成
+* **00:55**：自动填充演示
+
+{% hint style="success" %}
+如果您的登录使用 Bitwarden Authenticator TOTP，Bitwarden 会在自动填充后自动将 TOTP 复制到您的剪贴板。长按 TOTP 字段以粘贴代码。
+{% endhint %}
 
 ## 了解更多 <a href="#learn-more" id="learn-more"></a>
 

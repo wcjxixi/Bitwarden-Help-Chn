@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/onboarding-workflows/)
 {% endhint %}
 
-本文档用于为用户提供入职指导。有许多不同的因素会影响用户需要采取的具体步骤。使用此决策树帮助为您的组织用户选择正确的选项：
+本文档用于指导用户注册加入组织。有许多不同的因素会影响用户需要采取的具体步骤。使用此决策树帮助为您的组织用户选择正确的选项：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6Mjrxky33gwmWzhhF85QgG/523d7421e9dd0aa72a6b9119f50043fb/Final.png?_a=BAJFJtWIB" %}
 入职决策树
