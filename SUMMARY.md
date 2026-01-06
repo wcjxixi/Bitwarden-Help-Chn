@@ -436,7 +436,7 @@
       * [企业成员](courses/password-manager/business/enterprise-plan/enterprise-member.md)
       * [企业管理员](courses/password-manager/business/enterprise-plan/enterprise-admin.md)
   * [合作伙伴](courses/password-manager/partners/README.md)
-    * [=合作伙伴概览](courses/password-manager/partners/partner-overview.md)
+    * [合作伙伴概览](courses/password-manager/partners/partner-overview.md)
     * [托管服务提供商](courses/password-manager/partners/managed-service-provider/README.md)
       * [服务用户](courses/password-manager/partners/managed-service-provider/service-user.md)
       * [=提供商管理员](courses/password-manager/partners/managed-service-provider/provider-admin.md)

@@ -4,6 +4,34 @@
 对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-partner-provider-admin/)
 {% endhint %}
 
+了解如何以管理员身份设置和管理您的提供商门户，包括客户入职、权限配置以及监督您的服务团队对客户组织的访问权限。
+
+{% hint style="success" %}
+更喜欢在线培训吗？加入[公开培训课程](https://bitwarden.com/events/tag/msp/)。
+{% endhint %}
+
+## 演示 <a href="#demo" id="demo"></a>
+
+### 提供商门户演示 <a href="#provider-portal-demo" id="provider-portal-demo"></a>
+
+{% embed url="https://vimeo.com/668382756?fl=pl&fe=cm" %}
+
+[此处](https://bitwarden.com/partners/)了解更多有关成为 Bitwarden MSP 或经销商的信息。
+
+* **01:36**：Bitwarden Password Manager 概述
+  * **01:46**：Bitwarden 客户端 App
+  * **02:15**：Bitwarden 如何与您的技术堆栈集成
+  * **04:53**：术语和概念概述
+* **08:34**：MSP 架构深入探讨
+  * **10:05**：您的组织
+  * **16:19**：提供商门户
+  * **23:13**：客户组织
+* **25:49**：管理您的客户
+  * **26:50**：管理策略
+  * **27:43**：导入数据
+  * **28:18**：设置 SSO 和 SCIM
+* **29:00**：问答
+
 ## 开始使用 <a href="#get-started" id="get-started"></a>
 
 ### 成为合作伙伴 <a href="#become-a-partner" id="become-a-partner"></a>
@@ -25,7 +53,7 @@
 
 ### 了解提供商门户 <a href="#get-to-know-the-provider-portal" id="get-to-know-the-provider-portal"></a>
 
-提供商门户是一种一体化管理体验，使提供商能够大规模管理客户的 Bitwarden 组织。它通过集中管理每个客户的访问和支持来简化管理任务，并允许您随着业务增长创建新客户：
+[提供商门户](../../../../docs/provider-portal/provider-portal-overview.md)是一种一体化管理体验，使提供商能够大规模管理客户的 Bitwarden 组织。它通过集中管理每个客户的访问和支持来简化管理任务，并允许您随着业务增长创建新客户：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7AoSHeZgJJTBXQmpZ13UBr/56ca464fe6987c8c5fc8e7099235d640/2025-02-25_15-17-46.png?_a=DAJCwlWIZAAB" %}
 提供商门户
@@ -54,28 +82,6 @@
 ### 了解客户管理 <a href="#learn-about-client-administration" id="learn-about-client-administration"></a>
 
 客户组织允许您的客户安全地共享密码、信用卡等，并为您提供代表他们管理这些东西的工具。您可以做很多事情，但这里有一些[您作为提供商需要处理的关键日常任务](../../../../docs/provider-portal/ongoing-administration.md)。
-
-## 观看演示 <a href="#watch-a-demo" id="watch-a-demo"></a>
-
-### 提供商门户演示 <a href="#provider-portal-demo" id="provider-portal-demo"></a>
-
-{% embed url="https://vimeo.com/668382756?fl=pl&fe=sh" %}
-
-[此处](https://bitwarden.com/partners/)了解更多有关成为 Bitwarden MSP 或经销商的信息。
-
-* **01:36**：Bitwarden 密码管理器概述。
-  * **01:46**：Bitwarden 客户端 App。
-  * **02:15**：Bitwarden 如何与您的技术堆栈集成。
-  * **04:53**：术语和概念概述。
-* **08:34**：MSP 架构深入探讨。
-  * **10:05**：您的组织。
-  * **16:19**：提供商门户。
-  * **23:13**：客户组织。
-* **25:49**：管理您的客户。
-  * **26:50**：管理策略。
-  * **27:43**：导入数据。
-  * **28:18**：设置 SSO 和 SCIM。
-* **29:00**：问答。
 
 ## 客户部署指南 <a href="#customer-deployment-guide" id="customer-deployment-guide"></a>
 
