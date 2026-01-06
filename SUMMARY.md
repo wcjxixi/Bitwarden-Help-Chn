@@ -439,8 +439,8 @@
     * [合作伙伴概览](courses/password-manager/partners/partner-overview.md)
     * [托管服务提供商](courses/password-manager/partners/managed-service-provider/README.md)
       * [服务用户](courses/password-manager/partners/managed-service-provider/service-user.md)
-      * [=提供商管理员](courses/password-manager/partners/managed-service-provider/provider-admin.md)
-    * [=经销商](courses/password-manager/partners/reseller.md)
+      * [提供商管理员](courses/password-manager/partners/managed-service-provider/provider-admin.md)
+    * [经销商](courses/password-manager/partners/reseller.md)
 * [Secrets Manager](courses/get-to-know-secrets-manager.md)
 * [Passwordless.dev](courses/get-to-know-passwordless.dev.md)
 
