@@ -7,14 +7,31 @@
 准备好最终控制您的密码了吗？本课程将引导您完成设置您的个人 Bitwarden 账户、保护您最重要的登录并让密码管理变得轻松而不是繁重。
 
 {% hint style="success" %}
-掌握了基础知识并准备好开始分享了吗？查看[两人免费共享](free-sharing-for-two.md)。
+已经掌握了基础知识并准备好开始分享了吗？查看[两人免费共享](free-sharing-for-two.md)。
 {% endhint %}
 
 ## Demo
 
-### 浏览器扩展 <a href="#browser-extension" id="browser-extension"></a>
-
 {% embed url="https://vimeo.com/1084695614?fl=pl&fe=sh" %}
+
+###
+
+* [Install Bitwarden](https://player.vimeo.com/video/1084695614#t=11s)
+* [Pin the extension](https://player.vimeo.com/video/1084695614#t=23s)
+* [Log in or create an account](https://player.vimeo.com/video/1084695614#t=32s)
+* [Disable your browser's password manager](https://player.vimeo.com/video/1084695614#t=37s)
+* [Import items](https://player.vimeo.com/video/1084695614#t=50s)
+* [Create a new item](https://player.vimeo.com/video/1084695614#t=1m11s)
+* [Additional fields](https://player.vimeo.com/video/1084695614#t=1m42s)
+* [Using folders](https://player.vimeo.com/video/1084695614#t=1m52s)
+* [Favorite an item](https://player.vimeo.com/video/1084695614#t=2m11s)
+* [Autofill](https://player.vimeo.com/video/1084695614#t=2m17s)
+* [Auto-save pop-up](https://player.vimeo.com/video/1084695614#t=2m39s)
+* [PIN and biometrics](https://player.vimeo.com/video/1084695614#t=2m45s)
+* [Account Switching](https://player.vimeo.com/video/1084695614#t=2m58s)
+* [Customize Bitwarden](https://player.vimeo.com/video/1084695614#t=3m7s)
+
+### 浏览器扩展 <a href="#browser-extension" id="browser-extension"></a>
 
 Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../../../../docs/password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 
@@ -86,11 +103,26 @@ iOS 和 Android 上的 Bitwarden
 
 ## 导入您的密码 <a href="#import-your-passwords" id="import-your-passwords"></a>
 
-了解如何使用浏览器扩展导入密码，或探索其他方法，例如桌面和移动 App，它们为兼容的浏览器和 App 提供直接导入功能。
+了解如何使用浏览器扩展、桌面 App 和移动 App 导入密码。兼容的浏览器和 App 提供了直接导入功能。
 
 ### 浏览器扩展 <a href="#browser-extension" id="browser-extension"></a>
 
+{% embed url="https://vimeo.com/1145638461?fl=pl&fe=cm" %}
+
+了解如何使用 Bitwarden 浏览器扩展导入密码和其他数据。
+
+* **00:00**：简介
+* **00:05**：开始使用
+* **00:17**：选择导入位置
+* **00:29**：选择文件格式
+* **00:43**：找到您的文件
+* **00:46**：导入您的数据
+
 ### 网页 App <a href="#web-app" id="web-app"></a>
+
+
+
+
 
 ### 桌面 App - 包括 Chromium 浏览器的直接导入 <a href="#desktop-app" id="desktop-app"></a>
 
