@@ -12,26 +12,9 @@
 
 ## Demo
 
-{% embed url="https://vimeo.com/1084695614?fl=pl&fe=sh" %}
-
-###
-
-* [Install Bitwarden](https://player.vimeo.com/video/1084695614#t=11s)
-* [Pin the extension](https://player.vimeo.com/video/1084695614#t=23s)
-* [Log in or create an account](https://player.vimeo.com/video/1084695614#t=32s)
-* [Disable your browser's password manager](https://player.vimeo.com/video/1084695614#t=37s)
-* [Import items](https://player.vimeo.com/video/1084695614#t=50s)
-* [Create a new item](https://player.vimeo.com/video/1084695614#t=1m11s)
-* [Additional fields](https://player.vimeo.com/video/1084695614#t=1m42s)
-* [Using folders](https://player.vimeo.com/video/1084695614#t=1m52s)
-* [Favorite an item](https://player.vimeo.com/video/1084695614#t=2m11s)
-* [Autofill](https://player.vimeo.com/video/1084695614#t=2m17s)
-* [Auto-save pop-up](https://player.vimeo.com/video/1084695614#t=2m39s)
-* [PIN and biometrics](https://player.vimeo.com/video/1084695614#t=2m45s)
-* [Account Switching](https://player.vimeo.com/video/1084695614#t=2m58s)
-* [Customize Bitwarden](https://player.vimeo.com/video/1084695614#t=3m7s)
-
 ### 浏览器扩展 <a href="#browser-extension" id="browser-extension"></a>
+
+{% embed url="https://vimeo.com/1084695614?fl=pl&fe=sh" %}
 
 Bitwarden 浏览器扩展具有自动填充的魔力，使您可以轻松地使用已保存的密码快速登录您的账户。[下载](https://bitwarden.com/download/)浏览器扩展并了解在浏览网页时[如何自动填充密码](../../../../docs/password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)。
 
@@ -109,7 +92,7 @@ iOS 和 Android 上的 Bitwarden
 
 {% embed url="https://vimeo.com/1145638461?fl=pl&fe=cm" %}
 
-了解如何使用 Bitwarden 浏览器扩展导入密码和其他数据。
+了解使用 Bitwarden 浏览器扩展[如何导入](../../../../docs/password-manager/import-and-export/import-data.md#liu-lan-qi-kuo-zhan)密码和其他数据。
 
 * **00:00**：简介
 * **00:05**：开始使用
@@ -120,19 +103,131 @@ iOS 和 Android 上的 Bitwarden
 
 ### 网页 App <a href="#web-app" id="web-app"></a>
 
+{% embed url="https://vimeo.com/1145638443?fl=pl&fe=cm" %}
 
+了解在 Bitwarden 网页 App 中[如何导入](../../../../docs/password-manager/import-and-export/import-data.md#wang-ye-app)密码和其他数据。
 
-
+* **00:00**：简介
+* **00:05**：开始使用
+* **00:18**：选择导入位置
+* **00:30**：  选择文件格式
+* **00:43**：  找到导入文件
+* **00:49**：  导入数据
 
 ### 桌面 App - 包括 Chromium 浏览器的直接导入 <a href="#desktop-app" id="desktop-app"></a>
 
+{% embed url="https://vimeo.com/1145638482?fl=pl&fe=cm" %}
+
+了解如何使用桌面 App [导入密码](../../../../docs/password-manager/import-and-export/import-data.md)和其他数据到 Bitwarden。浏览器密码可以从 Chrome、Edge、Opera、Brave 和 Vivaldi [直接导入](../../../../docs/password-manager/import-and-export/import-guides/import-data-from-chrome.md#import-directly-from-browser)。
+
+直接从 Bitwarden 网站下载桌面 App，以使用「从浏览器直接导入」选项。
+
+<a href="https://bitwarden.com/download/#downloads-desktop" class="button primary">下载桌面 App</a>
+
+* **00:00**：简介
+* **00:06**：开始使用
+* **00:27**：直接从浏览器导入
+* **01:03**：从文件导入
+
 ### 移动 App - 包括 iOS 上兼容的 App 的直接导入/导出 <a href="#mobile-app" id="mobile-app"></a>
+
+{% embed url="https://vimeo.com/1145638494?fl=pl&fe=cm" %}
+
+了解在 Bitwarden 移动 App 中[如何导入](../../../../docs/password-manager/import-and-export/import-data.md#yi-dong-app)您的密码和其他数据。
+
+* **00:00**：简介
+* **00:05**：开始使用
+* **00:15**：使用网页 App
+* **00:23**：iOS 26 直接导入
 
 ### 从自定义文件 <a href="#from-a-custom-file" id="from-a-custom-file"></a>
 
+{% embed url="https://vimeo.com/1145638421?fl=pl&fe=cm" %}
+
+了解从自定义文件如何导入密码和其他数据。
+
+<a href="../../../../docs/password-manager/import-and-export/condition-a-bitwarden-.csv-or-.json.md" class="button primary">下载示例文件</a>
+
+* **00:00**：简介
+* **00:08**：开始使用
+* **00:12**：下载示例 CSV
+* **00:21**：查看列标题
+* **00:25**：导入自定义文件
+
 ## 从浏览器扩展自动填充 <a href="#autofill-from-browser-extension" id="autofill-from-browser-extension"></a>
 
+了解如何使用内联菜单自动填充密码和其他凭据，或探索其他方法，例如填充按钮或键盘快捷键。
+
+### 内嵌菜单 <a href="#inline-menu" id="inline-menu"></a>
+
+{% embed url="https://vimeo.com/1140176329?fl=pl&fe=cm" %}
+
+登录您喜爱的网站，内嵌自动填充菜单将立即出现在您需要的地方。
+
+* **00:00**：简介
+* **00:06**：使用内嵌自动填充
+* **00:17**：故障排除
+
+{% hint style="success" %}
+如果登录使用 [Bitwarden 身份验证器](../../../../docs/password-manager/your-vault/security-tools/totp.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+{% endhint %}
+
+### &#xD;&#xD;填充按钮 <a href="#fill-button" id="fill-button"></a>
+
+{% embed url="https://vimeo.com/1141142837?fl=pl&fe=cm" %}
+
+打开浏览器扩展程序，然后单击任何登录名旁边的填充按钮即可立即自动填充。
+
+* **00:00**：简介
+* **00:05**：填充按钮
+* **00:17**：自定义填充按钮
+* **00:42**：复制按钮
+* **00:51**：自定义复制按钮
+* **01:07**：拖放
+
+{% hint style="success" %}
+如果登录使用 [Bitwarden 身份验证器](../../../../docs/password-manager/your-vault/security-tools/totp.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+{% endhint %}
+
+### 上下文菜单 <a href="#context-menu" id="context-menu"></a>
+
+{% embed url="https://vimeo.com/1141154474?fl=pl&fe=cm" %}
+
+右键单击任何登录字段即可立即访问并自动填充您的 Bitwarden 凭据。
+
+* 00:00：简介
+* 00:05：使用上下文菜单
+* 00:24：复制字段
+* 00:28：自动填充身份和卡片
+* 00:30：生成密码
+
+{% hint style="success" %}
+如果登录使用 [Bitwarden 身份验证器](../../../../docs/password-manager/your-vault/security-tools/totp.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+{% endhint %}
+
+### 键盘快捷键 <a href="#keyboard-shortcuts" id="keyboard-shortcuts"></a>
+
+{% embed url="https://vimeo.com/1141160672?fl=pl&fe=cm" %}
+
+使用 Ctrl + Shift + L（或 Mac 上的 Cmd + Shift + L）在几秒钟内填写登录凭据。
+
+在此处了解如何自定义快捷方式。
+
+* 00:00：简介
+* 00:06：使用键盘快捷键
+* 00:20：循环显示匹配的登录信息
+* 00:25：自动填充卡片和身份
+* 00:29：自定义键盘快捷键
+
+{% hint style="success" %}
+如果登录使用 [Bitwarden 身份验证器](../../../../docs/password-manager/your-vault/security-tools/totp.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+{% endhint %}
+
 ## 从 Android App 自动填充 <a href="#autofill-from-android-app" id="autofill-from-android-app"></a>
+
+### 内嵌建议 <a href="#inline-suggestions" id="inline-suggestions"></a>
+
+### 弹出菜单 <a href="#popup-menu" id="popup-menu"></a>
 
 ## 了解更多 <a href="#learn-more" id="learn-more"></a>
 
@@ -151,7 +246,7 @@ iOS 和 Android 上的 Bitwarden
 
 [此处](https://bitwarden.com/download/)下载适用于您所有设备的 Bitwarden App。
 
-### 使用 Bitwarden Send 分享安全链接 <a href="#sharing-secure-links-with-bitwarden-send" id="sharing-secure-links-with-bitwarden-send"></a>
+### 安全地发送文本和文件 <a href="#send-text-and-files-securely" id="send-text-and-files-securely"></a>
 
 {% embed url="https://vimeo.com/797850224?fl=pl&fe=sh" %}
 
@@ -182,7 +277,7 @@ iOS 和 Android 上的 Bitwarden
 
 ### Smart Search
 
-使用 Bitwarden Smart Search 立即找到答案。
+使用 **Bitwarden Smart Search** 立即寻找答案。
 
 <a href="https://bitwarden.com/smart-search/" class="button primary">Try Smart Search</a>
 
