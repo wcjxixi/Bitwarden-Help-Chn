@@ -14,11 +14,11 @@ Bitwarden 目前仅建议对尚未开始推广的组织启用[强制组织数据
 
 管理员激活强制组织数据所有权策略后，**我的项目**将被添加到所有组织成员的密码库中。
 
-* 「我的项目」是组织成员存储密码库项目的首选位置。
-* 保存在「我的项目」中的项目将始终属于该组织所有。
+* 「我的项目」是组织成员存储他们的密码库项目的首选位置。
+* 保存在「我的项目」中的项目将始终属于组织所有。
 * 用户无法将「我的项目」分配给其他组织成员，组织内共享的项目也无法移动到用户的「我的项目」中。
-* 当组织成员账户被移除或删除后，「我的项目」的管理权将转移给管理员。在[此处](../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)了解有关继承后「我的项目」的更多信息。
-* 保存在「我的项目」中的项目将包含在事件日志报告中。
+* 在组织成员账户被移除或删除之前，「我的项目」数据（包括用户名和密码）只能由该个人成员直接访问。然而，该数据受[事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)和组织[健康报告](../your-vault/security-tools/vault-health-reports.md)的监控与统计。
+* 当组织成员账户被[移除](../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)或[删除](../../admin-console/manage-members/revoke-remove/delete-member-accounts.md)后，「我的项目」数据及其管理权将转移给组织管理员。
 
 ## 使用「我的项目」 <a href="#use-my-items" id="use-my-items"></a>
 

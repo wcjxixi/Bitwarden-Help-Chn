@@ -9,7 +9,7 @@
 企业策略使企业能够对所有用户强制执行安全规则，例如强制使用两步登录。
 
 {% hint style="danger" %}
-Bitwarden 强烈建议在邀请用户加入您的组织之前设置好企业策略。某些策略会在启用时撤销不合规的用户，而某些策略无法追溯执行。
+Bitwarden 强烈建议在邀请用户加入您的组织之前先设置好企业策略。某些策略会在启用时撤销不符合要求的用户，而某些策略无法追溯性地执行。
 {% endhint %}
 
 ## 设置企业策略 <a href="#setting-enterprise-policies" id="setting-enterprise-policies"></a>

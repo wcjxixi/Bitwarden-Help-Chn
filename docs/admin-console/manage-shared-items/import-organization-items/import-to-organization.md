@@ -11,7 +11,7 @@
 
 ## 导入到组织密码库 <a href="#import-to-an-organization-vault" id="import-to-an-organization-vault"></a>
 
-数据只能从网页 App 导入到组织。数据在发送到服务器存储之前会在本地本地[加密](../../../security/encryption/encryption-protocols.md)。
+数据只能从网页 App 导入到组织。数据在发送到服务器存储之前会在本地[加密](../../../security/encryption/encryption-protocols.md)。
 
 {% hint style="info" %}
 虽然某些项目类型无法导入，但您仍可将其添加到密码库：
@@ -20,31 +20,31 @@
 * 在新的密码库中重新创建 [Send](../../../password-manager/bitwarden-send/about-send.md)。
 {% endhint %}
 
-1、登录 Bitwarden 网页 App 然后打开管理控制台：
+要导入数据到组织：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
+1、登录 Bitwarden 网页 App 然后打开管理控制台。
+
+2、转到**设置** → **导入**：
+
+{% embed url="https://bitwarden.com/assets/12fA17Iq9LdCXdhPsPYQyq/0adc6c4b7164022c4c3623339e41a662/2025-12-17_11-04-54.png?w=1156&fm=avif" %}
+导入组织项目
 {% endembed %}
 
-2、转到**设置** → **导入数据**：
+3、（可选）要导入到指定集合中，请从**集合**下拉菜单中选择它。当一次为一组用户批量导入数据时，这会很有帮助。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/12fA17Iq9LdCXdhPsPYQyq/6fb380ff6165058fefe6fd311e038364/2024-12-03_15-42-21.png?_a=DAJCwlWIZAAB" %}
-管理控制台导入
-{% endembed %}
+4、在**文件格式**中，选择您要导入的[文件格式](../../../password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
-3、在**数据**中，选择您要导入的[文件格式](../../../password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。如果您正在导入一个[加密导出](../../../password-manager/import-and-export/encrypted-exports.md)，请注意这没有单独的选项。选择 **.json** 然后处理程序将确定文件是加密的，并尝试使用您的[账户加密密钥](../../../security/encryption/encryption-key-rotation.md)或加密导出的密码来解密文件。
-
-{% hint style="success" %}
-如果您希望将导入文件的内容直接放入指定集合中，请使用**目的地**部分中的**集合**下拉列表来选择一个集合。当导入供特定用户群体使用的数据块而不是导入组织的所有数据时，这通常最有用。
+{% hint style="info" %}
+如果您正在导入一个[加密导出](../../../password-manager/import-and-export/encrypted-exports.md)，请注意这没有单独的选项。选择 `.json` 然后处理程序将确定文件是加密的，并尝试使用您的[账户加密密钥](../../../security/encryption/encryption-key-rotation.md)或加密导出的密码来解密文件。
 {% endhint %}
 
-4、选择**选择文件**并添加要导入的文件，或将文件内容复制/粘贴到输入框中。
+4、选择**选择文件**然后添加要导入的文件，或将文件内容复制/粘贴到输入框中。
 
 {% hint style="danger" %}
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
-5、选择**导入数据**以触发导入。如果要导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+5、选择**导入**以触发导入。如果要导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
 ## 导入错误故障排除 <a href="#troubleshoot-import-errors" id="troubleshoot-import-errors"></a>
 

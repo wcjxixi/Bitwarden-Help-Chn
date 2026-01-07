@@ -20,6 +20,8 @@
 
 ### 个人密码库 .csv <a href="#csv-for-individual-vault" id="csv-for-individual-vault"></a>
 
+⬇️[下载示例 csv 文件](https://bitwarden.com/assets/4j3wYIYVQYW2MZUBogVxM3/2299910bb8fc93f6a8916d870be0458c/bitwarden_export.csv)
+
 创建具有如下标头作为第一行的 UTF-8 编码的纯文本文件：
 
 ```
@@ -38,9 +40,9 @@ Social,1,login,Twitter,,,0,twitter.com,me@example.com,password123,
 
 导入此文件时，请选择 **Bitwarden (csv)** 作为您的文件格式。
 
-⬇️[下载示例 csv 文件](https://assets.ctfassets.net/7rncvj1f8mw7/4j3wYIYVQYW2MZUBogVxM3/2299910bb8fc93f6a8916d870be0458c/bitwarden_export.csv)
-
 ### 组织密码库 .csv <a href="#csv-for-organization" id="csv-for-organization"></a>
+
+⬇️[下载示例 csv 文件](https://bitwarden.com/assets/YYnGrBJO8O5Xv2O0dFW9Z/6de667ded7567da41dcdf4af5186311a/bitwarden_export_org.csv)
 
 创建具有如下标头作为第一行的 UTF-8 编码的纯文本文件：
 
@@ -71,8 +73,6 @@ Parent Collection/First Child Collection/Second Child Collection,login,Shared Cr
 
 导入此文件时，请选择 **Bitwarden (csv)** 作为您的文件格式。
 
-⬇️[下载示例 csv 文件](https://assets.ctfassets.net/7rncvj1f8mw7/YYnGrBJO8O5Xv2O0dFW9Z/6de667ded7567da41dcdf4af5186311a/bitwarden_export_org.csv)
-
 ### 最少要求值 <a href="#minimum-required-values" id="minimum-required-values"></a>
 
 您可能没有上述格式中显示的所有值的数据，但他们大多数是可选的。为了让 Bitwarden `.csv` 导入器能正常工作，您只需为每个对象提供以下值即可：
@@ -86,6 +86,8 @@ folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_p
 ## 调整 .json <a href="#condition-a-json" id="condition-a-json"></a>
 
 ### 个人密码库 .json <a href="#json-for-individual-vault" id="json-for-individual-vault"></a>
+
+⬇️[下载示例 json 文件](https://bitwarden.com/assets/2iwtn9YFqooYJmw1JWwCXa/8b03a95f1c27240c22a7578aa703f7b1/individual.json)
 
 创建如下格式的 UTF-8 编码的纯文本文件：
 
@@ -145,9 +147,9 @@ folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_p
 
 导入此文件时，请选择 **Bitwarden (json)** 作为您的文件格式。
 
-⬇️[下载示例 json 文件](https://assets.ctfassets.net/7rncvj1f8mw7/2iwtn9YFqooYJmw1JWwCXa/8b03a95f1c27240c22a7578aa703f7b1/individual.json)
-
 ### 组织密码库 .json <a href="#json-for-organization" id="json-for-organization"></a>
+
+⬇️[下载示例 json 文件](https://bitwarden.com/assets/2Pui1E5uLs2FSw6GhO6pdU/141c68c6ad63ea8f395067c02592ddbc/organization.json)
 
 创建如下格式的 UTF-8 编码的纯文本文件：
 
@@ -208,8 +210,6 @@ folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_p
 ```
 
 导入此文件时，请选择 **Bitwarden (json)** 作为您的文件格式。
-
-⬇️[下载示例 json 文件](https://assets.ctfassets.net/7rncvj1f8mw7/2Pui1E5uLs2FSw6GhO6pdU/141c68c6ad63ea8f395067c02592ddbc/organization.json)
 
 ### 导入到现有集合 <a href="#import-to-existing-collections" id="import-to-existing-collections"></a>
 

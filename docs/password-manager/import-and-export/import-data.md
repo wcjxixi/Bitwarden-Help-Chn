@@ -40,10 +40,10 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 
 1、选择**工具**。
 
-2、选择**导入数据**：
+2、选择**导入**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/7ed2e5650e9988bf7595bccebe8a5114/2024-12-03_08-52-08.png?_a=DAJCwlWIZAAB" %}
-导入数据
+{% embed url="https://bitwarden.com/assets/1NbyPb9dN545ZqKGRZYB3x/e6b8f3f31aa82bb05cef12c5a5c4c193/2025-12-17_11-25-08.png?w=1156&fm=avif" %}
+导入项目
 {% endembed %}
 
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
@@ -63,7 +63,7 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
-6、选择**导入数据**。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+6、选择**导入**。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
 7、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 {% endtab %}
