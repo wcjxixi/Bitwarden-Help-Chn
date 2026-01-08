@@ -64,7 +64,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（浏览�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **Access Intelligence**：企业组织可使用 [Access Intelligence](admin-console/oversight-visibility/access-intelligence.md) 来审查存在风险的凭据，并通知成员[对这些凭据采取相应措施](password-manager/organization-members/change-at-risk-passwords.md)。
+* **Access Intelligence**：企业组织可使用 [Access Intelligence](admin-console/oversight-visibility/access-intelligence.md) 来审查存在风险的凭据，并通知成员[对这些凭据采取相应措施](password-manager/your-vault/security-tools/change-at-risk-passwords.md)。
 * **策略名称更新**：「为允许的应用自动登录用户」策略已更名为「[使用 SSO 自动登录](admin-console/oversight-visibility/enterprise-policies.md#automatic-login-with-sso)」。
 
 ### 自托管 <a href="#self-host" id="self-host"></a>

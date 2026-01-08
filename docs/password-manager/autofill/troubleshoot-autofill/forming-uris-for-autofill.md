@@ -8,7 +8,7 @@
 
 ## 将 URI 保存到登录项目 <a href="#save-uris-in-login-items" id="save-uris-in-login-items"></a>
 
-当您创建或编辑登录项目时，请将其输入到**网站 (URI)** 字段中。当浏览器扩展自动保存新登录时，会自动填充网站的 URI。
+当您创建或编辑登录项目时，请将其输入到**网站 (URI)** 字段中。当浏览器扩展[自动保存](../autofill-from/autosave-from-browser-extensions.md)新登录时，会自动填充网站的 URI。
 
 您可以将多个 URI 添加到单个登录项目。要重新排序，请在网页 App 或浏览器扩展中编辑项目，然后将 URI 拖放到您的首选顺序中：
 

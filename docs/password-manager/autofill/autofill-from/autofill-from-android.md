@@ -99,17 +99,17 @@ Android 快速操作磁贴
 
 要使用快速操作磁贴，请导航至需要自动填充的页面或 App，向下滑动以访问磁贴，然后点击要使用的磁贴。
 
-## 兼容模式 <a href="#compatibility-mode" id="compatibility-mode"></a>
+## ~~兼容模式~~ <a href="#compatibility-mode" id="compatibility-mode"></a>
 
-启用**为浏览器自动填充使用兼容模式**选项后，将启用一种安全性较低的自动填充逻辑，该逻辑与更多浏览器兼容，尤其是 Edge、Opera 和 Samsung Internet 浏览器。
+~~启用**为浏览器自动填充使用兼容模式**选项后，将启用一种安全性较低的自动填充逻辑，该逻辑与更多浏览器兼容，尤其是 Edge、Opera 和 Samsung Internet 浏览器。~~
 
-兼容模式允许 Bitwarden 从地址栏检测匹配的 URI 来进行自动填充，而不仅仅是从表单的属性（例如用户名或密码）中检测。这有助于自动填充在更广泛的场景下工作，但也会在某些浏览器中引入风险。
+~~兼容模式允许 Bitwarden 从地址栏检测匹配的 URI 来进行自动填充，而不仅仅是从表单的属性（例如用户名或密码）中检测。这有助于自动填充在更广泛的场景下工作，但也会在某些浏览器中引入风险。~~
 
 {% hint style="danger" %}
-在某些浏览器中启用兼容模式会引入一个漏洞，该漏洞可能允许恶意网站将凭据自动填充到嵌入式或隐藏的 iframe 中：
+~~在某些浏览器中启用兼容模式会引入一个漏洞，该漏洞可能允许恶意网站将凭据自动填充到嵌入式或隐藏的 iframe 中：~~
 
-* Chrome、Brave 和 Firefox 将始终使用标准的自动填充逻辑，无论是否启用此选项，从而确保您获得最大程度的保护。
-* Edge、Opera 和 Samsung Internet 将使用安全性较低的自动填充逻辑。如果您启用此选项，请务必仅在受信任的合法网站上使用自动填充功能。
+* ~~Chrome、Brave 和 Firefox 将始终使用标准的自动填充逻辑，无论是否启用此选项，从而确保您获得最大程度的保护。~~
+* ~~Edge、Opera 和 Samsung Internet 将使用安全性较低的自动填充逻辑。如果您启用此选项，请务必仅在受信任的合法网站上使用自动填充功能。~~
 {% endhint %}
 
 ## 自动填充期间切换账户 <a href="#switch-accounts-during-autofill" id="switch-accounts-during-autofill"></a>

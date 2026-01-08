@@ -31,7 +31,7 @@ Access Intelligence 报告的**活动**选项卡提供了关键数据点和任�
 * **密码更改进度**：已[发送的密码更改请求](access-intelligence.md#requesting-password-changes)的完成百分比。
 * **存在风险的成员**：有权访问[关键](access-intelligence.md#marking-critical-applications)应用程序中[存在风险](access-intelligence.md#determining-risk)项目的成员数量。
 * **关键应用程序**：目前[存在风险](access-intelligence.md#determining-risk)的[关键](access-intelligence.md#marking-critical-applications)应用程序的比例。
-* **需要审核的应用程序**：自最后一次[运行报告](access-intelligence.md#run-the-report)以来，成员添加的新应用程序的数量。
+* **需要审查的应用程序**：自最后一次[运行报告](access-intelligence.md#run-the-report)以来，成员添加的新应用程序的数量。
 
 ### 确定风险 <a href="#determining-risk" id="determining-risk"></a>
 
@@ -58,7 +58,7 @@ Access Intelligence 报告列出了您 Bitwarden 组织中保存的所有应用�
 {% hint style="success" %}
 区分**关键应用程序**和**所有应用程序**是确保组织成员能够迅速处理最重要应用程序的重要工具。
 
-Access Intelligence 的一项重要功能是向成员发送通知，告知他们需要处理一个关键的存在风险的密码。通过分批有针对性地发送这些通知，有助于防止成员产生警报疲劳，从而避免延误补救措施。
+Access Intelligence 的一项重要功能是向成员发送通知，告知他们需要处理一个关键的[存在风险](access-intelligence.md#determining-risk)的密码。通过分批有针对性地发送这些通知，有助于防止成员产生警报疲劳，从而避免延误补救措施。
 {% endhint %}
 
 被标记为**关键**的应用程序是指那些将向组织成员发送通知，告知他们需要处理存在风险密码的应用程序。要将应用程序标记为关键，请勾选一个或多个复选框，然后选择**将 App 标记为关键**按钮：

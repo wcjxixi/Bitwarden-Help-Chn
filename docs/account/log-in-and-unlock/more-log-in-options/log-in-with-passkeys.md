@@ -42,7 +42,7 @@ Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.
 使用通行密钥用于密码库加密
 {% endembed %}
 
-仅当您的浏览器（如 Google Chrome）和身份验证器（如 YubiKey 5）都支持 PRF 功能时，才会出现此选项。[了解更多](log-in-with-passkeys.md#set-up-encryption)。
+仅当您的浏览器（如 Google Chrome）和身份验证器（如 YubiKey 5）都[支持 PRF](log-in-with-passkeys.md#set-up-encryption) 时，才会出现此选项。
 
 7、选择**启用**。
 
@@ -62,7 +62,7 @@ Bitwarden 不会提示或允许您在密码库中保存登录 Bitwarden 的通�
 
 您的通行密钥列表将显示每个密码是可否用于加密，是否受支持但未启用，或不支持：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/TpXTFNlF2hzRaUaLmxAXr/91127b0b363fe1de8d441f52001abbd0/2024-12-04_15-55-32.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/TpXTFNlF2hzRaUaLmxAXr/6710e5ab7c98efcb11547dc6038fdf7d/Passkeys_list.png?w=832&fm=avif" %}
 通行密钥列表
 {% endembed %}
 
