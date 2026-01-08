@@ -30,7 +30,7 @@
 
 1. 点击 **⋯**&#x83DC;单按钮然后点击**密码管理器**。
 2. 点击**设置**。
-3. 点击**导出密码**。可能会提示您输入计算机的密码以进行授权。
+3. 点击**导出密码...** 。可能会提示您输入设备 PIN 码或生物识别信息以进行授权。
 4. 指定一个位置以保存您的导出文件。
 {% endtab %}
 {% endtabs %}
@@ -52,16 +52,20 @@
 
 1、选择**工具**。
 
-2、选择**导入数据**：
+2、选择**导入**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/7ed2e5650e9988bf7595bccebe8a5114/2024-12-03_08-52-08.png?_a=DAJAUVWIZAAB" %}
-导入数据
+{% embed url="https://bitwarden.com/assets/1NbyPb9dN545ZqKGRZYB3x/e6b8f3f31aa82bb05cef12c5a5c4c193/2025-12-17_11-25-08.png?w=1156&fm=avif" %}
+导入项目
 {% endembed %}
 
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
 
 * **个人密码库**：选择**我的密码库**并（可选）选择移动项目到的**文件夹**。
 * **组织密码库**：选择组织密码库的名称然后选择一个**集合**。(需要[**可以管理**](../../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+
+{% hint style="success" %}
+如果您在此处选择**文件夹**，则导入文件中定义的任何文件夹在创建时都将嵌套在其中。
+{% endhint %}
 
 4、从**文件格式**下拉菜单中，选择[导入文件的格式](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -71,7 +75,7 @@
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
-6、选择**导入数据**。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+6、选择**导入**。如果您要导入受密码保护的 .`json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
 7、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 {% endtab %}
@@ -89,6 +93,10 @@
 
 * **个人密码库**：选择**我的密码库**并（可选）选择移动到的**文件夹**。
 * **组织密码库**：选择组织密码库名称然后选择一个**集合**。(需要[**可以管理**](../../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+
+{% hint style="success" %}
+如果您在此处选择**文件夹**，则导入文件中定义的任何文件夹在创建时都将嵌套在其中。
+{% endhint %}
 
 5、从**文件格式**下拉菜单中，选择[导入文件的格式](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -122,6 +130,10 @@
 
 * **个人密码库**：选择**我的密码库**并（可选）选择移动项目到的**文件夹**。
 * **组织密码库**：选择组织密码库名称然后选择一个**集合**。(要求[**管理集合**](../../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
+
+{% hint style="success" %}
+如果您在此处选择**文件夹**，则导入文件中定义的任何文件夹在创建时都将嵌套在其中。
+{% endhint %}
 
 4、从**文件格式**下拉菜单中，选择[导入文件的格式](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -160,20 +172,23 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 Bitwarden 桌面 App 可以从这些浏览器导入密码，而无需手动导出文件：
 
 * Chrome
-* Edge
+* Edge（仅限 Windows 和 macOS）
 * Opera
 * Brave
-* Vivaldi
+* Vivaldi（仅限 Windows 和 macOS）
 
-此选项适用于从[下载页面](https://bitwarden.com/download/#downloads-desktop)安装的 Windows 和 Mac 桌面 App。直接导入方式不适用于 Linux 系统，也不适用于从 Mac App Store 或 Windows Microsoft Store 安装的桌面 App。
+此选项适用于从此[下载页面](https://bitwarden.com/download/#downloads-desktop)安装的 Windows 和 Mac 桌面 App。直接导入方式不适用于 Linux 系统，也不适用于从 Mac App Store 或 Windows Microsoft Store 安装的桌面 App。
 
 {% hint style="info" %}
-已知在 2025.11.0 及更高版本中，**直接从浏览器导入**选项在从 Chromium 浏览器存储中提取凭据时，会被某些 EDR 软件标记。如果在此过程中出现允许 App 更改您的设备的提示，请选择**是**，以继续完成导入。了解更多有关[直接导入器实现](https://github.com/bitwarden/clients/blob/main/apps/desktop/desktop_native/chromium_importer/README.md)的信息。
+已知在 2025.11.0 及更高版本中，**从浏览器直接导入**选项（具体来说是 `bitwarden_chromium_import_helper.exe` 进程）在尝试从浏览器存储中提取凭据时，可能会被某些 EDR 软件或 Windows 用户账户控制 (UAC) 标记。
+
+* **作为管理员**，您可以主动通过 UAC 或 EDR 软件将 `bitwarden_chromium_import_helper.exe` 设置为以管理员身份运行，以防止用户尝试导入时出现失败或警告。
+* **作为用户**，如果在此过程中出现允许 App 更改您的设备的提示，请选择**是**以继续导入。
 
 **\[译者注]**：EDR - Endpoint Detection and Response（终端威胁检测与响应）。EDR 是一种企业级安全软件，用来监控电脑（终端）上的可疑行为，并及时阻止或警告潜在的攻击。
 {% endhint %}
 
-要导入您的浏览器数据：
+要从浏览器导入您的数据：
 
 1、登录到 Bitwarden 桌面 App。
 
@@ -186,15 +201,15 @@ Bitwarden 桌面 App 可以从这些浏览器导入密码，而无需手动导�
 * **个人密码库**：选择**我的密码库**并（可选）选择移动项目到的**文件夹**。
 * **组织密码库**：选择组织密码库名称然后选择一个**集合**。(需要[**可以管理**](../../../admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)权限）。
 
-5、从**文件格式**下拉菜单中选择您的浏览器。下方将显示两个选项。
+5、从**文件格式**下拉菜单中选择您的浏览器。如果该浏览器兼容并安装在同一设备上，下方将显示两个选项。
 
-6、选择**直接从浏览器导入**：
+6、选择**从浏览器直接导入**：
 
 {% embed url="https://bitwarden.com/assets/1dZKYVPQpd1TVDcmUuwLq2/23e9b222768964108ade8c02e52134ee/Directly_import_with_Chromium.png?w=652&fm=avif" %}
 
 7、选择包含密码的**浏览器配置文件**。
 
-8、选择**导入数据**。
+8、选择**导入**。
 
 9、输入计算机密码以确认。
 

@@ -36,7 +36,7 @@ LastPass 导出
 
 4、如果您的密码库数据显示在屏幕上，全选显示的数据，将其复制并粘帖到一个新的 `export.csv` 文件中。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 一些用户报告了一个 bug：密码中的特殊字符（`&`、`<`、`>` 等）在导出时，被更改成了 HTML 编码的值（如，`&amp;`）。
 
 如果您在导出的数据中发现了这个 bug，请在导入 Bitwarden 之前，使用文本编辑器查找并替换所有被更改的值。
@@ -56,7 +56,7 @@ LastPass 导出
 
 根据您的浏览器，您的密码库数据将自动保存为 `.csv` 文件或以 `.csv` 格式显示在屏幕上：
 
-{% embed url="https://bitwarden.com/_gatsby/image/5d00d7966772b2eebd82f4eab311a41e/9c99d13d898028d2b23c9e80ec2865fe/lastpass-copy.webp?eu=dc8603e4e4ceaa810d3aa2823d23363ce43702f8ff053fd93561b1f946adc88775fa4f5571922eb37e3f538bdbe110bc33922b661dec84ddc8b84bf4e264ad5b51d60cbb63b17201032a96f7b4f10e453cc51259a3d69b59ab3e788ca1f7f733134f0372f52befd4afb76620e6d26c71bff2e5303b97ef67e75000078d4270aa6ce6d7d92c188ab7d247af94a7db7ac9cfb8514520defb7f557f1d000ebf2feff4ba50273928115960cef95dc1349eb16a1864255f5d02ff656fd853e4306080a0bbf01e9a6728bee8802f30d894&a=w%3D749%26h%3D320%26fm%3Dwebp%26q%3D75&cd=2022-08-31T14%3A01%3A10.043Z" %}
+{% embed url="https://bitwarden.com/assets/6TIRhpByBC4coLrP58zG8a/fb2da8df01a2e0f56e87f45612182e86/lastpass-copy.png?w=749&fm=avif" %}
 LastPass 导出
 {% endembed %}
 
@@ -69,12 +69,15 @@ LastPass 导出
 数据可以直接从 LastPass 导入，也可以使用 LastPass [导出的文件](import-data-from-lastpass.md#export-from-lastpass)导入。如果您是使用 LastPass SSO 的团队成员，LastPass 管理员将需要完成一个简短的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-data-from-lastpass.md#direct-import-with-sso)）。在所有情况下，数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
 
 {% hint style="info" %}
-请参阅这篇 [LastPass 支持文章](https://support.lastpass.com/help/export-your-passwords-and-secure-notes-lp040004)，了解 LastPass 支持和不支持哪些导出内容。请注意，Bitwarden 不支持导入附件。
+虽然某些项目类型无法导入，但您仍可将其添加到密码库：
+
+* 将[文件附件](../../your-vault/vault-items/file-attachments.md)单独上传到新的密码库。
+* 在新的密码库中重新创建 [Send](../../bitwarden-send/about-send.md)。
 {% endhint %}
 
 {% tabs %}
 {% tab title="直接导入" %}
-{% hint style="info" %}
+{% hint style="success" %}
 如果您是使用 LastPass SSO 的团队成员，LastPass 管理员需要先完成一个简单的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-data-from-lastpass.md#direct-import-with-sso)）。
 {% endhint %}
 
@@ -82,7 +85,7 @@ LastPass 导出
 
 1、登录到 Password Manager 浏览器扩展或桌面 App。
 
-2、在浏览器扩展中，选择**设置**选项卡，然后选择密码库然后选择**导入项目**选项。或者，在桌面 App 中，选择**文件** -> **导入数据**。
+2、在浏览器扩展中，选择**设置**选项卡，然后选择密码库然后选择**导入项目**选项。或者，在桌面 App 中，选择**文件** > **导入数据**。
 
 3、从下拉菜单中完成以下字段：
 
@@ -108,10 +111,10 @@ LastPass 导出
 
 1、通过 [https://vault.bitwarden.com](https://vault.bitwarden.com)，[https://vault.bitwarden.eu](https://vault.bitwarden.eu) 或自托管的 `https://your.bitwarden.domain.com` 登录到网页密码库。
 
-2、从导航选择**工具** → **导入数据**：
+2、从导航选择**工具** → **导入**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1NbyPb9dN545ZqKGRZYB3x/7ed2e5650e9988bf7595bccebe8a5114/2024-12-03_08-52-08.png?_a=DAJAUVWIZAAB" %}
-导入数据
+{% embed url="https://bitwarden.com/assets/1NbyPb9dN545ZqKGRZYB3x/e6b8f3f31aa82bb05cef12c5a5c4c193/2025-12-17_11-25-08.png?w=1156&fm=avif" %}
+导入项目
 {% endembed %}
 
 3、从下拉菜单中完成以下字段：
@@ -122,7 +125,7 @@ LastPass 导出
 
 4、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 导入时不会检查要导入的文件中的项目是否已存在于您的密码库中，因此多次导入文件或导入具有已存在于密码库中的项目的文件**将创建重复项目**。
 {% endhint %}
 
