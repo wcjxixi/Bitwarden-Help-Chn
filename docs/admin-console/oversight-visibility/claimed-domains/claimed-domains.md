@@ -1,4 +1,4 @@
-# 声明域名
+# =声明域名
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/domain-verification/)
@@ -6,15 +6,14 @@
 
 > **\[译者注]**：从版本 2025.3.0 开始，之前的「域名验证」(Domain verification) 已改名为「声明域名」(Claimed domains)
 
-企业客户可以声明其组织所拥有的域名（如 `mycompany.com`）的所有权。
-
-声明域名支持以下功能：
+企业客户可通过有效的 Bitwarden 专属 DNS TXT 记录为其组织声明域名（如 `mycompany.com`）的所有权。声明域名后，您的组织将获得对匹配电子邮箱地址的账户的额外控制权限：
 
 * **声明成员账户**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户也将被您的组织声明。被声明的成员账户在功能上归组织所有，会限制用户进行某些账户操作，并允许管理员直接删除账户，包括删除该用户的个人密码库，而不是仅将其从组织中移除。[了解更多](claimed-accounts.md)。
-* **为成员提供更便捷的 SSO**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户都将在 SSO 过程中自动绕过要求他们输入 [SSO 标识符](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#get-your-organization-identifier)的步骤。
-* **自动验证成员电子邮箱**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户在入职时就会[自动验证其电子邮箱](../../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)。
 
-域名可以通过有效且对 Bitwarden 唯一的 DNS TXT 记录来声明。
+
+
+* **更便捷的 SSO 流程**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户都将在 SSO 过程中自动绕过要求他们输入 [SSO 标识符](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#get-your-organization-identifier)的步骤。
+* **自动验证电子邮箱**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户在入职时就会[电子邮箱](../../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)[自动验证](../../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)。
 
 ## 声明域名 <a href="#claim-a-domain" id="claim-a-domain"></a>
 
@@ -25,7 +24,7 @@
 
 Bitwarden 将使用 DNS TXT 记录来验证域名声明。该 DNS TXT 记录必须始终保持激活状态并可用，因为 Bitwarden 将不断对其进行检查。
 
-要声明域名：
+要声明域名，请以[管理员或所有者](../../manage-members/member-roles.md#member-roles)身份完成以下步骤：：
 
 1、登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
 
@@ -57,31 +56,49 @@ Bitwarden 将使用 DNS TXT 记录来验证域名声明。该 DNS TXT 记录必�
 
 ## 管理您的域名 <a href="#managing-domains" id="managing-domains"></a>
 
-您可以从**声明域名**页面管理和查看您的域名的状态。
+您可以从**声明域名**页面管理和查看您的域名的状态。所有域名均拥有**已声明**或**未声明**状态：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1sgIhVJzsRce0VyNIvH1ze/9646e4b0d433efa53f5d1b29a43134df/image.png?_a=DAJCwlWIZAAB" %}
-已验证的域名
+{% embed url="https://bitwarden.com/assets/1sgIhVJzsRce0VyNIvH1ze/9ebaf423a88815e476bf2d81231fbf8e/2025-04-15_09-52-34.png?w=1200&fm=avif" %}
+声明域名
 {% endembed %}
 
-如果要编辑或删除域名，请选择域名或位于域名右侧的 **≡** 菜单。
+{% hint style="success" %}
+在 Bitwarden 中更新您已声明的域名之前，请使用 `dig` 命令验证您的 TXT 记录是否公开可见：
 
-**≡** 菜单提供了用于复制 DNS TXT 记录的附加选项，以及在新域名设置期间自动验证不成功时手动验证域名的选项。
+```bash
+dig your.domain.com TXT
+```
 
-域名具有 `UNVERIFIED` 或 `VERIFIED`（未验证或已验证）两种状态。
+**如果发现错误的 TXT 记录**，您的 DNS 更改可能需要更多时间来传播。**如果发现正确的 TXT 记录但声明仍然失败**，则您的 Bitwarden 服务器可能配置为使用内部 DNS 服务器，而不是进行更新的公共 DNS 服务器。
+{% endhint %}
+
+使用域名右侧的 **≡** 菜单以：
+
+* 编辑或删除域名。
+* 复制 **DNS TXT 记录**以将其提供给您的 DNS 提程序。
+* 如果自动声明不成功，可以手动**验证域名**。
 
 {% hint style="danger" %}
 Bitwarden 将在前 72 小时内尝试声明域名 3 次。如果该域名在第 3 次尝试后的 7 天内仍未通过验证，该域名将从您的组织中被移除。
 {% endhint %}
 
-域名设置活动将记录在组织事件日志中。要查看事件，请在管理控制台中导航到**报告** → **事件日志**。
+域名声明活动将记录在组织事件日志中。要查看事件，请在管理控制台中导航到**报告** → **事件日志**。
 
 ## 域名被声明后 <a href="#once-your-domain-is-claimed" id="once-your-domain-is-claimed"></a>
 
 您的域名被声明和验证后，您的组织就可以获得以下访问权限：
 
+### 为已声明的域名阻止账户创建 <a href="#block-account-creation-for-claimed-domains" id="block-account-creation-for-claimed-domains"></a>
+
+启用[此策略](../enterprise-policies.md#block-account-creation-for-claimed-domains)可阻止域名匹配的电子邮箱账户（例如 `jdoe@mycompany.com`）在组织外部创建 Bitwarden 账户。启用此策略后，域名匹配的电子邮箱账只能通过受邀加入组织的方式创建 Bitwarden 账户。
+
 ### 声明成员账户 <a href="#claimed-member-accounts" id="claimed-member-accounts"></a>
 
 当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户也将被您的组织声明。被声明的成员账户在功能上归组织所有，这会导致账户的工作方式发生一些关键性的变化：
+
+{% hint style="info" %}
+用户必须拥有一个匹配的域名**并且**是您的 Bitwarden 组织的[已确认的成员](../../manage-members/user-management.md#confirm)才能被视为已声明的账户。声明域名**不会**自动邀请任何用户，因此本身不会增加您的订阅席位数量。
+{% endhint %}
 
 #### 删除组织管理的账户 <a href="#org-managed-account-deletion" id="org-managed-account-deletion"></a>
 
@@ -97,7 +114,7 @@ Bitwarden 将在前 72 小时内尝试声明域名 3 次。如果该域名在第
 Directory Connector 和 SCIM 无法删除已声明账户，只有管理员和所有者可以通过网页 App 管理控制台执行此操作。
 {% endhint %}
 
-#### 限制账户操作 <a href="#restricted-access-to-account-actions" id="restricted-access-to-account-actions"></a>
+#### 限制账户操作权限 <a href="#restricted-access-to-account-actions" id="restricted-access-to-account-actions"></a>
 
 成员账户用户将受到以下限制：
 
@@ -106,6 +123,3 @@ Directory Connector 和 SCIM 无法删除已声明账户，只有管理员和所
 * 清空他们的密码库。
 * 删除他们的账户。
 
-### 为成员提供更便捷的 SSO <a href="#easier-sso-for-members" id="easier-sso-for-members"></a>
-
-当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户都将在 SSO 过程中自动绕过要求他们输入 [SSO 标识符](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#get-your-organization-identifier)的步骤。

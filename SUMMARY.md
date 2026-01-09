@@ -230,7 +230,7 @@
       * [事件日志](docs/admin-console/oversight-visibility/event-logging/event-logs.md)
       * [监控事件日志](docs/admin-console/oversight-visibility/event-logging/monitoring-event-logs.md)
     * [声明域名](docs/admin-console/oversight-visibility/claimed-domains/README.md)
-      * [声明域名](docs/admin-console/oversight-visibility/claimed-domains/claimed-domains.md)
+      * [=声明域名](docs/admin-console/oversight-visibility/claimed-domains/claimed-domains.md)
       * [声明账户](docs/admin-console/oversight-visibility/claimed-domains/claimed-accounts.md)
     * [Access Intelligence](docs/admin-console/oversight-visibility/access-intelligence.md)
     * [企业策略](docs/admin-console/oversight-visibility/enterprise-policies.md)
