@@ -243,14 +243,14 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前先设置好企业�
 为允许的应用程序自动登录用户
 {% endembed %}
 
-2、作为 IdP 的管理员，在终端用户控制面板上添加一个应用程序或 App 快捷方式，其中包含目标 URL，并添加参数 `?autofill=1`。 例如，假如使用 Microsoft Azure：
+2、作为 IdP 的管理员，在终端用户控制面板上添加一个应用程序或 App 快捷方式，其中包含具有附加参数 `?autofill=1` 的目标 URL。
 
 {% embed url="https://bitwarden.com/assets/33zjaF3nEYtBB3JaVjBGmS/ab61ee2d6551d5d5bab70319ca64951e/2024-09-24_10-39-55.png?w=538&fm=avif" %}
 Microsoft App 示例
 {% endembed %}
 
-3、保存应用程序后，用户可从 IdP 面板上选择应用程序，Bitwarden 将自动填充并登录应用程序。
+3、保存应用程序后，用户可以从 IdP 面板上选择应用程序，然后 Bitwarden 将自动填充并登录应用程序。
 
 {% hint style="info" %}
-**使用 SSO 自动登录**将根据用户当前在 Bitwarden 浏览器扩展上的活动账户自动填充数据。此外，自动填充的数据将是用户最近使用的与目标应用程序 URL 相关联的凭证。
+**使用 SSO 自动登录**将根据用户当前在 Bitwarden 浏览器扩展上的活动账户自动填充数据。此外，自动填充的数据将是用户最近使用的与目标应用程序 URL 相关联的凭据。
 {% endhint %}
