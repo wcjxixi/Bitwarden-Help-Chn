@@ -80,36 +80,30 @@
 
 ### 更新组织许可证 <a href="#update-organization-license" id="update-organization-license"></a>
 
-例如当添加用户席位或当您的许可证到期时，组织需要更新其自托管服务器上的许可证文件。当您的许可证到期以及您的组织续订时，您有 60 天的时间将已更新的许可证文件应用到您的自托管组织。
+在几种不同的情况下，组织需要更新其自托管服务器使用的许可证文件，例如：
 
-有两种方法可以这样操作，但是**家庭组织只能手动更新**：
+* 要**添加用户席位**到自托管组织。自托管组织的席位数由许可证决定，因此要添加席位，必须首先将其添加到关联的云组织，然后必须更新自托管组织使用的许可证。
+* 要**在许可证续订后**继续运营自托管组织。自续订之日起，您有 60 天的时间将许可证文件更新到您的自托管服务器，否则您的自托管[组织将被禁用](../plans-and-pricing/organization-renewal.md)。
+
+有两种方法可以更新自托管组织的许可证，但是**家庭组织只能手动更新**：
 
 {% tabs %}
 {% tab title="自动同步" %}
-自动计费同步用于解锁家庭赞助（仅适用于企业）和简化许可证更新，管理员无需手动重新上传许可证，例如在组织续订的情况下。
-
-{% hint style="success" %}
 自动同步：
 
-* 组织管理员无需手动重新上传许可证。设置完成后，管理员只需在需要更新自托管组织使用的许可证时（例如，当席位数量发生变化或需要续订时）从**组织** → **计费**触发同步。
+* 组织管理员无需手动重新上传许可证。设置完成后，管理员只需在需要更新自托管组织使用的许可证时从**组织** → **计费**触发同步。
 * 使[家庭赞助](../plans-and-pricing/password-manager/families-for-enterprise.md)计划对自托管组织的成员成为可能。此类赞助的同步每天会自动进行。
-{% endhint %}
+* 仍在免费试用期内的组织无法设置此功能。
 
 要设置自动同步：
 
-{% hint style="info" %}
-要成功设置自动计费同步，需要有一个有效的订阅许可证。如果自托管组织是由仍处于试用期的云托管设置设置的，则必须下载许可证，然后在试用期结束后应用到自托管组织。[此处](../plans-and-pricing/password-manager/about-bitwarden-plans.md)了解更多有关付费订阅的信息。
-{% endhint %}
-
 ### 第 1 步：启用云端通信 <a href="#step-1-enable-cloud-communication" id="step-1-enable-cloud-communication"></a>
 
-首先，您需要配置您的服务器以允许与我们的云端系统进行通信。
-
 {% hint style="info" %}
-此步骤必须由有权访问您的自托管实例的配置文件的人员完成。
+此步骤必须由对您的自托管实例的配置文件具有访问权限的人员完成。
 {% endhint %}
 
-要启用云端通信，请将 `bwdata/env/global.override.env` 中的以下行设置为 `true`：
+首先，将 `bwdata/env/global.override.env` 中的以下行设置为 `true`，以将您的服务器配置为允许与 Bitwarden 云系统通信：
 
 ```systemd
 globalSettings__enableCloudCommunication=true
@@ -125,25 +119,19 @@ globalSettings__enableCloudCommunication=true
 
 在服务器层面启用云端通信后，需要将同步令牌从用于计费的云端组织传递到您的自托管组织。要从云端 App 获取您的同步令牌：
 
-1、登录到 Bitwarden 网页 App ，使用产品切换器打开管理控制台：
+1、打开**云端**管理控制台，然后导航到**计费** → **订阅**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
-{% endembed %}
+2、在「自托管」部分，选择**设置计费同步**。
 
-2、导航到**计费** → **订阅**。
+3、输入主密码然后选择**生成令牌**。
 
-3、向下滚动到「自托管」部分，选择**设置计费同步**按钮。
-
-4、输入主密码然后选择**生成令牌**。
-
-5、复制生成的令牌。
+4、复制生成的令牌。
 
 ### 第 3 步：应用计费同步令牌 <a href="#step-3-apply-billing-sync-token" id="step-3-apply-billing-sync-token"></a>
 
 要将计费同步令牌应用到您的自托管组织：
 
-1、打开管理控制台，导航到**计费** → **订阅**。
+1、打开**自托管**管理控制台，然后导航到**计费** → **订阅**。
 
 2、在「许可证和计费管理」部分，选择**自动同步**选项。
 
@@ -161,10 +149,8 @@ globalSettings__enableCloudCommunication=true
 
 完成设置后以及**每次需要更新许可证时**都需要触发同步。企业版家庭将**每天**同步一次。要触发同步：
 
-1. 打开自托管管理控制台并导航至**组织** → **计费**。
+1. 打开**自托管**管理控制台，然后导航到**组织** → **计费**。
 2. 选择**同步许可证**按钮。
-
-完成设置后请触发同步。计费同步将**每天**进行一次，但您也可以随时手动触发同步。要触发同步：
 
 {% hint style="info" %}
 如果您收到一条 `version not supported`（版本不支持）的错误消息，请更新您的服务器并尝试再次上传您的许可证文件。要更新您的服务器，请备份 `bwdata` 目录，然后按照[这些说明](https://help.ppgg.in/self-hosting/update-your-instance)进行操作。

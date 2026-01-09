@@ -36,6 +36,10 @@ docker exec -i bitwarden-mssql /backup-db.sh
 
 只要容器正在运行，Bitwarden 会自动对 `mssql` 容器数据库进行夜间备份。备份保存在 `./bwdata/mssql/backups` 目录中并将保留 30 天。
 
+{% hint style="info" %}
+[Bitwarden Lite](deploy-and-configure/docker/lite-deployment.md) 不会进行每日备份。使用 Lite 版本，您需要自行管理备份流程。
+{% endhint %}
+
 ### 恢复数据库备份 <a href="#restore-a-database-backup" id="restore-a-database-backup"></a>
 
 如果发生数据丢失，您可以使用 `./bwdata/mssql/backups` 来恢复夜间备份。请完成以下步骤来恢复夜间备份：
@@ -58,7 +62,7 @@ docker exec -it bitwarden-mssql /bin/bash
 容器中的备份目录是从主机目录进行卷映射的。主机上的 `./bwdata/mssql/backups` 映射到容器中的 `etc/bitwarden/mssql/backups`。
 {% endhint %}
 
-例如，文件 `/etc/bitwarden/mssql/backups/vault_FULL_20201208_003243.BAK` 是 2020 年 12 月 8 日上午12:32 生成的备份。
+例如，文件 `/etc/bitwarden/mssql/backups/vault_FULL_20201208_003243.BAK` 是 2020 年 12 月 8 日上午 00:32 生成的备份。
 
 5、使用以下命令启动 `sqlcmd` 实用程序：
 
