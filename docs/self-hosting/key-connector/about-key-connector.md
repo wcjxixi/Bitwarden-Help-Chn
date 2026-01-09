@@ -42,7 +42,7 @@ Key Connector 架构
 
 Key Connector 要求用户[移除他们的主密码](about-key-connector.md#impact-on-master-passwords)，改用使用公司拥有的加密密钥数据库来解密用户的密码库。由于无法为已移除主密码的账户重新创建主密码，这意味着，一旦账户使用 Key Connector 解密，就所有的意图和目的而言，都**属于组织所有**。
 
-这些账户**不能离开组织**，因为这样做他们将失去任何解密密码库数据的方法。同样，如果组织管理员从组织中移除账户，该账户将失去任何解密密码库数据的方法。
+这些账户**不得退出组织**，因为这样做他们将失去任何解密密码库数据的方法。同样，如果组织管理员从组织中移除账户，该账户将失去任何解密密码库数据的方法。
 
 ### 使用 Key Connector 登录 <a href="#log-in-using-key-connector" id="log-in-using-key-connector"></a>
 
