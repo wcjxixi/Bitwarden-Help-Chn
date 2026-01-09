@@ -254,3 +254,6 @@ Microsoft App 示例
 {% hint style="info" %}
 **使用 SSO 自动登录**将根据用户当前在 Bitwarden 浏览器扩展上的活动账户自动填充数据。此外，自动填充的数据将是用户最近使用的与目标应用程序 URL 相关联的凭据。
 {% endhint %}
+
+### 阻止已声明域名的账户创建 <a href="#block-account-creation-for-claimed-domains" id="block-account-creation-for-claimed-domains"></a>
+

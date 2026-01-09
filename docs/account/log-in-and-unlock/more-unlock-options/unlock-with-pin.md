@@ -5,10 +5,10 @@
 {% endhint %}
 
 {% hint style="info" %}
-如果您是企业组织的成员，[策略](../../../admin-console/oversight-visibility/enterprise-policies.md#remove-unlock-with-pin)可能会禁止您使用 PIN 码解锁。
+如果您是企业组织的成员，某个[策略](../../../admin-console/oversight-visibility/enterprise-policies.md#remove-unlock-with-pin)可能会禁止您使用 PIN 码解锁。
 {% endhint %}
 
-Bitwarden 密码管理器移动 App、浏览器扩展和桌面 App 可以使用 PIN 码解锁。重要的是，**解锁**与**登录** Password Manager 是有区别的。
+Bitwarden Password Manager 移动 App、浏览器扩展和桌面 App 可以使用 PIN 码解锁。重要的是，**解锁**与**登录** Password Manager 是有区别的。
 
 登录时，您仍需要使用指定的登录方式（例如[主密码](../your-master-password.md)或[受信任设备](../using-single-sign-on/add-a-trusted-device.md)）和任何有效的[两步登录方式](../../two-step-login/setup-two-step-login/two-step-login-methods.md)。登录后，您可以自由使用 PIN 码来解锁 App。更多信息，请参阅[理解登录与解锁](../understand-log-in-vs-unlock.md)一文。
 
@@ -46,7 +46,7 @@ Bitwarden 密码管理器移动 App、浏览器扩展和桌面 App 可以使用 
 {% endhint %}
 
 {% hint style="danger" %}
-使用 PIN 码时，您将在 5 次尝试输入 PIN 码失败后自动注销。
+使用 PIN 码时，您将在 **5** 次尝试输入 PIN 码失败后自动注销。
 {% endhint %}
 {% endtab %}
 
@@ -74,7 +74,7 @@ Bitwarden 密码管理器移动 App、浏览器扩展和桌面 App 可以使用 
 * 如果您希望在 Password Manager 从关闭状态启动时能够使用您的 PIN 码，请选择**否**。
 
 {% hint style="danger" %}
-使用 PIN 码时，您将在 5 次尝试输入 PIN 码失败后自动注销。
+使用 PIN 码时，您将在 **5** 次尝试输入 PIN 码失败后自动注销。
 {% endhint %}
 {% endtab %}
 
@@ -103,7 +103,7 @@ Bitwarden 密码管理器移动 App、浏览器扩展和桌面 App 可以使用 
 {% endhint %}
 
 {% hint style="danger" %}
-使用 PIN 码时，您将在 5 次尝试输入 PIN 码失败后自动注销。
+使用 PIN 码时，您将在 **5** 次尝试输入 PIN 码失败后自动注销。
 {% endhint %}
 {% endtab %}
 {% endtabs %}

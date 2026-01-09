@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-高级用户和付费组织成员可使用文件附件功能。这些付费用户拥有 1GB 加密存储空间用于存储文件附件。也可按 1GB 的增量购买[更多存储空间](file-attachments.md#add-storage-space)。
+高级用户和付费[组织](../../../admin-console/organizations-overview.md)成员可使用文件附件功能。这些付费用户拥有 1GB 加密存储空间用于存储文件附件。也可按 1GB 的增量购买[更多存储空间](file-attachments.md#add-storage-space)。
 {% endhint %}
 
 可通过任何 Bitwarden App 将文件附加到密码库项目。单个文件附件不能大于 500 MB（从移动 App 上传是 100 MB）。附件在本地进行加密和解密，这意味着未加密的附件数据不会通过互联网传输或由服务器存储。
@@ -78,7 +78,7 @@
 bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 ```
 
-更多详情，请参阅 Bitwarden [CLI ](../../developer-tools/cli/password-manager-cli.md)
+更多详情，请参阅 Bitwarden [CLI 文档](../../developer-tools/cli/password-manager-cli.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -124,7 +124,7 @@ bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --output /Users/myaccount/Pictures/
 ```
 
-更多详情，请参阅 Bitwarden [CLI 文档](../../developer-tools/cli/password-manager-cli.md)。
+更多详情，请参阅 Bitwarden [CLI 文档](../../developer-tools/cli/password-manager-cli.md#get-attachment)。
 {% endtab %}
 {% endtabs %}
 
@@ -136,15 +136,15 @@ bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --outp
 {% tab title="网页 App" %}
 要从网页 App 导出附件：
 
-1、从导航中选择**工具** → **导出密码库**：
+1、从导航中选择**工具** → **导出**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5PUGzasNsQnABG9gtso4o3/9be00b37afafd779c20fd9624dd9512d/2024-12-03_08-59-25.png" %}
-导出个人密码库
+{% embed url="https://bitwarden.com/assets/5PUGzasNsQnABG9gtso4o3/4e4880193ff45c22f0474c129e68e4e3/2025-12-17_11-43-59.png?w=1156&fm=avif" %}
+导出项目
 {% endembed %}
 
 2、从**文件格式**下拉菜单中选择 `.zip (with attachments)`。目前，只能从个人密码库中导出附件。
 
-3、选择**确认格式**，然后选择**导出密码库**按钮以完成。您需要使用主密码或电子邮件验证码确认您的权限。
+3、选择**导出**。您需要使用主密码或电子邮件验证码确认您的权限以执行此操作。。
 
 导出文件将被发送到您的「下载」文件夹或网络浏览器设置为下载文件的位置。
 {% endtab %}
@@ -154,7 +154,7 @@ bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --outp
 
 1、打开**设置**选项卡。
 
-2、选择**密码库选项**，然后选择**导出密码库**：
+2、选择**密码库选项**，然后选择**导出密码库**。
 
 3、从**文件格式**下拉菜单中选择 `.zip (with attachments)`。目前，只能从个人密码库中导出附件。
 
@@ -248,7 +248,7 @@ bw delete attachment 7063feab-4b10-472e-b64c-785e2b870b92
 
 2、在「存储」部分，选择**添加存储**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/113yhHwt2fIgkjWjmPgCa4/868beec72cf9e007512178cc82b325a5/2024-12-02_15-26-55.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/113yhHwt2fIgkjWjmPgCa4/f3df4d33206d35873c92266a546a9ed6/Add_storage_to_individual_vault.png?w=1200&fm=avif" %}
 为个人密码库添加存储空间
 {% endembed %}
 

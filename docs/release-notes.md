@@ -23,6 +23,22 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（浏览�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2025.12.2
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.12.2、浏览器扩展 2025.12.1、移动端 2025.12.1、桌面端 2025.12.1、CLI 2025.12.1）
+
+### Password Manager
+
+* **订阅存储空间增加**：高级订阅和付费组织现在将提供 5GB 的[附件](password-manager/your-vault/vault-items/file-attachments.md)和 [Send](password-manager/bitwarden-send/about-send.md) 存储空间。
+* **Windows 便携式桌面 App**：Windows 便携式桌面应用程序的一个问题已修复，更新至此版本后将自动注销用户。重新登录后，Windows 便携式桌面 App 将恢复正常运行。
+* **更新旧版客户端的 PIN 码**：将 Bitwarden 客户端从 2025.9.0 或更早版本更新到此版本后，用户需要重新设置 PIN 码才能继续[使用 PIN 码解锁](account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md)功能。PIN 码本身的要求未作任何变更。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **阻止已声明域名的账户创建策略**：此新的策略允许管理员阻止使用与您[已声明域名](admin-console/oversight-visibility/claimed-domains/claimed-domains.md)匹配的电子邮箱地址的用户在组织外部创建 Bitwarden 账户。
+* **优化批量重新邀请**：管理控制台批量重新发送组织邀请的功能已从之前的每次操作限制为 500 个邀请，现在支持每次操作最多 8,000 个邀请。
+* **会话超时策略**：您现在可以在[会话超时企业策略](admin-console/oversight-visibility/enterprise-policies.md#session-timeout)中选择更多选项：系统锁定时、App 重启时和永不超时。选择后，所有这些新的超时选项将应用于所有 Bitwarden 客户端。
+
 ## 2025.12.1
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.12.1）
