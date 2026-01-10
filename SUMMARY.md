@@ -12,7 +12,7 @@
   * [登录 & 解锁](docs/account/log-in-and-unlock/README.md)
     * [主密码](docs/account/log-in-and-unlock/your-master-password.md)
     * [忘记主密码](docs/account/log-in-and-unlock/i-forgot-my-master-password.md)
-    * [=自动注销或锁定](docs/account/log-in-and-unlock/vault-timeout-options.md)
+    * [自动注销或锁定](docs/account/log-in-and-unlock/vault-timeout-options.md)
     * [理解登录与解锁](docs/account/log-in-and-unlock/understand-log-in-vs-unlock.md)
     * [新设备登录保护](docs/account/log-in-and-unlock/new-device-protection.md)
     * [使用单点登录](docs/account/log-in-and-unlock/using-single-sign-on/README.md)

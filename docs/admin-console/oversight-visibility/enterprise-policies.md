@@ -203,13 +203,20 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前先设置好企业�
   * **系统锁定时**：当设备锁定或屏幕保护程序激活时（仅限浏览器扩展和桌面 App）
   * **App 重启时**：当 Bitwarden App 关闭然后重新打开时
   * **从不**：不设置最大会话持续时间
-* 从**会话超时操作**下拉菜单中，选择会话结束后发生的行为。您可以指定[**锁定**或**注销**](../../account/log-in-and-unlock/vault-timeout-options.md#vault-timeout-action)，或选择**用户首选项**以让成员在其账户设置中进行选择。
 
-{% hint style="info" %}
-[版本 2025.11.0](../../release-notes.md#id-2025.11.0) 中添加了新的超时选项，以下超时选项目前仅在 Android App 中被支持：**系统锁定时**、**App 重新启动时**和**从不**。在以后的版本中，更多客户端将支持这些超时选项。
+{% hint style="danger" %}
+**从不**超时选项会将未加密的加密密钥存储在您的设备上，这可能会影响安全性。为了确保您的数据安全，我们强烈建议您选择其他选项。
 {% endhint %}
 
+* 从**会话超时操作**下拉菜单中，选择会话结束后发生的行为。您可以指定[锁定或注销](../../account/log-in-and-unlock/vault-timeout-options.md#session-timeout-action)，或选择**用户首选项**以让成员在其账户设置中进行选择。
 
+{% hint style="success" %}
+如果您的组织使用[受信任的设备](../login-with-sso/trusted-devices/about-trusted-devices.md)，请考虑选择**注销**。会话超时后，成员无需主密码即可通过受信任设备上的 SSO 访问其密码库。
+{% endhint %}
+
+{% hint style="info" %}
+[~~版本 2025.11.0~~](../../release-notes.md#id-2025.11.0) ~~中添加了新的超时选项，以下超时选项目前仅在 Android App 中被支持：**系统锁定时**、**App 重新启动时**和**从不**。在以后的版本中，更多客户端将支持这些超时选项。~~
+{% endhint %}
 
 {% hint style="info" %}
 在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
@@ -259,3 +266,8 @@ Microsoft App 示例
 
 ### 阻止已声明域名的账户创建 <a href="#block-account-creation-for-claimed-domains" id="block-account-creation-for-claimed-domains"></a>
 
+{% hint style="info" %}
+在激活此策略之前，必须先[声明域名](claimed-domains/claimed-domains.md)。
+{% endhint %}
+
+启用**阻止已声明域名的账户创建**策略，可以阻止具有与您[声明的域名](claimed-domains/claimed-domains.md)匹配的电子邮箱地址的人员在组织外部创建 Bitwarden 账户。启用此策略后，与您声明的域相匹配的电子邮箱地址只能通过受邀加入您的组织的方式或[使用 SSO 进行 JIT 配置](../login-with-sso/jit-provisioning.md)的方式创建 Bitwarden 账户。
