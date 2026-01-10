@@ -8,11 +8,13 @@
 删除账户是永久性的，无法撤消或恢复。要创建密码库数据的备份以将其存储在安全位置，请[导出密码库数据](../../../password-manager/import-and-export/export-vault-data.md)。
 {% endhint %}
 
-根据您组织的设置，您可以删除成员账户。删除账户与移除用户不同。
+根据您组织的设置，您可以删除成员账户。删除账户与移除用户不一样。
 
 ## 删除账户 <a href="#delete-an-account" id="delete-an-account"></a>
 
-1、如果您有一个[已声明的域名](../../oversight-visibility/claimed-domains/claimed-domains.md)，那么任何账户电子邮箱地址与域名相匹配（例如：`jdoe@mycompany.com`）的用户都可以被组织管理员直接删除，而不是只能[从组织中移除](permanently-remove-access.md)：
+您可以使用以下方法之一删除成员账户：
+
+1、如果您有一个[已声明的域名](../../oversight-visibility/claimed-domains/claimed-domains.md)，那么任何账户电子邮箱地址与域名（例如：`jdoe@mycompany.com`）相匹配的用户都可以被组织管理员直接删除：
 
 {% embed url="https://bitwarden.com/assets/6HUnGTfMstF4IasZcKBfdi/0d2dbd328ba4a006611576e7d91c70df/2025-01-14_10-45-56.png?w=1117&fm=avif&q=80" %}
 删除已声明的账户

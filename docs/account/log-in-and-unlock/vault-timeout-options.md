@@ -1,4 +1,4 @@
-# 自动注销或锁定
+# =自动注销或锁定
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/vault-timeout/)
@@ -62,7 +62,7 @@
 
 **4、如果您的设备设置了使用屏幕保护程序**，您的浏览器扩展将把激活屏幕保护程序理解为系统锁定，如果选择了**系统锁定时**选项，则会超时。
 
-## 密码库超时动作 <a href="#vault-timeout-action" id="vault-timeout-action"></a>
+## 会话超时动作 <a href="#session-timeout-action" id="session-timeout-action"></a>
 
 此选项决定了 Bitwarden 在达到[密码库超时](vault-timeout-options.md#vault-timeout)[时间](vault-timeout-options.md#vault-timeout)后将执行的操作。选项包括：
 

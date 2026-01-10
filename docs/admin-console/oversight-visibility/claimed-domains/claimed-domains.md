@@ -1,4 +1,4 @@
-# =声明域名
+# 声明域名
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/domain-verification/)
@@ -8,12 +8,13 @@
 
 企业客户可通过有效的 Bitwarden 专属 DNS TXT 记录为其组织声明域名（如 `mycompany.com`）的所有权。声明域名后，您的组织将获得对匹配电子邮箱地址的账户的额外控制权限：
 
-* **声明成员账户**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户也将被您的组织声明。被声明的成员账户在功能上归组织所有，会限制用户进行某些账户操作，并允许管理员直接删除账户，包括删除该用户的个人密码库，而不是仅将其从组织中移除。[了解更多](claimed-accounts.md)。
+* **阻止非预期账户创建策略**：[启用此策略](../enterprise-policies.md#block-account-creation-for-claimed-domains)可阻止具有与域名匹配的电子邮箱账户（例如 `jdoe@mycompany.com`）在组织外部创建 Bitwarden 账户。此策略启用后，具有与域名匹配的电子邮箱账户只能通过受邀加入组织的方式创建 Bitwarden 账户。
+* **声明成员账户**：使用与域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）入职的组织成员账户将自动[被组织声明](claimed-accounts.md)，会限制用户进行某些账户操作，并允许管理员直接[删除账户](../../manage-members/revoke-remove/delete-member-accounts.md)，而不是仅将其从组织中移除。
 
+使用与域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）入职的组织成员账户（称为[已声明账户](claimed-accounts.md)）还将获得以下好处：
 
-
-* **更便捷的 SSO 流程**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户都将在 SSO 过程中自动绕过要求他们输入 [SSO 标识符](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#get-your-organization-identifier)的步骤。
-* **自动验证电子邮箱**：当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户在入职时就会[电子邮箱](../../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)[自动验证](../../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)。
+* **更便捷的 SSO 流程**：在 SSO 身份验证期间，这些成员将自动跳过要求他们输入 [SSO 标识符](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#get-your-organization-identifier)的步骤。
+* **自动验证电子邮箱**：入职时这些成员的[电子邮箱将自动验证](../../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)。
 
 ## 声明域名 <a href="#claim-a-domain" id="claim-a-domain"></a>
 
@@ -94,7 +95,7 @@ Bitwarden 将在前 72 小时内尝试声明域名 3 次。如果该域名在第
 
 ### 声明成员账户 <a href="#claimed-member-accounts" id="claimed-member-accounts"></a>
 
-当您声明一个域名时，具有与此域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）的所有组织成员账户也将被您的组织声明。被声明的成员账户在功能上归组织所有，这会导致账户的工作方式发生一些关键性的变化：
+使用与域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）入职的组织成员账户将自动[被组织声明](claimed-accounts.md)，这会导致账户的工作方式发生一些关键性的变化：
 
 {% hint style="info" %}
 用户必须拥有一个匹配的域名**并且**是您的 Bitwarden 组织的[已确认的成员](../../manage-members/user-management.md#confirm)才能被视为已声明的账户。声明域名**不会**自动邀请任何用户，因此本身不会增加您的订阅席位数量。
