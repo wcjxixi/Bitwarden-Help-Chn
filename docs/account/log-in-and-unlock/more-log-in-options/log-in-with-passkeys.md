@@ -16,7 +16,7 @@ Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.
 * 使用了[要求 SSO](../../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication) 策略的组织成员无法使用[受信任设备 SSO](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 * 绕过 Bitwarden 的两步登录。
 
-要了解更多有关通行密钥的基础知识，请查看 [Bitwarden 的这篇博客](https://bitwarden.com/blog/log-into-bitwarden-with-a-passkey/)。
+要了解更多有关通行密钥的基础知识，请查看 [来自 Bitwarden 的这篇博客](https://bitwarden.com/blog/log-into-bitwarden-with-a-passkey/)。
 
 ## 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
 
