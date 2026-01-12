@@ -95,4 +95,4 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 #### 问：如果我们迁移了企业版方案，我已赞助的家庭版方案会发生什么情况？ <a href="#q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan" id="q-what-happens-to-my-sponsored-families-plan-if-we-migrate-our-enterprise-plan"></a>
 
-**答**：企业员工的免费家庭版方案必须与赞助方案位于同一区域。如果您的企业版方案迁移到其他地区，您的家庭版方案赞助将终止。您需要迁移家庭版方案，然后按照[兑换家庭赞助](../plans-and-pricing/password-manager/families-for-enterprise.md)文章中的步骤赞助新方案。
+**答**：企业员工的免费家庭版方案必须与赞助方案位于同一区域。如果您的企业版方案迁移到其他地区，您的家庭版方案赞助将终止。您需要迁移家庭版方案，然后按照[兑换家庭赞助](../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)文章中的步骤赞助新方案。

@@ -92,7 +92,7 @@
 自动同步：
 
 * 组织管理员无需手动重新上传许可证。设置完成后，管理员只需在需要更新自托管组织使用的许可证时从**组织** → **计费**触发同步。
-* 使[家庭赞助](../plans-and-pricing/password-manager/families-for-enterprise.md)计划对自托管组织的成员成为可能。此类赞助的同步每天会自动进行。
+* 使[家庭赞助](../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)计划对自托管组织的成员成为可能。此类赞助的同步每天会自动进行。
 * 仍在免费试用期内的组织无法设置此功能。
 
 要设置自动同步：

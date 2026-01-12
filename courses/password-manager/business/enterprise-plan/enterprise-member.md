@@ -94,7 +94,7 @@ Password Manager 网页 App
 
 {% embed url="https://vimeo.com/828094070?fl=pl&fe=cm" %}
 
-您的组织可能会提供[免费的 Bitwarden 家庭方案](../../../../docs/plans-and-pricing/password-manager/families-for-enterprise.md)（独立于工作账户）来保护个人密码并与最多 5 人共享，从而提供全天候安全保障。
+您的组织可能会提供[免费的 Bitwarden 家庭方案](../../../../docs/admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)（独立于工作账户）来保护个人密码并与最多 5 人共享，从而提供全天候安全保障。
 
 * **00:14**：数据安全 & 免费方案
 * **00:35**：兑换 & 制定方案

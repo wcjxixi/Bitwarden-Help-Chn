@@ -54,9 +54,9 @@
 | ---------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 您已被确认加入 {Organization} | {Organization} = 您组织的显示名称 | 当其组织访问权限被确认时，用户会收到此电子邮件。                                                                                                                                    |
 | 请求访问 Secrets Manager   | n/a                       | 当有用户请求访问 [Secrets Manager](../../secrets-manager/secrets-manager-overview.md) 时，管理员或所有者会收到此电子邮件。                                                            |
-| 接受您的免费家庭订阅             | n/a                       | 当组织的成员被邀请[创建一个赞助的家庭组织](../../admin-console/more/organization-sponsored-families-plans.md)时，用户会收到此电子邮件。                                                      |
-| 成功！已接受家庭订阅             | n/a                       | 当其已兑换[创建赞助的家庭组织](../../admin-console/more/organization-sponsored-families-plans.md)的邀请时，用户会收到此电子邮件。                                                         |
-| 您的家庭赞助已被移除             | n/a                       | 当其已手动移除[家庭组织的赞助](../../admin-console/more/organization-sponsored-families-plans.md)时，用户会收到此电子邮件。                                                            |
+| 接受您的免费家庭订阅             | n/a                       | 当组织的成员被邀请[创建一个赞助的家庭组织](../../admin-console/manage-members/sponsored-families/sponsored-families-for-non-members.md)时，用户会收到此电子邮件。                            |
+| 成功！已接受家庭订阅             | n/a                       | 当其已兑换[创建赞助的家庭组织](../../admin-console/manage-members/sponsored-families/sponsored-families-for-non-members.md)的邀请时，用户会收到此电子邮件。                               |
+| 您的家庭赞助已被移除             | n/a                       | 当其已手动移除[家庭组织的赞助](../../admin-console/manage-members/sponsored-families/sponsored-families-for-non-members.md)时，用户会收到此电子邮件。                                  |
 | 移除免费 Bitwarden 家庭计划    | n/a                       | 当[家庭组织的赞助被管理员移除时（通常是通过激活了某个策略后被移除）](../../admin-console/oversight-visibility/enterprise-policies.md#remove-free-bitwarden-families-sponsorship)，用户会收到此电子邮件。 |
 
 ## 提供商 & 业务单元电子邮件 <a href="#provider-and-business-unit-emails" id="provider-and-business-unit-emails"></a>

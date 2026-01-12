@@ -76,7 +76,7 @@
 | 功能                                                                                                               | 经典 2019        | 当前 (2020-)     |
 | ---------------------------------------------------------------------------------------------------------------- | -------------- | -------------- |
 | <p>预先存在的企业功能，包括：<br><br>- 所有用户的高级功能<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 目录连接器<br>- 企业策略</p>                     | **✔︎**         | **✔︎**         |
-| [企业版家庭](password-manager/families-for-enterprise.md)                                                             | **✔︎**         | **✔︎**         |
+| [企业版家庭](../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)                    | **✔︎**         | **✔︎**         |
 | [SSO 登录](../admin-console/login-with-sso/about-sso.md)                                                           | -              | **✔︎**         |
 | <p><a href="../self-hosting/key-connector/about-key-connector.md">Key Connector</a><br>（<em>适用于客户管理的加密</em>）</p> | -              | **✔︎**         |
 | [账户恢复管理](../admin-console/manage-members/account-recovery/about-account-recovery.md)                             | -              | **✔︎**         |

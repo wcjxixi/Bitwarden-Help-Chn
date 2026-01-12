@@ -92,39 +92,39 @@ Bitwarden 商业方案旨在满足小型团队、成长型公司和大型企业�
 
 在下面的表格中，「高级功能」（包含在**团队组织**和**企业组织**中）使用星号 (\*) 标记。
 
-| 商业方案包含的功能                                                                                    | 团队组织                               | 企业组织                              |
-| -------------------------------------------------------------------------------------------- | ---------------------------------- | --------------------------------- |
-| 安全地存储登录、笔记、支付卡和身份                                                                            | 无限制                                | 无限制                               |
-| 数据共享                                                                                         | 无限制                                | 无限制                               |
-| 跨设备访问 Password Manager                                                                       | **✔︎**                             | **✔︎**                            |
-| 跨设备同步                                                                                        | **✔︎**                             | **✔︎**                            |
-| 密码生成器                                                                                        | **✔︎**                             | **✔︎**                            |
-| 基础用户数                                                                                        | 1                                  | 1                                 |
-| 最大用户数                                                                                        | 无限制                                | 无限制                               |
-| 最大集合数                                                                                        | 无限制                                | 无限制                               |
-| [加密导出](../../password-manager/import-and-export/encrypted-exports.md)                        | **✔︎**                             | **✔︎**                            |
-| [Bitwarden Send](../../password-manager/bitwarden-send/about-send.md)                        | 文本+文件                              | 文本+文件                             |
-| \*[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)        | 验证器  App、电子邮箱、Yubikey、FIDO2 以及 Duo | 验证器 App、电子邮箱、Yubikey、FIDO2 以及 Duo |
-| [适用于组织的 Duo](../../admin-console/login-with-sso/sso-guides/duo-saml-implementation.md)       | **✔︎**                             | **✔︎**                            |
-| \*[加密文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)                | 1 GB/用户 + 1 GB 共享                  | 1 GB/用户 + 1 GB 共享                 |
-| \*[Bitwarden 验证器](../../password-manager/your-vault/security-tools/totp.md) (TOTP)           | **✔︎**                             | **✔︎**                            |
-| \*[个人紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)          | **✔︎**                             | **✔︎**                            |
-| \*[密码库健康报告](../../password-manager/your-vault/security-tools/vault-health-reports.md)        | **✔︎**                             | **✔︎**                            |
-| \*优先支持                                                                                       | **✔︎**                             | **✔︎**                            |
-| [事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)                 | **✔︎**                             | **✔︎**                            |
-| [用户群组](../../admin-console/manage-members/groups.md)                                         | **✔︎**                             | **✔︎**                            |
-| [API 访问](../../admin-console/bitwarden-public-api.md)                                        | **✔︎**                             | **✔︎**                            |
-| [目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md) | **✔︎**                             | **✔︎**                            |
-| [Secrets Manager ](../../secrets-manager/secrets-manager-overview.md)附加组件资格                  | **✔︎**                             | **✔︎**                            |
-| [SSO 登录](../../admin-console/login-with-sso/about-sso.md)                                    | —                                  | **✔︎**                            |
-| [Key Connector](../../self-hosting/key-connector/about-key-connector.md)                     | —                                  | **✔︎**                            |
-| [企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)                      | —                                  | **✔︎**                            |
-| [账户恢复](../../admin-console/manage-members/account-recovery/about-account-recovery.md)        | —                                  | **✔︎**                            |
-| [自托管选项](../../self-hosting/)                                                                 | —                                  | **✔︎**                            |
-| [自定义管理角色](../../admin-console/manage-members/member-roles.md)                                | —                                  | **✔**                             |
-| [适用于成员的家庭赞助](families-for-enterprise.md)                                                     | —                                  | **✔︎**                            |
-| [SCIM 集成](../../admin-console/manage-members/scim/about-scim.md)                             | **✔︎**                             | **✔︎**                            |
-| 费用                                                                                           | $4/用户/月（按年计费）或 $5/用户/月（按月计费）       | $6/用户/月（按年计费）或 $7/用户/月（按月计费）      |
+| 商业方案包含的功能                                                                                             | 团队组织                               | 企业组织                              |
+| ----------------------------------------------------------------------------------------------------- | ---------------------------------- | --------------------------------- |
+| 安全地存储登录、笔记、支付卡和身份                                                                                     | 无限制                                | 无限制                               |
+| 数据共享                                                                                                  | 无限制                                | 无限制                               |
+| 跨设备访问 Password Manager                                                                                | **✔︎**                             | **✔︎**                            |
+| 跨设备同步                                                                                                 | **✔︎**                             | **✔︎**                            |
+| 密码生成器                                                                                                 | **✔︎**                             | **✔︎**                            |
+| 基础用户数                                                                                                 | 1                                  | 1                                 |
+| 最大用户数                                                                                                 | 无限制                                | 无限制                               |
+| 最大集合数                                                                                                 | 无限制                                | 无限制                               |
+| [加密导出](../../password-manager/import-and-export/encrypted-exports.md)                                 | **✔︎**                             | **✔︎**                            |
+| [Bitwarden Send](../../password-manager/bitwarden-send/about-send.md)                                 | 文本+文件                              | 文本+文件                             |
+| \*[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)                 | 验证器  App、电子邮箱、Yubikey、FIDO2 以及 Duo | 验证器 App、电子邮箱、Yubikey、FIDO2 以及 Duo |
+| [适用于组织的 Duo](../../admin-console/login-with-sso/sso-guides/duo-saml-implementation.md)                | **✔︎**                             | **✔︎**                            |
+| \*[加密文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)                         | 1 GB/用户 + 1 GB 共享                  | 1 GB/用户 + 1 GB 共享                 |
+| \*[Bitwarden 验证器](../../password-manager/your-vault/security-tools/totp.md) (TOTP)                    | **✔︎**                             | **✔︎**                            |
+| \*[个人紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)                   | **✔︎**                             | **✔︎**                            |
+| \*[密码库健康报告](../../password-manager/your-vault/security-tools/vault-health-reports.md)                 | **✔︎**                             | **✔︎**                            |
+| \*优先支持                                                                                                | **✔︎**                             | **✔︎**                            |
+| [事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)                          | **✔︎**                             | **✔︎**                            |
+| [用户群组](../../admin-console/manage-members/groups.md)                                                  | **✔︎**                             | **✔︎**                            |
+| [API 访问](../../admin-console/bitwarden-public-api.md)                                                 | **✔︎**                             | **✔︎**                            |
+| [目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md)          | **✔︎**                             | **✔︎**                            |
+| [Secrets Manager ](../../secrets-manager/secrets-manager-overview.md)附加组件资格                           | **✔︎**                             | **✔︎**                            |
+| [SSO 登录](../../admin-console/login-with-sso/about-sso.md)                                             | —                                  | **✔︎**                            |
+| [Key Connector](../../self-hosting/key-connector/about-key-connector.md)                              | —                                  | **✔︎**                            |
+| [企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)                               | —                                  | **✔︎**                            |
+| [账户恢复](../../admin-console/manage-members/account-recovery/about-account-recovery.md)                 | —                                  | **✔︎**                            |
+| [自托管选项](../../self-hosting/)                                                                          | —                                  | **✔︎**                            |
+| [自定义管理角色](../../admin-console/manage-members/member-roles.md)                                         | —                                  | **✔**                             |
+| [适用于成员的家庭赞助](../../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md) | —                                  | **✔︎**                            |
+| [SCIM 集成](../../admin-console/manage-members/scim/about-scim.md)                                      | **✔︎**                             | **✔︎**                            |
+| 费用                                                                                                    | $4/用户/月（按年计费）或 $5/用户/月（按月计费）       | $6/用户/月（按年计费）或 $7/用户/月（按月计费）      |
 
 ## 自托管组织 <a href="#self-hosted-organizations" id="self-hosted-organizations"></a>
 

@@ -1,4 +1,4 @@
-# 组织赞助的家庭方案
+# 适用于非成员的赞助家庭
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/organization-sponsored-families-plans/)
@@ -9,7 +9,7 @@ Bitwarden 企业客户可以为员工赞助 Bitwarden 家庭方案作为一项�
 本文展示了企业组织管理员如何向非组织成员发放家庭赞助。
 
 {% hint style="info" %}
-已加入企业组织的 Bitwarden 用户可以通过[这些说明](../../plans-and-pricing/password-manager/families-for-enterprise.md)来兑换家庭赞助。
+已加入企业组织的 Bitwarden 用户可以通过[这些说明](sponsored-families-for-members.md)来兑换家庭赞助。
 {% endhint %}
 
 ## 发放赞助 <a href="#issue-a-sponsorship" id="issue-a-sponsorship"></a>
@@ -68,4 +68,4 @@ Bitwarden 企业客户可以为员工赞助 Bitwarden 家庭方案作为一项�
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-* [了解更多](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#families-organizations)有关 Bitwarden 家庭组织的信息。
+* [了解更多](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#families-organizations)有关 Bitwarden 家庭组织的信息。

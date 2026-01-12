@@ -327,7 +327,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **组织赞助的家庭方案**：组织可以直接为员工个人电子邮箱账户（包括非当前组织成员的员工）发放赞助版家庭方案。[了解更多](admin-console/more/organization-sponsored-families-plans.md)有关赞助版家庭方案的信息。
+* **组织赞助的家庭方案**：组织可以直接为员工个人电子邮箱账户（包括非当前组织成员的员工）发放赞助版家庭方案。[了解更多](admin-console/manage-members/sponsored-families/sponsored-families-for-non-members.md)有关赞助版家庭方案的信息。
 * **集合权限调整**：「可以编辑」和「可以编辑，隐藏密码」权限现默认允许用户删除集合项目，除非启用了新增的「限制为具有「管理集合」权限的成员可以删项目」选项。[了解更多](admin-console/manage-shared-items/collections/about-collections.md#collections-permissions)有关集合权限的信息。
 * **新的集合管理设置**：为了增加权限定制，添加了一个新的集合管理设置：「限制为具有「管理集合」权限的成员可以删项目」选项。[了解更多](admin-console/manage-shared-items/collections/collection-settings.md)有关集合管理设置的信息。
 
@@ -515,7 +515,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **移除免费的 Bitwarden 家庭赞助策略**：该策略允许企业组织阻止用户通过他们的组织兑换赞助的家庭方案。[了解更多](plans-and-pricing/password-manager/families-for-enterprise.md)。
+* **移除免费的 Bitwarden 家庭赞助策略**：该策略允许企业组织阻止用户通过他们的组织兑换赞助的家庭方案。[了解更多](admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)。
 * **集成页面**：管理控制台导航菜单中添加了集成页面。集成页面提供了Bitwarden SSO 集成、事件管理等常用的帮助中心链接！
 
 ### 提供商门户 <a href="#provider-portal" id="provider-portal"></a>
@@ -1259,7 +1259,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 Bitwarden 很自豪地宣布在 12 月的版本中增加了新的企业功能，为企业方案增加了灵活性和价值。
 
 * &#x20;[**Key Connector**](self-hosting/key-connector/about-key-connector.md)：(_仅适用于自托管组织_）当使用带有客户管理加密的 SSO 登录时，作为使用主密码解密密码库的一个替代方案，自托管 Key Connector 应用程序向 Bitwarden 客户端提供加密密钥（参阅[这里](self-hosting/key-connector/about-key-connector.md)）。
-* **用于企业的家庭**：(_目前仅适用于云托管组织，未来版本的自托管_）从这个版本开始，企业组织的成员可以兑换一个与最多 5 个朋友或家庭成员共享的免费 [Bitwarden 家庭组织](plans-and-pricing/password-manager/about-bitwarden-plans.md#families-organizations)。家庭组织包括所有 6 个用户的所有高级功能和无限制的安全数据共享（参阅[这里](plans-and-pricing/password-manager/families-for-enterprise.md)）。
+* **用于企业的家庭**：(_目前仅适用于云托管组织，未来版本的自托管_）从这个版本开始，企业组织的成员可以兑换一个与最多 5 个朋友或家庭成员共享的免费 [Bitwarden 家庭组织](plans-and-pricing/password-manager/about-bitwarden-plans.md#families-organizations)。家庭组织包括所有 6 个用户的所有高级功能和无限制的安全数据共享（参阅[这里](admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)）。
 * **MacOS 和 Safari 导入器**：我们为从 Safari 和 macOS 导出的密码增加了一个自定义导入器（详情见[这里](password-manager/import-and-export/import-guides/import-data-from-macos-and-safari.md)）。
 * **新的自定义字段类型**：链接型自定义字段可用于解决您的浏览器扩展在自动填写特定网站的用户名和密码时遇到的问题，方法是将用户名和密码链接到定制的表单元素（参阅[此处](password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md#using-linked-custom-fields)）。
 * **浏览器扩展 - 自动填充时解锁密码库**：当您尝试在密码库被锁定时使用上下文菜单或键盘快捷键进行自动填充，现在将提示您解锁密码库，并在解锁后自动填写您的凭证。
