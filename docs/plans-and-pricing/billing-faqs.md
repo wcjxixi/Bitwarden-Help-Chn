@@ -37,25 +37,25 @@
 
 添加和删​移除用户席位将调整您未来的账单总额。添加席位将立即以调整后的比例向您存档的付款方式扣款，这样**您只需为计费周期（月/年）的剩余时间付费**。移除席位会导致您的下一次收费被调整，已付费席位**未使用的时间将计入您的信用额度**。
 
-### 问：在自托管实例上如何为高级功能付款？ <a href="#q-how-do-i-pay-for-premium-on-a-self-hosted-instance" id="q-how-do-i-pay-for-premium-on-a-self-hosted-instance"></a>
+### 问：如何将订阅用于自托管？ <a href="#q-how-do-subscriptions-work-for-self-hosting" id="q-how-do-subscriptions-work-for-self-hosting"></a>
 
-**答：**&#x8981;支付 Bitwarden 自托管实例的费用，您需要在 Bitwarden 云中通过[网页密码库](https://vault.bitwarden.com/)创建一个账户。从那里下载许可证文件，并将其应用到您的自助托管实例上。您的许可证文件将标记您对高级功能的访问，因此，如果您之前使用的是免费方案，请确保下载一个新的许可证文件。
+**答：**&#x8981;在自托管服务器上使用订阅，请首先通过[网页 App](../password-manager/getting-started/getting-started-webvault.md) 在 Bitwarden 云端创建账户和订阅。从那里下载[订阅许可证](../self-hosting/licensing-on-premise.md#organization-license)，该许可证将标记对高级或组织功能的访问权限，以应用于您的自托管服务器。
 
-如需了解更多信息，请参阅[本地托管](../self-hosting/licensing-on-premise.md#organization-license)。
+根据 Bitwarden 服务条款，每个订阅仅允许一个组织部署。
 
 ### 问：如果我有一个家庭组织，还需要高级会员吗？ <a href="#q-if-i-have-a-families-organization-do-i-need-premium" id="q-if-i-have-a-families-organization-do-i-need-premium"></a>
 
-**答：**&#x5F53;前的家庭方案（2020 年 9 月推出）自动为组织的所有 6 名成员提供高级功能，所以不需要！
+**答：**&#x5F53;前的家庭方案（2020 年 09 月推出）自动为组织的所有 6 名成员提供高级功能，所以不需要！
 
 传统的家庭方案不会自动提供高级功能，因此用户需要单独升级到高级版，或者由家庭组织的所有者升级组织。
 
-### 问：为什么我的云许可证到期日期和自托管许可证到期日期不匹配？
+### 问：为什么我的云端和自托管许可证到期日期不匹配？
 
 **答：**&#x4E3A;了确保您不会无意中失去组织功能，我们在云上许可证到期和自托管服务器上许可证到期之间提供 2 个月的宽限期。[了解更多](organization-renewal.md)。
 
-### 问：我的组织的计费电子邮件的持有者可以执行哪些操作？
+### 问：我的组织的计费电子邮箱的持有者可以执行哪些操作？
 
-**答：**&#x60A8;组织的[计费电子邮件](../admin-console/organizations-overview.md#create-an-organization)的持有人可以通过联系我们：
+**答：**&#x60A8;组织的[计费电子邮箱](../admin-console/organizations-overview.md#create-an-organization)的持有人可以通过联系我们：
 
 * 在订阅中添加或移除信用卡。
 * 更改组织的计费电子邮件地址。
@@ -65,7 +65,7 @@
 
 他们**不得**以任何理由请求删除组织、获取当前组织所有者的身份或请求将任何用户提升为所有者。
 
-## 付款方式 <a href="#payment-options" id="payment-options"></a>
+## 付款选项 <a href="#payment-options" id="payment-options"></a>
 
 ### 问：你们接受美国国内的客户的哪些付款方式？ <a href="#q-what-payment-options-do-you-accept-for-customers-based-in-the-united-states" id="q-what-payment-options-do-you-accept-for-customers-based-in-the-united-states"></a>
 
@@ -79,20 +79,9 @@
 
 **答：**&#x53EF;以。请注意，在购买订阅之前，您需要在**设置** → **计费**界面使用比特币添加信用额度。
 
-### 问：在我的账户的什么地方输入税务信息（VAT）？ <a href="#q-how-do-i-enter-my-tax-information-vat" id="q-how-do-i-enter-my-tax-information-vat"></a>
-
-**答：**&#x767B;录到[网页版密码库](https://vault.bitwarden.com/)并打开您的组织，在您的组织的**设置**选项卡下，向下滚动到**税务信息**部分：
-
-* 如果您是美国国内的客户，从**国家**下拉菜单中选择 **United States**，并输入您的**邮政编码**。
-* 如果您是美国国外的客户，从**国家**下拉菜单中选择您的国家。勾选**包括 VAT/GST 信息（可选）**&#x590D;选框，并输入您的相关税务识别信息。
-
-### 问：为什么我会被征收销售税？ <a href="#q-why-am-i-charged-sales-tax" id="q-why-am-i-charged-sales-tax"></a>
-
-**答：**&#x9500;售税的征收标准和税率由美国各州规定。Bitwarden 归类于软件即服务 (SaaS) 税号下。税收标准和适用税率可能会根据您所在地区的要求而发生变化。
-
 ### 问：我可以将 Bitwarden 免费方案用于商业用途吗？ <a href="#q-can-i-use-a-bitwarden-free-plan-for-commercial-use" id="q-can-i-use-a-bitwarden-free-plan-for-commercial-use"></a>
 
-**答：**&#x53EA;要遵守我们的服务条款，用户可以出于个人或商业目的使用 Bitwarden 客户端（无论是付费账户还是免费账户）。
+**答：**&#x53EA;要遵守我们的[服务条款](https://bitwarden.com/terms/)，用户可以出于个人或商业目的使用 Bitwarden 客户端（无论是付费账户还是免费账户）。
 
 Bitwarden 的许可证授予有限的、非独占的、不可转让的、免版税许可，可将商业模块仅用于非生产环境中的内部开发和测试。更多信息，请参阅[许可证](https://github.com/bitwarden/server/blob/main/LICENSE.txt)和[许可证 FAQ](https://github.com/bitwarden/server/blob/main/LICENSE_FAQ.md)。
 
@@ -100,12 +89,12 @@ Bitwarden 的许可证授予有限的、非独占的、不可转让的、免版�
 
 ## 已知问题 <a href="#known-issues" id="known-issues"></a>
 
-### 问：当我尝试在 Firefox 上升级高级功能时发生了一个错误。我该如何解决这个问题？ <a href="#q-an-error-occurs-when-i-try-to-go-premium-on-firefox-how-do-i-fix-this" id="q-an-error-occurs-when-i-try-to-go-premium-on-firefox-how-do-i-fix-this"></a>
+### 问：当我尝试在 Firefox 上升级高级版时发生了一个错误。我该如何解决这个问题？ <a href="#q-an-error-occurs-when-i-try-to-go-premium-on-firefox-how-do-i-fix-this" id="q-an-error-occurs-when-i-try-to-go-premium-on-firefox-how-do-i-fix-this"></a>
 
 **答：**&#x6211;们观察到一些 Firefox 用户在提交高级订阅的付款信息时会收到如下错误信息：
 
 `You passed an empty string for 'payment_method_data[referrer]'. We assume empty values are an attempt to unset a parameter; however 'payment_method_data[referrer]' cannot be unset. You should remove 'payment_method_data[referrer]' from your request or supply a non-empty value.`
 
-这通常发生在你的付款方式被安装的浏览器扩展或配置的浏览器选项所阻碍时。
+当提交您的付款方式受到已安装的浏览器扩展或配置的浏览器选项的阻碍时，通常会发生这种情况。
 
 **在隐私窗口中打开 Firefox 浏览器，然后尝试重新提交。**

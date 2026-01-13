@@ -8,23 +8,19 @@
 
 如果您是自托管，请从您创建账户的托管 Bitwarden 网页 App 中取消您的订阅。[了解更多](../self-hosting/licensing-on-premise.md)。
 
-{% hint style="info" %}
-本文中的流程假设您已经开始付费订阅 Bitwarden。如果您还没有，请参阅关于 Bitwarden 方案和什么方案适合我？
-{% endhint %}
-
 ## 取消个人订阅 <a href="#cancel-a-personal-subscription" id="cancel-a-personal-subscription"></a>
 
 要取消个人订阅：
 
 1、在网页 App 中，导航到**设置** → **订阅**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Ru9TSLguhRNYtLe2TLwXk/d601c1c639cf3eccc0860793aae3299e/2024-12-04_10-15-22.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3Ru9TSLguhRNYtLe2TLwXk/525da31347b13dfcce28efa49531fadc/Subscription_page.png?w=1200&fm=avif" %}
 订阅页面
 {% endembed %}
 
 2、注意**下一次收费**日期。您的订阅取消后，你将无法使用付费功能。
 
-3、选择**取消订阅**按钮：
+3、选择**取消订阅**按钮。
 
 当您确认取消后，您的账户将进入**待取消**状态，直到到达注明的**下一次收费**日期。当到达**下一次收费**日期时，您将被转移到免费的账户。[了解当您失去高级会员时会发生什么](password-manager/premium-renewal.md)。
 
@@ -52,9 +48,9 @@
 只有组织的所有者可以访问组织的订阅页面。
 {% endhint %}
 
-3、记录**订阅到期**日期。您的订阅取消后，您的组织将无法使用付费功能。
+3、注意**订阅到期**日期。您的订阅取消后，您的组织将无法使用付费功能。
 
-4、向下滚动并选择**取消订阅**按钮。
+4、向下滚动然后选择**取消订阅**按钮。
 
 当您确认取消后，您的组织将进入**待取消**状态，直到到达注明的**订阅到期**日期。当到达**订阅到期**日期时，您的订阅将终止。[了解接下来会发生什么](organization-renewal.md)！
 

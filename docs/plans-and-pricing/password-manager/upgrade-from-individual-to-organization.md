@@ -16,7 +16,7 @@
 新增组织
 {% endembed %}
 
-2、在**新增组织**界面，输入您的新组织的**组织名称**以及我们能联系到您的**账单电子邮箱**。
+2、在**新增组织**界面，输入您的新组织的**组织名称**以及我们能联系到您的**计费电子邮箱**。
 
 {% hint style="info" %}
 付费组织（家庭版、团队版或企业版）有一个 7 天的免费试用期。在您的试用期结束之前，我们不会向您收取费用。您可以随时在您的组织的**设置**选项卡中取消您的订阅。
@@ -35,13 +35,13 @@
 * **企业版**：用于公司及其他大型组织。[了解更多](about-bitwarden-plans.md#enterprise-organizations)。
 
 {% hint style="info" %}
-付费组织（家庭、团队或企业）包含所有注册用户的高级功能。关于高级功能的更多信息，请参阅 [Password Manager 方案](about-bitwarden-plans.md)。
+付费组织（家庭版、团队版或企业版）包含所有注册用户的高级功能。关于高级功能的更多信息，请参阅 [Password Manager 方案](about-bitwarden-plans.md)。
 {% endhint %}
 
 5、如果您选择了付费组织，请输入以下信息：
 
 * 对于**团队版**或**企业版**，输入您需要的**用户席位**的数量。如果超过此数量，则会增加席位，除非您[指定限制](../../admin-console/manage-members/user-management.md#set-a-seat-limit)。
-* 对于**家庭版**、**团队版**或**企业版**，输入你需要的**附加存储 (GB)** 的大小。您的方案带有 1GB 的共享加密文件存储空间，您也可以在以后需要的时候增加附加存储。
+* 对于**家庭版**、**团队版**或**企业版**，输入你需要的**附加存储 (GB)** 的大小。您的方案带有 5 GB 的共享加密文件存储空间，您也可以在以后需要的时候增加附加存储。
 * 对于**团队版**或**企业版**，选择是**按年**还是**按月**计费。其他组织只能按年计费。
 * 对于任何付费组织，请输入您的**付款信息**。
 
@@ -69,7 +69,7 @@ Bitwarden 提供在**账户创建后 30 天内**取消高级个人方案的退�
 
 1、在 Bitwarden 网页 App 中，导航至**设置** → **订阅**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Ru9TSLguhRNYtLe2TLwXk/d601c1c639cf3eccc0860793aae3299e/2024-12-04_10-15-22.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3Ru9TSLguhRNYtLe2TLwXk/525da31347b13dfcce28efa49531fadc/Subscription_page.png?w=1200&fm=avif" %}
 订阅页面
 {% endembed %}
 

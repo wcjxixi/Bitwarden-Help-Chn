@@ -4,15 +4,15 @@
 对应的[官方文档地址](https://bitwarden.com/help/enterprise-free-trial/)
 {% endhint %}
 
-## Bitwarden 新用户？ <a href="#new-to-bitwarden" id="new-to-bitwarden"></a>
+## Bitwarden 新手吗？ <a href="#new-to-bitwarden" id="new-to-bitwarden"></a>
 
-如果您是 Bitwarden 的新用户，我们很乐意帮助您通过我们专门的注册页面建立一个账户并开始您的企业组织 7 天免费试用。[开始免费试用企业方案](https://vault.bitwarden.com/#/register?org=enterprise)。
+如果您是 Bitwarden 的新手，我们很乐意帮助您通过我们专门的注册页面建立一个账户并开始您的企业组织 7 天免费试用。[开始企业版免费试用](https://vault.bitwarden.com/#/register?org=enterprise)。
 
-或者，要了解更多有关 [Bitwarden 企业产品](https://bitwarden.com/products/business/)的信息，请参阅 [Bitwarden 方案和定价](https://bitwarden.com/pricing/business/)或[密码管理器方案](password-manager/about-bitwarden-plans.md#enterprise-organizations)和[机密管理器方案](secrets-manager/secrets-manager-plans.md)。
+或者，要了解更多有关 [Bitwarden 企业产品](https://bitwarden.com/products/business/)的信息，请参阅 [Bitwarden 方案和定价](https://bitwarden.com/pricing/business/)或 [Password Manager 方案](password-manager/about-bitwarden-plans.md#enterprise-organizations)和 [Secrets Manager 方案](secrets-manager/secrets-manager-plans.md)。
 
 ## 已是 Bitwardne 用户？ <a href="#already-a-user" id="already-a-user"></a>
 
-如果您已经有一个 Bitwarden 账户，完成以下步骤以开始您的企业版方案7 天免费试用：
+如果您已经有一个 Bitwarden 账户，完成以下步骤以开始您的 Bitwarden 企业版 7 天免费试用：
 
 1、登录 Bitwarden 网页 App，然后选择**新增组织**按钮：
 
@@ -47,7 +47,7 @@
 3. 在**附加服务账户**字段中，指定要添加到 Secrets Manager 的服务账户数量。团队方案和企业方案分别预提供了 50 个和 200 个服务账户。
 {% endhint %}
 
-8、输入您的**支付信息**然后选择**提交**。
+8、输入您的**付款信息**然后选择**提交**。
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
@@ -56,3 +56,4 @@
 * [添加用户到您的组织](../admin-console/manage-members/user-management.md)
 * [创建一个集合](../admin-console/manage-shared-items/collections/about-collections.md#create-a-collection)
 * 设置 [SSO 登录](../admin-console/login-with-sso/about-sso.md)
+* 查看[自托管组织](../self-hosting/plan-for-deployment/self-host-an-organization.md)

@@ -6,7 +6,7 @@
 
 高级个人订阅按年自动续费。您可以在您的网页版 App 中导航到**设置** → **订阅**，来查看您的续费日期：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Ru9TSLguhRNYtLe2TLwXk/d601c1c639cf3eccc0860793aae3299e/2024-12-04_10-15-22.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3Ru9TSLguhRNYtLe2TLwXk/525da31347b13dfcce28efa49531fadc/Subscription_page.png?w=1200&fm=avif" %}
 订阅页面
 {% endembed %}
 

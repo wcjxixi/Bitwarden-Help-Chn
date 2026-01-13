@@ -78,13 +78,15 @@ Bitwarden 商业方案旨在满足小型团队、成长型公司和大型企业�
 
 团队组织非常适合与您的同事、部门或整个公司安全地共享数据。团队组织包含了所有注册用户的所有高级功能、团队组织内无限制的安全数据共享，以及一套业务工具，如事件日志和用于组织管理的 API。
 
-团队组织可以将 [Secrets Manager](../../secrets-manager/secrets-manager-overview.md) 添加到其产品组合中，但需[支付额外费用](../secrets-manager/secrets-manager-plans.md)。
+团队组织可以将 [Secrets Manager](../../secrets-manager/secrets-manager-overview.md) 添加到其产品组合中，但需支付[额外费用](../secrets-manager/secrets-manager-plans.md)。
 
 与家庭组织和免费组织不同，团队组织可以拥有无限数量的用户（按每用户计费）。团队组织订阅可以按年或按月计费。
 
 ### 企业组织 <a href="#enterprise-organizations" id="enterprise-organizations"></a>
 
 开始一个企业组织，以保护您的商业机密。企业组织包含了所有注册用户的所有高级功能、**团队组织**中包含的所有业务工具，以及企业专用工具，如 SSO 验证、强制企业策略和自托管选项。
+
+企业组织可以将 Secrets Manager 添加到其产品组合中，但需支付额外费用。
 
 与家庭组织和免费组织不同，企业组织可以拥有无限数量的用户（按每用户计费）。企业组织订阅可以按年或按月计费。
 
@@ -104,9 +106,9 @@ Bitwarden 商业方案旨在满足小型团队、成长型公司和大型企业�
 | 最大集合数                                                                                                 | 无限制                                | 无限制                               |
 | [加密导出](../../password-manager/import-and-export/encrypted-exports.md)                                 | **✔︎**                             | **✔︎**                            |
 | [Bitwarden Send](../../password-manager/bitwarden-send/about-send.md)                                 | 文本+文件                              | 文本+文件                             |
-| \*[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)                 | 验证器  App、电子邮箱、Yubikey、FIDO2 以及 Duo | 验证器 App、电子邮箱、Yubikey、FIDO2 以及 Duo |
+| \*[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)                 | 验证器  App、电子邮箱、YubiKey、FIDO2 以及 Duo | 验证器 App、电子邮箱、YubiKey、FIDO2 以及 Duo |
 | [适用于组织的 Duo](../../admin-console/login-with-sso/sso-guides/duo-saml-implementation.md)                | **✔︎**                             | **✔︎**                            |
-| \*[加密文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)                         | 1 GB/用户 + 1 GB 共享                  | 1 GB/用户 + 1 GB 共享                 |
+| \*[加密文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)                         | 5 GB/用户 + 5 GB 共享                  | 5 GB/用户 + 5 GB 共享                 |
 | \*[Bitwarden 验证器](../../password-manager/your-vault/security-tools/totp.md) (TOTP)                    | **✔︎**                             | **✔︎**                            |
 | \*[个人紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)                   | **✔︎**                             | **✔︎**                            |
 | \*[密码库健康报告](../../password-manager/your-vault/security-tools/vault-health-reports.md)                 | **✔︎**                             | **✔︎**                            |
