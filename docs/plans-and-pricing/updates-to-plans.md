@@ -10,7 +10,7 @@
 
 本文详细介绍了之前的 Bitwarden Password Manager 订阅。您可以通过**计费** → **订阅**页面或查看最新的收据中的说明来确定您所使用的方案。
 
-如果您在 2023 年 11 月 06 日或之后购买了订阅，请参阅 [Password Manager 方案](password-manager/about-bitwarden-plans.md)一文。
+如果您**在 2023 年 11 月 06 日或之后**购买的订阅，请参阅 [Password Manager 方案](password-manager/about-bitwarden-plans.md)一文。
 
 ## 2020 年 09 月 06 日之前购买的订阅 <a href="#subscriptions-purchased-prior-to-september-6-2020" id="subscriptions-purchased-prior-to-september-6-2020"></a>
 
