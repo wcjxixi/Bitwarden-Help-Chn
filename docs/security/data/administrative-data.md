@@ -19,7 +19,7 @@
 * 您的电子邮箱地址（用于电子邮箱验证、账户管理以及您与 Bitwarden 之间的交流）
   * 电子邮箱地址是否经过验证
 * 您的名字（仅如果在创建账户时有提供）
-* **Bitwarden 生成**的特定于设备的 GUID（有时称为设备 ID，用于在新设备登录到密码库时向您发出警告）
+* **Bitwarden 生成的**特定于设备的 GUID（有时称为设备 ID，用于在新设备登录到密码库时向您发出警告）
 
 ## 计费/订阅 <a href="#billing-subscription" id="billing-subscription"></a>
 

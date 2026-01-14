@@ -22,7 +22,7 @@ Bitwarden 执行超出客户端和服务器之间配置的额外迭代。主密�
 
 默认情况下，Bitwarden 设置为迭代 600,000 次，这是 [OWASP 为 HMAC-SHA-256 实现推荐的](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#pbkdf2)。只要用户不将此值设置得更低，实现就符合 FIPS-140，但如果您选择更改设置，这里有一些提示：
 
-* 更多的 KDF 迭代将**同时**增加攻击者破解密码所需的时间，**以及**合法用户登录所需的时间。
+* 更多的 KDF 迭代将**同时**增加攻击者破解密码所需的时间，**以及**增加合法用户登录所需的时间。
 
 ## Argon2id
 

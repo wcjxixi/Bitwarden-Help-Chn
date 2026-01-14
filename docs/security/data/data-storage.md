@@ -22,7 +22,7 @@ Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。Bitwarden �
 >
 > **BACPAC**：BACPAC 是一个可移动的数据库备份文件格式，主要用于 Microsoft SQL Server 和 Azure SQL Database。BACPAC 文件本质上是一个 `.bacpac` 文件（常见的 `.bak` 文件则是普通备份文件），里面包含：数据库的架构和数据库中的数据。
 
-不信任 Bitwarden 服务器吗？没关系。开源的力量让一切变得简单美好，您可以轻松地自己托管整个 Bitwarden 系统，您的数据由你自己控制。在[这里](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md)了解更多。
+不信任 Bitwarden 服务器吗？没关系。开源的力量让一切变得简单美好，您可以轻松地自己托管整个 Bitwarden 系统，您的数据由你自己控制。[解更多](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md)。
 
 ## 在您的本地机器上 <a href="#on-your-local-machine" id="on-your-local-machine"></a>
 
@@ -72,7 +72,7 @@ Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。Bitwarden �
 {% hint style="info" %}
 为了增强安全性，Firefox 在扩展存储文件夹名称中使用通用唯一标识符 (UUID)。打开 `about:debugging#/runtime/this-firefox` 页面（从 Firefox 的地址栏导航）找到您的 Bitwarden 扩展 UUID。用该 UUID 替换上面的 `[UUID]`。
 
-还要注意，Firefox 允许用户自定义存储配置文件（以及本地 Bitwarden 扩展数据）的位置。上面指定的位置是默认位置。
+Firefox 还允许用户自定义存储配置文件（以及本地 Bitwarden 扩展数据）的位置。上面指定的位置是默认位置。
 {% endhint %}
 
 ### 移动端 <a href="#mobile" id="mobile"></a>

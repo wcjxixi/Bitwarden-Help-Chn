@@ -42,7 +42,7 @@ Bitwarden 建议在轮换账户加密密钥前备份您的项目。在此场景�
 
 1、在网页 App 中，导航到**设置** → **安全** → **主密码**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2Svv0PwlH9i7SSK73dlv9A/5ff2708bb08164626baf1f03d3854b24/2024-12-02_10-24-14.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/2Svv0PwlH9i7SSK73dlv9A/e451afb190346e492110a7bf1bd3a518/Master_password_settings.png?w=1200&fm=avif" %}
 主密码设置
 {% endembed %}
 
