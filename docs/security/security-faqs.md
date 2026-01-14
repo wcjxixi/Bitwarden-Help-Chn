@@ -180,7 +180,7 @@ Bitwarden 所需的其他基本权限已[在 Google Play 商店中列出](https:
 
 ### 问：Bitwarden 是否符合 FIPS 标准？ <a href="#q-is-bitwarden-fips-compliant" id="q-is-bitwarden-fips-compliant"></a>
 
-**答：**&#x42;itwarden 使用[符合 FIPS 标准的库和密码学](encryption/encryption-protocols.md#invoked-crypto-libraries)，但是 Bitwarden 平台没有进行任何 FIPS 认证。Bitwarden 的大多数 FIPS 安装利用自托管选项，使评估（即网络安全成熟度模型认证）更容易。
+**答：**&#x42;itwarden 使用[符合 FIPS 标准的库和加密技术](encryption/encryption-protocols.md#invoked-crypto-libraries)，Bitwarden 的大多数 FIPS 安装利用自托管选项，以简化评估（例如，网络安全成熟度模型认证）。Bitwarden 平台目前尚未进行任何 FIPS 认证。如有任何疑问，欢迎通过[联系我们](https://bitwarden.com/contact/)页面与我们联系。
 
 ### 问：我可以限制某些设备对 Bitwarden 的访问吗？ <a href="#q-can-i-restrict-access-to-bitwarden-to-certain-devices" id="q-can-i-restrict-access-to-bitwarden-to-certain-devices"></a>
 
