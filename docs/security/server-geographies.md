@@ -30,7 +30,7 @@ Bitwarden 云可在全球范围内使用，数据存储在**美国**和**欧盟*
 {% endtab %}
 
 {% tab title="桌面 App" %}
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3FlU02971dqGGkp86WJJc5/68840c81afe53921ae85e7c0d86041ab/2025-02-18_14-11-00.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3FlU02971dqGGkp86WJJc5/43aeb8ee7de20a3cc0156fbf2c766432/choose-my-service-1.png?w=800&fm=avif" %}
 桌面 App 上的区域选择器
 {% endembed %}
 {% endtab %}

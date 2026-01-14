@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/bitwarden-addresses-and-repositories/)
 {% endhint %}
 
-此页面标识了 Bitwarden 托管或托管资源的官方地址和存储库。Bitwarden 使用了 [CDN](https://zh.wikipedia.org/zh-cn/%E5%85%A7%E5%AE%B9%E5%82%B3%E9%81%9E%E7%B6%B2%E8%B7%AF)（内容分发网络）以及其他 IP 地址可能会改变的资源。
+此页面标识了 Bitwarden 托管或托管资源的官方地址和存储库。Bitwarden 利用 [CDN](https://zh.wikipedia.org/zh-cn/%E5%85%A7%E5%AE%B9%E5%82%B3%E9%81%9E%E7%B6%B2%E8%B7%AF)（内容分发网络）以及其他 IP 地址可能会改变的资源。
 
 ## Bitwarden 域名 <a href="#bitwarden-domains" id="bitwarden-domains"></a>
 

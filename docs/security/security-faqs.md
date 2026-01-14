@@ -100,57 +100,23 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 ### 问：如何验证 Bitwarden App 的校验和？ <a href="#q-how-do-i-validate-the-checksum-of-a-bitwarden-app" id="q-how-do-i-validate-the-checksum-of-a-bitwarden-app"></a>
 
-**答：**&#x76EE;前可对 Password Manager 桌面 App、Android 移动 App 和 CLI 客户端进行校验和验证：
+**答：**&#x76EE;前可对 Password Manager 浏览器扩展、移动 App、桌面 App 和 CLI 客户端进行校验和验证：
 
-{% tabs %}
-{% tab title="桌面端" %}
-1、从 [https://github.com/bitwarden/clients/releases/](https://github.com/bitwarden/clients/releases/) 下载最新版本的桌面 App 软件包（例如 `Bitwarden-Installer-2024.8.2.exe`）。
+1、从 [github.com/bitwarden/clients/releases](https://github.com/bitwarden/clients/releases/)、[github.com/bitwarden/ios/releases](https://github.com/bitwarden/ios/releases) 或 [github.com/bitwarden/android/releases](https://github.com/bitwarden/android/releases)，下载您想要验证的可执行文件或软件包（例如 `dist-chrome-2025.6.1.zip`）。
 
-2、从同一页面下载该版本的 `sha256-checksums.txt` 文件，然后用文本编辑器打开它。
-
-3、使用 `CertUtil` 或 `sha256sum` 命令生成已下载的软件包的 SHA-256 哈希值，例如：
+2、使用 `CertUtil` 或 `sha256sum` 命令生成已下载的软件包的 SHA-256 哈希值，例如从命令行：
 
 ```shellscript
-sha256sum Bitwarden-2024.8.2-universal.dmg
+sha256sum dist-chrome-2025.6.1.zip
 ```
 
 该命令将在控制台打印哈希值。
 
-4、将打印的哈希值与已下载的软件包的 `sha256-checksums.txt` 中列出的值进行比较。
-{% endtab %}
+3、将打印的哈​​希值与紧邻从 GitHub 下载的可执行文件或软件包列出的 `sha:...` 值进行比较：
 
-{% tab title="Android" %}
-1、从 [https://github.com/bitwarden/android/releases/](https://github.com/bitwarden/android/releases/) 下载最新版本的 Android App 软件包（例如 `com.x8bit.bitwarden.apk`）。
-
-2、从同一页面下载相应的 `{package}-sha256.txt` 文件，然后用文本编辑器打开它。
-
-3、使用 `CertUtil` 或 `sha256sum` 命令生成已下载的软件包的 SHA-256 哈希值，例如：
-
-```shellscript
-sha256sum com.x8bit.bitwarden.apk
-```
-
-该命令将在控制台打印哈希值。
-
-4、将打印的哈希值与已下载的软件包的 `{package}-sha256.txt` 中列出的值进行比较。
-{% endtab %}
-
-{% tab title="CLI" %}
-1、从 [https://github.com/bitwarden/clients/releases/](https://github.com/bitwarden/clients/releases/) 下载最新版本的 CLI 软件包（例如 `bw-linux-2024.8.2.zip`）。
-
-2、从同一页面下载相应的 SHA-256 `.txt` 文件，此例中为 `bw-linux-sha256-2024.8.2.txt`，然后用文本编辑器打开它。
-
-3、使用 `CertUtil` 或 `sha256sum` 命令生成已下载的 `.zip` 文件的 SHA-256 哈希值，例如：
-
-```shellscript
-sha256sum bw-linux-2024.8.2.zip
-```
-
-该命令将在控制台打印哈希值。
-
-4、将打印的哈希值与已下载的软件包的 `.txt` 文件中列出的值进行比较。
-{% endtab %}
-{% endtabs %}
+{% embed url="https://bitwarden.com/assets/7cQREpmZBt3SlvzM5QctoN/dbaa58a9e378e7ad62c09f8ff6942105/2025-07-10_10-05-30.png?w=846&fm=avif" %}
+比较校验和
+{% endembed %}
 
 ### 问：如何向 Bitwarden 进行安全披露或报告？ <a href="#q-how-do-i-make-a-security-disclosure-or-report-to-bitwarden" id="q-how-do-i-make-a-security-disclosure-or-report-to-bitwarden"></a>
 
@@ -179,7 +145,7 @@ sha256sum bw-linux-2024.8.2.zip
 
 此外，**Bitwarden 生成的**特定于设备的 GUID（有时称为**设备 ID**）将分配给您的设备。当新设备登录到您的密码库时，此 GUID 用于提醒您。
 
-### 问：可以解释一下电子应用程序安全吗？ <a href="#q-can-you-explain-electron-app-security" id="q-can-you-explain-electron-app-security"></a>
+### 问：可以解释一下电子 App 序安全吗？ <a href="#q-can-you-explain-electron-app-security" id="q-can-you-explain-electron-app-security"></a>
 
 **答：**&#x4E00;篇经常被分享的文章表明，电子应用程序存在缺陷，然而所提到的攻击需要用户拥有一台已被入侵的机器，这当然会让恶意攻击者入侵该机器上的数据。只要您没有理由相信您所使用的设备已经被入侵，您的数据就是安全的。
 
