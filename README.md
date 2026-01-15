@@ -111,7 +111,7 @@ Bitwarden 还提供组织账户（用于密码共享等），分别为针对个�
 1. 免费试用付费组织订阅：必须先订阅才能试用（订阅时需要输入付款信息），7 天免费试用期结束时，才会从您的付款方式中扣款。记得在订阅后的 7 天内主动取消订阅。
 2. 支持订阅开始日期 30 天内无条件退款（需要给 [Bitwarden 支持](https://bitwarden.com/contact/)发邮件）。
 
-### 价格比较 <a href="#compare-price" id="compare-price"></a>
+### 组织价格比较 <a href="#compare-price" id="compare-price"></a>
 
 {% tabs %}
 {% tab title="2020-08-31 之前" %}
