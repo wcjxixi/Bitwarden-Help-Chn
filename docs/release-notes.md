@@ -29,8 +29,22 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（浏览�
 
 ### Password Manager
 
+{% hint style="info" %}
+**桌面 App 公告**
+
+* 从这个版本开始，桌面 App 将运行在默认使用 Wayland 通信协议的 Electron 版本 (39) 上。不使用硬件加速的 Linux 系统可能需要手动切换到 X11 以避免出现问题，例如对于 Snap 安装：
+
+```bash
+# Using an Electron flag
+snap run bitwarden --ozone-platform=x11
+# Using the standard XDG variable, handled by Electron
+XDG_SESSION_TYPE=x11 snap run bitwarden
+```
+
+* Windows 便携式桌面 App 的一个问题已得到修复，App 更新至此版本后将自动注销用户。重新登录后，Windows 便携式桌面 App 将恢复正常运行。
+{% endhint %}
+
 * **订阅存储空间增加**：高级订阅和付费组织现在将提供 5GB 的[附件](password-manager/your-vault/vault-items/file-attachments.md)和 [Send](password-manager/bitwarden-send/about-send.md) 存储空间。
-* **Windows 便携式桌面 App**：Windows 便携式桌面应用程序的一个问题已修复，更新至此版本后将自动注销用户。重新登录后，Windows 便携式桌面 App 将恢复正常运行。
 * **更新旧版客户端的 PIN 码**：将 Bitwarden 客户端从 2025.9.0 或更早版本更新到此版本后，用户需要重新设置 PIN 码才能继续[使用 PIN 码解锁](account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md)功能。PIN 码本身的要求未作任何变更。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
