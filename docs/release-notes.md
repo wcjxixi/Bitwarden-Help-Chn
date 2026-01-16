@@ -32,7 +32,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（浏览�
 {% hint style="info" %}
 **桌面 App 公告**
 
-* 从这个版本开始，桌面 App 将运行在默认使用 Wayland 通信协议的 Electron 版本 (39) 上。不使用硬件加速的 Linux 系统可能需要手动切换到 X11 以避免出现问题，例如对于 Snap 安装：
+* 从这个版本开始，桌面 App 将运行在默认使用 Wayland 通信协议的 Electron 版本 (39) 上。**不使用硬件加速的 Linux 系统**可能需要手动切换到 X11 以避免出现问题，例如对于 Snap 安装：
 
 ```bash
 # Using an Electron flag
