@@ -23,14 +23,14 @@
 如果您知道当前的主密码，您可以通过[网页密码库](../../password-manager/getting-started/getting-started-webvault.md)更改它：
 
 {% hint style="info" %}
-如果您忘记了当前的主密码，请参阅[我忘记了主密码](i-forgot-my-master-password.md)**。**
+如果您不知道当前的主密码，请参阅[我忘记了主密码](i-forgot-my-master-password.md)**。**
 {% endhint %}
 
 1、在网页 App 中，从导航栏选择**设置** → **安全**。
 
 2、选择**主密码**选项卡：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2Svv0PwlH9i7SSK73dlv9A/5ff2708bb08164626baf1f03d3854b24/2024-12-02_10-24-14.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/2Svv0PwlH9i7SSK73dlv9A/e451afb190346e492110a7bf1bd3a518/Master_password_settings.png?w=1200&fm=avif" %}
 主密码设置
 {% endembed %}
 
@@ -68,4 +68,4 @@
 现在您已经创建了**好记**且**强大**的主密码，我们建议：
 
 * [通过两步登录进一步保护您的密码库](../two-step-login/setup-two-step-login/two-step-login-methods.md)
-* [启用紧急访问](more-log-in-options/emergency-access.md)（需要高级会员）
+* [启用紧急访问](more-log-in-options/emergency-access.md)（需要高级版）

@@ -30,6 +30,10 @@
 
 雇主或家庭成员等组织可以邀请用户注册 Bitwarden。如果您已被邀请加入某个组织，请检查您的电子邮箱是否收到来自 Bitwarden 的加入组织的邀请。在邀请过期之前打开电子邮件，然后选择**立即加入组织**。
 
+{% embed url="https://bitwarden.com/assets/3rZSnNkT3NPYThquuWqpeb/95516ccdedbb99931be5ee4d207fe2d8/image5.png?w=619&fm=avif" %}
+点击通过电子邮件发送的链接后，系统会提示受邀用户接受组织邀请
+{% endembed %}
+
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 现在您已经创建了您的账户，我们建议：
