@@ -40,13 +40,13 @@ Bitwarden 支持多种两步登录方式，您可以使用这些方式来保护�
 两步登录访问 Bitwarden
 {% endembed %}
 
-Bitwarden 为免费账户提供了好几种两步登录方式，包括：
+Bitwarden 为免费账户提供了多种两步登录方式，包括：
 
 * FIDO（任何经过 FIDO2 WebAuthn 认证的钥匙）
 * 验证器 App（如 [Bitwarden Authenticator](../../bitwarden-authenticator/bitwarden-authenticator.md)）
 * 电子邮箱
 
-对于高级用户，Bitwarden 还提供了好几种高级的两步登录方式：
+对于高级用户，Bitwarden 还提供了多种高级的两步登录方式：
 
 * Duo Security 的 Duo Push、短信、电话和安全钥匙
 * YubiKey（任何 4/5 系列设备或 YubiKey NEO/NFC）
@@ -54,7 +54,7 @@ Bitwarden 为免费账户提供了好几种两步登录方式，包括：
 使用我们的**设置指南**，[了解有关选项的更多信息](setup-two-step-login/two-step-login-methods.md)，或获取设置任何方式的帮助。
 
 {% hint style="info" %}
-由于 SIM 劫持等漏洞，Bitwarden 不支持 SMS 2FA。我们不建议对其他账户使用 SMS 2FA，除非它是唯一可用的方法。建议使用任何一种第二个因素而不是不使用，但多数替代方案比 SMS 2FA 更安全。
+由于 SIM 劫持等漏洞，Bitwarden 不支持 SMS 2FA。我们不建议对其他账户使用 SMS 2FA，除非它是唯一可用的方式。建议使用任何双因素而不是不使用，但多数替代方案比 SMS 2FA 更安全。
 {% endhint %}
 
 ## 保护重要的网站 <a href="#securing-important-websites" id="securing-important-websites"></a>
