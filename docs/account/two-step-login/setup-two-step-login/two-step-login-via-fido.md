@@ -31,7 +31,7 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 
 要启用 FIDO2 WebAuthn 方式的两步登录：
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **丢失对两步登录设备的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
 
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../password-manager/import-and-export/export-vault-data.md)来备份密码库数据。
@@ -41,17 +41,11 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 
 2、从导航选择**设置** → **安全** → **两步登录**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2BsKs83g4cmiCUwxf2ad83/b2a90e85355f3d937aeb46139203737e/2024-12-02_10-54-31.png?_a=DAJCwlWIZAAB" %}
-两步登录
+{% embed url="https://bitwarden.com/assets/2IjxRoQwl1powHRhah6Bq/39067a5fe6c53732054f323e4afb431b/Screenshot_2025-12-31_at_1.52.00%C3%A2__PM.png?w=1200&fm=avif" %}
+两步登录设置
 {% endembed %}
 
-3、定位到**通行密钥**选项然后选择**管理**按钮：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5GqQynIX94PhzJQ0tVW1aE/5dcea8d04c8a543daa7f96989f220756/2024-12-02_10-55-22.png?_a=DAJCwlWIZAAB" %}
-两步登录提供程序
-{% endembed %}
-
-将提示您输入您的主密码以继续。
+3、定位到**通行密钥**选项然后选择**管理**按钮。将提示您输入您的主密码以继续。
 
 4、给您的安全密钥起一个友好的**名称**。
 
@@ -91,22 +85,30 @@ FIDO2 提示
 
 ## NFC 故障排除 <a href="#nfc-troubleshooting" id="nfc-troubleshooting"></a>
 
-如果您使用具有 NFC 功能的 FIDO2 身份验证器，例如 YubiKey 或其他硬件安全密钥，您可能需要练习在您的设备中找到 NFC 阅读器，因为 NFC 阅读器在不同的设备上的物理位置不同（比如手机的顶部与底部，或正面与背面）。
-
 {% hint style="success" %}
 硬件安全密钥通常有一个物理插头，在 NFC 识别困难的情况下会更可靠地工作。
 {% endhint %}
 
-### YubiKey NFC 故障排除 <a href="#troubleshooting-yubikey-nfc" id="troubleshooting-yubikey-nfc"></a>
+如果您的 YubiKey 的 NFC 功能无法正常使用：
 
-在移动设备上，您可能会遇到您的 YubiKey 被连续读取两次的情况。当您设备的浏览器打开 YubiKey OTP 网站 (`https://demo.yubico.com/yk`)，如果您的设备多次振动以发出多次 NFC 读取信号时，您就会知道发生了这种情况。
+**检查 NFC 是否已启用：**
 
-**要解决此问题**，请使用 [YubiKey Manager](https://www.yubico.com/support/download/yubikey-manager/) 应用程序为您的密钥禁用 **NFC** → **OTP** 接口：
+1. 下载 [YubiKey Manager](https://www.yubico.com/products/services-software/download/yubikey-manager/)。
+2. 将 YubiKey 插入设备。
+3. 选择 **Interface** 选项卡，然后检查 NFC 部分中的所有复选框是否都已选中。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2aUJJ6C3Gnro62dCtQnUxR/12849b304695f5e9d6430f558feace0e/yubikey_manager.png?fm=webp&h=1280&q=50&w=1724" %}
-YubiKey Manager
-{% endembed %}
+**检查 NFC 配置是否正确：**
 
-{% hint style="danger" %}
-禁用 **NFC** → **OTP** 后，您将无法通过此密钥的 NFC 使用 [YubiKey 方式的两步登录](two-step-login-via-yubikey.md) (OTP)。在这种情况下，通过 USB 的 OTP 仍将按预期运行。
-{% endhint %}
+1. 下载 [YubiKey Personalization Tool](https://www.yubico.com/products/services-software/download/yubikey-personalization-tools/)。
+2. 将 YubiKey 插入设备。
+3. 选择 **Tools** 选项卡。
+4. 选择 **NDEF Programming** 按钮。
+5. 选择您希望 YubiKey 在 NFC 上使用的配置插槽。
+6. 选择 **Program** 按钮。
+
+（**仅 Android）检查如下项目：**
+
+* 在设置过程中勾选了**我的钥匙之一支持 NFC** 复选框。
+* 您的 Android 设备支持 [NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices)，并且[很确定](https://forum.yubico.com/viewtopic1c5f.html?f=26\&t=1302)地可以与 YubiKey NEO 或 YubiKey 5 NFC 一起正常使用。
+* 您已在 Android 设备上启用了 NFC（**设置** → **更多**）。
+* 您的键盘布局/格式/模式已设置为 QWERTY。

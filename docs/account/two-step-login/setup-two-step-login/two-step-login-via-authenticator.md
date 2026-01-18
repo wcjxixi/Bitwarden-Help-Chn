@@ -16,7 +16,7 @@
 
 完成以下步骤以启用验证器 App 方式的两步登录：
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **丢失对两步登录设备的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
 
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../password-manager/import-and-export/export-vault-data.md)来备份密码库数据。
@@ -26,21 +26,15 @@
 
 2、从导航选择**设置** → **安全** → **两步登录**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2BsKs83g4cmiCUwxf2ad83/b2a90e85355f3d937aeb46139203737e/2024-12-02_10-54-31.png?_a=DAJCwlWIZAAB" %}
-两步登录
+{% embed url="https://bitwarden.com/assets/2IjxRoQwl1powHRhah6Bq/39067a5fe6c53732054f323e4afb431b/Screenshot_2025-12-31_at_1.52.00%C3%A2__PM.png?w=1200&fm=avif" %}
+两步登录设置
 {% endembed %}
 
-3、定位到**验证器 App** 选项然后选择**管理**按钮：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5GqQynIX94PhzJQ0tVW1aE/5dcea8d04c8a543daa7f96989f220756/2024-12-02_10-55-22.png?_a=DAJCwlWIZAAB" %}
-两步登录提供程序
-{% endembed %}
-
-将提示您输入您的主密码以继续。
+3、定位到**验证器 App** 选项然后选择**管理**按钮。将提示您输入您的主密码以继续。
 
 4、使用所选的验证器 App 扫描二维码或手动输入密钥。
 
-如果您的移动设备上还没有验证器 App，请下载诸如 Bitwarden Authenticator 等，然后扫描二维码。
+如果您的移动设备上还没有验证器 App，请下载诸如 [Bitwarden Authenticator](../../../bitwarden-authenticator/bitwarden-authenticator.md) 等，然后扫描二维码。
 
 5、扫描后，您的验证器 App 将返回一个 6 位数的验证码。将此代码输入您的网页密码库对话框并单击**启用**按钮。
 

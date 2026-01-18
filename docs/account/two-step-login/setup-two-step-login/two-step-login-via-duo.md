@@ -34,7 +34,7 @@ Bitwarden 应用程序页面
 
 ### 在 Bitwarden 中设置 Duo <a href="#setup-duo-in-bitwarden" id="setup-duo-in-bitwarden"></a>
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **丢失对两步登录设备的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
 
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../password-manager/import-and-export/export-vault-data.md)来备份密码库数据。
@@ -46,17 +46,11 @@ Bitwarden 应用程序页面
 
 2、从导航选择**设置** → **安全** → **两步登录**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2BsKs83g4cmiCUwxf2ad83/b2a90e85355f3d937aeb46139203737e/2024-12-02_10-54-31.png?_a=DAJCwlWIZAAB" %}
-两步登录
+{% embed url="https://bitwarden.com/assets/2IjxRoQwl1powHRhah6Bq/39067a5fe6c53732054f323e4afb431b/Screenshot_2025-12-31_at_1.52.00%C3%A2__PM.png?w=1200&fm=avif" %}
+两步登录设置
 {% endembed %}
 
-3、定位到 **Duo** 选项然后选择**管理**按钮：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5GqQynIX94PhzJQ0tVW1aE/5dcea8d04c8a543daa7f96989f220756/2024-12-02_10-55-22.png?_a=DAJCwlWIZAAB" %}
-两步登录提供程序
-{% endembed %}
-
-将提示您输入您的主密码以继续。
+3、定位到 **Duo** 选项然后选择**管理**按钮。将提示您输入您的主密码以继续。
 
 4、输入从 Duo Admin Portal 中获取到的以下值：
 
@@ -134,15 +128,19 @@ Bitwarden 将仅识别具有电子邮箱地址用户名的用户。没有电子�
 
 您需要一个 Duo 账户才能获取 Bitwarden 所需的一些信息以完成设置。[免费注册](https://signup.duo.com/)，或登录到现有的 [Duo Admin Panel](https://admin.duosecurity.com/login)。要配置 Duo：
 
-1. 在左侧菜单中，导航至 **Applications**。
-2. 选择 **Protect an Application** 按钮。
-3. 在应用程序列表中查找或检索 **Bitwarden**，然后选择 **Protect** 按钮。您将被重定向到一个 Bitwarden 应用程序页面：
+1、在左侧菜单中，导航至 **Applications**。
+
+2、选择 **Protect an Application** 按钮。
+
+3、在应用程序列表中查找或检索 **Bitwarden**，请务必选择标记为 **2FA** 和 **Partner** 的选项，然后选择 **Add** 按钮。您将被重定向到一个 Bitwarden 应用程序页面：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/35CpllTrg8k1IIQrL4Jf5m/d62f04d003eb8e6f6d7ef1da2a9f7e9b/2024-03-01_11-42-32.png?_a=BAJFJtWIB" %}
 Duo Bitwarden 应用程序
 {% endembed %}
 
-记录下 **Integration key**、**Secret key** 和 **API hostname**。当您在 Bitwarden 中设置 Duo 时，需要参考这些值。
+4、记录下 **Integration key**、**Secret key** 和 **API hostname**。当您在 Bitwarden 中设置 Duo 时，需要参考这些值。
+
+5、将 **User access** 切换为 **Enable for all users**。
 
 ### 在 Bitwarden 中设置 Duo <a href="#setup-duo-in-bitwarden" id="setup-duo-in-bitwarden"></a>
 
@@ -164,7 +162,7 @@ Duo Bitwarden 应用程序
 
 3、从导航栏选择**设置** → **两步登录**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4RhAdJgvxpRiLtv0P0XrWT/49162158430b59232d6a86d89edc3b93/Screenshot_2024-02-27_at_9.01.49_AM.png?_a=BAJFJtWIB" %}
+{% embed url="https://bitwarden.com/assets/4RhAdJgvxpRiLtv0P0XrWT/d8a4e561a5293febfbdefe121dd656ab/2024-12-02_11-21-42.png?w=1014&fm=avif" %}
 管理用于组织的 Duo
 {% endembed %}
 

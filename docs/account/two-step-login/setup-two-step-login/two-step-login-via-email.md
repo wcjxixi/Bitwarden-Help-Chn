@@ -6,7 +6,7 @@
 
 电子邮箱方式的两步登录对于所有 Bitwarden 用户是免费的。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 如果您[使用 SSO 登录](../../log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多个方法会导致错误。可以考虑改为设置[免费的验证器方式的两步登录](two-step-login-via-authenticator.md)。
 {% endhint %}
 
@@ -14,7 +14,7 @@
 
 要启用电子邮箱方式的两步登录：
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **丢失对两步登录设备的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
 
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../password-manager/import-and-export/export-vault-data.md)来备份密码库数据。
@@ -24,21 +24,15 @@
 
 2、从导航选择**设置** → **安全** → **两步登录**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2BsKs83g4cmiCUwxf2ad83/b2a90e85355f3d937aeb46139203737e/2024-12-02_10-54-31.png?_a=DAJCwlWIZAAB" %}
-两步登录
+{% embed url="https://bitwarden.com/assets/2IjxRoQwl1powHRhah6Bq/39067a5fe6c53732054f323e4afb431b/Screenshot_2025-12-31_at_1.52.00%C3%A2__PM.png?w=1200&fm=avif" %}
+两步登录设置
 {% endembed %}
 
-3、定位到**电子邮箱**选项然后选择**管理**按钮：
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5GqQynIX94PhzJQ0tVW1aE/5dcea8d04c8a543daa7f96989f220756/2024-12-02_10-55-22.png?_a=DAJCwlWIZAAB" %}
-两步登录提供程序
-{% endembed %}
-
-将提示您输入您的主密码以继续。
+3、定位到**电子邮箱**选项然后选择**管理**按钮。将提示您输入您的主密码以继续。
 
 4、输入您用于接收验证码的电子邮箱地址，然后点击**发送电子邮件**按钮。
 
-{% hint style="info" %}
+{% hint style="success" %}
 如果您有多个电子邮箱地址，用于两步登录的地址不必使用与注册 Bitwarden 时使用的地址相同。
 {% endhint %}
 
@@ -59,7 +53,11 @@
 1、在任一个 Bitwarden App 上输入您的电子邮箱地址和主密码以登录您的密码库。\
 将提示您输入发送到您配置的电子邮箱的 6 位验证码。
 
-2、检查您的收件箱接收到的 6 位数验证码。在密码库登录界面输入此代码。
+2、检查您的收件箱接收到的 6 位数验证码。在**验证您的身份**界面上输入此代码：：
+
+{% embed url="https://bitwarden.com/assets/ewFBMVRtmfZ3fsEC7LZmG/fcda3ce63380357797c2d41987854318/2026-01-12_15-08-12.png?w=754&fm=avif" %}
+验证您的身份
+{% endembed %}
 
 {% hint style="success" %}
 勾选**记住我**复选框，以记住您的设备，有效期 30 天。选择此选项意味着在此期间您无需完成两步登录步骤。

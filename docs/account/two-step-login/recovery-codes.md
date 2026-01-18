@@ -37,9 +37,9 @@
 要使用恢复代码重新获取对您的账户的访问权限：
 
 1. 转到您账户服务器位置的恢复页面：
-   * 美国：[https://vault.bitwarden.com/#/recover-2fa/](https://vault.bitwarden.com/#/recover-2fa/)
-   * 欧盟：[https://vault.bitwarden.eu/#/recover-2fa/](https://vault.bitwarden.eu/#/recover-2fa)
-   * 自托管：`https://your.domain.com/#/recover-2fa/`
+   * **美国**：[https://vault.bitwarden.com/#/recover-2fa/](https://vault.bitwarden.com/#/recover-2fa/)
+   * **欧盟**：[https://vault.bitwarden.eu/#/recover-2fa/](https://vault.bitwarden.eu/#/recover-2fa)
+   * **自托管**：`https://your.domain.com/#/recover-2fa/`
 2. 输入您的电子邮箱地址、主密码和恢复代码。
 3. 选择**提交**。
 
