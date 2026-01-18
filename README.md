@@ -30,8 +30,6 @@ Bitwarden 是一个开源的密码管理系统，您可以使用 Bitwarden 官�
 从 [2025.12.2](docs/release-notes.md#id-2025.12.2) 开始，高级订阅和付费组织的默认存储空间由 1GB 提高为 5GB。
 {% endhint %}
 
-
-
 ## 个人账户比较 <a href="#compare-individual-plans" id="compare-individual-plans"></a>
 
 | 功能             | 免费版                             | 高级版                 |
@@ -114,7 +112,7 @@ Bitwarden 还提供组织账户（用于密码共享等），分别为针对个�
 
 ## 价格和账单 <a href="#price-and-billing" id="price-and-billing"></a>
 
-1. 免费试用付费组织订阅：必须先订阅才能试用（订阅时需要输入付款信息），7 天免费试用期结束时，才会从您的付款方式中扣款。记得在订阅后的 7 天内主动取消订阅。
+1. 免费试用付费组织订阅：必须先订阅才能试用（订阅时需要输入付款信息），7 天免费试用期结束时，才会从您的付款方式中扣款。**记得在订阅后的 7 天内主动取消订阅**。
 2. 支持订阅开始日期 30 天内无条件退款（需要给 [Bitwarden 支持](https://bitwarden.com/contact/)发邮件）。
 
 ### 组织价格比较 <a href="#compare-price" id="compare-price"></a>
