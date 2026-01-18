@@ -14,8 +14,8 @@
 连接 SSO
 {% endembed %}
 
-链接完成后，您即可以使用 SSO 登录到账户了。
+链接完成后，您即可以[使用 SSO 登录到账户](using-login-with-sso.md)了。
 
 {% hint style="info" %}
-链接后，您可以从同一菜单取链接 SSO。此功能主要适用于以下场景：您的身份提供程序 (IdP)（例如 Google、Azure) 或 Bitwarden 中的电子邮件地址发生更改，导致 SSO 失效时；或者 IdP 身份链接到了错误的 Bitwarden 账户时，需先断开现有链接才能建立正确的链接。
+链接后，您可以从同一菜单**取消链接 SSO**。此功能主要适用于以下场景：您的身份提供程序 (IdP)（例如 Google、Azure) 或 Bitwarden 中的电子邮件地址发生更改，导致 SSO 失效时；或者 IdP 身份链接到了错误的 Bitwarden 账户时，需先断开现有链接才能建立正确的链接。
 {% endhint %}

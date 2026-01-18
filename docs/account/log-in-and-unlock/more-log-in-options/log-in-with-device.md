@@ -8,7 +8,7 @@
 
 [了解我们的零知识加密实施方案](log-in-with-device.md#how-it-works)。
 
-## 准备设备登录 <a href="#prepare-to-log-in-with-a-device" id="prepare-to-log-in-with-a-device"></a>
+## 准备使用设备登录 <a href="#prepare-to-log-in-with-a-device" id="prepare-to-log-in-with-a-device"></a>
 
 要设置设备登录：
 
@@ -86,20 +86,20 @@
 
 1、在网页 App 中，选择横幅通知中的**审查登录请求**链接或导航至**设置** → **安全** → **设备**：
 
-{% embed url="https://bitwarden.com/assets/1K9FeC1OVOwyu0T8DMiwOp/90852f4e82b80827750bffd19cb6493d/2025-09-09_09-23-06.png?w=1189&fm=avif" %}
+{% embed url="https://bitwarden.com/assets/1K9FeC1OVOwyu0T8DMiwOp/cc88b5f47f0f243f5a655e77086871c9/2025-12-31_11-10-23.png?w=1200&fm=avif" %}
 在网页 App 上批准请求
 {% endembed %}
 
 2、在**设备**选项卡上，定位并选择待处理的设备请求：
 
-{% embed url="https://bitwarden.com/assets/7GLmOwtReFuUD3uxPQ0LB8/2abd84049d99f0dc0c21158c636ab55d/2025-09-09_09-22-11.png?w=1193&fm=avif" %}
+{% embed url="https://bitwarden.com/assets/7GLmOwtReFuUD3uxPQ0LB8/ed5dbce83b2c428b9c2369270be1d959/2025-12-31_11-08-26.png?w=1200&fm=avif" %}
 网页 App 上的设备列表
 {% endembed %}
 
 3、验证指纹短语然后选择**确认访问**：
 
-{% embed url="https://bitwarden.com/assets/6s6Hdn9L1EyeRfBsmOcfgX/a4e9e4996abc1ac63b8c6f2b3880cd07/2025-09-09_09-22-44.png?w=1189&fm=avif" %}
-使用网页 App 批准访问
+{% embed url="https://bitwarden.com/assets/6s6Hdn9L1EyeRfBsmOcfgX/f6a13a34fdc59f815f7e4d51e981af47/2025-12-31_11-08-37.png?w=1200&fm=avif" %}
+使用网页 App 确认访问
 {% endembed %}
 {% endtab %}
 

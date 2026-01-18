@@ -38,7 +38,7 @@ Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.
 
 6、如果不想将通行密钥用于密码库加密和解密，请取消选中**用于密码库加密**复选框：
 
-{% embed url="https://bitwarden.com/assets/2gsO1o5tDU7s7LXvcpaL7w/9557ba8e4ee421d5dee174881fa129b8/2024-12-04_15-51-07.png?w=1030&fm=avif&q=80" %}
+{% embed url="https://bitwarden.com/assets/2gsO1o5tDU7s7LXvcpaL7w/56a8a797155760fe6fbd1d2e2d92b59b/2025-12-31_11-19-58.png?w=999&fm=avif" %}
 使用通行密钥用于密码库加密
 {% endembed %}
 

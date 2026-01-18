@@ -12,6 +12,10 @@
 
 为确保您的账户安全，Bitwarden 将对**未使用**[**两步登录**](../two-step-login/setup-two-step-login/two-step-login-methods.md)**的用户**要求额外的验证。**当从一个以前未登录过的设备登录时**，在您输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码，以完成登录过程。例如，如果您登录的是以前使用过的移动 App 或浏览器扩展，则不会收到此提示。
 
+{% hint style="info" %}
+验证电子邮件能够送达您的收件箱非常重要。如果您启用了垃圾邮件过滤功能，请检查您的收件箱设置，确保这些电子邮件在接收时不会被直接丢弃。
+{% endhint %}
+
 除非频繁登录新的设备，否则大多数用户不会收到此提示。只有新设备或清除浏览器 cookie 后才需要进行此验证。
 
 如果您经常访问电子邮箱，获取此验证码应该很简单。如果您不想依赖您的 Bitwarden 账户电子邮箱进行验证，您可以通过[验证器 App](../two-step-login/setup-two-step-login/two-step-login-via-authenticator.md)、[硬件钥匙](../two-step-login/setup-two-step-login/two-step-login-via-yubikey.md)或不同的[电子邮箱](../two-step-login/setup-two-step-login/two-step-login-via-email.md)来[设置两步登录](../two-step-login/setup-two-step-login/two-step-login-methods.md)。
@@ -52,7 +56,7 @@ Bitwarden 正在实施这一变更，以增强未激活[两步登录](../two-ste
 
 不包括以下类别的登录：
 
-* 已经设置了两步登录的用户。
+* 已经设置了[两步登录](../two-step-login/setup-two-step-login/two-step-login-methods.md)的用户。
 * 已经使用了 SSO、通行密钥或 API 密钥登录的用户。
 * 自托管用户。
 * 从以前登录过的设备登录的用户。
@@ -66,7 +70,7 @@ Bitwarden 正在实施这一变更，以增强未激活[两步登录](../two-ste
 
 希望保持匿名的用户有多种选择：
 
-* 使用非电子邮箱方式的两步登录选项，包括验证器 App、安全密钥或使用不同电子邮箱的基于电子邮箱的两步登录。
+* 使用非电子邮箱方式的[两步登录](../two-step-login/setup-two-step-login/two-step-login-methods.md)选项，包括验证器 App、安全密钥或使用不同电子邮箱的基于电子邮箱的两步登录。
 * 使用电子邮箱别名转发服务。
 * 自托管 Bitwarden。
 

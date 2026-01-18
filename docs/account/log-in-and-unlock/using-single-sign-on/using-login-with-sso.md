@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/using-sso/)
 {% endhint %}
 
-如果您是某个企业组织的成员，您可能会被要求或被允许使用单点登录登录到 Bitwarden，类似于登录其他工作相关的应用程序的方式：
+如果您是某个企业组织的成员，您可能会被[要求](../../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)或被允许使用单点登录登录到 Bitwarden，类似于登录其他工作相关的应用程序的方式：
 
 1、打开 Bitwarden App，输入您的电子邮箱地址，然后选择**使用单点登录**：
 
@@ -26,11 +26,11 @@ SSO 标识符界面
 
 3、当您被重定向至 IdP（例如 Microsoft Azure、Duo 或 OneLogin）后，请输入您的 SSO 凭据进行登录，操作方式与其他应用程序相同。通常，在此阶段，您的 IdP 会要求您完成 2FA。
 
-4、后续操作取决于您的组织选择的解密选项：
+4、后续操作取决于您的组织选择的[解密选项](../../../admin-console/login-with-sso/sso-decryption-options.md)：
 
 {% tabs %}
 {% tab title="主密码" %}
-输入您的主密码，或者，如果您的账户是新账户，请创建主密码以完成登录：
+输入您的主密码，或者，如果您的账户是新账户，请创建[主密码](../your-master-password.md)以完成登录：
 
 {% embed url="https://bitwarden.com/assets/TJ0nUZ4zs7l38aOQz5WLl/6b95624ef2271198f6fc6447b77d63c1/2025-10-13_12-57-15.png?w=958&fm=avif" %}
 使用主密码解密
@@ -45,7 +45,7 @@ SSO 标识符界面
 {% endhint %}
 {% endtab %}
 
-{% tab title="受信任设备" %}
+{% tab title="设备批准" %}
 选择一个[与您登录的设备建立信任](add-a-trusted-device.md)的选项，以完成登录：
 
 {% embed url="https://bitwarden.com/assets/1zrsBanU5CNhFnDHAXazwP/c94f8bfb5066cb79381676570bd87aa1/2025-10-13_13-06-26.png?w=958&fm=avif" %}
@@ -60,7 +60,13 @@ SSO 标识符界面
 {% endtab %}
 
 {% tab title="Key Connector" %}
-如果您的组织使用 Key Connector，您很可能可以跳到下一步。如果您的账户是在推出 Key Connector 之前创建的，则可能需要输入主密码。这样做将从您的账户中移除主密码。
+如果您的组织使用 Key Connector，将要求您验证其是否已连接到正确的组织：
+
+{% embed url="https://bitwarden.com/assets/fTrb2sTLVMdjtlpf2yNGD/59e7c37be145ef6525128f73864e3aee/2025-12-17_13-45-48.png?w=424&fm=avif" %}
+验证组织 Key Connector
+{% endembed %}
+
+如果您的账户是在推出 Key Connector 之前创建的，则可能需要输入主密码。这样做将从您的账户中移除主密码。
 
 {% hint style="info" %}
 我们鼓励您阅读有关 Key Connector 的信息，以了解从您的账户中[移除主密码的影响](../../../self-hosting/key-connector/about-key-connector.md#impact-on-master-passwords)。
@@ -68,4 +74,8 @@ SSO 标识符界面
 {% endtab %}
 {% endtabs %}
 
-5、最后，可能会要求您使用您在 Bitwarden 中设置的选项完成两步登录。如果您的 IdP 要求，您通常不需要使用 Bitwarden 两步登录（**步骤 3**）。
+5、最后，可能会要求您使用[您在 Bitwarden 中设置的选项](../../two-step-login/setup-two-step-login/two-step-login-methods.md)完成两步登录。如果您的 IdP 要求，您通常不需要使用 Bitwarden 两步登录（**步骤 3**）。
+
+{% hint style="danger" %}
+**如果您是首次加入组织**，则无需完成**步骤 5**，并且在管理员确认您的成员身份之前，您将无法访问组织数据。
+{% endhint %}
