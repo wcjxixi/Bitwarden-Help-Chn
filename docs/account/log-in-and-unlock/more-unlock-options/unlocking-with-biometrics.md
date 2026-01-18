@@ -28,7 +28,7 @@
 如果您无法在设备设置中启用 Windows Hello，请安装 [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/zh-cn/cpp/windows/latest-supported-vc-redist?view=msvc-170)。
 {% endhint %}
 
-2、从 [Bitwarden 下载 ](https://bitwarden.com/download/#downloads-desktop)下载 Bitwarden 桌面 App（若尚未安装）。从 Microsoft Store 安装的 Bitwarden 桌面 App 不支持生物识别解锁。
+2、从 [Bitwarden Downloads](https://bitwarden.com/download/#downloads-desktop) 下载 Bitwarden 桌面 App（若尚未安装）。从 Microsoft Store 安装的 Bitwarden 桌面 App 不支持生物识别解锁。
 
 3、打开 Bitwarden 桌面 App，然后转到**文件** → **设置** 。
 
