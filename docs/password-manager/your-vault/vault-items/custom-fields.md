@@ -8,11 +8,11 @@
 
 * **文本型**：存储自由格式的输入（文本、数字等）的字段值
 * **隐藏型**：存储从视图中隐藏的自由格式输入的字段值（对于使用[隐藏密码访问控制](../../../admin-console/manage-members/member-roles.md)的组织特别有用）
-* **布尔型**：存储布尔值（真/假）的字段值
+* **复选框型**：（有些客户端上叫**布尔型**）存储布尔值（真/假）的字段值
 * **链接型**：链接到项目的用户名或密码的字段值。指定[正确的字段名称](custom-fields.md#custom-field-names)后，链接型自定义字段可用于解决浏览器扩展无法自动填充特定站点的用户名和密码的问题（[了解更多](../../autofill/more-autofill-options/auto-fill-custom-fields.md#using-linked-custom-fields)）。
 
 {% hint style="success" %}
-### 用于密钥的自定义字段 <a href="#custom-fields-for-keys" id="custom-fields-for-keys"></a>
+**用于密钥的自定义字段**
 
 除了常见的网页服务输入（例如 PIN 和安全问题）外，自定义字段还可用于存储**长度最多 5000 个字符**的值，例如 RSA 4096 位 SSH 密钥。
 
