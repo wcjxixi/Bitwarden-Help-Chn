@@ -34,7 +34,7 @@
 {% endtab %}
 
 {% tab title="桌面端" %}
-在添加项目或编辑项目界面，选中**收藏**复选框然后**保存**该项目：
+在添加项目或编辑项目界面，勾选**收藏**复选框然后**保存**该项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2BtbpzNSnydUYBu92j1bCH/0021d6daf3e437a86d3236deb36d70e2/desktopfavorite.gif?_a=DAJCwlWIZAAB" %}
 收藏项目
@@ -42,9 +42,9 @@
 {% endtab %}
 
 {% tab title="移动端" %}
-在添加项目或编辑项目界面，切换**收藏**开关然后**保存**该项目：
+在添加项目或编辑项目界面，选中**收藏**然后**保存**该项目：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1rvKA8zNjd1RktotXjBEUg/3b2b59a7197990c2018053e00adea2d7/2025-01-22_09-46-54.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/1rvKA8zNjd1RktotXjBEUg/f25cc45f33b29b901ec8e1f3ddc96d7c/2025-01-22_09-46-54.png?w=713&fm=avif" %}
 收藏项目
 {% endembed %}
 {% endtab %}
