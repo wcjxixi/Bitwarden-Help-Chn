@@ -33,7 +33,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（浏览�
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
-* **导出成员列表**：所有组织均可下载 .csv 格式的成员列表，其中详细记录了成员使用两步登录的时间、是否可以访问 Secrets Manager 等信息。
+* **导出成员列表**：所有组织均可[下载 .csv 格式的成员列表](admin-console/manage-members/user-management.md#download-list-of-members)，其中详细记录了成员使用两步登录的时间、是否可以访问 Secrets Manager 等信息。
 
 ## 2025.12.2
 

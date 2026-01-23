@@ -24,7 +24,7 @@
 
 要对您的组织可以扩展到的席位数量设置限制：
 
-1、登录 Bitwarden 网页 App 然后使用产品切换器打开管理员控制台：
+1、登录到 Bitwarden [网页 App](../../password-manager/getting-started/getting-started-webvault.md) 然后使用产品切换器打开管理员控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
 产品切换器
@@ -74,19 +74,20 @@
 
 ## 入职用户 <a href="#onboard-users" id="onboard-users"></a>
 
-为了确保组织的安全，Bitwarden 应用了一个 3 步流程来入职新成员，[邀请](user-management.md#invite) → [接受](user-management.md#accept) → [确认](user-management.md#confirm)。
+为了确保组织的安全，Bitwarden 采用了一个 3 步流程来入职新成员：[邀请](user-management.md#invite) → [接受](user-management.md#accept) → [确认](user-management.md#confirm)。此流程旨在通过端到端加密，促进组织和用户之间的安全共享。
 
-{% hint style="success" %}
-本文件涵盖了将用户添加到 Bitwarden 组织的手动入职流程，然而 Bitwarden 也提供两种自动配置用户和群组的方法：
+{% hint style="info" %}
+本页面涵盖了手动将用户添加到组织的流程，此外，也提供了其他自动配置用户和群组的方法：
 
-* 团队和企业组织可以使用 [Azure AD](scim/microsoft-entra-id-scim-integration.md)、[Okta](scim/okta-scim-integration.md)、[OneLogin](scim/onelogin-scim-integration.md) 和 [JumpCloud](scim/jumpcloud-scim-integration.md) 的 SCIM 集成。
-* 团队和企业组织可以使用目录连接器连接到 [Active Directory/LDAP](directory-connector/sync-with-active-directory-or-ldap.md)、[Azure AD](directory-connector/sync-with-microsoft-entra-id.md)、[Google Workspace](directory-connector/sync-with-google-workspace.md)、[Okta](directory-connector/sync-with-okta.md) 和 [OneLogin](directory-connector/sync-with-onelogin.md)。
+* 团队和企业组织可以[使用 SCIM](scim/about-scim.md)。
+* 团队和企业组织可以[使用目录同步](directory-connector/about-directory-connector.md)。
+* 企业组织可以[使用 JIT](../login-with-sso/jit-provisioning.md)。
 {% endhint %}
 
 ### 邀请 <a href="#invite" id="invite"></a>
 
 {% hint style="success" %}
-**对于企业组织**，我们建议在邀请用户之前配置企业策略，以确保加入您的组织时的合规性。
+**对于企业组织**，我们建议在邀请用户之前配置[企业策略](../oversight-visibility/enterprise-policies.md)，以确保加入您的组织时的合规性。
 {% endhint %}
 
 要邀请用户加入您的组织：
@@ -99,7 +100,7 @@
 
 2、导航到**成员**，然后选择 ✚**邀请用户**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7AJjR4oqEnCH3A89YYoWpH/0d8004ac55a7ce2dfb3525be56885e66/2024-12-03_14-02-20.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1200&fm=avif" %}
 邀请成员加入组织
 {% endembed %}
 
@@ -107,15 +108,15 @@
 
 * 输入新用户用于接收邀请的**电子邮箱**地址。您可以使用逗号分隔电子邮件地址，一次最多添加 20 个用户。
 * 选择要应用于新用户的**成员角色**。[成员角色](member-roles.md#member-roles)决定了这些用户在组织层面拥有哪些权限。
-* 在群组标签页中，选择要将此用户添加到哪些[群组](groups.md)中。
-* 在集合标签页中，选择要为此用户授予访问权限的集合以及他们应拥有的每个集合的[权限](member-roles.md#permissions)。
+* 在**群组**标签页中，选择要将此用户添加到哪些[群组](groups.md)中。
+* 在**集合**标签页中，选择要为此用户授予访问权限的集合以及他们应拥有的每个集合的[权限](member-roles.md#permissions)。
 
 4、点击**保存**以邀请指定的用户加入您的组织。
 
 {% hint style="info" %}
-**邀请将在 5 天后过期**，届时需要重新邀请用户。通过勾选每个用户并使用 ≡选项菜单**重新发送邀请**来批量重新邀请用户。
+**邀请将在 5 天后过期**，届时需要重新邀请用户。通过勾选每个用户并使用 **≡选项图标**选择**重新发送邀请**来批量重新邀请用户。
 
-<img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1yj3MLJDTr7zOn5TwP0FGJ/3f09a294f42a4bc8772369648afd450d/2024-12-03_15-03-31.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
+<img src="https://bitwarden.com/assets/1yj3MLJDTr7zOn5TwP0FGJ/67a16c6ee6ee14a92aa350986244e164/Resend_invitations.png?w=1200&#x26;fm=avif" alt="" data-size="original">
 
 如果您是自托管 Bitwarden，您可以使用[环境变量](../../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)来配置邀请的有效期。
 {% endhint %}
@@ -132,10 +133,6 @@
 
 ### 确认 <a href="#confirm" id="confirm"></a>
 
-{% hint style="success" %}
-[邀请](user-management.md#invite) → [接受](user-management.md#accept) → [确认](user-management.md#confirm)，这 3 步流程旨在通过保持端到端加密来简化组织与用户之间的安全共享。[了解更多](../../security/bitwarden-security-whitepaper.md#sharing-data-between-users)。
-{% endhint %}
-
 要确认已接受加入您组织的邀请：
 
 1、登录到 Bitwarden [网页 App](../../password-manager/getting-started/getting-started-webvault.md) 然后使用产品切换器打开管理员控制台：
@@ -148,7 +145,7 @@
 
 3、选择任何`已接受`的用户，然后使用 ≡选项菜单 **✔︎确认所选**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5eRDRAooRSGqRWJYZB5fgz/95422412e2a27069ca903f4a6ec1a8a7/2024-12-03_14-04-59.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/5eRDRAooRSGqRWJYZB5fgz/f3eac670d95664be963d2b38eddf68b5/Confirm_member_to_an_organization.png?w=1200&fm=avif" %}
 确认成员加入组织
 {% endembed %}
 
@@ -162,26 +159,63 @@
 如果已打开**不再提示验证指纹短语**，则可通过清除浏览器缓存和 cookie 来重新激活指纹短语验证。
 {% endhint %}
 
-{% hint style="success" %}
-有关撤销、移除或删除成员账户的信息，请参阅：
-
-* [临时撤销访问权限](revoke-remove/temporarily-revoke-access.md)
-* [永久移除访问权限](revoke-remove/permanently-remove-access.md)
-* [删除成员账户](revoke-remove/delete-member-accounts.md)
-{% endhint %}
-
 ## 管理现有成员 <a href="#manage-existing-members" id="manage-existing-members"></a>
+
+在**成员**页面，您还可以查看和更新​​个人成员的账户，例如将其添加到群组、集合或 Secrets Manager。选择 **≡菜单图标**查看每个用户的可用选项：
+
+{% embed url="https://bitwarden.com/assets/5tspjHKPHunTlRhylIJo5O/c707a3e1780364f8820832c216b5ca64/Update_member.png?w=1200&fm=avif" %}
+更新用户
+{% endembed %}
 
 ### 审查 2FA 状态 <a href="#review-2fa-status" id="review-2fa-status"></a>
 
-用户的 2FA 状态可在**成员**页面查看。如果用户拥有一个 **🔒**图标，说明其 Bitwarden 账户已启用两步登录。
+用户的 2FA 状态可在**成员**页面查看。如果用户拥有一个 **🔒锁定图标**，说明其 Bitwarden 账户已启用两步登录。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/HNlJNX9VJVURxGqrrBdRb/55b9ee7cc268e3400eb3d1f136e161fd/2024-12-03_15-14-09.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/HNlJNX9VJVURxGqrrBdRb/1592f5c29694cf36e973ddac553e95e1/2FA_status.png?w=1200&fm=avif" %}
 2FA 状态
 {% endembed %}
 
 ### 下载成员列表 <a href="#download-list-of-members" id="download-list-of-members"></a>
 
+如果您想在管理控制台之外查看或共享所有组织成员的列表，拥有**管理用户**权限的所有者、管理员和[自定义角色](member-roles.md#custom-role)用户可以导出 `.csv` 文件。所有组织均可使用此功能。
+
+要导出成员列表，请转到**成员**如何选择 **⬇️下载图标**：
+
+{% embed url="https://bitwarden.com/assets/6FCI1z0EtjbNAgeK5DZVx6/0e9b448678e95f10249a009d5d7f5aba/Export_member_list.png?w=1200&fm=avif" %}
+导出成员列表
+{% endembed %}
+
+{% hint style="info" %}
+拥有**管理账户恢复权限**但没有**管理用户**权限的自定义角色用户也可以下载 `.csv` 文件，但该文件仅显示已注册[账户恢复](account-recovery/about-account-recovery.md)的成员。所有其他成员均不包含在该文件中。
+{% endhint %}
+
 #### 包含的数据 <a href="#included-data" id="included-data"></a>
 
+成员列表导出文件包含每个账户的以下信息：
+
+| 列               | 描述                                                                                                                                |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| 电子邮箱            | 账户的电子邮箱地址                                                                                                                         |
+| 名称              | 用户的名称，可在**设置** → **我的账户**中查看                                                                                                      |
+| 状态              | 显示账户的[入职](user-management.md#onboard-users)状态（**已邀请**、**已接受**或**已确认**），或账户是否已从组织中[撤销](revoke-remove/temporarily-revoke-access.md) |
+| 角色              | 用户在组织中的[成员角色](member-roles.md)                                                                                                    |
+| 两步登录            | 显示用户是否使用[两步登录方式](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)登录                                   |
+| 账户恢复            | 显示用户是否已注册[账户恢复](account-recovery/about-account-recovery.md)                                                                       |
+| Secrets Manager | 显示是否已为该成员启用 [Secrets Manager](../../secrets-manager/secrets-manager-overview.md)                                                  |
+| 群组              | 列出包含该成员的所有群组                                                                                                                      |
+
+{% hint style="success" %}
+企业组织可以查看[成员访问权限报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#member-access)，了解成员可以访问哪些集合、他们在每个已分配的集合中的权限级别等等。
+{% endhint %}
+
 ### 移除用户 <a href="#remove-users" id="remove-users"></a>
+
+您也可以在**成员**页面将成员从组织中移除。有三种方式：
+
+* [临时撤销访问权限](revoke-remove/temporarily-revoke-access.md)
+* [永久移除访问权限](revoke-remove/permanently-remove-access.md)
+* [删除组织成员账户](revoke-remove/delete-member-accounts.md)
+
+{% hint style="danger" %}
+删除账户是永久性的，无法撤销或恢复。要创建密码库数据的备份并将其存储在安全位置，请[导出您的密码库数据](../../password-manager/import-and-export/export-vault-data.md)。
+{% endhint %}

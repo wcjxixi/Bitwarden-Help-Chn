@@ -55,5 +55,3 @@
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xe3Vt7l9CCO85RhhmoVJU/47321af7571e298c697a412c650403d6/2024-12-03_15-11-35.png?_a=DAJCwlWIZAAB" %}
 恢复访问权限
 {% endembed %}
-
-当您恢复某个用户的访问权限时，他们无需再次执行[邀请](../user-management.md#invite) → [接受](../user-management.md#accept) → [确认](../user-management.md#confirm)流程。
