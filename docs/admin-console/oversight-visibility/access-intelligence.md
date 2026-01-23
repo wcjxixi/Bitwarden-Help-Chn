@@ -9,7 +9,7 @@
 Access Intelligence 为管理员提供集中、直观的可视性，用于识别哪些凭据[存在风险](access-intelligence.md#determining-risk)，但它不会授予管理员原本无法访问的密码的直接访问权限。
 
 {% hint style="info" %}
-Access Intelligence 不允许管理员查看他们不是组织的所有者的组织项目。为确保全面了解所有潜在的存在风险的凭据，Bitwarden 建议激活[强制组织数据所有权](enterprise-policies.md#enforce-organization-data-ownership)策略，以使所有数据都归组织所有。
+Access Intelligence 不允许管理员查看非组织拥有的项目。为确保全面了解所有潜在的存在风险的凭据，Bitwarden 建议激活[强制组织数据所有权](enterprise-policies.md#enforce-organization-data-ownership)策略，以使所有数据都归组织所有。
 {% endhint %}
 
 ## 运行报告 <a href="#run-the-report" id="run-the-report"></a>
