@@ -23,6 +23,18 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（浏览�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2026.1.0
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.1.0）
+
+### Password Manager
+
+* **更多 2FA 安全密钥（高级版）**：Bitwarden 高级版用户现在最多可以使用 10 个安全密钥用于[两步登录](account/two-step-login/setup-two-step-login/two-step-login-methods.md)，包括[通行密钥](account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)。
+
+### 管理控制台 <a href="#admin-console" id="admin-console"></a>
+
+* **导出成员列表**：所有组织均可下载 .csv 格式的成员列表，其中详细记录了成员使用两步登录的时间、是否可以访问 Secrets Manager 等信息。
+
 ## 2025.12.2
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2025.12.2、浏览器扩展 2025.12.1、移动端 2025.12.1、桌面端 2025.12.1、CLI 2025.12.1）

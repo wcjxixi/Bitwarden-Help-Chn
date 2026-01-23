@@ -170,10 +170,18 @@
 * [删除成员账户](revoke-remove/delete-member-accounts.md)
 {% endhint %}
 
-## 审查用户 2FA 状态 <a href="#review-user-2fa-status" id="review-user-2fa-status"></a>
+## 管理现有成员 <a href="#manage-existing-members" id="manage-existing-members"></a>
+
+### 审查 2FA 状态 <a href="#review-2fa-status" id="review-2fa-status"></a>
 
 用户的 2FA 状态可在**成员**页面查看。如果用户拥有一个 **🔒**图标，说明其 Bitwarden 账户已启用两步登录。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/HNlJNX9VJVURxGqrrBdRb/55b9ee7cc268e3400eb3d1f136e161fd/2024-12-03_15-14-09.png?_a=DAJCwlWIZAAB" %}
-2FA 指示器
+2FA 状态
 {% endembed %}
+
+### 下载成员列表 <a href="#download-list-of-members" id="download-list-of-members"></a>
+
+#### 包含的数据 <a href="#included-data" id="included-data"></a>
+
+### 移除用户 <a href="#remove-users" id="remove-users"></a>
