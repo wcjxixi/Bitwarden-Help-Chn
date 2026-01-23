@@ -59,15 +59,15 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 
 7、选择**关闭**按钮，并确认 **FIDO2 WebAuthn** 选项现在已启用（通过一个绿色的勾号 **✔️** 指示）。
 
-重复此过程以向您的账户中添加最多 5 个 FIDO2 WebAuthn 安全密钥。
+重复此过程以向您的账户中添加最多 5 个 FIDO2 WebAuthn 安全密钥。Bitwarden 高级版账户最多可以向账户添加 10 个 FIDO2 WebAuthn 安全密钥。了解更多有关 [Password Manager 方案](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md)的信息。
 
 {% hint style="info" %}
-我们建议在继续测试两步登录之前保持活动的网页密码库选项卡为打开状态，以防出现配置错误的情况。当您确认它正常工作后，您应该注销所有的 Bitwarden App，以为每个 App 立即激活两步登录。您最终会被自动注销。
+我们建议在继续测试两步登录之前，将活动的网页密码库选项卡保持为打开状态，以防配置错误。确认其正常工作后，请注销所有的 Bitwarden App，以要求每个 App 使用两步登录。您最终会被自动注销。
 {% endhint %}
 
 ## 使用 FIDO2 WebAuthn <a href="#use-fido-2-webauthn" id="use-fido-2-webauthn"></a>
 
-以下内容假设 **FIDO 2 WebAuthn** 是您[已启用的最高优先级方式](two-step-login-methods.md#using-multiple-methods)。完成以下步骤，以使用FIDO2 WebAuthn 设备访问您的密码库：
+以下内容假设 **FIDO2 WebAuthn** 是您[已启用的最高优先级方式](two-step-login-methods.md#using-multiple-methods)。完成以下步骤，以使用FIDO2 WebAuthn 设备访问您的密码库：
 
 1、输入您的电子邮箱地址和主密码登录您的 Bitwarden 密码库。
 
@@ -86,16 +86,17 @@ FIDO2 提示
 ## NFC 故障排除 <a href="#nfc-troubleshooting" id="nfc-troubleshooting"></a>
 
 {% hint style="success" %}
-硬件安全密钥通常有一个物理插头，在 NFC 识别困难的情况下会更可靠地工作。
+硬件安全密钥通常有一个物理插头，在 NFC 识别困难的情况下可以更可靠地工作。
 {% endhint %}
 
 如果您的 YubiKey 的 NFC 功能无法正常使用：
 
 **检查 NFC 是否已启用：**
 
-1. 下载 [YubiKey Manager](https://www.yubico.com/products/services-software/download/yubikey-manager/)。
+1. 下载 [Yubico Authenticator](https://www.yubico.com/products/yubico-authenticator/)。
 2. 将 YubiKey 插入设备。
-3. 选择 **Interface** 选项卡，然后检查 NFC 部分中的所有复选框是否都已选中。
+3. 在 Yubico Authenticator 中打开钥匙然后选择 **Toggle applications**。
+4. 为您的密钥启用可用的所有 NFC 选项。如果没有列出 NFC 选项，则您的密钥可能不支持 NFC。
 
 **检查 NFC 配置是否正确：**
 
@@ -103,12 +104,14 @@ FIDO2 提示
 2. 将 YubiKey 插入设备。
 3. 选择 **Tools** 选项卡。
 4. 选择 **NDEF Programming** 按钮。
-5. 选择您希望 YubiKey 在 NFC 上使用的配置插槽。
+5. 选择您希望 YubiKey 使用 NFC 功能的配置插槽。
 6. 选择 **Program** 按钮。
 
 （**仅 Android）检查如下项目：**
 
-* 在设置过程中勾选了**我的钥匙之一支持 NFC** 复选框。
-* 您的 Android 设备支持 [NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices)，并且[很确定](https://forum.yubico.com/viewtopic1c5f.html?f=26\&t=1302)地可以与 YubiKey NEO 或 YubiKey 5 NFC 一起正常使用。
-* 您已在 Android 设备上启用了 NFC（**设置** → **更多**）。
+* 在设置过程中勾选了**我的某个密钥支持 NFC** 复选框。
+* 您的 Android 设备支持 [NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices)，并且[已知可以正常与 YubiKey NEO 或 YubiKey 5 NFC 配合使用](https://forum.yubico.com/viewtopic1c5f.html?f=26\&t=1302)。
+* 您已在 Android 设备上启用了 NFC 功能（**设置** → **更多**）。
 * 您的键盘布局/格式/模式已设置为 QWERTY。
+
+> **\[译者注]**：QWERTY 是一种键盘布局，指的是键盘左上角第一排字母的排列顺序为 `Q W T R E Y`。绝大多数电脑、手机默认都是 QWERTY。大多数国家使用 QWERTY，法国和比利时使用 AZERTY，德国和部分欧洲国家使用 QWERTZ。
