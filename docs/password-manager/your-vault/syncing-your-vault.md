@@ -14,7 +14,7 @@
 
 Bitwarden App（桌面 App、浏览器扩展、移动 App 和 CLI）将在登录时自动同步，并在解锁时定期同步。您也可以[手动同步](syncing-your-vault.md#what-is-vault-syncing-1)您的密码库，以立即拉取更改。
 
-{% hint style="success" %}
+{% hint style="info" %}
 当您在新设备上安装了 Bitwarden，只需登录到您现有的账户，就会自动拉取您的最新密码库数据。
 {% endhint %}
 
@@ -37,7 +37,7 @@ Bitwarden App（桌面 App、浏览器扩展、移动 App 和 CLI）将在登录
 从菜单栏选择**文件** → **同步密码库**。
 
 {% hint style="info" %}
-只有[当前活动的账户](../../account/log-in-and-unlock/more-log-in-options/account-switching.md)会同步，但即使密码库被锁定，账户也能被同步。
+只有[当前活动的账户](../../account/log-in-and-unlock/more-log-in-options/account-switching.md)会同步，即使密码库被锁定，账户也能被同步。
 {% endhint %}
 {% endtab %}
 

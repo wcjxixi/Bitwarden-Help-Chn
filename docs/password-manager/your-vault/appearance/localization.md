@@ -17,10 +17,10 @@
 
 {% tabs %}
 {% tab title="网页 App" %}
-1、从导航中选择**设置** → **偏好设置**：
+1、从导航中选择**设置** → **外观**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7vKmhsOfJqieQbYRxALV75/ce2505a6fa89531d5784ca6afe45cecd/2024-12-02_11-46-04.png?_a=DAJCwlWIZAAB" %}
-**偏好设置**
+{% embed url="https://bitwarden.com/assets/7vKmhsOfJqieQbYRxALV75/0ed7782f100100ab3d86567e6b1b0a9d/2025-12-31_10-27-36.png?w=1044&fm=avif" %}
+外观页面
 {% endembed %}
 
 2、从**语言**下拉列表中选择一种语言。

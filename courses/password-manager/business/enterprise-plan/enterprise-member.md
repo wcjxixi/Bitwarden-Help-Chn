@@ -315,7 +315,7 @@ iOS 和 Android 上的 Bitwarden
 
 {% embed url="https://vimeo.com/795737043?fl=pl&fe=sh" %}
 
-[此处](../../../../docs/password-manager/more/localization.md)了解更多有关更改 App 语言的信息。
+[此处](../../../../docs/password-manager/your-vault/appearance/localization.md)了解更多有关更改 App 语言的信息。
 
 * **00:15**：更改网页 App 中的语言设置
 * **00:56**：更改桌面 App 中的语言设置

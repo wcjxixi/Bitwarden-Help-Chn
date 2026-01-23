@@ -177,9 +177,9 @@
 
 ### 下载成员列表 <a href="#download-list-of-members" id="download-list-of-members"></a>
 
-如果您想在管理控制台之外查看或共享所有组织成员的列表，拥有**管理用户**权限的所有者、管理员和[自定义角色](member-roles.md#custom-role)用户可以导出 `.csv` 文件。所有组织均可使用此功能。
+如果您想在管理控制台之外查看或分享所有组织成员的列表，拥有**管理用户**权限的所有者、管理员和[自定义角色](member-roles.md#custom-role)用户可以导出 `.csv` 文件。所有组织均可使用此功能。
 
-要导出成员列表，请转到**成员**如何选择 **⬇️下载图标**：
+要导出成员列表，请转到**成员然后**选择 **⬇️下载图标**：
 
 {% embed url="https://bitwarden.com/assets/6FCI1z0EtjbNAgeK5DZVx6/0e9b448678e95f10249a009d5d7f5aba/Export_member_list.png?w=1200&fm=avif" %}
 导出成员列表

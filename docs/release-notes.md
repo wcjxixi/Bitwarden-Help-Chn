@@ -348,7 +348,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 * **更新了通知设计**：浏览器扩展通知已更新为全新的视觉设计。[了解更多](password-manager/autofill/autofill-from/autosave-from-browser-extensions.md)。
 * **支持从桌面和 CLI 导出附件**：现在可以通过桌面 App 和 CLI 将个人密码库文件附件导出为 `.zip` 压缩包。[了解更多](password-manager/your-vault/vault-items/file-attachments.md)。
-* **Android 动态颜色支持**：Bitwarden Android App 现在支持根据壁纸自动应用配色方案。[了解更多](password-manager/more/change-app-theme.md#yi-dong-duan)。
+* **Android 动态颜色支持**：Bitwarden Android App 现在支持根据壁纸自动应用配色方案。[了解更多](password-manager/your-vault/appearance/change-app-appearance.md#yi-dong-duan)。
 * **SSH 批准设置**：在桌面 App 上，启用了 SSH 代理的用户可使用一项新的设置：可以指定 Bitwarden 何时要求您授权访问存储在密码库中的 SSH 凭据。[了解更多](password-manager/developer-tools/ssh/ssh-agent.md)有关 SSH 代理设置的信息。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -852,7 +852,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 ### Password Manager
 
-* **Bitwarden App 可使用新的语言**：在社区翻译人员的贡献下，Bitwarden App 现在提供了新的语言选项！[点击这里](password-manager/more/localization.md)查看完整的语言列表。[了解更多](https://contributing.bitwarden.com/contributing/#localization-l10n)关于 Bitwarden 本地化的信息。
+* **Bitwarden App 可使用新的语言**：在社区翻译人员的贡献下，Bitwarden App 现在提供了新的语言选项！[点击这里](password-manager/your-vault/appearance/localization.md)查看完整的语言列表。[了解更多](https://contributing.bitwarden.com/contributing/#localization-l10n)关于 Bitwarden 本地化的信息。
 * **桌面 App 硬件加速**：Bitwarden 桌面 App 现在可以选择打开或关闭硬件加速以优化性能。该设置默认启用。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
@@ -1082,7 +1082,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 * **激活自动填充策略**：对于企业组织，激活自动填充策略将自动为组织的新成员和现有成员打开页面加载时的自动填充。参阅[这里](admin-console/oversight-visibility/enterprise-policies.md#activate-auto-fill)。
 * **浏览器扩展 - 改进的通知栏**：用于将未检测到的项目添加到您的密码库的通知栏现在为遵守删除单个密码库策略的用户提供了更直观的工作流程。参阅[这里](password-manager/getting-started/getting-started-browserext.md#auto-save-a-login)。
 * **iOS - 选择 Bitwarden 获取验证码**：iOS 16+ 用户现在可以将 Bitwarden 设置为直接从相机 App 扫描代码时用于存储验证码的默认应用程序。参阅[这里](password-manager/your-vault/security-tools/totp.md#bitwarden-authenticator-on-ios)。
-* **移动端 - 在 App 内更改语言**：不同于在设备操作系统上设置语言，用户可以在 Bitwarden 移动 App 中更改语言。参阅[这里](password-manager/more/localization.md#change-app-language)。
+* **移动端 - 在 App 内更改语言**：不同于在设备操作系统上设置语言，用户可以在 Bitwarden 移动 App 中更改语言。参阅[这里](password-manager/your-vault/appearance/localization.md#change-app-language)。
 
 ### 机密管理器 Beta <a href="#secrets-manager-beta" id="secrets-manager-beta"></a>
 
@@ -1308,7 +1308,7 @@ Bitwarden 很自豪地宣布在 12 月的版本中增加了新的企业功能，
 * **管理员密码重置 - 重置后更新密码**：管理员重置的密码现在必须由他们所属的用户在登录 Bitwarden 时立即更新（参阅[这里](admin-console/manage-members/account-recovery/about-account-recovery.md#after-a-password-reset)）。
 * **浏览器扩展 - 自动填充 Span 元素**：浏览器扩展现在可以在 HTML `<span>` 元素的 innerText 中自动填充[自定义字段](password-manager/your-vault/vault-items/custom-fields.md)（参阅[这里](password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md#html-span-elements)）。
 * &#x20;**浏览器扩展 - 自动生物识别提示**：浏览器扩展现在可以在打开时自动提示您生物识别输入。您可以从 **⚙️设置**菜单切换此行为（参阅[这里](account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)）。
-* **网页密码库 - 黑暗模式**：网页密码库现在拥有黑暗模式（参阅[这里](password-manager/more/change-app-theme.md)）。
+* **网页密码库 - 黑暗模式**：网页密码库现在拥有黑暗模式（参阅[这里](password-manager/your-vault/appearance/change-app-appearance.md)）。
 * **CLI - `generate` 密码短语选项**：`bw generate --passphrase` 命令现在包含 `--capitalize` 和 `--includeNumber` 选项（参阅[这里](password-manager/developer-tools/cli/password-manager-cli.md#generate)）。
 
 ## 2021-09-21
