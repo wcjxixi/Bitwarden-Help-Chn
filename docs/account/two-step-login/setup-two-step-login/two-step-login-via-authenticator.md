@@ -7,7 +7,7 @@
 第三方验证器 App（例如独立的 [Bitwarden Authenticator](../../../bitwarden-authenticator/bitwarden-authenticator.md)）方式的两步登录对于所有 Bitwarden 用户是免费的。
 
 {% hint style="info" %}
-某些身份验证器 App（例如 Google 身份验证器）不会自动备份您的 2FA 令牌以方便迁移到新的移动设备。在这些情况下，您应该手动保存每个令牌的身份验证器恢复代码。有关安全存储和使用恢复代码的更多信息，请参阅[恢复代码](../recovery-codes.md)。
+某些验证器 App（例如 Google 身份验证器）不会自动备份您的 2FA 令牌以方便迁移到新的移动设备。在这些情况下，您应该手动保存每个令牌的身份验证器恢复代码。有关安全存储和使用恢复代码的更多信息，请参阅[恢复代码](../recovery-codes.md)。
 
 其他 App 如 Authy 等，支持跨设备备份和同步。在这些情况下，请务必设置一个强大的备份密码并将其记录在您的 Bitwarden 密码库中。
 {% endhint %}
@@ -43,7 +43,7 @@
 6、单击**关闭**按钮，并确认**验证器 App** 选项现在已被启用（通过一个绿色勾号 **✔️** 指示）。
 
 {% hint style="info" %}
-我们建议在继续测试两步登录之前保持活动的网页密码库选项卡为打开状态，以防出现配置错误的情况。当您确认它正常工作后，你应该注销所有的 Bitwarden App，以为每个 App 立即激活两步登录。您最终会被自动注销。
+我们建议在继续测试两步登录之前，将活动的网页密码库选项卡保持为打开状态，以防配置错误。确认其正常工作后，请注销所有的 Bitwarden App，以要求每个 App 使用两步登录。您最终会被自动注销。
 {% endhint %}
 
 ### 在多个设备或验证器上进行设置 <a href="#setup-on-multiple-devices-or-authenticators" id="setup-on-multiple-devices-or-authenticators"></a>

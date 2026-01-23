@@ -25,10 +25,10 @@
 
 | 方式                                                                                                | 设置说明                                        | 订阅要求  |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------- | ----- |
-| FIDO2 WebAuthn 凭据（如 YubiKey 和 Google Titan 等硬件钥匙）                                                 | [设置说明](two-step-login-via-fido.md)          | 全部免费  |
-| 验证器 App（如 [Bitwarden Authenticator](../../../bitwarden-authenticator/bitwarden-authenticator.md)） | [设置说明](two-step-login-via-authenticator.md) | 全部免费  |
-| 电子邮箱                                                                                              | [设置说明](two-step-login-via-email.md)         | 全部免费  |
-| Duo Security 的 Duo Push、短信、电话和安全钥匙                                                                | [设置说明](two-step-login-via-duo.md)           | 要求高级版 |
+| FIDO2 WebAuthn 凭据（如 YubiKey 和 Google Titan 等硬件钥匙）                                                 | [设置说明](two-step-login-via-fido.md)          | 所有人免费 |
+| 验证器 App（如 [Bitwarden Authenticator](../../../bitwarden-authenticator/bitwarden-authenticator.md)） | [设置说明](two-step-login-via-authenticator.md) | 所有人免费 |
+| 电子邮箱                                                                                              | [设置说明](two-step-login-via-email.md)         | 所有人免费 |
+| Duo Security 的 Duo Push、短信、电话和安全密钥                                                                | [设置说明](two-step-login-via-duo.md)           | 要求高级版 |
 | YubiKey OTP（任何 4/5 系列设备或 YubiKey NEO/NFC）                                                         | [设置说明](two-step-login-via-yubikey.md)       | 要求高级版 |
 
 ## 适用于团队和企业的两步登录 <a href="#two-step-login-for-teams-and-enterprise" id="two-step-login-for-teams-and-enterprise"></a>
@@ -37,7 +37,7 @@
 
 | 方式                                 | 设置说明                              | 订阅要求      |
 | ---------------------------------- | --------------------------------- | --------- |
-| Duo Security 的 Duo Push、短信、电话和安全钥匙 | [设置说明](two-step-login-via-duo.md) | 要求团队版或企业版 |
+| Duo Security 的 Duo Push、短信、电话和安全密钥 | [设置说明](two-step-login-via-duo.md) | 要求团队版或企业版 |
 
 此外，企业组织可以通过[策略](../../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)要求两步登录，并且当使用单点登录 (SSO) 时，可以使用您的身份提供程序在 Bitwarden 之外实现相同的保护。
 
@@ -52,7 +52,7 @@
 5. 验证器 App
 6. 电子邮箱
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 如果您[使用 SSO 登录](../../log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多个方式会导致错误。可以考虑改为设置[免费的验证器方式的两步登录](two-step-login-via-authenticator.md)。
 {% endhint %}
 

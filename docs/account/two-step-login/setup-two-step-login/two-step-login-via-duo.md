@@ -22,15 +22,17 @@ Duo 为应用程序用户引入了[通用提示](https://duo.com/docs/universal-
 
 1、在左侧菜单中，导航至 **Applications**。
 
-2、选择 **Protect an Application** 按钮。
+2、选择 **Add an Application** 按钮。
 
-3、在应用程序列表中查找或检索 **Bitwarden**，然后选择 **Protect** 按钮。您将被重定向到 Bitwarden 应用程序页面：
+3、在应用程序目录中查找或搜索 **Bitwarden**，确保选择标记为 **2FA** 和 **Partner** 的应用程序，然后选择 **Add** 按钮。您将被重定向到 Bitwarden 应用程序页面：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/35CpllTrg8k1IIQrL4Jf5m/d62f04d003eb8e6f6d7ef1da2a9f7e9b/2024-03-01_11-42-32.png?_a=BAJFJtWIB" %}
 Bitwarden 应用程序页面
 {% endembed %}
 
-记录下 **Integration key**、**Secret key** 和 **API hostname**。当您在 Bitwarden 中设置 Duo 时，您需要参考这些值。
+4、记录下 **Integration key**、**Secret key** 和 **API hostname**。当您在 Bitwarden 中设置 Duo 时，您需要参考这些值。
+
+5、将 **User access** 切换为 **Enable for all users**。
 
 ### 在 Bitwarden 中设置 Duo <a href="#setup-duo-in-bitwarden" id="setup-duo-in-bitwarden"></a>
 
@@ -52,7 +54,7 @@ Bitwarden 应用程序页面
 
 3、定位到 **Duo** 选项然后选择**管理**按钮。将提示您输入您的主密码以继续。
 
-4、输入从 Duo Admin Portal 中获取到的以下值：
+4、输入从 Duo Admin Portal 中获取到的以下值（参考此选项卡中的上面部分）：
 
 * **Client ID** 输入到 **Integration Key** 字段
 * **Client Secret** 输入到 **Secret Key** 字段
@@ -63,7 +65,7 @@ Bitwarden 应用程序页面
 一个绿色的 `已启用` 消息表明已为您的密码库成功启用了 Duo。通过选择**关闭**按钮并看到 **Duo** 选项上有一个绿色的复选标记（**✔️**）以再次检查。
 
 {% hint style="info" %}
-我们建议在继续测试两步登录之前保持活动的网页密码库选项卡为打开状态，以防出现配置错误的情况。当您确认它正常工作后，您应该注销所有的 Bitwarden App，以为每个 App 立即激活两步登录。您最终会被自动注销。
+我们建议在继续测试两步登录之前，将活动的网页密码库选项卡保持为打开状态，以防配置错误。确认其正常工作后，请注销所有的 Bitwarden App，以要求每个 App 使用两步登录。您最终会被自动注销。
 {% endhint %}
 
 {% hint style="info" %}
@@ -130,9 +132,9 @@ Bitwarden 将仅识别具有电子邮箱地址用户名的用户。没有电子�
 
 1、在左侧菜单中，导航至 **Applications**。
 
-2、选择 **Protect an Application** 按钮。
+2、选择 **Add an Application** 按钮。
 
-3、在应用程序列表中查找或检索 **Bitwarden**，请务必选择标记为 **2FA** 和 **Partner** 的选项，然后选择 **Add** 按钮。您将被重定向到一个 Bitwarden 应用程序页面：
+3、在应用程序目录中查找或搜索 **Bitwarden**，确保选择标记为 **2FA** 和 **Partner** 的应用程序，然后选择 **Add** 按钮。您将被重定向到 Bitwarden 应用程序页面：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/35CpllTrg8k1IIQrL4Jf5m/d62f04d003eb8e6f6d7ef1da2a9f7e9b/2024-03-01_11-42-32.png?_a=BAJFJtWIB" %}
 Duo Bitwarden 应用程序
@@ -215,7 +217,7 @@ Duo 2FA 设置
 
 以下内容假设 **Duo** 是您[已启用的最高优先级方式](two-step-login-methods.md#using-multiple-methods)。对于组织成员来说，**组织层面的 Duo 始终是最优先的方式**。要使用 Duo 两步登录方式访问您的密码库：
 
-1. 在任一个 Bitwarden App 上输入您的电子邮箱地址和主密码以登录您的密码库。系统会出现提示，要求您启动 Duo。启动后，将出现一个 Duo 界面，以开始您的两步登录验证。
+1. 在任一个 Bitwarden App 上输入您的电子邮箱地址和主密码以登录您的密码库。系统会出现提示，要求您**启动 Duo**。启动后，将出现一个 Duo 界面，以开始您的两步登录验证。
 2. 根据您的 Duo 的配置方式，通过以下方式完成验证请求：
    * 从您已注册的设备上批准 **Duo Push** 请求。
    * 在您的 **Duo 移动 App** 或**短信**中找到 6 位验证码，并在密码库登录界面输入此验证码。

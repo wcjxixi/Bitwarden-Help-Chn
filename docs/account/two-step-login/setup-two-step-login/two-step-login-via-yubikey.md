@@ -7,7 +7,7 @@
 YubiKey OTP 方式的两步登录适用于高级用户，包括付费组织（家庭版、团队版或企业版）的成员。可以使用任何[支持 OTP 功能的 YubiKey](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/) ，包括所有 YubiKey 4 和 5 系列设备以及 YubiKey NEO 和 YubiKey NFC。最多可以添加 5 个 YubiKey 到您的账户中。
 
 {% hint style="success" %}
-大多数现代 YubiKeys，包括 5 系列钥匙，都支持 FIDO2 WebAuthn 协议。如果您的钥匙支持（可以使用 [Yubico Authenticator](https://www.yubico.com/products/yubico-authenticator/) 桌面应用程序确定），我们建议按照[这些说明](two-step-login-via-fido.md)将您的钥匙设置为 FIDO2 WebAuthn 设备。
+大多数现代 YubiKey，包括 5 系列钥匙，都支持 FIDO2 WebAuthn 协议。如果您的钥匙支持（可以使用 [Yubico Authenticator](https://www.yubico.com/products/yubico-authenticator/) 桌面应用程序来检测），我们建议按照[这些说明](two-step-login-via-fido.md)将您的钥匙设置为 FIDO2 WebAuthn 设备。
 {% endhint %}
 
 ## 设置 YubiKey <a href="#setup-yubikey" id="setup-yubikey"></a>
@@ -28,7 +28,7 @@ YubiKey OTP 方式的两步登录适用于高级用户，包括付费组织（�
 两步登录设置
 {% endembed %}
 
-3、定位到 **YubiKey OTP 安全钥匙**选项然后选择**管理**按钮。将提示您输入您的主密码以继续。
+3、定位到 **YubiKey OTP 安全密钥**选项然后选择**管理**按钮。将提示您输入您的主密码以继续。
 
 4、将 YubiKey 插入计算机的 USB 端口。
 
@@ -36,31 +36,31 @@ YubiKey OTP 方式的两步登录适用于高级用户，包括付费组织（�
 
 6、触摸 YubiKey 上的按钮。
 
-如果您要在支持 NFC 的移动设备上使用 Yubikey，请勾选**我的钥匙之一支持 NFC** 复选框。
+7、（可选）如果您要在支持 NFC 的移动设备上使用 Yubikey，请勾选**我的某个密钥支持 NFC** 复选框。
 
-7、选择**保存**按钮。一个绿色的 `已启用` 消息表明已成功启用 FIDO U2F 的两步登录。
+8、选择**保存**按钮。一个绿色的 `已启用` 消息表明已成功启用 YubiKey 两步登录。
 
-8、选择**关闭**按钮，并确认 **YubiKey OPT 安全钥匙**选项现在已启用（通过一个绿色的勾号 **✔️** 指示）。
+9、选择**关闭**按钮，并确认 **YubiKey OPT 安全密钥**选项现在已启用（通过一个绿色的勾号 **✔️** 指示）。
 
 重复此过程以向您的账户中添加最多 5 个 YubiKey。
 
 {% hint style="info" %}
-我们建议在继续测试两步登录之前保持活动的网页密码库选项卡为打开状态，以防出现配置错误的情况。当您确认它正常工作后，您应该注销所有的 Bitwarden App，以为每个 App 立即激活两步登录。您最终会被自动注销。
+我们建议在继续测试两步登录之前，将活动的网页密码库选项卡保持为打开状态，以防配置错误。确认其正常工作后，请注销所有的 Bitwarden App，以要求每个 App 使用两步登录。您最终会被自动注销。
 {% endhint %}
 
 ## 自托管设置 <a href="#self-hosted-setup" id="self-hosted-setup"></a>
 
 如果您是组织管理员，则需要在 `global.override.env` 中配置一对环境变量，以允许调用 YubiKey OTP API：
 
-| globalSettings\_\_yubico\_\_clientId | <p>使用从 Yubico 钥匙获取的 ID 替换这个值。</p><p>在<a href="https://upgrade.yubico.com/getapikey/">此处</a>注册 Yubico 密钥。</p> |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
-| globalSettings\_\_yubico\_\_key      | 输入从 Yubico 获取的键值。                                                                                            |
+| globalSettings\_\_yubico\_\_clientId | <p>使用从您的 Yubico 钥匙获取的 ID 替换这个值。</p><p>在<a href="https://upgrade.yubico.com/getapikey/">此处</a>注册 Yubico 密钥。</p> |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| globalSettings\_\_yubico\_\_key      | 输入从 Yubico 获取的密钥的值。                                                                                            |
 
 ## 使用 YubiKey <a href="#use-yubikey" id="use-yubikey"></a>
 
 以下内容假设 **YubiKey** 是您[已启用的最高优先级方式](two-step-login-methods.md#using-multiple-methods)。完成以下步骤，以使用 YubiKey 访问您的密码库：
 
-1、在任一个 Bitwarden App 中输入您的电子邮件地址和主密码登录您的密码库。
+1、使用您的电子邮箱地址和主密码登录您的 Bitwarden 密码库。
 
 2、当出现提示时，将您的 YubiKey 插入计算机的 USB 端口，或将 YubiKey 靠近启用了 NFC 的设备背面：
 
@@ -93,9 +93,10 @@ YubiKey 提示
 
 **检查 NFC 是否已启用：**
 
-1. 下载 [YubiKey Manager](https://www.yubico.com/products/services-software/download/yubikey-manager/)。
+1. 下载 [Yubico Authenticator](https://www.yubico.com/products/yubico-authenticator/)。
 2. 将 YubiKey 插入设备。
-3. 选择 **Interface** 选项卡，然后检查 NFC 部分中的所有复选框是否都已选中。
+3. 在 Yubico Authenticator 中打开钥匙然后选择 **Toggle applications**。
+4. 为您的密钥启用可用的所有 NFC 选项。如果没有列出 NFC 选项，则您的密钥可能不支持 NFC。
 
 **检查 NFC 配置是否正确：**
 
@@ -103,12 +104,14 @@ YubiKey 提示
 2. 将 YubiKey 插入设备。
 3. 选择 **Tools** 选项卡。
 4. 选择 **NDEF Programming** 按钮。
-5. 选择您希望 YubiKey 在 NFC 上使用的配置插槽。
+5. 选择您希望 YubiKey 使用 NFC 功能的配置插槽。
 6. 选择 **Program** 按钮。
 
 （**仅 Android）检查如下项目：**
 
-* 在设置过程中勾选了**我的钥匙之一支持 NFC** 复选框。
-* 您的 Android 设备支持 [NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices)，并且[很确定](https://forum.yubico.com/viewtopic1c5f.html?f=26\&t=1302)地可以与 YubiKey NEO 或 YubiKey 5 NFC 一起正常使用。
-* 您已在 Android 设备上启用了 NFC（**设置** → **更多**）。
+* 在设置过程中勾选了**我的某个密钥支持 NFC** 复选框。
+* 您的 Android 设备支持 [NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices)，并且[已知可以正常与 YubiKey NEO 或 YubiKey 5 NFC 配合使用](https://forum.yubico.com/viewtopic1c5f.html?f=26\&t=1302)。
+* 您已在 Android 设备上启用了 NFC 功能（**设置** → **更多**）。
 * 您的键盘布局/格式/模式已设置为 QWERTY。
+
+> **\[译者注]**：QWERTY 是一种键盘布局，指的是键盘左上角第一排字母的排列顺序为 `Q W T R E Y`。绝大多数电脑、手机默认都是 QWERTY。大多数国家使用 QWERTY，法国和比利时使用 AZERTY，德国和部分欧洲国家使用 QWERTZ。
