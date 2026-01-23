@@ -26,7 +26,7 @@
 两步登录
 {% endembed %}
 
-3、输入您的主密码然后选择**继续**。您的恢复代码将出现：
+4、输入您的主密码然后选择**继续**。您的恢复代码将出现：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/64piqJsX7vN25To16iRFIp/09e977fae9485c0764f832c6bb4b4b04/2024-12-02_11-24-35.png?_a=DAJCwlWIZAAB" %}
 示例恢复代码
