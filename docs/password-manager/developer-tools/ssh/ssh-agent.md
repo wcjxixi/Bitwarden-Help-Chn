@@ -15,13 +15,13 @@ Bitwarden SSH 代理将您的密钥组织并保护在一个安全的位置。SSH
 {% hint style="info" %}
 SSH 代理需要 2025.1.2 或更新版本。
 
-**macOS**：
+~~**macOS**：~~
 
-macOS 商店构建版本目前暂不支持 SSH 代理，[.dmg 下载](https://bitwarden.com/download/)可用于获得 SSH 代理支持。
+~~macOS 商店构建版本目前暂不支持 SSH 代理，~~[~~.dmg 下载~~](https://bitwarden.com/download/)~~可用于获得 SSH 代理支持。~~
 
-**Linux**：
+~~**Linux**：~~
 
-Flatpak 版本目前暂不支持 SSH 代理，[Snap 下载](https://bitwarden.com/download/#downloads-desktop)可用于获得 SSH 代理支持。
+~~Flatpak 版本目前暂不支持 SSH 代理，~~[~~Snap 下载~~](https://bitwarden.com/download/#downloads-desktop)~~可用于获得 SSH 代理支持。~~
 {% endhint %}
 
 ## SSH 密钥存储 <a href="#storing-an-ssh-key" id="storing-an-ssh-key"></a>

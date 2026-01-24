@@ -16,8 +16,8 @@
 
 1、在网页 App 中，导航到**设置** → **安全** → **密钥**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3IHpaOpEB5a13TF3B3RqqB/05511a849898a1d2d46efb2764df0547/2024-12-03_10-47-30.png?_a=DAJCwlWIZAAB" %}
-密钥
+{% embed url="https://bitwarden.com/assets/3IHpaOpEB5a13TF3B3RqqB/fab175095404a90d9d372542745bb9bb/Keys_settings.png?w=1200&fm=avif" %}
+密钥设置
 {% endembed %}
 
 3、选择**查看 API 密钥**按钮然后输入主密码以验证访问权限。
@@ -34,7 +34,7 @@
 
 <img src="../../../../.gitbook/assets/linux-24.png" alt="" data-size="line"><img src="../../../../.gitbook/assets/apple-24.png" alt="" data-size="line"> Bash
 
-```batch
+```shellscript
 export BW_CLIENTSECRET="client_secret"
 ```
 

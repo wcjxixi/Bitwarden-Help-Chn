@@ -854,7 +854,7 @@ export NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 
 <img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line">PowerShell：
 
-```shellscript
+```powershell
 $env:NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 ```
 
