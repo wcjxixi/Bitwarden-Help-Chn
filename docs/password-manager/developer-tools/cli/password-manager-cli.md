@@ -52,7 +52,7 @@ chmod +x </path/to/executable>
 ```
 {% endhint %}
 
-对于 GitHub 上提供的每个 Password Manager CLI 捆绑包，都有一个 OSS 版本（例如 `bw-oss-windows-2024.12.0.zip`）和非 OSS 版本（例如 `bw-windows-2024.12.0.zip`）。非 OSS 版本是分发平台上默认发布的软件包，包含非 OSS 许可下的功能，例如 OSS 版本所缺少的设备批准命令。
+对于 GitHub 上提供的每个 Password Manager CLI 捆绑包，都有一个 OSS 版本（例如 `bw-oss-windows-2024.12.0.zip`）和非 OSS 版本（例如 `bw-windows-2024.12.0.zip`）。非 OSS 版本是分发平台上默认发布的软件包，包含非 OSS 许可下的功能，例如 OSS 版本所缺少的[设备批准](password-manager-cli.md#device-approval)命令。
 {% endtab %}
 
 {% tab title="NPM" %}
@@ -76,7 +76,7 @@ apt install build-essential
 {% tab title="Chocolatey" %}
 要使用 Chocolatey 进行安装：
 
-```batch
+```shellscript
 choco install bitwarden-cli
 ```
 
@@ -86,33 +86,54 @@ choco install bitwarden-cli
 {% tab title="Snap" %}
 要使用 Snap 进行安装：
 
-```batch
+```shellscript
 sudo snap install bw
 ```
 
 在 [snapcraft.io](https://snapcraft.io/bw) 上查看该软件包。
 {% endtab %}
+
+{% tab title="Flatpak" %}
+Bitwarden CLI 包含在 Flatpak 桌面 App 下载中。安装 Flatpak：
+
+```shellscript
+flatpak install flathub com.bitwarden.desktop
+```
+
+在 [Flathub](https://flathub.org/apps/com.bitwarden.desktop) 上查看该软件包。
+
+运行 C​​LI 命令：
+
+```shellscript
+flatpak run --command=bw com.bitwarden.desktop <command>
+
+# use a shell alias to authorize a session
+alias bw="flatpak run --command=bw com.bitwarden.desktop"
+
+bw <command>
+```
+{% endtab %}
 {% endtabs %}
 
 ## 登录 <a href="#log-in" id="log-in"></a>
 
-使用 `login` 命令登录 Bitwarden CLI 共有三种方式，每种方式适用于不同的场景。请查看以下选项以确定使用哪种方式：
+登录之前，请确保您的 CLI 使用 `config` 命令连接到了正确的服务器（例如 [EU 云](../../../security/server-geographies.md)或自托管）（[了解更多](password-manager-cli.md#confirm)）。使用 `login` 命令登录 Bitwarden CLI 共有三种方式，每种方式适用于不同的场景。请查看以下选项以确定使用哪种方式：
 
 * [使用电子邮箱和密码](password-manager-cli.md#using-email-and-password)
 * [使用 API 密钥](password-manager-cli.md#using-an-api-key)
 * [使用 SSO](password-manager-cli.md#using-sso)
 
 {% hint style="success" %}
-[使用电子邮箱和密码](password-manager-cli.md#using-email-and-password)方式登录将使用您的主密码，因此可以将 `login` 和 `unlock` 命令串在一起，以验证您的身份并同时解密您的密码库。如果您直接使用密码库数据，则[使用 API 密钥](password-manager-cli.md#using-an-api-key)或 [SSO](password-manager-cli.md#using-sso) 方式将要求您在 `login` 命令后紧接着使用显式 `bw unlock` 命令。
+无论您使用哪个选项，都要求使用主密码来 `unlock` 客户端，以便使用[会话密钥](password-manager-cli.md#unlock)访问数据。[电子邮箱和主密码](password-manager-cli.md#using-email-and-password)选项将验证您的身份并同时生成会话密钥，但如果使用 [API 密钥](password-manager-cli.md#using-an-api-key)或 [SSO](password-manager-cli.md#using-sso)，则需要您后续使用 `unlock` 命令来生成会话密钥（如果您要直接操作数据）。
 
-这是因为您的主密码是解密密码库数据所必须的密钥的来源。但是，有一些命令不需要您的密码库已解密，包括 `config`、`encode`、`generate`、`update` 以及 `status`。
+[使用受信任设备加入组织](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md#impact-on-master-passwords)的用户将无法通过 CLI 访问数据。但是，有一些命令不需要解密数据，因此无需主密码也可使用，包括 `config`、`encode`、`generate`、`update` 以及 `status`。
 {% endhint %}
 
 ### 使用电子邮箱和密码 <a href="#using-email-and-password" id="using-email-and-password"></a>
 
 电子邮箱和密码方式的登录**建议用于交互式会话场景**。要使用电子邮箱和密码登录：
 
-```batch
+```shellscript
 bw login
 ```
 
@@ -120,7 +141,7 @@ bw login
 
 您可以像如下的示例那样将这些因素组合成一个命令，但是出于安全原因不建议这样操作。
 
-```batch
+```shellscript
 bw login [email] [password] --method <method> --code <code>
 ```
 
@@ -134,7 +155,7 @@ bw login [email] [password] --method <method> --code <code>
 
 [个人 API 密钥](personal-api-key.md)方式的登录**建议用于自动化工作流程或对外部应用程序提供访问的场景**。要使用 API ​​密钥方式登录：
 
-```batch
+```shellscript
 bw login --apikey
 ```
 
@@ -154,7 +175,7 @@ bw login --apikey
 
 [SSO](../../../admin-console/login-with-sso/about-sso.md) 方式的登录**建议用于组织要求 SSO 身份验证的场景**。要使用 SSO 方式登录：
 
-```batch
+```shellscript
 bw login --sso
 ```
 
@@ -181,7 +202,7 @@ alias bw-work="BITWARDENCLI_APPDATA_DIR=~/.config/Bitwarden\ CLI\ Work /path/to/
 
 解锁密码库会生成一个**会话密钥**，此会话密钥作为解密密钥用于与密码库中的数据进行交互。[会话密钥必须用于](password-manager-cli.md#using-a-session-key)执行任何涉及密码库数据的命令（例如：`list`、`get`、`edit`）。您可以在任何时候使用以下方法生成一个新的会话密钥：
 
-```batch
+```shellscript
 bw unlock
 ```
 
@@ -189,13 +210,13 @@ bw unlock
 
 您可以像如下的示例那样为 `bw unlock` 添加 `--passwordenv <passwordenv>` 选项或 `--passwordfile <passwordfiles>` 选项来使用您的主密码，而不需要手动输入：
 
-```batch
+```shellscript
 bw unlock --passwordenv BW_PASSWORD
 ```
 
 将查找环境变量 `BW_PASSWORD`。如果 `BW_PASSWORD` 为非空且具有正确的值，则 CLI 将成功解锁并返回一个会话密钥。
 
-```batch
+```shellscript
 bw unlock --passwordfile ~/Users/Me/Documents/mp.txt
 ```
 
@@ -211,7 +232,7 @@ bw unlock --passwordfile ~/Users/Me/Documents/mp.txt
 
 如果设置了 `BW_SESSION` 环境变量，`bw` 命令将引用该变量，以干净清爽地运行，例如：
 
-```batch
+```shellscript
 export BW_SESSION="5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w=="
 
 bw list items
@@ -219,14 +240,14 @@ bw list items
 
 另外，如果您未设置环境变量，则可以在每个 `bw` 命令中将会话密钥作为选项传递：
 
-```batch
+```shellscript
 bw list items --session "5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w=="
 ```
 
 {% hint style="success" %}
 `BW_SESSION` 环境变量仅绑定到活动的终端会话，因此关闭终端窗口等同于锁定密码库。您也可以通过运行以下命令来销毁一个活动会话密钥以锁定您的密码库：
 
-```shell
+```shellscript
 bw lock
 ```
 {% endhint %}
@@ -237,7 +258,7 @@ bw lock
 
 `create` 命令用于在您的密码库中创建一个新的对象（ `item`，`attachment` 等）：
 
-```batch
+```shellscript
 bw create (item|attachment|folder|org-collection) <encodedJson> [options]
 ```
 
@@ -250,13 +271,13 @@ bw create (item|attachment|folder|org-collection) <encodedJson> [options]
 
 示例：
 
-```batch
+```shellscript
 bw get template folder | jq '.name="My First Folder"' | bw encode | bw create folder
 ```
 
 或：
 
-```batch
+```shellscript
 bw get template item | jq ".name=\"My Login Item\" | .login=$(bw get template item.login | jq '.username="jdoe" | .password="myp@ssword123"')" | bw encode | bw create item
 ```
 
@@ -275,7 +296,7 @@ bw get template item | jq ".name=\"My Login Item\" | .login=$(bw get template it
 
 例如，以下命令将创建一个安全笔记：
 
-```batch
+```shellscript
 bw get template item | jq '.type = 2 | .secureNote.type = 0 | .notes = "Contents of my Secure Note." | .name = "My Secure Note"' | bw encode | bw create item
 ```
 
@@ -289,7 +310,7 @@ bw get template item | jq '.type = 2 | .secureNote.type = 0 | .notes = "Contents
 
 与其他 `create` 操作不同，您无需使用 JSON 处理器或 `encode` 即可创建附件。相反，它使用 `--file` 选项指定要附加的文件，使用 `--itemid` 选项指定要附加到的项目。例如：
 
-```batch
+```shellscript
 bw create attachment --file ./path/to/file --itemid 16b15b89-65b3-4639-ad2a-95052a6d8f66
 ```
 
@@ -301,13 +322,13 @@ bw create attachment --file ./path/to/file --itemid 16b15b89-65b3-4639-ad2a-9505
 
 `get` 命令用于从您的密码库中检索单个对象（ `item`、`username`、`password`等）：
 
-```batch
+```shellscript
 bw get (item|username|password|uri|totp|exposed|attachment|folder|collection|organization|org-collection|template|fingerprint) <id> [options]
 ```
 
 `get` 命令使用项目 `id` 或字符串作为它的参数。如果你使用一个字符串（即除确切的 `id` 以外的任何东西），`get` 将检索您的密码库以寻找一个具有匹配值的对象。例如，下面的命令将返回一个 Github 密码：
 
-```batch
+```shellscript
 bw get password Github
 ```
 
@@ -319,13 +340,13 @@ bw get password Github
 
 `get attachment` 命令用于下载文件附件：
 
-```batch
+```shellscript
 bw get attachment <filename> --itemid <id>
 ```
 
 `get attachment` 命令使用一个 `filename` 和**确切的** `id`。默认情况下，`get attachment` 将附件下载到当前工作目录。你可以使用 `--output` 选项来指定一个不同的输出目录，例如：
 
-```batch
+```shellscript
 bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --output /Users/myaccount/Pictures/
 ```
 
@@ -337,20 +358,20 @@ bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --outp
 
 &#x20;`get template` 命令用于返回对象预期的 JSON 格式（`item`、`item.field`、`item.login` 等）：
 
-```batch
+```shellscript
 bw get template (item|item.field|item.login|item.login.uri|item.card|item.identity|item.securenote|folder|collection|item-collections|org-collection)
 ```
 
 虽然&#x4F60;_&#x53EF;&#x4EE5;_&#x4F7F;用 `get template` 将格式输出到你的屏幕上，但最常见的用法是将输出的数据输送到  `bw create` 操作中，使用 [jq 之类的命令行 JSON 处理器](https://stedolan.github.io/jq/)和 `bw encode` 来处理从模板获取的值，例如：
 
-```batch
+```shellscript
 bw get template folder | jq '.name="My First Folder"' | bw encode | bw create folder
 ```
 
 {% hint style="info" %}
 任何 `item.xxx` 模板都应作为 `item` 模板的子对象使用，例如：
 
-```batch
+```shellscript
 bw get template item | jq ".name=\"My Login Item\" | .login=$(bw get template item.login | jq '.username="jdoe" | .password="myp@ssword123"')" | bw encode | bw create item
 ```
 {% endhint %}
@@ -359,7 +380,7 @@ bw get template item | jq ".name=\"My Login Item\" | .login=$(bw get template it
 
 &#x20;`edit` 用于编辑密码库中的对象（ `item`、`item-collections` 等）：
 
-```batch
+```shellscript
 bw edit (item|item-collections|folder|org-collection) <id> [encodedJson] [options]
 ```
 
@@ -372,13 +393,13 @@ bw edit (item|item-collections|folder|org-collection) <id> [encodedJson] [option
 
 示例：
 
-```batch
+```shellscript
 bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.login.password="newp@ssw0rd"' | bw encode | bw edit item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328
 ```
 
 或者，编辑一个集合：
 
-```batch
+```shellscript
 bw get collection ee9f9dc2-ec29-4b7f-9afb-aac8010631a1 | jq '.name="My Collection"' | bw encode | bw edit item-collections ee9f9dc2-ec29-4b7f-9afb-aac8010631a1
 ```
 
@@ -388,13 +409,13 @@ bw get collection ee9f9dc2-ec29-4b7f-9afb-aac8010631a1 | jq '.name="My Collectio
 
 `list` 命令用于从您的密码库中检索一组对象（ `items`、`folders`、`collections` 等）：
 
-```batch
+```shellscript
 bw list (items|folders|collections|organizations|org-collections|org-members) [options]
 ```
 
 `list` 命令的选项是**筛选器**，其决定了返回的内容，其包括 `--url <url>`、`--folderid <folderid>`、`--collectionid <collectionid>`、`--organizationid <organizationid>` 以及 `--trash`。任何筛选器都接受 `null` 或 `notnull`。在一个命令中组合多个筛选器将执行逻辑 OR 运算，例如：
 
-```batch
+```shellscript
 bw list items --folderid null --collectionid null
 ```
 
@@ -402,7 +423,7 @@ bw list items --folderid null --collectionid null
 
 另外，您可以使用 `--search <search-term>` 来搜索明确的对象。将筛选器和搜索结合在一个命令中将执行逻辑 AND 运算，例如：
 
-```batch
+```shellscript
 bw list items --search github --folderid 9742101e-68b8-4a07-b5b1-9578b5f88e6f
 ```
 
@@ -412,13 +433,13 @@ bw list items --search github --folderid 9742101e-68b8-4a07-b5b1-9578b5f88e6f
 
 `delete` 命令用于从您的密码库中删除一个对象。`delete` 仅使用确切的 `id` 作为其参数。
 
-```batch
+```shellscript
 bw delete (item|attachment|folder|org-collection) <id> [options]
 ```
 
 默认情况下，delete 将「软删除」一个项目（即将其发送到回收站）。您可以使用 `-p`，`--permanent` 选项永久删除项目。
 
-```batch
+```shellscript
 bw delete item 7063feab-4b10-472e-b64c-785e2b870b92 --permanent
 ```
 
@@ -432,13 +453,13 @@ bw delete item 7063feab-4b10-472e-b64c-785e2b870b92 --permanent
 
 `restore` 命令用于从回收站中恢复已删除的对象。`restore` 仅使用确切的 `id` 作为其参数。
 
-```batch
+```shellscript
 bw restore (item) <id> [options]
 ```
 
 例如：
 
-```batch
+```shellscript
 bw restore item 7063feab-4b10-472e-b64c-785e2b870b92
 ```
 
@@ -448,13 +469,13 @@ bw restore item 7063feab-4b10-472e-b64c-785e2b870b92
 
 要创建一个简单的文本 Send：
 
-```batch
+```shellscript
 bw send -n "My First Send" -d 7 --hidden "The contents of my first text Send."
 ```
 
 要创建一个简单的文件 Send：
 
-```batch
+```shellscript
 bw send -n "A Sensitive File" -d 14 -f /Users/my_account/Documents/sensitive_file.pdf
 ```
 
@@ -462,7 +483,7 @@ bw send -n "A Sensitive File" -d 14 -f /Users/my_account/Documents/sensitive_fil
 
 `receive` 命令用于访问 [Bitwarden Send](../../bitwarden-send/about-send.md) 对象。要接收 Send 对象：
 
-```batch
+```shellscript
 bw receive --password passwordforaccess https://vault.bitwarden.com/#/send/yawoill8rk6VM6zCATXv2A/9WN8wD-hzsDJjfnXLeNc2Q
 ```
 
@@ -474,7 +495,7 @@ bw receive --password passwordforaccess https://vault.bitwarden.com/#/send/yawoi
 
 使用 `bw list` 命令从 CLI 直接检索这些信息，例如：
 
-```batch
+```shellscript
 bw list organizations
 bw list org-members --organizationid 4016326f-98b6-42ff-b9fc-ac63014988f5
 bw list org-collections --organizationid 4016326f-98b6-42ff-b9fc-ac63014988f5
@@ -492,13 +513,13 @@ bw list org-collections --organizationid 4016326f-98b6-42ff-b9fc-ac63014988f5
 
 `move` 命令用于将密码库项目[转移到组织](../../organization-members/sharing.md)：
 
-```batch
+```shellscript
 bw move <itemid> <organizationid> [encodedJson]
 ```
 
 `move` 命令要求您 `encode` 集合 ID，并使用一个**确切的** `id`（要共享的对象）和一个**确切的** `organizationid`（要与之共享对象的组织）。例如：
 
-```batch
+```shellscript
 echo '["bq209461-4129-4b8d-b760-acd401474va2"]' | bw encode | bw move ed42f44c-f81f-48de-a123-ad01013132ca dfghbc921-04eb-43a7-84b1-ac74013bqb2e
 ```
 
@@ -508,13 +529,13 @@ echo '["bq209461-4129-4b8d-b760-acd401474va2"]' | bw encode | bw move ed42f44c-f
 
 `confirm` 命令用于确认已接受邀请的[受邀成员](../../../admin-console/manage-members/user-management.md#confirm)加入您的组织：
 
-```batch
+```shellscript
 bw confirm org-member <id> --organizationid <orgid>
 ```
 
 `confirm` 命令使用**确切的**成员 `id` 和**确切的**组织 `id`，例如：
 
-```batch
+```shellscript
 bw confirm org-member 7063feab-4b10-472e-b64c-785e2b870b92 --organizationid 310d5ffd-e9a2-4451-af87-ea054dce0f78
 ```
 
@@ -534,7 +555,7 @@ Bitwarden 建议在启用和使用批量设备批准之前，先审查重要的�
 
 `list` 命令用于显示组织内所有待处理的设备批准请求：
 
-```bash
+```shellscript
 bw device-approval list --organizationid <organization_Id>
 ```
 
@@ -568,13 +589,13 @@ bw device-approval deny-all --organizationid <organizationId>
 
 `config` 命令用于指定 Bitwarden CLI 说使用的设置：
 
-```batch
+```shellscript
 bw config server <setting> [value]
 ```
 
 `bw config` 的主要用途是[将 CLI 连接到自托管 Bitwarden 服务器](../../../self-hosting/connect-clients/connect-individual-clients.md#cli)：
 
-```batch
+```shellscript
 bw config server https://your.bw.domain.com
 ```
 
@@ -584,7 +605,7 @@ bw config server https://your.bw.domain.com
 
 具有唯一设置的用户可以选择使用以下方法单独指定每一个服务的 URL：
 
-```batch
+```shellscript
 bw config --web-vault <url>
 bw config --api <url>
 bw config --identity <url>
@@ -608,7 +629,7 @@ bw config server --key-connector <url>
 
 `sync` 命令用于从 Bitwarden 服务器下载加密的密码库。[登录](password-manager-cli.md#log-in) CLI 后，您又在其他客户端应用程序（例如网页密码库、浏览器扩展、移动应用程序）上对 Bitwarden 密码库进行了某些更改时，此命令很有用。
 
-```batch
+```shellscript
 bw sync
 ```
 
@@ -622,7 +643,7 @@ bw sync
 
 `encode` 命令用于对 stdin（标准输入） 进行 Base 64 编码。在执行 `create` 和 `edit` 操作时，此命令通常与 [json 这样的命令行 JSON 处理器](https://stedolan.github.io/jq/)结合使用，例如：
 
-```batch
+```shellscript
 bw get template folder | jq '.name="My First Folder"' | bw encode | bw create folder
 
 bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.login.password="newp@ssw0rd"' | bw encode | bw edit item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328
@@ -632,13 +653,13 @@ bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.login.password="newp@ssw
 
 `import` 命令用于从之前的 Bitwarden 导出或[其他受支持的密码管理应用程序](../../import-and-export/import-data.md)中导入数据。该命令必须指向一个**文件**并包含如下参数：
 
-```batch
+```shellscript
 bw import <format> <path>
 ```
 
 例如：
 
-```batch
+```shellscript
 bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ```
 
@@ -650,7 +671,7 @@ Bitwarden 支持多种导入格式，太多了而无法在这里一一列出！�
 
 `export` 命令用于将密码库数据导出为 `.json` 或 `.csv` 或[加密的 .json](../../import-and-export/encrypted-exports.md) 文件：
 
-```batch
+```shellscript
 bw export [--output <filePath>] [--format <format>] [--password <password>] [--organizationid <orgid>]
 ```
 
@@ -666,7 +687,7 @@ bw export [--output <filePath>] [--format <format>] [--password <password>] [--o
 
 使用带有 `--organizationid` 选项的 `export` 命令，可以导出组织密码库：
 
-```batch
+```shellscript
 bw export myp@ssw0rd --organizationid 7063feab-4b10-472e-b64c-785e2b870b92 --format json --output /Users/myaccount/Downloads/
 ```
 
@@ -674,13 +695,13 @@ bw export myp@ssw0rd --organizationid 7063feab-4b10-472e-b64c-785e2b870b92 --for
 
 `generate` 命令用于生成一个强密码或[密码短语](password-manager-cli.md#generate-a-passphrase)：
 
-```batch
+```shellscript
 bw generate [--lowercase --uppercase --number --special --length <length> --passphrase --separator <separator> --words <words>]
 ```
 
 默认情况下，`generate` 命令将生成一个包含 14 个字符的密码，其中包含大写字符、小写字符和数字。其等效于：
 
-```batch
+```shellscript
 bw generate -uln --length 14
 ```
 
@@ -696,13 +717,13 @@ bw generate -uln --length 14
 
 使用带有 `--passphrase` 选项的 `generate` 命令，可以生成一个密码短语而不是密码：
 
-```batch
+```shellscript
 bw generate --passphrase --words <words> --separator <separator>
 ```
 
 默认情况下，`bw generate --passphrase` 命令将生成一个 3 个单词的密码短语，并用破折号（-）分隔。这等效于：
 
-```batch
+```shellscript
 bw generate --passphrase --words 3 --separator -
 ```
 
@@ -717,7 +738,7 @@ bw generate --passphrase --words 3 --separator -
 
 `update` 命令用于检查您的 Bitwarden CLI 是否正在运行最新版本。`update` **不会为您自动更新 CLI**。
 
-```batch
+```shellscript
 shbw update
 ```
 
@@ -727,7 +748,7 @@ shbw update
 
 `status` 命令用于返回 Bitwarden CLI 的状态信息，包括[已配置](password-manager-cli.md#config)的服务器 URL、最后一次同步的时间戳（[ISO 8601](https://zh.wikipedia.org/wiki/ISO_8601)）、用户电子邮箱和 ID，以及密码库状态。
 
-```batch
+```shellscript
 bw status
 ```
 
@@ -757,7 +778,7 @@ bw status
 
 `serve` 命令用于启动一个本地紧急 Web 服务器，该服务器用于执行所有可从 CLI 访问的操作，这些操作以来自 HTTP 接口的 RESTful API 调用的形式。
 
-```batch
+```shellscript
 bw serve --port <port> --hostname <hostname>
 ```
 
@@ -777,7 +798,7 @@ bw serve --port <port> --hostname <hostname>
 
 可以添加调试环境变量以获取其他故障排除信息。
 
-```
+```shellscript
 export BITWARDENCLI_DEBUG=true
 ```
 
@@ -804,19 +825,19 @@ Bitwarden CLI 支持 ZSH Shell 补全。要设置 Shell 补全，请使用下面
 
 1、**Vanilla ZSH**：将下面行添加到您的 `.zshrc` 文件中：
 
-```batch
+```shellscript
 eval "$(bw completion --shell zsh); compdef _bw bw;"
 ```
 
 2、**Vanilla (vendor-completions)**：运行如下命令：
 
-```batch
+```shellscript
 bw completion --shell zsh | sudo tee /usr/share/zsh/vendor-completions/_bw
 ```
 
 3、[**zinit**](https://github.com/zdharma/zinit)：运行如下命令：
 
-```batch
+```shellscript
 bw completion --shell zsh > ~/.local/share/zsh/completions/_bw
 zinit creinstall ~/.local/share/zsh/completions
 ```
@@ -827,13 +848,13 @@ zinit creinstall ~/.local/share/zsh/completions
 
 <img src="../../../../.gitbook/assets/linux-24.png" alt="" data-size="line"><img src="../../../../.gitbook/assets/apple-24.png" alt="" data-size="line">Bash：
 
-```batch
+```shellscript
 export NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 ```
 
 <img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line">PowerShell：
 
-```powershell
+```shellscript
 $env:NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 ```
 
