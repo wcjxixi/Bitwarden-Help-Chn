@@ -35,7 +35,7 @@
 如果您在 Bitwarden App 中[登录了多个账户](more-log-in-options/account-switching.md)，超时时间和超时动作需根据每个账户分别设置。
 {% endhint %}
 
-## 密码库超时 <a href="#vault-timeout" id="vault-timeout"></a>
+## 会话超时 <a href="#session-timeout" id="session-timeout"></a>
 
 会话超时（也称为密码库超时）决定了 Bitwarden 在超时之前的非活动状态的时长。「不活动」是由与 Bitwarden 交互后的时间确定的，而不是系统空闲时间。
 
