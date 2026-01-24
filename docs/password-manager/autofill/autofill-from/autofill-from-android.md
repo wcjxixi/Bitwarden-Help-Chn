@@ -60,7 +60,7 @@ Android 内嵌自动填充
 * 确保您使用的是 Android 11+ 和兼容的 IME (Input Method Editor)。
 * 检查您使用的键盘 IME 是否支持内嵌。
 
-### 弹出 <a href="#popup" id="popup"></a>
+### 弹窗 <a href="#popup" id="popup"></a>
 
 当设备聚焦于包含匹配登录项的输入框时，此方法会叠加显示弹出菜单。若密码库处于解锁状态，您将获得立即自动填充或打开密码库的选项：
 
