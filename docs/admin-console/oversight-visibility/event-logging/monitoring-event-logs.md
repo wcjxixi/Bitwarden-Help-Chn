@@ -31,7 +31,7 @@ SIEM 事件监控平台提供了很多特定的字段，这些字段用于监控
 
 ## 关注趋势 <a href="#concerning-trends" id="concerning-trends"></a>
 
-追踪 Bitwarden 使用趋势可以识别可疑活动或潜在的安全威胁：
+跟踪 Bitwarden 使用趋势可以识别可疑活动或潜在的安全威胁：
 
 ### 登录尝试失败异常等级 <a href="#abnormal-rate-of-failed-login-attempts" id="abnormal-rate-of-failed-login-attempts"></a>
 
@@ -93,7 +93,7 @@ SIEM 事件监控平台提供了很多特定的字段，这些字段用于监控
 * 已识别为关键的项目变更
   * `1101` 编辑了项目 `item-identifier`
   * `1105` 将项目 `item-identifier` 移动至组织
-  * `1106` 编辑了项目 `item-identifier` 的收藏集
+  * `1106` 编辑了项目 `item-identifier` 的集合
   * `1107` 查看了项目 `item-identifier`
   * `1108` 查看了项目 `item-identifier` 的密码
   * `1109` 查看了项目 `item-identifier` 的隐藏字段
