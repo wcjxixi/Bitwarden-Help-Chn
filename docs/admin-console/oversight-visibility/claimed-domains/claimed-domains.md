@@ -14,7 +14,7 @@
 使用与域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）入职的组织成员账户（称为[已声明账户](claimed-accounts.md)）还将获得以下好处：
 
 * **更便捷的 SSO 流程**：在 SSO 身份验证期间，这些成员将自动跳过要求他们输入 [SSO 标识符](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#get-your-organization-identifier)的步骤。
-* **自动验证电子邮箱**：入职时这些成员的[电子邮箱将自动验证](../../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)。
+* **自动验证电子邮箱**：入职时，这些成员的[电子邮箱将自动验证](../../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)。
 
 ## 声明域名 <a href="#claim-a-domain" id="claim-a-domain"></a>
 

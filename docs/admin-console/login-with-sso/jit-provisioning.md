@@ -4,27 +4,27 @@
 对应的[官方文档地址](https://bitwarden.com/help/jit-provisioning/)
 {% endhint %}
 
-使用 SSO 的企业组织支持即时 (JIT) 配置成员。除 SSO 指南中记载的 SAML 或 OIDC 配置流程外，无需额外设置即可实现 JIT 功能。
+使用 [SSO](about-sso.md) 的企业组织支持即时 (JIT) 配置成员。除 **SSO 指南**中记载的 SAML 或 OIDC 配置流程外，无需额外设置即可实现 JIT 功能。
 
 ## 推荐的 JIT 策略 <a href="#recommended-jit-strategy" id="recommended-jit-strategy"></a>
 
-优化的即时配置策略可以为您的成员提供最简单的注册流程。作为管理员，通过以下方式帮助您的成员快速轻松地加入：
+优化的 JIT 配置策略可以为您的成员提供最简单的注册流程。作为管理员，通过以下方式帮助您的成员快速轻松地加入：
 
 * **务必**通过 [SCIM](../manage-members/scim/about-scim.md)、[目录连接器](../manage-members/directory-connector/about-directory-connector.md)或[手动](../manage-members/user-management.md#confirm)向成员发送电子邮件邀请。
   * 使用 SCIM 或目录连接器的额外优势是，可将[群组及群组成员资格](../manage-members/groups.md)同步到您的组织（即时配置本身不支持这一功能），自动将成员分配到群组中，以实现高效的[集合分配](../manage-shared-items/collections/assign-users-to-collections.md)。
 * **不应**允许成员在被邀请加入组织之前预先创建 Bitwarden 账户。
 
 {% hint style="success" %}
-通过邀请发起的 JIT 新账户配置可以绕过管理员或成员可能需要执行的几个步骤（请参阅[非标准注册](jit-provisioning.md#fei-biao-zhun-zhu-ce)）。该策略还可以确保由于[受信任设备](trusted-devices/about-trusted-devices.md)或 [Key Connector](../../self-hosting/key-connector/about-key-connector.md) 实施结果而不应拥有主密码的成员不会在其账户上设置主密码。
+通过邀请发起的新账户 JIT 配置可以绕过管理员或成员通常需要执行的几个步骤（请参阅[**非标准注册**](jit-provisioning.md#non-standard-signup)）。该策略还可以确保由于[受信任设备](trusted-devices/about-trusted-devices.md)或 [Key Connector](../../self-hosting/key-connector/about-key-connector.md) 实施结果而不应拥有主密码的成员不会在其账户上设置主密码。
 {% endhint %}
 
 ### 成员注册流程 <a href="#member-signup-process" id="member-signup-process"></a>
 
-使用推荐的 JIT 策略配置成员只需要：
+使用**推荐的 JIT 策略**配置成员只需要：
 
 1. 点击组织邀请电子邮件中包含的**完成账户设置**按钮。
 2. 出现提示时，使用其 SSO 凭据登录其 IdP。如果成员已与 IdP 建立了活动会话，则跳过此步骤。
-3. 根据您的组织选择的解密方式：
+3. 根据您的组织选择的[解密方式](sso-decryption-options.md)：
    * 如果使用**主密码解密**方式，请创建一个主密码。
    * 如果使用**受信任设备解密**方式，请选择是否记住该设备。
 

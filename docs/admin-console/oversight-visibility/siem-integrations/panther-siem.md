@@ -26,15 +26,9 @@ Panther 日志源
 
 {% embed url="https://bitwarden.com/assets/4mefTa7wGIZ6Kc62Mf9oNu/ab043ca54203609664765bcc0132158d/Panther_integration_marketplace.png?w=1028&fm=avif" %}
 
-{% embed url="https://bitwarden.com/_gatsby/image/32d1383c4bd0b796fd58f67bc9348a8b/b0a95e30dca9e0b43e12c10499df5e09/Panther%20integration%20marketplace.webp?eu=8c8f01e0e4c8f8815d68a5d269266938b56c06f9fa0530d03f37b2aa4bfa9e8470f34c5424902ee4246d59dedbb247bd36c67f3419e6d1dbc7bd4aa7e867f95c54d758ba34b57807582accfee5f6074239cf1c5ef0d79e0cf26924d7e2b4b77011521a2cfa7cb8d0bdaa3266e4802c36e0eee26a2581a167ff4b03059c4d32e237ffc68f705dbb8af301b1b3aab60e8fc2b46b5d418dfb686570531b05b87bdff4b543064043462066c8ad259168c9c8790330715e5b00a4363fd457fb6f37c3edfda759de7c7eb3fb9a317185c1af85e54eb34a27b98b7ffcc054235049f944efed3fae8d3a6953d068a1c008f25f5466159c5cd773&a=w%3D850%26h%3D621%26fm%3Dwebp%26q%3D75&cd=2023-07-27T21%3A13%3A09.624Z" %}
-Panther 载入日志
-{% endembed %}
-
 4、在目录中搜索 **Bitwarden**。
 
 {% embed url="https://bitwarden.com/assets/3sSNvUFqgN8dwEWrfe0UFM/f9c1473e113c9851c506720992dfef2a/bitwarden_app.png?w=1167&fm=avif" %}
-
-{% embed url="https://bitwarden.com/_gatsby/image/52821ccb79a99003e3fe18011c0da187/4af4e8ed1673967d8b7daae7cd91fa52/bitwarden%20app.webp?eu=dc8e59e7b79df88e5c3ca7823e75356fb13904adfc0431d83e35e3ac1ea89d802df54b0121952eb67a695f8ad2e44ae864c22c601ebbd08f96ef1ff2ec30fe0d57d15bba60e0740f052b92f7b0f657436a92135bf58ac800a0687580b6e2e6244a011d22a178eed7b9ff3630e6d52f37e0eee26a2581a167ff4b03059c4d32e237ffc68f705dbb8af301b1b3aab60e8fc2b46b5d418dfb686570531c1b8e53fdc0c445264721141c40a9ed0e9261f3c04103372a0d5e07f0646fd154f83f38cbe1faf258d97c7ce3a8c03872d295fbd6ef4bb3782fa38876ebd66e24615cec53b3fc25a0&a=w%3D850%26h%3D449%26fm%3Dwebp%26q%3D75&cd=2023-07-27T21%3A13%3A09.622Z" %}
 Bitwarden 日志集成
 {% endembed %}
 

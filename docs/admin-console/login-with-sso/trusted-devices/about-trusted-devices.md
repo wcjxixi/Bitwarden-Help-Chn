@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/about-trusted-devices/)
 {% endhint %}
 
-受信任设备 SSO 允许用户[使用 SSO 进行身份验证](../about-sso.md)，并使用设备存储的加密密钥解密其密码库，而无需输入主密码。受信任是指经用户或管理员批准可用于无密码登录的 Bitwarden App，例如浏览器扩展或移动 App 实例。即使位于同一台计算机或智能手机上，每个 Bitwarden App 仍将作为独立的受信任设备，并拥有单独的批准权限。
+受信任设备 SSO 允许用户[使用 SSO 进行身份验证](../about-sso.md)，并使用设备存储的加密密钥解密其密码库，而无需输入主密码。受信任设备是指[经用户](../../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)或[经管理员](approve-a-trusted-device.md)批准的可用于无密码登录的 Bitwarden App，例如浏览器扩展或移动 App 实例。即使位于同一台计算机或智能手机上，每个 Bitwarden App 仍将作为独立的受信任设备，并拥有单独的批准权限。
 
 受信任设备 SSO 可为企业终端用户提供零知识和端到端加密的无密码体验。这可以防止用户因忘记主密码而被锁定，让他们享受简化的登录体验。
 
@@ -92,7 +92,7 @@
 {% endtab %}
 {% endtabs %}
 
-### 用于受信设备的密钥 <a href="#keys-used-for-trusted-devices" id="keys-used-for-trusted-devices"></a>
+### 受信设备使用的密钥 <a href="#keys-used-for-trusted-devices" id="keys-used-for-trusted-devices"></a>
 
 本表格提供了有关上述过程中所使用的每一种密钥的更多信息：
 

@@ -314,7 +314,7 @@ splunk clean eventdata -index bitwaren_events
 
 ## 故障排除 <a href="#troubleshooting" id="troubleshooting"></a>
 
-* Splunk Enterprise 用户，App 将记录到：`/opt/splunk/var/log/splunk/bitwarden_event_logs.log`
+* 对于 Splunk Enterprise 用户，App 将记录到：`/opt/splunk/var/log/splunk/bitwarden_event_logs.log`
 
-如果您遇到任何错误，或者 Bitwarden App 无法正常运行，用户可以检查日志文件中的错误或参阅 [Spunk 文档](https://docs.splunk.com/Documentation/Splunk/9.2.0/Indexer/RemovedatafromSplunk)。
+如果您遇到任何错误，或者 Bitwarden App 无法正常运行，用户可以检查该日志文件中的错误或参阅 [Spunk 文档](https://docs.splunk.com/Documentation/Splunk/9.2.0/Indexer/RemovedatafromSplunk)。
 
