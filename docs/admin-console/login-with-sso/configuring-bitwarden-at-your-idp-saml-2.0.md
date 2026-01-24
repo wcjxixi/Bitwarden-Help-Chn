@@ -1,5 +1,7 @@
 # \*在您的 IdP 上配置 Bitwarden（SAML 2.0）
 
+
+
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-providers/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/_articles/login-with-sso/saml-providers.md)
 {% endhint %}
@@ -14,7 +16,7 @@
 | Outbound Signing Algorithm           | Azure + Bitwarden 需匹配                      | Signature Algorithm           | OneLogin + Bitwarden 需匹配      | G-Suite + Bitwarden 需匹配          | Signature Algorithm + Bitwarden 需匹配                |
 | Signing Behavior                     | 使用默认值，如果 IdP 请求，Bitwarden 将签名              | 使用默认值，如果 IdP 请求，Bitwarden 将签名 | 使用默认值，如果 IdP 请求，Bitwarden 将签名 | G-Suite + Bitwarden 需匹配          | Digest Algorithm + Bitwarden 需匹配                   |
 
-## 身份提供程序配置 <a href="#identity-provider-configuration" id="identity-provider-configuration"></a>
+## 身份提供程序 (IdP) 配置 <a href="#identity-provider-configuration" id="identity-provider-configuration"></a>
 
 | **Bitwarden 字段**                | **Azure AD 字段**       | **JumpCloud 字段**          | **OneLogin 字段**          | **G-Suite 字段**                 | **Okta 字段**                         |
 | ------------------------------- | --------------------- | ------------------------- | ------------------------ | ------------------------------ | ----------------------------------- |
@@ -41,7 +43,7 @@ Question 1: Blue",https://www.wellsfargo.com/home.jhtml,john.smith,password12345
 Notes can span multiple lines.",,,,,
 ```
 
-{% file src="../.gitbook/assets/bitwarden_export (1).csv" %}
+{% file src="../../../.gitbook/assets/bitwarden_export (1).csv" %}
 Okta 示例下载
 {% endfile %}
 

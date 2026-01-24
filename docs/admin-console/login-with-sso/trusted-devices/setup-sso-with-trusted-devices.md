@@ -8,7 +8,7 @@
 
 1、登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/919a2c332ed6a53707f80ac3f734e0a8/2024-06-04_10-13-18.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&fm=avif" %}
 产品切换器
 {% endembed %}
 
@@ -29,13 +29,13 @@
 
 5、在「成员解密选项」部分中选择**受信任设备**选项。
 
-激活后，用户可以开始使用受信任设备解密其密码库。
+激活后，用户即可开始使用受信任设备解密其密码库。
 
-如果您期望让没有主密码的成员**只能**使用受信任设备，请指导用户从组织邀请中选择**登录** → **企业 SSO** 以启动 JIT 配置。管理员/所有者仍应使用**创建账户**选项，以便他们拥有主密码，以用于冗余和故障转移目的。
+加入使用受信任设备 SSO 的组织时，管理员和所有者将被提示创建主密码以实现冗余和故障转移，但普通用户角色的成员无法设置主密码。
 
 {% hint style="danger" %}
 从受信任设备 SSO 迁移到其他成员解密选项之前，请注意以下几点：：
 
 * 从受信任设备 SSO 迁移到主密码解密时，任何没有主密码的组织成员在下次登录时都会被提示创建一个主密码。
-* **不支持**从受信任设备 SSO 迁移到 Key Connector。
+* **不支持**从受信任设备 SSO 迁移到 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
