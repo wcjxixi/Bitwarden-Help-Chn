@@ -43,7 +43,7 @@ Microsoft Sentinel Bitwarden 事件日志 App
 3、导航到组织的**设置** → **组织信息**界面，然后选择**查看 API 密钥**按钮。系统会要求您重新输入主密码，以访问 API 密钥信息。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6gHjAyqgeqDj6UPT6agsBK/3a614e043cb3836a41bd68f226835e53/2024-12-04_09-51-07.png?_a=DAJCwlWIZAAB" %}
-组织 api 信息
+组织 API 信息
 {% endembed %}
 
 4、返回 Microsoft Sentinel 选项卡。在配**置**页面上，填写以下字段：

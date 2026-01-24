@@ -18,13 +18,13 @@ Elastic 是一种可提供搜索和可观察性选项的解决方案，用于监
 
 1、在 Elastic 主界面上，向下滚动然后找到 **Add Integrations**。
 
-{% embed url="https://bitwarden.com/_gatsby/image/a625c675d98dc2ac464791b240de13a0/35e52b1d1ae6b8f567f061c4d4f12f29/2023-09-08_10-15-52.webp?eu=df8b59efe6ccae870d39f4d26d70343ae13c05a3ad0530d16e31e4a647a8998e25f31a0627c77bb62c6052d686e74ab96e937b3048ec84d9c5ef4bf3ef37fe5b538152ef61e02405502a95aab8f10f466dc4120aa983c100f66e74ddb1e1be7910521673ec3ef8c2e6b62a3dedd27867a9a8f56a3393e83bb5561d4a954d35e363f9ce8d7544ef98b842a8e1f1aa729c948d78470a9fb944637e25462f9752bce5d1796e312e4908339da95fc668c3e76f1c602a085b56a562398650f8643291e7aea85fc6787be3abd431799bc3a6efec1ab12b73faca25b7c2652d&a=w%3D850%26h%3D213%26fm%3Dwebp%26q%3D75&cd=2023-12-06T13%3A28%3A13.489Z" %}
+{% embed url="https://bitwarden.com/assets/3Ka8ZepztzAq9YiGJO7pSM/879c6c6719eac019f4eb53f5383b3e92/2023-09-08_10-15-52.png?w=1200&fm=avif" %}
 添加 Elastic 集成
 {% endembed %}
 
 2、进入集成目录后，在搜索字段中输入 **Bitwarden** 然后选择 Bitwarden。
 
-{% embed url="https://bitwarden.com/_gatsby/image/886eb47656b4d3df17bfbf7463fa5373/d8e979df780001c66022f23ae08b06b0/2023-09-08_10-21-12.webp?eu=de8852e2e1c0ff8e0668a4833926663de33d50aaaa533e856b35e2af1ba9cdd776f3180472c178b42d6b58de80b345b96ecf7f331be685dec7bb1bf7bf3cff5b05840eee60b778520528c6afbaad420128851047beda9559f43831cab6f7e1215a13496feb64e6d4a8b63226eed06968ebe0ae7322c5b47dbd4e2310885f30a524bee68c601784cdf519a59086b608999ee72f0f48d8f730207345160de528eaadb706276b20110835cffa5fc73089b43c1e623e5e561ef76f55d155e66e30dee5f9bf1d872d&a=w%3D850%26h%3D398%26fm%3Dwebp%26q%3D75&cd=2023-12-06T13%3A28%3A13.492Z" %}
+{% embed url="https://bitwarden.com/assets/5mlMtswqip5Fbc9Z3u6zFX/1d202883452499e85a852fb9ac01e70a/2023-09-08_10-21-12.png?w=1200&fm=avif" %}
 Bitwarden Elastic 集成
 {% endembed %}
 
@@ -32,13 +32,13 @@ Bitwarden Elastic 集成
 
 4、如果这是您第一次运行 Elastic 集成，则需要安装 Elastic Agent。在以下界面上，选择 **Install Elastic Agent** 然后按照安装说明进行操作。
 
-{% embed url="https://bitwarden.com/_gatsby/image/40634aca157c5f34616d3edb5c8dabb4/e6e4fa4772e717496252877322331d72/2023-09-08_10-24-05.webp?eu=db8f58e2e7cff58e5d6da7836820606de36c06abaf0231d23962eca74badca8e23a64f5d22917fe029605b88d5b110b96ecf71641ce9d08fc6b510f1b964f85e05d652e961b57053572d91fdb5f45543629e5e1ce1c0c217bc342f85b2e6f46e4a144a7aeb39edc5afb76b31f49c2870b4e5e0746494a325a71541568d1b38fd36edd187454ab5ccc816be9a9bf573cf9af87b0f4689a2312623191658bc7be8f6b103243a21135b33ccac5b963596e03b1c7e215e5d00ea6733cd55f30330c3f9f9a540d97f65a1f69e&a=w%3D850%26h%3D411%26fm%3Dwebp%26q%3D75&cd=2023-12-06T13%3A28%3A13.486Z" %}
+{% embed url="https://bitwarden.com/assets/2v3y1bfqiFdk2H9aLElJ26/f86ba44de90afcc37e38c06233ad0f70/2023-09-08_10-24-05.png?w=1200&fm=avif" %}
 安装 Elastic 代理
 {% endembed %}
 
 5、要运行 Bitwarden 集成，需要使用 Elastic Agent 来维护集成数据。安装完成后，Elastic 会检测安装是否成功。成功设置代理后，选择 **Add the integration**。
 
-{% embed url="https://bitwarden.com/_gatsby/image/ce6743ea64b82be184e0f37c9e406d5a/61d7e14fc604d565a03d8d4e26ab5850/2023-11-07_11-55-35.webp?eu=dd8a05e6e2c9f4810c6fa3803975333ce23957a3f80534d53536e2fc4afa97d02da64f5772c67de72d6a598adbe84bb36497716748e8818b94ee4efce967a90d54d153bc63e62406052fcea6f4b1460662d90501fcd29f5de0732190b3e2f4334c145f35f62ffc9eebeb6b37f6d92e64e2ebe1297ac0ae3888510b35bf581bbc6ce1cc973b4598b5c95abdf9ecab0bc89bb2290641dda63325214d1d5ee92aeaa7e70772392e410964cda80ed86396b43f016022435f0498663bcd50fe7132c6fabbff0a&a=w%3D850%26h%3D392%26fm%3Dwebp%26q%3D75&cd=2023-12-06T13%3A28%3A13.481Z" %}
+{% embed url="https://bitwarden.com/assets/25pXseQDpZp8jly8kFKIub/22257e4116e67f12647a2e33071ba37f/2023-11-07_11-55-35.png?w=1200&fm=avif" %}
 Elastic 设置
 {% endembed %}
 

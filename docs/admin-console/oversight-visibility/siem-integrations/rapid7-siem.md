@@ -42,7 +42,7 @@ Rapid7 插件
 
 6、导航到组织的**设置** → **组织信息**界面，然后选择**查看 API 密钥**按钮。系统将要求您重新输入主密码以访问您的 API 密钥信息。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6gHjAyqgeqDj6UPT6agsBK/eb814da2078bbc94c9164f9c2bb44600/2024-03-21_09-38-04.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/6gHjAyqgeqDj6UPT6agsBK/3a614e043cb3836a41bd68f226835e53/2024-12-04_09-51-07.png?w=1175&fm=avif" %}
 组织 API 信息
 {% endembed %}
 
@@ -93,6 +93,8 @@ Rapid7 插件
 ### 添加工作流步骤 <a href="#add-a-workflow-step" id="add-a-workflow-step"></a>
 
 1、在工作流编辑器上，选择 ✚加号图标以添加新步骤。
+
+{% embed url="https://bitwarden.com/assets/6B6GApClPXwr3yypKZJ5N0/38a6edc616bd3f23e3ee07ef4f9dfaeb/2024-08-20_12-26-54.png?w=262&fm=avif" %}
 
 2、选择 ✚**操作**以添加新操作。从插件列表中选择 **Bitwarden** 。
 
