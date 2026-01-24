@@ -12,13 +12,13 @@ Bitwarden CLI
 
 Bitwarden CLI 是自带文档的。在命令行中，使用以下命令了解可用的命令：
 
-```batch
+```shellscript
 bw --help
 ```
 
 或者，在任何 `bw` 命令上传递 `--help` 选项，以查看命令可用的选项和示例：
 
-```batch
+```shellscript
 bw list --help
 
 bw share --help
@@ -28,33 +28,49 @@ bw share --help
 
 ## 下载和安装 <a href="#download-and-install" id="download-and-install"></a>
 
-可以在 Windows、macOS 和 Linux 发行版上跨平台使用 CLI。根据需要选择下载和安装 Bitwarden CLI 的方式：
+可以在 Windows、macOS 和 Linux 发行版上跨平台使用 CLI。要下载和安装 Bitwarden CLI：
+
+{% hint style="info" %}
+对于 arm64 设备，请使用 `npm` 安装 CLI。
+{% endhint %}
 
 {% tabs %}
 {% tab title="本地可执行文件" %}
-CLI 的本地打包版本可用于每个平台，并且无须依赖。使用以下链接之一下载：
+CLI 的本地打包版本可用于每个平台，并且无须依赖。使用以下链接下载：
 
 * <img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line"> [Windows x64](https://vault.bitwarden.com/download/?app=cli\&platform=windows)
 * <img src="../../../../.gitbook/assets/apple-24.png" alt="" data-size="line"> [macOS x64](https://vault.bitwarden.com/download/?app=cli\&platform=macos)
 * <img src="../../../../.gitbook/assets/linux-24.png" alt="" data-size="line"> [Linux x64](https://vault.bitwarden.com/download/?app=cli\&platform=linux)
 
-{% hint style="success" %}
-在 UNIX 系统中，您可能会收到 `Permission denied` （权限被拒绝）的消息。通过运行下面的命令授予权限：：
+请注意，当使用下载的本机可执行文件时，您需要将可执行文件添加到您的 PATH 中，或者从文件下载到的目录运行命令。
 
-```batch
-bash chmod +x </path/to/executable>
+{% hint style="success" %}
+在 Linux 和 UNIX 系统中，您可能会收到 `Permission denied` （权限被拒绝）的消息。通过运行下面的命令授予权限：
+
+```shellscript
+chmod +x </path/to/executable>
 ```
 {% endhint %}
+
+对于 GitHub 上提供的每个 Password Manager CLI 捆绑包，都有一个 OSS 版本（例如 `bw-oss-windows-2024.12.0.zip`）和非 OSS 版本（例如 `bw-windows-2024.12.0.zip`）。非 OSS 版本是分发平台上默认发布的软件包，包含非 OSS 许可下的功能，例如 OSS 版本所缺少的设备批准命令。
 {% endtab %}
 
 {% tab title="NPM" %}
 如果您的系统上已安装了 Node.js，则可以使用 NPM 安装 CLI。使用 NPM 进行安装是使安装保持最新的最简单方式，并且**对于已经熟悉 NPM 的用户来说，它应该是首选的方式**：
 
-```batch
+```shellscript
 npm install -g @bitwarden/cli
 ```
 
 在 [npmjs.org](https://www.npmjs.com/package/@bitwarden/cli) 上查看该软件包。
+
+{% hint style="info" %}
+使用 `npm` 在 Linux 系统上安装 Bitwarden CLI 可能需要首先安装构建必需的依赖项（或等效的发行版）。例如：
+
+```shellscript
+apt install build-essential
+```
+{% endhint %}
 {% endtab %}
 
 {% tab title="Chocolatey" %}
@@ -147,6 +163,17 @@ bw login --sso
 {% hint style="success" %}
 如果您的组织[要求 SSO](../../../admin-console/oversight-visibility/enterprise-policies.md#single-sign-on-authentication)，您仍然可以使用 `--apikey` 登录 CLI。
 {% endhint %}
+
+### 登录到多个账户 <a href="#log-in-to-multiple-accounts" id="log-in-to-multiple-accounts"></a>
+
+与其他 Bitwarden App 的[账户切换](../../../account/log-in-and-unlock/more-log-in-options/account-switching.md)功能类似，CLI 可以通过 `BITWARDENCLI_APPDATA_DIR` 环境变量同时登录多个账户，该环境变量指向一个 `bw` 配置文件（通常名为 `data.json`）的位置。例如，您可以在 `.bashrc` 配置文件中为两个不同的配置设置别名：
+
+```shellscript
+alias bw-personal="BITWARDENCLI_APPDATA_DIR=~/.config/Bitwarden\ CLI\ Personal /path/to/bw $@"
+alias bw-work="BITWARDENCLI_APPDATA_DIR=~/.config/Bitwarden\ CLI\ Work /path/to/bw $@"
+```
+
+使用此示例，您可以通过先运行 `source /path/to/.bashrc`，然后运行 ​​`bw-personal login` 和 `bw-work login` 来登录两个帐户。
 
 ## 解锁 <a href="#unlock" id="unlock"></a>
 
@@ -745,6 +772,14 @@ bw serve --port <port> --hostname <hostname>
 {% endhint %}
 
 [查看 API 规范](https://bitwarden.com/help/vault-management-api/)以获取使用 `serve` 进行调用的帮助。
+
+### 调试 <a href="#debug" id="debug"></a>
+
+可以添加调试环境变量以获取其他故障排除信息。
+
+```
+export BITWARDENCLI_DEBUG=true
+```
 
 ## 附录 <a href="#appendix" id="appendix"></a>
 
