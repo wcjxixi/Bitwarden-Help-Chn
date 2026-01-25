@@ -67,6 +67,8 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 为现有登录保存通行密钥
 {% endembed %}
 
+不能为同一用户名和服务保存重复的通行密钥。如果您想为同一用户名和服务保存新的通行密钥，可以编辑或覆盖现有的加密算法。
+
 {% hint style="info" %}
 每个登录项目只能保存一个通行密钥。如果一个凭据保存在多个地方，例如作为两个登录项目分别保存在个人密码库和组织密码库中，则每个登录项目都可以保存不同的通行密钥。
 {% endhint %}
@@ -118,7 +120,7 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 保存或覆盖通行密钥
 {% endembed %}
 
-不能为同一用户名和服务保存重复的通行密钥。如果您希望使用用户名和服务保存新的通行密钥，可以编辑或覆盖现有密码。
+不能为同一用户名和服务保存重复的通行密钥。如果您想为同一用户名和服务保存新的通行密钥，可以编辑或覆盖现有的加密算法。
 
 {% hint style="info" %}
 每个登录项目只能保存一个通行密钥。如果一个凭证保存在多个地方，例如作为两个登录项目分别保存在个人密码库和组织密码库中，则每个登录项目都可以保存不同的通行密钥。
@@ -126,7 +128,7 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 
 ### 使用存储在 Bitwarden 中的通行密钥登录 <a href="#sign-in-using-a-passkey-stored-in-bitwarden" id="sign-in-using-a-passkey-stored-in-bitwarden"></a>
 
-要使用 Bitwarden 中存储的密钥，请在网站上启动密钥登录。移动 App 将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项：
+要使用 Bitwarden 中存储的通行密钥，请在网站上发起通行密钥登录。移动 App 将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/b6fY5o4CBxhW4ZjDIpanR/56ffdbf1ff93b7387be273bc7df15e6b/passkey-ios-3__1_.png?_a=BAJFJtWIB" %}
 使用通行密钥登录
@@ -178,13 +180,15 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 保存或覆盖通行密钥
 {% endembed %}
 
+不能为同一用户名和服务保存重复的通行密钥。如果您想为同一用户名和服务保存新的通行密钥，可以编辑或覆盖现有的加密算法。
+
 {% hint style="info" %}
 每个登录项目只能保存一个通行密钥。如果一个凭证保存在多个地方，例如作为两个登录项目分别保存在个人密码库和组织密码库中，则每个登录项目都可以保存不同的通行密钥。
 {% endhint %}
 
 ### 使用存储在 Bitwarden 中的通行密钥登录 <a href="#sign-in-using-a-passkey-stored-in-bitwarden" id="sign-in-using-a-passkey-stored-in-bitwarden"></a>
 
-要使用 Bitwarden 中存储的密钥，请在网站上启动密钥登录。移动 App 将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项：
+要使用 Bitwarden 中存储的通行密钥，请在网站上发起通行密钥登录。移动 App 将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2COiWur13OpX1QZ7Fy0tbR/65e2b4d39e2387fdcb0ba380ab52fa04/passkey-android-3__1_.png?_a=BAJFJtWIB" %}
 使用通行密钥登录
@@ -236,5 +240,5 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 
 ### 问：我可以在移动 App 中存储通行密钥吗？ <a href="#q-can-i-store-passkeys-in-the-mobile-app" id="q-can-i-store-passkeys-in-the-mobile-app"></a>
 
-**答：**&#x8BA1;划在后期版本中提供对移动应用程序的通行密钥支持。移动 App 通行密钥支持适用于 iOS（[了解更多](../autofill-from/autofill-from-ios.md)）和 Android（[了解更多](../autofill-from/autofill-from-android.md)）。
+**答：**&#x79FB;动 App 通行密钥支持适用于 iOS（[了解更多](../autofill-from/autofill-from-ios.md)）和 Android（[了解更多](../autofill-from/autofill-from-android.md)）。
 
