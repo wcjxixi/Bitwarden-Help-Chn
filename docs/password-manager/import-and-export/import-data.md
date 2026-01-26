@@ -17,7 +17,7 @@ Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包�
 * [从 Password Safe 导入](import-guides/import-data-from-password-safe.md)
 * [从其他 Bitwarden 密码库导入](export-vault-data.md)
 
-来自其他密码管理器的[其他文件类型](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)与 Bitwarden 兼容。如果您的解决方案未在列表中，但可以导出数据，请编辑文件以匹配[受支持的格式](condition-a-bitwarden-.csv-or-.json.md)。
+来自其他密码管理器的[其他文件类型](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)与 Bitwarden 兼容。如果您的解决方案未在列表中，但可以导出数据，请编辑文件以匹配[受支持的格式](condition-bitwarden-import.md)。
 
 {% hint style="success" %}
 [将数据导入组织](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)，以便大型团队共享。对于较小的团队，可[导入到集合](import-data.md#import-to-a-collection)。
@@ -206,7 +206,7 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 组织用户（不是[管理员或所有者](../../admin-console/manage-members/member-roles.md#member-roles)）必须将所有导入的凭证分配给至少一个集合。有两种方法可以解决此导入错误：
 
 * 分配一个您拥有**可以管理**权限的现有集合。
-* 为未指定的项目创建一个新的集合。通过输入一个新的集合名称来[自定义导入文件](condition-a-bitwarden-.csv-or-.json.md)。这将自动创建该集合并将项目添加到其中。
+* 为未指定的项目创建一个新的集合。通过输入一个新的集合名称来[自定义导入文件](condition-bitwarden-import.md)。这将自动创建该集合并将项目添加到其中。
 
 {% hint style="success" %}
 要最大限度地减少此错误，请启用[限制为所有者和管理员可以创建集合](../../admin-console/manage-shared-items/collections/collection-settings.md#restrict-collection-creation-to-owners-and-admins)设置以阻止用户创建集合。
@@ -216,5 +216,5 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 
 免费组织最多可以拥有两个[集合](../../admin-console/manage-shared-items/collections/about-collections.md)。如果您尝试导入的文件指定了两个以上的集合，则会出现导入错误。有几个选项可以纠正这个问题：
 
-* 如果您尝试导入 `.csv` 或 `.json`，请[编辑该文件](condition-a-bitwarden-.csv-or-.json.md)以删除附加的集合。
+* 如果您尝试导入 `.csv` 或 `.json`，请[编辑该文件](condition-bitwarden-import.md)以删除附加的集合。
 * 升级您的计划，以便您可以创建更多集合并按原样导入文件。

@@ -8,11 +8,11 @@
 
 ### 问：如果在导入选项列表中没有看到我的服务，如何导入我的数据？ <a href="#q-how-do-i-import-my-data-if-i-dont-see-my-service-on-the-import-options-list" id="q-how-do-i-import-my-data-if-i-dont-see-my-service-on-the-import-options-list"></a>
 
-**答：**&#x5982;果我们对您使用的服务没有提供官方支持，请手动调整 `.csv` 或 `.json` 来导入 Bitwarden。关于如何操作的更多信息，请参阅[调整 Bitwarden .csv 或 .json](condition-a-bitwarden-.csv-or-.json.md)。
+**答：**&#x5982;果我们对您使用的服务没有提供官方支持，请手动调整 `.csv` 或 `.json` 来导入 Bitwarden。关于如何操作的更多信息，请参阅[调整 Bitwarden .csv 或 .json](condition-bitwarden-import.md)。
 
 ### 问：我可以从 iCloud/Mac 钥匙串/Safari 导入 Bitwarden 吗？ <a href="#q-can-i-import-to-bitwarden-from-icloud-mac-keychain-safari" id="q-can-i-import-to-bitwarden-from-icloud-mac-keychain-safari"></a>
 
-**答：**&#x4ECE; Safari 15.0 开始，您可以从 Safari 导出密码到 `.csv` 文件。完成后，[调整您的 .csv](condition-a-bitwarden-.csv-or-.json.md) 以符合 Bitwarden 的格式然后[导入您的数据](import-data.md)。
+**答：**&#x4ECE; Safari 15.0 开始，您可以从 Safari 导出密码到 `.csv` 文件。完成后，[调整您的 .csv](condition-bitwarden-import.md) 以符合 Bitwarden 的格式然后[导入您的数据](import-data.md)。
 
 Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙串或 Safari 导出数据的方法。
 
@@ -27,7 +27,7 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 
 ### 问：如何将项目直接导入到集合中？ <a href="#q-how-can-i-import-items-directly-to-collections" id="q-how-can-i-import-items-directly-to-collections"></a>
 
-**答：**&#x60A8;可以在导入前通过适当调整 `.json` 文件将项目导入现有的集合，也可以在导入文件中定义新的集合，以便在上传文件时创建新的集合。[了解方法](condition-a-bitwarden-.csv-or-.json.md)。
+**答：**&#x60A8;可以在导入前通过适当调整 `.json` 文件将项目导入现有的集合，也可以在导入文件中定义新的集合，以便在上传文件时创建新的集合。[了解方法](condition-bitwarden-import.md)。
 
 ### 问：如何将文件附件导入 Bitwarden？ <a href="#q-how-do-i-import-file-attachments-to-bitwarden" id="q-how-do-i-import-file-attachments-to-bitwarden"></a>
 
@@ -48,10 +48,10 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 
 **答：**&#x4EE5;下格式支持开箱即用：
 
-> **\[译者注]**：out-of-the-box，开箱即用。「out-of-the-box」 是一个常用短语，表示「无需额外配置或修改即可直接使用」。在这里，表示以下格式可以直接在 Bitwarden 中导入，而无需额外手动[调整 Bitwarden .csv 或 .json](condition-a-bitwarden-.csv-or-.json.md)。
+> **\[译者注]**：out-of-the-box，开箱即用。「out-of-the-box」 是一个常用短语，表示「无需额外配置或修改即可直接使用」。在这里，表示以下格式可以直接在 Bitwarden 中导入，而无需额外手动[调整 Bitwarden .csv 或 .json](condition-bitwarden-import.md)。
 
 {% hint style="info" %}
-如果您的格式没有在下面列出，请手动[调整 Bitwarden .csv 或 .json](condition-a-bitwarden-.csv-or-.json.md)。
+如果您的格式没有在下面列出，请手动[调整 Bitwarden .csv 或 .json](condition-bitwarden-import.md)。
 {% endhint %}
 
 * [1Password (1pif)](import-guides/import-data-from-1password.md)

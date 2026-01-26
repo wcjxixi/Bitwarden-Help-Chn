@@ -101,7 +101,7 @@
       * [从 Myki 导入](docs/password-manager/import-and-export/import-guides/import-data-from-myki.md)
     * [导出密码库数据](docs/password-manager/import-and-export/export-vault-data.md)
     * [加密导出](docs/password-manager/import-and-export/encrypted-exports.md)
-    * [从自定义文件导入](docs/password-manager/import-and-export/condition-a-bitwarden-.csv-or-.json.md)
+    * [从自定义文件导入](docs/password-manager/import-and-export/condition-bitwarden-import.md)
     * [\*Bitwarden 导入器工具](docs/password-manager/import-and-export/bitwarden-importer-tool.md)
     * [导入 & 导出 FAQ](docs/password-manager/import-and-export/import-and-export-faqs.md)
   * [组织成员](docs/password-manager/organization-members/README.md)

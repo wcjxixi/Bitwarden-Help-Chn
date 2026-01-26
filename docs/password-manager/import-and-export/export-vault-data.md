@@ -30,7 +30,7 @@
 直接导出到其他 App 需要目标 App 支持 [Fido 身份验证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications)。
 {% endhint %}
 
-查看[示例 `.csv` 和 `.json` 文件](condition-a-bitwarden-.csv-or-.json.md)以决定哪种格式最适合您。我们推荐使用加密的 `.json` 选项以获得最佳安全性和最完整的导出。只有 `.json` 导出包含：
+查看[示例 `.csv` 和 `.json` 文件](condition-bitwarden-import.md)以决定哪种格式最适合您。我们推荐使用加密的 `.json` 选项以获得最佳安全性和最完整的导出。只有 `.json` 导出包含：
 
 * 支付卡
 * 身份

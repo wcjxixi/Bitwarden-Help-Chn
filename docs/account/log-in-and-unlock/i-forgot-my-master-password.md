@@ -21,7 +21,7 @@ Bitwarden 采用零知识加密技术。这意味着 **Bitwarden 无法访问、
 接下来，检查您是否登录了另一个 Bitwarden App。如果您在该设备上设置了 [PIN 码](more-unlock-options/unlock-with-pin.md)或[生物识别](more-unlock-options/unlocking-with-biometrics.md)：
 
 * 使用之前设置的 PIN 码或生物识别解锁您的密码库。
-* 将密码库项目复制并粘贴到 [.csv 文件](../../password-manager/import-and-export/condition-a-bitwarden-.csv-or-.json.md#condition-a-csv)中。
+* 将密码库项目复制并粘贴到 [.csv 文件](../../password-manager/import-and-export/condition-bitwarden-import.md#condition-a-csv)中。
 * 创建一个新的 Bitwarden 账户然后[导入复制了数据的 .csv](../../password-manager/import-and-export/import-data.md)。
 
 ## 查看主密码提示 <a href="#review-master-password-hint" id="review-master-password-hint"></a>

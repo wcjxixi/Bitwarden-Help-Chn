@@ -187,4 +187,4 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 
 ### iCloud/Mac 钥匙串/Safari 导入问题 <a href="#icloud-mac-keychain-safari-import-issues" id="icloud-mac-keychain-safari-import-issues"></a>
 
-* 从 Safari 15.0 开始，您可以将密码从 Safari 导出到 `.csv` 文件中。导出后，[调整您的 .csv](../condition-a-bitwarden-.csv-or-.json.md) 以符合 Bitwarden 的格式，然后导入您的数据。
+* 从 Safari 15.0 开始，您可以将密码从 Safari 导出到 `.csv` 文件中。导出后，[调整您的 .csv](../condition-bitwarden-import.md) 以符合 Bitwarden 的格式，然后导入您的数据。

@@ -159,9 +159,9 @@ Password Manager 网页 App
 
 {% embed url="https://vimeo.com/1145638421?fl=pl&fe=cm" %}
 
-了解从自定义文件[如何导入](../../../../docs/password-manager/import-and-export/condition-a-bitwarden-.csv-or-.json.md)密码和其他数据。
+了解从自定义文件[如何导入](../../../../docs/password-manager/import-and-export/condition-bitwarden-import.md)密码和其他数据。
 
-<a href="../../../../docs/password-manager/import-and-export/condition-a-bitwarden-.csv-or-.json.md" class="button primary">下载示例文件</a>
+<a href="../../../../docs/password-manager/import-and-export/condition-bitwarden-import.md" class="button primary">下载示例文件</a>
 
 * **00:00**：简介
 * **00:08**：开始使用

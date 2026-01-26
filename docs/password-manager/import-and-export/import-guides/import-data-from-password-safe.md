@@ -40,7 +40,7 @@
 
 ## 准备导出的文件 <a href="#prepare-exported-file" id="prepare-exported-file"></a>
 
-目前，我们没有为此种文件类型提供专门的导入器。要准备导出文件，请遵循[这些说明](../condition-a-bitwarden-.csv-or-.json.md)。
+目前，我们没有为此种文件类型提供专门的导入器。要准备导出文件，请遵循[这些说明](../condition-bitwarden-import.md)。
 
 ## 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 

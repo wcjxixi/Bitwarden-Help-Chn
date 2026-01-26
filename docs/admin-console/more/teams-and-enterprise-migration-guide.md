@@ -103,7 +103,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 1. 从您之前的密码管理器导入默认的文件格式。
 2. 调整 Bitwarden 特定的 `.CSV` 用于导入。
 
-我们建议将文件格式化为 Bitwarden `.CSV` 以获得最佳的效果，或者对于高级用户，将文件格式化为 Bitwarden `.JSON` 文件。有关 Bitwarden 特定的导入文件的说明，请参阅[此导入指南](../../password-manager/import-and-export/condition-a-bitwarden-.csv-or-.json.md)。
+我们建议将文件格式化为 Bitwarden `.CSV` 以获得最佳的效果，或者对于高级用户，将文件格式化为 Bitwarden `.JSON` 文件。有关 Bitwarden 特定的导入文件的说明，请参阅[此导入指南](../../password-manager/import-and-export/condition-bitwarden-import.md)。
 
 ## 第 4 步：入职用户 <a href="#step-4-onboard-users" id="step-4-onboard-users"></a>
 
