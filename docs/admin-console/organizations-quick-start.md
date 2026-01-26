@@ -66,7 +66,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 2、输入**组织名称**和**计费电子邮件**，我们可以通过此地址与您联系。在本指南中，我们将设置一个免费的组织，所以您将不会被收取任何费用。
 
-**3、选择您的方案**。Bitwarden 提供适合任何需求的组织，但在这种情况下，请选择**免费**。
+3、**选择您的方案**。Bitwarden 提供适合任何需求的组织，但在这种情况下，请选择**免费**。
 
 4、向下滚动并选择**提交**以完成组织的创建。
 
@@ -112,7 +112,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 1、在管理控制台中，从导航栏选择**成员**选项卡然后选择 ✚**邀请成员**按钮：
 
-{% embed url="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/a4bd30d71a74ead44e13768dab8c5dff/2024-12-03_14-02-20.png?w=1043&fm=avif&q=80" %}
+{% embed url="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1200&fm=avif" %}
 邀请成员加入组织
 {% endembed %}
 
@@ -146,11 +146,13 @@ Bitwarden 邀请
 
 2、选中任何`已接受`的用户并使用 **≡**&#x9009;项菜单 **✔︎确认所选**：
 
-{% embed url="https://bitwarden.com/assets/5eRDRAooRSGqRWJYZB5fgz/95422412e2a27069ca903f4a6ec1a8a7/2024-12-03_14-04-59.png?w=1197&fm=avif&q=80" %}
+{% embed url="https://bitwarden.com/assets/5eRDRAooRSGqRWJYZB5fgz/f3eac670d95664be963d2b38eddf68b5/Confirm_member_to_an_organization.png?w=1200&fm=avif" %}
 确认成员加入组织
 {% endembed %}
 
-3、验证您屏幕上显示的[指纹短语](../security/encryption/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置** → **我的账户**中找到。
+3、验证您屏幕上显示的[指纹短语](../security/encryption/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置** → **我的账户**中找到：
+
+<div align="left"><figure><img src="https://bitwarden.com/assets/6sWPBv5GFAyMcULNxfCCJG/b3115a77e0d8d8d48fcc1f9e24e42d70/fingerprint-phrase.png?w=285&#x26;fm=avif" alt="指纹短语"><figcaption></figcaption></figure></div>
 
 每一个指纹短语对于其账户都是唯一的，它是确保安全添加用户的最后一层监督。如果它们匹配，请选择**提交**。
 
@@ -174,15 +176,15 @@ Bitwarden组织的神奇之处在于，属于您的项目和[属于组织](organ
 
 ## 移动项目到组织 <a href="#move-an-item-to-the-organization" id="move-an-item-to-the-organization"></a>
 
-安全共享之路的最后一步是创建一个项目并将其移动到组织以便共享。现有的[密码库项目](../password-manager/your-vault/vault-items/vault-items.md)可以在创建后被移动到组织，但在本指南中，我们将重点放在如何从您的个人密码库创建一个**新的**登录：
+安全共享之路的最后一步是创建一个项目并将其移动到组织以便共享。现有的[密码库项目](../password-manager/your-vault/vault-items/vault-items.md)可以在创建后被移动到组织，但在本指南中，我们将重点放在如何从您的个人密码库创建一个新的登录：
 
-1. 在 **🔒我的密码库**页面上，选择 ✚**添加项目**按钮。
-2. 为您的新登录项填写所有相关信息（例如用户名和密码）。该项目可以是您希望自己和其他组织用户都可以访问的任何内容，例如家庭流媒体帐户。
-3. 在添加项目面板底部的**所有权**部分，勾选您的组织以指定用于共享的项目。
+1. 在**密码库**页面上，选择 ✚**新增**按钮，然后选择**登录**。
+2. 为您的新登录项目填写所有相关信息（例如用户名和密码）。该项目可以是您希望自己和其他组织用户都可以访问的任何内容，例如家庭流媒体帐户。
+3. 在**添加项目**面板顶部的**所有权**部分，勾选您的组织以指定此项目用于共享。
 4. 选择一个或多个用于存放此项目的**集合**。两人组织的用户通常设置为两人对所有集合的访问权限。在更大或更复杂的组织中，您将项目存放到哪个集合将决定谁可以访问它。
 5. 选择**保存**按钮完成组织所有的项目的创建。
 
-您和组织的其他用户都可以访问这个新的项目！只要两个用户都可以访问它所在的集合，它就会与其他个人密码库项目一起出现在组织密码库以及**我的密码库**视图中。
+您自己和组织的其他用户都可以访问这个新的项目！只要两个用户都可以访问它所在的集合，它就会与其他密码库项目一起出现在组织密码库以及**所有密码库**视图中。
 
 ### 从组织中取消共享项目 <a href="#unshare-an-item-from-an-organization" id="unshare-an-item-from-an-organization"></a>
 

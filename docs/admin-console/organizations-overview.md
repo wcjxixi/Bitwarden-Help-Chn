@@ -22,7 +22,7 @@
 
 Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需求。关于每种组织类型的逐一功能细分，请参阅[关于 Bitwarden 方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md)。
 
-<table><thead><tr><th width="150">类型</th><th>描述</th></tr></thead><tbody><tr><td>免费版组织</td><td>免费版组织允许 2 个用户在最多 2 个<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享。</td></tr><tr><td>家庭版组织</td><td>家庭版组织允许 6 个用户在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享。</td></tr><tr><td>团队版组织</td><td>团队版组织允许无限的用户（按每用户每月计费）在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享，并提供一套操作工具，如事件日志。</td></tr><tr><td>企业版组织</td><td>企业版组织允许无限的用户（按每用户每月计费）在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享，并在 Bitwarden 的操作工具套件中添加了仅针对企业的功能，例如 <a href="login-with-sso/about-sso.md">SSO 登录</a>和<a href="oversight-visibility/enterprise-policies.md">策略</a>。</td></tr></tbody></table>
+<table><thead><tr><th width="146.17140415736606">类型</th><th>描述</th></tr></thead><tbody><tr><td>免费版组织</td><td>免费版组织允许 2 个用户在最多 2 个<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享。</td></tr><tr><td>家庭版组织</td><td>家庭版组织允许 6 个用户在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享。</td></tr><tr><td>团队版组织</td><td>团队版组织允许无限的用户（按每用户每月计费）在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享，并提供一套操作工具，如事件日志。</td></tr><tr><td>企业版组织</td><td>企业版组织允许无限的用户（按每用户每月计费）在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享，并在 Bitwarden 的操作工具套件中添加了仅针对企业的功能，例如 <a href="login-with-sso/about-sso.md">SSO 登录</a>和<a href="oversight-visibility/enterprise-policies.md">策略</a>。</td></tr></tbody></table>
 
 ### 组织与高级会员比较 <a href="#comparing-organizations-with-premium" id="comparing-organizations-with-premium"></a>
 
@@ -54,7 +54,7 @@ Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需�
 
 3、如果您选择**免费版组织**，那么一切就准备好了！如果您选择我们的付费组织之一，
 
-* **家庭版/团队版/企业版**：您的方案随附了 1GB 加密[附件存储](../password-manager/your-vault/vault-items/file-attachments.md)空间。$0.33 /GB / 月添加**加附加存储（GB）**。
+* **家庭版/团队版/企业版**：您的方案随附了 5GB 加密[附件存储](../password-manager/your-vault/vault-items/file-attachments.md)空间。以 $0.33 /GB/月添加**附加存储（GB）**。
 * **团队版/企业版**：指定组织所需的**用户席位**数量。以后可以随时添加更多席位。如果超过此数量，席位会自动增加，除非您[指定限制](manage-members/user-management.md#set-a-seat-limit)。
 * **团队版/企业版**：选择您要**按年**还是**按月**付费。家庭组织只能**按年**付费。
 

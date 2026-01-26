@@ -18,7 +18,7 @@
 
 ## 嵌套集合 <a href="#nested-collections" id="nested-collections"></a>
 
-当您嵌套一个集合时，它会按层次结构组织在另一个集合下。首次创建集合时或稍后转至**集合** → **≡**&#x56FE;标 → **编辑信息**，选择集合的嵌套位置：
+当您嵌套一个集合时，它会按层次结构组织在另一个集合下。首次创建集合时或稍后转至**集合** → **≡**&#x56FE;标 → **编辑信息**，选择**集合的嵌套位置**：
 
 {% embed url="https://bitwarden.com/assets/4WE9iu5h5WwMh2hTbMV0Q6/f3cfc507b06de6e8243a76685d598066/Nested_collection.png?w=988&fm=avif" %}
 嵌套集合
@@ -29,7 +29,6 @@
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 * [创建集合](create-collections.md)以添加共享项目到其中。
-* 从概念层面[了解集合](about-collections.md)。
 * 通过新的集合[与组织成员共享项目](../../../password-manager/organization-members/sharing.md)。
 * 为新集合[分配群组和成员访问权限](assign-users-to-collections.md)。
 * 为集合[配置群组和成员权限](collection-permissions.md)。
