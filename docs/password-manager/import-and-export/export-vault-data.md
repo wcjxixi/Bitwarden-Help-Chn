@@ -17,17 +17,18 @@
 导出可以下载为以下几种格式：
 
 * `.json`（明文）
-* `.csv`（纯文本）
-* [`.json (Encrypted)`](encrypted-exports.md)
-* `.zip (with attachments)`（包含一个 `.json` 文件和您的附件）
-* **（仅限iOS 26）**&#x76F4;接导出到其他 App
+* `.csv`（明文）
+* [`.json (Encrypted)`](encrypted-exports.md)（加密）
+* `.zip (with attachments)`（包含一个 `.json` 文件和您的附件）（明文）
 
 {% hint style="info" %}
 `.zip` 导出目前仅适用于个人密码库数据。
 {% endhint %}
 
+* **（仅限iOS 26）**&#x76F4;接导出到其他 App
+
 {% hint style="info" %}
-直接导出到其他 App 需要目标 App 支持 [Fido 身份验证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications)。
+直接导出到其他 App 需要目标 App 支持 [FIDO 凭证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)。
 {% endhint %}
 
 查看[示例 `.csv` 和 `.json` 文件](condition-bitwarden-import.md)以决定哪种格式最适合您。我们推荐使用加密的 `.json` 选项以获得最佳安全性和最完整的导出。只有 `.json` 导出包含：
@@ -176,16 +177,16 @@
 {% hint style="info" %}
 在 iOS 26 上，您可以选择**将密码库导出到文件**和**将密码库导出到另一个 App**。
 
-如果您选择**将密码库导出到文件**，请继续执行这些说明。如果您选择**将密码库导出到另一个 App**，请按照屏幕简单流程将数据直接导出到支持 [FIDO 凭证交换协议](https://fidoalliance.org/specifications-credential-exchange-specifications)的任何其他 App。
+如果您选择**将密码库导出到文件**，请继续执行这些说明。如果您选择**将密码库导出到另一个 App**，请按照屏幕简单流程将数据直接导出到支持 [FIDO 凭证交换协议](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)的任何其他 App。
 {% endhint %}
 
-4、选择一个**文件格式**：`.json`、`.csv` 或 `.json (Encrypted)`。
+4、选择一个**文件格式**：`.json`、`.csv` 或 `.json (Password protected)`。
 
 {% embed url="https://bitwarden.com/assets/6IvRA9oYfTvO9GxylX2MMh/528b65ca6d83f0f28c469b62078570d5/2025-01-22_09-51-29.png?w=715&fm=avif" %}
 在移动端导出密码库
 {% endembed %}
 
-5、（可选）如果您选择 `.json (Encrypted)`，请输入一个新密码。如果您将此文件导入回 Bitwarden，则需要输入该密码。
+5、（可选）如果您选择 `.json (Password protected)`，请输入一个新密码。如果您将此文件导入回 Bitwarden，则需要输入该密码。
 
 6、输入您的主密码。
 

@@ -16,7 +16,9 @@
 企业组织可使用[成员访问报告](../../../password-manager/your-vault/security-tools/vault-health-reports.md#member-access)下载详尽的 `.csv` 文件，其中注明了成员所在的群组，可访问的集合，他们在每个已分配的集合中的权限级别，等等。
 {% endhint %}
 
-## 权限表格 <a href="#permissions-table" id="permissions-table"></a>
+## 分配集合权限 <a href="#assign-collection-permissions" id="assign-collection-permissions"></a>
+
+## 权限 <a href="#permissions" id="permissions"></a>
 
 {% hint style="info" %}
 [成员角色](../../manage-members/member-roles.md#member-roles)只能在单个成员级别设置，而权限既可以为单个成员设置，也可以为整个群组设置。**在成员级别设置的权限将取代在群组级别设置的权限。**
