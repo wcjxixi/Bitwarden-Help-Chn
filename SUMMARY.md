@@ -187,7 +187,7 @@
     * [链接到组织项目](docs/admin-console/manage-shared-items/link-to-an-item.md)
   * [管理成员](docs/admin-console/manage-members/README.md)
     * [用户管理](docs/admin-console/manage-members/user-management.md)
-    * [=成员角色](docs/admin-console/manage-members/member-roles.md)
+    * [成员角色](docs/admin-console/manage-members/member-roles.md)
     * [群组](docs/admin-console/manage-members/groups.md)
     * [撤销 & 移除](docs/admin-console/manage-members/revoke-remove/README.md)
       * [临时撤销访问权限](docs/admin-console/manage-members/revoke-remove/temporarily-revoke-access.md)
