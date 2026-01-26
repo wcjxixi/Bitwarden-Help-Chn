@@ -20,7 +20,7 @@ Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.
 
 ## 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
 
-您最多可以拥有 5 个通行密钥。要创建用于登录 Bitwarden 的通行密钥：
+您最多可以同时拥有 5 个通行密钥用于登录。要创建用于登录 Bitwarden 的通行密钥：
 
 1、在网页 App 中，从导航选择**设置** → **安全**。
 
@@ -55,7 +55,7 @@ Bitwarden 不会提示或允许您在密码库中保存登录 Bitwarden 的通�
 要支持使用通行密钥进行密码库加密和解密，您的浏览器（例如 Google Chrome）和身份验证器（例如 YubiKey 5）都必须[支持 PRF](https://bitwarden.com/blog/prf-webauthn-and-its-role-in-passkeys/)。
 
 {% hint style="success" %}
-虽然 Google Chrome 支持 PRF，但 Chrome 配置文件不支持作为 PRF 功能的身份验证器。以 YubiKey 5 为反例，YubiKey 5 是一种支持 PRF 身份验证器，而 Firefox 浏览器只能在 Windows 系统上支持 PRF。此外，已知 Windows 10 在支持 PRF 通行密钥方面存在问题。
+虽然 Google Chrome 支持 PRF，但 Chrome 配置文件不支持作为 PRF 身份验证器。作为反例，YubiKey 5 是支持 PRF 的身份验证器。此外，已知 Windows 10 在支持 PRF 通行密钥方面存在问题。
 
 您所拥有的设备和所处的环境将决定您使用通行密钥进行加密的能力。
 {% endhint %}
@@ -77,13 +77,13 @@ Bitwarden 不会提示或允许您在密码库中保存登录 Bitwarden 的通�
 创建了您的通行密钥后，您就可以使用它来登录 Bitwarden 网页 App 和基于 chromium 的浏览器扩展了：
 
 {% hint style="danger" %}
-由于已知缺陷，如果您使用的是 Linux，则需要先弹出浏览器扩展，然后才能尝试使用通行密钥登录。
+由于已知缺陷，**如果您正在使用 Linux**，在您尝试使用通行密钥登录**之前**，您需要弹出浏览器扩展。
 
 <img src="https://bitwarden.com/assets/1cbJy0jLBmSQmRumvYzVwp/a9e43f4c154686249056924eb3e56323/pop_out_screenshot.png?w=407&#x26;fm=avif" alt="" data-size="original">
 {% endhint %}
 
 1. 在 Bitwarden 登录界面，在通常输入电子邮箱地址的地方，选择**使用通行密钥登录**。
-2. 按照浏览器的提示读取通行密钥，这将用于验证您与 Bitwarden 的身份。
+2. 按照浏览器的提示读取通行密钥，这将使用 Bitwarden 验证您的身份。
 3. 如果您的通行密钥[设置为用于密码库加密](log-in-with-passkeys.md#set-up-encryption)，那么就完成了！否则，请输入您的主密码然后选择**解锁**以解密您的密码库数据。
 
 ## 工作原理 <a href="#how-it-works" id="how-it-works"></a>
