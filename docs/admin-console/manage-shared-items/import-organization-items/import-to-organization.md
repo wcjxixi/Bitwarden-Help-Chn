@@ -1,10 +1,10 @@
-# 导入到组织密码库
+# 导入到组织
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/import-to-org/)
 {% endhint %}
 
-直接将数据导入您的组织，以便轻松地从任何密码管理解决方案迁移到 Bitwarden。有关支持的导入格式的完整列表，请参阅 [Bitwarden 支持导入哪些文件格式？](../../../password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。直接导入数据到您的组织有两种方式：
+直接将数据导入您的组织，以便轻松地从任何密码管理解决方案迁移到 Bitwarden。Bitwarden 支持多种[导入文件格式](../../../password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)，如果您的文件格式不受支持，您可以手动创建[兼容的 .csv 或 .json 文件](../../../password-manager/import-and-export/condition-bitwarden-import.md)。有两种方法可将数据直接导入到您的组织：
 
 * 组织[所有者、管理员和具有合适权限的自定义角色用户](../../manage-members/member-roles.md)可以通过本文中的说明使用组织的管理控制台导入项目。
 * 具有[管理集合权限](../collections/collection-permissions.md)的组织成员可以通过[此流程](../../../password-manager/import-and-export/import-data.md)直接将数据导入他们具有权限的任何集合。
@@ -38,13 +38,13 @@
 如果您正在导入一个[加密导出](../../../password-manager/import-and-export/encrypted-exports.md)，请注意这没有单独的选项。选择 `.json` 然后处理程序将确定文件是加密的，并尝试使用您的[账户加密密钥](../../../security/encryption/encryption-key-rotation.md)或加密导出的密码来解密文件。
 {% endhint %}
 
-4、选择**选择文件**然后添加要导入的文件，或将文件内容复制/粘贴到输入框中。
+5、选择**选择文件**然后添加要导入的文件，或将文件内容复制/粘贴到输入框中。
 
 {% hint style="danger" %}
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
-5、选择**导入**以触发导入。如果要导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+6、选择**导入**以触发导入。如果要导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
 ## 导入错误故障排除 <a href="#troubleshoot-import-errors" id="troubleshoot-import-errors"></a>
 
@@ -53,8 +53,9 @@
 某些导入错误是针对组织的：
 
 * **文件包含未分配的项目**：确保所有[项目至少分配给一个集合](../../../password-manager/import-and-export/import-data.md#https-bitwarden.com-help-import-data-file-contains-unassigned-items)，然后再尝试重新上传文件。
-* **组织最多只能有两个集合**：免费组织支持最多两个集合。如果您的导入文件超过此限制，[减少文件中的集合数量](../../../password-manager/import-and-export/import-data.md#organization-can-only-have-a-maximum-of-two-collections)或升级以导入更多。
 
-{% hint style="info" %}
+{% hint style="success" %}
 为减少此错误，请开启[限制为仅所有者和管理员可以创建集合设置](../collections/collection-settings.md#restrict-collection-creation-to-owners-and-admins)，以防止用户创建集合。
 {% endhint %}
+
+* **组织最多只能有两个集合**：免费组织支持最多两个集合。如果您的导入文件超过此限制，[减少文件中的集合数量](../../../password-manager/import-and-export/import-data.md#organization-can-only-have-a-maximum-of-two-collections)或升级以导入更多。
