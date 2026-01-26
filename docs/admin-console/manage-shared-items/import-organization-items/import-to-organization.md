@@ -52,10 +52,10 @@
 
 某些导入错误是针对组织的：
 
-* **文件包含未分配的项目**：确保所有[项目至少分配给一个集合](../../../password-manager/import-and-export/import-data.md#https-bitwarden.com-help-import-data-file-contains-unassigned-items)，然后再尝试重新上传文件。
+* **文件包含未分配的项目**：在尝试重新上传文件之前，确保所有[项目至少分配给一个集合](../../../password-manager/import-and-export/import-data.md#https-bitwarden.com-help-import-data-file-contains-unassigned-items)。
 
 {% hint style="success" %}
-为减少此错误，请开启[限制为仅所有者和管理员可以创建集合设置](../collections/collection-settings.md#restrict-collection-creation-to-owners-and-admins)，以防止用户创建集合。
+为减少此错误，请打开[限制为所有者和管理员可以创建集合](../collections/collection-settings.md#restrict-collection-creation-to-owners-and-admins)设置，以阻止用户创建集合。
 {% endhint %}
 
 * **组织最多只能有两个集合**：免费组织支持最多两个集合。如果您的导入文件超过此限制，[减少文件中的集合数量](../../../password-manager/import-and-export/import-data.md#organization-can-only-have-a-maximum-of-two-collections)或升级以导入更多。

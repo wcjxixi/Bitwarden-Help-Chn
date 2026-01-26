@@ -30,20 +30,20 @@
 
 此选项与[所有者和管理员成员角色](../../manage-members/member-roles.md)交互，以确定是否**仅有**该用户群体具有创建集合的权限。
 
-<table data-header-hidden><thead><tr><th width="79.5999755859375"></th><th></th></tr></thead><tbody><tr><td><strong>打开</strong></td><td>打开后，只有所有者和管理员可以创建集合。这些用户群体将代表您的用户创建您的组织集合结构，但在创建后，他们可以分配个人用户以对为这些集合中的项目和人员进行管理。</td></tr><tr><td><strong>关闭</strong></td><td>关闭后，任何角色的成员都可以为自己和团队创建集合。创建集合的成员将自动获得对该集合的<a href="collection-permissions.md">集合管理</a>权限。</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="79.5999755859375"></th><th></th></tr></thead><tbody><tr><td><strong>打开</strong></td><td>打开后，只有所有者和管理员可以创建集合。这些用户群体将代表您的用户创建您的组织集合结构，但在创建后，他们可以分配个人用户以对为这些集合中的项目和人员进行管理。</td></tr><tr><td><strong>关闭</strong></td><td>关闭后，任何角色的成员都可以为自己和团队创建集合。创建集合的成员将自动获得对该集合的<a href="collection-permissions.md">管理集合</a>权限。</td></tr></tbody></table>
 
 {% hint style="success" %}
-此选项即使**打开，**&#x4EFB;何用户仍然可以被授予[**管理集合**权限](collection-permissions.md)，以便他们可以管理其创建后的成员和内容。
+此选项即使**打开，**&#x4EFB;何用户仍然可以被授予[管理集合](collection-permissions.md)权限，以便他们可以管理其创建后的成员和内容。
 {% endhint %}
 
 ### 限制为所有者和管理员可以删除集合 <a href="#restrict-collection-deletion-to-owners-and-admins" id="restrict-collection-deletion-to-owners-and-admins"></a>
 
-此选项与[所有者和管理员成员角色](../../manage-members/member-roles.md)交互，以确定是否**仅有**该用户群体具有删除集合的权限。开启后，此选项还对[管理集合](collection-permissions.md)权限产生向下的影响。
+此选项与[所有者和管理员成员角色](../../manage-members/member-roles.md)交互，以确定是否**仅有**该用户群体具有删除集合的权限。开启后，此选项还对[管理集合](collection-permissions.md)权限产生下游影响。
 
 <table data-header-hidden><thead><tr><th width="79.5999755859375"></th><th></th></tr></thead><tbody><tr><td><strong>打开</strong></td><td><p>打开后，只有所有者和管理员可以删除集合。</p><p></p><p>从功能上讲，此选项取代了具有<a href="collection-permissions.md">管理集合</a>权限成员原本拥有的删除集合的能力。</p></td></tr><tr><td><strong>关闭</strong></td><td>关闭后，对要删除的集合拥有<a href="collection-permissions.md">管理集合</a>权限的任何角色的成员都可以删除集合。</td></tr></tbody></table>
 
 ### 限制为具有「管理集合」权限的成员可以删除项目 <a href="#restrict-item-deletion-to-members-with-the-manage-collection-permissions" id="restrict-item-deletion-to-members-with-the-manage-collection-permissions"></a>
 
-此选项与[管理集合权限](collection-permissions.md)交互，以确定是否**仅有**该用户群体具有删除项目的权限。关闭后，此选项对[编辑项目](collection-permissions.md)权限产生向下的影响。
+此选项与[管理集合](collection-permissions.md)权限交互，以确定是否**仅有**该用户群体具有删除项目的权限。关闭后，此选项对[编辑项目](collection-permissions.md)权限产生下游影响。
 
 <table data-header-hidden><thead><tr><th width="79.5999755859375"></th><th></th></tr></thead><tbody><tr><td><strong>打开</strong></td><td>打开后，只有具有<a href="collection-permissions.md">管理集合</a>权限的用户才能删除集合项目。</td></tr><tr><td><strong>关闭</strong></td><td>关闭后，拥有<a href="collection-permissions.md">编辑项目</a>以及<a href="collection-permissions.md">编辑项目，隐藏密码</a>权限的用户也可以删除集合项目。</td></tr></tbody></table>

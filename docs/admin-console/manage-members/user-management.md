@@ -87,7 +87,7 @@
 ### 邀请 <a href="#invite" id="invite"></a>
 
 {% hint style="success" %}
-**对于企业组织**，我们建议在邀请用户之前配置[企业策略](../oversight-visibility/enterprise-policies.md)，以确保加入您的组织时的合规性。
+对于企业组织，我们建议在邀请用户之前配置[企业策略](../oversight-visibility/enterprise-policies.md)，以确保加入您的组织时的合规性。
 {% endhint %}
 
 要邀请用户加入您的组织：
