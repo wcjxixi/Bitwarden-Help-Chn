@@ -7,12 +7,12 @@
 密码库健康报告可用于评估 Bitwarden 个人或组织密码库的安全性。重复使用密码和弱密码报告等报告可在客户端本地运行。这样就可以在 Bitwarden 无法访问未加密版本数据的情况下识别出违规项目。
 
 {% hint style="info" %}
-大部分密码库健康报告功能适用于高级用户，包括付费组织（家庭、团队或企业）的成员。但[数据泄露报告](vault-health-reports.md#data-breach-report-individual-vaults-only)对所有用户都是免费的。
+大部分密码库健康报告功能适用于高级版用户，包括付费组织（家庭版、团队版或企业版）的成员。但[数据泄露报告](vault-health-reports.md#data-breach-report-individual-vaults-only)对所有用户都是免费的。
 {% endhint %}
 
 ## 查看报告 <a href="#view-a-report" id="view-a-report"></a>
 
-完成以下步骤以查看您的**个人密码库**的任何密码库健康报告：
+要运行您的**个人密码库**的任何保密码库健康报告：
 
 1、登录到网页 App 然后从导航栏选择**报告：**
 
@@ -22,7 +22,7 @@
 
 2、选择要运行的报告。
 
-要查看您的**组织密码库**的任何密码库健康报告：
+要运行您的**组织密码库**的任何保密码库健康报告：
 
 1、登录到 Bitwarden 网页 App。
 
@@ -42,7 +42,7 @@
 
 ## 可用的报告 <a href="#available-reports" id="available-reports"></a>
 
-### 暴露密码报告 <a href="#exposed-passwords-report" id="exposed-passwords-report"></a>
+### 暴露密码 <a href="#exposed-passwords" id="exposed-passwords"></a>
 
 暴露密码报告可以识别被黑客公开发布或在暗网上出售的已知数据泄露事件中暴露的密码。
 
@@ -56,32 +56,32 @@
 如果此报告使用您的实际密码来执行，那这些密码是否暴露并不重要了，因为您主动将其泄露给此服务了。并且这个报告的结果并不意味着您的个人账户已被泄露，只是您使用的密码已经在这些暴露的密码数据库中被发现，您应该避免使用泄露的密码和非唯一的密码。
 {% endhint %}
 
-### 重复使用密码报告 <a href="#reused-passwords-report" id="reused-passwords-report"></a>
+### 重复使用密码 <a href="#reused-passwords" id="reused-passwords"></a>
 
 重复使用的密码报告可以识别密码库中的非唯一密码。如果在多个服务中重复使用相同的密码，当一个服务被攻破时，会让黑客轻松获取您的更多在线账户的访问权限。
 
 被识别后，您应该为违规账户或服务创建一个唯一的密码。
 
-### 弱密码报告 <a href="#weak-passwords-report" id="weak-passwords-report"></a>
+### 弱密码 <a href="#weak-passwords" id="weak-passwords"></a>
 
 弱密码报告可以识别出容易被黑客和用于破解密码的自动化工具猜中的弱密码，并按弱点的严重性进行排序。Bitwarden 密码生成器可以帮助您创建更强大的密码。该报告使用 [zxcvbn](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation) 进行密码强度分析。
 
 被识别后，您应该使用 Bitwarden 密码生成器为违规账户或服务创建一个强密码。
 
-### 不安全网站报告 <a href="#unsecured-websites-report" id="unsecured-websites-report"></a>
+### 不安全网站 <a href="#unsecured-websites" id="unsecured-websites"></a>
 
 不安全网站报告可以识别在 URI 中使用不安全 (`http://`) 方案的登录项目。使用 `https://` 的 TLS/SSL 加密通信要安全得多。要了解更多信息，请参阅 [URI 的使用](../../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)。
 
 被识别后，您应该将违规的 URI 由 `http://` 更改为 `https://`。
 
-### 未激活 2FA 报告 <a href="#inactive-2-fa-report" id="inactive-2-fa-report"></a>
+### 未激活 2FA <a href="#inactive-2fa" id="inactive-2fa"></a>
 
 未激活 2FA 报告可以识别如下的登录项目：
 
 * 该服务提供了通过 TOTP 的双重验证 (2FA)
 * 您尚未存储 TOTP 验证器密钥
 
-双重验证 (2FA) 是保护您账户安全的一个重要安全设置。如果网站提供，您应该始终启用双重验证。通过将 URI 数据与来自 [https://2fa.directory/](https://2fa.directory/) 的数据进行交叉引用，可以识别出违规项目。
+双重验证 (2FA) 是保护您账户安全的一个重要的安全设置。如果网站提供，您应该始终启用双重验证。通过将 URI 数据与来自 [https://2fa.directory/](https://2fa.directory/) 的数据进行交叉引用，可以识别出违规项目。
 
 被识别后，使用 `Instructions` （说明）超链接来为每个违规项目设置 2FA。
 
@@ -95,7 +95,7 @@
 成员访问权限报告
 {% endembed %}
 
-要查找特定人员，请在**搜索成员**字段中输入他们的电子邮箱。选择相邻的 **→导出图标**以下载包含每个成员详细信息的 `.csv`：
+要定位特定人员，请在**搜索成员**字段中输入他们的电子邮箱。选择相邻的 **→导出图标**以下载包含每个成员详细信息的 `.csv`：
 
 * 基本账户详细信息，包括其**名称**以及是否启用了**两步登录**或**账户恢复**
 * 他们的**群组**分配
@@ -106,7 +106,7 @@
 您还可以下载 `.csv` [成员列表](../../../admin-console/manage-members/user-management.md#download-list-of-members)，其中包括特定账户的详细信息，例如 Secrets Manager 是否已激活以及他们在组织中的状态。
 {% endhint %}
 
-### 数据泄露报告（仅个人密码库） <a href="#data-breach-report-individual-vaults-only" id="data-breach-report-individual-vaults-only"></a>
+### 数据泄露（仅个人密码库） <a href="#data-breach-individual-vaults-only" id="data-breach-individual-vaults-only"></a>
 
 数据泄露报告使用一项名为 Have I Been Pwned (HIBP) 的服务来识别已知事件中的泄露数据（电子邮箱地址、密码、信用卡、DoB 等）。
 

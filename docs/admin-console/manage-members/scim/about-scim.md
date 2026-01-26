@@ -4,24 +4,22 @@
 对应的[官方文档地址](https://bitwarden.com/help/about-scim/)
 {% endhint %}
 
-跨域身份管理系统 (SCIM) 用于在您的 Bitwarden 组织中自动配置成员和群组。
-
-Bitwarden 服务器提供了一个 SCIM 端点，该端点具有有效的 [SCIM API 密钥](about-scim.md#setting-up-scim)，将接受来自您的身份提供程序 (IdP) 的用户和群组的配置和取消配置请求。
+跨域身份管理系统 (SCIM) 用于在您的 Bitwarden 组织中自动配置成员和群组。Bitwarden 服务器提供了一个 SCIM 端点，该端点具有有效的 [SCIM API 密钥](about-scim.md#setting-up-scim)，将接受来自您的身份提供程序 (IdP) 的用户和群组的配置和取消配置请求。
 
 {% hint style="info" %}
 SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM 兼容的身份提供程序的客户可以考虑使用[目录同步](../directory-connector/about-directory-connector.md)作为替代的配置方式。
 {% endhint %}
 
-Bitwarden 支持使用标准属性映射的 SCIM v2，并提供以下官方 SCIM 集成：
+Bitwarden 支持使用标准属性映射的 SCIM v2，并提供以下集成文档：
 
-* [Azure 活动目录](microsoft-entra-id-scim-integration.md)
+* [JumpCloud](jumpcloud-scim-integration.md)
+* [Microsoft Entra ID](microsoft-entra-id-scim-integration.md)
 * [Okta](okta-scim-integration.md)
 * [OneLogin](onelogin-scim-integration.md)
-* [JumpCloud](jumpcloud-scim-integration.md)
-* [Ping Identity](../../login-with-sso/sso-guides/ping-identity-saml-implementation.md)
+* [Ping Identity](ping-identity-scim-integration.md)
 
 {% hint style="success" %}
-除了上面列出的提供程序之外，Bitwarden 还提供与 Google Workspace 的测试版集成。[联系我们以了解更多信息](https://bitwarden.com/contact/)。
+~~除了上面列出的提供程序之外，Bitwarden 还提供与 Google Workspace 的测试版集成。~~[~~联系我们以了解更多信息~~](https://bitwarden.com/contact/)~~。~~
 {% endhint %}
 
 ## 设置 SCIM <a href="#setting-up-scim" id="setting-up-scim"></a>

@@ -44,7 +44,7 @@
 * [撤销对组织的访问权限](temporarily-revoke-access.md)，但不会从组织中移除他们，他们仍然可以登录 Bitwarden 并**仅可以**访问他们的个人密码库。
 {% endhint %}
 
-## 移除的成员的数据会怎样 <a href="#what-happens-to-removed-members-data" id="what-happens-to-removed-members-data"></a>
+## 已移除成员的数据会怎样 <a href="#what-happens-to-removed-members-data" id="what-happens-to-removed-members-data"></a>
 
 所有[集合](../../manage-shared-items/collections/about-collections.md)均归组织所有。当您移除对集合中唯一拥有完整的[管理集合权限](../../manage-shared-items/collections/collection-permissions.md)的成员时，所有者和管理员可以授予现有成员对[该集合的访问权限](../../manage-shared-items/collections/assign-users-to-collections.md#assign-access-to-un-managed-collections)。
 

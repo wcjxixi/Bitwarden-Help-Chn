@@ -6,12 +6,12 @@
 
 > **\[译者注]**：从版本 2025.3.0 开始，之前的「域名验证」(Domain verification) 已改名为「声明域名」(Claimed domains)
 
-企业客户可通过有效的 Bitwarden 专属 DNS TXT 记录为其组织声明域名（如 `mycompany.com`）的所有权。声明域名后，您的组织将获得对匹配电子邮箱地址的账户的额外控制权限：
+企业客户可通过有效的 Bitwarden 专属 DNS TXT 记录为其组织声明域名（如 `mycompany.com`）的所有权。声明域名后，您的组织将获得对具有匹配的电子邮箱地址的账户的额外控制权限：
 
-* **阻止非预期账户创建策略**：[启用此策略](../enterprise-policies.md#block-account-creation-for-claimed-domains)可阻止具有与域名匹配的电子邮箱账户（例如 `jdoe@mycompany.com`）在组织外部创建 Bitwarden 账户。此策略启用后，具有与域名匹配的电子邮箱账户只能通过受邀加入组织的方式创建 Bitwarden 账户。
+* **阻止未经授权创建账户的策略**：[启用此策略](../enterprise-policies.md#block-account-creation-for-claimed-domains)可阻止具有与域名匹配的电子邮箱账户（例如 `jdoe@mycompany.com`）在组织外部创建 Bitwarden 账户。此策略启用后，具有与域名匹配的电子邮箱账户只能通过受邀加入组织的方式创建 Bitwarden 账户。
 * **声明成员账户**：使用与域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）入职的组织成员账户将自动[被组织声明](claimed-accounts.md)，会限制用户进行某些账户操作，并允许管理员直接[删除账户](../../manage-members/revoke-remove/delete-member-accounts.md)，而不是仅将其从组织中移除。
 
-使用与域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）入职的组织成员账户（称为[已声明账户](claimed-accounts.md)）还将获得以下好处：
+使用具有与域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）入职的组织成员账户（称为[已声明账户](claimed-accounts.md)）还将获得以下好处：
 
 * **更便捷的 SSO 流程**：在 SSO 身份验证期间，这些成员将自动跳过要求他们输入 [SSO 标识符](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#get-your-organization-identifier)的步骤。
 * **自动验证电子邮箱**：入职时，这些成员的[电子邮箱将自动验证](../../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)。
@@ -42,13 +42,13 @@ Bitwarden 将使用 DNS TXT 记录来验证域名声明。该 DNS TXT 记录必�
 3、在**声明域名**界面，您将看到一个活动域名的列表，以及状态检查和选项。如果您没有活动域名，请选择**新增域名**。
 
 {% hint style="success" %}
-如果是首次声明域名，[单一组织策略](../enterprise-policies.md#single-organization)将在声明工作流程中自动激活。如果您在 2025.3.0 版本发布之前已经声明了一个域名，则无需遵守此要求。
+如果是首次声明域名，[单一组织策略](../enterprise-policies.md#single-organization)将在声明过程中自动激活。如果您在 2025.3.0 版本发布之前已经声明了一个域名，则无需遵守此要求。
 {% endhint %}
 
 4、在弹出窗口中，输入**域名名称**。
 
 {% hint style="info" %}
-确保文本条目的格式中**不要**包含 `https://` 或 `www.`。
+域名条目的格式中**不要**包含 `https://` 或 `www.`。
 {% endhint %}
 
 5、复制 **DNS TXT 记录**然后将其添加到您的域名中。
@@ -70,13 +70,13 @@ Bitwarden 将使用 DNS TXT 记录来验证域名声明。该 DNS TXT 记录必�
 dig your.domain.com TXT
 ```
 
-**如果发现错误的 TXT 记录**，您的 DNS 更改可能需要更多时间来传播。**如果发现正确的 TXT 记录但声明仍然失败**，则您的 Bitwarden 服务器可能配置为使用内部 DNS 服务器，而不是进行更新的公共 DNS 服务器。
+**如果发现错误的 TXT 记录**，您的 DNS 更改可能需要更长时间才能生效。**如果发现正确的 TXT 记录但声明仍然失败**，则可能是您的 Bitwarden 服务器配置为使用内部 DNS 服务器，而不是进行更新的公共 DNS 服务器。
 {% endhint %}
 
 使用域名右侧的 **≡** 菜单以：
 
 * 编辑或删除域名。
-* 复制 **DNS TXT 记录**以将其提供给您的 DNS 提程序。
+* **复制 DNS TXT 记录**以将其提供给您的 DNS 提程序。
 * 如果自动声明不成功，可以手动**验证域名**。
 
 {% hint style="danger" %}
