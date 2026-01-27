@@ -56,7 +56,7 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 ### 使用上下文菜单 <a href="#using-the-context-menu" id="using-the-context-menu"></a>
 
 {% hint style="info" %}
-目前在 Safari 浏览器扩展中不可用。
+使用上下文菜单自动填充目前在 Safari 浏览器扩展中不可用。
 {% endhint %}
 
 无需打开浏览器扩展程序，您就可以通过右键点击输入字段然后使用 **Bitwarden** → **自动填充**选项来自动填充支付卡和身份。如果您在尝试执行此操作时密码库已锁定，则会打开一个窗口，提示您解锁。解锁后，浏览器扩展程序将自动继续自动填充您的信息。

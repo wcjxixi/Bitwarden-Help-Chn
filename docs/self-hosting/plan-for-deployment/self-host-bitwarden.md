@@ -16,6 +16,8 @@ Bitwarden 通过多租户 SaaS 模式提供云端托管服务，提供易于使�
 | ------------- | ------ | ---- |
 | IT 专业人士，系统管理员 | 最少     | 最少   |
 
+> **\[译者注]**：[SaaS](https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1)：Software as a Service，软件即服务。以云服务的方式对外提供软件功能，软件不装在您自己服务器上，而是由厂商在云端运行，您通过浏览器或客户端直接使用。
+
 ## 自托管部署 <a href="#self-host-deployment" id="self-host-deployment"></a>
 
 对于某些客户而言，出于偏好、监管合规需求或安全策略等原因，需要将 Bitwarden 等平台部署在内网环境，而非使用云端托管模式。

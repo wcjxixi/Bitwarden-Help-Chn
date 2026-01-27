@@ -10,7 +10,7 @@
 如果您想了解有关如何为非赞助自托管家庭组织更新许可证的信息，请参阅[此处](../../licensing-on-premise.md#update-organization-license)。
 {% endhint %}
 
-您需要启用自动账单同步，以允许您的自托管企业组织为云端家庭组织发放赞助。要设置自动同步：
+您需要启用自动计费同步，以允许您的自托管企业组织为云端家庭组织发放赞助。要设置自动同步：
 
 ## 第 1 步：启用云端通信 <a href="#step-1-enable-cloud-communication" id="step-1-enable-cloud-communication"></a>
 

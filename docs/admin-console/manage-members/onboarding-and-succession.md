@@ -261,7 +261,7 @@ Bitwarden 组织包括了对[事件日志](../oversight-visibility/event-logging
 
 Directory Connector、SSO 登录、企业策略和您的密码库独立或协调工作，以优化您的入职、离职和组织管理体验。下表详细说明了将这些部分串在一起形成一个平滑过程的方式：
 
-<table><thead><tr><th width="150">步骤</th><th>描述</th></tr></thead><tbody><tr><td><strong>同步</strong></td><td>使用 Directory Connector 将群组和用户从您现有的目录服务同步到 Bitwarden。</td></tr><tr><td><strong>邀请</strong></td><td>Directory Connector 会自动向同步的用户发出邀请。</td></tr><tr><td>身份<strong>验证</strong></td><td>将您的 SSO 登录实施与 SSO 策略配对，以要求用户在接受邀请时注册 SSO。</td></tr><tr><td><strong>管理</strong></td><td>使用网页密码库界面将一些用户提升到不同的角色，并确保群组 - 集合关系被配置为授予合适的用户以合适的访问权限。</td></tr><tr><td><strong>重新同步</strong></td><td>定期重新运行 Directory Connector 以从 Bitwarden 中移除不再在您的目录服务中处于活动状态的用户并开始新员工入职。</td></tr></tbody></table>
+<table><thead><tr><th width="150">步骤</th><th>描述</th></tr></thead><tbody><tr><td><strong>同步</strong></td><td>使用 Directory Connector 将群组和用户从您现有的目录服务同步到 Bitwarden。</td></tr><tr><td><strong>邀请</strong></td><td>Directory Connector 会自动向同步的用户发出邀请。</td></tr><tr><td><strong>身份验证</strong></td><td>将您的 SSO 登录实施与 SSO 策略配对，以要求用户在接受邀请时注册 SSO。</td></tr><tr><td><strong>管理</strong></td><td>使用网页密码库界面将一些用户提升到不同的角色，并确保群组 - 集合关系被配置为授予合适的用户以合适的访问权限。</td></tr><tr><td><strong>重新同步</strong></td><td>定期重新运行 Directory Connector 以从 Bitwarden 中移除不再在您的目录服务中处于活动状态的用户并开始新员工入职。</td></tr></tbody></table>
 
 ## FAQ <a href="#faqs" id="faqs"></a>
 

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-custom-fields/)
 {% endhint %}
 
-Bitwarden 可以做的不仅仅是[自动填充您的用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！Bitwarden 浏览器扩展还可以自动填充[自定义字段](../../your-vault/vault-items/custom-fields.md)，以简化安全问题、PIN 等的填充。
+Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！Bitwarden 浏览器扩展还可以自动填充[自定义字段](../../your-vault/vault-items/custom-fields.md)，以简化安全问题、PIN 等的填充。
 
 此外，如果您的浏览器扩展在自动填充特定站点的用户名和密码时遇到问题，使用[链接型自定义字段](auto-fill-custom-fields.md#shi-yong-lian-jie-de-zi-ding-yi-zi-duan)可以强制自动填充。
 

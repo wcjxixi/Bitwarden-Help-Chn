@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/uri-match-detection/)
 {% endhint %}
 
-在登录项目中包含统一资源标识符 (URI) 以使用自动填充，然后选择 ⮫**启动**图标直接从您的密码库打开网站或 App。URI 是一串字符，用于标识网站地址 (URL)、服务器 IP 地址、[移动 App 包 ID](forming-uris-for-autofill.md#uris-for-mobile-apps) 等。
+在登录项目中包含统一资源标识符 (URI) 以使用[自动填充](../autofill-from/autofill-from-browser-extensions.md)，然后选择 ⮫**启动**图标直接从您的密码库打开网站或 App。URI 是一串字符，用于标识网站地址 (URL)、服务器 IP 地址、[移动 App 包 ID](forming-uris-for-autofill.md#uris-for-mobile-apps) 等。
 
 ## 将 URI 保存到登录项目 <a href="#save-uris-in-login-items" id="save-uris-in-login-items"></a>
 
