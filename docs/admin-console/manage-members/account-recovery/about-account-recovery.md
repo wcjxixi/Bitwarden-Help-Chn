@@ -8,15 +8,17 @@
 账户恢复适用于**企业组织**。
 {% endhint %}
 
-账户恢复功能允许所有者、管理员和某些自定义角色成员在成员忘记主密码或丢失可信设备时恢复成员账户。账户恢复：
+账户恢复功能允许[所有者、管理员和某些自定义角色成员](../member-roles.md)在成员忘记[主密码](../../../account/log-in-and-unlock/your-master-password.md)或丢失[受信任信设备](../../login-with-sso/trusted-devices/about-trusted-devices.md)时恢复成员账户。账户恢复：
 
-* 可通过开启账户恢复管理策略为组织激活账户恢复。
-* 要求成员通过自动注册或自助注册的方式注册，以获得账户恢复资格。注册会触发密钥交换，从而确保账户恢复的安全性。
+* 可以通过启用[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#account-recovery-administration)为组织激活。
+* 要求成员通过自动注册或自行注册的方式注册，以获得账户恢复资格。注册会触发密钥交换，从而确保账户恢复的安全性。
 * **不会绕过成员的两步登录或 SSO**。如果为账户启用了[两步登录方式](../../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)，或者如果组织[要求 SSO 身份验证](../../oversight-visibility/enterprise-policies.md#single-sign-on-authentication)，则成员在恢复后仍需使用这些方法访问他们的账户。
 
-## 更多信息 <a href="#more-information" id="more-information"></a>
+{% hint style="info" %}
+账户恢复不会恢复已删除的账户。[删除账户](../revoke-remove/delete-member-accounts.md)是永久性的且无法撤消。
+{% endhint %}
 
-### 谁可以恢复账户 <a href="#who-can-recover-accounts" id="who-can-recover-accounts"></a>
+## 谁可以恢复账户 <a href="#who-can-recover-accounts" id="who-can-recover-accounts"></a>
 
 账户恢复可由[所有者、管理员和允许的自定义用户](../member-roles.md)执行。账户恢复使用分级权限结构来确定谁可以重置谁的主密码，这意味着：
 
@@ -24,16 +26,7 @@
 * 只有管​​理员或所有者可以重置管理员的主密码。
 * 只有所有者可以重置其他所有者的主密码。
 
-### 事件日志 <a href="#event-logging" id="event-logging"></a>
-
-以下情况会记录[事件](../../oversight-visibility/event-logging/event-logs.md)：
-
-* 使用账户恢复重置了主密码。
-* 用户更新了通过账户恢复颁发的密码。
-* 用户注册了账户恢复。
-* 用户撤销了账户恢复。
-
-### 工作原理 <a href="#how-it-works" id="how-it-works"></a>
+## 工作原理 <a href="#how-it-works" id="how-it-works"></a>
 
 当组织的成员注册账户恢复时，该用户的[加密密钥](../../../security/encryption/encryption-key-rotation.md)将使用组织的公钥进行加密。其结果将作为**账户恢复密钥**存储。
 
@@ -45,6 +38,15 @@
 4. 使用组织的公钥加密用户新的加密密钥，使用新的密钥替换之前的**账户恢复密钥**。
 
 任何人，包括执行重置的管理员，都**无法**看到旧的主密码。
+
+## 事件日志 <a href="#event-logging" id="event-logging"></a>
+
+以下情况会记录[事件](../../oversight-visibility/event-logging/event-logs.md)：
+
+* 使用账户恢复重置了主密码。
+* 用户更新了通过账户恢复颁发的密码。
+* 用户注册了账户恢复。
+* 用户撤销了账户恢复。
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 

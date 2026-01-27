@@ -52,3 +52,8 @@
 * [Unicode 字符百科](https://unicode-table.com/)
 * [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
 * [Emojipedia](https://emojipedia.org/)
+
+## 其他 <a href="#others" id="others"></a>
+
+* 注释使用 <mark style="color:red;">**ª**</mark>，注释的内容使用 <mark style="color:red;">**ª**</mark> - 后面跟随注释内容
+

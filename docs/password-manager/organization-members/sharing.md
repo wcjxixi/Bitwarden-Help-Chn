@@ -22,7 +22,7 @@
 1、在任何 Bitwarden App 的**密码库**视图中，选择 **✚新增**按钮，然后选择所需的项目类型。
 
 {% hint style="success" %}
-组织所有者、管理员和某些自定义用户也可以直接从**管理控制台**执行此步骤，以弹出菜单中跳过此过程中的某些步骤。
+组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以跳过此过程中的一些步骤。
 {% endhint %}
 
 2、使用**所有者**下拉菜单选择希望此项目归属的组织。
@@ -31,7 +31,7 @@
 
 4、填写项目的其他相关信息，然后选择**保存**完成共享。
 
-{% hint style="success" %}
+{% hint style="info" %}
 **提醒**：共享某个项目涉及将其所有权交给组织。管理团队应妥善管理[集合的权限](../../admin-console/manage-shared-items/collections/collection-permissions.md)，因为拥有正确权限级别的成员有能力更改或删除已共享的项目。您可以通过项目名称旁边的徽标来判断该项目是否为共享项目：
 
 <img src="https://bitwarden.com/assets/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?w=604&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
@@ -39,12 +39,12 @@
 {% endtab %}
 
 {% tab title="导入项目" %}
-向 Password Manager 导入项目时，可以直接导入到共享上下文。如果要导入的项目不止几个，建议参考导入到组织一文。
+向 Password Manager 导入项目时，可以直接导入到共享上下文。如果要导入的项目不止几个，建议参考[导入到组织](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)一文。
 
 1、导航至**工具** → **导入数据**。
 
 {% hint style="success" %}
-组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以弹出菜单中跳过此过程中的某些步骤。
+组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以跳过此过程中的一些步骤。
 {% endhint %}
 
 2、使用**密码库**下拉菜单选择希望此项目归属的组织。
@@ -55,7 +55,7 @@
 
 5、选择**导入数据**以完成共享。
 
-{% hint style="success" %}
+{% hint style="info" %}
 **提醒**：共享某个项目涉及将其所有权交给组织。管理团队应妥善管理[集合的权限](../../admin-console/manage-shared-items/collections/collection-permissions.md)，因为拥有正确权限级别的成员有能力更改或删除已共享的项目。您可以通过项目名称旁边的徽标来判断该项目是否为共享项目：
 
 <img src="https://bitwarden.com/assets/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?w=604&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
@@ -74,7 +74,7 @@
 1、在**密码库**视图中，使用复选框选择要共享的项目。
 
 {% hint style="success" %}
-组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以弹出菜单中跳过此过程中的某些步骤。
+组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以跳过此过程中的一些步骤。
 {% endhint %}
 
 2、使用 **≡**&#x83DC;单，选择**分配到集合**选项：
@@ -181,7 +181,7 @@
 {% tab title="CLI" %}
 要移动项目，请使用以下命令：
 
-```batch
+```shellscript
 bw move <itemid> <organizationid> [encodedJson]
 ```
 

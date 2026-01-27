@@ -24,7 +24,7 @@
 恢复账户
 {% endembed %}
 
-3、在恢复账户窗口中，为用户创建一个**新密码**。如果您的组织启用了[主密码策略](../../oversight-visibility/enterprise-policies.md#master-password)，您将需要创建一个满足实施要求的密码（例如，最少 8 个字符，包含数字）：
+3、在恢复账户窗口中，为用户创建一个**新密码**。如果您的组织启用了[主密码要求策略](../../oversight-visibility/enterprise-policies.md#master-password)，您将需要创建一个满足实施要求的密码（例如，最少 8 个字符，包含数字）：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/28qKke9XJLj6nTZJjg4mK4/7b1c2c5cb2c139bf08ea4c5f65c9a02a/2024-12-03_15-38-52.png?_a=DAJCwlWIZAAB" %}
 创建一个新的密码
