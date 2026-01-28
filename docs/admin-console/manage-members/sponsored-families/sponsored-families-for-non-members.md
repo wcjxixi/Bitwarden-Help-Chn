@@ -12,10 +12,10 @@
 
 * 要求组织所有者[联系 Bitwarden](https://bitwarden.com/contact/) 以启用该功能。
 * 要求[所有者、管理员或允许的自定义角色成员](../member-roles.md)为他们希望向其提供福利的每位员工发放赞助。
-* 获得赞助的每位员工将在企业组织中占据一个席位。
+* 获得赞助的每位员工将在企业版组织中占据一个席位。
 
 {% hint style="success" %}
-如果您的企业组织是自托管的，则管理员需要先完成[这些步骤](../../../self-hosting/deploy-and-configure/optional-features/self-hosting-families-sponsorships.md)，然后员工才能兑换其家庭版赞助。
+如果您的企业版组织是自托管的，则管理员需要先完成[这些步骤](../../../self-hosting/deploy-and-configure/optional-features/self-hosting-families-sponsorships.md)，然后员工才能兑换其家庭版赞助。
 {% endhint %}
 
 此页面上的其余说明将帮助管理员发放赞助和帮助成员兑换其获得的赞助。
@@ -23,10 +23,10 @@
 ## 发放赞助 <a href="#issue-a-sponsorship" id="issue-a-sponsorship"></a>
 
 {% hint style="success" %}
-如果您想要为其赞助家庭版组织的员工**已经是企业组织的成员**，他们可以[兑换赞助而无需管理员手动发放](sponsored-families-for-members.md#redeem-a-sponsorship)。
+如果您想要为其赞助家庭版组织的员工**已经是企业版组织的成员**，他们可以[兑换赞助而无需管理员手动发放](sponsored-families-for-members.md#redeem-a-sponsorship)。
 {% endhint %}
 
-要向非企业组织成员的员工发放家庭赞助：
+要向非企业版组织成员的员工发放家庭赞助：
 
 1、在管理控制台中，导航到**成员** → **免费 Bitwarden 家庭**，然后选择 **✚添加赞助**：
 
@@ -44,7 +44,7 @@
 您可以随时使用此页面上的 **≡**&#x9009;项菜单重新发送邀请，或移除员工的赞助。
 {% endhint %}
 
-使用此方式获得赞助的每位员工将在企业组织中占据一个席位。
+使用此方式获得赞助的每位员工将在企业版组织中占据一个席位。
 
 ## 兑换赞助 <a href="#redeem-a-sponsorship" id="redeem-a-sponsorship"></a>
 
@@ -62,10 +62,10 @@
 如果您已经拥有 Bitwarden 家庭版组织，您可以将赞助应用到该组织。确保您使用家庭组织所有者的账户登录。
 {% endhint %}
 
-3、登录后，您将被定向到一个界面，在此界面您可以在其中兑换**新的家庭组织**赞助或将赞助应用到**现有的家庭组织**：
+3、登录后，您将被定向到一个界面，在此界面您可以在其中兑换**新的家庭版组织**赞助或将赞助应用到**现有的家庭版组织**：
 
 {% tabs %}
-{% tab title="新的家庭组织" %}
+{% tab title="新的家庭版组织" %}
 从下拉列表中选择**新增家庭组织**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3NnhjGPkYir4aMCLzvmJf1/db51c17a40db8d7a399ed49ec65d98f5/2024-12-04_10-24-32.png?_a=DAJCwlWIZAAB" %}
@@ -82,14 +82,14 @@
 只要您是赞助组织的活跃成员，您就不必为家庭组织支付任何费用，除非您添加了**额外的存储空间**。填写完您的信息后，选择**提交**。
 {% endtab %}
 
-{% tab title="现有的家庭组织" %}
+{% tab title="现有的家庭版组织" %}
 从下拉列表中选择组织，然后选择**接受邀请**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5HIpHzcAzTsBjE4UZhjCV0/1f3ce019f188b2a1be20cc1587534864/2024-12-04_10-24-53.png?_a=DAJCwlWIZAAB" %}
 现有的免费 Bitwarden 家庭
 {% endembed %}
 
-接受邀请后，您的旧订阅将被企业赞助取代。只要您是赞助组织的活跃成员，您就不必为家庭组织支付任何费用，除非您添加了**额外的存储空间**。
+接受邀请后，您的旧订阅将被企业赞助取代。只要您是赞助组织的活跃成员，您就不必为家庭版组织支付任何费用，除非您添加了**额外的存储空间**。
 
 {% hint style="info" %}
 如果您使用 [2019 家庭版方案](../../../plans-and-pricing/updates-to-plans.md)，您仍然可以兑换赞助，但您的组织不会自动包含 2020 年之后发布的所有功能。要升级当前方案，请导航至**订阅** → **计费**页面，然后选择**升级方案** 。
@@ -98,5 +98,5 @@
 {% endtabs %}
 
 {% hint style="info" %}
-兑换赞助后，您仍可能会在个人收件箱中收到有关您的家庭组织的续订提醒电子邮件。只要您仍然是该赞助企业组织的活跃成员，您就可以忽略这些电子邮件。如果您不再是其成员，请导航至**计费** → **付款方式**，然后检查付款方式是否有效。
+兑换赞助后，您仍可能会在个人收件箱中收到有关您的家庭版组织的续订提醒电子邮件。只要您仍然是该赞助企业版组织的活跃成员，您就可以忽略这些电子邮件。如果您不再是其成员，请导航至**计费** → **付款方式**，然后检查付款方式是否有效。
 {% endhint %}

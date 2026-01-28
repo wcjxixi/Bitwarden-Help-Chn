@@ -16,14 +16,14 @@
 
 {% tabs %}
 {% tab title="免费版" %}
-如果您使用的是免费组织，则可以免费使用 Secrets Manager 与其他用户共享[机密](../../secrets-manager/your-secrets/secrets.md)，或升级到付费方案以解锁更多功能。要将 Secrets Manager 添加到您的免费​​组织：
+如果您使用的是免费版组织，则可以免费使用 Secrets Manager 与其他用户共享[机密](../../secrets-manager/your-secrets/secrets.md)，或升级到付费方案以解锁更多功能。要将 Secrets Manager 添加到您的免费版​​组织：
 
 1、在管理控制台中，打开您组织的**计费** → **订阅**视图。
 
 2、在**更多来自 Bitwarden 的产品**部分，选中**订阅 Secrets Manager** 复选框。
 
 {% hint style="success" %}
-如果您想升级到付费组织以[解锁 Secrets Manager 的更多功能](secrets-manager-plans.md)，请选择**升级方案**按钮。选择**团队**或**企业**组织以完成 Password Manager 订阅部分，然后完成以下步骤以添加 Secrets Manager：
+如果您想升级到付费版组织以[解锁 Secrets Manager 的更多功能](secrets-manager-plans.md)，请选择**升级方案**按钮。选择**团队版**或**企业版**组织以完成 Password Manager 订阅部分，然后完成以下步骤以添加 Secrets Manager：
 
 1. 选中**添加 Secrets Manager** 复选框。
 2. 在**用户席位**字段中，指定要为 Secrets Manager 购买的席位数。这必须小于或等于您的 Password Manager 订阅中指定的席位数。

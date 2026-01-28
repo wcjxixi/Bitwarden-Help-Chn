@@ -29,10 +29,10 @@
 
 4、在**选择您的方案**部分，选择要创建的组织类型。选项包括：
 
-* **免费版**：用于测试或个人用户同另 1 个其他用户共享。[了解更多](about-bitwarden-plans.md#free-organizations)。
-* **家庭版**：用于个人使用，与家人及朋友共享。[了解更多](about-bitwarden-plans.md#families-organizations)。
-* **团队版**：用于公司及其他团队组织。[了解更多](about-bitwarden-plans.md#teams-organizations)。
-* **企业版**：用于公司及其他大型组织。[了解更多](about-bitwarden-plans.md#enterprise-organizations)。
+* **免费版**：适用于测试或个人用户与 1 位其他用户共享。。[了解更多](about-bitwarden-plans.md#free-organizations)。
+* **家庭版**：适用于个人使用，与家人及朋友共享。[了解更多](about-bitwarden-plans.md#families-organizations)。
+* **团队版**：适用于企业和其他团队组织。[了解更多](about-bitwarden-plans.md#teams-organizations)。
+* **企业版**：适用于企业和其他大型组织。[了解更多](about-bitwarden-plans.md#enterprise-organizations)。
 
 {% hint style="info" %}
 付费组织（家庭版、团队版或企业版）包含所有注册用户的高级功能。关于高级功能的更多信息，请参阅 [Password Manager 方案](about-bitwarden-plans.md)。
@@ -57,15 +57,15 @@
 
 ## 取消高级个人方案 <a href="#cancel-premium-individual-plan" id="cancel-premium-individual-plan"></a>
 
-付费组织（家庭版、团队版或企业版）会自动为所有用户提供高级功能的访问权限。如果您在创建组织时已经拥有高级个人订阅，您可以取消您的高级个人订阅，这不会失去对高级功能的访问。
+付费组织（家庭版、团队版或企业版）会自动为所有用户提供高级功能的访问权限。如果您在创建组织时已经拥有个人高级版订阅，您可以取消您的个人高级版订阅，这不会失去对高级功能的访问权限。
 
 {% hint style="danger" %}
-Bitwarden 提供在**账户创建后 30 天内**取消高级个人方案的退款。如果您在创建高级个人账户后的 30 天内创建了一个付费组织，请[联系我们](https://bitwarden.com/contact)发起退款。
+Bitwarden 提供**在账户创建后 30 天内**取消人高级版方案的退款。如果您在创建人高级版账户后的 30 天内创建了一个付费组织，请[联系我们](https://bitwarden.com/contact)发起退款。
 
 目前，Bitwarden 不对超过 30 天的付费订阅提供退款。
 {% endhint %}
 
-要取消您的高级个人订阅：
+要取消您的人高级版订阅：
 
 1、在 Bitwarden 网页 App 中，导航至**设置** → **订阅**：
 

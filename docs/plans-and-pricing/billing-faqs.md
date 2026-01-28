@@ -63,13 +63,13 @@
 * 在每月和每年计费周期之间切换（如果适用于您的组织）。
 * 请求方案升级、降级、取消或席位调整。
 
-他们**不得**以任何理由请求删除组织、获取当前组织所有者的身份或请求将任何用户提升为所有者。
+他们**不能**以任何理由请求删除组织、获取当前组织所有者的身份或请求将任何用户提升为所有者。
 
 ## 付款选项 <a href="#payment-options" id="payment-options"></a>
 
 ### 问：你们接受美国国内的客户的哪些付款方式？ <a href="#q-what-payment-options-do-you-accept-for-customers-based-in-the-united-states" id="q-what-payment-options-do-you-accept-for-customers-based-in-the-united-states"></a>
 
-**答：**&#x6211;们接受信用卡/借记卡、PayPal、银行账户（ACH），以及比特币。对于企业订阅，我们还接受电汇和企业支票，最低付款额为 500 美元。有关付款方式的更多信息，请联系我们的[售后支持](https://bitwarden.com/contact/)。
+**答：**&#x6211;们接受信用卡/借记卡、PayPal、银行账户 (ACH)，以及比特币。对于企业订阅，我们还接受电汇和企业支票，最低付款额为 500 美元。有关付款方式的更多信息，请联系我们的[售后支持](https://bitwarden.com/contact/)。
 
 ### 问：你们接受美国国外的客户的哪些付款方式？ <a href="#q-what-payment-options-do-you-accept-for-customers-outside-the-united-states" id="q-what-payment-options-do-you-accept-for-customers-outside-the-united-states"></a>
 

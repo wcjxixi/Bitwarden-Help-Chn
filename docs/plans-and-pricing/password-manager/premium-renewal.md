@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/premium-renewal/)
 {% endhint %}
 
-高级个人订阅按年自动续费。您可以在您的网页版 App 中导航到**设置** → **订阅**，来查看您的续费日期：
+个人高级版订阅按年自动续费。您可以在您的网页版 App 中导航到**设置** → **订阅**，来查看您的续费日期：
 
 {% embed url="https://bitwarden.com/assets/3Ru9TSLguhRNYtLe2TLwXk/525da31347b13dfcce28efa49531fadc/Subscription_page.png?w=1200&fm=avif" %}
 订阅页面
@@ -32,5 +32,5 @@
 
 **紧急访问**
 
-可信紧急联系人仍然可以请求并获得对您的密码库的访问。但是，作为授予人，您将无法添加新的或编辑现有的可信紧急联系人。
+已信任的紧急联系人仍然可以请求并获得对您的密码库的访问权限。但是，作为授予人，您将无法添加新的或编辑现有的可信任的紧急联系人。
 {% endhint %}
