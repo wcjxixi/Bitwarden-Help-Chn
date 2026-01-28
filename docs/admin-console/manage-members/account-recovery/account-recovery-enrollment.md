@@ -36,10 +36,10 @@ Bitwarden 建议您开启自动注册功能，但在**账户恢复功能开启�
 
 ### 撤销注册 <a href="#withdraw-enrollment" id="withdraw-enrollment"></a>
 
-已打开自动注册选项的组织成员**将不允许从账户恢复中撤销**，但未打开该选项的组织成员可以从用于注册的同一下拉菜单中**撤销**：
+打开了**为新成员启用自动注册**选项的组织成员**将不允许从账户恢复中撤销**，但未打开该选项的组织成员可以从用于注册的同一下拉菜单中**撤销**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4GR176lad9pre4sZN3rA35/642bdef55248fb84ddb24fc316875b11/2024-12-03_15-34-30.png?_a=DAJCwlWIZAAB" %}
 撤销账户恢复
 {% endembed %}
 
-手动更改您的主密码或[轮换您的加密密钥](../../../security/encryption/encryption-key-rotation.md)**不会**使成员从账户恢复撤销。
+手动更改您的主密码或[轮换您的加密密钥](../../../security/encryption/encryption-key-rotation.md)**不会**使成员从账户恢复中撤销。
