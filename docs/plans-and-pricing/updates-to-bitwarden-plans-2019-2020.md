@@ -51,17 +51,17 @@
 
 ### 团队比较表 <a href="#teams-comparison-table" id="teams-comparison-table"></a>
 
-| 功能                                                                                                                    | 经典 2019        | 当前 (2020-)     |
-| --------------------------------------------------------------------------------------------------------------------- | -------------- | -------------- |
-| 基础用户数                                                                                                                 | 5              | 1              |
-| 最大用户数                                                                                                                 | 无限制            | 无限制            |
-| <p>对于组织项目：<br><br>- 加密文件附件<br>- Bitwarden 身份验证器 (TOTP)<br>- 密码库健康报告</p>                                               | **✔︎**         | **✔︎**         |
-| <p>对于组织的成员：<br><br>- 高级 2FA 选项 (如 Duo、YubiKey、FIDO2)<br>- 加密文件附件<br>- Bitwarden 验证器 (TOTP)<br>- 密码库健康报告<br>- 紧急访问</p> | -              | **✔︎**         |
-| 事件日志                                                                                                                  | -              | **✔︎**         |
-| 用户群组                                                                                                                  | -              | **✔︎**         |
-| API 访问                                                                                                                | -              | **✔︎**         |
-| 目录连接器                                                                                                                 | -              | **✔︎**         |
-| 价格                                                                                                                    | $2 每用户每月（按年付费） | $2 每用户每月（按年付费） |
+| 功能                                                                                                                    | 经典 2019       | 当前 (2020-)    |
+| --------------------------------------------------------------------------------------------------------------------- | ------------- | ------------- |
+| 基础用户数                                                                                                                 | 5             | 1             |
+| 最大用户数                                                                                                                 | 无限制           | 无限制           |
+| <p>对于组织项目：<br><br>- 加密文件附件<br>- Bitwarden 身份验证器 (TOTP)<br>- 密码库健康报告</p>                                               | **✔︎**        | **✔︎**        |
+| <p>对于组织的成员：<br><br>- 高级 2FA 选项 (如 Duo、YubiKey、FIDO2)<br>- 加密文件附件<br>- Bitwarden 验证器 (TOTP)<br>- 密码库健康报告<br>- 紧急访问</p> | -             | **✔︎**        |
+| 事件日志                                                                                                                  | -             | **✔︎**        |
+| 用户群组                                                                                                                  | -             | **✔︎**        |
+| API 访问                                                                                                                | -             | **✔︎**        |
+| 目录连接器                                                                                                                 | -             | **✔︎**        |
+| 价格                                                                                                                    | $2/用户/月（按年计费） | $2/用户/月（按年计费） |
 
 ## 企业组织 <a href="#enterprise-organizations" id="enterprise-organizations"></a>
 
@@ -73,14 +73,14 @@
 
 ### 企业比较表 <a href="#enterprise-comparison-table" id="enterprise-comparison-table"></a>
 
-| 功能                                                                                                               | 经典 2019        | 当前 (2020-)     |
-| ---------------------------------------------------------------------------------------------------------------- | -------------- | -------------- |
-| <p>预先存在的企业功能，包括：<br><br>- 所有用户的高级功能<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 目录连接器<br>- 企业策略</p>                     | **✔︎**         | **✔︎**         |
-| [企业版家庭](../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)                    | **✔︎**         | **✔︎**         |
-| [SSO 登录](../admin-console/login-with-sso/about-sso.md)                                                           | -              | **✔︎**         |
-| <p><a href="../self-hosting/key-connector/about-key-connector.md">Key Connector</a><br>（<em>适用于客户管理的加密</em>）</p> | -              | **✔︎**         |
-| [账户恢复管理](../admin-console/manage-members/account-recovery/about-account-recovery.md)                             | -              | **✔︎**         |
-| 价格                                                                                                               | $3 每用户每月（按年付费） | $5 每用户每月（按年付费） |
+| 功能                                                                                                               | 经典 2019       | 当前 (2020-)    |
+| ---------------------------------------------------------------------------------------------------------------- | ------------- | ------------- |
+| <p>预先存在的企业功能，包括：<br><br>- 所有用户的高级功能<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 目录连接器<br>- 企业策略</p>                     | **✔︎**        | **✔︎**        |
+| [企业版家庭](../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)                    | **✔︎**        | **✔︎**        |
+| [SSO 登录](../admin-console/login-with-sso/about-sso.md)                                                           | -             | **✔︎**        |
+| <p><a href="../self-hosting/key-connector/about-key-connector.md">Key Connector</a><br>（<em>适用于客户管理的加密</em>）</p> | -             | **✔︎**        |
+| [账户恢复管理](../admin-console/manage-members/account-recovery/about-account-recovery.md)                             | -             | **✔︎**        |
+| 价格                                                                                                               | $3/用户/月（按年计费） | $5/用户/月（按年计费） |
 
 {% hint style="info" %}
 额外的仅针对企业的功能仅适用于当前方案，包括扩展的企业策略。
@@ -90,7 +90,7 @@
 
 ### 问：这些更改何时生效？ <a href="#q-when-did-these-changes-go-into-effect" id="q-when-did-these-changes-go-into-effect"></a>
 
-**答：**&#x8FD9;些更改于 2020 年 9 月 6 日生效。如果您在该日期之前已创建了 Bitwarden 账户，但尚未升级，则表示您使用的是经典 2019 方案。
+**答：**&#x8FD9;些更改于 2020 年 09 月 06 日生效。如果您在该日期之前已创建了 Bitwarden 账户，但尚未升级，则表示您使用的是经典 2019 方案。
 
 ### 问：如何从经典 2019 升级到当前方案？ <a href="#q-how-do-i-upgrade-from-classic-2019-to-a-current-plan" id="q-how-do-i-upgrade-from-classic-2019-to-a-current-plan"></a>
 
@@ -106,7 +106,7 @@
 
 ### 问：我可以购买没有高级功能的家庭组织吗？ <a href="#q-can-i-purchase-a-families-organization-without-premium-features" id="q-can-i-purchase-a-families-organization-without-premium-features"></a>
 
-**答：**&#x5982;果您在 2020 年 9 月 6 日之前已创建了家庭组织，您可以保留您的家庭（不含高级功能）组织，只需选择不升级到当前方案即可。2020 年 9 月 6 日之后创建的家庭组织将始终包含高级功能。
+**答：**&#x5982;果您在 2020 年 09 月 06 日之前已创建了家庭组织，您可以保留您的家庭（不含高级功能）组织，只需选择不升级到当前方案即可。2020 年 09 月 06 日之后创建的家庭组织将始终包含高级功能。
 
 ### 问：我有一个企业组织，如何升级我的方案，以便可以使用 SSO 登录？ <a href="#q-i-have-an-enterprise-organization-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso" id="q-i-have-an-enterprise-organization-how-do-i-upgrade-my-plan-so-that-i-can-use-login-with-sso"></a>
 

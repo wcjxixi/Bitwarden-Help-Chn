@@ -36,7 +36,7 @@
 作为一个 Bitwarden 独行侠，您想使用诸如此类的高级功能成为 Bitwarden 黑带吗？
 
 * 高级 2FA 选项，如 Yubikey、FIDO2 以及 Duo
-* 1 GB 加密文件存储
+* 5 GB 加密文件存储
 * Bitwarden 验证器 (TOTP)
 * 紧急访问
 * 密码库健康报告
