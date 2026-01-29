@@ -56,7 +56,7 @@ XDG_SESSION_TYPE=x11 snap run bitwarden
 * Windows 便携式桌面 App 的一个问题已得到修复，App 更新至此版本后将自动注销用户。重新登录后，Windows 便携式桌面 App 将恢复正常运行。
 {% endhint %}
 
-* **订阅存储空间增加**：高级订阅和付费组织现在将提供 5GB 的[附件](password-manager/your-vault/vault-items/file-attachments.md)和 [Send](password-manager/bitwarden-send/about-send.md) 存储空间。
+* **订阅存储空间增加**：高级订阅和付费组织现在将提供 5 GB 的[附件](password-manager/your-vault/vault-items/file-attachments.md)和 [Send](password-manager/bitwarden-send/about-send.md) 存储空间。
 * **更新旧版客户端的 PIN 码**：将 Bitwarden 客户端从 2025.9.0 或更早版本更新到此版本后，用户需要重新设置 PIN 码才能继续[使用 PIN 码解锁](account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md)功能。PIN 码本身的要求未作任何变更。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>

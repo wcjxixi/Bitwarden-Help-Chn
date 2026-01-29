@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-高级用户和付费[组织](../../../admin-console/organizations-overview.md)成员可使用文件附件功能。这些付费用户拥有 1GB 加密存储空间用于存储文件附件。也可按 1GB 的增量购买[更多存储空间](file-attachments.md#add-storage-space)。
+高级用户和付费[组织](../../../admin-console/organizations-overview.md)成员可使用文件附件功能。这些付费用户拥有 5 GB 加密存储空间用于存储文件附件。也可按 1 GB 的增量购买[更多存储空间](file-attachments.md#add-storage-space)。
 {% endhint %}
 
 可通过任何 Bitwarden App 将文件附加到密码库项目。500 MB 或更小（从移动 App 上传，则是 100 MB 或更小）的文件都可以附加到项目中。附件在本地进行加密和解密，这意味着未加密的附件数据不会通过互联网传输或由服务器存储。
@@ -15,7 +15,7 @@
 {% endhint %}
 
 {% hint style="warning" %}
-**关于 2021 年 5 月 11 日之后创建的附件的说明：**
+**关于 2021 年 05 月 11 日之后创建的附件的说明：**
 
 由于附件升级，通过最新的客户端上传的附件无法在某些旧版本的客户端上打开。如果您发现你无法访问最近创建的附件，请将您的客户端升级到最新版本。（**提示**：云端网页密码库总是为最新版本。）
 
