@@ -20,19 +20,19 @@ Bitwarden Send 是一套功能齐全的 CLI 命令。本文介绍了 `bw send` �
 
 `send` 命令是用于访问所有与 Send 相关的子命令的主命令：
 
-```batch
+```shellscript
 bw send [options] [command] <data>
 ```
 
 `send` 命令还可以作为快速 `create` 一个 Send 的快捷方式，例如：
 
-```batch
+```shellscript
 bw send "Fastest Send in the West."
 ```
 
 将创建一个内容为 `Fastest Send in the West` 的文本 Send 对象并输出 Send 链接。或者，例如：
 
-```batch
+```shellscript
 bw send -f <path/to/file.ext>
 ```
 
@@ -48,7 +48,7 @@ bw send -f <path/to/file.ext>
 
 **完整的示例**：
 
-```batch
+```shellscript
 bw send -n "My First Send" -d 7 --hidden "The contents of my first Send."
 ```
 
@@ -56,7 +56,7 @@ bw send -n "My First Send" -d 7 --hidden "The contents of my first Send."
 
 `create` 命令用于创建一个 Send。与仅使用 `bw send` 相比，`create` 允许进行更高级的配置，接受已编码的 JSON 作为其参数：
 
-```batch
+```shellscript
 bw send create [options] <encodedJson>
 ```
 
@@ -69,13 +69,13 @@ bw send create [options] <encodedJson>
 
 例如，要创建一个文本 Send：
 
-```batch
+```shellscript
 bw send template send.text | jq '.name="My First Send" | .text.text="Secrets I want to share."' | bw encode | bw send create
 ```
 
 例如，要创建一个文件 Send：
 
-```batch
+```shellscript
 bw send template send.file | jq '.name="My File Send" | .type=1 | .file.fileName="paperwork.png" | .password="p@ssw0rd"' | bw encode | bw send create
 ```
 
@@ -83,7 +83,7 @@ bw send template send.file | jq '.name="My File Send" | .type=1 | .file.fileName
 
 {% tabs %}
 {% tab title="Windows" %}
-```batch
+```shellscript
 $delDate = (Get-Date).AddDays(14) | date -UFormat "%Y-%m-%dT%H:%M:%SZ"
 
 bw send template send.text | jq ".name=\`"My Send\`" | .text.text=\`"Secrets I want to share.\`" | .password=\`"password\`" | .deletionDate=\`"$delDate\`"" | bw encode | bw send create
@@ -93,7 +93,7 @@ bw send template send.text | jq ".name=\`"My Send\`" | .text.text=\`"Secrets I w
 {% endtab %}
 
 {% tab title="macOS" %}
-```batch
+```shellscript
 bw send template send.text | jq ".name=\"My Send\" | .text.text=\"Secrets I want to share.\" | .password=\"mypassword\" | .deletionDate=\"$(date -uv+14d +"%Y-%m-%dT%H:%M:%SZ")\"" | bw encode | bw send create
 ```
 
@@ -101,7 +101,7 @@ bw send template send.text | jq ".name=\"My Send\" | .text.text=\"Secrets I want
 {% endtab %}
 
 {% tab title="Linux" %}
-```batch
+```shellscript
 bw send template send.text | jq ".name=\"My Send\" | .text.text=\"Secrets I want to share.\" | .password=\"mypassword\" | .deletionDate=\"$(date "+%Y-%m-%dT%H:%M:%SZ" -d "+14 days")\"" | bw encode | bw send create
 ```
 
@@ -123,7 +123,7 @@ bw send template send.text | jq ".name=\"My Send\" | .text.text=\"Secrets I want
 
 `get` 命令用于检索您拥有的 Send 并将其作为 JSON 对象输出。`get` 接受一个确切的 `id` 值或任何字符串作为其参数。如果使用字符串，`get` 将会在您的 Send 中搜索一个与之匹配的值：
 
-```batch
+```shellscript
 bw send get [options] <id / string>
 ```
 
@@ -139,7 +139,7 @@ bw send get [options] <id / string>
 
 `edit` 命令用于编辑一个现有的 Send 对象。`edit` 接受已编码的 JSON 作为其参数：
 
-```batch
+```shellscript
 bw send edit <encodedJson>
 ```
 
@@ -152,7 +152,7 @@ bw send edit <encodedJson>
 
 示例：
 
-```batch
+```shellscript
 bw send get <id> | jq '.name="New Name" | .password=null' | bw encode | bw send edit
 ```
 
@@ -168,7 +168,7 @@ bw send get <id> | jq '.name="New Name" | .password=null' | bw encode | bw send 
 
 `list` 命令用于列出您拥有的所有 Send 并将其作为 JSON 输出：
 
-```batch
+```shellscript
 bw send list [options]
 ```
 
@@ -179,7 +179,7 @@ bw send list [options]
 * `--pretty` 用于格式化输出的 JSON。
 *   `>` 运算符用于使用管道将 stdout 传输到文件，例如：
 
-    ```batch
+    ```shellscript
     bw send list --pretty  > /Users/myaccount/Documents/pretty_list_of_sends.json
     ```
 
@@ -187,7 +187,7 @@ bw send list [options]
 
 `delete` 命令用于删除您所拥有的一个 Send。`delete` 命令接受一个精确的 `id` 值作为其参数：
 
-```batch
+```shellscript
 bw send delete <id>
 ```
 
@@ -199,13 +199,13 @@ bw send delete <id>
 
 `template` 命令用于返回一个 Send 对象的预期 JSON 格式，`template` 接受一个 `<object>` 规格作为其参数，可以是 `send.text` 或 `send.file`：
 
-```batch
+```shellscript
 bw send template <object>
 ```
 
 虽然你可以使用 `template` 将格式输出到你的屏幕上，但最常见的使用范例是将输出的内容用管道输送到 `bw send create` 操作中，使用[像 jq 这样的命令行 JSON 处理器](https://stedolan.github.io/jq/)和 `bw encode` 来操作从模板中检索的值，例如：
 
-```batch
+```shellscript
 bw send template send.text | jq '.name="My First Send" | .text.text="Secrets I want to share."' | bw encode | bw send create
 ```
 
@@ -213,7 +213,7 @@ bw send template send.text | jq '.name="My First Send" | .text.text="Secrets I w
 
 `receive` 命令用于访问 Send。`receive` 接受 Send `<url>`  作为其参数：
 
-```batch
+```shellscript
 bw send receive [options] <url>
 ```
 

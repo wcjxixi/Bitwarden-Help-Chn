@@ -20,11 +20,11 @@
 
 ### 更改 Send 密码 <a href="#change-send-passwords" id="change-send-passwords"></a>
 
-您可以随时在**编辑 Send** 视图中更改 Send 密码。更改 Send 密码**不会**要求您输入以前的密码。更改 Send 密码时，**密码**字段将更改为**新密码**。
+您可以随时在**编辑 Send** 视图中更改 Send 密码。更改 Send 密码不会要求您输入以前的密码。更改 Send 密码时，**密码**字段将更改为**新密码**。
 
 ### 移除 Send 密码 <a href="#remove-send-passwords" id="remove-send-passwords"></a>
 
-您可以随时使用 **⟲移除密码**菜单选项移除 Send 密码。移除 Send 密码**不会**要求您输入以前的密码：
+您可以随时使用 **⟲移除密码**菜单选项移除 Send 密码。移除 Send 密码不会要求您输入以前的密码：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6y6TJ0P7YbMza7p90kxu6X/929e10a4eac5d842b4cf283d46a41824/2024-12-03_10-09-52.png?_a=DAJCwlWIZAAB" %}
 Send 选项
@@ -36,18 +36,22 @@ Send 选项
 对于企业组织，可以使用[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md#send-options)设置此选项的可用性。
 {% endhint %}
 
-默认情况下，Send 对象将对接收者显示发送者的电子邮箱地址：
+默认情况下，Send 将对接收者显示发送者的电子邮箱地址。要在创建 Send 时移除您的电子邮箱地址：
+
+1、选择选项。
+
+2、勾选**对接收者隐藏我的电子邮箱地址**。
+
+接收者可以通过将 **Send 链接**与其发送者交叉对比，来验证预期 Send 对象的可信度。隐藏了电子邮箱的 Send 对象将向接收者发出警告，鼓励他们这样做：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/47RPmr6xOowzjJbG6JxVG3/98c803df88adcde39c96331cf34ab106/2024-12-03_10-23-03.png?_a=DAJCwlWIZAAB" %}
 隐藏了电子邮箱的文本 Send
 {% endembed %}
-
-切换**对接收者隐藏我的电子邮箱地址**选项，以从 Send 对象中移除您的电子邮箱地址。Send 接收者可以通过将 **Send 链接**与其发送者交叉对比，来验证预期 Send 对象的可信度。隐藏了电子邮箱的 Send 对象将向接收者发出警告，鼓励他们这样做。
 
 ## 隐藏文本 <a href="#hide-text" id="hide-text"></a>
 
 对于文本 Send，切换到**当访问 Send 时，默认隐藏文本**选项，以要求接收者 **👁‍🗨切换可见性**才能查看其内容。隐藏文本是一个很好的方法，它可以确保内容不会暴露给无意的旁人：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4KcdIWqSnADnv1TMtsrSIr/09abc9e81ae3bf64e7cd42c2916ef87a/2024-12-03_10-45-49.png?_a=DAJCwlWIZAAB" %}
-接收隐藏文本的 Send
+接收隐藏了文本的 Send
 {% endembed %}
