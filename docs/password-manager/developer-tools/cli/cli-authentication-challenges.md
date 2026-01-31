@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/cli-auth-challenges/)
 {% endhint %}
 
-2021 年 8 月发布的 Bitwarden（**2021-09-21**）引入了 [Captcha](https://www.hcaptcha.com/about) 要求，以提高针对机器人流量的安全性。在 CLI 上，Captcha 挑战被身份验证挑战所取代，此挑战可以使用您账户的[个人 API 密钥](personal-api-key.md) 的 `client_secret` 来进行验证。
+2021 年 08 月发布的 Bitwarden（**2021-09-21**）引入了 [Captcha](https://www.hcaptcha.com/about) 要求，以提高针对机器人流量的安全性。在 CLI 上，Captcha 挑战被身份验证挑战所取代，此挑战可以使用您账户的[个人 API 密钥](personal-api-key.md) 的 `client_secret` 来进行验证。
 
 {% hint style="success" %}
 **对于自动化工作流程或对外部应用程序提供访问的场景**，我们建议使用 `bw login --apikey` [方式](password-manager-cli.md#using-an-api-key)。此方式遵循更可预测的身份验证流程，并且可以通过[轮换 API 密钥](personal-api-key.md#rotate-your-api-key)来撤销应用程序或机器的访问权限。
@@ -40,7 +40,7 @@ export BW_CLIENTSECRET="client_secret"
 
 <img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line"> PowerShell
 
-```powershell
+```shellscript
 env:BW_CLIENTSECRET="client_secret"
 ```
 

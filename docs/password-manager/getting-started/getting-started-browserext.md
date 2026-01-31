@@ -9,7 +9,7 @@ Bitwarden 浏览器扩展将密码管理直接集成到您最喜爱的浏览器�
 ~~浏览器扩展支持 **Google Chrome**、**Mozilla Firefox**、**Opera**、**Microsoft Edge** 和 **Safari** 的最近两个版本。对于 **Vivaldi**、**Brave** 和 **Tor**，只支持最新的版本。~~
 
 {% hint style="success" %}
-Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载。[了解更多](../more/safari-web-extension.md)。
+Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载。[了解更多](../more/more-platforms/safari-web-extension.md)。
 {% endhint %}
 
 ## 第一步 <a href="#first-steps" id="first-steps"></a>

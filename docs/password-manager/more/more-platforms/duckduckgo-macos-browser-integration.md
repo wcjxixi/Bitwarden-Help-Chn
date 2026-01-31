@@ -14,7 +14,7 @@ Bitwarden 和 DuckDuckGo 合作在 DuckDuckGo macOS 浏览器中提供 Bitwarden
 DuckDuckGo 中的 Bitwarden
 {% endembed %}
 
-该集成要求在您的计算机上安装 Bitwarden [桌面 App](../getting-started/getting-started-desktop.md) 并解锁，以便从 DuckDuckGo 访问密码库项目。
+该集成要求在您的计算机上安装 Bitwarden [桌面 App](../../getting-started/getting-started-desktop.md) 并解锁，以便从 DuckDuckGo 访问密码库项目。
 
 ## 设置集成 <a href="#set-up-the-integration" id="set-up-the-integration"></a>
 

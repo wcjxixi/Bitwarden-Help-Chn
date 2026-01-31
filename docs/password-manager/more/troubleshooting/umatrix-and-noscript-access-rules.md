@@ -15,7 +15,9 @@ dc8ef5f6-eb0d-4c87-9e9f-0cf803f619e8.moz-extension-scheme bitwarden.com xhr allo
 ```
 
 {% hint style="info" %}
-&#x20;上述规则中的 UUID（`dc8ef5f6-eb0d-4c87-9e9f-0cf803f619e8`）对于您的安装是不一样的。访问`about:debugging#/runtime/this-firefox`页面（从 Firefox 的地址栏导航）以找到属于您的 Bitwarden 扩展的 UUID。
+&#x20;上述规则中的 UUID（`dc8ef5f6-eb0d-4c87-9e9f-0cf803f619e8`）对于您的安装是不一样的。
+
+访问`about:debugging#/runtime/this-firefox`页面（从 Firefox 的地址栏导航）以找到属于您的 Bitwarden 扩展的 UUID。
 {% endhint %}
 
 ## NoScript

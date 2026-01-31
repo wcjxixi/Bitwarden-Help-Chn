@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/using-bitwarden-offline/)
 {% endhint %}
 
-任何[已解锁](../../account/log-in-and-unlock/vault-timeout-options.md#vault-timeout-action)的 Bitwarden App 都可以在**只读模式**下离线使用，例如在移动设备上使用飞行模式或未连接到您的自托管服务器时。
+任何[已解锁](../../../account/log-in-and-unlock/vault-timeout-options.md#vault-timeout-action)的 Bitwarden App 都可以在**只读模式**下离线使用，例如在移动设备上使用飞行模式或未连接到您的自托管服务器时。
 
 Bitwarden 的大多数功能都可以在离线模式下无障碍使用，但是您将无法编辑或添加密码库项目、附件、Send，或导入新的密码库项目。
 

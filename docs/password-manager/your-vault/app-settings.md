@@ -176,7 +176,7 @@
 * **清除剪贴板**：设置何时清除从 Bitwarden 复制到您剪贴板的内容。
 * **允许通用剪贴板**：(仅限 iOS) 允许从 Bitwarden 移动 App 复制的数据粘贴到使用相同 Apple ID 登录的其他设备上。
 * **允许屏幕截图**：(仅限 Android) 允许 Bitwarden 移动 App 出现在截图和屏幕共享中。
-* **连接到 Watch**：(仅限 iOS) [将 Bitwarden 连接到您的 Apple Watch](../more/apple-watch-totp.md)，以便轻松访问 TOTP。
+* **连接到 Watch**：(仅限 iOS) [将 Bitwarden 连接到您的 Apple Watch](../more/more-platforms/apple-watch-totp.md)，以便轻松访问 TOTP。
 * **Siri & 快捷指令访问权限**：(仅限 iOS) 允许 Bitwarden 使用 App Intents 响应 Siri 和快捷指令。
 
 </details>
@@ -254,7 +254,7 @@
 * **使用硬件加速**：如果您遇到图形或性能问题，请关闭此选项。
 * **启用 SSH 代理**：允许 Bitwarden 桌面 App 充当 [SSH 代理](../developer-tools/ssh/ssh-agent.md)。
 * **允许屏幕截图**：允许 Bitwarden 桌面 App 出现在截图和屏幕共享中。关闭时，桌面 App 在大多数截图和屏幕共享中将不可见。
-* **允许 DuckDuckGo 浏览器集成**：(仅限 macOS) 允许[ Bitwarden 桌面 App 与 DuckDuckGo macOS 浏览器之间](../more/duckduckgo-macos-browser-integration.md)的集成。
+* **允许 DuckDuckGo 浏览器集成**：(仅限 macOS) 允许[ Bitwarden 桌面 App 与 DuckDuckGo macOS 浏览器之间](../more/more-platforms/duckduckgo-macos-browser-integration.md)的集成。
 * **主题**：切换 Bitwarden 的颜色模式（浅色模式、深色模式或跟随系统）。
 * **语言**：选择 Bitwarden 桌面 App 使用的语言。
 

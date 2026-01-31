@@ -19,7 +19,7 @@
 
 ~~虽然浏览器扩展在 Firefox 隐私窗口中可以展示全部功能，但需要考虑一些限制：~~
 
-* ~~使用~~[~~上下文菜单~~](../autofill/autofill-from/autofill-from-browser-extensions.md#using-the-context-menu)~~和~~[~~键盘快捷键~~](../autofill/autofill-from/autofill-from-browser-extensions.md#using-keyboard-shortcuts)~~自动填充要求在非隐私窗口中才能解锁密码库。~~
+* ~~使用~~[~~上下文菜单~~](../../autofill/autofill-from/autofill-from-browser-extensions.md#using-the-context-menu)~~和~~[~~键盘快捷键~~](../../autofill/autofill-from/autofill-from-browser-extensions.md#using-keyboard-shortcuts)~~自动填充要求在非隐私窗口中才能解锁密码库。~~
 * ~~每次浏览器扩展关闭时，您的密码库都会被锁定，除非您将密码库超时设置为**从不**。或者，您可以将浏览器扩展作为侧边栏以绕过此限制。~~
 * ~~仅当未选中**在浏览器重新启动时使用主密码锁定**选项时，PIN 解锁才有效。~~
-* [~~徽章图标~~](../autofill/autofill-from/autofill-from-browser-extensions.md)~~不会更新以显示密码库的状态（_已锁&#x5B9A;_&#x6216;_已解锁_）。~~
+* [~~徽章图标~~](../../autofill/autofill-from/autofill-from-browser-extensions.md)~~不会更新以显示密码库的状态（_已锁&#x5B9A;_&#x6216;_已解锁_）。~~

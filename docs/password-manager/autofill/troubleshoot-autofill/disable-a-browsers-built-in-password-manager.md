@@ -116,7 +116,7 @@ Tor 已保存的密码
 
 您可以通过选择**导出密码**来创建现有数据的备份。创建备份文件后，选择**查看自动填充内容...** 并删除已存储的自动填充数据，以移除之前保存的建议。
 
-在密码管理器部分，macOS 用户可以选择使用 Bitwarden。[此处](../../more/duckduckgo-macos-browser-integration.md)了解更多有关 Bitwarden DuckDuckGo macOS 浏览器集成的信息。
+在密码管理器部分，macOS 用户可以选择使用 Bitwarden。[此处](../../more/more-platforms/duckduckgo-macos-browser-integration.md)了解更多有关 Bitwarden DuckDuckGo macOS 浏览器集成的信息。
 {% endtab %}
 {% endtabs %}
 

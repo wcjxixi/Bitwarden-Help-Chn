@@ -312,7 +312,7 @@ helm upgrade self-host-bsfyr9bpzk bitwarden/self-host --version <semver-version>
 
 * **添加和编辑项目时浏览器扩展的持久化**：现在，浏览器扩展对项目数据的更改操作将有最长 2 分钟的缓存周期，即使点击其他区域或最小化扩展窗口也不会丢失更改的数据。
 * **浏览器扩展通知重新设计**：浏览器扩展通知有了新的外观和体验。[了解更多](password-manager/autofill/autofill-from/autosave-from-browser-extensions.md)。
-* **移动版 App 高级故障排除**：在移动 App 中，用户现在可以选择本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/tong-guo-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
+* **移动版 App 高级故障排除**：在移动 App 中，用户现在可以选择本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/troubleshooting/tong-guo-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
 
 ### Bitwarden Authenticator
 
@@ -381,7 +381,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 
 * **设备批准时浏览器扩展中的持久性**：现在，即使您点击退出或最小化扩展程序窗口以使用网页 App 批准请求，浏览器扩展程序也会等待最多两分钟才能获得批准。
 * **桌面端主密码重新提示更新**：当某个项目的主密码重新提示选项处于活动状态时，桌面 App 现在会将所有字段（而不仅仅是隐藏的字段）置于成功验证之后。[了解更多](password-manager/your-vault/vault-items/vault-items.md#protect-individual-items)。
-* **移动 App 的高级故障排除**：在移动 App 中，打开飞行记录器以本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/tong-guo-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
+* **移动 App 的高级故障排除**：在移动 App 中，打开飞行记录器以本地临时记录 App 事件，以帮助排除 Bitwarden App 中的意外行为。[了解更多](password-manager/more/troubleshooting/tong-guo-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)。
 
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
@@ -773,7 +773,7 @@ Bitwarden 客户端即将迎来重要变更！请注意：若长期未更新，�
 * **通行密钥用户验证**：当使用存储的通行密钥登录时，浏览器扩展现在可能会提示用户使用生物识别、PIN 或主密码进行验证。[了解更多](password-manager/autofill/more-autofill-options/autofill-passkeys.md#liu-lan-qi-kuo-zhan)。
 * **产品内入门**：Password Manager 的新用户现在将看到一个入门模块，以帮助他们快速开始保护凭据。
 * **浏览器扩展设置重组**：使用浏览器扩展上新重组的设置界面可以快速定位和修改浏览器扩展设置。
-* **Firefox 扩展在隐私窗口中获得完整功能**：在 Firefox 隐私窗口中使用 Bitwarden 浏览器扩展不再有任何限制。[了解更多](password-manager/more/use-bitwarden-in-firefoxs-private-mode.md)。
+* **Firefox 扩展在隐私窗口中获得完整功能**：在 Firefox 隐私窗口中使用 Bitwarden 浏览器扩展不再有任何限制。[了解更多](password-manager/more/more-platforms/use-bitwarden-in-firefoxs-private-mode.md)。
 * **增加产品切换器的位置**：用于在 Password Manager、管理控制台、Secrets Manager 和提供商门户之间切换的产品切换器现在也可以在导航的左下角找到。
 * **浏览器扩展和桌面端的密码保护导出**：浏览器扩展和桌面端应用程序现在可以导出受密码保护的加密导出。[了解更多](password-manager/import-and-export/encrypted-exports.md#create-an-encrypted-export)。
 
@@ -1117,7 +1117,7 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 
 此次发布包含：
 
-* **Apple Watch 上的 Bitwarden**：Bitwarden 添加了 Apple Watch 支持，以提供访问 TOTP 登录代码的附加选项。参阅[这里](password-manager/more/apple-watch-totp.md)。
+* **Apple Watch 上的 Bitwarden**：Bitwarden 添加了 Apple Watch 支持，以提供访问 TOTP 登录代码的附加选项。参阅[这里](password-manager/more/more-platforms/apple-watch-totp.md)。
 * **新的环境变量**：一个用于为所有者和管理员强制执行要求 SSO 身份验证策略的环境变量现在可用于自托管服务器。参阅[这里](self-hosting/deploy-and-configure/configuration-options/environment-variables.md#optional-variables)。
 * **Bitwarden Unified - 支持自定义数据库端口**：Unified 部署现在支持使用新的环境变量在自定义端口上运行数据库。参阅[这里](self-hosting/deploy-and-configure/docker/lite-deployment.md#environment-variables)。
 * **Passsky 导入器 (json)**：新的导入选项可用于未加密的 Passsky (json) 导出。参阅[这里](password-manager/import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
@@ -1129,7 +1129,7 @@ Bitwarden 机密管理器现在作为公开测试版提供。参阅[此处](secr
 
 * **浏览器扩展 - 主题通知栏**：主题通知栏已添加到 Bitwarden 浏览器扩展中以匹配流行的颜色主题。
 * **浏览器扩展 - UI 更新**：已对 Bitwarden 浏览器扩展进行了 UI 更新。
-* **Apple Watch 上的 Bitwarden (Beta)**：Apple Watch 上的 Bitwarden 将以测试版形式提供给通过 TestFlight 注册的用户，并将提供访问 TOTP 登录代码的附加选项。在[这里](password-manager/more/apple-watch-totp.md)了解更多。
+* **Apple Watch 上的 Bitwarden (Beta)**：Apple Watch 上的 Bitwarden 将以测试版形式提供给通过 TestFlight 注册的用户，并将提供访问 TOTP 登录代码的附加选项。在[这里](password-manager/more/more-platforms/apple-watch-totp.md)了解更多。
 
 ### Bitwarden Unified 自托管部署 (Beta) <a href="#bitwarden-unified-self-host-deployment-beta" id="bitwarden-unified-self-host-deployment-beta"></a>
 
@@ -1250,7 +1250,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 继上周的发布之后，针对移动 App 和浏览器扩展发布了以下内容：
 
 * **移动端添加账户切换功能**：在 Android 和 iOS 上使用 Bitwarden 时，最多可登录 5 个账户并在它们之间无缝切换（参阅[这里](account/log-in-and-unlock/more-log-in-options/account-switching.md)）。
-* **支持 Firefox 隐私模式**：此版本包含对 Firefox 隐私窗口更强大的支持（参阅[这里](password-manager/more/use-bitwarden-in-firefoxs-private-mode.md)）。
+* **支持 Firefox 隐私模式**：此版本包含对 Firefox 隐私窗口更强大的支持（参阅[这里](password-manager/more/more-platforms/use-bitwarden-in-firefoxs-private-mode.md)）。
 
 ## 2022-03-15 <a href="#id-2021-10-26" id="id-2021-10-26"></a>
 
@@ -1390,7 +1390,7 @@ Bitwarden 自豪地宣布我们发布了 Bitwarden Send，一个用于短暂共�
 * **FIDO U2F 支持 Edge**：FIDO U2F 方式的两步登录现在可以用于微软 Edge 中的网页密码库和浏览器扩展（参阅[这里](account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)）。
 * **浏览器扩展中的域名排除**：Bitwarden 浏览器扩展现在可以对其明确不提供记住密码的域名进行配置（参阅[这里](password-manager/autofill/more-autofill-options/exclude-domains.md)）。
 * **改进的导入错误消息**：最近有很多人迁移到 Bitwarden，所以我们清理了一个导入错误的消息，以帮助您更快地解决问题（参阅[这里](password-manager/import-and-export/import-data.md#length-related-import-errors)）。
-* **Safari 网页扩展移植**：我们的 Safari App 扩展已经正式移植到 Safari 14 以上版本的网页扩展中使用。由于 Safari 的变化，网页扩展的使用现在仅限于那些通过 Mac App Store 下载获取的 App（参阅[这里](password-manager/more/safari-web-extension.md)）。
+* **Safari 网页扩展移植**：我们的 Safari App 扩展已经正式移植到 Safari 14 以上版本的网页扩展中使用。由于 Safari 的变化，网页扩展的使用现在仅限于那些通过 Mac App Store 下载获取的 App（参阅[这里](password-manager/more/more-platforms/safari-web-extension.md)）。
 
 ## 2021-01-19 发行后的更新 <a href="#id-2021-01-19-post-release-update" id="id-2021-01-19-post-release-update"></a>
 
