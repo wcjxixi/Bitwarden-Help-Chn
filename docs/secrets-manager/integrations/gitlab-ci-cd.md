@@ -27,7 +27,7 @@ Bitwarden 提供了一种使用 Bitwarden [Secrets Manager CLI](../developer-too
 
 接下来，我们编写一个简单的 GitLab CI/CD 工作流文件。在您的代码库的根目录中创建一个名为 `.gitlab-ci.yml` 的文件，并包含以下内容：
 
-```bash
+```yaml
 stages:
 - default_runner
 

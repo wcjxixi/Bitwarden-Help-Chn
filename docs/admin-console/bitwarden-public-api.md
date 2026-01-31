@@ -72,7 +72,7 @@ curl -X POST \
 
 该请求将返回如下响应：
 
-```yaml
+```json
 {
   "access_token": "<TOKEN>",
   "expires_in": 3600,
@@ -98,7 +98,7 @@ curl -X GET \
 
 该请求将返回如下响应：
 
-```yaml
+```json
 {
   "object": "list",
   "data": [
@@ -141,7 +141,7 @@ Bitwarden 公共 API 使用传统的 HTTP 响应代码来表示 API 请求是成
 
 为返回超过 50 条日志的查询提供延续令牌，该值 `field: string` 在请求响应的底部提供，例如：
 
-```yaml
+```json
 {
   "object": "list",
   "data": [

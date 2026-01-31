@@ -125,7 +125,7 @@ jbkfoedolllekgbhcbcoahefnbanhhlh;https://edge.microsoft.com/extensionwebstorebas
 
 5、将以下内容添加到 `managed_preferences.json`：
 
-```yaml
+```json
 {
   "policies:" {
   "ExtensionSettings": {
@@ -147,7 +147,7 @@ jbkfoedolllekgbhcbcoahefnbanhhlh;https://edge.microsoft.com/extensionwebstorebas
 
 6、（**推荐**）要[禁用](https://chromeenterprise.google/policies/#PasswordManagerEnabled) Chrome 的内置密码管理器，请将以下内容添加到 `managed_preferences.json` 的 `"policies": { }` 内部：
 
-```yaml
+```json
 {
  "PasswordManagerEnabled": false
 }
@@ -189,7 +189,7 @@ chmod -R 755 /etc/opt/chrome/policies
 
 4、将以下内容添加到 `policies.json`：
 
-```yaml
+```json
 {
 "policies": {
  "ExtensionSettings": {
@@ -206,7 +206,7 @@ chmod -R 755 /etc/opt/chrome/policies
 
 5、（**推荐**）要[禁用](https://github.com/mozilla/policy-templates/blob/master/README.md#passwordmanagerenabled) Firefox 的内置密码管理器，请将以下内容添加到 `managed_preferences.json` 的 `"policies": { }` 内部：
 
-```yaml
+```json
 {
  "PasswordManagerEnabled": false
 }

@@ -79,7 +79,7 @@ bwdc login organization.b5351047-89b6-820f-ad21016b6222 yUMB4trbqV1bavhEHGqbuGpz
 
 * 使用保存的环境变量：
 
-```systemd
+```shellscript
 BW_CLIENTID="organization.b5351047-89b6-820f-ad21016b6222"
 BW_CLIENTSECRET="yUMB4trbqV1bavhEHGqbuGpz4AlHm9"
 
@@ -227,7 +227,7 @@ bwdc update
 
 如果您在使用 `bwdc config` 时收到有关 dbus 的错误消息，例如 `Failed to execute child process "dbus-launch" (No such file or directory)` 或 `Cannot autolaunch D-Bus without X11`，请分配以下环境变量以允许在 `data.json` 中明文存储密码：
 
-```systemd
+```shellscript
 export BITWARDENCLI_CONNECTOR_PLAINTEXT_SECRETS=true
 ```
 
@@ -243,7 +243,7 @@ export BITWARDENCLI_CONNECTOR_DEBUG=true
 
 如果您收到一条 `unable to get local issuer certificate` 的错误消息，请将 `NODE_EXTRA_CA_CERTS` 变量设置到您的 `root.pem` 中，例如：
 
-```systemd
+```shellscript
 export NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 ```
 

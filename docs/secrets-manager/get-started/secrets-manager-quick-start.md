@@ -64,7 +64,7 @@ Secrets Manager 主页
 
 ### 给予成员访问权限 <a href="#give-members-access" id="give-members-access"></a>
 
-{% hint style="success" %}
+{% hint style="info" %}
 在继续之前，我们建议为 Secrets Manager 用户[创建群组](../../admin-console/manage-members/groups.md#create-a-group)。用户拥有对 Secrets Manager 的访问权限后，您就可以通过群组快速分配对机密的访问权限。
 {% endhint %}
 
@@ -166,7 +166,7 @@ Secrets Manager 主页
 创建机密
 {% endembed %}
 
-2、在「新增机密」窗口的最顶部部分，输入**名称**和**值**。可选添加**备注**。
+2、在「新增机密」窗口的最顶部部分，输入**名称**和**值**。添加**备注**是可选的。
 
 3、在「工程」部分，输入或选择要与此机密关联的工程。几个关键点：
 

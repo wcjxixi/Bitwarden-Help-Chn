@@ -22,7 +22,7 @@ Bitwarden 提供了一个用于获取、创建和管理机密的 Terraform 提�
 
 您的 Terraform 配置文件 ( `.tf` ) 至少必须包含以下内容：
 
-```bash
+```json
 terraform {
   required_providers {
     bitwarden-secrets = {
@@ -43,7 +43,7 @@ terraform {
 
 一个明确包含所有属性（而不是由环境变量传递）的 `.tf` 文件应如下所示：
 
-```bash
+```json
 terraform {
   required_providers {
     bitwarden-secrets = {
@@ -92,7 +92,7 @@ resource "bitwarden-secrets_secret" "my_secret" {
 
 `bitwarden-secrets_projects` 数据源获取机器账户可访问的所有工程列表。以下是一个包含 `bitwarden-secrets_projects` 数据源声明的 `data` 块示例，以及一个使用 `.projects` 属性引用它的 `output` 块示例：
 
-```bash
+```json
 data "bitwarden-secrets_projects" "example" {}
 
 output "example" {
@@ -112,7 +112,7 @@ output "example" {
 
 `bitwarden-secrets_list_secrets` 数据源获取机器账户可访问的所有机密列表。以下是一个 `data` 块的示例，其中包含 `bitwarden-secrets_list_secrets` 数据源声明，以及一个使用 `.secrets` 属性引用它的 `output` 块示例：
 
-```bash
+```json
 data "bitwarden-secrets_list_secrets" "example" {}
 
 output "example" {
@@ -137,7 +137,7 @@ output "example" {
 
 以下是一个包含 `data` 数据源声明和引用所有可导出属性的 `output` 示例代码块：
 
-```bash
+```json
 data "bitwarden-secrets_secret" "example" {
   id = "e6a8066c-81e6-428e-bf5d-b1b900fe1b42"
 }
@@ -177,7 +177,7 @@ output "example" {
 
 以下是一个包含 `bitwarden-secrets_secret` 资源声明的 `resource` 块示例：
 
-```
+```json
 resource "bitwarden-secrets_secret" "db_admin_secret" {
   key = "db_admin_password"
   value      = var.value #It is not recommended to provide the actual secret value via configuration file! By using a terraform variable, users can inject the secret value during runtime via environment variables.
@@ -196,7 +196,7 @@ resource "bitwarden-secrets_secret" "db_admin_secret" {
 
 如果没有提供机密值，Terraform 提供者将为您生成一个。**这是推荐的方法**。您可以指定可选属性来自定义值的生成，例如：
 
-```bash
+```json
 resource "bitwarden-secrets_secret" "db_admin_secret" {
   key         = "db_admin_password"
   project_id  = var.project_id

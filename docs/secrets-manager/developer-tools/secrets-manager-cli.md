@@ -11,7 +11,7 @@ Secrets Manager 命令行界面 (CLI) 是用于检索和注入您的机密的强
 
 Secrets Manager CLI 是自描述的。在命令行中，使用以下命令了解有关可用命令的更多信息：
 
-```batch
+```shellscript
 bws --help, -h
 ```
 
@@ -47,7 +47,7 @@ docker run --rm -it bitwarden/bws --help
 {% tab title="环境变量" %}
 您可以通过将访问令牌的值保存到环境变量 `BWS_ACCESS_TOKEN` 来对 CLI 会话进行身份验证，例如：
 
-```batch
+```shellscript
 export BWS_ACCESS_TOKEN=0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHnAp1h0gL8bngprlPOYutt0:B3h5D+YgLvFiQhWkIq6Bow==
 ```
 {% endtab %}
@@ -55,7 +55,7 @@ export BWS_ACCESS_TOKEN=0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHnAp1h0gL8
 {% tab title="Inline" %}
 您可以在任何单个命令中使用 `-t`，`--access-token` 标志对单个 CLI 请求进行身份验证，例如：
 
-```batch
+```shellscript
 bws list secrets --access-token 0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHnAp1h0gL8bngprlPOYutt0:B3h5D+YgLvFiQhWkIq6Bow==
 ```
 {% endtab %}
@@ -90,7 +90,7 @@ Secrets Manager CLI 将暂时保留对旧语法的支持。如果您不确定正
 {% tab title="单个命令" %}
 您可以使用 `bws run -- 'your-command'` 执行单个命令：
 
-```batch
+```shellscript
 # run an npm project with secrets injected
 bws run -- 'npm run start'
 ```
@@ -99,7 +99,7 @@ bws run -- 'npm run start'
 {% tab title="多个命令" %}
 可以通过将多个 shell 命令用单引号括起来来执行它们。将多个命令用单引号括起来将确保在 shell 解释特殊字符（例如 `$`、`&`、`;`、`"` 等）之前将整个命令传递给 run 命令：
 
-```batch
+```shellscript
 # start a container stack, execute a script, and tear down the container stack
 bws run -- 'docker compose up -d && ./second-command.sh; docker compose down'
 
@@ -119,7 +119,7 @@ Secrets Manager CLI 仍会将不符合 POSIX 标准的密钥名称设置为环�
 
 使用 `--project-id` 选项和 `run` 命令来注入单个项目的机密，例如：
 
-```batch
+```shellscript
 bws run --project-id 7b006643-89c1-4202-a5ca-90510f566030 -- echo "only secrets from the specified project will be available"
 ```
 
@@ -127,7 +127,7 @@ bws run --project-id 7b006643-89c1-4202-a5ca-90510f566030 -- echo "only secrets 
 
 `run` 命令在 Linux 和 macOS 上默认使用 `sh`，在 Windows 上默认使用 PowerShell。将 `--shell` 选项与 `run` 命令一起使用可使用另一个已安装的 shell 运行，例如：
 
-```batch
+```shellscript
 bws run --shell fish -- echo “running a command with the Fish shell” 
 ```
 
@@ -139,7 +139,7 @@ bws run --shell fish -- echo “running a command with the Fish shell”
 虽然 `--no-inherit-env` 参数尝试从 shell 中删除环境变量，但它始终会继承 `$PATH`。此外，一些环境变量（`$PWD`、`$SLVL` 等）将由 shell 本身自动设置，因此可能是持久性的。
 {% endhint %}
 
-```batch
+```shellscript
 bws run --no-inherit-env -- echo "running a command with a minimal environment"
 ```
 
@@ -151,7 +151,7 @@ bws run --no-inherit-env -- echo "running a command with a minimal environment"
 
 默认情况下，`run` 命令将采用机密名称并将其设置为正在执行的进程中的环境变量。将 `--uuids-as-keynames` 参数与 `run` 命令结合使用，以使用符合 POSIX 标准的机密 ID 作为环境变量名称，例如：
 
-```batch
+```shellscript
 # echo a secret’s value by its POSIX-compliant UUID
 bws run --uuids-as-keynames -- 'echo $_64246aa4_70b3_4332_8587_8b1284ce6d76'
 ```
@@ -170,19 +170,19 @@ bws run --uuids-as-keynames -- 'echo $_64246aa4_70b3_4332_8587_8b1284ce6d76'
 
 使用 `bws secret create` 创建一个新的机密。此命令需要 `KEY`、`VALUE` 和 `PROJECT_ID`：
 
-```batch
+```shellscript
 bws secret create <KEY> <VALUE> <PROJECT_ID>
 ```
 
 或者，您可以使用 `--note <NOTE>` 选项添加注释。例如：
 
-```batch
+```shellscript
 bws secret create SES_KEY 0.982492bc-7f37-4475-9e60 f588b2f2-4780-4a78-be2a-b02d014d622f --note "API Key for AWS SES"
 ```
 
 默认情况下，此命令将返回一个 JSON 对象并将机密保存到 Secrets Manager。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```javascript
+```json
 {
   "object": "secret",
   "id": "be8e0ad8-d545-4017-a55a-b02f014d4158",
@@ -200,19 +200,19 @@ bws secret create SES_KEY 0.982492bc-7f37-4475-9e60 f588b2f2-4780-4a78-be2a-b02d
 
 `bws secret delete` 命令用来删除 `SECRET_IDS` 指定的一个或多个机密。
 
-```batch
+```shellscript
 bws secret delete <SECRET_IDS>
 ```
 
 要删除 ID 为 `be8e0ad8-d545-4017-a55a-b02f014d4158` 的单个机密：
 
-```batch
+```shellscript
 bws secret delete be8e0ad8-d545-4017-a55a-b02f014d4158
 ```
 
 对于 ID 为 `382580ab-1368-4e85-bfa3-b02e01400c9f` 和 `47201c5c-5653-4e14-9007-b02f015b2d82` 的多个机密：
 
-```batch
+```shellscript
 bws secret delete 382580ab-1368-4e85-bfa3-b02e01400c9f 47201c5c-5653-4e14-9007-b02f015b2d82
 ```
 
@@ -226,7 +226,7 @@ bws secret delete 382580ab-1368-4e85-bfa3-b02e01400c9f 47201c5c-5653-4e14-9007-b
 
 要编辑机密，以下结构会将更改应用于所选值。在 CLI 中，此命令可以编辑机密的 `KEY`、`VALUE`、`NOTE` 或 `PROJECT_ID`。
 
-```batch
+```shellscript
 bws secret edit <SECRET_ID> --key <KEY> --value <VALUE> --note <NOTE> --project-id <PROJECT_ID>
 ```
 
@@ -242,13 +242,13 @@ bws secret edit be8e0ad8-d545-4017-a55a-b02f014d4158 --note "I am adding a note"
 
 要编辑多个字段，其中 `SES_KEY2` 是新的 `key`，`0.1982492bc-7f37-4475-9e60` 是新 `value`：
 
-```batch
+```shellscript
 bws secret edit be8e0ad8-d545-4017-a55a-b02f014d4158 --key SES_KEY2 --value 0.1982492bc-7f37-4475-9e60
 ```
 
 输出：
 
-```javascript
+```json
 {
   "object": "secret",
   "id": "be8e0ad8-d545-4017-a55a-b02f014d4158",
@@ -266,19 +266,19 @@ bws secret edit be8e0ad8-d545-4017-a55a-b02f014d4158 --key SES_KEY2 --value 0.19
 
 `bws secret get` 用于检索特定的机密：
 
-```batch
+```shellscript
 bws secret get <SECRET_ID>
 ```
 
 默认情况下，此命令将检索具有 `SECRET_ID` 的机密对象。
 
-```batch
+```shellscript
 bws secret get be8e0ad8-d545-4017-a55a-b02f014d4158
 ```
 
 默认情况下，`get` 将以 JSON 数组的形式返回对象，如以下示例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```javascript
+```json
 {
   "object": "secret",
   "id": "be8e0ad8-d545-4017-a55a-b02f014d4158",
@@ -296,19 +296,19 @@ bws secret get be8e0ad8-d545-4017-a55a-b02f014d4158
 
 要列出机器账户可以访问的机密，请使用以下命令：
 
-```batch
+```shellscript
 bws secret list
 ```
 
 您还可以使用以下命令仅列出特定项目中的机密，其中 `e325ea69-a3ab-4dff-836f-b02e013fe530` 表示项目标识符：
 
-```batch
+```shellscript
 bws secret list e325ea69-a3ab-4dff-836f-b02e013fe530
 ```
 
 默认情况下，`list` 将以 JSON 数组的形式返回对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```javascript
+```json
 [
   {
     "object": "secret",
@@ -347,19 +347,19 @@ bws secret list e325ea69-a3ab-4dff-836f-b02e013fe530
 
 `bws project create` 用于创建一个新的工程。此命令需要一个 `NAME`。
 
-```batch
+```shellscript
 bws project create <NAME>
 ```
 
 在此示例中，将创建一个名为 `My project` 的工程。
 
-```batch
+```shellscript
 bws project create "My project"
 ```
 
 默认情况下，`bws project create` 将以 JSON 数组的形式返回对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#huan-jing-bian-liang)）。
 
-```javascript
+```json
 {
   "object": "project",
   "id": "1c80965c-acb3-486e-ac24-b03000dc7318",
@@ -374,19 +374,19 @@ bws project create "My project"
 
 `bws project delete` 用于删除 `PROJECT_IDS` 指定的一个或多个工程。
 
-```batch
+```shellscript
 bws project delete <PROJECT_IDS>
 ```
 
 对于单个项目，其中 `f1fe5978-0aa1-4bb0-949b-b03000e0402a` 代表 `PROJECT_ID`：
 
-```batch
+```shellscript
 bws project delete f1fe5978-0aa1-4bb0-949b-b03000e0402a
 ```
 
 对于多个项目，其中 `1c80965c-acb3-486e-ac24-b03000dc7318` 和 `f277fd80-1bd2-4532-94b2-b03000e00c6c` 代表 `PROJECT_IDS`：
 
-```batch
+```shellscript
 bws project delete 1c80965c-acb3-486e-ac24-b03000dc7318 f277fd80-1bd2-4532-94b2-b03000e00c6c
 ```
 
@@ -400,19 +400,19 @@ bws project delete 1c80965c-acb3-486e-ac24-b03000dc7318 f277fd80-1bd2-4532-94b2-
 
 用 `edit` 命令，您可以通过以下输入更改g工程的名称：
 
-```batch
+```shellscript
 bws project edit <PROJECT_ID> --name <NEW_NAME>
 ```
 
 例如，此命令会将项目名称更改为 `My project 2`。
 
-```batch
+```shellscript
 bws project edit 1c80965c-acb3-486e-ac24-b03000dc7318 --name "My project 2"
 ```
 
 默认情况下，`bws project edit` 将返回 JSON 数组形式的对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```javascript
+```json
 {
   "object": "project",
   "id": "1c80965c-acb3-486e-ac24-b03000dc7318",
@@ -427,19 +427,19 @@ bws project edit 1c80965c-acb3-486e-ac24-b03000dc7318 --name "My project 2"
 
 `get` 命令检索已登录的机器账户可以从您的密码库访问的特定工程。无法检索密码库中机器账户无权访问的对象。
 
-```batch
+```shellscript
 bws project get <PROJECT_ID>
 ```
 
 要获取特定工程，请使用以下命令，其中 `e325ea69-a3ab-4dff-836f-b02e013fe530` 代表 `PROJECT_ID`：
 
-```batch
+```shellscript
 bws project get e325ea69-a3ab-4dff-836f-b02e013fe530
 ```
 
 默认情况下，`get` 将返回 JSON 数组形式的对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```javascript
+```json
 {
   "object": "project",
   "id": "e325ea69-a3ab-4dff-836f-b02e013fe530",
@@ -454,13 +454,13 @@ bws project get e325ea69-a3ab-4dff-836f-b02e013fe530
 
 要列出此机器账户有权访问的工程，请使用以下命令：
 
-```batch
+```shellscript
 bws project list
 ```
 
 默认情况下，`list` 将返回 JSON 数组形式的对象，如下例所示。您可以使用 `--output` 标志更改输出格式（[了解更多](secrets-manager-cli.md#o-output)）。
 
-```javascript
+```json
 [
   {
     "object": "project",
@@ -482,7 +482,7 @@ bws project list
 
 可用的 `bws` 服务器设置包括 `server-base`、`server-api` 和 `server-identity`，例如：
 
-```batch
+```shellscript
 bws config server-base https://my_hosted_server.com
 ```
 
@@ -497,13 +497,13 @@ bws config server-base https://my_hosted_server.com
 
 将 `--profile` 选项与 `config` 命令一起使用可将指定的服务器值保存到备用个人资料，例如：
 
-```batch
+```shellscript
 bws config server-base http://other_hosted_server.com --profile dev
 ```
 
 创建后，您可以将该个人资料与其他命令一起使用以将请求路由到指定的服务器，例如：
 
-```batch
+```shellscript
 bws get secret 2863ced6-eba1-48b4-b5c0-afa30104877a --profile dev
 ```
 
@@ -511,19 +511,19 @@ bws get secret 2863ced6-eba1-48b4-b5c0-afa30104877a --profile dev
 
 将 `--config-file` 选项与 `config` 命令一起使用可将指定的服务器值保存到备用配置文件，例如将值保存到新配置文件中的默认个人资料：
 
-```batch
+```shellscript
 bws config server-base http://third_hosted_server.com --config-file ~/.bws/alt_config
 ```
 
 您可以将 `--config-file` 与 `--profile` 链接起来，以将值保存到备用配置文件中的备用个人资料，例如：
 
-```batch
+```shellscript
 bws config server-base http://third_hosted_server.com --config-file ~/.bws/alt_config --profile alt_dev
 ```
 
 创建后，您可以将该个人资料与其他命令一起使用以将请求路由到指定的服务器，例如：
 
-```batch
+```shellscript
 bws secret get 2863ced6-eba1-48b4-b5c0-afa30104877a --config-file ~/.bws/alt_config --profile alt_dev
 ```
 
@@ -531,7 +531,7 @@ bws secret get 2863ced6-eba1-48b4-b5c0-afa30104877a --config-file ~/.bws/alt_con
 
 状态文件是完全加密的文件，用于存储身份验证令牌和其他相关数据。状态文件可以使用存储的令牌进行身份验证，从而减少身份验证时的速率限制。状态目录默认位置是 `~/.config/bws/state`。状态文件必须指定绝对路径：
 
-```batch
+```shellscript
 bws config state-dir /Users/user/Desktop/bws/state
 ```
 
@@ -560,13 +560,13 @@ docker run -it -v /PATH/TO/YOUR/CONFIGFILE:/home/app/.bws/config -e BWS_ACCESS_T
 
 例如，以下命令：
 
-```batch
+```shellscript
 bws secret get 2863ced6-eba1-48b4-b5c0-afa30104877a --output yaml
 ```
 
 将返回以下内容：
 
-```javascript
+```
 object: secret
 id: 2863ced6-eba1-48b4-b5c0-afa30104877a
 organizationId: b8824f88-c57c-4a36-8b1a-afa300fe0b52
@@ -584,13 +584,13 @@ revisionDate: 2023-02-08T15:48:33.470702Z
 
 使用 `--output env` 标志，例如：
 
-```batch
+```shellscript
 bws secret list --output env
 ```
 
 将返回以下内容：
 
-```batch
+```systemd
 this_is_a_keyname="this is a key value"
 CLOUDFLARE_API_TOKEN="123412341234123412341234"
 # This is an invalid keyname="this will get commented-out"
@@ -606,7 +606,7 @@ CLOUDFLARE_API_TOKEN="123412341234123412341234"
 
 您可以将 `-t`，`--access-token` 选项与任何单个命令一起使用来验证单个 CLI 请求，例如：
 
-```batch
+```shellscript
 bws list secrets --access-token 0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHnAp1h0gL8bngprlPOYutt0:B3h5D+YgLvFiQhWkIq6Bow==
 ```
 
@@ -614,7 +614,7 @@ bws list secrets --access-token 0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHn
 
 将 `--profile` 选项与 `list` 或 `get` 命令一起使用以指定要使用的个人资料，例如：
 
-```batch
+```shellscript
 bws get secret 2863ced6-eba1-48b4-b5c0-afa30104877a --profile dev
 ```
 
@@ -624,7 +624,7 @@ bws get secret 2863ced6-eba1-48b4-b5c0-afa30104877a --profile dev
 
 将 `--config-file` 选项与 `--profile` 选项和 `list` 或 `get` 命令一起使用，以指定要使用哪个配置文件中的哪个配置文件，例如：
 
-```batch
+```shellscript
 bws get secret 2863ced6-eba1-48b4-b5c0-afa30104877a --config-file ~/.bws/alt_config --profile alt_dev
 ```
 
@@ -634,7 +634,7 @@ bws get secret 2863ced6-eba1-48b4-b5c0-afa30104877a --config-file ~/.bws/alt_con
 
 此选项可用于设置 CLI 将向其发送与指定的命令关联的请求的服务器 URL，例如：
 
-```batch
+```shellscript
 bws list secrets --server-url http://my_hosted_server.com
 ```
 

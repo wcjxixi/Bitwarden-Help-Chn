@@ -34,13 +34,13 @@
 
 <img src="../../../../.gitbook/assets/linux-24.png" alt="" data-size="line"><img src="../../../../.gitbook/assets/apple-24.png" alt="" data-size="line"> Bash
 
-```shellscript
+```batch
 export BW_CLIENTSECRET="client_secret"
 ```
 
 <img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line"> PowerShell
 
-```shellscript
+```powershell
 env:BW_CLIENTSECRET="client_secret"
 ```
 

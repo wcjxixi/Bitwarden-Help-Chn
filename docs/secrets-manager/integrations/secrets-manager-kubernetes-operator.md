@@ -96,7 +96,7 @@ kubectl create secret generic bw-auth-token -n <YOUR_NAMESPACE> --from-literal=t
 
 使用自定义映射的 BitwardenSecret 部署示例：
 
-```bash
+```yaml
 cat <<EOF | kubectl apply -n <YOUR_NAMESPACE> -f -
 apiVersion: k8s.bitwarden.com/v1
 kind: BitwardenSecret
@@ -146,7 +146,7 @@ Secrets Manager 不保证跨工程机密名称的唯一性。默认情况下，�
 
 ## 图表使用示例 <a href="#example-usage-chart" id="example-usage-chart"></a>
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:

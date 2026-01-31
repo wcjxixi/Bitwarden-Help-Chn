@@ -54,7 +54,7 @@ Bitwarden 提供与 GitHub Actions 的集成，以从 Secrets Manager 获取机�
 
 以下示例是使用 `get secrets` 的 GitHub Actions 工作流文件：
 
-```bash
+```yaml
 - name: Get Secrets
         uses: bitwarden/sm-action@v2
         with:

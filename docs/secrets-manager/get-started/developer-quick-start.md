@@ -9,7 +9,7 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 在本文中，我们将通过查看几种检索存储在密码库中的数据库凭据以在容器运行时注入 [Bitwarden Lite](../../self-hosting/deploy-and-configure/docker/lite-deployment.md) Docker 镜像的方式来演示 Secrets Manager CLI 的使用。
 
 {% hint style="success" %}
-如果您要查找 SDK 信息和 Secrets Manager 功能的语言封装，请参阅[本文](../developer-tools/secrets-manager-sdk.md)。
+如果您正在查找 SDK 信息和 Secrets Manager 功能的语言封装，请参阅[本文](../developer-tools/secrets-manager-sdk.md)。
 {% endhint %}
 
 如果您还没有阅读 [Secrets Manager 快速入门](secrets-manager-quick-start.md)文章，建议您在继续之前先阅读。
@@ -26,7 +26,7 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 
 可以使用为特定[服务账户](../your-secrets/machine-accounts.md)生成的[访问令牌](../your-secrets/access-tokens.md)登录 Secrets Manager CLI。这意味着**只有机器账户具有访问权限的机密和工程**可以使用 CLI 进行交互。有多种方法可以验证 CLI 会话，但最简单的方法是将环境变量 `BWS_ACCESS_TOKEN` 与您的访问令牌的值一起保存，例如：
 
-```git-rebase
+```shellscript
 export BWS_ACCESS_TOKEN=0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHnAp1h0gL8bngprlPOYutt0:B3h5D+YgLvFiQhWkIq6Bow==
 ```
 
@@ -34,13 +34,13 @@ export BWS_ACCESS_TOKEN=0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHnAp1h0gL8
 
 接下来，使用以下命令获取您的数据库用户名并将其存储为临时环境变量。在此示例中，`fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff` 表示数据库用户名机密的唯一标识符：
 
-```batch
+```shellscript
 export SECRET_1=$(bws get secret fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff | jq '.value')
 ```
 
 此命令会将您的机密的 `value` 保存到一个临时环境变量中，该变量将在系统重启、用户注销或任何新 shell 中被清除。现在，对数据库密码运行相同的命令：
 
-```batch
+```shellscript
 export SECRET_2=$(bws get secret 80b55c29-5cc8-42eb-a898-acfd01232bbb | jq '.value')
 ```
 
@@ -48,7 +48,7 @@ export SECRET_2=$(bws get secret 80b55c29-5cc8-42eb-a898-acfd01232bbb | jq '.val
 
 现在您的数据库凭据已保存为临时环境变量，可以将它们注入到 `docker run` 命令中。在此示例中，我们省略了 [Bitwarden Lite](../../self-hosting/deploy-and-configure/docker/lite-deployment.md) 强调注入机密所需的许多变量：
 
-```batch
+```shellscript
 docker run -d --name bitwarden .... -env BW_DB_USERNAME=$SECRET_1 BW_BD_PASSWORD=$SECRET_2 .... bitwarden/self-host:beta
 ```
 
@@ -62,7 +62,7 @@ docker run -d --name bitwarden .... -env BW_DB_USERNAME=$SECRET_1 BW_BD_PASSWORD
 
 要在您的 Docker 映像中安装 Secrets Manager CLI，您需要将以下内容添加到您的 Dockerfile：
 
-```batch
+```docker
 # Install dependencies
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
@@ -87,7 +87,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 接下来，使用 `entrypoint.sh` 文件在运行时注入机密。一种方法是在 `entrypoint.sh` 文件中构建 `RUN` 语句，用于检索每个凭据。不过，这并不是你能实现的唯一方法：
 
-```batch
+```shellscript
 #!/usr/bin/env bash
 # One way to retrieve individual secrets is to use the `get` command and extract the value:
 SECRET_1=$(bws secret get fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff | jq '.value')
@@ -118,7 +118,7 @@ docker build -t image-name
 
 现在您的数据库凭据已准备好并准备好注入，启动您的容器并指定访问令牌以作为环境变量与 `bws login` 一起使用：
 
-```batch
+```shellscript
 docker run --rm -it -e BWS_ACCESS_TOKEN=<your-access-token> image-name
 ```
 

@@ -54,7 +54,7 @@ export BWS_ACCESS_TOKEN=<ACCESS_TOKEN_VALUE>
 
 2、现在环境变量已经设置好，我们可以使用 lookup 插件来填充 playbook 中的变量。例如：
 
-```bash
+```yaml
   vars:
         database_password: "{{ lookup('bitwarden.secrets.lookup', '<SECRET_ID>') }}" 
 ```
@@ -69,7 +69,7 @@ Secrets Manager 访问令牌也可以在 playbook 中被引用。这种方法不
 
 1、访问令牌可以包含在 playbook 中，示例如下：
 
-```bash
+```yaml
 vars:
     password_with_a_different_access_token: "{{ lookup('bitwarden.secrets.lookup', '<SECRET_ID_VALUE>', 
 access_token='<ACCESS_TOKEN_VALUE>') }}"     
@@ -81,7 +81,7 @@ access_token='<ACCESS_TOKEN_VALUE>') }}"
 
 Bitwarden 自托管用户可以通过包含 `base_url,` `api_url` 和 `identity_url` 从他们的 Bitwarden 服务器中获取机密：
 
-```bash
+```yaml
 vars:
     secret_from_other_server: "{{ lookup('bitwarden.secrets.lookup', '<SECRET_ID>', base_url='https://bitwarden.example.com' ) }}"
     secret_advanced: >-
@@ -95,7 +95,7 @@ vars:
 
 以下是一个具有多个配置选项的 playbook 文件的示例。
 
-```bash
+```yaml
 ---
 - name: Using secrets from Bitwarden
 
@@ -132,7 +132,7 @@ vars:
 
 除了 `secret_id` 字段之外， `bitwarden.secrets.lookup` 中还可以包含其他好几个字段。以下 JSON 对象包含了在 playbook lookup 中可以引用的所有字段。
 
-```bash
+```json
 {
   "id": "be8e0ad8-d545-4017-a55a-b02f014d4158",
   "organizationId": "10e8cbfa-7bd2-4361-bd6f-b02e013f9c41",
@@ -147,7 +147,7 @@ vars:
 
 要获取额外的字段，例如 `"note"` ，可以将以下命令添加到 playbook 中：
 
-```bash
+```yaml
   vars:
         database_password: "{{ lookup('bitwarden.secrets.lookup', '0037ed90-efbb-4d59-a798-b103012487a0', field='note') }}"
 ```
