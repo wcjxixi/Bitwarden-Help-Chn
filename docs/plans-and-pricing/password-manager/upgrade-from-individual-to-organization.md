@@ -55,17 +55,17 @@
 
 6、点击**提交**以开始使用您的新组织。
 
-## 取消高级个人方案 <a href="#cancel-premium-individual-plan" id="cancel-premium-individual-plan"></a>
+## 取消个人高级版方案 <a href="#cancel-premium-individual-plan" id="cancel-premium-individual-plan"></a>
 
 付费组织（家庭版、团队版或企业版）会自动为所有用户提供高级功能的访问权限。如果您在创建组织时已经拥有个人高级版订阅，您可以取消您的个人高级版订阅，这不会失去对高级功能的访问权限。
 
 {% hint style="danger" %}
-Bitwarden 提供**在账户创建后 30 天内**取消人高级版方案的退款。如果您在创建人高级版账户后的 30 天内创建了一个付费组织，请[联系我们](https://bitwarden.com/contact)发起退款。
+Bitwarden 提供**在账户创建后 30 天内**取消个人高级版方案的退款。如果您在创建个人高级版账户后的 30 天内创建了一个付费组织，请[联系我们](https://bitwarden.com/contact)发起退款。
 
 目前，Bitwarden 不对超过 30 天的付费订阅提供退款。
 {% endhint %}
 
-要取消您的人高级版订阅：
+要取消您的个人高级版订阅：
 
 1、在 Bitwarden 网页 App 中，导航至**设置** → **订阅**：
 

@@ -13,7 +13,7 @@
 当您的续费日期临近时，Bitwarden 建议您导航到**设置** → **订阅** → **付款方式**来验证付款方式。有关更新您的付款方式的帮助，请参阅[更新您的计费信息](../update-your-billing-information.md)。
 
 {% hint style="danger" %}
-如果我们无法处理您的付款方式，或者您取消了订阅，您的账户将恢复为[免费个人版](about-bitwarden-plans.md#free-individual)。在您重新启动您的高级订阅之前，将导致以下情况：
+如果我们无法处理您的付款方式，或者您取消了订阅，您的账户将恢复为[个人免费版](about-bitwarden-plans.md#free-individual)。在您重新启动您的高级订阅之前，将导致以下情况：
 
 **两步登录**
 

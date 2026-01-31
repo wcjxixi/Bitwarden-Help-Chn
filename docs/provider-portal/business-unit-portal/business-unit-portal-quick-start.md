@@ -114,8 +114,8 @@
 
 1、**对于小型单元** ，您可以从管理员控制台的 **☷成员**视图中发送电子邮件邀请给用户：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4jxLRBNC6RR0cICdBpOm4o/f7fb1c120b75e55515de92822c2ecccc/Invite_Member_Client_Org.png?_a=DAJCwlWIZAAB" %}
-邀请成员加入业务单元组织
+{% embed url="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1200&fm=avif" %}
+邀请成员加入组织
 {% endembed %}
 
 2、**对于大型单元**，如使用 Azure AD、Okta、OneLogin 或 JumpCloud 等身份提供程序的单元，请使用 [SCIM](../../admin-console/manage-members/scim/about-scim.md) 自动分配用户。

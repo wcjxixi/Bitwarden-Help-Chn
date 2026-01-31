@@ -20,9 +20,9 @@ Bitwarden 组织将用户和密码库项目关联在一起，以[安全地共享
 
 除非您加入的组织使用[策略](oversight-visibility/enterprise-policies.md#single-organization)限制您只能加入一个组织，否则您可以成为任意多个组织的成员。
 
-### 组织与高级会员比较 <a href="#comparing-organizations-with-premium" id="comparing-organizations-with-premium"></a>
+### 组织与高级版比较 <a href="#comparing-organizations-with-premium" id="comparing-organizations-with-premium"></a>
 
-关键的是要知道，**组织可以启用组织到用户之间的安全共享**。[高级个人方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)可解锁高级密码安全和管理功能，包括高级 2FA 选项、Bitwarden 验证器 (TOTP)、加密的文件附件等，但高级个人**不包含安全数据共享功能**。
+关键的是要知道，**组织可以启用组织到用户之间的安全共享**。[个人高级版方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)可解锁高级密码安全和管理功能，包括高级 2FA 选项、Bitwarden 验证器 (TOTP)、加密的文件附件等，但个人高级版**不包含安全数据共享功能**。
 
 付费组织（家庭、团队或企业）自动为组织中已注册的**每一个**用户提供这些高级功能（高级 2FA 选项、Bitwarden 验证器 (TOTP) 等）。
 

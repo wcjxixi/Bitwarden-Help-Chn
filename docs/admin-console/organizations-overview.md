@@ -24,9 +24,9 @@ Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需�
 
 <table><thead><tr><th width="146.17140415736606">类型</th><th>描述</th></tr></thead><tbody><tr><td>免费版组织</td><td>免费版组织允许 2 个用户在最多 2 个<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享。</td></tr><tr><td>家庭版组织</td><td>家庭版组织允许 6 个用户在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享。</td></tr><tr><td>团队版组织</td><td>团队版组织允许无限的用户（按每用户每月计费）在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享，并提供一套操作工具，如事件日志。</td></tr><tr><td>企业版组织</td><td>企业版组织允许无限的用户（按每用户每月计费）在无限的<a href="manage-shared-items/collections/about-collections.md">集合</a>中安全地共享，并在 Bitwarden 的操作工具套件中添加了仅针对企业的功能，例如 <a href="login-with-sso/about-sso.md">SSO 登录</a>和<a href="oversight-visibility/enterprise-policies.md">策略</a>。</td></tr></tbody></table>
 
-### 组织与高级会员比较 <a href="#comparing-organizations-with-premium" id="comparing-organizations-with-premium"></a>
+### 组织与高级版比较 <a href="#comparing-organizations-with-premium" id="comparing-organizations-with-premium"></a>
 
-关键的是要知道，**组织可以实现从组织到用户的安全共享**。[高级个人方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)可解锁高级密码安全和管理功能，包括高级 2FA 选项、Bitwarden 验证器（TOTP）、加密的文件附件等，但高级个人方案**不包含安全数据共享功能**。
+关键的是要知道，组织可以实现**从组织到用户的安全共享**。[个人高级版方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)可解锁高级密码安全和管理功能，包括高级 2FA 选项、Bitwarden 验证器（TOTP）、加密的文件附件等，但个人高级版方案**不包含安全数据共享功能**。
 
 付费组织（家庭版、团队版或企业版）自动为组织中已注册的**每一个**用户提供这些高级功能（高级 2FA 选项、Bitwarden 验证器（TOTP）等）。
 
