@@ -20,7 +20,7 @@ Bitwarden 提供了一个用于获取、创建和管理机密的 Terraform 提�
 
 ## 配置 <a href="#configuration" id="configuration"></a>
 
-您的 Terraform 配置文件 ( `.tf` ) 至少必须包含以下内容：
+您的 Terraform 配置文件 (`.tf`) 至少必须包含以下内容：
 
 ```json
 terraform {
@@ -212,8 +212,8 @@ resource "bitwarden-secrets_secret" "db_admin_secret" {
 * `length`：（数值型）默认为 `64` 个字符。设置为其他数字时，生成的值将是该数字数量的字符。
 * `lowercase`：（布尔型）默认为 `true` 。设置为 `false` 时，生成的值将不包含小写字符。
   * `min_lowercase`：（数值型）如果 `lowercase` 为 `false` ，则忽略。设置为数字时，生成的值将至少包含该数字数量的小写字符（必须为 1-9 之间的数字）。
-* `uppercase`：（布尔型）默认为 `true` 。如果设置为 `false` ，生成的值将不包含大写字母。
-  * `min_uppercase`：（数值型）如果 `uppercase` 为 `false` ，则忽略。如果设置为数字，生成的值将至少包含该数字数量的大写字母（必须为 1-9 之间的数字）。
+* `uppercase`：（布尔型）默认为 `true` 。如果设置为 `false` ，生成的值将不包含大写字符。
+  * `min_uppercase`：（数值型）如果 `uppercase` 为 `false` ，则忽略。如果设置为数字，生成的值将至少包含该数字数量的大写字符（必须为 1-9 之间的数字）。
 * `numbers`：（布尔型）默认为 `true` 。如果设置为 `false` ，生成的值将不包含数字（`0` - `9`）。
   * `min_numbers`：（数值型）如果 `numbers` 为 `false` ，则忽略。如果设置为数字，生成的值将至少包含该数字数量的数字（必须为 1-9 之间的数字）。
 * `special`：（布尔型）默认为 `true` 。如果设置为 `false` ，生成的值将不包含特殊字符（`@`，`#`，`$`，`%`，`^`，`&`，`*`）。

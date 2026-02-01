@@ -48,11 +48,11 @@ Bitwarden 采用以下关键的安全措施来保护 Bitwarden 中存储的数�
 
 **端到端加密**：通过端到端 AES-CBC 256 位加密以及 HMAC 身份验证、加盐哈希和密钥导出函数（例如 [PBKDF2 SHA-256](encryption/encryption-protocols.md#pbkdf2) 或 [Argon2id](encryption/encryption-protocols.md#argon2id) ）来锁定您的密码和私人信息。所有的加密密钥都由您设备上的客户端生成和管理，并且所有的加密都在本地完成。[这里](bitwarden-security-whitepaper.md#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)查看更多详情。
 
-**零知识加密**：Bitwarden 团队成员无法查看您的密码。您的数据使用您的个人电子邮件和主密码进行端到端加密。Bitwarden 绝不会存储也无法访问您的主密码或加密密钥。
+**零知识加密**：Bitwarden 团队成员无法查看您的密码。您的数据使用您的个人电子邮箱和主密码进行端到端加密。Bitwarden 绝不会存储也无法访问您的主密码或加密密钥。
 
 **安全密码共享**：Bitwarden 支持在整个组织中与用户安全地共享和管理敏感数据。非对称和对称加密的组合可以在共享敏感信息时对其进行保护。
 
-**开源和可用源码**：所有 Bitwarden 软件产品的源代码都托管在 [GitHub](https://github.com/bitwarden) 上，我们欢迎大家对 Bitwarden 代码库进行审查、审计和贡献。Bitwarden 源代码由著名的第三方安全审计公司以及独立的安全研究人员进行审计。此外，[Bitwarden 漏洞披露计划](https://hackerone.com/bitwarden?type=team\&view_policy=true)还得到了 HackerOne 黑客社区的帮助，以使 Bitwarden 更加安全。
+**开源和可用源代码**：所有 Bitwarden 软件产品的源代码都托管在 [GitHub](https://github.com/bitwarden) 上，我们欢迎大家对 Bitwarden 代码库进行审查、审计和贡献。Bitwarden 源代码由著名的第三方安全审计公司以及独立的安全研究人员进行审计。此外，[Bitwarden 漏洞披露计划](https://hackerone.com/bitwarden?type=team\&view_policy=true)还得到了 HackerOne 黑客社区的帮助，以使 Bitwarden 更加安全。
 
 **隐私设计**：Bitwarden 将你所有的登录信息存储在一个加密的密码库中，并在你所有的设备上同步。由于它在离开你的设备之前就已经完全加密了，因此只有你才能访问你的数据。即使 Bitwarden 团队也无法读取您的数据（即使我们想读取）。
 
@@ -84,7 +84,7 @@ Bitwarden 的用户数据保护从用户创建账户和主密码的那一刻开�
 * 不会通过互联网传输到 Bitwarden 服务器。
 * Bitwarden 的任何人都无法看到、读取或进行逆向。
 
-基于此，以及由于您的数据在离开本地设备之前已完全加密和/或哈希，忘记主密码将导致用户无法访问其账户，除非他们启用了紧急访问或账户恢复功能，这两者将在本文后面进行详细介绍。
+基于此，以及由于您的数据在离开本地设备之前已完全加密和/或哈希，忘记主密码**将导致**用户无法访问其账户，除非他们启用了紧急访问或账户恢复功能，这两者将在本文后面进行详细介绍。
 
 {% hint style="success" %}
 用户可以通过 Bitwarden 网页 App 更改他们的主密码。[了解如何操作](../account/log-in-and-unlock/your-master-password.md#change-your-master-password)。
@@ -102,13 +102,13 @@ Bitwarden 客户端提供以下替代身份验证方法。其中一些方法也�
 
 两步登录（也称为「二因素认证」或「2FA」）是一种用于保护在线账户的额外的安全层，即使有人掌握了主密码，也能确保账户安全。当启用两步登录时，用户在登录 Bitwarden 时需要完成一个额外的步骤，比如使用 [FIDO2 安全密钥](../account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)或[验证器 App](../account/two-step-login/setup-two-step-login/two-step-login-via-authenticator.md) 来确认登录尝试。作为最佳实践，**Bitwarden 推荐所有用户启用并使用两步登录**。
 
-Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备（例如 YubiKey）时关闭两步登录功能。**用户应该在启用此功能后立即获取并保存此恢复代码**，因为 Bitwarden 员工和系统无法代表用户禁用两步登录。
+Bitwarden 为用户提供了一个恢复代码，用于在丢失了辅助设备（例如丢失了 YubiKey）时关闭两步登录功能。**用户应该在启用此功能后立即获取并保存此恢复代码**，因为 Bitwarden 员工和系统无法代表用户禁用两步登录。此外，还没有构建任何工具来促进内部团队这样做。
 
 了解更多关于可用的[两步登录方式](../account/two-step-login/setup-two-step-login/two-step-login-methods.md)、[使用多种方式](../account/two-step-login/setup-two-step-login/two-step-login-methods.md#using-multiple-methods)以及在[丢失辅助设备](../account/two-step-login/lost-two-step-device.md)时该怎么做的信息。
 
 #### 紧急访问 <a href="#emergency-access" id="emergency-access"></a>
 
-高级用户，包括付费组织（家庭、团队或企业）的成员，可以指定[可信的紧急联系人](../account/log-in-and-unlock/more-log-in-options/emergency-access.md)，以便在紧急情况下请求访问他们的密码库。可信的紧急联系人可以被分配为仅查看或接管账户的权限。
+高级版用户，包括付费版组织（家庭版、团队版或企业版）的成员，可以指定[可信的紧急联系人](../account/log-in-and-unlock/more-log-in-options/emergency-access.md)，以便在紧急情况下请求访问他们的密码库。可信的紧急联系人可以被分配为仅查看或接管账户的权限。
 
 紧急访问使用非对称加密，使用户能够在零知识环境中授权可信的紧急联系人访问密码库数据。
 
@@ -148,7 +148,7 @@ Bitwarden 会提供给用户一个恢复代码，用于在丢失了辅助设备�
 
 ### 账户创建 <a href="#account-creation" id="account-creation"></a>
 
-创建账户时，Bitwarden 使用基于密码的密钥派生函数 2 (PBKDF2)，经过 600,000 次迭代，使用具有盐化的用户电子邮件地址来扩展用户主密码。
+创建账户时，Bitwarden 使用基于密码的密钥派生函数 2 (PBKDF2)，经过 600,000 次迭代，使用具有盐化的用户电子邮箱地址来扩展用户主密码。
 
 {% hint style="info" %}
 虽然用户账户在初始时使用 PBKDF2，但用户可以选择在账户创建后将其密钥派生函数更改为 [Argon2id](encryption/encryption-protocols.md#pbkdf2)。了解如何[更改 KDF 算法](encryption/encryption-key-derivation.md#changing-kdf-algorithm)。
@@ -206,7 +206,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 
 当发起设备登录时：
 
-1. 发起客户端向 Bitwarden 服务器发送请求，其中包括账户电子邮件地址、唯一的**身份验证请求公钥**ª 和访问代码。
+1. 发起客户端向 Bitwarden 服务器发送请求，其中包括账户电子邮箱地址、唯一的**身份验证请求公钥**<mark style="color:red;">ª</mark> 和访问代码。
 2. 已注册设备，即已登录并在 Bitwarden 服务器中存储了[唯一设备 GUID](data/administrative-data.md) 的移动或桌面 App，将收到请求。
 3. 当请求获得批准时，批准客户端使用请求中包含的**身份验证请求公钥**对账户的**主密钥**和**主密码哈希**进行加密。
 4. 然后，批准客户端将**加密的主密钥**和**加密的主密码哈希**发送到 Bitwarden 服务器，并将请求标记为已完成。
@@ -214,7 +214,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 6. 然后，发起客户端使用**身份验证请求私钥**在**本地**解密**主密钥**和**主密码哈希**。
 7. 然后，发起客户端使用访问代码和已完成的身份验证请求，通过 Bitwarden Identity 服务对用户进行身份验证。
 
-ª - **身份验证请求公钥和私钥**是为每个无密码登录请求唯一生成的，并且仅在请求期间存在。如果请求未获批准或拒绝，则请求将过期并每 15 分钟从 Bitwarden 服务器中清除一次。
+<mark style="color:red;">ª</mark> - **身份验证请求公钥和私钥**是为每个无密码登录请求唯一生成的，并且仅在请求期间存在。如果请求未获批准或拒绝，则请求将过期并每 15 分钟从 Bitwarden 服务器中清除一次。
 
 #### 通行密钥登录 <a href="#log-in-with-passkeys" id="log-in-with-passkeys"></a>
 
@@ -282,21 +282,44 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 当用户使用 SSO 进行身份验证，并选择使用未受信任的设备（即**设备对称密钥**不存在于该设备上）解密其密码库时，他们需要选择一种方法来批准该设备，并选择信任该设备，以便将来无需进一步批准即可使用。接下来会发生什么取决于所选的选项：
 
 * **从其他设备批准：**
-  1. 触发[此处](https://help.ppgg.in/my-account/log-in-and-unlock/log-in-with-device#how-it-works)记录的流程后，客户端就获得并解密了账户加密密钥。
-  2. 用户现在可以使用解密后的账户加密密钥解密其密码库数据。如果用户选择信任该设备，则会按照**入职**选项卡中的说明与客户端建立信任。
-* **请求管理员批准：**
-  1. 发起请求的客户端向 Bitwarden 数据库中的验证请求表 POST 一个请求，其中包括账户电子邮件地址、唯一的**身份验证请求公钥**ª 和访问代码。
-  2. 管理员可在设备批准页面上[批准或拒绝此请求](https://help.ppgg.in/admin-console/login-with-sso/trusted-devices/approve-a-trusted-device)。
-  3. 请求获得管理员批准后，被批准客户端会使用请求中包含的**身份验证请求公钥**对用户的账户加密密钥进行加密。
-  4. 然后，被批准客户端将加密后的账户加密密钥 PUT 到验证请求记录，并标记为请求已完成。
-  5. 发起请求的客户端 GET 到加密后的账户加密密钥，然后使用**身份验证请求私钥**ª 对它进行**本地**解密。
-  6. 使用解密后的账户加密密钥，与客户端建立信任关系，详见**入职**选项卡。
 
-ª - **身份验证请求公钥**和**私钥**是为每一个无密码登录请求生成的唯一密钥，其存在时间与请求的存在时间相同。未被批准的请求，请求将在 1 周后过期。
+1、触发[此处](https://help.ppgg.in/my-account/log-in-and-unlock/log-in-with-device#how-it-works)记录的流程后，客户端就获得并解密了账户加密密钥。
+
+2、用户现在可以使用解密后的账户加密密钥解密其密码库数据。如果用户选择信任该设备，则会按照**入职**选项卡中的说明与客户端建立信任。
+
+* **请求管理员批准：**
+
+1、发起请求的客户端向 Bitwarden 数据库中的验证请求表 POST 一个请求，其中包括账户电子邮箱地址、唯一的**身份验证请求公钥**<mark style="color:red;">ª</mark> 和访问代码。
+
+{% embed url="https://bitwarden.com/assets/1CgwXVCrjssDwsz2Aie4mV/aac6c3975c9a8d225074268c093cadc3/2025-04-30_09-33-37.png?w=1113&fm=avif" %}
+用户请求管理员批准（步骤 1）
+{% endembed %}
+
+2、管理员可在设备批准页面上[批准或拒绝此请求](https://help.ppgg.in/admin-console/login-with-sso/trusted-devices/approve-a-trusted-device)。
+
+3、请求获得管理员批准后，被批准客户端会使用请求中包含的**身份验证请求公钥**对用户的账户加密密钥进行加密。
+
+4、然后，被批准客户端将加密后的账户加密密钥 PUT 到验证请求记录，并标记为请求已完成。
+
+{% embed url="https://bitwarden.com/assets/4Y9q6Y3KmLskDaqfF03YmJ/8a99742b2bf8e7394cb0988495dc13b0/2025-04-30_09-34-10.png?w=1110&fm=avif" %}
+管理员批准验证请求（步骤 3-4）
+{% endembed %}
+
+5、发起请求的客户端 GET 到加密后的账户加密密钥，然后使用**身份验证请求私钥**<mark style="color:red;">ª</mark> 对它进行**本地**解密。
+
+{% embed url="https://bitwarden.com/assets/7LNcFuhupPeR4DJhg2k4po/10ae5da219f1e5338e5cdf6554655e9f/2025-04-30_09-34-28.png?w=1114&fm=avif" %}
+用户收到管理员批准（步骤 5）
+{% endembed %}
+
+6、使用解密后的账户加密密钥，与客户端建立信任关系，详见**入职**选项卡。
+
+<mark style="color:red;">ª</mark> - **身份验证请求公钥**和**私钥**是为每一个无密码登录请求生成的唯一密钥，其存在时间与请求的存在时间相同。未被批准的请求，请求将在 1 周后过期。
 
 * **使用主密码批准：**
-  1. 按照安全白皮书中「[身份验证和解密](https://help.ppgg.in/security/bitwarden-security-whitepaper#authentication-and-decryption)」部分的说明，获取并解密用户的账户加密密钥。
-  2. 使用解密后的账户加密密钥，按照**入职**选项卡中的说明与客户建立信任。
+
+1、按照安全白皮书中「[身份验证和解密](https://help.ppgg.in/security/bitwarden-security-whitepaper#authentication-and-decryption)」部分的说明，获取并解密用户的账户加密密钥。
+
+2、使用解密后的账户加密密钥，按照**入职**选项卡中的说明与客户建立信任。
 {% endtab %}
 
 {% tab title="密钥轮换" %}
@@ -358,8 +381,6 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 
 新用户登录其账户时，客户端应用程序使用已解密的 **RSA 私钥**来解密**受保护的组织对称密钥**，从而产生**组织对称密钥**。使用组织对称密钥，在本地解密组织拥有的密码库数据。
 
-阅读更多：[什么是组织？](../admin-console/organizations-overview.md)
-
 ### 其他安全措施 <a href="#additional-security-measures" id="additional-security-measures"></a>
 
 #### 访问控制、权限和角色 <a href="#access-controls-permissions-and-roles" id="access-controls-permissions-and-roles"></a>
@@ -409,6 +430,8 @@ Bitwarden 提供多种安全信息和事件管理 (SIEM) 集成：
 对于附件，**Cipher 密钥**用于加密附件的元数据，特别是文件名和大小。**Cipher 密钥**还用于加密**附件密钥**，而**附件密钥**又用于加密附件数据本身。
 {% endhint %}
 
+存储在保密码库中的通行密钥是使用 ES256 算法生成的。
+
 ### 密码库健康报告 <a href="#vault-health-reports" id="vault-health-reports"></a>
 
 密码库健康状况报告可用于评估 Bitwarden Password Manager中存储的数据的安全性。报告，例如重复使用密码和弱密码报告，可在 Bitwarden 客户端应用程序上本地运行。这样就可以在 Bitwarden 无法访问未加密版本数据的情况下识别出违规项目。进一步了解可用的[密码库健康报告](../password-manager/your-vault/security-tools/vault-health-reports.md)。
@@ -425,7 +448,7 @@ Bitwarden 还实施了 HTTP 安全标头，如 HTTP 严格传输安全 (HSTS)，
 
 AES 是密码学的一个标准，被美国政府和世界各地的其他政府机构用于保护绝密数据。只要实施得当，加上强大的加密密钥（即您的主密码），AES 被认为是不可破解的。
 
-[PBKDF-SHA256](encryption/encryption-protocols.md#pbkdf2) 或 [Argon2id](encryption/encryption-protocols.md#argon2id) 用于从您的主密码派生加密密钥。然后对该密钥进行盐化和哈希处理，以便与 Bitwarden 服务器进行验证。PBKDF2 在客户端默认使用的迭代次数是 600,001 次（此客户端迭代次数可以从您的账户设置中配置）。
+基于密码的密钥派生函数用于从您的主密码派生中间密钥。然后对该密钥进行盐化和哈希处理，以便与 Bitwarden 服务器进行身份验证。PBKDF2 在客户端默认使用的迭代次数是 600,001 次（此客户端迭代次数可以从您的账户设置中进行配置）。
 
 {% hint style="info" %}
 虽然用户账户是使用 PBKDF2 初始化的，但用户可以在账户创建后选择将密钥派生函数更改为 [Argon2id](encryption/encryption-protocols.md#argon2id)。了解[如何更改 KDF 算法](encryption/encryption-key-derivation.md#changing-kdf-algorithm)。
@@ -435,19 +458,19 @@ Bitwarden 云数据库存储您的已加密的密码库，并托管在安全的 
 
 此外，Bitwarden 服务器应用程序还会对与用户账户相关的敏感数据库列进行加密。主密码哈希值和受保护的用户密钥在进出 Bitwarden 云数据库时会被即时加密。这些列级加密操作是使用 Bitwarden 在严格控制的密钥管理服务 (KMS) 中管理的密钥执行的。
 
-了解更多信息： [端到端加密如何为零知识铺平道路](https://bitwarden.com/blog/end-to-end-encryption-and-zero-knowledge/)以及[使用何种加密方式](encryption/encryption-protocols.md)。
+了解更多信息：[端到端加密如何为零知识铺平道路](https://bitwarden.com/blog/end-to-end-encryption-and-zero-knowledge/)以及[使用何种加密方式](encryption/encryption-protocols.md)。
 
 ### 数据类型和数据保留 <a href="#data-types-and-data-retention" id="data-types-and-data-retention"></a>
 
 Bitwarden 处理两种用户数据以提供 Bitwarden 服务：(i) 密码库数据和 (II) 管理数据。
 
-(i) 密码库数据
+**(i) 密码库数据**
 
 密码库数据包括存储在 Bitwarden 服务账户内的所有信息，其中可能包括个人信息。如果我们为您托管 Bitwarden 服务，我们将托管密码库数据。密码库数据在您的控制下使用安全加密密钥进行加密。Bitwarden 无法访问密码库数据。
 
 保管库数据的保留：您可以随时添加、修改和删除密码库数据。
 
-(ii) 管理数据
+**(ii) 管理数据**
 
 Bitwarden 会在您创建账户、使用 Bitwarden 服务和支持以及支付 Bitwarden 服务费用时获取您的个人信息，如 Bitwarden 服务用户的姓名、电子邮箱地址、电话和其他联系信息，以及您 Bitwarden 服务账户中的项目数量（以下称为「管理数据」）。Bitwarden 使用管理数据为您提供 Bitwarden 服务。只要您还是 Bitwarden 的客户，我们就会在法律要求的期限内保留管理数据。如果您终止与 Bitwarden 的关系，我们将根据我们的数据保留政策删除您的个人信息。
 
@@ -462,11 +485,11 @@ Bitwarden 会在您创建账户、使用 Bitwarden 服务和支持以及支付 B
 * 您在网站互动区提供的信息，如可填写表格或文本框、培训、网络研讨会或活动注册。
 * 您使用的设备信息，包括硬件型号、操作系统和版本、唯一设备标识符、网络信息、IP地址和/或与网站互动时的 Bitwarden 服务信息。
 * 如果您与 Bitwarden 社区或培训互动，或注册参加考试或活动，我们可能会收集您的履历信息和您分享的内容。
-* 通过 cookies、像素标签、日志或其他类似技术收集的信息。
+* 通过 cookie、像素标签、日志或其他类似技术收集的信息。
 
 更多信息请参阅 [Bitwarden 隐私政策](https://bitwarden.com/privacy/)。
 
-## 云平台和网页应用程序安全 <a href="#cloud-platform-and-web-application-security" id="cloud-platform-and-web-application-security"></a>
+## 云端平台和网页应用程序安全 <a href="#cloud-platform-and-web-application-security" id="cloud-platform-and-web-application-security"></a>
 
 ### 架构概述 <a href="#architecture-overview" id="architecture-overview"></a>
 
@@ -601,7 +624,7 @@ Bitwarden 遵循既定的入职流程，以确保分配和维护适当级别的�
 
 Bitwarden 采用基于风险的方法设计安全服务和系统，其中包括威胁模型和攻击面分析，以识别威胁并制定缓解措施。风险和威胁模型分析扩展到 Bitwarden 平台的所有领域，包括核心的 Bitwarden 云服务器应用程序和 Bitwarden 客户端，如移动、桌面、网页应用程序、浏览器和/或命令行界面。
 
-### Bitwarden 客户 <a href="#bitwarden-clients" id="bitwarden-clients"></a>
+### Bitwarden 客户端 <a href="#bitwarden-clients" id="bitwarden-clients"></a>
 
 用户主要通过客户端应用程序与 Bitwarden 进行交互，如移动、桌面、网页应用程序、浏览器和/或命令行界面。这些设备、工作站和网页浏览器的安全性至关重要，因为如果其中一个或多个设备受到攻击，攻击者就有可能安装键盘记录器等恶意软件，从而获取在这些设备上输入的所有信息，包括您的任何密码和机密。作为最终用户和/或设备所有者，您有责任确保您的设备安全，防止未经授权的访问。
 

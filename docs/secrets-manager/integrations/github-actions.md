@@ -27,9 +27,10 @@ Bitwarden 提供与 GitHub Actions 的集成，以从 Secrets Manager 获取机�
 
 ```yaml
 - name: Get Secrets
-  uses: bitwarden/sm-action@v1
+  uses: bitwarden/sm-action@v2
   with:
     access_token: ${{ secrets.BW_ACCESS_TOKEN }}
+    base_url: https://vault.bitwarden.com
     secrets: |
       fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff > SECRET_NAME_1
       bdbb16bc-0b9b-472e-99fa-af4101309076 > SECRET_NAME_2
@@ -38,7 +39,8 @@ Bitwarden 提供与 GitHub Actions 的集成，以从 Secrets Manager 获取机�
 说明：
 
 * `${{ secrets.BW_ACCESS_TOKEN }}` 是引用您之前保存的存储库机密。如果您没有将机密命名为 `BW_ACCESS_TOKEN`，则进行相应的更改。
-* `fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff` 和 `bdbb16bc-0b9b-472e-99fa-af4101309076` 是存储在 Secrets Manager 中的机密的参考标识符。您的访问令牌所属的服务帐户必须能够访问这些特定的机密。
+* 对于自托管实例，请提供您的 `https://your.domain.com` 作为 `base_url`。如果提供了此可选参数，则不需要参数 `identity_url` 和 `api_url`。GitHub Actions 将使用 `BASE_URL/identity` 和 `BASE_URL/api` 作为身份和 api 端点。
+* `fc3a93f4-2a16-445b-b0c4-aeaf0102f0ff` 和 `bdbb16bc-0b9b-472e-99fa-af4101309076` 是存储在 Secrets Manager 中的机密的参考标识符。您的访问令牌所属的[机器账户](../your-secrets/machine-accounts.md)**必须能够访问这些特定的机密**。
 * `SECRET_NAME_1` 和 `SECRET_NAME_2` 是您将在下一步中用来引用注入的机密值的名称。
 
 ### 使用机密 <a href="#use-secrets" id="use-secrets"></a>
