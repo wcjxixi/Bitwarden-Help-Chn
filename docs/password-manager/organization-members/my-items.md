@@ -52,6 +52,6 @@ Bitwarden 目前仅建议对尚未开始推广的组织启用[强制组织数据
 为「我的项目」创建新项目
 {% endembed %}
 
-## 传输项目 <a href="#transfer-items" id="transfer-items"></a>
+## 转移项目 <a href="#transfer-items" id="transfer-items"></a>
 
 启用强制组织所有权策略以允许组织管理员在成员继任期间安全地转移成员凭据。来自已移除或已删除用户的凭据可以转移到其他集合。了解更多有关[员工离职和继任后转移项目](../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)的信息。

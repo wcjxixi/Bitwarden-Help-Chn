@@ -4,11 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/remove-users/)
 {% endhint %}
 
-组织管理员、所有者和某些自定义角色成员可以从组织中移除成员。移除成员意味着：
+组织[管理员、所有者和某些自定义角色成员](../member-roles.md)可以从组织中移除成员。移除成员意味着：
 
-* **会**切断对组织及其数据的所有访问权限。被移除的成员需要重新加入组织才能重新获得访问权限。
-* 大多数情况下**不会**删除其 Bitwarden 账户。除非您采取措施删除他们的账户，否则被移除的成员仍能访问他们个人拥有的保险库项目。
-* 如果同步过程中删除禁用用户选项被打开，则使用目录同步的组织会自动执行此操作。
+* **会切断**对组织及其数据的所有访问权限。被移除的成员需要[重新加入组织](../user-management.md#onboard-users)才能重新获得访问权限。
+* 大多数情况下**不会删除**其 Bitwarden 账户。除非您[删除他们的账户](delete-member-accounts.md)，否则被移除的成员仍可以访问他们个人拥有的密码库项目。
+* 如果组织使用[目录同步](../directory-connector/about-directory-connector.md)并且**同步过程移除已禁用的用户**选项被打开，则会**自动**执行此操作。
 
 ## 从组织移除成员 <a href="#remove-members-from-an-organization" id="remove-members-from-an-organization"></a>
 

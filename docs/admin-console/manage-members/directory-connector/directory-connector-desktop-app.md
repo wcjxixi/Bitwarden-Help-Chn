@@ -82,5 +82,5 @@
 {% hint style="info" %}
 如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)方案，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
 
-**该方案已不再提供购买**。此错误不适用于团队方案。
+**该方案已不再提供购买**。此错误不适用于团队版方案。
 {% endhint %}

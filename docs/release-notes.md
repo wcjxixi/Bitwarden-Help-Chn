@@ -132,6 +132,7 @@ XDG_SESSION_TYPE=x11 snap run bitwarden
 ### 管理控制台 <a href="#admin-console" id="admin-console"></a>
 
 * **组织默认 URI 匹配检测**：组织所有者和管理员现在可以为其成员选择[默认的 URI 匹配检测方式](admin-console/oversight-visibility/enterprise-policies.md#default-uri-match-detection)。成员仍然可以编辑个人登录项目的 URI 匹配检测方式。
+* **我的项目**：启用[强制组织数据所有权](admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)策略后，组织默认拥有新成员的项目。受此策略约束的成员现在可以将项目保存到新的「[我的项目](password-manager/organization-members/my-items.md)」位置，既能保护成员隐私，又能确保管理员在成员退出组织后可以转移数据。
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 

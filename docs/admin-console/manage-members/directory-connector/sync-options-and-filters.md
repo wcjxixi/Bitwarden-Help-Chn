@@ -47,7 +47,7 @@
 该选项用于非常特殊的用例或调试目的，默认为禁用。
 {% endhint %}
 
-通过激活 **Remove and re-add organization users during the next sync**（下次同步时移除并重新添加组织用户）选项，除一个所有者用户外的所有用户以及所有群组将在同步过程中被移除并重新添加，替换为从源目录获取的用户列表和/或群组列表。
+通过激活 **Remove and re-add organization users during the next sync**（下次同步时移除并重新添加组织用户）选项，除了一个所有者用户外的所有用户以及所有群组将在同步过程中被移除并重新添加，替换他们为从源目录获取的用户列表和/或群组列表。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/sM0wG9htsgHvpsXx1E1t9/929c1601a0f6d6c55a576e6154d89d31/2024-12-12_10-58-15.png?_a=DAJCwlWIZAAB" %}
 下次同步时移除并重新添加组织用户
