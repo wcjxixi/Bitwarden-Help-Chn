@@ -42,27 +42,29 @@ SAML 2.0 配置
 
 ## 保护应用程序 <a href="#protect-an-application" id="protect-an-application"></a>
 
-在 Duo 管理门户中，导航到 **Applications** 界面并选择 **Protect an Application** 按钮：
+在继续之前，请参阅 [Duo 文档](https://duo.com/docs/sso#saml)以验证 Duo 单点登录是否已配置为使用您的 SAML 身份提供程序进行身份验证。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2Kj8XSrEJeSJed3OFtTAmt/491f806df061dfc4a640acca9c376acb/duo-addapp.png?fm=webp&h=263&q=50&w=1074" %}
-保护应用程序
+在 Duo 管理门户中，导航到 **Applications** 界面然后选择 **Protect an Application**。在搜索栏中输入 **Bitwarden**，然后为 **Bitwarden 2FA with SSO hosted by Duo** 应用程序选择 **Configure**：
+
+{% embed url="https://bitwarden.com/assets/trkKdfpokzVAwdGxg6wa6/02ae03583eae5f96e4a6fbe90e70af14/2023-12-11_15-58-21.png?w=1200&fm=avif" %}
+Duo Bitwarden 应用程序
 {% endembed %}
 
-在搜索栏中，输入 `generic service provider` 然后选择 **Generic Service Provider (Single Sign-On)**：
+为新创建的应用程序选择 **Activate and Start Setup**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3Vk3bl1RRE0NI817tT2f5B/5054f686877f9af9d329149e50acbf30/duo-search.png?fm=webp&h=339&q=50&w=1074" %}
-通用服务提供商
+{% embed url="https://bitwarden.com/assets/38UnzJq3P4zVvB8wHpK62W/ff109380215fc7d82c25c960eecd3ec3/2023-12-11_16-00-38.png?w=1200&fm=avif" %}
+Duo 激活和设置
 {% endembed %}
 
 在应用程序配置界面完成以下步骤和配置，其中的一些步骤和配置需要您从 Bitwarden 业务门户中获取：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1JMIUolagSwSjfcAPlKcDZ/c2e7db49e9ad61cb502ef87236b63fb4/duo-appconfig.png?fm=webp&h=592&q=50&w=1074" %}
-配置界面
+{% embed url="https://bitwarden.com/assets/5OMLBklde4cADIvmgypSxe/64f00b2c483c471a9a5ead8da8f982e5/2023-12-11_16-09-16.png?w=1200&fm=avif" %}
+DUO SAML 身份提供程序配置
 {% endembed %}
 
 ### 元数据 <a href="#metadata" id="metadata"></a>
 
-您不需要在 **Metadata** 部分编辑任何内容（请参阅上面的屏幕截图），但[稍后您需要引用这些值](duo-saml-implementation.md#identity-provider-configuration)：
+您不需要在 **Metadata** 部分编辑任何内容，但[稍后您需要引用这些值](duo-saml-implementation.md#identity-provider-configuration)：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3ob9jp2RJRhMaxOkRrWHKa/8a9b7c3cc3aa077e323353c8c0cab0ed/duo-urls.png?fm=webp&h=146&q=50&w=804" %}
 配置 URL
@@ -74,11 +76,11 @@ SAML 2.0 配置
 
 ### 服务提供程序 <a href="#service-provider" id="service-provider"></a>
 
-| 字段                                   | 描述                                                                                                                                                                                                                                                                                                                                                                                              |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                            | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>SP Entity ID</strong>。<br><br>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2</code>。</p>                                                         |
-| Assertion Consumer Service (ACS) URL | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。<br><br>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2/your-org-id/Acs</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2/your-org-id/Acs</code>。</p> |
-| Service Provider Login URL           | <p>将此字段设置为用户访问 Bitwarden 的登录 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p>                                                                                            |
+| 字段                                   | 描述                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Entity ID                            | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>                                                                                                                                                                                                |
+| Assertion Consumer Service (ACS) URL | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>                                                                                                                                                                                        |
+| Service Provider Login URL           | <p>将此字段设置为用户访问 Bitwarden 的登录 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code> 或 <code>https://vault.bitwarden.eu/#/sso.</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">已配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p> |
 
 ### SAML 响应 <a href="#saml-response" id="saml-response"></a>
 
@@ -124,18 +126,21 @@ SAML 2.0 配置
 
 身份提供程序配置通常需要你返回 Duo 管理门户以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                            |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                                 | 输入您的 Duo 应用程序的 **Domain** 值，这可以从 Duo 应用程序[元数据部分](duo-saml-implementation.md#metadata)获取到。                                                                                                                     |
-| Binding Type                              | 将此字段设置为 **HTTP post**。                                                                                                                                                                                        |
-| Single Sign On Service URL                | 输入您的 Duo 应用程序的 **Single Sign-On URL** 值，这可以从 Duo 应用程序[元数据部分](duo-saml-implementation.md#metadata)获取到。                                                                                                         |
-| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发，但是您可以根据需要将其预先配置为您的 Duo 应用程序的 **Single Log-Out URL** 值 。                                                                                                                     |
-| Artifact Resolution Service URL           | 对于 Duo 实现，您可以将此字段留空。                                                                                                                                                                                          |
-| X509 Public Certificate                   | <p>黏贴已下载的<a href="duo-saml-implementation.md#downloads">证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 将此字段设置为[已选择的 SAML 响应签名算法](duo-saml-implementation.md#saml-response)。                                                                                                                                          |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                          |
-| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                            |
-| Want Authentication Requests Signed       | Duo 是否要求 SAML 请求被签名。                                                                                                                                                                                          |
+| 字段                                  | 描述                                                                                                                                                                                                                     |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                           | 输入您的 Duo 应用程序的 **Domain** 值，这可以从 Duo 应用程序[元数据部分](duo-saml-implementation.md#metadata)获取到。                                                                                                                              |
+| Binding Type                        | 将此字段设置为 **HTTP post**。                                                                                                                                                                                                 |
+| Single Sign On Service URL          | 输入您的 Duo 应用程序的 **Single Sign-On URL** 值，这可以从 Duo 应用程序[元数据部分](duo-saml-implementation.md#metadata)获取到。                                                                                                                  |
+| Single Log Out Service URL          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发，但是您可以根据需要将其预先配置为您的 Duo 应用程序的 **Single Log-Out URL** 值 。                                                                                                                              |
+| Artifact Resolution Service URL     | 对于 Duo 实现，您可以将此字段留空。                                                                                                                                                                                                   |
+| X509 Public Certificate             | <p>黏贴已下载的<a href="duo-saml-implementation.md#downloads">证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm          | 将此字段设置为[已选择的 SAML 响应签名算法](duo-saml-implementation.md#saml-response)。                                                                                                                                                   |
+| Disable Outbound Logout Requests    | SSO 登录当前还**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                        |
+| Want Authentication Requests Signed | Duo 是否要求 SAML 请求被签名。                                                                                                                                                                                                   |
+
+{% hint style="info" %}
+填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
+{% endhint %}
 
 完成身份提供程序配置部分后，**保存**您的工作。
 

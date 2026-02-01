@@ -14,7 +14,7 @@ description: 本文包含为 Okta OIDC 实施配置 Bitwarden SSO 登录的说�
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
-登录到 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJAUVWIZAAB" %}
 产品切换器

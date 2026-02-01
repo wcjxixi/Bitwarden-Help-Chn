@@ -16,7 +16,7 @@
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
-登录到 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJAUVWIZAAB" %}
 产品切换器
@@ -62,14 +62,14 @@ IdP 详细信息
 
 在服务提供程序详细信息界面，配置以下字段：
 
-| 字段              | 描述                                                                                                                                                                                                                                                                                                                                                                                          |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ACS URL         | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。<br><br>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2/your-org-id/Acs</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain/sso/saml2/your-org-id/Acs</code>。</p> |
-| Entity ID       | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>SP Entity ID</strong>。<br><br>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2</code>。</p>                                                     |
-| Start URL       | <p>可选。将此字段设置为用户访问 Bitwarden 的登录 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p>                                                                                     |
-| Signed response | 如果您希望 Workspace 签名 SAML 响应，请选中此框。如果未选中，Workspace 将仅签名 SAML 声明。                                                                                                                                                                                                                                                                                                                              |
-| Name ID format  | 将此字段设置为 **Persistent**（持久）。                                                                                                                                                                                                                                                                                                                                                                 |
-| Name ID         | 选择 Workspace 用户属性，以填充 NameID。                                                                                                                                                                                                                                                                                                                                                               |
+| 字段              | 描述                                                                                                                                                                                                                                                                                                                                                        |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ACS URL         | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>                                                                                                                                                                                           |
+| Entity ID       | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>                                                                                                                                                                                                   |
+| Start URL       | <p>可选。将此字段设置为用户访问 Bitwarden 的登录 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code> 或 <code>https://vault.bitwarden.eu/#/sso.</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">已配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p> |
+| Signed response | 如果您希望 Workspace 签名 SAML 响应，请选中此框。如果未选中，Workspace 将仅签名 SAML 声明。                                                                                                                                                                                                                                                                                            |
+| Name ID format  | 将此字段设置为 **Persistent**。                                                                                                                                                                                                                                                                                                                                   |
+| Name ID         | 选择 Workspace 用户属性，以填充 NameID。                                                                                                                                                                                                                                                                                                                             |
 
 完成后选择 **Continue**。
 
@@ -91,7 +91,7 @@ IdP 详细信息
 用户访问权限
 {% endembed %}
 
-**Save** 您的更改。
+**Save** 您的更改。请注意，新的 Workspace 应用程序最多可能需要 24 小时才能传播到用户现有的会话。
 
 ## 返回网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
 
@@ -106,38 +106,41 @@ IdP 详细信息
 
 根据在 Workspace 管理控制台[设置期间](google-saml-implementation.md#service-provider-details)所选择的选项配置以下字段：
 
-| 字段                                 | 描述                                                                                         |
-| ---------------------------------- | ------------------------------------------------------------------------------------------ |
-| Name ID Format                     | 将此字段设置为在 Workplace 中[所选择的 NameID 格式](duo-saml-implementation.md#saml-response)。            |
-| Outbound Signing Algorithm         | Bitwarden 用于签名 SAML 请求的算法。                                                                 |
-| Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                          |
-| Minimum Incoming Signing Algorithm | Bitwarden 在 SAML 响应中接受的最小签名算法。默认，Workplace 使用 SHA-256 进行签名。请从下拉列表中选择 `sha-256`。            |
-| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。默认，Workspace SAML 应用程序将签名 SAML 声明，因此请选中此框。                       |
-| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。 |
+| 字段                                 | 描述                                                                                           |
+| ---------------------------------- | -------------------------------------------------------------------------------------------- |
+| Name ID Format                     | 将此字段设置为[在 Workplace 中选择的](google-saml-implementation.md#service-provider-details) NameID 格式。 |
+| Outbound Signing Algorithm         | Bitwarden 用于签名 SAML 请求的算法。                                                                   |
+| Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                            |
+| Minimum Incoming Signing Algorithm | 默认，Workplace 使用 SHA-256 进行签名。请从下拉菜单中选择 `sha-256`。                                            |
+| Expect signed assertions           | Bitwarden 是否要求 SAML 声明被签名。此设置应**取消勾选**。                                                      |
+| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。   |
 
 完成服务提供程序配置部分后，**保存**您的工作。
 
 ### 身份提供程序配置 <a href="#identity-provider-configuration" id="identity-provider-configuration"></a>
 
-身份提供程序配置通常需要你返回 Workplace 管理控制台以获取应用程序的值：
+身份提供程序配置通常需要您返回 Workplace 管理控制台以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                                                      |
-| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                                 | 将此字段设置为 Workplace 的 **Entity ID**，这可以从 [Google 身份提供程序详细信息部分](google-saml-implementation.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                            |
-| Binding Type                              | 将此字段设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                                                   |
-| Single Sign On Service URL                | 将此字段设置为 Workplace 的 **SSO URL**，这可以从 [Google 身份提供程序详细信息部分](google-saml-implementation.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                              |
-| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发，但是您可以根据需要预先配置它。                                                                                                                                                                                       |
-| Artifact Resolution Service URL           | 对于 Workplace SAML 实现，将此字段留空。                                                                                                                                                                                                            |
-| X509 Public Certificate                   | <p>黏贴<a href="google-saml-implementation.md#google-identity-provider-details">已获取的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 默认，Google Workspace 将使用 RSA SHA-256 进行签名。从下拉列表中选择 `sha-256`。                                                                                                                                                                            |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                                    |
-| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                                      |
-| Want Authentication Requests Signed       | Google Workspace 是否要求 SAML 请求被签名。                                                                                                                                                                                                       |
+| 字段                                        | 描述                                                                                                                                                                                                                                               |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Entity ID                                 | 将此字段设置为 Workplace 的 **Entity ID**，这可以从 [Google 身份提供程序详细信息部分](google-saml-implementation.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                                     |
+| Binding Type                              | 将此字段设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                                                            |
+| Single Sign On Service URL                | 将此字段设置为 Workplace 的 **SSO URL**，这可以从 [Google 身份提供程序详细信息部分](google-saml-implementation.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                                       |
+| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划未来开发，但是您可以根据需要预先配置它。                                                                                                                                                                                                   |
+| X509 Public Certificate                   | <p>黏贴<a href="google-saml-implementation.md#google-identity-provider-details">已获取的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm                | 默认，Google Workspace 将使用 RSA SHA-256 进行签名。从下拉菜单中选择 `sha-256`。                                                                                                                                                                                     |
+| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                                             |
+| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                                                  |
+| Want Authentication Requests Signed       | Google Workspace 是否要求 SAML 请求被签名。                                                                                                                                                                                                                |
+
+{% hint style="info" %}
+填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
+{% endhint %}
 
 完成身份提供程序配置部分后，**保存**您的工作。
 
 {% hint style="success" %}
-您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织政策。[了解更多](../../oversight-visibility/enterprise-policies.md)。
+您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织策略。[了解更多](../../oversight-visibility/enterprise-policies.md)。
 {% endhint %}
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
