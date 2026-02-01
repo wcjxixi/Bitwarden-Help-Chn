@@ -26,16 +26,16 @@
    此部分中的可用字段将根据您选择的类型而变化。
 4. 配置以下表格中的选项：
 
-| 选项                                       | 描述                                                                                                                                                                                                                | 示例                                                                                                                                                                                                     |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Server Hostname                          | 目录服务器的主机名。                                                                                                                                                                                                        | <p><code>ad.example.com</code>，</p><p><code>ldap.company.local</code></p>                                                                                                                              |
-| Server Port                              | 目录服务器侦听的端口。                                                                                                                                                                                                       | `389` 或 `10389`                                                                                                                                                                                        |
-| Root Path                                | 目录连接器应在其中启动所有查询的根路径。                                                                                                                                                                                              | <p><code>cn=users</code>，</p><p><code>dc=ad</code>，</p><p><code>dc=example</code>，</p><p><code>dc=com</code>，</p><p><code>dc=ldap</code>，</p><p><code>dc=company</code>，</p><p><code>dc=org</code></p> |
-| This server uses Active Directory        | 如果服务器是活动目录服务器，则选中此框。                                                                                                                                                                                              |                                                                                                                                                                                                        |
-| This server pages search results         | 如果服务器对搜索结果进行分页，请选中此框（仅  LDAP）。                                                                                                                                                                                    |                                                                                                                                                                                                        |
-| This server uses an encrypted connection | <p>选中此框将提示您选择以下选项之一：</p><p></p><p><strong>Use SSL</strong>(LDAPS) - 如果您的 LDAPS 服务器使用不受信任的证书，则可以在此屏幕上配置证书选项。</p><p></p><p><strong>Use TLS</strong>(STARTTLS) - 如果您的 LDAP 服务器使用 STARTTLS 的自签名证书，则可以在此屏幕上配置证书选项。</p> |                                                                                                                                                                                                        |
-| Username                                 | 应用程序在连接到目录服务器时，使用的管理用户的专有名称。对于 **Active Directory**，用户应该是内置管理员群组的成员。                                                                                                                                              |                                                                                                                                                                                                        |
-| Password                                 | 上面指定的用户的密码。此密码安全地存储在操作系统的本机凭据管理器中。                                                                                                                                                                                |                                                                                                                                                                                                        |
+| 选项                                       | 描述                                                                                                                                                                                                                  | 示例                                                                                                                                                                                                     |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Server Hostname                          | 目录服务器的主机名。                                                                                                                                                                                                          | <p><code>ad.example.com</code>，</p><p><code>ldap.company.local</code></p>                                                                                                                              |
+| Server Port                              | 目录服务器侦听的端口。                                                                                                                                                                                                         | `389` 或 `10389`                                                                                                                                                                                        |
+| Root Path                                | 目录连接器应在其中启动所有查询的根路径。                                                                                                                                                                                                | <p><code>cn=users</code>，</p><p><code>dc=ad</code>，</p><p><code>dc=example</code>，</p><p><code>dc=com</code>，</p><p><code>dc=ldap</code>，</p><p><code>dc=company</code>，</p><p><code>dc=org</code></p> |
+| This server uses Active Directory        | 如果服务器是活动目录服务器，则选中此框。                                                                                                                                                                                                |                                                                                                                                                                                                        |
+| This server pages search results         | 如果服务器对搜索结果进行分页，请选中此框（仅  LDAP）。                                                                                                                                                                                      |                                                                                                                                                                                                        |
+| This server uses an encrypted connection | <p>选中此框将提示您选择以下选项之一：</p><p></p><p><strong>Use SSL</strong> (LDAPS) - 如果您的 LDAPS 服务器使用不受信任的证书，则可以在此屏幕上配置证书选项。</p><p></p><p><strong>Use TLS</strong> (STARTTLS) - 如果您的 LDAP 服务器使用 STARTTLS 的自签名证书，则可以在此屏幕上配置证书选项。</p> |                                                                                                                                                                                                        |
+| Username                                 | 应用程序在连接到目录服务器时，使用的管理用户的专有名称。对于 **Active Directory**，用户应该是内置管理员群组的成员。                                                                                                                                                |                                                                                                                                                                                                        |
+| Password                                 | 上面指定的用户的密码。此密码安全地存储在操作系统的本机凭据管理器中。                                                                                                                                                                                  |                                                                                                                                                                                                        |
 
 ## 配置同步选项 <a href="#configure-sync-options" id="configure-sync-options"></a>
 
@@ -83,7 +83,7 @@
 与标准 LDAP 指导相比，Active Directory 提供了一些用于编写搜索筛选器时使用的高级选项和限制。在[此处](https://docs.microsoft.com/en-us/windows/win32/adsi/search-filter-syntax?redirectedfrom=MSDN)了解有关编写 Active Directory 搜索筛选器的更多信息。
 
 {% hint style="info" %}
-嵌套群组可以在目录连接器中使用单个引用同步多个群组对象。 具体方法是创建一个其成员属于其他群组的群组。
+嵌套的群组可以在目录连接器中使用单个引用同步多个群组对象。具体方法是创建一个其成员属于其他群组的群组。
 {% endhint %}
 
 ### 示例 <a href="#samples" id="samples"></a>
@@ -94,32 +94,32 @@
 (&(objectClass=user)(cn=*Marketing*))
 ```
 
-&#x20;（仅适用于 **LDAP**）要为具有 \
+&#x20;（**仅适用于 LDAP**）要为具有 \
 `ou`（组织单元）组件（他们的 `dn`（专有名词）是 `Miami` 或 `Orlando`）的所有条目筛选同步：
 
 ```systemd
 (|(ou:dn:=Miami)(ou:dn:=Orlando))
 ```
 
-（仅适用于 **LDAP**）要排除与表达式相匹配的条目，例如所有 `ou=Chicago` 但排除同样匹配 `ou=Wrigleyville` 的条目：
+（**仅适用于 LDAP**）要排除与表达式相匹配的条目，例如所有 `ou=Chicago` 但排除同样匹配 `ou=Wrigleyville` 的条目：
 
 ```systemd
 (&(ou:dn:=Chicago)(!(ou:dn:=Wrigleyville)))
 ```
 
-（仅适用于 **AD**）要为 `Heroes` 群组中的用户筛选同步：
+（**仅适用于** **AD**）要为 `Heroes` 群组中的用户筛选同步：
 
 ```systemd
 (&(objectCategory=Person)(sAMAccountName=*)(memberOf=cn=Heroes,ou=users,dc=company,dc=com))
 ```
 
-&#x20;（仅适用于 **AD**）要通过目录或嵌套为 `Heroes` 群组成员的用户筛选同步：
+&#x20;（**仅适用于** **AD**）要通过目录或嵌套为 `Heroes` 群组成员的用户筛选同步：
 
 ```systemd
 (&(objectCategory=Person)(sAMAccountName=*)(memberOf:1.2.840.113556.1.4.1941:=cn=Heroes,ou=users,dc=company,dc=com))
 ```
 
-## 测试同步 <a href="#test-a-sync-start-automati" id="test-a-sync-start-automati"></a>
+## 测试同步 <a href="#test-a-sync" id="test-a-sync"></a>
 
 {% hint style="success" %}
 在测试或执行同步之前，请检查目录连接器是否连接到正确的云服务器（如 US 或 EU）或自托管服务器。了解如何使用[桌面 App](directory-connector-desktop-app.md) 或 [CLI](directory-connector-cli.md) 进行检查。
@@ -145,14 +145,14 @@
 如果您退出或关闭了目录连接器，自动同步将停止。最小化或隐藏此程序到系统托盘，以保持后台运行。
 
 {% hint style="info" %}
-如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations) 计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
+如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
 
-**该计划已不再提供购买**。此错误不适用于团队计划。
+**该计划已不再提供购买**。此错误不适用于团队版计划。
 {% endhint %}
 
 ## 使用活动目录同步故障排除 <a href="#sync-with-active-directory-troubleshooting" id="sync-with-active-directory-troubleshooting"></a>
 
-**Value limit reached when synchronizing from an Active Directory instance:**（从 Active Directory 实例同步时达到值限制）
+**Value limit reached when synchronizing from an Active Directory instance**（从 Active Directory 实例同步时达到值限制）：
 
 Active Directory `MaxValRange` 的默认设置为 1500。如果某个属性（如群组中的成员）的值超过 1500，Active Directory 将同时返回空白的成员属性和单独属性上成员的截断列表，最多可达到 `MaxValRange` 的值。
 

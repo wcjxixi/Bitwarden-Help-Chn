@@ -138,9 +138,9 @@ bwdc sync
 同步的用户和群组将立即在您的 Bitwarden 组织中可用。新增加的用户将收到一封邀请加入您组织的电子邮件。
 
 {% hint style="info" %}
-如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations) 计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
+如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
 
-**该计划已不再提供购买**。此错误不适用于团队计划。
+**该计划已不再提供购买**。此错误不适用于团队版计划。
 {% endhint %}
 
 ### last-sync <a href="#last-sync" id="last-sync"></a>

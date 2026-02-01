@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/microsoft-entra-id/)
 {% endhint %}
 
-本文将帮助您使用目录连接器将您的 Azure Active Directory 中的用户和群组同步到您的 Bitwarden 组织。
+本文将帮助您使用目录连接器将您的 Azure Entra ID 目录中的用户和群组同步到您的 Bitwarden 组织。
 
 ## Azure AD 设置 <a href="#azure-ad-setup" id="azure-ad-setup"></a>
 
@@ -14,8 +14,8 @@
 
 完成以下步骤以为目录连接器创建一个应用程序注册：
 
-1. 从您的 [Microsoft Azure 门户](https://portal.azure.com/)，导航到 **Azure Active Directory** 资源。
-2. 从左侧导航选择**应用注册**。
+1. 从您的 [Microsoft Azure 门户](https://portal.azure.com/)，导航到 **Azure Entra ID** 目录。
+2. 从左侧导航选择**应用程序注册**或在搜索栏中输入**应用程序注册**。
 3. 选择**新建注册**按钮并为您的注册指定一个 Bitwarden 专用名称（比如 `bitwarden-dc`）。
 4. 选择**注册**。
 
@@ -148,6 +148,10 @@ excludeadministrativeunit:7ckcq6e5-d733-4b96-be17-5bad81fe679d
 
 ## 测试同步 <a href="#test-a-sync" id="test-a-sync"></a>
 
+{% hint style="success" %}
+在测试或执行同步之前，请检查目录连接器是否连接到正确的云服务器（如 US 或 EU）或自托管服务器。了解如何使用[桌面 App](directory-connector-desktop-app.md) 或 [CLI](directory-connector-cli.md) 进行检查。
+{% endhint %}
+
 要测试目录连接器是否成功连接到您的目录并返回所需的用户和群组，导航到 **Dashboard** 标签页并选择 **Test Now** 按钮。如果成功，则用户和群组将根据指定的[同步选项](sync-with-active-directory-or-ldap.md#configure-sync-options)和[筛选器](sync-with-active-directory-or-ldap.md#specify-sync-filters)显示在目录连接器窗口中。
 
 授予的权限最多可能需要 15 分钟才能正确传递到您的应用程序。这之前，您可能会收到 `Insufficient privileges to complete the operation`（权限不足，无法完成此操作）的错误。
@@ -174,7 +178,7 @@ excludeadministrativeunit:7ckcq6e5-d733-4b96-be17-5bad81fe679d
 如果您退出或关闭了目录连接器，自动同步将停止。最小化或隐藏此程序到系统托盘，以保持后台运行。
 
 {% hint style="info" %}
-如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations) 计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
+如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
 
-**该计划已不再提供购买**。此错误不适用于团队计划。
+**该计划已不再提供购买**。此错误不适用于团队版计划。
 {% endhint %}

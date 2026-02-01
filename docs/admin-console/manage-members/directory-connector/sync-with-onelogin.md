@@ -85,6 +85,10 @@ exclude:Role A,Role B
 
 ## 测试同步 <a href="#test-a-sync" id="test-a-sync"></a>
 
+{% hint style="success" %}
+在测试或执行同步之前，请检查目录连接器是否连接到正确的云服务器（如 US 或 EU）或自托管服务器。了解如何使用[桌面 App](directory-connector-desktop-app.md) 或 [CLI](directory-connector-cli.md) 进行检查。
+{% endhint %}
+
 要测试目录连接器是否成功连接到您的目录并返回所需的用户和群组，导航到 **Dashboard** 标签页并选择 **Test Now** 按钮。如果成功，则用户和群组将根据指定的[同步选项](sync-with-active-directory-or-ldap.md#configure-sync-options)和[筛选器](sync-with-active-directory-or-ldap.md#specify-sync-filters)显示在目录连接器窗口中：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5QYMxvtCPhjbluuoLcCapD/96e9c630ead9ceba5124b55f9d2764a3/dc-okta-test.png?fm=webp&h=439&q=50&w=500" %}
@@ -105,7 +109,7 @@ exclude:Role A,Role B
 如果您退出或关闭了目录连接器，自动同步将停止。最小化或隐藏此程序到系统托盘，以保持后台运行。
 
 {% hint style="info" %}
-如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations) 计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
+如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
 
-**该计划已不再提供购买**。此错误不适用于团队计划。
+**该计划已不再提供购买**。此错误不适用于团队版计划。
 {% endhint %}
