@@ -8,7 +8,7 @@
 
 * **会切断**对组织及其数据的所有访问权限。被移除的成员需要[重新加入组织](../user-management.md#onboard-users)才能重新获得访问权限。
 * 大多数情况下**不会删除**其 Bitwarden 账户。除非您[删除他们的账户](delete-member-accounts.md)，否则被移除的成员仍可以访问他们个人拥有的密码库项目。
-* 如果组织使用[目录同步](../directory-connector/about-directory-connector.md)并且**同步过程移除已禁用的用户**选项被打开，则会**自动**执行此操作。
+* 如果组织使用[目录同步](../directory-connector/about-directory-connector.md)并且 **Remove disabled users during sync**（同步过程移除已禁用的用户）选项被打开，则会**自动**执行此操作。
 
 ## 从组织移除成员 <a href="#remove-members-from-an-organization" id="remove-members-from-an-organization"></a>
 
