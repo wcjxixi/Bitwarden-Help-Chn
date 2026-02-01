@@ -8,7 +8,7 @@
 
 [使用 SSO 验证身份](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)的用户将被要求输入一个**组织标识符**，该标识符指示要进行身份验证的组织（以及 SSO 集成）。要设置唯一的组织标识符：
 
-1、登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+1、登录 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
 产品切换器
@@ -76,7 +76,7 @@ SAML 2.0 配置
 | Requested Authentication Context Class Reference values | 定义身份验证上下文类引用标识符（`acr_values`）（空格分隔）。按优先顺序列出 `acr_values`。                                                                                                                                                                                                                                                      |
 | Expected “acr” Claim Value in Response                  | 定义 Bitwarden 在响应中期望和验证的 `acr` 声明值。                                                                                                                                                                                                                                                                             |
 
-### OIDC 属性和声明 <a href="#oidc-attributes-and-claims" id="oidc-attributes-and-claims"></a>
+### OIDC 属性 & 声明 <a href="#oidc-attributes-and-claims" id="oidc-attributes-and-claims"></a>
 
 **账户布建需要一个电子邮件地址**，它可以作为下表中的任何属性或声明被传递。
 

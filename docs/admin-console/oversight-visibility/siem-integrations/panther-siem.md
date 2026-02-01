@@ -36,7 +36,7 @@ Bitwarden 日志集成
 
 ### 连接您的 Bitwarden 组织 <a href="#connect-your-bitwarden-organization" id="connect-your-bitwarden-organization"></a>
 
-选择 **Start Setup** 后，将进入配置界面。
+选择 **Start Setup** 后，您将被引导至配置界面。
 
 {% hint style="info" %}
 Panther SIEM 服务仅适用于 Bitwarden 云托管组织。
@@ -44,7 +44,7 @@ Panther SIEM 服务仅适用于 Bitwarden 云托管组织。
 
 1、输入集成的名称，然后选择 **Setup**。
 
-2、接下来，您必须访问 Bitwarden 组织的**客户端 ID** 和**客户端密钥**。保持此界面打开，在另一个选项卡上，登录 Bitwarden 网页 App 并使用产品切换器打开管理控制台：
+2、接下来，您必须访问您的 Bitwarden 组织的**客户端 ID** 和**客户端密钥**。保持此界面打开，在另一个选项卡上，登录 Bitwarden 网页 App 然后使用产品切换器打开管理控制台：
 
 {% embed url="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&fm=avif" %}
 产品切换器
@@ -91,4 +91,3 @@ Panther JSON 对象
 {% endembed %}
 
 有关 Bitwarden 组织活动的更多信息，请参阅[此处](../event-logging/event-logs.md#organization-events)。有关针对特定查询的其他选项，请参阅 [Panther Data Explorer](https://docs.panther.com/search/data-explorer) 文档以获取更多信息。
-

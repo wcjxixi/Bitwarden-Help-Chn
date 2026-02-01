@@ -16,11 +16,11 @@
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
-{% hint style="info" %}
+{% hint style="danger" %}
 本文假定您已经使用身份提供程序设置了 Duo。如果还没有，请参阅 [Duo 文档](https://duo.com/docs/sso#saml)了解详情。
 {% endhint %}
 
-登录到 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJAUVWIZAAB" %}
 产品切换器
@@ -94,11 +94,11 @@ SAML 2.0 配置
 必需的属性映射
 {% endembed %}
 
-完成这些字段的配置后，**Save**（保存）您的更改。
+完成这些字段的配置后， **Save** 您的更改。
 
-## 回到网页密码库 <a href="#back-to-the-web-vault" id="back-to-the-web-vault"></a>
+## 返回网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
 
-至此，您已经在 Duo 管理门户网站中配置了所需的一切。回到 Bitwarden 网页密码库来完成配置。
+至此，您已经在 Duo 管理门户网站中配置好了您所需要的一切。请返回 Bitwarden 网页 App 完成配置。
 
 单点登录界面将配置分为两个部分：
 
@@ -118,7 +118,7 @@ SAML 2.0 配置
 | Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。如果您[选择了 **Sign assertion** 选项](duo-saml-implementation.md#saml-response)，请选中此框。                                                                       |
 | Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                                                                                      |
 
-完成服务提供程序配置部分后，**Save**（保存）您的工作。
+完成服务提供程序配置部分后，**保存**您的工作。
 
 ### 身份提供程序配置 <a href="#identity-provider-configuration" id="identity-provider-configuration"></a>
 
@@ -137,7 +137,7 @@ SAML 2.0 配置
 | Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                            |
 | Want Authentication Requests Signed       | Duo 是否要求 SAML 请求被签名。                                                                                                                                                                                          |
 
-完成身份提供程序配置部分后，**Save**（保存）您的工作。
+完成身份提供程序配置部分后，**保存**您的工作。
 
 {% hint style="success" %}
 您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织政策。[了解更多](../../oversight-visibility/enterprise-policies.md)。
@@ -145,13 +145,13 @@ SAML 2.0 配置
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**使用单点登录**按钮来进行测试：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3BdlHeogd42LEoG06qROyQ/c68021df4bf45d72e9d37b1fbf5a6040/login.png?w=517&fm=avif" %}
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到您的源 IdP 的登录界面。
+输入[已配置的组织标识符](generic-saml.md#step-1-set-an-organization-identifier)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到您的源 IdP 的登录界面。
 
 使用您的 IdP 登录和 Duo 双重身份验证后，输入您的 Bitwarden 主密码来解密您的密码库！
 

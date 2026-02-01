@@ -62,7 +62,7 @@ Sumo Logic Bitwarden App 包含预配置的监控器，可主动检测数据导�
 
 1、返回 **App Catalog**，搜索然后选择 Bitwarden App。
 
-2、若 App 已安装，请导航至 **What's Included** 选项卡。
+2、若此 App 已安装，请导航至 **What's Included** 选项卡。
 
 {% embed url="https://bitwarden.com/assets/5nV8JAS5NiEVMtKxfx1T3Y/051a93edcc7b722fa052d5b31bc9cdcc/create_monitors.png?w=1200&fm=avif" %}
 创建监控器

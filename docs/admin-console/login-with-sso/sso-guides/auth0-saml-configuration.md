@@ -16,7 +16,7 @@
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
-登录到 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJAUVWIZAAB" %}
 产品切换器
@@ -36,9 +36,9 @@ SAML 2.0 配置
 您可以选择性使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 和 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
-## 创建 Auth0 应用程序 <a href="#create-an-auth-0-application" id="create-an-auth-0-application"></a>
+## 创建 Auth0 应用程序 <a href="#create-an-auth0-application" id="create-an-auth0-application"></a>
 
-在 Auth0 门户中，使用应用程序菜单来创建一个 **Regular Web Application**（常规的 Web 应用程序）：
+在 Auth0 门户中，使用应用程序菜单来创建一个 **Regular Web Application**：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3EsE3HTVqocRvC1f2XSWbt/9077b5bc7801de7270372594e62b7aad/auth0-createapp.png?fm=webp&h=400&q=50&w=1040" %}
 
@@ -48,14 +48,14 @@ SAML 2.0 配置
 Auth0 设置
 {% endembed %}
 
-| Auth0 设置                             | 描述                                                                                                                                                                                                                                                                                                                                                                                              |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name                                 | 给此应用程序取一个专用于 Bitwarden 的名称。                                                                                                                                                                                                                                                                                                                                                                     |
-| Domain                               | 请注意此值。在[后面的步骤中](auth0-saml-configuration.md#identity-provider-configuration)您将需要它。                                                                                                                                                                                                                                                                                                              |
-| Application Type                     | 选择 **Regular Web Application**。                                                                                                                                                                                                                                                                                                                                                                 |
-| Token Endpoint Authentication Method | 选择 **Post** (HTTP Post)，它将映射到[稍后配置](auth0-saml-configuration.md#identity-provider-configuration)的 **Binding Type** 属性。                                                                                                                                                                                                                                                                          |
-| Application Login URI                | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的 <strong>SP Entity ID</strong>。<br><br>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2</code>；对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2</code>。</p>                                                        |
-| Allowed Callback URLS                | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。<br><br>对于云托管客户，其始终为<code>https://sso.bitwarden.com/saml2/your-org-id/Acs</code>；对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2/your-org-id/Acs</code>。</p> |
+| Auth0 设置                             | 描述                                                                                                                                                              |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                                 | 给此应用程序取一个专用于 Bitwarden 的名称。                                                                                                                                     |
+| Domain                               | 请注意此值。在[后面的步骤中](auth0-saml-configuration.md#identity-provider-configuration)您将需要它。                                                                              |
+| Application Type                     | 选择 **Regular Web Application**。                                                                                                                                 |
+| Token Endpoint Authentication Method | 选择 **Client Secret (Post)**，它将映射到[稍后配置](auth0-saml-configuration.md#identity-provider-configuration)的 **Binding Type** 属性。                                      |
+| Application Login URI                | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>         |
+| Allowed Callback URLS                | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
 
 ### Grant Types
 
@@ -79,24 +79,24 @@ Auth0 设置
 
 ![Auth0 端点](https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-endpoints.png)
 
-## 配置 Auth0 规则 <a href="#configure-auth-0-rules" id="configure-auth-0-rules"></a>
+## ~~配置 Auth0 规则~~ <a href="#configure-auth0-rules" id="configure-auth0-rules"></a>
 
-创建规则来定制你的应用程序的 SAML 响应行为。虽然 Auth0 提供了[多个选项](https://auth0.com/docs/protocols/saml-protocol/customize-saml-assertions#saml-assertion-attributes)，但这里将只关注那些专门映射到 Bitwarden 的选项。要创建一个自定义 SAML 配置规则集，请使用 **Auth Pipeline → Rules** 菜单来 **Create**（创建）规则：
+~~创建规则来定制你的应用程序的 SAML 响应行为。虽然 Auth0 提供了~~[~~多个选项~~](https://auth0.com/docs/protocols/saml-protocol/customize-saml-assertions#saml-assertion-attributes)~~，但这里将只关注那些专门映射到 Bitwarden 的选项。要创建一个自定义 SAML 配置规则集，请使用 **Auth Pipeline → Rules** 菜单来 **Create**（创建）规则：~~
 
 ![Auth0 规则](https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-settings.png)
 
-以下任何项目均可配置：
+~~以下任何项目均可配置：~~
 
-| Key                    | 描述                                                                                                                                                                                                                                                                                       |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `signatureAlgorithm`   | <p>Auth0 使用此算法对 SAML 声明或响应进行签名。默认为 <code>rsa-sha1</code>，您也可以将值设置为 <code>rsa-sha256</code>。<br><br>如果您更改了这个值，您必须：<br>-将 <code>digestAlgorithm</code>  设置为 <code>sha256</code>。<br>-（在 Bitwarden 中）将 <strong>Minimum Incoming Signing Algorithm</strong> 设置为 <code>rsa-sha256</code>。</p> |
-| `digestAlgorithm`      | 此算法用于计算 SAML 声明或响应的摘要。默认为 `sha-1`。如果您更改了  `signatureAlgorithm` 的值，您还应该将此值设置为 `sha256`.                                                                                                                                                                                                   |
-| `signResponse`         | 默认，Auth0 将仅对 SAML 声明进行签名。将此属性设置为 `true` 可对 SAML 响应（而不是声明）进行签名。                                                                                                                                                                                                                           |
-| `nameIdentifierFormat` | 默认为 `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified`。您可以将值设置为[任一 SAML NameID 格式](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。如果这样做了，请将 SP **Name ID Format** 字段更改为相应的选项（参阅[这里](auth0-saml-configuration.md#service-provider-configuration)）。                  |
+| 键                      | 描述                                                                                                                                                                                                                                                                                                  |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `signatureAlgorithm`   | <p>Auth0 使用此算法对 SAML 声明或响应进行签名。默认为 <code>rsa-sha1</code>，您也可以将值设置为 <code>rsa-sha256</code>。</p><p></p><p>如果您更改了这个值，您必须：</p><p>-将 <code>digestAlgorithm</code> 设置为 <code>sha256</code>。</p><p>-（在 Bitwarden 中）将 <strong>Minimum Incoming Signing Algorithm</strong> 设置为 <code>rsa-sha256</code>。</p> |
+| `digestAlgorithm`      | 此算法用于计算 SAML 声明或响应的摘要。默认为 `sha-1`。如果您更改了 `signatureAlgorithm` 的值，您还应该将此值设置为 `sha256`.                                                                                                                                                                                                               |
+| `signResponse`         | 默认，Auth0 将仅对 SAML 声明进行签名。将此属性设置为 `true` 可对 SAML 响应（而不是声明）进行签名。                                                                                                                                                                                                                                      |
+| `nameIdentifierFormat` | 默认为 `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified`。您可以将值设置为[任一 SAML NameID 格式](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。如果这样做了，请将 SP **Name ID Format** 字段更改为相应的选项（参阅[这里](auth0-saml-configuration.md#service-provider-configuration)）。                             |
 
-使用像下面这样的 **Script**（脚本）来实现这些规则。如需帮助，请参阅 [Auth0 文档](https://auth0.com/docs/protocols/saml-protocol/customize-saml-assertions#customize-saml-assertions-with-rules)。
+~~使用像下面这样的 **Script**（脚本）来实现这些规则。如需帮助，请参阅~~ [~~Auth0 文档~~](https://auth0.com/docs/protocols/saml-protocol/customize-saml-assertions#customize-saml-assertions-with-rules)~~。~~
 
-```
+```systemd
 function (user, context, callback) {
     context.samlConfiguration.signatureAlgorithm = "rsa-sha256";
     context.samlConfiguration.digestAlgorithm = "sha256";
@@ -107,9 +107,56 @@ function (user, context, callback) {
 }
 ```
 
-## 回到网页密码库 <a href="#back-to-the-web-vault" id="back-to-the-web-vault"></a>
+## 配置 Auth0 操作 <a href="#configure-auth0-actions" id="configure-auth0-actions"></a>
 
-至此，你已经在 Auth0 门户网站配置好了你所需要的一切。回到 Bitwarden 网页密码库来完成配置。
+创建操作来自定义 Auth0 将在登录后流程中使用的逻辑，并规定与 Bitwarden 交换的参数。要创建必要的操作：
+
+1、导航到 **Actions** → **Library** 然后选择 **Create Action** → **Build from scratch**。
+
+2、为您的操作指定一个名称，例如 `Bitwarden SSO`，选择 **Login / Post Login** 触发器，选择 **Node 18 (Recommended)** 运行时选项，然后选择 **Create**。
+
+3、在集成代码编辑器中，添加以下规则：
+
+```yaml
+exports.onExecutePostLogin = async (event, api) => {
+    // Modify SAML configuration settings
+    if (event.request.protocol === 'samlp') {
+        api.saml.updateConfiguration({
+            signatureAlgorithm: "rsa-sha256",
+            digestAlgorithm: "sha256",
+            signResponse: true,
+            nameIdentifierFormat: "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+            binding: "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        });
+    }
+};
+```
+
+4、选择 **Deploy**。
+
+5、导航到 **Actions** → **Triggers** 然后选择 `post-login` 触发器。
+
+6、将新操作拖放到 **Post Login** 流程中，然后选择 **Apply**。
+
+配置上述操作时，您可以自定义以下任意属性以满足您的需求：
+
+| 键                      | 描述                                                                                                                                                                                                                                                                                       |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `signatureAlgorithm`   | <p>Auth0 使用此算法对 SAML 声明或响应进行签名。默认为 <code>rsa-sha1</code>，您也可以将值设置为 <code>rsa-sha256</code>。<br><br>如果您更改了这个值，您必须：<br>-将 <code>digestAlgorithm</code>  设置为 <code>sha256</code>。<br>-（在 Bitwarden 中）将 <strong>Minimum Incoming Signing Algorithm</strong> 设置为 <code>rsa-sha256</code>。</p> |
+| `digestAlgorithm`      | 此算法用于计算 SAML 声明或响应的摘要。将此值设置为 `sha-256`.                                                                                                                                                                                                                                                  |
+| `signResponse`         | 默认，Auth0 将仅对 SAML 声明进行签名。将此属性设置为 `true` 可对 SAML 响应（而不是声明）进行签名。                                                                                                                                                                                                                           |
+| `nameIdentifierFormat` | 默认为 `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified`。您可以将值设置为[任一 SAML NameID 格式](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。如果这样做了，请将 SP **Name ID Format** 字段更改为相应的选项（参阅[这里](auth0-saml-configuration.md#service-provider-configuration)）。                  |
+
+### 从规则迁移到操作 <a href="#migrate-from-rules-to-actions" id="migrate-from-rules-to-actions"></a>
+
+2024 年 11 月 18 日，Auth0 将弃用规则。如果您当前正在使用本文档先前版本中描述的规则，则可以使用 Auth0 规则界面上的 **Migrate to Action** 按钮来简化此过程。如果您这样做：
+
+* 不要关闭预先存在的规则。
+* 请按照上述步骤 5 和 6 中的说明将新操作添加到您的 `post-login` 触发器中。
+
+## 返回网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
+
+至此，您已经在 Auth0 门户网站配置好了您所需要的一切。请返回 Bitwarden 网页 App 完成配置。
 
 单点登录界面将配置分为两个部分：
 
@@ -120,53 +167,52 @@ function (user, context, callback) {
 
 除非您已配置了[自定义规则](auth0-saml-configuration.md#configure-auth-0-rules)，否则您的服务提供重新配置就已经完成了。如果您配置了自定义规则或要对实现做进一步的更改，请编辑相关字段：
 
-| 字段                                 | 描述                                                                                                                                            |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name ID Format                     | [NameID Format](https://docs.oracle.com/cd/E19316-01/820-3886/ggvxx/index.html) 用于在 SAML 请求（`NameIDPolicy`）中指定。要忽略它，请设置为 **Not Configured**。  |
-| Outbound Signing Algorithm         | 用于签名 SAML 请求的算法，默认为 `rsa-sha256`。                                                                                                             |
-| Signing Behavior                   | SAML 请求是否/何时将被签名。默认，Auth0 不要求对请求进行签名。                                                                                                         |
-| Minimum Incoming Signing Algorithm | Bitwarden 在 SAML 响应中接受的最小签名算法。默认，Auth0 使用 `rsa-sha1` 进行签名，因此请从下拉列表中选择该选项，除非您配置了[自定义签名规则](auth0-saml-configuration.md#configure-auth-0-rules)。 |
-| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。默认，Auth0 对 SAML 声明进行签名，因此，除非您配置了[自定义签名规则](auth0-saml-configuration.md#configure-auth-0-rules)，否则请选中此框。              |
-| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                                                    |
+| 字段                                 | 描述                                                                                                                                           |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name ID Format                     | [NameID Format](https://docs.oracle.com/cd/E19316-01/820-3886/ggvxx/index.html) 用于在 SAML 请求（`NameIDPolicy`）中指定。要忽略它，请设置为 **Not Configured**。 |
+| Outbound Signing Algorithm         | 用于签名 SAML 请求的算法，默认为 `rsa-sha256`。                                                                                                            |
+| Signing Behavior                   | SAML 请求是否/何时将被签名。默认，Auth0 不要求对请求进行签名。                                                                                                        |
+| Minimum Incoming Signing Algorithm | Bitwarden 在 SAML 响应中接受的最小签名算法。选择 `rsa-sha256` 除非您配置了[自定义签名操作](auth0-saml-configuration.md#configure-auth0-actions)。                          |
+| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。默认，Auth0 对 SAML 声明进行签名，因此请选中此框，除非您配置了[自定义签名操作](auth0-saml-configuration.md#configure-auth0-actions)。               |
+| Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                                                   |
 
-完成服务提供程序配置部分后，**Save**（保存）您的工作。
+完成服务提供程序配置部分后，**保存**您的工作。
 
 ### 身份提供程序配置 <a href="#identity-provider-configuration" id="identity-provider-configuration"></a>
 
-身份提供程序配置通常需要你返回 Auth0 门户以获取应用程序的值：
+身份提供程序配置通常需要您返回 Auth0 门户以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                                                  |
-| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                                 | 输入您的 Auth0 应用程序的 **Domain** 值（参考[此处](auth0-saml-configuration.md#create-an-auth-0-application)），使用前缀 `urn:`，例如，`urn:bw-help.us.auth0.com`。                                                                                          |
-| Binding Type                              | 选择 **HTTP POST** 以匹配在您的 Auth0 应用程序中指定的 [Token Endpoint Authentication Method](auth0-saml-configuration.md#create-an-auth-0-application) 的值。                                                                                         |
-| Single Sign On Service URL                | 输入您的 Auth0 应用程序的 **SAML Protocol URL**（参阅 [Endpoints](auth0-saml-configuration.md#endpoints)）。例如，`https://bw-help.us.auth0.com/samlp/HcpxD63h7Qzl420u8qachPWoZEG0Hho2`。                                                             |
-| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发，但是您可以根据需要预先配置它。                                                                                                                                                                                   |
-| Artifact Resolution Service URL           | 输入您的 Auth0 应用程序的 **SAML Metadata URL**（参阅 [Endpoints](auth0-saml-configuration.md#endpoints)）。例如，`https://bw-help.us.auth0.com/samlp/metadata/HcpxD63h7Qzl420u8qachPWoZEG0Hho2`.                                                    |
-| X509 Public Certificate                   | <p>黏贴已复制的 <a href="auth0-saml-configuration.md#certificates">Signing Certificate</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 默认，Auth0 使用 `RSA-SHA1` 签名， 因此，除非您配置了[自定义签名规则](auth0-saml-configuration.md#configure-auth-0-rules)，否则请从下拉列表中选择 `RSA-SHA1` 选项。                                                                                                        |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                                |
-| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                                  |
-| Want Authentication Requests Signed       | Auth0 是否要求 SAML 请求被签名。                                                                                                                                                                                                              |
+| 字段                                  | 描述                                                                                                                                                                                                                                           |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                           | 输入您的 Auth0 应用程序的 **Domain** 值（参考[此处](auth0-saml-configuration.md#create-an-auth-0-application)），使用前缀 `urn:`，例如，`urn:bw-help.us.auth0.com`。                                                                                                   |
+| Binding Type                        | 选择 **HTTP POST** 以匹配在您的 Auth0 应用程序中指定的 [Token Endpoint Authentication Method](auth0-saml-configuration.md#create-an-auth0-application) 的值。                                                                                                   |
+| Single Sign On Service URL          | 输入您的 Auth0 应用程序的 **SAML Protocol URL**（参阅 [Endpoints](auth0-saml-configuration.md#endpoints)）。例如，`https://bw-help.us.auth0.com/samlp/HcpxD63h7Qzl420u8qachPWoZEG0Hho2`。                                                                      |
+| Single Log Out Service URL          | SSO 登录当前还**不支持** SLO。该选项计划未来开发，但是您可以根据需要预先配置它。                                                                                                                                                                                               |
+| Artifact Resolution Service URL     | 输入您的 Auth0 应用程序的 **SAML Metadata URL**（参阅 [Endpoints](auth0-saml-configuration.md#endpoints)）。例如，`https://bw-help.us.auth0.com/samlp/metadata/HcpxD63h7Qzl420u8qachPWoZEG0Hho2`.                                                             |
+| X509 Public Certificate             | <p>黏贴获取到的 <a href="auth0-saml-configuration.md#certificates">Signing Certificate</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm          | 选择 `rsa-sha256` 除非您配置了[自定义签名操作](auth0-saml-configuration.md#configure-auth0-actions)。                                                                                                                                                        |
+| Disable Outbound Logout Requests    | SSO 登录当前还**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                                              |
+| Want Authentication Requests Signed | Auth0 是否要求 SAML 请求被签名。                                                                                                                                                                                                                       |
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
 {% endhint %}
 
-完成身份提供程序配置部分后，**Save**（保存）您的工作。
+完成身份提供程序配置部分后，**保存**您的工作。
 
 {% hint style="success" %}
-您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织政策。[了解更多](../../oversight-visibility/enterprise-policies.md)。
+您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织策略。[了解更多](../../oversight-visibility/enterprise-policies.md)。
 {% endhint %}
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**使用单点登录**按钮来进行测试：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3BdlHeogd42LEoG06qROyQ/c68021df4bf45d72e9d37b1fbf5a6040/login.png?w=517&fm=avif" %}
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Auth0 的登录界面：
+输入[已配置的组织标识符](generic-saml.md#step-1-set-an-organization-identifier)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Auth0 的登录界面：
 
 ![Auth0 登录界面](https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-login.png)
 

@@ -110,7 +110,7 @@ Splunk App 仪表板
 
 5、将 `client_id` 和 `client_secret` 值复制并粘贴到 Splunk 设置页面上的相应位置。
 
-另请完成以下附加字段：
+也请完成以下附加字段：
 
 | 字段                    | 值                                                                                                                                                                                      |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -118,8 +118,8 @@ Splunk App 仪表板
 | Server URL            | <p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。请确保该 URL 在末尾不包含正斜杠 「<code>/</code>」。<br><br>对于云托管组织，请使用 URL <code>https://vault.bitwarden.com</code> 或 <code>https://vault.bitwarden.eu</code>。</p> |
 | Start date (optional) | <p>设置数据监控的开始日期。如果未设置，默认日期将设置为 1 年。<br>这是一次性配置，设置后无法更改。</p>                                                                                                                            |
 
-{% hint style="danger" %}
-组织 API 密钥信息是敏感数据。不要在不安全的位置共享这些值。
+{% hint style="info" %}
+您的组织 API 密钥信息属于敏感数据。请勿在非安全位置共享这些值。
 {% endhint %}
 
 6、完成后，选择 **Submit**。
@@ -317,4 +317,3 @@ splunk clean eventdata -index bitwaren_events
 * 对于 Splunk Enterprise 用户，App 将记录到：`/opt/splunk/var/log/splunk/bitwarden_event_logs.log`
 
 如果您遇到任何错误，或者 Bitwarden App 无法正常运行，用户可以检查该日志文件中的错误或参阅 [Spunk 文档](https://docs.splunk.com/Documentation/Splunk/9.2.0/Indexer/RemovedatafromSplunk)。
-

@@ -10,7 +10,7 @@
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
-登录到 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJAUVWIZAAB" %}
 产品切换器
@@ -48,7 +48,7 @@ AD FS 服务器应用程序界面
 
 * 为服务器应用程序起一个 **Name**。
 * 记下 **Client Identifier**。在后续步骤中需要此值。
-* 指定一个 **Redirect URI**。对于云托管的客户，这始终是 `https://sso.bitwarden.com/oidc-signin`。对于自托管实例，这取决于您配置的服务器 URL，例如 `https://your.domain.com/sso/oidc-signin`。
+* 指定一个 **Redirect URI**。对于云托管的客户，这是 `https://sso.bitwarden.com/oidc-signin` 或 `https://sso.bitwarden.eu/oidc-signin`。对于自托管实例，这取决于您配置的服务器 URL，例如 `https://your.domain.com/sso/oidc-signin`。
 
 4、在 Configure Application Credentials 界面上，记下 **Client Secret**。在后续步骤中需要此值。
 
@@ -95,9 +95,11 @@ AD FS 配置声明规则界面
 * 从 LDAP Attribute 下拉列表中，选择 **E-Mail-Addresses**。
 * 从 Outgoing Claim Type 下拉列表中，选择 **E-Mail Address**。
 
-## 回到网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
+7、选择 **Finish**。
 
-至此，您已经配置好了 AD FS 服务器管理器所需要的一切。回到 Bitwarden 网页 App 以配置以下字段：
+## 返回网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
+
+至此，您已经配置好了 AD FS 服务器管理器所需要的一切。请返回 Bitwarden 网页 App 配置以下字段：
 
 | 字段                                                      | 描述                                                                                                                                    |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -114,7 +116,7 @@ AD FS 配置声明规则界面
 | Requested Authentication Context Class Reference values | 定义身份验证上下文类引用标识符（`acr_values`）（以空格分隔）。按优先顺序列出 `acr_values`。                                                                            |
 | Expected “acr” Claim Value in Response                  | 定义 Bitwarden 在响应中期望和验证的 `acr` 声明值。                                                                                                    |
 
-完成这些字段的配置后，**Save**（保存）您的工作。
+完成这些字段的配置后，**保存**您的工作。
 
 {% hint style="success" %}
 您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织政策。[了解更多](../../oversight-visibility/enterprise-policies.md)。
@@ -122,15 +124,13 @@ AD FS 配置声明规则界面
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**使用单点登录**按钮来进行测试：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3BdlHeogd42LEoG06qROyQ/c68021df4bf45d72e9d37b1fbf5a6040/login.png?w=517&fm=avif" %}
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 AD FS SSO 登录界面。
-
-使用 AD FS 凭据进行身份验证后，输入您的 Bitwarden 主密码以解密您的密码库！
+输入[已配置的组织标识符](generic-saml.md#step-1-set-an-organization-identifier)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 AD FS SSO 登录界面。使用 AD FS 凭据进行身份验证后，输入您的 Bitwarden 主密码以解密您的密码库！
 
 {% hint style="info" %}
 Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致错误。SSO 登录流程必须从 Bitwarden 发起。

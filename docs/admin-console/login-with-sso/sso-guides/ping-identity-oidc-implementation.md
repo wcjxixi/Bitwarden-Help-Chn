@@ -68,7 +68,7 @@ Ping OIDC 配置编辑
 
 ## 返回网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
 
-至此，您已在 Ping Identity 环境中配置了所需的一切。返回 Bitwarden 网页 App 以配置以下字段：
+至此，您已在 Ping Identity 环境中配置好了您所需要的一切。请返回 Bitwarden 网页 App 配置以下字段：
 
 | 值                                                       | 描述                                                                                             |
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -92,13 +92,13 @@ Ping OIDC 配置编辑
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**使用单点登录**按钮来进行测试：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3BdlHeogd42LEoG06qROyQ/c68021df4bf45d72e9d37b1fbf5a6040/login.png?w=517&fm=avif" %}
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Ping Identity 登录界面：
+输入[已配置的组织标识符](generic-oidc.md#step-1-set-an-sso-identifier)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Ping Identity 登录界面：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1QwyIzAp4JtyGwNLXZNXFI/6d1cc0ca3f278f46d7ad251ff2898dd4/2024-07-22_12-18-19.png?_a=DAJCwlWIZAAB" %}
 Ping Identity SSO

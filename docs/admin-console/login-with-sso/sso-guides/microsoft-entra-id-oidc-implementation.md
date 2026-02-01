@@ -64,9 +64,9 @@ SAML 2.0 配置
 
 选择 **API permissions** ，然后单击 **✔︎Grant admin consent for {your directory}**。唯一需要的权限是默认添加的 Microsoft Graph > User.Read。
 
-## 返回网页密码库 <a href="#back-to-the-web-vault" id="back-to-the-web-vault"></a>
+## 返回网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
 
-至此，您已在 Azure 门户范围内配置好了您所需要的一切。返回 Bitwarden 网页密码库以配置以下字段：
+至此，您已在 Azure 门户范围内配置好了您所需要的一切。请返回 Bitwarden 网页 App 配置以下字段：
 
 | 字段                                                      | 描述                                                                                                                       |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -83,7 +83,7 @@ SAML 2.0 配置
 | Requested Authentication Context Class Reference values | 定义身份验证上下文类引用标识符（`acr_values`）（以空格分隔）。按优先顺序列出 `acr_values`。                                                               |
 | Expected “acr” Claim Value in Response                  | 定义 Bitwarden 在响应中期望和验证的 `acr` 声明值。                                                                                       |
 
-完成这些字段的配置后，**Save**（保存）您的工作。
+完成这些字段的配置后，**保存**您的工作。
 
 {% hint style="success" %}
 您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织政策。[了解更多](../../oversight-visibility/enterprise-policies.md)。
@@ -107,13 +107,13 @@ Microsoft Entra ID 自定义声明
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**使用单点登录**按钮来进行测试：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3BdlHeogd42LEoG06qROyQ/c68021df4bf45d72e9d37b1fbf5a6040/login.png?w=517&fm=avif" %}
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Microsoft 登录界面：
+输入[已配置的组织标识符](generic-oidc.md#step-1-set-an-sso-identifier)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Microsoft 登录界面：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/j1YuXioPGFIwxsqfxCrpm/d0185848b3812c22940c6c5956e0b2be/az-login.png?fm=webp&h=433&q=50&w=464" %}
 Azure 登录界面

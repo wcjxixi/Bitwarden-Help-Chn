@@ -16,7 +16,7 @@
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
-登录到 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJAUVWIZAAB" %}
 产品切换器
@@ -36,86 +36,76 @@ SAML 2.0 配置
 您可以选择性使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 和 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
-## 创建 AWS SSO 应用程序 <a href="#create-an-aws-sso-application" id="create-an-aws-sso-application"></a>
+## 创建应用程序 <a href="#create-an-application" id="create-an-application"></a>
 
-在 AWS 控制台中，导航到 **AWS SSO**，从导航中选择 **Applications**，然后选择 **Add a new application** 按钮：
+在 AWS 控制台中，导航到 **AWS Identity Center**，从导航中选择 **Application assignments** → **Applications**，然后选择 **Add application** 按钮：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/62rVtvK7sT2nzJTRkunmCe/f81a48dc09cf26e25421e17bfd26d343/aws-newapp.png?fm=webp&h=398&q=50&w=1113" %}
-添加新的应用
+{% embed url="https://bitwarden.com/assets/62rVtvK7sT2nzJTRkunmCe/1e1c14bd974785c0accce5f16b0f2ec0/IAMIDENTITY1.png?w=1200&fm=avif" %}
+**Add application**
 {% endembed %}
 
-在搜索栏下方，选择 **Add a custom SAML 2.0 application** 选项：
+在 Select application type 界面，选择 **I have an application I want to set up** 和 **SAML 2.0**。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/46dB0jiUsLRWJmzsvGkom2/b51811ee1b0f0da5983bbdb4f37027d9/aws-newapp2.png?fm=webp&h=332&q=50&w=898" %}
-添加自定义 SAML 应用
+### 配置应用程序 <a href="#configure-application" id="configure-application"></a>
+
+在 Configure application 界面：
+
+1、为应用程序指定一个唯一的、Bitwarden 专用的 **Display name**。
+
+2、复制 **IAM Identity Center sign-in URL** 和 **IAM Identity Center issuer URL**，然后下载 **IAM Identity Center Certificate**：
+
+{% embed url="https://bitwarden.com/assets/3Bw1LUH9z4rcYhMW705GLg/105b6b1eafbf1a1170d20ecd1ad1d800/IAMIDENTITY5.png?w=1200&fm=avif" %}
+IAM Identity Center metadata
 {% endembed %}
 
-### 详情 <a href="#details" id="details"></a>
+3、在 **Application start URL** URL 字段中，指定用户访问 Bitwarden 的登录 URL。对于云托管客户，始终为 `https://vault.bitwarden.com/#/sso` 或 `https://vault.bitwarden.eu/#/sso`。对于自托管实例，这由您[已配置的服务器 URL](../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain) 决定，例如 `https://your.domain/#/sso`：
 
-为此应用程序提供一个唯一的、专用于 Bitwarden 的 **Display Name**。
+4、在 Application metadata 部分中，选择 **Manually type your metadata values** 选项：
 
-### AWS SSO 元数据 <a href="#aws-sso-metadata" id="aws-sso-metadata"></a>
+{% embed url="https://bitwarden.com/assets/3pa6K0UVEXEpjR7BQmeZzv/da5b1f5f1141e8f05088251d00c3fd35/IAMIDENTITY6_copy.png?w=1200&fm=avif" %}
 
-您需要此部分中的信息，以进行后续的配置步骤。复制 **AWS SSO sign-in URL** 和 **AWS SSO issuer URL**，然后下载 **AWS SSO certificate**：
+在该部分中，配置以下字段：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3Bw1LUH9z4rcYhMW705GLg/6a3dda29baac8451740be8d39e553c37/aws-values.png?fm=webp&h=342&q=50&w=885" %}
-AWS SSO 元数据
-{% endembed %}
+| 字段                        | 描述                                                                                                                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Application ACS URL       | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
+| Application SAML audience | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>         |
 
-### 应用程序属性 <a href="#application-properties" id="application-properties"></a>
-
-在 **Application start URL** 字段中，指定用户将从其访问 Bitwarden 的登录 URL。对于托管云的客户，此地址始终为 `https://vault.bitwarden.com/#/sso`。对于自托管实例，这取决于您[配置的服务器 URL](../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain)，例如为 `https://your.domain/#/sso`。
-
-### 应用程序元数据 <a href="#application-metadata" id="application-metadata"></a>
-
-在应用程序元数据部分中，选择此选项以手动输入元数据的值：
-
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3pa6K0UVEXEpjR7BQmeZzv/1b4eec5d43c1c3c6a1813e74e2d2eca5/aws-metadata.png?fm=webp&h=239&q=50&w=1029" %}
-输入元数据值
-{% endembed %}
-
-配置以下字段：
-
-| 字段                        | 描述                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Application ACS URL       | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。</p><p></p><p>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2/your-org-id/Acs</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2/your-org-id/Acs</code>。</p> |
-| Application SAML audience | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>SP Entity ID</strong>。</p><p></p><p>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2</code>。</p>                                                         |
-
-完成后，选择 **Save changes**。
+配置完成后，选择 **Submit**。
 
 ### 属性映射 <a href="#attribute-mappings" id="attribute-mappings"></a>
 
-导航到 **Attribute mappings** 选项卡然后配置如下映射：
+创建应用程序后，从 **Application assignments** → **Applications** 界面再次打开它。使用 **Actions** 下拉菜单 **Edit attribute mappings**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5UQnkRhZglhfpsxgQMFEgK/9bf44344e254a5d188e65d707397057b/aws-attr.png?fm=webp&h=533&q=50&w=1265" %}
-属性映射
+{% embed url="https://bitwarden.com/assets/5UQnkRhZglhfpsxgQMFEgK/b71db32cd454b59f22b6dae143332982/IAMIDENTITY7.png?w=1200&fm=avif" %}
+**Edit attribute mappings**
 {% endembed %}
 
-| 应用程序中的用户属性 | 映射到 AWS SSO 中的此字符串值或用户属性 | 格式           |
-| ---------- | ------------------------ | ------------ |
-| Subject    | `${user:email}`          | emailAddress |
-| email      | `${user:email}`          | emailAddress |
+配置以下映射然后 **Save changes**：
+
+| 应用程序中的用户属性 | 映射到 IAM Identity Center 中的此字符串值或用户属性 | 格式           |
+| ---------- | ------------------------------------ | ------------ |
+| Subject    | `${user:email}`                      | emailAddress |
+| email      | `${user:email}`                      | emailAddress |
 
 ### 分配用户 <a href="#assigned-users" id="assigned-users"></a>
 
-导航到 **Assigned users** 选项卡并选择 **Assign users** 按钮：
+在您的应用程序中，向下滚动到 Assigned users and groups 部分，然后选择 **Assign users and groups** 按钮：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5IRbGNxLqP4W1Ym703pkV3/3fe10a03861961740865509f6c06e542/aws-assign.png?fm=webp&h=391&q=50&w=1265" %}
-分配用户
+{% embed url="https://bitwarden.com/assets/5IRbGNxLqP4W1Ym703pkV3/31697ee57260a7136dae65ddf19209d9/IAMIDENTITY9.png?w=1200&fm=avif" %}
+Assign users and groups
 {% endembed %}
 
-您可以单独或按群组将用户分配给应用程序。
+将用户和群组分配给应用程序。
 
-## 回到网页密码库 <a href="#back-to-the-web-vault" id="back-to-the-web-vault"></a>
+## 返回网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
 
-至此，你已经在 AWS 控制台范围内配置好了你所需要的一切。回到 Bitwarden 网页密码库来完成配置。
+至此，您已经在 AWS 控制台范围内配置好了您所需要的一切。请返回 Bitwarden 网页 App 完成配置。
 
 单点登录界面将配置分为两个部分：
 
 * **SAML 服务提供程序配置**将决定 SAML 请求的格式。
 * **SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
-
-
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
@@ -126,48 +116,46 @@ AWS SSO 元数据
 | Name ID Format                     | 将其设为 **Email Address**。                                                                    |
 | Outbound Signing Algorithm         | Bitwarden 用于签名 SAML 请求的算法。                                                                 |
 | Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                          |
-| Minimum Incoming Signing Algorithm | 默认，AWS SSO 将使用 SHA-256 签名。除非您进行了更改，否则请从下拉列表中选择 `sha256`。                                   |
+| Minimum Incoming Signing Algorithm | 默认，IAM Identity Center 将使用 SHA-256 签名。除非您进行了更改，否则请从下拉菜单中选择 `sha256`。                       |
 | Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。                                                                 |
 | Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。 |
 
-完成服务提供程序配置部分后，**Save**（保存）您的工作。
+完成服务提供程序配置部分后，**保存**您的工作。
 
 ### 身份提供程序配置 <a href="#identity-provider-configuration" id="identity-provider-configuration"></a>
 
 身份提供程序配置通常需要你返回 AWS 控制台以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                                   |
-| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                                 | 输入从 AWS 控制台的 [AWS SSO metadata](https://bitwarden.com/help/article/saml-aws/#aws-sso-metadata) 部分获取到的 **AWS SSO issuer URL**。                                                                                        |
-| Binding Type                              | 设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                                    |
-| Single Sign On Service URL                | 输入从 AWS 控制台的 [AWS SSO metadata](https://bitwarden.com/help/article/saml-aws/#aws-sso-metadata) 部分获取到的 **AWS SSO sign-in URL**。                                                                                       |
-| Single Log Out Service URL                | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发，但是您可以将其预先配置为 **AWS SSO sign-out URL**，从 AWS 控制台的 [AWS SSO metadata](https://bitwarden.com/help/article/saml-aws/#aws-sso-metadata) 部分获取。                                            |
-| Artifact Resolution Service URL           | 对于 AWS 实施，您可以将此字段保留为空。                                                                                                                                                                                               |
-| X509 Public Certificate                   | <p>黏贴<a href="aws-saml-implementation.md#aws-sso-metadata">已下载的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 默认，AWS SSO 将使用 SHA-256 签名。除非您进行了更改，否则请从下拉列表中选择 `sha256`。                                                                                                                                                             |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                 |
-| Disable Outbound Logout Requests          | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                    |
-| Want Authentication Requests Signed       | AWS SSO 是否要求 SAML 请求被签名。                                                                                                                                                                                             |
+| 字段                                  | 描述                                                                                                                                                                  |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                           | 输入从 AWS 控制台中您的应用程序的 IAM Identity Center metadata 部分获取到的 IAM Identity Center **issuer URL**。该字段区分大小写。                                                                |
+| Binding Type                        | 设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                   |
+| Single Sign On Service URL          | 输入从 AWS 控制台中您的应用程序的 IAM Identity Center metadata 部分获取到的 IAM Identity Center **sign-in URL**。                                                                        |
+| Single Log Out Service URL          | SSO 登录当前**不支持** SLO。该选项计划未来开发，但是您可以将其预先配置为从 AWS 控制台中您的应用程序的 IAM Identity Center metadata 部分获取到的 IAM Identity Center **sign-out URL**。                               |
+| X509 Public Certificate             | <p>黏贴已下载的证书，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm          | 默认，IAM Identity Center 将使用 SHA-256 签名。除非您进行了更改，否则请从下拉菜单中选择 `sha256`。                                                                                                |
+| Disable Outbound Logout Requests    | SSO 登录当前**不支持** SLO。该选项计划未来开发。                                                                                                                                      |
+| Want Authentication Requests Signed | IAM Identity Center 是否要求 SAML 请求被签名。                                                                                                                                |
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
 {% endhint %}
 
-完成身份提供程序配置部分后，**Save**（保存）您的工作。
+完成身份提供程序配置部分后，**保存**您的工作。
 
 {% hint style="success" %}
-您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织政策。[了解更多](../../oversight-visibility/enterprise-policies.md)。
+您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织策略。[了解更多](../../oversight-visibility/enterprise-policies.md)。
 {% endhint %}
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**使用单点登录**按钮来进行测试：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3BdlHeogd42LEoG06qROyQ/c68021df4bf45d72e9d37b1fbf5a6040/login.png?w=517&fm=avif" %}
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 IAM Identity Center 登录界面：
+输入[已配置的组织标识符](generic-saml.md#step-1-set-an-organization-identifier)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 IAM Identity Center 登录界面：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/4zu0GVni1vyxMB0TayruvF/923cfdd3b641eb877bdf425e13d0ee5e/aws-login.png?fm=webp&h=544&q=50&w=375" %}
 AWS 登录界面

@@ -6,7 +6,7 @@
 
 > **\[译者注]**：从版本 2025.3.0 开始，之前的「域名验证」(Domain verification) 已改名为「声明域名」(Claimed domains)
 
-企业客户可通过有效的 Bitwarden 专属 DNS TXT 记录为其组织声明域名（如 `mycompany.com`）的所有权。声明域名后，您的组织将获得对具有匹配的电子邮箱地址的账户的额外控制权限：
+企业客户可通过有效的 Bitwarden 专属 DNS TXT 记录为其组织声明域名（例如 `mycompany.com`）的所有权。声明域名后，您的组织将获得对具有匹配的电子邮箱地址的账户的额外控制权限：
 
 * **阻止未经授权创建账户的策略**：[启用此策略](../enterprise-policies.md#block-account-creation-for-claimed-domains)可阻止具有与域名匹配的电子邮箱账户（例如 `jdoe@mycompany.com`）在组织外部创建 Bitwarden 账户。此策略启用后，具有与域名匹配的电子邮箱账户只能通过受邀加入组织的方式创建 Bitwarden 账户。
 * **声明成员账户**：使用与域名匹配的电子邮箱地址（如 `jdoe@mycompany.com`）入职的组织成员账户将自动[被组织声明](claimed-accounts.md)，会限制用户进行某些账户操作，并允许管理员直接[删除账户](../../manage-members/revoke-remove/delete-member-accounts.md)，而不是仅将其从组织中移除。
@@ -27,7 +27,7 @@ Bitwarden 将使用 DNS TXT 记录来验证域名声明。该 DNS TXT 记录必�
 
 要声明域名，请以[管理员或所有者](../../manage-members/member-roles.md#member-roles)身份完成以下步骤：：
 
-1、登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+1、登录 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
 产品切换器
@@ -76,7 +76,7 @@ dig your.domain.com TXT
 使用域名右侧的 **≡** 菜单以：
 
 * 编辑或删除域名。
-* **复制 DNS TXT 记录**以将其提供给您的 DNS 提程序。
+* **复制 DNS TXT 记录**以将其提供给您的 DNS 提供商。
 * 如果自动声明不成功，可以手动**验证域名**。
 
 {% hint style="danger" %}
@@ -89,9 +89,9 @@ Bitwarden 将在前 72 小时内尝试声明域名 3 次。如果该域名在第
 
 您的域名被声明和验证后，您的组织就可以获得以下访问权限：
 
-### 为已声明的域名阻止账户创建 <a href="#block-account-creation-for-claimed-domains" id="block-account-creation-for-claimed-domains"></a>
+### 阻止使用已声明的域名创建账户 <a href="#block-account-creation-for-claimed-domains" id="block-account-creation-for-claimed-domains"></a>
 
-启用[此策略](../enterprise-policies.md#block-account-creation-for-claimed-domains)可阻止域名匹配的电子邮箱账户（例如 `jdoe@mycompany.com`）在组织外部创建 Bitwarden 账户。启用此策略后，域名匹配的电子邮箱账只能通过受邀加入组织的方式创建 Bitwarden 账户。
+启用[此策略](../enterprise-policies.md#block-account-creation-for-claimed-domains)可阻止域名匹配的电子邮箱账户（例如 `jdoe@mycompany.com`）在组织外部创建 Bitwarden 账户。启用此策略后，域名匹配的电子邮箱账户只能通过受邀加入组织的方式创建 Bitwarden 账户。
 
 ### 声明成员账户 <a href="#claimed-member-accounts" id="claimed-member-accounts"></a>
 
@@ -120,7 +120,6 @@ Directory Connector 和 SCIM 无法删除已声明账户，只有管理员和所
 成员账户用户将受到以下限制：
 
 * 将他们的账户电子邮箱地址更改为其他域名（成员仍可更改电子邮箱地址中的用户名部分）。
-* 离开组织。
+* 退出组织。
 * 清空他们的密码库。
 * 删除他们的账户。
-

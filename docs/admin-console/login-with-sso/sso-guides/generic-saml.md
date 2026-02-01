@@ -30,7 +30,7 @@
 
 拥有 SSO 标识符后，您就可以继续启用和配置您的集成了。要启用 SSO 登录：
 
-1、在 **设置** → **单点登录** 视图中，勾选**允许 SSO 身份验证**复选框：
+1、在 **设置** → **单点登录**视图中，勾选**允许 SSO 身份验证**复选框：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/20720mRAluo6crSdTiYJrn/1175889d7f6ab42fe7614f34cdd1dcdd/2024-12-04_09-41-15.png?_a=DAJCwlWIZAAB" %}
 SAML 2.0 配置
@@ -62,8 +62,6 @@ SAML 2.0 配置
 | OneLogin     | [OneLogin 实施指南](onelogin-saml-implementation.md)         |
 | PingFederate | [PingFederate 实施指南](pingfederate-saml-implementation.md) |
 
-### 配置参考资料 <a href="#configuration-reference-materials" id="configuration-reference-materials"></a>
-
 以下部分将定义在单点登录配置界面的字段，其与您要集成的 IdP 无关。必须配置的字段将被标记（**必填**）。
 
 {% hint style="success" %}
@@ -75,7 +73,7 @@ SAML 2.0 配置
 * &#x20;**SAML 服务提供程序配置**将确定 SAML 请求的格式。
 * &#x20;**SAML 身份提供程序配置**将确定 SAML 响应的预期格式。
 
-#### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
+### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
 | 字段                                   | 描述                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -89,7 +87,7 @@ SAML 2.0 配置
 | Want Assertions Signed               | 如果 Bitwarden 期望来自 IdP 的响应被签名，请选中此复选框。                                                                                                                                                                                                                                                                                                                                                              |
 | Validate Certificates                | 当使用来自你的 IdP 的通过受信任的 CA 颁发的受信任和有效的证书时，请选中此复选框。自签名证书可能会失败，除非在 Bitwarden SSO 登录 docker 镜像中配置了正确的信任链。                                                                                                                                                                                                                                                                                                  |
 
-#### 身份提供程序配置 <a href="#identity-provider-configuration" id="identity-provider-configuration"></a>
+### 身份提供程序配置 <a href="#identity-provider-configuration" id="identity-provider-configuration"></a>
 
 | 字段                                        | 描述                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -108,7 +106,7 @@ SAML 2.0 配置
 填写 X509 证书时，请注意到期日期。 证书必须更新，以防止向 SSO 最终用户提供的服务中断。如果证书过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
 {% endhint %}
 
-#### SAML 属性和声明 <a href="#saml-attributes-and-claims" id="saml-attributes-and-claims"></a>
+### SAML 属性 & 声明 <a href="#saml-attributes-and-claims" id="saml-attributes-and-claims"></a>
 
 **账户布建要求一个电子邮箱地址**，它可以作为下表中的任何属性或声明被传递。
 

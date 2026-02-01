@@ -20,10 +20,10 @@ Cloudflare Zero Trust 是一个基于云的代理身份和访问管理平台，�
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
 {% hint style="info" %}
-Cloudflare 仅支持通过访问应用网关的 SAML。这意味着必须在 Bitwarden 配置中选择 SAML 2.0。OIDC 身份验证仍可通过 IdP 和 Cloudflare 进行配置。
+Cloudflare 仅支持通过访问应用网关的 SAML。这意味着必须在 Bitwarden 配置中选择 **SAML 2.0**。OIDC 身份验证仍可通过 IdP 和 Cloudflare 进行配置。
 {% endhint %}
 
-登录到 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJAUVWIZAAB" %}
 产品切换器
@@ -126,19 +126,19 @@ Cloufflare Zero Trust 应用程序策略
 | **Access Entity ID or Issuer** | <p>访问实体 ID 或发行者是 SaaS 应用程序的唯一标识符。</p><p></p><p>该值将被输入到 Bitwarden 的<strong>实体 ID</strong> 字段中。</p>    |
 | **Public key**                 | <p>公钥是用于验证您身份的访问公共证书。</p><p></p><p>该值将输入到 Bitwarden 的 <strong>X509 公共证书</strong>字段中。</p>             |
 
-9、将值输入 Bitwarden 后，在 Bitwarden 单点登录屏幕上选择**保存**，然后在 Cloudflare 页面上选择**完成**以保存应用程序。
+9、将值输入 Bitwarden 后，在 Bitwarden 单点登录界面上选择**保存**，然后在 Cloudflare 页面上选择**完成**以保存此应用程序。
 
 10、要在 Bitwarden 使用 SSO 登录页面创建书签，请选择**添加应用程序** → **书签**。检查书签是否在**应用程序启动器**中可见。
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**使用单点登录**按钮来进行测试：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3BdlHeogd42LEoG06qROyQ/c68021df4bf45d72e9d37b1fbf5a6040/login.png?w=517&fm=avif" %}
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Cloudflare Access 界面，您可以在其中选择登录要使用的 IDP：
+输入[已配置的组织标识符](generic-saml.md#step-1-set-an-organization-identifier)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Cloudflare Access 界面，您可以在其中选择登录要使用的 IDP：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5SyHu8lc0ZJqjpL4hF53ie/b0d661e6772b58f681c47b7b01ebbaa0/Screen_Shot_2022-10-12_at_5.15.39_PM__2_.png?_a=DAJCwlWIZAAB" %}
 Cloudflare IdP 选择

@@ -4,12 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/policies/)
 {% endhint %}
 
-## 什么是企业策略？ <a href="#what-are-enterprise-policies" id="what-are-enterprise-policies"></a>
-
 企业策略允许企业组织为所有成员强制实施安全规则和默认设置，例如强制使用两步登录。
 
 {% hint style="danger" %}
-Bitwarden 强烈建议在邀请用户加入您的组织之前先设置好企业策略。某些策略会在启用时撤销不符合要求的用户，而某些策略无法追溯性地执行。
+我们强烈建议在邀请用户加入您的组织之前先设置好企业策略。某些策略会在启用时撤销不符合要求的用户，而某些策略无法追溯性地执行。
 {% endhint %}
 
 ## 设置企业策略 <a href="#setting-enterprise-policies" id="setting-enterprise-policies"></a>
@@ -246,7 +244,7 @@ Bitwarden 强烈建议在邀请用户加入您的组织之前先设置好企业�
 
 启用**使用 SSO 自动登录**策略，将允许在访问身份提供程序提供的非 SSO App 时自动填充并提交登录表单。要启用此设置：
 
-1、要启用**使用 SSO 自动登录**策略，请选中**启用**复选框，并输入**身份提供程序主机** URL。URL 应包含 `protocol://domain`。
+1、要启用**使用 SSO 自动登录**策略，请选中**启用**复选框，并输入**身份提供程序主机** URL。此 URL 应包含 `protocol://domain`。
 
 {% embed url="https://bitwarden.com/assets/2qHW4T4CDwpQJmPK6oDDn8/e25f021aa609e6072ffa664ae757ea7f/2025-11-19_09-34-16.png?w=543&fm=avif" %}
 为允许的应用程序自动登录用户
@@ -261,13 +259,13 @@ Microsoft App 示例
 3、保存应用程序后，用户可以从 IdP 面板上选择应用程序，然后 Bitwarden 将自动填充并登录应用程序。
 
 {% hint style="info" %}
-**使用 SSO 自动登录**将根据用户当前在 Bitwarden 浏览器扩展上的活动账户自动填充数据。此外，自动填充的数据将是用户最近使用的与目标应用程序 URL 相关联的凭据。
+使用 SSO 自动登录将根据用户当前在 Bitwarden 浏览器扩展上的活动账户自动填充数据。此外，自动填充的数据将是用户最近使用的与目标应用程序 URL 相关联的凭据。
 {% endhint %}
 
-### 阻止已声明域名的账户创建 <a href="#block-account-creation-for-claimed-domains" id="block-account-creation-for-claimed-domains"></a>
+### 阻止使用已声明的域名创建账户 <a href="#block-account-creation-for-claimed-domains" id="block-account-creation-for-claimed-domains"></a>
 
 {% hint style="info" %}
 在激活此策略之前，必须先[声明域名](claimed-domains/claimed-domains.md)。
 {% endhint %}
 
-启用**阻止已声明域名的账户创建**策略，可以阻止具有与您[已声明的域名](claimed-domains/claimed-domains.md)匹配的电子邮箱地址的人员在组织外部创建 Bitwarden 账户。启用此策略后，与您已声明的域名匹配的电子邮箱地址只能通过受邀加入您的组织的方式或[使用 SSO 进行 JIT 配置](../login-with-sso/jit-provisioning.md)的方式创建 Bitwarden 账户。
+启用**阻止使用已声明的域名创建账户**策略，可以阻止具有与您[已声明的域名](claimed-domains/claimed-domains.md)匹配的电子邮箱地址的人员在组织外部创建 Bitwarden 账户。启用此策略后，与您已声明的域名匹配的电子邮箱地址只能通过受邀加入您的组织的方式或[使用 SSO 进行 JIT 配置](../login-with-sso/jit-provisioning.md)的方式创建 Bitwarden 账户。

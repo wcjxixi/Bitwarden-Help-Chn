@@ -93,9 +93,9 @@ IdP 详细信息
 
 **Save** 您的更改。
 
-## 回到网页密码库 <a href="#back-to-the-web-vault" id="back-to-the-web-vault"></a>
+## 返回网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
 
-至此，您已经在 Google Workspace 管理控制台中配置了所需的一切。回到 Bitwarden 网页密码库来完成配置。
+至此，您已经在 Google Workspace 管理控制台中配置好了您所需要的一切。请返回 Bitwarden 网页 App 完成配置。
 
 单点登录界面将配置分为两个部分：
 
@@ -115,7 +115,7 @@ IdP 详细信息
 | Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。默认，Workspace SAML 应用程序将签名 SAML 声明，因此请选中此框。                       |
 | Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。 |
 
-完成服务提供程序配置部分后，**Save**（保存）您的工作。
+完成服务提供程序配置部分后，**保存**您的工作。
 
 ### 身份提供程序配置 <a href="#identity-provider-configuration" id="identity-provider-configuration"></a>
 
@@ -134,7 +134,7 @@ IdP 详细信息
 | Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                                      |
 | Want Authentication Requests Signed       | Google Workspace 是否要求 SAML 请求被签名。                                                                                                                                                                                                       |
 
-完成身份提供程序配置部分后，**Save**（保存）您的工作。
+完成身份提供程序配置部分后，**保存**您的工作。
 
 {% hint style="success" %}
 您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织政策。[了解更多](../../oversight-visibility/enterprise-policies.md)。
@@ -142,13 +142,13 @@ IdP 详细信息
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**企业单点登录**按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**使用单点登录**按钮来进行测试：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BdlHeogd42LEoG06qROyQ/cab8e66d8745059e73c02739d9d2d744/2024-12-02_10-28-02.png?_a=DAJAUVWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/3BdlHeogd42LEoG06qROyQ/c68021df4bf45d72e9d37b1fbf5a6040/login.png?w=517&fm=avif" %}
 登录选项界面
 {% endembed %}
 
-输入[已配置的组织标识符](generic-saml.md#step-1-enabling-login-with-sso)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Google Workspace 的登录界面：
+输入[已配置的组织标识符](generic-saml.md#step-1-set-an-organization-identifier)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Google Workspace 的登录界面：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1hJ5ERnbj5UA7QriG0UPTb/95f36b9cb7573b1a966fe1331bf02fcd/g-login.png?fm=webp&h=524&q=50&w=484" %}
 Google 登录界面

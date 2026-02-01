@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/microsoft-sentinel-siem/)
 {% endhint %}
 
-Microsoft Sentinel 是一个安全信息和事件管理 (SIEM) 平台，可用于监控 Bitwarden 组织。企业可使用 Microsoft Sentinel 上的 Bitwarden Event Logs App 监控[事件](../event-logging/event-logs.md)活动。
+Microsoft Sentinel 是一个安全信息和事件管理 (SIEM) 平台，可用于监控 Bitwarden 组织。组织可使用 Microsoft Sentinel 上的 Bitwarden Event Logs App 监控[事件](../event-logging/event-logs.md)活动。
 
 ## 设置 <a href="#setup" id="setup"></a>
 
@@ -34,7 +34,7 @@ Bitwarden 事件日志市场 App
 Microsoft Sentinel Bitwarden 事件日志 App
 {% endembed %}
 
-2、保持该界面打开，在另一个标签页上登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+2、保持该界面打开，在另一个标签页上登录 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
 产品切换器
@@ -46,14 +46,14 @@ Microsoft Sentinel Bitwarden 事件日志 App
 组织 API 信息
 {% endembed %}
 
-4、返回 Microsoft Sentinel 选项卡。在配**置**页面上，填写以下字段：
+4、返回 Microsoft Sentinel 选项卡。在**配置**页面上，填写以下字段：
 
-| 字段                     | 值                                                                                                                                                                                                                                                               |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bitwarden Identity URL | <p>对于 Bitwarden 云用户，默认的 URL 为 <code>https://identity.bitwarden.com</code> 或 <code>https://identity.bitwarden.eu</code>。</p><p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。例如 <code>https://&#x3C;self-hosted-url>/identity</code>。确保 URL 尾部不包含任何尾随的正斜杠「<code>/</code>」。</p> |
-| Bitwarden API URL      | <p>对于 Bitwarden 云用户，默认的 URL 为 <code>https://api.bitwarden.com</code> or <code>https://api.bitwarden.eu</code>。</p><p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。例如 <code>https://&#x3C;self-hosted-url>/api</code>。确保 URL 尾部不包含任何尾随的正斜杠「<code>/</code>」。</p>               |
-| Client ID              | 输入从 Bitwarden 组织 API 密钥窗口获取的 `client_id` 的值。                                                                                                                                                                                                                    |
-| Client Secret          | 输入从 Bitwarden 组织 API 密钥窗口获取的  `client_secret` 的值。                                                                                                                                                                                                               |
+| 字段                     | 值                                                                                                                                                                                                                                                                      |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Bitwarden Identity URL | <p>对于 Bitwarden 云用户，默认的 URL 为 <code>https://identity.bitwarden.com</code> 或 <code>https://identity.bitwarden.eu</code>。</p><p></p><p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。例如 <code>https://&#x3C;self-hosted-url>/identity</code>。确保 URL 尾部不包含任何尾随的正斜杠「<code>/</code>」。</p> |
+| Bitwarden API URL      | <p>对于 Bitwarden 云用户，默认的 URL 为 <code>https://api.bitwarden.com</code> or <code>https://api.bitwarden.eu</code>。</p><p></p><p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。例如 <code>https://&#x3C;self-hosted-url>/api</code>。确保 URL 尾部不包含任何尾随的正斜杠「<code>/</code>」。</p>               |
+| Client ID              | 输入从 Bitwarden 组织 API 密钥窗口获取的 `client_id` 的值。                                                                                                                                                                                                                           |
+| Client Secret          | 输入从 Bitwarden 组织 API 密钥窗口获取的  `client_secret` 的值。                                                                                                                                                                                                                      |
 
 5、完成必填字段后，选择**连接**。
 

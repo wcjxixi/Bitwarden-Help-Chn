@@ -90,7 +90,7 @@ SIEM 事件监控平台提供了很多特定的字段，这些字段用于监控
 
 ### 关键的项目活动 <a href="#critical-item-activities" id="critical-item-activities"></a>
 
-* 已识别为关键的项目变更
+* 已识别为关键的项目的变更
   * `1101` 编辑了项目 `item-identifier`
   * `1105` 将项目 `item-identifier` 移动至组织
   * `1106` 编辑了项目 `item-identifier` 的集合
@@ -103,4 +103,3 @@ SIEM 事件监控平台提供了很多特定的字段，这些字段用于监控
   * `1113` 复制了项目 `item-identifier` 的安全码
   * `1114` 自动填充了项目 `item-identifier`
   * `1117` 查看了项目 `item-identifier` 的卡号
-

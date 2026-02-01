@@ -28,7 +28,7 @@ Elastic 是一种可提供搜索和可观察性选项的解决方案，用于监
 Bitwarden Elastic 集成
 {% endembed %}
 
-3、选择 **Add Bitwarden** 以安装此集成。
+3、选择 **Add Bitwarden** 按钮以安装此集成。
 
 4、如果这是您第一次运行 Elastic 集成，则需要安装 Elastic Agent。在以下界面上，选择 **Install Elastic Agent** 然后按照安装说明进行操作。
 
@@ -50,7 +50,7 @@ Elastic 设置
 产品切换器
 {% endembed %}
 
-打开您的组织，导航至您的组织的**设置** → **组织信息** → **查看 API 密钥**。系统会要求您重新输入主密码，以访问 API 密钥信息。
+导航到组织的**设置** → **组织信息**界面，然后选择**查看 API 密钥**按钮。系统会要求您重新输入主密码，以访问 API 密钥信息。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6gHjAyqgeqDj6UPT6agsBK/3a614e043cb3836a41bd68f226835e53/2024-12-04_09-51-07.png?_a=DAJCwlWIZAAB" %}
 组织 API 信息
@@ -58,11 +58,11 @@ Elastic 设置
 
 在相应字段中输入以下信息：
 
-| Elastic 字段    | 值                                                                                                                                                  |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| URL           | <p>对于 Bitwarden 云用户，默认 URL 为 <code>https://api.bitwarden.com</code>。</p><p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。确保 URL 末尾不包含任何尾部正斜杠「<code>/</code>」</p> |
-| Client ID     | 输入从 Bitwarden 组织 API 密钥窗口获取的 `client_id` 值。                                                                                                        |
-| Client Secret | 输入从 Bitwarden 组织 API 密钥窗口获取的 `client_secret` 值。                                                                                                    |
+| Elastic 字段    | 值                                                                                                                                                         |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| URL           | <p>对于 Bitwarden 云用户，默认 URL 为 <code>https://api.bitwarden.com</code>。</p><p></p><p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。确保 URL 末尾不包含任何尾部正斜杠「<code>/</code>」</p> |
+| Client ID     | 输入从 Bitwarden 组织 API 密钥窗口获取的 `client_id` 值。                                                                                                               |
+| Client Secret | 输入从 Bitwarden 组织 API 密钥窗口获取的 `client_secret` 值。                                                                                                           |
 
 {% hint style="info" %}
 您的组织 API 密钥信息是敏感数据。不要在不安全的位置共享这些值。
