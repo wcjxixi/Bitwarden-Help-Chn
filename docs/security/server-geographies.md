@@ -43,14 +43,13 @@ Bitwarden 数据区域是独立的，您的账户或组织只存在于其最初�
 自托管 Bitwarden 组织或个人高级方案需要首先在云服务器上启动订阅，然后[上传许可证文件](../self-hosting/licensing-on-premise.md)到您的自托管实例。如果您在 EU 服务器上创建订阅，请将以下[环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)添加到服务器的 `./bwdata/env/global.override.env` 文件中，以确保与正确的服务器通信：
 
 ```systemd
-globalSettings__baseServiceUri__cloudRegion=EU
 globalSettings__installation__identityUri=https://identity.bitwarden.eu
 globalSettings__installation__apiUri=https://api.bitwarden.eu
 globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 ```
 
 {% hint style="info" %}
-`globalSettings__baseServiceUri__cloudRegion` 的值必须与您获取[安装 ID 和密钥](https://bitwarden.com/host/)时选择的数据区域一致。
+在继续之前，请确保您的配置与您获取[安装 ID 和密钥](https://bitwarden.com/host/)时选择的数据区域正确关联，如上所述。
 {% endhint %}
 
 ## 迁移到另一个云 <a href="#migrate-to-another-cloud" id="migrate-to-another-cloud"></a>

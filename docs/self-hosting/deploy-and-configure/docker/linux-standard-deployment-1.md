@@ -9,14 +9,14 @@
 {% hint style="danger" %}
 **手动安装仅适合高级用户使用。**&#x4EC5;当您非常熟悉 Docker 技术，并且希望对您的 Bitwarden 安装进行更多控制时才可以进行此操作。
 
-手动安装缺乏自动更新 Bitwarden 安装所需的某些依赖项的能力。当你将 Bitwarden 从一个版本升级到下一个版本时，你将负责修改所需的环境变量，修改 nginx 的 `default.conf`，修改 `docker-compose.yml` 等等。
+手动安装缺乏自动更新 Bitwarden 安装所需的某些依赖项的能力。当您将 Bitwarden 从一个版本升级到下一个版本时，您将负责修改所需的环境变量，修改 nginx 的 `default.conf`，修改 `docker-compose.yml` 等等。
 
-我们会尽量在 [GitHub 上的发行说明](https://github.com/bitwarden/server/releases)中强调这些。你也可以在 GitHub 上监控 Bitwarden 安装脚本所使用的[依赖模板](https://github.com/bitwarden/server/tree/master/util/Setup/Templates)的更改。
+我们会尽量在 [GitHub 上的发行说明](https://github.com/bitwarden/server/releases)中强调这些。您也可以在 GitHub 上监控 Bitwarden 安装脚本所使用的[依赖模板](https://github.com/bitwarden/server/tree/master/util/Setup/Templates)的更改。
 {% endhint %}
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
 <mark style="color:red;">**ª**</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
 
@@ -26,9 +26,7 @@
 
 ### 创建 Bitwarden 本地用户和目录 <a href="#create-bitwarden-local-user-and-directory" id="create-bitwarden-local-user-and-directory"></a>
 
-Bitwarden 建议在您的 Linux 服务器上配置一个专用的 `bitwarden` 服务账户，用来安装和运行 Bitwarden。这样做可以将您的 Bitwarden 实例与服务器上运行的其他应用程序隔离开来。
-
-**这些步骤是 Bitwarden 推荐的最佳实践，但不是必须的**。更多信息，请参阅 Docker 的[用于 Linux 的后安装步骤](https://docs.docker.com/engine/install/linux-postinstall/)文档。
+Bitwarden 建议在您的 Linux 服务器上配置一个专用的 `bitwarden` 服务账户，用来安装和运行 Bitwarden。这样做可以将您的 Bitwarden 实例与服务器上运行的其他应用程序隔离开来。更多信息，请参阅 Docker 的[用于 Linux 的后安装步骤](https://docs.docker.com/engine/install/linux-postinstall/)文档。
 
 1、创建 bitwarden 用户：
 
@@ -75,22 +73,22 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 ### 下载和配置 <a href="#download-and-configure" id="download-and-configure"></a>
 
 {% hint style="danger" %}
-如果[已创建 Bitwarden 用户和目录](linux-standard-deployment-1.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。 **请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题。
+如果您[已创建 Bitwarden 用户和目录](linux-standard-deployment-1.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。 **请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题。
 {% endhint %}
 
 要下载 Bitwarden 并配置 Bitwarden 服务器资产：
 
-1、从 [GitHub 上的发行页面](https://github.com/bitwarden/server/releases)下载 Bitwarden 依赖项的存档版本 (`docker-stub.zip`)。例如：
+1、从 [GitHub 上的发行页面](https://github.com/bitwarden/server/releases)下载 Bitwarden 依赖项的存档版本 `docker-stub-US.zip`（或 `docker-stub-EU.zip`）。例如：
 
 ```shell
 curl -L https://github.com/bitwarden/server/releases/download/v<version_number>/docker-stub.zip \
- -o docker-stub.zip
+ -o docker-stub-US.zip
 ```
 
-2、创建一个名为 `bwdata` 的新目录，并将 `docker-stub.zip` 解压到其中，例如：
+2、创建一个名为 `bwdata` 的新目录，并将 `docker-stub-US.zip` 解压到其中，例如：
 
 ```shell
-unzip docker-stub.zip -d bwdata
+unzip docker-stub-US.zip -d bwdata
 ```
 
 解压缩后，`bwdata` 目录需要与 `./docker/docker-compose.yml` 文件的映射卷所期望的目录相匹配。如果您愿意，您也可以更改这些映射在主机上的位置。
@@ -126,21 +124,19 @@ openssl pkcs12 -export -out ./identity/identity.pfx -inkey identity.key -in iden
 
 在上述命令中，将 `IDENTITY_CERT_PASSWORD` 替换为在**步骤 3** 中创建和使用的证书密码。
 
-5、将 `identity.pfx` 复制到 `./bwdata/ssl` 目录。
-
-6、在 `./bwdata/ssl` 中创建一个以您的域名命名的子目录，例如：
+5、在 `./bwdata/ssl` 中创建一个以您的域名命名的子目录，例如：
 
 ```shell
 mkdir ./ssl/bitwarden.example.com
 ```
 
-7、在新创建的 `./bwdata/ssl/bitwarden.example.com` 子目录中提供受信任的 SSL 证书和私钥。
+6、在新创建的 `./bwdata/ssl/bitwarden.example.com` 子目录中提供受信任的 SSL 证书和私钥。
 
 {% hint style="info" %}
 此目录映射到 NGINX 容器的 `/etc/ssl` 目录。如果您无法提供受信任的 SSL 证书，请在安装前使用代理，以为 Bitwarden 客户端应用程序提供一个 HTTPS 端点。
 {% endhint %}
 
-8、在 `./bwdata/nginx/default.conf` 中：
+7、在 `./bwdata/nginx/default.conf` 中：
 
 1. 将所有实例 `bitwarden.example.com` 替换为您的域名，包括 `Content-Security-Policy` 标头。
 2. 将 `ssl_certificate` 和 `ssl_certificate_key` 变量设置为**步骤 7** 中提供的证书和私钥的路径。
@@ -148,11 +144,11 @@ mkdir ./ssl/bitwarden.example.com
    * 如果您使用受信任的 SSL 证书，请将 `ssl_trusted_certificate` 变量设置为证书的路径。
    * 如果您使用自签名证书，请注释掉 `ssl_trusted_certificate` 变量。
 
-9、在 `./bwdata/env/mssql.override.env` 中，将 `RANDOM_DATABASE_PASSWORD` 替换为在**步骤 3** 中创建的密码。
+8、在 `./bwdata/env/mssql.override.env` 中，将 `RANDOM_DATABASE_PASSWORD` 替换为在**步骤 3** 中创建的密码。
 
-10、在 `./bwdata/web/app-id.json` 中，将 `bitwarden.example.com` 替换为您的域名。
+9、在 `./bwdata/web/app-id.json` 中，将 `bitwarden.example.com` 替换为您的域名。
 
-11、在 `./bwdata/env/uid.env` 中，设置您[之前创建的](linux-standard-deployment-1.md#create-bitwarden-local-user-and-directory) `bitwarden` 用户和组的 UID 和 GID，以便容器在它们下面运行，例如：
+10、在 `./bwdata/env/uid.env` 中，设置您[之前创建的](linux-standard-deployment-1.md#create-bitwarden-local-user-and-directory) `bitwarden` 用户和组的 UID 和 GID，以便容器在它们下面运行，例如：
 
 ```shell
 LOCAL_UID=1001
@@ -173,7 +169,7 @@ docker-compose -f ./docker/docker-compose.yml up -d
 docker ps
 ```
 
-<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/e_vectorize/q_auto/f_svg/v1/ctf/7rncvj1f8mw7/3Sq7MaJZ1jaEJUCW44wmwj/0671877450882e4c9f3a8d614bafd734/docker-healthy.png?_a=DAJCwlWIZAAB" alt=""><figcaption><p>显示健康容器的列表</p></figcaption></figure>
+{% embed url="https://bitwarden.com/assets/3Sq7MaJZ1jaEJUCW44wmwj/008be5ee5e43c20c8c840e71617e57eb/2025-05-05_15-34-44.png?w=1200&fm=avif" %}
 
 恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
 
@@ -185,8 +181,8 @@ docker ps
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
-2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
+* 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
+* 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
 
 ## 更新您的服务器 <a href="#update-your-server" id="update-your-server"></a>
 

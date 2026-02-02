@@ -18,16 +18,16 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
 <mark style="color:red;">**ª**</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
 
 另外，请确保满足以下要求：
 
-* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发行页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub.zip` 或 `docker-stub-EU.zip` 文件，并已将该文件传输到您的服务器。
+* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发行页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub-US.zip` 或 `docker-stub-EU.zip` 文件，并已将该文件传输到您的服务器。
 * 离线 SMTP 服务器已在您的环境中设置并处于活动状态。
 
-运行您的 Bitwarden 部署的服务器不需要允许出站流量访问网络外部的任何地址，但客户端应用程序必须配置为访问服务器的完全限定域名 (FQDN)，默认情况下使用端口 80 和 443。在安装过程中，您可以选择使用不同的端口，但无论选择哪个端口，都必须开放这些端口以供客户端访问。
+运行您的 Bitwarden 部署的服务器不需要允许出站流量访问网络外部的任何地址，但客户端应用程序必须配置为访问服务器的完全限定域名 (FQDN)，默认情况下使用端口 `80` 和 `443`。在安装过程中，您可以选择使用不同的端口，但无论选择哪个端口，都必须开放这些端口以供客户端访问。
 
 > **\[译者注]**：[FQDN](https://zh.wikipedia.org/wiki/%E5%AE%8C%E6%95%B4%E7%B6%B2%E5%9F%9F%E5%90%8D%E7%A8%B1)：即完全限定域名 (Fully Qualified Domain Name)，是互联网上用于标识特定主机或服务器的完整域名。它由主机名和域名组成，确保在全球范围内唯一地定位到一个网络资源。FQDN 从最具体的部分（主机名）到最一般的部分（顶级域名）依次排列，各部分之间用点（.）分隔。
 >
@@ -47,9 +47,7 @@
 
 ### 创建 Bitwarden 本地用户和目录 <a href="#create-bitwarden-local-user-and-directory" id="create-bitwarden-local-user-and-directory"></a>
 
-我们建议在您的 Linux 服务器上配置一个专用的 `bitwarden` 服务账户，用来安装和运行 Bitwarden。这样做可以将您的 Bitwarden 实例与服务器上运行的其他应用程序隔离开来。
-
-**这些步骤是 Bitwarden 推荐的最佳实践，但不是必须的**。更多信息，请参阅 Docker 的[用于 Linux 的后安装步骤](https://docs.docker.com/engine/install/linux-postinstall/)文档。
+我们建议在您的 Linux 服务器上配置一个专用的 `bitwarden` 服务账户，用来安装和运行 Bitwarden。这样做可以将您的 Bitwarden 实例与服务器上运行的其他应用程序隔离开来。更多信息，请参阅 Docker 的[用于 Linux 的后安装步骤](https://docs.docker.com/engine/install/linux-postinstall/)文档。
 
 1、创建 bitwarden 用户：
 
@@ -96,15 +94,15 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 ### 配置您的机器 <a href="#configure-your-machine" id="configure-your-machine"></a>
 
 {% hint style="danger" %}
-如果[已创建 Bitwarden 用户和目录](linux-offline-deployment.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。 **请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题
+如果您[已创建 Bitwarden 用户和目录](linux-offline-deployment.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。 **请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题
 {% endhint %}
 
 要使用 Bitwarden 服务器所需的资产配置您的机器：
 
-1、创建一个名为 `bwdata` 的新目录，并将 `docker-stub.zip` 解压到其中，例如：
+1、创建一个名为 `bwdata` 的新目录，并将 `docker-stub-US.zip`（或 `docker-stub-EU.zip`）解压到其中，例如：
 
 ```shell
-unzip docker-stub.zip -d bwdata
+unzip docker-stub-US.zip -d bwdata
 ```
 
 解压缩后，`bwdata` 目录需要与 `./docker/docker-compose.yml` 文件的映射卷所期望的目录相匹配。如果您愿意，您也可以更改这些映射在主机上的位置。
@@ -175,12 +173,16 @@ LOCAL_GID=1001
 
 要获取 docker 镜像以在离线机器上使用：
 
-1、从已连接互联网的机器上，下载如 `docker-stub.zip` 中的 `docker-compose.yml` 文件中所列的所有 `bitwarden/xxx:latest` docker 镜像，。
+1、从已连接互联网的机器上，下载如 `docker-stub.zip` 中的 `docker-compose.yml` 文件中所列的所有 `ghcr.io/bitwarden/image_name:latest` docker 镜像，例如：
+
+```shellscript
+docker image pull ghcr.io/bitwarden/mssql:latest
+```
 
 2、将每一个镜像保存为 `.img` 文件，例如：
 
 ```bash
-docker image save -o mssql.img bitwarden/mssql:version
+docker image save -o mssql.img ghcr.io/bitwarden/mssql:latest
 ```
 
 3、将所有 `.img` 文件传输到您的离线计机器上。
@@ -205,7 +207,7 @@ docker-compose -f ./docker/docker-compose.yml up -d
 docker ps
 ```
 
-<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/e_vectorize/q_auto/f_svg/v1/ctf/7rncvj1f8mw7/3Sq7MaJZ1jaEJUCW44wmwj/0671877450882e4c9f3a8d614bafd734/docker-healthy.png?_a=DAJCwlWIZAAB" alt=""><figcaption><p>显示健康容器的列表</p></figcaption></figure>
+{% embed url="https://bitwarden.com/assets/3Sq7MaJZ1jaEJUCW44wmwj/008be5ee5e43c20c8c840e71617e57eb/2025-05-05_15-34-44.png?w=1200&fm=avif" %}
 
 恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
 
@@ -213,8 +215,8 @@ docker ps
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
-2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
+* 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
+* 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
 
 ## 更新您的服务器 <a href="#update-your-server" id="update-your-server"></a>
 

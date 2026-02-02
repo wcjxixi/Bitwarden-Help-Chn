@@ -8,17 +8,17 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
 <mark style="color:red;">**ª**</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。
+
+标准自托管服务器部署默认附带 **MSSQL Express** 镜像，但您可以选择使用[外部数据库](../configuration-options/connect-to-an-external-mssql-database.md)。默认数据库的[最大关系数据库大小](https://learn.microsoft.com/zh-cn/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17#scale-limits)为 10GB，不需要额外的许可。
 
 {% hint style="success" %}
 如果您正在寻找价格实惠的优质供应商，我们推荐 DigitalOcean。[立即开始](https://marketplace.digitalocean.com/apps/bitwarden)或阅读我们[在 DigitalOcean 上的关于 Bitwarden 的博客文章](https://bitwarden.com/blog/digitalocean-marketplace/)。
 {% endhint %}
 
-## TL;DR <a href="#tl-dr" id="tl-dr"></a>
-
-> **\[译者注]**：TL;DL - Too long; Don't read，直译为「太长，请不要看」，实际意思为「此文篇幅较长，看此总结」，一般用在比较长篇幅的内容前面，后面跟着一段简短的总结内容。
+## 概述 <a href="#overview" id="overview"></a>
 
 以下是本文中[安装步骤](linux-standard-deployment.md#installation-procedure)的摘要。本节中的链接将跳转至详细的**安装步骤**部分：
 
@@ -26,7 +26,7 @@
 
 2、在您的主机上[**安装 Docker 和 Docker Compose**](linux-standard-deployment.md#install-docker-and-docker-compose)。
 
-3、[**创建一个 Bitwarden 用户和目录**](linux-standard-deployment.md#create-bitwarden-local-user-and-directory)。
+3、[**创建 Bitwarden 用户和目录**](linux-standard-deployment.md#create-bitwarden-local-user-and-directory)。
 
 4、从 [**https://bitwarden.com/host**](https://bitwarden.com/host) 获取安装 ID 和密钥用于安装过程。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)。
 
@@ -46,25 +46,25 @@
 
 ## 安装步骤 <a href="#installation-procedure" id="installation-procedure"></a>
 
+{% hint style="info" %}
+Bitwarden 要求在整个部署过程中始终使用 HTTP 或 HTTPS。混合使用协议（例如，代理服务器使用 HTTPS，内部使用 HTTP）会导致连接、身份验证和同步错误。我们建议在生产环境中使用 HTTPS，仅在测试环境中使用 HTTP。
+{% endhint %}
+
 ### 配置您的域名 <a href="#configure-your-domain" id="configure-your-domain"></a>
 
-默认情况下，Bitwarden 通过本地主机上的 80（`http`）和 443（`https`）端口提供服务。您应该打开这些端口，以便可以从网络内部和/或外部访问 Bitwarden。如果您愿意，也可以在安装过程中选择使用其他端口。
+默认情况下，Bitwarden 通过本地主机上的 80 (`http`) 和 443 (`https`) 端口提供服务。您应该打开这些端口，以便可以从网络内部和/或外部访问 Bitwarden。如果您愿意，也可以在安装过程中选择使用其他端口。
 
-我们建议配置一个带 DNS 记录的域名（例如，`bitwarden.example.com`）指向您的托管主机，特别是当您通过互联网提供 Bitwarden 服务时。
+我们建议配置一个带 DNS 记录的域名（例如 `bitwarden.example.com`）指向您的托管主机，特别是当您通过互联网提供 Bitwarden 服务时。
 
 ### 安装 Docker 和 Docker Compose <a href="#install-docker-and-docker-compose" id="install-docker-and-docker-compose"></a>
 
-使用一组 [Docker 容器](https://docs.docker.com/get-started/)在您的机器上部署和运行 Bitwarden。Bitwarden 可以使用任何 Docker 版本或计划运行。评估哪个版本最适合你的安装。
-
-容器的部署是通过 [Docker Compose](https://docs.docker.com/compose/) 来协调的。下载 Docker Engine 时，Docker Compose 会作为插件自动安装。
+使用一组 [Docker 容器](https://docs.docker.com/get-started/)在您的机器上部署和运行 Bitwarden。Bitwarden 可以使用任何 Docker 版本或计划运行。评估哪个版本最适合你的安装。容器的部署是通过 [Docker Compose](https://docs.docker.com/compose/) 来协调的。下载 Docker Engine 时，Docker Compose 会作为插件自动安装。
 
 [下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
 
 ### 创建 Bitwarden 本地用户和目录 <a href="#create-bitwarden-local-user-and-directory" id="create-bitwarden-local-user-and-directory"></a>
 
-Bitwarden 建议在您的 Linux 服务器上配置一个专用的 `bitwarden` 服务账户，用来安装和运行 Bitwarden。这样做可以将您的 Bitwarden 实例与服务器上运行的其他应用程序隔离开来。
-
-**这些步骤是 Bitwarden 推荐的最佳实践，但不是必须的**。更多信息，请参阅 Docker 的[用于 Linux 的后安装步骤](https://docs.docker.com/engine/install/linux-postinstall/)文档。
+Bitwarden 建议在您的 Linux 服务器上配置一个专用的 `bitwarden` 服务账户，用来安装和运行 Bitwarden。这样做可以将您的 Bitwarden 实例与服务器上运行的其他应用程序隔离开来。更多信息，请参阅 Docker 的[用于 Linux 的后安装步骤](https://docs.docker.com/engine/install/linux-postinstall/)文档。
 
 1、创建 bitwarden 用户：
 
@@ -78,7 +78,7 @@ sudo adduser bitwarden
 sudo passwd bitwarden
 ```
 
-3、创建 docker 组（如果它不存在）：
+3、创建 docker 组（如果它尚不存在）：
 
 ```shell
 sudo groupadd docker
@@ -111,12 +111,12 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 ### 安装 Bitwarden <a href="#install-bitwarden" id="install-bitwarden"></a>
 
 {% hint style="danger" %}
-如果[已创建 Bitwarden 用户和目录](linux-standard-deployment.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。 **请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题。
+如果您[已创建 Bitwarden 用户和目录](linux-standard-deployment.md#create-bitwarden-local-user-and-directory)，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。 **请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题。
 {% endhint %}
 
-Bitwarden 提供了一个 Shell 脚本，可以轻松地在 Linux 和 macOS（Bash）或 Windows（PowerShell）上安装。完成以下步骤以使用 shell 脚本安装 Bitwarden：
+Bitwarden 提供了一个 Shell 脚本，可以轻松地在 Linux 和 macOS（Bash）或 Windows（PowerShell）上安装。完成以下步骤以使用 Shell 脚本安装 Bitwarden：
 
-1、将 Bitwarden 安装脚本（`bitwarden.sh`）下载到您主机上：
+1、将 Bitwarden 安装脚本 (`bitwarden.sh`) 下载到您主机上：
 
 ```shell
 curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platform=linux" && chmod 700 bitwarden.sh
@@ -144,11 +144,11 @@ curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platfor
 * **Enter your region (US/EU)（输入您的区域 (US/EU)）：**\
   输入 US 或 EU，具体取决于您将用于许可付费功能的[云端服务器](../../../security/server-geographies.md)，仅适用于您将自托管账户或组织连接到付费订阅的情况。
 *   **Do you have a SSL certificate to use? (y/n)（您拥有自己的 SSL 证书吗？）:**\
-    如果您已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `/.bwdata/ssl/your.domain` 目录下。您会被问到是否使用受信任的 SSL 证书（y/n）。更多信息，请参阅[证书选项](../configuration-options/certificate-options.md)。
+    （仅当选择 `n` 时才会显示 **Do you want to use Let's Encrypt to generate a free SSL certificate?**）如果您已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `/.bwdata/ssl/your.domain` 目录下。您会被问到是否使用受信任的 SSL 证书 (y/n)。更多信息，请参阅[证书选项](../configuration-options/certificate-options.md)。
 
     或者，指定 `n` 并使用 **self-signed SSL certificate?** 选项，这只是为了测试目的而推荐的。
 *   **Do you want to generate a self-signed SSL certificate? (y/n)（您想生成一个自签名证书吗？）:**\
-    指定 `y` 让 Bitwarden 为您生成一个自签名证书。这个选项只推荐用于测试。更多信息，请参阅[证书选项](../configuration-options/certificate-options.md)。
+    （仅当选择 `n` 时才会显示 **Do you have a SSL certificate to use?**）指定 `y` 让 Bitwarden 为您生成一个自签名证书。这个选项只推荐用于测试。更多信息，请参阅[证书选项](../configuration-options/certificate-options.md)。
 
     如果您指定 `n`，您的实例将不使用 SSL 证书，您需要使用前置 HTTPS 代理来安装，否则 Bitwarden 应用程序将无法正常运行。
 
@@ -208,9 +208,7 @@ Bitwarden 安装脚本使用 `./bwdata/config.yml` 中的设置来生成必要�
 docker ps
 ```
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3Sq7MaJZ1jaEJUCW44wmwj/0671877450882e4c9f3a8d614bafd734/docker-healthy.png?fm=webp&h=232&q=50&w=1567" %}
-显示健康容器的列表
-{% endembed %}
+{% embed url="https://bitwarden.com/assets/3Sq7MaJZ1jaEJUCW44wmwj/008be5ee5e43c20c8c840e71617e57eb/2025-05-05_15-34-44.png?w=1200&fm=avif" %}
 
 恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
 
@@ -232,5 +230,5 @@ PowerShell 用户将以前缀`-`（开关）运行命令。例如`.\bitwarden.ps
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
-2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
+* 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
+* 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。

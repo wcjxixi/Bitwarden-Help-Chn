@@ -8,7 +8,7 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th width="177.46326865053078"></th><th width="240.55465526874184">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>6GB RAM</td><td>8+GB RAM</td></tr><tr><td>存储</td><td>76GB</td><td>90GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ and Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ and Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
+<table><thead><tr><th width="177.46326865053078"></th><th width="240.55465526874184">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>6GB RAM</td><td>8+GB RAM</td></tr><tr><td>存储</td><td>76GB</td><td>90GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
 <mark style="color:red;">**ª**</mark> - Docker Compose 可以通过 Docker Desktop 安装，其中包含 Engine 和 Compose。
 
@@ -17,7 +17,7 @@
 在 Windows 服务器上运行 Bitwarden **需要使用嵌套虚拟化**。请检查您的管理程序的文档以了解是否支持嵌套虚拟化以及如何启用它。
 
 {% hint style="success" %}
-如果您将 Windows Server 作为 Azure VM 运行，我们建议**使用运行 Windows Server 2022 的标准 D2s v3 虚拟机**，它满足所有[系统要求](windows-standard-deployment.md#system-specifications)，包括对嵌套虚拟化的支持。
+如果您将 Windows Server 作为 Azure VM 运行，我们建议使用**运行 Windows Server 2022 的标准 D2s v3 虚拟机**，它满足所有[系统要求](windows-standard-deployment.md#system-specifications)，包括对嵌套虚拟化的支持。您还需要选择**安全类型：标准**，而不是默认的**受信任启动虚拟机**。
 {% endhint %}
 
 ## TL;DR <a href="#tl-dr" id="tl-dr"></a>
@@ -30,7 +30,7 @@
 
 2、在您的机器上[**安装和设置桌面版 Docker**](windows-standard-deployment.md#setup-docker-desktop)。
 
-3、[**创建一个 Bitwarden 用户和目录**](windows-standard-deployment.md#create-bitwarden-local-user-and-directory)以完成安装。
+3、[**创建 Bitwarden 用户和目录**](windows-standard-deployment.md#create-bitwarden-local-user-and-directory)。
 
 4、从 [**https://bitwarden.com/host**](https://bitwarden.com/host) 获取安装 ID 和密钥用于安装过程。
 
@@ -58,7 +58,7 @@
 
 ### 配置您的域名 <a href="#configure-your-domain" id="configure-your-domain"></a>
 
-默认情况下，Bitwarden 通过本地主机上的 80（http）和 443（https）端口提供服务。您应该打开这些端口，以便可以从网络内部和/或外部访问 Bitwarden。如果你愿意，也可以在安装过程中选择使用其他端口。
+默认情况下，Bitwarden 通过本地主机上的 80 (`http`) 和 443 (`https`) 端口提供服务。您应该打开这些端口，以便可以从网络内部和/或外部访问 Bitwarden。如果你愿意，也可以在安装过程中选择使用其他端口。
 
 {% hint style="success" %}
 **如果您使用的是 Windows 防火墙**，Windows 版 Docker Desktop 不会自动在 Windows 防火墙中为自己添加例外。为 TCP 端口 80 和 443（或选择的替代端口）添加例外以防止出现一些错误。
@@ -72,7 +72,7 @@ Bitwarden 将使用一系列 [Docker 容器](https://docs.docker.com/get-started
 
 容器部署使用 Docker Compose 进行编排。Docker Compose 可以通过 Docker Desktop 安装，其中包含 Engine 和 Compose。
 
-在此次设置过程中，您必须**取消选择** **Use WSL2 instead of Hyper-V (recommended)** 选项。安装后，打开 Docker Desktop 并选择 **⚙️Settings**，然后选择 **Resources**。Bitwarden 至少需要分配 4GB RAM 给 Docker Desktop。此设置将 Windows 的 RAM 专用于 Docker。因此，设置此值过高可能会导致 Windows 不稳定。
+在此次设置过程中，您必须**取消选择** **Use WSL2 instead of Hyper-V (recommended)** 选项。安装后，打开 Docker Desktop 然后选择 **⚙️Settings**，然后选择 **Resources**。Bitwarden 至少需要分配 4GB RAM 给 Docker Desktop。此设置将 Windows 的 RAM 专用于 Docker。因此，设置此值过高可能会导致 Windows 不稳定。
 
 ### 创建 Bitwarden 本地用户和目录 <a href="#create-bitwarden-local-user-and-directory" id="create-bitwarden-local-user-and-directory"></a>
 
@@ -88,7 +88,7 @@ PS C:\> $Password = Read-Host -AsSecureString
 New-LocalUser "Bitwarden" -Password $Password -Description "Bitwarden Local Admin"
 ```
 
-作为新创建的用户，在 C:\ 下创建一个 Bitwarden 文件夹：
+作为新创建的用户，在 `C:\` 下创建一个 Bitwarden 文件夹：
 
 ```powershell
 PS C:\> mkdir Bitwarden
@@ -104,7 +104,7 @@ Bitwarden 用户必须添加到 docker-users 组中。请参阅 [Docker 文档](
 
 ### 安装 Bitwarden <a href="#install-bitwarden" id="install-bitwarden"></a>
 
-Bitwarden 提供了一个 Powershell Cmdlet 文件（`.ps1`），以便在 Windows 机器上轻松安装。完成以下步骤以使用 Cmdlet 安装 Bitwarden：
+Bitwarden 提供了一个 Powershell Cmdlet 文件 (`.ps1`)，以便在 Windows 机器上轻松安装。完成以下步骤以使用 Cmdlet 安装 Bitwarden：
 
 {% hint style="success" %}
 如果您[已经创建 Bitwarden 用户和目录](windows-standard-deployment.md#create-bitwarden-local-user-and-directory)，请以 `Bitwarden` 用户身份完成以下操作。
@@ -116,7 +116,7 @@ Bitwarden 提供了一个 Powershell Cmdlet 文件（`.ps1`），以便在 Windo
 cd C:\Bitwarden
 ```
 
-2、运行以下命令下载 Bitwarden 安装脚本（`bitwarden.ps1`）：
+2、运行以下命令下载 Bitwarden 安装脚本 (`bitwarden.ps1`)：
 
 ```powershell
 Invoke-RestMethod -OutFile bitwarden.ps1 -Uri "https://func.bitwarden.com/api/dl/?app=self-host&platform=windows"
@@ -154,9 +154,9 @@ Invoke-RestMethod -OutFile bitwarden.ps1 -Uri "https://func.bitwarden.com/api/dl
 
 ### 安装后配置 <a href="#post-install-configuration" id="post-install-configuration"></a>
 
-配置您的环境可能涉及对两个文件进行更改：一个环境变量文件和一个安装文件：
+配置您的环境可能涉及对两个文件进行更改：一个[环境变量文件](windows-standard-deployment.md#environment-variables-required)和一个[安装文件](windows-standard-deployment.md#installation-file)：
 
-#### 环境变量（_必须_） <a href="#environment-variables-required" id="environment-variables-required"></a>
+#### 环境变量（必须） <a href="#environment-variables-required" id="environment-variables-required"></a>
 
 `bitwarden.ps1` Cmdlet 未配置 Bitwarden 的某些功能。通过编辑位于 `./bwdata/env/global.override.env` 的环境文件来配置这些设置。至少，您应该替换以下值：
 
@@ -222,8 +222,8 @@ docker ps
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
-2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
+* 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
+* 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
 
 ## 在启动时启动 Docker <a href="#start-docker-on-boot" id="start-docker-on-boot"></a>
 
@@ -247,7 +247,7 @@ Docker Desktop 在启动后可能需要长达 15 分钟才能启动完成并可�
 
 4、选择**操作**选项卡并新建如下的操作：
 
-* 在程序或脚本输入栏中，指定 `“C:\Program Files\Docker\Docker\Docker Desktop.exe”`。
+* 在程序或脚本输入栏中，指定 `"C:\Program Files\Docker\Docker\frontend\Docker Desktop.exe"`。
 
 5、选择**确定**完成定时任务的创建。
 

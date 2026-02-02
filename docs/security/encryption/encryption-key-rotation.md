@@ -16,21 +16,17 @@
 
 在轮换之前，您应该采取以下措施以防止数据丢失或损坏：
 
-#### 重新创建账户的加密导出 <a href="#re-create-any-account-backup-exports" id="re-create-any-account-backup-exports"></a>
+### 重新创建账户的加密导出 <a href="#re-create-any-account-backup-exports" id="re-create-any-account-backup-exports"></a>
 
 如果您使用[加密导出](../../password-manager/import-and-export/encrypted-exports.md)来存储长期的安全备份，您应该立即使用新的加密密钥重新创建密码库数据的加密导出。
 
 加密导出使用您的加密密钥来加密**以及解密**您的密码库数据，这意味着，经过轮换的加密密钥将无法解密使用「陈旧」（轮换前）的密钥创建的导出。
 
-#### 注销客户端应用程序 <a href="#log-out-of-client-applications" id="log-out-of-client-applications"></a>
+### 注销客户端应用程序 <a href="#log-out-of-client-applications" id="log-out-of-client-applications"></a>
 
 轮换加密密钥后，我们建议您注销 Bitwarden 客户端应用程序（桌面 App、浏览器扩展、移动 App 等）上的任何已登录会话。以这种方式注销客户端 App 将关闭使用「陈旧」（轮换前）加密密钥的会话。然后，像往常一样重新登录将使用新的加密密钥。
 
 **在使用「陈旧」加密密钥的会话中进行更改将导致数据损坏，从而使您的数据无法恢复。**
-
-{% hint style="danger" %}
-我们建议在轮换您的账户加密密钥之前创建密码库备份。要了解有关密码库导出以及包含哪些项目的更多信息，请参阅[导出密码库数据](../../password-manager/import-and-export/export-vault-data.md)。
-{% endhint %}
 
 ## 如何轮换加密密钥 <a href="#how-to-rotate-your-encryption-key" id="how-to-rotate-your-encryption-key"></a>
 

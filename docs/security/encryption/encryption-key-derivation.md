@@ -65,4 +65,4 @@ KDF 内存值高于 64 MiB 的 Argon2id 用户每次启动 iOS 自动填充或�
 
 ### HKDF
 
-HKDF 是基于 HMAC 的密钥派生函数 (KDF)，在 RFC 5869 中进行了规范，在业界广泛使用，并由 NIST 在 SP 800-56 中推荐。 Bitwarden 使用 HKDF 从非密码材料（例如其他密钥或加密随机生成的材料）中派生加密密钥。
+HKDF 是基于 HMAC 的密钥派生函数 (KDF)，在 [RFC 5869](https://datatracker.ietf.org/doc/html/rfc5869) 中进行了规范，在业界广泛使用，并由 NIST 在 [SP 800-56](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Cr2.pdf) 中推荐。 Bitwarden 使用 HKDF 从非密码类材料（例如其他密钥或加密随机生成的材料）中派生加密密钥。

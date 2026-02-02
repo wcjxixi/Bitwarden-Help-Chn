@@ -40,7 +40,7 @@ Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。Bitwarden �
 * Linux
   * 标准安装版：`~/.config/Bitwarden`
   * Flatpak：`~/.var/app/com.bitwarden.desktop/`
-  * Snap 版：`~/snap/bitwarden/current/.config/Bitwarden`
+  * Snap：`~/snap/bitwarden/current/.config/Bitwarden`
 
 {% hint style="success" %}
 您可以通过将 `BITWARDEN_APPDATA_DIR` 环境变量值设置为绝对路径来覆盖 Bitwarden 桌面 App 数据的存储位置。

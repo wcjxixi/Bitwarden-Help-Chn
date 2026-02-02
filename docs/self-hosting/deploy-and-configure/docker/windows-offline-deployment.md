@@ -18,14 +18,17 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
 <mark style="color:red;">**ª**</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[为 Engine 和 Compose 安装 Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)。
 
+在此设置过程中，您必须**取消选择** **Use WSL2 instead of Hyper-V (recommended)** 选项。
+
 另外，请确保满足以下要求：
 
-* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发行页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub.zip` 或 `docker-stub-EU.zip` 文件，并已将该文件传输到您的服务器。
+* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发行页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub-US.zip` 或 `docker-stub-EU.zip` 文件，并已将该文件传输到您的服务器。
 * 离线 SMTP 服务器已在您的环境中设置并处于活动状态。
+* （**可选**）OpenSSL Windows 二进制文件已安装并可以在您的服务器上使用。如果您愿意，可以使用自签名证书代替 OpenSSL。
 
 运行您的 Bitwarden 部署的服务器不需要允许出站流量访问网络外部的任何地址，但客户端应用程序必须配置为访问服务器的完全限定域名 (FQDN)，默认情况下使用端口 80 和 443。在安装过程中，您可以选择使用不同的端口，但无论选择哪个端口，都必须开放这些端口以供客户端访问。
 
@@ -42,7 +45,7 @@
 在 Windows 服务器上运行 Bitwarden 需要使用嵌套虚拟化。请检查您的  Hypervisor 文档以了解是否支持嵌套虚拟化以及如何启用它。
 
 {% hint style="success" %}
-如果您将 Windows Server 作为 Azure VM 运行，我们建议使用**运行 Windows Server 2019 Gen2 的标准 D2s v3 虚拟机**，它满足所有[系统规格要求](windows-offline-deployment.md#system-specifications)，包括对嵌套虚拟化的支持。
+如果您将 Windows Server 作为 Azure VM 运行，我们建议使用**运行 Windows Server 2022 的标准 D2s v3 虚拟机**，它满足所有[系统要求](windows-offline-deployment.md#system-specifications)，包括对嵌套虚拟化的支持。您还需要选择**安全类型：标准**，而不是默认的**受信任启动虚拟机**。
 {% endhint %}
 
 ## 安装步骤 <a href="#installation-procedure" id="installation-procedure"></a>
@@ -51,7 +54,7 @@
 
 默认情况下，Bitwarden 通过主机上的 80 (`http`) 和 443 (`https`) 端口提供服务。打开这些端口，以便可以从网络内部和/或外部访问 Bitwarden。您也可以在安装过程中选择不同的端口。
 
-{% hint style="info" %}
+{% hint style="success" %}
 **如果您使用的是 Windows 防火墙**，则 Docker Desktop for Windows 不会自动在 Windows 防火墙中为其自己添加例外。为 TCP 端口 80 和 443（或选择的备用端口）添加例外以避免相关错误。
 {% endhint %}
 
@@ -127,7 +130,7 @@ openssl pkcs12 -export -out ./identity/identity.pfx -inkey identity.key -in iden
 
 5、将 `identity.pfx` 复制到 `.\bwdata\ssl` 目录。
 
-6、在 `.\bwdata\ssl` 中创建一个以您的域命名的子目录。
+6、在 `.\bwdata\ssl` 中创建一个以您的域名命名的子目录。
 
 7、在新创建的 `.\bwdata\ssl\bitwarden.example.com` 子目录中提供受信任的 SSL 证书和私钥。
 

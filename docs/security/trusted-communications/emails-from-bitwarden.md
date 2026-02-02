@@ -15,28 +15,28 @@
 诸如新设备警报、[加入组织](../../admin-console/manage-members/user-management.md)的邀请、请求访问机密管理器，以及[两步登录代码](../../account/two-step-login/setup-two-step-login/two-step-login-via-email.md)之类的电子邮件将来自 `no-reply@bitwarden.com` 或 `no-reply@bitwarden.eu`，或者，如果您是自托管，则来自[已配置的域名](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#install-bitwarden)，例如 `no-reply@my.domain.com`。
 
 {% hint style="info" %}
-自 2024.9.2 起，电子邮件验证请求在创建账户时发送给云端用户，也是从 `no-reply@bitwarden.com` 发出的：
+自版本 2024.9.2 起，电子邮件验证请求在创建账户时发送给云端用户，也是从 `no-reply@bitwarden.com` 发出的：
 
 <img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2QR4MYirRuYyMJnkx5ce6e/858d2d1fc23440e31ce87a8ff6efa4f5/2024-09-26_10-01-00.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
 {% endhint %}
 
 这些电子邮件**永远不会包含附件**。如果系统提示您下载文件，请向我们报告该电子邮件。
 
-其中一些电子邮件（例如组织邀请）将包含按钮。在**单击超链接之前**，请务必总是检查此超链接的合法性，确认它指向 `https://vault.bitwarden.com`、您或您组织的自托管域名。如果您不知道您组织的域名，请询问您的 IT 团队成员或管理员。
+其中一些电子邮件（例如组织邀请）将包含按钮。在**单击超链接之前**，请务必总是检查此超链接的合法性，确认它指向 `https://vault.bitwarden.com` 或您组织的自托管域名。如果您不知道您组织的域名，请询问您的 IT 团队成员或管理员。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4Fe96NuWb7yRe6muKf7UbZ/58e2ece3acfe37eaffa4bc55611eb414/Screen_Shot_2023-04-28_at_10.40.35_AM.png?_a=DAJCwlWIZAAB" %}
-邀请加入
+{% embed url="https://bitwarden.com/assets/4Fe96NuWb7yRe6muKf7UbZ/bcb1a8df0bc2ffdecbcd86b82d16c9a3/2025-09-03_10-41-25.png?w=711&fm=avif" %}
+组织邀请
 {% endembed %}
 
 ### 付款电子邮件 <a href="#payments-emails" id="payments-emails"></a>
 
-个人高级订阅和付费组织订阅的自动付款电子邮件将来自 `invoice+statements@bitwarden.com` 地址。
+个人高级版订阅和付费组织版订阅的自动付款电子邮件将来自 `invoice+statements@bitwarden.com` 地址。
 
 这些电子邮件**将包含**附件，具体是 PDF 发票和收据。
 
 ### 续费电子邮件 <a href="#renewals-emails" id="renewals-emails"></a>
 
-对于即将到期的 Bitwarden 订阅，付费用户将收到电子邮件提醒即将续费。这些电子邮件将来自 `no-reply@bitwarden.com` 或 `no-reply@bitwarden.eu` 和 `upcoming-invoice@bitwarden.com` 两个地址。
+对于即将到期的 Bitwarden 订阅，付费用户将收到电子邮件提醒即将续费。这些电子邮件将来自 `no-reply@bitwarden.com` 或 `no-reply@bitwarden.eu` 和 `upcoming-invoice@bitwarden.com` 地址。
 
 ## 交互式电子邮件 <a href="#opt-in-emails" id="opt-in-emails"></a>
 
@@ -44,8 +44,8 @@
 
 * 支持请求：`support@bitwarden.com`
 * 产品公告：`productupdates@bitwarden.com`
-* 试用信息：`trial@bitwarden.com`
-* 营销活动：`marketing@bitwarden.com`
+* 试用信息：`trial@bitwarden.com`&#x20;
+* 营销活动：`marketing@bitwarden.com` 和 `care@bitwarden.com`。
 * 来自 Bitwarden 团队成员的电子邮件：`@bitwarden.com`&#x20;
 
 ## 警告电子邮件 <a href="#alert-emails" id="alert-emails"></a>
@@ -63,7 +63,7 @@ Bitwarden 会对可疑活动（如从未知设备登录和从未知设备尝试�
 如果您的账户从未知设备成功登录，您将收到一封包含登录信息的电子邮件。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BPGGp6Wvm3NzDopPbkkj2/b8ff436931e2791d366dda3ea8ed078e/Screenshot_2023-03-29_at_4.05.28_PM.png?_a=DAJCwlWIZAAB" %}
-从未知设备登录
+从未知设备登录电子邮件
 {% endembed %}
 
 电子邮件内容包含：
@@ -89,7 +89,7 @@ Bitwarden 会对可疑活动（如从未知设备登录和从未知设备尝试�
 如果检测到错误的两步登录尝试，例如输入了错误的 TOTP 代码，您将收到一封电子邮件通知您：
 
 {% embed url="https://bitwarden.com/assets/7oGzZ6B0WTuRKeKu7DBmAE/8a7b4517cab6b76fd474e05171be5fba/2025-08-28_11-07-13.png?w=626&fm=avif&q=80" %}
-失败的登录尝试
+失败的登录尝试电子邮件
 {% endembed %}
 
 如果尝试的人是您，您可以放心地忽略这条信息。如果尝试的人**不是您**，则应立即[更改主密码](../../account/log-in-and-unlock/your-master-password.md#change-your-master-password)。

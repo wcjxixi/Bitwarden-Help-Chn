@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/external-db/)
 {% endhint %}
 
-默认情况下，Bitwarden 的自托管实例将使用作为[安装设置](../docker/linux-standard-deployment.md)的正常部分而创建的 Microsoft SQL Server（MSSQL）数据库，但您也可以将 Bi​​twarden 配置为使用外部 MSSQL 数据库。
+默认情况下，Bitwarden 的自托管实例将使用作为[安装设置](../docker/linux-standard-deployment.md)的正常部分而创建的 Microsoft SQL Server (MSSQL) 数据库，但您也可以将 Bi​​twarden 配置为使用外部 MSSQL 数据库。
 
 {% hint style="info" %}
 Bitwarden **仅支持并推荐 SQL Server 2022**。了解 [Windows](https://learn.microsoft.com/zh-cn/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server-2022?view=sql-server-ver17) 和 [Linux](https://learn.microsoft.com/zh-cn/sql/linux/sql-server-linux-setup?view=sql-server-ver16#supported-platforms) 上 SQL Server 的系统要求。

@@ -116,7 +116,7 @@
 {% endtab %}
 
 {% tab title="云端到云端" %}
-要从一个 Bitwarden 云端服务器迁移到另一个 Bitwarden 云端服务器，例如，从美国服务器迁移到欧盟服务器：
+要从一个 Bitwarden 云端服务器迁移到另一个 Bitwarden 云端服务器，例如，从 [US 服务器迁移到 EU 服务器](../../security/server-geographies.md)：
 
 1、[导出您的组织密码库](../../password-manager/import-and-export/export-vault-data.md#export-an-organization-vault)，然后指导所有组织成员[导出他们的个人密码库](../../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。
 
@@ -124,13 +124,13 @@
 单独下载密码库项目的任何文件附件，并注明它们属于哪个项目。
 {% endhint %}
 
-2、在所需区域创建一个新的 Bitwarden 账户，并开始试用组织。Bitwarden 支持人员会将您的订阅迁移到新的地区（见**步骤 4**）。
+2、在所需区域创建一个新的 Bitwarden 账户，并开始试用组织。Bitwarden 支持人员会将您的订阅迁移到新的区域（见**步骤 4**）。
 
-3、建立新组织，配置企业策略、SSO 登录、构建群组收-集合关系以及使用目录连接器或 SCIM 邀请用户等。如需帮助，请参阅[概念验证清单](../../admin-console/more/proof-of-concept-project-checklist.md)。
+3、设置您的新组织，配置企业策略、SSO 登录、构建群组收-集合关系以及使用目录连接器或 SCIM 邀请用户等。如需帮助，请参阅[概念验证清单](../../admin-console/more/proof-of-concept-project-checklist.md)。
 
-4、[联系 Bitwarden 支持](https://bitwarden.com/contact/)，将您的新组织从试用期中移出，并在新区域恢复您订阅。&#x20;
+4、[联系 Bitwarden 支持](https://bitwarden.com/contact/)，将您的新组织从试用期中移出，并在新区域恢复您的订阅。&#x20;
 
-5、导入在**步骤 1** 中获得的组织保密码库数据，并指导组织成员也导入他们的个人密码库。
+5、导入在**步骤 1** 中获得的组织密码库数据，并指导组织成员也导入他们的个人密码库。
 
 {% hint style="info" %}
 将**步骤 1** 中获得的文件附件手动上传回与之关联的密码库项目。
