@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/oidc-microsoft-entra-id/)
 {% endhint %}
 
-本文是**专门针对 Azure** 用于配置 OpenID 连接（OIDC） 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](generic-oidc.md)或 [Microsoft Entra ID SAML 实施](microsoft-entra-id-saml-implementation.md)。
+本文是**专门针对 Azure** 用于配置 OpenID 连接 (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](generic-oidc.md)或 [Microsoft Entra ID SAML 实施](microsoft-entra-id-saml-implementation.md)。
 
 配置需要在 Bitwarden 网页 App 和 Azure 门户网站中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
@@ -30,7 +30,7 @@ SAML 2.0 配置
 
 ## 创建应用程序注册 <a href="#create-an-app-registration" id="create-an-app-registration"></a>
 
-在 Azure 门户中，导航到 **Microsoft Entra ID**。要创建新的应用程序注册，请选择 **New registration** 按钮：
+在 Azure 门户中，导航到 **Microsoft Entra ID** 然后选择 **App registrations**。要创建新的应用程序注册，请选择 **New registration** 按钮：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6NVeq0dGoBAO8bhhE3zvsC/d107017a0858a388fc8a9b5038942608/azure-newapp.png?fm=webp&h=309&q=50&w=892" %}
 创建应用程序注册
@@ -71,14 +71,14 @@ SAML 2.0 配置
 | 字段                                                      | 描述                                                                                                                       |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | Authority                                               | 输入 `https://login.microsoft.com/<TENANT_ID>/v2.0`，其中 `TENANT_ID` 是从应用程序注册的 Overview（概览）界面获取到的 **Directory (tenant) ID**。 |
-| Client ID                                               | 输入应用程序注册的 **Application (client) ID**，这可以从 Overview（概览）界面中获取。                                                            |
+| Client ID                                               | 输入应用程序注册的 **Application (client) ID**，这可以从 Overview 界面中获取。                                                               |
 | Client Secret                                           | 输入[已创建的客户端密钥](microsoft-entra-id-oidc-implementation.md#create-a-client-secret)的 **Secret Value**。                       |
 | Metadata Address                                        | 对于 Azure 实现，您可以将此字段留空。                                                                                                   |
 | OIDC Redirect Behavior                                  | 选择 **Form POST** 或 **Redirect GET**。                                                                                     |
 | Get Claims From User Info Endpoint                      | 如果您在 SSO 期间收到 URL 太长错误 (HTTP 414)、截断的 URL 和/或失败，请启用此选项。                                                                  |
 | Additional/Custom Scopes                                | 定义要添加到请求中的自定义范围（逗号分隔）。                                                                                                   |
 | Additional/Custom User ID Claim Types                   | 为用户标识（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                           |
-| Additional/Custom Email Claim Types                     | 为用户的电子邮件地址（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                      |
+| Additional/Custom Email Claim Types                     | 为用户的电子邮箱地址（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                      |
 | Additional/Custom Name Claim Types                      | 为用户的全名或显示名称（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                     |
 | Requested Authentication Context Class Reference values | 定义身份验证上下文类引用标识符（`acr_values`）（以空格分隔）。按优先顺序列出 `acr_values`。                                                               |
 | Expected “acr” Claim Value in Response                  | 定义 Bitwarden 在响应中期望和验证的 `acr` 声明值。                                                                                       |

@@ -42,20 +42,20 @@ SAML 2.0 配置
 
 ## 创建 JumpCloud SAML 应用程序 <a href="#create-a-jumpcloud-saml-app" id="create-a-jumpcloud-saml-app"></a>
 
-在 JumpCloud 门户网站中，从菜单中选择 **SSO** 并选择 **🞤Add** 图标：
+在 JumpCloud 门户网站中，从菜单中选择 **Applications** 然后选择 **Get Started** 按钮：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/4NL4Co6MKF71IDGMBDISyp/456a246be2bb037ad0d989d50049646e/jc-addapp.png?fm=webp&h=535&q=50&w=1076" %}
-添加 JumpCloud 应用程序
+{% embed url="https://bitwarden.com/assets/63S5F953fjQN6V4xYKZR3h/515abac11c991e20cf8d5286e1b80a1d/Screen_Shot_2023-02-07_at_10.49.15_AM__2_.png?w=1076&fm=avif" %}
+创建 JumpCloud Bitwarden 应用程序
 {% endembed %}
 
-在搜索框中输入 `Bitwarden` 并选择 **configure** 按钮：
+在搜索框中输入 `Bitwarden` 然后选择 **configure** 按钮：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2pFRcBTjlIjBhMbqlKMhxb/b80b23ecfd660d5c314028297c606879/jc-bw.png?fm=webp&h=229&q=50&w=685" %}
 配置 Bitwarden
 {% endembed %}
 
 {% hint style="success" %}
-如果您更喜欢 SAML，或者想要更多地控制 NameID 格式和签名算法等内容，请改为创建 **Custom SAML App**。
+如果您更喜欢 SAML，或者想要更多地控制 NameID 格式和签名算法等内容，请改为创建 **Custom SAML Application**。
 {% endhint %}
 
 ### 基本信息 <a href="#general-info" id="general-info"></a>
@@ -66,35 +66,35 @@ SAML 2.0 配置
 | ------------- | --------------------------- |
 | Display Label | 为应用程序指定一个专用于 Bitwarden 的名称。 |
 
-### 单点登录（SSO）配置 <a href="#single-sign-on-configuration" id="single-sign-on-configuration"></a>
+### 单点登录配置 <a href="#single-sign-on-configuration" id="single-sign-on-configuration"></a>
 
 在 **Single Sign-On Configuration** 部分，配置以下信息：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3GvG8DHkn0P1KYvNcrq2sc/d914a529cd0feacf67e833502fabac6c/jc-config.png?fm=webp&h=416&q=50&w=1090" %}
-单点登录配置
+{% embed url="https://bitwarden.com/assets/29XSIA5254JE0flwlFEGBf/5f078dec5b873be5568b2485c221c645/Screen_Shot_2023-02-07_at_3.20.29_PM__2_.png?w=789&fm=avif" %}
+JumpCloud SSO 配置
 {% endembed %}
 
-| 字段            | 描述                                                                                                                                                                                                                                                                                                                                                                                              |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| IdP Entity ID | 将此字段设置为唯一的、专用于 Bitwarden 的值，例如 `bitwardensso_yourcompany`.                                                                                                                                                                                                                                                                                                                                      |
-| SP Entity ID  | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>SP Entity ID</strong>。<br><br>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2</code>。</p>                                                         |
-| ACS URL       | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。<br><br>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/saml2/your-org-id/Acs</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/sso/saml2/your-org-id/Acs</code>。</p> |
+| 字段            | 描述                                                                                                                                                              |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| IdP Entity ID | 将此字段设置为唯一的、专用于 Bitwarden 的值，例如 `bitwardensso_yourcompany`.                                                                                                      |
+| SP Entity ID  | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>         |
+| ACS URL       | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
 
 #### 仅对于自定义 SAML 应用程序 <a href="#custom-saml-app-only" id="custom-saml-app-only"></a>
 
-如果您创建了自定义 SAML 应用程序，您还需要配置以下 **Single Sign-On Configuration** 字段：
+如果您创建了 Custom SAML Application，您还需要配置以下 **Single Sign-On Configuration** 字段：
 
-| 字段                        | 描述                                                                                                                                                                                                                                                                                                   |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| SAMLSubject NameID        | 指定将在 SAML 响应中作为 NameID 发送的 JumpCloud 属性。                                                                                                                                                                                                                                                             |
-| SAMLSubject NameID Format | 指定在 SAML 响应中发送的 NameID 的格式。                                                                                                                                                                                                                                                                          |
-| Signature Algoritm        | 选择用于签名 SAML 声明或响应的算法。                                                                                                                                                                                                                                                                                |
-| Sign Assertion            | 默认，JumpCloud 将对 SAML 响应进行签名。选中此框以签名 SAML 声明。                                                                                                                                                                                                                                                         |
-| Login URL                 | <p>指定用户通过 SSO 登录 Bitwarden 的 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p> |
+| 字段                        | 描述                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SAMLSubject NameID        | 指定将在 SAML 响应中作为 NameID 发送的 JumpCloud 属性。                                                                                                                                                                                                                                                                                                              |
+| SAMLSubject NameID Format | 指定在 SAML 响应中发送的 NameID 的格式。                                                                                                                                                                                                                                                                                                                           |
+| Signature Algoritm        | 选择用于签名 SAML 声明或响应的算法。                                                                                                                                                                                                                                                                                                                                 |
+| Sign Assertion            | 默认，JumpCloud 将对 SAML 响应进行签名。选中此框以签名 SAML 声明。                                                                                                                                                                                                                                                                                                          |
+| Login URL                 | <p>将此字段设置为用户访问 Bitwarden 的登录 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code> 或 <code>https://vault.bitwarden.eu/#/sso</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">已配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p> |
 
 ### 属性 <a href="#attributes" id="attributes"></a>
 
-在 **Single Sign-On Configuration** → **Attributes** 部分，构建以下 SP → IdP 属性映射。如果您在 JumpCloud 中选择了 Bitwarden App，则这些应该已经构建：
+在 **Single Sign-On Configuration** → **Attributes** 部分，构建以下 SP → IdP 属性映射。如果您在 JumpCloud 中选择了 Bitwarden Application，则这些应该已经构建：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5vRaXPal1HJsXhJZX8MdTL/b7c71fb6d4156d104f0f2b826f78a247/jc-attr.png?fm=webp&h=428&q=50&w=573" %}
 属性映射
@@ -104,7 +104,7 @@ SAML 2.0 配置
 
 ### 下载证书 <a href="#download-the-certificate" id="download-the-certificate"></a>
 
-应用程序激活后，再次使用 **SSO** 菜单选项打开已创建的 Bitwarden 应用程序。选择 **IDP Certificate** 下拉菜单并 **Download certificate**：
+应用程序激活后，再次使用 **SSO** 菜单选项打开已创建的 Bitwarden 应用程序。选择 **IDP Certificate** 下拉菜单然后 **Download certificate**：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6Y2DUGlm3LxBK6Ws44SjRg/a032010b5c0df73cccf7418892c9c00f/jc-cert.png?fm=webp&h=484&q=50&w=1416" %}
 下载证书
@@ -125,7 +125,7 @@ SAML 2.0 配置
 {% endembed %}
 
 {% hint style="success" %}
-或者，您可以直接从 **SSO** → **Bitwarden Application** 界面绑定对用户群组的访问。
+或者，您可以直接从 **SSO** → **Bitwarden Application** 界面绑定对用户群组的访问权限。
 {% endhint %}
 
 ## 返回网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
@@ -139,11 +139,11 @@ SAML 2.0 配置
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
-根据在 JumpCloud 门户网站[设置期间](jumpcloud-saml-implementation.md#create-a-jumpcloud-saml-app)所选择的选项配置以下字段：
+根据在 JumpCloud 门户网站的[应用程序创建期间](jumpcloud-saml-implementation.md#create-a-jumpcloud-saml-app)所选择的选项配置以下字段：
 
 | 字段                                 | 描述                                                                                         |
 | ---------------------------------- | ------------------------------------------------------------------------------------------ |
-| Name ID Format                     | 如果您创建了自定义 SAML 应用程序，请将其设置为指定的 SAMLSubject NameID 格式内容。否则，请保留为 **Unspecified**。             |
+| Name ID Format                     | 如果您创建了 Custom SAML Application，请将其设置为指定的 SAMLSubject NameID 格式内容。否则，请保留为 **Unspecified**。  |
 | Outbound Signing Algorithm         | Bitwarden 用于签名 SAML 请求的算法。                                                                 |
 | Signing Behavior                   | SAML 请求是否/何时将被签名。默认，JumpCloud 不要求对请求进行签名。                                                  |
 | Minimum Incoming Signing Algorithm | 如果您创建了自定义 SAML 应用程序，请将其设置为您选择的签名算法。否则，保留为 `rsa-sha256`。                                    |
@@ -156,18 +156,16 @@ SAML 2.0 配置
 
 身份提供程序配置通常需要你返回 JumpCloud 门户网站以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                                                 |
-| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                                 |  输入您的 JumpCloud **IdP Entity ID**，这可以从 JumpCloud [单点登录（SSO）配置部分](jumpcloud-saml-implementation.md#single-sign-on-configuration)来获取。                                                                                                |
-| Binding Type                              | 设置为 **Redirect**。                                                                                                                                                                                                                  |
-| Single Sign On Service URL                | 输入您的 JumpCloud **IdP URL**，这可以从 JumpCloud [单点登录（SSO）配置部分](jumpcloud-saml-implementation.md#single-sign-on-configuration)来获取。                                                                                                       |
-| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                                 |
-| Artifact Resolution Service URL           | 对于 JumpCloud 实现，您可以将此字段留空。                                                                                                                                                                                                         |
-| X509 Public Certificate                   | <p>黏贴<a href="jumpcloud-saml-implementation.md#download-the-certificate">已获取的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 如果您创建了自定义 SAML 应用程序，请将其设置为您选择的签名算法。否则，保留为 `rsa-sha256`。                                                                                                                                                                            |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                               |
-| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                                                                                 |
-| Want Authentication Requests Signed       | JumpCloud 是否要求 SAML 请求被签名。                                                                                                                                                                                                         |
+| 字段                                  | 描述                                                                                                                                                                                                                                          |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                           |  输入您的 JumpCloud **IdP Entity ID**，这可以从 JumpCloud [单点登录配置部分](jumpcloud-saml-implementation.md#single-sign-on-configuration)来获取。                                                                                                              |
+| Binding Type                        | 设置为 **Redirect**。                                                                                                                                                                                                                           |
+| Single Sign On Service URL          | 输入您的 JumpCloud **IdP URL**，这可以从 JumpCloud [单点登录配置部分](jumpcloud-saml-implementation.md#single-sign-on-configuration)来获取。                                                                                                                     |
+| Single Log Out Service URL          | SSO 登录当前还**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                                             |
+| X509 Public Certificate             | <p>黏贴<a href="jumpcloud-saml-implementation.md#download-the-certificate">已获取的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm          | 如果您创建了 Custom SAML Application，请将其设置为您选择的签名算法。否则，请保留为 `rsa-sha256`。                                                                                                                                                                         |
+| Disable Outbound Logout Requests    | SSO 登录当前还**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                                             |
+| Want Authentication Requests Signed | JumpCloud 是否要求 SAML 请求被签名。                                                                                                                                                                                                                  |
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。

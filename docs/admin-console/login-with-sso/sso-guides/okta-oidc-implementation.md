@@ -8,7 +8,7 @@ description: 本文包含为 Okta OIDC 实施配置 Bitwarden SSO 登录的说�
 对应的[官方文档地址](https://bitwarden.com/help/article/oidc-okta/)
 {% endhint %}
 
-本文是**专门针对 Okta** 用于配置 OpenID 连接（OIDC） 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](generic-oidc.md)或 [Okta SAML 实施](okta-saml-implementation.md)。
+本文是**专门针对 Okta** 用于配置 OpenID 连接 (OIDC) 方式的 SSO 登录的帮助。有关其他 OIDC IdP 方式配置 SSO 登录，或配置 SAML 2.0 方式的 Azure 的帮助，请参阅 [OIDC 配置](generic-oidc.md)或 [Okta SAML 实施](okta-saml-implementation.md)。
 
 配置需要在 Bitwarden 网页 App 和 Okta 管理门户网站中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
@@ -34,7 +34,7 @@ SAML 2.0 配置
 
 ## 创建 Okta 应用程序 <a href="#create-an-okta-app" id="create-an-okta-app"></a>
 
-在 Okta 管理门户中，从导航中选择 **Applications** → **Applications**。在 Applications（应用程序）界面上，选择 **Create App Integration** 按钮。对于 Sign-on method（登录方式），选择 **OIDC - OpenID Connect**。对于 Application type（应用程序类型），选择 **Web Application**：
+在 Okta 管理门户中，从导航中选择 **Applications** → **Applications**。在 Applications 界面上，选择 **Create App Integration** 按钮。对于 Sign-on method，选择 **OIDC - OpenID Connect**。对于 Application type，选择 **Web Application**：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/7fGYbP4aawIh8eorrQF6b7/a52951b16123a3e2f4d7bb293ba22a20/okta-createapp.png?fm=webp&h=854&q=50&w=969" %}
 创建应用程序集成
@@ -42,13 +42,13 @@ SAML 2.0 配置
 
 在 **New Web App Integration** 界面上，配置以下字段：
 
-| 字段                     | 描述                                                                                                                                                                                                                                                                                                                                                             |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| App integration name   | 为应用程序指定一个专用于 Bitwarden 的名称。                                                                                                                                                                                                                                                                                                                                    |
-| Grant type             | <p>启用以下<a href="https://developer.okta.com/docs/concepts/oauth-openid/#choosing-an-oauth-2-0-flow">授权类型</a>：<br><br>- 代表自己行事的客户 → <strong>Client Credentials</strong><br>- 代表用户行事的客户 → <strong>Authorization Code</strong></p>                                                                                                                                 |
-| Sign-in redirect URIs  | <p>将此字段设置为您的 <strong>Callback Path</strong>，这可以从 Bitwarden SSO 配置界面获取。<br><br>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/oidc-signin</code>。对于自托管实例，这取决于您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">已配置的服务器 URL</a>，例如为 </p><p><code>https://your.domain.com/sso/oidc-signin</code>。</p> |
-| Sign-out redirect URIs | 将此字段设置为您的 **Signed Out Callback Path**，这可以从 Bitwarden SSO 配置界面获取。                                                                                                                                                                                                                                                                                              |
-| Assignments            | 使用此字段指定是所有群组还是仅选定的群组能够使用 Bitwarden SSO 登录。                                                                                                                                                                                                                                                                                                                     |
+| 字段                     | 描述                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| App integration name   | 为应用程序指定一个专用于 Bitwarden 的名称。                                                                                                                                                                                                                                                                                                                                                                                        |
+| Grant type             | <p>启用以下<a href="https://developer.okta.com/docs/concepts/oauth-openid/#choosing-an-oauth-2-0-flow">授权类型</a>：<br><br>- 代表自己行事的客户 → <strong>Client Credentials</strong><br>- 代表用户行事的客户 → <strong>Authorization Code</strong></p>                                                                                                                                                                                     |
+| Sign-in redirect URIs  | <p>将此字段设置为您的 <strong>Callback Path</strong>，这可以从 Bitwarden SSO 配置界面获取。<br><br>对于云托管客户，其始终为 <code>https://sso.bitwarden.com/oidc-signin</code> 或 <code>https://sso.bitwarden.eu/oidc-signin</code>。对于自托管实例，这取决于您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">已配置的服务器 URL</a>，例如为 </p><p><code>https://your.domain.com/sso/oidc-signin</code>。</p> |
+| Sign-out redirect URIs | 将此字段设置为您的 **Signed Out Callback Path**，这可以从 Bitwarden SSO 配置界面获取。                                                                                                                                                                                                                                                                                                                                                  |
+| Assignments            | 使用此字段指定是所有群组还是仅选定的群组能够使用 Bitwarden SSO 登录。                                                                                                                                                                                                                                                                                                                                                                         |
 
 配置完成后，选择 **Next** 按钮。
 
@@ -114,16 +114,16 @@ Okta 登录界面
 使用 Okta 凭据进行身份验证后，输入您的 Bitwarden 主密码以解密您的密码库！
 
 {% hint style="info" %}
-Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致错误。SSO 登录流程必须从 Bitwarden 发起。Okta 管理员可以创建一个 [Okta Bookmark App](https://support.okta.com/help/s/article/How-do-you-create-a-bookmark-app?language=en_US)，这将直接链接到 Bitwarden 网络密码库登录页面。
+Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致错误。SSO 登录流程必须从 Bitwarden 发起。Okta 管理员可以创建一个 [Okta Bookmark App](https://support.okta.com/help/s/article/How-do-you-create-a-bookmark-app?language=en_US)，该应用程序将直接链接到 Bitwarden 网页密码库的登录页面。
 
-1. 作为管理员，进入主导航栏上的 **Applications** 下拉菜单，选择 **Applications**。
-2. 点击 **Browse App Catalog**。
+1. 作为管理员，导航至主导航栏上的 **Applications** 下拉菜单，然后选择 **Applications**。
+2. 单击 **Browse App Catalog**。
 3. 搜索 **Bookmark App** 然后单击 **Add Integration**。
-4. 向应用程序添加以下设置：
-   1. 为应用程序命名，如 **Bitwarden Login**。
-   2. 在 **URL** 字段，提供 Bitwarden 客户端的 URL，如 `https://vault.bitwarden.com/#/login` 或 `your-self-hostedURL.com`。
-5. 选择 **Done** 并返回应用程序仪表板，编辑新创建的应用程序。
-6. 为应用程序分配人员和群组。您还可以为应用程序指定一个徽标，以便最终用户识别。 Bitwarden 徽标可在[此处](https://github.com/bitwarden/brand/tree/master)获取。
+4. 将以下设置添加到应用程序：
+   1. 为应用程序命名，例如 **Bitwarden Login**。
+   2. 在 **URL** 字段中，提供 Bitwarden 客户端的 URL，例如 `https://vault.bitwarden.com/#/login` 或 `your-self-hostedURL.com`。
+5. 选择 **Done** 然后返回到应用程序仪表板并编辑新创建的应用程序。
+6. 将人员和群组分配给应用程序。您还可以为应用程序分配一个用于最终用户识别的 Logo。Bitwarden Logo 可以从[此处](https://github.com/bitwarden/brand/tree/master)获取。
 
-完成此过程后，被分配的人员和群组将在其 Okta 面板上拥有一个 Bitwarden 书签应用程序，该应用程序将直接链接到 Bitwarden 网络密码库登录页面。
+完成此过程后，分配的人员和群组将在其 Okta 仪表板上拥有一个 Bitwarden 书签应用程序，该应用程序将他们直接链接到 Bitwarden 网页密码库的登录页面。
 {% endhint %}
