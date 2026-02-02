@@ -9,9 +9,9 @@
 配置需要在 Bitwarden 网页 App 和 Okta 管理门户中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
 {% hint style="success" %}
-**已经是 SSO 专家？**&#x8DF3;过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
+**已经是 SSO 专家了吗？**&#x8DF3;过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
 
-**⬇️**[下载示例](https://assets.ctfassets.net/7rncvj1f8mw7/3tQfArvZQ1vigzlnjdBxr1/41449d881bd3292eed3046cf457495f1/saml-okta-sample.zip)
+**⬇️**[下载示例](https://bitwarden.com/assets/3tQfArvZQ1vigzlnjdBxr1/41449d881bd3292eed3046cf457495f1/saml-okta-sample.zip)
 {% endhint %}
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
@@ -60,12 +60,12 @@ SAML 2.0 单选按钮将此字段设置为预先生成的**断言消费者服务
 
 在 **Configure SAML** 界面，配置以下字段：
 
-| 字段                          | 描述                                                                                                                                                                                                                                       |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Single sign on URL          | <p>将此字段设置为从 Bitwarden SSO 配置界面预先生成的 <strong>Assertion Consumer Service (ACS) URL</strong>。<br>将此字段设置为预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br></p><p>此自动生成的值可以从组织的<strong>设置</strong> → 单<strong>点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
-| Audience URI (SP Entity ID) | <p>将此字段设置为预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>                                                                                                       |
-| Name ID format              | 选择在 SAML 声明中使用的 [SAML NameID format](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。默认为 **Unspecified**。                                                                                                                |
-| Application username        | 选择用户用于登录 Bitwarden 的 Okta 属性。                                                                                                                                                                                                            |
+| 字段                          | 描述                                                                                                                                            |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Single sign on URL          | <p>将此字段设置为预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br></p><p>此自动生成的值可以从组织的<strong>设置</strong> → 单<strong>点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
+| Audience URI (SP Entity ID) | <p>将此字段设置为预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>            |
+| Name ID format              | 选择在 SAML 声明中使用的 [SAML NameID format](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。默认为 **Unspecified**。                     |
+| Application username        | 选择用户用于登录 Bitwarden 的 Okta 属性。                                                                                                                 |
 
 ### 高级设置 <a href="#advanced-settings" id="advanced-settings"></a>
 

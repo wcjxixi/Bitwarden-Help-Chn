@@ -9,9 +9,9 @@
 配置需要在 Bitwarden 网页 App 和 Google Workspace 控制台中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
 {% hint style="success" %}
-**已经是 SSO 专家？**&#x8DF3;过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
+**已经是 SSO 专家了吗？**&#x8DF3;过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
 
-**⬇️**[下载示例](https://assets.ctfassets.net/7rncvj1f8mw7/2qc3QwfnmHhjJ5RCwL5hQN/aedad77e918df194f3033a34a141fcec/saml-google-sample.zip)
+**⬇️**[下载示例](https://bitwarden.com/assets/2qc3QwfnmHhjJ5RCwL5hQN/aedad77e918df194f3033a34a141fcec/saml-google-sample.zip)
 {% endhint %}
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>

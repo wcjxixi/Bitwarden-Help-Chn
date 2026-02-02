@@ -73,11 +73,11 @@ Ping OIDC 配置编辑
 | 值                                                       | 描述                                                                                             |
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | Authority                                               | 输入 `https://auth.pingone.eu/<TENANT_ID>`，其中 `TENANT_ID` 是 Ping Identity 上的 **Environment ID**。 |
-| Client ID                                               | 输入从应用程序配置选项卡获取的应用程序**客户端 ID**。                                                                 |
+| Client ID                                               | 输入从应用程序配置选项卡获取的应用程序 **Client ID**。                                                             |
 | Client Secret                                           | 输入创建的客户端机密的机密值。在应用程序的配置选项卡上选择 **Generate New Secret**。                                         |
 | Metadata Address                                        | 对于 Ping Identity 实施，您可以将此字段留空。                                                                 |
 | OIDC Redirect Behavior                                  | 选择 **Form POST** 或 **Redirect GET**。                                                           |
-| Get Claims From User Info Endpoint                      | 如果在 SSO 过程中收到 URL 太长错误（HTTP 414）、信任 URL 和/或失败，请启用此选项。                                          |
+| Get Claims From User Info Endpoint                      | 如果在 SSO 过程中收到 URL 太长错误 (HTTP 414)、信任 URL 和/或失败，请启用此选项。                                         |
 | Additional/Custom Scopes                                | 定义要添加到请求中的自定义作用域（以逗号分隔）。                                                                       |
 | Additional/Custom Email Claim Types                     | 为用户的地址地址定义自定义声明类型键（以逗号分隔）。定义后，会先搜索自定义声明类型，然后再返回标准类型。                                           |
 | Additional/Custom Name Claim Types                      | 为用户全名或显示名定义自定义声明类型键（以逗号分隔）。定义后，会先搜索自定义声明类型，然后再返回标准类型。                                          |
@@ -112,4 +112,4 @@ Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致�
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-1. 培训您的组织成员如何[使用 SSO 登录](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)。
+* 培训您的组织成员如何[使用 SSO 登录](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)。

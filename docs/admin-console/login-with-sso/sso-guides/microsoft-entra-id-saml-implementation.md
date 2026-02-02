@@ -9,9 +9,9 @@
 配置需要在 Bitwarden 网页 App 和 Azure 控制台中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
 {% hint style="success" %}
-**已经是 SSO 专家？**&#x8DF3;过本文中的说明，然后下载快速配置以与您自己的配置进行比较。
+**已经是 SSO 专家了吗？**&#x8DF3;过本文中的说明，然后下载快速配置指南以使用 Entra ID 设置 SSO 和 SCIM。
 
-**⬇️**[快速配置指南](https://assets.ctfassets.net/7rncvj1f8mw7/3dX9IKG6TQ9chQXJaVkP1w/4a84bf2b3a7eb68255e4924de7078b41/Soft_Guides__1_.pdf)
+**⬇️**[快速配置指南](https://bitwarden.com/assets/1Qe8NasMRjmKyO575a9i5w/649ad79d5cd895f304fc32230280e97b/entra-id-guide.pdf)
 {% endhint %}
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>

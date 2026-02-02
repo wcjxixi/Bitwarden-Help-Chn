@@ -44,10 +44,10 @@ Ping Identity 添加应用程序
 
 3、在 **SAML Configuration** 界面上选择 **Manually Enter**。使用 Bitwarden 单点登录界面上的信息配置以下字段：
 
-| 字段        | 描述                                                                                                                                           |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ACS URL   | <p>将此字段设置为预先生成的<strong>断言消费者服务 (ACS) URL</strong>。</p><p></p><p>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并根据设置而有所不同。</p> |
-| Entity ID | <p>将此字段设置为预先生成的 <strong>SP 实体 ID</strong>。</p><p></p><p>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并根据设置而有所不同。</p>         |
+| 字段        | 描述                                                                                                                                            |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| ACS URL   | <p>将此字段设置为预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br></p><p>此自动生成的值可以从组织的<strong>设置</strong> → 单<strong>点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
+| Entity ID | <p>将此字段设置为预先生成的 <strong>SP 实体 ID</strong>。</p><p></p><p>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>      |
 
 选择 **Save** 以继续。
 
@@ -79,16 +79,16 @@ Ping Identity 添加应用程序
 
 身份提供程序配置通常需要您返回 Ping Identity Configuration 界面以获取应用程序的值：
 
-| 字段                                  | 描述                                                                                                                                                                          |
-| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                           | 设置为从 Ping Identity Configuration 界面获取到的 **Entity ID**。                                                                                                                      |
-| Binding Type                        | 设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                           |
-| Single Sign On Service URL          | 设置为从 Ping Identity Configuration 界面获取到的 **Single Sign-on Service** URL。                                                                                                     |
-| Single Log Out Service URL          | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发，但如果您需要，可以将其预先配置。                                                                                                                           |
-| X509 Public Certificate             | <p>粘贴从应用程序界面获取的签名证书。移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm          | 默认，Ping Identity 将使用 RSA SHA-256 签名。请从下拉列表中选择 `sha-256`。                                                                                                                    |
-| Disable Outbound Logout Requests    | SSO 登录当前**不支持** SLO。该选项计划用于将来的开发。                                                                                                                                           |
-| Want Authentication Requests Signed | Ping Identity 是否要求 SAML 请求被签名。                                                                                                                                              |
+| 字段                                  | 描述                                                                                                                                                                                                                                                                  |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                           | 设置为从 Ping Identity Configuration 界面获取到的 **Entity ID**。                                                                                                                                                                                                              |
+| Binding Type                        | 设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                                                                                   |
+| Single Sign On Service URL          | 设置为从 Ping Identity Configuration 界面获取到的 **Single Sign-on Service** URL。                                                                                                                                                                                             |
+| Single Log Out Service URL          | SSO 登录当前**不支持** SLO。该选项计划未来开发，但如果您需要，可以将其预先配置。                                                                                                                                                                                                                      |
+| X509 Public Certificate             | <p>粘贴从应用程序界面（导航到 <strong>Configuration</strong> 选项卡然后 <strong>Download Signing Certificate</strong>）获取的签名证书。移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm          | 默认，Ping Identity 将使用 RSA SHA-256 签名。请从下拉列表中选择 `sha-256`。                                                                                                                                                                                                            |
+| Disable Outbound Logout Requests    | SSO 登录当前**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                                                                      |
+| Want Authentication Requests Signed | Ping Identity 是否要求 SAML 请求被签名。                                                                                                                                                                                                                                      |
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
@@ -122,4 +122,4 @@ Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致�
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-1. 培训您的组织成员如何[使用 SSO 登录](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)。
+* 培训您的组织成员如何[使用 SSO 登录](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)。

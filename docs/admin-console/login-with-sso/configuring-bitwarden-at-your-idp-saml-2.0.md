@@ -1,7 +1,5 @@
 # \*在您的 IdP 上配置 Bitwarden（SAML 2.0）
 
-
-
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-providers/)、[GitHub 地址](https://github.com/bitwarden/help/blob/master/_articles/login-with-sso/saml-providers.md)
 {% endhint %}
@@ -32,7 +30,7 @@
 
 Okta 示例：
 
-```bash
+```
 folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
 Social,1,login,Twitter,,,twitter.com,me@example.com,password123,
 ,,login,My Bank,Bank PIN is 1234,"PIN: 1234
