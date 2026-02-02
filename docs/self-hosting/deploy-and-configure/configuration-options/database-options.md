@@ -18,9 +18,11 @@
 
 ## Lite 部署的数据库 <a href="#databases-for-lite-deployments" id="databases-for-lite-deployments"></a>
 
-Bitwarden Lite 自托管部署不附带内置数据库，但可以连接到现有的 MySQL/MariaDB、MSSQL、SQLite 或 PosgreSQL 数据库（[了解更多](../docker/lite-deployment.md)）。由于该数据库不与应用程序容器不在同一位置，因此从基础架构角度来看，数据库的维护（包括更新、维护和备份）需要单独管理。
+Bitwarden Lite 自托管部署不附带内置数据库，但可以连接到现有的 MySQL/MariaDB、MSSQL、SQLite 或 PosgreSQL 数据库（[了解更多](../docker/lite-deployment.md)）。由于该数据库不与应用程序容器不在同一位置，因此从基础架构角度来看，数据库的维护（包括更新、维护和备份）需要单独管理。**只有 Lite 部署**支持这些数据库选项，标准部署要求 MSSQL。
 
-只有 Lite 部署支持这些数据库选项，标准部署需要 MSSQL。
+{% hint style="info" %}
+由于 Bitwarden Lite 数据库不是由应用程序容器提供或与之并置的，因此数据库维护（包括更新、维护和备份）必须完全由您管理。
+{% endhint %}
 
 ## 可选的数据库任务 <a href="#optional-database-jobs" id="optional-database-jobs"></a>
 

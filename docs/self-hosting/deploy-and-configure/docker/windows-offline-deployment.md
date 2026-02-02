@@ -18,7 +18,7 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2GB RAM</td><td>4GB RAM</td></tr><tr><td>存储</td><td>12GB</td><td>25GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2 GB RAM</td><td>4 GB RAM</td></tr><tr><td>存储</td><td>12 GB</td><td>25 GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
 <mark style="color:red;">**ª**</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[为 Engine 和 Compose 安装 Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)。
 
@@ -154,12 +154,16 @@ openssl pkcs12 -export -out ./identity/identity.pfx -inkey identity.key -in iden
 
 要获取 docker 镜像以在离线机器上使用：
 
-1、从已连接互联网的机器上，下载如 `docker-stub.zip` 中的 `docker-compose.yml` 文件中所列的所有 `bitwarden/xxx:latest` docker 镜像，。
+1、从已连接互联网的机器上，下载如 `docker-stub.zip` 中的 `docker-compose.yml` 文件中所列的所有 `ghcr.io/bitwarden/image_name:latest` docker 镜像。
+
+```shellscript
+docker image pull ghcr.io/bitwarden/mssql:latest
+```
 
 2、将每一个镜像保存为 `.img` 文件，例如：
 
 ```shell
-docker image save -o mssql.img bitwarden/mssql:version
+docker image save -o mssql.img ghcr.io/bitwarden/mssql:latest
 ```
 
 3、将所有 `.img` 文件传输到您的离线计机器上。
@@ -194,8 +198,34 @@ docker ps
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-1. 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
-2. 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
+* 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
+* 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
+
+## 在启动时启动 Docker <a href="#start-docker-on-boot" id="start-docker-on-boot"></a>
+
+如果您有已登录的 RDP 会话，桌面版 Docker 才会在启动时自动启动。无论是否有用户登录，都要在启动时启动桌面版 Docker：
+
+{% hint style="danger" %}
+Docker Desktop 在启动后可能需要长达 15 分钟才能启动完成并可以从网络访问容器。
+{% endhint %}
+
+1、打开 Windows 任务计划程序并从操作菜单中选择**创建任务…** 。
+
+2、使用以下安全选项配置任务：
+
+* 将任务设置为使用[已创建](windows-offline-deployment.md#create-bitwarden-local-user-and-directory)的 `Bitwarden` 用户帐户。
+* 将任务设置为**不管用户是否登录都要运行**。
+
+3、选择**触发器**选项卡并新建如下的触发器：
+
+* 从开始任务下拉列表中，选择**启动时**。
+* 在高级设置部分，勾选**延迟任务时间:**  复选框并从下拉列表中选择 **1 分钟**。
+
+4、选择**操作**选项卡并新建如下的操作：
+
+* 在程序或脚本输入栏中，指定 `"C:\Program Files\Docker\Docker\frontend\Docker Desktop.exe"`。
+
+5、选择**确定**完成定时任务的创建。
 
 ## 更新您的服务器 <a href="#update-your-server" id="update-your-server"></a>
 

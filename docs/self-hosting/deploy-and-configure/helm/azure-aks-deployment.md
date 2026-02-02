@@ -21,8 +21,8 @@
 
 Bitwarden 会在启动时检测您的环境是否限制了用户容器的运行身份，并在检测到限制时自动以无根模式启动部署。要成功以无根模式部署，需满足以下两个选项之一：
 
-* 部署外部 MSSQL 数据库，而不是 Helm 图表中默认包含的 SQL 容器。
-* 使用服务账户、pod 安全上下文或其他方法为包含的 SQL 容器分配高级权限。
+* 部署[外部 MSSQL 数据库](../configuration-options/connect-to-an-external-mssql-database.md)，而不是 Helm 图表中默认包含的 SQL 容器。
+* 使用[服务账户](../configuration-options/kubernetes-service-accounts.md)、[pod 安全上下文](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod)或其他方法为包含的 SQL 容器分配高级权限。
 
 {% hint style="info" %}
 虽然 Microsoft 要求 SQL 容器必须以 root 身份运行，但在执行应用程序代码之前，容器启动将逐步降级至非 root 用户。

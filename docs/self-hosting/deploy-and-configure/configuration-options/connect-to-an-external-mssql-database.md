@@ -45,6 +45,10 @@ Bitwarden **仅支持并推荐 SQL Server 2022**。了解 [Windows](https://lear
 
 4、在用于部署的 Kubernetes Secrets 对象中，使用以下信息设置 `globalSettings__sqlServer__connectionString=` 值：
 
+{% hint style="info" %}
+用于配置机密对象的方法可能取决于您的部署，例如 [AWS 部署](../helm/aws-eks-deployment.md)和 [Azure 部署](../helm/azure-aks-deployment.md)可能使用 CSI SecretProviderClass 来执行此操作。
+{% endhint %}
+
 * `Data Source=tcp:<SERVERNAME>,1433`，其中 `<SERVERNAME>` 是您的 MSSQL 服务器的名称。
 * `Initial Catalog=<VAULT>`，其中 `<VAULT>` 是您的数据库名称。
 * `Persist Security Info=False`。

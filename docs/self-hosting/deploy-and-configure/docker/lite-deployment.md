@@ -10,9 +10,7 @@
 ~~虽然 Bitwarden Unified 自托管部署还处于测试阶段，但 Unified 安装不会设置自动升级过程来获取最新的可用镜像。Bitwarden 建议，在升级之前，应留出一些时间让发布的版本趋于稳定。~~
 {% endhint %}
 
-> **\[译者注]**：测试阶段叫做「Bitwarden Unified」，现在更名为「Bitwarden Lite」，即 Bitwarden 最小化部署。
-
-{% hint style="info" %}
+{% hint style="success" %}
 Bitwarden Lite 适合个人和家庭实验室使用，不适用于商用环境。商用环境应使用[标准部署选项](../../plan-for-deployment/self-host-bitwarden.md)之一。
 {% endhint %}
 
@@ -21,6 +19,10 @@ Bitwarden Lite 适合个人和家庭实验室使用，不适用于商用环境�
 * 通过使用单个 Docker 映像部署 Bitwarden 来简化配置并优化资源使用（CPU、内存）。
 * 利用不同的数据库解决方案，例如 MSSQL、PostgreSQL、SQLite 以及 MySQL/MariaDB。当前只有 Lite 部署可以使用这些数据库，标准部署需要 MSSQL。
 * 作为替代系统运行在 ARM 架构上，例如 Raspberry Pi 和 NAS 服务器。
+
+{% hint style="info" %}
+2025 年 12 月，Bitwarden Unified 退出测试并更名为 Bitwarden Lite。如果您参与了测试版，请确保在更新到最新版本时使用新的映像名称 (`ghcr.io/bitwarden/lite`)。
+{% endhint %}
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
@@ -63,6 +65,10 @@ Bitwarden Lite 使用 [Docker 容器](https://docs.docker.com/get-started/)运�
 ### 数据库示例 <a href="#database-examples" id="database-examples"></a>
 
 与标准 Bitwarden 部署不同，Lite 并不附带开箱即用的数据库。您可以使用现有数据库，也可以创建新数据库。您需要在 `settings.env` 文件或 `--env` 标志中包含哪些 `# Required Settings #` 将取决于您使用的受支持的数据库提供程序：
+
+{% hint style="info" %}
+由于 Bitwarden Lite 数据库不是由应用程序容器提供或与之并置的，因此数据库维护（包括更新、维护和备份）必须完全由您管理。
+{% endhint %}
 
 {% tabs %}
 {% tab title="MySQL/MariaDB" %}
@@ -186,9 +192,9 @@ volumes:
 
 在 `docker-compose.yml` 文件中，确保任何所需的配置包含：
 
-* 日志和 Bitwarden 数据的映射卷。
-* 映射端口。
-* 配置数据库镜像。<mark style="color:red;">**ª**</mark>
+* 日志和 Bitwarden 数据的映射卷
+* 映射端口
+* 配置数据库镜像<mark style="color:red;">**ª**</mark>
 
 <mark style="color:red;">**ª**</mark> - 仅在 `docker-compose.yml` 中设置数据库，如上例所示，如果您想**创建一个新的数据库服务器**以与 Bitwarden 一起使用。 用于 MySQL、MSSQL 和 PostgreSQL 的示例配置包含在我们的[示例文件](https://github.com/bitwarden/server/blob/master/docker-unified/docker-compose.yml)中。
 
@@ -276,7 +282,7 @@ docker compose up -d
 
 默认情况下，Bitwarden Lite 可以在停用某些可用服务的情况下运行。这些服务以及许多其他服务器特性可以选择使用您的 `settings.env` 文件或 `--env` 标志来激活和自定义：
 
-{% hint style="success" %}
+{% hint style="danger" %}
 每当更改环境变量时，您都需要重新启动服务器才能使更改生效。
 {% endhint %}
 
@@ -284,17 +290,17 @@ docker compose up -d
 
 可以使用以下变量激活或停用附加服务：
 
-| 变量                          | 描述                                                                                                                                                 |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BW\_ENABLE\_ADMIN           | <p><strong>不要禁用此服务</strong>。</p><p>在<a href="../../system-administrator-portal.md">此处</a>了解有关管理面板功能的更多信息。默认为 <code>true</code>。</p>                |
-| BW\_ENABLE\_API             | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
-| BW\_ENABLE\_EVENTS          | 为团队和企业事件监控启用或禁用 Bitwarden 事件日志。默认为 `false`。                                                                                                        |
-| BW\_ENABLE\_ICONS           | 启用或禁用登录项目 URI 设置的 Bitwarden 品牌图标。在[此处](../../../security/data/website-icons.md)了解更多。默认为 `true`。                                                    |
-| BW\_ENABLE\_IDENTITY        | **不要禁用此服务**。默认为 `true`。                                                                                                                            |
-| BW\_ENABLE\_NOTIFICATIONS   | 当使用设备登录、移动端密码库同步等时，启用或禁用用于接收移动设备推送通知的通知服务。默认为 `true`。                                                                                              |
-| BW\_ENABLE\_SCIM            | 为企业组织启用或禁用 SCIM。默认为 `false`。                                                                                                                       |
-| BW\_ENABLE\_SSO             | 为企业组织启用或禁用 SSO 服务。默认为 `false`。                                                                                                                     |
-| BW\_ICONS\_PROXY\_TO\_CLOUD | <p>启用此服务将代理图标服务请求以通过云服务进行操作，以降低系统内存负载。</p><p>如果选择使用此设置，则应将 <code>BW_ENABLE_ICONS</code> 设置为 <code>false</code> 以减少容器负载。默认为 <code>false</code>。</p> |
+| 变量                          | 描述                                                                                                                                                        |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BW\_ENABLE\_ADMIN           | **不要禁用此服务**。在[此处](../../system-administrator-portal.md)了解有关管理面板功能的更多信息。默认为 `true`。                                                                        |
+| BW\_ENABLE\_API             | **不要禁用此服务**。默认为 `true`。                                                                                                                                   |
+| BW\_ENABLE\_EVENTS          | 为团队和企业事件监控启用或禁用 Bitwarden 事件日志。默认为 `false`。                                                                                                               |
+| BW\_ENABLE\_ICONS           | 启用或禁用登录项目 URI 设置的 Bitwarden 品牌图标。在[此处](../../../security/data/website-icons.md)了解更多。默认为 `true`。                                                           |
+| BW\_ENABLE\_IDENTITY        | **不要禁用此服务**。默认为 `true`。                                                                                                                                   |
+| BW\_ENABLE\_NOTIFICATIONS   | 当使用设备登录、移动端密码库同步等时，启用或禁用用于接收移动设备推送通知的通知服务。默认为 `true`。                                                                                                     |
+| BW\_ENABLE\_SCIM            | 为企业组织启用或禁用 SCIM。默认为 `false`。                                                                                                                              |
+| BW\_ENABLE\_SSO             | 为企业组织启用或禁用 SSO 服务。默认为 `false`。                                                                                                                            |
+| BW\_ICONS\_PROXY\_TO\_CLOUD | <p>启用此服务将代理图标服务请求以通过云服务进行操作，以降低系统内存负载。</p><p></p><p>如果选择使用此设置，则应将 <code>BW_ENABLE_ICONS</code> 设置为 <code>false</code> 以减少容器负载。默认为 <code>false</code>。</p> |
 
 ### 证书 <a href="#certificates" id="certificates"></a>
 
@@ -322,14 +328,14 @@ docker compose up -d
 
 使用这些变量来设置或更改服务器的 SMTP 提供程序：
 
-| 变量                                         | 描述                                                                                             |
-| ------------------------------------------ | ---------------------------------------------------------------------------------------------- |
-| globalSettings\_\_mail\_\_replyToEmail     | 输入服务器的回复电子邮箱。                                                                                  |
-| globalSettings\_\_mail\_\_smtp\_\_host     | 输入 SMTP 服务器的主机域名。                                                                              |
-| globalSettings\_\_mail\_\_smtp\_\_port     | 输入来自 SMTP 主机的端口号。                                                                              |
-| globalSettings\_\_mail\_\_smtp\_\_ssl      | <p>如果您的 SMTP 主机使用 SSL，请输入 <code>true</code>。<br>如果您的主机使用 TLS 服务，请将值设置为 <code>false</code>。</p> |
-| globalSettings\_\_mail\_\_smtp\_\_username | 输入 SMTP 用户名。                                                                                   |
-| globalSettings\_\_mail\_\_smtp\_\_password | 输入 SMTP 密码。                                                                                    |
+| 变量                                         | 描述                                                                                                    |
+| ------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| globalSettings\_\_mail\_\_replyToEmail     | 输入服务器的回复电子邮箱。                                                                                         |
+| globalSettings\_\_mail\_\_smtp\_\_host     | 输入 SMTP 服务器的主机域名。                                                                                     |
+| globalSettings\_\_mail\_\_smtp\_\_port     | 输入来自 SMTP 主机的端口号。                                                                                     |
+| globalSettings\_\_mail\_\_smtp\_\_ssl      | <p>如果您的 SMTP 主机使用 SSL，请输入 <code>true</code>。<br></p><p>如果您的主机使用 TLS 服务，请将值设置为 <code>false</code>。</p> |
+| globalSettings\_\_mail\_\_smtp\_\_username | 输入 SMTP 用户名。                                                                                          |
+| globalSettings\_\_mail\_\_smtp\_\_password | 输入 SMTP 密码。                                                                                           |
 
 ### 端口 <a href="#ports" id="ports"></a>
 
@@ -344,10 +350,10 @@ docker compose up -d
 
 使用这些变量连接 Yubico Web 服务：
 
-| 变量                               | 描述                                                                                                         |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| globalSettings\_yubico\_clientId | <p>替换从 Yubico Key 获取的 ID 值。</p><p>在<a href="https://upgrade.yubico.com/getapikey/">此处</a>注册 Yubico 密钥。</p> |
-| globalSettings\_yubico\_key      | 输入从 Yubico 获取的密钥值。                                                                                         |
+| 变量                               | 描述                                                                                                                |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| globalSettings\_yubico\_clientId | <p>替换从 Yubico Key 获取的 ID 值。</p><p></p><p>在<a href="https://upgrade.yubico.com/getapikey/">此处</a>注册 Yubico 密钥。</p> |
+| globalSettings\_yubico\_key      | 输入从 Yubico 获取的密钥值。                                                                                                |
 
 ### 其他 <a href="#miscellaneous" id="miscellaneous"></a>
 
@@ -368,9 +374,9 @@ docker compose up -d
 
 默认情况下，Bitwarden 容器消耗的内存，通常超过运行所需的最低内存。对于内存敏感的环境，您可以使用 docker `-m` 或 `--memory=` 来限制 Bitwarden 容器的内存使用。
 
-| 名称，缩写         | 描述                                                                                                                                                            |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| --memory=, -m | 容器可以使用的最大内存量。Bitwarden 至少需要 200M。请参阅 [Docker 文档](https://docs.docker.com/config/containers/resource_constraints/#limit-a-containers-access-to-memory)以了解更多信息。 |
+| 名称，缩写         | 描述                                                                                                                                                              |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --memory=, -m | 容器可以使用的最大内存量。Bitwarden 至少需要 200 MB。请参阅 [Docker 文档](https://docs.docker.com/config/containers/resource_constraints/#limit-a-containers-access-to-memory)以了解更多信息。 |
 
 要使用 Docker Compose 控制内存使用，请使用 `mem_limit` 键：
 

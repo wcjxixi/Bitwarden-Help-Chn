@@ -349,6 +349,7 @@
       * [配置推送中继](docs/self-hosting/deploy-and-configure/configuration-options/configure-push-relay.md)
       * [Kerberos 集成](docs/self-hosting/deploy-and-configure/configuration-options/kerberos-integration.md)
       * [Kubernetes 服务账户](docs/self-hosting/deploy-and-configure/configuration-options/kubernetes-service-accounts.md)
+      * [SMTP 配置](docs/self-hosting/deploy-and-configure/configuration-options/smtp-onfigurations.md)
     * [可选功能](docs/self-hosting/deploy-and-configure/optional-features/README.md)
       * [自托管 Send](docs/self-hosting/deploy-and-configure/optional-features/self-hosting-send.md)
       * [自托管 SCIM](docs/self-hosting/deploy-and-configure/optional-features/self-hosting-scim.md)

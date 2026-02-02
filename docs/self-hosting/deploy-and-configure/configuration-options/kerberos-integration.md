@@ -43,9 +43,9 @@ mkdir /opt/bitwarden/bwdata/kerberos
 nano /opt/bitwarden/bwdata/kerberos/krb5.conf
 ```
 
-[这里](https://assets.contentful.com/7rncvj1f8mw7/dfAMaYL2JmdC3j0i4ZTPO/304e3d038d3a9c8cd1cbdd505c57d7c0/Generic_example)是一个示例文件。
+[这里](https://bitwarden.com/assets/dfAMaYL2JmdC3j0i4ZTPO/304e3d038d3a9c8cd1cbdd505c57d7c0/Generic_example/)是一个示例文件。
 
-[这里](https://assets.contentful.com/7rncvj1f8mw7/6TdaNaNKfcxcmIc0PfBipR/74364f58e11b12f59e4aff49c3899db4/TEST)是一个示例 TEST 文件。
+[这里](https://bitwarden.com/assets/6TdaNaNKfcxcmIc0PfBipR/74364f58e11b12f59e4aff49c3899db4/TEST/)是一个示例 TEST 文件。
 
 检查这些值是否与您自己的值一致，以及是否可以从 Bitwarden 服务器访问 `kdc` 和 `admin_server`。
 
@@ -77,7 +77,7 @@ globalSettings__kerberosUser=bitwarden
 
 ### SQL 连接字符串 <a href="#sql-connection-string" id="sql-connection-string"></a>
 
-替换 SQL 连接字符串，指向外部数据库并使用集成身份验证。 更改 SQL 服务器主机名和数据库名：
+替换 SQL 连接字符串，指向外部数据库并使用集成身份验证。更改 SQL 服务器 `hostname` 和 `database` 名称：
 
 ```systemd
 globalSettings__sqlServer__connectionString="Data Source=tcp:example-sql-server.example.domain,1433;Initial Catalog=vault;Persist Security Info=False;Integrated Security=true;Multiple Active Result Sets=False;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True"
