@@ -75,7 +75,7 @@
 
 | 团队版                                                                                                           | 企业版                                                                     |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| <p>- 所有成员的高级访问权限（2FA、TOTP、文件附件等）<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 组织 Duo 2FA<br>- Directory Connector</p> | <p>- SSO 登录<br>- 客户管理加密的 SSO<br>- 信任设备 SSO<br>- SCIM 配置<br>- 帐户恢复管理</p> |
+| <p>- 所有成员的高级访问权限（2FA、TOTP、文件附件等）<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 组织 Duo 2FA<br>- Directory Connector</p> | <p>- SSO 登录<br>- 客户管理加密的 SSO<br>- 信任设备 SSO<br>- SCIM 配置<br>- 账户恢复管理</p> |
 
 ### 问：作为现有客户，我需要采取任何行动吗？ <a href="#q-as-an-existing-customer-do-i-need-to-take-any-action" id="q-as-an-existing-customer-do-i-need-to-take-any-action"></a>
 

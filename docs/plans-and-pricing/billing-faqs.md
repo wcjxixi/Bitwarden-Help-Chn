@@ -43,11 +43,11 @@
 
 根据 Bitwarden 服务条款，每个订阅仅允许一个组织部署。
 
-### 问：如果我有一个家庭组织，还需要高级会员吗？ <a href="#q-if-i-have-a-families-organization-do-i-need-premium" id="q-if-i-have-a-families-organization-do-i-need-premium"></a>
+### 问：如果我有一个家庭版组织，还需要高级会员吗？ <a href="#q-if-i-have-a-families-organization-do-i-need-premium" id="q-if-i-have-a-families-organization-do-i-need-premium"></a>
 
-**答：**&#x5F53;前的家庭方案（2020 年 09 月推出）自动为组织的所有 6 名成员提供高级功能，所以不需要！
+**答：**&#x5F53;前的家庭版方案（2020 年 09 月推出）自动为组织的所有 6 名成员提供高级功能，所以不需要！
 
-传统的家庭方案不会自动提供高级功能，因此用户需要单独升级到高级版，或者由家庭组织的所有者升级组织。
+传统的家庭版方案不会自动提供高级功能，因此用户需要单独升级到高级版，或者由家庭版组织的所有者升级组织。
 
 ### 问：为什么我的云端和自托管许可证到期日期不匹配？
 
