@@ -23,6 +23,25 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（浏览�
 您也可以订阅 [Bitwarden Status RSS feed](https://status.bitwarden.com/) 以获取服务更新，包括发行窗口的公告。
 {% endhint %}
 
+## 2026.1.1
+
+（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.1.1、浏览器扩展 2026.1.0、移动端 2026.1.0、桌面端 2026.1.0、CLI 2026.1.0）
+
+### Password Manager
+
+* **钓鱼拦截器**：Bitwarden 高级版和家庭版用户可通过浏览器扩展使用[钓鱼拦截器](password-manager/your-vault/security-tools/phishing-blocked.md)，该功能会在用户访问已知的钓鱼网站时发出通知。
+* **使用通行密钥解锁**：现在可以使用通行密钥解锁您的网页App 或浏览器扩展。这扩展了现有密码支持的功能，使其不再局限于登录，让您无需输入主密码即可访问您的密码库。
+* **桌面 App UI 更新**：桌面 App UI 已更新，后续还将推出更多更新。
+* **扩展默认宽度更新**：浏览器扩展的默认宽度已加宽。您可以[从外观菜单](password-manager/your-vault/appearance/change-app-appearance.md#liu-lan-qi-kuo-zhan)中切换回窄版界面或超宽版界面。
+
+{% hint style="info" %}
+此版本包含一个 Linux 桌面环境至 Electron 39 的更新。在基于 Fedora 的 Linux 发行版上使用 KDE 的 Bitwarden Flatpak 应用程序的用户在导入 SSH 密钥时可能会遇到剪贴板问题。这是一个已知问题，Bitwarden 正在调查中。
+{% endhint %}
+
+### 自托管 <a href="#self-host" id="self-host"></a>
+
+* **增强型错误日志脱敏**：对于无效、过期或颁发者、受众或签名不正确的身份验证令牌创建的错误日志，现在会脱敏所有个人身份信息 (PII) 和身份验证数据。
+
 ## 2026.1.0
 
 （所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.1.0）
