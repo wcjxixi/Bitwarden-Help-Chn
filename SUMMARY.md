@@ -22,7 +22,7 @@
     * [更多登录选项](docs/account/log-in-and-unlock/more-log-in-options/README.md)
       * [登录到多个账户](docs/account/log-in-and-unlock/more-log-in-options/account-switching.md)
       * [使用设备登录](docs/account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)
-      * [使用通行密钥登录](docs/account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)
+      * [=使用通行密钥登录 & 解锁](docs/account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)
       * [使用紧急访问登录](docs/account/log-in-and-unlock/more-log-in-options/emergency-access.md)
     * [更多解锁选项](docs/account/log-in-and-unlock/more-unlock-options/README.md)
       * [使用生物识别解锁](docs/account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)

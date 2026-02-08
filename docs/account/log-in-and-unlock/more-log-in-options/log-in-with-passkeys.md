@@ -1,12 +1,18 @@
-# 使用通行密钥登录
+# =使用通行密钥登录 & 解锁
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/login-with-passkeys/)
 {% endhint %}
 
-{% hint style="success" %}
-Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.md) 和[为其他网站和服务自动填充已存储的通行密钥](../../../password-manager/autofill/more-autofill-options/autofill-passkeys.md)的功能。
+{% hint style="info" %}
+Bitwarden 提供三种通行密钥功能：[使用通行密钥登录和解锁](log-in-with-passkeys.md#log-in-and-unlock-with-your-passkey)您的 Bitwarden 账户、在您的 Bitwarden 账户上使用[通行密钥 2FA](../../two-step-login/setup-two-step-login/two-step-login-via-fido.md)，以及为其他网站和服务[自动填充已存储的通行密钥](../../../password-manager/autofill/more-autofill-options/autofill-passkeys.md)。
 {% endhint %}
+
+## 要求 <a href="#requirements" id="requirements"></a>
+
+### 解锁密码库要求 <a href="#unlock-vault-requirements" id="unlock-vault-requirements"></a>
+
+### 通行密钥限制 <a href="#passkey-restrictions" id="passkey-restrictions"></a>
 
 通行密钥可以作为使用主密码和电子邮箱的替代方式来登录 Bitwarden。用于登录 Bitwarden 的通行密钥：
 
@@ -18,7 +24,9 @@ Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.
 
 要了解更多有关通行密钥的基础知识，请查看 [来自 Bitwarden 的这篇博客](https://bitwarden.com/blog/log-into-bitwarden-with-a-passkey/)。
 
-## 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
+## 管理通行密钥 <a href="#manage-passkeys" id="manage-passkeys"></a>
+
+### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
 
 您最多可以同时拥有 5 个通行密钥用于登录。要创建用于登录 Bitwarden 的通行密钥：
 
@@ -50,7 +58,7 @@ Bitwarden 同时提供[使用通行密钥登录 Bitwarden](log-in-with-passkeys.
 Bitwarden 不会提示或允许您在密码库中保存登录 Bitwarden 的通行密钥。这样可以防止出现登录 Bitwarden 需要访问您的密码库的情况。
 {% endhint %}
 
-### 设置加密 <a href="#set-up-encryption" id="set-up-encryption"></a>
+### 设置加密用于解锁 <a href="#set-up-encryption-for-unlock" id="set-up-encryption-for-unlock"></a>
 
 要支持使用通行密钥进行密码库加密和解密，您的浏览器（例如 Google Chrome）和身份验证器（例如 YubiKey 5）都必须[支持 PRF](https://bitwarden.com/blog/prf-webauthn-and-its-role-in-passkeys/)。
 
@@ -72,7 +80,7 @@ Bitwarden 不会提示或允许您在密码库中保存登录 Bitwarden 的通�
 
 您可以使用同一界面上的**移除**按钮从 Bitwarden 中移除现有的通行密钥。从 Bitwarden 中移除通行密钥不会删除存储在 FIDO2 身份验证器中的私钥，但您将无法再使用它登录 Bitwarden。
 
-## 使用通行密钥登录 <a href="#log-in-with-your-passkey" id="log-in-with-your-passkey"></a>
+## 使用通行密钥登录和解锁 <a href="#log-in-and-unlock-with-your-passkey" id="log-in-and-unlock-with-your-passkey"></a>
 
 创建了您的通行密钥后，您就可以使用它来登录 Bitwarden 网页 App 和基于 chromium 的浏览器扩展了：
 
