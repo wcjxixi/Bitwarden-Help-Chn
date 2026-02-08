@@ -36,15 +36,15 @@ Bitwarden 提供三种通行密钥功能：[使用通行密钥登录和解锁](l
 
 3、在**使用通行密钥登录**部分，选择**启用**，或者如果您已经设置了通行密钥，则选择**新增通行密钥**。系统将提示您输入主密码。
 
-4、按照浏览器的提示创建 FIDO2 通行密钥。您可以使用生物识别等因素或创建 PIN 码来完成用户验证。
+4、按照浏览器的提示创建 FIDO2 通行密钥。您可以使用生物识别等因素或通过创建 PIN 码来完成用户验证。
 
 {% hint style="success" %}
 您可能需要取消浏览器希望您使用的默认验证器，例如，如果您想在 macOS 设备上使用硬件安全钥匙，它会优先使用 Touch ID。
 {% endhint %}
 
-5、给您您的通行密钥起个**名称**。
+5、输入您的通行密钥的**名称**。
 
-6、如果不想将通行密钥用于密码库加密和解密，请取消选中**用于密码库加密**复选框：
+6、（可选）如果您的浏览器和身份验证器支持 PRF，则**用于密码库加密**设置默认会被选中。这允许使用您的通行密钥解密和解锁您的密码库。如果不想将通行密钥用于密码库解锁，请取消选中此选项：
 
 {% embed url="https://bitwarden.com/assets/2gsO1o5tDU7s7LXvcpaL7w/56a8a797155760fe6fbd1d2e2d92b59b/2025-12-31_11-19-58.png?w=999&fm=avif" %}
 使用通行密钥用于密码库加密
@@ -53,10 +53,6 @@ Bitwarden 提供三种通行密钥功能：[使用通行密钥登录和解锁](l
 仅当您的浏览器（如 Google Chrome）和身份验证器（如 YubiKey 5）都[支持 PRF](log-in-with-passkeys.md#set-up-encryption) 时，才会出现此选项。
 
 7、选择**启用**。
-
-{% hint style="info" %}
-Bitwarden 不会提示或允许您在密码库中保存登录 Bitwarden 的通行密钥。这样可以防止出现登录 Bitwarden 需要访问您的密码库的情况。
-{% endhint %}
 
 ### 设置加密用于解锁 <a href="#set-up-encryption-for-unlock" id="set-up-encryption-for-unlock"></a>
 
@@ -68,7 +64,7 @@ Bitwarden 不会提示或允许您在密码库中保存登录 Bitwarden 的通�
 您所拥有的设备和所处的环境将决定您使用通行密钥进行加密的能力。
 {% endhint %}
 
-您的通行密钥列表将显示每个密码是可否用于加密，是否受支持但未启用，或不支持：
+您的通行密钥列表将显示每个通行密钥是可否用于加密，是否受支持但未启用，或不支持：
 
 {% embed url="https://bitwarden.com/assets/TpXTFNlF2hzRaUaLmxAXr/6710e5ab7c98efcb11547dc6038fdf7d/Passkeys_list.png?w=832&fm=avif" %}
 通行密钥列表
@@ -82,7 +78,7 @@ Bitwarden 不会提示或允许您在密码库中保存登录 Bitwarden 的通�
 
 ## 使用通行密钥登录和解锁 <a href="#log-in-and-unlock-with-your-passkey" id="log-in-and-unlock-with-your-passkey"></a>
 
-创建了您的通行密钥后，您就可以使用它来登录 Bitwarden 网页 App 和基于 chromium 的浏览器扩展了：
+创建了您的通行密钥后，您就可以将其使用于 Bitwarden 网页 App 和基于 Chromium 的浏览器扩展了。对于 macOS 上支持 PRF 的通行密钥，您需要使用基于 Chromium 的浏览器来访问网页 App。
 
 {% hint style="danger" %}
 由于已知缺陷，**如果您正在使用 Linux**，在您尝试使用通行密钥登录**之前**，您需要弹出浏览器扩展。
@@ -90,13 +86,19 @@ Bitwarden 不会提示或允许您在密码库中保存登录 Bitwarden 的通�
 <img src="https://bitwarden.com/assets/1cbJy0jLBmSQmRumvYzVwp/a9e43f4c154686249056924eb3e56323/pop_out_screenshot.png?w=407&#x26;fm=avif" alt="" data-size="original">
 {% endhint %}
 
+要使用通行密钥登录和解锁您的密码库：
+
 1. 在 Bitwarden 登录界面，在通常输入电子邮箱地址的地方，选择**使用通行密钥登录**。
 2. 按照浏览器的提示读取通行密钥，这将使用 Bitwarden 验证您的身份。
-3. 如果您的通行密钥[设置为用于密码库加密](log-in-with-passkeys.md#set-up-encryption)，那么就完成了！否则，请输入您的主密码然后选择**解锁**以解密您的密码库数据。
+3. 接下来的操作取决于您的通行密钥是否已[设置为用于密码库加密](log-in-with-passkeys.md#set-up-encryption-for-unlock)：
+   * 如果您的通行密钥已设置为用于密码库加密，则操作就完成了！通行密钥将用于解密并解锁您的密码库。
+   * 如果您的通行密钥未设置为用于密码库加密，请输入您的主密码然后选择**解锁**，或使用您之前已配置的其他解锁方式。
+
+如果您已登录，想要解锁密码库，请在密码库锁定界面选择**使用通行密钥解锁**。按照浏览器提示读取通行密钥。这将解锁您的账户并打开您的密码库。
 
 ## 工作原理 <a href="#how-it-works" id="how-it-works"></a>
 
-以下内容描述了使用通行密钥进行登录的机制。哪个选项卡与您相关，取决于您的通行密钥是否[设置了加密](log-in-with-passkeys.md#set-up-encryption)。
+使用通行密钥登录的机制取决于您的通行密钥是否[设置为用于加密](log-in-with-passkeys.md#set-up-encryption)。
 
 {% tabs %}
 {% tab title="启用了加密的通行密钥" %}

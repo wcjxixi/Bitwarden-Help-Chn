@@ -30,7 +30,7 @@ Bitwarden 会在初始发布后逐步更新每个客户端应用程序（浏览�
 ### Password Manager
 
 * **钓鱼拦截器**：Bitwarden 高级版和家庭版用户可通过浏览器扩展使用[钓鱼拦截器](password-manager/your-vault/security-tools/phishing-blocked.md)，该功能会在用户访问已知的钓鱼网站时发出通知。
-* **使用通行密钥解锁**：现在可以使用通行密钥解锁您的网页App 或浏览器扩展。这扩展了现有密码支持的功能，使其不再局限于登录，让您无需输入主密码即可访问您的密码库。
+* **使用通行密钥解锁**：现在可以[使用通行密钥解锁您的网页App 或浏览器扩展](account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md#set-up-encryption-for-unlock)。这扩展了现有的通行密钥支持的功能，使其不再局限于登录，让您无需输入主密码即可访问您的密码库。
 * **桌面 App UI 更新**：桌面 App UI 已更新，后续还将推出更多更新。
 * **扩展默认宽度更新**：浏览器扩展的默认宽度已加宽。您可以[从外观菜单](password-manager/your-vault/appearance/change-app-appearance.md#liu-lan-qi-kuo-zhan)中切换回窄版界面或超宽版界面。
 
