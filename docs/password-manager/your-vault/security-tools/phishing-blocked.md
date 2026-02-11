@@ -18,7 +18,7 @@ Bitwarden 钓鱼拦截器检测已知的钓鱼网站，并将用户重定向到�
 
 1、Bitwarden 不会加载已知的钓鱼网站，而是会将用户重定向到一个警告页面，提示该网站已被拦截。
 
-<figure><img src="https://bitwarden.com/assets/7IDSIId3ZA7nRT1T8gdX1T/3382ba87ffa5a38d8fa68b03d4ea0dcc/Phiishing-blocker-cropped.png?w=542&#x26;fm=jpg" alt="钓鱼拦截器"><figcaption></figcaption></figure>
+<div align="left"><figure><img src="https://bitwarden.com/assets/7IDSIId3ZA7nRT1T8gdX1T/3382ba87ffa5a38d8fa68b03d4ea0dcc/Phiishing-blocker-cropped.png?w=542&#x26;fm=jpg" alt="钓鱼拦截器"><figcaption></figcaption></figure></div>
 
 2、选择合适的选项：
 
@@ -33,7 +33,7 @@ Bitwarden 钓鱼拦截器检测已知的钓鱼网站，并将用户重定向到�
 
 默认情况下，个人高级版用户和家庭版用户将启用网络钓鱼拦截器。您可以在浏览器扩展中通过依次点击**设置** → **账户安全**然后选择开关来**打开**或**关闭**此功能：
 
-<figure><img src="https://bitwarden.com/assets/4jeEBHYQeUpsZNOoKKUeW1/d19fe64cfed2edba32983f45c5434490/phishing_setting.png?w=750&#x26;fm=jpg" alt="切换钓鱼拦截器"><figcaption><p>切换钓鱼拦截器</p></figcaption></figure>
+<div align="left"><figure><img src="https://bitwarden.com/assets/4jeEBHYQeUpsZNOoKKUeW1/d19fe64cfed2edba32983f45c5434490/phishing_setting.png?w=750&#x26;fm=jpg" alt="切换钓鱼拦截器"><figcaption><p>切换钓鱼拦截器</p></figcaption></figure></div>
 
 ## 工作原理 <a href="#how-it-works" id="how-it-works"></a>
 
