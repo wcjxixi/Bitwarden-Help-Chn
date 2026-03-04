@@ -6,6 +6,10 @@
 
 使用这篇文章帮助您从 1Password 导出数据并将其导入 Bitwarden 中。1Password 数据支持导出为 `.1pux`（要求 1Password v8.5+）、`.1pif` 或 `.csv` 文件，这取决于您使用的客户端版本和操作系统。了解 [1Password 导出包含哪些数据](https://support.1password.com/export/?mac#get-help)。
 
+{% hint style="success" %}
+iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通行密钥。了解如何使用凭证交换功能轻松从 1Password 迁移到 Bitwarden。
+{% endhint %}
+
 ## 从 1Password 导出 <a href="#export-your-1-password-1-pif-logins" id="export-your-1-password-1-pif-logins"></a>
 
 完成以下步骤以从 1Password 桌面 App 导出数据：
