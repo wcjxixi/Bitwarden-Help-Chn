@@ -54,22 +54,23 @@
 {% endtab %}
 
 {% tab title="Linux" %}
-这些 Linux 环境支持生物识别解锁：
-
-* 您的系统有 polkit 代理和机密服务守护进程，例如 GNOME Keyring。
-* Bitwarden 桌面 App 是从 `AppImage`、`.deb` 或 `.rpm` 软件包安装的。
+当您的系统具有 polkit 代理和机密服务守护程序（例如 GNOME Keyring）时，Linux 中支持生物识别解锁 Bitwarden 桌面 App。[Bitwarden 桌面 App](https://bitwarden.com/download/#downloads-desktop) 的所有可用的 Linux 版本都支持生物识别解锁。
 
 {% hint style="info" %}
-为 Linux 桌面 App 配置生物识别后，您仍然需要使用主密码或 PIN 码登录。登录后，使用生物识别解锁您的密码库。
+我们建议安装 Bitwarden 桌面 App 的 `Snap` 或 `Flatpak` 版本，因为它们完全支持自动更新。但是，这些版本与 Bitwarden 浏览器扩展中的生物识别不兼容。其他 Linux 软件包类型 `AppImage`、`.deb` 和 `.rpm` 与浏览器扩展中的生物识别兼容，但不会接收自动更新。
 {% endhint %}
 
 要启用生物识别解锁：
 
-1、在您的计算机上开启系统身份验证。
+1、在您的计算机上启用系统身份验证。
 
 2、打开 Bitwarden 桌面 App 然后转到**文件** → **设置**。
 
 3、在**安全**下，选中**通过系统身份验证解锁**，然后在出现提示时确认更新。
+
+{% hint style="info" %}
+为 Linux 桌面 App 配置生物识别后，您仍然需要使用主密码或 PIN 码登录。登录后，使用生物识别解锁您的密码库。
+{% endhint %}
 {% endtab %}
 {% endtabs %}
 
