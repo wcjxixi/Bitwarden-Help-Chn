@@ -10,11 +10,13 @@
 > * [**U2F**](https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E7%AC%AC%E4%BA%8C%E5%9B%A0%E7%B4%A0)：Universal 2nd Factor（通用第二因素）。由 [FIDO 联盟](https://fidoalliance.org/)制定的一个开放认证标准，使用专门的 USB 或 NFC 设备来加强并简化双重认证。
 > * [**YubiKey**](https://zh.wikipedia.org/wiki/YubiKey)：YubiKey 是由 [Yubico](https://www.yubico.com/) 公司生产的用于身份认证的硬件设备。部分 Yubikey 型号支持 FIDO。其他支持 FIDO 的硬件还有 Google 的 [Titan 安全钥匙](https://cloud.google.com/titan-security-key)、FEITIAN 的[安全钥匙](https://www.ftsafe.com/Products/FIDO)等。
 
-所有 Bitwarden 用户均可免费使用 FIDO2 WebAuthn 凭据进行两步登录。
+{% hint style="info" %}
+Bitwarden 提供三种通行密钥功能：[使用通行密钥登录和解锁](https://help.ppgg.in/docs/account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys#log-in-and-unlock-with-your-passkey)您的 Bitwarden 账户、在您的 Bitwarden 账户上使用[通行密钥 2FA](https://help.ppgg.in/docs/account/two-step-login/setup-two-step-login/two-step-login-via-fido)，以及为其他网站和服务[自动填充已存储的通行密钥](https://help.ppgg.in/docs/password-manager/autofill/more-autofill-options/autofill-passkeys)。
+{% endhint %}
 
-> **\[译者注]**：2023.9.0 之前，FIDO2 WebAuthn 方式的两步登录适用于高级用户，包括付费组织（家庭、团队或企业）的成员，不适用于免费用户。
+所有 Bitwarden 用户均可免费使用 FIDO2 WebAuthn 凭据进行两步登录。可以使用任何经过 FIDO2 WebAuthn 认证的验证器，包括 [YubiKey](https://www.yubico.com/)、[SoloKeys](https://solokeys.com/)、[Google Titan](https://store.google.com/product/titan_security_key)、[Nitrokey](https://www.nitrokey.com/) 等安全密钥，以及 Windows Hello 等原生生物识别选项。在 macOS 上，当前不支持 Touch ID 等非安全密钥。
 
-可以使用任何经过 FIDO2 WebAuthn 认证的验证器，包括 [YubiKey](https://www.yubico.com/)、[SoloKeys](https://solokeys.com/)、[Google Titan](https://store.google.com/product/titan_security_key)、[Nitrokey](https://www.nitrokey.com/) 等安全密钥，以及 Windows Hello 和 Touch ID 等原生生物识别选项。
+> **\[译者注]**：2023.9.0 版本之前，FIDO2 WebAuthn 方式的两步登录适用于高级用户，包括付费组织（家庭版、团队版或企业版）的成员，不适用于免费用户。
 
 {% hint style="success" %}
 所有通过 Bitwarden 设置的新 FIDO 密钥都会注册为 WebAuthn 密钥。如果您已注册的 FIDO 密钥在网页 App 的两步登录 → 管理 FIDO2 WebAuthn 视图中被标记为（**迁移自 FIDO**），则说明该密钥为 U2F 密钥，应将其删除并重新注册，以便自动将该密钥设置为 WebAuthn 密钥。Bitwarden 将于 2025 年开始逐步停止对（**迁移自 FIDO**）U2F 密钥的支持。
@@ -25,7 +27,7 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 * 具有[支持 FIDO2](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/) 的浏览器的设备上的**网页密码库**
 * [支持 FIDO2](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/) 的浏览器上的**浏览器扩展**
 * 具有[支持 FIDO2](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/) 的浏览器的 Android 和 iOS 13.3+ 上的**移动 App**
-* macOS 和 Windows 10+ 上的**桌面 App**
+* macOS、Windows 10+ 和 Liunx 上的**桌面 App**
 
 ## 设置 FIDO2 WebAuthn <a href="#setup-fido-2-webauthn" id="setup-fido-2-webauthn"></a>
 
