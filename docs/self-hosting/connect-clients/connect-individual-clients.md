@@ -12,7 +12,7 @@
 
 {% tabs %}
 {% tab title="浏览器扩展" %}
-要将浏览器扩展连接到您的自托管实例：
+要将浏览器扩展连接到您的自托管服务器：
 
 1、在登录或注册界面，选择**登录到**下拉菜单，然后选择**自托管**选项。
 
@@ -28,7 +28,7 @@
 {% endtab %}
 
 {% tab title="移动 App" %}
-要将移动 App 连接到您的自托管实例：
+要将移动 App 连接到您的自托管服务器：
 
 1、在登录或注册界面，选择**登录到**下拉菜单，然后选择**自托管**选项。
 
@@ -36,7 +36,9 @@
 
 2、在**服务器 URL** 字段中，输入以 `https://` 开头的您的服务器的域名（例如，`https://my.bitwarden.domain.com`）。
 
-3、选择**保存**。
+3、如果您的自托管服务器要求证书，请上传证书。
+
+4、选择**保存**。
 
 {% hint style="success" %}
 具有特殊设置的用户，可以选择在**自定义环境**部分中单独指定每个服务的 URL。
@@ -48,7 +50,7 @@
 
 1、在登录或注册界面，选择**登录到**下拉菜单，然后选择**自托管**选项。
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4KVc44Osl3K38W0dxdCl3M/53ad13b8f456e8d92594c29c54091bd0/desktop.png?w=250&#x26;fm=avif" alt=""><figcaption><p>桌面端自托管服务器选择</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3FlU02971dqGGkp86WJJc5/e5c40a136a11ee48c5e74a068bda2405/2026-04-23_09-17-05.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面端自托管服务器选择</p></figcaption></figure></div>
 
 2、在**服务器 URL** 字段中，输入以 `https://` 开头的您的服务器的域名（例如，`https://my.bitwarden.domain.com`）。
 
