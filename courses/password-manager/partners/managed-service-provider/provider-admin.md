@@ -55,17 +55,13 @@
 
 [提供商门户](../../../../docs/provider-portal/provider-portal-overview.md)是一种一体化管理体验，使提供商能够大规模管理客户的 Bitwarden 组织。它通过集中管理每个客户的访问和支持来简化管理任务，并允许您随着业务增长创建新客户：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7AoSHeZgJJTBXQmpZ13UBr/56ca464fe6987c8c5fc8e7099235d640/2025-02-25_15-17-46.png?_a=DAJCwlWIZAAB" %}
-提供商门户
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AoSHeZgJJTBXQmpZ13UBr/56ca464fe6987c8c5fc8e7099235d640/2025-02-25_15-17-46.png?w=800&#x26;fm=avif" alt=""><figcaption></figcaption></figure></div>
 
 ### 邀请您的提供商团队 <a href="#invite-your-provider-team" id="invite-your-provider-team"></a>
 
 每一个全明星提供商都需要一个全明星团队。从**管理** → **成员**视图开始邀请您的员工来[充实您的客户管理团队](../../../../docs/provider-portal/provider-users.md#onboard-provider-users)：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6E5GA111xdiHHkA0gb5LtG/5e5b5fddb5911e1b2ed468c1d49134ad/2024-12-05_09-27-45.png?_a=DAJCwlWIZAAB" %}
-添加提供商用户
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6E5GA111xdiHHkA0gb5LtG/5e5b5fddb5911e1b2ed468c1d49134ad/2024-12-05_09-27-45.png?w=800&#x26;fm=avif" alt=""><figcaption></figcaption></figure></div>
 
 **服务用户**可以全面管理任何客户组织，**提供商管理员**还可以额外管理您的提供商设置和计费。为了实现冗余保护，我们建议在您的团队中至少包含一名其他提供商管理员。
 
