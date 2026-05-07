@@ -20,25 +20,25 @@
 
 ## 更改主密码 <a href="#change-your-master-password" id="change-your-master-password"></a>
 
-如果您知道您当前的主密码，您可以通过网页密码库更改更新它：
+您可以从网页 App、浏览器扩展或桌面 App 更改您的主密码。您需要知道您当前的主密码才能进行此操作：
 
-{% hint style="info" %}
-如果您不知道当前的主密码，[了解该怎么做](i-forgot-my-master-password.md)**。**
-{% endhint %}
+{% tabs %}
+{% tab title="网页 App" %}
+在网页 App 中：
 
-1、在网页 App 中，从导航栏选择**设置** → **安全**。
+1、从导航栏选择**设置** → **安全**。
 
 2、选择**主密码**选项卡：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Svv0PwlH9i7SSK73dlv9A/e451afb190346e492110a7bf1bd3a518/Master_password_settings.png?w=1200&#x26;fm=avif" alt=""><figcaption><p>主密码设置</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Svv0PwlH9i7SSK73dlv9A/e451afb190346e492110a7bf1bd3a518/Master_password_settings.png?w=1200&#x26;fm=avif" alt=""><figcaption><p>在网页 App 上更改主密码</p></figcaption></figure></div>
 
 3、输入您的**当前主密码**。
 
 4、输入并确认您的**新主密码**。
 
-5、（可选） **输入主密码提示** ，帮助您回忆密码。提示会在收到请求后发送到账户持有人的电子邮箱。
+5、（可选） **输入主密码提示** ，它用于帮助您回忆密码。提示会在收到请求后发送到账户持有人的电子邮箱。
 
-6、如果您想在提交主密码之前通过 [HIBP](https://haveibeenpwned.com/) 检查您的主密码，请选中**检查密码的已知数据泄露情况**以运行[数据泄露报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-individual-vaults-only)。要运行此报告，您的主密码的哈希值将发送到 HIBP，并将其与存储的暴露哈希值进行比较。 Bitwarden 永远不会暴露您的主密码本身。
+6、（可选） 如果您想在提交主密码之前通过 [HIBP](https://haveibeenpwned.com/) 检查您的主密码，请选中**检查密码的已知数据泄露情况**以运行[数据泄露报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-individual-vaults-only)。这会将您的主密码的哈希值将发送到 HIBP，并将其与存储的暴露哈希值进行比较。Bitwarden 绝不会暴露您的主密码本身。
 
 {% hint style="danger" %}
 除非您完全了解其后果和所需的后续步骤，否则请不要选中**轮换账户加密密钥**复选框。[了解更多](../../security/encryption/encryption-key-rotation.md)。
@@ -47,6 +47,50 @@
 7、选择**更改主密码**按钮。
 
 更改主密码将会自动注销网页密码库会话。其他已登录的 App 可能保持活动状态长达一小时，但最终也会要求您使用新的主密码重新登录。
+{% endtab %}
+
+{% tab title="浏览器扩展" %}
+在浏览器扩展中：
+
+1、打开**设置**选项卡，然后选择**账户安全**。
+
+2、滚动到**其他选项**部分，然后选择**更改主密码**：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/13NQDBUne0d99ssQlhxnTy/5320be0c494c351f808db48db48105ba/2026-04-21_09-58-31.png?w=800&#x26;fm=avif" alt=""><figcaption><p>在浏览器扩展上更改主密码</p></figcaption></figure></div>
+
+3、输入您的**当前主密码**。
+
+4、输入并确认您的**新主密码**。
+
+5、（可选） **输入主密码提示** ，它用于帮助您回忆密码。提示会在收到请求后发送到账户持有人的电子邮箱。
+
+6、（可选） 如果您想在提交主密码之前通过 [HIBP](https://haveibeenpwned.com/) 检查您的主密码，请选中**检查密码的已知数据泄露情况**以运行[数据泄露报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-individual-vaults-only)。这会将您的主密码的哈希值将发送到 HIBP，并将其与存储的暴露哈希值进行比较。Bitwarden 绝不会暴露您的主密码本身。
+
+7、选择**更改主密码**按钮。
+
+更改主密码将会自动注销网页密码库会话。其他已登录的 App 可能保持活动状态长达一小时，但最终也会要求您使用新的主密码重新登录。
+{% endtab %}
+
+{% tab title="桌面 App" %}
+在桌面 App 中：
+
+1、从菜单栏中选择**账户** → **更改主密码**：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5X1HjOgjvRg0ewMD30zYaY/4d9dfb5f92429b3b42d5111e0b759ca5/2026-04-21_09-00-24.png?w=800&#x26;fm=avif" alt=""><figcaption><p>在桌面 App 上更改主密码</p></figcaption></figure></div>
+
+2、输入您的**当前主密码**。
+
+3、输入并确认您的**新主密码**。
+
+4、（可选） **输入主密码提示** ，它用于帮助您回忆密码。提示会在收到请求后发送到账户持有人的电子邮箱。
+
+5、（可选） 如果您想在提交主密码之前通过 [HIBP](https://haveibeenpwned.com/) 检查您的主密码，请选中**检查密码的已知数据泄露情况**以运行[数据泄露报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-individual-vaults-only)。这会将您的主密码的哈希值将发送到 HIBP，并将其与存储的暴露哈希值进行比较。Bitwarden 绝不会暴露您的主密码本身。
+
+6、选择**更改主密码**按钮。
+
+更改主密码将会自动注销网页密码库会话。其他已登录的 App 可能保持活动状态长达一小时，但最终也会要求您使用新的主密码重新登录。
+{% endtab %}
+{% endtabs %}
 
 ## 我忘记了主密码 <a href="#i-forgot-my-master-password" id="i-forgot-my-master-password"></a>
 
