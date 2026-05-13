@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/recover-a-member-account/)
 {% endhint %}
 
-要恢复忘记主密码或丢失了信任设备的成员的账户：
+要恢复忘记了主密码或丢失了信任设备的成员的账户：
 
 * 您必须是[所有者、管理员或允许的自定义角色成员](../member-roles.md)。
 * 您的组织必须已开启[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#setting-enterprise-policies)。
@@ -14,7 +14,7 @@
 已注册账户恢复的成员将在**策略**栏中显示一个钥匙图标 (**🔑**)。
 {% endhint %}
 
-完成以下步骤已恢复组织成员的账户：
+完成以下步骤以恢复组织成员的账户：
 
 1、在管理控制台中，导航至**成员**视图。
 
