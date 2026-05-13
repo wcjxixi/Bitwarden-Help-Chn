@@ -10,7 +10,7 @@
 
 ### 问：如果我忘记了主密码应该该怎么办？ <a href="#q-what-do-i-do-if-i-forgot-my-master-password" id="q-what-do-i-do-if-i-forgot-my-master-password"></a>
 
-**答：**&#x4F5C;为一个零知识解决方案，Bitwarden 及其系统无法获知您的主密码，也无法找回或重置您的主密码。如果您已经丢失了主密码，很遗憾，我们的团队无法帮您恢复账户。要了解后续操作步骤，或如何主动保护自己免受此类情况的影响，请参阅[您的主密码](../../account/log-in-and-unlock/your-master-password.md)这篇文章。
+**答：**&#x4F5C;为一个零知识解决方案，Bitwarden 及其系统无法获知您的主密码，也无法找回或重置您的主密码。如果您已经丢失了主密码，很遗憾，我们的团队无法帮您恢复账户。要了解后续操作步骤，或如何主动保护自己免受此类情况的影响，请参阅[您的主密码](../../account/log-in-and-unlock/master-password.md)这篇文章。
 
 ### 问：在紧急情况下，是否有办法让别人访问我的密码库项目？ <a href="#q-is-there-a-way-for-someone-to-access-my-vault-items-in-case-of-emergency" id="q-is-there-a-way-for-someone-to-access-my-vault-items-in-case-of-emergency"></a>
 

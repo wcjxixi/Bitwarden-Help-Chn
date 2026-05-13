@@ -24,7 +24,7 @@
 * **其他选项**：
   * **指纹短语**：查看您账户的[指纹短语](../../security/encryption/account-fingerprint-phrase.md)。
   * **两步登录**：打开网页 App 以设置[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)。
-  * **更改主密码**：打开网页 App 以[更改您的主密码](../../account/log-in-and-unlock/your-master-password.md#change-your-master-password)。
+  * **更改主密码**：打开网页 App 以[更改您的主密码](../../account/log-in-and-unlock/master-password.md#change-your-master-password)。
 
 </details>
 
@@ -114,7 +114,7 @@
 * **其他**：
   * **指纹短语**：查看您账户的[指纹短语](../../security/encryption/account-fingerprint-phrase.md)。
   * **两步登录**：打开网页 App 以设置[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)。
-  * **更改主密码**：打开网页 App 以[更改您的主密码](../../account/log-in-and-unlock/your-master-password.md#change-your-master-password)。
+  * **更改主密码**：打开网页 App 以[更改您的主密码](../../account/log-in-and-unlock/master-password.md#change-your-master-password)。
 
 </details>
 

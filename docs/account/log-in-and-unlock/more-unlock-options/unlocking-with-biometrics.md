@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/biometrics/)
 {% endhint %}
 
-在桌面 App、浏览器扩展和移动 App 中，可以使用生物识别快速安全地访问您的密码库。使用标准方式（例如[主密码](../your-master-password.md)或[受信任设备](../using-single-sign-on/add-a-trusted-device.md)）登录后，然后使用生物识别[解锁您的密码库](../understand-log-in-vs-unlock.md)。
+在桌面 App、浏览器扩展和移动 App 中，可以使用生物识别快速安全地访问您的密码库。使用标准方式（例如[主密码](../master-password.md)或[受信任设备](../using-single-sign-on/add-a-trusted-device.md)）登录后，然后使用生物识别[解锁您的密码库](../understand-log-in-vs-unlock.md)。
 
 生物识别功能是设备和/或操作系统内置安全性的一部分。Bitwarden 利用本地 API 来执行这种验证，因此 **Bitwarden 永远不会收到您的生物识别数据**。
 

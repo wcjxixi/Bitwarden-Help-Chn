@@ -8,7 +8,7 @@
 账户恢复适用于**企业版组织**。
 {% endhint %}
 
-账户恢复功能允许[所有者、管理员和某些自定义角色成员](../member-roles.md)在成员忘记[主密码](../../../account/log-in-and-unlock/your-master-password.md)或丢失[受信任信设备](../../login-with-sso/trusted-devices/about-trusted-devices.md)时恢复成员账户。账户恢复：
+账户恢复功能允许[所有者、管理员和某些自定义角色成员](../member-roles.md)在成员忘记[主密码](../../../account/log-in-and-unlock/master-password.md)或丢失[受信任信设备](../../login-with-sso/trusted-devices/about-trusted-devices.md)时恢复成员账户。账户恢复：
 
 * 可以通过启用[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#account-recovery-administration)为组织激活。
 * 要求成员通过自动注册或自行注册的方式[注册](account-recovery-enrollment.md)，才能获得账户恢复资格。注册会触发密钥交换，从而确保账户恢复的安全性。

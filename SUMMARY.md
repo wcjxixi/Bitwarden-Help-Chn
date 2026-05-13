@@ -10,7 +10,7 @@
   * [创建 Bitwarden 账户](docs/account/create-bitwarden-account.md)
   * [选择服务器](docs/account/choose-my-server.md)
   * [登录 & 解锁](docs/account/log-in-and-unlock/README.md)
-    * [主密码](docs/account/log-in-and-unlock/your-master-password.md)
+    * [主密码](docs/account/log-in-and-unlock/master-password.md)
     * [忘记主密码](docs/account/log-in-and-unlock/i-forgot-my-master-password.md)
     * [自动注销或锁定](docs/account/log-in-and-unlock/vault-timeout-options.md)
     * [理解登录 & 解锁](docs/account/log-in-and-unlock/understand-log-in-vs-unlock.md)

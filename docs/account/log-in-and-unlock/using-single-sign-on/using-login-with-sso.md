@@ -26,7 +26,7 @@
 
 {% tabs %}
 {% tab title="主密码" %}
-输入您的主密码，或者，如果您的账户是新账户，请创建[主密码](../your-master-password.md)以完成登录：
+输入您的主密码，或者，如果您的账户是新账户，请创建[主密码](../master-password.md)以完成登录：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/TJ0nUZ4zs7l38aOQz5WLl/6b95624ef2271198f6fc6447b77d63c1/2025-10-13_12-57-15.png?w=958&#x26;fm=avif" alt=""><figcaption><p>使用主密码解密</p></figcaption></figure></div>
 

@@ -143,7 +143,7 @@
 当信任的紧急联系人被授予并使用**接管**访问权限时，他们会更改您账户的主密码。因此，移除他们的访问权限的唯一方法是：
 
 1. 获取他们为您的账户创建的新主密码并使用它登录[网页密码库](../../../password-manager/getting-started/getting-started-webvault.md)。
-2. [更改您的主密码](../your-master-password.md#change-your-master-password)为一个他们不知道的密码。
+2. [更改您的主密码](../master-password.md#change-your-master-password)为一个他们不知道的密码。
 {% endtab %}
 {% endtabs %}
 

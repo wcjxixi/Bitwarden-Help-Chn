@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/master-password-re-prompt/)
 {% endhint %}
 
-对于任何[项目](../vault-items/vault-items.md)，您可在添加或编辑界面启用**主密码重新提示**选项，以要求在访问或自动填充密码库中的敏感项目时验证您的[主密码](../../../account/log-in-and-unlock/your-master-password.md)：
+对于任何[项目](../vault-items/vault-items.md)，您可在添加或编辑界面启用**主密码重新提示**选项，以要求在访问或自动填充密码库中的敏感项目时验证您的[主密码](../../../account/log-in-and-unlock/master-password.md)：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/sgKb0RX5hGdrdKLmXcR0R/f78654839e18b3f474dd3e95ed0d203c/2024-12-02_14-38-06.png?w=1036&#x26;fm=avif" alt=""><figcaption><p>主密码重新提示</p></figcaption></figure></div>
 
