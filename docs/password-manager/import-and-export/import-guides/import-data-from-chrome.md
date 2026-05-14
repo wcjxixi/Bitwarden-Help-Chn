@@ -163,7 +163,7 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 {% endtab %}
 {% endtabs %}
 
-如果出现「导入错误」消息，则表明没有数据添加到您的密码库中。[修复导入文件问题](../import-data.md#troubleshoot-import-errors)然后重试。
+如果出现「导入错误」消息，则不会有任何数据添加到您的密码库中。[修复导入文件问题](../import-data.md#troubleshoot-import-errors)然后重试。
 
 ## 从浏览器直接导入 <a href="#import-directly-from-browser" id="import-directly-from-browser"></a>
 
