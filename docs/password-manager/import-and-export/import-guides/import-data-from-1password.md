@@ -158,7 +158,7 @@ bw import <format> <path>
 `bw import` 命令需要格式（使用 `bw import --formats` 获取格式列表）和路径，例如：
 
 ```bash
-bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
+bw import <format> /Users/myaccount/Documents/mydata.csv
 ```
 
 数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。

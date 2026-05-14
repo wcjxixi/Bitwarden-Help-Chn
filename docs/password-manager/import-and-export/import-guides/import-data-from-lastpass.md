@@ -138,7 +138,7 @@ bw import <format> <path>
 `bw import` 命令需要格式（使用 `bw import --formats` 获取格式列表）和路径，例如：
 
 ```bash
-bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
+bw import <format> /Users/myaccount/Documents/mydata.csv
 ```
 
 成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
