@@ -26,7 +26,7 @@
 
 ## 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
-数据可以从网页 App、CLI、桌面 App 或浏览器扩展导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
+数据可以从网页 App、浏览器扩展、桌面 App 以及 CLI 导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
 
 {% hint style="info" %}
 虽然某些项目类型无法导入，但您仍可将其添加到密码库：
@@ -53,7 +53,7 @@
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
-* 要将数据保存到某个组织的密码库中，请选择该组织的名称。（可选）选择一个集合来组织导入的项目并与其他成员共享。（您只能选择您拥有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-permissions.md)权限的集合。）
+* 要将数据保存到某个组织的密码库中，请选择组织的名称。（可选）选择一个集合来组织导入的项目并与其他成员共享。（您只能选择您拥有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-permissions.md)权限的集合。）
 
 4、从**文件格式**下拉菜单中，选择您的导出数据的[文件格式](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -88,7 +88,7 @@
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
-* 要将数据保存到某个组织的密码库中，请选择该组织的名称。（可选）选择一个集合来组织导入的项目并与其他成员共享。（您只能选择您拥有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-permissions.md)权限的集合。）
+* 要将数据保存到某个组织的密码库中，请选择组织的名称。（可选）选择一个集合来组织导入的项目并与其他成员共享。（您只能选择您拥有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-permissions.md)权限的集合。）
 
 5、从**文件格式**下拉菜单中，选择[导入文件的格式](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -124,7 +124,7 @@
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
-* 要将数据保存到某个组织的密码库中，请选择该组织的名称。（可选）选择一个集合来组织导入的项目并与其他成员共享。（您只能选择您拥有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-permissions.md)权限的集合。）
+* 要将数据保存到某个组织的密码库中，请选择组织的名称。（可选）选择一个集合来组织导入的项目并与其他成员共享。（您只能选择您拥有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-permissions.md)权限的集合。）
 
 3、从**文件格式**下拉菜单中，选择[导入文件的格式](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 

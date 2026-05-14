@@ -37,7 +37,7 @@
 
 ### 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
-数据可以从网页 App、CLI、桌面 App 或浏览器扩展导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
+数据可以从网页 App、浏览器扩展、桌面 App 以及 CLI 导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
 
 {% hint style="info" %}
 虽然某些项目类型无法导入，但您仍然可以将它们添加到密码库：
@@ -160,7 +160,7 @@ bw import <format> <path>
 `bw import` 命令需要格式（使用 `bw import --formats` 获取格式列表）和路径，例如：
 
 ```shell
-bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
+bw import <format> /Users/myaccount/Documents/mydata.csv
 ```
 
 数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
