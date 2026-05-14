@@ -140,15 +140,15 @@
 {% endtab %}
 
 {% tab title="CLI" %}
-要将数据导入您的密码库，请使用以下 CLI 命令：
+要将数据导入您的密码库，请使用以下 [CLI](../../developer-tools/cli/password-manager-cli.md) 命令：
 
-```batch
+```shell
 bw import <format> <path>
 ```
 
 `bw import` 命令需要格式（使用 `bw import --formats` 获取格式列表）和路径，例如：
 
-```batch
+```shell
 bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ```
 
