@@ -33,7 +33,7 @@
 2、从**类型**下拉菜单中，选择 **OpenID Connect** 选项。如果您打算改用 SAML，请切换到 [SAML 配置指南](generic-saml.md)。
 
 {% hint style="success" %}
-还有可选的**成员解密选项**。了解[受信任的设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 使用入门。
+还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
 ## 第 3 步：配置 <a href="#step-3-configuration" id="step-3-configuration"></a>

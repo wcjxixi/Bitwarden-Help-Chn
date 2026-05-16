@@ -35,7 +35,7 @@
 如果您愿意，可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做将从 SP 实体 ID 值中移除您的组织 ID，但在几乎所有情况下，建议保留此选项。
 
 {% hint style="success" %}
-还有可选的**成员解密选项**。了解[受信任的设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 使用入门。
+还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
 ## 第 3 步：配置 <a href="#step-3-configuration" id="step-3-configuration"></a>

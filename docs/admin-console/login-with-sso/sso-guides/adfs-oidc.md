@@ -1,4 +1,4 @@
-# =ADFS OIDC
+# ADFS OIDC
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/adfs-oidc-implementation/)
@@ -21,7 +21,7 @@
 如果还没有为您的组织创建唯一的 **SSO 标识符**，请创建一个。否则，您不需要在此界面上编辑任何内容，保持此界面打开，以方便参考。
 
 {% hint style="success" %}
-您可以选择性使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 和 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
+还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
 ## 创建应用程序组 <a href="#create-an-application-group" id="create-an-application-group"></a>
@@ -30,17 +30,13 @@
 
 1、在控制台树中，选择 **Application Groups**，然后从 Actions 列表中选择 **Add Application Group**。
 
-2、在 Welcome 向导界面上，选择 **Server application accessing a web API**。
+2、在向导的欢迎界面上，选择 **Server application accessing a web API** 模版。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5X9h5j0BUUJ39NLtOqarjF/5948faaf2e497cc435b6da0f2e8ce610/adfs-oidc-1.png?fm=webp&h=580&q=50&w=712" %}
-AD FS 添加应用程序组
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5X9h5j0BUUJ39NLtOqarjF/5948faaf2e497cc435b6da0f2e8ce610/adfs-oidc-1.png?w=800&#x26;fm=avif" alt=""><figcaption><p>AD FS 添加应用程序组</p></figcaption></figure></div>
 
 3、在 Server Application 界面上：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1e87bYOhKpJ4cWuvlgrRL8/46389fb08be2d247303a55d5e17196d4/adfs-oidc-2.png?fm=webp&h=583&q=50&w=716" %}
-AD FS 服务器应用程序界面
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1e87bYOhKpJ4cWuvlgrRL8/46389fb08be2d247303a55d5e17196d4/adfs-oidc-2.png?w=800&#x26;fm=avif" alt=""><figcaption><p>AD FS 服务器应用程序界面</p></figcaption></figure></div>
 
 * 为服务器应用程序起一个 **Name**。
 * 记下 **Client Identifier**。在后续步骤中需要此值。
@@ -50,9 +46,7 @@ AD FS 服务器应用程序界面
 
 5、在 Configure Web API 界面上：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/28pMbK9dUI9ZIfcwDaf4Dw/b0572921f857956d3a61077de352c555/adfs-oidc-3.png?fm=webp&h=582&q=50&w=723" %}
-AD FS 配置 Web API 界面
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/28pMbK9dUI9ZIfcwDaf4Dw/b0572921f857956d3a61077de352c555/adfs-oidc-3.png?w=800&#x26;fm=avif" alt=""><figcaption><p>AD FS 配置网页 API 界面</p></figcaption></figure></div>
 
 * 为 Web API 起一个 **Name**。
 * 将 **Client Identifier** 和 **Redirect URI**（参见步骤 3）添加到 Identifier list 中。
@@ -61,9 +55,7 @@ AD FS 配置 Web API 界面
 
 7、在 Configure Application Permissions 界面上，允许范围勾选 `allatclaims` 和 `openid`。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2PvGUtVgRfd0GLx1HG72Is/1e41e84f90fac6b20b4aaf93a9c38069/adfs-oidc-4.png?fm=webp&h=581&q=50&w=716" %}
-AD FS 配置应用程序权限界面
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2PvGUtVgRfd0GLx1HG72Is/1e41e84f90fac6b20b4aaf93a9c38069/adfs-oidc-4.png?w=800&#x26;fm=avif" alt=""><figcaption><p>AD FS 配置应用程序权限界面</p></figcaption></figure></div>
 
 8、完成添加应用程序组向导。
 
@@ -83,9 +75,7 @@ AD FS 配置应用程序权限界面
 
 6、在 Configure Claim Rule 界面上：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/67MOJ621dRTvbkVR5gyW7e/044d2b61f1df83069f961d30639f29b3/adfs-oidc-5.png?fm=webp&h=585&q=50&w=717" %}
-AD FS 配置声明规则界面
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/67MOJ621dRTvbkVR5gyW7e/044d2b61f1df83069f961d30639f29b3/adfs-oidc-5.png?w=800&#x26;fm=avif" alt=""><figcaption><p>AD FS 配置声明规则界面</p></figcaption></figure></div>
 
 * 给规则起一个 **Claim rule name**。
 * 从 LDAP Attribute 下拉列表中，选择 **E-Mail-Addresses**。

@@ -11,7 +11,7 @@
 {% hint style="success" %}
 **已经是 SSO 专家了吗？**&#x8DF3;过本文中的说明，然后下载快速配置指南以使用 Entra ID 设置 SSO 和 SCIM。
 
-**⬇️**[快速配置指南](https://bitwarden.com/assets/1Qe8NasMRjmKyO575a9i5w/649ad79d5cd895f304fc32230280e97b/entra-id-guide.pdf)
+**⬇️** [快速配置指南](https://bitwarden.com/assets/1Qe8NasMRjmKyO575a9i5w/649ad79d5cd895f304fc32230280e97b/entra-id-guide.pdf)
 {% endhint %}
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
@@ -29,7 +29,7 @@
 如果愿意，您可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做会从 SP 实体 ID 值中移除组织 ID，但大多数情况下都建议打开该选项。
 
 {% hint style="success" %}
-您可以选择性使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 和 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
+还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
 ## 创建企业应用程序 <a href="#create-an-enterprise-application" id="create-an-enterprise-application"></a>

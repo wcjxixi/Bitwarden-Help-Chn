@@ -11,7 +11,7 @@
 {% hint style="success" %}
 **已经是 SSO 专家了吗？**&#x8DF3;过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
 
-**⬇️**[下载示例](https://bitwarden.com/assets/20UMzdVJ0bPm0ggsNF1QE5/e88a1f1e2ffbaddcf42c65d404916c23/saml-auth0-sample.zip)
+**⬇️** [下载示例](https://bitwarden.com/assets/20UMzdVJ0bPm0ggsNF1QE5/e88a1f1e2ffbaddcf42c65d404916c23/saml-auth0-sample.zip)
 {% endhint %}
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
@@ -29,20 +29,18 @@
 如果愿意，您可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做会从 SP 实体 ID 值中移除组织 ID，但大多数情况下都建议打开该选项。
 
 {% hint style="success" %}
-您可以选择性使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 和 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
+还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
 ## 创建 Auth0 应用程序 <a href="#create-an-auth0-application" id="create-an-auth0-application"></a>
 
 在 Auth0 门户中，使用应用程序菜单来创建一个 **Regular Web Application**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3EsE3HTVqocRvC1f2XSWbt/9077b5bc7801de7270372594e62b7aad/auth0-createapp.png?fm=webp&h=400&q=50&w=1040" %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3EsE3HTVqocRvC1f2XSWbt/9077b5bc7801de7270372594e62b7aad/auth0-createapp.png?w=800&#x26;fm=avif" alt=""><figcaption><p>创建 Auth0 应用程序</p></figcaption></figure></div>
 
-点击 **Setting** 标签并配置以下信息，其中一些信息您需要从 Bitwarden 业务门户中获取：
+点击 **Setting** 标签并配置以下信息，其中一些信息您需要从 Bitwarden 单点登录界面获取：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6MMUA6fh1HBgeEa1lCWXc5/4dc49064bcd846f5973595fed3f525e9/auth0-appsettings.png?fm=webp&h=569&q=50&w=860" %}
-Auth0 设置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6MMUA6fh1HBgeEa1lCWXc5/4dc49064bcd846f5973595fed3f525e9/auth0-appsettings.png?w=800&#x26;fm=avif" alt=""><figcaption><p>Auth0 设置</p></figcaption></figure></div>
 
 | Auth0 设置                             | 描述                                                                                                                                                              |
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,29 +55,29 @@ Auth0 设置
 
 在 **Advanced Settings** → **Grant Types** 部分，确保选择了以下授权类型（可以预先选择）：
 
-![应用程序授权类型](https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-advancedsettings.png)
+<div align="left" data-with-frame="true"><img src="https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-advancedsettings.png" alt="应用程序授权类型"></div>
 
 ### Certificates
 
 在 **Advanced Settings** → **Certificates** 部分，复制或下载您的签名证书。你现在还不需要用它做任何事情，但需要[稍后引用](auth0-saml-configuration.md#identity-provider-configuration)它。
 
-![Auth0 证书](https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-certificate.png)
+<div align="left" data-with-frame="true"><img src="https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-certificate.png" alt="Auth0 证书"></div>
 
 ### Endpoints
 
 &#x20;不需要在 **Advanced Settings** → **Endpoints** 部分编辑任何东西，但你需要这个 SAML 端点，以便[稍后引用](auth0-saml-configuration.md#identity-provider-configuration)它。
 
-{% hint style="info" %}
-在较小的窗口中，**Endpoints** 选项卡可能会消失在浏览器的边缘。如果您找不到它，请单击 **Certificates** 选项卡，然后按右方向键键（→）。
+{% hint style="success" %}
+在较小的窗口中，**Endpoints** 选项卡可能会消失在浏览器的边缘。如果您找不到它，请单击 **Certificates** 选项卡，然后按右方向键 (→)。
 {% endhint %}
 
-![Auth0 端点](https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-endpoints.png)
+<div align="left" data-with-frame="true"><img src="https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-endpoints.png" alt="Auth0 端点"></div>
 
 ## ~~配置 Auth0 规则~~ <a href="#configure-auth0-rules" id="configure-auth0-rules"></a>
 
 ~~创建规则来定制你的应用程序的 SAML 响应行为。虽然 Auth0 提供了~~[~~多个选项~~](https://auth0.com/docs/protocols/saml-protocol/customize-saml-assertions#saml-assertion-attributes)~~，但这里将只关注那些专门映射到 Bitwarden 的选项。要创建一个自定义 SAML 配置规则集，请使用 **Auth Pipeline → Rules** 菜单来 **Create**（创建）规则：~~
 
-![Auth0 规则](https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-settings.png)
+<div align="left" data-with-frame="true"><img src="https://raw.githubusercontent.com/bitwarden/help/master/images/sso/cheatsheets/saml-auth0/auth0-settings.png" alt="Auth0 规则"></div>
 
 ~~以下任何项目均可配置：~~
 
