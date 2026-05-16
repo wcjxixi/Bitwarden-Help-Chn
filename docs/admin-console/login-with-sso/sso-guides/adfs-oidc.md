@@ -1,4 +1,4 @@
-# ADFS OIDC
+# =ADFS OIDC
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/adfs-oidc-implementation/)
@@ -100,8 +100,8 @@ AD FS 配置声明规则界面
 | 字段                                                      | 描述                                                                                                                                    |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | Authority                                               | 输入附加了 `/adfs` 的 AD FS 服务器的主机名称，例如 `https://adfs.mybusiness.com/adfs`。                                                                 |
-| Client ID                                               | 输入[获取到的 Client ID](pingfederate-saml-implementation.md#create-an-application-group)。                                                  |
-| Client Secret                                           | 输入[获取到的 Client Secret](pingfederate-saml-implementation.md#create-an-application-group)。                                              |
+| Client ID                                               | 输入[获取到的 Client ID](adfs-oidc.md#create-an-application-group)。                                                                         |
+| Client Secret                                           | 输入[获取到的 Client Secret](adfs-oidc.md#create-an-application-group)。                                                                     |
 | Metadata Address                                        | 输入附加了 `/.well-known/openid-configuration` 的指定 **Authority** 值，例如 `https://adfs.mybusiness.com/adfs/.well-known/openid-configuration`。 |
 | OIDC Redirect Behavior                                  | 选择 **Redirect GET**。                                                                                                                  |
 | Get Claims From User Info Endpoint                      | 如果您在 SSO 期间收到 URL 太长错误 (HTTP 414)、截断的 URL 和/或失败，请启用此选项。                                                                               |

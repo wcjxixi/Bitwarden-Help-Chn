@@ -1,4 +1,4 @@
-# =ADFS SAML
+# ADFS SAML
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-adfs/)
@@ -62,49 +62,45 @@
 
 要更改 **Secure hash algorithm**（默认为 SHA-256），请导航到 **Advanced** 选项卡：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/55udgWPsUtxhl465HMFGV7/2d0dcb14562599aca669d60d00cf8b5a/saml-adfs3.png?fm=webp&h=654&q=50&w=1024" %}
-设置一个安全的哈希算法
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/55udgWPsUtxhl465HMFGV7/2d0dcb14562599aca669d60d00cf8b5a/saml-adfs3.png?w=800&#x26;fm=avif" alt=""><figcaption><p>设置一个安全的哈希算法</p></figcaption></figure></div>
 
 #### 端点绑定 <a href="#endpoint-binding" id="endpoint-binding"></a>
 
-要更改端点 **Binding**（默认为 POST），请导航到 **Endpoints** 选项卡并选择已配置的 ACS URL：
+要更改端点 **Binding**（默认为 POST），请导航到 **Endpoints** 选项卡然后选择已配置的 ACS URL：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/N2pjHd1LxGhH0h0620BfV/c1280e20044b6f36758c56ea22d6935f/saml-adfs4.png?fm=webp&h=764&q=50&w=1023" %}
-编辑端点
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/N2pjHd1LxGhH0h0620BfV/c1280e20044b6f36758c56ea22d6935f/saml-adfs4.png?w=800&#x26;fm=avif" alt=""><figcaption><p>编辑端点</p></figcaption></figure></div>
 
 ### 编辑声明颁发规则 <a href="#edit-claim-issuance-rules" id="edit-claim-issuance-rules"></a>
 
-构建声明颁发规则以确保将适当的声明（包括 **Name ID**）传递给 Bitwarden。以下选项卡演示了示例规则集：
+构建声明颁发规则以确保将适当的声明（包括 **Name ID**）传递给 Bitwarden。要编辑声明颁发规则，请返回上一界面，导航至 Edit Claim Issuance Policy，然后从右侧导航中选择它。
+
+以下选项卡演示了示例规则集：
 
 {% tabs %}
 {% tab title="规则 1" %}
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/4AVKGRDotEE4DmHnYUQ7dH/78a16406fa80d28b0b3b3db8ffb54d8c/saml-adfs5.png?fm=webp&h=943&q=50&w=1031" %}
-ADFS 规则 1
-{% endembed %}
+规则 1 使用声明规则模板 **Send LDAP Attributes as Claims**。
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4AVKGRDotEE4DmHnYUQ7dH/78a16406fa80d28b0b3b3db8ffb54d8c/saml-adfs5.png?w=800&#x26;fm=avif" alt=""><figcaption><p>ADFS 规则 1</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="规则 2" %}
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6B5hyOKQYJwLYOy0NdsXbW/1906a568bf8e59cdb9c5122c0a1a0c48/saml-adfs6.png?fm=webp&h=933&q=50&w=1024" %}
-ADFS 规则 2
-{% endembed %}
+规则 2 使用声明规则模板 **Send LDAP Attributes as Claims**。
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6B5hyOKQYJwLYOy0NdsXbW/1906a568bf8e59cdb9c5122c0a1a0c48/saml-adfs6.png?w=800&#x26;fm=avif" alt=""><figcaption><p>ADFS 规则 2</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="规则 3" %}
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5MXoJkIzw0EUgj4ImrctYK/fa8d5bd0d3e11d6a40f7ce1b28667680/saml-adfs7.png?fm=webp&h=941&q=50&w=1028" %}
-ADFS 规则 3
-{% endembed %}
+规则 3 使用声明规则模板 **Transform an Incoming Claim**。
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5MXoJkIzw0EUgj4ImrctYK/fa8d5bd0d3e11d6a40f7ce1b28667680/saml-adfs7.png?w=800&#x26;fm=avif" alt=""><figcaption><p>ADFS 规则 3</p></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
 ### 获取证书 <a href="#get-certificate" id="get-certificate"></a>
 
-在左侧的文件导航器中，选择 **AD FS** → **Service** → **Certificates** 打开证书列表。选择 **Token-signing** 证书，导航到其 **Details** 选项卡，然后选择 **Copy to File…** 按钮以导出 Base-64 编码的令牌签名证书：
+在左侧的文件导航器中，选择 **AD FS** → **Service** → **Certificates**，打开证书列表。选择 **Token-signing** 证书，导航到其 **Details** 选项卡，然后选择 **Copy to File…** 按钮以导出 Base-64 编码的令牌签名证书：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/7lfIJtH8gWTtOlyGucLa7o/fd30e57b1aef292139049f7e4ab27038/saml-adfs8.png?fm=webp&h=879&q=50&w=984" %}
-获取令牌签名证书
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7lfIJtH8gWTtOlyGucLa7o/fd30e57b1aef292139049f7e4ab27038/saml-adfs8.png?w=800&#x26;fm=avif" alt=""><figcaption><p>获取令牌签名证书</p></figcaption></figure></div>
 
 在[后面的步骤中](adfs-saml-implementation.md#identity-provider-configuration)您将需要此证书。
 
@@ -112,9 +108,7 @@ ADFS 规则 3
 
 在左侧的文件导航器中，选择 **AD FS**，然后从右侧的选项菜单中选择 **Edit Federation Service Properties**。在 Federation Service Properties（联合服务属性）窗口中，复制 **Federation Service Identifier**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5pU9gOjjO9GwHDFocB3pia/007256b6b85837e6b8fab4f79d72681f/saml-adfs9.png?fm=webp&h=687&q=50&w=993" %}
-获取联合服务标识符
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5pU9gOjjO9GwHDFocB3pia/007256b6b85837e6b8fab4f79d72681f/saml-adfs9.png?w=800&#x26;fm=avif" alt=""><figcaption><p>获取联合服务标识符</p></figcaption></figure></div>
 
 在[后面的步骤中](adfs-saml-implementation.md#identity-provider-configuration)您将需要此标识符。
 
@@ -163,7 +157,7 @@ ADFS 规则 3
 完成身份提供程序配置部分后，**保存**您的工作。
 
 {% hint style="success" %}
-您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织策略。[了解更多](../../oversight-visibility/enterprise-policies.md)。
+您可以通过激活[单点登录身份验证策略](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)来要求用户使用 SSO 登录。
 {% endhint %}
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>

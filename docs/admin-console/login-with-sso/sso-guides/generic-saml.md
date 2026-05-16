@@ -42,19 +42,19 @@
 
 从这一步开始，具体实施方式会因提供程序而异。跳转到我们的具体**实施指南**之一，以帮助完成配置过程：
 
-| 提供程序         | 指南                                                       |
-| ------------ | -------------------------------------------------------- |
-| AD FS        | [AD FS 实施指南](adfs-saml-implementation.md)                |
-| Auth0        | [Auth0 实施指南](auth0-saml-configuration.md)                |
-| AWS          | [AWS 实施指南](aws-saml-implementation.md)                   |
-| Azure        | [Azure 实施指南](microsoft-entra-id-saml-implementation.md)  |
-| Duo          | [Duo 实施指南](duo-saml-implementation.md)                   |
-| Google       | [Google 实施指南](google-saml-implementation.md)             |
-| JumpCloud    | [JumpCloud 实施指南](jumpcloud-saml-implementation.md)       |
-| Keycloak     | [Keycloak 实施指南](keycloak-saml-implementation-1.md)       |
-| Okta         | [Okta 实施指南](okta-saml-implementation.md)                 |
-| OneLogin     | [OneLogin 实施指南](onelogin-saml-implementation.md)         |
-| PingFederate | [PingFederate 实施指南](pingfederate-saml-implementation.md) |
+| 提供程序         | 指南                                                      |
+| ------------ | ------------------------------------------------------- |
+| AD FS        | [AD FS 实施指南](adfs-saml-implementation.md)               |
+| Auth0        | [Auth0 实施指南](auth0-saml-configuration.md)               |
+| AWS          | [AWS 实施指南](aws-saml-implementation.md)                  |
+| Azure        | [Azure 实施指南](microsoft-entra-id-saml-implementation.md) |
+| Duo          | [Duo 实施指南](duo-saml-implementation.md)                  |
+| Google       | [Google 实施指南](google-saml-implementation.md)            |
+| JumpCloud    | [JumpCloud 实施指南](jumpcloud-saml-implementation.md)      |
+| Keycloak     | [Keycloak 实施指南](keycloak-saml-implementation-1.md)      |
+| Okta         | [Okta 实施指南](okta-saml-implementation.md)                |
+| OneLogin     | [OneLogin 实施指南](onelogin-saml-implementation.md)        |
+| PingFederate | [PingFederate 实施指南](adfs-oidc.md)                       |
 
 以下部分将定义单点登录配置过程中可用的字段，其与您要集成的 IdP 无关。必须配置的字段将被标记（**必填**）。
 
