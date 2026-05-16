@@ -1,10 +1,10 @@
-# =AWS SAML
+# AWS SAML
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-aws/)
 {% endhint %}
 
-本文是**专门针对 AWS** 用于配置 SAML 2.0 方式的 SSO 登录的帮助。有关其他 IdP 方式配置 SSO 登录的帮助，请参阅 [SAML 2.0 配置](generic-saml.md)。
+本文是**专门针对 AWS IAM Identity Center** 用于配置 SAML 2.0 方式的 SSO 登录的帮助。有关其他 IdP 方式配置 SSO 登录的帮助，请参阅 [SAML 2.0 配置](generic-saml.md)。
 
 配置需要在 Bitwarden 网页 App 和 AWS 控制台中同时进行。操作过程中，我们建议同时打开这两个界面，并按照文档记录的步骤顺序完成操作。
 
@@ -36,9 +36,7 @@
 
 在 AWS 控制台中，导航到 **AWS Identity Center**，从导航中选择 **Application assignments** → **Applications**，然后选择 **Add application** 按钮：
 
-{% embed url="https://bitwarden.com/assets/62rVtvK7sT2nzJTRkunmCe/1e1c14bd974785c0accce5f16b0f2ec0/IAMIDENTITY1.png?w=1200&fm=avif" %}
-**Add application**
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/62rVtvK7sT2nzJTRkunmCe/1e1c14bd974785c0accce5f16b0f2ec0/IAMIDENTITY1.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>添加新应用程序</p></figcaption></figure></div>
 
 在 Select application type 界面，选择 **I have an application I want to set up** 和 **SAML 2.0**。
 
@@ -50,15 +48,15 @@
 
 2、复制 **IAM Identity Center sign-in URL** 和 **IAM Identity Center issuer URL**，然后下载 **IAM Identity Center Certificate**：
 
-{% embed url="https://bitwarden.com/assets/3Bw1LUH9z4rcYhMW705GLg/105b6b1eafbf1a1170d20ecd1ad1d800/IAMIDENTITY5.png?w=1200&fm=avif" %}
-IAM Identity Center metadata
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3Bw1LUH9z4rcYhMW705GLg/105b6b1eafbf1a1170d20ecd1ad1d800/IAMIDENTITY5.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>IAM 身份中心元数据</p></figcaption></figure></div>
 
-3、在 **Application start URL** URL 字段中，指定用户访问 Bitwarden 的登录 URL。对于云托管客户，始终为 `https://vault.bitwarden.com/#/sso` 或 `https://vault.bitwarden.eu/#/sso`。对于自托管实例，这由您[已配置的服务器 URL](../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain) 决定，例如 `https://your.domain/#/sso`：
+3、在 **Application start URL** 字段中，指定用户访问 Bitwarden 的登录 URL。对于云托管客户，始终为 `https://vault.bitwarden.com/#/sso` 或 `https://vault.bitwarden.eu/#/sso`。对于自托管实例，这由您[已配置的服务器 URL](../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain) 决定，例如 `https://your.domain/#/sso`：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/40VWgLzi5iccMIS9on3YkV/c12f4989b3aac0f93b3bfb6540e6e728/IAMIDENTITY6.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>IAM 身份中心应用程序属性</p></figcaption></figure></div>
 
 4、在 Application metadata 部分中，选择 **Manually type your metadata values** 选项：
 
-{% embed url="https://bitwarden.com/assets/3pa6K0UVEXEpjR7BQmeZzv/da5b1f5f1141e8f05088251d00c3fd35/IAMIDENTITY6_copy.png?w=1200&fm=avif" %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3pa6K0UVEXEpjR7BQmeZzv/da5b1f5f1141e8f05088251d00c3fd35/IAMIDENTITY6_copy.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>输入元数据值</p></figcaption></figure></div>
 
 在该部分中，配置以下字段：
 
@@ -73,9 +71,7 @@ IAM Identity Center metadata
 
 创建应用程序后，从 **Application assignments** → **Applications** 界面再次打开它。使用 **Actions** 下拉菜单 **Edit attribute mappings**：
 
-{% embed url="https://bitwarden.com/assets/5UQnkRhZglhfpsxgQMFEgK/b71db32cd454b59f22b6dae143332982/IAMIDENTITY7.png?w=1200&fm=avif" %}
-**Edit attribute mappings**
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5UQnkRhZglhfpsxgQMFEgK/b71db32cd454b59f22b6dae143332982/IAMIDENTITY7.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>编辑属性映射</p></figcaption></figure></div>
 
 配置以下映射然后 **Save changes**：
 
@@ -88,9 +84,7 @@ IAM Identity Center metadata
 
 在您的应用程序中，向下滚动到 Assigned users and groups 部分，然后选择 **Assign users and groups** 按钮：
 
-{% embed url="https://bitwarden.com/assets/5IRbGNxLqP4W1Ym703pkV3/31697ee57260a7136dae65ddf19209d9/IAMIDENTITY9.png?w=1200&fm=avif" %}
-Assign users and groups
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5IRbGNxLqP4W1Ym703pkV3/31697ee57260a7136dae65ddf19209d9/IAMIDENTITY9.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>分配用户和群组</p></figcaption></figure></div>
 
 将用户和群组分配给应用程序。
 
@@ -140,7 +134,7 @@ Assign users and groups
 完成身份提供程序配置部分后，**保存**您的工作。
 
 {% hint style="success" %}
-您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织策略。[了解更多](../../oversight-visibility/enterprise-policies.md)。
+您可以通过激活[单点登录身份验证策略](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)来要求用户使用 SSO 登录。
 {% endhint %}
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>

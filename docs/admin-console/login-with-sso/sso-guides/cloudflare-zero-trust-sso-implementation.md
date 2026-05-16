@@ -15,7 +15,7 @@ Cloudflare Zero Trust 可与任何使用 SAML 2.0 或 OIDC SSO 配置的 IdP 一
 
 ## 为什么要使用 Cloudflare Zero Trust SSO？ <a href="#why-use-cloudflare-zero-trust-with-sso" id="why-use-cloudflare-zero-trust-with-sso"></a>
 
-Cloudflare Zero Trust 是一个基于云的代理身份和访问管理平台，可与多个身份提供程序 (IdP) 集成。除了标准 IdP 外，使用 Cloudflare Zero Trust 的好处在于它能够为登录配置多个 IdP。Cloudflare Zero Trust 可以从多个单独的目录或一个目录中的用户集提供对 Bitwarden 的 SSO 访问。
+Cloudflare Zero Trust 是一个基于云的代理身份和访问管理平台，可与多种身份提供程序 (IdP) 集成。除了标准 IdP 外，使用 Cloudflare Zero Trust 的好处在于它能够为登录配置多个 IdP。Cloudflare Zero Trust 可以从多个单独的目录或一个目录中的用户集提供对 Bitwarden 的 SSO 访问。
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
@@ -41,23 +41,19 @@ Cloudflare 仅支持通过访问应用网关的 SAML。这意味着必须在 Bit
 
 ## 创建 Cloudflare Zero Trust 登录方法 <a href="#create-a-cloudflare-zero-trust-login-method" id="create-a-cloudflare-zero-trust-login-method"></a>
 
-创建 Cloufdlare Zero Trust 登录方法：
+创建一个 Cloufdlare Zero Trust 登录方法：
 
-1、导航至 [Cloudflare Zero Trust](https://dash.cloudflare.com/login) 然后登录或创建账户。
+1、导航至 [Cloudflare Zero Trust](https://dash.cloudflare.com/login)，然后登录或创建一个账户。
 
 2、配置一个域名，作为用户访问应用程序或**应用程序启动器**的 URL，例如 `https://my-business.cloudflareaccess.com/`。从 Cloudflare Zero Trust 菜单中选择**设置** → **自定义页面**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4lN2NFw46RAynArFfiW3kD/6dfd8ef5b844347a60f9e230b9736450/2024-12-16_15-43-43.png?_a=DAJCwlWIZAAB" %}
-团队域名设置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4lN2NFw46RAynArFfiW3kD/6dfd8ef5b844347a60f9e230b9736450/2024-12-16_15-43-43.png?w=800&#x26;fm=avif" alt=""><figcaption><p>团队域名设置</p></figcaption></figure></div>
 
 3、导航至**设置** → **身份验证** → **添加新内容**，开始配置第一种登录方法。
 
 4、选择连接到 Cloudflare Zero Trust 的登录方法。如果您使用的 IdP 不在 IdP 列表中，请使用 SAML 或 OIDC 通用选项。本文将以 Okta 为例：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5Zk3txh2X9fhcPVpMZVJPC/18ad36aaf277af50df063c96f89804e8/Screen_Shot_2022-10-11_at_4.17.21_PM.png?_a=DAJCwlWIZAAB" %}
-Cloudflare Zero Trust IdP 列表
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5Zk3txh2X9fhcPVpMZVJPC/18ad36aaf277af50df063c96f89804e8/Screen_Shot_2022-10-11_at_4.17.21_PM.png?w=800&#x26;fm=avif" alt=""><figcaption><p>Cloudflare Zero Trust IdP 列表</p></figcaption></figure></div>
 
 {% hint style="info" %}
 Google Workspace 用户应在此步骤中选择通用 **SAML** 设置。Google Workspace 登录方法可能会导致错误。
@@ -75,15 +71,11 @@ Google Workspace 用户应在此步骤中选择通用 **SAML** 设置。Google W
 
 1、导航至**访问权限** → **应用程序** → **添加应用程序**，然后选择 **SaaS**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/70oK8FUQYXpKEvX00NZ9ai/a065258c17b5b01360a6aed574ce2192/2024-07-08_10-46-37.png?_a=DAJCwlWIZAAB" %}
-Cloufflare Zero Trust 添加应用程序
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/70oK8FUQYXpKEvX00NZ9ai/a065258c17b5b01360a6aed574ce2192/2024-07-08_10-46-37.png?w=800&#x26;fm=avif" alt=""><figcaption><p>Cloufflare Zero Trust 添加应用程序</p></figcaption></figure></div>
 
 2、在下一个界面，添加应用程序名称，如 **Bitwarden**。然后，选择身份验证协议为 **SAML**。完成后，选择**添加应用程序**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1zm03fKF8Nqu30YbH7duoo/58e66188a1437c3339daee414d7f9bb3/2024-07-08_10-43-34.png?_a=DAJCwlWIZAAB" %}
-Cloufflare Zero Trust 添加应用程序
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1zm03fKF8Nqu30YbH7duoo/58e66188a1437c3339daee414d7f9bb3/2024-07-08_10-43-34.png?w=800&#x26;fm=avif" alt=""><figcaption><p>Cloufflare Zero Trust 添加应用程序</p></figcaption></figure></div>
 
 3、在 Bitwarden 网页密码库中，打开您的组织并导航至**设置** → **单点登录**页面。使用来自网页密码库中的信息填写**配置应用程序**界面上的信息：
 
@@ -104,9 +96,7 @@ Cloufflare Zero Trust 添加应用程序
 
 6、您可以选择指定组策略（**访问权限** → **群组**）或明确的用户策略规则（如电子邮箱、「mails ending in」、「country」 或 「everyone」）。在下面的示例中，"匿名用户 "组已包含在策略中。还添加了一条附加规则，以包括以所选域名结尾的电子邮件：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2VCZsMzbeUtuO9jx1oh6g7/a1fbe343872934b796ce486cf46835fb/Screen_Shot_2022-10-12_at_10.55.31_AM.png?_a=DAJCwlWIZAAB" %}
-Cloufflare Zero Trust 应用程序策略
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2VCZsMzbeUtuO9jx1oh6g7/a1fbe343872934b796ce486cf46835fb/Screen_Shot_2022-10-12_at_10.55.31_AM.png?w=800&#x26;fm=avif" alt=""><figcaption><p>Cloufflare Zero Trust 应用程序策略</p></figcaption></figure></div>
 
 {% hint style="info" %}
 您还可以通过**应用程序启动器**申请应用用户访问权限，以使用 SSO 快捷方式访问 Bitwarden 登录。这可以通过导航至**身份验证** → **应用程序启动器** → **管理**进行管理。上例中的应用策略可在这里复制或生成。
