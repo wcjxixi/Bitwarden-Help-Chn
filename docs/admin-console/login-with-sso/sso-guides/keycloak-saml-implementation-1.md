@@ -36,9 +36,7 @@ Name对应的[官方文档地址](https://bitwarden.com/help/article/saml-keyclo
 
 登录到 Keycloak 然后选择 **Clients** → **Create Client**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2bBUv6v2343MxtsXC09lvm/1d3c30e4fbe95941ed0d8303f888a885/create_client.png?_a=DAJCwlWIZAAB" %}
-创建客户端
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2bBUv6v2343MxtsXC09lvm/1d3c30e4fbe95941ed0d8303f888a885/create_client.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>创建客户端</p></figcaption></figure></div>
 
 在 Create Client 界面上，配置以下设置：
 
@@ -60,15 +58,15 @@ Name对应的[官方文档地址](https://bitwarden.com/help/article/saml-keyclo
 
 选择 Keys 选项卡，将 **Client signature required** 选项切换为 **Off**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/RZd8WRbn45BIbiyqN7UzR/1337005dbd6c68e1d8b68ee99b1dcdc9/keys_confifg.png?_a=DAJCwlWIZAAB" %}
-Keycloak 密钥配置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/RZd8WRbn45BIbiyqN7UzR/1337005dbd6c68e1d8b68ee99b1dcdc9/keys_confifg.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Keycloak 密钥配置</p></figcaption></figure></div>
+
+返回设置选项卡并向下滚动到 **SAML capabilities**，然后关闭 **Force POST binding**。
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/63FPnC5EAZ2vRnBFL4hUxe/996d021e902c9f575ca7036de8654dfe/Force_Post_binding_disabled.png?w=1080&#x26;fm=avif" alt=""><figcaption><p>禁用 Force Post binding</p></figcaption></figure></div>
 
 最后，在 Keycloak 主导航上选择 **Realm settings**，然后选择 **Keys** 选项卡。找到 **RS256** 证书并选择 **Certificate**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2Codsw3P2MWiMHRctDckTF/fc55404f24ceade2663cdef01caa7528/2023-09-25_16-33-13.png?_a=DAJCwlWIZAAB" %}
-Keycloak RS256 证书
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Codsw3P2MWiMHRctDckTF/fc55404f24ceade2663cdef01caa7528/2023-09-25_16-33-13.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Keycloak RS256 证书</p></figcaption></figure></div>
 
 [后面的章节](keycloak-saml-implementation-1.md#back-to-the-web-app)将需要此证书的值。
 

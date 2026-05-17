@@ -11,7 +11,7 @@
 {% hint style="success" %}
 **已经是 SSO 专家了吗？**&#x8DF3;过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
 
-**⬇️** [下载示例](https://bitwarden.com/assets/3tQfArvZQ1vigzlnjdBxr1/41449d881bd3292eed3046cf457495f1/saml-okta-sample.zip)
+**⬇️** [下载示例](https://bitwarden.com/assets/3tQfArvZQ1vigzlnjdBxr1/364da08e7280662e743b6f6b75eb225f/saml-okta.zip.zip)
 {% endhint %}
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
@@ -34,23 +34,21 @@
 
 ## 创建 Okta 应用程序 <a href="#create-an-okta-app" id="create-an-okta-app"></a>
 
-在 Okta 管理门户中，从导航中选择 **Applications** → **Applications**。在应用程序界面，选择 **Create App Integration** 按钮：
+接下来，创建一个新的 Okta 应用程序：
 
-{% embed url="https://bitwarden.com/assets/6cYqg9EBmbzQQuf53Yzsc5/0b61a779d1c366a785f01618e04cc09d/Screen_Shot_2022-10-20_at_4.13.03_PM.png?w=1200&fm=avif" %}
-创建 Okta 应用程序集成
-{% endembed %}
+1、在 Okta 管理门户中，转到 **Applications** → **Applications**。
 
-在 Create a New Application Integration 对话框中，选择 **SAML 2.0** 单选按钮：
+2、选择 **Create App Integration**。
 
-{% embed url="https://bitwarden.com/assets/3Cdqx3qvpCDnc9xBuHOkLx/ae7861920eb5b09268d29bcfc0c68e1a/Screen_Shot_2022-10-24_at_10.13.31_AM.png?w=950&fm=avif" %}
-SAML 2.0 单选按钮将此字段设置为预先生成的**断言消费者服务 (ACS) URL**。<br>
-{% endembed %}
+3、选择 **SAML 2.0**：
 
-选择 **Next** 按钮以继续进行配置。
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6QTVpxi659XVt11Azdtoz/38f8eb0cb2d003de0bba59bf4a6fa3be/Create_new_app_for_SAML_2.0.png?w=935&#x26;fm=avif" alt=""><figcaption><p>创建新的 SAML 2.0 应用程序</p></figcaption></figure></div>
 
-### 常规设置 <a href="#general-settings" id="general-settings"></a>
+4、选择 Next，这将打开应用程序的通用配置。
 
-在 **General Settings** 界面，为应用程序指定一个唯一的、专用于 Bitwarden 的名称，然后选择 **Next**。
+5、在  **App name** 中输入一个唯一的、专用于 Bitwarden 的名称。
+
+6、选择 **Next**。
 
 ### 配置 SAML <a href="#configure-saml" id="configure-saml"></a>
 
@@ -61,15 +59,13 @@ SAML 2.0 单选按钮将此字段设置为预先生成的**断言消费者服务
 | Single sign on URL          | <p>将此字段设置为预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br></p><p>此自动生成的值可以从组织的<strong>设置</strong> → 单<strong>点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
 | Audience URI (SP Entity ID) | <p>将此字段设置为预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>            |
 | Name ID format              | 选择在 SAML 断言中使用的 [SAML NameID format](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。默认为 **Unspecified**。                     |
-| Application username        | 选择用户用于登录 Bitwarden 的 Okta 属性。                                                                                                                 |
+| Application username        | 选择用户用于登录 Bitwarden 的 Okta 属性，通常为 **Email**。                                                                                                   |
 
 ### 高级设置 <a href="#advanced-settings" id="advanced-settings"></a>
 
-选择 **Show Advanced Settings** 链接并配置以下字段：
+接下来，选择 **Show Advanced Settings**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/4VOeKsTeXHPsipA0SoDgHb/d19693e16cb98ab475cb1873bf5641d7/okta-advsettings.png?fm=webp&h=159&q=50&w=626" %}
-高级设置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7vxaIVnLCCTyb55hOpkctS/13481c873198fca937f2c92045bbc8c3/Show_Advanced_Settings.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>显示高级设置</p></figcaption></figure></div>
 
 | 字段                  | 描述                                                                                 |
 | ------------------- | ---------------------------------------------------------------------------------- |
@@ -80,35 +76,39 @@ SAML 2.0 单选按钮将此字段设置为预先生成的**断言消费者服务
 
 ### 属性声明 <a href="#attribute-statements" id="attribute-statements"></a>
 
-在 **Attribute Statements** 部分，构建以下 SP → IdP 属性映射：
+要在新的 Bitwarden 应用程序中定义属性声明：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/VJZ2ZJtqdCdnzxG4xf4G8/b9fce227ebf1ba72e3598875e1f6f7aa/okta-attr.png?fm=webp&h=417&q=50&w=617" %}
-属性声明
-{% endembed %}
+1、转到 **Sign On** 选项卡。
 
-配置完成后，选择 **Next** 按钮进入 **Feedback** 界面然后选择 **Finish**。
+2、在 **Attribute statements** 部分中，选择 **Show legacy configuration**。
+
+3、选择 **Edit**：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6zV8VlsjIKhynmkq6p1xpW/a85a7d67ba233cfeeb569c5861d0203b/Create_attribute_statements.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>创建属性声明</p></figcaption></figure></div>
+
+4、默认情况下，下面会出现一行来用于构建属性声明。选择 **Add Another** 两次，以便您可以构建以下这三个 SP → IdP 属性映射。最后选择 **Save**：
+
+| 名称        | 名称格式        | 值              |
+| --------- | ----------- | -------------- |
+| email     | Unspecified | user.email     |
+| firstname | Unspecified | user.firstName |
+| lastname  | Unspecified | user.lastName  |
 
 ### 获取 IdP 值 <a href="#get-idp-values" id="get-idp-values"></a>
 
-应用程序创建后，选择应用程序的 **Sign On** 选项卡，然后选择屏幕右侧的 **View Setup Instructions** 按钮：
+还是在 **Sign On** 选项卡上，选择右侧的 **View Setup Instructions**：
 
-{% embed url="https://bitwarden.com/assets/apJpQyn4GTUJGzRNBUf02/e5fbd8ca4f7875bc9ec2a87cbc433db6/Screen_Shot_2022-10-25_at_9.39.47_AM__2_.png?w=1170&fm=avif" %}
-查看 SAML 设置介绍
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/20AjFNFk4VoBt2HrDtB9Zt/86bb2b1181f09d03b1ac7ac05844c46e/View_SAML_setup_instructions.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>查看 SAML 设置说明</p></figcaption></figure></div>
 
 保留此页面以供[后面步骤](okta-saml-implementation.md#identity-provider-configuration)使用，或复制 **Identity Provider Single Sign-On URL** 和 **Identity Provider Issuer** 并下载 **X.509 Certificate**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/4SRYsrAZjCPhksikeAOnBp/f975c57912f6c1a8c5d5d6002d23bd38/okta-values.png?fm=webp&h=388&q=50&w=909" %}
-IdP 值
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3oc8QKbmtLzkZctLDxCCes/356c439aca47a5d0bca3c14ce0126ab2/IdP_values_.png?w=1106&#x26;fm=avif" alt=""><figcaption><p>IdP 值</p></figcaption></figure></div>
 
 ### 分配 <a href="#assignments" id="assignments"></a>
 
-导航到 **Assignments** 选项卡然后选择 **Assign** 按钮：
+导航到 **Assignments** 选项卡然后选择 **Assign** 按钮：返回 Okta 中的 Bitwarden 应用程序配置，然后转到 **Assignments**。选择 **Assign**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/4KcjFuFnHFMnQda4NbKTGh/731a0c635efde1f3333ed6afd58d994e/okta-assign.png?fm=webp&h=799&q=50&w=959" %}
-分配群组
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1XoCbTbrAZV37R3wBTHgVl/0030e828cc635e1a70a719c94885f5ac/Assign_to_People_or_Groups.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>分配到人员或群组</p></figcaption></figure></div>
 
 您可以使用 **Assign to People** 选项逐个用户地分配对应用程序的访问权限，或使用 **Assign to Groups** 选项来批量分配。
 
@@ -123,7 +123,7 @@ IdP 值
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
-根据在 Okta 管理门户[设置期间](okta-saml-implementation.md#create-an-okta-app)所选择的选项配置以下字段：
+根据在 Okta 管理门户的[应用程序创建期间](okta-saml-implementation.md#create-an-okta-app)所选择的选项配置以下字段：
 
 | 字段                                 | 描述                                                                                                        |
 | ---------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -138,7 +138,7 @@ IdP 值
 
 ### 身份提供程序配置 <a href="#identity-provider-configuration" id="identity-provider-configuration"></a>
 
-身份提供程序配置通常需要你返回 Okta 管理门户以获取应用程序的值：
+身份提供程序配置通常需要您返回 Okta 管理门户以获取这些值：
 
 | 字段                                  | 描述                                                                                                                                                                                                                           |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -148,7 +148,7 @@ IdP 值
 | Single Log Out Service URL          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。但是您可以根据需要预先配置它。                                                                                                                                                                            |
 | X509 Public Certificate             | <p>黏贴<a href="okta-saml-implementation.md#get-idp-values">已下载的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
 | Outbound Signing Algorithm          | 选择[在 Okta 应用程序配置期间](okta-saml-implementation.md#advanced-settings)选择的签名算法。如果您没有更改签名算法，请将其保留为默认 (`rsa-sha256`)。                                                                                                               |
-| Disable Outbound Logout Requests    | SSO 登录当前还**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                              |
+| Disable Outbound Logout Requests    | SSO 登录当前还**不支持** SLO。                                                                                                                                                                                                        |
 | Want Authentication Requests Signed | Okta 是否要求 SAML 请求被签名。                                                                                                                                                                                                        |
 
 {% hint style="info" %}
@@ -167,13 +167,13 @@ IdP 值
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3BdlHeogd42LEoG06qROyQ/c68021df4bf45d72e9d37b1fbf5a6040/login.png?w=517&#x26;fm=avif" alt=""><figcaption><p>登录选项界面</p></figcaption></figure></div>
 
-输入[已配置的组织标识符](okta-saml-implementation.md#open-sso-in-the-web-app)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Okta 的登录界面：
+输入[已配置的组织标识符](okta-saml-implementation.md#open-sso-in-the-web-app)，然后选择**继续**。如果您的实施已成功配置，您将被重定向到 Okta 的登录界面：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3Rh2Bg17sCE57xJsUKfqwN/4342c56fa656be94ef90dd620251a868/okta-login.png?w=427&#x26;fm=avif" alt=""><figcaption><p>Okta 登录界面</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3Rh2Bg17sCE57xJsUKfqwN/8f6e1d8555c9e1b60d2e145d0f0bb565/Log_in_with_Okta.png?w=500&#x26;fm=avif" alt=""><figcaption><p>Okta 登录</p></figcaption></figure></div>
 
 使用您的 Okta 凭据进行身份验证后，输入您的 Bitwarden 主密码以解密您的密码库！
 
-{% hint style="info" %}
+{% hint style="success" %}
 Bitwarden 不支持未经请求的响应，因此从您的 IdP 发起登录将导致错误。SSO 登录流程必须从 Bitwarden 发起。Okta 管理员可以创建一个 [Okta Bookmark App](https://support.okta.com/help/s/article/How-do-you-create-a-bookmark-app?language=en_US)，该应用程序将直接链接到 Bitwarden 网页密码库的登录页面。
 
 1. 作为管理员，导航至主导航栏上的 **Applications** 下拉菜单，然后选择 **Applications**。

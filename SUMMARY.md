@@ -172,7 +172,7 @@
     * [Terraform 提供程序](docs/secrets-manager/integrations/terraform-provider.md)
   * [更多](docs/secrets-manager/more/README.md)
     * [Secrets Manager FAQ](docs/secrets-manager/more/secrets-manager-faqs.md)
-* [=管理控制台](docs/admin-console/README.md)
+* [管理控制台](docs/admin-console/README.md)
   * [组织概览](docs/admin-console/organizations-overview.md)
   * [组织快速入门](docs/admin-console/organizations-quick-start.md)
   * [管理共享项目](docs/admin-console/manage-shared-items/README.md)
@@ -248,11 +248,11 @@
     * [Access Intelligence](docs/admin-console/oversight-visibility/access-intelligence.md)
     * [企业策略](docs/admin-console/oversight-visibility/enterprise-policies.md)
     * [密码库健康报告](docs/admin-console/oversight-visibility/vault-health-reports.md)
-  * [=SSO 登录](docs/admin-console/login-with-sso/README.md)
+  * [SSO 登录](docs/admin-console/login-with-sso/README.md)
     * [关于 SSO](docs/admin-console/login-with-sso/about-sso.md)
     * [SSO 解密选项](docs/admin-console/login-with-sso/sso-decryption-options.md)
     * [使用 JIT 添加成员](docs/admin-console/login-with-sso/jit-provisioning.md)
-    * [=SSO 指南](docs/admin-console/login-with-sso/sso-guides/README.md)
+    * [SSO 指南](docs/admin-console/login-with-sso/sso-guides/README.md)
       * [通用 SAML](docs/admin-console/login-with-sso/sso-guides/generic-saml.md)
       * [通用 OIDC](docs/admin-console/login-with-sso/sso-guides/generic-oidc.md)
       * [ADFS SAML](docs/admin-console/login-with-sso/sso-guides/adfs-saml-implementation.md)
@@ -260,7 +260,7 @@
       * [Auth0 SAML](docs/admin-console/login-with-sso/sso-guides/auth0-saml-configuration.md)
       * [AWS SAML](docs/admin-console/login-with-sso/sso-guides/aws-saml-implementation.md)
       * [Cloudflare Zero Trust SSO](docs/admin-console/login-with-sso/sso-guides/cloudflare-zero-trust-sso-implementation.md)
-      * [=Duo SAML](docs/admin-console/login-with-sso/sso-guides/duo-saml-implementation.md)
+      * [Duo SAML](docs/admin-console/login-with-sso/sso-guides/duo-saml-implementation.md)
       * [Google SAML](docs/admin-console/login-with-sso/sso-guides/google-saml-implementation.md)
       * [JumpCloud SAML](docs/admin-console/login-with-sso/sso-guides/jumpcloud-saml-implementation.md)
       * [Keycloak SAML](docs/admin-console/login-with-sso/sso-guides/keycloak-saml-implementation-1.md)
@@ -428,7 +428,7 @@
   * [原生移动 App](docs/miscellaneous/native-mobile-apps.md)
   * [通行密钥 FAQ](docs/miscellaneous/passkeys-faq.md)
 
-## 课程 <a href="#courses" id="courses"></a>
+## =课程 <a href="#courses" id="courses"></a>
 
 * [首页](courses/home.md)
 * [Password Manager](courses/password-manager/README.md)

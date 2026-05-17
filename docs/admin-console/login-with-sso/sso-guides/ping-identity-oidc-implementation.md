@@ -24,13 +24,11 @@
 还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
-## 创建 OIDC App <a href="#create-saml-app" id="create-saml-app"></a>
+## 创建 OIDC 应用程序  <a href="#create-saml-app" id="create-saml-app"></a>
 
 在 Ping Identity 管理员门户网站，选择 **Application** 和屏幕上方的 ✚图标以打开 **Add Application** 界面：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3upFJSqFSgStI3FB5hSIDH/0714a45788207aed199dc3f3df78e6dd/2024-07-22_16-14-00.png?_a=DAJCwlWIZAAB" %}
-Ping Identity OIDC App
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3upFJSqFSgStI3FB5hSIDH/0714a45788207aed199dc3f3df78e6dd/2024-07-22_16-14-00.png?w=795&#x26;fm=avif" alt=""><figcaption><p>Ping Identity OIDC App</p></figcaption></figure></div>
 
 ### 添加应用程序 <a href="#add-application" id="add-application"></a>
 
@@ -42,9 +40,7 @@ Ping Identity OIDC App
 
 在 Application 界面，选择 **Configuration** 选项卡，然后选择屏幕右上方的 **Edit** 按钮。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7JxMu92pW8hFkRV7Mmh5Qr/870237c0d0580c7407973aeef0109d2c/2024-07-25_11-30-30.png?_a=DAJCwlWIZAAB" %}
-Ping OIDC 配置编辑
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7JxMu92pW8hFkRV7Mmh5Qr/870237c0d0580c7407973aeef0109d2c/2024-07-25_11-30-30.png?w=785&#x26;fm=avif" alt=""><figcaption><p>Ping OIDC 配置编辑</p></figcaption></figure></div>
 
 在 Edit 界面，填写从 Bitwarden 单点登录界面获取的以下值：
 

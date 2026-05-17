@@ -28,15 +28,11 @@
 
 在 Azure 门户中，导航到 **Microsoft Entra ID** 然后选择 **App registrations**。要创建新的应用程序注册，请选择 **New registration** 按钮：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6NVeq0dGoBAO8bhhE3zvsC/d107017a0858a388fc8a9b5038942608/azure-newapp.png?fm=webp&h=309&q=50&w=892" %}
-创建应用程序注册
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6NVeq0dGoBAO8bhhE3zvsC/d107017a0858a388fc8a9b5038942608/azure-newapp.png?w=892&#x26;fm=avif" alt=""><figcaption><p>创建应用程序注册</p></figcaption></figure></div>
 
 完成如下字段：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/fA8tUAnlBC3eu7oKUOi5c/59c6956688f8f6cf84e5a0c1127ccc51/Register_an_application.png?_a=DAJCwlWIZAAB" %}
-注册重定向 URI
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/fA8tUAnlBC3eu7oKUOi5c/59c6956688f8f6cf84e5a0c1127ccc51/Register_an_application.png?w=909&#x26;fm=avif" alt=""><figcaption><p>注册重定向 URI</p></figcaption></figure></div>
 
 1. 在 **Register an application** 页面，给您的应用程序取一个专用于 Bitwarden 的名称，并指定哪些账户可以使用该应用程序。这一选择将决定哪些用户可以使用 Bitwarden SSO 登录。
 2. 从导航中选择 **Authentication**，然后选择 **Add a platform** 按钮。
@@ -50,9 +46,7 @@
 
 从导航中选择 **Certificates & secrets**，然后选择 **New client secret** 按钮：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/7wGy3TYoN71TVlDkdvUIMe/5e8d221a695ab34232892b6b309838ed/azure-newcert.png?fm=webp&h=744&q=50&w=1022" %}
-创建客户端密钥
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7wGy3TYoN71TVlDkdvUIMe/5e8d221a695ab34232892b6b309838ed/azure-newcert.png?w=1022&#x26;fm=avif" alt=""><figcaption><p>创建客户端密钥</p></figcaption></figure></div>
 
 为证书指定一个专用于 Bitwarden 的名称，并选择一个到期时间范围。
 
@@ -76,7 +70,7 @@
 | Additional/Custom User ID Claim Types                   | 为用户标识（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                           |
 | Additional/Custom Email Claim Types                     | 为用户的电子邮箱地址（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                      |
 | Additional/Custom Name Claim Types                      | 为用户的全名或显示名称（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                     |
-| Requested Authentication Context Class Reference values | 定义身份验证上下文类引用标识符（`acr_values`）（以空格分隔）。按优先顺序列出 `acr_values`。                                                               |
+| Requested Authentication Context Class Reference values | 定义身份验证上下文类引用标识符 (`acr_values`) （以空格分隔）。按优先顺序列出 `acr_values`。                                                             |
 | Expected “acr” Claim Value in Response                  | 定义 Bitwarden 在响应中期望和验证的 `acr` 声明值。                                                                                       |
 
 完成这些字段的配置后，**保存**您的工作。
@@ -93,9 +87,7 @@
 
 2、选择 ✚**Add optional claim**，然后使用选定值创建新的可选声明。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2qFhIkcJvFpLLKyNEEJN5c/1e5477a6fe8cac0760eaa3897f0c208a/optional_claim_Entra.png?_a=DAJCwlWIZAAB" %}
-Microsoft Entra ID 自定义声明
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2qFhIkcJvFpLLKyNEEJN5c/1e5477a6fe8cac0760eaa3897f0c208a/optional_claim_Entra.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Microsoft Entra ID 自定义声明</p></figcaption></figure></div>
 
 3、在 Bitwarden SSO 配置屏幕上，在相应的**自定义声明类型**字段中输入自定义声明字段的完全限定路径。例如：`https://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn`。
 

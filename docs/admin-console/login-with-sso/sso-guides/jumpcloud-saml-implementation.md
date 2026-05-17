@@ -36,15 +36,11 @@
 
 在 JumpCloud 门户网站中，从菜单中选择 **Applications** 然后选择 **Get Started** 按钮：
 
-{% embed url="https://bitwarden.com/assets/63S5F953fjQN6V4xYKZR3h/515abac11c991e20cf8d5286e1b80a1d/Screen_Shot_2023-02-07_at_10.49.15_AM__2_.png?w=1076&fm=avif" %}
-创建 JumpCloud Bitwarden 应用程序
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/63S5F953fjQN6V4xYKZR3h/515abac11c991e20cf8d5286e1b80a1d/Screen_Shot_2023-02-07_at_10.49.15_AM__2_.png?w=1076&#x26;fm=avif" alt=""><figcaption><p>创建 JumpCloud Bitwarden 应用程序</p></figcaption></figure></div>
 
 在搜索框中输入 `Bitwarden` 然后选择 **configure** 按钮：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2pFRcBTjlIjBhMbqlKMhxb/b80b23ecfd660d5c314028297c606879/jc-bw.png?fm=webp&h=229&q=50&w=685" %}
-配置 Bitwarden
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2pFRcBTjlIjBhMbqlKMhxb/b80b23ecfd660d5c314028297c606879/jc-bw.png?w=685&#x26;fm=avif" alt=""><figcaption><p>配置 Bitwarden</p></figcaption></figure></div>
 
 {% hint style="success" %}
 如果您更喜欢 SAML，或者想要更多地控制 NameID 格式和签名算法等内容，请改为创建 **Custom SAML Application**。
@@ -62,9 +58,7 @@
 
 在 **Single Sign-On Configuration** 部分，配置以下信息：
 
-{% embed url="https://bitwarden.com/assets/29XSIA5254JE0flwlFEGBf/5f078dec5b873be5568b2485c221c645/Screen_Shot_2023-02-07_at_3.20.29_PM__2_.png?w=789&fm=avif" %}
-JumpCloud SSO 配置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/29XSIA5254JE0flwlFEGBf/5f078dec5b873be5568b2485c221c645/Screen_Shot_2023-02-07_at_3.20.29_PM__2_.png?w=789&#x26;fm=avif" alt=""><figcaption><p>JumpCloud SSO 配置</p></figcaption></figure></div>
 
 | 字段            | 描述                                                                                                                                                              |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -88,9 +82,7 @@ JumpCloud SSO 配置
 
 在 **Single Sign-On Configuration** → **Attributes** 部分，构建以下 SP → IdP 属性映射。如果您在 JumpCloud 中选择了 Bitwarden Application，则这些应该已经构建：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5vRaXPal1HJsXhJZX8MdTL/b7c71fb6d4156d104f0f2b826f78a247/jc-attr.png?fm=webp&h=428&q=50&w=573" %}
-属性映射
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5vRaXPal1HJsXhJZX8MdTL/b7c71fb6d4156d104f0f2b826f78a247/jc-attr.png?w=573&#x26;fm=avif" alt=""><figcaption><p>属性映射</p></figcaption></figure></div>
 
 完成后，选择 **activate** 按钮。
 
@@ -98,23 +90,17 @@ JumpCloud SSO 配置
 
 应用程序激活后，再次使用 **SSO** 菜单选项打开已创建的 Bitwarden 应用程序。选择 **IDP Certificate** 下拉菜单然后 **Download certificate**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6Y2DUGlm3LxBK6Ws44SjRg/a032010b5c0df73cccf7418892c9c00f/jc-cert.png?fm=webp&h=484&q=50&w=1416" %}
-下载证书
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6Y2DUGlm3LxBK6Ws44SjRg/a032010b5c0df73cccf7418892c9c00f/jc-cert.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>下载证书</p></figcaption></figure></div>
 
 ### 绑定用户群组 <a href="#bind-users-groups" id="bind-users-groups"></a>
 
 在 JumpCloud 门户网站中，从菜单中选择 **User Groups**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3nIOyl4xedMgTRTNobFqwG/35151b1af8594d15fd9d69531c5e4e04/jc-groups.png?fm=webp&h=452&q=50&w=1346" %}
-用户群组
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3nIOyl4xedMgTRTNobFqwG/35151b1af8594d15fd9d69531c5e4e04/jc-groups.png?w=1346&#x26;fm=avif" alt=""><figcaption><p>用户群组</p></figcaption></figure></div>
 
 创建一个专用于 Bitwarden 的用户群组，或打开所有用户默认用户群组。在任一情况下，选择 **Applications** 选项卡并对该用户群组创建的 Bitwarden SSO 应用程序开启访问权限：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/7BUUQUi79zmEy8xm64qwog/7d5537c45423a87f92485e7b6cad5d5e/jc-group-app.png?fm=webp&h=390&q=50&w=945" %}
-绑定应用程序权限
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7BUUQUi79zmEy8xm64qwog/7d5537c45423a87f92485e7b6cad5d5e/jc-group-app.png?w=945&#x26;fm=avif" alt=""><figcaption><p>绑定应用程序权限</p></figcaption></figure></div>
 
 {% hint style="success" %}
 或者，您可以直接从 **SSO** → **Bitwarden Application** 界面绑定对用户群组的访问权限。

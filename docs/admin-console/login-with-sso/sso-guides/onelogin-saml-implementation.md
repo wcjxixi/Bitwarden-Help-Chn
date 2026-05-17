@@ -36,15 +36,11 @@
 
 在 OneLogin 门户中，导航到 **Applications** 界面然后选择 **Add App** 按钮：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/37OSt7e5j969j9ikvH8buI/3bf9fa6b57a45b357a9d2bc012d8a6af/ol-addapp.png?fm=webp&h=292&q=50&w=1071" %}
-添加应用程序
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/37OSt7e5j969j9ikvH8buI/3bf9fa6b57a45b357a9d2bc012d8a6af/ol-addapp.png?w=1071&#x26;fm=avif" alt=""><figcaption><p>添加应用程序</p></figcaption></figure></div>
 
-在搜索栏中，键入 `saml test connector` 然后并择 **SAML Test Connector (Advanced)** 应用程序：
+在搜索栏中，键入 `saml Custom connector` 然后并择 **SAML Custom Connector (Advanced)** 应用程序：
 
-{% embed url="https://bitwarden.com/assets/hTfoABj2iirzB1X7UT69x/792d40ee9f9c7471be35d9cfda450c05/ol-addapp2.png?w=1071&fm=avif" %}
-SAML Test Connector App
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/hTfoABj2iirzB1X7UT69x/520891ab503ad773178fef291d49e198/2026-03-02_09-22-12.png?w=1023&#x26;fm=avif" alt=""><figcaption><p>SAML Custom Connector App</p></figcaption></figure></div>
 
 为您的应用程序指定一个专用于 Bitwarden 的 **Display Name**，然后选择 **Save** 按钮。
 
@@ -52,16 +48,14 @@ SAML Test Connector App
 
 从左侧导航中选择 **Configuration** 然后配置以下的信息，您需要从 Bitwarden 业务门户获取其中的一些信息：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/12yP5ohPGhqcCZZdpwVDQd/7fc5661e4fb4954ad00246deae2fd9b1/ol-appconfig.png?fm=webp&h=404&q=50&w=898" %}
-应用程序配置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12yP5ohPGhqcCZZdpwVDQd/7fc5661e4fb4954ad00246deae2fd9b1/ol-appconfig.png?w=898&#x26;fm=avif" alt=""><figcaption><p>应用程序配置</p></figcaption></figure></div>
 
 | 应用程序设置                       | 描述                                                                                                                                            |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | Audience (EntityID)          | <p>将此字段设置为预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>            |
 | Recipient                    | 将此字段设置为同样也用于 **Audience (Entity ID)** 设置的预先生成的 **SP 实体 ID**。                                                                                  |
 | ACS (Consumer) URL Validator | 尽管被 OneLogin 标记为**必需**，但您实际上并不需要在此字段中输入信息以与 Bitwarden 集成。跳到下一个字段 **ACS (Consumer) URL**。                                                      |
-| ACS (Consumer) URL           | <p>将此字段设置为预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br></p><p>此自动生成的值可以从组织的<strong>设置</strong> → 单<strong>点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
+| ACS (Consumer) URL           | <p>将此字段设置为预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br></p><p>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
 | SAML initiator               | 选择 **Service Provider**。SSO 登录当前不支持 IdP 发起的 SAML 断言。                                                                                          |
 | SAML nameID Format           | 将此字段设置您希望用于 SAML 断言的 [SAML NameID 格式](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。                                        |
 | SAML signature element       | 默认，OneLogin 将签名 SAML 响应。您可以将其设置为 **Assertion** 或 **Both**。                                                                                    |
@@ -70,7 +64,7 @@ SAML Test Connector App
 
 ### 参数 <a href="#parameters" id="parameters"></a>
 
-从左侧导航中选择 **Parameters**，然后使用  **🞤Add** 图标创建以下自定义参数：
+从左侧导航中选择 **Parameters**，然后使用  ✚**Add** 图标创建以下自定义参数：
 
 | 字段名称      | 值          |
 | --------- | ---------- |
@@ -86,9 +80,7 @@ SAML Test Connector App
 
 1、选择 X.509 证书下的 **View Details** 链接：
 
-{% embed url="https://bitwarden.com/assets/7emKbivWUWKO1ufVC9Rkgu/0039e55d93ba69fadc8c39e0be3d8a07/Screen_Shot_2022-12-29_at_9.42.14_AM.png?w=769&fm=avif" %}
-查看您的证书
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7emKbivWUWKO1ufVC9Rkgu/0039e55d93ba69fadc8c39e0be3d8a07/Screen_Shot_2022-12-29_at_9.42.14_AM.png?w=769&#x26;fm=avif" alt=""><figcaption><p>查看您的证书</p></figcaption></figure></div>
 
 在证书界面，下载或复制您的 X.509 PEM 证书，因为您[稍后需要使用它](onelogin-saml-implementation.md#identity-provider-configuration)。复制后，返回主 SSO 界面。
 
@@ -100,9 +92,7 @@ SAML Test Connector App
 
 从左侧导航中选择 **Access**。在 **Roles** 部分，为您希望能够使用 Bitwarden 的所有角色分配应用程序访问权限。大多数实现会创建一个专用于 Bitwarden 的角色，而不是选择基于包罗万象（例如，**Default**）或基于预先存在的角色进行分配。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6D4j0WofpBcvSCMB0rN4Db/5303beacbc3ce331dfddc6dc6b19d6ea/ol-roles.png?fm=webp&h=147&q=50&w=899" %}
-角色分配
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6D4j0WofpBcvSCMB0rN4Db/5303beacbc3ce331dfddc6dc6b19d6ea/ol-roles.png?w=899&#x26;fm=avif" alt=""><figcaption><p>角色分配</p></figcaption></figure></div>
 
 ## 返回网页 App <a href="#back-to-the-web-app" id="back-to-the-web-app"></a>
 

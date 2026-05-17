@@ -36,9 +36,7 @@
 
 在 Google Workspace 管理控制台中，从导航中选择 **Apps → Web and mobile apps**，在 Web and mobile apps 界面，选择 **Add App → Add custom SAML app**：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/C9jyVEQXkiBxRwU82ix0U/c9cda4568d3a7f43170e4b3ef0aebab4/g-addapp.png?fm=webp&h=572&q=50&w=1065" %}
-创建 SAML 应用程序
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/C9jyVEQXkiBxRwU82ix0U/c9cda4568d3a7f43170e4b3ef0aebab4/g-addapp.png?w=1065&#x26;fm=avif" alt=""><figcaption><p>创建 SAML 应用程序</p></figcaption></figure></div>
 
 ### 应用程序详细信息 <a href="#app-details" id="app-details"></a>
 
@@ -48,9 +46,7 @@
 
 在 Google 身份提供程序详细信息界面，复制 **SSO URL**、**Entity ID** 和 **Certificate** 以[供后续步骤使用](google-saml-implementation.md#identity-provider-configuration)：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6YxeYEY4VdrJNYO0zYkPqd/bbe5b99b54570ef14f7a4ff5a1bcb7a6/g-details.png?fm=webp&h=1094&q=50&w=1091" %}
-IdP 详细信息
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6YxeYEY4VdrJNYO0zYkPqd/bbe5b99b54570ef14f7a4ff5a1bcb7a6/g-details.png?w=1091&#x26;fm=avif" alt=""><figcaption><p>IdP 详细信息</p></figcaption></figure></div>
 
 完成后选择 **Continue**。
 
@@ -83,9 +79,7 @@ IdP 详细信息
 
 默认，Workspace SAML 应用程序将 **OFF for everyone**（对所有人关闭）。打开 SAML 应用程序的 User Access（用户访问权限）部分，并根据您的需要，设置为 **ON for everyone**（对所有人开启）或对特定群组开启：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1cFjmvCmDIAMy6zy4e9x0a/03a1613a1186da2f014c40add256047e/g-activate.png?fm=webp&h=339&q=50&w=1431" %}
-用户访问权限
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1cFjmvCmDIAMy6zy4e9x0a/03a1613a1186da2f014c40add256047e/g-activate.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>用户访问权限</p></figcaption></figure></div>
 
 **Save** 您的更改。请注意，新的 Workspace 应用程序最多可能需要 24 小时才能传播到用户现有的会话。
 

@@ -30,9 +30,7 @@
 
 在 Ping Identity 管理员门户中，选择 **Application** 和屏幕上方的 ✚图标以打开 **Add Application** 界面：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6F36iKjI660tvX77XXXaOn/d983daff3168cca8b19da3d4ff2b934b/new_application.png?_a=DAJCwlWIZAAB" %}
-Ping Identity 添加应用程序
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6F36iKjI660tvX77XXXaOn/d983daff3168cca8b19da3d4ff2b934b/new_application.png?w=1200&#x26;fm=avif" alt=""><figcaption><p>Ping Identity 添加应用程序</p></figcaption></figure></div>
 
 1、在 **Application Name** 字段中输入 Bitwarden 专用名称。可根据需要添加所需的详细说明。
 

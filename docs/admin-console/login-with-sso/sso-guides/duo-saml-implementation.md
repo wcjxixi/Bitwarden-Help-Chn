@@ -1,4 +1,4 @@
-# =Duo SAML
+# Duo SAML
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-duo/)
@@ -42,29 +42,21 @@
 
 在 Duo 管理门户中，导航到 **Applications** 界面然后选择 **Protect an Application**。在搜索栏中输入 **Bitwarden**，然后为 **Bitwarden 2FA with SSO hosted by Duo** 应用程序选择 **Configure**：
 
-{% embed url="https://bitwarden.com/assets/trkKdfpokzVAwdGxg6wa6/02ae03583eae5f96e4a6fbe90e70af14/2023-12-11_15-58-21.png?w=1200&fm=avif" %}
-Duo Bitwarden 应用程序
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/trkKdfpokzVAwdGxg6wa6/02ae03583eae5f96e4a6fbe90e70af14/2023-12-11_15-58-21.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Duo Bitwarden 应用程序</p></figcaption></figure></div>
 
 为新创建的应用程序选择 **Activate and Start Setup**：
 
-{% embed url="https://bitwarden.com/assets/38UnzJq3P4zVvB8wHpK62W/ff109380215fc7d82c25c960eecd3ec3/2023-12-11_16-00-38.png?w=1200&fm=avif" %}
-Duo 激活和设置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/38UnzJq3P4zVvB8wHpK62W/ff109380215fc7d82c25c960eecd3ec3/2023-12-11_16-00-38.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Duo 激活和设置</p></figcaption></figure></div>
 
 在应用程序配置界面完成以下步骤和配置，其中的一些步骤和配置需要您从 Bitwarden 业务门户中获取：
 
-{% embed url="https://bitwarden.com/assets/5OMLBklde4cADIvmgypSxe/64f00b2c483c471a9a5ead8da8f982e5/2023-12-11_16-09-16.png?w=1200&fm=avif" %}
-DUO SAML 身份提供程序配置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5OMLBklde4cADIvmgypSxe/64f00b2c483c471a9a5ead8da8f982e5/2023-12-11_16-09-16.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Duo SAML 身份提供程序配置</p></figcaption></figure></div>
 
 ### 元数据 <a href="#metadata" id="metadata"></a>
 
 您不需要在 **Metadata** 部分编辑任何内容，但[稍后您需要引用这些值](duo-saml-implementation.md#identity-provider-configuration)：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3ob9jp2RJRhMaxOkRrWHKa/8a9b7c3cc3aa077e323353c8c0cab0ed/duo-urls.png?fm=webp&h=146&q=50&w=804" %}
-配置 URL
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3ob9jp2RJRhMaxOkRrWHKa/8a9b7c3cc3aa077e323353c8c0cab0ed/duo-urls.png?w=804&#x26;fm=avif" alt=""><figcaption><p>配置 URL</p></figcaption></figure></div>
 
 ### 下载 <a href="#downloads" id="downloads"></a>
 
@@ -88,9 +80,7 @@ DUO SAML 身份提供程序配置
 | Signing options     | 设置为 **Sign response** 或 **Sign assertion**,，或同时设置。                                                            |
 | Map attributes      | 使用这些字段将 IdP 属性映射到 SAML 响应属性。无论您配置了哪个 NameID 属性，请将 IdP `Email Address` 属性映射到 `Email`，如下面的屏幕截图所示：               |
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2MQbtzmGaflBaCf0FIa2r9/914b2dec377d122deee4a65439689e2a/duo-mapping.png?fm=webp&h=238&q=50&w=727" %}
-必需的属性映射
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2MQbtzmGaflBaCf0FIa2r9/914b2dec377d122deee4a65439689e2a/duo-mapping.png?w=727&#x26;fm=avif" alt=""><figcaption><p>必需的属性映射</p></figcaption></figure></div>
 
 完成这些字段的配置后， **Save** 您的更改。
 
