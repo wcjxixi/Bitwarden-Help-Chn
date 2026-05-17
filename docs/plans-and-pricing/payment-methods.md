@@ -4,20 +4,72 @@
 对应的[官方文档地址](https://bitwarden.com/help/payment-methods/)
 {% endhint %}
 
-## 可接受的付款方式 <a href="#accepted-payment-methods" id="accepted-payment-methods"></a>
+Bitwarden 为付费方案接受多种付款方式。付款方式因您的方案及计费国家而异。
+
+## 接受的付款方式 <a href="#accepted-payment-methods" id="accepted-payment-methods"></a>
+
+所有可用的付款方式会在您在网页应用中升级或更新账单信息时列出。已保存的付款方式将用于自动 Premium 方案续订和组织方案续订，以确保您不会意外失去对付费功能的访问。它也用于您添加附件存储空间时。
 
 ### 信用卡或借记卡 <a href="#credit-or-debit-card" id="credit-or-debit-card"></a>
 
+所有 Bitwarden 方案类型都接受主要的信用卡，包括 Visa、Mastercard、American Express 和 Discover。卡付款通过 Stripe 安全处理。卡详细信息在首次注册或更新账单信息时添加到网页应用中。
+
 ### PayPal <a href="#paypal" id="paypal"></a>
+
+PayPal 可用作所有方案的付款方式。您可以通过绑定 PayPal 账户进行自动付款或添加账户余额。PayPal 包含内置的买家保护和额外的安全功能。要使用 PayPal，请在结账时或更新账单信息时选择此方式。
 
 ### 银行账户 <a href="#bank-account" id="bank-account"></a>
 
+银行账户付款适用于某些团队和企业方案：
+
+* 在美国境内进行国内转账时，您可以通过付款详情或通过账单账单设置直接银行存款（ACH）。ACH 支付使用 Stripe 的银行转账系统处理。
+* 从美国以外的地区进行的电汇只接受开票账单。一旦开票，您将在账单上找到我们的银行账户详细信息以完成电汇。要确认您的账户有资格进行国际电汇付款并切换到开票账单，请联系我们。
+
 ### 支票 <a href="#check" id="check"></a>
+
+在您通过开票付款时，年度 Teams 和 Enterprise 订阅接受公司支票。邮寄地址列在您的账单上。为确保最快处理，支票必须包含您的公司名称、账单号和联系信息。
 
 ### 加密货币 <a href="#cryptocurrency" id="cryptocurrency"></a>
 
+加密货币，如比特币，是被接受的。您需要购买账户积分才能用加密货币升级或续订您的订阅。
+
 ### 账户信用额度 <a href="#account-credit" id="account-credit"></a>
+
+账户积分允许您提前支付您的 Bitwarden 升级或订阅费用。通过 PayPal 使用当地货币或通过 BitPay 使用加密货币购买积分。如果您想通过账户积分支付，请确保在升级或您的续订日期之前购买账户积分。我们将从您的账户积分余额中扣除升级或续订费用。
+
+要为您的账户添加积分：
+
+1. 前往设置 → 订阅。
+2. 选择添加信用卡。
+3. 输入您希望购买的总额（美元）。
+4. 选择提交。
+
+{% hint style="info" %}
+要使用账户余额支付未付款的账单，请联系我们。
+{% endhint %}
 
 ## 账单计费 <a href="#invoiced-billing" id="invoiced-billing"></a>
 
+在您升级或续费当天，大多数付款方式会自动处理。某些方案允许您选择通过邮件支付账单。使用此选项时，账单将在您的续费当天发送给账单联系人。使用账单上列出的任一方法手动支付账单。
+
+{% hint style="info" %}
+保持您的账单联系人的电子邮件地址最新，以避免错过账单。对于个人高级方案，这是您的账户电子邮件。对于组织，只有所有者可以查看和更新他们的账单联系人。
+{% endhint %}
+
+谁有资格使用账单支付以及何时到期付款取决于：
+
+| 订阅类型                   | 付款到期日期      |
+| ---------------------- | ----------- |
+| 年度团队和企业订阅在联系我们后切换到账单支付 | 30 天自账单日期起  |
+| 通过 Bitwarden 销售设立的年度方案 | 30 天自账单日期起  |
+| 经销商                    | 从账单日期起 45 天 |
+
+{% hint style="info" %}
+如果您使用的是其他方案且我们无法处理您的自动付款，您的账单历史记录中将出现未支付的发票。为避免服务中断，您需要在账单日期起 14 天内付款。如果您需要帮助，请联系我们。
+{% endhint %}
+
+如果账单未在到期日之前支付，您的账户以及适用的组织成员可能会受到影响。请支付账单以恢复您组织的服务或您的 Premium 方案。
+
 ## 管理您的付款方式 <a href="#manage-your-payment-method" id="manage-your-payment-method"></a>
+
+使用 Bitwarden 网页 App 来查看或更新您的付款详细信息。
