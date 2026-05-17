@@ -1,7 +1,5 @@
 # \*哪种方案适合我？
 
-
-
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/what-plan-is-right-for-me/)
 {% endhint %}
@@ -15,9 +13,9 @@
 * [您要与谁共享？](what-plan-is-right-for-me.md#who-will-you-share-with)
 * [您需要哪些工具？](what-plan-is-right-for-me.md#what-tools-will-you-need)
 
-使用此流程图来指导你完成你的旅程：
+使用此流程图来指导您完成您的旅程：
 
-![哪种方案适合我？](../../.gitbook/assets/what-plan-flowchart-1.png)
+<div align="left" data-with-frame="true"><img src="../../.gitbook/assets/what-plan-flowchart-1.png" alt="哪种方案适合我？"></div>
 
 ## 您想使用 Bitwarden 保护您的在线账户吗？ <a href="#do-you-want-to-start-protecting-your-online-accounts-with-bitwarden" id="do-you-want-to-start-protecting-your-online-accounts-with-bitwarden"></a>
 
@@ -51,17 +49,17 @@
 
 使用 Bitwarden 是一种安全地共享如登录、笔记、支付卡以及身份等数据的好方法。您的组织与以下人员共享数据吗？
 
-* 家人和朋友（最多 6 个用户）
+* 家人和朋友（最多 6 位用户）
 * 公司（无限用户，按席位计费）
 * 不确定
 
-| 如果您的答案是「家人和朋友」…                                                                                                                                                              | 如果您的答案是「公司」…                                                                                                             | 如果您的答案是「不确定」…                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p>…我们建议您使用家庭版组织：<br><br>- 最多 6 用户的高级功能<br>- 最多 6 用户之间的无限共享<br><br><a href="password-manager/upgrade-from-individual-to-organization.md"><strong>创建您的家庭版组织。</strong></a></p> | <p>…还有最后一个问题<br><br><strong>继续：</strong><a href="what-plan-is-right-for-me.md#what-tools-will-you-need">您需要哪些工具？</a></p> | <p>…我们建议您尝试使用免费版组织：<br><br>- 2 用户的 Bitwarden 核心功能<br>- 2 用户之间的有限共享<br><br><a href="password-manager/upgrade-from-individual-to-organization.md"><strong>创建您的免费版组织。</strong></a></p> |
+| 如果您的答案是「家人和朋友」…                                                                                                                                                                | 如果您的答案是「公司」…                                                                                                             | 如果您的答案是「不确定」…                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p>…我们建议您使用家庭版组织：<br><br>- 最多 6 位用户的高级功能<br>- 最多 6 位用户之间的无限共享<br><br><a href="password-manager/upgrade-from-individual-to-organization.md"><strong>创建您的家庭版组织。</strong></a></p> | <p>…还有最后一个问题<br><br><strong>继续：</strong><a href="what-plan-is-right-for-me.md#what-tools-will-you-need">您需要哪些工具？</a></p> | <p>…我们建议您尝试使用免费版组织：<br><br>- 2 位用户的 Bitwarden 核心功能<br>- 2 位用户之间的有限共享<br><br><a href="password-manager/upgrade-from-individual-to-organization.md"><strong>创建您的免费版组织。</strong></a></p> |
 
 ## 您需要哪些工具？ <a href="#what-tools-will-you-need" id="what-tools-will-you-need"></a>
 
-Bitwarden 有两种针对公司的方案：团队版和企业版。 团队版组织和企业版组织都允许无限数量的用户（按每用户每月计费），并且包括：
+Bitwarden 有两种针对公司的方案：团队版和企业版。 团队版组织和企业版组织都允许无限数量的用户（按每用户每月计费），并且包含：
 
 * 注册用户的高级功能
 * 事件日志
@@ -69,7 +67,7 @@ Bitwarden 有两种针对公司的方案：团队版和企业版。 团队版组
 * 用于组织管理的 API
 * Directory Connector
 
-但是，仅企业组织包括：
+但是，仅企业版组织包含：
 
 * SSO 登录
 * 企业策略

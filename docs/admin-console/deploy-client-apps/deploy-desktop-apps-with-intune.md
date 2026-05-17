@@ -7,7 +7,7 @@
 在业务环境中操作 Bitwarden 时，管理员可能希望借助 **Microsoft Intune** 向用户自动部署 Bitwarden 桌面 App。本文将介绍如何使用 Intune 将 Bitwarden Password Manager 桌面 App 部署到您的终端设备。
 
 {% hint style="info" %}
-
+如果您的组织使用自托管或 EU Bitwarden 服务器，请配置托管设备以连接到正确的服务器 URL。更多信息，请参阅[连接托管设备](connect-managed-devices.md)。
 {% endhint %}
 
 可以使用 Win32 应用程序（推荐）或通过 Microsoft App Store 将 Bitwarden 桌面 App 部署到终端设备：

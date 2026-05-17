@@ -12,9 +12,7 @@
 
 1、使用 Bitwarden 网页 App，使用产品切换器打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
 {% hint style="info" %}
 组织管理员、所有者和具有自定义**管理所有集合**权限的用户可以访问管理控制台中的**未指定**筛选器。
@@ -22,16 +20,12 @@
 
 2、从管理控制台中选择**集合**，然后选择**未分配**筛选器：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2qrTXyyUlFglTbBcnLsGzp/88cb93f6d1af69db7b28709230d9df75/Screenshot_2024-04-09_at_12.52.23_PM.png?_a=BAJFJtWIB" %}
-未分配的密码库项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2qrTXyyUlFglTbBcnLsGzp/88cb93f6d1af69db7b28709230d9df75/Screenshot_2024-04-09_at_12.52.23_PM.png?w=1267&#x26;fm=avif" alt=""><figcaption><p>未分配的密码库项目</p></figcaption></figure></div>
 
 3、勾选未分配的密码库项目，然后使用选项 (≡) 菜单选择**分配到集合**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/MfXWfOfxBX73EyGDJRSp4/c1076b8ecc7940b0b5ea56e2ac29aab5/Screenshot_2024-04-09_at_12.55.01_PM.png?_a=BAJFJtWIB" %}
-分配到集合
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/MfXWfOfxBX73EyGDJRSp4/c1076b8ecc7940b0b5ea56e2ac29aab5/Screenshot_2024-04-09_at_12.55.01_PM.png?w=1267&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
 
-4、对话窗口中，使用下拉菜单选择要将这些密码库项目分配到的集合。选择完集合后，选择**分配**。
+4、在此对话窗口中，使用下拉菜单选择要将这些密码库项目分配到的集合。选择完集合后，选择**分配**。
 
 只要您具有查看集合及其中的密码库项目的权限，这些项目就会再次显示在您的**所有密码库**视图中。如果您无法在您的**所有密码库**视图中看到这些项目，请仔细检查您对相关集合的权限。

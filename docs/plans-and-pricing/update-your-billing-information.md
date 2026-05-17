@@ -9,7 +9,7 @@
 不确定您使用的是哪个方案吗？对于个人用户，检查**设置** → **订阅**页面。如果您拥有管理控制台的访问权限，那么您就是某个组织的所有者或管理员。作为[所有者](../admin-console/manage-members/member-roles.md#default-roles)，您可以前往**计费** → **订阅**页面找您的方案。
 
 {% hint style="info" %}
-个人版订阅和组织版订阅是分开计费的，因此更新其中一个不会自动更改另一个。例如，如果您拥有一个高级版账户并且属于一个家庭版组织，更新您的高级版订阅的[付款方式](payment-methods.md)不会影响组织的计费。
+个人版订阅和组织版订阅是分开计费的，因此更新其中一个不会自动更改另一个。例如，如果您拥有一个高级版账户并隶属于一个家庭版组织，更新您的高级版订阅的[付款方式](payment-methods.md)不会影响组织的计费。
 {% endhint %}
 
 ## 更新个人高级版订阅的计费信息 <a href="#update-billing-for-individual-premium-subscriptions" id="update-billing-for-individual-premium-subscriptions"></a>
@@ -25,12 +25,12 @@
 3、在此页面上，您可以查看或选择：
 
 * **更改付款方式**，以编辑在您的订阅续费时自动扣款的[付款方式](payment-methods.md)。
-* **添加信用额度**，以通过 PayPal 或 Bitcoin 来购买[账户信用额度](payment-methods.md#account-credit)。可用的信用额度将自动用来抵扣您的下一笔付款。
+* **添加信用额度**，以通过 PayPal 或 Bitcoin 来购买[账户信用额度](payment-methods.md#account-credit)。可用的信用额度将自动用于抵扣您的下一笔付款。
 
-选择**订阅**选项卡以了解更多关于您的下次扣款信息、添加[附件](../password-manager/your-vault/vault-items/file-attachments.md)存储空间或[取消您的订阅](cancel-a-subscription.md#cancel-a-personal-subscription)。前往**计费历史**选项卡以查看过去的交易记录以及下载[账单](invoices-and-receipts.md)。
+选择**订阅**选项卡，了解更多关于您的下次扣款信息、添加[附件](../password-manager/your-vault/vault-items/file-attachments.md)存储空间或[取消订阅](cancel-a-subscription.md#cancel-a-personal-subscription)。前往**计费历史**选项卡，查看过往交易记录以及下载[账单](invoices-and-receipts.md)。
 
 {% hint style="danger" %}
-如果我们无法处理您的[续费](password-manager/premium-renewal.md)，您的订阅将恢复为免费版方案。要解决此问题，请更新您的付款方式或直接支付未付款的[账单](invoices-and-receipts.md#review-invoices)。如果您的账户没有恢复为付费版订阅，请[联系我们](https://bitwarden.com/contact/)。
+如果我们无法处理您的[续费](password-manager/premium-renewal.md)，您的订阅将降级为免费版方案。要解决此问题，请更新您的付款方式或直接支付未付款的[账单](invoices-and-receipts.md#review-invoices)。如果您的账户仍然无法恢复为付费版订阅，请[联系我们](https://bitwarden.com/contact/)。
 {% endhint %}
 
 ## 更新组织计费信息 <a href="#update-billing-for-organizations" id="update-billing-for-organizations"></a>
@@ -58,7 +58,7 @@
 * **添加信用额度**，以通过 PayPal 或 Bitcoin 来购买[账户信用额度](payment-methods.md#account-credit)。可用的信用额度将用于自动抵扣您的下一笔付款。
 
 {% hint style="danger" %}
-如果我们无法处理您的[续费](password-manager/premium-renewal.md)，您的订阅将恢复为免费版方案。要解决此问题，请更新您的付款方式或直接支付未付款的[账单](invoices-and-receipts.md#review-invoices)。如果您的账户没有恢复为付费版订阅，请[联系我们](https://bitwarden.com/contact/)。
+如果我们无法处理您的[组织续费](organization-renewal.md)，您的订阅将降级为免费版方案。要解决此问题，请更新您的付款方式或直接支付未付款的[账单](invoices-and-receipts.md#review-invoices)。如果您的账户仍然无法恢复为付费版订阅，请[联系我们](https://bitwarden.com/contact/)。
 {% endhint %}
 
 ### 订阅席位 <a href="#subscription-seats" id="subscription-seats"></a>

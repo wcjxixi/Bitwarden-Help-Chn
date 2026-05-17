@@ -1,4 +1,4 @@
-# 开始企业版试用
+# \*开始企业版试用
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/enterprise-free-trial/)
@@ -16,9 +16,7 @@
 
 1、登录 Bitwarden 网页 App，然后选择**新增组织**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3eSqWiTIuPSFxXdo5AAjT9/248b0fa7bb381add0d71682acd244a63/2024-12-03_13-57-58.png?_a=DAJCwlWIZAAB" %}
-新增组织
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3eSqWiTIuPSFxXdo5AAjT9/248b0fa7bb381add0d71682acd244a63/2024-12-03_13-57-58.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>新增组织</p></figcaption></figure></div>
 
 2、在**新增组织**界面，输入您的新组织的**组织名称**以及我们能联系到您的**计费电子邮箱**。
 
