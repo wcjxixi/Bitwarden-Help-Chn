@@ -455,7 +455,7 @@
       * [服务用户](courses/password-manager/partners/managed-service-provider/service-user.md)
       * [提供商管理员](courses/password-manager/partners/managed-service-provider/provider-admin.md)
     * [经销商](courses/password-manager/partners/reseller.md)
-  * [Secrets Manager](courses/password-manager/get-to-know-secrets-manager.md)
+* [Secrets Manager](courses/get-to-know-secrets-manager.md)
 * [Passwordless.dev](courses/get-to-know-passwordless.dev.md)
 
 ## 附录 <a href="#appendix" id="appendix"></a>

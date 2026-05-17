@@ -58,7 +58,7 @@
 
 Bitwarden 提供随您使用的无设备数量限制或登录数量限制的免费账户。[现在就开始吧](https://bitwarden.com/go/start-free/)！
 
-#### 主密码 <a href="#your-master-password" id="your-master-password"></a>
+#### 您的主密码 <a href="#your-master-password" id="your-master-password"></a>
 
 注册时，您将创建一个用于登录 Bitwarden 的主密码。您的主密码必须是：
 
