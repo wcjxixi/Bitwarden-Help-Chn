@@ -418,11 +418,13 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 </details>
 
-### &#x20;<a href="#access-shared-passwords" id="access-shared-passwords"></a>
+### 使用 Bitwarden Send 共享 <a href="#sharing-with-bitwarden-send" id="sharing-with-bitwarden-send"></a>
 
+通过安全、含有效期的链接，使用 Bitwarden Send 共享敏感的文本或文件，接收者无需账户。
 
+<details>
 
-### 安全地发送文本和文件 <a href="#send-text-and-files-securely" id="send-text-and-files-securely"></a>
+<summary>安全地发送文本和文件</summary>
 
 {% embed url="https://vimeo.com/797850224?fl=pl&fe=sh" %}
 
@@ -430,6 +432,8 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 * **00:25**：使用 Bitwarden Send
 * **01:26**：安全和访问控制
+
+</details>
 
 ## 了解更多 <a href="#learn-more" id="learn-more"></a>
 
