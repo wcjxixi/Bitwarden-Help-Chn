@@ -92,7 +92,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 ## 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
-了解如何使用浏览器扩展导入密码，或探索其他方式，例如桌面 App 和移动 App。兼容的浏览器和 App 提供了直接导入功能。
+了解如何使用浏览器扩展导入您的密码，或探索其他方式，例如桌面 App 和移动 App。兼容的浏览器和 App 提供了直接导入功能。
 
 <details>
 
@@ -182,7 +182,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 ## 从浏览器扩展自动填充 <a href="#autofill-from-browser-extension" id="autofill-from-browser-extension"></a>
 
-了解如何使用内嵌菜单自动填充密码和其他凭据，或探索其他方式，例如填充按钮或键盘快捷键。
+了解如何使用内嵌菜单自动填充您的密码和其他凭据，或探索其他方式，例如填充按钮或键盘快捷键。
 
 <details>
 
@@ -428,10 +428,28 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 {% embed url="https://vimeo.com/797850224?fl=pl&fe=sh" %}
 
-[Bitwarden Send](../../../../docs/password-manager/bitwarden-send/about-send.md) 让您可以通过加密的自毁链接安全地共享文本和文件，甚至可以与组织外部的人员共享。
+[Bitwarden Send](../../../../docs/password-manager/bitwarden-send/about-send.md) 让您可以通过加密的自毁链接安全地共享文本和文件 - 甚至可以与组织外部的人员共享。
 
 * **00:25**：使用 Bitwarden Send
 * **01:26**：安全和访问控制
+
+</details>
+
+## 添加附件 <a href="#adding-attachments" id="adding-attachments"></a>
+
+<details>
+
+<summary>使用浏览器扩展</summary>
+
+{% embed url="https://vimeo.com/1175169132?fl=pl&fe=sh" %}
+
+了解如何使用浏览器扩展将文件附加到任何密码库项目中，以使您的敏感文档与您的登录凭据一起保持安全。
+
+* **00:00**：简介
+* **00:05**：开始使用
+* **00:14**：上传文件
+* **00:32**：与他人分享
+* **00:46**：备份您的附件
 
 </details>
 
