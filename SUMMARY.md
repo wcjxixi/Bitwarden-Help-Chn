@@ -405,7 +405,7 @@
     * [Secrets Manager 方案](docs/plans-and-pricing/secrets-manager/secrets-manager-plans.md)
     * [注册 Secrets Manager](docs/plans-and-pricing/secrets-manager/sign-up-for-secrets-manager.md)
   * [查看 & 更新计费详细信息](docs/plans-and-pricing/update-your-billing-information.md)
-  * [=付款方式](docs/plans-and-pricing/payment-methods.md)
+  * [付款方式](docs/plans-and-pricing/payment-methods.md)
   * [账单 & 收据](docs/plans-and-pricing/invoices-and-receipts.md)
   * [Bitwarden 购物税](docs/plans-and-pricing/tax-calculation.md)
   * [管理组织中的订阅席位](docs/plans-and-pricing/manage-subscription-seats-in-your-organization.md)
