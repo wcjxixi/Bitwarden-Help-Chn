@@ -200,7 +200,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 ## 从浏览器扩展自动填充 <a href="#autofill-from-browser-extension" id="autofill-from-browser-extension"></a>
 
-了解如何使用内嵌菜单自动填充密码和其他凭据，或探索其他方式，例如填充按钮或键盘快捷键。
+了解如何使用内嵌菜单自动填充您的密码和其他凭据，或探索其他方式，例如填充按钮或键盘快捷键。
 
 <details>
 
@@ -289,13 +289,13 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 {% embed url="https://vimeo.com/1159228265?fl=pl&fe=sh" %}
 
-了解如何使用 Bitwarden 浏览器扩展自动填充以及自动保存唯一资源标识符 (URI)，例如网站地址。
+了解如何使用 Bitwarden 浏览器扩展自动填充以及自动保存统一资源标识符 (URI)，例如网站地址。
 
 </details>
 
 ## 从 Android App 自动填充 <a href="#autofill-from-android-app" id="autofill-from-android-app"></a>
 
-了解如何使用内嵌建议自动填充密码和其他凭据，或探索其他方式，例如弹出菜单。
+了解如何使用内嵌建议自动填充您的密码和其他凭据，或探索其他方式，例如弹出菜单。
 
 <details>
 
@@ -365,7 +365,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 ## 从 iOS App 自动填充 <a href="#autofill-from-ios-app" id="autofill-from-ios-app"></a>
 
-了解如何使用键盘自动填充密码和其他凭据，或探索其他方式，例如长按文本字段或使用浏览器 App 扩展。
+了解如何使用键盘自动填充您的密码和其他凭据，或探索其他方式，例如长按文本字段或使用浏览器 App 扩展。
 
 <details>
 

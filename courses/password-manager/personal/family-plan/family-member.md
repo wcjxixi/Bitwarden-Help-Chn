@@ -104,7 +104,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 </details>
 
-## 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
+## 导入您的密码 <a href="#import-your-passwords" id="import-your-passwords"></a>
 
 了解如何使用浏览器扩展导入您的密码，或探索其他方式，例如桌面 App 和移动 App。兼容的浏览器和 App 提供了直接导入功能。
 
@@ -285,7 +285,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 {% embed url="https://vimeo.com/1159228265?fl=pl&fe=sh" %}
 
-了解如何使用 Bitwarden 浏览器扩展自动填充以及自动保存唯一资源标识符 (URI)，例如网站地址。
+了解如何使用 Bitwarden 浏览器扩展自动填充以及自动保存统一资源标识符 (URI)，例如网站地址。
 
 </details>
 
