@@ -448,6 +448,7 @@
       * [团队管理员](courses/password-manager/business/teams-plan/teams-admin.md)
     * [企业方案](courses/password-manager/business/enterprise-plan/README.md)
       * [企业成员](courses/password-manager/business/enterprise-plan/enterprise-member.md)
+      * [=企业帮助台](courses/password-manager/business/enterprise-plan/enterprise-helpdesk.md)
       * [企业管理员](courses/password-manager/business/enterprise-plan/enterprise-admin.md)
   * [合作伙伴](courses/password-manager/partners/README.md)
     * [合作伙伴概览](courses/password-manager/partners/partner-overview.md)

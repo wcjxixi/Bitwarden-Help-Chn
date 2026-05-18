@@ -6,15 +6,25 @@
 
 掌握成为 Bitwarden 经销商的要点，包括产品知识、许可选项、销售策略以及如何在客户的整个旅程中为他们提供支持。
 
-### 成为合作伙伴 <a href="#become-a-partner" id="become-a-partner"></a>
+<details>
+
+<summary>成为合作伙伴</summary>
 
 成为 Bitwarden 合作伙伴计划的成员既快捷又简单。我们的合作伙伴计划旨在最大限度地使您在广泛的共同优先事项、战略要求和客户利益方面获得成功。[今天就开始吧](https://bitwarden.com/partners/become-a-partner/)。
 
-### 了解组织类型 <a href="#learn-about-organization-types" id="learn-about-organization-types"></a>
+</details>
 
-作为经销商，您的大多数客户都会推行团队组织或企业组织。使用我们的[比较图表](../../../docs/plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-business-plans)了解每种计划的独特功能。
+<details>
 
-### 了解 Bitwarden <a href="#learn-about-bitwarden" id="learn-about-bitwarden"></a>
+<summary>了解组织类型</summary>
+
+作为经销商，您的大多数客户都会推行团队版组织或企业版组织。使用我们的[比较图表](../../../docs/plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-business-plans)了解每种方案的独特功能。
+
+</details>
+
+<details>
+
+<summary>了解 Bitwarden</summary>
 
 Bitwarden 受到数百万人的信赖，它可以帮助您的客户推动协作、提高生产力并安全地共享数据，无论是在同一组织内部还是外部。对于您的客户，Bitwarden Password Manager 提供的一些最受欢迎的功能包括：
 
@@ -28,3 +38,5 @@ Bitwarden 致力于打造安全第一的产品。Password Manager 是：
 * **开源**：所有源代码都托管在 GitHub 上，任何人都可以免费查看和审计。第三方审计公司和安全研究人员有偿定期进行审计。
 * **端到端加密**：密码库数据的所有加密和解密均在客户端完成，这意味着任何敏感数据都不会未经加密而进入我们的服务器。
 * **零知识加密**：Bitwarden 团队成员无法看到您的密码库数据，包括密码管理器中的其他不加密的 URL 或主密码等数据。
+
+</details>

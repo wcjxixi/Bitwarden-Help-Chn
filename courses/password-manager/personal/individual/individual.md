@@ -43,7 +43,7 @@
 
 参加由 Bitwarden 团队主办的 30 分钟免费现场课程。查看实际使用的产品、解答您的问题，以及了解如何作为新用户充分使用 Bitwarden。
 
-<a href="https://bitwarden.com/events/user-demo/" class="button primary">加入课程</a>
+<a href="https://bitwarden.com/events/user-demo/" class="button primary">参加课程</a>
 
 </details>
 
@@ -88,13 +88,7 @@ Bitwarden [安全准备套件](https://bitwarden.com/resources/bitwarden-securit
 
 <details>
 
-<summary></summary>
-
-
-
-</details>
-
-### 了解您的密码库 <a href="#get-to-know-your-vault" id="get-to-know-your-vault"></a>
+<summary>了解您的密码库</summary>
 
 Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../../../../docs/password-manager/your-vault/vault-items/vault-items.md)：
 
@@ -102,21 +96,29 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 通过网页 App，您可以将需要保护的信息存入密码库，整理您的凭据以便于快速访问，等等。您在任何 Bitwarden App 中添加的项目都会同步到您已登录的其他 Bitwarden  App 中，因此您可以在任何地方登录账户。
 
-### 随身携带 Bitwarden <a href="#take-bitwarden-on-the-go" id="take-bitwarden-on-the-go"></a>
+</details>
+
+<details>
+
+<summary>随身携带 Bitwarden</summary>
 
 安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../../../../docs/password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../../../../docs/password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/53OzJZ4klYWemxUepHMtq4/5ab47331f033259bd2e82817a99e992f/2025-01-21_15-22-10.png?w=800&#x26;fm=avif" alt=""><figcaption></figcaption></figure></div>
 
-## 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
+</details>
 
-了解如何使用浏览器扩展导入密码，或探索其他方式，例如桌面 App 和移动 App。兼容的浏览器和 App 提供了直接导入功能。
+## 导入您的密码 <a href="#import-your-passwords" id="import-your-passwords"></a>
 
-### 浏览器扩展 <a href="#browser-extension" id="browser-extension"></a>
+了解如何使用浏览器扩展导入您的密码，或探索其他方式，例如桌面 App 和移动 App。兼容的浏览器和 App 提供了直接导入功能。
+
+<details>
+
+<summary>浏览器扩展</summary>
 
 {% embed url="https://vimeo.com/1145638461?fl=pl&fe=cm" %}
 
-了解使用 Bitwarden 浏览器扩展[如何导入](../../../../docs/password-manager/import-and-export/import-data.md#liu-lan-qi-kuo-zhan)密码和其他数据。
+了解使用 Bitwarden 浏览器扩展[如何导入](../../../../docs/password-manager/import-and-export/import-data.md#liu-lan-qi-kuo-zhan)您的密码和其他数据。
 
 * **00:00**：简介
 * **00:05**：开始使用
@@ -125,11 +127,15 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:43**：定位您的文件
 * **00:46**：导入您的数据
 
-### 网页 App <a href="#web-app" id="web-app"></a>
+</details>
+
+<details>
+
+<summary>网页 App</summary>
 
 {% embed url="https://vimeo.com/1145638443?fl=pl&fe=cm" %}
 
-了解在 Bitwarden 网页 App 中[如何导入](../../../../docs/password-manager/import-and-export/import-data.md#wang-ye-app)密码和其他数据。
+了解在 Bitwarden 网页 App 中[如何导入](../../../../docs/password-manager/import-and-export/import-data.md#wang-ye-app)您的密码和其他数据。
 
 * **00:00**：简介
 * **00:05**：开始使用
@@ -138,7 +144,11 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:43**：  定位导入文件
 * **00:49**：  导入数据
 
-### 桌面 App - 包括 Chromium 浏览器的直接导入 <a href="#desktop-app" id="desktop-app"></a>
+</details>
+
+<details>
+
+<summary>桌面 App - 包括 Chromium 浏览器的直接导入</summary>
 
 {% embed url="https://vimeo.com/1145638482?fl=pl&fe=cm" %}
 
@@ -153,7 +163,11 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:27**：直接从浏览器导入
 * **01:03**：从文件导入
 
-### 移动 App - 包括 iOS 上兼容的 App 的直接导入/导出 <a href="#mobile-app" id="mobile-app"></a>
+</details>
+
+<details>
+
+<summary>移动 App - 包括 iOS 上兼容的 App 的直接导入/导出</summary>
 
 {% embed url="https://vimeo.com/1145638494?fl=pl&fe=cm" %}
 
@@ -164,7 +178,11 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:15**：使用网页 App
 * **00:23**：iOS 26 直接导入
 
-### 从自定义文件 <a href="#from-a-custom-file" id="from-a-custom-file"></a>
+</details>
+
+<details>
+
+<summary>从自定义文件</summary>
 
 {% embed url="https://vimeo.com/1145638421?fl=pl&fe=cm" %}
 
@@ -178,11 +196,15 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:21**：查看列标题
 * **00:25**：导入自定义文件
 
+</details>
+
 ## 从浏览器扩展自动填充 <a href="#autofill-from-browser-extension" id="autofill-from-browser-extension"></a>
 
 了解如何使用内嵌菜单自动填充密码和其他凭据，或探索其他方式，例如填充按钮或键盘快捷键。
 
-### 内嵌菜单 <a href="#inline-menu" id="inline-menu"></a>
+<details>
+
+<summary>内嵌菜单</summary>
 
 {% embed url="https://vimeo.com/1140176329?fl=pl&fe=cm" %}
 
@@ -193,10 +215,14 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:17**：故障排除
 
 {% hint style="success" %}
-如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 以粘贴 TOTP。
 {% endhint %}
 
-### &#xD;&#xD;填充按钮 <a href="#fill-button" id="fill-button"></a>
+</details>
+
+<details>
+
+<summary>填充按钮</summary>
 
 {% embed url="https://vimeo.com/1141142837?fl=pl&fe=cm" %}
 
@@ -210,10 +236,14 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **01:07**：拖放
 
 {% hint style="success" %}
-如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 以粘贴 TOTP。
 {% endhint %}
 
-### 上下文菜单 <a href="#context-menu" id="context-menu"></a>
+</details>
+
+<details>
+
+<summary>上下文菜单</summary>
 
 {% embed url="https://vimeo.com/1141154474?fl=pl&fe=cm" %}
 
@@ -226,10 +256,14 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * 00:30：生成密码
 
 {% hint style="success" %}
-如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 以粘贴 TOTP。
 {% endhint %}
 
-### 键盘快捷键 <a href="#keyboard-shortcuts" id="keyboard-shortcuts"></a>
+</details>
+
+<details>
+
+<summary>键盘快捷键</summary>
 
 {% embed url="https://vimeo.com/1141160672?fl=pl&fe=cm" %}
 
@@ -244,14 +278,28 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * 00:29：自定义键盘快捷键
 
 {% hint style="success" %}
-如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 粘贴 TOTP。
+如果登录使用 [Bitwarden Authenticator](../../../../docs/bitwarden-authenticator/bitwarden-authenticator.md) TOTP 并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按 `Cmd/Ctrl` + `V` 以粘贴 TOTP。
 {% endhint %}
+
+</details>
+
+<details>
+
+<summary>自动填充 &#x26; 保存网站地址</summary>
+
+{% embed url="https://vimeo.com/1159228265?fl=pl&fe=sh" %}
+
+了解如何使用 Bitwarden 浏览器扩展自动填充以及自动保存唯一资源标识符 (URI)，例如网站地址。
+
+</details>
 
 ## 从 Android App 自动填充 <a href="#autofill-from-android-app" id="autofill-from-android-app"></a>
 
 了解如何使用内嵌建议自动填充密码和其他凭据，或探索其他方式，例如弹出菜单。
 
-### 内嵌建议 <a href="#inline-suggestions" id="inline-suggestions"></a>
+<details>
+
+<summary>内嵌建议</summary>
 
 {% embed url="https://vimeo.com/1149193513?fl=pl&fe=cm" %}
 
@@ -266,10 +314,14 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:51**：自动填充演示
 
 {% hint style="success" %}
-如果您的登录使用 Bitwarden Authenticator TOTP，Bitwarden 会在自动填充后自动将 TOTP 复制到您的剪贴板。长按 TOTP 字段以粘贴代码。
+如果您的登录使用 Bitwarden Authenticator TOTP，Bitwarden 会在自动填充后自动将 TOTP 复制到您的剪贴板。长按 TOTP 字段以粘贴此代码。
 {% endhint %}
 
-### 弹出菜单 <a href="#popup-menu" id="popup-menu"></a>
+</details>
+
+<details>
+
+<summary>弹出菜单</summary>
 
 {% embed url="https://vimeo.com/1149326073?fl=pl&fe=cm" %}
 
@@ -284,12 +336,117 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:55**：自动填充演示
 
 {% hint style="success" %}
-如果您的登录使用 Bitwarden Authenticator TOTP，Bitwarden 会在自动填充后自动将 TOTP 复制到您的剪贴板。长按 TOTP 字段以粘贴代码。
+如果您的登录使用 Bitwarden Authenticator TOTP，Bitwarden 会在自动填充后自动将 TOTP 复制到您的剪贴板。长按 TOTP 字段以粘贴此代码。
 {% endhint %}
+
+</details>
+
+<details>
+
+<summary>快速操作磁贴</summary>
+
+{% embed url="https://vimeo.com/1153958059?fl=pl&fe=sh" %}
+
+使用 Android 上的 Bitwarden 快速操作磁贴快速填写您的凭据。
+
+查看 [Android 故障排除指南](../../../../docs/password-manager/autofill/troubleshoot-autofill/troubleshooting-android-auto-fill.md#troubleshooting-the-accessibility-service)以获得更多支持。
+
+* **00:00**：简介
+* **00:05**：开始使用
+* **00:15**：启用辅助功能
+* **00:29**：编辑快速操作磁贴
+* **00:49**：演示
+
+{% hint style="success" %}
+如果您的登录使用 Bitwarden Authenticator TOTP，Bitwarden 会在自动填充后自动将 TOTP 复制到您的剪贴板。长按 TOTP 字段以粘贴此代码。
+{% endhint %}
+
+</details>
+
+## 从 iOS App 自动填充 <a href="#autofill-from-ios-app" id="autofill-from-ios-app"></a>
+
+了解如何使用键盘自动填充密码和其他凭据，或探索其他方式，例如长按文本字段或使用浏览器 App 扩展。
+
+<details>
+
+<summary>键盘自动填充</summary>
+
+{% embed url="https://vimeo.com/1154446838?fl=pl&fe=sh" %}
+
+了解如何在 iOS 上使用键盘无缝自动填充。
+
+* **00:00**：简介
+* **00:04**：开始使用
+* **00:16**：启用 Bitwarden 自动填充
+* **00:2**3：在 Bitwarden 中设置代码（可选）
+* **00:28**：自动填充演示
+
+{% hint style="success" %}
+如果您的登录使用 Bitwarden Authenticator TOTP，Bitwarden 会在自动填充后自动将 TOTP 复制到您的剪贴板。长按 TOTP 字段以粘贴此代码。
+{% endhint %}
+
+</details>
+
+<details>
+
+<summary>浏览器 App 扩展</summary>
+
+{% embed url="https://vimeo.com/1154446857?fl=pl&fe=sh" %}
+
+了解如何在 iOS 上使用浏览器 App 扩展自动填充。
+
+* **00:00**：简介
+* **00:05**：开始使用
+* **00:15**：激活 App 扩展
+* **00:25**：自动填充演示
+
+{% hint style="success" %}
+如果您的登录使用 Bitwarden Authenticator TOTP，Bitwarden 会在自动填充后自动将 TOTP 复制到您的剪贴板。长按 TOTP 字段以粘贴此代码。
+{% endhint %}
+
+</details>
+
+<details>
+
+<summary>长按文本字段</summary>
+
+{% embed url="https://vimeo.com/1153962151?fl=pl&fe=sh" %}
+
+在 iOS 上长按任何文本字段即可自动填充（需要启用键盘自动填充）。
+
+* **00:00**：简介
+* **00:05**：要求
+* **00:12**：演示
+
+{% hint style="success" %}
+如果您的登录使用 Bitwarden Authenticator TOTP，Bitwarden 会在自动填充后自动将 TOTP 复制到您的剪贴板。长按 TOTP 字段以粘贴此代码。
+{% endhint %}
+
+</details>
+
+## 添加附件 <a href="#adding-attachments" id="adding-attachments"></a>
+
+<details>
+
+<summary>使用浏览器扩展</summary>
+
+{% embed url="https://vimeo.com/1175169132?fl=pl&fe=sh" %}
+
+了解如何使用浏览器扩展将文件附加到任何密码库项目中，以使您的敏感文档与您的登录凭据一起保持安全。
+
+* **00:00**：简介
+* **00:05**：开始使用
+* **00:14**：上传文件
+* **00:32**：与他人分享
+* **00:46**：备份您的附件
+
+</details>
 
 ## 了解更多 <a href="#learn-more" id="learn-more"></a>
 
-### 更改默认语言 <a href="#change-the-default-language" id="change-the-default-language"></a>
+<details>
+
+<summary>更改默认语言</summary>
 
 {% embed url="https://vimeo.com/795737043?fl=pl&fe=sh" %}
 
@@ -298,13 +455,21 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:15**：更改网页 App 中的语言设置
 * **00:56**：更改桌面 App 中的语言设置
 
-### 为您所有设备获取 Bitwarden <a href="#get-bitwarden-for-all-your-devices" id="get-bitwarden-for-all-your-devices"></a>
+</details>
+
+<details>
+
+<summary>为您所有设备获取 Bitwarden</summary>
 
 {% embed url="https://vimeo.com/795737043?fl=pl&fe=sh" %}
 
 [此处](https://bitwarden.com/download/)下载适用于您所有设备的 Bitwarden App。
 
-### 安全地发送文本和文件 <a href="#send-text-and-files-securely" id="send-text-and-files-securely"></a>
+</details>
+
+<details>
+
+<summary>安全地发送文本和文件</summary>
 
 {% embed url="https://vimeo.com/797850224?fl=pl&fe=sh" %}
 
@@ -313,7 +478,11 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:25**：使用 Bitwarden Send
 * **01:26**：安全和访问控制
 
-### 使用自定义字段 <a href="#using-custom-fields" id="using-custom-fields"></a>
+</details>
+
+<details>
+
+<summary>使用自定义字段</summary>
 
 {% embed url="https://vimeo.com/821402921?fl=pl&fe=sh" %}
 
@@ -323,28 +492,46 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:41**：自定义字段的使用和链接
 * **01:30**：添加自定义字段
 
+</details>
+
 ## 高级 <a href="#advanced" id="advanced"></a>
 
-### 在 Raspberry Pi 上自托管 <a href="#self-host-on-a-raspberry-pi" id="self-host-on-a-raspberry-pi"></a>
+<details>
+
+<summary>在 Raspberry Pi 上自托管</summary>
 
 {% embed url="https://youtu.be/4GjjfkMYqqs" %}
 
 [此处](../../../../docs/self-hosting/deploy-and-configure/docker/lite-deployment.md)了解更多有关 Bitwarden Lite 自托管的信息。
 
+</details>
+
 ## 支持 <a href="#support" id="support"></a>
 
-### Smart Search
+<details>
+
+<summary>Smart Search</summary>
 
 使用 **Bitwarden Smart Search** 立即寻找答案。
 
 <a href="https://bitwarden.com/smart-search/" class="button primary">Try Smart Search</a>
 
-### 询问社区 <a href="#ask-the-community" id="ask-the-community"></a>
+</details>
+
+<details>
+
+<summary>询问社区</summary>
 
 与经验丰富的 Bitwarden 用户联系，分享技巧并共同解决问题。在[社区论坛](https://community.bitwarden.com/c/support/pm-ask-the-community/?_gl=1*1gc3ljx*_gcl_au*NDkyNTE5NzM4LjE3NjU1Mzk5OTUuMTMxODM0NjMwLjE3NjY4OTA0MjUuMTc2Njg5MDQyNQ..*_ga*MTk5NzU0OTg5My4xNzU2OTg5NjI5*_ga_QBRN562QQQ*czE3Njc2MzE2MjUkbzE3OCRnMSR0MTc2NzYzMjUxNyRqNjAkbDAkaDA.)或 [Reddit](https://www.reddit.com/r/Bitwarden/new/) 上提问。
 
-### 联系支持 <a href="#contact-support" id="contact-support"></a>
+</details>
+
+<details>
+
+<summary>联系支持</summary>
 
 遇到技术问题或有账户问题？请联系 Bitwarden 支持团队获取直接的协助。
 
 <a href="https://bitwarden.com/contact/" class="button primary">联系支持</a>
+
+</details>

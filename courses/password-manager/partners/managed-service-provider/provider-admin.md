@@ -12,7 +12,9 @@
 
 ## 演示 <a href="#demo" id="demo"></a>
 
-### 提供商门户演示 <a href="#provider-portal-demo" id="provider-portal-demo"></a>
+<details>
+
+<summary>提供商门户演示</summary>
 
 {% embed url="https://vimeo.com/668382756?fl=pl&fe=cm" %}
 
@@ -32,9 +34,13 @@
   * **28:18**：设置 SSO 和 SCIM
 * **29:00**：问答
 
+</details>
+
 ## 开始使用 <a href="#get-started" id="get-started"></a>
 
-### 成为合作伙伴 <a href="#become-a-partner" id="become-a-partner"></a>
+<details>
+
+<summary>成为合作伙伴</summary>
 
 成为 Bitwarden 合作伙伴计划的成员既快捷又简单。我们的合作伙伴计划旨在最大限度地使您在广泛的共同优先事项、战略要求和客户利益方面获得成功。[今天就开始吧](https://bitwarden.com/partners/become-a-partner/)。
 
@@ -44,20 +50,32 @@
 如果您是加入现有提供商的管理员，请使用电子邮件收件箱中的提供商邀请登录或创建新的 Bitwarden 账户。
 {% endhint %}
 
-### 您的主密码 <a href="#your-master-password" id="your-master-password"></a>
+</details>
+
+<details>
+
+<summary>您的主密码</summary>
 
 注册时，您将创建一个用于登录 Bitwarden 的主密码。您的主密码必须是：
 
 * **易记**：Bitwarden 的员工以及 Bitwarden 系统对您的主密码一无所知、没有办法找回或重置您的主密码。**千万不要忘记您的主密码！**
 * **强大**：保护账户的最佳方式是使用更长、更复杂、更不常见的密码。Bitwarden 提供了一个免费的[密码强度测试工具](https://bitwarden.com/password-strength/)，可以测试您正在考虑的一些易记的密码的强度。
 
-### 了解提供商门户 <a href="#get-to-know-the-provider-portal" id="get-to-know-the-provider-portal"></a>
+</details>
+
+<details>
+
+<summary>了解提供商门户</summary>
 
 [提供商门户](../../../../docs/provider-portal/provider-portal-overview.md)是一种一体化管理体验，使提供商能够大规模管理客户的 Bitwarden 组织。它通过集中管理每个客户的访问和支持来简化管理任务，并允许您随着业务增长创建新客户：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AoSHeZgJJTBXQmpZ13UBr/56ca464fe6987c8c5fc8e7099235d640/2025-02-25_15-17-46.png?w=800&#x26;fm=avif" alt=""><figcaption></figcaption></figure></div>
 
-### 邀请您的提供商团队 <a href="#invite-your-provider-team" id="invite-your-provider-team"></a>
+</details>
+
+<details>
+
+<summary>邀请您的提供商团队</summary>
 
 每一个全明星提供商都需要一个全明星团队。从**管理** → **成员**视图开始邀请您的员工来[充实您的客户管理团队](../../../../docs/provider-portal/provider-users.md#onboard-provider-users)：
 
@@ -65,25 +83,41 @@
 
 **服务用户**可以全面管理任何客户组织，**提供商管理员**还可以额外管理您的提供商设置和计费。为了实现冗余保护，我们建议在您的团队中至少包含一名其他提供商管理员。
 
-### 入职客户 <a href="#onboard-clients" id="onboard-clients"></a>
+</details>
+
+<details>
+
+<summary>入职客户</summary>
 
 作为一名提供商成员管理员，您可以代表客户全面管理客户组织的各个方面，包括设置[集合](../../../../docs/admin-console/manage-shared-items/collections/about-collections.md)和[群组](../../../../docs/admin-console/manage-members/groups.md)结构、[导入数据](../../../../docs/admin-console/manage-shared-items/import-organization-items/import-to-organization.md)以及设置[策略](../../../../docs/admin-console/oversight-visibility/enterprise-policies.md)和 [SSO](../../../../docs/admin-console/login-with-sso/about-sso.md)。
 
 了解[如何创建新的客户组织](../../../../docs/provider-portal/start-a-client-organization.md)，以及了解[成功配置客户组织的第一步](../../../../docs/provider-portal/start-a-client-organization.md#initial-setup-procedure)。
 
-### 管理客户订阅 <a href="#manage-client-subscriptions" id="manage-client-subscriptions"></a>
+</details>
+
+<details>
+
+<summary>管理客户订阅</summary>
 
 作为提供商管理员，您的主要职责之一是管理客户组织的订阅和席位数量。[了解更多](../../../../docs/provider-portal/provider-billing.md)。
 
-### 了解客户管理 <a href="#learn-about-client-administration" id="learn-about-client-administration"></a>
+</details>
+
+<details>
+
+<summary>了解客户管理</summary>
 
 客户组织允许您的客户安全地共享密码、信用卡等，并为您提供代表他们管理这些东西的工具。您可以做很多事情，但这里有一些[您作为提供商需要处理的关键日常任务](../../../../docs/provider-portal/ongoing-administration.md)。
+
+</details>
 
 ## 客户部署指南 <a href="#customer-deployment-guide" id="customer-deployment-guide"></a>
 
 使用以下步骤和最佳实践为您的客户部署 Bitwarden。
 
-### 第 1 阶段 - 入职前
+<details>
+
+<summary>第 1 阶段 - 入职前</summary>
 
 为您的客户的 Bitwarden 组织和环境定义技术要求和入职策略。
 
@@ -101,7 +135,11 @@
 | 10 | 内部沟通       | 创建关于 Bitwarden 推广的内部消息或备忘录。审查 Bitwarden 模板以了解沟通方式                                                                                              | [欢迎电子邮件模板](../../../../docs/admin-console/onboarding/welcome-email-templates.md)                  | 1        |
 | 11 | 领导层沟通      | 向内部领导者传达密码管理推广策略                                                                                                                               |                                                                                                   | 0.25     |
 
-### 第 2 阶段 - 组织设置
+</details>
+
+<details>
+
+<summary>第 2 阶段 - 组织设置</summary>
 
 为您的客户建立技术基础并配置 Bitwarden 设置。
 
@@ -118,7 +156,11 @@
 | 20 | SSO 登录 | 如适用，配置 SSO 登录和组织标识符 配置以与 SAML 2.0 或 OpenID Connect 协同工作                   | ​[开始使用 SSO](https://app.gitbook.com/o/o6iuhwSZ18661JC1CZl7/s/-M2XqgFI6fAcTD0lL3MZ/admin-console/login-with-sso/about-login-with-sso)​         | 1.5      |
 | 21 | 域名验证   | 如适用，验证公司和其他电子邮件域名，以允许您的用户在 Enterprise SSO 过程中跳过输入组织标识符。非 SSO 组织无需此操作      | ​[域名验证](https://app.gitbook.com/o/o6iuhwSZ18661JC1CZl7/s/-M2XqgFI6fAcTD0lL3MZ/admin-console/login-with-sso/claimed-domains)​                  | 0.5      |
 
-### 第 3 阶段 - 组织推广
+</details>
+
+<details>
+
+<summary>第 3 阶段 - 组织推广</summary>
 
 跨客户的团队和职能部署 Bitwarden。跨客户的团队和职能部署 Bitwarden。
 
@@ -137,7 +179,11 @@
 | 32 | 测试用户入职引导      | 配置并测试 Bitwarden SCIM 或 Directory Connector 集成，以自动同步用户和群组                                                    | <p><a href="../../../../docs/admin-console/manage-members/scim/about-scim.md">关于 SCIM</a></p><p></p><p><a href="../../../../docs/admin-console/manage-members/directory-connector/about-directory-connector.md">关于 Directory Connector</a></p>                                                                                                   | 1.5      |
 | 33 | 用户入职引导        | 执行 SCIM 或 Directory Connector 同步，以邀请组中的其他用户加入组织。将附件中的用户入职工作流程说明与用户分享                                        | <p><a href="../../../../docs/admin-console/manage-members/scim/about-scim.md">关于 SCIM</a></p><p></p><p><a href="../../../../docs/admin-console/manage-members/directory-connector/about-directory-connector.md">关于 Directory Connector</a></p><p></p><p><a href="../../../../docs/admin-console/onboarding/onboarding-workflows.md">入职流程</a></p> | 1        |
 
-### 第 4 阶段 - 用户培训
+</details>
+
+<details>
+
+<summary>第 4 阶段 - 用户培训</summary>
 
 培训所有用户和利益相关者如何使用 Bitwarden 并提供继续教育。
 
@@ -147,3 +193,5 @@
 | 35 | 服务台培训  | <p>指导服务台用户了解其角色/操作。</p><p></p><p>审查自定义角色可以完成哪些任务以及哪些任务需要管理员干预</p>                                                                                                     |                                                                                                                                                                               | 0.75   |
 | 36 | 团队成员培训 | <p>面向最终用户的一般培训将涵盖：适用于所有设备的 Bitwarden<br><br>设置 Bitwarden 浏览器扩展<br><br>创建您的账户<br><br>了解 Bitwarden 密码库<br><br>如何使用 Bitwarden Password Manager<br><br>Bitwarden Send</p> | <p><a href="../../business/teams-plan/team-member.md">了解您的密码库</a></p><p></p><p><a href="/broken/pages/MoTVZ48ICbNQuPBuarAR">了解 Password Manager</a></p>                       | 0.75   |
 | 37 | 持续教育   | 所有用户都可以利用 Bitwarden 学习中心每月更新的学习内容                                                                                                                                     | [学习](https://bitwarden.com/learning/)                                                                                                                                         | 0.75   |
+
+</details>
