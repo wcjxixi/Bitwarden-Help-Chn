@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/courses/password-manager-team-member/)
 {% endhint %}
 
-这套面向企业成员的 Bitwarden 培训将带您了解加入组织后所需的一切内容，帮助您快速开始使用。通过简短的视频教程，您将学习如何加入组织、设置密码库、跨设备使用自动填充，以及安全地共享凭据，让 Bitwarden 团队协作从第一天起就发挥作用。
+这套面向企业成员的 Bitwarden 培训将带您了解加入组织后所需的一切内容，帮助您快速开始使用。通过简短的视频教程，您将学习如何加入组织、设置密码库、跨设备使用自动填充，以及安全地共享凭据，确保 Bitwarden 团队版从第一天起就发挥作用。
 
 ## 演示 <a href="#demo" id="demo"></a>
 
@@ -492,17 +492,27 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 ## 了解更多 <a href="#learn-more" id="learn-more"></a>
 
-### 随身携带 Bitwarden <a href="#take-bitwarden-on-the-go" id="take-bitwarden-on-the-go"></a>
+<details>
+
+<summary>随身携带 Bitwarden</summary>
 
 安全无处不在！获取 Bitwarden 移动 App，这样您就可以在外出时安全地使用您的密码。[下载](https://bitwarden.com/download/)移动 App 并了解在 [iOS](../../../../docs/password-manager/autofill/autofill-from/autofill-from-ios.md) 或 [Android](../../../../docs/password-manager/autofill/autofill-from/autofill-from-android.md) 上如何自动填充密码。
 
-### 为您所有设备获取 Bitwarden <a href="#get-bitwarden-for-all-your-devices" id="get-bitwarden-for-all-your-devices"></a>
+</details>
+
+<details>
+
+<summary>为您所有设备获取 Bitwarden</summary>
 
 {% embed url="https://vimeo.com/795737043?fl=pl&fe=sh" %}
 
 [此处](https://bitwarden.com/download/)下载适用于您所有设备的 Bitwarden App。
 
-### 更改默认语言 <a href="#change-the-default-language" id="change-the-default-language"></a>
+</details>
+
+<details>
+
+<summary>更改默认语言</summary>
 
 {% embed url="https://vimeo.com/795737043?fl=pl&fe=sh" %}
 
@@ -511,7 +521,11 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:15**：更改网页 App 中的语言设置
 * **00:56**：更改桌面 App 中的语言设置
 
-### 使用自定义字段 <a href="#using-custom-fields" id="using-custom-fields"></a>
+</details>
+
+<details>
+
+<summary>使用自定义字段</summary>
 
 {% embed url="https://vimeo.com/821402921?fl=pl&fe=sh" %}
 
@@ -521,20 +535,34 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 * **00:41**：自定义字段的使用和链接
 * **01:30**：添加自定义字段
 
+</details>
+
 ## 支持 <a href="#support" id="support"></a>
 
-### Smart Search
+<details>
+
+<summary>Smart Search</summary>
 
 使用 **Bitwarden Smart Search** 立即寻找答案。
 
 <a href="https://bitwarden.com/smart-search/" class="button primary">Try Smart Search</a>
 
-### 询问社区 <a href="#ask-the-community" id="ask-the-community"></a>
+</details>
+
+<details>
+
+<summary>询问社区</summary>
 
 与经验丰富的 Bitwarden 用户联系，分享技巧并共同解决问题。在[社区论坛](https://community.bitwarden.com/c/support/pm-ask-the-community/?_gl=1*1gc3ljx*_gcl_au*NDkyNTE5NzM4LjE3NjU1Mzk5OTUuMTMxODM0NjMwLjE3NjY4OTA0MjUuMTc2Njg5MDQyNQ..*_ga*MTk5NzU0OTg5My4xNzU2OTg5NjI5*_ga_QBRN562QQQ*czE3Njc2MzE2MjUkbzE3OCRnMSR0MTc2NzYzMjUxNyRqNjAkbDAkaDA.)或 [Reddit](https://www.reddit.com/r/Bitwarden/new/) 上提问。
 
-### 联系支持 <a href="#contact-support" id="contact-support"></a>
+</details>
+
+<details>
+
+<summary>联系支持</summary>
 
 遇到技术问题或有账户问题？请联系 Bitwarden 支持团队获取直接的协助。
 
 <a href="https://bitwarden.com/contact/" class="button primary">联系支持</a>
+
+</details>
