@@ -106,7 +106,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 ## 导入您的数据 <a href="#import-your-data" id="import-your-data"></a>
 
-了解如何使用浏览器扩展导入密码，或探索其他方式，例如桌面 App 和移动 App。兼容的浏览器和 App 提供了直接导入功能。
+了解如何使用浏览器扩展导入您的密码，或探索其他方式，例如桌面 App 和移动 App。兼容的浏览器和 App 提供了直接导入功能。
 
 <details>
 
@@ -196,7 +196,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 ## 从浏览器扩展自动填充 <a href="#autofill-from-browser-extension" id="autofill-from-browser-extension"></a>
 
-了解如何使用内嵌菜单自动填充密码和其他凭据，或探索其他方式，例如填充按钮或键盘快捷键。
+了解如何使用内嵌菜单自动填充您的密码和其他凭据，或探索其他方式，例如填充按钮或键盘快捷键。
 
 <details>
 
@@ -291,7 +291,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 ## 从 Android App 自动填充 <a href="#autofill-from-android-app" id="autofill-from-android-app"></a>
 
-了解如何使用内嵌建议自动填充密码和其他凭据，或探索其他方式，例如弹出菜单。
+了解如何使用内嵌建议自动填充您的密码和其他凭据，或探索其他方式，例如弹出菜单。
 
 <details>
 
@@ -361,7 +361,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 ## 从 iOS App 自动填充 <a href="#autofill-from-ios-app" id="autofill-from-ios-app"></a>
 
-了解如何使用键盘自动填充密码和其他凭据，或探索其他方式，例如长按文本字段或使用浏览器 App 扩展。
+了解如何使用键盘自动填充您的密码和其他凭据，或探索其他方式，例如长按文本字段或使用浏览器 App 扩展。
 
 <details>
 
@@ -420,7 +420,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 <details>
 
-<summary>访问共享密码</summary>
+<summary>访问共享的密码</summary>
 
 作为组织的成员，您可以安全地共享登录凭据和信用卡等信息。共享项目被分组到[集合](../../../../docs/password-manager/organization-members/sharing.md)中。
 
@@ -428,7 +428,7 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 </details>
 
-## 使用 Bitwarden Send 感共享 <a href="#sharing-with-bitwarden-send" id="sharing-with-bitwarden-send"></a>
+## 使用 Bitwarden Send 共享 <a href="#sharing-with-bitwarden-send" id="sharing-with-bitwarden-send"></a>
 
 <details>
 

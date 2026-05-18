@@ -406,13 +406,21 @@ Bitwarden Password Manager 网页 App 将列出您的所有密码库项目，包
 
 </details>
 
-## 共享 <a href="#sharing" id="sharing"></a>
+## 使用集合共享 <a href="#share-using-collections" id="share-using-collections"></a>
 
-### 访问共享密码 <a href="#access-shared-passwords" id="access-shared-passwords"></a>
+<details>
+
+<summary>访问共享的密码</summary>
 
 作为组织的成员，您可以安全地共享登录凭据和信用卡等信息。共享的项目会归类到[集合](../../../../docs/password-manager/organization-members/sharing.md)中。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/665UWKruSMsgv2tRE8Z9Zq/3eeb08d790153cb8d1c1b70f4efd45c6/Screenshot_2025-12-13_at_1.21.45%C3%A2__AM.png?w=800&#x26;fm=avif" alt=""><figcaption></figcaption></figure></div>
+
+</details>
+
+### &#x20;<a href="#access-shared-passwords" id="access-shared-passwords"></a>
+
+
 
 ### 安全地发送文本和文件 <a href="#send-text-and-files-securely" id="send-text-and-files-securely"></a>
 
