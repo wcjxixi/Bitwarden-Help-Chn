@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/saml-pingfederate/)
 {% endhint %}
 
-本文包含使用 PingFederate 实施的 Bitwarden **SSO 登录** (SAML 2.0) 的示例配置。
+本文包含使用 PingFederate 的 Bitwarden **SSO 登录** (SAML 2.0) 实施的示例配置。
 
 请将此作为 [SSO 登录 (SAML 2.0) 配置](generic-saml.md)一文的参考资料。
 
