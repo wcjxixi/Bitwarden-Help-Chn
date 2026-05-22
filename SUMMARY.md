@@ -271,6 +271,7 @@
       * [OneLogin SAML](docs/admin-console/login-with-sso/sso-guides/onelogin-saml-implementation.md)
       * [Ping Identity SAML](docs/admin-console/login-with-sso/sso-guides/ping-identity-saml-implementation.md)
       * [Ping Identity OIDC](docs/admin-console/login-with-sso/sso-guides/ping-identity-oidc-implementation.md)
+      * [\*PingFederate SAML](docs/admin-console/login-with-sso/sso-guides/pingfederate-saml.md)
     * [受信任设备](docs/admin-console/login-with-sso/trusted-devices/README.md)
       * [关于受信任设备](docs/admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)
       * [设置受信任设备 SSO](docs/admin-console/login-with-sso/trusted-devices/setup-sso-with-trusted-devices.md)
