@@ -29,11 +29,11 @@
 
 ### 商业订阅 <a href="#business-subscriptions" id="business-subscriptions"></a>
 
-商业订阅（包括[团队版组织](password-manager/about-bitwarden-plans.md#teams-organizations)和[企业版组织](password-manager/about-bitwarden-plans.md#enterprise-organizations)）将根据您的计费所在国家/地区缴纳增值税 (VAT) 或商品和服务税 (GST)。如果产生税款，它会作为单独的行项目包含在账单中。组织[所有者](../admin-console/manage-members/member-roles.md)可以在注册期间或随时在管理控制台中输入其注册企业的有效税务 ID，从而从未来的付款中免除税款。
+商业订阅（包括[团队版组织](password-manager/about-bitwarden-plans.md#teams-organizations)和[企业版组织](password-manager/about-bitwarden-plans.md#enterprise-organizations)）将根据您的计费所在国家/地区缴纳增值税 (VAT) 或商品和服务税 (GST)。如果产生税款，它会作为单独的一行项目包含在账单中。组织[所有者](../admin-console/manage-members/member-roles.md)可以在注册期间或随时在管理控制台中输入其注册企业的有效税务 ID，从而从未来的付款中免除税款。
 
 要添加或更新商业订阅的增值税 (VAT) 或商品和服务税 (GST) 税务 ID：
 
-1、在网页 App 管理控制台中，转到**计费** → **付款详细信息**。
+1、在网页 App 管理控制台中，前往**计费** → **付款详细信息**。
 
 2、选择**编辑计费地址**。
 
