@@ -4,49 +4,62 @@
 对应的[官方文档地址](https://bitwarden.com/help/revoke-users/)
 {% endhint %}
 
-组织[管理员和某些自定义角色成员](../member-roles.md)可以通过撤销和恢复操作，来临时管理成员对组织的访问权限。撤销访问权限适用于：
+撤销成员是指将某人从您的组织中临时移除。之后您可以[恢复其访问权限](temporarily-revoke-access.md#restore-access)或将其[永久移除](permanently-remove-access.md)出您的组织。成员被撤销后，该成员将：
 
-* 当某个成员在一段时间内不应该拥有访问权限，但将来需要恢复他们的访问权限时，此功能尤为实用。
-* 当用户违反某些[企业策略](../../oversight-visibility/enterprise-policies.md)时，会**自动**执行此操作。
-* 对于[使用 SCIM](../scim/about-scim.md) 的企业，当成员在 IdP 中被挂起或停用时，会**自动**执行此操作。
+* 无法访问任何组织密码库项目或集合。
+* 无法使用您的组织 [SSO](../../login-with-sso/about-sso.md) 登录。
 
-恢复被撤销成员的访问权限无需他们采取任何重新加入组织的步骤，这意味着他们不需要[被重新邀请、接受邀请或被确认](../user-management.md#onboard-users)。
+{% hint style="danger" %}
+**没有主密码的**成员（例如，在使用[受信任设备](../../login-with-sso/trusted-devices/about-trusted-devices.md)或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 的组织中的成员）如果被撤销，其将被完全锁定在他们的账户之外。
+{% endhint %}
+
+* 不受您的组织[策略](../../oversight-visibility/enterprise-policies.md)的约束。
+* 不占用[订阅席位](../../../plans-and-pricing/manage-subscription-seats-in-your-organization.md)。
 
 ## 撤销访问权限 <a href="#revoke-access" id="revoke-access"></a>
 
-{% hint style="info" %}
-只有**所有者**可以撤销和恢复其他**所有者**的访问权限。
-{% endhint %}
+撤销成员有好几种方法。当成员违反某些[企业策略](../../oversight-visibility/enterprise-policies.md)，或者成员在用于其组织 [SCIM](../scim/about-scim.md) 的 IdP 中被暂停或停用时，成员将被**自动**撤销。
 
-要撤销成员对组织的访问权限：
+或者，拥有**管理用户**权限的[所有者、管理员或自定义角色成员](../member-roles.md)可以**手动**撤销用户：
 
-1、在管理控制台中，导航到**成员**视图。
+1、在Admin Console 中，选择**成员**。
 
-2、选择您想要撤销访问权限的成员，然后使用 ≡选项菜单**撤销访问权限**：
+2、勾选您想要撤销的成员。
+
+3、选择 **≡**&#x9009;项菜单。
+
+4、选择**撤销访问权限**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6hBUggWWvdttF0RUqU8IZ9/389eb47b90742bb3e3844f5105bc643a/2024-12-03_15-06-01.png?w=1197&#x26;fm=avif" alt=""><figcaption><p>撤销访问权限</p></figcaption></figure></div>
 
-### 已被撤销的成员的限制 <a href="#restrictions-on-revoked-members" id="restrictions-on-revoked-members"></a>
+5、选择**撤销成员**以确认。
 
-已撤销访问权限的成员被列在**已撤销**选项卡中，并将：
+{% hint style="success" %}
+要查看哪些成员被撤销，请转至**成员** → **已撤销**。将鼠标悬停在特定用户旁边的 **ⓘ已撤销**图标上，即可了解他们被撤销的原因：
 
-* 无权限访问任何组织密码库项目、集合等。
-* 无法使用组织的 [SSO](../../login-with-sso/about-sso.md) 登录账户。
-* 不受您的组织[策略](../../oversight-visibility/enterprise-policies.md)的约束。
-* 不占用许可证席位。
+<img src="https://bitwarden.com/assets/4K6UcJtGBxlmEyY0ASKBBs/f4ed8fec1ad67da90dd0f980ef2744a6/Revoke_reason_tooltip.png?w=800&#x26;fm=avif" alt="" data-size="original">
+
+如果显示「Unknown reason」，则说明该成员在[版本 2026.5.0](../../../release-notes.md#id-2026.5.0) 发布之前已被撤销。
+{% endhint %}
 
 ## 恢复访问权限 <a href="#restore-access" id="restore-access"></a>
 
 {% hint style="info" %}
-不符合某些[策略](../../oversight-visibility/enterprise-policies.md)的成员在采取措施达到合规要求之前，将无法恢复其访问权限。
+不符合某些[企业策略](../../oversight-visibility/enterprise-policies.md)的成员，在他们采取措施遵守这些策略之前，将无法恢复到您的组织中。
 {% endhint %}
 
 要恢复成员的访问权限：
 
-1、在管理控制台中，导航到**成员**视图。
+1、在 Admin Console 中，选择**成员**。
 
-2、打开**已撤销**选项卡。
+2、选择**已撤销**。
 
-3、选择您想要恢复访问权限的成员，然后使用 ≡选项菜单**恢复访问权限**：
+3、勾选您想要将其返回您组织的成员。
+
+4、选择 **≡**&#x9009;项菜单。
+
+5、选择**恢复访问权限**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2xe3Vt7l9CCO85RhhmoVJU/47321af7571e298c697a412c650403d6/2024-12-03_15-11-35.png?w=1197&#x26;fm=avif" alt=""><figcaption><p>恢复访问权限</p></figcaption></figure></div>
+
+6、选择**撤销成员**以确认。

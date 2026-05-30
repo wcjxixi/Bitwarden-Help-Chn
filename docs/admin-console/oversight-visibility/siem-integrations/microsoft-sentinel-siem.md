@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/microsoft-sentinel-siem/)
 {% endhint %}
 
-Microsoft Sentinel 是一个安全信息和事件管理 (SIEM) 平台，可用于监控 Bitwarden 组织。组织可通过 Microsoft Sentinel 上的 Bitwarden Event Logs App 来监控[事件](../event-logging/event-logs.md)活动。
+Microsoft Sentinel 是一个安全信息与事件管理 (SIEM) 平台，可用于监控 Bitwarden 组织。组织可通过 Microsoft Sentinel 上的 Bitwarden Event Logs App 来监控[事件](../event-logging/event-logs.md)活动。
 
 ## 设置 <a href="#setup" id="setup"></a>
 

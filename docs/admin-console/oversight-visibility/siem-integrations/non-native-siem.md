@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/non-native-siem/)
 {% endhint %}
 
-Bitwarden 提供全面的事件日志记录功能，能够与安全信息和事件管理 (SIEM) 平台集成，而不仅仅是提供官方集成的解决方案。本文将指导您如何将 Bitwarden 与这些 SIEM 解决方案集成，例如流行的 Datadog 等主流平台。
+Bitwarden 提供全面的事件日志记录功能，能够与安全信息与事件管理 (SIEM) 平台集成，而不仅仅是提供官方集成的解决方案。本文将指导您如何将 Bitwarden 与这些 SIEM 解决方案集成，例如流行的 Datadog 等主流平台。
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 

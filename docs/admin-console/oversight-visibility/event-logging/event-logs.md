@@ -220,14 +220,14 @@ Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19h
 
 ## SIEM 和外部系统集成 <a href="#siem-and-external-systems-integrations" id="siem-and-external-systems-integrations"></a>
 
-> **\[译者注]**：[SIEM](https://en.wikipedia.org/wiki/Security_information_and_event_management)（Security Information and Event Management，安全信息和事件管理）是一种综合性的网络安全解决方案，用于实时收集、分析、关联和响应来自企业 IT 基础设施中的安全事件和日志数据。其核心目标是通过集中化监控和智能分析，帮助组织检测威胁、调查安全事件并满足合规要求。
+> **\[译者注]**：[SIEM](https://en.wikipedia.org/wiki/Security_information_and_event_management)（Security Information and Event Management，安全信息与事件管理）是一种综合性的网络安全解决方案，用于实时收集、分析、关联和响应来自企业 IT 基础设施中的安全事件和日志数据。其核心目标是通过集中化监控和智能分析，帮助组织检测威胁、调查安全事件并满足合规要求。
 >
 > 常见的 SIEM 工具有：
 >
 > * 商业产品：Splunk Enterprise Security、IBM QRadar、Microsoft Sentinel、LogRhythm 等
 > * 开源/免费方案：Elastic Stack、OSSIM、Wazuh 等
 
-Bitwarden 提供了一套与安全信息和事件管理 (SIEM) 平台的全面集成，以利用事件日志：
+Bitwarden 提供了一套与安全信息与事件管理 (SIEM) 平台的全面集成，以利用事件日志：
 
 * [Elastic SIEM](../siem-integrations/elastic-siem.md)
 * [Microsoft Sentinel SIEM](../siem-integrations/microsoft-sentinel-siem.md)
