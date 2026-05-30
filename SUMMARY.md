@@ -232,6 +232,7 @@
     * [入职和继任指南](docs/admin-console/manage-members/onboarding-and-succession.md)
   * [监督 & 可见性](docs/admin-console/oversight-visibility/README.md)
     * [SIEM 集成](docs/admin-console/oversight-visibility/siem-integrations/README.md)
+      * [=Blumira SIEM](docs/admin-console/oversight-visibility/siem-integrations/blumira-siem.md)
       * [Elastic SIEM](docs/admin-console/oversight-visibility/siem-integrations/elastic-siem.md)
       * [Huntress SIEM](docs/admin-console/oversight-visibility/siem-integrations/huntress-siem.md)
       * [Microsoft Sentinel SIEM](docs/admin-console/oversight-visibility/siem-integrations/microsoft-sentinel-siem.md)
