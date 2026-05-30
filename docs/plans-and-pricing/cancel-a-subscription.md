@@ -30,7 +30,7 @@
 
 要取消组织订阅：
 
-1、在网页 App 中，使用产品切换器打开管理控制台：
+1、在网页 App 中，使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 

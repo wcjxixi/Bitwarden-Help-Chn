@@ -22,7 +22,7 @@
 1、在任何 Bitwarden App 的**密码库**视图中，选择 **✚新增**按钮，然后选择所需的项目类型。
 
 {% hint style="success" %}
-组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以跳过此过程中的一些步骤。
+组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从 **Admin Console** 执行此步骤，以跳过此过程中的一些步骤。
 {% endhint %}
 
 2、使用**所有者**下拉菜单选择希望此项目归属的组织。
@@ -44,7 +44,7 @@
 1、导航至**工具** → **导入数据**。
 
 {% hint style="success" %}
-组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以跳过此过程中的一些步骤。
+组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从 **Admin Console** 执行此步骤，以跳过此过程中的一些步骤。
 {% endhint %}
 
 2、使用**密码库**下拉菜单选择希望此项目归属的组织。
@@ -74,7 +74,7 @@
 1、在**密码库**视图中，使用复选框选择要共享的项目。
 
 {% hint style="success" %}
-组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从**管理控制台**执行此步骤，以跳过此过程中的一些步骤。
+组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从 **Admin Console** 执行此步骤，以跳过此过程中的一些步骤。
 {% endhint %}
 
 2、使用 **≡**&#x83DC;单，选择**分配到集合**选项：
@@ -92,7 +92,7 @@
 
 前面介绍的方法是最通用、最简单的方法，不过还有其他一些共享您拥有访问权限的项目的方法：
 
-* **从管理控制台共享**：如前所述，组织所有者、管理员和某些自定义用户可以直接从管理控制台进行共享，从而简化共享过程：
+* **从 Admin Console 共享**：如前所述，组织所有者、管理员和某些自定义用户可以直接从 Admin Console 进行共享，从而简化共享过程：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1u6EPNgAlCnvC9DcmUIosQ/327c0c24e09dce687540499a8eaa5aac/2024-12-02_15-47-21.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>批量分配到集合</p></figcaption></figure></div>
 

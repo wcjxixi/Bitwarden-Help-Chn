@@ -35,7 +35,7 @@
 
 ## 更新组织计费信息 <a href="#update-billing-for-organizations" id="update-billing-for-organizations"></a>
 
-只有[所有者](../admin-console/manage-members/member-roles.md#default-roles)才能查看或更新组织的计费信息。登录 Bitwarden 网页 App，然后打开管理控制台。从导航中选择**计费**，可以找到组织的大部分计费详细信息。
+只有[所有者](../admin-console/manage-members/member-roles.md#default-roles)才能查看或更新组织的计费信息。登录 Bitwarden 网页 App，然后打开 Admin Console。从导航中选择**计费**，可以找到组织的大部分计费详细信息。
 
 {% hint style="success" %}
 至少指定一名额外的所有者，以便在当前所有者不可用时保持对计费和订阅详细信息的访问权限。
@@ -45,7 +45,7 @@
 
 要访问您的组织的计费详细信息：
 
-1、从 Bitwarden 网页 App 中，打开管理控制台。
+1、从 Bitwarden 网页 App 中，打开 Admin Console。
 
 2、前往**计费** → **付款详细信息**：
 
@@ -69,7 +69,7 @@
 
 存档的计费电子邮箱会发送有关您的订阅的重要通知，例如即将到来的续费提醒或未支付的账单。要编辑计费电子邮箱：
 
-1、从 Bitwarden 网页 App 中，打开管理控制台。
+1、从 Bitwarden 网页 App 中，打开 Admin Console。
 
 2、前往**设置** → **组织信息**。
 
@@ -95,7 +95,7 @@
 
 组织的名称会打印在发票上，并在整个 Bitwarden App 中可见。要更改您的组织名称：
 
-1、从 Bitwarden 网页 App 中，打开管理控制台。
+1、从 Bitwarden 网页 App 中，打开 Admin Console。
 
 2、前往**设置** → **组织信息**。
 

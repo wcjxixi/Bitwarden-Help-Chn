@@ -27,7 +27,7 @@
 
 要邀请某人加入您的组织：
 
-1、登录到 Bitwarden [网页 App](../../password-manager/getting-started/getting-started-webvault.md)，然后使用产品切换器打开管理员控制台：
+1、登录到 Bitwarden [网页 App](../../password-manager/getting-started/getting-started-webvault.md)，然后使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
@@ -64,7 +64,7 @@
 
 要确认已接受加入您组织的邀请：
 
-1、登录到 Bitwarden [网页 App](../../password-manager/getting-started/getting-started-webvault.md)，然后使用产品切换器打开管理员控制台：
+1、登录到 Bitwarden [网页 App](../../password-manager/getting-started/getting-started-webvault.md)，然后使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
@@ -98,7 +98,7 @@
 
 ### 下载成员列表 <a href="#download-list-of-members" id="download-list-of-members"></a>
 
-如果您想在管理控制台之外查看或分享所有组织成员的列表，拥有**管理用户**权限的所有者、管理员和[自定义角色](member-roles.md#custom-role)用户可以导出 `.csv` 文件。此功能适用于所有组织。
+如果您想在 Admin Console 之外查看或分享所有组织成员的列表，拥有**管理用户**权限的所有者、管理员和[自定义角色](member-roles.md#custom-role)用户可以导出 `.csv` 文件。此功能适用于所有组织。
 
 要导出成员列表，请前往**成员**然后选择 **⬇️下载图标**：
 

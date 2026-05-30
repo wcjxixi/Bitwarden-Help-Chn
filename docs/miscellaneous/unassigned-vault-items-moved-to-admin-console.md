@@ -1,4 +1,4 @@
-# 未分配的密码库项目已移至管理控制台
+# 未分配的密码库项目已移至 Admin Console
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/unassigned-vault-items-moved-to-admin-console/)
@@ -10,7 +10,7 @@
 
 要查看这些项目并将其批量分配到集合中：
 
-1、使用 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+1、使用 Bitwarden 网页 App，使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
@@ -18,7 +18,7 @@
 组织管理员、所有者和具有自定义**管理所有集合**权限的用户可以访问管理控制台中的**未分配**筛选器。
 {% endhint %}
 
-2、从管理控制台中选择**集合**，然后选择**未分配**筛选器：
+2、从 Admin Console 中选择**集合**，然后选择**未分配**筛选器：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2qrTXyyUlFglTbBcnLsGzp/88cb93f6d1af69db7b28709230d9df75/Screenshot_2024-04-09_at_12.52.23_PM.png?w=1267&#x26;fm=avif" alt=""><figcaption><p>未分配的密码库项目</p></figcaption></figure></div>
 

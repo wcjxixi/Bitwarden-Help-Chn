@@ -6,7 +6,7 @@
 
 本文档将指导您将[受信任设备 SSO](./) 添加到您的组织。要完成以下步骤，您必须是组织所有者或管理员：
 
-1、登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
+1、登录到 Bitwarden 网页 App，然后使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 

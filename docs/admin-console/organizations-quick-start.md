@@ -68,11 +68,11 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 创建完成后，您将进入组织密码库，这是所有内容共享和组织管理的中心。作为[组织所有者](manage-members/member-roles.md)，您将能够查看您的**密码库**，管理用户和[集合](organizations-quick-start.md#get-to-know-collections)，使用一些 Bitwarden **工具**以及配置组织的**设置**：
 
-创建后，您将进入管理控制台，这是所有内容共享和组织管理的中心。作为组织所有者，作为[组织所有者](manage-members/member-roles.md)，您将能够查看您的**密码库**项目、[集合](organizations-quick-start.md#get-to-know-collections)、管理**成员**、运行**报告**、更改**计费**设置以及配置其他组织**设置**：
+创建后，您将进入 Admin Console，这是所有内容共享和组织管理的中心。作为组织所有者，作为[组织所有者](manage-members/member-roles.md)，您将能够查看您的**密码库**项目、[集合](organizations-quick-start.md#get-to-know-collections)、管理**成员**、运行**报告**、更改**计费**设置以及配置其他组织**设置**：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>免费组织管理控制台</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/hzBuypc5ISzqC3jUmYbea/edcb03ce3d3071cea4f9afb6c7f8eca9/2024-12-03_13-46-09.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>免费组织的 Admin Console</p></figcaption></figure></div>
 
-具有管理控制台访问权限的用户可以随时在网页 App 中通过左侧导航进入管理控制台：
+具有 Admin Console 访问权限的用户可以随时在网页 App 中通过左侧导航进入 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
@@ -98,7 +98,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 作为组织所有者，邀请新成员的步骤如下：
 
-1、在管理控制台中，从导航栏选择**成员**选项卡然后选择 ✚**邀请成员**按钮：
+1、在 Admin Console 中，从导航栏选择**成员**选项卡然后选择 ✚**邀请成员**按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>邀请成员加入组织</p></figcaption></figure></div>
 
@@ -126,7 +126,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 确认组织接受成员是授予成员访问共享项目权限的最后一步。要完成此循环：
 
-1、在管理控制台中，从导航栏选择**成员**选项卡。
+1、在 Admin Console 中，从导航栏选择**成员**选项卡。
 
 2、选中任何`已接受`的用户并使用 **≡**&#x9009;项菜单 **✔︎确认所选**：
 
@@ -168,7 +168,7 @@ Bitwarden组织的神奇之处在于，属于您的项目和[属于组织](organ
 
 如果您与某个组织共享了一个项目，有两个选项可以取消与该组织共享该项目。
 
-1. 使用产品切换器打开管理控制台，从选项菜单中选择要**克隆**的项目，将项目克隆回您的个人密码库。只有用户类型为管理员或更高级别的用户才能通过更改**所有权**设置将项目克隆到其个人密码库中。
+1. 使用产品切换器打开 Admin Console，从选项菜单中选择要**克隆**的项目，将项目克隆回您的个人密码库。只有用户类型为管理员或更高级别的用户才能通过更改**所有权**设置将项目克隆到其个人密码库中。
 2. 从同一菜单中选择**删除**，从而从组织密码库中删除项目。
 
 或者，也可以将项目移动到具有更高访问控制权限限制的其他集合中，从而取消共享。

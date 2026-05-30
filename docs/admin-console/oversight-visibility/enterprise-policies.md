@@ -14,7 +14,7 @@
 
 组织所有者和管理员可以应用企业策略。要更新策略：
 
-1、使用 Bitwarden 网页 App，打开管理控制台。
+1、使用 Bitwarden 网页 App，打开 Admin Console。
 
 2、选择**设置**。
 

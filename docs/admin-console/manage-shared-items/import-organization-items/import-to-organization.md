@@ -22,7 +22,7 @@
 
 要导入数据到组织：
 
-1、登录 Bitwarden 网页 App 然后打开管理控制台。
+1、登录 Bitwarden 网页 App 然后打开 Admin Console。
 
 2、转到**设置** → **导入**：
 

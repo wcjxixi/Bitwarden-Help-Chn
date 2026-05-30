@@ -75,7 +75,7 @@
 
 只有[组织的所有者](../admin-console/manage-members/member-roles.md)可以删除组织（如果您是组织成员，则可以[退出组织](../admin-console/more/organizations-faqs.md#q-how-do-i-leave-an-organization)）。要删除组织：
 
-1、打开管理控制台：
+1、打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 

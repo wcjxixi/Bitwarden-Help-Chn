@@ -30,7 +30,7 @@
 
 要为您的组织启用自动确认，请确保您已满足上述资格要求。当您联系了您的 Bitwarden 团队后，组织所有者将在下次登录时收到一个激活面板。
 
-当 Bitwarden 为您的组织添加了该功能后，您还可以从管理控制台中的**设置** → **策略**菜单，通过[策略](../oversight-visibility/enterprise-policies.md#automatic-user-confirmation)来激活自动确认。无论哪种方式，选择**继续**即可为组织启用自动确认：
+当 Bitwarden 为您的组织添加了该功能后，您还可以从 Admin Console 中的**设置** → **策略**菜单，通过[策略](../oversight-visibility/enterprise-policies.md#automatic-user-confirmation)来激活自动确认。无论哪种方式，选择**继续**即可为组织启用自动确认：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1ggo2uyCvldAlJcOxAmGdv/eabe1eb2c5a82731268d6b3486fbc3d5/2026-02-05_10-43-27.png?w=1134&#x26;fm=avif" alt=""><figcaption><p>新用户自动确认</p></figcaption></figure></div>
 

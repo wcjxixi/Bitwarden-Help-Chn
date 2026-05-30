@@ -84,7 +84,7 @@ Bitwarden 支持 Splunk Enterprise 9.3、9.4 和 10.0 版本。Splunk Enterprise
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4c0008B7jTVp0PQtp97p0h/e725995706475b44b8726db6fbf066c1/SplunkSetupFull_edited.png?w=674&#x26;fm=avif" alt=""><figcaption><p>设置 Bitwarden 菜单</p></figcaption></figure></div>
 
-3、保持此界面打开，在另一个标签页上，登录 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
+3、保持此界面打开，在另一个标签页上，登录 Bitwarden 网页 App，然后使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 

@@ -24,7 +24,7 @@
 
 组织的[管理员（或更高级别）](member-roles.md)和[提供商用户](../../provider-portal/provider-users.md#provider-user-types)可以创建和管理群组。要创建群组：
 
-1、登录到[网页 App](https://vault.bitwarden.com/)，然后使用产品切换器打开管理控制台：
+1、登录到[网页 App](https://vault.bitwarden.com/)，然后使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
@@ -66,6 +66,6 @@
 
 如果您要更改已分配给群组的[集合](../manage-shared-items/collections/about-collections.md)或[权限](member-roles.md)：
 
-1. 在管理控制台中，打开**群组**视图。
+1. 在 Admin Console 中，打开**群组**视图。
 2. 对于您想要编辑的群组，使用 **≡**&#x9009;项菜单选择**集合**。
 3. 从群组中添加、移除或更改集合权限，然后选择**保存**。

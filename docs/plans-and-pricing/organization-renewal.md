@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/organization-renewal/)
 {% endhint %}
 
-组织订阅按年或按月自动续订。组织所有者可以从网页 App 管理控制台中，导航到组织的**计费** → **订阅**界面来查看续费日期：
+组织订阅按年或按月自动续订。组织所有者可以从网页 App Admin Console 中，导航到组织的**计费** → **订阅**界面来查看续费日期：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7MT9lfZZDTOQOBmnrLGceN/1ac8c615153e35250d15ce3921148cfe/2024-12-04_10-33-12.png?w=1175&#x26;fm=avif" alt=""><figcaption><p>组织订阅视图</p></figcaption></figure></div>
 
@@ -24,8 +24,8 @@
 
 ## 重新启用已禁用的组织 <a href="#re-enabling-a-disabled-organization" id="re-enabling-a-disabled-organization"></a>
 
-如果您的云托管组织被禁用，在管理控制台**计费** → **订阅**页面上支付未支付的账单后，将自动恢复服务。
+如果您的云托管组织被禁用，在 Admin Console 的**计费** → **订阅**页面上支付未支付的账单后，将自动恢复服务。
 
 如果您遇到任何问题，请使用主题 **Disabled Subscription Organization** [联系我们](https://bitwarden.com/contact/)。Bitwarden 团队将手动重新启用您的组织，并与应收账款团队合作提供进一步的计费协助。
 
-如果您的自托管组织被禁用，请从您的云托管 Bitwarden 组织密码库下载新的许可证文件。下载后，打开您的自托管网页密码库，然后在管理控制台**计费** → **订阅**页面更新许可证。
+如果您的自托管组织被禁用，请从您的云托管 Bitwarden 组织密码库下载新的许可证文件。下载后，打开您的自托管网页密码库，然后在 Admin Console 的**计费** → **订阅**页面更新许可证。

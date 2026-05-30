@@ -428,7 +428,7 @@
   * [Bitwarden 术语表](docs/miscellaneous/bitwarden-glossary-of-terms.md)
   * [迁移脚本](docs/miscellaneous/migration-script.md)
   * [Secrets Manager Beta 版注册](docs/miscellaneous/beta-signup.md)
-  * [未分配的密码库项目已移至管理控制台](docs/miscellaneous/unassigned-vault-items-moved-to-admin-console.md)
+  * [未分配的密码库项目已移至 Admin Console](docs/miscellaneous/unassigned-vault-items-moved-to-admin-console.md)
   * [旧版用户支持](docs/miscellaneous/legacy-user-support.md)
   * [原生移动 App](docs/miscellaneous/native-mobile-apps.md)
   * [通行密钥 FAQ](docs/miscellaneous/passkeys-faq.md)

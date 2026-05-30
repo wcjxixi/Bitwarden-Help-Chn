@@ -60,7 +60,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 
 2、**入职管理用户**。创建好组织后，通过入职一些[管理用户](../manage-members/member-roles.md)来简化后续的设置过程。此时**不要开始最终用户入职**，这一点很重要，因为还需要几个步骤来准备您为组织。[此处](../manage-members/user-management.md#onboard-users)了解如何邀请管理员。
 
-3、**配置身份服务**。企业版组织支持使用 SAML 2.0 或 OpenID Connect (OIDC) 的[单点登录](../login-with-sso/about-sso.md) (SSO)。要配置 SSO，请在管理控制台中打开组织的**设置** → **单点登录**界面，[组织所有者和管理员](../manage-members/member-roles.md)都可以访问该界面。
+3、**配置身份服务**。企业版组织支持使用 SAML 2.0 或 OpenID Connect (OIDC) 的[单点登录](../login-with-sso/about-sso.md) (SSO)。要配置 SSO，请在 Admin Console 中打开组织的**设置** → **单点登录**界面，[组织所有者和管理员](../manage-members/member-roles.md)都可以访问该界面。
 
 4、**启用企业策略**。[企业策略](../oversight-visibility/enterprise-policies.md)使组织能够为用户实施规则，例如要求使用两步登录。强烈建议在用户入职前配置策略。
 
@@ -68,7 +68,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 
 要将数据导入您的组织：
 
-1、登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+1、登录 Bitwarden 网页 App，使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 

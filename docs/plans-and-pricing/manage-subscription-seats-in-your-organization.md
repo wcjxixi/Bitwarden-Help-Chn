@@ -19,7 +19,7 @@
 
 只有[组织所有者](../admin-console/manage-members/member-roles.md#default-roles)或[提供商服务用户](../provider-portal/provider-users.md#provider-user-types)才能添加或移除席位，因为这直接影响组织的计费订阅。
 
-要查看您的团队已包含多少个用户席位，请打开管理控制台，然后前往**计费** → **订阅**。您组织的席位总数列在**订阅席位**中：
+要查看您的团队已包含多少个用户席位，请打开 Admin Console，然后前往**计费** → **订阅**。您组织的席位总数列在**订阅席位**中：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6IiAvwCX2KbCTUAbAnY4yV/81614bb5a44c64cdc387ba9cee5663eb/Set_Subscription_seats.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>设置订阅席位</p></figcaption></figure></div>
 
@@ -47,13 +47,13 @@
 
 自托管组织拥有的席位数量始终与其[对应的云端组织](../self-hosting/plan-for-deployment/self-host-an-organization.md#step-3-start-your-organization)保持一致。这意味着自托管组织**不会**自动扩展用户。相反，您必须使用云端管理控制台来管理您的席位数量。
 
-要快速反映在云端管理控制台中对席位数量所做的更改，您可以设置[计费同步](../self-hosting/licensing-on-premise.md#zi-dong-tong-bu)。这将无需[重新上传许可证](../self-hosting/licensing-on-premise.md#shou-dong-geng-xin)。
+要快速反映在云端 Admin Console 中对席位数量所做的更改，您可以设置[计费同步](../self-hosting/licensing-on-premise.md#zi-dong-tong-bu)。这将无需[重新上传许可证](../self-hosting/licensing-on-premise.md#shou-dong-geng-xin)。
 
 ## 手动添加或移除席位 <a href="#manually-add-or-remove-seats" id="manually-add-or-remove-seats"></a>
 
 要为您的组织手动添加或移除席位：
 
-1、登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
+1、登录到 Bitwarden 网页 App，然后使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
@@ -75,7 +75,7 @@
 
 要为您的组织可自动扩展到的席位数量设置限制：
 
-1、登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
+1、登录到 Bitwarden 网页 App，然后使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 

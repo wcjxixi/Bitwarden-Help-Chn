@@ -28,7 +28,7 @@
 
 要向非企业版组织成员的员工发放家庭赞助：
 
-1、在管理控制台中，导航到**成员** → **免费 Bitwarden 家庭**，然后选择 **✚添加赞助**：
+1、在 Admin Console 中，导航到**成员** → **免费 Bitwarden 家庭**，然后选择 **✚添加赞助**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3ZLi9Ap4Hk44fCNWHvvrFY/b3e4a05fd72aa106e938295d27e0d37a/2025-05-21_11-35-45.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>免费 Bitwarden 家庭</p></figcaption></figure></div>
 
