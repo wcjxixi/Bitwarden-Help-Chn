@@ -57,7 +57,14 @@
 当您的系统具有 polkit 代理和机密服务守护程序（例如 GNOME Keyring）时，Linux 中支持生物识别解锁 Bitwarden 桌面 App。[Bitwarden 桌面 App](https://bitwarden.com/download/#downloads-desktop) 的所有可用的 Linux 版本都支持生物识别解锁。
 
 {% hint style="info" %}
-我们建议安装 Bitwarden 桌面 App 的 `Snap` 或 `Flatpak` 版本，因为它们完全支持自动更新。但是，这些版本与 Bitwarden 浏览器扩展中的生物识别不兼容。其他 Linux 软件包类型 `AppImage`、`.deb` 和 `.rpm` 与浏览器扩展中的生物识别兼容，但不会接收自动更新。
+我们建议安装 Bitwarden 桌面 App 的 `Snap` 或 `Flatpak` 版本，因为它们完全支持生物识别解锁以及自动更新。
+
+同时，两者也都支持与 Bitwarden 浏览器扩展的生物识别集成：
+
+* **Flatpak：**&#x652F;持与沙盒以及非沙盒浏览器扩展的生物识别集成。
+* **Snap：**&#x652F;持与非沙盒浏览器扩展的生物识别集成。
+
+了解更多有关[桌面 App 功能支持](../../../password-manager/more/troubleshooting/desktop-app-feature-support.md)的信息。
 {% endhint %}
 
 ### AppImage、Snap、.deb 和 .rpm <a href="#appimage-snap-deb-and-rpm" id="appimage-snap-deb-and-rpm"></a>
@@ -122,7 +129,7 @@ sudo chcon system_u:object_r:usr_t:s0
 {% tab title="Chromium-based & FireFox" %}
 为浏览器扩展启用生物识别包含两个步骤：[激活集成](unlocking-with-biometrics.md#id-1-activate-the-integration)和[激活扩展生物识别](unlocking-with-biometrics.md#id-2-activate-extension-biometrics)。
 
-### 1) 激活集成 <a href="#id-1-activate-the-integration" id="id-1-activate-the-integration"></a>
+### 激活集成 <a href="#activate-the-integration" id="activate-the-integration"></a>
 
 首先，打开 Bitwarden 桌面 App 并更新此设置：
 
@@ -138,7 +145,7 @@ sudo chcon system_u:object_r:usr_t:s0
 
 4、（可选）选中**要求浏览器集成验证**以在每次激活桌面 App 和浏览器扩展之间的集成时要求进行指纹验证。
 
-### 2) 激活扩展生物识别 <a href="#id-2-activate-extension-biometrics" id="id-2-activate-extension-biometrics"></a>
+### 激活扩展生物识别 <a href="#activate-extension-biometrics" id="activate-extension-biometrics"></a>
 
 {% hint style="info" %}
 某些浏览器，特别是 Edge 和 Brave 等基于 Chrome 和 Chromium 的浏览器，可能需要额外的权限才能使生物识别正常工作：

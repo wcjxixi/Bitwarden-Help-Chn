@@ -8,24 +8,31 @@
 
 * 您必须是[所有者、管理员或允许的自定义角色成员](../member-roles.md)。
 * 您的组织必须已开启[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#setting-enterprise-policies)。
-* 您要恢复账户的成员必须[已注册账户恢复](account-recovery-enrollment.md)。
+* 您要恢复其账户的成员必须[已注册](account-recovery-enrollment.md)。
 
 {% hint style="success" %}
-已注册账户恢复的成员将在**策略**栏中显示一个钥匙图标 (**🔑**)。
+您可以在**成员**页面上查看哪些成员已注册账户恢复。**策略**栏中显示一个钥匙图标 (**🔑**)。
 {% endhint %}
 
-完成以下步骤以恢复组织成员的账户：
+要帮助您的组织成员通过账户恢复重新获得访问权限：
 
-1、在管理控制台中，导航至**成员**视图。
+1、在管理控制台中，导航至**成员**。
 
-2、对于要恢复其账户的成员，请使用 **≡**&#x9009;项菜单选择 **🔑恢复账户**：
+2、（可选）如果账户已撤销，请选择**已撤销**。
+
+3、对于要恢复其账户的成员，请选择与其账户同一行中的 **≡**&#x83DC;单图标。
+
+4、选择 **🔑恢复账户**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/26oD8iqDY15SNJXCJlQE71/22e66b7e11a56d99c13ac41a1236c4e7/2024-12-03_15-35-51.png?w=1197&#x26;fm=avif" alt=""><figcaption><p>恢复账户</p></figcaption></figure></div>
 
-3、在恢复账户窗口中，为用户创建一个**新密码**。如果您的组织启用了[主密码要求策略](../../oversight-visibility/enterprise-policies.md#master-password)，您将需要创建一个满足实施要求的密码（例如，最少 8 个字符，包含数字）：
+5、在出现的**恢复账户**窗口中，选中您要重置哪种凭据：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/28qKke9XJLj6nTZJjg4mK4/7b1c2c5cb2c139bf08ea4c5f65c9a02a/2024-12-03_15-38-52.png?w=882&#x26;fm=avif" alt=""><figcaption><p>创建新密码</p></figcaption></figure></div>
+* 选中**重置主密码**，以创建新的临时密码，如果启用了[主密码要求策略](../../oversight-visibility/enterprise-policies.md#master-password-requirements)，则该密码必须满足您组织的要求。复制新的主密码并安全地与成员共享，例如使用 [Bitwarden Send](../../../password-manager/bitwarden-send/create-a-send.md)。
+* 选中**重置两步登录**，以删移除为 Bitwarden（不是您的 IdP）设置的双重身份验证。如果成员未设置任何两步登录方式，则无法勾选此选项。
 
-4、复制新的主密码，然后使用对等的安全通讯方式联系用户，例如使用 [Bitwarden Send](../../../password-manager/bitwarden-send/create-a-send.md)。
+{% hint style="info" %}
+如果启用了[要求两步登录策略](../../oversight-visibility/enterprise-policies.md#require-two-step-login)，重置成员的两步登录方式将自动[撤销](../revoke-remove/temporarily-revoke-access.md)它们，因为它们将不再合规。提醒他们在设置新的两步登录方式以[恢复访问权限](../revoke-remove/temporarily-revoke-access.md#restore-access)后通知您。
+{% endhint %}
 
-5、选择**保存**以执行账户恢复。这样做会将用户从当前会话中注销。某些客户端应用程序（比如移动 App）上的活动会话可能会保持活动长达一小时。
+6、选择**保存**。这将向成员的账户电子邮箱发送一封电子邮件，其中包含[后续步骤](my-account-was-recovered.md)，这也会将用户从当前会话中注销。某些客户端应用程序（比如移动 App）上的活动会话可能会保持活动长达一小时。

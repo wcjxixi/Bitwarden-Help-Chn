@@ -7,7 +7,7 @@
 任何用户都可以创建文本 Send，但文件 Send 的创建仅适用于[高级用户](../../plans-and-pricing/password-manager/about-bitwarden-plans.md)，或付费组织（家庭版、团队版或企业版）的成员。
 
 {% hint style="info" %}
-已启用[禁用 Send 策略](../../admin-console/oversight-visibility/enterprise-policies.md#disable-send)的组织成员将无法从他们的 Bitwarden 客户端访问 Send。
+如果您是激活了 [Send 控制策略](../../admin-console/oversight-visibility/enterprise-policies.md#send-controls)中的**禁用 Send** 选项的组织的成员，则您无法创建新的 Send 或编辑现有的 Send。虽然强制执行此策略时无法使用 Bitwarden 网页 App 访问 Send 页面，但您可以从任何其他客户端查看或删除现有的 Send。
 {% endhint %}
 
 选择您想要使用 Send 的 Bitwarden App 以开始：

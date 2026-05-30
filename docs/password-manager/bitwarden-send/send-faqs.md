@@ -16,4 +16,4 @@
 
 ### 问：我可以为组织禁用 Send 吗？ <a href="#q-can-i-disable-send-for-my-organization" id="q-can-i-disable-send-for-my-organization"></a>
 
-**答：**&#x4F01;业组织可以使用[禁用 Send 策略](../../admin-console/oversight-visibility/enterprise-policies.md#disable-send)随时禁用 Send 。管理员和所有者可以从组织的**设置** → **策略**页面实施此策略。启用该策略将阻止组织成员创建或编辑任何 Send 。
+**答：**&#x4F01;业版组织可以使用 [Send 控制策略](../../admin-console/oversight-visibility/enterprise-policies.md#send-controls)来禁用创建新的 Send 或编辑现的 Send 的功能。

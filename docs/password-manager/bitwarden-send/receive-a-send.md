@@ -14,7 +14,7 @@
 根据发送者[所配置的选项](create-a-send.md)，Send 的接收者可能需要：
 
 * 输入密码来访问 Send 的内容。
-* 输入验证码
+* 输入[电子邮件验证码](receive-a-send.md#email-verified-sends)
 * 手动切换隐藏文本 Send 的可见性。
 
 ## 电子邮箱验证的 Send <a href="#email-verified-sends" id="email-verified-sends"></a>
