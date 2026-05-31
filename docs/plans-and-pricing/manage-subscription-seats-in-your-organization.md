@@ -45,7 +45,7 @@
 
 ### 自托管计费 <a href="#self-hosted-billing" id="self-hosted-billing"></a>
 
-自托管组织拥有的席位数量始终与其[对应的云端组织](../self-hosting/plan-for-deployment/self-host-an-organization.md#step-3-start-your-organization)保持一致。这意味着自托管组织**不会**自动扩展用户。相反，您必须使用云端管理控制台来管理您的席位数量。
+自托管组织拥有的席位数量始终与其[对应的云端组织](../self-hosting/plan-for-deployment/self-host-an-organization.md#step-3-start-your-organization)保持一致。这意味着自托管组织**不会**自动扩展用户。相反，您必须使用云端 Admin Console 来管理您的席位数量。
 
 要快速反映在云端 Admin Console 中对席位数量所做的更改，您可以设置[计费同步](../self-hosting/licensing-on-premise.md#zi-dong-tong-bu)。这将无需[重新上传许可证](../self-hosting/licensing-on-premise.md#shou-dong-geng-xin)。
 

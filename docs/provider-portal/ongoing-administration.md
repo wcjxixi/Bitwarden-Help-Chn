@@ -14,7 +14,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AoSHeZgJJTBXQmpZ13UBr/56ca464fe6987c8c5fc8e7099235d640/2025-02-25_15-17-46.png?w=1050&#x26;fm=avif" alt=""><figcaption><p>提供商门户</p></figcaption></figure></div>
 
-进入客户的管理控制台后，您可以全面管理客户组织，包括以下重要的任务：
+进入客户的 Admin Console 后，您可以全面管理客户组织，包括以下重要的任务：
 
 {% hint style="danger" %}
 提供商用户不再能直接查看、管理、创建或导出客户组织密码库中的项目。但提供商用户可以直接向客户组织导入密码库数据。

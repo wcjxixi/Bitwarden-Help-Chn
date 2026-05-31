@@ -49,7 +49,7 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 在服务器层面启用云端通信后，需要将同步令牌从用于计费的云端组织传递到自托管组织。要从云端网页密码库获取同步令牌，您必须是组织的所有者。要获取令牌：
 
-1、打开云端网页 App，使用产品切换器打开管理控制台：
+1、打开云端网页 App，使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
@@ -69,7 +69,7 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 在此阶段，如果您要从早期版本升级您的自托管部署，可能需要在继续之前[手动更新您的许可证文件](../../licensing-on-premise.md#organization-license)。
 {% endhint %}
 
-1、打开管理控制台，导航到**计费** → **订阅**。
+1、打开 Admin Console，导航到**计费** → **订阅**。
 
 2、在「许可证和计费管理」部分，选择**自动同步**选项。
 

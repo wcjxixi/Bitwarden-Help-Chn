@@ -83,7 +83,7 @@ Directory Connector 通过从一系列源目录服务中提取，自动在您的
 
 群组将个人成员联系在一起，并提供一种可扩展的方式来访问特定工程的访问权限和权限。添加新成员时，将他们添加到一个群组中，以使他们自动继承该群组配置的权限。[了解更多](../../admin-console/manage-members/groups.md)。
 
-在管理控制台中创建群组后，就可以从 Secrets Manager 网页 App 中把它们分配给工程了。
+在 Admin Console 中创建群组后，就可以从 Secrets Manager 网页 App 中把它们分配给工程了。
 
 ## 单点登录 <a href="#single-sign-on" id="single-sign-on"></a>
 

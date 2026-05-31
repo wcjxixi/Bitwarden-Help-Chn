@@ -60,7 +60,7 @@ SSH 代理需要 2025.1.2 或更新版本。
 1、在桌面或网页 App 的密码库视图中，选择 **✚新增**按钮，然后选择 **SSH 密钥**。
 
 {% hint style="success" %}
-组织[所有者、管理员和某些自定义用户](../../../admin-console/manage-members/member-roles.md)也可以直接从管理控制台执行此步骤，以跳过此过程中的一些步骤。
+组织[所有者、管理员和某些自定义用户](../../../admin-console/manage-members/member-roles.md)也可以直接从 Admin Console 执行此步骤，以跳过此过程中的一些步骤。
 {% endhint %}
 
 2、使用**所有者**下拉列表，选择您希望该项目所属的组织。

@@ -77,7 +77,7 @@ dig your.domain.com TXT
 Bitwarden 将在前 72 小时内尝试声明域名 3 次。如果该域名在第 3 次尝试后的 7 天内仍未通过验证，该域名将从您的组织中被移除。
 {% endhint %}
 
-域名声明活动将记录在组织事件日志中。要查看事件，请在管理控制台中导航到**报告** → **事件日志**。
+域名声明活动将记录在组织事件日志中。要查看事件，请在 Admin Console 中导航到**报告** → **事件日志**。
 
 ## 域名被声明后 <a href="#once-your-domain-is-claimed" id="once-your-domain-is-claimed"></a>
 

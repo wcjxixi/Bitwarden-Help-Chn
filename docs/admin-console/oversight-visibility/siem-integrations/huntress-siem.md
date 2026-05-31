@@ -52,7 +52,7 @@ Bitwarden 和 Huntress 均使用「组织」一词来描述将用户和数据联
 如果您点击退出了此视图，您可以通过导航回 Bitwarden 日志源列表、选择源，然后选择 **✏️Configure** 按钮来重新获取这些值。
 {% endhint %}
 
-6、在 Bitwarden 中，打开管理控制台，然后导航至**集成**页面的**事件管理**选项卡。
+6、在 Bitwarden 中，打开 Admin Console，然后导航至**集成**页面的**事件管理**选项卡。
 
 7、向下滚动到 Huntress 卡片，然后选择**连接 Huntress** 按钮：
 
