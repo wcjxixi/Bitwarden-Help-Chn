@@ -225,7 +225,7 @@ Bitwarden 企业版组织可以使用 SAML 2.0 或 OIDC 与您现有的身份提
 
 ### 事件日志 <a href="#event-logs" id="event-logs"></a>
 
-Bitwarden 组织包括了对[事件日志](../oversight-visibility/event-logging/event-logs.md)的访问权限，这些日志可以直接从网页密码库查看或[导出以在 Splunk 等安全信息和事件管理（SIEM）系统中进行分析](../oversight-visibility/event-logging/event-logs.md#siem-and-external-systems-integrations)。事件日志包含以下信息：
+Bitwarden 组织包括了对[事件日志](../oversight-visibility/event-logging/event-logs.md)的访问权限，这些日志可以直接从网页密码库查看或[导出以在 Splunk 等安全信息与事件管理 (SIEM) 系统中进行分析](../oversight-visibility/event-logging/event-logs.md#siem-and-external-systems-integrations)。事件日志包含以下信息：
 
 * 用户 - 项目交互
 * 对密码库项目所做的更改
