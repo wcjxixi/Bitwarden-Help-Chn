@@ -1,7 +1,7 @@
 # 提供商门户概览
 
 {% hint style="success" %}
-对应的[官方文档地址](https://bitwarden.com/help/article/providers/)
+对应的[官方文档地址](https://bitwarden.com/help/providers/)
 {% endhint %}
 
 {% hint style="success" %}
@@ -10,7 +10,7 @@
 * 您的业务有一个活跃的企业版组织。&#x20;
 * 您的业务有一个客户准备入职到您的提供商下。
 
-[成为合伙人](https://bitwarden.com/partners/become-a-partner/)
+[成为合伙人](https://bitwarden.com/partners/)
 {% endhint %}
 
 ## 什么是提供商？ <a href="#what-are-providers" id="what-are-providers"></a>
