@@ -1,4 +1,4 @@
-# 导入到个人密码库 & 集合
+# 导入到您的密码库或集合
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/import-data/)
@@ -10,7 +10,7 @@
 本文介绍如何导入到您自己的密码库或您具有访问权限的[集合](import-data.md#import-to-a-collection)。如果您正在管理某个组织，则可能需要[导入到组织](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)。
 {% endhint %}
 
-## 常见密码管理器和文件类型导入 <a href="#common-password-manager-and-file-type-imports" id="common-password-manager-and-file-type-imports"></a>
+## 从常见的密码管理器 & 文件类型导入 <a href="#common-password-manager-file-type-imports" id="common-password-manager-file-type-imports"></a>
 
 Bitwarden 支持从许多常见的密码管理解决方案中导入数据，包括：
 
@@ -157,7 +157,7 @@ bw import <format> /Users/myaccount/Documents/mydata.csv
 
 ## 导入到集合 <a href="#import-to-a-collection" id="import-to-a-collection"></a>
 
-将数据导入集合，以与您的直接队友或家人共享项目。如果您正在管理 Bitwarden 组织，请考虑[将数据导入组织](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)中。
+将数据导入[集合](../../admin-console/manage-shared-items/collections/create-collections.md)以组织项目，以及与您的直接队友或家人共享项目。如果您正在管理 Bitwarden 组织，请考虑[将数据导入组织](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)中。
 
 在**导入**页面，选择您组织的**密码库**然后选择**集合**：
 
