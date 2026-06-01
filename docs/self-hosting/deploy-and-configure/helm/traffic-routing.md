@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-NGINX Ingress 已达到 EOL，不再提供支持。Bitwarden 已在 `my-values.yaml` 中添加了 Gateway API 的配置。请参阅 Kubernetes 关于 NGINX Ingress 弃用的[官方声明](https://kubernetes.io/blog/2026/01/29/ingress-nginx-statement/)。
+NGINX Ingress 已达到 EOL，不再提供支持。Bitwarden 已在 `my-values.yaml` 中包含了适用于 Gateway API 的配置。请参阅 Kubernetes 关于启弃用 NGINX Ingress 的[官方声明](https://kubernetes.io/blog/2026/01/29/ingress-nginx-statement/)。
 {% endhint %}
 
 > **\[译者注]**：EOL - End of Life，生命周期。在软件领域，它表示某个软件版本或产品已经停止维护和支持。
@@ -99,9 +99,9 @@ spec:
 
 如果您的设置需要将 HTTP 重定向到 HTTPS，您可以使用以下附加路由来指向 `redirect.yaml` 文件：
 
-将 HTTP 应用于 HTTPS：
+要将 HTTP 应用到 HTTPS：
 
-应用清单：
+应用此清单：
 
 ```shellscript
 kubectl apply -f gateway.yaml
@@ -109,10 +109,10 @@ kubectl apply -f gateway.yaml
 
 要列出 Controller 安装的 `GatewayClass` 资源，请运行：
 
-上述 `gatewayClassName` 值必须与以下值之一匹配。
+上面的 `gatewayClassName` 值必须与其中之一相匹配。
 
 {% hint style="info" %}
-此时，如果您要从 NGINX Ingress 设置迁移，请继续执行从 NGINX Ingress 迁移到 Gateway API 的操作。
+此时，如果您要从 NGINX Ingress 设置迁移，请继续执行[从 NGINX Ingress 迁移到 Gateway API](traffic-routing.md#migrating-from-nginx-ingress-to-gateway-api) 的操作。
 {% endhint %}
 
 ### 为 Gateway API 配置 Helm Chart <a href="#configure-the-helm-chart-for-gateway-api" id="configure-the-helm-chart-for-gateway-api"></a>
@@ -134,7 +134,7 @@ general:
         sectionName: https      # Must match the listener name in the Gateway spec
 ```
 
-应用更改：
+应用此更改：
 
 ```shellscript
 helm upgrade bitwarden bitwarden/self-host \
@@ -173,7 +173,7 @@ general:
         sectionName: https
 ```
 
-2、应用更改：
+2、应用此更改：
 
 ```shellscript
 helm upgrade bitwarden bitwarden/self-host \
