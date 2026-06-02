@@ -44,6 +44,8 @@
 
 ## 恢复访问权限 <a href="#restore-access" id="restore-access"></a>
 
+拥有**管理用户**权限的[所有者、管理员或自定义角色](../member-roles.md)成员可以快速恢复成员的访问权限。恢复已撤销成员的访问权限不需要他们采取任何步骤来重新加入组织，也就是说他们不需要[被重新邀请、接受邀请和被确认](../user-management.md#add-new-members)。
+
 {% hint style="info" %}
 不符合某些[企业策略](../../oversight-visibility/enterprise-policies.md)的成员，在他们采取措施遵守这些策略之前，将无法恢复到您的组织中。
 {% endhint %}

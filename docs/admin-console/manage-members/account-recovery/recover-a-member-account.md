@@ -6,7 +6,7 @@
 
 要恢复忘记了主密码或丢失了信任设备的成员的账户：
 
-* 您必须是[所有者、管理员或允许的自定义角色成员](../member-roles.md)。
+* 您必须是[所有者、管理员或允许的自定义角色](../member-roles.md)成员。
 * 您的组织必须已开启[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#setting-enterprise-policies)。
 * 您要恢复其账户的成员必须[已注册](account-recovery-enrollment.md)。
 
@@ -28,7 +28,7 @@
 
 5、在出现的**恢复账户**窗口中，选中您要重置哪种凭据：
 
-* 选中**重置主密码**，以创建新的临时密码，如果启用了[主密码要求策略](../../oversight-visibility/enterprise-policies.md#master-password-requirements)，则该密码必须满足您组织的要求。复制新的主密码并安全地与成员共享，例如使用 [Bitwarden Send](../../../password-manager/bitwarden-send/create-a-send.md)。
+* 选中**重置主密码**，以创建新的临时密码，如果启用了[主密码要求策略](../../oversight-visibility/enterprise-policies.md#master-password-requirements)，则该密码必须满足您组织的要求。复制新的主密码并将其安全地分享给成员，例如使用 [Bitwarden Send](../../../password-manager/bitwarden-send/create-a-send.md)。
 * 选中**重置两步登录**，以删移除为 Bitwarden（不是您的 IdP）设置的双重身份验证。如果成员未设置任何两步登录方式，则无法勾选此选项。
 
 {% hint style="info" %}
