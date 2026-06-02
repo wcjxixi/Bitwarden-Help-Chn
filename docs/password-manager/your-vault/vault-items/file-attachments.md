@@ -87,7 +87,7 @@ bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 
 ## 查看附件 <a href="#view-an-attachment" id="view-an-attachment"></a>
 
-在 **Android** 设备上，通过点击**查看项目**界面上的附件，图像文件（ `.jpeg` 、 `.png` 、 `.gif` 、 `.WebP` 、 `.heic` ）可以直接在 Bitwarden 中预览，而无需将其下载到您的设备：
+在 **Android** 设备上，通过点击**查看项目**界面上的附件，图像文件（`.jpeg`、 `.png`、 `.gif`、 `.WebP`、 `.heic`）可以直接在 Bitwarden 中预览，而无需将其下载到您的设备：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/8CANFNTEL2gsoDy0zvQPG/65b328d7d01be571b66596c51f78d07d/2026-04-10_09-10-55.png?w=877&#x26;fm=avif" alt=""><figcaption><p>查看附件</p></figcaption></figure></div>
 
@@ -95,7 +95,7 @@ bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 
 要在大多数 Bitwarden App 中下载附件，请打开项目。在**附件**部分中，选择文件旁边的 **⬇️下载**图标。
 
-对于 CLI，使用 `bw get attachment` 来下载文件，例如：
+对于 **CLI**，使用 `bw get attachment` 来下载文件，例如：
 
 ```bash
 bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --output /Users/myaccount/Pictures/
@@ -157,9 +157,9 @@ bw export --format zip
 {% endtab %}
 {% endtabs %}
 
-## 删除文件 <a href="#delete-a-file" id="delete-a-file"></a>
+## 删除附件 <a href="#delete-an-attachment" id="delete-an-attachment"></a>
 
-要删除文件附件：
+要删除附件：
 
 {% tabs %}
 {% tab title="网页 App" %}

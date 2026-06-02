@@ -15,13 +15,9 @@ Bitwarden SSH 代理将您的密钥组织并保护在一个安全的位置。SSH
 {% hint style="info" %}
 SSH 代理需要 2025.1.2 或更新版本。
 
-~~**macOS**：~~
+~~**macOS**：macOS 商店构建版本目前暂不支持 SSH 代理，~~[~~.dmg 下载~~](https://bitwarden.com/download/)~~可用于获得 SSH 代理支持。~~
 
-~~macOS 商店构建版本目前暂不支持 SSH 代理，~~[~~.dmg 下载~~](https://bitwarden.com/download/)~~可用于获得 SSH 代理支持。~~
-
-~~**Linux**：~~
-
-~~Flatpak 版本目前暂不支持 SSH 代理，~~[~~Snap 下载~~](https://bitwarden.com/download/#downloads-desktop)~~可用于获得 SSH 代理支持。~~
+~~**Linux**：Flatpak 版本目前暂不支持 SSH 代理，~~[~~Snap 下载~~](https://bitwarden.com/download/#downloads-desktop)~~可用于获得 SSH 代理支持。~~
 {% endhint %}
 
 ## 存储 SSH 密钥 <a href="#storing-an-ssh-key" id="storing-an-ssh-key"></a>
@@ -43,7 +39,7 @@ SSH 代理需要 2025.1.2 或更新版本。
 
 1、选择**新建**按钮，然后选择 **SSH 密钥**作为项目类型。
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1XYC3HwXOTMAPvyW1GS3Mk/5c7833241844eded5fa119d44d6efebd/new-ssh.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>在桌面端创建新的 SSH 密钥</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1XYC3HwXOTMAPvyW1GS3Mk/1301eaf741b5867a33ba1b679e5a2e38/2026-04-23_12-36-06.png?w=800&#x26;fm=avif" alt=""><figcaption><p>在桌面端创建新的 SSH 密钥</p></figcaption></figure></div>
 
 {% hint style="info" %}
 目前，Bitwarden 只能生成 `ED25519` 类型的 SSH 密钥。
@@ -67,7 +63,7 @@ SSH 代理需要 2025.1.2 或更新版本。
 
 3、使用**集合**下拉列表，选择要与其共享此项目的集合。
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1YnrhzwCw78KuFsArEioOO/b7db01ff5dbd209ebe30f6454275ba41/Share-ssh.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>共享 SSH 密钥</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1YnrhzwCw78KuFsArEioOO/76dceaa53917a8078b1e96f0fcbb5f65/2026-04-23_12-36-17.png?w=800&#x26;fm=avif" alt=""><figcaption><p>共享 SSH 密钥</p></figcaption></figure></div>
 
 {% hint style="info" %}
 通常，使用 SSH 密钥的资源可以支持每用户密钥。我们建议在向组织共享 SSH 密钥之前，先了解 SSH 密钥的最佳实践。

@@ -5,7 +5,13 @@
 {% endhint %}
 
 {% hint style="info" %}
-Bitwarden 提供三种通行密钥功能：[使用通行密钥登录和解锁](log-in-with-passkeys.md#log-in-and-unlock-with-your-passkey)您的 Bitwarden 账户、在您的 Bitwarden 账户上使用[通行密钥 2FA](../../two-step-login/setup-two-step-login/two-step-login-via-fido.md)，以及为其他网站和服务[自动填充已存储的通行密钥](../../../password-manager/autofill/more-autofill-options/autofill-passkeys.md)。
+Bitwarden 提供三种通行密钥功能：
+
+* 从您的 Bitwarden 密码库为其他服务[保存和自动填充通行密钥](../../../password-manager/autofill/more-autofill-options/autofill-passkeys.md)。
+* 使用[通行密钥登录和解锁](log-in-with-passkeys.md)您的 Bitwarden 账户。**\***
+* 使用[通行密钥 2FA](../../two-step-login/setup-two-step-login/two-step-login-via-fido.md)保护您的 Bitwarden 账户。**\***
+
+**\*** 某些身份验证器，尤其是 Windows Hello，不允许您使用通行密钥同时进行登录和 2FA。
 {% endhint %}
 
 通行密钥为您的 Bitwarden 账户提供安全身份验证。使用它们登录，并通过[支持 PRF 的设置](log-in-with-passkeys.md#unlock-vault-requirements)自动[解锁您的密码库](../understand-log-in-vs-unlock.md)，而无需输入主密码。通行密钥绕过两步登录，为传统的基于密码的身份验证提供了简化的替代方案。

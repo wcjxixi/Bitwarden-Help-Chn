@@ -90,7 +90,7 @@
 
 1、在桌面 App 中，等待接收到设备批准请求：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/abd4d9949f342ff7efb3c289ec1942f5/2026-01-29_10-13-52.png?w=1335&#x26;fm=avif" alt=""><figcaption><p>在桌面 App 上批准</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/916f1988e815f23d871bc56effbc1247/2026-05-28_14-05-19.png?w=800&#x26;fm=avif" alt=""><figcaption><p>在桌面 App 上批准</p></figcaption></figure></div>
 
 2、验证指纹短语然后选择**确认访问**。
 {% endtab %}

@@ -29,9 +29,9 @@
 {% endtab %}
 
 {% tab title="桌面端" %}
-从最左边的列中选择一个密码库（在下面d的幕截图中，为**我的密码库**或**我的组织**）：
+从最左边的列中选择筛选条件：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Lng0L2TRQ177CaU8EUQ1m/fc80b9452396db84c9f1abd405275ddb/2026-01-28_10-20-04.png?w=1001&#x26;fm=avif" alt=""><figcaption><p>桌面 App 筛选器</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Lng0L2TRQ177CaU8EUQ1m/650d82f70422611353ce70a347a99c72/2026-04-23_10-14-43.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 筛选器</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="CLI" %}

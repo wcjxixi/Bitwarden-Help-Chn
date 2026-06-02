@@ -8,11 +8,11 @@
 
 {% tabs %}
 {% tab title="移动端" %}
-要登录第二个（或第三个、第四个或第五个）账户，请从顶部菜单栏中选择当前已登录的账户，然后选择 **🞤添加账户**。
+要登录第二个（或第三个、第四个或第五个）账户，请从顶部菜单栏中选择当前已登录的账户，然后选择 **➕添加账户**。
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/56xAZhiS6wZqKktMlFwbVn/9af5d0ce782af44fc48ebfd8057ddc4c/2025-01-21_14-58-15.png?w=713&#x26;fm=avif" alt=""><figcaption><p>移动端账户切换</p></figcaption></figure></div>
 
-选择 **🞤添加账户**将带您进入登录界面：
+选择 **➕添加账户**将带您进入登录界面：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/112EwzW6sPKPGu65R8rKHc/679b2686d9b67e5ccb37a2ebf56ea062/2025-01-21_15-04-00.png?w=710&#x26;fm=avif" alt=""><figcaption><p>移动端登录</p></figcaption></figure></div>
 
@@ -38,13 +38,13 @@
 {% endtab %}
 
 {% tab title="桌面端" %}
-要登录第二个（或第三个、第四个或第五个）账户，请从桌面 App 顶部右上角选择当前已登录的账户，然后选择 **🞤添加账户**。
+要登录第二个（或第三个、第四个或第五个）账户，请从桌面 App 顶部右上角选择当前已登录的账户，然后选择 **➕添加账户**。
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7fpUmakpNIByzoWQa1cU8L/1062adaaed12e43a9c53e8e182453c96/2026-01-28_09-08-28.png?w=1001&#x26;fm=avif" alt=""><figcaption><p>桌面 App 账户切换</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7fpUmakpNIByzoWQa1cU8L/bd9e35756805bba8bd35bc43c7630aaf/2026-04-23_09-27-28.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 账户切换</p></figcaption></figure></div>
 
-选择 **🞤添加账户**将带您进入登录界面：
+选择 **➕添加账户**将带您进入登录界面：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3gAo9PEjSXwgf4VY0Ew3TZ/a1ccd94f595bee3baf1220ec7c577b85/Desktop_Light.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>桌面 App 账户切换</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6Dvz7SzKBp90RDcROWgBhW/2407b5d1399cc1b8d0780b31dcbd95ee/2026-04-23_09-29-54.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 账户切换</p></figcaption></figure></div>
 
 {% hint style="success" %}
 如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../../../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
@@ -61,7 +61,7 @@
 
 但某些**偏好设置**，则适用于**所有账户**：
 
-<img src="https://bitwarden.com/assets/4tZUuuDPHnHQh5RNihx0TB/42bb8417406c45468ddcbb868a0d546f/2026-01-28_09-15-01.png?w=1001&#x26;fm=avif" alt="" data-size="original">
+<img src="https://bitwarden.com/assets/4tZUuuDPHnHQh5RNihx0TB/e20745ac076e7274ec0652692159c4e1/2026-04-23_09-34-58.png?w=800&#x26;fm=avif" alt="" data-size="original">
 {% endhint %}
 {% endtab %}
 
@@ -70,7 +70,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7xbbMZ89zcTHz6ee0cA1MK/8d8972a6b995b3fd7367f248c9c60d69/screenshot_3.png?w=440&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展账户切换</p></figcaption></figure></div>
 
-选择账户图标后，从账户切换菜单中选择 **🞤添加账户**：
+选择账户图标后，从账户切换菜单中选择 **➕添加账户**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/343trVk3zLCF7Z12uA5wjO/ac2f56fc907372335f30d1dbf68116a1/screenshot_4.png?w=438&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展添加账户</p></figcaption></figure></div>
 

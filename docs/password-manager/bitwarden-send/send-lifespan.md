@@ -88,7 +88,7 @@
 
 要从桌面 App 删除 Send，请使用 **≡**&#x9009;项菜单然后选择 🗑️**删除**按钮：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12eLcz2aoBkcDRGS3U1jzP/66e1b7625ac1290f2d110d0d4e7086c8/delete_send_desktop.png?w=1314&#x26;fm=avif" alt=""><figcaption><p>从桌面 App 删除 Send</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4IgMnKAEjk16bJdbuUkVeH/fb20d049505d8a69dce6f39e4e4a9c4c/2026-04-23_11-49-34.png?w=800&#x26;fm=avif" alt=""><figcaption><p>从桌面 App 删除 Send</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}

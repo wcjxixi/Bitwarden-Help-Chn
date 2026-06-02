@@ -44,7 +44,7 @@
 我们建议在继续测试两步登录之前，将活动的网页密码库选项卡保持为打开状态，以防配置错误。确认其正常工作后，请注销所有的 Bitwarden App，以要求每个 App 使用两步登录。您最终会被自动注销。
 {% endhint %}
 
-## 使用电子邮件验证 <a href="#use-email-verification" id="use-email-verification"></a>
+## 使用电子邮箱验证 <a href="#use-email-verification" id="use-email-verification"></a>
 
 以下内容假设**电子邮箱**是您[已启用的最高优先级方式](two-step-login-methods.md#using-multiple-methods)。完成以下步骤，以使用两步登录访问您的密码库：
 

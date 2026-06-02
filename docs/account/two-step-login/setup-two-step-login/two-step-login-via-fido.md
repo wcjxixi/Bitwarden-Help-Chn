@@ -11,12 +11,18 @@
 > * [**YubiKey**](https://zh.wikipedia.org/wiki/YubiKey)：YubiKey 是由 [Yubico](https://www.yubico.com/) 公司生产的用于身份认证的硬件设备。部分 Yubikey 型号支持 FIDO。其他支持 FIDO 的硬件还有 Google 的 [Titan 安全钥匙](https://cloud.google.com/titan-security-key)、FEITIAN 的[安全钥匙](https://www.ftsafe.com/Products/FIDO)等。
 
 {% hint style="info" %}
-Bitwarden 提供三种通行密钥功能：[使用通行密钥登录和解锁](https://help.ppgg.in/docs/account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys#log-in-and-unlock-with-your-passkey)您的 Bitwarden 账户、在您的 Bitwarden 账户上使用[通行密钥 2FA](https://help.ppgg.in/docs/account/two-step-login/setup-two-step-login/two-step-login-via-fido)，以及为其他网站和服务[自动填充已存储的通行密钥](https://help.ppgg.in/docs/password-manager/autofill/more-autofill-options/autofill-passkeys)。
+Bitwarden 提供三种通行密钥功能：
+
+* 从您的 Bitwarden 密码库为其他服务[保存和自动填充通行密钥](../../../password-manager/autofill/more-autofill-options/autofill-passkeys.md)。
+* 使用[通行密钥登录和解锁](../../log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)您的 Bitwarden 账户。**\***
+* 使用[通行密钥 2FA](two-step-login-via-fido.md)保护您的 Bitwarden 账户。**\***
+
+**\*** 某些身份验证器，尤其是 Windows Hello，不允许您使用通行密钥同时进行登录和 2FA。
 {% endhint %}
 
 所有 Bitwarden 用户均可免费使用 FIDO2 WebAuthn 凭据进行两步登录。可以使用任何经过 FIDO2 WebAuthn 认证的验证器，包括 [YubiKey](https://www.yubico.com/)、[SoloKeys](https://solokeys.com/)、[Google Titan](https://store.google.com/product/titan_security_key)、[Nitrokey](https://www.nitrokey.com/) 等安全密钥，以及 Windows Hello 等原生生物识别选项。在 macOS 上，当前不支持 Touch ID 等非安全密钥。
 
-> **\[译者注]**：2023.9.0 版本之前，FIDO2 WebAuthn 方式的两步登录适用于高级用户，包括付费组织（家庭版、团队版或企业版）的成员，不适用于免费用户。
+> **\[译者注]**：2023.9.0 版本之前，FIDO2 WebAuthn 方式的两步登录适用于高级版用户，包括付费组织（家庭版、团队版或企业版）的成员，不适用于免费用户。
 
 {% hint style="success" %}
 所有通过 Bitwarden 设置的新 FIDO 密钥都会注册为 WebAuthn 密钥。如果您已注册的 FIDO 密钥在网页 App 的两步登录 → 管理 FIDO2 WebAuthn 视图中被标记为（**迁移自 FIDO**），则说明该密钥为 U2F 密钥，应将其删除并重新注册，以便自动将该密钥设置为 WebAuthn 密钥。Bitwarden 将于 2025 年开始逐步停止对（**迁移自 FIDO**）U2F 密钥的支持。

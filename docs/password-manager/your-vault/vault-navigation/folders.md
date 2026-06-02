@@ -7,7 +7,7 @@
 文件夹是组织您的个人密码库的结构，可以将登录、支付卡、身份和安全笔记集中在一起。使用文件夹可以方便您查找密码库项目，并且在 Bitwarden App 中，文件夹会按字母顺序排列。可以将任何密码库项目（包括[组织已与您共享的项目](../../organization-members/sharing.md)）添加到文件夹中。
 
 {% hint style="success" %}
-当从筛选器菜单中选择 **☷所有密码库**时，添加到某个文件夹的项目仍会出现在您的密码库中，删除文件夹并**不会**删除该文件夹中的项目。删除文件夹是永久性的，删除后，文件夹将无法恢复。
+当从筛选器菜单中选择**所有密码库**时，添加到某个文件夹的项目仍会出现在您的密码库中，删除文件夹并**不会**删除该文件夹中的项目。删除文件夹是永久性的，删除后，文件夹将无法恢复。
 {% endhint %}
 
 ## 创建文件夹 <a href="#create-a-folder" id="create-a-folder"></a>
@@ -16,7 +16,7 @@
 
 {% tabs %}
 {% tab title="网页密码库" %}
-要创建文件夹，请选择 ✚**新增**按钮然后从下拉菜单选择**文件夹**：
+要创建文件夹，请选择 **➕新增**按钮然后从下拉菜单选择**文件夹**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3BvTWidqL4xWQvFqBSiJIR/d68bc851d44df1b571eed16366159e0c/2024-12-02_13-50-55.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>新增文件夹</p></figcaption></figure></div>
 
@@ -26,7 +26,7 @@
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-要创建文件夹，请选择 ✚**新增**按钮然后从下拉菜单选择**文件夹**：
+要创建文件夹，请选择 **➕新增**按钮然后从下拉菜单选择**文件夹**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1aPQBd9bT7uUf20Y1fZwSB/506e7010284c1e0d83b75204bac22eaa/2024-12-02_16-13-10.png?w=1187&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展新增文件夹</p></figcaption></figure></div>
 
@@ -34,17 +34,17 @@
 {% endtab %}
 
 {% tab title="桌面端" %}
-要创建文件夹，请从菜单栏中选择**文件** → **新建文件夹**：
+要创建文件夹，请选择**新增** → **文件夹**：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5aN4a0qkKkJDJSVAzTy3Ix/14cd1d0f480b018df722d6c07c1aeed7/2026-01-29_08-57-38.png?w=980&#x26;fm=avif" alt=""><figcaption><p>桌面端添加文件夹</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7xia34eJyx1K8Gy8IXajQ7/af2b2ef342350a68b000c405ee698ab4/2026-04-23_09-58-10.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面端添加文件夹</p></figcaption></figure></div>
 
-创建文件夹后，您可以随时通过悬停在 :pencil2:**铅笔**图标上来**重命名或删除**文件夹：
+创建文件夹后，您可以随时通过悬停在 :pencil2:**铅笔**图标上来重命名或删除文件夹：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6t2aoywIMdBPMuJktnhEqA/7e889e22ecb7ea15bd08eda9c11096b8/2026-01-29_09-05-29.png?w=984&#x26;fm=avif" alt=""><figcaption><p>桌面端编辑文件夹</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6t2aoywIMdBPMuJktnhEqA/53742fbe25b11095406c40ff6178d6c4/2026-04-23_10-46-29.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面端编辑文件夹</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}
-要创建文件夹，请点击 **⚙️设置**菜单，点击**密码库**选项，然后点击**文件夹**选项。点击 ✚**添加**图标以添加文件夹。创建后，您可以从同一菜单中通过点击文件夹来重命名文件夹，或使用 **≡**&#x83DC;单来删除文件夹：
+要创建文件夹，请点击 **⚙️设置**菜单，点击**密码库**选项，然后点击**文件夹**选项。点击 **➕添加**图标以添加文件夹。创建后，您可以从同一菜单中通过点击文件夹来重命名文件夹，或使用 **≡**&#x83DC;单来删除文件夹：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6IwzXSJHGmSeU7oIy4z8kZ/95620b58758e50fa0e8e22a65f2bfa15/2025-01-21_15-26-07.png?w=713&#x26;fm=avif" alt=""><figcaption><p>移动端上的文件夹</p></figcaption></figure></div>
 {% endtab %}
@@ -108,7 +108,7 @@ bw create folder <foldername>
 {% tab title="桌面端" %}
 打开要移动的密码库项目，选择**文件夹**下拉菜单，然后选择要将项目移动到的文件夹：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/63jzyM75IRzhAbw5nNzMHx/aa66bd79357757c4cff73ff531c459bb/2026-01-29_09-06-16.png?w=984&#x26;fm=avif" alt=""><figcaption><p>移动项目到文件夹</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/63jzyM75IRzhAbw5nNzMHx/85db2d1104337e5ebc6e4dd0e8b57f8a/2026-04-23_10-48-31.png?w=800&#x26;fm=avif" alt=""><figcaption><p>移动项目到文件夹</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}

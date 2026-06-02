@@ -103,7 +103,7 @@ Send 创建后，您可以复制链接或选择 **≡**&#x7136;后选择**复制
 
 2、选择 **新增 Send** 按钮：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2O01p5FyMpUhlhi5bAq7mH/0c154046969e8028d95fb4bdbaf12b93/2026-02-26_15-40-37.png?w=1249&#x26;fm=avif" alt=""><figcaption><p>桌面 App Send 视图</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2O01p5FyMpUhlhi5bAq7mH/3135d39e953c52bb0d843ee6afeb1121/2026-04-23_11-48-19.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App Send 视图</p></figcaption></figure></div>
 
 3、在右边栏中，指定如下内容：
 
@@ -122,7 +122,7 @@ Send 创建后，您可以复制链接或选择 **≡**&#x7136;后选择**复制
 
 Send 创建后，选择 **≡** 然后选择**复制 Send 链接**按钮以将生成的链接复制到剪贴板：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4IgMnKAEjk16bJdbuUkVeH/aef61f80bb7426874c937d07eaa58b85/2026-02-25_11-40-24.png?w=1315&#x26;fm=avif" alt=""><figcaption><p>桌面 App 复制 Send 链接</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4IgMnKAEjk16bJdbuUkVeH/fb20d049505d8a69dce6f39e4e4a9c4c/2026-04-23_11-49-34.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 复制 Send 链接</p></figcaption></figure></div>
 
 复制后，将 Send 链接分享给您期望的接收者。Send 是端到端加密的，因此您不必担心会将任何数据暴露给您使用的任何中间通信服务。
 {% endtab %}

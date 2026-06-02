@@ -32,7 +32,7 @@
 如果您不确定 Duo 提示是个人设置的还是组织设置的，请尝试选择**使用其他两步登录方式**。
 {% endhint %}
 
-### 受信任的紧急联系人 <a href="#trusted-emergency-contact" id="trusted-emergency-contact"></a>
+### 信任的紧急联系人 <a href="#trusted-emergency-contact" id="trusted-emergency-contact"></a>
 
 如果您指定了具有接管访问权限的[已信任的紧急联系人](../log-in-and-unlock/more-log-in-options/emergency-access.md)，请请求他们[发起紧急访问](../log-in-and-unlock/more-log-in-options/emergency-access.md#use-emergency-access)。在为该紧急联系人设置的**等待时间**过后，所有两步登录方式将被停用，并且紧急联系人可以更改主密码。
 

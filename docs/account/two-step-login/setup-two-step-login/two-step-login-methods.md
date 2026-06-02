@@ -17,6 +17,18 @@
 
 {% embed url="https://vimeo.com/1060246387?fe=cm&fl=pl" %}
 
+默认启用基于电子邮箱的两步登录。探索其他方式，例如验证器 App 和硬件密钥，以找到最适合您的方式。
+
+在[此处](two-step-login-methods.md)了解更多有关两步登录选项多信息。
+
+* **00:40**：使用电子邮箱设置两步登录
+* **00:57**：使用验证器 App 设置两步登录
+* **01:25**：使用通行密钥设置两步登录
+* **01:54**：使用 Yubico OTP 设置两步登录
+* **02:14**：使用 Duo 设置两步登录
+* **02:27**：获取您的恢复代码
+* **03:00**：使用多种方式
+
 有许多不同的方式可用于两步登录。您可以根据自己的喜好使用多种方式。重要的是，任何形式的两步登录都需要激活，才能确保您的账户受到保护。
 
 ## 适用于个人的两步登录 <a href="#two-step-login-for-individuals" id="two-step-login-for-individuals"></a>
@@ -31,19 +43,19 @@
 | Duo Security 的 Duo Push、短信、电话和安全密钥                                                                | [设置说明](two-step-login-via-duo.md)           | 要求高级版 |
 | YubiKey OTP（任何 4/5 系列设备或 YubiKey NEO/NFC）                                                         | [设置说明](two-step-login-via-yubikey.md)       | 要求高级版 |
 
-## 适用于团队和企业的两步登录 <a href="#two-step-login-for-teams-and-enterprise" id="two-step-login-for-teams-and-enterprise"></a>
+## 适用于团队版和企业版的两步登录 <a href="#two-step-login-for-teams-and-enterprise" id="two-step-login-for-teams-and-enterprise"></a>
 
-尽管每个用户可以使用上面图示中的方式在其账户上激活两步登录，但团队和企业组织还有其他选项：
+尽管每个用户可以使用上面图示中的方式在其账户上激活两步登录，但团队版和企业版组织还有其他选项：
 
 | 方式                                 | 设置说明                              | 订阅要求      |
 | ---------------------------------- | --------------------------------- | --------- |
 | Duo Security 的 Duo Push、短信、电话和安全密钥 | [设置说明](two-step-login-via-duo.md) | 要求团队版或企业版 |
 
-此外，企业组织可以通过[策略](../../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)要求两步登录，并且当使用单点登录 (SSO) 时，可以使用您的身份提供程序在 Bitwarden 外部实现相同的保护。
+此外，企业版组织可以通过[策略](../../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)要求两步登录，并且当使用单点登录 (SSO) 时，可以使用您的身份提供程序在 Bitwarden 外部实现相同的保护。
 
-## 使用多个方式 <a href="#using-multiple-methods" id="using-multiple-methods"></a>
+## 使用多种方式 <a href="#using-multiple-methods" id="using-multiple-methods"></a>
 
-您可以选择启用多个两步登录方式。当您使用多个已启用的方式登录 Bitwarden 时，将按照以下优先顺序提示您使用最高优先级的两步登录方式：
+您可以选择启用多种两步登录方式。当您使用多种已启用的方式登录 Bitwarden 时，将按照以下优先顺序提示您使用最高优先级的两步登录方式：
 
 1. Duo（组织）
 2. FIDO2 WebAuthn
@@ -53,7 +65,7 @@
 6. 电子邮箱
 
 {% hint style="danger" %}
-如果您[使用 SSO 登录](../../log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多个方式会导致错误。可以考虑改为使用[免费的验证器方式的两步登录](two-step-login-via-authenticator.md)。
+如果您[使用 SSO 登录](../../log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多种方式会导致错误。可以考虑改为使用[免费的验证器方式的两步登录](two-step-login-via-authenticator.md)。
 {% endhint %}
 
 不过，任何方式都可以使用。通过选择**使用其他两步登录方式**按钮，以使用较低优先级的方式进行验证：
@@ -72,6 +84,6 @@
 {% endtab %}
 
 {% tab title="桌面端" %}
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/36novNT7xJ8ZJSoG66MQXg/774092e3a3361e3a92d3bd84786b260e/setup-two-step-login-1.png?w=850&#x26;fm=avif" alt=""><figcaption><p>使用其他两步登录方式</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/36novNT7xJ8ZJSoG66MQXg/636ac40e844fb7b32c37ffeac8932b36/2026-04-23_09-47-21.png?w=800&#x26;fm=avif" alt=""><figcaption><p>使用其他两步登录方式</p></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}

@@ -50,11 +50,11 @@
 {% tab title="桌面端" %}
 从导航菜单中选择**生成器**：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6cFQ3iojZXLy1ZIdIXp6Zr/cfff50e193c533ef1bbc09c489693e9e/2026-01-28_10-59-21.png?w=988&#x26;fm=avif" alt=""><figcaption><p>桌面 App 密码生成器</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6cFQ3iojZXLy1ZIdIXp6Zr/bf4dfb3537ea709542432997aa4f6986/2026-04-23_10-54-46.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 密码生成器</p></figcaption></figure></div>
 
 您也可以从「添加」/「编辑」项目界面使用 **⟳生成**按钮生成强密码：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6VInVRr9tZBOndfe4VrpXf/b57e2bd43fad800bc010ebf767d26784/2026-01-28_11-06-53.png?w=988&#x26;fm=avif" alt=""><figcaption><p>桌面 App 密码生成器</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6VInVRr9tZBOndfe4VrpXf/789852c09b48e1ac121347d224816d09/2026-04-23_10-48-31-4.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 密码生成器</p></figcaption></figure></div>
 
 {% hint style="info" %}
 选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您没有将它们保存到项目中。当您注销时，历史记录将被清除。
@@ -154,13 +154,13 @@ bw generate -uln --length 14
 {% endtab %}
 
 {% tab title="桌面端" %}
-从菜单栏中选择**查看** → **生成器**：
+从导航菜单中选择**生成器**：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2VGPd4WOwydbovDJdyVT51/3f27f0390d85b8622e6b1baae611d3fc/2026-01-28_11-10-11.png?w=988&#x26;fm=avif" alt=""><figcaption><p>桌面 App 用户名生成器</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2VGPd4WOwydbovDJdyVT51/f2f447821533afc4dad139bc0059a05f/2026-04-23_10-55-35.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 用户名生成器</p></figcaption></figure></div>
 
 您还可以从「添加」/「编辑」项目界面使用 **⟳生成**按钮生成用户名：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7xTg7VVE7CgTZhBl5LlYui/b40a5255fcef08a3d17c3bad13c34f16/2026-01-28_11-13-24.png?w=988&#x26;fm=avif" alt=""><figcaption><p>桌面 App 用户名生成器</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7xTg7VVE7CgTZhBl5LlYui/6f187f63e0cf89dcd4fa9b4fb2866ad5/2026-04-23_10-48-31-5.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 用户名生成器</p></figcaption></figure></div>
 
 {% hint style="info" %}
 选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您没有将它们保存到项目中。当您注销时，历史记录将被清除。

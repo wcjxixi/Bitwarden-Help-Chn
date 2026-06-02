@@ -146,7 +146,7 @@
 
 1、在**密码库**视图中，右键单击要共享的项目，然后从菜单中选择**分配到集合**：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2RRhv9udtSa49Uxzv6rRAQ/e3d783e266bafd7a6fce76a8604fa15b/2026-01-28_11-27-36.png?w=988&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2RRhv9udtSa49Uxzv6rRAQ/fcf14bf329eb05226e389653ff339826/2026-04-23_11-35-49.png?w=800&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
 
 2、在**分配到集合**弹出窗口中：
 
@@ -161,7 +161,7 @@
 
 * **直接编辑项目**：如果您需要在共享某个项目之前对其进行更改，请打开该项目，然后在**编辑**视图中使用**所有者**和**集合**下拉菜单选择要与之共享的对象，同时进行必要的更改：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4U6pHkqLgt3miuwFLJ9tkH/ac16f1456dd9884656aa275a2b7b6e76/2026-01-28_15-03-14.png?w=988&#x26;fm=avif" alt=""><figcaption><p>编辑共享</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4U6pHkqLgt3miuwFLJ9tkH/caeb931f14a8a6b10ba7e299a705e083/2026-04-23_11-41-17.png?w=800&#x26;fm=avif" alt=""><figcaption><p>编辑共享</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="CLI" %}

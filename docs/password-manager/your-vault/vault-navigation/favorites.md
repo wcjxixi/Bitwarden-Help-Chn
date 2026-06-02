@@ -10,6 +10,8 @@
 
 {% hint style="success" %}
 标记为**收藏**的项目将显示在浏览器扩展和移动 App的 **🔒密码库**视图的顶部，以及网页密码库和桌面 App 的 **⭐️收藏**筛选器中。
+
+在浏览器扩展中，当您浏览与之关联的网页时，登录项目将从**收藏夹**部分跳转到**自动填充建议**部分。
 {% endhint %}
 
 ## 指定为收藏 <a href="#designating-favorites" id="designating-favorites"></a>
@@ -32,7 +34,7 @@
 {% tab title="桌面端" %}
 在「添加项目」或「编辑项目」界面，勾选**收藏**复选框，然后**保存**该项目：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2BtbpzNSnydUYBu92j1bCH/9ad9e283584adb0b67be65b3f30e23eb/2026-01-28_10-24-52.png?w=1001&#x26;fm=avif" alt=""><figcaption><p>收藏项目</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2BtbpzNSnydUYBu92j1bCH/12674ca7b80eaa8d327e5eb88175665d/2026-04-23_10-48-31-1.png?w=800&#x26;fm=avif" alt=""><figcaption><p>收藏项目</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}

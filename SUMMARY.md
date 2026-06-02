@@ -145,7 +145,7 @@
   * [Bitwarden Authenticator](docs/bitwarden-authenticator/bitwarden-authenticator.md)
   * [同步验证码](docs/bitwarden-authenticator/totp-sync.md)
   * [导入 & 导出 Authenticator 数据](docs/bitwarden-authenticator/import-and-export.md)
-* [Secrets Manager](docs/secrets-manager/README.md)
+* [=Secrets Manager](docs/secrets-manager/README.md)
   * [Secrets Manager 概述](docs/secrets-manager/secrets-manager-overview.md)
   * [开始使用](docs/secrets-manager/get-started/README.md)
     * [Secrets Manager 快速入门](docs/secrets-manager/get-started/secrets-manager-quick-start.md)
