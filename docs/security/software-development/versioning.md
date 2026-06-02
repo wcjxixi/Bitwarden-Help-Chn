@@ -34,9 +34,7 @@
 {% endtab %}
 
 {% tab title="桌面 App" %}
-在 Windows 上，选择**帮助** → **关于 Bitwarden**。在 macOS 上，选择 **Bitwarden** → **关于 Bitwarden**：
-
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6GOZ3TPKmrnBbol1FWMZSm/8a86c4556ec42170f65538c6598c534e/Screen_Shot_2022-09-29_at_2.52.13_PM.png?w=500&#x26;fm=avif" alt=""><figcaption><p>桌面 App 版本</p></figcaption></figure></div>
+在 Windows 上，选择**帮助** → **关于 Bitwarden**。在 macOS 上，选择 **Bitwarden** → **关于 Bitwarden**。
 {% endtab %}
 
 {% tab title="移动 App" %}

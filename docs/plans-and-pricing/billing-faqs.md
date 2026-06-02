@@ -35,7 +35,7 @@
 
 要移除用户席位，请导航到您组织的**计费** → **订阅**界面，然后使用**订阅席位**输入框来移除席位（[了解更多](../admin-console/manage-members/user-management.md#manually-add-or-remove-seats)）。
 
-添加和删​移除用户席位将调整您未来的账单总额。添加席位将立即以调整后的比例向您存档的付款方式扣款，这样**您只需为计费周期（月/年）的剩余时间付费**。移除席位会导致您的下一次收费被调整，已付费席位**未使用的时间将计入您的信用额度**。
+添加和删​移除用户席位将调整您未来的账单总额。添加席位将立即以调整后的比例向您存档的付款方式扣款，这样**您只需为计费周期（月/年）的剩余时间付费**。移除席位会导致您的下一次收费被调整，已付费席位**未使用的时间将计入您的余额**。
 
 ### 问：如何将订阅用于自托管？ <a href="#q-how-do-subscriptions-work-for-self-hosting" id="q-how-do-subscriptions-work-for-self-hosting"></a>
 
@@ -77,7 +77,7 @@
 
 ### 问：可以使用比特币付款吗？ <a href="#q-can-i-pay-with-bitcoin" id="q-can-i-pay-with-bitcoin"></a>
 
-**答：**&#x53EF;以。请注意，在购买订阅之前，您需要在**设置** → **计费**界面使用比特币添加信用额度。
+**答：**&#x53EF;以。请注意，在购买订阅之前，您需要在**设置** → **计费**界面使用比特币添加余额。
 
 ### 问：我可以将 Bitwarden 免费方案用于商业用途吗？ <a href="#q-can-i-use-a-bitwarden-free-plan-for-commercial-use" id="q-can-i-use-a-bitwarden-free-plan-for-commercial-use"></a>
 

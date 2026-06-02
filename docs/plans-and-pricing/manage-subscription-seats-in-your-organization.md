@@ -39,9 +39,9 @@
 
 例如，如果您的方案在 07 月 15 日续费，而您在 05 月 01 日添加了一个席位，则将在 05 月 15 日收取当前周期剩余时间（05 月 01 日至 07 月 14 日）的按比例的费用。当您的年度续费在 07 月 15 日进行时，所有席位将合并为一笔单笔的年度费用。
 
-### 已移除用户席位的信用额度 <a href="#credit-for-removed-user-seats" id="credit-for-removed-user-seats"></a>
+### 已移除用户席位的余额 <a href="#credit-for-removed-user-seats" id="credit-for-removed-user-seats"></a>
 
-无论您如何添加席位，都必须从您的订阅中[手动移除](manage-subscription-seats-in-your-organization.md#manually-add-or-remove-seats)不再需要的用户席位。移除席位将导致您的下一次费用进行调整，以便您获得已付费席位未使用时间的信用额度。
+无论您如何添加席位，都必须从您的订阅中[手动移除](manage-subscription-seats-in-your-organization.md#manually-add-or-remove-seats)不再需要的用户席位。移除席位将导致您的下一次费用进行调整，以便您获得已付费席位未使用时间的余额。
 
 ### 自托管计费 <a href="#self-hosted-billing" id="self-hosted-billing"></a>
 

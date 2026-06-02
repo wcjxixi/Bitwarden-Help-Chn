@@ -25,7 +25,7 @@
 3、在此页面上，您可以查看或选择：
 
 * **更改付款方式**，以编辑在您的订阅续费时自动扣款的[付款方式](payment-methods.md)。
-* **添加信用额度**，以通过 PayPal 或 Bitcoin 来购买[账户信用额度](payment-methods.md#account-credit)。可用的信用额度将自动用于抵扣您的下一笔付款。
+* **添加余额**，以通过 PayPal 或 Bitcoin 来购买[账户余额](payment-methods.md#account-credit)。可用的余额将自动用于抵扣您的下一笔付款。
 
 选择**订阅**选项卡，了解更多关于您的下次扣款信息、添加[附件](../password-manager/your-vault/vault-items/file-attachments.md)存储空间或[取消订阅](cancel-a-subscription.md#cancel-a-personal-subscription)。前往**计费历史**选项卡，查看过往交易记录以及下载[账单](invoices-and-receipts.md)。
 
@@ -55,7 +55,7 @@
 
 * **更改付款方式**，编辑在您的订阅续费时自动扣款的[付款方式](payment-methods.md)。
 * **编辑计费地址**，更改与您的订阅关联的计费地址，包括适用的[增值税 (VAT) 或商品和服务税 (GST) 号码](tax-calculation.md#vat)。
-* **添加信用额度**，通过 PayPal 或 Bitcoin 来购买[账户信用额度](payment-methods.md#account-credit)。可用的信用额度将用于自动抵扣您的下一笔付款。
+* **添加余额**，通过 PayPal 或 Bitcoin 来购买[账户余额](payment-methods.md#account-credit)。可用的余额将用于自动抵扣您的下一笔付款。
 
 {% hint style="danger" %}
 如果我们无法处理您的[组织续费](organization-renewal.md)，您的订阅将降级为免费版方案。要解决此问题，请更新您的付款方式或直接支付未支付的[账单](invoices-and-receipts.md#review-invoices)。如果您的账户仍然无法恢复为付费版订阅，请[联系我们](https://bitwarden.com/contact/)。

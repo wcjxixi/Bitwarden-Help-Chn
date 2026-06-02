@@ -95,7 +95,7 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 
 ## 事件日志 <a href="#event-logs" id="event-logs"></a>
 
-[事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)是团队版或企业版组织内发生的事件的时间戳记录。Secrets Manager 事件可从组织密码库的**报告** → **事件日志**以及[机器账户事件日志页面](../your-secrets/machine-accounts.md#service-account-events)获取。
+[事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)是您的团队版或企业版组织内发生的事件的时间戳记录。Secrets Manager 事件可从组织密码库的**报告** → **事件日志**以及[机器账户事件日志页面](../your-secrets/machine-accounts.md#service-account-events)获取。
 
 事件日志可以导出并无限期保留。虽然许多事件适用于所有 Bitwarden 产品，有些是特定于 Password Manager 的，但 Secrets Manager 将专门记录以下内容：
 
