@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/collection-management/)
 {% endhint %}
 
-[集合](about-collections.md)管理设置是一套组织范围内的规则，可直接与[成员角色](../../manage-members/member-roles.md)和[集合权限](collection-permissions.md)交互，允许或限制某些用户群体执行某些操作。这些设置只能由组织所有者在管理控制台的**设置** → **组织信息**视图中进行设置：
+[集合](about-collections.md)管理设置是一套组织范围内的规则，可直接与[成员角色](../../manage-members/member-roles.md)和[集合权限](collection-permissions.md)交互，允许或限制某些用户群体执行某些操作。这些设置只能由组织所有者在 Admin Console 的**设置** → **组织信息**视图中进行设置：
 
 {% hint style="info" %}
 这些成员权限共同决定了集合访问权限：
@@ -16,7 +16,7 @@
 
 ## 设置列表 <a href="#list-of-settings" id="list-of-settings"></a>
 
-### 允许所有者和管理员从管理控制台管理所有集合和项目 <a href="#allow-owners-and-admins-to-manage-all-collections-and-items-from-the-admin-console" id="allow-owners-and-admins-to-manage-all-collections-and-items-from-the-admin-console"></a>
+### 允许所有者和管理员从 Admin Console 管理所有集合和项目 <a href="#allow-owners-and-admins-to-manage-all-collections-and-items-from-the-admin-console" id="allow-owners-and-admins-to-manage-all-collections-and-items-from-the-admin-console"></a>
 
 此选项与[所有者和管理员成员角色](../../manage-members/member-roles.md)交互，以确定该用户群体是否可以自动访问组织中的所有集合以及所有项目。
 

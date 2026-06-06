@@ -68,7 +68,7 @@
 
 ## 用户配置和目录集成 <a href="#user-provisioning-and-directory-integration" id="user-provisioning-and-directory-integration"></a>
 
-* 在管理控制台中启用 SCIM 配置
+* 在 Admin Console 中启用 SCIM 配置
 * 配置身份提供程序
 * 映射用户属性和群组成员资格
 * 测试 SCIM 同步
