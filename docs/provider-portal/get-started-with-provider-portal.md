@@ -59,7 +59,7 @@
 
 客户组织是附属于提供商或由提供商管理的任何[组织](../admin-console/organizations-overview.md)。对于您的客户来说，除了谁负责管理，「客户」组织和「常规」组织之间没有区别。
 
-组织将 Bitwarden 用户和密码库项目联系在一起，用于[安全地共享](../password-manager/organization-members/sharing.md)登录、支付卡、笔记和身份信息。组织拥有一个管理控制台视图，提供商服务用户可在其中管理组织的集合、管理成员和群组、运行报告、导入数据以及配置组织设置：
+组织将 Bitwarden 用户和密码库项目联系在一起，用于[安全地共享](../password-manager/organization-members/sharing.md)登录、支付卡、笔记和身份信息。组织拥有一个 Admin Console 视图，提供商服务用户可在其中管理组织的集合、管理成员和群组、运行报告、导入数据以及配置组织设置：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5fXREt9aHmnVgLLRPBs8yg/dbecd580231e8ea2f4eec2be224a1e64/2025-02-25_15-20-08.png?w=1050&#x26;fm=avif" alt=""><figcaption><p>客户组织密码库</p></figcaption></figure></div>
 
@@ -83,7 +83,7 @@
 
 1、导航到提供商门户的**客户**选项卡，然后选择 ✚**新增**按钮 → **现有组织**：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/mA88mJFGTc9w6MEcisaME/af9d5d7d413cb01d9d18df783fd934fc/Existing_client_org.png?w=1050&#x26;fm=avif" alt=""><figcaption><p>管理控制台添加现有组织</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/mA88mJFGTc9w6MEcisaME/af9d5d7d413cb01d9d18df783fd934fc/Existing_client_org.png?w=1050&#x26;fm=avif" alt=""><figcaption><p>Admin Console 添加现有组织</p></figcaption></figure></div>
 
 2、将出现添加现有组织的对话框。选择您要添加的组织：
 
@@ -125,7 +125,7 @@
 
 在建立了安全且可扩展的凭据共享基础设施后，您就可以开始邀请用户加入组织了。根据您的客户规模，可以通过三种方式将用户加入 Bitwarden：
 
-1、**对于小型客户**，通过从管理员控制台的 **☷成员**视图向用户发送电子邮件邀请：
+1、**对于小型客户**，通过从 Admin Console 的 **☷成员**视图向用户发送电子邮件邀请：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4wUO7i6w8y4sqAvwuMVZyd/070a5b36b242b1e4871cc0f58e0b8f83/2024-12-05_09-31-35.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>邀请成员作为提供者</p></figcaption></figure></div>
 

@@ -43,7 +43,7 @@
 针对这种情况创建一个独立的组织将确保可以为用户提供适当的[用户类型和凭据访问控制](../../admin-console/manage-members/member-roles.md)。
 {% endhint %}
 
-组织将 Bitwarden 用户和密码库项目关联起来，以[安全地共享](../../password-manager/organization-members/sharing.md)登录、支付卡、笔记和身份。组织拥有一个独立的视图，即管理员控制台，服务用户可以在其中管理组织的集合、管理成员和群组、运行报告、导入数据以及配置组织设置：
+组织将 Bitwarden 用户和密码库项目关联起来，以[安全地共享](../../password-manager/organization-members/sharing.md)登录、支付卡、笔记和身份。组织拥有一个独立的视图，即 Admin Console，服务用户可以在其中管理组织的集合、管理成员和群组、运行报告、导入数据以及配置组织设置：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/556sezsEi94WR2UMFWaXY0/4e1fb093daf9cf130d44464ea60474b9/2025-04-23_08-52-47.png?w=1019&#x26;fm=avif" alt=""><figcaption><p>访问业务单元集合</p></figcaption></figure></div>
 

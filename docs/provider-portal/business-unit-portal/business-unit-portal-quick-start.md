@@ -32,7 +32,7 @@
 
 业务单元组织是指任何隶属于或由业务单元管理的组织。对于您的用户来说，「业务单元」组织与「常规」组织之间没有区别，唯一的区别在于谁在进行管理。
 
-组织将 Bitwarden 用户和密码库项目关联起来，以安全地共享登录、支付卡、笔记和身份。组织拥有一个独立的视图，即管理员控制台，服务用户可以在其中管理组织的集合、管理成员和群组、运行报告、导入数据以及配置组织设置：
+组织将 Bitwarden 用户和密码库项目关联起来，以安全地共享登录、支付卡、笔记和身份。组织拥有一个独立的视图，即 Admin Console，服务用户可以在其中管理组织的集合、管理成员和群组、运行报告、导入数据以及配置组织设置：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5nwhryDcaYUXFl72AWBeyO/8a5183b4e34803c173ca0281f641d708/2025-04-24_08-59-33.png?w=1019&#x26;fm=avif" alt=""><figcaption><p>业务单元门户</p></figcaption></figure></div>
 
@@ -92,7 +92,7 @@
 
 建立了安全且可扩展的凭据共享基础设施后，您就可以开始邀请用户加入组织了。根据您的业务单元规模，可以通过三种方式将用户加入 Bitwarden：
 
-1、**对于小型单元**，通过从管理员控制台的 **☷成员**视图向用户发送电子邮件邀请：
+1、**对于小型单元**，通过从 Admin Console 的 **☷成员**视图向用户发送电子邮件邀请：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>邀请成员加入组织</p></figcaption></figure></div>
 
