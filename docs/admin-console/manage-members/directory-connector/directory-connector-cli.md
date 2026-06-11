@@ -168,7 +168,7 @@ bwdc config <setting> <value>
 | `server <server-url>`        | 您的自托管安装的 URL（例如 `https://business.bitwarden.com` ）或 EU 服务器（`https://vault.bitwarden.eu`）。 |
 | `directory <directory-type>` | 使用的目录的类型。请参阅以下表格以获取枚举值。                                                                   |
 | `ldap.password <password>`   | 用于连接到 LDAP 服务器的密码。                                                                        |
-| `azure.key <key>`            | Azure AD 密钥。                                                                              |
+| `entra.key <key>`            | Entra ID 机密密钥。                                                                            |
 | `gsuite.key <key>`           | Google Workspace/GSuite 私钥。                                                               |
 | `okta.token <token>`         | Okta 令牌。                                                                                  |
 | `onelogin.secret <secret>`   | OneLogin 客户端密钥。                                                                           |
@@ -178,7 +178,7 @@ bwdc config <setting> <value>
 | 源目录                     | 值 |
 | ----------------------- | - |
 | Active Directory/LDAP   | 0 |
-| Azure Active Directory  | 1 |
+| Entra ID                | 1 |
 | Google Workspace/GSuite | 2 |
 | Okta                    | 3 |
 | OneLogin                | 4 |
@@ -191,7 +191,7 @@ bwdc config <setting> <value>
 bwdc data-file
 ```
 
-Directory Connector CLI 的某些配置设置可以通过在您喜欢的文本编辑器中直接编辑 `data.json` 配置文件来修改，但 `ldap.password`、`azure.key`、`gsuite.key`、`okta.token` 和 `onelogin.secret` 只能通过 CLI 使用 config 或[桌面 App](directory-connector-desktop-app.md) 来修改。
+Directory Connector CLI 的某些配置设置可以通过在您喜欢的文本编辑器中直接编辑 `data.json` 配置文件来修改，但 `ldap.password`、`entra.key`、`gsuite.key`、`okta.token` 和 `onelogin.secret` 只能通过 CLI 使用 [`config`](directory-connector-cli.md#config) 或[桌面 App](directory-connector-desktop-app.md) 来修改。
 
 ### clean-cache <a href="#clear-cache" id="clear-cache"></a>
 
