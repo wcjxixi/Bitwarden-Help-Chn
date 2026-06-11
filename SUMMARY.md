@@ -62,7 +62,7 @@
       * [密码 & 生成器历史记录](docs/password-manager/your-vault/security-tools/password-and-generator-history.md)
       * [密码库健康报告](docs/password-manager/your-vault/security-tools/vault-health-reports.md)
       * [更改存在风险的密码](docs/password-manager/your-vault/security-tools/change-at-risk-passwords.md)
-      * [主密码重新提示](docs/password-manager/your-vault/security-tools/master-password-re-prompt.md)
+      * [主密码二次验证](docs/password-manager/your-vault/security-tools/master-password-re-prompt.md)
       * [管理设备](docs/password-manager/your-vault/security-tools/manage-devices.md)
       * [\*Phishing Blocker](docs/password-manager/your-vault/security-tools/phishing-blocked.md)
     * [外观](docs/password-manager/your-vault/appearance/README.md)
