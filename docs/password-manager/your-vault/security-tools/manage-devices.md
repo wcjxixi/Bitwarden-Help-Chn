@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/manage-devices/)
 {% endhint %}
 
-**设备**列表显示所有已登录您账户的 Bitwarden 客户端 App。对于每台设备，您可以查看客户端类型、上次活动时间以及首次登录您账户的时间。您还可以使用此列表批准或拒绝来[自其他设备的登录请求](../../../account/log-in-and-unlock/more-log-in-options/log-in-with-device.md#approve-a-log-in-request)或[设备信任请求](../../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)。
+**设备**列表显示所有已登录您账户的 Bitwarden 客户端 App。对于每台设备，您可以查看客户端类型、上次活动时间以及首次登录您账户的时间。您还可以使用此列表批准或拒绝[来自其他设备的登录请求](../../../account/log-in-and-unlock/more-log-in-options/log-in-with-device.md#approve-a-log-in-request)或[设备信任请求](../../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)。
 
 {% hint style="info" %}
 **设备**是指您登录过的 Bitwarden App 的唯一安装实例。重新安装 App、清除 App 数据或清除 Cookie 可能会导致同一设备多次出现。
