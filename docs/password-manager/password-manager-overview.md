@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/password-manager-overview/)
 {% endhint %}
 
-Bitwarden Password Manager 使企业和个人能够在面临不断上升的网络犯罪威胁时保护其在线数据。使用 Bitwarden Password Manager 为您在线使用的每个账户生成强大而唯一的密码。这样一来，如果一个站点遭受数据泄露，您的其他账户都不会受到损害。Password Manager 通过创建、保存和自动填充这些强密码，使您无需担心记住它们，让您可以轻松地做到这一点。
+Bitwarden Password Manager 使企业和个人能够在面临不断上升的网络犯罪威胁时保护其在线数据。使用 Bitwarden Password Manager 为您在线使用的每个账户生成强大而唯一的密码。这样，如果一个站点遭受数据泄露，您的其他账户都不会受到损害。Password Manager 通过创建、保存和自动填充这些强密码，让您可以轻松地做到这一点，这样您就不必担心记不住它们。
 
-## 主要特点 <a href="#key-features" id="key-features"></a>
+## 主要功能 <a href="#key-features" id="key-features"></a>
 
 对于个人和最终用户，Bitwarden Password Manager 提供的一些最受欢迎的功能是：
 
