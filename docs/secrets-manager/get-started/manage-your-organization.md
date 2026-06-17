@@ -16,7 +16,7 @@
 
 ## 企业策略 <a href="#enterprise-policies" id="enterprise-policies"></a>
 
-策略允许企业组织为其成员实施安全规则，例如强制使用两步登录。虽然一些策略主要适用于 Password Manager，但有一些策略也广泛适用于 Secrets Manager 的用户：
+策略允许企业版组织为其成员实施安全规则，例如强制使用两步登录。虽然一些策略主要适用于 Password Manager，但有一些策略也广泛适用于 Secrets Manager 的用户：
 
 * [要求两步登录](../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)
 * [主密码要求](../../admin-console/oversight-visibility/enterprise-policies.md#master-password-requirements)

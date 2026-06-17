@@ -75,16 +75,13 @@
 
 成员可以**接受**或**拒绝**该提示。接受将把所有个人拥有的项目转移到组织所有权，拒绝将立即撤销该成员对组织的访问权限，以便他们有时间筛选应转移和不应转移的项目。任一场景都会[记录事件](event-logging/event-logs.md#organization-events)。
 
-### Send 控制 <a href="#send-controls" id="send-controls"></a>
+### Send 选项 <a href="#send-options" id="send-options"></a>
 
-启用 **Send 控制**策略将指定用于创建和编辑 Send 的选项。所有者和管理员不受此策略的约束。启用此策略时，必须选中以下选项之一：
+选择**启用**和选择**创建或编辑 Send 时，始终向接收者显示成员的电子邮件地址**选项，以对用户禁用[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，从而为接收 Send 的人提供透明度。所有者和管理员不受此策略的约束。
 
-* **禁用 Send**：将阻止成员创建或编辑 Send。如果之前创建了 Send，他们仍然可以在除网页 App 之外的所有 Bitwarden 客户端的 **Send** 页面查看和删除这些 Send。受此策略约束的成员仍然可以打开[接收到的 Send](../../password-manager/bitwarden-send/receive-a-send.md)。
-* **创建或编辑 Send 时始终向接收者显示成员的电子邮件地址**：将禁用[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，从而为接收 Send 的人提供透明度。
+### 禁用 Send <a href="#remove-send" id="remove-send"></a>
 
-{% hint style="info" %}
-请确保只选择一项设置。如果两项都勾选，成员将受到**禁用 Send** 选项的约束。
-{% endhint %}
+**禁用 Send** 将阻止成员创建或编辑 Send。如果之前创建了 Send，他们仍然可以在除网页 App 之外的所有 Bitwarden 客户端的 **Send** 页面查看和删除这些 Send。受此策略约束的成员仍然可以打开[接收到的 Send](../../password-manager/bitwarden-send/receive-a-send.md)。所有者和管理员不受此策略的约束。
 
 ### 禁用导出 <a href="#remove-export" id="remove-export"></a>
 

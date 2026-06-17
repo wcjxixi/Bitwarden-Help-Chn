@@ -50,7 +50,7 @@
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/47RPmr6xOowzjJbG6JxVG3/42ba660b4316b57c4857ed7f7fcd58e3/Hidden_email_send.png?w=516&#x26;fm=avif" alt=""><figcaption><p>隐藏了电子邮箱的文本 Send</p></figcaption></figure></div>
 
 {% hint style="success" %}
-对于企业组织，可以使用[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md#send-options)设置此选项的可用性。
+对于企业版组织，可以使用[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md#send-options)设置此选项的可用性。
 {% endhint %}
 
 ## 隐藏文本 <a href="#hide-text" id="hide-text"></a>
