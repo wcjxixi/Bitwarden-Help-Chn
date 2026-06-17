@@ -203,7 +203,7 @@ bw generate -uln --length 14
 在浏览器扩展和桌面 App 的添加/编辑项目界面，您可以选择使用**随机**（例如 `bqzjlero@gardenllc.com`）字符串生成用户名，或基于项目的**网站名称**（例如 `twitter.com@gardenllc.com`）生成用户名。**网站名称**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)，在其他位置，用户名生成器默认为**随机**。
 
 {% hint style="success" %}
-**为什么要使用 Catch-all 电子邮件？**
+**为什么要使用 Catch-all 电子邮箱？**
 
 在某些情况下，拥有自己域名（例如 `@bitwarden.com`）的公司可以使用 Catch-all 收件箱避免电子邮件进入您的个人收件箱，而是将它们路由到一个已共享的（有时未经检查）公司收件箱，以备万一将来需要他们的这些记录。
 
