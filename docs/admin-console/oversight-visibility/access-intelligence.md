@@ -68,7 +68,7 @@ Access Intelligence 的一项重要功能是向成员发送通知，告知他们
 
 ### 请求密码更改 <a href="#requesting-password-changes" id="requesting-password-changes"></a>
 
-请求密码更改将会对关键应用程序拥有访问权限的组织成员发送通知，告知他们需要[处理存在风险的密码](../../password-manager/your-vault/security-tools/change-at-risk-passwords.md)。成员将通过电子邮件收件箱和已登录的 Bitwarden 浏览器扩展中的横幅接收通知。
+请求密码更改将向对关键应用程序拥有访问权限的组织成员发送通知，告知他们需要[处理存在风险的密码](../../password-manager/your-vault/security-tools/change-at-risk-passwords.md)。拥有[编辑密码权限](../manage-shared-items/collections/collection-permissions.md)的成员将在其电子邮箱收件箱中以及他们登录的 Bitwarden 浏览器扩展中收​​到横幅形式的通知。
 
 {% hint style="success" %}
 在分派您的第一个密码更改请求之前，或作为员工 Bitwarden 培训的一部分，我们建议：

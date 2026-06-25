@@ -14,9 +14,9 @@
 
 1、在**谁可以查看**菜单中选择**指定人员**选项。然后，将目标接收者添加到**电子邮箱**字段。完成 [Send 设置](about-send.md#using-send)，然后将 Send 链接分享给目标接收者。
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/9isz2fm2soiJJOau1sq7b/1b9cdff84b482c8698ef6e0a20ebf826/Send_access_list.png?w=450&#x26;fm=avif" alt=""><figcaption><p>验证用户的 Send</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/9isz2fm2soiJJOau1sq7b/a87258146b97095651a5550ef3bc24b4/Verified_User_Send.png?w=559&#x26;fm=avif" alt=""><figcaption><p>验证用户的 Send</p></figcaption></figure></div>
 
-2、接收者访问 Send 链接后，将被要求输入他们的电子邮箱地址。验证码将发送到该用户的电子邮箱地址。输入验证码即可查看 Send 内容。
+2、接收者访问 Send 链接时，将被要求输入他们的电子邮箱地址。验证码将发送到该用户的电子邮箱地址。输入验证码即可查看 Send 内容。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7qM22jPeoKCnGE6GS03wz7/4f959a8b1b7b9f13674bdda975af9a5d/2026-02-24_17-04-46.png?w=493&#x26;fm=avif" alt=""><figcaption><p>输入 Send 验证码</p></figcaption></figure></div>
 
