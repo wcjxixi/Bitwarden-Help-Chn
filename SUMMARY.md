@@ -78,7 +78,7 @@
       * [从 iOS App 自动填充](docs/password-manager/autofill/autofill-from/autofill-from-ios.md)
       * [从 Android App 自动填充](docs/password-manager/autofill/autofill-from/autofill-from-android.md)
     * [更多自动填充选项](docs/password-manager/autofill/more-autofill-options/README.md)
-      * [=填充辅助](docs/password-manager/autofill/more-autofill-options/fill-assist.md)
+      * [填充辅助](docs/password-manager/autofill/more-autofill-options/fill-assist.md)
       * [自动填充通行密钥](docs/password-manager/autofill/more-autofill-options/autofill-passkeys.md)
       * [自动填充支付卡 & 身份](docs/password-manager/autofill/more-autofill-options/auto-fill-cards-and-identities.md)
       * [自动填充自定义字段](docs/password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md)
