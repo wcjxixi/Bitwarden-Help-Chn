@@ -14,9 +14,9 @@
 授予他人账户紧急访问权限需完成以下几个步骤：
 
 1. 账户持有人在紧急情况发生之前，为其账户[添加一位信任的联系人](add-and-manage-trusted-emergency-contacts.md)。
-2. 当需要时，已信任的联系人请求访问该账户。
-3. 请求在账户持有人批准或等待时间到期后生效。
-4. 受信任的联系人访问账户。
+2. 当需要时，已信任的联系人[请求访问](request-and-grant-emergency-access.md#get-emergency-access-to-an-account)该账户。
+3. 账户持有人[批准此请求](request-and-grant-emergency-access.md#approve-or-deny-an-emergency-access-request)或等待时间到期后生效。
+4. 受信任的联系人访问此账户。
 5. （可选）账户持有人撤销受信任的联系人对其账户的访问权限。
 
 ## 谁可以使用紧急访问
