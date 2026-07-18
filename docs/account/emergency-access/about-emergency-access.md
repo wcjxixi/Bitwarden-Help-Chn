@@ -1,4 +1,4 @@
-# =关于紧急访问
+# 关于紧急访问
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/emergency-access/)
@@ -14,17 +14,25 @@
 授予他人账户紧急访问权限需完成以下几个步骤：
 
 1. 账户持有人在紧急情况发生之前，为其账户[添加一位受信任的联系人](add-and-manage-trusted-emergency-contacts.md)。
-2. 当需要时，受信任的联系人请求访问该账户。
-3. 账户持有人[批准此请求](request-and-grant-emergency-access.md#approve-or-deny-an-emergency-access-request)或等待时间到期后生效。
-4. 受信任的联系人访问此账户。
-5. （可选）账户持有人撤销受信任的联系人对其账户的访问权限。
+2. 当需要时，受信任的联系人[请求访问](request-and-grant-emergency-access.md#id-1-the-trusted-emergency-contact-requests-access-to-the-account)该账户。
+3. 账户持有人[批准此请求](request-and-grant-emergency-access.md#id-2-the-trusted-emergency-contacts-request-is-approved-or-denied)或等待时间到期后生效。
+4. [受信任的联系人访问此账户](request-and-grant-emergency-access.md#id-3-the-trusted-emergency-contact-gets-access)。
+5. （可选）账户持有人[撤销受信任的联系人对其账户的访问权限](request-and-grant-emergency-access.md#manage-a-trusted-emergency-contacts-access)。
 
 ## 谁可以使用紧急访问
+
+为紧急访问[添加受信任的联系人](add-and-manage-trusted-emergency-contacts.md)适用于高级版用户，包括付费版组织（家庭版、团队版和企业版）的成员。如果您的组织开启了[自动确认策略](../../admin-console/oversight-visibility/enterprise-policies.md#automatic-user-confirmation)，则您的账户将**无法**使用紧急访问。
+
+任何拥有免费版或高级版 Bitwarden 账户且位于同一 [Bitwarden 服务器](../../security/server-geographies.md)的用户，均可被指定为受信任的紧急联系人。高级版用户可设置的受信任紧急联系人的数量没有限制。
+
+{% hint style="success" %}
+如果您是组织管理员，在员工离职或继任规划期间，[账户恢复](../../admin-console/manage-members/account-recovery/about-account-recovery.md)可能更适合管理员工账户的访问权限。
+{% endhint %}
 
 ## 工作原理 <a href="#how-it-works" id="how-it-works"></a>
 
 {% hint style="info" %}
-以下信息涉及加密密钥名称和过程，这些内容在[散列、密钥派生和加密](../../security/bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)中有介绍。建议先阅读这些内容。
+以下信息涉及加密密钥名称和过程，这些内容在[散列、密钥派生和加密](../../security/bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)中有介绍。建议先阅读这些详细内容。
 {% endhint %}
 
 紧急访问使用公钥交换和加密/解密来允许用户授予受信任的紧急联系人在零知识环境下访问密码库数据的权限：
@@ -41,6 +49,6 @@
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-* 向您的账户添加受信任的紧急联系人 。
-* 与您的受信任联系人分享如何请求访问权限 ，以备不时之需。
-* 了解如何处理针对您账户的紧急访问请求 。
+* [添加受信任的紧急联系人](add-and-manage-trusted-emergency-contacts.md)到您的账户。
+* 与您受信任的联系人分享[如何请求访问权限](request-and-grant-emergency-access.md#id-1-the-trusted-emergency-contact-requests-access-to-the-account)，以备不时之需。
+* 了解如何[处理针对您账户的紧急访问请求](request-and-grant-emergency-access.md#approve-or-deny-an-emergency-access-request)。
