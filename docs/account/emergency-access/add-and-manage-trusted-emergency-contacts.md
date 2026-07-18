@@ -6,6 +6,20 @@
 
 ## 添加可信任的紧急联系人 <a href="#add-trusted-emergency-contacts" id="add-trusted-emergency-contacts"></a>
 
+## 已信任的紧急联系人设置 <a href="#trusted-emergency-contact-settings" id="trusted-emergency-contact-settings"></a>
+
+### 用户访问权限 <a href="#user-access" id="user-access"></a>
+
+### 等待时间 <a href="#wait-time" id="wait-time"></a>
+
+## 更改已信任的紧急联系人设置 <a href="#change-trusted-emergency-contact-settings" id="change-trusted-emergency-contact-settings"></a>
+
+## 移除已信任的紧急联系人 <a href="#remove-a-trusted-emergency-contact" id="remove-a-trusted-emergency-contact"></a>
+
+## 常见问题 <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
+
+## 下一步 <a href="#next-steps" id="next-steps"></a>
+
 只有高级版用户，包括付费组织（家庭版、团队版或企业版）的成员才能指定可信任的紧急联系人。在同一 [Bitwarden 服务器](../../security/server-geographies.md)上的任何免费或高级 Bitwarden 账户都可以被指定为可信任的紧急联系人。您拥有的可信任的紧急联系人的数量没有限制。
 
 设置紧急访问分为 3 个步骤：
