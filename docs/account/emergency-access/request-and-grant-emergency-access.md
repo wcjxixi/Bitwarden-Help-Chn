@@ -6,29 +6,11 @@
 
 ## 获取账户的紧急访问权限 <a href="#get-emergency-access-to-an-account" id="get-emergency-access-to-an-account"></a>
 
-<details>
+### 1. 受信任的紧急联系人请求访问账户 <a href="#id-1-the-trusted-emergency-contact-requests-access-to-the-account" id="id-1-the-trusted-emergency-contact-requests-access-to-the-account"></a>
 
-<summary>1. 受信任的紧急联系人请求访问账户。</summary>
+### 2. 受信任的紧急联系人的请求被批准或拒绝。 <a href="#id-2-the-trusted-emergency-contacts-request-is-approved-or-denied" id="id-2-the-trusted-emergency-contacts-request-is-approved-or-denied"></a>
 
-
-
-</details>
-
-<details>
-
-<summary>2. 受信任的紧急联系人的请求被批准或拒绝。</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>3. 若请求被批准，受信任的紧急联系人可通过查看密码库或更新主密码以登录账户来获得访问权限。</summary>
-
-
-
-</details>
+### 3. 若请求被批准，受信任的紧急联系人可通过查看密码库或更新主密码以登录账户来获得访问权限。 <a href="#id-3-the-trusted-emergency-contact-gets-access" id="id-3-the-trusted-emergency-contact-gets-access"></a>
 
 ## 管理受信任的紧急联系人的访问权限 <a href="#manage-a-trusted-emergency-contacts-access" id="manage-a-trusted-emergency-contacts-access"></a>
 

@@ -14,7 +14,7 @@
 授予他人账户紧急访问权限需完成以下几个步骤：
 
 1. 账户持有人在紧急情况发生之前，为其账户[添加一位受信任的联系人](add-and-manage-trusted-emergency-contacts.md)。
-2. 当需要时，受信任的联系人[请求访问](request-and-grant-emergency-access.md#id-1.-shou-xin-ren-de-jin-ji-lian-xi-ren-qing-qiu-fang-wen-zhang-hu)该账户。
+2. 当需要时，受信任的联系人请求访问该账户。
 3. 账户持有人[批准此请求](request-and-grant-emergency-access.md#approve-or-deny-an-emergency-access-request)或等待时间到期后生效。
 4. 受信任的联系人访问此账户。
 5. （可选）账户持有人撤销受信任的联系人对其账户的访问权限。
@@ -27,7 +27,7 @@
 以下信息涉及加密密钥名称和过程，这些内容在[散列、密钥派生和加密](../../security/bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)中有介绍。建议先阅读这些内容。
 {% endhint %}
 
-紧急访问使用公钥交换和加密/解密来允许用户授予信任的紧急联系人在零知识环境下访问密码库数据的权限：
+紧急访问使用公钥交换和加密/解密来允许用户授予受信任的紧急联系人在零知识环境下访问密码库数据的权限：
 
 1. Bitwarden 用户（授予人）邀请另一位 Bitwarden 用户成为其可信任的紧急联系人（受让人）。邀请（有效期只有 5 天）指定了用户访问级别，并包含对受让人 **RSA 公钥**的请求。
 2. 受让人将通过电子邮件收到邀请通知，并接受邀请成为可信任的紧急联系人。接受邀请后，受让人的 **RSA 公钥**将与用户记录一起存储。
