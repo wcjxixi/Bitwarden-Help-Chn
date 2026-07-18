@@ -123,7 +123,7 @@
 
 启用**要求单点登录身份验证**策略将要求非所有者/非管理员用户使用 SSO 登录。如果是自托管，可以使用[环境变量](../../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)对所有者和管理员强制执行该策略。有关更多信息，请参阅 [SSO 登录的使用](../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)。所有者和管理员不受此策略的约束。
 
-使用此策略的组织成员将无法[使用通行密钥登录](../../account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)。
+使用此策略的组织成员将无法[使用通行密钥登录](../../account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-passkeys.md)。
 
 {% hint style="info" %}
 在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
@@ -174,7 +174,7 @@
 
 ### 禁用 PIN 码解锁 <a href="#remove-unlock-with-pin" id="remove-unlock-with-pin"></a>
 
-启用**禁用 PIN 码解锁**策略后，成员将无法在网页 App、浏览器扩展和桌面 App 上配置或[使用 PIN 码解锁](../../account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md)。该策略打开后适用于所有组织成员，包括管理员和所有者。
+启用**禁用 PIN 码解锁**策略后，成员将无法在网页 App、浏览器扩展和桌面 App 上配置或[使用 PIN 码解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlock-with-pin.md)。该策略打开后适用于所有组织成员，包括管理员和所有者。
 
 {% hint style="info" %}
 计划在今后的版本中支持在移动 App 上执行这一策略。

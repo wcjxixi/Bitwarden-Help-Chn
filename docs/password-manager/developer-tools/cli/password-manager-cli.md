@@ -185,7 +185,7 @@ bw login --sso
 
 ### 登录到多个账户 <a href="#log-in-to-multiple-accounts" id="log-in-to-multiple-accounts"></a>
 
-与其他 Bitwarden App 的[账户切换](../../../account/log-in-and-unlock/more-log-in-options/account-switching.md)功能类似，CLI 可以通过 `BITWARDENCLI_APPDATA_DIR` 环境变量同时登录多个账户，该环境变量指向一个 `bw` 配置文件（通常名为 `data.json`）的位置。例如，您可以在 `.bashrc` 配置文件中为两个不同的配置设置别名：
+与其他 Bitwarden App 的[账户切换](../../../account/log-in-and-unlock/account-switching.md)功能类似，CLI 可以通过 `BITWARDENCLI_APPDATA_DIR` 环境变量同时登录多个账户，该环境变量指向一个 `bw` 配置文件（通常名为 `data.json`）的位置。例如，您可以在 `.bashrc` 配置文件中为两个不同的配置设置别名：
 
 ```shellscript
 alias bw-personal="BITWARDENCLI_APPDATA_DIR=~/.config/Bitwarden\ CLI\ Personal /path/to/bw $@"

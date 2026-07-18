@@ -14,7 +14,7 @@
 Bitwarden 提供三种通行密钥功能：
 
 * 从您的 Bitwarden 密码库为其他服务[保存和自动填充通行密钥](../../../password-manager/autofill/more-autofill-options/autofill-passkeys.md)。
-* 使用[通行密钥登录和解锁](../../log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)您的 Bitwarden 账户。**\***
+* 使用[通行密钥登录和解锁](../../log-in-and-unlock/more-log-in-unlock-options/log-in-with-passkeys.md)您的 Bitwarden 账户。**\***
 * 使用[通行密钥 2FA](two-step-login-via-fido.md)保护您的 Bitwarden 账户。**\***
 
 **\*** 某些身份验证器，尤其是 Windows Hello，不允许您使用通行密钥同时进行登录和 2FA。

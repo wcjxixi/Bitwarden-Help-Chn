@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/choose-my-server/)
 {% endhint %}
 
-Bitwarden Cloud 在全球范围内可用，在**美国**和**欧盟**地区提供数据存储。
+Bitwarden Cloud 可在全球范围内访问，在**美国**和**欧盟**地区提供数据存储。
 
 {% hint style="info" %}
 Bitwarden 的数据区域是相互独立的，您的账户或组织仅存在于其最初创建的区域，这意味着：

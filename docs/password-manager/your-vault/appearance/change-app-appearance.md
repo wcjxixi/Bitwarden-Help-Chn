@@ -43,7 +43,7 @@ Bitwarden 网页密码库、浏览器扩展、桌面 App 和移动 App 都包含
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7dOzSglXr4rlM97zKoqptq/5c07e025316518564fd77207944fd546/2026-01-28_11-16-18.png?w=988&#x26;fm=avif" alt=""><figcaption><p>桌面端更改主题</p></figcaption></figure></div>
 
 {% hint style="success" %}
-桌面 App 中的主题是为所有已登录账户全局设置的。[了解更多](../../../account/log-in-and-unlock/more-log-in-options/account-switching.md)。
+桌面 App 中的主题是为所有已登录账户全局设置的。[了解更多](../../../account/log-in-and-unlock/account-switching.md)。
 {% endhint %}
 {% endtab %}
 

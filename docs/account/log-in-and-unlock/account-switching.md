@@ -17,19 +17,19 @@
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/112EwzW6sPKPGu65R8rKHc/679b2686d9b67e5ccb37a2ebf56ea062/2025-01-21_15-04-00.png?w=710&#x26;fm=avif" alt=""><figcaption><p>移动端登录</p></figcaption></figure></div>
 
 {% hint style="success" %}
-如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../../../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
+如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
 
 <img src="https://bitwarden.com/assets/1Bc4QseUed27nuuhbeD7WR/e5dbca7997cb8efe1ebbff001813354e/2026-01-28_09-16-56.png?w=1001&#x26;fm=avif" alt="" data-size="original">
 
 在此示例中，您的工作账户可能使用诸如 `https://your.company.bitwarden.com`，而您的家庭组织账户可能使用 `https://vault.bitwarden.com`。
 {% endhint %}
 
-登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每个账户的密码库的当前状态（已锁定或已解锁）。如果您注销其中一个账户，它将从列表中移除，除非[密码库超时](../vault-timeout-options.md)设置为注销。
+登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每个账户的密码库的当前状态（已锁定或已解锁）。如果您注销其中一个账户，它将从列表中移除，除非[密码库超时](vault-timeout-options.md)设置为注销。
 
 {% hint style="info" %}
-大多数密码库操作，包括添加新项目或文件夹、同步、自动填充以及[密码库超时](../vault-timeout-options.md)和解锁（[PIN 码](../more-unlock-options/unlock-with-pin.md) 或[生物识别](../more-unlock-options/unlocking-with-biometrics.md)）等设置仅适用于活动账户，您可以通过 App 顶部菜单栏中显示的图标来确定活动账户。
+大多数密码库操作，包括添加新项目或文件夹、同步、自动填充以及[密码库超时](vault-timeout-options.md)和解锁（[PIN 码](more-log-in-unlock-options/unlock-with-pin.md) 或[生物识别](more-log-in-unlock-options/unlocking-with-biometrics.md)）等设置仅适用于活动账户，您可以通过 App 顶部菜单栏中显示的图标来确定活动账户。
 
-但某些选项，例如[主题](../../../password-manager/your-vault/appearance/change-app-appearance.md)，则适用于所有账户。
+但某些选项，例如[主题](../../password-manager/your-vault/appearance/change-app-appearance.md)，则适用于所有账户。
 {% endhint %}
 
 ## 自动填充 <a href="#auto-fill" id="auto-fill"></a>
@@ -47,7 +47,7 @@
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6Dvz7SzKBp90RDcROWgBhW/2407b5d1399cc1b8d0780b31dcbd95ee/2026-04-23_09-29-54.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 账户切换</p></figcaption></figure></div>
 
 {% hint style="success" %}
-如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../../../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
+如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
 
 <img src="https://bitwarden.com/assets/1Bc4QseUed27nuuhbeD7WR/e5dbca7997cb8efe1ebbff001813354e/2026-01-28_09-16-56.png?w=1001&#x26;fm=avif" alt="" data-size="original">
 
@@ -57,7 +57,7 @@
 登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每个账户的密码库的当前状态（已锁定或已解锁）。如果您注销其中一个账户，它将从列表中移除。
 
 {% hint style="info" %}
-大多数密码库操作，包括添加新项目或文件夹、同步、搜索以及[密码库超时](../vault-timeout-options.md)和解锁（[PIN 码](../more-unlock-options/unlock-with-pin.md) 或[生物识别](../more-unlock-options/unlocking-with-biometrics.md)）等设置仅适用于活动账户，您可以通过显示在 App 右上角中的电子邮件来确定活动账户。
+大多数密码库操作，包括添加新项目或文件夹、同步、搜索以及[密码库超时](vault-timeout-options.md)和解锁（[PIN 码](more-log-in-unlock-options/unlock-with-pin.md) 或[生物识别](more-log-in-unlock-options/unlocking-with-biometrics.md)）等设置仅适用于活动账户，您可以通过显示在 App 右上角中的电子邮件来确定活动账户。
 
 但某些**偏好设置**，则适用于**所有账户**：
 

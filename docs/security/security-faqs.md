@@ -170,7 +170,7 @@ Bitwarden 所需的其他基本权限已[在 Google Play 商店中列出](https:
 
 ### 问：为何浏览器扩展需要 `nativeMessaging` 权限？ <a href="#q-why-does-the-browser-extension-need-nativemessaging-permission" id="q-why-does-the-browser-extension-need-nativemessaging-permission"></a>
 
-**答：**&#x31;.48.0 版本的浏览器扩展启用了[浏览扩展的生物识别解锁](../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#browser-extensions)。
+**答：**&#x31;.48.0 版本的浏览器扩展启用了[浏览扩展的生物识别解锁](../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#browser-extensions)。
 
 此权限，也就是 `nativeMessaging`，可以安全地接受它，它允许浏览器扩展与 Bitwarden 桌面 App 进行通信，这是启用生物识别解锁所必需的。
 

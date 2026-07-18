@@ -13,18 +13,18 @@
 <summary><strong>账户安全</strong></summary>
 
 * **解锁选项**：
-  * **使用生物识别解锁**：设置[生物识别解锁](../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
+  * **使用生物识别解锁**：设置[生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)。
     * **启动时提示生物识别**：允许在首次启动时使用生物识别解锁 Bitwarden。
-  * **使用 PIN 码解锁**：设置 [PIN 码解锁](../../account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md)。
+  * **使用 PIN 码解锁**：设置 [PIN 码解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlock-with-pin.md)。
     * **浏览器重启时要求主密码**：在首次启动时要求使用主密码解锁 Bitwarden。
 * **密码库超时**：
   * **超时时间**：设置 Bitwarden 在[超时前](../../account/log-in-and-unlock/vault-timeout-options.md#session-timeout)保持活动的时长。
   * **超时动作**：设置 Bitwarden 在[超时时](../../account/log-in-and-unlock/vault-timeout-options.md#session-timeout-action)将执行的动作。
-* **管理设备**：使用[另一台设备](../../account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)或[受信任的设备](../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)批准登录请求。
+* **管理设备**：使用[另一台设备](../../account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)或[受信任的设备](../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)批准登录请求。
 * **其他选项**：
   * **指纹短语**：查看您账户的[指纹短语](../../security/encryption/account-fingerprint-phrase.md)。
   * **两步登录**：打开网页 App 以设置[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)。
-  * **更改主密码**：打开网页 App 以[更改您的主密码](../../account/log-in-and-unlock/master-password.md#change-your-master-password)。
+  * **更改主密码**：打开网页 App 以[更改您的主密码](../../account/master-password.md#change-your-master-password)。
 
 </details>
 
@@ -101,10 +101,10 @@
 <summary><strong>账户安全</strong></summary>
 
 * **批准登录请求**：
-  * **待处理的登录请求**：使用[另一台设备](../../account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)或[受信任的设备](../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)批准登录请求。
+  * **待处理的登录请求**：使用[另一台设备](../../account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)或[受信任的设备](../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)批准登录请求。
 * **解锁选项**：
-  * **使用生物识别/面容 ID/触控 ID 解锁**：设置[生物识别解锁](../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
-  * **使用 PIN 码解锁**：设置 [PIN 码解锁](../../account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md)。
+  * **使用生物识别/面容 ID/触控 ID 解锁**：设置[生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)。
+  * **使用 PIN 码解锁**：设置 [PIN 码解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlock-with-pin.md)。
     * **App 重启时要求主密码**：首次启动时要求使用主密码解锁 Bitwarden。
 * **验证器同步**：
   * **允许验证器同步**：允许 Bitwarden Password Manager 将[验证码同步到 Bitwarden Authenticator](../../bitwarden-authenticator/totp-sync.md)。
@@ -114,7 +114,7 @@
 * **其他**：
   * **指纹短语**：查看您账户的[指纹短语](../../security/encryption/account-fingerprint-phrase.md)。
   * **两步登录**：打开网页 App 以设置[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)。
-  * **更改主密码**：打开网页 App 以[更改您的主密码](../../account/log-in-and-unlock/master-password.md#change-your-master-password)。
+  * **更改主密码**：打开网页 App 以[更改您的主密码](../../account/master-password.md#change-your-master-password)。
 
 </details>
 
@@ -190,12 +190,12 @@
 * **密钥库超时**：
   * **超时时间**：设置 Bitwarden 在[超时前](../../account/log-in-and-unlock/vault-timeout-options.md#session-timeout)保持活动的时长。
   * **超时动作**：设置 Bitwarden 在[超时时](../../account/log-in-and-unlock/vault-timeout-options.md#session-timeout-action)将执行的动作。
-* **使用 PIN 码解锁**：设置 [PIN 码解锁](../../account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md)。
+* **使用 PIN 码解锁**：设置 [PIN 码解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlock-with-pin.md)。
 * **重启时使用主密码锁定**：要求 Bitwarden 桌面 App 在首次启动时使用主密码解锁。
-* **使用系统身份验证解锁**：(仅限 Linux) 设置[生物识别解锁](../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
-* **使用触控 ID 解锁**：(仅限 macOS) 设置[生物识别解锁](../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
+* **使用系统身份验证解锁**：(仅限 Linux) 设置[生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)。
+* **使用触控 ID 解锁**：(仅限 macOS) 设置[生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)。
   * **App 重启时要求触控 ID**：(仅限 macOS) 在首次启动时自动提示使用生物识别。
-* **使用 Windows Hello 解锁**：(仅限 Windows) 设置[生物识别解锁](../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)。
+* **使用 Windows Hello 解锁**：(仅限 Windows) 设置[生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)。
   * **App 重启时要求主密码或 PIN 码**：(仅限 Windows) 要求 Bitwarden 桌面 App 在首次启动时使用主密码或 PIN 码解锁。
 
 </details>
@@ -224,7 +224,7 @@
 * **关闭到托盘图标**：关闭窗口时，在系统托盘显示图标而不是无任何显示。
 * **启动到托盘图标**：Bitwarden 桌面 App 首次启动时，在系统托盘显示图标而不是打开窗口。
 * **登录时自动启动**：登录到您的计算机时，自动启动 Bitwarden 桌面 App。
-* **允许浏览器集成**：(非 Safari) 允许 Bitwarden 浏览器扩展与[桌面 App 集成](../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-browser-extension)以进行生物识别解锁。在 Safari 中，无需激活此选项即可使用集成功能。
+* **允许浏览器集成**：(非 Safari) 允许 Bitwarden 浏览器扩展与[桌面 App 集成](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-browser-extension)以进行生物识别解锁。在 Safari 中，无需激活此选项即可使用集成功能。
   * **要求浏览器集成验证**：在 Bitwarden 桌面 App 和浏览器扩展之间建立集成时，要求确认[指纹短语](../../security/encryption/account-fingerprint-phrase.md)。
 * **使用硬件加速**：如果您遇到图形或性能问题，请关闭此选项。
 * **启用 SSH 代理**：允许 Bitwarden 桌面 App 充当 [SSH 代理](../developer-tools/ssh/ssh-agent.md)。
@@ -249,7 +249,7 @@
 * **启动到菜单栏**：当 Bitwarden 桌面 App 首次启动时，在菜单栏显示一个图标，而不是打开窗口。
 * **登录时自动启动**：当你登录到计算机时，自动启动 Bitwarden 桌面 App。
 * **始终在 Dock 中显示**：始终在 Dock 中显示 Bitwarden 桌面 App 无论活动菜单栏选项如何。
-* **允许浏览器集成**：(非 Safari) 允许 Bitwarden 浏览器扩展与[桌面 App 集成](../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-browser-extension)以进行生物识别解锁。在 Safari 中，无需激活此选项即可使用集成功能。
+* **允许浏览器集成**：(非 Safari) 允许 Bitwarden 浏览器扩展与[桌面 App 集成](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-browser-extension)以进行生物识别解锁。在 Safari 中，无需激活此选项即可使用集成功能。
   * **要求浏览器集成验证**：在 Bitwarden 桌面 App 和浏览器扩展之间建立集成时，要求确认[指纹短语](../../security/encryption/account-fingerprint-phrase.md)。
 * **使用硬件加速**：如果您遇到图形或性能问题，请关闭此选项。
 * **启用 SSH 代理**：允许 Bitwarden 桌面 App 充当 [SSH 代理](../developer-tools/ssh/ssh-agent.md)。
@@ -275,7 +275,7 @@
 * **关闭到托盘图标**：当关闭窗口时，在系统托盘显示图标而不是无任何显示。
 * **启动到托盘图标**：当 Bitwarden 桌面 App 首次启动时，在系统托盘显示图标而不是打开窗口。
 * **登录时自动启动**：当你登录到计算机时，自动启动 Bitwarden 桌面 App。
-* **允许浏览器集成**：(非 Safari) 允许 Bitwarden 浏览器扩展与[桌面 App 集成](../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-browser-extension)以进行生物识别解锁。在 Safari 中，无需激活此选项即可使用集成功能。
+* **允许浏览器集成**：(非 Safari) 允许 Bitwarden 浏览器扩展与[桌面 App 集成](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-browser-extension)以进行生物识别解锁。在 Safari 中，无需激活此选项即可使用集成功能。
   * **要求浏览器集成验证**：在 Bitwarden 桌面 App 和浏览器扩展之间建立集成时，要求确认[指纹短语](../../security/encryption/account-fingerprint-phrase.md)。
 * **使用硬件加速**：如果遇到图形或性能问题，请关闭此选项。
 * **启用 SSH 代理**：允许 Bitwarden 桌面 App 充当 [SSH 代理](../developer-tools/ssh/ssh-agent.md)。

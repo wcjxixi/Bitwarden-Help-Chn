@@ -148,7 +148,7 @@ Bitwarden 浏览器扩展提供一系列[浏览器内通知](../autofill/autofil
 
 ### 使用 PIN 码或生物识别解锁 <a href="#unlock-with-pin-or-biometrics" id="unlock-with-pin-or-biometrics"></a>
 
-要快速访问您的凭据，请设置 [PIN 码](../../account/log-in-and-unlock/more-unlock-options/unlock-with-pin.md)或[生物识别](../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)来解锁您的密码库。要设置一个 PIN 码：
+要快速访问您的凭据，请设置 [PIN 码](../../account/log-in-and-unlock/more-log-in-unlock-options/unlock-with-pin.md)或[生物识别](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)来解锁您的密码库。要设置一个 PIN 码：
 
 1. 在浏览器扩展中，打开 ⚙️**设置**标签。
 2. 在**账户安全**部分，选中**使用 PIN 码解锁**复选框。

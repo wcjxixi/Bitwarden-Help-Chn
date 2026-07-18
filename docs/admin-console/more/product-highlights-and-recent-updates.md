@@ -142,7 +142,7 @@ URI（URL 或移动 App 标识符）验证用于自动填充的页面：
 * 支持在网页 App 和 Bitwarden 浏览器扩展中使用
 * 无需用户名、密码或两步登录验证 - 是管理应急账户的绝佳选择
 
-了解更多：[使用通行密钥登录](../../account/log-in-and-unlock/more-log-in-options/log-in-with-passkeys.md)
+了解更多：[使用通行密钥登录](../../account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-passkeys.md)
 
 ### 浏览器直接导入 <a href="#browser-direct-import" id="browser-direct-import"></a>
 

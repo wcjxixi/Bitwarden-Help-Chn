@@ -9,13 +9,13 @@
 * **易记**：Bitwarden 的员工以及 Bitwarden 系统对您的主密码一无所知、没有办法找回或重置您的主密码。**千万不要忘记您的主密码！**
 * **强大**：更长、更复杂、更不常见的密码是保护账户的最佳方式。Bitwarden 提供了一个免费的[密码强度测试工具](https://bitwarden.com/password-strength/)，可以测试您正在考虑的一些易记密码的强度。
 
-[2023.3.0 版本](../../release-notes.md)发布后，主密码要求必须至少包含 12 个字符。
+[2023.3.0 版本](../release-notes.md)发布后，主密码要求必须至少包含 12 个字符。
 
 {% hint style="success" %}
 担心忘记您的主密码吗？这里有一些建议：
 
 * **设置主密码提示**。如果您需要提醒，可以在登录界面请求主密码提示电子邮件。确保使用只有您自己能理解的提示。
-* **指定一个**[**信任的紧急联系人**](more-log-in-options/emergency-access.md)。具有高级访问权限的用户可以在紧急情况下授予账户访问权限给朋友或家庭成员。
+* **指定一个**[**信任的紧急联系人**](emergency-access/about-emergency-access.md)。具有高级访问权限的用户可以在紧急情况下授予账户访问权限给朋友或家庭成员。
 {% endhint %}
 
 ## 更改主密码 <a href="#change-your-master-password" id="change-your-master-password"></a>
@@ -38,10 +38,10 @@
 
 5、（可选） **输入主密码提示** ，它用于帮助您回忆密码。提示会在收到请求后发送到账户持有人的电子邮箱。
 
-6、（可选） 如果您想在提交主密码之前通过 [HIBP](https://haveibeenpwned.com/) 检查您的主密码，请选中**检查密码的已知数据泄露情况**以运行[数据泄露报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-individual-vaults-only)。这会将您的主密码的哈希值将发送到 HIBP，并将其与存储的暴露哈希值进行比较。Bitwarden 绝不会暴露您的主密码本身。
+6、（可选） 如果您想在提交主密码之前通过 [HIBP](https://haveibeenpwned.com/) 检查您的主密码，请选中**检查密码的已知数据泄露情况**以运行[数据泄露报告](../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-individual-vaults-only)。这会将您的主密码的哈希值将发送到 HIBP，并将其与存储的暴露哈希值进行比较。Bitwarden 绝不会暴露您的主密码本身。
 
 {% hint style="danger" %}
-除非您完全了解其后果和所需的后续步骤，否则请不要选中**轮换账户加密密钥**复选框。[了解更多](../../security/encryption/encryption-key-rotation.md)。
+除非您完全了解其后果和所需的后续步骤，否则请不要选中**轮换账户加密密钥**复选框。[了解更多](../security/encryption/encryption-key-rotation.md)。
 {% endhint %}
 
 7、选择**更改主密码**按钮。
@@ -64,7 +64,7 @@
 
 5、（可选） **输入主密码提示** ，它用于帮助您回忆密码。提示会在收到请求后发送到账户持有人的电子邮箱。
 
-6、（可选） 如果您想在提交主密码之前通过 [HIBP](https://haveibeenpwned.com/) 检查您的主密码，请选中**检查密码的已知数据泄露情况**以运行[数据泄露报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-individual-vaults-only)。这会将您的主密码的哈希值将发送到 HIBP，并将其与存储的暴露哈希值进行比较。Bitwarden 绝不会暴露您的主密码本身。
+6、（可选） 如果您想在提交主密码之前通过 [HIBP](https://haveibeenpwned.com/) 检查您的主密码，请选中**检查密码的已知数据泄露情况**以运行[数据泄露报告](../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-individual-vaults-only)。这会将您的主密码的哈希值将发送到 HIBP，并将其与存储的暴露哈希值进行比较。Bitwarden 绝不会暴露您的主密码本身。
 
 7、选择**更改主密码**按钮。
 
@@ -84,7 +84,7 @@
 
 4、（可选） **输入主密码提示** ，它用于帮助您回忆密码。提示会在收到请求后发送到账户持有人的电子邮箱。
 
-5、（可选） 如果您想在提交主密码之前通过 [HIBP](https://haveibeenpwned.com/) 检查您的主密码，请选中**检查密码的已知数据泄露情况**以运行[数据泄露报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-individual-vaults-only)。这会将您的主密码的哈希值将发送到 HIBP，并将其与存储的暴露哈希值进行比较。Bitwarden 绝不会暴露您的主密码本身。
+5、（可选） 如果您想在提交主密码之前通过 [HIBP](https://haveibeenpwned.com/) 检查您的主密码，请选中**检查密码的已知数据泄露情况**以运行[数据泄露报告](../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-individual-vaults-only)。这会将您的主密码的哈希值将发送到 HIBP，并将其与存储的暴露哈希值进行比较。Bitwarden 绝不会暴露您的主密码本身。
 
 6、选择**更改主密码**按钮。
 
@@ -100,16 +100,16 @@
 
 您的主密码是设置 Bitwarden 账户的必要条件。根据您或您的组织与 Bitwarden 交互的方式，可以使用其他选项来访问您的 Bitwarden 账户。
 
-| 方式                                                                                                                | 描述                                                                  |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [使用设备登录](more-log-in-options/log-in-with-device.md)                                                               | 设备登录是一种利用受信任的辅助设备向 Bitwarden 发送身份验证请求的选项。                           |
-| [使用 SSO 登录](../../admin-console/login-with-sso/about-sso.md)                                                      | Bitwarden 用户如果属于使用单点登录 (SSO) 的组织，可以利用现有的身份提供程序进行登录，该提供程序将对用户进行身份验证。 |
-| [使用通行密钥登录](more-log-in-options/log-in-with-passkeys.md)                                                           | 通行密钥可用作使用主密码和电子邮件登录 Bitwarden 的替代方式，并且某些通行密钥还可用于密码库加密和解密。           |
-| [使用生物识别解锁](more-unlock-options/unlocking-with-biometrics.md)和[使用 PIN 码解锁](more-unlock-options/unlock-with-pin.md) | 生物识别或 PIN 解锁并不是一种替代登录方法，但是，它允许您使用系统生物识别或 PIN 而不是主密码来访问已锁定的账户。       |
+| 方式                                                                                                                                                                  | 描述                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [使用设备登录](log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)                                                                                        | 设备登录是一种利用受信任的辅助设备向 Bitwarden 发送身份验证请求的选项。                           |
+| [使用 SSO 登录](../admin-console/login-with-sso/about-sso.md)                                                                                                           | Bitwarden 用户如果属于使用单点登录 (SSO) 的组织，可以利用现有的身份提供程序进行登录，该提供程序将对用户进行身份验证。 |
+| [使用通行密钥登录](log-in-and-unlock/more-log-in-unlock-options/log-in-with-passkeys.md)                                                                                    | 通行密钥可用作使用主密码和电子邮件登录 Bitwarden 的替代方式，并且某些通行密钥还可用于密码库加密和解密。           |
+| [使用生物识别解锁](log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)和[使用 PIN 码解锁](log-in-and-unlock/more-log-in-unlock-options/unlock-with-pin.md) | 生物识别或 PIN 解锁并不是一种替代登录方法，但是，它允许您使用系统生物识别或 PIN 而不是主密码来访问已锁定的账户。       |
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 现在您已经创建了**易记**且**强大**的主密码，我们建议：
 
-* [通过两步登录进一步保护您的密码库](../two-step-login/setup-two-step-login/two-step-login-methods.md)
-* [启用紧急访问](more-log-in-options/emergency-access.md)（需要高级版）
+* [通过两步登录进一步保护您的密码库](two-step-login/setup-two-step-login/two-step-login-methods.md)
+* [启用紧急访问](emergency-access/about-emergency-access.md)（需要高级版）

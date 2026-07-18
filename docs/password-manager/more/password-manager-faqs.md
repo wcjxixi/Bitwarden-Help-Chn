@@ -10,11 +10,11 @@
 
 ### 问：如果我忘记了主密码应该该怎么办？ <a href="#q-what-do-i-do-if-i-forgot-my-master-password" id="q-what-do-i-do-if-i-forgot-my-master-password"></a>
 
-**答：**&#x4F5C;为一个零知识解决方案，Bitwarden 及其系统无法获知您的主密码，也无法找回或重置您的主密码。如果您已经丢失了主密码，很遗憾，我们的团队无法帮您恢复账户。要了解后续操作步骤，或如何主动保护自己免受此类情况的影响，请参阅[您的主密码](../../account/log-in-and-unlock/master-password.md)这篇文章。
+**答：**&#x4F5C;为一个零知识解决方案，Bitwarden 及其系统无法获知您的主密码，也无法找回或重置您的主密码。如果您已经丢失了主密码，很遗憾，我们的团队无法帮您恢复账户。要了解后续操作步骤，或如何主动保护自己免受此类情况的影响，请参阅[您的主密码](../../account/master-password.md)这篇文章。
 
 ### 问：在紧急情况下，是否有办法让别人访问我的密码库项目？ <a href="#q-is-there-a-way-for-someone-to-access-my-vault-items-in-case-of-emergency" id="q-is-there-a-way-for-someone-to-access-my-vault-items-in-case-of-emergency"></a>
 
-**答：**&#x6709;的！拥有高级订阅的用户可以主动设置受信任的紧急联系人，以便在紧急情况下访问您的密码库。更多信息，请参阅[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)。
+**答：**&#x6709;的！拥有高级订阅的用户可以主动设置受信任的紧急联系人，以便在紧急情况下访问您的密码库。更多信息，请参阅[紧急访问](../../account/emergency-access/about-emergency-access.md)。
 
 ### 问：如何更改我的主密码提示？ <a href="#q-how-do-i-change-my-master-password-hint" id="q-how-do-i-change-my-master-password-hint"></a>
 

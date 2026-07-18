@@ -21,10 +21,10 @@
 担心忘记您的主密码吗？这里有一些建议：
 
 * **设置主密码提示**。如果您需要提醒，可以在登录屏界面请求主密码提示电子邮件。确保使用只有您自己能理解的提示。
-* **指定一个**[**可信紧急联系人**](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)。具有高级访问权限的用户可以在紧急情况下将密码库的访问权限授予朋友或家人。
+* **指定一个**[**可信紧急联系人**](../../account/emergency-access/about-emergency-access.md)。具有高级访问权限的用户可以在紧急情况下将密码库的访问权限授予朋友或家人。
 {% endhint %}
 
-了解[如何更改您的主密码](../../account/log-in-and-unlock/master-password.md#change-your-master-password)，或者如果您[忘记了主密码](../../account/log-in-and-unlock/i-forgot-my-master-password.md)该怎么做。
+了解[如何更改您的主密码](../../account/master-password.md#change-your-master-password)，或者如果您[忘记了主密码](../../account/i-forgot-my-master-password.md)该怎么做。
 
 ## 两步登录 <a href="#two-step-login" id="two-step-login"></a>
 
@@ -53,7 +53,7 @@ Bitwarden 提供多种免费的两步登录方式，包括：
 
 ## 使用设备登录 <a href="#log-in-with-device" id="log-in-with-device"></a>
 
-您知道吗？您可以使用辅助设备而不是您的主密码登录 Bitwarden 网页 App。设备登录是一种无密码的身份验证方法，通过向您当前登录的任何特定设备发送身份验证请求以供批准，而无需输入您的主密码。[了解更多](../../account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
+您知道吗？您可以使用辅助设备而不是您的主密码登录 Bitwarden 网页 App。设备登录是一种无密码的身份验证方法，通过向您当前登录的任何特定设备发送身份验证请求以供批准，而无需输入您的主密码。[了解更多](../../account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)。
 
 ## 单点登录 <a href="#single-sign-on" id="single-sign-on"></a>
 

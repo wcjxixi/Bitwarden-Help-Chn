@@ -11,7 +11,7 @@
 适用于成员的赞助家庭版组织：
 
 * 要求成员拥有或创建一个独立于其工作账户的 Bitwarden 账户，以确保个人凭据和工作凭据的分离。
-* 为所有 6 位用户提供所有高级 Bitwarden 功能，包括[高级两步登录方式](../../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)、[加密文件附件](../../../password-manager/your-vault/vault-items/file-attachments.md)、[紧急访问](../../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)等。
+* 为所有 6 位用户提供所有高级 Bitwarden 功能，包括[高级两步登录方式](../../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)、[加密文件附件](../../../password-manager/your-vault/vault-items/file-attachments.md)、[紧急访问](../../../account/emergency-access/about-emergency-access.md)等。
 * 组织不想提供此功能时，可以使用[策略](../../oversight-visibility/enterprise-policies.md#remove-free-bitwarden-families-sponsorship)将其停用。
 
 {% hint style="success" %}

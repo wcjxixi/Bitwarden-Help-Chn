@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/two-step-recovery-code/)
 {% endhint %}
 
-当您激活任何[两步登录方式](setup-two-step-login/two-step-login-methods.md)时，Bitwarden 会提供一个唯一的恢复代码。如果您[丢失了身份验证设备](lost-two-step-device.md)，请使用此代码断开所有两步登录方式并重新获得对您账户的访问权限。如果您同时丢失了恢复代码和两步设备（例如带有验证器 App 的手机或已链接的电子邮箱收件箱），您可能会被锁定在您的密码库之外。
+当您激活任何[两步登录方式](setup-two-step-login/two-step-login-methods.md)时，Bitwarden 会提供一个唯一的恢复代码。如果您[丢失了身份验证设备](../lost-two-step-device.md)，请使用此代码断开所有两步登录方式并重新获得对您账户的访问权限。如果您同时丢失了恢复代码和两步设备（例如带有验证器 App 的手机或已链接的电子邮箱收件箱），您可能会被锁定在您的密码库之外。
 
 ## 保存您的恢复代码 <a href="#save-your-recovery-code" id="save-your-recovery-code"></a>
 

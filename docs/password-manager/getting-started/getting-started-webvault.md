@@ -144,7 +144,7 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 * 高级两步登录选项，例如 [Duo](../../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md) 和 [YubiKey 安全钥匙](../../account/two-step-login/setup-two-step-login/two-step-login-via-yubikey.md)
 * [加密文件附件](../your-vault/vault-items/file-attachments.md)的存储空间
 * 集成的[临时一次性密码（TOTP）身份验证器](../your-vault/security-tools/totp.md)
-* 通过已信任的紧急联系人[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)您的密码库
+* 通过已信任的紧急联系人[紧急访问](../../account/emergency-access/about-emergency-access.md)您的密码库
 * 报告密码和安全卫生的[密码库健康报告](../your-vault/security-tools/vault-health-reports.md)
 
 要开始高级版订阅，请从**密码库**视图中选择**升级您的方案**按钮！
