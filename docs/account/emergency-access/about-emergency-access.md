@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/emergency-access/)
 {% endhint %}
 
-紧急访问让您能够为意外情况做好准备，通过指定信任的紧急联系人，在必要时可申请访问您的 Bitwarden 密码库。信任的紧急联系人可以被授予查看或接管权限，从而控制他们在需要介入时可以执行的操作：
+紧急访问让您能够为意外情况做好准备，通过指定受信任的紧急联系人，在必要时可申请访问您的 Bitwarden 密码库。受信任的紧急联系人可以被授予查看或接管权限，从而控制他们在需要介入时可以执行的操作：
 
 * **查看**：当紧急访问请求被批准后，此用户将获得对您个人密码库中所有项目，包括登录项目的密码和附件的查看/读取权限。
 * **接管**：当紧急访问请求被批准后，此用户必须创建一个主密码，以获得对您密码库的永久读取/写入权限。这将**替换**您之前的主密码，并移除之前设置的任何[两步登录方式](../two-step-login/setup-two-step-login/two-step-login-methods.md)。
@@ -13,8 +13,8 @@
 
 授予他人账户紧急访问权限需完成以下几个步骤：
 
-1. 账户持有人在紧急情况发生之前，为其账户[添加一位信任的联系人](add-and-manage-trusted-emergency-contacts.md)。
-2. 当需要时，已信任的联系人[请求访问](request-and-grant-emergency-access.md#get-emergency-access-to-an-account)该账户。
+1. 账户持有人在紧急情况发生之前，为其账户[添加一位受信任的联系人](add-and-manage-trusted-emergency-contacts.md)。
+2. 当需要时，受信任的联系人[请求访问](request-and-grant-emergency-access.md#id-1.-shou-xin-ren-de-jin-ji-lian-xi-ren-qing-qiu-fang-wen-zhang-hu)该账户。
 3. 账户持有人[批准此请求](request-and-grant-emergency-access.md#approve-or-deny-an-emergency-access-request)或等待时间到期后生效。
 4. 受信任的联系人访问此账户。
 5. （可选）账户持有人撤销受信任的联系人对其账户的访问权限。

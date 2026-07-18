@@ -1,20 +1,20 @@
-# =添加 & 管理已信任的紧急联系人
+# =添加 & 管理受信任的紧急联系人
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/add-and-manage-trusted-emergency-contacts/)
 {% endhint %}
 
-## 添加可信任的紧急联系人 <a href="#add-trusted-emergency-contacts" id="add-trusted-emergency-contacts"></a>
+## 添加受信任的紧急联系人 <a href="#add-trusted-emergency-contacts" id="add-trusted-emergency-contacts"></a>
 
-## 已信任的紧急联系人设置 <a href="#trusted-emergency-contact-settings" id="trusted-emergency-contact-settings"></a>
+## 受信任的紧急联系人设置 <a href="#trusted-emergency-contact-settings" id="trusted-emergency-contact-settings"></a>
 
 ### 用户访问权限 <a href="#user-access" id="user-access"></a>
 
 ### 等待时间 <a href="#wait-time" id="wait-time"></a>
 
-## 更改已信任的紧急联系人设置 <a href="#change-trusted-emergency-contact-settings" id="change-trusted-emergency-contact-settings"></a>
+## 更改受信任的紧急联系人设置 <a href="#change-trusted-emergency-contact-settings" id="change-trusted-emergency-contact-settings"></a>
 
-## 移除已信任的紧急联系人 <a href="#remove-a-trusted-emergency-contact" id="remove-a-trusted-emergency-contact"></a>
+## 移除受信任的紧急联系人 <a href="#remove-a-trusted-emergency-contact" id="remove-a-trusted-emergency-contact"></a>
 
 ## 常见问题 <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
 
