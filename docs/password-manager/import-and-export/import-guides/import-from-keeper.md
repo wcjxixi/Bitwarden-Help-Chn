@@ -1,12 +1,31 @@
-# 从 Keeper 导入
+# =从 Keeper 导入
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/import-from-keeper/)
 {% endhint %}
 
-使用这篇文章帮助您从 Keeper 导出数据并导入到 Bitwarden。Bitwarden 支持导入以 `.csv` 或 `.json` 文件形式导出的 Keeper 数据。
+使用以下两种方法之一，快速将数据从 Keeper Password Manager 传输到 Bitwarden：
 
-## 从 Keeper 导出 <a href="#export-from-keeper" id="export-from-keeper"></a>
+* 使用 Bitwarden 浏览器扩展或桌面 App，无需下载文件即可直接导入数据。
+* 使用任意 Bitwarden App，从您的 Keeper 账户下载导出文件然后将其导入 Bitwarden。
+
+## 直接从 Keeper 导入 <a href="#import-directly-from-keeper" id="import-directly-from-keeper"></a>
+
+如需将 Keeper 数据直接导入 Bitwarden，无需下载导出文件并手动传输数据：
+
+1、在 Bitwarden 桌面应用或浏览器扩展中，打开导入页面：
+
+2、
+
+3、
+
+4、
+
+5、
+
+6、
+
+## 使用导出的文件导入 <a href="#use-an-exported-file-for-import" id="use-an-exported-file-for-import"></a>
 
 要从 Keeper 网页 App 导出数据：
 
@@ -20,11 +39,11 @@
 
 4、选择**导出**。
 
-5、输入您的主密码。
+5、输入您的 Keeper 主密码。
 
 6、选择**立即导出**。
 
-## 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
+## 导入到 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
 数据可以从网页 App、浏览器扩展、桌面 App 以及 CLI 导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
 
@@ -103,7 +122,7 @@
 8、数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
 {% endtab %}
 
-{% tab title="移动端" %}
+{% tab title="=移动端" %}
 在大多数情况下，在移动设备上导入数据需要您通过在移动浏览器中打开的网页 App 执行此操作。您可以通过导航到**设置** → **密码库** → **导入项目**，以从 Password Manager 快速访问此位置。
 
 在 iOS 26 上，Bitwarden 支持使用 [Fido 凭证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications) 导入，以直接轻松地将密码、通行密钥、信用卡和个人身份信息迁移到您的密码库中。要导出数据的 App 也必须支持 CXP，具体操作步骤因 App 而异。
