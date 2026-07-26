@@ -40,6 +40,13 @@ docker exec -i bitwarden-mssql /backup-db.sh
 [Bitwarden Lite](deploy-and-configure/docker/lite-deployment.md) 不会进行每日备份。使用 Lite 版本，您需要自行管理备份流程。
 {% endhint %}
 
+默认情况下，创建备份文件时名称中包含备份文件的 UTC 时间。如果您希望使用本地时间，请将以下行添加到 `./bwdata/env/mssql.override.env`，然后重启服务器。
+
+```systemd
+# 在以下示例中，请将 America/New_York 替换为您的 IANA 时区名称：
+BACKUP_TIMEZONE=America/New_York
+```
+
 ### 恢复数据库备份 <a href="#restore-a-database-backup" id="restore-a-database-backup"></a>
 
 如果发生数据丢失，您可以使用 `./bwdata/mssql/backups` 来恢复夜间备份。请完成以下步骤来恢复夜间备份：

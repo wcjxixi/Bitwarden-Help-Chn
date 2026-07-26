@@ -98,7 +98,7 @@
     * [导入指南](docs/password-manager/import-and-export/import-guides/README.md)
       * [从 LastPass 导入](docs/password-manager/import-and-export/import-guides/import-data-from-lastpass.md)
       * [从 1Password 导入](docs/password-manager/import-and-export/import-guides/import-data-from-1password.md)
-      * [=从 Keeper 导入](docs/password-manager/import-and-export/import-guides/import-from-keeper.md)
+      * [从 Keeper 导入](docs/password-manager/import-and-export/import-guides/import-from-keeper.md)
       * [从 Dashlane 导入](docs/password-manager/import-and-export/import-guides/import-data-from-dashlane.md)
       * [从 Chrome、Edge & Chromium 浏览器导入](docs/password-manager/import-and-export/import-guides/import-data-from-chrome.md)
       * [从 macOS & Safari 导入](docs/password-manager/import-and-export/import-guides/import-data-from-macos-and-safari.md)

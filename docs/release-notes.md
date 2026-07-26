@@ -46,7 +46,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 * **Android 支持 CXP**：使用 Android 10+，您可以在 Bitwarden 与任何支持 [FIDO 凭据交换协议](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)的 Android App 之间[直接导入](password-manager/import-and-export/import-data.md#yi-dong-duan)或[直接导出](password-manager/import-and-export/export-vault-data.md#zhuo-mian-duan)数据。
 * **★扩展安装过时提示将 Bitwarden 设置为默认**：安装浏览器扩展时，它现在将提示您[将 Bitwarden 设置为浏览器的默认密码管理器](password-manager/autofill/troubleshoot-autofill/disable-a-browsers-built-in-password-manager.md)。
 * **★Keeper 直接导入器**：使用[新的直接导入选项](password-manager/import-and-export/import-guides/import-from-keeper.md#import-directly-from-keeper)，无需下载导出文件，即可直接从 Keeper Password Manager 传输数据，。
-* **KeePass KDBX 导入器**：您现在可以[将受密码或密钥文件加密保护的 KeePass Password Manager  KDBX 文件直接导入 Bitwarden](password-manager/import-and-export/import-guides/import-from-keeper.md)。此前，KeePass 数据只能通过未加密的 CSV 或 XML 文件导入。
+* **KeePass KDBX 导入器**：您现在可以[将受密码或密钥文件加密保护的 KeePass Password Manager  KDBX 文件直接导入 Bitwarden](password-manager/import-and-export/import-guides/import-from-keeper.md)。此前，KeePass 数据只能使用未加密的 CSV 或 XML 文件导入。
 * **SSH 代理更新**：此次发布包含对 SSH 代理的可靠性和性能的更新。在以下文章中了解有关 SSH 代理的更多信息：
   * [关于 SSH](password-manager/developer-tools/ssh/about-ssh.md)：SSH 密钥的概念概述以及 SSH 代理的工作原理。
   * [SSH 代理](password-manager/developer-tools/ssh/ssh-agent.md)：在不同场景中设置和使用 SSH 代理的分步指南。
@@ -55,12 +55,12 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Admin Console
 
-* **★密码库横幅企业策略**：管理员现在可以在成员的密码库顶部显示自定义横幅，例如服务公告或公司提醒事项。
-* **★管理 Send 策略**：组织现在可以使用管理控制台中的**管理 Send** 策略来控制所有与 Send 相关的功能。该新策略取代了此前一系列独立的 Send 策略。
+* **★密码库横幅企业策略**：管理员现在可以在成员的密码库顶部显示[自定义横幅](admin-console/oversight-visibility/enterprise-policies.md#vault-banner)，例如服务公告或公司提醒事项。
+* **★管理 Send 策略**：组织现在可以使用管理控制台中的**管理 Send** 策略来控制所有与 Send 相关的功能。此[新的策略](admin-console/oversight-visibility/enterprise-policies.md#manage-send)取代了此前一系列独立的 Send 策略。
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 
-* **更改数据库备份文件名为本地时间**：在 `mssql.override.env` 文件中添加了一个变量，以将备份文件名中的时间戳表示为本地时间（而不是默认的 UTC）。
+* **更改数据库备份文件名为本地时间**：在 `mssql.override.env` 文件中添加了一个变量，以将备份文件名中的时间戳表示为[本地时间（而不是默认的 UTC）](self-hosting/backup-server-data.md#docker)。
 
 ## 2026.6.2
 
