@@ -72,7 +72,7 @@
 
 ### 问：可以关闭 Bitwarden 的自动更新吗？ <a href="#q-can-i-turn-off-automatic-updates-for-bitwarden" id="q-can-i-turn-off-automatic-updates-for-bitwarden"></a>
 
-**答：**&#x53EF;以！在 Windows 上，您可以将环境变量 `ELECTRON_NO_UPDATER=1` 添加到您的桌面 App 模板中，以使自动更新进程在您的终端用户工作站上失效和阻止尝试。
+**答：**&#x53EF;以！在 Windows 上，您可以将环境变量 `ELECTRON_NO_UPDATER=1` 添加到您的桌面 App 模板中，以阻止自动更新进程在您的终端用户工作站上尝试运行并失败。
 
 {% hint style="danger" %}
 与任何软件一样，运行旧版本可能会带来安全风险。

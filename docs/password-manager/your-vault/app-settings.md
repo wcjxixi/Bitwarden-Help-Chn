@@ -220,9 +220,7 @@
 在 Linux 上，**系统托盘**是位于屏幕右下角的一排快捷方式。**Dash** 是一排常用的和正在运行的 App，通常位于屏幕左侧。
 {% endhint %}
 
-* **显示托盘图标**：始终在系统托盘中显示 Bitwarden 桌面 App 图标。
-* **关闭到托盘图标**：关闭窗口时，在系统托盘显示图标而不是无任何显示。
-* **启动到托盘图标**：Bitwarden 桌面 App 首次启动时，在系统托盘显示图标而不是打开窗口。
+* **保持 Bitwarden 在后台运行**：当您关闭窗口时，可以从托盘访问 Bitwarden。建议在使用 SSH 代理或浏览器集成时使用。
 * **登录时自动启动**：登录到您的计算机时，自动启动 Bitwarden 桌面 App。
 * **允许浏览器集成**：(非 Safari) 允许 Bitwarden 浏览器扩展与[桌面 App 集成](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-browser-extension)以进行生物识别解锁。在 Safari 中，无需激活此选项即可使用集成功能。
   * **要求浏览器集成验证**：在 Bitwarden 桌面 App 和浏览器扩展之间建立集成时，要求确认[指纹短语](../../security/encryption/account-fingerprint-phrase.md)。
@@ -243,12 +241,8 @@
 在 macOS 上，**菜单栏**是位于屏幕顶部的一排菜单。**Dock** 是一排常用的和正在运行的 App，可通过将光标移动到屏幕边缘来显示。
 {% endhint %}
 
-* **显示菜单栏图标**：始终在菜单栏中显示 Bitwarden 桌面 App 图标。
-* **最小化到菜单栏**：当最小化窗口时，在菜单栏显示一个图标，而不是在 Dock 中。
-* **关闭到菜单栏**：当关闭窗口时，在菜单栏显示一个图标，而不是在 Dock 的任何地方都不显示。
-* **启动到菜单栏**：当 Bitwarden 桌面 App 首次启动时，在菜单栏显示一个图标，而不是打开窗口。
+* **保持 Bitwarden 在后台运行**：当您关闭窗口时，可以从托盘访问 Bitwarden。建议在使用 SSH 代理或浏览器集成时使用。
 * **登录时自动启动**：当你登录到计算机时，自动启动 Bitwarden 桌面 App。
-* **始终在 Dock 中显示**：始终在 Dock 中显示 Bitwarden 桌面 App 无论活动菜单栏选项如何。
 * **允许浏览器集成**：(非 Safari) 允许 Bitwarden 浏览器扩展与[桌面 App 集成](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-browser-extension)以进行生物识别解锁。在 Safari 中，无需激活此选项即可使用集成功能。
   * **要求浏览器集成验证**：在 Bitwarden 桌面 App 和浏览器扩展之间建立集成时，要求确认[指纹短语](../../security/encryption/account-fingerprint-phrase.md)。
 * **使用硬件加速**：如果您遇到图形或性能问题，请关闭此选项。
@@ -270,10 +264,7 @@
 在 Windows 上，**系统托盘**是位于屏幕右下角的一排快捷方式。**任务栏**是一排常用的和正在运行的 App，通常位于屏幕底部中间。
 {% endhint %}
 
-* **显示托盘图标**：始终在系统托盘中显示 Bitwarden 桌面 App 图标。
-* **最小化到托盘图标**：当最小化窗口时，在系统托盘显示图标而不是任务栏。
-* **关闭到托盘图标**：当关闭窗口时，在系统托盘显示图标而不是无任何显示。
-* **启动到托盘图标**：当 Bitwarden 桌面 App 首次启动时，在系统托盘显示图标而不是打开窗口。
+* **保持 Bitwarden 在后台运行**：当您关闭窗口时，可以从托盘访问 Bitwarden。建议在使用 SSH 代理或浏览器集成时使用。
 * **登录时自动启动**：当你登录到计算机时，自动启动 Bitwarden 桌面 App。
 * **允许浏览器集成**：(非 Safari) 允许 Bitwarden 浏览器扩展与[桌面 App 集成](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-browser-extension)以进行生物识别解锁。在 Safari 中，无需激活此选项即可使用集成功能。
   * **要求浏览器集成验证**：在 Bitwarden 桌面 App 和浏览器扩展之间建立集成时，要求确认[指纹短语](../../security/encryption/account-fingerprint-phrase.md)。

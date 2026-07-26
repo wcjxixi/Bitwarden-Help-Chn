@@ -1,4 +1,4 @@
-# 企业策略
+# =企业策略
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/policies/)
@@ -75,13 +75,18 @@
 
 成员可以**接受**或**拒绝**该提示。接受将把所有个人拥有的项目转移到组织所有权，拒绝将立即撤销该成员对组织的访问权限，以便他们有时间筛选应转移和不应转移的项目。任一场景都会[记录事件](event-logging/event-logs.md#organization-events)。
 
-### Send 选项 <a href="#send-options" id="send-options"></a>
+### 管理 Send <a href="#manage-send" id="manage-send"></a>
 
-选择**启用**和选择**创建或编辑 Send 时，始终向接收者显示成员的电子邮件地址**选项，以对用户禁用[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，从而为接收 Send 的人提供透明度。所有者和管理员不受此策略的约束。
+启用**管理 Send** 以控制成员使用 Send 的方式。默认情况下**管理 Send** 处于活动状态。切换**管理 Send** 为关闭将阻止成员创建或编辑 Send。如果之前创建了 Send，他们仍然可以在除网页 App 之外的所有 Bitwarden 客户端的 **Send** 页面查看和删除这些 Send。受此策略约束的成员仍然可以打开[接收到的 Send](../../password-manager/bitwarden-send/receive-a-send.md)。所有者和管理员不受此策略的约束。
 
-### 禁用 Send <a href="#remove-send" id="remove-send"></a>
+使用管理 Send，组织管理员可以管理成员使用 Send 的方式，包括：
 
-**禁用 Send** 将阻止成员创建或编辑 Send。如果之前创建了 Send，他们仍然可以在除网页 App 之外的所有 Bitwarden 客户端的 **Send** 页面查看和删除这些 Send。受此策略约束的成员仍然可以打开[接收到的 Send](../../password-manager/bitwarden-send/receive-a-send.md)。所有者和管理员不受此策略的约束。
+* **Send 类型**：确定用户可以创建的 Send 类型，例如文本和文件。
+* **访问选项**：确定组织成员发送发送后，发送收件人如何访问发送。选项包括任意、电子邮件验证和会员设置的密码。
+* **强制删除日期**：使用此策略可以为成员创建的 Send 强制执行预定的 [Send 生命周期](../../password-manager/bitwarden-send/send-lifespan.md)。
+* **始终向接收者显示成员的电子邮件地址**：启用此选项可以禁用用户的[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，从而为接收 Send 的人提供透明度。所有者和管理员不受此策略的约束。
+
+
 
 ### 禁用导出 <a href="#remove-export" id="remove-export"></a>
 
@@ -278,3 +283,5 @@ SSO 自动登录将基于 Bitwarden 浏览器扩展上的当前活动账户自�
 2. [联系我们](https://bitwarden.com/contact/)请求将**自动用户确认**策略添加到您的企业策略设置中。
 3. 前往**设置** → **策略**，然后启用现在已经可用的**自动用户确认**策略。
 4. 至少需要一位所有者、管理员或相关的自定义角色成员必须[激活自动确认设置](../manage-members/automatic-confirmation.md#for-each-administrator)。
+
+### 密码库横幅 <a href="#vault-banner" id="vault-banner"></a>
