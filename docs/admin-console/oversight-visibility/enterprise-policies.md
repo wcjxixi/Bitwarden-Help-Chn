@@ -1,4 +1,4 @@
-# =企业策略
+# 企业策略
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/policies/)
@@ -6,13 +6,13 @@
 
 企业策略允许企业版组织为所有成员强制实施安全规则和默认设置，例如强制要求使用两步登录。
 
-{% hint style="danger" %}
-我们强烈建议在邀请用户加入您的组织之前先设置好企业策略。某些策略会在启用时撤销不符合要求的用户，而某些策略无法追溯性地执行。
-{% endhint %}
-
 ## 设置企业策略 <a href="#setting-enterprise-policies" id="setting-enterprise-policies"></a>
 
-组织所有者和管理员可以应用企业策略。要更新策略：
+{% hint style="danger" %}
+我们强烈建议在邀请用户加入您的组织之前先设置好企业策略。某些策略会在启用时[撤销](../manage-members/revoke-remove/temporarily-revoke-access.md)不符合要求的用户，而某些策略无法追溯性地执行。
+{% endhint %}
+
+组织所有者和管理员可以配置企业策略。企业策略适用于当前组织成员和[已接受](../manage-members/user-management.md#accept)组织邀请的成员。要更新策略：
 
 1、使用 Bitwarden 网页 App，打开 Admin Console。
 
@@ -86,7 +86,9 @@
 * **强制删除日期**：使用此策略可以为成员创建的 Send 强制执行预定的 [Send 生命周期](../../password-manager/bitwarden-send/send-lifespan.md)。
 * **始终向接收者显示成员的电子邮件地址**：启用此选项可以禁用用户的[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，从而为接收 Send 的人提供透明度。所有者和管理员不受此策略的约束。
 
-
+{% hint style="warning" %}
+启用**管理控制**目前不会追溯应用对现有 Send 的更改。
+{% endhint %}
 
 ### 禁用导出 <a href="#remove-export" id="remove-export"></a>
 
@@ -285,3 +287,25 @@ SSO 自动登录将基于 Bitwarden 浏览器扩展上的当前活动账户自�
 4. 至少需要一位所有者、管理员或相关的自定义角色成员必须[激活自动确认设置](../manage-members/automatic-confirmation.md#for-each-administrator)。
 
 ### 密码库横幅 <a href="#vault-banner" id="vault-banner"></a>
+
+启用**密码库横幅**策略以向组织成员分享重要信息，例如系统公告或安全提醒。该横幅将显示在网页 App、浏览器扩展和桌面 App 的密码库顶部：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7y6HtjE0nXjfQc11xR1Lf4/659399cb76287cbd359313bdc96cc9b7/b31491d1-7e1d-4b0b-945d-cf5a05ef80a2.png?w=1117&#x26;fm=avif" alt=""><figcaption><p>密码库横幅</p></figcaption></figure></div>
+
+要创建横幅：
+
+1、选择**密码库横幅**策略名称。
+
+2、勾选**启用横幅**。
+
+3、在**描述**中输入您的消息，最多 250 个字符。（目前不支持超链接。）
+
+4、（可选）根据需要自定义其他设置：
+
+* 输入**标题**。
+* 输入**按钮**标签。这将要求成员选择此按钮来关闭横幅，而不是使用 **✘关闭图标**。当按钮被选中时，会[记录一个事件](event-logging/event-logs.md#organization-events)。
+* 勾选**每次登录后显示**，以便成员每次登录时都显示此横幅，即使他们之前已将其关闭。
+
+5、选择**保存**。
+
+如果您稍后编辑此横幅，即使成员之前已将其关闭，该横幅也会再次显示给他们。

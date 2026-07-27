@@ -1,10 +1,10 @@
-# SSH 代理
+# =SSH 代理
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/ssh-agent/)
 {% endhint %}
 
-Bitwarden SSH 代理可以安全地加密和存储您的 SSH（安全 Shell）密钥，以用于以下目的：
+Bitwarden Password Manager 桌面 App 可以充当 SSH 代理来安全地加密和存储您的 SSH（安全 Shell）密钥，以用于以下目的：
 
 * 对服务进行身份验证
 * 签署 Git 提交
@@ -13,7 +13,7 @@ Bitwarden SSH 代理可以安全地加密和存储您的 SSH（安全 Shell）�
 Bitwarden SSH 代理将您的密钥组织并保护在一个安全的位置。SSH 密钥可以通过桌面 App、网页 App、浏览器扩展和移动 App 访问。SSH 密钥可以通过桌面 App、网页 App 和浏览器扩展生成。
 
 {% hint style="info" %}
-SSH 代理需要 2025.1.2 或更新版本。
+~~SSH 代理需要 2025.1.2 或更新版本。~~
 
 ~~**macOS**：macOS 商店构建版本目前暂不支持 SSH 代理，~~[~~.dmg 下载~~](https://bitwarden.com/download/)~~可用于获得 SSH 代理支持。~~
 
