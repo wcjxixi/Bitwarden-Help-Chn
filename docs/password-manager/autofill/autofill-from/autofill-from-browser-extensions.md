@@ -36,51 +36,43 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 
 要查找项目，请选择 **☷筛选器图标**以打开并应用筛选器到**自动填充建议**和**所有项目**结果中：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12UsFuA2sxbUCBMIczJsxv/689221013fac56ddb555ed9dabddbdc9/screenshot_6.png?w=584&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展的筛选和建议</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12UsFuA2sxbUCBMIczJsxv/6376ae661b966e4698375c2af2c27c0d/Browser_extension_filters.png?w=480&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展的筛选</p></figcaption></figure></div>
 
-### 填充按钮 <a href="#fill-button" id="fill-button"></a>
+### 从自动填充建议中点击项目 <a href="#click-item-from-autofill-suggestions" id="click-item-from-autofill-suggestions"></a>
 
-要自动填充登录：
+要自动填充出现在顶部自动填充建议区域中的项目：
 
 1. 在网站的登录页面上，打开 Bitwarden 浏览器扩展。
 2. 转到**密码库**选项卡。
-3. 选择登录旁边的**填充**以输入。它可能位于**自动填充建议**部分的顶部：
+3. 如果该项目列在**自动填充建议**部分，点击项目的任意位置即可自动填充您的凭据：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1pamjhdWn7obh8UBxXcIPF/1841242fa5299a780d53f3ae70e546b3/screenshot_5.png?w=395&#x26;fm=avif" alt=""><figcaption><p>通过浏览器扩展自动填充</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3tnagVMjtTufvRCrih3ctQ/9277f05114868cf0c37c069c565f2f95/Click_item_to_autofill.png?w=481&#x26;fm=avif" alt=""><figcaption><p>点击项目以自动填充</p></figcaption></figure></div>
 
-选择**填充**按钮会将凭据输入到已检测到的输入字段中。如果网页或服务包含多个具有相关 URI 的项目，Bitwarden 将始终自动填充上次使用的登录信息。
+这将把您保存的详细信息填入到检测到的输入字段中。如果网页或服务包含多个具有相关 URI 的项目，Bitwarden 将始终自动填充上次使用的登录信息。
 
 {% hint style="info" %}
 如果目标字段位于[不受信任的 iframe](autofill-from-browser-extensions.md#autofill-in-iframes) 中，或者当前站点使用 HTTP（[项目已保存 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 要求使用 HTTPS）您可能会在自动填充之前收到警告。
 {% endhint %}
 
+若要在**自动填充建议**中打开某个条目，请选择 **≡**&#x83DC;单图标 → **查看**。
+
 ### 复制凭据 <a href="#copy-credentials" id="copy-credentials"></a>
 
 您也可以选择项目旁边的 **❐复制图标**。将出现一个菜单，您可以在其中选择**复制用户名**或**复制密码**：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7y8WE9sWACC2KLASo9yASw/5c5fa1150e5e4f4ded19baf0afecfa6e/Standard_Copy_icon.png?w=400&#x26;fm=avif" alt=""><figcaption><p>标准复制图标</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7y8WE9sWACC2KLASo9yASw/d1b1f78084ed20940ec76fc397b25ae8/Standard_copy_icon.png?w=484&#x26;fm=avif" alt=""><figcaption><p>标准复制图标</p></figcaption></figure></div>
 
-或者，您可以在项目旁边添加三个快速复制操作按钮，专门将您的用户名、密码或验证码复制到剪贴板：
+或者，您可以在项目旁边添加三个快速复制操作按钮，以将您的用户名、密码或验证码专门复制到剪贴板：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5w7lobEk81aOGfLKFjRp2e/d37711426641f91deb9ea28715901fb0/Quick_copy_icons.png?w=400&#x26;fm=avif" alt=""><figcaption><p>快速复制操作</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5w7lobEk81aOGfLKFjRp2e/301afdc4fffc7878b1b0baacc58e788b/Quick_copy_icons.png?w=482&#x26;fm=avif" alt=""><figcaption><p>快速复制操作</p></figcaption></figure></div>
 
-该选项默认停用。要启用它，请转到**设置** → **外观**，然后打开**在密码库上显示快速复制操作**。
-
-### 单击项目 <a href="#click-items" id="click-items"></a>
-
-或者，您可以设置浏览器扩展，当该项目出现在**自动填充建议**部分时，您只需单击项目上的任意位置即可自动填充。使用此选项时，不会显示**填充**按钮：
-
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3tnagVMjtTufvRCrih3ctQ/b3698262ce7c19baeda6afc87c485167/2025-01-02_11-14-19.png?w=862&#x26;fm=avif" alt=""><figcaption><p>单击项目以自动填充</p></figcaption></figure></div>
-
-要激活此选项，请导航至**设置** → **外观**，然后切换**在自动填充建议中单击项目以自动填充**选项。
-
-启用此选项时，如果您想在浏览器扩展中打开项目，请选择 **≡菜单图标** → **查看**。
+该选项默认停用。要启用它，请转到**设置** → **外观**，然后打开**在密码库上显示快速复制操作**开关。
 
 ### 查看登录 <a href="#view-login" id="view-login"></a>
 
-当您点击登录项目时，它将打开**查看登录**页面。当浏览器打开并显示已保存的 URI 时，选择**自动填充**以在该页面上输入您的信息：
+当浏览器打开已保存的 URI 时，点击扩展中对应的登录项目即可打开**查看登录**页面。然后选择**自动填充**，即可在该页面输入您的信息：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/Y4VkZTrM140OgvjZe5lhc/f1bfffb355ce24ec915283e015fba176/Autofill_on_View_Login.png?w=1126&#x26;fm=avif" alt=""><figcaption><p>在查看登录上自动填充</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/Y4VkZTrM140OgvjZe5lhc/a2f9c0003aec18d74b26581c57768e96/Autofill_on_View_Login.png?w=480&#x26;fm=avif" alt=""><figcaption><p>在查看登录上自动填充</p></figcaption></figure></div>
 
 如果您选择**自动填充**并且您所在的网站与登录项目保存的 URI 不匹配时，您可以选择**自动填充并添加此网站**到登录项目，或者使用**自动填充但不添加**此网站到您的密码库。
 
@@ -162,25 +154,25 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 {% endtab %}
 
 {% tab title="使用内嵌自动填充创建账户" %}
-要使用内嵌自动填充菜单创建一个新的账户：
+要使用内嵌自动填充菜单向 Bitwarden 添加新账户，无论是使用已有凭据登录还是全新创建账户，请按以下步骤操作：
 
-1、在登录表单的用户名字段中输入用户名。
-
-2、选择密码字段。将显示内嵌自动填充菜单。
-
-3、如果您对生成的密码满意，请选择**填充生成的密码**。您也可以使用 **⟳生成**按钮生成新的密码，直到您满意为止：
-
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2JcceqWgFbk4ViLCMe6qm5/ce116e8ff337f90fbbd57b52aa15fdcd/2024-11-05_10-07-08.png?w=952&#x26;fm=avif" alt=""><figcaption><p>填充生成的密码</p></figcaption></figure></div>
+1、在登录表单中选择用户名。如果您已有该网站的凭据，请输入用户名和密码。如果没有，请继续下一步，Bitwarden 将帮助您创建它们。
 
 {% hint style="success" %}
-该选项将使用您在浏览器扩展的**生成器**选项卡中配置的设置。[了解如何更改这些设置](../../your-vault/security-tools/generator.md#password-types)。
+先不要提交登录表单！
 {% endhint %}
 
-4、**在点击「注册」或「创建账户」提交表单之前**，内嵌自动填充菜单将提供一个**保存到 Bitwarden** 的选项。使用该选项可在弹出窗口中打开 Bitwarden，然后选择**保存**按钮保存生成的凭据：
+2、选择内嵌的**保存到 Bitwarden** 或**新增登录**按钮：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7cMSUQLfvxHNwHS8xMX1j7/b63d716005ec29eef2a4f42286271d29/2025-04-25_10-21-36.png?w=476&#x26;fm=avif" alt=""><figcaption><p>保存登录到 Bitwarden</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/UuqBaeAqEKusL9ByoUi2q/43352b0ca6b80838e72ab13f7e5bd8a7/2026-07-14_10-16-23.png?w=1396&#x26;fm=avif" alt=""><figcaption><p>保存到 Bitwarden</p></figcaption></figure></div>
 
-5、选择注册、创建账户、网站或 App 提供的其他按钮来完成账户的创建。
+3、在弹出的浏览器扩展中，可以查看已导入的用户名和密码，或创建一组新的。若需创建新密码，请使用[密码生成器](../../your-vault/security-tools/generator.md)。
+
+4、现在也是编辑该项目的其他信息（如**名称**或**所有者**）的好时机。
+
+5、选择**保存并填充**按钮，将登录信息保存至 Bitwarden，并自动继续网站的登录或账户创建流程：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1ATTneDqBvNTFNds8YOCFh/cae4c9f4b872eec97aa5cae911633f1a/2026-07-14_10-17-33.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>保存并填充</p></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -247,7 +239,7 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 
 「不受信任」的 iframe 被定义为 `src=""` 值与登录项目的 URI 不匹配的 iframe，如全局设置或特定于项目的[匹配检测行为](../troubleshoot-autofill/forming-uris-for-autofill.md#match-detection-options)所指示的那样。
 
-## 自动填充不常用凭据 <a href="#autofill-less-common-credentials" id="autofill-less-common-credentials"></a>
+## 自动填充不常用的凭据 <a href="#autofill-less-common-credentials" id="autofill-less-common-credentials"></a>
 
 ### TOTP 自动填充 <a href="#totp-autofill" id="totp-autofill"></a>
 
@@ -256,7 +248,7 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 默认情况下，自动填充登录后，您的 TOTP 也会被复制到剪贴板。如果您使用页面加载时自动填充功能，这是推荐的工作流程。
 
 {% hint style="success" %}
-可以使用**设置** → **选项** → **自动复制 TOTP** 关闭自动 TOTP 复制，默认情况下它是打开的。此外，使用旁边的**清除剪贴板**选项设置清除复制值的时间间隔。
+在浏览器扩展中使用自动填充时，默认会启用自动复制 TOTP 功能。如需停用，请前往**设置** → **自动填充**，取消勾选**自动复制 TOTP**。此外，使用旁边的**清除剪贴板**下拉菜单，指定复制内容的清除时间。
 {% endhint %}
 
 ### 使用 Bitwarden 中存储的通行密钥登录 <a href="#log-in-with-passkeys-stored-in-bitwarden" id="log-in-with-passkeys-stored-in-bitwarden"></a>
@@ -268,5 +260,5 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 [内嵌自动填充菜单](autofill-from-browser-extensions.md#inline-auto-fill-menu)还可用于使用通行密钥轻松进行身份验证。
 
 {% hint style="info" %}
-当某个域名位于[**排除域名**](../more-autofill-options/exclude-domains.md)列表中时，Bitwarden 浏览器扩展不会发出通行密钥提示。
+浏览器扩展不会为[**排除域名**](../more-autofill-options/exclude-domains.md)列表中的任何域名提供保存或使用通行密钥的功能。
 {% endhint %}

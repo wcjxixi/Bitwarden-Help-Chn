@@ -142,7 +142,7 @@
 {% tab title="桌面端" %}
 要导出密码库数据：
 
-1、选择**文件**。
+1、从导航菜单中选择**导出**。
 
 2、从**导出自**下拉菜单，中选择要下载的数据：
 
@@ -176,14 +176,16 @@
 
 6、输入您的主密码或电子邮件验证码以确认。
 
-5、选择**导出密码库**。
-
 7、选择**导出密码库**。
 
 导出的文件将保存到**设备设置的位置**。默认情况下，这通常是「下载」文件夹，但您可以在设备设置中更改它。
 {% endtab %}
 
 {% tab title="移动端" %}
+您可以通过下载文件在移动设备上导出 Bitwarden 数据。如果您要迁移到其他支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans) 的移动 App，可以直接传输数据。iOS 26+ 和 Android 10+ 支持使用 CXP 来[导入](import-data.md#yi-dong-duan)和导出数据。
+
+以下是 iOS 和 Android 上的文件导出步骤，以及 iOS 上的 CXP 操作步骤。要在 Android 上使用 CXP，您需要从目标 App 开始操作，具体步骤取决于您使用的 App。
+
 要导出密码库数据：
 
 1、点击 ⚙️**设置**图标。
@@ -193,9 +195,9 @@
 3、点击**导出密码库**。
 
 {% hint style="info" %}
-在 iOS 26 上，您可以选择**将密码库导出到文件**和**将密码库导出到另一个 App**。
+在 iOS 26+ 上，您可以选择**将密码库导出到文件**和**将密码库导出到其他 App**。
 
-如果您选择**将密码库导出到文件**，请继续执行这些说明。如果您选择**将密码库导出到另一个 App**，请按照屏幕简单流程将数据直接导出到支持 [FIDO 凭证交换协议](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)的任何其他 App。
+如果您选择**将密码库导出到文件**，请继续执行这些说明。如果您选择**将密码库导出到其他 App**，请按照屏幕上的简单流程，将数据直接导出到支持 [FIDO 凭证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans) 的任何其他 App。
 {% endhint %}
 
 4、选择一个**文件格式**：`.json`、`.csv` 或 `.json (Password protected)`。

@@ -103,11 +103,53 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 {% endtab %}
 
 {% tab title="移动端" %}
-在大多数情况下，在移动设备上导入数据需要您通过在移动浏览器中打开的网页 App 执行此操作。您可以通过导航到**设置** → **密码库** → **导入项目**，以从 Password Manager 快速访问此位置。
+在移动设备上导入数据有两种方式。使用 CXP 直接导入通常最为简便，但目前仅支持少数密码管理 App。
 
-在 iOS 26 上，Bitwarden 支持使用 [Fido 凭证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications) 导入，以直接轻松地将密码、通行密钥、信用卡和个人身份信息迁移到您的密码库中。要导出数据的 App 也必须支持 CXP，具体操作步骤因 App 而异。
+### 移动设备最常用的方式 <a href="#most-common-method-for-mobile" id="most-common-method-for-mobile"></a>
 
-例如，在 iOS 密码 App 中，使用 **⋯**&#x9009;项菜单选择**导出数据至其他 App**，然后选择 Bitwarden。
+对于大多数设备，请打开移动浏览器。登录 Bitwarden 然后按照[网页 App 的导入步骤](import-data.md#wang-ye-app)操作。
+
+### 使用凭据交换协议 (CXP) 直接导入 <a href="#direct-import-with-the-cxp" id="direct-import-with-the-cxp"></a>
+
+Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)。该协议通过省去手动下载和处理数据文件的步骤，提供了一种替代且通常更快的导入方式。当前存储您数据的密码管理器 App 也必须支持 CXP，具体步骤因 App 而异。
+
+#### 使用 iOS 设备 CXP <a href="#cxp-with-ios-devices" id="cxp-with-ios-devices"></a>
+
+要使用 **iOS 26+** 的移动设备导入数据：
+
+1、
+
+2、
+
+3、
+
+4、
+
+5、
+
+6、
+
+7、
+
+#### 使用 **Android** 设备 CXP <a href="#cxp-with-android-devices" id="cxp-with-android-devices"></a>
+
+要使用 **Android 10+** 的移动设备导入数据：
+
+1、
+
+2、
+
+3、
+
+4、
+
+5、
+
+6、
+
+7、
+
+8、
 {% endtab %}
 
 {% tab title="桌面端" %}
@@ -212,7 +254,7 @@ bw import <format> /Users/myaccount/Documents/mydata.csv
 要尽量减少此错误，请启用[限制为所有者和管理员可以创建集合](../../admin-console/manage-shared-items/collections/collection-settings.md#restrict-collection-creation-to-owners-and-admins)设置以阻止用户创建集合。
 {% endhint %}
 
-### 组织最多只能拥有俩个集合 <a href="#organization-can-only-have-a-maximum-of-two-collections" id="organization-can-only-have-a-maximum-of-two-collections"></a>
+### 组织最多只能拥有两个集合 <a href="#organization-can-only-have-a-maximum-of-two-collections" id="organization-can-only-have-a-maximum-of-two-collections"></a>
 
 免费组织最多可以拥有两个[集合](../../admin-console/manage-shared-items/collections/about-collections.md)。如果您尝试导入的文件中指定了两个以上的集合，则会出现导入错误。有几个选项可以解决此问题：
 

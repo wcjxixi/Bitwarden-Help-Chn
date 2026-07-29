@@ -7,15 +7,35 @@
 如果您是 Bitwarden 的新手，很可能您使用的网页浏览器一直在保存和自动填充您的密码。大多数网页浏览器默认启用了这一功能，但专家们普遍认为，[内置的密码管理器比 Bitwarden 这样的专业解决方案要脆弱](https://www.wired.com/2016/08/browser-password-manager-probably-isnt-enough/)。我们建议停用浏览器的内置密码管理器，以提高您的安全性并防止干扰您的 Bitwarden 体验。
 
 {% hint style="info" %}
-Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设备上部署 Bitwarden 浏览器扩展](/broken/pages/SPPHBR9CJhd64rLkL80y)的更多信息。
+Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设备上部署 Bitwarden 浏览器扩展](../../../admin-console/deploy-client-apps/browserext-deploy.md)的更多信息。
 {% endhint %}
 
-## 手动禁用浏览器的内置密码管理器 <a href="#manually-disable-a-browsers-built-in-password-manager" id="manually-disable-a-browsers-built-in-password-manager"></a>
+## 安装 Bitwarden 时 <a href="#when-you-install-bitwarden" id="when-you-install-bitwarden"></a>
 
-了解如何禁用主流浏览器的内置密码管理器：
+首次安装 Bitwarden 时，系统会提示您将 Bitwarden 设为默认密码管理器：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6EXjuiuhxjTCNoxlL9uZRq/513b2d10487c86d0ebed4cc050cbcfba/2026-07-14_14-56-41.png?w=1199&#x26;fm=avif" alt=""><figcaption><p>将 Bitwarden 设为默认</p></figcaption></figure></div>
+
+点击**继续**后，屏幕上将弹出一个对话框。选择**允许**授予 Bitwarden 权限以修改您的浏览器设置。
+
+## 从 Bitwarden 设置菜单 <a href="#from-the-bitwarden-settings-menu" id="from-the-bitwarden-settings-menu"></a>
+
+如果在安装过程中跳过了提示，某些浏览器上的 Bitwarden 浏览器扩展内置了将 Bitwarden 设为默认密码管理器的设置：
+
+1、导航至 Bitwarden 浏览器扩展中的 **⚙️设置**选项卡，然后选择**自动填充**。
+
+2、点击以启用**将 Bitwarden 设置为您的默认密码管理器**。
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5fyBdu5X6JCLu2UsaqYUO0/5cbd0a186251fe8916b5a01be1f3efb8/2026-07-14_14-59-21.png?w=1181&#x26;fm=avif" alt=""><figcaption><p>将 Bitwarden 设置为默认</p></figcaption></figure></div>
+
+3、屏幕上将出现一个对话框，选择**允许**以授予 Bitwarden 更改浏览器设置的权限。
+
+## 从浏览器设置菜单手动操作 <a href="#manually-from-your-browser-settings" id="manually-from-your-browser-settings"></a>
+
+如果上述方法均无效，请从浏览器设置菜单中手动关闭浏览器自带的密码管理器：
 
 {% hint style="success" %}
-很多流行的浏览器，包括 Edge、Opera 和 Brave，都使用一个被称为「Chromium」的谷歌 Chrome 框架。如果您正在使用这些浏览器之一，请参考 **Chrome/Chromium** 部分的说明。
+很多流行的浏览器，如 Opera 和 Brave，使用一个被称为「Chromium」的 Google Chrome 框架。如果您正在使用这些浏览器之一，请参考 **Chrome/Chromium** 部分的说明。
 {% endhint %}
 
 {% tabs %}
@@ -107,19 +127,3 @@ Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/
 在「Password Manager」部分，macOS 用户可以选择使用 Bitwarden。[此处](../../more/more-platforms/duckduckgo-macos-browser-integration.md)了解更多有关 Bitwarden DuckDuckGo macOS 浏览器集成的信息。
 {% endtab %}
 {% endtabs %}
-
-## 将 Bitwarden 设置为 Chrome 中的默认密码管理器 <a href="#make-bitwarden-your-default-password-manager-in-chrome" id="make-bitwarden-your-default-password-manager-in-chrome"></a>
-
-{% hint style="info" %}
-将 **Bitwarden 设置为默认密码管理器**选项仅适用于 Chrome 浏览器扩展。对于其他浏览器，[请手动禁用其内置密码管理器](disable-a-browsers-built-in-password-manager.md#manually-disable-a-browsers-built-in-password-manager)。
-{% endhint %}
-
-Chrome 上的 Bitwarden 浏览器扩展有一个内置设置，可以禁用浏览器的默认密码管理器。要使用此设置：
-
-1、导航至 Bitwarden 浏览器扩展中的 **⚙️设置**选项卡，然后选择**自动填充**。
-
-2、点击以启用**将 Bitwarden 设置为您的默认密码管理器**。
-
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5fyBdu5X6JCLu2UsaqYUO0/abfb44cb460314112805bfd0312c1f8f/2025-10-14_12-44-35.png?w=459&#x26;fm=avif" alt=""><figcaption><p>将 Bitwarden 设置为默认密码管理器</p></figcaption></figure></div>
-
-3、屏幕上将出现一个对话框，选择**允许**以授予 Bitwarden 更改浏览器设置的权限。
