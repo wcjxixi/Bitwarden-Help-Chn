@@ -12,7 +12,7 @@ Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设
 
 ## 安装 Bitwarden 时 <a href="#when-you-install-bitwarden" id="when-you-install-bitwarden"></a>
 
-首次安装 Bitwarden 时，系统会提示您将 Bitwarden 设为默认密码管理器：
+首次安装 Bitwarden 时，会提示您将 Bitwarden 设为默认的密码管理器：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6EXjuiuhxjTCNoxlL9uZRq/513b2d10487c86d0ebed4cc050cbcfba/2026-07-14_14-56-41.png?w=1199&#x26;fm=avif" alt=""><figcaption><p>将 Bitwarden 设为默认</p></figcaption></figure></div>
 
