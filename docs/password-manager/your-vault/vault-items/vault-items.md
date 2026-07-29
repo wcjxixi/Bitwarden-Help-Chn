@@ -104,9 +104,9 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 {% tabs %}
 {% tab title="网页 App" %}
-1、选择您想要归档的项目，然后使用 **≡**&#x9009;项菜单选择**归档**：
+1、选择您想要归档的项目，然后使用操作栏选择**归档**：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1aRyGxLdpcvGF3fM2Bbd17/24408086dd8835286d079cb48cd6069a/2026-01-27_10-28-36.png?w=1056&#x26;fm=avif" alt=""><figcaption><p>使用网页 App 归档</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1aRyGxLdpcvGF3fM2Bbd17/d67d2ef7eb7904d6fe02d062d736d980/Archive_with_the_web_app.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>使用网页 App 归档</p></figcaption></figure></div>
 
 2、在对话框中选择**归档**来确认您的选择。
 
@@ -138,9 +138,9 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 {% endtab %}
 
 {% tab title="桌面端" %}
-1、打开您想要归档的项目，然后选择**归档**按钮：
+1、选择您想要归档的项目，然后使用操作栏选择**归档**：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/kOYhUPQwYRL9Rm0SKwxsf/9bef4129b95edcb3189cb114863a117f/2026-04-23_10-02-08-1.png?w=979&#x26;fm=avif" alt=""><figcaption><p>使用桌面 App 归档</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/kOYhUPQwYRL9Rm0SKwxsf/137b96d3023a21f04356a3fd8beb7f8b/desktop_archive.png?w=1279&#x26;fm=avif" alt=""><figcaption><p>使用桌面 App 归档</p></figcaption></figure></div>
 
 2、在对话框中选择**归档**来确认您的选择。
 
@@ -226,13 +226,13 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 {% tabs %}
 {% tab title="网页 App" %}
-选择要复制的项目的 **≡**&#x9009;项菜单，然后选择 **❐**&#x514B;隆：
+选择要复制的项目的 **≡**&#x9009;项菜单，然后选择 **❐克隆**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3OYHvfRCDy3OphkbEHIJEA/fa47beb671d6efc34a18d05daf630aff/webappnewtest3.png?w=1325&#x26;fm=avif" alt=""><figcaption><p>项目选项</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-选择要复制的项目的 **≡**&#x9009;项菜单，然后选择 **❐**&#x514B;隆：
+选择要复制的项目的 **≡**&#x9009;项菜单，然后选择 **❐克隆**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/10bowrbDmxxf8SxrMhplmJ/01597fd4926492def941caf556cd9d12/extnew5.png?w=1118&#x26;fm=avif" alt=""><figcaption><p>项目选项</p></figcaption></figure></div>
 {% endtab %}
@@ -244,7 +244,7 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 {% endtab %}
 
 {% tab title="桌面端" %}
-选择一个项目将其打开，然后选择 **❐**&#x514B;隆图标：
+选择要复制的项目的 **≡**&#x9009;项菜单，然后选择 **❐克隆**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5KRdegIaIbOHxGkMj64Fs9/fce91fc0bc5cabfa299d1fd522c0da7d/2026-04-23_10-12-38.png?w=800&#x26;fm=avif" alt=""><figcaption><p>克隆项目</p></figcaption></figure></div>
 {% endtab %}
@@ -256,9 +256,9 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 ## 共享项目 <a href="#share-items" id="share-items"></a>
 
-如果您是[组织](../../../admin-console/organizations-overview.md)的成员，您可以[将密码库项目分配到组织的集合中](../../organization-members/sharing.md)，从而将密码库项目的所有权转移给该组织。要与其他组织成员共享，请使用 **≡**&#x83DC;单：
+如果您是[组织](../../../admin-console/organizations-overview.md)的成员，您可以[将密码库项目分配到组织的集合中](../../organization-members/sharing.md)，从而将密码库项目的所有权转移给该组织。要与其他组织成员共享，请使用操作栏：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/stm9byteqzZn9dvqonHrc/0da481b0cf1f54457d08ae02fd917377/2024-12-02_14-33-34.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/stm9byteqzZn9dvqonHrc/000099fa7e49dffd712f1c94b966fa09/assign_to_collections.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 

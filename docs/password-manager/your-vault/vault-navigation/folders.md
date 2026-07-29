@@ -4,7 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/folders/)
 {% endhint %}
 
-文件夹是组织您的个人密码库的结构，可以将登录、支付卡、身份和安全笔记集中在一起。使用文件夹可以方便您查找密码库项目，并且在 Bitwarden App 中，文件夹会按字母顺序排列。可以将任何密码库项目（包括[组织已与您共享的项目](../../organization-members/sharing.md)）添加到文件夹中。
+文件夹是用于通过将登录、支付卡、身份和安全笔记集中在一起来组织您的个人密码库的结构。使用文件夹可以方便您查找密码库项目，并且在 Bitwarden App 中，文件夹会按字母顺序排列。
+
+任何密码库项目都可以添加到文件夹中，包括[组织已与您共享的项目](../../organization-members/sharing.md)。如果您通过组织共享项目，请务必注意，文件夹仅为您个人组织密码库项目；其他组织成员可以设置不同的文件夹布局。详细了解[文件夹与集合有何不同](../../../admin-console/manage-shared-items/collections/about-collections.md)。
 
 {% hint style="success" %}
 当从筛选器菜单中选择**所有密码库**时，添加到某个文件夹的项目仍会出现在您的密码库中，删除文件夹并**不会**删除该文件夹中的项目。删除文件夹是永久性的，删除后，文件夹将无法恢复。
@@ -94,9 +96,9 @@ bw create folder <foldername>
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4VfciDIbEZZFAG1AXbRf3S/275100f866612da15b4714adea8f1944/2024-12-02_16-20-15.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>移动项目到文件夹</p></figcaption></figure></div>
 
-* 导航到**密码库**视图，选择要移动的项目，然后使用最上面的 **≡**&#x9009;项菜单选择 **💾添加到文件夹**按钮。在移动所选对话框中，选择要将项目移动到的文件夹：
+* 导航到**密码库**视图，选择要移动的项目，然后使用操作栏选择 **💾添加到文件夹**按钮。在「移动所选」对话框中，选择要将项目移动到的文件夹：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7zQPzdrcVIbPeX5E8LqTq/ce8e8bf7188626093a675eb844d5002a/2024-12-02_16-22-24.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>移动项目到文件夹</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7zQPzdrcVIbPeX5E8LqTq/e1554b6cc22a5d50029ab8c5e61940f5/add_to_folder_bar.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>移动项目到文件夹</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -106,9 +108,9 @@ bw create folder <foldername>
 {% endtab %}
 
 {% tab title="桌面端" %}
-打开要移动的密码库项目，选择**文件夹**下拉菜单，然后选择要将项目移动到的文件夹：
+选择要移动的项目，然后使用操作栏选择 **💾添加到文件夹**按钮。在「移动所选」对话框中，选择要将项目移动到的文件夹：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/63jzyM75IRzhAbw5nNzMHx/85db2d1104337e5ebc6e4dd0e8b57f8a/2026-04-23_10-48-31.png?w=800&#x26;fm=avif" alt=""><figcaption><p>移动项目到文件夹</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/63jzyM75IRzhAbw5nNzMHx/cf70c299326b410b9345a7a047560fae/desktop_folder.png?w=1281&#x26;fm=avif" alt=""><figcaption><p>移动项目到文件夹</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}

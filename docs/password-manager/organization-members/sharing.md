@@ -77,9 +77,9 @@
 组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从 **Admin Console** 执行此步骤，以跳过此过程中的一些步骤。
 {% endhint %}
 
-2、使用 **≡**&#x83DC;单，选择**分配到集合**选项：
+2、使用操作栏，选择**分配到集合**：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/stm9byteqzZn9dvqonHrc/0da481b0cf1f54457d08ae02fd917377/2024-12-02_14-33-34.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/stm9byteqzZn9dvqonHrc/000099fa7e49dffd712f1c94b966fa09/assign_to_collections.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
 
 3、在**分配到集合**弹出窗口中：
 
@@ -94,7 +94,7 @@
 
 * **从 Admin Console 共享**：如前所述，组织所有者、管理员和某些自定义用户可以直接从 Admin Console 进行共享，从而简化共享过程：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1u6EPNgAlCnvC9DcmUIosQ/327c0c24e09dce687540499a8eaa5aac/2024-12-02_15-47-21.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>批量分配到集合</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1u6EPNgAlCnvC9DcmUIosQ/e403afa9610a8fc26176d9f4223d8392/Assign_to_collections_in_bulk_edited.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>批量分配到集合</p></figcaption></figure></div>
 
 * **直接编辑项目**：如果您需要在共享某个项目之前对其进行更改，请打开该项目，然后在**编辑**视图中使用**所有者**和**集合**下拉菜单选择要与之共享的对象，同时进行必要的更改：
 
@@ -144,9 +144,9 @@
 {% tab title="桌面端" %}
 要从桌面 App共享现有项目：
 
-1、在**密码库**视图中，右键单击要共享的项目，然后从菜单中选择**分配到集合**：
+1、在**密码库**视图中，右键单击要共享的项目，然后从操作栏中选择**分配到集合**：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2RRhv9udtSa49Uxzv6rRAQ/fcf14bf329eb05226e389653ff339826/2026-04-23_11-35-49.png?w=800&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2RRhv9udtSa49Uxzv6rRAQ/e5b579af047113cf7ea1eb60bbbb533e/2026-07-15_11-18-04.png?w=1308&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
 
 2、在**分配到集合**弹出窗口中：
 

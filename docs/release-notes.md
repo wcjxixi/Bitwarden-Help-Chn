@@ -42,7 +42,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 ### Password Manager
 
 * **★密码库项目的操作栏**：网页 App、桌面 App 和管理控制台中添加了新的批量操作栏。使用该操作栏，可以执行诸如[共享项目](password-manager/organization-members/sharing.md)到集合或[文件夹](password-manager/your-vault/vault-navigation/folders.md)、以及[归档](password-manager/your-vault/vault-items/vault-items.md#archive)密码库项目等操作。
-* **★从扩展保存和填充**：在浏览器扩展中，内联菜单现在可以更轻松地[同时保存新凭据并进行自动填充](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#use-the-inline-auto-fill-menu)。
+* **★从扩展保存和填充**：在浏览器扩展中，内联菜单现在可以更轻松地[同时保存新凭据并进行自动填充](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#shi-yong-nei-qian-zi-dong-tian-chong-chuang-jian-zhang-hu)。
 * **Android 支持 CXP**：使用 Android 10+，您可以在 Bitwarden 与任何支持 [FIDO 凭据交换协议](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)的 Android App 之间[直接导入](password-manager/import-and-export/import-data.md#yi-dong-duan)或[直接导出](password-manager/import-and-export/export-vault-data.md#zhuo-mian-duan)数据。
 * **★扩展安装过时提示将 Bitwarden 设置为默认**：安装浏览器扩展时，它现在将提示您[将 Bitwarden 设置为浏览器的默认密码管理器](password-manager/autofill/troubleshoot-autofill/disable-a-browsers-built-in-password-manager.md)。
 * **★Keeper 直接导入器**：使用[新的直接导入选项](password-manager/import-and-export/import-guides/import-from-keeper.md#import-directly-from-keeper)，无需下载导出文件，即可直接从 Keeper Password Manager 传输数据，。
