@@ -40,17 +40,17 @@ Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设
 
 {% tabs %}
 {% tab title="Chrome/Chromium" %}
-在 Chrome 浏览器或任何基于 Chromium 的浏览器（如 Edge、Opera、Brave）的地址栏中输入  `chrome://password-manager/settings`（将 `chrome` 替换为浏览器名称（例如 `brave://password-manager/settings`））导航到**密码**页面。对于 Edge 用户，导航到 `edge://wallet/settings`。
+在 Chrome 浏览器或任何基于 Chromium 的浏览器（如 Opera 或 Brave）的地址栏中输入  `chrome://password-manager/settings`（将 `chrome` 替换为浏览器名称（例如 `brave://password-manager/settings`））导航到**密码**页面。
 
-在此页面上，切换**提示保存密码**选项和**自动登录**选项开关为关闭状态：
+在此页面上，切换**提示保存密码和通行密钥**和**自动登录**开关为关闭状态：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6bpi4fkyZhnkhW5RBtugDW/d8e2de4536d6a34f092fd9d5975fd04a/chrome-disable-autofill.png?w=1005&#x26;fm=avif" alt=""><figcaption><p>Chrome 密码选项</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/278FMIhP9usz83Q8zlSZRs/34fc118d1a52fcba111b22f786ad00bf/Turn_off_Chrome_Password_Manager.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>停用 Chrome Password Manager</p></figcaption></figure></div>
 
-此页面还将列出被浏览器存储的所有**已保存的密码**：
+然后选择**密码**以查看浏览器中存储的所有密码：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4P5alfndwwNgCpTYrSCg61/b3545839a8429f28ee7b6ac66559c3ce/chrome-delete-passwords.png?w=1005&#x26;fm=avif" alt=""><figcaption><p>Chrme 已保存的密码</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4P5alfndwwNgCpTYrSCg61/bc1570211deec146aa51aa6f35f9fed2/View_passwords_saved_in_Chrome_Password_Manager.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Chrme 已保存的密码</p></figcaption></figure></div>
 
-如果您还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-chrome.md#export-from-chrome)，为将来导入 Bitwarden 做准备。导出后，您应该从浏览器的存储中删除这些密码。
+如果您还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-chrome.md#export-from-chrome)，以便将来导入 Bitwarden。导出后，您应该从浏览器的存储中删除这些密码。
 {% endtab %}
 
 {% tab title="Edge" %}
@@ -64,17 +64,17 @@ Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设
 {% endtab %}
 
 {% tab title="Firefox" %}
-在 Firefox 中，导航到**首选项** → **隐私和安全**，向下滚动并取消勾选**密码**、**付款方式**和**地址及更多**部分中所有预先勾选的选项：
+在 Firefox 中，导航到**设置** → **密码和自动填充**，向下滚动并取消勾选**密码**、**付款方式**和**地址及更多**部分中所有预先勾选的选项：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/72yK5CCMKa9pcfCcdvUZqL/95494d5079e32ae509ea62347ccc9ee8/Firefox_settings.png?w=681&#x26;fm=avif" alt=""><figcaption><p>Firefox 密码选项</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/72yK5CCMKa9pcfCcdvUZqL/70345d0065b2e093519bcb0dbf74ce86/firefox_update.png?w=1071&#x26;fm=avif" alt=""><figcaption><p>Firefox 密码选项</p></figcaption></figure></div>
 
 {% hint style="success" %}
 Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/security-tools/vault-health-reports.md)，如「泄露密码」报告和「重复使用的密码」报告，并**为所有用户提供免费的数据泄露报告**。
 {% endhint %}
 
-您还可以通过选择**已保存的密码**按钮来查看 Firefox 已经保存了哪些登录信息：
+您还可以通过选择**已保存的密码**按钮来查看 Firefox 已经保存的所有登录信息：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5UrQ6bGCjV0VdHvy6rzece/a2148eaa8dcaaf4f7158e8d806dcb97b/2025-08-06_16-53-15.png?w=550&#x26;fm=avif" alt=""><figcaption><p>Firefox 已保存的登录</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5UrQ6bGCjV0VdHvy6rzece/fb1d2fc1bd28f1af3fdf4ad890039c84/firefox_update_2.png?w=1148&#x26;fm=avif" alt=""><figcaption><p>Firefox 已保存的登录</p></figcaption></figure></div>
 
 如果您还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-firefox.md)，以便将来导入 Bitwarden。导出后，您应该从 Firefox 中 **🗑️移除**这些密码。
 {% endtab %}
@@ -84,15 +84,15 @@ Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4nuEz911vsIAUegHVL0Zec/7d663935c4f9e65297c14598f1037b72/safari-disable.png?w=919&#x26;fm=avif" alt=""><figcaption><p>Safari 密码选项</p></figcaption></figure></div>
 
-您还可以通过导航到**密码**选项卡来了解 Safari 已经保存了哪些密码：
+您还可以通过导航到**密码**选项卡来了解 Safari 已经保存了哪些密码。如果已保存了密码，此选项卡将引导您进入 Apple 密码 App。：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6eZMZC98Grc7sbdHbBfXtK/4c72d19c26e56ad7dfb3267f466bd119/safari-delete.png?w=919&#x26;fm=avif" alt=""><figcaption><p>Safari 已保存的密码</p></figcaption></figure></div>
 
-如果您还没有将这些密码保存到 Bitwarden 中，请在 Bitwarden 中为这些密码创建登录项目。所有密码都保存到 Bitwarden 中后，从 Safari 中**移除**这些密码。
+如果您还没有将这些密码保存到 Bitwarden 中，请在 Bitwarden 中为这些密码创建登录项目。所有密码都保存到 Bitwarden 中后，请从 Safari 中**移除**这些密码。
 {% endtab %}
 
 {% tab title="Vivaldi" %}
-在 Vivaldi 中，打开 **⚙️Vivaldi 设置**窗口，然后从左侧导航中选择 **👁‍🗨隐私**。向下滚动到密码部分并取消选中**保存网页密码**选项：
+在 Vivaldi 中，打开 **⚙️Vivaldi 设置**窗口，然后从左侧导航中选择 **👁‍🗨隐私**。向下滚动到「密码」部分然后取消选中**保存网页密码**选项：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6nk9FVDeg8XaUz22Xahr8T/ee0f597cc264da5a30853588d541f074/vivaldi-disable.png?w=1346&#x26;fm=avif" alt=""><figcaption><p>Vivaldi 密码选项</p></figcaption></figure></div>
 
@@ -100,13 +100,13 @@ Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1j5qvcTAVsXficByKFewec/fd6f86731a9e15d38e0cbc39f4f64197/vivaldi-delete.png?w=756&#x26;fm=avif" alt=""><figcaption><p>Vivaldi 已保存的密码</p></figcaption></figure></div>
 
-如果您还没有将这些密码保存到 Bitwarden 中，请在 Bitwarden 中为这些密码创建登录项目。所有密码都保存到 Bitwarden 中后，从 Vivaldi 中**移除**这些密码。[了解如何操作](https://help.vivaldi.com/zh-hans/desktop/privacy/password-management/#Deleting_passwords)。
+如果您还没有将这些密码保存到 Bitwarden 中，请在 Bitwarden 中为这些密码创建登录项目。所有密码都保存到 Bitwarden 中后，请从 Vivaldi 中**移除**这些密码。[了解如何操作](https://help.vivaldi.com/zh-hans/desktop/privacy/password-management/#Deleting_passwords)。
 {% endtab %}
 
 {% tab title="Tor" %}
 虽然 Tor 与 Firefox 共享同一来源，但 Tor 是独立的，因为它默认不保存您的登录信息。如果您没有手动配置过 Tor 来保存和自动填充登录信息，那么您已经做好了一切准备。
 
-如果您配置过，请在地址栏中输入 `about:preferences#privacy` 导航到**密码**页面，然后向下滚动到登录和密码部分。取消勾选所有您已勾选的选项：
+如果您配置过，请在地址栏中输入 `about:preferences#privacy` 导航到**密码**页面，然后向下滚动到「登录和密码」部分。取消勾选所有您已勾选的选项：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4FcJnbhCUhDNITJjiy9ciD/d0f83af69188afaf619788c7e60c9a1b/tor-disable.png?w=996&#x26;fm=avif" alt=""><figcaption><p>Tor 密码选项</p></figcaption></figure></div>
 
@@ -114,7 +114,7 @@ Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3NHOIo5RIwTjVecqRPeT5Y/6c1e26dc5385006a498b77c48e1048c2/tor-delete.png?w=996&#x26;fm=avif" alt=""><figcaption><p>Tor 已保存的密码</p></figcaption></figure></div>
 
-如果您还没有将这些密码保存到 Bitwarden 中，请在 Bitwarden 中为这些密码创建登录项目。所有密码都保存到 Bitwarden 中后，从 Tor 中 **🗑️移除**这些密码。
+如果您还没有将这些密码保存到 Bitwarden 中，请在 Bitwarden 中为这些密码创建登录项目。所有密码都保存到 Bitwarden 中后，请从 Tor 中 **🗑️移除**这些密码。
 {% endtab %}
 
 {% tab title="DuckDuckGo" %}

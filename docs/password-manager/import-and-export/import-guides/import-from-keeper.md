@@ -70,6 +70,8 @@ Bitwarden 目前支持 Keeper 短信、验证器 App 和 Keeper DNA 选项用于
 
 ## 使用导出的文件导入 <a href="#use-an-exported-file-for-import" id="use-an-exported-file-for-import"></a>
 
+### 从 Keeper 导出 <a href="#export-from-keeper" id="export-from-keeper"></a>
+
 要从 Keeper 网页 App 导出数据：
 
 1、从网页 App 的右上角选择您的账户电子邮箱，然后从下拉菜单中选择**设置**：
@@ -86,7 +88,7 @@ Bitwarden 目前支持 Keeper 短信、验证器 App 和 Keeper DNA 选项用于
 
 6、选择**立即导出**。
 
-## 导入到 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
+### 导入到 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
 数据可以从网页 App、浏览器扩展、桌面 App 以及 CLI 导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
 
@@ -160,7 +162,7 @@ Bitwarden 目前支持 Keeper 短信、验证器 App 和 Keeper DNA 选项用于
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
-7、选择**导入**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+7、选择**导入数据**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
 8、数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
 {% endtab %}
