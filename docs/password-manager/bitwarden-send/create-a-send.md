@@ -33,7 +33,7 @@ Bitwarden Send 功能让您能够通过安全生成的链接，与任何人分�
 {% tab title="网页 App" %}
 要从网页 App 创建一个新的 Send：
 
-1、从导航栏选择 **Send**。
+1、选择 **Send**。
 
 {% hint style="info" %}
 该页面将列出您创建的尚未达到[删除日期](send-lifespan.md#deletion-date)的所有 Send。您可以选择某一可用的**类型**来筛选 Send。
@@ -45,23 +45,46 @@ Bitwarden Send 功能让您能够通过安全生成的链接，与任何人分�
 
 3、选择要创建的 Send 的类型：**文本**或**文件**。
 
-<table><thead><tr><th width="100">类型</th><th>步骤</th></tr></thead><tbody><tr><td><strong>文本</strong></td><td><p>在输入框中输入或粘贴所需的文本。切换<strong>访问 Send 时，默认隐藏文本</strong>选项，将要求接收者在打开 Send 时<a href="send-privacy.md">切换可见性</a>。加密后的 Send 不能超过 1000 个字符。</p><p></p><p>保存时，Send 文本的字符数会因加密而增加，这意味着一个 700 个字符的 Send 文本在与 Bitwarden 接触时会增加到 ~1,000 个字符，从而触发错误。根据经验，加密后字符数会增加 30-50%。</p></td></tr><tr><td><strong>文件</strong></td><td>选择<strong>选择文件</strong>按钮，然后浏览用于 Send 的文件。每个 Send 的最大文件大小为 500 MB（移动端是 100 MB）。（<strong>要求高级版</strong> &#x26; 验证电子邮箱）</td></tr></tbody></table>
+4、输入**名称**。此名称将对打开该 Send 的任何人可见。
 
-* **名称**：为此 Send 指定一个可识别的有含义的名称。
+5、根据 Send 类型的不同：
 
-默认情况下，Send 将在其创建后的 7 天后删除。您可以更改它以及更改其他选项（请参阅第 4 步），否则，点击**保存**以完成创建 Send。
+* 对于**文本 Send**，输入要分享的文本。如果您不希望链接在浏览器中首次打开时显示此文本，请勾选**默认隐藏文本。**&#x8FD9;将要求接收者[切换可见性](send-privacy.md#hide-text)才能阅读您的消息。
 
-4、根据需要配置以下选项：
+{% hint style="info" %}
+文本 Send 最多可包含加密的 1,000 个字符。保存时，Send 文本的字符数会因加密而增加，这意味着一个 700 个字符的 Send 文本在与 Bitwarden 接触时会扩展到 \~1,000 个字符，从而触发错误。根据经验，加密后字符数会增加 30-50%。
+{% endhint %}
 
-<table><thead><tr><th width="100">选项</th><th>描述</th></tr></thead><tbody><tr><td><strong>默认隐藏文本</strong></td><td>Send 内容将默认隐藏。</td></tr><tr><td><strong>删除日期</strong></td><td>此 Send 将在指定的日期和时间被永久<a href="send-lifespan.md#deletion-behavior">删除</a>。默认为创建后 7 天。<strong>允许的最大值</strong>为自创建后 30 天。</td></tr><tr><td><strong>谁可以查看</strong></td><td><p>选择谁可以查看：</p><p></p><p><strong>拥有链接的任何人</strong>：收到 Send 链接的任何人都可以查看 Send 的内容。</p><p></p><p><strong>指定的人员</strong>：指定可以接收此 Send 的收件人的<a href="send-privacy.md#email-verified-recipients">电子邮箱地址</a>。当访问 Send 时，他们将在电子邮件中收到验证码（<strong>要求高级版</strong>）。</p><p></p><p><strong>拥有您设置的密码的任何人</strong>：要求此 Send 的收件人<a href="send-privacy.md#send-passwords">输入密码</a>才能获得访问权限。</p></td></tr><tr><td><strong>限制查看</strong></td><td>在达到指定的访问次数后，此 Send 将被<a href="send-lifespan.md#maximum-access-count-behavior">禁用</a>。默认为不指定。</td></tr><tr><td><strong>对查看者隐藏您的电子邮箱地址</strong></td><td>对 Send 接收者<a href="send-privacy.md#hide-email">隐藏您的电子邮箱</a>。</td></tr><tr><td><strong>私密备注</strong></td><td>输入此 Send 的私密备注，该备注仅对您可见。</td></tr></tbody></table>
+* 对于**文件 Send**，选择**选择文件**然后挑选您的文件。
 
-对 Send 满意后，选择**保存**以完成。
+{% hint style="info" %}
+每个文件 Send 的最大文件大小为 500 MB（移动端是 100 MB）。
+{% endhint %}
+
+6、从下拉菜单中选择一个**删除日期**，届时 Send 将被永久[删除](send-lifespan.md#deletion-date)。默认为创建后 7 天，允许的最大值为自创建后 30 天。
+
+7、（可选）根据需要调整其余选项：
+
+* 从下拉菜单中选择**谁可以查看**：
+  * 选择**拥有链接的任何人**以允许任何人打开 Send 链接并查看其内容。这是默认选项。
+  * 选择**指定的人员**并输入他们的电子邮箱地址（最多 2,500 个字符），以在打开 Send 前[要求 Send 电子邮箱验证](send-privacy.md#email-verified-recipients)。
+  * 选择**拥有您设置的密码的任何人**，以要求接收者[输入密码才能打开 Send](send-privacy.md#send-passwords)。
+* 在**限制查看次数**中输入一个数字，以控制 Send 在被[停用](send-lifespan.md#maximum-access-count-behavior)前可以被打开的次数。默认情况下不设置限制。
+* 勾选**对查看者隐藏您的电子邮箱地址**，以从打开的 Send 中移除您账户的电子邮箱。
+
+{% hint style="info" %}
+当 Send 被限制为**指定的人员**或**拥有您设置的密码的任何人**时，您的电子邮箱地址将始终隐藏，直到接收者输入通过电子邮件发送的验证码或密码。之后，**对查看者隐藏您的电子邮箱地址**设置才生效。
+{% endhint %}
+
+* 输入仅对您（Send 的创建者）可见的**私密备注**。此备注不会显示在打开的 Send 上。
+
+8、选择**保存**。
 
 Send 创建后，使用 **≡选项**菜单然后选择 **❐复制 Send 链接**按钮以将生成的链接复制到剪贴板：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1PiQrX748LtTFXChfAIbFP/0ff74124a0d215254c532fe79cff9012/2026-02-25_11-08-25.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Send 选项</p></figcaption></figure></div>
 
-复制后，将 Send 链接分享给您期望的接收者。Send 是端到端加密的，因此您不必担心会将任何数据暴露给您使用的任何中间通信服务。
+复制后，您可以通过任何喜欢的方式将 Send 链接分享给您期望的接收者。Send 是端到端加密的，因此您不必担心会将任何数据暴露给您使用的任何中间通信服务。
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -199,3 +222,5 @@ bw send -n "My File Send" - d 14 -f /Users/myaccount/Documents/my_file.pdf
 ```
 {% endtab %}
 {% endtabs %}
+
+## 编辑 Send <a href="#edit-a-send" id="edit-a-send"></a>

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/about-send/)
 {% endhint %}
 
-Bitwarden Send 是一种加密的文件和文本共享工具，可通过安全、临时的链接将敏感的文本或文件直接传输给任何人。Send 可用于传输多达 1000 个加密字符的文本或多达 500 MB（或移动设备上为 100 MB）的文件，并可以通过文本、电子邮件或任何您喜欢的通信渠道[与任何人分享](receive-a-send.md)。
+Bitwarden Send 是一种加密的文件和文本共享工具，可通过安全、临时的链接将敏感的文本或文件直接传输给任何人。Send 可用于传输多达 1000 个加密字符的文本或多达 500 MB（移动设备上为 100 MB）的文件，并可以通过文本、电子邮件或任何您喜欢的通信渠道[与任何人分享](receive-a-send.md)。
 
 {% hint style="info" %}
 如果您所在的组织已在[管理 Send 策略](../../admin-console/oversight-visibility/enterprise-policies.md#manage-send)下关闭了 Send 功能，您对 Send 的访问将受到限制：
