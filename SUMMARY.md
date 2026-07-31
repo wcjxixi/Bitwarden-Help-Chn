@@ -118,7 +118,7 @@
     * [更改存在风险的密码](docs/password-manager/organization-members/change-at-risk-passwords.md)
   * [=Bitwarden Send](docs/password-manager/bitwarden-send/README.md)
     * [关于 Send](docs/password-manager/bitwarden-send/about-send.md)
-    * [=创建 & 编辑 Send](docs/password-manager/bitwarden-send/create-a-send.md)
+    * [创建 & 编辑 Send](docs/password-manager/bitwarden-send/create-a-send.md)
     * [接收 Send](docs/password-manager/bitwarden-send/receive-a-send.md)
     * [Send 生命周期](docs/password-manager/bitwarden-send/send-lifespan.md)
     * [Send 隐私](docs/password-manager/bitwarden-send/send-privacy.md)

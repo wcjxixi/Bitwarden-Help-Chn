@@ -24,7 +24,7 @@ Bitwarden Send 是一种加密的文件和文本共享工具，可通过安全�
 
 每个 Send 都有一个[配置的生命周期](send-lifespan.md)，以允许您跟踪 Send。每当发生一个生命周期事件（例如，到期）时，您创建的 Send 将显示状态图标：
 
-<table><thead><tr><th width="100">图标</th><th>含义</th></tr></thead><tbody><tr><td><strong>🔒</strong></td><td>此 Send <a href="send-privacy.md#send-passwords">受密码保护</a>。</td></tr><tr><td><strong>⚠</strong></td><td>此 Send 已<a href="send-lifespan.md#manually-disable-or-delete">被手动禁用</a>。</td></tr><tr><td><strong>🕘</strong></td><td>此 Send 已达到指定的<a href="send-lifespan.md#expiration-date">有效期</a>。</td></tr><tr><td><strong>⚠</strong></td><td>此 Send 已达到指定的<a href="send-lifespan.md#maximum-access-count">最大访问次数</a>。</td></tr><tr><td><strong>🗑️</strong></td><td>此 Send 已达到指定的<a href="send-lifespan.md#deletion-date">删除日期</a>，<strong>正等待删除</strong>。</td></tr></tbody></table>
+<table><thead><tr><th width="100">图标</th><th>含义</th></tr></thead><tbody><tr><td><i class="fa-lock-keyhole">:lock-keyhole:</i></td><td>此 Send <a href="send-privacy.md#send-passwords">受密码保护</a>。</td></tr><tr><td><i class="fa-circle-exclamation">:circle-exclamation:</i></td><td>此 Send 已<a href="send-lifespan.md#manually-disable-or-delete">被手动禁用</a>。</td></tr><tr><td><i class="fa-clock">:clock:</i></td><td>此 Send 已达到指定的<a href="send-lifespan.md#expiration-date">有效期</a>。</td></tr><tr><td><i class="fa-circle-exclamation">:circle-exclamation:</i></td><td>此 Send 已达到指定的<a href="send-lifespan.md#maximum-access-count">最大访问次数</a>。</td></tr><tr><td><i class="fa-trash-can">:trash-can:</i></td><td>此 Send 已达到指定的<a href="send-lifespan.md#deletion-date">删除日期</a>，<strong>正等待删除</strong>。</td></tr></tbody></table>
 
 ## 使用 Send <a href="#using-send" id="using-send"></a>
 
