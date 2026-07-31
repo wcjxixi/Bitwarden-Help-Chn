@@ -47,16 +47,17 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 * **★扩展安装过时提示将 Bitwarden 设置为默认**：安装浏览器扩展时，它现在将提示您[将 Bitwarden 设置为浏览器的默认密码管理器](password-manager/autofill/troubleshoot-autofill/disable-a-browsers-built-in-password-manager.md)。
 * **★Keeper 直接导入器**：使用[新的直接导入选项](password-manager/import-and-export/import-guides/import-from-keeper.md#import-directly-from-keeper)，无需下载导出文件，即可直接从 Keeper Password Manager 传输数据，。
 * **KeePass KDBX 导入器**：您现在可以将受密码或密钥文件加密保护的 [KeePass Password Manager  KDBX 文件直接导入](password-manager/import-and-export/import-guides/cong-keepass-dao-ru.md) Bitwarden。此前，KeePass 数据只能使用未加密的 CSV 或 XML 文件导入。
-* **=SSH 代理更新**：此次发布包含对 SSH 代理的可靠性和性能的更新。在以下文章中了解有关 SSH 代理的更多信息：
+* **SSH 代理更新**：此次发布包含对 SSH 代理的可靠性和性能的更新。在以下文章中了解有关 SSH 代理的更多信息：
   * [关于 SSH](password-manager/developer-tools/ssh/about-ssh.md)：SSH 密钥的概念概述以及 SSH 代理的工作原理。
   * [SSH 代理](password-manager/developer-tools/ssh/ssh-agent.md)：在不同场景中设置和使用 SSH 代理的分步指南。
 * **桌面 App 托盘行为更新**：控制托盘或菜单栏行为和最小化的设置已合并为简化的「[保持 Bitwarden 在后台运行](password-manager/your-vault/app-settings.md)」设置。
 * **禁用自动更新变量重命名**：用于[阻止 Bitwarden 桌面 App 自动更新](password-manager/more/password-manager-faqs.md#q-can-i-turn-off-automatic-updates-for-bitwarden)的环境变量已被重命名。
+* **简化了扩展生物识别**：为浏览器扩展启用生物识别变得更加简单。使用生物识别仍然需要运行桌面 App，但是，您将不再需要启用**允许浏览器集成**选项来执行此操作。了解更多有关[生物识别解锁](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)的信息。
 
 ### Admin Console
 
 * **★密码库横幅企业策略**：管理员现在可以在成员的密码库顶部显示[自定义横幅](admin-console/oversight-visibility/enterprise-policies.md#vault-banner)，例如服务公告或公司提醒事项。
-* **★管理 Send 策略**：组织现在可以使用管理控制台中的**管理 Send** 策略来控制所有与 Send 相关的功能。此[新的策略](admin-console/oversight-visibility/enterprise-policies.md#manage-send)取代了此前一系列独立的 Send 策略。
+* **★Send 事件日志**：现在，创建、编辑、删除和访问 [Send](password-manager/bitwarden-send/about-send.md) 将在 Admin Console 中记录事件。
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 

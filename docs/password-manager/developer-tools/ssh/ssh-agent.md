@@ -1,141 +1,32 @@
-# =SSH 代理
+# SSH 代理
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/ssh-agent/)
 {% endhint %}
 
-Bitwarden Password Manager 桌面 App 可以充当 SSH 代理来安全地加密和存储您的 SSH（安全 Shell）密钥，以用于以下目的：
+Bitwarden Password Manager 桌面 App 可以作为 SSH 代理来安全地加密和存储您的 SSH（安全 Shell）密钥，以用于以下目的：
 
 * 对服务进行身份验证
 * 签署 Git 提交
 * 与基于 SSH 的服务进行交互
 
-Bitwarden SSH 代理将您的密钥组织并保护在一个安全的位置。SSH 密钥可以通过桌面 App、网页 App、浏览器扩展和移动 App 访问。SSH 密钥可以通过桌面 App、网页 App 和浏览器扩展生成。
+有关代理的工作原理、支持的密钥类型、已知限制以及密码库行为的更多信息，请参阅[关于 SSH](about-ssh.md)。
 
-{% hint style="info" %}
-~~SSH 代理需要 2025.1.2 或更新版本。~~
+## 启用 SSH 代理 <a href="#enable-ssh-agent" id="enable-ssh-agent"></a>
 
-~~**macOS**：macOS 商店构建版本目前暂不支持 SSH 代理，~~[~~.dmg 下载~~](https://bitwarden.com/download/)~~可用于获得 SSH 代理支持。~~
+要在 Bitwarden 桌面 App 上启用 SSH 代理，请导航至**设置**然后选中**启用 SSH 代理**。然后，调整**使用 SSH 代理时要求身份验证**设置。该设置将决定 Bitwarden 何时要求验证对 SSH 密钥的访问权限：
 
-~~**Linux**：Flatpak 版本目前暂不支持 SSH 代理，~~[~~Snap 下载~~](https://bitwarden.com/download/#downloads-desktop)~~可用于获得 SSH 代理支持。~~
-{% endhint %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7Fx7AnfIPXmiJpHq1lFhTx/d151287d040a69dcb52d36fc6a4593b9/Enable_SSH_agent_updated.png?w=651&#x26;fm=avif" alt=""><figcaption><p>在桌面客户端上启用 SSH 存储</p></figcaption></figure></div>
 
-## 存储 SSH 密钥 <a href="#storing-an-ssh-key" id="storing-an-ssh-key"></a>
+### 根据密码库状态的行为 <a href="#behavior-by-vault-state" id="behavior-by-vault-state"></a>
 
-您可以在 Bitwarden 桌面 App 中创建并保存新的 SSH 密钥。Bitwarden 存储的 SSH 密钥将包含以下内容：
+SSH 代理的行为会根据密码库的当前状态而有所不同。以下描述的是启用代理后单账户的行为。
 
-| 字段   | 描述                                                                    |
-| ---- | --------------------------------------------------------------------- |
-| 密钥名称 | 您的 SSH 密钥的名称                                                          |
-| 私钥   | 私钥是敏感数据，服务器将使用它来帮助建立安全连接。私钥数据应谨慎处理并保持安全。用户可以使用 Bitwarden 生成一个安全且唯一的私钥 |
-| 公钥   | 与您要连接的服务器共享的密钥的一部分                                                    |
-| 指纹   | 从公钥生成的短唯一字符串，用于识别。例如，可以使用指纹验证 SSH 签名的 Git 提交                          |
+<table><thead><tr><th width="183">密码库状态</th><th width="120">代理运行中</th><th width="111.99993896484375">列出请求</th><th>签署请求</th></tr></thead><tbody><tr><td>已注销</td><td>否</td><td></td><td></td></tr><tr><td>已锁定（初始解锁前）</td><td>是</td><td>支持</td><td>提示解锁密码库</td></tr><tr><td>已锁定（初始解锁后）</td><td>是</td><td>支持</td><td>提示解锁密码库，然后提示授权</td></tr><tr><td>已解锁</td><td>是</td><td>支持</td><td>支持</td></tr></tbody></table>
 
-存储在 Bitwarden 密码管理器中的 SSH 密钥可以访问 Bitwarden 功能，例如[文件夹](../../your-vault/vault-navigation/folders.md)、[收藏](../../your-vault/vault-navigation/favorites.md)、[主密码二次验证](../../your-vault/vault-items/vault-items.md#protect-individual-items)、笔记、[克隆项目](../../your-vault/vault-items/vault-items.md#clone)、[附件](../../your-vault/vault-items/file-attachments.md)和[自定义字段](../../your-vault/vault-items/custom-fields.md)等。
+## 配置您的系统以使用 Bitwarden SSH 代理 <a href="#configure-your-system-to-use-bitwarden-ssh-agent" id="configure-your-system-to-use-bitwarden-ssh-agent"></a>
 
-## 创建新的 SSH 密钥 <a href="#create-new-ssh-key" id="create-new-ssh-key"></a>
-
-可以通过 Bitwarden 桌面 App、网页 App 或浏览器扩展创建新的 SSH 密钥。创建后，存储在 Bitwarden 中的 SSH 密钥可以通过桌面 App、网页 App、浏览器扩展和移动 App 访问。
-
-1、选择**新建**按钮，然后选择 **SSH 密钥**作为项目类型。
-
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1XYC3HwXOTMAPvyW1GS3Mk/1301eaf741b5867a33ba1b679e5a2e38/2026-04-23_12-36-06.png?w=800&#x26;fm=avif" alt=""><figcaption><p>在桌面端创建新的 SSH 密钥</p></figcaption></figure></div>
-
-{% hint style="info" %}
-目前，Bitwarden 只能生成 `ED25519` 类型的 SSH 密钥。
-{% endhint %}
-
-2、填写诸如**名称**等其余详细信息，完成后选择 **💾保存**图标。
-
-### 组织 SSH 密钥 <a href="#organization-ssh-keys" id="organization-ssh-keys"></a>
-
-可以创建 SSH 密钥并将其存储在组织集合中。具有适当权限的组织成员可以创建、管理和访问组织拥有的 SSH 密钥。在[此处](../../../admin-console/manage-shared-items/collections/collection-permissions.md)了解更多有关集合权限的信息。
-
-要将新的共享 SSH 密钥添加到组织密码库：
-
-1、在桌面或网页 App 的密码库视图中，选择 **✚新增**按钮，然后选择 **SSH 密钥**。
-
-{% hint style="success" %}
-组织[所有者、管理员和某些自定义用户](../../../admin-console/manage-members/member-roles.md)也可以直接从 Admin Console 执行此步骤，以跳过此过程中的一些步骤。
-{% endhint %}
-
-2、使用**所有者**下拉列表，选择您希望该项目所属的组织。
-
-3、使用**集合**下拉列表，选择要与其共享此项目的集合。
-
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1YnrhzwCw78KuFsArEioOO/76dceaa53917a8078b1e96f0fcbb5f65/2026-04-23_12-36-17.png?w=800&#x26;fm=avif" alt=""><figcaption><p>共享 SSH 密钥</p></figcaption></figure></div>
-
-{% hint style="info" %}
-通常，使用 SSH 密钥的资源可以支持每用户密钥。我们建议在向组织共享 SSH 密钥之前，先了解 SSH 密钥的最佳实践。
-{% endhint %}
-
-### 编辑现有密钥 <a href="#edit-existing-keys" id="edit-existing-keys"></a>
-
-SSH 密钥保存到 Bitwarden 密钥库中后，您可以对某些关键字段，例如名称、所有者、文件夹和自定义字段进行编辑：
-
-{% tabs %}
-{% tab title="桌面端" %}
-要在 Bitwarden 桌面 App 上编辑 SSH 密钥：
-
-1、打开 Bitwarden 桌面 App 然后导航至 **SSH 密钥**。
-
-2、找到要编辑的 SSH 密钥，然后选择 **✏️编辑**。
-
-3、完成所需更改后，选择 **💾保存**。
-{% endtab %}
-
-{% tab title="网页 App" %}
-要在 Bitwarden 网页 App 上编辑 SSH 密钥：
-
-1、打开 Bitwarden 网页 App 然后导航至 **SSH 密钥**。
-
-2、定位并选择要编辑的 SSH 密钥。屏幕上将出现一个对话框，然后选择**编辑**。
-
-3、完成所需更改后，选择**保存**。
-{% endtab %}
-
-{% tab title="移动端" %}
-要在 Bitwarden 移动 App 上编辑 SSH 密钥：
-
-1、打开 Bitwarden 移动 App 然后导航至 **SSH 密钥**。
-
-2、定位要编辑的 SSH 密钥，然后选择**编辑**。
-
-3、完成所需更改后，选择**保存**。
-{% endtab %}
-
-{% tab title="浏览器扩展" %}
-要在 Bitwarden 浏览器扩展上编辑 SSH 密钥：
-
-1、打开 Bitwarden 浏览器扩展然后导航至 **SSH 密钥**。
-
-2、定位并选择要编辑的 SSH 密钥。屏幕上将出现一个对话框，然后选择**编辑**。
-
-3、完成所需更改后，选择**保存**。
-{% endtab %}
-{% endtabs %}
-
-## 将密钥导入 Bitwarden <a href="#import-key-to-bitwarden" id="import-key-to-bitwarden"></a>
-
-现有的 SSH 密钥可通过桌面客户端导入 Bitwarden。
-
-1、选择**新增**按钮，然后选择 **SSH 密钥**作为项目类型。
-
-2、复制您想要导入到 Bitwarden 的现有 SSH 密钥。
-
-2、使用**从剪贴板导入密钥**图标。这将自动将 SSH 密钥粘贴到 Bitwarden 中。
-
-* 导入的密钥必须是 **OpenSSH** 或 **PKCS#8** 格式。
-
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5QTvyu39h3o0azkjU26P3t/77e877af88307d167daf0f292a38dd03/import-ssh.png?w=1254&#x26;fm=avif" alt=""><figcaption><p>导入 SSH 密钥</p></figcaption></figure></div>
-
-{% hint style="info" %}
-目前，还不兼容从 Putty 导入的 SSH 密钥。
-{% endhint %}
-
-## 配置 Bitwarden SSH 代理 <a href="#configure-bitwarden-ssh-agent" id="configure-bitwarden-ssh-agent"></a>
-
-要将 Bitwarden 用作您的主要 SSH 代理，您需要配置 SSH 客户端，以与 Bitwarden 进行身份验证。
+要将 Bitwarden 用作您的主要 SSH 代理，您需要配置 SSH 客户端，使其与 Bitwarden 进行通信以完成身份验证。在桌面 App 中启用代理后，请配置您的操作系统，将 SSH 请求路由到 Bitwarden：
 
 {% tabs %}
 {% tab title="Windows" %}
@@ -152,78 +43,56 @@ SSH 密钥保存到 Bitwarden 密钥库中后，您可以对某些关键字段�
 3、调整设置后，选择**应用**，然后选择**确定**。
 {% endtab %}
 
-{% tab title="macOS" %}
-### macOS 商店 <a href="#macos-store" id="macos-store"></a>
-
+{% tab title="macOS App Store" %}
 要在 macOS 商店下载上启用 Bitwarden SSH 代理：
 
-1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何执行此操作（将 `<user>` 替换为您的用户名）：
+1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。在下面的示例中，将 `<user>` 替换为您的用户名：
 
 ```bash
 export SSH_AUTH_SOCK=/Users/<user>/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
 ```
 
-### .dmg 下载 <a href="#dmg-download" id="dmg-download"></a>
+2、要使此配置持久生效，请将 `export` 命令添加到您的 `~/.zhrc` 或 `~/.bashrc` 文件中。
+{% endtab %}
 
+{% tab title="macOS .dmg" %}
 要在 macOS .dmg 下载上启用 Bitwarden SSH 代理：
 
-1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何执行此操作（将 `<user>` 替换为您的用户名）：
+1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。在下面的示例中，将 `<user>` 替换为您的用户名：
 
 ```bash
 export SSH_AUTH_SOCK=/Users/<user>/.bitwarden-ssh-agent.sock
 ```
 
-2、或者，配置 SSH\_AUTH\_SOCKET：
+2、或者，配置 `SSH_AUTH_SOCKET`：
 
 ```bash
 launchctl setenv "SSH_AUTH_SOCKET" "/Users/<user>/.bitwarden-ssh-agent.sock"
 ```
 
-### Shell 配置 <a href="#shell-configuration" id="shell-configuration"></a>
+3、要使此配置持久生效，请将 `export` 命令添加到您的 `~/.zhrc` 或 `~/.bashrc` 文件中。
 
-1、访问您的 `.bashrc` 或 `.zshrc` 文件：
-
-```bash
-nano ~/.bashrc
-nano ~/.zshrc
-```
-
-2、在 `.bashrc` 或 `.zshrc` 文件中设置环境变量：
-
-```bash
-export SSH_AUTH_SOCK=/Users/<user>/.bitwarden-ssh-agent.sock
-```
+{% hint style="info" %}
+使用 `launchctl` 命令后，您可能需要重启终端。
+{% endhint %}
 {% endtab %}
 
 {% tab title="Linux" %}
 要在 Linux 上启用 Bitwarden SSH 代理：
 
-1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何执行此操作（将 `<user>` 替换为您的用户名）：
+1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。在下面的示例中，将 `<user>` 替换为您的用户名：
 
 ```bash
 export SSH_AUTH_SOCK=/home/<user>/.bitwarden-ssh-agent.sock
 ```
 
-### Shell 配置 <a href="#shell-configuration" id="shell-configuration"></a>
+2、要使此配置持久生效，请将 `export` 命令添加到您的 `~/.zhrc` 或 `~/.bashrc` 文件中。
+{% endtab %}
 
-1、访问您的 `.bashrc` 或 `.zshrc` 文件：
-
-```bash
-nano ~/.bashrc
-nano ~/.zshrc
-```
-
-2、在 `.bashrc` 或 `.zshrc` 文件中设置环境变量：
-
-```bash
-export SSH_AUTH_SOCK=/home/<user>/.bitwarden-ssh-agent.sock
-```
-
-### Snap 和 Flatpak <a href="#snap-and-flatpak" id="snap-and-flatpak"></a>
-
+{% tab title="Snap 和 Flatpak" %}
 要在 Snap 和 Flatpak 安装上启用 Bitwarden SSH 代理：
 
-1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。下面的示例演示了如何执行此操作（将 `<user>` 替换为您的用户名）：
+1、配置 `SSH_AUTH_SOCK` 变量，使其指向 Bitwarden SSH 代理套接字。在下面的示例中，将 `<user>` 替换为您的用户名：
 
 ```bash
 # Snap
@@ -235,58 +104,43 @@ export SSH_AUTH_SOCK=/home/<user>/.var/app/com.bitwarden.desktop/data/.bitwarden
 {% endtab %}
 {% endtabs %}
 
-## 启用 SSH 代理 <a href="#enable-ssh-agent" id="enable-ssh-agent"></a>
+## 测试 SSH 代理 <a href="#test-ssh-agent" id="test-ssh-agent"></a>
 
-要在 Bitwarden 桌面 App 上启用 SSH 代理，请导航至**设置**然后选中**启用 SSH 代理**。
-
-启用 SSH 代理后，还可以调整**使用 SSH 代理时要求身份验证**设置。该设置将决定 Bitwarden 何时要求验证对 SSH 密钥的访问权限：
-
-* 总是
-* 从不
-* 记住直到密码库被锁定
-
-默认情况下将选择**始终**。
-
-## 测试 SSH 密钥 <a href="#testing-ssh-keys" id="testing-ssh-keys"></a>
-
-为 Bitwarden 配置好 SSH 代理后，我们就可以通过请求 SSH 列表来测试设置：
+为 Bitwarden 配置好 SSH 代理后，我们可以通过请求 SSH 列表来测试设置：
 
 ```bash
 ssh-add -L
 ```
 
-这将返回保存在 Bitwarden 桌面客户端中的 SSH 密钥列表。
+## 场景与工作流程 <a href="#scenarios-and-workflows" id="scenarios-and-workflows"></a>
 
-{% hint style="info" %}
-访问 SSH 密钥时，Bitwarden 的行为会根据客户端的锁定或解锁状态而有所不同：
+代理已启用且操作系统已配置完成后，您就可以在各种工具和工作流程中使用 Bitwarden SSH 密钥了。以下场景将为一系列常见设置和用例提供分步配置指南。
 
-* **已锁定的密码库**：如果您的 Bitwarden 密码库处于锁定状态，Bitwarden 会自动提示您解锁密码库以获取 SSH 密钥。
-* **已解锁的密码库**：如果桌面密码库已解锁，系统将提示您确认 SSH 密钥的使用。
-{% endhint %}
+### 使用 SSH 通过 Git 进行身份验证 <a href="#use-ssh-to-authenticate-with-git" id="use-ssh-to-authenticate-with-git"></a>
 
-### 使用 SSH 密钥对 Git 进行身份验证 <a href="#use-ssh-key-to-authenticate-with-git" id="use-ssh-key-to-authenticate-with-git"></a>
+SSH 可用于 Git 身份验证。Bitwarden SSH 代理能为您的 Git 工作流增添安全性和易用性。在本示例中，Bitwarden SSH 代理将用于向 GitHub 进行身份验证。
 
-SSH 可用于 Git 身份验证。Bitwarden SSH 代理能为你的 Git 工作流增添安全性和易用性。在本示例中，Bitwarden SSH 代理将用于验证 GitHub。
+1、在您的 GitHub 账户上，通过导航至**设置** → **SSH 和 GPG 密钥**，然后选择**新建 SSH 密钥**，来设置一个 SSH 密钥。
 
-1、在您的 GitHub 账户上，通过导航至**设置** → **SSH 和 GPG 密钥**，然后选择**新建 SSH 密钥**，来设置 SSH 密钥。
+2、在添加新 SSH 密钥界面，添加**名称**，选择**密钥类型**，选择 `Authentication Key`。将 Bitwarden 密码库中的**公钥**复制并粘贴到 GitHub 上的**密钥**字段。
 
-2、在添加新 SSH 密钥界面，添加**名称**，选择**密钥类型**，选择**验证密钥**。将 Bitwarden 密码库中的**公钥**复制并粘贴到 GitHub 上的**密钥**字段。
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1bZWyhzPtdpdhoDM6GNYdz/3c326b32d15d134ff7532a57041ceff4/2025-02-12_11-26-35.png?w=760&#x26;fm=avif" alt=""><figcaption><p>创建新的 GitHub 密钥</p></figcaption></figure></div>
 
-3、完成所有字段后，选择**添加 SSH 密钥**以保存密钥。在保存密钥之前，GitHub 会要求您验证 GitHub 账户。
+3、完成所有字段后，选择**添加 SSH 密钥**以保存密钥。在保存密钥之前，GitHub 会要求您验证您的 GitHub 账户。
 
-4、在终端测试 GitHub SSH 密钥，假如您使用的是 macOS：
+4、在终端测试 GitHub SSH 密钥，例如您使用的是 macOS：
 
 ```bash
 ssh git@github.com
 ```
 
-5、如果成功，Bitwarden 会提示您验证访问请求。选择**授权**以确认。如果成功，您将收到一条验证身份验证尝试的消息：
+5、如果成功，Bitwarden 将提示您验证访问请求。选择**授权**以确认。如果成功，您将收到一条验证身份验证尝试的消息：
 
 ```
 Hi <USER>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-## 使用 Git 存储库进行身份验证 <a href="#authenticate-with-git-repositories" id="authenticate-with-git-repositories"></a>
+### 使用 Git 存储库进行身份验证 <a href="#authenticate-with-git-repositories" id="authenticate-with-git-repositories"></a>
 
 使用 Bitwarden SSH 代理签署 SSH Git 提交。在使用 Bitwarden SSH 代理签署 Git 提交之前，系统需要满足以下条件：
 
@@ -302,7 +156,7 @@ git --version
 ssh -V
 ```
 
-* 成功启用了 SSH 代理的 Bitwarden 桌面客户端。
+* 启用了 SSH 代理的 Bitwarden 桌面客户端。
 
 ### 为 SSH 签名配置 Git <a href="#configure-git-for-ssh-signing" id="configure-git-for-ssh-signing"></a>
 
@@ -402,6 +256,8 @@ touch ~/.ssh/allowedSigners
 
 5、使用 SSH 密钥以 SSH 方式克隆您的存储库：
 
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/76Snkd9TQMrVMmegeJRqK/21836de7c7500b9ebdabaeb1d17b9659/2025-02-12_17-16-13.png?w=420&#x26;fm=avif" alt=""><figcaption><p>SSH 克隆</p></figcaption></figure></div>
+
 ```bash
 git clone git@github.com:<USER>/<repository>.git
 ```
@@ -412,7 +268,9 @@ git clone git@github.com:<USER>/<repository>.git
 git commit -m "This commit is signed using SSH"
 ```
 
-7、Bitwarden 将提示您对此密钥的使用进行授权。
+7、Bitwarden 将根据用户设置提示您对此密钥的使用进行授权。
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/0aGz4U3YpB63EHRWVU2YY/d7e7883eb93065205226df80ffebde7c/github_auth_key.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>使用客户端授权 SSH</p></figcaption></figure></div>
 
 8、授权后，将初始化 SSH 密钥以批准提交。现在您可以推送提交：
 
@@ -422,24 +280,38 @@ git push
 
 9、通过导航到 GitHub commits 以验证您在 Github 上的提交。
 
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1PR4Sss3Pvf3anlau5AlgC/ecfdb02b50fb83f59a21ebc7ed550042/2025-02-12_14-51-41.png?w=565&#x26;fm=avif" alt=""><figcaption><p>在 GitHub 中验证您的提交</p></figcaption></figure></div>
+
 ## SSH 代理转发 <a href="#ssh-agent-forwarding" id="ssh-agent-forwarding"></a>
 
 SSH 代理转发允许您访问的远程服务器使用您的密钥向其他服务器进行身份验证，而不会将您的私钥暴露在密码库之外。您登录的服务器可以请求您的本地 Bitwarden 实例对远程服务器进行身份验证。在本例中，我们将演示在服务器之间传输一个文件：
 
-1、首先，通过导航至**设置**然后**启用 SSH 代理**，确保已在 Bitwarden 桌面 App 上启用 SSH 代理：
+1、创建新的 SSH 密钥或导入现有的 SSH 密钥到 Bitwarden 桌面 App。
 
-2、创建新的 SSH 密钥或导入现有的 SSH 密钥到 Bitwarden 桌面 App。
-
-3、打开与要发送文件的服务器的连接，激活代理转发：
+2、打开与要发送文件的服务器的连接，激活代理转发：
 
 ```bash
 ssh -A <Hostname>
 ```
 
-4、向服务器发送一个文件：
+3、向服务器发送一个文件：
 
 ```bash
 rsync -avzP ./TEST.txt <USER>@<Hostname>:/home/<USER>/test.txt
 ```
 
-5、Bitwarden 会提示您批准此 SSH 密钥得访问权限。将显示 SSH 密钥已被请求并用于完成文件传输。
+4、Bitwarden 将提示您批准此 SSH 密钥的访问权限。将显示 SSH 密钥已被请求并用于完成文件传输。
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4TPhGUdynuGBHj1l4zmUcS/04aae27ee063080afc5fbd6183a354b3/Confirm_SSH_key_usage.webp?w=960&#x26;fm=avif" alt=""><figcaption><p>确认 SSH 代理转发</p></figcaption></figure></div>
+
+## 故障排除 <a href="#troubleshooting" id="troubleshooting"></a>
+
+以下部分包括用户在使用 SSH 代理时可能遇到的常见问题。
+
+`Error connecting to agent: Connection refused`
+
+* 代理未运行；请确认其已正确启用，然后检查 App 日志。
+
+`ssh <action>` fails
+
+* 尝试使用 `-vvv` 运行命令，然后捕获输出以在错误报告中分享。

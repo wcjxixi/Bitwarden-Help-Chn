@@ -4,7 +4,17 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/about-send/)
 {% endhint %}
 
-Bitwarden Send 是一种加密的文件和文本共享工具，可通过安全的临时链接将敏感信息直接传输给任何人。Send 可用于传输多达 1000 个加密字符的文本或多达 500 MB（或移动设备上为 100 MB）的文件，并可以通过文本、电子邮件或任何您喜欢的通信渠道[与任何人分享](receive-a-send.md)。
+Bitwarden Send 是一种加密的文件和文本共享工具，可通过安全、临时的链接将敏感的文本或文件直接传输给任何人。Send 可用于传输多达 1000 个加密字符的文本或多达 500 MB（或移动设备上为 100 MB）的文件，并可以通过文本、电子邮件或任何您喜欢的通信渠道[与任何人分享](receive-a-send.md)。
+
+{% hint style="info" %}
+如果您所在的组织已在[管理 Send 策略](../../admin-console/oversight-visibility/enterprise-policies.md#manage-send)下关闭了 Send 功能，您对 Send 的访问将受到限制：
+
+* 您无法创建新的 Send，也无法编辑现有的 Send。
+* 您可以在所有 Bitwarden 客户端（网页 App 除外）的 **Send** 页面查看和删除 Send。
+* 您无法通过 Bitwarden 网页 App 访问 Send 页面。
+
+使用管理 Send 策略，组织所有者和管理员还可以控制创建新 Send 时哪些字段不可用。
+{% endhint %}
 
 ## 访问 Send <a href="#accessing-send" id="accessing-send"></a>
 
@@ -12,27 +22,19 @@ Bitwarden Send 是一种加密的文件和文本共享工具，可通过安全�
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7umXxS0YG58NdB3vb4kwKo/c2a5f8ae8fa0bae6becb2e20e7f59390/2026-02-24_12-52-46.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>网页 App 中的 Send</p></figcaption></figure></div>
 
-{% hint style="info" %}
-如果您是激活了 [Send 控制策略](../../admin-console/oversight-visibility/enterprise-policies.md#send-controls)中的**禁用 Send** 选项的组织的成员，则您无法创建新的 Send 或编辑现有的 Send。虽然强制执行此策略时无法使用 Bitwarden 网页 App 访问 Send 页面，但您可以从任何其他客户端查看或删除现有的 Send。
-{% endhint %}
+每个 Send 都有一个[配置的生命周期](send-lifespan.md)，以允许您跟踪 Send。每当发生一个生命周期事件（例如，到期）时，您创建的 Send 将显示状态图标：
+
+<table><thead><tr><th width="100">图标</th><th>含义</th></tr></thead><tbody><tr><td><strong>🔒</strong></td><td>此 Send <a href="send-privacy.md#send-passwords">受密码保护</a>。</td></tr><tr><td><strong>⚠</strong></td><td>此 Send 已<a href="send-lifespan.md#manually-disable-or-delete">被手动禁用</a>。</td></tr><tr><td><strong>🕘</strong></td><td>此 Send 已达到指定的<a href="send-lifespan.md#expiration-date">有效期</a>。</td></tr><tr><td><strong>⚠</strong></td><td>此 Send 已达到指定的<a href="send-lifespan.md#maximum-access-count">最大访问次数</a>。</td></tr><tr><td><strong>🗑️</strong></td><td>此 Send 已达到指定的<a href="send-lifespan.md#deletion-date">删除日期</a>，<strong>正等待删除</strong>。</td></tr></tbody></table>
 
 ## 使用 Send <a href="#using-send" id="using-send"></a>
 
-使用 Bitwarden Send 是一个简单的两步过程：[创建您的 Send](create-a-send.md) 然后与[目标接收者](receive-a-send.md)分享。要创建 Send：
+使用 Bitwarden Send 是一个三步过程：
 
-1、选择**新增 Send**：
+1、[创建 Send](create-a-send.md) 并选择所需的[生命周期选项](send-lifespan.md)和[隐私选项](send-privacy.md)以满足您的分享需求。
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5ixV8tBpmNQsujpAfan69u/bc04bef94830ec05cfa414bc4b1d7a58/2026-02-24_10-39-18.png?w=450&#x26;fm=avif" alt=""><figcaption><p>新增 Send</p></figcaption></figure></div>
+2、通过您喜欢的任何通信渠道分享 Send 链接。
 
-2、择所需的[生命周期选项](send-lifespan.md)和[隐私选项](send-privacy.md)以满足您的分享意愿。
-
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5vAk27se4vF8LYczDueYex/9b624f8fd77801241f48263f4428e16d/2026-02-24_10-48-59.png?w=450&#x26;fm=avif" alt=""><figcaption><p>Send 选项</p></figcaption></figure></div>
-
-3、使用您喜欢的任何通信渠道分享 Send 链接。
-
-每个 Send 都有一个[配置的生命周期](send-lifespan.md)，以允许您跟踪 Send。每当发生一个生命周期事件（例如，到期）时，Send 将显示[一组状态图标](send-faqs.md#q-what-do-the-icons-next-to-my-sends-indicate)。图标如下：
-
-<table><thead><tr><th width="100">图标</th><th>含义</th></tr></thead><tbody><tr><td><strong>🔒</strong></td><td>此 Send <a href="send-privacy.md#send-passwords">受密码保护</a>。</td></tr><tr><td><strong>⚠</strong></td><td>此 Send 已<a href="send-lifespan.md#manually-disable-or-delete">被手动禁用</a>。</td></tr><tr><td><strong>🕘</strong></td><td>此 Send 已达到指定的<a href="send-lifespan.md#expiration-date">有效期</a>。</td></tr><tr><td><strong>⚠</strong></td><td>此 Send 已达到指定的<a href="send-lifespan.md#maximum-access-count">最大访问次数</a>。</td></tr><tr><td><strong>🗑️</strong></td><td>此 Send 已达到指定的<a href="send-lifespan.md#deletion-date">删除日期</a>，<strong>正等待删除</strong>。</td></tr></tbody></table>
+3、[接收者打开 Send 链接](receive-a-send.md)以访问其内容。
 
 ## Send 安全性 <a href="#send-security" id="send-security"></a>
 
@@ -75,5 +77,5 @@ Send 是为短暂分享而设计的，所以您[创建的每一个 Send](create-
 现在您已经了解了 Bitwarden Send 的基础知识，我们建议：
 
 * [创建您的第一个 Send](create-a-send.md)
-* [高级会员的文件 Send](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)
+* [升级到高级版以使用文件 Send](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)
 * 更多有关 Send 的更深入概述，请参阅 [Bitwarden Send - How it works](https://bitwarden.com/blog/bitwarden-send-how-it-works/)。

@@ -1,13 +1,30 @@
-# 创建 Send
+# =创建 & 编辑 Send
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/create-send/)
 {% endhint %}
 
-任何用户都可以创建文本 Send，但文件 Send 的创建仅适用于[高级用户](../../plans-and-pricing/password-manager/about-bitwarden-plans.md)，或付费组织（家庭版、团队版或企业版）的成员。
+Bitwarden Send 功能让您能够通过安全生成的链接，与任何人分享加密的文本或文件。您可以从任何 Bitwarden App 中创建 Send，并根据您的分享需求配置访问权限和隐私选项。
 
 {% hint style="info" %}
-如果您是激活了 [Send 控制策略](../../admin-console/oversight-visibility/enterprise-policies.md#send-controls)中的**禁用 Send** 选项的组织的成员，则您无法创建新的 Send 或编辑现有的 Send。虽然强制执行此策略时无法使用 Bitwarden 网页 App 访问 Send 页面，但您可以从任何其他客户端查看或删除现有的 Send。
+如果您所在的组织已在[管理 Send 策略](../../admin-console/oversight-visibility/enterprise-policies.md#manage-send)下关闭了 Send 功能，您对 Send 的访问将受到限制：
+
+* 您无法创建新的 Send，也无法编辑现有的 Send。
+* 您可以在所有 Bitwarden 客户端（网页 App 除外）的 **Send** 页面查看和删除 Send。
+* 您无法通过 Bitwarden 网页 App 访问 Send 页面。
+
+使用管理 Send 策略，组织所有者和管理员还可以控制创建新 Send 时哪些字段不可用。
+{% endhint %}
+
+## 创建 Send <a href="#create-a-send" id="create-a-send"></a>
+
+有两种类型的 Send：
+
+* **文本 Send** 共享加密的文本内容，例如消息或笔记。所有 Bitwarden 用户都可以创建和编辑文本 Send。
+* **文件 Send** 包含加密的文件，例如文档或图片。只有高级版用户或付费版组织（家庭版、团队版或企业版）的成员才能创建文件 Send。要创建文件 Send，您账户的电子邮箱地址也必须已经过验证。
+
+{% hint style="info" %}
+如果您的账户较旧，您可能需要主动验证您的电子邮箱。登录[网页 App](https://vault.bitwarden.com/) 然后选择**验证电子邮箱**。如果您的账户电子邮箱未经验证，则无法创建 [Send](about-send.md)。
 {% endhint %}
 
 选择您想要使用 Send 的 Bitwarden App 以开始：
@@ -19,16 +36,14 @@
 1、从导航栏选择 **Send**。
 
 {% hint style="info" %}
-该视图将列出尚未达到[删除日期](send-lifespan.md#deletion-date)的所有 Send。与**密码库**视图一样，您可以选择某一可用的**类型**来筛选 Send。
+该页面将列出您创建的尚未达到[删除日期](send-lifespan.md#deletion-date)的所有 Send。您可以选择某一可用的**类型**来筛选 Send。
 {% endhint %}
 
-2、选择 ✚**新建 Send** 按钮：
+2、选择 ✚**新建**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/9KgYcB25tb8NfYnitr0c0/a874be205a9a09ed66ad33a8d4c95ca9/2026-02-25_10-37-01.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>新建 Send</p></figcaption></figure></div>
 
-3、在**新建 Send** 对话框中，指定如下内容：
-
-* **这是什么类型的 Send？**：选择此 Send 是**文本**还是**文件**：
+3、选择要创建的 Send 的类型：**文本**或**文件**。
 
 <table><thead><tr><th width="100">类型</th><th>步骤</th></tr></thead><tbody><tr><td><strong>文本</strong></td><td><p>在输入框中输入或粘贴所需的文本。切换<strong>访问 Send 时，默认隐藏文本</strong>选项，将要求接收者在打开 Send 时<a href="send-privacy.md">切换可见性</a>。加密后的 Send 不能超过 1000 个字符。</p><p></p><p>保存时，Send 文本的字符数会因加密而增加，这意味着一个 700 个字符的 Send 文本在与 Bitwarden 接触时会增加到 ~1,000 个字符，从而触发错误。根据经验，加密后字符数会增加 30-50%。</p></td></tr><tr><td><strong>文件</strong></td><td>选择<strong>选择文件</strong>按钮，然后浏览用于 Send 的文件。每个 Send 的最大文件大小为 500 MB（移动端是 100 MB）。（<strong>要求高级版</strong> &#x26; 验证电子邮箱）</td></tr></tbody></table>
 
@@ -149,7 +164,7 @@ Send 创建后，选择 **≡** 然后选择**复制 Send 链接**按钮以将�
 * **名称**：为此 Send 指定一个可识别的有含义的名称。
 
 默认情况下，Send 将在其创建后的 7 天后删除。您可以使用 \
-&#xNAN;**⋁附加选项**菜单更改它以及更改其他选项（请参阅第 4 步），否则，点击**保存**以完成创建 Send。
+**⋁附加选项**菜单更改它以及更改其他选项（请参阅第 4 步），否则，点击**保存**以完成创建 Send。
 
 4、根据需要配置以下选项：
 
