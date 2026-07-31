@@ -46,8 +46,8 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 * **Android 支持 CXP**：使用 Android 10+，您可以在 Bitwarden 与任何支持 [FIDO 凭据交换协议](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)的 Android App 之间[直接导入](password-manager/import-and-export/import-data.md#yi-dong-duan)或[直接导出](password-manager/import-and-export/export-vault-data.md#yi-dong-duan)数据。
 * **★扩展安装过时提示将 Bitwarden 设置为默认**：安装浏览器扩展时，它现在将提示您[将 Bitwarden 设置为浏览器的默认密码管理器](password-manager/autofill/troubleshoot-autofill/disable-a-browsers-built-in-password-manager.md)。
 * **★Keeper 直接导入器**：使用[新的直接导入选项](password-manager/import-and-export/import-guides/import-from-keeper.md#import-directly-from-keeper)，无需下载导出文件，即可直接从 Keeper Password Manager 传输数据，。
-* **=KeePass KDBX 导入器**：您现在可以将受密码或密钥文件加密保护的 [KeePass Password Manager  KDBX 文件直接导入](password-manager/import-and-export/import-guides/cong-keepass-dao-ru.md) Bitwarden。此前，KeePass 数据只能使用未加密的 CSV 或 XML 文件导入。
-* **SSH 代理更新**：此次发布包含对 SSH 代理的可靠性和性能的更新。在以下文章中了解有关 SSH 代理的更多信息：
+* **KeePass KDBX 导入器**：您现在可以将受密码或密钥文件加密保护的 [KeePass Password Manager  KDBX 文件直接导入](password-manager/import-and-export/import-guides/cong-keepass-dao-ru.md) Bitwarden。此前，KeePass 数据只能使用未加密的 CSV 或 XML 文件导入。
+* **=SSH 代理更新**：此次发布包含对 SSH 代理的可靠性和性能的更新。在以下文章中了解有关 SSH 代理的更多信息：
   * [关于 SSH](password-manager/developer-tools/ssh/about-ssh.md)：SSH 密钥的概念概述以及 SSH 代理的工作原理。
   * [SSH 代理](password-manager/developer-tools/ssh/ssh-agent.md)：在不同场景中设置和使用 SSH 代理的分步指南。
 * **桌面 App 托盘行为更新**：控制托盘或菜单栏行为和最小化的设置已合并为简化的「[保持 Bitwarden 在后台运行](password-manager/your-vault/app-settings.md)」设置。

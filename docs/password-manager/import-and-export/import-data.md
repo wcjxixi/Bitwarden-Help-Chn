@@ -115,41 +115,53 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 
 #### 使用 iOS 设备 CXP <a href="#cxp-with-ios-devices" id="cxp-with-ios-devices"></a>
 
-要使用 **iOS 26+** 的移动设备导入数据：
+要使用 **iOS 26+** 移动设备导入数据：
 
-1、
+1、打开保存有数据的其他兼容 CXP 的密码管理器 App。
 
-2、
+2、根据 App 的不同，找到导出数据选项，然后选择要导入的项目。您可能需要完成额外步骤，例如登录或确认您要移动数据。
 
-3、
+{% hint style="info" %}
+例如，在 **Apple 密码** App 中：
 
-4、
+1. 点击 **⋯**&#x9009;项图标。
+2. 点击**导出数据到其他 App**。
+3. 在出现的列表中，勾选您想要转移的密码和通行密钥。完成后，点击**继续**。
+{% endhint %}
 
-5、
+3、在**导出密码**界面上，点击**继续**。
 
-6、
+4、选择 **Bitwarden** 作为目标位置，然后点击**继续**。
 
-7、
+5、点击**在 Bitwarden 中继续**。
+
+6、Bitwarden App 将打开。点击**继续**以确认导入。
+
+7、完成后，将出现一条消息，确认您的数据已成功导入。
 
 #### 使用 **Android** 设备 CXP <a href="#cxp-with-android-devices" id="cxp-with-android-devices"></a>
 
-要使用 **Android 10+** 的移动设备导入数据：
+要使用 **Android 10+** 移动设备导入数据：
 
-1、
+1、打开 Bitwarden 应用。
 
-2、
+2、点击**设置**。
 
-3、
+3、点击**密码库**。
 
-4、
+4、点击**导入项目**。
 
-5、
+5、点击**从其他 App 导入**。
 
-6、
+6、选择您保存数据的其他兼容 CXP 的密码管理器 App，然后点击**继续**。
 
-7、
+7、根据 App 的不同，选择要导入的项目。您可能需要完成额外步骤，例如登录或确认您要移动数据。
 
-8、
+8、完成后，将出现一条消息，确认您的数据已成功导入。
+
+{% hint style="info" %}
+目前，Android 不支持通过 CXP 导入 Dashlane 数据。
+{% endhint %}
 {% endtab %}
 
 {% tab title="桌面端" %}

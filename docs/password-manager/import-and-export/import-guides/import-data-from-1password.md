@@ -40,7 +40,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 {% hint style="info" %}
 虽然某些项目类型无法导入，但您仍可将其添加到密码库：
 
-* 将[文件附件](../../your-vault/vault-items/file-attachments.md)单独上传到新的密码库。
+* 将[文件附件](../../your-vault/vault-items/file-attachments.md)逐个上传到新的密码库。
 * 在新的密码库中重新创建 [Send](../../bitwarden-send/about-send.md)。
 {% endhint %}
 
@@ -58,7 +58,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="success" %}
+{% hint style="info" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
@@ -93,7 +93,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="success" %}
+{% hint style="info" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
@@ -129,7 +129,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="success" %}
+{% hint style="info" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
