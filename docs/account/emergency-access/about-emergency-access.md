@@ -25,7 +25,7 @@
 
 任何拥有免费版或高级版 Bitwarden 账户且位于同一 [Bitwarden 服务器](../../security/server-geographies.md)的用户，均可被指定为受信任的紧急联系人。高级版用户可设置的受信任紧急联系人的数量没有限制。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您是组织管理员，在员工离职或继任规划期间，[账户恢复](../../admin-console/manage-members/account-recovery/about-account-recovery.md)可能更适合管理员工账户的访问权限。
 {% endhint %}
 

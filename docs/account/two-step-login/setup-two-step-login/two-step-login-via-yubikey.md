@@ -6,7 +6,7 @@
 
 YubiKey OTP 方式的两步登录适用于高级用户，包括付费组织（家庭版、团队版或企业版）的成员。可以使用任何[支持 OTP 功能的 YubiKey](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/)，包括所有 YubiKey 4 和 5 系列设备以及 YubiKey NEO 和 YubiKey NFC。您最多可以将 5 个 YubiKey 添加到您的账户中。Bitwarden 还支持[通行密钥方式的两步登录](two-step-login-via-fido.md)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 大多数现代 YubiKey，包括 5 系列钥匙，都支持 FIDO2 WebAuthn 协议。如果您的钥匙支持（可以使用 [Yubico Authenticator](https://www.yubico.com/products/yubico-authenticator/) 桌面应用程序来检测），我们建议按照[这些说明](two-step-login-via-fido.md)将您的钥匙设置为 FIDO2 WebAuthn 设备。
 {% endhint %}
 
@@ -14,7 +14,7 @@ YubiKey OTP 方式的两步登录适用于高级用户，包括付费组织（�
 
 要启用 YubiKey 方式的两步登录：
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **丢失对两步登录设备的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
 
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../password-manager/import-and-export/export-vault-data.md)来备份密码库数据。
@@ -38,7 +38,7 @@ YubiKey OTP 方式的两步登录适用于高级用户，包括付费组织（�
 
 8、选择**保存**。一个绿色的 `已启用` 消息表明 YubiKey 方式的两步登录已被启用。
 
-9、选择**关闭**，然后确认 **YubiKey OPT 安全密钥**选项现在已被启用（通过一个绿色的勾号 **✔️** 指示）。
+9、选择**关闭**，然后确认 **YubiKey OPT 安全密钥**选项现在已被启用（通过一个绿色的勾号 (<i class="fa-check">:check:</i>) 指示）。
 
 重复此过程以向您的账户中添加最多 5 个 YubiKey。
 
@@ -64,7 +64,7 @@ YubiKey OTP 方式的两步登录适用于高级用户，包括付费组织（�
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7jikprFVd3XRhOGRCLrEYT/82b0a7332797a1c6ee6add081ea40ab9/2025-03-25_10-15-37.png?w=874&#x26;fm=avif" alt=""><figcaption><p>YubiKey 提示</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 勾选**记住我**复选框，以让 Bitwarden 在接下来的 30 天内可以识别您的设备。选择此选项意味着在此期间您不会被要求完成两步登录步骤。
 {% endhint %}
 

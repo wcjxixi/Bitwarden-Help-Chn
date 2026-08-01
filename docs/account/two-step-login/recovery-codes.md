@@ -6,6 +6,10 @@
 
 当您激活任何[两步登录方式](setup-two-step-login/two-step-login-methods.md)时，Bitwarden 会提供一个唯一的恢复代码。如果您[丢失了身份验证设备](../lost-two-step-device.md)，请使用此代码断开所有两步登录方式并重新获得对您账户的访问权限。如果您同时丢失了恢复代码和两步设备（例如带有验证器 App 的手机或已链接的电子邮箱收件箱），您可能会被锁定在您的密码库之外。
 
+{% hint style="success" icon="lightbulb" %}
+如果您在组织中注册了[账户恢复](../../admin-console/manage-members/account-recovery/about-account-recovery.md)，则可以要求组织所有者或管理员重置您的两步登录。此方法不需要您的个人恢复代码，如下所述。
+{% endhint %}
+
 ## 保存您的恢复代码 <a href="#save-your-recovery-code" id="save-your-recovery-code"></a>
 
 启用任何两步登录方式后，应立即保存您的恢复代码，并将其存储在您选择的安全位置。将打印副本保存在安全的地方是一个不错的选择，因为它可以防止数字盗窃和意外删除。
@@ -22,7 +26,7 @@
 
 3、选择**查看恢复代码**：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2BsKs83g4cmiCUwxf2ad83/b2a90e85355f3d937aeb46139203737e/2024-12-02_10-54-31.png?w=1014&#x26;fm=avif" alt=""><figcaption><p>两步登录</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2IjxRoQwl1powHRhah6Bq/39067a5fe6c53732054f323e4afb431b/Screenshot_2025-12-31_at_1.52.00%C3%A2__PM.png?w=1259&#x26;fm=avif" alt=""><figcaption><p>两步登录设置</p></figcaption></figure></div>
 
 4、输入您的主密码然后选择**继续**。您的恢复代码将出现：
 

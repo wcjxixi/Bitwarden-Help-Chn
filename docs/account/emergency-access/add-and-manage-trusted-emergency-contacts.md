@@ -18,7 +18,7 @@
 
 1、在 Bitwarden 网页 App 中，转到**设置** → **紧急访问**。
 
-2、选择 ✚**添加紧急联系人**：
+2、选择 <i class="fa-plus">:plus:</i>**添加紧急联系人**：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3gb0Zm4K935RUmzjd62eJq/a3930a8381fe1205b655e7a7bb0eca47/2025-12-31_09-50-39.png?w=966&#x26;fm=avif" alt=""><figcaption><p>紧急访问页面</p></figcaption></figure></div>
 
@@ -56,7 +56,7 @@
 
 1、在 Bitwarden 网页 App 中，转到**设置** → **紧急访问**。
 
-2、当受邀请的用户显示 `需要确认` 状态时，选择 **≡**&#x83DC;单图标。
+2、当受邀请的用户显示 `需要确认` 状态时，选择 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**菜单图标**。
 
 3、从下拉菜单中选择**确认**：
 
@@ -90,7 +90,7 @@
 
 4、选择**保存**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您也可以从**设置** → **紧急访问**中管理[待处理或已授权的紧急访问请求](request-and-grant-emergency-access.md#approve-or-deny-an-emergency-access-request)。
 {% endhint %}
 

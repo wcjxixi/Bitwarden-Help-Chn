@@ -34,7 +34,7 @@ Duo 为应用程序用户引入了[通用提示](https://duo.com/docs/universal-
 
 ### 在 Bitwarden 中设置 Duo <a href="#setup-duo-in-bitwarden" id="setup-duo-in-bitwarden"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **丢失对两步登录设备的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
 
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../password-manager/import-and-export/export-vault-data.md)来备份密码库数据。
@@ -58,11 +58,9 @@ Duo 为应用程序用户引入了[通用提示](https://duo.com/docs/universal-
 
 5、选择**启用**按钮。
 
-一个绿色的 `已启用` 消息将出现，表明已为您的密码库启用了 Duo。选择**关闭**按钮然后查看 **Duo** 选项上有一个绿色的勾号（**✔️**）以再次检查。
+一个绿色的 `已启用` 消息将出现，表明已为您的密码库启用了 Duo。选择**关闭**按钮然后查看 **Duo** 选项上有一个绿色的勾号 (<i class="fa-check">:check:</i>) 以再次检查。
 
-{% hint style="info" %}
 我们建议在继续测试两步登录之前，将活动的网页密码库选项卡保持为打开状态，以防配置错误。确认其正常工作后，请注销所有的 Bitwarden App，以要求每个 App 使用两步登录。您最终会被自动注销。
-{% endhint %}
 
 {% hint style="info" %}
 在网闸 (Air-gapped) 网络上运行的自托管实例可能需要额外的设置才能保持与 Duo 的服务器通信。
@@ -97,7 +95,7 @@ Duo 为应用程序用户引入了[通用提示](https://duo.com/docs/universal-
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5Mm1G5tjfPmzs5V8obaxl1/8e2a79bbf29d5017147953bddb9e10a2/2025-04-08_14-15-43.png?w=506&#x26;fm=avif" alt=""><figcaption><p>Duo 2FA 设置</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果 Duo 没有提示您注册设备，请尝试使用隐身或隐私浏览窗口登录。
 {% endhint %}
 
@@ -130,12 +128,16 @@ Bitwarden 将仅识别具有电子邮箱地址用户名的用户。没有电子�
 
 5、将 **User access** 切换为 **Enable for all users**。
 
+{% hint style="info" %}
+为所有成员启用了 Duo 的组织不应使用[要求两步登录](../../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)策略。组织 Duo 由提供商强制执行，无法满足策略的两步登录要求。
+{% endhint %}
+
 ### 在 Bitwarden 中设置 Duo <a href="#setup-duo-in-bitwarden" id="setup-duo-in-bitwarden"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 初始化配置和设置 Duo 后，在从 Duo 管理面板进行任何进一步的应用程序配置更改之前，为组织禁用它**非常重要**。要进行配置更改：在 Bitwarden 中禁用 Duo，在 Duo 管理面板中进行必要的更改，然后在 Bitwarden 中重新启用 Duo。
 
-这是因为 Duo for organizations 目前不支持[恢复代码](../recovery-codes.md)。相反，您将需要依靠 Duo 管理面板来绕过无法访问 Duo 的成员的两步登录。在 Duo 处于活动状态时从 Duo 管理面板更改应用程序配置可能会失去绕过您或您组织的成员的两步登录的能力。
+这是因为 Duo for organizations 目前不支持[恢复代码](../recovery-codes.md)。相反，您将需要依靠 Duo 管理面板来绕过无法访问 Duo 的成员的两步登录。在 Duo 处于活动状态时从 Duo 管理面板更改应用程序配置可能会失去绕过您或您组织的成员的两步登录的能力。为了降低这种风险，我们建议每个成员启用单独的两步登录方式。
 {% endhint %}
 
 您必须是[组织所有者](../../../admin-console/manage-members/member-roles.md)才能为您的组织设置 Duo。要为您的组织启用 Duo 方式的两步登录：
@@ -162,7 +164,7 @@ Bitwarden 将仅识别具有电子邮箱地址用户名的用户。没有电子�
 
 7、选择**启用**按钮。
 
-一个绿色的 `已启用` 消息将出现，表明已为您的密码库启用了 Duo。选择**关闭**按钮然后查看 **Duo** 选项上有一个绿色的勾号（**✔️**）以再次检查。
+一个绿色的 `已启用` 消息将出现，表明已为您的密码库启用了 Duo。选择**关闭**按钮然后查看 **Duo** 选项上有一个绿色的勾号 (<i class="fa-check">:check:</i>) 以再次检查。
 
 {% hint style="info" %}
 在网闸 (Air-gapped) 网络上运行的自托管实例可能需要额外的设置才能保持与 Duo 的服务器通信。
@@ -200,7 +202,7 @@ Bitwarden 将仅识别具有电子邮箱地址用户名的用户。没有电子�
    * 从您已注册的设备上批准 **Duo Push** 请求。
    * 在您的 **Duo 移动 App** 或**短信**中找到 6 位数验证码，然后在密码库登录界面输入此验证码。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 勾选**记住我**复选框，以让 Bitwarden 在接下来的 30 天内可以识别您的设备。选择此选项意味着在此期间您不会被要求完成两步登录步骤。
 {% endhint %}
 

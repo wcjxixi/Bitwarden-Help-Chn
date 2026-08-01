@@ -16,7 +16,7 @@
 
 1、在 Bitwarden 网页 App 中，转到**设置** → **紧急访问**。
 
-2、在**被指定为紧急联系人**部分，选择您要访问的账户旁边的 **≡菜单图标**：
+2、在**被指定为紧急联系人**部分，选择您要访问的账户旁边的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**菜单图标**：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6x38VldDaEOAqpuCQ4htRJ/7946735436fd16b660aad5d7969dba8d/2025-12-31_09-54-39.png?w=966&#x26;fm=avif" alt=""><figcaption><p>请求紧急访问</p></figcaption></figure></div>
 
@@ -34,7 +34,7 @@
 
 1、在 Bitwarden 网页 App 中，转到**设置** → **紧急访问**。
 
-2、在**被指定为紧急联系人**部分，选择 **≡菜单图标**，然后从下拉列表中选择为您[分配的访问权限](add-and-manage-trusted-emergency-contacts.md#user-access)相对应的选项：
+2、在**被指定为紧急联系人**部分，选择 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**菜单图标**，然后从下拉列表中选择为您[分配的访问权限](add-and-manage-trusted-emergency-contacts.md#user-access)相对应的选项：
 
 * **查看**：选择此选项将显示账户持有人的密码库项目。
 * **接管**：选择此选项将允许您输入并确认账户持有人的新主密码。选择**保存**，然后使用账户持有人的电子邮箱地址和新主密码登录。
@@ -53,7 +53,7 @@
 
 1、在 Bitwarden 网页 App 中，转到**设置** → **紧急访问**。
 
-2、在**已信任的紧急联系人**部分，选择请求访问的账户旁边的 **≡菜单图标**。
+2、在**已信任的紧急联系人**部分，选择请求访问的账户旁边的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**菜单图标**。
 
 3、选择**批准**或**拒绝**：
 
@@ -67,7 +67,7 @@
 
 1、在 Bitwarden 网页 App 中，转到**设置** → **紧急访问**。
 
-2、在**已信任的紧急联系人**部分，选择激活了紧急访问权限的账户旁的 **≡菜单图标**。
+2、在**已信任的紧急联系人**部分，选择激活了紧急访问权限的账户旁的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**菜单图标**。
 
 3、选择**拒绝**：
 

@@ -24,7 +24,7 @@ Bitwarden 提供三种通行密钥功能：
 
 > **\[译者注]**：2023.9.0 版本之前，FIDO2 WebAuthn 方式的两步登录适用于高级版用户，包括付费组织（家庭版、团队版或企业版）的成员，不适用于免费用户。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 所有通过 Bitwarden 设置的新 FIDO 密钥都会注册为 WebAuthn 密钥。如果您已注册的 FIDO 密钥在网页 App 的两步登录 → 管理 FIDO2 WebAuthn 视图中被标记为（**迁移自 FIDO**），则说明该密钥为 U2F 密钥，应将其删除并重新注册，以便自动将该密钥设置为 WebAuthn 密钥。Bitwarden 将于 2025 年开始逐步停止对（**迁移自 FIDO**）U2F 密钥的支持。
 {% endhint %}
 
@@ -45,7 +45,7 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 
 要启用 FIDO2 WebAuthn 方式的两步登录：
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **丢失对两步登录设备的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
 
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../password-manager/import-and-export/export-vault-data.md)来备份密码库数据。
@@ -67,9 +67,9 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 某些设备（包括支持通行密钥的 Windows Hello 或 macOS 设备）是原生 FIDO2 身份验证器，它们将默认提供这些选项。如果您想注册安全密钥或其他验证器，您可能需要选择**尝试另一种方式**、**其他选项**或**取消**按钮以打开其他选项。
 {% endhint %}
 
-6、选择**保存**。一个绿色的 `已启用` 消息表明 FIDO2 WebAuthn 方式的两步登录已被成功启用，并且您的密钥旁边将显示绿色的勾号 **✔️**。
+6、选择**保存**。一个绿色的 `已启用` 消息表明 FIDO2 WebAuthn 方式的两步登录已被成功启用，并且您的密钥旁边将显示绿色的勾号 (<i class="fa-check">:check:</i>)。
 
-7、选择**关闭**按钮，然后确认 **FIDO2 WebAuthn** 选项现在已被启用（通过一个绿色的勾号 **✔️** 指示）。
+7、选择**关闭**按钮，然后确认 **FIDO2 WebAuthn** 选项现在已被启用（通过一个绿色的勾号 (<i class="fa-check">:check:</i>) 指示）。
 
 重复此过程以向您的账户中添加最多 5 个 FIDO2 WebAuthn 安全钥匙。Bitwarden 高级版账户最多可以向账户添加 10 个 FIDO2 WebAuthn 安全钥匙。了解更多有关 [Password Manager 方案](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md)的信息。
 
@@ -87,7 +87,7 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3RuttlEwwfVX3UJKA8GTFg/ab7e0ba835a7f42ea3f10369cb66c008/2025-03-25_10-28-20.png?w=629&#x26;fm=avif" alt=""><figcaption><p>FIDO2 提示</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 勾选**记住我**复选框，以让 Bitwarden 在接下来的 30 天内可以识别您的设备。选择此选项意味着在此期间您不会被要求完成两步登录步骤。
 {% endhint %}
 
@@ -95,7 +95,7 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 
 ## NFC 故障排除 <a href="#nfc-troubleshooting" id="nfc-troubleshooting"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 硬件安全钥匙通常有一个物理插头，在 NFC 识别困难的情况下可以更可靠地工作。
 {% endhint %}
 

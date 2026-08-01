@@ -6,7 +6,7 @@
 
 电子邮箱方式的两步登录对于所有 Bitwarden 用户是免费的。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 如果您[使用 SSO 登录](../../log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多个方式会导致错误。可以考虑改为使用[免费的验证器方式的两步登录](two-step-login-via-authenticator.md)。
 {% endhint %}
 
@@ -14,7 +14,7 @@
 
 要启用电子邮箱方式的两步登录：
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **丢失对两步登录设备的访问会永久性将您锁定在您的密码库之外**，除非您将您的两步登录恢复代码写下并将其保存在安全的地方，或拥有已启用并可用的备用两步登录方式。
 
 启用任何方式之后，应立即通过**两步登录**界面[获取您的恢复代码](../recovery-codes.md)。此外，用户还可以创建 Bitwarden [导出](../../../password-manager/import-and-export/export-vault-data.md)来备份密码库数据。
@@ -30,7 +30,7 @@
 
 4、输入您用于接收验证码的电子邮箱地址，然后点击**发送电子邮件**按钮。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您有多个电子邮箱地址，用于两步登录的地址不一定要使用与注册 Bitwarden 时使用的地址相同。
 {% endhint %}
 
@@ -38,7 +38,7 @@
 
 一个绿色的 `已启用` 消息表明电子邮箱方式的两步登录已被启用。
 
-6、选择**关闭**按钮，然后确认**电子邮箱**选项现在已被启用（通过一个绿色勾号 **✔️** 指示）。
+6、选择**关闭**按钮，然后确认**电子邮箱**选项现在已被启用（通过一个绿色勾号 (<i class="fa-check">:check:</i>) 指示）。
 
 {% hint style="info" %}
 我们建议在继续测试两步登录之前，将活动的网页密码库选项卡保持为打开状态，以防配置错误。确认其正常工作后，请注销所有的 Bitwarden App，以要求每个 App 使用两步登录。您最终会被自动注销。
@@ -55,7 +55,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/ewFBMVRtmfZ3fsEC7LZmG/fcda3ce63380357797c2d41987854318/2026-01-12_15-08-12.png?w=754&#x26;fm=avif" alt=""><figcaption><p>验证您的身份</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 勾选**记住我**复选框，以让 Bitwarden 在接下来的 30 天内可以识别您的设备。选择此选项意味着在此期间您不会被要求完成两步登录步骤。
 {% endhint %}
 
