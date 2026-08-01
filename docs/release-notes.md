@@ -52,7 +52,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
   * [SSH 代理](password-manager/developer-tools/ssh/ssh-agent.md)：在不同场景中设置和使用 SSH 代理的分步指南。
 * **桌面 App 托盘行为更新**：控制托盘或菜单栏行为和最小化的设置已合并为简化的「[保持 Bitwarden 在后台运行](password-manager/your-vault/app-settings.md)」设置。
 * **禁用自动更新变量重命名**：用于[阻止 Bitwarden 桌面 App 自动更新](password-manager/more/password-manager-faqs.md#q-can-i-turn-off-automatic-updates-for-bitwarden)的环境变量已被重命名。
-* **简化了扩展生物识别**：为浏览器扩展启用生物识别变得更加简单。使用生物识别仍然需要运行桌面 App，但是，您将不再需要启用**允许浏览器集成**选项来执行此操作。了解更多有关[生物识别解锁](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)的信息。
+* **简化了扩展生物识别**：为浏览器扩展启用生物识别变得更加简单。使用生物识别仍然需要运行桌面 App，但是，您将不再需要启用**允许浏览器集成**选项来执行此操作。了解更多有关[生物识别解锁](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)的信息。
 
 ### Admin Console
 
@@ -76,7 +76,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 ### Password Manager
 
 * **★浏览器扩展的填充辅助**：激活[填充辅助](password-manager/autofill/more-autofill-options/fill-assist.md)功能，可在 Bitwarden 精选的、已知会经常导致自动填充问题的网站上提高自动填充的准确性。
-* **Linux 上的生物识别简化**：设置 [Linux 上的生物识别](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#linux)以解锁 Bitwarden 桌面 App 时，不再需要机密服务守护进程。
+* **Linux 上的生物识别简化**：设置 [Linux 上的生物识别](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md#linux)以解锁 Bitwarden 桌面 App 时，不再需要机密服务守护进程。
 * **★桌面 App 的设置 UI 更新**：桌面 App 的设置对话框已更新。了解更多有关[桌面 App](password-manager/getting-started/getting-started-desktop.md)。
 * **Send 接收者限制**：当创建仅限[特定人员](password-manager/bitwarden-send/send-privacy.md#email-verified-recipients)的 Send 时，电子邮箱地址字段现在最多支持 2,500 个字符。
 * **★风险密码通知 UI 更新**：查看登录中，密码字段下方的[风险密码标签](password-manager/your-vault/security-tools/change-at-risk-passwords.md)仍然保留，但之前显示在视图顶部的横幅已被移除。当使用 Access Intelligence [请求密码更改](admin-console/oversight-visibility/access-intelligence.md#requesting-password-changes)时，密码库中显示的横幅没有更改。
@@ -109,7 +109,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 ### Password Manager
 
 * **★桌面端现已支持设备列表**：除网页 App 和浏览器扩展外，桌面 App 现已支持[设备列表](password-manager/your-vault/security-tools/manage-devices.md)功能，用于显示您账户曾经登录过的设备。
-* **Flatpak 和 Snap 现已支持生物识别集成**：Flatpak 和 Snap 发行版现已支持与 Bitwarden 桌面 App 集成使用的[浏览器扩展的生物识别解锁](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)。
+* **Flatpak 和 Snap 现已支持生物识别集成**：Flatpak 和 Snap 发行版现已支持与 Bitwarden 桌面 App 集成使用的[浏览器扩展的生物识别解锁](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)。
 * **★网页 App 快速操作**：在网页 App 中将鼠标悬停于某个项目上，即可通过新增的快速操作按钮打开网站或复制密码库数据。
 * &#x20;**Send UI 更新**：在浏览器扩展和网页 App 中选择 [Send](password-manager/bitwarden-send/about-send.md) 项目时，现在将显示「查看」界面，而不是直接跳转至「编辑」界面。
 
@@ -201,7 +201,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 * **Bitwarden Send 电子邮箱验证**：当用户创建 Send 时，可以选择使用接收者电子邮箱验证来保护它。了解更多有关 [Bitwarden Send](password-manager/bitwarden-send/about-send.md) 的信息。
 * **项目归档**：付费订阅的用户现在可以[归档密码库项目](password-manager/your-vault/vault-items/vault-items.md#archive)，以将其从搜索和自动填充中排除，而无需将其从密码库中移除。
 * ~~**「查看登录」上的自动填充按钮**：直接从浏览器扩展中的~~[~~「查看登录」页面~~](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#view-login)~~自动填充凭据。~~
-* **Flatpak 生物识别解锁**：Flatpak 安装的桌面 App 现在支持[生物识别解锁](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#linux)。
+* **Flatpak 生物识别解锁**：Flatpak 安装的桌面 App 现在支持[生物识别解锁](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md#linux)。
 * **增加最小 KDF 迭代次数**：如果您的 PBKDF2 KDF 迭代次数低于 600,000（自 [2023.2.0 版本](release-notes.md#id-2023.2.0)以来的默认级别），您将被[要求更新此设置](security/encryption/encryption-key-derivation.md#low-kdf-iterations)，或者在您下次使用主密码登录或解锁时自动应用此增加的值。
 
 ### Admin Console
@@ -231,7 +231,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* **使用通行密钥解锁**：现在可以[使用通行密钥解锁您的网页 App 或浏览器扩展](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-passkeys.md#set-up-encryption-for-unlock)。这扩展了现有的通行密钥支持的功能，使其不再局限于登录，让您无需输入主密码即可访问您的密码库。
+* **使用通行密钥解锁**：现在可以[使用通行密钥解锁您的网页 App 或浏览器扩展](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-passkeys.md#set-up-encryption-for-unlock)。这扩展了现有的通行密钥支持的功能，使其不再局限于登录，让您无需输入主密码即可访问您的密码库。
 * **桌面 App UI 更新**：桌面 App UI 已更新，后续还将推出更多更新。
 * **扩展的新默认宽度**：浏览器扩展具有新的、更宽的默认宽度。您可以[从外观菜单](password-manager/your-vault/appearance/change-app-appearance.md#liu-lan-qi-kuo-zhan)中切换回窄版界面或更宽版界面。
 
@@ -268,7 +268,7 @@ Windows 便携式桌面 App 的一个问题已得到修复，App 更新至此版
 {% endhint %}
 
 * **订阅存储空间增加**：高级订阅和付费组织现在将提供 5 GB 的[附件](password-manager/your-vault/vault-items/file-attachments.md)和 [Send](password-manager/bitwarden-send/about-send.md) 存储空间。
-* **更新旧版客户端的 PIN 码**：将 Bitwarden 客户端从 2025.9.0 或更早版本更新到此版本后，用户需要重新设置 PIN 码才能继续使用 [PIN 码解锁](account/log-in-and-unlock/more-log-in-unlock-options/unlock-with-pin.md)功能。PIN 码本身的要求未作任何变更。
+* **更新旧版客户端的 PIN 码**：将 Bitwarden 客户端从 2025.9.0 或更早版本更新到此版本后，用户需要重新设置 PIN 码才能继续使用 [PIN 码解锁](account/log-in-and-unlock/more-log-in-unlock-methods/unlock-with-pin.md)功能。PIN 码本身的要求未作任何变更。
 
 ### Admin Console
 
@@ -312,7 +312,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* **通行密钥登录**：浏览器扩展和网页 App 现已全面支持[通行密钥](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-passkeys.md)登录，让您可以更快更安全地登录 Bitwarden 账户。
+* **通行密钥登录**：浏览器扩展和网页 App 现已全面支持[通行密钥](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-passkeys.md)登录，让您可以更快更安全地登录 Bitwarden 账户。
 * **Android 自动填充更新**：Android 版 Password Manager 现默认采用改进的[自动填充匹配逻辑，适用于 Opera、Edge 和 Samsung Internet](password-manager/autofill/autofill-from/autofill-from-android.md#browser-integrations)。此前的版本中该功能称为「兼容模式」选项。
 
 ### Admin Console
@@ -335,8 +335,8 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* **通行密钥登录支持浏览器扩展**：用户现在可[使用通行密钥](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-passkeys.md)登录浏览器扩展。当前支持 Chrome 和基于 Chromium 的浏览器（例如 Edge）。
-* **Windows Hello 更新**：Windows 桌面 App 重启后，您现在可以立即使用生物识别解锁密码库，而无需输入主密码或 PIN 码。在 [Windows 桌面 App 中设置生物识别](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#set-up-biometrics-for-desktop-app)时，请取消勾选 **App 重启时要求主密码或 PIN 码**选项。
+* **通行密钥登录支持浏览器扩展**：用户现在可[使用通行密钥](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-passkeys.md)登录浏览器扩展。当前支持 Chrome 和基于 Chromium 的浏览器（例如 Edge）。
+* **Windows Hello 更新**：Windows 桌面 App 重启后，您现在可以立即使用生物识别解锁密码库，而无需输入主密码或 PIN 码。在 [Windows 桌面 App 中设置生物识别](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md#set-up-biometrics-for-desktop-app)时，请取消勾选 **App 重启时要求主密码或 PIN 码**选项。
 * **网页 App 右键点击**：在网页 App 的密码库视图中，现在可通过右键点击调出与 **≡**&#x9009;项菜单相同的操作菜单。
 * **改进的高级订阅注册流程**：希望享受 Bitwarden 付费方案的用户将可以更轻松地升级账户。在网页 App 导航栏中选择**升级您的方案**按钮，即可了解更多信息并选择付费方案。
 
@@ -406,7 +406,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* **使用浏览器扩展批准设备**：使用浏览器扩展审批新的[受信任设备](account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)和[设备登录](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)请求。
+* **使用浏览器扩展批准设备**：使用浏览器扩展审批新的[受信任设备](account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)和[设备登录](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)请求。
 * **iOS 26 CXP**：iOS 26 的用户现在可以直接导入或导出 Bitwarden 和任何其他支持 [Fido 凭证交换协议](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)的 iOS App。了解更多有关导入和[导出](password-manager/import-and-export/export-vault-data.md)的信息。
 
 ### Admin Console
@@ -460,7 +460,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 * **内嵌自动填充密码生成器改进**：内嵌自动填充密码生成器现在可立即将生成的密码保存为新的登录项目。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#inline-auto-fill-menu)有关内嵌自动填充的信息。
 * **改进的项目视图**：添加了对查看密码库项目的改进。更新包括在密码库项目顶部显示收藏夹和其他重要信息。[了解更多](password-manager/your-vault/vault-items/vault-items.md)有关密码库项目的信息。
 * **Android 现在要求使用 HTTPS**：Android Password Manager App 现在要求使用 HTTPS 连接到服务器。这一更改只会影响没有 SSL/TLS 证书的 Bitwarden 服务器自托管用户。[了解更多](self-hosting/deploy-and-configure/configuration-options/certificate-options.md)有关证书的信息。
-* **生物识别解锁更新**：桌面 App 重新启动后，现在必须首先使用 PIN 或主密码等生物识别以外的方法解锁，然后才能使用生物识别解锁。[了解更多](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)有关生物识别解锁的信息。
+* **生物识别解锁更新**：桌面 App 重新启动后，现在必须首先使用 PIN 或主密码等生物识别以外的方法解锁，然后才能使用生物识别解锁。[了解更多](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)有关生物识别解锁的信息。
 
 ## 2025.7.3
 
@@ -486,7 +486,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 * **URI 匹配检测警告更新**：选择使用高级选项**开始于**和**正则表达式**设置 URI 匹配检测的用户将看到一个警告对话，以确认他们了解与这些自动填充选项相关的潜在安全风险。[了解更多](password-manager/autofill/troubleshoot-autofill/forming-uris-for-autofill.md#match-detection-options)。
 * **针对新用户的屏幕提示 - 浏览器扩展**：为帮助新用户，浏览器扩展中添加了屏幕提示。这些提示将有助于向新用户介绍浏览器扩展的功能和组件。[了解更多](password-manager/getting-started/getting-started-browserext.md)。
-* **浏览器扩展权限更新**：Firefox 和 Safari 上的浏览器扩展现在需要通知权限才能支持[设备登录](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)。
+* **浏览器扩展权限更新**：Firefox 和 Safari 上的浏览器扩展现在需要通知权限才能支持[设备登录](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)。
 * **Android 上的 Chromium 集成**：如果您使用 Brave 或 Chrome 浏览器，请切换新的**使用 Brave 自动填充集成**或**使用 Chrome 自动填充集成**选项。[了解更多](password-manager/autofill/autofill-from/autofill-from-android.md)。
 
 ### Secrets Manager
@@ -630,7 +630,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* **登录请求横幅通知**：设备登录请求现在会在等待批准期间在网页 App 中显示一个横幅通知。[了解更多](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)有关设备登录的信息。
+* **登录请求横幅通知**：设备登录请求现在会在等待批准期间在网页 App 中显示一个横幅通知。[了解更多](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)有关设备登录的信息。
 
 ### Admin Console
 
@@ -718,7 +718,7 @@ _（版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版
 ### Password Manager
 
 * **SSH 代理**：Bitwarden 用户现在可以直接使用 Bitwarden Password Manager 安全地存储和生成 SSH 密钥。[了解更多](password-manager/developer-tools/ssh/ssh-agent.md)有关 Bitwarden SSH 代理的信息。
-* **使用网页设备批准**：使用网页 App 批准新的受信任设备和设备登录请求。[了解更多](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)。
+* **使用网页设备批准**：使用网页 App 批准新的受信任设备和设备登录请求。[了解更多](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)。
 * **更新了桌面端的生成器**：桌面 App 上的密码和用户名生成器的用户界面已更新，以反映其他 Bitwarden App 的最新设计。[了解更多](password-manager/your-vault/security-tools/generator.md)。
 
 ### Admin Console
@@ -744,7 +744,7 @@ _（版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版
 ### Password Manager
 
 * **更多自动填充自定义选项**：浏览器扩展现在具有更多选项来自定义您的自动填充体验，包括选择项目卡片而不是「**填充**」按钮来自动填充，以及多个快速复制操作。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#zi-ding-yi-zi-dong-tian-chong-xing-wei)。
-* **Snap Store 桌面 App 生物识别解锁**：通过 Snap Store 下载的密码管理桌面 App 现在支持生物识别解锁。[了解更多](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#zhuo-mian-duan)。
+* **Snap Store 桌面 App 生物识别解锁**：通过 Snap Store 下载的密码管理桌面 App 现在支持生物识别解锁。[了解更多](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md#zhuo-mian-duan)。
 * **TOTP 代码的内嵌自动填充**：内嵌自动填充菜单现在可用于选择 TOTP 代码。[了解更多](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#use-the-inline-auto-fill-menu)有关内嵌自动填充菜单的信息。
 * **iOS 上长按自动填充**：在 iOS 18+ 上长按任何文本字段即可从 Bitwarden 自动填充。[了解更多](password-manager/autofill/autofill-from/autofill-from-ios.md)。
 * **新的公共 API 操作**：`/public/organization/subscription` 端点添加了一个 GET 操作。[了解更多](admin-console/bitwarden-public-api.md)有关 Bitwarden 公共 API 的信息。
@@ -822,7 +822,7 @@ _（版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版
 
 ### Password Manager
 
-* **使用生物识别解锁 - Linux 浏览器扩展**：Linux 用户现在可以在基于 Chromium 的浏览器上使用 Bitwarden 浏览器扩展的生物识别解锁功能。[了解更多](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
+* **使用生物识别解锁 - Linux 浏览器扩展**：Linux 用户现在可以在基于 Chromium 的浏览器上使用 Bitwarden 浏览器扩展的生物识别解锁功能。[了解更多](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md#enable-unlock-with-biometrics)。
 * **桌面 App 阻止屏幕捕获**：默认情况下，Windows 和 macOS 的桌面 App 现在将阻止屏幕捕获和录制。[了解更多](password-manager/getting-started/getting-started-desktop.md#xia-yi-bu)。
 * **在桌面端同步锁定的密码库**：即使活动账户被锁定，桌面 App 现在也可以手动同步。[了解更多](password-manager/your-vault/syncing-your-vault.md#manual-sync)。
 
@@ -929,7 +929,7 @@ _（版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版
 * **紧急联系人和提供商的邀请说明**：受信任的紧急联系人和提供商用户在接受邀请后，现在将进入「需要确认」状态，使您的下一步操作更清晰。
 * **批量分配项目到集合**：现在，您可以从密码库视图中将项目批量分配到组织的集合中。此功能的前一版本称为「移动到组织」。[了解更多](password-manager/your-vault/vault-items/vault-items.md#assign-to-collections)。
 * **重命名将项目添加到文件夹**：在密码库视图中，将项目添加到文件夹的选项已从「移动所选」重命名为「添加到文件夹」。[了解更多](password-manager/your-vault/vault-navigation/folders.md#move-items-to-a-folder)。
-* **弃用桌面 App 设置**：桌面应 App 现在默认可以批准设备登录。[了解更多](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)。
+* **弃用桌面 App 设置**：桌面应 App 现在默认可以批准设备登录。[了解更多](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)。
 * **改进的 SSO 标识符工作流程**：管理员现在可以分发企业单点登录界面的 URL，并将其 SSO 标识符作为查询参数包含在内，以自动将组织成员重定向到 IdP，从而获得更简化的 SSO 体验。[了解更多](admin-console/login-with-sso/login-with-sso-faqs.md#q-do-i-need-to-enter-my-organization-identifier-every-time-i-login)。
 
 ### Secrets Manager
@@ -1088,7 +1088,7 @@ _（版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版
 
 ### 自托管 <a href="#self-hosting" id="self-hosting"></a>
 
-* **支持使用通行密钥登录 (Beta)**：自托管 Bitwarden 服务器现在支持使用通行密钥登录功能（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-passkeys.md)）。
+* **支持使用通行密钥登录 (Beta)**：自托管 Bitwarden 服务器现在支持使用通行密钥登录功能（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-passkeys.md)）。
 
 ## 2024.2.2
 
@@ -1138,7 +1138,7 @@ _（版本号为 Bitwarden 网页 App 的版本号，本周期发布的其他版
 
 ### 我的账户 <a href="#my-account" id="my-account"></a>
 
-* **使用通行密钥登录 (Beta)**：通行密钥可以作为使用主密码和电子邮件的替代方法来登录 Bitwarden 网页 App （参阅[这里](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-passkeys.md)）。
+* **使用通行密钥登录 (Beta)**：通行密钥可以作为使用主密码和电子邮件的替代方法来登录 Bitwarden 网页 App （参阅[这里](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-passkeys.md)）。
 
 ### Password Manager
 
@@ -1230,7 +1230,7 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 
 此次发布包含：
 
-* **用于自托管的设备登录**：连接到自托管服务器的 Bitwarden 应用程序现在可以通过向已注册设备发送身份验证请求来登录，而不是使用主密码（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)）。
+* **用于自托管的设备登录**：连接到自托管服务器的 Bitwarden 应用程序现在可以通过向已注册设备发送身份验证请求来登录，而不是使用主密码（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)）。
 * **Forward Email 别名集成**：将 Bitwarden 用户名生成器连接到 [Forward Email](https://forwardemail.net/)，以便轻松创建电子邮件别名（参阅[这里](password-manager/your-vault/security-tools/generator.md#username-types)）。
 * **浏览器扩展 TOTP 自动填充**：浏览器扩展现在将自动填充 TOTP 代码，除非您使用了在页面加载时自动填充功能（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#totp-auto-fill)）。
 * **在 \<textarea> 中使用自动填充**：Bitwarden App 现在可以将凭据自动填充到 HTML 的 `<textarea>` 元素中。
@@ -1277,8 +1277,8 @@ Bitwarden 现在可以使用 Helm Chart 在 Kubernetes 部署中自托管（参�
 * **改进的经销商计费**：Bitwarden 经销商现在是唯一有权查看其客户组织的计费、订阅或付款信息的实体。参阅[这里](plans-and-pricing/bitwarden-resellers.md)。
 * **主密码要求策略更新**：如果启用，主密码要求策略现在可以设置为提示现有的不合规用户更新他们的主密码。参阅[这里](admin-console/oversight-visibility/enterprise-policies.md#master-password-requirements)。
 * **密码库超时策略更新**：密码库超时策略现在提供了指定密码库超时动作的选项。参阅[这里](admin-console/oversight-visibility/enterprise-policies.md#vault-timeout)。
-* **桌面端 - 新的生物识别选项**：您现在可以选择是在 App 启动时要求主密码还是在打开时允许生物识别。参阅[这里](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)。
-* **桌面端 - Windows Hello 安全改进**：解决了与 Windows Hello 和 Windows Credential Manager 相关的漏洞。作为一项附加措施，我们建议使用新选项以在 App 启动时要求输入主密码。参阅[这里](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)。
+* **桌面端 - 新的生物识别选项**：您现在可以选择是在 App 启动时要求主密码还是在打开时允许生物识别。参阅[这里](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)。
+* **桌面端 - Windows Hello 安全改进**：解决了与 Windows Hello 和 Windows Credential Manager 相关的漏洞。作为一项附加措施，我们建议使用新选项以在 App 启动时要求输入主密码。参阅[这里](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)。
 * **浏览器扩展 - 改进的表单检测**：改进了表单检测的逻辑，并针对浏览器扩展的通知栏解决了错误报告。有关技术细节，请参阅[这里](https://github.com/bitwarden/clients/pull/4798)。
 
 ## 2023.3.0
@@ -1317,7 +1317,7 @@ Bitwarden Secrets Manager 现在作为公开测试版提供。参阅[此处](sec
 * **增加了 PBKDF2 的默认 KDF 迭代**：按照 [OWASP](https://zh.wikipedia.org/zh-cn/OWASP) 的建议，新的 Bitwarden 账户将为 PBKDF2 使用 600,000 次 KDF 迭代。现有的账户可以手动增加此数值。参阅[这里](security/encryption/encryption-protocols.md#changing-kdf-iterations)。
 * **主密码安全检查**：在移动 App、浏览器扩展和桌面 App 上创建账户的新用户现在可以通过 HIBP 检查已知的数据泄露，以了解他们的潜在主密码。这将在以后的版本中被带到网页密码库。参阅[这里](password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-report-individual-vaults-only)。
 * **组织密码库更新**：作为改进网页密码库 UI 的持续努力的一部分，一些组织管理功能进行了重新设计，例如用于项目和集合管理的合并**密码库**视图，以及专用的**成员**和**群组**视图。
-* **在其他客户端上使用设备登录**：现在可以在其他客户端上使用设备登录。登录请求现在也可以从浏览器扩展、桌面 App 和移动 App 发起，现在也可以从桌面 App 获得批准。参阅[这里](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)。
+* **在其他客户端上使用设备登录**：现在可以在其他客户端上使用设备登录。登录请求现在也可以从浏览器扩展、桌面 App 和移动 App 发起，现在也可以从桌面 App 获得批准。参阅[这里](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)。
 * **自托管组织的自动许可证同步**：自托管组织可以启用自动许可证同步，以便自动更新计费和订阅更改，而不必手动重新上传许可证。参阅[这里](self-hosting/licensing-on-premise.md#update-a-renewed-organization-license)。
 * **用于 Bitwarden Unified 的 SQLite 数据库选项**：SQLite 现在是 Bitwarden Unified 自托管部署的可用数据库选项。参阅[这里](self-hosting/deploy-and-configure/docker/lite-deployment.md)。
 * **更新了自托管安装程序 URL**：用于下载自托管服务器安装程序的 URL 已更改。Linux 参阅[这里](self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#install-bitwarden)，Windows 参阅[这里](self-hosting/deploy-and-configure/docker/windows-standard-deployment.md#install-bitwarden)。
@@ -1349,7 +1349,7 @@ Bitwarden 很高兴地宣布推出为自托管用户提供一个新的选项的�
 
 此次发布包含：
 
-* **设备登录**：通过向您已注册的移动设备发送身份验证请求而不是使用您的主密码来登录网页密码库（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)）。
+* **设备登录**：通过向您已注册的移动设备发送身份验证请求而不是使用您的主密码来登录网页密码库（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)）。
 
 ## 2022.11.0
 
@@ -1517,7 +1517,7 @@ Bitwarden 很自豪地宣布在 12 月的版本中增加了新的企业功能，
 * **自定义角色 - 改进的集合权限**：自定义角色的集合管理权限已扩展为包括对用户是否可以创建、编辑或删除已分配的集合或所有集合的精细控制（参阅[这里](account/log-in-and-unlock/vault-timeout-options.md#vault-timeout)）。
 * **管理员密码重置 - 重置后更新密码**：管理员重置的密码现在必须由他们所属的用户在登录 Bitwarden 时立即更新（参阅[这里](admin-console/manage-members/account-recovery/about-account-recovery.md#after-a-password-reset)）。
 * **浏览器扩展 - 自动填充 Span 元素**：浏览器扩展现在可以在 HTML `<span>` 元素的 innerText 中自动填充[自定义字段](password-manager/your-vault/vault-items/custom-fields.md)（参阅[这里](password-manager/autofill/more-autofill-options/auto-fill-custom-fields.md#html-span-elements)）。
-* &#x20;**浏览器扩展 - 自动生物识别提示**：浏览器扩展现在可以在打开时自动提示您生物识别输入。您可以从 **⚙️设置**菜单切换此行为（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)）。
+* &#x20;**浏览器扩展 - 自动生物识别提示**：浏览器扩展现在可以在打开时自动提示您生物识别输入。您可以从 **⚙️设置**菜单切换此行为（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)）。
 * **网页密码库 - 黑暗模式**：网页密码库现在拥有黑暗模式（参阅[这里](password-manager/your-vault/appearance/change-app-appearance.md)）。
 * **CLI - `generate` 密码短语选项**：`bw generate --passphrase` 命令现在包含 `--capitalize` 和 `--includeNumber` 选项（参阅[这里](password-manager/developer-tools/cli/password-manager-cli.md#generate)）。
 
@@ -1576,7 +1576,7 @@ Bitwarden 团队很高兴地宣布推出管理员密码重置功能，这是一�
 * **用于密钥的自定义字段**：自定义字段的值已经升级到支持多达 5000 个字符，允许存储像 RSA 4096 位 SSH 密钥这样的密钥（参阅[这里](password-manager/your-vault/vault-items/custom-fields.md#custom-fields-for-keys)）。
 * **文件大小增加**：现在可以创建最大 500 MB 的文件附件或文件 Send。由于设备限制，移动 App 仍采用旧的 100 MB 限制。
 * **禁用浏览器扩展计数器**：使用 **⚙️设置 → 选项**菜单中的新开关来禁用浏览器扩展的角标计数器（参阅[这里](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)）。
-* **Safari 的生物识别**：Safari 网页扩展现在包含对 Safari 14+ 生物识别解锁的支持（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)）。
+* **Safari 的生物识别**：Safari 网页扩展现在包含对 Safari 14+ 生物识别解锁的支持（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)）。
 * **搜索国际化**：现在可以使用 1 个字符搜索密码库，改善了使用 1 个字符单词的语言（如简体中文和繁体中文）的使用体验。
 * **弱密码报告排序**：弱密码报告现在按照密码弱性的严重程度来排序（参阅[这里](password-manager/your-vault/security-tools/vault-health-reports.md#weak-passwords-report)）。
 
@@ -1607,7 +1607,7 @@ Bitwarden 自豪地宣布我们发布了 Bitwarden Send，一个用于短暂共�
 {% hint style="info" %}
 如果您拥有最新版 (2021-01-19) 的桌面 App，则浏览器扩展的生物识别解锁**仅适用于基于 Chromium 的浏览器**（比如 Chrome、Edge）上安装的 v1.48.0 版本的浏览器扩展。
 
-当您的浏览器扩展更新到这个版本时，您可能会被要求接受一个新的权限，以便 Bitwarden `Communicate with cooperating native applications（与本机应用程序通信）`。这个权限是安全的，也是**可选的**，它允许浏览器扩展与 Bitwarden 桌面 App 进行通信，而这是启用生物识别解锁所必需的（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#browser-extensions)）。拒绝此权限也将允许您使用 v1.48.0 扩展，只是不带生物识别解锁功能。
+当您的浏览器扩展更新到这个版本时，您可能会被要求接受一个新的权限，以便 Bitwarden `Communicate with cooperating native applications（与本机应用程序通信）`。这个权限是安全的，也是**可选的**，它允许浏览器扩展与 Bitwarden 桌面 App 进行通信，而这是启用生物识别解锁所必需的（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md#browser-extensions)）。拒绝此权限也将允许您使用 v1.48.0 扩展，只是不带生物识别解锁功能。
 
 **生物识别解锁当前不适用于：**
 
@@ -1626,7 +1626,7 @@ Bitwarden 团队正在调查这些问题，并将随着情况的进展提供更�
 * **加密导出**：个人用户和组织现在可以将密码库数据导出到加密的 `.json` 文件中（参阅[这里](password-manager/import-and-export/encrypted-exports.md)）。
 * **新的角色**：现在可以使用自定义角色来对用户权限进行粒度控制（参阅[这里](admin-console/manage-members/member-roles.md#custom-role)）。
 * **新的企业策略**：现在，企业组织可以使用个人所有权策略（参阅[这里](admin-console/oversight-visibility/enterprise-policies.md#personal-ownership)）。
-* **浏览器扩展的生物识别解锁**：通过与本机桌面应用程序的集成，您现在可以使用生物识别输入来解锁基于 Chromium 的浏览器扩展（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#browser-extensions)）。
+* **浏览器扩展的生物识别解锁**：通过与本机桌面应用程序的集成，您现在可以使用生物识别输入来解锁基于 Chromium 的浏览器扩展（参阅[这里](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md#browser-extensions)）。
 
 ## 2020-11-12
 
@@ -1650,4 +1650,4 @@ Bitwarden 团队正在调查这些问题，并将随着情况的进展提供更�
 * [密码库超时选项](account/log-in-and-unlock/vault-timeout-options.md)
 * [回收站功能](password-manager/your-vault/vault-items/vault-items.md#delete-a-vault-item)
 * [密码查看权限 - ](admin-console/manage-members/member-roles.md#granular-access-control)[隐藏密码](admin-console/manage-members/member-roles.md#granular-access-control)
-* [桌面版应用程序的触控 ID/Windows Hello](account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#desktop-applications)
+* [桌面版应用程序的触控 ID/Windows Hello](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md#desktop-applications)

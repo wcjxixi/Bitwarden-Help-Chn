@@ -53,7 +53,7 @@ Bitwarden 提供多种免费的两步登录方式，包括：
 
 ## 使用设备登录 <a href="#log-in-with-device" id="log-in-with-device"></a>
 
-您知道吗？您可以使用辅助设备而不是您的主密码登录 Bitwarden 网页 App。设备登录是一种无密码的身份验证方法，通过向您当前登录的任何特定设备发送身份验证请求以供批准，而无需输入您的主密码。[了解更多](../../account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)。
+您知道吗？您可以使用辅助设备而不是您的主密码登录 Bitwarden 网页 App。设备登录是一种无密码的身份验证方法，通过向您当前登录的任何特定设备发送身份验证请求以供批准，而无需输入您的主密码。[了解更多](../../account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)。
 
 ## 单点登录 <a href="#single-sign-on" id="single-sign-on"></a>
 

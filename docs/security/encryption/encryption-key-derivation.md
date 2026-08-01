@@ -36,7 +36,7 @@ Argon2 会分配一部分内存（**KDF 内存**），然后用计算出的哈�
 * 您可以使用的 **KDF 并行**数量取决于您机器的 CPU。一般来说，最大并行数 = 核心数 x 2。
 
 {% hint style="info" %}
-KDF 内存值高于 64 MiB 的 Argon2id 用户，每次启动 iOS 自动填充或通过共享表单创建新的 Send 时都会收到警告对话框。要避免出现此消息，请调整 Argon2id 设置或启用[生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md#use-unlock-with-biometrics)。
+KDF 内存值高于 64 MiB 的 Argon2id 用户，每次启动 iOS 自动填充或通过共享表单创建新的 Send 时都会收到警告对话框。要避免出现此消息，请调整 Argon2id 设置或启用[生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md#use-unlock-with-biometrics)。
 {% endhint %}
 
 ## 更改 KDF 算法 <a href="#changing-kdf-algorithm" id="changing-kdf-algorithm"></a>

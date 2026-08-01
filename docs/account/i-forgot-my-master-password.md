@@ -16,7 +16,7 @@ Bitwarden 采用零知识加密技术，这意味着 **Bitwarden 无法访问、
 
 尝试从其他设备或 Bitwarden App（例如移动 App 或浏览器扩展）登录。
 
-接下来，检查您是否登录了另一个 Bitwarden App。如果您在该设备上设置了 [PIN 码](log-in-and-unlock/more-log-in-unlock-options/unlock-with-pin.md)或[生物识别](log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)：
+接下来，检查您是否登录了另一个 Bitwarden App。如果您在该设备上设置了 [PIN 码](log-in-and-unlock/more-log-in-unlock-methods/unlock-with-pin.md)或[生物识别](log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)：
 
 1. 使用之前设置的 PIN 码或生物识别解锁您的密码库。
 2. 将密码库项目复制并粘贴到 [.csv 文件](../password-manager/import-and-export/condition-bitwarden-import.md#condition-a-csv)中。
@@ -36,13 +36,13 @@ Bitwarden 采用零知识加密技术，这意味着 **Bitwarden 无法访问、
 
 ## 使用已知设备登录 <a href="#log-in-with-known-device" id="log-in-with-known-device"></a>
 
-如果您使用的浏览器已设置为已知设备（即已通过[使用设备登录](log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)注册过），请从网页 App 中选择使用设备登录，您可以使用其他应用程序批准该请求。
+如果您使用的浏览器已设置为已知设备（即已通过[使用设备登录](log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)注册过），请从网页 App 中选择使用设备登录，您可以使用其他应用程序批准该请求。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7owqaTEe9Bo05wfLRZPhn8/38f1d0334964bb3d98a430b80b9d6b95/2025-09-09_10-03-52.png?w=692&#x26;fm=avif" alt=""><figcaption><p>使用设备登录</p></figcaption></figure></div>
 
 ## 使用通行密钥登录 <a href="#log-in-with-passkey" id="log-in-with-passkey"></a>
 
-如果您的 Bitwarden 账户已经注册了启用加密 (PRF) 的[通行密钥登录](log-in-and-unlock/more-log-in-unlock-options/log-in-with-passkeys.md)，您可以使用该通行密钥登录。
+如果您的 Bitwarden 账户已经注册了启用加密 (PRF) 的[通行密钥登录](log-in-and-unlock/more-log-in-unlock-methods/log-in-with-passkeys.md)，您可以使用该通行密钥登录。
 
 ## 如果这些选项均无法让您访问您的账户 <a href="#if-none-of-these-options-grant-you-access-to-your-account" id="if-none-of-these-options-grant-you-access-to-your-account"></a>
 
@@ -50,7 +50,7 @@ Bitwarden 采用零知识加密技术，这意味着 **Bitwarden 无法访问、
 
 如果以上方法均无法让您访问您的账户，Bitwarden 将无法恢复该账户及其数据。您需要[删除现有账户](../plans-and-pricing/delete-an-account-or-organization.md#wu-xu-deng-lu)然后创建一个新账户。如果您删除的 Bitwarden 账户包含高级订阅，请[联系我们](https://bitwarden.com/contact/)，我们将把您现有的订阅应用到新账户中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 删除您的账户将删除其中存储的所有个人所有的项目，包括所有已保存的附件。
 
 删除您的账户前，请检查您是否已登录任何 Bitwarden 移动 App、浏览器扩展或桌面 App。如果有，请手动整理您的数据，以便将其重新添加回新的账户中。

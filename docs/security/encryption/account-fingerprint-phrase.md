@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="success" %}
-您是否希望使用指纹阅读器解锁您的密码库？如果是这样，请参阅[生物识别](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)。
+您是否希望使用指纹阅读器解锁您的密码库？如果是这样，请参阅[生物识别](../../account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)。
 {% endhint %}
 
 每个 Bitwarden 用户账户都有一个与之关联的「指纹短语」。您账户的指纹短语永远不会改变，它由五个以特定顺序出现的随机英语单词组成。例如：`alligator-transfer-laziness-macaroni-blue`&#x20;
@@ -14,7 +14,7 @@
 
 ## 我的指纹短语是用来做什么的？ <a href="#what-is-my-fingerprint-phrase-used-for" id="what-is-my-fingerprint-phrase-used-for"></a>
 
-某些 Bitwarden 流程（例如，将新用户添加到组织，或确认[设备登录请求](../../account/log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)），会要求您验证指纹短语是否与您本人或其他用户的指纹短语相匹配。当操作过程中提示指纹短语时，请使用辅助通信方式（例如电话或短信）与 Bitwarden 用户联系。
+某些 Bitwarden 流程（例如，将新用户添加到组织，或确认[设备登录请求](../../account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)），会要求您验证指纹短语是否与您本人或其他用户的指纹短语相匹配。当操作过程中提示指纹短语时，请使用辅助通信方式（例如电话或短信）与 Bitwarden 用户联系。
 
 ## 在哪里可以找到我的指纹短语？ <a href="#where-can-i-find-my-fingerprint-phrase" id="where-can-i-find-my-fingerprint-phrase"></a>
 

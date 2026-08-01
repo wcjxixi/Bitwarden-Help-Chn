@@ -64,7 +64,7 @@
 5. 验证器 App
 6. 电子邮箱
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 如果您[使用 SSO 登录](../../log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多种方式会导致错误。可以考虑改为使用[免费的验证器方式的两步登录](two-step-login-via-authenticator.md)。
 {% endhint %}
 

@@ -12,7 +12,7 @@
 
 为确保您的账户安全，Bitwarden 将对**未使用**[**两步登录**](../two-step-login/setup-two-step-login/two-step-login-methods.md)**的用户**要求额外的验证。**当从一个以前未登录过的设备登录时**，在您输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码，以完成登录过程。例如，如果您登录的是以前使用过的移动 App 或浏览器扩展，则不会收到此提示。
 
-{% hint style="info" %}
+{% hint style="info" icon="lightbulb" %}
 验证电子邮件能够送达您的收件箱非常重要。如果您启用了垃圾邮件过滤功能，请检查您的收件箱设置，确保这些电子邮件在接收时不会被直接丢弃。
 {% endhint %}
 

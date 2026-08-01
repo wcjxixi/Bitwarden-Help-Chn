@@ -31,7 +31,7 @@
 {% endtab %}
 {% endtabs %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您在 Bitwarden App 中[登录了多个账户](account-switching.md)，超时时间和超时动作是根据每个账户分别设置的。
 {% endhint %}
 
@@ -56,7 +56,7 @@
 * **如果您关闭浏览器标签页**，您将从网页 App 中注销。关闭单个标签页不会影响浏览器扩展。
 * **如果您关闭浏览器窗口**，您将从网页 App 中注销，以及您的浏览器扩展将超时。
   * 默认情况下，浏览器扩展将要求您使用主密码登录或解锁，而不管您选择了哪种密码库超时动作。
-  * 要在关闭浏览器窗口后改为使用 PIN 码解锁，请在[设置 PIN 码](more-log-in-unlock-options/unlock-with-pin.md)时取消选中**浏览器重启时使用主密码锁定**选项。
+  * 要在关闭浏览器窗口后改为使用 PIN 码解锁，请在[设置 PIN 码](more-log-in-unlock-methods/unlock-with-pin.md)时取消选中**浏览器重启时使用主密码锁定**选项。
 {% endhint %}
 {% endtab %}
 
@@ -80,7 +80,7 @@
 
 * **从不**：您的会话不会超时
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **从不**超时选项会将未加密的加密密钥存储在您的设备上，这可能会影响安全性。为了确保您的数据安全，我们强烈建议您选择其他选项。
 {% endhint %}
 
@@ -95,7 +95,7 @@
 * **如果您关闭浏览器标签页**，您将从网页 App 中注销。关闭单个选项卡不会影响浏览器扩展。
 * **如果您关闭浏览器窗口**，您将从网页 App 中注销，以及您的浏览器扩展将超时。
   * 默认情况下，浏览器扩展将要求您使用主密码登录或解锁，而不管您选择了哪种密码库超时动作。
-  * 要在关闭浏览器窗口后改为使用 PIN 码解锁，请在[设置 PIN 码](more-log-in-unlock-options/unlock-with-pin.md)时取消选中**浏览器重启时使用主密码锁定**选项。
+  * 要在关闭浏览器窗口后改为使用 PIN 码解锁，请在[设置 PIN 码](more-log-in-unlock-methods/unlock-with-pin.md)时取消选中**浏览器重启时使用主密码锁定**选项。
 {% endhint %}
 {% endtab %}
 
@@ -107,7 +107,7 @@
 * **App 重启时**：当您首次打开或重新启动 Bitwarden App 时
 * **从不**：您的会话不会超时
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **从不**超时选项会将未加密的加密密钥存储在您的设备上，这可能会影响安全性。为了确保您的数据安全，我们强烈建议您选择其他选项。
 {% endhint %}
 
@@ -124,7 +124,7 @@
 * **重启时**：当您的设备首次打开或重新启动时
 * **从不**：您的会话不会超时
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **从不**超时选项会将未加密的加密密钥存储在您的设备上，这可能会影响安全性。为了确保您的数据安全，我们强烈建议您选择其他选项。
 {% endhint %}
 
@@ -137,12 +137,12 @@
 此选项决定了 Bitwarden 在达到[会话超时](vault-timeout-options.md#vault-timeout)[时间](vault-timeout-options.md#vault-timeout)后将执行的操作。选项包括：
 
 * **锁定**（默认）\
-  密码库锁定时将在设备上保留密码库数据，因此可以离线解锁您的密码库。您只需要输入[主密码](../master-password.md)或 PIN 码，或使用[生物识别](more-log-in-unlock-options/unlocking-with-biometrics.md)，但不需要使用任何有效的两步登录方式。
+  密码库锁定时将在设备上保留密码库数据，因此可以离线解锁您的密码库。您只需要输入[主密码](../master-password.md)或 PIN 码，或使用[生物识别](more-log-in-unlock-methods/unlocking-with-biometrics.md)，但不需要使用任何有效的两步登录方式。
 * **注销**\
   注销密码库时将完全从设备中删除所有密码库数据。重新登录将需要重新验证您的身份，因此登录只能在在线时完成。您需要输入您的[主密码](../master-password.md)和任何有效的[两步登录](../two-step-login/setup-two-step-login/two-step-login-methods.md)方式。
 
 ### 受信任设备 <a href="#trusted-devices" id="trusted-devices"></a>
 
-如果您使用[受信任设备](../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)，则必须启用[生物识别](more-log-in-unlock-options/unlocking-with-biometrics.md)或 [PIN 码](more-log-in-unlock-options/unlock-with-pin.md)才能解锁您的密码库。如果未启用生物识别或 PIN 码，会话超时将始终为注销而不是锁定。
+如果您使用[受信任设备](../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)，则必须启用[生物识别](more-log-in-unlock-methods/unlocking-with-biometrics.md)或 [PIN 码](more-log-in-unlock-methods/unlock-with-pin.md)才能解锁您的密码库。如果未启用生物识别或 PIN 码，会话超时将始终为注销而不是锁定。
 
 使用受信设备解锁和登录**始终**需要互联网连接。

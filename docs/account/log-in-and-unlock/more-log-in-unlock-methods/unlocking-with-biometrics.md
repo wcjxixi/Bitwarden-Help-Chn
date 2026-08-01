@@ -8,7 +8,7 @@
 
 生物识别功能是设备和/或操作系统内置安全性的一部分。Bitwarden 利用本地 API 来执行这种验证，因此 **Bitwarden 永远不会收到您的生物识别数据**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 安全设置是按账户设置的。要为[多个账户](../account-switching.md)（例如个人和组织账户）启用生物识别解锁，请对每个账户重复这些步骤。
 {% endhint %}
 
@@ -127,23 +127,13 @@ sudo chcon system_u:object_r:usr_t:s0
 
 {% tabs %}
 {% tab title="Chromium-based & FireFox" %}
-为浏览器扩展启用生物识别包含两个步骤：[激活集成](unlocking-with-biometrics.md#id-1-activate-the-integration)和[激活扩展生物识别](unlocking-with-biometrics.md#id-2-activate-extension-biometrics)。
+为浏览器扩展启用生物识别包含两个步骤：
 
-### 激活集成 <a href="#activate-the-integration" id="activate-the-integration"></a>
+### 在桌面 App 启用生物识别 <a href="#enable-biometrics-on-the-desktop-app" id="enable-biometrics-on-the-desktop-app"></a>
 
-首先，打开 Bitwarden 桌面 App 并更新此设置：
+要启用桌面 App 的生物识别：
 
-1、在 Bitwarden 桌面 App 中启用生物识别解锁。
-
-2、打开 Bitwarden 桌面 App 设置（对于 Windows 和 Linux，请转到**文件** → **设置**。对于 macOS，请转到 **Bitwarden** → **设置**。）
-
-3、选中**允许浏览器集成**。
-
-{% hint style="danger" %}
-在 macOS 上，如果您的用户名目录（例如 `/Users/your_username/Library/...`）超过 104 个字符，您可能会遇到错误。如果遇到这种错误，请缩短您的用户名。
-{% endhint %}
-
-4、（可选）选中**要求浏览器集成验证**以在每次激活桌面 App 和浏览器扩展之间的集成时要求进行指纹验证。
+1、在 Bitwarden 桌面 App [设置生物识别解锁](unlocking-with-biometrics.md#set-up-biometrics-for-desktop-app)。
 
 ### 激活扩展生物识别 <a href="#activate-extension-biometrics" id="activate-extension-biometrics"></a>
 
@@ -156,7 +146,7 @@ sudo chcon system_u:object_r:usr_t:s0
 
 接下来，保持 Bitwarden 桌面 App 登录状态，然后打开 Bitwarden 浏览器扩展。要为浏览器扩展启用生物识别解锁：
 
-1、选择 **⚙️设置**图标。
+1、选择 <i class="fa-gears">:gears:</i>**设置**图标。
 
 2、选择**账户安全**。
 
@@ -168,14 +158,7 @@ sudo chcon system_u:object_r:usr_t:s0
 浏览器扩展需要此权限才能使用生物识别解锁。如果您拒绝，您可以继续使用浏览器扩展程序，但生物识别解锁将不起作用。
 {% endhint %}
 
-5、转到桌面 App，然后：
-
-1. 选择**批准**以验证浏览器连接。
-2. 在出现提示时输入您的生物识别信息。
-
-6、（可选）如果您之前启用了**要求浏览器集成验证**，请在出现提示时输入您的指纹。
-
-7、（可选）选中**启动时要求生物识别**，以在浏览器扩展首次打开时跳过初始解锁界面，直接使用生物识别。
+5、（可选）选中**启动时要求生物识别**，以在浏览器扩展首次打开时跳过初始解锁界面，直接使用生物识别。
 {% endtab %}
 
 {% tab title="Safari" %}
@@ -210,7 +193,7 @@ sudo chcon system_u:object_r:usr_t:s0
 
 1、在设备的系统设置（例如 iOS 的**设置** App）中，启用生物识别方式。
 
-2、打开 Bitwarden App 然后点击 **⚙️设置**图标。
+2、打开 Bitwarden App 然后点击 <i class="fa-gears">:gears:</i>**设置**图标。
 
 3、点击**账户安全**。
 

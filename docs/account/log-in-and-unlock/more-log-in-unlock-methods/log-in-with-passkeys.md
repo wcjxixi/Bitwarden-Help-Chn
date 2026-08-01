@@ -8,10 +8,10 @@
 Bitwarden 提供三种通行密钥功能：
 
 * 从您的 Bitwarden 密码库为其他服务[保存和自动填充通行密钥](../../../password-manager/autofill/more-autofill-options/autofill-passkeys.md)。
-* 使用[通行密钥登录和解锁](log-in-with-passkeys.md)您的 Bitwarden 账户。**\***
-* 使用[通行密钥 2FA](../../two-step-login/setup-two-step-login/two-step-login-via-fido.md)保护您的 Bitwarden 账户。**\***
+* 使用[通行密钥登录和解锁](log-in-with-passkeys.md)您的 Bitwarden 账户。<mark style="color:red;">**ª**</mark>
+* 使用[通行密钥 2FA](../../two-step-login/setup-two-step-login/two-step-login-via-fido.md)保护您的 Bitwarden 账户。<mark style="color:red;">**ª**</mark>
 
-**\*** 某些身份验证器，尤其是 Windows Hello，不允许您使用通行密钥同时进行登录和 2FA。
+<mark style="color:red;">**ª**</mark> - 某些身份验证器，尤其是 Windows Hello，不允许您使用通行密钥同时进行登录和 2FA。
 {% endhint %}
 
 通行密钥为您的 Bitwarden 账户提供安全身份验证。使用它们登录，并通过[支持 PRF 的设置](log-in-with-passkeys.md#unlock-vault-requirements)自动[解锁您的密码库](../understand-log-in-vs-unlock.md)，而无需输入主密码。通行密钥绕过两步登录，为传统的基于密码的身份验证提供了简化的替代方案。
@@ -113,7 +113,7 @@ Bitwarden 不会提示或允许您保存用于登录任何 Bitwarden 账户的�
 使用通行密钥登录的机制取决于您的通行密钥是否[设置为用于加密](log-in-with-passkeys.md#set-up-encryption)。
 
 {% tabs %}
-{% tab title="带加密的通行密钥" %}
+{% tab title="加密的通行密钥" %}
 ### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
 
 当与 PRF 兼容的通行密钥被注册用于登录 Bitwarden 并且加密启用时：
@@ -144,7 +144,7 @@ Bitwarden 不会提示或允许您保存用于登录任何 Bitwarden 账户的�
 如果您已经登录，随后使用通行密钥解锁您的密码库，由于您的加密密钥在登录时就已存在于您的设备上，因此将跳过身份验证和密钥获取步骤。
 {% endtab %}
 
-{% tab title="没有加密的通行密钥" %}
+{% tab title="未加密的通行密钥" %}
 ### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
 
 当通行密钥被注册用于登录 Bitwarden 并且加密保持停用时：

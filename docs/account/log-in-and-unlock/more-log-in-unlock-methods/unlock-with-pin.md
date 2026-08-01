@@ -16,7 +16,7 @@ Bitwarden Password Manager 移动 App、浏览器扩展和桌面 App 可以使�
 
 完成以下步骤即可使用 PIN 码解锁您的账户。如果您登录了多个账户，则需要为每个账户进行设置：
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 使用 PIN 码会降低保护应用程序的本地密码库数据库的加密的级别。如果您担心设备的本地数据会受到攻击，您可能需要重新考虑使用 PIN 码的便利性。
 {% endhint %}
 
@@ -43,7 +43,7 @@ Bitwarden Password Manager 移动 App、浏览器扩展和桌面 App 可以使�
 当如果您停用了此选项，Bitwarden 应用程序在进入锁定状态时可能无法完全清除应用程序内存中的敏感数据。如果您担心设备的本地内存受到盗用，您应该保持此选项处于启用状态。
 {% endhint %}
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 使用 PIN 码时，您将在 **5** 次尝试输入 PIN 码失败后自动注销。
 {% endhint %}
 {% endtab %}
@@ -69,7 +69,7 @@ Bitwarden Password Manager 移动 App、浏览器扩展和桌面 App 可以使�
 * 如果您希望在 Password Manager 从关闭状态启动时要求非 PIN 码解锁方式，请选择**是**。
 * 如果您希望在 Password Manager 从关闭状态启动时能够使用您的 PIN 码，请选择**否**。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 使用 PIN 码时，您将在 **5** 次尝试输入 PIN 码失败后自动注销。
 {% endhint %}
 {% endtab %}
@@ -98,7 +98,7 @@ Bitwarden Password Manager 移动 App、浏览器扩展和桌面 App 可以使�
 当如果您停用了此选项，Bitwarden 应用程序在进入锁定状态时可能无法完全清除应用程序内存中的敏感数据。如果您担心设备的本地内存受到盗用，您应该保持此选项处于启用状态。
 {% endhint %}
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 使用 PIN 码时，您将在 **5** 次尝试输入 PIN 码失败后自动注销。
 {% endhint %}
 {% endtab %}

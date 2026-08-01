@@ -14,7 +14,7 @@
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5sNF8v7r2HsyLQm8gd6xBC/ac61e5e2bb0c733b3498536be584db9a/2025-10-13_10-46-01.png?w=958&#x26;fm=avif" alt=""><figcaption><p>SSO 标识符界面</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **组织成员**：请将 URL 中包含标识符的页面（例如 `https://vault.bitwarden.com/#/sso?my-identifier`）添加为书签，这样您就不必在每次登录时输入它了。
 
 **组织管理员**：如果您的成员拥有与域名匹配的电子邮箱地址，设置[声明域名](../../../admin-console/oversight-visibility/claimed-domains/claimed-domains.md)将自动跳过此步骤。
@@ -30,8 +30,8 @@
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/TJ0nUZ4zs7l38aOQz5WLl/6b95624ef2271198f6fc6447b77d63c1/2025-10-13_12-57-15.png?w=958&#x26;fm=avif" alt=""><figcaption><p>使用主密码解密</p></figcaption></figure></div>
 
-{% hint style="success" %}
-**为什么仍然需要我的主密码？**
+{% hint style="success" icon="lightbulb" %}
+**为什么仍然需要主密码？**
 
 所有密码库数据，包括[由您组织共享](../../../password-manager/organization-members/sharing.md)的凭据，Bitwarden **仅**以加密形式保存他们。这意味着为了使用任何这些凭据，**您**需要一种方法来解密该数据。我们不能。
 
@@ -44,7 +44,7 @@
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1zrsBanU5CNhFnDHAXazwP/c94f8bfb5066cb79381676570bd87aa1/2025-10-13_13-06-26.png?w=958&#x26;fm=avif" alt=""><figcaption><p>建立信任的选项</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果这是您第一次登录，您将被允许自动将此 App 指定为受信任设备，而不是被要求使用上述方法之一：
 
 <img src="https://bitwarden.com/assets/6iahsCNPUcIT51P2oZIUQ1/f6dbb4364d96d80c69c3ec84176e7971/2025-10-13_13-03-59.png?w=958&#x26;fm=avif" alt="" data-size="original">
@@ -66,6 +66,6 @@
 
 5、最后，可能会要求您使用[您在 Bitwarden 中设置的选项](../../two-step-login/setup-two-step-login/two-step-login-methods.md)完成两步登录。如果您的 IdP 要求，您通常不需要使用 Bitwarden 两步登录（**步骤 3**）。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **如果您是首次加入组织**，则无需完成**步骤 5**，并且在管理员确认您的成员身份之前，您将无法访问组织数据。
 {% endhint %}

@@ -102,10 +102,10 @@
 
 | 方式                                                                                                                                                                  | 描述                                                                  |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [使用设备登录](log-in-and-unlock/more-log-in-unlock-options/log-in-with-device.md)                                                                                        | 设备登录是一种利用受信任的辅助设备向 Bitwarden 发送身份验证请求的选项。                           |
+| [使用设备登录](log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)                                                                                        | 设备登录是一种利用受信任的辅助设备向 Bitwarden 发送身份验证请求的选项。                           |
 | [使用 SSO 登录](../admin-console/login-with-sso/about-sso.md)                                                                                                           | Bitwarden 用户如果属于使用单点登录 (SSO) 的组织，可以利用现有的身份提供程序进行登录，该提供程序将对用户进行身份验证。 |
-| [使用通行密钥登录](log-in-and-unlock/more-log-in-unlock-options/log-in-with-passkeys.md)                                                                                    | 通行密钥可用作使用主密码和电子邮件登录 Bitwarden 的替代方式，并且某些通行密钥还可用于密码库加密和解密。           |
-| [使用生物识别解锁](log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)和[使用 PIN 码解锁](log-in-and-unlock/more-log-in-unlock-options/unlock-with-pin.md) | 生物识别或 PIN 解锁并不是一种替代登录方法，但是，它允许您使用系统生物识别或 PIN 而不是主密码来访问已锁定的账户。       |
+| [使用通行密钥登录](log-in-and-unlock/more-log-in-unlock-methods/log-in-with-passkeys.md)                                                                                    | 通行密钥可用作使用主密码和电子邮件登录 Bitwarden 的替代方式，并且某些通行密钥还可用于密码库加密和解密。           |
+| [使用生物识别解锁](log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)和[使用 PIN 码解锁](log-in-and-unlock/more-log-in-unlock-methods/unlock-with-pin.md) | 生物识别或 PIN 解锁并不是一种替代登录方法，但是，它允许您使用系统生物识别或 PIN 而不是主密码来访问已锁定的账户。       |
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 

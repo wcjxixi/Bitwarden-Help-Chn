@@ -82,7 +82,7 @@
 **支持链接：**
 
 * [Bitwarden Send](../../password-manager/bitwarden-send/about-send.md)
-* [使用生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)
+* [使用生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)
 * [生成 TOTP 代码](../../password-manager/your-vault/security-tools/totp.md#generate-totp-codes)
 
 ## 恢复方案 <a href="#recovery-planning" id="recovery-planning"></a>

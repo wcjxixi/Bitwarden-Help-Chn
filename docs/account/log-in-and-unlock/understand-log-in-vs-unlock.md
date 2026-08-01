@@ -10,7 +10,7 @@ Bitwarden 使用两种不同的流程来保护您的密码库，同时又不牺�
 
 **登录到** Bitwarden 可以获取已加密的密码库数据，并在本地设备上进行解密。在实践中，这意味着两件事：
 
-* 登录始终需要使用您的主密码、[已批准的设备](more-log-in-unlock-options/log-in-with-device.md)或[已创建的通行密钥](more-log-in-unlock-options/log-in-with-passkeys.md)，以获取解密密码库数据所需的[账户加密密钥](../../security/encryption/encryption-key-rotation.md)。在此阶段也需要使用[任何已启用的两步登录方式](../two-step-login/setup-two-step-login/two-step-login-methods.md)。
+* 登录始终需要使用您的主密码、[已批准的设备](more-log-in-unlock-methods/log-in-with-device.md)或[已创建的通行密钥](more-log-in-unlock-methods/log-in-with-passkeys.md)，以获取解密密码库数据所需的[账户加密密钥](../../security/encryption/encryption-key-rotation.md)。在此阶段也需要使用[任何已启用的两步登录方式](../two-step-login/setup-two-step-login/two-step-login-methods.md)。
 * 登录始终需要连接到互联网（或者，如果是自托管，则需要连接到服务器），才能将加密的。库下载到磁盘然后，密码库将在您设备的内存中解密。。
 
 ## 解锁 <a href="#unlocking" id="unlocking"></a>

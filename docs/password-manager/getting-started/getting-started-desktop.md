@@ -95,7 +95,7 @@ Bitwarden 的桌面 App 将完整的密码库体验从浏览器直接带入您�
 
 #### 使用生物识别解锁 <a href="#unlock-with-biometrics" id="unlock-with-biometrics"></a>
 
-桌面 App 最受欢迎的设置之一是[使用生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)，它允许使用带 PIN 的 [Windows Hello](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello)、面部识别或[其他符合 Windows Hello 生物识别要求的硬件](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)无缝访问您的桌面 App。要设置生物识别解锁：
+桌面 App 最受欢迎的设置之一是[使用生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)，它允许使用带 PIN 的 [Windows Hello](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello)、面部识别或[其他符合 Windows Hello 生物识别要求的硬件](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)无缝访问您的桌面 App。要设置生物识别解锁：
 
 {% hint style="success" %}
 Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https://support.microsoft.com/zh-cn/topic/%E6%9C%80%E6%96%B0%E6%94%AF%E6%8C%81%E7%9A%84-visual-c-%E4%B8%8B%E8%BD%BD-2647da03-1eea-4433-9aff-95f26a218cc0)，然后才能在桌面偏好设置中开启 Windows Hello。
@@ -133,7 +133,7 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 
 #### 使用生物识别解锁 <a href="#unlock-with-biometrics" id="unlock-with-biometrics"></a>
 
-桌面 App 最受欢迎的设置之一是[使用生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)，它允许使用**触控 ID** 技术无缝访问您的桌面 App。要设置生物识别解锁：
+桌面 App 最受欢迎的设置之一是[使用生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)，它允许使用**触控 ID** 技术无缝访问您的桌面 App。要设置生物识别解锁：
 
 1、在您的计算机上启用触控 ID。请参阅 Apple 的[触控 ID 文档](https://support.apple.com/en-us/HT207054)以获取帮助。
 
@@ -174,7 +174,7 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 
 #### 使用生物识别解锁 <a href="#unlock-with-biometrics" id="unlock-with-biometrics"></a>
 
-桌面 App 最受欢迎的设置之一是[使用生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-options/unlocking-with-biometrics.md)，它允许无缝访问您的桌面 App。支持来自 `AppImage`、`Deb` 和 `.rpm` 软件包类型的 Bitwarden 桌面 App。此外，请确认您的系统有 polkit 代理和机密服务（如 GNOME-Keyring）。要启用生物识别解锁：
+桌面 App 最受欢迎的设置之一是[使用生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)，它允许无缝访问您的桌面 App。支持来自 `AppImage`、`Deb` 和 `.rpm` 软件包类型的 Bitwarden 桌面 App。此外，请确认您的系统有 polkit 代理和机密服务（如 GNOME-Keyring）。要启用生物识别解锁：
 
 1、在您的计算机上启用系统身份验证。
 
