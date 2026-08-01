@@ -10,7 +10,7 @@ Bitwarden 维护两个独立的历史记录：一个用于保存的登录的密�
 
 Bitwarden 会为每个[登录项目](../vault-items/vault-items.md)存储最近保存的五个密码，包括[已删除](../vault-items/vault-items.md#vault-trash)但尚未被永久移除的项目。当您编辑[隐藏的自定义字段](../vault-items/custom-fields.md)时，其先前的值也会保存在密码历史记录中，并计入五个已保存条目之一。注销或切换 Bitwarden 客户端不会影响或清除密码历史记录。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 访问密码历史记录会立即以纯文本形式显示旧密码。
 {% endhint %}
 
@@ -48,7 +48,7 @@ Bitwarden 会为每个[登录项目](../vault-items/vault-items.md)存储最近�
 
 例如，在移动 App 中生成的密码仅出现在移动 App 的生成器历史记录中。它们不会出现在网页 App 的生成器历史记录中，以及注销网页 App 不会移除移动 App 的生成器历史记录。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 访问生成器历史记录会立即以纯文本形式显示之前生成的选项。
 {% endhint %}
 
@@ -68,8 +68,8 @@ Bitwarden 会为每个[登录项目](../vault-items/vault-items.md)存储最近�
 
 要访问生成器历史记录：
 
-1. 点击 **⟳生成器图标**。
-2. 点击 **≡菜单**图标。
+1. 点击 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成器图标**。
+2. 点击 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**菜单**图标。
 3. 点击**密码历史记录**。
 {% endtab %}
 

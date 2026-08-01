@@ -28,13 +28,13 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 
 自动填充登录信息的最基本方式是与 Bitwarden 浏览器扩展交互。当您访问某个网站并且与至少一个项目的已保存的 URI 匹配时，该网站的匹配项目数量将显示在 Bitwarden 扩展图标的顶部。
 
-{% hint style="success" %}
-要隐藏匹配项目的总数，请转至 **⚙️设置** → **外观**，然后取消选中**在扩展图标上显示自动填充建议的登录的数量**。
+{% hint style="success" icon="lightbulb" %}
+要隐藏匹配项目的总数，请转至 <i class="fa-gear-complex">:gear-complex:</i>**设置** → **外观**，然后取消选中**在扩展图标上显示自动填充建议的登录的数量**。
 {% endhint %}
 
 选择 **Bitwarden 扩展徽章**以打开您的密码库，匹配的项目将显示在顶部的自动填充建议部分。如果您想要包含支付卡或身份，请转至**设置** → **自动填充**，然后选中**在密码库视图中始终将支付卡显示为自动填充建议**或**在密码库视图中始终将身份显示为自动填充建议**。
 
-要查找项目，请选择 **☷筛选器图标**以打开并应用筛选器到**自动填充建议**和**所有项目**结果中：
+要查找项目，请选择 <i class="fa-sliders">:sliders:</i>**筛选器图标**以打开并应用筛选器到**自动填充建议**和**所有项目**结果中：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12UsFuA2sxbUCBMIczJsxv/6376ae661b966e4698375c2af2c27c0d/Browser_extension_filters.png?w=480&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展的筛选</p></figcaption></figure></div>
 
@@ -54,11 +54,11 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 如果目标字段位于[不受信任的 iframe](autofill-from-browser-extensions.md#autofill-in-iframes) 中，或者当前站点使用 HTTP（[项目已保存 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 要求使用 HTTPS）您可能会在自动填充之前收到警告。
 {% endhint %}
 
-若要在**自动填充建议**中打开某个条目，请选择 **≡**&#x83DC;单图标 → **查看**。
+若要在**自动填充建议**中打开某个条目，请选择 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>菜单图标 → **查看**。
 
 ### 复制凭据 <a href="#copy-credentials" id="copy-credentials"></a>
 
-您也可以选择项目旁边的 **❐复制图标**。将出现一个菜单，您可以在其中选择**复制用户名**或**复制密码**：
+您也可以选择项目旁边的 <i class="fa-copy">:copy:</i>**复制图标**。将出现一个菜单，您可以在其中选择**复制用户名**或**复制密码**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7y8WE9sWACC2KLASo9yASw/d1b1f78084ed20940ec76fc397b25ae8/Standard_copy_icon.png?w=484&#x26;fm=avif" alt=""><figcaption><p>标准复制图标</p></figcaption></figure></div>
 
@@ -111,7 +111,7 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 
 1、登录并解锁 Bitwarden [浏览器扩展](../../getting-started/getting-started-browserext.md)。
 
-2、选择 **⚙️设置** → **自动填充**。
+2、选择 <i class="fa-gear-complex">:gear-complex:</i>**设置** → **自动填充**。
 
 3、勾选**在表单字段显示自动填充建议**，这将打开更多选项。
 
@@ -247,7 +247,7 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 
 默认情况下，自动填充登录后，您的 TOTP 也会被复制到剪贴板。如果您使用页面加载时自动填充功能，这是推荐的工作流程。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在浏览器扩展中使用自动填充时，默认会启用自动复制 TOTP 功能。如需停用，请前往**设置** → **自动填充**，取消勾选**自动复制 TOTP**。此外，使用旁边的**清除剪贴板**下拉菜单，指定复制内容的清除时间。
 {% endhint %}
 

@@ -20,7 +20,7 @@ iOS 上有几种不同的自动填充方式：
 * **浏览器 App 扩展自动填充**：使用此选项仅可以在网页浏览器 App（例如 Safari）中通过分享菜单来使用 Bitwarden 自动填充。
 * **长按文本字段自动填充**：使用此选项可在更多位置从 Bitwarden 自动填充。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果设备的[密码库超时行为](../../../account/log-in-and-unlock/vault-timeout-options.md#vault-timeout-action)设置为**注销**，并且您仅启用了需要 NFC（例如带 NFC 的 YubiKey）的[两步登录方式](../../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)，则当前无法在 iOS 上使用自动填充，因为 iOS 不允许 NFC 输入中断自动填充工作流。
 
 要么将您的密码库超时行为改为**锁定**，要么启用另一种两步登录方式。
@@ -42,7 +42,7 @@ iOS 上有几种不同的自动填充方式：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5jxVP3WslH4ppIdFq9viqX/613fbbb9eacbb14f56c0fbcee17bc9a1/2025-01-22_11-00-15.png?w=352&#x26;fm=avif" alt=""><figcaption><p>iOS 上设置自动填充</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 我们强烈建议在**自动填充自：**&#x5217;表中禁用任何其他自动填充服务（例如钥匙串）。
 {% endhint %}
 
@@ -50,11 +50,11 @@ iOS 上有几种不同的自动填充方式：
 
 1、打开一个您当前未登录的 App 或网站。
 
-2、在登录界面点击用户名或密码字段。键盘将上滑出一个匹配的登录 (`my_username`) 或 **🔑密码**按钮：
+2、在登录界面点击用户名或密码字段。键盘将上滑出一个匹配的登录 (`my_username`) 或 <i class="fa-key">:key:</i>**密码**按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/vQG8BTWlHg2AQxBlXe4S3/63f2a5e9c32c2f38b29ec0ab0af24d57/autofill-ios.jpeg?w=932&#x26;fm=avif" alt=""><figcaption><p>iOS 上的自动填充</p></figcaption></figure></div>
 
-3、如果显示一个[匹配的登录](../troubleshoot-autofill/forming-uris-for-autofill.md)，请点击以自动填充。如果显示 **🔑密码**按钮，请点击它浏览您的密码库以搜索要使用的登录项目。如果显示 **🔑密码**按钮，可能是因为您的密码库中没有具有[匹配 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 的项目。
+3、如果显示一个[匹配的登录](../troubleshoot-autofill/forming-uris-for-autofill.md)，请点击以自动填充。如果显示 <i class="fa-key">:key:</i>**密码**按钮，请点击它浏览您的密码库以搜索要使用的登录项目。如果显示 <i class="fa-key">:key:</i>**密码**按钮，可能是因为您的密码库中没有具有[匹配 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 的项目。
 
 {% hint style="info" %}
 遇到 `Biometric unlock disabled pending verification of master password`（生物识别解锁已禁用，等待验证主密码） 消息吗？了解[该怎么做](../auto-fill-faqs.md#q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password)。
@@ -92,7 +92,7 @@ iOS 上有几种不同的自动填充方式：
 
 4、Bitwarden 界面将在您的设备上向上滑出，并列出此网站的[匹配登录项目](../troubleshoot-autofill/forming-uris-for-autofill.md)。点击该项目以自动填充。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果未列出登录项目，则可能是因为您的密码库中没有与 [URI 匹配](../troubleshoot-autofill/forming-uris-for-autofill.md)的项目。
 {% endhint %}
 

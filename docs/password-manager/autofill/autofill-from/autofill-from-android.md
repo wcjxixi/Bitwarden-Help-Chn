@@ -8,7 +8,7 @@ Bitwarden 可以自动填充您的密码，以便您可以无缝登录网站和 
 
 移动端自动填充当前不支持自定义字段和拆分登录工作流程（当用户名和密码字段显示在单独的界面上时）。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 对于要安装的应用程序，请务必**仅安装并自动填充来自受信任来源**（例如 Google Play Store 或 F-Droid）**的应用程序**，因为恶意应用程序可能会伪造知名应用程序的包名称。[了解更多](../troubleshoot-autofill/forming-uris-for-autofill.md#android)。
 {% endhint %}
 
@@ -40,8 +40,8 @@ Bitwarden 可以自动填充您的密码，以便您可以无缝登录网站和 
 
 6、如果您想使用快速操作磁贴，请打开**使用无障碍**。当您的设备将您带到**无障碍**菜单时，也请在该位置打开 Bitwarden。
 
-{% hint style="success" %}
-快速操作磁贴不需要在 Bitwarden 中打开**自动填充服务**，这意味着如果这是您的首选方式，您可以跳过前面的步骤，但您需要使用 **✏️**图标编辑磁贴，以将 Bitwarden 磁贴选项放置在符合您使用习惯的位置。
+{% hint style="success" icon="lightbulb" %}
+快速操作磁贴不需要在 Bitwarden 中打开**自动填充服务**，这意味着如果这是您的首选方式，您可以跳过前面的步骤，但您需要使用 <i class="fa-pen">:pen:</i> 图标编辑磁贴，以将 Bitwarden 磁贴选项放置在符合您使用习惯的位置。
 {% endhint %}
 
 {% hint style="info" %}
@@ -78,7 +78,7 @@ Bitwarden 可以自动填充您的密码，以便您可以无缝登录网站和 
 
 这是 Chrome 所必需的，以便它能够安全地使用 Bitwarden 通过其受保护的自动填充系统自动填充密码，并且要求在 Bitwarden 中启用**自动填充服务**，并且安装的 Chrome App 版本至少为 135。这些选项将禁用浏览器内置的自动填充功能，转而使用 Bitwarden。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Bitwarden 会自动检测您是否正在使用 **Edge、Opera 或 Samsung Internet**，无需为这些浏览器启用集成选项，并且会在这些浏览器中使用改进后的自动填充逻辑。
 
 在使用 Edge、Opera 或 Samsung Internet 时，请务必仅自动填充受信任且合法的网站，因为存在一个可能导致凭据被自动填充到恶意网站的嵌入式或隐藏的 iframe 中的漏洞。
@@ -88,7 +88,7 @@ Bitwarden 会自动检测您是否正在使用 **Edge、Opera 或 Samsung Intern
 
 ### 快速操作磁贴 <a href="#quick-action-tiles" id="quick-action-tiles"></a>
 
-快速操作磁贴使用 Android 无障碍服务，让您能在通知下拉设置菜单中直接访问自动填充操作。快速操作磁贴不需要在 Bitwarden 中打开**自动填充服务**，但您需要使用 **✏️**图标编辑磁贴，以将 Bitwarden 磁贴选项放置在符合您使用习惯的位置：
+快速操作磁贴使用 Android 无障碍服务，让您能在通知下拉设置菜单中直接访问自动填充操作。快速操作磁贴不需要在 Bitwarden 中打开**自动填充服务**，但您需要使用 <i class="fa-pen">:pen:</i> 图标编辑磁贴，以将 Bitwarden 磁贴选项放置在符合您使用习惯的位置：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7MHfjTUrRjdLtBoyL3Ukz2/7980adfc9de7b6b2659f1955d3d987fd/2025-07-30_11-07-51.png?w=745&#x26;fm=avif" alt=""><figcaption><p>Android 快速操作自动填充</p></figcaption></figure></div>
 
@@ -100,7 +100,7 @@ Bitwarden 会自动检测您是否正在使用 **Edge、Opera 或 Samsung Intern
 
 ~~兼容模式允许 Bitwarden 从地址栏检测匹配的 URI 来进行自动填充，而不仅仅是从表单的属性（例如用户名或密码）中检测。这有助于自动填充在更广泛的场景下工作，但也会在某些浏览器中引入风险。~~
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 ~~在某些浏览器中启用兼容模式会引入一个漏洞，该漏洞可能允许恶意网站将凭据自动填充到嵌入式或隐藏的 iframe 中：~~
 
 * ~~Chrome、Brave 和 Firefox 将始终使用标准的自动填充逻辑，无论是否启用此选项，从而确保您获得最大程度的保护。~~

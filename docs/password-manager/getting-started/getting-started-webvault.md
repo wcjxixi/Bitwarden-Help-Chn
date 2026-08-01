@@ -62,7 +62,7 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 
 2、在新的标签页或窗口中，打开相应的网站并登录您的账户。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您在 **URI 1** 字段中输入了某些内容，请单击 <i class="fa-arrow-up-right-from-square">:arrow-up-right-from-square:</i>**启动**图标以直接从您的密码库中打开它！
 {% endhint %}
 
@@ -74,13 +74,13 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 
 您可能已经记住了旧的密码，但养成复制和粘贴密码是一个好的习惯，因为一旦你的密码被替换成更强的密码，你将主要以这种方式登录网站。
 
-5、返回到您的 Bitwarden 密码库并单击**密码**字段旁边的 <i class="fa-arrows-rotate">:arrows-rotate:</i>**生成**图标。系统会询问您是否要覆盖当前密码，单击**是**以继续。
+5、返回到您的 Bitwarden 密码库并单击**密码**字段旁边的 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**图标。系统会询问您是否要覆盖当前密码，单击**是**以继续。
 
 这将用随机生成的强密码替换您的**密码**值。从 `Fido1234` 这样的密码迁移到 `X@Ln@x9J@&u@5n##B` 可以阻止潜在的黑客入侵。
 
 6、使用您之前使用的相同的 <i class="fa-copy">:copy:</i>**复制**图标复制您的新密码，然后点击**保存**按钮。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 不用担心会覆盖您现有的密码！如果出现问题，Bitwarden 会为每个登录项目保存最近五个密码的[**密码历史记录**](../your-vault/security-tools/password-and-generator-history.md#password-history)。
 {% endhint %}
 

@@ -1,26 +1,26 @@
-# 自动填充通行密钥
+# =自动填充通行密钥
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/storing-passkeys/)
 {% endhint %}
 
 {% hint style="info" %}
-Bitwarden 提供三种通行密钥功能：[使用通行密钥登录和解锁](autofill-passkeys.md#log-in-and-unlock-with-your-passkey)您的 Bitwarden 账户、在您的 Bitwarden 账户上使用[通行密钥 2FA](../../../account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)，以及为其他网站和服务[自动填充已存储的通行密钥](autofill-passkeys.md)。
+Bitwarden 提供三种通行密钥功能：
+
+* 从 Bitwarden 密码库为其他服务[保存和自动填充通行密钥](autofill-passkeys.md)。
+* [使用通行密钥登录和解锁](autofill-passkeys.md#log-in-and-unlock-with-your-passkey)您的 Bitwarden 账户。 <mark style="color:red;">**ª**</mark>
+* 使用[通行密钥 2FA](../../../account/two-step-login/setup-two-step-login/two-step-login-via-fido.md) 保护您的 Bitwarden 账户。 <mark style="color:red;">**ª**</mark>
+
+<mark style="color:red;">**ª**</mark> - 某些身份验证器，尤其是 Windows Hello，不允许您使用通行密钥进行登录和 2FA。
 {% endhint %}
 
-通行密钥可以通过 Bitwarden Password Manager 存储和使用。使用 Bitwarden 浏览器扩展和移动 App，用户可以登录自己喜欢的支持通行密钥登录功能的常用 App 和网站。通行密钥是一种安全、无密码的替代方案，可供用户跨设备登录各种服务。
+通行密钥是传统密码的安全替代方案，让您无需输入密码即可登录 App 和网站。根据 [FIDO 联盟](https://fidoalliance.org/overview/)制定的标准开发，绕过了标准密码可能存在的漏洞（如网络钓鱼）。
 
-通行密钥根据 [FIDO 联盟](https://fidoalliance.org/overview/)制定的标准开发，允许用户保护其账户安全，并绕过标准密码身份验证带来的漏洞（如网络钓鱼）。存储的通行密钥受到 Bitwarden 可信的端到端加密技术的保护。
-
-{% hint style="info" %}
-在 iOS 上，存储和使用通行密钥要求版本 17.0 或更高版本。[了解更多](../autofill-from/autofill-from-ios.md)。
-
-在 Android 上，存储和使用通行密钥要求版本 14.0 或更高版本。可能需要额外的设置步骤。[了解更多](../autofill-from/autofill-from-android.md)。
-{% endhint %}
+通行密钥保存在您的 Bitwarden 密码库中，并使用浏览器扩展或移动 App 在您日常使用的 App 和网站上自动填充它们。存储的通行密钥受 Bitwarden 可信赖的端到端加密保护。
 
 ## 什么是通行密钥？ <a href="#what-are-passkeys" id="what-are-passkeys"></a>
 
-通行密钥是密码的替代品，可以让用户在不同设备上快速、方便、安全地登录网站和 App。更确切地说，「通行密钥」是一个对消费者友好的术语，指的是一种可发现的 FIDO 凭证，它可以通过同步实现跨设备的安全无密码登录，或作为设备绑定通行密钥专用于单个硬件。
+通行密钥是密码的替代方案，可以让用户在不同设备上快速、方便、安全地登录网站和 App。通行密钥指的是一种可发现的 FIDO 凭证，它可以通过同步实现跨设备的安全无密码登录，或作为设备绑定通行密钥专用于单个硬件。
 
 App 和服务可以要求在保存或访问用它们创建的通行密钥时使用 PIN、密码、图案或生物识别因素进行验证。有关通行密钥的更多信息，请参阅[通行密钥 FAQ](../../../miscellaneous/passkeys-faq.md)。
 

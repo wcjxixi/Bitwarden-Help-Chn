@@ -18,7 +18,7 @@
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/70bx0hWvxAvkz5RJdIj04n/63febc4043e13292461c768d910cd450/2025-02-14_11-00-10.png?w=1122&#x26;fm=avif" alt=""><figcaption><p>网页 App 密码生成器</p></figcaption></figure></div>
 
-您在此页面上[指定的选项](generator.md#password-types)将保存，即使您注销网页 App。您也可以使用相同的选项直接从「添加项目」或「编辑项目」界面使用 **⟳生成**按钮快速生成强密码：
+您在此页面上[指定的选项](generator.md#password-types)将保存，即使您注销网页 App。您也可以使用相同的选项直接从「添加项目」或「编辑项目」界面使用 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**按钮快速生成强密码：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5ZVBOSK13MaXJ2S8iJTOMX/1324db87fd867667cbb6e8c1c1f4539a/2024-12-02_14-44-30.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>网页 App 密码生成器</p></figcaption></figure></div>
 
@@ -28,11 +28,11 @@
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-选择 **⟳生成器**选项卡：
+选择 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成器**选项卡：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6eOmI3kZOdnfw9i5JinfUD/f1a7129244f49c7d904664632e329076/2024-10-29_10-34-01.png?w=966&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展密码生成器</p></figcaption></figure></div>
 
-您也可以从「编辑」界面使用 **⟳生成**按钮生成强密码：
+您也可以从「编辑」界面使用 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**按钮生成强密码：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Cbja6OBxW2S6GVxLOqlYh/b71de03b37f5a4f4960e344a5b17cc01/2024-10-29_10-35-25.png?w=966&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展密码生成器</p></figcaption></figure></div>
 
@@ -40,7 +40,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2JcceqWgFbk4ViLCMe6qm5/ce116e8ff337f90fbbd57b52aa15fdcd/2024-11-05_10-07-08.png?w=952&#x26;fm=avif" alt=""><figcaption><p>填充已生成的密码</p></figcaption></figure></div>
 
-使用内嵌功能时，请使用 **⟳生成**按钮生成新的密码，直到您满意为止。确保在提示时选择**新增登录**，以便将登录信息保存到 Bitwarden。[了解更多](../../autofill/autofill-from/autofill-from-browser-extensions.md#inline-auto-fill-menu)。
+使用内嵌功能时，请使用 <i class="fa-arrows-rotate">:arrows-rotate:</i>**生成**按钮生成新的密码，直到您满意为止。确保在提示时选择**新增登录**，以便将登录信息保存到 Bitwarden。[了解更多](../../autofill/autofill-from/autofill-from-browser-extensions.md#inline-auto-fill-menu)。
 
 {% hint style="info" %}
 选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您没有将它们保存到项目中。当您注销时，历史记录将被清除。
@@ -52,7 +52,7 @@
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6cFQ3iojZXLy1ZIdIXp6Zr/bf4dfb3537ea709542432997aa4f6986/2026-04-23_10-54-46.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 密码生成器</p></figcaption></figure></div>
 
-您也可以从「添加」/「编辑」项目界面使用 **⟳生成**按钮生成强密码：
+您也可以从「添加」/「编辑」项目界面使用 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**按钮生成强密码：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6VInVRr9tZBOndfe4VrpXf/789852c09b48e1ac121347d224816d09/2026-04-23_10-48-31-4.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 密码生成器</p></figcaption></figure></div>
 
@@ -62,11 +62,11 @@
 {% endtab %}
 
 {% tab title="移动端" %}
-选择 **⟳生成器**选项卡：
+选择 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成器**选项卡：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/Cqrt6OGquQLRJvZDuqtCk/5b42dad11498bc5c62a749c4fc096fc9/2025-01-21_15-49-19.png?w=712&#x26;fm=avif" alt=""><figcaption><p>移动 App 密码生成器</p></figcaption></figure></div>
 
-您也可以从「添加」/「编辑」项目界面，以及通过点按「共享」图标访问 iOS App 扩展，使用 **⟳生成**按钮生成强密码：
+您也可以从「添加」/「编辑」项目界面，以及通过点按「共享」图标访问 iOS App 扩展，使用 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**按钮生成强密码：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4NeVmiRcKfedg6Fzwp0N1Y/f91ad1097dcd379925cedee724dc7592/2025-01-21_15-51-01.png?w=715&#x26;fm=avif" alt=""><figcaption><p>移动 App 密码生成器</p></figcaption></figure></div>
 
@@ -130,7 +130,7 @@ bw generate -uln --length 14
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2862v5xPV5qQM7XfdUvNlI/0f8fe47b6d9efb0a6d77b245a1f63cdf/2025-02-14_11-02-02.png?w=1122&#x26;fm=avif" alt=""><figcaption><p>网页 App 用户名生成器</p></figcaption></figure></div>
 
-您也可以从「编辑」界面使用 **⟳生成**按钮生成用户名：
+您也可以从「编辑」界面使用 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**按钮生成用户名：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1zpNFR8fu9DBo2krqln5hr/e893f1f3e8d85d58d20c8e316f247666/2024-12-02_14-44-30.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>网页 App 用户名生成器</p></figcaption></figure></div>
 
@@ -140,11 +140,11 @@ bw generate -uln --length 14
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-选择 **⟳生成器器**选项卡，然后选择**用户名**：
+选择 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成器器**选项卡，然后选择**用户名**：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3WEaJYUplgEdjgoSxlQ842/40d3eed8347cb6b0a600d06f42cc1941/2024-10-29_10-39-00.png?w=966&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展用户名生成器</p></figcaption></figure></div>
 
-您还可以从「编辑」界面使用 **⟳生成**按钮生成用户名：
+您还可以从「编辑」界面使用 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**按钮生成用户名：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/23CDvd3ErFQIZNYwgh000F/c19c373ecb6ca2d6aad2587a1b16dd12/2024-10-29_10-39-56.png?w=966&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展用户名生成器</p></figcaption></figure></div>
 
@@ -158,7 +158,7 @@ bw generate -uln --length 14
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2VGPd4WOwydbovDJdyVT51/f2f447821533afc4dad139bc0059a05f/2026-04-23_10-55-35.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 用户名生成器</p></figcaption></figure></div>
 
-您还可以从「添加」/「编辑」项目界面使用 **⟳生成**按钮生成用户名：
+您还可以从「添加」/「编辑」项目界面使用 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**按钮生成用户名：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7xTg7VVE7CgTZhBl5LlYui/6f187f63e0cf89dcd4fa9b4fb2866ad5/2026-04-23_10-48-31-5.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面 App 用户名生成器</p></figcaption></figure></div>
 
@@ -168,11 +168,11 @@ bw generate -uln --length 14
 {% endtab %}
 
 {% tab title="移动端" %}
-选择 **⟳生成器器**选项卡：
+选择 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成器器**选项卡：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6nfsTiHypQvXrfz7qI7AKI/6e41b1fedea81895497268b0fd825215/2025-01-21_15-56-24.png?w=714&#x26;fm=avif" alt=""><figcaption><p>移动 App 用户名生成器</p></figcaption></figure></div>
 
-您也可以从「添加」/「编辑」项目界面，以及通过点按「共享」图标访问 iOS App 扩展，使用 **⟳生成**按钮生成用户名：
+您也可以从「添加」/「编辑」项目界面，以及通过点按「共享」图标访问 iOS App 扩展，使用 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**按钮生成用户名：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Obfpm7UdBizkwASepMS6j/998c1448556484b867160f7412aa984c/2025-01-21_15-51-01.png?w=715&#x26;fm=avif" alt=""><figcaption><p>移动 App 用户名生成器</p></figcaption></figure></div>
 
@@ -190,7 +190,7 @@ bw generate -uln --length 14
 
 在浏览器扩展和桌面 App 的「添加」/「编辑」项目界面，您可以选择使用**随机字符串**（例如 `alice+gsd4aqqe@bitwarden.com`）生成用户名，或基于项目的**网站名称**（例如 `alice+github.com@ bitwarden.com`）生成用户名。**电子邮箱地址**仅限于浏览器和桌面 App，因为它需要知道登录的 [URI](../../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)，在其他位置，用户名生成器默认使用**随机字符串**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **为什么要使用附加地址电子邮箱？**
 
 附加地址电子邮箱可以让您在注册新的服务时过滤您的电子邮箱中的所有垃圾邮件。使用用户名 `alice+rnok6xsh@bitwarden.com` 注册服务时，仍会向 `alice@bitwarden.com` 发送电子邮件，但您可以轻松过滤包含 `+rnok6xsh` 的电子邮件，以防止它们堵塞您的收件箱。
@@ -202,7 +202,7 @@ bw generate -uln --length 14
 
 在浏览器扩展和桌面 App 的添加/编辑项目界面，您可以选择使用**随机**（例如 `bqzjlero@gardenllc.com`）字符串生成用户名，或基于项目的**网站名称**（例如 `twitter.com@gardenllc.com`）生成用户名。**网站名称**仅限于浏览器和桌面上的添加/编辑界面，因为它需要知道登录的 [URI](../../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)，在其他位置，用户名生成器默认为**随机**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **为什么要使用 Catch-all 电子邮箱？**
 
 在某些情况下，拥有自己域名（例如 `@bitwarden.com`）的公司可以使用 Catch-all 收件箱避免电子邮件进入您的个人收件箱，而是将它们路由到一个已共享的（有时未经检查）公司收件箱，以备万一将来需要他们的这些记录。
@@ -214,7 +214,7 @@ bw generate -uln --length 14
 
 选择此类型以将用户名生成器与您的外部别名服务集成。大多数 Bitwarden 应用程序支持与 SimpleLogin、AnonAddy、Firefox Relay、Fastmail、Forward Email 和 DuckDuckGo 集成。移动 App 目前支持与 SimpleLogin、AnonAddy 和 Firefox Relay 集成。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **为什么使用转发的电子邮箱别名？**
 
 使用 [SimpleLogin](https://simplelogin.io/) 和 [Addy.io](https://addy.io/) 等电子邮箱别名服务时，您可以使用匿名地址（例如，`nobody-knows-its-me.d0p0r@slmail.me`）来注册网络账户，邮件将转发到您实际的收件箱（例如，`alice@bitwarden.com`）。这可以防止网站或服务在您注册时收集个人信息（在此示例中，名称 Alice 以及她在 Bitwarden 工作的事实）。

@@ -54,7 +54,7 @@
 {% tab title="移动端" %}
 要从移动 App 附加文件：
 
-1. 打开项目，然后选择  <i class="fa-circle-check">:circle-check:</i>**菜单**图标。
+1. 打开项目，然后选择  <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**菜单**图标。
 2. 选择**附件**。
 3. 选择**选择文件**，然后浏览您的文件。
 4. 选择**保存**（在 Android 中）或选择 <i class="fa-circle-check">:circle-check:</i>**保存**图标（在 iOS 中）。

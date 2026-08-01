@@ -23,7 +23,7 @@ Bitwarden Phishing Blocker 用于检测已知的网络钓鱼网站，并将用�
 * **关闭标签页**：选择此选项将关闭 Bitwarden 已拦截的恶意标签页。
 * **继续**：选择此选项将允许您继续访问该网站并关闭 Bitwarden Phishing Blocker。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 选择**继续**将访问之前被识别为存在网络钓鱼活动的网站。此操作可能会导致您的凭据泄露。建议谨慎选择此选项。
 {% endhint %}
 

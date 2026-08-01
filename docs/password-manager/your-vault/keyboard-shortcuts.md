@@ -28,7 +28,7 @@
 | 自动填充上次使用的支付卡    | [创建键盘快捷键](../autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-keyboard-shortcuts)。 |
 | 自动填充上次使用的身份     | [创建键盘快捷键](../autofill/more-autofill-options/auto-fill-cards-and-identities.md#using-keyboard-shortcuts)。 |
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果登录使用 [Bitwarden 身份验证器](security-tools/totp.md)生成的 TOTP，并且您使用自动填充快捷键，则 TOTP 会在自动填充后自动复制到剪贴板。按下 `Cmd/Ctrl` + `V` 以粘贴 TOTP。
 {% endhint %}
 
@@ -55,18 +55,7 @@
 
 ### 编辑项目 <a href="#edit-items" id="edit-items"></a>
 
-| 作用               | 按键               |
-| ---------------- | ---------------- |
-| 添加新的登录           | `Ctrl/Cmd` + `N` |
-| 编辑项目时撤销上一个操作     | `Ctrl/Cmd` + `Z` |
-| 重做编辑中的项目的最后一个操作  | `Ctrl/Cmd` + `Y` |
-| 选择当前活动字段或项目的所有文本 | `Ctrl/Cmd` + `A` |
-| 剪切并复制选中的文本       | `Ctrl/Cmd` + `X` |
-| 复制选中的文本          | `Ctrl/Cmd` + `C` |
-| 粘贴最后复制的文本        | `Ctrl/Cmd` + `V` |
-| 复制已打开项目的用户名      | `Ctrl/Cmd` + `U` |
-| 复制已打开项目的密码       | `Ctrl/Cmd` + `P` |
-| 复制已打开项目的 TOTP    | `Ctrl/Cmd` + `T` |
+<table data-search="false"><thead><tr><th>作用</th><th>按键</th></tr></thead><tbody><tr><td>添加新的登录</td><td><code>Ctrl/Cmd</code> + <code>N</code></td></tr><tr><td>编辑项目时撤销上一个操作</td><td><code>Ctrl/Cmd</code> + <code>Z</code></td></tr><tr><td>重做编辑中的项目的最后一个操作</td><td><code>Ctrl/Cmd</code> + <code>Y</code></td></tr><tr><td>选择当前活动字段或项目的所有文本</td><td><code>Ctrl/Cmd</code> + <code>A</code></td></tr><tr><td>剪切并复制选中的文本</td><td><code>Ctrl/Cmd</code> + <code>X</code></td></tr><tr><td>复制选中的文本</td><td><code>Ctrl/Cmd</code> + <code>C</code></td></tr><tr><td>粘贴最后复制的文本</td><td><code>Ctrl/Cmd</code> + <code>V</code></td></tr><tr><td>复制已打开项目的用户名</td><td><code>Ctrl/Cmd</code> + <code>U</code></td></tr><tr><td>复制已打开项目的密码</td><td><code>Ctrl/Cmd</code> + <code>P</code></td></tr><tr><td>复制已打开项目的 TOTP</td><td><code>Ctrl/Cmd</code> + <code>T</code></td></tr></tbody></table>
 
 ### 调整显示 <a href="#adjust-display" id="adjust-display"></a>
 

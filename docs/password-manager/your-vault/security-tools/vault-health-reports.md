@@ -7,34 +7,36 @@
 密码库健康报告可用于评估 Bitwarden 个人或组织密码库的安全性。「重复使用的密码」和「弱密码」等报告可在客户端本地运行。这样就可以在 Bitwarden 无法访问未加密版本数据的情况下识别出违规项目。
 
 {% hint style="info" %}
-大部分密码库健康报告适用于高级版用户，包括付费组织（家庭版、团队版或企业版）的成员。但[数据泄露报告](vault-health-reports.md#data-breach-report-individual-vaults-only)对所有用户都是免费的。
+大多数密码库健康报告适用于高级版用户，包括付费版组织（家庭版、团队版或企业版）的成员。但[数据泄露报告](vault-health-reports.md#data-breach-report-individual-vaults-only)对所有用户都是免费的。
 {% endhint %}
 
 ## 查看报告 <a href="#view-a-report" id="view-a-report"></a>
 
-要运行您的**个人密码库**的任何保密码库健康报告：
+个人密码库报告会扫描保存到您个人密码库中的项目，以及您有权访问的组织项目。组织报告将扫描您组织集合中的项目，所有者和管理员可从 Admin Console 访问这些报告。
 
-1、登录到网页 App 然后从导航栏选择**报告：**
+### 运行个人密码库报告 <a href="#run-an-individual-vault-report" id="run-an-individual-vault-report"></a>
+
+登录到网页 App 然后从导航栏选择**报告**。然后选择要运行的报告：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/JcoKvP7eLrZHUEKmjTqgc/0213680bf5546cfc7df498d9931c8d2f/2024-12-02_16-29-59.png?w=1204&#x26;fm=avif" alt=""><figcaption><p>报告页面</p></figcaption></figure></div>
 
-2、选择要运行的报告。
+### 运行组织密码库报告 <a href="#run-an-organization-vault-report" id="run-an-organization-vault-report"></a>
 
-要运行您的**组织密码库**的任何保密码库健康报告：
+从 Admin Console 访问组织密码库报告：
 
-1、登录到 Bitwarden 网页 App。
-
-2、使用产品切换器打开 Admin Console：
+1、登录到 Bitwarden 网页 App，然后打开 Admin Console：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
-3、在您的组织中，从导航栏选择**报告** → **报告**：
+2、导航到**报告** → **报告**。
+
+3、选择要运行的报告：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5POQmt3TrEgfFzRNwHancg/9a67882a07d8894747ebb5bc3bbdcaae/2024-12-02_16-31-14.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>组织报告</p></figcaption></figure></div>
 
-4、选择要运行的报告。
-
 ## 可用的报告 <a href="#available-reports" id="available-reports"></a>
+
+报告可从个人密码库的**报告**页面或管理控制台的**报告** → **报告**页面获取。
 
 ### 暴露的密码 <a href="#exposed-passwords" id="exposed-passwords"></a>
 
@@ -44,7 +46,7 @@
 
 被识别后，您应该为违规账户或服务创建一个新的密码。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **为什么要使用密码哈希值的前 5 位？**
 
 如果此报告使用您的实际密码来执行，那这些密码是否暴露并不重要了，因为您主动将其泄露给此服务了。并且这个报告的结果并不意味着您的个人账户已被泄露，只是您使用的密码已经在这些暴露的密码数据库中被发现，您应该避免使用泄露的密码和非唯一的密码。
@@ -94,7 +96,7 @@
 * 他们可以访问哪些**集合**以及拥有的[**集合权限**](../../../admin-console/manage-shared-items/collections/collection-permissions.md)级别
 * 成员可以访问的**总计项目**数量
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您还可以下载 `.csv` [成员列表](../../../admin-console/manage-members/user-management.md#download-list-of-members)，其中包括特定账户的详细信息，例如 Secrets Manager 是否已激活以及他们在组织中的状态。
 {% endhint %}
 

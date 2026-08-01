@@ -15,6 +15,6 @@
 
 未设置主密码的用户（例如使用[受信任设备 SSO](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 的组织用户）将无法使用主密码二次验证功能。此外，使用[紧急访问](../../../account/emergency-access/about-emergency-access.md#use-emergency-access)的受信任联系人查看受保护的密码库项目时无需重新输入主密码。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 主密码二次验证**并非**一种加密机制。该功能仅作为界面层面的防护措施，技术娴熟的用户可能找到绕过它的方法。建议您在离开无人看管的设备或使用共享工作站时，**务必**保持密码库处于锁定状态。
 {% endhint %}

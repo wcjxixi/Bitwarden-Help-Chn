@@ -16,7 +16,7 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 ## 添加项目 <a href="#add-items" id="add-items"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 本文将介绍如何手动添加密码库项目，但对于许多用户来说，Bitwarden 建议从大多数密码管理器或网页浏览器直接[导入项目](../../../secrets-manager/import-export/import-data.md)到您的密码库中。
 {% endhint %}
 

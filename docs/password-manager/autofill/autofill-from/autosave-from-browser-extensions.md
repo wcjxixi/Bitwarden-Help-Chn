@@ -13,7 +13,7 @@ Bitwarden 浏览器扩展提供一系列浏览器内的通知，可将您的解�
 
 这些通知默认为激活状态，但可以通过浏览器扩展的**设置** → **通知**菜单将其关闭。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您还可以从**设置** → **通知** → **排除域名**菜单中阻止指定网站以触发自动保存通知。更多信息，请参阅[对指定网站屏蔽自动保存](../more-autofill-options/exclude-domains.md)。
 {% endhint %}
 
@@ -31,7 +31,7 @@ Bitwarden 浏览器扩展提供一系列浏览器内的通知，可将您的解�
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4vsurEuH5deik26BWn4n1p/82757186b081890fbe92b4d73baeae53/screenshot_7.png?w=426&#x26;fm=avif" alt=""><figcaption><p>询问添加登录</p></figcaption></figure></div>
 
-通过该通知，您可以选择是将其存储在个人项目（即**我的密码库**）中，还是存储在某个组织中。在保存之前，您还可以使用编辑 **✏️**按钮对项目进行编辑。
+通过该通知，您可以选择是将其存储在个人项目（即**我的密码库**）中，还是存储在某个组织中。在保存之前，您还可以使用编辑 <i class="fa-pen-to-square">:pen-to-square:</i> 按钮对项目进行编辑。
 
 ## 询问更新现有的登录 <a href="#ask-to-update-existing-login" id="ask-to-update-existing-login"></a>
 

@@ -8,8 +8,8 @@
 
 即使是[组织已与您共享](../../organization-members/sharing.md)的项目也可以被指定为收藏，这只会影响它们在您的个人密码库中的显示方式（即您这样做不会让其他对该组织或集合有访问权限的用户也将该项目设为收藏）。
 
-{% hint style="success" %}
-标记为**收藏**的项目将显示在浏览器扩展和移动 App的 **🔒密码库**视图的顶部，以及网页密码库和桌面 App 的 **⭐️收藏**筛选器中。
+{% hint style="success" icon="lightbulb" %}
+标记为**收藏**的项目将显示在浏览器扩展和移动 App的 <i class="fa-lock-keyhole">:lock-keyhole:</i>**密码库**视图的顶部，以及网页密码库和桌面 App 的 <i class="fa-star">:star:</i>**收藏**筛选器中。
 
 在浏览器扩展中，当您浏览与之关联的网页时，登录项目将从**收藏夹**部分跳转到**自动填充建议**部分。
 {% endhint %}
@@ -20,7 +20,7 @@
 
 {% tabs %}
 {% tab title="网页 App" %}
-在「添加」或「编辑」界面，选中右上角的 **⭐️星形**图标，然后**保存**该项目：
+在「添加」或「编辑」界面，选中右上角的 <i class="fa-star">:star:</i>**星形**图标，然后**保存**该项目：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4XpFH5NFI6Lso21BpGNKsu/e90cd1d0d6c3e4e7296d2e0300ab3ab2/2024-12-02_16-26-17.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>收藏项目</p></figcaption></figure></div>
 {% endtab %}
@@ -38,7 +38,7 @@
 {% endtab %}
 
 {% tab title="移动端" %}
-在「添加项目」或「编辑项目」界面，选中**收藏 ⭐️**，然后**保存**该项目：
+在「添加项目」或「编辑项目」界面，选中**收藏**<i class="fa-star">:star:</i>，然后**保存**该项目：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1rvKA8zNjd1RktotXjBEUg/f25cc45f33b29b901ec8e1f3ddc96d7c/2025-01-22_09-46-54.png?w=713&#x26;fm=avif" alt=""><figcaption><p>收藏项目</p></figcaption></figure></div>
 {% endtab %}

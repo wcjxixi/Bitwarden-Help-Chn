@@ -58,7 +58,7 @@ Bitwarden 的移动 App 让您可以随身携带您的密码管理器。在任�
 
 3、返回 Bitwarden，选择登录项目然后在 iOS 上点击**编辑**或在 Android 上点击 <i class="fa-pen">:pen:</i>。
 
-4、在密码框中，选择 <i class="fa-arrows-rotate">:arrows-rotate:</i>**生成**然后**确认**以覆盖您的旧密码。
+4、在密码框中，选择 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**然后**确认**以覆盖您的旧密码。
 
 这将使用随机生成的强密码替换您的密码。从 `Fido1234` 更改为 `X@Ln@x9J@&u@5n##B` 可以阻止潜在的黑客攻击。
 

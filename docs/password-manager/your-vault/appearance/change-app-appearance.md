@@ -20,7 +20,7 @@ Bitwarden 网页密码库、浏览器扩展、桌面 App 和移动 App 都包含
 {% tab title="浏览器扩展" %}
 要更改浏览器扩展的主题：
 
-1、打开浏览器扩展的 **⚙️设置**选项卡。
+1、打开浏览器扩展的 <i class="fa-gear-complex">:gear-complex:</i>**设置**选项卡。
 
 2、选择**外观**。
 
@@ -50,7 +50,7 @@ Bitwarden 网页密码库、浏览器扩展、桌面 App 和移动 App 都包含
 {% tab title="移动端" %}
 要更改移动 App 的主题：
 
-1、打开移动 App 的 **⚙️设置**选项卡。&#x20;
+1、打开移动 App 的 <i class="fa-gear-complex">:gear-complex:</i>**设置**选项卡。&#x20;
 
 2、点击**外观**。&#x20;
 
@@ -58,7 +58,7 @@ Bitwarden 网页密码库、浏览器扩展、桌面 App 和移动 App 都包含
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/ntCXOl03Oi6zmXx5Z9j5C/1329fb58540811d4b195b638b2628aca/2025-05-20_15-28-44.png?w=720&#x26;fm=avif" alt=""><figcaption><p>移动端更改主题</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在 Android 上，您还可以使用**动态颜色**选项，使 Bitwarden 的配色方案与您的壁纸相匹配。
 {% endhint %}
 {% endtab %}

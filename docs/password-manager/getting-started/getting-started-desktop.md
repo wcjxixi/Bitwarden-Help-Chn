@@ -43,7 +43,7 @@ Bitwarden 的桌面 App 将完整的密码库体验从浏览器直接带入您�
 
 6、很好！选择 <i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>**保存**以完成。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您还可以从桌面 App 直接将数据导入到 Bitwarden。[了解如何操作](../import-and-export/import-data.md#zhuo-mian-duan-cheng-xu)。
 {% endhint %}
 
@@ -57,7 +57,7 @@ Bitwarden 的桌面 App 将完整的密码库体验从浏览器直接带入您�
 
 3、在 Bitwarden 中，在你的项目上选择 <i class="fa-pen">:pen:</i>**编辑**。
 
-4、在密码框中，选择 <i class="fa-arrows-rotate">:arrows-rotate:</i>**生成**然后**确认**以覆盖您的旧密码。
+4、在密码框中，选择 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**然后**确认**以覆盖您的旧密码。
 
 这将使用随机生成的强密码替换您的密码。从 `Fido1234` 更改为 `X@Ln@x9J@&u@5n##B` 可以阻止潜在的黑客攻击。
 
@@ -89,7 +89,7 @@ Bitwarden 的桌面 App 将完整的密码库体验从浏览器直接带入您�
 
 要设置您的首选项，请从菜单栏中选择**文件** → **设置**。您会注意到三个部分：**安全**、**偏好设置**和 **App 设置**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **安全**和**偏好设置**适用于[活动账户](getting-started-desktop.md#add-a-second-account)，应为每个账户单独设置。**App 设置**适用于所有账户。
 {% endhint %}
 
@@ -97,7 +97,7 @@ Bitwarden 的桌面 App 将完整的密码库体验从浏览器直接带入您�
 
 桌面 App 最受欢迎的设置之一是[使用生物识别解锁](../../account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)，它允许使用带 PIN 的 [Windows Hello](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello)、面部识别或[其他符合 Windows Hello 生物识别要求的硬件](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)无缝访问您的桌面 App。要设置生物识别解锁：
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https://support.microsoft.com/zh-cn/topic/%E6%9C%80%E6%96%B0%E6%94%AF%E6%8C%81%E7%9A%84-visual-c-%E4%B8%8B%E8%BD%BD-2647da03-1eea-4433-9aff-95f26a218cc0)，然后才能在桌面偏好设置中开启 Windows Hello。
 {% endhint %}
 
@@ -127,7 +127,7 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 
 要设置您的偏好设置，请从菜单栏中选择**Bitwarden** → **设置**。您会注意到三个部分：**安全**、**偏好设置**和 **App 设置**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **安全**和**偏好设置**适用于[活动账户](getting-started-desktop.md#add-a-second-account)，应为每个账户单独设置。**App 设置**适用于所有账户。
 {% endhint %}
 
@@ -168,7 +168,7 @@ Windows 用户可能需要安装 [Microsoft Visual C ++ Redistributable](https:/
 
 要设置您的偏好设置，请从菜单栏中选择**文件** → **设置**。您会注意到三个部分：**安全**、**偏好设置**和 **App 设置**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **安全**和**偏好设置**适用于[活动账户](getting-started-desktop.md#add-a-second-account)，应为每个账户单独设置。**App 设置**适用于所有账户。
 {% endhint %}
 

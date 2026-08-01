@@ -6,7 +6,7 @@
 
 Bitwarden 浏览器扩展将密码管理直接集成到您最喜爱的浏览器中。从您的浏览器市场或应用商店，或从 [Bitwarden 下载](https://bitwarden.com/download)页面下载 Bitwarden 浏览器扩展。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载。[了解更多](../more/more-platforms/safari-web-extension.md)。
 {% endhint %}
 
@@ -30,7 +30,7 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 4、从[文件夹](../your-vault/vault-navigation/folders.md)下拉列表中选择一个文件夹。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您在工作场所使用 Bitwarden，则可以使用**所有者**下拉列表在您的组织内而不是在个人密码库中创建此项目。
 {% endhint %}
 
@@ -56,7 +56,7 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 4、填入旧密码后，在 Bitwarden 中打开登录项目并选择**编辑**。
 
-5、在**密码框**中，选择 <i class="fa-arrows-rotate">:arrows-rotate:</i>**生成**然后根据自己的喜好调整密码设置。您可以使用 <i class="fa-arrows-rotate">:arrows-rotate:</i> 图标，直到找到您喜欢的密码，然后选择**使用此密码**。从 `Fido1234` 更改为 `X@Ln@x9J@&u@5n##B` 可以阻止潜在的黑客攻击。
+5、在**密码框**中，选择 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i>**生成**然后根据自己的喜好调整密码设置。您可以使用 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i> 图标，直到找到您喜欢的密码，然后选择**使用此密码**。从 `Fido1234` 更改为 `X@Ln@x9J@&u@5n##B` 可以阻止潜在的黑客攻击。
 
 6、选择**保存**。
 

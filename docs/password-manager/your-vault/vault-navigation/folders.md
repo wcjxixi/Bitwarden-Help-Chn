@@ -8,7 +8,7 @@
 
 任何密码库项目都可以添加到文件夹中，包括[组织已与您共享的项目](../../organization-members/sharing.md)。如果您通过组织共享项目，请务必注意，文件夹仅为您个人组织密码库项目；其他组织成员可以设置不同的文件夹布局。详细了解[文件夹与集合有何不同](../../../admin-console/manage-shared-items/collections/about-collections.md)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 当从筛选器菜单中选择**所有密码库**时，添加到某个文件夹的项目仍会出现在您的密码库中，删除文件夹并**不会**删除该文件夹中的项目。删除文件夹是永久性的，删除后，文件夹将无法恢复。
 {% endhint %}
 
@@ -139,6 +139,6 @@ bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.folderId="3d9cecac-71a2-
 {% endtab %}
 {% endtabs %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 [组织已与您共享](../../organization-members/sharing.md)的项目可以添加到您的文件夹中，这样做只会影响该项目在您的个人密码库中的显示方式（即，将项目添加到文件夹不会授予任何人对该文件夹的访问权限，也不会改变它是否在他们的密码库中的某个文件夹中）。
 {% endhint %}

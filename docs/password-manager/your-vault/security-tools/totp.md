@@ -7,11 +7,11 @@
 Password Manager 内置身份验证器，可直接在您的密码库中生成用于[两步登录](../../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)的验证码，无需打开单独的 App 然后手动输入验证码。它使用 SHA-1 生成 6 位数的[基于时间的一次性密码](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTP)，每 30 秒轮换一次。
 
 {% hint style="info" %}
-在 Password Manager 集成的身份验证器中密钥存储适用于所有账户。但 TOTP 验证码的生成适用于高级版或付费组织（家庭版、团队版或企业版）成员资格。
+在 Password Manager 集成的身份验证器中密钥存储适用于所有账户。但 TOTP 验证码的生成适用于高级版或付费版组织（家庭版、团队版或企业版）成员资格。
 
 > **\[译者注]**：
 >
-> 上面这句话的意思是所有账户都可以将支持双重验证 (2FA) 的网站或服务加入验证器密钥 (TOTP) 字段，但以后要生成并使用自动动生成的 TOTP 验证码，则需要高级版或付费组织账户。
+> 上面这句话的意思是所有账户都可以将支持双重验证 (2FA) 的网站或服务加入验证器密钥 (TOTP) 字段，但以后要生成并使用自动动生成的 TOTP 验证码，则需要高级版或付费版组织账户。
 >
 > Bitwarden 的 TOTP 相当于 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) 等专用验证器 App。对于支持两步验证的网站或服务，您可以使用单独的验证器 App 生成验证码，也可以使用 Bitwarden 的 TOTP 生成验证码。
 {% endhint %}
@@ -26,7 +26,7 @@ Bitwarden 提供两种身份验证器：Password Manager 集成的身份验证�
 * 从任一个 Bitwarden App [手动输入安全密钥](totp.md#manually-add-a-secret)
 * 使用 Bitwarden Authenticator App [同步代码](../../../bitwarden-authenticator/totp-sync.md)，使 TOTP 也出现在 Password Manager 中。
 
-设置完成后，集成身份验证将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或 App 辅助步骤。您可以随时使用**编辑项目**界面上的 📷相机图标来更新 TOTP 种子。
+设置完成后，集成身份验证将持续每 30 秒轮换生成 6 位数的 TOTP，您可以将其作为两步登录连接网站或 App 辅助步骤。您可以随时使用**编辑项目**界面上的 <i class="fa-camera">:camera:</i> 相机图标来更新 TOTP 种子。
 
 ### 扫描二维码 <a href="#scan-a-qr-code" id="scan-a-qr-code"></a>
 
@@ -36,7 +36,7 @@ Bitwarden 提供两种身份验证器：Password Manager 集成的身份验证�
 {% tab title="移动端" %}
 1、**编辑**要为其生成 TOTP 的密码库项目。
 
-2、点击 **📷设置 TOTP**。
+2、点击 <i class="fa-camera">:camera:</i>**设置 TOTP**。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1cjF7IObqGhZL2ETA6XhTU/10641831c6fb690b85c3c99f39f1b1b1/2025-01-21_16-46-53.png?w=712&#x26;fm=avif" alt=""><figcaption><p>移动 App 设置 TOTP</p></figcaption></figure></div>
 
@@ -48,7 +48,7 @@ Bitwarden 提供两种身份验证器：Password Manager 集成的身份验证�
 {% tab title="浏览器扩展" %}
 1、**编辑**要为其生成 TOTP 的密码库项目。
 
-2、选择 **📷TOTP**。它将从当前网页扫描验证器二维码。完整的二维码必须在屏幕上可见。
+2、选择 <i class="fa-camera">:camera:</i>**TOTP**。它将从当前网页扫描验证器二维码。完整的二维码必须在屏幕上可见。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7vTPBRNX8Q1xxOZsqFxWBQ/3a91391f5c233743b8f6be509086f895/2024-10-29_11-04-36.png?w=966&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展 TOTP 扫描</p></figcaption></figure></div>
 
@@ -61,23 +61,27 @@ Bitwarden 提供两种身份验证器：Password Manager 集成的身份验证�
 要手动添加安全密钥到登录项目：
 
 1. **编辑**要为其生成 TOTP 的密码库项目。
-2. 选择**验证器密钥**字段（在移动 App 中，您也可以从**编辑**视图中选择 **📷设置验证器密钥** → **手动输入密钥**）。
+2. 选择**验证器密钥**字段（在移动 App 中，您也可以从**编辑**视图中选择 <i class="fa-camera">:camera:</i>**设置验证器密钥** → **手动输入密钥**）。
 3. 将安全密钥粘贴到**验证器密钥**字段中。
 4. **保存**项目。
 
 ## 使用生成的代码 <a href="#use-generated-codes" id="use-generated-codes"></a>
 
-{% hint style="success" %}
+将密钥添加到登录项目后，有两种方式获取 TOTP：自动填充或复制验证码。
+
+{% hint style="info" %}
 TOTP 依赖于基于时间的代码生成。如果您的设备时间与服务器时间不一致，生成的验证码将无法使用。如果您遇到 TOTP 验证码问题，请将您的设备的时区和时间设置为[**自动**](totp.md#troubleshooting)。
 {% endhint %}
 
-Bitwarden 浏览器扩展和 iOS（版本 18.0+）会自动填充您的 TOTP 代码，除非[**页面加载时自动填充**](../../autofill/autofill-from/autofill-from-browser-extensions.md#on-page-load)选项处于活动状态。在这种情况下，浏览器扩展还会将 TOTP 代码复制到剪贴板，方便您粘贴到表单中。
+### 自动填充 TOTP 代码 <a href="#autofill-totp-codes" id="autofill-totp-codes"></a>
+
+Bitwarden 浏览器扩展和 iOS（版本 18.0+）会自动填充您的 TOTP 代码，除非[**页面加载时自动填充**](../../autofill/autofill-from/autofill-from-browser-extensions.md#on-page-load)选项处于非活动状态。在这种情况下，浏览器扩展还会将 TOTP 代码复制到剪贴板，方便您粘贴到表单中。
 
 在浏览器扩展上，您还可以从上下文菜单复制 TOTP 代码：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5YmvBLK63g2xMnUewNVjOg/a63aec8b36ac65d6d91acf666fc8406f/2024-10-29_11-11-51.png?w=1102&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展上下文菜单</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 当您使用浏览器扩展中的自动填充时，默认情况下会启用自动复制 TOTP 功能。要关闭此功能，请转到**设置** → **自动填充**，然后取消选中**自动复制 TOTP**。您还可以使用旁边的**清除剪贴板**下拉菜单来指定何时清除已复制的值。
 {% endhint %}
 
@@ -91,8 +95,8 @@ Bitwarden 浏览器扩展和 iOS（版本 18.0+）会自动填充您的 TOTP 代
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3MRb58qhCFvVHVjPaxMk6R/227fae64af8e1a13e6c86a74412929eb/2025-01-21_17-13-12.png?w=716&#x26;fm=avif" alt=""><figcaption><p>移动端的验证码</p></figcaption></figure></div>
 
-{% hint style="success" %}
-只要您登录了您的 Bitwarden 密码库，即使您的设备离线，也能查看生成的代码。
+{% hint style="success" icon="lightbulb" %}
+只要您登录了您的 Bitwarden 密码库，即使您的设备离线，生成的代码也是可用的。
 {% endhint %}
 
 ### 故障排除 <a href="#troubleshooting" id="troubleshooting"></a>
@@ -178,7 +182,7 @@ otpauth://totp/Test:me?secret=JBSWY3DPEHPK3PXP&algorithm=sha256&digits=8&period=
 
 您可以为您的 Steam 账户的 2FA 使用 Bitwarden 集成的验证器。定位密钥后，将其输入到**验证器密钥**字段中，格式如下：`steam://your_secret_key_here`。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 要使用这个功能，您需要使用第三方工具手动提取你的 Steam 账户的密钥。有一些工具（如 [SteamTimeIdler](https://github.com/SteamTimeIdler/stidler/wiki/Getting-your-'shared_secret'-code-for-use-with-Auto-Restarter-on-Mobile-Authentication#getting-shared-secret-from-ios-windows) 和 [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator) 等）可以帮助您完成这个操作，但此类**提取工具并未取得 Bitwarden 或 Steam 的官方支持**。使用这些工具需自行承担风险。
 {% endhint %}
 
