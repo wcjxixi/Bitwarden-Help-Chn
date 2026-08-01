@@ -18,7 +18,7 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 现在，让我们添加一个登录到您的新文件夹中。要创建新的登录：
 
-1、导航到 **🔒密码库**选项卡，然后选择 ✚**添加**图标。
+1、导航到 <i class="fa-lock-keyhole">:lock-keyhole:</i>**密码库**选项卡，然后选择 <i class="fa-plus">:plus:</i>**添加**图标。
 
 2、选择要创建的项目的类型（这里我们选择**登录**）。
 
@@ -44,19 +44,19 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 1、在您的网页浏览器中，使用您现有的用户名和密码登录到此账户。我们将用一个更强的密码替换现有密码，但这也是练习自动填充的好机会！
 
-要进行自动填充，请在网站登录页面打开 Bitwarden 浏览器扩展，在 **🔒密码库**选项卡中选择建议的项目的**填充**按钮：
+要进行自动填充，请在网站登录页面打开 Bitwarden 浏览器扩展。如果该项目列在 <i class="fa-lock-keyhole">:lock-keyhole:</i>**密码库**视图的**自动填充建议**部分中，请点击该项目以自动填充它：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1pamjhdWn7obh8UBxXcIPF/1841242fa5299a780d53f3ae70e546b3/screenshot_5.png?w=395&#x26;fm=avif" alt=""><figcaption><p>通过浏览器扩展自动填充</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3tnagVMjtTufvRCrih3ctQ/9277f05114868cf0c37c069c565f2f95/Click_item_to_autofill.png?w=481&#x26;fm=avif" alt=""><figcaption><p>点击以自动填充</p></figcaption></figure></div>
 
 2、登录后，找到可以更改密码的地方。
 
-3、在网站的更改密码表单中，输入您的**当前密码**，您可以从 Bitwarden 使用 **❐复制**图标来复制并粘贴该密码：
+3、在网站的更改密码表单中，输入您的**当前密码**，您可以从 Bitwarden 使用 <i class="fa-copy">:copy:</i>**复制**图标来复制并粘贴该密码：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/40l7cU1a0jzaTNUJXd5jPD/97b9ed67c0b255384ce84fa53fad2015/screenshot_2.png?w=625&#x26;fm=avif" alt=""><figcaption><p>复制密码</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7y8WE9sWACC2KLASo9yASw/d1b1f78084ed20940ec76fc397b25ae8/Standard_copy_icon.png?w=484&#x26;fm=avif" alt=""><figcaption><p>标准复制图标</p></figcaption></figure></div>
 
 4、填入旧密码后，在 Bitwarden 中打开登录项目并选择**编辑**。
 
-5、在**密码框**中，选择 **⟳生成**然后根据自己的喜好调整密码设置。您可以使用 **⟳**&#x56FE;标，直到找到您喜欢的密码，然后选择**使用此密码**。从 `Fido1234` 更改为 `X@Ln@x9J@&u@5n##B` 可以阻止潜在的黑客攻击。
+5、在**密码框**中，选择 <i class="fa-arrows-rotate">:arrows-rotate:</i>**生成**然后根据自己的喜好调整密码设置。您可以使用 <i class="fa-arrows-rotate">:arrows-rotate:</i> 图标，直到找到您喜欢的密码，然后选择**使用此密码**。从 `Fido1234` 更改为 `X@Ln@x9J@&u@5n##B` 可以阻止潜在的黑客攻击。
 
 6、选择**保存**。
 
@@ -70,13 +70,13 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 {% tabs %}
 {% tab title="Chrome" %}
-选择地址栏右侧的**扩展程序**图标，然后在扩展程序列表中选择 Bitwarden 旁边的**固定**图标：
+选择地址栏右侧的 <i class="fa-puzzle-piece">:puzzle-piece:</i>**扩展**图标，然后在扩展列表中选择 Bitwarden 旁边的**固定**图标：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4cwP0QDHWh01v1K8nMV0ma/88b4b36c5b3e9d1fccffe7552880c485/chrome_pin.png?w=340&#x26;fm=avif" alt=""><figcaption><p>Chrome 中的 Pin</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="Firefox" %}
-选择地址栏旁边的**扩展**图标，右键单击 Bitwarden 浏览器扩展，然后选择**固定到工具栏**：
+选择地址栏旁边的 <i class="fa-puzzle-piece">:puzzle-piece:</i>**扩展**图标，右键单击 Bitwarden 浏览器扩展，然后选择**固定到工具栏**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2O0RQxs4fr6tTKBAMOQcGy/a54ea16b59f933a209db9458c92358e6/firefox_pin.png?w=403&#x26;fm=avif" alt=""><figcaption><p>Firefox 中的 Pin</p></figcaption></figure></div>
 
@@ -102,7 +102,7 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7xbbMZ89zcTHz6ee0cA1MK/8d8972a6b995b3fd7367f248c9c60d69/screenshot_3.png?w=440&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展账户切换</p></figcaption></figure></div>
 
-打开账户切换菜单后，选择 **🞤添加账户**：
+打开账户切换菜单后，选择 <i class="fa-plus">:plus:</i>**添加账户**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/343trVk3zLCF7Z12uA5wjO/ac2f56fc907372335f30d1dbf68116a1/screenshot_4.png?w=438&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展添加账户</p></figcaption></figure></div>
 
@@ -122,13 +122,13 @@ Safari 浏览器扩展与桌面 App 打包在一起，其可从 App Store 下载
 
 ### 自动填充登录 <a href="#auto-fill-a-login" id="auto-fill-a-login"></a>
 
-使用 Bitwarden 浏览器扩展有很多自动填充凭据的方法！最基本的方法是在网站登录页面打开 Bitwarden 浏览器扩展，在 **🔒密码库**选项卡中选择建议的项目的**填充**按钮：
+使用 Bitwarden 浏览器扩展有很多自动填充凭据的方法！最基本的方法是在网站登录页面打开 Bitwarden 浏览器扩展，然后在 <i class="fa-lock-keyhole">:lock-keyhole:</i>**密码库**选项卡中选择用于登录的自动填充建议的项目：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1pamjhdWn7obh8UBxXcIPF/1841242fa5299a780d53f3ae70e546b3/screenshot_5.png?w=395&#x26;fm=avif" alt=""><figcaption><p>通过浏览器扩展自动填充</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3tnagVMjtTufvRCrih3ctQ/9277f05114868cf0c37c069c565f2f95/Click_item_to_autofill.png?w=481&#x26;fm=avif" alt=""><figcaption><p>点击项目以自动填充</p></figcaption></figure></div>
 
-请注意，当您在试图登录的网站上以保存了登录信息时，Bitwarden 浏览器扩展会覆盖一个通知气泡，报告您在该网站上的登录项目的数量。这些项目将显示在**自动填充建议**的顶部。您可以使用筛选器下拉菜单过滤建议中的内容和**所有项目**列表中的显示内容，这些下拉菜单可以通过 **☷**&#x6309;钮显示或隐藏：
+请注意，当您在试图登录的网站上以保存了登录信息时，Bitwarden 浏览器扩展会覆盖一个通知气泡，报告您在该网站上的登录项目的数量。这些项目将显示在**自动填充建议**的顶部。您可以使用筛选器下拉菜单过滤建议中的内容和**所有项目**列表中的显示内容，这些下拉菜单可以通过 <i class="fa-sliders">:sliders:</i> 按钮显示或隐藏：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12UsFuA2sxbUCBMIczJsxv/689221013fac56ddb555ed9dabddbdc9/screenshot_6.png?w=584&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展筛选器和建议</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12UsFuA2sxbUCBMIczJsxv/6376ae661b966e4698375c2af2c27c0d/Browser_extension_filters.png?w=480&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展筛选</p></figcaption></figure></div>
 
 浏览器扩展项有好几种可供选择的自动填充选项，包括上下文菜单和键盘快捷键。[了解更多](../autofill/autofill-from/autofill-from-browser-extensions.md)。
 
@@ -142,7 +142,7 @@ Bitwarden 浏览器扩展提供一系列[浏览器内通知](../autofill/autofil
 
 了解更多有关[使用浏览器扩展自动保存](../autofill/autofill-from/autosave-from-browser-extensions.md)的信息。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您知道使用 Bitwarden 浏览器扩展可以保存和自动填充通行密钥吗？[了解更多](../autofill/more-autofill-options/autofill-passkeys.md)关于通行密钥的信息。
 {% endhint %}
 
@@ -150,11 +150,11 @@ Bitwarden 浏览器扩展提供一系列[浏览器内通知](../autofill/autofil
 
 要快速访问您的凭据，请设置 [PIN 码](../../account/log-in-and-unlock/more-log-in-unlock-methods/unlock-with-pin.md)或[生物识别](../../account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)来解锁您的密码库。要设置一个 PIN 码：
 
-1. 在浏览器扩展中，打开 ⚙️**设置**标签。
+1. 在浏览器扩展中，打开 <i class="fa-gear-complex">:gear-complex:</i>**设置**标签。
 2. 在**账户安全**部分，选中**使用 PIN 码解锁**复选框。
 3. 在输入框中输入所需的 PIN 码。PIN 码可以是任意字符（a-z、0-9、$、＃ 等）的组合。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **可选**：预先选中的**启动时要求生物识别**选项将要求您在浏览器重新启动时输入主密码而不是 PIN 码。如果您希望能够在浏览器重新启动时使用 PIN 码解锁，请取消选中此选项。
 {% endhint %}
 
@@ -170,10 +170,10 @@ Bitwarden 浏览器扩展具有弹出窗口功能，允许您在使用网络浏�
 
 Bitwarden 浏览器扩展有一个内置设置，可以禁用浏览器的默认密码管理器。要使用此设置：
 
-1、导航至 Bitwarden 浏览器扩展中的 ⚙️**设置**选项卡，然后选择**自动填充**。
+1、导航至 Bitwarden 浏览器扩展中的 <i class="fa-gear-complex">:gear-complex:</i>**设置**选项卡，然后选择**自动填充**。
 
 2、点击启用**将 Bitwarden 设为默认密码管理器**。
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5fyBdu5X6JCLu2UsaqYUO0/abfb44cb460314112805bfd0312c1f8f/2025-10-14_12-44-35.png?w=459&#x26;fm=avif" alt=""><figcaption><p>将 Bitwarden 设为默认密码管理器</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5fyBdu5X6JCLu2UsaqYUO0/5cbd0a186251fe8916b5a01be1f3efb8/2026-07-14_14-59-21.png?w=1181&#x26;fm=avif" alt=""><figcaption><p>将 Bitwarden 设为默认密码管理器</p></figcaption></figure></div>
 
 3、屏幕上会出现一个对话框，选择**允许**以授予 Bitwarden 更改您的浏览器设置的权限。

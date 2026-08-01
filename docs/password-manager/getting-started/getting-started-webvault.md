@@ -6,7 +6,7 @@
 
 Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体验。许多重要功能，例如设置[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)或管理[组织](../../admin-console/organizations-overview.md)，只能从网页 App 完成。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 可以从任何流行的网页浏览器从 [vault.bitwarden.com](https://vault.bitwarden.com) 和 [vault.bitwarden.eu](https://vault.bitwarden.eu/) 访问网页 App。如果您是**自托管** Bitwarden，则为您[已配置的域名](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md)，例如 `https://my.bitwarden.server.com`。
 {% endhint %}
 
@@ -16,7 +16,7 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
 
-在上面的屏幕截图中，**所有密码库**视图显示**我的密码库**视图中的 **☷所有项目**。[组织](../../admin-console/organizations-overview.md)的成员将在此处列出其他密码库。使用**筛选器**列可以帮助您使用**收藏**和**文件夹**来组织您的密码库。
+在上面的屏幕截图中，**所有密码库**视图显示**我的密码库**视图中的 <i class="fa-filter">:filter:</i>**所有项目**。[组织](../../admin-console/organizations-overview.md)的成员将在此处列出其他密码库。使用**筛选器**列可以帮助您使用**收藏**和**文件夹**来组织您的密码库。
 
 让我们设置一个新的文件夹并向其添加一个新的登录来作为开始：
 
@@ -24,13 +24,13 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 
 要创建文件夹：
 
-1、从下拉菜单中选择 ✚**新增**按钮然后选择**文件夹**：
+1、从下拉菜单中选择 <i class="fa-plus">:plus:</i>**新增**按钮然后选择**文件夹**：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3BvTWidqL4xWQvFqBSiJIR/d68bc851d44df1b571eed16366159e0c/2024-12-02_13-50-55.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>新增文件夹</p></figcaption></figure></div>
 
 2、为您的文件夹输入一个名称（例如 `Important Logins`），然后选择**保存**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 为了使密码库更清爽，您可以[将文件夹嵌套在其他文件夹中](../your-vault/vault-navigation/folders.md#nested-folders)。
 {% endhint %}
 
@@ -38,7 +38,7 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 
 要添加一个新的登录项目：
 
-1、从下拉菜单中选择 ✚**新增**按钮然后选择**登录。**
+1、从下拉菜单中选择 <i class="fa-plus">:plus:</i>**新增**按钮然后选择**登录。**
 
 2、输入**项目名称**。名称用于帮助您轻松识别您的密码库中的项目，因此请为其指定一个可识别的名称（例如 `My Gmail Account`）。
 
@@ -50,7 +50,7 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/62IycEwbVrumSyPjB9n5XS/0df14e819c0881be3d813e235271acaf/2025-06-02_14-31-28.png?w=956&#x26;fm=avif" alt=""><figcaption><p>定位 URI</p></figcaption></figure></div>
 
-6、选择 **⭐️收藏**图标以将此项目添加到您的收藏夹。标记为收藏时，图标将被填充（**✰** → **★**）。
+6、选择 <i class="fa-star">:star:</i>**收藏**图标以将此项目添加到您的收藏夹。标记为收藏时，图标将被填充（**✰** → **★**）。
 
 7、做得好！选择**保存**按钮完成添加此项目。
 
@@ -63,22 +63,22 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 2、在新的标签页或窗口中，打开相应的网站并登录您的账户。
 
 {% hint style="success" %}
-如果您在 **URI 1** 字段中输入了某些内容，请单击 **⮫启动**图标以直接从您的密码库中打开它！
+如果您在 **URI 1** 字段中输入了某些内容，请单击 <i class="fa-arrow-up-right-from-square">:arrow-up-right-from-square:</i>**启动**图标以直接从您的密码库中打开它！
 {% endhint %}
 
 3、在该网站上，导航到可以**更改您的密码**的区域。
 
 通常，您可以在**您的账户**、**安全**或**登录设置**部分中找到它。
 
-4、大多数网站会要求您先输入**当前密码**。返回到您的 Bitwarden 密码库并单击**密码**字段旁边的 **❐复制**图标。然后，返回到该网站并将其粘贴到**当前密码**字段中。
+4、大多数网站会要求您先输入**当前密码**。返回到您的 Bitwarden 密码库并单击**密码**字段旁边的 <i class="fa-copy">:copy:</i>**复制**图标。然后，返回到该网站并将其粘贴到**当前密码**字段中。
 
 您可能已经记住了旧的密码，但养成复制和粘贴密码是一个好的习惯，因为一旦你的密码被替换成更强的密码，你将主要以这种方式登录网站。
 
-5、返回到您的 Bitwarden 密码库并单击**密码**字段旁边的 **⟳生成**图标。系统会询问您是否要覆盖当前密码，单击**是**以继续。
+5、返回到您的 Bitwarden 密码库并单击**密码**字段旁边的 <i class="fa-arrows-rotate">:arrows-rotate:</i>**生成**图标。系统会询问您是否要覆盖当前密码，单击**是**以继续。
 
 这将用随机生成的强密码替换您的**密码**值。从 `Fido1234` 这样的密码迁移到 `X@Ln@x9J@&u@5n##B` 可以阻止潜在的黑客入侵。
 
-6、使用您之前使用的相同的 **❐复制**图标复制您的新密码，然后点击**保存**按钮。
+6、使用您之前使用的相同的 <i class="fa-copy">:copy:</i>**复制**图标复制您的新密码，然后点击**保存**按钮。
 
 {% hint style="success" %}
 不用担心会覆盖您现有的密码！如果出现问题，Bitwarden 会为每个登录项目保存最近五个密码的[**密码历史记录**](../your-vault/security-tools/password-and-generator-history.md#password-history)。
@@ -117,7 +117,7 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 
 将提示您输入您的主密码以继续。
 
-4、在您的移动设备上，打开 Bitwarden Authenticator 并点击 ✚按钮。
+4、在您的移动设备上，打开 Bitwarden Authenticator 并点击 <i class="fa-plus">:plus:</i>按钮。
 
 5、使用 Bitwarden Authenticator 扫描您的网页 App 中的二维码。扫描完成后，Bitwarden Authenticator 将显示一个 6 位数的验证码。
 
@@ -143,7 +143,7 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 
 * 高级两步登录选项，例如 [Duo](../../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md) 和 [YubiKey 安全钥匙](../../account/two-step-login/setup-two-step-login/two-step-login-via-yubikey.md)
 * [加密文件附件](../your-vault/vault-items/file-attachments.md)的存储空间
-* 集成的[临时一次性密码（TOTP）身份验证器](../your-vault/security-tools/totp.md)
+* 集成的[临时一次性密码 (TOTP) 身份验证器](../your-vault/security-tools/totp.md)
 * 通过已信任的紧急联系人[紧急访问](../../account/emergency-access/about-emergency-access.md)您的密码库
 * 报告密码和安全卫生的[密码库健康报告](../your-vault/security-tools/vault-health-reports.md)
 

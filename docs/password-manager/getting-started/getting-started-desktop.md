@@ -6,7 +6,7 @@
 
 Bitwarden 的桌面 App 将完整的密码库体验从浏览器直接带入您的桌面。桌面 App 一次支持最多 5 个已登录的账户，以便可以随时在个人账户和工作账户之间轻松切换（[了解更多](../../account/log-in-and-unlock/account-switching.md)）。
 
-在 **🔒我的密码库**视图中，您可以浏览您的所有项目，包括您所属的组织拥有的项目。使用密码库下拉列表来筛选**所有密码库**、**我的密码库**和任何组织密码库中的项目。
+在 <i class="fa-lock-keyhole">:lock-keyhole:</i>**我的密码库**视图中，您可以浏览您的所有项目，包括您所属的组织拥有的项目。使用密码库下拉列表来筛选**所有密码库**、**我的密码库**和任何组织密码库中的项目。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/79qrrbQ4Oi7ZGUnSrE3VpZ/9e8a86298c65c028e9280a36d0bcb99f/2026-01-28_09-42-19.png?w=1001&#x26;fm=avif" alt=""><figcaption><p>桌面端的 Password Manager</p></figcaption></figure></div>
 
@@ -18,14 +18,14 @@ Bitwarden 的桌面 App 将完整的密码库体验从浏览器直接带入您�
 
 [文件夹](../your-vault/vault-navigation/folders.md)是确保您在需要使用时始终可以找到密码库项目的好方法。要创建一个文件夹：
 
-1. 在桌面 App 的第一列中，选择**文件夹**旁边的 ✚**添加**图标。
-2. 给您的新文件夹起个名字（例如 `Social Media`），然后选择 **💾保存**。
+1. 在桌面 App 的第一列中，选择**文件夹**旁边的 <i class="fa-plus">:plus:</i>**添加**图标。
+2. 给您的新文件夹起个名字（例如 `Social Media`），然后选择 <i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>**保存**。
 
 ### 添加登录 <a href="#add-a-login" id="add-a-login"></a>
 
 现在，让我们添加一个登录到您的新文件夹中。要创建新的登录项目：
 
-1、在中间列中，选择 ✚**添加**。添加项目面板将显示在第三列中。
+1、在中间列中，选择 <i class="fa-plus">:plus:</i>**添加**。添加项目面板将显示在第三列中。
 
 2、选择要添加的项目的类型（这里我们选择**登录**）。
 
@@ -35,13 +35,13 @@ Bitwarden 的桌面 App 将完整的密码库体验从浏览器直接带入您�
 * 您的**用户名**。
 * 您的当前**密码**（我们待会将用一个强大的替换它）。
 
-4、选择 ✚**新建 URI** 按钮，然后输入您登录账户的 URL（例如 `https://x.com/i/flow/login`）。
+4、选择 <i class="fa-plus">:plus:</i>**新建 URI** 按钮，然后输入您登录账户的 URL（例如 `https://x.com/i/flow/login`）。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5jf74Y0xH5LXouxuBLfER0/02aca3fb33feb85d0a05ecbd06e00ba5/x.comlogin_close_up.png?w=773&#x26;fm=avif" alt=""><figcaption><p>X.com 登录 URI</p></figcaption></figure></div>
 
 5、从文件夹下拉列表中选择一个文件夹，如果您按照我们的示例进行操作，请选择我们刚刚创建的 **Social Media** 文件夹！
 
-6、很好！选择 **💾保存**以完成。
+6、很好！选择 <i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>**保存**以完成。
 
 {% hint style="success" %}
 您还可以从桌面 App 直接将数据导入到 Bitwarden。[了解如何操作](../import-and-export/import-data.md#zhuo-mian-duan-cheng-xu)。
@@ -53,17 +53,17 @@ Bitwarden 的桌面 App 将完整的密码库体验从浏览器直接带入您�
 
 1、打开网页浏览器并使用您现有的用户名和密码登录该账户。在该账户中，找到可以**更改您的密码**的位置。
 
-2、在**更改您的密码**表单上，输入您的**当前密码**，您可以使用 **❐复制**图标从 Bitwarden 复制并粘贴该密码。
+2、在**更改您的密码**表单上，输入您的**当前密码**，您可以使用 <i class="fa-copy">:copy:</i>**复制**图标从 Bitwarden 复制并粘贴该密码。
 
-3、在 Bitwarden 中，在你的项目上选择 **✏️编辑**。
+3、在 Bitwarden 中，在你的项目上选择 <i class="fa-pen">:pen:</i>**编辑**。
 
-4、在密码框中，选择 **⟳生成**然后**确认**以覆盖您的旧密码。
+4、在密码框中，选择 <i class="fa-arrows-rotate">:arrows-rotate:</i>**生成**然后**确认**以覆盖您的旧密码。
 
 这将使用随机生成的强密码替换您的密码。从 `Fido1234` 更改为 `X@Ln@x9J@&u@5n##B` 可以阻止潜在的黑客攻击。
 
-5、选择 **💾保存**。
+5、选择 <i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>**保存**。
 
-6、使用之前使用的 **❐复制**图标复制新的密码，然后将新的密码粘贴到网页浏览器的**新密码**和**确认新密码**字段中。
+6、使用之前使用的 <i class="fa-copy">:copy:</i>**复制**图标复制新的密码，然后将新的密码粘贴到网页浏览器的**新密码**和**确认新密码**字段中。
 
 7、完成后，在网页浏览器中选择**保存**。
 
@@ -73,7 +73,7 @@ Bitwarden 的桌面 App 将完整的密码库体验从浏览器直接带入您�
 
 您是否有多个 Bitwarden 账户？例如一个用于个人使用，一个用于工作。桌面 App 可以一次性同时登录 5 个账户！
 
-要登录第二个账户，请从桌面 App 的右上角选择当前已登录的账户，然后选择 ✚**添加账户**：
+要登录第二个账户，请从桌面 App 的右上角选择当前已登录的账户，然后选择 <i class="fa-plus">:plus:</i>**添加账户**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7fpUmakpNIByzoWQa1cU8L/bd9e35756805bba8bd35bc43c7630aaf/2026-04-23_09-27-28.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面端账户切换</p></figcaption></figure></div>
 

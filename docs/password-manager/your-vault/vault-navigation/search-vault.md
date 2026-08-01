@@ -17,23 +17,20 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Mdb392zQHEfC44zhwLmGl/9d208498c67672f81c47b66a3084853e/2024-12-02_16-28-17.png?w=1204&#x26;fm=avif" alt=""><figcaption><p>检索文件夹</p></figcaption></figure></div>
 
-## 基本检索 <a href="#applications-that-use-full-text-search" id="applications-that-use-full-text-search"></a>
+## 基础检索 <a href="#basic-search" id="basic-search"></a>
 
-基本检索由 Bitwarden **移动 App** 使用。输入检索的文本（例如 `Github` 或 `myusername`）将在密码库项目的以下字段中检索输入的信息：
+基础检索是每个 Bitwarden App 中的默认检索模式。输入检索的文本（例如 `Github` 或 `myusername`）将在密码库项目的以下字段中检索输入的信息：
 
-* 项目**名称**
-* 对于登录，为**用户名**
-* 对于登录，为 **URI**
-* 对于支付卡，为**品牌**或**卡号**后四位
-* 对于身份，为**名称**
+* 对于任何项目，其**名称**
+* 对于任何项目，其 **ID**
+* 对于登录项目，其**用户名**
+* 对于登录项目，其 **URI**
 
-为方便您的使用，基本检索会自动包含前导和后导[通配符](search-vault.md#wildcards-and-advanced-search-parameters)。例如，检索 `mail` 将返回名称为 `gmail` 以及 `email` 的密码库项目。
+检索中的每个词条必须至少出现在一个被检索的字段中。例如，一个名称为 `Email MyCompany Work`、用户名为 `alice@example.com` 的登录项目，会被诸如 `email work`、`Work MyCompany` 或 `MyCompany alice` 之类的查询返回。
 
-检索结果由一个简单的评分机制决定。检索词中出现的字段越多，该密码库项目的得分就越高。[了解更多](https://lunrjs.com/guides/searching.html#scoring)。
+## Lunr 检索 <a href="#lunr-search" id="lunr-search"></a>
 
-## 全文检索 <a href="#applications-that-use-full-text-search" id="applications-that-use-full-text-search"></a>
-
-网页 App、桌面 App 和浏览器扩展中的检索自动为[全文搜索](https://zh.wikipedia.org/wiki/%E5%85%A8%E6%96%87%E6%AA%A2%E7%B4%A2)，并且与基本检索一样，会自动包括前导和后导通配符。当在全文检索中找不到结果时，Bitwarden 将回退到基本检索。
+在网页 App、浏览器扩展和桌面 App 中，您可以通过在查询前加上「大于」( `>`) 字符来执行更高级的 Lunr 检索。Lunr 检索涵盖更多字段，并支持高级查询语法，如词条存在性、模糊匹配和通配符。
 
 ### 索引字段 <a href="#indexed-fields" id="indexed-fields"></a>
 
@@ -54,10 +51,10 @@
 您可以使用「大于」(`>`) 符号来开始检索查询，并按以下格式指示先前列出的字段，来检索特定字段中的数据：
 
 * `>login.username:jsmith`：将检索**用户名**被指定为 `jsmith` 的登录项目。
-* `>name:Turbo Tax`：将检索**名称**被指定为 `Turbo Tax` 的任何密码库项目。
-* `>fields:Security Question`：将检索具有**名称**为 `Security Question` 的自定义文本字段的任何密码库项目。
+* `>+name:Turbo +name:Tax`：将检索**名称**中包含 `Turbo` 和 `Tax` 这两个词的所有密码库项目，但也会返回名称中包含额外词语的项目，例如 `Turbo Fast Tax Service`。
+* `>+name:Turbo +name:Tax -name:Fast`：将筛选上述示例的结果，排除名称中还包含 `Fast` 一词的任何项目，例如 `Turbo Fast Tax Service`。
 
-如果没有字段指示符，则将检索所有索引字段。
+如果没有字段指示符，则将检索所有已索引字段。
 
 ### 通配符和高级检索参数 <a href="#wildcards-and-advanced-search-parameters" id="wildcards-and-advanced-search-parameters"></a>
 
@@ -68,7 +65,7 @@
 * `>login.username:*@gmail.com`：将检索**用户名**以 `@gmail.com` 结尾的任何密码库项目。
 * `>wild*`：将检索包含单词 `wild` 的所有密码库项目和包含 `wild` 的密码库项目的单词，例如 `wildcard`。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 除通配符外，[Lunr](https://lunrjs.com/) 还提供了多种高级查询选项，包括：
 
 * **术语组合**：使用 `+`（必须包含）或 `-`（必须不包含）前缀。基于术语组合进行检索时，会单独处理每个术语，即使它们由连字符 (`-`) 分隔。

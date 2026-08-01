@@ -54,10 +54,10 @@
 {% tab title="移动端" %}
 要从移动 App 附加文件：
 
-1. 打开项目，然后选择  **≡菜单**图标。
+1. 打开项目，然后选择  <i class="fa-circle-check">:circle-check:</i>**菜单**图标。
 2. 选择**附件**。
 3. 选择**选择文件**，然后浏览您的文件。
-4. 选择**保存**（在 Android 中）或选择 **✔︎保存**图标（在 iOS 中）。
+4. 选择**保存**（在 Android 中）或选择 <i class="fa-circle-check">:circle-check:</i>**保存**图标（在 iOS 中）。
 
 保存后，**附件**部分将列出附加到此项目的所有文件。
 {% endtab %}
@@ -93,7 +93,7 @@ bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 
 ## 下载文件 <a href="#download-a-file" id="download-a-file"></a>
 
-要在大多数 Bitwarden App 中下载附件，请打开项目。在**附件**部分中，选择文件旁边的 **⬇️下载**图标。
+要在大多数 Bitwarden App 中下载附件，请打开项目。在**附件**部分中，选择文件旁边的 <i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>**下载**图标。
 
 对于 **CLI**，使用 `bw get attachment` 来下载文件，例如：
 
@@ -167,7 +167,7 @@ bw export --format zip
 
 1. 打开项目然后选择**编辑**。
 2. 滚动到**编辑**视图的底部，然后选择**附件**。
-3. 选择附件旁边的 **🗑️删除**图标。
+3. 选择附件旁边的 <i class="fa-trash-can">:trash-can:</i>**删除**图标。
 4. 选择**是**以确认。
 5. 选额**保存**。
 {% endtab %}
@@ -177,7 +177,7 @@ bw export --format zip
 
 1. 打开项目然后选择**编辑**。
 2. 滚动到**编辑**视图的底部，然后选择**附件**。将弹出扩展。
-3. 选择附件旁边的 **🗑️删除**图标。
+3. 选择附件旁边的 <i class="fa-trash-can">:trash-can:</i>**删除**图标。
 4. 选择**是**以确认。
 5. 选择 **<返回**图标。
 6. 选额**保存**。
@@ -186,13 +186,13 @@ bw export --format zip
 {% tab title="移动端" %}
 要从移动 App 删除附件：
 
-1. 打开项目，然后选择  **≡菜单**图标。
+1. 打开项目，然后选择  <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**菜单**图标。
 2. 选择**附件**。
-3. 选择附件旁边的 **🗑️删除**图标。
+3. 选择附件旁边的 <i class="fa-trash-can">:trash-can:</i>**删除**图标。
 4. 基于您的移动设备：
 
 * 在 Android 上，选择**删除**以确认，然后**保存**。
-* 在 iOS 上，选择**是**以确认，然后 **✔︎保存**图标。
+* 在 iOS 上，选择**是**以确认，然后 <i class="fa-circle-check">:circle-check:</i>**保存**图标。
 {% endtab %}
 
 {% tab title="桌面端" %}
@@ -200,7 +200,7 @@ bw export --format zip
 
 1. 打开项目然后选择**编辑**。
 2. 滚动到**编辑**视图的底部，然后选择**附件**。
-3. 选择附件旁边的 **🗑️删除**图标。
+3. 选择附件旁边的 <i class="fa-trash-can">:trash-can:</i>**删除**图标。
 4. 选择**是**以确认。
 5. 选额**保存**。
 {% endtab %}

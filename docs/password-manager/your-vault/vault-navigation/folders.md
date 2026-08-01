@@ -18,17 +18,17 @@
 
 {% tabs %}
 {% tab title="网页密码库" %}
-要创建文件夹，请选择 **➕新增**按钮然后从下拉菜单选择**文件夹**：
+要创建文件夹，请选择 <i class="fa-plus">:plus:</i>**新增**按钮然后从下拉菜单选择**文件夹**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3BvTWidqL4xWQvFqBSiJIR/d68bc851d44df1b571eed16366159e0c/2024-12-02_13-50-55.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>新增文件夹</p></figcaption></figure></div>
 
-创建后，您可以随时通过选择此文件夹然后单击 :pencil2:**铅笔**图标来重命名或删除文件夹：
+创建后，您可以随时通过选择此文件夹然后单击 <i class="fa-pen">:pen:</i>**铅笔**图标来重命名或删除文件夹：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1aG4313JkmkBvot45gZvEr/a7dc45d314407131948216acc2b2444d/2024-12-02_16-15-07.png?w=993&#x26;fm=avif" alt=""><figcaption><p>编辑或删除文件夹</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-要创建文件夹，请选择 **➕新增**按钮然后从下拉菜单选择**文件夹**：
+要创建文件夹，请选择 <i class="fa-plus">:plus:</i>**新增**按钮然后从下拉菜单选择**文件夹**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1aPQBd9bT7uUf20Y1fZwSB/506e7010284c1e0d83b75204bac22eaa/2024-12-02_16-13-10.png?w=1187&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展新增文件夹</p></figcaption></figure></div>
 
@@ -40,13 +40,13 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7xia34eJyx1K8Gy8IXajQ7/af2b2ef342350a68b000c405ee698ab4/2026-04-23_09-58-10.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面端添加文件夹</p></figcaption></figure></div>
 
-创建文件夹后，您可以随时通过悬停在 :pencil2:**铅笔**图标上来重命名或删除文件夹：
+创建文件夹后，您可以随时通过悬停在 <i class="fa-pen">:pen:</i>**铅笔**图标上来重命名或删除文件夹：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6t2aoywIMdBPMuJktnhEqA/53742fbe25b11095406c40ff6178d6c4/2026-04-23_10-46-29.png?w=800&#x26;fm=avif" alt=""><figcaption><p>桌面端编辑文件夹</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}
-要创建文件夹，请点击 **⚙️设置**菜单，点击**密码库**选项，然后点击**文件夹**选项。点击 **➕添加**图标以添加文件夹。创建后，您可以从同一菜单中通过点击文件夹来重命名文件夹，或使用 **≡**&#x83DC;单来删除文件夹：
+要创建文件夹，请点击 <i class="fa-gear-complex">:gear-complex:</i>**设置**菜单，点击**密码库**选项，然后点击**文件夹**选项。点击 <i class="fa-plus">:plus:</i>**添加**图标以添加文件夹。创建后，您可以从同一菜单中通过点击文件夹来重命名文件夹，或使用 **≡**&#x83DC;单来删除文件夹：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6IwzXSJHGmSeU7oIy4z8kZ/95620b58758e50fa0e8e22a65f2bfa15/2025-01-21_15-26-07.png?w=713&#x26;fm=avif" alt=""><figcaption><p>移动端上的文件夹</p></figcaption></figure></div>
 {% endtab %}
@@ -96,7 +96,7 @@ bw create folder <foldername>
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4VfciDIbEZZFAG1AXbRf3S/275100f866612da15b4714adea8f1944/2024-12-02_16-20-15.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>移动项目到文件夹</p></figcaption></figure></div>
 
-* 导航到**密码库**视图，选择要移动的项目，然后使用操作栏选择 **💾添加到文件夹**按钮。在「移动所选」对话框中，选择要将项目移动到的文件夹：
+* 导航到**密码库**视图，选择要移动的项目，然后使用操作栏选择 <i class="fa-folder">:folder:</i>**添加到文件夹**按钮。在「移动所选」对话框中，选择要将项目移动到的文件夹：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7zQPzdrcVIbPeX5E8LqTq/e1554b6cc22a5d50029ab8c5e61940f5/add_to_folder_bar.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>移动项目到文件夹</p></figcaption></figure></div>
 {% endtab %}
@@ -108,7 +108,7 @@ bw create folder <foldername>
 {% endtab %}
 
 {% tab title="桌面端" %}
-选择要移动的项目，然后使用操作栏选择 **💾添加到文件夹**按钮。在「移动所选」对话框中，选择要将项目移动到的文件夹：
+选择要移动的项目，然后使用操作栏选择 <i class="fa-folder">:folder:</i>**添加到文件夹**按钮。在「移动所选」对话框中，选择要将项目移动到的文件夹：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/63jzyM75IRzhAbw5nNzMHx/cf70c299326b410b9345a7a047560fae/desktop_folder.png?w=1281&#x26;fm=avif" alt=""><figcaption><p>移动项目到文件夹</p></figcaption></figure></div>
 {% endtab %}

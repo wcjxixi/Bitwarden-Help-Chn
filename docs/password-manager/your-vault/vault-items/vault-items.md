@@ -24,19 +24,19 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 {% tabs %}
 {% tab title="网页 App" %}
-选择 **➕新增**按钮然后选择要创建的项目类型：
+选择 <i class="fa-plus">:plus:</i>**新增**按钮然后选择要创建的项目类型：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5kGYpHHu4197INxX5kOetu/c1aa36b3847c9824b81466837229ec7d/webappnewtest.png?w=1327&#x26;fm=avif" alt=""><figcaption><p>添加项目</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-选择 **➕新增**按钮然后选择要创建的项目类型：
+选择 <i class="fa-plus">:plus:</i>**新增**按钮然后选择要创建的项目类型：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3CGG1jYRfgQqi5UlWuwliO/c95b2da5c9e64564c1aa7842207a3a6f/extnew1.png?w=1118&#x26;fm=avif" alt=""><figcaption><p>添加项目</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}
-选择 **➕新增**按钮然后选择要创建的项目类型：
+选择 <i class="fa-plus">:plus:</i>**新增**按钮然后选择要创建的项目类型：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/cMVnILAl9uoih1iTqIHx9/19168711ae327ea490fa51c8d9c27ff3/mobilenew1.png?w=961&#x26;fm=avif" alt=""><figcaption><p>添加项目</p></figcaption></figure></div>
 {% endtab %}
@@ -60,9 +60,9 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 {% tabs %}
 {% tab title="网页 App" %}
-选择您要编辑的项目的 **≡**&#x9009;项菜单：
+选择您要编辑的项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单：
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您也可以右键单击该项目来调出相同的菜单。
 {% endhint %}
 
@@ -76,13 +76,13 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 {% endtab %}
 
 {% tab title="移动端" %}
-选择要编辑的项目的 **≡**&#x9009;项菜单，然后选择**编辑**：
+选择要编辑的项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单，然后选择**编辑**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/357lJe8JKMXNKEhYKUDn4u/31d5f1f811eb35b8b142f9a6f751dae2/2025-11-10_12-05-53.png?w=961&#x26;fm=avif" alt=""><figcaption><p>编辑项目</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="桌面端" %}
-选择一个项目将其打开，然后选择 **✏️**编辑图标：
+选择一个项目将其打开，然后选择 <i class="fa-pen">:pen:</i>编辑图标：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6Y4kK7J9aLmo9SDY7Ne8VE/63bbce3c7f3e0f99d6c0783c0b367a16/2026-04-23_10-02-08.png?w=800&#x26;fm=avif" alt=""><figcaption><p>编辑项目</p></figcaption></figure></div>
 {% endtab %}
@@ -112,11 +112,11 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 #### 取消归档 <a href="#unarchive" id="unarchive"></a>
 
-在网页 App 中，从您的密码库筛选器中选择**归档**，以查看已归档的项目，然后使用 **≡**&#x9009;项菜单选择**取消归档**，即可将项目恢复到正常的密码库状态。
+在网页 App 中，从您的密码库筛选器中选择**归档**，以查看已归档的项目，然后从操作栏选择**取消归档**。
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-1、使用您想要归档的项目的 **≡**&#x9009;项菜单，然后选择**归档**：
+1、使用您想要归档的项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单，然后选择**归档**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/40gA9zgbeBjx2gw77H61kM/08e93903af859aa75bbdd277b4098a90/2026-01-27_10-40-25.png?w=911&#x26;fm=avif" alt=""><figcaption><p>使用浏览器扩展归档</p></figcaption></figure></div>
 
@@ -124,17 +124,17 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 #### 取消归档 <a href="#unarchive" id="unarchive"></a>
 
-在浏览器扩展中，导航至**设置** → **密码库选项** → **归档**，以查看已归档的项目，然后使用 **≡**&#x9009;项菜单选择**取消归档**，即可将项目恢复到正常的密码库状态。
+在浏览器扩展中，导航至**设置** → **密码库选项** → **归档**，以查看已归档的项目，然后使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单选择**取消归档**，即可将项目恢复到正常的密码库状态。
 {% endtab %}
 
 {% tab title="移动端" %}
-使用您想要归档的项目的 **⋯**&#x9009;项菜单，然后选择**归档**：
+使用您想要归档的项目的 <i class="fa-ellipsis">:ellipsis:</i>选项菜单，然后选择**归档**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/rrxmgUU3pLqQrYa5wDDb9/fd90c478bacd1c366e59b4be3d07b185/2026-02-23_11-48-54.png?w=820&#x26;fm=avif" alt=""><figcaption><p>使用移动 App 归档</p></figcaption></figure></div>
 
 #### 取消归档 <a href="#unarchive" id="unarchive"></a>
 
-在移动 App 中，从您的密码库筛选器中选择**归档**，以查看已归档的项目，然后使用 **⋯**&#x9009;项菜单选择**取消归档**，即可将项目恢复到正常的密码库状态。
+在移动 App 中，从您的密码库筛选器中选择**归档**，以查看已归档的项目，然后使用 <i class="fa-ellipsis">:ellipsis:</i>选项菜单选择**取消归档**，即可将项目恢复到正常的密码库状态。
 {% endtab %}
 
 {% tab title="桌面端" %}
@@ -146,7 +146,7 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 #### 取消归档 <a href="#unarchive" id="unarchive"></a>
 
-在桌面 App 中，从您的密码库筛选器中选择**归档**，以查看已归档的项目，然后使用 **≡**&#x9009;项菜单选择**取消归档**，即可将项目恢复到正常的密码库状态。
+在桌面 App 中，从您的密码库筛选器中选择**归档**，以查看已归档的项目，然后从操作栏选择**取消归档**。
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -162,25 +162,25 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 {% tabs %}
 {% tab title="网页 App" %}
-选择该项目的 **≡**&#x9009;项菜单，然后选择 **🗑️删除**：
+选择该项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单，然后选择 <i class="fa-trash-can">:trash-can:</i>**删除**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3OYHvfRCDy3OphkbEHIJEA/fa47beb671d6efc34a18d05daf630aff/webappnewtest3.png?w=1325&#x26;fm=avif" alt=""><figcaption><p>项目选项</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-选择一个项目将其打开，然后选择 **🗑️**删除图标：
+选择一个项目将其打开，然后选择 <i class="fa-trash-can">:trash-can:</i>删除图标：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2q1EZnISzEG3i8iU4vTKj6/b13c46c27a7fb896f31f81485859459f/extnew4.png?w=1118&#x26;fm=avif" alt=""><figcaption><p>编辑或删除项目</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}
-点击某个项目将其打开，然后选择该项目的 **≡**&#x9009;项菜单：
+点击某个项目将其打开，然后选择该项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6XFamLqIYX26cUY5LWQbPE/1a6000050526e7f4f9e8bfcad93619fe/2025-11-10_12-06-19.png?w=961&#x26;fm=avif" alt=""><figcaption><p>项目选项</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="桌面端" %}
-选择一个项目将其打开，然后选择 **🗑️**删除图标：
+选择一个项目将其打开，然后选择 <i class="fa-trash-can">:trash-can:</i>删除图标：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1E8ieEw6639tLYAxe2HYir/2ec594025ea37103c9cf0de93c41e9aa/2026-04-23_10-02-08-2.png?w=979&#x26;fm=avif" alt=""><figcaption><p>删除项目</p></figcaption></figure></div>
 {% endtab %}
@@ -192,7 +192,7 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 #### 密码库回收站 <a href="#vault-trash" id="vault-trash"></a>
 
-已删除的项目将被发送到回收站，删除后它们会保留 30 天。30 天过后，该项目将被永久删除且不可恢复。在回收站中，您可以在 30 天等待期之前使用 **≡**&#x83DC;单将项目**恢复**到您的密码库或将其**永久删除**：
+已删除的项目将被发送到回收站，删除后它们会保留 30 天。30 天过后，该项目将被永久删除且不可恢复。在回收站中，您可以在 30 天等待期之前使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>菜单将项目**恢复**到您的密码库或将其**永久删除**：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -226,25 +226,25 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 
 {% tabs %}
 {% tab title="网页 App" %}
-选择要复制的项目的 **≡**&#x9009;项菜单，然后选择 **❐克隆**：
+选择要复制的项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单，然后选择 <i class="fa-copy">:copy:</i>**克隆**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3OYHvfRCDy3OphkbEHIJEA/fa47beb671d6efc34a18d05daf630aff/webappnewtest3.png?w=1325&#x26;fm=avif" alt=""><figcaption><p>项目选项</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-选择要复制的项目的 **≡**&#x9009;项菜单，然后选择 **❐克隆**：
+选择要复制的项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单，然后选择 <i class="fa-copy">:copy:</i>**克隆**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/10bowrbDmxxf8SxrMhplmJ/01597fd4926492def941caf556cd9d12/extnew5.png?w=1118&#x26;fm=avif" alt=""><figcaption><p>项目选项</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}
-击某个项目将其打开，然后选择该项目的 **≡**&#x9009;项菜单：
+击某个项目将其打开，然后选择该项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6XFamLqIYX26cUY5LWQbPE/1a6000050526e7f4f9e8bfcad93619fe/2025-11-10_12-06-19.png?w=961&#x26;fm=avif" alt=""><figcaption><p>项目选项</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="桌面端" %}
-选择要复制的项目的 **≡**&#x9009;项菜单，然后选择 **❐克隆**：
+选择要复制的项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单，然后选择 <i class="fa-copy">:copy:</i>**克隆**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5KRdegIaIbOHxGkMj64Fs9/fce91fc0bc5cabfa299d1fd522c0da7d/2026-04-23_10-12-38.png?w=800&#x26;fm=avif" alt=""><figcaption><p>克隆项目</p></figcaption></figure></div>
 {% endtab %}

@@ -17,13 +17,13 @@
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-使用 **🔒密码库**选项卡顶部的**密码库**、**集合**、**文件夹**或**类型**选择器。您可以使用 **☷**&#x6309;钮切换筛选器下拉菜单的可见性：
+使用 <i class="fa-lock-keyhole">:lock-keyhole:</i>**密码库**选项卡顶部的**密码库**、**集合**、**文件夹**或**类型**选择器。您可以使用 <i class="fa-sliders">:sliders:</i> 按钮切换筛选器下拉菜单的可见性：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12UsFuA2sxbUCBMIczJsxv/689221013fac56ddb555ed9dabddbdc9/screenshot_6.png?w=584&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展筛选器和建议</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}
-通过选择**密码库**选项卡上的**密码库**菜单按钮 (**⋯**) 来选择一个密码库：
+通过选择**密码库**选项卡上的**密码库**菜单按钮 (<i class="fa-ellipsis">:ellipsis:</i>) 来选择一个密码库：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/44WqYfqzP9JOJPSZ4Yrzjb/9167f19bc2e27a158be5ed3fc29a5689/2025-01-21_15-38-59.png?w=714&#x26;fm=avif" alt=""><figcaption><p>移动 App 筛选器</p></figcaption></figure></div>
 {% endtab %}
