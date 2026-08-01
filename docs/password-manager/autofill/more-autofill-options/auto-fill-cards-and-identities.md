@@ -1,4 +1,4 @@
-# 自动填充支付卡 & 身份
+# =自动填充支付卡 & 身份
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-card-id/)
@@ -12,7 +12,7 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 
 ## 设置支付卡 & 身份自动填充 <a href="#set-up-card-and-identity-autofill" id="set-up-card-and-identity-autofill"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在 Android 上，自动填充支付卡不需要进行任何额外的设置，只需进行[基本的自动填充设置](../autofill-from/autofill-from-android.md)即可。以下说明仅适用于浏览器扩展。
 {% endhint %}
 
