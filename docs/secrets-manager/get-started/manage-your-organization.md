@@ -25,7 +25,7 @@
 * [要求单点登录验证](../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)
 * [密码库超时](../../admin-console/oversight-visibility/enterprise-policies.md#vault-timeout)
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您是 Bitwarden 的新手，我们建议您在入职用户之前先设置策略。
 {% endhint %}
 
@@ -55,13 +55,13 @@ Directory Connector 通过从一系列源目录服务中提取，自动在您的
 
 1、打开您组织的**成员**选项卡，然后选中您想要授予 Secrets Manager 访问权限的成员。
 
-2、使用 **≡**&#x83DC;单，选中**激活 Secrets Manager** 以向选定成员授予访问权限：
+2、使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 菜单，选中**激活 Secrets Manager** 以向选定成员授予访问权限：
 
 * 对于自托管组织，也必须在自托管实例中重复此步骤。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3IBNL6FdndgPeuXa7m3rlP/fd04ec9951123e5a0ccd5fe4f04fa4de/2024-12-03_11-18-52.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>添加 Secrets Manager 用户</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 授予成员对 Secrets Manager 的访问权限不会自动授予他们对存储的工程或机密的访问权限。接下来，您需要[为人员或群组分配对工程的访问权限](../your-secrets/projects.md#add-people-to-a-project)。
 {% endhint %}
 

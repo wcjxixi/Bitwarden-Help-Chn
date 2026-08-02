@@ -6,7 +6,7 @@
 
 您用于登录 Password Manager 的端到端零知识加密的 Bitwarden 账户与您用于登录 Secrets Manager 的账户相同。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 本文介绍如何登录 Secrets Manager 网页密码库。[Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 主要用于编写机密注入到您的应用程序和基础设施中的脚本，需要使用[访问令牌](../your-secrets/access-tokens.md)登录。
 {% endhint %}
 
@@ -17,7 +17,7 @@
 * **好记**：Bitwarden 的员工以及 Bitwarden 系统对您的主密码一无所知、没有办法找回或重置您的主密码。**千万不要忘记你的主密码！**
 * **强大**：使用一个更长、更复杂且不太常见的主密码是保护您账户的最佳方式。Bitwarden 提供了一个免费的密码强度测试工具来测试您正在考虑使用的密码的强度。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 担心忘记您的主密码吗？这里有一些建议：
 
 * **设置主密码提示**。如果您需要提醒，可以在登录屏界面请求主密码提示电子邮件。确保使用只有您自己能理解的提示。

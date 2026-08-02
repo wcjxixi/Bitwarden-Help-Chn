@@ -46,7 +46,7 @@
 * **可以读取**：机器账户可以从分配的工程中检索机密。
 * **可以读取和写入**：机器账户可以从分配的工程中检索和编辑机密，在分配的工程中创建新的机密，或者完全创建新的工程。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 机器账户的写入​​访问权限的充分利用取决于即将发布的 [CLI](../developer-tools/secrets-manager-cli.md) 版本。目前，这只是在 UI 中提供了此选项。请继续关注[发行说明](../../release-notes.md)以获取更多信息。
 {% endhint %}
 
@@ -103,6 +103,6 @@
 
 ## 配置信息 <a href="#configuration-information" id="configuration-information"></a>
 
-**配置**选项卡提供了配置应用程序以使用机器账户时可能需要的信息的快速视图。将显示**身份服务器 URL**、**API 服务器 URL**、**组织 ID** 和**工程 ID**，并且可以通过选择每个字段各自的 **❐**&#x56FE;标来复制它们。有关 Secrets Manager 环境的更多信息，请参阅 Secrets Manager [SDK 文档](../developer-tools/secrets-manager-sdk.md)和 [CLI 文档](../developer-tools/secrets-manager-cli.md)。
+**配置**选项卡提供了配置应用程序以使用机器账户时可能需要的信息的快速视图。将显示**身份服务器 URL**、**API 服务器 URL**、**组织 ID** 和**工程 ID**，并且可以通过选择每个字段各自的 <i class="fa-copy">:copy:</i> 图标来复制它们。有关 Secrets Manager 环境的更多信息，请参阅 Secrets Manager [SDK 文档](../developer-tools/secrets-manager-sdk.md)和 [CLI 文档](../developer-tools/secrets-manager-cli.md)。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4XRItVAnKy1iVtOM2DbDLg/97e60d73e9bf18823c98fa46c588f99e/2024-12-03_13-38-10.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>机器账户配置视图</p></figcaption></figure></div>

@@ -35,7 +35,7 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。要开始使用
 {% tab title="扫描二维码" %}
 &#x20;在 Bitwarden Authenticator App 中：
 
-1. 点击 ✚添加图标。
+1. 点击 <i class="fa-plus">:plus:</i> 添加图标。
 2. 将相机对准二维码。扫描将自动进行。
 3. 选择**保存在这里**（仅在 Authenticator 中）或是**保存到 Bitwarden**（保存为 Password Manager 中的登录项目）。
 {% endtab %}
@@ -43,7 +43,7 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。要开始使用
 {% tab title="手动添加代码" %}
 在 Bitwarden Authenticator App 中：
 
-1. 点击 ✚添加图标。
+1. 点击 <i class="fa-plus">:plus:</i> 添加图标。
 2. 点击屏幕底部的**手动输入密钥**。
 3. 在**名称**字段中输入网站或 App 的名称。
 4. 输入网站或 App 提供的**验证器密钥**。某些服务将此称为「机密密钥」或「TOTP 种子」。
@@ -51,7 +51,7 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。要开始使用
 {% endtab %}
 {% endtabs %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您在 Authenticator 中创建了本地代码，稍后想要将其添加到您的密码库，请[将代码复制到 Password Manager](totp-sync.md#move-and-sync-local-codes-to-your-bitwarden-vault)。
 {% endhint %}
 
@@ -66,7 +66,7 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。要开始使用
 * 更改代码的**刷新周期**。Bitwarden Authenticator 默认使用 30 秒。
 * 更改代码的**位数**。Bitwarden Authenticator 默认使用 6 位数字。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **算法**、**刷新周期**和**位数**由您使用验证码的网站决定。除非该网站要求或允许您自定义验证码行为，否则请勿更改这些设置。
 {% endhint %}
 
@@ -117,7 +117,7 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。要开始使用
 
 <summary>我的数据如何存储和保护？</summary>
 
-您的验证密钥（有时称为「安全秘钥」或「TOTP 种子」）和所有相关元数据都存储在您设备上的本地未加密数据库中。这些数据不会同步到 Bitwarden 服务器。您的数据将由您设备的云备份系统（如 iCloud 或 Google One）进行备份。要保护您的 App 中的数据，您还可以设置生物识别登录。
+您的验证密钥（有时称为「机密秘钥」或「TOTP 种子」）和所有相关元数据都存储在您设备上的本地未加密数据库中。这些数据不会同步到 Bitwarden 服务器。您的数据将由您设备的云备份系统（如 iCloud 或 Google One）进行备份。要保护您的 App 中的数据，您还可以设置生物识别登录。
 
 </details>
 

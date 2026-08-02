@@ -10,7 +10,7 @@
 
 要将基于时间的一次性密码 (TOTP) 导入 Bitwarden Authenticator：
 
-1. 点击 **⚙️设置**图标。
+1. 点击 <i class="fa-gear-complex">:gear-complex:</i>**设置**图标。
 2. 点击**导入**。
 3. 从**文件格式**下拉菜单中，选择导入文件的来源：
    * **Authenticator 导出 (JSON)**：导入 Bitwarden Authenticator 或 Bitwarden Password Manager `.json` 的导出。使用下面章节中的说明，了解如何使用 Bitwarden Authenticator 创建 `.json` 导出的信息。导入 [Bitwarden Password Manager .json 的导出](../password-manager/import-and-export/export-vault-data.md)将解析文件并导入 TOTP 种子。
@@ -21,7 +21,7 @@
    * **Aegis（仅 Android）**：从 Aegis **导入 & 导出**界面进行导出，以导入未加密的 Aegis .json 导出。
 
 {% hint style="success" %}
-在 Android 上，使用主界面上的 **✚添加**图标扫描 Google Authenticator 二维码，而不是导航到**设置** → **导入**。
+在 Android 上，使用主界面上的 <i class="fa-plus">:plus:</i>**添加**图标扫描 Google Authenticator 二维码，而不是导航到**设置** → **导入**。
 {% endhint %}
 
 ## 导出数据 <a href="#export-data" id="export-data"></a>
@@ -30,7 +30,7 @@
 
 要从 Bitwarden Authenticator 导出数据：
 
-1. 打开 **⚙️设置**选项卡。
+1. 打开 <i class="fa-gear-complex">:gear-complex:</i>**设置**选项卡。
 2. 点击**导出**。
 3. 从下拉菜单中选择您的导出的**文件格式**：`.json` 或 `.csv`。
 4. 点击**导出项目**。

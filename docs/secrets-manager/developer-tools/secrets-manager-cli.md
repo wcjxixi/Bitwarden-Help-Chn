@@ -1,4 +1,4 @@
-# =Secrets Manager CLI
+# Secrets Manager CLI
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-cli/)
@@ -61,7 +61,7 @@ bws list secrets --access-token 0.48c78342-1635-48a6-accd-afbe01336365.C0tMmQqHn
 {% endtab %}
 {% endtabs %}
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 如果您的工作流程使用许多单独的会话（每次使用访问令牌进行身份验证都构成一个「会话」）在短时间内从同一 IP 地址发出请求，您可能会遇到速率限制。
 {% endhint %}
 
@@ -82,7 +82,7 @@ Secrets Manager CLI 将暂时保留对旧语法的支持。如果您不确定正
 
 `run` 命令在执行命令时将密钥注入为环境变量，使您能够轻松调整现有开发项目和脚本以使用安全机密管理。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **请只执行您信任的命令**。`run` 命令执行您在 shell 中指定的命令，因此您不应使用它来执行您不信任的二进制文件、shell 脚本或临时 shell 命令。不受信任的可执行文件可能包含命令注入或其他恶意行为，这些行为在 `bws run` 内部运行时会获得对机密的访问权限。
 {% endhint %}
 
@@ -109,7 +109,7 @@ bws run -- 'echo "$secret_name"'
 {% endtab %}
 {% endtabs %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 大多数命令行实用程序都受到 POSIX 的限制。POSIX 合规性要求环境变量名称仅包含字母数字字符或下划线，并且只能以字母或下划线开头。
 
 Secrets Manager CLI 仍会将不符合 POSIX 标准的密钥名称设置为环境变量，但是它们只能从不受 POSIX 合规性限制的程序访问。请参阅描述 `--uuids-as-keynames` 参数的部分，以了解确保机密的环境变量名称符合 POSIX 标准的简单方法。
@@ -143,7 +143,7 @@ bws run --shell fish -- echo “running a command with the Fish shell”
 bws run --no-inherit-env -- echo "running a command with a minimal environment"
 ```
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 `--no-inherit-env` 参数是从 shell 中删除可能与正在执行的进程冲突的环境变量的简单方法。此选项不会创建沙箱。您执行的进程将具有与任何其他非沙盒应用程序相同的系统访问权限。
 {% endhint %}
 
@@ -158,7 +158,7 @@ bws run --uuids-as-keynames -- 'echo $_64246aa4_70b3_4332_8587_8b1284ce6d76'
 
 或者，您可以将 `BWS_UUIDS_AS_KEYNAMES=true` 设置为环境变量，以获得与传递参数相同的效果。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 由于 UUIDS 包含连字符，有时以数字开头，因此 `--uuids-as-keynames` 参数将用下划线替换连字符，并始终在机密 UUIDS 前面添加下划线以确保符合 POSIX 标准。例如，ID 为 `64246aa4-70b3-4332-8587-8b1284ce6d76` 的机密将转换为 `_64246aa4_70b3_4332_8587_8b1284ce6d76`。
 {% endhint %}
 

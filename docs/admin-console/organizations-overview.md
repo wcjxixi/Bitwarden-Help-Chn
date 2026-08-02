@@ -42,7 +42,7 @@ Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需�
 
 2、**选择您的方案**。Bitwarden 提供适合任何需求的组织。查看[功能区别](../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-business-plans)，以找出最适合您的组织。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 所有付费组织（家庭版、初创团队版、团队版或企业版）都包含了所有注册用户的高级功能！
 {% endhint %}
 
@@ -54,7 +54,7 @@ Bitwarden 提供了多种类型的组织，以满足您的企业或家庭的需�
 
 4、对组织满意后，请输入您的**付款信息**（如果您创建的是免费版组织，则不需要），然后选择**提交**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 新的家庭版、团队版和企业版组织内置了 7 天免费试用！在您的试用期结束之前，我们不会向您收费，您可以随时从组织的**设置**选项卡中取消订阅。
 {% endhint %}
 
@@ -66,7 +66,7 @@ Bitwarden 集合和群组是一种组织工具，可以让您安全地共享数�
 
 ### 集合 <a href="#collections" id="collections"></a>
 
-集合是一种关联和共享项目的方式，类似于共享文件夹。项目可以属于一个或多个集合。拥有相应权限的用户可以对集合进行管理。集合通常可以按以下方式组织：
+集合是一种关联和共享项目的方式，类似于共享文件夹。项目可以属于一个或多个集合。拥有相应[权限](manage-members/member-roles.md#default-role-permissions)的用户可以对集合进行管理。集合通常可以按以下方式组织：
 
 * 部门（工程部、人力资源部）
 * 责任领域（社交媒体、软件开发）

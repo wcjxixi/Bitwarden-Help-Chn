@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-quick-start/)
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您是开发人员，您可能更喜欢[开发人员快速入门](developer-quick-start.md)。您当前阅读的文章将从管理和设置的角度介绍 Secrets Manager。
 {% endhint %}
 
@@ -56,7 +56,7 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 
 ### 给予成员访问权限 <a href="#give-members-access" id="give-members-access"></a>
 
-{% hint style="info" %}
+{% hint style="success" icon="lightbulb" %}
 在继续之前，我们建议为 Secrets Manager 用户[创建群组](../../admin-console/manage-members/groups.md#create-a-group)。用户拥有对 Secrets Manager 的访问权限后，您就可以通过群组快速分配对机密的访问权限。
 {% endhint %}
 
@@ -64,7 +64,7 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 
 1、在您组织的 Admin Console 中，转到**成员**。
 
-2、单击 **≡图标**，然后选择**激活 Secrets Manager**：
+2、单击 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> **图标**，然后选择**激活 Secrets Manager**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3IBNL6FdndgPeuXa7m3rlP/fd04ec9951123e5a0ccd5fe4f04fa4de/2024-12-03_11-18-52.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>添加 Secrets Manager 用户</p></figcaption></figure></div>
 

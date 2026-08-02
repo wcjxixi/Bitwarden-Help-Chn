@@ -51,7 +51,7 @@ build:
 * `534cc788-a143-4743-94f5-afdb00a40a41` 和 `9a0b500c-cb3a-42b2-aaa2-afdb00a41daa` 是存储在 Secrets Manager 中的机密的引用标识符。您的访问令牌所属的机器账户必须能够访问这些特定的机密。
 * `npm run start` 是一个命令，它期望通过 `bws` 获取的机密值。请将其替换为运行您的项目所需的相关命令。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 机密被存储为环境变量。[避免运行那些会将这些机密输出到日志中的命令](https://docs.gitlab.com/ee/ci/variables/#cicd-variable-security)非常重要。
 {% endhint %}
 

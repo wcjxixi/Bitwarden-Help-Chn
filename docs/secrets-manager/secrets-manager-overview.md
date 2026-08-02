@@ -31,7 +31,7 @@ Bitwarden 致力于打造安全至上的产品。与 Password Manager 一样，S
 * **端到端加密**：机密数据的所有加密和解密都在客户端完成，这意味着敏感数据不会在未加密的情况下到达我们的服务器。
 * **零知识加密**：Bitwarden 团队成员无法看到您的机密、您的密码或您的主密码。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 Bitwarden Secrets Manager 也可以自托管。在[这里](get-started/manage-your-organization.md#zi-tuo-guan)了解更多。
 {% endhint %}
 
@@ -57,6 +57,6 @@ Secrets Manager 将提供网页 App、CLI 和 SDK。未来会支持更多的 SDK
 
 Bitwarden 为免费版、团队版和企业版组织提供 Secrets Manager 订阅服务。如果您有家庭版方案并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费版组织，然后按照[这些步骤](get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如需深入了解产品，请查看 [Secrets Manager 演示](https://bitwarden.com/resources/videos/bitwarden-secrets-manager-product-demo-replay/)。
 {% endhint %}

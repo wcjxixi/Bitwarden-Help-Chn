@@ -34,7 +34,7 @@ Bitwarden 在许多设备上提供了应用程序，包括浏览器扩展、移�
 
 [创建一个 Bitwarden 账户](https://vault.bitwarden.com/#/register)，并确保您挑选了一个强大而难忘的[主密码](../account/master-password.md)。我们甚至建议您写下您的主密码，并将其存储在安全的地方。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **不要忘记您的主密码！**&#x42;itwarden 是一种零知识的解决方案，这意味着 Bitwarden 团队以及 Bitwarden 系统本身对您的主密码一无所知，也没有办法找回或重置你的主密码。
 {% endhint %}
 
@@ -46,7 +46,7 @@ Bitwarden 在许多设备上提供了应用程序，包括浏览器扩展、移�
 
 为了使用免费的 2 人组织进行安全共享，您需要拥有 2 个 Bitwarden 账户。设置了第一个 Bitwarden 账户后，请按照相同的步骤（或帮助您的朋友或伴侣操作）来设置另一个账户。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/member-roles.md)。无论您用哪个用户来[设置您的组织](organizations-quick-start.md#setup-your-organization)，其都将成为**所有者**。
 {% endhint %}
 
@@ -54,7 +54,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 要设置您的组织：
 
-1、在 Bitwarden 网页 App 中，选择 ✚**新建组织**按钮：
+1、在 Bitwarden 网页 App 中，选择 <i class="fa-plus">:plus:</i>**新建组织**按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3eSqWiTIuPSFxXdo5AAjT9/248b0fa7bb381add0d71682acd244a63/2024-12-03_13-57-58.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>新建组织</p></figcaption></figure></div>
 
@@ -82,7 +82,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3rq5lVSQlvNT9gu2M2bCbk/8741dc155e8f2fa83d2caeb69218ce64/2024-12-02_15-35-48.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>创建新的集合</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在很多方面，集合类似于用来组织个人密码库的[文件夹](../password-manager/your-vault/vault-navigation/folders.md)。一个关键的区别是，[属于您的组织](organizations-quick-start.md#shared-items)的项目**必须包括在至少一个集合中**。
 {% endhint %}
 

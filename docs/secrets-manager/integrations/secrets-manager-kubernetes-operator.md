@@ -4,10 +4,6 @@
 对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-kubernetes-operator/)
 {% endhint %}
 
-{% hint style="danger" %}
-~~Bitwarden Secrets Manager Helm 集成目前处于 **Beta 状态**。某些功能目前可能无法提供完整功能。~~
-{% endhint %}
-
 Bitwarden Secrets Manager Kubernetes Operator 允许团队安全高效地将 Secrets Manager 集成到 Kubernetes 工作流中。使用 [Helm](https://helm.sh/) 包管理器部署的 Operator，可以从 Secrets Manager 中存储和获取机密。
 
 `sm-operator` 使用控制器将 Bitwarden 机密同步到 Kubernetes 机密中。Operator 将 Custom Resource Definition：`BitwardenSecret` 注册到 Kubernetes 集群中。集群将侦听新注册的 `BitwardenSecret` ，并按可配置的时间间隔进行同步。
@@ -71,7 +67,7 @@ helm upgrade sm-operator bitwarden/sm-operator -i --debug -n sm-operator-system 
 
 此命令在命名空间 `sm-operator-system` 中安装或升级名为 `sm-operator` 的版本，其值来自 `my-values.yaml` 。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 要查看 `helm install` 或 `helm upgrade` 命令的信息，请运行 `helm install --help` 或 `helm upgrade --help` 。
 {% endhint %}
 
@@ -85,7 +81,7 @@ helm upgrade sm-operator bitwarden/sm-operator -i --debug -n sm-operator-system 
 kubectl create secret generic bw-auth-token -n <YOUR_NAMESPACE> --from-literal=token="<TOKEN_HERE>"
 ```
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 该命令记录在您的 shell 历史记录中。为了避免暴露访问令牌数据，请考虑使用临时管道代理进行部署。
 {% endhint %}
 
@@ -130,7 +126,7 @@ EOF
 | `spec.secretName`     | 将创建并注入 Secrets Manager 数据的 Kubernetes 机密的名称。                                       |
 | `spec.authToken`      | BitwardenSecrets 对象部署到的 Kubernetes 命名空间内的机密名称，其中包含跨机密使用的 Secrets Manager 机器账户授权令牌。 |
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Secrets Manager 不保证跨工程机密名称的唯一性。默认情况下，将使用作为密钥使用的 Secrets Manager 机密 UUID 来创建机密。
 {% endhint %}
 

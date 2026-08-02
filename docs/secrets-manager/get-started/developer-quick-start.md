@@ -8,7 +8,7 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 
 在本文中，我们将通过查看几种检索存储在密码库中的数据库凭据以在容器运行时注入 [Bitwarden Lite](../../self-hosting/deploy-and-configure/docker/lite-deployment.md) Docker 镜像的方式来演示 Secrets Manager CLI 的使用。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您正在查找 SDK 信息和 Secrets Manager 功能的语言封装，请参阅[本文](../developer-tools/secrets-manager-sdk.md)。
 {% endhint %}
 

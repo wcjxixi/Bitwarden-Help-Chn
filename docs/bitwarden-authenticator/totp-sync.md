@@ -27,7 +27,7 @@
 
 1. 确保您的设备上安装了 [Bitwarden Authenticator](https://bitwarden.com/download/#bitwarden-authenticator) 和 [Bitwarden Password Manager](https://bitwarden.com/download/#mobile-applications)。
 2. 在 Password Manager 中，登录要与 Authenticator 同步的账户。
-3. 点击 **⚙️设置**图标。
+3. 点击 <i class="fa-gear-complex">:gear-complex:</i>**设置**图标。
 4. 点击**账户安全**。
 5. 启用**允许验证器同步**。
 6. （可选）要同步其他 Password Manager 账户，请为每个账户重复步骤 2-5。您需要为每个账户单独切换设置，这样您才能准确选择与 Authenticator 同步的账户。
@@ -40,8 +40,8 @@
 1. 在 Bitwarden Authenticator 中，长按该代码。
 2. 点击**复制到 Bitwarden 密码库**。
 3. 这将打开 Password Manager 并搜索匹配的登录项目。
-   * 如果找到匹配的登录项目，点击该登录项目。编辑或输入任何其他详细信息，然后在完成后点击 **✔︎检查图标**。
-   * 如果未找到匹配的登录项目，点击 **✚新增项目**。编辑或输入任何其他详细信息，然后在完成后点击 **✔︎检查图标**。
+   * 如果找到匹配的登录项目，点击该登录项目。编辑或输入任何其他详细信息，然后在完成后点击 <i class="fa-circle-check">:circle-check:</i>**检查图标**。
+   * 如果未找到匹配的登录项目，点击 <i class="fa-plus">:plus:</i>**新增项目**。编辑或输入任何其他详细信息，然后在完成后点击 <i class="fa-circle-check">:circle-check:</i>**检查图标**。
 
 ## 同步工作原理 <a href="#how-syncing-works" id="how-syncing-works"></a>
 

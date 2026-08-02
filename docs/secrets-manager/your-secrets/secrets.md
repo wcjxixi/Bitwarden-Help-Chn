@@ -55,7 +55,7 @@
 
 删除机密后，它会被移至回收站保留 30 天。在此之后，它将被永久删除。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 机密被永久删除后，将无法恢复。
 {% endhint %}
 

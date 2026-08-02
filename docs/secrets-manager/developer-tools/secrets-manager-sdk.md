@@ -23,6 +23,6 @@ Secrets Manager 软件开发工具包 (SDK) 可帮助开发人员创建用于机
 * 获取[工程](../your-secrets/projects.md)中的单个或所有[机密](../your-secrets/secrets.md)。
 * 列出所有机密、工程中的机密、或工程。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 要了解 Python SDK 的实际应用，请加入 Secrets Manager 的现场演示和问答！[在此注册](https://us02web.zoom.us/webinar/register/WN_8kM9dK4FT6y0Z95G16nN5w#/registration)。
 {% endhint %}

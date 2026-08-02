@@ -11,7 +11,7 @@ Bitwarden 提供了一个用于获取、创建和管理机密的 Terraform 提�
 * Terraform 版本 1.5 或更高版本。
 * 拥有[机器账户](../your-secrets/machine-accounts.md)和附加[访问令牌](../your-secrets/access-tokens.md)的 [Secrets Manager](../secrets-manager-overview.md) 组织。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 我们推荐：
 
 * 在使用配置**之前**，先使用 Secrets Manager 网页 App 指定您的机器账户可以访问哪些[工程](../your-secrets/projects.md)和[机密](../your-secrets/secrets.md)。

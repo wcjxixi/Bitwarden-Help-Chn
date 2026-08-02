@@ -56,6 +56,6 @@
 
 1、从导航中选择**机器账户**，然后打开**访问令牌**选项卡。
 
-2、对于要撤销的访问令牌，使用 (**≡**) 选项菜单选择**吊销访问令牌**：
+2、对于要撤销的访问令牌，使用 (<i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>) 选项菜单选择**吊销访问令牌**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1rujDBqHJ6lYy26kqmTZw4/38b09b908992c91639a49012adbec93c/2024-12-03_13-40-17.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>吊销访问令牌</p></figcaption></figure></div>
