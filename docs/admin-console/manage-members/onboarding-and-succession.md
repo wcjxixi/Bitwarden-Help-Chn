@@ -22,7 +22,7 @@ Bitwarden 的愿景是构想一个没有人被黑客入侵的世界。我们秉�
 * 个人和家庭应使用 [TOTP、紧急访问和其他支持的安全功能](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#premium-individual)，以保障自身安全。
 * 组织可以通过[组织密码管理和安全共享](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#bitwarden-business-plans)来大大提高他们的安全配置。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 对于 Bitwarden 而言，[不同的方案](../../plans-and-pricing/password-manager/about-bitwarden-plans.md)和选项相互关联、相辅相成，这些都源于我们对无黑客世界的愿景。让每个人在工作**和**家庭中都能轻松管理密码，使我们离这个目标更近一步。
 {% endhint %}
 
@@ -48,7 +48,7 @@ Bitwarden 已在 2021 年中期推出一项新的功能，使企业能够重置�
 
 家庭版、团队版和企业版组织自动为成员单独提供高级版功能，例如[紧急访问](../../account/emergency-access/about-emergency-access.md)和[加密附件存储](../../password-manager/your-vault/vault-items/file-attachments.md)，他们可以选择性使用。个人密码库中的数据归用户所有。个人密码库不支持共享，[组织密码库则可以](onboarding-and-succession.md#bitwarden-organizations)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **为什么默认提供个人密码库？**
 
 个人密码库是 [Bitwarden 理念](onboarding-and-succession.md#the-bitwarden-approach)的一个重要组成部分。员工每天都会在个人和工作中使用各种凭据，**在一个领域形成的习惯通常会延续到另一个领域**。我们认为，在个人生活中使用适当的安全措施的员工会将这种良好的行为带到他们的职业生涯中，从而在此过程中**保护您的业务**。
@@ -92,7 +92,7 @@ Bitwarden 组织以可扩展和安全的方式管理成员和数据。对于大�
 
 用户完全加入你的组织后，可以通过将他们分配给[集合](onboarding-and-succession.md#collections)来分配对组织密码库数据的访问权限。团队版和企业版组织可以将用户分配到[群组](onboarding-and-succession.md#groups)，以实现可扩展的权限分配，并构建群组 - 集合关联，而不是在个人层面上分配访问权限。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 对于大型组织，[Directory Connector](directory-connector/about-directory-connector.md) 是大规模入职和离职用户的最佳方式。
 {% endhint %}
 
@@ -122,15 +122,15 @@ Alice 是您企业中的一位**用户**，该组织托管在 Bitwarden Cloud �
 
 #### 当 Alice 从您的组织中被移除后： <a href="#once-offboarded" id="once-offboarded"></a>
 
-<table><thead><tr><th width="150">产品领域</th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td><p>可以继续使用任一个 Bitwarden 应用程序访问她的个人密码库，但将<strong>立即失去对组织密码库、所有集合和所有已共享项目的访问权限</strong>。</p><p></p><p>有关本地缓存的信息，请参阅本节末尾的提示。</p></td></tr><tr><td><strong>电子邮箱 &#x26; 主密码</strong></td><td>可以继续使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录，但是由于她无法访问她的 <code>@company.com</code> 收件箱，因此应该建议她更改为与她的 Bitwarden 账户关联的电子邮箱。</td></tr><tr><td><strong>个人项目</strong></td><td>仍然可以使用她的个人密码库并访问存储在其中的项目。</td></tr><tr><td><strong>组织中的权限</strong></td><td>将<strong>立即失去与组织相关的所有事物的所有权限和访问权限</strong>。</td></tr><tr><td><strong>两步登录</strong></td><td>将无法使用组织层面的 Duo 2FA 访问她的密码库，但可以设置为我们的免费两步登录选项之一或升级到高级版以获取更多功能。</td></tr><tr><td><strong>创建的集合</strong></td><td>Alice 的「Marketing Credentials」集合，将由组织所有者和管理员保留，他们可以为某个新用户分配「可以管理」权限。</td></tr><tr><td><strong>共享的项目</strong></td><td>集合和已共享项目的所有权<strong>属于组织</strong>，因此 Alice 将无法访问所有这些项目，尽管已创建它们。</td></tr></tbody></table>
+<table data-search="false"><thead><tr><th width="150">产品领域</th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td><p>可以继续使用任一个 Bitwarden 应用程序访问她的个人密码库，但将<strong>立即失去对组织密码库、所有集合和所有已共享项目的访问权限</strong>。</p><p></p><p>有关本地缓存的信息，请参阅本节末尾的提示。</p></td></tr><tr><td><strong>电子邮箱 &#x26; 主密码</strong></td><td>可以继续使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录，但是由于她无法访问她的 <code>@company.com</code> 收件箱，因此应该建议她更改为与她的 Bitwarden 账户关联的电子邮箱。</td></tr><tr><td><strong>个人项目</strong></td><td>仍然可以使用她的个人密码库并访问存储在其中的项目。</td></tr><tr><td><strong>组织中的权限</strong></td><td>将<strong>立即失去与组织相关的所有事物的所有权限和访问权限</strong>。</td></tr><tr><td><strong>两步登录</strong></td><td>将无法使用组织层面的 Duo 2FA 访问她的密码库，但可以设置为我们的免费两步登录选项之一或升级到高级版以获取更多功能。</td></tr><tr><td><strong>创建的集合</strong></td><td>Alice 的「Marketing Credentials」集合，将由组织所有者和管理员保留，他们可以为某个新用户分配「可以管理」权限。</td></tr><tr><td><strong>共享的项目</strong></td><td>集合和已共享项目的所有权<strong>属于组织</strong>，因此 Alice 将无法访问所有这些项目，尽管已创建它们。</td></tr></tbody></table>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 离线设备会缓存密码库数据（包括组织密码库数据）的只读副本。 某些客户端可能会在成员离职后的短时间内保留对该只读数据的访问权限。如果预计会有人恶意利用这一点，则应在将成员从组织中移除时更新其曾拥有访问权限的凭据。
 {% endhint %}
 
 ### 高级离职 <a href="#advanced-deprovisioning" id="advanced-deprovisioning"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 对于那些使用[受信任设备 SSO](../login-with-sso/trusted-devices/about-trusted-devices.md) 而没有主密码的账户，[从您的组织中移除他们](user-management.md#offboard-users)将切断其对 Bitwarden 账户的所有访问权限，除非：
 
 1. 您事先使用[账户恢复](account-recovery/about-account-recovery.md)为其分配了主密码。
@@ -219,7 +219,7 @@ Bitwarden 企业版组织可以使用 SAML 2.0 或 OIDC 与您现有的身份提
 * **单一组织**：限制用户加入任何其他组织。
 * **集中化组织所有权**：要求用户通过删除个人所有权选项将密码库项目保存到组织。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 例如，**集中化组织所有权**策略与前面关于个人密码库和组织密码库之间相互作用的讨论相吻合。一些公司可能希望确保所有凭据都保留在组织密码库中。一种可能的实施方案是允许每个个人用户拥有自己的集合，这与个人密码库不同，集合可以由组织所有者和管理员来监督。
 {% endhint %}
 
@@ -233,7 +233,7 @@ Bitwarden 组织包括了对[事件日志](../oversight-visibility/event-logging
 * 组织配置更改
 * 以及更多
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 除了这些好优势，客户还很欣赏将 Bitwarden 紧密集成到他们现有系统中的能力。Bitwarden 提供了一个强大的公共 [API](https://bitwarden.com/help/api/) 和一个功能齐全的[命令行界面](../../password-manager/developer-tools/cli/password-manager-cli.md) (CLI)，以进一步整合到现有的组织工作流程中。
 {% endhint %}
 

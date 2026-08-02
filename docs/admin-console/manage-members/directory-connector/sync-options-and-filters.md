@@ -14,7 +14,7 @@
 * [使用 Okta 同步](sync-with-okta.md)
 * [使用 OneLogin 同步](sync-with-onelogin.md)
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您使用的是 Directory Connector CLI，请参阅 [Directory Connector 文件存储](directory-connector-file-storage.md)以获取有关编辑 `data.json` 配置文件的帮助。
 {% endhint %}
 
@@ -41,7 +41,7 @@
 
 ## 覆盖同步 <a href="#overwriting-syncs" id="overwriting-syncs"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 此选项适用于非常特殊的使用场景或调试目的，默认为禁用。
 {% endhint %}
 

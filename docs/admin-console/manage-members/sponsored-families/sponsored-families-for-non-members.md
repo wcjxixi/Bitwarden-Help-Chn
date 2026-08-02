@@ -14,7 +14,7 @@
 * 要求[所有者、管理员或允许的自定义角色成员](../member-roles.md)为他们希望向其提供福利的每位员工发放赞助。
 * 获得赞助的每位员工将在企业版组织中占据一个席位。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的企业版组织是自托管的，则管理员需要先完成[这些步骤](../../../self-hosting/deploy-and-configure/optional-features/self-hosting-families-sponsorships.md)，然后员工才能兑换其家庭版赞助。
 {% endhint %}
 
@@ -22,13 +22,13 @@
 
 ## 发放赞助 <a href="#issue-a-sponsorship" id="issue-a-sponsorship"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您想要为其赞助家庭版组织的员工**已经是企业版组织的成员**，他们可以[兑换赞助而无需管理员手动发放](sponsored-families-for-members.md#redeem-a-sponsorship)。
 {% endhint %}
 
 要向非企业版组织成员的员工发放家庭赞助：
 
-1、在 Admin Console 中，导航到**成员** → **免费 Bitwarden 家庭**，然后选择 **✚添加赞助**：
+1、在 Admin Console 中，导航到**成员** → **免费 Bitwarden 家庭**，然后选择 <i class="fa-plus">:plus:</i>**添加赞助**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3ZLi9Ap4Hk44fCNWHvvrFY/b3e4a05fd72aa106e938295d27e0d37a/2025-05-21_11-35-45.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>免费 Bitwarden 家庭</p></figcaption></figure></div>
 
@@ -37,7 +37,7 @@
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2bYAYxzbgIJqshhOIgNQtX/c35a70ea7ee48f4b4114ce86401caefe/2025-05-21_16-43-35.png?w=450&#x26;fm=avif" alt=""><figcaption><p>添加赞助</p></figcaption></figure></div>
 
 {% hint style="info" %}
-您可以随时使用此页面上的 **≡**&#x9009;项菜单重新发送邀请，或移除员工的赞助。
+您可以随时使用此页面上的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单重新发送邀请，或移除员工的赞助。
 {% endhint %}
 
 使用此方式获得赞助的每位员工将在企业版组织中占据一个席位。

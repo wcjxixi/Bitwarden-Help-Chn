@@ -124,10 +124,10 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 ### 用户属性 <a href="#user-attributes" id="user-attributes"></a>
 
-Bitwarden 和 OneLogin 的 SCIM Provisioner with SAML (SCIM v2 Enterprise) 应用程序都使用标准的 SCIM v2 属性名称。Bitwarden 将使用以下属性：
+Bitwarden 和 OneLogin 的 **SCIM Provisioner with SAML (SCIM v2 Enterprise)** 应用程序都使用标准的 SCIM v2 属性名称。Bitwarden 将使用以下属性：
 
 * `active`
-* `emails`<mark style="color:red;">**ª**</mark> 或 `userName`
+* `emails` <mark style="color:red;">**ª**</mark> 或 `userName`
 * `displayName`
 * `externalId`
 

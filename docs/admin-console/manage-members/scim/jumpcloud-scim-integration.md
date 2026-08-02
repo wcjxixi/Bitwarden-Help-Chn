@@ -26,7 +26,7 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 ## 创建 JumpCloud App <a href="#create-a-jumpcloud-app" id="create-a-jumpcloud-app"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您已将此 IdP 用于 SSO 登录，请打开现有的应用程序并[跳至此步骤](jumpcloud-scim-integration.md#enable-provisioning)。否则，继续本部分以创建一个新的应用程序。
 {% endhint %}
 
@@ -77,11 +77,11 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 Bitwarden 使用标准的 SCIM v2 属性名称，但这些名称可能与 JumpCloud 属性名称不同。Bitwarden 将为每位用户使用以下属性：
 
-| Bitwarden 属性                                  | JumpCloud 默认属性                   |
-| --------------------------------------------- | -------------------------------- |
-| `active`                                      | `!suspended && !passwordExpired` |
-| `emails`<mark style="color:red;">**ª**</mark> | `email`                          |
-| `displayName`                                 | `displayName`                    |
+| Bitwarden 属性                                   | JumpCloud 默认属性                   |
+| ---------------------------------------------- | -------------------------------- |
+| `active`                                       | `!suspended && !passwordExpired` |
+| `emails` <mark style="color:red;">**ª**</mark> | `email`                          |
+| `displayName`                                  | `displayName`                    |
 
 <mark style="color:red;">**ª**</mark> - 由于 SCIM 允许用户拥有多个电子邮箱地址（以对象数组形式表示），Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
 
@@ -89,9 +89,9 @@ Bitwarden 使用标准的 SCIM v2 属性名称，但这些名称可能与 JumpCl
 
 Bitwarden 将为每个群组使用以下属性：
 
-| Bitwarden 属性                                   | JumpCloud 默认属性 |
-| ---------------------------------------------- | -------------- |
-| `displayName`                                  | `displayName`  |
-| `members`<mark style="color:red;">**ª**</mark> | `members`      |
+| Bitwarden 属性                                    | JumpCloud 默认属性 |
+| ----------------------------------------------- | -------------- |
+| `displayName`                                   | `displayName`  |
+| `members` <mark style="color:red;">**ª**</mark> | `members`      |
 
 <mark style="color:red;">**ª**</mark> - 成员资格作为对象数组发送到 Bitwarden，每个对象代表该群组中的一名成员用户。

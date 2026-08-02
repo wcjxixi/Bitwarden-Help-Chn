@@ -26,7 +26,7 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 ## 创建 SCIM App <a href="#create-a-scim-app" id="create-a-scim-app"></a>
 
-1、导航至配置 ✚**New Connection**。
+1、导航至配置 <i class="fa-circle-plus">:circle-plus:</i>**New Connection**。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7rehLEEEAvNwsBHGKqDwln/babec3f81595ead3253285229fe0e653/2024-10-09_11-29-32.png?w=1071&#x26;fm=avif" alt=""><figcaption><p>Ping Identity 创建新连接</p></figcaption></figure></div>
 
@@ -64,7 +64,7 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 1、返回 **Provisioning** 界面。
 
-2、选择 **Rules** 选项卡，然后选择 ✚**New Rule**。
+2、选择 **Rules** 选项卡，然后选择 <i class="fa-circle-plus">:circle-plus:</i>**New Rule**。
 
 3、为规则输入一个特定于应用程序的名称，然后选择 **Create Rule**。
 
@@ -72,7 +72,7 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3eKZXwtiFdQqhlUNRSm6jr/167c28c624cf7f9ceb7dc563d58c64f4/2024-10-09_14-11-35.png?w=793&#x26;fm=avif" alt=""><figcaption><p>Ping Identity 规则</p></figcaption></figure></div>
 
-5、选择 Configuration 选项卡然后添加一个 **✏️User Filter**。更多信息，请参阅 [Ping Identity 文档](https://docs.pingidentity.com/pingone/integrations/p1_add_provisioning_filter.html)。完成后选择 **Save**。
+5、选择 Configuration 选项卡然后添加一个 <i class="fa-pen">:pen:</i>**User Filter**。更多信息，请参阅 [Ping Identity 文档](https://docs.pingidentity.com/pingone/integrations/p1_add_provisioning_filter.html)。完成后选择 **Save**。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1dgfaEYambvyHm7J4WBASe/9b2245b92629e61341856c8cb197be2f/2024-10-09_14-32-31.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Ping Identity 用户筛选器</p></figcaption></figure></div>
 
@@ -82,7 +82,7 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 ## 配置群组 <a href="#provision-groups" id="provision-groups"></a>
 
-1、要分配群组，请返回 Provisioning 界面，然后选择规则 **≡Edit Group Provisioning**。
+1、要分配群组，请返回 Provisioning 界面，然后选择规则 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**Edit Group Provisioning**。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/10ztwQpTzsxZoi0vh83no6/f976a4f57d1fbe60b1f616f6114ce635/2024-10-09_15-11-57.png?w=782&#x26;fm=avif" alt=""><figcaption><p>编辑群组配置</p></figcaption></figure></div>
 
@@ -106,7 +106,7 @@ Bitwarden 和 Ping Identity **SCIM Provisioner with SAML (SCIM v2 Enterprise)** 
 #### 群组属性 <a href="#group-attributes" id="group-attributes"></a>
 
 * `displayName`（**必填**）
-* `members`<mark style="color:red;">**ª**</mark>
+* `members` <mark style="color:red;">**ª**</mark>
 * `externalId`
 
 <mark style="color:red;">**ª**</mark> - `members` 是一个对象数组，每个对象代表该群组中的一名用户。

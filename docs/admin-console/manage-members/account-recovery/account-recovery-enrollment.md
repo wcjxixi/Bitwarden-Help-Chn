@@ -4,10 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/account-recovery-enrollment/)
 {% endhint %}
 
-[账户恢复](about-account-recovery.md)可帮助组织成员重新获得对其账户的访问权限。企业策略激活后，成员需要注册该计划。注册会触发密钥交换，从而确保账户恢复的安全性。成员有两种注册方式：
+[账户恢复](about-account-recovery.md)可帮助组织成员重新获得对其账户的访问权限。此企业策略激活后，成员需要注册该计划。注册会触发密钥交换，从而确保账户恢复的安全性。成员可以通过两种方式完成注册：
 
-* [自动注册](account-recovery-enrollment.md#automatic-enrollment)是最快的选项，但仅适用于策略启用后加入的成员。
-* [自行注册](account-recovery-enrollment.md#self-enroll-in-account-recovery)允许成员通过网页 App 手动注册。
+* [自动注册](account-recovery-enrollment.md#automatic-enrollment)是最快捷的选项，但仅适用于策略启用后加入的成员。
+* [自行注册](account-recovery-enrollment.md#self-enroll-in-account-recovery)允许成员通过网页 App 手动完成注册。
 
 ## 启用企业策略 <a href="#turn-on-enterprise-policy" id="turn-on-enterprise-policy"></a>
 
@@ -20,7 +20,7 @@
 * 在新成员[进入接受状态](../user-management.md#accept)时，将自动在账户恢复中注册新成员。
 * 阻止他们从账户恢复撤销。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Bitwarden 建议打开自动注册。但自动注册仅适用于策略激活**之后**加入的成员。如果您的组织在**策略启用之前**已有成员，则这些成员必须自行注册才有资格（使用账户恢复）。
 {% endhint %}
 
@@ -30,7 +30,7 @@ Bitwarden 建议打开自动注册。但自动注册仅适用于策略激活**�
 
 如果[自动注册](account-recovery-enrollment.md#automatic-enrollment)已关闭或成员在自动注册打开之前已加入，成员必须主动选择加入。要注册账户恢复：
 
-1、从网页 App 中，选择密码库视图中的组织旁边的 **≡选项**图标。
+1、从网页 App 中，选择密码库视图中的组织旁边的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**选项**图标。
 
 2、选择**注册账户恢复**：
 

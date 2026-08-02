@@ -52,6 +52,6 @@
 
 **答：**&#x4E0D;能。家庭方案赞助只能在与赞助企业组织相同的云服务器上兑换。如果您的企业组织已从一个云服务器迁移到另一个云服务器，则必须在正确的云服务器上赞助新的家庭组织。有关迁移组织的更多信息，请参阅 [Bitwarden 迁移指南](../../more/teams-and-enterprise-migration-guide.md)。
 
-### 问：如何移除家庭组织？ <a href="#q-how-do-i-remove-a-families-organization" id="q-how-do-i-remove-a-families-organization"></a>
+### 问：如何移除家庭版组织？ <a href="#q-how-do-i-remove-a-families-organization" id="q-how-do-i-remove-a-families-organization"></a>
 
-**答：**&#x8981;移除家庭组织，请登录到属于企业组织成员的账户中，然后导航到**设置** → **免费 Bitwarden 家庭**。选择与赞助的家庭组织相关的 **⚙️**齿轮图标，然后选择**移除**。
+**答：**&#x8981;移除家庭版组织，请登录到属于企业版组织成员的账户中，然后导航到**设置** → **免费 Bitwarden 家庭**。选择与赞助的家庭版组织相关的 <i class="fa-gear-complex">:gear-complex:</i> 齿轮图标，然后选择**移除**。

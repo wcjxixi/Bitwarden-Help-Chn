@@ -14,7 +14,7 @@ Directory Connector 需要 Okta 生成的令牌的信息才能连接到您的目
 2. 选择 **Create Token** 按钮，然后给您的令牌指定一个专用于 Bitwarden 的名称（比如 `bitwartden-dc`）。
 3. 将生成的 **Token Value** 复制到剪贴板。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 您的 Token Value 不会再次显示。请将其粘贴到某个安全的地方以防丢失。
 {% endhint %}
 
@@ -31,7 +31,7 @@ Directory Connector 需要 Okta 生成的令牌的信息才能连接到您的目
 
 ## 配置同步选项 <a href="#configure-sync-options" id="configure-sync-options"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 完成配置后，请导航至 **More** 标签页，然后选择 **Clear Sync Cache** 按钮，以防止与先前的同步操作发生潜在的冲突。更多信息，请参阅[清除同步缓存](clear-sync-cache.md)。
 {% endhint %}
 
@@ -41,16 +41,7 @@ Directory Connector 需要 Okta 生成的令牌的信息才能连接到您的目
 2. 导航到 **Setting** 选项卡。
 3. 在 **Sync** 部分，根据需要配置如下选项：
 
-| 选项                                                                   | 描述                                                                          |
-| -------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| Interval                                                             | 自动同步检查的时间间隔（分钟为单位）。                                                         |
-| Remove disabled users during sync                                    | 选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。                                         |
-| Overwrite existing organization users based on current sync settings | 选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。                          |
-| More than 2000 users or groups are expected to sync                  | 如果预计同步 2000 个以上用户或群组，请选中此框。如果不勾选此框，Directory Connector 会将同步限制在 2000 个用户或群组。 |
-| Sync Users                                                           | <p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p>      |
-| User Filter                                                          | 参阅[指定同步筛选器](sync-with-okta.md#specify-sync-filters)。                        |
-| Sync Groups                                                          | <p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p>      |
-| Group Filter                                                         | 参阅[指定同步筛选器](sync-with-okta.md#specify-sync-filters)。                        |
+<table data-search="false"><thead><tr><th>选项</th><th>描述</th></tr></thead><tbody><tr><td>Interval</td><td>自动同步检查的时间间隔（分钟为单位）。</td></tr><tr><td>Remove disabled users during sync</td><td>选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。</td></tr><tr><td>Overwrite existing organization users based on current sync settings</td><td>选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。</td></tr><tr><td>More than 2000 users or groups are expected to sync</td><td>如果预计同步 2000 个以上用户或群组，请选中此框。如果不勾选此框，Directory Connector 会将同步限制在 2000 个用户或群组。</td></tr><tr><td>Sync Users</td><td><p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p></td></tr><tr><td>User Filter</td><td>参阅<a href="sync-with-okta.md#specify-sync-filters">指定同步筛选器</a>。</td></tr><tr><td>Sync Groups</td><td><p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p></td></tr><tr><td>Group Filter</td><td>参阅<a href="sync-with-okta.md#specify-sync-filters">指定同步筛选器</a>。</td></tr></tbody></table>
 
 ### 指定同步筛选器 <a href="#specify-sync-filters" id="specify-sync-filters"></a>
 
@@ -132,7 +123,7 @@ exclude:Group A|type eq "APP_GROUP"
 
 ## 测试同步 <a href="#test-a-sync" id="test-a-sync"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在测试或执行同步之前，请检查 Directory Connector 是否连接到正确的云服务器（如 US 或 EU）或自托管服务器。了解如何使用[桌面 App](directory-connector-desktop-app.md) 或 [CLI](directory-connector-cli.md) 进行检查。
 {% endhint %}
 

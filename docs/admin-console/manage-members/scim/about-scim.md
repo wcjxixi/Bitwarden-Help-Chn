@@ -29,7 +29,7 @@ Bitwarden 支持使用标准属性映射的 SCIM v2，并提供以下集成文�
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6sw1kuK7GuZ3dfQkkbs6rV/e665df6992fb880114fcef82e4e4c07c/SCIM_provisioning_URL_and_API_key.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>SCIM 配置</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 以下部分涵盖了可用于设置 SCIM 的通用信息，但 Bitwarden 建议使用以下集成文档之一：
 
 * [JumpCloud](jumpcloud-scim-integration.md)
@@ -48,7 +48,7 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 对于每个用户，Bitwarden 将使用以下属性：
 
 * 表明用户处于 `active` 状态的指示（**必填**）
-* `email`<mark style="color:red;">**ª**</mark> 或 `userName`（**必填**）
+* `email` <mark style="color:red;">**ª**</mark> 或 `userName`（**必填**）
 * `displayName`
 * `externalId`
 
@@ -61,7 +61,7 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 对于每个群组，Bitwarden 将使用以下属性：
 
 * `displayName`（**必填**）
-* `members`<mark style="color:red;">**ª**</mark>
+* `members` <mark style="color:red;">**ª**</mark>
 * `externalId`
 
 {% hint style="info" %}
@@ -85,7 +85,7 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 * 不受组织[策略](../../oversight-visibility/enterprise-policies.md)的约束
 * 不占用许可证席位
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 对于那些使用[受信任设备 SSO](../../login-with-sso/trusted-devices/) 而没有主密码的成员账户：
 
 * [从您的组织中移除它们](../revoke-remove/permanently-remove-access.md)将切断它们对 Bitwarden 账户的所有访问权限，除非该账户此前通过[账户恢复](../account-recovery/about-account-recovery.md)功能设置过主密码，且在移除前至少使用该主密码登录过一次。
@@ -123,7 +123,7 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 
 ## SCIM 实施前的对象更新 <a href="#updates-to-pre-scim-objects" id="updates-to-pre-scim-objects"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 如果您在实施 SCIM 之前使用 Directory Connector，请务必在启用 SCIM 配置之前将 Directory Connector 关闭。
 {% endhint %}
 

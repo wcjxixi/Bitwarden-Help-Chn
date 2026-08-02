@@ -28,7 +28,7 @@ Directory Connector 需要 OneLogin 生成的 API 凭据信息才能连接到您
 
 ## 配置同步选项 <a href="#configure-sync-options" id="configure-sync-options"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 完成配置后，请导航至 **More** 标签页，然后选择 **Clear Sync Cache** 按钮，以防止与先前的同步操作发生潜在的冲突。更多信息，请参阅[清除同步缓存](clear-sync-cache.md)。
 {% endhint %}
 
@@ -38,18 +38,7 @@ Directory Connector 需要 OneLogin 生成的 API 凭据信息才能连接到您
 2. 导航到 **Setting** 选项卡。
 3. 在 **Sync** 部分，根据需要配置如下选项：
 
-| 选项                                                                                             | 描述                                                                                                                                                                             |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Interval                                                                                       | 自动同步检查的时间间隔（分钟为单位）。                                                                                                                                                            |
-| Remove disabled users during sync                                                              | 选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。                                                                                                                                            |
-| Overwrite existing organization users based on current sync settings                           | <p>选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。</p><p></p><p><strong>推荐用于 OneLogin 目录。</strong></p>                                                                      |
-| More than 2000 users or groups are expected to sync                                            | 如果预计同步 2000 个以上用户或群组，请选中此框。如果不勾选此框，Directory Connector 会将同步限制在 2000 个用户或群组。                                                                                                    |
-| If a user has no email address, combine a username prefix with a suffix value to form an email | <p>选中此框可为没有电子邮箱地址的用户生成有效的电子邮箱选项。<strong>没有真实或没有生成电子邮箱地址的用户将被 Directory Connector 跳过。</strong></p><p></p><p>生成的电子邮箱 = <code>username</code> + <strong>Email Suffix</strong></p> |
-| Email Suffix                                                                                   | 用于生成电子邮箱地址时创建后缀的字符串（ `@example.com`）。                                                                                                                                          |
-| Sync Users                                                                                     | <p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p>                                                                                                         |
-| User Filter                                                                                    | 参阅指定[同步筛选器](sync-with-onelogin.md#specify-sync-filters)。                                                                                                                       |
-| Sync Groups                                                                                    | <p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p><p></p><p><strong>请注意，Directory Connector 使用 OneLogin  <code>role</code> 值来创建 Bitwarden 群组。</strong></p> |
-| Group Filter                                                                                   | 参阅[指定同步筛选器](sync-with-onelogin.md#specify-sync-filters)。                                                                                                                       |
+<table data-search="false"><thead><tr><th>选项</th><th>描述</th></tr></thead><tbody><tr><td>Interval</td><td>自动同步检查的时间间隔（分钟为单位）。</td></tr><tr><td>Remove disabled users during sync</td><td>选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。</td></tr><tr><td>Overwrite existing organization users based on current sync settings</td><td><p>选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。</p><p></p><p><strong>推荐用于 OneLogin 目录。</strong></p></td></tr><tr><td>More than 2000 users or groups are expected to sync</td><td>如果预计同步 2000 个以上用户或群组，请选中此框。如果不勾选此框，Directory Connector 会将同步限制在 2000 个用户或群组。</td></tr><tr><td>If a user has no email address, combine a username prefix with a suffix value to form an email</td><td><p>选中此框可为没有电子邮箱地址的用户生成有效的电子邮箱选项。<strong>没有真实或没有生成电子邮箱地址的用户将被 Directory Connector 跳过。</strong></p><p></p><p>生成的电子邮箱 = <code>username</code> + <strong>Email Suffix</strong></p></td></tr><tr><td>Email Suffix</td><td>用于生成电子邮箱地址时创建后缀的字符串（ <code>@example.com</code>）。</td></tr><tr><td>Sync Users</td><td><p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p></td></tr><tr><td>User Filter</td><td>参阅指定<a href="sync-with-onelogin.md#specify-sync-filters">同步筛选器</a>。</td></tr><tr><td>Sync Groups</td><td><p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p><p></p><p><strong>请注意，Directory Connector 使用 OneLogin  <code>role</code> 值来创建 Bitwarden 群组。</strong></p></td></tr><tr><td>Group Filter</td><td>参阅<a href="sync-with-onelogin.md#specify-sync-filters">指定同步筛选器</a>。</td></tr></tbody></table>
 
 ### 指定同步筛选器 <a href="#specify-sync-filters" id="specify-sync-filters"></a>
 
@@ -85,7 +74,7 @@ exclude:Role A,Role B
 
 ## 测试同步 <a href="#test-a-sync" id="test-a-sync"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在测试或执行同步之前，请检查 Directory Connector 是否连接到正确的云服务器（如 US 或 EU）或自托管服务器。了解如何使用[桌面 App](directory-connector-desktop-app.md) 或 [CLI](directory-connector-cli.md) 进行检查。
 {% endhint %}
 

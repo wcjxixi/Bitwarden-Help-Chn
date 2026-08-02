@@ -13,7 +13,7 @@
 * 管理员重置该成员的主密码、两步登录方式，或两者同时重置。Bitwarden 随后会向该成员的账户邮箱发送一个恢复链接。
 * 成员收到邮件中的恢复链接后，即可重置其主密码和/或设置新的两步登录方式。
 
-账户恢复仅影响在 Bitwarden 内配置的凭据。它**不会绕过 SSO** 或您在 IdP 处配置的任何双重身份验证。如果您的组织[要求 SSO 身份验证](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)，成员在恢复后仍需通过这些方式访问其账户。
+账户恢复仅影响在 Bitwarden 内配置的凭据。它**不会绕过 SSO** 或由您的 IdP 配置的任何双重身份验证。如果您的组织[要求 SSO 身份验证](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)，成员在恢复后仍需通过这些方式访问其账户。
 
 {% hint style="info" %}
 账户恢复不会恢复已删除的账户。[删除账户](../revoke-remove/delete-member-accounts.md)是永久性的，无法撤消。

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/schedule-directory-sync/)
 {% endhint %}
 
-对于使用 Directory Connector CLI 的组织，可以根据定义的时间间隔安排自动同步，以替代使用桌面 App 的**间隔**设置。这在无头环境或桌面 App 不能在后台运行的情况下尤其适用。
+对于使用 [Directory Connector CLI](directory-connector-cli.md) 的组织，可以根据定义的时间间隔安排自动同步，以替代使用桌面 App 的**间隔**设置。这在无头环境或桌面 App 不能在后台运行的情况下尤其适用。
 
 要调度同步，请在类 Unix 环境（包括 Linux 和 MacOS）中使用 **Cron**，在 Windows 环境中使用**任务计划程序**：
 
@@ -20,7 +20,7 @@
 
 为避免会话超时，我们建议创建一个 Shell 脚本通过 cron 来运行。此脚本应安全地读取您的 `client_secret` 以完成登录，然后运行 `bwdc sync` 命令并将输出写入 `bwdc.log` 文件。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 需要从多个目录同步吗？在同步脚本中，您可以指定多个文件夹，每个文件夹都必须包含一个带有目录同步设置的 `data.json` 文件。
 
 然后，您可以通过执行多个 `bwdc sync` 操作来指定要同步的每个目录，例如：
@@ -69,7 +69,7 @@ bwdc sync
 # * * * * * <command to execute>
 ```
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您还不熟悉 cron 作业调度表达式，请查看 [https://crontab.guru/](https://crontab.guru/) 以获取帮助。
 
 请注意，这是第三方资源，并非由 Bitwarden 运营或维护。
@@ -87,7 +87,7 @@ bwdc sync
 
 为了避免会话超时，您需要创建一个脚本以作为任务计划程序操作运行。此脚本应安全地读取您的 `client_secret` 以完成登录，然后运行 `bwdc sync` 命令并将输出写入 `bwdc.log` 文件。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 需要从多个目录同步吗？在同步脚本中，您可以指定多个文件夹，每个文件夹都必须包含一个带有目录同步设置的 `data.json` 文件。
 
 然后，您可以通过执行多个 `bwdc sync` 操作来指定要同步的每个目录，例如：
@@ -98,7 +98,7 @@ BITWARDENCLI_CONNECTOR_APPDATA_DIR="./instance-2" bwdc sync
 ```
 {% endhint %}
 
-### 创建一个任务
+### 创建任务
 
 作为被允许的 `bwdc` 用户：
 
@@ -111,7 +111,7 @@ BITWARDENCLI_CONNECTOR_APPDATA_DIR="./instance-2" bwdc sync
 
 3、选择**触发器**选项卡并选择**新建...** 按钮以创建适合您的目录同步需求的触发器。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 例如，您可以创建一个每周日晚上 8:00 运行的每周触发器：
 
 

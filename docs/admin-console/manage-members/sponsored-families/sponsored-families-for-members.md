@@ -14,7 +14,7 @@
 * 为所有 6 位用户提供所有高级 Bitwarden 功能，包括[高级两步登录方式](../../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)、[加密文件附件](../../../password-manager/your-vault/vault-items/file-attachments.md)、[紧急访问](../../../account/emergency-access/about-emergency-access.md)等。
 * 组织不想提供此功能时，可以使用[策略](../../oversight-visibility/enterprise-policies.md#remove-free-bitwarden-families-sponsorship)将其停用。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的企业版组织是自托管的，则管理员需要先完成[这些步骤](../../../self-hosting/deploy-and-configure/optional-features/self-hosting-families-sponsorships.md)，然后员工才能兑换其家庭版赞助。
 {% endhint %}
 
@@ -35,7 +35,7 @@
 * 如果您通过多个组织获得了赞助，请选择**提供了免费家庭**的组织来兑换。
 * 输入您将用于家庭版组织账户的**个人电子邮箱**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您拥有与工作账户分开的个人账户，请使用该账户的电子邮箱地址。否则，您将在此过程的稍后创建一个新的账户。
 
 无论哪种情况，您的个人账户与提供赞助的组织[**必须位于同一区域**](../../../account/choose-my-server.md)。如果您在正确的区域已经拥有家庭版组织，则可以将赞助应用于该订阅。如果您不确定需要使用哪个区域，请联系管理员。
@@ -83,3 +83,10 @@
 {% hint style="info" %}
 兑换赞助后，您仍可能会在个人收件箱中收到有关您的家庭版组织的续订提醒电子邮件。只要您仍然是该赞助企业版组织的活跃成员，您就可以忽略这些电子邮件。如果您不再是其成员，请导航至**计费** → **付款方式**，然后检查付款方式是否有效。
 {% endhint %}
+
+## 下一步 <a href="#next-steps" id="next-steps"></a>
+
+您设置了赞助的家庭组织后：
+
+* 了解[管理家庭组织](../../../../courses/password-manager/personal/family-plan/family-admin.md)的基础知识。
+* 深入了解[如何使用组织与家人或朋友共享数据](../../organizations-quick-start.md)。

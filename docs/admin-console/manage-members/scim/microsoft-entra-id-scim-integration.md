@@ -12,6 +12,12 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 本文将帮助您配置与 Azure 的 SCIM 集成。配置过程需要同时使用 Bitwarden 网页密码库和 Azure 门户。在进行操作时，我们建议您同时准备好这两者，并按照文档中的顺序步骤完成操作。
 
+{% hint style="success" icon="lightbulb" %}
+已经是专家了吗？跳过本文中的说明，直接下载快速配置指南，即可使用 Entra ID 设置 SSO 和 SCIM。
+
+<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>[快速参考指南](https://bitwarden.com/assets/1Qe8NasMRjmKyO575a9i5w/7b8fb2eb28b1939149868eca0ca38797/entra-id-guide.pdf)
+{% endhint %}
+
 ## 启用 SCIM <a href="#enable-scim" id="enable-scim"></a>
 
 {% hint style="info" %}
@@ -26,7 +32,7 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 ## 创建企业应用程序 <a href="#create-an-enterprise-application" id="create-an-enterprise-application"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您已将此 IdP 用于 SSO 登录，请打开现有的企业应用程序并[跳至此步骤](microsoft-entra-id-scim-integration.md#enable-provisioning)。否则，继续本部分以创建一个新的应用程序。
 {% endhint %}
 
@@ -34,11 +40,11 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/69h0vJlyvkF5J6tsKfQ7jd/4994ed3200bdce4b5faea87e1ac2de83/Enterprise_application.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>企业应用程序</p></figcaption></figure></div>
 
-选择 **➕New application** 按钮：
+选择 <i class="fa-plus">:plus:</i>**New application** 按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7f6vbFmJRpfwDXbjHNKp1i/c314ef0bcbb68306858fa0f76da1e369/new_application.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>创建新的应用程序</p></figcaption></figure></div>
 
-在浏览 **Microsoft Entra ID** 图库界面，选择 **➕Create your own application** 按钮：
+在浏览 **Microsoft Entra ID** 图库界面，选择 <i class="fa-plus">:plus:</i>**Create your own application** 按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6oF8nrPsl7riqg3jWFDk7N/5cf08062f5656e0aee44ea627a2071c5/Create_your_own_application.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>创建您自己的应用程序</p></figcaption></figure></div>
 
@@ -52,7 +58,7 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3FNghuESyQaW6EB4WfANSy/f0a1ef6cae75ccc9412e5f0e1396b5f1/Select_Provisioning.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>选择 Provisioning</p></figcaption></figure></div>
 
-1. 选择 **➕New configuration** 按钮。
+1. 选择 <i class="fa-plus">:plus:</i>**New configuration** 按钮。
 2. 在 **Select authentication method** 下拉菜单中，选择 **Bearer authentication**。
 3. 在 **Tenant URL** 字段中输入您的 SCIM URL（[了解更多](microsoft-entra-id-scim-integration.md#enable-scim)）。
 4. 在 **Secret Token** 字段中输入您的 SCIM API 密钥（[了解更多](microsoft-entra-id-scim-integration.md#enable-scim)）。
@@ -69,12 +75,12 @@ Bitwarden 使用标准的 SCIM v2 属性名称，尽管这些名称可能与 Mic
 
 如果您希望目录中的用户对象与 Bitwarden 同步，您可以启用或禁用 **Provision Microsoft Entra ID Users**。默认情况下启用此功能。如果您希望根据下表进行更改，请选择 **Provision Microsoft Entra ID Users** 链接以自定义用户对象发送给 Bitwarden 的属性：
 
-| Bitwarden 属性                                               | 默认 AAD 属性                                                     |
-| ---------------------------------------------------------- | ------------------------------------------------------------- |
-| `active`                                                   | `Switch([IsSoftDeleted], , "False", "True", "True", "False")` |
-| `emails`<mark style="color:red;">**ª**</mark> 或 `userName` | `mail` 或 `userPrincipalName`                                  |
-| `displayName`                                              | `displayName`                                                 |
-| `externalId`                                               | `mailNickname`                                                |
+| Bitwarden 属性                                                | 默认 AAD 属性                                                     |
+| ----------------------------------------------------------- | ------------------------------------------------------------- |
+| `active`                                                    | `Switch([IsSoftDeleted], , "False", "True", "True", "False")` |
+| `emails` <mark style="color:red;">**ª**</mark> 或 `userName` | `mail` 或 `userPrincipalName`                                  |
+| `displayName`                                               | `displayName`                                                 |
+| `externalId`                                                | `mailNickname`                                                |
 
 <mark style="color:red;">**ª**</mark> - 由于 SCIM 允许用户拥有多个电子邮箱地址（以对象数组形式表示），Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
 
@@ -87,7 +93,7 @@ Bitwarden 使用标准的 SCIM v2 属性名称，尽管这些名称可能与 Mic
 * 对于 `externalId` 到 `objectId` 的映射，将 **Matching precedence** 设置为 1。
 * 对于 `userName`（**customerappsso 属性**）到 `userPrincipalName` 或 `mail`（**Microsoft Entra ID 属性**）的映射，将 **Matching precedence** 设置为 2。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 如果在用户已通过 SCIM 同步到 Bitwarden 后实施此映射策略，请注意，这些已同步的用户将不会拥有由 Entra ID 对象 ID 设置的外部 ID。对于这些用户，请使用[公共 API](../../bitwarden-public-api.md) 的 `/public/members/{id}` 端点来设置其外部 ID。
 {% endhint %}
 
@@ -114,7 +120,7 @@ Bitwarden 使用标准的 SCIM v2 属性名称，尽管这些名称可能与 Mic
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5xXgCDxrB4wVlZmfsKmi2L/cad020d84786fa009a6636b01ce5d918/remove-name-2.png?w=1338&#x26;fm=avif" alt=""><figcaption><p>企业应用程序中的用户和群组</p></figcaption></figure></div>
 
-选择 ✚**Add user/group** 以在用户或群组级别分配对 SCIM 应用程序的访问权限。以下部分说明在 Azure 中修改用户和群组将如何影响其在 Bitwarden 中的对应项：
+选择 <i class="fa-plus">:plus:</i>**Add user/group** 以在用户或群组级别分配对 SCIM 应用程序的访问权限。以下部分说明在 Azure 中修改用户和群组将如何影响其在 Bitwarden 中的对应项：
 
 ### 用户 <a href="#users" id="users"></a>
 

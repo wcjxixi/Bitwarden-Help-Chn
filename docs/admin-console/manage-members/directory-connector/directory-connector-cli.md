@@ -16,9 +16,9 @@ Directory Connector CLI 适合在无法使用桌面 GUI 的环境中，或者如
 
 1、从以下链接之一下载 CLI：
 
-* <img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line"> [Windows CLI](https://bitwarden.com/download/?app=connector\&platform=windows\&variant=cli-zip)
-* <img src="../../../../.gitbook/assets/apple-24.png" alt="" data-size="line"> [macOS CLI](https://bitwarden.com/download/?app=connector\&platform=macos\&variant=cli-zip)
-* <img src="../../../../.gitbook/assets/linux-24.png" alt="" data-size="line"> [Linux CLI](https://bitwarden.com/download/?app=connector\&platform=linux\&variant=cli-zip)
+* <i class="fa-windows">:windows:</i> [Windows CLI](https://bitwarden.com/download/?app=connector\&platform=windows\&variant=cli-zip)
+* <i class="fa-apple">:apple:</i> [macOS CLI](https://bitwarden.com/download/?app=connector\&platform=macos\&variant=cli-zip)（仅限 ARM64）
+* <i class="fa-linux">:linux:</i> [Linux CLI](https://bitwarden.com/download/?app=connector\&platform=linux\&variant=cli-zip)
 
 2、解压缩 `.zip` 并将其文件（`bwdc` 和 `keytar.node`）移动到您的  `$PATH` 中的 `/usr/local/bin` 或其他目录。请注意，`keytar.node` **必须**与主 `bwdc` 可执行文件位于同一目录中。
 
@@ -54,7 +54,7 @@ bwdc --help
 7、当正确配置了目录和同步选项，并且 `bwdc test` 产生了预期的结果，请运行 `bwdc sync` 命令以启动实时同步操作。
 
 {% hint style="info" %}
-可在 `bdwc` 命令中加入 --pretty 标志，以修改输出内容，使其更易于阅读。
+可在 `bdwc` 命令中加入 `--pretty` 标志，以修改输出内容，使其更易于阅读。
 {% endhint %}
 
 ## 命令参考 <a href="#commands-reference" id="commands-reference"></a>
@@ -163,15 +163,7 @@ bwdc config <setting> <value>
 
 可用的选项包括：
 
-| 选项                           | 描述                                                                                        |
-| ---------------------------- | ----------------------------------------------------------------------------------------- |
-| `server <server-url>`        | 您的自托管安装的 URL（例如 `https://business.bitwarden.com` ）或 EU 服务器（`https://vault.bitwarden.eu`）。 |
-| `directory <directory-type>` | 使用的目录的类型。请参阅以下表格以获取枚举值。                                                                   |
-| `ldap.password <password>`   | 用于连接到 LDAP 服务器的密码。                                                                        |
-| `entra.key <key>`            | Entra ID 机密密钥。                                                                            |
-| `gsuite.key <key>`           | Google Workspace/GSuite 私钥。                                                               |
-| `okta.token <token>`         | Okta 令牌。                                                                                  |
-| `onelogin.secret <secret>`   | OneLogin 客户端密钥。                                                                           |
+<table data-search="false"><thead><tr><th>选项</th><th>描述</th></tr></thead><tbody><tr><td><code>server &#x3C;server-url></code></td><td>您的自托管安装的 URL（例如 <code>https://business.bitwarden.com</code> ）或 EU 服务器（<code>https://vault.bitwarden.eu</code>）。</td></tr><tr><td><code>directory &#x3C;directory-type></code></td><td>使用的目录的类型。请参阅以下表格以获取枚举值。</td></tr><tr><td><code>ldap.password &#x3C;password></code></td><td>用于连接到 LDAP 服务器的密码。</td></tr><tr><td><code>entra.key &#x3C;key></code></td><td>Entra ID 机密密钥。</td></tr><tr><td><code>gsuite.key &#x3C;key></code></td><td>Google Workspace/GSuite 私钥。</td></tr><tr><td><code>okta.token &#x3C;token></code></td><td>Okta 令牌。</td></tr><tr><td><code>onelogin.secret &#x3C;secret></code></td><td>OneLogin 客户端密钥。</td></tr></tbody></table>
 
 #### **`directory-type`** 值 <a href="#directory-type-values" id="directory-type-values"></a>
 
@@ -211,7 +203,7 @@ bwdc update
 
 如果发现新版本，此命令将返回新版本的下载 URL 地址。**Directory Connector CLI 不会自动更新**。您需要使用此 URL 手动下载新版本。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 如果您同时使用 CLI 和桌面 App，确保它俩的版本是匹配的，这非常重要。运行两个不同版本的 Directory Connector，可能会导致意外问题。
 
 使用全局选项 `--version` 查看 Directory Connector CLI 的版本。

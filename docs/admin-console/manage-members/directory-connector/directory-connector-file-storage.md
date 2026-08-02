@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/directory-sync-shared/)
 {% endhint %}
 
-桌面 App 和 CLI [共享数据库和配置](directory-connector-file-storage.md)，因此不建议在一台机器上**同时**使用。建议使用[桌面 App](directory-connector-desktop-app.md) 完成配置和测试，然后使用 [CLI](directory-connector-cli.md) [调度自动同步](schedule-a-sync.md)到生产组织。
+桌面 App 和 CLI [共享数据库和配置](directory-connector-file-storage.md)，因此不建议在一台机器上**同时**使用。建议使用[桌面 App](directory-connector-desktop-app.md) 完成配置和测试，然后使用 [CLI](directory-connector-cli.md) [调度自动同步](schedule-a-sync.md)到您的生产组织。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 我们建议在调整 Directory Connector 配置文件之前使用桌面 App 或 CLI，因为**无法通过该文件设置 Directory Connector 的全部内容**。密钥或机密等身份验证的值必须通过[桌面 App](directory-connector-desktop-app.md) 或 [CLI](directory-connector-cli.md) 设置。
 {% endhint %}
 
@@ -19,9 +19,9 @@ Directory Connector 配置文件 (`data.json`) 包含可以直接编辑的对象
 
 无法通过 `data.json` 文件设置 Directory Connector 的全部内容。例如密钥或密码等用于身份验证的值，这些值必须通过[桌面 App](directory-connector-desktop-app.md) 或 [CLI](directory-connector-cli.md) 来设置。
 
-**⬇️**[下载示例配置文件](https://bitwarden.com/assets/1Bkzdf50jZRPq0MRJ85FPi/68b92adf2f5399dc50df1b897a0c0729/data.json)
+<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>[下载示例配置文件](https://bitwarden.com/assets/1Bkzdf50jZRPq0MRJ85FPi/68b92adf2f5399dc50df1b897a0c0729/data.json)
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 避免在 Directory Connector 桌面 App 或 CLI 可执行文件运行时打开或修改 `data.json` 文件。
 {% endhint %}
 
@@ -35,7 +35,7 @@ Directory Connector 配置文件 (`data.json`) 包含可以直接编辑的对象
 * macOS：`~/Library/Application Support/Bitwarden Directory Connector`
 * Linux：`~/.config/Bitwarden Directory Connector`
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 当使用 Directory Connector CLI 时，运行 `data-file` 命令来获取 `data.json` 的绝对路径。
 {% endhint %}
 
