@@ -198,7 +198,7 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 
 4、选择 **Bitwarden** 作为目标位置，然后点击**继续**。
 
-5、点击 **"Bitwarden" 中的继续**。
+5、点击**在 “Bitwarden” 中继续**。
 
 6、Bitwarden App 将会打开。点击**继续**以确认导入。
 

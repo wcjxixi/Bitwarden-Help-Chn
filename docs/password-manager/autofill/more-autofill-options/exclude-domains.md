@@ -8,7 +8,7 @@ Bitwarden 浏览器扩展可配置为排除指定站点，使其不触发[自动
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4vsurEuH5deik26BWn4n1p/82757186b081890fbe92b4d73baeae53/screenshot_7.png?w=426&#x26;fm=avif" alt=""><figcaption><p>询问添加登录</p></figcaption></figure></div>
 
-要配置排除域名，请导航到 **️设置** → **通知** → **排除域名**：
+要配置排除域名，请导航到 **设置** → **通知** → **排除域名**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/qUGIVQR379ac3R2dXdoy8/06b4dec0b9e02911903052789c44723c/2024-12-03_11-00-24.png?w=970&#x26;fm=avif" alt=""><figcaption><p>排除域名配置</p></figcaption></figure></div>
 

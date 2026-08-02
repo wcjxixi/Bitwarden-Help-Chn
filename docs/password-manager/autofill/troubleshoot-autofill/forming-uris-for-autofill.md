@@ -1,16 +1,16 @@
-# 用于自动填充的 URI 的结构
+# 用于自动填充的 URI
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/uri-match-detection/)
 {% endhint %}
 
-在登录项目中包含统一资源标识符 (URI) 以使用[自动填充](../autofill-from/autofill-from-browser-extensions.md)，然后选择 ⮫**启动**图标直接从您的密码库打开网站或 App。URI 是一串字符，用于标识网站地址 (URL)、服务器 IP 地址、[移动 App 包 ID](forming-uris-for-autofill.md#uris-for-mobile-apps) 等。
+在登录项目中包含统一资源标识符 (URI) 以使用[自动填充](../autofill-from/autofill-from-browser-extensions.md)，然后选择 <i class="fa-arrow-up-right-from-square">:arrow-up-right-from-square:</i>**启动**图标直接从您的密码库打开网站或 App。URI 是一串字符，用于标识网站地址 (URL)、服务器 IP 地址、[移动 App 包 ID](forming-uris-for-autofill.md#uris-for-mobile-apps) 等。
 
 ## 将 URI 保存到登录项目 <a href="#save-uris-in-login-items" id="save-uris-in-login-items"></a>
 
 当您创建或编辑登录项目时，请将其输入到**网站 (URI)** 字段中。当浏览器扩展[自动保存](../autofill-from/autosave-from-browser-extensions.md)新登录时，会自动填充网站的 URI。
 
-您可以将多个 URI 添加到单个登录项目。要重新排序，请在网页 App 或浏览器扩展中编辑项目，然后将 URI 拖放到您的首选顺序中：
+您可以将多个 URI 添加到单个登录项目。要重新排序，请在网页 App 或浏览器扩展中编辑项目，然后通过拖放将 URI 调整为您偏好的顺序：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/aDbOEJ6x8G44gkDYcuHJ6/dfef7ac49894805dd0e1e718452e6a60/2025-03-25_09-45-56.png?w=967&#x26;fm=avif" alt=""><figcaption><p>编辑网站 (URI) 字段</p></figcaption></figure></div>
 
@@ -18,7 +18,7 @@
 
 您可以使用浏览器扩展来自动填充与您尝试登录的网站没有匹配 URI 的登录项目。
 
-1、打开浏览器扩展并找到您要填充的登录项目。该项目可以被搜索，或位于**所有项目**列表中。选择 **≡**&#x83DC;单然后选择**自动填充**。确认自动填充界面将显示在浏览器中。此界面将显示保存到登录项目的所有 URI，以及您当前所在网站的 URI。
+1、打开浏览器扩展并找到您要填充的登录项目。该项目可以被搜索，或位于**所有项目**列表中。选择 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 菜单然后选择**自动填充**。确认自动填充界面将显示在浏览器中。此界面将显示保存到登录项目的所有 URI，以及您当前所在网站的 URI。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/67h2UzB5cit1oVpEKTUcVs/dfeadfd6749961b76fb9746a36cc9085/2025-12-04_09-37-06.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>确认自动填充</p></figcaption></figure></div>
 
@@ -26,12 +26,12 @@
 
 ### URI 方案格式 <a href="#format-uri-schemes" id="format-uri-schemes"></a>
 
-格式良好的 URI 在开头应包含一个方案，例如 `https://` 方案用来安全地引用网站地址。如果未指定方案，则假定为 `http://`。
+格式良好的 URI 在开头应包含一个方案，例如 `https://` 方案，以安全地引用网站地址。如果未指定方案，则假定为 `http://`。
 
 方案包括：
 
-* `http://` 或 `https://` 引用网站地址（例如：`https://www.github.com`）
-* `androidapp://` 引用 Android App 的包 ID 或名称（例如：`androidapp://com.instagram.android`）
+* `http://` 或 `https://`：用于引用网站地址（例如：`https://www.github.com`）
+* `androidapp://`：用于引用 Android App 的包 ID 或名称（例如：`androidapp://com.instagram.android`）
 
 ### 查找移动 App URI <a href="#find-uris-for-mobile-apps" id="find-uris-for-mobile-apps"></a>
 
@@ -41,13 +41,13 @@
 {% tab title="iOS" %}
 在 iOS 上，查找原生应用程序 URI 的最简单方法是：
 
-1. 在 App 的登录界面，点击 **🔑密码**打开 Bitwarden。
-2. 打开 Bitwarden 后，选择屏幕右上角的 ✚图标。
+1. 在 App 的登录界面，点击 <i class="fa-key">:key:</i>**密码**打开 Bitwarden。
+2. 打开 Bitwarden 后，选择屏幕右上角的 <i class="fa-plus">:plus:</i>图标。
 3. URI 将自动包含到新的密码库项目中（如果 App 允许），可以将其复制并粘贴到任何现有的登录项目中。
 {% endtab %}
 
 {% tab title="Android" %}
-{% hint style="danger" %}
+{% hint style="warning" %}
 在 Android 上，Password Manager 使用包名称（例如 `com.google.android.gm`）在已安装的应用程序中自动填充。对于已安装的应用程序，请务必**仅安装并自动填充来自受信任来源**（例如 Google Play Store 或 F-Droid）**的应用程序**，
 
 对于 Google Play Store 或 F-Droid 等外部​​来源，Android 不强制包名称的唯一性。这意味着恶意开发人员可以创建和分发旨在获取使用与官方知名应用程序相同的包名称（例如 `com.google.android.gm`）的凭据的应用程序。此类申请将通过自动填充提供，但您可以通过以下方式保护自己：
@@ -78,7 +78,7 @@ Android 版本 13 及更高版本支持启动应用程序。
 
 所有新登录项目的默认 URI 匹配方式是[**基础域名**](forming-uris-for-autofill.md#base-domain)。要更改您的账户的默认匹配检测：
 
-1. 转到 **⚙️设置**。
+1. 转到 <i class="fa-gear-complex">:gear-complex:</i>**设置**。
 2. 选择**自动填充**。
 3. 从**默认 URI 匹配检测**下拉菜单中选择您的首选方式。
 
@@ -106,12 +106,12 @@ Android 版本 13 及更高版本支持启动应用程序。
 
 例如，URI 为 `https://google.com`，使用基础域名匹配检测：
 
-| URL                           | 自动填充？  |
-| ----------------------------- | ------ |
-| `http://google.com`           | **✔︎** |
-| `https://accounts.google.com` | **✔︎** |
-| `https://google.net`          | **✘**  |
-| `http://yahoo.com`            | **✘**  |
+| URL                           | 自动填充？                           |
+| ----------------------------- | ------------------------------- |
+| `http://google.com`           | <i class="fa-check">:check:</i> |
+| `https://accounts.google.com` | <i class="fa-check">:check:</i> |
+| `https://google.net`          | <i class="fa-xmark">:xmark:</i> |
+| `http://yahoo.com`            | <i class="fa-xmark">:xmark:</i> |
 
 {% hint style="info" %}
 带有本地 TLD（例如 `http://mysite.local` 或 `https://mysite.lan`）或单术语主机名（例如 `http://localdevice`）URI 的用于自动填充的登录项目，将无法使用基础域名检测。我们建议使用[主机匹配](forming-uris-for-autofill.md#host)。
@@ -132,22 +132,22 @@ Android 版本 13 及更高版本支持启动应用程序。
 
 例如，URI 为 `https://sub.domain.com:4000`，使用主机匹配检测：
 
-| URL                                     | 自动填充？  |
-| --------------------------------------- | ------ |
-| `http://sub.domain.com:4000`            | **✔︎** |
-| `https://sub.domain.com:4000/page.html` | **✔︎** |
-| `https://domain.com`                    | **✘**  |
-| `https://sub.domain.com`                | **✘**  |
-| `https://sub2.sub.domain.com:4000`      | **✘**  |
-| `https://sub.domain.com:5000`           | **✘**  |
+| URL                                     | 自动填充？                           |
+| --------------------------------------- | ------------------------------- |
+| `http://sub.domain.com:4000`            | <i class="fa-check">:check:</i> |
+| `https://sub.domain.com:4000/page.html` | <i class="fa-check">:check:</i> |
+| `https://domain.com`                    | <i class="fa-xmark">:xmark:</i> |
+| `https://sub.domain.com`                | <i class="fa-xmark">:xmark:</i> |
+| `https://sub2.sub.domain.com:4000`      | <i class="fa-xmark">:xmark:</i> |
+| `https://sub.domain.com:5000`           | <i class="fa-xmark">:xmark:</i> |
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 在使用[基于键盘的建议](../autofill-from/autofill-from-ios.md#keyboard-auto-fill)时，iOS 将始终使用基础域匹配自动填充建议。登录时打开 Bitwarden App，将允许您手动选择适当的 App 进行自动填充。
 {% endhint %}
 
 ### 开始于 <a href="#starts-with" id="starts-with"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **开始于**是一种高级选项，如果使用不当可能会非常危险。如果您不清楚自己在做什么，请勿使用此选项。
 {% endhint %}
 
@@ -155,17 +155,17 @@ Android 版本 13 及更高版本支持启动应用程序。
 
 例如，URI 为 `https://sub.domain.com/path/`，使用开始于匹配检测：
 
-| URL                                                  | 自动填充？  |
-| ---------------------------------------------------- | ------ |
-| `https://sub.domain.com/path/`                       | **✔︎** |
-| `https://sub.domain.com/path/page.html`              | **✔︎** |
-| `https://sub.domain.com`                             | **✘**  |
-| `https://sub.domain.com:4000/path/page.html`（被端口阻断了） | **✘**  |
-| `https://sub.domain.com/path`（缺少斜杠）                  | **✘**  |
+| URL                                                  | 自动填充？                           |
+| ---------------------------------------------------- | ------------------------------- |
+| `https://sub.domain.com/path/`                       | <i class="fa-check">:check:</i> |
+| `https://sub.domain.com/path/page.html`              | <i class="fa-check">:check:</i> |
+| `https://sub.domain.com`                             | <i class="fa-xmark">:xmark:</i> |
+| `https://sub.domain.com:4000/path/page.html`（被端口阻断了） | <i class="fa-xmark">:xmark:</i> |
+| `https://sub.domain.com/path`（缺少斜杠）                  | <i class="fa-xmark">:xmark:</i> |
 
 ### 正则表达式 <a href="#regular-expression" id="regular-expression"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **正则表达式**是一种高级选项，如果使用不当可能会非常危险。如果您不清楚自己在做什么，请勿使用此选项。
 {% endhint %}
 
@@ -175,13 +175,13 @@ Android 版本 13 及更高版本支持启动应用程序。
 
 URI 为 `^https://.*google\.com$`，使用正则表达式匹配检测：
 
-| URL                                       | 自动填充？  |
-| ----------------------------------------- | ------ |
-| `https://google.com`                      | **✔︎** |
-| `https://sub.google.com`                  | **✔︎** |
-| `https://malicious-site.com?q=google.com` | **✔︎** |
-| `http://google.com`                       | **✘**  |
-| `https://yahoo.com`                       | **✘**  |
+| URL                                       | 自动填充？                           |
+| ----------------------------------------- | ------------------------------- |
+| `https://google.com`                      | <i class="fa-check">:check:</i> |
+| `https://sub.google.com`                  | <i class="fa-check">:check:</i> |
+| `https://malicious-site.com?q=google.com` | <i class="fa-check">:check:</i> |
+| `http://google.com`                       | <i class="fa-xmark">:xmark:</i> |
+| `https://yahoo.com`                       | <i class="fa-xmark">:xmark:</i> |
 
 这可能比预期的要匹配得更多。考虑避免使用句号 (`.`)，除非转义 (`\`)，否则会匹配任意字符。
 
@@ -189,13 +189,13 @@ URI 为 `^https://.*google\.com$`，使用正则表达式匹配检测：
 
 URI 为 `^https://[a-z]+\.wikipedia\.org/w/index\.php`，使用正则表达式匹配检测：
 
-| URL                                                                               | 自动填充？  |
-| --------------------------------------------------------------------------------- | ------ |
-| `https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Bitwarden` | **✔︎** |
-| `https://pl.wikipedia.org/w/index.php?title=Specjalna:Zaloguj&returnto=Bitwarden` | **✔︎** |
-| `https://en.wikipedia.org/w/index.php`                                            | **✔︎** |
-| `https://malicious-site.com`                                                      | **✘**  |
-| `https://en.wikipedia.org/wiki/Bitwarden`                                         | **✘**  |
+| URL                                                                               | 自动填充？                           |
+| --------------------------------------------------------------------------------- | ------------------------------- |
+| `https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Bitwarden` | <i class="fa-check">:check:</i> |
+| `https://pl.wikipedia.org/w/index.php?title=Specjalna:Zaloguj&returnto=Bitwarden` | <i class="fa-check">:check:</i> |
+| `https://en.wikipedia.org/w/index.php`                                            | <i class="fa-check">:check:</i> |
+| `https://malicious-site.com`                                                      | <i class="fa-xmark">:xmark:</i> |
+| `https://en.wikipedia.org/wiki/Bitwarden`                                         | <i class="fa-xmark">:xmark:</i> |
 
 ### 精确 <a href="#exact" id="exact"></a>
 
@@ -203,14 +203,14 @@ URI 为 `^https://[a-z]+\.wikipedia\.org/w/index\.php`，使用正则表达式�
 
 例如，URI 为 `https://www.google.com/page.html`，使用精确匹配检测：
 
-| URL                                          | 自动填充？  |
-| -------------------------------------------- | ------ |
-| `https://www.google.com/page.html`           | **✔︎** |
-| `http://www.google.com/page.html`            | **✘**  |
-| `https://www.google.com/page.html?query=123` | **✘**  |
-| `https://www.google.com`                     | **✘**  |
+| URL                                          | 自动填充？                           |
+| -------------------------------------------- | ------------------------------- |
+| `https://www.google.com/page.html`           | <i class="fa-check">:check:</i> |
+| `http://www.google.com/page.html`            | <i class="fa-xmark">:xmark:</i> |
+| `https://www.google.com/page.html?query=123` | <i class="fa-xmark">:xmark:</i> |
+| `https://www.google.com`                     | <i class="fa-xmark">:xmark:</i> |
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如表中所示，您可以使用精确匹配检测将自动填充限制为仅 `https://` 网站上。请注意，无论是否使用精确匹配，浏览器扩展都会在自动填充 HTTP 网站之前向用户发出警告，因为根据该项目保存的 URI，HTTPS 是预期的。
 {% endhint %}
 
@@ -222,7 +222,7 @@ URI 为 `^https://[a-z]+\.wikipedia\.org/w/index\.php`，使用正则表达式�
 
 可以在网页密码库的**账户设置** → **域名规则**页面设置等效域名，这样就可以链接域名，以便于自动填充。例如，将 `turbotax.com` 和 `intuit.com` 设置为等效域名，意味着，将 `turbotax.com` 作为 URI 保存的密码库项目也将在 `intuit.com` 上提供自动填充。
 
-Bitwarden 维护一个经过审核的主要网站的默认等效域名列表，例如 `apple.com` 和 `icloud.com`，以改善您的自动填填充体验。您可以将鼠标悬停在任何给定的等效域名上，然后使用 **⚙️**选项菜单选择 **✘排除**，以禁用该等效域名。
+Bitwarden 维护一个经过审核的主要网站的默认等效域名列表，例如 `apple.com` 和 `icloud.com`，以改善您的自动填填充体验。您可以将鼠标悬停在任何给定的等效域名上，然后使用 <i class="fa-gear-complex">:gear-complex:</i>选项菜单选择 <i class="fa-xmark">:xmark:</i>**排除**，以禁用该等效域名。
 
 {% hint style="success" %}
 对于使用[精确匹配检测](forming-uris-for-autofill.md#exact)的项目，等效域名将被忽略。例如，一个保存的 URI 为 `apple.com` 并设置为**精确**的项目，将不会为 `icloud.com` 提供自动填充，即使 `icloud.com` 是默认的等效域名。

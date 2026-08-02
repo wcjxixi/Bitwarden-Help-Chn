@@ -10,7 +10,7 @@
 
 您可以从 LastPass 的网页密码库或从 LastPass 浏览器扩展[导出数据](https://support.lastpass.com/help/export-your-passwords-and-secure-notes-lp040004)：
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以跳过此步骤并立即开始使用[直接导入选项](import-data-from-lastpass.md#import-to-bitwarden)导入到 Bitwarden，仅适用于 Bitwarden 浏览器扩展和桌面 App。
 {% endhint %}
 
@@ -18,7 +18,7 @@
 {% tab title="LastPass 网页密码库" %}
 要从 LastPass 网页密码库导出您的数据：
 
-1、从左侧边栏选择 **🚀Advanced Options** 选项。
+1、从左侧边栏选择 <i class="fa-rocket">:rocket:</i>**Advanced Options** 选项。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5uCdlKvfGTjYIEJvKtpbQw/14cd0e6bfb36a53b1f1d6f88d3808a90/lastpassadvancedoptions.png?w=1272&#x26;fm=avif" alt=""><figcaption><p>从网页密码库导出</p></figcaption></figure></div>
 
@@ -32,7 +32,7 @@
 
 4、如果您的密码库数据显示在屏幕上，全选显示的数据，将其复制并粘帖到一个新的 `export.csv` 文件中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 一些用户报告了一个 bug：密码中的特殊字符（`&`、`<`、`>` 等）在导出时，被更改成了 HTML 编码的值（例如 `&amp;`）。
 
 如果您在导出的数据中发现了这个 bug，请使用文本编辑器查找并替换所有被更改的值，然后再导入到 Bitwarden。
@@ -71,7 +71,7 @@
 
 {% tabs %}
 {% tab title="直接导入" %}
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您是使用 LastPass SSO 的团队成员，LastPass 管理员需要先完成一个简单的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-data-from-lastpass.md#direct-import-with-sso)）。
 {% endhint %}
 
@@ -93,7 +93,7 @@
 
 5、将提示您输入 LastPass 主密码，或者如果您的 LastPass 账户使用 SSO，登录到您的 IdP。无论哪种情况，请按照提示登录到您的 LastPass 账户。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的 LastPass 账户激活了多重身份验证，系统将提示您输入来自身份验证器 App 的一次性通行代码。如果您使用 Duo 方式的 MFA，则仅支持应用内审批以满足您的 MFA 要求。
 {% endhint %}
 
@@ -117,7 +117,7 @@
 
 4、选择**选择文件**然后添加一个文件用于导入，或将文件内容**复制/粘贴**到输入框中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 导入时不会检查重复。如果您多次导入同一文件或导入密码库中已有的项目，则会创建重复的项目。
 {% endhint %}
 
@@ -147,7 +147,7 @@ bw import <format> /Users/myaccount/Documents/mydata.csv
 
 ## 使用 SSO 直接导入 <a href="#direct-import-with-sso" id="direct-import-with-sso"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 以下 IdP 不支持使用 SSO 的 LastPass 账户的直接导入：
 
 * Google Workspace

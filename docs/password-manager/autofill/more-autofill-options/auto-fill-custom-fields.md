@@ -8,7 +8,7 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 
 此外，如果您的浏览器扩展在自动填充特定站点的用户名和密码时遇到问题，使用[链接型自定义字段](auto-fill-custom-fields.md#shi-yong-lian-jie-de-zi-ding-yi-zi-duan)可以强制自动填充。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 要使自动填充正常工作，正确命名自定义字段很重要。[了解更多](../../your-vault/vault-items/custom-fields.md#custom-field-names)。
 {% endhint %}
 
@@ -16,9 +16,9 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 
 1、打开浏览器扩展，导航到**密码库**视图。此视图会自动检测已打开的标签页中显示的网页（例如 `myverizon.com`），并浮现所有具有相应 URI 的登录。
 
-2、在包含要自动填充的自定义字段的项目上，选择**填充**按钮：
+2、如果某个项目出现在**自动填充建议**中，点击包含自定义字段的项目的任意位置即可自动填充：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4ExHyb45ZapKssCpRl6Uro/b8e686e8a58e0ed24f8aa58dd746253e/2024-12-03_09-55-22.png?w=889&#x26;fm=avif" alt=""><figcaption><p>带有自定义字段的项目</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3tnagVMjtTufvRCrih3ctQ/9277f05114868cf0c37c069c565f2f95/Click_item_to_autofill.png?w=481&#x26;fm=avif" alt=""><figcaption><p>点击项目以自动填充</p></figcaption></figure></div>
 
 浏览器扩展将查找与[自定义字段名称](../../your-vault/vault-items/custom-fields.md#custom-field-names)匹配的任何字段，并自动填充该字段的值。
 
@@ -26,12 +26,12 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 
 链接型自定义字段可用于解决浏览器扩展无法自动填充特定站点的用户名和密码时的问题。要创建和自动填充链接型自定义字段：
 
-1、在项目**编辑**面板的**自定义字段**部分，从字段类型下拉菜单中选择链接型。
+1、在项目**编辑**面板的**自定义字段**部分，从字段类型下拉菜单中选择**链接型**。
 
-2、在**名称**输入框中，[为自定义字段指定一个名称](../../your-vault/vault-items/custom-fields.md#custom-field-names)，使其与用户名或密码的 HTML 表单元素 `id`，`name`，`aria-label` 或 `placeholder` 相对应。
+2、在**名称**输入框中，[为自定义字段指定一个名称](../../your-vault/vault-items/custom-fields.md#custom-field-names)，使其与用户名或密码的 HTML 表单元素 `id`、`name`、`aria-label` 或 `placeholder` 相对应。
 
-{% hint style="success" %}
-您可以通过右键单击表单元素然后使用**复制自定义字段名称**上下文菜单选项来获取其正确的值：
+{% hint style="success" icon="lightbulb" %}
+您可以通过右键点击表单元素然后使用**复制自定义字段名称**上下文菜单选项来获取其正确的值：
 
 <img src="https://bitwarden.com/assets/5nnPLqyzgAhDCinQNB0uUC/a721194f39f0a8fa919066d73ff9e2c8/2024-10-29_10-50-34.png?w=980&#x26;fm=avif" alt="" data-size="original">
 
@@ -40,7 +40,7 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 
 3、选择**添加**。
 
-4、根据您在自动填充时遇到问题的凭据类型，为字段值选择**用户名**或**密码**。在许多情况下，您需要为每个类型创建一个链接型自定义字段。
+4、根据您在自动填充时遇到问题的凭据类型，为字段值选择**用户名**或**密码**。在许多情况下，您需要为每个凭据类型创建一个链接型自定义字段。
 
 5、**保存**对密码库项目的更改。
 

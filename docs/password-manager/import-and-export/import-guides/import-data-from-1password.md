@@ -6,7 +6,7 @@
 
 使用这篇文章帮助您从 1Password 导出数据并导入到 Bitwarden。1Password 数据支持导出为 `.1pux`（要求 1Password v8.5+）、`.1pif` 或 `.csv` 文件，这取决于您使用的客户端版本和操作系统。了解 [1Password 导出包含哪些数据](https://support.1password.com/export/?mac#get-help)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通行密钥。[了解如何使用凭证交换功能](https://support.1password.com/export/?ios)轻松从 1Password 迁移到 Bitwarden。
 {% endhint %}
 
@@ -14,7 +14,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 
 完成以下步骤以从 1Password 桌面 App 导出数据：
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 目前，只有 1Password 8 允许您一次导出多个密码库。如果您使用 1Password 8，请跳至**步骤 3**。
 {% endhint %}
 
@@ -71,7 +71,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 * 选择**选择文件**，然后从您的计算机中选择已导出的文件。
 * 将已导出的文件的内容复制并粘贴到文本框中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
@@ -103,7 +103,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 
 6、选择**选择文件**然后选取一个文件，或将文件内容复制并粘贴到文本框中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
@@ -139,7 +139,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 
 4、选择**选择文件**然后选取一个文件，或将文件内容复制并粘贴到文本框中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 

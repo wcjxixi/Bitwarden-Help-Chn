@@ -22,7 +22,7 @@ Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设
 
 如果在安装过程中跳过了提示，某些浏览器上的 Bitwarden 浏览器扩展内置了将 Bitwarden 设为默认密码管理器的设置：
 
-1、导航至 Bitwarden 浏览器扩展中的 **⚙️设置**选项卡，然后选择**自动填充**。
+1、导航至 Bitwarden 浏览器扩展中的 <i class="fa-gear-complex">:gear-complex:</i>**设置**选项卡，然后选择**自动填充**。
 
 2、点击以启用**将 Bitwarden 设置为您的默认密码管理器**。
 
@@ -34,7 +34,7 @@ Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设
 
 如果上述方法均无效，请从浏览器设置菜单中手动关闭浏览器自带的密码管理器：
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 很多流行的浏览器，如 Opera 和 Brave，使用一个被称为「Chromium」的 Google Chrome 框架。如果您正在使用这些浏览器之一，请参考 **Chrome/Chromium** 部分的说明。
 {% endhint %}
 
@@ -68,7 +68,7 @@ Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/72yK5CCMKa9pcfCcdvUZqL/70345d0065b2e093519bcb0dbf74ce86/firefox_update.png?w=1071&#x26;fm=avif" alt=""><figcaption><p>Firefox 密码选项</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/security-tools/vault-health-reports.md)，如「泄露密码」报告和「重复使用的密码」报告，并**为所有用户提供免费的数据泄露报告**。
 {% endhint %}
 
@@ -76,7 +76,7 @@ Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5UrQ6bGCjV0VdHvy6rzece/fb1d2fc1bd28f1af3fdf4ad890039c84/firefox_update_2.png?w=1148&#x26;fm=avif" alt=""><figcaption><p>Firefox 已保存的登录</p></figcaption></figure></div>
 
-如果您还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-firefox.md)，以便将来导入 Bitwarden。导出后，您应该从 Firefox 中 **🗑️移除**这些密码。
+如果您还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-firefox.md)，以便将来导入 Bitwarden。导出后，您应该从 Firefox 中 <i class="fa-trash-can">:trash-can:</i>**移除**这些密码。
 {% endtab %}
 
 {% tab title="Safari" %}
@@ -92,7 +92,7 @@ Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/
 {% endtab %}
 
 {% tab title="Vivaldi" %}
-在 Vivaldi 中，打开 **⚙️Vivaldi 设置**窗口，然后从左侧导航中选择 **👁‍🗨隐私**。向下滚动到「密码」部分然后取消选中**保存网页密码**选项：
+在 Vivaldi 中，打开 <i class="fa-gear-complex">:gear-complex:</i>**Vivaldi 设置**窗口，然后从左侧导航中选择 <i class="fa-eye">:eye:</i>**隐私**。向下滚动到「密码」部分然后取消选中**保存网页密码**选项：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6nk9FVDeg8XaUz22Xahr8T/ee0f597cc264da5a30853588d541f074/vivaldi-disable.png?w=1346&#x26;fm=avif" alt=""><figcaption><p>Vivaldi 密码选项</p></figcaption></figure></div>
 
@@ -114,7 +114,7 @@ Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3NHOIo5RIwTjVecqRPeT5Y/6c1e26dc5385006a498b77c48e1048c2/tor-delete.png?w=996&#x26;fm=avif" alt=""><figcaption><p>Tor 已保存的密码</p></figcaption></figure></div>
 
-如果您还没有将这些密码保存到 Bitwarden 中，请在 Bitwarden 中为这些密码创建登录项目。所有密码都保存到 Bitwarden 中后，请从 Tor 中 **🗑️移除**这些密码。
+如果您还没有将这些密码保存到 Bitwarden 中，请在 Bitwarden 中为这些密码创建登录项目。所有密码都保存到 Bitwarden 中后，请从 Tor 中 <i class="fa-trash-can">:trash-can:</i>**移除**这些密码。
 {% endtab %}
 
 {% tab title="DuckDuckGo" %}

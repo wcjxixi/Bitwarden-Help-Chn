@@ -15,7 +15,7 @@
 
 接下来，确认登录项目保存的 URI 格式是否正确。在 Android 上，Password Manager 使用网站地址（例如 `https://gmail.com`）在网页浏览器中自动填充，以及使用包名称（例如 `com.google.android.gm`）在已安装的应用程序中自动填充。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 对于要安装的应用程序，请务必**仅安装并自动填充来自受信任来源**（例如 Google Play Store 或 F-Droid）**的应用程序**，因为恶意应用程序可能会伪造知名应用程序的包名称。[了解更多](forming-uris-for-autofill.md#android)。
 {% endhint %}
 
@@ -48,8 +48,12 @@
 
 请注意，如果您曾经强制停止了 Bitwarden App，该服务也会挂起。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 此网站 [https://dontkillmyapp.com/](https://dontkillmyapp.com/)，或许可以帮助您确定设备的默认电池优化配置。
+{% endhint %}
+
+{% hint style="info" %}
+如果您仍然无法让 Android 自动填充功能正常工作，请[联系我们](https://bitwarden.com/contact/)。
 {% endhint %}
 
 ## ~~Draw-Over 疑难解答~~ <a href="#troubleshooting-draw-over" id="troubleshooting-draw-over"></a>

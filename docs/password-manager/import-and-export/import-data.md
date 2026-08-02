@@ -6,7 +6,7 @@
 
 从不同的密码管理器、其他 Bitwarden 密码库或[加密导出](encrypted-exports.md)来导入登录和数据，以即时传输信息，省去手动输入。您可以从任何允许导出的密码管理解决方案中导入数据。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 本文介绍如何导入到您自己的密码库或您具有访问权限的[集合](import-data.md#import-to-a-collection)。如果您正在管理某个组织，则可能需要[导入到组织](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)。
 {% endhint %}
 
@@ -48,7 +48,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="success" %}
+{% hint style="info" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
@@ -61,7 +61,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 * 选择**选择文件**，然后从您的计算机中选择已导出的文件。
 * 将已导出的文件的内容复制并粘贴到文本框中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
@@ -83,7 +83,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
@@ -93,7 +93,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 
 6、选择**选择文件**然后选取一个文件，或将文件内容复制并粘贴到文本框中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
@@ -173,7 +173,7 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
@@ -183,7 +183,7 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 
 4、选择**选择文件**然后选取一个文件，或将文件内容复制并粘贴到文本框中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
@@ -237,7 +237,7 @@ bw import <format> /Users/myaccount/Documents/mydata.csv
 
 如果文件（通常是 `.csv`）中的某个项目超过了字段的**加密**字符限制，Bitwarden 将不会导入其中的任何内容。系统将显示一个「导入错误」的消息，并详细说明具体的问题。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 导入时，Bitwarden 的加密过程会将文本扩展 30-50%，这可能会使您的字段超出字符限制。例如，最常见的`备注`字段可能会从 8,000 个字符增加到超过 10,000 个字符，从而超出限制并引发错误。
 {% endhint %}
 
@@ -262,7 +262,7 @@ bw import <format> /Users/myaccount/Documents/mydata.csv
 * 分配一个您拥有**管理集合**权限的现有集合。
 * 为未指定的项目创建一个新的集合。通过输入一个新的集合名称来[自定义导入文件](condition-bitwarden-import.md)。这将自动创建该集合并将项目添加到其中。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 要尽量减少此错误，请启用[限制为所有者和管理员可以创建集合](../../admin-console/manage-shared-items/collections/collection-settings.md#restrict-collection-creation-to-owners-and-admins)设置以阻止用户创建集合。
 {% endhint %}
 
