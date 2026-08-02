@@ -5,14 +5,15 @@
 {% endhint %}
 
 {% hint style="info" %}
-账户恢复适用于**企业版组织**。
+账户恢复适用于**企业版组织**。是比个人管理的两步登录[恢复代码](../../../account/two-step-login/recovery-codes.md)更为强大的替代方案。
 {% endhint %}
 
-账户恢复功能允许[所有者、管理员和某些自定义角色成员](../member-roles.md)在成员忘记[主密码](../../../account/master-password.md)或丢失[受信任信设备](../../login-with-sso/trusted-devices/about-trusted-devices.md)时恢复成员账户。账户恢复：
+丢失[主密码](../../../account/master-password.md)、[两步登录方式](../../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)或[受信任信设备](../../login-with-sso/trusted-devices/about-trusted-devices.md)，会导致成员无法访问其密码库。账户恢复使管理员能够重置成员凭据并恢复其访问权限。[设置好账户恢复](account-recovery-enrollment.md)且成员注册后，重新获得账户访问权限需要两个步骤：
 
-* 可以通过启用[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#account-recovery-administration)为组织激活。
-* 要求成员通过自动注册或自行注册的方式[注册](account-recovery-enrollment.md)，才能获得账户恢复资格。注册会触发密钥交换，从而确保账户恢复的安全性。
-* **不会绕过成员的两步登录或 SSO**。如果为账户启用了[两步登录方式](../../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)，或者如果组织[要求 SSO 身份验证](../../oversight-visibility/enterprise-policies.md#single-sign-on-authentication)，则成员在恢复后仍需使用这些方法访问他们的账户。
+* 管理员重置该成员的主密码、两步登录方式，或两者同时重置。Bitwarden 随后会向该成员的账户邮箱发送一个恢复链接。
+* 成员收到邮件中的恢复链接后，即可重置其主密码和/或设置新的两步登录方式。
+
+账户恢复仅影响在 Bitwarden 内配置的凭据。它**不会绕过 SSO** 或您在 IdP 处配置的任何双重身份验证。如果您的组织[要求 SSO 身份验证](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)，成员在恢复后仍需通过这些方式访问其账户。
 
 {% hint style="info" %}
 账户恢复不会恢复已删除的账户。[删除账户](../revoke-remove/delete-member-accounts.md)是永久性的，无法撤消。
@@ -20,11 +21,11 @@
 
 ## 谁可以恢复账户 <a href="#who-can-recover-accounts" id="who-can-recover-accounts"></a>
 
-账户恢复可由[所有者、管理员和允许的自定义用户](../member-roles.md)执行。账户恢复使用分级权限结构来确定谁可以重置谁的主密码，这意味着：
+[所有者、管理员以及具有**管理账户恢复**权限的自定义角色成员](../member-roles.md)可以发起账户恢复。谁可以重置谁的主密码或两步登录方式取决于他们的角色：
 
-* 任何所有者、管理员或包含**管理账户恢复**的自定义角色都可以重置用户或自定义角色成员的主密码。
-* 只有管​​理员或所有者可以重置管理员的主密码。
-* 只有所有者可以重置其他所有者的主密码。
+* 任何所有者、管理员或包含**管理账户恢复**的自定义角色都可以重置用户或自定义角色成员的账户。
+* 只有管​​理员或所有者可以重置管理员的账户。
+* 只有所有者可以重置其他所有者的账户。
 
 ## 工作原理 <a href="#how-it-works" id="how-it-works"></a>
 

@@ -16,7 +16,7 @@
 {% hint style="info" %}
 虽然某些项目类型无法导入，但您仍可将其添加到密码库：
 
-* 将[文件附件](../../../password-manager/your-vault/vault-items/file-attachments.md)单独上传到新的密码库。
+* 将[文件附件](../../../password-manager/your-vault/vault-items/file-attachments.md)逐个上传到新的密码库。
 * 在新的密码库中重新创建 [Send](../../../password-manager/bitwarden-send/about-send.md)。
 {% endhint %}
 
@@ -38,7 +38,7 @@
 
 5、选择**选择文件**然后添加要导入的文件，或将文件内容复制/粘贴到输入框中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
@@ -52,8 +52,8 @@
 
 * **文件包含未分配的项目**：在尝试重新上传文件之前，确保所有[项目至少分配给一个集合](../../../password-manager/import-and-export/import-data.md#https-bitwarden.com-help-import-data-file-contains-unassigned-items)。
 
-{% hint style="success" %}
-为减少此错误，请打开[限制为所有者和管理员可以创建集合](../collections/collection-settings.md#restrict-collection-creation-to-owners-and-admins)设置，以阻止用户创建集合。
+{% hint style="success" icon="lightbulb" %}
+为减少此错误，请打开[限制为仅所有者和管理员可以创建集合](../collections/collection-settings.md#restrict-collection-creation-to-owners-and-admins)设置，以阻止用户创建集合。
 {% endhint %}
 
 * **组织最多只能有两个集合**：免费组织支持最多两个集合。如果您的导入文件超过此限制，[减少文件中的集合数量](../../../password-manager/import-and-export/import-data.md#organization-can-only-have-a-maximum-of-two-collections)或升级以导入更多。

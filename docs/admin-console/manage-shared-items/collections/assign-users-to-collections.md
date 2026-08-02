@@ -6,7 +6,7 @@
 
 [创建集合](about-collections.md)时，您可以分配现有[群组](../../manage-members/groups.md)或成员的访问权限。您可以随时通过 Password Manager 网页 App 修改谁可以访问某个集合：
 
-1、在网页 App 中，打开集合然后选择 **∨**&#x6309;钮以查看您的选项：
+1、在网页 App 中，打开集合然后选择 <i class="fa-angle-down">:angle-down:</i> 按钮以查看您的选项：
 
 <div align="center" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/m7O6TwNqNzsOCJNp1caor/914bfbf2192a2cccbe6c3fb58c11a73d/2024-12-02_15-40-10.png?w=1040&#x26;fm=avif" alt="管理集合"><figcaption><p>管理集合</p></figcaption></figure></div>
 
@@ -19,7 +19,7 @@
 
 4、选择**保存**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **批量管理**：具有 Admin Console 访问权限的用户可以通过集合视图中的 **≡**&#x83DC;单选项批量管理集合的访问权限：
 
 <img src="https://bitwarden.com/assets/42edJRnvap8xiBpURskIVI/7ff8006517e9bce50dffa4372fcc2911/2024-12-02_15-41-46.png?w=1039&#x26;fm=avif" alt="" data-size="original">
@@ -27,16 +27,16 @@
 
 ## 为非管理的集合分配访问权限 <a href="#assign-access-to-un-managed-collections" id="assign-access-to-un-managed-collections"></a>
 
-集合应始终至少有一位被分配的成员拥有[管理集合权限](collection-permissions.md)。在某些情况下，例如管理成员离开您的组织时，集合可能会没有具有该权限级别的成员。
-
 {% hint style="info" %}
-以下仅适用于所有者和管理员可以管理所有集合和项目，且集合管理设置关闭的情况。如果您的组织中此设置开启：
+以下仅适用于[所有者和管理员可以管理所有集合及项目](collection-settings.md#allow-owners-and-admins-to-manage-all-collections-and-items-from-the-admin-console)集合管理设置处于**关闭**状态时。如果您的组织中此设置为**开启**状态：
 
-* 所有者和管理员可以始终（而非暂时）从**集合**视图修改集合的访问权限。
+* [所有者、管理员以及自定义角色成员](../../manage-members/member-roles.md)（拥有**编辑任意集合**权限），可以随时（而非暂时）从**集合**视图修改集合的访问权限。
 * 下面描述的**添加访问权限**徽标和选项卡将不会出现。
 {% endhint %}
 
-当发生这种情况时，所有者和管理员将通过**集合**视图的**添加访问权限**选项卡暂时获得这些集合的管理能力：
+集合应始终至少有一位被分配的成员拥有[管理集合权限](collection-permissions.md)。否则在某些情况下，例如管理成员离开您的组织时，集合可能会没有具有该权限级别的成员。
+
+当发生这种情况时，[所有者、管理员以及自定义角色成员](../../manage-members/member-roles.md)（拥有**编辑任意集合**权限），可以通过**集合**视图的**添加访问权限**选项卡暂时获得这些集合的管理能力：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1Nqn29nNIkKtb5HfWkfcWK/64c3875f60d3d292837d0655ad3b146c/2024-12-05_09-56-43.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>为未管理的集合添加访问权限</p></figcaption></figure></div>
 

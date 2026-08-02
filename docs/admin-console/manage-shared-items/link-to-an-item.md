@@ -1,4 +1,4 @@
-# 链接到组织项目
+# 组织项目超链接
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/link-to-an-item/)
@@ -6,7 +6,7 @@
 
 当您需要将组织的成员定向到特定的密码库项目时，例如在文档中，您可以复制项目的 URL 以用作**拥有此项目的访问权限**的用户的直接链接。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 项目链接不是组织独有的！如果您觉得有用，可以将链接保存到您的个人密码库中，但是只有您自己可以访问它们。
 {% endhint %}
 

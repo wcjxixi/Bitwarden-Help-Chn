@@ -6,7 +6,7 @@
 
 默认情况下，被邀请加入 Bitwarden 组织的用户在接受邀请后，必须[由管理员进行确认](user-management.md#confirm)。「确认」是完成三步入职流程的关键步骤，该流程旨在促进组织及其成员之间端到端加密的项目共享。
 
-如果不想让管理员手动确认每个加入组织的用户，企业组织可以选择设置用户自动确认。
+如果不想让管理员手动确认每个加入组织的用户，企业版组织可以选择设置用户自动确认。
 
 要有资格使用自动确认功能：
 
@@ -28,11 +28,23 @@
 
 ### 对于组织 <a href="#for-the-organization" id="for-the-organization"></a>
 
-要为您的组织启用自动确认，请确保您已满足上述资格要求。当您联系了您的 Bitwarden 团队后，组织所有者将在下次登录时收到一个激活面板。
+要为您的组织启用自动确认，请确保您已满足上述资格要求。当您联系了您的 Bitwarden 团队，并且该功能已对您的组织开放：
+
+1、所有者和管理员将收到一封主题为 **Automatic confirmation is available for \<organization>** 的电子邮件。
+
+{% hint style="info" %}
+如果您正是自托管 Bitwarden：
+
+* 此电子邮件将发送至与您的自托管组织关联的云端组织的所有者和管理员。
+* 该云端组织也必须满足本文中所述的自动确认标准。
+* 其中一位所有者或管理员必须在继续执行步骤 2 之前更新自托管组织的许可证文件。许可证文件更新后，步骤 2 及后续所有步骤均可从自托管服务器完成。
+{% endhint %}
+
+2、组织所有者和管理员将在下次登录时收到一个激活面板，提示他们启用该策略。
 
 当 Bitwarden 为您的组织添加了该功能后，您还可以从 Admin Console 中的**设置** → **策略**菜单，通过[策略](../oversight-visibility/enterprise-policies.md#automatic-user-confirmation)来激活自动确认。无论哪种方式，选择**继续**即可为组织启用自动确认：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1ggo2uyCvldAlJcOxAmGdv/eabe1eb2c5a82731268d6b3486fbc3d5/2026-02-05_10-43-27.png?w=1134&#x26;fm=avif" alt=""><figcaption><p>新用户自动确认</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1ggo2uyCvldAlJcOxAmGdv/3871422628d3fc2029a2387b5687db46/2026-06-16_09-47-45.png?w=1086&#x26;fm=avif" alt=""><figcaption><p>新用户自动确认</p></figcaption></figure></div>
 
 ### 对于每位管理员 <a href="#for-each-administrator" id="for-each-administrator"></a>
 

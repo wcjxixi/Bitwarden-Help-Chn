@@ -5,7 +5,10 @@
 {% endhint %}
 
 {% hint style="danger" %}
-删除账户是永久性的，无法撤销或恢复。要创建密码库数据的备份并将其存储在安全位置，请[导出您的密码库数据](../../../password-manager/import-and-export/export-vault-data.md)。
+删除账户或组织是**永久性的，无法撤销或恢复，并将删除所有相关的密码库数据**。在执行账户或组织删除之前，您可能需要先导出数据：
+
+* [导出个人密码库数据](../../../password-manager/import-and-export/export-vault-data.md)
+* [导出组织密码库数据](../../manage-shared-items/export-organization-items/export-organization-items.md)
 {% endhint %}
 
 根据您组织的设置，您可以删除成员账户。删除账户与移除用户不一样。

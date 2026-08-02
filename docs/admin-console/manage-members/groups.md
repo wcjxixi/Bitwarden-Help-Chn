@@ -28,13 +28,13 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
-2、导航到**群组**，然后选择 ✚**新建群组**按钮：
+2、导航到**群组**，然后选择 <i class="fa-plus">:plus:</i>**新建群组**按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/FefJG4qBRiWkTzsxBKfm6/53093b4dd48e534cdde9f3e249d3c382/2024-12-03_14-22-27.png?w=1197&#x26;fm=avif" alt=""><figcaption><p>新建群组</p></figcaption></figure></div>
 
 3、在**群组信息**选项卡中，为您的群组起个**名称**。
 
-{% hint style="success" %}
+{% hint style="info" %}
 **外部 ID** (External Id) 字段只有在使用 [Directory Connector](directory-connector/about-directory-connector.md) 时才相关，并且在使用 [SCIM](scim/about-scim.md)、Directory Connector 或 API 配置时，该字段才会在对话框中可见。
 {% endhint %}
 
@@ -54,7 +54,7 @@
 
 1、在 Admin Console 中，打开**群组**视图。
 
-2、对于要编辑的群组，使用 **≡**&#x9009;项菜单选择**成员**。
+2、对于要编辑的群组，使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 选项菜单选择**成员**。
 
 3、从群组中添加或移除成员，然后选择**保存**。
 
@@ -67,5 +67,5 @@
 如果您要更改已分配给群组的[集合](../manage-shared-items/collections/about-collections.md)或[权限](member-roles.md)：
 
 1. 在 Admin Console 中，打开**群组**视图。
-2. 对于您想要编辑的群组，使用 **≡**&#x9009;项菜单选择**集合**。
+2. 对于您想要编辑的群组，使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 选项菜单选择**集合**。
 3. 从群组中添加、移除或更改集合权限，然后选择**保存**。

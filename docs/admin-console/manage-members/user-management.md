@@ -21,7 +21,7 @@
 
 ### 邀请 <a href="#invite" id="invite"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 对于企业版组织，我们建议在邀请用户之前配置[企业策略](../oversight-visibility/enterprise-policies.md)，以确保新成员加入组织时符合合规要求。
 {% endhint %}
 
@@ -45,7 +45,7 @@
 4、点击**保存**以邀请指定的用户加入您的组织。
 
 {% hint style="info" %}
-**邀请将在 5 天后过期**，届时需要重新邀请该成员。通过勾选每个用户并使用 **≡选项图标**选择**重新发送邀请**来批量重新邀请成员：
+**邀请将在 5 天后过期**，届时需要重新邀请该成员。通过勾选每个用户并使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**选项图标**选择**重新发送邀请**来批量重新邀请成员：
 
 <img src="https://bitwarden.com/assets/1yj3MLJDTr7zOn5TwP0FGJ/67a16c6ee6ee14a92aa350986244e164/Resend_invitations.png?w=1200&#x26;fm=avif" alt="" data-size="original">
 
@@ -60,6 +60,13 @@
 
 您必须**完全登录到 Bitwarden 网页 App** 才能接受邀请。接受邀请后，管理员需要[确认](user-management.md#confirm)访问权限。确认后，您将收到可以访问组织的通知。此外，组织成员在接受邀请时，其[电子邮箱将自动验证](../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)。
 
+{% hint style="info" %}
+在用户被[确认](user-management.md#confirm)之前，需要先遵守以下策略。这些策略包括：
+
+* [单一组织](../oversight-visibility/enterprise-policies.md#single-organization)
+* [要求两步登录](../oversight-visibility/enterprise-policies.md#require-two-step-login)
+{% endhint %}
+
 ### 确认 <a href="#confirm" id="confirm"></a>
 
 要确认已接受加入您组织的邀请：
@@ -70,13 +77,13 @@
 
 2、导航到**成员**。
 
-3、选择任何`已接受`的用户，然后使用 ≡选项菜单 **✔︎确认所选**：
+3、选择任何`已接受`的用户，然后使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 选项菜单 <i class="fa-check">:check:</i>**确认所选**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5eRDRAooRSGqRWJYZB5fgz/f3eac670d95664be963d2b38eddf68b5/Confirm_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>确认成员加入组织</p></figcaption></figure></div>
 
 4、验证您屏幕上显示的[指纹短语](../../security/encryption/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置 → 我的账户**中找到。
 
-<div align="left" data-with-frame="true"><figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6sWPBv5GFAyMcULNxfCCJG/b3115a77e0d8d8d48fcc1f9e24e42d70/fingerprint-phrase.png?_a=DAJCwlWIZAAB" alt=""><figcaption><p>示例指纹短语</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6sWPBv5GFAyMcULNxfCCJG/b3115a77e0d8d8d48fcc1f9e24e42d70/fingerprint-phrase.png?w=285&#x26;fm=avif" alt=""><figcaption><p>指纹短语</p></figcaption></figure></div>
 
 每一个指纹短语对于其账户都是唯一的，它是确保安全添加用户的最后一层监督。如果它们匹配，请选择**提交**。
 
@@ -86,13 +93,15 @@
 
 ## 管理现有成员 <a href="#manage-existing-members" id="manage-existing-members"></a>
 
-在**成员**页面，您还可以查看和更新​​个人成员的账户，例如将其添加到群组、集合或 Secrets Manager。选择 **≡菜单图标**查看每个用户的可用选项：
+在**成员**页面，您还可以查看和更新​​个人成员的账户，例如将其添加到群组、集合或 Secrets Manager。选择 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**菜单图标**查看每个用户的可用选项：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5tspjHKPHunTlRhylIJo5O/c707a3e1780364f8820832c216b5ca64/Update_member.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>更新成员</p></figcaption></figure></div>
 
-### 审查 2FA 状态 <a href="#review-2fa-status" id="review-2fa-status"></a>
+### 审查 2FA 和账户恢复状态 <a href="#review-2fa-and-account-recovery-status" id="review-2fa-and-account-recovery-status"></a>
 
-用户的 2FA 状态可在**成员**页面查看。如果用户拥有一个 **🔒锁定图标**，说明其 Bitwarden 账户已启用两步登录：
+用户的 2FA 状态可在**成员**页面查看。如果用户拥有一个 <i class="fa-lock-keyhole">:lock-keyhole:</i>**锁定图标**，说明其 Bitwarden 账户已启用两步登录：
+
+成员页面还会在**策略**列中标注哪些用户已启用特定功能。<i class="fa-key">:key:</i>**钥匙图标**表示该成员已注册账户恢复。当使用两步登录时，会显示 <i class="fa-lock-keyhole">:lock-keyhole:</i>**锁图标**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/HNlJNX9VJVURxGqrrBdRb/1592f5c29694cf36e973ddac553e95e1/2FA_status.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>2FA 状态</p></figcaption></figure></div>
 
@@ -100,7 +109,7 @@
 
 如果您想在 Admin Console 之外查看或分享所有组织成员的列表，拥有**管理用户**权限的所有者、管理员和[自定义角色](member-roles.md#custom-role)用户可以导出 `.csv` 文件。此功能适用于所有组织。
 
-要导出成员列表，请前往**成员**然后选择 **⬇️下载图标**：
+要导出成员列表，请前往**成员**然后选择 <i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>**下载图标**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6FCI1z0EtjbNAgeK5DZVx6/0e9b448678e95f10249a009d5d7f5aba/Export_member_list.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>导出成员列表</p></figcaption></figure></div>
 
@@ -112,18 +121,9 @@
 
 成员列表导出文件包含每个账户的以下信息：
 
-| 列               | 描述                                                                                                                                |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| 电子邮箱            | 账户的电子邮箱地址                                                                                                                         |
-| 名称              | 用户的名称，可在**设置** → **我的账户**中查看                                                                                                      |
-| 状态              | 显示账户的[入职](user-management.md#onboard-users)状态（**已邀请**、**已接受**或**已确认**），或账户是否已从组织中[撤销](revoke-remove/temporarily-revoke-access.md) |
-| 角色              | 用户在组织中的[成员角色](member-roles.md)                                                                                                    |
-| 两步登录            | 显示用户是否使用[两步登录方式](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)登录                                   |
-| 账户恢复            | 显示用户是否已注册[账户恢复](account-recovery/about-account-recovery.md)                                                                       |
-| Secrets Manager | 显示是否已为该成员启用 [Secrets Manager](../../secrets-manager/secrets-manager-overview.md)                                                  |
-| 群组              | 列出包含该成员的所有群组                                                                                                                      |
+<table data-search="false"><thead><tr><th>列</th><th>描述</th></tr></thead><tbody><tr><td>电子邮箱</td><td>账户的电子邮箱地址</td></tr><tr><td>名称</td><td>用户的名称，可在<strong>设置</strong> → <strong>我的账户</strong>中查看</td></tr><tr><td>状态</td><td>显示账户的<a href="user-management.md#onboard-users">入职</a>状态（<strong>已邀请</strong>、<strong>已接受</strong>或<strong>已确认</strong>），或账户是否已从组织中<a href="revoke-remove/temporarily-revoke-access.md">撤销</a></td></tr><tr><td>角色</td><td>用户在组织中的<a href="member-roles.md">成员角色</a></td></tr><tr><td>两步登录</td><td>显示用户是否使用<a href="../../account/two-step-login/setup-two-step-login/two-step-login-methods.md">两步登录方式</a>登录</td></tr><tr><td>账户恢复</td><td>显示用户是否已注册<a href="account-recovery/about-account-recovery.md">账户恢复</a></td></tr><tr><td>Secrets Manager</td><td>显示是否已为该成员启用 <a href="../../secrets-manager/secrets-manager-overview.md">Secrets Manager</a></td></tr><tr><td>群组</td><td>列出包含该成员的所有群组</td></tr></tbody></table>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 企业版组织可以查看[成员访问权限报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#member-access)，了解成员可以访问哪些集合、他们在每个已分配的集合中的权限级别等等。
 {% endhint %}
 
@@ -135,6 +135,9 @@
 * [永久移除访问权限](revoke-remove/permanently-remove-access.md)
 * [删除组织成员账户](revoke-remove/delete-member-accounts.md)
 
-{% hint style="danger" %}
-删除账户是永久性的，无法撤销或恢复。要创建密码库数据的备份并将其存储在安全位置，请[导出您的密码库数据](../../password-manager/import-and-export/export-vault-data.md)。
+{% hint style="warning" %}
+删除账户或组织是**永久性的，无法撤销或恢复，并将删除所有相关的密码库数据**。在执行账户或组织删除之前，您可能需要先导出数据：
+
+* [导出个人密码库数据](../../password-manager/import-and-export/export-vault-data.md)
+* [导出组织密码库数据](../manage-shared-items/export-organization-items/export-organization-items.md)
 {% endhint %}

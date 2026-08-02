@@ -9,7 +9,7 @@
 * 无法访问任何组织密码库项目或集合。
 * 无法使用您的组织 [SSO](../../login-with-sso/about-sso.md) 登录。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **没有主密码的**成员（例如，在使用[受信任设备](../../login-with-sso/trusted-devices/about-trusted-devices.md)或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 的组织中的成员）如果被撤销，其将被完全锁定在他们的账户之外。
 {% endhint %}
 
@@ -26,7 +26,7 @@
 
 2、勾选您想要撤销的成员。
 
-3、选择 **≡**&#x9009;项菜单。
+3、选择 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单。
 
 4、选择**撤销访问权限**：
 
@@ -34,7 +34,7 @@
 
 5、选择**撤销成员**以确认。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 要查看哪些成员被撤销，请转至**成员** → **已撤销**。将鼠标悬停在特定用户旁边的 **ⓘ已撤销**图标上，即可了解他们被撤销的原因：
 
 <img src="https://bitwarden.com/assets/4K6UcJtGBxlmEyY0ASKBBs/f4ed8fec1ad67da90dd0f980ef2744a6/Revoke_reason_tooltip.png?w=800&#x26;fm=avif" alt="" data-size="original">
@@ -58,7 +58,7 @@
 
 3、勾选您想要将其返回您组织的成员。
 
-4、选择 **≡**&#x9009;项菜单。
+4、选择 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单。
 
 5、选择**恢复访问权限**：
 
