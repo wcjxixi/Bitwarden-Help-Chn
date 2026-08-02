@@ -30,7 +30,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 {% hint style="info" %}
 虽然某些项目类型无法导入，但您仍可将其添加到密码库：
 
-* 将[文件附件](../your-vault/vault-items/file-attachments.md)单独上传到新的密码库。
+* 将[文件附件](../your-vault/vault-items/file-attachments.md)逐个上传到新的密码库。
 * 在新的密码库中重新创建 [Send](../bitwarden-send/about-send.md)。
 {% endhint %}
 
@@ -99,7 +99,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 
 7、选择**导入数据**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
-8、数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
+8、数据导入后，请从您的设备中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
 {% endtab %}
 
 {% tab title="移动端" %}
