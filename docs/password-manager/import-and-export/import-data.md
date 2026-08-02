@@ -52,7 +52,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
-* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**管理集合**](../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
+* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**可以管理**](../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
 
 4、从**文件格式**下拉菜单中，选择您的导出数据的[文件格式](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -87,7 +87,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
-* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**管理集合**](../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
+* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**可以管理**](../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
 
 5、从**文件格式**下拉菜单中，选择[导入文件的格式](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -97,7 +97,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
-7、选择**导入**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+7、选择**导入数据**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
 8、数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
 {% endtab %}
@@ -107,7 +107,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 
 ### 移动设备最常用的方式 <a href="#most-common-method-for-mobile" id="most-common-method-for-mobile"></a>
 
-对于大多数设备，请打开移动浏览器。登录 Bitwarden 然后按照[网页 App 的导入步骤](import-data.md#wang-ye-app)操作。
+对于大多数设备，打开移动浏览器，登录 Bitwarden，然后按照[网页 App 的导入步骤](import-data.md#wang-ye-app)操作。
 
 ### 使用凭据交换协议 (CXP) 直接导入 <a href="#direct-import-with-the-cxp" id="direct-import-with-the-cxp"></a>
 
@@ -124,7 +124,7 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 {% hint style="info" %}
 例如，在 **Apple 密码** App 中：
 
-1. 点击 **⋯**&#x9009;项图标。
+1. 点击 <i class="fa-ellipsis">:ellipsis:</i>选项图标。
 2. 点击**导出数据到其他 App**。
 3. 在出现的列表中，勾选您想要转移的密码和通行密钥。完成后，点击**继续**。
 {% endhint %}
@@ -143,7 +143,7 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 
 要使用 **Android 10+** 移动设备导入数据：
 
-1、打开 Bitwarden 应用。
+1、打开 Bitwarden App。
 
 2、点击**设置**。
 
@@ -177,7 +177,7 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
-* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**管理集合**](../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
+* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**可以管理**](../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
 
 3、从**文件格式**下拉菜单中，选择[导入文件的格式](import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -187,7 +187,7 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
-5、选择**导入**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+5、选择**导入数据**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
 6、数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
 {% endtab %}

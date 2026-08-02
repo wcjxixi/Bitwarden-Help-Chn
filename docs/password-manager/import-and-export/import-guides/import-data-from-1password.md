@@ -113,11 +113,65 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 {% endtab %}
 
 {% tab title="移动端" %}
-在大多数情况下，在移动设备上导入数据需要您通过在移动浏览器中打开的网页 App 执行此操作。您可以通过导航到**设置** → **密码库** → **导入项目**，以从 Password Manager 快速访问此位置。
+在移动设备上导入数据有两种方式。使用 CXP 直接导入通常最为简便，但目前仅支持少数密码管理 App。
 
-在 iOS 26 上，Bitwarden 支持使用 [Fido 凭证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications) 导入，以直接轻松地将密码、通行密钥、信用卡和个人身份信息迁移到您的密码库中。要导出数据的 App 也必须支持 CXP，具体操作步骤因 App 而异。
+### 移动设备最常用的方式 <a href="#most-common-method-for-mobile" id="most-common-method-for-mobile"></a>
 
-例如，在 iOS 密码 App 中，使用 **⋯**&#x9009;项菜单选择**导出数据至其他 App**，然后选择 Bitwarden。
+对于大多数设备，打开移动浏览器，登录 Bitwarden，然后按照[网页 App 的导入步骤](import-data-from-1password.md#wang-ye-app)操作。
+
+### 使用凭据交换协议 (CXP) 直接导入 <a href="#direct-import-with-the-cxp" id="direct-import-with-the-cxp"></a>
+
+Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)。该协议通过省去手动下载和处理数据文件的步骤，提供了一种替代且通常更快的导入方式。当前存储您数据的密码管理器 App 也必须支持 CXP，具体步骤因 App 而异。
+
+#### 使用 iOS 设备 CXP <a href="#cxp-with-ios-devices" id="cxp-with-ios-devices"></a>
+
+要使用 **iOS 26+** 移动设备导入数据：
+
+1、打开保存有数据的其他兼容 CXP 的密码管理器 App。
+
+2、根据 App 的不同，找到导出数据选项，然后选择要导入的项目。您可能需要完成额外步骤，例如登录或确认您要移动数据。
+
+{% hint style="info" %}
+例如，在 **Apple 密码** App 中：
+
+1. 点击 <i class="fa-ellipsis">:ellipsis:</i>选项图标。
+2. 点击**导出数据到其他 App**。
+3. 在出现的列表中，勾选您想要转移的密码和通行密钥。完成后，点击**继续**。
+{% endhint %}
+
+3、在**导出密码**界面上，点击**继续**。
+
+4、选择 **Bitwarden** 作为目标位置，然后点击**继续**。
+
+5、点击**在 Bitwarden 中继续**。
+
+6、Bitwarden App 将打开。点击**继续**以确认导入。
+
+7、完成后，将出现一条消息，确认您的数据已成功导入。
+
+#### 使用 **Android** 设备 CXP <a href="#cxp-with-android-devices" id="cxp-with-android-devices"></a>
+
+要使用 **Android 10+** 移动设备导入数据：
+
+1、打开 Bitwarden App。
+
+2、点击**设置**。
+
+3、点击**密码库**。
+
+4、点击**导入项目**。
+
+5、点击**从其他 App 导入**。
+
+6、选择您保存数据的其他兼容 CXP 的密码管理器 App，然后点击**继续**。
+
+7、根据 App 的不同，选择要导入的项目。您可能需要完成额外步骤，例如登录或确认您要移动数据。
+
+8、完成后，将出现一条消息，确认您的数据已成功导入。
+
+{% hint style="info" %}
+目前，Android 不支持通过 CXP 导入 Dashlane 数据。
+{% endhint %}
 {% endtab %}
 
 {% tab title="桌面端" %}
