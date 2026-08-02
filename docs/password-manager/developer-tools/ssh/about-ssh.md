@@ -39,7 +39,7 @@ SSH 密钥项目支持与其他密码库项目相同的 Bitwarden 功能，包�
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1XYC3HwXOTMAPvyW1GS3Mk/82a46735327f9085d9380fbb8053b161/new_ssh_key-curent_ui.png?w=1187&#x26;fm=avif" alt=""><figcaption><p>在桌面端创建新的 SSH 密钥</p></figcaption></figure></div>
 
-2、填写诸如**名称**等其余详细信息，完成后选择 **💾保存**图标。
+2、填写诸如**名称**等其余详细信息，完成后选择 <i class="fa-floppy-disk">:floppy-disk:</i> 保存图标。
 
 {% hint style="info" %}
 目前，Bitwarden 只能生成 `ED25519` 类型的 SSH 密钥。
@@ -55,7 +55,7 @@ SSH 密钥可以创建并存储在组织集合中。具有适当权限的组织�
 
 要将新的共享 SSH 密钥添加到组织密码库：
 
-1、在桌面或网页 App 的密码库视图中，选择 **✚新增**按钮，然后选择 **SSH 密钥**。
+1、在桌面或网页 App 的密码库视图中，选择 <i class="fa-plus">:plus:</i>**新增**按钮，然后选择 **SSH 密钥**。
 
 {% hint style="success" %}
 组织[所有者、管理员和某些自定义用户](../../../admin-console/manage-members/member-roles.md)也可以直接从 Admin Console 执行此步骤，以跳过此过程中的某些步骤。

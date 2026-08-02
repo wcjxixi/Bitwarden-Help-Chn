@@ -21,7 +21,7 @@
 * [~~https://gist.github.com/rmondello/b933231b1fcc83a7db0b~~](https://gist.github.com/rmondello/b933231b1fcc83a7db0b)
 * [~~https://github.com/lifepillar/CSVKeychain~~](https://github.com/lifepillar/CSVKeychain)
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 ~~**请注意：**&#x8FD9;些第三方脚本/程序不受 Bitwarden 和 Apple 的支持，请自行承担使用风险。~~
 {% endhint %}
 
@@ -50,7 +50,7 @@
 
 > **\[译者注]**：out-of-the-box，开箱即用。「out-of-the-box」 是一个常用短语，表示「无需额外配置或修改即可直接使用」。在这里，表示以下格式可以直接在 Bitwarden 中导入，而无需额外手动[调整 Bitwarden .csv 或 .json](condition-bitwarden-import.md)。
 
-{% hint style="info" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的格式没有在下面列出，请手动[调整 Bitwarden .csv 或 .json](condition-bitwarden-import.md)。
 {% endhint %}
 
@@ -69,8 +69,8 @@
 * [Chrome (csv)](import-guides/import-data-from-chrome.md)
 * Clipperz (html)
 * Codebook (csv)
-* Dashlane (json)
-* Dashlane (csv)
+* [Dashlane (json)](import-guides/import-data-from-dashlane.md)
+* [Dashlane (csv)](import-guides/import-data-from-dashlane.md)
 * Edge (csv)
 * Encryptr (csv)
 * Enpass (csv)
@@ -79,9 +79,11 @@
 * F-Secure KEY (fsk)
 * GNOME Passwords and Keys/Seahorse (json)
 * Kaspersky Password Manager (txt)
-* KeePass 2 (xml)
-* KeePassX (csv)
-* Keeper (csv)
+* [KeePass (kdbx)](import-guides/cong-keepass-dao-ru.md#kdbx)
+* [KeePass 2 (xml)](import-guides/cong-keepass-dao-ru.md#csv-huo-xml)
+* [KeePassX (csv)](import-guides/cong-keepass-dao-ru.md#csv-huo-xml)
+* [Keeper (csv)](import-guides/import-from-keeper.md)
+* [Keeper (json)](import-guides/import-from-keeper.md)
 * [LastPass (csv)](import-guides/import-data-from-lastpass.md)
 * LogMeOnce (csv)
 * Meldium (csv)

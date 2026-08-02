@@ -19,7 +19,7 @@
 当一个 Send 达到其配置的删除日期时：
 
 * 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
-* 对于发送者，一个 **🗑️等待删除**的图标将出现在 Send 旁边。Send 将在几分钟内等待删除，之后它将从 Bitwarden 系统和发送者的 Send 视图中永久删除。
+* 对于发送者，一个 <i class="fa-trash-can">:trash-can:</i>**等待删除**的图标将出现在 Send 旁边。Send 将在几分钟内等待删除，之后它将从 Bitwarden 系统和发送者的 Send 视图中永久删除。
 
 {% hint style="info" %}
 已删除的 Send 不会发送或存储在回收站中。一旦确认删除，您将无法访问 Send 内容。
@@ -38,7 +38,7 @@
 当一个 Send 达到指定的到期日期时：
 
 * 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
-* 对于发送者，一个 **🕘到期**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的删除日期。
+* 对于发送者，一个 <i class="fa-clock">:clock:</i>**到期**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的删除日期。
 
 ## 限制查看（或最大访问次数） <a href="#limit-views-or-maximum-access-count" id="limit-views-or-maximum-access-count"></a>
 
@@ -53,9 +53,9 @@
 当一个 Send 达到其指定的最大访问次数（或查看次数）时：
 
 * 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
-* 对于发送者，一个 **⚠达到最大访问次数**图标将出现在 Send 旁边。发送者仍可访问该 Send，直到达到指定的**删除日期**。
+* 对于发送者，一个 <i class="fa-circle-exclamation">:circle-exclamation:</i>**达到最大访问次数**图标将出现在 Send 旁边。发送者仍可访问该 Send，直到达到指定的**删除日期**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **当前访问次数**（或**查看**）计数器的含义：
 
 * 对于文本 Send，表示链接被访问的次数
@@ -70,7 +70,7 @@
 {% tab title="网页 App" %}
 ### 从网页 App 删除 <a href="#delete-from-the-web-vault" id="delete-from-the-web-vault"></a>
 
-要从网页 App 删除 Send，请使用 **≡选项**菜单然后选择 **🗑️删除**按钮：
+要从网页 App 删除 Send，请使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**选项**菜单然后选择 <i class="fa-trash-can">:trash-can:</i>**删除**按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1PiQrX748LtTFXChfAIbFP/0ff74124a0d215254c532fe79cff9012/2026-02-25_11-08-25.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>从网页 App 删除 Send</p></figcaption></figure></div>
 {% endtab %}
@@ -78,7 +78,7 @@
 {% tab title="浏览器扩展" %}
 ### 从浏览器扩展删除 <a href="#delete-from-browser-extensions" id="delete-from-browser-extensions"></a>
 
-要从浏览器扩展删除 Send，请选择在您要删除的 Send 旁边的 🗑️**回收站**图标：
+要从浏览器扩展删除 Send，请选择在您要删除的 Send 旁边的 <i class="fa-trash-can">:trash-can:</i>**回收站**图标：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/74CotzsfAWKjUQkXfuu7zq/12d90886dbb9e6bd3a26b47efedeef4c/delete_browser.png?w=450&#x26;fm=avif" alt=""><figcaption><p>从浏览器扩展删除 Send</p></figcaption></figure></div>
 {% endtab %}
@@ -86,7 +86,7 @@
 {% tab title="桌面端" %}
 ### 从桌面 App 删除 <a href="#delete-from-desktop-apps" id="delete-from-desktop-apps"></a>
 
-要从桌面 App 删除 Send，请使用 **≡**&#x9009;项菜单然后选择 🗑️**删除**按钮：
+要从桌面 App 删除 Send，请使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单然后选择 <i class="fa-trash-can">:trash-can:</i>**删除**按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4IgMnKAEjk16bJdbuUkVeH/fb20d049505d8a69dce6f39e4e4a9c4c/2026-04-23_11-49-34.png?w=800&#x26;fm=avif" alt=""><figcaption><p>从桌面 App 删除 Send</p></figcaption></figure></div>
 {% endtab %}
@@ -94,7 +94,7 @@
 {% tab title="移动端" %}
 ### 从移动 App 删除 <a href="#delete-from-mobile-apps" id="delete-from-mobile-apps"></a>
 
-要从移动 App 删除 Send，点击 **⋯**&#x9009;项菜单然后点击**删除**选项：
+要从移动 App 删除 Send，点击 <i class="fa-ellipsis">:ellipsis:</i> 选项菜单然后点击**删除**选项：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4jWcljHXWnKZcSZZmVNyQo/f460782cfec20a6246b9fcab1b4d9d1e/send-delete-mobile.png?w=650&#x26;fm=avif" alt=""><figcaption><p>从移动 App 删除 Send</p></figcaption></figure></div>
 {% endtab %}

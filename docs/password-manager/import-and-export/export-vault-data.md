@@ -6,11 +6,11 @@
 
 导出您的密码库数据，包括登录和笔记，以备份重要信息或[转移到新的 Bitwarden 密码库](import-data.md)。在导出前，数据会通过客户端本地解密，因此不会在互联网上传输未加密的数据。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您将 Bitwarden 添加到新设备，并且您的账户托管在我们的云服务器上，您无需创建导出，只需在您的新设备上[下载 Bitwarden](https://bitwarden.com/download/)，然后使用您现有的账户登录即可。
 {% endhint %}
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 除非您使用[加密导出](encrypted-exports.md)，否则不要通过不安全的渠道（例如电子邮件）来存储或发送导出的文件，用完后请立即将其删除。
 {% endhint %}
 
@@ -18,8 +18,8 @@
 
 导出可以下载为以下几种格式：
 
-* `.json`（明文）
-* `.csv`（明文）
+* `.json`（纯文本）
+* `.csv`（纯文本）
 * [`.json (Encrypted)`](encrypted-exports.md)（加密）
 * `.zip (with attachments)`（包含 `.json` 文件和您的附件）
 
@@ -27,7 +27,7 @@
 `.zip` 导出目前仅适用于个人密码库数据。
 {% endhint %}
 
-* **（仅限iOS 26）**&#x76F4;接导出到其他 App
+* **（仅限 iOS 26）**&#x76F4;接导出到其他 App
 
 {% hint style="info" %}
 直接导出到其他 App 需要目标 App 支持 [FIDO 凭证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)。
@@ -40,7 +40,7 @@
 * [存储的通行密钥](../autofill/more-autofill-options/autofill-passkeys.md)
 * [SSH 密钥](../developer-tools/ssh/ssh-agent.md)
 
-所有导出格式都不包含回收站项目或 [Send](../bitwarden-send/about-send.md)。有关个人密码库导出中包含的所有项目和字段的完整列表，请查看这个 **⬇️** [.json 示例](https://bitwarden.com/assets/3klSoZBBd57skEvwFkcMJc/9dfe5d696c102cd32da88dc325706738/Individual_vault_export.json)。
+所有导出格式都不包含回收站项目或 [Send](../bitwarden-send/about-send.md)。有关个人密码库导出中包含的所有项目和字段的完整列表，请查看这个 <i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>**️** [.json 示例](https://bitwarden.com/assets/3klSoZBBd57skEvwFkcMJc/9dfe5d696c102cd32da88dc325706738/Individual_vault_export.json)。
 
 ## 导出个人密码库 <a href="#export-a-personal-vault" id="export-a-personal-vault"></a>
 
@@ -61,18 +61,18 @@
 3、从**导出自**下拉菜单，中选择要下载的数据：
 
 * 选择**我的密码库**以导出您个人密码库中的项目。
-* 选择某个组织密码库的名称，这将导出您具有[**管理集合**](../../admin-console/manage-shared-items/collections/collection-permissions.md)权限的集合中的数据。
+* 选择某个组织密码库的名称，这将导出您拥有[**管理集合**](../../admin-console/manage-shared-items/collections/collection-permissions.md)权限的集合中的数据。
 
 4、选择**文件格式**：`.json`、`.csv`、`.json (Encrypted)` 或 `.zip (with attachments)`。
 
-5、（可选）如果您选择 `.json (Encrypted)`，请为[加密文件](encrypted-exports.md)选择**导出类型**：
+5、（可选）如果您选择 `.json (Encrypted)`，请为此[加密文件](encrypted-exports.md)选择**导出类型**：
 
-* **账户限制**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
+* **账户限制**：该文件只能导入到生成加密导出文件的当前 Bitwarden 账户。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **账户限制**的导出只能导入到其来源的同一账户。账户限制的导出不能导入到其他账户。包括：
 
-* 使用相同电子邮箱地址但位于不同[地理位置](../../security/server-geographies.md)或自托管服务器上的账户
+* 具有相同电子邮箱地址但位于不同[地理位置](../../security/server-geographies.md)或自托管服务器上的账户
 * 具有相同电子邮箱地址的其他账户，即使原始账户已被删除
 
 此外，[轮换您的账户加密密钥](../../security/encryption/encryption-key-rotation.md)将使账户限制的导出无法解密。**如果您轮换了账户加密密钥，请使用新加密密钥导出的新文件替换任何旧文件。**
@@ -82,8 +82,8 @@
 
 * **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
 
-{% hint style="success" %}
-选择 **⟳**&#x4EE5;安全地生成用于导出的唯一密码。如果您选择此操作，请务必将此密码保存在安全的地方。
+{% hint style="success" icon="lightbulb" %}
+选择 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i> 以安全地生成用于导出的唯一密码。如果您选择此操作，请务必将此密码保存在安全的地方。
 {% endhint %}
 
 6、选择**导出**。
@@ -96,7 +96,7 @@
 {% tab title="浏览器扩展" %}
 要导出密码库数据：
 
-1、选择 **⚙️设置**图标。
+1、选择 <i class="fa-gear-complex">:gear-complex:</i>**设置**图标。
 
 2、选择**密码库选项**。
 
@@ -111,12 +111,12 @@
 
 6、（可选）如果您选择 `.json (Encrypted)`，请为[加密文件](encrypted-exports.md)选择**导出类型**：
 
-* **账户限制**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
+* **账户限制**：该文件只能导入到生成加密导出文件的当前 Bitwarden 账户。
 
 {% hint style="danger" %}
 **账户限制**的导出只能导入到其来源的同一账户。账户限制的导出不能导入到其他账户。包括：
 
-* 使用相同电子邮箱地址但位于不同[地理位置](../../security/server-geographies.md)或自托管服务器上的账户
+* 具有相同电子邮箱地址但位于不同[地理位置](../../security/server-geographies.md)或自托管服务器上的账户
 * 具有相同电子邮箱地址的其他账户，即使原始账户已被删除
 
 此外，[轮换您的账户加密密钥](../../security/encryption/encryption-key-rotation.md)将使账户限制的导出无法解密。**如果您轮换了账户加密密钥，请使用新加密密钥导出的新文件替换任何旧文件。**
@@ -127,7 +127,7 @@
 * **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
 
 {% hint style="success" %}
-选择 **⟳**&#x4EE5;安全地生成用于导出的唯一密码。如果您选择此操作，请务必将此密码保存在安全的地方。
+选择 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i> 以安全地生成用于导出的唯一密码。如果您选择此操作，请务必将此密码保存在安全的地方。
 {% endhint %}
 
 7、选择**导出密码库**。
@@ -153,12 +153,12 @@
 
 4、（可选）如果您选择 `.json (Encrypted)`，请为[加密文件](encrypted-exports.md)选择**导出类型**：
 
-* **账户限制**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
+* **账户限制**：该文件只能导入到生成加密导出文件的当前 Bitwarden 账户。
 
 {% hint style="danger" %}
 **账户限制**的导出只能导入到其来源的同一账户。账户限制的导出不能导入到其他账户。包括：
 
-* 使用相同电子邮箱地址但位于不同[地理位置](../../security/server-geographies.md)或自托管服务器上的账户
+* 具有相同电子邮箱地址但位于不同[地理位置](../../security/server-geographies.md)或自托管服务器上的账户
 * 具有相同电子邮箱地址的其他账户，即使原始账户已被删除
 
 此外，[轮换您的账户加密密钥](../../security/encryption/encryption-key-rotation.md)将使账户限制的导出无法解密。**如果您轮换了账户加密密钥，请使用新加密密钥导出的新文件替换任何旧文件。**
@@ -169,7 +169,7 @@
 * **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
 
 {% hint style="success" %}
-选择 **⟳**&#x4EE5;安全地生成用于导出的唯一密码。如果您选择此操作，请务必将此密码保存在安全的地方。
+选择 <i class="fa-arrows-rotate-reverse">:arrows-rotate-reverse:</i> 以安全地生成用于导出的唯一密码。如果您选择此操作，请务必将此密码保存在安全的地方。
 {% endhint %}
 
 5、选择**导出密码库**。
@@ -188,7 +188,7 @@
 
 要导出密码库数据：
 
-1、点击 ⚙️**设置**图标。
+1、点击 <i class="fa-gears">:gears:</i>**设置**图标。
 
 2、点击**密码库**。
 
@@ -208,13 +208,13 @@
 
 6、输入您的主密码。
 
-8、选择**导出**。
+7、选择**导出**。
 
 导出的文件将保存到**设备设置的位置**。默认情况下，这通常是「下载」文件夹，但您可以在设备设置中更改它。
 {% endtab %}
 
 {% tab title="CLI" %}
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在导出之前请使用 `bw sync` 同步您的密码库，以确保包含最新的信息。
 {% endhint %}
 

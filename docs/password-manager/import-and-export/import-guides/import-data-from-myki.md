@@ -162,7 +162,7 @@ nickname,status,tags,authToken,additionalInfo
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="info" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
@@ -252,7 +252,7 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="info" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 

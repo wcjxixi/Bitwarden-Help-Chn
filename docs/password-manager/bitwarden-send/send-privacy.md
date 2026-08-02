@@ -30,11 +30,11 @@
 
 ### 更改 Send 密码 <a href="#change-send-passwords" id="change-send-passwords"></a>
 
-您可以随时在**编辑 Send** 视图中更改 Send 密码。更改 Send 密码不会要求您输入以前的密码。更改 Send 密码时，**密码**字段将更改为**新密码**。
+您可以随时在[编辑 Send](create-a-send.md#edit-a-send) 时更改 Send 密码。更改 Send 密码不会要求您输入以前的密码。更改 Send 密码时，**密码**字段将更改为**新密码**。
 
 ### 移除 Send 密码 <a href="#remove-send-passwords" id="remove-send-passwords"></a>
 
-您可以随时使用 **⟲移除密码**菜单选项移除 Send 密码。移除 Send 密码不会要求您输入以前的密码：
+您可以随时使用 <i class="fa-arrow-u-turn-up-left">:arrow-u-turn-up-left:</i>**移除密码**菜单选项移除 Send 密码。移除 Send 密码不会要求您输入以前的密码：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/GIVACRQbGQyj0fLzLUZOc/b7a14b2ef75eea16f9b9376418cca1e7/remove-password_protection.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>移除密码保护</p></figcaption></figure></div>
 
@@ -55,6 +55,6 @@
 
 ## 隐藏文本 <a href="#hide-text" id="hide-text"></a>
 
-对于文本 Send，切换到**当访问 Send 时，默认隐藏文本**选项，以要求接收者 **👁‍🗨切换可见性**才能查看其内容。隐藏文本是一个很好的方法，它可以确保内容不会暴露给无意的旁人：
+对于文本 Send，切换到**当访问 Send 时，默认隐藏文本**选项，以要求接收者 <i class="fa-eye">:eye:</i>**切换可见性**才能查看其内容。隐藏文本是一个很好的方法，它可以确保内容不会暴露给无意的旁人：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4KcdIWqSnADnv1TMtsrSIr/f9ab606faf3e7395f25b02ed8a11fc14/hidden_text.png?w=484&#x26;fm=avif" alt=""><figcaption><p>接收隐藏了文本的 Send</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4KcdIWqSnADnv1TMtsrSIr/f9ab606faf3e7395f25b02ed8a11fc14/hidden_text.png?w=484&#x26;fm=avif" alt=""><figcaption><p>接收隐藏文本 Send</p></figcaption></figure></div>

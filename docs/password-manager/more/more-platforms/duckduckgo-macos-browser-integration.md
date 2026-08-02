@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/duckduckgo-macos-browser-integration/)
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 要将 DuckDuckGo macOS App 与 Bitwarden 集成，您需要从 [https://duckduckgo.com/mac](https://duckduckgo.com/mac) 下载 DuckDuckGo macOS 浏览器，而不是从 macOS App Store 下载。
 {% endhint %}
 

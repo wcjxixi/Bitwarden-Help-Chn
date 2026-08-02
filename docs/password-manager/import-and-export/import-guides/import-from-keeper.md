@@ -148,23 +148,23 @@ Bitwarden 目前支持 Keeper 短信、验证器 App 和 Keeper DNA 选项用于
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="info" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
-* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**管理集合**](../../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
+* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
 
 5、从**文件格式**下拉菜单中，选择[导入文件的格式](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
 6、选择**选择文件**然后选取一个文件，或将文件内容复制并粘贴到文本框中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
 7、选择**导入数据**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
-8、数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
+8、数据导入后，请从您的设备中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
 {% endtab %}
 
 {% tab title="移动端" %}
@@ -238,21 +238,21 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="info" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
-* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**管理集合**](../../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
+* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
 
 3、从**文件格式**下拉菜单中，选择[导入文件的格式](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
 4、选择**选择文件**然后选取一个文件，或将文件内容复制并粘贴到文本框中。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
-5、选择**导入**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+5、选择**导入数据**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
 6、数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
 {% endtab %}

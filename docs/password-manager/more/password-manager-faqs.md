@@ -74,7 +74,7 @@
 
 **答：**&#x53EF;以！在 Windows 上，您可以将环境变量 `ELECTRON_NO_UPDATER=1` 添加到您的桌面 App 模板中，以阻止自动更新进程在您的终端用户工作站上尝试运行并失败。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 与任何软件一样，运行旧版本可能会带来安全风险。
 {% endhint %}
 
@@ -84,46 +84,6 @@
 
 * (Windows) `Bitwarden.exe --enable-logging=file --log-file=bitwarden.log`
 * (macOS) `./Bitwarden.app/Contents/MacOS/Bitwarden --enable-logging=file --log-file=bitwarden.log`
-
-### ~~问：我需要旧密码！可以查看我在 Bitwarden 中更改过的密码的历史记录吗？~~ <a href="#q-i-need-an-old-password-can-i-view-the-history-of-a-password-that-i-changed-in-bitwarden" id="q-i-need-an-old-password-can-i-view-the-history-of-a-password-that-i-changed-in-bitwarden"></a>
-
-~~**答：**&#x53EF;以。您可以查看登录项目的最近 5 个密码的历史记录。~~
-
-{% tabs %}
-{% tab title="网页 App" %}
-~~打开相关项目然后选择**密码历史记录**：~~
-
-<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/RT3R5a33WrejA8qnIcmqa/7600909424c7c74ac3b6b5fa76ae42ea/2024-12-02_13-56-29.png?_a=DAJCwlWIZAAB" alt=""><figcaption><p>网页密码历史记录</p></figcaption></figure>
-{% endtab %}
-
-{% tab title="移动 App" %}
-~~打开相关项目，然后选择窗口底部**密码历史记录**旁边的数字：~~
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1RJbcOMMkIfVTprx3NZbyQ/bd471e08b166d936958927dcacdbd0d8/IMG_1998.jpg?_a=DAJCwlWIZAAB" %}
-移动端密码历史记录
-{% endembed %}
-{% endtab %}
-
-{% tab title="浏览器扩展" %}
-~~打开相关项目然后选择**密码历史记录**：~~
-
-<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2XVetRKi7VLJ7Ctq7scOll/b8addc21adcad38e50def42abebc1e80/Password_History.png?_a=DAJCwlWIZAAB" alt=""><figcaption><p>浏览器扩展密码历史记录</p></figcaption></figure>
-{% endtab %}
-
-{% tab title="桌面 App" %}
-~~打开相关项目，然后选择窗口底部**密码历史记录**旁边的数字：~~
-
-<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/lvf2rvKuNcJNUYzXOTI99/35f48c812a083b0987b6f3fc2c022764/2025-03-05_15-42-55.png?_a=DAJCwlWIZAAB" alt=""><figcaption><p>桌面端密码历史记录</p></figcaption></figure>
-{% endtab %}
-{% endtabs %}
-
-{% hint style="danger" %}
-~~查看密码历史会立即以纯文本的方式展示历史密码值。~~
-{% endhint %}
-
-### ~~问：忘记了保存已生成的密码！可以查看已生成的密码的历史记录吗？~~ <a href="#q-i-forgot-to-save-a-generated-password-can-i-view-the-history-of-generated-passwords" id="q-i-forgot-to-save-a-generated-password-can-i-view-the-history-of-generated-passwords"></a>
-
-~~**答：**&#x53EF;以。您可以查看密码生成器的历史记录，但请注意，每个 App 的历史记录是独立的，不会在设备之间同步。~~
 
 ### 问：当我清空我的密码库时会发生什么？ <a href="#what-happens-when-i-purge-my-vault" id="what-happens-when-i-purge-my-vault"></a>
 
@@ -142,7 +102,7 @@
 {% endtab %}
 
 {% tab title="组织密码库" %}
-{% hint style="danger" %}
+{% hint style="warning" %}
 清空密码库是永久性的。无法撤销。
 {% endhint %}
 
@@ -184,4 +144,4 @@
 
 ### 问：Bitwarden 可以安装在 Android 隐私空间中吗？ <a href="#q-can-bitwarden-be-installed-in-an-android-private-space" id="q-can-bitwarden-be-installed-in-an-android-private-space"></a>
 
-**答：**&#x76EE;前，Bitwarden 不建议在隐私空间（15.0 以上）安装 Android 应用程序，因为隐私空间不适合需要在后台运行自动填充和同步等功能的 App。
+**答：**&#x76EE;前，Bitwarden 不建议在隐私空间 (15.0+) 安装 Android 应用程序，因为隐私空间不适合需要在后台运行自动填充和同步等功能的 App。

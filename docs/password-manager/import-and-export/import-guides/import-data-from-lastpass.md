@@ -79,17 +79,17 @@
 
 1、登录到 Password Manager 浏览器扩展或桌面 App。
 
-2、在浏览器扩展中，选择**设置**选项卡，然后选择密码库然后选择**导入项目**选项。或者，在桌面 App 中，选择**文件** > **导入数据**。
+2、在浏览器扩展中，选择**设置**选项卡，然后选择**密码库**然后选择**导入项目**选项。或者，在桌面 App 中，从导航菜单选择**导入**。
 
 3、从下拉菜单中完成以下字段：
 
 * **密码库**或**导入目的地**：选择导入目的地，例如您的个人密码库或您拥有访问权限的组织密码库。
 * **文件夹**或**集合**：选择您希望将导入的内容移动到的特定文件夹或您拥有访问权限的组织集合。
-* [**文件格式**](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择 LastPass。
+* [**文件格式**](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)：选择 **LastPass**。
 * 在 LastPass 说明框中，选择**直接从 LastPass 导入**选项。
 * 输入您的 **LastPass 电子邮箱地址**。如果您代表企业进行导入，我们建议您使用 LastPass [管理员](https://support.lastpass.com/s/document-item?language=en_US\&bundleId=lastpass\&topicId=LastPass/uac_admin_roles.html&_LANG=enus)凭据。使用超级管理员凭据可能会导致导入失败。
 
-4、选择**导入**按钮以触发导入。
+4、选择**导入数据**按钮以触发导入。
 
 5、将提示您输入 LastPass 主密码，或者如果您的 LastPass 账户使用 SSO，登录到您的 IdP。无论哪种情况，请按照提示登录到您的 LastPass 账户。
 

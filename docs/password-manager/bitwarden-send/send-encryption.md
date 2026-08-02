@@ -12,7 +12,7 @@ Send 是一种安全和短暂的机制，用于向任何人传输敏感信息，
 
 3、派生的加密密钥用于 AES-256 加密 Send，包括其文件/文本数据和元数据（名称、文件名、备注等）。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 任何用于保护 Send 的[密码](send-privacy.md#send-passwords)都**不涉及 Send 的加密**和解密。密码纯粹是一种验证方式，但是在密码验证成功之前，将[阻止解密](send-encryption.md#send-decryption)受密码保护的 Send。
 {% endhint %}
 
@@ -41,7 +41,7 @@ Send 是一种安全和短暂的机制，用于向任何人传输敏感信息，
 5. Bitwarden服务器将加密后的 Send 返回给网页密码库客户端。
 6. 网页密码库客户端使用加密密钥在本地对 Send 进行解密。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果 Send 是有[密码保护](send-privacy.md#send-passwords)的，那么 Send 的解密将**被身份验证所阻止**。服务器验证密码，并且仅在密码正确的情况下才返回 Send。请勿将其与用于解密的密码相混淆。
 {% endhint %}
 
@@ -52,7 +52,7 @@ Send 是一种安全和短暂的机制，用于向任何人传输敏感信息，
 1. 为 Send 添加密码然后通过单独的渠道分享此密码。
 2. 要求对指定的 Send 收件人进行电子邮箱验证。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以发送不包含密钥的链接（即最后一个正斜杠之前的所有内容）并通过单独的通道发送密钥。这种额外的安全措施可以利用上述的两个选项。重新组装 Send URL 时，请确保同时包含 Send ID 和加密密钥。
 
 例如：`https://vault.bitwarden.com/#/send/send_id/encryption_key`

@@ -73,7 +73,7 @@
 8、数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。您可能还需要从 KeePass 中删除您的数据。
 
 {% hint style="info" %}
-如果您的文件中包含任何启用了高级设置**在进程内存中保护值**的 KeePass 字段，该字段在 Bitwarden 密码库中将变为[隐藏字段](../../your-vault/vault-items/custom-fields.md)。
+如果您的文件中包含任何启用了**在进程内存中保护值**的高级设置的 KeePass 字段，该字段在 Bitwarden 密码库中将变为[隐藏字段](../../your-vault/vault-items/custom-fields.md)。
 {% endhint %}
 {% endtab %}
 
@@ -111,7 +111,7 @@
 6、数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。您可能还需要从 KeePass 中删除您的数据。
 
 {% hint style="info" %}
-如果您的文件中包含任何启用了高级设置**在进程内存中保护值**的 KeePass 字段，该字段在 Bitwarden 密码库中将变为[隐藏字段](../../your-vault/vault-items/custom-fields.md)。
+如果您的文件中包含任何启用了**在进程内存中保护值**的高级设置的 KeePass 字段，该字段在 Bitwarden 密码库中将变为[隐藏字段](../../your-vault/vault-items/custom-fields.md)。
 {% endhint %}
 {% endtab %}
 {% endtabs %}

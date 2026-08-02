@@ -193,7 +193,7 @@ bw send list [options]
 bw send delete <id>
 ```
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您不知道要删除的 Send 的确切 `id`，请使用 `bw send get <search term>` 进行查找。
 {% endhint %}
 

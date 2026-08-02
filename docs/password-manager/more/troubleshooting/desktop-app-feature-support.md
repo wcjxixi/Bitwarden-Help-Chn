@@ -6,7 +6,7 @@
 
 Bitwarden 桌面 App 可通过多种渠道或安装方式在 Windows、macOS 和 Linux 上使用，但不同渠道提供的功能可能有所不同。本文将介绍各个渠道所支持的功能，用于帮助您决定使用哪种方式来安装桌面 App：
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 请跳转至本页底部查看表格中列出的[各项功能的描述](desktop-app-feature-support.md#feature-descriptions)。
 {% endhint %}
 
@@ -20,33 +20,33 @@ Bitwarden 桌面 App 可通过多种渠道或安装方式在 Windows、macOS 和
 
 ### Windows
 
-| 功能      | 安装包 (.exe)             | Microsoft Store      | 便携版 App (.exe)       |
-| ------- | ---------------------- | -------------------- | -------------------- |
-| 自动更新    | :white\_check\_mark:更改 | :white\_check\_mark: |                      |
-| 桌面生物识别  | :white\_check\_mark:   |                      | :white\_check\_mark: |
-| 扩展生物识别  | :white\_check\_mark:   |                      | :white\_check\_mark: |
-| 与操作系统集成 | :white\_check\_mark:   | :white\_check\_mark: | :white\_check\_mark: |
-| 启动时启动   | :white\_check\_mark:   |                      | :white\_check\_mark: |
-| 直接导入器   | :white\_check\_mark:   |                      |                      |
-| 安全存储    | :white\_check\_mark:   | :white\_check\_mark: |                      |
-| 进程隔离    | :white\_check\_mark:   | :white\_check\_mark: |                      |
+| 功能      | 安装包 (.exe)                                    | Microsoft Store                               | 便携版 App (.exe)                                |
+| ------- | --------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
+| 自动更新    | <i class="fa-circle-check">:circle-check:</i> | <i class="fa-circle-check">:circle-check:</i> |                                               |
+| 桌面生物识别  | <i class="fa-circle-check">:circle-check:</i> |                                               | <i class="fa-circle-check">:circle-check:</i> |
+| 扩展生物识别  | <i class="fa-circle-check">:circle-check:</i> |                                               | <i class="fa-circle-check">:circle-check:</i> |
+| 与操作系统集成 | <i class="fa-circle-check">:circle-check:</i> | <i class="fa-circle-check">:circle-check:</i> | <i class="fa-circle-check">:circle-check:</i> |
+| 启动时启动   | <i class="fa-circle-check">:circle-check:</i> |                                               | <i class="fa-circle-check">:circle-check:</i> |
+| 直接导入器   | <i class="fa-circle-check">:circle-check:</i> |                                               |                                               |
+| 安全存储    | <i class="fa-circle-check">:circle-check:</i> | <i class="fa-circle-check">:circle-check:</i> |                                               |
+| 进程隔离    | <i class="fa-circle-check">:circle-check:</i> | <i class="fa-circle-check">:circle-check:</i> |                                               |
 
 ### macOS
 
-| 功能      | 安装包 (.dmg)           | App Store            |
-| ------- | -------------------- | -------------------- |
-| 自动更新    | :white\_check\_mark: | :white\_check\_mark: |
-| 桌面生物识别  |                      | :white\_check\_mark: |
-| 扩展生物识别  |                      | :white\_check\_mark: |
-| 与操作系统集成 | :white\_check\_mark: | :white\_check\_mark: |
-| 启动时启动   | :white\_check\_mark: | :white\_check\_mark: |
-| 直接导入器   | :white\_check\_mark: |                      |
-| 安全存储    | :white\_check\_mark: | :white\_check\_mark: |
-| 进程隔离    | :white\_check\_mark: | :white\_check\_mark: |
+| 功能      | 安装包 (.dmg)                                    | App Store                                     |
+| ------- | --------------------------------------------- | --------------------------------------------- |
+| 自动更新    | <i class="fa-circle-check">:circle-check:</i> | <i class="fa-circle-check">:circle-check:</i> |
+| 桌面生物识别  |                                               | <i class="fa-circle-check">:circle-check:</i> |
+| 扩展生物识别  |                                               | <i class="fa-circle-check">:circle-check:</i> |
+| 与操作系统集成 | <i class="fa-circle-check">:circle-check:</i> | <i class="fa-circle-check">:circle-check:</i> |
+| 启动时启动   | <i class="fa-circle-check">:circle-check:</i> | <i class="fa-circle-check">:circle-check:</i> |
+| 直接导入器   | <i class="fa-circle-check">:circle-check:</i> |                                               |
+| 安全存储    | <i class="fa-circle-check">:circle-check:</i> | <i class="fa-circle-check">:circle-check:</i> |
+| 进程隔离    | <i class="fa-circle-check">:circle-check:</i> | <i class="fa-circle-check">:circle-check:</i> |
 
 ### Linux
 
-<table><thead><tr><th>功能</th><th width="115.7265625">AppImage</th><th width="82.9921875">Snap</th><th width="96.6640625">Flatpak</th><th width="81.42578125">.deb</th><th width="82.4140625">.rpm</th></tr></thead><tbody><tr><td>自动更新</td><td>*</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td></td><td></td></tr><tr><td>桌面生物识别</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td>**</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>扩展生物识别</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>与操作系统集成</td><td>*</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>启动时启动</td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td>直接导入器</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td></td><td></td><td></td><td></td></tr><tr><td>安全存储</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td>***</td><td>***</td><td>***</td><td>***</td></tr><tr><td>进程隔离</td><td>****</td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td>****</td><td>****</td></tr></tbody></table>
+<table><thead><tr><th>功能</th><th width="115.7265625">AppImage</th><th width="82.9921875">Snap</th><th width="96.6640625">Flatpak</th><th width="81.42578125">.deb</th><th width="82.4140625">.rpm</th></tr></thead><tbody><tr><td>自动更新</td><td>*</td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td><td></td><td></td></tr><tr><td>桌面生物识别</td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td><td>**</td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td></tr><tr><td>扩展生物识别</td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td></tr><tr><td>与操作系统集成</td><td>*</td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td></tr><tr><td>启动时启动</td><td></td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td><td><i class="fa-circle-check">:circle-check:</i></td></tr><tr><td>直接导入器</td><td><i class="fa-circle-check">:circle-check:</i></td><td></td><td></td><td></td><td></td></tr><tr><td>安全存储</td><td><i class="fa-circle-check">:circle-check:</i></td><td>***</td><td>***</td><td>***</td><td>***</td></tr><tr><td>进程隔离</td><td>****</td><td></td><td><i class="fa-circle-check">:circle-check:</i></td><td>****</td><td>****</td></tr></tbody></table>
 
 \* - 可以使用 AppImageLauncher 等应用程序进行设置。
 

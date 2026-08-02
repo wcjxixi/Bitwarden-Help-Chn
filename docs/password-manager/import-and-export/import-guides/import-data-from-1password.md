@@ -46,7 +46,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 
 {% tabs %}
 {% tab title="网页 App" %}
-要将数据导入到您的密码库：
+要将数据导入到您的 Bitwarden 密码库：
 
 1、选择**工具**。
 
@@ -62,7 +62,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
-* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**管理集合**](../../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
+* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
 
 4、从**文件格式**下拉菜单中，选择您的导出数据的[文件格式](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -81,7 +81,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-要导入数据到您的密码库：
+要将数据导入到您的密码库：
 
 1、选择**设置**。
 
@@ -93,11 +93,11 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="info" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
-* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**管理集合**](../../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
+* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
 
 5、从**文件格式**下拉菜单中，选择[导入文件的格式](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -107,9 +107,9 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
-7、选择**导入**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+7、选择**导入数据**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
-8、数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
+8、数据导入后，请从您的设备中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
 {% endtab %}
 
 {% tab title="移动端" %}
@@ -183,11 +183,11 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 
 * 要将数据保存到您的个人密码库中，请选择**我的密码库**。（可选）选择一个现有[**文件夹**](../../your-vault/vault-navigation/folders.md)来组织导入的项目。
 
-{% hint style="info" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的数据文件包含您之前密码管理器中的文件夹，并且您从下拉菜单中选择了一个目标文件夹，则导入的文件夹将被嵌套在您选择的文件夹内。
 {% endhint %}
 
-* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**管理集合**](../../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
+* 要将数据保存到某个组织密码库中，请选择组织的名称。（可选）选择一个[集合](../../../admin-console/manage-shared-items/collections/create-collections.md)来组织导入的项目并与其他成员共享。（您只能选择您具有[**可以管理**](../../../admin-console/manage-shared-items/collections/collection-permissions.md#permissions)权限的集合。）
 
 3、从**文件格式**下拉菜单中，选择[导入文件的格式](../import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 
@@ -197,26 +197,28 @@ Bitwarden 支持 [FIDO 凭据交换协议 (CXP)](https://fidoalliance.org/specif
 导入过程不会检查重复。如果您多次导入同一文件或导入的项目已经存在于密码库中，则会创建重复的项目。
 {% endhint %}
 
-5、选择**导入**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
+5、选择**导入数据**。如果您正在导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
 6、数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
 {% endtab %}
 
 {% tab title="CLI" %}
-要通过 CLI 将数据导入您的密码库，请使用以下命令：
+要将数据导入您的密码库，请使用以下 [CLI](../../developer-tools/cli/password-manager-cli.md) 命令：
 
-```bash
+```shell
 bw import <format> <path>
 ```
 
 `bw import` 命令需要格式（使用 `bw import --formats` 获取格式列表）和路径，例如：
 
-```bash
+```shell
 bw import <format> /Users/myaccount/Documents/mydata.csv
 ```
 
 数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
 {% endtab %}
 {% endtabs %}
+
+
 
 如果出现「导入错误」消息，则不会有任何数据添加到您的密码库中。[修复导入文件问题](../import-data.md#troubleshoot-import-errors)然后重试。

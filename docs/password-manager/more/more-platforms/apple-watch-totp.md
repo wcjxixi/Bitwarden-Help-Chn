@@ -20,7 +20,7 @@ TOTP 验证码的生成要求 Bitwarden 高级版或付费组织（家庭版、�
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6pWZMbYpUERAe7wPVKBANZ/eb3046159b774c207510b762947e144d/Screen_Shot_2022-12-02_at_3.53.40_PM__2_.png?w=341&#x26;fm=avif" alt=""><figcaption><p>Apple Watch Bitwarden App</p></figcaption></figure></div>
 
-3、在 iPhone 移动 App 上访问您的 Bitwarden 账户，然后选择 **⚙️设置**选项卡。
+3、在 iPhone 移动 App 上访问您的 Bitwarden 账户，然后选择 <i class="fa-gear-complex">:gear-complex:</i>**设置**选项卡。
 
 4、选择**其他**选项，然后打开**连接到 Watch**。选择后，在弹出窗口中确认该设置已**打开**。
 
@@ -63,7 +63,7 @@ Bitwarden 的零知识加密与 Apple 的 WatchConnectivity 和安全隔离区 (
 * 设置安全密码，防止在 Apple Watch 上对 Bitwarden 进行不必要的访问。只有 Apple Watch 解锁后，才可以查看设备上的信息。
 * 在 Apple Watch 上启用手腕检测，以便设备从用户手腕上取下后自动锁定。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 如果启用了「使用 iPhone 解锁」设置，如果设备在附近，解锁连接的 iPhone 时，将自动解锁您的 Apple Watch。这可能会暴露 Apple Watch 上的 Bitwarden 信息。
 {% endhint %}
 

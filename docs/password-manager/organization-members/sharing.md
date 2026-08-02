@@ -19,9 +19,9 @@
 {% tab title="添加项目" %}
 要从网页 App、浏览器扩展、移动端或桌面端添加新的共享项目，请执行以下操作：
 
-1、在任何 Bitwarden App 的**密码库**视图中，选择 **✚新增**按钮，然后选择所需的项目类型。
+1、在任何 Bitwarden App 的**密码库**视图中，选择 <i class="fa-plus">:plus:</i>**新增**按钮，然后选择所需的项目类型。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从 **Admin Console** 执行此步骤，以跳过此过程中的一些步骤。
 {% endhint %}
 
@@ -73,7 +73,7 @@
 
 1、在**密码库**视图中，使用复选框选择要共享的项目。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 组织[所有者、管理员和某些自定义用户](../../admin-console/manage-members/member-roles.md)也可以直接从 **Admin Console** 执行此步骤，以跳过此过程中的一些步骤。
 {% endhint %}
 
@@ -128,7 +128,7 @@
 要从移动 App 共享现有项目：
 
 1. 点击要共享的密码库项目，以显示**查看项目**面板。
-2. 点击 **≡**&#x9009;项菜单，然后选择**移动到组织**选项。
+2. 点击 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 选项菜单，然后选择**移动到组织**选项。
 3. 在**移动到组织**面板上：
    * 使用**组织**下拉菜单选择希望此项目归属的组织。
    * 使用**集合**选择器选择要与之共享此项目的集合。在这些集合上设置的**访问权限**设置将决定谁可以访问该项目。
@@ -192,9 +192,9 @@ bw move <itemid> <organizationid> [encodedJson]
 
 拥有项目所存储的集合的[管理集合权限](../../admin-console/manage-shared-items/collections/collection-permissions.md)的用户可以选择停止与组织共享项目：
 
-1. 使用项目的 **≡**&#x9009;项菜单然后选择**克隆**，以克隆该项目。
+1. 使用项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 选项菜单然后选择**克隆**，以克隆该项目。
 2. 在**新建项目**面板上，使用**所有者**下拉菜单选择您的账户电子邮箱。这将确保项目被克隆到非共享上下文中。
 3. **保存**克隆的项目。
-4. 使用项目的 **≡**&#x9009;项菜单然后选择**删除**，以删除原始项目。
+4. 使用项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 选项菜单然后选择**删除**，以删除原始项目。
 
 请注意，在某些情况下，将项目移动到具有更高访问控制限制的集合中，或移动到只有您才能访问的集合中，可能比直接从组织中移除项目更有效。

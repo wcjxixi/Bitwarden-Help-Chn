@@ -36,13 +36,13 @@ bw share --help
 {% tab title="本地可执行文件" %}
 CLI 的本地打包版本可用于每个平台，并且无须依赖。使用以下链接下载：
 
-* <img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line"> [Windows x64](https://vault.bitwarden.com/download/?app=cli\&platform=windows)
-* <img src="../../../../.gitbook/assets/apple-24.png" alt="" data-size="line"> [macOS x64](https://vault.bitwarden.com/download/?app=cli\&platform=macos)
-* <img src="../../../../.gitbook/assets/linux-24.png" alt="" data-size="line"> [Linux x64](https://vault.bitwarden.com/download/?app=cli\&platform=linux)
+* <i class="fa-windows">:windows:</i> [Windows x64](https://vault.bitwarden.com/download/?app=cli\&platform=windows)
+* <i class="fa-apple">:apple:</i> [macOS x64](https://vault.bitwarden.com/download/?app=cli\&platform=macos)
+* <i class="fa-linux">:linux:</i> [Linux x64](https://vault.bitwarden.com/download/?app=cli\&platform=linux)
 
 请注意，当使用下载的本机可执行文件时，您需要将可执行文件添加到您的 PATH 中，或者从文件下载到的目录运行命令。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在 Linux 和 UNIX 系统中，您可能会收到 `Permission denied` （权限被拒绝）的消息。通过运行下面的命令授予权限：
 
 ```shellscript
@@ -121,7 +121,7 @@ bw <command>
 * [使用 API 密钥](password-manager-cli.md#using-an-api-key)
 * [使用 SSO](password-manager-cli.md#using-sso)
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 无论您使用哪个选项，都要求使用主密码来 `unlock` 客户端，以便使用[会话密钥](password-manager-cli.md#unlock)访问数据。[电子邮箱和主密码](password-manager-cli.md#using-email-and-password)选项将验证您的身份并同时生成会话密钥，但如果使用 [API 密钥](password-manager-cli.md#using-an-api-key)或 [SSO](password-manager-cli.md#using-sso)，则需要您后续使用 `unlock` 命令来生成会话密钥（如果您要直接操作数据）。
 
 [使用受信任设备加入组织](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md#impact-on-master-passwords)的用户将无法通过 CLI 访问数据。但是，有一些命令不需要解密数据，因此无需主密码也可使用，包括 `config`、`encode`、`generate`、`update` 以及 `status`。
@@ -145,7 +145,7 @@ bw login [email] [password] --method <method> --code <code>
 
 有关两步登录的 `<method>` 值，请参阅[附录 → 枚举](password-manager-cli.md#enums)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **提示进行额外的身份验证**或收到 `Your authentication request appears to be coming from a bot.` 的错误提示？请使用您的 API 密钥 `client_secret` 回答身份验证挑战。[了解更多](cli-authentication-challenges.md)。
 {% endhint %}
 
@@ -159,7 +159,7 @@ bw login --apikey
 
 此命令将提示您输入个人 `client_id` 和 `client_secret`。使用这些值对您的会话进行身份验证后，您就可以使用 `unlock` 命令了（[了解更多](password-manager-cli.md#unlock)）。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的组织[要求 SSO](../../../admin-console/oversight-visibility/enterprise-policies.md#single-sign-on-authentication)，您仍然可以使用 `--apikey` 登录 CLI。
 {% endhint %}
 
@@ -179,7 +179,7 @@ bw login --sso
 
 此命令将在您的 Web 浏览器中启动 SSO 身份验证流程。您的会话通过身份验证后，您就可以使用 `unlock` 命令了（[了解更多](password-manager-cli.md#unlock)）。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的组织[要求 SSO](../../../admin-console/oversight-visibility/enterprise-policies.md#single-sign-on-authentication)，您仍然可以使用 `--apikey` 登录 CLI。
 {% endhint %}
 
@@ -220,7 +220,7 @@ bw unlock --passwordfile ~/Users/Me/Documents/mp.txt
 
 将查找文件 `~Users/Me/Documents/mp.txt`（必须将您的主密码作为第一行）。如果文件非空且具有正确的值，CLI 将成功解锁并返回一个会话密钥。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 如果您使用 `--passwordfile` 选项，请通过将访问权限锁定到仅需要运行 `bw unlock` 的用户并仅向该用户提供读取访问权限来保护您的密码文件。
 {% endhint %}
 
@@ -242,7 +242,7 @@ bw list items
 bw list items --session "5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w=="
 ```
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 `BW_SESSION` 环境变量仅绑定到活动的终端会话，因此关闭终端窗口等同于锁定密码库。您也可以通过运行以下命令来销毁一个活动会话密钥以锁定您的密码库：
 
 ```shellscript
@@ -312,7 +312,7 @@ bw get template item | jq '.type = 2 | .secureNote.type = 0 | .notes = "Contents
 bw create attachment --file ./path/to/file --itemid 16b15b89-65b3-4639-ad2a-95052a6d8f66
 ```
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您不知道您要使用的确切的 `itemid`，请使用 `bw get item <search-term>` 以返回该项目（请参阅[详细信息](password-manager-cli.md#get)），包括它的 `id`。
 {% endhint %}
 
@@ -499,7 +499,7 @@ bw list org-members --organizationid 4016326f-98b6-42ff-b9fc-ac63014988f5
 bw list org-collections --organizationid 4016326f-98b6-42ff-b9fc-ac63014988f5
 ```
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以同时 `bw list`  `collections` 和 `org-collections`。`bw list collections`  将列&#x51FA;_&#x6240;&#x6709;_&#x96C6;合，而与它们所属的组织无关。`bw list org-collections` &#x5C06;_&#x4EC5;_&#x5217;出属于使用 `--organizationid` 指定的组织的集合。
 {% endhint %}
 
@@ -545,7 +545,7 @@ bw confirm org-member 7063feab-4b10-472e-b64c-785e2b870b92 --organizationid 310d
 目前，批量设备批准仅适用于从 Bitwarden.com 下载的 Bitwarden CLI 客户端。
 {% endhint %}
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 在大多数情况下，用户可以批准自己的登录请求，不需要管理员设备批准。请参阅[添加受信任设备](../../../account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)。自动或批量批准管理员设备批准请求会忽略管理员为确保请求合法而执行的验证步骤，例如检查用户报告的指纹短语。
 
 Bitwarden 建议在启用和使用批量设备批准之前，先审查重要的安全控制措施，例如 IdP 凭证标准、IdP MFA 以及 IdP 设备注册和信任。
@@ -633,7 +633,7 @@ bw sync
 
 您可以传递 `--last` 选项，以仅返回上次执行同步的时间戳（[ISO 8601](https://zh.wikipedia.org/wiki/ISO_8601)）。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 重要的是要知道 `sync` **仅从服务器执行拉取操作**。任何时候您更改密码库时（例如 `create`、`edit`、`delete`），数据都会自动推送到服务器。
 {% endhint %}
 
@@ -661,7 +661,7 @@ bw import <format> <path>
 bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ```
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 Bitwarden 支持多种导入格式，太多了而无法在这里一一列出！使用 `bw import --formats` 在  CLI 中返回列表，或[参阅这里](../../import-and-export/import-and-export-faqs.md#q-what-file-formats-does-bitwarden-support-for-import)。
 {% endhint %}
 
@@ -768,7 +768,7 @@ bw status
 * &#x20;`"locked"`：表示您已登录但是您的密码库已锁定（即**没有**保存含活动[会话密钥](password-manager-cli.md#using-a-session-key)的 `BW_SESSION` 密钥环境变量）。
 * &#x20;`"unauthenticated"`：表示您尚未登录。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 当使用 `"status": "unauthenticated"` 时，`lastSync`、`userEmail` 和 `userID` 将始终返回 `null`。
 {% endhint %}
 
@@ -786,7 +786,7 @@ bw serve --port <port> --hostname <hostname>
 
 默认情况下，`serve` 将阻止任何带有 Origin 标头的请求。您可以使用 `--disable-origin-protection` 选项绕过此保护，但**不建议这样做**。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 您可以指定 `--hostname all` 以不绑定主机名，但这将允许网络上的任何机器发出 API 请求。
 {% endhint %}
 
@@ -806,16 +806,7 @@ export BITWARDENCLI_DEBUG=true
 
 以下选项全局可用：
 
-| 选项                    | 描述                      |
-| --------------------- | ----------------------- |
-| `--pretty`            | 格式化输出。JSON 使用两个空格的制表符。  |
-| `--raw`               | 返回原始输出，而不是描述性消息。        |
-| `--response`          | 返回响应输出的 JSON 格式版本。      |
-| `--quiet`             | 不要将任何东西返回 stdout（标准输出）。 |
-| `--nointeraction`     | 对于输入交互式用户，不做提示。         |
-| `--session <session>` | 传递会话密钥，而不是从环境变量中读取会话密钥。 |
-| `-v, --version`       | 输出 Bitwarden CLI 的版本号。  |
-| `-h, --help`          | 显示命令的帮助文本。              |
+<table data-search="false"><thead><tr><th>选项</th><th>描述</th></tr></thead><tbody><tr><td><code>--pretty</code></td><td>格式化输出。JSON 使用两个空格的制表符。</td></tr><tr><td><code>--raw</code></td><td>返回原始输出，而不是描述性消息。</td></tr><tr><td><code>--response</code></td><td>返回响应输出的 JSON 格式版本。</td></tr><tr><td><code>--quiet</code></td><td>不要将任何东西返回 stdout（标准输出）。</td></tr><tr><td><code>--nointeraction</code></td><td>对于输入交互式用户，不做提示。</td></tr><tr><td><code>--session &#x3C;session></code></td><td>传递会话密钥，而不是从环境变量中读取会话密钥。</td></tr><tr><td><code>-v, --version</code></td><td>输出 Bitwarden CLI 的版本号。</td></tr><tr><td><code>-h, --help</code></td><td>显示命令的帮助文本。</td></tr></tbody></table>
 
 ### ZSH Shell 补全 <a href="#zsh-shell-completion" id="zsh-shell-completion"></a>
 
@@ -844,13 +835,13 @@ zinit creinstall ~/.local/share/zsh/completions
 
 如果您的自托管 Bitwarden 服务器公开为自签名 TLS 证书，请指定 Node.js 环境变量 [`NODE_EXTRA_CA_CERTS`](https://nodejs.org/api/cli.html#cli_node_extra_ca_certs_file)：
 
-<img src="../../../../.gitbook/assets/linux-24.png" alt="" data-size="line"><img src="../../../../.gitbook/assets/apple-24.png" alt="" data-size="line">Bash：
+<i class="fa-linux">:linux:</i><i class="fa-apple">:apple:</i> Bash：
 
 ```shellscript
 export NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 ```
 
-<img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line">PowerShell：
+<i class="fa-windows">:windows:</i> PowerShell：
 
 ```powershell
 $env:NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
@@ -868,7 +859,7 @@ $env:NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 | ------- | - |
 | 验证器     | 0 |
 | 电子邮箱    | 1 |
-| Yubikey | 3 |
+| YubiKey | 3 |
 
 {% hint style="info" %}
 CLI 不支持 FIDO2 和 Duo。
@@ -884,6 +875,7 @@ CLI 不支持 FIDO2 和 Duo。
 | 安全笔记 | 2 |
 | 支付卡  | 3 |
 | 身份   | 4 |
+| SSH  | 5 |
 
 #### 登录 URI 匹配类型 <a href="#login-uri-match-types" id="login-uri-match-types"></a>
 
@@ -918,13 +910,15 @@ CLI 不支持 FIDO2 和 Duo。
 | 管理员 | 1 |
 | 用户  | 2 |
 | 经理  | 3 |
+| 自定义 | 4 |
 
 #### 组织用户状态类型 <a href="#organization-user-statuses" id="organization-user-statuses"></a>
 
 指示[用户在组织内的状态](../../../admin-console/manage-members/user-management.md)：
 
-| 名称  | 值 |
-| --- | - |
-| 受邀  | 0 |
-| 已接受 | 1 |
-| 已确认 | 2 |
+| 名称  | 值  |
+| --- | -- |
+| 受邀  | 0  |
+| 已接受 | 1  |
+| 已确认 | 2  |
+| 已撤销 | -1 |

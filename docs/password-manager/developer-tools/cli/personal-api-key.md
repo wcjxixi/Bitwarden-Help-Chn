@@ -20,10 +20,10 @@
 
 3、选择**查看 API 密钥**按钮然后输入主密码以验证访问权限。输入后，您将看到以下内容：
 
-* `client_id: "user.clientId"` （这个值对于你的账户是唯一的，并且不会改变）
-* `client_secret: "clientSecret"` （这个值是唯一的，但可以被轮换）
-* `scope: "api"` （这个值固定为 `"api"`）
-* `grant_type: "client_credentials"` （这个值固定为`"client_credentials"`）
+* `client_id: "user.clientId"`（这个值对于你的账户是唯一的，并且不会改变）
+* `client_secret: "clientSecret"`（这个值是唯一的，但可以被轮换）
+* `scope: "api"`（这个值固定为 `"api"`）
+* `grant_type: "client_credentials"`（这个值固定为 `"client_credentials"`）
 
 ### 轮换 API 密钥 <a href="#rotate-your-api-key" id="rotate-your-api-key"></a>
 

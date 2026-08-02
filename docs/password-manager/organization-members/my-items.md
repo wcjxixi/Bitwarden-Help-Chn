@@ -8,7 +8,7 @@
 
 所有者或管理员启用该策略后，「**我的项目**」将被添加到每一位组织成员的密码库中，并且根据组织策略的设置，用户可能会被提示[将项目从「我的密码库」转移到「我的项目」](transfer-ownership.md)。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 目前，Bitwarden 仅建议对尚未开始推广的组织启用[强制组织数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)。如果您的组织在 [2025.11.0](../../release-notes.md#id-2025.11.0) 版本之前激活了该策略，将为自该版本以后确认的成员创建「**我的项目**」。现有成员将不会拥有「**我的项目**」，并且可以继续使用他们的「**我的密码库**」。
 {% endhint %}
 
