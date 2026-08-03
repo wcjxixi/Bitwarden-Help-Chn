@@ -22,7 +22,7 @@
 
 当您确认取消后，您的账户将进入**待取消**状态，直到到达注明的**下一次收费**日期。当到达**下一次收费**日期时，您将被转移到免费的账户。[了解当您失去高级版时会发生什么](password-manager/premium-renewal.md)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您在计费周期结束前改变主意，只需一个按钮即可**恢复订阅**！
 {% endhint %}
 
@@ -48,6 +48,6 @@
 
 当您确认取消后，您的组织将进入**待取消**状态，直到到达注明的**订阅到期**日期。当到达**订阅到期**日期后，您的订阅将终止。[了解接下来会发生什么](organization-renewal.md)！
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您在计费周期结束前改变主意，只需一个按钮即可**恢复订阅**！
 {% endhint %}

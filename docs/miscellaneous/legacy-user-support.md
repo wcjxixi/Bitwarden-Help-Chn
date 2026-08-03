@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/legacy-user-support/)
 {% endhint %}
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 随着在 2025 年 06 月 24 日部署了 2025.6.2 服务器版本，Bitwarden 已正式停止对旧版用户的支持。
 
 * **若您的账户创建于 2017 年之后**，则不受此次变更的影响。

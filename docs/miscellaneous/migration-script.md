@@ -49,7 +49,7 @@ pip3 install requests
 
 1、指示所有组织成员[导出他们的个人密码库](../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 请单独下载密码库项目的文件附件，并注意它们属于哪个项目。
 {% endhint %}
 

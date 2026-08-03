@@ -6,7 +6,7 @@
 
 Bitwarden 为付费订阅自动生成账单和收据。只有订阅的持有者，例如高级版方案的用户或组织的[所有者](../admin-console/manage-members/member-roles.md#default-roles)，才能查看或下载 PDF 格式的账单。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您是自托管，账单和收据可通过[连接到您的自托管部署的云账户](../self-hosting/licensing-on-premise.md)获取。
 {% endhint %}
 

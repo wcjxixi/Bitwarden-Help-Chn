@@ -37,7 +37,7 @@
 
 7、在**概要**部分，选择您希望**按年**或**按月**计费。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您想使用 [Secrets Manager](../secrets-manager/secrets-manager-overview.md)，请完成以下步骤以将其添加到您的方案中：
 
 1. 在**更多来自 Bitwarden 的产品**部分，选中**订阅机密管理器**复选框。

@@ -6,7 +6,7 @@
 
 这篇文章中，我们将详细介绍 [Bitwarden Secrets Manager](../../secrets-manager/secrets-manager-overview.md) 的每一种订阅方案，以帮助您开启机密管理和安全数据存储之旅。要查看 Password Manager 方案，请参阅[此处](../password-manager/about-bitwarden-plans.md)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 Bitwarden 为免费版、团队版和企业版组织提供 Secrets Manager 订阅服务。如果您有家庭版方案并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费版组织然后按照[这些步骤](../../secrets-manager/get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
 {% endhint %}
 
@@ -46,24 +46,6 @@ Bitwarden 为免费版、团队版和企业版组织提供 Secrets Manager 订�
 
 ## 方案比较 <a href="#compare-plans" id="compare-plans"></a>
 
-| 功能                  | 免费版          | 团队版                                              | 企业版                                              |
-| ------------------- | ------------ | ------------------------------------------------ | ------------------------------------------------ |
-| 不限数量机密存储            | **✔︎**       | **✔︎**                                           | **✔︎**                                           |
-| 与用户安全地共享机密          | 最多 2 位用户     | 不限数量的用户                                          | 不限数量的用户                                          |
-| 通过机器账户的机器访问         | 最多 3 个机器账户   | 最多 20 个机器账户<mark style="color:red;">**ª**</mark> | 最多 50 个机器账户<mark style="color:red;">**ª**</mark> |
-| 通过工程组织机密            | 最多 3 个工程     | 不限数量的工程                                          | 不限数量的工程                                          |
-| 机密导出                | **✔︎**       | **✔︎**                                           | **✔︎**                                           |
-| 两步登录                | 验证器 App、电子邮箱 | 验证器 App、电子邮箱、YubiKey、FIOD2 以及 Duo                | 验证器 App、电子邮箱、YubiKey、FIOD2 以及 Duo                |
-| Duo 方式的组织两步登录       | —            | **✔︎**                                           | **✔︎**                                           |
-| 事件和审计日志             | —            | **✔︎**                                           | **✔︎**                                           |
-| 用户群组                | —            | **✔︎**                                           | **✔︎**                                           |
-| Directory Connector | —            | **✔︎**                                           | **✔︎**                                           |
-| SSO 集成              | —            | —                                                | **✔︎**                                           |
-| SCIM 支持             | —            | —                                                | **✔︎**                                           |
-| 企业策略                | —            | —                                                | **✔︎**                                           |
-| 管理员密码重置             | —            | —                                                | **✔︎**                                           |
-| 自定义角色               | —            | —                                                | **✔︎**                                           |
-| 优先支持                | —            | —                                                | **✔︎**                                           |
-| 即将推出：自托管选项          | —            | —                                                | **✔︎**                                           |
+<table data-search="false"><thead><tr><th>功能</th><th>免费版</th><th>团队版</th><th>企业版</th></tr></thead><tbody><tr><td>不限数量机密存储</td><td><i class="fa-check">:check:</i></td><td><i class="fa-check">:check:</i></td><td><i class="fa-check">:check:</i></td></tr><tr><td>与用户安全地共享机密</td><td>最多 2 位用户</td><td>不限数量的用户</td><td>不限数量的用户</td></tr><tr><td>通过机器账户的机器访问</td><td>最多 3 个机器账户</td><td>最多 20 个机器账户 <mark style="color:red;"><strong>ª</strong></mark></td><td>最多 50 个机器账户 <mark style="color:red;"><strong>ª</strong></mark></td></tr><tr><td>通过工程组织机密</td><td>最多 3 个工程</td><td>不限数量的工程</td><td>不限数量的工程</td></tr><tr><td>机密导出</td><td><i class="fa-check">:check:</i></td><td><i class="fa-check">:check:</i></td><td><i class="fa-check">:check:</i></td></tr><tr><td>两步登录</td><td>验证器 App、电子邮箱</td><td>验证器 App、电子邮箱、YubiKey、FIOD2 以及 Duo</td><td>验证器 App、电子邮箱、YubiKey、FIOD2 以及 Duo</td></tr><tr><td>Duo 方式的组织两步登录</td><td>—</td><td><i class="fa-check">:check:</i></td><td><i class="fa-check">:check:</i></td></tr><tr><td>事件和审计日志</td><td>—</td><td><i class="fa-check">:check:</i></td><td><i class="fa-check">:check:</i></td></tr><tr><td>用户群组</td><td>—</td><td><i class="fa-check">:check:</i></td><td><i class="fa-check">:check:</i></td></tr><tr><td>Directory Connector</td><td>—</td><td><i class="fa-check">:check:</i></td><td><i class="fa-check">:check:</i></td></tr><tr><td>SSO 集成</td><td>—</td><td>—</td><td><i class="fa-check">:check:</i></td></tr><tr><td>SCIM 支持</td><td>—</td><td>—</td><td><i class="fa-check">:check:</i></td></tr><tr><td>企业策略</td><td>—</td><td>—</td><td><i class="fa-check">:check:</i></td></tr><tr><td>管理员密码重置</td><td>—</td><td>—</td><td><i class="fa-check">:check:</i></td></tr><tr><td>自定义角色</td><td>—</td><td>—</td><td><i class="fa-check">:check:</i></td></tr><tr><td>优先支持</td><td>—</td><td>—</td><td><i class="fa-check">:check:</i></td></tr><tr><td>即将推出：自托管选项</td><td>—</td><td>—</td><td><i class="fa-check">:check:</i></td></tr></tbody></table>
 
-<mark style="color:red;">**ª**</mark> - 可以以每个账户 $1/月购买附加机器账户。
+<mark style="color:red;">**ª**</mark> - 可以购买附加机器账户。

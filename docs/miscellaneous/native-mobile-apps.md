@@ -9,7 +9,7 @@
 * 在此发布之后**安装** Bitwarden 的用户将始终获得新的原生应用程序。
 * 设备上**已经安装了 Bitwarden** 的用户将分阶段接收到新的原生应用程序。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 原生移动应用程序对操作系统的要求比 Xamarin 应用程序更严格：
 
 * Android 用户必须使用 Android 10 或更高版本。了解[如何检查您的 Android 版本](https://support.google.com/android/answer/7680439?hl=zh-Hans)。
@@ -27,13 +27,5 @@
 
 **Native Mobile Applications 和 Xamarin Applications 的区别：**
 
-| 特性       | Native Applications                                    | Xamarin Applications     |
-| -------- | ------------------------------------------------------ | ------------------------ |
-| **开发语言** | <p>iOS：Swift/Objective-C</p><p>Android：Java/Kotlin</p> | 使用 C# 和 .NET             |
-| **代码共享** | 每个平台需单独编写代码，无法共享                                       | 可以共享大部分业务逻辑代码，UI 代码需部分定制 |
-| **性能**   | 最佳性能，直接调用平台原生 API                                      | 接近原生性能，但可能略低于纯原生 App     |
-| **开发效率** | 较低，需为每个平台单独开发                                          | 较高，一套代码可覆盖多个平台           |
-| **维护成本** | 较高，需为每个平台单独维护                                          | 较低，只需维护一套代码库             |
-| **用户体验** | 完全符合平台设计规范，用户体验最佳                                      | 接近原生，但可能略有差异             |
-| **适用场景** | 适合对性能和用户体验要求极高的项目                                      | 适合需要快速开发且预算有限的项目         |
+<table data-search="false"><thead><tr><th>特性</th><th>Native Applications</th><th>Xamarin Applications</th></tr></thead><tbody><tr><td><strong>开发语言</strong></td><td><p>iOS：Swift/Objective-C</p><p>Android：Java/Kotlin</p></td><td>使用 C# 和 .NET</td></tr><tr><td><strong>代码共享</strong></td><td>每个平台需单独编写代码，无法共享</td><td>可以共享大部分业务逻辑代码，UI 代码需部分定制</td></tr><tr><td><strong>性能</strong></td><td>最佳性能，直接调用平台原生 API</td><td>接近原生性能，但可能略低于纯原生 App</td></tr><tr><td><strong>开发效率</strong></td><td>较低，需为每个平台单独开发</td><td>较高，一套代码可覆盖多个平台</td></tr><tr><td><strong>维护成本</strong></td><td>较高，需为每个平台单独维护</td><td>较低，只需维护一套代码库</td></tr><tr><td><strong>用户体验</strong></td><td>完全符合平台设计规范，用户体验最佳</td><td>接近原生，但可能略有差异</td></tr><tr><td><strong>适用场景</strong></td><td>适合对性能和用户体验要求极高的项目</td><td>适合需要快速开发且预算有限的项目</td></tr></tbody></table>
 

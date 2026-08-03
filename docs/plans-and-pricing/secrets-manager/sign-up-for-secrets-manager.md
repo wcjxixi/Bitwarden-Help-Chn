@@ -10,7 +10,7 @@
 
 升级路径将根据您当前使用的组织类型而有所不同：
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 以下步骤适用于还是 Secrets Manager 新手的现有 Bitwarden 用户。
 {% endhint %}
 
@@ -22,7 +22,7 @@
 
 2、在**更多来自 Bitwarden 的产品**部分，选中**订阅 Secrets Manager** 复选框。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您想升级到付费版组织以[解锁 Secrets Manager 的更多功能](secrets-manager-plans.md)，请选择**升级方案**按钮。选择**团队版**或**企业版**组织以完成 Password Manager 订阅部分，然后完成以下步骤以添加 Secrets Manager：
 
 1. 选中**订阅机密管理器**复选框。

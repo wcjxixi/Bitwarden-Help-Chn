@@ -405,7 +405,7 @@
   * [Bitwarden 分包商](docs/security/who-are-bitwardens-subprocessors.md)
   * [服务器地理位置](docs/security/server-geographies.md)
   * [安全 FAQ](docs/security/security-faqs.md)
-* [=方案 & 定价](docs/plans-and-pricing/README.md)
+* [方案 & 定价](docs/plans-and-pricing/README.md)
   * [Password Manager](docs/plans-and-pricing/password-manager/README.md)
     * [Password Manager 方案](docs/plans-and-pricing/password-manager/about-bitwarden-plans.md)
     * [从个人版升级到组织版](docs/plans-and-pricing/password-manager/upgrade-from-individual-to-organization.md)

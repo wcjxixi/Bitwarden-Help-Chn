@@ -43,7 +43,7 @@
 * 对于**团队版**或**企业版**，选择是**按年**还是**按月**计费。其他组织只能按年计费。
 * 对于任何付费组织，请输入您的**付款信息**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您想使用 [Secrets Manager](../../secrets-manager/secrets-manager-overview.md)，请完成以下步骤以将其添加到您的方案中：
 
 1. 在**更多来自 Bitwarden 的产品**部分，选中**订阅机密管理器**复选框。
@@ -57,7 +57,7 @@
 
 付费组织（家庭版、团队版或企业版）会自动为所有用户提供高级功能的访问权限。如果您在创建组织时已经拥有个人高级版订阅，您可以取消您的个人高级版订阅，这不会失去对高级功能的访问权限。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Bitwarden 提供**在订阅创建后 30 天内**取消高级版订阅的退款。如果您在创建高级个人版账户后的 30 天内创建了一个付费组织，请[联系我们](https://bitwarden.com/contact)发起退款。
 
 目前，Bitwarden 不对超过 30 天的付费订阅提供退款。

@@ -6,7 +6,7 @@
 
 准备好最终控制您的密码了吗？本课程将引导您完成设置您的个人 Bitwarden 账户、保护您最重要的登录并让密码管理变得轻松而不是繁重。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 已经掌握了基础知识并准备好开始分享了吗？查看[两人免费共享](free-sharing-for-two.md)。
 {% endhint %}
 

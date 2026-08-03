@@ -29,7 +29,7 @@
 
 选择**订阅**选项卡，了解更多关于您的下次扣款信息、添加[附件](../password-manager/your-vault/vault-items/file-attachments.md)存储空间或[取消订阅](cancel-a-subscription.md#cancel-a-personal-subscription)。前往**计费历史**选项卡，查看过往交易记录以及下载[账单](invoices-and-receipts.md)。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 如果我们无法处理您的[续费](password-manager/premium-renewal.md)，您的订阅将降级为免费版方案。要解决此问题，请更新您的付款方式或直接支付未支付的[账单](invoices-and-receipts.md#review-invoices)。如果您的账户仍然无法恢复为付费版订阅，请[联系我们](https://bitwarden.com/contact/)。
 {% endhint %}
 
@@ -37,7 +37,7 @@
 
 只有[所有者](../admin-console/manage-members/member-roles.md#default-roles)才能查看或更新组织的计费信息。登录 Bitwarden 网页 App，然后打开 Admin Console。从导航中选择**计费**，可以找到组织的大部分计费详细信息。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 至少指定一名额外的所有者，以便在当前所有者不可用时保持对计费和订阅详细信息的访问权限。
 {% endhint %}
 
@@ -57,7 +57,7 @@
 * **编辑计费地址**，更改与您的订阅关联的计费地址，包括适用的[增值税 (VAT) 或商品和服务税 (GST) 号码](tax-calculation.md#vat)。
 * **添加余额**，通过 PayPal 或 Bitcoin 来购买[账户余额](payment-methods.md#account-credit)。可用的余额将用于自动抵扣您的下一笔付款。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 如果我们无法处理您的[组织续费](organization-renewal.md)，您的订阅将降级为免费版方案。要解决此问题，请更新您的付款方式或直接支付未支付的[账单](invoices-and-receipts.md#review-invoices)。如果您的账户仍然无法恢复为付费版订阅，请[联系我们](https://bitwarden.com/contact/)。
 {% endhint %}
 
@@ -79,7 +79,7 @@
 
 4、选择**保存**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您组织的计费电子邮箱的持有人可以[联系我们](https://bitwarden.com/contact/)获取计费协助，包括：
 
 * 向订阅中添加或移除信用卡。

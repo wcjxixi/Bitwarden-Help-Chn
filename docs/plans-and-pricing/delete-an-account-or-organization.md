@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/delete-your-account/)
 {% endhint %}
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 删除账户是永久性的，无法撤消或恢复。要创建密码库数据的备份并将其存储在安全的位置，请[导出您的密码库数据](../password-manager/import-and-export/export-vault-data.md)。
 {% endhint %}
 
