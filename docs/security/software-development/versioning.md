@@ -28,7 +28,7 @@
 
 {% tabs %}
 {% tab title="浏览器扩展" %}
-导航到 **⚙️设置**选项卡，然后选择**关于** → **关于 Bitwarden**：
+导航到 <i class="fa-gear-complex">:gear-complex:</i>**设置**选项卡，然后选择**关于** → **关于 Bitwarden**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4EkEPm8QGo6KCPTCnn4Pg5/090ff5cd26b2fddeedcbddf9edf49e7a/2024-12-04_10-10-53.png?w=990&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展版本</p></figcaption></figure></div>
 {% endtab %}
@@ -38,7 +38,7 @@
 {% endtab %}
 
 {% tab title="移动 App" %}
-导航到 **⚙️设置**选项卡，然后选择**关于**选项：
+导航到 <i class="fa-gear-complex">:gear-complex:</i>**设置**选项卡，然后选择**关于**选项：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3zYXLGYrfsJZuGwlT7Vq3v/9db9b271b977e94468cdf04b8cab70f2/2025-01-22_10-19-54.png?w=713&#x26;fm=avif" alt=""><figcaption><p>移动 App 版本</p></figcaption></figure></div>
 {% endtab %}

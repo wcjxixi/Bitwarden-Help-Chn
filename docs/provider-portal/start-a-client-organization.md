@@ -14,7 +14,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4xn04Sj9u8n73TPxZUWi5f/dac0d56f47a05e2d8b28754e997a1391/2025-02-25_15-16-00.png?w=1080&#x26;fm=avif" alt=""><figcaption><p>产品切换器 - 提供商门户</p></figcaption></figure></div>
 
-2、导航到提供商门户的**客户**选项卡，然后选择 ✚**添加** → **新增客户**：
+2、导航到提供商门户的**客户**选项卡，然后选择 <i class="fa-plus">:plus:</i>**添加** → **新增客户**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5WjBETB0YFm7TS1zpIHeSC/a22563b9172036b1c90bfb61d9ab310b/new_client_org_1.png?w=1050&#x26;fm=avif" alt=""><figcaption><p>新增客户组织</p></figcaption></figure></div>
 
@@ -67,6 +67,6 @@
 
 6、**开始邀请用户**。现在，您的客户已具备安全且可扩展的凭据共享基础设施，您可以开始邀请用户加入组织了。为确保组织的安全，Bitwarden 采用了 3 步流程来入职新用户，**邀请** → **接受** → **确认**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的客户使用目录服务（活动目录、LDAP、Okta 等），请使用 [SCIM](../admin-console/manage-members/scim/about-scim.md) 或 [Directory Connector](../admin-console/manage-members/directory-connector/about-directory-connector.md) 从源目录自动同步组织用户并自动发出邀请。
 {% endhint %}

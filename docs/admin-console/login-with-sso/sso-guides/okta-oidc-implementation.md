@@ -24,7 +24,7 @@ description: 本文包含为 Okta OIDC 实施配置 Bitwarden SSO 登录的说�
 
 如果还没有为您的组织创建唯一的 **SSO 标识符**，请创建一个。否则，您不需要在此界面上编辑任何内容，保持此界面打开，以方便参考。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
@@ -66,24 +66,11 @@ description: 本文包含为 Okta OIDC 实施配置 Bitwarden SSO 登录的说�
 
 至此，您已在 Okta 管理门户范围内配置好了您所需要的一切。请返回 Bitwarden 网页 App 配置以下字段：
 
-| 字段                                                      | 描述                                                                                                 |
-| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Authority                                               | 为您的授权服务器输入[已获取到到的 Issuer URI](okta-oidc-implementation.md#get-authorization-server-information)。   |
-| Client ID                                               | 为您的 Okta 应用程序输入[已获取到的 Client ID](okta-oidc-implementation.md#get-client-credentials)。              |
-| Client Secret                                           | 为您的 Okta 应用程序输入[已获取到的 Client secret](okta-oidc-implementation.md#get-client-credentials)。          |
-| Metadata Address                                        | 为您的授权服务器输入[已获取到到的 Metadata URI](okta-oidc-implementation.md#get-authorization-server-information)。 |
-| OIDC Redirect Behavior                                  | 选择 **Redirect GET**。Okta 目前不支持 Form POST。                                                          |
-| Get Claims From User Info Endpoint                      | 如果您在 SSO 期间收到 URL 太长错误 (HTTP 414)、截断的 URL 和/或失败，请启用此选项。                                            |
-| Additional/Custom Scopes                                | 定义要添加到请求中的自定义范围（逗号分隔）。                                                                             |
-| Additional/Custom User ID Claim Types                   | 为用户标识（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                     |
-| Additional/Custom Email Claim Types                     | 为用户的电子邮件地址（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                |
-| Additional/Custom Name Claim Types                      | 为用户的全名或显示名称（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                               |
-| Requested Authentication Context Class Reference values | 定义身份验证上下文类引用标识符（`acr_values`）（以空格分隔）。按优先顺序列出 `acr_values`。                                         |
-| Expected “acr” Claim Value in Response                  | 定义 Bitwarden 在响应中期望和验证的 `acr` 声明值。                                                                 |
+<table data-search="false"><thead><tr><th>字段</th><th>描述</th></tr></thead><tbody><tr><td>Authority</td><td>为您的授权服务器输入<a href="okta-oidc-implementation.md#get-authorization-server-information">已获取到到的 Issuer URI</a>。</td></tr><tr><td>Client ID</td><td>为您的 Okta 应用程序输入<a href="okta-oidc-implementation.md#get-client-credentials">已获取到的 Client ID</a>。</td></tr><tr><td>Client Secret</td><td>为您的 Okta 应用程序输入<a href="okta-oidc-implementation.md#get-client-credentials">已获取到的 Client secret</a>。</td></tr><tr><td>Metadata Address</td><td>为您的授权服务器输入<a href="okta-oidc-implementation.md#get-authorization-server-information">已获取到到的 Metadata URI</a>。</td></tr><tr><td>OIDC Redirect Behavior</td><td>选择 <strong>Redirect GET</strong>。Okta 目前不支持 Form POST。</td></tr><tr><td>Get Claims From User Info Endpoint</td><td>如果您在 SSO 期间收到 URL 太长错误 (HTTP 414)、截断的 URL 和/或失败，请启用此选项。</td></tr><tr><td>Additional/Custom Scopes</td><td>定义要添加到请求中的自定义范围（逗号分隔）。</td></tr><tr><td>Additional/Custom User ID Claim Types</td><td>为用户标识（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。</td></tr><tr><td>Additional/Custom Email Claim Types</td><td>为用户的电子邮件地址（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。</td></tr><tr><td>Additional/Custom Name Claim Types</td><td>为用户的全名或显示名称（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。</td></tr><tr><td>Requested Authentication Context Class Reference values</td><td>定义身份验证上下文类引用标识符（<code>acr_values</code>）（以空格分隔）。按优先顺序列出 <code>acr_values</code>。</td></tr><tr><td>Expected “acr” Claim Value in Response</td><td>定义 Bitwarden 在响应中期望和验证的 <code>acr</code> 声明值。</td></tr></tbody></table>
 
 完成这些字段的配置后，**保存**您的工作。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以通过激活[单点登录身份验证策略](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)来要求用户使用 SSO 登录。
 {% endhint %}
 
@@ -99,7 +86,7 @@ description: 本文包含为 Okta OIDC 实施配置 Bitwarden SSO 登录的说�
 
 使用您的 Okta 凭据进行身份验证后，输入您的 Bitwarden 主密码以解密您的密码库！
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 Bitwarden 不支持未经请求的响应，因此从您的 IdP 发起登录将导致错误。SSO 登录流程必须从 Bitwarden 发起。Okta 管理员可以创建一个 [Okta Bookmark App](https://support.okta.com/help/s/article/How-do-you-create-a-bookmark-app?language=en_US)，该应用程序将直接链接到 Bitwarden 网页密码库的登录页面。
 
 1. 作为管理员，导航至主导航栏上的 **Applications** 下拉菜单，然后选择 **Applications**。

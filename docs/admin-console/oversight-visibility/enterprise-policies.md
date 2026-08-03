@@ -8,7 +8,7 @@
 
 ## 设置企业策略 <a href="#setting-enterprise-policies" id="setting-enterprise-policies"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 我们强烈建议在邀请用户加入您的组织之前先设置好企业策略。某些策略会在启用时[撤销](../manage-members/revoke-remove/temporarily-revoke-access.md)不符合要求的用户，而某些策略无法追溯性地执行。
 {% endhint %}
 
@@ -38,7 +38,7 @@
 
 启用**单一组织**策略将限制组织内的非所有者/非管理员成员加入其他组织或创建其他组织。即使对于仅[接受](../manage-members/user-management.md#accept)组织邀请的用户，也会强制执行此策略，但所有者和管理员不受此策略的约束。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **当您激活此策略时，非所有者或非管理员且不遵守此策略的组织成员的访问权限将被撤销**。由于此策略而被撤销访问权限的用户将收到电子邮件通知，并且必须采取措施使其合规，然后才能恢复其访问权限。
 {% endhint %}
 
@@ -63,7 +63,7 @@
 
 [成员被移除](../manage-members/revoke-remove/permanently-remove-access.md)后，「**我的项目**」中的数据仍保留在组织中。所有者、管理员和某些自定义角色用户可以为其他成员分配对已移除成员的「**我的项目**」的访问权限。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 ~~目前，Bitwarden 建议仅尚未开始入职成员的组织启用~~[~~强制组织数据所有权策略~~](enterprise-policies.md#enforce-organization-data-ownership)~~。~~
 
 ~~如果您的组织在~~ [~~2025.11.0~~](../../release-notes.md#id-2025.11.0) ~~版本之前激活了该策略，则系统会为该版本发布后确认的成员创建「**我的项目**」。现有成员不会拥有「**我的项目**」，可以继续使用他们的「**我的密码库**」。未来的版本将允许已经开始入职成员并使用个人密码库的组织将所有凭据迁移到组织所有权。~~
@@ -140,7 +140,7 @@
 
 启用**要求两步登录**策略将要求成员使用任何两步登录方法访问其密码库。如果使用的是 SSO 或身份提供程序的 2FA 功能，则无需启用此策略。即使对于仅[接受](../manage-members/user-management.md#accept)组织邀请的用户，也会强制执行此策略。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **当您激活此策略时，非所有者或非管理员且不遵守此策略的组织成员的访问权限将被撤销**。由于此策略而被撤销访问权限的用户将收到电子邮件通知，并且必须采取措施使其合规，然后才能恢复其访问权限。
 {% endhint %}
 
@@ -165,13 +165,13 @@
   * **App 重启时**：当 Bitwarden App 关闭然后重新打开时
   * **从不**：不设置最大会话持续时间
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **从不**超时选项会将未加密的加密密钥存储在您的设备上，这可能会影响安全性。为了确保您的数据安全，我们强烈建议您选择其他选项。
 {% endhint %}
 
 * 从**会话超时操作**下拉菜单中，选择会话结束后发生的行为。您可以指定[**锁定或注销**](../../account/log-in-and-unlock/vault-timeout-options.md#session-timeout-action)，或选择**用户首选项**以让成员在其账户设置中进行选择。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的组织使用[受信任设备](../login-with-sso/trusted-devices/about-trusted-devices.md)，请考虑选择**注销**。会话超时后，成员无需主密码即可通过受信任设备上的 SSO 访问其密码库。
 {% endhint %}
 
@@ -212,7 +212,7 @@
 * 是否大写
 * 是否包含数字
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 启用此策略后，现有的不符合要求的密码**不会**被更改，相关的项目也不会从组织中移除。启用此策略后，当更改或生成密码时，将强制要求符合此策略。
 
 密码生成器界面上将显示一条横幅给用户，表明某个策略正在影响他们的生成器设置。
@@ -233,7 +233,7 @@
 不受此策略约束的用户在设置其个人账户的默认匹配检测时还有两个选项：**开始于**和**正则表达式**。组织默认不提供这些选项，因为它们可能匹配非预期页面并暴露凭据。
 {% endhint %}
 
-激活策略后，成员无法在 **⚙️设置** → **自动填充**中查看或更改其账户的**默认 URI 匹配检测**。但是，他们仍然可以为个人登录项目选择 URI 匹配。此策略不会影响组织所有者和管理员。
+激活策略后，成员无法在 <i class="fa-gear-complex">:gear-complex:</i>**设置** → **自动填充**中查看或更改其账户的**默认 URI 匹配检测**。但是，他们仍然可以为个人登录项目选择 URI 匹配。此策略不会影响组织所有者和管理员。
 
 {% hint style="info" %}
 在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
@@ -303,7 +303,7 @@ SSO 自动登录将基于 Bitwarden 浏览器扩展上的当前活动账户自�
 4、（可选）根据需要自定义其他设置：
 
 * 输入**标题**。
-* 输入**按钮**标签。这将要求成员选择此按钮来关闭横幅，而不是使用 **✘关闭图标**。当按钮被选中时，会[记录一个事件](event-logging/event-logs.md#organization-events)。
+* 输入**按钮**标签。这将要求成员选择此按钮来关闭横幅，而不是使用 <i class="fa-xmark">:xmark:</i>**关闭图标**。当按钮被选中时，会[记录一个事件](event-logging/event-logs.md#organization-events)。
 * 勾选**每次登录后显示**，以便成员每次登录时都显示此横幅，即使他们之前已将其关闭。
 
 5、选择**保存**。

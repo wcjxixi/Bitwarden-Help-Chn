@@ -49,7 +49,7 @@ KDF 内存值高于 64 MiB 的 Argon2id 用户，每次启动 iOS 自动填充�
 
 更改 KDF 算法会重新加密受保护的对称密钥并更新身份验证哈希值，就像常规的主密码更改一样，但不会轮换[对称加密密钥](../bitwarden-security-whitepaper.md#rotating-the-account-encryption-key)，因此密码库数据不会被重新加密。了解更多有关[重新加密数据](encryption-key-rotation.md#how-to-rotate-your-encryption-key)的信息。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 在对加密设置进行**任何**更改之前，建议您先[备份您的个人密码库数据](../../password-manager/import-and-export/export-vault-data.md)。
 {% endhint %}
 

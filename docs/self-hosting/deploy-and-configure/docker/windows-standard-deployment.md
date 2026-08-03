@@ -8,7 +8,7 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th width="177.46326865053078"></th><th width="240.55465526874184">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>6 GB RAM</td><td>8+ GB RAM</td></tr><tr><td>存储</td><td>76 GB</td><td>90 GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
+<table><thead><tr><th width="177.46326865053078"></th><th width="240.55465526874184">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>6 GB RAM</td><td>8+ GB RAM</td></tr><tr><td>存储</td><td>76 GB</td><td>90 GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
 <mark style="color:red;">**ª**</mark> - Docker Compose 可以通过 Docker Desktop 安装，其中包含 Engine 和 Compose。
 
@@ -16,7 +16,7 @@
 
 在 Windows 服务器上运行 Bitwarden **需要使用嵌套虚拟化**。请检查您的管理程序的文档以了解是否支持嵌套虚拟化以及如何启用它。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您将 Windows Server 作为 Azure VM 运行，我们建议使用**运行 Windows Server 2022 的标准 D2s v3 虚拟机**，它满足所有[系统要求](windows-standard-deployment.md#system-specifications)，包括对嵌套虚拟化的支持。您还需要选择**安全类型：标准**，而不是默认的**受信任启动虚拟机**。
 {% endhint %}
 
@@ -40,7 +40,7 @@
 
 6、在 `./bwdata/env/global.override.env` 中调整设置以[**配置您的环境**](windows-standard-deployment.md#configure-your-environment)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 至少要配置 `globalSettings__mail__smtp...` 变量以设置用于邀请和验证用户的电子邮箱服务器。
 {% endhint %}
 
@@ -60,7 +60,7 @@
 
 默认情况下，Bitwarden 通过本地主机上的 80 (`http`) 和 443 (`https`) 端口提供服务。您应该打开这些端口，以便可以从网络内部和/或网络外部访问 Bitwarden。您也可以在安装过程中选择使用其他端口。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **如果您使用的是 Windows 防火墙**，Windows 版 Docker Desktop 不会自动在 Windows 防火墙中为自己添加例外。为 TCP 端口 80 和 443（或选择的替代端口）添加例外以防止出现一些错误。
 {% endhint %}
 
@@ -112,7 +112,7 @@ Bitwarden 用户必须添加到 docker-users 组中。请参阅 [Docker 文档](
 
 Bitwarden 提供了一个 Powershell Cmdlet 文件 (`.ps1`)，以便在 Windows 机器上轻松安装。完成以下步骤以使用 Cmdlet 安装 Bitwarden：
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您[已经创建 Bitwarden 用户和目录](windows-standard-deployment.md#create-bitwarden-local-user-and-directory)后，请以 `Bitwarden` 用户身份完成以下操作。
 {% endhint %}
 
@@ -220,7 +220,7 @@ docker ps
 
 您现在可以注册新账户并登录。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新账户的电子邮箱地址。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 部署完成后，我们建议定期[备份您的服务器](../../backup-server-data.md)并[检查系统更新](../../update-a-server.md)。
 {% endhint %}
 
@@ -233,7 +233,7 @@ docker ps
 
 如果您有已登录的 RDP 会话，桌面版 Docker 才会在启动时自动启动。无论是否有用户登录，都要在启动时启动桌面版 Docker：
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Docker Desktop 在启动后可能需要长达 15 分钟才能启动完成并可以从网络访问容器。
 {% endhint %}
 
@@ -259,18 +259,4 @@ Docker Desktop 在启动后可能需要长达 15 分钟才能启动完成并可�
 
 Bitwarden 安装脚本 (`bitwarden.ps1`) 具有以下可用的命令。所有命令都必须加上前缀 `-`（开关参数），例如 `.\bitwarden.ps1 -start`：
 
-| 命令          | 描述                                                                                                                                                                |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| -install    | 启动安装程序。                                                                                                                                                           |
-| -start      | 启动所有容器。                                                                                                                                                           |
-| -restart    | 重新启动所有容器。                                                                                                                                                         |
-| -stop       | 停止所有容器。                                                                                                                                                           |
-| -update     | 更新所有容器和数据库。                                                                                                                                                       |
-| -updatedb   | 更新/初始化数据库。                                                                                                                                                        |
-| -updaterun  | 更新 `run.sh` 文件。                                                                                                                                                   |
-| -updateself | 更新安装脚本。                                                                                                                                                           |
-| -updateconf | 更新所有容器，而无需重新启动正在运行的实例。                                                                                                                                            |
-| -uninstall  | <p>在执行此命令之前，系统会提示您保存数据库文件。选 <code>y</code> 将创建一个包含最新备份的数据库的 tar 文件。</p><p></p><p>停止容器，删除 <code>bwdata</code> 目录及其所有内容，并删除临时卷。执行后，系统会询问您是否还要清除所有 Bitwarden 镜像。</p> |
-| -renewcert  | 续签证书。                                                                                                                                                             |
-| -rebuild    | 重建从 `config.yml` 生成的安装资产。                                                                                                                                         |
-| -help       | 列出所有命令。                                                                                                                                                           |
+<table data-search="false"><thead><tr><th>命令</th><th>描述</th></tr></thead><tbody><tr><td>-install</td><td>启动安装程序。</td></tr><tr><td>-start</td><td>启动所有容器。</td></tr><tr><td>-restart</td><td>重新启动所有容器。</td></tr><tr><td>-stop</td><td>停止所有容器。</td></tr><tr><td>-update</td><td>更新所有容器和数据库。</td></tr><tr><td>-updatedb</td><td>更新/初始化数据库。</td></tr><tr><td>-updaterun</td><td>更新 <code>run.sh</code> 文件。</td></tr><tr><td>-updateself</td><td>更新安装脚本。</td></tr><tr><td>-updateconf</td><td>更新所有容器，而无需重新启动正在运行的实例。</td></tr><tr><td>-uninstall</td><td><p>在执行此命令之前，系统会提示您保存数据库文件。选 <code>y</code> 将创建一个包含最新备份的数据库的 tar 文件。</p><p></p><p>停止容器，删除 <code>bwdata</code> 目录及其所有内容，并删除临时卷。执行后，系统会询问您是否还要清除所有 Bitwarden 镜像。</p></td></tr><tr><td>-renewcert</td><td>续签证书。</td></tr><tr><td>-rebuild</td><td>重建从 <code>config.yml</code> 生成的安装资产。</td></tr><tr><td>-help</td><td>列出所有命令。</td></tr></tbody></table>

@@ -1,4 +1,4 @@
-# 关于 SSO
+# 关于单点登录
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/about-sso/)
@@ -12,7 +12,7 @@
 * 用于安全数据访问流程的多个不同的[成员解密选项](sso-decryption-options.md)。
 * 通过 SSO 实现成员[即时 (JIT) 配置](jit-provisioning.md)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 将 SSO 与 Bitwarden 结合使用保留了我们的零知识加密模型。Bitwarden 没有任何人可以访问您的数据，同样，您的身份提供程序也不能访问您的数据。这正是 SSO 将身份验证与解密操作分离的原理。在所有实现方案中，您的身份提供程序不能也不会访问解密密码库数据所需的解密密钥。
 
 虽然身份验证是由您的 IdP 处理，但数据的解密由多种[解密方式](sso-decryption-options.md)之一进行控制。

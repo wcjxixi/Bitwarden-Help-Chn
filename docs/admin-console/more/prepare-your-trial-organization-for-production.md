@@ -16,7 +16,7 @@
 | -- | -------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | 1a | 0.5      | 升级或重新创建您的组织 | [升级您的组织](../organizations-overview.md#upgrade-an-organization)或[创建新的组织](../organizations-overview.md#create-an-organization)。 |
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您选择为生产实施从头开始创建一个新的组织，请再次查看[概念验证项目清单](proof-of-concept-project-checklist.md)，并在继续之前完成这些步骤。
 {% endhint %}
 

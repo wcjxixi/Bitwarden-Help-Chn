@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/getting-started-providers/)
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 有兴趣成为提供商吗？要开始使用，我们要求：
 
 * 您的业务有一个活跃的企业版组织。&#x20;
@@ -41,7 +41,7 @@
 
 现在，开始将您的员工添加为[服务用户](provider-users.md#provider-user-types)，这将使他们能够全面管理所有客户组织、创建新的组织或管理提供商本身：
 
-1、**邀请用户**。从提供商门户的 **☷管理** → **成员**选项卡中，邀请用户作为服务用户（或邀请其他提供商管理员）：
+1、**邀请用户**。从提供商门户的 <i class="fa-sliders">:sliders:</i>**管理** → **成员**选项卡中，邀请用户作为服务用户（或邀请其他提供商管理员）：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6E5GA111xdiHHkA0gb5LtG/5e5b5fddb5911e1b2ed468c1d49134ad/2024-12-05_09-27-45.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>添加提供商用户</p></figcaption></figure></div>
 
@@ -69,7 +69,7 @@
 
 ### 创建客户组织 <a href="#create-a-client-organization" id="create-a-client-organization"></a>
 
-要创建新的客户组织，您必须是[提供商管理员](provider-users.md)。导航到提供商门户的**客户**选项卡，然后选择 ✚**添加**按钮 → **新增客户**：
+要创建新的客户组织，您必须是[提供商管理员](provider-users.md)。导航到提供商门户的**客户**选项卡，然后选择 <i class="fa-plus">:plus:</i>**添加**按钮 → **新增客户**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5WjBETB0YFm7TS1zpIHeSC/a22563b9172036b1c90bfb61d9ab310b/new_client_org_1.png?w=1050&#x26;fm=avif" alt=""><figcaption><p>新增客户组织</p></figcaption></figure></div>
 
@@ -81,7 +81,7 @@
 只要添加的用户数量在提供商的最低席位限制内，服务用户即可向客户组织添加成员，或将客户组织添加到提供商。只有提供商管理员才能增加最低席位限制。
 {% endhint %}
 
-1、导航到提供商门户的**客户**选项卡，然后选择 ✚**新增**按钮 → **现有组织**：
+1、导航到提供商门户的 <i class="fa-people-roof">:people-roof:</i>**客户**选项卡，然后选择 <i class="fa-plus">:plus:</i>**新增**按钮 → <i class="fa-sitemap">:sitemap:</i>**现有组织**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/mA88mJFGTc9w6MEcisaME/af9d5d7d413cb01d9d18df783fd934fc/Existing_client_org.png?w=1050&#x26;fm=avif" alt=""><figcaption><p>Admin Console 添加现有组织</p></figcaption></figure></div>
 
@@ -125,7 +125,7 @@
 
 在建立了安全且可扩展的凭据共享基础设施后，您就可以开始邀请用户加入组织了。根据您的客户规模，可以通过三种方式将用户加入 Bitwarden：
 
-1、**对于小型客户**，通过从 Admin Console 的 **☷成员**视图向用户发送电子邮件邀请：
+1、**对于小型客户**，通过从 Admin Console 的 <i class="fa-sliders">:sliders:</i>**成员**视图向用户发送电子邮件邀请：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4wUO7i6w8y4sqAvwuMVZyd/070a5b36b242b1e4871cc0f58e0b8f83/2024-12-05_09-31-35.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>邀请成员作为提供者</p></figcaption></figure></div>
 

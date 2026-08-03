@@ -20,7 +20,7 @@
 
 如果还没有为您的组织创建唯一的 **SSO 标识符**，请创建一个。否则，您不需要在此界面上编辑任何内容，保持此界面打开，以方便参考。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
@@ -58,24 +58,11 @@
 
 至此，您已在 Azure 门户范围内配置好了您所需要的一切。请返回 Bitwarden 网页 App 配置以下字段：
 
-| 字段                                                      | 描述                                                                                                                       |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Authority                                               | 输入 `https://login.microsoft.com/<TENANT_ID>/v2.0`，其中 `TENANT_ID` 是从应用程序注册的 Overview（概览）界面获取到的 **Directory (tenant) ID**。 |
-| Client ID                                               | 输入应用程序注册的 **Application (client) ID**，这可以从 Overview 界面中获取。                                                               |
-| Client Secret                                           | 输入[已创建的客户端密钥](microsoft-entra-id-oidc-implementation.md#create-a-client-secret)的 **Secret Value**。                       |
-| Metadata Address                                        | 对于 Azure 实现，您可以将此字段留空。                                                                                                   |
-| OIDC Redirect Behavior                                  | 选择 **Form POST** 或 **Redirect GET**。                                                                                     |
-| Get Claims From User Info Endpoint                      | 如果您在 SSO 期间收到 URL 太长错误 (HTTP 414)、截断的 URL 和/或失败，请启用此选项。                                                                  |
-| Additional/Custom Scopes                                | 定义要添加到请求中的自定义范围（逗号分隔）。                                                                                                   |
-| Additional/Custom User ID Claim Types                   | 为用户标识（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                           |
-| Additional/Custom Email Claim Types                     | 为用户的电子邮箱地址（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                      |
-| Additional/Custom Name Claim Types                      | 为用户的全名或显示名称（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                     |
-| Requested Authentication Context Class Reference values | 定义身份验证上下文类引用标识符 (`acr_values`) （以空格分隔）。按优先顺序列出 `acr_values`。                                                             |
-| Expected “acr” Claim Value in Response                  | 定义 Bitwarden 在响应中期望和验证的 `acr` 声明值。                                                                                       |
+<table data-search="false"><thead><tr><th>字段</th><th>描述</th></tr></thead><tbody><tr><td>Authority</td><td>输入 <code>https://login.microsoft.com/&#x3C;TENANT_ID>/v2.0</code>，其中 <code>TENANT_ID</code> 是从应用程序注册的 Overview（概览）界面获取到的 <strong>Directory (tenant) ID</strong>。</td></tr><tr><td>Client ID</td><td>输入应用程序注册的 <strong>Application (client) ID</strong>，这可以从 Overview 界面中获取。</td></tr><tr><td>Client Secret</td><td>输入<a href="microsoft-entra-id-oidc-implementation.md#create-a-client-secret">已创建的客户端密钥</a>的 <strong>Secret Value</strong>。</td></tr><tr><td>Metadata Address</td><td>对于 Azure 实现，您可以将此字段留空。</td></tr><tr><td>OIDC Redirect Behavior</td><td>选择 <strong>Form POST</strong> 或 <strong>Redirect GET</strong>。</td></tr><tr><td>Get Claims From User Info Endpoint</td><td>如果您在 SSO 期间收到 URL 太长错误 (HTTP 414)、截断的 URL 和/或失败，请启用此选项。</td></tr><tr><td>Additional/Custom Scopes</td><td>定义要添加到请求中的自定义范围（逗号分隔）。</td></tr><tr><td>Additional/Custom User ID Claim Types</td><td>为用户标识（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。</td></tr><tr><td>Additional/Custom Email Claim Types</td><td>为用户的电子邮箱地址（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。</td></tr><tr><td>Additional/Custom Name Claim Types</td><td>为用户的全名或显示名称（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。</td></tr><tr><td>Requested Authentication Context Class Reference values</td><td>定义身份验证上下文类引用标识符 (<code>acr_values</code>) （以空格分隔）。按优先顺序列出 <code>acr_values</code>。</td></tr><tr><td>Expected “acr” Claim Value in Response</td><td>定义 Bitwarden 在响应中期望和验证的 <code>acr</code> 声明值。</td></tr></tbody></table>
 
 完成这些字段的配置后，**保存**您的工作。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以通过激活[单点登录身份验证策略](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)来要求用户使用 SSO 登录。
 {% endhint %}
 

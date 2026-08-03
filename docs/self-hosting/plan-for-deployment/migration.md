@@ -21,7 +21,7 @@
 
 3、打开云端网页密码库然后[下载您的许可证](../licensing-on-premise.md)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 [组织许可证](../licensing-on-premise.md#organization-license)和[个人许可证](../licensing-on-premise.md#individual-license)是独立的文件。**您不需要同时获取这两个许可证文件**。如果您要迁移组织，则只需要获取组织许可证，并且必须是[组织所有者](../../admin-console/manage-members/member-roles.md)才能执行此操作。
 {% endhint %}
 
@@ -31,7 +31,7 @@
 
 6、还是在您自托管的网页密码库中，上传您的[许可证](../licensing-on-premise.md)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 上传[组织许可证](../licensing-on-premise.md#organization-license)和[个人许可证](../licensing-on-premise.md#individual-license)的位置是不同的。和之前的一样，只上传与您相关的那一个。
 {% endhint %}
 
@@ -57,7 +57,7 @@
 
 1、创建自托管 Bitwarden 服务器的 `./bwdata` 目录的完整备份。需要特别注意，您需要访问 `./bwdata/core/attachments`，以便手动将[文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)上传到云端（**步骤 5**）。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果用户在一段时间内导出了他们的个人密码库，您可能需要将 `./bwdata/core/attachments` 目录中的项目重新同步到您的备份位置，并上传任何在切换期间发生更改的新项目。
 {% endhint %}
 
@@ -65,7 +65,7 @@
 
 3、打开云端网页密码库。大多数用户在之前都已创建了用于计费目的的云端账户，因此请登录该账户。如果您之前的免费账户不是用于计费的云端账户，请立即创建一个账户。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您要迁移组织，则您已经拥有了一个用于计费和许可目的的云端组织。为实现平稳地过渡，我们建议使用这个已经建立的组织，而不是[创建一个新的组织](../../admin-console/organizations-overview.md#create-an-organization)。
 {% endhint %}
 
@@ -87,7 +87,7 @@
 {% endtab %}
 
 {% tab title="主机到主机" %}
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 这些说明目前只适用于从一个 Linux 托管服务器迁移到另一个 Linux 托管服务器。
 {% endhint %}
 
@@ -120,7 +120,7 @@
 
 1、[导出您的组织密码库](../../password-manager/import-and-export/export-vault-data.md#export-an-organization-vault)，然后指导所有组织成员[导出他们的个人密码库](../../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 单独下载密码库项目的任何文件附件，并注明它们属于哪个项目。
 {% endhint %}
 

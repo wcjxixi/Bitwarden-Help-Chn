@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/providers/)
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 有兴趣成为提供商吗？要开始使用，我们要求：
 
 * 您的业务有一个活跃的企业版组织。&#x20;

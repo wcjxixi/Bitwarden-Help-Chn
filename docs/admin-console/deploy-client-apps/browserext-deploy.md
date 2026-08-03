@@ -109,7 +109,7 @@ jbkfoedolllekgbhcbcoahefnbanhhlh;https://edge.microsoft.com/extensionwebstorebas
 
 ## macOS
 
-要在 macOS 浏览器上部署 Bitwarden 浏览器扩展，通常涉及使用属性列表（`.plist`）文件。每种浏览器的步骤略有不同：
+要在 macOS 浏览器上部署 Bitwarden 浏览器扩展，通常涉及使用属性列表 (`.plist`) 文件。每种浏览器的步骤略有不同：
 
 {% tabs %}
 {% tab title="Chrome" %}
@@ -155,7 +155,7 @@ jbkfoedolllekgbhcbcoahefnbanhhlh;https://edge.microsoft.com/extensionwebstorebas
 
 8、使用您的软件分发或 MDM 工具将 Chrome `.dmg` 或 `.pkg` 和配置文件部署到所有托管计算机。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Mac)](https://support.google.com/chrome/a/answer/7550274?hl=zh-Hans\&sjid=18069515108639844992-NC) 指南。
 {% endhint %}
 {% endtab %}
@@ -253,7 +253,7 @@ jbkfoedolllekgbhcbcoahefnbanhhlh;https://edge.microsoft.com/extensionwebstorebas
 
 7、使用您的软件分发或 MDM 工具将 Edge `.pkg` 和配置文件部署到所有托管计算机。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 有关**专用于 Jamf** 的帮助，请参阅 Microsoft 文档：[使用 Jamf 在 macOS 上配置 Microsoft Edge 策略设置](https://docs.microsoft.com/zh-cn/deployedge/configure-microsoft-edge-on-mac-jamf)。
 {% endhint %}
 {% endtab %}
@@ -325,7 +325,7 @@ chmod -R 755 /etc/opt/chrome/policies
 * Google Chrome 浏览器
 * `/etc/opt/chrome/policies/managed/managed_preferences.json`
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Linux)](https://support.google.com/chrome/a/answer/9025903?hl=en\&ref_topic=9025817\&sjid=18069515108639844992-NC) 指南。
 {% endhint %}
 {% endtab %}
@@ -369,7 +369,7 @@ chmod -R 755 /etc/opt/chrome/policies
 * Firefox 浏览器
 * `/distribution/policies.json`
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如需更多帮助，请参阅 Firefox 的 [policies.json 概述](https://support.mozilla.org/en-US/kb/customizing-firefox-macos-using-configuration-prof)或 Github 上的[策略自述文件](https://github.com/mozilla/policy-templates/blob/master/README.md)。
 {% endhint %}
 {% endtab %}

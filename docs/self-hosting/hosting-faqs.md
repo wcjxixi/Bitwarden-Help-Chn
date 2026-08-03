@@ -87,7 +87,7 @@ Windows 上的 Docker Desktop 版可能需要许可证，这取决于贵公司�
 
 ### 问：如何将 Gmail 用作 SMTP 邮件服务器？ <a href="#q-how-do-i-use-gmail-as-an-smtp-mail-server" id="q-how-do-i-use-gmail-as-an-smtp-mail-server"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 从 2024 年秋季开始，使用 Gmail 作为 SMTP 的 Bitwarden 等 App 将需要使用 [App 专用密码](https://support.google.com/mail/answer/185833?hl=zh-Hans)进行身份验证，因为基本身份验证（用户名和密码）支持将被淘汰。我们建议您尽快将 SMTP 配置迁移到 App专用 密码。[了解更多有关变更的信息](https://support.google.com/a/answer/14114704?hl=zh-Hans)。
 {% endhint %}
 

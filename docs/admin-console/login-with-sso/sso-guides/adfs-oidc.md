@@ -20,7 +20,7 @@
 
 如果还没有为您的组织创建唯一的 **SSO 标识符**，请创建一个。否则，您不需要在此界面上编辑任何内容，保持此界面打开，以方便参考。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
@@ -87,24 +87,11 @@
 
 至此，您已经配置好了 AD FS 服务器管理器所需要的一切。请返回 Bitwarden 网页 App 配置以下字段：
 
-| 字段                                                      | 描述                                                                                                                                    |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Authority                                               | 输入附加了 `/adfs` 的 AD FS 服务器的主机名称，例如 `https://adfs.mybusiness.com/adfs`。                                                                 |
-| Client ID                                               | 输入[获取到的 Client ID](adfs-oidc.md#create-an-application-group)。                                                                         |
-| Client Secret                                           | 输入[获取到的 Client Secret](adfs-oidc.md#create-an-application-group)。                                                                     |
-| Metadata Address                                        | 输入附加了 `/.well-known/openid-configuration` 的指定 **Authority** 值，例如 `https://adfs.mybusiness.com/adfs/.well-known/openid-configuration`。 |
-| OIDC Redirect Behavior                                  | 选择 **Redirect GET**。                                                                                                                  |
-| Get Claims From User Info Endpoint                      | 如果您在 SSO 期间收到 URL 太长错误 (HTTP 414)、截断的 URL 和/或失败，请启用此选项。                                                                               |
-| Custom Scopes                                           | 定义要添加到请求中的自定义范围（逗号分隔）。                                                                                                                |
-| Custom User ID Claim Types                              | 为用户标识（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                                        |
-| Custom Email Claim Types                                | 为用户的电子邮件地址（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                                   |
-| Custom Name Claim Types                                 | 为用户的全名或显示名称（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。                                                                                  |
-| Requested Authentication Context Class Reference values | 定义身份验证上下文类引用标识符（`acr_values`）（以空格分隔）。按优先顺序列出 `acr_values`。                                                                            |
-| Expected “acr” Claim Value in Response                  | 定义 Bitwarden 在响应中期望和验证的 `acr` 声明值。                                                                                                    |
+<table data-search="false"><thead><tr><th>字段</th><th>描述</th></tr></thead><tbody><tr><td>Authority</td><td>输入附加了 <code>/adfs</code> 的 AD FS 服务器的主机名称，例如 <code>https://adfs.mybusiness.com/adfs</code>。</td></tr><tr><td>Client ID</td><td>输入<a href="adfs-oidc.md#create-an-application-group">获取到的 Client ID</a>。</td></tr><tr><td>Client Secret</td><td>输入<a href="adfs-oidc.md#create-an-application-group">获取到的 Client Secret</a>。</td></tr><tr><td>Metadata Address</td><td>输入附加了 <code>/.well-known/openid-configuration</code> 的指定 <strong>Authority</strong> 值，例如 <code>https://adfs.mybusiness.com/adfs/.well-known/openid-configuration</code>。</td></tr><tr><td>OIDC Redirect Behavior</td><td>选择 <strong>Redirect GET</strong>。</td></tr><tr><td>Get Claims From User Info Endpoint</td><td>如果您在 SSO 期间收到 URL 太长错误 (HTTP 414)、截断的 URL 和/或失败，请启用此选项。</td></tr><tr><td>Custom Scopes</td><td>定义要添加到请求中的自定义范围（逗号分隔）。</td></tr><tr><td>Custom User ID Claim Types</td><td>为用户标识（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。</td></tr><tr><td>Custom Email Claim Types</td><td>为用户的电子邮件地址（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。</td></tr><tr><td>Custom Name Claim Types</td><td>为用户的全名或显示名称（逗号分隔）定义自定义声明类型键。定义后，会在返回标准类型之前搜索自定义声明类型。</td></tr><tr><td>Requested Authentication Context Class Reference values</td><td>定义身份验证上下文类引用标识符（<code>acr_values</code>）（以空格分隔）。按优先顺序列出 <code>acr_values</code>。</td></tr><tr><td>Expected “acr” Claim Value in Response</td><td>定义 Bitwarden 在响应中期望和验证的 <code>acr</code> 声明值。</td></tr></tbody></table>
 
 完成这些字段的配置后，**保存**您的工作。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以通过激活[单点登录身份验证策略](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)来要求用户使用 SSO 登录。
 {% endhint %}
 

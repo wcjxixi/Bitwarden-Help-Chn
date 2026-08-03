@@ -22,7 +22,7 @@
 
 3、选择**保存**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 具有特殊设置的用户，可以选择在**自定义环境**部分中单独指定每个服务的 URL。
 {% endhint %}
 {% endtab %}
@@ -40,7 +40,7 @@
 
 4、选择**保存**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 具有特殊设置的用户，可以选择在**自定义环境**部分中单独指定每个服务的 URL。
 {% endhint %}
 {% endtab %}
@@ -56,7 +56,7 @@
 
 3、选择**保存**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 具有特殊设置的用户，可以选择在**自定义环境**部分中单独指定每个服务的 URL。
 {% endhint %}
 {% endtab %}

@@ -37,7 +37,7 @@ Bitwarden 将使用 DNS TXT 记录来验证域名声明。该 DNS TXT 记录必�
 
 3、在**声明域名**界面，您将看到一个活动域名的列表，以及状态检查和选项。如果您没有活动域名，请选择**新增域名**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果是首次声明域名，[单一组织策略](../enterprise-policies.md#single-organization)将在声明过程中自动激活。如果您在 2025.3.0 版本发布之前已经声明了一个域名，则无需遵守此要求。
 {% endhint %}
 
@@ -57,7 +57,7 @@ Bitwarden 将使用 DNS TXT 记录来验证域名声明。该 DNS TXT 记录必�
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1sgIhVJzsRce0VyNIvH1ze/9ebaf423a88815e476bf2d81231fbf8e/2025-04-15_09-52-34.png?w=1284&#x26;fm=avif" alt=""><figcaption><p>声明域名</p></figcaption></figure></div>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在 Bitwarden 中更新您已声明的域名之前，请使用 `dig` 命令验证您的 TXT 记录是否公开可见：
 
 ```bash
@@ -73,7 +73,7 @@ dig your.domain.com TXT
 * **复制 DNS TXT 记录**以将其提供给您的 DNS 提供商。
 * 如果自动声明不成功，可以手动**验证域名**。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Bitwarden 将在前 72 小时内尝试声明域名 3 次。如果该域名在第 3 次尝试后的 7 天内仍未通过验证，该域名将从您的组织中被移除。
 {% endhint %}
 
@@ -97,7 +97,7 @@ Bitwarden 将在前 72 小时内尝试声明域名 3 次。如果该域名在第
 
 #### 删除组织管理的账户 <a href="#org-managed-account-deletion" id="org-managed-account-deletion"></a>
 
-组织管理员可以直接删除已声明的成员账户，而不是只将他们从组织中移除。所有者和管理员可以在 Admin Console 的**成员**页面上使用 **≡**&#x83DC;单删除已声明的账户：
+组织管理员可以直接删除已声明的成员账户，而不是只将他们从组织中移除。所有者和管理员可以在 Admin Console 的**成员**页面上使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>菜单删除已声明的账户：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6HUnGTfMstF4IasZcKBfdi/0d2dbd328ba4a006611576e7d91c70df/2025-01-14_10-45-56.png?w=1117&#x26;fm=avif" alt=""><figcaption><p>删除已声明的账户</p></figcaption></figure></div>
 

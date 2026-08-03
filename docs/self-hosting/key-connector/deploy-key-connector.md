@@ -14,7 +14,7 @@ Bitwarden 支持在一个自托管实例上部署一个 Key Connector，供一�
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 加密密钥的管理非常敏感，**仅建议拥有可以安全支持部署和管理密钥服务器的团队和基础架构的企业使用**。
 {% endhint %}
 
@@ -85,7 +85,7 @@ nano bwdata/config.yml
 nano bwdata/env/key-connector.override.env
 ```
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 此文件将被预先填入默认值，以启动一个功能齐全的本地 Key Connector 设置，**但不建议在生产环境中使用这些默认值**。
 {% endhint %}
 
@@ -108,7 +108,7 @@ keyConnectorSettings__identityServerUri=https://your.bitwarden.domain.com/identi
 
 Key Connector 必须访问一个为您的组织成员存储已加密用户密钥的数据库。创建一个安全数据库来存储已加密的用户密钥，并将 `key-connector.override.env` 中 `keyConnectorSettings__database__` 的默认值替换为所选数据库的**要求的值**列中指定的值：
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 目前**不支持**从一个数据库迁移到另一个数据库。无论您选择哪个提供程序，请为数据库**实施一个频繁的自动备份计划**。
 {% endhint %}
 
@@ -118,7 +118,7 @@ Key Connector 必须访问一个为您的组织成员存储已加密用户密钥
 
 Key Connector 使用 RSA 密钥对来保护静态用户密钥。创建一个密钥对并将 `key-connector.override.env` 中 `keyConnectorSettings__rsaKey__` 和 `keyConnectorSettings__certificate__` 的默认值替换为您选择的实施所要求的值。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 RSA 密钥对的长度**必须至少**为 2048 位。
 {% endhint %}
 
@@ -128,7 +128,7 @@ RSA 密钥对的长度**必须至少**为 2048 位。
 {% tab title="证书" %}
 要使用包含 RSA 密钥对的 X509 证书，请根据您的证书的存储位置指定所需的值（参阅**文件系统**、**操作系统证书存储**等）：
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 证书**必须**作为 PKCS12 `.pfx` 文件提供，例如：
 
 ```bash
@@ -332,7 +332,7 @@ keyConnectorSettings__certificate__filesystemPath=/etc/bitwarden/key-connector/c
 * 加密机制之间的迁移并非总是可行的。
 * 目前**不支持**从一个数据库迁移到另一个数据库。请确保为数据库执行频繁的自动备份计划。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 加密密钥的管理非常敏感，**只建议拥有能安全支持部署和管理密钥服务器的团队和基础设施的企业使用**。
 {% endhint %}
 
@@ -354,7 +354,7 @@ keyConnectorSettings__certificate__filesystemPath=/etc/bitwarden/key-connector/c
 
 5、导航至**设置** → **单点登录**界面。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 接下来的几个步骤假设您已经拥有一个使用 [SAML 2.0](../../admin-console/login-with-sso/sso-guides/generic-saml.md) 或 [OIDC](../../admin-console/login-with-sso/sso-guides/generic-oidc.md) 的、激活了 [SSO 登录](../../admin-console/login-with-sso/about-sso.md)的实施。**如果还没有**，请在继续之前先实施和测试 SSO 登录。
 {% endhint %}
 

@@ -16,16 +16,7 @@
 
 SIEM 事件监控平台提供了很多特定的字段，这些字段用于监控以维持高标准的安全性：
 
-| 值                 | 描述                                                                                                                                           |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `actingUserEmail` | 执行操作的用户电子邮箱地址。                                                                                                                               |
-| `actingUserId`    | 执行操作的用户唯一 ID。                                                                                                                                |
-| `actingUserName`  | 执行操作的用户名称。                                                                                                                                   |
-| `collectionId`    | 组织集合 ID。                                                                                                                                     |
-| `device`          | 设备的数值 ID。具体映射关系可以在[这里](https://github.com/bitwarden/server/blob/d50ad97e6eeb733af9c069a949939b0567ba936d/src/Core/Enums/DeviceType.cs#L4)找到。 |
-| `ipAddress`       | 执行事件的 IP 地址。                                                                                                                                 |
-| `itemId`          | 组织密码库的密码库项目（密码、安全笔记等）。                                                                                                                       |
-| `policyId`        | 组织策略更新。在[这里](event-logs.md#organization-events)查看组织事件。                                                                                       |
+<table data-search="false"><thead><tr><th>值</th><th>描述</th></tr></thead><tbody><tr><td><code>actingUserEmail</code></td><td>执行操作的用户电子邮箱地址。</td></tr><tr><td><code>actingUserId</code></td><td>执行操作的用户唯一 ID。</td></tr><tr><td><code>actingUserName</code></td><td>执行操作的用户名称。</td></tr><tr><td><code>collectionId</code></td><td>组织集合 ID。</td></tr><tr><td><code>device</code></td><td>设备的数值 ID。具体映射关系可以在<a href="https://github.com/bitwarden/server/blob/d50ad97e6eeb733af9c069a949939b0567ba936d/src/Core/Enums/DeviceType.cs#L4">这里</a>找到。</td></tr><tr><td><code>ipAddress</code></td><td>执行事件的 IP 地址。</td></tr><tr><td><code>itemId</code></td><td>组织密码库的密码库项目（密码、安全笔记等）。</td></tr><tr><td><code>policyId</code></td><td>组织策略更新。在<a href="event-logs.md#organization-events">这里</a>查看组织事件。</td></tr></tbody></table>
 
 ## 相关趋势 <a href="#concerning-trends" id="concerning-trends"></a>
 

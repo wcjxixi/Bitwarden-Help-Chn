@@ -16,15 +16,7 @@
 
 ## 身份提供程序配置映射 <a href="#identity-provider-configuration-mapping" id="identity-provider-configuration-mapping"></a>
 
-| Bitwarden 字段 | Azure AD 字段           | JumpCloud 字段              | OneLogin 字段              | G-Suite 字段                     | Okta 字段                             |
-| ------------ | --------------------- | ------------------------- | ------------------------ | ------------------------------ | ----------------------------------- |
-| 实体 ID        | Azure AD Identifier   | IdP Entity ID             | Issuer URL               | Entity ID                      |                                     |
-| 绑定类型         | Azure + Bitwarden 需匹配 | JumpCloud + Bitwarden 需匹配 | OneLogin + Bitwarden 需匹配 | G-Suite + Bitwarden 需匹配        | Okta + Bitwarden 需匹配                |
-| 单点登录服务 URL   | Login URL             | IDP URL                   | SAML 2.0 Endpoint (HTTP) | SSO URL                        |                                     |
-| 单点注销服务 URL   | Logout URL            | 可选                        | SLO Endpoint (HTTP)      | N/A                            |                                     |
-| 工件解析服务 URL   | 可选                    | 可选                        | 可选                       | 可选                             | 可选                                  |
-| X509 公共证书    | Certificate (Base64)  | 激活后下载，在「IDP 证书有效」下可用      | X.509 Certificate        | Certificate（下载 PEM 文件，以文本形式打开） | x.509 Certificate                   |
-| 出站签名算法       | Azure + Bitwarden 需匹配 | Signature Algorithm       | Azure + Bitwarden 需匹配    | 使用复选框以关闭/打开                    | Signature Algorithm + Bitwarden 需匹配 |
+<table data-search="false"><thead><tr><th>Bitwarden 字段</th><th>Azure AD 字段</th><th>JumpCloud 字段</th><th>OneLogin 字段</th><th>G-Suite 字段</th><th>Okta 字段</th></tr></thead><tbody><tr><td>实体 ID</td><td>Azure AD Identifier</td><td>IdP Entity ID</td><td>Issuer URL</td><td>Entity ID</td><td></td></tr><tr><td>绑定类型</td><td>Azure + Bitwarden 需匹配</td><td>JumpCloud + Bitwarden 需匹配</td><td>OneLogin + Bitwarden 需匹配</td><td>G-Suite + Bitwarden 需匹配</td><td>Okta + Bitwarden 需匹配</td></tr><tr><td>单点登录服务 URL</td><td>Login URL</td><td>IDP URL</td><td>SAML 2.0 Endpoint (HTTP)</td><td>SSO URL</td><td></td></tr><tr><td>单点注销服务 URL</td><td>Logout URL</td><td>可选</td><td>SLO Endpoint (HTTP)</td><td>N/A</td><td></td></tr><tr><td>工件解析服务 URL</td><td>可选</td><td>可选</td><td>可选</td><td>可选</td><td>可选</td></tr><tr><td>X509 公共证书</td><td>Certificate (Base64)</td><td>激活后下载，在「IDP 证书有效」下可用</td><td>X.509 Certificate</td><td>Certificate（下载 PEM 文件，以文本形式打开）</td><td>x.509 Certificate</td></tr><tr><td>出站签名算法</td><td>Azure + Bitwarden 需匹配</td><td>Signature Algorithm</td><td>Azure + Bitwarden 需匹配</td><td>使用复选框以关闭/打开</td><td>Signature Algorithm + Bitwarden 需匹配</td></tr></tbody></table>
 
 ## 示例配置截图 <a href="#screenshots-of-sample-configurations" id="screenshots-of-sample-configurations"></a>
 

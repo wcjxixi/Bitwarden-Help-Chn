@@ -8,7 +8,7 @@
 
 所有的密码库数据在存储到任何位置之前都会由 Bitwarden 加密。要了解是如何加密的，请参阅 [Bitwarden 安全白皮书](../bitwarden-security-whitepaper.md)。Bitwarden 是一种零知识的解决方案，这意味着只有您拥有解密密码库数据所需的密钥。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您想了解更多关于这些加密密钥是如何用来保护您的密码库的，您可以查看我们的[安全白皮书](https://bitwarden.com/images/resources/security-white-paper-download.pdf)。
 {% endhint %}
 

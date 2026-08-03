@@ -58,7 +58,7 @@ Panther SIEM 服务仅适用于 Bitwarden 云托管组织。
 
 ### 开始监控数据 <a href="#start-monitoring-data" id="start-monitoring-data"></a>
 
-1、要开始监控数据，请转到主仪表板然后选择 **🔍Investigate** 和 **Data Explorer**。
+1、要开始监控数据，请转到主仪表板然后选择 <i class="fa-sistrix">:sistrix:</i>**Investigate** 和 **Data Explorer**。
 
 2、在 **Data Explorer** 页面上，从下拉菜单中选择 `panther_logs.public` 数据库。确保 `bitwarden_events` 也可见。
 

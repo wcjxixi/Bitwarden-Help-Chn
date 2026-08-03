@@ -82,11 +82,11 @@ InsightConnect 上的 Bitwarden 插件适用于云端用户和 Insight Orchestra
 
 ### 添加工作流步骤 <a href="#add-a-workflow-step" id="add-a-workflow-step"></a>
 
-1、在工作流编辑器上，选择 ✚加号图标以添加新步骤。
+1、在工作流编辑器上，选择 <i class="fa-circle-plus">:circle-plus:</i> 加号图标以添加新步骤。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6B6GApClPXwr3yypKZJ5N0/38a6edc616bd3f23e3ee07ef4f9dfaeb/2024-08-20_12-26-54.png?w=262&#x26;fm=avif" alt=""><figcaption><p>添加步骤</p></figcaption></figure></div>
 
-2、选择 ✚**Action** 以添加新操作。从插件列表中选择 **Bitwarden** 。
+2、选择 <i class="fa-plus">:plus:</i>**Action** 以添加新操作。从插件列表中选择 **Bitwarden** 。
 
 3、在选择操作界面，选择要监控的操作。对于此示例，我们将选择 **List Events** 。完成选择后，选择 **Continue**。
 

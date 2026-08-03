@@ -185,25 +185,7 @@ search | commands1 arguments1 | commands2 arguments2 | ...
 
 ### Bitwarden 字段 <a href="#bitwarden-fields" id="bitwarden-fields"></a>
 
-| 值                 | 示例结果                                                                                                                                      |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `actingUserEmail` | 执行操作的用户的电子邮件。                                                                                                                             |
-| `actingUserId`    | 执行操作的用户的唯一 ID。                                                                                                                            |
-| `actingUserName`  | 执行操作的用户的名称。                                                                                                                               |
-| `collectionId`    | 组织集合 ID。                                                                                                                                  |
-| `device`          | 用于标识执行操作的设备的数字。                                                                                                                           |
-| `deviceName`      | 设备的数字 ID。具体映射关系请参阅[此处](https://github.com/bitwarden/splunk/blob/a9a6d6501c36d37ee7e95f88400c39f6ff2c926b/package/default/props.conf#L83)。 |
-| `groupId`         | 组织群组 ID。                                                                                                                                  |
-| `groupName`       | 组织群组名称。                                                                                                                                   |
-| `hash`            | Splunk 计算的数据哈希。在[此处](https://docs.splunk.com/Documentation/Splunk/9.0.4/Security/Dataintegritycontrol)了解更多有关 Splunk 数据完整性的信息。             |
-| `ipAddress`       | 执行事件的 IP 地址。                                                                                                                              |
-| `itemId`          | 组织密码库的密码库项目（密码、安全笔记注释等）。                                                                                                                  |
-| `memberEmail`     | 操作针对的组织成员的电子邮件。                                                                                                                           |
-| `memberId`        | 操作针对的组织成员的唯一 ID。                                                                                                                          |
-| `memberName`      | 操作针对的组织成员的名称。                                                                                                                             |
-| `policyId`        | 组织策略更新。在[此处](../event-logging/event-logs.md#organization-events)了解组织事件。                                                                   |
-| `type`            | 表示发生的组织事件的事件类型代码。在[此处](../event-logging/event-logs.md)查看完整的事件代码列表和说明。                                                                     |
-| `typeName`        | 类型的数字 ID。在[此处](https://github.com/bitwarden/splunk/blob/a9a6d6501c36d37ee7e95f88400c39f6ff2c926b/package/default/props.conf#L8)了解映射关系。    |
+<table data-search="false"><thead><tr><th>值</th><th>示例结果</th></tr></thead><tbody><tr><td><code>actingUserEmail</code></td><td>执行操作的用户的电子邮件。</td></tr><tr><td><code>actingUserId</code></td><td>执行操作的用户的唯一 ID。</td></tr><tr><td><code>actingUserName</code></td><td>执行操作的用户的名称。</td></tr><tr><td><code>collectionId</code></td><td>组织集合 ID。</td></tr><tr><td><code>device</code></td><td>用于标识执行操作的设备的数字。</td></tr><tr><td><code>deviceName</code></td><td>设备的数字 ID。具体映射关系请参阅<a href="https://github.com/bitwarden/splunk/blob/a9a6d6501c36d37ee7e95f88400c39f6ff2c926b/package/default/props.conf#L83">此处</a>。</td></tr><tr><td><code>groupId</code></td><td>组织群组 ID。</td></tr><tr><td><code>groupName</code></td><td>组织群组名称。</td></tr><tr><td><code>hash</code></td><td>Splunk 计算的数据哈希。在<a href="https://docs.splunk.com/Documentation/Splunk/9.0.4/Security/Dataintegritycontrol">此处</a>了解更多有关 Splunk 数据完整性的信息。</td></tr><tr><td><code>ipAddress</code></td><td>执行事件的 IP 地址。</td></tr><tr><td><code>itemId</code></td><td>组织密码库的密码库项目（密码、安全笔记注释等）。</td></tr><tr><td><code>memberEmail</code></td><td>操作针对的组织成员的电子邮件。</td></tr><tr><td><code>memberId</code></td><td>操作针对的组织成员的唯一 ID。</td></tr><tr><td><code>memberName</code></td><td>操作针对的组织成员的名称。</td></tr><tr><td><code>policyId</code></td><td>组织策略更新。在<a href="../event-logging/event-logs.md#organization-events">此处</a>了解组织事件。</td></tr><tr><td><code>type</code></td><td>表示发生的组织事件的事件类型代码。在<a href="../event-logging/event-logs.md">此处</a>查看完整的事件代码列表和说明。</td></tr><tr><td><code>typeName</code></td><td>类型的数字 ID。在<a href="https://github.com/bitwarden/splunk/blob/a9a6d6501c36d37ee7e95f88400c39f6ff2c926b/package/default/props.conf#L8">此处</a>了解映射关系。</td></tr></tbody></table>
 
 ### Spunk 默认字段 <a href="#spunk-default-fields" id="spunk-default-fields"></a>
 

@@ -119,7 +119,7 @@ general:
 
 部署需要您提供的共享存储类，该存储类必须支持 [ReadWriteMany](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)。以下是如何创建符合要求的存储类的示例：
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 以下假设您已创建了一个 AWS 弹性文件系统 (Elastic File System - EFS)。如果还没有，请立即[创建一个](https://docs.aws.amazon.com/efs/latest/ug/gs-step-two-create-efs-resources.html)。无论哪种情况，请记下您的 EFS **文件系统 ID**，在此过程中您将需要用到它。
 {% endhint %}
 
@@ -127,7 +127,7 @@ general:
 
 2、在 AWS CloudShell 中，替换以下脚本中的 `file_system_id= "REPLACE"` 变量并在 AWS CloudShell 中运行它：
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 以下只是一个说明性示例，请务必根据您自己的安全需求分配权限。
 {% endhint %}
 
@@ -168,16 +168,7 @@ sharedStorageClassName: "shared-storage"
 
 您需要将以下机密存储在 AWS Secrets Manager 中。请注意，您可以更改此处使用的**密钥**，但如果您这样做，还必须对后续步骤进行更改：
 
-| 密钥                                                                                                                    | 值                                                                                                                                                                                                                                        |
-| --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `installationid`                                                                                                      | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装 ID。更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                               |
-| `installationkey`                                                                                                     | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装密钥。更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                                |
-| `smtpusername`                                                                                                        | 您的 SMTP 服务器的有效用户名。                                                                                                                                                                                                                       |
-| `smtppassword`                                                                                                        | 输入的 SMTP 服务器用户名的有效密码。                                                                                                                                                                                                                    |
-| `yubicoclientid`                                                                                                      | YubiCloud 验证服务或自托管 Yubico 验证服务器的客户端 ID。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。                                                                                                                      |
-| `yubicokey`                                                                                                           | YubiCloud 验证服务或自托管 Yubico 验证服务器的机密密钥。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。                                                                                                                        |
-| globalSettings\_\_hibpApiKey                                                                                          | 您的 HaveIBeenPwned (HIBP) API 密钥，可[在此处](https://haveibeenpwned.com/API/Key)获取。此密钥允许用户在创账户时运行[数据泄露报告](../../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-report-individual-vaults-only)并检查其主密码是否存在泄露。 |
-| <p>如果您使用 Bitwarden SQL pod ：<code>sapassword</code></p><p></p><p>如果您使用自己的 SQL 服务器：<code>dbconnectionString</code></p> | 连接到 Bitwarden 实例的数据库的凭据。所需内容取决于您使用的是附带的 SQL Pod 还是外部 SQL 服务器。                                                                                                                                                                            |
+<table data-search="false"><thead><tr><th>密钥</th><th>值</th></tr></thead><tbody><tr><td><code>installationid</code></td><td>从 <a href="https://bitwarden.com/host/">https://bitwarden.com/host</a> 获取到的有效安装 ID。更多信息，请参阅<a href="../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for">我的安装 ID 和安装密钥是用来干什么的？</a></td></tr><tr><td><code>installationkey</code></td><td>从 <a href="https://bitwarden.com/host/">https://bitwarden.com/host</a> 获取到的有效安装密钥。更多信息，请参阅<a href="../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for">我的安装 ID 和安装密钥是用来干什么的？</a></td></tr><tr><td><code>smtpusername</code></td><td>您的 SMTP 服务器的有效用户名。</td></tr><tr><td><code>smtppassword</code></td><td>输入的 SMTP 服务器用户名的有效密码。</td></tr><tr><td><code>yubicoclientid</code></td><td>YubiCloud 验证服务或自托管 Yubico 验证服务器的客户端 ID。如果使用 YubiCloud，请<a href="https://upgrade.yubico.com/getapikey/">在此处</a>获取您的客户端 ID 和密钥 。</td></tr><tr><td><code>yubicokey</code></td><td>YubiCloud 验证服务或自托管 Yubico 验证服务器的机密密钥。如果使用 YubiCloud，请<a href="https://upgrade.yubico.com/getapikey/">在此处</a>获取您的客户端 ID 和密钥 。</td></tr><tr><td>globalSettings__hibpApiKey</td><td>您的 HaveIBeenPwned (HIBP) API 密钥，可<a href="https://haveibeenpwned.com/API/Key">在此处</a>获取。此密钥允许用户在创账户时运行<a href="../../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-report-individual-vaults-only">数据泄露报告</a>并检查其主密码是否存在泄露。</td></tr><tr><td><p>如果您使用 Bitwarden SQL pod ：<code>sapassword</code></p><p></p><p>如果您使用自己的 SQL 服务器：<code>dbconnectionString</code></p></td><td>连接到 Bitwarden 实例的数据库的凭据。所需内容取决于您使用的是附带的 SQL Pod 还是外部 SQL 服务器。</td></tr></tbody></table>
 
 1、安全存储您的机密后，[安装 ACSP](https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrating_csi_driver.html#integrating_csi_driver_install)。在 ACSP 安装过程中，您将：
 

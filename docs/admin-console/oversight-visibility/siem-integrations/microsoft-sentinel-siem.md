@@ -26,7 +26,7 @@ Bitwarden Event Logs App 位于 [Microsoft Azure Marketplace](https://azuremarke
 
 将 Bitwarden Event Logs App 添加到 Microsoft Sentinel 工作区后，您就可以使用 Bitwarden API 密钥连接您的 Bitwarden 组织了。
 
-1、返回**数据连接器**界面然后选择 Bitwarden Event Logs App。选择**打开连接器页面**。如果 Bitwarden Event Logs App 不可见，您可能需要选择 **⟳刷新**。
+1、返回**数据连接器**界面然后选择 Bitwarden Event Logs App。选择**打开连接器页面**。如果 Bitwarden Event Logs App 不可见，您可能需要选择 <i class="fa-arrow-rotate-right">:arrow-rotate-right:</i>**刷新**。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7CoeRtrpz1i7JbbF6Tm91e/a6e46ad19099681aa4b93cfc6fb9ed69/2024-10-08_12-45-04.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Microsoft Sentinel Bitwarden 事件日志 App</p></figcaption></figure></div>
 

@@ -8,10 +8,10 @@
 
 配置需要在 Bitwarden 网页 App 和 OneLogin 门户中同时进行。操作过程中，我们建议同时打开这两个界面，并按照文档记录的步骤顺序完成操作。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **已经是 SSO 专家了吗？**&#x8DF3;过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
 
-**⬇️** [下载示例](https://bitwarden.com/assets/mQMTlMcvpyBPzgAkgqDvg/ace51cc7a46379048140042282e6b24f/saml-onelogin-sample.zip)
+<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>[下载示例](https://bitwarden.com/assets/mQMTlMcvpyBPzgAkgqDvg/420fde23d3edf526d97f22bea8a5ed80/OneLogin.zip)
 {% endhint %}
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
@@ -28,7 +28,7 @@
 
 如果愿意，您可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做会从 SP 实体 ID 值中移除组织 ID，但大多数情况下都建议打开该选项。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
@@ -50,15 +50,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12yP5ohPGhqcCZZdpwVDQd/7fc5661e4fb4954ad00246deae2fd9b1/ol-appconfig.png?w=898&#x26;fm=avif" alt=""><figcaption><p>应用程序配置</p></figcaption></figure></div>
 
-| 应用程序设置                       | 描述                                                                                                                                            |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Audience (EntityID)          | <p>将此字段设置为预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>            |
-| Recipient                    | 将此字段设置为同样也用于 **Audience (Entity ID)** 设置的预先生成的 **SP 实体 ID**。                                                                                  |
-| ACS (Consumer) URL Validator | 尽管被 OneLogin 标记为**必需**，但您实际上并不需要在此字段中输入信息以与 Bitwarden 集成。跳到下一个字段 **ACS (Consumer) URL**。                                                      |
-| ACS (Consumer) URL           | <p>将此字段设置为预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br></p><p>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
-| SAML initiator               | 选择 **Service Provider**。SSO 登录当前不支持 IdP 发起的 SAML 断言。                                                                                          |
-| SAML nameID Format           | 将此字段设置您希望用于 SAML 断言的 [SAML NameID 格式](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。                                        |
-| SAML signature element       | 默认，OneLogin 将签名 SAML 响应。您可以将其设置为 **Assertion** 或 **Both**。                                                                                    |
+<table data-search="false"><thead><tr><th>应用程序设置</th><th>描述</th></tr></thead><tbody><tr><td>Audience (EntityID)</td><td>将此字段设置为预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</td></tr><tr><td>Recipient</td><td>将此字段设置为同样也用于 <strong>Audience (Entity ID)</strong> 设置的预先生成的 <strong>SP 实体 ID</strong>。</td></tr><tr><td>ACS (Consumer) URL Validator</td><td>尽管被 OneLogin 标记为<strong>必需</strong>，但您实际上并不需要在此字段中输入信息以与 Bitwarden 集成。跳到下一个字段 <strong>ACS (Consumer) URL</strong>。</td></tr><tr><td>ACS (Consumer) URL</td><td><p>将此字段设置为预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br></p><p>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p></td></tr><tr><td>SAML initiator</td><td>选择 <strong>Service Provider</strong>。SSO 登录当前不支持 IdP 发起的 SAML 断言。</td></tr><tr><td>SAML nameID Format</td><td>将此字段设置您希望用于 SAML 断言的 <a href="https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html">SAML NameID 格式</a>。</td></tr><tr><td>SAML signature element</td><td>默认，OneLogin 将签名 SAML 响应。您可以将其设置为 <strong>Assertion</strong> 或 <strong>Both</strong>。</td></tr></tbody></table>
 
 完成配置设置后，选择 **Save** 按钮。
 
@@ -122,16 +114,7 @@
 
 身份提供程序配置通常需要你返回 OneLogin 门户网站以获取应用程序的值：
 
-| 字段                                  | 描述                                                                                                                                                                                                                              |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                           | 输入您的 OneLogin **Issuer URL**，这可以从 [OneLogin 应用 SSO 界面](onelogin-saml-implementation.md#sso)获取。                                                                                                                                  |
-| Binding Type                        | 设置为 **HTTP Post**（如 SAML 2.0Endpoint (HTTP) 中所示）。                                                                                                                                                                               |
-| Single Sign On Service URL          | 输入您的 OneLogin **SAML 2.0 Endpoint (HTTP)**，这可以从 [OneLogin 应用 SSO 界面](onelogin-saml-implementation.md#sso)获取。                                                                                                                    |
-| Single Log Out Service URL          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发。但是您可以根据需要预先配置它。                                                                                                                                                                               |
-| X509 Public Certificate             | <p>黏贴<a href="onelogin-saml-implementation.md#sso">获取到的 X.509 证书</a>one，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm          | 选择在 [OneLogin SSO](onelogin-saml-implementation.md#sso) 配置界面选择的签名算法。                                                                                                                                                            |
-| Disable Outbound Logout Requests    | SSO 登录当前还**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                                 |
-| Want Authentication Requests Signed | OneLogin 是否要求 SAML 请求被签名。                                                                                                                                                                                                       |
+<table data-search="false"><thead><tr><th>字段</th><th>描述</th></tr></thead><tbody><tr><td>Entity ID</td><td>输入您的 OneLogin <strong>Issuer URL</strong>，这可以从 <a href="onelogin-saml-implementation.md#sso">OneLogin 应用 SSO 界面</a>获取。</td></tr><tr><td>Binding Type</td><td>设置为 <strong>HTTP Post</strong>（如 SAML 2.0Endpoint (HTTP) 中所示）。</td></tr><tr><td>Single Sign On Service URL</td><td>输入您的 OneLogin <strong>SAML 2.0 Endpoint (HTTP)</strong>，这可以从 <a href="onelogin-saml-implementation.md#sso">OneLogin 应用 SSO 界面</a>获取。</td></tr><tr><td>Single Log Out Service URL</td><td>SSO 登录当前还<strong>不支持</strong> SLO。该选项计划用于将来的开发。但是您可以根据需要预先配置它。</td></tr><tr><td>X509 Public Certificate</td><td>黏贴<a href="onelogin-saml-implementation.md#sso">获取到的 X.509 证书</a>one，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</td></tr><tr><td>Outbound Signing Algorithm</td><td>选择在 <a href="onelogin-saml-implementation.md#sso">OneLogin SSO</a> 配置界面选择的签名算法。</td></tr><tr><td>Disable Outbound Logout Requests</td><td>SSO 登录当前还<strong>不支持</strong> SLO。该选项计划未来开发。</td></tr><tr><td>Want Authentication Requests Signed</td><td>OneLogin 是否要求 SAML 请求被签名。</td></tr></tbody></table>
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
@@ -139,7 +122,7 @@
 
 完成身份提供程序配置部分后，**保存**您的工作。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以通过激活[单点登录身份验证策略](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)来要求用户使用 SSO 登录。
 {% endhint %}
 

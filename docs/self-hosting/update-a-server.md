@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/updating-on-premise/)
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 自托管服务器的发布会比云端服务器的发布滞后几天。请注意，[系统管理员门户](system-administrator-portal.md)可能会在自托管服务器的更新可用**之前**报告有可用更新。
 
 此外，请查看 Bitwarden [软件发布支持](../security/software-development/software-release-support.md#bitwarden-server)文档。
@@ -16,20 +16,20 @@
 
 您可以通过导航至[此存储库](https://github.com/bitwarden/self-host)，然后选择 **Watch** → **Custom** → **Releases** 来订阅自托管服务器发布的电子邮件通知。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 我们强烈建议您在更新自托管实例之前备份数据。更多信息，请参阅[备份您的托管数据](backup-server-data.md)。
 {% endhint %}
 
 如果您运行的是标准安装，请使用与安装 Bitwarden 相同的 Bash（Linux 或 macOS）或 Powershell（Windows）脚本（`bitwarden.sh`）来更新 Bitwarden 实例。按顺序运行以下命令：
 
-<img src="../../.gitbook/assets/linux-24.png" alt="" data-size="line"><img src="../../.gitbook/assets/apple-24.png" alt="" data-size="line"> Bash
+<i class="fa-linux">:linux:</i><i class="fa-apple">:apple:</i> Bash
 
 ```bash
 ./bitwarden.sh updateself
 ./bitwarden.sh update
 ```
 
-<img src="../../.gitbook/assets/os-windows-24.png" alt="" data-size="line"> PowerShell
+<i class="fa-windows">:windows:</i> PowerShell
 
 ```powershell
 .\bitwarden.ps1 -updateself

@@ -42,13 +42,13 @@ Bitwarden 维护用于灾难恢复的时间点恢复 (PITR) 策略。Bitwarden �
   * Flatpak：`~/.var/app/com.bitwarden.desktop/`
   * Snap：`~/snap/bitwarden/current/.config/Bitwarden`
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以通过将 `BITWARDEN_APPDATA_DIR` 环境变量值设置为绝对路径来覆盖 Bitwarden 桌面 App 数据的存储位置。
 {% endhint %}
 
 ### 浏览器扩展 <a href="#browser-extension" id="browser-extension"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在 Chromium 浏览器中，`Default` 表示浏览器配置文件的名称。如果您将 Bitwarden 安装在了其他配置文件下，请将路径中的 `Default` 替换为该配置文件的名称。
 {% endhint %}
 
@@ -96,6 +96,6 @@ Firefox 还允许用户自定义存储配置文件（以及本地 Bitwarden 扩�
 * macOS：`~/Library/Application Support/Bitwarden CLI`
 * Linux：`~/.config/Bitwarden CLI`
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以通过将 `BITWARDEN_APPDATA_DIR` 环境变量值设置为绝对路径来覆盖 Bitwarden CLI App 数据的存储位置。
 {% endhint %}

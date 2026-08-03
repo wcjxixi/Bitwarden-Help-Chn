@@ -8,15 +8,15 @@
 
 配置需要在 Bitwarden 网页 App 和 Duo 管理门户中同时进行。操作过程中，我们建议同时打开这两个界面，并按照文档记录的步骤顺序完成操作。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **已经是 SSO 专家了吗？**&#x8DF3;过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
 
-**⬇️** [下载示例](https://bitwarden.com/assets/5zTphwdGyxRww5UaF3COLP/67104e859f8fcaad2aa4b185292971eb/saml-duo-sample.zip)
+<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>&#x20;
 {% endhint %}
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 本文假定您已经使用身份提供程序设置了 Duo。如果还没有，请参阅 [Duo 文档](https://duo.com/docs/sso#saml)了解详情。
 {% endhint %}
 
@@ -32,7 +32,7 @@
 
 如果愿意，您可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做会从 SP 实体 ID 值中移除组织 ID，但大多数情况下都建议打开该选项。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
@@ -112,17 +112,7 @@
 
 身份提供程序配置通常需要你返回 Duo 管理门户以获取应用程序的值：
 
-| 字段                                  | 描述                                                                                                                                                                                                                     |
-| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                           | 输入您的 Duo 应用程序的 **Domain** 值，这可以从 Duo 应用程序[元数据部分](duo-saml-implementation.md#metadata)获取到。                                                                                                                              |
-| Binding Type                        | 将此字段设置为 **HTTP post**。                                                                                                                                                                                                 |
-| Single Sign On Service URL          | 输入您的 Duo 应用程序的 **Single Sign-On URL** 值，这可以从 Duo 应用程序[元数据部分](duo-saml-implementation.md#metadata)获取到。                                                                                                                  |
-| Single Log Out Service URL          | SSO 登录当前还**不支持** SLO。该选项计划用于将来的开发，但是您可以根据需要将其预先配置为您的 Duo 应用程序的 **Single Log-Out URL** 值 。                                                                                                                              |
-| Artifact Resolution Service URL     | 对于 Duo 实现，您可以将此字段留空。                                                                                                                                                                                                   |
-| X509 Public Certificate             | <p>黏贴已下载的<a href="duo-saml-implementation.md#downloads">证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm          | 将此字段设置为[已选择的 SAML 响应签名算法](duo-saml-implementation.md#saml-response)。                                                                                                                                                   |
-| Disable Outbound Logout Requests    | SSO 登录当前还**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                        |
-| Want Authentication Requests Signed | Duo 是否要求 SAML 请求被签名。                                                                                                                                                                                                   |
+<table data-search="false"><thead><tr><th>字段</th><th>描述</th></tr></thead><tbody><tr><td>Entity ID</td><td>输入您的 Duo 应用程序的 <strong>Domain</strong> 值，这可以从 Duo 应用程序<a href="duo-saml-implementation.md#metadata">元数据部分</a>获取到。</td></tr><tr><td>Binding Type</td><td>将此字段设置为 <strong>HTTP post</strong>。</td></tr><tr><td>Single Sign On Service URL</td><td>输入您的 Duo 应用程序的 <strong>Single Sign-On URL</strong> 值，这可以从 Duo 应用程序<a href="duo-saml-implementation.md#metadata">元数据部分</a>获取到。</td></tr><tr><td>Single Log Out Service URL</td><td>SSO 登录当前还<strong>不支持</strong> SLO。该选项计划用于将来的开发，但是您可以根据需要将其预先配置为您的 Duo 应用程序的 <strong>Single Log-Out URL</strong> 值 。</td></tr><tr><td>Artifact Resolution Service URL</td><td>对于 Duo 实现，您可以将此字段留空。</td></tr><tr><td>X509 Public Certificate</td><td>黏贴已下载的<a href="duo-saml-implementation.md#downloads">证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</td></tr><tr><td>Outbound Signing Algorithm</td><td>将此字段设置为<a href="duo-saml-implementation.md#saml-response">已选择的 SAML 响应签名算法</a>。</td></tr><tr><td>Disable Outbound Logout Requests</td><td>SSO 登录当前还<strong>不支持</strong> SLO。该选项计划未来开发。</td></tr><tr><td>Want Authentication Requests Signed</td><td>Duo 是否要求 SAML 请求被签名。</td></tr></tbody></table>
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
@@ -130,7 +120,7 @@
 
 完成身份提供程序配置部分后，**保存**您的工作。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以通过激活[单点登录身份验证策略](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)来要求用户使用 SSO 登录。
 {% endhint %}
 

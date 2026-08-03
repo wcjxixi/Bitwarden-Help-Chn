@@ -11,7 +11,7 @@
 3. [入职用户](lastpass-enterprise-migration-guide.md#step-3-onboard-users)。
 4. [配置对集合和密码库项目的访问权限](lastpass-enterprise-migration-guide.md#step-4-configure-access-to-collections-and-items)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您在迁移期间需要协助，我们的[客户成功团队将随时为您提供帮助](https://bitwarden.com/contact/)！
 {% endhint %}
 
@@ -27,7 +27,7 @@
 
 Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../../password-manager/organization-members/sharing.md)登录、笔记、支付卡和身份。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 请务必先创建一个组织，然后直接[向组织导入数据](../manage-shared-items/import-organization-items/import-to-organization.md)，而不是先向个人账户导入数据，然后再将[移动项目](../../password-manager/organization-members/sharing.md)到组织。
 {% endhint %}
 
@@ -61,7 +61,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 * 在 LastPass 说明框中，选择**直接从 LastPass 导入**选项。
 * 输入您的 **LastPass 电子邮箱**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的 LastPass 账户激活了多重身份验证，系统将提示您从身份验证器 App 输入一次性密码。如果您使用 Duo 进行 MFA，则仅支持应用内审批来满足您的 MFA 要求。
 {% endhint %}
 
@@ -69,7 +69,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 
 5、系统将提示您输入 LastPass 主密码，或者如果您的 LastPass 账户使用 SSO，则系统将提示您登录到您的 IdP。无论哪种情况，请按照提示登录您的 LastPass 账户。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您还应建议员工从现有的密码管理器中导出他们个人拥有的数据，并准备将其导入 Bitwarden。[了解更多](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)。
 {% endhint %}
 
@@ -81,7 +81,7 @@ Bitwarden 支持通过网页密码库手动入职和通过 SCIM 集成或从现�
 
 为确保您组织的安全，Bitwarden 采用了三步流程入职新成员：[邀请](../manage-members/user-management.md#invite) → [接受](../manage-members/user-management.md#accept) → [确认](../manage-members/user-management.md#confirm)。了解[如何邀请新用户](../manage-members/user-management.md#onboard-users)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 用户入职后，指导他们使用导出的文件将其个人数据导入到 Bitwarden，如果他们的 LastPass 账户仍处于激活状态，则使用[此处](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md#zhi-jie-dao-ru)描述的**直接导入**方法。
 {% endhint %}
 
@@ -91,7 +91,7 @@ Bitwarden 支持通过网页密码库手动入职和通过 SCIM 集成或从现�
 
 无论使用哪种方式，用户都会被自动邀请加入组织，并可使用 [Bitwarden CLI](../../password-manager/developer-tools/cli/password-manager-cli.md#confirm) 工具手动或自动确认。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 用户入职后，指导他们使用导出的文件将其个人数据导入到 Bitwarden，如果他们的 LastPass 账户仍处于激活状态，则使用[此处](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md#zhi-jie-dao-ru)描述的**直接导入**方法。
 {% endhint %}
 

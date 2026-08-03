@@ -25,7 +25,7 @@
 
 ## 管理席位 <a href="#manage-seats" id="manage-seats"></a>
 
-要在客户组织中添加或删除席位，请使用 **≡** 选项菜单然后选择**管理订阅**：
+要在客户组织中添加或删除席位，请使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 选项菜单然后选择**管理订阅**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5azlW7UdPa9zT23P9Iou6B/13bc3905d44745494afac3f847d87ff2/2024-12-05_16-14-43.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>添加客户组织席位</p></figcaption></figure></div>
 
@@ -35,7 +35,7 @@
 
 ## 查看计费信息 <a href="#view-billing-information" id="view-billing-information"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 只有提供商管理员才能查看其客户组织的计费信息。客户组织的所有者在 Admin Console 中导航到其**计费** → **订阅**界面时，将显示以下内容：
 
 <img src="../../.gitbook/assets/Managed client billing.png" alt="" data-size="original">

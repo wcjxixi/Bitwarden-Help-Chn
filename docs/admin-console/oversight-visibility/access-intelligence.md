@@ -46,13 +46,13 @@ Access Intelligence 报告列出了您 Bitwarden 组织中保存的所有应用�
 | **存在风险的成员** | 对与应用程序关联的[存在风险](access-intelligence.md#determining-risk)的密码具有访问权限的成员数量。 |
 | **成员总数**    | 对应用程序具有访问权限的成员总数。                                                       |
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 通过列出所有组织成员拥有凭据的应用程序，Access Intelligence 还可以帮助管理员检测未经授权的应用程序的使用情况，以及可以通过 IdP 迁移到单点登录 (SSO) 身份验证的应用程序。
 {% endhint %}
 
 ### 标记关键应用程序 <a href="#marking-critical-applications" id="marking-critical-applications"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 区分**关键应用程序**和**所有应用程序**是确保组织成员能够迅速处理最重要应用程序的重要工具。
 
 Access Intelligence 的一项重要功能是向成员发送通知，告知他们需要处理一个关键的[存在风险](access-intelligence.md#determining-risk)的密码。通过分批有针对性地发送这些通知，有助于防止成员产生警报疲劳，从而避免延误补救措施。
@@ -70,7 +70,7 @@ Access Intelligence 的一项重要功能是向成员发送通知，告知他们
 
 请求密码更改将向对关键应用程序拥有访问权限的组织成员发送通知，告知他们需要[处理存在风险的密码](../../password-manager/your-vault/security-tools/change-at-risk-passwords.md)。拥有[编辑密码权限](../manage-shared-items/collections/collection-permissions.md)的成员将在其电子邮箱收件箱中以及他们登录的 Bitwarden 浏览器扩展中收​​到横幅形式的通知。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在分派您的第一个密码更改请求之前，或作为员工 Bitwarden 培训的一部分，我们建议：
 
 * 告知成员这些电子邮件是合法的，不应被忽略。

@@ -182,7 +182,7 @@ chmod 644 /etc/opt/chrome/policies/managed/managed_preferences.json
 * 谷歌浏览器
 * `/etc/opt/chrome/policies/managed/managed_preferences.json`
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Linux)](https://support.google.com/chrome/a/answer/9025903?hl=en\&ref_topic=9025817\&sjid=18069515108639844992-NC) 指南。
 {% endhint %}
 {% endtab %}
@@ -251,7 +251,7 @@ chmod 644 /opt/firefox/distribution/policies.json
 * Firefox 浏览器
 * `/distribution/policies.json`
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如需更多帮助，请参阅 Firefox 的 [policies.json 概述](https://support.mozilla.org/zh-CN/kb/%E5%9C%A8%20macOS%20%E4%B8%8A%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6%E5%AE%9A%E5%88%B6%20Firefox)或 Github 上的 [Policies README](https://github.com/mozilla/policy-templates/blob/master/README.md)。
 {% endhint %}
 {% endtab %}
@@ -280,7 +280,7 @@ chmod 644 /opt/firefox/distribution/policies.json
 
 7、使用软件分发或 MDM 工具将 Chrome `.dmg` 或 `.pkg` 和配置文件部署到所有受管计算机。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Mac)](https://support.google.com/chrome/a/answer/7550274?hl=zh-Hans\&sjid=18069515108639844992-NC) 指南。
 {% endhint %}
 
@@ -311,7 +311,7 @@ chmod 644 /opt/firefox/distribution/policies.json
 
 6、使用软件分发或 MDM 工具将 Firefox `.dmg` 和配置文件部署到所有受管计算机。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 有关其他信息，请参阅 Firefox 文档：[在 macOS 上使用配置描述文件定制 Firefox](https://support.mozilla.org/zh-CN/kb/%E5%9C%A8%20macOS%20%E4%B8%8A%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6%E5%AE%9A%E5%88%B6%20Firefox)。
 {% endhint %}
 {% endtab %}
@@ -340,7 +340,7 @@ chmod 644 /opt/firefox/distribution/policies.json
 
 5、使用软件分发或 MDM 工具将 Edge `.pkg` 和配置文件部署到所有受管计算机。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 有关特定于 Jamf 的帮助，请参阅 Microsoft 文档：[使用 Jamf 在 macOS 上配置 Microsoft Edge 策略设置](https://learn.microsoft.com/zh-cn/deployedge/configure-microsoft-edge-on-mac-jamf)。
 
 有关其他信息，请参阅 Microsoft 文档：[在 macOS 上配置 Microsoft Edge 策略](https://learn.microsoft.com/zh-cn/deployedge/configure-microsoft-edge-on-mac#configure-microsoft-edge-policies-on-macos)。

@@ -160,7 +160,7 @@ general:
 
 部署需要使用您提供的支持 [ReadWriteMany](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes) 的共享存储类。以下示例是一个可以在 Azure Cloud Shell 中运行的脚本，用于创建满足要求的 Azure 文件存储类。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 以下是一个说明性的示例，请根据您自己的安全要求分配权限。
 {% endhint %}
 
@@ -196,7 +196,7 @@ sharedStorageClassName: "azure-file"
 
 部署需要使用 Kubernetes secrets 对象为您的部署设置敏感值。虽然 `kubectl create secret` 命令可用于设置机密，但 Azure 客户可能更倾向于使用 Azure Key Vault 和 AKS Secrets Store CSI Driver。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 这些说明假设您已经设置了 Azure Key Vault。如果没有，请[立即创建一个](https://learn.microsoft.com/en-us/azure/aks/csi-secrets-store-driver#create-or-use-an-existing-azure-key-vault)。
 {% endhint %}
 
@@ -294,7 +294,7 @@ EOF
 
 3、使用下列命令在密钥库中设置所需的机密值：
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 此示例会将命令记录到您的 shell 历史记录中。可以考虑使用其他方法来安全地设置机密。
 {% endhint %}
 

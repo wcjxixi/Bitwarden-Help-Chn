@@ -50,7 +50,7 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 1、[导出您的组织密码库](../password-manager/import-and-export/export-vault-data.md#export-an-organization-vault)，然后指导所有组织成员[导出其个人密码库](../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 单独下载密码库项目的所有文件附件，并记下它们属于哪些项目。
 {% endhint %}
 

@@ -76,7 +76,7 @@ Sumo Logic Bitwarden App 包含预配置的监控器，可主动检测数据导�
 
 ### 时间范围 <a href="#timeframe" id="timeframe"></a>
 
-您可以使用位于仪表盘右上角的工具栏筛选仪表盘结果。选择 **🕘**以按时间范围进行筛选：
+您可以使用位于仪表盘右上角的工具栏筛选仪表盘结果。选择 <i class="fa-clock">:clock:</i> 以按时间范围进行筛选：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4fytpjiAfdudPjMGlKPB6o/3a42bf4bb20a5a435b49e177142ca910/2025-10-22_11-17-47.png?w=1400&#x26;fm=avif" alt=""><figcaption></figcaption></figure></div>
 

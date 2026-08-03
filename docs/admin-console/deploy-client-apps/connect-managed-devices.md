@@ -83,7 +83,7 @@
 * Chrome 浏览器或基于 Chromium 的浏览器
 * `/etc/opt/{chrome or chromium}/policies/managed/bitwarden.json`
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Linux)](https://support.google.com/chrome/a/answer/9025903?hl=en\&ref_topic=9025817\&sjid=18069515108639844992-NC) 指南。
 {% endhint %}
 {% endtab %}
@@ -387,7 +387,7 @@ xattr -r -d com.apple.quarantine /Applications/Firefox.app
   }
 ```
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 使用 Bitwarden 云服务器的客户需要将 `"region":` 设置为 `"US"` 或 `"EU"` ，以连接到这些服务器。
 {% endhint %}
 

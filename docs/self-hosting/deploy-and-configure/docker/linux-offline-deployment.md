@@ -8,7 +8,7 @@
 
 > **\[译者注]**：[网闸](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8) (air-gapped) 网络，也叫物理隔离的网络。是指与外部网络（如互联网或其他外部系统）完全隔离的计算机网络。这种隔离通过物理或逻辑手段实现，确保网络无法与外部环境进行数据交换，从而增强安全性。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **手动安装仅适用于高级用户。**&#x4EC5;当您非常熟悉 Docker 技术，并且希望对您的 Bitwarden 安装进行更多控制时才可以进行此操作。
 
 手动安装无法自动更新 Bitwarden 安装的某些依赖项。当您将 Bitwarden 从一个版本升级到下一个版本时，您将负责处理所需环境变量的更改、nginx `default.conf` 的更改、`docker-compose.yml` 的更改等等。
@@ -18,7 +18,7 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2 GB RAM</td><td>4 GB RAM</td></tr><tr><td>存储</td><td>12 GB</td><td>25 GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2 GB RAM</td><td>4 GB RAM</td></tr><tr><td>存储</td><td>12 GB</td><td>25 GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
 <mark style="color:red;">**ª**</mark> - 当您下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
 
@@ -93,7 +93,7 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 
 ### 配置您的机器 <a href="#configure-your-machine" id="configure-your-machine"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 [创建 Bitwarden 用户和目录](linux-offline-deployment.md#create-bitwarden-local-user-and-directory)后，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。**请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题。
 {% endhint %}
 
@@ -119,7 +119,7 @@ unzip docker-stub-US.zip -d bwdata
 * `globalSettings__installation__key=`：输入从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装密钥。
 * `globalSettings__pushRelayBaseUri=`：此变量应为空。更多信息，请参阅[配置推送中继](../configuration-options/configure-push-relay.md)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 此时，还要考虑为所有 `globalSettings__mail__smtp__` 变量和 `adminSettings__admins` 设置值。这样做将配置用于向组织的新成员发送邀请的 SMTP 邮件服务器，并提供对[系统管理员门户](../../system-administrator-portal.md)的访问权限。
 
 [了解有关环境变量的更多信息](../configuration-options/environment-variables.md)。

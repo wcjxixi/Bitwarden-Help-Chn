@@ -16,7 +16,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4xn04Sj9u8n73TPxZUWi5f/dac0d56f47a05e2d8b28754e997a1391/2025-02-25_15-16-00.png?w=1080&#x26;fm=avif" alt=""><figcaption><p>产品切换器 - 提供商门户</p></figcaption></figure></div>
 
-2、打开**管理** → **成员**视图，然后选择 ✚**邀请用户**按钮：
+2、打开**管理** → **成员**视图，然后选择 <i class="fa-plus">:plus:</i>**邀请用户**按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6E5GA111xdiHHkA0gb5LtG/5e5b5fddb5911e1b2ed468c1d49134ad/2024-12-05_09-27-45.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>邀请提供商用户</p></figcaption></figure></div>
 
@@ -28,9 +28,9 @@
 4、单击**保存**以邀请这些指定的用户加入提供商。
 
 {% hint style="info" %}
-**邀请将在 5 天后过期**，届时需要重新邀请用户。通过选择每个用户然后使用 **≡**&#x9009;项菜单以**重新发送邀请**来批量重新邀请用户：
+**邀请将在 5 天后过期**，届时需要重新邀请用户。通过选择每个用户然后使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单以**重新发送邀请**来批量重新邀请用户：
 
-<img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6Sx6YxDzCYoaw7qFGgMvvv/77c341b80fd47aa6865821c30a887a8c/2024-12-05_09-34-07.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
+<img src="https://bitwarden.com/assets/6Sx6YxDzCYoaw7qFGgMvvv/77c341b80fd47aa6865821c30a887a8c/2024-12-05_09-34-07.png?w=1031&#x26;fm=avif" alt="" data-size="original">
 {% endhint %}
 
 ### 接受 <a href="#accept" id="accept"></a>
@@ -45,7 +45,7 @@
 
 1、在提供商门户中，导航到**管理** → **成员**视图。
 
-2、选中任何`已接受`的用户，然后使用 **≡**&#x9009;项菜单来 **✔︎确认所选**：
+2、选中任何 `已接受` 的用户，然后使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单来 <i class="fa-check">:check:</i>**确认所选**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/IxUeScxNYYmI4y8jceC5v/ebdf3fa89abbd69fbb028e0cff8c99aa/2024-12-05_09-29-04.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>确认已邀请的提供商用户</p></figcaption></figure></div>
 
@@ -57,13 +57,13 @@
 
 1、在提供商门户中，导航到**管理** → **成员**视图。
 
-2、选择您要从提供商中移除的用户，然后使用 **≡**&#x9009;项菜单来 **✘移除**：
+2、选择您要从提供商中移除的用户，然后使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单来 <i class="fa-xmark">:xmark:</i>**移除**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/DC18TP9xNK1V8768meTDT/bfedb940285677f78e408294aadf5e0f/2024-12-05_09-36-46.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>移除提供商用户</p></figcaption></figure></div>
 
 ## 提供商用户类型 <a href="#provider-user-types" id="provider-user-types"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **正在管理客户组织的用户？**&#x62E5;有一套独立于提供商用户类型的[成员角色和访问控制](../admin-console/manage-members/member-roles.md)。
 {% endhint %}
 

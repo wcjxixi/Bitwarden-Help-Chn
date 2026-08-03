@@ -82,7 +82,7 @@ Bitwarden 的用户数据保护从用户创建账户和主密码的那一刻就�
 
 正因如此，并且由于您的数据在离开本地设备之前已完全加密和/或哈希，忘记主密码**将导致**用户被锁定在其账户之外，除非他们启用了紧急访问或账户恢复功能，这两项功能将在本文后面进行详细介绍。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 用户可以通过 Bitwarden 网页 App 更改他们的主密码。[了解如何操作](../account/master-password.md#change-your-master-password)。
 {% endhint %}
 
@@ -183,7 +183,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 
 在进行密码更改操作期间，您还可以选择轮换（即更改）其**用户对称密钥**（在产品中称为「账户加密密钥」）。如果用户认为以前的主密码已被盗用，或者他们存储在 Bitwarden 密码库的数据已从其中一台设备上被窃取，则轮换此密钥是一个好主意。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 轮换账户加密密钥是一项敏感操作，因此在更改主密码时这不是默认选项。密钥轮换会为您的账户生成一个新的随机加密密钥，并使用此新密钥**重新加密所有密码库数据**。请参阅[本文](encryption/encryption-key-rotation.md)了解更多详情。
 {% endhint %}
 
@@ -195,7 +195,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 
 当发起设备登录时：
 
-1. 发起客户端向 Bitwarden 服务器发送请求，其中包括账户电子邮箱地址、唯一的**身份验证请求公钥**<mark style="color:red;">ª</mark> 和访问代码。
+1. 发起客户端向 Bitwarden 服务器发送请求，其中包括账户电子邮箱地址、唯一的**身份验证请求公钥** <mark style="color:red;">ª</mark> 和访问代码。
 2. 已注册设备，即已登录并在 Bitwarden 服务器中存储了[唯一设备 GUID](data/administrative-data.md) 的移动或桌面 App，将收到请求。
 3. 当请求获得批准时，批准客户端使用请求中包含的**身份验证请求公钥**对账户的**主密钥**和**主密码哈希**进行加密。
 4. 然后，批准客户端将**加密的主密钥**和**加密的主密码哈希**发送到 Bitwarden 服务器，并将请求标记为已完成。
@@ -290,7 +290,7 @@ Bitwarden 不会将主密码本身存储在本地或 Bitwarden 客户端内存�
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4Y9q6Y3KmLskDaqfF03YmJ/8a99742b2bf8e7394cb0988495dc13b0/2025-04-30_09-34-10.png?w=1110&#x26;fm=avif" alt=""><figcaption><p>管理员批准验证请求（步骤 3-4）</p></figcaption></figure></div>
 
-5、发起请求的客户端 GET 到加密后的账户加密密钥，然后使用**身份验证请求私钥**<mark style="color:red;">ª</mark> 对它进行**本地**解密。
+5、发起请求的客户端 GET 到加密后的账户加密密钥，然后使用**身份验证请求私钥** <mark style="color:red;">ª</mark> 对它进行**本地**解密。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7LNcFuhupPeR4DJhg2k4po/10ae5da219f1e5338e5cdf6554655e9f/2025-04-30_09-34-28.png?w=1114&#x26;fm=avif" alt=""><figcaption><p>用户收到管理员批准（步骤 5）</p></figcaption></figure></div>
 
@@ -627,15 +627,4 @@ Bitwarden 的安全与合规计划基于 ISO27001 信息安全管理体系 (ISMS
 
 ### 文档变更日志 <a href="#document-changelog" id="document-changelog"></a>
 
-| 发布日期             | 变更摘要                       |
-| ---------------- | -------------------------- |
-| 2025 年 10 月 09 日 | 添加了有关源代码扫描的信息。             |
-| 2025 年 06 月 30 日 | 添加了关于加密过程的各种说明。            |
-| 2025 年 05 月 21 日 | 更正了有关我们禁止禁用用户 2FA 政策的声明。   |
-| 2025 年 04 月 30 日 | 添加了用于受信任设备批准 SSO 的图表。      |
-| 2025 年 03 月 11 日 | 添加了 ISO 27001 认证。          |
-| 2024 年 12 月 11 日 | 调整了内存管理方面的措辞。              |
-| 2024 年 08 月 02 日 | 重构了文档以方便导航，改进信息架构，并使风格更一致。 |
-| 2024 年 07 月 25 日 | 添加了用于密码库项目加密的 Cipher 密钥信息。 |
-| 2024 年 03 月 23 日 | 新增了**用户间数据共享**部分的描述和图表。    |
-| 2024 年 01 月 12 日 | 添加了与通行密钥登录相关的信息。           |
+<table data-search="false"><thead><tr><th>发布日期</th><th>变更摘要</th></tr></thead><tbody><tr><td>2025 年 10 月 09 日</td><td>添加了有关源代码扫描的信息。</td></tr><tr><td>2025 年 06 月 30 日</td><td>添加了关于加密过程的各种说明。</td></tr><tr><td>2025 年 05 月 21 日</td><td>更正了有关我们禁止禁用用户 2FA 政策的声明。</td></tr><tr><td>2025 年 04 月 30 日</td><td>添加了用于受信任设备批准 SSO 的图表。</td></tr><tr><td>2025 年 03 月 11 日</td><td>添加了 ISO 27001 认证。</td></tr><tr><td>2024 年 12 月 11 日</td><td>调整了内存管理方面的措辞。</td></tr><tr><td>2024 年 08 月 02 日</td><td>重构了文档以方便导航，改进信息架构，并使风格更一致。</td></tr><tr><td>2024 年 07 月 25 日</td><td>添加了用于密码库项目加密的 Cipher 密钥信息。</td></tr><tr><td>2024 年 03 月 23 日</td><td>新增了<strong>用户间数据共享</strong>部分的描述和图表。</td></tr><tr><td>2024 年 01 月 12 日</td><td>添加了与通行密钥登录相关的信息。</td></tr></tbody></table>

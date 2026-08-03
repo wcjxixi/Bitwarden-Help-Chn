@@ -16,7 +16,7 @@
 
 ### 事件 <a href="#events" id="events"></a>
 
-事件日志记录了提供商的多种不同类型的事件。事件日志界面捕获事件的**时间戳**、包含应用程序类型和 IP（通过将鼠标悬停在 🌎地球图标上访问）的客户端应用程序信息、连接到事件的**用户**以及**事件**描述。提供商事件包括：
+事件日志记录了提供商的多种不同类型的事件。事件日志界面捕获事件的**时间戳**、包含应用程序类型和 IP（通过将鼠标悬停在 <i class="fa-globe">:globe:</i>地球图标上访问）的客户端应用程序信息、连接到事件的**用户**以及**事件**描述。提供商事件包括：
 
 * 邀请了用户 _user-identifier_
 * 确认了用户 _user-identifier_
@@ -27,6 +27,6 @@
 * 添加了组织 _organization-identifier_（[将现有组织添加到提供商](providers-faqs.md#q-im-already-providing-bitwarden-as-a-service-for-my-clients-what-do-i-need-to-do-to-move-to-the-provider-portal)时触发）
 * 移除了组织 _organization-identifier_
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 提供商事件当前不会汇总为每一个[客户组织](provider-portal-overview.md#client-organizations)记录的事件。提供商用户可以从客户组织的密码库访问组织事件日志。[了解更多](../admin-console/oversight-visibility/event-logging/event-logs.md)。
 {% endhint %}

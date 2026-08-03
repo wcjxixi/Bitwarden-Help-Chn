@@ -8,16 +8,7 @@
 
 ## 利益相关者 <a href="#stakeholders" id="stakeholders"></a>
 
-| 角色                                                                                         | 指定的团队或成员 |
-| ------------------------------------------------------------------------------------------ | -------- |
-| 自托管项目负责人                                                                                   |          |
-| 执行发起人                                                                                      |          |
-| <p>服务器（Windows 或 Linux）管理员<br>Docker 或 Kubernetes 管理员<br>网络管理员<br>防火墙管理员<br>数据库管理员（可选）</p> |          |
-| 身份提供程序和单点登录管理员                                                                             |          |
-| SMTP 管理员                                                                                   |          |
-| <p>安全 &#x26; 合规负责人<br>备份管理员</p>                                                            |          |
-| <p>业务连续性<br>灾难恢复</p>                                                                       |          |
-| <p>设备管理管理员<br>支持或帮助台管理员</p>                                                                |          |
+<table data-search="false"><thead><tr><th>角色</th><th>指定的团队或成员</th></tr></thead><tbody><tr><td>自托管项目负责人</td><td></td></tr><tr><td>执行发起人</td><td></td></tr><tr><td>服务器（Windows 或 Linux）管理员<br>Docker 或 Kubernetes 管理员<br>网络管理员<br>防火墙管理员<br>数据库管理员（可选）</td><td></td></tr><tr><td>身份提供程序和单点登录管理员</td><td></td></tr><tr><td>SMTP 管理员</td><td></td></tr><tr><td>安全 &#x26; 合规负责人<br>备份管理员</td><td></td></tr><tr><td>业务连续性<br>灾难恢复</td><td></td></tr><tr><td>设备管理管理员<br>支持或帮助台管理员</td><td></td></tr></tbody></table>
 
 ## 部署阶段 <a href="#deployment-stages" id="deployment-stages"></a>
 

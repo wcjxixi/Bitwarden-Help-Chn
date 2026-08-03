@@ -46,7 +46,7 @@
 
 7、关闭「设置选择器」。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在「设置选择器」中，您还可以停用许多网页浏览器内置的密码管理器。通常，对于 Chrome 或基于 Chromium 内核的浏览器（例如 Microsoft Edge），此设置的名称为**启用将密码保存到密码管理器**或类似名称。
 {% endhint %}
 

@@ -12,7 +12,7 @@
 4. [入职用户](teams-and-enterprise-migration-guide.md#step-4-onboard-users-to-the-organization)
 5. [配置对集合和密码库项目的访问权限](teams-and-enterprise-migration-guide.md#step-5-configure-access-to-collections-and-items)
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您在迁移期间需要协助，我们的[客户成功团队将随时为您提供帮助](https://bitwarden.com/contact/)！
 {% endhint %}
 
@@ -48,7 +48,7 @@
 
 Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共享](../../password-manager/organization-members/sharing.md)登录、笔记、支付卡和身份。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 请务必先创建一个组织，然后直接[向组织导入数据](../manage-shared-items/import-organization-items/import-to-organization.md)，而不是先向个人账户导入数据，然后再将[移动项目](../../password-manager/organization-members/sharing.md)到组织。
 {% endhint %}
 
@@ -80,7 +80,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 
 4、选择**选择文件**，然后添加要导入的文件。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 导入到 Bitwarden 无法检查要导入的文件中的项目是否与您的密码库中的项目重复。这意味着，如果某个项目已经存在密码库和要导入的文件中，则**导入多个文件将创建重复**的密码库项目。
 {% endhint %}
 
@@ -88,7 +88,7 @@ Bitwarden 组织将用户和密码库项目联系在一起，以便[安全地共
 
 目前，文件附件不包含在 Bitwarden 导入操作中，需要手动上传到您的密码库。更多信息，请参阅[文件附件](../../password-manager/your-vault/vault-items/file-attachments.md)。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您还应建议员工从现有的密码管理器中导出他们个人拥有的数据，并准备将其导入 Bitwarden。[了解更多](../../password-manager/import-and-export/import-guides/import-data-from-lastpass.md)。
 {% endhint %}
 

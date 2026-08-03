@@ -51,7 +51,7 @@ general:
 
 在 `my-values.yaml` 中找到 `rawManifests` 部分。该部分将用于分配 OpenShift 路由清单。
 
-可以 **⬇️**下载一个使用 OpenShift 路由的 `rawManifests` 部分的示例文件。
+可以 <i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i> 下载一个使用 OpenShift 路由的 `rawManifests` 部分的示例文件。
 
 {% hint style="info" %}
 在上面提供的示例中， `destinationCACertificate` 被设置为空字符串。这将使用 OpenShift 中的默认证书设置。也可以在此处指定证书名称，或者按照[该指南](https://developer.ibm.com/tutorials/secure-red-hat-openshift-routes-with-lets-encrypt/)使用 Let's Encrypt。如果这样做，您将需要为每个路由的注释添加 `kubernetes.io/tls-acme: "true"` 。
@@ -67,7 +67,7 @@ general:
 
 以下命令是一个示例：
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 此示例将命令记录到您的 shell 历史记录中。可以考虑使用其他方法来安全地设置机密。
 {% endhint %}
 

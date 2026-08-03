@@ -6,7 +6,7 @@
 
 每个 Bitwarden 账户都有一个用于加密所有密码库数据的加密密钥。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **轮换加密密钥是潜在的危险操作。**&#x8BF7;通读本章节，以了解这样做的全部后果。
 {% endhint %}
 
@@ -30,7 +30,7 @@
 
 ## 如何轮换加密密钥 <a href="#how-to-rotate-your-encryption-key" id="how-to-rotate-your-encryption-key"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Bitwarden 建议在轮换账户加密密钥前备份您的项目。在此场景下，推荐使用「密码保护」的 `.json` 导出格式，**除「账户限制」**&#x7684; `.json` 导出格式外，任何格式在密钥轮换后均可重新导入。有关密码库导出以及包含哪些项目的更多信息，请参阅[导出密码库数据](../../password-manager/import-and-export/export-vault-data.md)。
 {% endhint %}
 

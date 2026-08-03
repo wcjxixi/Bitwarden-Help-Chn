@@ -15,9 +15,9 @@
 组织管理员可以彻底删除已声明的成员账户，而不仅仅是将其从组织中移除。这包括删除该用户的个人密码库（如果该用户拥有个人保密码库的话）。如果您是已声明账户的组织的成员，请务必不要在该账户中存储任何个人凭据。
 
 {% hint style="info" %}
-可以从管理控制台的**成员**页面，使用 **≡**&#x9009;项菜单删除已声明的账户：
+可以从管理控制台的**成员**页面，使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单删除已声明的账户：
 
-<img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6HUnGTfMstF4IasZcKBfdi/0d2dbd328ba4a006611576e7d91c70df/2025-01-14_10-45-56.png?_a=DAJCwlWIZAAB" alt="删除已声明的账户" data-size="original">
+<img src="https://bitwarden.com/assets/6HUnGTfMstF4IasZcKBfdi/0d2dbd328ba4a006611576e7d91c70df/2025-01-14_10-45-56.png?w=1117&#x26;fm=avif" alt="" data-size="original">
 
 没有声明账户的组织成员只能从组织中**被移除**。
 {% endhint %}

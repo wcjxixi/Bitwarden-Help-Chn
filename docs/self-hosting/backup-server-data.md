@@ -9,7 +9,7 @@
 * 手动定期备份重要数据，包括配置数据、证书数据等。
 * 确保执行自动重复的数据库备份。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 在使用内置数据库的 **Docker** 部署中，只要 `mssql` 容器正在运行，夜间备份就会运行。在 **Helm** 部署中，您需要在集群外部安排作业或在集群内创建 CronJob 对象，Bitwarden 提供了一些示例来帮助指导您的操作。
 {% endhint %}
 

@@ -6,7 +6,7 @@
 
 Bitwarden 公共 API 为组织提供了一套用于管理成员、集合、群组、事件日志和策略的工具。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 此 API 不支持管理个人密码库项目。要管理个人密码库项目，请使用[密码库管理 API](../password-manager/developer-tools/api/password-manager-apis.md#vault-management-api)。
 {% endhint %}
 
@@ -43,7 +43,7 @@ Bitwarden 公共 API 为组织提供了一套用于管理成员、集合、群�
 
 API 使用承载访问令牌对受保护的 API 端点进行验证。Bitwarden 使用 [OAuth2 客户端凭据](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/)应用程序请求流来从端点授予承载访问令牌。验证请求需要将 `client_id` 和 `client_secret` 作为必要的参数。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 用于验证公共 API 的[ API 密钥](bitwarden-public-api.md#authentication)与个人 API 密钥是**不同的**。组织 API 密钥的 `client_id` 格式为 `"organization.ClientId"`，而个人 API 密钥的 `client_id` 格式为 `"user.clientId"`。
 {% endhint %}
 
@@ -53,7 +53,7 @@ API 密钥 `client_id` 和 `client_secret` 可以由所有者从 Admin Console �
 
 作为所有者，如果您想与管理员或其他用户分享 API 密钥，请使用安全的通信方式，比如 [Bitwarden Send](../password-manager/bitwarden-send/about-send.md)。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 您的组织 API 密钥具有对您的组织的完全访问权限。请妥善保管您的 API 密钥。如果您认为您的 API 密钥已经泄露，请在此界面上选择**轮换 API 密钥**按钮。当前 API 密钥的有效实施需要在使用前用新的密钥重新配置。
 {% endhint %}
 

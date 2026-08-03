@@ -87,7 +87,7 @@
 
 「成员访问权限」报告显示每个用户有权访问的**群组**、**集合**和**项目**的总数：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4oNfzpIcDwn2XjUgG0lPG3/a51bac815082055fdd6f47a40937b72d/2024-09-10_16-13-31.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>成员访问权限报告</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4oNfzpIcDwn2XjUgG0lPG3/a51bac815082055fdd6f47a40937b72d/2024-09-10_16-13-31.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>成员访问权限报告</p></figcaption></figure></div>
 
 要定位特定人员，请在**搜索成员**字段中输入他们的电子邮箱。选择相邻的 **→导出图标**以下载包含每个成员详细信息的 `.csv` 文件，其中包含：
 

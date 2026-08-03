@@ -23,7 +23,7 @@
   * 使用 SCIM 或 Directory Connector 的额外优势是，可将[群组及群组成员资格](../manage-members/groups.md)同步到您的组织（即时配置本身不支持这一功能），自动将成员分配到群组中，以实现高效的[集合分配](../manage-shared-items/collections/assign-users-to-collections.md)。
 * **不应**允许成员在被邀请加入组织之前预先创建 Bitwarden 账户。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 通过邀请发起的新账户 JIT 配置，省去了管理员或成员可能需要执行的几个步骤（请参阅[**非标准注册**](jit-provisioning.md#non-standard-signup)）。该策略还可以确保由于[受信任设备](trusted-devices/about-trusted-devices.md)或 [Key Connector](../../self-hosting/key-connector/about-key-connector.md) 实施结果而不应拥有主密码的成员不会在其账户上设置主密码。
 {% endhint %}
 
@@ -37,7 +37,7 @@
    * 如果使用**主密码解密**方式，请创建一个主密码。
    * 如果使用**受信任设备解密**方式，请选择是否记住该设备。
 
-完成后，成员将被移动到`已接受`状态。届时，他们需要由管理员进行[确认](../manage-members/user-management.md#confirm)。
+完成后，成员将被移动到 `已接受` 状态。届时，他们需要由管理员进行[确认](../manage-members/user-management.md#confirm)。
 
 ### 非标准注册 <a href="#non-standard-signup" id="non-standard-signup"></a>
 
@@ -47,13 +47,13 @@
 {% tab title="未发送邀请" %}
 在未向成员发送邀请的情况下，他们仍然可以相对容易地加入组织。请指示成员按照[这些说明](./)操作，除非他们需要使用已有的 Bitwarden 账户加入，在这种情况下，请参考**已有账户**选项卡。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 除非您的组织已经[声明了域名](../oversight-visibility/claimed-domains/claimed-domains.md) ，否则管理员需要向成员提供 SSO 标识符 。他们需要在注册过程中输入该标识符。
 {% endhint %}
 {% endtab %}
 
 {% tab title="已有账户" %}
-{% hint style="danger" %}
+{% hint style="warning" %}
 需要遵循此流程的成员（不同于采用[信任设备解密](trusted-devices/about-trusted-devices.md)机制的组织中遵循标准成员注册流程的成员）将在其账户上设置主密码。若组织要求成员不得设置主密码，请指导用户执行以下操作：
 
 1. 从现有账户导出数据。

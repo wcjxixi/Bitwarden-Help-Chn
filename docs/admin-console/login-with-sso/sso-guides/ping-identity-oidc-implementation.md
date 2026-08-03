@@ -20,7 +20,7 @@
 
 如果还没有为您的组织创建唯一的 **SSO 标识符**，请创建一个。否则，您不需要在此界面上编辑任何内容，保持此界面打开，以方便参考。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
@@ -62,23 +62,11 @@
 
 至此，您已在 Ping Identity 环境中配置好了您所需要的一切。请返回 Bitwarden 网页 App 配置以下字段：
 
-| 值                                                       | 描述                                                                                             |
-| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Authority                                               | 输入 `https://auth.pingone.eu/<TENANT_ID>`，其中 `TENANT_ID` 是 Ping Identity 上的 **Environment ID**。 |
-| Client ID                                               | 输入从应用程序配置选项卡获取的应用程序 **Client ID**。                                                             |
-| Client Secret                                           | 输入创建的客户端机密的机密值。在应用程序的配置选项卡上选择 **Generate New Secret**。                                         |
-| Metadata Address                                        | 对于 Ping Identity 实施，您可以将此字段留空。                                                                 |
-| OIDC Redirect Behavior                                  | 选择 **Form POST** 或 **Redirect GET**。                                                           |
-| Get Claims From User Info Endpoint                      | 如果在 SSO 过程中收到 URL 太长错误 (HTTP 414)、信任 URL 和/或失败，请启用此选项。                                         |
-| Additional/Custom Scopes                                | 定义要添加到请求中的自定义作用域（以逗号分隔）。                                                                       |
-| Additional/Custom Email Claim Types                     | 为用户的地址地址定义自定义声明类型键（以逗号分隔）。定义后，会先搜索自定义声明类型，然后再返回标准类型。                                           |
-| Additional/Custom Name Claim Types                      | 为用户全名或显示名定义自定义声明类型键（以逗号分隔）。定义后，会先搜索自定义声明类型，然后再返回标准类型。                                          |
-| Requested Authentication Context Class Reference values | 定义身 Authentication Context Class Reference 标识符 (`acr_values`)（以空格分隔）。按优先顺序列出 `acr_values`。     |
-| Expected "acr" Claim Value in Response                  | 为 Bitwarden 定义在响应中预期和验证的 `acr` 声明值。                                                            |
+<table data-search="false"><thead><tr><th>值</th><th>描述</th></tr></thead><tbody><tr><td>Authority</td><td>输入 <code>https://auth.pingone.eu/&#x3C;TENANT_ID></code>，其中 <code>TENANT_ID</code> 是 Ping Identity 上的 <strong>Environment ID</strong>。</td></tr><tr><td>Client ID</td><td>输入从应用程序配置选项卡获取的应用程序 <strong>Client ID</strong>。</td></tr><tr><td>Client Secret</td><td>输入创建的客户端机密的机密值。在应用程序的配置选项卡上选择 <strong>Generate New Secret</strong>。</td></tr><tr><td>Metadata Address</td><td>对于 Ping Identity 实施，您可以将此字段留空。</td></tr><tr><td>OIDC Redirect Behavior</td><td>选择 <strong>Form POST</strong> 或 <strong>Redirect GET</strong>。</td></tr><tr><td>Get Claims From User Info Endpoint</td><td>如果在 SSO 过程中收到 URL 太长错误 (HTTP 414)、信任 URL 和/或失败，请启用此选项。</td></tr><tr><td>Additional/Custom Scopes</td><td>定义要添加到请求中的自定义作用域（以逗号分隔）。</td></tr><tr><td>Additional/Custom Email Claim Types</td><td>为用户的地址地址定义自定义声明类型键（以逗号分隔）。定义后，会先搜索自定义声明类型，然后再返回标准类型。</td></tr><tr><td>Additional/Custom Name Claim Types</td><td>为用户全名或显示名定义自定义声明类型键（以逗号分隔）。定义后，会先搜索自定义声明类型，然后再返回标准类型。</td></tr><tr><td>Requested Authentication Context Class Reference values</td><td>定义身 Authentication Context Class Reference 标识符 (<code>acr_values</code>)（以空格分隔）。按优先顺序列出 <code>acr_values</code>。</td></tr><tr><td>Expected "acr" Claim Value in Response</td><td>为 Bitwarden 定义在响应中预期和验证的 <code>acr</code> 声明值。</td></tr></tbody></table>
 
 完成这些字段的配置后，**保存**您的工作。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以通过激活[单点登录身份验证策略](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)来要求用户使用 SSO 登录。
 {% endhint %}
 

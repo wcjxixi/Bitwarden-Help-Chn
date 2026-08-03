@@ -16,7 +16,7 @@
 
 每次重新启动 Bitwarden 时，都会进行证书续期检查。使用 Let's Encyrpt 将要求您输入一个电子邮箱地址来获取证书的到期提醒。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Let's Encrypt 是一个第三方证书颁发机构，它要求可以从互联网访问入站端口 80 和 443，以验证你的域名并颁发证书。如果您没有或不想设置互联网入站访问，可以使用本文档中的其他证书选项。
 {% endhint %}
 
@@ -24,7 +24,7 @@ Let's Encrypt 是一个第三方证书颁发机构，它要求可以从互联网
 
 如果您更改了 Bitwarden 服务器的域名，则需要手动更新已生成的证书。运行以下命令以创建备份、更新证书并重建 Bitwarden：
 
-<img src="../../../../.gitbook/assets/linux-24.png" alt="" data-size="line"><img src="../../../../.gitbook/assets/apple-24.png" alt="" data-size="line"> **Bash**
+<i class="fa-linux">:linux:</i><i class="fa-apple">:apple:</i> **Bash**
 
 ```shellscript
 ./bitwarden.sh stop
@@ -51,7 +51,7 @@ openssl dhparam -out ./bwdata/letsencrypt/live/<your.domain.com>/dhparam.pem 204
 ./bitwarden.sh start
 ```
 
-<img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line"> PowerShell
+<i class="fa-windows">:windows:</i> PowerShell
 
 {% hint style="success" %}
 需要安装适用于 Windows 的 OpenSSL 构建。
@@ -109,7 +109,7 @@ ssl_ca_path: /etc/ssl/your.domain/ca.crt
 **您只需要在 `./bwdata/ssl/` 中处理这些文件。不建议直接在 NGINX 容器中处理这些文件。**
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您的服务器正在记录到 1.1.1.1、1.0.0.1、9.9.9.9 或 149.112.112.112 的出站流量，则您的服务器正在执行 OCSP 检查。您可以通过在 `config.yml` 文件中为 `ssl_ca_path:` 配置空值来阻止此流量。与更改 `config.yml` 中的任何内容一样，更改此值需要重建然后重启服务器。
 {% endhint %}
 
@@ -195,6 +195,6 @@ Exception message: java.security.cert.CertPathValidatorException: Trust anchor f
 
 ## 不使用证书 <a href="#use-no-certificate" id="use-no-certificate"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 如果您选择不使用证书，则**必须在您的 Bitwarden 安装的前端使用 SSL 代理**。这是因为 Bitwarden 需要 HTTPS。尝试在没有 HTTPS 协议的情况下使用 Bitwarden 将触发错误。
 {% endhint %}

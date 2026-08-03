@@ -14,7 +14,7 @@
 
 现在，开始添加您的员工作为服务用户，这将允许他们管理所有业务单元组织并创建新的组织，或管理该单元本身。
 
-1、**邀请用户**。从业务单元门户的 **☷管理** → **成员**选项卡，邀请用户作为服务用户（或邀请额外的管理员）：
+1、**邀请用户**。从业务单元门户的 <i class="fa-sliders">:sliders:</i>**管理** → **成员**选项卡，邀请用户作为服务用户（或邀请额外的管理员）：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3pFCcxegChJXePdeG6Qku/407a11969d79ea7c58f0845e3072922a/2025-04-23_08-56-22.png?w=1018&#x26;fm=avif" alt=""><figcaption><p>邀请业务单元成员</p></figcaption></figure></div>
 
@@ -42,7 +42,7 @@
 
 ## 创建业务单元组织 <a href="#create-a-business-unit-organization" id="create-a-business-unit-organization"></a>
 
-要创建新的业务单元组织，您必须是业务单元的管理员。导航到业务单元门户的**客户**选项卡，然后选择 ✚**新增**按钮：
+要创建新的业务单元组织，您必须是业务单元的管理员。导航到业务单元门户的**客户**选项卡，然后选择 <i class="fa-plus">:plus:</i>**新增**按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3Z2OgnsPU5RUx5J05pPYs8/00f61fb7d980105bce9feb56496143a5/2025-04-24_09-02-23.png?w=1019&#x26;fm=avif" alt=""><figcaption><p>创建业务单元</p></figcaption></figure></div>
 
@@ -50,7 +50,7 @@
 
 要将现有组织添加到业务单元，您必须是活跃的业务单元管理员以及是要添加的组织的所有者。
 
-1、使用产品切换器导航到业务单元门户，然后选择 ✚**添加**按钮 → **现有组织**：
+1、使用产品切换器导航到业务单元门户，然后选择 <i class="fa-plus">:plus:</i>**添加**按钮 → **现有组织**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7xFhBj38LTp1iWJdOadbU7/7f6b2185de459bef885095d8aef0951d/2025-10-02_15-38-46.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>业务单元添加现有组织</p></figcaption></figure></div>
 
@@ -92,7 +92,7 @@
 
 建立了安全且可扩展的凭据共享基础设施后，您就可以开始邀请用户加入组织了。根据您的业务单元规模，可以通过三种方式将用户加入 Bitwarden：
 
-1、**对于小型单元**，通过从 Admin Console 的 **☷成员**视图向用户发送电子邮件邀请：
+1、**对于小型单元**，通过从 Admin Console 的 <i class="fa-sliders">:sliders:</i>**成员**视图向用户发送电子邮件邀请：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>邀请成员加入组织</p></figcaption></figure></div>
 

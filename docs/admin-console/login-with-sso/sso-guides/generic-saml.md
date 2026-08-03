@@ -18,7 +18,7 @@
 
 3、继续执行**第 2 步：启用 SSO 登录**。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 配置完成后，您需要将这个值分享给用户。
 {% endhint %}
 
@@ -34,7 +34,7 @@
 
 如果您愿意，可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做将从 SP 实体 ID 值中移除您的组织 ID，但在几乎所有情况下，建议保留此选项。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
@@ -42,23 +42,11 @@
 
 从这一步开始，具体实施方式会因提供程序而异。跳转到我们的具体**实施指南**之一，以帮助完成配置过程：
 
-| 提供程序         | 指南                                                      |
-| ------------ | ------------------------------------------------------- |
-| AD FS        | [AD FS 实施指南](adfs-saml-implementation.md)               |
-| Auth0        | [Auth0 实施指南](auth0-saml-configuration.md)               |
-| AWS          | [AWS 实施指南](aws-saml-implementation.md)                  |
-| Azure        | [Azure 实施指南](microsoft-entra-id-saml-implementation.md) |
-| Duo          | [Duo 实施指南](duo-saml-implementation.md)                  |
-| Google       | [Google 实施指南](google-saml-implementation.md)            |
-| JumpCloud    | [JumpCloud 实施指南](jumpcloud-saml-implementation.md)      |
-| Keycloak     | [Keycloak 实施指南](keycloak-saml-implementation-1.md)      |
-| Okta         | [Okta 实施指南](okta-saml-implementation.md)                |
-| OneLogin     | [OneLogin 实施指南](onelogin-saml-implementation.md)        |
-| PingFederate | [PingFederate 实施指南](adfs-oidc.md)                       |
+<table data-search="false"><thead><tr><th>提供程序</th><th>指南</th></tr></thead><tbody><tr><td>AD FS</td><td><a href="adfs-saml-implementation.md">AD FS 实施指南</a></td></tr><tr><td>Auth0</td><td><a href="auth0-saml-configuration.md">Auth0 实施指南</a></td></tr><tr><td>AWS</td><td><a href="aws-saml-implementation.md">AWS 实施指南</a></td></tr><tr><td>Azure</td><td><a href="microsoft-entra-id-saml-implementation.md">Azure 实施指南</a></td></tr><tr><td>Duo</td><td><a href="duo-saml-implementation.md">Duo 实施指南</a></td></tr><tr><td>Google</td><td><a href="google-saml-implementation.md">Google 实施指南</a></td></tr><tr><td>JumpCloud</td><td><a href="jumpcloud-saml-implementation.md">JumpCloud 实施指南</a></td></tr><tr><td>Keycloak</td><td><a href="keycloak-saml-implementation-1.md">Keycloak 实施指南</a></td></tr><tr><td>Okta</td><td><a href="okta-saml-implementation.md">Okta 实施指南</a></td></tr><tr><td>OneLogin</td><td><a href="onelogin-saml-implementation.md">OneLogin 实施指南</a></td></tr><tr><td>PingFederate</td><td><a href="adfs-oidc.md">PingFederate 实施指南</a></td></tr></tbody></table>
 
 以下部分将定义单点登录配置过程中可用的字段，其与您要集成的 IdP 无关。必须配置的字段将被标记（**必填**）。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **除非您对 SAML 2.0 非常熟悉**，否则我们建议使用[上述实施指南](generic-saml.md#step-3-configuration)之一，而不是以下的通用素材。
 {% endhint %}
 
@@ -69,30 +57,11 @@
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
-| 字段                                   | 描述                                                                                                                                                                                                                                           |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| SP Entity ID                         | <p>（<strong>自动生成</strong>）用于身份验证请求的 Bitwarden 端点。</p><p></p><p>这个自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并基于您的设置而有所不同。</p>                                                                                               |
-| SAML 2.0 Metadata URL                | <p>（<strong>自动生成</strong>）Bitwarden 端点的元数据 URL。</p><p></p><p>这个自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并基于您的设置而有所不同。</p>                                                                                                 |
-| Assertion Consumer Service (ACS) URL | <p>（<strong>自动生成</strong>）从 IdP 发送 SAML 断言的位置。</p><p></p><p>这个自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并基于您的设置而有所不同。</p>                                                                                                  |
-| Name ID Format                       | <p>Bitwarden 请求 SAML 断言的格式。选项包括：</p><p>-Unspecified（默认）</p><p>-Email Address</p><p>-X.509 Subject Name</p><p>-Windows Domain Qualified Name</p><p>-Kerberos Principal Name</p><p>-Entity Identifier</p><p>-Persistent</p><p>-Transient</p>   |
-| Outbound Signing Algorithm           | <p>Bitwarden 用于签署 SAML 请求的算法。选项包括：<br>- <code>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</code>（默认）<br>- <code>http://www.w3.org/2000/09/xmldsig#rsa-sha384</code><br>- <code>http://www.w3.org/2000/09/xmldsig#rsa-sha512</code></p> |
-| Signing Behavior                     | <p>是否/何时签署 SAML 请求。选项包括：<br>-If IdP Wants Authn Requests Signed（默认）<br>-Always<br>-Never</p>                                                                                                                                                 |
-| Minimum Incoming Signing Algorithm   | Bitwarden 将在 SAML 响应中接受的算法的最小强度。                                                                                                                                                                                                             |
-| Want Assertions Signed               | 如果 Bitwarden 期望来自 IdP 的响应被签名，请选中此复选框。                                                                                                                                                                                                        |
-| Validate Certificates                | 当使用来自你的 IdP 的通过受信任的 CA 颁发的受信任和有效的证书时，请选中此复选框。自签名证书可能会失败，除非在 Bitwarden SSO 登录 docker 镜像中配置了正确的信任链。                                                                                                                                            |
+<table data-search="false"><thead><tr><th>字段</th><th>描述</th></tr></thead><tbody><tr><td>SP Entity ID</td><td><p>（<strong>自动生成</strong>）用于身份验证请求的 Bitwarden 端点。</p><p></p><p>这个自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并基于您的设置而有所不同。</p></td></tr><tr><td>SAML 2.0 Metadata URL</td><td><p>（<strong>自动生成</strong>）Bitwarden 端点的元数据 URL。</p><p></p><p>这个自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并基于您的设置而有所不同。</p></td></tr><tr><td>Assertion Consumer Service (ACS) URL</td><td><p>（<strong>自动生成</strong>）从 IdP 发送 SAML 断言的位置。</p><p></p><p>这个自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并基于您的设置而有所不同。</p></td></tr><tr><td>Name ID Format</td><td><p>Bitwarden 请求 SAML 断言的格式。选项包括：</p><p>-Unspecified（默认）</p><p>-Email Address</p><p>-X.509 Subject Name</p><p>-Windows Domain Qualified Name</p><p>-Kerberos Principal Name</p><p>-Entity Identifier</p><p>-Persistent</p><p>-Transient</p></td></tr><tr><td>Outbound Signing Algorithm</td><td>Bitwarden 用于签署 SAML 请求的算法。选项包括：<br>- <code>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</code>（默认）<br>- <code>http://www.w3.org/2000/09/xmldsig#rsa-sha384</code><br>- <code>http://www.w3.org/2000/09/xmldsig#rsa-sha512</code></td></tr><tr><td>Signing Behavior</td><td>是否/何时签署 SAML 请求。选项包括：<br>-If IdP Wants Authn Requests Signed（默认）<br>-Always<br>-Never</td></tr><tr><td>Minimum Incoming Signing Algorithm</td><td>Bitwarden 将在 SAML 响应中接受的算法的最小强度。</td></tr><tr><td>Want Assertions Signed</td><td>如果 Bitwarden 期望来自 IdP 的响应被签名，请选中此复选框。</td></tr><tr><td>Validate Certificates</td><td>当使用来自你的 IdP 的通过受信任的 CA 颁发的受信任和有效的证书时，请选中此复选框。自签名证书可能会失败，除非在 Bitwarden SSO 登录 docker 镜像中配置了正确的信任链。</td></tr></tbody></table>
 
 ### 身份提供程序配置 <a href="#identity-provider-configuration" id="identity-provider-configuration"></a>
 
-| 字段                                  | 描述                                                                                                                                                                                                                                              |
-| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                           | （**必填**）您的身份服务器或 IdP 实体 ID 的地址或 URL。                                                                                                                                                                                                            |
-| Binding Type                        | <p>IdP 用于响应 Bitwarden SAML 请求的方法。选项包括：<br>-Redirect（推荐）<br>-HTTP POST<br>-Artifact</p>                                                                                                                                                          |
-| Single Sign On Service URL          | （**如果 Entity ID 不是 URL 则必填**）您的 IdP 发布的 SSO URL。                                                                                                                                                                                                |
-| Single Log Out Service URL          | SSO 登录目前**不支持** SLO。该选项计划在未来使用，但我们强烈建议预先配置该字段。                                                                                                                                                                                                  |
-| X509 Public Certificate             | <p>（<strong>必填</strong>）X.509 Base-64 编码的证书的主体部分。不要包括 CER/PEM 格式的证书的 <code>-----BEGIN CERTIFICATE-----</code> 与 <code>-----END CERTIFICATE-----</code> 之间的行或部分。</p><p></p><p>此字段中额外的空格、回车符和其他无关字符将导致证书验证失败。<strong>仅</strong>复制证书数据到此字段中。</p>   |
-| Outbound Signing Algorithm          | <p>您的 IdP 用于签署 SAML 响应/断言所使用的算法。选项包括：<br>- <code>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</code>（默认）<br>- <code>http://www.w3.org/2000/09/xmldsig#rsa-sha384</code><br>- <code>http://www.w3.org/2000/09/xmldsig#rsa-sha512</code></p> |
-| Allow outbound logout requests      | SSO 登录目前**不支持** SLO。该选项计划在未来使用，但我们强烈建议预先配置该字段。                                                                                                                                                                                                  |
-| Want Authentication Requests Signed | 如果您的 IdP 希望来自 Bitwarden SAML 的请求被签名，请选中此复选框。                                                                                                                                                                                                    |
+<table data-search="false"><thead><tr><th>字段</th><th>描述</th></tr></thead><tbody><tr><td>Entity ID</td><td>（<strong>必填</strong>）您的身份服务器或 IdP 实体 ID 的地址或 URL。</td></tr><tr><td>Binding Type</td><td>IdP 用于响应 Bitwarden SAML 请求的方法。选项包括：<br>-Redirect（推荐）<br>-HTTP POST<br>-Artifact</td></tr><tr><td>Single Sign On Service URL</td><td>（<strong>如果 Entity ID 不是 URL 则必填</strong>）您的 IdP 发布的 SSO URL。</td></tr><tr><td>Single Log Out Service URL</td><td>SSO 登录目前<strong>不支持</strong> SLO。该选项计划在未来使用，但我们强烈建议预先配置该字段。</td></tr><tr><td>X509 Public Certificate</td><td><p>（<strong>必填</strong>）X.509 Base-64 编码的证书的主体部分。不要包括 CER/PEM 格式的证书的 <code>-----BEGIN CERTIFICATE-----</code> 与 <code>-----END CERTIFICATE-----</code> 之间的行或部分。</p><p></p><p>此字段中额外的空格、回车符和其他无关字符将导致证书验证失败。<strong>仅</strong>复制证书数据到此字段中。</p></td></tr><tr><td>Outbound Signing Algorithm</td><td>您的 IdP 用于签署 SAML 响应/断言所使用的算法。选项包括：<br>- <code>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</code>（默认）<br>- <code>http://www.w3.org/2000/09/xmldsig#rsa-sha384</code><br>- <code>http://www.w3.org/2000/09/xmldsig#rsa-sha512</code></td></tr><tr><td>Allow outbound logout requests</td><td>SSO 登录目前<strong>不支持</strong> SLO。该选项计划在未来使用，但我们强烈建议预先配置该字段。</td></tr><tr><td>Want Authentication Requests Signed</td><td>如果您的 IdP 希望来自 Bitwarden SAML 的请求被签名，请选中此复选框。</td></tr></tbody></table>
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。 证书必须更新，以防止向 SSO 最终用户提供的服务中断。如果证书过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。

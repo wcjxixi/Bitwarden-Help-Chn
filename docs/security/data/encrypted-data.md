@@ -8,7 +8,7 @@
 
 下面列出了加密数据的示例，以及加密数据演示的下载链接。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 我们鼓励您查看我们的[隐私政策](https://bitwarden.com/privacy)页面以了解更多信息。
 {% endhint %}
 

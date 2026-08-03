@@ -35,7 +35,7 @@ Cloudflare 仅支持通过访问应用网关的 SAML。这意味着必须在 Bit
 
 如果愿意，您可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做会从 SP 实体 ID 值中移除组织 ID，但大多数情况下都建议打开该选项。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
@@ -94,7 +94,7 @@ Google Workspace 用户应在此步骤中选择通用 **SAML** 设置。Google W
 
 5、接下来，创建用户访问应用程序的访问策略。为每个策略填写**策略名称**、**操作**和**会话持续时间**字段。
 
-6、您可以选择指定组策略（**访问权限** → **群组**）或明确的用户策略规则（如电子邮箱、「mails ending in」、「country」 或 「everyone」）。在下面的示例中，"匿名用户 "组已包含在策略中。还添加了一条附加规则，以包括以所选域名结尾的电子邮件：
+6、您可以选择指定组策略（**访问权限** → **群组**）或明确的用户策略规则（如电子邮箱、「mails ending in」、「country」 或 「everyone」）。在下面的示例中，「Anon Users」组已包含在策略中。还添加了一条附加规则，以包括以所选域名结尾的电子邮箱：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2VCZsMzbeUtuO9jx1oh6g7/a1fbe343872934b796ce486cf46835fb/Screen_Shot_2022-10-12_at_10.55.31_AM.png?w=800&#x26;fm=avif" alt=""><figcaption><p>Cloufflare Zero Trust 应用程序策略</p></figcaption></figure></div>
 

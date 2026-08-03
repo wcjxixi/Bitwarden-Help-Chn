@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/fingerprint-phrase/)
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您是否希望使用指纹阅读器解锁您的密码库？如果是这样，请参阅[生物识别](../../account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)。
 {% endhint %}
 
@@ -30,7 +30,7 @@
 
 不知道您的指纹短语绝不会导致您被锁定在您的密码库之外。因此，将指纹短语记下并将其存储在安全的地方并不重要，但有些用户可能会选择这样做。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 另一方面，[恢复代码](../../account/two-step-login/recovery-codes.md)用于两步登录，应**始终**以对您有意义的方式存储在 Bitwarden 之外。在您[丢失了两步登录辅助设备](../../account/lost-two-step-device.md)时，这将确保您不会被锁定在您的账户之外。
 {% endhint %}
 
@@ -38,7 +38,7 @@
 
 虽然您无法更改当前账户的指纹短语，但您可以通过[删除账户](../../plans-and-pricing/delete-an-account-or-organization.md)然后创建一个新账户的方式来生成一个新的短语。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 删除账户是永久性的，无法撤消或恢复。要创建密码库数据的备份并将其存储在安全的位置，请[导出您的密码库数据](../../password-manager/import-and-export/export-vault-data.md)。
 {% endhint %}
 

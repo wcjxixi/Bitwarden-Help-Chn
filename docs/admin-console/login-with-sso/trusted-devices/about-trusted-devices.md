@@ -74,7 +74,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4Y9q6Y3KmLskDaqfF03YmJ/8a99742b2bf8e7394cb0988495dc13b0/2025-04-30_09-34-10.png?w=1110&#x26;fm=avif" alt=""><figcaption><p>管理员批准身份验证请求（步骤 3-4）</p></figcaption></figure></div>
 
-5、发起请求的客户端 GET 到加密后的账户加密密钥，然后使用**身份验证请求私钥**<mark style="color:red;">**ª**</mark> 对它进行**本地**解密。
+5、发起请求的客户端 GET 到加密后的账户加密密钥，然后使用**身份验证请求私钥&#x20;**<mark style="color:red;">**ª**</mark> 对它进行**本地**解密。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7LNcFuhupPeR4DJhg2k4po/10ae5da219f1e5338e5cdf6554655e9f/2025-04-30_09-34-28.png?w=1114&#x26;fm=avif" alt=""><figcaption><p>用户收到管理员批准（步骤 5）</p></figcaption></figure></div>
 
@@ -120,7 +120,7 @@
 * 如果用户是在受信任设备 SSO 激活**之前**入职的，或者如果他们从组织邀请中选择了**创建账户**，则他们的账户将保留其主密码。
 * 如果用户是在受信任设备 SSO 激活**之后**入职的，并从组织邀请中选择**登录** → **企业 SSO** 进行 [JIT 配置](../login-with-sso-faqs.md#q-how-does-login-with-sso-work-for-new-users-just-in-time)，则他们的账户将无需拥有主密码。如果您更改为主密码[成员解密选项](../sso-decryption-options.md)，只要这些用户仍然是组织的成员，系统就会在他们登录时提示创建一个主密码（[了解更多](setup-sso-with-trusted-devices.md)）。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 对于那些因使用受信任设备 SSO 而没有主密码的成员账户：
 
 * [将其从您的组织中移除](../../manage-members/user-management.md#offboard-users)将切断其对 Bitwarden 账户的所有访问权限，除非事先使用[账户恢复](../../manage-members/account-recovery/about-account-recovery.md)功能为其分配了主密码，并且他们在被移除前至少使用该主密码登录过一次。

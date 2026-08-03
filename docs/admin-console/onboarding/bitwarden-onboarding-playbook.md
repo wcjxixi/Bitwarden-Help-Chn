@@ -10,7 +10,7 @@
 
 {% tabs %}
 {% tab title="1：培训" %}
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 第 1 阶段侧重于教育利益相关者、准备系统，并建立成功设置的知识库。Bitwarden 建议在推广之前或推广期间为每个小组或团队安排培训课程。
 {% endhint %}
 
@@ -132,7 +132,7 @@
 {% endtab %}
 
 {% tab title="2：设置" %}
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 第 2 阶段是技术设置阶段，在此阶段为您的组织部署并配置 Bitwarden。
 {% endhint %}
 
@@ -384,7 +384,7 @@ Directory Integration (if applicable):
 {% endtab %}
 
 {% tab title="3：规划" %}
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 第 3 阶段侧重于用户入职开始前的组织准备和沟通工作。此阶段通过设定适当预期、解决顾虑以及为变革造组织动力，确保用户顺利采用。
 {% endhint %}
 
@@ -400,7 +400,7 @@ Directory Integration (if applicable):
 
 ### 步骤 1：准备全公司范围的领导层沟通 <a href="#step-1-prepare-company-wide-communication-from-leadership" id="step-1-prepare-company-wide-communication-from-leadership"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 领导层对采用成功至关重要。[Bitwarden 研究](https://bitwarden.com/resources/bitwarden-security-impact-report/)表明，公司范围内的密码管理要求将常规使用率提高了一倍以上。
 {% endhint %}
 
@@ -472,7 +472,7 @@ Pre-rollout communications:
 {% endtab %}
 
 {% tab title="4：推广" %}
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 第 4 阶段确保用户开始使用 Bitwarden，通过向用户介绍 Bitwarden，确保正确设置账户和初始使用。
 
 提醒管理员，所有 Bitwarden 入职**流程为**：邀请 → 接受 → 确认
@@ -498,7 +498,7 @@ Pre-rollout communications:
 * 适用于规模较小的组织或拥有强大 IT 和培训资源的大型组织
 * 如果能够同时协调所有人的沟通和支持，效果最佳
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 运行一个小型试点（用户数量根据组织规模而定，20-100 人）有助于验证在所有主要使用场景（桌面、移动、浏览器、SSO 等）中的推广。这有助于完善沟通并培养内部拥护者。
 {% endhint %}
 
@@ -510,7 +510,7 @@ Pre-rollout communications:
 
 ### 步骤 1：推广规划 <a href="#step-1-rollout-planning" id="step-1-rollout-planning"></a>
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 分阶段推广方式，按部门逐个实施，被 [Bitwarden 用户选为「非常有效」](https://bitwarden.com/resources/bitwarden-security-impact-report/)。
 {% endhint %}
 
@@ -633,7 +633,7 @@ Quality assurance:
 {% endtab %}
 
 {% tab title="5：采用" %}
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 第 5 阶段侧重于采用、最大化价值、确保安全合规以及维护长期成功。
 {% endhint %}
 

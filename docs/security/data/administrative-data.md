@@ -6,7 +6,7 @@
 
 您的账户创建、Bitwarden 服务和支持的使用，以及 Bitwarden 服务的支付相，将使用用户提供的个人信息。Bitwarden 使用管理数据向您提供 Bitwarden 服务。只要您是 Bitwarden 的客户，我们就会根据法律要求保留管理数据。如果您终止与 Bitwarden 的关系，我们将根据我们的数据保留政策删除您的个人信息。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 我们鼓励您查看我们的[隐私政策](https://bitwarden.com/privacy)页面以了解更多信息。
 {% endhint %}
 

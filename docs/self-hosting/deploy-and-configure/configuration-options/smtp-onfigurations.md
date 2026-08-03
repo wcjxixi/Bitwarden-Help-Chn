@@ -50,7 +50,7 @@ globalSettings__mail__smtp__startTls=true
 globalSettings__mail__smtp__trustServer=true
 ```
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 仅在受控的开发环境中使用 `trustServer=true` 。对于生产系统，请始终使用经过正确验证的证书，以防止中间人 (MitM) 攻击。
 {% endhint %}
 

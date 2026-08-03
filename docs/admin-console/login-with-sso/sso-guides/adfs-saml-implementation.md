@@ -8,10 +8,10 @@
 
 配置需要在 Bitwarden 网页 App 和 AD FS 服务器管理器中同时进行。操作过程中，我们建议同时打开这两个界面，并按照文档记录的步骤顺序完成操作。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **已经是 SSO 专家了吗？**&#x8DF3;过本文中的说明，然后下载示例配置，将里面的屏幕截图与您自己的配置进行比较。
 
-**⬇️** [下载示例](https://bitwarden.com/assets/5892IOGrU7B9lvBmN0P0xl/5719d49a8f15bcf9f6371fbd28827f17/saml-adfs-sample.zip)
+<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i> [下载示例](https://bitwarden.com/assets/5892IOGrU7B9lvBmN0P0xl/5719d49a8f15bcf9f6371fbd28827f17/saml-adfs-sample.zip)
 {% endhint %}
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
@@ -28,7 +28,7 @@
 
 如果愿意，您可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做会从 SP 实体 ID 值中移除组织 ID，但大多数情况下都建议打开该选项。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 还可以选择使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
 {% endhint %}
 
@@ -36,15 +36,15 @@
 
 在 AD FS 服务器管理器中，选择 **Tools** → **AD FS Management** → **Action** → **Add Relying Party Trust**。在向导中，进行如下的选择：
 
-1、在 Welcome（欢迎）界面，选择 **Claims Aware**。
+1、在 Welcome 界面，选择 **Claims Aware**。
 
-2、在 Select Data Source（选择数据来源）界面，选择 **Enter data about the relying party manually**。
+2、在 Select Data Source 界面，选择 **Enter data about the relying party manually**。
 
-3、在 Specify Display Name（指定显示名称）界面，输入一个专用于 Bitwarden 的显示名称。
+3、在 Specify Display Name 界面，输入一个专用于 Bitwarden 的显示名称。
 
-4、在 Configure URL（配置 URL）界面，选择 **Enable support for SAML 2.0 WebSSO protocol**。
+4、在 Configure URL 界面，选择 **Enable support for SAML 2.0 WebSSO protocol**。
 
-* 在 **Relying party SAML 2.0 SSO service URL** 输入框中，输入从 Bitwarden SSO 配置界面获取到的断言消费者服务（ACS）URL。这个自动生成的值可以从组织的**设置** → **单点登录**界面中复制，并根据您的设置而有所不同。。
+* 在 **Relying party SAML 2.0 SSO service URL** 输入框中，输入从 Bitwarden SSO 配置界面获取到的断言消费者服务 (ACS) URL。这个自动生成的值可以从组织的**设置** → **单点登录**界面中复制，并根据您的设置而有所不同。。
 
 5、在 **Choose Access Control Policy** 界面，选择符合安全标准的策略。
 
@@ -140,15 +140,7 @@
 
 身份提供程序配置通常需要您返回 AD FS 服务器管理器以获取相应的值：
 
-| 字段                                  | 描述                                                                                                                                                                                                                   |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID                           | 输入获取到的 [Federation Service Identifier](adfs-saml-implementation.md#get-federation-service-identifier)（联合服务标识符）。请注意，这**可能不使用 HTTPS**。                                                                                 |
-| Binding Type                        | 默认，AD FS 使用 HTTP POST 端点绑定。除非您已[将 AD FS 配置为使用不同的方法](adfs-saml-implementation.md#endpoint-binding)，否则请选择 **HTTP POST**。                                                                                               |
-| Single Sign On Service URL          | 输入 SSO 服务端点。该值可以从 AD FS 管理器的 **Service** → **Endpoints** 选项卡中获取。端点 URL 被列为 **SAML2.0/WS-Federation 的 URL 路径**，通常类似于 `https://your-domain/adfs/ls`。您可以从 `FederationMetadata.xml` 文档中的 SingleSignOnService 的配置键获取准确的值。 |
-| X509 Public Certificate             | <p>黏贴已下载的证书，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p>                                                  |
-| Outbound Signing Algorithm          | 默认情况下，AD FS 将使用 SHA-256 签名。从下拉列表中选择 **SHA-256**，除非您已[将 AD FS 配置为使用不同的算法](adfs-saml-implementation.md#hash-algorithm)。                                                                                                |
-| Allow Outbound Logout Requests      | SSO 登录当前**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                       |
-| Want Authentication Requests Signed | AD FS 是否要求 SAML 请求被签名。                                                                                                                                                                                               |
+<table data-search="false"><thead><tr><th>字段</th><th>描述</th></tr></thead><tbody><tr><td>Entity ID</td><td>输入获取到的 <a href="adfs-saml-implementation.md#get-federation-service-identifier">Federation Service Identifier</a>（联合服务标识符）。请注意，这<strong>可能不使用 HTTPS</strong>。</td></tr><tr><td>Binding Type</td><td>默认，AD FS 使用 HTTP POST 端点绑定。除非您已<a href="adfs-saml-implementation.md#endpoint-binding">将 AD FS 配置为使用不同的方法</a>，否则请选择 <strong>HTTP POST</strong>。</td></tr><tr><td>Single Sign On Service URL</td><td>输入 SSO 服务端点。该值可以从 AD FS 管理器的 <strong>Service</strong> → <strong>Endpoints</strong> 选项卡中获取。端点 URL 被列为 <strong>SAML2.0/WS-Federation 的 URL 路径</strong>，通常类似于 <code>https://your-domain/adfs/ls</code>。您可以从 <code>FederationMetadata.xml</code> 文档中的 SingleSignOnService 的配置键获取准确的值。</td></tr><tr><td>X509 Public Certificate</td><td>黏贴已下载的证书，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</td></tr><tr><td>Outbound Signing Algorithm</td><td>默认情况下，AD FS 将使用 SHA-256 签名。从下拉列表中选择 <strong>SHA-256</strong>，除非您已<a href="adfs-saml-implementation.md#hash-algorithm">将 AD FS 配置为使用不同的算法</a>。</td></tr><tr><td>Allow Outbound Logout Requests</td><td>SSO 登录当前<strong>不支持</strong> SLO。该选项计划未来开发。</td></tr><tr><td>Want Authentication Requests Signed</td><td>AD FS 是否要求 SAML 请求被签名。</td></tr></tbody></table>
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。
@@ -156,7 +148,7 @@
 
 完成身份提供程序配置部分后，**保存**您的工作。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您可以通过激活[单点登录身份验证策略](../../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)来要求用户使用 SSO 登录。
 {% endhint %}
 

@@ -65,7 +65,7 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 要将计费同步令牌应用到您的自托管组织：
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 在此阶段，如果您要从早期版本升级您的自托管部署，可能需要在继续之前[手动更新您的许可证文件](../../licensing-on-premise.md#organization-license)。
 {% endhint %}
 

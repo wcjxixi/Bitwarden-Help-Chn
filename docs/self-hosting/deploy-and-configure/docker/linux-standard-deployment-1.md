@@ -6,7 +6,7 @@
 
 这篇文章将指导您手动安装和部署 Bitwarden 到您自己的服务器。请查看 Bitwarden [软件发布支持](../../../security/software-development/software-release-support.md)文档。
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **手动安装仅适用于高级用户。**&#x4EC5;当您非常熟悉 Docker 技术，并且希望对您的 Bitwarden 安装进行更多控制时才应该继续操作。
 
 手动安装缺乏自动更新 Bitwarden 安装所需的某些依赖项的能力。当您将 Bitwarden 从一个版本升级到下一个版本时，您将负责修改所需的环境变量，修改 nginx 的 `default.conf`，修改 `docker-compose.yml` 等等。
@@ -16,7 +16,7 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2 GB RAM</td><td>4 GB RAM</td></tr><tr><td>存储</td><td>12 GB</td><td>25 GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
+<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2 GB RAM</td><td>4 GB RAM</td></tr><tr><td>存储</td><td>12 GB</td><td>25 GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose <mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
 <mark style="color:red;">**ª**</mark> - 当您下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[下载 Linux 版 Docker Engine](https://docs.docker.com/engine/install/#supported-platforms)。
 
@@ -70,7 +70,7 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 
 ### 下载和配置 <a href="#download-and-configure" id="download-and-configure"></a>
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 [创建 Bitwarden 用户和目录](linux-standard-deployment-1.md#create-bitwarden-local-user-and-directory)后，请从 `/opt/bitwarden` 目录以 `bitwarden` 用户身份完成以下操作。**请勿以 root 用户身份安装 Bitwarden**，否则会在安装过程中遇到问题。
 {% endhint %}
 
@@ -102,7 +102,7 @@ unzip docker-stub-US.zip -d bwdata
 * `globalSettings__installation__id=`：输入从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装 ID。
 * `globalSettings__installation__key=`：输入从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装密钥。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 此时，还要考虑为所有 `globalSettings__mail__smtp__` 变量和 `adminSettings__admins` 设置值。这样做将配置用于向组织的新成员发送邀请的 SMTP 邮件服务器，并提供对[系统管理员门户](../../system-administrator-portal.md)的访问权限。
 
 [了解有关环境变量的更多信息](../configuration-options/environment-variables.md)。
@@ -173,7 +173,7 @@ docker ps
 
 您现在可以注册新账户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新账户的电子邮箱地址。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 部署完成后，我们建议定期[备份您的服务器](../../backup-server-data.md)并[检查系统更新](../../update-a-server.md)。
 {% endhint %}
 

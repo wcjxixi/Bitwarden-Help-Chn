@@ -188,7 +188,7 @@ Invited user zyxw9876.,fa-globe,Unknown,1234abcd-56de-78ef-91gh-abcdef123456,Ali
 Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19hg-654321fedcba,Bob,bob@bitwarden.com,2021-06-07T17:57:08.1866667Z,222.22.222.222,Organization_Updated
 ```
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 您还可以下载包含了特定于账户的详细信息的 `.csv` [成员列表](../../manage-members/user-management.md#download-list-of-members)，例如 Secrets Manager 是否已激活以及他们在组织中的状态。
 {% endhint %}
 

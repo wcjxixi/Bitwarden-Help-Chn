@@ -136,7 +136,7 @@ sha256sum dist-chrome-2025.6.1.zip
 
 ### 问：Bitwarden 使用客户端应用程序的哪些数据？
 
-**答：**&#x42;itwarden 使用管理数据为您提供 Bitwarden 服务。如某些**App 隐私**报告所示，用户在创建账户时提供以下信息：
+**答：**&#x42;itwarden 使用管理数据为您提供 Bitwarden 服务。如某些 **App 隐私**报告所示，用户在创建账户时提供以下信息：
 
 * 您的名称（可选）
 * 您的电子邮件地址（用于电子邮箱验证、账户管理以及您与 Bitwarden 之间的交流沟通）
@@ -166,7 +166,7 @@ sha256sum dist-chrome-2025.6.1.zip
 | 允许 Bitwarden 拍照和录制视频吗？      | 用于两步登录或 Bitwarden Authenticator 扫描二维码。 |
 | 允许 Bitwarden 访问您设备上的照片和媒体吗？ | 用于从设备上保存的文件创建附件或 Send。                 |
 
-Bitwarden 所需的其他基本权限已[在 Google Play 商店中列出](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden)。
+Bitwarden 所需的其他基本权限已[在 Google Play Store](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden)[ 中列出](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden)。
 
 ### 问：为何浏览器扩展需要 `nativeMessaging` 权限？ <a href="#q-why-does-the-browser-extension-need-nativemessaging-permission" id="q-why-does-the-browser-extension-need-nativemessaging-permission"></a>
 

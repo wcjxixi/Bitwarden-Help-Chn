@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/install-and-deploy-unified-beta/)
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 Bitwarden Lite 适合个人和家庭实验使用，不适用于商用环境。商用环境应使用[标准部署选项](../../plan-for-deployment/self-host-bitwarden.md)之一。
 {% endhint %}
 
@@ -40,21 +40,11 @@ Bitwarden Lite 使用 [Docker 容器](https://docs.docker.com/get-started/)运�
 
 可以通过创建一个 `settings.env` 文件来指定环境变量，您可以在我们的 [GitHub 存储库](https://github.com/bitwarden/server/blob/master/docker-unified/settings.env)中找到该文件的示例，或者如果您使用的是 `docker run` 方式，则可以使用 `--env` 标志。至少需要为示例 `.env` 文件的 `# Required Settings #` 部分下的变量设置值。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 除了此表中列出的变量之外，还有更多可选的环境变量可用。
 {% endhint %}
 
-| 变量                    | 描述                                                                                    |
-| --------------------- | ------------------------------------------------------------------------------------- |
-| BW\_DOMAIN            | 将 `bitwarden.yourdomain.com` 替换为用于访问 Bitwarden 所使用域名。                                 |
-| BW\_DB\_PROVIDER      | 您将用于 Bitwarden 服务器的数据库提供程序。可用选项包括 `sqlserver`、`postgresql` 或 `mysql`/`mariadb`。       |
-| BW\_DB\_SERVER        | 运行数据库的服务器的名称。                                                                         |
-| BW\_DB\_DATABASE      | 您的 Bitwarden 数据库的名称。                                                                  |
-| BW\_DB\_USERNAME      | 用于访问 Bitwarden 数据库的用户名。                                                               |
-| BW\_DB\_PASSWORD      | 用于访问 Bitwarden 数据库的密码。                                                                |
-| BW\_DB\_FILE          | 仅 `sqlite` 需要，如果您想指定数据库文件的路径。如果不指定，`sqlite` 会自动在 `/etc/bitwarden` 卷下创建 `vault.db` 文件。 |
-| BW\_INSTALLATION\_ID  | 从 [https://bitwarden.com/host/](https://bitwarden.com/host/) 生成的有效安装 ID。              |
-| BW\_INSTALLATION\_KEY | 从 [https://bitwarden.com/host/](https://bitwarden.com/host/) 生成的有效安装密钥。               |
+<table data-search="false"><thead><tr><th>变量</th><th>描述</th></tr></thead><tbody><tr><td>BW_DOMAIN</td><td>将 <code>bitwarden.yourdomain.com</code> 替换为用于访问 Bitwarden 所使用域名。</td></tr><tr><td>BW_DB_PROVIDER</td><td>您将用于 Bitwarden 服务器的数据库提供程序。可用选项包括 <code>sqlserver</code>、<code>postgresql</code> 或 <code>mysql</code>/<code>mariadb</code>。</td></tr><tr><td>BW_DB_SERVER</td><td>运行数据库的服务器的名称。</td></tr><tr><td>BW_DB_DATABASE</td><td>您的 Bitwarden 数据库的名称。</td></tr><tr><td>BW_DB_USERNAME</td><td>用于访问 Bitwarden 数据库的用户名。</td></tr><tr><td>BW_DB_PASSWORD</td><td>用于访问 Bitwarden 数据库的密码。</td></tr><tr><td>BW_DB_FILE</td><td>仅 <code>sqlite</code> 需要，如果您想指定数据库文件的路径。如果不指定，<code>sqlite</code> 会自动在 <code>/etc/bitwarden</code> 卷下创建 <code>vault.db</code> 文件。</td></tr><tr><td>BW_INSTALLATION_ID</td><td>从 <a href="https://bitwarden.com/host/">https://bitwarden.com/host/</a> 生成的有效安装 ID。</td></tr><tr><td>BW_INSTALLATION_KEY</td><td>从 <a href="https://bitwarden.com/host/">https://bitwarden.com/host/</a> 生成的有效安装密钥。</td></tr></tbody></table>
 
 ### 数据库示例 <a href="#database-examples" id="database-examples"></a>
 
@@ -188,7 +178,7 @@ volumes:
 
 * 日志和 Bitwarden 数据的映射卷
 * 映射端口
-* 配置数据库镜像<mark style="color:red;">**ª**</mark>
+* 配置数据库镜像 <mark style="color:red;">**ª**</mark>
 
 <mark style="color:red;">**ª**</mark> - 仅在 `docker-compose.yml` 中设置数据库，如上例所示，如果您想**创建一个新的数据库服务器**以与 Bitwarden 一起使用。用于 MySQL、MSSQL 和 PostgreSQL 的示例配置包含在我们的[示例文件](https://github.com/bitwarden/server/blob/master/docker-unified/docker-compose.yml)中。
 
@@ -214,7 +204,7 @@ docker ps
 
 {% tabs %}
 {% tab title="Docker run" %}
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您要重新启动而不是更新服务器，例如在更改环境变量后，请跳过要求您拉取最新 Bitwarden Lite 映像的步骤。
 {% endhint %}
 
@@ -246,7 +236,7 @@ docker run -d --name bitwarden -v /$(pwd)/bwdata/:/etc/bitwarden -p 80:8080 --en
 {% endtab %}
 
 {% tab title="Docker Compose" %}
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 如果您要重新启动而不是更新服务器，例如在更改环境变量后，请跳过要求您拉取最新 Bitwarden Lite 映像的步骤。
 {% endhint %}
 
@@ -276,7 +266,7 @@ docker compose up -d
 
 默认情况下，Bitwarden Lite 可以在停用某些可用服务的情况下运行。这些服务以及许多其他服务器特性可以选择使用您的 `settings.env` 文件或 `--env` 标志来激活和自定义：
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 每当更改环境变量时，您都需要重新启动服务器才能使更改生效。
 {% endhint %}
 
@@ -284,33 +274,13 @@ docker compose up -d
 
 可以使用以下变量激活或停用附加服务：
 
-| 变量                          | 描述                                                                                                                                                        |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BW\_ENABLE\_ADMIN           | **请勿禁用此服务**。在[此处](../../system-administrator-portal.md)了解有关管理面板功能的更多信息。默认为 `true`。                                                                        |
-| BW\_ENABLE\_API             | **请勿禁用此服务**。默认为 `true`。                                                                                                                                   |
-| BW\_ENABLE\_EVENTS          | 为团队和企业事件监控启用或禁用 Bitwarden 事件日志。默认为 `false`。                                                                                                               |
-| BW\_ENABLE\_ICONS           | 启用或禁用登录项目 URI 设置的 Bitwarden 品牌图标。在[此处](../../../security/data/website-icons.md)了解更多。默认为 `true`。                                                           |
-| BW\_ENABLE\_IDENTITY        | **请勿禁用此服务**。默认为 `true`。                                                                                                                                   |
-| BW\_ENABLE\_NOTIFICATIONS   | 当使用设备登录、移动端密码库同步等时，启用或禁用用于接收移动设备推送通知的通知服务。默认为 `true`。                                                                                                     |
-| BW\_ENABLE\_SCIM            | 为企业组织启用或禁用 SCIM。默认为 `false`。                                                                                                                              |
-| BW\_ENABLE\_SSO             | 为企业组织启用或禁用 SSO 服务。默认为 `false`。                                                                                                                            |
-| BW\_ICONS\_PROXY\_TO\_CLOUD | <p>启用此服务将代理图标服务请求以通过云服务进行操作，以降低系统内存负载。</p><p></p><p>如果选择使用此设置，则应将 <code>BW_ENABLE_ICONS</code> 设置为 <code>false</code> 以减少容器负载。默认为 <code>false</code>。</p> |
+<table data-search="false"><thead><tr><th>变量</th><th>描述</th></tr></thead><tbody><tr><td>BW_ENABLE_ADMIN</td><td><strong>请勿禁用此服务</strong>。在<a href="../../system-administrator-portal.md">此处</a>了解有关管理面板功能的更多信息。默认为 <code>true</code>。</td></tr><tr><td>BW_ENABLE_API</td><td><strong>请勿禁用此服务</strong>。默认为 <code>true</code>。</td></tr><tr><td>BW_ENABLE_EVENTS</td><td>为团队和企业事件监控启用或禁用 Bitwarden 事件日志。默认为 <code>false</code>。</td></tr><tr><td>BW_ENABLE_ICONS</td><td>启用或禁用登录项目 URI 设置的 Bitwarden 品牌图标。在<a href="../../../security/data/website-icons.md">此处</a>了解更多。默认为 <code>true</code>。</td></tr><tr><td>BW_ENABLE_IDENTITY</td><td><strong>请勿禁用此服务</strong>。默认为 <code>true</code>。</td></tr><tr><td>BW_ENABLE_NOTIFICATIONS</td><td>当使用设备登录、移动端密码库同步等时，启用或禁用用于接收移动设备推送通知的通知服务。默认为 <code>true</code>。</td></tr><tr><td>BW_ENABLE_SCIM</td><td>为企业组织启用或禁用 SCIM。默认为 <code>false</code>。</td></tr><tr><td>BW_ENABLE_SSO</td><td>为企业组织启用或禁用 SSO 服务。默认为 <code>false</code>。</td></tr><tr><td>BW_ICONS_PROXY_TO_CLOUD</td><td><p>启用此服务将代理图标服务请求以通过云服务进行操作，以降低系统内存负载。</p><p></p><p>如果选择使用此设置，则应将 <code>BW_ENABLE_ICONS</code> 设置为 <code>false</code> 以减少容器负载。默认为 <code>false</code>。</p></td></tr></tbody></table>
 
 ### 证书 <a href="#certificates" id="certificates"></a>
 
 使用这些变量来更改证书设置：
 
-| 变量                  | 描述                                                                                                                                                                         |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BW\_ENABLE\_SSL     | <p>使用 SSL/TLS。<code>true</code>/<code>false</code>。默认为 <code>false</code>。</p><p></p><p>Bitwarden 需要 SSL 才能正常运行。如果您没有在 Bitwarden 容器中配置 SSL，您应该在 Bitwarden 前面使用 SSL 代理。</p> |
-| BW\_SSL\_CERT       | SSL 证书文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.crt`。 如果您希望使用现有证书，在[此处](../configuration-options/certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。      |
-| BW\_SSL\_KEY        | SSL 密钥文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.key`。 如果您希望使用现有证书，在[此处](../configuration-options/certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。      |
-| BW\_ENABLE\_SSL\_CA | 使用具有证书颁发机构 (CA) 支持服务 的 SSL。`true`/`false`。默认为 `false`。                                                                                                                     |
-| BW\_SSL\_CA\_CERT   | SSL CA 证书的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ca.crt`。                                                                                                                |
-| BW\_ENABLE\_SSL\_DH | 使用具有Diffie-Hellman 密钥交换的 SSL。`true`/`false`。默认为 `false`。                                                                                                                   |
-| BW\_SSL\_DH\_CERT   | Diffie-Hellman 参数文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `dh.pem`。                                                                                                      |
-| BW\_SSL\_PROTOCOLS  | NGINX 使用的 SSL 版本。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server_Side_TLS)。                                                                                         |
-| BW\_SSL\_CIPHERS    | NGINX 使用的 SSL 密码套件。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server_Side_TLS)。                                                                                       |
+<table data-search="false"><thead><tr><th>变量</th><th>描述</th></tr></thead><tbody><tr><td>BW_ENABLE_SSL</td><td><p>使用 SSL/TLS。<code>true</code>/<code>false</code>。默认为 <code>false</code>。</p><p></p><p>Bitwarden 需要 SSL 才能正常运行。如果您没有在 Bitwarden 容器中配置 SSL，您应该在 Bitwarden 前面使用 SSL 代理。</p></td></tr><tr><td>BW_SSL_CERT</td><td>SSL 证书文件的名称。该文件必须位于容器内的 <code>/etc/bitwarden</code> 目录中。默认为 <code>ssl.crt</code>。 如果您希望使用现有证书，在<a href="../configuration-options/certificate-options.md#use-an-existing-ssl-certificate">此处</a>了解更多信息。</td></tr><tr><td>BW_SSL_KEY</td><td>SSL 密钥文件的名称。该文件必须位于容器内的 <code>/etc/bitwarden</code> 目录中。默认为 <code>ssl.key</code>。 如果您希望使用现有证书，在<a href="../configuration-options/certificate-options.md#use-an-existing-ssl-certificate">此处</a>了解更多信息。</td></tr><tr><td>BW_ENABLE_SSL_CA</td><td>使用具有证书颁发机构 (CA) 支持服务 的 SSL。<code>true</code>/<code>false</code>。默认为 <code>false</code>。</td></tr><tr><td>BW_SSL_CA_CERT</td><td>SSL CA 证书的名称。该文件必须位于容器内的 <code>/etc/bitwarden</code> 目录中。默认为 <code>ca.crt</code>。</td></tr><tr><td>BW_ENABLE_SSL_DH</td><td>使用具有Diffie-Hellman 密钥交换的 SSL。<code>true</code>/<code>false</code>。默认为 <code>false</code>。</td></tr><tr><td>BW_SSL_DH_CERT</td><td>Diffie-Hellman 参数文件的名称。该文件必须位于容器内的 <code>/etc/bitwarden</code> 目录中。默认为 <code>dh.pem</code>。</td></tr><tr><td>BW_SSL_PROTOCOLS</td><td>NGINX 使用的 SSL 版本。建议默认留空。<a href="https://wiki.mozilla.org/Security/Server_Side_TLS">了解更多</a>。</td></tr><tr><td>BW_SSL_CIPHERS</td><td>NGINX 使用的 SSL 密码套件。建议默认留空。<a href="https://wiki.mozilla.org/Security/Server_Side_TLS">了解更多</a>。</td></tr></tbody></table>
 
 {% hint style="info" %}
 如果您使用的是现有的 SSL 证书，则必须在 `settings.env` 中启用相应的 SSL 选项。SSL 文件必须存储在 `/etc/bitwarden` 中，可以在 `docker-compose.yml` 文件中引用。这些文件必须与 `settings.env` 中配置的名称一致。

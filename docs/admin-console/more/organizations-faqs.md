@@ -1,6 +1,6 @@
 # 组织 FAQ
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/org-faqs/)
 {% endhint %}
 
@@ -48,13 +48,13 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
-2、导航到 **⚙️设置** → **组织信息**界面。
+2、导航到 <i class="fa-gear-complex">:gear-complex:</i>**设置** → **组织信息**界面。
 
 3、编辑**组织名称**字段，然后选择**保存**按钮。
 
 **如果您是自托管**，您还需要：
 
-1、导航到 **⚙️计费 → 订阅**页面。
+1、导航到 <i class="fa-gear-complex">:gear-complex:</i>**计费 → 订阅**页面。
 
 2、选择**下载许可证**按钮来下载更新了组织名称的许可证。
 
@@ -70,7 +70,7 @@
 
 ### 问：如何退出组织？ <a href="#q-how-do-i-leave-an-organization" id="q-how-do-i-leave-an-organization"></a>
 
-**答：**&#x8981;退出组织，请使用网页 App，选择您要退出的组织的 **≡**&#x9009;项菜单。从下拉菜单中选择 **→退出**：
+**答：**&#x8981;退出组织，请使用网页 App，选择您要退出的组织的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单。从下拉菜单中选择 <i class="fa-arrow-right-from-bracket">:arrow-right-from-bracket:</i>**退出**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2MP5ZWZbCJe6ArraaEMku9/eda75c81ab46706bd8ef373a395bd78b/2025-04-01_14-59-09.png?w=1094&#x26;fm=avif" alt=""><figcaption><p>退出组织</p></figcaption></figure></div>
 
@@ -80,8 +80,8 @@
 
 **答：**&#x8981;取消共享一个项目：
 
-1. 通过使用 **≡**&#x9009;项菜单选择**克隆**，将项目克隆回您的个人密码库。此操作可在 Admin Console 中完成，或者如果您是所有者、管理员或对项目所在集合拥有「管理集合」访问权限，也可以从您的密码库视图中完成。
-2. 从 **≡**&#x9009;项菜单中选择**删除**，以从组织密码库中删除该项目。
+1. 通过使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单选择**克隆**，将项目克隆回您的个人密码库。此操作可在 Admin Console 中完成，或者如果您是所有者、管理员或对项目所在集合拥有「管理集合」访问权限，也可以从您的密码库视图中完成。
+2. 从 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单中选择**删除**，以从组织密码库中删除该项目。
 
 或者，您也可以通过将项目移动到具有更高访问控制限制的其他集合来取消共享项目。
 
