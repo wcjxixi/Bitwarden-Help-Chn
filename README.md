@@ -10,7 +10,7 @@
 
 致谢 [Google Translate](https://translate.google.com/) 以及 [DeepL](https://www.deepl.com/)！
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 个人能力有限，具体请以官方 [Bitwarden Help Center](https://bitwarden.com/help/) 页面为准。使用本内容所产生的一切后果，与 @wcjxixi 无关。Use at your own risk！！！
 {% endhint %}
 
@@ -26,31 +26,13 @@ Bitwarden 是一个开源的密码管理系统，您可以使用 Bitwarden 官�
 
 需要使用高级功能（如 TOTP、文件附件等），可以选择个人账户的高级版，或者使用组织账户。
 
-{% hint style="success" %}
-从 [2025.12.2](docs/release-notes.md#id-2025.12.2) 开始，高级订阅和付费组织的初始存储空间由 1 GB 提高为 5 GB。
+{% hint style="success" icon="lightbulb" %}
+从 [2025.12.2](docs/release-notes.md#id-2025.12.2) 开始，高级版订阅和付费版组织的初始存储空间由 1 GB 提高为 5 GB。
 {% endhint %}
 
 ## 个人账户比较 <a href="#compare-individual-plans" id="compare-individual-plans"></a>
 
-| 功能             | 免费版                             | 高级版                                                                        |
-| -------------- | ------------------------------- | -------------------------------------------------------------------------- |
-| 价格             | 免费                              | $19.80/年<sup><mark style="color:red;">**a**<mark style="color:red;"></sup> |
-| 安装所有平台程序       | 支持                              | 支持                                                                         |
-| 无限制同步所有设备      | 支持                              | 支持                                                                         |
-| 项目数量           | 无限制                             | 无限制                                                                        |
-| 文件夹数量          | 无限制                             | 无限制                                                                        |
-| 密码生成器          | 支持                              | 支持                                                                         |
-| 初始存储空间         | 无                               | 5 GB                                                                       |
-| 附加存储           | 不支持                             | $4.00/GB/年                                                                 |
-| 两步登录类型         | 验证器 App + 电子邮箱 + FIDO2 WebAuthn | 免费版 + YubiKey + Duo                                                        |
-| 内置 TOTP 功能     | 不支持                             | 支持                                                                         |
-| Bitwarden Send | 文本                              | 文本 + 文件                                                                    |
-| 紧急访问           | 不支持                             | 支持                                                                         |
-| 数据泄漏报告         | 支持                              | 支持                                                                         |
-| 健康报告           | 不支持                             | 支持                                                                         |
-| 本地托管           | 支持                              | 支持                                                                         |
-| 免费试用           | -                               | 不支持                                                                        |
-| 付款周期           | -                               | 年付                                                                         |
+<table data-search="true"><thead><tr><th>功能</th><th>免费版</th><th>高级版</th></tr></thead><tbody><tr><td>价格</td><td>免费</td><td>$19.80/年 <sup><mark style="color:red;"><strong>a</strong></mark></sup></td></tr><tr><td>安装所有平台程序</td><td>支持</td><td>支持</td></tr><tr><td>无限制同步所有设备</td><td>支持</td><td>支持</td></tr><tr><td>项目数量</td><td>无限制</td><td>无限制</td></tr><tr><td>文件夹数量</td><td>无限制</td><td>无限制</td></tr><tr><td>密码生成器</td><td>支持</td><td>支持</td></tr><tr><td>初始存储空间</td><td>无</td><td>5 GB</td></tr><tr><td>附加存储</td><td>不支持</td><td>$4.00/GB/年</td></tr><tr><td>两步登录类型</td><td>验证器 App + 电子邮箱 + FIDO2 WebAuthn</td><td>免费版 + YubiKey + Duo</td></tr><tr><td>内置 TOTP 功能</td><td>不支持</td><td>支持</td></tr><tr><td>Bitwarden Send</td><td>文本</td><td>文本 + 文件</td></tr><tr><td>紧急访问</td><td>不支持</td><td>支持</td></tr><tr><td>数据泄漏报告</td><td>支持</td><td>支持</td></tr><tr><td>健康报告</td><td>不支持</td><td>支持</td></tr><tr><td>本地托管</td><td>支持</td><td>支持</td></tr><tr><td>免费试用</td><td>-</td><td>不支持</td></tr><tr><td>付款周期</td><td>-</td><td>年付</td></tr></tbody></table>
 
 <sup><mark style="color:red;">**a**<mark style="color:red;"></sup> - 2023 年 11 月 06 日提价为 $19.80/年，老用户续费价格维持为 $10.00/年。2026 年起，老用户续费价格提价为 $19.80/年（有一次性的 25% 忠诚度折扣，即 $14.85/年）。
 
@@ -60,49 +42,11 @@ Bitwarden 还提供组织账户（用于密码共享等），分别为针对个�
 
 {% tabs %}
 {% tab title="2020-08-31 之前" %}
-| 功能      | 免费版 | 家庭版        | 团队版        | 企业版        |
-| ------- | --- | ---------- | ---------- | ---------- |
-| 初始价格    | 免费  | $1.00/月    | $5.00/用户/月 | $3.00/用户/月 |
-| 初始用户数   | 2   | 5          | 5          | 1          |
-| 附加用户    | 不支持 | 不支持        | $2.00/用户/月 | $3.00/用户/月 |
-| 最大用户数   | 2   | 5          | 无限制        | 无限制        |
-| 共享条目数   | 无限制 | 无限制        | 无限制        | 无限制        |
-| 集合数量    | 2   | 无限制        | 无限制        | 无限制        |
-| 初始存储空间  | 无   | 1 GB       | 1 GB       | 1 GB       |
-| 附加存储    | 不支持 | $0.33/GB/月 | $0.33/GB/月 | $0.33/GB/月 |
-| 群组控制    | 不支持 | 不支持        | 不支持        | 支持         |
-| 企业策略    | 不支持 | 不支持        | 不支持        | 支持         |
-| 审核日志    | 不支持 | 不支持        | 不支持        | 支持         |
-| 目录同步    | 不支持 | 不支持        | 不支持        | 支持         |
-| 高级功能    | 无   | 无          | 无          | 有          |
-| 高级功能购买  | 不支持 | $3.33/月    | 不支持        | -          |
-| 本地托管    | 不支持 | 支持         | 不支持        | 支持         |
-| 7 天免费试用 | -   | 支持         | 支持         | 支持         |
-| 付款周期    | -   | 年付         | 年付/月付      | 年付/月付      |
+<table data-search="true"><thead><tr><th>功能</th><th>免费版</th><th>家庭版</th><th>团队版</th><th>企业版</th></tr></thead><tbody><tr><td>初始价格</td><td>免费</td><td>$1.00/月</td><td>$5.00/用户/月</td><td>$3.00/用户/月</td></tr><tr><td>初始用户数</td><td>2</td><td>5</td><td>5</td><td>1</td></tr><tr><td>附加用户</td><td>不支持</td><td>不支持</td><td>$2.00/用户/月</td><td>$3.00/用户/月</td></tr><tr><td>最大用户数</td><td>2</td><td>5</td><td>无限制</td><td>无限制</td></tr><tr><td>共享条目数</td><td>无限制</td><td>无限制</td><td>无限制</td><td>无限制</td></tr><tr><td>集合数量</td><td>2</td><td>无限制</td><td>无限制</td><td>无限制</td></tr><tr><td>初始存储空间</td><td>无</td><td>1 GB</td><td>1 GB</td><td>1 GB</td></tr><tr><td>附加存储</td><td>不支持</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td></tr><tr><td>群组控制</td><td>不支持</td><td>不支持</td><td>不支持</td><td>支持</td></tr><tr><td>企业策略</td><td>不支持</td><td>不支持</td><td>不支持</td><td>支持</td></tr><tr><td>审核日志</td><td>不支持</td><td>不支持</td><td>不支持</td><td>支持</td></tr><tr><td>目录同步</td><td>不支持</td><td>不支持</td><td>不支持</td><td>支持</td></tr><tr><td>高级功能</td><td>无</td><td>无</td><td>无</td><td>有</td></tr><tr><td>高级功能购买</td><td>不支持</td><td>$3.33/月</td><td>不支持</td><td>-</td></tr><tr><td>本地托管</td><td>不支持</td><td>支持</td><td>不支持</td><td>支持</td></tr><tr><td>7 天免费试用</td><td>-</td><td>支持</td><td>支持</td><td>支持</td></tr><tr><td>付款周期</td><td>-</td><td>年付</td><td>年付/月付</td><td>年付/月付</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="2020-08-31 之后" %}
-| 功能             | 免费版 | 家庭版        | 团队版                                                                          | 企业版                                                                          |
-| -------------- | --- | ---------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| 初始价格           | 免费  | $3.99/月    | $4.00/用户/月<sup><mark style="color:red;">**a**<mark style="color:red;"></sup> | $6.00/用户/月<sup><mark style="color:red;">**a**<mark style="color:red;"></sup> |
-| 初始用户数          | 2   | 6          | 1                                                                            | 1                                                                            |
-| 附加用户           | 不支持 | 不支持        | $4.00/用户/月<sup><mark style="color:red;">**a**<mark style="color:red;"></sup> | $6.00/用户/月<sup><mark style="color:red;">**a**<mark style="color:red;"></sup> |
-| 最大用户数          | 2   | 6          | 无限制                                                                          | 无限制                                                                          |
-| 共享条目数          | 无限制 | 无限制        | 无限制                                                                          | 无限制                                                                          |
-| 集合数量           | 2   | 无限制        | 无限制                                                                          | 无限制                                                                          |
-| 初始存储空间         | 无   | 5 GB       | 5 GB                                                                         | 5 GB                                                                         |
-| 附加存储           | 不支持 | $0.33/GB/月 | $0.33/GB/月                                                                   | $0.33/GB/月                                                                   |
-| Bitwarden Send | 文本  | 文本 + 文件    | 文本 + 文件                                                                      | 文本 + 文件                                                                      |
-| 群组控制           | 不支持 | 不支持        | 支持                                                                           | 支持                                                                           |
-| 企业策略           | 不支持 | 不支持        | 不支持                                                                          | 支持                                                                           |
-| 审核日志           | 不支持 | 不支持        | 支持                                                                           | 支持                                                                           |
-| 目录同步           | 不支持 | 不支持        | 支持                                                                           | 支持                                                                           |
-| SSO 登录         | 不支持 | 不支持        | 不支持                                                                          | 支持                                                                           |
-| 高级功能           | 无   | 有          | 有                                                                            | 有                                                                            |
-| 高级功能购买         | 不支持 | -          | -                                                                            | -                                                                            |
-| 本地托管           | 不支持 | 支持         | 不支持                                                                          | 支持                                                                           |
-| 7 天免费试用        | -   | 支持         | 支持                                                                           | 支持                                                                           |
-| 付款周期           | -   | 年付         | 年付/月付                                                                        | 年付/月付                                                                        |
+<table data-search="true"><thead><tr><th>功能</th><th>免费版</th><th>家庭版</th><th>团队版</th><th>企业版</th></tr></thead><tbody><tr><td>初始价格</td><td>免费</td><td>$3.99/月</td><td>$4.00/用户/月<sup><mark style="color:red;"><strong>a</strong></mark></sup></td><td>$6.00/用户/月<sup><mark style="color:red;"><strong>a</strong></mark></sup></td></tr><tr><td>初始用户数</td><td>2</td><td>6</td><td>1</td><td>1</td></tr><tr><td>附加用户</td><td>不支持</td><td>不支持</td><td>$4.00/用户/月<sup><mark style="color:red;"><strong>a</strong></mark></sup></td><td>$6.00/用户/月<sup><mark style="color:red;"><strong>a</strong></mark></sup></td></tr><tr><td>最大用户数</td><td>2</td><td>6</td><td>无限制</td><td>无限制</td></tr><tr><td>共享条目数</td><td>无限制</td><td>无限制</td><td>无限制</td><td>无限制</td></tr><tr><td>集合数量</td><td>2</td><td>无限制</td><td>无限制</td><td>无限制</td></tr><tr><td>初始存储空间</td><td>无</td><td>5 GB</td><td>5 GB</td><td>5 GB</td></tr><tr><td>附加存储</td><td>不支持</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td><td>$0.33/GB/月</td></tr><tr><td>Bitwarden Send</td><td>文本</td><td>文本 + 文件</td><td>文本 + 文件</td><td>文本 + 文件</td></tr><tr><td>群组控制</td><td>不支持</td><td>不支持</td><td>支持</td><td>支持</td></tr><tr><td>企业策略</td><td>不支持</td><td>不支持</td><td>不支持</td><td>支持</td></tr><tr><td>审核日志</td><td>不支持</td><td>不支持</td><td>支持</td><td>支持</td></tr><tr><td>目录同步</td><td>不支持</td><td>不支持</td><td>支持</td><td>支持</td></tr><tr><td>SSO 登录</td><td>不支持</td><td>不支持</td><td>不支持</td><td>支持</td></tr><tr><td>高级功能</td><td>无</td><td>有</td><td>有</td><td>有</td></tr><tr><td>高级功能购买</td><td>不支持</td><td>-</td><td>-</td><td>-</td></tr><tr><td>本地托管</td><td>不支持</td><td>支持</td><td>不支持</td><td>支持</td></tr><tr><td>7 天免费试用</td><td>-</td><td>支持</td><td>支持</td><td>支持</td></tr><tr><td>付款周期</td><td>-</td><td>年付</td><td>年付/月付</td><td>年付/月付</td></tr></tbody></table>
 
 <sup><mark style="color:red;">**a**<mark style="color:red;"></sup> - 按年付款折算的价格（按月付款折算则分别为团队版 $5.00/用户/月、企业版 $7.00/用户/月）
 {% endtab %}
