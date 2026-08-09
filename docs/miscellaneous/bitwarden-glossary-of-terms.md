@@ -42,19 +42,8 @@
 
 ## Bitwarden Secrets Manager <a href="#bitwarden-secrets-manager" id="bitwarden-secrets-manager"></a>
 
-| 术语   | 定义                                                                                            |
-| ---- | --------------------------------------------------------------------------------------------- |
-| 访问令牌 | 一种帮助服务账户访问和解密存储在密码库中的机密的密钥。[了解更多](../secrets-manager/your-secrets/access-tokens.md)。          |
-| 名称   | 用户定义的特定机密的标签。                                                                                 |
-| 工程   | 密钥集合的逻辑分组，以便您的 DevOps 和网络安全团队进行管理访问。[了解更多](../secrets-manager/your-secrets/projects.md)。      |
-| 机密   | 企业需要安全存储的敏感键值对（如 API 密钥），绝不能以明码暴露或通过未加密渠道传输。                                                  |
-| 服务账户 | 非人类机器用户，如应用程序或部署管道，它们需要以编程方式访问一组特定的机密。                                                        |
-| 值    | 用户定义的存储秘密字段，用于软件或机器流程。这是由 Bitwarden Secrets Manager 管理的敏感信息，可以包括 API 密钥、应用程序配置、数据库连接字符串和环境变量。 |
+<table data-search="true"><thead><tr><th>术语</th><th>定义</th></tr></thead><tbody><tr><td>访问令牌</td><td>一种帮助服务账户访问和解密存储在密码库中的机密的密钥。<a href="../secrets-manager/your-secrets/access-tokens.md">了解更多</a>。</td></tr><tr><td>名称</td><td>用户定义的特定机密的标签。</td></tr><tr><td>工程</td><td>密钥集合的逻辑分组，以便您的 DevOps 和网络安全团队进行管理访问。<a href="../secrets-manager/your-secrets/projects.md">了解更多</a>。</td></tr><tr><td>机密</td><td>企业需要安全存储的敏感键值对（如 API 密钥），绝不能以明码暴露或通过未加密渠道传输。</td></tr><tr><td>服务账户</td><td>非人类机器用户，如应用程序或部署管道，它们需要以编程方式访问一组特定的机密。</td></tr><tr><td>值</td><td>用户定义的存储秘密字段，用于软件或机器流程。这是由 Bitwarden Secrets Manager 管理的敏感信息，可以包括 API 密钥、应用程序配置、数据库连接字符串和环境变量。</td></tr></tbody></table>
 
 ## Bitwarden Passwordless.dev <a href="#bitwarden-passwordless.dev" id="bitwarden-passwordless.dev"></a>
 
-| 术语           | 定义                                                                                                                                                                                                                                                                                                        |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| FIDO         | <p>FIDO 是快速在线身份 (Fast Identity Online) 的缩写。它代表一个开发安全、开放的无密码身份验证标准的联盟，这些标准可以防止钓鱼攻击。</p><p></p><p>FIDO 联盟开发的 FIDO 协议包括：</p><p>UAF：通用身份验证框架</p><p>U2F：通用第二因素</p><p>FIDO2：一种新的无密码认证协议，包含核心规范 WebAuthn（客户端 API）和 CTAP（验证器 API）。<a href="https://docs.passwordless.dev/guide/concepts.html#fido2">了解更多</a>。</p> |
-| 通行密钥         | 通行密钥 – 从 FIDO2 标准中派生出的凭证，用于用户注册的每个网站 – 允许用户创建和存储加密令牌，而不是传统的密码。今天，密钥凭证用于使用预先认证的设备特定令牌登录应用程序或网站。未来，此过程可能用于共享或可转移的加密令牌。[了解更多](https://docs.passwordless.dev/guide/concepts.html#passkeys)。                                                                                                                   |
-| Passwordless | Passwordless 是用于描述各种不依赖密码的认证技术的总称，包括：用户拥有的（安全密钥、令牌或设备）、用户自身的（生物识别），以及通行密钥。                                                                                                                                                                                                                                |
+<table data-search="true"><thead><tr><th>术语</th><th>定义</th></tr></thead><tbody><tr><td>FIDO</td><td><p>FIDO 是快速在线身份 (Fast Identity Online) 的缩写。它代表一个开发安全、开放的无密码身份验证标准的联盟，这些标准可以防止钓鱼攻击。</p><p></p><p>FIDO 联盟开发的 FIDO 协议包括：</p><p>UAF：通用身份验证框架</p><p>U2F：通用第二因素</p><p>FIDO2：一种新的无密码认证协议，包含核心规范 WebAuthn（客户端 API）和 CTAP（验证器 API）。<a href="https://docs.passwordless.dev/guide/concepts.html#fido2">了解更多</a>。</p></td></tr><tr><td>通行密钥</td><td>通行密钥 – 从 FIDO2 标准中派生出的凭证，用于用户注册的每个网站 – 允许用户创建和存储加密令牌，而不是传统的密码。今天，密钥凭证用于使用预先认证的设备特定令牌登录应用程序或网站。未来，此过程可能用于共享或可转移的加密令牌。<a href="https://docs.passwordless.dev/guide/concepts.html#passkeys">了解更多</a>。</td></tr><tr><td>Passwordless</td><td>Passwordless 是用于描述各种不依赖密码的认证技术的总称，包括：用户拥有的（安全密钥、令牌或设备）、用户自身的（生物识别），以及通行密钥。</td></tr></tbody></table>

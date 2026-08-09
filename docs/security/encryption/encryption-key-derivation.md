@@ -49,8 +49,8 @@ KDF 内存值高于 64 MiB 的 Argon2id 用户，每次启动 iOS 自动填充�
 
 更改 KDF 算法会重新加密受保护的对称密钥并更新身份验证哈希值，就像常规的主密码更改一样，但不会轮换[对称加密密钥](../bitwarden-security-whitepaper.md#rotating-the-account-encryption-key)，因此密码库数据不会被重新加密。了解更多有关[重新加密数据](encryption-key-rotation.md#how-to-rotate-your-encryption-key)的信息。
 
-{% hint style="warning" %}
-在对加密设置进行**任何**更改之前，建议您先[备份您的个人密码库数据](../../password-manager/import-and-export/export-vault-data.md)。
+{% hint style="info" %}
+在更改您的加密设置之前不需要备份密码库数据，但强烈建议定期备份。
 {% endhint %}
 
 要更新您的 KDF 算法：
@@ -73,11 +73,11 @@ KDF 内存值高于 64 MiB 的 Argon2id 用户，每次启动 iOS 自动填充�
 
 对于 **Argon2id**，默认设置为：
 
-* KDF 内存：64
-* KDF 迭代：3
+* KDF 内存：32
+* KDF 迭代：6
 * KDF 并行度：4
 
-### 低 KDF 迭代 <a href="#low-kdf-iterations" id="low-kdf-iterations"></a>
+### 低 PBKDF2 KDF 迭代 <a href="#low-pbkdf2-kdf-iterations" id="low-pbkdf2-kdf-iterations"></a>
 
 在 [2026.2.1 版本](../../release-notes.md#id-2026.2.1)中，Bitwarden 将 [PBKDF2](https://bitwarden.atlassian.net/jira/software/projects/DHCTW/issues/DHCTW-956?jql=project%20%3D%20%22DHCTW%22%20AND%20statusCategory%20%3D%20%22Done%22%20AND%20text%20~%20%22kdf%22%20ORDER%20BY%20created%20DESC\&referrer=agility) KDF 迭代的最小值增加到了默认的 600,000，以符合 OWASP 指南。这增强了密码库加密强度，以抵御配备日益强大设备的黑客攻击。
 

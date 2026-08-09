@@ -102,11 +102,6 @@
 
 * 应用程序或扩展被卸载。
 * 网页浏览器的内存被清除（仅限网页 App）。
-* ~~用户的加密密钥被轮换。~~
-
-{% hint style="info" %}
-~~只有拥有主密码的用户才能轮换其~~[~~账户加密密钥~~](../../../security/encryption/encryption-key-rotation.md)~~。~~[~~了解更多~~](../../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md#impact-on-master-passwords)~~。~~
-{% endhint %}
 
 ## 故障排除 <a href="#troubleshooting" id="troubleshooting"></a>
 

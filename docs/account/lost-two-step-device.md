@@ -10,10 +10,6 @@
 
 尝试以下选项，看看您是否可以重置两步登录方式或在创建新账户之前[导出您的密码库](../password-manager/import-and-export/export-vault-data.md)。
 
-{% hint style="info" %}
-[账户恢复](../admin-console/manage-members/account-recovery/about-account-recovery.md)不会绕过或停用双重身份验证。
-{% endhint %}
-
 ### 备用两步登录方式 <a href="#alternate-two-step-login-method" id="alternate-two-step-login-method"></a>
 
 如果您设置了多种两步登录方式，请尝试另一种。在登录界面上时，选择**使用其他两步登录方式**。

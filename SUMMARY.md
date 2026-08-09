@@ -13,7 +13,7 @@
   * [忘记主密码](docs/account/i-forgot-my-master-password.md)
   * [无法访问两步登录](docs/account/lost-two-step-device.md)
   * [登录 & 解锁](docs/account/log-in-and-unlock/README.md)
-    * [理解登录 & 解锁](docs/account/log-in-and-unlock/understand-log-in-vs-unlock.md)
+    * [理解登录与解锁](docs/account/log-in-and-unlock/understand-log-in-vs-unlock.md)
     * [自动注销或锁定](docs/account/log-in-and-unlock/vault-timeout-options.md)
     * [新设备登录保护](docs/account/log-in-and-unlock/new-device-protection.md)
     * [登录到多个账户](docs/account/log-in-and-unlock/account-switching.md)

@@ -6,7 +6,7 @@
 
 Bitwarden Cloud 可在全球范围内访问，在**美国** (US) 和**欧盟** (EU) 地区提供数据存储。
 
-{% hint style="info" %}
+{% hint style="success" icon="lightbulb" %}
 Bitwarden 的数据区域是相互独立的，您的账户或组织仅存在于其最初创建的区域，这意味着：
 
 * 如果您的账户是在 US 服务器上创建的，则无法登录 EU 服务器，反之亦然。尝试登录将导致系统识别为输入错误的主密码。
