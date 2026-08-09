@@ -17,7 +17,7 @@
 某些功能会随着时间的推移逐步向用户推出。采用这种方式推出的功能，可能会先向部分用户开放，随后再向其他用户开放。
 
 {% hint style="info" %}
-标有 **★星形图标**的是渐进式推出的功能。
+标有 <i class="fa-star">:star:</i>**星形图标**的是渐进式推出的功能。
 {% endhint %}
 
 ### GitHub 链接 <a href="#links-to-github" id="links-to-github"></a>
@@ -47,11 +47,11 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* **★密码库项目操作栏**：网页 App 和 Admin Console 中添加了新的批量操作栏。使用该操作栏，可以执行诸如[共享项目](password-manager/organization-members/sharing.md)到集合或[文件夹](password-manager/your-vault/vault-navigation/folders.md)、以及[归档](password-manager/your-vault/vault-items/vault-items.md#archive)密码库项目等操作。
-* **★从扩展保存和填充**：在浏览器扩展中，内嵌菜单现在可以更轻松地[同时保存和自动填充新凭据](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#shi-yong-nei-qian-zi-dong-tian-chong-chuang-jian-zhang-hu)。
+* <i class="fa-star">:star:</i>**密码库项目操作栏**：网页 App 和 Admin Console 中添加了新的批量操作栏。使用该操作栏，可以执行诸如[共享项目](password-manager/organization-members/sharing.md)到集合或[文件夹](password-manager/your-vault/vault-navigation/folders.md)、以及[归档](password-manager/your-vault/vault-items/vault-items.md#archive)密码库项目等操作。
+* <i class="fa-star">:star:</i>**从扩展保存和填充**：在浏览器扩展中，内嵌菜单现在可以更轻松地[同时保存和自动填充新凭据](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#shi-yong-nei-qian-zi-dong-tian-chong-chuang-jian-zhang-hu)。
 * **Android 支持 CXP**：使用 Android 10+，您可以在 Bitwarden 与任何支持 [FIDO 凭据交换协议](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)的 Android App 之间[直接导入](password-manager/import-and-export/import-data.md#yi-dong-duan)或[直接导出](password-manager/import-and-export/export-vault-data.md#yi-dong-duan)数据。
-* **★扩展安装过时提示将 Bitwarden 设置为默认**：安装浏览器扩展时，它现在将提示您[将 Bitwarden 设置为浏览器的默认密码管理器](password-manager/autofill/troubleshoot-autofill/disable-a-browsers-built-in-password-manager.md)。
-* **★Keeper 直接导入器**：使用[新的直接导入选项](password-manager/import-and-export/import-guides/import-from-keeper.md#import-directly-from-keeper)，无需下载导出文件，即可直接从 Keeper Password Manager 传输数据，。
+* <i class="fa-star">:star:</i>**扩展安装过时提示将 Bitwarden 设置为默认**：安装浏览器扩展时，它现在将提示您[将 Bitwarden 设置为浏览器的默认密码管理器](password-manager/autofill/troubleshoot-autofill/disable-a-browsers-built-in-password-manager.md)。
+* <i class="fa-star">:star:</i>**Keeper 直接导入器**：使用[新的直接导入选项](password-manager/import-and-export/import-guides/import-from-keeper.md#import-directly-from-keeper)，无需下载导出文件，即可直接从 Keeper Password Manager 传输数据，。
 * **KeePass KDBX 导入器**：您现在可以将受密码或密钥文件加密保护的 [KeePass Password Manager  KDBX 文件直接导入](password-manager/import-and-export/import-guides/cong-keepass-dao-ru.md) Bitwarden。此前，KeePass 数据只能使用未加密的 CSV 或 XML 文件导入。
 * **SSH 代理更新**：此次发布包含对 SSH 代理的可靠性和性能的更新。在以下文章中了解有关 SSH 代理的更多信息：
   * [关于 SSH](password-manager/developer-tools/ssh/about-ssh.md)：SSH 密钥的概念概述以及 SSH 代理的工作原理。
@@ -62,8 +62,8 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Admin Console
 
-* **★密码库横幅企业策略**：管理员现在可以在成员的密码库顶部显示[自定义横幅](admin-console/oversight-visibility/enterprise-policies.md#vault-banner)，例如服务公告或公司提醒事项。
-* **★Send 事件日志**：现在，创建、编辑、删除和访问 [Send](password-manager/bitwarden-send/about-send.md) 将在 Admin Console 中记录事件。
+* <i class="fa-star">:star:</i>**密码库横幅企业策略**：管理员现在可以在成员的密码库顶部显示[自定义横幅](admin-console/oversight-visibility/enterprise-policies.md#vault-banner)，例如服务公告或公司提醒事项。
+* <i class="fa-star">:star:</i>**Send 事件日志**：现在，创建、编辑、删除和访问 [Send](password-manager/bitwarden-send/about-send.md) 将在 Admin Console 中记录事件。
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 
@@ -81,16 +81,16 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* **★浏览器扩展的填充辅助**：激活[填充辅助](password-manager/autofill/more-autofill-options/fill-assist.md)功能，可在 Bitwarden 精选的、已知会经常导致自动填充问题的网站上提高自动填充的准确性。
+* <i class="fa-star">:star:</i>**浏览器扩展的填充辅助**：激活[填充辅助](password-manager/autofill/more-autofill-options/fill-assist.md)功能，可在 Bitwarden 精选的、已知会经常导致自动填充问题的网站上提高自动填充的准确性。
 * **Linux 上的生物识别简化**：设置 [Linux 上的生物识别](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md#linux)以解锁 Bitwarden 桌面 App 时，不再需要机密服务守护进程。
-* **★桌面 App 的设置 UI 更新**：桌面 App 的设置对话框已更新。了解更多有关[桌面 App](password-manager/getting-started/getting-started-desktop.md)。
+* <i class="fa-star">:star:</i>**桌面 App 的设置 UI 更新**：桌面 App 的设置对话框已更新。了解更多有关[桌面 App](password-manager/getting-started/getting-started-desktop.md)。
 * **Send 接收者限制**：当创建仅限[特定人员](password-manager/bitwarden-send/send-privacy.md#email-verified-recipients)的 Send 时，电子邮箱地址字段现在最多支持 2,500 个字符。
-* **★风险密码通知 UI 更新**：查看登录中，密码字段下方的[风险密码标签](password-manager/your-vault/security-tools/change-at-risk-passwords.md)仍然保留，但之前显示在视图顶部的横幅已被移除。当使用 Access Intelligence [请求密码更改](admin-console/oversight-visibility/access-intelligence.md#requesting-password-changes)时，密码库中显示的横幅没有更改。
+* <i class="fa-star">:star:</i>**风险密码通知 UI 更新**：查看登录中，密码字段下方的[风险密码标签](password-manager/your-vault/security-tools/change-at-risk-passwords.md)仍然保留，但之前显示在视图顶部的横幅已被移除。当使用 Access Intelligence [请求密码更改](admin-console/oversight-visibility/access-intelligence.md#requesting-password-changes)时，密码库中显示的横幅没有更改。
 * **浏览器扩展中的密码库同步 UI 更新**：[同步](password-manager/your-vault/syncing-your-vault.md)过程中，**立即同步密码库**文本现在将显示为灰色，并同步完成后将恢复为可点击状态。
 
 ### Admin Console
 
-* **★现在将对已接受的成员强制实施组织策略**：用户接受组织邀请后，所有已配置的[组织策略](admin-console/oversight-visibility/enterprise-policies.md)即应用到他们的账户。
+* <i class="fa-star">:star:</i>**现在将对已接受的成员强制实施组织策略**：用户接受组织邀请后，所有已配置的[组织策略](admin-console/oversight-visibility/enterprise-policies.md)即应用到他们的账户。
 
 ## 2026.6.0
 
@@ -98,7 +98,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* **★Android 现已支持设备列表**：Android 现已支持[设备列表](password-manager/your-vault/security-tools/manage-devices.md)功能，用于显示您账户曾经登录过的设备。
+* <i class="fa-star">:star:</i>**Android 现已支持设备列表**：Android 现已支持[设备列表](password-manager/your-vault/security-tools/manage-devices.md)功能，用于显示您账户曾经登录过的设备。
 
 ### Directory Connector
 
@@ -114,15 +114,15 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* **★桌面端现已支持设备列表**：除网页 App 和浏览器扩展外，桌面 App 现已支持[设备列表](password-manager/your-vault/security-tools/manage-devices.md)功能，用于显示您账户曾经登录过的设备。
+* <i class="fa-star">:star:</i>**桌面端现已支持设备列表**：除网页 App 和浏览器扩展外，桌面 App 现已支持[设备列表](password-manager/your-vault/security-tools/manage-devices.md)功能，用于显示您账户曾经登录过的设备。
 * **Flatpak 和 Snap 现已支持生物识别集成**：Flatpak 和 Snap 发行版现已支持与 Bitwarden 桌面 App 集成使用的[浏览器扩展的生物识别解锁](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)。
-* **★网页 App 快速操作**：在网页 App 中将鼠标悬停于某个项目上，即可通过新增的快速操作按钮打开网站或复制密码库数据。
+* <i class="fa-star">:star:</i>**网页 App 快速操作**：在网页 App 中将鼠标悬停于某个项目上，即可通过新增的快速操作按钮打开网站或复制密码库数据。
 * &#x20;**Send UI 更新**：在浏览器扩展和网页 App 中选择 [Send](password-manager/bitwarden-send/about-send.md) 项目时，现在将显示「查看」界面，而不是直接跳转至「编辑」界面。
 
 ### Admin Console
 
-* **★Blumira SIEM 集成**：团队版和企业版组织现在可以与 [Blumira 集成](admin-console/oversight-visibility/siem-integrations/blumira-siem.md)，以实现安全信息与事件管理 (SIEM)。
-* **★扩展了账户恢复选项**：账户恢复功能现已支持已撤销的成员，并可[重置两步登录方式](admin-console/manage-members/account-recovery/recover-a-member-account.md)。
+* <i class="fa-star">:star:</i>**Blumira SIEM 集成**：团队版和企业版组织现在可以与 [Blumira 集成](admin-console/oversight-visibility/siem-integrations/blumira-siem.md)，以实现安全信息与事件管理 (SIEM)。
+* <i class="fa-star">:star:</i>**扩展了账户恢复选项**：账户恢复功能现已支持已撤销的成员，并可[重置两步登录方式](admin-console/manage-members/account-recovery/recover-a-member-account.md)。
 * **成员被撤销原因**：在**成员** → **已撤销**页面上，每位成员旁边新增了一个工具提示，说明了成员从您的组织中[被撤销](admin-console/manage-members/revoke-remove/temporarily-revoke-access.md)的原因。
 * **更新了事件日志**：当附件被添加到组织拥有的项目时，Password Manager 现在会使用现有的[为项目创建附件](admin-console/oversight-visibility/event-logging/event-logs.md#item-events)事件进行记录。
 
@@ -142,9 +142,9 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* **★在扩展和桌面端更改主密码**：您现在可以在浏览器扩展和桌面 App 中[更改您的主密码](account/master-password.md#change-your-master-password)。为了支持未来的改进，此前允许通过命令行界面 (CLI) 更改主密码的工作流已被移除。
-* **★桌面端 UI 更新**：桌面 App UI 已更新，视觉效果得到优化。
-* **★默认点击以自动填充**：在浏览器扩展程序中，您现在只需点击**自动填充建议**中的任意项目，即可插入凭据。此更新移除了**填充**按钮以及**点击自动填充建议中的项目以填充**设置，使界面更加简洁。
+* <i class="fa-star">:star:</i>**在扩展和桌面端更改主密码**：您现在可以在浏览器扩展和桌面 App 中[更改您的主密码](account/master-password.md#change-your-master-password)。为了支持未来的改进，此前允许通过命令行界面 (CLI) 更改主密码的工作流已被移除。
+* <i class="fa-star">:star:</i>**桌面端 UI 更新**：桌面 App UI 已更新，视觉效果得到优化。
+* <i class="fa-star">:star:</i>**默认点击以自动填充**：在浏览器扩展程序中，您现在只需点击**自动填充建议**中的任意项目，即可插入凭据。此更新移除了**填充**按钮以及**点击自动填充建议中的项目以填充**设置，使界面更加简洁。
 * **更新了清除剪贴板的默认设置**：浏览器扩展的[清除剪贴板设置](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#setup-auto-fill)现默认为五分钟，这是一项额外的预防措施，有助于保障您的凭据安全。
 * **iOS 现已支持 mTLS**：iOS 和 Android 移动 App 现在支持为要求客户端身份验证的自托管服务器上传 mTLS 证书。在[设置服务器 URL 时](self-hosting/connect-clients/connect-individual-clients.md#yi-dong-app)上传您的证书。
 * **附件状态加载条**：在桌面 App 和浏览器扩展中上传附件时，将显示上传状态条。
@@ -170,15 +170,15 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* **★「查看登录」上的自动填充按钮**：在浏览器扩展中，从「[查看登录](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#view-login)」直接自动填充凭据。
+* <i class="fa-star">:star:</i>**「查看登录」上的自动填充按钮**：在浏览器扩展中，从「[查看登录](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#view-login)」直接自动填充凭据。
 * **密码保护的 Send 的生成器选项**：创建密码保护的 [Send](password-manager/bitwarden-send/about-send.md) 时，现在可以使用所有密码生成器功能。
 * **适用于 Linux 的 Arm64 构建**：Linux 用户现可在 Snapcraft 和 Flathub 上获取 Arm64 桌面版构建。参阅[下载页面](https://bitwarden.com/download/#downloads-desktop-applications)获取更多信息。
 
 ### Admin Console
 
-* **★自动确认策略**：一个新的策略，允许[自动确认新成员加入组织](admin-console/manage-members/automatic-confirmation.md)。使用此策略需要了解其工作原理，并且必须联系 Bitwarden 支持人员在您的组织中激活它。
-* **★策略名称更新**：「强制组织数据所有权」策略已重命名为「[集中化组织所有权](admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)」。
-* **★从「我的密码库」转移项目到「我的项目」**：使用「集中化组织所有权」策略的组织现在可以[选择提示](admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)用户使用浏览器扩展[将项目从「我的密码库」转移项目到「我的项目」](password-manager/organization-members/transfer-ownership.md)。
+* <i class="fa-star">:star:</i>**自动确认策略**：一个新的策略，允许[自动确认新成员加入组织](admin-console/manage-members/automatic-confirmation.md)。使用此策略需要了解其工作原理，并且必须联系 Bitwarden 支持人员在您的组织中激活它。
+* <i class="fa-star">:star:</i>**策略名称更新**：「强制组织数据所有权」策略已重命名为「[集中化组织所有权](admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)」。
+* <i class="fa-star">:star:</i>**从「我的密码库」转移项目到「我的项目」**：使用「集中化组织所有权」策略的组织现在可以[选择提示](admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)用户使用浏览器扩展[将项目从「我的密码库」转移项目到「我的项目」](password-manager/organization-members/transfer-ownership.md)。
 
 ## 2026.3.0
 
@@ -196,7 +196,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 ### Admin Console
 
 * ~~**Access Intelligence UX 改进**：~~[~~Access Intelligence~~](admin-console/oversight-visibility/access-intelligence.md) ~~进行了一些改进，包括将「所有应用程序」和「关键应用程序」选项卡合并为一个简洁的「应用程序」选项卡。~~
-* **★批量邀请改进**：[组织用户邀请流程](admin-console/manage-members/user-management.md)中添加了多项改进，例如添加了可视化状态指示器和批量操作警告。
+* <i class="fa-star">:star:</i>**批量邀请改进**：[组织用户邀请流程](admin-console/manage-members/user-management.md)中添加了多项改进，例如添加了可视化状态指示器和批量操作警告。
 
 ## 2026.2.1
 
