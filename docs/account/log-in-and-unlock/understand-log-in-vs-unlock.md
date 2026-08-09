@@ -20,7 +20,7 @@ Bitwarden 使用两种不同的流程来保护您的密码库，同时又不牺�
 * 您并不一定需要主密码。虽然主密码可以用来解锁密码库，但 PIN 码和生物识别等其他方式也可以用来解锁密码库。
 
 {% hint style="info" %}
-当您设置 PIN 码或生物识别时，从 PIN 码或生物识别因素中派生的新加密密钥将用于加密[账户加密密钥](../../security/encryption/encryption-key-rotation.md)，您登录后即可访问该密钥，并将其存储在磁盘 <mark style="color:red;">**ª**</mark>。
+当您设置 PIN 码或生物识别时，从 PIN 码或生物识别因素中派生的新加密密钥将用于加密[账户加密密钥](../../security/encryption/encryption-key-rotation.md)，您登录后即可访问该密钥，并将其存储在磁盘<mark style="color:red;">**ª**</mark>。
 
 **解锁**密码库会使用 PIN 码或生物识别密钥解密内存中的账户加密密钥。解密后的账户加密密钥将用于解密内存中的所有密码库数据。
 
