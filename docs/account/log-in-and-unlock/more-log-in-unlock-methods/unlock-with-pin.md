@@ -30,7 +30,7 @@ Bitwarden Password Manager 移动 App、浏览器扩展和桌面 App 可以使�
 
 2、出现提示时，在**设置 PIN 码**弹出窗口中输入您要使用的 PIN 码。PIN 码可以是任意字符（a-z、0-9、$、# 等）的组合。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 创建强 PIN 码：
 
 * 如果您与他人共享您的设备，请避免使用容易猜到的数字，例如出生日期。
@@ -57,7 +57,7 @@ Bitwarden Password Manager 移动 App、浏览器扩展和桌面 App 可以使�
 
 2、出现提示时，在弹出窗口中输入您要使用的 PIN 码。PIN 码可以是任意字符（a-z、0-9、$、# 等）的组合。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **创建强 PIN 码**：
 
 * 如果您与他人共享您的设备，请避免使用容易猜到的数字，例如出生日期。
@@ -85,7 +85,7 @@ Bitwarden Password Manager 移动 App、浏览器扩展和桌面 App 可以使�
 
 3、出现提示时，在弹出窗口中输入您要使用的 PIN 码。PIN 码可以是任意字符（a-z、0-9、$、# 等）的组合。
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **创建强 PIN 码**：
 
 * 如果您与他人共享您的设备，请避免使用容易猜到的数字，例如出生日期。

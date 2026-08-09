@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/setup-two-step-login/)
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="success" icon="lightbulb" %}
 **2025 年 03 月 04 日**：为提高账户安全性，Bitwarden 将开始要求**未使用两步登录的用户**在[从新设备登录账户或清除浏览器 cookie 后](../../log-in-and-unlock/new-device-protection.md)进行额外的验证。您可能已收到了提示此变化的相关电子邮件和产品通知。
 
 输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码。或者，您可以：
