@@ -35,14 +35,20 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 
 ## 发行公告
 
+## 2026.7.2
+
+_（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.7.2、移动端 2026.7.1）_
+
+此版本提供日常维护和后端改进。
+
 ## 2026.7.0
 
 _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.7.0、浏览器扩展 2026.7.0、桌面端 2026.7.0、移动端 2026.7.0、CLI 2026.7.0）_
 
 ### Password Manager
 
-* **★密码库项目的操作栏**：网页 App、桌面 App 和管理控制台中添加了新的批量操作栏。使用该操作栏，可以执行诸如[共享项目](password-manager/organization-members/sharing.md)到集合或[文件夹](password-manager/your-vault/vault-navigation/folders.md)、以及[归档](password-manager/your-vault/vault-items/vault-items.md#archive)密码库项目等操作。
-* **★从扩展保存和填充**：在浏览器扩展中，内联菜单现在可以更轻松地[同时保存新凭据并进行自动填充](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#shi-yong-nei-qian-zi-dong-tian-chong-chuang-jian-zhang-hu)。
+* **★密码库项目操作栏**：网页 App 和 Admin Console 中添加了新的批量操作栏。使用该操作栏，可以执行诸如[共享项目](password-manager/organization-members/sharing.md)到集合或[文件夹](password-manager/your-vault/vault-navigation/folders.md)、以及[归档](password-manager/your-vault/vault-items/vault-items.md#archive)密码库项目等操作。
+* **★从扩展保存和填充**：在浏览器扩展中，内嵌菜单现在可以更轻松地[同时保存和自动填充新凭据](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#shi-yong-nei-qian-zi-dong-tian-chong-chuang-jian-zhang-hu)。
 * **Android 支持 CXP**：使用 Android 10+，您可以在 Bitwarden 与任何支持 [FIDO 凭据交换协议](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)的 Android App 之间[直接导入](password-manager/import-and-export/import-data.md#yi-dong-duan)或[直接导出](password-manager/import-and-export/export-vault-data.md#yi-dong-duan)数据。
 * **★扩展安装过时提示将 Bitwarden 设置为默认**：安装浏览器扩展时，它现在将提示您[将 Bitwarden 设置为浏览器的默认密码管理器](password-manager/autofill/troubleshoot-autofill/disable-a-browsers-built-in-password-manager.md)。
 * **★Keeper 直接导入器**：使用[新的直接导入选项](password-manager/import-and-export/import-guides/import-from-keeper.md#import-directly-from-keeper)，无需下载导出文件，即可直接从 Keeper Password Manager 传输数据，。
@@ -52,7 +58,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
   * [SSH 代理](password-manager/developer-tools/ssh/ssh-agent.md)：在不同场景中设置和使用 SSH 代理的分步指南。
 * **桌面 App 托盘行为更新**：控制托盘或菜单栏行为和最小化的设置已合并为简化的「[保持 Bitwarden 在后台运行](password-manager/your-vault/app-settings.md)」设置。
 * **禁用自动更新变量重命名**：用于[阻止 Bitwarden 桌面 App 自动更新](password-manager/more/password-manager-faqs.md#q-can-i-turn-off-automatic-updates-for-bitwarden)的环境变量已被重命名。
-* **简化了扩展生物识别**：为浏览器扩展启用生物识别变得更加简单。使用生物识别仍然需要运行桌面 App，但是，您将不再需要启用**允许浏览器集成**选项来执行此操作。了解更多有关[生物识别解锁](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)的信息。
+* **简化了扩展的生物识别**：为浏览器扩展启用生物识别变得更加简单。使用生物识别仍然需要运行桌面 App，但是，您将不再需要启用**允许浏览器集成**选项来执行此操作。了解更多有关[生物识别解锁](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)的信息。
 
 ### Admin Console
 
