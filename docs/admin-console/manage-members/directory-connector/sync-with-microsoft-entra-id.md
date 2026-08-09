@@ -14,37 +14,37 @@
 
 完成以下步骤，为 Directory Connector 创建一个应用程序注册：
 
-1. 从您的 [Microsoft Azure 门户](https://portal.azure.com/)，导航到 **Azure Entra ID** 目录。
-2. 从左侧导航选择**应用程序注册**或在搜索栏中输入**应用程序注册**。
-3. 选择**新建注册**按钮并为您的注册指定一个专用于 Bitwarden 的名称（比如 `bitwarden-dc`）。
-4. 选择**注册**。
+1. 从您的 Microsoft Azure 门户，导航到 **Azure Entra ID** 目录。
+2. 从左侧导航选择 **App registrations** 或在搜索栏中输入 **App registrations**。
+3. 选择 **New registration** 按钮并为您的注册指定一个专用于 Bitwarden 的名称（比如 `bitwarden-dc`）。
+4. 选择 **Register**。
 
 ### 授予应用程序权限 <a href="#grant-app-permissions" id="grant-app-permissions"></a>
 
 完成以下步骤以为已创建的应用程序注册授予所需的权限：
 
-1. 在已创建的 Bitwarden 应用程序中，从左侧导航选择 **API 权限**。
-2. 选择**添加权限**按钮。
+1. 在已创建的 Bitwarden 应用程序中，从左侧导航选择 **API Permissions**。
+2. 选择 **Add a permission** 按钮。
 3. 当提示您选择一个 API 时，选择 **Microsoft Graph**。
-4. 设置如下的**委托权限**：
+4. 设置如下的 **Delegated permissions**：
    * User > User.ReadBasic.All（读取所有用户的基本配置）
    * User > User.Read.All（读取所有用户的全部配置）
    * Group > Group.Read.All（读取所有群组）
    * AdministrativeUnit > AdministrativeUnit.Read.All（仅当您要同步[管理单元](sync-with-microsoft-entra-id.md#specify-sync-filters)时才需要）
-5. 设置如下的**应用程序权限**：
+5. 设置如下的 **Application Permissions**：
    * User > User.Read.All（读取所有用户的全部配置）
    * Group > Group.Read.All（读取所有群组）
    * AdministrativeUnit > AdministrativeUnit.Read.All（仅当您要同步[管理单元](sync-with-microsoft-entra-id.md#specify-sync-filters)时才需要）
-6. 返回 API 权限页面，选择**为 ... 授予管理员同意**按钮。
+6. 返回 API 权限页面，选择 **Grant admin consent for...** 按钮。
 
 ### 创建应用程序密钥 <a href="#create-app-secret-key" id="create-app-secret-key"></a>
 
 完成以下步骤以创建 Directory Connector 要使用的密钥：
 
-1. 在已创建的 Bitwarden 应用程序中，从左侧导航选择**证书和密码**。
-2. 选择**新建客户端密码**按钮，并添加一个 Bitwarden 专用描述（例如 `bitwarden-dc-secret`）和到期日期，我们建议选择**用不**。
-3. 填写完成后选择**保存**。
-4. 将密码的**值**复制到安全的地方，稍后将使用它。
+1. 在已创建的 Bitwarden 应用程序中，从左侧导航选择 **Certificates & secrets**。
+2. 选择 **New client secret** 按钮，然后添加一个 Bitwarden 专用的描述（例如 `bitwarden-dc-secret`）和到期日期，我们建议选择尽可能长的过期时间，并设置提醒，以便在需要时更新该密钥。
+3. 填写完成后选择 **Save**。
+4. 将密码的 **value** 复制到安全的地方，稍后将使用它。
 
 > **\[译者注]**：注意客户端密码的值必须及时备份，退出此页面后您将无法再次查看。
 
@@ -52,16 +52,16 @@
 
 完成以下步骤以获取 Directory Connector 要使用的应用程序 ID：
 
-1. 在已创建的 Bitwarden 应用程序中，从左侧导航选择**概览**。
-2. 将**应用程序（客户端）ID** 复制到安全的地方，稍后将使用它。
+1. 在已创建的 Bitwarden 应用程序中，从左侧导航选择 **Overview**。
+2. 将 **Application (client) ID** 复制到安全的地方，稍后将使用它。
 
 ### 获取租户主机名 <a href="#get-tenant-hostname" id="get-tenant-hostname"></a>
 
 完成以下步骤以获取 Directory Connector 要使用的租户主机名：
 
-1. 在 Microsoft Azure 门户的任意页面，点击右上角导航栏的 **⚙️**图标。
-2. 从左侧菜单栏选择**目录和订阅**筛选器按钮。
-3. 将**当前目录：**&#x7684;值复制到安全位置以备后续使用。
+1. 在 Microsoft Azure 门户的任意页面，点击右上角导航栏的 <i class="fa-gear-complex">:gear-complex:</i>图标。
+2. 从左侧菜单栏选择 **Directory + subscription** 筛选器按钮。
+3. 将 **Current directory:** 的值复制到安全位置以备后续使用。
 
 ## 连接到您的目录 <a href="#connect-to-your-directory" id="connect-to-your-directory"></a>
 

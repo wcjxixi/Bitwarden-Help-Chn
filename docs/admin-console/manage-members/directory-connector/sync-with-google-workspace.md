@@ -14,33 +14,33 @@
 
 完成以下步骤来创建 Google Cloud 项目，用于将 Directory Connector 连接到您的目录。如果您已经有可用的 Google Cloud 项目，请跳至[启用 Admin SDK](sync-with-google-workspace.md#enable-admin-sdk)：
 
-1. 在 [GCP Console](https://console.cloud.google.com/home) 中，使用左侧导航栏选择 **IAM & Admin** → **管理资源**。
-2. 选择**创建项目**按钮。
+1. 在 [GCP Console](https://console.cloud.google.com/home) 中，使用左侧导航栏选择 **IAM & Admin** → **Manage Resources**。
+2. 选择 **Create Project** 按钮。
 3. 在新建项目界面：
    * 为此项目输入一个专用于 Bitwarden 的名称（比如 `bitwarden-dc-project`）。
    * 选择一个组织，将项目关联至该组织。
    * 选择上级组织或文件夹。
-   * 选择**创建**按钮。
+   * 选择 **Create** 按钮。
 
 ### 启用 Admin SDK <a href="#enable-admin-sdk" id="enable-admin-sdk"></a>
 
 完成以下步骤以启用 Admin SDK API，Directory Connector 将向其发送请求：
 
 1. 在 [GCP Console](https://console.cloud.google.com/home) 中，选择已创建或已存在的项目。
-2. 从左侧导航中，选择 **API 和服务** → **库**。
+2. 从左侧导航中，选择 **APIs & Services** → **Library**。
 3. 在搜索框中输入 `Admin SDK`，然后打开 **Admin SDK API** 服务。
-4. 选择**启用**按钮。
+4. 选择 **Enable** 按钮。
 
 ### 创建服务帐号 <a href="#create-service-account" id="create-service-account"></a>
 
 完成以下步骤以创建一个在 API 调用时使用的服务账号：
 
 1. 在 [GCP Console](https://console.cloud.google.com/home) 中，选择已创建或已存在的项目。
-2. 从左侧导航中，选择 **API 和服务** → **凭据**。
-3. 选择**创建凭据**按钮，然后从下拉菜单中选择**服务账号**。
-4. 填写**服务账号详情**部分，然后选择**创建**按钮。
-5. 在**授予此服务账号对项目的访问权限**部分，从**角色**下拉菜单中选择 **Project** → **Owner**，然后选择**继续**按钮。
-6. 选择**完成**按钮。
+2. 从左侧导航中，选择 **APIs & Services** → **Credentials**。
+3. 选择 **Create Credentials** 按钮，然后从下拉菜单中选择 **Service account**。
+4. 填写 **Service account details** 部分，然后选择 **Create and continue** 按钮。
+5. 在 **Grant this service account access to project** 部分，从 **Role** 下拉菜单中选择 **Project** → **Owner**，然后选择 **Continue** 按钮。
+6. 选择 **Done** 按钮。
 
 ### 获取服务账号凭据 <a href="#obtain-service-account-credentials" id="obtain-service-account-credentials"></a>
 
@@ -48,36 +48,36 @@
 
 1、在 [GCP Console](https://console.cloud.google.com/home) 中，选择已创建或已存在的项目。
 
-2、从左侧导航中，选择 **IMA 和服务** → **服务账号**。
+2、从左侧导航中，选择 **IAM & Admin** → **Service Accounts**。
 
 3、选择已创建或已存在的服务账号。
 
-4、在**密钥**选项卡中，选择**添加密钥**按钮，然后从下拉菜单中选择**创建新密钥**。
+4、在 **Keys** 选项卡中，选择 **Add Key** 按钮，然后从下拉菜单中选择 **Create new key**。
 
 5、选择密钥类型为 **JSON**，然后选择**创建**按钮，将 JSON 格式的密钥下载到您的本地计算机。
 
-6、返回您的服务账号**详情**选项卡，选择**高级设置**下拉菜单。
+6、返回您的服务账号**详情**选项卡，选择 **Advanced settings** 下拉菜单。
 
-7、滚动至 **Google Workspace Marketplace OAuth 客户端**部分，选择**创建与 Google Workspace Marketplace 兼容的 OAuth 客户端**，或者，如果您看到显示「必须配置 OAuth 同意界面才能创建 OAuth 客户端」的提示框，请选择**配置**。
+7、滚动至 **Google Workspace Marketplace OAuth Client** 部分，选择 **Create Google Workspace Marketplace-Compatible OAuth Client**，或者，如果您看到显示「必须配置 OAuth 同意界面才能创建 OAuth 客户端」的提示框，请选择 **Configure**。
 
-8、选择**开始使用**，在项目配置中：
+8、选择 **Get Started**，在项目配置中：
 
 * 输入请求授权的 App 名称（例如 `Bitwarden Directory Connector` ）。
-* 择一个**用户支持电子邮箱**。
-* 在**受众**部分，选择**内部**。
+* 择一个 **user support email**。
+* 在 **Audience** 部分，选择 **Internal**。
 * 继续完成向导以创建同意界面。
 
-9、创建后，打开**数据访问**选项卡，选择**添加或删除范围**。
+9、创建后，打开 **Data Access** 选项卡，选择 **Add or remove scopes**。
 
-10、在**手动添加范围**部分，粘贴以下内容：
+10、在 **Manually add scopes** 部分，粘贴以下内容：
 
 ```
 https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.group.readonly,https://www.googleapis.com/auth/admin.directory.group.member.readonly
 ```
 
-选择**添加到表格**，然后选择**更新**。
+选择 **Add to table**，然后选择 **Update**。
 
-11、点击**保存**。
+11、点击 **Save**。
 
 #### CLI 使用服务账号凭证 <a href="#using-service-account-credentials-with-the-cli" id="using-service-account-credentials-with-the-cli"></a>
 
@@ -94,24 +94,21 @@ https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.google
 
 1、打开 [Google Admin Portal](https://admin.google.com/u/5/ac/home)。
 
-2、从左侧导航中，选择**安全** → **访问和数据控制** → **API 控制**。
+2、从左侧导航中，选择 **Security** → **Access and data control** → **API controls**。
 
-3、选择**管理全网域委派**按钮。
+3、选择 **Manage Domain Wide Delegation** 按钮。
 
-4、选择**新增**按钮。
+4、选择 **Add new** 按钮。
 
-5、粘帖已创建的**客户端 ID** 到客户端 ID 字段中。
+5、在客户端 ID 字段中，粘贴您创建的 **Unique ID**，您可以通过打开 [GCP Console](https://console.cloud.google.com/home) ，导航至 **API & Services** → **Credentials**，打开您的服务账户并查找 **Unique ID** 来找到它。
 
-6、在客户端 ID 字段中，粘贴您创建的 **Unique ID**，您可以通过打开 [GCP Console](https://console.cloud.google.com/home) ，导航至 **API 和服务** → **凭据**，打开您的服务账户并查找 **Unique ID** 来找到它。\
-要查看已创建的客户端 ID，请打开 [GCP Console](https://console.cloud.google.com/home) 并导航到 **API 和服务** → **凭据**。
-
-7、在 OAuth 范围字段中，粘贴以下值以仅授予读取访问权限。
+6、在 OAuth 范围字段中，粘贴以下值以仅授予读取访问权限。
 
 ```
 https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.group.readonly,https://www.googleapis.com/auth/admin.directory.group.member.readonly
 ```
 
-8、选择**授权**按钮。
+7、选择 **Authorize** 按钮。
 
 ## 连接到您的目录 <a href="#connect-to-your-directory" id="connect-to-your-directory"></a>
 
