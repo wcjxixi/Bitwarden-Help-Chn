@@ -30,10 +30,6 @@ Bitwarden 的一个关键特征是，与许多软件应用程序不同，每个�
 
 每位用户对自己的主密码负责。Bitwarden 是一种零知识加密解决方案，这意味着 Bitwarden 的团队以及 Bitwarden 系统本身不知道、无法获取或重置任何主密码。
 
-{% hint style="success" %}
-Bitwarden 已在 2021 年中期推出一项新的功能，使企业能够重置其组织用户的密码。这不会影响没有连接到启用了此功能的企业版组织的个人账户。
-{% endhint %}
-
 ### 随处使用 Bitwarden <a href="#use-bitwarden-anywhere" id="use-bitwarden-anywhere"></a>
 
 无所不在的守护，方成就无处不在的安全，因此，最好的密码管理器提供跨越您所有设备的访问权限。Bitwarden 支持[一系列客户端应用程序](https://bitwarden.com/download/)，任何客户端应用程序都可以连接到我们的云托管服务器或您自己的自托管服务器：
@@ -131,14 +127,13 @@ Alice 是您企业中的一位**用户**，该组织托管在 Bitwarden Cloud �
 ### 高级离职 <a href="#advanced-deprovisioning" id="advanced-deprovisioning"></a>
 
 {% hint style="warning" %}
-对于那些使用[受信任设备 SSO](../login-with-sso/trusted-devices/about-trusted-devices.md) 而没有主密码的账户，[从您的组织中移除他们](user-management.md#offboard-users)将切断其对 Bitwarden 账户的所有访问权限，除非：
+对于那些使用[受信任设备 SSO](../login-with-sso/trusted-devices/about-trusted-devices.md) 而**没有主密码**的账户：
 
-1. 您事先使用[账户恢复](account-recovery/about-account-recovery.md)为其分配了主密码。
-2. 用户在账户恢复后至少登录一次，以便完全完成账户恢复工作流程。
+* 除非之前已使用[账户恢复](account-recovery/about-account-recovery.md)为其分配了主密码，且在被移除前至少使用该主密码登录过一次，否则将其[从您的组织中移除](user-management.md#offboard-users)将导致其 Bitwarden 账户完全无法访问。
 
-此外，除非在用户从组织中删除之前采取上述步骤，否则用户将无法重新加入组织。在这种情况下，用户将被要求[删除其账户](../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并收到创建账户和加入组织的新邀请。
+除非在将其从组织中移除**之前**执行上述步骤，否则这些用户将无法重新加入您的组织。如果未执行上述步骤，每位被移除的用户将被要求[删除其账户](../../plans-and-pricing/delete-an-account-or-organization.md#delete-your-personal-account)，并收到创建账户和加入组织的新邀请。
 
-撤销对组织的访问权限，但不将其从组织中移除，将允许其登录 Bitwarden 并**仅**访问其个人密码库。
+* 撤销其对组织的访问权限，但不将其从组织中移除，仍将完全锁定其账户，直到其组织访问权限恢复为止。
 {% endhint %}
 
 #### 已声明的账户 <a href="#claimed-member-accounts" id="claimed-member-accounts"></a>
