@@ -46,11 +46,7 @@ Elastic 是一种可提供搜索和可观察性选项的解决方案，用于监
 
 在相应字段中输入以下信息：
 
-| Elastic 字段    | 值                                                                                                                                                         |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| URL           | <p>对于 Bitwarden 云用户，默认 URL 为 <code>https://api.bitwarden.com</code>。</p><p></p><p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。确保 URL 末尾不包含任何尾随正斜杠「<code>/</code>」</p> |
-| Client ID     | 输入从 Bitwarden 组织 API 密钥窗口获取的 `client_id` 值。                                                                                                               |
-| Client Secret | 输入从 Bitwarden 组织 API 密钥窗口获取的 `client_secret` 值。                                                                                                           |
+<table><thead><tr><th width="204.4000244140625">Elastic 字段</th><th>值</th></tr></thead><tbody><tr><td>URL</td><td><p>对于 Bitwarden 云用户，默认 URL 为 <code>https://api.bitwarden.com</code>。</p><p></p><p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。确保 URL 末尾不包含任何尾随正斜杠「<code>/</code>」。</p></td></tr><tr><td>Client ID</td><td>输入从 Bitwarden 组织 API 密钥窗口获取的 <code>client_id</code> 值。</td></tr><tr><td>Client Secret</td><td>输入从 Bitwarden 组织 API 密钥窗口获取的 <code>client_secret</code> 值。</td></tr></tbody></table>
 
 {% hint style="info" %}
 您的组织 API 密钥信息是敏感数据。不要在不安全的位置分享这些值。
@@ -68,11 +64,7 @@ Elastic 是一种可提供搜索和可观察性选项的解决方案，用于监
 
 设置完成后，您就可以开始查看您的 Bitwarden 组织数据了。选择任何一个 Bitwarden 仪表板来监控与仪表板相关的数据。以下是每个仪表板监控数据的简要概述：
 
-| 日志                                     | 描述                                                          |
-| -------------------------------------- | ----------------------------------------------------------- |
-| \[Logs Bitwarden] Policy               | 查看组织的策略变更，如启用、禁用或更新组织策略。                                    |
-| \[Logs Bitwarden] Group and Collection | 监控与组织相关的群组和集合的记录事件。                                         |
-| \[Logs Bitwarden] Event                | 监控组织事件日志。[此处](../event-logging/event-logs.md)了解有关事件日志的更多信息。 |
+<table><thead><tr><th width="320.4000244140625">日志</th><th>描述</th></tr></thead><tbody><tr><td>[Logs Bitwarden] Policy</td><td>查看组织的策略变更，如启用、禁用或更新组织策略。</td></tr><tr><td>[Logs Bitwarden] Group and Collection</td><td>监控与组织相关的群组和集合的记录事件。</td></tr><tr><td>[Logs Bitwarden] Event</td><td>监控组织事件日志。<a href="../event-logging/event-logs.md">此处</a>了解有关事件日志的更多信息。</td></tr></tbody></table>
 
 ### 了解仪表板 <a href="#understanding-the-dashboards" id="understanding-the-dashboards"></a>
 

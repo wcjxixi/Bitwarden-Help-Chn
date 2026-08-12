@@ -96,11 +96,7 @@ Bitwarden 支持 Splunk Enterprise 9.3、9.4 和 10.0 版本。Splunk Enterprise
 
 同时完成以下附加字段：
 
-| 字段                    | 值                                                                                                                                                                                      |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Index                 | 选择之前在指南中创建的索引：`bitwarden_events`。                                                                                                                                                      |
-| Server URL            | <p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。请确保该 URL 在末尾不包含正斜杠 「<code>/</code>」。<br><br>对于云托管组织，请使用 URL <code>https://vault.bitwarden.com</code> 或 <code>https://vault.bitwarden.eu</code>。</p> |
-| Start date (optional) | <p>设置数据监控的开始日期。如果未设置，默认日期将设置为 1 年。<br>此为一次性配置，设置后<strong>无法</strong>更改。</p>                                                                                                           |
+<table><thead><tr><th width="200.4000244140625">字段</th><th>值</th></tr></thead><tbody><tr><td>Index</td><td>选择之前在指南中创建的索引：<code>bitwarden_events</code>。</td></tr><tr><td>Server URL</td><td>对于自托管 Bitwarden 用户，请输入您的自托管 URL。请确保该 URL 在末尾不包含正斜杠 「<code>/</code>」。<br><br>对于云托管组织，请使用 URL <code>https://vault.bitwarden.com</code> 或 <code>https://vault.bitwarden.eu</code>。</td></tr><tr><td>Start date (optional)</td><td>设置数据监控的开始日期。如果未设置，默认日期将设置为 1 年。<br>此为一次性配置，设置后<strong>无法</strong>更改。</td></tr></tbody></table>
 
 {% hint style="info" %}
 您的组织 API 密钥信息是敏感数据。不要在不安全的位置分享这些值。
@@ -125,10 +121,7 @@ Bitwarden 支持 Splunk Enterprise 9.3、9.4 和 10.0 版本。Splunk Enterprise
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/69xCHcmqFE8CLp7kGJJkdJ/4faffad91633090dd5709b32e4cb7bc0/2024-05-14_08-44-55.png?w=1200&#x26;fm=avif" alt=""><figcaption><p>搜索宏权限</p></figcaption></figure></div>
 
-| 字段                      | 描述                                                              |
-| ----------------------- | --------------------------------------------------------------- |
-| Object should appear in | 要在事件搜索中使用宏，请选择 **This app only**。如果选择了 **Keep private**，宏将不会应用。 |
-| Permissions             | 为具有**读取**和**写入**访问权限的用户角色选择所需的权限。                               |
+<table><thead><tr><th width="223.5999755859375">字段</th><th>描述</th></tr></thead><tbody><tr><td>Object should appear in</td><td>要在事件搜索中使用宏，请选择 <strong>This app only</strong>。如果选择了 <strong>Keep private</strong>，宏将不会应用。</td></tr><tr><td>Permissions</td><td>为具有<strong>读取</strong>和<strong>写入</strong>访问权限的用户角色选择所需的权限。</td></tr></tbody></table>
 
 {% hint style="info" %}
 在给定时间，只有一个搜索宏可以在 App 上运行。
@@ -185,7 +178,7 @@ search | commands1 arguments1 | commands2 arguments2 | ...
 
 ### Bitwarden 字段 <a href="#bitwarden-fields" id="bitwarden-fields"></a>
 
-<table data-search="false"><thead><tr><th>值</th><th>示例结果</th></tr></thead><tbody><tr><td><code>actingUserEmail</code></td><td>执行操作的用户的电子邮件。</td></tr><tr><td><code>actingUserId</code></td><td>执行操作的用户的唯一 ID。</td></tr><tr><td><code>actingUserName</code></td><td>执行操作的用户的名称。</td></tr><tr><td><code>collectionId</code></td><td>组织集合 ID。</td></tr><tr><td><code>device</code></td><td>用于标识执行操作的设备的数字。</td></tr><tr><td><code>deviceName</code></td><td>设备的数字 ID。具体映射关系请参阅<a href="https://github.com/bitwarden/splunk/blob/a9a6d6501c36d37ee7e95f88400c39f6ff2c926b/package/default/props.conf#L83">此处</a>。</td></tr><tr><td><code>groupId</code></td><td>组织群组 ID。</td></tr><tr><td><code>groupName</code></td><td>组织群组名称。</td></tr><tr><td><code>hash</code></td><td>Splunk 计算的数据哈希。在<a href="https://docs.splunk.com/Documentation/Splunk/9.0.4/Security/Dataintegritycontrol">此处</a>了解更多有关 Splunk 数据完整性的信息。</td></tr><tr><td><code>ipAddress</code></td><td>执行事件的 IP 地址。</td></tr><tr><td><code>itemId</code></td><td>组织密码库的密码库项目（密码、安全笔记注释等）。</td></tr><tr><td><code>memberEmail</code></td><td>操作针对的组织成员的电子邮件。</td></tr><tr><td><code>memberId</code></td><td>操作针对的组织成员的唯一 ID。</td></tr><tr><td><code>memberName</code></td><td>操作针对的组织成员的名称。</td></tr><tr><td><code>policyId</code></td><td>组织策略更新。在<a href="../event-logging/event-logs.md#organization-events">此处</a>了解组织事件。</td></tr><tr><td><code>type</code></td><td>表示发生的组织事件的事件类型代码。在<a href="../event-logging/event-logs.md">此处</a>查看完整的事件代码列表和说明。</td></tr><tr><td><code>typeName</code></td><td>类型的数字 ID。在<a href="https://github.com/bitwarden/splunk/blob/a9a6d6501c36d37ee7e95f88400c39f6ff2c926b/package/default/props.conf#L8">此处</a>了解映射关系。</td></tr></tbody></table>
+<table data-search="false"><thead><tr><th width="159.5999755859375">值</th><th>示例结果</th></tr></thead><tbody><tr><td><code>actingUserEmail</code></td><td>执行操作的用户的电子邮件。</td></tr><tr><td><code>actingUserId</code></td><td>执行操作的用户的唯一 ID。</td></tr><tr><td><code>actingUserName</code></td><td>执行操作的用户的名称。</td></tr><tr><td><code>collectionId</code></td><td>组织集合 ID。</td></tr><tr><td><code>device</code></td><td>用于标识执行操作的设备的数字。</td></tr><tr><td><code>deviceName</code></td><td>设备的数字 ID。具体映射关系请参阅<a href="https://github.com/bitwarden/splunk/blob/a9a6d6501c36d37ee7e95f88400c39f6ff2c926b/package/default/props.conf#L83">此处</a>。</td></tr><tr><td><code>groupId</code></td><td>组织群组 ID。</td></tr><tr><td><code>groupName</code></td><td>组织群组名称。</td></tr><tr><td><code>hash</code></td><td>Splunk 计算的数据哈希。在<a href="https://docs.splunk.com/Documentation/Splunk/9.0.4/Security/Dataintegritycontrol">此处</a>了解更多有关 Splunk 数据完整性的信息。</td></tr><tr><td><code>ipAddress</code></td><td>执行事件的 IP 地址。</td></tr><tr><td><code>itemId</code></td><td>组织密码库的密码库项目（密码、安全笔记注释等）。</td></tr><tr><td><code>memberEmail</code></td><td>操作针对的组织成员的电子邮件。</td></tr><tr><td><code>memberId</code></td><td>操作针对的组织成员的唯一 ID。</td></tr><tr><td><code>memberName</code></td><td>操作针对的组织成员的名称。</td></tr><tr><td><code>policyId</code></td><td>组织策略更新。在<a href="../event-logging/event-logs.md#organization-events">此处</a>了解组织事件。</td></tr><tr><td><code>type</code></td><td>表示发生的组织事件的事件类型代码。在<a href="../event-logging/event-logs.md">此处</a>查看完整的事件代码列表和说明。</td></tr><tr><td><code>typeName</code></td><td>类型的数字 ID。在<a href="https://github.com/bitwarden/splunk/blob/a9a6d6501c36d37ee7e95f88400c39f6ff2c926b/package/default/props.conf#L8">此处</a>了解映射关系。</td></tr></tbody></table>
 
 ### Spunk 默认字段 <a href="#spunk-default-fields" id="spunk-default-fields"></a>
 
