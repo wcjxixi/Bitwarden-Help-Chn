@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/is-bitwarden-audited/)
 {% endhint %}
 
-Bitwarden 是一家全球性的公司，客户遍布世界各地。我们的业务是帮助客户保护、存储和共享敏感数据。我们将保护客户及他们的终端用户的个人数据作为公司使命的重中之重。Bitwarden 符合行业标准，定期进行审计，并与我们的客户和用户透明共享。我们的开源方法使我们处于一个独特的位置，我们的软件被一个全球参与的社区查看和审查。
+Bitwarden 是一家全球性公司，客户遍布世界各地。我们的业务是帮助客户保护、存储和共享其敏感数据。我们将保护客户及他们的终端用户的个人数据作为公司使命的重中之重。Bitwarden 遵循行业标准，并开展全面的年度审计，这些审计结果会透明地分享给我们的客户和用户。我们的开源方法使我们处于独特的位置，我们的软件受到全球活跃社区的审查和严格检查。
 
 ## 隐私 <a href="#privacy" id="privacy"></a>
 
@@ -12,25 +12,25 @@ Bitwarden 是一家全球性的公司，客户遍布世界各地。我们的业�
 
 ### GDPR
 
-Bitwarden 符合 GDPR 标准。我们在必要时使用适用的、经批准的信息传输机制，如欧盟标准合同条款 (SCC) 或欧盟 - 美国隐私保护。
+Bitwarden 符合 GDPR 要求。在必要时，我们采用适用且经批准的信息传输机制，如《欧盟标准合同条款 (SCC)》或《欧盟 - 美国隐私框架》。
 
-Bitwarden 依据欧洲议会和理事会的法规 (EU) 2016/679 使用标准合同条款，该条款由欧盟委员会于 2021 年 6 月 4 日实施的决议 (EU) 2021/914 批准，目前其位于 [https://eur-lex .europa.eu/eli/dec\_impl/2021/914/oj](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj)。
+Bitwarden 使用根据《欧洲议会和理事会条例 (EU) 2016/679》制定的标准合同条款 (SCC)，该标准合同条款经欧盟委员会于 2021 年 6 月 4 日通过的《欧盟委员会实施决定 (EU) 2021/914》批准，目前载于 [https://eur-lex .europa.eu/eli/dec\_impl/2021/914/oj](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj)。
 
 ### CCPA
 
-Bitwarden 符合加州消费者隐私法案 (CCPA)。
+Bitwarden 符合加州消费者隐私法案 (CCPA) 的要求。
 
 ### 数据隐私框架 (DPF) <a href="#data-privacy-framework-dpf" id="data-privacy-framework-dpf"></a>
 
-Bitwarden 遵守数据隐私框架 (DPF)，以前称为隐私保护，该框架定义了个人数据的安全传输。
+Bitwarden 遵守数据隐私框架 (DPF)，以前称为隐私保护，该框架定义了个人数据的安全传输标准。
 
 ### HIPAA
 
-Bitwarden 符合 HIPAA 标准，并且每年都会接受第三方审计以确保符合 HIPPAA 安全规则。
+Bitwarden 符合 HIPAA 标准，并且每年接受第三方审计，以确保符合 HIPPAA 安全规则。
 
 ### ISO 27001
 
-Bitwarden 已通过 ISO 27001 认证，并符合围绕数据安全的 ISO 27001 控制集。要了解更多信息，请联系您的账户管理人员。
+Bitwarden 已通过 ISO 27001 认证，并符合围绕数据安全的 ISO 27001 控制集要求。要了解更多信息，请联系您的账户管理人员。
 
 ## 第三方安全审计 <a href="#third-party-security-audits" id="third-party-security-audits"></a>
 
