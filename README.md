@@ -34,11 +34,11 @@ Bitwarden 是一个开源的密码管理系统，您可以使用 Bitwarden 官�
 
 <table data-search="true"><thead><tr><th>功能</th><th>免费版</th><th>高级版</th></tr></thead><tbody><tr><td>价格</td><td>免费</td><td>$19.80/年<sup><mark style="color:red;"><strong>a</strong></mark></sup></td></tr><tr><td>安装所有平台程序</td><td>支持</td><td>支持</td></tr><tr><td>无限制同步所有设备</td><td>支持</td><td>支持</td></tr><tr><td>项目数量</td><td>无限制</td><td>无限制</td></tr><tr><td>文件夹数量</td><td>无限制</td><td>无限制</td></tr><tr><td>密码生成器</td><td>支持</td><td>支持</td></tr><tr><td>初始存储空间</td><td>无</td><td>5 GB</td></tr><tr><td>附加存储</td><td>不支持</td><td>$4.00/GB/年</td></tr><tr><td>两步登录类型</td><td>验证器 App + 电子邮箱 + FIDO2 WebAuthn</td><td>免费版 + YubiKey + Duo</td></tr><tr><td>内置 TOTP 功能</td><td>不支持</td><td>支持</td></tr><tr><td>Bitwarden Send</td><td>文本</td><td>文本 + 文件</td></tr><tr><td>紧急访问</td><td>不支持</td><td>支持</td></tr><tr><td>数据泄漏报告</td><td>支持</td><td>支持</td></tr><tr><td>健康报告</td><td>不支持</td><td>支持</td></tr><tr><td>本地托管</td><td>支持</td><td>支持</td></tr><tr><td>免费试用</td><td>-</td><td>不支持</td></tr><tr><td>付款周期</td><td>-</td><td>年付</td></tr></tbody></table>
 
-<sup><mark style="color:red;">**a**<mark style="color:red;"></sup> - 2023 年 11 月 06 日提价为 $19.80/年，老用户续费价格维持为 $10.00/年。2026 年起，老用户续费价格提价为 $19.80/年（有一次性的 25% 忠诚度折扣，即 $14.85/年）。
+<sup><mark style="color:red;">**a**<mark style="color:red;"></sup> - 2023 年 11 月 06 日提价为 $19.80/年，老用户续费价格维持为 $10.00/年。2026 年起，老用户续费价格提价为 $19.80/年（有一次性的 25% 忠诚度折扣，折后 $14.85/年）。
 
 ## 组织账户比较 <a href="#compare-organization-plans" id="compare-organization-plans"></a>
 
-Bitwarden 还提供组织账户（用于密码共享等），分别为针对个人使用的免费版、家庭版，针对商业使用的团队版和企业版。
+Bitwarden 还提供组织版账户（用于密码共享等），分别为针对个人使用的免费版、家庭版，针对商业使用的团队版和企业版。
 
 {% tabs %}
 {% tab title="2020-08-31 之前" %}
@@ -60,7 +60,7 @@ Bitwarden 还提供组织账户（用于密码共享等），分别为针对个�
 
 ## 价格和账单 <a href="#price-and-billing" id="price-and-billing"></a>
 
-1. 免费试用付费组织订阅：必须先订阅才能试用（订阅时需要输入付款信息），7 天免费试用期结束时，才会从您的付款方式中扣款。**记得在订阅后的 7 天内主动取消订阅**。
+1. 免费试用付费版组织订阅：必须先订阅才能试用（订阅时需要输入付款信息），7 天免费试用期结束时，才会从您的付款方式中扣款。**记得在 7 天免费试用期内主动取消订阅**。
 2. 支持订阅开始日期 30 天内无条件退款（需要给 [Bitwarden 支持](https://bitwarden.com/contact/)发邮件）。
 
 ### 组织价格比较 <a href="#compare-price" id="compare-price"></a>
