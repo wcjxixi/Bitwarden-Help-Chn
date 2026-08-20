@@ -18,7 +18,7 @@ Bitwarden 使用 HTTP 数据摄取方式向 Blumira 发送事件。在 Blumira �
 
 ## 设置 <a href="#setup" id="setup"></a>
 
-将 Bitwarden 与 Blumira 集成需要在这两个平台上进行简短的设置过程。
+将 Bitwarden 与 Blumira 集成，需要在这两个平台上进行简短的设置过程。
 
 ### 在 Blumira 中设置 HTTP 数据摄取 <a href="#set-up-http-ingestion-in-blumira" id="set-up-http-ingestion-in-blumira"></a>
 
@@ -59,7 +59,7 @@ Bitwarden 使用 HTTP 数据摄取方式向 Blumira 发送事件。在 Blumira �
 
 5、选择**保存**。
 
-## 更多资源 <a href="#additional-resources" id="additional-resources"></a>
+## 附加资源 <a href="#additional-resources" id="additional-resources"></a>
 
 * 了解更多有关 [Bitwarden 会显示哪些事件](../event-logging/event-logs.md)的信息。
 * 了解更多有关[在 Blumira 中管理 HTTP 数据摄取](https://blumirabeta.zendesk.com/hc/en-us/articles/51420656192147-Using-Blumira-HTTP-Ingestion)的信息。

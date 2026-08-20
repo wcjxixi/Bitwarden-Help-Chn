@@ -35,6 +35,31 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 
 ## 发行公告
 
+## 2026.8.0
+
+_（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.8.0、浏览器扩展 2026.8.0、桌面端 2026.8.0、移动端 2026.8.0、CLI 2026.8.0）_
+
+### Password Manager
+
+* <i class="fa-star">:star:</i>**桌面端操作栏**：Bitwarden 桌面 App 中添加了新的批量操作栏。使用该操作栏，可以执行诸如[共享项目](password-manager/organization-members/sharing.md)到集合或[文件夹](password-manager/your-vault/vault-navigation/folders.md)、以及[归档](password-manager/your-vault/vault-items/vault-items.md#archive)密码库项目等操作。
+* <i class="fa-star">:star:</i>**移动 App 的填充辅助**：激活[填充辅助](password-manager/autofill/more-autofill-options/fill-assist.md)功能，可在 Bitwarden 精选的、已知会经常导致自动填充问题的网站上提高自动填充的准确性。
+* **iOS 现已支持设备列表**：iOS 现已支持[设备列表](password-manager/your-vault/security-tools/manage-devices.md)功能，用于显示您账户曾经登录过的设备。
+* **从 Delinea 导入**：您现在可以从 Delinea 导入 `.csv` 和 `.xml` 文件，以将数据快速传输到 Bitwarden。
+
+{% hint style="info" %}
+从 Delinea Secret Server 导入机密时，任何具有关联 URL 的项目都将自动采用「登录」项目类型。所有其他导入的数据将采用带有自定义字段的「安全笔记」类型来适配您的数据。
+{% endhint %}
+
+### Admin Console
+
+* <i class="fa-star">:star:</i>**管理 Send 策略**：组织现在可以使用 Admin Console 中的**管理 Send** 策略来控制所有与 Send 相关的功能。此新的[策略](admin-console/oversight-visibility/enterprise-policies.md)取代了之前的一组单独的发送策略。
+* **通用 HEC 集成**：Bitwarden 团队版和企业版组织现在可以与任何 HTTP 事件收集器兼容平台集成，以实现安全信息和事件管理 (SIEM)。设置 HEC 集成。
+* <i class="fa-star">:star:</i>**更改成员的电子邮箱和名称**：管理员现在可以直接从 Admin Console 更新成员账户的电子邮箱地址和名称。这仅适用于没有主密码的已声明账户，例如使用 Key Connector 或受信任设备的账户。拥有主密码的用户仍然可以自助更新其电子邮箱地址。
+
+### 自托管 <a href="#self-host" id="self-host"></a>
+
+* **Helm Chart 身份证书密码轮换**：使用 2.0.0 版本或更早版本首次部署 Helm Chart 的自托管客户可能需要轮换其服务器的身份证书密码。了解是否需要轮换证书密码，如果需要，如何轮换证书密码。
+
 ## 2026.7.2
 
 _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.7.2、移动端 2026.7.1）_

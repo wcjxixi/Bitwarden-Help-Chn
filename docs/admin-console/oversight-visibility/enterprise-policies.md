@@ -86,10 +86,6 @@
 * **强制删除日期**：使用此策略可以为成员创建的 Send 强制执行预定的 [Send 生命周期](../../password-manager/bitwarden-send/send-lifespan.md)。
 * **始终向接收者显示成员的电子邮件地址**：启用此选项可以禁用用户的[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，从而为接收 Send 的人提供透明度。所有者和管理员不受此策略的约束。
 
-{% hint style="warning" %}
-启用**管理控制**目前不会追溯应用对现有 Send 的更改。
-{% endhint %}
-
 ### 禁用导出 <a href="#remove-export" id="remove-export"></a>
 
 启用**禁用导出**策略将禁止您组织的非所有者/非管理员成员[导出其个人密码库数据](../../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。所有者和管理员不受此策略的约束。
