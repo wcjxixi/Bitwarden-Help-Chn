@@ -1,10 +1,10 @@
-# 使用 Helm 自托管
+# =使用 Helm 自托管
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/self-host-with-helm/)
 {% endhint %}
 
-本文将指导您使用 Helm 图表在不同的 Kubernetes 部署中安装和部署 Bitwarden。
+本文将指导您使用 Helm chart 在不同的 Kubernetes 部署中安装和部署 Bitwarden。
 
 本文将介绍在 Kubernetes 上托管 Bitwarden 的通用步骤。提供了特定于提供商的指南，可帮助您深入了解如何根据每个提供商的特定产品来调整部署：
 
@@ -27,7 +27,7 @@
 
 Bitwarden 会在启动时检测您的环境是否限制了用户容器的运行身份，并在检测到限制时自动以无根模式启动部署。要成功以无根模式部署，需满足以下两个选项之一：
 
-* 部署[外部 MSSQL 数据库](../configuration-options/connect-to-an-external-mssql-database.md)，而不是 Helm 图表中默认包含的 SQL 容器。
+* 部署[外部 MSSQL 数据库](../configuration-options/connect-to-an-external-mssql-database.md)，而不是 Helm chart 中默认包含的 SQL 容器。
 * 使用[服务账户](../configuration-options/kubernetes-service-accounts.md)、[Pod 安全上下文](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod)或其他方法为包含的 SQL 容器分配升的权限。
 
 {% hint style="info" %}
@@ -55,13 +55,15 @@ kubectl create namespace bitwarden
 
 ### 创建配置 <a href="#create-a-configuration" id="create-a-configuration"></a>
 
-使用以下命令创建一个 `my-values.yaml` 配置文件，您将使用该文件来自定义部署：
+使用以下命令创建一个 `my-values.yaml` 配置文件，用于自定义部署：
 
 ```bash
-helm show values bitwarden/self-host --devel > my-values.yaml
+helm show values bitwarden/self-host > my-values.yaml
 ```
 
-您必须在 `my-values.yaml` 文件中至少配置以下值：
+您必须在您的 `my-values.yaml` 文件中至少配置下表中的值，但是，您可以在[此处](https://github.com/bitwarden/helm-charts/blob/main/charts/self-host/values.yaml)找到完整的值列表。
+
+#### 必需变量 <a href="#required-variables" id="required-variables"></a>
 
 <table data-search="true"><thead><tr><th>值</th><th>描述</th></tr></thead><tbody><tr><td><code>general.domain:</code></td><td>指向您群集的公共 IP 地址的域名。</td></tr><tr><td><code>general.ingress.enabled:</code></td><td>是否使用图表中定义的 nginx 入口控制器（<a href="self-host-with-helm.md#adding-rawmanifest-files">请参阅使用未包含的入口控制器的示例</a>）。</td></tr><tr><td><code>general.ingress.className:</code></td><td>例如，<code>"nginx"</code> 或 <code>"azure-application-gateway"</code>（<a href="azure-aks-deployment.md#azure-application-gateway">示例</a>）。设置为 <code>general.ingress.enabled: false</code> 以使用其他入口控制器。</td></tr><tr><td><code>general.ingress.annotations:</code></td><td>添加到入口控制器的注释。如果您使用包含的 nginx 控制器，则提供了默认值，您必须取消注释并可以根据需要进行自定义。</td></tr><tr><td><code>general.ingress.paths:</code></td><td>如果您使用默认的 nginx 控制器，则提供了默认值，您可以根据需要进行自定义。</td></tr><tr><td><code>general.ingress.cert.tls.name:</code></td><td>您的 TLS 证书的名称。我们将通过<a href="self-host-with-helm.md#example-certificate-setup">一个示例</a>进行演示，如果您已经有，请现在输入，或者稍后再回来修改。</td></tr><tr><td><code>general.ingress.cert.tls.clusterIssuer:</code></td><td>您的 TLS 证书颁发者的名称。稍后我们将通过<a href="self-host-with-helm.md#example-certificate-setup">一个示例</a>进行演示，如果您已经有，请现在输入，或者稍后再回来修改。</td></tr><tr><td><code>general.email.replyToEmail:</code></td><td>用于发送邀请的电子邮箱地址，通常为 <code>no_reply@smtp_host</code>。</td></tr><tr><td><code>general.email.smtpHost:</code></td><td>您的 SMTP 服务器主机名或 IP 地址。</td></tr><tr><td><code>general.email.smtpPort:</code></td><td>SMTP 服务器使用的 SMTP 端口。</td></tr><tr><td><code>general.email.smtpSsl:</code></td><td>您的 SMTP 服务器是否使用加密协议（<code>true</code> = SSL、<code>false</code> = TLS）。</td></tr><tr><td><code>enableCloudCommunication:</code></td><td>设置为 <code>true</code> 以允许您的服务器与我们的云系统进行通信。这样做可以<a href="../../plan-for-deployment/self-host-an-organization.md#step-4-setup-billing-and-license-sync">启用计费和许可证同步</a>。</td></tr><tr><td><code>cloudRegion:</code></td><td>默认为 <code>US</code> 。如果您的组织是通过<a href="../../../security/server-geographies.md">欧盟云服务器</a>启动的，请设置为 <code>EU</code> 。</td></tr><tr><td><code>sharedStorageClassName:</code></td><td>您需要提供的共享存储类的名称，并且必须支持 <a href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes">ReadWriteMany</a>（<a href="azure-aks-deployment.md#creating-a-storage-class">请参阅使用 Azure 文件存储的示例</a>），除非它是单节点集群。</td></tr><tr><td><code>secrets.secretName:</code></td><td>您的 <a href="https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#define-container-environment-variables-using-secret-data">Kubernetes 机密对象</a>的名称。您将在下一步创建此对象，因此现在确定一个名称，或者稍后再回来修改这个值。</td></tr><tr><td><code>database.enabled:</code></td><td>是否使用图表中包含的 SQL Pod。如果使用外部 SQL 服务器，则只需设置为 <code>false</code> 。</td></tr><tr><td><code>component.scim.enabled</code></td><td>SCIM Pod 默认是禁用的。要启用 SCIM Pod，请将值设置为 <code>= true</code> 。</td></tr><tr><td><code>component.volume.logs.enabled:</code></td><td>虽然不是必需的，但出于故障排除目的，我们建议设置为 <code>true</code> 。</td></tr></tbody></table>
 

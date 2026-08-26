@@ -4,19 +4,19 @@
 对应的[官方文档地址](https://bitwarden.com/help/rotate-identity-certificate-helm/)
 {% endhint %}
 
-本文介绍了针对部分自托管 Helm Chart 部署的 Bitwarden 服务器的**已修复漏洞** 。该问题仅限于符合以下条件的特定安装：
+本文介绍了针对部分自托管 Helm chart 部署的 Bitwarden 服务器的**已修复漏洞** 。该问题仅限于符合以下条件的特定安装：
 
 {% hint style="warning" %}
 符合**以下所有条件的**部署**需要**轮换：
 
-* 您使用的是 `bitwarden/self-host` Helm chart 进行部署。
-* 您的部署**最初安装**在**低于** `2.0.0` 图表版本上。
-* 您使用默认的图表生成的证书（ `secrets.identityCertificate.generate: true` ）。
+* 您使用 `bitwarden/self-host` Helm chart 进行的部署。
+* 您的部署**最初安装**在**低于** `2.0.0` 版本的 Chart 上。
+* 您使用默认的 Chart  生成的证书 (`secrets.identityCertificate.generate: true`)。
 {% endhint %}
 
 ## 背景 <a href="#background" id="background"></a>
 
-Bitwarden 身份服务器使用 PKCS#12（ `.pfx` ）证书对其访问令牌和刷新令牌进行签名。在 Helm chart 中，该证书及其密码在安装时生成，并存储在两个 Kubernetes Secret 中。
+Bitwarden 身份服务器使用 PKCS#12 (`.pfx`) 证书对其访问令牌和刷新令牌进行签名。在 Helm chart 中，该证书及其密码在安装期间生成，并存储在两个 Kubernetes Secret 中。
 
 `2.0.0` 之前的 Chart 版本存在一个缺陷，每次安装时都会将 `.pfx` 密码设置为固定值 `map[]` 。由于该值是公开的且在所有地方都相同，因此任何获取到您的 `identity.pfx` 文件（通过备份、快照、支持包或 Pod 访问权限）的人都可以对其进行解密，并恢复您的令牌签名私钥。
 
