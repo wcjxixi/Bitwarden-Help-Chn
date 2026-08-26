@@ -58,7 +58,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### 自托管 <a href="#self-host" id="self-host"></a>
 
-* **Helm Chart 身份证书密码轮换**：使用 2.0.0 版本或更早版本首次部署 Helm Chart 的自托管客户可能需要轮换其服务器的身份证书密码。了解[是否需要轮换证书密码](self-hosting/deploy-and-configure/helm/rotate-identity-certificate-helm.md)，如果需要，如何轮换证书密码。
+* **Helm Chart 身份证书密码轮换**：使用 2.0.0 版本或更早版本首次部署 Helm Chart 的自托管客户可能需要轮换其服务器的身份证书密码。了解[是否需要轮换证书密码](self-hosting/deploy-and-configure/helm/rotate-identity-certificate-helm.md)，如果需要，[如何轮换证书密码](self-hosting/deploy-and-configure/helm/rotate-identity-certificate-helm.md#rotate-your-certificate-password)。
 
 ## 2026.7.2
 
