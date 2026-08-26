@@ -202,6 +202,7 @@
     * [成员角色](docs/admin-console/manage-members/member-roles.md)
     * [群组](docs/admin-console/manage-members/groups.md)
     * [自动确认](docs/admin-console/manage-members/automatic-confirmation.md)
+    * [=更改成员的账户电子邮箱 & 名称](docs/admin-console/manage-members/change-members-account-email-and-name.md)
     * [撤销 & 移除](docs/admin-console/manage-members/revoke-remove/README.md)
       * [临时撤销访问权限](docs/admin-console/manage-members/revoke-remove/temporarily-revoke-access.md)
       * [永久移除访问权限](docs/admin-console/manage-members/revoke-remove/permanently-remove-access.md)
