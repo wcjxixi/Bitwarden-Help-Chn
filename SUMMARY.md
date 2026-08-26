@@ -246,7 +246,7 @@
       * [Rapid7 SIEM](docs/admin-console/oversight-visibility/siem-integrations/rapid7-siem.md)
       * [Splunk SIEM](docs/admin-console/oversight-visibility/siem-integrations/splunk-siem.md)
       * [Sumo Logic SIEM](docs/admin-console/oversight-visibility/siem-integrations/sumo-logic-siem.md)
-      * [=通用 HEC 集成](docs/admin-console/oversight-visibility/siem-integrations/generic-hec-integration.md)
+      * [通用 HEC 集成](docs/admin-console/oversight-visibility/siem-integrations/generic-hec-integration.md)
       * [非原生 SIEM](docs/admin-console/oversight-visibility/siem-integrations/non-native-siem.md)
     * [事件记录](docs/admin-console/oversight-visibility/event-logging/README.md)
       * [事件日志](docs/admin-console/oversight-visibility/event-logging/event-logs.md)

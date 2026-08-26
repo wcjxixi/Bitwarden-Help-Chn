@@ -6,7 +6,7 @@
 
 Blumira 是一个安全信息与事件管理 (SIEM) 和扩展检测与响应 (XDR) 平台，可集中管理来自您整个环境的日志数据。Bitwarden 通过转发组织事件日志数据与 Blumira 集成，使安全团队能够统一查看密码管理活动以及其他安全数据。
 
-Bitwarden 使用 HTTP 数据摄取方式向 Blumira 发送事件。在 Blumira 中生成唯一端点和令牌后，您需要将这些值添加到 Bitwarden Admin Console 中的 Blumira 集成设置中。
+Bitwarden 使用 HTTP 数据摄取方式向 Blumira 发送事件。在 Blumira 中生成唯一的端点和令牌后，您需要将这些值添加到 Bitwarden Admin Console 中的 Blumira 集成设置中。
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
@@ -14,7 +14,7 @@ Bitwarden 使用 HTTP 数据摄取方式向 Blumira 发送事件。在 Blumira �
 
 * 拥有 Bitwarden 团队版或企业版组织。
 * 拥有能够添加 HTTP 数据摄取实例的 Blumira 账户。
-* 拥有 Bitwarden 和 Blumira 的管理访问权限。
+* 拥有对 Bitwarden 和 Blumira 的管理访问权限。
 
 ## 设置 <a href="#setup" id="setup"></a>
 

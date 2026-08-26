@@ -12,7 +12,7 @@ Huntress 是一个提供威胁检测、调查和响应能力的托管安全平�
 
 * 拥有 Bitwarden 团队版或企业版组织。
 * 拥有包含托管 SIEM 的 Huntress 组织。
-* 对 Bitwarden 和 Huntress 均拥有管理权限。
+* 拥有对 Bitwarden 和 Huntress 的管理访问权限。
 
 {% hint style="info" %}
 Bitwarden 和 Huntress 均使用「组织」一词来描述将用户和数据联系在一起的实体。由于在设置过程中需要同时访问这两者，本文档将在适用情况下区分 Bitwarden 组织和 Huntress 组织。

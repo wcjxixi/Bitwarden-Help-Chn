@@ -10,8 +10,8 @@ Bitwarden 提供全面的事件日志记录功能，能够与安全信息与事�
 
 要将 Bitwarden 与您的 SIEM 平台集成，您需要：
 
-* Bitwarden 团队版或企业版计划（需要事件日志记录和 API 访问权限）。
-* 通过管理员、所有者或自定义角色管理您的 Bitwarden 组织的访问权限。
+* Bitwarden 团队版或企业版方案（要求事件日志记录和 API 访问权限）。
+* 通过管理员、所有者或自定义角色，拥有您的 Bitwarden 组织的管理访问权限。
 * 了解您的 SIEM 平台可用的数据摄取方法。
 
 ## 数据访问 <a href="#data-access" id="data-access"></a>
