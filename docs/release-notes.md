@@ -81,7 +81,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 * **SSH 代理更新**：此次发布包含对 SSH 代理的可靠性和性能的更新。在以下文章中了解有关 SSH 代理的更多信息：
   * [关于 SSH](password-manager/developer-tools/ssh/about-ssh.md)：SSH 密钥的概念概述以及 SSH 代理的工作原理。
   * [SSH 代理](password-manager/developer-tools/ssh/ssh-agent.md)：在不同场景中设置和使用 SSH 代理的分步指南。
-* **桌面 App 托盘行为更新**：控制托盘或菜单栏行为和最小化的设置已合并为简化的「[保持 Bitwarden 在后台运行](password-manager/your-vault/app-settings.md)」设置。
+* **桌面 App 托盘行为更新**：控制托盘或菜单栏行为设置和最小化设置现已合并为简化的「[保持 Bitwarden 在后台运行](password-manager/your-vault/app-settings.md)」设置。
 * **禁用自动更新变量重命名**：用于[阻止 Bitwarden 桌面 App 自动更新](password-manager/more/password-manager-faqs.md#q-can-i-turn-off-automatic-updates-for-bitwarden)的环境变量已被重命名。
 * **简化了扩展的生物识别**：为浏览器扩展启用生物识别变得更加简单。使用生物识别仍然需要运行桌面 App，但是，您将不再需要启用**允许浏览器集成**选项来执行此操作。了解更多有关[生物识别解锁](account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)的信息。
 
