@@ -347,7 +347,7 @@
       * [Lite 部署](docs/self-hosting/deploy-and-configure/docker/lite-deployment.md)
       * [使用正向代理配置自托管环境](docs/self-hosting/deploy-and-configure/docker/configure-self-hosted-environment-with-forward-proxy.md)
     * [使用 Helm 部署](docs/self-hosting/deploy-and-configure/helm/README.md)
-      * [=使用 Helm 自托管](docs/self-hosting/deploy-and-configure/helm/self-host-with-helm.md)
+      * [使用 Helm 自托管](docs/self-hosting/deploy-and-configure/helm/self-host-with-helm.md)
       * [流量路由](docs/self-hosting/deploy-and-configure/helm/traffic-routing.md)
       * [AWS EKS 部署](docs/self-hosting/deploy-and-configure/helm/aws-eks-deployment.md)
       * [Azure AKS 部署](docs/self-hosting/deploy-and-configure/helm/azure-aks-deployment.md)
