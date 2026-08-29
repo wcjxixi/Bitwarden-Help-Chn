@@ -353,7 +353,7 @@
       * [Azure AKS 部署](docs/self-hosting/deploy-and-configure/helm/azure-aks-deployment.md)
       * [OpenShift 部署](docs/self-hosting/deploy-and-configure/helm/openshift-deployment.md)
       * [添加 rawManifest 文件](docs/self-hosting/deploy-and-configure/helm/add-rawmanifest-files.md)
-      * [轮换 Helm 身份证书密码](docs/self-hosting/deploy-and-configure/helm/rotate-identity-certificate-helm.md)
+      * [\*轮换 Helm 身份证书密码](docs/self-hosting/deploy-and-configure/helm/rotate-identity-certificate-helm.md)
     * [配置选项](docs/self-hosting/deploy-and-configure/configuration-options/README.md)
       * [环境变量](docs/self-hosting/deploy-and-configure/configuration-options/environment-variables.md)
       * [证书选项](docs/self-hosting/deploy-and-configure/configuration-options/certificate-options.md)

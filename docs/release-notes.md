@@ -47,7 +47,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 * **从 Delinea 导入**：您现在可以从 Delinea 导入 `.csv` 和 `.xml` 文件，以将数据快速传输到 Bitwarden。
 
 {% hint style="info" %}
-从 Delinea Secret Server 导入机密时，任何具有关联 URL 的项目都将自动采用「登录」项目类型。所有其他导入的数据将采用带有自定义字段的「安全笔记」类型来适配您的数据。
+从 Delinea Secret Server 导入机密时，任何带有关联 URL 的项目都将自动归类为「登录」项目类型。所有其他导入的数据将归类为带有自定义字段的「安全笔记」项目类型来容纳您的数据。
 {% endhint %}
 
 ### Admin Console
