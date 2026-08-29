@@ -52,7 +52,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Admin Console
 
-* <i class="fa-star">:star:</i>**管理 Send 策略**：组织现在可以使用 Admin Console 中的**管理 Send** 策略来控制所有与 Send 相关的功能。此新的[策略](admin-console/oversight-visibility/enterprise-policies.md)取代了之前的一组独立的 Send 策略。
+* <i class="fa-star">:star:</i>**管理 Send 策略**：组织现在可以使用 Admin Console 中的**管理 Send** 策略来控制所有与 Send 相关的功能。此新的[策略](admin-console/oversight-visibility/enterprise-policies.md)取代了之前的一系列独立的 Send 策略。
 * **通用 HEC 集成**：Bitwarden 团队版和企业版组织现在可以与任何 HTTP 事件收集器兼容平台集成，以实现安全信息和事件管理 (SIEM)。设置 [HEC 集成](admin-console/oversight-visibility/siem-integrations/generic-hec-integration.md)。
 * <i class="fa-star">:star:</i>**更改成员的电子邮箱和名称**：管理员现在可以直接从 Admin Console [更新成员的账户电子邮箱地址和名称](admin-console/manage-members/change-members-account-email-and-name.md)。这仅适用于没有主密码的已声明的账户，例如使用 Key Connector 或受信任设备的账户。拥有主密码的用户仍然可以自助更新其电子邮箱地址。
 

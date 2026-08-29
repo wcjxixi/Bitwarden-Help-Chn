@@ -6,6 +6,8 @@
 
 Bitwarden 为安全信息和事件管理 (SIEM) 解决方案提供全面的事件日志记录功能，使组织能够将凭据管理事件与其他活动一同监控。除了针对主流 SIEM 解决方案的官方集成外，通用 HEC 集成还适用于任何兼容 HTTP 摄取的 SIEM 平台。本文将指导您如何将 Bitwarden 与 HEC 解决方案（如 Huntress 和 Splunk 等平台）集成。
 
+> **\[译者注]**：HEC，即 HTTP Event Collector，HTTP 事件收集器。
+
 ## 要求 <a href="#requirements" id="requirements"></a>
 
 要设置 HTTP 摄取，您必须：
