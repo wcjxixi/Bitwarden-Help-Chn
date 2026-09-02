@@ -41,7 +41,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* <i class="fa-star">:star:</i>**桌面端操作栏**：Bitwarden 桌面 App 中添加了新的批量操作栏。使用该操作栏，可以执行诸如[共享项目](password-manager/organization-members/sharing.md)到集合或[文件夹](password-manager/your-vault/vault-navigation/folders.md)、以及[归档](password-manager/your-vault/vault-items/vault-items.md#archive)密码库项目等操作。
+* <i class="fa-star">:star:</i>**桌面端操作栏**：Bitwarden 桌面 App 中添加了新的批量操作栏。使用该操作栏，可以执行诸如[共享项目](password-manager/organization-members/sharing.md)到[集合](admin-console/manage-shared-items/collections/about-collections.md)或[文件夹](password-manager/your-vault/vault-navigation/folders.md)、以及[归档](password-manager/your-vault/vault-items/vault-items.md#archive)密码库项目等操作。
 * <i class="fa-star">:star:</i>**移动 App 的填充辅助**：激活[填充辅助](password-manager/autofill/more-autofill-options/fill-assist.md)功能，可在 Bitwarden 精选的、已知会经常导致自动填充问题的网站上提高自动填充的准确性。
 * **iOS 现已支持设备列表**：iOS 现已支持[设备列表](password-manager/your-vault/security-tools/manage-devices.md)功能，用于显示您账户曾经登录过的设备。
 * **从 Delinea 导入**：您现在可以从 Delinea 导入 `.csv` 和 `.xml` 文件，以将数据快速传输到 Bitwarden。
