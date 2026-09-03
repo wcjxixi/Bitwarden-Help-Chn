@@ -89,7 +89,7 @@ https://vault.bitwarden.com/#/join/{inviteLinkCode}?key={inviteKey}
 为了接受邀请链接，成员的电子邮箱地址必须经过验证。云端账户通常在注册时即完成验证。如果电子邮箱未经验证，未验证的用户可以登录网页 App 然后选择**验证电子邮箱**。
 {% endhint %}
 
-### 刷新或限制链接 <a href="#refresh-or-restrict-a-link" id="refresh-or-restrict-a-link"></a>
+#### 刷新或限制链接 <a href="#refresh-or-restrict-a-link" id="refresh-or-restrict-a-link"></a>
 
 邀请链接不会自行过期。若要使其失效，请选择**刷新**以生成新链接，旧链接将立即停用。从允许列表中移除所有域名也会使链接失效。
 
