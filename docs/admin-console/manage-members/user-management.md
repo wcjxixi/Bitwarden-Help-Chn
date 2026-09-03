@@ -1,4 +1,4 @@
-# 邀请 & 管理成员
+# =邀请 & 管理成员
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/managing-users/)
@@ -12,6 +12,7 @@
 * 所有组织都可以[手动邀请用户](user-management.md)和更新[席位数量](../../plans-and-pricing/manage-subscription-seats-in-your-organization.md)。
 * 团队版和企业版组织可以使用 [SCIM](scim/about-scim.md)。
 * 团队版和企业版组织可以使用 [Directory Connector](directory-connector/about-directory-connector.md)。
+* 企业版组织可以通过可共享的邀请链接邀请成员。
 * 企业版组织可以[使用 JIT](../login-with-sso/jit-provisioning.md)。
 {% endhint %}
 
@@ -22,7 +23,7 @@
 ### 邀请 <a href="#invite" id="invite"></a>
 
 {% hint style="success" icon="lightbulb" %}
-对于企业版组织，我们建议在邀请用户之前配置[企业策略](../oversight-visibility/enterprise-policies.md)，以确保新成员加入组织时符合合规要求。
+对于企业版组织，我们建议在邀请用户之前配置[企业策略](../oversight-visibility/enterprise-policies.md)，以确保新成员加入组织时符合合规要求。用户进入[接受](user-management.md#accept)状态后，他们将受组织策略的约束。
 {% endhint %}
 
 要邀请某人加入您的组织：
@@ -31,7 +32,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
-2、导航到**成员**，然后选择 ✚**邀请用户**按钮：
+2、导航到**成员**，然后选择 <i class="fa-plus">:plus:</i>**邀请用户**按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>邀请成员加入组织</p></figcaption></figure></div>
 
@@ -99,9 +100,7 @@
 
 ### 审查 2FA 和账户恢复状态 <a href="#review-2fa-and-account-recovery-status" id="review-2fa-and-account-recovery-status"></a>
 
-用户的 2FA 状态可在**成员**页面查看。如果用户拥有一个 <i class="fa-lock-keyhole">:lock-keyhole:</i>**锁定图标**，说明其 Bitwarden 账户已启用两步登录：
-
-成员页面还会在**策略**列中标注哪些用户已启用特定功能。<i class="fa-key">:key:</i>**钥匙图标**表示该成员已注册账户恢复。当使用两步登录时，会显示 <i class="fa-lock-keyhole">:lock-keyhole:</i>**锁图标**：
+**成员**页面还会在**策略**列中标注哪些用户已启用特定功能。<i class="fa-key">:key:</i>**钥匙图标**表示该成员已注册[账户恢复](account-recovery/about-account-recovery.md)。<i class="fa-lock-keyhole">:lock-keyhole:</i>**锁图标**表示启用了[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/HNlJNX9VJVURxGqrrBdRb/1592f5c29694cf36e973ddac553e95e1/2FA_status.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>2FA 状态</p></figcaption></figure></div>
 
@@ -126,6 +125,10 @@
 {% hint style="success" icon="lightbulb" %}
 企业版组织可以查看[成员访问权限报告](../../password-manager/your-vault/security-tools/vault-health-reports.md#member-access)，了解成员可以访问哪些集合、他们在每个已分配的集合中的权限级别等等。
 {% endhint %}
+
+### 更新成员的账户电子邮箱和名称 <a href="#update-members-account-email-and-name" id="update-members-account-email-and-name"></a>
+
+如果您的组织使用已声明的域名，并且某个成员没有主密码，管理员可以[更改该成员的电子邮箱地址和名称](change-members-account-email-and-name.md)。
 
 ### 移除用户 <a href="#remove-users" id="remove-users"></a>
 

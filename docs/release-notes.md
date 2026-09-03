@@ -6,7 +6,7 @@
 
 ## 概览 <a href="#overview" id="overview"></a>
 
-本文档中标注的版本代表 Bitwarden 服务器的版本。在同一时间段内发布的客户端应用程序（浏览器扩展、移动 App、桌面 App 和 CLI）将列出其各自的版本号，该版本号可能与关联的服务器版本号不同。了解更多有关 Bitwarden [软件发布支持](security/software-development/software-release-support.md)的信息。
+本文档中标注的版本代表 Bitwarden 服务器的版本。在同一时间段内发布的客户端应用程序（浏览器扩展、移动 App、桌面 App 和 CLI）将列出其各自的版本号，该版本号可能与关联的服务器版本号不同。了解更多有关 [Bitwarden 软件发布支持](security/software-development/software-release-support.md)的信息。
 
 ### 客户端 App 和自托管服务器 <a href="#client-apps-and-self-hosted-servers" id="client-apps-and-self-hosted-servers"></a>
 
@@ -34,6 +34,19 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 * [Directory Connector Releases](https://github.com/bitwarden/directory-connector/releases)
 
 ## 发行公告
+
+## 2026.8.1
+
+_（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.8.1、移动端 2026.8.1）_
+
+### Password Manager
+
+* <i class="fa-star">:star:</i>**网页 App 快速复制**：新的设置会在您将鼠标悬停在网页 App 中的密码库项目上时显示复制快捷按钮，从而加快复制项目的凭据的速度。
+* <i class="fa-star">:star:</i>**「新增」按钮重命名为「添加」或「创建」**：现在，「新增」按钮在大多数位置下更名为 <i class="fa-plus">:plus:</i>**添加**，包括[添加新的密码库项目](password-manager/your-vault/vault-items/vault-items.md#add-items)时，以及在配置 [Send](password-manager/bitwarden-send/create-a-send.md#create-a-send) 时更名为 <i class="fa-plus">:plus:</i>**创建**。此更新仅为界面美观性更改，功能未做任何更改。
+
+### Admin Console
+
+* <i class="fa-star">:star:</i>**生成组织邀请链接**：企业版组织现在可以生成可共享的链接来[邀请成员](admin-console/manage-members/user-management.md#invite)。通过组织首选的通信渠道共享链接，并将其限制为特定的电子邮箱域名，以控制谁可以使用该链接。您可以随时轮换链接以使之前的链接失效，或将其停用以阻止新成员加入。
 
 ## 2026.8.0
 

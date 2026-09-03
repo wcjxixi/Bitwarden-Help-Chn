@@ -1,4 +1,4 @@
-# 密码库项目
+# =密码库项目
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/managing-items/)
@@ -49,6 +49,8 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 使用 `create` 命令添加新的项目。请参阅 [CLI 文档](../../developer-tools/cli/password-manager-cli.md)以获取更多信息。
 {% endtab %}
 {% endtabs %}
+
+## 复制项目凭据 <a href="#copy-item-credentials" id="copy-item-credentials"></a>
 
 ## 管理项目 <a href="#manage-items" id="manage-items"></a>
 
