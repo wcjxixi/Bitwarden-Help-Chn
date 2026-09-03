@@ -1,4 +1,4 @@
-# =邀请 & 管理成员
+# 邀请 & 管理成员
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/managing-users/)
@@ -26,17 +26,19 @@
 对于企业版组织，我们建议在邀请用户之前配置[企业策略](../oversight-visibility/enterprise-policies.md)，以确保新成员加入组织时符合合规要求。用户进入[接受](user-management.md#accept)状态后，他们将受组织策略的约束。
 {% endhint %}
 
-要邀请某人加入您的组织：
+选择一种邀请用户加入您的组织的方式：
 
+{% tabs %}
+{% tab title="电子邮件邀请" %}
 1、登录到 Bitwarden [网页 App](../../password-manager/getting-started/getting-started-webvault.md)，然后使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
-2、导航到**成员**，然后选择 <i class="fa-plus">:plus:</i>**邀请用户**按钮：
+2、导航到**成员**，然后选择 <i class="fa-plus">:plus:</i>**邀请成员**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>邀请成员加入组织</p></figcaption></figure></div>
 
-3、在邀请用户面板上：
+3、选择**通过电子邮件**选项卡：
 
 * 输入新用户用于接收邀请的**电子邮箱**地址。您可以使用逗号分隔电子邮箱地址一次性添加多个用户。
 * 选择要应用于新用户的**成员角色**。[成员角色](member-roles.md#member-roles)决定了这些用户在组织层面拥有哪些权限。
@@ -44,22 +46,104 @@
 * 在**集合**选项卡中，选择要为此用户授予访问权限的集合，以及他们应拥有的每个集合的[权限](member-roles.md#permissions)。
 
 4、点击**保存**以邀请指定的用户加入您的组织。
+{% endtab %}
+
+{% tab title="链接邀请" %}
+企业版组织可以生成一个可分享的邀请链接，任何拥有该链接的人，只要其电子邮箱域名在链接的允许列表中，即可使用该链接请求加入组织。这让管理员可以通过他们首选的通信渠道（如 Slack 或 Teams 消息）分发邀请，而无需依赖从 Bitwarden 发送的个人电子邮件。
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/TFK2JVOdL4WqjCk4xtQEi/c57df92f2d832569b9d63dcbb084aaec/edited_copy_link.png?w=700&#x26;fm=avif" alt=""><figcaption><p>复制链接</p></figcaption></figure></div>
+
+有效的邀请链接将包含以下结构：
+
+```
+https://vault.bitwarden.com/#/join/{inviteLinkCode}?key={inviteKey}
+```
+
+要生成邀请链接：
+
+1、登录到 Bitwarden [网页 App](../../password-manager/getting-started/getting-started-webvault.md)，然后使用产品切换器打开 Admin Console：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
+
+2、导航到**成员**，然后选择 <i class="fa-plus">:plus:</i>**邀请成员**：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>邀请成员加入组织</p></figcaption></figure></div>
+
+3、选择**通过链接**选项卡：
+
+4、输入一个或多个**允许的域名**。使用邀请链接时：
+
+* 只有这些域名上的电子邮箱地址才能使用该链接加入。
+* 必须始终至少存在一个域名，您无法生成不受限制的链接。
+  * 允许的域名为链接提供了额外的安全性。您应仅允许信任的域名。不建议使用诸如 gmail.com 之类的泛域名。
+* 移除允许的域名或生成新链接将使之前生成的链接失效。
+* 如果组织拥有[声明域名](../oversight-visibility/claimed-domains/claimed-domains.md)，该字段将自动预填入此域名。
+
+{% hint style="warning" %}
+**允许的**域名可让您更精细地控制哪些用户可以尝试加入您的组织。此外，请注意，允许的域名与已声明的域名是两种不同的机制。如果您的组织拥有**声明域名**，则在生成第一个链接时，该域名会自动填入允许的域名列表中。
+{% endhint %}
+
+5、选择**复制链接**，然后通过您首选的渠道分享。
 
 {% hint style="info" %}
-**邀请将在 5 天后过期**，届时需要重新邀请该成员。通过勾选每个用户并使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**选项图标**选择**重新发送邀请**来批量重新邀请成员：
+为了接受邀请链接，成员的电子邮箱地址必须经过验证。云端账户通常在注册时即完成验证。如果电子邮箱未经验证，未验证的用户可以登录网页 App 然后选择**验证电子邮箱**。
+{% endhint %}
+
+### 刷新或限制链接 <a href="#refresh-or-restrict-a-link" id="refresh-or-restrict-a-link"></a>
+
+邀请链接不会自行过期。若要使其失效，请选择**刷新**以生成新链接，旧链接将立即停用。从允许列表中移除所有域名也会使链接失效。
+
+{% hint style="info" %}
+邀请链接适用于企业版组织。如果您的组织已从企业版降级，现有链接将不再有效，且**通过链接**选项卡将不可用。
+{% endhint %}
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+**电子邀请将在 5 天后过期**，届时需要重新邀请该成员。可通过勾选每个用户并使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**选项图标**选择**重新发送邀请**来批量重新邀请成员：
 
 <img src="https://bitwarden.com/assets/1yj3MLJDTr7zOn5TwP0FGJ/67a16c6ee6ee14a92aa350986244e164/Resend_invitations.png?w=1200&#x26;fm=avif" alt="" data-size="original">
 
 如果您是自托管 Bitwarden，您可以使用[环境变量](../../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)来配置邀请的有效期。
+
+**链接邀请**不会过期，除非允许的域名已被移除、链接已被轮换或链接已被停用。
 {% endhint %}
 
 ### 接受 <a href="#accept" id="accept"></a>
 
+用户要接受组织邀请：
+
+{% tabs %}
+{% tab title="电子邮件邀请" %}
 受邀用户将收到一封来自 Bitwarden 的电子邮件，邀请他们加入组织。点击电子邮件中的链接将打开 Bitwarden 网页 App，用户可以在其中登录或创建账户以接受邀请：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4Fe96NuWb7yRe6muKf7UbZ/bcb1a8df0bc2ffdecbcd86b82d16c9a3/2025-09-03_10-41-25.png?w=711&#x26;fm=avif" alt=""><figcaption><p>组织邀请</p></figcaption></figure></div>
 
 您必须**完全登录到 Bitwarden 网页 App** 才能接受邀请。接受邀请后，管理员需要[确认](user-management.md#confirm)访问权限。确认后，您将收到可以访问组织的通知。此外，组织成员在接受邀请时，其[电子邮箱将自动验证](../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)。
+{% endtab %}
+
+{% tab title="链接邀请" %}
+受邀用户将通过组织管理员首选的方式收到链接，例如电子邮件、Slack、Teams 等。用户确认该链接是来自可靠来源后，点击链接将把他们重定向到组织邀请页面：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3L7jnjSHjQpjVkhCwbkC5j/b309ddcd2bc75cac1d6a64a4d423da66/join_invite_link.png?w=400&#x26;fm=avif" alt=""><figcaption><p>打开组织邀请链接</p></figcaption></figure></div>
+
+要加入该组织：
+
+* **新用户**：填写对话框中显示的字段，以创建新的 Bitwarden 账户。
+* **现有用户**：选择创建账户对话框下方的**登录**。现有用户必须拥有[已验证电子邮箱](../../password-manager/more/password-manager-faqs.md#q-what-features-are-unlocked-when-i-verify-my-email)的账户，才能接受组织邀请。
+
+您接受邀请后，管理员将需要[确认](user-management.md#confirm)访问权限。确认后，您将收到通知，即可访问该组织。
+
+{% hint style="info" %}
+接受邀请链接时，用于登录或创建新账户的电子邮箱地址，将与组织的允许域名列表进行核对。如果使用链接未能成功，请检查：
+
+* 地址域名是否与组织的允许域名列表匹配。
+* 管理员是否尚未删除、轮换或停用该链接。
+* 您现有的 Bitwarden 账户是否符合组织策略，例如[单一组织](../oversight-visibility/enterprise-policies.md#single-organization)策略。
+* 您之前尚未接受加入此组织的邀请。
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 在用户被[确认](user-management.md#confirm)之前，需要先遵守以下策略。这些策略包括：

@@ -39,7 +39,7 @@ Bitwarden Send 功能让您能够通过安全生成的链接，与任何人分�
 该页面将列出所有您创建的尚未达到[删除日期](send-lifespan.md#deletion-date)的 Send。您可以选择某一可用的**类型**来筛选 Send。
 {% endhint %}
 
-2、选择 ✚**新建**：
+2、选择 <i class="fa-plus">:plus:</i>**新增**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/9KgYcB25tb8NfYnitr0c0/a874be205a9a09ed66ad33a8d4c95ca9/2026-02-25_10-37-01.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>新建 Send</p></figcaption></figure></div>
 
@@ -102,7 +102,7 @@ Send 创建后，使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>*
 该页面将列出所有您创建的尚未达到[删除日期](send-lifespan.md#deletion-date)的 Send。您可以选择某一可用的**类型**来筛选 Send。
 {% endhint %}
 
-2、选择 ✚**新建**：
+2、选择  <i class="fa-plus">:plus:</i>**新增**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2qOv6DJYX1is2zurmeVBOd/5d2f0fd435c2534bc3377d651cd4f7f1/2026-02-25_11-11-56.png?w=480&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展中的 Send 视图</p></figcaption></figure></div>
 
@@ -159,7 +159,7 @@ Send 创建后，您可以复制链接，或选择  <i class="fa-ellipsis-vertic
 该页面将列出所有您创建的尚未达到[删除日期](send-lifespan.md#deletion-date)的 Send。您可以选择某一可用的**类型**来筛选 Send。
 {% endhint %}
 
-2、选择 ✚**新建**：
+2、选择  <i class="fa-plus">:plus:</i>**新增**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2O01p5FyMpUhlhi5bAq7mH/3135d39e953c52bb0d843ee6afeb1121/2026-04-23_11-48-19.png?w=979&#x26;fm=avif" alt=""><figcaption><p>桌面 App 中的 Send 视图</p></figcaption></figure></div>
 
@@ -216,7 +216,7 @@ Send 创建后，选择 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 
 该页面将列出所有您创建的尚未达到[删除日期](send-lifespan.md#deletion-date)的 Send。您可以选择某一可用的**类型**来筛选 Send。
 {% endhint %}
 
-2、选择 ✚**新建**图标：
+2、选择  <i class="fa-plus">:plus:</i>**新增图标**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5vHsSA3o9O735MitlnOPVr/e2eeb5387bf1358f4aa0aaafbfaa3d5c/new_send_mobile.png?w=715&#x26;fm=avif" alt=""><figcaption><p>移动 App 中的 Send</p></figcaption></figure></div>
 

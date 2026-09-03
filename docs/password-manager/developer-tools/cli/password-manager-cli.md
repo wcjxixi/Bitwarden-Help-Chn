@@ -352,6 +352,20 @@ bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --outp
 使用 `--output` 时，路径必须以正斜杠（`/`）结尾，以指定一个目录或者一个文件名（`/Users/myaccount/Pictures/photo.png`）。
 {% endhint %}
 
+#### get notes
+
+&#x20;`get notes` 命令检索任何密码库项目的备注：
+
+```shellscript
+bw get notes <id>
+```
+
+`get notes` 命令接受一个精确的项目 ID 或字符串。如果您使用字符串（例如，除精确 ID 之外的任何值），`get notes` 将会在您的密码库对象中搜索具有匹配值的条目。例如，以下命令将返回 GitHub 的备注：
+
+```shellscript
+bw get notes Github
+```
+
 #### **get template** <a href="#get-template" id="get-template"></a>
 
 &#x20;`get template` 命令用于返回对象预期的 JSON 格式（`item`、`item.field`、`item.login` 等）：

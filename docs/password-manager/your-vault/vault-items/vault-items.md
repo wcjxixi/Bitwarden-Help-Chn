@@ -1,4 +1,4 @@
-# =密码库项目
+# 密码库项目
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/managing-items/)
@@ -51,6 +51,38 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 {% endtabs %}
 
 ## 复制项目凭据 <a href="#copy-item-credentials" id="copy-item-credentials"></a>
+
+要复制项目的详细信息：
+
+{% tabs %}
+{% tab title="网页 App" %}
+将鼠标悬停在项目上，然后选择项目旁边的 <i class="fa-copy">:copy:</i>**复制图标**。此时将出现一个菜单，您可以在其中选择**复制用户名**或**复制密码**：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/45nnuRuxCcsbYiqG0q1kJM/db8893edf1915ee8bade94075fa5bf2d/Copy_item.png?w=1284&#x26;fm=avif" alt=""><figcaption><p>在网页 App 中复制</p></figcaption></figure></div>
+
+您还可以前往**设置** → **外观**，勾选**在密码库中显示快速复制操作**。之后，当您将鼠标悬停在某个项目上时，就会出现图标，方便您将用户名、密码或验证码复制到剪贴板：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/71DuuvJA5TlEBrS28GwaR3/76fe8821f920a53e2ef3420a0f8ea591/Quick_copy_in_web_app.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>在网页 App 中快速复制</p></figcaption></figure></div>
+{% endtab %}
+
+{% tab title="浏览器扩展" %}
+Bitwarden 浏览器扩展提供了多种[自动填充](../../autofill/autofill-from/autofill-from-browser-extensions.md)方法，包括[复制按钮](../../autofill/autofill-from/autofill-from-browser-extensions.md#copy-credentials)。
+{% endtab %}
+
+{% tab title="移动端" %}
+您可以使用 [iOS App](../../autofill/autofill-from/autofill-from-ios.md) 和 [Android App](../../autofill/autofill-from/autofill-from-android.md) 自动填充项目。
+{% endtab %}
+
+{% tab title="桌面端" %}
+打开项目，然后选择字段旁边的 <i class="fa-copy">:copy:</i>**复制图标**：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7KlGYgWWe0BdkY5UQFerwN/91cca24b2fc1c6bb6a0ea138bad05f0d/Copy_credential_on_desktop.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>在桌面端复制凭据</p></figcaption></figure></div>
+{% endtab %}
+
+{% tab title="CLI" %}
+使用 `get` 命令检索对象，例如用户名或密码。请参阅 [CLI 文档](../../developer-tools/cli/password-manager-cli.md#get)以获取更多信息。。
+{% endtab %}
+{% endtabs %}
 
 ## 管理项目 <a href="#manage-items" id="manage-items"></a>
 
@@ -167,6 +199,10 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 选择该项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单，然后选择 <i class="fa-trash-can">:trash-can:</i>**删除**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3OYHvfRCDy3OphkbEHIJEA/fa47beb671d6efc34a18d05daf630aff/webappnewtest3.png?w=1325&#x26;fm=avif" alt=""><figcaption><p>项目选项</p></figcaption></figure></div>
+
+使用操作栏删除多个项目：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7zvvNDdxoagjN3OIfutrxo/26c74435273fdcb156ec617830128c04/delete_bulk.png?w=900&#x26;fm=avif" alt=""><figcaption><p>删除多个项目</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -185,6 +221,10 @@ Bitwarden 能安全存储的不仅仅是用户名和密码。您可以在密码�
 选择一个项目将其打开，然后选择 <i class="fa-trash-can">:trash-can:</i>删除图标：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1E8ieEw6639tLYAxe2HYir/2ec594025ea37103c9cf0de93c41e9aa/2026-04-23_10-02-08-2.png?w=979&#x26;fm=avif" alt=""><figcaption><p>删除项目</p></figcaption></figure></div>
+
+使用操作栏删除多个项目：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5OBKzVV9IS7fuym9g5gchb/cdc55f2efe045a9ab6f7fac939f813a6/bulk_delete_desktop.png?w=700&#x26;fm=avif" alt=""><figcaption><p>删除多个项目</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="CLI" %}
