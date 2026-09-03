@@ -41,7 +41,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* <i class="fa-star">:star:</i>**网页 App 快速复制**：新的设置会在您将鼠标悬停在网页 App 中的密码库项目上时显示复制快捷按钮，从而加快复制项目的凭据的速度。
+* <i class="fa-star">:star:</i>**网页 App 快速复制**：新的设置会在您将鼠标悬停在网页 App 中的密码库项目上时显示复制快捷按钮，从而加快[复制项目的凭据](password-manager/your-vault/vault-items/vault-items.md#copy-item-credentials)的速度。
 * <i class="fa-star">:star:</i>**「新增」按钮重命名为「添加」或「创建」**：现在，「新增」按钮在大多数位置下更名为 <i class="fa-plus">:plus:</i>**添加**，包括[添加新的密码库项目](password-manager/your-vault/vault-items/vault-items.md#add-items)时，以及在配置 [Send](password-manager/bitwarden-send/create-a-send.md#create-a-send) 时更名为 <i class="fa-plus">:plus:</i>**创建**。此更新仅为界面美观性更改，功能未做任何更改。
 
 ### Admin Console
