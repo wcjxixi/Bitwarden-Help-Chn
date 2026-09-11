@@ -441,6 +441,43 @@ bw list items --search github --folderid 9742101e-68b8-4a07-b5b1-9578b5f88e6f
 
 此命令将在指定的文件夹中搜索具有字符串为 `github` 的项目。
 
+### report
+
+`report` 命令用于根据您密码库中的内容生成一份报告：
+
+```shellscript
+bw report password-health [options]
+```
+
+`report` 命令接受一个表示要运行的报告类型的对象作为参数，并返回一个 JSON 对象数组。目前，该命令支持 `password-health` 报告。`report` 会读取解密后的密码库数据，因此您需要有一个有效的会话密钥。
+
+#### password-health
+
+`password-health` 参数会评估任何具有密码的登录项目的密码，检查其是否存在弱密码、重复使用以及出现在已知数据泄露中的情况。[非登录项目](../../your-vault/vault-items/vault-items.md#item-types)、没有关联密码的登录以及[回收站中的项目](../../your-vault/vault-items/vault-items.md#vault-trash)将被忽略。JSON 数组中返回的每个对象都类似于如下格式：
+
+```bash
+{
+    "object": "password-health", #始终为 password-health
+    "id": "0eb24d58-6qbe-438f-85c4-b38c10f4f256", #登录项目的 ID
+    "name": "Netflix", #登录项目的名称
+    "passwordStrength": 0, #此密码的强度评分，范围从 0（最弱）到 4（最强）
+    "reuseCount": 3, #您的密码库中共用此密码的项目数量；若密码唯一，则为 null
+    "exposed": true, #此密码是否出现在已知的数据泄露事件中（true 或 false）
+    "exposedCount": 52372427, #此密码涉及的数据泄露事件数量；若未在数据泄露事件中发现此密码，则为 null
+    "exposedError": null #除非针对此项目的泄露检查失败，否则为 null
+  },
+```
+
+{% hint style="info" %}
+泄露检查会针对每一个登录项目向 Have I Been Pwned 发起一次请求，对于大规模的密码库，此过程可能需要一些时间。在运行过程中，CLI 会将进度指示器写入 `stderr`。这可以保持 `stdout` 输出为干净的 JSON，您可以将其重定向到某个文件：
+
+```shellscript
+bw report password-health > password-health.json
+```
+
+您还可以使用 `--no-check-exposed` 选项完全跳过泄露检查，这种情况下，`password-health` 进程将不会发出任何网络请求。
+{% endhint %}
+
 ### delete
 
 `delete` 命令用于从您的密码库中删除一个对象。`delete` 仅使用确切的 `id` 作为其参数。
