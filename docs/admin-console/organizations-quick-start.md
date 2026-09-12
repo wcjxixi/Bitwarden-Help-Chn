@@ -98,7 +98,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 作为组织所有者，邀请新成员的步骤如下：
 
-1、在 Admin Console 中，从导航栏选择**成员**选项卡然后选择 ✚**邀请成员**按钮：
+1、在 Admin Console 中，从导航栏选择**成员**选项卡然后选择 <i class="fa-plus">:plus:</i>**邀请成员**按钮：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>邀请成员加入组织</p></figcaption></figure></div>
 
@@ -128,7 +128,7 @@ Bitwarden 组织具有深层次的[用户级别访问控制](manage-members/memb
 
 1、在 Admin Console 中，从导航栏选择**成员**选项卡。
 
-2、选中任何`已接受`的用户并使用 **≡**&#x9009;项菜单 **✔︎确认所选**：
+2、选中任何`已接受`的用户并使用 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>选项菜单 <i class="fa-check">:check:</i>**确认所选**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5eRDRAooRSGqRWJYZB5fgz/f3eac670d95664be963d2b38eddf68b5/Confirm_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>确认成员加入组织</p></figcaption></figure></div>
 
@@ -156,7 +156,7 @@ Bitwarden组织的神奇之处在于，属于您的项目和[属于组织](organ
 
 安全共享之路的最后一步是创建一个项目并将其移动到组织以便共享。现有的[密码库项目](../password-manager/your-vault/vault-items/vault-items.md)可以在创建后被移动到组织，但在本指南中，我们将重点放在如何从您的个人密码库创建一个新的登录：
 
-1. 在**密码库**页面上，选择 ✚**新增**按钮，然后选择**登录**。
+1. 在**密码库**页面上，选择 <i class="fa-plus">:plus:</i>**新增**按钮，然后选择**登录**。
 2. 为您的新登录项目填写所有相关信息（例如用户名和密码）。该项目可以是您希望自己和其他组织用户都可以访问的任何内容，例如家庭流媒体帐户。
 3. 在**添加项目**面板顶部的**所有权**部分，勾选您的组织以指定此项目用于共享。
 4. 选择一个或多个用于存放此项目的**集合**。两人组织的用户通常设置为两人对所有集合的访问权限。在更大或更复杂的组织中，您将项目存放到哪个集合将决定谁可以访问它。

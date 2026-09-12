@@ -45,7 +45,7 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 * 如果您使用的是升级版方案，请输入所需的**订阅席位**数量（最多不超过您的 Password Manager 订阅总数）以及超出方案已包含的总数量（团队版为 20 个，企业版为 50 个）的**附加机器账户**数量。选择**保存**。
 
 {% hint style="info" %}
-添加新用户或机器账户时，Secrets Manager 将自动扩展您的用户席位和机器账户。您可以随时转到**计费** → **订阅**来更改允许的用户席位和机器账户的总数。要设置扩展限制，请选择**限制订阅**和**限制计机器账户**：
+添加新用户或机器账户时，Secrets Manager 将自动扩展您的用户席位和机器账户。您可以随时转到**计费** → **订阅**来更改允许的用户席位和机器账户的总数。要设置扩展限制，请选择**限制订阅**和**限制机器账户**：
 
 <img src="https://bitwarden.com/assets/6tcOx1PSHT54CQGPkbBZZ2/33a91dde38fdad0fd921403c2de77e00/Limit_subscription_seats_and_machine_accounts.png?w=765&#x26;fm=avif" alt="" data-size="original">
 {% endhint %}

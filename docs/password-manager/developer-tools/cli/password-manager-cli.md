@@ -43,7 +43,7 @@ CLI 的本地打包版本可用于每个平台，并且无须依赖。使用以�
 请注意，当使用下载的本机可执行文件时，您需要将可执行文件添加到您的 PATH 中，或者从文件下载到的目录运行命令。
 
 {% hint style="success" icon="lightbulb" %}
-在 Linux 和 UNIX 系统中，您可能会收到 `Permission denied` （权限被拒绝）的消息。通过运行下面的命令授予权限：
+在 Linux 和 UNIX 系统中，您可能会收到 `Permission denied`（权限被拒绝）的消息。通过运行下面的命令授予权限：
 
 ```shellscript
 chmod +x </path/to/executable>
@@ -226,7 +226,7 @@ bw unlock --passwordfile ~/Users/Me/Documents/mp.txt
 
 ### 使用会话密钥 <a href="#using-a-session-key" id="using-a-session-key"></a>
 
-当您使用电子邮箱和密码方式的 `bw login` 或 `bw unlock` 解锁您的密码库时，CLI 将同时返回 `export BW_SESSION`（Bash）和 `env:BW_SESSION`（PowerShell）命令，其中包含了您的会话密钥。复制并粘贴相关条目以保存所需的环境变量。
+当您使用电子邮箱和密码方式的 `bw login` 或 `bw unlock` 解锁您的密码库时，CLI 将同时返回 `export BW_SESSION` (Bash) 和 `env:BW_SESSION` (PowerShell) 命令，其中包含了您的会话密钥。复制并粘贴相关条目以保存所需的环境变量。
 
 如果设置了 `BW_SESSION` 环境变量，`bw` 命令将引用该变量，以干净清爽地运行，例如：
 
@@ -299,7 +299,7 @@ bw get template item | jq '.type = 2 | .secureNote.type = 0 | .notes = "Contents
 ```
 
 {% hint style="info" %}
-请注意，在上面的示例中，安全笔记需要一个子模板（`.secureNote.type`）。您可以使用 `bw get template` 查看项目类型的子模板（详细见[此处](password-manager-cli.md#get)）。
+请注意，在上面的示例中，安全笔记需要一个子模板 (`.secureNote.type`)。您可以使用 `bw get template` 查看项目类型的子模板（详细见[此处](password-manager-cli.md#get)）。
 {% endhint %}
 
 #### **create** attachment <a href="#create-attachment" id="create-attachment"></a>
@@ -318,7 +318,7 @@ bw create attachment --file ./path/to/file --itemid 16b15b89-65b3-4639-ad2a-9505
 
 ### get
 
-`get` 命令用于从您的密码库中检索单个对象（ `item`、`username`、`password`等）：
+`get` 命令用于从您的密码库中检索单个对象（`item`、`username`、`password`等）：
 
 ```shellscript
 bw get (item|username|password|uri|totp|exposed|attachment|folder|collection|organization|org-collection|template|fingerprint) <id> [options]
@@ -349,7 +349,7 @@ bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --outp
 ```
 
 {% hint style="info" %}
-使用 `--output` 时，路径必须以正斜杠（`/`）结尾，以指定一个目录或者一个文件名（`/Users/myaccount/Pictures/photo.png`）。
+使用 `--output` 时，路径必须以正斜杠 (`/`) 结尾，以指定一个目录或者一个文件名（`/Users/myaccount/Pictures/photo.png`）。
 {% endhint %}
 
 #### get notes
@@ -419,7 +419,7 @@ bw get collection ee9f9dc2-ec29-4b7f-9afb-aac8010631a1 | jq '.name="My Collectio
 
 ### list
 
-`list` 命令用于从您的密码库中检索一组对象（ `items`、`folders`、`collections` 等）：
+`list` 命令用于从您的密码库中检索一组对象（`items`、`folders`、`collections` 等）：
 
 ```shellscript
 bw list (items|folders|collections|organizations|org-collections|org-members) [options]
@@ -690,7 +690,7 @@ bw sync
 
 ### encode
 
-`encode` 命令用于对 stdin（标准输入） 进行 Base 64 编码。在执行 `create` 和 `edit` 操作时，此命令通常与 [json 这样的命令行 JSON 处理器](https://stedolan.github.io/jq/)结合使用，例如：
+`encode` 命令用于对 stdin（标准输入）进行 Base 64 编码。在执行 `create` 和 `edit` 操作时，此命令通常与 [json 这样的命令行 JSON 处理器](https://stedolan.github.io/jq/)结合使用，例如：
 
 ```shellscript
 bw get template folder | jq '.name="My First Folder"' | bw encode | bw create folder
@@ -770,7 +770,7 @@ bw generate -uln --length 14
 bw generate --passphrase --words <words> --separator <separator>
 ```
 
-默认情况下，`bw generate --passphrase` 命令将生成一个 3 个单词的密码短语，并用破折号（-）分隔。这等效于：
+默认情况下，`bw generate --passphrase` 命令将生成一个 3 个单词的密码短语，并用破折号 (-) 分隔。这等效于：
 
 ```shellscript
 bw generate --passphrase --words 3 --separator -
@@ -795,7 +795,7 @@ shbw update
 
 ### status
 
-`status` 命令用于返回 Bitwarden CLI 的状态信息，包括[已配置](password-manager-cli.md#config)的服务器 URL、最后一次同步的时间戳（[ISO 8601](https://zh.wikipedia.org/wiki/ISO_8601)）、用户电子邮箱和 ID，以及密码库状态。
+`status` 命令用于返回 Bitwarden CLI 的状态信息，包括[已配置](password-manager-cli.md#config)的服务器 URL、最后一次同步的时间戳 ([ISO 8601](https://zh.wikipedia.org/wiki/ISO_8601))、用户电子邮箱和 ID，以及密码库状态。
 
 ```shellscript
 bw status

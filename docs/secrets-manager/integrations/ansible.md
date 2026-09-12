@@ -65,7 +65,7 @@ export BWS_ACCESS_TOKEN=<ACCESS_TOKEN_VALUE>
 
 ### 在 playbook 中提供访问令牌 <a href="#supply-access-token-in-playbook" id="supply-access-token-in-playbook"></a>
 
-Secrets Manager 访问令牌也可以在 playbook 中被引用。这种方法不需要在您的 shell 中使用环境变量 `BWS_ACCESS_TOKEN` ，但访问令牌的值将存储在 playbook 中。
+Secrets Manager 访问令牌也可以在 playbook 中被引用。这种方法不需要在您的 shell 中使用环境变量 `BWS_ACCESS_TOKEN`，但访问令牌的值将存储在 playbook 中。
 
 1、访问令牌可以包含在 playbook 中，示例如下：
 
@@ -79,7 +79,7 @@ access_token='<ACCESS_TOKEN_VALUE>') }}"
 
 ## 从不同的服务器获取机密 <a href="#retrieve-secret-from-different-server" id="retrieve-secret-from-different-server"></a>
 
-Bitwarden 自托管用户可以通过包含 `base_url,` `api_url` 和 `identity_url` 从他们的 Bitwarden 服务器中获取机密：
+Bitwarden 自托管用户可以通过包含 `base_url`、`api_url` 和 `identity_url` 以从他们的 Bitwarden 服务器中获取机密：
 
 ```yaml
 vars:
@@ -145,7 +145,7 @@ vars:
 }
 ```
 
-要获取额外的字段，例如 `"note"` ，可以将以下命令添加到 playbook 中：
+要获取额外的字段，例如 `"note"`，可以将以下命令添加到 playbook 中：
 
 ```yaml
   vars:

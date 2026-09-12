@@ -1,4 +1,4 @@
-# 轮换 Helm 身份证书密码
+# \*轮换 Helm 身份证书密码
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/rotate-identity-certificate-helm/)
@@ -18,7 +18,7 @@
 
 Bitwarden 身份服务器使用 PKCS#12 (`.pfx`) 证书对其访问令牌和刷新令牌进行签名。在 Helm chart 中，该证书及其密码在安装期间生成，并存储在两个 Kubernetes Secret 中。
 
-`2.0.0` 之前的 Chart 版本存在一个缺陷，每次安装时都会将 `.pfx` 密码设置为固定值 `map[]` 。由于该值是公开的且在所有地方都相同，因此任何获取到您的 `identity.pfx` 文件（通过备份、快照、支持包或 Pod 访问权限）的人都可以对其进行解密，并恢复您的令牌签名私钥。
+`2.0.0` 之前的 Chart 版本存在一个缺陷，每次安装时都会将 `.pfx` 密码设置为固定值 `map[]`。由于该值是公开的且在所有地方都相同，因此任何获取到您的 `identity.pfx` 文件（通过备份、快照、支持包或 Pod 访问权限）的人都可以对其进行解密，并恢复您的令牌签名私钥。
 
 该缺陷已在 `2.0.0` 及更高版本中修复（密码现在每次安装都会生成随机值），但升级不会轮换现有密码——密码只生成一次，并在升级过程中保持不变。因此，如果您最初安装的版本早于 `2.0.0` ，则您的证书将一直保留 `map[]` 密码，**直到您轮换密码为止**。轮换密码后，现有证书将使用新的随机密码重新加密。
 
@@ -67,7 +67,7 @@ kubectl get secret <release>-identity-cert -n bitwarden -o jsonpath='{.data.iden
 wc -c < identity.pfx
 ```
 
-返回的大小为 `0` 表示未找到机密或 `identity.pfx` ，这通常是由于机密名称拼写错误造成的。
+返回的大小为 `0` 表示未找到机密或 `identity.pfx`，这通常是由于机密名称拼写错误造成的。
 
 2、生成新密码并使用新密码重新加密证书。以下三条命令必须**逐字逐句地**在**同一个 shell 会话**中**独立**运行：
 
@@ -113,7 +113,7 @@ kubectl rollout status deployment/<release>-identity -n bitwarden
 kubectl rollout status deployment/<release>-sso -n bitwarden
 ```
 
-6、待两个滚动更新均成功完成后，删除本地工作文件。尤其需要删除 `identity.pem` ，因为它包含未加密的私钥：
+6、待两个滚动更新均成功完成后，删除本地工作文件。尤其需要删除 `identity.pem`，因为它包含未加密的私钥：
 
 ```bash
 rm identity.pfx identity.pem identity-rotated.pfx

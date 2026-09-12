@@ -77,7 +77,7 @@ Bitwarden 桌面 App 支持 SSH 密钥导入功能。使用 Bitwarden 桌面 App
 
 2、复制您想要导入到 Bitwarden 的现有 SSH 密钥。
 
-* 复制时，请包含密钥的头部和尾部，例如 `-----BEGIN OPENSSH PRIVATE KEY-----` 和 `-----END OPENSSH PRIVATE KEY-----` 。
+* 复制时，请包含密钥的头部和尾部，例如 `-----BEGIN OPENSSH PRIVATE KEY-----` 和 `-----END OPENSSH PRIVATE KEY-----`。
 
 3、使用**从剪贴板导入密钥**图标。这将自动将 SSH 密钥粘贴到 Bitwarden 中。
 
@@ -126,4 +126,4 @@ Bitwarden SSH 代理目前不支持以下操作。
 
 如果您在安装 Bitwarden 的同时也安装了原生 SSH 代理，并在本地存储了一些密钥，那么当 Bitwarden 代理不可用或返回失败时，您的 SSH 客户端可能会默认使用原生代理。如果您的授权设置设为**从不**或**记住直到密码库锁定**，则不会有任何 UI 交互来指示究竟是哪个代理处理了该请求。
 
-如果您需要将密钥同时存储在本地和 Bitwarden SSH 代理中，请考虑将其放在非标准位置，而不是 `~/.ssh/` ，以降低意外回退的可能性。
+如果您需要将密钥同时存储在本地和 Bitwarden SSH 代理中，请考虑将其放在非标准位置，而不是 `~/.ssh/`，以降低意外回退的可能性。

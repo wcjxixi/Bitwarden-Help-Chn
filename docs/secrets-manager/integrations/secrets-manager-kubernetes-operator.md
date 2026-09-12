@@ -6,7 +6,7 @@
 
 Bitwarden Secrets Manager Kubernetes Operator 允许团队安全高效地将 Secrets Manager 集成到 Kubernetes 工作流中。使用 [Helm](https://helm.sh/) 包管理器部署的 Operator，可以从 Secrets Manager 中存储和获取机密。
 
-`sm-operator` 使用控制器将 Bitwarden 机密同步到 Kubernetes 机密中。Operator 将 Custom Resource Definition：`BitwardenSecret` 注册到 Kubernetes 集群中。集群将侦听新注册的 `BitwardenSecret` ，并按可配置的时间间隔进行同步。
+`sm-operator` 使用控制器将 Bitwarden 机密同步到 Kubernetes 机密中。Operator 将 Custom Resource Definition：`BitwardenSecret` 注册到 Kubernetes 集群中。集群将侦听新注册的 `BitwardenSecret`，并按可配置的时间间隔进行同步。
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
@@ -65,10 +65,10 @@ helm show values bitwarden/sm-operator > my-values.yaml
 helm upgrade sm-operator bitwarden/sm-operator -i --debug -n sm-operator-system --create-namespace --values my-values.yaml
 ```
 
-此命令在命名空间 `sm-operator-system` 中安装或升级名为 `sm-operator` 的版本，其值来自 `my-values.yaml` 。
+此命令在命名空间 `sm-operator-system` 中安装或升级名为 `sm-operator` 的版本，其值来自 `my-values.yaml`。
 
 {% hint style="warning" %}
-要查看 `helm install` 或 `helm upgrade` 命令的信息，请运行 `helm install --help` 或 `helm upgrade --help` 。
+要查看 `helm install` 或 `helm upgrade` 命令的信息，请运行 `helm install --help` 或 `helm upgrade --help`。
 {% endhint %}
 
 ## 创建 Bitwarden 机密 <a href="#create-bitwarden-secrets" id="create-bitwarden-secrets"></a>

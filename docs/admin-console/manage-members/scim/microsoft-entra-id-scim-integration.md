@@ -75,12 +75,7 @@ Bitwarden 使用标准的 SCIM v2 属性名称，尽管这些名称可能与 Mic
 
 如果您希望目录中的用户对象与 Bitwarden 同步，您可以启用或禁用 **Provision Microsoft Entra ID Users**。默认情况下启用此功能。如果您希望根据下表进行更改，请选择 **Provision Microsoft Entra ID Users** 链接以自定义用户对象发送给 Bitwarden 的属性：
 
-| Bitwarden 属性                                                | 默认 AAD 属性                                                     |
-| ----------------------------------------------------------- | ------------------------------------------------------------- |
-| `active`                                                    | `Switch([IsSoftDeleted], , "False", "True", "True", "False")` |
-| `emails` <mark style="color:red;">**ª**</mark> 或 `userName` | `mail` 或 `userPrincipalName`                                  |
-| `displayName`                                               | `displayName`                                                 |
-| `externalId`                                                | `mailNickname`                                                |
+<table><thead><tr><th width="269.800048828125">Bitwarden 属性</th><th>默认 AAD 属性</th></tr></thead><tbody><tr><td><code>active</code></td><td><code>Switch([IsSoftDeleted], , "False", "True", "True", "False")</code></td></tr><tr><td><code>emails</code> <mark style="color:red;"><strong>ª</strong></mark> 或 <code>userName</code></td><td><code>mail</code> 或 <code>userPrincipalName</code></td></tr><tr><td><code>displayName</code></td><td><code>displayName</code></td></tr><tr><td><code>externalId</code></td><td><code>mailNickname</code></td></tr></tbody></table>
 
 <mark style="color:red;">**ª**</mark> - 由于 SCIM 允许用户拥有多个电子邮箱地址（以对象数组形式表示），Bitwarden 将使用包含 `"primary": true` 的对象的 `value`。
 

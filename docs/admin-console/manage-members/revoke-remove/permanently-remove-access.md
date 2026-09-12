@@ -18,7 +18,7 @@
 
 2、选择要移除的用户，然后选择 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**选项**图标。
 
-3、选择 **✘移除**：
+3、选择 <i class="fa-xmark">:xmark:</i>**移除**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5hTYQXah4C90KJcZnWwnqs/83372c5f7e37a9ea27cb14cc78b3b93e/2024-12-03_15-06-01.png?w=1197&#x26;fm=avif" alt=""><figcaption><p>移除成员</p></figcaption></figure></div>
 

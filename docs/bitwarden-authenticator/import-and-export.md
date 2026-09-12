@@ -15,7 +15,7 @@
 3. 从**文件格式**下拉菜单中，选择导入文件的来源：
    * **Authenticator 导出 (JSON)**：导入 Bitwarden Authenticator 或 Bitwarden Password Manager `.json` 的导出。使用下面章节中的说明，了解如何使用 Bitwarden Authenticator 创建 `.json` 导出的信息。导入 [Bitwarden Password Manager .json 的导出](../password-manager/import-and-export/export-vault-data.md)将解析文件并导入 TOTP 种子。
    * **Google Authenticator（二维码）**：从 Google Authenticator 中的**转移账户**界面，使用二维码从 Google Authenticator 导入。使用 Bitwarden Authenticator 扫描生成的二维码即可完成导入。
-   * **LastPass (JSON)**：从 LastPass Authenticator **设置** → **转移账户**界面，以导入 LastPass Authenticator 账户的导出，。
+   * **LastPass (JSON)**：从 LastPass Authenticator **设置** → **转移账户**界面，以导入 LastPass Authenticator 账户的导出。
    * **2FAS (.2fas)**：导入 2FAS 备份文件，该文件可以从 2FAS **设置** → **2FAS 备份**界面制作。只有不受密码保护的备份文件才能导入到 Bitwarden Authenticator。
    * **Raivo (JSON)（仅限 iOS）**：从 Raivo **设置**界面，使用**导出 OTP 到 ZIP 存档**选项进行导出，以导入 Raivo OTP 的导出。您需要使用您的主密码解密 `.zip` 文件，并将随附的 `raivo-otp-export.json` 文件导入 Bitwarden Authenticator。
    * **Aegis（仅 Android）**：从 Aegis **导入 & 导出**界面进行导出，以导入未加密的 Aegis .json 导出。

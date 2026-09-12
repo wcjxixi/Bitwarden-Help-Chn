@@ -16,7 +16,7 @@
 
 ## 嵌套集合 <a href="#nested-collections" id="nested-collections"></a>
 
-当您嵌套一个集合时，它会按层次结构组织在另一个集合下。首次创建集合时或稍后转至**集合** → **≡**&#x56FE;标 → **编辑信息**，选择**集合的嵌套位置**：
+当您嵌套一个集合时，它会按层次结构组织在另一个集合下。首次创建集合时或稍后转至**集合** → <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**图标** → **编辑信息**，选择**集合的嵌套位置**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4WE9iu5h5WwMh2hTbMV0Q6/f3cfc507b06de6e8243a76685d598066/Nested_collection.png?w=988&#x26;fm=avif" alt=""><figcaption><p>嵌套集合</p></figcaption></figure></div>
 

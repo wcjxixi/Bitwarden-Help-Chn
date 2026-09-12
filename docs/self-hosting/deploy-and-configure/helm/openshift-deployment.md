@@ -34,7 +34,7 @@ Bitwarden 会在启动时检测您的环境是否限制了用户容器的运行�
 
 ### 禁用默认入口 <a href="#disable-default-ingress" id="disable-default-ingress"></a>
 
-1、访问 `my-values.yaml` 。
+1、访问 `my-values.yaml`。
 
 2、通过指定 `ingress.enabled: false` 禁用默认的入口
 

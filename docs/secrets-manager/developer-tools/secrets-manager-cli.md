@@ -638,7 +638,7 @@ bws get secret 2863ced6-eba1-48b4-b5c0-afa30104877a --config-file ~/.bws/alt_con
 bws list secrets --server-url http://my_hosted_server.com
 ```
 
-此选项将覆盖通过 `config` 命令配置的任何 URL（请参阅此处）。
+此选项将覆盖通过 `config` 命令配置的任何 URL（请参阅[此处](secrets-manager-cli.md#config)）。
 
 ### --help
 

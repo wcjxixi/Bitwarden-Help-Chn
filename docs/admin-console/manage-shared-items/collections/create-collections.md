@@ -32,7 +32,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3CBN5Em0nHhMdzbzPWoLJe/0fd30301f94670098de41dd4e0ea5d77/2026-07-07_08-50-35.png?w=847&#x26;fm=avif" alt=""><figcaption><p>删除集合</p></figcaption></figure></div>
 
-删除集合不会删除其中包含的任何密码库项目。但集合本身将被永久删除。<br>
+删除集合不会删除其中包含的任何密码库项目。但集合本身将被永久删除。
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 

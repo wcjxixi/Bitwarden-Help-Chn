@@ -84,7 +84,7 @@ resource "bitwarden-secrets_secret" "my_secret" {
 }
 ```
 
-`bitwarden-secrets_secret` 资源将使用键值（在此情况下为 `db_admin_password` ）在后续操作中操作机密，确保机密在 Bitwarden Secrets Manager 和 Terraform 之间保持安全和同步。
+`bitwarden-secrets_secret` 资源将使用键值（在此情况下为 `db_admin_password`）在后续操作中操作机密，确保机密在 Bitwarden Secrets Manager 和 Terraform 之间保持安全和同步。
 
 ## 数据源 <a href="#data-sources" id="data-sources"></a>
 
@@ -102,7 +102,7 @@ output "example" {
 
 对于每个工程，以下属性可以导出到输出：
 
-* `creation_date`：（字符串）工程创建的时间戳。
+* `creation_date`：（字符串型）工程创建的时间戳。
 * `id`：（字符串型）工程的唯一标识符。
 * `name`：（字符串型）工程的名称。
 * `organization_id`：（字符串型）工程所属组织的唯一标识符。
@@ -159,7 +159,7 @@ output "example" {
 对于每个密钥，可以在输出中导出以下属性：
 
 * `id`：（字符串型）机密的唯一标识符。
-* `key` ：（字符串型）与机密关联的键，在 Secrets Manager UI 中称为「名称」。
+* `key`：（字符串型）与机密关联的键，在 Secrets Manager UI 中称为「名称」。
 * `value`：（字符串型）与机密关联的值。被视为敏感信息，永远不会打印到 stdout。
 * `note`：（字符串型）保存于机密**备注**字段中的任何文本。
 * `project_id`：（字符串型）机密所属工程的唯一标识符。
@@ -173,7 +173,7 @@ output "example" {
 
 `bitwarden-secrets_secret` 资源可用于在 Bitwarden 密钥管理器中创建新机密或管理现有机密。要声明一个 `bitwarden-secrets_secret` 资源块，至少需要以下参数：
 
-* `key` ：（字符串型）与机密关联的键，在 Secrets Manager UI 中称为「名称」。
+* `key`：（字符串型）与机密关联的键，在 Secrets Manager UI 中称为「名称」。
 
 以下是一个包含 `bitwarden-secrets_secret` 资源声明的 `resource` 块示例：
 
@@ -208,13 +208,13 @@ resource "bitwarden-secrets_secret" "db_admin_secret" {
 
 对于每个机密，可以使用以下属性来自定义值的生成：
 
-* `avoid_ambiguous`：（布尔型）默认为 `false` 。设置为 `true` 时，生成的值将不包含歧义字符（`I`、`l`、`1`、`0`、`o`、`O`）。
+* `avoid_ambiguous`：（布尔型）默认为 `false`。设置为 `true` 时，生成的值将不包含歧义字符（`I`、`l`、`1`、`0`、`o`、`O`）。
 * `length`：（数值型）默认为 `64` 个字符。设置为其他数字时，生成的值将是该数字数量的字符。
-* `lowercase`：（布尔型）默认为 `true` 。设置为 `false` 时，生成的值将不包含小写字符。
-  * `min_lowercase`：（数值型）如果 `lowercase` 为 `false` ，则忽略。设置为数字时，生成的值将至少包含该数字数量的小写字符（必须为 1-9 之间的数字）。
-* `uppercase`：（布尔型）默认为 `true` 。如果设置为 `false` ，生成的值将不包含大写字符。
-  * `min_uppercase`：（数值型）如果 `uppercase` 为 `false` ，则忽略。如果设置为数字，生成的值将至少包含该数字数量的大写字符（必须为 1-9 之间的数字）。
-* `numbers`：（布尔型）默认为 `true` 。如果设置为 `false` ，生成的值将不包含数字（`0` - `9`）。
-  * `min_numbers`：（数值型）如果 `numbers` 为 `false` ，则忽略。如果设置为数字，生成的值将至少包含该数字数量的数字（必须为 1-9 之间的数字）。
-* `special`：（布尔型）默认为 `true` 。如果设置为 `false` ，生成的值将不包含特殊字符（`@`，`#`，`$`，`%`，`^`，`&`，`*`）。
-  * `min_special`：（数值型）如果 `special` 为 `false` ，则忽略。如果设置为数字，生成的值将至少包含该数字数量的特殊字符（必须为 1-9 之间的数字）。
+* `lowercase`：（布尔型）默认为 `true`。设置为 `false` 时，生成的值将不包含小写字符。
+  * `min_lowercase`：（数值型）如果 `lowercase` 为 `false`，则忽略。设置为数字时，生成的值将至少包含该数字数量的小写字符（必须为 1-9 之间的数字）。
+* `uppercase`：（布尔型）默认为 `true` 。如果设置为 `false`，生成的值将不包含大写字符。
+  * `min_uppercase`：（数值型）如果 `uppercase` 为 `false`，则忽略。如果设置为数字，生成的值将至少包含该数字数量的大写字符（必须为 1-9 之间的数字）。
+* `numbers`：（布尔型）默认为 `true` 。如果设置为 `false`，生成的值将不包含数字（`0` - `9`）。
+  * `min_numbers`：（数值型）如果 `numbers` 为 `false`，则忽略。如果设置为数字，生成的值将至少包含该数字数量的数字（必须为 1-9 之间的数字）。
+* `special`：（布尔型）默认为 `true` 。如果设置为 `false`，生成的值将不包含特殊字符（`@`，`#`，`$`，`%`，`^`，`&`，`*`）。
+  * `min_special`：（数值型）如果 `special` 为 `false`，则忽略。如果设置为数字，生成的值将至少包含该数字数量的特殊字符（必须为 1-9 之间的数字）。

@@ -15,7 +15,7 @@ Bitwarden 提供了一种使用 Bitwarden [Secrets Manager CLI](../developer-too
 3. 选择**添加变量**。
 4. 勾选**隐藏变量**标记。
 5. 将**键**命名为 `BWS_ACCESS_TOKEN`。这是 Secrets Manager CLI 用于进行[身份验证](../developer-tools/secrets-manager-cli.md#authentication)的变量。或者，如果您需要将**键**命名为其他名称，请稍后在 `bws secret get` 行中指定 `--access-token NAME_OF_VAR`。
-6. 在另一个选项卡中打开 Secrets Manager Web 应用程序，然后[创建一个访问令牌](../your-secrets/access-tokens.md)。
+6. 在另一个选项卡中打开 Secrets Manager 网页 App，然后[创建一个访问令牌](../your-secrets/access-tokens.md)。
 7. 返回 GitLab，将新创建的访问令牌粘贴到**值**字段中。
 8. 选择**添加变量**以保存。
 
