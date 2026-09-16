@@ -89,6 +89,15 @@ Bitwarden 桌面 App 支持 SSH 密钥导入功能。使用 Bitwarden 桌面 App
 目前，还不兼容从 Putty 导入的 SSH 密钥。
 {% endhint %}
 
+## 自动填充 SSH 密钥 <a href="#autofill-ssh-keys" id="autofill-ssh-keys"></a>
+
+SSH 项目的公钥可以通过浏览器扩展自动填充，例如在向 GitHub 或 GitLab 等服务添加公钥时。自动填充有两种方式：
+
+* **内嵌菜单**：当检测到受支持的表单字段时，将显示内嵌菜单，您可以从中选择匹配的 SSH 密钥项目。
+* **自动填充按钮**：在浏览器扩展中打开 SSH 项目，然后选择**自动填充**。
+
+了解更多有关[浏览器扩展自动填充方式](../../autofill/autofill-from/autofill-from-browser-extensions.md)的信息。
+
 ## 支持的密钥类型 <a href="#supported-key-types" id="supported-key-types"></a>
 
 SSH 代理支持以下密钥类型：
