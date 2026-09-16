@@ -1,4 +1,4 @@
-# 企业策略
+# =企业策略
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/policies/)
@@ -233,6 +233,25 @@
 
 {% hint style="info" %}
 在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
+{% endhint %}
+
+### 激活填充辅助 <a href="#activate-fill-assist" id="activate-fill-assist"></a>
+
+启用**激活填充辅助**策略，为尚未设置个人偏好的成员设置默认的填充辅助状态，并可选择将成员的客户端指向自定义填充辅助规则，而非 Bitwarden 精选的映射。
+
+此策略设置的是**默认值**，而非强制执行。成员自行激活或停用填充辅助（无论是在策略激活之前还是之后），都将保留该设置选择。激活此策略不会覆盖他们的个人偏好。与某些策略不同，此策略适用于所有角色，包括所有者和管理员。
+
+{% hint style="info" %}
+在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
+{% endhint %}
+
+**激活填充辅助**策略有两个控制项：
+
+* **启用策略**：开打后，未调整过自身填充辅助设置的成员将默认启用填充辅助。
+* **自定义自动填充规则集**：默认情况下，填充辅助功能使用 Bitwarden 精心维护的规则集。在此处输入 URL 即可用您自己的规则集覆盖它。使用自定义规则集会完全将默认规则集替换为您自己构建和维护的规则集，两者之间没有合并或回退机制。了解[如何设置自定义规则集](custom-fill-assist-rules.md)的基础知识。
+
+{% hint style="info" %}
+自托管组织将**不会看到用于提供自定义自动填充规则集的 UI**。相反，自托管组织必须使用[环境变量](../../self-hosting/deploy-and-configure/configuration-options/environment-variables.md#optional-variables)在服务器级别设置此 URL。
 {% endhint %}
 
 ### 使用 SSO 自动登录 <a href="#automatic-login-with-sso" id="automatic-login-with-sso"></a>

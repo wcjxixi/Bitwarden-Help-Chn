@@ -28,6 +28,8 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 
 自动填充登录信息的最基本方式是与 Bitwarden 浏览器扩展交互。当您访问某个网站并且与至少一个项目的已保存的 URI 匹配时，该网站的匹配项目数量将显示在 Bitwarden 扩展图标的顶部。
 
+
+
 {% hint style="success" icon="lightbulb" %}
 要隐藏匹配项目的总数，请转至 <i class="fa-gear-complex">:gear-complex:</i>**设置** → **外观**，然后取消选中**在扩展图标上显示自动填充建议的登录的数量**。
 {% endhint %}
@@ -38,7 +40,7 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12UsFuA2sxbUCBMIczJsxv/6376ae661b966e4698375c2af2c27c0d/Browser_extension_filters.png?w=480&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展的筛选</p></figcaption></figure></div>
 
-### 从自动填充建议中点击项目 <a href="#click-item-from-autofill-suggestions" id="click-item-from-autofill-suggestions"></a>
+### 点击自动填充建议中的项目 <a href="#click-item-from-autofill-suggestions" id="click-item-from-autofill-suggestions"></a>
 
 要自动填充出现在顶部自动填充建议区域中的项目：
 
@@ -174,11 +176,19 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1ATTneDqBvNTFNds8YOCFh/cae4c9f4b872eec97aa5cae911633f1a/2026-07-14_10-17-33.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>保存并填充</p></figcaption></figure></div>
 {% endtab %}
+
+{% tab title="输入 SSH 密钥" %}
+要自动填充 SSH 公钥，请将光标置于密钥表单上的**公钥**字段中。当内嵌自动填充菜单显示时，选择该 SSH 密钥：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/47O8MWOenK3aYalqWeXcN5/ad232eea97e16b0d07fe0352ea2e6ffb/SSH_inline_menu.png?w=750&#x26;fm=avif" alt=""><figcaption><p>内嵌自动填充 SSH 密钥</p></figcaption></figure></div>
+
+如果您有多个 SSH 密钥，内联菜单将显示每一个 SSH 密钥。
+{% endtab %}
 {% endtabs %}
 
 ### 上下文菜单 <a href="#context-menu" id="context-menu"></a>
 
-在不打开浏览器扩展程序的情况下，您可以在用户名或密码输入栏上点击右键，然后使用 **Bitwarden** → **自动填充**选项。当您尝试此操作时，如果您的密码库已锁定，则会打开一个新的标签页，提示您解锁。解锁后，浏览器扩展将自动继续填充您的用户名、密码、支付卡或身份信息。
+无需打开浏览器扩展，您可以在用户名或密码输入栏上点击右键，然后使用 **Bitwarden** → **自动填充**选项。当您尝试此操作时，如果您的密码库已锁定，将弹出一个窗口，提示您解锁。解锁后，浏览器扩展将自动继续填充您的用户名、密码、支付卡或身份信息。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6GKKvIe7GwwOBtp9gmh862/4d39f59a8a862bb83d53e50f9f68d107/2024-12-03_09-12-06.png?w=823&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展上下文菜单</p></figcaption></figure></div>
 
@@ -239,7 +249,7 @@ Bitwarden 的自动填充功能让登录变得快捷安全。当您访问网站�
 
 「不受信任」的 iframe 被定义为 `src=""` 值与登录项目的 URI 不匹配的 iframe，如全局设置或特定于项目的[匹配检测行为](../troubleshoot-autofill/forming-uris-for-autofill.md#match-detection-options)所指示的那样。
 
-## 自动填充不常用的凭据 <a href="#autofill-less-common-credentials" id="autofill-less-common-credentials"></a>
+## 自动填充不常见的凭据 <a href="#autofill-less-common-credentials" id="autofill-less-common-credentials"></a>
 
 ### TOTP 自动填充 <a href="#totp-autofill" id="totp-autofill"></a>
 

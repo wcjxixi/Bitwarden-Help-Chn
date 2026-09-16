@@ -214,7 +214,7 @@ https://vault.bitwarden.com/#/join/{inviteLinkCode}?key={inviteKey}
 
 如果您的组织使用已声明的域名，并且某个成员没有主密码，管理员可以[更改该成员的电子邮箱地址和名称](change-members-account-email-and-name.md)。
 
-### 移除用户 <a href="#remove-users" id="remove-users"></a>
+### 移除成员 <a href="#remove-members" id="remove-members"></a>
 
 您也可以在**成员**页面将成员从组织中移除。有三种方式：
 

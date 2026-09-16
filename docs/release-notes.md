@@ -41,18 +41,18 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Password Manager
 
-* <i class="fa-star">:star:</i> **密码库健康报告**：现在您可以在浏览器扩展中运行密码库健康报告，以识别已暴露的密码、弱密码和重复使用的密码。高级版和家庭版订阅可以看到具体哪些登录存在风险，而免费版订阅可以看到有多少密码被标记。
+* <i class="fa-star">:star:</i> **密码库健康报告**：现在您可以[在浏览器扩展中运行密码库健康报告](password-manager/your-vault/security-tools/browser-extension-vault-health-reports.md)，以识别已暴露的密码、弱密码和重复使用的密码。高级版和家庭版订阅可以看到具体哪些登录存在风险，免费版订阅可以看到有多少个密码被标记。
 * **自动填充 SSH 密钥**：存储在您密码库中的 SSH 密钥项目现在可以使用现有的浏览器扩展自动填充方法进行自动填充，就像登录、支付卡和身份一样。了解更多有关[自动填充](password-manager/autofill/autofill-from/autofill-from-browser-extensions.md)和 [SSH 密钥](password-manager/developer-tools/ssh/about-ssh.md)的信息。
 * <i class="fa-star">:star:</i> **从桌面应 App 快速复制**：现在，在桌面 App 中，当您悬停在密码库项目上时，可以使用复制快捷按钮，从而更快地[复制项目的凭据](password-manager/your-vault/vault-items/vault-items.md#copy-item-credentials)。
 
 ### Admin Console
 
-* <i class="fa-star">:star:</i> **使用 SCIM 和 Directory Connector 暂存用户**：通过 SCIM 或 Directory Connector 配置的用户现在可以被置为暂存状态，而无需立即发送邀请。此功能由 SCIM 配置视图或 Directory Connector 同步选项中的新设置控制。
+* <i class="fa-star">:star:</i> **使用 SCIM 和 Directory Connector 暂存用户**：通过 SCIM 或 Directory Connector 配置的用户现在可以被配置为暂存状态，而无需立即发送邀请。此功能由 SCIM 配置视图或 Directory Connector 同步选项中的新设置控制。
 
-{% hint style="info" icon="lightbulb" %}
-对于新组织以及尚未使用 SCIM 或 Directory Connector 的组织，这两个工具默认会将用户置为暂存状态，而不会自动发送邀请。
+{% hint style="success" icon="lightbulb" %}
+对于**新组织**以及**尚未使用 SCIM 或 Directory Connector** 的组织，这两个工具默认会被设置为将用户配置为暂存状态，而不是自动发送邀请。
 
-对于已在使用 SCIM 或 Directory Connector 的组织，这两个工具将继续自动发出邀请，以免中断现有工作流程。您可以随时根据需要更改该设置。
+对于**已在使用 SCIM 或 Directory Connector** 的组织，这两个工具将继续自动发送邀请，以免中断现有工作流程。您可以随时根据需要更改该设置。
 {% endhint %}
 
 * <i class="fa-star">:star:</i> **填充辅助策略和自定义规则集**：现在可以通过策略在成员客户端上默认开启填充辅助。同一策略还可用于将 Bitwarden 精选规则集替换为由您的组织构建和维护的自定义规则集。
