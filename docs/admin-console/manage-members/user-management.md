@@ -1,4 +1,4 @@
-# 邀请 & 管理成员
+# =邀请 & 管理成员
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/managing-users/)
@@ -29,7 +29,7 @@
 选择一种邀请用户加入您的组织的方式：
 
 {% tabs %}
-{% tab title="电子邮件邀请" %}
+{% tab title="通过电子邮件邀请" %}
 1、登录到 Bitwarden [网页 App](../../password-manager/getting-started/getting-started-webvault.md)，然后使用产品切换器打开 Admin Console：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
@@ -48,7 +48,7 @@
 4、点击**保存**以邀请指定的用户加入您的组织。
 {% endtab %}
 
-{% tab title="链接邀请" %}
+{% tab title="通过链接邀请" %}
 企业版组织可以生成一个可分享的邀请链接，任何拥有该链接的人，只要其电子邮箱域名在链接的允许列表中，即可使用该链接请求加入组织。这让管理员可以通过他们首选的通信渠道（如 Slack 或 Teams 消息）分发邀请，而无需依赖从 Bitwarden 发送的个人电子邮件。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/TFK2JVOdL4WqjCk4xtQEi/c57df92f2d832569b9d63dcbb084aaec/edited_copy_link.png?w=700&#x26;fm=avif" alt=""><figcaption><p>复制链接</p></figcaption></figure></div>
@@ -181,6 +181,16 @@ https://vault.bitwarden.com/#/join/{inviteLinkCode}?key={inviteKey}
 在**成员**页面，您还可以查看和更新​​个人成员的账户，例如将其添加到群组、集合或 Secrets Manager。选择 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i>**菜单图标**查看每个用户的可用选项：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5tspjHKPHunTlRhylIJo5O/c707a3e1780364f8820832c216b5ca64/Update_member.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>更新成员</p></figcaption></figure></div>
+
+### 成员状态 <a href="#member-statuses" id="member-statuses"></a>
+
+成员在您的组织中可以是以下状态之一：
+
+<table><thead><tr><th width="92.20001220703125">状态</th><th>描述</th></tr></thead><tbody><tr><td>已暂存</td><td><p>用户通过 SCIM 或 Directory Connector 配置时，<strong>自动发送电子邮件邀请</strong>选项处于<strong>关闭</strong>状态（默认）。</p><p>这些用户<a href="user-management.md#invite-staged-members">在您主动邀请</a>之前不会收到邀请，不会占用许可证席位，也不受组织策略的约束。</p><p>处于此状态的用户在被邀请之前只能被撤销或移除。已暂存的用户必须<a href="user-management.md#tong-guo-lian-jie-yao-qing">通过链接邀请</a>。</p></td></tr><tr><td>已邀请</td><td>用户通过电子邮件或邀请链接受邀加入组织，并有机会接受邀请加入。</td></tr><tr><td>已接受</td><td>用户已接受加入组织的邀请，正在等待管理员确认。</td></tr><tr><td>已确认</td><td>用户已由管理员确认，并有权访问其账户已配置了访问权限的数据（即通过分配到集合获得访问权限）。</td></tr><tr><td>已撤销</td><td><p>用户对组织数据的访问权限<a href="revoke-remove/temporarily-revoke-access.md">已被管理员暂停</a>。</p><p>这些用户不会占用许可证席位，也不受组织策略的约束。</p></td></tr></tbody></table>
+
+### 邀请已暂存的成员 <a href="#invite-staged-members" id="invite-staged-members"></a>
+
+要将已暂存的成员转入邀请流程，以便他们可以接收邀请电子邮件，请从 Admin Console 使用[通过链接邀请](user-management.md#tong-guo-lian-jie-yao-qing)。他们点击邀请链接并完成流程后，就会被移动到`已接受`状态。
 
 ### 审查 2FA 和账户恢复状态 <a href="#review-2fa-and-account-recovery-status" id="review-2fa-and-account-recovery-status"></a>
 
