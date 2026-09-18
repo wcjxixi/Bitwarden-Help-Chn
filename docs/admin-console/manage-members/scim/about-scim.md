@@ -39,6 +39,16 @@ Bitwarden 支持使用标准属性映射的 SCIM v2，并提供以下集成文�
 * [Ping Identity](ping-identity-scim-integration.md)
 {% endhint %}
 
+### 配置后邀请用户
+
+默认情况下，通过 SCIM 配置的用户会被置于[暂存状态](../user-management.md#member-statuses)，之后可以向其[发送加入组织的邀请](../user-management.md#invite-staged-members)。您可以通过**自动发送电子邮件邀请**设置来更改此行为，该设置位于上文提到的同一**设置** → **SCIM 配置**界面：
+
+* **开启**时，用户一经配置便会自动收到电子邮件邀请。
+* **关闭**时，用户会被置于[暂存状态](../user-management.md#member-statuses)，而不会被立即邀请。暂存用户：
+  * 不会收到邀请电子邮件。
+  * 不占用许可证席位。
+  * 不受组织策略约束。
+
 ### 必需属性 <a href="#required-attributes" id="required-attributes"></a>
 
 Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也可以使用在配置期间映射到 Bitwarden 的备用名称。
@@ -74,7 +84,7 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 
 ## 现有对象更新 <a href="#updates-to-existing-objects" id="updates-to-existing-objects"></a>
 
-以下章节将说明当 IdP 发生变更时，SCIM 配置会将哪些更改同步到组织的成员和群组：
+以下章节将说明**当 IdP 发生变更时**，SCIM 配置会将哪些更改同步到组织的成员和群组：
 
 ### 成员状态 <a href="#member-status" id="member-status"></a>
 
@@ -97,12 +107,6 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 
 ### 成员电子邮箱地址 <a href="#member-email-address" id="member-email-address"></a>
 
-{% hint style="info" %}
-使用[受信任设备](../../login-with-sso/trusted-devices/about-trusted-devices.md)的组织成员无法更改其电子邮箱地址，除非已获得带有[账户恢复](../account-recovery/about-account-recovery.md)功能的主密码。
-
-使用 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 的组织成员无法更改其电子邮箱地址。成员账户需要[删除](../revoke-remove/delete-member-accounts.md)并重新配置才能更改电子邮箱地址。请提醒用户在删除账户前导出数据，并在使用新电子邮箱地址重新配置账户后导入数据。
-{% endhint %}
-
 使用 SCIM 配置的成员可以在 Bitwarden 及其组织的相关 IdP 中更改电子邮箱地址。要更改 SCIM 组织中的 Bitwarden 电子邮箱地址，请执行以下操作：
 
 1. 通过导航到**设置** → **我的账户**在 Bitwarden 中更改电子邮箱地址（[了解更多](../../../password-manager/more/password-manager-faqs.md#q-how-do-i-change-my-email-address)）。
@@ -111,6 +115,15 @@ Bitwarden 使用此处列出的标准 SCIM v2 属性名称，但每个 IdP 也�
 
 {% hint style="info" %}
 如果在更新 Bitwarden 电子邮箱之前，用户电子邮箱地址已在 IdP 或 AD 上更新并同步过，则更新后的电子邮箱将被视为新的用户。
+{% endhint %}
+
+{% hint style="info" %}
+如果您的组织使用受信任设备或 Key Connector，则谁可以更新成员的电子邮箱可能会有所不同：
+
+* [受信任设备](../../login-with-sso/trusted-devices/about-trusted-devices.md)：成员无法自行更改他们的电子邮箱，除非通过账户恢复获得了主密码。如果成员没有主密码且账户已声明，则管理员可以更改其电子邮箱。
+* [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)：成员无法自行更改他们的电子邮箱。
+  * 如果您的组织**未使用**[声明域名](../../oversight-visibility/claimed-domains/claimed-domains.md)，请删除并使用新电子邮箱重新配置成员账户。提醒用户在删除账户之前导出数据，并在新账户设置完成后重新导入他们的数据。
+  * 如果您的组织**使用**声明域名，则管理员可以直接[更改成员的电子邮箱](../change-members-account-email-and-name.md)。
 {% endhint %}
 
 ### 成员显示名称 <a href="#member-display-name" id="member-display-name"></a>

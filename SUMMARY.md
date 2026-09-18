@@ -218,7 +218,7 @@
       * [适用于非成员的赞助家庭](docs/admin-console/manage-members/sponsored-families/sponsored-families-for-non-members.md)
       * [赞助家庭 FAQ](docs/admin-console/manage-members/sponsored-families/sponsored-families-faqs.md)
     * [SCIM](docs/admin-console/manage-members/scim/README.md)
-      * [=关于 SCIM](docs/admin-console/manage-members/scim/about-scim.md)
+      * [关于 SCIM](docs/admin-console/manage-members/scim/about-scim.md)
       * [JumpCloud SCIM 集成](docs/admin-console/manage-members/scim/jumpcloud-scim-integration.md)
       * [Microsoft Entra ID SCIM 集成](docs/admin-console/manage-members/scim/microsoft-entra-id-scim-integration.md)
       * [Okta SCIM 集成](docs/admin-console/manage-members/scim/okta-scim-integration.md)
