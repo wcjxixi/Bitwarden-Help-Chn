@@ -47,7 +47,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Admin Console
 
-* <i class="fa-star">:star:</i> **使用 SCIM 和 Directory Connector 暂存用户**：通过 SCIM 或 Directory Connector 配置的用户现在可以被配置为暂存状态，而无需立即发送邀请。此功能由 SCIM 配置视图或 Directory Connector 同步选项中的新设置控制。
+* <i class="fa-star">:star:</i> **使用 SCIM 和 Directory Connector 暂存用户**：通过 SCIM 或 Directory Connector 配置的用户现在可以被配置为[暂存状态](admin-console/manage-members/user-management.md#member-statuses)，而无需立即发送邀请。此功能由 [SCIM 配置视图](admin-console/manage-members/scim/about-scim.md#pei-zhi-hou-yao-qing-yong-hu)或 Directory Connector 同步选项中的新设置控制。
 
 {% hint style="success" icon="lightbulb" %}
 对于**新组织**以及**尚未使用 SCIM 或 Directory Connector** 的组织，这两个工具默认会被设置为将用户配置为暂存状态，而不是自动发送邀请。

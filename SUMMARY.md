@@ -199,7 +199,7 @@
     * [共享项目](docs/admin-console/manage-shared-items/sharing.md)
     * [组织项目超链接](docs/admin-console/manage-shared-items/link-to-an-item.md)
   * [管理成员](docs/admin-console/manage-members/README.md)
-    * [=邀请 & 管理成员](docs/admin-console/manage-members/user-management.md)
+    * [邀请 & 管理成员](docs/admin-console/manage-members/user-management.md)
     * [成员角色](docs/admin-console/manage-members/member-roles.md)
     * [群组](docs/admin-console/manage-members/groups.md)
     * [自动确认](docs/admin-console/manage-members/automatic-confirmation.md)
