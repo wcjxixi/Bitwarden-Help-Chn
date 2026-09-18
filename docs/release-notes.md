@@ -47,7 +47,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 
 ### Admin Console
 
-* <i class="fa-star">:star:</i> **使用 SCIM 和 Directory Connector 暂存用户**：通过 SCIM 或 Directory Connector 配置的用户现在可以被配置为[暂存状态](admin-console/manage-members/user-management.md#member-statuses)，而无需立即发送邀请。此功能由 [SCIM 配置视图](admin-console/manage-members/scim/about-scim.md#pei-zhi-hou-yao-qing-yong-hu)或 Directory Connector 同步选项中的新设置控制。
+* <i class="fa-star">:star:</i> **使用 SCIM 和 Directory Connector 暂存用户**：通过 SCIM 或 Directory Connector 配置的用户现在可以被配置为[暂存状态](admin-console/manage-members/user-management.md#member-statuses)，而无需立即发送邀请。此功能由 [SCIM 配置视图](admin-console/manage-members/scim/about-scim.md#pei-zhi-hou-yao-qing-yong-hu)或 [Directory Connector 同步选项](admin-console/manage-members/directory-connector/sync-options-and-filters.md#automatically-send-email-invitations)中的新设置控制。
 
 {% hint style="success" icon="lightbulb" %}
 对于**新组织**以及**尚未使用 SCIM 或 Directory Connector** 的组织，这两个工具默认会被设置为将用户配置为暂存状态，而不是自动发送邀请。
@@ -55,9 +55,9 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 对于**已在使用 SCIM 或 Directory Connector** 的组织，这两个工具将继续自动发送邀请，以免中断现有工作流程。您可以随时根据需要更改该设置。
 {% endhint %}
 
-* <i class="fa-star">:star:</i> **填充辅助策略和自定义规则集**：现在可以通过策略在成员客户端上默认开启填充辅助。同一策略还可用于将 Bitwarden 精选规则集替换为由您的组织构建和维护的自定义规则集。
-* **iOS 上强制执行访问控制**：在管理 Send 策略中配置的现有访问控制策略现已在 iOS 应用程序上强制执行。
-* **面向移动用户的密码库横幅策略**：密码库横幅策略的自定义横幅现在将应用于 iOS 和 Android 用户密码库。
+* <i class="fa-star">:star:</i> **填充辅助策略和自定义规则集**：现在可以通过[策略](admin-console/oversight-visibility/enterprise-policies.md#activate-fill-assist)在成员客户端上默认开启填充辅助。同一策略还可用于将 Bitwarden 精选规则集替换为[由您的组织构建和维护的自定义规则集](admin-console/oversight-visibility/custom-fill-assist-rules.md)。
+* **iOS 上强制执行访问控制**：在[管理 Send 策略](admin-console/oversight-visibility/enterprise-policies.md#manage-send)中配置的现有访问控制策略现已在 iOS 应用程序上强制执行。
+* **面向移动用户的密码库横幅策略**：[密码库横幅](admin-console/oversight-visibility/enterprise-policies.md#vault-banner)策略的自定义横幅现在将应用于 iOS 和 Android 用户密码库。
 
 ## 2026.8.1
 

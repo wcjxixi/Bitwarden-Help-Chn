@@ -24,7 +24,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2vEokum2rZLMpp59jsAjKz/6b5566af0acb05215be6756ac11d5fa8/Screen_Shot_2022-05-24_at_10.37.15_AM.png?w=1164&#x26;fm=avif" alt=""><figcaption><p>大型同步信号</p></figcaption></figure></div>
 
-您也可以通过设置 `"largeImport": true` 直接在 Directory Connector [配置文件](directory-connector-file-storage.md#config-file) (`data.json`) 中激活此选项：
+您也可以通过在 Directory Connector [配置文件](directory-connector-file-storage.md#config-file) (`data.json`) 中设置 `"largeImport": true` 来直接激活此选项：
 
 ```json
 "syncConfig": {
@@ -39,6 +39,27 @@
 如果您不启用此选项，Directory Connector 会将同步限制为 2000 个用户或群组。
 {% endhint %}
 
+## 自动发送电子邮件邀请 <a href="#automatically-send-email-invitations" id="automatically-send-email-invitations"></a>
+
+默认情况下，通过 Directory Connector 配置的用户会被置于[暂存状态](../user-management.md#member-statuses)，之后可以向其[发送加入组织的邀请](../user-management.md#invite-staged-members)。您可以通过**自动发送电子邮件邀请**设置来更改此行为：
+
+* **开启**时，用户一经配置便会自动收到电子邮件邀请。
+* **关闭**时，用户会被置于[暂存状态](../user-management.md#member-statuses)，而不会被立即邀请。暂存用户：
+  * 不会收到邀请电子邮件。
+  * 不占用许可证席位。
+  * 不受组织策略约束。
+
+您也可以通过在 Directory Connector [配置文件](directory-connector-file-storage.md#config-file) (`data.json`) 中设置 `"inviteUsersAfterProvisioning": true` 来直接激活此选项：
+
+```json
+"syncConfig": {
+  ...,
+  ...,
+  ...,
+  "inviteUsersAfterProvisioning": true
+},
+```
+
 ## 覆盖同步 <a href="#overwriting-syncs" id="overwriting-syncs"></a>
 
 {% hint style="warning" %}
@@ -49,7 +70,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/sM0wG9htsgHvpsXx1E1t9/929c1601a0f6d6c55a576e6154d89d31/2024-12-12_10-58-15.png?w=906&#x26;fm=avif" alt=""><figcaption><p>下次同步时移除并重新添加组织用户</p></figcaption></figure></div>
 
-您也可以通过设置 `"overwriteExisting": true`，直接在 Directory Connector 配置文件 (`data.json`) 中启用该选项：
+您也可以通过在 Directory Connector [配置文件](directory-connector-file-storage.md#config-file) (`data.json`) 中设置 `"overwriteExisting": true` 来直接启用此选项：
 
 ```bash
 "syncConfig": {

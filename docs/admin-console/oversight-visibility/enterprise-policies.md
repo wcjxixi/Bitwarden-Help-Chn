@@ -1,4 +1,4 @@
-# =企业策略
+# 企业策略
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/policies/)
@@ -81,8 +81,8 @@
 
 使用管理 Send，组织管理员可以管理成员使用 Send 的方式，包括：
 
-* **Send 类型**：确定用户可以创建的 Send 类型，例如文本和文件。
-* **访问选项**：确定组织成员发送发送后，发送收件人如何访问发送。选项包括任意、电子邮件验证和会员设置的密码。
+* **Send 类型**：决定用户可以创建的 [Send 类型](../../password-manager/bitwarden-send/create-a-send.md#create-a-send)，例如**文本**和**文件**。
+* **访问选项**：决定组织成员发送 Send 后，Send 接收者如何访问 Send。选项包括任意、[电子邮件验证](../../password-manager/bitwarden-send/send-privacy.md#email-verified-recipients)和[成员设置的密码](../../password-manager/bitwarden-send/send-privacy.md#send-passwords)。
 * **强制删除日期**：使用此策略可以为成员创建的 Send 强制执行预定的 [Send 生命周期](../../password-manager/bitwarden-send/send-lifespan.md)。
 * **始终向接收者显示成员的电子邮件地址**：启用此选项可以禁用用户的[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，从而为接收 Send 的人提供透明度。所有者和管理员不受此策略的约束。
 
@@ -237,7 +237,7 @@
 
 ### 激活填充辅助 <a href="#activate-fill-assist" id="activate-fill-assist"></a>
 
-启用**激活填充辅助**策略，为尚未设置个人偏好的成员设置默认的填充辅助状态，并可选择将成员的客户端指向自定义填充辅助规则，而非 Bitwarden 精选的映射。
+启用**激活填充辅助**策略，为尚未设置个人偏好的成员设置默认的[填充辅助](../../password-manager/autofill/more-autofill-options/fill-assist.md)状态，并可选择将成员的客户端指向自定义填充辅助规则，而非 Bitwarden 精选的映射。
 
 此策略设置的是**默认值**，而非强制执行。成员自行激活或停用填充辅助（无论是在策略激活之前还是之后），都将保留该设置选择。激活此策略不会覆盖他们的个人偏好。与某些策略不同，此策略适用于所有角色，包括所有者和管理员。
 
