@@ -41,10 +41,10 @@ Bitwarden 支持使用标准属性映射的 SCIM v2，并提供以下集成文�
 
 ### 配置后邀请用户 <a href="#invite-users-after-provisioning" id="invite-users-after-provisioning"></a>
 
-默认情况下，通过 SCIM 配置的用户会被置于[暂存状态](../user-management.md#member-statuses)，之后可以向其[发送加入组织的邀请](../user-management.md#invite-staged-members)。您可以通过**自动发送电子邮件邀请**设置来更改此行为，该设置位于上文提到的同一**设置** → **SCIM 配置**界面：
+默认情况下，通过 SCIM 配置的用户会被置于[预配置状态](../user-management.md#member-statuses)，之后可以向其[发出加入组织的邀请](../user-management.md#invite-staged-members)。您可以通过**自动发送电子邮件邀请**设置来更改此行为，该设置位于上述**设置** → **SCIM 配置**界面中：
 
 * **开启**时，用户一经配置便会自动收到电子邮件邀请。
-* **关闭**时，用户会被置于[暂存状态](../user-management.md#member-statuses)，而不会被立即邀请。暂存用户：
+* **关闭**时，用户会被置于[预配置状态](../user-management.md#member-statuses)，而不会被立即邀请。预配置用户：
   * 不会收到邀请电子邮件。
   * 不占用许可证席位。
   * 不受组织策略约束。

@@ -20,9 +20,10 @@
 
 ## 工作原理 <a href="#how-it-works" id="how-it-works"></a>
 
-填充辅助由 Bitwarden [Map the Web](https://github.com/bitwarden/map-the-web/) 项目提供支持，是专为解决自动填充问题而构建的多种工具之一。它通过人工编写并审核的指令替代默认的自动填充逻辑，来指导自动填充在其支持的任意网站上应如何运作。我们来详细解析一下：
+填充辅助由 Bitwarden [Map the Web](https://github.com/bitwarden/map-the-web/) 项目提供支持，是专为解决自动填充问题而构建的多种工具之一。它通过将默认的自动填充逻辑替换为人工编写和审核的指令，来规范其支持的任何网站上的自动填充行为。让我们来详细了解一下：
 
 * **支持的网站**：填充辅助仅在您浏览的网站包含在映射中时才会介入；通常，这些网站是广泛被报告会导致 Bitwarden 用户出现自动填充问题的网站。
+* **组织提供的规则**：可选。组织可以使用自己的[自定义映射表](../../../admin-console/oversight-visibility/custom-fill-assist-rules.md)替换 Bitwarden 精选的映射表，以扩大对组织成员最常使用的网站和应用程序的覆盖范围。
 * **替代默认逻辑**：当在支持的网站上自动填充时，填充辅助会指示浏览器扩展忽略其通常使用的启发式规则（包括用户创建的[自定义字段](../../your-vault/vault-items/custom-fields.md)），转而采用更具针对性的替代方案。
 * **人工编写的指令**：填充辅助使用一份由人工编写并审核的 CSS 选择器映射表，来描述 Bitwarden 在支持填充辅助网站上应自动填充哪些凭据。
 
