@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/product-highlights-and-recent-updates/)
 {% endhint %}
 
-## 推进 Bitwarden 持续发展 <a href="#advancing-bitwarden" id="advancing-bitwarden"></a>
+## Bitwarden 持续发展 <a href="#advancing-bitwarden" id="advancing-bitwarden"></a>
 
-Bitwarden 不断新增功能，并集成了丰富的特性，既保障企业安全，也让管理员使用更顺畅。
+Bitwarden 持续添加功能，并集成了众多特性，旨在保障企业安全并提升管理员体验。
 
 ### 保存并分享任何内容 <a href="#save-and-share-anything" id="save-and-share-anything"></a>
 
