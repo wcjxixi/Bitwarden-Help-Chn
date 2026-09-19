@@ -1,7 +1,7 @@
 # Secrets Manager 方案
 
 {% hint style="success" %}
-机密优先支持即将推出对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-plans/)
+对应的[官方文档地址](https://bitwarden.com/help/secrets-manager-plans/)
 {% endhint %}
 
 这篇文章中，我们将详细介绍 [Bitwarden Secrets Manager](../../secrets-manager/secrets-manager-overview.md) 的每一种订阅方案，以帮助您开启机密管理和安全数据存储之旅。要查看 Password Manager 方案，请参阅[此处](../password-manager/about-bitwarden-plans.md)。
@@ -9,8 +9,6 @@
 {% hint style="success" icon="lightbulb" %}
 Bitwarden 为免费版、团队版和企业版组织提供 Secrets Manager 订阅服务。如果您有家庭版方案并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费版组织然后按照[这些步骤](../../secrets-manager/get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
 {% endhint %}
-
-本页面上的价格以美元 (USD) 显示，以及基于年度订阅。
 
 ## 免费版 <a href="#free" id="free"></a>
 
@@ -24,25 +22,24 @@ Bitwarden 为免费版、团队版和企业版组织提供 Secrets Manager 订�
 
 ## 团队版 <a href="#teams" id="teams"></a>
 
-为您的整个开发团队提供额外的业务功能。Secrets Manager 团队版方案的价格为 **$6/用户/月**，Secrets Manager 团队版方案提供：
+Secrets Manager 团队版方案为您的整个开发团队提供额外的业务功能：
 
-* 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
-* 最多 20 个[机器账户](../../secrets-manager/your-secrets/machine-accounts.md)
-* 每个附加机器账户 1 美元
-* 提供给[团队组织](../../admin-console/organizations-overview.md#types-of-organizations)的所有功能，例如[事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)和 [API 访问](../../admin-console/bitwarden-public-api.md)
+* 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)和[工程](../../secrets-manager/your-secrets/projects.md)
+* 最多包含 20 个[机器账户](../../secrets-manager/your-secrets/machine-accounts.md)，超出部分按账户收计费。
+* 提供给[团队版组织](../../admin-console/organizations-overview.md#types-of-organizations)的所有功能，例如[事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)和 [API 访问](../../admin-console/bitwarden-public-api.md)
+* [按用户收费](https://bitwarden.com/products/secrets-manager/#pricing)
 
-[现在注册 7 天免费试用](https://bitwarden.com/go/start-secrets-teams-trial/)。
+[现在注册免费试用](https://bitwarden.com/go/start-secrets-teams-trial/)。
 
 ## 企业版 <a href="#enterprise" id="enterprise"></a>
 
 通过自动化配置和其他管理功能支持企业需求。Secrets Manager 企业版方案的价格为 **$12/用户/月**，Secrets Manager 企业版方案提供：
 
 * 不限数量的[机密](../../secrets-manager/your-secrets/secrets.md)、用户和[工程](../../secrets-manager/your-secrets/projects.md)
-* 最多 50 个[机器账户](../../secrets-manager/your-secrets/machine-accounts.md)
-* 每个附加机器账户 1 美元
+* 最多包含 50 个[机器账户](../../secrets-manager/your-secrets/machine-accounts.md)，超出部分按账户收计费。
 * 提供给[企业版组织](../../admin-console/organizations-overview.md#types-of-organizations)的所有功能，例如 [SCIM 配置](../../admin-console/manage-members/scim/about-scim.md)和[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)
 
-[现在注册 7 天免费试用](https://bitwarden.com/go/start-secrets-teams-trial/)。
+[现在注册免费试用](https://bitwarden.com/go/start-secrets-teams-trial/)。
 
 ## 方案比较 <a href="#compare-plans" id="compare-plans"></a>
 
