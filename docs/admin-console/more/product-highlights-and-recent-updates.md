@@ -6,7 +6,7 @@
 
 ## Bitwarden 持续发展 <a href="#advancing-bitwarden" id="advancing-bitwarden"></a>
 
-Bitwarden 持续添加功能，并集成了众多特性，旨在保障企业安全并提升管理员体验。
+Bitwarden 持续添加功能，并集成了众多特性，旨在保障企业安全并提升管理体验。
 
 ### 保存并分享任何内容 <a href="#save-and-share-anything" id="save-and-share-anything"></a>
 
@@ -44,7 +44,7 @@ Bitwarden 持续添加功能，并集成了众多特性，旨在保障企业安�
 
 ### 决定谁可以创建和访问集合 <a href="#decide-who-can-create-and-access-collections" id="decide-who-can-create-and-access-collections"></a>
 
-使用「集合管理」设置来决定集合的工作方式。注意：仅可由组织所有者调整。
+使用「集合管理」设置来决定集合的工作方式。注意：只能由组织所有者调整。
 
 * 选择允许管理员和所有者访问组织中的所有项目
 * 决定创建或删除集合是否只能由管理员来完成
@@ -173,5 +173,5 @@ Bitwarden SSH 代理内置于 Bitwarden 桌面 App 中，可用于服务器身�
 了解更多：[声明域名](../oversight-visibility/claimed-domains/claimed-domains.md#claimed-member-accounts)
 
 {% hint style="info" %}
-如需查看完整的更新和功能列表，请访问 Bitwarden 发布说明页面 。如需每月获取新功能和安全提示的更新，请订阅 [Bitwarden 新闻通讯 ](https://bitwarden.com/newsletter-subscribe/)。
+如需查看完整的更新和功能列表，请访问 [Bitwarden 发行记录页面](../../release-notes.md)。如需每月获取新功能和安全提示的更新，请订阅 [Bitwarden 新闻通讯](https://bitwarden.com/newsletter-subscribe/)。
 {% endhint %}
