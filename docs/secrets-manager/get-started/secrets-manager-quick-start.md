@@ -64,7 +64,9 @@ Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够�
 
 1、在您组织的 Admin Console 中，转到**成员**。
 
-2、单击 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> **图标**，然后选择**激活 Secrets Manager**：
+2、选择要添加到 Secrets Manager 的用户。
+
+3、单击 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> **图标**，然后选择**激活 Secrets Manager**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3IBNL6FdndgPeuXa7m3rlP/fd04ec9951123e5a0ccd5fe4f04fa4de/2024-12-03_11-18-52.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>添加 Secrets Manager 用户</p></figcaption></figure></div>
 

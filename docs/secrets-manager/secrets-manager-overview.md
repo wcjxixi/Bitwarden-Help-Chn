@@ -53,9 +53,9 @@ Secrets Manager 将提供网页 App、CLI 和 SDK。未来会支持更多的 SDK
 
 ## 立即开始 <a href="#get-started-today" id="get-started-today"></a>
 
-我们很高兴能参与您的机密管理之旅，也很高兴您能加入我们的新冒险之旅。Secrets Manager 目前在公开测试计划中。[立即注册 Secrets Manager](https://bitwarden.com/products/secrets-manager/#secrets-manager-get-started)。
+我们很高兴能参与您的机密管理之旅，也很高兴您能加入我们的新冒险之旅。[立即注册 Secrets Manager](https://bitwarden.com/products/secrets-manager/#secrets-manager-get-started)。
 
-Bitwarden 为免费版、团队版和企业版组织提供 Secrets Manager 订阅服务。如果您有家庭版方案并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费版组织，然后按照[这些步骤](get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
+Bitwarden 为免费版、团队版和企业版组织提供 Secrets Manager 订阅。如果您有家庭版方案并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费版组织，然后按照[这些步骤](get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
 
 {% hint style="success" icon="lightbulb" %}
 如需深入了解产品，请查看 [Secrets Manager 演示](https://bitwarden.com/resources/videos/bitwarden-secrets-manager-product-demo-replay/)。
