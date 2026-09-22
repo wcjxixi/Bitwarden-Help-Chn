@@ -122,7 +122,7 @@
 **答：**&#x53EF;以！要从剪贴板自动清除从 Bitwarden 复制的值：
 
 * 在浏览器扩展中，导航至**设置** → **自动填充**，然后将**清除剪贴板**设置为**从不**以外的值。
-* 在移动 App 中，导航至**设**置 → **其他**，然后将**清除剪贴板**设置为**从不**以外的值。
+* 在移动 App 中，导航至**设置** → **其他**，然后将**清除剪贴板**设置为**从不**以外的值。
 * 在桌面 App 中，导航至**设置**，在**首选项**部分将**清除剪贴板**设置为**从不**以外的值。
 
 ### 问：卸载或删除我的 Bitwarden App 是否也会删除我的密码库数据吗？ <a href="#q-does-uninstalling-or-deleting-my-bitwarden-app-also-delete-my-vault-data" id="q-does-uninstalling-or-deleting-my-bitwarden-app-also-delete-my-vault-data"></a>
