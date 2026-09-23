@@ -285,9 +285,9 @@ SSO 自动登录将基于 Bitwarden 浏览器扩展上的当前活动账户自�
 
 ### 禁用免费 Bitwarden 家庭赞助 <a href="#remove-free-bitwarden-families-sponsorship" id="remove-free-bitwarden-families-sponsorship"></a>
 
-启用**禁用免费 Bitwarden 家庭赞助**策略将禁止您的组织成员通过您的组织[兑换免费的家庭计划](../manage-members/sponsored-families/sponsored-families-for-members.md)。
+启用**禁用免费 Bitwarden 家庭赞助**策略将禁止您的组织成员通过您的组织[兑换免费的家庭版方案](../manage-members/sponsored-families/sponsored-families-for-members.md)。
 
-在该策略激活前已兑换赞助家庭组织的用户将继续获得其组织的赞助，直至当前账单周期结束。在下一个账单周期开始时，将通过该组织存储的付款方式收取费用。
+在该策略激活前已兑换家庭赞助组织的用户将继续获得其组织的赞助，直至当前账单周期结束。在下一个账单周期开始时，将通过该组织存储的付款方式收取费用。
 
 ### 自动用户确认 <a href="#automatic-user-confirmation" id="automatic-user-confirmation"></a>
 
