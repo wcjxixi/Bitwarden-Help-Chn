@@ -42,11 +42,12 @@
 **当您激活此策略时，非所有者或非管理员且不遵守此策略的组织成员的访问权限将被撤销**。由于此策略而被撤销访问权限的用户将收到电子邮件通知，并且必须采取措施使其合规，然后才能恢复其访问权限。
 {% endhint %}
 
-在激活以下策略之前，必须启用**单一组织**策略：
+在激活以下策略之前，必须先启用**单一组织**策略：
 
 * [账户恢复管理](enterprise-policies.md#account-recovery-administration)
 * [要求单点登录身份验证](enterprise-policies.md#require-single-sign-on-authentication)
 * [默认 URI 匹配检测](enterprise-policies.md#default-uri-match-detection)
+* [激活填充辅助](enterprise-policies.md#activate-fill-assist)
 * [会话超时](enterprise-policies.md#vault-timeout)
 
 如果您无法停用**单一组织**策略，请验证上述所有策略是否已停用，以及您没有[已声明的域名](claimed-domains/claimed-domains.md)，然后重试。
@@ -82,9 +83,9 @@
 使用管理 Send，组织管理员可以管理成员使用 Send 的方式，包括：
 
 * **Send 类型**：决定用户可以创建的 [Send 类型](../../password-manager/bitwarden-send/create-a-send.md#create-a-send)，例如**文本**和**文件**。
-* **访问选项**：决定组织成员发送 Send 后，Send 接收者如何访问 Send。选项包括任意、[电子邮件验证](../../password-manager/bitwarden-send/send-privacy.md#email-verified-recipients)和[成员设置的密码](../../password-manager/bitwarden-send/send-privacy.md#send-passwords)。
-* **强制删除日期**：使用此策略可以为成员创建的 Send 强制执行预定的 [Send 生命周期](../../password-manager/bitwarden-send/send-lifespan.md)。
-* **始终向接收者显示成员的电子邮件地址**：启用此选项可以禁用用户的[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，从而为接收 Send 的人提供透明度。所有者和管理员不受此策略的约束。
+* **访问选项**：决定组织成员发送 Send 后，Send 接收者如何访问 Send。选项包括任意、[电子邮箱验证](../../password-manager/bitwarden-send/send-privacy.md#email-verified-recipients)和[成员设置的密码](../../password-manager/bitwarden-send/send-privacy.md#send-passwords)。
+* **强制删除日期**：使用此策略可以为成员创建的 Send 强制执行预先设定的 [Send 生命周期](../../password-manager/bitwarden-send/send-lifespan.md)。
+* **始终向接收者显示成员的电子邮箱地址**：启用此选项可以禁用用户的[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，从而为接收 Send 的人提供透明度。所有者和管理员不受此策略的约束。
 
 ### 禁用导出 <a href="#remove-export" id="remove-export"></a>
 
