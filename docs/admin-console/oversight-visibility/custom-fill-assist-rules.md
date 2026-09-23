@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/custom-fill-assist-rules/)
 {% endhint %}
 
-企业版组织可以使用[使用一个策略](enterprise-policies.md#activate-fill-assist)为成员设置默认的[填充辅助](../../password-manager/autofill/more-autofill-options/fill-assist.md)状态，并可选择使用组织托管和维护的规则集替换 Bitwarden 精选的填充辅助规则。
+企业版组织可以使用[使用策略](enterprise-policies.md#activate-fill-assist)为成员设置默认的[填充辅助](../../password-manager/autofill/more-autofill-options/fill-assist.md)状态，以及（可选）使用组织托管和维护的规则集替换 Bitwarden 精选的填充辅助规则。
 
 本文介绍如何构建自定义规则集。有关填充辅助和相关策略的实际应用，请参阅上方链接中的文章。
 
