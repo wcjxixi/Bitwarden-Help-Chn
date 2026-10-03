@@ -35,6 +35,18 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 
 ## 发行公告
 
+## 2026.9.2
+
+_（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.9.1、浏览器扩展 2026.9.3、桌面端 2026.9.1、移动端 2026.9.1、CLI 2026.9.1）_
+
+### Password Manager
+
+{% hint style="info" %}
+Bitwarden Chrome 浏览器扩展现在需要 Chrome 134 或更高版本。
+{% endhint %}
+
+* <i class="fa-star">:star:</i> **Password Manager 重新设计 Beta 版**：Bitwarden 正在更新 Password Manager App 的外观和体验，目前面向云端用户推出 Chrome 浏览器扩展和桌面 App 的 Beta 版。该 Beta 版需主动选择加入，可与您当前的 Bitwarden 云端账户配合使用，并且您可随时切换回正式版本。
+
 ## 2026.9.0
 
 _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.9.0、浏览器扩展 2026.9.0、桌面端 2026.9.0、移动端 2026.9.0、CLI 2026.9.0）_
