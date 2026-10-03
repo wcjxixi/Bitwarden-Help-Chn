@@ -1,4 +1,4 @@
-# =Bitwarden 重新设计 Beta 版
+# Bitwarden 重新设计 Beta 版
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/redesign-beta/)
@@ -27,7 +27,7 @@ Bitwarden 正在更新 App 的外观和体验，目前**面向云端用户推出
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6L9tVPVN5BPWSTuEqUvNGV/be4d1237bc9875f80a7c8fcd8a9556e2/2026-09-22_09-07-22.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>（Beta 版）重新设计的导航</p></figcaption></figure></div>
 
 {% hint style="success" icon="lightbulb" %}
-导入凭据是新用户最重要的第一步之一！因此，我们将**导入**按钮直接移到了桌面 App 的核心「项目」视图中（网页 App 正式发布后，也会将其移到该视图中）：
+导入凭据是新用户最重要的第一步之一！因此，我们将**导入**按钮直接移动到了桌面 App 的核心「项目」视图中（网页 App 正式发布后，也会将其移动到该视图中）：
 
 <img src="https://bitwarden.com/assets/rkAIYmIQbxj8m1YofyeH1/256ca500e993a1b00a84b6bf09fced38/2026-09-22_09-19-10.png?w=1400&#x26;fm=avif" alt="" data-size="original">
 
@@ -36,7 +36,7 @@ Bitwarden 正在更新 App 的外观和体验，目前**面向云端用户推出
 
 ### 组合的搜索和筛选 <a href="#combined-search-and-filter" id="combined-search-and-filter"></a>
 
-在您的密码库中，搜索和筛选功能现在集成在一个工具栏中，直接位于项目列表中，而不是两个独立的控件。搜索和筛选功能协同工作，因此，如果启用了 `Acme Corp` 密码库筛选然后搜索 `Email`，则会找到您有权访问的 `Shared Newsletter Email` 登录，但不会找到您自己的 `Work Email`（只要它不位于共享文件夹中）。
+在您的密码库中，搜索和筛选功能现在集成在一个工具栏中，直接位于项目列表中，而不是两个独立的控件。搜索和筛选功能协同工作，因此，如果激活了 `Acme Corp` 密码库筛选然后搜索 `Email`，则会找到您有权访问的 `Shared Newsletter Email` 登录，但不会找到您自己的 `Work Email`（只要它不位于共享文件夹中）。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3vOMPXLwJ95gfT9g5x6RWP/d9e60285f792b1641b5d5f63f4162a27/2026-09-28_09-28-57.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>（Beta 版）搜索和筛选</p></figcaption></figure></div>
 
@@ -48,12 +48,12 @@ Beta 版中还新增了一些键盘快捷键。使用 `Cmd/Ctrl+F` 进行搜索�
 
 ## 加入 Beta 版 <a href="#join-the-beta" id="join-the-beta"></a>
 
-此 Beta 版适用于浏览器扩展和桌面 App。您只需从以下任一位置下载测试版 App 即可：
+此 Beta 版适用于浏览器扩展和桌面 App。您只需从以下任一位置下载 Beta 版 App 即可：
 
 * Chrome 浏览器扩展：[此处下载](https://chromewebstore.google.com/detail/bitwarden-password-manage/hccnnhgbibccigepcmlgppchkpfdophk?pli=1)（**要求** Chrome 版本 134+）。
 * 桌面 App：[此处下载](https://github.com/bitwarden/clients/releases/tag/desktop-v2026.9.1-beta.1)。
-  * 在 Windows 系统上，下载 `.exe` 文件。
-  * 在 macOS 上，下载 `.dmg` 文件。
+  * 对于 Windows，下载 `.exe` 文件。
+  * 对于 macOS，下载 `.dmg` 文件。
 
 安装完成后，像往常一样登录您的 Bitwarden 云服务器（US 或 EU），无需额外的账户或服务器设置。
 
@@ -74,6 +74,14 @@ Beta 版**不适用于自托管 Bitwarden 服务器**。
 
 ### 已知问题 <a href="#known-issues" id="known-issues"></a>
 
+本节列出了 Beta 版 App 发布时已知的全部问题：
+
+<table data-search="false"><thead><tr><th width="176.328125">功能</th><th width="121.421875">客户端</th><th>描述</th></tr></thead><tbody><tr><td>生物识别解锁</td><td>桌面端</td><td>如果您安装了多个 Bitwarden 桌面 App，生物识别解锁功能可能无法正常工作。要解决此问题，请卸载所有 Bitwarden 桌面 App，然后仅重新安装您希望使用的版本。</td></tr><tr><td>清除组织筛选器</td><td>浏览器扩展</td><td>当选中两个或两个以上组织时，移除其中一个组织的筛选器也会移除该组织共享文件夹的筛选器。之后，「我的文件夹」筛选器可能会从筛选菜单中消失。</td></tr><tr><td>共享文件夹名称</td><td>桌面端</td><td>过长的共享文件夹名称会被截断。</td></tr><tr><td>文件夹选择下拉菜单</td><td>桌面端</td><td>当有很多嵌套的共享文件夹时，文件夹下拉菜单的功能不如预期。</td></tr><tr><td>共享文件夹嵌套</td><td>桌面端</td><td>密码库列表中嵌套的共享文件夹没有缩进，因此无法清楚地看出哪些共享文件夹位于其他共享文件夹之内。</td></tr><tr><td>展开嵌套文件夹</td><td>浏览器扩展</td><td>展开嵌套共享文件夹的目标点击区域过小，难以点击或轻触。</td></tr><tr><td>指定收藏</td><td>桌面端</td><td>添加或移除某个项目的收藏状态可能会导致列表中的其他项目短暂闪烁或出现其他视觉异常。</td></tr><tr><td>正在加载占位符</td><td>浏览器扩展</td><td>当您的密码库加载不流畅时，会显示正在加载占位符。</td></tr><tr><td>账户切换器</td><td>桌面端</td><td>当仅登录了一个账户时，「添加账户」上方会出现一条额外的分隔线，并且锁形图标离其标签太近。</td></tr><tr><td>按钮</td><td>浏览器扩展</td><td>按钮周围的部分边距显示不正确。计划进行进一步改进。</td></tr></tbody></table>
+
 ### 退出 Beta 版 <a href="#leave-the-beta" id="leave-the-beta"></a>
+
+在 2026 年 10 月 31 日 Beta 版结束之前，您可以随时在 Beta 版 App 和正式版 App 之间切换。如果您想在此日期之前退出 Beta 版，请停止使用 Beta 版 App 并将其卸载。
+
+**Beta 版结束后，切换到正式版 App 以继续接收更新，这至关重要**。
 
 [^1]: 

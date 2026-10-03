@@ -45,7 +45,7 @@ _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布�
 Bitwarden Chrome 浏览器扩展现在需要 Chrome 134 或更高版本。
 {% endhint %}
 
-* <i class="fa-star">:star:</i> **Password Manager 重新设计 Beta 版**：Bitwarden 正在更新 Password Manager App 的外观和体验，目前面向云端用户推出 Chrome 浏览器扩展和桌面 App 的 Beta 版。该 Beta 版需主动选择加入，可与您当前的 Bitwarden 云端账户配合使用，并且您可随时切换回正式版本。
+* <i class="fa-star">:star:</i> **Password Manager 重新设计 Beta 版**：Bitwarden 正在更新 Password Manager App 的外观和体验，目前面向云端用户推出 [Chrome 浏览器扩展和桌面 App 的 Beta 版](miscellaneous/redesign-beta.md)。该 Beta 版需主动选择加入，可与您当前的 Bitwarden 云端账户配合使用，并且您可随时切换回正式版本。
 
 ## 2026.9.0
 
