@@ -12,7 +12,7 @@ Bitwarden 正在更新 App 的外观和体验，目前**面向云端用户推出
 
 ### 新的密码库术语 <a href="#new-vault-terminology" id="new-vault-terminology"></a>
 
-**组织**现在称为**密码库**，每个密码库在导航菜单中都有自己的名称。原本显示「密码库」的地方，现在将显示您组织的名称，例如「Acme Corp」。**集合**现在称为**共享文件夹**。
+**组织**现在称为**密码库**，每一个密码库在导航菜单中都有自己的名称。原本显示为「密码库」的地方，现在将显示为您组织的名称，例如「Acme Corp」。**集合**现在称为**共享文件夹**。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6K8cAenzwAWRFHUfEH7qQK/aa2de13ac228c746b9ff69dbb347c27b/2026-09-22_09-24-03.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>（Beta 版）共享文件夹</p></figcaption></figure></div>
 
@@ -82,6 +82,6 @@ Beta 版**不适用于自托管 Bitwarden 服务器**。
 
 在 2026 年 10 月 31 日 Beta 版结束之前，您可以随时在 Beta 版 App 和正式版 App 之间切换。如果您想在此日期之前退出 Beta 版，请停止使用 Beta 版 App 并将其卸载。
 
-**Beta 版结束后，切换到正式版 App 以继续接收更新，这至关重要**。
+**Beta 版结束后，重要的是切换到正式版 App**，以继续接收更新。
 
 [^1]: 

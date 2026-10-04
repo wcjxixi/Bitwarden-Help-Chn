@@ -30,7 +30,7 @@
 
 2、导航到**报告** → **报告**。
 
-3、选择要运行的报告：
+3、选择一个要运行的报告：
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5POQmt3TrEgfFzRNwHancg/9a67882a07d8894747ebb5bc3bbdcaae/2024-12-02_16-31-14.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>组织报告</p></figcaption></figure></div>
 
@@ -81,7 +81,7 @@
 
 被识别后，使用 `Instructions` （说明）超链接来为每个违规项目设置 2FA。
 
-<div align="left" data-with-frame="true"><figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3USpBf7beuGcdJvMhDrwNI/570672e3220f09e0398ced33a154b1ea/inactive-2fa.png?_a=DAJAUVWIZAAB" alt=""><figcaption><p>报告 Instructions</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3USpBf7beuGcdJvMhDrwNI/570672e3220f09e0398ced33a154b1ea/inactive-2fa.png?w=669&#x26;fm=avif" alt=""><figcaption><p>报告 Instructions</p></figcaption></figure></div>
 
 ### 成员访问权限 <a href="#member-access" id="member-access"></a>
 
@@ -89,7 +89,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4oNfzpIcDwn2XjUgG0lPG3/a51bac815082055fdd6f47a40937b72d/2024-09-10_16-13-31.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>成员访问权限报告</p></figcaption></figure></div>
 
-要定位特定人员，请在**搜索成员**字段中输入他们的电子邮箱。选择相邻的 **→导出图标**以下载包含每个成员详细信息的 `.csv` 文件，其中包含：
+要定位特定人员，请在**搜索成员**字段中输入他们的电子邮箱。选择相邻的 <i class="fa-file-export">:file-export:</i>**导出图标**以下载包含每个成员详细信息的 `.csv` 文件，其中包含：
 
 * 基本账户详细信息，包括其**名称**以及是否启用了**两步登录**或**账户恢复**
 * 他们的**群组**分配情况

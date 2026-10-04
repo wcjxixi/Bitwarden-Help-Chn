@@ -53,7 +53,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/TFK2JVOdL4WqjCk4xtQEi/c57df92f2d832569b9d63dcbb084aaec/edited_copy_link.png?w=700&#x26;fm=avif" alt=""><figcaption><p>复制链接</p></figcaption></figure></div>
 
-有效的邀请链接将包含以下结构：
+有效的邀请链接包含如下的结构：
 
 ```
 https://vault.bitwarden.com/#/join/{inviteLinkCode}?key={inviteKey}
@@ -69,13 +69,13 @@ https://vault.bitwarden.com/#/join/{inviteLinkCode}?key={inviteKey}
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>邀请成员加入组织</p></figcaption></figure></div>
 
-3、选择**通过链接**选项卡：
+3、选择**通过链接**选项卡。
 
 4、输入一个或多个**允许的域名**。使用邀请链接时：
 
 * 只有这些域名上的电子邮箱地址才能使用该链接加入。
 * 必须始终至少存在一个域名，您无法生成不受限制的链接。
-  * 允许的域名为链接提供了额外的安全性。您应仅允许信任的域名。不建议使用诸如 gmail.com 之类的泛域名。
+  * 允许的域名为链接提供了额外的安全性。您应仅允许信任的域名。不建议使用泛域名（例如 gmail.com）。
 * 移除允许的域名或生成新链接将使之前生成的链接失效。
 * 如果组织拥有[声明域名](../oversight-visibility/claimed-domains/claimed-domains.md)，该字段将自动预填入此域名。
 
@@ -91,7 +91,7 @@ https://vault.bitwarden.com/#/join/{inviteLinkCode}?key={inviteKey}
 
 #### 刷新或限制链接 <a href="#refresh-or-restrict-a-link" id="refresh-or-restrict-a-link"></a>
 
-邀请链接不会自行过期。若要使其失效，请选择**刷新**以生成新链接，旧链接将立即停用。从允许列表中移除所有域名也会使链接失效。
+邀请链接不会自行过期。要使其失效，请选择**刷新**以生成新链接，旧链接将立即停用。
 
 {% hint style="info" %}
 邀请链接适用于企业版组织。如果您的组织已从企业版降级，现有链接将不再有效，且**通过链接**选项卡将不可用。
@@ -106,7 +106,7 @@ https://vault.bitwarden.com/#/join/{inviteLinkCode}?key={inviteKey}
 
 如果您是自托管 Bitwarden，您可以使用[环境变量](../../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)来配置邀请的有效期。
 
-**链接邀请**不会过期，除非允许的域名已被移除、链接已被轮换或链接已被停用。
+**链接邀请**不会过期，除非链接被轮换或手动停用。
 {% endhint %}
 
 ### 接受 <a href="#accept" id="accept"></a>
@@ -166,7 +166,7 @@ https://vault.bitwarden.com/#/join/{inviteLinkCode}?key={inviteKey}
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5eRDRAooRSGqRWJYZB5fgz/f3eac670d95664be963d2b38eddf68b5/Confirm_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>确认成员加入组织</p></figcaption></figure></div>
 
-4、验证您屏幕上显示的[指纹短语](../../security/encryption/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置 → 我的账户**中找到。
+4、验证您屏幕上显示的[指纹短语](../../security/encryption/account-fingerprint-phrase.md)是否与您的新成员的匹配，指纹短语可以在**设置 → 我的账户**中找到：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6sWPBv5GFAyMcULNxfCCJG/b3115a77e0d8d8d48fcc1f9e24e42d70/fingerprint-phrase.png?w=285&#x26;fm=avif" alt=""><figcaption><p>指纹短语</p></figcaption></figure></div>
 
@@ -186,7 +186,7 @@ https://vault.bitwarden.com/#/join/{inviteLinkCode}?key={inviteKey}
 
 成员在您的组织中可以是以下状态之一：
 
-<table><thead><tr><th width="92.20001220703125">状态</th><th>描述</th></tr></thead><tbody><tr><td>预配置</td><td><p>用户通过 SCIM 或 Directory Connector 配置时，<a href="scim/about-scim.md#pei-zhi-hou-yao-qing-yong-hu"><strong>自动发送电子邮件邀请</strong></a>选项处于<strong>关闭</strong>状态（默认）。</p><p>这些用户<a href="user-management.md#invite-staged-members">在您主动邀请</a>之前不会收到邀请，不会占用许可证席位，也不受组织策略的约束。</p><p>处于此状态的用户在被邀请之前只能被撤销或移除。预配置用户必须<a href="user-management.md#tong-guo-lian-jie-yao-qing">通过链接邀请</a>。</p></td></tr><tr><td>已邀请</td><td>用户通过电子邮件或邀请链接受邀加入组织，并有机会接受邀请加入。</td></tr><tr><td>已接受</td><td>用户已接受加入组织的邀请，正在等待管理员确认。</td></tr><tr><td>已确认</td><td>用户已由管理员确认，并有权访问其账户已配置了访问权限的数据（即通过分配到集合获得访问权限）。</td></tr><tr><td>已撤销</td><td><p>用户对组织数据的访问权限<a href="revoke-remove/temporarily-revoke-access.md">已被管理员暂停</a>。</p><p>这些用户不会占用许可证席位，也不受组织策略的约束。</p></td></tr></tbody></table>
+<table><thead><tr><th width="92.20001220703125">状态</th><th>描述</th></tr></thead><tbody><tr><td>预配置</td><td><p>用户通过 SCIM 或 Directory Connector 配置时，<a href="scim/about-scim.md#pei-zhi-hou-yao-qing-yong-hu"><strong>自动发送电子邮件邀请</strong></a>选项处于<strong>关闭</strong>状态（默认）。</p><p>这些用户<a href="user-management.md#invite-staged-members">在您主动邀请</a>之前不会收到邀请，不会占用许可证席位，也不受组织策略的约束。</p><p>处于此状态的用户在被邀请之前只能被撤销或移除。预配置用户必须<a href="user-management.md#tong-guo-lian-jie-yao-qing">通过链接邀请</a>。</p></td></tr><tr><td>已邀请</td><td>用户通过电子邮件或邀请链接受邀加入组织，并有机会接受邀请加入。</td></tr><tr><td>已接受</td><td>用户已接受加入组织的邀请，正在等待管理员确认。</td></tr><tr><td>已确认</td><td>用户已由管理员确认，并有权访问其账户已配置了访问权限的数据（即通过分配到集合获得了访问权限）。</td></tr><tr><td>已撤销</td><td><p>用户对组织数据的访问权限<a href="revoke-remove/temporarily-revoke-access.md">已被管理员暂停</a>。</p><p>这些用户不会占用许可证席位，也不受组织策略的约束。</p></td></tr></tbody></table>
 
 ### 邀请预配置的成员 <a href="#invite-staged-members" id="invite-staged-members"></a>
 
