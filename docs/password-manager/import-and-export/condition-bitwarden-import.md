@@ -20,7 +20,7 @@
 
 ### 个人密码库 .csv <a href="#csv-for-individual-vault" id="csv-for-individual-vault"></a>
 
-<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>[下载示例 csv 文件](https://bitwarden.com/assets/4j3wYIYVQYW2MZUBogVxM3/2299910bb8fc93f6a8916d870be0458c/bitwarden_export.csv)
+<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i> [下载示例 csv 文件](https://bitwarden.com/assets/4j3wYIYVQYW2MZUBogVxM3/2299910bb8fc93f6a8916d870be0458c/bitwarden_export.csv)
 
 创建一个 UTF-8 编码的纯文本文件，并将以下表头作为文件的第一行：
 
@@ -42,7 +42,7 @@ Social,1,login,Twitter,,,0,twitter.com,me@example.com,password123,
 
 ### 组织密码库 .csv <a href="#csv-for-organization" id="csv-for-organization"></a>
 
-<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>[下载示例 csv 文件](https://bitwarden.com/assets/YYnGrBJO8O5Xv2O0dFW9Z/6de667ded7567da41dcdf4af5186311a/bitwarden_export_org.csv)
+<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i> [下载示例 csv 文件](https://bitwarden.com/assets/YYnGrBJO8O5Xv2O0dFW9Z/6de667ded7567da41dcdf4af5186311a/bitwarden_export_org.csv)
 
 创建具有如下标头作为第一行的 UTF-8 编码的纯文本文件：
 
@@ -85,7 +85,7 @@ folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_p
 
 ## 调整 .json <a href="#condition-a-json" id="condition-a-json"></a>
 
-<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>️[下载示例 json 文件](https://bitwarden.com/assets/2iwtn9YFqooYJmw1JWwCXa/8b03a95f1c27240c22a7578aa703f7b1/individual.json)
+<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>️ [下载示例 json 文件](https://bitwarden.com/assets/2iwtn9YFqooYJmw1JWwCXa/8b03a95f1c27240c22a7578aa703f7b1/individual.json)
 
 ### 个人密码库 .json <a href="#json-for-individual-vault" id="json-for-individual-vault"></a>
 
@@ -149,7 +149,7 @@ folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_p
 
 ### 组织密码库 .json <a href="#json-for-organization" id="json-for-organization"></a>
 
-<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>️[下载示例 json 文件](https://bitwarden.com/assets/2Pui1E5uLs2FSw6GhO6pdU/141c68c6ad63ea8f395067c02592ddbc/organization.json)
+<i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>️ [下载示例 json 文件](https://bitwarden.com/assets/2Pui1E5uLs2FSw6GhO6pdU/141c68c6ad63ea8f395067c02592ddbc/organization.json)
 
 创建如下格式的 UTF-8 编码的纯文本文件：
 

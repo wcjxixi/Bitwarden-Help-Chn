@@ -27,17 +27,18 @@
 `.zip` 导出目前仅适用于个人密码库数据。
 {% endhint %}
 
-* **（仅限 iOS 26）**&#x76F4;接导出到其他 App
-
-{% hint style="info" %}
-直接导出到其他 App 需要目标 App 支持 [FIDO 凭证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)。
-{% endhint %}
+* **使用  iOS 26+ 和 Android 10+** 直接导出到其他 App。目标 App 必须支持 [FIDO 凭证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications/?lang=zh-hans)。
 
 查看[示例 `.csv` 和 `.json` 文件](condition-bitwarden-import.md)以决定哪种格式最适合您。我们推荐使用加密的 `.json` 选项以获得最佳安全性和最完整的导出。只有 `.json` 导出包含：
 
 * 支付卡
 * 身份
 * [存储的通行密钥](../autofill/more-autofill-options/autofill-passkeys.md)
+
+{% hint style="info" %}
+2024.3.1 版本之前创建的通行密钥包含一个每次使用都会递增的计数器。如果存储的计数器值与用于登录该通行密钥的服务的预期值不符，则该服务可能会拒绝该通行密钥，因此不应将**该版本之前的通行密钥**导出文件用作长期备份。
+{% endhint %}
+
 * [SSH 密钥](../developer-tools/ssh/ssh-agent.md)
 
 所有导出格式都不包含回收站项目或 [Send](../bitwarden-send/about-send.md)。有关个人密码库导出中包含的所有项目和字段的完整列表，请查看这个 <i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>**️** [.json 示例](https://bitwarden.com/assets/3klSoZBBd57skEvwFkcMJc/9dfe5d696c102cd32da88dc325706738/Individual_vault_export.json)。

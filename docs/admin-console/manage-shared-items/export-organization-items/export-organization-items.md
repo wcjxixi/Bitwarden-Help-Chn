@@ -10,7 +10,7 @@
 * 组织的[管理员、所有者和具有合适权限的自定义用户](../../manage-members/member-roles.md)可以按照本文中的说明导出所有组织项目数据。
 * 当用户在组织中处于活动状态时，已启用[强制组织数据所有权](../../oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)策略的组织无法导出组织成员的「我的项目」。
 
-可以采用几种不同的格式进行导出，但 Bitwarden 推荐使用[加密的 .json 选项](../../../password-manager/import-and-export/encrypted-exports.md)以获得最佳安全性和更完整的导出，因为 `.csv` 文件当前不会导出支付卡或身份，并且只有 `.json` 导出包含[存储的通行密钥](../../../password-manager/autofill/more-autofill-options/autofill-passkeys.md)和 [SSH 密钥](../../../password-manager/developer-tools/ssh/ssh-agent.md)。有关组织密码库导出中包含的所有项目和字段的完整列表，请参阅此 <i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i>[JSON 示例](https://bitwarden.com/assets/2oQPd5ZsY1N0hph4N6pBrY/b5fc7c05ac238d71d9a1902a58559cc6/Organization_vault_export.json)。
+可以采用几种不同的格式进行导出，但 Bitwarden 推荐使用[加密的 .json 选项](../../../password-manager/import-and-export/encrypted-exports.md)以获得最佳安全性和更完整的导出，因为 `.csv` 文件当前不会导出支付卡或身份，并且只有 `.json` 导出包含[存储的通行密钥](../../../password-manager/autofill/more-autofill-options/autofill-passkeys.md)和 [SSH 密钥](../../../password-manager/developer-tools/ssh/ssh-agent.md)。有关组织密码库导出中包含的所有项目和字段的完整列表，请参阅此 <i class="fa-arrow-down-to-bracket">:arrow-down-to-bracket:</i> [JSON 示例](https://bitwarden.com/assets/2oQPd5ZsY1N0hph4N6pBrY/b5fc7c05ac238d71d9a1902a58559cc6/Organization_vault_export.json)。
 
 {% tabs %}
 {% tab title="网页 App" %}
