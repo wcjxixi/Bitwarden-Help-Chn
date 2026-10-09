@@ -1,4 +1,4 @@
-# Bitwarden 重新设计 Beta 版
+# Bitwarden 全新设计 Beta 版
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/redesign-beta/)
@@ -20,21 +20,21 @@ Bitwarden 正在更新 App 的外观和体验，目前**面向云端用户推出
 这些只是名称上的更改。谁可以访问哪些项目，以及共享和权限的工作方式，均保持不变。
 {% endhint %}
 
-### 重新设计的导航 <a href="#redesigned-navigation" id="redesigned-navigation"></a>
+### 全新设计的导航 <a href="#redesigned-navigation" id="redesigned-navigation"></a>
 
 侧边导航进行了重新组织，新增的「密码库」切换器让您可以更轻松地在个人密码库、您所属的任何其他密码库或两者之间切换视图。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6L9tVPVN5BPWSTuEqUvNGV/be4d1237bc9875f80a7c8fcd8a9556e2/2026-09-22_09-07-22.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>（Beta 版）重新设计的导航</p></figcaption></figure></div>
 
 {% hint style="success" icon="lightbulb" %}
-导入凭据是新用户最重要的第一步之一！因此，我们将**导入**按钮直接移动到了桌面 App 的核心「项目」视图中（网页 App 正式发布后，也会将其移动到该视图中）：
+导入凭据是新用户最重要的第一步之一！因此，我们将**导入**按钮直接移动到了桌面 App 核心的「项目」视图中（网页 App 正式发布后，也会将其移动到该视图中）：
 
 <img src="https://bitwarden.com/assets/rkAIYmIQbxj8m1YofyeH1/256ca500e993a1b00a84b6bf09fced38/2026-09-22_09-19-10.png?w=1400&#x26;fm=avif" alt="" data-size="original">
 
 在浏览器扩展和移动 App 中，导入功能位于 App 的**设置**菜单的同一位置。
 {% endhint %}
 
-### 组合的搜索和筛选 <a href="#combined-search-and-filter" id="combined-search-and-filter"></a>
+### 组合搜索和筛选 <a href="#combined-search-and-filter" id="combined-search-and-filter"></a>
 
 在您的密码库中，搜索和筛选功能现在集成在一个工具栏中，直接位于项目列表中，而不是两个独立的控件。搜索和筛选功能协同工作，因此，如果激活了 `Acme Corp` 密码库筛选然后搜索 `Email`，则会找到您有权访问的 `Shared Newsletter Email` 登录，但不会找到您自己的 `Work Email`（只要它不位于共享文件夹中）。
 

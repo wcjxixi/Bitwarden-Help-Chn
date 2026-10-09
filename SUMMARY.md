@@ -434,7 +434,7 @@
   * [\*更新 Password Manager 方案 & 订阅](docs/plans-and-pricing/updates-to-plans.md)
   * [\*哪种方案适合我？](docs/plans-and-pricing/what-plan-is-right-for-me.md)
 * [\*杂项](docs/miscellaneous/README.md)
-  * [Bitwarden 重新设计 Beta 版](docs/miscellaneous/redesign-beta.md)
+  * [Bitwarden 全新设计 Beta 版](docs/miscellaneous/redesign-beta.md)
   * [异常流量错误](docs/miscellaneous/unusual-traffic-error.md)
   * [11 月弃用通知](docs/miscellaneous/november-deprecation-notice.md)
   * [Bitwarden 术语表](docs/miscellaneous/bitwarden-glossary-of-terms.md)
