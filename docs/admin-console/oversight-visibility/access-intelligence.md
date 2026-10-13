@@ -38,13 +38,7 @@ Access Intelligence 报告的**活动**选项卡提供了关键数据点和任�
 
 Access Intelligence 报告列出了您 Bitwarden 组织中保存的所有应用程序。每个应用程序代表一组所有具有与给定网络服务匹配的 URI 的项目（例如，「Atlassian」应用程序可能包含 26 个「密码总数」，表示有 26 个项目包含用于登录 Atlassian 的凭据），并且包含：
 
-| 列           | 描述                                                                      |
-| ----------- | ----------------------------------------------------------------------- |
-| **应用程序**    | [存在风险](access-intelligence.md#determining-risk)的应用程序的名称。                |
-| **存在风险的密码** | 与[存在风险](access-intelligence.md#determining-risk)的应用程序关联的密码数量。           |
-| **密码总数**    | 与应用程序关联的密码总数。                                                           |
-| **存在风险的成员** | 对与应用程序关联的[存在风险](access-intelligence.md#determining-risk)的密码具有访问权限的成员数量。 |
-| **成员总数**    | 对应用程序具有访问权限的成员总数。                                                       |
+<table><thead><tr><th width="181.3515625">列</th><th>描述</th></tr></thead><tbody><tr><td><strong>应用程序</strong></td><td><a href="access-intelligence.md#determining-risk">存在风险</a>的应用程序的名称。</td></tr><tr><td><strong>存在风险的密码</strong></td><td>与<a href="access-intelligence.md#determining-risk">存在风险</a>的应用程序关联的密码数量。</td></tr><tr><td><strong>密码总数</strong></td><td>与应用程序关联的密码总数。</td></tr><tr><td><strong>存在风险的成员</strong></td><td>对与应用程序关联的<a href="access-intelligence.md#determining-risk">存在风险</a>的密码具有访问权限的成员数量。</td></tr><tr><td><strong>成员总数</strong></td><td>对应用程序具有访问权限的成员总数。</td></tr></tbody></table>
 
 {% hint style="success" icon="lightbulb" %}
 通过列出所有组织成员拥有凭据的应用程序，Access Intelligence 还可以帮助管理员检测未经授权的应用程序的使用情况，以及可以通过 IdP 迁移到单点登录 (SSO) 身份验证的应用程序。

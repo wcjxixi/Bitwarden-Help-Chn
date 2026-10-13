@@ -41,4 +41,4 @@ Bitwarden 图标服务器为这些网站图标提供传递端点。如果您在�
 * **移动 App：**&#x8BBE;置 → 外观 → 显示网站图标
 * **桌面 App：**&#x8BBE;置 → 选项 → 显示网站图标
 
-禁用网站图标功能后，Bitwarden 会选择为您密码库中的所有登录项目显示一个通用的、本地访问的图标（<img src="../../../.gitbook/assets/earth_icon.png" alt="" data-size="line">）。
+禁用网站图标功能后，Bitwarden 会选择为您密码库中的所有登录项目显示一个通用的、本地访问的图标 (<i class="fa-globe">:globe:</i>)。

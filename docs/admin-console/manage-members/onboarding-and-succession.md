@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="success" %}
-阅读下面的全文或[下载 PDF](https://bitwarden.com/images/resources/GUIDE-enterprise-password-management-throughout-employee-lifecycle.pdf)。
+阅读下面的全文或[下载 PDF](https://bitwarden.com/images/resources/GUIDE-enterprise-password-management-throughout-employee-lifecycle.pdf)
 {% endhint %}
 
 ## 适合您业务的密码管理 <a href="#password-management-that-fits-your-business" id="password-management-that-fits-your-business"></a>
@@ -114,11 +114,11 @@ Bitwarden 提供了多种工具，可用于定制工作流程和加强对继任�
 
 Alice 是您企业中的一位**用户**，该组织托管在 Bitwarden Cloud 并使用公司电子邮箱地址（例如 `first-last@company.com`）。 目前，Alice 是这样使用 Bitwarden 的：
 
-<table><thead><tr><th width="150">产品领域</th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td>在个人和职业上使用 Bitwarden 移动端和浏览器扩展，在组织上偶尔使用网页密码库进行相关工作。</td></tr><tr><td><strong>电子邮箱 &#x26; 主密码</strong></td><td>使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录 Bitwarden。</td></tr><tr><td><strong>个人项目</strong></td><td>在她的个人密码库中存储各种个人项目，包括登录和信用卡。</td></tr><tr><td><strong>两步登录</strong></td><td>使用组织层面的 <a href="../../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md">Duo 2FA</a>。</td></tr><tr><td><strong>集合</strong></td><td>Alice 对「Marketing Credentials」集合具有「可以管理」权限，授予她可以管理该集合的许多方面。</td></tr><tr><td><strong>共享的项目</strong></td><td>创建并共享了多个归组织所有并驻留在她团队集合中的密码库项目。</td></tr></tbody></table>
+<table><thead><tr><th width="176.53404017857142">产品领域</th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td>在个人和职业上使用 Bitwarden 移动端和浏览器扩展，在组织上偶尔使用网页密码库进行相关工作。</td></tr><tr><td><strong>电子邮箱 &#x26; 主密码</strong></td><td>使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录 Bitwarden。</td></tr><tr><td><strong>个人项目</strong></td><td>在她的个人密码库中存储各种个人项目，包括登录和信用卡。</td></tr><tr><td><strong>两步登录</strong></td><td>使用组织层面的 <a href="../../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md">Duo 2FA</a>。</td></tr><tr><td><strong>集合</strong></td><td>Alice 对「Marketing Credentials」集合具有「可以管理」权限，授予她可以管理该集合的许多方面。</td></tr><tr><td><strong>共享的项目</strong></td><td>创建并共享了多个归组织所有并驻留在她团队集合中的密码库项目。</td></tr></tbody></table>
 
 #### 当 Alice 从您的组织中被移除后： <a href="#once-offboarded" id="once-offboarded"></a>
 
-<table data-search="false"><thead><tr><th width="150">产品领域</th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td><p>可以继续使用任一个 Bitwarden 应用程序访问她的个人密码库，但将<strong>立即失去对组织密码库、所有集合和所有已共享项目的访问权限</strong>。</p><p></p><p>有关本地缓存的信息，请参阅本节末尾的提示。</p></td></tr><tr><td><strong>电子邮箱 &#x26; 主密码</strong></td><td>可以继续使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录，但是由于她无法访问她的 <code>@company.com</code> 收件箱，因此应该建议她更改为与她的 Bitwarden 账户关联的电子邮箱。</td></tr><tr><td><strong>个人项目</strong></td><td>仍然可以使用她的个人密码库并访问存储在其中的项目。</td></tr><tr><td><strong>组织中的权限</strong></td><td>将<strong>立即失去与组织相关的所有事物的所有权限和访问权限</strong>。</td></tr><tr><td><strong>两步登录</strong></td><td>将无法使用组织层面的 Duo 2FA 访问她的密码库，但可以设置为我们的免费两步登录选项之一或升级到高级版以获取更多功能。</td></tr><tr><td><strong>创建的集合</strong></td><td>Alice 的「Marketing Credentials」集合，将由组织所有者和管理员保留，他们可以为某个新用户分配「可以管理」权限。</td></tr><tr><td><strong>共享的项目</strong></td><td>集合和已共享项目的所有权<strong>属于组织</strong>，因此 Alice 将无法访问所有这些项目，尽管已创建它们。</td></tr></tbody></table>
+<table data-search="false"><thead><tr><th width="141.73325892857142">产品领域</th><th>描述</th></tr></thead><tbody><tr><td><strong>客户端应用程序</strong></td><td><p>可以继续使用任一个 Bitwarden 应用程序访问她的个人密码库，但将<strong>立即失去对组织密码库、所有集合和所有已共享项目的访问权限</strong>。</p><p></p><p>有关本地缓存的信息，请参阅本节末尾的提示。</p></td></tr><tr><td><strong>电子邮箱 &#x26; 主密码</strong></td><td>可以继续使用 <code>alice@company.com</code> 和 <code>p@ssw0rD</code> 登录，但是由于她无法访问她的 <code>@company.com</code> 收件箱，因此应该建议她更改为与她的 Bitwarden 账户关联的电子邮箱。</td></tr><tr><td><strong>个人项目</strong></td><td>仍然可以使用她的个人密码库并访问存储在其中的项目。</td></tr><tr><td><strong>组织中的权限</strong></td><td>将<strong>立即失去与组织相关的所有事物的所有权限和访问权限</strong>。</td></tr><tr><td><strong>两步登录</strong></td><td>将无法使用组织层面的 Duo 2FA 访问她的密码库，但可以设置为我们的免费两步登录选项之一或升级到高级版以获取更多功能。</td></tr><tr><td><strong>创建的集合</strong></td><td>Alice 的「Marketing Credentials」集合，将由组织所有者和管理员保留，他们可以为某个新用户分配「可以管理」权限。</td></tr><tr><td><strong>共享的项目</strong></td><td>集合和已共享项目的所有权<strong>属于组织</strong>，因此 Alice 将无法访问所有这些项目，尽管已创建它们。</td></tr></tbody></table>
 
 {% hint style="success" icon="lightbulb" %}
 离线设备会缓存密码库数据（包括组织密码库数据）的只读副本。 某些客户端可能会在成员离职后的短时间内保留对该只读数据的访问权限。如果预计会有人恶意利用这一点，则应在将成员从组织中移除时更新其曾拥有访问权限的凭据。
@@ -246,7 +246,7 @@ Bitwarden 组织包括了对[事件日志](../oversight-visibility/event-logging
 
 SCIM、Directory Connector、SSO 登录、企业策略和您的密码库可以独立或协调工作，以优化您的入职、继任和组织管理体验。下表详细说明了如何将这些要素整合为一个顺畅的过程：
 
-<table><thead><tr><th width="150">步骤</th><th>描述</th></tr></thead><tbody><tr><td><strong>同步</strong></td><td>使用 SCIM 或 Directory Connector 将群组和用户从您现有的目录服务同步到 Bitwarden。</td></tr><tr><td><strong>邀请</strong></td><td>SCIM 或 Directory Connector 会自动向同步的用户发出邀请。</td></tr><tr><td><strong>身份验证</strong></td><td>将您的 SSO 登录实施与 SSO 策略配对，以要求用户在接受邀请时注册 SSO。</td></tr><tr><td><strong>管理</strong></td><td>使用网页密码库界面将一些用户提升到不同的角色，并确保群组 - 集合关系被配置为授予合适的用户以合适的访问权限。</td></tr><tr><td><strong>重新同步</strong></td><td>维护您的 SCIM 集成，定期重新运行 Directory Connector 以从 Bitwarden 中移除不再在您的目录服务中处于活动状态的用户并开始新员工入职流程。</td></tr></tbody></table>
+<table><thead><tr><th width="103.81529017857142">步骤</th><th>描述</th></tr></thead><tbody><tr><td><strong>同步</strong></td><td>使用 SCIM 或 Directory Connector 将群组和用户从您现有的目录服务同步到 Bitwarden。</td></tr><tr><td><strong>邀请</strong></td><td>SCIM 或 Directory Connector 会自动向同步的用户发出邀请。</td></tr><tr><td><strong>身份验证</strong></td><td>将您的 SSO 登录实施与 SSO 策略配对，以要求用户在接受邀请时注册 SSO。</td></tr><tr><td><strong>管理</strong></td><td>使用网页密码库界面将一些用户提升到不同的角色，并确保群组 - 集合关系被配置为授予合适的用户以合适的访问权限。</td></tr><tr><td><strong>重新同步</strong></td><td>维护您的 SCIM 集成，定期重新运行 Directory Connector 以从 Bitwarden 中移除不再在您的目录服务中处于活动状态的用户并开始新员工入职流程。</td></tr></tbody></table>
 
 ## FAQ <a href="#faqs" id="faqs"></a>
 

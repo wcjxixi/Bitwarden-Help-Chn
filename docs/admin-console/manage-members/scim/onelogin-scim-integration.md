@@ -50,10 +50,7 @@ SCIM 集成适用于**团队版组织和企业版组织**。未使用与 SCIM �
 
 在 **API Connection** 部分输入以下值：
 
-| Application 设置    | 描述                                                                     |
-| ----------------- | ---------------------------------------------------------------------- |
-| SCIM Base URL     | 将此字段设置为 SCIM URL（[了解更多](onelogin-scim-integration.md#enable-scim)）。    |
-| SCIM Bearer Token | 将此字段设置为 SCIM API 密钥（[了解更多](onelogin-scim-integration.md#enable-scim)）。 |
+<table><thead><tr><th width="216.58984375">Application 设置</th><th>描述</th></tr></thead><tbody><tr><td>SCIM Base URL</td><td>将此字段设置为 SCIM URL（<a href="onelogin-scim-integration.md#enable-scim">了解更多</a>）。</td></tr><tr><td>SCIM Bearer Token</td><td>将此字段设置为 SCIM API 密钥（<a href="onelogin-scim-integration.md#enable-scim">了解更多</a>）。</td></tr></tbody></table>
 
 配置好这些字段后，选择 **Save**。
 

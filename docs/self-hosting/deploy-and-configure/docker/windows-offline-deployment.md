@@ -18,7 +18,12 @@
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
-<table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2 GB RAM</td><td>4 GB RAM</td></tr><tr><td>存储</td><td>12 GB</td><td>25 GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
+|           | 最低                                                         | 推荐                                                         |
+| --------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
+| 处理器       | x64, 1.4GHz                                                | x64, 2GHz 双核                                               |
+| 内存        | 2 GB RAM                                                   | 4 GB RAM                                                   |
+| 存储        | 12 GB                                                      | 25 GB                                                      |
+| Docker 版本 | Engine 26+ 以及 Compose<mark style="color:red;">**ª**</mark> | Engine 26+ 以及 Compose<mark style="color:red;">**ª**</mark> |
 
 <mark style="color:red;">**ª**</mark> - Docker Compose 可通过 Docker Desktop 安装，其包含 Engine 和 Compose。[安装 Docker Desktop 以获取 Engine 和 Compose](https://docs.docker.com/desktop/install/windows-install/)。
 

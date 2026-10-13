@@ -9,7 +9,7 @@
 {% hint style="info" %}
 TOTP 验证码的生成要求 Bitwarden 高级版或付费组织（家庭版、团队版或企业版）的个人高级版成员资格。[此处](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#compare-personal-plans)详细了解每种方案的详细信息。
 
-~~不再向 Families 2019 方案的用户提供个人高级版成员资格。~~[~~此处~~](../../../plans-and-pricing/updates-to-bitwarden-plans-2019-2020.md)~~了解此方案的变更情况。~~
+~~不再向 2019 家庭版方案的用户提供个人高级版成员资格。~~[~~此处~~](../../../plans-and-pricing/updates-to-bitwarden-plans-2019-2020.md)~~了解此方案的变更情况。~~
 {% endhint %}
 
 ## 设置 <a href="#setup" id="setup"></a>

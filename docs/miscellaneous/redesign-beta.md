@@ -4,6 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/redesign-beta/)
 {% endhint %}
 
+> **\[译者注]**：2026-09-30，Bitwarden 发布了 UI<mark style="color:red;">**ª**</mark> 和 UX<mark style="color:red;">**ª**</mark> 全新设计的[桌面 App Beta 版 v2026.9.1-beta.1](https://github.com/bitwarden/clients/releases/tag/desktop-v2026.9.1-beta.1) 和[浏览器扩展 Beta 版 v2026.9.3-beta.1](https://github.com/bitwarden/clients/releases/tag/browser-v2026.9.3-beta.1)。
+>
+> <mark style="color:red;">**ª**</mark> - UI（User Interface，用户界面）：产品的「外观」与「视觉呈现」；UX（User Experience，用户体验）：用户的「感受」与「使用逻辑」。
+
 Bitwarden 正在更新 App 的外观和体验，目前**面向云端用户推出 Chrome 浏览器扩展和桌面 App 的 Beta 版**。该 Beta 版需[主动选择加入](redesign-beta.md#join-the-beta)，可与您当前的 Bitwarden 云端账户配合使用，并且您可随时切换回正式版本。
 
 ## 有哪些变化 <a href="#whats-changing" id="whats-changing"></a>

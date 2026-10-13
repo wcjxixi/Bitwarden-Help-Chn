@@ -97,7 +97,7 @@ Bitwarden 和 Ping Identity **SCIM Provisioner with SAML (SCIM v2 Enterprise)** 
 #### 用户属性 <a href="#user-attributes" id="user-attributes"></a>
 
 * `active`
-* `emails`<mark style="color:red;">**ª**</mark> 或 `userName`
+* `emails` <mark style="color:red;">**ª**</mark> 或 `userName`
 * `displayName`
 * `externalId`
 
