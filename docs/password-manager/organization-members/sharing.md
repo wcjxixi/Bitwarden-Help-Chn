@@ -1,4 +1,4 @@
-# =共享项目
+# 共享项目
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/sharing/)
@@ -6,7 +6,7 @@
 
 Bitwarden 提供了两种共享密码库项目的方式：将其添加到组织集合中，以便成员能够持续访问；或者创建一个链接，让任何人可以临时访问该项目内容的副本。本文将介绍这两种方式，帮助您根据接收者的实际需求选择最合适的方案。
 
-* 使用[组织集合](sharing.md#organization-sharing)共享：使用集合共享，通过共享权限来给予组织成员持续访问集合项目。
+* 使用[组织集合](sharing.md#organization-sharing)共享：使用集合共享，通过共享权限来给予组织成员对集合项目的持续访问权限。
 * [通过链接](sharing.md#share-via-link)共享：通过链接共享会创建一个包含密码库项目副本的 Send。接收者可以在链接失效前查看此副本，但无法访问或更改原始项目。通过链接共享适用于浏览器扩展、桌面 App 和网页 App。
 
 ## 组织共享 <a href="#organization-sharing" id="organization-sharing"></a>
@@ -200,7 +200,7 @@ bw move <itemid> <organizationid> [encodedJson]
 拥有项目所存储的集合的[管理集合权限](../../admin-console/manage-shared-items/collections/collection-permissions.md)的用户可以选择停止与组织共享项目：
 
 1. 使用项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 选项菜单然后选择**克隆**，以克隆该项目。
-2. 在**新建项目**面板上，使用**所有者**下拉菜单选择您的账户电子邮箱。这将确保项目被克隆到非共享上下文中。
+2. 在**添加项目**面板上，使用**所有者**下拉菜单选择您的账户电子邮箱。这将确保项目被克隆到非共享上下文中。
 3. **保存**克隆的项目。
 4. 使用项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 选项菜单然后选择**删除**，以删除原始项目。
 
@@ -208,6 +208,61 @@ bw move <itemid> <organizationid> [encodedJson]
 
 ## 通过链接共享 <a href="#share-via-link" id="share-via-link"></a>
 
-### 编辑共享的密码库项目 <a href="#edit-a-vault-item-share" id="edit-a-vault-item-share"></a>
+使用**通过链接共享**，以授予他人对密码库项目副本的临时访问权限，而原始项目仍保留在您的密码库中。通过链接共享会创建一个包含项目内容的 [Send](../bitwarden-send/about-send.md)，您可以通过任何渠道分享该 Send。通过链接共享适用于[高级版用户](../../plans-and-pricing/password-manager/about-bitwarden-plans.md)或付费版组织（家庭版、团队版或企业版）的成员。此外，组织管理员可以使用管理 Send 和共享策略来配置此功能的访问权限。
+
+{% hint style="info" %}
+**通过链接共享**不适用于 SSH 密钥项目、归档中的项目和回收站中的项目。要共享已归档或已删除的某个项目，请先将其取消归档或从回收站中恢复。要共享一个或多个集合中的某个项目，您需要至少其中一个集合的编辑权限。
+{% endhint %}
+
+要与一个或多个不需要持续访问组织集合的人员共享密码库中的项目：
+
+1、选择要共享的项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 菜单，然后选择**通过链接共享**：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7LURUsVmunZxNFPjWwXAJn/fc31a656e4ec94b6fa6f7aa37648b1fa/web_share_link.png?w=800&#x26;fm=avif" alt=""><figcaption><p>通过链接共享</p></figcaption></figure></div>
+
+2、输入接收者的电子邮箱地址。如果发送给多个接收者，使用逗号分隔电子邮箱地址：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3vTrnas77a2ZHgWOBu65Xc/ecf1b5c7761351eb9adf207805c00f43/share_link_menu_web_app.png?w=800&#x26;fm=avif" alt=""><figcaption><p>通过链接共享菜单</p></figcaption></figure></div>
+
+3、配置共享规则：
+
+* **链接有效期**：选择链接的有效时长。
+
+{% hint style="info" %}
+过期日期仅影响共享链接本身。如果接收者在链接有效期间保存了共享的密码库项目，即使链接过期，他们仍然可以访问该项目。
+{% endhint %}
+
+* **一次性共享**：仅允许链接打开一次。
+
+4、准备好共享链接后，选择**复制链接**然后将其粘贴到您首选的沟通渠道中。之前生成的链接将显示在**活动链接**列表中。
+
+### 编辑密码库项目共享 <a href="#edit-a-vault-item-share" id="edit-a-vault-item-share"></a>
+
+创建链接后，您可以对其进行编辑，以更改其设置或添加选项：
+
+1. 导航至 **Send** 页面，然后选择共享的密码库项目。
+2. 选择**编辑**。
+
+编辑密码库项目共享时，您可以配置共享链接的其他设置：
+
+* **最大访问次数**：配置链接可以访问的次数。
+* **对接收者隐藏我的电子邮箱地址**：选择此选项将在接收者打开共享链接时隐藏发送者的电子邮箱地址。
+* **私密备注**：将任何其他私密备注添加到此 Send。
+
+{% hint style="info" %}
+**通过链接分享**发送的项目副本与创建链接时相同。之后对原始项目的任何编辑都不会更新接收者的副本。
+{% endhint %}
 
 ### 从共享链接接收项目 <a href="#receive-an-item-from-a-shared-link" id="receive-an-item-from-a-shared-link"></a>
+
+当您收到共享的项目链接时：
+
+1、打开此链接，输入您的电子邮箱地址，然后选择**发送验证码**。您的电子邮箱地址必须与发送者输入的电子邮箱地址一致才能收到验证码。
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4TYGXZJtn13F7PZzULJ5IY/d3fc9be6b3c299f7ffa002c2472b8685/enter_email_receive_send.png?w=800&#x26;fm=avif" alt=""><figcaption><p>输入电子邮箱地址进行验证</p></figcaption></figure></div>
+
+2、收到验证码后，请将其输入到**验证码**字段中。
+
+3、验证码通过后，您可以复制该项目的内容以供使用，或将其粘贴到您的密码库的新项目中长期存储。
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7g7mG243hYSCQDrmUMP6dv/7d7f8594e7cdd233b30920af1d8a9eba/Share_with_link_content.png?w=800&#x26;fm=avif" alt=""><figcaption><p><strong>通过链接分享的内容</strong></p></figcaption></figure></div>
