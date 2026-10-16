@@ -113,7 +113,7 @@
     * [\*Bitwarden 导入器工具](docs/password-manager/import-and-export/bitwarden-importer-tool.md)
     * [导入 & 导出 FAQ](docs/password-manager/import-and-export/import-and-export-faqs.md)
   * [组织成员](docs/password-manager/organization-members/README.md)
-    * [共享项目](docs/password-manager/organization-members/sharing.md)
+    * [=共享项目](docs/password-manager/organization-members/sharing.md)
     * [我的项目](docs/password-manager/organization-members/my-items.md)
     * [将项目转移到组织](docs/password-manager/organization-members/transfer-ownership.md)
     * [更改存在风险的密码](docs/password-manager/organization-members/change-at-risk-passwords.md)

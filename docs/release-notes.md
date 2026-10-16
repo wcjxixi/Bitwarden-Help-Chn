@@ -35,6 +35,19 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 
 ## 发行公告
 
+## 2026.10.0
+
+_（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.10.0、浏览器扩展 2026.10.0、桌面端 2026.10.0、移动端 2026.10.0、CLI 2026.10.0）_
+
+### Password Manager
+
+* <i class="fa-star">:star:</i> 通过链接共享：高级版用户及付费版组织成员现在可以通过链接与指定人员共享密码库项目的临时副本，并可以设置规则以控制谁可以打开该链接以及链接的有效期。了解更多有关[共享密码库项目](password-manager/organization-members/sharing.md)的信息。
+* <i class="fa-star">:star:</i> 密码库健康报告：您现在可以在浏览器扩展中运行密码库健康报告，从而识别出暴露的密码、弱密码或被重复使用的密码。高级版和家庭版订阅可以查看具体哪些登录存在风险，而免费版订阅可以查看被标记的密码总数。
+
+### 自托管 <a href="#self-host" id="self-host"></a>
+
+* 新的环境变量：您现在可以通过[环境变量](self-hosting/deploy-and-configure/configuration-options/environment-variables.md#optional-variables)来设置访问令牌的生命周期。
+
 ## 2026.9.2
 
 _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.9.1、浏览器扩展 2026.9.3、桌面端 2026.9.1、移动端 2026.9.1、CLI 2026.9.1）_

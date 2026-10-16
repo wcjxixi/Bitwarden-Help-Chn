@@ -1,23 +1,30 @@
-# 共享项目
+# =共享项目
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/sharing/)
 {% endhint %}
 
-共享需要[组织](../../admin-console/organizations-overview.md)的成员资格。使用 Bitwarden，共享项目意味着两件事：
+Bitwarden 提供了两种共享密码库项目的方式：将其添加到组织集合中，以便成员能够持续访问；或者创建一个链接，让任何人可以临时访问该项目内容的副本。本文将介绍这两种方式，帮助您根据接收者的实际需求选择最合适的方案。
+
+* 使用[组织集合](sharing.md#organization-sharing)共享：使用集合共享，通过共享权限来给予组织成员持续访问集合项目。
+* [通过链接](sharing.md#share-via-link)共享：通过链接共享会创建一个包含密码库项目副本的 Send。接收者可以在链接失效前查看此副本，但无法访问或更改原始项目。通过链接共享适用于浏览器扩展、桌面 App 和网页 App。
+
+## 组织共享 <a href="#organization-sharing" id="organization-sharing"></a>
+
+使用集合共享要求[组织](../../admin-console/organizations-overview.md)成员资格。使用 Bitwarden，共享项目意味着两件事：
 
 * 将项目添加到一个[组织](../../admin-console/organizations-overview.md)。这将把项目的所有权转移给与您共享项目的组织。
 * 将项目添加到一个或多个[集合](../../admin-console/manage-shared-items/collections/about-collections.md)。这些集合的**访问权限**设置决定了谁可以访问它。
 
-使用 Bitwarden 共享项目有许多不同的方法。在本文中，我们将介绍这些方法。无论哪种方法最适合您的工作流程，请记住，您需要成为组织的成员才能共享。
+使用集合共享要求组织成员资格。
 
-## 共享新项目 <a href="#share-new-items" id="share-new-items"></a>
+### 共享新项目 <a href="#share-new-items" id="share-new-items"></a>
 
 无论是向组织**添加项目**，还是向组织**导入项目**，您都可以从一开始就指定共享对象。您可以将项目添加或导入到任何拥有合适[权限](../../admin-console/manage-shared-items/collections/collection-permissions.md)的集合中：
 
 {% tabs %}
 {% tab title="添加项目" %}
-要从网页 App、浏览器扩展、移动端或桌面端添加新的共享项目，请执行以下操作：
+要从网页 App、浏览器扩展、移动端或桌面端添加新的共享项目：
 
 1、在任何 Bitwarden App 的**密码库**视图中，选择 <i class="fa-plus">:plus:</i>**新增**按钮，然后选择所需的项目类型。
 
@@ -63,7 +70,7 @@
 {% endtab %}
 {% endtabs %}
 
-## 共享现有项目 <a href="#share-existing-items" id="share-existing-items"></a>
+### 共享现有项目 <a href="#share-existing-items" id="share-existing-items"></a>
 
 您可能会发现，您当前拥有的项目需要与您组织中的其他成员共享。您可以在任何 Bitwarden App 中，与任何拥有合适[权限](../../admin-console/manage-shared-items/collections/collection-permissions.md)的集合共享项目：
 
@@ -180,7 +187,7 @@ bw move <itemid> <organizationid> [encodedJson]
 {% endtab %}
 {% endtabs %}
 
-## 项目共享后 <a href="#after-items-are-shared" id="after-items-are-shared"></a>
+### 项目共享后 <a href="#after-items-are-shared" id="after-items-are-shared"></a>
 
 {% hint style="info" %}
 **提醒**：共享某个项目涉及将其所有权交给组织。管理团队应妥善管理[集合的权限](../../admin-console/manage-shared-items/collections/collection-permissions.md)，因为拥有正确权限级别的成员有能力更改或删除已共享的项目。您可以通过项目名称旁边的徽标来判断该项目是否为共享项目：
@@ -198,3 +205,9 @@ bw move <itemid> <organizationid> [encodedJson]
 4. 使用项目的 <i class="fa-ellipsis-vertical">:ellipsis-vertical:</i> 选项菜单然后选择**删除**，以删除原始项目。
 
 请注意，在某些情况下，将项目移动到具有更高访问控制限制的集合中，或移动到只有您才能访问的集合中，可能比直接从组织中移除项目更有效。
+
+## 通过链接共享 <a href="#share-via-link" id="share-via-link"></a>
+
+### 编辑共享的密码库项目 <a href="#edit-a-vault-item-share" id="edit-a-vault-item-share"></a>
+
+### 从共享链接接收项目 <a href="#receive-an-item-from-a-shared-link" id="receive-an-item-from-a-shared-link"></a>
