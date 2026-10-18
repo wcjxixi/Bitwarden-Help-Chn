@@ -16,7 +16,7 @@
 
 * 为您的集合指定一个**名称**
 * 选择它应属于的**组织**
-* （可选）选择一个集合来嵌套该集合。集合可以被嵌套，以逻辑地组织它们，仅用于显示目的：
+* （可选）选择一个集合来嵌套该集合。集合可以被嵌套，以逻辑地组织它们，仅用于显示目的。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7EXnVptHEKQkSfKY1FsOmI/7ffee8ed6f5712cc9fa4419c4eb88b11/Nested_collections_in_filter_column.png?w=250&#x26;fm=avif" alt=""><figcaption><p>筛选器列中的嵌套集合</p></figcaption></figure></div>
 
