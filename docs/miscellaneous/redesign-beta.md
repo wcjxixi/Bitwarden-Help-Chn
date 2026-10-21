@@ -69,9 +69,9 @@ Beta 版**不适用于自托管 Bitwarden 服务器**。
 
 对于 macOS 桌面 App，可能会提示您将操作系统密码保存到钥匙串中，以便 Beta 版 App 可以访问安全存储。我们建议选择**始终允许**。
 
-### 发送[^1]反馈 <a href="#send-feedback" id="send-feedback"></a>
+### 发送反馈 <a href="#send-feedback" id="send-feedback"></a>
 
-我们很想知道您对 Beta 版的看法：
+我们很想知道您对此 Beta 版的看法：
 
 * 要分享您的 Beta 版体验，请[填写调查问卷](https://docs.google.com/forms/d/e/1FAIpQLSdSVNSLkHTt399Okh_WbdZOZ01iEAcpH5-rFbz4sJDIgqe1Og/viewform)并在[社区论坛帖子](https://community.bitwarden.com/t/try-out-the-redesigned-bitwarden-apps-now-in-beta/102516)中分享您的体验。
 * 要报告错误，请选择**新建话题**然后使用**浏览器扩展 Beta 版错误报告**或**桌面 Beta 版错误报告**模板，[在 GitHub 上创建一个话题](https://github.com/bitwarden/clients/issues)。
@@ -80,12 +80,10 @@ Beta 版**不适用于自托管 Bitwarden 服务器**。
 
 本节列出了 Beta 版 App 发布时已知的全部问题：
 
-<table data-search="false"><thead><tr><th width="176.328125">功能</th><th width="121.421875">客户端</th><th>描述</th></tr></thead><tbody><tr><td>生物识别解锁</td><td>桌面端</td><td>如果您安装了多个 Bitwarden 桌面 App，生物识别解锁功能可能无法正常工作。要解决此问题，请卸载所有 Bitwarden 桌面 App，然后仅重新安装您希望使用的版本。</td></tr><tr><td>清除组织筛选器</td><td>浏览器扩展</td><td>当选中两个或两个以上组织时，移除其中一个组织的筛选器也会移除该组织共享文件夹的筛选器。之后，「我的文件夹」筛选器可能会从筛选菜单中消失。</td></tr><tr><td>共享文件夹名称</td><td>桌面端</td><td>过长的共享文件夹名称会被截断。</td></tr><tr><td>文件夹选择下拉菜单</td><td>桌面端</td><td>当有很多嵌套的共享文件夹时，文件夹下拉菜单的功能不如预期。</td></tr><tr><td>共享文件夹嵌套</td><td>桌面端</td><td>密码库列表中嵌套的共享文件夹没有缩进，因此无法清楚地看出哪些共享文件夹位于其他共享文件夹之内。</td></tr><tr><td>展开嵌套文件夹</td><td>浏览器扩展</td><td>展开嵌套共享文件夹的目标点击区域过小，难以点击或轻触。</td></tr><tr><td>指定收藏</td><td>桌面端</td><td>添加或移除某个项目的收藏状态可能会导致列表中的其他项目短暂闪烁或出现其他视觉异常。</td></tr><tr><td>正在加载占位符</td><td>浏览器扩展</td><td>当您的密码库加载不流畅时，会显示正在加载占位符。</td></tr><tr><td>账户切换器</td><td>桌面端</td><td>当仅登录了一个账户时，「添加账户」上方会出现一条额外的分隔线，并且锁形图标离其标签太近。</td></tr><tr><td>按钮</td><td>浏览器扩展</td><td>按钮周围的部分边距显示不正确。计划进行进一步改进。</td></tr></tbody></table>
+<table data-search="false"><thead><tr><th width="176.328125">功能</th><th width="121.421875">客户端</th><th>描述</th></tr></thead><tbody><tr><td>生物识别解锁</td><td>桌面端</td><td>如果您安装了多个 Bitwarden 桌面 App，生物识别解锁功能可能无法正常工作。要解决此问题，请卸载所有 Bitwarden 桌面 App，然后仅重新安装您希望使用的版本。</td></tr><tr><td>清除组织筛选</td><td>浏览器扩展</td><td>当选中两个或两个以上组织时，移除其中一个组织的筛选也会移除该组织共享文件夹的筛选。之后，「我的文件夹」筛选可能会从筛选菜单中消失。</td></tr><tr><td>共享文件夹名称</td><td>桌面端</td><td>过长的共享文件夹名称会被截断。</td></tr><tr><td>文件夹选择下拉菜单</td><td>桌面端</td><td>当有很多嵌套的共享文件夹时，文件夹下拉菜单的功能不如预期。</td></tr><tr><td>共享文件夹嵌套</td><td>桌面端</td><td>密码库列表中嵌套的共享文件夹没有缩进，因此无法清楚地看出哪些共享文件夹位于其他共享文件夹之内。</td></tr><tr><td>展开嵌套文件夹</td><td>浏览器扩展</td><td>展开嵌套共享文件夹的目标点击区域过小，难以点击或轻触。</td></tr><tr><td>指定收藏</td><td>桌面端</td><td>添加或移除某个项目的收藏状态可能会导致列表中的其他项目短暂闪烁或出现其他视觉异常。</td></tr><tr><td>正在加载占位符</td><td>浏览器扩展</td><td>当您的密码库加载不流畅时，会显示正在加载占位符。</td></tr><tr><td>账户切换器</td><td>桌面端</td><td>当仅登录了一个账户时，「添加账户」上方会出现一条额外的分隔线，并且锁形图标离其标签太近。</td></tr><tr><td>按钮</td><td>浏览器扩展</td><td>按钮周围的部分边距显示不正确。计划进行进一步改进。</td></tr></tbody></table>
 
 ### 退出 Beta 版 <a href="#leave-the-beta" id="leave-the-beta"></a>
 
 在 2026 年 10 月 31 日 Beta 版结束之前，您可以随时在 Beta 版 App 和正式版 App 之间切换。如果您想在此日期之前退出 Beta 版，请停止使用 Beta 版 App 并将其卸载。
 
 **Beta 版结束后，重要的是切换到正式版 App**，以继续接收更新。
-
-[^1]: 
