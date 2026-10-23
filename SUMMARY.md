@@ -21,7 +21,7 @@
       * [使用 SSO 登录](docs/account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)
       * [添加受信任设备](docs/account/log-in-and-unlock/using-single-sign-on/add-a-trusted-device.md)
       * [链接 SSO](docs/account/log-in-and-unlock/using-single-sign-on/link-sso.md)
-    * [更多登录 & 解锁选项](docs/account/log-in-and-unlock/more-log-in-unlock-methods/README.md)
+    * [更多登录 & 解锁方式](docs/account/log-in-and-unlock/more-log-in-unlock-methods/README.md)
       * [使用设备登录](docs/account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)
       * [使用通行密钥登录 & 解锁](docs/account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-passkeys.md)
       * [使用生物识别解锁](docs/account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)
