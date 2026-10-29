@@ -14,21 +14,36 @@ Bitwarden 提供三种通行密钥功能：
 <mark style="color:red;">**ª**</mark> - 某些身份验证器，尤其是 Windows Hello，不允许您使用通行密钥进行登录和 2FA。
 {% endhint %}
 
-通行密钥是传统密码的安全替代方案，让您无需输入密码即可登录 App 和网站。根据 [FIDO 联盟](https://fidoalliance.org/overview/)制定的标准开发，绕过了标准密码可能存在的漏洞（如网络钓鱼）。
+通行密钥是传统密码的安全替代方案，让您无需输入密码即可登录 App 和网站。通行密钥根据 [FIDO 联盟](https://fidoalliance.org/overview/)制定的标准开发，可以绕过标准密码可能存在的漏洞（如网络钓鱼攻击）。
 
 通行密钥保存在您的 Bitwarden 密码库中，并使用浏览器扩展或移动 App 在您日常使用的 App 和网站上自动填充它们。存储的通行密钥受 Bitwarden 可信赖的端到端加密保护。
 
 ## 什么是通行密钥？ <a href="#what-are-passkeys" id="what-are-passkeys"></a>
 
-通行密钥是密码的替代方案，可以让用户在不同设备上快速、方便、安全地登录网站和 App。通行密钥指的是一种可发现的 FIDO 凭证，它可以通过同步实现跨设备的安全无密码登录，或作为设备绑定通行密钥专用于单个硬件。
+[通行密钥](https://bitwarden.com/resources/passkeys-faq/)由一对极大的数字（即密钥）组成，它们协同工作，能够安全地验证您的身份。其中一个密钥存储在网站端，另一个则以私密方式保存在您的密码管理器或设备中。由于每个通行密钥仅适用于其创建时所对应的网站，因此即便遇到伪造的仿冒网站，对方也无法诱骗您使用它。
 
-App 和服务可以要求在保存或访问用它们创建的通行密钥时使用 PIN、密码、图案或生物识别因素进行验证。
+在登录网站或 App 时，您可以选择使用通行密钥进行登录，并确认您的身份。有些通行密钥可完全替代用户名和密码，而另一些则是在您输入密码后增加一个验证步骤。根据具体网站及通行密钥类型的不同，确认身份的方式可能包括：解锁 Bitwarden，或者使用您设备上的 PIN 码、图案、生物识别（如指纹或面部识别）等。
 
 ### 通行密钥的类型 <a href="#types-of-passkeys" id="types-of-passkeys"></a>
 
-通行密钥通过 Bitwarden 浏览器扩展和移动 App 进行存储和调用。可被发现的通行密钥和不可被发现的 FIDO2 凭据都可以存储在 Bitwarden 中，并用于登录具有通行密钥功能的网站。
+通行密钥会根据其存储位置和使用方式而有所不同：
+
+* **同步型或设备绑定型**：同步型通行密钥（例如存储在 Bitwarden 中的通行密钥）可在您使用 Bitwarden 的所有设备上使用。设备绑定型通行密钥则存储在单个硬件（例如 YubiKey）上，无法复制。
+* **可发现型或不可发现型**：可发现的通行密钥允许您无需输入用户名或密码即可登录。不可发现的 FIDO2 凭据通常用于在输入密码后进行双重身份验证 (2FA)。
+
+可被发现的通行密钥和不可被发现的 FIDO2 凭据都可以存储在 Bitwarden 中，并用于登录具有通行密钥功能的网站。保存在 Bitwarden 中的通行密钥会在您使用 Bitwarden 的设备之间同步。
+
+{% hint style="info" %}
+部分通行密钥支持允许它们生成加密密钥的 [PRF 扩展](https://bitwarden.com/blog/prf-webauthn-and-its-role-in-passkeys/)。要[使用通行密钥而非主密码解锁 Bitwarden 密码库](../../../account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-passkeys.md)，您需要一个支持 PRF 的通行密钥。
+{% endhint %}
 
 ## 使用 Bitwarden 保存和自动填充通行密钥 <a href="#using-passkeys-with-bitwarden" id="using-passkeys-with-bitwarden"></a>
+
+Bitwarden 浏览器扩展、移动 App 和桌面 App 均支持存储和使用通行密钥。
+
+{% hint style="info" %}
+Bitwarden 不会提示或允许您在密码库中保存用于登录任何 Bitwarden 账户的通行密钥。这避免了需要访问您的密码库才能登录到完全相同的密码库的循环问题。
+{% endhint %}
 
 {% tabs %}
 {% tab title="浏览器扩展" %}
@@ -125,7 +140,7 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 2. 前往**设置** → **自动填充。**
 3. 点击**通行密钥管理**。
 4. 点击**继续**。
-5. 这将打开您设备的设置 App。将 Bitwarden 配置为您的通行密钥提供程序。
+5. 这将打开您设备的**设置** App。将 Bitwarden 配置为您的通行密钥提供程序。
 
 ### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
 
@@ -184,6 +199,10 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 2、选择**通行密钥**字段的 <i class="fa-circle-minus">:circle-minus:</i>删除图标。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/448nZ5ybyis0nUEwWsq6kt/8442776aca2a73eec13d30ce25b08f9a/2024-12-02_16-08-55.png?w=694&#x26;fm=avif" alt=""><figcaption><p>删除通行密钥</p></figcaption></figure></div>
+
+3、选择**删除**以确认。
+
+4、选择**保存**。
 
 ### 导出和导入通行密钥 <a href="#export-and-import-passkeys" id="export-and-import-passkeys"></a>
 

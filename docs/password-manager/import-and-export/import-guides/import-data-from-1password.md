@@ -1,36 +1,45 @@
-# =从 1Password 导入
+# 从 1Password 导入
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/import-from-1password/)
 {% endhint %}
 
-使用以下两种方法之一，即可快速将数据从 1Password 转移到 Bitwarden：
+使用以下两种方式之一，即可快速将数据从 1Password 转移到 Bitwarden：
 
 * 使用 Bitwarden 浏览器扩展或桌面 App，无需下载文件即可[直接导入数据](import-data-from-1password.md#import-directly-from-1password)。
 * 使用任何 Bitwarden App，从您的 1Password 账户[下载导出文件](import-data-from-1password.md#use-an-exported-file-for-import-to-bitwarden)然后将其导入 Bitwarden。
 
-## 直接从 1Password 导入 <a href="#import-directly-from-1password" id="import-directly-from-1password"></a>
+## 从 1Password 直接导入 <a href="#import-directly-from-1password" id="import-directly-from-1password"></a>
 
 要将 1Password 数据直接导入 Bitwarden，而无需下载导出文件以及手动转移数据：
 
-1、
+1、在 Bitwarden 桌面 App 或浏览器扩展中，打开**导入**页面：
 
-2、
+* 在桌面 App 中，从导航菜单中选择**导入**。
+* 在浏览器扩展中，导航至**设置** → **密码库选项** → **导入**。
 
-3、
+2、选择要导入到的**密码库**，以及（可选）要将导入的数据添加到的**文件夹**或**集合**。
 
-4、
+3、从**文件格式**下拉菜单中选择 **1Password**。
 
-5、
+4、从**方式**下拉菜单中，选择**直接导入**：
 
-6、
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/zvriHqMitr9zcIwTKmUYV/68cb7eefc9692e8d1b436ae6b75a31df/2026-10-20_10-16-35.png?w=800&#x26;fm=avif" alt=""><figcaption><p>从 1Password 直接导入</p></figcaption></figure></div>
+
+5、输入您的：
+
+* **1Password 电子邮箱**：输入您用于登录 1Password 的电子邮箱地址。
+* **登录地址**：输入您用于登录 1Password 的子域名。例如，对于许多个人用户来说，这将是 `my.1password.com` 中的 `my`。
+* **域名**：选择您用于登录 1Password 的域名，例如 `1password.com` 或 `1password.eu`。
+
+6、选择**导入**，然后根据提示完成 1Password 所需的身份验证步骤。目前仅支持使用您的 1Password 账户密码进行身份验证。
 
 ## 使用导出的文件导入到 Bitwarden <a href="#use-an-exported-file-for-import-to-bitwarden" id="use-an-exported-file-for-import-to-bitwarden"></a>
 
 1Password 数据支持导出为 `.1pux`（要求 1Password v8.5+）、`.1pif` 或 `.csv` 文件，具体取决于您使用的客户端版本和操作系统。了解 [1Password 导出包含哪些数据](https://support.1password.com/export/?mac#get-help)。
 
 {% hint style="success" icon="lightbulb" %}
-如果您的移动设备运行的是 iOS 26+ 或 Android 10+，且同时安装了 Bitwarden 和 1Password App，则无需执行导出操作。您可以直接使用 FIDO 凭据交换协议 (CXP) [在移动设备上导入数据](import-data-from-1password.md#import-directly-from-1password)，这是最快捷的方式。
+如果您的移动设备运行的是 iOS 26+ 或 Android 10+，且同时安装了 Bitwarden 和 1Password App，则无需执行导出操作。您可以直接使用 FIDO 凭据交换协议 (CXP) [在移动设备上导入数据](import-data-from-1password.md#import-to-bitwarden)，这是最快捷的方式。
 {% endhint %}
 
 ### 从 1Password 导出 <a href="#export-your-1-password-1-pif-logins" id="export-your-1-password-1-pif-logins"></a>
@@ -241,7 +250,5 @@ bw import <format> /Users/myaccount/Documents/mydata.csv
 数据导入后，请从您的计算机中删除已导出的数据文件。这将在您的计算机受到威胁时为您提供保护。如果您是从其他密码管理器或浏览器导入到 Bitwarden，您可能还需要从该工具中删除数据。
 {% endtab %}
 {% endtabs %}
-
-
 
 如果出现「导入错误」消息，则不会有任何数据添加到您的密码库中。[修复导入文件问题](../import-data.md#troubleshoot-import-errors)然后重试。
