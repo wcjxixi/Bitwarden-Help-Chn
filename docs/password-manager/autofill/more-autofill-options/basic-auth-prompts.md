@@ -4,6 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/basic-auth-autofill/)
 {% endhint %}
 
+{% hint style="warning" %}
+要使用此功能，请在浏览器扩展的**设置** > **自动填充**菜单中启用**浏览器登录自动填充提示**选项。此选项默认处于停用状态，因为恶意网站可能会在您不知情的情况下触发这些提示，从而可能泄露您的凭据。
+{% endhint %}
+
 如下图所示的登录提示，被称为「基本」或「原生」身份验证提示，**如果只有 1 个具有**[**匹配 URI**](../troubleshoot-autofill/forming-uris-for-autofill.md) **的登录项目**，Bitwarden 浏览器扩展将自动填充。您也可以使用浏览器扩展的 <i class="fa-arrow-up-right-from-square">:arrow-up-right-from-square:</i>**启动**按钮来自动打开并登录基本的受自治保护的资源。
 
 默认情况下，基本验证提示的自动填充将使用[主机](../troubleshoot-autofill/forming-uris-for-autofill.md#host) URI 匹配检测选项，这样自动填充的限制性更强。可以通过设置相关密码库项目的[匹配检测选项](../troubleshoot-autofill/forming-uris-for-autofill.md)来更改。

@@ -1,4 +1,4 @@
-# 自动填充通行密钥
+# =自动填充通行密钥
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/storing-passkeys/)
@@ -155,16 +155,24 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 如果您更倾向于使用未存储在 Bitwarden 中的通行密钥登录，请选择**更多已保存的登录**。
 {% endhint %}
 {% endtab %}
+
+{% tab title="Windows" %}
+
+{% endtab %}
+
+{% tab title="macOS" %}
+
+{% endtab %}
 {% endtabs %}
 
 ## 查看 Bitwarden 中的通行密钥 <a href="#viewing-passkeys-in-bitwarden" id="viewing-passkeys-in-bitwarden"></a>
 
-通行密钥保存后，可以从任何 Bitwarden App 查看它，其位于**通行密钥**字段中：
+您可以在任何 Bitwarden App 中访问已保存的通行密钥。在登录项目内，**通行密钥**字段会显示该通行密钥的创建日期和时间：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2SofQpuQstpo6gnIg9irwM/5ad0255aa61813dd55a6d4081e7c234d/2024-12-02_16-07-56.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>您的密码库中的通行密钥</p></figcaption></figure></div>
 
 {% hint style="info" %}
-如果此登录项目启用了主密码二次验证，您需要重新输入主密码才能访问此通行密钥。
+如果此登录项目启用了[主密码二次验证](../../your-vault/security-tools/master-password-re-prompt.md)，您需要重新输入主密码才能访问此通行密钥。
 {% endhint %}
 
 ### 删除通行密钥 <a href="#deleting-passkeys" id="deleting-passkeys"></a>
@@ -180,3 +188,5 @@ App 和服务可以要求在保存或访问用它们创建的通行密钥时使�
 ### 导出和导入通行密钥 <a href="#export-and-import-passkeys" id="export-and-import-passkeys"></a>
 
 通行密钥包含在 Bitwarden 生成的 [JSON 导出](../../import-and-export/export-vault-data.md)文件中，导出后即可[导入到 Bitwarden 账户](../../import-and-export/import-data.md)中。
+
+在移动设备上，也可以使用 FIDO 凭证交换协议 (CXP) 直接[导入](../../import-and-export/import-data.md#yi-dong-duan)和[导出](../../import-and-export/export-vault-data.md#yi-dong-duan)通行密钥（适用于 iOS 26+ 和 Android 14+）。相关的应用程序都必须支持 CXP。

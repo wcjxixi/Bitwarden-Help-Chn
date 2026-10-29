@@ -35,6 +35,20 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 
 ## 发行公告
 
+## 2026.10.1
+
+_（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.10.1、浏览器扩展 2026.10.1、桌面端 2026.10.2、移动端 2026.10.1、CLI 2026.10.1）_
+
+### Password Manager
+
+* <i class="fa-star">:star:</i> **桌面端通行密钥**：您现在可以使用 Windows 和 macOS 上的 Bitwarden 桌面 App [保存并使用通行密钥](password-manager/autofill/more-autofill-options/autofill-passkeys.md#using-passkeys-with-bitwarden)。
+* **1Password 直接导入器**：借助全新的[直接导入选项](password-manager/import-and-export/import-guides/import-data-from-1password.md#import-directly-from-1password)，您可以将数据从 1Password 转移至 Bitwarden，而无需下载导出文件。
+* **基本身份验证提示更新**：现已重新支持基本身份验证提示，可使用[浏览器扩展中的相关设置](password-manager/autofill/more-autofill-options/basic-auth-prompts.md)重新启用。
+
+### Admin Console
+
+* <i class="fa-star">:star:</i> **预配置用户电子邮件邀请**：组织管理员现在可以直接在**成员**页面向预配置用户[发送电子邮件邀请链接](admin-console/manage-members/user-management.md#invite-staged-members)，此方式比以往更加快捷。
+
 ## 2026.10.0
 
 _（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.10.0、浏览器扩展 2026.10.0、桌面端 2026.10.0、移动端 2026.10.0、CLI 2026.10.0）_

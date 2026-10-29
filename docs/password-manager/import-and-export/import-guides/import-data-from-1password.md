@@ -1,21 +1,44 @@
-# 从 1Password 导入
+# =从 1Password 导入
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/import-from-1password/)
 {% endhint %}
 
-使用这篇文章帮助您从 1Password 导出数据并导入到 Bitwarden。1Password 数据支持导出为 `.1pux`（要求 1Password v8.5+）、`.1pif` 或 `.csv` 文件，这取决于您使用的客户端版本和操作系统。了解 [1Password 导出包含哪些数据](https://support.1password.com/export/?mac#get-help)。
+使用以下两种方法之一，即可快速将数据从 1Password 转移到 Bitwarden：
+
+* 使用 Bitwarden 浏览器扩展或桌面 App，无需下载文件即可[直接导入数据](import-data-from-1password.md#import-directly-from-1password)。
+* 使用任何 Bitwarden App，从您的 1Password 账户[下载导出文件](import-data-from-1password.md#use-an-exported-file-for-import-to-bitwarden)然后将其导入 Bitwarden。
+
+## 直接从 1Password 导入 <a href="#import-directly-from-1password" id="import-directly-from-1password"></a>
+
+要将 1Password 数据直接导入 Bitwarden，而无需下载导出文件以及手动转移数据：
+
+1、
+
+2、
+
+3、
+
+4、
+
+5、
+
+6、
+
+## 使用导出的文件导入到 Bitwarden <a href="#use-an-exported-file-for-import-to-bitwarden" id="use-an-exported-file-for-import-to-bitwarden"></a>
+
+1Password 数据支持导出为 `.1pux`（要求 1Password v8.5+）、`.1pif` 或 `.csv` 文件，具体取决于您使用的客户端版本和操作系统。了解 [1Password 导出包含哪些数据](https://support.1password.com/export/?mac#get-help)。
 
 {% hint style="success" icon="lightbulb" %}
-iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通行密钥。[了解如何使用凭证交换功能](https://support.1password.com/export/?ios)轻松从 1Password 迁移到 Bitwarden。
+如果您的移动设备运行的是 iOS 26+ 或 Android 10+，且同时安装了 Bitwarden 和 1Password App，则无需执行导出操作。您可以直接使用 FIDO 凭据交换协议 (CXP) [在移动设备上导入数据](import-data-from-1password.md#import-directly-from-1password)，这是最快捷的方式。
 {% endhint %}
 
-## 从 1Password 导出 <a href="#export-your-1-password-1-pif-logins" id="export-your-1-password-1-pif-logins"></a>
+### 从 1Password 导出 <a href="#export-your-1-password-1-pif-logins" id="export-your-1-password-1-pif-logins"></a>
 
 完成以下步骤以从 1Password 桌面 App 导出数据：
 
 {% hint style="success" icon="lightbulb" %}
-目前，只有 1Password 8 允许您一次导出多个密码库。如果您使用 1Password 8，请跳至**步骤 3**。
+目前，只有 1Password 8 允许您一次导出多个密码库。如果您使用 1Password 8，请跳转至**步骤 3**。
 {% endhint %}
 
 1、导航到您想要导出数据的密码库。
@@ -33,7 +56,7 @@ iOS 版 1Password 支持通过凭证交换功能导出您的数据，包括通�
 
 4、在导出窗口中，指定一个位置和文件格式。
 
-## 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
+### 导入 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
 数据可以从网页 App、浏览器扩展、桌面 App 以及 CLI 导入到 Bitwarden。数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
 
