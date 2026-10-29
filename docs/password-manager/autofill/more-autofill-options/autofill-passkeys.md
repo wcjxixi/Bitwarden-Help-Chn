@@ -1,4 +1,4 @@
-# =自动填充通行密钥
+# 自动填充通行密钥
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/storing-passkeys/)
@@ -172,11 +172,57 @@ Bitwarden 不会提示或允许您在密码库中保存用于登录任何 Bitwar
 {% endtab %}
 
 {% tab title="Windows" %}
+您可以通过 Bitwarden 桌面 App 保存和使用通行密钥。
 
+### 允许使用桌面 App 使用通行密钥 <a href="#allow-passkeys-with-the-desktop-app" id="allow-passkeys-with-the-desktop-app"></a>
+
+要允许 Bitwarden 在 Windows 中存储和使用通行密钥：
+
+1. 打开 Bitwarden 桌面 App。
+2. 转到**文件** → **设置**。
+3. 在**通行密钥提供程序**下方，选择**在系统设置中管理**。
+4. 此时会弹出一个窗口，列出您可用的通行密钥管理器。选择 **Bitwarden** 旁边的滑块以将其**开启**。
+
+### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
+
+在网站或 App 上创建新的通行密钥时，将会提示您将通行密钥存储在 Bitwarden 中。选择**继续**然后按照提示操作，提示内容会根据通行密钥类型而有所不同：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3baKU5E96m37UaicXW3fyB/ebdf212d2460fa14d0f1d9a21e5a49a0/Create_passkey_in_Windows_desktop.png?w=800&#x26;fm=avif" alt=""><figcaption><p>在 Windows 桌面端创建通行密钥</p></figcaption></figure></div>
+
+每个登录项目只能保存一个通行密钥。如果某个服务已存在通行密钥，请覆盖现有通行密钥，或创建一个新的登录项目来存储新的通行密钥。
+
+### 使用存储在 Bitwarden 中的通行密钥登录 <a href="#sign-in-using-a-passkey-stored-in-bitwarden" id="sign-in-using-a-passkey-stored-in-bitwarden"></a>
+
+在网站上发起通行密钥登录。从弹出的窗口中，选择您保存的通行密钥：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/MnwSF40M8vWs1s6diioB7/8abc3b9238525a354a04e72f6049fa1a/Sign_in_with_passkey_in_Windows.png?w=800&#x26;fm=avif" alt=""><figcaption><p>在 Windows 中使用通行密钥登录</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="macOS" %}
+您可以在 macOS 中通过 Bitwarden 桌面 App 保存和使用通行密钥。
 
+### 允许使用桌面 App 使用通行密钥 <a href="#allow-passkeys-with-the-desktop-app" id="allow-passkeys-with-the-desktop-app"></a>
+
+要允许 Bitwarden 存储和使用通行密钥：
+
+1. 打开 Bitwarden 桌面 App。
+2. 从菜单栏中，转到 **Bitwarden** → **首选项**。
+3. 在**通行密钥提供程序**下方，选择**在系统设置中管理**。
+4. 此时会弹出一个窗口，询问您是否要使用 Bitwarden 的自动填充功能。选择**开启**。
+
+### 创建通行密钥 <a href="#create-a-passkey" id="create-a-passkey"></a>
+
+在网站或 App 上创建新的通行密钥时，将会提示您将通行密钥存储在 Bitwarden 中。选择**继续**然后按照提示操作，提示内容会根据通行密钥类型而有所不同：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/c1xX5mR7BPK06IHgd9BQd/224aaff724cf6b844d1e9355f110d186/Create_passkey_in_macOS_desktop.png?w=800&#x26;fm=avif" alt=""><figcaption><p>在 macOS 桌面端创建通行密钥</p></figcaption></figure></div>
+
+每个登录项目只能保存一个通行密钥。如果某个服务已存在通行密钥，请覆盖现有通行密钥，或创建一个新的登录项目来存储新的通行密钥。
+
+### 使用存储在 Bitwarden 中的通行密钥登录 <a href="#sign-in-using-a-passkey-stored-in-bitwarden" id="sign-in-using-a-passkey-stored-in-bitwarden"></a>
+
+在网站上发起通行密钥登录。从弹出的窗口中，选择您保存的通行密钥：
+
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/w39vqckTJBynB4d4r0SrP/2350605c13065b93456a526eb197e4f7/Sign_in_with_passkey_in_macOS.png?w=800&#x26;fm=avif" alt=""><figcaption><p>在 macOS 中使用通行密钥登录</p></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
