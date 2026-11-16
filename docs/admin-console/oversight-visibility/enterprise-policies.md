@@ -76,20 +76,24 @@
 
 成员可以**接受**或**拒绝**该提示。接受将把所有个人拥有的项目转移到组织所有权，拒绝将立即撤销该成员对组织的访问权限，以便他们有时间筛选应转移和不应转移的项目。任一场景都会[记录事件](event-logging/event-logs.md#organization-events)。
 
-### 管理 Send <a href="#manage-send" id="manage-send"></a>
+### 管理 Send 和共享 <a href="#manage-send-and-share" id="manage-send-and-share"></a>
 
-启用**管理 Send** 以控制成员使用 Send 的方式。默认情况下**管理 Send** 处于活动状态。切换**管理 Send** 为关闭将阻止成员创建或编辑 Send。如果之前创建了 Send，他们仍然可以在除网页 App 之外的所有 Bitwarden 客户端的 **Send** 页面查看和删除这些 Send。受此策略约束的成员仍然可以打开[接收到的 Send](../../password-manager/bitwarden-send/receive-a-send.md)。所有者和管理员不受此策略的约束。
+启用**管理 Send** **和共享**以控制成员使用 Send 和共享功能的方式。默认情况下**启用 Send** 处于开启状态。切换**启用 Send** 为关闭将阻止成员创建或编辑 Send。如果之前创建了 Send，他们仍然可以在除网页 App 之外的所有 Bitwarden 客户端的 **Send** 页面查看和删除这些 Send。受此策略约束的成员仍然可以打开[接收到的 Send](../../password-manager/bitwarden-send/receive-a-send.md)。所有者和管理员不受此策略的约束。
 
-使用管理 Send，组织管理员可以管理成员使用 Send 的方式，包括：
+使用管理 Send 和共享，组织管理员可以管理成员使用 Send 的方式，包括：
 
-* **Send 类型**：决定用户可以创建的 [Send 类型](../../password-manager/bitwarden-send/create-a-send.md#create-a-send)，例如**文本**和**文件**。
+* **Send 类型**：决定用户可以创建的 [Send 类型](../../password-manager/bitwarden-send/create-a-send.md#create-a-send)，例如**文本**、**文件**以及**密码库项目**。共享密码库项目允许用户通过[通过链接共享](../../password-manager/organization-members/sharing.md#share-via-link)，使用一个临时的、可配置的链接来共享密码库项目。
 * **访问选项**：决定组织成员发送 Send 后，Send 接收者如何访问 Send。选项包括任意、[电子邮箱验证](../../password-manager/bitwarden-send/send-privacy.md#email-verified-recipients)和[成员设置的密码](../../password-manager/bitwarden-send/send-privacy.md#send-passwords)。
 * **强制删除日期**：使用此策略可以为成员创建的 Send 强制执行预先设定的 [Send 生命周期](../../password-manager/bitwarden-send/send-lifespan.md)。
 * **始终向接收者显示成员的电子邮箱地址**：启用此选项可以禁用用户的[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，从而为接收 Send 的人提供透明度。所有者和管理员不受此策略的约束。
 
 ### 禁用导出 <a href="#remove-export" id="remove-export"></a>
 
-启用**禁用导出**策略将禁止您组织的非所有者/非管理员成员[导出其个人密码库数据](../../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。所有者和管理员不受此策略的约束。
+启用**禁用导出**策略将禁止您组织的非所有者/非管理员成员[导出其个人密码库数据](../../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。所有者和管理员不受此策略的约束。受此策略约束的成员：
+
+* 无法导出个人拥有的项目。
+* 无法从「[我的项目](../../password-manager/organization-members/my-items.md)」导出项目。
+* 无法从其他共享文件夹导出项目。
 
 在网页 App 和 CLI 中，会向用户显示一条消息，以表明某个策略正在影响他们的选项。在其他客户端中，该选项将被简单地禁用：
 
@@ -123,9 +127,9 @@
 在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
 {% endhint %}
 
-### 要求单点登录身份验证 <a href="#require-single-sign-on-authentication" id="require-single-sign-on-authentication"></a>
+### 要求单点登录 (SSO) <a href="#require-single-sign-on" id="require-single-sign-on"></a>
 
-启用**要求单点登录身份验证**策略将要求非所有者/非管理员用户使用 SSO 登录。如果是自托管，可以使用[环境变量](../../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)对所有者和管理员强制执行该策略。有关更多信息，请参阅 [SSO 登录的使用](../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)。所有者和管理员不受此策略的约束。
+启用**要求单点登录 (SSO)** 策略将要求非所有者/非管理员用户使用 SSO 登录。如果是自托管，可以使用[环境变量](../../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)对所有者和管理员强制执行该策略。有关更多信息，请参阅 [SSO 登录的使用](../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)。
 
 使用此策略的组织成员将无法[使用通行密钥登录](../../account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-passkeys.md)。
 
@@ -135,7 +139,11 @@
 
 ### 要求两步登录 <a href="#require-two-step-login" id="require-two-step-login"></a>
 
-启用**要求两步登录**策略将要求成员使用任何两步登录方法访问其密码库。如果使用的是 SSO 或身份提供程序的 2FA 功能，则无需启用此策略。即使对于仅[接受](../manage-members/user-management.md#accept)组织邀请的用户，也会强制执行此策略。
+启用**要求两步登录**策略将要求成员使用任何两步登录方法访问其密码库。如果使用的是 SSO 或身份提供程序的 2FA 功能，则无需启用此策略。即使对于仅[接受](../manage-members/user-management.md#accept)组织邀请的用户，也会强制执行此策略。此策略启用后入职的成员将自动激活[电子邮箱两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-via-email.md)。
+
+{% hint style="info" %}
+已为所有成员启用 [SSO](../login-with-sso/about-sso.md) 或 [Duo](../../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md) 的组织不应使用此策略。SSO 和组织 Duo 均由提供商强制执行，无法满足此策略启用所需的两步登录要求。
+{% endhint %}
 
 {% hint style="warning" %}
 **当您激活此策略时，非所有者或非管理员且不遵守此策略的组织成员的访问权限将被撤销**。由于此策略而被撤销访问权限的用户将收到电子邮件通知，并且必须采取措施使其合规，然后才能恢复其访问权限。
@@ -149,9 +157,13 @@
 
 启用**阻止使用已声明的域名创建账户**策略，可以阻止具有与您[已声明的域名](claimed-domains/claimed-domains.md)匹配的电子邮箱地址的人员在组织外部创建 Bitwarden 账户。启用此策略后，与您已声明的域名匹配的电子邮箱地址只能通过受邀加入您的组织的方式或[使用 SSO 进行 JIT 配置](../login-with-sso/jit-provisioning.md)的方式创建 Bitwarden 账户。
 
+{% hint style="success" icon="lightbulb" %}
+如果您是自托管 Bitwarden，但想要同时在自托管服务器和 Bitwarden 云服务器上阻止创建账户，您必须声明您的域名并在两个服务器上激活**阻止账户创建**策略选项。
+{% endhint %}
+
 ### 会话超时 <a href="#session-timeout" id="session-timeout"></a>
 
-启用**会话超时**策略以设置限制并控制成员的会话超时行为。启用此策略后，然后用户编辑其账户的**密码库超时**设置时，**超时**选项将不会超过您为组织选择的最大值，并且某些选项（例如**浏览器重启时**和**从不**）将不可用。所有者和管理员不受此策略的约束。
+启用**会话超时**策略以设置限制并控制成员的[会话超时](../../account/log-in-and-unlock/vault-timeout-options.md#session-timeout)行为。启用此策略后，然后用户编辑其账户的**密码库超时**设置时，**超时**选项将不会超过您为组织选择的最大值，并且某些选项（例如**浏览器重启时**和**从不**）将不可用。**最大允许的超时**是一个上限，并非固定设置。成员仍然可以在自己的账户设置中选择小于或等于此值的时间。所有者和管理员不受此策略的约束。
 
 您可以自定义两个选项：
 
@@ -236,9 +248,9 @@
 在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
 {% endhint %}
 
-### 激活填充辅助 <a href="#activate-fill-assist" id="activate-fill-assist"></a>
+### 启用填充辅助 <a href="#enable-fill-assist" id="enable-fill-assist"></a>
 
-启用**激活填充辅助**策略，为尚未设置个人偏好的成员设置默认的[填充辅助](../../password-manager/autofill/more-autofill-options/fill-assist.md)状态，并可选择将成员的客户端指向自定义填充辅助规则，而非 Bitwarden 精选的映射表。
+启用**启用填充辅助**策略，为尚未设置个人偏好的成员设置默认的[填充辅助](../../password-manager/autofill/more-autofill-options/fill-assist.md)状态，并可选择将成员的客户端指向自定义填充辅助规则，而非 Bitwarden 精选的映射表。
 
 此策略设置的是**默认值**，而非强制执行。成员自行激活或停用填充辅助（无论是在策略激活之前还是之后），都将保留该设置选择。激活此策略不会覆盖他们的个人偏好。与某些策略不同，此策略适用于所有角色，包括所有者和管理员。
 
@@ -246,7 +258,7 @@
 在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
 {% endhint %}
 
-**激活填充辅助**策略有两个控制项：
+**启用填充辅助**策略有两个控制项：
 
 * **启用策略**：打开后，未调整过自身填充辅助设置的成员将默认启用填充辅助。
 * **自定义自动填充规则集**：默认情况下，填充辅助使用 Bitwarden 精选的规则集。在此处输入 URL 即可用您自己的规则集覆盖它。使用自定义规则集会完全将默认规则集替换为您自己构建和维护的规则集，两者之间不存在合并或回退机制。了解[如何设置自定义规则集](custom-fill-assist-rules.md)的基础知识。
@@ -271,9 +283,9 @@
 SSO 自动登录将基于 Bitwarden 浏览器扩展上的当前活动账户自动填充数据。此外，自动填充的数据将是用户最近使用的与目标应用程序 URL 相关联的凭据。
 {% endhint %}
 
-### 激活自动填充 <a href="#activate-auto-fill" id="activate-auto-fill"></a>
+### 启用页面加载时自动填充 <a href="#enable-autofill-on-page-load" id="enable-autofill-on-page-load"></a>
 
-启用**激活自动填充**策略将自动为组织的所有现有和新成员打开浏览器扩展上的[页面加载时自动填充](../../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#on-page-load)功能。如果激活，成员将无法禁用页面加载时自动填充功能。
+启用**启用页面加载时自动填充**策略将自动为组织的所有现有和新成员打开浏览器扩展上的[页面加载时自动填充](../../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#on-page-load)功能。启用该策略后，成员需要指定页面加载时自动填充哪些项目，既可以从**设置** → **自动填充**界面默认为所有项目进行设置，也可以从**编辑登录**界面为单个登录进行设置。
 
 ### 禁用支付卡项目类型 <a href="#remove-card-item-type" id="remove-card-item-type"></a>
 
@@ -292,7 +304,7 @@ SSO 自动登录将基于 Bitwarden 浏览器扩展上的当前活动账户自�
 ### 自动用户确认 <a href="#automatic-user-confirmation" id="automatic-user-confirmation"></a>
 
 {% hint style="info" %}
-要获得此策略的访问权限，Bitwarden 支持人员需要为您将其打开。请首先[联系我们](https://bitwarden.com/contact/)。
+~~要获得此策略的访问权限，Bitwarden 支持人员需要为您将其打开。请首先~~[~~联系我们~~](https://bitwarden.com/contact/)~~。~~
 {% endhint %}
 
 启用**自动用户确认**策略将自动确认已接受加入组织邀请的成员，而无需采用标准的手动确认流程。要使用此策略：
