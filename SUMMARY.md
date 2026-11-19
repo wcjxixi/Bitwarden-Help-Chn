@@ -24,6 +24,7 @@
     * [更多登录 & 解锁方式](docs/account/log-in-and-unlock/more-log-in-unlock-methods/README.md)
       * [使用设备登录](docs/account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-device.md)
       * [使用通行密钥登录 & 解锁](docs/account/log-in-and-unlock/more-log-in-unlock-methods/log-in-with-passkeys.md)
+      * [=同步解锁](docs/account/log-in-and-unlock/more-log-in-unlock-methods/synchronized-unlock.md)
       * [使用生物识别解锁](docs/account/log-in-and-unlock/more-log-in-unlock-methods/unlocking-with-biometrics.md)
       * [使用 PIN 码解锁](docs/account/log-in-and-unlock/more-log-in-unlock-methods/unlock-with-pin.md)
   * [两步登录](docs/account/two-step-login/README.md)

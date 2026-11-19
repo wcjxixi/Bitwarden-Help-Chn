@@ -4,33 +4,30 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-card-id/)
 {% endhint %}
 
-Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！部分 Bitwarden App 还可以自动填充[支付卡](../../your-vault/vault-items/vault-items.md#zhi-fu-ka)和[身份信息](../../your-vault/vault-items/vault-items.md#shen-fen)，以简化网上购物、账户创建等操作。对于组织成员，策略可能会[阻止使用支付卡项目](../../../admin-console/oversight-visibility/enterprise-policies.md#remove-card-item-type)导致无法自动填充支付卡。
-
-{% hint style="info" %}
-目前，自动填充支付卡适用于浏览器扩展和 Android。自动填充身份信息仅适用于浏览器扩展。
-{% endhint %}
+Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！Bitwarden 浏览器扩展和 Android App 还可以自动填充[支付卡](../../your-vault/vault-items/vault-items.md#zhi-fu-ka)和[身份信息](../../your-vault/vault-items/vault-items.md#shen-fen)，以简化网上购物、账户创建等操作。
 
 ## 设置支付卡 & 身份自动填充 <a href="#set-up-card-and-identity-autofill" id="set-up-card-and-identity-autofill"></a>
 
-{% hint style="success" icon="lightbulb" %}
-在 Android 上，自动填充支付卡不需要进行任何额外的设置，只需进行[基本的自动填充设置](../autofill-from/autofill-from-android.md)即可。以下说明仅适用于浏览器扩展。
-{% endhint %}
+对于 Android，请确认[标准自动填充](../autofill-from/autofill-from-android.md)设置已完成。自动填充支付卡和身份无需任何额外步骤。
 
-您可以通过**设置** → **自动填充**中的以下选项，将支付卡和身份添加到列出的自动填充建议中：
+对于浏览器扩展，有一些可自定义的选项用于自动填充支付卡和身份。要将支付卡和身份添加到列出的自动填充建议中，请转到**设置** → **自动填充**然后选择：
 
-* **在密码库视图中始终将支付卡显示为自动填充建议**：将支付卡包含在密码库视图的建议中。当位于自动填充建议中时，点击支付卡项目即可自动填充。
-* **在密码库视图中始终将身份显示为自动填充建议**：将身份包含在密码库视图的建议中。当位于自动填充建议中时，点击身份项目即可自动填充。
+* **在密码库视图中始终将支付卡显示为自动填充建议**：将支付卡包含在密码库视图的建议中。当位于**自动填充建议**中时，点击支付卡项目即可自动填充。
+* **在密码库视图中始终将身份显示为自动填充建议**：将身份包含在密码库视图的建议中。当位于**自动填充建议**中时，点击身份项目即可自动填充。
 
 {% hint style="info" %}
-自动填充建议始终优先于[收藏](../../your-vault/vault-navigation/favorites.md)。如果您有收藏的支付卡或身份，当开启这些选项后，它们会从**收藏**移至**自动填充建议**中。
+自动填充建议始终优先于[收藏](../../your-vault/vault-navigation/favorites.md)。如果您有收藏的支付卡或身份，当开启这些选项后，它们会从**收藏**跳转至**自动填充建议**中。
 {% endhint %}
 
-您可以通过**设置** → **自动填充**中的以下选项，让支付卡和身份在内嵌自动填充菜单中可用，前提是**在表单字段上显示自动填充建议**选项已开启：
+要将支付卡和身份包含在浏览器扩展的内嵌自动填充菜单中：
 
-* **将支付卡显示为建议**：将支付卡包含在内嵌自动填充菜单中。这要求**在表单字段上显示自动填充建议**选项已开启。
-* **将身份显示为建议**：将身份包含在内嵌自动填充菜单中。这要求**在表单字段上显示自动填充建议**选项已开启。
+1. 转到**设置** → **自动填充**。
+2. 勾选**在表单字段上显示自动填充建议**。
+3. 请勾选要激活的设置：
+   * **将身份显示为建议**
+   * **将支付卡显示为建议**
 
-## 自动填充支付卡 & 身份 <a href="#autofilling-cards-and-identities" id="autofilling-cards-and-identities"></a>
+## 使用支付卡 & 身份自动填充 <a href="#use-card-and-identity-autofill" id="use-card-and-identity-autofill"></a>
 
 您可以使用几种不同的方式来自动填充支付卡或身份：
 

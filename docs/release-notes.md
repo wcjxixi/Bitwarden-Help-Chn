@@ -17,7 +17,7 @@
 某些功能会随着时间的推移逐步向用户推出。采用这种方式推出的功能，可能会先向部分用户开放，随后再向其他用户开放。
 
 {% hint style="info" %}
-标有 <i class="fa-star">:star:</i>**星形图标**的是渐进式推出的功能。
+标有 <i class="fa-star">:star:</i> **星形图标**的是渐进式推出的功能。
 {% endhint %}
 
 ### GitHub 链接 <a href="#links-to-github" id="links-to-github"></a>
@@ -34,6 +34,27 @@ Bitwarden 认为源代码透明是像我们这样的安全解决方案的一个�
 * [Directory Connector Releases](https://github.com/bitwarden/directory-connector/releases)
 
 ## 发行公告
+
+## 2026.11.0
+
+_（所列版本号为 Bitwarden 服务器的版本号，在此周期中发布的其他版本号还包括 Web 2026.11.0、浏览器扩展 2026.11.0、桌面端 2026.11.0、移动端 2026.11.0、CLI 2026.11.0）_
+
+### Password Manager
+
+* <i class="fa-star">:star:</i> **App 间同步解锁状态**：在同一设备上运行时，Bitwarden 网页 App、浏览器扩展和桌面 App 现可[同步其锁定与解锁状态](account/log-in-and-unlock/more-log-in-unlock-methods/synchronized-unlock.md)。
+* <i class="fa-star">:star:</i> **Android 自动填充身份**：Bitwarden Android App 现支持[自动填充身份信息](password-manager/autofill/more-autofill-options/auto-fill-cards-and-identities.md)，例如姓名、电子邮箱和地址。
+
+### Admin Console
+
+* **新增 Send 事件**：当创建、编辑、删除或访问 Send 项目（包括[通过链接共享的项目](password-manager/organization-members/sharing.md#share-via-link)）时，系统会记录相关事件；此外，当[管理 Send 策略](admin-console/oversight-visibility/enterprise-policies.md#manage-send-and-share)停用或重新启用某位成员的 Send 功能时，也会记录相关事件。
+
+### Key Connector
+
+* **弃用 MongoDB 支持**：从 [Key Connector](self-hosting/key-connector/about-key-connector.md) 2026.11.0 版本开始，MongoDB 将不再作为受支持的数据库选项。
+
+### 安全 <a href="#security" id="security"></a>
+
+* <i class="fa-star">:star:</i> **新用户加密机制更新**：从 2026.11.0 版本开始，新创建的 Bitwarden 账户将采用更新后的加密算法，来加密密码库数据、公钥加密及数字签名。现有用户将在后续版本中完成迁移。**当此项更新开始向新用户推出时，将发布新版**[**白皮书**](security/bitwarden-security-whitepaper.md)**。**
 
 ## 2026.10.1
 
