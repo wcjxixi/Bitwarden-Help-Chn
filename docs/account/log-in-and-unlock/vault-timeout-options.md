@@ -58,6 +58,8 @@
   * 默认情况下，浏览器扩展将要求您使用主密码登录或解锁，而不管您选择了哪种密码库超时动作。
   * 要在关闭浏览器窗口后改为使用 PIN 码解锁，请在[设置 PIN 码](more-log-in-unlock-methods/unlock-with-pin.md)时取消选中**浏览器重启时使用主密码锁定**选项。
 {% endhint %}
+
+如果启用了[同步解锁](more-log-in-unlock-methods/synchronized-unlock.md)，则此设置由浏览器扩展管理。
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -131,6 +133,13 @@
 * **自定义**：在输入的**小时**数量和**分钟**数量之后
 {% endtab %}
 {% endtabs %}
+
+### 同步解锁时的会话超时 <a href="#session-timeout-with-synchronized-unlock" id="session-timeout-with-synchronized-unlock"></a>
+
+如果开启了[同步解锁](more-log-in-unlock-methods/synchronized-unlock.md)，则一个 App 的会话超时将应用于所有已连接的 App，其他 App 中的超时设置将不可用：
+
+* 当浏览器扩展和网页 App 连接时，以浏览器扩展的超时设置为准。
+* 当浏览器扩展和桌面 App 连接时，以桌面 App 的超时设置位为准。这也使得**系统锁定时**选项同时适用于浏览器扩展和网页 App。
 
 ## 会话超时动作 <a href="#session-timeout-action" id="session-timeout-action"></a>
 
