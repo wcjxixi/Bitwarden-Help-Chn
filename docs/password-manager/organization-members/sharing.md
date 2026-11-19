@@ -208,7 +208,7 @@ bw move <itemid> <organizationid> [encodedJson]
 
 ## 通过链接共享 <a href="#share-via-link" id="share-via-link"></a>
 
-使用**通过链接共享**，以授予他人对密码库项目副本的临时访问权限，而原始项目仍保留在您的密码库中。通过链接共享会创建一个包含项目内容的 [Send](../bitwarden-send/about-send.md)，您可以通过任何渠道分享该 Send。通过链接共享适用于[高级版用户](../../plans-and-pricing/password-manager/about-bitwarden-plans.md)或付费版组织（家庭版、团队版或企业版）的成员。此外，组织管理员可以使用管理 Send 和共享策略来配置此功能的访问权限。
+使用**通过链接共享**，以授予他人对密码库项目副本的临时访问权限，而原始项目仍保留在您的密码库中。通过链接共享会创建一个包含项目内容的 [Send](../bitwarden-send/about-send.md)，您可以通过任何渠道分享该 Send。通过链接共享适用于[高级版用户](../../plans-and-pricing/password-manager/about-bitwarden-plans.md)或付费版组织（家庭版、团队版或企业版）的成员。此外，组织管理员可以使用[管理 Send 和共享策略](../../admin-console/oversight-visibility/enterprise-policies.md#manage-send-and-share)来配置此功能的访问权限。
 
 {% hint style="info" %}
 **通过链接共享**不适用于 SSH 密钥项目、归档中的项目和回收站中的项目。要共享已归档或已删除的某个项目，请先将其取消归档或从回收站中恢复。要共享一个或多个集合中的某个项目，您需要至少其中一个集合的编辑权限。
